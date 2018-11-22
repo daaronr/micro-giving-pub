@@ -1,4 +1,4 @@
-%Pandoc (Latex enhanced) to pdf slides/handouts; material and process for two modules (Beem101 and BEE2024)
+#Pandoc (Latex enhanced) to pdf slides/handouts; material and process for two modules (Beem101 and BEE2024)
 
 ---
 geometry: margin=0.7in
@@ -7,7 +7,7 @@ geometry: margin=0.7in
 
 #Setup
 
-For any of this to work, you need to have Pandoc installed, which I recall take some time you will also want to configure the relevant "templates”. Is often difficult to figure out which format to which type of output and where exactly these templates are stored.
+For any of this to work, you need to have [Pandoc](http://pandoc.org/) installed, which I recall take some time you will also want to configure the relevant "templates”. Is often difficult to figure out which format to which type of output and where exactly these templates are stored.
 
 Some of the templates contain latex commands that are referred to in the markdown files (especially ‘pdfnote’) ; without these in your templates the pdfs will not compile.
 
