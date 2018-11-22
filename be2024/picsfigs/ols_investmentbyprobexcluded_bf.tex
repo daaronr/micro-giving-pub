@@ -1,0 +1,32 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{c}}
+\hline
+                &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                &\multicolumn{1}{c}{St.2 Contr.}&\multicolumn{1}{c}{St.2 Contr.}&\multicolumn{1}{c}{\textbf{Avg. Prev. St.2 Contr.}}\\
+\hline
+Leader          &     0.85**&           &           \\
+                &   (0.18)  &           &           \\
+Leader $\times$ Rvld Trtmt&    -1.04**&           &           \\
+                &   (0.23)  &           &           \\
+Prob. Excluded (simulated)$^{[1]}$&    -3.59**&    -1.18  &    -2.15* \\
+                &   (1.25)  &   (0.96)  &   (0.95)  \\
+Prob. Excluded $\times$ Rvld Trtmt&     \textbf{3.49**}&     \textbf{0.96}  &     \textbf{2.00*} \\
+                &   (1.31)  &   (1.02)  &   (1.01)  \\
+Avg (others') St.1 Contr.&    0.031  &    0.086  &    -0.24+ \\
+                &   (0.15)  &   (0.15)  &   (0.13)  \\
+Avg (others') St.1 Contr. (others) $\times$ Rvld Trtmt&     0.27  &     0.23  &     0.40* \\
+                &   (0.17)  &   (0.18)  &   (0.17)  \\
+Additional controls &      Yes  &      Yes  &      Yes  \\
+\hline
+Observations    &     1950  &     1950  &     1800  \\
+\textbf{Sum coef.: Prob. excl. in rvld trtmt} &    \textbf{-0.095}  &     \textbf{-0.22}  &     \textbf{-0.15} \\
+\hline
+
+\multicolumn{4}{l}{\footnotesize Abbreviations:  St.=Stage, Prev. = Previous, Rvld= Revealed, Contr.=Contribution, Trtmt=Treatment, Excl.=Excluded}\\
+\multicolumn{4}{l}{\footnotesize Robust (clustered by subject) standard errors in parentheses. + p<0.10, * p<0.05, ** p<0.01}\\
+\multicolumn{4}{l}{\footnotesize [1] Conditional expectation simulated for anonymous case; see notes after Table 1.}\\
+\multicolumn{4}{l}{\footnotesize Additional controls: Session/treatment dummies, dummy: high example donation in instructions,}\\
+\multicolumn{4}{l}{\footnotesize high example $\times$ revealed treatment, repetition, revealed $\times$ repetition, last repetition, revealed $\times$ last repetition.}\\
+\end{tabular}
+}
