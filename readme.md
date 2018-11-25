@@ -4,6 +4,8 @@
 
 This repo contains both the content and the code for producing course materials (handouts, slides, problem sets, and more) for two similar courses (modules), both for UK 10-12 week terms with 2 hours of lecture per week and one 'tutorial' per fortnight. 1. Undergraduate "Economic principles and policy" and 2. "MSc Microeconomics." Both of these are taught at a fairly basic technical/maths level, and both are pitched to students with a variety of backgrounds in economics, business, and policy. 
 
+The content is largely drawn from Nicholson and Snyder's "Intermediate Economics and Its Applications". It gives a running commentary on this text and offers additional perspectives and enrichment material. I also offer substantial original content, as well as drawing from other sources.
+
 (Further description of content will be given.)
 
 #Setup
@@ -46,9 +48,9 @@ I believe you will also need to have (the correct version?) of latex installed.
 I use the obscure app “présentation” \url{http://iihm.imag.fr/blanch/software/osx-presentation/} to show the slides on my Mac and see the speakers notes on a private screen. It is not perfect.
 
 - Sometimes it crashes.
--
+
 - Sometimes it fails to display in presentation mode in a classroom and needs to be restarted/reconnected
--
+
 - Movie and web browser view doesn't work
 
 ##Text editor:
@@ -86,6 +88,4 @@ For example...
 1.  I still can't figure out how to do a "full-page image" slide via markdown
 
 1. Not sure if I've been able to put internal hyperlinks (other than in the ToC)
-
-
 
