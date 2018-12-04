@@ -1,15 +1,18 @@
 #Pandoc (Latex enhanced) to pdf slides/handouts; material and process for two modules (Beem101 and BEE2024)
 
----
-geometry: margin=0.7in
----
+#Content
 
+This repo contains both the content and the code for producing course materials (handouts, slides, problem sets, and more) for two similar courses (modules), both for UK 10-12 week terms with 2 hours of lecture per week and one 'tutorial' per fortnight. 1. Undergraduate "Economic principles and policy" and 2. "MSc Microeconomics." Both of these are taught at a fairly basic technical/maths level, and both are pitched to students with a variety of backgrounds in economics, business, and policy. 
+
+The content is largely drawn from Nicholson and Snyder's "Intermediate Economics and Its Applications". It gives a running commentary on this text and offers additional perspectives and enrichment material. I also offer substantial original content, as well as drawing from other sources.
+
+(Further description of content will be given.)
 
 #Setup
 
-For any of this to work, you need to have [Pandoc](http://pandoc.org/) installed, which I recall take some time you will also want to configure the relevant "templates”. Is often difficult to figure out which format to which type of output and where exactly these templates are stored.
+For any of this to work, you need to have [Pandoc](http://pandoc.org/) installed, which I recall takes some time. You will also want to configure the relevant "templates”. Is often difficult to figure out which format to which type of output and where exactly these templates are stored.
 
-Some of the templates contain latex commands that are referred to in the markdown files (especially ‘pdfnote’) ; without these in your templates the pdfs will not compile.
+Some of the templates contain latex commands that are referred to in the markdown files (especially ‘pdfnote’); without these in your templates the pdfs will not compile.
 
 I believe you will also need to have (the correct version?) of latex installed.
 
@@ -45,9 +48,9 @@ I believe you will also need to have (the correct version?) of latex installed.
 I use the obscure app “présentation” \url{http://iihm.imag.fr/blanch/software/osx-presentation/} to show the slides on my Mac and see the speakers notes on a private screen. It is not perfect.
 
 - Sometimes it crashes.
--
+
 - Sometimes it fails to display in presentation mode in a classroom and needs to be restarted/reconnected
--
+
 - Movie and web browser view doesn't work
 
 ##Text editor:
@@ -86,4 +89,7 @@ For example...
 
 1. Not sure if I've been able to put internal hyperlinks (other than in the ToC)
 
+<<<<<<< HEAD
 1. Slides ToC (with links) goes off the page
+=======
+>>>>>>> 389ce044bb28473a8b0cb25fb6ce34aa4e738f4b
