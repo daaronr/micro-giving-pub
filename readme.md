@@ -89,3 +89,7 @@ For example...
 
 1. Not sure if I've been able to put internal hyperlinks (other than in the ToC)
 
+<<<<<<< HEAD
+1. Slides ToC (with links) goes off the page
+=======
+>>>>>>> 389ce044bb28473a8b0cb25fb6ce34aa4e738f4b
