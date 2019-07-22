@@ -594,6 +594,25 @@ Plus research discussion sessions in alternate weeks?
 
 - Note that there are a variety of sources and online courses --- any intermediate or advanced textbook in Microeconomics will cover virtually the same material. There are now texts available for free, legally, online, such as “Introduction to Economic Analysis”, by Preston McAfee, Caltech and Tracy Lewis, Duke University, available at [LINK](https://open.umn.edu/opentextbooks/BookDetail.aspx?bookId=47) (note this text uses calculus).
 
+
+[Intermediate microeconomics - M Walbert Illinois tutorials](http://my.ilstu.edu/~mswalber/ECO240/index.html) - click 'tutorials'
+
+A series of tutorials for an intermediate microeconomics module. Covers many of the topics of this module. No calculus but a lot of algebra. Lots of supplementary materials too.
+
+
+
+[Microeconomics
+Markets, Methods & Models
+an Open Text
+by Douglas Curtis and Ian Irvine](https://laecon1.lyryx.com/textbooks/OPEN_CURTIS_MIC_1/marketing/CurtisIrvine-Microeconomics-2017A.pdf)
+
+- A full-fledged text covering many of the topics of this module, without calculus
+
+[Introduction to
+Economic Analysis - McAffee, Lewis, Dale](https://www.kellogg.northwestern.edu/faculty/dale/ieav21.pdf)
+
+A 'no-fluff' text. Covers much of this module, but a bit at the more advanced side. Includes calculus and lots of parametric examples.  Equations are not always formulated well. Lots of great content. Lots of solved problems.
+
 \bigskip
 
 
