@@ -254,8 +254,8 @@ Optional interesting reading:
 - Reinstein, David. "The Economics of the Gift." (2014).
 
 [comment]: <> (2024EE)
-[comment]: <> (101BB)
 
+[comment]: <> (101BB)
 
 - Supplementary reading:
     - Waldfogel, Joel. "The deadweight loss of Christmas." The American Economic Review 83.5 (1993): 1328-1336.
@@ -496,7 +496,7 @@ David Reinstein,  <davidreinstein.wordpress.com/>
 \
 \
 
-Office hours: TBD 
+Office hours: TBD
 
 For an out-of-hours appointment, please go to \url{https://calendly.com/daaronr/20min/}
 
@@ -690,7 +690,7 @@ We will have two 'official' feedback points. There will be an 'early feedback' s
 For the Accelerate end-of-module feedback, you will be asked to rate me.
 *All* of these questions are seen as an evaluation of *my performance* specifically by the ["associate dean"](https://twitter.com/ass_deans?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor).
 
-You will be asked to express an opinion, from 'strongly agree' to 'strongly disagree', on one or more questions about the quality of this module. 
+You will be asked to express an opinion, from 'strongly agree' to 'strongly disagree', on one or more questions about the quality of this module.
 
 <!--
 These questions vary from year to year. In a recent year these were:
@@ -727,7 +727,7 @@ In particular:
 
 [comment]: <> (2024EE)
 
-I am not particularly a fan of the "customer service" model of education. It leads lecturers to water-down the content and hinders us from presenting challenging and engaging material. and limit your educational experience. In fact, there is in fairly compelling research that suggests that these measures are [not reliable](https://www.tandfonline.com/doi/full/10.1080/2331186X.2017.1304016) and are ["poorly correlated with student learning"](https://thepsychologist.bps.org.uk/volume-32/april-2019/excellence-or-ease-exploring-student-evaluations-teaching). 
+I am not particularly a fan of the "customer service" model of education. It leads lecturers to water-down the content and hinders us from presenting challenging and engaging material. and limit your educational experience. In fact, there is in fairly compelling research that suggests that these measures are [not reliable](https://www.tandfonline.com/doi/full/10.1080/2331186X.2017.1304016) and are ["poorly correlated with student learning"](https://thepsychologist.bps.org.uk/volume-32/april-2019/excellence-or-ease-exploring-student-evaluations-teaching).
 
 
 ## Responding to feedback
@@ -742,7 +742,7 @@ I also make changes from year-to-year, in response to your feedback.
 
 1. Reduced coverage, enabling better focus. In particular, I have eliminated or consolidated much of the material on the firm's production function and costs. In earlier surveys, this was the topic students liked the least. In 2019 I am removing the coverage of the history of supply and demand curves and a few other topics.
 
-2. Better integration of the problem sets and tutorials with the lectures and the assessments. Better coordination across tutorial sessions. 
+2. Better integration of the problem sets and tutorials with the lectures and the assessments. Better coordination across tutorial sessions.
 
 3. In 2019 I will be providing more practice multiple-choice questions closely emulating the style of MCQ's that will be on the midterm and final exam
 
@@ -1046,7 +1046,7 @@ To get the most out of the lectures, I advise you to
 1. Put in the work
 
 - Read the handout and the relevant parts of the text (the parts outlined in this handout) in advance of the lecture, come with questions
-    
+
 	- Handouts and lectures mainly follow the text
 
 - Do the problem set questions, suggested questions and class questions, understand the answers
@@ -1239,7 +1239,7 @@ Largely, using theoretical and mathematical 'models' that depend on strong assum
 \textcolor{gray}{Comprehension Q: Consider some examples of 'relevant choices' for economic study. }
 
 \textcolor{gray}{What sort of models are we talking about?
-To refresh your memory... you have probably seen some of these models before in your first economics module. You should have some familiarity with the simple models of supply and demand curves yielding an equilibrium price and quantity. You may also have seen a models of trade, between two countries or two individuals, with only two goods, where for each good one has a 'comparative advantage'. 
+To refresh your memory... you have probably seen some of these models before in your first economics module. You should have some familiarity with the simple models of supply and demand curves yielding an equilibrium price and quantity. You may also have seen a models of trade, between two countries or two individuals, with only two goods, where for each good one has a 'comparative advantage'.
 }
 
 
@@ -1395,7 +1395,7 @@ But good evidence for optimisation and 'predictable irrationality' ... behaviour
 
 \includegraphics[height=3in]{picsfigs/PPF_text.png}
 
-Above, we see a depiction of the "production possibility frontier", explained in the figure's caption. You may be familiar with this from your previous study. The PPF describes the maximum amount of one good that can be produced conditional on a certain quality of another good being produced. 
+Above, we see a depiction of the "production possibility frontier", explained in the figure's caption. You may be familiar with this from your previous study. The PPF describes the maximum amount of one good that can be produced conditional on a certain quality of another good being produced.
 
 \textcolor{gray}{I'm not sure if I would call it a 'model', but it certainly provides a way of visualizing the trade-offs in an economy, and the way it is drawn embody certain assumptions. This graphic has a mathematical representation which we will not cover now.}
 
@@ -1585,13 +1585,17 @@ Ricardo:
 
 ## Marshall’s Model of Supply and Demand
 
-Marshall needed to explain why prices were falling in the 19th century, while quantities (produced and consumed) were increasing.  He argued that the price must equal both the value (to consumers) *and* the cost (to produce) of the *last unit produced and consumed.*
 
-He introduced the 'demand curve';  *with a downward slope*...
+Needed to explain falling prices in the 19th century, while quantities were increasing. Argued price must equal both the value (to consumers) *and* the cost (to produce) of the last unit produced and consumed
 
- This was justified by 'satiation': for an individual, additional units of a good are usually valued less and less. For example, you might be willing to pay thousands of pounds to be able to access 100 gallons of water rather than no water at all, but if you already have access to a thousand gallons of water, you will not be willing to pay very much for an additional 100 gallons.
+Introduced the 'demand curve';  *with a downward slope*.
 
-Furthermore,  firms one must cater to less and less keen consumers as they wants to sell more and more units. We come back to this later in the module.
+This was justified by 'satiation': for an individual, additional units of a good are usually valued less and less. For example, you might be willing to pay thousands of pounds to be able to access 100 gallons of water rather than no water at all, but if you already have access to a thousand gallons of water, you will not be willing to pay very much for an additional 100 gallons.
+
+Furthermore,  firms one
+Needed to explain falling prices in the 19th century, while quantities were increasing. Argued price must equal both the value (to consumers) *and* the cost (to produce) of the last unit produced and consumed
+
+Introduced the 'demand curve';  *with a downward slope* must cater to less and less keen consumers as they wants to sell more and more units. We come back to this later in the module.
 
 \bigskip
 
@@ -1655,7 +1659,7 @@ In such a case, firms might offer a higher price, or sellers might ask for a hig
 *Note: Caveat, to avoid later confusion: These models assume 'price-taking'; neither buyers nor sellers consider the impact of their choices on prices*
 
 
-## How Economists 'Verify' (or Assess) Theoretical Models 
+## How Economists 'Verify' (or Assess) Theoretical Models
 
 \textcolor{brown}{This will be skipped in lecture, but we will come back to some of these ideas later.}
 
@@ -1710,7 +1714,7 @@ Two methods:
 *Note:* \textcolor{gray}{We will mainly focus on positive statements.  However, you are not forbidden from making normative statements, and positive results are useful in making normative judgements.  But we should try to be clear which type of statement we are making.  Still, much economic research has both positive and normative interpretations and implications.  Some economists work on ways of clearly defining and quantifying preferences over social outcomes.  Others work on determining determining 'how to optimise', with implications for which policies and decisions  (for individuals, firms, governments, and nonprofits) will be most efficient and effective at attaining particular goals.}
 
 
-## APPLICATION 1.4: Economics According to Bono 
+## APPLICATION 1.4: Economics According to Bono
 
 \textcolor{brown}{This will be skipped in lecture, but please read it; it may come up on an exam.}
 
@@ -1831,7 +1835,7 @@ Firstly, note that the Nicholson and Snyder text has a very relevant and useful 
 
 Warwick maths notes
 
-The University of Warwick put up some decent 'refresher notes' for incoming economic students. I've re-hosted these on my Dropbox, with some comments on which parts are more relevant. (And remember, with a free dropbox account you can add comments and questions directly on these files which I will try to respond to). 
+The University of Warwick put up some decent 'refresher notes' for incoming economic students. I've re-hosted these on my Dropbox, with some comments on which parts are more relevant. (And remember, with a free dropbox account you can add comments and questions directly on these files which I will try to respond to).
 
 <p><a href="https://www.dropbox.com/s/99ugisobfvuc15e/Warwick_maths-revision-notes-1_drcomments.pdf?dl=0">WW notes 1</a>?</p>
 <p><a href="https://www.dropbox.com/s/93xw3hwv9oqlymn/WW_maths-revision-notes-2_drcomments.pdf?dl=0">WW notes?2</a></p>
@@ -2520,7 +2524,7 @@ $$Utility = U(X,Y; other)$$
  \textcolor{blue}{Maths revision}: $U(X,Y)$ expresses a *function* with two *arguments*, X and Y.
 
 \textcolor{gray}{At this point, you may want to return to the revision material covering functions of two parentheses or more) variables.}
- 
+
 $U(X,Y)$ must take *some* value for every positive value of X and Y.
 
 In  *general* a function of X and Y might increase or decrease in either X or Y, or increase over some ranges and decrease over other ranges of these two arguments.
