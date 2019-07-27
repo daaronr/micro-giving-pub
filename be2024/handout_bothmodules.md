@@ -5,8 +5,9 @@
 [comment]: <> (101BB)
 % Handouts for BEEM101: Microeconomics (MSc)
 [comment]: <> (101EE)
-% Main text:  Nicholson/Snyder, Intermediate Microeconomics and its Application, 12th edition (other editions OK too)
-% Notes by instructor David Reinstein
+
+** Main text:  Nicholson/Snyder, Intermediate Microeconomics and its Application, 12th edition (other editions OK too)**
+**Notes by instructor David Reinstein**
 
 ***
 
@@ -133,9 +134,73 @@ As I will explain, this course will involve a certain level of maths;  things li
 
 You will also come to notice that I emphasize logic, precise definitions, and careful connected explanations. I *don't* want you to be saying/writing things that could be interpreted in multiple ways, like "the demand will go up".
 
-However, this is not the core *Economics* module (BEE2024: Microeconomics II). If you want  a more precise, theoretically complete and mathematically rigorus treatment of this material,  particularly if you are studying Economics and/or want to go to postgraduate study in a related field you probably should switch to that module.
+However, this is not the core *Economics* module (bee2038: Microeconomics II). If you want  a more precise, theoretically complete and mathematically rigorus treatment of this material,  particularly if you are studying Economics and/or want to go to postgraduate study in a related field you probably should switch to that module.
+
+Further suggested maths resources are given below, under [Other maths resources].
 
 [comment]: <> (2024EE)
+
+\bigskip
+
+*2018: Note to students in Managerial economics who took the BEE1034 'Economics for Management' last term*
+
+I realise that you are facing a special challenge this year because of the changes in this particular prerequisite module, with less 'conventional Economics' covere .
+
+In 2018 I  discussed with your student-staff liaison committee chair on how to give you further support. One of the things she suggested was to point you in the direction of the text Edexcel AS/A level Economics. This should be accessible online. I have looked through this book and I agree that it will be helpful both as a prerequisite and to give you a more basic explanation (A-levels) of some of the things that we are covering in this module.
+
+In particular (note these chapters are very short):
+
+*From "theme one: introduction to markets and market failure"*
+
+Chapter one: Economics as a social science
+
+Chapter 3: the economic problem
+
+Chapter 4: production possibility frontiers
+
+Chapter 7: rational decision-making
+
+Chapter 8: Demand (super-important!) but please don't use their somewhat imprecise language "fall/increase in demand/increase in demand)
+
+(Chapters 9 and 10 are essentially re-covered from scratch in our module, going beyond A-level material)
+
+\bigskip
+
+
+Chapter 11: Supply
+
+Chapter 12: price determination
+
+Chapter 13: the price mechanism
+(much of Chapters 14, 15, and 16  cover material overlapping what we are covering, again at a more basic 'A-levels' level; you may find these helpful)
+
+*From 'Theme 3: business behaviour and the labour market'*
+
+Chapter 42: revenue
+
+Chapter 43: Production
+
+chapter 44: Costs (we don't get to all of this in this module)
+
+chapter 45: profit
+
+Chapter 46: market structure (just to get the basic idea)
+
+Chapter 47: perfect competition
+
+Chapter 50: monopoly (we re-cover much of this and go a bit further)
+
+(Much of these chapters in theme 3, as well as chapter 54, overlaps what we are covering, but at the A-level)
+
+
+
+
+I also highly recommend the microeconomics material from the Khan Academy; I will also give you an outline of which sections are most relevant there.
+
+Of course I am also very accessible if you have any questions or need clarification, or just want to talk about some of the material you are struggling with. As I always say, you should feel free to come by my office hours or to make a special appointment outside of these hours I think students who have come to my office hours will definitely agree that they have found been helpful and not stressful. I also encourage you to ask specific questions on the ELE student forum which I will answer carefully. You can also ask questions directly on any of the dropbox hosted files if you get a free dropbox account, and I will try to respond to all of these.
+
+
+
 
 <!---
 See older  version of handout for discusion of prerequisites
@@ -163,8 +228,7 @@ See older  version of handout for discusion of prerequisites
 
 - \textcolor{blue}{First problem set: Mathematical approaches, economic models, revision and warm-up}
 
-
-Note: I will not go over the fundamental math tools in lecture: please read this section and learn and practice these on your own.
+Note: I will not go over  all of the fundamental math tools in lecture: please read this section and learn and practice these on your own.
 
 I will put up slides and other resources to help you with this (and we will re-cover some of this when we apply it throughout the module).
 
@@ -432,7 +496,7 @@ David Reinstein,  <davidreinstein.wordpress.com/>
 \
 \
 
-Office hours: Wednesdays 5-6pm, Thursdays 12-1pm.  Just come by!
+Office hours: TBD
 
 For an out-of-hours appointment, please go to \url{https://calendly.com/daaronr/20min/}
 
@@ -523,7 +587,9 @@ These classes are about *applying* material you have learned, not lecturing on i
 *Come ready to ask questions and participate:*
 
 [comment]: <> (2024BB)
-The classes are a smaller group setting then the lectures;
+
+The classes are a smaller group setting than the lectures;
+
 [comment]: <> (2024EE)
 
 we aim to make these highly interactive and participatory.  To really  be helpful, we need to know what areas you might be struggling with and where your logic  might be breaking down;  thus we will either do cold calling or highly encourage all the students in these tutorials to ask and answer questions.  Think of these as (especially) 'safe spaces';  you will be judged or marked based on your performance in the support classes, and  there are no dumb questions.  If you have a question many of your peers probably have the same question,  so asking itprovides a public good.
@@ -634,17 +700,19 @@ Issues with the text and online materials: Students can contact Roxanne Watts fo
 Lectures $\neq$ everything!:  *Some* of the text is only *mentioned* in lecture/handout, but you still must read \& learn it. On the other hand some sections of the text are skipped.  Some material is covered in these handouts, or recommended readings, that is *not* in the text; this is clearly emphasized. All of this is laid out in this handout.
 
 
-##Feedback on your esteemed/humble lecturer
+##Feedback on your highly esteemed but extremely humble lecturer
 
 We will have two 'official' feedback points. There will be an 'early feedback' survey, perhaps around week 4 or 5. This gives you a chance to give me constructive suggestions that I can adapt to *during* the rest of the module.
 
 \bigskip
 
 For the Accelerate end-of-module feedback, you will be asked to rate me.
-*All* of these questions are seen as an evaluation of *my performance* specifically.
+*All* of these questions are seen as an evaluation of *my performance* specifically by the ["associate dean"](https://twitter.com/ass_deans?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor).
 
-You will be asked to express an opinion, from 'strongly agree' to 'strongly disagree'. These questions vary from year to year. In a recent year these were:
+You will be asked to express an opinion, from 'strongly agree' to 'strongly disagree', on one or more questions about the quality of this module.
 
+<!--
+These questions vary from year to year. In a recent year these were:
 
 - The lecturer is good at explaining things
 - The module is intellectually stimulating
@@ -664,6 +732,9 @@ You will be asked to express an opinion, from 'strongly agree' to 'strongly disa
 - Other comments on learning opportunities? (open-ended)
 - Do you have any comments on the learning resources (for example equipment facilities software collections)?
 - Any other comments on the module (open-ended)?
+-->
+
+In particular:
 
 - Overall I am satisfied with the quality of the module.
 
@@ -675,8 +746,10 @@ You will be asked to express an opinion, from 'strongly agree' to 'strongly disa
 
 [comment]: <> (2024EE)
 
+I am not particularly a fan of the "customer service" model of education. It leads lecturers to water-down the content and hinders us from presenting challenging and engaging material. and limit your educational experience. In fact, there is in fairly compelling research that suggests that these measures are [not reliable](https://www.tandfonline.com/doi/full/10.1080/2331186X.2017.1304016) and are ["poorly correlated with student learning"](https://thepsychologist.bps.org.uk/volume-32/april-2019/excellence-or-ease-exploring-student-evaluations-teaching).
 
-##Responding to feedback
+
+## Responding to feedback
 
 I listen carefully to your responses and continually adjust the material and the approach. To give you the best education, I try to follow a process of *Kaizen*, or continual improvement.
 
@@ -684,23 +757,23 @@ I also make changes from year-to-year, in response to your feedback.
 
 [comment]: <> (2024BB)
 
-###Some changes for 2018-19, responding to the previous year's feedback:
+###Some changes made responding to the previous year's feedback:
 
-1. Reduced coverage, enabling better focus. In particular, I have eliminated or consolidated much of the material on the firm's production function and costs. In earlier surveys, this was the topic students liked the least.
-
+1. Reduced coverage, enabling better focus. In particular, I have eliminated or consolidated much of the material on the firm's production function and costs. In earlier surveys, this was the topic students liked the least. In 2019 I am removing the coverage of the history of supply and demand curves and a few other topics.
 
 2. Better integration of the problem sets and tutorials with the lectures and the assessments. Better coordination across tutorial sessions.
 
-3. Materials: Greater motivation for each lecture. Less content in the slides themselves (less busy).   A more complete narrative in the handout files, making these more readable
+3. In 2019 I will be providing more practice multiple-choice questions closely emulating the style of MCQ's that will be on the midterm and final exam
+
+4. Materials: Greater motivation for each lecture. Less content in the slides themselves (less busy).   A more complete narrative in the handout files, making these more readable
 
 - Opportunity to feedback/discuss the handout and problem sets *directly* on these files (through Dropbox comments)
 
+5. Lectures, tutorials and notes will have a greater focus on carefully explaining the important concepts that many students struggled with (e.g.,  Expected Utility)
 
-4. Lectures, tutorials and notes will have a greater focus on carefully explaining the important concepts that many students struggled with (e.g.,  Expected Utility)
-
-5. The midterm will be multiple choice; some questions will require multiple answers, but the exact number of correct answers will always be clearly specified. I also was able to add an *additional* tutorials before the midterm (two instead of one), so these will be more helpful in preparing for it.
-
-
+<!--
+ 5. The midterm will be multiple choice; some questions will require multiple answers, but the exact number of correct answers will always be clearly specified. I also was able to add an *additional* tutorials before the midterm (two instead of one), so these will be more helpful in preparing for it.
+-->
 [comment]: <> (2024EE)
 
 ***
@@ -741,7 +814,7 @@ Essentially, this (sometimes confusingly called 'normative decision theory') is 
 
 This framework is actually fairly general; it can allow all sorts of preferences (e.g., embodying 'risk aversion' and 'altruism') and wide-ranging choices. However it *does* imply certain 'restrictions': it rules out some sort of behavior that is perhaps obviously illogical.
 
-We will discuss how 'preferences' may define the 'utility functions'. The 'tuility function' is the thing that make choices in order to maximize. In the classical framework, people make choices in order to maximise the value of their utility function. Utility functions can also be expressed in terms of 'indifference curves' (but keep the distinction in mind; the indifference curves are not themselves the utility functions).
+We will discuss how 'preferences' may define the 'utility functions'. The 'uility function' is the thing that make choices in order to maximize. In the classical framework, people make choices in order to maximise the value of their utility function. Utility functions can also be expressed in terms of 'indifference curves' (but keep the distinction in mind; the indifference curves are not themselves the utility functions).
 
 Under this framework individuals make the 'optimal choices' ... by making the choices that yield the maximum value of the utility functions given their constraints ... in particular they have  a 'budget constraint' that says they cannot spend more than they earn. You will learn how to derive these budget constraints and plot these on a graph, along with the indifference curves, and to interpret these diagrams.
 
@@ -754,14 +827,15 @@ Under this framework individuals make the 'optimal choices' ... by making the ch
 These questions have been at the backbone of Economics for millennia, at least since Aristotle.
 
 Classical economists such as Adam Smith built-up ideas of how seemingly random and disorganized markets can yield predictable and efficient outcomes, at least under appropriate conditions.
-Neoclassical and modern economists (such as Alfred Marshall, David Ricardo, Leon Walras, and Paul Samuelson) have formalized these, building models involving of systems of demand and supply and general equilibrium, and have made the case for the efficiency and desirability of the free market outcomes, at least under specified conditions. (Much of this work has tried to specify more and more general conditions for this.)
+Neoclassical and modern economists (such as Alfred Marshall, David Ricardo, Leon Walras, and Paul Samuelson) have formalized these, building models involving of systems of demand and supply and general equilibrium, and have made the case for the efficiency and desirability of the free market outcomes, at least under specified conditions. (Much of this work has tried to specify more and more *general* conditions for this, requiring less and less stringent assumptions.)
+
 In the second (and largest) chunk of the course, we will learn some of the essential building blocks of this model, and how they are justified and put together to yield predictions for market outcomes and 'welfare'. In the process, we will get useful ideas and intuitions about the working of markets.
 
 - Demand curves: Individual and market demand (NS ch. 3)
 
 We will learn how individual optimization implies a relationship between  the price of a good (and the consumer's income) and the amount a consumer chooses to purchase of that good; her individual *demand curve*.
 
-Adding up these individual demand curves yields the *market demand curve*, which describes the way the *total* amount consumers wish to purchase depends on the market price of a good.
+Adding up these individual demand curves yields the *market demand curve*, which describes the way the *total* amount of a good consumers wish to purchase depends on the market price of that good.
 
 [comment]: <> (101BB)
 
@@ -811,7 +885,7 @@ Not all goods can easily be restricted to a single consumer. 'Non-rival' and 'no
 
 - Monopolies; price discrimination as an imperfect remedy (NS ch. 11.2-4; supplemental readings)
 
-This is the polar opposite *market structure* to *perfect competition*; a monopoly is a single firm that exclusively dominated a particular industry. It will tend to produce less and charge more than would be socially optimal, Yielding a 'deadweight loss' (i.e., 'DWL').
+This is the polar opposite market structure to *perfect competition*; a monopoly is a single firm that exclusively dominated a particular industry. It will tend to produce less and charge more than would be socially optimal, yielding a 'deadweight loss' (aka 'DWL').
 
  'Price discrimination' is (more or less) when a firm charges different prices to different consumers; this can reduce (or increase) the 'deadweight loss' of monopoly, as we will learn.
 
@@ -831,7 +905,9 @@ For many decisions we make the consequences depend on what *others* do; we have 
 
 - Limits to cognition, willpower, self-interest; applications and evidence (NS ch 16, supplements)
 
-People may not actually make decisions In the hyper-rational way we have been assuming. Here we carefully consider the adaptation of some insights from Psychology to Economics, yielding 'behavioral econo##The big (small) question
+People may not actually make decisions In the hyper-rational way we have been assuming. Here we carefully consider the adaptation of some insights from Psychology to Economics, yielding 'behavioral economics'
+
+## The big (small) question
 
 > What's gonna be on the exam??
 
@@ -843,11 +919,9 @@ I try to reward broad understanding, rather than merely the ability to memorize 
 
 I give you copious examples of what will be on the examinations, including practice problems at the end of each lecture, problem sets, lots of mock and sample question on the VLE, and previous examinations and midterms.
 
-[comment]: <> (2024BB)
-
+<!--
 2018 students:  Note that many students struggled with last year's midterm, perhaps because they were unfamiliar with the format of multiple-choice questions and perhaps because the 2016 midterm had been somewhat too easy. We made some adjustments for this,  which we will not do again. I will try to make the midterm this year somewhat less challenging, and give you plenty of advance warning and sample material to prepare for it.
-
-[comment]: <> (2024EE)
+-->
 
 [comment]: <> (2024BB)
 
@@ -861,7 +935,7 @@ You need to work hard; here is the guideline specified...
 
 And now, a pep talk.
 
-##The real big question: why are you here?
+## The real big question: why are you here?
 
 To learn.
 
@@ -885,7 +959,7 @@ Some people and organisations seem to value this information:
 ***
 
 
-*Don't waste this experience fretting about marks*
+*Don't waste this experience fretting about marks.* Try to actually learn and not just mimic the process, as in 'cargo cults.'
 
 \includegraphics[height=2in]{picsfigs/cargo-cults-336x175.png}
 
@@ -922,6 +996,16 @@ Or, for anonymity, just complain on social media and I'll probably see it.
 
 [comment]: <> (2024EE)
 
+
+**Email**
+
+- For specific questions comments about your degree scheme and requirements, is best to contact the Building One 'help desk', or the appropriate help desk for your degree.
+
+- If you have a question about course material or coverage which other students will be interested in, please post this on the forum. If you email me I may respond by asking you to post this on the form.
+
+- If you have a specific question that needs private attention then email me and I will try to respond. However, if it is a longer question I may ask you to come to my office hours or schedule a time to meet.
+
+
 [comment]: <> (101BB)
 
 - Ask questions and make comments on the forum [LINK](http://vle.exeter.ac.uk/mod/forum/view.php?id=535415), I will monitor it
@@ -934,9 +1018,11 @@ Or, for anonymity, just complain on social media and I'll probably see it.
 - Stay tuned for the 'announcements'
 
 Also, there is a bunch of other material on the VLE. Remember to do  practice questions and formative assessments!
+
 ***
 
 [comment]: <> (2024BB)
+
 A copy (dropbox link) of each week's 'handouts' file will be added to the VLE each week in advance of the lectures. You can go to the linked pdf file (in your browser) and leave a comment/question *directly* on shared file, others can comment/respond, and I will review/react periodically.
 
 Note: You need a (free) Dropbox account to leave these comments; use your real name to get Kudos.
@@ -979,7 +1065,8 @@ To get the most out of the lectures, I advise you to
 
 1. Put in the work
 
-- Read the text (the parts outlined in this handout) in advance of the lecture, come with questions
+- Read the handout and the relevant parts of the text (the parts outlined in this handout) in advance of the lecture, come with questions
+
     - Handouts and lectures mainly follow the text
 
 - Do the problem set questions, suggested questions and class questions, understand the answers
@@ -1001,7 +1088,7 @@ To get the most out of the lectures, I advise you to
 
 *Skills to hone and build.* Your success in this module will depend in large part on building and applying basic maths skills and tools (mainly at the GCSE level), and strong reading/writing/logic abilities. You should build the ability to comprehend and respond carefully and logically to nuanced questions (essay/short answer, solved problem, and multiple choice). These problem will incorporate quantitative reasoning, logic, and the ability to understand and clearly express ideas, to correctly characterise and describe theories and evidence, and to apply learned principles to new situations.
 
-\textcolor{gray}{This last comment is especially relevant for non-native speakers of English}
+\textcolor{gray}{This last comment is especially relevant for non-native speakers of English.}
 
 [comment]: <> (2024BB)
 
@@ -1025,8 +1112,12 @@ Here are some broad Lessons that I hope you take away from this module, And that
 
 - But sometimes ignorance is bliss.
 
-Examples: Sunk cost fallacy, gains to trade/comparative advantage, opportunity cost,
+Examples: Sunk-cost fallacy, gains to trade/comparative advantage, opportunity cost,
 free-riding/prisoners' dilemma, double-marginalization,'raise price to raise profit', etc.
+
+<!--
+Todo: add in-document links to the above
+-->
 
  I've had many discussions about these things with my non-economist wife. Some of them make her more sanguine and content; other stress her out.
 
@@ -1034,7 +1125,7 @@ free-riding/prisoners' dilemma, double-marginalization,'raise price to raise pro
 
 \textrm{Humans are not like billiard balls, universal rules are hard to come by.}
 
-We are building models based on very Precisely defined assumptions, usually assuming things like a 'Single representative consumer'. These models are seductive and very helpful for clearly conveying insights.
+We are building models based on very precisely defined assumptions, usually assuming things like a 'single representative consumer'. These models are seductive and very helpful for clearly conveying insights.
 
 However, when it comes to applying these things to the real world, or testing these models, be careful;  people may differ and they may change and they may have multiple motives.
 
@@ -1054,7 +1145,7 @@ I don't want you to go away thinking that economists believe, 'markets solve eve
 I'm not telling you what *you* need to believe, I just don't want you to have a false impression of mainstream Economics.
 
 
-As I also mentioned, these apparent imperfections were market failures actually can lead to opportunities to create value and profit. Things that were once market failures might be solved by technology or new  frameworks.
+As I also mentioned, these apparent imperfections or market failures actually can lead to opportunities to create value and profit. Things that were once market failures might be solved by technology or new  frameworks.
 
 Here are some possible examples.
 \
@@ -1146,7 +1237,7 @@ There is a strong case to be made that a mandate to purchase insurance ( or syst
 
 > “Economics is the study of mankind in the ordinary business of life.” Alfred Marshall
 
-*Note*: The first quote suggests an *approach*, the second suggests a *domain*.
+*Note*: The first quote suggests an *approach* (*how* we do our research), the second suggests a *domain* (what we focus on).
 *Note:* “Economics never tells a man how he should act; it merely shows how a man must act if he wants to attain definite ends.” Ludwig von Mises
 
 
@@ -1165,7 +1256,11 @@ The study of the (economic) choices individuals and firms make and how these cho
 
 Largely, using theoretical and mathematical 'models' that depend on strong assumptions.
 
-\textcolor{gray}{Comprehension Q: Consider some examples of relevant choices for economic study. To refresh your memory... you have probably seen some of these models before in your first economics module. You should have some familiarity with the simple models of supply and demand curves yielding an equilibrium price and quantity. You may also have seen a models of trade, between two countries or two individuals, with only two goods, where for each good one has a 'comparative advantage'. }
+\textcolor{gray}{Comprehension Q: Consider some examples of 'relevant choices' for economic study. }
+
+\textcolor{gray}{What sort of models are we talking about?
+To refresh your memory... you have probably seen some of these models before in your first economics module. You should have some familiarity with the simple models of supply and demand curves yielding an equilibrium price and quantity. You may also have seen a models of trade, between two countries or two individuals, with only two goods, where for each good one has a 'comparative advantage'.
+}
 
 
 
@@ -1262,6 +1357,7 @@ Maybe, and sometimes. We will consider the evidence.}
 ## Economic Models
 
 
+**Economic model:**
 *\textcolor{gray}{Simple theoretical description that captures the essentials of how the economy works.}*
 
 
@@ -1317,12 +1413,15 @@ But good evidence for optimisation and 'predictable irrationality' ... behaviour
 
 ### The PPF: a 'model' and a way of seeing things
 
+\includegraphics[height=3in]{picsfigs/PPF_text.png}
+
+Above, we see a depiction of the "production possibility frontier", explained in the figure's caption. You may be familiar with this from your previous study. The PPF describes the maximum amount of one good that can be produced conditional on a certain quality of another good being produced.
+
+\textcolor{gray}{I'm not sure if I would call it a 'model', but it certainly provides a way of visualizing the trade-offs in an economy, and the way it is drawn embody certain assumptions. This graphic has a mathematical representation which we will not cover now.}
 
 Note: \textcolor{RawSienna}{For comprehension: *Draw the PPF; consider its slope and what it means*. \ *See fig 1.1*  \ *Advanced: Consider ... what assumptions does the PPF (implicitly) make?*}
 
 
-
-\includegraphics[height=3in]{picsfigs/PPF_text.png}
 
 ***
 
@@ -1433,6 +1532,9 @@ This is characteristic of many things 'online'
 
 - Determined by the preferences, behaviour, and costs of potential buyers and sellers
 
+*Note: in 2019 we will not be covering the historical background to the Marshallian cross (the demand and supply you may be familiar with). However, I do expect you to understand this model itself.*
+
+[comment]: <> (pre2019BB)
 
 ## Historical background \*
 
@@ -1496,14 +1598,23 @@ Ricardo:
 
 
 
-*Some key points:*  Ricardo’s model is inconsistent with the falling prices that occurred during the 19th century. These were 'Falling prices' in terms of goods purchased per unit of labour (leisure foregone). However, the Marshallian cross also  doesn't explain it without a further understanding of technical change.
+*Some key points:*  Ricardo’s model is inconsistent with the falling prices that occurred during the 19th century. These were 'Falling prices' in terms of goods purchased per unit of labour (leisure foregone). However, the Marshallian cross also  doesn't explain it without a further understanding of technological change.
+
+
+[comment]: <> (pre2019EE)
 
 ## Marshall’s Model of Supply and Demand
 
 
-Needed to explain falling prices in the 19th century, while quantities were increasing. Argued price must equal both the value (to consumers) *and* the cost (to produce) of the last unit produced and consumed
+Needed to explain falling prices in the 19th century, while quantities were increasing.i
 
-Introduced the 'demand curve';  *with a downward slope*  -- this was justified by 'Satiation' (later units valued less) and also the fact that one must cater to less and less keen consumers as one wants to sell more.
+He argued that the price must equal both the value (to consumers) *and* the cost (to produce) of the last unit produced and consumed
+
+Introduced the 'demand curve';  *with a downward slope*.
+
+This was justified by 'satiation': for an individual, additional units of a good are usually valued less and less. For example, you might be willing to pay thousands of pounds to be able to access 100 gallons of water rather than no water at all, but if you already have access to a thousand gallons of water, you will not be willing to pay very much for an additional 100 gallons.
+
+Furthermore,  firms  must cater to less and less keen consumers as they wants to sell more and more units. We come back to this later in the module.
 
 \bigskip
 
@@ -1514,8 +1625,8 @@ Introduced the 'demand curve';  *with a downward slope*  -- this was justified b
 
 \bigskip
 
-With 'single crossing' (a fancy condition you can ignore in this module) there is a unique price where $Q^s(p)=Q^d(p)$
-and a unique quantity where the last unit's value to the consumer equals it's cost to produce.
+With 'single crossing' (a fancy condition you can ignore in this module) there is a unique price where $Q^s(p)=Q^d(p)$,
+and a unique quantity where the last unit's value to the consumer equals its cost to produce.
 
 
 
@@ -1569,6 +1680,8 @@ In such a case, firms might offer a higher price, or sellers might ask for a hig
 
 ## How Economists 'Verify' (or Assess) Theoretical Models
 
+\textcolor{brown}{This will be skipped in lecture, but we will come back to some of these ideas later.}
+
 Two methods:
 
 1. Testing Assumptions
@@ -1621,6 +1734,8 @@ Two methods:
 
 
 ## APPLICATION 1.4: Economics According to Bono
+
+\textcolor{brown}{This will be skipped in lecture, but please read it; it may come up on an exam.}
 
 Do US farm subsidies help or hurt Africans in net? \textcolor{RawSienna}{Think about: what do we mean 'in net'?}
 
@@ -1728,16 +1843,57 @@ We will come back to revise this somewhat (in lecture and tutorials) as we *appl
 
 \bigskip
 
+##Other maths resources
 
-A *very* good resource for maths learning/revision:
+I am 'curating' some materials to help you revise the maths if you are having some difficulties there.
+
+Firstly, note that the Nicholson and Snyder text has a very relevant and useful appendix 2 chapter 1 specifically covering the most important maths; I have also echoed these in the handout. I covered it in some previous years (can you view the recap HERE? I covered it from minute 31, about), but it didn't seem so helpful to try to cram all of this into a lecture, so I stopped doing it.
+
+
+\bigskip
+
+Warwick maths notes
+
+The University of Warwick put up some decent 'refresher notes' for incoming economic students. I've re-hosted these on my Dropbox, with some comments on which parts are more relevant. (And remember, with a free dropbox account you can add comments and questions directly on these files which I will try to respond to).
+
+<p><a href="https://www.dropbox.com/s/99ugisobfvuc15e/Warwick_maths-revision-notes-1_drcomments.pdf?dl=0">WW notes 1</a>?</p>
+<p><a href="https://www.dropbox.com/s/93xw3hwv9oqlymn/WW_maths-revision-notes-2_drcomments.pdf?dl=0">WW notes?2</a></p>
+<p><a href="https://www.dropbox.com/s/93xw3hwv9oqlymn/WW_maths-revision-notes-2_drcomments.pdf?dl=0">WW notes 3</a></p>
+<p>(<a href="https://www.dropbox.com/s/0ppmpw5t5anfpd8/WW_maths-revision-notes-4_Drcomments_slightlylessrelevant.pdf?dl=0">Less relevant: WW notes 4?</a>)</p>
+<p><a href="https://www.dropbox.com/s/0ppmpw5t5anfpd8/WW_maths-revision-notes-4_Drcomments_slightlylessrelevant.pdf?dl=0">WW notes 5: the "inequalities" stuff is relevant?</a></p>
+
+WW notes 1
+WW notes 2
+WW notes 3
+(Less relevant: WW notes 4 )
+WW notes 5: the "inequalities" stuff is relevant
+
+**Khan** A *very* good resource for maths learning/revision:
+
+The Khan academy has really great well-designed course materials including videos and all sorts of interactive resources.really, I think this is the best place to learn this stuff!
 
 Khan academy: \url{https://www.khanacademy.org/math/},  e.g., see their introduction to differential calculus.
 
+Some Khan courses/sections I would recommend in particular
+
+
+- Pre-algebra (you should know all of this)
+
+- Algebra basics (all of this)
+
+- Algebra I (nearly all of this is relevant, accepting a few things like irrational numbers)
+
+- Algebra II  ('Functions' and possibly a few other parts)
+
+-  Statistics (mainly just 'discrete random variables'; especially the 'mean')
+
+- Helpful: Calculus as 'rates of change'; just the basic concept of a derivative
 
 [comment]: <> (2024EE)
 
-##Simple stuff
+## Simple stuff
 
+\textcolor{brown}{Please note: if this depiction is too abbreviated, please consult the NS text, or the Khan academy and Warwick resources mentioned above!}
 
 (Univariate) Function
 :     A 'map' from one or more *variables* ($x$) (or 'variables') to an outcome ($y=f(x)$)
@@ -2146,6 +2302,7 @@ Note: I think the discussion of the reduced form is too short to be helpful
 
 ## Application 1A.3: ... Changing world oil prices
 
+\textcolor{brown}{This will be probably skipped in lecture, but please read it. This will be referred to in problem sets/tutorials.}
 
 This is a great example from perhaps the most important unified global market, with tremendous fluctuations that have huge impacts.
  It shows the power of empirical microeconomics. (Note edition 12 updates.)
@@ -2166,9 +2323,11 @@ Solving this yields: $85 - 0.4P=55+0.6P \rightarrow P = 30, Q = 73$
 
 \
 
+
 [comment]: <> (2024BB)
 
 \textcolor{gray}{Note: This is the sort of simultaneous equation you should be able to solve.}
+
 [comment]: <> (2024EE)
 
 
@@ -2224,18 +2383,17 @@ The five support classes (tutorials) will cover *parts* of these.
 
 ##First problem set and tutorial: coverage
 
-
 See the file linked on the VLE (I put up just the questions first, and then the answers and explanations later.)
 
+<!--
+
 I.  Plotting supply and demand 'for orange juice', solving, for equilibrium price, excess demand/supply at non-equilibrium prices
-
 *Note:* \textcolor{gray}{In the real world, you might collect data like this and want to 'fit a line' to it. But it will never such a precise fit (you will fit a 'regression line' to minimise the deviations), and the 'all else equal' assumption is always an issue.}
-
 II.  Impact of shift in demand (for milk) on equilibrium, depending on slope of supply curve, explain
-
 III. Example of some (tricky) MCQs from previous exams
-
 IV. Discussion questions: practice writing concise essays and bullet points
+
+-->
 
 <!---
 BEGINLEC2
@@ -2293,16 +2451,22 @@ The 'Standard axioms' (imply that) choices can be expressed by 'individuals maxi
 
 This yields predictions for individual behavior, markets, etc.
 
-##Between first and second week; priority home-study
+## Between first and second week; priority home-study
 
 Make sure you are following along.
 
 Can you answer the questions mentioned above and in the lecture?
 
 - E.g., can you explain why (supply) demand curves slope (upwards) downwards?
+
 - Can you solve a system of two equations (supply, demand) for an equilibrium price and quantity?
+
 - What causes shifts versus movements along the demand curve?
-- Can you explain 'how economists use models and why'?
+
+<!--
+ Can you explain 'how economists use models and why'?
+-->
+
 
 At this point, you should be able to do problem set 1. Please do at least get a start on it.
 
@@ -2378,6 +2542,8 @@ $$Utility = U(X,Y; other)$$
 
  \textcolor{blue}{Maths revision}: $U(X,Y)$ expresses a *function* with two *arguments*, X and Y.
 
+\textcolor{gray}{At this point, you may want to return to the revision material covering functions of two parentheses or more) variables.}
+
 $U(X,Y)$ must take *some* value for every positive value of X and Y.
 
 In  *general* a function of X and Y might increase or decrease in either X or Y, or increase over some ranges and decrease over other ranges of these two arguments.
@@ -2388,6 +2554,9 @@ $U(X,Y)$ expresses a *general* function; I haven't specified *what* this functio
 
 E.g., it could be $U(X,Y)=\sqrt(XY)$.
 
+<!--
+todo: add detail here
+-->
 
 
 
@@ -2402,7 +2571,7 @@ Utility is seen to govern an individual's *choices* and thus it's only inferred 
 
 \bigskip
 
-Interpersonal comparisons are difficult
+\underline{Interpersonal comparisons are difficult}
 
 Who gets 'more' utility? We don't know.
 
