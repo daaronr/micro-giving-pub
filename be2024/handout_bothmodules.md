@@ -6,11 +6,14 @@
 % Handouts for BEEM101: Microeconomics (MSc)
 [comment]: <> (101EE)
 
-** Main text:  Nicholson/Snyder, Intermediate Microeconomics and its Application, 12th edition (other editions OK too)**
-**Notes by instructor David Reinstein**
 
-***
+**Notes by instructor David Reinstein, largely based on Nicholson/Snyder, Intermediate Microeconomics and its Application, 12th edition (other editions OK too)**
 
+[comment]: <> (2024BB)
+
+This text forms the basis for roughly 80-90\% of this module. I recommend you purchase, or find easy access to some edition of this book.
+
+[comment]: <> (2024BB)
 
 ---
      geometry: margin=0.7in
@@ -18,7 +21,7 @@
 
 
 
-#Notes to students on how to read this set of lecture notes
+# Notes to students on how to read this set of lecture notes
 
 [comment]: <> (2024BB)
 
@@ -40,7 +43,7 @@ Welcome to the exciting world of Microeconomics
 
 [comment]: <> (101EE)
 
-I wrote these notes to outline all of the material you are responsible for,  and to give you more resources and insight than I can convey in the short  amount of time we have during lecture.   I *don't* mean you're simply responsible for material early printed notes:  I mean that these notes will aim to *refer to* everything that you are responsible for.
+I wrote these notes to outline all of the material you are responsible for,  and to give you more resources and insight than I can convey in the short  amount of time we have during lecture.   I *don't* mean you're simply responsible for material in these printed notes:  I mean that these notes will aim to *refer to* everything that you are responsible for.
 
 These notes are meant to be a complement to the textbook (and to the lectures,  tutorials/problem sets, readings and other material on the ELE) and to tie all of this together.
 
@@ -107,18 +110,19 @@ The prerequisites are BEE1029 (for most students) or BEE1034 or BEE1030 and BEE1
 
 The prerequisites are very different, the students in this module may come from diverse *backgrounds*.
 
-We will focus on material:
+We will try to focus on material:
 
-- not covered in BEE1029
-- more rigorous and detailed versions of this
-- real world applications, especially in business
+- not covered in BEE1029 or
+- more rigorous and detailed versions of this, and
+- real world applications, especially in business.
 
-Some of you may have already seen some of the material covered here. If so, try to learn it in more detail, be better able to explain it to others, be able to apply it.
+Some of you may have already seen some of the material covered here.
+If so, try to learn it in more detail, become better at explaining  it to others, and learn to apply it to real-world issues.
 
 
 \bigskip
 
-*Note: From 2019 onwards, all students in this module will come from the "CORE ESPP"*
+*Note: From 2020 onwards, all students in this module will come from the "CORE ESPP"*
 
 \url{https://www.core-econ.org/espp/}
 
@@ -136,7 +140,7 @@ You will also come to notice that I emphasize logic, precise definitions, and ca
 
 However, this is not the core *Economics* module (bee2038: Microeconomics II). If you want  a more precise, theoretically complete and mathematically rigorus treatment of this material,  particularly if you are studying Economics and/or want to go to postgraduate study in a related field you probably should switch to that module.
 
-Further suggested maths resources are given below, under [Other maths resources].
+Further suggested maths resources are given below, under (#Other-maths-resources).
 
 [comment]: <> (2024EE)
 
@@ -146,7 +150,7 @@ Further suggested maths resources are given below, under [Other maths resources]
 
 I realise that you are facing a special challenge this year because of the changes in this particular prerequisite module, with less 'conventional Economics' covere .
 
-In 2018 I  discussed with your student-staff liaison committee chair on how to give you further support. One of the things she suggested was to point you in the direction of the text Edexcel AS/A level Economics. This should be accessible online. I have looked through this book and I agree that it will be helpful both as a prerequisite and to give you a more basic explanation (A-levels) of some of the things that we are covering in this module.
+In 2018 I discussed with your student-staff liaison committee chair on how to give you further support. One of the things she suggested was to point you in the direction of the text Edexcel AS/A level Economics. This should be accessible online. I have looked through this book and I agree that it will be helpful both as a prerequisite and to give you a more basic explanation (A-levels) of some of the things that we are covering in this module.
 
 In particular (note these chapters are very short):
 
@@ -226,7 +230,7 @@ See older  version of handout for discusion of prerequisites
     - Nicholson \& Snyder: Chapter 1 and 1a
     - T1:01a (Term 1, week 1, first hour; 'empirical')
 
-- \textcolor{blue}{First problem set: Mathematical approaches, economic models, revision and warm-up}
+- \textcolor{blue}{First problem set: Mathematical approaches, economic models, revision and warm-up; (to add: some practice MCQ's)}
 
 Note: I will not go over  all of the fundamental math tools in lecture: please read this section and learn and practice these on your own.
 
@@ -245,7 +249,7 @@ I will put up slides and other resources to help you with this (and we will re-c
 - **Utility and choice** (Utility, preferences, indifference curves, budget constraints ...) [1b-2]
     - NS: Ch 2
     - **T1:01b, 2**
-    - \textcolor{blue}{Second problem set (NS chapter 2): Preferences, Utility, Consumer optimization (individual and market demand curves)}
+    - \textcolor{blue}{Second problem set (NS chapter 2): Preferences, Utility, Consumer optimization (individual and market demand curves), and MCQ's for revision}
 
 [comment]: <> (2024BB)
 Optional interesting reading:
@@ -468,9 +472,9 @@ BEGINLEC1
 ---
 
 
-#Lecture1: Housekeeping, models and basics (and b. maths tools -- to be read at home) [1 hour]
+# Lecture1: Housekeeping, models and basics (and b. maths tools -- to be read at home) [1 hour]
 
-##Lecture1-i coverage (1 hour)
+## Lecture1-i coverage (1 hour)
 
 -- Content based on Nicholson/Snyder Chapter 1: Economic Models
 
@@ -559,7 +563,7 @@ I will also be advertising two "Student Campus Partner" positions which offer re
 
 [comment]: <> (2024BB)
 
-**BEE2024: Economic Principles and Policy (microeconomics)**
+**bee2038: Economic Principles and Policy (microeconomics)**
 
 [comment]: <> (2024EE)
 
@@ -592,13 +596,13 @@ The classes are a smaller group setting than the lectures;
 
 [comment]: <> (2024EE)
 
-we aim to make these highly interactive and participatory.  To really  be helpful, we need to know what areas you might be struggling with and where your logic  might be breaking down;  thus we will either do cold calling or highly encourage all the students in these tutorials to ask and answer questions.  Think of these as (especially) 'safe spaces';  you will be judged or marked based on your performance in the support classes, and  there are no dumb questions.  If you have a question many of your peers probably have the same question,  so asking itprovides a public good.
+we aim to make these highly interactive and participatory.  To really  be helpful, we need to know what areas you might be struggling with and where your logic  might be breaking down;  thus we will either do cold calling or highly encourage all the students in these tutorials to ask and answer questions.  Think of these as (especially) 'safe spaces';  you will be judged or marked based on your performance in the support classes, and  there are no dumb questions.  If you have a question many of your peers probably have the same question,  so asking it provides a *public good*.
 
 
 [comment]: <> (2024BB)
 
 - Marks for Microeconomics component
-    - First 'midterm' examination, 120 minutes, but you are unlikely to need all this time: 15 marks (30\% of term mark)
+    - First 'midterm' examination, 90 minutes, fully MCQ (but may require 'choose all that are correct');  15 marks (30\% of term mark)
     - Final examination, 120 minutes, MCQ, solved problems, short essays: 35 marks (70\% of term mark)
 
 
@@ -627,7 +631,7 @@ This module particularly emphasizes 5, and also 2 and 4.
 ***
 
 
-Also highly relevant to employers:
+These skills are also highly relevant to employers:
 
 \includegraphics[height=1.8in]{picsfigs/skillschart.png}
 
@@ -700,7 +704,7 @@ Issues with the text and online materials: Students can contact Roxanne Watts fo
 Lectures $\neq$ everything!:  *Some* of the text is only *mentioned* in lecture/handout, but you still must read \& learn it. On the other hand some sections of the text are skipped.  Some material is covered in these handouts, or recommended readings, that is *not* in the text; this is clearly emphasized. All of this is laid out in this handout.
 
 
-##Feedback on your highly esteemed but extremely humble lecturer
+## Feedback on your highly-esteemed but extremely humble lecturer
 
 We will have two 'official' feedback points. There will be an 'early feedback' survey, perhaps around week 4 or 5. This gives you a chance to give me constructive suggestions that I can adapt to *during* the rest of the module.
 
@@ -757,7 +761,7 @@ I also make changes from year-to-year, in response to your feedback.
 
 [comment]: <> (2024BB)
 
-###Some changes made responding to the previous year's feedback:
+### Some changes made responding to the previous year's feedback:
 
 1. Reduced coverage, enabling better focus. In particular, I have eliminated or consolidated much of the material on the firm's production function and costs. In earlier surveys, this was the topic students liked the least. In 2019 I am removing the coverage of the history of supply and demand curves and a few other topics.
 
@@ -774,6 +778,9 @@ I also make changes from year-to-year, in response to your feedback.
 <!--
  5. The midterm will be multiple choice; some questions will require multiple answers, but the exact number of correct answers will always be clearly specified. I also was able to add an *additional* tutorials before the midterm (two instead of one), so these will be more helpful in preparing for it.
 -->
+
+6. I will try to provide more vision coverage and supplementary materials for managerial economics students.
+
 [comment]: <> (2024EE)
 
 ***
@@ -789,7 +796,7 @@ I also make changes from year-to-year, in response to your feedback.
 
 [comment]: <> (101EE)
 
-##The story of this module
+## The story of this module
 
 *Note:* You will have seen many of these concepts before.
 
@@ -801,10 +808,10 @@ And do you understand the *limits and critiques* of these, and how economists tr
 
 ***
 
-**1. Economic basics (weeks 1-2)**
+### 1. Economic basics (weeks 1-2)
 
-- Economic models and basic maths tools, introduction (NS ch. 1)
-- Preferences, utility, indifference curves, budget constraints (NS ch. 2)
+\underline{Economic models and basic maths tools, introduction (NS ch. 1)}
+\underline{Preferences, utility, indifference curves, budget constraints (NS ch. 2)}
 
 In weeks one and two we will go over some of the simple tools in the economists' kit. I will try to explain to you what we mean by 'economic models' and give you some examples of these which may be familiar to you. I will not go over the math tools in the lecture; you should study/revise this on your own. We *will* go over many of these again briefly as we apply these math tools to our economic models throughout the module.
 
@@ -820,18 +827,18 @@ Under this framework individuals make the 'optimal choices' ... by making the ch
 
 \medskip
 
-**2. Building the model, putting it together, examining it (weeks 3-5)**
+### 2. Building the model, putting it together, examining it (weeks 3-5)
 
 'What determines the price and quantities exchanged in an unregulated (or 'free') market?' 'Do markets yield good outcomes?'
 
 These questions have been at the backbone of Economics for millennia, at least since Aristotle.
 
 Classical economists such as Adam Smith built-up ideas of how seemingly random and disorganized markets can yield predictable and efficient outcomes, at least under appropriate conditions.
-Neoclassical and modern economists (such as Alfred Marshall, David Ricardo, Leon Walras, and Paul Samuelson) have formalized these, building models involving of systems of demand and supply and general equilibrium, and have made the case for the efficiency and desirability of the free market outcomes, at least under specified conditions. (Much of this work has tried to specify more and more *general* conditions for this, requiring less and less stringent assumptions.)
+Neoclassical and modern economists (such as Alfred Marshall, David Ricardo, Leon Walras, and Paul Samuelson) have formalized these, building models involving of systems of demand and supply and general equilibrium, and have made the case for the efficiency and desirability of the free market outcomes, at least under specified conditions. ^[Much of this work has tried to specify more and more *general* conditions for this, requiring less and less stringent assumptions.]
 
 In the second (and largest) chunk of the course, we will learn some of the essential building blocks of this model, and how they are justified and put together to yield predictions for market outcomes and 'welfare'. In the process, we will get useful ideas and intuitions about the working of markets.
 
-- Demand curves: Individual and market demand (NS ch. 3)
+\underline{Demand curves: Individual and market demand (NS ch. 3)}
 
 We will learn how individual optimization implies a relationship between  the price of a good (and the consumer's income) and the amount a consumer chooses to purchase of that good; her individual *demand curve*.
 
@@ -839,7 +846,7 @@ Adding up these individual demand curves yields the *market demand curve*, which
 
 [comment]: <> (101BB)
 
-- Production, costs, returns to scale, choice of inputs (NS ch. 6-7, parts)
+\underline{Production, costs, returns to scale, choice of inputs (NS ch. 6-7, parts)}
 
 [comment]: <> (101EE)
 
@@ -847,7 +854,7 @@ Adding up these individual demand curves yields the *market demand curve*, which
 
 [comment]: <> (2024BB)
 
-- Production, costs, returns to scale, choice of inputs
+\underline{Production, costs, returns to scale, choice of inputs}
 
 \textcolor{gray}{Note: This is covered NS ch. 6-7, but reading these sections is optional. You are only responsible for the brief 'sketch' of this that I provide in this handout and in a short lecture, and any problem sets related to this.}
 
@@ -855,7 +862,7 @@ Adding up these individual demand curves yields the *market demand curve*, which
 
 Someone has to make this stuff, you know! We consider 'production functions' that map how inputs can be turned into outputs. If firms are seeking to maximize profits, then whatever output they want to produce ... they will try to produce it using the combination of inputs (Capital, labor, etc.) that can do this at the lowest cost. If we know production functions and input costs, we can describe a firm's cost of producing every amount of a particular good.
 
-- Profit maximisation and supply, perfect competition in a single market (NS ch. 8-9)
+\underline{Profit maximisation and supply, perfect competition in a single market (NS ch. 8-9)}
 
 Economists typically assume that firms make choices to maximize profits. (Mathematically, this 'optimisation', i.e., maximisation, has some things in common with the consumer optimisation of utility, so it may look familiar).
 
@@ -863,9 +870,9 @@ Knowing their cost of production and the demand curve they will face, firms will
 
 With 'free entry/exit of firms' we have the (ideal) situation of *perfect competition*.
 
-- Supply curves, entry/exit, CS and PS, tax incidence, general equilibrium and welfare (brief)
+\underline{Supply curves, entry/exit, CS and PS, tax incidence, general equilibrium and welfare (brief)}
 
-Each firms supply curve is added up to generate the market supply curve; we consider this in both the 'short and long run'.
+Each firm's supply curve is added up to generate the market supply curve; we consider this in both the 'short and long run'.
 We define the concepts of 'consumer surplus' and 'producer surplus'; adding these yields the total value in an economy or the total 'social welfare'.
 
 We will briefly and roughly consider the idea of an *equilibrium* in all markets; prices such that quantity demanded equals quantity supplied for all outputs and inputs.
@@ -875,35 +882,35 @@ I will state and give you some intuition behind the 'first and second welfare th
 
 ***
 
-**3. How the market can go wrong (and how to maybe fix it) (weeks 6-7)**
+### 3. How the market can go wrong (and how to maybe fix it) (weeks 6-7)
 
 Notice I kept saying "under certain conditions" free markets yield good outcomes. These conditions may not hold, for various reasons. In the third chunk, we discuss two of these reasons, which lead to 'market failures'. It is important to understand these. These (sometimes) offer a justification for government intervention, and help us understand how government can best respond. These also offer insights for business models; which 'goods' may be hard to provide without government subsidies, and how can we use technological innovation to capture value and reduce the extent of market failures? (Businesses may also be able to take advantage of market failures in ways that are harmful to public welfare, But I would hate to think I'm training you to do this.)
 
-- Market failures -- Public goods (NS, ch. 16, parts)
+\underline{Market failures -- Public goods (NS, ch. 16, parts)}
 
 Not all goods can easily be restricted to a single consumer. 'Non-rival' and 'non-excludable' goods (e.g., a fireworks display) are called *public goods*: these will tend to be undersupplied by the free market, as we will come to understand. We will also discuss the evidence for the private provision of these, and consider government's ability to provide them.
 
-- Monopolies; price discrimination as an imperfect remedy (NS ch. 11.2-4; supplemental readings)
+\underline{Monopolies; price discrimination as an imperfect remedy (NS ch. 11.2-4; supplemental readings)}
 
-This is the polar opposite market structure to *perfect competition*; a monopoly is a single firm that exclusively dominated a particular industry. It will tend to produce less and charge more than would be socially optimal, yielding a 'deadweight loss' (aka 'DWL').
+This is the polar opposite market structure to perfect competition; a monopoly is a single firm that exclusively dominated a particular industry. It will tend to produce less and charge more than would be socially optimal, yielding a 'deadweight loss' (aka 'DWL').
 
  'Price discrimination' is (more or less) when a firm charges different prices to different consumers; this can reduce (or increase) the 'deadweight loss' of monopoly, as we will learn.
 
 
-**4. Extensions to the model and applications (weeks 8-10)**
+### 4. Extensions to the model and applications (weeks 8-10)
 
 In the final chunk we extend the model to accommodate some important aspects of the real world. We investigate the implication of these for market outcomes.
 
-- Uncertainty (basic concepts, EU, risk aversion, investment choices) (NS ch. 4; supplements on finance)
+\underline{Uncertainty (basic concepts, EU, risk aversion, investment choices) (NS ch. 4; supplements on finance)}
 
 We make many decisions without knowing exactly what the consequence of each choice will be. Economists typically model this using the "expected utility" framework. A warning: students often get this concept wrong, so be careful. Expected utility is not the same as 'expected monetary value'; and this allows EU to embody risk aversion.
 
 
-- Game theory; experimental evidence on this (NS ch. 5, supplements)
+\underline{Game theory; experimental evidence on this (NS ch. 5, supplements)}
 
 For many decisions we make the consequences depend on what *others* do; we have 'strategic interaction'. Economist usually consider this using the framework and tools of *game theory*.
 
-- Limits to cognition, willpower, self-interest; applications and evidence (NS ch 16, supplements)
+\underline{Limits to cognition, willpower, self-interest; applications and evidence (NS ch 16, supplements)}
 
 People may not actually make decisions In the hyper-rational way we have been assuming. Here we carefully consider the adaptation of some insights from Psychology to Economics, yielding 'behavioral economics'
 
@@ -959,7 +966,7 @@ Some people and organisations seem to value this information:
 ***
 
 
-*Don't waste this experience fretting about marks.* Try to actually learn and not just mimic the process, as in 'cargo cults.'
+*Don't waste this experience fretting about marks. Try to actually learn and not just mimic the process, as in 'cargo cults.'*
 
 \includegraphics[height=2in]{picsfigs/cargo-cults-336x175.png}
 
@@ -1033,7 +1040,7 @@ Note: You need a (free) Dropbox account to leave these comments; use your real n
 
 ***
 
-###In-lecture interaction
+### In-lecture interaction
 
 Even though our lecture time is scarce, It seems to me that to get value out of this antiquated format known as a lecture, we should have at least some interaction. Otherwise, you may as well be watching a video.
 
@@ -1061,11 +1068,11 @@ To get the most out of the lectures, I advise you to
 -->
 
 
-##How to do well
+## How to do well
 
 1. Put in the work
 
-- Read the handout and the relevant parts of the text (the parts outlined in this handout) in advance of the lecture, come with questions
+- Read the handout and the relevant parts of the text (as outlined in this handout) in advance of the lecture, come with questions
 
     - Handouts and lectures mainly follow the text
 
@@ -1112,14 +1119,14 @@ Here are some broad Lessons that I hope you take away from this module, And that
 
 - But sometimes ignorance is bliss.
 
-Examples: Sunk-cost fallacy, gains to trade/comparative advantage, opportunity cost,
+*Examples:* Sunk-cost fallacy, gains to trade/comparative advantage, opportunity cost,
 free-riding/prisoners' dilemma, double-marginalization,'raise price to raise profit', etc.
 
 <!--
 Todo: add in-document links to the above
 -->
 
- I've had many discussions about these things with my non-economist wife. Some of them make her more sanguine and content; other stress her out.
+I've had many discussions about these things with my non-economist wife. Some of them make her more sanguine and content; other stress her out.
 
 ***
 
@@ -1377,8 +1384,6 @@ The Methodology of Positive Economics (Friedman): the ultimate goal of theory is
 “Fruitful” -- more precise predictions, for a wider range of situations
 
 
-
-
 \bigskip
 
 
@@ -1415,7 +1420,7 @@ But good evidence for optimisation and 'predictable irrationality' ... behaviour
 
 \includegraphics[height=3in]{picsfigs/PPF_text.png}
 
-Above, we see a depiction of the "production possibility frontier", explained in the figure's caption. You may be familiar with this from your previous study. The PPF describes the maximum amount of one good that can be produced conditional on a certain quality of another good being produced.
+Above, we see a depiction of the "production possibility frontier" (PPF), explained in the figure's caption. You may be familiar with this from your previous study. The PPF describes the maximum amount of one good that can be produced conditional on a certain quality of another good being produced.
 
 \textcolor{gray}{I'm not sure if I would call it a 'model', but it certainly provides a way of visualizing the trade-offs in an economy, and the way it is drawn embody certain assumptions. This graphic has a mathematical representation which we will not cover now.}
 
@@ -1493,7 +1498,7 @@ The economics of trade may also apply to the natural world in certain ways.
 \textcolor{RawSienna}{Adv: Above, we see the working of ant-aphid symbiosis, a form of mutualism. Relevant to the 'conditions necessary for trade to occur'? The ants 'farm' the aphids, who secrete nice substances. In return the ants protect the aphids and only sometimes eat them.}
 
 
-##Application 1.2: Is It Worth Your Time to Be Here? (read at home, discuss)
+## Application 1.2: Is It Worth Your Time to Be Here? (read at home, discuss)
 
 
 - Consider the same for the UK/Exeter; give your best estimate
@@ -1510,7 +1515,7 @@ Should the government subsidise it?  Won't people get the optimal education with
 
 Consider: Social vs private returns. Is there a case for 'market failure'?
 
-##Application 1.3: Rise and Fall of Blockbuster
+## Application 1.3: Rise and Fall of Blockbuster
 
 *Critical contemporary business challenge*:
 
@@ -1601,18 +1606,20 @@ Ricardo:
 *Some key points:*  Ricardo’s model is inconsistent with the falling prices that occurred during the 19th century. These were 'Falling prices' in terms of goods purchased per unit of labour (leisure foregone). However, the Marshallian cross also  doesn't explain it without a further understanding of technological change.
 
 
+
 [comment]: <> (pre2019EE)
 
 ## Marshall’s Model of Supply and Demand
 
+Economists and philosophers have long sought to explain 'what determines the prices, and why do they change the way they do?'
 
-Needed to explain falling prices in the 19th century, while quantities were increasing.i
+In the 19th century UK prices were falling while quantities were increasing; this was a puzzle.
 
-He argued that the price must equal both the value (to consumers) *and* the cost (to produce) of the last unit produced and consumed
+Alfred Marshall argued that a good's price must equal *both*  the cost to produce and the value (to consumers) of the last unit produced and consumed.
 
-Introduced the 'demand curve';  *with a downward slope*.
+He introduced the 'demand curve';  *with a downward slope*.
 
-This was justified by 'satiation': for an individual, additional units of a good are usually valued less and less. For example, you might be willing to pay thousands of pounds to be able to access 100 gallons of water rather than no water at all, but if you already have access to a thousand gallons of water, you will not be willing to pay very much for an additional 100 gallons.
+This slope  was justified by 'satiation': for an individual, additional units of a good are usually valued less and less. For example, you might be willing to pay thousands of pounds to be able to access 100 gallons of water rather than no water at all, but if you already have access to a thousand gallons of water, you will not be willing to pay very much for an additional 100 gallons.
 
 Furthermore,  firms  must cater to less and less keen consumers as they wants to sell more and more units. We come back to this later in the module.
 
@@ -1771,7 +1778,7 @@ Q8. (This one is conceptual and somewhat tricky!) ''Housing advocates often clai
 
 
 
-##Chapter 1a -- coverage outline
+## Chapter 1a -- coverage outline
 
 [comment]: <> (101BB)
 
@@ -1843,7 +1850,7 @@ We will come back to revise this somewhat (in lecture and tutorials) as we *appl
 
 \bigskip
 
-##Other maths resources
+## Other maths resources
 
 I am 'curating' some materials to help you revise the maths if you are having some difficulties there.
 
@@ -1862,11 +1869,11 @@ The University of Warwick put up some decent 'refresher notes' for incoming econ
 <p>(<a href="https://www.dropbox.com/s/0ppmpw5t5anfpd8/WW_maths-revision-notes-4_Drcomments_slightlylessrelevant.pdf?dl=0">Less relevant: WW notes 4?</a>)</p>
 <p><a href="https://www.dropbox.com/s/0ppmpw5t5anfpd8/WW_maths-revision-notes-4_Drcomments_slightlylessrelevant.pdf?dl=0">WW notes 5: the "inequalities" stuff is relevant?</a></p>
 
-WW notes 1
-WW notes 2
-WW notes 3
-(Less relevant: WW notes 4 )
-WW notes 5: the "inequalities" stuff is relevant
+[WW notes 1](https://www.dropbox.com/s/99ugisobfvuc15e/Warwick_maths-revision-notes-1_drcomments.pdf?dl=0">WW notes 1)
+[WW notes 2](href="https://www.dropbox.com/s/93xw3hwv9oqlymn/WW_maths-revision-notes-2_drcomments.pdf?dl=0">WW notes?2)
+[WW notes 3](https://www.dropbox.com/s/93xw3hwv9oqlymn/WW_maths-revision-notes-2_drcomments.pdf?dl=0)
+[Less relevant: WW notes 4](https://www.dropbox.com/s/0ppmpw5t5anfpd8/WW_maths-revision-notes-4_Drcomments_slightlylessrelevant.pdf?dl=0)
+[WW notes 5: the "inequalities" stuff is relevant](https://www.dropbox.com/s/0ppmpw5t5anfpd8/WW_maths-revision-notes-4_Drcomments_slightlylessrelevant.pdf?dl=0)
 
 **Khan** A *very* good resource for maths learning/revision:
 
@@ -1894,6 +1901,12 @@ Some Khan courses/sections I would recommend in particular
 ## Simple stuff
 
 \textcolor{brown}{Please note: if this depiction is too abbreviated, please consult the NS text, or the Khan academy and Warwick resources mentioned above!}
+
+[comment]: <> (2024BB)
+
+\textcolor{grey}{I expect to cover this in the second lecture}
+
+[comment]: <> (2024EE)
 
 (Univariate) Function
 :     A 'map' from one or more *variables* ($x$) (or 'variables') to an outcome ($y=f(x)$)
@@ -2005,6 +2018,14 @@ Derivative of a function
 
 ***
 
+[comment]: <> (2024BB)
+
+\textcolor{grey}{We will come back to the following examples later.}
+
+[comment]: <> (2024EE)
+
+
+
 - E.g., the derivative of the quadratic function $f(x) = x^2 -4x + 1$ is $f'(x) = 2x - 4$
 
 \bigskip
@@ -2055,8 +2076,7 @@ Oversimplifying a bit:
 - if the slope is always increasing, i.e., if $f''(x)>0$ everywhere, the function is *convex* (u-shaped), and has a single minimum where $f'(x)=0$
 - if the slope is always decreasing, i.e., if $f''(x)<0$ everywhere, the function is *concave* (inverse-u-shaped), and has a single maximum where $f'(x)=0$
 
-## Functions of two or more variables (multivariate functions)
-
+## Functions of two or more variables (multivariate functions) {#multivar-functions}
 Utility, profit, cost, production, returns, etc.
 
 - May depend on multiple variables/inputs
@@ -2151,7 +2171,7 @@ Connect values of x and z that lead to the same value of y.
 
 ***
 
-## Simultaneous equations
+## Simultaneous equations (Cover briefly in lecture)
 
 \includegraphics[height=2.2in]{picsfigs/simeqn.png}
 
@@ -2371,7 +2391,7 @@ Other changes included: Speculation, other disruptions.  *Supply* may have also 
 
 \textcolor{blue}{Do you know the current price of oil per barrel in USD and GBP?}
 
-##Problem sets
+## Problem sets
 
 *Note:* There will be 8 total problem sets, each covering a block of material. As noted above, these are aimed to help prepare you for the assessments.
 
@@ -2381,7 +2401,7 @@ The five support classes (tutorials) will cover *parts* of these.
 
 
 
-##First problem set and tutorial: coverage
+## First problem set and tutorial: coverage
 
 See the file linked on the VLE (I put up just the questions first, and then the answers and explanations later.)
 
@@ -2392,6 +2412,8 @@ I.  Plotting supply and demand 'for orange juice', solving, for equilibrium pric
 II.  Impact of shift in demand (for milk) on equilibrium, depending on slope of supply curve, explain
 III. Example of some (tricky) MCQs from previous exams
 IV. Discussion questions: practice writing concise essays and bullet points
+
+Also: Some maths concepts.
 
 -->
 
@@ -2404,16 +2426,21 @@ BEGINLEC2
 ---
 
 
-#Lecture2:  Utility and Choice [NS Chapter 2; 2 hours]
+# Lecture2:  Utility and Choice [NS Chapter 2; 2 hours]
 
 
-##Some motivation for these abstract ideas
+\textcolor{grey}{We now consider the very very fundamental building blocks behind the (in)famous "neoclassical economics model." Accept these"axioms" nearly everything flows from it!}
+
+## Some motivation for these abstract ideas
 
 
-Consider a decision you recently made?  Define this decision clearly; what were the options.  How do you think you decided among these options?
+\textcolor{blue}{Consider a decision you recently made?  Define this decision clearly; what were the options?  How do you think you decided among these options?}
 
 What did this depend on? Would other people in your place have made the same decision?
 If you got amnesia and forgot what you decided and then were in the same situation again. Do you think you'd make the same decision?
+
+
+\includegraphics[height=3in]{picsfigs/mortys-mind-blower.png}
 
 \bigskip
 Suppose I asked you
@@ -2479,7 +2506,7 @@ To prepare for the week 2 lectures, you should look ahead at the readings and ha
 - If you have time, please also start considering the budget constraints and conditions for consumer optimisation. In particular, the 'bang for the buck' condition is something you will want to look at closely to get your head around it.
 
 
-##Lecture 2 (2 hours), Chapter 2 -- Utility and Choice -- coverage outline
+## Lecture 2 (2 hours), Chapter 2 -- Utility and Choice -- coverage outline
 
 
 *Key goals of these lectures (and accompanying self-study)*
@@ -2509,7 +2536,7 @@ In the (neo) classical economics framework, your (optimising) choices are determ
 
 [comment]: <> (101BB)
 
-##Enrichment and extensions (optional)
+## Enrichment and extensions (optional)
 David Autor's notes (goo.gl/aW3DxB; MIT Microeconomic Theory and Public Policy)
 
 [comment]: <> (101EE)
@@ -2517,7 +2544,7 @@ David Autor's notes (goo.gl/aW3DxB; MIT Microeconomic Theory and Public Policy)
 
 - \textcolor{blue}{Second problem set, first part (NS chapter 2): Preferences, Utility, Consumer optimization, individual and market demand}
 
-##Utility
+## Utility
 
 Utility
 :     "The pleasure or satisfaction that people get from their economic activity."
@@ -2530,9 +2557,12 @@ Utility
 
 ## Utility from two goods
 
+We may specify a "utility function" of two goods (or aggregations of goods) $X$ and $Y$:
+
+
 $$Utility = U(X,Y; other)$$
 
-\
+We can get a lot of insight from considering models Of an individual's preferences over only two goods. These two 'goods' could represent, for example:
 
 - Leisure and 'goods consumption'
 
@@ -2542,7 +2572,7 @@ $$Utility = U(X,Y; other)$$
 
  \textcolor{blue}{Maths revision}: $U(X,Y)$ expresses a *function* with two *arguments*, X and Y.
 
-\textcolor{gray}{At this point, you may want to return to the revision material covering functions of two parentheses or more) variables.}
+\textcolor{gray}{At this point, you may want to return to the revision material covering functions of two or more variables.} [Math-multivariate functions](#multivar-functions)
 
 $U(X,Y)$ must take *some* value for every positive value of X and Y.
 
@@ -2550,7 +2580,7 @@ In  *general* a function of X and Y might increase or decrease in either X or Y,
 
 For example, consider the function 'altitude of land in Britain as a function of degrees longitude and latitude'.
 
-$U(X,Y)$ expresses a *general* function; I haven't specified *what* this function is
+$U(X,Y)$ expresses a *general* function; I haven't specified *what* this function is.
 
 E.g., it could be $U(X,Y)=\sqrt(XY)$.
 
@@ -2636,7 +2666,9 @@ The following is \textcolor{red}{forbidden}: "I cannot choose between a ski holi
 
 \includegraphics[height=1.5in]{picsfigs/donkeybales.jpeg}
 
-\textcolor{gray}{Also forbidden: the \emph{time} or \emph{frame} in which I make the *decisions* shouldn't affect my choices.}
+\textcolor{gray}{Why *wouldn't* I be able to express a preference? In the case above that seems strange, but for other cases it may be extremely difficult or painful to make a choice, or very hard to compare two things. Imagine if you were asked to choose between never seeing your mother or never seeing your father. In general, economists' standard approach assumes we have a consistent preference ranking over all possibilities, and choose accordingly.  Other social sciences see this differently/}
+
+\textcolor{gray}{Also 'forbidden' in the classical model: the \emph{time} or \emph{frame} in which I make the *decisions* must not affect my choices. This will be relaxed when we discuss behavioral economics.}
 
 \medskip
 
@@ -2683,6 +2715,9 @@ $$ A \succ B \: and \: B \succ C \rightarrow A \succ C $$
 
 \textcolor{RawSienna}{Adv: If you found someone who stricly preferred a apple to a bananas, a banana to a cherry, and a cherry to an apple,  you could make a lot of money out of them!}
 
+<!--
+Act this out? Make a video?
+-->
 
 
 \bigskip
@@ -3097,7 +3132,7 @@ Some suggested answers, others are reasonable...
 *Note:* \textcolor{gray}{The utility and indifference curve construct may seem highly theoretical. Indeed, these models were developed largely to address big questions like 'who gains from trade?'  Still, it helps organise thinking and analysis for at least some managers and marketing groups.  According to the text, Marriot hotel used focus groups to 'construct (multidimensional) indifference curves' to consider their ideal product positioning.
 I have seen a similar presentation for other hotels.}
 
-##Definitions: Perfect substitutes and complements
+## Definitions: Perfect substitutes and complements
 
 Perfect substitutes
 
@@ -3333,7 +3368,7 @@ I.e., the same 'bang for each buck'.
 *Note:* If this didn't hold true and you were spending on both goods, you would be paying 'more per util' for one good than the other, and thus should reallocate to that other good.
 
 
-##Note on 'corner solutions'
+## Note on 'corner solutions'
 
 - The above applies to any *interior* solution
     - If you are consuming both goods and optimising, $P_X/P_Y = MRS = MU_X/MU_Y$ must hold
@@ -3369,7 +3404,7 @@ Constrained problem equivalent to optimising a single unconstrained 'Lagrangian'
 [comment]: <> (101EE)
 
 
-##App 2.4: ticket scalping
+## App 2.4: ticket scalping
 
 \includegraphics[height=2.4in]{picsfigs/scalping.png}
 
@@ -3389,7 +3424,7 @@ She  could give up up to an additional C-D of goods for ticket 2 and still be as
 Why would NFL institute this rule?  Who benefits? (Maybe poor consumers?)
 Why do people see scalping as unfair? Is there ever a justification to forbid a transaction between 2 consenting parties?
 
-##App 2.5: What's a rich uncle's promise worth?
+## App 2.5: What's a rich uncle's promise worth?
 
 \includegraphics[height=2.2in]{picsfigs/williesuncle.png}
 
@@ -3403,7 +3438,7 @@ Graphically, how much \$ would have been enough to compensate for abstaining?
 
 \textcolor{RawSienna}{Adv: Hard question, foreshadowing future concepts like the inefficiency of in-kind subsidies... How much would Willie need to be paid to get him to $U_3$ \emph{without} the restriction?  Is this more or less than \$5k?}
 
-##Using the model of choice
+## Using the model of choice
 
 1. Why do people spend their money on different things?
 2. What do different preferences/indifference curves imply for choices?
@@ -3421,7 +3456,7 @@ What indicates each persons’ preference for one good over the other?
 The shape of the indifference curve.  The flatter (steeper) the indifference curve the stronger the preference for the good on the Y-axis (X-axis)
 
 
-##Algebraic/numerical examples
+## Algebraic/numerical examples
 
 Consider: are the following 'perfect substitutes' for someone who wants caffeine, but has no taste buds?
 
@@ -3606,7 +3641,7 @@ Thus $Y = I/(2P_Y)$ etc. }
 
 [comment]: <> (101BB)
 
-##Generalisations
+## Generalisations
 
 - Complicated (e.g., nonlinear) pricing and budget constraints
 
@@ -3616,7 +3651,7 @@ Thus $Y = I/(2P_Y)$ etc. }
 ***
 
 
-###Cobb-Douglas general form (from other text)
+### Cobb-Douglas general form (from other text)
 
 $$U(X,Y)=X^aY^b$$
 
@@ -3665,7 +3700,7 @@ So only the *ratio* Y/X affects the MRS; double both, MRS is the same.
 
 ***
 
-###A non-homothetic (here, 'Quasilinear') example
+### A non-homothetic (here, 'Quasilinear') example
 
 
 $$U(X,Y)=X+ln(Y)$$
@@ -3707,7 +3742,7 @@ Intuition: if the 'Y' goods (x2... xn) have more MU consume them 'first',
 
 
 
-##App 2.6: Loyalty programmes (Skip in lecture)
+## App 2.6: Loyalty programmes (Skip in lecture)
 
 \includegraphics[height=2.5in]{picsfigs/kinkedbc.png}
 
@@ -3717,7 +3752,7 @@ Intuition: if the 'Y' goods (x2... xn) have more MU consume them 'first',
 The 'business customers pay zero out of pocket' seems to be an unrelated point.}
 
 
-##Doctoral-prep concepts
+## Doctoral-prep concepts
 
 *Some examples of things you will need to learn and use for a PhD micro module*
 
@@ -3756,7 +3791,7 @@ BEGINLEC3
      geometry: margin=0.7in
 ---
 
-#Lecture3: (Chapter 3) Demand Curves [2 hours]
+# Lecture3: (Chapter 3) Demand Curves [2 hours]
 
 ## Lecture 3 (Chapter 3): Demand Curves -- coverage outline
 
@@ -3784,7 +3819,7 @@ BEGINLEC3
 - \textcolor{blue}{Second problem set, second part (NS chapter 2-3): Preferences, Utility, Consumer optimization, individual and market demand}
 
 
-##Demand functions
+## Demand functions
 
 -Previous: consumption choices determined by utility functions/indifference curves and budget constraints
 
@@ -3795,7 +3830,7 @@ $$Quantity \: of \: X \: demanded = d_x(P_X, P_Y, I; preferences)$$
 
 ***
 
-###Homogeneity
+### Homogeneity
 
 Homogenous (of degree zero) (demand) function
 :      A function whose outcome value does not change when all arguments are changed proportionally
@@ -3820,7 +3855,7 @@ This relates to the puzzle of 'why should monetary policy and inflation have any
 
 ***
 
-##Response to income changes
+## Response to income changes
 
 - What happens to the quantity purchased of some good as your income increases?
 - Depends on whether the good is normal or inferior
@@ -3881,7 +3916,7 @@ There are 'adding up' conditions.
 You always spend all of your income. Thus, if as your income increases, you spend less on some subset of goods,
 you *must* spend more on the remaining goods.}
 
-##Substitution and income effects from a fall (or rise) in price
+## Substitution and income effects from a fall (or rise) in price
 
 What happens to the quantity purchased of some good when the price of the good falls or rises?
 
@@ -3980,7 +4015,7 @@ More advanced economics modules will cover this extensively and rigorously.
 
 [comment]: <> (101BB)
 
-##Some other important functions to know about (doctoral prep):
+## Some other important functions to know about (doctoral prep):
 
 \includegraphics[height=2.2in]{picsfigs/axioms.png}
 
@@ -4079,7 +4114,7 @@ But why is it OK to consider this 'from the initial consumption point' and not a
 Intuition for Sheperds' Lemma  is easier.  How much more do we need to spend to get the same utility if $p_x$ rises? We must spend, at the margin, at rate equal to our previous consumption of X, $h_x$. Again, we don't need to consider the adjustment to the consumption bundle in answering this *particular* question because of the envelope theorem.
 
 
-##Intuition from the 'Slutsky equation'
+## Intuition from the 'Slutsky equation'
 
 
 $$\frac{\partial d_x}{\partial p_x}= \frac{\partial h_x}{\partial p_x} - \frac{\partial d_x}{\partial I}x$$
@@ -4101,9 +4136,9 @@ A similar result applies to a change in *another* good's price, with similar int
 [comment]: <> (101EE)
 
 
-##Second lecture on demand ... WHAT???!!
+## Second lecture on demand ... WHAT???!!
 
-##Second lecture on demand ... Recap
+## Second lecture on demand ... Recap
 
 
 $$Quantity \: of \: X \: demanded = d_x(P_x, P_y, I; preferences)$$
@@ -4122,7 +4157,7 @@ Previous lecture: What the constrained util-max implied for demand...
 
     - Substitution and income effects
 
-##Goals of this lecture (demand part 2)
+## Goals of this lecture (demand part 2)
 
 *Util-max s.t. constraints* $\rightarrow$
 
@@ -4157,7 +4192,7 @@ Previous lecture: What the constrained util-max implied for demand...
 
 \bigskip
 
-##App 3.2: The CPI and it's biases
+## App 3.2: The CPI and it's biases
 
 \textcolor{gray}{Note the UK also uses a similar CPI measure (change from the 'RPI' in 2003, although RPI is still used for some things). The Bank of England targets a 2\% increase in the CPI per year}
 
@@ -4321,7 +4356,7 @@ Supplementary slides on taxation - powerpoint on VLE
 
 
 
-##A diversion: Does Christmas gift-giving reduce welfare?
+## A diversion: Does Christmas gift-giving reduce welfare?
 
 
 - Waldfolgel (1993), "The deadweight loss of Christmas."
@@ -4647,7 +4682,7 @@ Adv, maths: Strictly speaking we are talking about the limit of these responses,
 
 [comment]: <> (101BB)
 
-##Elasticities more precisely
+## Elasticities more precisely
 
 - calculate in terms of derivatives
 - estimated using log transformations
@@ -4693,7 +4728,7 @@ Aside --  there are problems with this --
 
 [comment]: <> (101EE)
 
-##Examples from the headlines
+## Examples from the headlines
 
 [India’s Hike Messenger takes aim at WhatsApp](https://www.ft.com/content/2665c794-76a0-11e6-b60a-de4532d5ea35)
 
@@ -4894,7 +4929,7 @@ See links on VLE
 
 [comment]: <> (2024BB)
 
-##Going forward: examples of things you should already have some memory of from previous modules (BEE1029 etc)
+## Going forward: examples of things you should already have some memory of from previous modules (BEE1029 etc)
 
 - Producer (and consumer) surplus
 - Deadweight loss (basics)
@@ -4917,7 +4952,7 @@ BEGINLEC4
 -->
 
 
-#Lecture4: Production and costs (brief coverage) [30 min]
+# Lecture4: Production and costs (brief coverage) [30 min]
 
 ---
      geometry: margin=0.7in
@@ -5134,7 +5169,7 @@ NOTE: A major difference: firm *also* chooses the level of output ... later chap
 
 [comment]: <> (pre2018BB)
 
-##Marginal product
+## Marginal product
 
 Marginal product
 :     The additional output that can be produced by adding one more unit of a particular input while holding all other inputs constant.
@@ -5155,7 +5190,7 @@ $$MP_L=\frac{\partial}{\partial L}f(K,L)$$
 - *Standard assumption: diminishing marginal product of each input*
 
 
-##Output curves, marginal product curve, average product
+## Output curves, marginal product curve, average product
 
 
 
@@ -5326,13 +5361,13 @@ BEGINLEC5
      geometry: margin=0.7in
 ---
 
-#Lecture5 (merged into the above)
+# Lecture5 (merged into the above)
 
 (Note: in 2018-19 this topic (costs) is/was merged with the above, so these notes are blank)
 
 [comment]: <> (pre2018BB)
 
-#Lecture5: Costs [(1 hour), Costs, NS Ch 7]
+# Lecture5: Costs [(1 hour), Costs, NS Ch 7]
 ## Lecture  (1 hour) - Production and costs - coverage
 - T1:04
 
@@ -5606,7 +5641,7 @@ Young homebuyers often get bad advice that confuses accounting and economic cost
 
 
 
-##On estimating cost/production functions
+## On estimating cost/production functions
 
 We often want to estimate product, firm, and industry production functions
 
@@ -5635,7 +5670,7 @@ Some (IO) economists try to 'back out' cost functions from estimated demand func
 
 *Fleshing out some further examples:*
 
-##Revision Qs
+## Revision Qs
 
 [comment]: <> (2024BB)
 
@@ -5655,7 +5690,7 @@ I've moved these to the file /Users/yosemite/OneDrive - University of Exeter/exe
 
 [comment]: <> (2024BB)
 
-#Lecture5: has been merged into the above for 2018
+# Lecture5: has been merged into the above for 2018
 
 [comment]: <> (2024EE)
 
@@ -5667,9 +5702,9 @@ BEGINLEC6
      geometry: margin=0.7in
 ---
 
-#Lecture6: Profit maximisation and supply [NS Ch 8 (\*)] [1 hour]
+# Lecture6: Profit maximisation and supply [NS Ch 8 (\*)] [1 hour]
 
-##Lecture  (1 hour) - Profit maximisation and supply - coverage
+## Lecture  (1 hour) - Profit maximisation and supply - coverage
 
 - NS: Ch 8
 - T1:07a-07b
@@ -6007,9 +6042,9 @@ BEGINLEC7
      geometry: margin=0.7in
 ---
 
-#Lecture7:  Perfect competition in a single market [NS Ch 9  (\*)] [1 hour]
+# Lecture7:  Perfect competition in a single market [NS Ch 9  (\*)] [1 hour]
 
-##Lecture  (1 hour) -  Perfect competition in a single market  - coverage
+## Lecture  (1 hour) -  Perfect competition in a single market  - coverage
 - NS: Ch 9
 - T1:05
 
@@ -6036,7 +6071,7 @@ BEGINLEC7
 
 ***
 
-###Motivating questions
+### Motivating questions
 
 - With many 'price taking firms', how does *aggregate* supply respond to changes in demand?
     - Can such firms make a profit in the short run? In the long run?
@@ -6210,7 +6245,7 @@ Previous units had marginal costs *below* P*. Thus *average* (variable) costs ma
 
 ***
 
-##Illustration of SR price determination
+## Illustration of SR price determination
 
 
 \includegraphics[height=3in]{picsfigs/srpd1.png}
@@ -6512,7 +6547,7 @@ Additional potential applications: rail regulation, music copyright
 - 9.5?
 - 9.9 a-d?
 
-##Important caveat
+## Important caveat
 
 \textcolor{blue}{Consider:} Should price-taking firms and perfect competition be our 'baseline' dominant model?
 
@@ -6643,7 +6678,7 @@ The 'Edgeworth box' offers a graphical demonstration that this yields a Pareto o
 ***
 
 
-##Edgeworth box scavenger hunt
+## Edgeworth box scavenger hunt
 
 \includegraphics[height=2in]{picsfigs/Contract-curve-on-edgeworth-box.png}
 
@@ -6748,14 +6783,14 @@ But:
 
 
 [comment]: <> (101BB)
-#Notes on supplementary reading
+# Notes on supplementary reading
 
 - Supplementary reading:
     - Slonim, Robert, Carmen Wang, and Ellen Garbarino. "The market for blood." The Journal of Economic Perspectives 28.2 (2014): 177-196.
 
 ***
 
-##Key points:
+## Key points:
 
 An unusual 'market' (or non-market)
 
@@ -6807,7 +6842,7 @@ Issues with volunteer supply
 
 
 
-###Suggestions for improvements to blood market
+### Suggestions for improvements to blood market
 
 - Techniques for boosting donations
     - Mandate choice
@@ -6818,7 +6853,7 @@ Issues with volunteer supply
 [comment]: <> (101EE)
 
 
-##Some key things for midterm (recap)
+## Some key things for midterm (recap)
 
 - How do economists measure and test models,
     - techniques and terms used
@@ -6938,7 +6973,7 @@ Revealed preference, tests for ciolations of transitivity
 
 [comment]: <> (2024BB)
 
-##Note: we are skipping 'Market Failures: Asymmetric Information'; this is not covered in this module
+## Note: we are skipping 'Market Failures: Asymmetric Information'; this is not covered in this module
 
 [comment]: <> (2024EE)
 
@@ -6957,7 +6992,7 @@ BEGINLEC8
      geometry: margin=0.7in
 ---
 
-#Lecture8: Market failure (One case: Public goods) [1 hour]
+# Lecture8: Market failure (One case: Public goods) [1 hour]
 
 ## Market failures - public goods, coverage
 
@@ -7177,7 +7212,7 @@ But if firms cannot charge for its full value, they might not pay the fixed cost
 \medskip
 
 
-##Public Goods and Market Failure
+## Public Goods and Market Failure
 
 The First Welfare Theorem's assumptions/conditions do not apply to public goods. Markets do not yield a Pareto Optimal outcome.
 
@@ -7240,7 +7275,7 @@ Algebraic example of PG underprovision here?
 
 
 
-##Food for thought, discussion
+## Food for thought, discussion
 
 1. What is a public good? What do we call a good with only 1 of these 2 necessary properties?
 
@@ -7365,7 +7400,7 @@ When conditional cooperators are separated (or can self segregate) a higher leve
 NOTE
 Skipping discussion of externalities for time constraints and previous coverage
 
-##Today I learned ('TIL')
+## Today I learned ('TIL')
 
 
 - What is a pure public good (nonrival, nonexcludable), some examples, variations
@@ -7383,7 +7418,7 @@ Skipping discussion of externalities for time constraints and previous coverage
 
 [comment]: <> (101BB)
 
-##Supplementary readings
+## Supplementary readings
 
 - Ledyard, J.O., 1993. Public Goods: A Survey of Experimental Research, Division of the Humanities and Social Sciences, California Institute of Technology.
 - Chaudhuri, 2009. Sustaining cooperation in laboratory public goods experiments: a selective survey of the literature
@@ -7394,7 +7429,7 @@ Skipping discussion of externalities for time constraints and previous coverage
 
 ***
 
-###Public Goods games ... understand
+### Public Goods games ... understand
 
 - Understanding of the PG game/VCM and the theory behind it
 - Its variations and terminology (e.g., 'MPCR', 'stranger-matching', 'endgame', 'punishment')
@@ -7406,13 +7441,13 @@ Skipping discussion of externalities for time constraints and previous coverage
 ***
 
 
-##Alternate focus: charitable giving, supplementary survey and handbook articles
+## Alternate focus: charitable giving, supplementary survey and handbook articles
 
-#My wiki 'overview':
+# My wiki 'overview':
 
 \url{see innovationsinfundraising.org}
 
-#Survey and handbook articles
+# urvey and handbook articles
 
 Andreoni and Payne  (2013). Chapter 1 “Charitable Giving” in Auerbach, Alan J., et al., eds. Handbook of public economics. Vol. 5. Newnes, 2013.
 
@@ -7430,7 +7465,7 @@ Non-academic accounts: Behavioural Insights Team (2013), “Applying Behavioural
 
 \bigskip
 
-###Charitable giving ... understand
+### Charitable giving ... understand
 
 - Can it be modeled as a contribution to a public good?
     - What are the 'puzzles' in this modeling
@@ -7440,7 +7475,7 @@ Non-academic accounts: Behavioural Insights Team (2013), “Applying Behavioural
 
 ***
 
-###Information goods ... understand
+### Information goods ... understand
 
 - When and why these may have characteristics of Public Goods
 - How firms may profit from selling information goods, and when this may be less than efficient
@@ -7459,7 +7494,7 @@ BEGINLEC9
      geometry: margin=0.7in
 ---
 
-#Lecture9: Monopolies and price discrimination [1-2 hours]
+# Lecture9: Monopolies and price discrimination [1-2 hours]
 
 - ns: 11.2-11.4
 - T1:07
@@ -7475,13 +7510,13 @@ BEGINLEC9
 
 ***
 
-###Price discrimination in the media
+### Price discrimination in the media
 
 Moneybox - \url{https://itunes.apple.com/us/podcast/money-box/id263570678?mt=2&i=1000379397237} -- many mis-statements; can you identify them?
 
 ***
 
-###Lecture goals
+### Lecture goals
 
 1. What are monopolies and what are barriers to entry?
 2. How do monopolies choose prices and quantities?
@@ -7534,7 +7569,7 @@ Opposite extreme: *monopoly*
 
     - Produces 'less than socially optimal quantity' in order to charge a high price and increase its profit
 
-##Barriers to entry
+## Barriers to entry
 
 
 ### Technical barriers to entry
@@ -7561,7 +7596,7 @@ Opposite extreme: *monopoly*
 
 
 
-##Monopoly profit-maximisation
+## Monopoly profit-maximisation
 
 - As always, set Q to maximize $QP(Q)-C(Q)$
 
@@ -7572,7 +7607,7 @@ Opposite extreme: *monopoly*
     - The need to reduce price (on all units) to get people to buy it
 
 
-###Graphically: Monopoly profit-max
+### Graphically: Monopoly profit-max
 
 
 \includegraphics[height=2.5in]{picsfigs/monopprofit1.png}
@@ -7619,7 +7654,7 @@ By the way, the AC adds up the MC and the FC and divides by the quantity.
 
 [comment]: <> (2024BB)
 
-##Skip: 'no supply curve for a monopoly'
+## Skip: 'no supply curve for a monopoly'
 
 [comment]: <> (2024EE)
 
@@ -7642,7 +7677,7 @@ In contrast:
 
 [comment]: <> (101EE)
 
-##The deadweight loss of monopoly
+## The deadweight loss of monopoly
 
 
 *Criticisms of monopoly:*
@@ -7699,7 +7734,7 @@ The difference in monopoly vs perfect competitive quantity \
 - Empirically, the magnitude of the social cost of monopoly is an open question
     - Estimates range from 0.5\% of GDP to 5\% of GDP
 
-##Price discrimination
+## Price discrimination
 
 Price Discrimination
 
@@ -7819,7 +7854,7 @@ It might be her age, nationality, student-status, or even perhaps her income.
 
 ***
 
-###First-degree and/or 'perfect' price discrimination
+### First-degree and/or 'perfect' price discrimination
 
 - The firm can offer each individual a different price for each unit they purchase.
 
@@ -7943,7 +7978,7 @@ Third-degree price discrimination/Market-separation
 
 ***
 
-###Pricing under 3dpd/market separation
+### Pricing under 3dpd/market separation
 
 - Each group or market has it's own demand $\rightarrow$ marginal revenue curve
     - So set an optimising price quantity *separately* for each group
@@ -7969,7 +8004,7 @@ Another depiction, adding demand curves (they call it 'average revenue'):
 
 \includegraphics[height=3in]{picsfigs/Price-discrimination-SNP2.png}
 
-###Who benefits from 3DPD?
+### Who benefits from 3DPD?
 
 - Consumers *in identifiable group* with lower wtp face lower prices, thus they benefit
 - Consumers *in identifiable group* with higher wtp face higher prices, thus they lose
@@ -7996,7 +8031,7 @@ For consumers:
 ***
 
 
-###Why uncertain?
+### Why uncertain?
 
 - When groups can be identified as 'low and high valuation'
     - the high-valuation groups get charged more, and thus consume less
@@ -8023,7 +8058,7 @@ Quantity increase is a necessary but not a sufficient condition.
 ***
 
 
-###But 'arbitrage' can foil price discrimination
+### But 'arbitrage' can foil price discrimination
 
 - If, e.g., elderly who get discounts could sell the products to the middle-aged...
     - Then middle-aged would always ask them to do this, never pay high prices
@@ -8043,7 +8078,7 @@ The above issues are sometimes referred to as 'transactions costs'
 
 ***
 
-###David's idea: A new policy tool
+### David's idea: A new policy tool
 
 - People with low-incomes tend to have lower-wtp for most goods
 - Government can typically identify and verify incomes
@@ -8061,7 +8096,7 @@ The above issues are sometimes referred to as 'transactions costs'
 
 See the readings on this:  'The Government may want to encourage price discrimination by income' [linked here](https://davidreinstein.wordpress.com/research-and-publications/)
 
-##Natural monopolies and regulation (very brief!)
+## Natural monopolies and regulation (very brief!)
 
 - Where an industry involves a 'natural monopoly' (IRS) the most efficient production is a unified production process
     - But if a monopoly reigns it overcharges and underprovides
@@ -8087,7 +8122,7 @@ d. In under 30 words and making reference to your diagram, explain why this dead
 
 [comment]: <> (101BB)
 
-#We may skip: IMPERFECT COMPETITION
+# We may skip: IMPERFECT COMPETITION
 
 
 
@@ -8142,9 +8177,9 @@ BEGINLEC10
      geometry: margin=0.7in
 ---
 
-#Lecture10: Uncertainty (with a bit of finance) [(2 hours), NS Chapter 4]
+# Lecture10: Uncertainty (with a bit of finance) [(2 hours), NS Chapter 4]
 
-##Lecture (2 hours) - Chapter 4 coverage outline
+## Lecture (2 hours) - Chapter 4 coverage outline
 
 - NS: Ch 4 (not including 4a)
 
@@ -8245,7 +8280,7 @@ Ans: $1-p$
 
 [comment]: <> (101BB)
 
-##Some probability basics (From Anne Greenbaum Wash U notes)
+## Some probability basics (From Anne Greenbaum Wash U notes)
 
 **Discrete RV**
 
@@ -8644,7 +8679,7 @@ Draw a diagonal line between $u(x_{low})$ and $u(x_{high})$; the Expected Utilit
 - Horizontal distance $p$ of the way between $x_{low}$ and $x_{high}$
 - Project up to diagonal for average of functions (EU)
 
-- Compare this to the vertical height of utililty function at same point $((1-p)x_{low} + px_{high})$
+- Compare this to the vertical height of utililty function at same point $(1-p)x_{low} + px_{high}$
 
 This is a mathematical/graphical property.
 
@@ -8806,7 +8841,7 @@ This takes some time to interpret; have a think about it, it is not easy.
 
 [comment]: <> (101BB)
 
-##Somewhat more advanced concepts to look into, if you like
+## Somewhat more advanced concepts to look into, if you like
 
 Considering VNM (indirect) utility of income ...
 
@@ -9031,17 +9066,17 @@ BEGINLEC11
 
 [comment]: <> (2024BB)
 
-#Lecture11: Game Theory [(2-3 hours), NS Chapter 5 and additional concepts/readings below]
+# Lecture11: Game Theory [(2-3 hours), NS Chapter 5 and additional concepts/readings below]
 
-##Lecture  (2-3 hours) - Game theory; coverage outline
+## Lecture  (2-3 hours) - Game theory; coverage outline
 
 [comment]: <> (2024EE)
 
 [comment]: <> (101BB)
 
-#Lecture11: Game Theory [(2-3 hours), NS Chapter 5 and additional concepts/readings below]; notes/links to Asymmetric information in this same file
+# Lecture11: Game Theory [(2-3 hours), NS Chapter 5 and additional concepts/readings below]; notes/links to Asymmetric information in this same file
 
-##Lecture  (2-3 hours) - Game theory; coverage outline
+## Lecture  (2-3 hours) - Game theory; coverage outline
 
 *Notes/links to Asymmetric information in this same file*
 
@@ -9095,7 +9130,6 @@ Note: Read application from a beautiful mind!
 
 
 4. Extensions of simple model: 'Die roll' Uncertainty
-
 
 $\rightarrow$  and now *Strategic* uncertainty $\rightarrow$ **Game Theory**
 
@@ -9207,7 +9241,7 @@ Now: Consider 'strategic interaction'
 
 
 
-##Some examples
+## Some examples
 
 
 
@@ -9411,6 +9445,10 @@ Information
 
 - For *sequential* games, players may or may not know other players' previous actions
 
+(in this module we will only cover the case where they *do* know previous actions taken)
+
+
+
 
 ## Illustrating Games
 
@@ -9542,6 +9580,10 @@ Note: The BR is a function of the others' strategies *S*; it may take a differen
 
 ## Dominant, dominated strategies and rationalizability
 
+*Note: Iterated strict dominance and rationalizability are NOT covered in the text, but I want you to learn it.  As a prediction it is much easier to justify than Nash Equilibrium.*
+
+\bigskip
+
 Dominant strategy
 :     A single strategy that is a best response to *any* of the other player’s strategies.
 
@@ -9552,6 +9594,15 @@ Dominated strategy (not in text!)
 :     Strategy A is dominated by strategy B if B yields higher payoffs for *any* of the other player’s strategies
 
 - A simple prediction: a rational player will *never* play a dominated strategy
+
+*Why?*: because a dominated strategy  cannot be optimal for *any* belief about what the other player(s) will do
+
+
+
+\bigskip
+
+*Note:* With only two strategies to choose from these concepts are the same.
+With more than two, if there is a Dominant strategy this means that all other strategies are dominated by it. We see this in examples below.
 
 ***
 
@@ -9662,10 +9713,19 @@ Nash equilibrium (NE)
 \includegraphics[height=2in]{picsfigs/pd_normal.png}
 
 
+[comment]: <> (2024BB)
+\textcolor{gray}{Caveat: this only works in a game with a countable set of actions ... a 'matrix' game,
+If the actions are a continuous variable (e.g., price, quantity) you must solve for point(s) where these functions meet,
+2018: we will not cover games with continuous action spaces}
+
+[comment]: <> (2024EE)
+
+[comment]: <> (101BB)
 
 Caveat: this only works in a game with a countable set of actions ... a 'matrix' game
-
 If the actions are a continuous variable (e.g., price, quantity) you must solve for point(s) where these functions meet
+
+[comment]: <> (101EE)
 
 Note this is the same 'prediction' as dominant strategies, but the interpretations are different;
 This is not by accident, there is a general result...
@@ -9831,7 +9891,7 @@ Suppose in a population 1/3 of men go to Ballet and 2/3 of women go to Ballet:
 ... these ratios are 'stable'; no reason for systematic changes.
 On the other hand, if men always went to boxing and women to ballet this is not stable. A husband would be better off going to ballet ... so the ratios should change over time.}
 
-###Computing payoffs with mixing
+### Computing payoffs with mixing
 
 - Remember, formally NE specifies *strategies* (strategy 'profiles') not payoffs
     - In the BOS the pure strategy equilibria were
@@ -9962,7 +10022,18 @@ Note: don't worry about the 'normal form' of sequential games; we will only use 
 
 *Notes:*
 Here we see there is a 'first-mover advantage'. \
-We see a very similar strategic concern in other contexts, including 'which firm enters a market first'
+
+We see a very similar strategic concern in other contexts, including 'which firm enters a market first'. Suppose that if two firms are in a market there will be a price war with consumers as well as a bidding up of input prices and salaries,  and both will lose money. Perhaps by being the first firm to enter I 'scare off the other firm' and I can keep the profits. The other firm may 'threaten to enter' but that would seem to be a non-credible threat! On the other hand, suppose that I know that if I enter first the other firm can 'learn from my mistakes' and free-ride off my innovation. Here we would have a 'second-mover advantage'; but in such a game a BWI may lead to the outcome 'neither firm enters'!
+
+\
+
+These concerns also apply to politics, and the games can of course include multiple players
+
+- Cameron's decision to allow a referendum, followed by politician's (Boris etc) decisions to choose a side?
+
+- May's negotiations with the EU (Barnier), followed by the parliament's 'meaningful vote', followed by ??
+
+- US Supreme court fight over Brett Kavanaugh, the sequential decisions of the last 'swing' senators
 
 ***
 
@@ -9970,7 +10041,7 @@ We see a very similar strategic concern in other contexts, including 'which firm
 \includegraphics[height=1.9in]{picsfigs/BOS_sequential.png}
 
 Proper subgame
-:     Part of the game tree including an initial decision not connected to another in an oval and everything branching out below it.
+:     Part of the game tree including an initial decision not connected to another (in an oval or dashed lines) and everything branching out below it.
 
 - I.e., each 'game' starting from a point where a player knows where he is (knows previous choices)
 
@@ -9999,9 +10070,76 @@ Example: BWI for BOS
 \includegraphics[height=1.5in]{picsfigs/bosbwi2.png}
 
 
-Note that the SPNE in a sequential game basically always involves 'best responses'. I think this makes SPNE more credible as a prediction in sequential games than NE in simultaneous games.
+Note that the SPNE in a sequential game always involves 'best responses'. I think this makes SPNE more credible as a prediction in sequential games than NE in simultaneous games.
+
+
+***
+
+\includegraphics[height=1in]{picsfigs/bosbwi1.png}
+
+*Formally specify (SP)NE strategies for above game:*
+
+NE, not SP: \{Wife: Boxing; Husband: Boxing, Boxing\}
+
+SPNE:  \{Wife: Ballet; Husband: Ballet, Boxing\}
+
+
+*(reading Husband's decision nodes left to right; please specify this)*
+
+
+***
+
+**It can get fancier**
+
+\includegraphics[height=2in]{picsfigs/longgamework_randompayoffs_noul.png}
+
+
+*Note: you can 'build these games' on \url{http://gte.csc.liv.ac.uk/gte/builder/} if you like*
+
+***
+
+
+\includegraphics[height=2in]{picsfigs/longgamework_randompayoffs_ul.png}
+
+***
+
+In 'normal' (matrix form), stating complete contingent strategies:
+
+\includegraphics[height=1.5in]{picsfigs/longgame_matrix_full.png}
+
+
+\bigskip
+
+And the 'abbreviated strategies'; leaving out decision nodes ruled out by a player's own previous choices as specified in the strategy:
+
+\includegraphics[height=2in]{picsfigs/longgame_matrix_abbrev.png}
+
+
+***
+
+\includegraphics[height=1.5in]{picsfigs/longgamework_randompayoffs_ul.png}
+
+The SPNE; 'state the complete contingent strategies'
+
+A: S1, N3, N5
+
+B: s2, n4, n6
+
+\bigskip
+
+...
+
+Where actions are stated in the order of the decision nodes for each player
+
 
 ## Repeated games: definite time horizon
+
+[comment]: <> (2024BB)
+
+2019: NOT covering repeated games, not assessed on these
+
+[comment]: <> (2024EE)
+
 
 
 [comment]: <> (101BB)
@@ -10009,6 +10147,8 @@ Note that the SPNE in a sequential game basically always involves 'best response
 NOTE: for time concerns, we will not (extensively) cover repeated games in 2018-19, nor will these be emphasized on the assessment
 
 [comment]: <> (101EE)
+
+[comment]: <> (pre2018BB)
 
 - A 'stage game' is a simple (matrix) game that may be played repeatedly
     - Definite  horizon: play the stage game a *known* and finite number of times
@@ -10178,7 +10318,32 @@ NOTE: This setup is directly applied to the case of 'a cartel' of firms tacitly 
 - Nash equilibrium: Again, choices that are best responses to one another
 - Dominant strategies: Again, a strategy that is preferred against *any* other player(s)' strategies
 
-Note: Here the iterated dominance or 'rationalizability' is harder to compute; we won't cover this
+Note: Here the iterated dominance or 'rationalizability' is harder to compute; we won't cover this (but I may add this as a supplement for those interested.)
+
+[comment]: <> (101BB)
+
+A general method for finding NE foe continuous games with differentiable payoffs, finding NE:
+
+1. Write down payoff functions. (Differentiable? If not it becomes more difficult.)
+
+2. Maximise each player’s payoff with respect two own strategy; the other player's payoff are a fixed 'parameter' here $\rightarrow$ Players' best-response functions.
+
+3. Look for intersection(s) $\rightarrow$ Nash equilibrium (equilibria)
+
+\bigskip
+
+Source: https://www3.nd.edu/~tjohns20/gametheory_SP13/slides3.pdf}
+
+\bigskip
+
+
+With two players:
+
+$$s_i^\ast=B_i(B_-i(s_i^\ast))$$
+
+If the game is symmetric this is a 'fixed point'.
+
+[comment]: <> (101EE)
 
 ***
 
@@ -10307,6 +10472,12 @@ Note that both the PD and the above 'tragedy of the commons' game illustrate a s
 
 ***
 
+[comment]: <> (101BB)
+
+Another practice problem: 'Cournot competition' (see problem 13 in Mock exam)
+
+[comment]: <> (101EE)
+
 [comment]: <> (pre2018EE)
 
 ## Experimental evidence: What is a laboratory experiment in Economics?
@@ -10395,7 +10566,39 @@ Potential explanations
 
 
 
-*Note:* a recommended 'advanced' reading is 'Ten Little Treasures of Game Theory and Ten Intuitive Contradictions' Goeree and Holt, 2001
+[comment]: <> (2024BB)
+
+*Note:* a recommended reading is 'Ten Little Treasures of Game Theory and Ten Intuitive Contradictions' Goeree and Holt, 2001
+
+\textcolor{gray}{If you are particularly interested, skim or read the introduction of any of the 'Handbooks' like 'Handbook of Experimental Economics'}
+
+[comment]: <> (2024EE)
+
+[comment]: <> (101BB)
+
+*Supplementary reading:*
+
+I highly recommend you look over some of the literature on how game theoretic predictions/concepts are considered and tested.  Some suggestions:
+
+- 'Ten Little Treasures of Game Theory and Ten Intuitive Contradictions' Goeree and Holt, 2001
+
+- Skim or read the introduction of any of the 'Handbooks' like 'Handbook of Experimental Economics'
+
+Meta-analysis papers like:
+
+- Oosterbeek, Hessel, Randolph Sloof, and Gijs Van De Kuilen. "Cultural differences in ultimatum game experiments: Evidence from a meta-analysis." Experimental economics 7.2 (2004): 171-188 or
+
+- Johnson, Noel D., and Alexandra A. Mislin. "Trust games: A meta-analysis." Journal of Economic Psychology 32.5 (2011): 865-889.
+
+
+I also advise looking at recent 'replication' and 'many labs' project work; there are now more systematic attempts to get robust evidence on which patterns and effects are 'real' and which were a 'lucky draw' or 'publication bias'.  This also applies to our later discussion of behavioral economics.
+
+Another fairly readable and extremely influential (theory) paper:
+
+- Spence, M. (1973): 'Job market signaling,' The Quarterly Journal of Economics, vol. 87, pp. 355-374.
+
+[comment]: <> (101EE)
+
 
 <!---
 ## Suggested practice problems: see VLE
@@ -10430,7 +10633,7 @@ BEGINLEC12
 
 [comment]: <> (101BB)
 
-#Additional lecture: Asymmetric information
+# Additional lecture: Asymmetric information
 
 - 2018: ** Market failures: Asymmetric information** (Moral hazard, adverse selection, signaling)
 
@@ -10442,13 +10645,13 @@ Also see separate notes on VLE
 - 2018: ** Market failures: Asymmetric information** (Moral hazard, adverse selection, signaling)
 
 
-Asymmetric information is a situation in which one party to a transaction has more information than the other party.
+Broadly, asymmetric information is a situation in which one party to a transaction has more information than the other party.
 
 
 See separate notes on VLE; brief summary below
 
 
-##Principal-Agent Problem
+## Principal-Agent Problem
 
 A principal “hires” an agent to perform some task, and the agent has private information, either about her actions or her type.
 
@@ -10458,7 +10661,7 @@ A principal “hires” an agent to perform some task, and the agent has private
 
 - A worker has full information about whether she is working hard (action) or her job skills (type).
 
-- How does an employer monitor/influence effort?  How does a potential employee signal their high quality type?
+- How does an employer monitor/influence effort?  How does a potential employee signal their high-quality or low-quality type?
 
 ***
 
@@ -10472,6 +10675,8 @@ A principal “hires” an agent to perform some task, and the agent has private
 
 - Principal/agent $\rightarrow$ 'distorted' output or quality for 'less favored' type to reduce 'information rent' for 'better' type
 
+\textcolor{gray}{Also, if the Agent moves first (instead of the Principal), this can lead to a 'signaling game', which we will not cover here. See 'the signaling benefit of education.}
+
 
 ***
 
@@ -10481,17 +10686,17 @@ Automobile insurance
 
 - Since you are insured you are less careful (moral hazard)
 
-##Moral hazard: Basic principles
+## Moral hazard: Basic principles
 
-1. If 'effort' (or honesty) unobserved, principal (P) must offer incentives based on *observed performance* or *output*.
+1. If 'effort' (or honesty) is unobserved or un-enforceable, principal (P) must offer incentives based on *observed performance* or *output* of the agent.
 
 2. If output has (uncontrollable) *random component*, rewarding output shifts risk to the *agent* (A).
 
-- If A more risk-averse than P, output-compensation $\rightarrow$ inefficient risk bearing.
+- If A is more risk-averse than P, if compensation must be tied to output $\rightarrow$ inefficient risk-bearing.
 
-- Cost of paying 'risk premium' to A $\rightarrow$ P may demand less effort than is efficient
+- Because of the cost of paying a 'risk premium' to A $\rightarrow$ P may demand less effort than is efficient
 
-3. Otw, if P \& A have same risk-attitude, P can 'sell the profits to A' $\rightarrow$ efficiency
+3. Otherwise, if P \& A have the same risk-attitude, P can 'sell the profits to A' $\rightarrow$ efficiency
 
 - But not if A has 'limited liability' $\rightarrow$ inefficiency:
     - P can only 'reward' A not 'punish' her $\rightarrow$ costly $\rightarrow$ demand less effort
@@ -10499,7 +10704,7 @@ Automobile insurance
 *See 'more formal moral hazard notes' (VLE) and Flowchart if interested*
 
 
-##Lemons problem
+## Lemons problem
 
 *Where sellers know more about the value of used cars than buyers, some sales that would be mutually beneficial will not take place.*
 
@@ -10527,7 +10732,7 @@ Buyer never accepts any price $\rightarrow$ market closes down
 
 #Lecture12: Behavioural economics [1-2 hours]
 
-##Lecture12: Behavioural economics
+## Lecture12: Behavioural economics
 
 
 - Covers selected parts of NS: Ch 17, plus supplements
@@ -10609,7 +10814,7 @@ Justifications include:
 
 ***
 
-##Behavioural Economics
+## Behavioural Economics
 
 Relaxes some of the assumptions above, usually one at a time
 
@@ -10627,7 +10832,7 @@ Most “behavioral models” involve some sort of optimization (and often equil
 
 ***
 
-##Modern consensus/entente
+## Modern consensus/entente
 
 Both classical and behavioural economics are useful
 
@@ -10671,7 +10876,7 @@ There are four general ways people diverge from classical assumptions (text says
 
 ***
 
-###Application: lack of financial literacy
+### Application: lack of financial literacy
 
 - Consumers who underestimated interest rates in quizzes held the highest interest loans in real life
 - Particularly when government 'truth in lending laws' were lax
@@ -10823,7 +11028,7 @@ By the EU calculation I make choices over which I prefer for the (remaining)
 
 ***
 
-###Kahneman and Tversky scenariae
+### Kahneman and Tversky scenariae
 
 \textcolor{red}{Warning: This is not the standard Allais paradox, it is a different paradox.}
 
@@ -10908,7 +11113,7 @@ that we wouldn't make if we saw it as 'increasing gains'
 
 ***
 
-###Standard and loss-averse utility
+### Standard and loss-averse utility
 
 \includegraphics[height=2.5in]{picsfigs/std_u_prospect_u.png}
 
@@ -10921,7 +11126,7 @@ What leads to the paradoxes and 'inconsistent behaviour'? \
 
 ***
 
-###KT experiment with prospect theory (loss aversion)
+### KT experiment with prospect theory (loss aversion)
 
 **KT1:** \pounds1000 upfront. \
 
@@ -10965,10 +11170,9 @@ Framing effect
 
 ***
 
-###Allais redux: loose prospect theory (LA) explanation
+### Allais redux: loose prospect theory (Loss Aversion) explanation
 
-*Note:*
-We previously mentioned misweighting probabilities as an explanation for this. \
+*Note:* We previously mentioned misweighting probabilities as an explanation for this. \
  An alternative explanation could be loss-aversion
 
 - A: 89\% chance of \pounds1,000, a 10\% chance of \pounds5,000, 1\% chance of 0.
@@ -10990,16 +11194,14 @@ We previously mentioned misweighting probabilities as an explanation for this. \
 ***
 
 
-
-
-*Note:* Skip for time constraints: limited reasoning steps -- Centipede game
+*Note:* Skipped in lecture for time constraints: limited reasoning steps -- Centipede game; you can read this if you like; remember, things like this may provide you 'ammunition' on an essay question.
 
 
 ## Limited willpower and 'hyperbolic discounting'
 
 [comment]: <> (2024BB)
 
-2018-19: We will cover this only very briefly because of time limitations
+2019-20: We will cover this only very briefly because of time limitations
 
 [comment]: <> (2024EE)
 
@@ -11020,11 +11222,11 @@ Monday-David wants Tuesday-David to give up 1 marshmallow for 2 marshmallows on 
 
 \bigskip
 
-But Monday-David unwilling to give up 1 marshmallow for 2 marshmallows on Tuesday. \
+\textcolor{olive}{But Monday-David unwilling to give up 1 marshmallow for 2 marshmallows on Tuesday.} \
 
 \bigskip
 
-Similarly, Tuesday-David won't give up 1 marshmallow for 2 on Wednesday
+\textcolor{brown}{Similarly, Tuesday-David won't give up 1 marshmallow for 2 on Wednesday}
 
 \bigskip
 
@@ -11052,7 +11254,8 @@ Compare two 'streams of payoffs'
 2. Lazy: -5 today, +1 for next 6 days
 
 
-*Examples:*
+*Examples:* Should you...?
+
 study very hard on Sunday to be prepared for the whole week, \
 Get a good workout to feel energized the whole week \
 Clean your flat on Sunday .... etc.
@@ -11110,7 +11313,7 @@ But if Ant were 'choosing for Monday on Sunday', he would choose Work $\rightarr
 
 
 
-Adv: The utilities, and decisions, of family members are highly connected. There is an ongoing debate and research programme considering when to model a household's decisions as 'unitary' and when to consider the individual preferences of the household members.
+\textcolor{RawSienna}{Adv:} \textcolor{gray}{The utilities, and decisions, of family members are highly connected. There is an ongoing debate and research programme considering when to model a household's decisions as 'unitary' and when to consider the individual preferences of the household members.}
 
 ***
 
@@ -11204,7 +11407,7 @@ she gets 1-8 = -7 from accepting an offer of 1; her payoff is 1 but she loses 7 
 Because of this she will not accept such an offer. Knowing this, player-1 will offer 5.
 
 
-##Supplemental (reading): Evidence on the Ultimatum Game
+## Supplemental (reading): Evidence on the Ultimatum Game
 
 
 Guth et al. (1982) presented the first experimental test of the ultimatum game.
@@ -11240,7 +11443,7 @@ I will randomly choose 1 stage/repetition for 2 participants for payment, and pa
 ***
 -->
 
-##Ultimatum game: theoretical predictions
+## Ultimatum game: theoretical predictions
 
 Allowing 'non-credible threats', this game has as many Nash equilibria as there are possible splits of the pie
 
@@ -11271,7 +11474,7 @@ The subgame-perfect Nash equilibrium is found by solving the game backwards:
 \textcolor{gray}{Note, These are basic game theoretic predictions, not Behavioral.}
 
 
-###What happens in experiments?
+### What happens in experiments?
 
 - Class question: What do you think?
 
@@ -11303,7 +11506,7 @@ In a variety of cultures and contexts (Henrich et al, 2006):
 \includegraphics[height=3.5in]{picsfigs/ultimatumgameoffers_Science.png}
 
 <!---
-##Discussion
+## Discussion
 - Let's look at our results (and pay)
 - What do you think explained your choices? What did you think other people would do?
 - What real-world situations does this resemble?
@@ -11360,7 +11563,7 @@ Do they  commit more 'before' than they give 'after', or vice versa, or are thes
 
 ***
 
-###Field experiment
+### Field experiment
 
 **One field experiment: Essex UG students**
 
@@ -11430,7 +11633,7 @@ BEGINLEC13
      geometry: margin=0.7in
 ---
 
-##Lecture13:  Revisiony lecture: Behavioral economics
+## Lecture13:  Revisiony lecture: Behavioral economics
 
 *Below, I provide some revision material and questions focusing on Behavioral economics*
 
@@ -11456,7 +11659,7 @@ BEGINLEC13
 
 From an earlier final exam
 
-***
+Answer...
 
 1. As long as money payoffs are in my favour, I don't have envy, so maximise these if possible
 
@@ -11477,7 +11680,7 @@ From an earlier final exam
 
 ***
 
-###Sources of evidence and discussion
+### Sources of evidence and discussion
 
 *I want you to have a decent background on...*
 
@@ -11489,7 +11692,9 @@ From an earlier final exam
 
 [comment]: <> (101BB)
 
+<!---
 - Inconsistent preferences, impatience and 'hyperbolic discounting'
+-->
 
 [comment]: <> (101EE)
 
@@ -11650,7 +11855,7 @@ See also  [Misweighting probabilities](http://lesswrong.com/lw/ml/but_theres_sti
 [comment]: <> (101EE)
 
 
-###Additional relevant questions
+### Additional relevant questions
 
 
 \bigskip
