@@ -1,13 +1,13 @@
 ##!/bin/be!/bin/bash
 #this is a comment-the first line sets bash as the shell script
 
-#Execute as: bash $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/compileslidesnotes_fuller.sh"
-# bash "/Users/yosemite/OneDrive - University of Exeter/exeter_teaching/be2024/compileslidesnotes_fuller.sh"
+#Execute as: bash $HOME/"githubs/micro_econ_pandoc/be2024/compileslidesnotes_fuller.sh"
+# bash "/Users/yosemite/githubs/micro_econ_pandoc/be2024/compileslidesnotes_fuller.sh"
 
 #REM: compile to 'teachingsharedplusboox', move to dropbox/public manually once checked OK (that is linked on VLE)
 
 cd $HOME
-cd "/Users/yosemite/OneDrive - University of Exeter/exeter_teaching/be2024"
+cd "githubs/micro_econ_pandoc/be2024"
 
 ###########################################################
 #1. SLIDES
@@ -15,18 +15,17 @@ cd "/Users/yosemite/OneDrive - University of Exeter/exeter_teaching/be2024"
 #Cut msc-only sections from slide material, delete lines 1 and 3
 sed '/101BB/,/101EE/d' slides_bothmodules.md > be2024slidesa.md
 sed -i -e '1d;3d' be2024slidesa.md
+sed -i -e '2d;2d' be2024slidesa.md
 
 #cut pre-2018 stuff
 sed '/pre2018BB/,/pre2018EE/d' be2024slidesa.md > be2024slides.md
+sed '/pre2019BB/,/pre2019EE/d' be2024slides.md > be2024slides.md
 rm be2024slidesa.md
 
 #1a. compile BE2024 slides for presenting:
     pandoc $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/be2024slides.md" -t beamer --slide-level=2 -o $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/be2024slides.pdf" --verbose  --toc --toc-depth=2 --highlight-style=pygments -V theme:metropolis
 #note I got rid of 'incremental' -- pauses must be entered manually
 
-    #pandoc $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/seconddmdlectureclip.md" -t beamer --slide-level=2 -o $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/seconddmdlectureclip.pdf" --verbose  --toc --toc-depth=2 --highlight-style=pygments -V theme:metropolis
-
-    #pandoc $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/general_notes_text_part1.md" -t beamer --slide-level=2 -o $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/general_notes_text_part1.pdf" --verbose --incremental --toc --toc-depth=2 --highlight-style=pygments
 
 #1b: BEEM101 version
 #Cut out 2024-only sections from slide material,  delete lines 1 and 3
@@ -41,22 +40,31 @@ pandoc $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/beem101slid
 #2. HANDOUT VERSIONS
             # Todo: sed to make general_notes_text_nopdfnote.md into handouts version #Cleaning up handout # remove: '\textcolor{gray}','textCR', '\pdfnote' #sed 's/\\textCR/\\/g' $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/general_notes_text_handout.md"  >  $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/general_notes_text_handout.md"
 
-cd "/Users/yosemite/OneDrive - University of Exeter/exeter_teaching/be2024"
+cd $HOME
+cd "githubs/micro_econ_pandoc/be2024"
 
 #2a.Cut msc-only sections from handout material, compile handout for 2024, cut lines 1 and 3
 sed '/101BB/,/101EE/d' handout_bothmodules.md > be2024handouta.md
 sed -i.bak -e '1d;3d' be2024handouta.md
 
-#cut pre-2018 stuff
-sed '/pre2018BB/,/pre2018EE/d' be2024handouta.md > be2024handout.md
+#cut pre-2018 and pre-2019 stuff
+sed '/pre2018BB/,/pre2018EE/d' be2024handouta.md > be2024handoutb.md
+sed '/pre2019BB/,/pre2019EE/d' be2024handoutb.md > be2024handout.md
+
 rm be2024handouta.md
+rm be2024handoutb.md
 
 
-pandoc $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/be2024handout.md" -f markdown -t latex -s -o $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/bee2024handoutA.tex" --toc --toc-depth=1
-pdflatex -output-directory=$HOME/Dropbox/teachingsharedplusboox $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/bee2024handoutA.tex" --batchmode --toc --toc-depth=1 --interaction=nonstopmode
-pdflatex -output-directory=$HOME/Dropbox/teachingsharedplusboox $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/bee2024handoutA.tex" --batchmode --toc --toc-depth=1 --interaction=nonstopmode
+pandoc be2024handout.md -f markdown -t latex -s -o bee2024handoutA.tex --toc --toc-depth=1
 
-#DO: command to copy the pdf *over* the linked dropbox file (do not delete it)
+#need two latex compiles for table of contents to work:
+pdflatex bee2024handoutA.tex --batchmode --toc --toc-depth=1 --interaction=nonstopmode
+pdflatex bee2024handoutA.tex --batchmode --toc --toc-depth=1 --interaction=nonstopmode
+
+
+    #DO: command to copy the pdf *over* the linked dropbox file (do not delete it)
+
+##TODO: conversion to Rmd and bookdown knitting commands here??
 
 #2b. handout version for BEEM101
 #Cut out 2024-only sections from slide material
@@ -82,7 +90,7 @@ pdflatex -output-directory=$HOME/Dropbox/teachingsharedplusboox $HOME/"OneDrive 
     #pdflatex -output-directory=$HOME/Dropbox $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/lecture1.tex" --batchmode
 
 #cut from beginning to lecture1 into new markdown file, compile
-sed -n "/\% Handouts for/,/\#Lecture1\:/w preamble.md" $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/be2024handout.md"
+sed -n "/\% Handouts for/,/\# Lecture1\:/w preamble.md" $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/be2024handout.md"
 sed -i '' '$d' preamble.md
 
 #compile
@@ -97,7 +105,7 @@ pdflatex  $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/preamble
         echo "$i"
         echo "$j"
         #cut from lecturei to lecturei+1 into new markdown file
-        sed -n "/\#Lecture$i\:/,/#Lecture$j\:/w lecture$i.md" $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/be2024handout.md"
+        sed -n "/\# Lecture$i\:/,/# Lecture$j\:/w lecture$i.md" $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/be2024handout.md"
 
         #remove final lines of markdown file
         sed -i '' '$d' lecture$i.md

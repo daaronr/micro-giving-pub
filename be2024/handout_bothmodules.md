@@ -1,5 +1,5 @@
 [comment]: <> (2024BB)
-% Handouts for BEE2024: Economic Principles and Policy; (Microeconomics)
+% Handouts for BEE2038: Intermediate Microeconomics
 [comment]: <> (2024EE)
 
 [comment]: <> (101BB)
@@ -7,13 +7,17 @@
 [comment]: <> (101EE)
 
 
-**Notes by instructor David Reinstein, largely based on Nicholson/Snyder, Intermediate Microeconomics and its Application, 12th edition (other editions OK too)**
+**Notes by instructor David Reinstein, largely based on Nicholson/Snyder, Intermediate Microeconomics and its Application, 12th edition (other editions OK too).**
 
 [comment]: <> (2024BB)
 
-This text forms the basis for roughly 80-90\% of this module. I recommend you purchase, or find easy access to some edition of this book.
+This text forms the basis for roughly 80-90\% of this module. I recommend you purchase, or find easy access to some edition of this book (new editions should be £50, used editions should be cheaper). In future I hope to rely completely on open-source (free) resources, but I'm not there yet.
 
-[comment]: <> (2024BB)
+See some alternative and supplemental free texts and resources (BELOW)[#texts]
+
+
+
+[comment]: <> (2024EE)
 
 ---
      geometry: margin=0.7in
@@ -21,11 +25,11 @@ This text forms the basis for roughly 80-90\% of this module. I recommend you pu
 
 
 
-# Notes to students on how to read this set of lecture notes
+# Notes to students on how to read this set of lecture notes2
 
 [comment]: <> (2024BB)
 
-Welcome to the exciting world of Economic Principles and Policy!
+Welcome to the exciting world of Microeconomics!
 
 
 I hope that this module helps you see the world in a new way and gain insights about business, government, and your everyday life. If you put the time into this module, you can get a lot out of it, and you may gain skills and access approaches that you will use throughout your career. As students at a Russell group institution, I expect you to work hard and engage intellectually to gain a serious and critical understanding of key Economics concepts. Learn how and when these can be applied, what their limitations are, and how these can these are misused and misunderstood. I hope you learn these core ideas well enough that you could explain them to others and apply them to unfamiliar situations.
@@ -72,18 +76,18 @@ These notes should include all of the slide material *plus* explanatory notes an
 - \textcolor{RawSienna}{'Adv'} indicates advanced material and discussion you are not required to know but may find interesting, and will help you in later courses/modules in Economics, and give you a hint at what is to come if you pursue this course further. Knowing  this stuff might also help your mark and the impression you make when asking for letters of reference.
     - This is also included to give you a more nuanced picture: when I took a similar module as an undergraduate I tended to believe 'all the economics problems are solved and the solutions and implications are obvious.' These 'Adv' comments are often caveats and *critiques*.
 
-\textcolor{RawSienna}{'Adv, math'} indicates advanced mathematical material.
+\textcolor{RawSienna}{'Adv, math'} indicates advanced mathematical material. (I've moved most of this to footnotes).
 
-\textcolor{blue}{Text in blue usually  refers to questions you should  try to answer on your own (and I sometimes provide suggested answers)}
+\textcolor{blue}{Text in blue usually  refers to questions you should  try to answer on your own (and I sometimes provide suggested answers in the footnotes. Try to answer it yourself first.)}
 
-\textcolor{gray}{Some text is given in gray  to indicate that this is a side point or a discussion.}
+\textcolor{gray}{Some text is given in gray  to indicate that this is a side point or a discussion. (I'm moving most of this to footnotes.)}
 
 [comment]: <> (2024EE)
 
 - 'LC' indicates a lecturer comment I may make in lecture that you don't need to worry about (I meant to cut these but I sometimes forget to)
 - 'Comprehension Q:' A question you should be able to answer if you are following along.
 
-- 'T numbers' refer to the weeks of term that intended to cover specific material.
+- 'T numbers' (take these loosely please) refer to the weeks of term that intended to cover specific material.
     - For example 'T1:03 - T1:04a' means 'term 2 week three (both lectures) and term 2 week 4, first lecture only'
 
 
@@ -211,8 +215,6 @@ See older  version of handout for discusion of prerequisites
 -->
 
 ## Outline and description
-
-
 
 
 **Planned syllabus, coverage:**
@@ -563,7 +565,7 @@ I will also be advertising two "Student Campus Partner" positions which offer re
 
 [comment]: <> (2024BB)
 
-**bee2038: Economic Principles and Policy (microeconomics)**
+**bee2038: Intermediate Microeconomics**
 
 [comment]: <> (2024EE)
 
@@ -650,38 +652,48 @@ These skills are also highly relevant to employers:
 - Classes every fortnight
 
 
-Plus research discussion sessions in alternate weeks?
-
+Plus research discussion sessions in alternate weeks
 
 
 
 [comment]: <> (101EE)
 
+### Texts and resources {#texts}
+
 - Recommended text: 'Intermediate Microeconomics and Its Application' (12th ed.)
     - Should be available at the University bookstore for around \pounds50, with access to online materials
     - Other recent editions are also OK, but be careful as numbering can change
-    - Many other resources online (see handout)
+    - Many other resources online (see below)
 
-- Note that there are a variety of sources and online courses --- any intermediate or advanced textbook in Microeconomics will cover virtually the same material. There are now texts available for free, legally, online, such as “Introduction to Economic Analysis”, by Preston McAfee, Caltech and Tracy Lewis, Duke University, available at [LINK](https://open.umn.edu/opentextbooks/BookDetail.aspx?bookId=47) (note this text uses calculus).
-
-
-[Intermediate microeconomics - M Walbert Illinois tutorials](http://my.ilstu.edu/~mswalber/ECO240/index.html) - click 'tutorials'
-
-A series of tutorials for an intermediate microeconomics module. Covers many of the topics of this module. No calculus but a lot of algebra. Lots of supplementary materials too.
+- Note that there are a variety of sources and online courses --- any intermediate or advanced textbook in Microeconomics will cover virtually the same material. There are now texts available for free, legally, online, such as
 
 
+- [Principles of Economics 2e, Openstax](https://cnx.org/contents/bc498e1f-efe9-43a0-8dea-d3569ad09a82) - very well organised, but not quite 'intermediate', not enough maths for my taste, but may be very helpful as revision and as an additional source of explanations!
 
-[Microeconomics
+
+- [Quantum Microeconomics](http://www.smallparty.org/yoram/quantum/#downloads); consider the version either with or without calculus
+    - An unconventional but very careful and interesting approach; my impression is that it is  well organised and explained
+
+
+- [Microeconomics
 Markets, Methods & Models
 an Open Text
 by Douglas Curtis and Ian Irvine](https://laecon1.lyryx.com/textbooks/OPEN_CURTIS_MIC_1/marketing/CurtisIrvine-Microeconomics-2017A.pdf)
+    - A full-fledged text covering many of the topics of this module, without calculus
 
-- A full-fledged text covering many of the topics of this module, without calculus
+
+- “Introduction to Economic Analysis”, by Preston McAfee, Caltech and Tracy Lewis, Duke University, available at [LINK](https://open.umn.edu/opentextbooks/BookDetail.aspx?bookId=47) (note this text uses calculus).
+
+
+- [Intermediate microeconomics - M Walbert Illinois tutorials](http://my.ilstu.edu/~mswalber/ECO240/index.html) - click 'tutorials'
+    - A series of tutorials for an intermediate microeconomics module. Covers many of the topics of this module. No calculus but a lot of algebra. Lots of supplementary materials too.
+
+
 
 [Introduction to
-Economic Analysis - McAffee, Lewis, Dale](https://www.kellogg.northwestern.edu/faculty/dale/ieav21.pdf)
+Economic Analysis - MacAffee, Lewis, Dale](https://www.kellogg.northwestern.edu/faculty/dale/ieav21.pdf)
 
-A 'no-fluff' text. Covers much of this module, but a bit at the more advanced side. Includes calculus and lots of parametric examples.  Equations are not always formulated well. Lots of great content. Lots of solved problems.
+A 'no-fluff' text from an esteemed source. Covers much of this module, but a bit at the more advanced side (actually the level varies greatly throughout). Includes calculus and lots of parametric examples.  Equations are not always formulated well. Lots of great content. Lots of solved problems.
 
 \bigskip
 
@@ -689,6 +701,9 @@ A 'no-fluff' text. Covers much of this module, but a bit at the more advanced si
 [comment]: <> (2024BB)
 
 - Some resources on CORE \url{https://www.core-econ.org/project/core-the-economy/}, mentioned above, may be helpful,  but that needs further investigation, as it is aimed at year-one Economics.
+
+- I  also recommend [Simple economics on the web](http://web.mit.edu/11.203/www/econ/),   which contains a great number of useful interactive graphical and algebraic exercises.
+Play around with this, they are super-helpful and intuitive. *Thanks Frank.)*
 
 [comment]: <> (2024EE)
 
@@ -763,6 +778,8 @@ I also make changes from year-to-year, in response to your feedback.
 
 ### Some changes made responding to the previous year's feedback:
 
+0. Before 2019-20 the module was called "BEE2024 Economic Principles and policy", and it was divided into a Microeconomics term and a Macroeconomics term." To make things simpler, we have renamed this Microeconomics part "BEE2038:  Intermediate Microeconomics",  and we no longer share the ELE page.   However the coverage  is the same as before (allowing for normal  year-to-year adjustments).
+
 1. Reduced coverage, enabling better focus. In particular, I have eliminated or consolidated much of the material on the firm's production function and costs. In earlier surveys, this was the topic students liked the least. In 2019 I am removing the coverage of the history of supply and demand curves and a few other topics.
 
 2. Better integration of the problem sets and tutorials with the lectures and the assessments. Better coordination across tutorial sessions.
@@ -779,7 +796,7 @@ I also make changes from year-to-year, in response to your feedback.
  5. The midterm will be multiple choice; some questions will require multiple answers, but the exact number of correct answers will always be clearly specified. I also was able to add an *additional* tutorials before the midterm (two instead of one), so these will be more helpful in preparing for it.
 -->
 
-6. I will try to provide more vision coverage and supplementary materials for managerial economics students.
+6. I will try to provide more revision coverage and supplementary materials for managerial economics students.
 
 [comment]: <> (2024EE)
 
@@ -1904,7 +1921,7 @@ Some Khan courses/sections I would recommend in particular
 
 [comment]: <> (2024BB)
 
-\textcolor{grey}{I expect to cover this in the second lecture}
+\textcolor{gray}{I expect to cover this in the second lecture}
 
 [comment]: <> (2024EE)
 
@@ -2020,7 +2037,7 @@ Derivative of a function
 
 [comment]: <> (2024BB)
 
-\textcolor{grey}{We will come back to the following examples later.}
+\textcolor{gray}{We will come back to the following examples later.}
 
 [comment]: <> (2024EE)
 
@@ -2111,7 +2128,7 @@ Projecting a function up from X,Y space into the Z axis:
 
 \includegraphics[height=2.2in]{picsfigs/doubledip.jpg}
 
-## Contour lines (we will come back to this later)
+## Contour lines (we will come back to this later) {#contourlines_math}
 
 Contour lines
 :     Level sets - depict combinations of variables that hold the function constant at a particular value
@@ -2331,18 +2348,30 @@ This is a great example from perhaps the most important unified global market, w
 
 
 ***
+
+\includegraphics[height=1in]{picsfigs/glasses.png}
+
+Henceforth we will refer to:
+
+- the *market demand* curve, as a function of price (P) and other things,  as $Q_D(P,...)$ and
+- the *market supply* curve, as a function of price (P) and other things,  as $Q_S(P,...)$.
+
+The quantity (units of a good) that firms in the market are willing to supply is a function of the price and other 'background' things. The total quantity that consumers in the market or willing to demand is a different function of the price of other things. We typically  these 'supply curve', and 'demand curve',  respectively, but I want to to think of these as functions that can shift. I don't want you to write 'demand went down'; that is ambiguous.
+
+The price where these quantities are equal is the 'prevailing price in the market'. We  build this up throughout the next sections in more detail.
+
+
+Getting  back to the example...
+
 Empirical work has estimated the equations below, the estimated supply and demand curves expressed in dollars and millions of *barrels*, from an earlier period:
 
 
-\
+$$ Q_D = 85 - 0.4P \: (D) $$
+$$ Q_S = 55 + 0.6P \: (S) $$
 
-$$ Q = 85 - 0.4P \: (D) $$
-$$ Q = 55 + 0.6P \: (S) $$
-
-Solving this yields: $85 - 0.4P=55+0.6P \rightarrow P = 30, Q = 73$
+Setting $Q_S=Q_D$ and solving this yields: $85 - 0.4P=55+0.6P \rightarrow P = 30, Q = 73$
 
 \
-
 
 [comment]: <> (2024BB)
 
@@ -2429,7 +2458,7 @@ BEGINLEC2
 # Lecture2:  Utility and Choice [NS Chapter 2; 2 hours]
 
 
-\textcolor{grey}{We now consider the very very fundamental building blocks behind the (in)famous "neoclassical economics model." Accept these"axioms" nearly everything flows from it!}
+\textcolor{gray}{We now consider the very very fundamental building blocks behind the (in)famous "neoclassical economics model." Accept these"axioms" nearly everything flows from it!}
 
 ## Some motivation for these abstract ideas
 
@@ -2537,6 +2566,7 @@ In the (neo) classical economics framework, your (optimising) choices are determ
 [comment]: <> (101BB)
 
 ## Enrichment and extensions (optional)
+
 David Autor's notes (goo.gl/aW3DxB; MIT Microeconomic Theory and Public Policy)
 
 [comment]: <> (101EE)
@@ -2751,7 +2781,13 @@ It works as follows:
 
 ... Keep repeating steps 1-3, until you've drained all of their resources.
 
-[comment]: <> (101BB)
+
+\textcolor{gray}{(Final) Exam question: What are 'transitive preferences'? Give an example of a person making choices that seem to reflect preferences that are \textit{not} transitive, and explain how you could 'pump money' from this person.}^[Transitivity (internal consistency): If I prefer A to B, and prefer B to C, then I must prefer A to C.
+If 'Intransitive Eddy' is offered 1 apple and 1 banana and 1p, he chooses the apple. If he is offered 1 banana versus 1 cherry and 1p, he chooses the banana. If he is offered 1 cherry versus 1 apple and 1p, he chooses the cherJjji
+Pump money from him: Buy an apple, a banana, and a cherry. Get him to buy a banana from you. Get him pay you 1p to trade his banana for your apple. Then get him to pay 1p to trade his apple for your cherry. Then get him to pay 1p to trade his cherry for your banana. Then get him to pay 1p to trade his banana for your apple. Repeat ad nauseum.]
+
+
+ [comment]: <> (101BB)
 
 Violations?: see (inter alia)
 
@@ -2761,7 +2797,6 @@ Violations?: see (inter alia)
 
 [comment]: <> (101EE)
 
-***
 
 ### 3. More is better ('global nonsatiation')
 
@@ -2772,11 +2807,11 @@ Perhaps this seems unreasonable? One way you might justify it: If the product is
 The darkly shaded area above represents those combinations of X and Y that are unambiguously preferred to the combination X\*, Y\*.
 This is why goods are called 'goods'; individuals prefer having more of any good rather than less.
 Combinations of X and Y in the lightly shaded area are inferior to the combination $X^{\ast}, Y^{\ast}$,
-whereas those in the questionable areas may or may not be superior to $X^{\ast}, Y^{\ast}$/
+whereas those in the questionable areas may or may not be superior to $X^{\ast}, Y^{\ast}$.
 
 ### Who cares?
 
-**If people obey the first two above assumptions/axioms, the completeness and transitivity$\ast$, they will make choices in a way consistent with maximising a (continuous) *utility* function.**
+**If people obey the first two above assumptions/axioms, the completeness and transitivity$\ast$, they will make choices in a way consistent with maximising a (continuous) *utility* function.** (... OK, maybe you still don''t care, but economists do.)
 
 [comment]: <> (2024BB)
 
@@ -2789,9 +2824,10 @@ whereas those in the questionable areas may or may not be superior to $X^{\ast},
 
 ($\ast$ technically, these conditions are necessary but not sufficient.  Adding 'Continuity' of preferences yields a sufficient condition, and also guarantees continuous utility functions and demand curves without strange jumps).
 
+The third axiom (nonsatiation) makes the maths more convenient, and is necessary for some results/predictions, like establishing that an outcome allows a 'Pareto improvement'.
+
 [comment]: <> (101EE)
 
-The third axiom (nonsatiation) makes the maths more convenient, and is necessary for some results/predictions, like establishing that an outcome allows a 'Pareto improvement'.
 
 \textcolor{RawSienna}{Strictly, most results only require 'local nonsatiation'; starting from any consumption point, increasing the amount of \emph{some} good by a tiny $\epsilon$ amount will yield a preferred point. This will yield results like 'people will spend all of their wealth' and '(roughly) people will never buy a more expensive bundle when a cheaper bundle is preferred.'}
 
@@ -2834,15 +2870,18 @@ Diminishing marginal returns, or (in multiple dimensions, without requiring diff
 
 \bigskip
 
-Also: Axiom 3 (nonsatiation) makes the maths more convenient, and is necessary for some results/predictions
-
-Strictly, most results only require a  weaker 'local nonsatiation' condition
+Also...^[Axiom 3 (nonsatiation) makes the maths more convenient, and is necessary for some results/predictions
+Strictly, most results only require a  weaker 'local nonsatiation' condition.]
 
 ***
 
 \includegraphics[height=2.5in]{picsfigs/moreisbetter.png}
 
 - How can we compare the "?" areas? Which are preferred?
+
+<!—
+@mcq
+-->
 
 \
 
@@ -2858,24 +2897,36 @@ Indifference curve
 
 \medskip
 
-Formally (for 2 goods), the set of pairs of ${X,Y}$ such that $U(X,Y)=c$ for some constant $c$
-
-
-Adv, math: Recall the "level sets" from the maths revision material.
+Formally (for 2 goods), the set of pairs of ${X,Y}$ such that $U(X,Y)=c$ for some constant $c$^[Recall the "level sets" from the maths revision material.]
 
 \includegraphics[height=2in]{picsfigs/indifcurves_util_together.jpg}
 
-Credit: www2.econ.iastate.edu
+
+Consider the above diagram ^[Credit: www2.econ.iastate.edu] . Think of this as a map with a projection above it.
+
+- How far East you go on this map determines how much of the x good is consumed
+
+- How far North you go determines how much of the Y good is consumed.
+
+- How high is the projected image... Determines how much utility is obtained from this combination of goods X and Y.^[Hmm... If we think of this as a traveler who loves 'getting high', and  'consumes' by driving East or North, and his utility is his altitude, maybe that helps.]
 
 
 \includegraphics[height=2in]{picsfigs/indif_utility_2_400.jpg}
 
-Credit: Frank's Economics on the web (MIT)
 
+The above diagram also includes color to depict the utility level, like a 'heat map'.^[This diagram is from a very useful resource from MIT, [Frank's Economics on the web](http://web.mit.edu/11.203/www/econ/), an interactive tutorial that is  worth checking this out to help you understand these concepts and more.]
 
 [comment]: <> (2024BB)
 
-*Further revision of this basic content at Khan Academy*
+*You can find further revision of this basic content at Khan Academy*
+
+<!—-
+
+todo: add link to Khan
+
+-->
+
+
 
 [comment]: <> (2024EE)
 
@@ -2914,55 +2965,50 @@ Adv: More specifically, e.g., :
 \includegraphics[height=2.2in]{picsfigs/indifccurve.png}
 
 
-*Note for above*: Suppose you are someone that likes hamburgers and soft drinks!   If this is too difficult, think of 2 healthy goods, like runner beans and green tea.   Note that the *period* of consumption; a day, a year, or a lifetime, is not specified.
+*Note for above*: Suppose you are someone that likes hamburgers and soft drinks. If this is too difficult to imagine, think of two healthy goods, like runner beans and green tea.   Note that the *period* of consumption---a day, a year, or a lifetime---is not specified.
 
 
-\textcolor{blue}{Comprehension Q: Rank order of preference between points A-E.}
+\textcolor{blue}{Comprehension Q: Rank order of preference between points A-E.} \textcolor{gray}{Note: I've asked this as a MCQ on exams!} (Answers to most comprehension questions are given in footnotes. Try to answer it yourself before looking at the footnote.) ^[Ans: $E \succ A \sim B \sim C \sim D \succ F$]
+
+<!--
+
+@MCQ: 2.3
+
+-->
 
 
-Ans: $E \succ A \sim B \sim C \sim D \succ F$
+\bigskip
 
-***
-
-\textcolor{blue}{Q: How do we know $E \succ B$ ?}
-
-\
-
-
-A:  It has more soft drink, and the same amount of hamburgers. By Assumption 3: more is preferred to less.
-\
+\textcolor{blue}{Q: How do we know $E \succ B$ ?}^[A:  It has more soft drink, and the same amount of hamburgers. By Assumption 3: more is preferred to less.]
 
 
 \bigskip
 
 
-Q:  How do we know $E \succ A$ ?
+\textcolor{blue}{Q:  How do we know $E \succ A$ ?}^[$B \sim A$ because they are on the same indifference curve
+If $E \succ A$ and $B \sim A$ then $E \succ A$ by transitivity of the preferences, assumption 2.]
+
 
 \bigskip
 
-\
 
-$B \sim A$ because they are on the same indifference curve
-
-
-If $E \succ A$ and $B \sim A$ then $E \succ A$ by transitivity of the preferences, assumption 2.
+Even though these concepts are rather abstract, we can already apply this to an interesting question that has been central to economics throughout history.
 
 
-***
-
-**Why 'voluntary trade'?**
+**Why is there 'voluntary trade' (between individuals)?**
 
 
-This gives us insight into why people trade with one another. An individual is ok with giving up soda for hamburgers or vice/versa *along* her indifference curve. A trade that put her *above* the IC makes her 'strictly' better off.
+This gives us insight into why people trade with one another.
 
-*So consider if one individual had allocation D and another allocation A, and they had the same preferences.*
+Considering figure 2.2 (above and in the NS text), an individual is ok with giving up soda for hamburgers or vice/versa *along* her indifference curve. A trade that put her *above* the IC makes her 'strictly' better off.
 
-\textcolor{gray}{A straight line between these two points describes the combinations of \
+*So consider if one individual had allocation D and another allocation A, and they had the same preferences.* \textcolor{blue}{What trade could they make to make each of them better off?}
+
+\textcolor{gray}{Note that a straight line between these two points describes the combinations of \
 'shares of bundles A and D adding up to 1' (e.g., 1/3 of D and 2/3 of A)
 or \
-'trading a fraction of bundle D for the same fraction of bundle A, and vice versa'
+'trading a fraction of bundle D for the same fraction of bundle A, and vice versa.'
 E.g., a 50-50 split of each bundle yields, in this case, (6+2)/2 = 4 hamburgers and (2+6)/2=4 soft drinks.}
-
 
 [comment]: <> (101BB)
 
@@ -2976,58 +3022,50 @@ We can see that with the same DMRS for both, trades along this line make both be
 
 ## Marginal rate of substitution (MRS): Absolute value of slope of indifference curve
 
-The MRS measures the rate at which you are willing to reduce the consumption of one good ($Y$) to get one more unit of another good ($X$) and still remain indifferent.
+The MRS measures the maximum amount of one good ($Y$) that you would be willing to give up in order to gain one more unit of another good ($X$). I.e., this would be the amount you could give up of $Y$ when you gain one unit of $X$ and be no worse or better off. You are 'indifferent' to making this change.^[\textcolor{RawSienna}{Adv, math: This slope will equal the negative of the *ratio* of the rate at which utility increases in each good (partial derivative).
+Intuition: giving up a certain utility from one good must be balanced by an increase in utility from the other good.
+So the MRS is the ratio itself, because it's the absolute value.) Formally, the MRS at point $X,Y$, where $U(X,Y)=U_1$ is:
+$MRS(X,Y)=-\frac{dY}{dX}|U(X,Y)=U_1$},  the absolute value of the total derivative of Y  with respect to X, holding utility constant.]
 
-\textcolor{RawSienna}{Adv, math: This slope will equal the negative of the *ratio* of the rate at which utility increases in each good (partial derivative).
-Intuition: giving up a certain utility from one good must be balanced by an increase in utility from the other good.}
-
-\textcolor{RawSienna}{(Adv: So the MRS is the ratio itself, because it's the absolute value.)}
-
-Formally, the MRS at point $X,Y$, where $U(X,Y)=U_1$ is:
-$$MRS(X,Y)=-\frac{dY}{dX}|U(X,Y)=U_1$$
-
-***
+\bigskip
 
 
-
-*Back to fig 2.2:*
+*Returning to fig 2.2:*
 
 \
 
 
-- A to B: willing to give up 2 burgers to get 1 more soda.
-    - $\rightarrow$ slope $-2$, $MRS=2$
+- Moving from A to B: She is willing to give up 2 burgers to get 1 more soda.
+    - $\rightarrow$  Here the slope $-2$, implying a $MRS=2$ ^[Because we take the absolute value, i.e., the magnitude of the slope expressed as a positive number.]
 - From B to C? (think about it)
-    - willing to give up 1 burger to get 1 more soda $\rightarrow MRS =1$
+    - willing to give up 1 hamburger to get 1 more soda $\rightarrow MRS =1$
 - C to D?
     - $MRS = \frac{1}{2}$
 
 
 \
 
-\textcolor{gray}{Note: Here this refers to arc slopes; however, for continuous functions this gets closer and closer to the point slope the smaller the arc}
+(Here this refers to 'arc slopes', not precisely the slope at points tangent to the curve.)^[However, for continuous functions this gets closer and closer to the point slope the smaller the arc.]
 
-- Note the decline: 'diminishing MRS' ... this may reflect *satiation*
+- Note the decline in the MRS as she gets more hamburgers (and fewer sodas): this 'diminishing MRS' is a common assumption... this may reflect *satiation*; as she gets more and more hamburgers each one adds incrementally less to her utility (because she grows tired of them.)
 
-\textcolor{red}{Careful: it is very easy to get the numerator and denominator wrong in computing the MRS}
+\textcolor{red}{Careful: it is very easy to get the numerator and denominator wrong in computing the MRS. Find a way to remember this for yourself.}
 
-***
 
 
 ### Preference for variety/balance
 
-\includegraphics[height=2.2in]{picsfigs/indifcurvebalance.png}
+\includegraphics[height=2.4in]{picsfigs/indifcurvebalance.png}
 
-\textcolor{RawSienna}{Adv: this 'preference for variety' is thought to hold for most combinations of goods, most of the time, but perhaps not for all pairings.
-It tends to lead to easier-to-solve solutions where people may consume both goods, and will have smooth reactions to price changes.
-The extreme of this is where each good is a 'necessity', so as its consumption goes to zero its marginal utility goes to infinity; here people must consume some of *each* good no matter the price.}
+This 'preference for variety' is thought to hold for most combinations of goods, most of the time, but probably not for all pairings^[\textcolor{RawSienna}{Adv: This  assumption generally makes it easier to find solutions where people consume both goods, and will imply smooth reactions to price changes.
+An extreme case is where each good is an 'absolute necessity', so as its consumption goes to zero its marginal utility goes to infinity; here people must consume some of *each* good no matter the price.}]
 
 
-With an indifference curve with this shape ('convex') any consumption bundle that represents a 'mixture' between two equally attractive extremes will be preferred to those extremes
-E.g., if I like bundles A and D equally, I prefer a bundle of 1/3 of a and 2/3 of D to either A or D.
+With an indifference curve with this shape ('convex') any consumption bundle that represents a 'mixture' between two equally attractive extremes will be preferred to those extremes.^[Economists pretentiously call these 'convex combinations', which essentially means 'combining a positive share of each bundle, where the shares add up to 1.']
+E.g., if I like bundles A and D equally, I prefer a bundle of 1/3 of A and 2/3 of D to either A or D.^[How do I know the line connecting these points describes such mixtures?  You can see by defining these formally and plotting this line... in multiple dimensions this is a plane or 'hyperplane'. \
+More inuitively, consider that the slope of this line represents the slope of the difference in these bundles: 'the reduction in hamburgers divided by the increase in soft drinks'. (Equivalently, in giving up a share of the upper left  bundle to gain the lower right bundle, the number of soft drinks one gains for each hamburger sacrificed.) In giving up a certain share of one bundle to gain a share of the other bundle I am reducing my consumption of one good to gain another good at a *constant linear* rate. Here, I need to move from 6 to 2 hamburgers and from 2 to 6 soft drinks. The slope of this is just one (6-2/6-2) in this case, as seen in the dashed line.]
 
-\textcolor{gray}{Adv: How do I know this line describes such combinations? You can see by defining these formally and plotting this line... in multiple dimensions this is a plane or 'hyperplane'. \
-More inuitively, consider that the slope of this line represents the slope of the difference in these bundles: 'the reduction in hamburgers divided by the increase in soft drinks'. Equivalently, in giving up a share of the upper left  bundle to gain the lower right bundle, the number of soft drinks one gains for each hamburger sacrificed.)the X-axis good as one gives up}
+the X-axis good as one gives up}
 
 [comment]: <> (101BB)
 
@@ -3091,13 +3129,21 @@ and the impact of a single-consumer's income increasing by \$1 million will be t
 
 - Key principles: IC's never cross, never slope upwards, and have zero thickness
 
+<!—-
+
+@MCQ: indifcurves_implications
+@MCQ: indifcurveproperties
+
+-->
+
 ## Illustrating particular preferences
 
+N\&S give some examples of preference which violate some of the above assumptions and do not exhibit diminishing MRS.
 
-\includegraphics[height=2.2in]{picsfigs/particularpreferences.png}
+
+\includegraphics[height=2.4in]{picsfigs/particularpreferences.png}
 
 
-*Note:* these preference violate some of the above assumptions and do not exhibit diminishing MRS
 
 \bigskip
 
@@ -3111,7 +3157,7 @@ and the impact of a single-consumer's income increasing by \$1 million will be t
 
 - Left and right shoes are *perfect complements* in 1:1 proportions; no benefit to more of one without the other; consumed in exact proportions.
 
-## App 2.3: Product positioning in marketing
+## App 2.3: Product positioning in marketing (not covered in lecture, read on your own)
 
 - Preference for balance? (Convex indifference curves)?
     - If market research suggests a broad group indifferent between A and D (in fig 2.3), they may strictly prefer G
@@ -3132,7 +3178,7 @@ Some suggested answers, others are reasonable...
 *Note:* \textcolor{gray}{The utility and indifference curve construct may seem highly theoretical. Indeed, these models were developed largely to address big questions like 'who gains from trade?'  Still, it helps organise thinking and analysis for at least some managers and marketing groups.  According to the text, Marriot hotel used focus groups to 'construct (multidimensional) indifference curves' to consider their ideal product positioning.
 I have seen a similar presentation for other hotels.}
 
-## Definitions: Perfect substitutes and complements
+## Definitions: Perfect substitutes and complements {#perfect-sub-comp}
 
 Perfect substitutes
 
@@ -3148,8 +3194,7 @@ Perfect complements
 
 \bigskip
 
-These goods are 'enjoyed only in fixed proportions'. E.g., left and right shoes (1:1) bicycle frames and wheels (1:2) or, perhaps, baking powder and flour (1:40) for someone who only eats soda bread. We will give a specific functional form for this later.
-
+These goods are 'enjoyed only in fixed proportions'. E.g., left and right shoes (1:1) bicycle frames and wheels (1:2) or, perhaps, baking powder and flour (1:40) for someone who only eats soda bread.^[ \textcolor{red}{Warning:} These are not the same as the 'complements' and 'substitutes' in demand functions which we will see you later, referring to the impact of changing prices.]
 
 ## Choices are subject to constraints
 
@@ -3168,7 +3213,7 @@ You cannot spend more than your (lifetime) income/wealth $\rightarrow$ *budget c
 *Notes:* For example, think 'food' and 'nonfood'.
 
 
-\textcolor{red}{Be careful}: it is very easy to get this slope ratio backwards! However, I'll try not to make such errors too costly on the assessments.
+\textcolor{red}{Be careful}: it is very easy to get this slope ratio backwards!
 
 
 ### Budget constraint algebra
@@ -3195,36 +3240,56 @@ To see how $Y$ trades off against $X$, rearrange this to:
 
 $$Y = -\frac{P_X}{P_Y} X + \frac{I}{P_Y}$$
 
-- Intercept $\frac{I}{P_Y}$ -- amount of Y you can buy if you only buy Y
-- Slope $-\frac{P_X}{P_Y}$ -- how much Y you must give up to get another unit of X
+- Intercept:  $\frac{I}{P_Y}$, i.e., amount of Y you can buy if you only buy Y
+- Slope: $-\frac{P_X}{P_Y}$, i.e.,  how much Y you must give up to get another unit of X
 
 
 \medskip
 
 *Notes and intuition*:
 
-The Slope $-P_X/P_Y$: How much $Y$ I must sacrifice to get another unit of $X$.
+The slope $-P_X/P_Y$: How much $Y$ I must sacrifice to get another unit of $X$, expressed as a negative number.^[Strictly speaking, the slope is how much Y you *get* when you get another X, but since this is negative we see that you 'get a negative amount', i.e., give up some amount of Y.]
 
-To get another unit of $X$ it costs me $P_xX$, so the more costly is $X$ the more $Y$ I must give up.
+
+To get another unit of $X$ it costs me $P_xX$, so the more costly is $X$ the *more* $Y$ I must give up.
 
 For each unit of $Y$ I give up I save $P_Y$, so the more costly is $Y$ the more I can save by giving up 1 unit of it,
 thus, the less I need to sacrifice of $Y$ to get another unit of $X$.
 
-\textcolor{RawSienna}{Adv: Strictly speaking, the slope is how much Y you *get* when you get another X, but since this is negative we see that you 'get a negative amount', i.e., give up some amount of Y.}
 
 \textcolor{blue}{Work on} making sure you can calculate the slope and intercept, what they mean, and have intuition for why the slope has this formula. See 'micro quiz 2.3')
 
+<!—-
+
+@MCQ:
+
+-->
+
+\textcolor{gray}{Having trouble understanding the budget constraint computations? There is a great interactive exercise [HERE](http://web.mit.edu/11.203/www/econ/), click on 'budget constraint'.}
+
+<!--
 \textcolor{red}{Be careful}: it is very easy to get this slope ratio backwards! However, I'll try not to make such errors too costly on the assessments.
+-->
 
 ## Utility maximization
 
-\includegraphics[height=2.2in]{picsfigs/utilmax.png}
+We started with an individual's preferences, one of  the baseline elements of the neoclassical model. Under some conditions these can be described by utility functions,  which we depicted graphically as 'mountains'  with levels sets depicted by indifference curves.
 
-You can choose any point in shaded area, as it is on or below your budget contstraint. You want to get to highest indifference curve.
+So, we have a way of depicting what people prefer,  but this doesn't tell us what people will *choose* to consume (and firms to produce).
 
-\textcolor{blue}{Consider:} How do we know A is suboptimal? What about B? Points between B and C?
+ We next introduced the second fundamental element of the neoclassical model, constraints, in particular, the budget constraint.
 
-You will choose point C, yielding utility $U_2$.
+We put these together  to describe the consumer's problem: maximizing her utility subject to her budget constraints.  this is depicted in figure 2.7 below for the two good case.
+
+\includegraphics[height=2.4in]{picsfigs/utilmax.png}
+
+Imagine  that you are this consumer  with these preferences and this budget constraint. You can choose any point in the shaded area, as it is on or below your budget constraint. You want to get to the highest indifference curve.
+
+\textcolor{blue}{Consider:} How do we know A is suboptimal (i.e., NOT optimal(? What about B? Points between B and C?
+
+\bigskip
+
+We can demonstrate that you will choose point C, yielding utility $U_2$.
 
 What is special about point C?
 
@@ -3237,24 +3302,21 @@ It's also (not a coincidence) the point where the slopes are equal.
 
 \bigskip
 
-Slope of budget constraint = slope of indifference curve $\rightarrow$
+Slope of budget constraint = slope of indifference curve $\rightleftarrows$^[The  $\rightleftarrow$ symbol means 'if  and only if', i.e., the  object on the right-hand side implies the object on the left-hand side, and vice versa. In  some context this means a 'necessary and sufficient condition',  but here it is just basically a definition.]
+
 $$P_X/P_Y = MRS$$
 
 
-*Note* both slopes are negative, so both negative signs cancel out, leaving this condition.
+*Note* that both slopes are negative, so both negative signs cancel out, leaving this condition.
 
-\textcolor{RawSienna}{Adv: The above is shorthand; the MRS varies everywhere, it is a function of the \emph{point} it is evaluated, i.e., $MRS = MRS(X,Y)$}
+\textcolor{red}{Warning:} The above is shorthand; recall that the  marginal rate of substitution may vary everywhere along an indifference curve (remember the idea of satiation and diminishing MRS). It is a function of the \emph{point} it is evaluated, i.e., $MRS = MRS(X,Y)$. It is only at the *point where the consumer is optimizing* that these slopes must be equal.^[They can also be equal at some other suboptimal points, where  she is not spending all of her income, or  if the indifference curves have a shape very different from the one above (more or less, where they are not 'convex').  Where she is consuming some of every good, this is a *necessary* condition for such a point to represent an optimal consumption choice, but it may not be a sufficient condition.  May also be optimal for her to consume *none*  of certain goods,  in which case this condition  will not hold. We return to this later.]
 
 
-***
-
-### At an optimal consumption choice (given above assumptions)
+### At an optimal consumption choice (given above assumptions, see above footnote)
 
 - Consume all of income (locate *on* budget line; follows from 'more is better')
 - Psychic tradeoff (MRS) equals market tradeoff ($P_X/P_Y$)
 
-\textcolor{gray}{Note: This holds for all goods where you consumed a positive amount, assuming the 'convex preferences'.
-You need not consume every good, as we will graphically see later.}
 
 
 \bigskip
@@ -3263,15 +3325,17 @@ You need not consume every good, as we will graphically see later.}
 
 Intuition: If I can give up X for Y in the market (buy less X, get more Y) at a certain rate, and the *benefit* I get from doing this is at a different rate, I can make myself better off.
 
-Thus the original point could not have been optimal.
+Thus the original point could not have been optimal!
 
-*Think about this carefully; it is a key method of proving things in economic theory.*
+\includegraphics[height=.7in]{picsfigs/glasses.png}
+
+*Think about this carefully; it is a key method of proving things in economic theory called 'proof  by contradiction'.*
 
 ***
 
 **Example, for intuition**
 
-Suppose that at the consumption bundle you choose, your MRS = 1. To remain indifferent, you would be willing to give up 1 burger to get 1 soda.
+Suppose that at the consumption bundle you choose your MRS = 1. To remain indifferent, you would be willing to give up 1 hamburger to get 1 soda.
 
 Suppose the price of soda is £1 and the price of a burger is £2. $\rightarrow$ Price ratio: $P_S/P_B = 1/2$
 
@@ -3279,13 +3343,13 @@ Thus if you buy one less burger you can buy two more sodas.
 Thus if you give up one burger, you can get one more soda to keep you indifferent *plus* an additional soda.
 This means you would be better off; thus the original bundle *wasn't* optimal.
 
-\textcolor{blue}{Practice question: in what direction would you adjust this bundle if the price of a soda was £2 and a hamburger was £1? Explain.}
+\textcolor{blue}{Practice question: in which direction would you adjust this bundle if the price of a soda was £2 and a hamburger was £1? Explain.}
 
 
-***
 
 [comment]: <> (2024BB)
-### More insight
+
+### More insight: Skip if you like
 
 This next bit is fairly mathy.  It should be helpful but you can skip over it if you don't find it so.
 
@@ -3379,7 +3443,7 @@ I.e., the same 'bang for each buck'.
     - i.e., the marginal utility of the first unit of X is less than that of Y
     - we will see examples of this (maths and graphically)
 
-\textcolor{RawSienna}{Advanced: The same condition applies to each good you are consuming a positive amount of }
+^[\textcolor{RawSienna}{Advanced: The same condition applies to each good you are consuming a positive amount of. }]
 
 \includegraphics[height=2.4in]{picsfigs/goodwedontbuy.png}
 
@@ -3409,41 +3473,48 @@ Constrained problem equivalent to optimising a single unconstrained 'Lagrangian'
 \includegraphics[height=2.4in]{picsfigs/scalping.png}
 
 
-Tickets are rationed: one per customer.
+Suppose tickets are rationed: one per customer.
 
-This constraint $\rightarrow$ Lower utility; individual would choose A if unconstrained.
+This constraint (which is *additional* to the budget constraint) implies lower utility; the individual depicted above would choose A if unconstrained.
 
-Here the budget line not tangent to indifference curve; the slopes are not equal. The individual would be better off buying more tickets, but she cannot.
+Here the budget line is not tangent to indifference curve; the slopes are not equal. The individual would be better off buying more tickets, but she cannot.
 
-She would be willing to buy an additional ticket at full price (move to point C). Actually, she would be willing to pay *more* than full price for second ticket.
+She would be willing to buy an additional ticket at full price (move to point C). Actually, she would be willing to pay *more* than full price for a second ticket. \textcolor{gray}{(See previous final exams and textbook questions asking, e.g., 'how much would she be willing to pay?'}
 
-She  could give up up to an additional C-D of goods for ticket 2 and still be as well off.
+She could give up up to an additional C-D of goods for ticket 2 and still be as well off.
 
 
-\textcolor{RawSienna}{Adv: Tough questions:}
+\textcolor{RawSienna}{Adv: Tough questions (final exam-worthy):}
 Why would NFL institute this rule?  Who benefits? (Maybe poor consumers?)
 Why do people see scalping as unfair? Is there ever a justification to forbid a transaction between 2 consenting parties?
 
-## App 2.5: What's a rich uncle's promise worth?
+## App 2.5: What's a rich uncle's promise worth? (Read this at home.)
 
 \includegraphics[height=2.2in]{picsfigs/williesuncle.png}
 
 *Note:*
 
-Willie would choose point A with his original income, but he was paid \$5k to abstain.
+Willie would choose point A with his original income, but his uncle paid him \$5k to abstain from sinful goods.
 
-This would get him to point B, gaining him $U_3$, but his uncle reneged, so he is at point C.
+If he accepts this and only consumes 'other goods', this would get him to point B, gaining him $U_3$.
 
-Graphically, how much \$ would have been enough to compensate for abstaining?
+But now suppose that his uncle reneged on the promise, so he is at point C.
 
-\textcolor{RawSienna}{Adv: Hard question, foreshadowing future concepts like the inefficiency of in-kind subsidies... How much would Willie need to be paid to get him to $U_3$ \emph{without} the restriction?  Is this more or less than \$5k?}
+Graphically, how much \$ would have been enough to compensate for abstaining?^[\textcolor{RawSienna}{Adv: Hard question, foreshadowing future concepts like the inefficiency of in-kind subsidies... How much would Willie need to be paid to get him to $U_3$ \emph{without} the restriction?  Is this more or less than \$5k?}]
 
 ## Using the model of choice
+
+<!--
+
+Todo: add motivation here or in slides
+
+-->
 
 1. Why do people spend their money on different things?
 2. What do different preferences/indifference curves imply for choices?
 
-**Note:** \textcolor{gray}{At this point in the lecture we may move to the powerpoint display, which gives a careful animation of this and several previously mentioned concepts.}
+**Note:** \textcolor{gray}{At this point in the lecture we may move to the powerpoint display, which gives a careful animation of this and several previously mentioned concepts. See the powerpoint} [here]{https://www.dropbox.com/s/qhsl6qey0wjcfe5/utility_demand_supplement.pptx?dl=0}, \textcolor{gray}{view in presenter mode.}
+
 
 <!---
 The powerpoint file [utility_demand_supplement.pptx](https://www.dropbox.com/s/qhsl6qey0wjcfe5/utility_demand_supplement.pptx?dl=0) should be accessible via [THIS LINK](https://www.dropbox.com/s/qhsl6qey0wjcfe5/utility_demand_supplement.pptx?dl=0) or the one on the VLE.}
@@ -3458,26 +3529,27 @@ The shape of the indifference curve.  The flatter (steeper) the indifference cur
 
 ## Algebraic/numerical examples
 
-Consider: are the following 'perfect substitutes' for someone who wants caffeine, but has no taste buds?
-
-
-\includegraphics[height=1.5in]{picsfigs/amount-of-caffeine-in-drinks.jpg}
-
-
-Yes, they are!
-
 
 ### Perfect substitutes, but not identical
 
 \textcolor{red}{Warning:} Thinking caps on. This may be confusing.
 
+Consider: are the following 'perfect substitutes' for someone who wants caffeine, but has no taste buds?
+
+
+\includegraphics[height=1.5in]{picsfigs/amount-of-caffeine-in-drinks.jpg}
+
+Yes, they are!
+
+Recall the [definition of perfect substitutes](#perfect-sub-comp).
+
 By 'perfect substitutes' we mean pairs of goods for which *some amount* of one is always valued the same as *some amount* of the other, and this proportion is always the same.
 
-  An easy example:  I might always be indifferent between three pints of mild ale and two pints of strong ale, if they have the same total alcohol content and I only want to get tipsy.
+An easy example:  I might always be indifferent between three pints of mild ale and two pints of strong ale, if they have the same total alcohol content and I only want to get tipsy.
 
 So (for perfect substitutes) buy the one that increases it more *per-\pounds.*
 
-\textcolor{red}{Warning:} If goods are *not* perfect substitutes, MU ratios generally depend on consumption levels.
+\textcolor{red}{Warning:} On the other hand, if goods are *not* perfect substitutes, margunal utility ratios (thus,  marginal rates of substitution) generally depend on consumption levels.
 
 
 \bigskip
@@ -3492,15 +3564,17 @@ $$U(X,Y)=4X+3Y$$
 \
 
 
-- Rate at which each increases utility per-unit (derivative) is constant
-    - $MU_X = 4$
-    - $MU_Y = 3$
-- So \textcolor{red}{(for perfect substitutes)} buy the one that increases it more *per-£*
+- Rate at which each good (X and Y) increases utility per-unit (derivative) is constant
+    - $MU_X = 4$,  so every additional unit of X  will add four units of utility in this example, no matter what the starting point is.
+    - $MU_Y = 3$, ... so every unit of Y will add 3 units...
+- So \textcolor{red}{(for perfect substitutes)} the consumer will buy the one that increases utility more *per-£*
     - Compare $MU_X/P_X$ to $MU_Y/P_Y$
     - Here, if $4/P_X > 3/P_Y$, then buy X.
     - if $4/P_X < 3/P_Y$, then buy Y
         - (if equal, buy either)
     - Rearranging, if $P_X < 4/3 P_Y$, buy X ... etc.
+
+( I sometimes call this the "bang for the buck" condition.)
 
 ***
 
@@ -3514,7 +3588,15 @@ Numerical example:
 
 $$U(X,Y)=min(2X,Y)$$
 
-E.g., where X is bicycle frames and Y bicycle wheels. \textcolor{red}{Warning:} this min function seems backwards, but it's correct.
+E.g., where X is bicycle frames and Y bicycle wheels. \textcolor{red}{Warning:} this min function seems backwards, but it's correct. I've answered this question many times in office hours and on the forum (have a look).  No one believes me at first but in the end they realize that this is the case.
+
+[comment]: <> (2024BB)
+
+ However, I will not ask you specifically to get this 'min' functional form for perfect complements on an exam.
+
+
+[comment]: <> (2024EE)
+
 
 \bigskip
 
@@ -3536,11 +3618,13 @@ How many packs of each will you buy, supposing both types of packs cost £1 each
 
 A Cobb-Douglas **example**
 
+Recall,  as I noted above,  that for the "general" rather than extreme cases the marginal rate of substitution at a particular point may vary everywhere,  and depends on the amount of each good consumed.  Below the "Cobb-Douglas"  functional form  is one example of such a 'middle ground'  utility function, expressing neither perfect substitutes and are perfect complements. A simple case of this Cobb-Douglas utility is:^[The General Cobb-Douglas function is : $U(X,Y)=X^a Y^b$ where a and b arepositive constants.]
+
 $$ U(X,Y)=\sqrt(XY) $$
 
-\textcolor{RawSienna}{Adv:} \textcolor{gray}{We are 'allowed' to square the whole thing to simplify the problem. Why? Utility is only "identified up to a monotonic transformation"}}
+\textcolor{RawSienna}{Adv note}, may help save you computations:^[We are 'allowed' to square the whole thing to simplify the problem. Why? Utility is only "identified up to a monotonic transformation".  In general you can  transform the utility function  in any way that preserves the ordering of preferences  over the combinations of X and Y. (E.g.,  multiply/divide it by any positive amount,  add any constant,  take it to any power,  put it into an exponential or large transformation...  Doing this,  replacing utility function with this "new" utility function will have no impact  on the choices the person makes. The only thing that will change is the realized level utility, which is not a meaningful concept. However,  this will no longer hold later in the module when we talk about uncertainty and expected utility.]
 
-\textcolor{RawSienna}{\textcolor{gray}{General Cobb-Douglas: $U(X,Y)=X^a Y^b$ for a, b positive constants.}}
+
 
 
 *Amount of Y you'd give up to get a unit of X:*
@@ -3554,55 +3638,53 @@ Note also that this is the same as 'the amount of Y you'd need to give up a unit
 \bigskip
 
 
-Check your work: is this reasonable?
+Checking your work: is this solution reasonable?
 
-- The more Y I have, the more I am willing to give up to get a unit of X.
+The more Y I have, the more I am willing to give up to get a unit of X.  This seems reasonable, as it reflects satiation.
 
 
 [comment]: <> (2024BB)
 
-\textcolor{RawSienna}{Adv, maths: This slope is derived through calculus. }
+\textcolor{RawSienna}{Adv, maths: This slope is derived through calculus. }^[
+$MU_X$ is the slope of $U(X,Y)$ in X at a particular point,
+i.e., the (partial) derivative with respect to X
+$MU_X = \frac{\partial}{\partial X} (XY)^{1/2} = \frac{1}{2} (XY)^{-1/2}Y = \frac{1}{2} (Y/X)^{1/2}$
+Similarly, $MU_Y = \frac{1}{2}(X/Y)^{1/2}$.]
 
 [comment]: <> (2024EE)
+
+
+[comment]: <> (101BB)
+
+We can derive this slope.
 
 $MU_X$ is the slope of $U(X,Y)$ in X at a particular point,
 i.e., the (partial) derivative with respect to X
 
 $MU_X = \frac{\partial}{\partial X} (XY)^{1/2} = \frac{1}{2} (XY)^{-1/2}Y = \frac{1}{2} (Y/X)^{1/2}$
 Similarly, $MU_Y = \frac{1}{2}(X/Y)^{1/2}$.
-
-
-[comment]: <> (101BB)
-
-\textcolor{gray}{Note: In doing theoretcal (i.e., more pure mathematical) work, economists typically like to find results under as general 'weak' conditions as possible, making the fewest possible assumptions or restrictions. Still, it can be helpful to use particular functional forms, both for estimation using data, and for illustrating theoretical insights. However, it is actually rather difficult to find simple functions that are easy to work with and have nice 'reasonable' properties.}
+\textcolor{gray}{Note: In doing theoretical (i.e., more pure mathematical) work, economists typically like to find results under as general 'weak' conditions as possible, making the fewest possible assumptions or restrictions. Still, it can be helpful to use particular functional forms, both for estimation using data, and for illustrating theoretical insights. However, it is actually rather difficult to find simple functions that are easy to work with and have nice 'reasonable' properties.}
 
 [comment]: <> (101EE)
 
-***
+In general, the marginal rate of substitution  (at a point) is the ratio of the marginal utilities at that point.^[This is helpful and intuitive, but I am not requiring you to remember this, although it may help you do your calculations.]
 
-$$MRS(X,Y)= MU_X/MU_Y = Y/X$$
-
-\bigskip
-
-Here$\ast$ (for this Cobb-Douglas) utility-maximization requires, at optimal choices of X and Y:
+Here^[I say 'here' both because the MRS comes specifically from this Cobb-Douglas utility function. Also, because we now have nice convex indifference curves with 'normal' slopes, unlike for perfect complements or substitutes. The more of one good you have the less you value it relative to the other good (unlike perfect substitutes)
+ but you still value more of it somewhat (unlike for perfect complements)] (for this Cobb-Douglas), utility-maximization requires, at optimal choices of X and Y:
 
 $$MRS(X,Y)= Y/X = P_X/P_Y$$
 
 
 Check that it makes sense:
 
-As $P_X$ increases the right-hand-side (RHS) increases, and so to increase the LHS I must increase the units of Y consumed,
-and thus decrease the units of X consumed.
-
-
-\textcolor{gray}{$\ast$ Note: I say 'here' both because the MRS comes specifically from this Cobb-Douglas utility function. Also, because we now have nice convex indifference curves with 'normal' slopes, unlike for perfect complements or substitutes. The more of one good you have the less you value it relative to the other good (unlike perfect substitutes)
- but you still value more of it somewhat (unlike for perfect complements)}
+As $P_X$ increases, the right-hand-side (RHS) increases, and so to increase the left-hand-side (LHS) I must increase the units of Y consumed,
+and thus decrease the units of X consumed. Thus as $P_X$ increases I consume more units of X and less Y, which is what you might expect for a standard case.
 
  \bigskip
 
 
-For any price ratio, you can find the ratio of units of Y \& X consumed
-Then,  if you know the prices and total income $I$, you can calculate the consumption and spending on X and Y
+For any price ratio, you can find the ratio of units of Y \& X consumed.
+Then, if you know the prices and total income $I$, you can calculate the consumption and spending on X and Y
 
 \bigskip
 
@@ -3610,34 +3692,40 @@ Rearranging the optimization condition:
 
 $$Y P_Y = X P_X$$
 
-- \textcolor{blue}{Question:} What is weird about this?
-
-\textcolor{brown}{Ans: You always spend the same *amount* on each good, no matter the price (Note, that doesn't mean the same number of units). This 'constant expenditure shares' are a characteristic of Cobb-Douglas functions that limit their usefulness and realism.}
+- \textcolor{blue}{Question (adv.:} What is weird about this condition, for this example?^[You always spend the same *amount* on each good, no matter the price (Note, that doesn't mean the same number of units). This 'constant expenditure shares' are a characteristic of Cobb-Douglas functions that limit their usefulness and realism. But we still use them all the time in teaching.]
 
 
 \bigskip
 
 
-Combining this with the budget constraint (b.c.)
+Combining this with the budget constraint
 
 $$P_X X + P_Y Y = I$$
 
-solve for amounts of X and Y purchased, as functions of prices and income.
+we can now solve for amounts of X and Y purchased, as functions of prices and income.
 
 
 *Calculations:*
 Rearranging the optimization condition, $Y = X P_X/P_Y$. \
+
+\smallskip
+
 From the budget constraint, $X = (I - P_Y Y)/P_X$. \
 
-Substituting in for Y yields $X = (I - P_Y(X P_X / P_Y))/P_X = I/P_X - X$ \
+\smallskip
+
+Substituting in for Y yields $X = (I - P_Y(X P_X / P_Y))/P_X = I/P_X - X$ \o
+
+\smallskip
+
 $\rightarrow 2X = I/P_X \rightarrow X = I/(2P_X)$ \
-$X P_X = I / 2 \rightarrow$ always spend half your income on X. \
+$X P_X = I / 2 \rightarrow$ this person always spends half her income on X.^[To repeat,  this is not a general result, it is a result coming from this particular version of the Cobb-Douglas utility function.  Obviously, Economics does not  predict that everyone  spent equal shares of their income on each good!]
 
 \medskip
 
-\textcolor{RawSienna}{Adv: You can solve for the optimal $Y$ by 'symmetry': as utility
+\textcolor{RawSienna}{Advanced shortcut tip:}^[You can solve for the optimal $Y$ by 'symmetry': as utility
 and budget constraint are symmetric everything we said holds replacing X with Y. \
-Thus $Y = I/(2P_Y)$ etc. }
+Thus $Y = I/(2P_Y)$ etc.]
 
 [comment]: <> (101BB)
 
@@ -3795,23 +3883,29 @@ BEGINLEC3
 
 ## Lecture 3 (Chapter 3): Demand Curves -- coverage outline
 
-\textcolor{gray}{In lecture at this point I give you an example of a very surprising case that nonetheless may plausibly occur.}
+\textcolor{gray}{In lecture at this point I give you an example of a very surprising case that nonetheless may occur, at least in theory.}
 
 *Key goals of these lectures (and accompanying self-study)*
 
-1. How do you derive an *individual's* demand curve from her utility function?
+1. How do you derive an *individual's* demand curve from her utility function?^[Answer: practice, practice, practice. :)]
 1. What properties do demand curves have?
 1. Understand the following concepts and outcomes (and/or how to derive them):
     - Substitution and income effects (of a price change)
-    - Goods that are 'substitutes' or 'complements'
+    - Goods that are 'substitutes' or 'complements'^[remember, this is not the same as 'perfect substitutes/complements']
     - Consumer surplus (from a transaction)
     - The lump-sum principle (and the distortion of taxation)
 1. What is a *market* demand curve, and how do we derive it?
-1. Understand the concepts and how to compute:
+1. Understand the concepts:
     - Price elasticity (of market demand for a product), and what it means to firms' pricing strategy
     - Income elasticity (...)
     - Cross-price elasticity (between two products)
 1. Be able to discuss real world examples and applications of the above
+
+[comment]: <> (101BB)
+
+- And be able to compute the above
+
+[comment]: <> (101EE)
 
 ***
 
@@ -3821,7 +3915,10 @@ BEGINLEC3
 
 ## Demand functions
 
--Previous: consumption choices determined by utility functions/indifference curves and budget constraints
+Previously, we considered how consumption choices determined by utility functions/indifference curves and budget constraints.  We can now consider how an individual's choice of a good  varies with  each element of her budget constraint:  for income and the price of each good.
+
+We will refer to her 'quantity demanded of good X' function (or more simply, her 'demand function') as follows:
+
 
 \bigskip
 
@@ -3833,72 +3930,71 @@ $$Quantity \: of \: X \: demanded = d_x(P_X, P_Y, I; preferences)$$
 ### Homogeneity
 
 Homogenous (of degree zero) (demand) function
-:      A function whose outcome value does not change when all arguments are changed proportionally
+:      A function whose outcome value does not change when *all* arguments are changed *proportionally* is *homogenous of degree zero*
 
 
 \bigskip
 
-$d_X(P_X,P_Y,I)$ is homogenous in its arguments
+$d_X(P_X,P_Y,I)$ is homogenous of degree zero in its arguments.
 
 
 \bigskip
 
 
-- Multiply all prices and income by the same amount, budget constraint is unchanged, thus consumption choices should not change
-    - E.g., $P_X X + P_Y Y = I$ is the same as $2P_X X + 2P_Y Y = 2I$
+Multiply all prices and income by the same amount, and the *budget constraint is unchanged.*  Thus ( as preferences have not changed) consumption choices should not change either.
+
+-  E.g., the budget constraint $P_X X + P_Y Y = I$ is the same as the budget constraint $2P_X X + 2P_Y Y = 2I$
 
 
-*Notes:* Intuition for this... Graphically, the budget line and indifference curves are unchanged, so the point of tangency is the same.
- Consider, if your income, as well as prices, were stated in pennies rather than pounds (e.g., 5 million pennies rather than £50,000), why would your choices change?
+*Intuition for this:* Graphically, the budget line and indifference curves are unchanged, so her optimization problem  is identical to the optimization problem before. The point of tangency between  an indifference curve and her budget line is the same as before.
+
+Consider, if your income, as well as prices, were stated in pennies rather than pounds (e.g., 5 million pennies rather than £50,000), would your choices change?^[Of course not!  At least they 'should' not change;  your optimal choices would not change.  Perhaps in some specific context the way the problem is framed may affect people's choices, but that is  not what is being asked here.  Furthermore, we are considering 'normative' economics in the sense of 'what would rational optimizing agents do'?]
 
 This relates to the puzzle of 'why should monetary policy and inflation have any real effect?'
 
-***
 
 ## Response to income changes
 
-- What happens to the quantity purchased of some good as your income increases?
-- Depends on whether the good is normal or inferior
+Q:  What happens to the quantity purchased of some good as your income increases?
+
+A: Depends on whether the good is normal or inferior.
 
 \
 
-
-*Note:* Whether it is normal or inferior depends on your preferences and the change in the slope of the indifference curves with higher income/utility, as we see below
+(Whether it is normal or inferior depends on your preferences and the change in the slope of the indifference curves with higher income/utility, as we see below.)
 
 
 \bigskip
 
 Normal good
-:     A good that is bought in greater quantities as income increases.
+:     A good that is bought in *greater* quantities as income increases.
 
 Inferior good
-:     A good that is bought in smaller quantities as income increases.
+:     A good that is bought in *smaller* quantities as income increases.
 
 ***
 
 \includegraphics[height=2.2in]{picsfigs/normalgood.png}
 
 
-*Notes:*
-Move to PPT slides to illustrate this,
- beginning with 'Changes in Income: A Normal Good'
+
+\textcolor{gray}{Move to PPT slides to illustrate this, beginning with 'Changes in Income: A Normal Good'. See} [here](https://www.dropbox.com/s/qhsl6qey0wjcfe5/utility_demand_supplement.pptx?dl=0)
 
 
-***
 
 
 \includegraphics[height=2.2in]{picsfigs/inferiorgood.png}
 
 
-*Note:* Here we see more income $\rightarrow$ less expenditure on Z!
+*Consider:* Here we see more income $\rightarrow$ less expenditure on Z! (Not just 'a lesser share' but actually *less*.)
 
-This is because the *shape* of the indifference curves changes at higher incomes here.
-When people have a lot to spend, they want to spend it on Y and not on Z.
-If you won the lottery how much pot noodle would you buy?
+This is because the *shape* of the indifference curves changes at higher incomes in this example.
+When people have a lot to spend, they want to spend it on Y and not on Z. (Again *in this example*, not in general.)
+Consider, if you won the lottery how much pot noodle would you buy? Pot noodle may be like good Z  in this example.
 
 \bigskip
 
-Thinking in 3d: 'as you walk up this hill, it's ridge gradually moves to the west'
+Thinking in 3d: 'as you walk up this hill, its ridge gradually moves to the west'
 
 *Notes:* Adv: To be precise, this is *not* about wealthy people being different than poor people
 nor that their taste 'changes' when they become wealthy.
@@ -3908,20 +4004,20 @@ Empirically, these are hard to distinguish, however.
 
 
 [comment]: <> (2024BB)
+
 \textcolor{RawSienna}{Adv:}
+
 [comment]: <> (2024EE)
 
-\textcolor{gray}{Consider -- all goods cannot be inferior. Why not?
-There are 'adding up' conditions.
+\textcolor{blue}{Consider: all goods cannot be inferior. Why not?}^[ There are 'adding up' conditions.
 You always spend all of your income. Thus, if as your income increases, you spend less on some subset of goods,
-you *must* spend more on the remaining goods.}
+you *must* spend more on the remaining goods.]
 
 ## Substitution and income effects from a fall (or rise) in price
 
 What happens to the quantity purchased of some good when the price of the good falls or rises?
 
 \
-
 
 *This changes both an intercept and a slope.*\
 
@@ -3930,11 +4026,17 @@ The new utility-maximizing choice is on *another* indifference curve and it is a
 Substitution effect ('Hicksian')
 :     The effect on consumption due to a change in price 'holding real income or utility constant.'
 
-\textcolor{gray}{More precisely, the effect on the lowest-cost consumption bundle yielding this utility}
+[comment]: <> (2024BB)
+
+\textcolor{gray}{(More precisely, the effect on the lowest-cost consumption bundle yielding this utility.)}
+
+[comment]: <> (2024EE)
 
 [comment]: <> (101BB)
 
-Note: this is the impact of price on the 'compensated' or 'Hicksian' demand.
+More precisely, the effect on the lowest-cost consumption bundle yielding this utility.
+
+Note that this is the impact of price on the 'compensated' or 'Hicksian' demand.
 This comes from the equivalent 'dual' problem of minimising expenditure subject to a fixed utility.
 
 [comment]: <> (101EE)
@@ -3942,13 +4044,20 @@ This comes from the equivalent 'dual' problem of minimising expenditure subject 
 Income effect (of a price change)
 :     The remaining effect on consumption; due to the change in purchasing power and achievable utility caused by a change in price.
 
-Note: This is conceptual: we never *actually* observe either of these effects alone; we always observe the net effect of both
+Note that this is *conceptual*: we never *actually* observe either of these effects alone; we always observe the net effect of both.
 
-Advanced: This standard definition of the 'income effect' of a price change
-combines both of the effects we saw when looking at the impact of an income change on consumption of X.
-More consumption of each good is possible, but the MRS may differ at this higher consumption and utility level
+[comment]: <> (2024BB)
+
+\textcolor{RawSienna}{Advanced footnote}^[This standard definition of the 'income effect' of a price change combines both of the effects we saw when looking at the impact of an income change on consumption of X.
+More consumption of each good is possible, but the MRS may differ at this higher consumption and utility level.]
+
+[comment]: <> (2024EE)
 
 [comment]: <> (101BB)
+
+This standard definition of the 'income effect' of a price change combines both of the effects we saw when looking at the impact of an income change on consumption of X.
+
+More consumption of each good is possible, but the MRS may differ at this higher consumption and utility level
 
 \textcolor{gray}{Pollak's 1969 conception of 'conditional demand' offers an alternative decomposition, which may be more intuitive.}
 
@@ -3959,38 +4068,69 @@ More consumption of each good is possible, but the MRS may differ at this higher
 
 \includegraphics[height=2.2in]{picsfigs/incomeandsubstfx.png}
 
-Note: In lecture we move to the PPT slides to illustrate this, beginning with 'Change in A Good’s Price'
+(Note: In the lecture we move to the PPT slides to illustrate this, beginning with 'Change in A Good’s Price'.)
 
- [comment]: <> (2024BB)
-Adv: This topic is more nuanced and complicated than we will cover in the main content of this module. \
+
+I also present the answer to a problem set question on this on YouTube:
+[Problem set 2: substitution and income effects of price change](https://youtu.be/D5mqyOnYaAU)
+
+There are plenty  of other YouTube videos covering this online, with better production value than my videos, e.g.,
+
+[Indifference Curves - Income and Substitution Effects for Inferior Goods](https://www.youtube.com/watch?v=vQsDCo-xVZY)
+
+and
+
+[Indifference Curves - Income and Substitution Effects fo like whatr Normal Goods](https://www.youtube.com/watch?v=vQsDCo-xVZY&pbjreload=10)
+
+
+[comment]: <> (2024BB)
+
+\textcolor{RawSienna}{Advanced footnote}^[This topic is more nuanced and complicated than we will cover in the main content of this module. \
 To fully cover this, we would have to consider the theoretical concept of a 'compensated' aka 'Hicksian' demand curve, \
 where income is adjusted to hold utility constant while price ratios change. \
 This also allows us to consider 'net versus gross' substitution, and 'equivalent vs compensating variation'. \
-More advanced economics modules will cover this extensively and rigorously.
+More advanced economics modules will cover this extensively and rigorously.]
+
 [comment]: <> (2024EE)
 
 ***
 
+Some things to remember and 'remember why':
+
 - The \underline{substitution effect} *always* goes in the opposite direction as the price change
+
 - The \underline{income effect} goes in the opposite direction as the price change for a normal good
+
 - ... But the income effect goes in the *same* direction as the price change for an inferior good
-    - Thus the substitution and income effects go in the same direction for a normal good
-    - ... and they go in different directions for an inferior good
+
+    - Thus the substitution and income effects go in the same direction for a normal good,
+
+    - ... and they go in different directions for an inferior good.
+
     - For an inferior good the net effect is unknown, but usually the substitution effect dominates (but see Giffen goods below)
 
 ***
 
-**Read on your own, know:**
+**Read on your own (from NS), know:**
 
 - Numerical example of response to price change
 - The relative importance of substitution effects for most goods
 - Substitution and income effects for inferior goods
 
-## Different substitution effects
+## Different substitution effects of a price change
 
-- Perfect complements: No substitution effect, only an income effect of a price change
-- Perfect substitutes: Large substitution effect -- price change may cause a complete switch
-- In between: depends on curvature of indifference curve
+The substitution effect of a price change will depend on the utility function, i.e., on the curvature of the indifference curves at the relevant point.
+
+
+- Perfect complements: There is no substitution effect, only an income effect of a price change.
+
+- Perfect substitutes: There may be a large substitution effect -- a price change may cause a complete switch from one good (or set of goods) to another. On the other hand there may be no substitution effect for a 'small' change in price... see examples.
+
+- In-between utility functions: depends on curvature of indifference curve at the relevant point.
+
+<!---
+Todo: give more explanation here
+-->
 
 \includegraphics[height=2.5in]{picsfigs/substfxperfect_trim.png}
 
@@ -4001,15 +4141,13 @@ More advanced economics modules will cover this extensively and rigorously.
 
 \includegraphics[height=2.2in]{picsfigs/griffin.jpg}
 
-- If the price of a good increases, can quantity demanded actually *increase*?!
-    - Yes, if the good is *very* inferior and is a large portion of income
+- If the price of a good increases, can quantity demanded actually *INCREASE*?!
+    - Yes, if the good is *very* inferior,  not very substitutable,  and is a large portion of income.
+    We call this case a *Giffen good*.
+    - It has never been seen and documented in the wild \
 
+- See Powerpoint
 
-*Notes:*
-
-- Yes, if the good is very inferior, and not very substitutable \
-- But it has never been seen and documented in the wild \
-- See Powerpoint (if time permits) \
 - Practice question: try to draw indifference curves and budget constraints illustrating this effect for a Giffen good
 
 
@@ -4018,7 +4156,6 @@ More advanced economics modules will cover this extensively and rigorously.
 ## Some other important functions to know about (doctoral prep):
 
 \includegraphics[height=2.2in]{picsfigs/axioms.png}
-
 
 
 
@@ -4031,14 +4168,6 @@ $$V(p_x,p_y,I_0)$$
 
 
 *We can find by solving for the utility-maximising choices, and then plugging these in to compute the utility from these.*
-
-
-\bigskip
-
-
-
-
-
 
 
 \bigskip
@@ -4136,16 +4265,17 @@ A similar result applies to a change in *another* good's price, with similar int
 [comment]: <> (101EE)
 
 
-## Second lecture on demand ... WHAT???!!
+## Second lecture on demand ... WHAT is this????!!
 
-## Second lecture on demand ... Recap
+## ... Recap
+
 
 
 $$Quantity \: of \: X \: demanded = d_x(P_x, P_y, I; preferences)$$
 
 \bigskip
 
-Previous lecture: What the constrained util-max implied for demand...
+Previous lecture: What the constrained utility-maximization implied for demand...
 
 - "Homogeneity of degree zero" of  $d_x(P_x, P_y, I)$
 
@@ -4157,15 +4287,19 @@ Previous lecture: What the constrained util-max implied for demand...
 
     - Substitution and income effects
 
-## Goals of this lecture (demand part 2)
+## Goals of this chunk (demand part 2)
+
+
+<!---
+Todo: Motivate this more
+-->
 
 *Util-max s.t. constraints* $\rightarrow$
 
 
-
 **Understand real-world issues:**
 
-1. A 'Fixed-basket' CPI may overstate inflation
+1. A 'Fixed-basket' consumer price index (CPI) may overstate inflation
 
 2. The lump-sum principle,  the distortion of taxation
 
@@ -4174,62 +4308,86 @@ Previous lecture: What the constrained util-max implied for demand...
 
 **Fundamental concepts, useful for business \& policy:**
 
-1, Goods may be 'substitutes' or 'complements' for one another
+1. Goods may be 'substitutes' or 'complements' for one another
 
 2. How can we consider/compute the  *Consumer surplus* from a transaction?
 
 
 
-
-
 **Derive**
 
-- *Individual's* demand curve from her utility function
+- An *individual's* demand curve from her utility function
 
-- *Market* demand curve
+- The *Market* demand curve (from individual demand curves)
 
     - \textcolor{gray}{What causes *shifts* in either?}
 
 \bigskip
 
-## App 3.2: The CPI and it's biases
+## App 3.2: The CPI and its biases
 
-\textcolor{gray}{Note the UK also uses a similar CPI measure (change from the 'RPI' in 2003, although RPI is still used for some things). The Bank of England targets a 2\% increase in the CPI per year}
+The government (and many others) want to know 'how much less (or more) is  a pound this year than a pound in the past?'
+One of the most prominent measures of this is the "consumer price index (CPI)."
 
-This is a *very* important number: It is used for monetary policy and for targeting many salaries and benefits
+The is a *very* important number: It is used for monetary policy ('inflation targeting') and for targeting many salaries and benefits. For example, my union is always raising the complaint that salaries have not risen  in line with inflation. (But  don't worry, student fees have.)
 
-*But does it overstate the rate of inflation?*
+Getting this number substantially and consistently wrong  can lead to huge problems;  people may be let into poverty or the government may be led into default. However, it is hard to get this measure right.  Using the classical economics framework, we can consider what this means.
+
+
+The UK uses a similar CPI measure to the USA (a change from the 'RPI' in 2003, although RPI is still used for some things). The Bank of England targets a 2\% increase in the CPI per year.^[Something to know: what has been the  inflation rate in recent years? This is an example of 'market and industry knowledge'  that employers value. True, you can look this stuff up,  but having a general sense of these things rolling around in your brain will  ground your thinking.  As an analogy,  suppose you were a mariner navigating the seven seas and you had to go online every time to remember which direction was North or South.}
+
+
+*But does the CPI overstate the rate of inflation?*
 
 It is based on a 'typical market basket' (UK: of 700 different goods and services, excluding housing, updated yearly).
 
 
-A good example, 1982 vs 2012:
+**1982 vs 2019 two-good example**
+
+We can consider this with a minimal example, using only our two favourite goods, x and y.
+
+Suppose in 1982 the "average household" consumed $x_{82}$  units of good x and $y_{82}$ units of good y.
+The  prices were $p^x_{82}$ and $p^y_{82}$ for each of these, respectively.
+
+Now in 2019 the average household consume $x_{19}$  units of good x and $y_{19}$ units of good y.
+The prices are $p^x_{19}$ and $p^y_{18}$ for each of these, respectively.
 
 \
 
-$$b_{82}=p^x_{82}x_{82}+p^y_{82}y_{82}$$
-$$b_{12}=p^x_{12}x_{82}+p^y_{12}y_{82}$$
-$$cpi_{12}=\frac{b_{12}}{b_{82}}$$
+The expenditure (in pounds) in 1982 was thus $b_{82}$:
 
+$$b_{82}=p^x_{82}x_{82}+p^y_{82}y_{82}$$
+
+How much would it cost to consume the "average 1982" basket today (2019),  with today's prices? ... This is defined as $b_{19}$:
+
+$$b_{19}=p^x_{19}x_{82}+p^y_{19}y_{82}$$
+
+
+The "regular" CPI  will simply take the ratio  of these two numbers:
+
+$$cpi_{19}=\frac{b_{19}}{b_{82}}$$
+
+
+An unadjusted (Fixed-basket) CPI 'claims' you need $I'$ to be as well off in 2019. I.e., to buy *the exact same basket*, including vinyl records.\ But, as seen in the figure below, by substituting you could be as well off with the lower level of income $I''$\ (And income $I'$ would actually make you *better* off).
 
 \includegraphics[height=2.7in]{picsfigs/cpi_bias.png}
 
-Note: An unadjusted (Fixed-basket) CPI 'claims' you need $I'$ to be as well off in 2012. I.e., to buy *the exact same basket*, including vinyl records.\ But by substituting you could be as well off with the lower level of income $I''$\ (And income $I'$ would actually make you *better* off).
-
 \bigskip
 
-Note that the basket *is* adjusted yearly, based on a survey of consumers' spending.\ But even this is not necessarily the *right* adjustment,\ as consumers may be attaining higher or lower utility from these changes.\ The right adjustment depends on the consumers' utility functions, which are unobservable.
+In fact, in setting policy, the basket *is* adjusted yearly, based on a survey of consumers' spending.\ But even this is not necessarily the *right* adjustment,\ as consumers may be attaining higher or lower utility from these changes.\ The right adjustment depends on the consumers' utility functions, which are unobservable.
 
+[comment]: <> (2024BB)
 
+\textcolor{gray}{I asked a multi-part question on this on the 2016 Final exam; have a look, these are all on the ELE under 'Relevant previous year's assessments, with suggested answer guidelines'} [2016 exam link](https://www.dropbox.com/s/ppbb89yflsey7n7/be2024fix_wans_2016.pdf?dl=0)
 
-\bigskip
-
+[comment]: <> (2024EE)
 
 [comment]: <> (101BB)
 
+\bigskip
+
 \textcolor{gray}{Aside: See also new product/quality bias, and 'outlet bias'.}
 
-[comment]: <> (101EE)
 
 *Some additional notes on this, particularly relevant for government policy*:
 
@@ -4255,8 +4413,10 @@ By a similar consideration, if the MI is less than (or equal to) the *Paasche* I
 However, as the actual price indices are calculated using average models for particular groups, the comparison becomes much more complicated, unless consumers have identical preferences and incomes or identical homothetic preferences. There are whole books written about this stuff.
 
 
-
 Considering this further,  even if the CPI measure that is being used overstates true inflation. it might be justified to stick with the system people were promised, and are used to. On the other hand, getting cost-of-living-adjustments (COLA) too high will eventually bankrupt the system, as whatever is being inflated incorrectly will grow and grow geometrically to outstrip the size of the economy/tax base!
+
+[comment]: <> (101EE)
+
 
 ## The Lump-Sum Principle
 
@@ -4266,22 +4426,23 @@ Have you seen this?
 \includegraphics[height=2.6in]{picsfigs/ukwindows.jpg}
 
 \textcolor{gray}{1696: An Act for granting to His Majesty several Rates or Duties upon Houses for making good the Deficiency of the clipped Money...
-Properties with between ten and twenty windows paid an extra four shillings (£24.79 in 2016), and those above twenty windows paid an extra eight shillings (£49.57 in 2016).} \url{https://en.wikipedia.org/wiki/Window_tax}
+Properties with between ten and twenty windows paid an extra four shillings (£24.79 in 2016), and those above twenty windows paid an extra eight shillings (£49.57 in 2016).} <\url{https://en.wikipedia.org/wiki/Window_tax}>
 
 Consider the 'least efficient tax': Suppose the UK government imposes a tax on all windows above 4 per house.\
 
- All UK residents put bricks over their excess windows. The government raises no revenue but people are certainly worse off.
+*Suppose all UK residents put bricks over their excess windows.* The government raises no revenue but people are certainly worse off.
 
+***
 
 What's going on here?
 
 \includegraphics[height=2.6in]{picsfigs/tudoroverhang.jpg}
 
-\textcolor{gray}{Note: 'Taxes based on ground-floor area' are mentioned throughout the web, but I couldn't find an authoritative reference to this. If anyone finds one, please let me know!}
+^[Note: 'Taxes based on ground-floor area' are mentioned throughout the web, but I couldn't find an authoritative reference to this. If anyone finds one, please let me know!]
 
-\textcolor{RawSienna}{Adv:}\textcolor{gray}{Why 'compensated' behavior?  Essentially, because taxes in general will always leave people with less effective income, causing them to change their consumption choices to reflect the new, lower indifference curves. What matters for the deadweight loss is how the taxes change their behavior at this new lower-income state. This is a fundamental issue in Public Finance/taxation.}
 
-The social cost (deadweight loss, i.e., 'DWL') of taxation is greater the more taxes change 'compensated' behaviour (via the substitution effect)
+
+The social cost (deadweight loss, i.e., 'DWL') of taxation is greater the more taxes change 'compensated' behaviour (via the substitution effect)^[Why 'compensated' behavior?  Essentially, because taxes in general will always leave people with less effective income, causing them to change their consumption choices to reflect the new, lower indifference curves. What matters for the deadweight loss is how the taxes change their behavior at this new lower-income state. This is a fundamental issue in Public Finance/taxation.]
 
 The most efficient tax:
 
@@ -4291,12 +4452,12 @@ The most efficient tax:
 
 - ... is a 'lump-sum tax': same tax no matter what you do (including work/leisure!)
 
-This is a rationale for the poll tax, the proposed tax that brought downAmargaret Thatcher's government
+This is a rationale for the poll tax, the proposed tax that brought down Margaret Thatcher's government
 
 \
 
 
-A common measure of the burden: 'amount aperson would be willing to pay to avoid tax', for a given revenue raised
+A common measure of the burden: 'amount a person would be willing to pay to avoid tax', for a given revenue raised
 
 ***
 
@@ -4304,8 +4465,17 @@ A common measure of the burden: 'amount aperson would be willing to pay to avoid
 \includegraphics[height=2.8in]{picsfigs/lumpsum1.png}
 
 
+<!---
 
-Key to understanding the above example: how do we see that the blue and red dot both *raise the same revenue*? You could also compute these tax revenues algebraically and see they are the same (see footnote in NS textbook), but it is better to gain intuitive insight.
+Todo: explain this here
+
+-->
+
+*A step-by-step illustration of this is given in the [PowerPoint file](https://www.dropbox.com/s/qhsl6qey0wjcfe5/utility_demand_supplement.pptx?dl=0) under 'Lump sum principle'.
+
+Key to understanding the above example illustration: how do we see that the blue and red dot both *raise the same revenue*?
+
+You could also compute these tax revenues algebraically and see they are the same (see footnote in NS textbook), but it is better to gain intuitive insight.
 
 The revenue can be seen as the distance on the vertical axis, representing the value in terms of Y at the pre-tax price ratio.
 
@@ -4315,31 +4485,26 @@ The tax revenue is the difference between the individual's income and the amount
 according to the *actual opportunity cost* of that commodity, not measured with the 'after tax price'.
 
 
-***
-
-\textcolor{gray}{Note: This illustration is a single example; to see that this holds generally, take Public Economics. There are some interesting and surprising results. A caveat: If you *can't* tax one good (e.g., leisure)\
+Note...^[This illustration is a single example; to see that this holds generally, take Public Economics. There are some interesting and surprising results. A caveat: If you *can't* tax one good (e.g., leisure)\
  you *don't* want to tax all other goods equally.\
- In general, you want to tax goods that distort behaviour less overall.}
+ In general, you want to tax goods that distort behaviour less overall.]
 
 
 
 
 ***
-
 
 **Read on your own, know:**
 
-The potential inefficiency of in-kind programmes and subsidies (App 3.3)
+The potential inefficiency of in-kind programmes and subsidies (App 3.3)^[In the UK, the 'welfare wall' is usually referred to as the 'benefits trap' or 'unemployment trap'. This is something successive governments have tried to remedy, recently, with the 'Universal Credit'.]
 
-- Consider the *benefits* of in-kind programmes rather than cash transfers.
+\textcolor{blue}{Potential 'expansive' exam question: Consider the *benefits* of in-kind programmes rather than cash transfers.}
 
-\textcolor{gray}{Note: In the UK, the 'welfare wall' is usually referred to as the 'benefits trap' or 'unemployment trap'.
-This is something successive governments have tried to remedy, recently.with the 'Universal Credit'}
 
 
 [comment]: <> (101BB)
 
-I've added some supplementary powerpoint slides on taxation to the  VLE
+I've added some supplementary powerpoint slides on taxation to the VLE
 
 Supplementary slides on taxation - powerpoint on VLE
 
@@ -4349,10 +4514,6 @@ Supplementary slides on taxation - powerpoint on VLE
 - [inefficiency of a price subsidy](https://www.dropbox.com/s/13oapcmn1r9gc2x/subsidy%20illustration.pptx?dl=)
 
 - See esp 'excess burden of milk tax'
-
-***
-
-
 
 
 
@@ -4383,13 +4544,10 @@ Waldfogel collected evidence from surveying university students, asking them to 
 
 He claimed that his evidence demonstrates that students stated a significantly lower value (WTP and WTA) then the gifts were worth (87\% on average), and this gap was larger the less 'close' the giver was to the recipient'.
 
-. . .
 
 
 He argues this demonstrates a deadweight loss (DWL).
 
-
-. . .
 
 
 \textcolor{blue}{Are there flaws in his argument and his evidence?}
@@ -4434,12 +4592,11 @@ The standard explanation for this is that gifts gain a sentimental or symbolic v
 
 ## Changes in the Price of Another Good
 
-Note: \textcolor{gray}{In the previous 2-good diagrams the impact of the change in $P_X$ on $Y$ was mechanical: \ \
-- New budget constraint and new $X$ $\rightarrow$ spend the remainder on $Y$. \ \
-- With 3 or more goods, it's more interesting}
+\textcolor{gray}{Note:  In the previous 2-good diagrams the impact of the change in $P_X$ on $Y$ was mechanical.
+With a new budget constraint and a new $X$ $\rightarrow$, the individual needed to spend the remainder on $Y$. If expenditure on one good went up, expenditure on the other good must have gone down, and vice/versa.  With 3 or more goods, this need not hold.}
 
 Complements
-:     If a rise in $P_X$ leads $Q_{D,Y}$ to decrease (and vice-versa), then goods Y and X are (gross) *complements* to one another.
+:     If a rise in $P_X$ leads the quantity demanded of Y, $d_Y$, to decrease (and vice-versa), then goods Y and X are (gross) *complements* to one another.
 
 *How to remember:* 'complements' go together, so the quantity-demanded response to a price change is the same for both goods
  -- the opposite direction as the price change (unless Giffen).
@@ -4447,18 +4604,15 @@ Complements
 \bigskip
 
 Substitutes
-:     If a rise in $P_X$ leads $Q_{D,Y}$ to increase (and vice versa), then goods Y and X are (gross) *substitutes* to one another.
+:     If a rise in $P_X$ leads $d_Y$ to increase (and vice versa), then goods Y and X are (gross) *substitutes* to one another.
 
-How to remember (again): 'substitutes' are competing to meet the same desires,\
- so when you buy more of one, you tend to buy less of the other\
+
+A tip on how to remember this:
+
+'Substitutes' are competing to meet the same desires, so when you buy more of one, you tend to buy less of the other.\
 Thus the quantity demanded response to a price change go in opposite directions for the two goods\
 Thus, as quantity-demanded for good A typically goes in the *opposite* direction as the price of A\
-... quantity demanded for a substitute good B will go in the *same* direction as the price of A
-
-\bigskip
-
-
-These 'cross-price effects' include both *substitution* and *income* effects. (See micro quiz 3.3).
+... quantity demanded for a substitute good B will go in the *same* direction as the price of A.^[\textcolor{RawSienna}{Adv:} These 'cross-price effects' include both *substitution* and *income* effects. (See micro quiz 3.3).]
 
 [comment]: <> (101BB)
 
@@ -4491,9 +4645,13 @@ $$d_X(P_X,P_Y,I; \: preferences)$$
 
 \bigskip
 
-- 'Individual demand curve': depicts how the amount of a good an *individual buys responds to that good's price
-- 'Map it out' by increasing $P_X$ $\rightarrow$ budget constraint shifts in $\rightarrow$
-    - Find new point of tangency with indifference curve
+- 'Individual demand curve': depicts how the amount of a good an *individual* buys responds to that good's price
+
+How do we derive this (graphically)?
+
+
+We can 'map it out' by increasing $P_X$ $\rightarrow$ budget constraint shifts in $\rightarrow$.
+In each case we find new point of tangency with indifference curve. We plot this in the example below (better illustrated in the PowerPoint, perhaps.)
 
 ***
 
@@ -4501,7 +4659,6 @@ $$d_X(P_X,P_Y,I; \: preferences)$$
 
 
 \includegraphics[height=2in]{picsfigs/dmd2.png}
-/clipped
 
 \includegraphics[height=2in]{picsfigs/dmd3.png}
 
@@ -4511,8 +4668,7 @@ $$d_X(P_X,P_Y,I; \: preferences)$$
 
 ## Shifts in an individual's demand curve
 
-What might cause the demand curve for a product to shift (inward or outward)?
-
+\textcolor{blue}{Q:  What might cause the demand curve for a product to shift (inward or outward)?}
 
 
 *Not:*
@@ -4524,12 +4680,10 @@ What might cause the demand curve for a product to shift (inward or outward)?
 
 - Change in price of complements or substitutes for that good
 - Change in income
-- Perhaps: Change in consumer's information, preferences, or other factors (weather, etc).
+- Perhaps: Change in consumer's information, preferences,^[Note: Economists disagree as to how to consider or model changes in preferences] or other factors (weather, etc).
 
-\bigskip
+\textcolor{gray}{ I'm sure you can see how I could write a multiple-choice question about this.}
 
-
-\textcolor{gray}{Note: Economists disagree as to how to consider or model changes in preferences}
 
 \textcolor{red}{Be sure you understand shifts vs movements along, and 'demand' vs 'quantity demanded'.}
 
@@ -4540,7 +4694,7 @@ This will almost surely be on one of the exams in some form, see e.g., micro qui
 
 [comment]: <> (2024BB)
 
-\textcolor{gray}{Numerical examples: may be covered in tutorials}
+\textcolor{gray}{Numerical examples: these may be covered in tutorials}
 
 [comment]: <> (2024EE)
 
@@ -4551,17 +4705,20 @@ Consumer surplus
 
 \bigskip
 
-- What people would be willing to pay for the right to consume a good at its current price.
+- What people would be willing to pay for the *right* to consume a good *at its current price* rather than not being able to buy it at all.^[In other words, if you said to a consumer 'this product will stop being produced/offered  unless you pay us enough money',  this is the maximum amount the consumer would be will be willing to pay to keep the product on the market,  at its current price.]
+
 - The area between the demand curve and the market price
+
 - A measure of consumer welfare, useful for policy analysis
+
 
 
 \includegraphics[height=2in]{picsfigs/cons_surplus.png}
 
 
-\textcolor{RawSienna}{Adv, maths:} \textcolor{gray}{With a linear demand curve this is a triangle, which has an area that is easy to compute. More generally, this is a `definite integral'.}
+\textcolor{RawSienna}{Advanced maths note}^[With a linear demand curve this is a triangle, which has an area that is easy to compute. More generally, this is a `definite integral'.]
 
-\textcolor{gray}{Note: This can be applied to the individual or market demand curve to obtain individual or total consumer surplus (although there are some technical issues with the latter).}
+Also...^[This can be applied to the individual or market demand curve to obtain individual or total consumer surplus (although there are some technical issues with the latter).]
 
 
 [comment]: <> (101BB)
@@ -4570,9 +4727,7 @@ Consumer surplus
 
 [comment]: <> (101EE)
 
-\textcolor{gray}{Note: This concept can also be applied to measuring the value added by the introduction of a new good (see Application 3.4).\
-This is useful to know for policy, particular in formulating subsidies for R\&D and in adjusting the CPI.\
-It also could be used to compute damages in court cases where a firm is accused of stifling innovation.}
+Also, 'introducing a new good...'^[This concept can also be applied to measuring the value added by the introduction of a new good (see Application 3.4). This is useful to know for policy, particular in formulating subsidies for R\&D and in adjusting the CPI. It also could be used to compute damages in court cases where a firm is accused of stifling innovation.]
 
 \textcolor{gray}{Note: We may skip section 'consumer surplus and utility' in lecture, but please read over it for understanding}
 
@@ -4607,6 +4762,8 @@ $\rightarrow$ See the Leibniz rule for differentiating integrals.
 
 [comment]: <> (101EE)
 
+\bigskip
+
 Market demand
 :     The total quantity of a good or service demanded by all potential buyers
 
@@ -4622,14 +4779,15 @@ Market demand curve
 
 \includegraphics[height=2in]{picsfigs/summarketdemandcurve.png}
 
-*Note: Numerical examples of this may be covered in tutorial)*
-*Note: LC: Illustrate 'sums horizontally' on visualiser if possible*
+\textcolor{gray}{Numerical examples of this may be covered in tutorial}
+
+<!--
+LC: Illustrate 'sums horizontally' on visualiser if possible*
+-->
 
 
 
-*Notes:*
-Some results about individual demand also hold for market demand
-others do not, or only if we make restrictive assumptions
+Some of our previous results about individual demand also hold for market demand, while others do not, or only if we make restrictive assumptions
 
 ## Shifts in the Market Demand Curve
 
@@ -4649,16 +4807,16 @@ A random example:
 - 2015: 'Economy, gas prices drive demand for SUVs, high-end cars' [LINK](http://www.sj-r.com/article/20150809/NEWS/150809569)
 
 
-***
-
 ## Elasticities
+
+\textcolor{gray}{ This is a fundamental mathematics concept that comes from Physics;  it's not just for Economics.}
 
 - How to measure and compare the extent to which one thing responds to another?
 - E.g., which is 'larger'?:
     - the change in quantity demanded of oranges when the price of oranges rises or
     - the change in quantity demanded of apple juice when the price of apple juice rises?
 
-Note: Or the response to changes in the price of a related good, or to income.
+\textcolor{gray}{(Or the response to changes in the price of a related good, or to income.)}
 
 - Difficulty: These things are measured in different *units* and the prices have different starting values.
 
@@ -4668,17 +4826,18 @@ Elasticity: the measure of the \% change in one variable brought about by a 1\% 
 
 - a *unitless* measure; will be the same no matter how these variables are measured.
 
-Note: Think of responsiveness when talking about elasticity. Actually it's a measure from physics having to do with rubber bands, they tell me.
-Adv, maths: Strictly speaking we are talking about the limit of these responses, i.e., derivatives. \
-  The elasticity is basically the derivative of $ln(y)$ with respect to $ln(x)$; useful to know if you want to run a regression computing an elasticity, or if you want to interpret such a regression.
+\textcolor{gray}{Think of *responsiveness* when talking about elasticity. Actually it's a measure from physics having to do with rubber bands, they tell me.}
 
-***
+\textcolor{RawSienna}{Advanced footnote}^[Strictly speaking we are talking about the limit of these responses, i.e., derivatives. \
+  The elasticity is basically the derivative of $ln(y)$ with respect to $ln(x)$; useful to know if you want to run a regression computing an elasticity, or if you want to interpret such a regression.]
 
-- If a 5\% fall in the price of oranges typically results in a 10\% increase in quantity bought
+\bigskip
+
+- If a 5\% fall in the price of oranges typically results in a 10\% increase in quantity bought,
 - we say that each percent fall in the price of oranges leads to an increase in sales of about 2 percent.
-- i.e., the ‘‘elasticity’’ of orange sales with respect to price is about 2
-    - Note: elasticities may not be constant; they may depend on the starting point
-    - ... e.g., linear demand implies a different price elasticity at each point
+- I.e., the ‘‘elasticity’’ of orange sales with respect to price is about 2,
+
+*Note that elasticities may not be constant*; they may depend on the starting point;  e.g., linear demand implies a different price elasticity at each point.
 
 [comment]: <> (101BB)
 
@@ -4738,10 +4897,10 @@ Aside --  there are problems with this --
 ***
 
 
-[Next to add more space despite retail sales ‘moving backwards’](https://www.ft.com/content/932927d8-266c-3559-b87a-8d3efb07d5e1)
+['Next' to add more space despite retail sales ‘moving backwards’](https://www.ft.com/content/932927d8-266c-3559-b87a-8d3efb07d5e1)
 
 
-> The retailer does not expect any impact from the drop in sterling since the Brexit vote to kick in until at least the spring of 2017, as it had hedged some of its foreign-currency exposures in advance. Still, it expects expenses to rise by up to 5 per cent next year.
+> The retailer does not expect any impact from the drop in sterling since the Brexit vote to kick in until at least the Spring of 2017, as it had hedged some of its foreign-currency exposures in advance. Still, it expects expenses to rise by up to 5 per cent next year.
 > 'The last time we had to increase prices (which was in 2010 when cotton prices soared) we estimated that price elasticity was around 1.1. If that remains the case today, a retail selling price increase of 5% would result in a fall in unit sales of -5.5% and a fall in like for like sales value of between -0.5% to -1.0%. In the scheme of things, we think that this drag on sales is manageable and less damaging than taking a significant hit to margin.'
 
 
@@ -4752,48 +4911,68 @@ Properties of price elasticity of demand:
 
 - Goods with many close substitutes at a similar price will be highly elastic
 - ... with few substitutes ...  inelastic
-- Typically: more elastic in the *long run* than the short run (Q: why?)
-
-Note: Ans: Over time, consumers can adjust to price changes by changing their consumption patterns. E.g., if petrol gets more expensive I can switch to a hybrid or electric car, or a bicycle.
+- Typically: more elastic in the *long run* than the short run. \textcolor{blue}{Q : why?}^[Ans: Over time, consumers can adjust to price changes by changing their consumption patterns. E.g., if petrol gets more expensive I can switch to a hybrid or electric car, or a bicycle.]
 
 
 \bigskip
 
 
-| $e_{Q,p}$ | $abs(e_{Q,p})$ | Term         |
+<!---
+Todo: give more explanation here
+-->
+
+We refer to price elasticities with the following terminology:
+
+$e_{Q,p}$ | $abs(e_{Q,p})$ | Term         |
 |-----------|-------------|--------------|
 | $< -1$    | $>1$        | Elastic      |
 | $= -1$    | $=1$        | Unit Elastic |
 | $> -1$    | $<1$        | Inelastic    |
 
-Note: Sometimes elasticities are expressed in absolute value terms (a positive number). It should be clear from the context.
+\textcolor{gray}{Note that sometimes elasticities are expressed in absolute value terms (a positive number). It should be clear from the context.}
 
 
 ***
 
-- Total expenditure (revenue): price $\times$ quantity
-- So percent *change* in total expenditure is:
-    - pct change price $\times$ pct *change* quantity
-- As $e_{Q,P}$ tells you the pct change quantity for a small pct change in price:
+Consider an individual's  expenditure on a product.
+
+The total expenditure (the firm's revenue from this): price $\times$ quantity
+
+[comment]: <> (101BB)
+
+By taking the *total differential* of this  and recalling the 'multiplication rule' of derivatives...
+
+[comment]: <> (101EE)
+
+[comment]: <> (2024BB)
+
+By taking the *total differential* of this (you don't need to), and recalling the 'multiplication rule' of derivatives...
+
+[comment]: <> (2024EE)
+
+We have that for *small changes* in price, the percent *change* in total expenditure is:
+
+    - pct change price $+$ pct *change* quantity
+
+As $e_{Q,P}$ tells you the percent change in quantity for each (small) percentage change in price, we can use this to determine the change in expenditure for a small change in price.
+
+*Considering very small increases in a good's price:*
+
+-   If the (individual's) demand is *price-elastic*,  quantity will decrease by a *larger* percentage than price increased.  Thus her expenditure (on this good) will *decline*.
+
+-   If the (individual's) demand is *price-inelastic*,  quantity will decrease by a *smaller* percentage than price increased.  Thus her expenditure (on this good) will *increase *.
+
+-   If the (individual's) demand is *unit-elastic* (with respect to price),  quantity will decrease by a *the same* percentage as price increased.  Thus her expenditure (on this good) will *be unchanged*.
 
 \bigskip
 
 
-Note: Q: A price-setting firm should basically never want to set its price at a point where demand is inelastic. Why not?
 
-Note: Ans: If it were at such a point, it could raise its price and its revenue would increase and costs would decline \
- (because it would be selling fewer products but for greater total revenue.) \
- A caveat is that it might do this for a long term strategic advantage; e.g., to gain customer loyalty and market share, intending to take its profits later.
-
-
-
-\bigskip
-
-Example and algebra.
+#### Example and (slightly more advanced) algebra...
 
 If price rises by 20\% and quantity demanded falls by 20\% what happens to revenue?
+Suppose p=10 and q=10 so TR=100. Then when p=12 and q=8 TR=96. Huh? Price increased by 20\% and quantity decreased by 20\% so shouldn't TR be unchanged?  No! This only works for small changes.
 
-Suppose p=10 and q=10 so TR=100. Then when p=12 and q=8 TR=96. Huh? Price increased by 10\% and quantity decreased by 20\% so shouldn't TR be unchanged?
 TR is unchanged when p*q stays the same. With a change in each $\delta p$ and $\delta q$, the new revenue is
 
 $(p+\delta p)(q+\delta q) = pq+\delta p q + \delta q p + \delta p \delta q$.
@@ -4810,10 +4989,12 @@ $\delta p/ \delta q (q/p) + \delta p /p =-1$, i.e., if
 
 $-e_p +  \delta p /p = -1$
 
-In the limit, as  $\delta p$ goes to zero, this gives us that 'unit elasticity means a small change in quantity leads to no change in revenue.
+In the limit, as  $\delta p$ goes to zero, this gives us that 'unit elasticity means a small change in quantity leads to no change in revenue.'
 
 
-
+\textcolor{blue}{Q: Suppose a firm is setting its price and selling to only one individual , and facing no  competitors. It should basically never want to set its price at a point where demand is inelastic. Why not?}^[Ans: If it were at such a point, it could raise its price and its revenue would increase and costs would decline \
+ (because it would be selling fewer products but for greater total revenue.) \
+ A caveat is that it might do this for a long term strategic advantage; e.g., to gain customer loyalty and market share, intending to take its profits later.  we come back to a related point later in the context of monopoly pricing.]
 
 
 
@@ -4835,11 +5016,11 @@ In the limit, as  $\delta p$ goes to zero, this gives us that 'unit elasticity m
 ## Income elasticity of demand
 
 Income elasticity of demand
-:      \% change in quantity demanded of a good in response to 1\% change in income.
+:      \% change in quantity demanded of a good in response to 1\% change in income (approximately).
 
 
 
-$$e_{Q_d,I} = \frac{percent \ change \ in \ Q_d}{percent \ change \ in I} $$
+$$e_{Q_d,I} = \frac{percent \ change \ in \ Q_d}{percent \ change \ in \ I} $$
 $$  = \frac{\Delta Q_d}{Q_d}/\frac{\Delta I}{I}$$
 \
 
@@ -4862,27 +5043,27 @@ Luxury goods: $e_{Q,I} > 1$
 
 ***
 
-*Notes*
 
 E.g., cocaine is a luxury good, if, when I win £1000 in the lottery, I will increase my consumption of cocaine by *more* than £1000 ...
  (assuming, as in classical models, that I treat all sources of income the same
 
-Q: Is a luxury good a normal good?
-
-Ans: Yes (do you know why?)
+\textcolor{blue}{Q: Is a luxury good a normal good?}^[Ans: Yes (do you know why?)]
 
 
 \bigskip
 
 
 
-Q (micro quiz): Why is it that not every good can have an income elasticity of demand greater than 1?
- Can every good have an income elasticity of demand less than 1?
+\textcolor{blue}{Q:  (micro quiz): Why is it that not every good can have an income elasticity of demand greater than 1?
+ Can every good have an income elasticity of demand less than 1?}
 
 
 
-***
+### Some real-world discussion of this
 
+<!---
+Todo: give more explanation here
+-->
 
 [Prof. Muellbauer letter to FT](https://www.ft.com/content/4ea79d96-a4d6-11e5-a91e-162b86790c58)
 
@@ -4894,9 +5075,14 @@ Q (micro quiz): Why is it that not every good can have an income elasticity of d
 
 Read on your own:
 
+[comment]: <> (101BB)
+
 - Cross-price elasticity of demand (read on your own)
 
+[comment]: <> (101EE)
+
 - Some elasticity estimates (note these are a bit dated)
+
 
 ***
 
@@ -4927,10 +5113,9 @@ See links on VLE
 
 [comment]: <> (pre2018EE)
 
-[comment]: <> (2024BB)
+<!---
 
 ## Going forward: examples of things you should already have some memory of from previous modules (BEE1029 etc)
-
 - Producer (and consumer) surplus
 - Deadweight loss (basics)
 - Possible impacts of income taxes on labour (broadly)
@@ -4944,11 +5129,13 @@ See links on VLE
 - Firm cost-minimisation, marginal productivity (RTS) price-ratio condition (basics)
 - MR=MC optimization (broadly)
 
+-->
 
-[comment]: <> (2024EE)
 
 <!---
+
 BEGINLEC4
+
 -->
 
 
@@ -4961,6 +5148,10 @@ BEGINLEC4
 ## Lecture  (30 min) - Production and costs (brief treatment: coverage)
 
 
+<!---
+Todo: desperately need motivation here
+-->
+
 \textcolor{red}{This year} we only briefly cover the production function, inputs, and the firm's cost structure.
 
 
@@ -4968,7 +5159,7 @@ BEGINLEC4
 
 Key issues are highlighted on the next slides, and in the handouts.
 
-I'm giving you the 'basic idea' so we can continue the *story*
+I'm giving you the 'basic idea' so we can continue the *story.*
 
 
 \bigskip
@@ -4992,42 +5183,71 @@ Ch 6:
 
 ***
 
-Firms have a 'production function' $q = f(k,l,...)$
+## The Firm's Production function
 
-Each combination of inputs yields an output quantity.
+- A production function is a mathematical relationship between inputs (capital, labour, materials, etc.) and outputs.
+
+\bigskip
+
+$$q = f( K, L, M, ...)$$
+
+
+$$q = f(K, L)$$
+
+
+- e.g., $q =2L^{1/3}K^{2/3}$
+
+- Given its production choice, the firm tries to produce it at the minimum cost
+    - This resembles a consumer maximizing utility subject to budget constraints^[A major difference: a firm *also* chooses the *level* of output, while the consumer has a fixed budget constraint ... we return to the firm in later sections.]
+
+
+<!---
+Todo: give an example here... consider 'how much labour will the firm hire'? Maybe something about automation and a guaranteed living wage?
+-->
 
 \bigskip
 
 
-A particular quantity ($q$) could be produced with different combinations of inputs.
+Typically, a particular quantity ($q$) could be produced with several different combinations of inputs.
 
-***
+*Which combination will the firm choose?*
+
 
 $$q = f(k,l,...)$$
 
 
-Whatever $q$ it wants to produce, firm uses the *minimum cost combination of inputs*
+**Main point**: Whatever $q$ it wants to produce, the firm uses the *minimum cost combination of inputs*!
 
 It chooses inputs to get the best 'bang for the buck';
 
 
-$\rightarrow$ where input mix is optimal, each input yields the same *marginal product per \pounds*
+$\rightarrow$ where the input mix is optimal, each input yields the same *marginal product per \pounds*
+
+
+<!---
+Todo (future): R content estimating this?
+-->
 
 \bigskip
+
 
 \textcolor{gray}{This is very similar to the consumer optimization we discussed. For a given total input cost, the firm wants to produce as much as possible. A better way of thinking about this is that for a given production, the firm wants to incur as low a cost as possible. However, there is no 'hard budget constraint' as in the consumer optimisation case. The firm's output choice will be chosen to maximise it's profit, with no constraints other than 'non-negativity. }
 
 [comment]: <> (2024BB)
 
-2018: This year, I'm not expecting you to know this input-choice optimisation in detail. I just wanted you to have a general sense of it as it helps us see how the model fits together.
+\textcolor{gray}{ I'm not expecting you to know this input-choice optimisation in detail. I just wanted you to have a general sense of it as it helps us see how the model fits together.}
 
 [comment]: <> (2024EE)
 
 ***
 
-Optimisation (given a production function and input prices)
+<!---
+Todo: give more explanation here
+-->
 
-$\rightarrow$ a (minimum) cost for every output $q$ a firm chooses to produce
+Optimisation (given a production function and input prices)...
+
+yields a (minimum) cost for every output $q$ a firm chooses to produce.
 
 
 \bigskip
@@ -5050,17 +5270,15 @@ Total cost function: $c(q)$ or $TC(q)$.
 
 - cost of producing one additional unit (given you already produced q units)
 
-\bigskip
 
 
 \bigskip
 
 
-- 'Average cost' $AC=c(q)/q$: the production cost per unit produced
+- **'Average cost'** $AC=c(q)/q$: the production cost per unit produced
 
 
-***
-
+\textcolor{gray}{Average costs are also the total ‘rise over run’ for the TC curve at a given quantity as the firm optimally chooses its inputs.}
 
 Average costs (for a firm) may be increasing or decreasing in quantity
 
@@ -5079,7 +5297,7 @@ Average costs (for a firm) may be increasing or decreasing in quantity
 
 \bigskip
 
-\textcolor{blue}{Consider: why/when would we expect DRS/IRS/CRS?}
+\textcolor{blue}{Consider: why/when would we expect DRS/IRS/CRS?} (We discuss this [further below](##IRS-DRS-reasons).)
 
 
 ***
@@ -5095,45 +5313,52 @@ The shape of the marginal cost curve depends on the production function
 
 ***
 
-\includegraphics[height=4.5in]{picsfigs/crsTCcurve.png}
+\includegraphics[height=2in]{picsfigs/crsTCcurve.png}
 
 ***
 
-\includegraphics[height=4.5in]{picsfigs/crscostcurves}
+\includegraphics[height=2in]{picsfigs/crscostcurves}
 
 ***
 
 
-\includegraphics[height=4.5in]{picsfigs/drsTCcurve.png}
+\includegraphics[height=2in]{picsfigs/drsTCcurve.png}
 
 ***
 
-\includegraphics[height=4.5in]{picsfigs/drscostcurves}
+\includegraphics[height=2in]{picsfigs/drscostcurves}
 
 ***
 
-\includegraphics[height=4.5in]{picsfigs/irsTCcurve.png}
+\includegraphics[height=2in]{picsfigs/irsTCcurve.png}
 
 ***
 
-\includegraphics[height=4.5in]{picsfigs/irscosts_fix.png}
-
+\includegraphics[height=2in]{picsfigs/irscosts_fix.png}
 
 ***
 
-[comment]: <> (2024EE)
+[comment]: <> (pre2019BB)
+
+\includegraphics[height=2in]{picsfigs/mesTCcurve.png}
+
+
+\includegraphics[height=2.2in]{picsfigs/mescostcurves}
+
+[comment]: <> (pre2019EE)
 
 
 [comment]: <> (pre2018BB)
 
 *Notes:*
-We will go rather quickly over this material, as it is largely revision
+We will go rather quickly over this material, skipping some details
+We
 - 6.1 Production function
 - 6.2 Marginal product
 - 6.3 Isoquant maps
 - 6.4 Returns to scale
 
-*Note: Skip input substitution, technological change*
+*Note that we will skip input substitution and technological change*
 
 
 ***
@@ -5147,25 +5372,7 @@ We will go rather quickly over this material, as it is largely revision
 
 [comment]: <> (pre2018EE)
 
-## The Firm's Production function
 
-- A production function is a mathematical relationship between inputs and outputs.
-
-\bigskip
-
-$$q = f( K, L, M, ...)$$
-
-
-$$q = f(K, L)$$
-
-
-- e.g., $q =2L^{1/3}K^{2/3}$
-
-- Given its production choice, the firm tries to produce it at the minimum cost
-    - This resembles a consumer maximizing utility subject to budget constraints
-
-
-NOTE: A major difference: firm *also* chooses the level of output ... later chapters
 
 [comment]: <> (pre2018BB)
 
@@ -5302,7 +5509,7 @@ Decreasing returns to scale (DRS)
 
 ***
 
-### Arguments/reasons for scale (dis)economies
+### Arguments/reasons for scale (dis)economies {#IRS-DRS-reasons}
 
 **IRS**
 
@@ -5322,7 +5529,10 @@ Decreasing returns to scale (DRS)
     - Larger firm $\rightarrow$ harder to make CEO liable for losses
 
 
-Adv: I think the first point is valid, but it doesn't suggest that 2 firms would be more efficient than 1; these DRS would set in as a function of  *total* output, not a single firm's output. The second and third arguments are complicated and perhaps harder to justify. The case for DRS is unproven, IMHO
+\textcolor{RawSienna}{Advanced footnote}^[ I think the first point is valid, but it doesn't suggest that 2 firms would be more efficient than 1; these DRS would set in as a function of  *total* output, not a single firm's output. The second and third arguments are complicated and perhaps harder to justify. The case for DRS is unproven, IMHO]
+
+\textcolor{gray}{Mock exam question:
+Give one reason why production may exhibit 'increasing returns to scale' and one reason why it may have 'decreasing returns to scale'.}
 
 
 [comment]: <> (pre2018BB)
@@ -5349,21 +5559,9 @@ Adv: I think the first point is valid, but it doesn't suggest that 2 firms would
 
 6.1, 6.3, 6.5, 6.7 (very useful)
 
-- Multiple choice questions to be posted soon (as part of formative assessment)
+- Multiple choice questions to be posted soon (as part of a formative assessment)
 
 [comment]: <> (pre2018EE)
-
-<!---
-BEGINLEC5
--->
-
----
-     geometry: margin=0.7in
----
-
-# Lecture5 (merged into the above)
-
-(Note: in 2018-19 this topic (costs) is/was merged with the above, so these notes are blank)
 
 [comment]: <> (pre2018BB)
 
@@ -5376,7 +5574,7 @@ BEGINLEC5
 
 *Notes:*
 We will go rather quickly over this material, as it is largely revision
-- 7.1 Basic cost concepts (largely revision)
+- 7.1 Basic cost concepts
 - 7.2 Cost minimizing input choice
 - 7.3 Cost curves
 - (Skip: 7.4-7.6; short and long-run, Per-unit SR cost curves, shifts in cost curve, numerical example)
@@ -5392,7 +5590,7 @@ We will go rather quickly over this material, as it is largely revision
 
 [comment]: <> (pre2018EE)
 
-## Basic cost concepts (largely revision)
+## Types of costs ('Basic cost concepts')
 
 
 Fixed costs (FC)
@@ -5413,11 +5611,15 @@ Sunk costs
 - FC from previous years are sunk costs; FC for future years are not.
 
 \
+<!---
 This is not covered at this point in the text. \
  However, this should be revision from last year.
+-->
 
 
-***
+[comment]: <> (pre2019BB)
+
+** *
 
 Economic costs (DR)
 :     Additional amounts *paid* for something. The relevant costs (to firm or consumer) when making choices
@@ -5447,6 +5649,8 @@ NOTE: Please *don't* use accounting costs to make a decision going forward.
 ***
 
 \includegraphics[height=2.5in]{picsfigs/firstclass.png}
+
+[comment]: <> (pre2019EE)
 
 [comment]: <> (pre2018BB)
 
@@ -5552,57 +5756,10 @@ Repeat cost-minimisation calculation for each level of output $\rightarrow$ firm
 
 [comment]: <> (pre2018EE)
 
-## Average and marginal cost curves
-
-Average cost
-:     Cost per unit of output
-
-\
-
-$$AC=TC/q$$
+*Note - 2019:* We are skipping the discussion of the short-run here: we will assume all inputs can be adjusted.
 
 
-*The total 'rise over run' for the TC curve at a given quantity as the firm optimally chooses its inputs along the expansion path*
-
-
-
-
-Marginal cost
-:     Incremental cost of last unit produced
-
-- I.e., additional cost of producing one more unit of output
-- MC: Slope of (optimising) TC curve at a point
-
-- Shape of these depends on production function
-    - Constant, decreasing, increasing, efficient scale
-
-
-***
-
-\includegraphics[height=2.2in]{picsfigs/crsTCcurve.png}
-
-
-\includegraphics[height=2.2in]{picsfigs/crscostcurves}
-
-
-\includegraphics[height=2.2in]{picsfigs/drsTCcurve.png}
-
-
-\includegraphics[height=2.2in]{picsfigs/drscostcurves}
-
-
-\includegraphics[height=2.2in]{picsfigs/irsTCcurve.png}
-
-
-\includegraphics[height=2.2in]{picsfigs/irscosts_fix.png}
-
-
-\includegraphics[height=2.2in]{picsfigs/mesTCcurve.png}
-
-
-\includegraphics[height=2.2in]{picsfigs/mescostcurves}
-
-***
+[comment]: <> (pre2019BB)
 
 Short Run (SR)
 :     The period of time in which a firm must consider some inputs to be fixed in making its decisions.
@@ -5618,7 +5775,10 @@ Long Run (LR)
 In this module, we focus on the latter, where all inputs can be adjusted. We are not highlighting this distinction because we are time-constrained in this module.
 \
 
-***
+
+
+[comment]: <> (pre2019EE)
+
 
 [comment]: <> (pre2018BB)
 
@@ -5690,7 +5850,7 @@ I've moved these to the file /Users/yosemite/OneDrive - University of Exeter/exe
 
 [comment]: <> (2024BB)
 
-# Lecture5: has been merged into the above for 2018
+# Lecture5: has been merged into the above
 
 [comment]: <> (2024EE)
 
@@ -5704,19 +5864,26 @@ BEGINLEC6
 
 # Lecture6: Profit maximisation and supply [NS Ch 8 (\*)] [1 hour]
 
+
+<!---
+
+Todo: give some motivation here!
+
+-->
+
 ## Lecture  (1 hour) - Profit maximisation and supply - coverage
 
 - NS: Ch 8
 - T1:07a-07b
 
 - 8.1 The nature of firms (why they exist, goals, etc)
-- 8.2 Profit maximisation (largely revision)
+- 8.2 Profit maximisation
 - 8.3 Marginal revenue
 
 NOTE: includes trivial perfect competition case and 'monopoly' case
 
 - 8.4 Marginal revenue curve
-- 8.5 Supply decisions of a price-taking firm (largely revision)
+- 8.5 Supply decisions of a price-taking firm
 
 ***
 
@@ -5736,7 +5903,7 @@ NOTE: includes trivial perfect competition case and 'monopoly' case
 
 **Context**
 
-- We considered production functions and cost
+- We considered production functions and cost ...
 
 [comment]: <> (pre2018BB)
 - We considered cost and cost minimization
@@ -5746,7 +5913,7 @@ NOTE: includes trivial perfect competition case and 'monopoly' case
 
 \bigskip
 
-*Now:* what **output** to set to maximise profits
+*Now:* what **output** should the firm set to maximise profits?
 
 \bigskip
 
@@ -5764,8 +5931,6 @@ We assume a firm's goal is to maximise profit.
 
 
 
-***
-
 Ronald Coase: Why do large entities called 'firms' exist
 
 
@@ -5776,10 +5941,9 @@ Ronald Coase: Why do large entities called 'firms' exist
 - Often use 'command and control' within firms rather than markets
 
 
-Adv: This spawned a large literature on the 'theory of the firm' emphasizing things like incomplete contracts, hold-up, relationship specific assets, lobbying costs, and more.
+\textcolor{RawSienna}{Advanced footnote}^[This spawned a large literature on the 'theory of the firm' emphasizing things like incomplete contracts, hold-up, relationship specific assets, lobbying costs, and more.]
 
 
-***
 
 ### Marginal revenue
 
@@ -5788,9 +5952,13 @@ Marginal revenue
 
 
 Remember, given its choice of production the firm will always choose the highest price
-at which it can sell all the units it has produced
+at which it can sell all the units it has produced.
 
-\textcolor{blue}{Q: Impact of increasing quantity?}
+\textcolor{gray}{We will come back to this when we discuss} [monopolies](#monopolies-pd)
+
+\bigskip
+
+\textcolor{blue}{Q: What will be the impact of increasing quantity on a firm's revenue??}
 
 
 \bigskip
@@ -5818,11 +5986,8 @@ $$MR = \frac{\partial R}{\partial q} = P(q) +q P'(q)$$
 
 
 
-### MR for firm facing 'downward-sloping demand'
+### MR for firm facing 'downward-sloping demand'^[See example in table 1 in text.]
 
-
-
-NOTE: See example in table 1 in text
 
 - Single price (assume) $\rightarrow$ sell more only by reducing price on *all units*
     - E.g., sell 51 units rather than 50 by reducing price from £1 to £0.99
@@ -5832,47 +5997,39 @@ NOTE: See example in table 1 in text
     - So MR is £0.49
 
 
-***
-
 \includegraphics[height=3.5in]{picsfigs/Mrillustrated.png}
 
 ***
 
 **MR curves be like:**
 
-\includegraphics[height=4in]{picsfigs/mrcurve.png}
+\includegraphics[height=3in]{picsfigs/mrcurve.png}
 
 
-
-\textcolor{blue}{Q: Why might MR curves typically decrease in Q?}
-
-
-Ans: Demand curves slope down, so less revenue for each additional unit. \
- Also, the *impact* of the reduced price is greater because the more we sell the more units this affects
+\textcolor{blue}{Q: Why might MR curves typically decrease in Q?}^[ Ans: Demand curves slope down, so less revenue for each additional unit. \
+ Also, the *impact* of the reduced price is greater because the more we sell the more units this affects.]
 
 
 ***
 
-### MR for a price-taking firm
+### MR for a 'price-taking' firm
 
-A price-taking firm (perfect competition):
+Under 'perfect competition' (which we will describe soon), each firm is a 'price-taker'
+
+Each firm:
 
 - gets market price P for each additional unit
-- the firm is small, so its output has (virtually) no impact on P
+- the firm is small, so its output has (virtually) no impact on P ^[The NS text gives a good illustration and examples of why it is fine to assume that a small producer's output has no impact on price]
     - (More on this later)
-
-
-NOTE: The text gives a good illustration and examples of why it is fine to assume that \
- a small producer's output has no impact on price
 
 
 
 \bigskip
 
-*Thus its marginal revenue is constant at $P$*
+*Thus its marginal revenue is constant at $P$*!
 
 
-*NOTE:* Total revenue curve will be a straight line ... double quantity, double revenue
+\textcolor{gray}{Note that for such a firm, the total revenue curve will be a straight line ... double quantity, double revenue}
 
 
 ***
@@ -5884,8 +6041,7 @@ NOTE: The text gives a good illustration and examples of why it is fine to assum
 - Under standard assumed conditions
 
 
-*Notes:*
-Conditions for a 'unique maximum', e.g. everywhere decreasing marginal revenue and increasing or nondecreasing marginal costs
+\textcolor{RawSienna}{Advanced footnote}^[ There are specific conditions for the existence of a 'unique maximum-profit quantity'. E.g., this will be ensured by everywher- decreasing marginal revenue and increasing or nondecreasing marginal costs]
 
 - ... profits are maximised at the unique $q^*$ such that $MR=MC$
 
@@ -5900,39 +6056,24 @@ This holds *for all types of firms*
 - For a price-taker, setting $MR(q)=MC(q)$ means setting $P=MC(q)$, because $P=MR(q)$
 
 
-\textcolor{blue}{Q:  Why? Suppose actual output was greater or less than q*.}
-Explain what is true about marginal profits as output increases or decreases.
-
-
-*Notes:*
-Ans: if q>q*, MR, which is decreasing in q, will be below MC.
+\textcolor{blue}{Q:  Why? Suppose actual output was greater or less than q*.
+Explain what is true about marginal profits as output increases or decreases.}^[Ans:
+if q>q*, MR, which is decreasing in q, will be below MC.
 Firm can do better if it reduces q somewhat-- cost decrease will be larger than revenue decrease.
- If $q<q^{\ast}$, $MR<MC$ -- better to increase q and revenue increases more than costs
+ If $q<q^{\ast}$, $MR<MC$ -- better to increase q and revenue increases more than costs]
 
 
-**For a firm with market power:**
+**Consider a firm with market power:**
 
 
-\includegraphics[height=7.8in]{picsfigs/fig8-1.png}
-
-
-
-
-Firm wants to make the vertical distance between the revenue and cost curves as large as possible.
-
-***
-
-
-**For a firm with market power:**
-
-
-
-\includegraphics[width=4.5in]{picsfigs/monopmcmr.png}
-
-
-
-Firm wants to make the vertical distance between the revenue and cost curves as large as possible. \
+The firm wants to maximise profit. This means making the vertical distance between the revenue and cost curves as large as possible. \
 If the curves had differing slopes, profits could be increased by adjusting output in the direction in which the curves diverged.
+
+\includegraphics[height=5.5in]{picsfigs/fig8-1.png}
+
+
+
+\includegraphics[width=4.3in]{picsfigs/monopmcmr.png}
 
 
 
@@ -5949,6 +6090,8 @@ $$MR(q) = P$$
 
 ***
 
+
+[comment]: <> (101BB)
 
 ### Inverse elasticity markup rule, intuition
 
@@ -5996,11 +6139,12 @@ Setting MR=MC $\rightarrow$ 'markup as \% of price' $\frac{P-MC}{P}=\frac{1}{e_{
 - It's called the 'Lerner markup rule'
     - this 'markup as \% of price is also used as a measure of the extent of a firm's market power
 
+[comment]: <> (101EE)
 
 ***
 
 
-## Supply decisions of a price-taking firm (largely revision)
+## Supply decisions of a price-taking firm
 
 **Price-taking firms:**
 
@@ -6075,10 +6219,10 @@ BEGINLEC7
 
 - With many 'price taking firms', how does *aggregate* supply respond to changes in demand?
     - Can such firms make a profit in the short run? In the long run?
-- If demand for a good increases (demand curve shifts out), because preferences change, or population increase
+- If demand for a good increases (demand curve shifts out), because preferences change, or because population increases,
     - ... should we expect the price of the good to rise in the short or long run?
 
-***
+\bigskip
 
 **Deeper:**
 
@@ -6096,7 +6240,7 @@ debates over 'industrial policy' and 'trust-busting', etc
 ***
 
 
-**Urgent question: Brexit**
+**Urgent question: Brexit**^[This seemed to be an urgent question in 2016 when I first wrote this section. It still seems to be an urgent question.]
 
 \bigskip
 
@@ -6114,7 +6258,7 @@ UK (and EU) firms: Unknown impact on input prices, demand curves, competition, e
 
 - Can 'GE models' help predict these and help firms plan and reoptimise?
 
-- How long will it take to return to some 'equilibrium'
+- How long will it take to return to some 'equilibrium'?
 
 
 \bigskip
@@ -6123,7 +6267,6 @@ UK (and EU) firms: Unknown impact on input prices, demand curves, competition, e
 - Fewer firms in UK markets $\rightarrow$ less competition $\rightarrow$ loss of consumer surplus?
 
 
-. .  .
 
 
 We will have to decide on many new regulations bundled with new trade deals:
@@ -6134,11 +6277,10 @@ We will have to decide on many new regulations bundled with new trade deals:
 
 
 
-## SKIP: Pricing in the very short run
+\textcolor{gray}{Skip the NS material on 'Pricing in the very short run'}
 
 ## SR supply
 
-\textcolor{gray}{You should have all seen this before in previous study, so we will go quickly}
 
 
 - Number of firms in the market is fixed: no entry/exit
@@ -6148,9 +6290,8 @@ We will have to decide on many new regulations bundled with new trade deals:
 - Market supply curve: sum of each firm’s supply curve
 
 
-***
 
-Recall (from earlier study): Under perfect competition each firm
+Under perfect competition each firm
 
 - must charge market price $P^*$
 - produces q so that $mc(q)=P^*$
@@ -6176,39 +6317,29 @@ This implies that its mc curve *is* its supply curve!
 - (except where $AVC(q)>P^*$ for all q; where it produces zero)
 
 
-*Note:*
-Where the minimum AVC exceeds P*, the firm has no way to produce profitably, so it will produce nothing.
-
-***
+\textcolor{gray}{Note: Where the minimum AVC exceeds P*, the firm has no way to produce profitably, so it will produce nothing.}
 
 
-For a further revision, this process is well mapped out in a step-by step Powerpoint you can download:
-
-
-\url{http://web.mnstate.edu/stutes/notes/mankiwjustpp/firms_competitive.ppt}
-
-\
-
-(start from beginning, this is specifically referred to beginning on about slide 20 'The Firm’s Long-Run Decision to Exit or Enter a Market'; use 'presentation mode')
-
-*Note*: \textcolor{gray}{slide 19 states 'The firm considers its sunk costs when deciding to exit, but ignores them when deciding whether to shut down.' This is not stated precisely. They are referring to those 'fixed costs' which must be incurred at regular intervals (e.g., a license fee every year)... from the pov of midyear, this years' license fee is sunk, but next year's is not.}
+For a further revision, this process is well mapped out in a step-by step Powerpoint you can download at\url{http://web.mnstate.edu/stutes/notes/mankiwjustpp/firms_competitive.ppt}^[Start from the beginning, this is specifically referred to beginning on about slide 20 'The Firm’s Long-Run Decision to Exit or Enter a Market'; use 'presentation mode'. However, note that slide 19 states 'the firm considers its sunk costs when deciding to exit, but ignores them when deciding whether to shut down.' This is not stated precisely. They are referring to those 'fixed costs' which must be incurred at regular intervals (e.g., a license fee every year)... from the pov of midyear, this years' license fee is sunk, but next year's is not.]
 
 
 ***
 
+**To get the market supply curve:**
 
-Sum each firm's supply curve  *horizontally*
+Sum each firm's supply curve *horizontally*.
 
-\bigskip
 
-(Rem: supply curve is relevant part of MC curve)
+(recalling that a price-taking firm's supply curve is the relevant part of its MC curve.)
+
+This is shown below:
 
 \includegraphics[height=2.7in]{picsfigs/srsupply.png}
 
 
 ## SR Price determination
 
-- Sum each firm's supply curve (part of MC curve) to get *market* supply curve
+- Sum each firm's supply curve (part of MC curve) to get the *market* supply curve
 - Sum individual demand curves to get *market* demand curve
 - At what point do these intersect?
     - At this price $P^*$ we have $Q_D(P^*)=Q_S(P^*)$
@@ -6222,28 +6353,22 @@ There is a sense in which this resembles game theoretic Nash equilibrium.
 This price leads firms to produce quantities such that they can sell all their output; they don't want to 'deviate' to producing more or less.
 Consumers can buy all they want to at this price; no incentive to 'deviate' by offering a producer more money to supply an extra unit.
 
-
 [comment]: <> (101EE)
 
 
 
-\bigskip
 
 - This price may be above *average* variable or even *average total* costs for many firms ($P^*>AC$)
 
     - They can make real *economic* profits! (But only in the short run.)
 
 
-
-
 To avoid confusion, recall that firms are producing where their *marginal* costs equal the market price. \
-MC are often assumed to *increase* as quantity increases; this means that only the cost of the *last* unit produced equals P*. \
-Previous units had marginal costs *below* P*. Thus *average* (variable) costs may be below P*
+MC are often assumed to *increase* as quantity increases; this means that only the cost of the *last* unit produced equals $P^*$. \
+Previous units had marginal costs *below* $P^*$. Thus *average* (variable) costs may be below $P^*$
 
 
 
-
-***
 
 ## Illustration of SR price determination
 
@@ -6263,38 +6388,43 @@ The price acts as a signal (leading to efficient choices):
 - to firms, telling them 'how much to produce'
 
 
-*Note:*
-Don't produce past the point where your marginal cost exceeds the price you can get in the market, \
-at the price where the market 'clears' $Q_d=Q_s$.
+It tells them: ''Don't produce past the point where your marginal cost exceeds the price you can get in the market.''
 
-- to consumers, how much to purchase
+At the price where the market 'clears' $Q_d=Q_s$.
+
+And a signal
+
+- to consumers, telling them 'how much to purchase'
     - and 'which consumers should obtain the units produced'?
 
 
-*Note:*
-By the definition of the market-clearing price P*, \
+\bigskip
+
+By the definition of the market-clearing price $P^*$, \
 consumers can buy all they desire at P*, \
-i.e., buy units until the last unit they buy gives them a marginal utility of P*.
+i.e., buy units until the last unit they buy gives them a marginal utility of $P^*$.
 
 
-*Note:*
-Adv, foreshadowing equilibrium efficiency: \
-This means that each consumer values the last unit they consume at the same amount \
-thus, we *never* have that the 'wrong' consumer obtains the good; \
-no further gains from 'exchange among consumers'. \
+\bigskip
+
+This foreshadows a result we will come to later, the efficiency of equilibrium outcomes (under given conditions).
+\
+The above result means that each consumer values the last unit they consume at the same amount. \
+Thus, we *never* have that the 'wrong' consumer obtains the good; \
+which implies there can be no further gains from 'exchange among consumers'. \
+
 If prices were too low (e.g., because of a price ceiling), $Q_d>Q_s$ \
- demand would have to be rationed, and consumers who valued the product more than other consumers might not get as much.
+demand would have to be rationed, and consumers who valued the product more than other consumers might not get as much.
 
-## Shifts in S and D curves
+## Shifts in S and D curves^[Note that much of this may be revision for many of you.]
 
-- Basically this should all be revision, but read it anyway. You are required to know this material.
 
 
 ## The Long run
 
 Here we assume 'free entry and exit' of firms, and a large number of firms have access to the same production process.
 
-Suppose *positive economic profits* in industry (for efficient producers)
+Suppose *positive economic profits* in an industry (for efficient producers)^[For a further revision, this process is well mapped out in a step-by step Powerpoint you can download: <https://www.dropbox.com/s/vyvao528job7q0q/fc.ppt?dl=0> (This is specifically referred to beginning on slide 39; use 'presentation mode')]
 
 - I.e., $P^*>AC(q)$ for some q
     - $\rightarrow$ Firms enter
@@ -6305,13 +6435,11 @@ Suppose *positive economic profits* in industry (for efficient producers)
     - i.e., until $P^*=AC(q)$ for the minimum AC q
 
 
-*Note:*
-Positive economic profits are sometimes called 'supernormal profits.' \
- Remember, economic profits are profits *after* subtracting the (opportunity) cost of capital, management, and other inputs
+\textcolor{gray}{Note that positive economic profits are sometimes called 'supernormal profits.' \
+ Remember, economic profits are profits *after* subtracting the (opportunity) cost of capital, management, and other inputs.}
 
-***
 
-- Now suppose *negative economic profits* in industry (for efficient producers)
+- Now suppose *negative economic profits* in an industry (for efficient producers)
 - I.e., $P^*<AC(q)$ for any q
     - $\rightarrow$ Firms exit
     - $\rightarrow$ Supply curve shifts inwards
@@ -6320,25 +6448,16 @@ Positive economic profits are sometimes called 'supernormal profits.' \
     - repeat until economic profit rises to zero
     - i.e., until $P^*=AC(q)$ for the minimum AC q
 
-***
 
-[comment]: <> (2024BB)
-For a further revision, this process is well mapped out in a step-by step Powerpoint you can download:
-
-<https://www.dropbox.com/s/vyvao528job7q0q/fc.ppt?dl=0>
-
-
-
-
-(This is specifically referred to beginning on slide 39; use 'presentation mode')
+\bigskip
 
 ***
-
-[comment]: <> (2024EE)
 
 **Long Run Equilibrium**
 
-- Firms choose output to max profit
+*In long run equilibrium:*
+
+- Firms choose output to maximize their profits
     - Profit max: $P^* = MC(q)$
 
 No firms in the market want to exit, and no firms out of the market want to enter
@@ -6348,34 +6467,36 @@ Zero economic profits:
 $P^* = AC(q)$
 
 
-***
-
 *Also:*
 
 With free entry and exit (and no limits on production)...
 
 
-all firms in the market must produce the quantity that *minimizes* their average cost,
+All firms in the market must produce the quantity that *minimizes* their average cost,
 
-and all must have the same average cost
+and all must have the same average cost.
 
 - I.e., $P* = min AC(q) = MC(q)$ for any firm in the market
 - I.e., the MC curve intersects the AC curve at its minimum point.
     - And this is the same average cost for all firms
 
-all firms (in) produce $q$ that *minimizes* their AC,  and all *same* average cost
+\bigskip
 
-Why?
+All firms (in the market) produce $q$ that *minimizes* their AC,  and for all firms this is the *same* average cost.
 
-Why $P* = min [AC(q)] = MC(q)$ ?
+*Why is this the case?*
 
-- No profit in equilibrium and firms produce at P=MC.
+Why is  $P* = min [AC(q)] = MC(q)$? Which implies...
 
-- Thus $P*=AC(q)=MC(q)$ for all firms in the market.
+- no profit in equilibrium and firms produce at P=MC.
+
+- and thus implies that  $P*=AC(q)=MC(q)$ for all firms in the market.
 
 
 
 \bigskip
+
+*Answer 'by contradiction':*
 
 - Suppose here that a firm were producing at a point *above* it's minimum AC,
     - i.e., if $AC(q)> min [AC(q)]$
@@ -6385,10 +6506,8 @@ Why $P* = min [AC(q)] = MC(q)$ ?
 - ... (and so would other firms, who'd be induced to enter)
 
 
-*Note:*
 We assume a large number of firms have access to this efficient technology. \
-As previously mentioned, entry shifts the supply curve out, equilibrium price falls, \
- until the point where $P^*=AC(q)$ for firms producing at this lowest AC point.
+As previously mentioned, entry shifts the supply curve out, equilibrium price falls, until the point where $P^*=AC(q)$ for firms producing at this lowest AC point.
 
 ## Long Run (LR) Supply
 
@@ -6398,15 +6517,15 @@ As previously mentioned, entry shifts the supply curve out, equilibrium price fa
 
 
 
-Avoid confusion: \
+To avoid confusion, note: \
 In the SR there are movements *along* this curve in response to price changes. \
 In the longer run, it does shift in response to price changes, as firms enter. \
 The LR supply curve, which we will now define, does *not* shift in response to price changes \
 But other things may cause it to shift, like changes in input costs
 
-***
+\bigskip
 
-**What will the LR supply curve look like?**
+**So what will the LR supply curve look like?**
 
 - If demand shifts out, do more enter and produce at the same efficient minimum AC?
     - Depends on whether entry and higher aggregate production *change* the firms' cost functions
@@ -6414,27 +6533,24 @@ But other things may cause it to shift, like changes in input costs
     - (Also, other potential 'externalities' between firms, consumers, e.g., network externalities)
 
 
-*Note:*
-DR opinion: For a variety of reasons, we shouldn't always expect the LR curve to be upward sloping. It might also be flat or downward sloping. Thus, if the demand curve for, e.g., microchips or personalised software shifts out, we may see that equilibrium price *declines* in the long run.
+DR opinion...^[For a variety of reasons, we shouldn't always expect the LR curve to be upward sloping. It might also be flat or downward sloping. Thus, if the demand curve for, e.g., microchips or personalised software shifts out, we may see that equilibrium price *declines* in the long run.]
 
 \bigskip
 
-*Relevant to impact of long run population and economic growth*
+*As alluded to in the introduction, this is relevant when we want to consider tje impact of long run population and economic growth*
 
-
-*Note:*
 Economic and population growth leads to increased demands for most products (especially natural resources and other primary products). The shape of the LR supply curve tells us whether real resource prices will increase rapidly over time. \
+
 The relative slope for different products tells us which prices will rise *relative* to prices for other goods. E.g., will housing become relatively more or less expensive?
 
-***
+<!---
+Todo: Motivation: Baumol effect
+-->
+
 
 ### LR Supply: Constant cost case
 
 \includegraphics[width=5in]{picsfigs/LR_constantcost.png}
-
-<!---
-12345
--->
 
 ***
 
@@ -6445,11 +6561,14 @@ The relative slope for different products tells us which prices will rise *relat
 
 
 
-*Note:*
-Initial market equilibrium: P1, Q1 \
-Increase in demand to D' $\rightarrow$ price to P2 in SR $\rightarrow$ firms produce at q2, profit $\rightarrow$ \
-Profit attracts new firms. $\rightarrow$ costs rise to the levels shown in (b). $\rightarrow$ \
-New equilibrium at P3, Q3.
+In the above diagram, we have:
+
+- Initial market equilibrium: P1, Q1 \
+
+- Increase in demand to D' $\rightarrow$ price to P2 in SR $\rightarrow$ firms produce at q2, profit $\rightarrow$ \
+
+- Profit attracts new firms. $\rightarrow$ costs rise to the levels shown in (b). $\rightarrow$ \
+- New equilibrium at P3, Q3.
 
 ***
 
@@ -6460,7 +6579,10 @@ New equilibrium at P3, Q3.
 
 \footnotesize{(Various estimates over the years, see text)}
 
-
+<!---
+*Note:*
+Todo: give more explanation of the above
+-->
 
 ## Consumer and producer surplus, efficiency
 
@@ -6471,24 +6593,17 @@ Consumer surplus (reprise)
 
 \bigskip
 
-Producer surplus (reprise)
+Producer surplus
 :     The extra value producers get for a good in excess of the opportunity costs they incur by producing it. What all producers would pay for the right to sell a good at its current market price.
 
 - The area between the supply curve and the market price
 
 
-*Note:*
 Basically producer surplus is profit + unavoidable costs. \
 In the SR you cannot shut down and avoid the fixed costs, whether or not you sell any units. \
 Since you are already incurring these, they don't count against the benefit you would get from selling at the market price.
 
-- In the LR, profits are zero, and all costs are variable, so producer surplus is zero
-
-
-
-
-Adv: When a firm owns a unique resource it can arguably make a LR profit called a 'Ricardian rent'.
-However this could be seen as the return to an asset which should be 'charged against' these profits.
+- In the LR, profits are zero, and all costs are variable, so producer surplus is zero^[Adv: When a firm owns a unique resource it can arguably make a LR profit called a 'Ricardian rent'. However this could be seen as the return to an asset which should be 'charged against' these profits.]
 
 ***
 
@@ -6547,6 +6662,8 @@ Additional potential applications: rail regulation, music copyright
 - 9.5?
 - 9.9 a-d?
 
+
+
 ## Important caveat
 
 \textcolor{blue}{Consider:} Should price-taking firms and perfect competition be our 'baseline' dominant model?
@@ -6564,7 +6681,7 @@ These conditions will indeed lead to perfect competition/MC pricing.
 
 But many markets have large entry costs, first-mover advantages, and perhaps continuously increasing returns to scale. This will lead to  monopoly or oligopoly in the absence of regulation.
 
-Perhaps even more crucially, Most products are also 'differentiated'; if one firm charges slightly more than another firm, it will still capture the demand from those people whose are 'close' to it. People will pay a little extra to not travel as far. They will also pay a little extra to get the product that most suits their preferences. In this case, with free entry, we have something known as  'monopolistic competition', which has some of the characteristics of monopoly (e.g., pricing above marginal cost) and some characteristics of perfect competition (e.g., zero long-run profits). This model is  another candidate for bring the dominant model; there is an active debate about this!
+Perhaps even more crucially, most products are also 'differentiated'; if one firm charges slightly more than another firm, it will still capture the demand from those people whose are 'close' to it. People will pay a little extra to not travel as far. They will also pay a little extra to get the product that most suits their preferences. In this case, with free entry, we have something known as  'monopolistic competition', which has some of the characteristics of monopoly (e.g., pricing above marginal cost) and some characteristics of perfect competition (e.g., zero long-run profits). This model is  another candidate for bring the dominant model; there is an active debate about this!
 
 
 \bigskip
@@ -6686,11 +6803,20 @@ The 'Edgeworth box' offers a graphical demonstration that this yields a Pareto o
 
 *Does this look familiar? Where can you find it at Exeter? What does it mean?*
 
-*Note:*
-Basic argument for exchange efficiency of competitive equilibrium:
-An equilibrium price ensures that they will trade these amongst one another until each has the same MRS
+
+\bigskip
+
+**A basic argument for exchange efficiency of competitive equilibrium:**
+
+An equilibrium price ensures that they will trade these amongst one another until each has the same MRS.
+
 The 'Edgeworth box' offers a graphical demonstration that this yields a Pareto optimum (given the amounts produced).
 
+[comment]: <> (2024BB)
+
+*Note:* You do not need to know how the Edgeworth box works; we do not have time to cover this.
+
+[comment]: <> (2024EE)
 
 ***
 
@@ -6703,13 +6829,11 @@ and given the amounts of each good produced, it is 'consumed by the right people
 
 yet we may still not be at efficiency? \textcolor{blue}{Why?}
 
-***
 
 
 \includegraphics[height=2.5in]{picsfigs/toplevelefficiency.png}
 
 
-***
 
 We need to produce the right *combination* of goods.
 
@@ -6728,6 +6852,11 @@ In equilibrium firms produce at a point where the cost tradeoffs between A and B
 
 
 ***
+
+
+<!--
+Todo: give more explanation here
+-->
 
 First fundamental theorem of welfare economics
 :     A general competitive equilibrium is Pareto efficient, under standard assumptions.
@@ -7494,7 +7623,7 @@ BEGINLEC9
      geometry: margin=0.7in
 ---
 
-# Lecture9: Monopolies and price discrimination [1-2 hours]
+# Lecture9: Monopolies and price discrimination [1-2 hours] {#monopolies-pd}
 
 - ns: 11.2-11.4
 - T1:07
@@ -7863,7 +7992,6 @@ It might be her age, nationality, student-status, or even perhaps her income.
 
 \bigskip
 
-*The opposite extreme is monopoly*
 
 Perfect price discrimination
 :     Charging each consumer (for each unit) the *maximum* he or she would be willing to pay, i.e., her valuation
@@ -11852,7 +11980,6 @@ See also  [Misweighting probabilities](http://lesswrong.com/lw/ml/but_theres_sti
 
 ***
 
-[comment]: <> (101EE)
 
 
 ### Additional relevant questions
