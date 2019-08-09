@@ -920,7 +920,9 @@ In the final chunk we extend the model to accommodate some important aspects of 
 
 \underline{Uncertainty (basic concepts, EU, risk aversion, investment choices) (NS ch. 4; supplements on finance)}
 
-We make many decisions without knowing exactly what the consequence of each choice will be. Economists typically model this using the "expected utility" framework. A warning: students often get this concept wrong, so be careful. Expected utility is not the same as 'expected monetary value'; and this allows EU to embody risk aversion.
+We make many decisions without knowing exactly what the consequence of each choice will be. Economists typically model this using the "expected utility" framework.
+
+\textcolor{red}{A warning}: students often get this concept wrong, so be careful. Expected utility is not the same as 'expected monetary value'; and this allows EU to embody risk aversion.
 
 
 \underline{Game theory; experimental evidence on this (NS ch. 5, supplements)}
@@ -3351,6 +3353,8 @@ This means you would be better off; thus the original bundle *wasn't* optimal.
 
 ### More insight: Skip if you like
 
+\textcolor{purple}{(Skipping...)}
+
 This next bit is fairly mathy.  It should be helpful but you can skip over it if you don't find it so.
 
 [comment]: <> (2024EE)
@@ -3549,7 +3553,7 @@ An easy example:  I might always be indifferent between three pints of mild ale 
 
 So (for perfect substitutes) buy the one that increases it more *per-\pounds.*
 
-\textcolor{red}{Warning:} On the other hand, if goods are *not* perfect substitutes, margunal utility ratios (thus,  marginal rates of substitution) generally depend on consumption levels.
+\textcolor{red}{Warning:} On the other hand, if goods are *not* perfect substitutes, marginal utility ratios (thus,  marginal rates of substitution) generally depend on consumption levels.
 
 
 \bigskip
@@ -4698,7 +4702,7 @@ This will almost surely be on one of the exams in some form, see e.g., micro qui
 
 [comment]: <> (2024EE)
 
-## Consumer surplus
+## Consumer surplus {#cs}
 
 Consumer surplus
 :     The extra value individuals receive from consuming a good over what they pay for it.
@@ -6032,16 +6036,15 @@ Each firm:
 \textcolor{gray}{Note that for such a firm, the total revenue curve will be a straight line ... double quantity, double revenue}
 
 
-***
 
 
-## Profit-maximisation
+## Profit-maximisation {#profit-max}
 
 - If operating, set optimal output $q^*$
 - Under standard assumed conditions
 
 
-\textcolor{RawSienna}{Advanced footnote}^[ There are specific conditions for the existence of a 'unique maximum-profit quantity'. E.g., this will be ensured by everywher- decreasing marginal revenue and increasing or nondecreasing marginal costs]
+\textcolor{RawSienna}{Advanced footnote}^[ There are specific conditions for the existence of a 'unique maximum-profit quantity'. E.g., this will be ensured by everywhere- decreasing marginal revenue and increasing or nondecreasing marginal costs]
 
 - ... profits are maximised at the unique $q^*$ such that $MR=MC$
 
@@ -6063,8 +6066,9 @@ Firm can do better if it reduces q somewhat-- cost decrease will be larger than 
  If $q<q^{\ast}$, $MR<MC$ -- better to increase q and revenue increases more than costs]
 
 
-**Consider a firm with market power:**
+**Consider a firm with market power, a 'price-setter':**
 
+Suppose a firm can choose the price it wants to set, and faces the market demand curve.
 
 The firm wants to maximise profit. This means making the vertical distance between the revenue and cost curves as large as possible. \
 If the curves had differing slopes, profits could be increased by adjusting output in the direction in which the curves diverged.
@@ -6082,6 +6086,8 @@ If the curves had differing slopes, profits could be increased by adjusting outp
 $$MR(q) = P$$
 
 \includegraphics[width=5.5cm]{picsfigs/mcmr_tc_tr.png}
+
+*Intuition:* this is given in more detail, and with more intuition, when we cover the [monopoly's profit maximization](monop-profit-max). The logic is identical.
 
 <!---
 \includegraphics[width=2in]{picsfigs/pctcctr.png}
@@ -6363,7 +6369,7 @@ Consumers can buy all they want to at this price; no incentive to 'deviate' by o
     - They can make real *economic* profits! (But only in the short run.)
 
 
-To avoid confusion, recall that firms are producing where their *marginal* costs equal the market price. \
+\textcolor{green}{To avoid confusion}, recall that firms are producing where their *marginal* costs equal the market price. \
 MC are often assumed to *increase* as quantity increases; this means that only the cost of the *last* unit produced equals $P^*$. \
 Previous units had marginal costs *below* $P^*$. Thus *average* (variable) costs may be below $P^*$
 
@@ -6516,8 +6522,7 @@ As previously mentioned, entry shifts the supply curve out, equilibrium price fa
 - Taking this shift into account gives us the *Long Run Supply Curve*
 
 
-
-To avoid confusion, note: \
+\textcolor{green}{To avoid confusion}, note: \
 In the SR there are movements *along* this curve in response to price changes. \
 In the longer run, it does shift in response to price changes, as firms enter. \
 The LR supply curve, which we will now define, does *not* shift in response to price changes \
@@ -6584,9 +6589,9 @@ In the above diagram, we have:
 Todo: give more explanation of the above
 -->
 
-## Consumer and producer surplus, efficiency
+## Consumer and producer surplus, efficiency {#cs-ps-efficiency}
 
-Consumer surplus (reprise)
+Consumer surplus (repeating the definition [above](cs])
 :     The extra value individuals receive from consuming a good over what they pay for it. What people would be willing to pay for the right to consume a good at its current price.
 
 - The area between the demand curve and the market price
@@ -6782,10 +6787,10 @@ Given what we're producing, it is going to the 'right consumers'.
 
 \end{centering}
 
-*Note--* Basic argument for productive efficiency of competitive equilibrium:
+*Basic argument for productive efficiency of competitive equilibrium:*
+
 If, given the 'endowments', one person values A in units B more than someone else,
-an equilibrium price ensures that they will trade these amongst one another until each has the same MRS
-The 'Edgeworth box' offers a graphical demonstration that this yields a Pareto optimum (given the amounts produced).
+an equilibrium price ensures that they will trade these amongst one another until each has the same MRS^[ The 'Edgeworth box' offers a graphical demonstration that this yields a Pareto optimum (given the amounts produced).]
 
 ***
 
@@ -6982,13 +6987,15 @@ Issues with volunteer supply
 [comment]: <> (101EE)
 
 
+
 ## Some key things for midterm (recap)
 
 - How do economists measure and test models,
     - techniques and terms used
     - thoughts on estimating demand and supply curves
 
-. . .
+
+- What are some types of economic data? What is 'econometrics'? What is 'micro-data'? What are some ways data/statistics/econometrics are used in Economics?
 
 [comment]: <> (101BB)
 
@@ -7001,7 +7008,6 @@ What is the use and interpretation of 'economic theory  and models', how are the
 <!---
 - Note that economists define 'surplus' as excess supply at the prevailing (or enforced) price and 'shortage' as excess demand at the prevailing (or enforced) price
 -->
-
 
 
 \bigskip
@@ -7020,13 +7026,7 @@ Revealed preference, tests for ciolations of transitivity
 [comment]: <> (101EE)
 
 
-***
-
 - Understand indifference curves and budget constraints well
-
-
-. . .
-
 
 - Conditions for consumer optimisation (obviously this is important) including for when a consumer will choose to consume none of a good
 
@@ -7039,8 +7039,6 @@ Revealed preference, tests for ciolations of transitivity
 
 \bigskip
 
-
-. . .
 
 - Definitions of 'types of goods' as implied by characteristics of the demand function
 
@@ -7055,8 +7053,6 @@ Revealed preference, tests for ciolations of transitivity
 
 - (Producer and) consumer surplus.
 
-
-. . .
 
 \bigskip
 
@@ -7081,14 +7077,10 @@ Revealed preference, tests for ciolations of transitivity
 [comment]: <> (101EE)
 
 
-. . .
-
 \bigskip
 
 - Perfect competition in the LR and the SR, what profits look like, how prices move.
 
-
-. . .
 
 
 - Very basic idea of the efficiency of general equilibrium under perfect competition
@@ -7102,7 +7094,7 @@ Revealed preference, tests for ciolations of transitivity
 
 [comment]: <> (2024BB)
 
-## Note: we are skipping 'Market Failures: Asymmetric Information'; this is not covered in this module
+\textcolor{purple}{(Skipping...)} *Note: we are skipping from NS 'Market Failures: Asymmetric Information'; this is not covered in this module*
 
 [comment]: <> (2024EE)
 
@@ -7121,7 +7113,7 @@ BEGINLEC8
      geometry: margin=0.7in
 ---
 
-# Lecture8: Market failure (One case: Public goods) [1 hour]
+# Lecture8: Market failure (One case of market failure: Public goods) [1 hour]
 
 ## Market failures - public goods, coverage
 
@@ -7195,8 +7187,9 @@ What are the characteristics of a public good?
 
 \bigskip
 
-Opposite (and alt definition)
-*Exclusive goods*: ... a good is exclusive if it is relatively easy to bar people from benefitting from it once it has been produced
+In contrast...
+
+*Exclusive goods*: ... a good is exclusive if it is relatively easy to bar people from benefiting from it once it has been produced
 
 
 \bigskip
@@ -7215,17 +7208,12 @@ Alt (equivalent def):
 -  Consumption of additional units of the good involves zero marginal social cost of production. (E.g., if we had produced a film but restricted it to subscribers, the marginal social cost of letting the whole world download it is essentially zero; the exclusion would take us away from the 'utility frontier')
 
 
+\textcolor{blue}{Q: think of some examples.}
 
 
+\textcolor{red}{Be careful to consider:}
 
-Q: think of some examples.
-
-
-*Note:*
-In market economies, private suppliers provide the majority of goods and services to consumers. However, certain goods are publicly provided. These include for example defense, education, and health. Why does the government instead of the market provide these goods?  Which characteristics differentiate goods that are privately provided from goods that are publicly provided? How do we define public goods?
-The terminology might induce the conclusion that 'public goods are good that are publicly provided as opposed to private goods which are privately provided.' This conclusion is simply WRONG! The public or private nature of the good is an intrinsic characteristic of goods that is not related to the provider of the good
-Hence, it may well be that the state provides a private good or that the market provides a public good.
-
+>In market economies, private suppliers provide the majority of goods and services to consumers. However, certain goods are publicly provided. These include for example defense, education, and health. Why does the government instead of the market provide these goods?  Which characteristics differentiate goods that are privately provided from goods that are publicly provided? How do we define public goods? The terminology might induce the conclusion that 'public goods are good that are publicly provided as opposed to private goods which are privately provided.' This conclusion is simply WRONG! The public or private nature of the good is an intrinsic characteristic of goods that is not related to the provider of the good Hence, it may well be that the state provides a private good or that the market provides a public good.^[reference to quote needed]
 
 \includegraphics[height=2.5in]{picsfigs/pubgoodspic.png}
 
@@ -7261,9 +7249,8 @@ Excludable and rival (depleatable)? $\rightarrow$ *Private good*
 
 \includegraphics[height=2.5in]{picsfigs/rivalexcludabletable.png}
 
-***
 
-**What about?**
+**What about?**^[Common mcq exam question ... 'Consider the following five items... Which of the above items are most reasonably considered public goods?]
 
 - Recorded music
 - “Information” goods (e.g., software)
@@ -7284,28 +7271,26 @@ Excludable and rival (depleatable)? $\rightarrow$ *Private good*
 
 **The basic idea**
 
+Both non-excludability and non-rivalry present obstacles to a good being provided efficiently.
+
 If a good is *non-rival* then additional provision is costless.
 Thus,
 
-- if exclusion is possible, and *any* positive price is charged, some are deterred from consuming it
-- this is inefficient: people who could benefit from the good, at no cost to others, will not consume it :(
+- if exclusion is possible, and *any* positive price is charged, some are deterred from consuming it.
 
-If a good is *non-excludable* it will be difficult to charge people for it
+- This is inefficient: people who could benefit from the good, at no cost to others, will not consume it :(.
 
-- many might prefer to wait for *others* to buy it, and then they enjoy it anyways (free-ride), which could lead to coordination problems
+If a good is *non-excludable* it will be difficult to charge people for it.
 
+- Many might prefer to wait for *others* to buy it, and then enjoy it anyways (free-ride), which could lead to coordination problems.
 
-and...
-
-\bigskip
-
-
-Even if each person provided it for their *own* benefit (on the assumption that no one else would), they would typically choose *too little* from a social POV...
 
 
 \bigskip
 
-Considering their own marginal benefits (and MRS) versus the price or cost, not the *social* marginal benefit (essentially, a positive externality)
+
+And even if each person provided it for their *own* benefit (on the assumption that no one else would), they would typically choose *too little* from a social point of view,
+considering their own marginal benefits (and MRS) versus the price or cost, not the *social* marginal benefit (essentially, a positive externality).
 
 
 
@@ -7318,35 +7303,52 @@ But if firms cannot charge for its full value, they might not pay the fixed cost
 - Who would pay to develop a drug that must be priced at its marginal cost?
 - Why contribute to police protection for your village, if your neighbours will pay for it anyways?
 
+\textcolor{gray}{Loosely, 'rivalryness' basically relates to whether market provision will be *efficient*; 'excludability' tells you whether firms can make *some revenue* from providing it, selling the same prooduced good to more than one person (or to a 'club' of people).}
 
-*Note:* Loosely, 'rivalryness' basically relates to whether market provision will be *efficient*; 'excludability' tells you whether firms can make *some revenue* from providing it, selling the same prooduced good to more than one person (or to a 'club' of people)
-
-***
 
 ### Application: drug development
 
-*Drug R\&D may be a public good, or a common resource*
+*Drug research and development (R\&D) may be a public good, or a common resource*.
 
-- Expensive to develop and introduce a new drug -- 'sunk costs' once developed
-- But cheap to copy and produce; without patent protection may have $P=mc$ and no ex-post profit to compensate for sunk costs
-    - $\rightarrow$ No incentive to develop drugs without patent protection guaranteeing 'excludability' and a limited monopoly
-- But ex-post, patent protection is costly; drug produced for a few pennies sold for £1000's
-    - People may not buy, or NHS may not cover
-    - $\rightarrow$ Inefficient: some consumers may value drug at £100's, far above MC, yet they don't consume it
-- Possible solution: Government *awards* and subsidies for drug development.
+It is expensive to develop and introduce a new drug -- these are  'sunk costs' once the drug has been developed.
+
+*However* it is usually cheap to copy and produce a drug.
+
+Without patent protection we may have a situation where prices are driven down to marginal costs ($P=mc$) and this means no ex-post profit to compensate for sunk costs!
 
 
-*Note:* In fact, governments do fund and subsidise R\&D. But there are difficulties here too. Governments may free-ride off of other governments. It is also for government to know whom to fund, hard to quantify the benefits to potential drugs, and offering 'prizes' to developers offers its own challenges: how to asses if the drug is good enough to deserve the prize? And too many firms working on the same drug may be wasteful.
+$\rightarrow$ No incentive to develop drugs without patent protection guaranteeing 'excludability' and a limited monopoly.
+
+(Patent protection turns the drug R\&D into an excludable good, aka a 'club good' ... but is this a good thing??)
+
+But ex-post, patent protection is costly; a drug produced for a few pennies may be sold for £1000's.
+
+<!--
+Todo: Add picture of smarmy guy who raised cost of Aids drug
+-->
+
+
+This will imply that people may not buy such a drug, or the NHS (or a country's health system) may not cover it, or an NGO may not be able to afford to provide it.
+
+$\rightarrow$ *This is inefficient:* some consumers may value drug at £100's, far above it's marginal cost of production, yet they don't consume it.
+
+\bigskip
+
+There are a number of possible solutions. E.g., a  government (or an international organisation) may give *awards* and subsidies for drug development.^[In fact, governments do fund and subsidise medical R\&D. But there are difficulties here too. Governments may free-ride off of other governments. It is also for government to know whom to fund, hard to quantify the benefits to potential drugs, and offering 'prizes' to developers offers its own challenges: how to asses if the drug is good enough to deserve the prize? And too many firms working on the same drug may be wasteful.]
+
+
+<!---
+Todo: Link recent papers/proposals on this
+-->
+
+
 
 \medskip
 
 
 ## Public Goods and Market Failure
 
-The First Welfare Theorem's assumptions/conditions do not apply to public goods. Markets do not yield a Pareto Optimal outcome.
-
-
-*Note:* The market will not produce where the consumers' MRS equals the rate at which public and private goods 'trade off in production'.  More of the public good could be produced by sacrificing some of the private good, and consumers will be better off.
+The First Welfare Theorem's assumptions/conditions do not apply to public goods. Markets and free exchange will not yield a Pareto Optimal outcome (except in very special unusual cases.)^[There is some intuition for this, in the context of general equilibrium and welfare. The market will not produce where the consumers' MRS equals the rate at which public and private goods 'trade off in production'.  As a result more of the public good could be produced by sacrificing some of the private good, and consumers will be better off.]
 \
 
 - Non-excludability $\rightarrow$  no price or suboptimal price $\rightarrow$ firms don't get the correct signals for production
@@ -7356,40 +7358,63 @@ The First Welfare Theorem's assumptions/conditions do not apply to public goods.
 
 ### Social benefit of a private good vs a public good
 
-- Overall value of a private good: (area under the) "horizontal sum" of individual marginal benefit curves
+Recall, the overall value of a private good is the \undederline{(area under the) "horizontal sum" of individual marginal benefit curves.}
 
-- For public goods the aggregate value "sums vertically"
+*However*, for public goods the aggregate value, the 'social marginal benefit of a public good,' "sums vertically"
 
 - Social margin benefit of PG sums *vertically*
 
+
+*Why?* Because, for a public good, 'everyone benefits from the first unit,' 'everyone benefits from the second unit', etc.
+
+
+<!---
+Todo: Link youtube here?
+-->
+
+\includegraphics[height=2.7in]{picsfigs/pgprovision1.png}
+
+
+\bigskip
+
+*Consider a graphical example with two individuals (or 'consumers')...*^[We can imagine that there are only two people in the relevant economy. Obviously this is unrealistic, but the insights carry over (remember Aesop's Tortoise and the Hare). Alternatively, we can imagine a 'local public good', that is only nonexcludable or nonrival amont two people, perhaps two flatmates.]
+
+Consider the above diagram. This diagram gives both individual A ("Al") and individual B (Betty's) marginal benefit of each unit of some public good (maybe the good is 'hours spent cleaning a shared flat). These are given by the $MB_B(Q)$ and $MB_A(Q) curves$.  In this example we assume a diminishing marginal benefit (for each individual) and an increasing marginal cost.
+
+Notice that even if this good or service is priced as low as it could reasonable be (i.e., at $p=m$c), neither Al nor Betty will pay for it alone. His/her individual costs exceed the benefit, even for that first unit, where the marginal benefits are highest and the cost lowest.^[Rather than the continuous example of 'hours of cleaning' we can consider a discrete service; we come to this later. Suppose two 'flatmates' are  deciding whether to have the house cleaned. Neither flatmate will pay £80 to have the house cleaned, even though it is worth £60 to each flatmate to have the house cleaned!]
+\
+
+\textcolor{green}{To avoid confusion}, note that we are talking about marginal cost as the cost of providing a unit of the public good 'to everyone'. \
+E.g., thinking about the more general public good. one new movie produced, or one brilliant firework displayed to the whole city.
+Once this good is produced, all benefit, i.e., the cost of letting additional people enjoy it is *zero*.
+
+
 ***
 
-\includegraphics[height=3.7in]{picsfigs/pgprovision1.png}
+Now consider another case described in the diagram below.
+
+\textcolor{blue}{Q: What happens here?} (Think about it for a moment before continuing).
+
+\includegraphics[height=2.7in]{picsfigs/pgprovision2.png}
+
+\bigskip
+
+\textcolor{brown}{Answer}: In this case it is reasonable to imagine that Betty (who has a higher valuation than Al for each unit) would purchase "$q$" units of this public good if it were priced at marginal cost.^[It would also be reasonable for her to assume that Al will purchase no units of the public good, and thus the amount she provides represents the total amount provided. However, we can't give a formal explanation for why this is a 'reasonable belief' until we get to Game Theory later in the module.]  However, she will still purchase less than the *socially optimal* amount, $Q^*$.
+
+So this case illustrates that even though a public good may be provided to some extent under free exchange, it will, in a general sense, be underprovided.^[In a problem set I've sometimes given a fairly challenging case in which it *is* optimally provided, but this is because it essentially becomes a private good in the relevant range. See my Youtube video (todo: link)]\
 
 
-*Note:* Even at p=mc, neither consumer will pay for it alone.  Neither flatmate will pay £80 to have the house cleaned, even though it is worth £60 to each flatmate.
-\
-
-*Note:* To avoid confusion, note that we are talking about marginal cost as the cost of providing a unit of the public good 'to everyone' \
-E.g., one new movie produced, or one firework displayed to the whole city.
-Once produced, all benefit, i.e., the cost of letting additional people enjoy it is *zero*.
+***
 
 
-\includegraphics[height=3.7in]{picsfigs/pgprovision2.png}
-
-\textcolor{blue}{Q: What happens here?}
-\
-Ans: The individual with the higher valuation purchases q of this public good if it is priced at marginal cost. \
-
-However, he will still purchase less than the *socially optimal* amount, $Q^*$
-
-\
-
-
-With a binary choice (provide or don't) it is a Prisoner's Dilemma:
+With a binary choice (provide or don't provide the public good), this problem becomes what we will later call a Prisoner's Dilemma:
 
 \includegraphics[height=3.6in]{picsfigs/cleaningmatrix.png}
 
+
+<!---
+Todo: give more explanation here!
+-->
 
 <!---
 
@@ -7397,19 +7422,18 @@ Algebraic example of PG underprovision here?
 
 -->
 
-
-## Solutions to the Public Goods Problem
-
-(you can skip the Lindahl equilibrium discussion)
-
+***
 
 
 ## Food for thought, discussion
 
-1. What is a public good? What do we call a good with only 1 of these 2 necessary properties?
+1. What is a public good? What do we call a good with only 1 of these 2 necessary properties?^[Example MCQ ... choose all that are correct... 'Considering the provision of public goods:
+- democratic vote can always accurately measure people's preferences for the amount and type of public goods
+-  Public goods will be efficiently provided by the free market under perfect competition
+-  Individuals may voluntarily purchase public goods if their private benefits of these are high enough
+-  In general, an individual's optimal choice of the amount of public good to  provide does not depend on the amount others choose. ]
 
-2. Why does the free market *underprovide* these? Why/when do they provide some amount?
-
+2. Why does the free market *under-provide* these? Why/when do they provide some amount?
 
 
 1. What is an example of a public good, perhaps one from your own life that we didn't already mention
@@ -7417,24 +7441,24 @@ Algebraic example of PG underprovision here?
 
 2. What are some things you think may lead to more *voluntary* provision of public goods?
 
-
 ***
+
+
+## Solutions to the Public Goods Problem
+
+\textcolor{purple}{(Skipping...)} (You may skip the Lindahl equilibrium discussion in the NS text)
+
 
 ### Government's role
 
-- Pure public goods are not provided optimally by the free market, i.e., voluntarily
+Pure public goods are (except in very special/lucky cases) not provided optimally by the free market (i.e., voluntarily)
 
+\textcolor{gray}{However, people do contribute to public goods (e.g., we make charitable donations) for various reasons.}
 
-*Note:* except in really special and lucky cases
+$\rightarrow$  The underprovision of public goods under free exchange is a justification for government: to enforce contributions to public goods, and through this potentially make everyone better off.^[\textcolor{RawSienna}{Adv: Allowing heterogeneous tastes, this may achieve a “potential Pareto improvement”; those who benefit could compensate those who are harmed and still all would be better off.}]
 
-- (although people do contribute to public goods, e.g., making charitable donations, for various reasons)
-
-This is a justification for government: to enforce contributions to public goods, and make everyone better off
-
-
-\textcolor{RawSienna}{Adv: or, allowing heterogeneous tastes, achieve a “potential Pareto improvement”; those who benefit could compensate those who are harmed and still all would be better off.}
-
-- **But** it's hard to determine tastes for the public good, hence difficult to determine the optimal level!
+\bigskip
+**But** it's hard to determine tastes for the public good, hence difficult to determine the optimal level!
 
 
 ## Revealing the Demand for Public Goods (brief)
@@ -7444,29 +7468,39 @@ Suppose some people like fireworks, and some don't. How many should the town pay
 i. Ask everyone to state the number of fireworks they want, and we choose the average and split costs evenly?
 
 
-Q: would this work?
+\textcolor{blue}{Q: would this 'work'?}
 \
 
 - $\rightarrow$ Fireworks-lovers may overstate their value to skew the average.
 
+\bigskip
 
-ii. Ask everyone to state number they want; choose average; those who stated more pay more?
+ii. Instead, we might ask everyone to state number they want; choose average; those who stated more pay more? \textcolor{blue}{Would this 'work'?}
 
-- $\rightarrow$ Many people understate their value to avoid having to pay. Doh!
+- $\rightarrow$ In this case, many people may understate their value to avoid having to pay. Doh!
 
 \bigskip
 
-*Difficult or impossible to find a 'mechanism' that leads to 'truth-telling'.*
+*It is difficult or impossible to find a 'mechanism' that leads to 'truth-telling'.*
 
-- Direct voting on each proposal also may not lead to the optimal choice
 
 ***
 
+\underline{Direct voting on each proposal also may not lead to the optimal choice}
+
+The following classic example illustrates
+
 ### Voting paradox example
 
+Imagine that the preferences of (each member) of the Green, Labour, and Conservative parties are as follows...
+
 Green party: Green Park $\succ$ Public housing $\succ$ Private housing \
+\
+
 
 Labour: Public housing $\succ$ Private Housing $\succ$ Green Park \
+
+
 
 Conservatives: Private Housing $\succ$ Green Park $\succ$ Public housing \
 
@@ -7478,7 +7512,7 @@ Suppose we have a local council with one member of each party (representing equa
 
 \bigskip
 
-- Which proposal would win if they voted on:
+- Which proposal would win if they voted on:^[We will 'try this' in lecture. Those who have read ahead please don't give it away.]
     - a Green park versus Public housing?
     - a Green Park versus Private housing?
     - Private housing versus Public housing?
@@ -7493,24 +7527,33 @@ Suppose we have a local council with one member of each party (representing equa
 
 No, not here.
 
-***
 
 ## Lab evidence on *voluntary* provision of Public Goods
 
- Typical “Public Goods Experiment”
+One way Economists aim to 'test' models and their predictions is through 'laboratory experiments'. There is some disagreement over how we should interpret the results of these experiments and what in particular they tell us about the 'real world.'
 
-- Four undergraduates  seated at a table. Each given an 'endowment' of \$5.
-- Told that each can choose to invest some or all of it in a 'group project.'
+
+Here is a typical setup of what is often called a “Public Goods Experiment”:
+
+- Four undergraduates are seated at a table. Each is given an 'endowment' of \$5.^[The most common 'subject pool' for these experiments, e.g., at Exeter's Feele lab, are undergraduate students. The stakes are usually fairly low, although perhaps more of the order of £10 for a typical experiment today.]
+
+- They are told that each can choose to invest some or all of it in a 'group project.'^[Calling it an 'investment' is one 'frame' for this. Another is the 'contribution frame.' There is evidence that the language used, part of the 'frame',  leads to distinct behaviour, even where the incentives and all else are identical.]
 
 \
 \bigskip
 
-- Each simultaneously puts an amount between \$0 and \$5 in envelope. (Or via computer terminals).
+- Each simultaneously puts an amount between \$0 and \$5 in envelope. (Or via computer terminals).^[Usually these choices are made anonymously.]
 
-- Experimenter collects the “contributions” and doubles the total, divides this equally among the group.
+- Experimenter collects the 'investments' (or 'contributions') doubles the total,^[The 'return rate' varies across experiments] and divides this equally among the group.
 
-- The private benefit from this “public good” = one half of total contributions.
-    - (But I only get back *half* of my own contribution)
+\textcolor{gray}{Before reading further, consider: what would you choose to contribute/invest? What do you think other people would typically do?}
+
+\bigskip
+
+- Notice that the private benefit from this “public good” = one half of total contributions
+    - But I only get back *half* of my own contribution (We call this a 'marginal per capita return' of \frac{1}{2}.)\textcolor{gray}{Check this: consider how much more do I would get in total when I contribute another dollar?
+
+\bigskip
 
 ***
 
@@ -7520,30 +7563,29 @@ No, not here.
 - Contributions decline with repetition, but not to zero
 - Face to face communication improves the rate of contribution
 
+More recent evidence suggests that this decline seems to be related to issues of reciprocity, fairness and conditional cooperation.^[This point is perhaps most famously discussed by Elinor Ostrom, the winner of a  Nobel award in the Economic sciences. Several When conditional cooperators are separated (or can self-segregate) a higher level of cooperation is maintained. However, there is also evidence of a general decline in contributions over time, across 'randomly realised stages', in experiments where cooperation is not relevant, e.g., experiments where people are simply making donations to other participants or to a charity.]  People seem to care about things other than simply 'monetary payoffs'. We may thus want to specify and consider payoffs (and utility functions) more broadly; we discuss this under ['Behavioral Economics'](#behavioral)  later in the module, particularly when we consider [other-regarding preferences](#other-regarding preferences).
 
-
-Adv: More recent evidence finds that this decline seems to be related to issues of reciprocity, fairness and conditional cooperation. \
-When conditional cooperators are separated (or can self segregate) a higher level of cooperation is maintained.
-
-
-NOTE
-Skipping discussion of externalities for time constraints and previous coverage
+\textcolor{purple}{(Skipping...)} *Note: we are not covering the material on 'externalities' in the NS text*
 
 ## Today I learned ('TIL')
 
 
 - What is a pure public good (nonrival, nonexcludable), some examples, variations
-- Why do markets fail to provide these optimally; private versus social marginal benefit
+
+- Why do markets fail to provide these optimally?; private versus social marginal benefit^[Example essay question from a previous final: 'What level of public goods are likely to be provided in the absence of government intervention? Will this be an efficient amount?  Explain your answer using economic theory.]
+
 - Obstacles to government's optimal provision (how do we know how much to provide?)
-- General patterns on 'public goods provision in laboratory Economics experiments'
+
+- General patterns on 'public goods provision in laboratory Economics experiments'^[Example final question (one part of a multi-part question): "Describe the overall evidence on how subjects play in either laboratory `Prisoner's dilemma' experiments or `Public goods' experiments." ... You may want to read more into this to have something interesting to say if this comes up on the final assessment.]
+
+## Suggested practice problems: see tutorial
 
 
-## Suggested practice problems from Nicholson and Snyder Chapter 16 (12th ed)
-
+<!---
 - 16.7 all parts
 - 16.8 parts a and b
 - 16.9 parts a-c
-
+-->
 
 [comment]: <> (101BB)
 
@@ -7556,7 +7598,6 @@ Skipping discussion of externalities for time constraints and previous coverage
 - Vesterlund, Lise. "Using Experimental Methods to Understand Why and How We Give to Charity." The Handbook of Experimental Economics (2013).
 - Varian, Hal R. "Buying, sharing and renting information goods." The Journal of Industrial Economics 48.4 (2000): 473-488.
 
-***
 
 ### Public Goods games ... understand
 
@@ -7567,7 +7608,6 @@ Skipping discussion of externalities for time constraints and previous coverage
 - Some things repeatedly found to increase contributions in VCMs
 - Relation to field evidence
 
-***
 
 
 ## Alternate focus: charitable giving, supplementary survey and handbook articles
@@ -7576,7 +7616,7 @@ Skipping discussion of externalities for time constraints and previous coverage
 
 \url{see innovationsinfundraising.org}
 
-# urvey and handbook articles
+# Survey and handbook articles
 
 Andreoni and Payne  (2013). Chapter 1 “Charitable Giving” in Auerbach, Alan J., et al., eds. Handbook of public economics. Vol. 5. Newnes, 2013.
 
@@ -7623,6 +7663,7 @@ BEGINLEC9
      geometry: margin=0.7in
 ---
 
+
 # Lecture9: Monopolies and price discrimination [1-2 hours] {#monopolies-pd}
 
 - ns: 11.2-11.4
@@ -7633,19 +7674,17 @@ BEGINLEC9
 - Price discrimination: first coverage; types of pd
 - Article: [Should we help companies tailor prices to your wage packet?](https://theconversation.com/should-we-help-companies-tailor-prices-to-your-wage-packet-47719)
 - With accompanying [worked examples](https://docs.google.com/document/d/16jos_PT9w1wGpyD5A8ZiWJ9HW6kaLOJH6EWc_AYWnkk/pub)
-- More advanced: 'The Government May Want to Encourage Price Discrimination by Income' [Linked here](https://davidreinstein.wordpress.com/research-and-publications/)
+- More advanced: 'The Government May Want to Encourage Price Discrimination by Income' ---  [Linked here](https://davidreinstein.wordpress.com/research-and-publications/)
 
 - \textcolor{blue}{Sixth problem set: Monopolies and price discrimination}
 
-***
 
 ### Price discrimination in the media
 
 Moneybox - \url{https://itunes.apple.com/us/podcast/money-box/id263570678?mt=2&i=1000379397237} -- many mis-statements; can you identify them?
 
-***
 
-### Lecture goals
+### Goals of this chunk
 
 1. What are monopolies and what are barriers to entry?
 2. How do monopolies choose prices and quantities?
@@ -7660,21 +7699,21 @@ Moneybox - \url{https://itunes.apple.com/us/podcast/money-box/id263570678?mt=2&i
 ***
 
 
-*Rem*: perfect competition
+*Rem*: Under perfect competition we had...
 
 - free entry and exit
     - $\rightarrow$ zero long-run economic profit
 - many many tiny firms
     - $\rightarrow$ firms are price takers
 - $\rightarrow$ p=mc
-    - And in the long run $p=ATC$ and firms produce at $min(AC)$
+    - and in the long run $p=ATC$ and firms produce at $min(AC)$
 
 
 \bigskip
 
 \
 
-*these are extreme assumptions; perhaps only a theoretical ideal*
+*These are extreme assumptions; perhaps they only represent a theoretical ideal... the market 'at its best'.*
 
 \
 
@@ -7682,58 +7721,114 @@ Moneybox - \url{https://itunes.apple.com/us/podcast/money-box/id263570678?mt=2&i
 \bigskip
 
 
-- (Firms with market power might set $p>mc$)
+In general, firms with market power might set $p>mc$.
 
 ***
 
-Opposite extreme: *monopoly*
+At the opposite extreme, we have the  **Monopoly**
 
-- A single firm
-- Barriers to entry $\rightarrow$ No threat of entry
-- Can choose price, which becomes the 'market price'
+\underline{A monopoly is}
 
-    - Still, the more it charges the fewer units demanded
+*A single firm.*
 
-    - Chooses a price (or quantity) where MR=MC (like all firms do)
+There are \underline{barriers to entry} $\rightarrow$ no threat of entry from other firms^[Economists have debated the extent to which the *threat of entry*, or a 'competitive fringe', might constrain a firm's behavior even if it is the only firm currently in the market.]
 
-    - Produces 'less than socially optimal quantity' in order to charge a high price and increase its profit
+\bigskip
 
-## Barriers to entry
+The monopoly firm ...
 
+Can choose the price it wants to charge, which becomes the 'market price'
+
+- Of course this doesn't mean it charges an 'infinitely high price.' The more it charges the fewer units will be demanded. There is a tradeoff between price and quantity.
+
+\medskip
+
+Thus (under 'normal conditions') it chooses a price (and quantity) where, at that price/quantity, the marginal revenue from an additional unit will equal the marginal cost of producing that unit: $MR(Q)=MC(Q)$
+
+***
+- We covered this before (under [Profit-maximisation](profit-max)) -- the $MR(Q)=MC(Q)$ condition will essentially hold for *any* firm, monopoly or not, but the MR function may differ.^[In considering the marginal revenue, the monopoly's calculation simply involves the slope of the market demand curve. It doesn't have to consider 'how other firms will react', as it is the only firm. In contrast, under perfect competition a firm is always charging the market price, so it's marginal revenue is simply this price, a constant. In intermediate cases like 'oligopoly' the firm's marginal revenue takes into account the reaction of other firms; e.g., as it increases quantity, other firms might do so as well. We do not cover these intermediate cases in this module. If you are interested, take an 'industrial organisation' module.]
+
+
+\medskip
+
+$\rightarrow$ As a result, a monopoly **produces 'less than the socially optimal quantity'** in order to charge a high price and increase its profit. Because it does not price at marginal costs, at the quantity it produces, additional units would valued more (by some consumers) than they would cost to manufacture. (We return to this [below](dwl-monop)).
+
+## Barriers to entry {#barriers}
+
+In our previous discussion of perfect competition, we argued that an industry with 'super-normal' profits would attract other firms to enter, leading to an outward shift in  the market supply curve and lower prevailing prices, and profits returning to 'normal' (zero economic profits) in the long run.
+
+For a monopoly (or any situation 'super-normal' profits) to persist, there must be some sort of 'barrier to entry', one would presume.^[Adv: Another possibility involves a sort of 'noncontinuity' or 'discreteness'. There may be some markets in which 'one firm will profit but two firms will make negative profits.' Here if one firm has already entered, it has 'first-mover advantage' and no other firm would want to enter. We ignore this possibility for now.]
+
+These barriers are typically classed into two categories, 'technical' and 'legal'.
 
 ### Technical barriers to entry
-- IRS/ Diminishing average cost over a broad range of output
-    - $\rightarrow$ 'a natural monopoly'
-    - (Here multiple firms producing separately are *less efficient*, cannot produce the lowest cost)
-- Special knowledge of a low-cost method of production, or key resource
 
-***
+1. Increasing Returns to Scale/ Diminishing average cost over a broad range of output
+    - $\rightarrow$ 'a natural monopoly'^[Adv: Here multiple firms producing separately are actually *less efficient*, and cannot produce the lowest cost. This makes 'regulating competition' a difficult endeavour. It may be preferrable for the government to *allow* a monopoly in such a situation, but try to regulate it.]
 
-### Legal barriers to entry.
+2. Special knowledge of a low-cost method of production, or a key resource^[Adv: There is some debate about this one. Will it necessarily constitute a barrier to entry? Wouldn't the firm with this 'resource' gain more profit by licensing it to other firms? Will this lead to a long-term advantage or is it merely a short-term return to research and development expenses?]
+
+
+### Legal barriers to entry
+
+Traditionally, Economists, especially from the 'Chicago school' have often claimed that monopolies are almost always *caused* by government regulation.
 
 - Patents and copyrights
-- Exclusive franchise or license (granted by government, by another firm, by a university)
+]
+- Exclusive franchise or license (granted by government, by another firm, by a university)^[Universities often sell off the rights to provide food on campus to a single 'catering' firm (sound familiar?). This may be a way of generating revenue without having to explicitly 'raise tuition'. Who is paying for this? The students (and staff), in the form of lower consumer surplus! Such exclusive licensing may also be vulnerable to favouritism and corruption, but that is a different story.]
+
 - Government support for a dominant firm, discouraging/forbidding others
+
+\bigskip
+
+However, while some such 'legal barriers' may result from corruption, there are also valid justifications for these in many cases.^[E.g., perhaps licensing doctors is necessary because otherwise patients will not know which doctors are reputable, an 'information asymmetry' that may lead to a 'lemons problem' ... look it up, if you are interested.]
 
 ***
 
-... from the 2016 Massachusetts ballot initiative:
+\textcolor{blue}{Consider: would the initiative below lead to a 'legal' or a 'technical' barrier to entry? Does it seem like a rule that could be justified as in the general social interest?}^[Ans: (It's subjective of course, but...) The detailed language seems like a carve-out for a specific firm, and would be hard to justify. This seems likely to generate an opportunity for one casino, and legal barriers to entry to other potential casino-operators.]
 
+... from the 2016 Massachusetts ballot initiative:
 
 
 \includegraphics[height=2.5in]{picsfigs/gaming_open.png}
 
 
 
-## Monopoly profit-maximisation
+## Monopoly profit-maximisation {#monop-profit-max}
 
-- As always, set Q to maximize $QP(Q)-C(Q)$
+A monopoly (or any firm) will set quantity (here $q=Q$, because it's the whole market) to maximize it's profit $\pi(Q)=QP(Q)-C(Q)$
 
-- leads to optimization where $MR(Q) = MC(Q)$ (assuming P>AC)
+- Remember: Revenue is $Q\times P(Q)$, where the latter is the 'inverse demand' function; the price that can be achieved at quantity Q.
+- ... and $C(Q)$ is the total cost
 
-- Remember, the 'volume' benefit of increasing Q is countered by
-    - Greater cost (producing more always costs more)
-    - The need to reduce price (on all units) to get people to buy it
+\medskip
+
+This leads to optimization (profit-max) at the quantity $Q$ where $MR(Q) = MC(Q)$ (assuming $P>AC$ at this quantity $Q$).
+
+\bigskip
+
+*Intuition* (essentially, 'proof by contradiction' once again):
+
+- If $MR(Q) > MC(Q)$ then increainge quantity would increase revenue more than it increases costs, increasing profits. Thus this initial $Q$ cannot be profit-maximizing.
+
+- If $MR(Q) < MC(Q)$ then increase quantity would increase revenue *less* than it increases costs. This implies that *decreasing* quantity would decrease costs more than it would decrease revenue, thus increasing profits. Thus this initial $Q$ cannot be profit-maximizing.
+
+- $\rightarrow$ Thus for a $Q$ to be profit-maximizing, it cannot be that $MR(Q) > MC(Q)$ at this $Q$, nor can it be that $MR(Q) < MC(Q)$. Thus it must be (the only remaining alternative) that $MR(Q) = MC(Q)$ at this $Q$.
+
+
+\medskip
+
+Thus this is a *necessary* condition for profit-max ('if it doesn't hold, the firm is not maximizing profits').
+
+It's also a sufficient condition ('if this holds, the firm must be maximising profits') if there is only one $Q$ where $MR(Q)=MC(Q)$ ... which will hold, e.g., if MR is always decreasing in Q and MC is constant or increasing in Q.
+
+
+\bigskip
+
+Remember, the 'volume' benefit of increasing Q is countered by...
+
+1. greater cost (producing more always costs more) and
+2. the need to reduce price (on all units) to get people to buy it.
 
 
 ### Graphically: Monopoly profit-max
@@ -7741,40 +7836,41 @@ Opposite extreme: *monopoly*
 
 \includegraphics[height=2.5in]{picsfigs/monopprofit1.png}
 
-***
 
 \includegraphics[height=2.5in]{picsfigs/monopprofit2.png}
 
 
 
-*Notes:*
-Rem: Firm's revenue is Price $\times$ Quantity. \
-Rectangle for a specific point on demand curve. \
-Firm' *profit* is this less average cost. \
+*Recall:*
+
+The firm's revenue is Price $\times$ Quantity. \
+This rectangle pertains to a *specific point* on the demand curve, it will in general be different for every point. \
+
+The firm' *profit* is this revenue rectangle less total cost, which is equal to average cost $\times$ quantity. \
+
 MR tells you how the 'revenue rectangle' will increase (or decrease) with another unit. \
+
 MC tells you the *cost* of this additional unit.
-Where MR>MC, increasing quantity a little bit increases revenue more than costs, thus increasing profit.
+
+Where $MR>MC$, increasing quantity a little bit increases revenue more than costs, thus increasing profit.
 
 
-***
 
 \includegraphics[height=2.5in]{picsfigs/monopprofit3.png}
 
 
-*Note:*
-Be careful here: \
+\textcolor{red}{Warning}: Be careful here of a common error... \
 The price the monopoly can get at quantity $Q^*$ is $P^*$  \
-... project up to the *demand* curve NOT the MR curve.
+... project up to the *demand* curve NOT the MR curve. (
 
-***
 
 \includegraphics[height=2.5in]{picsfigs/monopprofit4.png}
 
 
-*Note:*
 Again, remember that revenue is $P^*Q^*$ but costs at $Q^*$ are $Q^* \times AC$ \
  so profit is $(P^*-AC)Q^*$. \
-By the way, the AC adds up the MC and the FC and divides by the quantity.
+
+\textcolor{gray}{Also recall that the AC adds up the area under the MC and the FC and divides by the quantity.}
 
 ***
 
@@ -7783,7 +7879,7 @@ By the way, the AC adds up the MC and the FC and divides by the quantity.
 
 [comment]: <> (2024BB)
 
-## Skip: 'no supply curve for a monopoly'
+\textcolor{purple}{(Skipping...)} *Skip from NS: 'no supply curve for a monopoly'*
 
 [comment]: <> (2024EE)
 
@@ -7806,53 +7902,105 @@ In contrast:
 
 [comment]: <> (101EE)
 
-## The deadweight loss of monopoly
+## The deadweight loss of monopoly {#dwl-monop}
 
 
 *Criticisms of monopoly:*
 
-1. Monopolies produce too little output: allocatively inefficient.
+1. Monopolies produce too little output: this implies 'allocative inefficiency'
 
 2. There is a redistribution of wealth from consumers to owners.
 
-- But this could be counterbalanced by government redistribution
+- But this could be counterbalanced by government redistribution. In principle, this need not make a difference.^[However, many people, particularly in recent years argue that economists are too quick to make these kind of arguments, prioritising efficiency over inequality. 'Yes, in principle the government could redistribute the gains/losses, but this doesn't usually happen'... runs the argument. If we don't think it is likely that governments will tax the owners of monopolies and redistribute the gain to those who are hurt by the monopoly (consumers), the 'welfare losses' of monopoly may be even greater than the DWL triangle. However, this opens up a can of worms of complicated issues we don't have the scope to discuss in this module, such as 'how do we define a social welfare function'?]
+
+\bigskip
+
+***
+
+\textcolor{RawSienna}{Adv: Considering the first criticism... Why do I call this 'allocative' inefficiency} (i.e., the 'top-level' condition, i.e., 'the wrong mix of goods is being produced)'?
+
+It is not *productive* inefficiency: this does not in itself represent a misallocation of inputs; presumably, whatever monopolies choose to produce they will want to produce at the lowest cost^[Although see the 'x-inefficiency' of monopoly.].
+
+It is not *exchange inefficiency*: if a single price is charged, the people who value it most will purchase it, and not those who value it less.^[Although this will not be the case when we consider price-discrimination in the next section.]
+
+It is *allocative* inefficiency. Considering we are on the production-possibility-frontier (as we are productively efficient), the economy produces and consumes relatively too *little* of the goods that are controlled by monopolies and relatively too much of the other goods.
 
 
 ***
 
-- Compared to perfect competition, a monopoly typically produces less output and charges a higher price
+Compared to perfect competition, a monopoly typically produces *less* output and charges a *higher* price.
 
 - Some of the consumer surplus under perfect competition is transferred to the monopolist.
 
 - There is also a deadweight loss under monopoly
 
-***
+\bigskip
+
+This is illustrated below.
 
 \includegraphics[height=3in]{picsfigs/dwl1.png}
 
+In the above figure, a perfectly-competitive industry would charge $P_{PC}=MC$ and produce $Q_{PC}$.
 
+As noted above, the 'large right triangle' of value would be achieved by the economy, the maximum possible amount...
 
-*Note:*
-The difference in monopoly vs perfect competitive quantity \
-... difference in price \
-... difference in consumer surplus \
-... difference in firm profit
+and this entire amount would all become consumer surplus. (There would be no producer surplus in the long run.)
 
-***
+\medskip
+
+*In contrast, under monopoly*
+
+- The monopoly would charge price $P_M$ and produce $Q_M$ \textcolor{blue}{Make sure you know why!}
+
+\bigskip
+
+Next we highlight the monopoly's profit:
 
 \includegraphics[height=2.5in]{picsfigs/dwl2.png}
 
+- The monopoly would gain a profit equal to the yellow rectangle. \textcolor{blue}{Make sure you know why!}
 
+*Note:* The 'differences' in these diagrams  (costs, transfers) refer to the monopoly outcomes *relative to perfect competition*.
 
-*Note:* The differences (costs, transfers) refer to the monopoly outcomes *relative to perfect competition*.
+\bigskip
 
-***
+*What is gained and lost and by whom?*
+
 
 \includegraphics[height=2.5in]{picsfigs/dwl3.png}
 
+
+Define $P_{max}$ as the 'price at zero units' (the maximum amount the first consumer is willing to pay for the first unit).
+
+- The consumer surplus under monopoly is the 'little right triangle' between
+    - the top point; i.e., $Q=0,P=P_{max}$
+    - $P=P_M, Q=0$ and
+    - $P=P_M, Q=Q_M$.
+
+\medskip
+
+\textcolor{blue}{Consider:}
+
+- What is the total social surplus (here, consumer surplus + firm profit) under monopoly?
+
+- What about under perfect competition?
+
+- Which is larger?
+
+\bigskip
+
+*Notice* that the yellow box was part of the consumer surplus under perfect competition, but it is the firm's profit under monopoly.
+
+\bigskip
+
+*Notice* that the blue triangle 'DWL' was part of the consumer surplus under perfect competition, but it is *not* part of consumer surplus nor firm profit under monopoly. Where did it go? It vanished. This is a **'deadweight loss' to society.** Units between $Q_M$ and $Q_{PC}$ *could* be produced, yielding a value above their cost of production. If these are not produced a potential social gain is sacrificed.
+
+
 ***
 
-*Other criticisms:* Some argue the deadweight loss (DWL) above *understates* the true harm of monopoly
+### Other criticisms of monopoly, considerations:
+
+Some argue the deadweight loss (DWL) above *understates* the true harm of monopoly
 
 - 'Secure' monopolies don't innovate as much, and spend wastefully?
 - Monopolies may expend wasteful resources (lobbying, threats, lawsuits...) to preserve barriers to entry
@@ -7869,7 +8017,7 @@ Price Discrimination
 
 :      The practice of firms offering different prices to different consumers
 
-- Or different prices for slightly different *products* or quantities,
+- ...or different prices for slightly different *products* or quantities,
     - where the difference in price does *not* merely reflect cost difference,
     - with the goal of distinguishing consumers' *willingness to pay* (WTP).
 
@@ -7887,7 +8035,6 @@ Why such a complicated price list?
 ### Why do firms price discriminate?
 
 
-
 - It can increase profit
 
     - by 'extracting more surplus' from consumers
@@ -7898,43 +8045,62 @@ Why such a complicated price list?
 
 ***
 
-### The alternative to price discrimination (previous analysis)
+### The alternative to price discrimination (repeats the prior analysis of monopolies)
 
 Offering a single price for a good for all consumers is known as 'uniform pricing'.
 
 - This does not deal with differences amongst consumers.
-- May force you to target a particular group, such as the wealthy, reducing your total sales.
-- Under monopoly, this leads to a deadweight loss
+- This may force you to target a particular group, such as the wealthy, reducing your total sales.
+- Under monopoly, this leads to a deadweight loss.
+
+
+<!---
+Todo: give more explanation here
+-->
 
 \includegraphics[height=2in]{picsfigs/dwl3.png}
 
-***
 
 
 \includegraphics[height=2.5in]{picsfigs/ppd1.png}
 
-***
+
+Below, the diagram illustrates the potential gains from price-discrimination:
+
 
 \includegraphics[height=2.5in]{picsfigs/ppd2.png}
 
+By finding a way to charge lower prices to lower-valuing customers (or for customer's 'last units') without reducing the price on the earlier units, a (monopoly) firm could convert the deadweight loss into profit.
+
+\bigskip
+
+Although 'discrimination' is kind of a bad word, 'price discrimination' may have positive or negative effects on social welfare.
+
 ***
 
-- Price discrimination may seem counter-intuitive: ‘how can offering some consumers lower prices increase profit?’
-    - Higher prices increase your profit per unit, but at a higher price you will sell fewer units. The more you charge the less you sell.
-    - Some groups of ‘less keen’ consumers are very sensitive to the price, and they will buy very little at a high price, so a lower price would be more profitable.
-    - Some groups of ‘more keen’ consumers will buy a lot even at a high price. They are less ‘price-sensitive’, so you want to charge them more.
+Price discrimination may seem counter-intuitive. Your mouthy uncle might say: ‘Wait a second college boy, how can offering some consumers *lower* prices increase profit?’
 
-***
+To him you shall answer (something like) the following:^[If you can come up with a better way of explaining this, I'd love to hear it!]
 
-### The three types of price discrimination
+- Higher prices increase your profit per unit, but at a higher price you will sell fewer units. The more you charge the less you sell.
+
+- Some groups of ‘less keen’ consumers are very sensitive to the porice, and they will buy very little at a high price, so a lower price would be more profitable for this group.
+
+- Some groups of ‘more keen’ consumers will buy a lot even at a high price. They are less ‘price-sensitive’, so you want to charge them more.
+
+
+<!---
+Todo: Link youtube here?
+-->
+
+### The three types of price discrimination {#pd-types}
 
 1. Individual-based (First degree; at best 'perfect')
 
 \
 
 
-
-*Note*: Targeting a price at each consumer; may be done on the internet or on a discretionary basis by an individual seller. \
+*This means* targeting a price at each consumer; it may be done on the internet or on a discretionary basis by an individual seller. \
  'Perfect' means the seller exactly predicts and charges each consumer her valuation.
 
 
@@ -7946,18 +8112,11 @@ Offering a single price for a good for all consumers is known as 'uniform pricin
 \
 
 
+For *self-selection-based price discrimination* (2nd degree PD) the firm doesn't know each consumer's valuations, or it is not allowed to 'discriminate' by charging different prices to different people.^[E.g., EU law prohibits a store from charging people a different price based on their nationality, although I believe they are allowed to charge distinct prices at the stores *in* different countries. When I was growing up in New York State I seem to recall that they put in a law that you could not charge more for 'female haircuts' than for 'male haircuts'... however this seems to still be common practice in England.]
 
-
-*Note:*
-Here the firm doesn't know each consumer's valuations, or is not allowed to 'discriminate' by charging different prices to different people
 Instead, it sells different bundles, quantities,
   or qualities of products to get high and low-value consumers to separate themselves...
- E.g., first-class seats.
-
- \bigskip
-
-
-\textcolor{gray}{Note: To fully analyse these problems we need to know the techniques of 'mechanism design under asymmetric information', which we are not covering in this module}
+ e.g., first-class seats.^[To fully analyse these problems we need to know the techniques of 'mechanism design under asymmetric information', which we are not covering in this module.]
 
 [comment]: <> (101BB)
 
@@ -7974,16 +8133,14 @@ bundle smaller or lower-quality than would be efficient (called quality or quant
 3. Group-based (Third degree; 'market separation')
 
 
+For group-based 'third-degree' price discrimination ...
 
-*Note:*
-Here the firm finds something identifiable and inherent about the consumer \
- that is indicative of her likely valuations (and price-sensitivity). \
+the firm finds something identifiable and inherent about the consumer that is indicative of her likely valuations (and price-sensitivity). \
+
 It might be her age, nationality, student-status, or even perhaps her income.
 
 
-***
-
-### First-degree and/or 'perfect' price discrimination
+### First-degree and/or 'perfect' price discrimination {#1dpd}
 
 - The firm can offer each individual a different price for each unit they purchase.
 
@@ -8000,33 +8157,30 @@ Perfect price discrimination
 \bigskip
 
 
-- Here the monopolist would extract *all the available surplus*; no consumer surplus remains
-- Because monopolists extracts *all* the possible surplus, this is efficient
-    - Because max(total value of good - cost) $\rightarrow$ max(CS+PS)
+Here the monopolist would extract *all the available surplus*; no consumer surplus remains
 
-- But perfect PD is a rare/impossible extreme: requires mind reading
-    - Close example: Website targets an individualised price to each consumer, based on clues like time-of-day, web clicks, cookie data, IP location.
-    - But even this is not really *perfect* price discrimination:
+\
 
+Because monopolists extracts *all* the possible surplus, this is efficient.
 
+I.e., because max(total value of good - cost) $\rightarrow$ max(CS+PS)
 
-*Note:*
-Here, the seller does not really know exactly what the consumer is willing to pay; he is using broad clues.
+\medskip
 
 
-Note: See Shiller, B. R. (2013, or updated version). First degree price discrimination using big data.
+But perfect PD is a rare/impossible extreme: it requires mind reading
 
-***
+- A close example?: Website targets an individualised price to each consumer, based on clues like time-of-day, web clicks, cookie data, IP location.
+
+But even this is not really *perfect* price discrimination. Here, the seller does not really know exactly what the consumer is willing to pay; he is using broad clues.^[See Shiller, B. R. (2013, or updated version). First degree price discrimination using big data.]
+
 
 
 \includegraphics[height=2.5in]{picsfigs/ppd3.png}
 
-***
-
 
 \includegraphics[height=2.5in]{picsfigs/ppd4.png}
 
-***
 
 
 \includegraphics[height=2.5in]{picsfigs/ppd5.png}
@@ -8034,35 +8188,40 @@ Note: See Shiller, B. R. (2013, or updated version). First degree price discrimi
 
 ***
 
-### Second-degree price discrimination
+### Second-degree price discrimination {#2dpd}
 
-- Firm is unable to differentiate between consumers, uses quality/quantity so consumers self-select.
-    - Quality- Transport- Different classes, Supermarkets- budget products
-    - Quantity- Supermarkets- Larger quantities at lower prices per unit; i.e., 'nonlinear pricing'
+Here a firm is unable to differentiate between consumers, so it uses quality/quantity to get consumers to 'self-select'.
 
 
-\
+\medskip
+
+**Quantity:** Supermarkets- Larger quantities at lower prices per unit; i.e., 'nonlinear pricing'
 
 - 8 oz coffee for \pounds1.60 vs. 16 oz. for \pounds2.00
 - 20 p per oz vs. 12.5p per oz.
 - (with linear pricing there would be the same price of 15p/oz.)
-    - Result: with 2 prices monopoly can get 'high value' consumers to buy/get more in total without losing 'low-value' consumers
 
 
-***
 
-- Similar with quality: Don't know who high-valuation flyers are (wtp for travel *itself* varies)
-- But may know on *average* that flyers with higher wtp for travel *also* value comfort more
-    - Make second-class seats very uncomfortable, first-class luxurious, and charge more for first-class seats
-    - Can get consumers with higher values for travel *and* comfort to pay more
-    - without losing lower-valuing customers
+\bigskip
+
+**Quality:** Transport- Different classes, Supermarkets- budget products
+
+The situation is similar with quality; in the airline case, a firm doesn't know who high-valuation flyers are (wtp for travel *itself* varies)
+
+\
+
+But it may know on *average* that flyers with higher willingness-to-pay ('wtp') for travel *also* value comfort more^[This may be a challenging concept; I am trying to explain it simply without loss of accuracy.]
+
+- Make second-class seats very uncomfortable, first-class luxurious, and charge more for first-class seats
+- Can get consumers with higher values for travel *and* comfort to pay more
+- without losing lower-valuing customers
 
 
-NOTE: I am not going to cover the algebra nor graphical analysis of second-degree PD, nonlinear pricing, or two-part pricing
+\textcolor{purple}{(Skipping...)} *I am not going to cover the algebra nor graphical analysis of second-degree PD, nonlinear pricing, nor two-part pricing*
 
-***
 
-### The 'self-selection' problem
+### The 'self-selection' problem {#self-selection}
 
 Train companies must price first and second class such that consumers will self-select.
 
@@ -8074,23 +8233,25 @@ Train companies must price first and second class such that consumers will self-
 
 
 
-***
-
 \includegraphics[height=1.5in]{picsfigs/thirdclasscarriage.jpg}
 
 - The Third-Class Carriage is a c. 1862–1864 oil on canvas painting by Honoré Daumier
 
+There is a famous story of train companies *removing the roofs* on their third-class carriages to prevent customers from choosing these instead of the second-class carriages.
 
 \bigskip
 
 
-Lot's of discussion of this in the media, see e.g.,
+There is a perennial discussion of second-degree price discrimination in the media..., e.g.,
 
 \href{https://www.1843magazine.com/ideas/the-daily/why-companies-make-their-products-worse}{THIS} article in The Economist
 
-***
+This explicit destruction of value may strike people as particularly wasteful.^[See also the discussion of the soda vending machine that would charge more on hot days, and the aversion to charging more for fuel and food after natural disasters. Certain pricing policies seem to ping as particularly greedy and unfair (we consider this again in the behavioral economics chunk).  This may be why price discrimination is not more ubiquitous.]
 
-### Third-degree price discrimination (3dpd) / Market separation
+
+\bigskip
+
+### Third-degree price discrimination (3dpd) / Market separation {#3dpd}
 
 Third-degree price discrimination/Market-separation
 :    The practice of charging different prices to different groups that can be identified
@@ -8104,7 +8265,8 @@ Third-degree price discrimination/Market-separation
 - Example: Students face lower prices for transport, food and other goods as they have a lower willingness to pay
     - Remember: this is *not* done out of charity but to boost profits
 
-***
+\medskip
+
 
 ### Pricing under 3dpd/market separation
 
@@ -8115,15 +8277,13 @@ Third-degree price discrimination/Market-separation
 
 \includegraphics[height=1.5in]{picsfigs/discounts.png}
 
-***
 
 \includegraphics[height=2in]{picsfigs/3dpd.png}
 
-***
 
 \includegraphics[height=2in]{picsfigs/3dpd.png}
 
-Note: Decent numerical example, slides 6-8 Here: http://people.hss.caltech.edu/~mshum/ec105/matt9.pdf
+\textcolor{gray}{ there is a decent numerical example, slides 6-8 Here: http://people.hss.caltech.edu/~mshum/ec105/matt9.pdf
 
 ***
 
@@ -8250,7 +8410,7 @@ d. In under 30 words and making reference to your diagram, explain why this dead
 
 [comment]: <> (101BB)
 
-# We may skip: IMPERFECT COMPETITION
+# We might skip: IMPERFECT COMPETITION
 
 
 
@@ -8390,7 +8550,8 @@ How to consider this in a utility-maximisation framework?
 The standard framework for this involves maximising 'expected utility'.
 
 
-\textcolor{red}{Warning:} Making choices to maximise expected utility is *not* the same as making choices to maximise expected monetary outcomes. This is one of the main points here. A good share of students get this mixed up!
+\textcolor{red}{Warning:} \textcolor{green}(To avoid confusion...} Making choices to maximise expected utility is *not* the same as making choices to maximise expected monetary outcomes. This is one of the main points here. A good share of students get this mixed up!
+
 
 ## Probability concepts: a quick review
 
@@ -9070,7 +9231,7 @@ Option G (a 'call option'): Right to buy Google share at £500 (£500 'strike pr
     - price increase helps her
     - if price falls below \pounds 500, she doesn't need to exercise the option
 
-\textcolor{red}{Warning:} If you didn't read this you probably would have guessed the opposite. On the exam, many students answer that variability *reduces* the value of the option. As you are reading this, you probably won't make that mistake... so tell your friends to read this. (2018: but this won't be focal on the exam.)
+\textcolor{red}{Warning:} If you didn't read this you probably would have guessed the opposite. On the exam, many students answer that variability *reduces* the value of the option. As you are reading this, you probably won't make that mistake... so tell your friends to read this.
 
 \bigskip
 
@@ -10858,7 +11019,7 @@ Buyer never accepts any price $\rightarrow$ market closes down
 [comment]: <> (101EE)
 
 
-#Lecture12: Behavioural economics [1-2 hours]
+#Lecture12: Behavioural economics [1-2 hours] {#behavioral}
 
 ## Lecture12: Behavioural economics
 
@@ -11158,7 +11319,7 @@ By the EU calculation I make choices over which I prefer for the (remaining)
 
 ### Kahneman and Tversky scenariae
 
-\textcolor{red}{Warning: This is not the standard Allais paradox, it is a different paradox.}
+\textcolor{red}{Warning}: \textcolor{green}{(Avoid confusion...)} This is not the standard Allais paradox, it is a different paradox.}
 
 **KT1. Which would you choose?** \
 
@@ -11424,7 +11585,7 @@ But if Ant were 'choosing for Monday on Sunday', he would choose Work $\rightarr
 ### Application: 'put a contract out on yourself
 
 
-## Altruism and fairness
+## Altruism and fairness {#other-regarding-preferences}
 
 'Other-regarding preferences':  My utility may be impacted by...
 

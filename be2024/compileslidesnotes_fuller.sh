@@ -54,32 +54,33 @@ sed '/pre2019BB/,/pre2019EE/d' be2024handoutb.md > be2024handout.md
 rm be2024handouta.md
 rm be2024handoutb.md
 
+cp be2024handout.md be2038handout_19.md
+cp be2024handout.md be2038handout_19.Rmd
 
-pandoc be2024handout.md -f markdown -t latex -s -o bee2024handoutA.tex --toc --toc-depth=1
+pandoc be2038handout_19.md -f markdown -t latex -s -o bee2038handout19.tex --toc --toc-depth=1
 
 #need two latex compiles for table of contents to work:
-pdflatex bee2024handoutA.tex --batchmode --toc --toc-depth=1 --interaction=nonstopmode
-pdflatex bee2024handoutA.tex --batchmode --toc --toc-depth=1 --interaction=nonstopmode
+pdflatex bee2038handout19.tex --batchmode --toc --toc-depth=1 --interaction=nonstopmode
+pdflatex bee2038handout19.tex --batchmode --toc --toc-depth=1 --interaction=nonstopmode
 
-
-    #DO: command to copy the pdf *over* the linked dropbox file (do not delete it)
+    #In dropbox, to preserve link, must copy the pdf *over* the linked dropbox file (do not delete it)
 
 ##TODO: conversion to Rmd and bookdown knitting commands here??
 
 #2b. handout version for BEEM101
 #Cut out 2024-only sections from slide material
-    sed '/2024BB/,/2024EE/d' handout_bothmodules.md > $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/beem101handout.md"
-    sed -i.bak -e '1d;3d' $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/beem101handout.md"
+    sed '/2024BB/,/2024EE/d' handout_bothmodules.md > "../beem101/beem101handout19.md"
+    sed -i.bak -e '1d;3d' "../beem101/beem101handout19.md"
 
 #Remove 'advanced' tags
-    sed -i '' -e's/Adv://g'  $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/beem101handout.md"
-    sed -i '' -e's/adv://g'  $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/beem101handout.md"
-    sed -i '' -e's/Adv, math://g'  $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/beem101handout.md"
+    sed -i '' -e's/Adv://g'  "../beem101/beem101handout19.md"
+    sed -i '' -e's/adv://g'  "../beem101/beem101handout19.md"
+    sed -i '' -e's/Adv, math://g' "../beem101/beem101handout19.md"
 
 #Compiling beem101 handout big file
-    pandoc $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/beem101handout.md" -f markdown -t latex -s -o $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/beem101handout.tex" --toc --toc-depth=1
-    pdflatex -output-directory=$HOME/Dropbox/teachingsharedplusboox $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/beem101handout.tex" --batchmode --toc --toc-depth=1
-    pdflatex -output-directory=$HOME/Dropbox/teachingsharedplusboox $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/beem101handout.tex" --batchmode --toc --toc-depth=1
+    pandoc "../beem101/beem101handout19.md" -f markdown -t latex -s -o "..beem101/beem101handout19.tex" --toc --toc-depth=1
+    pdflatex "../beem101/beem101handout.tex" --batchmode --toc --toc-depth=1
+    pdflatex "../beem101/beem101handout.tex" --batchmode --toc --toc-depth=1
 
 ###########################################################
 #2c. Handouts divided by section
