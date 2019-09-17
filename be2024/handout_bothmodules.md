@@ -9608,7 +9608,6 @@ Standard Economics:
 Very interesting problems, does Econ and Game Theory have the solutions?
 
 
-
 ### What game theory can do (wet blanket)
 
 
