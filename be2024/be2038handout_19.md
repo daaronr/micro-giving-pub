@@ -1,6 +1,9 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
 % Handouts for BEE2038: Intermediate Microeconomics
-
-
 
 **Notes by instructor David Reinstein, largely based on Nicholson/Snyder, Intermediate Microeconomics and its Application, 12th edition (other editions OK too).**
 
