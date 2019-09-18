@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Introduction to the module and ‘housekeeping’ | Intermediate Microeconomics (applied); produced for Exeter BEE2038</title>
+  <meta name="description" content="BEE2038: Intermediate Microeconomics (applied)" />
+  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Introduction to the module and ‘housekeeping’ | Intermediate Microeconomics (applied); produced for Exeter BEE2038" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="BEE2038: Intermediate Microeconomics (applied)" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Introduction to the module and ‘housekeeping’ | Intermediate Microeconomics (applied); produced for Exeter BEE2038" />
+  
+  <meta name="twitter:description" content="BEE2038: Intermediate Microeconomics (applied)" />
+  
+
+<meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
+
+
+<meta name="date" content="2019-09-18" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="note.html">
+<link rel="next" href="models.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<!-- font families -->
+
+<link href="https://fonts.googleapis.com/css?family=PT+Sans|Pacifico|Source+Sans+Pro" rel="stylesheet">
+
+<script src="js/hideOutput.js"></script>
+
+<!-- Mathjax -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/default.js"></script>
+
+ <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "TeX/AMSmath.js"],
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+        jax: ["input/TeX","output/CommonHTML"]
+      });
+      MathJax.Hub.processSectionDelay = 0;
+  </script>
+
+
+<!-- open review block -->
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { background-color: #f8f8f8; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Intermediate Microeconomics (applied)</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="note.html"><a href="note.html"><i class="fa fa-check"></i><b>1</b> Notes to students</a><ul>
+<li class="chapter" data-level="1.1" data-path="note.html"><a href="note.html#on-this-online-resource-and-the-textbook."><i class="fa fa-check"></i><b>1.1</b> On this online resource and the textbook.</a></li>
+<li class="chapter" data-level="1.2" data-path="note.html"><a href="note.html#on-this-module-exeter-bee2038---intermediate-microeconomics---for-students-not-doing-a-straight-economics-degree"><i class="fa fa-check"></i><b>1.2</b> On this module (Exeter: BEE2038 - Intermediate Microeconomics - for students not doing a straight Economics degree)</a></li>
+<li class="chapter" data-level="1.3" data-path="note.html"><a href="note.html#course-information"><i class="fa fa-check"></i><b>1.3</b> Course Information</a></li>
+<li class="chapter" data-level="1.4" data-path="note.html"><a href="note.html#outline-and-description"><i class="fa fa-check"></i><b>1.4</b> Outline and description</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction to the module and ‘housekeeping’</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#the-first-week-of-lectures-aims-to-cover"><i class="fa fa-check"></i><b>2.1</b> The first week of lectures aims to cover:</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#first-problem-set-and-tutorial-coverage"><i class="fa fa-check"></i><b>2.2</b> First problem set and tutorial: coverage</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#me"><i class="fa fa-check"></i><b>2.3</b> Me</a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#this-module"><i class="fa fa-check"></i><b>2.4</b> This module</a></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#problem-sets"><i class="fa fa-check"></i><b>2.5</b> Problem sets</a></li>
+<li class="chapter" data-level="2.6" data-path="intro.html"><a href="intro.html#my-feedback"><i class="fa fa-check"></i><b>2.6</b> Feedback on your highly-esteemed but extremely humble lecturer</a></li>
+<li class="chapter" data-level="2.7" data-path="intro.html"><a href="intro.html#module-story"><i class="fa fa-check"></i><b>2.7</b> The story of this module</a></li>
+<li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#the-big-small-question"><i class="fa fa-check"></i><b>2.8</b> The big (small) question</a></li>
+<li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#resources"><i class="fa fa-check"></i><b>2.9</b> Resources</a></li>
+<li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#how-to-do-well"><i class="fa fa-check"></i><b>2.10</b> How to do well</a></li>
+<li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#fortune-cookie-wisdom"><i class="fa fa-check"></i><b>2.11</b> Fortune Cookie Wisdom</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="models.html"><a href="models.html"><i class="fa fa-check"></i><b>3</b> Economic Models [1 hour] (L1-2)</a><ul>
+<li class="chapter" data-level="3.1" data-path="models.html"><a href="models.html#what-is-economics"><i class="fa fa-check"></i><b>3.1</b> What is Economics?</a></li>
+<li class="chapter" data-level="3.2" data-path="models.html"><a href="models.html#why-learn-these-models"><i class="fa fa-check"></i><b>3.2</b> Why learn these models?</a></li>
+<li class="chapter" data-level="3.3" data-path="models.html"><a href="models.html#economic-models"><i class="fa fa-check"></i><b>3.3</b> Economic Models</a></li>
+<li class="chapter" data-level="3.4" data-path="models.html"><a href="models.html#applications"><i class="fa fa-check"></i><b>3.4</b> Applications</a></li>
+<li class="chapter" data-level="3.5" data-path="models.html"><a href="models.html#basic-supply-demand-model"><i class="fa fa-check"></i><b>3.5</b> Basic Supply-Demand Model</a></li>
+<li class="chapter" data-level="3.6" data-path="models.html"><a href="models.html#how-economists-verify-or-assess-theoretical-models"><i class="fa fa-check"></i><b>3.6</b> How Economists ‘Verify’ (or Assess) Theoretical Models</a></li>
+<li class="chapter" data-level="3.7" data-path="models.html"><a href="models.html#positive-and-normative"><i class="fa fa-check"></i><b>3.7</b> Positive and normative</a></li>
+<li class="chapter" data-level="3.8" data-path="models.html"><a href="models.html#review-questions-and-problems-from-chapter-1"><i class="fa fa-check"></i><b>3.8</b> Review questions and problems from Chapter 1</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="math-tools.html"><a href="math-tools.html"><i class="fa fa-check"></i><b>4</b> Math tools etc - Chapter 1a – coverage outline</a><ul>
+<li class="chapter" data-level="4.1" data-path="math-tools.html"><a href="math-tools.html#other-maths-resources"><i class="fa fa-check"></i><b>4.1</b> Other maths resources</a></li>
+<li class="chapter" data-level="4.2" data-path="math-tools.html"><a href="math-tools.html#simple-stuff"><i class="fa fa-check"></i><b>4.2</b> Simple stuff</a></li>
+<li class="chapter" data-level="4.3" data-path="math-tools.html"><a href="math-tools.html#minimum-maximum-or-neither"><i class="fa fa-check"></i><b>4.3</b> Minimum, maximum, or neither?</a></li>
+<li class="chapter" data-level="4.4" data-path="math-tools.html"><a href="math-tools.html#multivar-functions"><i class="fa fa-check"></i><b>4.4</b> Functions of two or more variables (multivariate functions)</a></li>
+<li class="chapter" data-level="4.5" data-path="math-tools.html"><a href="math-tools.html#contourlines_math"><i class="fa fa-check"></i><b>4.5</b> Contour lines (we will come back to this later)</a></li>
+<li class="chapter" data-level="4.6" data-path="math-tools.html"><a href="math-tools.html#simultaneous-equations-cover-briefly-in-lecture"><i class="fa fa-check"></i><b>4.6</b> Simultaneous equations (Cover briefly in lecture)</a></li>
+<li class="chapter" data-level="4.7" data-path="math-tools.html"><a href="math-tools.html#empirical"><i class="fa fa-check"></i><b>4.7</b> Empirical microeconomics/econometrics</a></li>
+<li class="chapter" data-level="4.8" data-path="math-tools.html"><a href="math-tools.html#empirical-meta-example"><i class="fa fa-check"></i><b>4.8</b> Empirical meta-example</a></li>
+<li class="chapter" data-level="4.9" data-path="math-tools.html"><a href="math-tools.html#application-1a.3-changing-world-oil-prices"><i class="fa fa-check"></i><b>4.9</b> Application 1A.3: … Changing world oil prices</a></li>
+<li class="chapter" data-level="4.10" data-path="math-tools.html"><a href="math-tools.html#data-and-economic-analysis"><i class="fa fa-check"></i><b>4.10</b> Data and economic analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="util-choice.html"><a href="util-choice.html"><i class="fa fa-check"></i><b>5</b> Utility and Choice [NS Chapter 2; 2 hours] (L2)</a><ul>
+<li class="chapter" data-level="5.1" data-path="util-choice.html"><a href="util-choice.html#some-motivation-for-these-abstract-ideas"><i class="fa fa-check"></i><b>5.1</b> Some motivation for these abstract ideas</a></li>
+<li class="chapter" data-level="5.2" data-path="util-choice.html"><a href="util-choice.html#between-first-and-second-week-priority-home-study"><i class="fa fa-check"></i><b>5.2</b> Between first and second week; priority home-study</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Intermediate Microeconomics (applied); produced for Exeter BEE2038</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="intro" class="section level1">
+<h1><span class="header-section-number">2</span> Introduction to the module and ‘housekeeping’</h1>
+<div id="the-first-week-of-lectures-aims-to-cover" class="section level2">
+<h2><span class="header-section-number">2.1</span> The first week of lectures aims to cover:</h2>
+<p>Note – this coverage this goes into the <a href="models">next section ‘models’</a> and <a href="math-tools">‘maths tools’</a></p>
+<p><em>Goals of this lecture (and accompanying self-study)</em></p>
+<ol style="list-style-type: decimal">
+<li>Explain what this module is about and how to get the most out of it</li>
+<li>Explain what Microeconomics is about and why it is useful</li>
+<li>Explain what the point of ‘models’ are</li>
+<li>Mention some <em>applications</em> of these</li>
+<li>Recap some examples of microeconomic models and questions (should be largely revision)
+<ul>
+<li>Get your econ brain flowing</li>
+</ul></li>
+<li>Discuss ‘empirical work’ in Microeconomics, and how it connects to ‘theory’</li>
+<li>Acquaint you with some of the necessary <a href="math-tools">‘maths tools’</a>, and give some resources for revising these (many of these tools will be more fully covered as they are used throughout the course)</li>
+</ol>
+</div>
+<div id="first-problem-set-and-tutorial-coverage" class="section level2">
+<h2><span class="header-section-number">2.2</span> First problem set and tutorial: coverage</h2>
+<p>See the file linked on the VLE (I put up ‘just the questions first’, and then the answers and explanations later.)</p>
+<!---
+Based on Theory and Application of Intermediate Microeconomics 11th edition,  Nicholson/Snyder, Dartmouth College \
+Some material from PowerPoint Slide Presentation:  Philip Heap, James Madison University
+-->
+</div>
+<div id="me" class="section level2">
+<h2><span class="header-section-number">2.3</span> Me</h2>
+<p>David Reinstein, &lt;davidreinstein.wordpress.com/&gt;</p>
+<p><br />
+</p>
+<p>Office hours: TBD</p>
+<p>For an out-of-hours appointment, please go to </p>
+<p>Office: 1.39 Streatham</p>
+<!---
+Easy link to make appointments: https://calendly.com/daaronr/out-of-oh-mtg-need-to-confirm
+-->
+<p>Office: 1.39 Streatham, <em>just come by :)!</em></p>
+<p><br> </p>
+<p><em>My research interests:</em> Applied and empirical microeconomics across a broad range of issues, and the impacts on policy and on business and nonprofit innovation</p>
+<ul>
+<li>Charitable giving, effective altruism, other-regarding behaviour</li>
+<li>Price discrimination by income</li>
+<li>Impact of HE institutions on income and life outcomes</li>
+<li>Communicating with policymakers, managers, entrepreneurs; <em>Impact</em></li>
+<li>Open science, meta-analysis, and robust evidence</li>
+</ul>
+<p>One reason that I am telling you about this is that I will <em>integrate</em> recent and relevant research into this module.</p>
+<p><br> </p>
+<p>You also may want to get involved in research (doing it, using it) yourself; let me know if you want to chat about this.</p>
+<p>If you are thinking of going on to postgraduate study, or are interested in a job involving research, I would strongly advise you to do a final-year undergraduate dissertation. We now have an Economics-specific module for this.</p>
+<p>You can see some of my research on my webpage  and some of my impact projects at</p>
+<p>
+<span class="citation">(<span class="citeproc-not-found" data-reference-id="givingtools"><strong>???</strong></span>)</span> (twitter)
+</p>
+<!---
+I will also be advertising two "Student Campus Partner" positions which offer real research and professional experience.
+-->
+</div>
+<div id="this-module" class="section level2">
+<h2><span class="header-section-number">2.4</span> This module</h2>
+<p><strong>bee2038: Intermediate Microeconomics (applied)</strong></p>
+<ul>
+<li><p>Lectures</p></li>
+<li><p>Problem sets: There are eight problem sets, each covering a specific block of material. <em>The material in these problem sets either comes from exams or builds exam skills.</em></p></li>
+</ul>
+<p>Representative answers for each problem set will be given a few days after each problem set is released, or shortly before the relevant support class.</p>
+<ul>
+<li>Classes (AKA ‘tutorials’ AKA ‘seminars’) every fortnight (5 total)</li>
+</ul>
+<p>Support classes will largely focus on covering (exploring, solving, discussing) the problem sets. However, there will obviously not be time to cover every question in the tutorial. Note there are only 5 tutorials but 8 problem sets; thus, tutorials may cover problems from multiple recent problem sets.</p>
+<p>These classes are about <em>applying</em> material you have learned, not lecturing on it or learning it for the first time.</p>
+<p><br> </p>
+<p><em>Come ready to ask questions and participate:</em></p>
+<p>The classes are a smaller group setting than the lectures;</p>
+<p>we aim to make these highly interactive and participatory. To really be helpful, we need to know what areas you might be struggling with and where your logic might be breaking down; thus we will either do cold calling or highly encourage all the students in these tutorials to ask and answer questions. Think of these as (especially) ‘safe spaces’; you will be judged or marked based on your performance in the support classes, and there are no dumb questions. If you have a question many of your peers probably have the same question, so asking it provides a <em>public good</em>.</p>
+<ul>
+<li>Marks for Microeconomics component
+<ul>
+<li>First ‘midterm’ examination, 90 minutes, fully MCQ (but may require ‘choose all that are correct’); 15 marks (30% of term mark)</li>
+<li>Final examination, 120 minutes, MCQ, solved problems, short essays: 35 marks (70% of term mark)</li>
+</ul></li>
+</ul>
+<p><em>Important</em>: Final exam open response (essays/short answer) questions test your deep understanding and ability to explain concepts. I will help you prepare for this, and give you examples.</p>
+<hr />
+<p><strong>Five essential competencies (for economics students)</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Apply the scientific process to economic phenomena</p></li>
+<li><p>Analyse and evaluate behaviors and outcomes using economic concepts and models</p></li>
+<li><p>Use quantitative approaches in Economics</p></li>
+<li><p>Think critically about economic methods and their applications</p></li>
+<li><p><strong>Communicate economic ideas in diverse collaborations</strong></p></li>
+</ol>
+<ul>
+<li>paraphrased from Algood and Bayer, 2017 American Economic Review: Papers and Proceedings, “Learning outcomes for economists”.</li>
+</ul>
+<p>This module particularly emphasizes 5, and also 2 and 4.</p>
+<hr />
+<p>These skills are also highly relevant to employers:</p>
+<p><img src="skillschart.png" width="70%" style="display: block; margin: auto;" /></p>
+<hr />
+<p><img src="skillsbar.png" width="70%" style="display: block; margin: auto;" /></p>
+<div id="texts" class="section level3">
+<h3><span class="header-section-number">2.4.1</span> Texts and resources</h3>
+<ul>
+<li>Recommended text: ‘Intermediate Microeconomics and Its Application’ (12th ed.)
+<ul>
+<li>Should be available at the University bookstore for around £50, with access to online materials</li>
+<li>Other recent editions are also OK, but be careful as numbering can change</li>
+<li>Many other resources online (see below)</li>
+</ul></li>
+</ul>
+<p><strong>Note that there are a variety of sources and online courses</strong> — any intermediate or advanced textbook in Microeconomics will cover virtually the same material. There are now texts available for free, legally, online, such as</p>
+<ul>
+<li><p><a href="https://laecon1.lyryx.com/textbooks/OPEN_CURTIS_MIC_1/marketing/CurtisIrvine-Microeconomics-2017A.pdf">Microeconomics Markets, Methods &amp; Models; an Open Text by Douglas Curtis and Ian Irvine</a></p>
+<ul>
+<li>A full-fledged text covering many of the topics of this module, without calculus</li>
+</ul></li>
+<li><p><a href="http://my.ilstu.edu/~mswalber/ECO240/index.html">Intermediate microeconomics - M Walbert Illinois tutorials</a> - click ‘tutorials’</p>
+<ul>
+<li>A series of tutorials for an intermediate microeconomics module. Covers many of the topics of this module. No calculus but a lot of algebra. Lots of supplementary materials too.</li>
+</ul></li>
+<li><p><a href="http://www.smallparty.org/yoram/quantum/#downloads">Quantum Microeconomics</a>; consider the version either with or without calculus</p>
+<ul>
+<li>An unconventional but very careful and interesting approach; my impression is that it is well organised and explained</li>
+</ul></li>
+<li><p><a href="https://cnx.org/contents/bc498e1f-efe9-43a0-8dea-d3569ad09a82">Principles of Economics 2e, Openstax</a> by Douglas Curtis and Ian Irvine - very well organised, not quite ‘intermediate’, not enough maths for my taste, but may be very helpful as revision and as an additional source of explanations!</p></li>
+<li><p>“Introduction to Economic Analysis”, by Preston McAfee, Caltech and Tracy Lewis, Duke University, available at <a href="https://open.umn.edu/opentextbooks/BookDetail.aspx?bookId=47">LINK</a> (note this text uses calculus).</p></li>
+</ul>
+<p><a href="https://www.kellogg.northwestern.edu/faculty/dale/ieav21.pdf">Introduction to Economic Analysis - MacAffee, Lewis, Dale</a></p>
+<p>A ‘no-fluff’ text from an esteemed source. Covers much of this module, but a bit at the more advanced side (actually the level varies greatly throughout). Includes calculus and lots of parametric examples. Lots of solved problems.</p>
+<p><br> </p>
+<ul>
+<li><p>Some resources on CORE , mentioned above, may be helpful, but that needs further investigation, as it is aimed at year-one Economics.</p></li>
+<li><p>I also recommend <a href="http://web.mit.edu/11.203/www/econ/">Simple economics on the web</a>, which contains a great number of useful interactive graphical and algebraic exercises.
+Play around with this, they are super-helpful and intuitive. <em>Thanks Frank.)</em></p></li>
+</ul>
+<hr />
+<p>Issues with Nicholson and Snyder text and associated online materials: Students can contact Roxanne Watts for access to any online resources associated with the text, <a href="mailto:roxanne.watts@cengage.com" class="email">roxanne.watts@cengage.com</a> (tel) 01264347322. Expect response to simple questions in 24 hours (1 business day)</p>
+<hr />
+<p><font color='red'>Note:</font> The module moves through select parts of textbook; coverage and order given in handout.</p>
+<p>Lectures <span class="math inline">\(\neq\)</span> everything!: <em>Some</em> of the text is only <em>mentioned</em> in lecture/handout, but you still must read &amp; learn it. On the other hand some sections of the text are skipped. Some material is covered in these handouts, or recommended readings, that is <em>not</em> in the text; this is clearly emphasized. All of this is laid out in this handout.</p>
+</div>
+</div>
+<div id="problem-sets" class="section level2">
+<h2><span class="header-section-number">2.5</span> Problem sets</h2>
+<p><em>Note:</em> There will be 8 total problem sets, each covering a block of material. As noted above, these are aimed to help prepare you for the assessments.</p>
+<p>Representative answers and explanations for each problem set will given about 1-week after posting.</p>
+<p>The five support classes (tutorials) will cover <em>parts</em> of these.</p>
+</div>
+<div id="my-feedback" class="section level2">
+<h2><span class="header-section-number">2.6</span> Feedback on your highly-esteemed but extremely humble lecturer</h2>
+<p>We will have two ‘official’ feedback points. There will be an ‘early feedback’ survey, perhaps around week 4 or 5. This gives you a chance to give me constructive suggestions that I can adapt to <em>during</em> the rest of the module.</p>
+<p><br> </p>
+<p>For the Accelerate end-of-module feedback, you will be asked to rate me.
+<em>All</em> of these questions are seen as an evaluation of <em>my performance</em> specifically by the <a href="https://twitter.com/ass_deans?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">“associate dean”</a>.</p>
+<p>You will be asked to express an opinion, from ‘strongly agree’ to ‘strongly disagree’, on one or more questions about the quality of this module.</p>
+<!--
+These questions vary from year to year. In a recent year these were:
+
+- The lecturer is good at explaining things
+- The module is intellectually stimulating
+- The lecturer has made the subject interesting
+- Any other comments on teaching? (open-ended question)
+- Tutorial/Seminar/Workshop staff were good at explaining things
+- Tutorials/Seminars/Workshops were well structured and encouraged me to participate
+- Any other comments on tutorials? (open-ended)
+- I have been able to contact staff when I needed to.
+- The module lead valued students' views and opinions about the module
+- Any other comments about academic support (open-ended)?
+- The criteria used in marking have been made clear in advance
+- Feedback on my work has been timely and helpful
+- Any other comments on assessment and feedback? (open-ended)
+- What opportunities has the module given you to explore ideas or concepts in depth and/or apply what you have learnt?
+- To what extent have you engaged with academic research?
+- Other comments on learning opportunities? (open-ended)
+- Do you have any comments on the learning resources (for example equipment facilities software collections)?
+- Any other comments on the module (open-ended)?
+-->
+<p>In particular:</p>
+<ul>
+<li>Overall I am satisfied with the quality of the module.</li>
+</ul>
+<p><em>If at any time you think you don’t agree with any of these, please let me know how I can make it better</em></p>
+<p><em>You can tell me directly, or anonymously at:</em> </p>
+<p>I am not particularly a fan of the “customer service” model of education. It leads lecturers to water-down the content and hinders us from presenting challenging and engaging material. and limit your educational experience. In fact, there is in fairly compelling research that suggests that these measures are <a href="https://www.tandfonline.com/doi/full/10.1080/2331186X.2017.1304016">not reliable</a> and are <a href="https://thepsychologist.bps.org.uk/volume-32/april-2019/excellence-or-ease-exploring-student-evaluations-teaching">“poorly correlated with student learning”</a>.</p>
+<div id="responding-to-feedback" class="section level3">
+<h3><span class="header-section-number">2.6.1</span> Responding to feedback</h3>
+<p>I listen carefully to your responses and continually adjust the material and the approach. To give you the best education, I try to follow a process of <em>Kaizen</em>, or continual improvement.</p>
+<p>I also make changes from year-to-year, in response to your feedback.</p>
+<p><strong>Some changes made responding to the previous year’s feedback:</strong></p>
+<ol start="0" style="list-style-type: decimal">
+<li><p>Before 2019-20 the module was called “BEE2024 Economic Principles and policy”, and it was divided into a Microeconomics term and a Macroeconomics term." To make things simpler, we have renamed this Microeconomics part “BEE2038: Intermediate Microeconomics”, and we no longer share the ELE page. However the coverage is the same as before (allowing for normal year-to-year adjustments).</p></li>
+<li><p>Reduced coverage, enabling better focus. In particular, I have eliminated or consolidated much of the material on the firm’s production function and costs. In earlier surveys, this was the topic students liked the least. In 2019 I am removing the coverage of the history of supply and demand curves and a few other topics.</p></li>
+<li><p>Better integration of the problem sets and tutorials with the lectures and the assessments. Better coordination across tutorial sessions.</p></li>
+<li><p>In 2019 I will be providing more practice multiple-choice questions closely emulating the style of MCQ’s that will be on the midterm and final exam</p></li>
+<li><p>Materials: Greater motivation for each lecture. Less content in the slides themselves (less busy). A more complete narrative in the handout files, making these more readable</p></li>
+</ol>
+<ul>
+<li>Opportunity to feedback/discuss the handout and problem sets <em>directly</em> on these files (through Dropbox comments)</li>
+</ul>
+<ol start="5" style="list-style-type: decimal">
+<li>Lectures, tutorials and notes will have a greater focus on carefully explaining the important concepts that many students struggled with (e.g., Expected Utility)</li>
+</ol>
+<!--
+ 5. The midterm will be multiple choice; some questions will require multiple answers, but the exact number of correct answers will always be clearly specified. I also was able to add an *additional* tutorials before the midterm (two instead of one), so these will be more helpful in preparing for it.
+-->
+<ol start="6" style="list-style-type: decimal">
+<li>I will try to provide more revision coverage and supplementary materials for managerial economics students.</li>
+</ol>
+<hr />
+</div>
+</div>
+<div id="module-story" class="section level2">
+<h2><span class="header-section-number">2.7</span> The story of this module</h2>
+<p><em>Note:</em> You will have seen many of these concepts before.</p>
+<p>But do you really understand them well enough to <em>explain</em> them to a non-economist and to <em>apply</em> them to a new real-world situation?</p>
+<p>And do you understand the <em>limits and critiques</em> of these, and how economists try to <em>measure and test</em> them?</p>
+<p><font color='gray'>Asessment hint: I try to ask you questions that you would not know the answer to had you not taken this module. What would be the purpose of you simply learning ‘common sense’ or ‘conventional wisdom’ … that you already knew? If you are answering an open response/essay question by simply stating something that the average Joe sitting on a pub bench would have said, you may want to rethink the way you are answering this question. I am not designing the exams to trip you up… just to check that you have learned something.</font></p>
+<hr />
+<div id="economic-basics-weeks-1-2" class="section level3">
+<h3><span class="header-section-number">2.7.1</span> 1. Economic basics (weeks 1-2)</h3>
+
+<p>In weeks one and two we will go over some of the simple tools in the economists’ kit. I will try to explain to you what we mean by ‘economic models’ and give you some examples of these which may be familiar to you. I will not go over the math tools in the lecture; you should study/revise this on your own. We <em>will</em> go over many of these again briefly as we apply these math tools to our economic models throughout the module.</p>
+<p>We will also start thinking about, and formalisng individual decisions—over nearly all spheres of life— in a way you may not have seen before, which may even strike you as weirdly hyper-rational.</p>
+<p>Essentially, this (sometimes confusingly called ‘normative decision theory’) is the way economists typically conceive of and model people’s choices. Even though it seems to require precise optimization, perhaps to a strange extent, there are various reasonable justifications for this, and you might also see it as a benchmark… ‘Let’s understand what optimization would look like, as a starting point’.</p>
+<p>This framework is actually fairly general; it can allow all sorts of preferences (e.g., embodying ‘risk aversion’ and ‘altruism’) and wide-ranging choices. However it <em>does</em> imply certain ‘restrictions’: it rules out some sort of behavior that is perhaps obviously illogical.</p>
+<p>We will discuss how ‘preferences’ may define the ‘utility functions’. The ‘uility function’ is the thing that make choices in order to maximize. In the classical framework, people make choices in order to maximise the value of their utility function. Utility functions can also be expressed in terms of ‘indifference curves’ (but keep the distinction in mind; the indifference curves are not themselves the utility functions).</p>
+<p>Under this framework individuals make the ‘optimal choices’ … by making the choices that yield the maximum value of the utility functions given their constraints … in particular they have a ‘budget constraint’ that says they cannot spend more than they earn. You will learn how to derive these budget constraints and plot these on a graph, along with the indifference curves, and to interpret these diagrams.</p>
+<p><em>I will also introduce ‘data’ and some key concepts from ‘Empirical analysis’ and ‘Econometrics’ here</em></p>
+
+</div>
+<div id="building-the-model-putting-it-together-examining-it-weeks-3-5" class="section level3">
+<h3><span class="header-section-number">2.7.2</span> 2. Building the model, putting it together, examining it (weeks 3-5)</h3>
+<p>‘What determines the price and quantities exchanged in an unregulated (or ’free’) market?’ ‘Do markets yield good outcomes?’</p>
+<p>These questions have been at the backbone of Economics for millennia, at least since Aristotle.</p>
+<p>Classical economists such as Adam Smith built-up ideas of how seemingly random and disorganized markets can yield predictable and efficient outcomes, at least under appropriate conditions.
+Neoclassical and modern economists (such as Alfred Marshall, David Ricardo, Leon Walras, and Paul Samuelson) have formalized these, building models involving of systems of demand and supply and general equilibrium, and have made the case for the efficiency and desirability of the free market outcomes, at least under specified conditions.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p>In the second (and largest) chunk of the course, we will learn some of the essential building blocks of this model, and how they are justified and put together to yield predictions for market outcomes and ‘welfare’. In the process, we will get useful ideas and intuitions about the working of markets.</p>
+
+<p>We will learn how individual optimization implies a relationship between the price of a good (and the consumer’s income) and the amount a consumer chooses to purchase of that good; her individual <em>demand curve</em>.</p>
+<p>Adding up these individual demand curves yields the <em>market demand curve</em>, which describes the way the <em>total</em> amount of a good consumers wish to purchase depends on the market price of that good.</p>
+
+<p><font color='gray'>Note: This is covered NS ch. 6-7, but reading these sections is optional. You are only responsible for the brief ‘sketch’ of this that I provide in this handout and in a short lecture, and any problem sets related to this.</font></p>
+<p>Someone has to make this stuff, you know! We consider ‘production functions’ that map how inputs can be turned into outputs. If firms are seeking to maximize profits, then whatever output they want to produce … they will try to produce it using the combination of inputs (Capital, labor, etc.) that can do this at the lowest cost. If we know production functions and input costs, we can describe a firm’s cost of producing every amount of a particular good.</p>
+
+<p>Economists typically assume that firms make choices to maximize profits. (Mathematically, this ‘optimisation’, i.e., maximisation, has some things in common with the consumer optimisation of utility, so it may look familiar).</p>
+<p>Knowing their cost of production and the demand curve they will face, firms will thus choose to produce the <em>amount</em> that yields them the highest profit; we will explain the conditions for this.</p>
+<p>With ‘free entry/exit of firms’ we have the (ideal) situation of <em>perfect competition</em>.</p>
+
+<p>Each firm’s supply curve is added up to generate the market supply curve; we consider this in both the ‘short and long run’.
+We define the concepts of ‘consumer surplus’ and ‘producer surplus’; adding these yields the total value in an economy or the total ‘social welfare’.</p>
+<p>We will briefly and roughly consider the idea of an <em>equilibrium</em> in all markets; prices such that quantity demanded equals quantity supplied for all outputs and inputs.
+We will get some sense of the idea of what general ‘economic efficiency’ means.</p>
+<p>I will state and give you some intuition behind the ‘first and second welfare theorems’; the conditions under which free markets yield ‘good outcomes’, defined in a particular sense.</p>
+<hr />
+</div>
+<div id="how-the-market-can-go-wrong-and-how-to-maybe-fix-it-weeks-6-7" class="section level3">
+<h3><span class="header-section-number">2.7.3</span> 3. How the market can go wrong (and how to maybe fix it) (weeks 6-7)</h3>
+<p>Notice I kept saying “under certain conditions” free markets yield good outcomes. These conditions may not hold, for various reasons. In the third chunk, we discuss two of these reasons, which lead to ‘market failures’. It is important to understand these. These (sometimes) offer a justification for government intervention, and help us understand how government can best respond. These also offer insights for business models; which ‘goods’ may be hard to provide without government subsidies, and how can we use technological innovation to capture value and reduce the extent of market failures? (Businesses may also be able to take advantage of market failures in ways that are harmful to public welfare, But I would hate to think I’m training you to do this.)</p>
+
+<p>Not all goods can easily be restricted to a single consumer. ‘Non-rival’ and ‘non-excludable’ goods (e.g., a fireworks display) are called <em>public goods</em>: these will tend to be undersupplied by the free market, as we will come to understand. We will also discuss the evidence for the private provision of these, and consider government’s ability to provide them.</p>
+
+<p>This is the polar opposite market structure to perfect competition; a monopoly is a single firm that exclusively dominated a particular industry. It will tend to produce less and charge more than would be socially optimal, yielding a ‘deadweight loss’ (aka ‘DWL’).</p>
+<p>‘Price discrimination’ is (more or less) when a firm charges different prices to different consumers; this can reduce (or increase) the ‘deadweight loss’ of monopoly, as we will learn.</p>
+</div>
+<div id="extensions-to-the-model-and-applications-weeks-8-10" class="section level3">
+<h3><span class="header-section-number">2.7.4</span> 4. Extensions to the model and applications (weeks 8-10)</h3>
+<p>In the final chunk we extend the model to accommodate some important aspects of the real world. We investigate the implication of these for market outcomes.</p>
+
+<p>We make many decisions without knowing exactly what the consequence of each choice will be. Economists typically model this using the “expected utility” framework. A warning: students often get this concept wrong, so be careful. Expected utility is not the same as ‘expected monetary value’; and this allows EU to embody risk aversion.</p>
+
+<p>For many decisions we make the consequences depend on what <em>others</em> do; we have ‘strategic interaction’. Economist usually consider this using the framework and tools of <em>game theory</em>.</p>
+
+<p>People may not actually make decisions In the hyper-rational way we have been assuming. Here we carefully consider the adaptation of some insights from Psychology to Economics, yielding ‘behavioral economics’</p>
+</div>
+</div>
+<div id="the-big-small-question" class="section level2">
+<h2><span class="header-section-number">2.8</span> The big (small) question</h2>
+<blockquote>
+<p>What’s gonna be on the exam??</p>
+</blockquote>
+<p>As noted, you are responsible for <em>all</em> material outlined in this handout … the syllabus + assigned readings + materials covered in lecture and tutorials.</p>
+<p><em>E.g., the exams may cover material only briefly mentioned in lecture, and will expect knowledge from prerequisites</em></p>
+<p>I try to reward broad understanding, rather than merely the ability to memorize a few formulae and definitions. So try to really know this stuff and be able to discuss it and apply it, both to algebraic/numerical examples and to real-world issues.</p>
+<p>I give you copious examples of what will be on the examinations, including practice problems at the end of each lecture, problem sets, lots of mock and sample question on the VLE, and previous examinations and midterms.</p>
+<!--
+2018 students:  Note that many students struggled with last year's midterm, perhaps because they were unfamiliar with the format of multiple-choice questions and perhaps because the 2016 midterm had been somewhat too easy. We made some adjustments for this,  which we will not do again. I will try to make the midterm this year somewhat less challenging, and give you plenty of advance warning and sample material to prepare for it.
+-->
+<p>You need to work hard; here is the guideline specified…</p>
+<p><font color='ForestGreen'>Guided Independent Study per half: 143 hours to be divided between background reading (e.g. 40 hrs), solving/reviewing problem sets (e.g. 40 hrs) and exam revision (e.g. 43 hrs)</font></p>
+<p>And now, a pep talk.</p>
+<div id="the-real-big-question-why-are-you-here" class="section level3">
+<h3><span class="header-section-number">2.8.1</span> The real big question: why are you here?</h3>
+<p>To learn.</p>
+<ul>
+<li>Because you think it’s interesting
+<ul>
+<li>to ponder big questions about individuals, markets, and society</li>
+<li>to understand how people have tried to bring order to difficult questions</li>
+<li>because you want to contribute something to the world (see above)</li>
+</ul></li>
+<li>Because this stuff is actually useful in the real world
+<ul>
+<li>For your professional career</li>
+<li>For your life</li>
+<li>If you want to go into academia (in Economics or otherwise)</li>
+</ul></li>
+</ul>
+<p><br> </p>
+<p>Some people and organisations seem to value this information:</p>
+<p><a href="https://www.gov.uk/government/publications/2017-government-economic-fast-stream-scheme">2017 Government Economic Fast Stream Scheme</a></p>
+<hr />
+<p><em>Don’t waste this experience fretting about marks. Try to actually learn and not just mimic the process, as in ‘cargo cults.’</em></p>
+<p><img src="cargo-cults-336x175.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>See Richard Feynman, on cargo cult science: </p>
+<p><em>So, why are you here?</em></p>
+<p><font color='brown'>Perhaps not to hear what the <em>lecturer</em> has to say, but for the lecturer to respond to what <em>you</em> say</font></p>
+<p>We live in a world post-printing press and with lots of digital media. To be honest, there are some things about lecturing that are obsolete in my opinion. Anyone can hear great lectures online or read extremely informative textbooks.</p>
+<p>However, as a student at this Russell group University…</p>
+<p>You can interact with me, ask me questions, come up with ideas, work with other students. Impress me and get a good letter of reference. I advise everyone to come to my office hours at least once.</p>
+<hr />
+</div>
+</div>
+<div id="resources" class="section level2">
+<h2><span class="header-section-number">2.9</span> Resources</h2>
+<p>I highly advise you to use the forum to ask and answer questions and make suggestions and comments. Students typically find this forum very useful.</p>
+<ul>
+<li><p><a href="http://vle.exeter.ac.uk/course/view.php?id=1847">VLE link</a></p></li>
+<li><p>Ask questions and make comments on the forum <a href="http://vle.exeter.ac.uk/mod/forum/view.php?id=487174" title="forum">LINK</a>, I will monitor it</p></li>
+<li><p>Or on these notes <em>themselves</em> using hypothes.is</p></li>
+</ul>
+<!--
+ or within the pdfs with a free Dropbox account
+ -->
+<p>Or, for anonymity, just complain on social media and I’ll probably see it.</p>
+<p><strong>Email</strong></p>
+<ul>
+<li><p>For specific questions comments about your degree scheme and requirements, is best to contact the Building One ‘help desk’, or the appropriate help desk for your degree.</p></li>
+<li><p>If you have a question about course material or coverage which other students will be interested in, please post this on the forum. If you email me I may respond by asking you to post this on the form.</p></li>
+<li><p>If you have a specific question that needs private attention then email me and I will try to respond. However, if it is a longer question I may ask you to come to my office hours or schedule a time to meet.</p></li>
+<li><p>Stay tuned for the ‘announcements’</p></li>
+</ul>
+<p>Also, there is a bunch of other material on the VLE. Remember to do practice questions and formative assessments!</p>
+<!--
+A copy (dropbox link) of each week's 'handouts' file will be added to the VLE each week in advance of the lectures. You can go to the linked pdf file (in your browser) and leave a comment/question *directly* on shared file, others can comment/respond, and I will review/react periodically.
+
+Note: You need a (free) Dropbox account to leave these comments; use your real name to get Kudos.
+-->
+<div id="in-lecture-interaction" class="section level3">
+<h3><span class="header-section-number">2.9.1</span> In-lecture interaction</h3>
+<p>Even though our lecture time is scarce, It seems to me that to get value out of this antiquated format known as a lecture, we should have at least some interaction. Otherwise, you may as well be watching a video.</p>
+<p>Some things we may work with include:</p>
+<ul>
+<li><p>Responseware, questions, polls and ‘chat’; ‘Kahoot’</p></li>
+<li><p>In-lecture experiments and games</p></li>
+<li><p>Remember to install Responseware on your smart phones, or get a free turningpoint clicker!</p>
+<ul>
+<li>Download it on app stores, or use it on a laptop </li>
+<li>the session id is ‘david’ (check)</li>
+<li>browser mode: </li>
+</ul></li>
+</ul>
+<p><br> </p>
+<p>To get the most out of the lectures, I advise you to</p>
+<ul>
+<li><p>Ask me questions, especially at beginning and end, raise both hands if you are lost</p></li>
+<li><p>Draw-along and solve-along with the slides and board work. The act of trying to construct models, solve algebra, and draw and interpret diagrams yourself really helps you understand them better and use them</p></li>
+</ul>
+<!---
+- [Trial - chat feature](http://vle.exeter.ac.uk/mod/chat/gui_header_js/index.php?id=361 "chat")
+-->
+</div>
+</div>
+<div id="how-to-do-well" class="section level2">
+<h2><span class="header-section-number">2.10</span> How to do well</h2>
+<ol style="list-style-type: decimal">
+<li>Put in the work</li>
+</ol>
+<ul>
+<li><p>Read the handout and the relevant parts of the text (as outlined in this handout) in advance of the lecture, come with questions</p>
+<ul>
+<li>Handouts and lectures mainly follow the text</li>
+</ul></li>
+<li><p>Do the problem set questions, suggested questions and class questions, understand the answers</p></li>
+<li><p>Do the <em>many</em> practice problems and mock exam questions</p></li>
+</ul>
+<p><br />
+</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Care about the <em>content</em></li>
+</ol>
+<ul>
+<li>Care about <em>actually</em> understanding this stuff. This will be rewarded. Don’t try to game this. It’s easier to just learn this stuff. Try to achieve <em>Real Understanding</em>: Be able to explain this stuff in your own words (in writing) and apply it to new situations</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Interact and discuss: Peers, Forum, office hours</p></li>
+<li><p>Be careful you know how to interpret the exam instructions correctly, and use your time wisely</p></li>
+</ol>
+<p><em>Skills to hone and build.</em> Your success in this module will depend in large part on building and applying basic maths skills and tools (mainly at the GCSE level), and strong reading/writing/logic abilities. You should build the ability to comprehend and respond carefully and logically to nuanced questions (essay/short answer, solved problem, and multiple choice). These problem will incorporate quantitative reasoning, logic, and the ability to understand and clearly express ideas, to correctly characterise and describe theories and evidence, and to apply learned principles to new situations.</p>
+<p><font color='gray'>This last comment is especially relevant for non-native speakers of English.</font></p>
+<p><em>Students in past years often worried a great deal but got very good marks, and showed good understanding</em></p>
+</div>
+<div id="fortune-cookie-wisdom" class="section level2">
+<h2><span class="header-section-number">2.11</span> Fortune Cookie Wisdom</h2>
+<p>Here are some broad Lessons that I hope you take away from this module, And that will help you throughout… I will come back to these.</p>
+<p><img src="picsfigs/fortunecookieyoda.jpg" width="2.5in" style="display: block; margin: auto;" /></p>
+<p></p>
+<p><em>It may seem like we have the answers, but this is only where we have asked the questions very carefully</em></p>
+<hr />
+<p></p>
+<ul>
+<li>But sometimes ignorance is bliss.</li>
+</ul>
+<p><em>Examples:</em> Sunk-cost fallacy, gains to trade/comparative advantage, opportunity cost,
+free-riding/prisoners’ dilemma, double-marginalization,‘raise price to raise profit’, etc.</p>
+<!--
+Todo: add in-document links to the above
+-->
+<p>I’ve had many discussions about these things with my non-economist wife. Some of them make her more sanguine and content; other stress her out.</p>
+<hr />
+<p></p>
+<p>We are building models based on very precisely defined assumptions, usually assuming things like a ‘single representative consumer’. These models are seductive and very helpful for clearly conveying insights.</p>
+<p>However, when it comes to applying these things to the real world, or testing these models, be careful; people may differ and they may change and they may have multiple motives.</p>
+<!---
+![Pilkington](http://img10.deviantart.net/c0b7/i/2015/178/f/7/karl_pilkington_by_kevandre-d8z0zzh.png)\
+-->
+<hr />
+<p><strong>Major theme: Markets work well but not perfectly. Imperfections in existing markets <span class="math inline">\(\rightarrow\)</span> opportunities.</strong><br />
+</p>
+<p>I don’t want you to go away thinking that economists believe, ‘markets solve everything, markets yield the best of all possible worlds’. The simplest models do aim to show the conditions under which this holds, but that is not a good characterization of most economic work. Most economists recognize the existence of market failures, and I believe that most recognize the usefulness of government intervention in many cases. Difference of opinion mainly arise over the prevalence of these market failures, and the extent to which government can do a good job of fixing them, or ends up making things worse.</p>
+<p>I’m not telling you what <em>you</em> need to believe, I just don’t want you to have a false impression of mainstream Economics.</p>
+<p>As I also mentioned, these apparent imperfections or market failures actually can lead to opportunities to create value and profit. Things that were once market failures might be solved by technology or new frameworks.</p>
+<p>Here are some possible examples.<br />
+</p>
+<p><em>Imperfection:</em> Inefficient monopoly markups for information goods<br />
+</p>
+<p><span class="math inline">\(\rightarrow\)</span> ‘All you can eat’ <span class="math inline">\(\rightarrow\)</span> <font color='blue'>Spotify, Netflix, Kindle Unlimited</font><br />
+<br />
+</p>
+<p><font color='gray'>When people who value certain goods which could be shared with them at no cost, are nonetheless priced out of this market, this represents an inefficiency. The only price per unit that will lead to the efficient amount of consumption Would here be a zero price. However, firms and content providers cannot stay in business with zero prices. On the other hand, if they can get a good signal of what people would be willing to pay for ‘all-you-can-eat’ And then charges this to them as a subscription fee, Those consumers who subscribe will then consume the efficient amount. This represents an example of a two-part tariff, a form of price discrimination which may actually increase welfare. We will learn more about price discrimination later.</font></p>
+<p>Free-riding on public goods<br />
+</p>
+<p><span class="math inline">\(\rightarrow\)</span> <font color='ForestGreen'>Disneyworld, resorts</font><br />
+</p>
+<p><br />
+<font color='gray'>We will see that markets will not provide the efficient amount of certain goods that are non-rival and non-excludable. However (as for the information goods case), 4 large enough territory some of these things like fireworks can essentially be made excludable. Disney World has fireworks every night, and they own such a large property that they can exclude people from coming anywhere near where the fireworks are being shown, so it would be hard to free ride. They then charge an admission fee to ‘be inside of Disney World’ and then they want to make the experience of being inside Disney World as nice as possible, so they produce a great deal of what would otherwise be considered public goods.</font><a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+<p>Imperfection: Lack of information about ‘experience goods’, lack of trust in one-shot-interactions<br />
+</p>
+<p><span class="math inline">\(\rightarrow\)</span> <font color='ForestGreen'>Uber, AirBnb</font><br />
+</p>
+<p><br />
+</p>
+<p>Another potential market failure comes from Asymmetric information (we won’t cover this in detail); consumers may not know the quality of a product until after they have purchased it. In some cases, this means no one may be able to sell a certain product because consumers will not trust its quality, the so-called ‘lemons problem’ or ‘adverse selection’. Reputation systems, particular those developed on Internet sites like Uber and Air B&amp;B, can help reduce this problem and create new markets (and profit for themselves).</p>
+<hr />
+<p>Shyness and fear of ‘losing face’<br />
+</p>
+<p><span class="math inline">\(\rightarrow\)</span> <font color='ForestGreen'>Tinder</font></p>
+<p>Perhaps two people want to work together, or socialize or romance each other. However they may both be afraid of the consequences of being rejected. Even though both would like to be ‘partnered’, neither will make an overture to the other because the risks seem too high.</p>
+<p>A third-party intermediary, man or machine, could be set up to only share information about ‘Mutual matches’. Once again, this will create fruitful transactions and the intermediary may be also be able to profit.</p>
+<p><font color='gray'>If you’re interested, see my research on this</font> <a href="https://www.dropbox.com/s/tx4yfun1ctxuezw/LosingFace.pdf?dl=0">here</a>, presentation slides <a href="http://wp.me/aZhn3-c8">here</a>, my research page is <a href="https://wordpress.com/page/davidreinstein.wordpress.com/18">here</a>.</p>
+<p><br> </p>
+<p>Asymmetric information, adverse selection<br />
+</p>
+<p><span class="math inline">\(\rightarrow\)</span> <font color='ForestGreen'>NHS, ‘Obamacare’</font></p>
+<p>This one <em>is</em> a government intervention, obviously. However, private corporations are very deeply involved in these markets and healthcare systems; even in the UK, where healthcare Is perhaps more Directly provided by the government than anywhere else in the world, there are private providers like BUPA.</p>
+<p>Insurance markets can fail because of a problem of ‘adverse selection’. A given set of insurance policies will tend to be more attractive to those people who envision their at more risk; in the context of health insurance, more likely to become sick and require hospitalization. Because of this, insurance companies will need to charge rates that reflect risks for the less healthy population. Because of this, healthier people may be ‘priced out of the market’, i.e., prefer to not obtain insurance. This may be inefficient because Even these healthy people may be ‘risk-averse’, and would benefit from purchasing ‘actuarially fair insurance’ (We will define these terms later).</p>
+<p>There is a strong case to be made that a mandate to purchase insurance ( or system of fines and subsidies) can improve overall outcomes in these situations. This is the logic behind several healthcare systems and proposals, including the USA Affordable Care Act passed under the Obama administration, and some aspects of the Netherlands’ system as well.</p>
+<p><font color='RawSienna'>Adv: Firms themselves do not typically use markets: if we look inside the firm and see all sorts of mechanisms to correct or circumvent internal markets. Understanding when and why firms do this, and the trade-offs involved, can help you be a better manager. For example, when should you ‘outsource’ And when should you keep a task in house? When should you offer employees very strong incentives and when should you just tell them what to do?</font></p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="2">
+<li id="fn2"><p>Much of this work has tried to specify more and more <em>general</em> conditions for this, requiring less and less stringent assumptions.<a href="intro.html#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>For a different approach see ‘radical xchange’ (sp?), Blockchain and Robert Wiblin 80000 hours podcast episode 63,interview with Vitalik Buterin.<a href="intro.html#fnref3" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="note.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="models.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": true,
+"weibo": true,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
