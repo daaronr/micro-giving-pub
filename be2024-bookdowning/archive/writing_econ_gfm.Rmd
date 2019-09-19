@@ -1,0 +1,4450 @@
+# About this work {-}
+
+`r format_with_col("**Note to friends I've asked to look at this book...**","brown")`
+
+`r format_with_col("Thanks for looking at this. You can leave feedback however you like, including via 'hypothes.is' as suggested just below. Let me know if you want acccess to the github account. \ This is a work in progress. To do this right will take a lot more work, and I may need to seek funding -- let me know if you have any ideas about potential grants/funders. I'm also interested in potentially joining forces with other authors.", "brown")`
+
+## Preface {#preface}
+
+I do not consider myself to be a `r format_with_col("*Great Writer*","purple")`^[At least one of my [un-named research co-authors](https://sites.google.com/site/davidhughjones/) will heartily agree with this statement.], but I hope that my advice will nonetheless offer a good foundation.
+
+I intend this work, as a 'web book', to be a living resource, continuously improving, building content, and incorporating feedback and collaboration. I will try to make this as interactive and responsive as possible.
+
+**Leaving feedback, asking questions, seeking other's feedback/notes/questions:**
+
+*All feedback is appreciated, and I will try to respond to your questions.* An easy way to take notes and leave feedback: sign up for ['hypothes.is'](https://web.hypothes.is/) and you can put your 'public notes' *directly on this web book.* Don't worry, these comments are saved even if the web book is updated.
+
+<!--
+(As noted at <https://www.econometrics-with-r.org/>; thanks for this example:) 
+-->
+
+<div class = rmdreview>
+This book is in <b>Open Review</b>. We want your feedback to make the book better for you and other students. You may annotate some text by <span style="background-color: #3297FD; color: white">selecting it with the cursor</span> and then click the <i class="h-icon-annotate"></i> on the pop-up menu. You can also see the annotations of others: click the <i class="h-icon-chevron-left"></i> in the upper right hand corner of the page <i class="fa fa-arrow-circle-right  fa-rotate-315" aria-hidden="true"></i>
+</div>
+
+If you have benefitted from this work (and you are not one of my students), please consider giving me some sort of ''kudos'' on Twitter or wherever. One way to materially express gratitude: make a donation in my honor to an *effective and international charity*, such as those listed at [givewell.org](givewell.org). If you make this donation and share it on a social media site with the hashtag #DRWritingEcon, that would be greatly appreciated.
+
+### Licence
+
+Essentially:
+
+- You can use this freely and create other versions as long as you give proper attribution, and you make your work publicly available
+
+- You cannot sell this or use it, or any part of it, for commercial purposes
+
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Researching and writing in Economics (Essays, term paper, dissertations for Economics undergraduates and MSc students)</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/daaronr/writing_econ_research" property="cc:attributionName" rel="cc:attributionURL">David Reinstein</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+## Examples of the sort of fancy interactive stuff I hope to incorporate in this web book
+
+Thanks to Yihui and many others, this book should permit lots of flexible tools. Trying some of these below (with code shown, but it could also be hidden). Thanks Yihui for the [Bookdown package](https://bookdown.org/yihui/bookdown/). 
+
+### A Shiny app {#shiny_test}
+
+```{r knitrapp}
+
+knitr::include_app("https://yihui.shinyapps.io/miniUI/", 
+  height = "600px")
+
+```
+  
+### My web pages
+
+
+[innovationsinfundraising.org](https://innovationsinfundraising.org/doku.php)
+
+(This page couldn't embed)
+
+***
+
+```{r wppage}
+
+knitr::include_url("https://davidreinstein.wordpress.com/")
+
+```
+
+***
+
+### Scary math
+
+$$\Theta = \begin{pmatrix}\alpha & \beta\\
+\gamma & \delta
+\end{pmatrix}$$
+
+### R code and data 
+
+These are "code chunks"
+
+```{r chunk-label, echo = FALSE, fig.cap = 'A figure caption.'}
+x <- 1 + 1
+rnorm(10)  # 10 random numbers
+plot(dist ~ speed, cars)  # a scatterplot
+```
+
+And I can refer to the results of the r code in the text itself, e.g., by writing  
+
+````
+``  one plus one equals  ` r x `   ``
+````
+
+I get ... one plus one equals `r x`. 
+
+### Other fancy stuff
+
+
+```{r, eval = my_output == "html", results='asis', echo=F, purl=F}
+cat('
+<div class = "keyconcept" id="KC5.4">
+<h3 class = "right"> Key Concept 5.4 </h3>          
+<h3 class = "left"> Heteroskedasticity and Homoskedasticity </h3>
+- The error term of our regression model is homoskedastic if the variance of the conditional distribution of $u_i$ given $X_i$, $Var(u_i|X_i=x)$, is constant *for all* observations in our sample:
+\\[ \\text{Var}(u_i|X_i=x) = \\sigma^2 \\ \\forall \\ i=1,\\dots,n. \\]
+
+</div>
+')
+```
+
+"Note"
+
+```{block2,  type='note'}
+
+"Aside" notes look like this.
+
+```
+
+```{block2,  type='warning'}
+
+Warnings look like this.
+
+```
+
+## Why am I writing this book? {#why_this_book} 
+
+To the best of my knowledge, as of today,  29 Jul 2019, there is no detailed useful guide to writing and doing Economics research targeted at undergraduates (and UK-style MSc students).
+
+Some [good resources are available](#other_guides) but these:
+
+1. Are mainly targeted at a higher level, and emphasize more advanced, nuanced points,
+
+2. are not all publicly-available 
+
+3. are not interactive nor 'web-based'.
+
+The third point is crucial: in my opinion the standard 'textbook' is dead. Particularly for a topic like this, we need a living resource, which can:
+
+- enable organised feedback and discussion forums.
+
+- be continually improved in light of feedback,
+
+- be updated to address new issues and standards in Economics,
+
+- ... and new research technology,
+
+- have hyper-linked content, 
+
+- and incorporate [interactive tools](#shiny_test).
+
+
+## Using this book
+
+
+### Is it helpful?
+
+Some things I write here may seem obvious. But try to think “why is he  emphasizing these points?” I have collected these suggestions through years of experience.
+
+There is evidence. 
+
+Every year many students:
+
+make similar errors
+
+waste time on the wrong things
+
+and fail to take simple steps that would greatly help them
+
+Markers find the same shortcomings year after year. If you pay attention, you can be smarter than that!
+
+### The structure of this book; what to read and when
+
+### Notes for instructors and course organisers
+
+# Doing a research project: why and how
+
+## Why is doing a research project valuable?
+
+**It will give you the chance to**
+
+- Express your own ideas
+
+- Demonstrate real understanding that goes beyond test-taking skills
+
+- Show your ability to integrate material
+
+- Produce a writing sample
+
+- Gain useful skills and experience that will benefit your academic life and career  
+A _dissertation_ or final-year project allows you to explore your aptitude for, and interest in doing economic research. Depending on your department’s rules, you may be invited to choose a topic from a list provided by your instructor or you may be allowed to propose your own topic, subject to your department’s approval. You will use your intellect, skills, creativity, and economics training. You will develop a strong “writing sample” to show prospective employers, academic programs, and academic referees. You will be able to interact directly with your supervisor, to learn from him or her, and to make an impression that will inspire your supervisor to write you a strong letter of reference.
+
+Finally, consider why you are here. You did not come to the university just to read what others have written and nod in appreciation. You are now being given a chance to express yourself. You are taking a first step towards making an impression on the world. Congratulations! Don’t waste your chance; make good use of this opportunity!
+
+<!-- ## How to demonstrate your ability, knowledge, sophistication and insight *in* *economics*
+## How to make a modest original contribution
+-->
+
+## What you should aim for with an (undergraduate) dissertation; what you should aim for in an essay (coursework)
+
+*(See ingredients below.)*
+
+Your _dissertation_ or “final project” is the output of your own intellectual labor. You will employ the skills and knowledge you have learned throughout your degree, and you will explain, critique, and integrate the work of other authors. But you should also strive to include some of your *own unique ideas, insights, and original analysis.*
+
+We do not expect what you produce to be at the level of a professional academic paper. Still, a professional academic paper should serve as your model. As you read these, try to follow their style, format, presentation, etc.
+
+A *coursework essay* for a standard module is less ambitious. It is largely meant to demonstrate that you understand the principles taught in the module, and that you can apply them to a new but relevant case, topic or situation. Term papers may also be used to show your understanding of a topic that goes slightly beyond what is covered in the module. You should, as much as possible, try to use your own words and express your own insights and views, while still using clear, professional language. A term paper may involve original analysis, but this is not usually necessary. Sometimes, a term paper can be an informed literature survey. (No matter what form your essay takes, remember never to *plagiarise*).
+
+
+
+## Ingredients of a successful paper/dissertation
+
+<!-- *In this section* I briefly discuss the elements of a good research paper. Read this section first to get a sense of what you are aiming at. 
+-->
+
+<!-- In the next section ['The process of “researching while writing"'] (#process) I will go into more detail about how to actually achieve this.
+-->
+
+**Six simple rules for writing a good paper** (and, incidentally, for getting a good mark)
+
+1. Frame your topic as an interesting, well-defined **Economic** question. Demonstrate that you understand your question.
+
+2. Explain what others have written about your topic and which techniques they used. **[Critically](#crit_examine) discuss** the strengths and limitations these. Explain how these relate to and inform your own work. Cite correctly and do not plagiarise.
+
+3. **Apply economics** (and econometrics) to your question. Demonstrate an understanding of your approach and techniques.
+
+4. **Organise and present** your work clearly, including an outline and labels and explanations of any tables, graphs, and equations.
+
+5. Write clearly, logically, and in a professional **academic** style. 
+
+6. If you are aiming to produce a great paper, make an original contribution or **insight.** (This can be a small insight, and it is not always necessary for a top mark.)
+
+***
+
+```{r  fig.cap = 'Just remember...', out.width='40%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
+knitr::include_graphics("images/ecacoacin4life.jpg")
+
+```  
+
+Just remember the simple acronym "ECAOAcIn":^[(Isn’t that catchy?)]
+
+**E**conomic question -- **C**ritical discussion -- **A**pply economics --  **O**rganise/present well -- **Ac**ademic writing -- original **In**sight 
+
+
+## Getting it right
+
+In the rest of this book, I cover these ingredients in more detail. 
+
+<!-- Some key elements:
+
+(Outline and link here...)
+-->
+
+
+## 'Parameters' of the assignment
+
+**Word counts** may be provided for two reasons:
+
+1. As a rough guide for how much content is expected and
+
+2. To limit the length of papers so your instructor can mark all of the assignments in a timely manner.
+
+In general, the content is what is important, not the words. Those evaluating your essay will ask: 
+
+1. As a rough guide for 'how much content is expected' and
+
+2. To limit the length of papers, to make it possible for the instructors to mark all of the many assignments in the limited time they have. 
+
+In general, the *content* is what is important, not the word count.  Those evaluating your essay will ask: 
+
+- Have you carefully posed and defined your question? 
+- Do you understand the previous work that has been done? 
+- Have you used and explained your methods? 
+- Have you done careful and correct work? 
+- Have you explained your assumptions and findings clearly and logically?  
+
+
+*Don’t pad your writing to achieve the required word count.* In fact, if you can convey the same ideas with fewer words and less repetition, this is better! Focus on *content* and not the *number* of words.
+
+
+<!--
+
+## Thinking about your mark: what markers will be looking for 
+
+(Demonstrating insight etc., modest original contribution)
+
+A successful *theory paper* (refer to examples … From the
+EESJ or
+elsewhere)
+
+A successful *survey paper *
+
+A successful *empirical paper (1 macro, 1 micro?)*
+
+A successful *case-study based paper*
+-->
+
+
+## Examples of successful undergraduate dissertations:
+
+You will find excellent examples of research writing in published journals. It is also useful to get a sense of what other undergraduates have done. Here are some to consider.
+
+The [Essex Economics Students
+Journal](http://www.essex.ac.uk/economics/research/publications/eesj/)
+includes some of the best term papers and undergraduate projects from
+the past decade. However, these papers are not “edited”
+for presentation in the journal, so even these papers may have
+weaknesses.
+
+At UC Berkeley, <https://www.econ.berkeley.edu/undergrad/theses> lists
+all of their honors undergraduate papers.
+
+For example, here is a very good empirical paper on development
+economics:
+<https://www.econ.berkeley.edu/sites/default/files/Soosun%20Tiah%20You_thesis.pdf>
+
+Here is a good example of how to present tables and output from Stata:
+<https://www.econ.berkeley.edu/sites/default/files/David%20Arnold%20thesis.pdf>
+
+These are examples from Stanford 2013 (there are also links to 2012 and
+previous years):
+
+<http://economics.stanford.edu/content/honors-thesis-2013>
+
+[Here is a good, though rather advanced, micro theory
+paper](http://economics.stanford.edu/files/Theses/EvanStormsHonorsThesis-May2013.pdf).
+
+Winners of the “best thesis prize” at Duke University are shown here:
+
+<http://econ.duke.edu/undergraduate/honors-program/awards-and-showcases>
+
+This paper combines theory and empirical work:
+
+Joel Wiles,["Mixed Strategy Equilibrium in Tennis
+Serves"](http://econ.duke.edu/uploads/assets/dje/2006_Symp/Wiles.pdf)
+(2006)
+
+**Things that will count in your favour**
+
+**Things that will count against you **
+
+**How markers do their job**
+
+## Following up after you have turned in your dissertation (or essay, or proposal/draft)
+
+You have written your paper (or draft) and been given a mark. Now let's throw it
+in the bin and forget about it? Absolutely not\! You have on paper an
+expression of your own thoughts and ideas. One or more professional
+academics have read your work, and giving you feedback. Look at the
+feedback, learn from it, and make notes and changes; you cannot reuse
+this specifically for another assignment, but it may be an important
+writing sample for your future career. It may also be something you can extend and even turn into a publication at some point in the
+future.^[This was my experience with an undergraduate dissertation that eventually became a paper co-authored with the professor who suggested the idea. See @Reinstein2005b. I also won a "Hsieh prize" for best undergraduate dissertation at GWU, which earned me \$900, if I recall correctly. Maybe your university also has a prize you are not aware of.]
+    
+# Getting started {#getting_started}
+
+*This section is about "getting a lay of the land" (orientating yourself) and "getting the ball rolling" (getting things started).
+
+1. What is Economics research? What are the [methods](#whats_theory_empirical) and [fields](#fields)?
+
+2. [How do I ask a good question?](#ask_qn) 
+
+3. [What should I read to help me understand the previous two questions?](#read_ideas)
+
+4. [How should I interact with my supervisor/advisor?](#advisor)
+
+
+- Choosing and refining your dissertation topic
+
+- Beginning your [literature review](#lit_review_ref)
+
+
+
+## Asking a good question {#ask_qn}
+
+**How to ask your question; Posing a relevant, and well-formulated
+question**
+
+Maybe you already have an idea burning in your head for years, and you are simply waiting for the sound of the pistol to set your research engines in gear. If so, you are probably a rare exception; students often have only a vague idea of what they are interested in, and no clear sense of what it means to ''do an Economics research project.'' When I was an undergraduate it sometimes seemed like all the questions were already answered and written in the textbooks. Rest assured this is not the case.^[Although economists have been at it for centuries, and built daunting models, these are based on strong and limiting assumptions. These represent simplifications of the real-world; it is not obvious which model best represents a given situation. On the major (and minor) economic questions, the evidence is often thin and contested. (There is some truth to the adage "ask two economists and get three answers.")]
+
+## What makes a good question?
+
+**What is a “well formulated question”? How should you state your question?**
+
+
+Be clear about what your question is asking; state it in a way that it cannot be misinterpreted. It should be able to be applied to real-world situations and real world data. It should generate falsifiable hypotheses about specific observable things in the real world that (ideally) can be measured.
+
+**What is an “interesting question”? What is a “useful question”?**
+
+Such a question can tell us about human behavior in general, and in the economic sphere (choices subject to constraints). It can help us refine
+and develop our economic models. It can “inform policy”, i.e., the best policy to choose depends on the answer to your question. Once you have a good understanding of your question, throughout your paper and your work,
+always ask yourself “how does this relate to my question”? ...a good question
+
+> A good term paper will ask an interesting question and offer a plausible answer. It should be plausible in that it is (probably) true, but also not obviously or patently true; and it should be supportable in that it is subject to factual observation or logical demonstration 
+> (Gordon Harvey, Harvard Writing Program).
+
+For another perspective on a "useful question", see the [Effective Thesis Project](http://effectivethesis.com/).
+
+
+## 'Economy theory, science, and previous evidence suggest testable hypotheses'
+
+(From Erica notes [citation needed])
+
+-  Phillips Curve: Negative relationship between inflation and unemployment. Causal statement: Lower higher inflation *leads* to lower unemployment, *ceteris paribus. *
+
+-  Returns to Schooling, human capital: Increased schooling *leads* to higher wages. 
+
+- Health and Income: Positive relationship between life expectancy and GNP per capita. 
+
+- Income Pooling Test : Parents may pool their incomes in order to invest in human capital for their children. 
+
+-  Child Health and Mother's Inputs : Breast feeding increases the cognitive development of children. 
+
+**Consider: Which of the following are “statements of causality:?**
+
+1. Health and Income: There is a positive relationship between life
+expectancy and GNP per capita.
+
+2. Income Pooling Test : Parents may pool their incomes in order to invest
+in human capital for their children.
+
+3. Child Health and Mother's Inputs : Breast feeding increases the
+cognitive development of children.
+
+(Answer: Only the third one, but 1 and 2 could be reformulated as causal
+statements)
+
+
+### Reading to get ideas {#read_ideas}
+
+*Reading* may help you get ideas, consider approaches, and formulate a question. 
+
+**For broad ideas and motivation**, read the newspaper, magazines like the Economists, and websites and blogs.  While reading, ask yourself questions such as: 
+
+- Does this article suggest a *puzzle* that might be answered by Economics?
+
+- Does this resemble a particular economic model I have learned? How is it similar or different?
+
+- What are the open economic questions raised by this article? 
+
+- Is evidence presented or discussed? Is the evidence credible? Does the evidence really provide a convincing case for the ``causal story'' being told?
+
+-  What data might be appropriate for answering the questions raised? Does the article suggest a new source of data?
+
+<!-- Todo: examples here, guidance while reading this.  Give an example --> 
+
+To understand what research in Economics is, how it's done, and how it is organised, you should also start reading **academic Economics papers** in **reputable-peer reviewed journals** like
+the *Journal of Economics Perspectives* and  *The Journal of Economic Literature*, which offer broad surveys, as well as journals such as the *Quarterly Journal of Economics* and the *Economic Journal*, which publish original research in a fairly-accesible format. (Articles in journals such as *Econometrica* are often  too technical for an undergraduate to follow.)
+
+
+An example: 
+
+Romer, David. 1993. Do students go to class? Should they? Journal of Economic Perspectives 7 (Summer): 164-174.
+
+We will return to this below, when we consider the [literature review and referencing](#lit_review_ref), and in more detail when we discuss the [process of doing a literature review](#lit_review_do).
+
+#### Consulting textbooks and course and module materials
+
+
+## Things you may want to try to get together early in the process, and put in your preliminary 'proposal' {#early_things}
+
+**If you will use data**
+
+- The name and source of your data set, the “scope” of it (e.g., years covered, countries, etc.) whether you have downloaded it, the format it is currently in, the number of observations and variables.
+
+- Some *specific estimation commands* you plan to use as part of your analysis. (Note: this will go in your plan but you should not put statistical code in the main body of  your final project).
+
+**If you will do a case study analysis**
+
+- The source of the material for some of the cases you will analyse, and a discussion of how you will analyse these.
+
+**If you are doing a theory paper**
+
+- Some of the key equations in your model, or in the model that you are expanding upon.
+
+**If your paper is an extended literature review**
+
+- Some of the key insights you hope to bring to this review, ways you intend to critique the existing work, and/or lines along which you plan to compare existing work.
+
+
+## Meeting with your advisor and interacting with him/her {#advisor}
+
+Most students writing dissertations are matched with a 'supervisor', ideally a supervisor who is interested in the area of research you have chosen. (It may be advisable in choosing a topic to consider your potential supervisors' expertise. )
+
+Your supervisor will welcome your initiative; try to make the best use of his or her time and effort (and your own). 
+
+The role of the supervisor is to give feedback, not to tell you what to do! You are supposed to be an expert on the specific topic; your supervisor may not be (but always has general economics knowledge and experience to share). 
+
+Come prepared: Try to solve your problems on your own first, and take notes on where you are stuck.  Bring any outlines, drafts, and notes you have made.  
+
+You may also email your supervisor an update on your progress and a draft, but she may not always have time to read your work. Remember: time spent reading your drafts count towards the allocated supervision time. 
+
+Before you email or bring in work to your supervisor, make sure that it is readable. Your supervisor does not know what you are thinking or intending, only what you write or explain verbally. 
+
+Do not come only at the last moment!  
+
+`r format_with_col("Discuss your dissertation with your supervisor, and ask him or her to take notes if possible. This will be helpful if you later want to ask for a letter of reference!  If you want someone to write a good letter, he or she  must know you well.","gray")`
+
+
+
+# Economics: Methods, approaches, fields and relevant questions {#methods_fields} 
+
+## Economic theory and empirical work: What is it? {#whats_theory_empirical}
+
+**What is economic theory and what can it do?**
+
+Unlike “theory” in some other social science disciplines, economic
+theory is mostly based on mathematical modelling and rigorous proof that
+certain conclusions or results can be derived from certain assumptions.
+But theory alone can say little about the real world.
+
+`format_with_col("In Economics: Models = Theory = Mathematics... for the most part.","orange")`
+
+
+**What is empirical work and what can it do?**
+
+In contrast, empirical work gathers evidence from the real world,
+usually organized into systematic data sets.
+
+  - It tries to bring evidence to refute or substantiate economics
+    theory,
+
+  - It tries to estimate parameters such as *price elasticity* or *the
+    government spending multiplier* in specific contexts
+
+  - It rigorously presents broad “stylized facts”, providing a clear
+    picture of a market, industry, or situation
+
+Much empirical work itself relies on assumptions, either assumptions
+from economic theory, or assumptions about the data itself, or both. But
+empirical work does not “prove” anything. Instead, it presents evidence
+in favour of or against certain hypotheses, estimates parameters, and
+can, using the classical statistical framework, reject (or fail to
+reject) certain null hypotheses. What “rejecting” means is “if the
+assumptions underlying my estimation technique are correct, then it is
+highly unlikely that the null hypothesis holds.”
+
+
+## Normative vs. Positive
+
+The word 'Normative', also called 'prescriptive', often refers to  what ought to be, what an ideal policy
+would be, or how to think about judging whether this is a justifiable welfare
+function. 
+
+"Positive" work claims to be value-neutral and to address what
+is or what must be going on in the real world. Most modern economists
+would probably claim their work is "positive", and in this sense, "prescriptive" is often
+used as a pejorative, In my experience. However, prescriptive papers can be
+very valuable if done well.
+
+
+```{block2,  type='note'}
+
+Note: There is also another context in which you will hear the expression 'normative analysis.' This may also be used to describe microeconomic analysis derived from the axioms of rational optimising behavior; this describes much of what you have covered in your textbook. This dual meaning of the word 'normative' is admittedly confusing!
+
+```
+
+## Theoretical vs. Empirical (techniques)
+
+Papers that use theory (modeling) as a technique typically start from a
+series of assumptions and try to derive results simply from these
+assumptions. They may motivated their focused or assumptions using on
+previous empirical work and anecdotes, but these papers do not use
+themselves data nor do they do what we call "econometrics". Remember
+that in Economics "theory papers" are usually highly mathematical and
+formal.
+
+Empirical papers use evidence from the real world, usually to test
+hypotheses, but also to generate description and help formulate ideas
+and hypotheses.
+
+## Theoretical vs. Applied (focus)
+
+"Theoretical" can also be used to describe a paper's focus; a
+theoretical paper in this sense will address fundamentals of economic
+modeling. In theory, these may be widely applied across a range of
+fields, but they do not typically address any single issue of policy or
+focus on a specific industry. These papers are often very difficult to
+read and there is argument about whether many such papers will
+ultimately "trickle-down" to having practical use. These papers
+typically used theory and modeling techniques rather than empirics.
+However some empirical papers may be aimed at addressing fundamental
+theoretical issues and parameters.
+
+Papers with an "applied" focus will directly target a policy issue or a
+puzzle or question about the functioning of certain market or nonmarket
+interactions. Nearly all of the papers you will read and work on as an
+undergraduate are "applied" in this sense.
+
+## Categories of empirical approaches 
+
+###  “Causal” vs. “Descriptive”
+
+"Causal" papers try to get at whether one factor or event "A" can be
+seen to directly "cause" an outcome "B". For example, "does an
+individual getting more years of schooling lead him or her to have
+higher income, on average?" A good way to think about this conception of
+causality is to consider the counterfactual: if a typical person who
+received a university degree had been randomly selected to not get this
+education, would her income have been lower than it now is? Similarly
+(but not identically) if the typical person without his education had
+been randomly input into a university program, would her income now be
+greater?
+
+Since the real world does not usually present such clean experiments,
+"causal" empirical researchers rely on various techniques which usually
+themselves depend on" identification assumptions." See, for example,
+control strategies, difference in difference, and instrumental variables
+techniques.
+
+### Structural vs. Reduced Form
+
+This is a rather complicated issue, and there are long debates over the
+merits of each approach.
+
+In brief, structural empirical papers might be said to use theory to
+derive necessary relationships between variables and appropriate
+functional forms, often as part of a system of questions describing a
+broad model. They then "take this model to the data", and estimate
+certain parameters; these estimates rely on the key structural
+assumptions and the chosen functional form (which is often selected for
+convenience) holding in the real world. They may also try to check how
+"robust" the estimates are two alternate assumptions and forms.
+Structural estimates can then be used to make precise predictions and
+welfare calculations.
+
+Reduced form work may begin with some theoretical modeling but it will
+not usually try to estimate the model directly. Reduced form work often
+involves estimating single equations which may be "partial equilibrium",
+and they may often use linear regression and interpret it as a "best
+linear approximation" to the true unknown functional form. Reduced form
+researchers often claim that results are "more robust" than structural
+work, while proponents of structural work may claim that reduced form
+econometrics is not theoretically grounded and thus meaningless.
+
+Most of you are likely to focus on reduced form empirical work.
+
+### Quantitative vs. qualitative (the latter is rare in economics)
+
+Quantitative research deals with data that can be quantified, i.e.,
+expressed in terms of numbers and strict categories, often with
+hierarchical relationships.
+
+Qualitative research is rarely done in modern economics. It relies on
+"softer" forms of data like interviews that cannot be reduced to a
+number or parameter, and cannot be dealt with using statistical
+techniques.
+
+## Methodological research 
+
+Methodological research is aimed at producing and evaluating techniques
+and approaches that can be used by other researchers. Most
+methodological research in economics is done by econometricians, who 
+develop and evaluate techniques for estimating relationships using
+data.
+
+## Fields of economics, and some classic questions asked in each field {#fields}
+
+> Economics is about choices under conditions of scarcity, the interaction of individuals governments and firms, and the consequences of these. [citation needed]
+
+### Microeconomics
+
+**Preferences and choices under constraints**; e.g., “how do risk-averse individuals choose among a set of uncertain gambles?” … “How does consumption of leisure change in response to an increase in the VAT?”
+
+<br>
+
+**Game theory, interactions**; … “How do individuals coordinate in ‘stag hunt’ games, and are these equilibria robust to small errors?” 
+
+
+<br>
+
+**Mechanism design and contract theory**; … “How can a performance scheme be designed to induce the optimal level of effort with asymmetric information about ability?”
+
+<br>
+
+**Equilibrium**; … “Is the general equilibrium of an economy with indivisible goods Pareto optimal?”
+
+<br>
+
+### Macroeconomics
+
+**Stabilisation**; … “how do changes in the level of government spending affect the changes in the rate of unemployment?”
+
+<br>
+
+**Growth**; …“Why did GDP per capita increase in Western Europe between 1950 and 1980?”
+
+<br>
+
+**Aggregates, stocks, and flows**; … “Does a trade deficit lead to the government budget deficit, or vice/versa, (or both, or neither)?”
+
+<br>
+
+**Money and Banking** … “Does deposit insurance decrease the likelihood of a bank run?”
+
+
+<br>
+
+### Financial Economics (not as broad as the first two)
+
+“Can an investor use publicly-available information be used to systematically earn supernormal profits?” (the Efficient Markets Hypothesis)
+
+### Econometrics (methods/technique)
+
+“What is the lowest mean squared error unbiased estimator of a gravity equation?”
+
+### Experimental (a technique)
+
+Do laboratory subjects (usually students) coordinate on the efficient equilibrium in \`stag hunt’ games? Do stronger incentives increase their likelihood this type of play?
+
+### Behavioural (an alternate approach to micro)
+
+“Can individual choices over time be rationalised by standard exponential discounting, or do they follow another model, such as time inconsistent preferences and hyperbolic discounting?”
+
+### Applied fields
+
+##### Development 
+
+“Has the legacy of British institutions increased or decrease the level of GDP in former colonies?”
+
+#### Labour
+
+"Do greater unemployment benefits increase the length of an unemployment spell, and if so, to what extent?”
+
+#### Public
+
+"Does public support for education increase or decrease income inequality?”
+
+#### History
+
+“Why did the industrial revolution first occur in Britain rather than in another country?”
+
+#### Trade
+
+“Are protectionist infant industry policies’ usually successful in fostering growth?”
+
+
+#### International 
+
+“Do floating (rather than fixed) exchange rates lead to macroeconomic instability?”
+
+#### Environmental
+
+“What is the appropriate discount rate to use for considering costly measures to reduce carbon emissions?”
+
+#### Industrial Organization 
+
+“Do firms innovate more or less when they have greater market power in an industry?”
+
+#### Health
+
+“Do ‘single payer’ health care plans like the NHS provide basic health care services more or less efficiently then policies of mandated insurance and regulated exchanges like in the Netherlands?”
+
+A more extensive definition and discussion of fields is in Appendix A of
+[“Writing Economics”](http://isites.harvard.edu/fs/docs/icb.topic235750.files/WritingEconomics.pdf)
+
+
+### Do you know?...
+
+*Which type of analysis typically uses the most ‘difficult, formal’ maths?*^[Answer: 1. Microeconomic theory]
+
+1. Microeconomic theory 
+1. Applied econometric analysis
+1. Descriptive macroeconomics
+
+
+# Literature review and citations/references {#lit_review_do}
+
+```{r fig.cap='Literature reviews and references', out.width='50%', fig.asp=.5, fig.align='center', echo = FALSE}
+knitr::include_graphics("images/lit_review_header.png")
+```
+
+Your may have done a literature survey as part of your proposal. This will be *incorporated* into your dissertation, not left as separate stand-alone. Most economics papers include a literature review section, which may be a separate section, or incorporated into the paper's introduction. (See {#organising} for a standard format.)
+
+```{block2,  type='note'}
+
+*Some disambiguatino:*
+  
+A ‘Literature survey’ paper: Some academic papers are called ‘literature surveys’. These try to summarise and discuss the existing work that has been done on a particular topic, and can be very useful. 
+See, for example, works in The Journal of Economic Perspectives, the Journal of Economic Literature, the “Handbook of [XXX] Economics”
+
+Many student projects and undergraduate dissertations are mainly literature surveys.
+
+```
+
+## What is the point of a literature survey?
+
+Your literature review should explain:
+
+1.  what has been done already to address your topic and related questions, putting your work in perspective, and
+
+2.  what techniques others have used, what are their strengths and weaknesses, and how might they be relevant tools for your own analysis. 
+
+
+```{r notes, fig.cap='Take notes on this as you read, and write them up.', out.width='50%', fig.asp=.5, fig.align='center', echo = FALSE}
+knitr::include_graphics("images/research_beach.JPG")
+```
+
+
+
+## What previous work is relevant? {#whats_relevant}
+
+**Focus** on literature that is relevant to your topic only.
+
+<span class="underline">**But** do not focus only on articles about your
+*exact topic*</span>\! For example, if your paper is about the relative
+price of cars in the UK, you might cite papers (i) about the *global*
+automobile market, (ii) about the theory and evidence on competition in
+markets with similar features and (iii) using econometric techniques
+such as “hedonic regression” to estimate “price premia” in other markets
+and in other countries.
+
+Consider: If you were Colchester a doctor and wanted to know whether a
+medicine would be effective for your patients, would you *only* consider
+medical studies that ran tests on Colchester residents, or would you
+consider more general national and international investigations?
+
+## What are “good” economics journal articles? {#good_journals}
+
+You should aim to read and cite peer-reviewed articles in reputable
+economics journals. (Journals in other fields such as Finance, Marketing
+and Political Science may also be useful.) These papers have a certain
+credibility as they have been checked by several referees and one or
+more editors before being published. (In fact, the publication process
+in Economics is extremely lengthy and difficult.)
+
+Which journals are "reputable"? Economists spend a lot of time thinking
+about how to rank and compare journals (there are so many papers written
+about this topic that they someone could start a “Journal of Ranking
+Economics Journals”. For example,
+“[REPEC](http://ideas.repec.org/top/top.journals.simple.html)” has one
+ranking, and
+[SCIMAGO/SCOPUS](http://www.scimagojr.com/journalrank.php?area=2000) has
+another one. You may want to focus on journals ranked in the top 100 or top 200 of these rankings. If you find it very interesting and
+relevant paper published somewhere that is ranked below this, is okay to
+cite it, but you may want to be a bit more skeptical of its findings.
+
+Any journal you find on [JSTOR](https://www.jstor.org/) is respectable, and if you look in the
+back of your textbooks, there will be references to articles in
+journals, most of which are decent.
+
+You may also find unpublished “working papers”; these may also be useful
+as references. However, it is more difficult to evaluate the credibility
+of these, as they have not been through a process of peer review.
+However, if the author has published well and has a good reputation, it
+might be more likely that these are worth reading and citing.
+
+### Unpublished “working papers"
+
+You may also find unpublished “working papers” or 'mimeos'; these may also be useful
+as references. In fact, the publication process in Economics is so slow (six years from first working paper to publication is not uncommon) that not consulting working papers often means not being current. 
+
+However, it is more difficult to evaluate the credibility
+of this 'grey literature', as they have not been through a process of peer review. However, if the author has published well and has a good reputation, it might be more likely that these are worth reading and
+citing. Some working paper series are vetted, such as NBER; in terms of credibility, these might be seen as something in between a working paper and a publication. 
+
+ 
+```{block2,  type='compqn'}
+
+*Which of the following are “peer-reviewed articles in reputable economics journals”? Which of the following may be appropriate to cite in your literature review and in your final project?*^[Answer: only b is a ‘peer reviewed article in a reputable economics journal’. All of these might be useful to cite, however.]
+  
+1. Klein, G, J. (2011) “Cartel Destabilization and Leniency Programs – Empirical Evidence.” ZEW - Centre for European Economic Research Discussion Paper No. 10-107
+
+2. Spencer, B. and Brander, J.A. (1983) “International R&D Rivalry and Industrial Strategy”, Review of Economic Studies Vol. 50, 707-722
+
+3. Troisi, Jordan D., Andrew N. Christopher, and Pam Marek. "Materialism and money spending disposition as predictors of economic and personality variables." North American Journal of Psychology 8.3 (2006): 421.
+
+4. The Economist,. 'Good, Bad And Ugly'. Web. 11 Apr. 2015. [accessed on…]
+
+5. Mecaj, Arjola, and María Isabel González Bravo. "CSR Actions and Financial Distress: Do Firms Change Their CSR Behavior When Signals of Financial Distress Are Identified?." Modern Economy 2014 (2014).
+
+6. Universities, U. K. "Creating Prosperity: the role of higher education in driving the UK’s creative economy." London Universities UK (2010).
+
+```
+
+
+
+## How to find and access articles {#access_lit}
+ 
+  
+You should be able to find and access all the relevant articles online. Leafing through bound volumes and photocopying should not be neededs. (Having been a student in the late 90's and 2000's, I wish I could get those hours back.)
+
+```{r cardcatalogue, fig.cap='The old way!', out.width='50%', fig.asp=.5, fig.align='center', echo = FALSE}
+knitr::include_graphics("images/cardcatalogue.JPG")
+```
+
+
+
+Good online tools include Jstor (jstor.org) and Google Scholar
+(scholar.google.co.uk). Your university should have access to Jstor, and
+Google is accessible to all (although the linked articles may require
+special access). You will usually have the 'most access' when logged into your university or library computing system.If you cannot access a paper, you may want to consult a reference librarian.
+
+It is also ok, if you cannot access the journal article itself, to use the last working paper
+version (on Google scholar find this in the tab that says "all X versions", where X is some number,  and look for a PDF). However, authors do not always put up the most polished versions, although they should do to promote open-access. As a very last resort, you can e-mail the author and ask him or her to send you the paper.
+
+When looking for references, try to find ones published in respected refereed economics journals (see [above](#good_journals)).  
+
+## Good starting points: Survey article, course notes, and textbooks 
+
+A "survey article" is a good place to start; this is a paper that is
+largely a categorization and discussion of previous work on a particular
+topic. You can often find such papers in journals such as 
+
+- the Journal of Economic Perspectives,
+- the Journal of Economic Surveys, 
+- and the Journal of Economic Literature.
+
+These will be useful as a "catalog" of papers to read and considers citing. They
+are also typically very readable and offer a decent introduction to the
+issue or the field.
+
+It is also helpful to consult module (course) notes and syllabi from the
+relevant field. Do not only limit yourself to the ones at your own
+university; many of universities make their course materials publicly
+accessible online. These will not only typically contain reading lists
+with well-respected and useful references, they may also contain slides
+and other material that will help you better understand your topic and
+the relevant issues.
+
+*However, be careful not to take material from course notes without
+properly citing it. (Better yet, try to find the original paper that the
+course notes are referring to.)*
+
+Textbooks serve as another extremely useful jumping off point. Look
+through your own textbooks and other textbooks in the right fields.
+Textbooks draw from, and cite a range of relevant articles and papers.
+(You may also want to go back to textbooks when you are finding the
+articles you are reading too difficult. Textbooks may present a simpler
+version of the material presented in an article, and explain the
+concepts better.)
+
+## Backwards and forwards with references {#back_forwards}
+
+When you find a useful paper, look for its "family." You may want to go back to earlier, more fundamental references, by looking at the articles that
+this paper cited.  See what is listed
+as "keywords" (these are usually given at the top of the paper), and "JEL codes". Check
+what papers this paper cites, and check what other papers cited this
+paper. On Google scholar you can follow this with a link “Cited by…”
+below the listed article. “Related articles” is also a useful link.
+
+
+## Citations
+
+**Keep track of all references and citations**
+
+You may find it helpful to use software to help you manage your
+citations
+
+- A storage “database” of citations (e.g., Jabref, Zotero, Endnote, Mendeley);
+these interface well with Google Scholar and Jstor
+
+- An automatic “insert citation” and “insert bibliography” in your word
+processing software
+
+Use a tool like Endnote to manage and insert the bibliographies, or use a
+bibliography manager software such as Zotero or Jabref, 
+
+Further discussion: [Citation management tools](#cite_manage)
+
+### List of works cited
+
+Put your list of references in alphabetical order by author’s last name
+(surname).
+
+Include all articles and works that you cite in your paper; do not
+include any that you *don’t* cite.
+
+[reference guide here]
+
+### Avoiding plagiarism and academic offenses**
+
+Here is a [definition of plagiarism](https://www.plagiarism.org/article/what-is-plagiarism)
+
+The main point is that you need to *cite everything that is not your own work.*  Furthermore, be clear to distinguish what is your own work and your own language and what is from somewhere/someone else.
+
+*Why cite?* Not just to give credit to others but to make it clear that the *remaining* uncited content is your own.
+
+**Here are some basic rules:**
+
+(Rephrased from University of Essex material, as seen in Department of Economics, EC100 Economics for Business Handbook 2017-18, <https://www1.essex.ac.uk/economics/documents/EC100-Booklet_2017.pdf> accessed on 20 July 2019, pp. 15-16)
+
+- Do not submit anything that is not your own work.
+
+- Never copy from friends.
+
+- Do not copy your own work or previously submitted work. (Caveat: If you are submitting a draft or a ‘literature review and project plan’ at an earlier stage, this can be incorporated into your final submission.
+
+- Don’t copy text directly into your work, unless: 
+  - you put all passages in quotation marks: beginning with ' and ending with ',  or clearly offset from the main text
+  - you cite the source of this text.
+  
+> It is not sufficient merely to add a citation for the source of copied material following the copied material (typically the end of a paragraph). You must include the copied material in quotation marks. 
+ ... Ignorance ... is no defence.' (ibid, pp. 15 )
+
+('Ibid' means 'same as the previous citation'.)
+
+**WARNINGS**
+
+Your university may  use sophisticated plagiarism-detection software. Markers may also report if the paper looks suspect
+
+Before final submission, they may ask you to go over your draft and sign that you understand the contents and you have demonstrated that the work is your own.
+
+Not being in touch with your supervisor may put you under suspicion.
+
+Your university may give a *Viva Voce* oral exam if your work is under suspicion. It is a cool-sounding word but probably something you want to avoid.
+
+Your university may store your work in its our database, and can pursue disciplinary action, even after you have graduated.
+
+Penalties may be severe, incliding failure with no opportunity to retake the module (course). You may even risk your degree!
+
+## How to write about previous authors’ analysis and findings
+
+### Use the right terminology
+
+Oops: 
+
+ ```{block2,  type='goofus'}
+
+>  “Johnson et al. (2000) provide an analytical framework that sheds substantial doubt on that belief. When trying to <span class="underline"> obtain a correlation</span> between institutional efficiency and wealth per capita, they are left with largely inconclusive results.” 
+
+
+```
+ 
+They are not trying to "obtain a correlation"; they are trying to measure the relationship and test hypotheses.
+
+### “Findings”: Critically examine sources 
+
+Don't take everything that is in print (or written online) as gospel
+truth. Be skeptical and carefully evaluate the arguments and evidence
+presented. Try to really survey what has been written, to consider the
+range of opinions and the preponderance of the evidence. You also need to be careful to distinguish between "real research" and propaganda or press releases.
+
+```{block2,  type='goofus'}
+
+>  The returns to higher education in Atlantis are extremely high. For the majority of Atlanian students a university degree has increased their lifetime income by over 50%, as reported in the “Benefits of Higher Education” report put out by the Association of Atlantian Universities (2016). 
+
+```
+ 
+*But don’t be harsh without explanation:*
+
+```{block2,  type='goofus'}
+
+Smith (2014) found a return to education in Atlantis exceeding 50%. This result is unlikely to be true because the study was not a very good one.
+
+```
+ 
+### “Findings:” “They Proved”
+
+A theoretical economic model can not really prove anything about the real world; they typically rely on strong simplifying assumptions.
+
+*Cringe*: 
+
+```{block2,  type='goofus'}
+
+>  Through their economic model, they prove that as long as elites have incentives to invest in de facto power, through lobbying or corruption for example, they will invest as much as possible in order to gain favourable conditions in the future for their businesses.
+
+```
+ 
+Better:
+
+```{block2,  type='gallant'}
+
+> In their two period model, which assumes \[details of key assumptions here\], they find that when an elite *Agent* has an incentive to invest in de facto power, he invests a strictly positive amount, up to the point where marginal benefit equals marginal cost”
+
+```
+ 
+
+
+**Empirical work does not “prove” anything (nor does it claim to).**
+
+*It relies on statistical inference under specific assumptions, and an
+intuitive sense that evidence from one situation is likely to apply to
+other
+situations.*
+
+*Shudder*: 
+
+
+```{block2,  type='goofus'}
+ 
+> “As Smith et al (1999) proved using data from the 1910-1920 Scandanavian stock exchange, equity prices always increase in response to reductions in corporate tax rates.”
+
+
+```
+ 
+Better:
+
+```{block2,  type='gallant'}
+
+> “Smith et al (199) estimated a VAR regression for a dynamic CAP model using data from the 1910-1920 Scandanavian stock exchange. They found a strongly statistically significant negative coefficient on corporate tax rates. This suggests that such taxes may have a negative effect on publicly traded securities. However, as their data was from a limited period with several simultaneous changes in policy, and their results are not robust to \[something here\], further evidence is needed on this question.”
+
+```
+ 
+
+### “Findings”: How do you (or the cited paper) claim to identify a *causal* relationship?
+
+> This policy was explained by Smith and Johnson (2002) in their research on subsidies and redistribution in higher education. <span class="underline">Their results showed</span> that people with higher degree have higher salaries and so pay higher taxes. Thus subsidizing higher education leads to a large social gain.
+
+The results the student discusses seem to show an association between
+higher degrees and higher salaries. The student seems to imply that the
+education itself led to higher salaries. This has not been shown by the
+cited paper. Perhaps people who were able to get into higher education
+would earn higher salaries anyway. There are ways economists used to try
+to identify a "causal effect" (by the way, this widely used term is
+redundant as all effects must have a cause), but a mere association
+between two variables is not
+enough
+
+> As inflation was systematically lower during periods of recession, we see that too low a level of inflation increases unemployment.
+
+Economists have long debated the nature of this “Phillips curve”
+relationship. There is much work trying to determine whether the
+association (to the extent it exists) is a causal one. We could not rule
+out reverse causality, or third factor that might cause changes in both
+variables.
+
+## ...Stating empirical results
+
+Don’t write: “I accept the null hypothesis.”
+
+Do write: “The results fail to reject the null hypothesis, in spite of a large sample size and an estimate with small standard errors” (if this is the case)
+
+```{block2,  type='note'}
+
+Note: The question of what to infer from acceptance/rejection of null
+hypotheses is a complex difficult one in Classical (as opposed to
+Bayesian) statistics. This difficulty is in part philosophical:
+classical hypothesis testing is *deductive*, while inference is
+necessarily *inductive.*
+
+```
+
+## What to report
+
+> *You need to read this paper more clearly; it is not clear what they
+> conclude nor what their evidence is.*
+
+## Organising your literature review {#organize-litreview}
+
+A common marking comment: 
+
+> *These papers seem to be discussed in random order – you need some
+> structure organising these papers thematically, by finding, by
+> technique, or chronologically perhaps. *
+
+How should you organise it? In what order?
+
+- Thematically (usually better)
+
+- By method, by theoretical framework, by results or assumptions, by field
+
+- Chronologically (perhaps within themes)
+
+**Exercise:** Compare how the literature review section is organized in papers you are reading.
+
+
+```{r  fig.cap = 'Organising a set of references', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
+knitr::include_graphics("images/organising_lit_outline.png")
+
+```  
+
+*Q: What sort of structure am I using in the above outline?*
+
+It may also be helpful to make a 'table' of the relevant literature, as in the figure below.  This will help you get a sense of the methods and results, and how the papers relate, and how to assess the evidence. You may end up putting this in the actual paper.
+
+```{r littable, out.width='70%', fig.asp=.4, fig.align='center',  fig.cap = 'Organisational table from Reinstein and Riener, 2012b', echo = FALSE}
+
+knitr::include_graphics("images/organise_lit_table.png")
+
+```  
+
+## What if you have trouble reading and understanding a paper?
+
+- Consult a survey paper, textbook, or lecture notes that discuss this paper and this topic
+
+- Try to find an easier related paper
+
+- Ask your supervisor for help; if he or she can
+
+- Try to understand what you can; do not try to “fake it”
+
+## Some literature survey do's and don'ts
+
+Do not cite irrelevant literature. 
+
+Do not merely list all the papers you could find.
+
+- Discuss them, and their relevance to your paper. 
+
+- What are their strengths and weaknesses? What techniques do they use, and what assumptions do they rely on? How do they relate to each other?
+
+Use correct citation formats.
+
+Try to find original sources (don't just cite a web link). 
+
+Don't just cut and paste from other sources. And make sure to attribute every source and every quote. Be clear: which part of your paper is your own work and what is cited from others? The penalties for plagiarism can be severe\!
+
+- [Critically examine](#crit_examine) the sources, arguments, and methods
+
+## Comprehension questions: literature review {#comprehension_lit}
+
+
+**How to discuss empirical results: “Causal” estimation, e.g., with Instrumental Variables**
+
+*Which is the best way to state it?*^[The second one; if this is really *causal* evidence.]
+
+```{block2,  type='compqn'}
+ 
+
+1. “As I prove in table 2, more lawyers lead to slower growth (as demonstrated by the regression analysis evidence).”
+
+2. “Table 2 provides evidence that a high share of lawyers in a city’s population leads to slower growth.”
+
+3.“Table 2 shows that a high share of lawyers in a city’s population is correlated with slower growth.”
+
+```
+
+```{block2,  type='compqn'}
+
+*Which is better?*^[The first one. There is no 'correct regression'. It is also not really correct in classical statistics to 'find no effect'.]
+  
+1. “However, when a set of observable determinants of city growth (such as Census Region growth) are accounted for, the estimate of this effect becomes less precise.”
+
+*or* 
+  
+2. “In the correct regression I control for all determinants of city growth and find that there is no effect of lawyers on growth”
+
+
+```
+ 
+ 
+
+**Stating empirical results: descriptive**
+
+Do write:
+
+“Using the US data from 1850-1950, I find that inflation is lower during periods of recession. This is statistically significant in a t-test [or whatever test] at the 99% level, and the difference is economically meaningful. This is consistent with the theory of …, which predicts that lower inflation increases unemployment. However, other explanations are possible, including reverse causality, and unmeasured covarying lags and trends.”
+
+“I find a significantly lower level of inflation during periods of recession, and the difference is economically meaningful. This relationship is statistically significant and the data is accurately measured. Thus I find that inflation increases unemployment.”
+
+```{block2,  type='tip'}
+
+*Some tips on writing a good paper-- relevant to literature reviews* 
+
+1. Answer the question
+2. Provide clear structure and signposting
+3. Demonstrate an ability for critical analysis
+4. Refer to your sources
+5. Produce a coherent, clear argument 
+6. Take time to proofread  for style and expresssion
+
+- Source "Assignment Writing Skills EBS 3rd year 2012""
+```
+ 
+
+# Doing it: The process of researching and writing, organising your paper {#doingit}
+
+## The process of “researching while writing” {#process}
+
+###  Getting help from other sources: the writing center, students, other lecturers, etc.
+
+**Learn from the feedback you have received** (on previous term papers)
+but also learn from your dissertation for your later life
+
+## Slogging through
+
+**Keep a positive attitude, but don’t rest on your laurels**
+
+**What to do if you don't understand things in the papers you are
+reading**
+
+**Do not wait till the last moment **
+
+... not in doing your writing, or your data work or your presentation
+of results
+
+**Don't be a perfectionist who ends up writing half a paper –** write an
+OK paper, and then make a good paper, and then make it great paper.
+
+“The perfect is the enemy of the good”
+
+> [Writing] begins with mere fluency, getting the stuff down on paper.
+> And it ends with revising again and again, until you've removed all
+> the traps and ugliness. ... [Sitting] down to write can be a problem,
+> for it is then that your subconscious, which is dismayed by the
+> anxiety of filling up blank pieces of paper, suggests [goofing off or
+> doing any other type of chore]. [Fight] doubt -- the conviction
+> that everything you've done so far is rubbish-will wash over you from
+> time to time. ... The only help is a cheerful faith that more work will
+> raise even this rubbish up to your newly acquired standards.
+> Irrational cheerfulness is hard to teach but good to have for any
+> work.
+
+-@McCloskey2000 ^[Do you know what the '...' bits mean above? This means a break in the direct quote. What do the square brackets '[blah]' mean? This means that whatever is in the square brackets is a *paraphrase* of the authors' words. We return to citation formats under ['Doing a literature review (and citing references)'](#lit_review_do)].
+
+```{r nearlytop, fig.cap='You can do it!', out.width='50%', fig.asp=.5, fig.align='center', echo = FALSE}
+knitr::include_graphics("images/nearly_top.jpg")
+```
+
+
+## Organising your paper {#organising}
+
+If you read journal articles, you will see these are organised into sections in a standard way, with some variations. This is more or less as follows.
+
+**Standard format**
+
+- (Abstract)
+- Introduction
+- (Literature review)
+- (Data description and background)
+- (Model/theory)
+- Analysis and results
+  - Robustness checks, extensions
+- Conclusion
+- list of works cited
+
+
+## Outlining, structuring, and refining your paper
+
+In doing your writing, go from 'large to small'. Always ask yourself 'how does this relate to my question and support my analysis?'
+
+Go from: 
+
+**Outline**
+
+to
+
+**Sections**
+
+to
+
+**Paragraphs**
+
+to
+
+**Sentences**
+
+```{block2,  type='note'}
+
+Ask: "What is the purpose of every sentence?"
+
+- Does it serve the purpose of the argument or explanation that you are making in this paragraph/section/paper?
+  
+- Is it in the right section?
+
+- Have you already said it?
+
+```
+
+### Why make an outline? How to do it?
+
+
+```{r block51, out.width='45%', fig.asp=.4, fig.align='center', echo = FALSE}
+ 
+knitr::include_graphics("images/outline_circles.png")
+
+```  
+
+
+**Create an outline, take notes, write down your ideas and then
+integrate these into the outline **
+
+Balance the different parts of your paper: outlining, literature review, theory, data work, econometrics, stating results, summarizing
+conclusions, etc.
+
+- these will interact with one another and you cannot completely separate them.
+
+Cutting and pasting might be part of your *process*, but you don't want
+your final submission to be a cut and paste collage.
+
+
+> [Write] out the notes as paragraphs, then print them out, cut them up
+with scissors, finding the best arrangement.
+> - McCloskey (2000)
+
+*This is “old-school” but a good way of thinking about things in
+general, whether in print or on a screen.*
+
+
+**…Doing theory and empirics, integrating it into the outline, etc.**
+
+
+# Economic theory, modeling, and empirical work {#theory_modeling_empirical}
+
+## (From theory to) empirical work
+
+## Doing economic modelling and theory
+
+Economic models usually involve one or more  of:
+
+- Individual (or firm or other actor) optimization... maximization of a utility,  profit or welfare function (over time, perhaps involving uncertainty) subject to one or more constraints
+
+- Aggregation of the above and consideration of an 'equilibrium' outcome, usually involving an equilibrium price
+
+- Game theoretic (or principle-agent/mechanism design) treatment of a strategic interaction between multiple 'actors', considering the equilibrium (or other reasonable predicted outcome) and the  'comparative statics; of this as key factors ('parameters') are varied 
+
+
+**Doing economic theory**
+
+You may have heard that 'you should not do a theory dissertation as an undergraduate.' That is the case that it is difficult to make a substantial contribution to pure economic theory. This work is highly mathematical. The models stemming from our basic framework and beyond have been explored in great depth and sophistication. The frontiers have been pushed very far in terms of ‘what are the implications of our standard assumptions and in what ways can they be relaxed’.
+
+ However, this does *not* mean that you should not do theory and modeling in your undergraduate dissertation. You *should* try to incorporating and adapting existing models (remember Economic theory=models=maths… approximately). You can also make this the main focus of your dissertation.
+
+Remember, you are not writing this dissertation to advance the frontiers of Economics. In large part,  you are trying to  show your understanding and ability to apply techniques to specific questions. 
+
+If you can explain and adapt a rigorous theoretical model to apply to particular case, yielding intuition, you have done well. (For example… )
+
+Even if you're not doing a "theory paper”, specifying a model will benefit your paper in several ways: 
+
+1. Fixing your ideas and arguments precisely and demonstrating internal consistency
+
+2. Motivating your (empirical) analysis
+
+E.g., why might we expect an impact of education on income? Why might the private returns exceed the social returns? What are the *channels* by which education could yield personal and social gains (or losses)? 
+
+2. Providing structure and 'restrictions' for your empirical analysis
+
+3. Connecting to the Economic literature and incorporating the general insights of the field
+
+4. Helping you consider and estimation 'policy implications' of your results
+
+<br>
+
+**Building an economic model**
+
+…
+
+**Posing your hypothesis an empirical test**
+
+**Writing an empirical/econometric model**
+
+## Economic theory and empirical research: writing about your work
+
+**Explain the limitations of your analysis to the reader, and what the
+next step would be.** Perhaps you are aware there is an advanced
+estimation technique, or a larger data set, that could better answer
+your thesis question. However, this might be “too difficult” considering
+your abilities and resources. If you can explain this, do so.
+
+**If you're doing a theory paper** (also useful in an empirical paper)
+try to explicitly state and clearly explain a formal economic model,
+using mathematical notation.
+
+**If you're doing an empirical paper** clearly explain and describe your
+data, techniques, and results. Explain the econometrics behind your
+techniques as clearly as you can.
+
+## Empirical work: techniques and econometrics
+
+
+```{r fishtile, out.width='40%', fig.asp=.4, fig.align='center', echo = FALSE}
+knitr::include_graphics("images/fishtile")
+```
+
+
+
+**Techniques**. Understand what techniques others have used to answer
+your question, what technique you are using and why, and the arguments
+for each technique. Understand the limitations of each technique,
+previous papers, and of your own work.
+
+Show you understand economic theory and the connection between theory
+and econometrics and empirical work. Understand the difference between
+these, and what each can do.
+
+**Use of techniques: use the tools you can handle, understand, and
+explain.** Try to use the right techniques, but also try to limit
+yourself to techniques you can explain, at least in general terms.
+
+Justify the techniques you use; don’t merely hide behind the
+rationalisation that “other authors did it”. If other authors jumped off the Brooklyn bridge, would you jump?
+
+**Know your limits.** Set reasonable goals for your dissertation, and do not claim to have achieved more than you have
+done.
+
+
+## Why do we use data?
+
+### What data you do you need to answer your question?
+
+### Descriptive
+
+To measure and understand our *object of study*: *the economy*
+(including individuals, households, firms, and governments)
+
+*Levels* of variables, *patterns* (e.g., Life cycle consumption),
+
+observed *relationships between* variables (differences by group,
+correlations, linear relationships, etc.)
+
+- For its own sake
+
+- To use in executing policy (e.g., the Consumer Price Index)
+
+- To generate hypotheses and “calibrate” our models
+
+**<span class="underline">We can have statistical tests of “descriptive”
+hypothesis.</span>**
+
+*E.g., testing *
+
+> H0: Incomes of men and women are the same *ceteris paribus*
+> vs.
+> HA: Women with the same characteristics as men earn less on average.
+
+*Note: this is not testing a causal relationship;*
+
+*a difference doesn’t necessarily imply a particular explanation (e.g.,
+sex discrimination).*
+
+
+### Causal:  To make statistical inferences (and statistical predictions) about *effects*
+
+(sometimes called “causal effects” but I find that redundant).
+
+To **measure** and **test hypotheses** about the **causal relationship**
+between important factors and outcomes.
+
+**<span class="underline">What data do you need to answer your
+question?</span>**
+
+***Relevant*** **to your topic**
+
+the relevant population, years, fields;
+
+relevant outcome variable(s), “independent variable(s)” of interest,
+control variables)
+
+***Useful* for answering your question**
+
+*e.g., contains a useful “instrumental variable”, a long enough time
+series, or repeated observations on individuals to allow ‘fixed effects’
+controls*
+
+***Reliable, accessible, understandable***
+
+**What data have *previous authors* used to answer this or related
+questions?**
+
+## Some types of data
+
+- Survey and collected data: self-reports, interviewers, physical measures and visual checks
+
+- Administrative data (e.g., tax records)
+
+- Transactions/interactions
+  - Scanner data
+  - Web data (e.g., Ebay, Amazon)
+  - Price data
+  
+- Public financial data and company reports
+
+- Official government data (public releases and announcements, e.g., budget
+data)
+
+- Data from lab experiments 
+
+- Data from field experiments 
+
+<br> 
+
+*Consider the differences between:*
+
+- Micro-data (individual/transaction level) vs. Macro-data (aggregated to firm, region, country-year level etc)
+
+- Panel vs cross-section vs time-series data
+
+
+```{r newtypeofdata, fig.cap='A graph based on a new type of data', out.width='50%', fig.asp=.5, fig.align='center', echo = FALSE}
+knitr::include_graphics("images/colors_ngram.PNG")
+```
+
+
+## Getting and using data
+
+### Finding data
+
+```{block2,  type='note'}
+
+Update: A particularly promising resource: [Google dataset search](https://toolbox.google.com/datasetsearch)
+
+```
+
+In searching for data, note that the American Economics Association has
+a very comprehensive list of
+links: [<span class="underline">http://www.aeaweb.org/RFE/toc.php?show=complete</span>](http://www.aeaweb.org/RFE/toc.php?show=complete)
+for the UK in specific, see
+[<span class="underline">http://www.statistics.gov.uk/default.asp</span>](http://www.statistics.gov.uk/default.asp)
+
+For macro and micro data, see
+[http://www.esds.ac.uk/](http://www.esds.ac.uk/%20%20)
+
+For large scale data, see also [the UK Data Service database](https://www.ukdataservice.ac.uk/ ). 
+
+Some other sources of data, and links to aggregations [on my webpage here](https://davidreinstein.wordpress.com/teaching-teaching-philosophy-resources-for-students/useful-links-data-software-journals-etc/).
+
+See also a general list of resources [in this airtable view](https://airtable.com/shr2tkqprTh2yqabv).
+
+Also note that data from published papers are typically expected to be
+made publically accessible (for replication and checking purposes). If
+you cannot find it on the journal or the author's website, you can email
+the corresponding author to ask for it.
+
+Don't wait too long to begin collecting your data and producing simple
+graphs and summary statistics, to get a sense of your data.
+
+Empirical work is difficult and you may not be able to get the “best”
+data This is OK. Remember, at the undergraduate/MSc level, we generally want you to show your *competencies* in these assignments; we expect the analysis will have limitations.
+
+### Some examples of datasets used by Undergraduate students
+
+
+*Workplace Employee Relations Survey*: Private Sector Panel, 1998-2004 data, from the UK Data Archive. 
+
+Data on cigarette consumption from the US Centers of Disease Control (CDC) from 1986 to 2011, for 50 states $\rightarrow$  1300 observations.
+
+The 1958 National Child Development Survey, a longitudinal study tracking a group of individuals born in a single week in 1958.
+
+Data on UK cities’ population, employment, geography, extracted from various ONS tables.
+
+“The ICCSR UK Environmental & Financial Dataset, is a large panel data
+set on a a sample of firms, giving a set of ratings on “community and
+environmental responsibility”; merged to a set of financial variables on
+these firms, collected from Datastream
+
+Exchange rates between the US dollar, the British pound, Australian
+dollar, Canadian dollar and Swiss franc, for the period 1975-2010, from
+the OECD Main Economic Indicators database.
+
+The World Bank Development Indicator database (2013); 210 countries over
+a 20-year period from 1991-2010
+
+65 banks over 8 years from BankScope (profitability measures,
+etc)
+
+## Understanding your data 
+
+Present simple statistics and graphics on your data before doing more
+involved analyses.
+
+## What does data look like (brief)
+
+
+### Observations, variables
+
+Each “unit” is an observation. Think of these as the rows of a spreadsheet.Every unit will have values for each of the “variables”. You may create new variables from transformations and combinations of the variables.You may limit your analysis to a subset of the observations for justifiable reasons. Your analysis may need to *drop* some observations, e.g., with missing variables (but be careful).
+
+
+### Cross-sectional, time-series, and panel data ![image.png](media/image5.png) ![image.png](media/image6.png)![image.png](media/image7.png)![image.png](media/image8.png) ![image.png](media/image9.png)
+
+### String and numeric variables
+
+String variables are text. In their raw form, they usually have quotes
+(“john smith”,) around them.
+
+Numeric variables can be integers, “floats”, etc, stored in various
+forms. They are numbers.
+
+Most statistical packages and programming languages treats these two types of variables differently, with a different
+“syntax” and different commands for each. Be careful.
+
+There are many other data types, with some variation in how these are categorised and stored between languages. E.g., 
+
+- 'Factor' variables (categorical, ordinal)
+
+- Logical (true/false)
+
+- Date and time variables 
+
+## Doing an econometric analysis
+
+(see previous notes on using data)
+
+**Which techniques **
+
+You may not be able to use the "ideal" estimation technique; it may be
+too advanced. But try to be aware (and able to explain) of the strengths
+and weaknesses of your econometric approach.
+
+**Time series, cross section, or panel data?**
+
+“A major problem is always understanding the difference between a panel
+and a time series. My students always want to just do a time series
+regression, and don't understand why the cross-section dimension is
+important.” –University of Essex lecturer
+
+Common difficulties
+
+Diagnostic tests, etc.
+
+Interpreting your results
+
+“The second most frequent issue is that they think they are supposed to
+get a 'right' answer. They stress out when the regression doesn't come
+out 'right'.” – University of Essex lecturer
+
+## Presenting your results
+
+**…**
+
+**Considering alternative hypotheses and “robustness checks”**
+
+# Writing, argumentation, presentation, and (Economic) logic: Being clear and making sense {#writing_it}
+
+
+<center>
+![Presentation](images/jesus.png)
+</center>
+
+<!--
+ Life's but a walking shadow, a poor player, That struts and frets his hour upon the stage And then is heard no more: 
+-->
+
+> ... it is a tale Told by an idiot, full of sound and fury, Signifying nothing. – The Tragedy of Macbeth, W. Shakespeare, Act 5 Scene 5. 
+
+
+## What is this and why would anyone read it?
+
+*What is this?*^[David Reinstein, The Economics of the Gift, translated from English to Chinese to French to Urdu and back to English by Google Translate. 
+]
+
+```{block2,  type='goofus'}
+
+
+ 
+> This article generally, gift economy, modern and pre-modern, mainstream, and behavioral economics point of view, considered a gift. I selected literature survey focused on six key points of the proposal: 
+
+> (A) gift exchange transaction easy to distinguish the economy, faced not reliable  2.  Buying equipment, collection, your business can not afford. 
+
+> III. Some donors experience or gift retains control over the stock of the public.   Four. Woe to such disgusting behavior problems as a gift, think about a balanced performance  "inadequate" deadweight loss of gift giving can be ignored.  
+
+> V. International (anonymous) signal identification and quality of the whole group can.   
+
+```
+
+*Can you make sense out of this text?*
+*Would you like to read something like this?* 
+
+<!-- 
+It was written by an admitted genius, but it is not 'putting its best foot forward.'
+-->
+
+A reader cannot guess what is in your head. He or she can only interpret what is written down. It's not enough for you as the *writer* to have great ideas and understand things well; you need to convey this to the *reader*. If the person who is marking your work cannot understand what you mean in a section, they may just skip this section.
+
+  
+<br> 
+
+## Writing well: Clarity
+
+**Your writing must be understood by others.** This sounds obvious, but it is not always easy to do. As McCloskey (2000) notes, try to write not only “so that the reader can understand but so that he cannot possibly misunderstand.”
+
+> [not] merely so hat the reader can understand but so that he cannot possibly misunderstand. 
+
+Write so that the reader’s brain does not freeze up. You want the reader to come along with you for the journey. Do a grammar and spelling check and use online tools like Grammarly. After you have completed a first draft of your essay, set it aside for a while – a few hours or overnight. Then read it again and make it better. Before you submit it, get feedback from someone else to make sure it is readable.  
+
+```{block2,  type='warning'}
+
+Make sure your word processor is set to language=English. Otherwise it may get confused and not notice mistakes at all!  
+
+```
+
+<br>
+
+### How to write clearly - key rules:^[This is inspired in part by The Economist online (Prospero blog, “**Johnson: Those six little rules”, July 29, 2013).  "Many years ago George Orwell famously proposed six rules for writing (“**Politics and the English Language”, 1946). While much revered, Orwell’s rules are now regarded as overly strict – even Orwell failed to comply on occasion .''*]
+
+
+**Sentence structure: Simple, short sentences with few clauses** are usually easier to follow than long-winded excursions with many clauses, like this marathon of a convoluted sentence in which I wander around for a while and obscure the main idea, making it more and more confusing, which is exactly the point I’m trying to make—see what I’m doing?  Delete words that add little or no extra meaning and skip unnecessary, superfluous, insignificant, unwanted padding – like this.
+
+`r format_with_col("Keep your sentences lean and clean.","green")`
+
+<br>
+
+**Diction (word choice):** Prefer short words to long ones. Whenever possible, use everyday English rather than foreign words, scientific terminology or jargon. Sometimes you have to use technical language, but avoid it when you have a choice. Because certain words have a particular technical meaning in Economics (or in related fields such as Statistics) and it is important to get these right.When you need to be precise, use the language of Economics. 
+
+**Active vs. Passive Voice:** Active verbs add life to your sentence. The opposite effect is achieved by using the passive voice. (See?) And whether passive or active, be clear who did what to whom.
+
+**Tone:** Make your language as clear and understandable as possible, while sounding professional and academic <p style="font-family: times, Serif"> (but not *pedantic* or *pretentious*). </p>
+ You need to strike a balance between writing in your own voice and using the standards of the profession. You want to hear your own voice in your writing, but you probably don’t want to write as you would speak to your mates over several pints. 
+
+**Audience:** As you write, think about who the intended audience is. Write as if you were speaking in a public seminar or debate in front of  a highly-educated group (with some Economics training).
+
+## General tips (especially for Economics)
+
+*The tips in this subsection are not Economics-specific, but they are particular relevant for the formats and approaches in our field.*
+
+**Format.** Make your paper look presentable by following a standard format. 
+
+<br> 
+**Focus.** Ask a question and try to answer it.^[Your dissertation/project may ask a single question or a small set of inter-related questions, but keep things focused!] Do not stray from your topic.
+
+<br> 
+
+**Make your paper presentable and standard in format:** Find examples of well-written papers and their correct formats and make your paper look
+like them in its style and format.
+
+<br> 
+
+**Be focused.** Your dissertation should ask a question and try to
+answer it. Do not stray from this.
+
+<br> 
+
+**Write about Economics.** Your dissertation or essay should demonstrate some of what you have learned in your modules. 
+
+
+`r format_with_col("Ask yourself: does my work contain substantial Economic content?","red")`^[If not, you have probably gone *off-piste*. If you are putting in a lot of depth and detail into something and you are not sure if it is Economics, you may want to consult your advisor about this. It's OK to have substantial background content, e.g., descriptions of an industry or an institution if it is highly relevant to your Economics question. But don't go into excessive detail on this, and make sure you *also* have the Economics content.]
+
+
+<br> 
+
+**Show understanding, but don’t “show off” pointlessly.** Make it clear that you understand your topic, but don’t expand on concepts that are irrelevant to your central question.
+
+<br> 
+
+**Modesty is a good policy.** Never say “never” and always avoid “always”, or at the least handle those absolutes with care. Overusing such words is an invitation for critics to hold you to your own impossible standard.
+
+Little in empirical Economics can be *conclusively* demonstrated.^[In empirical Economics where we make and test claims about the real world based on evidence, which is expressed in the language of statistics. In Economic theory we can prove theorems, essentially the logic of 'if-then' statements... 'if one assumes the following preferences, the following choice is optimising', etc. However, here the realism of the *assumptions* is always in question; as caricatured in this [Twitter meme](https://twitter.com/rethinkecon/status/1164477365243785216/photo/1)] Don’t claim to have definitively answered an earth-shattering question. If you are doing empirical work your goal is to present a small but credible piece of evidence that answers an interesting question. If you’re doing a theoretical paper, consider applying (and extending) an existing model to a new context. If your paper is a literature survey, try to bring a new perspective or insight into your overview of the existing work.
+
+<br>
+
+**Honesty is the best policy.** It protects you from being accused of plagiarism, and allows you to legitimately claim credit for your own work. Be sure to differentiate what you have done from the work of others. Explain what your contribution is and fully reference the work of those whom you mention and cite. 
+
+## Aspirations and Reality; learning by (counter-) example
+
+To ascend to the heights of precise, elegant, powerful, and convincing prose, you must read, write, and critique for many years. You can learn a lot by finding some Economics articles that are widely acknowledged to be examples of great writing, and carefully dissecting these to understand what makes them work.
+
+<!-- To do: add more 'good examples' and discussions of these -->
+
+## Writing in a professional style
+
+### Tone
+
+Make your language as clear and understandable as possible, while sounding professional and academic (but not *too academic*). This is called the 'tone' or the 'voice' of your writing. You need to strike a balance between writing 'in your own voice' and writing using the standards of the profession. You want to hear your own voice in your writing, but you probably don't want to write as you would speak to your mates over several pints. As you write, think about who the intended *audience* is. Perhaps write as you would like to speak in a public seminar or debate. However, this doesn't mean adding in jargon and fancy phrase constructions -- that is a waste of time.
+
+### Terminology
+
+You need to use the language of *Economics*. Certain words have a particular technical meaning in Economics (or in related fields such as Statistics) and it's important to get these right. 
+
+## Writing: Clarity, style, tone, and correct terminology. Common problems.
+
+To ascend to the heights of precise, elegant, powerful, and convincing prose, you must read, write, and critique for many years. You can learn a lot by finding some Economics articles that are widely acknowledged to be examples of great writing, and carefully dissecting these to understand what makes them work.
+ 
+<!--- (I hope to do more of this as I add to the present book.)
+-->
+
+For now, however, I want to help you avoid the major problems and pitfalls I have seen in student essays.
+
+```{r goofuspic, out.width='70%', fig.asp=.4, fig.align='center', echo = FALSE}
+
+knitr::include_graphics("images/Goofus_and_Gallant_-_October_1980.jpg")
+
+```
+
+
+Don’t be a Goofus. Strive to be like Gallant.
+
+In the next sections I give some specific advice on things to definitely *do* and *not do*, as well as specific examples of (note color-coding)^[In the ['thou shalt not'](#dos_donts) section I give further examples and discussion, covering topics referenced throughout this book.]
+
+
+```{block2, goofae, type='goofus'}
+
+*Goofae*: Examples of things to endeavour to *avoid* doing,
+
+```
+
+and
+
+```{block2, gallants, type='gallant'}
+
+*Gallants*: Examples of good practice.
+
+```
+
+
+<!--
+By Source (WP:NFCC#4), Fair use, https://en.wikipedia.org/w/index.php?curid=44499811
+-->
+
+### Content and narrative
+
+Students often 'discuss the wrong things' and describe them in the wrong way. This detracts from the argument, and can make the paper confusing, disjointed, and a pain to read. 
+
+Three of the most common sins are **'Sins of excess'**:
+
+1. boilerplate language, 
+
+2. excessive detail, and 
+
+3. repetition.
+
+<center>
+![Presentation](images/stonehenge.png)
+</center>
+
+<br>
+
+**“Boilerplate” and generic and obvious discussion:** “Boilerplate” language is what I call the pointless, obvious and dull language resembling the text written on a plate of one’s boiler, or the tag on one’s mattress. Leave it out.
+
+```{block2, type='goofus'}
+> There is no doubt whatsoever that education is the engine that drives
+> our population further. Knowledge is poetically described by a number
+> of philosophers as a very powerful tool, which is essential to
+> humankind in order to grow.
+```
+
+*This may be conventional wisdom, but it doesn’t belong in a research
+paper.*
+
+<br>
+
+```{block2, type='goofus'}
+> Labour market performance has been widely investigated by economists.
+> Determinants of labour market performance have been comprehensively
+> researched as economists attempt to identify measures and adjust
+> fiscal policy and regulations in order to strengthen labour market
+> performance for the benefit of the economy.
+```
+
+*This takes a long time to say something quite obvious: economists are
+interested in the labour market. But anyone reading this essay should
+already know this. If an introductory sentence is needed here, make
+it short and sweet. E.g., “I present a brief survey of the extensive
+literature on labour market performance.”*
+
+<br>
+
+*Another example ...* 
+
+```{block2, type='goofus'}
+> In an increasingly complex international economy, a vast array of
+> possible policy strategies and hundreds of different governmental
+> structures, politicians are faced with the challenge of maintaining
+> public interest while providing a suitable environment for economic
+> stability and growth . ... I will attempt to show a convergence in
+> existing theory on matters of critical importance to international
+> development, while providing examples of large-scale failures to
+> uphold the public interest.
+```
+
+<br>
+
+
+**Too much detail**
+
+Don’t give irrelevant detail and ‘lose the forest for the trees’. This makes the paper too long and hard to follow.
+
+```{block2, type='goofus'}
+> In terms of higher education, there are 19 Sub-Degree institutions,
+> and 2 public institutions. There are 15 degree-awarding higher
+> education institutions, 7 of them are self-funded institutions
+> including two private universities such as Open University of Atlantis
+> and Atlantis City University, publicly funded institution such as the
+> Atlantis Academy for Performing Arts (HKAPA) and some college such as
+> John McEnroe Management College and Boris Becker College of Higher
+> Education. The remaining 8 of them are University Committee UC) funded
+> institutions, including 6 universities and 1 auto repair institution).
+> The seven Universities are City University of Atlantis (CityU),
+> Atlantis Jesuit University, Lesbos University (LU), The Atlantic
+> University (PolyU) and some are relatively famous which are The
+> University of Atlantia, The French University of Atlantis, and The
+> Atlantian University of Science and Technology (AUST). The remaining
+> teacher training institution is The Atlantis Institute of Miseducation
+> (AIMe).
+```
+
+*Too much! Is anything gained by this long list?*
+
+```{block2, type='gallant'}
+Better: 
+
+> There are more than 21 institutions of higher education, covering academic and vocational subjects and teacher training in Atlantis. 
+
+```
+
+```{block2, type='goofus'}
+> The focus of my dissertation is the effect of exchange rate
+> variability on the trade balances between
+> OECD countries namely, Austria, Australia, Belgium, Canada, Chile,
+> Czech Republic,
+> Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland,
+> Ireland, Israel, Italy,
+> Japan, Korea, Luxembourg, Mexico, Netherlands, New Zealand, Norway,
+> Poland, Portugal,
+> Slovak Republic, Slovenia, Spain, Sweden, Switzerland, Turkey, UK and
+> USA.
+```
+
+```{block2, type='gallant'}
+Better: I focus on the effect of exchange rate variability on the trade balances between 
+OECD countries.
+```
+
+(At most, put a footnote here listing these countries, if you feel the list is important.)
+ 
+<br>
+
+**Repetition**
+
+Always avoid unnecessary repetition.
+
+Example:
+
+```{block2, type='goofus'}
+> Corruption in the government sector fits into the classical association with the principal-agent problem in the sense that there is interest and information asymmetry between the agent – the corrupt government official, who is more interested in personal pursuits – and the principal (typically represented by citizens) who are focused on general public interest. In this context, corrupt government officials represent the agents who pursue individual interests...  
+
+```
+
+*Here the last sentence is redundant, since it just repeats the point made in the first sentence, i.e. that the corrupt government official represents the ‘agent’ in the relevant principal-agent model.*
+
+<br> 
+
+### Grammar and sentence construction
+
+Obviously, poor grammar and convoluted sentences will make your work hard to read. If the logic is hard to follow, if it’s unclear to what you are referring, or if your sentences aren’t actually sentences, you will lose your reader. Spare your reader a trip to...
+
+```{r  fig.cap = 'the land of confusion', out.width='45%', fig.asp=.4, fig.align='center',  echo = FALSE}
+knitr::include_graphics("images/escher_steps.png")
+
+```
+
+<br>
+
+*One of the most common culprits is the use of a pronoun when the subject to which it refers is ambiguous.*
+
+**Subject of a pronoun**: When you use “it” or “he” or “the argument” or “this” (etc.), be sure to let the reader know the antecedent. In other words, to what does the pronoun refer?
+
+```{block2, type='goofus'}
+> A good theatre critic is one who recognizes the quality of acting,
+> production and other such aspects, whereas a realistic critic can
+> judge how a play will be received by the general public. If this is
+> the case, then it can be used in conjunction with Smith and Jones’s
+> influence and prediction idea.
+```
+
+*“If this is the case, then it…”: to what idea does the pronoun, “it”, refer? The student might have meant that:*
+
+- There are two types of critics.
+- Some (or all) critics recognise quality.
+- Some (or all) critics judge how well a film will be received.
+
+
+- *the idea that there are two types of critics,*
+
+- *the idea that some (or all) critics recognise quality*
+
+- *or the idea that some (or all) critics judge how well a film will be received.*
+
+<center>
+![About whom are we talking?](images/dick_tracy.png){ width=300px }
+
+</center>
+
+
+
+<br>
+
+Another common way to goof things up is with a ...
+
+**“Run on” sentence**... This kind of sentence strings along too many phrases and clauses.
+
+
+```{block2, type='goofus'}
+> As they became aware of the fact that there was a, potentially very
+> strong, connection between the two, and how a child’s outcomes and
+> ability to contribute to the labour force (once fully developed) is
+> determined by his or her cognitive development from a very early age, with
+> a lack of parental involvement potentially having a highly adverse
+> effect on this, the need to answer this question became much more
+> apparent and essential.
+```
+
+*This text should be broken up into several sentences. Too many ideas are packed into one.*
+
+<br>
+
+On the other hand, don’t cut things too short. A sentence needs both a subject and a verb.
+
+**Fragment:** a group of words that resemble a sentence, but lack either a subject or a verb. 
+
+
+```{block2, type='goofus'}
+> Some organizations also find it as a good way to keep their employees
+> within the organization. Which build up a high level of competence
+> (Smith et al, 1776).
+```
+
+*The second phrase is a sentence fragment. Every sentence needs to have a
+subject and a verb (and sometimes an object).^[Sentence fragments are sometimes acceptable in bullet points, e.g., as part of slide presentations.]
+
+
+<!--
+<br> 
+**Subject/verb agreement:** if the subject is singular, the verb should be singular. If the subject is plural, the verb should correspond. Collective nouns can be tricky.
+```{block2, type='goofus'}
+A mob of angry students is attacking the terrified instructor.
+```
+In the above sentence, the subject is “mob,” which is singular. The “angry students” are plural, but they are not the subject of this sentence; they are the object of the preposition “of.” Therefore, you need to use a singular verb.
+-->
+
+
+### Tone
+
+**“Flowery” language**
+
+Don’t use big words and complicated constructions unless necessary. You don’t need to be fancy. Write simply and concisely.
+
+```{block2, type='goofus'}
+> This indissoluble connection between these two benefactors has been
+> theorized into the substitution phenomenon.
+```
+
+*The words “indissoluble” and “phenomenon” and “benefactors” are
+probably not needed here. “Has been theorized into” is an awkward
+construction. I'm not sure what this sentence was intended to mean. Probably something like 'these two factors are both determinants of the substitution effect.'*
+
+<br>
+
+**Informality**
+
+Use language that is polished, scientific and
+professional. Do not use slang. You want to be clear, but you *aint
+‘avin a laff* over a pint at the pub.
+
+```{block2, type='goofus'}
+> *The Irish Parliament proposed to cut spending on these organisations
+> and has <span class="underline">axed</span> 102 regional quangos...*
+```
+
+*Avoid the use of slang and highly informal words like “axed”.  Instead, say ‘de-funded’. Technical terms unfamiliar to your reader, like “Quangos”, should probably be defined when they are first mentioned.*
+
+<br>
+
+
+```{block2, type='goofus'}
+> On top of this, I have two of my own
+> <span class="underline">theories</span> that I will be testing.
+```
+
+```{block2, type='gallant'}
+*It would be better to say “Furthermore, I will test two
+<span class="underline">hypotheses</span> of my own.”*
+```
+
+<br> 
+
+**Inserting yourself and discussing your process**
+
+The reader knows you are the writer. No need to point that out. (Unless necessary, as in the example above, where the writer points out that the additional hypotheses are her own.)
+
+```{block2, type='goofus'}
+
+> From my research I have learned that
+> the studies that support the proposals made by Ofsted have been
+> extremely costly.
+
+```
+
+*Don’t write “my research” or “I have learned” and don’t call attention to the process of research and writing, unless it is necessary to explain your findings.*
+
+There are other problem here: it is unclear what is 'extremely costly'; the studies or the proposals. Furthermore 'studies that support' is a confusing idea; do the studies *favour* the Ofsted proposal? The studies should be specifically cited (and possibly explained in more detail). And what is 'extremely costly'; that's a subjective judgement and a vague statement. 
+
+Better (if this is what was intended):
+
+```{block2, type='gallant'}
+
+Several studies (Smith et al, 2017; Jones and Ali, 2018; Chang, 2018) make long-range projections following the Johnson (1999) cost-accounting method. Each of these studies independently finds that Ofsted's baseline proposal will cost over £12 billion per year over the next ten years.
+
+```
+
+<br>
+
+**Excessive formality and 'academese'**
+
+Don’t go too far in the other direction! Avoid academic jargon, ially the tendency to turn common words into fancy-sounding nouns.
+
+An example from outside Economics: 
+
+```{block2, type='goofus'}
+> Structuring meaning multidimensionally is co-creating reality through
+> the languaging of valuing and imaging.
+```
+
+*“Languaging of valuing”? I have no idea what this means. Aren’t you glad you are studying Economics?*
+
+<br>
+
+
+Closely related to 'tone' is the issue of how carefully and modestly we state the claims that we make, and what we are asking the reader to do with these.
+
+**Proclamations and commands**
+
+Closely related to 'tone' is the issue of how carefully and modestly we state the claims that we make, and what we are asking the reader to do with these.
+
+<center>
+![It [didn't work out well](https://en.wikipedia.org/wiki/Benito_Mussolini#Death) for this guy.](images/il_duce.png){ width=300px }
+
+<small> </small>
+</center>
+
+```{block2, type='goofus'}
+> The textile products must pass a rigorous inspection process which may
+> increase trade costs. Mexico’s producers need to respond to this by
+> cutting costs and increasing quality in order to stay competitive.
+```
+
+*Must the textiles pass a rigorous inspection by law? If that’s true, it is fine to say so. Do Mexico’s producers 'need to' cut costs and increase quality, or is that the writer’s opinion?  Your research is not meant to dictate. You need to be objective and weigh evidence carefully.*
+
+
+<br>
+
+### Word choice (aka 'diction') and terminology
+
+Be careful when you choose words, both technical and commonplace. Using the wrong word can make things very confusing.
+
+```{block2, type='goofus'}
+> A study carried out by Smith (1975) looked into the effects of business unit size on business unit R&D intensity, using data which were composed by the US Federal Trade Commission.
+```
+
+The student probably meant that the data were *collected* by the US FTC, but it is not clear. “Composed” is a confusing word choice here. 
+
+<br> 
+
+<br>
+
+**Terminology**
+
+When you use technical terms specific to Economics (or Statistics or other fields), be sure you are using them correctly.
+
+```{block2, type='goofus'}
+> This section focuses on looking for trends between various papers and
+> pieces of published literature, analysing them in terms of how
+> relevant they are today, how knowledge of the field has evolved and
+> whether the date they were released indicates a direct
+> *correlation* of their relevance in
+> today’s society.
+```
+
+*The word “correlation” is inappropriate here. A correlation is a
+statistical measure. Note also that the above is fairly obvious and is
+stated in too many words.*
+
+Better: 
+
+```{block2, type='gallant'}
+> In this section I review the published evidence. I discuss how the field has evolved and consider whether older work is less relevant to the contemporary situation.
+
+```
+
+<br>
+
+Another example:
+
+```{block2, type='goofus'}
+> Johnson et al. (2000) provide an analytical framework that sheds
+> substantial doubt on that belief. When trying to
+> *obtain a correlation* between
+> institutional efficiency and wealth per capita, they are left with
+> largely inconclusive results.”
+```
+
+*They are not trying to "obtain a correlation"; they are trying to
+measure the relationship and test hypotheses.*
+
+Better: 
+
+```{block2, type='gallant'}
+> ... They empirically examine the relationship between institutional efficiency and wealth per capita; these results are largely inconclusive.
+
+```
+
+<br>
+
+```{block2, type='goofus'}
+> Schumpeter *assumed* that there will always be a stronger incentive
+> for a monopolist to be innovative than a competitive firm.
+```
+
+Schumpeter is not *assuming* (an
+assumption is a premise for an argument), this is his *theory* of
+innovation. Much of his work is devoted to justifying this theory.
+
+Better: “Schumpter *argues* that ...”
+
+<br> 
+
+### Linking words and transitions
+
+Your arguments must, above all, be *logical*. (See ['logic and argumentation'](#logic-goofs).) The grammar of your sentences implies a certain logic, particularly through the use of what I will call **'linking words'**.
+
+```{block2,  type='tip'}
+
+Do not use transitions and linking words unless the 'logical conditions hold' for them to make sense (see examples below). Otherwise you will confuse the reader.
+
+```
+ 
+
+Words like “therefore” or “henceforth” are
+used to mean that the previously stated idea *implies* the following one.
+
+<!--
+If this link is not logical, you shouldn’t use these linking words.
+Otherwise you may create a no sequitur.
+-->
+
+```{block2, type='goofus'}
+> Through welfare programmes, governments can reduce inequality in
+> society. Therefore, countries that do not have an efficient welfare
+> state create an impediment to development and sustainable economic
+> growth.
+```
+
+*The first sentence highlights a link between a welfare system and
+inequality. So, after “therefore”, we expect something like “countries
+that do not have an efficient system of welfare benefits are more likely
+to experience high inequality”. Logic dictates that the second sentence should be about
+**inequality** not about growth.*
+
+<br>
+
+Words like “although,” “however,” “nonetheless,” and “in contrast to”
+imply that the idea you are about to introduce is surprising in light of
+the idea that precedes it.
+
+<br>
+
+```{block2, type='goofus'}
+> I find trade a useful variable to analyse the relationship between FDI
+> and economic growth. *Although* there
+> are countries that are not totally open to trade, such as North Korea,
+> countries with openness to trade have higher growth rates than
+> countries with a more restrictive trade law.
+```
+
+*The “although” here does not make sense. The fact that North Korea is a
+closed economy is **not** in contrast to the idea that openness leads to
+growth. North Korea is **not** known to have experienced strong growth.*
+
+```{block2, type='goofus'}
+> On the one hand, the import penetration ratio has risen rapidly since
+> the 1970s. On the other hand, the manufacturing sector has shrunk from
+> roughly 75% of the Atlantean GDP to less than 30% in just 60 years.
+```
+
+*This is not ‘on the other hand’; these facts argue in the **same**
+direction.*
+
+<br> 
+
+## Revising, rewriting and proofreading
+
+“Reading your own writing cold, a week after drafting it, will show you
+places where even you cannot follow the sense with ease.” – McCloskey
+
+**Never** turn in a paper for preliminary feedback nor for your final
+submission without first doing a spelling and grammar check, as well as
+looking over the entire paper one last time for random errors.
+
+
+```{block2,  type='tip'}
+
+*For example, in MS Word:* Select your entire document, use the “Tools” menu to make sure your entire document is set to language: English. 
+Use –“Tools” –“Spelling and grammar check” (instructions as of 2017)
+
+```
+
+
+## Sections to be added: 
+
+- Presenting an argument
+
+- Polishing your paper and making it look professional
+
+- Logic and rigour
+
+- Statistical and econometric logic and rigour; stating your results (and others’)
+
+For example, if you are using an instrumental variables approach, what is your
+instrument and how do you justify it? State this early in your paper and prominently.
+
+- Correct economics; using what have learned in your coursework
+
+- How to write if you have difficulty writing in English 
+
+
+# Thou Shalt (Not): Further specific “do’s and don’ts”, with further examples {#dos_donts}
+
+`r format_with_col("Todo: I will link these examples and counterexamples within the above sections.","orange")`
+
+## Posing a good question {#not_questions}
+
+`r format_with_col("Avoid:", "red")` 
+
+- Vague questions
+
+- Questions that are hard to understand
+
+- Non-economic questions
+
+- Unanswerable questions
+
+## Organisation, structure, and focus {#not_organised}
+
+**Integrate all components**: You need to integrate your literature
+survey (and all other parts) into the full paper. You don’t want the
+parts to look “pasted in”.
+
+**Use a standard format**
+
+**Don’t give excessive detail**
+
+**Don’t stray from your topic**
+
+**Focus on the *economic* question**
+
+**Keep the reader’s attention**
+
+**Don’t leave parts unfinished**
+
+
+## Literature review, citations, and attribution {#not_lit_review}
+
+<!-- **NOTE**: these were colored red/blue in the word doc; need to recover these colors in some way to emphasize the 'good/bad' (todo)
+--> 
+
+**Plagiarism:** Plagiarism is an academic crime. Plagiarism=theft\! You
+wouldn’t steal a chicken, would you? So don’t steal an idea, please.
+(And in case you were thinking about stealing a chicken, please don’t do
+this either.)
+
+<br>
+
+**Is this your own idea?:** Be clear about what is yours and what comes
+form other sources.
+
+
+> *<span class="underline">From feedback on an essay</span>: Is this
+> your own finding? It looks like it came from somewhere else. If this
+> is a direct quote, put quotation marks around it and reference the
+> source. If it is a paraphrasing, you still should reference the
+> source. If it is your own idea, be clear about this. Use a phrase like
+> “according my analysis below…” or “I hypothesize that…” or “based on
+> the findings of XXX and YYY, I hypothesize that”…*
+
+<br>
+
+**Reference missing**
+
+```{block2, type='goofus'}
+
+> <span class="underline">Figures from CNN</span> show that there is a
+> 10% decline in applicants and a 12% decline when excluding foreign
+> applicants.
+
+```
+
+*“Figures from CNN” is too general. Which figures do these refer to? You
+should give a proper and specific citation for an internet and news
+source (see guidelines below [give better example]). However, it would
+be even better to find the original source for this statistic (which
+should probably be mentioned in the CNN report).*
+
+<br>
+
+```{block2, type='goofus'}
+
+> In light of the problems of moral hazard discussed above,
+> <span class="underline">it has been suggested by many
+> practitioners</span> that the deployment of highly powered incentives
+> can resolve the issues of free-riding.
+```
+
+*Whenever you write something like “it has been suggested” you need to
+mention at least one author who has suggested this. (See the problem of
+[Straw Men](#strawmen)). 
+
+<br>
+
+**Referencing problems**: Reference (citation) not formatted correctly
+[see section TODO on proper referencing. Also see software tools like
+Endnote and Zotero that can help you with this.].
+
+```{block2,  type='goofus'}
+
+> Consider a recent immigrant to Britain; does their experience of the
+> economy in their home country affect their beliefs about the UK
+> economy or their risk preferences? (Smith and Jones, 2009)
+
+```
+
+"Consider:"  *In general when you give references you need to say something about what that article did. Did the cited article **pose** this question?  Did it provide evidence on this in one direction or the other?*
+
+## Logic and argumentation {#logic-goofs}
+
+<center>
+![Circular](images/circle_arrows.png){ width=200px }
+</center>
+
+**Incompleteness: Don’t make an argument or state a result that leaves
+the reader confused. If it is important, fully explain the concept. **
+
+```{block2, type='goofus'}
+> Thus the idea of team spirit should be promulgated by linking pay to
+> the performance of the team as a whole rather than offering incentive
+> pay on individual basis only which would serve as a stumbling block to
+> the promotion of the team cohesiveness in the company.
+```
+
+*Why would the individual-level performance pay harm cohesiveness? This
+needs to be followed up.*
+
+<br>
+
+**Circular logic (“A is true because A is true.”)**
+
+```{block2, type='goofus'}
+> Higher income taxes discourage people from seeking work. This is
+> because people will be less likely to seek work when income taxes are
+> raised.
+```
+
+<br> 
+
+<center>
+![Circular logic](images/circular_logic.png){ width=350, height=350px }
+</center>
+^['Knots' by R.D. Laing; Add citation details]
+<br>
+
+**Self contradiction**
+
+I```{block2, type='goofus'}
+> I argue that monopolistic firms are more likely to be innovative than
+> competitive firms because barriers to entry will stop rival firms
+> imitating one another. Firms in a competitive market need to compete
+> with their rivals, with new products etc., while a monopoly has the
+> safety of having a high total market share.
+```
+
+*The first sentence seems to argue that monopolistic firms are more
+innovative, while the second sentence provides an argument for the
+opposite.*
+
+<br>
+
+**Getting it backwards**
+
+```{block2, type='goofus'}
+> Whenever income taxes increase, people earn more per hour of work and
+> thus they shift to working more hours.
+```
+
+*Presumably, the author meant the opposite of this. Be careful not to
+get things “backwards”. Even if the reader can figure out what you
+meant, it makes the paper difficult to read.*
+
+<br>
+
+**Unfounded claims: What is the evidence? **
+
+```{block2, type='goofus'}
+> The consequences of the recent recession in Japan are that households’
+> disposable income has decreased significantly. Many people do not have
+> the luxuries that they once did and this is another reason why crime
+> has increased, individuals still want the luxuries and possessions
+> that they once had, despite not being able to afford them, and they
+> will steal them in order to regain their status.
+```
+
+*Several claims are made here without providing evidence or even
+references. *
+
+*Spot the claims:*
+
+1)  *Disposable income significantly decreased, as a **result** of the
+    crisis.*
+
+2)  *People are spending less on **luxuries.***
+
+3)  *The lack of luxuries is leading people to commit crimes (theft in
+    particular)*
+
+4)  *This is about “status”.*
+
+*Think about what evidence could support these claims. Try to gather
+this evidence, or at least reliable sources making these points. If not,
+don’t make such strong claims, or state these as a “potential story” or
+“hypothesis.” *
+
+<br>
+
+```{block2, type='goofus'}
+> However, if theatre and screen actors were to decertify, this would
+> essentially cause antitrust laws to be rendered void. This would cause
+> aspects of the contractual agreements such as overtime limits, salary
+> caps, etc. to be effectively dropped. This would cause a huge rise in
+> elite actor salaries as well as a monumental increase in the power
+> exerted over the industry by larger studios.
+```
+
+Claims... 
+
+1)  *If actors were to decertify, this would cause antitrust laws to be
+    voided. *
+
+2)  *If antitrust laws are rendered void, parts of the contract
+    agreement will be dropped. *
+
+3)  *If these parts ...*
+
+<br> 
+
+**Unclear difference/distinction:** If you say that two concepts are
+distinct, you need to show clearly explain why and how.
+
+<!-- need example here -->
+
+<br> 
+
+**Loaded words (**Hammer symbol)**:** Avoid using words that suggest a
+political point of view
+<center>
+![Presentation](images/political_symbols.png){ width=200px }
+</center>
+
+
+```{block2, type='goofus'}
+> If GDP growth’s aim is not to strengthen
+> “<span class="underline">neoliberal</span>” structures, politicians
+> should strive to fit global labour and welfare objectives, such as the
+> Rio accords.
+```
+
+(Also see the word “Dogma”)
+
+```{block2, type='goofus'}
+> As Smith et al, (2010) show in great detail, companies that lobbied
+> the Atlantian Senate on predatory lending in the years prior to the
+> crisis exhibited significantly more risk-taking, managed to pressure
+> politicians into barring all new laws that would have prevented their
+> <span class="underline">profit-seeking recklessness</span> and in the
+> aftermath, exhibited a much higher chance of being bailed out by the
+> government.
+
+```
+
+
+
+```{block2, type='goofus'}
+> At the same time in Germany, after the
+> <span class="underline">infamous</span> reforms of 2011, price was
+> raided [raised?] to 5000-9000 per year which is significantly larger
+> than in any other country of continental Europe.
+```
+
+```{block2, type='goofus'}
+> The <span class="underline">infamous</span> Solow growth model is
+> based on the <span class="underline">simplistic</span> premise that
+> every economy must save a proportion of its national income in order
+> to fund investment in capital goods.
+```
+
+### Opinion:
+
+In general, avoid giving your opinions without evidence or
+outside references. If you are giving an opinion, it needs to be stated
+as such.
+
+```{block2, type='goofus'}
+> Sadly, this is true.
+```
+
+-  Don’t be sad
+
+```{block2, type='goofus'}
+> As the shadow Mayor of Birmingham spoke in 2009 “The economic
+> stagnation and cuts being imposed by the Liberal government inevitably
+> create social tension.”
+```
+
+```{block2, type='goofus'}
+- Although this is given as a quote, the student wrote “as the shadow Mayor … spoke” indicating the author considers this point to be true.
+ 
+```
+
+<br> 
+
+**Which words  make the following statement opinionated?**
+
+```{block2, type='goofus'}
+> With the Atlantian national debt increasing at extortionate rates,
+> <span class="underline">public finances were beginning to run out of
+> control</span>. ‘Estimates suggest that the total debt will rise from
+> 57 per cent to 87 per cent of GDP by 2017’
+```
+
+*How about here?*
+
+```{block2, type='goofus'}
+>  The answer, as John Smith, Minister of the Cabinet pointed out on January 1<sup>st</sup> in the Committee room on Public Policy, has so far been negative: “I don’t think we can ever reach this situation”. Even though he <span class="underline">should be</span> in favour of such engagements he is not
+```
+
+<br>
+
+What is opinionated about the following?
+
+```{block2, type='goofus'}
+> Areas such as work-study and other work based education need
+> <span class="underline">to be fully used</span> to increase the
+> efficiency of the future labour market. Training and education is key
+> in any form and the government can provide the funding and knowledge
+> to do this
+```
+
+
+... *or this one*?...
+
+```{block2, type='goofus'}
+> Women’s participation in the labour market plays a key role in
+> development. As women represent over half of society, it is necessary
+> for both sexes to be involved equally in economic activities to
+> satisfy economic needs.
+```
+
+Even opinions that might seem widely accepted still should not be stated as *facts* in a research context.
+
+### Critically examine sources {#crit_examine}
+
+Don't take everything that is in print (or written online) as gospel
+truth. Be skeptical and carefully evaluate the arguments and evidence
+presented. Try to really survey what has been written, to consider the
+range of opinions and the preponderance of the evidence. You also need
+to be careful to distinguish between "real research" and propaganda or
+press releases.
+
+```{block2,  type='goofus'}
+
+> The returns to higher education in Atlantis are extremely high. For
+> the majority of Atlanian students a university degree has increased
+> their lifetime income by over 50%, as reported in the “Benefits of
+> Higher Education” report put out by the Association of Atlantian
+> Universities (2016).
+
+```
+
+This would seem to be a potentially biased source, as they would have a self-serving motive to inflate the estimates of the benefits of higher education.^[Thinking about it further...  Perhaps the results the student discusses seem to show an association between higher degrees and higher salaries. The student seems to imply that the education itself led to higher salaries. This has not been shown by the cited paper. Perhaps people who were able to get into higher education would earn higher salaries anyway. There are ways economists used to try to identify a "causal effect" (by the way, this widely used term is redundant as all effects must have a cause), but a mere association between two variables is not enough.]
+
+
+On the other hand, it is ok to take into account the limitations of a
+model, but it is not ok to harshly criticize it without providing
+careful explanation:
+
+```{block2, type='goofus'}
+> Smith (2014) found a return to education in Atlantis exceeding 50%.
+> This result is unlikely to be true because the study was not a very
+> good one.
+```
+
+### Non sequitur
+
+A *non sequitur* is a statement in which the
+implication does not follow from the premise (or the evidence). Avoid this common mistake.
+
+<br> 
+
+**If $\rightarrow$ Then**
+
+```{block2, type='goofus'}
+> He argues that if a corporation’s success is considered a public good,
+> the presence of such goods in the supply chain can explain how an
+> economy can function (although sub-optimally) with persistent failures
+> of markets to deal with those public goods.
+```
+
+*It is not clear how the presence of “such goods” (which ones, exactly?)
+explains the functioning of an economy.*
+
+<br> 
+
+**Moreover**
+
+```{block2, type='goofus'}
+> Moreover, as the scale of expected profits increases, unethical
+> behaviour in business can and will most likely result in
+> distributional problems, characterized by income inequality, for
+> example. [] Therefore, ethical business approaches are crucial to
+> sustainable growth. <span class="underline"> </span>
+```
+
+```{block2, type='goofus'}
+> University may not be a good investment for everyone as vocational
+> careers and apprenticeships may be more suitable. Therefore it is
+> difficult to measure the true effect of reduced government spending on
+> higher education the economic efficiency
+```
+
+```{block2, type='goofus'}
+> Although this is an efficient way of not making the household increase
+> the level of income taxation that is paid, the tax payer will still
+> suffer indirectly. As the government decreases expenditure, public
+> services feel the effect of this cutback. For example, since the
+> Conservative government came into power in 1979, the police force has
+> made several cut backs and job losses in order to save government
+> expenditure, as it is a <span class="underline">public good.</span>
+```
+
+```{block2, type='goofus'}
+> Competitive markets in theory are the most efficient form of markets.
+> Although perfectly competitive markets rarely (if ever) exist, by
+> Sweden implementing fees to international students, the Swedish higher
+> education system became more competitive, thus more efficient.
+```
+
+*Even if competitive markets are the “most efficient” form this does not
+imply that **increasing** the level of fees makes the market “more
+competitive”, nor that a “more competitive” market is more efficient. *
+
+### Not economics:
+
+Avoid discussing issues that are irrelevant to
+economics and also irrelevant to your paper.
+
+<!-- Need examples here --> 
+
+### Not “proven”:
+
+“Proven” is a problematic word to use, particularly in
+the context of empirical analysis and statements pertaining to the real
+world. (See discussion of theory and empirical work in chapter 1.).
+
+>```{block2, type='goofus'}
+ Through their economic model, they prove that as long as elites have
+> incentives to invest in de facto power, through lobbying or corruption
+> for example, they will invest as much as possible in order to gain
+> favourable conditions in the future for their businesses.
+```
+
+*A theoretical economic model can not really **prove** anything about
+the real world; they typically rely on strong simplifying assumptions.*
+
+
+<br>
+
+```{block2, type='goofus'}
+> As Smith et al proved using data from the 1910-1920 Scandanavian stock
+> exchange, equity prices always increase in response to reductions in
+> corporate tax rates.
+```
+
+*Empirical work does not **prove** anything (nor does it claim to). It
+relies on statistical inference under specific assumptions, and an
+intuitive sense that evidence from one situation is likely to apply to
+other situations.*
+
+```{block2, type='goofus'}
+<span class="underline">Better</span>: *Smith et al (199) estimated a
+VAR regression for a dynamic CAP model using data from the 1910-1920
+Scandanavian stock exchange. They found a strongly statistically
+significant negative coefficient on corporate tax rates. This suggests
+that such taxes may have a negative effect on publicly traded
+securities. However, as their data was from a limited period with
+several simultaneous changes in policy, and their results are not robust
+to [something here], further evidence is needed on this question.*
+```
+
+### Straw men: If you are claiming to be rebutting a “common argument”  or “conventional wisdom” you need to show that others have made the point that you are trying to rebut. {#strawmen}
+
+<center>
+![Presentation](images/obama_straw_man.png){ width=400px }
+</center>
+^[Reference to this cartoon needed. By the way, I'm including this cartoon because it makes a good example, not because I agree with the politics. (Personally, I love Obama and I thing the ACA was great.)]
+
+
+```{block2, type='goofus'}
+> Moreover, **most economists argue** that 
+> monopolies and oligopolies will exist only if it is profitable to the
+> public (otherwise it would be stringently regulated or dissolved), but
+> the findings show that there is a very strong link between the
+> persistence of an oligopoly and political manipulation.
+```
+
+*This is not what most economists argue, at least not so broadly. The
+student should have given a reference to some author or textbook who
+makes this claim *
+
+### Too strong claims 
+
+Too strong a claim to make; needs to be stated more cautiously.
+
+```{block2, type='goofus'}
+> Although this has a positive effect in helping in deficit reduction
+> there are consequences that the economy has to face because of this.
+> Robbery rates have increased tremendously, because of the lack of
+> police on the streets of New Zealand a lower number of criminals are
+> being caught and the economy is suffering
+```
+
+```{block2, type='goofus'}
+> Thirdly this essay is going to display why private volunteer efforts
+> are more effective than a lump sum tax, for example because it reduces
+> the incentive to work for private individuals of a society.
+> <span class="underline"> </span>
+```
+
+```{block2, type='goofus'}
+> Tuition fees are charged by secondary schools to support with funding
+> of staff and faculty and provide an efficient student learning
+> experience.
+```
+
+### Units?
+
+What are the units of measurement here?
+
+```{block2, type='goofus'}
+> In Portugal, Italy and Greece we register a drop in fulltime
+> likelihood respectively of around -0.144, - 0.119 and -0.161.
+```
+
+*The likelihood of what? Is this a drop in percentage points, in
+probabilities, in proportion of the original probability, or what?*
+
+<br> 
+
+### Vague, imprecise:** It is not clear what this is intended to mean.
+This needs to be made clearer and more definite
+
+```{block2, type='goofus'}
+> This problem has many applications in real life, and this
+> investigation will further explore this phenomenon as well as try to
+> answer some questions regarding its relevance.
+```
+
+<br> 
+
+*What sort of applications? What questions will you try to answer?*
+
+```{block2, type='goofus'}
+> I use a model constructed from recent research, which deals with
+> problems from earlier papers, I extend it to see the effects for
+> different categories.
+```
+
+*What is the recent research? What were the problems? In what sense does
+this paper extend it, and to what sorts of categories?*
+
+### Confusing statements
+
+```{block2, type='goofus'}
+>  He argues that encouraging competition among workers by linking
+> rewards to each other’s accomplishments has no intrinsic value,
+> <span class="underline">rather a result of the effective use of
+> information</span>.
+```
+
+*What is “intrinsic value”? The use of “rather” is confusing here.
+Rather than what? Perhaps the student meant something like: *
+
+<br> 
+
+```{block2, type='goofus'}
+> He argues that linking *a saleseperson’s rewards to her peers’* does
+> not directly encourage effort through a spirit of competition.
+> However, when the employer can set incentives based on the overall
+> peer group’s performance, this allows a more effective use of
+> information and better targeted incentive schemes.
+> <span class="underline"> </span>
+```
+
+```{block2, type='goofus'}
+> Smith et al (1899) hypothesize that when group members are given the
+> authority to reward and sanction each other this led to an increase in
+> group allocations and earnings whereas, though it was as a result of
+> behaviour in previous rounds which did not survive recurrence.
+```
+
+*This sentence has too many clauses. The “whereas” and “though” make it
+very difficult to interpret. *
+
+### Define:
+
+Please define all the concepts that you rely on if they are not standard or obvious. Try to define them in a way that is precise,
+relevant to your paper, and economically meaningful.
+
+```{block2, type='goofus'}
+> … that they had incorporated the concept of
+> <span class="underline">self-managing work teams</span> in their
+> organizational structure while 81% claimed to deploy
+> <span class="underline">employee participation groups</span> in the
+> year 1983.
+
+> <span class="underline">Teamwork</span> also helps companies to
+> achieve more <span class="underline">flexibility</span>.
+```
+
+*What is meant by “teamwork”? Putting several employees together on the
+same project? Offering compensation based on group (rather than
+individual) performance? And what is meant by “flexibility”? The ability
+for the company to adapt to changing markets by quickly producing new
+products? The ability to react to employees leaving and retiring
+unexpectedly?*
+
+<!-- *Not sure which category this is:* --> 
+
+### Anecdotal
+
+This evidence is merely anecdotal, involving a few
+specific examples. Consider whether more formal and general evidence
+would be more convincing.
+
+```{block2, type='goofus'}
+> **Finland has a long history of churning out well-known musicians, ,
+> politicians, innovators, and entrepreneurs, including such notables as
+> Finn Skylzbz, a chemist who instituted the Imperial Prize, Svrkl
+> Brzgkb, founder of TVWorld, a television store with locations around
+> the globe, and Zyjzblr Jmplf , a social scientist, often called the
+> Father of Sociology…**
+
+> It could be argued that this is not just due to the high quality of
+> education in Finland but that, up until very recently, the higher
+> education in Finland was free.
+```
+
+*More formal evidence could include overall educational and career
+outcomes for the Finnish population, overall levels of innovation, and
+comparisons between countries that do and do not offer free higher
+education. The anecdotes might have been a good start if it they were
+backed up by stronger evidence. However, by themselves these are not
+“stylized facts” that are strong or convincing enough to base a paper
+on. *
+
+## Economic logic; avoiding fallacies; economic terminology
+
+**Price?** : Shouldn’t this be reflected in the price?
+
+```{block2, type='goofus'}
+> Oil company shares are likely to be highly profitable in the future,
+> because there have been many oil wells recently discovered.
+```
+
+*The share prices should presumably have already risen to reflect the
+expected future profits (see “efficient markets”).*
+
+<br> 
+
+```{block2, type='goofus'}
+> There is always a shortage of plumbers because few people want to work
+> in an industry seen as "dirty".
+```
+
+*If plumbing were seen as undesirable work, there should be a
+"compensating differential" and plumbers should earn higher wages,
+attracting people to this field.*
+
+<br> 
+
+**Cet. Par** . (Ceteris paribus … all things being equal): Does this
+result or claim hold other things constant?
+
+<!-- Need examples here --> 
+
+<br> 
+
+**Comparative (versus absolute) advantage and the gains to trade **
+
+<br> 
+
+**Raising prices does not always increase profit; firms will not ‘raise
+prices to make up for losses’**
+
+<br> 
+
+**Small differences/changes will have small “marginal” effects**
+
+## Statistical and econometric logic
+
+**What changed?:** Basically, only a change can explain a change. If you
+are trying to explain an economic or social change, you can not merely
+cite a factor that was always present.
+
+```{block2, type='goofus'}
+> Medical doctors and insurers hold a great deal of political power.
+> This explains why medical costs have dramatically increased in the
+> United States in the last 20 years, relative to other countries, and
+> relative to previous decades.
+```
+
+*Why is this particular to the last 20 years? Why is it particular to
+the United States? If doctors always held a lot of power they might have
+already taken steps to increase fees even before the last 20 years. A
+more credible explanation would have been involved the doctors and
+insurers power increasing the last 20 years. Alternately, something may
+have changed in the system that allowed them to better exploit this
+power.*
+
+```{block2, type='goofus'}
+> Policymakers believe that lowering interest rates will reduce
+> unemployment. However, lowering interest rates may also lead to
+> inflation. This explains the high rates of inflation in the UK in
+> recent years.
+```
+
+*A part of this argument is missing: have policymakers only recently
+come around this point of view? Has there been more unemployment in
+recent years, leading to increased use of the ‘interest rate’ tool?*
+
+```{block2, type='goofus'}
+> Kazakhstan's trade deficit has been higher than that of other former
+> Soviet politics. This is because the Soviet republics were largely
+> dependent on Russia for their export links to the rest of the world.
+```
+
+*If this were the case (and I have no idea if it is) why did it affect
+Kazakhstan in particular? Was Kazakhstan more dependent on Russia then
+the other Soviet republics?*
+
+<br> 
+
+```{block2, type='goofus'}
+**Type-2 mistakes**: Don’t claim a hypothesis is “accepted”; this is
+basically a meaningless statement in classical statistics. A hypothesis
+can only be rejected or fail to be rejected.
+```
+
+There is a correct way to say “the evidence suggests that there are no
+large effects”, but this must be done carefully.
+
+<br> 
+
+*Do not confuse the lack of a* result (due *to limited statistical
+power) with a “finding of no effect”.*
+
+```{block2, type='goofus'}
+> I analyzed data from four countries over six years. In my regressions
+> with GDP as the dependent variable, found a large but insignificant
+> coefficient on the prevalence of earthquakes. Therefore, I conclude
+> that natural disasters have no impact on national income.
+```
+
+*The null hypothesis was presumably "no effect of disasters on GDP." If
+the student had found a significant effect he might have been able to
+reject this null hypothesis in favor of an alternative hypothesis (e.g.,
+of a negative effect on GDP). However, failing to reject the null does
+not allow you to conclude that the null holds. In particular, in this
+case is unlikely that the student's very small data set would have
+allowed her to find a significant result, even if there were a strong
+impact of disasters on GDP in reality. We say "the test had low power"
+when it is unlikely to reject the null even when the alternative
+hypothesis is true.*
+
+<br> 
+
+**Endogeneity**
+
+***How is causality identified?** How do you (or the cited paper) claim
+to identify a causal relationship?*
+
+```{block2, type='goofus'}
+> This policy was explained by Smith and Johnson (2002) in their
+> research on subsidies and redistribution in higher education.
+> <span class="underline">Their results showed</span> that people with
+> higher degree have higher salaries and so pay higher taxes. Thus
+> subsidizing higher education leads to a large social gain.
+```
+
+*The results the student discusses seem to show an association between
+higher degrees and higher salaries. The student seems to imply that the
+education itself led to higher salaries. This has not been shown by the
+cited paper. Perhaps people who were able to get into higher education
+would earn higher salaries anyway. There are ways economists used to try
+to identify a "causal effect" (by the way, this widely used term is
+redundant as all effects must have a cause), but a mere association
+between two variables is not enough.*
+
+<br>
+
+```{block2, type='goofus'}
+> As inflation was systematically lower during periods of recession, we
+> see that too low a level of inflation increases unemployment.
+```
+
+*Economists have long debated the nature of this “Phillips curve”
+relationship. There is much work trying to determine whether the
+association (to the extent it exists) is a causal one. We could not rule
+out reverse causality, or third factor that might cause changes in both
+variables.*
+
+## Presentation of theory and equations
+
+**Label variables** : All specified variables (in equations, tables, and
+charts) should be clearly defined and described.
+
+```{block2, type='goofus'}
+I run the following regression:
+
+\[\mathbf{\text{Wage}}_{\mathbf{i}}\mathbf{=}\mathbf{\beta}_{\mathbf{1}}\mathbf{+}\mathbf{\beta}_{\mathbf{2}}\mathbf{\text{ED}}_{\mathbf{i}}\mathbf{+}\mathbf{\beta}_{\mathbf{3}}\mathbf{\text{EX}}_{\mathbf{i}}\mathbf{+}\mathbf{\epsilon}_{\mathbf{i}}\]
+```
+
+*This equation is not clear. 1. Variables should be given brief but
+understandable names or abbreviations. 2. All variables should be
+explained. In empirical work, you should also fully explain the data
+source and construction of all the
+variables.*
+
+*Better:*
+
+```{block2, type='gallant'}
+\[\mathbf{\text{Wage}}_{\mathbf{i}}\mathbf{=}\mathbf{\beta}_{\mathbf{1}}\mathbf{+}\mathbf{\beta}_{\mathbf{2}}\mathbf{\text{EDUCATION}}_{\mathbf{i}}\mathbf{+}\mathbf{\beta}_{\mathbf{3}}\mathbf{\text{EXPERIENCE}}_{\mathbf{i}}\mathbf{+}\mathbf{\epsilon}_{\mathbf{i}}\]
+
+*Where*
+
+EDUCATION: Years of post-primary education (in levels)
+
+EXPERIENCE: Years of job experience (Age – years education – years
+unemployed)
+
+```
+
+## Data presentation and presentation of results
+
+**<span class="underline">The crimes:</span>**
+
+- Unlabeled variables
+
+- confusing labels
+
+- too many digits presented in the results
+
+- results presented with the wrong scale
+
+- not explaining the estimation technique
+
+- not presenting important associated regression diagnostics and
+statistics
+
+- presenting too many results (e.g., showing a set of dummies that could
+be hidden) or irrelevant regression diagnostics
+
+- regression table in a nonstandard format. Worst-case: pasting in Stata
+output
+
+- Not including significance tests
+
+- forgetting to put standard errors below coefficient estimates
+
+- presenting the wrong significance tests
+
+*Problematic example (edit): *
+
+```{block2, type='goofus'}
+
+![image2](media/image2.emf)
+
+```
+
+*What are the units here for the wage? What is IMPPEN and for what
+years? What does each observation represent? Is this some measure of
+dollars per hour? Note that the standard errors of the estimates seem to
+be wide; thus there is a lack of statistical power so the author should
+be careful not to claim to have found strong “evidence against” an
+effect. For the 2SLS, what instrument(s) are used. Some diagnostic
+measures of the instrument should be given, testing whether it is “weak
+or strong”, doing an overidentification test if there are multiple
+instruments, and perhaps presenting the “first stage” regression(s). *
+
+- Misinterpretation of coefficients
+
+- Listing "all results" in text
+
+- Not discussing the results sufficiently
+
+- Misleading figures and graphs
+
+- Wrong choice of graph type
+
+- Misleading graph scale
+
+- Not explaining the data source
+
+- Copying a figure without attribution
+
+```{block2, type='goofus'}
+*Problematic example (edit): *
+
+![](media/image2.emf)
+```
+
+```{block2, type='goofus'}
+Problematic example II
+
+Table 5: Key Variables in the Estimation
+
+<table>
+<tbody>
+<tr class="odd">
+<td></td>
+<td><blockquote>
+<p>B</p>
+</blockquote></td>
+<td><blockquote>
+<p>S.E.</p>
+</blockquote></td>
+<td><blockquote>
+<p>Wald</p>
+</blockquote></td>
+<td><blockquote>
+<p>Df</p>
+</blockquote></td>
+<td><blockquote>
+<p>Sig.</p>
+</blockquote></td>
+<td><blockquote>
+<p>Exp(B)</p>
+</blockquote></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Experience*</td>
+<td><blockquote>
+<p>-.123</p>
+</blockquote></td>
+<td><blockquote>
+<p>.068</p>
+</blockquote></td>
+<td><blockquote>
+<p>8.160</p>
+</blockquote></td>
+<td><blockquote>
+<p>1</p>
+</blockquote></td>
+<td><blockquote>
+<p>.004</p>
+</blockquote></td>
+<td><blockquote>
+<p>.800</p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><blockquote>
+<p>MaritalStat</p>
+</blockquote></td>
+<td><blockquote>
+<p>.234</p>
+</blockquote></td>
+<td><blockquote>
+<p>.464</p>
+</blockquote></td>
+<td><blockquote>
+<p>.257</p>
+</blockquote></td>
+<td><blockquote>
+<p>1</p>
+</blockquote></td>
+<td><blockquote>
+<p>.612</p>
+</blockquote></td>
+<td><blockquote>
+<p>1.143</p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><blockquote>
+<p>EDqualification*</p>
+</blockquote></td>
+<td><blockquote>
+<p>-.663</p>
+</blockquote></td>
+<td><blockquote>
+<p>.152</p>
+</blockquote></td>
+<td><blockquote>
+<p>17.121</p>
+</blockquote></td>
+<td><blockquote>
+<p>1</p>
+</blockquote></td>
+<td><blockquote>
+<p>.000</p>
+</blockquote></td>
+<td><blockquote>
+<p>.629</p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><blockquote>
+<p>Noofcars</p>
+</blockquote></td>
+<td><blockquote>
+<p>-.059</p>
+</blockquote></td>
+<td><blockquote>
+<p>.125</p>
+</blockquote></td>
+<td><blockquote>
+<p>.022</p>
+</blockquote></td>
+<td><blockquote>
+<p>1</p>
+</blockquote></td>
+<td><blockquote>
+<p>.883</p>
+</blockquote></td>
+<td><blockquote>
+<p>.981</p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><blockquote>
+<p>Husbandincome*</p>
+</blockquote></td>
+<td><blockquote>
+<p>.544</p>
+</blockquote></td>
+<td><blockquote>
+<p>.047</p>
+</blockquote></td>
+<td><blockquote>
+<p>36.294</p>
+</blockquote></td>
+<td><blockquote>
+<p>1</p>
+</blockquote></td>
+<td><blockquote>
+<p>.000</p>
+</blockquote></td>
+<td><blockquote>
+<p>1.793</p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><blockquote>
+<p>Familyincome*</p>
+</blockquote></td>
+<td><blockquote>
+<p>-.224</p>
+</blockquote></td>
+<td><blockquote>
+<p>.065</p>
+</blockquote></td>
+<td><blockquote>
+<p>82.190</p>
+</blockquote></td>
+<td><blockquote>
+<p>1</p>
+</blockquote></td>
+<td><blockquote>
+<p>.000</p>
+</blockquote></td>
+<td><blockquote>
+<p>.536</p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><blockquote>
+<p>NatOrigin</p>
+</blockquote></td>
+<td><blockquote>
+<p>-.530</p>
+</blockquote></td>
+<td><blockquote>
+<p>.244</p>
+</blockquote></td>
+<td><blockquote>
+<p>5.358</p>
+</blockquote></td>
+<td><blockquote>
+<p>1</p>
+</blockquote></td>
+<td><blockquote>
+<p>.021</p>
+</blockquote></td>
+<td><blockquote>
+<p>.571</p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><blockquote>
+<p>Healthmsr</p>
+</blockquote></td>
+<td><blockquote>
+<p>-.024</p>
+</blockquote></td>
+<td><blockquote>
+<p>.763</p>
+</blockquote></td>
+<td><blockquote>
+<p>.051</p>
+</blockquote></td>
+<td><blockquote>
+<p>1</p>
+</blockquote></td>
+<td><blockquote>
+<p>.821</p>
+</blockquote></td>
+<td><blockquote>
+<p>.920</p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><blockquote>
+<p>livewithparents</p>
+</blockquote></td>
+<td><blockquote>
+<p>-.210</p>
+</blockquote></td>
+<td><blockquote>
+<p>.131</p>
+</blockquote></td>
+<td><blockquote>
+<p>.786</p>
+</blockquote></td>
+<td><blockquote>
+<p>1</p>
+</blockquote></td>
+<td><blockquote>
+<p>.375</p>
+</blockquote></td>
+<td><blockquote>
+<p>.810</p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><blockquote>
+<p>children</p>
+</blockquote></td>
+<td><blockquote>
+<p>-.194</p>
+</blockquote></td>
+<td><blockquote>
+<p>.146</p>
+</blockquote></td>
+<td><blockquote>
+<p>.075</p>
+</blockquote></td>
+<td><blockquote>
+<p>1</p>
+</blockquote></td>
+<td><blockquote>
+<p>.785</p>
+</blockquote></td>
+<td><blockquote>
+<p>.910</p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><blockquote>
+<p>Constant</p>
+</blockquote></td>
+<td><blockquote>
+<p>10.418</p>
+</blockquote></td>
+<td><blockquote>
+<p>1.141</p>
+</blockquote></td>
+<td><blockquote>
+<p>32.109</p>
+</blockquote></td>
+<td><blockquote>
+<p>1</p>
+</blockquote></td>
+<td><blockquote>
+<p>.000</p>
+</blockquote></td>
+<td><blockquote>
+<p>606.657</p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>(* ) indicates significant variables. * Source: logistic regression output from STATA</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+```
+
+*The table heading does not make much sense; the heading should say
+something about **what** this regression is aiming to measure.*
+
+*What is the dependent variable in this regression? Have all of the
+abbreviations been explained? What is the actual data source? The
+student did not need to mention the software used. The DF column is
+probably not needed. The note about the quote indicates significant
+variables is not quite right. The student should specify what level of
+significance this indicates, (p \<.05? p \<.01?) And for which
+significance test. To be a bit pedantic, it also the coefficient and not
+the variable that may be significant.*
+
+
+<br>
+
+**Failing to explain and justify your technique**
+
+```{block2, type='goofus'}
+> The gravity model is used by large numbers of researchers in their
+> econometric applications, therefore I apply the gravity equation is
+> applied to model the bilateral flow of trade.
+```
+
+*As noted in an earlier section,\*justify\* your approach, don’t just
+“blame others”.*
+
+```{block2, type='gallant'}
+Better: The gravity model is often used to model the bilateral flow of
+trade (see Smith, 1999; Johnson, 2001). As Saint and Silver (1999) note,
+it is justified by a proportional hazards model of trade incidence and
+allows for “zeroes” between pairs of countries. It has also performed
+better than other models, such as log-linear and multinomial logit
+specifications, in predicting the sectoral impact of trade agreements
+(Breadlight, 2010).
+```
+
+**Failing to explain and justify your assumptions, restrictions, or choice
+of instrumental variable**
+
+```{block2, type='goofus'}
+> To overcome a possible endogeneity problem a two-stage least square
+> approach is applied using suitable instruments for FDI.
+```
+
+*What is the endogeneity problem? What instruments are used and how do
+you justify that they are “suitable” (the exclusion restriction).*
+
+
+
+**<span class="underline">Reviewing (suggestions for improvement);
+overall assessment and recommendations</span>**
+
+**Foc-qn:** What is your focal question?
+
+**Rel-Lit:** Read related literature
+
+**See Jnl:** Look at related articles in peer-reviewed journals to see
+how to format or express this.
+
+**Oth-auth:** See what other authors have written on this
+
+**Oth-opin:** Consider other opinions and arguments on this point
+
+**Expln-Lit:** Needs to better explain the cited literature
+
+**Relate-Lit:** Needs to better relate the cited literature to this
+paper
+
+**Empl-Lit-Tcnq:** Needs to better consider the empirical literature
+that answers this question and related questions, and explain the
+techniques used, and how these may or may not be applied to the current
+paper.
+
+```{block2, type='goofus'}
+> Another empirical study made by Smith et al.(2010) also found that the
+> stringent labour standards for agricultural produce imposed by the
+> European Union lead to significant losses for the African producers.
+>
+```
+
+How did these authors do their analysis? What data and techniques did they use? Explain the precise nature and strength of their findings.*
+
+<br> 
+
+**Expln-Thy:** Needs to explain theoretical models more clearly and
+formally
+
+# Econometric, statistical, and data issues
+
+<!-- [maybe leave out this section] -->
+
+Many (most?) projects are *empirical*, involving econometrics/statistics. It doesn't make sense to give an entire course on Statistics, Econometrics, and Data Science here. However, I think it's helpful to give somewhat of an applied overview, to:
+
+- link to key resources,
+- refresh your memory of these topics,
+- help you consider how to *do* this stuff in a real project (rather than in exams and problem sets), 
+- give a sense of one economist's (my) impressions of how to choose an approach, and
+- point out some common misunderstandings/mistakes students make in this area.
+
+
+As this cannot be comprehensive, I suggest referring to other resources (texts etc) for more detailed considerations.
+
+## Some recommended applied econometrics and statistics resources
+
+- Angrist and Pischke: Mastering metrics
+
+- Angrist, J. D., and J. S. Pischke. Mostly Harmless Econometrics: An Empiricist's Companion. 
+  - [related MIT open courseware]( https://ocw.mit.edu/courses/economics/14-387-applied-econometrics-mostly-harmless-big-data-fall-2014/readings/)
+  
+-  Peter Kennedy's "A Guide to Econometrics"
+
+- "Introductory Econometrics" by Wooldridge
+
+- "The Mixtape": https://www.scunning.com/mixtape.html
+
+### Time series
+
+[Economics 452 time series with
+stata](http://econ.queensu.ca/faculty/gregory/econ452/manual.pdf) **--**
+*econ.queensu.ca/faculty/gregory/econ**452**/**manual**.pdf*
+
+[2 Working with economic and financial data in
+Stata](http://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0cdeqfjaa&url=http://www.fordham.edu/economics/mcleod/baumchapter2.pdf&ei=otecuusbbo6p0awpgohoaq&usg=afqjcngynifplilpgoicsfslgyybabpdca&sig2=2zhtyhxft1i4yfjyt4yzka&bvm=bv.57155469,d.d2k)
+**(Chris Baum)**
+
+Kennedy, *A Guide to Econometrics*, Chapter 18, “Time Series Econometrics”
+
+### In Stata 
+
+[Stata Web
+Books: Regression with Stata](http://www.ats.ucla.edu/stat/stata/webbooks/reg/)
+
+### With R
+
+- [Introduction to Econometrics with R](https://www.econometrics-with-r.org/)
+free online interactive text by  Christoph Hanck, Martin Arnold, Alexander Gerber and Martin Schmelzer; Based on Stock and Watson
+
+
+[R for data science](https://r4ds.had.co.nz/)
+
+
+## Regression analysis, regression logic and meaning 
+
+We need to consider: 
+
+-  What is a regression? When should you use one?
+-  How to specify the regression?
+
+- Which dependent variable do we use? 
+
+- Which right-hand side variables? 
+  - Which is/are the focal variable(s) and which are 'control variables'? 
+- Endogeneity and identification 
+
+- Other statistical issues (e.g., functional form, error structure)
+
+How will you interpret your results? 
+
+How to create a regression table and put it in your paper.
+
+Writing about regression (and statistical) analysis; yours and others'.
+
+
+### What is regression? When should you use one? 
+
+**A way of fitting a line (plane) through a bunch of dots.**
+
+- In multiple dimensions
+
+- It may have a causal interpretation (or not)
+
+Classical Linear Model (CLM): Population model is linear in parameters:
+
+*(authors note: recover math content here)*
+
+### OLS: Estimating Actual Linear Relationship? 
+
+- Best linear approximation; ‘average slopes’
+
+- Causal or not
+
+
+### Identifying restrictions; CLM model assumptions
+
+**Some coefficients/tests depend on normality, others an “asymptotic”
+justification with a large enough sample**
+
+
+> "… Regression coefficients have an 'average derivative' interpretation. In multivariate regression models this interpretation is unfortunately complicated by the fact that the OLS slope vector is a matrix-weighted average of the gradient of the CEF. Matrix-weighted averages are difficult to interpret except in special cases (see
+Chamberlain and Lemur, 1976)."
+
+-Angrist and Pischke [year?]
+
+
+## How to specify a regression -- some considerations 
+
+**Functional form? **
+
+(e.g., linear or “loglinear”? Include quadratic terms?)
+
+**Impose restrictions?**
+
+### Which dependent variable?
+
+- Is this meaningful to your question and interpretable?
+
+- Is it relevant to what you are looking for (e.g., available for right years and countries)?
+
+- Is it reliably collected?
+
+- Specified variables in logs? Linearly? Categorically? 
+
+- Aggregated at what level?
+
+### Which right-hand side (rhs) variables? The focal variables and control variables 
+
+**Typically, you care about:**
+
+The <span class="underline">effect of one</span> (or a few)
+<span class="underline">independent variable</span> on the dependent
+variable,
+
+e.g., education on wages.
+
+*(Although you might have more complicated hypotheses/relationships to
+test, involving differences between coefficients etc.)*
+
+$\rightarrow$ You should focus on credibly identifying *this* relationship.
+
+Other rhs variables are typically *controls* (e.g., control for parent’s
+education, control for IQ test scores).
+
+Be careful not to include potentially “endogenous” variables as
+controls, as this can bias *all coefficients* (more on this later).
+
+Be careful about putting variables on the right hand side that are
+determined *after the outcome* *variable* (Y, the dependent variable).
+
+
+## Endogeneity 
+
+You care about estimating the impact of a variable $x_1$, on $y$.
+
+Consider the example of regressing income at age 30 on years of
+education to try to get at the *effect* of education on income.
+
+
+
+**$x_1$**: years of education
+
+**$x_2 ... x_k$:** set of “control” variables
+
+![](media/image31.png)**$y$:** income at age 30
+
+You regress
+
+![](media/image32.png)Suppose the *true* relationship (which you almost
+never know for sure in economics) is
+
+For unbiasedness/consistency of all your estimated terms, the key
+requirement is:
+
+$E(u|x_1, x_2,… x_k) = 0$, implies that
+all of the explanatory variables are exogenous.
+
+Alternatively, it is still ‘consistent’ if **$E(v) = 0$ and $Cov(x_j,v) = 0$,
+for $j = 1, 2, …, k$**
+
+
+There are various reasons why the above assumption might not hold;
+various causes of what we call “endogeneity”. Two examples are reverse
+causality and omitted variable bias.
+
+<!--
+Note: Sources: lecture831\_ericka\_rascon\_nov12 (but it’s a bit
+advanced)
+-->
+
+### Reverse casuality
+
+**Education may affect income at age 30, but could income at age 30 also
+affect years of education? **
+
+*This is probably not a problem for this example, because the education is usually finished long before age 30 (even I finished at age 30 on the nose). *
+
+*However, in other examples it is an issue (e.g., consider regressing
+body weight on income, or vice/versa)*
+
+*Also, if the measure* of education were determined years later, this
+might be a problem. For example, if your measure of years of education
+was based on self-reports at age 30, maybe those with a lower income
+would under-report, e.g., if they were ashamed to be waiting tables with
+a Ph.D.**
+
+ *or a third, omitted factor may affect both* 
+
+Intelligence may effect both education obtained and income at age 30
+
+![](media/image33.png)Macro/aggregate: With variation across time, there
+may be a common trend. E.g., suppose I were to regress “average income”
+on “average education” for the UK, using only a time series with one
+observation per year. A “trend term”, perhaps driven by technological
+growth, may be leading to increases in education as well as increased
+income.
+
+### The omitted variable bias forumula; interpreting/signing the bias
+
+You care about estimating the impact of a variable x_1, on y,
+e.g.,
+
+x_1: years of education
+
+![](media/image34.png) y: income at age 30
+
+![](media/image32.png) You estimate
+
+But the true relationship is
+
+![](media/image35.png) Where x_2 is an unobserved or
+unobservable variable, say “intelligence” or “personality”.
+
+Your estimate of the slope is likely to be biased (and “inconsistent”) .
+
+The “omitted variable (asymptotic) bias” is:
+
+![](media/image36.png)
+
+where
+
+In other words, the coefficient you estimate will “converge to” the true
+coefficient plus a bias term.
+
+**The bias is the product**:
+
+[Effect of the omitted variable on the outcome] $\times$ [“effect” of
+omitted variable on variable of interest]
+
+E.g., [effect of intelligence on income] $\times$ [“effect” of intelligence
+of years of schooling]
+
+*This can be helpful in understanding whether your estimates may be
+biased, and if so, in which direction\!*
+
+This is also a helpful mechanical relationship between “short” and
+“long” regressions, whether or not there is a causal relationship.
+
+### Control strategies 
+
+Control for “X2-Xk” variables that have direct effects on Y; this will
+reduce omitted variable bias (if these variables are correlated to your
+“X1” of interest) 
+
+Including controls can also make your estimates more precise. 
+
+If you put in an “Xk” variable that doesn’t actually have a true
+effect on Y, it will make your estimates *less* precise. However, it
+will only lead to a bias if it is itself endogenous (and correlated to
+your X1 of interest).
+
+If you can’t observe these, you may use “proxies” for these to try to
+reduce omitted variable bias. E.g., IQ-test scores may be used as
+proxies for intelligence. Housing value might be used as a proxy for
+wealth.
+
+**“Bad controL”** 
+
+> some variables are bad controls and should not be included in a
+regression model even when their inclusion might be expected to change
+the short regression coefficients. Bad controls are variables that are
+themselves outcome variables in the notational notional experiment at
+hand. That is, bad controls might just as well be dependent variables
+too.
+- (Angrist and Pischke)
+
+
+– They could also be interpreted as endogenous variables.
+
+
+> Once we acknowledge the fact that college affects occupation, comparison of wages by college degree status within occupation are no longer apples to apples, even if college degree completion is randomly assigned. 
+
+– The question here was whether to control for the category of
+occupation, not the college degree.
+
+>It is also incorrect to say that the conditional comparison captures
+the part of the effect of college that is 'not explained by occupation'"
+
+> so we would do better to control only for variables that are not
+themselves caused by education.
+> - Angrist and Pischke
+
+
+
+### Fixed effects/difference-in-between
+
+The net effect of omitted variables and truly random term may have fixed
+and varying components. There may be a term “Ci” that is specific to an
+individual or “unit”, but that does not change over time. For example,
+an individual may be more capable of earning, a firm may have a
+particularly good location, and a country may have a particular high
+level of trust in institutions. There may also be a term that varies
+across units and over time. An individual may experience a particular
+negative shock to her income, a firm may be hit by a lawsuit, and a
+country may have a banking scandal.
+
+If this Ci part of the “error term” may be correlated to the dependent
+variable of interest, X1, it may help to “difference this out” by doing
+a Fixed Effects Regression. This essentially includes a dummy variable
+for each individual (or “unit”), but these dummies are usually not
+reported. The resulting coefficients are the same ones you would get if
+you “de-meaned” every X and Y variable before running the regression.
+
+By “demeaned” I mean replace each with
+
+and with where the bars indicate “the mean of this variable for
+individual i”.
+
+### Instrumental variables
+
+A variable Z that
+
+(1) “causes” the X1 variable of interest but has no independent effect
+on Y, and
+
+(2) is not correlated to the true error term, may be used as an
+“instrument”.
+
+
+*For example*, it might be argued (debatable) that if one’s parents had
+a job near a good university, this would increases one’s chances of
+going to a good university. To use “distance to nearest university" as
+an instrument you would have to argue
+
+(i) there is no *direct* effect of living near a good university on
+later income.
+
+(ii) The probability of living near a good university is not caused by a
+third unobserved factor (e.g., parent’s interest in children’s success)
+that might also affect later income.
+
+
+As suggested above, it is hard to find a convincingly 'valid' instrument. 
+This “exclusion restriction” cannot itself be easily tested, and is
+largely justified theoretically. (If you have multiple instruments there
+is something called an ‘overidentification test’ but it is
+controversial).
+
+In addition, there are other issues with IV techniques that some argue make them unreliable. In particular, consider (and read about) issues of
+
+- weak instruments
+
+- heterogeneous effects (heterogeneity), differential 'compliance', and the 'Local Average Treatment Effect' ('LATE').
+
+### 2sls
+
+One form of instrumental variables (IV) technique is called “two stage
+least squares” (2sls). This essentially involves regressing X1 on Z (and
+other controls) and obtaining a predicted value of X1 from this
+equation, , and then regressing Y on *this* (and the same set of other
+controls) but “excluding” Z from this second-stage regression.
+
+You should generally report both the first and second stages in a
+table, and “diagnostics” of this instrument.
+
+### Some other issues and “diagnostics”* 
+
+Time series (and panel) data: issues of autocorrelation, lag structure,
+trends, non-stationarity
+
+Non-normal error terms, small sample
+
+Categorical dependent variable: consider Logit/Probit if binary,
+Multinomial logit if categorical, Poisson if ‘count’ data; other
+variants/models
+
+Bounded/censored dependent variable: Consider Tobit and other models
+
+Sample selection issues; self-selection, selectivity, etc.
+
+Missing values/variables … Imputation
+
+Errors in variables (classical, otherwise)
+
+The meaning of R-squared; when it is useful/important?
+
+### Heteroskedasticity
+
+OLS coefficients are still unbiased/consistent but maybe not
+efficient
+
+- Estimated standard errors of estimator/tests are *not* unbiased/consistent
+
+(Autocorrelation: similar considerations, but it can be a sign of a mispecified
+dynamic model)
+
+#### Responses (to heteroskedasticity and “simple” autocorrelation)
+
+“Feasible” GLS (only consider doing with lots of data) *or*
+
+Regular OLS with robust standard errors (or clustered in a certain
+way)*
+
+- “Test” for heteroskedasticity if you fail to reject homoscedasticity
+say “whew, I can ignore this”? 
+
+(DR: Would you say "I fail to strongly statistically reject the possibility that my car's breaks are not working, therefore I will drive the car on a mountain pass?")
+
+Controversial; I don’t like this because the test may not be powerful
+enough. So use ‘robust’ anyway.
+
+### Interpreting your results 1: test for significance
+
+**Simple differences (not in a regression): A variety of parametric,
+nonparametric and “exact” tests**
+
+**Regression coefficients: t-tests**
+
+- Difference from zero (usually 2-sided)
+
+- Difference from some hypothesis (e.g., difference from unit)
+
+- Joint test of coefficients
+
+Evidence for ‘small or no effect’: one-sided t-test of , e.g., H0: \>=10
+vs HA: \<10; where 10 is a ‘small value’ in this context
+
+### Joint significance of a set of coefficients: F-tests
+
+H0: all tested coefficients are truly =0
+
+HA: at least one coefficient has a true value ≠0
+
+### Interpreting results 2: magnitudes & sizes of effects
+
+**In a linear model in levels-on-levels the coefficients on continuous
+variables have a simple “slope interpretation”**
+
+Note: assuming a homogenous effect, otherwise it gets complicated.
+
+**Dummy variables have a “difference in means, all else equal”
+interpretation.**
+
+! But be careful to describe and understand and explain the estimated
+effects (or “linear relationships”) in terms of the *units* of the
+variable (e.g., impact of *years of education* on *thousands of pounds
+of salary at age-30, pre-tax)*
+
+**Transformed/nonlinear *variables***
+
+When some variables are transformed, e.g., expressed in logarithms,
+interpretation is a little more complicated (but not too difficult).
+Essentially, the impact of/on logged variables represent “proportional”
+or “percentage-wise” impact. Look this up and describe the effects
+correctly.
+
+
+**In nonlinear models**
+
+(e.g., Logit, Tobit, Poisson/Exponential) the marginal effect of a
+variable is not constant, it depends on the other variables and the
+error/unobservable term. But you can express things like “marginal
+effect averaged over the observed values” or (for some models) the
+“proportional percentage effect.”
+
+### Interpreting results 3: interaction terms
+
+You may run a regression such as:
+
+
+$$INCOME = A + B_1 \times YEARS_EDUC +
+B_2 \times FEMALE \times YEARS\_EDUC + B_3 \times  FEMALE + U$$
+
+
+Where FEMALE is a dummy variable that =1 if the observed individual is a
+woman and =0 if he is a man.
+
+
+*How do you interpret each coefficient estimate? *
+
+
+A: A constant “intercept”; fairly meaningless by itself unless the other
+variables are expressed as differences from the mean, in which case it
+represents the mean income.
+
+$B_1$ : “Effect” of years of education on income (at age 30,
+say) *for males*
+
+$B_2$ : “Additional Effect” of years of education on income *for
+females relative to males*
+
+$B_3$ : “Effect” of being female on income, holding education
+constant
+
+
+What about $B_1 + B_2$?
+
+= “Effect” of years of education on income *for
+females*
+
+## (To add or integrate into the above)
+
+- Simple statistics and simple tests
+
+-  Hypothesis testing
+
+- (OLS vs) Probit, Tobit, and Nonlinear Specifications
+
+- Clustered standard errors
+
+-  Time series data issues
+
+## Formatting figures and tables
+
+(Give an annotated “good” and “bad” example for each)
+
+1.  **Summary statistics**
+
+2.  **Simple tests**
+
+3.  **Graphs and figures**
+
+4.  **Regression tables (small)**
+
+5.  **Regression tables (many columns or rows)**
+
+# Software and other tools
+
+I am compiling a list of useful resources, focusing on open-access and open science in this [collaborative Airtable](https://airtable.com/shrzhLVAy4tlaXof0)
+
+
+```{r iifpage_again}
+
+knitr::include_url("https://innovationsinfundraising.org/doku.php")
+
+```
+
+<!-- [in or out?] -->
+
+## Computers and network resources
+
+Accessing your university network, etc
+
+
+##  Document preparation systems 
+
+### Word processors
+
+(e.g., MS Word and the equation editor)
+
+### Latex and Latex interfaces
+
+- Latex
+
+- Overleaf
+
+- Lyx, SWP, etc
+
+### Markdown-based  
+
+- Markdown and Pandoc
+
+- Rmarkdown and Bookdown (what this book is created with)
+
+## Citation management tools {#cite_manage}
+
+
+### Storing and organizing your references
+
+- Zotero, Mendeley, Endnote, Jabref etc. 
+
+See the
+following link : <http://jabref.sourceforge.net/>. Note that to use
+Jabref with word you should use Bibtex4Word see the following link:
+<http://www.ee.ic.ac.uk/hp/staff/dmb/perl/index.html> 
+
+### Including citations and 'bibliographies' in your paper
+
+- Bibtex (for Latex and Markdown)
+
+- Plugins for word processors
+
+## Spreadsheets
+
+## Statistical and coding software
+
+### Stata
+
+### R
+
+### Other packages and tools
+
+## (Other) Maths software
+
+(Maple, Matlab, Mathematica)
+
+## Software for creating explanatory figures (not data-driven)
+
+## Resources for further study and research
+
+### Other writing guides {#other_guides} 
+
+- Dudenhefer, Paul. (2013) "A Guide to Writing in Economics.", (Prepared by Paul Dudenhefer, Writing Tutor, EcoTeach Center and Department of Economics, Duke University, December 2009.) \<<http://lupus.econ.duke.edu/ecoteach/undergrad/manual.pdf>\>, accessed August 2013.
+
+More nuanced and advanced. Missing examples of 'key mistakes'.
+
+<!-- This actually looks very good, but I think it is in some ways more
+advanced then our approach, and is missing (I think) the “key mistakes”
+stuff. We should read it carefully to consider if it is filling the same
+niche as us. We should also consider what we can learn from it (and
+maybe cite it a bit).
+-->
+
+Cochrane, John H . (2005) “Writing tips for PhD students” On-line at:  \<<http://faculty.chicagobooth.edu/john.cochrane/research/papers/phd_paper_writing.pdf><span class="underline">\>,</span> accessed August 2013
+
+\-- Targeted at PhD’s but still useful to others
+
+Levin, P. *Write great essays\!*
+
+- McCloskey, D. *Economical Writing*:  Very good but concentrates on the higher points of style rather than the basic stuff that “newby” undergraduates need.
+
+- Stott, Snaith, and Rylance, editors. *Making your case: a practical
+guide to essay writing*.
+
+- Strunk. *The Elements of Style*:  A widely praised classic reference.
+
+- Robert Neugeboren with Mireille Jacobson. *Writing Economics.
+<http://isites.harvard.edu/fs/docs/icb.topic235750.files/WritingEconomics.pdf>
+
+
+<!--
+Look into: https://www3.amherst.edu/~jwreyes/papers/ReyesSeniorSeminar.pdf
+-->
+
+**Guides for graduate study**
+
+**Recommended texts**
+
+**Online resources**
+
+# Appendix
+
+## Alphabetical list of abbreviations
+
+
+## Abbreviations: Notes for paper marking and commenting
+
+Here is a categorized list of abbreviations I use in marking; you may
+find it useful just to read these to be aware of common issues.
+
+## List of other resources
+
+## Resources and advice for instructors
+
+### A proposed lecture programme
+
+*Note:* I have slides covering a range of key topics, which tie in with this web book. Please contact me directly for details.
+
+<br>
+
+Large lectures have limited value in this context. From my experience students appreciate *occasional* lectures for motivation and clarification, and to ask questions, but more than 5-6 traditional lectures seems to be overkill.  
+
+Lectures can be combined with this web book:  introduce this material and motivate it's importance, answer a few student questions, quiz the students a bit, and then refer them to the material here to read on their own. 
+
+<br>
+
+**A sample lecture schedule: biweekly over twelve weeks**
+
+Here is a proposed set of lectures to be spaced out over ten weeks in the first term, for a two-term dissertation module. If you have the resources, a few lectures in the second term will also be helpful to coordinate and motivate.  
+
+The goal of these lectures is not to comprehensively cover the topics: that's what this book is for. The goal is to motivate why these issues are important, give a bit of flavour and understanding, generate questions, and organise the module. A few 'quizzes' can be helpful to help students realise what they do and do not understand.   
+
+<br>
+
+If resources permit, it will be helpful to intersperse this with casual scheduled 'research coffees', encouraging students to discuss their ideas with instructors and with each other. I recommend a 'light-touch approach' in sessions. Let the students take the lead in presenting and responding (making occasional course-corrections where necessary). From our experience, students engage actively in these contexts!
+
+Ideally, you should follow up these up (after the sessions, perhaps) with general and specific feedback on the students presentations, points, and ideas. These can be shared both with the 'presenters' and the group as a whole. You can thus make the *general points* concrete by referring to specific examples.   
+
+<br>
+**Week 1 (of term)**: 
+
+a. How to identify and scope-out a topic. See "[Getting started](#getting_started)"
+
+b. ‘Economics questions’, approaches, and methods. See "[Economics: Methods, approaches, fields and relevant questions](#methods_fields)"
+
+c. Research fields in economics. See "[Fields of Economics...](#fields)"
+
+
+<br>
+
+
+**Week 3:**   
+
+
+a. [Accessing]{#access_lit} and integrating previous [relevant](#whats_relevant) academic literature (see many parts of [Literature review](#lit_review_do) chapter.)
+
+b. Citation and referencing  
+
+c. Academic writing in Economics: structure, tone, and logic (various parts of [Writing]{#writing_it} chapter)
+
+<br>
+
+
+**Week 5: Economic models and economic logic**   
+a. What's the point of 'economic models' and 'economic theory'?
+
+b. Examples of economic models and their presentation and interpretation
+
+c. Economic models in your paper?
+
+d. Using economic logic in your writing 
+
+e. Economic models and empirical work (some examples)
+
+
+#theory_modeling_empirical
+
+
+**Week 7:**  
+
+a. Finding and using data
+
+b. Developing a statistical/econometric approach; producing, reporting, and interpreting results
+
+c. Helpful software and tools for research and writing
+
+<br>
+**Week 9:** Methodological issues in Macroeconomics, Trade and Finance 
+
+<br>
+**Week 11:** Discussing our (students') topics and proposals, discussing some key papers of interest, responding to student questions that have arisen so far.
+
+<br>
+Throughout all lectures: "Avoiding common mistakes, misunderstandings and pitfalls", integrate examples of worse and better practice
+
+
+## Works Cited
+
+
