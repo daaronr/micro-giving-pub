@@ -210,3 +210,5 @@ sed  '/^COVEREDTOHERE$/,$d' $HOME/"OneDrive - University of Exeter/exeter_teachi
 pandoc $HOME/"OneDrive - University of Exeter/exeter_teaching/be2024/be2024slides_nopdfnote_tohere.md" -t beamer --slide-level=2 -o $HOME/"Dropbox/Public/be2024slides_nopdfnote_tohere.pdf"  --verbose  --toc --toc-depth=2 --highlight-style=pygments -V theme:metropolis
 
 #Todo: slide files up to present in separated files by week
+
+# see also dr_text_md_tools/md_tex_to_rmd_html.vim

@@ -1,0 +1,17 @@
+\begin{FigureBox}{0.5}{0.5}{25em}{Measuring surplus \label{fig:measuringsurplus}}{With the linear demand and supply curves that assume the good is divisible the consumer surplus is AEB and the supplier surplus is BEC. This exceeds the surplus computed as the sum of rectangular areas beneath the bars and above the price. The same reasoning carries over to producer surplus.}
+% small horizontal demand lines
+\draw [demandcolour,ultra thick] (0,9) node [black,mynode,left] {\$900} -- (2,9) (2,8) -- (4,8) (4,7) -- (6,7) (6,6) -- (8,6) (10,4) -- (12,4);
+% main demand line
+\draw [demandcolour,ultra thick,name path=demand] (0,10) node [black,mynode,above right] {A} node [black,mynode,left] {\$1000} -- (14,3) node [black,mynode,right] {Demand};
+% small horizontal supply lines
+\draw [supplycolour,ultra thick] (0,3) node [black,mynode,left] {\$300} -- (2,3) (2,3.5) -- (4,3.5) (4,4) -- (6,4) (6,4.5) -- (8,4.5);
+% main supply line
+\draw [supplycolour,ultra thick,name path=supply] (0,2.5) node [black,mynode,left] {\$250} node [black,mynode,below right] {C} -- (14,6) node [black,mynode,right] {Supply};
+% axes
+\draw [thick, -] (0,11) node (yaxis) [above] {Rent} |- (15,0) node (xaxis) [right] {Quantity};
+% intersection of supply and demand
+\draw [name intersections={of=demand and supply, by=E}]
+	[dotted,thick] (yaxis |- E) node [mynode,left] {\$500} node [mynode,above right] {B} -- (E) node [mynode,above] {E};
+% arrow to E
+\draw [<-,thick,shorten <=5mm] (E) -- +(2,3) node [mynode,above] {Equilibrium\\price=\$500.};
+\end{FigureBox}

@@ -1,0 +1,11 @@
+\begin{FigureBox}{0.3}{0.25}{25em}{The supply of capital services to the economy \label{fig:supplycapitalservices}}{In the short run the stock of capital, and therefore the supply of capital services, is fixed. In the long run a higher return will induce suppliers to produce more capital goods, or capital goods may enter the economy from other economies. $R_0$ is the current return to capital in the economy -- given by where the demand for capital (or its services) intersects the given supply curve in the short run.}
+% supply lines
+\draw [supplycolour,ultra thick,name path=S0] (0,1) -- (30,22) node [black,mynode,below right,pos=0.8] {$S_0$ (Long-run supply)};
+\draw [supplycolour,ultra thick,name path=SF] (13.188,0) -- (13.188,24) node [black,mynode,right,pos=0.8] {Fixed short-\\run supply};
+% axes
+\draw [thick, -] (0,25) node [mynode1,above] {Rental\\Rate} |- (30,0) node [mynode1,right] {Capital\\Services};
+% intersection of supply lines
+\draw [name intersections={of=S0 and SF, by=R0}];
+% node for R_0
+\node [mynode,below right] at (R0) {$R_0$};
+\end{FigureBox}

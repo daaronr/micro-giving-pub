@@ -1,4 +1,4 @@
-# Utility and Choice [NS Chapter 2; 2 hours]
+# Utility and Choice  (L2) {#util-choice}
 
 ## Text sources/readings
 
@@ -6,89 +6,6 @@
 - AUT: [Lecture 3 - Axioms of Consumer Preference and the Theory of
 Choice](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/MIT14_03F16_lec3.pdf) (note, slightly different notation)
 - NS: Ch 2
-
-`r format_with_col("We now consider the very very fundamental building blocks behind the (in)famous "neoclassical economics model." Accept these"axioms" nearly everything flows from it!","gray")`
-
-## Some motivation for these abstract ideas
-
-
-`r format_with_col("Consider a decision you recently made?  Define this decision clearly; what were the options?  How do you think you decided among these options?","blue")`
-
-What did this depend on? Would other people in your place have made the same decision?
-If you got amnesia and forgot what you decided and then were in the same situation again. Do you think you'd make the same decision?
-
-
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/mortys-mind-blower.png")
-```
-
-<br> \bigskip
-Suppose I asked you
-
-'State a rule that governs how people *do* make decisions'...
-
-
-
-I want this rule to be both
-
-1. Informative (it rules *out* at least some sets of choices) and
-
-2. Predictive (people rarely if ever violate this rule).
-
-<br> \bigskip
-
-Suppose I asked an apparently similar question:
-
-'State a rule that governs how people *should* make decisions'..
-
-
-By 'should' I mean that *they will not regret having made decisions in this way.*
-
-
-<br> \bigskip
-
-If people *did* follow these rules, what would this imply and predict?
-
-
-Economists (and decision theorists/decision scientists) have specificall defined such rules in terms of 'axioms about preferences'
-
-They have started from these 'reasonable axioms' and followed their logical implications for individual choices, individual responses to changes in prices and income, market prices and quantities and their responses, 'welfare' and inequality outcomes for entire economies, etc.
-
-The 'Standard axioms' (imply that) choices can be expressed by 'individuals maximising *utility functions* subject to their *budget constraints*'.
-
-This yields predictions for individual behavior, markets, etc.
-
-## Between first and second week; priority home-study
-
-Make sure you are following along.
-
-Can you answer the questions mentioned above and in the lecture?
-
-- E.g., can you explain why (supply) demand curves slope (upwards) downwards?
-
-- Can you solve a system of two equations (supply, demand) for an equilibrium price and quantity?
-
-- What causes shifts versus movements along the demand curve?
-
-<!--
- Can you explain 'how economists use models and why'?
--->
-
-
-At this point, you should be able to do problem set 1. Please do at least get a start on it.
-
-After week 1, before week 2 lectures, be sure you have read/understood all of the 'handout' and corresponding material up to this point.
-
-To prepare for the week 2 lectures, you should look ahead at the readings and handout material (below).
-
-- In particular, read and consider the material on 'preference axioms', 'utility functions', and how the latter are depicted using indifference curves. These are difficult and somewhat abstract concepts; try to test your understanding and bring questions (or ask these on the VLE)!
-
-- If you have time, please also start considering the budget constraints and conditions for consumer optimisation. In particular, the 'bang for the buck' condition is something you will want to look at closely to get your head around it.
-
-
-## Lecture 2 (2 hours), Chapter 2 -- Utility and Choice -- coverage outline
-
-
 *Key goals of these lectures (and accompanying self-study)*
 
 1. Understand what 'utility' is and how is it defined and modeled
@@ -123,6 +40,55 @@ Choice](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-pub
 
 
 - `r format_with_col("Second problem set, first part (NS chapter 2): Preferences, Utility, Consumer optimization, individual and market demand","blue")`
+
+
+## Some motivation for these abstract ideas
+
+
+`r format_with_col("Consider a decision you recently made?  Define this decision clearly; what were the options?  How do you think you decided among these options?","blue")`
+
+What did this depend on? Would other people in your place have made the same decision?
+If you got amnesia and forgot what you decided and then were in the same situation again. Do you think you'd make the same decision?
+
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("mortys-mind-blower.png")
+```
+
+<br> \bigskip
+Suppose I asked you:   'State a rule that governs how people *do* make decisions'...
+
+
+
+I want this rule to be both
+
+1. Informative (it rules *out* at least some sets of choices) and
+
+2. Predictive (people rarely if ever violate this rule).
+
+<br> \bigskip
+
+Suppose I asked an apparently similar question:
+
+'State a rule that governs how people *should* make decisions'..
+
+
+By 'should' I mean that *they will not regret having made decisions in this way.*
+
+
+<br> \bigskip
+
+If people *did* follow these rules, what would this imply and predict?
+
+
+Economists (and decision theorists/decision scientists) have specifically defined such rules in terms of 'axioms about preferences'
+
+They have started from these 'reasonable axioms' and followed their logical implications for individual choices, individual responses to changes in prices and income, market prices and quantities and their responses, 'welfare' and inequality outcomes for entire economies, etc.
+
+The 'Standard axioms' (imply that) choices can be expressed by 'individuals maximising *utility functions* subject to their *budget constraints*'.
+
+This yields predictions for individual behavior, markets, etc.
+
 
 ## Utility
 
@@ -238,7 +204,7 @@ Nonsatiation will help us derive results}
 
 ***
 
-### 1. Completeness
+### 1. Completeness {-}
 
 \
 
@@ -262,7 +228,6 @@ $$A \succ B, B \succ A, \: or \: A \sim B $$
 
 
 
-[comment]: <> (101BB)
 
 Violations?:
 
@@ -271,12 +236,11 @@ See, e.g., 'Predicting Hunger: The Effects of Appetite and Delay on Choice'; Rea
 Is there really a clear 'true preference' here?
 See also Sunstein ad others on 'choosing not to choose'
 
-[comment]: <> (101EE)
 
 ***
 
 
-### 2. Transitivity
+### 2. Transitivity {-}
 
 $$ A \succ B \: and \: B \succ C \rightarrow A \succ C $$
 
@@ -345,7 +309,7 @@ Violations?: see (inter alia)
 [comment]: <> (101EE)
 
 
-### 3. More is better ('global nonsatiation')
+### 3. More is better ('global nonsatiation') {-}
 
 ```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/moreisbetter.png")
@@ -358,7 +322,7 @@ This is why goods are called 'goods'; individuals prefer having more of any good
 Combinations of X and Y in the lightly shaded area are inferior to the combination $X^{\ast}, Y^{\ast}$,
 whereas those in the questionable areas may or may not be superior to $X^{\ast}, Y^{\ast}$.
 
-### Who cares?
+### Who cares? {-}
 
 **If people obey the first two above assumptions/axioms, the completeness and transitivity$\ast$, they will make choices in a way consistent with maximising a (continuous) *utility* function.** (... OK, maybe you still don''t care, but economists do.)
 
@@ -497,7 +461,7 @@ The above diagram also includes color to depict the utility level, like a 'heat 
 
 ***
 
-### Properties of indifference curves
+### Properties of indifference curves {-}
 
 ```{r  fig.cap = '', out.height='2.2in', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/indifccurve.png")
@@ -592,7 +556,7 @@ $MRS(X,Y)=-\frac{dY}{dX}|U(X,Y)=U_1$},  the absolute value of the total derivati
 
 
 
-### Preference for variety/balance
+### Preference for variety/balance {-}
 
 ```{r  fig.cap = '', out.height='2.4in', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/indifcurvebalance.png")
@@ -651,7 +615,7 @@ All relevant properties of utility function are unchanged by such monotonic tran
 ***
 
 
-### Indifference curve map
+### Indifference curve map {-}
 
 ```{r  fig.cap = '', out.height='2.2in', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/indifcurvemap.png")
@@ -760,7 +724,7 @@ You cannot spend more than your (lifetime) income/wealth $\rightarrow$ *budget c
 `r format_with_col("Be careful","red")`: it is very easy to get this slope ratio backwards!
 
 
-### Budget constraint algebra
+### Budget constraint algebra {-}
 
 
 If I spend all my income (which I should do over a 'relevant lifetime'), then:
@@ -858,7 +822,7 @@ $$P_X/P_Y = MRS$$
 `r format_with_col("Warning:","red")` The above is shorthand; recall that the  marginal rate of substitution may vary everywhere along an indifference curve (remember the idea of satiation and diminishing MRS). It is a function of the *point* it is evaluated, i.e., $MRS = MRS(X,Y)$. It is only at the *point where the consumer is optimizing* that these slopes must be equal.^[They can also be equal at some other suboptimal points, where  she is not spending all of her income, or  if the indifference curves have a shape very different from the one above (more or less, where they are not 'convex').  Where she is consuming some of every good, this is a *necessary* condition for such a point to represent an optimal consumption choice, but it may not be a sufficient condition.  May also be optimal for her to consume *none*  of certain goods,  in which case this condition  will not hold. We return to this later.]
 
 
-### At an optimal consumption choice (given above assumptions, see above footnote)
+### At an optimal consumption choice (given above assumptions, see above footnote) {-}
 
 - Consume all of income (locate *on* budget line; follows from 'more is better')
 - Psychic tradeoff (MRS) equals market tradeoff ($P_X/P_Y$)
@@ -897,7 +861,7 @@ This means you would be better off; thus the original bundle *wasn't* optimal.
 
 
 [comment]: <> (101BB)
-### More insight
+### More insight {-}
 [comment]: <> (101EE)
 
 Recall $U=U(X,Y)$.
@@ -1076,7 +1040,7 @@ The shape of the indifference curve.  The flatter (steeper) the indifference cur
 ## Algebraic/numerical examples
 
 
-### Perfect substitutes, but not identical
+### Perfect substitutes, but not identical {-}
 
 `r format_with_col("Warning:","red")` Thinking caps on. This may be confusing.
 
@@ -1126,7 +1090,7 @@ $$U(X,Y)=4X+3Y$$
 
 ***
 
-### Perfect complements
+### Perfect complements {-}
 
 `r format_with_col("AKA 'Leontief preferences'","gray")`
 
@@ -1156,7 +1120,7 @@ How many packs of each will you buy, supposing both types of packs cost £1 each
 
 ***
 
-### Middle-ground
+### Middle-ground {-}
 
 A Cobb-Douglas **example**
 
@@ -1272,7 +1236,7 @@ Thus $Y = I/(2P_Y)$ etc.]
 ***
 
 
-### Cobb-Douglas general form (from other text)
+### Cobb-Douglas general form (from other text) {-}
 
 $$U(X,Y)=X^aY^b$$
 
@@ -1321,7 +1285,7 @@ So only the *ratio* Y/X affects the MRS; double both, MRS is the same.
 
 ***
 
-### A non-homothetic (here, 'Quasilinear') example
+### A non-homothetic (here, 'Quasilinear') example {-}
 
 
 $$U(X,Y)=X+ln(Y)$$
@@ -1463,7 +1427,7 @@ $$Quantity \: of \: X \: demanded = d_x(P_X, P_Y, I; preferences)$$
 
 ***
 
-### Homogeneity
+### Homogeneity {-}
 
 Homogenous (of degree zero) (demand) function
 :      A function whose outcome value does not change when *all* arguments are changed *proportionally* is *homogenous of degree zero*
@@ -2498,7 +2462,7 @@ As $e_{Q,P}$ tells you the percent change in quantity for each (small) percentag
 
 
 
-#### Example and (slightly more advanced) algebra...
+#### Example and (slightly more advanced) algebra... {-}
 
 If price rises by 20\% and quantity demanded falls by 20\% what happens to revenue?
 Suppose p=10 and q=10 so TR=100. Then when p=12 and q=8 TR=96. Huh? Price increased by 20\% and quantity decreased by 20\% so shouldn't TR be unchanged?  No! This only works for small changes.
@@ -2580,7 +2544,7 @@ E.g., cocaine is a luxury good, if, when I win £1000 in the lottery, I will inc
 
 
 
-### Some real-world discussion of this
+### Some real-world discussion of this {-}
 
 <!---
 Todo: give more explanation here
@@ -3053,7 +3017,7 @@ Decreasing returns to scale (DRS)
 
 ***
 
-### Arguments/reasons for scale (dis)economies {#IRS-DRS-reasons}
+### Arguments/reasons for scale (dis)economies {#IRS-DRS-reasons} {-}
 
 **IRS**
 
@@ -3083,7 +3047,7 @@ Give one reason why production may exhibit 'increasing returns to scale' and one
 
 ***
 
-### Interesting case: 'Minimum efficient scale' (MES) production
+### Interesting case: 'Minimum efficient scale' (MES) production {-}
 
 
 - E.g., rental costs/maintenance of 3D printer: £10,000 per year (no matter how much is printed)
@@ -3487,7 +3451,7 @@ Ronald Coase: Why do large entities called 'firms' exist
 
 
 
-### Marginal revenue
+### Marginal revenue {-}
 
 Marginal revenue
 :     The additional gross income a firm gains from increasing the quantity it supplies by one unit
@@ -3528,7 +3492,7 @@ $$MR = \frac{\partial R}{\partial q} = P(q) +q P'(q)$$
 
 
 
-### MR for firm facing 'downward-sloping demand'^[See example in table 1 in text.]
+### MR for firm facing 'downward-sloping demand'^[See example in table 1 in text.] {-}
 
 
 - Single price (assume) $\rightarrow$ sell more only by reducing price on *all units*
@@ -3558,7 +3522,7 @@ $$MR = \frac{\partial R}{\partial q} = P(q) +q P'(q)$$
 
 ***
 
-### MR for a 'price-taking' firm
+### MR for a 'price-taking' firm {-}
 
 Under 'perfect competition' (which we will describe soon), each firm is a 'price-taker'
 
@@ -3649,7 +3613,7 @@ $$MR(q) = P$$
 
 [comment]: <> (101BB)
 
-### Inverse elasticity markup rule, intuition
+### Inverse elasticity markup rule, intuition {-}
 
 
 Price elasticity of demand for single firm’s output (q):
@@ -3768,7 +3732,7 @@ BEGINLEC7
 
 ***
 
-### Motivating questions
+### Motivating questions {-}
 
 - With many 'price taking firms', how does *aggregate* supply respond to changes in demand?
     - Can such firms make a profit in the short run? In the long run?
@@ -3940,7 +3904,7 @@ Previous units had marginal costs *below* $P^*$. Thus *average* (variable) costs
 ```
 
 
-### Price signal
+### Price signal {-}
 
 The price acts as a signal (leading to efficient choices):
 
@@ -4107,7 +4071,7 @@ Todo: Motivation: Baumol effect
 -->
 
 
-### LR Supply: Constant cost case
+### LR Supply: Constant cost case {-}
 
 ```{r  fig.cap = '', out.width='5in', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/LR_constantcost.png")
@@ -4116,7 +4080,7 @@ Todo: Motivation: Baumol effect
 ***
 
 
-### LR Supply: Increasing cost case
+### LR Supply: Increasing cost case {-}
 
 ```{r  fig.cap = '', out.height='4in', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/incrcosts_lrsupply.png")
@@ -4193,7 +4157,7 @@ Since you are already incurring these, they don't count against the benefit you 
 ***
 
 
-### In what sense is a competitive market efficient?
+### In what sense is a competitive market efficient? {-}
 
 Economically efficient allocation of resources: maximizes the sum of consumer and producer surplus.
 - At market equilibrium there are no more mutually beneficial exchanges
@@ -4549,7 +4513,7 @@ Issues with volunteer supply
 
 
 
-### Suggestions for improvements to blood market
+### Suggestions for improvements to blood market {-}
 
 - Techniques for boosting donations
     - Mandate choice
@@ -4799,7 +4763,7 @@ Hence, it may well be that the state provides a private good or that the market 
 
 
 
-### In between's
+### In between's {-}
 
 Excludable and rival (depleatable)? $\rightarrow$ *Private good*
 
@@ -4895,7 +4859,7 @@ But if firms cannot charge for its full value, they might not pay the fixed cost
 
 ***
 
-### Application: drug development
+### Application: drug development {-}
 
 *Drug R\&D may be a public good, or a common resource*
 
@@ -4926,7 +4890,7 @@ The First Welfare Theorem's assumptions/conditions do not apply to public goods.
 - Non-rivalry $\rightarrow$ each unit provides benefit to all, consumer choices don't reflect this
 
 
-### Social benefit of a private good vs a public good
+### Social benefit of a private good vs a public good {-}
 
 - Overall value of a private good: (area under the) "horizontal sum" of individual marginal benefit curves
 
@@ -4998,7 +4962,7 @@ Algebraic example of PG underprovision here?
 
 ***
 
-### Government's role
+### Government's role {-}
 
 - Pure public goods are not provided optimally by the free market, i.e., voluntarily
 
@@ -5040,7 +5004,7 @@ ii. Ask everyone to state number they want; choose average; those who stated mor
 
 ***
 
-### Voting paradox example
+### Voting paradox example {-}
 
 Green party: Green Park $\succ$ Public housing $\succ$ Private housing \
 
@@ -5136,7 +5100,7 @@ Skipping discussion of externalities for time constraints and previous coverage
 
 ***
 
-### Public Goods games ... understand
+### Public Goods games ... understand {-}
 
 - Understanding of the PG game/VCM and the theory behind it
 - Its variations and terminology (e.g., 'MPCR', 'stranger-matching', 'endgame', 'punishment')
@@ -5172,7 +5136,7 @@ Non-academic accounts: Behavioural Insights Team (2013), “Applying Behavioural
 
 <br> \bigskip
 
-### Charitable giving ... understand
+### Charitable giving ... understand {-}
 
 - Can it be modeled as a contribution to a public good?
     - What are the 'puzzles' in this modeling
@@ -5182,7 +5146,7 @@ Non-academic accounts: Behavioural Insights Team (2013), “Applying Behavioural
 
 ***
 
-### Information goods ... understand
+### Information goods ... understand {-}
 
 - When and why these may have characteristics of Public Goods
 - How firms may profit from selling information goods, and when this may be less than efficient
@@ -5217,13 +5181,13 @@ BEGINLEC9
 
 ***
 
-### Price discrimination in the media
+### Price discrimination in the media {-}
 
 Moneybox - \url{https://itunes.apple.com/us/podcast/money-box/id263570678?mt=2&i=1000379397237} -- many mis-statements; can you identify them?
 
 ***
 
-### Lecture goals
+### Lecture goals {-}
 
 1. What are monopolies and what are barriers to entry?
 2. How do monopolies choose prices and quantities?
@@ -5279,7 +5243,7 @@ Opposite extreme: *monopoly*
 ## Barriers to entry
 
 
-### Technical barriers to entry
+### Technical barriers to entry {-}
 - IRS/ Diminishing average cost over a broad range of output
     - $\rightarrow$ 'a natural monopoly'
     - (Here multiple firms producing separately are *less efficient*, cannot produce the lowest cost)
@@ -5287,7 +5251,7 @@ Opposite extreme: *monopoly*
 
 ***
 
-### Legal barriers to entry.
+### Legal barriers to entry. {-}
 
 - Patents and copyrights
 - Exclusive franchise or license (granted by government, by another firm, by a university)
@@ -5316,7 +5280,7 @@ Opposite extreme: *monopoly*
     - The need to reduce price (on all units) to get people to buy it
 
 
-### Graphically: Monopoly profit-max
+### Graphically: Monopoly profit-max {-}
 
 
 ```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
@@ -5477,7 +5441,7 @@ Why such a complicated price list?
 
 ***
 
-### Why do firms price discriminate?
+### Why do firms price discriminate? {-}
 
 
 
@@ -5491,7 +5455,7 @@ Why such a complicated price list?
 
 ***
 
-### The alternative to price discrimination (previous analysis)
+### The alternative to price discrimination (previous analysis) {-}
 
 Offering a single price for a good for all consumers is known as 'uniform pricing'.
 
@@ -5525,7 +5489,7 @@ Offering a single price for a good for all consumers is known as 'uniform pricin
 
 ***
 
-### The three types of price discrimination
+### The three types of price discrimination {-}
 
 1. Individual-based (First degree; at best 'perfect')
 
@@ -5582,7 +5546,7 @@ It might be her age, nationality, student-status, or even perhaps her income.
 
 ***
 
-### First-degree and/or 'perfect' price discrimination
+### First-degree and/or 'perfect' price discrimination {-}
 
 - The firm can offer each individual a different price for each unit they purchase.
 
@@ -5639,7 +5603,7 @@ Note: See Shiller, B. R. (2013, or updated version). First degree price discrimi
 
 ***
 
-### Second-degree price discrimination
+### Second-degree price discrimination {-}
 
 - Firm is unable to differentiate between consumers, uses quality/quantity so consumers self-select.
     - Quality- Transport- Different classes, Supermarkets- budget products
@@ -5667,7 +5631,7 @@ NOTE: I am not going to cover the algebra nor graphical analysis of second-degre
 
 ***
 
-### The 'self-selection' problem
+### The 'self-selection' problem {-}
 
 Train companies must price first and second class such that consumers will self-select.
 
@@ -5697,7 +5661,7 @@ Lot's of discussion of this in the media, see e.g.,
 
 ***
 
-### Third-degree price discrimination (3dpd) / Market separation
+### Third-degree price discrimination (3dpd) / Market separation {-}
 
 Third-degree price discrimination/Market-separation
 :    The practice of charging different prices to different groups that can be identified
@@ -5713,7 +5677,7 @@ Third-degree price discrimination/Market-separation
 
 ***
 
-### Pricing under 3dpd/market separation
+### Pricing under 3dpd/market separation {-}
 
 - Each group or market has it's own demand $\rightarrow$ marginal revenue curve
     - So set an optimising price quantity *separately* for each group
@@ -5747,7 +5711,7 @@ Another depiction, adding demand curves (they call it 'average revenue'):
  knitr::include_graphics("picsfigs/Price-discrimination-SNP2.png")
 ```
 
-### Who benefits from 3DPD?
+### Who benefits from 3DPD? {-}
 
 - Consumers *in identifiable group* with lower wtp face lower prices, thus they benefit
 - Consumers *in identifiable group* with higher wtp face higher prices, thus they lose
@@ -5778,7 +5742,7 @@ For consumers:
 ***
 
 
-### Why uncertain?
+### Why uncertain? {-}
 
 - When groups can be identified as 'low and high valuation'
     - the high-valuation groups get charged more, and thus consume less
@@ -5805,7 +5769,7 @@ Quantity increase is a necessary but not a sufficient condition.
 ***
 
 
-### But 'arbitrage' can foil price discrimination
+### But 'arbitrage' can foil price discrimination {-}
 
 - If, e.g., elderly who get discounts could sell the products to the middle-aged...
     - Then middle-aged would always ask them to do this, never pay high prices
@@ -5825,7 +5789,7 @@ The above issues are sometimes referred to as 'transactions costs'
 
 ***
 
-### David's idea: A new policy tool
+### David's idea: A new policy tool {-}
 
 - People with low-incomes tend to have lower-wtp for most goods
 - Government can typically identify and verify incomes
@@ -5930,7 +5894,7 @@ BEGINLEC10
 
 - NS: Ch 4 (not including 4a)
 
-### Coverage
+### Coverage {-}
 
 - 4.1 Probability and expected value (revision)
 - Expected utility; additional discussion
@@ -6499,7 +6463,7 @@ Diversification: Buying multiple assets (with risks that are not perfectly corre
 
 ***
 
-### Illustration: Binomial distribution
+### Illustration: Binomial distribution {-}
 
 - Suppose I have \pounds 1000, and I can bet on fair coin flips. My returns will then have what we call a “binomial distribution”.
 
@@ -6543,7 +6507,7 @@ Each £1 invested in shares has a higher expected return, but also a higher risk
 
 ***
 
-### Example
+### Example {-}
 
 Suppose you have \pounds35,000 and must invest \pounds15,000 in an Oil company or a Transportation company
 
@@ -6680,7 +6644,7 @@ Attributes of options:
 
 ***
 
-### Price of options determined by
+### Price of options determined by {-}
 
 1. Expected value of underlying transaction (e.g., for a call option, expected future share price minus strike price)
 
@@ -6716,7 +6680,7 @@ Classic economist's argument: you should 'bet against yourself' to minimise risk
 
 ***
 
-### Black-Scholes (and Merton) model of options value
+### Black-Scholes (and Merton) model of options value {-}
 
 ```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/optionsvalue_blackscholes.png")
@@ -7022,7 +6986,7 @@ Very interesting problems, does Econ and Game Theory have the solutions?
 
 
 
-### What game theory can do (wet blanket)
+### What game theory can do (wet blanket) {-}
 
 
 ```{r  fig.cap = '', out.height='1.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
@@ -7048,7 +7012,7 @@ These make Game Theoretic predictions difficult.}
 
 ***
 
-### Four elements describe a game
+### Four elements describe a game {-}
 
 
 1. Players
@@ -7156,7 +7120,7 @@ Information
 
 ## Illustrating Games
 
-### The Prisoners’ Dilemma: Normal form
+### The Prisoners’ Dilemma: Normal form {-}
 
 *The original story*:
 Two individuals are arrested for a crime.  They both know that they can only be convicted for a lesser crime, for which they get 2 years in jail.
@@ -7210,7 +7174,7 @@ I.e., Temptation $>$ Reward $>$ Punishment $>$ Sucker
 
 
 
-### The Prisoners’ Dilemma: Extensive form
+### The Prisoners’ Dilemma: Extensive form {-}
 
 ```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/pd_extensive.png")
@@ -7336,7 +7300,7 @@ With more than two, if there is a Dominant strategy this means that all other st
 ***
 
 
-### Rationalisability/ Iterated strict dominance (not in text!)
+### Rationalisability/ Iterated strict dominance (not in text!) {-}
 
 Extending this ...
 
@@ -7485,7 +7449,7 @@ Find equilibrium via each method:
 ## Coordination and anti-coordination games
 
 
-### Coordination: Battle of the sexes (BOS)
+### Coordination: Battle of the sexes (BOS) {-}
 
 ```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/bosmatrix.png")
@@ -7496,7 +7460,7 @@ Find equilibrium via each method:
 
 ***
 
-### Anti-coordination: Matching pennies (odds/evens)
+### Anti-coordination: Matching pennies (odds/evens) {-}
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/matchpennies.png")
@@ -7523,7 +7487,7 @@ Mixed strategy
 
 ***
 
-### Matching pennies: mixed strategies
+### Matching pennies: mixed strategies {-}
 
 \underline{Intuition}
 
@@ -7535,7 +7499,7 @@ So, technically, each of us choosing heads half the time is a NE. `r format_with
 
 ***
 
-### Battle of sexes: mixed strategies
+### Battle of sexes: mixed strategies {-}
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/bosmatrix.png")
@@ -7611,7 +7575,7 @@ Let w: probability wife chooses Ballet
 *Shortcut:* only someone who is indifferent will randomise. Above, $h=1/3$ makes wife indifferent, $w=2/3$ makes husband indifferent
 
 
-### What's all this rot?
+### What's all this rot? {-}
 
 - Mixed strategies are not about 'being unpredictable'; these are one shot games
 
@@ -7622,7 +7586,7 @@ Suppose in a population 1/3 of men go to Ballet and 2/3 of women go to Ballet:
 ... these ratios are 'stable'; no reason for systematic changes.
 On the other hand, if men always went to boxing and women to ballet this is not stable. A husband would be better off going to ballet ... so the ratios should change over time.}
 
-### Computing payoffs with mixing
+### Computing payoffs with mixing {-}
 
 - Remember, formally NE specifies *strategies* (strategy 'profiles') not payoffs
     - In the BOS the pure strategy equilibria were
@@ -7665,7 +7629,7 @@ Above (BOS), there are three equilibria: both play Boxing, both play Ballet, and
 
 ***
 
-### In-class experiment: BOS \& coordination; need 2 volunteers
+### In-class experiment: BOS \& coordination; need 2 volunteers {-}
 
 ```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/BOS_inlecture.png")
@@ -7699,7 +7663,7 @@ Above (BOS), there are three equilibria: both play Boxing, both play Ballet, and
 
 
 
-### Multiple equilibrium and refinements
+### Multiple equilibrium and refinements {-}
 
 We refer to *refinement criteria* and *focal points*. For example...
 
@@ -7713,7 +7677,7 @@ But it doesn't say whether we should predict Box, Box (payoffs 2,1) or Ballet, B
 
 ***
 
-### Is there a focal point?
+### Is there a focal point? {-}
 
 *In-lecture 'experiment':*
 
@@ -8077,7 +8041,7 @@ If the game is symmetric this is a 'fixed point'.
 
 ***
 
-### Tragedy of the Commons
+### Tragedy of the Commons {-}
 
 Shepherds A and B raise $s_A$ and $s_B$ sheep, respectively, in the same meadow
 
@@ -8236,7 +8200,7 @@ E.g., FEELE lab at Exeter
 
 ***
 
-### Various experimental goals
+### Various experimental goals {-}
 
 - Measure preferences (risk, time, social preferences...)
 - Asses theoretical predictions (classical and behavioural), including game theory
@@ -8288,7 +8252,7 @@ Potential explanations
 
 ## Issues in lab experiments
 
-### What is being measured?
+### What is being measured? {-}
 - PD: Does money measure the true payoffs? Do we have the 'control' to test the model?
     - Other-regarding preferences; may be unobservable.
     - 'Experimenter demand': desire to please experimenter, aware of study goals?
@@ -8615,7 +8579,7 @@ There are four general ways people diverge from classical assumptions (text says
 
 ***
 
-### Application: lack of financial literacy
+### Application: lack of financial literacy {-}
 
 - Consumers who underestimated interest rates in quizzes held the highest interest loans in real life
 - Particularly when government 'truth in lending laws' were lax
@@ -8771,7 +8735,7 @@ By the EU calculation I make choices over which I prefer for the (remaining)
 
 ***
 
-### Kahneman and Tversky scenariae
+### Kahneman and Tversky scenariae {-}
 
 `r format_with_col("Warning: This is not the standard Allais paradox, it is a different paradox.","red")`
 
@@ -8840,7 +8804,7 @@ Seems to depend on how we 'frame' these.
 ***
 
 
-### Prospect theory -- loss aversion (LA) part
+### Prospect theory -- loss aversion (LA) part {-}
 
 1. People don't think only about *outcomes* but about 'gains or losses relative to a reference point'
 1. Outcomes considered *losses* are particular painful
@@ -8856,7 +8820,7 @@ that we wouldn't make if we saw it as 'increasing gains'
 
 ***
 
-### Standard and loss-averse utility
+### Standard and loss-averse utility {-}
 
 ```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/std_u_prospect_u.png")
@@ -8871,7 +8835,7 @@ What leads to the paradoxes and 'inconsistent behaviour'? \
 
 ***
 
-### KT experiment with prospect theory (loss aversion)
+### KT experiment with prospect theory (loss aversion) {-}
 
 **KT1:** \pounds1000 upfront. \
 
@@ -8917,7 +8881,7 @@ Framing effect
 
 ***
 
-### Allais redux: loose prospect theory (Loss Aversion) explanation
+### Allais redux: loose prospect theory (Loss Aversion) explanation {-}
 
 *Note:* We previously mentioned misweighting probabilities as an explanation for this. \
  An alternative explanation could be loss-aversion
@@ -9037,7 +9001,7 @@ But if Ant were 'choosing for Monday on Sunday', he would choose Work $\rightarr
 - Would he 'benefit from pre-committing?'
 
 
-### Application: 'put a contract out on yourself
+### Application: 'put a contract out on yourself {-}
 
 
 ## Altruism and fairness
@@ -9090,7 +9054,7 @@ We can model some forms of other-regarding preferences using standard tools, lik
 
 [comment]: <> (101EE)
 
-### Converting from 'material payoffs' to 'psychological payoffs'
+### Converting from 'material payoffs' to 'psychological payoffs' {-}
 
 - As noted, the 'real' payoffs in a game (or an individual decision) may not be identical to the monetary/material payoffs
     - (Note, this is a separate point than 'diminishing marginal utility' and risk-aversion)
@@ -9226,7 +9190,7 @@ The subgame-perfect Nash equilibrium is found by solving the game backwards:
 `r format_with_col("Note, These are basic game theoretic predictions, not Behavioral.","gray")`
 
 
-### What happens in experiments?
+### What happens in experiments? {-}
 
 - Class question: What do you think?
 
@@ -9321,7 +9285,7 @@ Do they  commit more 'before' than they give 'after', or vice versa, or are thes
 
 ***
 
-### Field experiment
+### Field experiment {-}
 
 **One field experiment: Essex UG students**
 
@@ -9449,7 +9413,7 @@ Answer...
 
 ***
 
-### Sources of evidence and discussion
+### Sources of evidence and discussion {-}
 
 *I want you to have a decent background on...*
 
@@ -9594,7 +9558,7 @@ See also  [Misweighting probabilities](http://lesswrong.com/lw/ml/but_theres_sti
 
 
 
-### Additional relevant questions
+### Additional relevant questions {-}
 
 
 <br> \bigskip

@@ -89,7 +89,7 @@ library(png)
 library(grid)
 ```
 
-```{r include=FALSE,eval=FALSE}
+```{r include=TRUE, eval=FALSE}
 install.packages("webshot")
 webshot::install_phantomjs()
 
@@ -141,5 +141,15 @@ my_output <- knitr::opts_knit$get("rmarkdown.pandoc.to")
 
 <!---
 Can define text blocks here, refer to them again and again if desired
+To add to ELE:
+1. zip all content in '_book' folder
+2. drag into VLE site
+  - on prompt, create file resource
+3. edit settings
+  - right click and unzip
+  - double-click starting file
+  - set as main file
+  - save
+Now it is only accessible within the university login
 -->
 

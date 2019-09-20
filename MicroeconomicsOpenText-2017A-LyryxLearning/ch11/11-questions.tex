@@ -1,0 +1,254 @@
+\newpage
+\section*{Exercises for Chapter~\ref{chap:imperfectcompetition}}
+
+\begin{enumialphparenastyle}
+
+% Solutions file for exercises opened
+\Opensolutionfile{solutions}[solutions/ch11ex]
+
+\begin{ex}\label{ex:ch11ex1}
+Imagine that the biggest four firms in each of the sectors listed below produce the amounts defined in each cell. Compute the three-firm and four-firm concentration ratios for each sector, and rank the sectors by degree of industry concentration.
+\begin{center}
+\begin{tabu} to \linewidth {|X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]|}	\hline
+\rowcolor{rowcolour}	\textbf{Sector}	&	\textbf{Firm 1}	&	\textbf{Firm 2}	&	\textbf{Firm 3}	&	\textbf{Firm 4}	&	\textbf{Total market}	\\
+\textbf{Shoes}		&	60	&	45	&	20	&	12	&	920	\\
+\rowcolor{rowcolour}	\textbf{Chemicals}	&	120	&	80	&	36	&	24	&	480	\\
+\textbf{Beer}		&	45	&	40	&	3	&	2	&	110	\\
+\rowcolor{rowcolour}	\textbf{Tobacco}	&	206	&	84	&	30	&	5	&	342	\\	\hline
+\end{tabu}
+\end{center}
+\begin{sol}
+	The three-firm ratios are 0.14, 0.49, 0.80, 0.94. The four-firm ratios are 0.15, 0.54, 0.82, 0.95.
+	
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch11ex2}
+You own a company in a monopolistically competitive market. Your marginal cost of production is \$12 per unit. There are no fixed costs. The demand for your own product is given by the equation $P=48-(1/2)Q$.
+\begin{enumerate}
+	\item	Plot the demand curve, the marginal revenue curve, and the marginal cost curve.
+	\item	Compute the profit-maximizing output and price combination.
+	\item	Compute total revenue and total profit.
+	\item	In this monopolistically competitive industry, can these profits continue indefinitely?
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	See graph below.
+	\item	Equating $MC$ to $MR$ yields $Q=36$ and therefore, from the demand curve, $P=\$30$ when $Q=30$.
+	\item	$TR$ is \$1,080, total cost is \$432 and therefore profit is \$648.
+	\item	Profits plus freedom of entry will see new firms take some of this firm's market share, and therefore reduce profit.
+\end{enumerate}
+\begin{center}
+\begin{tikzpicture}[background color=figurebkgdcolour,use background,xscale=0.1,yscale=0.13]
+	\draw [thick] (0,50) node (yaxis) [mynode1,above] {Price} |- (100,0) node (xaxis) [mynode1,right] {Quantity};
+	\draw [ultra thick,budgetcolour,name path=G] (0,48) node [mynode,left,black] {48} -- node [mynode,above right,black,pos=0.6] {Demand: $P=48-1/2Q$} (96,0) node [mynode,below,black] {96};
+	\draw [ultra thick,dashed,budgetcolour,name path=halfG] (0,48) -- node [mynode,above right,black,pos=0.6] {$MR=48-Q$} (48,0) node [mynode,below,black] {48};
+	\draw [ultra thick,supplycolour,name path=quota] (0,12) node [mynode,left,black] {12} -- +(95,0) node [mynode,right,black] {$MC=12$};
+\end{tikzpicture}
+\end{center}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch11ex3}
+Two firms in a particular industry face a market demand curve given by the equation $P=100-(1/3)Q$. The marginal cost is \$40 per unit and the marginal revenue is $MR=100-(2/3)Q$.
+\begin{enumerate}
+	\item	Draw the demand curve to scale on a diagram, and then insert the corresponding marginal revenue curve and the $MC$ curve.
+	\item	If these firms got together to form a cartel, what output would they produce and what price would they charge? 
+	\item	Assuming they each produce half of the total what is their individual profit?
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	The diagram here is similar to the one above.
+	\item	Acting as a monopolist they would set $MR=MC$, hence $Q=90$, $P=\$70$.
+	\item	Combined profit is $\$90\times(70-40)=\$2,700$. Individual profit is half of this amount.
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch11ex4}
+Suppose now that one of the firms in Exercise~\ref{ex:ch11ex3} decides to break the cartel agreement and makes a decision to sell 10 additional units.
+\begin{enumerate}
+	\item	How many units does he intend to sell?
+	\item	If the other supplier maintains her output at the cartel level, at what price will the new total output be sold?
+	\item	What profit will each make in this new situation?
+	\item	Is the combined profit here greater or less than in the cartel situation?
+	\item	How is the firm that previously maintained the cartel output level likely to react here?
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	55 units.
+	\item	If the cheater intends to sell 55 units then the total sold is 100 units. This necessitates a price of 66.67.
+	\item	One firm makes $\$(66.67-40)\times 45=\$1,200$; the other makes $\$(66.67-40)\times 55=\$1,467$.
+	\item	It must be less since the cartel profit maximizing output is globally profit maximizing.
+	\item	By increasing its output.
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch11ex5}
+The classic game theory problem is the ``prisoners' dilemma.'' In this game, two criminals are apprehended, but the police have only got circumstantial evidence to prosecute them for a small crime, without having the evidence to prosecute them for the major crime of which they are suspected. The interrogators then pose incentives to the crooks-incentives to talk. The crooks are put in separate jail cells and have the option to confess or deny. Their payoff depends upon what course of action each adopts. The payoff matrix is given below. The first element in each box is the payoff (years in jail) to the player in the left column, and the second element is the payoff to the player in the top row.
+\begin{center}
+\begin{tabu} to 35em {X[1,c]X[1,c]|X[1,c]X[1,c]|}	\hhline{~~--}
+	&	& \multicolumn{2}{c|}{\cellcolor{rowcolour}\textbf{B's strategy}} \\ 
+	&	& Confess & Deny \\ \hline 
+	\multicolumn{1}{|c}{\cellcolor{rowcolour}} & Confess & \cellcolor{rowcolour}6,6 & \cellcolor{rowcolour}0,10 \\[-0.1em]
+	\multicolumn{1}{|c}{\cellcolor{rowcolour}\multirow{-2}{7em}{\textbf{A's strategy}}} & Deny & \cellcolor{rowcolour}10,0 & \cellcolor{rowcolour}1,1 \\ \hline 
+\end{tabu}
+\end{center}
+\begin{enumerate}
+	\item	Does a ``dominant strategy'' present itself for each or both of the crooks?
+	\item	What is the Nash equilibrium to this game? 
+	\item	Is the Nash equilibrium unique?
+	\item	Was it important for the police to place the crooks in separate cells?
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	Yes. If A confesses then B's best strategy is also to confess. If A denies, B's best strategy is also to confess. Hence, either way B's best choice is to confess -- this is a dominant strategy. The same reasoning applies to A.
+	\item	The Nash Equilibrium is that they both confess.
+	\item	Yes.
+	\item	If the crooks could communicate with each other they could cooperate and agree to deny. This would be better for each.
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch11ex6}
+Taylormade and Titlelist are considering a production strategy for their new golf drivers. If they each produce a small output, they can price the product higher and make more profit than if they each produce a large output. Their payoff/profit matrix is given below.
+\begin{center}
+\begin{tabu} to 35em {X[1,c]X[1,c]|X[1,c]X[1,c]|}	\hhline{~~--}
+	&	& \multicolumn{2}{c|}{\cellcolor{rowcolour}\textbf{Taylormade strategy}} \\ 
+	&	& Low output & High output \\ \hline 
+	\multicolumn{1}{|c}{\cellcolor{rowcolour}} & Low output & \cellcolor{rowcolour}50,50 & \cellcolor{rowcolour}20,70 \\[-0.1em]
+	\multicolumn{1}{|c}{\cellcolor{rowcolour}\multirow{-2}{7em}{\textbf{Titleist strategy}}} & High output & \cellcolor{rowcolour}70,20 & \cellcolor{rowcolour}40,40 \\ \hline 
+\end{tabu}
+\end{center}
+\begin{enumerate}
+	\item	Does either player have a dominant strategy here?
+	\item	What is the Nash equilibrium to the game?
+	\item	Do you think that a cartel arrangement would be sustainable?
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	Each firm has a `high output' dominant strategy, since their profit is greater here regardless of the output chosen by the other firm.
+	\item	From (a) it follows that high/high is the Nash Equilibrium.
+	\item	Since low/low yields more profit for each firm, a cartel is an attractive possibility. But it may not be sustainable, given that each player has the incentive to renege on the cartel agreement.
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch11ex7}
+The reaction functions for two firms A and B in a duopoly are given by: $Q_A=104-2Q_B$ and $Q_B=80-4Q_A$.
+\begin{enumerate}
+	\item	Plot the reaction functions to scale on a graph.
+	\item	Solve the two reaction functions for the equilibrium output produced by each.
+	\item	Do you think that these firms have the same cost structure? Explain.
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	The reaction functions are of the standard type illustrated in the figure below.
+	\item	Solving the two functions yields $q_A=8$ and $q_B=48$.
+	\item	Since the reaction functions are not symmetric the cost structures are different if they face the same demand.
+\end{enumerate}
+\begin{center}
+\begin{tikzpicture}[background color=figurebkgdcolour,use background,xscale=0.1,yscale=0.06]
+	\draw [thick] (0,110) node (yaxis) [mynode1,above] {A's output} |- (90,0) node (xaxis) [mynode1,right] {B's output};
+	\draw [ultra thick,budgetcolour,name path=A] (0,104) node [mynode,left,black] {104} -- node [mynode,above right,black,pos=0.2] {A's reaction function} (52,0) node [mynode,below,black] {52};
+	\draw [ultra thick,dashed,budgetcolour,name path=B] (0,20) node [mynode,left,black] {20} -- node [mynode,above right,black,pos=0.85] {B's reaction function} (80,0) node [mynode,below,black] {80};
+	\draw [name intersections={of=A and B, by=E}]
+		[<-,thick,shorten <=1mm] (E) -- +(10,20) node [mynode,right,black] {Equilibrium};
+\end{tikzpicture}
+\end{center}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch11ex8}
+Consider the example developed in Section~\ref{sec:duopolycournot} of the text, assuming this time that firm A has a $MC$ of \$4 per unit, and B has a $MC$ of \$6.
+\begin{enumerate}
+	\item	Compute the level of output each will produce
+	\item	Compute the total output produced by both firms.
+	\item	Compute the profit made by each firm.
+	\item	Comparing their combined output with the output when the $MC$ of each firm is \$6, explain why the totals differ.
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	The reaction functions are obtained in the normal manner -- by equating $MR$ to $MC$ for each player, conditional upon some output being produced by the other player. Since demand is given by $P=24-Q$, this process yields $Q_A=10-1/2Q_B$ as A's reaction function, and $Q_B=8-1/2Q_A$ as B's reaction function. Solving yields $Q_A=8$ and $Q_B=4$.
+	\item	The combined output is as before: 12 units.
+	\item	The price in the market remains at \$12, since the total output is still 12 units. Combined profit is \$96.
+	\item	The producer with the lower production cost can now gain a larger market share.
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch11ex9}
+Consider the market demand curve for appliances: $P=3,200-(1/4)Q$. There are no fixed production costs, and the marginal cost of each appliance is $MC=\$400$.
+\begin{enumerate}
+	\item	Determine the output that will be produced in a `perfectly competitive' market structure where no profits accrue in equilibrium.
+	\item	If this market is supplied by a monopolist what is the profit maximizing output?
+	\item	What will be the total output produced in the Cournot duopoly game? [Hint: you can either derive the reaction functions and solve them, or use the formula from Section~\ref{sec:cartel} of the chapter.]
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	Equating price to $MC$ yields $Q=11,200$.
+	\item	Equating $MR$ to $MC$ yields $Q=5,600$.
+	\item	Using the formula $Q=n/(n+1)\times(\text{perfectly competitive output})$ yields market $Q=2/3\times 11,200=7,466.67$.
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch11ex10}
+Consider the outputs you have obtained in Exercise~\ref{ex:ch11ex9}.
+\begin{enumerate}
+	\item	Compute the profit levels under each of the three market structures.
+	\item	Can you figure out how many firms would produce at the perfectly competitive output? If not, can you think of a reason?
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	Profit under perfect competition is zero (only normal profit). Under monopoly the price charged is \$1,800. Cost per  unit is \$400, and quantity produced is 5,600. Hence profit $=5,600\times(1,800-400)=\$7.84$m. Since the output in the duopoly market is 2/3 times the perfectly competitive output, then $Q=7,466.67$. The price is thus $P=3,200-(1/4)\times 7,466.67=\$1,333.33$. Profit per unit is thus \$933.33, and total profit is \$6.97m.
+	\item	Since the unit costs are constant we could have any number of firms producing in this market.
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch11ex11}
+Ronnie's Wraps is the only supplier of sandwich food and makes a healthy profit. It currently charges a high price and makes a profit of six units. However, Flash Salads is considering entering the same market. The payoff matrix below defines the profit outcomes for different possibilities. The first entry in each cell is the payoff/profit to Flash Salads and the second to Ronnie's Wraps.
+\begin{center}
+\begin{tabu} to 35em {X[1,c]X[1,c]|X[1,c]X[1,c]|}	\hhline{~~--}
+	&	& \multicolumn{2}{c|}{\cellcolor{rowcolour}\textbf{Ronnie's Wraps}} \\ 
+	&	& High price & Low price \\ \hline 
+	\multicolumn{1}{|c}{\cellcolor{rowcolour}} & Enter the market & \cellcolor{rowcolour}2,3 & \cellcolor{rowcolour}-1,1 \\[-0.1em]
+	\multicolumn{1}{|c}{\cellcolor{rowcolour}\multirow{-2}{7em}{\textbf{Flash Salads}}} & Stay out of market & \cellcolor{rowcolour}0,6 & \cellcolor{rowcolour}0,4 \\ \hline 
+\end{tabu}
+\end{center}
+\begin{enumerate}
+	\item	If Ronnie's Wraps threatens to lower its price in response to the entry of a new competitor, should Flash Salads stay away or enter?
+	\item	Explain the importance of threat credibility here.
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	While Ronnie can threaten to lower its price if Flash enters the market it would not be profitable for Ronnie to do that because a higher price, even with Flash in the market, yields a superior profit to Ronnie. Hence Flash should enter.
+	\item	The issue here is that the threat to lower price is not credible.
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch11ex12}
+A monopolistically competitive firm has an average total cost curve given by $ATC=2/Q+1+Q/8$. The slope of this curve is given by $1/8-2/Q^2$. The marginal cost is $MC=1+Q/4$.  Her demand curve is given by $P=3-(3/8)Q$, and so the marginal revenue curve is given by $MR=3-(3/4)Q$. We know that the equilibrium for this firm (see Figure~\ref{fig:eqmonocomp}) is where the demand curve is tangent to the $ATC$ curve -- where the slopes are equal.
+\begin{enumerate}
+	\item	What is the equilibrium output for this firm [Hint: find where the slope of the demand curve equals the slope of the $ATC$ curve]?
+	\item	At what price will the producer sell this output?
+	\item	Solve for where $MC=MR$, this is the profit maximizing condition -- does it correspond to where the slope of the demand curve equals the slope of the $ATC$?
+	\item	Since the $MC$ always intersects the $ATC$ at the minimum of the $ATC$, solve for the output level that defines this $ATC$ minimum.
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	Equating the slope of the demand curve to the slope of the $ATC$ curve yields $Q=2$.
+	\item	Clearly $P=2.25$ from the demand curve.
+	\item	Equating $MC=MR$ again yields $Q=2$, as illustrated in Figure~\ref{fig:eqmonocomp}.
+	\item	Equating $MC$ to the $ATC$ yields $Q=4$.
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+% Closes solutions file for this chapter
+\Closesolutionfile{solutions}
+
+\end{enumialphparenastyle}

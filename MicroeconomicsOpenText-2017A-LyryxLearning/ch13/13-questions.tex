@@ -1,0 +1,310 @@
+\newpage
+\section*{Exercises for Chapter~\ref{chap:humancapital}}
+
+\begin{enumialphparenastyle}
+
+% Solutions file for exercises opened
+\Opensolutionfile{solutions}[solutions/ch13ex]
+
+\begin{ex}\label{ex:ch13ex1}
+In the short run one half of the labour force has high skills and one half low skills (in terms of Figure~\ref{fig:edskillpremium} this means that the short-run supply curve is vertical at 0.5). The relative demand for the high-skill workers is given by $W=100\times 0.4\times (1-f)$, where $W$ is the wage premium and $f$ is the fraction that is skilled. The premium is measured in percent.
+\begin{enumerate}
+	\item	Illustrate the supply and demand curves graphically, and compute the skill premium going to the high-skill workers in the short run by solving the two equations.
+	\item	If demand increases to $W=100\times 0.6\times (1-f)$ what is the new premium? Illustrate your answer graphically.
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	Solving the demand and supply involves equating $Q=40-40f$ to $f=0.5$. Thus the equilibrium premium is 20, which is interpreted in percentage terms. See figure below.
+	\item	If demand shifts upwards to $W=60-60f$, the new equilibrium is 30 percent, as illustrated in the figure below again.
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch13ex2}
+Consider the foregoing problem in a long run context, when the fraction of the labour force that is high-skilled is more elastic with respect to the premium. Let this long-run relative supply function be $W=100\times 0.4\times f$.
+\begin{enumerate}
+	\item	Verify that this long run function goes through the same equilibrium as in Exercise~\ref{ex:ch13ex1}.
+	\item	Illustrate the long run and short run on the same diagram. 
+	\item	What is the numerical value of the premium in the long run after the increase in demand? Illustrate graphically.
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	See diagram below.
+	\item	See diagram below.
+	\item	In the long run the relative supply is $W=40f$, and equating this with demand yields a 24 percent premium rather than a 30 percent premium and $f=0.6$.
+\end{enumerate}
+\begin{center}
+\begin{tikzpicture}[background color=figurebkgdcolour,use background]
+	\begin{axis}[
+	axis line style=thick,
+	every tick label/.append style={font=\footnotesize},
+	ymajorgrids,
+	grid style={dotted},
+	every node near coord/.append style={font=\scriptsize},
+	xticklabel style={rotate=90,anchor=east,/pgf/number format/1000 sep=},
+	scaled y ticks=false,
+	yticklabel style={/pgf/number format/fixed,/pgf/number format/1000 sep = \thinspace},
+	xmin=0,xmax=1,ymin=0,ymax=65,
+	y=1cm/8,
+	x=1cm/0.1,
+	x label style={at={(axis description cs:0.5,-0.05)},anchor=north},
+	xlabel={Fraction of Labour Force},
+	ylabel={Wage},
+	]
+	\addplot[datasetcolourone,ultra thick] table {
+		X	Y
+		0	60
+		1	0
+	};
+	\addplot[datasetcolourtwo,ultra thick] table {
+		X	Y
+		0	40
+		1	0
+	};
+	\addplot[datasetcolourthree,ultra thick] table {
+		X	Y
+		0	0
+		1	40
+	};
+	\addplot[datasetcolourfour,ultra thick] table {
+		X	Y
+		0.5	0
+		0.5	65
+	};
+	\end{axis}
+\end{tikzpicture}
+\end{center}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch13ex3}
+Consider a world in which there are two types of workers -- high skill and low skill. Low skill workers are willing to work for \$10 per hour and high skill workers for \$18 per hour. Any firm that demands both types of worker has a demand curve (value of the $MP_L$) for each type. Suppose that the demand for high skill workers lies everywhere above the demand for low skill workers. Illustrate on a diagram the supply and demand functions for each type of labour, and the equilibrium for each type of worker.
+\begin{sol}
+	Here the supply curves are horizontal at wage of \$10 for low skill workers and wage of \$18 for high skill workers. The two demands are such that the demand for the high skill worker is above the demand for the low skill workers. The equilibrium for the high skill type is where the demand and supply for high skill workers intersect; likewise for the low skill equilibrium.
+	\begin{center}
+	\begin{tikzpicture}[background color=figurebkgdcolour,use background,xscale=0.15,yscale=0.3]
+		\draw [thick] (0,25) node (yaxis) [mynode1,above] {Wage} |- (60,0) node (xaxis) [mynode1,right] {Labour};
+		\draw [ultra thick,demandcolour,name path=DH] (10,24) -- node [mynode,above right,black,pos=0.95] {Demand for\\high skill} (55,3);
+		\draw [ultra thick,dashed,demandcolour,name path=DL] (10,21) -- node [mynode,above right,black,pos=0.95] {Demand for\\low skill} (40,3);
+		\draw [ultra thick,supplycolour,name path=SH] (0,18) -- +(50,0) node [mynode,right,black] {Supply high\\skill: $W=\$18$};
+		\draw [ultra thick,supplycolour,name path=SH] (0,10) -- +(50,0) node [mynode,right,black] {Supply low\\skill: $W=\$10$};
+	\end{tikzpicture}
+	\end{center}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch13ex4}
+Georgina is contemplating entering the job market after graduating from high school. Her future lifespan is divided into three periods. If she goes to university for the first, and earns an income for the following two periods her lifetime balance sheet will be: (i) -\$20,000; (ii) \$40,000; (iii) \$50,000. The negative value implies that she will incur costs in educating herself in the first period. In contrast, if she decides to work for all three periods she will earn \$20,000 in each period. The answer here involves discounting, and you should assume that the first period is today, the second period amount must be discounted back one period, and the final amount discounted back two periods.
+\begin{enumerate}
+	\item	If the interest rate is 10\% should she go to university or enter the job market immediately?
+	\item	If the interest rate is 2\% what should she do?
+	\item	Can you find some value for the interest rate that will change her decision?
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	The present value of going to university is higher at an interest rate of 10\%. If you discount the first stream of values you will obtain $-20,000$, 36,360 and 41,320 yielding a net present value of 57,680. With 20,000 dollars each period in contrast, the net present value is 54,710 dollars.
+	\item	By performing the same set of calculations using the 2\% discount rate, you will find that university is still preferred.
+	\item	At an interest rate above 15\% the `no university' option will yield a higher net present value. Try discounting the two income streams using a rate of 16\% and you will see.
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch13ex5}
+Laurence has decided that he will definitely go to university rather than go into the workforce directly after high school. He is trying to decide between Law and Economics. Like Georgina, his life can be divided into three parts. He will incur education costs in the first period and earn in the remaining two periods. His income profile is given in the table below. (Discounting need not be applied to the first number, but the following numbers must be discounted back one period and two periods respectively.)
+\begin{center}
+\begin{tabu} to 30em {|X[1,c]X[1,c]X[1,c]X[1,c]|}	\hline
+\rowcolor{rowcolour}	\textbf{Profession}	&	\textbf{Period 1}	&	\textbf{Period 2}	&	\textbf{Period 3}	\\
+						\textbf{Economics}	&	-15,000				&	50,000				&	60,000				\\
+\rowcolor{rowcolour}	\textbf{Law}		&	-25,000				&	40,000				&	90,000				\\	\hline
+\end{tabu}
+\end{center}
+\begin{enumerate}
+	\item	If the interest rate is 2\%, which profession should he choose?
+	\item	If the interest rate is 30\% which profession should he choose?
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	Using the same discounting techniques as in the previous question you will see that the present value of the income from law exceeds that from economics when the interest rate is 2\%: 100,721 for law and 91,690 for economics.
+	\item	Law should still be chosen at a rate of 30\%, but only just.
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch13ex6}
+Imagine that you have the following data on the income distribution for two economies. The first set of quintile shares is as in Table~\ref{table:quintileincome}, and the second set is: 3.0, 9.0, 17.0, 29.0, and 42.0.
+\begin{center}
+\begin{tabu} to 30em {|X[1,c]X[1,c]X[1,c]|}	\hline
+\rowcolor{rowcolour}								&	\multicolumn{2}{c|}{\textbf{Quintile share of total income}}	\\
+						\textbf{First quintile}		&	4.1		&	3.0		\\
+\rowcolor{rowcolour}	\textbf{Second quintile}	&	9.7		&	9.0		\\
+						\textbf{Third quintile}		&	15.6	&	17.0	\\
+\rowcolor{rowcolour}	\textbf{Fourth quintile}	&	23.7	&	29.0	\\
+						\textbf{Fifth quintile}		&	46.8	&	42.0	\\
+\rowcolor{rowcolour}	\textbf{Total}				&	100		&	100		\\	\hline
+\end{tabu}
+\end{center}
+\begin{enumerate}
+	\item	On graph paper, or in a spreadsheet program, plot the Lorenz curves corresponding to the two sets of quintile shares. 
+	\item	Can you say, from a visual analysis, which distribution is more equal?
+\end{enumerate}
+\begin{sol}
+	These two distributions have intersecting Lorenz curves, so it is difficult to say which is more unequal without further analysis.
+	\begin{center}
+	\begin{tikzpicture}[background color=figurebkgdcolour,use background]
+		\begin{axis}[
+		axis line style=thick,
+		every tick label/.append style={font=\footnotesize},
+		ymajorgrids,
+		grid style={dotted},
+		every node near coord/.append style={font=\scriptsize},
+		xticklabel style={rotate=90,anchor=east,/pgf/number format/1000 sep=},
+		scaled y ticks=false,
+		yticklabel style={/pgf/number format/fixed,/pgf/number format/1000 sep = \thinspace},
+		xmin=0,xmax=1,ymin=0,ymax=1,
+		y=1cm/0.15,
+		x=1cm/0.1,
+		x label style={at={(axis description cs:0.5,-0.05)},anchor=north},
+		xlabel={Population share},
+		ylabel={Income share},
+		]
+		\addplot[datasetcolourone,ultra thick,mark=square*] table {
+			X	Y
+			0	0
+			0.2	0.041
+			0.4	0.138
+			0.6	0.294
+			0.8	0.531
+			1	1
+		};
+		\addplot[datasetcolourtwo,ultra thick,mark=triangle*] table {
+			X	Y
+			0	0
+			0.2	0.03
+			0.4	0.12
+			0.6	0.29
+			0.8	0.58
+			1	1
+		};
+		\end{axis}
+	\end{tikzpicture}
+	\end{center}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch13ex7}
+The distribution of income in the economy is given in the table below. The first numerical column represents the dollars earned by each quintile. Since the numbers add to 100 you can equally think of the dollar values as shares of the total pie. In this economy the government changes the distribution by levying taxes and distributing benefits.
+\begin{center}
+\begin{tabu} to \linewidth {|X[0.5,c]X[1,c]X[1,c]X[1,c]|}	\hline
+\rowcolor{rowcolour}	\textbf{Quintile}	&	\textbf{Gross income \$m}	&	\textbf{Taxes \$m}	&	\textbf{Benefits \$m}	\\
+						\textbf{First}		&	4							&	0					&	9						\\
+\rowcolor{rowcolour}	\textbf{Second}		&	11							&	1					&	6						\\
+						\textbf{Third}		&	19							&	3					&	5						\\
+\rowcolor{rowcolour}	\textbf{Fourth}		&	26							&	7					&	3						\\
+						\textbf{Fifth}		&	40							&	15					&	3						\\
+\rowcolor{rowcolour}	\textbf{Total}		&	100							&	26					&	26						\\	\hline
+\end{tabu}
+\end{center}
+\begin{enumerate}
+	\item	Plot the Lorenz curve for gross income to scale.
+	\item	Plot the Lorenz curve for income after taxes have been levied. Note that the total income will now be less than 100 and so you will have to compute the quintile shares using a new total.
+	\item	Finally, add in the benefits so that the total post-tax and post-benefit incomes sum to \$100m again, and plot the Lorenz curve based on this final set of numbers.
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	The coordinates on the vertical axis measured in percentages are: 4, 15, 34, 60, 100. See the figure below for the graphic.
+	\item	The new coordinates are: 5.4, 18.9, 40.5, 66.2, 100.
+	\item	The coordinates for post government income are: 13, 29, 50, 72, 100. The three Lorenz curves are plotted below.
+\end{enumerate}
+\begin{center}
+\begin{tikzpicture}[background color=figurebkgdcolour,use background]
+	\begin{axis}[
+	axis line style=thick,
+	every tick label/.append style={font=\footnotesize},
+	ymajorgrids,
+	grid style={dotted},
+	every node near coord/.append style={font=\scriptsize},
+	xticklabel style={rotate=90,anchor=east,/pgf/number format/1000 sep=},
+	scaled y ticks=false,
+	yticklabel style={/pgf/number format/fixed,/pgf/number format/1000 sep = \thinspace},
+	xmin=0,xmax=1,ymin=0,ymax=1,
+	y=1cm/0.15,
+	x=1cm/0.1,
+	x label style={at={(axis description cs:0.5,-0.05)},anchor=north},
+	xlabel={Population share},
+	ylabel={Income share},
+	legend style={at={(axis cs:0.025,0.95)},anchor=north west},
+	]
+	\addplot[datasetcolourone,ultra thick,mark=square*] table {
+		X	Y
+		0	0
+		0.2	0.04
+		0.4	0.15
+		0.6	0.34
+		0.8	0.60
+		1	1
+	};\addlegendentry {Gross income}
+	\addplot[datasetcolourtwo,ultra thick,mark=triangle*] table {
+		X	Y
+		0	0
+		0.2	0.054
+		0.4	0.189
+		0.6	0.405
+		0.8	0.662
+		1	1
+	};\addlegendentry {Income net of taxes}
+	\addplot[datasetcolourthree,ultra thick,mark=*] table {
+		X	Y
+		0	0
+		0.2	0.13
+		0.4	0.29
+		0.6	0.50
+		0.8	0.72
+		1	1
+	};\addlegendentry {Income net of taxes and benefits}
+	\end{axis}
+\end{tikzpicture}
+\end{center}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch13ex8}
+Here is a question on earnings profiles. Consider two individuals, each facing a 45 year horizon at the age of 20. Ivan decides to work immediately and his earnings path takes the following form: earnings $=20,000+1,000t-10t^2$, where the $t$ is time, and it takes on values from 1 to 25, reflecting the working lifespan.
+\begin{enumerate}
+	\item	In a spreadsheet enter values 1\dots 25 in the first column and then compute the value of earnings in each of the 45 years in the second column using the earnings equation.
+	\item	John decides to study some more and only earns a part-time salary in his first few years. He hopes that the additional earnings in future years will compensate for that. His function is given by $10,000+2,000t-12t^2$. Compute his earnings for his lifespan.
+	\item	Plot the two earnings functions you have computed. During what year does John pass Ivan?
+\end{enumerate}
+\begin{sol}
+	The profiles are shown in the figure below. John passes Ivan about year ten.
+	\begin{center}
+		\begin{tikzpicture}[background color=figurebkgdcolour,use background]
+		\begin{axis}[
+		axis line style=thick,
+		every tick label/.append style={font=\footnotesize},
+		ymajorgrids,
+		grid style={dotted},
+		every node near coord/.append style={font=\scriptsize},
+		xticklabel style={rotate=90,anchor=east,/pgf/number format/1000 sep=},
+		scaled y ticks=false,
+		yticklabel style={/pgf/number format/fixed,/pgf/number format/1000 sep = \thinspace},
+		xmin=0,xmax=30,ymin=0,ymax=60000,
+		y=1cm/9000,
+		x=1cm/4,
+		x label style={at={(axis description cs:0.5,-0.05)},anchor=north},
+		y label style={at={(axis description cs:-0.05,0.5)},anchor=south},
+		xlabel={Population share},
+		ylabel={Income share},
+		legend style={at={(axis cs:1,58000)},anchor=north west},
+		]
+		\addplot[datasetcolourone,ultra thick,domain=0:25] {20000 + 1000 * x - 10 * x^(2)};\addlegendentry {Ivan}
+		\addplot[datasetcolourtwo,ultra thick,domain=0:25]  {10000 + 2000 * x - 12 * x^(2)};\addlegendentry {John}
+		\end{axis}
+		\end{tikzpicture}
+	\end{center}
+\end{sol}
+\end{ex}
+
+% Closes solutions file for this chapter
+\Closesolutionfile{solutions}
+
+\end{enumialphparenastyle}

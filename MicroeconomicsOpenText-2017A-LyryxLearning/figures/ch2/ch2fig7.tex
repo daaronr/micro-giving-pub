@@ -1,0 +1,23 @@
+\begin{FigureBox}{1}{1}{25em}{Non-linearity: Driver fatality rates Canada, 2009 \label{fig:drivermortality}}{Fatality rates vary non-linearly with age: at first they decline, then increase again, relative to the youngest age group.}
+\begin{axis}[
+	%axis lines=left,
+	axis line style=thick,
+	every tick label/.append style={font=\footnotesize},
+	every node near coord/.append style={font=\scriptsize},
+	ybar,
+	enlargelimits=0.15,
+	legend style={at={(0,0)},
+	anchor=north},
+	ylabel={Fatalities per 100,000 drivers},
+	xlabel={Age},
+	x label style={at={(axis description cs:0.5,-0.05)},anchor=north},
+	symbolic x coords={16-19,20-24,25-34,35-44,45-54,55-64,65+},
+	xtick=data,
+	nodes near coords,
+	nodes near coords align={vertical},
+	x tick label style={rotate=45,anchor=east},
+]
+\addplot [datasetcolourthree,fill=datasetcolourthree!75] coordinates {(16-19,29.60891) (20-24,9.769972)
+(25-34,4.428567) (35-44,2.695895) (45-54,2.422606) (55-64,1.92685) (65+,2.883738)};
+\end{axis}
+\end{FigureBox}
