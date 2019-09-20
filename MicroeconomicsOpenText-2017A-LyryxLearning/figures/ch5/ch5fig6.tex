@@ -1,0 +1,18 @@
+\begin{FigureBox}{1.25}{1.75}{25em}{Positive externalities - the market for flu shots \label{fig:positiveext}}{The value to society of vaccinations exceeds the value to individuals: the greater the number of individuals vaccinated, the lower is the probability of others contracting the virus. $D_f$ reflects this additional value. Consequently, the social optimum is $Q^*$ which exceeds $Q_0$.}
+% supply line
+\draw [supplycolour,ultra thick,domain=0:5,name path=S] plot (\x, {1.5*(0.25*\x+0.5)}) node [black,mynode,above] {$S$};
+% demand lines
+\draw [demandcolour,ultra thick,domain=0:4,name path=Dp] plot (\x, {-0.5*\x+2}) node [black,mynode,above right] {$D$ (Private value)};
+\draw [demandcolour,ultra thick,domain=0:5,name path=Df] plot (\x, {-0.25*\x+2.5}) node [black,mynode,above right] {$D_f$ (Full social value)};
+% axes
+\draw [thick, -] (0,3) node (yaxis) [above] {Price} |- (6,0) node (xaxis) [mynode1,right] {Quantity};
+% intersection of demand and supply
+\draw [name intersections={of=S and Dp, by=P0Q0},name intersections={of=S and Df, by=Qstar}]
+	[dotted,thick] (yaxis |- P0Q0) node [mynode,left] {$P_0$} -| (xaxis -| P0Q0) node [mynode,below] {$Q_0$}
+	[dotted,thick] (Qstar) -- (xaxis -| Qstar) node [mynode,below] {$Q^{*}$};
+% path to create PstarQstar point of Dp line
+\path [name path=starline] (xaxis -| Qstar) -- (Qstar);
+% intersection of starline with Dp
+\draw [name intersections={of=starline and Dp, by=PstarQstar}]
+	[dotted,thick] (yaxis |- PstarQstar) node [mynode,left] {$P^{*}$} -- (PstarQstar);
+\end{FigureBox}

@@ -1,0 +1,21 @@
+\begin{FigureBox}{0.4}{0.3}{25em}{Simultaneous demand and supply shifts \label{fig:demandsupplyshift}}{The outward shift in supply dominates the outward shift in demand, leading to a new equilibrium $E_1$ at a lower price and higher quantity.}
+\draw [demandcolour,ultra thick,name path=demand0] (0,10) -- (10,0);
+\draw [demandcolour,ultra thick,name path=demand1] (0,13) -- (13,0);
+\draw [supplycolour,ultra thick,name path=supply0] (0.5,4.25) -- (10,9);
+\draw [supplycolour,ultra thick,name path=supply1] (2,2) -- (12,7);
+\draw [thick, -] (0,15) node (yaxis) [above] {Price} |- (15,0) node (xaxis) [right] {Quantity};
+% intersection of demand0 and supply0
+\draw [name intersections={of=supply0 and demand0,by=E0}]
+	[dotted,thick] (yaxis |- E0) node [mynode,left] {$P_0$} -- (E0) node [mynode,above] {$E_0$} -- (xaxis -| E0) node [mynode,below] {$Q_0$};
+% intersection of demand1 and supply1
+\draw [name intersections={of=supply1 and demand1,by=E1}]
+	[dotted,thick] (yaxis |- E1) node [mynode,left] {$P_1$} -- (E1) node [mynode,above] {$E_1$} -- (xaxis -| E1) node [mynode,below] {$Q_1$};
+% arrow between old and new demand
+\path [name path=demandline] (0,8) -- (7,13);
+\draw [name intersections={of=demandline and demand0,by=D0},name intersections={of=demandline and demand1,by=D1}]
+	[->,thick,shorten >=1mm,shorten <=1mm] (D0) -- (D1);
+% arrow between old and new supply
+\path [name path=supplyline] (5,12) -- (12,5);
+\draw [name intersections={of=supplyline and supply0,by=S0},name intersections={of=supplyline and supply1,by=S1}]
+	[->,thick,shorten >=1mm,shorten <=1mm] (S0) -- (S1);
+\end{FigureBox}

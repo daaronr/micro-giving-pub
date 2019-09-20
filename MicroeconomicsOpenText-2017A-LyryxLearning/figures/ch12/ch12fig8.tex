@@ -1,0 +1,18 @@
+\begin{FigureBox}{0.25}{0.25}{25em}{Capital adjustment in a small industry \label{fig:capitaladj}}{From the equilibrium $E_0$, a drop in the demand for capital services in a specific industry from $D_0$ to $D_1$ drives the return on its capital $K_0$ down to $R_1$. This is lower than the economy-wide return $R_0$. No new investment takes place in the sector; capital depreciates and the stock ultimately falls to $K_1$, where the return again equals $R_0$.}
+% supply lines
+\draw [supplycolour,ultra thick,name path=smallS] (8,0) node [black,mynode,below] {$K_1$} -- (8,10.1);
+\draw [supplycolour,ultra thick,name path=srS] (13,0) node [black,mynode,below] {$K_0$} -- (13,20) node [black,mynode,right] {Short-run supply};
+% demand lines
+\draw [demandcolour,ultra thick,name path=D0] (0,23) -- node [black,mynode,right,pos=0.1] {$D_0$} (23,0);
+\draw [demandcolour,ultra thick,name path=D1] (0,18) -- node [black,mynode,right,pos=0.1] {$D_1$} (18,0);
+% axes
+\draw [thick] (0,25) node (yaxis) [mynode1,above] {Rental\\Rate} |- (25,0) node (xaxis) [mynode1,right] {Capital\\Services};
+% intersection of demand and supply lines
+\draw [name intersections={of=D1 and smallS, by=E1},name intersections={of=D0 and srS, by=E0},name intersections={of=D1 and srS, by=R1K0}]
+	[dotted,thick] (yaxis |- E1) node [mynode,left] {$R_0$} -- (E1) node [mynode,above right] {$E_1$} -- (E0) node [mynode,above right] {$E_0$} -- ([xshift=-4cm]xaxis |- E0)
+	[dotted,thick] (yaxis |- R1K0) node [mynode,left] {$R_1$} -- (R1K0);
+% arrow between E0 and R1K0
+\draw [->,thick,shorten >=0.5mm,shorten <=2mm] ([xshift=0.4cm]E0) -- ([xshift=0.4cm]R1K0);
+% arrow between R1K0 and E1
+\draw [->,thick,shorten >=1.5mm,shorten <=2mm] ([xshift=0.25cm,yshift=0.25cm]R1K0) -- ([xshift=0.25cm,yshift=0.25cm]E1);
+\end{FigureBox}

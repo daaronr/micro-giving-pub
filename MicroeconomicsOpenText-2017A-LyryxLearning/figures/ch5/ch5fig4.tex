@@ -1,0 +1,20 @@
+\begin{FigureBox}{0.4}{0.5}{25em}{Taxation and labour supply \label{fig:taxationlaboursupply}}{The demand for labour is horizontal at $W_0$. A tax on labour reduces the wage paid to $W_t$. The loss in supplier surplus is the area $W_0E_0E_tW_t$. The government takes $W_0$B$E_tW_t$ in tax revenue, leaving B$E_0E_t$ as the DWL of the wage tax.}
+% supply line
+\draw [supplycolour,ultra thick,domain=0.3333:14,name path=S] plot (\x, {0.666*\x+0.333}) node [black,mynode,right] {$S$};
+% demand lines
+\draw [demandcolour,ultra thick,name path=Dt] (0,5) node [mynode,left,black] {$W_t$} -- (15,5) node [black,mynode,right] {$D_t$};
+\draw [demandcolour,ultra thick,name path=D] (0,7) node (W0) [mynode,left,black] {$W_0$} -- (15,7) node [black,mynode,right] {$D$};
+% axes
+\draw [thick, -] (0,10) node (yaxis) [above] {Wage} |- (15,0) node (xaxis) [right] {Labour};
+% intersection of demand and supply line
+\draw [name intersections={of=S and D, by=E0},name intersections={of=S and Dt, by=Et}]
+	[dotted,thick] (E0) node [mynode,above left] {$E_0$} -- (xaxis -| E0) node [mynode,below] {$L_0$}
+	[dotted,thick] (W0 -| Et) node (B) [mynode,above] {B} -- (Et) node [mynode,above left] {$E_t$} -- (xaxis -| Et) node [mynode,below] {$L_t$};
+% path to create arrow for wage tax
+\path [name path=wagetax] (1,0) -- +(0,10);
+% intersection of wagetax line with demand lines
+\draw [name intersections={of=wagetax and Dt, by=withtax},name intersections={of=wagetax and D, by=notax}]
+	[<->,thick,shorten >=0.5mm,shorten <=0.5mm] (withtax) -- node [mynode,right,midway] {Wage tax} (notax);
+% arrow for excess burden=deadweight loss=BE_0E_t
+\draw [<-,thick,shorten <=3.5mm] (B) -- +(4,-3) node [mynode,below right] {Excess burden\\= deadweight loss\\= B$E_0E_t$};
+\end{FigureBox}

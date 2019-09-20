@@ -1,0 +1,230 @@
+
+% Standard Colours
+\definecolor{grey}{HTML}{FAFAFA} %very light grey
+\definecolor{grey1}{HTML}{D8D8D8} %slightly darker than grey colour above
+\definecolor{grey2}{HTML}{BDBDBD} %darker grey than both greys above
+\definecolor{ccgrey}{HTML}{ABB3AC} % grey from creative commons website
+\definecolor{firstcolour}{HTML}{FAA21A} % yellow-orange
+\definecolor{firstcolour75}{HTML}{FBB953} % yellow-orange lightened by 25%
+\definecolor{firstcolour50}{HTML}{FDD18D} % yellow-orange lightened by 50%
+\definecolor{firstcolour25}{HTML}{FEE8C6} % yellow-orange lightened by 75%
+\definecolor{secondcolour}{HTML}{006795} %midnight blue
+\definecolor{secondcolour75}{HTML}{408DB0} %midnight blue lightened by 25%
+\definecolor{secondcolour50}{HTML}{80B3CA} %midnight blue lightened by 50%
+\definecolor{secondcolour25}{HTML}{BFD9E5} %midnight blue lightened by 75%
+\definecolor{secondcolour10}{HTML}{E6F0F5} %midnight blue lightened by 90%
+
+% Extra Colours
+\definecolor{thirdcolour}{HTML}{DDE9EC}
+\definecolor{fourthcolour}{HTML}{C4C4CE}
+\definecolor{fifthcolour}{HTML}{A9AFC7}
+\definecolor{sixthcolour}{HTML}{9FB8CD}
+\definecolor{seventhcolour}{HTML}{DBE296}
+\definecolor{eighthcolour}{HTML}{FBE093}
+\definecolor{ninthcolour}{HTML}{CAA496}
+\definecolor{tenthcolour}{HTML}{C1B0AB}
+\definecolor{eleventhcolour}{HTML}{D2DA7A}
+\definecolor{twelfthhcolour}{HTML}{B88472}
+
+
+%%%%%%
+% Semantic information
+\newcommand{\terminology}[1]{\textcolor{secondcolour}{\textbf{#1}}}
+
+
+%%%%%%
+% Chapter topics box
+\newenvironment{TBox}[0]
+{
+\begin{mdframed}[style=TBoxframe]
+}
+{
+\end{mdframed}
+}
+
+\global\mdfdefinestyle{TBoxframe}{userdefinedwidth=4in,linecolor=firstcolour,linewidth=2pt,backgroundcolor=firstcolour25,shadow=true,shadowsize=8pt,shadowcolor=grey1,innertopmargin=15pt,innerbottommargin=15pt,innerleftmargin=15pt,innerrightmargin=15pt,roundcorner=5pt}
+
+
+%%%%%%
+% Definition box
+\newenvironment{DBox}[0]
+{
+\begin{mdframed}[style=DBoxframe]
+}
+{
+\end{mdframed}
+}
+
+\global\mdfdefinestyle{DBoxframe}{fontcolor=secondcolour,linecolor=secondcolour,linewidth=1.5pt,backgroundcolor=grey,topline=false,bottomline=false,rightline=false,innertopmargin=2pt,innerbottommargin=2pt,innerleftmargin=2pt,innerrightmargin=2pt}
+
+
+%%%%%%
+% Box for Key Terms
+\newenvironment{KBox}[0]
+{
+\begin{mdframed}[style=KBoxframe]
+}
+{
+\end{mdframed}
+}
+
+\global\mdfdefinestyle{KBoxframe}{linecolor=secondcolour,linewidth=1.5pt,backgroundcolor=grey,innertopmargin=10pt,innerbottommargin=10pt,innerleftmargin=10pt,innerrightmargin=10pt,roundcorner=5pt,splittopskip=2\topsep,everyline=true}
+
+
+%%%%%%
+% Application Box
+\DeclareFloatingEnvironment[
+  fileext=los,
+  listname=Application Box,
+  name=Application Box,
+  placement=tbhp,
+  within=chapter,
+]{app}
+
+\newenvironment{ABox}[0]
+{
+\begin{mdframed}[style=ABoxframe]\itshape
+}
+{
+\end{mdframed}
+}
+
+\global\mdfdefinestyle{ABoxframe}{fontcolor=black,linecolor=secondcolour50,linewidth=1pt,backgroundcolor=secondcolour10,shadow=true,shadowsize=8pt,shadowcolor=grey1,innertopmargin=12pt,innerbottommargin=12pt,innerleftmargin=12pt,innerrightmargin=12pt,roundcorner=5pt}
+
+
+% Headers
+\chapterfont{\color{firstcolour}}
+\sectionfont{\color{firstcolour}}
+\subsectionfont{\color{firstcolour}}
+
+
+% Style of hyperlinks to sections in text and urls
+\hypersetup{
+        pdfborder=0 0 0,
+        colorlinks=true,
+        allcolors=secondcolour, % Default color
+        linkcolor=secondcolour, % Chapter/Section links, figures, tables, etc
+        urlcolor=secondcolour, % other urls
+}
+
+
+%%%%%%
+% Tikz figure box
+\NewDocumentEnvironment{FigureBox}{mmmmm}
+{
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[background color=grey,use background,xscale=#1,yscale=#2]
+}
+{
+\end{tikzpicture}
+\caption{#4}
+\captionsetup{singlelinecheck=off,font=scriptsize,width=#3}
+\caption*{#5}
+\end{figure}
+}
+
+% Define special Tikz environments
+\tikzset{
+	mynode/.style={
+		font=\scriptsize,
+		align=left,
+		execute at begin node=\setlength{\baselineskip}{-1em} 	% reduces space between lines of text
+	}
+}
+
+\tikzset{
+	mynode1/.style={
+		align=left,
+		execute at begin node=\setlength{\baselineskip}{-1em} 	% reduces space between lines of text
+	}
+}
+
+
+% Key to change background color in Tikz and pgfplot
+\pgfkeys{/tikz/.cd,
+  background color/.initial=graphicbackground,
+  background color/.get=\backcol,
+  background color/.store in=\backcol,
+}
+\tikzset{background rectangle/.style={
+    fill=\backcol,
+  },
+  use background/.style={    
+    show background rectangle
+  }
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% For the pie charts
+\tikzstyle{chart}=[
+    legend label/.style={font={\scriptsize},anchor=west,align=left},
+    legend box/.style={rectangle, draw, minimum size=5pt},
+    axis/.style={black,semithick,->},
+    axis label/.style={anchor=east,font={\tiny}},
+]
+
+\tikzstyle{pie chart}=[
+    chart,
+    slice/.style={line cap=round, line join=round, very thick,draw=white},
+    pie title/.style={font={\bf}},
+    slice type/.style 2 args={
+        ##1/.style={fill=##2},
+        values of ##1/.style={}
+    }
+]
+
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,main,foreground}
+
+
+\newcommand{\pie}[2][]{
+    \begin{scope}[#1]
+    \pgfmathsetmacro{\curA}{90}
+    \pgfmathsetmacro{\r}{1}
+    \def\c{(0,0)};
+    \foreach \v/\s in{#2}{
+        \pgfmathsetmacro{\deltaA}{\v/100*360}
+        \pgfmathsetmacro{\nextA}{\curA + \deltaA}
+        \pgfmathsetmacro{\midA}{(\curA+\nextA)/2}
+
+        \path[slice,\s] \c
+            -- +(\curA:\r)
+            arc (\curA:\nextA:\r)
+            -- cycle;
+        \pgfmathsetmacro{\d}{max((\deltaA * -(.5/50) + 1) , .5)}
+
+        \begin{pgfonlayer}{foreground}
+        \path \c -- node[pos=\d,pie values,values of \s]{$\v\%$} +(\midA:\r);
+        \end{pgfonlayer}
+
+        \global\let\curA\nextA
+    }
+    \end{scope}
+}
+
+\newcommand{\legend}[2][]{
+    \begin{scope}[#1]
+    \path
+        \foreach \n/\s in {#2}
+            {
+                  ++(0,-10pt) node[\s,legend box] {} +(5pt,0) node[legend label] {\n}
+            }
+    ;
+    \end{scope}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+% Convenient way to place a hidden coordinate anywhere in the text, which can be referenced
+% in tikz drawing commands later.
+\newcommand{\tikzcoordinate}[1]{\tikz[remember picture]{
+   \node[coordinate] (#1) {};
+}}

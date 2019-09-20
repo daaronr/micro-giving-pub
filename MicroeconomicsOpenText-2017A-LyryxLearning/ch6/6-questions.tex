@@ -1,0 +1,354 @@
+\newpage
+\section*{Exercises for Chapter~\ref{chap:individualchoice}}
+
+\begin{enumialphparenastyle}
+
+% Solutions file for exercises opened
+\Opensolutionfile{solutions}[solutions/ch6ex]
+
+\begin{ex}\label{ex:ch6ex1}
+In the example given in Table~\ref{table:utilsnowjazz}, suppose Neal experiences a small increase in income. Will he allocate it to snowboarding or jazz? [Hint: At the existing equilibrium, which activity will yield the higher MU for an additional dollar spent on it?]
+\begin{sol}
+	Since the additional utility per dollar spent on another unit of either activity is the same (1.2 units), he should be indifferent as to where he	spends it. However, if he gets an income increase that is sufficient to cover the purchase of one unit of the goods then snowboarding yields the highest $MU$ per dollar spent.
+	
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch6ex2}
+Suppose that utility depends on the square root of the amount of good $X$ consumed: $U=\sqrt{X}$.
+\begin{enumerate}
+	\item	In a spreadsheet enter the values 1\dots 25 in the $X$ column, and in the adjoining column compute the value of utility corresponding to each quantity of $X$. 
+	\item	In the third column enter the marginal utility ($MU$) associated with each value of $X$ -- the change in utility in going from one value of $X$ to the next.
+	\item	Use the `graph' tool to map the relationship between $U$ and $X$. 
+	\item	Use the graph tool to map the relationship between $MU$ and $X$. 
+\end{enumerate}
+\begin{sol}
+	The utility and marginal utility curves are given below.
+	\begin{center}
+	\begin{tikzpicture}[background color=figurebkgdcolour,use background]
+		\begin{axis}[
+		axis line style=thick,
+		every tick label/.append style={font=\footnotesize},
+		ymajorgrids,
+		grid style={dotted},
+		every node near coord/.append style={font=\scriptsize},
+		xticklabel style={rotate=90,anchor=east,/pgf/number format/1000 sep=},
+		scaled y ticks=false,
+		yticklabel style={/pgf/number format/fixed,/pgf/number format/1000 sep = \thinspace},
+		xmin=1,xmax=25,ymin=0,ymax=6,
+		y=1cm/1,
+		x=1cm/3,
+		x label style={at={(axis description cs:0.5,-0.02)},anchor=north},
+		y label style={at={(axis description cs:0.01,0.5)},anchor=north},
+		xlabel={$X$},
+		ylabel={$U$},
+		legend entries={Utility,Marginal Utility},
+		legend style={at={(axis cs:2,5.75)},anchor=north west},
+		]
+		\addplot[tucolour,ultra thick,mark=x] table {
+			X	Y
+			1	1
+			2	1.4142
+			3	1.73205
+			4	2
+			5	2.23607
+			6	2.44949
+			7	2.64575
+			8	2.82843
+			9	3
+			10	3.162277
+			11	3.316624
+			12	3.464102
+			13	3.605551
+			14	3.741657
+			15	3.872983
+			16	4
+			17	4.123105
+			18	4.242641
+			19	4.358899
+			20	4.472136
+			21	4.582576
+			22	4.690416
+			23	4.795832
+			24	4.898979
+			25	5
+		};
+		\addplot[mucolour,ultra thick,mark=x] table {
+				X	Y
+				1	0.5
+				2	0.4142
+				3	0.3178
+				4	0.2679
+				5	0.23607
+				6	0.2134
+				7	0.19626
+				8	0.1826
+				9	0.17157
+				10	0.1628
+				11	0.15434
+				12	0.1475
+				13	0.14145
+				14	0.13611
+				15	0.13132
+				16	0.127016
+				17	0.123105
+				18	0.119535
+				19	0.116258
+				20	0.113237
+				21	0.110439
+				22	0.10784
+				23	0.105416
+				24	0.103418
+				25	0.1010205
+		};
+		\end{axis}
+	\end{tikzpicture}
+	\end{center}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch6ex3}
+Cappuccinos, $C$, cost \$3 each, and music downloads of your favourite artist, $M$, cost \$1 each from your iTunes store. Income is \$24.
+\begin{enumerate}
+	\item	Draw the budget line to scale, with cappuccinos on the vertical axis, and compute its slope.
+	\item	If the price of cappuccinos rises to \$4, compute the new slope.
+	\item	At the initial set of prices, are the following combinations of goods in the affordable set: (4$C$ and 9$M$), (6$C$ and 2$M$), (3$C$ and 15$M$)?
+	\item	Which combination(s) in part (c) lie inside the affordable set, and which lie on the boundary? 
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	The cappuccino intercept is 8 and the $M$ intercept is 24. The slope is $-1/3$.
+	\item	New slope is $-1/4$.
+	\item	Yes, yes, yes.
+	\item	All lie inside.
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch6ex4}
+George spends his income on gasoline and ``other goods.''
+\begin{enumerate}
+	\item	First, draw a budget constraint, with gasoline on the horizontal axis. Then, illustrate by how much the intercept on the gasoline axis changes in response to a doubling of the price of gasoline.
+	\item	Suppose that, in addition to a higher price, the government imposes a \textit{ration} on George that limits his purchase of gasoline to less than some amount within his affordable set. Draw the new effective budget constraint.
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	Let $G$ be the initial intercept on the gasoline axis, then $1/2G$ is the new intercept.
+	\item	A vertical line at a point less than $1/2G$ reduces the feasible set to the area bounded by the new budget constraint (dashed line) and the vertical line $GQ$.
+\end{enumerate}
+\begin{center}
+	\begin{tikzpicture}[background color=figurebkgdcolour,use background,xscale=0.3,yscale=0.25]
+	\draw [thick] (0,20) node (yaxis) [mynode1,above] {Other} |- (25,0) node (xaxis) [mynode1,right] {Gas};
+	\draw [ultra thick,budgetcolour,name path=G] (0,19) -- (24,0) node [mynode,below,black] {$G$};
+	\draw [ultra thick,dashed,budgetcolour,name path=halfG] (0,19) -- (12,0) node [mynode,below,black] {$1/2G$};
+	\draw [ultra thick,supplycolour,name path=quota] (7,0) -- +(0,19) node [mynode,above,black] {$GQ=$gas quota};
+	\path [name path=arrowpath] (0,5) -- +(25,0);
+	\draw [name intersections={of=arrowpath and halfG, by=A}]
+	[<-,thick,shorten <=1mm] (A) to[out=10,in=270] +(8,5) node [mynode,above] {Budget constraint after\\doubling of gas price.};
+	\end{tikzpicture}
+\end{center}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch6ex5}
+Instead of the ration in Exercise~\ref{ex:ch6ex4}, suppose that the government increases taxes on gasoline, in addition to the market price increase. Illustrate this budget constraint.
+\begin{sol}
+	The new intercept on the gasoline axis will be less than $1/2G$.
+	
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch6ex6}
+The price of cappuccinos is \$3, the price of a theatre ticket is \$12, and consumer income is \$72.
+\begin{enumerate}
+	\item	In a graph with theatre tickets on the vertical axis and cappuccinos on the horizontal axis, draw the budget constraint to scale, marking the intercepts.
+	\item	Suppose the consumer chooses the combination of 4 theatre tickets and 8 cappuccinos. Draw such a point on the budget constraint and mark the affordable and non-affordable regions.
+	\item	Is the combination of 3 tickets and 24 cappuccinos affordable?
+	\item	Is the combination in part (c) preferred to, or less preferred than, the chosen point in part (b)?
+	\item	If the price of cappuccinos falls to \$2 per cup, is the combination of 24 cappuccinos and 3 tickets affordable?
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	The theatre ticket intercept is 6 and the cappuccino intercept is 24. See below.
+	\item	See below.
+	\item	No. The cost exceeds the budget.
+	\item	We cannot say without knowing the shape of the indifference curves. In this case the individual has more of one good and less of the other.
+	\item	No. The cost of such a combination would be \$84.
+\end{enumerate}
+\begin{center}
+	\begin{tikzpicture}[background color=figurebkgdcolour,use background,xscale=0.3,yscale=0.25]
+	\draw [thick] (0,20) node (yaxis) [mynode1,above] {Theatre} |- (25,0) node (xaxis) [mynode1,right] {Cappuccinos};
+	\draw [ultra thick,budgetcolour,name path=G] (0,18) node [mynode,left,black] {6} -- node [mynode,below left=2em and 2em,black] {Feasible region} node [mynode,above right=2em and 2em,black] {Non-feasible region} (24,0) node [mynode,below,black] {24};
+	\path [name path=int] (8,0) -- +(0,20);
+	\draw [name intersections={of=int and G, by=E}]
+	[<-,thick,shorten <=1mm] (E) -- +(2,3) node [mynode,right] {4$T$ \& 8$C$};
+	\end{tikzpicture}
+\end{center}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch6ex7}
+Suppose that you are told that the indifference curves defining the trade-off for two goods took the form of straight lines. Which of the four properties outlines in Section~\ref{sec:ordutility} would such indifference curves violate?
+\begin{sol}
+	They are not strictly convex to the origin, and so they do not display a diminishing marginal rate of substitution.
+	
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch6ex8}
+A student's income is \$50. Lunch at the cafeteria costs \$5, and movies at the Student Union cost \$2 each.
+\begin{enumerate}
+	\item	Draw the budget line to scale, with lunch on the vertical axis; insert some regular-shaped smooth convex indifference curves, and choose the tangency equilibrium, denoted by $E_0$. 
+	\item	If the price of lunch falls to \$2.50, draw the new budget line. What can be said about the new equilibrium relative to $E_0$ if both goods are normal? 
+	\item	If the price of movies also falls to \$1, draw the new budget line and illustrate a new equilibrium. 
+	\item	How does the equilibrium in part (c) differ from the equilibrium in part (b)?
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	The meals intercept is 10, and the movies intercept is 25.
+	\item	The meals intercept is now 20. More meals will be purchased, but we cannot say about movies -- it depends upon whether they are substitutes or complements for meals. However, the individual will reach a higher level of utility.
+	\item	The new movie intercept is 50. This budget line is parallel to the original line. Since both goods are normal then more of each will be consumed.
+	\item	In part (b) we cannot be sure that more of each good is consumed; in part (c) more of each must be consumed. Utility levels increase with each price reduction however.
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch6ex9}
+Lionel likes to eat a nice piece of Brie cheese while having a glass of wine. He has a monthly gourmet budget of \$120. In a diagram with wine on the vertical axis and cheese on the horizontal axis, suppose that the intercepts are 10 bottles on the wine axis and 4 kilos on the cheese axis. He is observed to purchase 5 bottles of wine and 2 kilos of cheese.
+\begin{enumerate}
+	\item	What are the prices of wine and cheese?
+	\item	Suppose that the price of wine increases to \$20 per bottle, but that Lionel's income simultaneously increases by \$60. Draw the new budget constraint and mark the intercepts.
+	\item	Is Lionel better off in the new or old situation? [Hint: ask if he can now afford the bundle he purchased with a lower income and lower wine price.]
+\end{enumerate}
+\begin{sol}
+	If Lionel can buy 10 bottles of wine for \$120, then each bottle must cost \$12. Similarly cheese must cost \$30 per kilo.
+	\begin{enumerate}
+		\item	The wine intercept must be 180/20=9. Similarly the cheese intercept must be 180/30=6.
+		\item	Yes, he can afford the original combination with the new budget constraint and still have \$20 remaining -- which he can spend on the goods.
+	\end{enumerate}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch6ex10}
+An indifference curve is a relationship between two goods, $X$ and $Y$, such that utility is constant. Consider the following indifference curve: $Y=12/X$. Since this can also be written as $12=XY$ then we can think of the value 12 as representing the utility level.
+\begin{enumerate}
+	\item	In a spreadsheet enter the values 1\dots 24 in the $X$ column, and in the adjoining $Y$ column compute the value of $Y$ corresponding to each value of $X$. 
+	\item	Use the graph function to map this indifference curve.
+	\item	Compute the MRS where $X$ increases from 3 to 4, and again where it increases from 15 to 16. [Hint: Since the MRS is the change in the amount of $Y$ that compensates for a change in the amount of $X$, you need simply calculate the changes in $Y$ corresponding to each of these changes in $X$.]
+\end{enumerate}
+\begin{sol}
+	Indifference curve is given below. When $x$ goes from 3 to 4, $y$ declines by 1 unit; when $x$ goes from 15 to 16, $y$ declines by 0.05.
+	\begin{center}
+	\begin{tikzpicture}[background color=figurebkgdcolour,use background,xscale=0.3,yscale=0.25]
+		\draw [thick] (0,20) node (yaxis) [mynode1,above] {$y$} |- (25,0) node (xaxis) [mynode1,right] {$x$};
+		\draw [ultra thick,indiffcolour,name path=Indiff,domain=0.6:25] plot (\x,{12/\x});
+		\path [name path=x3] (3,0) -- +(0,20);
+		\path [name path=x4] (4,0) -- +(0.20);
+		\draw [name intersections={of=x3 and Indiff, by=i1},name intersections={of=x4 and Indiff, by=i2}]
+			[dotted,thick] (yaxis |- i1) node [mynode,left] {4} -| (xaxis -| i1) node [mynode,below] {3}
+			[dotted,thick] (yaxis |- i2) node [mynode,left] {3} -| (xaxis -| i2) node [mynode,below] {4};
+	\end{tikzpicture}
+	\end{center}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch6ex11}
+Draw an indifference map with several indifference curves and several budget constraints corresponding to different possible levels of income. Note that these budget constraints should all be parallel because only income changes, not prices. Now find some optimizing (tangency) points. Join all of these points. You have just constructed what is called an income-consumption curve. Can you understand why it is called an income-consumption curve?
+\begin{sol}
+	See figure below.
+	\begin{center}
+	\begin{tikzpicture}[background color=figurebkgdcolour,use background,xscale=0.3,yscale=0.25]
+		\draw [thick,name path=L0] (0,13.55) -- (13,0);
+		\draw [thick,name path=L2] (0,7.55) -- (7,0);
+		\draw [thick,name path=L1] (0,19.55) -- (19,0);
+		% indifference curves
+		\draw [indiffcolour,ultra thick,name path=I2] (1,10) to [out=270,in=180] (10,1);
+		\draw [indiffcolour,ultra thick,name path=I0] (4,13) to [out=270,in=180] (13,4);
+		\draw [indiffcolour,ultra thick,name path=I1] (7,16) to [out=270,in=180] (16,7);
+		% axes
+		\draw [thick, -] (0,20) node (yaxis) [above] {$Y$} -- (0,0) -- (25,0) node (xaxis) [right] {$X$};
+		\draw [ultra thick] (1,1) -- (15,15) node [mynode,below right,pos=0.8] {Income consumption curve};
+	\end{tikzpicture}
+	\end{center}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch6ex12}
+Draw an indifference map again, in conjunction with a set of budget constraints. This time the budget constraints should each have a different price of good $X$ and the same price for good $Y$.
+\begin{enumerate}
+	\item	Draw in the resulting equilibria or tangencies and join up all of these points. You have just constructed a price-consumption curve for good $X$. Can you understand why the curve is so called?
+	\item	Now repeat part (a), but keep the price of $X$ constant and permit the price of $Y$ to vary. The resulting set of equilibrium points will form a price consumption curve for good $Y$.
+\end{enumerate}
+\begin{sol}
+	See the figure below. Part (b) will see the rotation point stay at the $X$ intercept.
+	\begin{center}
+	\begin{tikzpicture}[background color=figurebkgdcolour,use background,xscale=0.3,yscale=0.25]
+		\draw [thick,name path=L0] (0,13.55) -- (13,0);
+		\draw [thick,name path=L2] (0,13.55) -- (6.99032,0);
+		\draw [thick,name path=L1] (0,13.55) -- (25,1.9);
+		% indifference curves
+		\draw [indiffcolour,ultra thick,name path=I2] (3,10) to [out=270,in=180] (13,1);
+		\draw [indiffcolour,ultra thick,name path=I0] (4,13) to [out=270,in=180] (13,4);
+		\draw [indiffcolour,ultra thick,name path=I1] (5,17) to [out=270,in=180] (14,8);
+		% axes
+		\draw [thick, -] (0,20) node (yaxis) [above] {$Y$} -- (0,0) -- (25,0) node (xaxis) [right] {$X$};
+		\draw [ultra thick] (1,5) to[out=20,in=220] (16,13) node [mynode,above] {Price consumption curve for $X$};
+	\end{tikzpicture}
+	\end{center}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch6ex13}
+From the equilibrium based on the data in Table~\ref{table:utilsnowjazz}, let us compute some elasticities, using the midpoint formula that we developed in Chapter~\ref{chap:elasticities}. Suppose that the price of jazz falls to \$16 per outing, from the initial price of \$20. Income remains at \$200.
+\begin{enumerate}
+	\item	First compute Neal's new equilibrium -- by computing a new $MU/P$ schedule for jazz and reallocating his budget in a utility-maximizing fashion.
+	\item	What is his price elasticity of demand for jazz at this set of prices? [Hint: Once you compute the new quantity of jazz purchased you can compute the percentage change in quantity demanded. You also know the percentage change in the price of jazz, so you can now compute the ratio of these two numbers.]
+	\item	What is the cross-price elasticity of demand for snowboarding, with respect to the price of jazz, at this set of prices? [Hint: Calculate the percentage change in the number of snowboard visits to Whistler, relative to the percentage change in the price of jazz.]
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	His new marginal utility per dollar schedule is 3.25, 2.625, 2.125, 1.75, 1.5, 1.32, 1.19. Therefore his new equilibrium will be 4 snowboard outings and 5 jazz.
+	\item	When the price of jazz was \$20 he purchased 4 units of each. Using the mid-point elasticity formula, his jazz consumption has
+	increased by $1/4.5=22\%$, and the price of jazz decreased by $4/18=22\%$. Hence the elasticity is (minus) one.
+	\item	There has been no change in the purchase of snowboarding, therefore the cross price elasticity at this set of prices is zero.
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch6ex14}
+Suppose that movies are a normal good, but public transport is inferior. Draw an indifference map with a budget constraint and initial equilibrium. Now let income increase and draw a plausible new equilibrium, noting that one of the goods is inferior.
+\begin{sol}
+	With movies on the $Y$ axis and public transport on the $X$, the higher income equilibrium will lie to the north-west of the lower income equilibrium.
+	\begin{center}
+	\begin{tikzpicture}[background color=figurebkgdcolour,use background,xscale=0.3,yscale=0.25]
+		\draw [thick,name path=L0] (0,7.55) -- (15,0);
+		\draw [thick,name path=L1] (0,15.55) -- (23,0);
+		% indifference curves
+		\draw [indiffcolour,ultra thick,name path=I0] (4,11.15) to [out=270,in=180] (13,2.15);
+		\draw [indiffcolour,ultra thick,name path=I1] (2,19) to [out=270,in=180] (11,10);
+		% axes
+		\draw [thick] (0,20) node (yaxis) [above] {Movies} |- (25,0) node (xaxis) [mynode1,right] {Public\\transport};
+		\draw [name intersections={of=L0 and I0, by=e0}]
+			[<-,thick,shorten <=1mm] ([xshift=5em,yshift=3em]e0) -- +(5,5) node [mynode,right] {Initial equilibrium};
+		\draw [name intersections={of=L1 and I1, by=e1}]
+			[<-,thick,shorten <=1mm] (e1) -- +(5,5) node [mynode,right] {At higher income level less\\public transport is purchased};
+	\end{tikzpicture}
+	\end{center}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch6ex15}
+Consider the set of choices facing the consumer in Figures~\ref{fig:incometransfer}, \ref{fig:pricesubsidy}, and \ref{fig:subsidytransfercomp}. The parent chooses between other goods and daycare.
+\begin{enumerate}
+	\item	First, replicate this figure with one budget constraint and one indifference curve that together define a tangency (equilibrium) solution. 
+	\item	Suppose now that daycare is subsidized through a price reduction. Draw two possible equilibria, one where ``other goods'' purchased increase, and the second where they decrease. In which case are daycare and other goods substitutes? In which case are they complements?
+\end{enumerate}
+\begin{sol}
+	Where more `other goods' are purchased they are complements; where less of such goods are purchased they are substitutes.
+\end{sol}
+\end{ex}
+
+% Closes solutions file for this chapter
+\Closesolutionfile{solutions}
+
+\end{enumialphparenastyle}

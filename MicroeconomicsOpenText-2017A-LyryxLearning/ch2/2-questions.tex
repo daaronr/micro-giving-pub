@@ -1,0 +1,290 @@
+\newpage
+\section*{Exercises for Chapter~\ref{chap:tmd}}
+
+\begin{enumialphparenastyle}
+
+% Solutions file for exercises opened
+\Opensolutionfile{solutions}[solutions/ch2ex]
+
+\begin{ex}\label{ex:ch2ex1}
+An examination of a country's recent international trade flows yields the data in the table below.
+\begin{center}
+\begin{tabu} to 27em {|X[1,c]X[1,c]X[1,c]|}\hline
+\rowcolor{rowcolour}	\textbf{Year}	&	\textbf{National Income (\$b)}	&	\textbf{Imports (\$b)}	\\
+						2011			&	1,500							&	550						\\
+\rowcolor{rowcolour}	2012			&	1,575							&	573						\\
+						2013			&	1,701							&	610						\\
+\rowcolor{rowcolour}	2014			&	1,531							&	560						\\
+						2015			&	1,638							&	591						\\	\hline
+\end{tabu}
+\end{center}
+\begin{enumerate}
+	\item	Based on an examination of these data do you think the national income and imports are not related, positively related, or negatively related?
+	\item	Draw a simple two dimensional line diagram to illustrate your view of the import/income relationship. Measure income on the horizontal axis and imports on the vertical axis.
+\end{enumerate}
+\begin{sol}
+	These variables are positively related.
+	\begin{center}
+	\begin{tikzpicture}[background color=figurebkgdcolour,use background]
+	\begin{axis}[
+		axis line style=thick,
+		every tick label/.append style={font=\footnotesize},
+		ymajorgrids,
+		grid style={dotted},
+		every node near coord/.append style={font=\scriptsize},
+		xticklabel style={rotate=90,anchor=east,/pgf/number format/1000 sep=},
+		scaled y ticks=false,
+		yticklabel style={/pgf/number format/fixed,/pgf/number format/1000 sep = \thinspace},
+		xmin=1450,xmax=1750,ymin=540,ymax=620,
+		y=1cm/20,
+		x=1.5cm/50,
+		x label style={at={(axis description cs:0.5,-0.05)},anchor=north},
+		xlabel={Imports},
+		ylabel={National Income},
+	]
+	\addplot[datasetcolourone,ultra thick,mark=none] table {
+		X		Y
+		1500	550
+		1531	560
+		1575	573
+		1638	591
+		1701	610
+	};
+	\end{axis}
+	\end{tikzpicture}
+	\end{center}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch2ex2}
+The average price of a medium coffee at \textit{Wakeup Coffee Shop} in each of the past ten years is given in the table below.
+\begin{center}
+\begin{tabu} to \linewidth {|X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]|}	\hline
+\rowcolor{rowcolour}	2005	&	2006	&	2007	&	2008	&	2009	&	2010	&	2011	&	2012	&	2013	&	2014		\\
+\$1.05	&	\$1.10	&	\$1.14	&	\$1.20	&	\$1.25	&	\$1.25	&	\$1.33	&	\$1.35	&	\$1.45	&	\$1.49	\\	\hline
+\end{tabu}
+\end{center}
+\begin{enumerate}
+	\item	Construct an annual `coffee price index' for the 2005 time period using 2006 as the base year.
+	\item	Based on your price index, what was the percentage change in the price of a medium coffee from 2006 to 2013?
+	\item	Based on your index, what was the average annual percentage change in the price of coffee from 2010 to 2013?
+\end{enumerate}
+\begin{sol}
+	For (b) the answer is 32\%, and for (c) the answer is 5.26\%.
+	\begin{center}
+	\begin{tabu} to \linewidth {|X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]|}\hline
+	\rowcolor{rowcolour}\textbf{Year} & 2005 & 2006 & 2007 & 2008 & 2009 & 2010 & 2011 & 2012 & 2013 & 2014 \\
+	\textbf{Index}& 0.95 & 1.00 & 1.04 & 1.09 & 1.14 & 1.14 & 1.21 & 1.23 & 1.32 & 1.35 \\ \hline
+	\end{tabu}
+	\end{center}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch2ex3}
+The table below gives unemployment rates for big cities and the rest of the country. Two-thirds of the population lives in the big cities, and one-third in other areas. Construct a national unemployment index, using the year 2000 as the base.
+\begin{center}
+\begin{tabu} to 27em {|X[1,c]X[1,c]X[1,c]|}	\hline
+\multicolumn{3}{|c|}{\cellcolor{rowcolour}\textbf{Unemployment (\%)}}	\\	\hline
+						\textbf{Year}	&	\textbf{Big Cities}	&	\textbf{Other Areas}	\\
+\rowcolor{rowcolour}	2007			&	5					&	7						\\
+						2008			&	7					&	10						\\
+\rowcolor{rowcolour}	2009			&	8					&	9						\\
+						2010			&	10					&	12						\\
+\rowcolor{rowcolour}	2011			&	9					&	11						\\	\hline
+\end{tabu}
+\end{center}
+\begin{sol}
+	To find the national unemployment rate for each year you take a weighted average of the unemployment rate in the big cities and that in other areas. The weights used are the shares of population living in each area. In 2007, for example, the national unemployment rate would be: $\text{Big city rate}\times 0.67+\text{other rate}\times 0.33=5\times 0.67+7\times 0.33=5.67$. Hence:
+	\begin{center}
+	\begin{tabu} to 35em {|X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]|}	\hline
+		\rowcolor{rowcolour} \textbf{Year} & 2007 & 2008 & 2009 & 2010 & 2011 \\
+		\textbf{Index} & 5.67 & 7.99 & 8.33 & 10.67 & 9.67 \\ \hline
+	\end{tabu}
+	\end{center}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch2ex4}
+The prices in the following table below are for three components in a typical consumer's budget: transportation, rent, and food. You must construct an aggregate price index based on these three components on the assumption that rent accounts for 55 percent of the weight in this index, food for 35 percent, and transport for 10 percent. You should start by computing an index for each component, using year 1 as the base period.
+\begin{center}
+\begin{tabu} to \linewidth {|X[2.5,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]|}	\hline
+\rowcolor{rowcolour}		&	\textbf{Year 1}	&	\textbf{Year 2}	&	\textbf{Year 3}	&	\textbf{Year 4}	&	\textbf{Year 5}	\\
+\textbf{Transport \$}	&	70		&	70		&	75		&	75		&	75		\\
+\rowcolor{rowcolour}	\textbf{Rent \$}			&	1000	&	1000	&	1100	&	1120	&	1150	\\
+\textbf{Food \$}			&	600		&	620		&	610		&	640		&	660		\\	\hline
+\end{tabu}
+\end{center}
+\begin{sol}
+	For years 1 through 5 the index values for transport, rent and food are:
+	\begin{center}
+	\begin{tabu} to \linewidth {|X[1.25,l]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[4,c]|}	\hline
+		\rowcolor{rowcolour}	& Yr 1 & Yr 2 & Yr 3 & Yr 4 & Yr 5 & Weight in total expenditure \\
+		\textbf{Transport} & 100 & 100 & 107 & 107 & 107 & 10\% \\
+		\rowcolor{rowcolour}	\textbf{Rent} & 100 & 100 & 110 & 112 & 115 & 55\% \\
+		\textbf{Food} & 100 & 103 & 102 & 107 & 110 & 35\% \\ \hline
+	\end{tabu}
+	\end{center}
+	The aggregate price index is the weighted average of the component price indexes with weights equal to shares in total expenditure. For Year 1 the aggregate index is $(100\times 0.10+100\times 0.55+100\times 0.35)=100$. For years 2 through 5 this methodology gives aggregate price indexes of 101, 108, 110, 114.
+	
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch2ex5}
+The price of carrots per kilogram is given in the table below for several years, as is the corresponding CPI.
+\begin{center}
+\begin{tabu} to \linewidth {|X[2.5,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]|}	\hline
+\rowcolor{rowcolour}		&	\textbf{2000}	&	\textbf{2002}	&	\textbf{2004}	&	\textbf{2006}	&	\textbf{2008}	&	\textbf{2010}	\\
+\textbf{Nominal}	&	&	&	&	&	&	\\
+\rowcolor{rowcolour}	\textbf{Carrot Price \$}	&	2.60	&	2.90	&	3.30	&	3.30	&	3.10	&	3.00	\\
+\textbf{CPI}							&	110		&	112		&	115		&	117		&	120		&	124		\\	\hline
+\end{tabu}
+\end{center}
+\begin{enumerate}
+	\item	Compute a nominal price index for carrots using 2000 as the base period.
+	\item	Re-compute the CPI using 2000 as the base year.
+	\item	Construct a real price index for carrots.
+\end{enumerate}
+\begin{sol}
+	\begin{center}
+	\begin{tabu} to \linewidth {|X[2,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]|}	\hline
+		\rowcolor{rowcolour} & \textbf{2000} & \textbf{2002} & \textbf{2004} & \textbf{2006} & \textbf{2008} & \textbf{2010} \\
+		\textbf{Nominal} & 100 & 111.54 & 126.92 & 126.92 & 119.23 & 115.38 \\
+		\rowcolor{rowcolour}\textbf{Carrot price \$} & 2.6 & 2.9 & 3.3 & 3.3 & 3.1 & 3 \\
+		\textbf{CPI} & 110 & 112 & 115 & 117 & 120 & 124 \\
+		\rowcolor{rowcolour}\textbf{CPI new base} & 100 & 101.82 & 104.55 & 106.36 & 109.09 & 112.73 \\
+		\textbf{Real carrot index} & 100 & 109.55 & 121.40 & 119.33 & 109.29 & 102.36 \\ \hline
+	\end{tabu}
+	\end{center}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch2ex6}
+The following table shows hypothetical consumption spending by households and income of households in billions of dollars.
+\begin{center}
+\begin{tabu} to 27em {|X[1,c]X[1,c]X[1,c]|}	\hline
+\rowcolor{rowcolour}	\textbf{Year}	&	\textbf{Income}	&	\textbf{Consumption}	\\
+						2006			&	476				&	434						\\
+\rowcolor{rowcolour}	2007			&	482				&	447						\\
+						2008			&	495				&	454						\\
+\rowcolor{rowcolour}	2009			&	505				&	471						\\
+						2010			&	525				&	489						\\
+\rowcolor{rowcolour}	2011			&	539				&	509						\\
+						2012			&	550				&	530						\\
+\rowcolor{rowcolour}	2013			&	567				&	548						\\	\hline
+\end{tabu}
+\end{center}
+\begin{enumerate}
+	\item	Plot the scatter diagram with consumption on the vertical axis and income on the horizontal axis.
+	\item	Fit a line through these points.
+	\item	Does the line indicate that these two variables are related to each other?
+	\item	How would you describe the \textit{causal relationship} between income and consumption?
+\end{enumerate}
+\begin{sol}
+	The scatter diagram plots observed combinations of income and consumption as follows. For parts (c) and (d): the variables are positively related and the causation runs from income to consumption.
+	\begin{center}
+		\begin{tikzpicture}[background color=figurebkgdcolour,use background]
+		\begin{axis}[
+		axis line style=thick,
+		every tick label/.append style={font=\footnotesize},
+		extra y ticks={100,300,500},
+		ymajorgrids,
+		grid style={dotted},
+		every node near coord/.append style={font=\scriptsize},
+		xticklabel style={rotate=90,anchor=east,/pgf/number format/1000 sep=},
+		scaled y ticks=false,
+		yticklabel style={/pgf/number format/fixed,/pgf/number format/1000 sep = \thinspace},
+		xmin=460,xmax=580,ymin=0,ymax=600,
+		y=1cm/100,
+		x=1.75cm/20,
+		x label style={at={(axis description cs:0.5,-0.05)},anchor=north},
+		xlabel={Income},
+		ylabel={Consumption},
+		]
+		\addplot[datasetcolourone,ultra thick,mark=none] table {
+			X		Y
+			476		434
+			482		447
+			495		454
+			505		471
+			525		489
+			539		509
+			550		530
+			567		548
+		};
+		\end{axis}
+		\end{tikzpicture}
+	\end{center}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch2ex7}
+Using the data from Exercise~\ref{ex:ch2ex6}, compute the percentage change in consumption and the percentage change in income for each pair of adjoining years between 2006 and 2013.
+\begin{sol}
+	The percentage changes in income are:
+	\begin{center}
+		\begin{tabu} to \linewidth {|X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]|}	\hline
+			\rowcolor{rowcolour} \textbf{Pct Inc} & 1.3 & 2.7 & 2.0 & 4.0 & 2.7 & 2.0 & 3.1 \\
+			\textbf{Pct Con} & 3.0 & 1.6 & 3.7 & 3.8 & 4.1 & 4.1 & 3.4 \\ \hline
+		\end{tabu}
+	\end{center}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch2ex8}
+You are told that the relationship between two variables, $X$ and $Y$, has the form $Y=10+2X$. By trying different values for $X$ you can obtain the corresponding predicted value for $Y$ (e.g., if $X=3$, then $Y=10+2\times 3=16$). For values of $X$ between 0 and 12, compute the matching value of $Y$ and plot the scatter diagram.
+\begin{sol}
+	The relationship given by the equation $Y=10+2X$ when plotted has an intercept on the vertical ($Y$) axis of 10 and the slope of the line is 2. The maximum value of $Y$ (where $X$ is 12) is 34.
+	\begin{center}
+		\begin{tikzpicture}[background color=figurebkgdcolour,use background,xscale=0.5,yscale=0.15]
+		\draw [thick] (0,40) node (yaxis) [mynode1,above] {$Y$} |- (15,0) node (xaxis) [mynode1,right] {$X$};
+		\draw [ultra thick,supplycolour,name path=Y102X] (0,10) node [mynode,left,black] {10} -- (13,36) node [mynode,above,black] {$Y=10+2X$};
+		\draw [ultra thick,dashed,demandcolour,name path=Y1005X] (0,10) -- (15,2.5) node [mynode,right,black] {$Y=10-0.5X$};
+		\draw [ultra thick,dashed,demandcolour,name path=Y4] (0,4) node [mynode,left,black] {4} -- (15,4);
+		\path [name path=Y22] (0,22) -- +(15,0);
+		\path [name path=Y34] (0,34) -- +(15,0);
+		\draw [name intersections={of=Y22 and Y102X, by=i1},name intersections={of=Y34 and Y102X, by=i2}]
+		[dotted,thick] (yaxis |- i1) node [mynode,left] {22} -| (xaxis -| i1) node [mynode,below] {6}
+		[dotted,thick] (yaxis |- i2) node [mynode,left] {34} -| (xaxis -| i2) node [mynode,below] {12};	
+		\end{tikzpicture}
+	\end{center}
+	\begin{center}
+		\begin{tabu} to \linewidth {|X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]|}	\hline
+			\rowcolor{rowcolour} \textbf{X} & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\
+			\textbf{Y} & 10 & 12 & 14 & 16 & 18 & 20 & 22 & 24 & 26 & 28 & 30 & 32 & 34 \\ \hline
+		\end{tabu}
+	\end{center}
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch2ex9}
+Perform the same exercise as in Exercise~\ref{ex:ch2ex8}, but use the formula $Y=10-0.5X$. What do you notice about the slope of the relationship?
+\begin{sol}
+	The relationship $Y=10-0.5X$ has a $Y$ intercept of 10 but there is now a negative slope equal to one half ($-0.5$). When $X$ has a value of 12, $Y$ has a value of 4. If you plot this in the diagram for Exercise~\ref{ex:ch2ex8} it is the dashed line sloping downward from 10 to 4 at $X=12$.
+	
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ch2ex10}
+For the data below, plot a scatter diagram with variable $Y$ on the vertical axis and variable $X$ on the horizontal axis.
+\begin{center}
+\begin{tabu} to 27em {|X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]X[1,c]|}	\hline
+\rowcolor{rowcolour}	\textbf{Y}	&	40	&	33	&	29	&	56	&	81	&	19	&	20	\\
+						\textbf{X}	&	5	&	7	&	9	&	3	&	1	&	11	&	10	\\	\hline
+\end{tabu}
+\end{center}
+\begin{enumerate}
+	\item	Is the relationship between the variables positive or negative?
+	\item	Do you think that a linear or non-linear line better describes the relationship?
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	The relationship is negative.
+	\item	The relationship is non-linear.
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+% Closes solutions file for this chapter
+\Closesolutionfile{solutions}
+
+\end{enumialphparenastyle}
