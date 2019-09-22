@@ -1,0 +1,1277 @@
+\chapter{Iterated dominance and Nash equilibrium}
+\label{2nash}
+
+In the previous chapter we examined simultaneous move games in which each player had a dominant strategy; the Prisoner's Dilemma game was one example. In many games, however, one or more players do not have dominant strategies. This chapter explores two solution concepts that we can use to analyze such games.
+
+The first solution concept, iterated dominance, is a \textbf{refinement} of the dominant strategies approach from the previous chapter, meaning that iterated dominance is a stronger technique that builds upon (or refines) the results of the dominant strategies approach. In other words: the idea of dominant strategies often allows us to narrow down our prediction for the outcome of a game; iterated dominance allows us to narrow down our prediction at least as far, and sometimes further.
+
+Unfortunately, this extra strength does not come for free. While dominant strategies is a reasonably simple idea, iterated dominance is (while not exactly a Nobel-prize-winning concept) one step closer to rocket science. As such, it requires more powerful assumptions about the intellectual capabilities of the optimizing individuals who are playing the games.
+
+The second solution concept in this chapter, Nash equilibrium, is a refinement of iterated dominance: Nash equilibrium allows us to narrow down our prediction at least as far as iterated dominance, and sometimes further. Again, this extra strength does not come for free. Nonetheless, Nash equilibrium is one of the central concepts in the study of strategic behavior---a fact which helps explain why Nash equilibrium \emph{is} a Nobel-prize-winning concept.
+
+
+
+
+\section{Iterated dominance}
+
+The transition from dominant strategies to iterated dominance involves two ideas. The first is this: even when a player doesn't have a dominant strategy (i.e., a \emph{best} strategy, regardless of what the other players do), that player might still have one strategy that dominates another (i.e., a strategy A that is \emph{better} than strategy B, regardless of what the other players do). As suggested by the terms ``best" and ``better", the difference here is between a superlative statement (e.g., ``Jane is the best athlete in the class") and a comparative statement (``Jane is a better athlete than Ted"); because comparatives are weaker statements, we can use them in situations where we might not be able to use superlatives.
+
+For example, consider the game in Figure~\ref{comparative1}. First note that there are no strictly dominant strategies in this game: U is not the best strategy for Player 1 if Player 2 plays L or C, M is not the best strategy for Player 1 if Player 2 plays R, and D is not the best strategy for Player 1 if Player 2 plays L or C. Similarly, L is not the best strategy for Player 2 if Player 1 plays U or D, C is not the best strategy for Player 2 if Player 1 plays M, and R is not the best strategy for Player 2 if Player 1 plays U, M, or D.
+
+Although there are no strictly dominant strategies, we can see that no matter what Player 1 does, Player 2 always gets a higher payoff from playing L than from playing R. We can therefore say that L \textbf{strictly dominates}\index{dominance!strict} R for Player 2, or that R is \textbf{strictly dominated} by L for Player 2. (Note that we cannot say that L is a \textbf{strictly dominant} strategy for Player 2---it does not dominate C---but we can say that R is a \textbf{strictly dominated} strategy for Player 2: an optimizing Player 2 would \emph{never} play R.)
+
+\begin{figure}[b]
+\begin{center}
+\begin{tabular}{crccc}
+& & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+& & L & C & R \\ \cline{3-5}
+\multirow{3}{1.5cm}{Player 1}
+& U & \multicolumn{1}{|c|}{1, 10} & \multicolumn{1}{c}{3, 20} & \multicolumn{1}{|c|}{40, 0} \\ \cline{3-5}
+& M & \multicolumn{1}{|c|}{10, 20} & \multicolumn{1}{c}{50, -10} & \multicolumn{1}{|c|}{6, 0} \\ \cline{3-5}
+& D & \multicolumn{1}{|c|}{2, 20} & \multicolumn{1}{c}{4, 40} & \multicolumn{1}{|c|}{10, 0} \\ \cline{3-5}
+\end{tabular}
+\end{center}
+\caption{A game without dominant strategies}
+\label{comparative1} % Figure~\ref{game:dominance1}
+\end{figure}
+
+
+The second idea in the transition from dominant strategies to iterated dominance is similar to the backward induction idea of anticipating your opponents' moves: players should recognize that other players have strictly dominated strategies, and should act accordingly. In our example, Player 1 should recognize that R is a strictly dominated strategy for Player 2, and therefore that there is no chance that Player 2 will play R. In effect, the game now looks like that shown in Figure~\ref{comparative2} on the next page: the lines through the payoffs in the R column indicate that both players know that these payoffs have no chance of occurring because R is not a viable strategy for Player 2.
+
+\begin{figure}%[b]
+\begin{center}
+\begin{tabular}{crccc}
+& & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+& & L & C & R \\ \cline{3-5}
+\multirow{3}{1.5cm}{Player 1}
+& U & \multicolumn{1}{|c|}{1, 10} & \multicolumn{1}{c}{3, 20} & \multicolumn{1}{|c|}{\xout{40, 0}} \\ \cline{3-5}
+& M & \multicolumn{1}{|c|}{10, 20} & \multicolumn{1}{c}{50, -10} & \multicolumn{1}{|c|}{\xout{6, 0}} \\ \cline{3-5}
+& D & \multicolumn{1}{|c|}{2, 20} & \multicolumn{1}{c}{4, 40} & \multicolumn{1}{|c|}{\xout{10, 0}} \\ \cline{3-5}
+\end{tabular}
+\end{center}
+\caption{Eliminating R, which is strictly dominated by L for Player 2}
+\label{comparative2} % Figure~\ref{game:dominance1}
+\end{figure}
+
+But now we see that Player 1 has an obvious strategy: given that Player 2 is never going to play R, Player 1 should always play M. Once R is out of the way, U and D are both dominated by M for Player 1: regardless of whether Player 2 plays L or C, Player 1 always gets his highest payoff by playing M. This is the idea of \textbf{iteration}, i.e., repetition. Combining this with the idea of dominated strategies gives us the process of \textbf{iterated dominance}\index{dominance!iterated}: starting with the game in Figure~\ref{comparative1}, we look for a strictly dominated strategy; having found one (R), we eliminate it, giving us the game in Figure~\ref{comparative2}. We then repeat the process, looking for a strictly dominated strategy in that game; having found one (or, actually two: U and D), we eliminate them. A final iteration would yield (M, L) as a prediction for this game: knowing that Player 1 will always play M, Player 2 should always play L.
+
+
+
+\subsubsection*{A complete example}
+
+Consider the game in Figure~\ref{game:dominance1} below. There are no strictly dominant strategies, but there is a strictly dominated strategy: playing U is strictly dominated by D for Player 1. We can conclude that Player 1 will never play U, and so our game reduces to the matrix in Figure~\ref{game:dominance2a} on the next page.
+
+
+
+\begin{figure}[b]
+\begin{center}
+\begin{tabular}{crccc}
+& & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+& & L & C & R \\ \cline{3-5}
+\multirow{3}{1.5cm}{Player 1}
+& U & \multicolumn{1}{|c|}{1,1} & \multicolumn{1}{c}{2,0} & \multicolumn{1}{|c|}{2,2} \\ \cline{3-5}
+& M & \multicolumn{1}{|c|}{0,3} & \multicolumn{1}{c}{1,5} & \multicolumn{1}{|c|}{4,4} \\ \cline{3-5}
+& D & \multicolumn{1}{|c|}{2,4} & \multicolumn{1}{c}{3,6} & \multicolumn{1}{|c|}{3,0} \\ \cline{3-5}
+\end{tabular}
+\end{center}
+\caption{Iterated strict dominance example}
+\label{game:dominance1} % Figure~\ref{game:dominance1}
+\end{figure}
+
+%Player 1                                       Player 2
+%       L   C   R
+%   U   1, 1    2, 0    2, 2
+%   M   0, 3    1, 5    4, 4
+%   D   2, 4    3, 6    3, 0
+
+
+But Player 2 should know that Player 1 will never play U, and if Player 1 never plays U then some of Player 2's strategies are strictly dominated! Namely, playing L and playing R are both strictly dominated by playing C as long as Player 1 never plays U. So we can eliminate those strategies for Player 2, yielding the matrix in Figure~\ref{game:dominance2b}. Finally, Player 1 should anticipate that Player 2 (anticipating that Player 1 will never play U) will never play L or R, and so Player 1 should conclude that M is strictly dominated by D (the matrix in Figure~\ref{game:dominance2c}). Using iterated strict dominance, then, we can predict that Player 1 will choose D and Player 2 will choose C.
+
+
+
+\begin{figure}%[b]
+\centering
+\hspace{.5cm}
+\subfigure[]
+{\label{game:dominance2a}
+\begin{pspicture}(-3,0)(3,4)
+\rput(-1,2)
+{
+\begin{tabular}{rccc}
+ & L & C & R \\ \cline{2-4}
+ U & \multicolumn{1}{|c|}{\xout{1,1}} & \multicolumn{1}{c}{\xout{2,0}} & \multicolumn{1}{|c|}{\xout{2,2}} \\ \cline{2-4}
+ M & \multicolumn{1}{|c|}{0,3} & \multicolumn{1}{c}{1,5} & \multicolumn{1}{|c|}{4,4} \\ \cline{2-4}
+ D & \multicolumn{1}{|c|}{2,4} & \multicolumn{1}{c}{3,6} & \multicolumn{1}{|c|}{3,0} \\ \cline{2-4}
+\end{tabular}
+}
+\end{pspicture}
+}%
+\hspace{.5cm}
+%
+\subfigure[]
+{\label{game:dominance2b}
+\begin{pspicture}(-3,0)(3,4)
+\rput(-1,2)
+{
+\begin{tabular}{rccc}
+ & L & C & R \\ \cline{2-4}
+ U & \multicolumn{1}{|c|}{\xout{1,1}} & \multicolumn{1}{c}{\xout{2,0}} & \multicolumn{1}{|c|}{\xout{2,2}} \\ \cline{2-4}
+ M & \multicolumn{1}{|c|}{\xout{0,3}} & \multicolumn{1}{c}{1,5} & \multicolumn{1}{|c|}{\xout{4,4}} \\ \cline{2-4}
+ D & \multicolumn{1}{|c|}{\xout{2,4}} & \multicolumn{1}{c}{3,6} & \multicolumn{1}{|c|}{\xout{3,0}} \\ \cline{2-4}
+\end{tabular}
+}
+\end{pspicture}
+}
+%
+\hspace{.5cm}
+%
+\subfigure[]
+{\label{game:dominance2c}
+\begin{pspicture}(-3,0)(3,4)
+\rput(-1,2)
+{
+\begin{tabular}{rccc}
+ & L & C & R \\ \cline{2-4}
+ U & \multicolumn{1}{|c|}{\xout{1,1}} & \multicolumn{1}{c}{\xout{2,0}} & \multicolumn{1}{|c|}{\xout{2,2}} \\ \cline{2-4}
+ M & \multicolumn{1}{|c|}{\xout{0,3}} & \multicolumn{1}{c}{\xout{1,5}} & \multicolumn{1}{|c|}{\xout{4,4}} \\ \cline{2-4}
+ D & \multicolumn{1}{|c|}{\xout{2,4}} & \multicolumn{1}{c}{3,6} & \multicolumn{1}{|c|}{\xout{3,0}} \\ \cline{2-4}
+\end{tabular}
+}
+\end{pspicture}
+}
+\caption{Solution to iterated strict dominance example}
+\label{game:dominance2} % Figure~\ref{game:dominance2}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+\begin{comment} % OLD OLD OLD ! June 2002
+\begin{figure}%[b]
+\begin{pspicture}(0,0)(0,5)
+\rput(3,2.5)
+{
+\begin{tabular}{rccc}
+ & L & C & R \\ \cline{2-4}
+ U & \multicolumn{1}{|c|}{\xout{1,1}} & \multicolumn{1}{c}{\xout{2,0}} & \multicolumn{1}{|c|}{\xout{2,2}} \\ \cline{2-4}
+ M & \multicolumn{1}{|c|}{0,3} & \multicolumn{1}{c}{1,5} & \multicolumn{1}{|c|}{4,4} \\ \cline{2-4}
+ D & \multicolumn{1}{|c|}{2,4} & \multicolumn{1}{c}{3,6} & \multicolumn{1}{|c|}{3,0} \\ \cline{2-4}
+\end{tabular}
+}
+
+\rput(11.5,2.5)
+{
+\begin{tabular}{rccc}
+ & L & C & R \\ \cline{2-4}
+ U & \multicolumn{1}{|c|}{\xout{1,1}} & \multicolumn{1}{c}{\xout{2,0}} & \multicolumn{1}{|c|}{\xout{2,2}} \\ \cline{2-4}
+ M & \multicolumn{1}{|c|}{\xout{0,3}} & \multicolumn{1}{c}{1,5} & \multicolumn{1}{|c|}{\xout{4,4}} \\ \cline{2-4}
+ D & \multicolumn{1}{|c|}{\xout{2,4}} & \multicolumn{1}{c}{3,6} & \multicolumn{1}{|c|}{\xout{3,0}} \\ \cline{2-4}
+\end{tabular}
+}
+
+\rput(20,2.5)
+{
+\begin{tabular}{rccc}
+ & L & C & R \\ \cline{2-4}
+ U & \multicolumn{1}{|c|}{\xout{1,1}} & \multicolumn{1}{c}{\xout{2,0}} & \multicolumn{1}{|c|}{\xout{2,2}} \\ \cline{2-4}
+ M & \multicolumn{1}{|c|}{\xout{0,3}} & \multicolumn{1}{c}{\xout{1,5}} & \multicolumn{1}{|c|}{\xout{4,4}} \\ \cline{2-4}
+ D & \multicolumn{1}{|c|}{\xout{2,4}} & \multicolumn{1}{c}{3,6} & \multicolumn{1}{|c|}{\xout{3,0}} \\ \cline{2-4}
+\end{tabular}
+}
+
+\end{pspicture}
+\caption{Solution to iterated strict dominance example}
+\label{game:dominance2} % Figure~\ref{game:dominance2}
+\end{figure}
+\end{comment} % OLD OLD OLD ! June 2002
+
+
+
+
+
+
+ \subsubsection{Question\rm : Does the order of elimination matter?}
+
+\noindent Answer: Although it is not obvious, the end result of iterated strict dominance is always the same regardless of the sequence of eliminations. In other words, if in some game you can either eliminate U for Player 1 or L for Player 2, you don't need to worry about which one to ``do first": either way you'll end up at the same answer.
+
+A side note here is that this result only holds under iterated \textbf{strict} dominance, according to which we eliminate a strategy only if there is some other strategy that yields payoffs that are \emph{strictly higher} no matter what the other players do. If you eliminate a strategy when there is some other strategy that yields payoffs that are \emph{higher or equal} no matter what the other players do, you are doing iterated \textbf{weak} dominance\index{dominance!weak}, and in this case you will \emph{not} always get the same answer regardless of the sequence of eliminations. (For an example see problem~\ref{weakdom}.) This is a serious problem, and helps explain why we focus on iterated strict dominance.
+
+
+
+
+
+
+
+
+
+
+
+\section{Nash equilibrium}
+
+Tenuous as it may seem, iterated strict dominance is not a very strong solution concept, meaning that it does not yield predictions in many games. An example is the game in Figure~\ref{game:nash1}: there are no strictly dominant strategies and no strictly dominated strategies.
+
+
+
+\begin{figure}[b]
+\begin{center}
+\begin{tabular}{crccc}
+& & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+& & L & C & R \\ \cline{3-5}
+\multirow{3}{1.5cm}{Player 1}
+& U & \multicolumn{1}{|c|}{5,1} & \multicolumn{1}{c}{2,0} & \multicolumn{1}{|c|}{2,2} \\ \cline{3-5}
+& M & \multicolumn{1}{|c|}{0,4} & \multicolumn{1}{c}{1,5} & \multicolumn{1}{|c|}{4,5} \\ \cline{3-5}
+& D & \multicolumn{1}{|c|}{2,4} & \multicolumn{1}{c}{3,6} & \multicolumn{1}{|c|}{1,0} \\ \cline{3-5}
+\end{tabular}
+\end{center}
+\caption{Nash equilibrium example}
+\label{game:nash1} % Figure~\ref{game:nash1}
+\end{figure}
+
+%Player 1                                       Player 2
+%       L   C   R
+%   U   5, 1    2, 0    2, 2
+%   M   0, 4    1, 5    4, 5
+%   D   2, 4    3, 6    1, 0
+
+
+So game theorists have come up with other solution concepts. The most important one is called \textbf{Nash equilibrium}\index{Nash equilibrium}\index{equilibrium!Nash} (abbreviated NE). A Nash equilibrium occurs when the strategies of the various players are best responses to each other. Equivalently but in other words: given the strategies of the other players, each player is acting optimally. Equivalently again: No player can gain by deviating alone, i.e., by changing his or her strategy single-handedly.
+
+In the game in Figure~\ref{game:nash1}, the strategies (D, C) form a Nash equilibrium: if Player 1 plays D, Player 2 gets her best payoff by playing C; and if Player 2 plays C, Player 1 gets his best payoff by playing D. So the players' strategies are best responses to each other; equivalently, no player can gain by deviating alone. (Question: Are there any other Nash equilibria in this game?)
+
+% YORAM: HOMEWORK PROBLEM: SHOW THAT BACKWARD INDUCTION IS A NASH EQUILIBRIUM
+
+
+
+
+
+
+\subsection*{Algorithms for finding Nash equilibria}
+\index{Nash equilibrium!algorithms for finding|(}
+
+The best way to identify the Nash equilibria of a game is to first identify all of the outcomes that are \emph{not} Nash equilibria; anything left must be a Nash equilibrium. For example, consider the game in Figure~\ref{game:nash1}. The strategy pair (U, L) is not a Nash equilibrium because Player 2 can gain by deviating alone to R; (U, C) is not a NE because Player 1 can gain by deviating alone to D (and Player 2 can gain by deviating alone to L or R); etc. If you go through the options one by one and cross out those that are \textit{not} Nash equilibria, the remaining options \textit{will} be Nash equilibria (See Figure~\ref{game:nash2a}).
+
+A shortcut (but one you should use carefully!) is to underline each player's best responses.\footnote{It is easy to confuse the rows and columns and end up underlining the wrong things. Always double-check your answers by confirming that no player can gain by deviating alone.} To apply this to the game in Figure~\ref{game:nash1}, first assume that Player 2 plays L; Player 1's best response is to play U, so underline the ``5" in the box corresponding to (U, L). Next assume that Player 2 plays C; Player 1's best response is to play D, so underline the ``3" in the box corresponding to (D, C). Finally, assume that Player 2 plays R; Player 1's best response is to play M, so underline the ``4" in the box corresponding to (M, R). Now do the same thing for Player 2: go through all of Player 1's options and underline the best response for Player 2. (Note that C and R are both best responses when Player 1 plays M!) We end up with Figure~\ref{game:nash2b}: the only boxes with both payoffs underlined are (D, C) and (M, R), the Nash equilibria of the game. \enlargethispage{\baselineskip}
+
+\begin{figure}[h]
+\centering
+\hspace{.5cm}
+\subfigure[]
+{\label{game:nash2a}
+\begin{pspicture}(-3,0)(3,4)
+\rput(-1, 2)
+{
+\begin{tabular}{rccc}
+% & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+ & L & C & R \\ \cline{2-4}
+ U & \multicolumn{1}{|c|}{\xout{5,1}} & \multicolumn{1}{c}{\xout{2,0}} & \multicolumn{1}{|c|}{\xout{2,2}} \\ \cline{2-4}
+ M & \multicolumn{1}{|c|}{\xout{0,4}} & \multicolumn{1}{c}{\xout{1,5}} & \multicolumn{1}{|c|}{4,5} \\ \cline{2-4}
+ D & \multicolumn{1}{|c|}{\xout{2,4}} & \multicolumn{1}{c}{3,6} & \multicolumn{1}{|c|}{\xout{1,0}} \\ \cline{2-4}
+\end{tabular}
+}
+\end{pspicture}
+}
+%
+\hspace{1cm}
+%
+\subfigure[]
+{\label{game:nash2b}
+\begin{pspicture}(-3,0)(3,4)
+\rput(-1, 2)
+{
+\begin{tabular}{rccc}
+% & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+ & L & C & R \\ \cline{2-4}
+ U & \multicolumn{1}{|c|}{\underline{5},1} & \multicolumn{1}{c}{2,0} & \multicolumn{1}{|c|}{2,\underline{2}} \\ \cline{2-4}
+ M & \multicolumn{1}{|c|}{0,4} & \multicolumn{1}{c}{1,\underline{5}} & \multicolumn{1}{|c|}{\underline{4},\underline{5}} \\ \cline{2-4}
+ D & \multicolumn{1}{|c|}{2,4} & \multicolumn{1}{c}{\underline{3},\underline{6}} & \multicolumn{1}{|c|}{1,0} \\ \cline{2-4}
+\end{tabular}
+}
+\end{pspicture}
+}
+\caption{Finding Nash equilibria: (a) with strike-outs; (b) with underlinings}
+\label{game:nash2} % Figure~\ref{game:nash2}
+\end{figure}
+
+
+%Player 1                                       Player 2
+%       L   C   R
+%   U   5, 1    2, 0    2, 2
+%   M   0, 4    1, 5    4, 5
+%   D   2, 4    3, 6    1, 0
+
+
+
+\index{Nash equilibrium!algorithms for finding|)}
+
+\subsection*{Some history}
+
+Nash equilibrium is one of the fundamental concepts of game theory. It is named after John Nash,\index{Nash, John} a mathematician born in the early part of this century. He came up with his equilibrium concept while getting his Ph.D. in mathematics at Princeton, then got a professorship at MIT, then became mentally ill---e.g., claimed that aliens were sending him coded messages on the front page of the \emph{New York Times}---then spent many years in and out of various mental institutions, then slowly got on the road to recovery, then won the Nobel Prize in Economics\index{Nobel Prize!Nash, John} in 1994, and now spends his time at Princeton playing with computers. You can read more about him in a fun book called \textit{A Beautiful Mind} by Sylvia Nasar.\footnote{There is also a movie of the same name, starring Russell Crowe.\index{Crowe, Russell} Unfortunately, it takes some liberties with the truth; it also does a lousy job of describing the Nash equilibrium concept.}\index{Nasar, Sylvia}
+
+
+
+
+
+
+
+
+\section{Infinitely repeated games}\index{games!infinitely repeated}\index{repeated games!infinitely}
+\label{infinitecooperation}
+
+We saw in the last chapter that there's no potential for cooperation (at least in theory) if we play the Prisoner's Dilemma game twice, or 50 times, or 50 million times. What about infinitely many times? To examine this possibility, we will look at the Prisoners' Dilemma game in Figure~\ref{game:prisoner2}.
+
+
+\begin{figure}[!b]
+\begin{center}
+\begin{tabular}{crcc}
+& & \multicolumn{2}{c}{Player 2} \\ [.15cm]
+& & D & C \\ \cline{3-4}
+\multirow{2}{1.5cm}{Player 1} & D & \multicolumn{1}{|c|}{0,0} & \multicolumn{1}{c|}{10,-5} \\ \cline{3-4}
+                   & C & \multicolumn{1}{|c|}{-5,10} & \multicolumn{1}{c|}{1,1} \\ \cline{3-4}
+\end{tabular}
+\end{center}
+\caption{Another version of the Prisoners' Dilemma}
+\label{game:prisoner2} % Figure~\ref{game:prisoner2}
+\end{figure}
+
+%Player 1                                       Player 2
+%       D          C
+%   D   0,0     10,-5
+%   C   -5,10       1,1
+
+We must first figure out exactly what it means to win (or lose) this game infinitely many times. Here it helps to use the present value\index{present value} concepts from Chapter 1: with an interest rate of 5\%, winning \$1 in each round does \textit{not} give you infinite winnings. Rather, the present value\index{present value} of your winnings (using the perpetuity\index{perpetuity} formula, assuming you get paid at the end of each round) is $\displaystyle\frac{\$1}{.05}=\$20$.
+
+So: with an interest rate of $r$ we can ask meaningful questions about the potential for cooperation. One point that is immediately clear is that there is still plenty of potential for \emph{non-cooperation}: the strategies of playing (D, D) forever continue to constitute a Nash equilibrium of this game.
+
+But perhaps there are other strategies that are also Nash equilibria. Because the game is played infinitely many times, we cannot use backward induction to solve this game. Instead, we need to hunt around and look for strategies that might yield a cooperative Nash equilibrium.
+
+One potentially attractive idea is to use a \textbf{trigger strategy}\index{trigger strategy}\index{repeated games!trigger strategy}: begin by cooperating and assuming that the other player will cooperate (i.e., that both players will play C), and enforce cooperation by threatening to return to the (D, D) equilibrium. Formally, the trigger strategy for each player is as follows: In the first stage, play C. Thereafter, if (C, C) has been the result in all previous stages, play C; otherwise, play D.
+
+We can see that the cooperative outcome (C, C) will be the outcome in each stage game if both players adopt such a trigger strategy. But do these strategies constitute a Nash equilibrium? To check this, we have to see if the strategies are best responses to each other. In other words,  given that Player 1 adopts the trigger strategy above, is it optimal for Player 2 to adopt a similar trigger strategy, or does Player 2 have an incentive to take advantage of Player 1? %
+
+To find out, let's examine Player 2's payoffs from cooperating and from deviating:
+\begin{description}
+\item [If Player 2 cooperates,] she can expect to gain \$1 at the end of each round, yielding a present value\index{present value} payoff of $\displaystyle\frac{\$1}{r}$. (If $r=.05$ this turns out to be \$20.)
+
+\item [If Player 2 tries to cheat Player 1] (e.g., by playing D in the first round), Player 2 can anticipate that Player 1 will play D thereafter, so the best response for Player 2 is to play D thereafter as well. So the best deviation strategy for Player 2 is to play D in the first round (yielding a payoff of \$10 since Player 1 plays C) and D thereafter (yielding a payoff of \$0 each round since Player 1 plays D also). The present value\index{present value} of all this is simply \$10.
+\end{description}
+%
+We can now compare these two payoffs, and we can see that cooperating is a best response for Player 2 as long as $\displaystyle\frac{\$1}{r} \geq  10$. Since the game is symmetric, cooperating is a best response for Player 1 under same condition, so we have a Nash equilibrium (i.e., mutual best responses) as long as $\displaystyle\frac{\$1}{r} \geq  10$. Solving this yields a critical value of $r=.1$. When r is below this value (i.e., the interest rate is less than 10\%), cooperation is possible. When r is above this value (i.e., the interest rate is greater than 10\%), cheating is too tempting and the trigger strategies do not form a Nash equilibrium. The intuition here is quite nice: By cooperating instead of deviating, Player 2 accepts lower payoffs now (1 instead of 10) in order to benefit from higher payoffs later (1 instead of 0). Higher interest rates make the future less important, meaning that Player 2 benefits less by incurring losses today in exchange for gains tomorrow. With sufficiently high interest rates, Player 2 will take the money and run; but so will Player 1!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Mixed strategies}\index{Nash equilibrium!mixed strategy|(}
+
+\begin{figure}[b]
+\begin{center}
+\begin{tabular}{crcc}
+& & \multicolumn{2}{c}{Player 2} \\ [.15cm]
+& & Opera & WWF \\ \cline{3-4}
+\multirow{2}{1.5cm}{Player 1} & Opera & \multicolumn{1}{|c|}{2,1} & \multicolumn{1}{c|}{0,0} \\ \cline{3-4}
+                   & WWF & \multicolumn{1}{|c|}{0,0} & \multicolumn{1}{c|}{1,2} \\ \cline{3-4}
+\end{tabular}
+\end{center}
+\caption{The battle of the sexes}
+\label{game_battleofsexes} % Figure~\ref{game_battleofsexes}
+\end{figure}
+
+%Player 1                                       Player 2
+%       Opera   WWF
+%   Opera   2,1 0,0
+%   WWF 0,0 1,2
+
+Figure~\ref{game_battleofsexes} shows another game, called the Battle of the Sexes.\index{games!Battle of the Sexes} In this game, Player 1 prefers the opera, and Player 2 prefers wrestling, but what both players really want above all is to be with each other. They both choose simultaneously, though, and so cannot guarantee that they'll end up together. (Imagine, for example, that they are at different work places and can't reach each other and must simply head to one of the two events after work and wait for the other person at will-call.)
+
+The Nash equilibriums of this game are (Opera, Opera) and (WWF, WWF). But there is another Nash equilibrium that is perhaps a little better at predicting reality: that equilibrium is for both players to play a \textbf{mixed strategy}, i.e., to choose different strategies with various probabilities. (In this case, the mixed strategy equilibrium is for Player 1 to choose opera with probability 2/3 and WWF with probability 1/3, and for Player 2 to choose opera with probability 1/3 and WWF with probability 2/3. You should be able to use what you've learned about expected value\index{expected value} to show that these are mutual best responses.) One of the main results from game theory is that every finite game has at least one Nash equilibrium. That Nash equilibrium may only exist in mixed strategies, as in the following example.
+
+
+Example: (Matching pennies, Figure~\ref{game_pennies}).\index{games!matching pennies} Players 1 and 2 each have a penny, and they put their pennies on a table simultaneously. If both show the same face (both heads or both tails), Player 2 must pay \$1 to Player 1; if one is heads and the other is tails, Player 1 must pay \$1 to Player 2.
+
+\begin{figure}[b]
+\begin{center}
+\begin{tabular}{crcc}
+& & \multicolumn{2}{c}{Player 2} \\ [.15cm]
+& & Heads & Tails \\ \cline{3-4}
+\multirow{2}{1.5cm}{Player 1} & Heads & \multicolumn{1}{|c|}{1,-1} & \multicolumn{1}{c|}{-1,1} \\ \cline{3-4}
+                   & Tails & \multicolumn{1}{|c|}{-1,1} & \multicolumn{1}{c|}{1,-1} \\ \cline{3-4}
+\end{tabular}
+\end{center}
+\caption{Matching pennies}
+\label{game_pennies} % Figure~\ref{game_pennies}
+\end{figure}
+
+
+%Player 1                                       Player 2
+%       H   T
+%   H   1, -1   -1, 1
+%   T   -1, 1   1, -1
+
+Not surprisingly, the only NE in this game is for each player to play heads with probably 1/2 and tails with probability 1/2. %We won't talk any more about mixed strategies, and in this class we will deal only with pure strategies. But now you've at least been exposed to them\ldots
+
+
+
+
+\section{\emph{Math}: Mixed strategies}
+
+Consider the ``Matching Pennies" game shown in Figure~\ref{game_pennies}. There are no pure strategy Nash equilibria in this game, but intuitively it seems like randomizing between heads and tails (with probability 50\% for each) might be a good strategy. To formalize this intuition we introduce the concept of \textbf{mixed strategy Nash equilibrium}.
+
+In a mixed strategy Nash equilibrium, players do not have to choose just one strategy (say, Heads) and play it with probability 1. Instead, they can specify probabilities for all of their different options and then randomize (or mix) between them. To see how this might work in practice, a player who specifies Heads with probability .3 and Tails with probability .7 could put 3 cards labeled Heads and 7 cards labeled Tails into a hat; when the times comes to actually play the game, she draws a card from the hat and plays accordingly. She may only play the game once, but her \emph{odds} of playing Heads or Tails are .3 and .7, respectively.
+
+\subsubsection*{Finding mixed strategy Nash equilibria}
+
+To find mixed strategy Nash equilibria, we can simply associate different probabilities with the different options for each player. This gets messy for big payoff matrices, so we will restrict out attention to games (such as Matching Pennies) in which each player has only two options. In that game, let us define $p$ to be the probability that player 1 chooses Heads and $q$ to be the probability that player 2 chooses Heads. Since probabilities have to add up to 1, the probability that players 1 and 2 choose Tails must be $1-p$ and $1-q$, respectively.
+
+Now let's write down the expected payoff for player 1 given these strategies. With probability $p$ player 1 chooses Heads, in which case he gets $+1$ if player 2 chooses Heads (which happens with probability $q$) and $-1$ if player 2 chooses Tails (which happens with probability $1-q$). With probability $1-p$ player 1 chooses Tails, in which case he gets $-1$ if player 2 chooses Heads (which happens with probability $q$) and $+1$ if player 2 chooses Tails (which happens with probability $1-q$). So player 1's expected value\index{expected value} is
+\begin{eqnarray*}
+E(\pi_1) & = & p[q(1)+(1-q)(-1)]+(1-p)[q(-1)+(1-q)(1)] \\
+& = & p(2q-1)+(1-p)(1-2q).
+\end{eqnarray*}
+
+Similarly, player 2's expected payoff is
+\begin{eqnarray*}
+E(\pi_2) & = & q[p(-1)+(1-p)(1)]+(1-q)[p(1)+(1-p)(-1)]\\
+& = & q(1-2p)+(1-q)(2p-1).
+\end{eqnarray*}
+
+Now, we want to find $p$ and $q$ that form a Nash equilibrium, i.e., that are mutual best responses. To do this, we take partial derivatives and set them equal to zero. Here's why:
+
+First, player 1 wants to choose $p$ to maximize $E(\pi_1) = p(2q-1)+(1-p)(1-2q).$ One possibility is that a maximizing value of $p$ is a corner solution\index{corner solution}, i.e., $p=0$ or $p=1$. These are player 1's pure strategy options: $p=1$ means that player 1 always plays Heads, and $p=0$ means that player 1 always plays Tails.
+
+The other possibility is that there is an interior maximum, i.e., a maximum value of $p$ with $0<p<1$. In this case, the partial derivative of $E(\pi_1)$ with respect to $p$ must be zero:
+\[
+\frac{\partial E(\pi_1)}{\partial p} = 0\Longrightarrow
+2q-1-(1-2q)=0\Longrightarrow 4q=2\Longrightarrow q=\frac{1}{2}.
+\]
+%
+This tells us that \emph{any} interior value of $p$ is a candidate maximum as long as $q=\frac{1}{2}$. Mathematically, this makes sense because if $q=\frac{1}{2}$ then player 1's expected payoff (no matter what his choice of $p$) is always
+\[
+E(\pi_1)=p(2q-1)+(1-p)(1-2q)=p(0)+(1-p)(0)=0.
+\]
+Intuitively, what is happening is that player 2 is randomly choosing between Heads and Tails. As player 1, any strategy you follow is a best response. If you always play Heads, you will get an expected payoff of 0; if you always play Tails, you will get an expected payoff of 0; if you play heads with probability .5 or .3, you will get an expected payoff of 0.
+
+Our conclusion regarding player 1's strategy, then, is this: \emph{If} player 2 chooses $q=\frac{1}{2}$, i.e., randomizes between Heads and Tails, then any choice of $p$ is a best response for player 1. But \emph{if} player 2 chooses $q\neq\frac{1}{2}$, then player 1's best response is a pure strategy: if player 2 chooses $q>\frac{1}{2}$ then player 1's best response is to always play Heads; if player 2 chooses $q<\frac{1}{2}$ then player 1's best response is to always play Tails.
+
+We can now do the math for player 2 and come up with a similar conclusion. Player 2's expected payoff is $E(\pi_2)=q(1-2p)+(1-q)(2p-1).$ Any value of $q$ that maximizes this is either a corner solution\index{corner solution} (i.e., one of the pure strategies $q=1$ or $q=0$) or an interior solution\index{interior solution} with $0<q<1$, in which case
+\[
+\frac{\partial E(\pi_2)}{\partial q} = 0\Longrightarrow
+1-2p-(2p-1)=0\Longrightarrow 4p=2\Longrightarrow p=\frac{1}{2}.
+\]
+%
+So if player 1 chooses $p=\frac{1}{2}$ then any choice of $q$ is a best response for player 2. But if player 1 chooses $p\neq\frac{1}{2}$, then player 2's best response is a pure strategy: if player 1 chooses $p>\frac{1}{2}$ then player 2's best response is to always play Tails; if player 1 chooses $p<\frac{1}{2}$ then player 2's best response is to always play Heads.
+
+Now we can put our results together to find the Nash equilibrium in this game. If player 1's choice of $p$ is a best response to player 2's choice of $q$ then either $p=1$ or $p=0$ or $q=\frac{1}{2}$ (in which case any $p$ is a best response). And if player 2's choice of $q$ is a best response to player 1's choice of $p$ then either $q=1$ or $q=0$ or $p=\frac{1}{2}$ (in which case any $q$ is a best response).
+
+Three choices for player 1 and three choices for player 2 combine to give us nine candidate Nash equilibria:
+\begin{description}
+\item[Four pure strategy candidates:] $(p=1, q=1), (p=1, q=0), (p=0, q=1), (p=0, q=0)$.
+
+\item[One mixed strategy candidate:] $(0<p<1, 0<q<1)$.
+
+\item[Four pure/mixed combinations:] $(p=1, 0<q<1), (p=0, 0<q<1), (0<p<1, q=1), (0<p<1, q=0)$.
+\end{description}
+%
+We can see from the payoff matrix that the four pure strategy candidates are not mutual best responses, i.e., are not Nash equilibria. And we can quickly see that the four pure/mixed combinations are also not best responses; for example, $(p=1, 0<q<1)$ is not a Nash equilibrium because if player 1 chooses $p=1$ then player 2's best response is to choose $q=0$, not $0<q<1$.
+
+But the mixed strategy candidate does yield a Nash equilibrium: player 1's choice of $0<p<1$ is a best response as long as $q=\frac{1}{2}$. And player 2's choice of $0<q<1$ is a best response as long as $p=\frac{1}{2}$. So the players' strategies are mutual best responses if $p=q=\frac{1}{2}$. This is the mixed strategy Nash equilibrium of this game.
+
+\subsubsection*{Another example}
+
+Consider the ``Battle of the Sexes" game shown in Figure~\ref{game_battleofsexes} and duplicated below. Again, let $p$ be the probability that player 1 chooses Opera and $q$ be the probability that player 2 chooses Opera (so that $1-p$ and $1-q$ are the respective probabilities that players 1 and 2 will choose WWF). Then player 1's expected payoff is
+\begin{eqnarray*}
+E(\pi_1) & = & p[q(2)+(1-q)(0)]+(1-p)[q(0)+(1-q)(1)] \\
+& = & 2pq+(1-p)(1-q).
+\end{eqnarray*}
+%
+Similarly, player 2's expected payoff is
+\begin{eqnarray*}
+E(\pi_2) & = & q[p(1)+(1-p)(0)]+(1-q)[p(0)+(1-p)(2)]\\
+& = & pq+(1-q)(2)(1-p).
+\end{eqnarray*}
+%
+Now, we want to find $p$ and $q$ that form a Nash equilibrium, i.e., that are mutual best responses. To do this, we take partial derivatives and set them equal to zero.
+
+\begin{figure}[b]
+\begin{center}
+\begin{tabular}{crcc}
+& & \multicolumn{2}{c}{Player 2} \\ [.15cm]
+& & Opera & WWF \\ \cline{3-4}
+\multirow{2}{1.5cm}{Player 1} & Opera & \multicolumn{1}{|c|}{2,1} & \multicolumn{1}{c|}{0,0} \\ \cline{3-4}
+                   & WWF & \multicolumn{1}{|c|}{0,0} & \multicolumn{1}{c|}{1,2} \\ \cline{3-4}
+\end{tabular}
+\end{center}
+\caption{The battle of the sexes}
+\label{game_battleofsexes2} % Figure~\ref{game_battleofsexes2}
+\end{figure}
+
+So: player 1 wants to choose $p$ to maximize $E(\pi_1)=2pq+(1-p)(1-q).$ Any value of $p$ that maximizes this is either a corner solution\index{corner solution} (i.e., one of the pure strategies $p=1$ or $p=0$) or an interior solution\index{interior solution} with $0<p<1$, in which case the partial derivative of $E(\pi_1)$ with respect to $p$ must be zero:
+\[
+\frac{\partial E(\pi_1)}{\partial p} = 0\Longrightarrow
+2q-(1-q)=0\Longrightarrow 3q=1\Longrightarrow q=\frac{1}{3}.
+\]
+%
+This tells us that \emph{any} interior value of $p$ is a candidate maximum as long as $q=\frac{1}{3}$. Mathematically, this makes sense because if $q=\frac{1}{3}$ then player 1's expected payoff (no matter what his choice of $p$) is always
+\[
+E(\pi_1)=2pq+(1-p)(1-q)=\frac{2}{3}p+\frac{2}{3}(1-p)=\frac{2}{3}.
+\]
+Our conclusion regarding player 1's strategy, then, is this: \emph{If} player 2 chooses $q=\frac{1}{3}$, then any choice of $p$ is a best response for player 1. But \emph{if} player 2 chooses $q\neq\frac{1}{3}$, then player 1's best response is a pure strategy: if player 2 chooses $q>\frac{1}{3}$ then player 1's best response is to always play Opera; if player 2 chooses $q<\frac{1}{3}$ then player 1's best response is to always play WWF.
+
+We can now do the math for player 2 and come up with a similar conclusion. Player 2's expected payoff is $E(\pi_2)=pq+(1-q)(2)(1-p).$ Any value of $q$ that maximizes this is either a corner solution\index{corner solution} (i.e., one of the pure strategies $q=1$ or $q=0$) or an interior solution\index{interior solution} with $0<q<1$, in which case
+\[
+\frac{\partial E(\pi_2)}{\partial q} = 0\Longrightarrow
+p-2(1-p)=0\Longrightarrow 3p=2\Longrightarrow p=\frac{2}{3}.
+\]
+%
+So if player 1 chooses $p=\frac{2}{3}$ then any choice of $q$ is a best response for player 2. But if player 1 chooses $p\neq\frac{2}{3}$, then player 2's best response is a pure strategy: if player 1 chooses $p>\frac{2}{3}$ then player 2's best response is to always play Opera; if player 1 chooses $p<\frac{2}{3}$ then player 2's best response is to always play WWF.
+
+Now we can put our results together to find the Nash equilibrium in this game. If player 1's choice of $p$ is a best response to player 2's choice of $q$ then either $p=1$ or $p=0$ or $q=\frac{1}{3}$ (in which case any $p$ is a best response). And if player 2's choice of $q$ is a best response to player 1's choice of $p$ then either $q=1$ or $q=0$ or $p=\frac{2}{3}$ (in which case any $q$ is a best response).
+
+Three choices for player 1 and three choices for player 2 combine to give us nine candidate Nash equilibria:
+\begin{description}
+\item[Four pure strategy candidates:] $(p=1, q=1), (p=1, q=0), (p=0, q=1), (p=0, q=0)$.
+
+\item[One mixed strategy candidate:] $(0<p<1, 0<q<1)$.
+
+\item[Four pure/mixed combinations:] $(p=1, 0<q<1), (p=0, 0<q<1), (0<p<1, q=1), (0<p<1, q=0)$.
+\end{description}
+%
+We can see from the payoff matrix that there are two Nash equilibria among the four pure strategy candidates: $(p=1, q=1)$ and $(p=0, q=0)$. The other two are not Nash equilibria. We can also see that the four pure/mixed combinations are not best responses; for example, $(p=1, 0<q<1)$ is not a Nash equilibrium because if player 1 chooses $p=1$ then player 2's best response is to choose $q=1$, not $0<q<1$.
+
+But the mixed strategy candidate does yield a Nash equilibrium: player 1's choice of $0<p<1$ is a best response as long as $q=\frac{1}{3}$. And player 2's choice of $0<q<1$ is a best response as long as $p=\frac{2}{3}$. So the players' strategies are mutual best responses if $p=\frac{2}{3}$ and $q=\frac{1}{3}$. This is the mixed strategy Nash equilibrium of this game.
+
+So this game has three Nash equilibria: two in pure strategies and one in mixed strategies.
+
+
+\index{Nash equilibrium!mixed strategy|)}
+
+\clearpage
+
+
+%
+%\begin{EXAM}
+%\bigskip
+%\bigskip
+%\section*{Problems}
+%
+%\input{part2/qa2nash}
+%\end{EXAM}
+
+
+
+
+
+\bigskip
+\bigskip
+\section*{Problems}
+
+\noindent \textbf{Answers are in the endnotes beginning on page~\pageref{2nasha}. If you're reading this online, click on the endnote number to navigate back and forth.}
+
+\begin{enumerate}
+
+
+\item \emph{Challenge.} Explain (as if to a non-economist) why iterated dominance make sense.\endnote{\label{2nasha}This is explained to the best of my abilities in the text. The key idea is to anticipate your opponent's behavior.}
+
+
+
+
+
+
+\item \emph{Super Challenge.} Explain (as if to a non-economist) why Nash equilibrium makes sense.\endnote{This is a hard philosophical problem. Show your work to me if you decide to tackle it.}
+
+
+
+
+
+
+
+\item Show that there are no strictly dominant strategies in the game in Figure~\ref{game:dominance1} on page~\pageref{game:dominance1}.\endnote{U is not the best strategy for Player 1 if Player 2 plays R, M is not the best strategy for Player 1 if Player 2 plays C, and D is not the best strategy for Player 1 if Player 2 plays R. Similarly, there are no strictly dominant strategies for Player 2: L is not the best strategy for Player 2 if Player 1 plays U, C is not the best strategy for Player 2 if Player 1 plays U, and R is not the best strategy for Player 2 if Player 1 plays D.}
+
+
+
+
+
+
+
+
+\item Analyze games (a) through (e) on the following page(s). First see how far you can get using iterated dominance. Then find the Nash equilibrium(s). If you can identify a unique outcome, determine whether it is Pareto efficient. If it is not, identify a Pareto improvement.
+%\setcounter{totalnumber}{5}
+%\renewcommand{\topfraction}{1}
+%\renewcommand{\bottomfraction}{1}
+%\clearpage
+%
+%\begin{comment}
+
+    \begin{enumerate}
+
+    \item Game a.\endnote{Here U is dominated by M for player 1, then C is dominated by L (or R) for player 2, then D is dominated by M for player 1, then R is dominated by L for player 2. The result: (M, L), with a payoff of (4,8). This is also the unique Nash equilibrium of the game; it is not a Pareto efficient outcome because of (D, R).}
+    \begin{figure}[p]
+    \begin{center}
+    \begin{tabular}{crccc}
+    & & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+    & & L & C & R \\ \cline{3-5}
+    \multirow{3}{1.5cm}{Player 1}
+    & U & \multicolumn{1}{|c|}{0,3} & \multicolumn{1}{c}{2,1} & \multicolumn{1}{|c|}{5,0} \\ \cline{3-5}
+    & M & \multicolumn{1}{|c|}{4,8} & \multicolumn{1}{c}{3,2} & \multicolumn{1}{|c|}{8,3} \\ \cline{3-5}
+    & D & \multicolumn{1}{|c|}{3,7} & \multicolumn{1}{c}{6,3} & \multicolumn{1}{|c|}{6,8} \\ \cline{3-5}
+    \end{tabular}
+    \end{center}
+    \end{figure}
+
+
+%Player 1                                       Player 2
+%       F   G   H
+%   A   0, 3    2, 1    5, 0
+%   B   4, 8    3, 2    8, 3
+%   C   3, 7    6, 3    6, 8
+
+
+
+
+
+    \item Game b.\endnote{Here D is dominated by M for player 1, then C is dominated by L for player 2, then U is dominated by M for player 1, then L is dominated by R for player 2. The result: (M, R), with a payoff of (6,2). This is also the unique Nash equilibrium of the game; it is not a Pareto efficient outcome because of (U, C).}
+    \begin{figure}[p]
+    \begin{center}
+    \begin{tabular}{crccc}
+    & & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+    & & L & C & R \\ \cline{3-5}
+    \multirow{3}{1.5cm}{Player 1}
+    & U & \multicolumn{1}{|c|}{-1,4} & \multicolumn{1}{c}{7,3} & \multicolumn{1}{|c|}{5,2} \\ \cline{3-5}
+    & M & \multicolumn{1}{|c|}{2,0} & \multicolumn{1}{c}{5,-1} & \multicolumn{1}{|c|}{6,2} \\ \cline{3-5}
+    & D & \multicolumn{1}{|c|}{1,2} & \multicolumn{1}{c}{1,0} & \multicolumn{1}{|c|}{1,0} \\ \cline{3-5}
+    \end{tabular}
+    \end{center}
+    \end{figure}
+
+%Player 1                                       Player 2
+%       F   G   H
+%   A   -1, 4   7, 3    5, 2
+%   B   2, 0    5, -1   6, 2
+%   C   1, 2    1, 0    1, 0
+
+
+
+
+
+
+    \item Game c.\endnote{There are no strictly dominated strategies. The NE are $(U,C)$, $(D,L)$ and $(M,R)$.}
+    \begin{figure}[p]
+    \begin{center}
+    \begin{tabular}{crccc}
+    & & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+    & & L & C & R \\ \cline{3-5}
+    \multirow{3}{1.5cm}{Player 1}
+    & U & \multicolumn{1}{|c|}{1,0} & \multicolumn{1}{c}{7,3} & \multicolumn{1}{|c|}{2,1} \\ \cline{3-5}
+    & M & \multicolumn{1}{|c|}{1,0} & \multicolumn{1}{c}{1,2} & \multicolumn{1}{|c|}{6,2} \\ \cline{3-5}
+    & D & \multicolumn{1}{|c|}{1,2} & \multicolumn{1}{c}{1,-3} & \multicolumn{1}{|c|}{1,0} \\ \cline{3-5}
+    \end{tabular}
+    \end{center}
+    \end{figure}
+
+%Player 1                                       Player 2
+%       F   G   H
+%   A   1,0 7,3 2,1
+%   B   1,0 1,2 6,2
+%   C   1,2 1,-3    1,0
+
+
+
+
+
+    \item Game d.\endnote{Here M is dominated by U for player 1, then L and R are dominated by C for player 2, then D is dominated by U for player 1. The result: (U, C), with a payoff of (5,4). This is also the unique Nash equilibrium of the game; it is a Pareto efficient outcome.}
+
+    \begin{figure}[p]
+    \begin{center}
+    \begin{tabular}{crccc}
+    & & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+    & & L & C & R \\ \cline{3-5}
+    \multirow{3}{1.5cm}{Player 1}
+    & U & \multicolumn{1}{|c|}{3,-1} & \multicolumn{1}{c}{5,4} & \multicolumn{1}{|c|}{3,2} \\ \cline{3-5}
+    & M & \multicolumn{1}{|c|}{-2,5} & \multicolumn{1}{c}{1,3} & \multicolumn{1}{|c|}{2,1} \\ \cline{3-5}
+    & D & \multicolumn{1}{|c|}{3,3} & \multicolumn{1}{c}{3,6} & \multicolumn{1}{|c|}{3,0} \\ \cline{3-5}
+    \end{tabular}
+    \end{center}
+    \end{figure}
+
+%Player 1                                       Player 2
+%       L   C   R
+%   U   3, -1   5, 4    3, 2
+%   M   -2, 5   1, 3    2, 1
+%   D   3, 3    3, 6    3, 0
+
+
+
+
+
+    \item Game e.\endnote{Here L is dominated by C for player 2, and that is as far as iterated dominance can take us. We do not get a unique prediction for the outcome of this game. (All that we can say is that a rational player 2 would never play L.) With Nash, the NE are $(M,C)$ and $(D,R)$. Note that these Nash equilibria are a subset of the iterated dominance solutions; see the next problem for details.}
+
+    \begin{figure}[p]
+    \begin{center}
+    \begin{tabular}{crccc}
+    & & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+    & & L & C & R \\ \cline{3-5}
+    \multirow{3}{1.5cm}{Player 1}
+    & U & \multicolumn{1}{|c|}{3,-1} & \multicolumn{1}{c}{1,0} & \multicolumn{1}{|c|}{-1,-1} \\ \cline{3-5}
+    & M & \multicolumn{1}{|c|}{1,-5} & \multicolumn{1}{c}{6,3} & \multicolumn{1}{|c|}{-7,-5} \\ \cline{3-5}
+    & D & \multicolumn{1}{|c|}{-8,-10} & \multicolumn{1}{c}{-1,-3} & \multicolumn{1}{|c|}{-1,-1} \\ \cline{3-5}
+    \end{tabular}
+    \end{center}
+    \end{figure}
+
+%Player 1                                       Player 2
+%       F   G   H
+%   A   3,-1    1,0 -1,-1
+%   B   1,-5    6,3 -7,-5
+%   C   -8,-10  -1,-3   -1,-1
+
+
+    \end{enumerate}
+%\begin{EXAM} \vspace*{-1.5\baselineskip} \end{EXAM}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\item \index{games!Rock, Paper, Scissors}\index{Rock, Paper, Scissors} The game ``Rock, Paper, Scissors" works as follows: You and your opponent simultaneously choose rock, paper, or scissors. If you pick the same one (e.g., if you both pick rock), you both get zero. Otherwise, rock beats scissors, scissors beats paper, and paper beats rock, and the loser must pay the winner \$1.
+
+    \begin{enumerate}
+
+    \item Write down the payoff matrix for this game.\endnote{The payoff matrix is shown in Table~\ref{rockpaper}.
+
+    \begin{table}
+    \begin{center}
+    \begin{tabular}{crccc}
+    & & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+    & & R & P & S \\ \cline{3-5}
+    \multirow{3}{1.5cm}{Player 1}
+    & R & \multicolumn{1}{|c|}{0,0} & \multicolumn{1}{c}{-1,1} & \multicolumn{1}{|c|}{1,-1} \\ \cline{3-5}
+    & P & \multicolumn{1}{|c|}{1,-1} & \multicolumn{1}{c}{0,0} & \multicolumn{1}{|c|}{-1,1} \\ \cline{3-5}
+    & S & \multicolumn{1}{|c|}{-1,1} & \multicolumn{1}{c}{1,-1} & \multicolumn{1}{|c|}{0,0} \\ \cline{3-5}
+    \end{tabular}
+    \end{center}
+    \caption{The payoff matrix for the game ``Rock, Paper, Scissors"}
+    \label{rockpaper}
+    \end{table}}
+
+
+    \item Does iterated dominance help you solve this game?\endnote{Iterated dominance does not help you solve this game because there are no dominated strategies.}
+
+    %\item \emph{Challenge} Identify the Nash equilibria (if any).
+    %\item \emph{Super Challenge} Can you think of any \textbf{mixed strategy} Nash equilibria?
+
+
+    \item \emph{Calculus/Challenge.} Can you find any \emph{mixed strategy} Nash equilibria?\endnote{In accordance with intuition, the NE is for both players to choose randomly among the three strategies.}
+
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+\item \emph{Challenge.} Prove that the pure strategy Nash equilibrium solutions are a subset of the iterated dominance solutions, i.e., that iterated dominance never eliminates any pure strategy Nash equilibrium solutions.\endnote{Not fair game for the exam.}
+
+
+
+
+
+
+
+
+
+
+\item Rewrite Story \#1 from Overinvestment Game (from problem 3 in Chapter 8) as a simultaneous move game and identify the (pure strategy) Nash equilibria. Does your answer suggest anything about the relationship between backward induction and Nash equilibrium?\endnote{
+\begin{figure}[h]
+\begin{center}
+\begin{tabular}{crcc}
+& & \multicolumn{2}{c}{Entrant} \\ [.15cm] & & Enter & Stay Out \\
+\cline{3-4} \multirow{2}{1.5cm}{Monopolist} & War &
+\multicolumn{1}{|c|}{10, -10} & \multicolumn{1}{c|}{100, 0} \\
+\cline{3-4}
+                   & Peace & \multicolumn{1}{|c|}{35, 5} & \multicolumn{1}{c|}{100, 0} \\ \cline{3-4}
+\end{tabular}
+\end{center}
+\end{figure}
+
+The Nash equilibria are (War, Stay Out) and (Peace, Enter). This suggests that backward induction is in fact a refinement or strengthening of Nash equilibrium (which it is, namely \textbf{subgame perfect Nash equilibrium}).}
+
+
+
+
+
+
+
+
+
+\item \emph{Challenge.} Prove that backward induction solutions are a subset of Nash equilibrium solutions, i.e., that any backward induction solution is also a Nash equilibrium solution. (Note: Backward induction is in fact a refinement of Nash equilibrium called ``subgame perfect Nash equilibrium".)\endnote{Not fair game for the exam.}
+
+%\item Find all the Nash equilibria (pure \emph{and} mixed) in the ``Battle of the Sexes" game shown in Figure 10.3 of the text.
+
+
+
+
+
+
+
+
+\item \emph{Fun/Challenge.} Section~\ref{infinitecooperation} describes a trigger strategy for yielding cooperating in the infinitely repeated Prisoner's Dilemma game shown in figure~\ref{game:prisoner2}. Can you think of another strategy that yields even higher playoffs for the players? Can you show that it's a Nash equilibrium?\endnote{Yes! As long as the interest rate is sufficiently low, the players can also cooperate by taking turns: (C, D), (D, C), (C, D),\ldots \ Instead of gaining \$1 every stage (which is the result with the trigger strategies), each player now gains \$5 every two stages. As an exercise, you can formally define this strategy (what happens if the other player doesn't cooperate?) and determine the interest rates that allow this strategy as a Nash equilibrium and those that make this strategy a Pareto improvement over the trigger strategy. There are also plenty of other strategies, e.g., tit-for-tat, that you can play around with if you wish.}
+
+
+
+
+
+
+
+
+
+
+\item \label{weakdom}\emph{Challenge.} The end of the section on iterated dominance mentioned the dangers of iterated weak dominance, namely that different sequences of elimination can yield different predictions for the outcome of a game. Show this using the game in Figure~\ref{fig:weakdom}. (Hint: Note that U is weakly dominated by M for Player 1 and that M is weakly dominated by D for Player 1.)\endnote{One possibility is to proceed as follows: U is weakly dominated by M for Player 1, and then R is weakly dominated by L for Player 2, and then M is (strictly) dominated by D for Player 1, yielding a prediction of (D, L). But another possibility is to proceed like this: M is weakly dominated by D for Player 1, then L is weakly dominated by R for Player 2, then U is (strictly) dominated by D for Player 1, yielding a prediction of (D, R). Conclusion: the order of elimination matters for iterated weak dominance!}
+
+\begin{figure}[h]
+\begin{center}
+\begin{tabular}{crccc}
+& & \multicolumn{2}{c}{Player 2} \\ [.15cm] & & L & R \\
+\cline{3-4} \multirow{3}{1.5cm}{Player 1} & U &
+\multicolumn{1}{|c|}{50, 10} & \multicolumn{1}{c|}{6, 20} \\
+\cline{3-4} & M & \multicolumn{1}{|c|}{50, 10} &
+\multicolumn{1}{c|}{8, 9} \\ \cline{3-4} & D &
+\multicolumn{1}{|c|}{60, 15} & \multicolumn{1}{c|}{8, 15} \\
+\cline{3-4}
+\end{tabular}
+\end{center}
+\caption{The dangers of iterated weak dominance}
+\label{fig:weakdom} % Figure~\ref{game:dominance1}
+\end{figure}
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+\begin{CALCULUS}
+
+\section*{Calculus Problems}
+
+\renewcommand\theenumi{\emph{C-}\arabic{chapter}.\arabic{enumi}}
+
+\begin{enumerate}
+
+\item Find all Nash equilibria (pure and mixed) in the game shown in figure~\ref{fig:mixedex1}. (Use $p$ as the probability that Player 1 plays U and $q$ as the probability that Player 2 plays L.)\endnote{Player 1 chooses $p$ to maximize
+\begin{eqnarray*}
+E(\pi_1) & = & p[q(1)+(1-q)(0)] + (1-p)[q(0)+(1-q)(3)]\\
+& = & pq +(1-p)(1-q)(3).
+\end{eqnarray*}
+Similarly, player 2 chooses $q$ to maximize
+\begin{eqnarray*}
+E(\pi_2) & = & q[p(3)+(1-p)(0)] + (1-q)[p(0)+(1-p)(1)]\\
+& = & 3pq+(1-q)(1-p).
+\end{eqnarray*}
+Now, we want to find $p$ and $q$ that form a Nash equilibrium, i.e., that are mutual best responses. To do this, we take derivatives and set them equal to zero.
+
+So: player 1 wants to choose $p$ to maximize $E(\pi_1)=pq +3(1-p)(1-q).$ Any value of $p$ that maximizes this is either a corner solution\index{corner solution} (i.e., one of the pure strategies $p=1$ or $p=0$) or an interior solution\index{interior solution} with $0<p<1$, in which case the partial derivative of $E(\pi_1)$ with respect to $p$ must be zero:
+\[
+\frac{\partial E(\pi_1)}{\partial p}=0\Longrightarrow
+q-3(1-q)=0\Longrightarrow 4q=3\Longrightarrow q=\frac{3}{4}.
+\]
+This tells us that \emph{any} interior value of $p$ is a candidate maximum as long as $q=\frac{3}{4}$. Mathematically, this makes sense because if $q=\frac{3}{4}$ then player 1's expected payoff (no matter what his choice of $p$) is always
+\[
+E(\pi_1)=pq
++3(1-p)(1-q)=\frac{3}{4}p+3\frac{1}{4}(1-p)=\frac{3}{4}.
+\]
+If player 2 chooses $q\neq\frac{3}{4}$ then player 1's best response is to choose $p=1$ (if $q>\frac{3}{4}$) or $p=0$ (if $q<\frac{3}{4}$).
+
+We can now do the math for player 2 and come up with a similar conclusion. Player 2's expected payoff is $pi_2=3pq+(1-q)(1-p)$. Any value of $q$ that maximizes this is either a corner solution\index{corner solution} (i.e., one of the pure strategies $q=1$ or $q=0$) or an interior solution with $0<q<1$, in which case
+\[
+\frac{\partial E(\pi_2)}{\partial q}=0\Longrightarrow
+3p-(1-p)=0\Longrightarrow 4p=1\Longrightarrow p=\frac{1}{4}.
+\]
+So if player 1 chooses $p=\frac{1}{4}$ then any choice of $q$ is a best response for player 2. But if player 1 chooses $p\neq\frac{1}{4}$ then player 2's best response is a pure strategy: if player 1 chooses $p>\frac{1}{4}$ then player 2's best response is to choose $q=1$; if player 1 chooses $p<\frac{1}{4}$ then player 2's best response is to choose $q=0$.
+
+Now we can put our results together to find the Nash equilibria in this game. If player 1's choice of $p$ is a best response to player 2's choice of $q$ then either $p=1$ or $p=0$ or $q=\frac{3}{4}$ (in which case any $p$ is a best response). And if player 2's choice of $q$ is a best response to player 1's choice of $p$ then either $q=1$ or $q=0$ or $p=\frac{1}{4}$ (in which case any $q$ is a best response).
+
+Three choices for player 1 and three choices for player 2 combine to give us nine candidate Nash equilibria:
+\begin{description}
+\item[Four pure strategy candidates]: $(p=1,q=1), (p=1, q=0), (p=0, q=1), (p=0, q=0)$. \item[One mixed strategy candidate]: $(0<p<1, 0<q<1)$. \item[Four pure/mixed combinations]: $(p=1, 0<q<1), (p=0, 0<q<1), (0<p<1,q=1), (0<p<1, q=0)$.
+\end{description}
+We can see from the payoff matrix that there are two Nash equilibria among the four pure strategy candidates: $(p=1,q=1)$ and $(p=0,q=0)$. The other other two are not Nash equilibra. We can also see that the four pure/mixed combinations are not best responses; for example, $(p=1,0<q<1)$ is not a Nash equilibrium because if player 1 chooses $p=1$ then player 2's best response is to choose $q=1$, not $0<q<1$.
+
+But the mixed strategy candidate does yield a Nash equilibrium: player 1's choice of $0<p<1$ is a best response as long as $q=\frac{3}{4}$. And player 2's choice of $0<q<1$ is a best response as long as $p=\frac{1}{4}$. So the player's strategies are mutual best responses if $(p=\frac{1}{4}, q=\frac{3}{4}$).
+
+So this game has three Nash equilibria: two in pure strategies and one in mixed strategies.}
+
+\begin{figure}[h]
+\begin{center}
+\begin{tabular}{crcc}
+& & \multicolumn{2}{c}{Player 2} \\ [.15cm] & & L & R \\
+\cline{3-4} \multirow{2}{1.5cm}{Player 1} & U &
+\multicolumn{1}{|c|}{1, 3} & \multicolumn{1}{c|}{0, 0} \\
+\cline{3-4}
+                   & D & \multicolumn{1}{|c|}{0, 0} & \multicolumn{1}{c|}{3, 1} \\ \cline{3-4}
+\end{tabular}
+\end{center}
+\caption{A game with a mixed strategy equilibrium}
+\label{fig:mixedex1}
+\end{figure}
+
+
+
+
+
+\item Find all Nash equilibria (pure and mixed) in the game shown in figure~\ref{fig:mixedex2}. (Use $p$ as the probability that Player 1 plays U and $q$ as the probability that Player 2 plays L.)\endnote{Player 1 chooses $p$ to maximize
+\begin{eqnarray*}
+E(\pi_1) & = & p[q(0)+(1-q)(-1)] + (1-p)[q(-2)+(1-q)(1)]\\
+& = & p(q-1) +(1-p)(1-3q).
+\end{eqnarray*}
+Similarly, player 2 chooses $q$ to maximize
+\begin{eqnarray*}
+E(\pi_2) & = & q[p(0)+(1-p)(1)] + (1-q)[p(5)+(1-p)(-2)]\\
+& = & q(1-p)+(1-q)(7p-2).
+\end{eqnarray*}
+Now, we want to find $p$ and $q$ that form a Nash equilibrium, i.e., that are mutual best responses. To do this, we take derivatives and set them equal to zero.
+
+So: player 1 wants to choose $p$ to maximize $E(\pi_1)=p(q-1) +(1-p)(1-3q).$ Any value of $p$ that maximizes this is either a corner solution\index{corner solution} (i.e., one of the pure strategies $p=1$ or $p=0$) or an interior solution\index{interior solution} with $0<p<1$, in which case the partial derivative of $E(\pi_1)$ with respect to $p$ must be zero:
+\[
+\frac{\partial E(\pi_1)}{\partial p}=0\Longrightarrow
+q-1-(1-3q)=0\Longrightarrow 4q=2\Longrightarrow q=\frac{1}{2}.
+\]
+This tells us that \emph{any} interior value of $p$ is a candidate maximum as long as $q=\frac{1}{2}$. Mathematically, this makes sense because if $q=\frac{1}{2}$ then player 1's expected payoff (no matter what his choice of $p$) is always
+\[
+E(\pi_1)=p(q-1)
++(1-p)(1-3q)=-\frac{1}{2}p+(1-p)\frac{-1}{2}=-\frac{1}{2}.
+\]
+If player 2 chooses $q\neq\frac{1}{2}$ then player 1's best response is to choose $p=1$ (if $q>\frac{1}{2}$) or $p=0$ (if $q<\frac{1}{2}$).
+
+We can now do the math for player 2 and come up with a similar conclusion. Player 2's expected payoff is $q(1-p)+(1-q)(7p-2)$. Any value of $q$ that maximizes this is either a corner solution\index{corner solution} (i.e., one of the pure strategies $q=1$ or $q=0$) or an interior solution with $0<q<1$, in which case
+\[
+\frac{\partial E(\pi_2)}{\partial q}=0\Longrightarrow
+1-p-(7p-2)=0\Longrightarrow 8p=3\Longrightarrow p=\frac{3}{8}.
+\]
+So if player 1 chooses $p=\frac{3}{8}$ then any choice of $q$ is a best response for player 2. But if player 1 chooses $p\neq\frac{3}{8}$ then player 2's best response is a pure strategy: if player 1 chooses $p>\frac{3}{8}$ then player 2's best response is to choose $q=0$; if player 1 chooses $p<\frac{3}{8}$ then player 2's best response is to choose $q=1$.
+
+Now we can put our results together to find the Nash equilibria in this game. If player 1's choice of $p$ is a best response to player 2's choice of $q$ then either $p=1$ or $p=0$ or $q=\frac{1}{2}$ (in which case any $p$ is a best response). And if player 2's choice of $q$ is a best response to player 1's choice of $p$ then either $q=1$ or $q=0$ or $p=\frac{3}{8}$ (in which case any $q$ is a best response).
+
+Three choices for player 1 and three choices for player 2 combine to give us nine candidate Nash equilibria:
+\begin{description}
+\item[Four pure strategy candidates]: $(p=1,q=1), (p=1, q=0), (p=0, q=1), (p=0, q=0)$.
+\item[One mixed strategy candidate]: $(0<p<1, 0<q<1)$.
+\item[Four pure/mixed combinations]: $(p=1, 0<q<1), (p=0, 0<q<1), (0<p<1,q=1), (0<p<1, q=0)$.
+\end{description}
+We can see from the payoff matrix that there are no Nash equilibria among the four pure strategy candidates: We can also see that the four pure/mixed combinations are not best responses; for example, $(p=1,0<q<1)$ is not a Nash equilibrium because if player 1 chooses $p=1$ then player 2's best response is to choose $q=0$, not $0<q<1$.
+
+But the mixed strategy candidate does yield a Nash equilibrium: player 1's choice of $0<p<1$ is a best response as long as $q=\frac{1}{2}$. And player 2's choice of $0<q<1$ is a best response as long as $p=\frac{3}{8}$. So the player's strategies are mutual best responses if $(p=\frac{3}{8}, q=\frac{1}{2}$).
+
+So this game has one (mixed strategy) Nash equilibrium.}
+
+\begin{figure}[h]
+\begin{center}
+\begin{tabular}{crcc}
+& & \multicolumn{2}{c}{Player 2} \\ [.15cm] & & L & R \\
+\cline{3-4} \multirow{2}{1.5cm}{Player 1} & U &
+\multicolumn{1}{|c|}{0, 0} & \multicolumn{1}{c|}{-1, 5} \\
+\cline{3-4}
+                   & D & \multicolumn{1}{|c|}{-2, 1} & \multicolumn{1}{c|}{1, -2} \\ \cline{3-4}
+\end{tabular}
+\end{center}
+\caption{Another game with a mixed strategy equilibrium}
+\label{fig:mixedex2}
+\end{figure}
+
+
+
+\end{enumerate}
+
+\renewcommand\theenumi{\arabic{chapter}.\arabic{enumi}}
+\end{CALCULUS}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{comment}
+
+\section{Iterated Dominance}
+
+Just as ``low price" is a strictly dominant strategy for Coke in the above game, ``high price" is a \textbf{strictly dominated strategy}, meaning that there is some approach (namely, low price) that generates higher payoffs regardless of the other player's strategy.  Since an optimizing player would never play a strictly dominated strategy, we can predict that such strategies will never be played. The concept of strictly dominated strategies can help us make predictions in games without strictly dominant strategies.
+
+\subsubsection{Question\rm : Are there strictly dominant strategies in the game in Figure~\ref{game:dominance1}? Are there strictly dominated strategies?}
+
+\begin{figure}[h]
+\begin{center}
+\begin{tabular}{crccc}
+& & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+& & L & C & R \\ \cline{3-5}
+\multirow{3}{1.5cm}{Player 1}
+& U & \multicolumn{1}{|c|}{1,1} & \multicolumn{1}{c}{2,0} & \multicolumn{1}{|c|}{2,2} \\ \cline{3-5}
+& M & \multicolumn{1}{|c|}{0,3} & \multicolumn{1}{c}{1,5} & \multicolumn{1}{|c|}{4,4} \\ \cline{3-5}
+& D & \multicolumn{1}{|c|}{2,4} & \multicolumn{1}{c}{3,6} & \multicolumn{1}{|c|}{3,0} \\ \cline{3-5}
+\end{tabular}
+\end{center}
+\caption{Iterated strict dominance example}
+\label{game:dominance1} % Figure~\ref{game:dominance1}
+\end{figure}
+
+%Player 1                                       Player 2
+%       L   C   R
+%   U   1, 1    2, 0    2, 2
+%   M   0, 3    1, 5    4, 4
+%   D   2, 4    3, 6    3, 0
+
+\noindent Answer: There are no strictly dominant strategies for Player 1: U is not the best strategy if Player 2 plays R, M is not the best strategy if Player 2 plays C, and D is not the best strategy if Player 2 plays R. Similarly, there are no strictly dominant strategies for Player 2: L is not the best strategy if Player 1 plays U, C is not the best strategy if Player 1 plays U, and R is not the best strategy if Player 1 plays D.
+
+But there is a strictly dominated strategy: playing U is strictly dominated by D for Player 1. We can conclude that Player 1 will never play U, and so our game reduces to the first matrix in Figure~\ref{game:dominance2}. But Player 2 should know that Player 1 will never play U, and if Player 1 never plays U then some of Player 2's strategies are strictly dominated! Namely, playing L and playing R are both strictly dominated by playing C as long as Player 1 never plays U. So we can eliminate those strategies for Player 2, yielding the second matrix in Figure~\ref{game:dominance2}. Finally, Player 1 should anticipate that Player 2 (anticipating that Player 1 will never play U) will never play L or R, and so Player 1 should conclude that M is strictly dominated by D (the final matrix in Figure~\ref{game:dominance2}). This is the process of \textbf{iterated strict dominance}, and according to this solution concept we get the following (somewhat surprising) prediction: in this game, Player 1 will choose D and Player 2 will choose C.
+
+
+\begin{figure}
+\begin{pspicture}(0,0)(0,5)
+\rput(3,2.5)
+{
+\begin{tabular}{rccc}
+ & L & C & R \\ \cline{2-4}
+ U & \multicolumn{1}{|c|}{\xout{1,1}} & \multicolumn{1}{c}{\xout{2,0}} & \multicolumn{1}{|c|}{\xout{2,2}} \\ \cline{2-4}
+ M & \multicolumn{1}{|c|}{0,3} & \multicolumn{1}{c}{1,5} & \multicolumn{1}{|c|}{4,4} \\ \cline{2-4}
+ D & \multicolumn{1}{|c|}{2,4} & \multicolumn{1}{c}{3,6} & \multicolumn{1}{|c|}{3,0} \\ \cline{2-4}
+\end{tabular}
+}
+
+\rput(11.5,2.5)
+{
+\begin{tabular}{rccc}
+ & L & C & R \\ \cline{2-4}
+ U & \multicolumn{1}{|c|}{\xout{1,1}} & \multicolumn{1}{c}{\xout{2,0}} & \multicolumn{1}{|c|}{\xout{2,2}} \\ \cline{2-4}
+ M & \multicolumn{1}{|c|}{\xout{0,3}} & \multicolumn{1}{c}{1,5} & \multicolumn{1}{|c|}{\xout{4,4}} \\ \cline{2-4}
+ D & \multicolumn{1}{|c|}{\xout{2,4}} & \multicolumn{1}{c}{3,6} & \multicolumn{1}{|c|}{\xout{3,0}} \\ \cline{2-4}
+\end{tabular}
+}
+
+\rput(20,2.5)
+{
+\begin{tabular}{rccc}
+ & L & C & R \\ \cline{2-4}
+ U & \multicolumn{1}{|c|}{\xout{1,1}} & \multicolumn{1}{c}{\xout{2,0}} & \multicolumn{1}{|c|}{\xout{2,2}} \\ \cline{2-4}
+ M & \multicolumn{1}{|c|}{\xout{0,3}} & \multicolumn{1}{c}{\xout{1,5}} & \multicolumn{1}{|c|}{\xout{4,4}} \\ \cline{2-4}
+ D & \multicolumn{1}{|c|}{\xout{2,4}} & \multicolumn{1}{c}{3,6} & \multicolumn{1}{|c|}{\xout{3,0}} \\ \cline{2-4}
+\end{tabular}
+}
+
+\end{pspicture}
+\caption{Solution to iterated strict dominance example}
+\label{game:dominance2} % Figure~\ref{game:dominance2}
+\end{figure}
+
+
+
+
+
+\begin{figure}
+begin{center}
+\begin{tabular}{crccc}
+& & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+& & L & C & R \\ \cline{3-5}
+\multirow{3}{1.5cm}{Player 1}
+& U & \multicolumn{1}{|c|}{\xout{1,1}} & \multicolumn{1}{c}{\xout{2,0}} & \multicolumn{1}{|c|}{\xout{2,2}} \\ \cline{3-5}
+& M & \multicolumn{1}{|c|}{0,3} & \multicolumn{1}{c}{1,5} & \multicolumn{1}{|c|}{4,4} \\ \cline{3-5}
+& D & \multicolumn{1}{|c|}{2,4} & \multicolumn{1}{c}{3,6} & \multicolumn{1}{|c|}{3,0} \\ \cline{3-5}
+\end{tabular}
+end{center}
+\caption{Iterated dominance example, stage 2}
+\label{game:dominance2} % Figure~\ref{game:dominance2}
+\end{figure}
+
+
+%Player 1                                       Player 2
+%       L   C   R
+%
+%   M   0, 3    1, 5    4, 4
+%   D   2, 4    3, 6    3, 0
+
+But we're not done yet. Player 2 should know that Player 1 will never play U, and if Player 1 never plays U then some of Player 2's strategies are strictly dominated! Namely, playing L and playing R are both strictly dominated by playing C as long as Player 1 never plays U. So we can eliminate those newly-dominated strategies for Player 2, yielding Figure~\ref{game:dominance3}.
+
+\begin{figure}
+\begin{center}
+\begin{tabular}{crccc}
+& & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+& & L & C & R \\ \cline{3-5}
+\multirow{3}{1.5cm}{Player 1}
+& U & \multicolumn{1}{|c|}{\xout{1,1}} & \multicolumn{1}{c}{\xout{2,0}} & \multicolumn{1}{|c|}{\xout{2,2}} \\ \cline{3-5}
+& M & \multicolumn{1}{|c|}{\xout{0,3}} & \multicolumn{1}{c}{1,5} & \multicolumn{1}{|c|}{\xout{4,4}} \\ \cline{3-5}
+& D & \multicolumn{1}{|c|}{\xout{2,4}} & \multicolumn{1}{c}{3,6} & \multicolumn{1}{|c|}{\xout{3,0}} \\ \cline{3-5}
+\end{tabular}
+\end{center}
+\caption{Iterated dominance example, stage 3}
+\label{game:dominance3} % Figure~\ref{game:dominance3}
+\end{figure}
+
+
+%Player 1                                       Player 2
+%           C
+%
+%   M       1, 5
+%   D       3, 6
+
+
+\begin{figure}
+\begin{center}
+\begin{tabular}{crccc}
+& & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+& & L & C & R \\ \cline{3-5}
+\multirow{3}{1.5cm}{Player 1}
+& U & \multicolumn{1}{|c|}{\xout{1,1}} & \multicolumn{1}{c}{\xout{2,0}} & \multicolumn{1}{|c|}{\xout{2,2}} \\ \cline{3-5}
+& M & \multicolumn{1}{|c|}{\xout{0,3}} & \multicolumn{1}{c}{1,5} & \multicolumn{1}{|c|}{\xout{4,4}} \\ \cline{3-5}
+& D & \multicolumn{1}{|c|}{\xout{2,4}} & \multicolumn{1}{c}{3,6} & \multicolumn{1}{|c|}{\xout{3,0}} \\ \cline{3-5}
+\end{tabular}
+\end{center}
+\caption{Iterated dominance example, stage 3}
+\label{game:dominance3} % Figure~\ref{game:dominance3}
+\end{figure}
+
+
+%Player 1                                       Player 2
+%           C
+%
+%   M       1, 5
+%   D       3, 6
+
+
+\begin{figure}
+\begin{center}
+\begin{tabular}{crccc}
+& & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+& & L & C & R \\ \cline{3-5}
+\multirow{3}{1.5cm}{Player 1}
+& U & \multicolumn{1}{|c|}{\underline{5},1} & \multicolumn{1}{c}{2,0} & \multicolumn{1}{|c|}{2,\underline{2}} \\ \cline{3-5}
+& M & \multicolumn{1}{|c|}{0,4} & \multicolumn{1}{c}{1,\underline{5}} & \multicolumn{1}{|c|}{\underline{4},\underline{5}} \\ \cline{3-5}
+& D & \multicolumn{1}{|c|}{2,4} & \multicolumn{1}{c}{\underline{3},\underline{6}} & \multicolumn{1}{|c|}{1,0} \\ \cline{3-5}
+\end{tabular}
+\end{center}
+\caption{Nash equilibrium example, with underlinings}
+\label{game:nash2} % Figure~\ref{game:nash2}
+\end{figure}
+
+
+%Player 1                                       Player 2
+%       L   C   R
+%   U   5, 1    2, 0    2, 2
+%   M   0, 4    1, 5    4, 5
+%   D   2, 4    3, 6    1, 0
+
+\end{comment}
+
+% I'M COMMENTING OUT THIS LONG EXAMPLE. SHOULD WE DISCUSS THE STICKS GAME??? I THINK SO...
+% FIX
+
+\begin{comment}
+Example: Identify the Nash Equilibrium in the following game.
+
+\begin{figure}[hbt]
+\vspace{1in}
+\caption{Nash}
+\label{fig:nash3}
+\end{figure}
+
+%Player 1                                       Player 2
+%       E   F   G   H
+%   A   1,0 1,0 0,1 0,1
+%   B   0,1 0,1 0,1 0,1
+%   C   0,1 1,0 0,1 1,0
+%   D   0,1 1,0 0,1 1,0
+%
+
+
+Answer: The underlinings are as follows:
+
+\begin{figure}[hbt]
+\vspace{1in}
+\caption{Nash}
+\label{fig:nash4}
+\end{figure}
+
+%Player 1                                       Player 2
+%       E   F   G   H
+%   A   1,0 1,0 0,1 0,1
+%   B   0,1 0,1 0,1 0,1
+%   C   0,1 1,0 0,1 1,0
+%   D   0,1 1,0 0,1 1,0
+%
+
+So there are four Nash equilibriums: (A, G), (B, G), (C, G), and (D, G). What we can predict for this game is that Player 2 is likely to play G, but we cannot make a good prediction for Player 1.
+
+Comment: This game is actually the Sticks game (see the homework) when there are 4 sticks left and Player 1 goes first! Player 1 must choose to take one or two of the four sticks, and may have to choose again with two sticks on the table. Player 2 may have to choose with either three or two sticks on the table.
+
+So the strategies correspond to the following:
+
+\begin{description}
+\item[A] With four sticks, take one; with two sticks, take one
+\item[B] With four sticks, take one; with two sticks, take two
+\item[C] With four sticks, take two; with two sticks, take one
+\item[D] With four sticks, take two; with two sticks, take two
+\item[E] With three sticks, take one; with two sticks, take one
+\item[F] With three sticks, take one; with two sticks, take two
+\item[G] With three sticks, take two; with two sticks, take one
+\item[H] With three sticks, take two; with two sticks, take two
+\end{description}
+
+When we watch two people play this game, all we know for sure is that Player 2 will follow strategy G. We cannot predict with any certainty what Player 1 will do. And this is exactly what we learn from examining the Nash equilibriums of the game!!!
+
+Comment: The sticks example suggests that you can transform any game tree into a game in strategic form (i.e., one with a payoff matrix). This is true, and if you take more game theory you can learn how to transform strategic form games into game trees\ldots
+
+
+\subsection*{Refinements of Nash Equilibria (Not Fair Game for the Exam)}
+
+If you go on and take more game theory, you will learn various refinements of the Nash equilibrium concept. For example, it is not terribly realistic to predict that Player 1 will adopt strategy B or strategy D: these both involve taking two sticks when there are only two sticks left, and this does not seem like a sensible strategy. Additional refinements can identify A and C as the only likely strategies for Player 1. (Why, then, are B and D still parts of Nash equilibriums? Because when the game is actually played Player 1 never gets to choose when there are two sticks left; so Player 1's flawed strategy is never revealed!)
+
+
+% I'M COMMENTING OUT THIS LONG EXAMPLE. SHOULD WE DISCUSS THE STICKS GAME??? I THINK SO...
+% FIX
+
+\end{comment}

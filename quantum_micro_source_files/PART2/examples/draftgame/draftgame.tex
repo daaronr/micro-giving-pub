@@ -1,0 +1,166 @@
+\documentclass[twoside]{article}
+\usepackage{pstricks, pst-node, pst-tree, pstcol, pst-plot, pst-text}
+
+%\usepackage[dvips, pdfnewwindow=true]{hyperref}
+
+\usepackage{version} %Allows version control; also \begin{comment} and \end{comment}
+\includeversion{EXAM}\excludeversion{KEY}
+%\includeversion{KEY}\excludeversion{EXAM}
+
+\newcommand{\mybigskip}{\vspace{1in}}
+\newcommand{\mybiggerskip}{\vspace{1.5in}}
+\usepackage{multirow} % Allows multiple rows in tables
+
+\usepackage{rotating} % Allows rotated material
+
+\psset{unit=.5cm}
+
+\psset{levelsep=5cm, labelsep=2pt, tnpos=a, radius=2pt, treefit=loose}
+
+\renewcommand{\arraystretch}{1.3} % This is for the payoff matrices, so there's enough space between rows.
+
+\pagestyle{empty}
+
+
+\renewcommand{\topfraction}{1}
+\renewcommand{\bottomfraction}{1}
+\renewcommand{\textfraction}{0}
+
+
+
+
+\begin{document}
+
+
+\begin{center}
+\Large The Draft Game, from Brams and Taylor 
+\end{center}
+\normalsize
+\bigskip
+
+
+
+\begin{EXAM} \noindent Three football teams (X, Y, Z) are involved in a draft for new players. There are six players to choose from (Center, Guard, Tailback, Quarterback, Halfback, Fullback), and the draft works as follows: First X chooses a player, then Y chooses one of the remaining five players, then Z chooses one of the remaining four players (this constitutes the first round of the draft); the same procedure is repeated in the second round, at the end of which all six players are taken.
+
+The teams' preferences are as follows:
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|ccccccc|} \hline
+& Top choice &  Second & Third & Fourth & Fifth & Sixth\\
+X & C   & G &   T & Q   & H & F\\
+Y & H   & F &   G & C   & Q &   T\\
+Z & T   & F &   H & Q   & C &   G\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Assume that the teams all know each others' preferences. Then we can model the draft as a game tree, with team X choosing first \&etc. The complete game tree for this draft is quite involved, but \emph{trust me, it all boils down to the game tree shown in Figure~\ref{game:draft}.}
+
+\psset{levelsep=3cm}
+\begin{center}
+\begin{figure}[h]
+\begin{pspicture}(0,0)(0,16)
+\rput(12,7)%(12,7)
+{ \pstree[treemode=R]{\TC*~{X}} {
+    \pstree[treemode=R]{\TC*~{Y}\taput{C}}
+    {
+        \pstree[treemode=R]{\TC*~{Z}\taput{H}}
+        {
+            \TC*~[tnpos=r]{(CG, HF, TQ)}
+            \taput{T}
+            \TC*~[tnpos=r]{(CG, HQ, FT)}
+            \tbput{F}
+        }
+            \TC*~[tnpos=r]{(CQ, GH, TF)}
+            \tbput{G}
+    }
+    \pstree[treemode=R]{\TC*~{Y}\tbput{T}}
+    {
+        \pstree[treemode=R]{\TC*~{Z}\taput{H}}
+        {
+            \TC*~[tnpos=r]{(TC, HG, FQ)}
+            \taput{F}
+            \TC*~[tnpos=r]{(TC, HF, QG)}
+            \tbput{Q}
+        }
+        \pstree[treemode=R]{\TC*~{Z}\tbput{F}}
+        {
+            \TC*~[tnpos=r]{(TC, FG, HQ)}
+            \taput{H}
+            \TC*~[tnpos=r]{(TC, FH, QG)}
+            \tbput{Q}
+        }
+    }
+} }
+\end{pspicture}
+\caption{The draft game}
+\label{game:draft} % Figure~\ref{game:draft}
+\end{figure}
+\end{center}
+
+%\clearpage
+%                                 T     (CG, HF, TQ)
+%                           Z           (1+2, 1+2, 1+4)
+%                        H
+%                    Y                F     (CG, HQ, FT)
+%              C            G           (1+2, 1+5, 2+1)
+%          X                    (CQ, GH, TF)
+%                           (1+4, 3+1, 1+2)
+%
+%           T                       (TC, HG, FQ)
+%                                   F       (3+1, 1+3, 2+4)
+%                       H           Z
+%                  Y                Q       (TC, HF, QG)
+%                                   (3+1, 1+2, 4+6)
+%
+%                         F             (TC, FG, HQ)
+%                              H        (3+1, 2+3, 3+4)
+%                             Z
+%                             Q     (TC, FH, QG)
+%                                   (3+1, 2+1, 4+6)
+
+The payoffs for this game are the players each team gets. For example, (CG, HQ, TF) indicates that team X gets the Center and the Guard (its \#1 and \#2 choices), team Y gets the Halfback and the Quarterback (\#1 and \#2), and team Z gets the Tailback and the Fullback (\#1 and \#4). Clearly each team would prefer to get the players it likes the most, e.g., team X prefers CT (or TC) to CQ or GQ.\end{EXAM}
+
+    \begin{enumerate}
+    \item \begin{EXAM} The ``naive" strategy is for each team to choose its top choice among the available players every time it gets to pick. What is the outcome of this strategy? \end{EXAM}%Write it down or use an obvious marker like a star to highlight it on the game tree on the previous page.
+
+\begin{KEY}
+The naive outcome is for X to choose C, Y to choose H, and Z to choose T, producing the ``naive outcome" at the top of the game tree.
+\end{KEY}
+
+    \item \begin{EXAM} If teams X and Y pursue this naive strategy by picking C and H in the first round, should team Z also pursue this strategy, i.e., pick T? %Circle  Yes  No.
+Briefly explain why or why not.\end{EXAM}
+
+\begin{KEY}
+No. If X and Y choose C and H, Z will choose F because this produces a better outcome for Z: FT is better than TQ! (But now backward induction kicks in: Y anticipates this, and so Y will choose G instead of  H---GH is better than HQ. But X anticipates this, and so knows that a choice of C will result in CQ. X then uses backward induction to solve the bottom half of the tree---Z will choose F in the top part and H in the lower part, so Y will choose H because HG is better than FG---and determine that a choice of T will result in TC. Since X prefers TC to CQ, X chooses T in the first round, leading Y to choose H and Z to choose F.
+\end{KEY}
+
+    \item \begin{EXAM} What outcome do you expect from this game using backward induction? \end{EXAM} %Write it down or use an obvious marker like two stars to highlight it on the game tree on the previous page.
+
+\begin{KEY}
+Backward induction leads to a result of (TC, HG, FQ).
+\end{KEY}
+
+    \item \begin{EXAM} Is the expected outcome you identified Pareto efficient? If so, explain. If not, identify a Pareto improvement.\end{EXAM}
+
+\begin{KEY}
+This is not Pareto efficient: the ``naive" strategies produce
+better outcomes for all three teams!
+\end{KEY}
+
+    \item \begin{EXAM} Statement 1: ``In the first round, the optimal move for each team is to pick the best available player."  Statement 2: ``In the second round, the optimal move for each team is to pick the best available player."  Explain why Statement 1 is false but Statement 2 is true.\end{EXAM}
+
+\begin{KEY}
+Statement \#1 is false because each team's choice in the first round will have strategic implications for its options in the second round. Statement \#2 is true because each team's choice in the second round has no further ramifications; since there are no more rounds, in the second round each team faces a simple decision tree.
+\end{KEY}
+
+    \item \begin{EXAM} \emph{Super Challenge} Prove that the game tree really does boil down to what's shown on the previous page.\end{EXAM}
+
+\begin{KEY}
+This is a time-consuming problem. Thanks to Kieran Barr for finding two strategies that yield this same outcome! 
+\end{KEY}
+
+    \end{enumerate}
+
+\end{document} 

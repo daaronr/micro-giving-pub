@@ -1,0 +1,117 @@
+\documentclass{article}
+%\usepackage{color}
+%\usepackage[dvips]{graphics}
+\usepackage{pstricks, pst-node, pst-tree, pst-plot}
+\usepackage[dvips]{hyperref}
+\usepackage{version} %Allows version control; also \begin{comment} and \end{comment}
+\usepackage{multirow} % Allows multiple rows in tables
+\usepackage{rotating} % Allows rotated material
+
+\usepackage{ulem} % This line allows for strike-outs of lines. Usage includes \sout{text} for strike-outs and \xout{text} for cross-outs. Ssee game theory section for examples.
+\normalem % This undoes ulem's emph->underline feature so that \emph works properly
+
+%\usepackage{boxedminipage}
+%\includeonly{ch2}
+
+\definecolor{Myblue}{cmyk}{0,0,0,1}%{1, .4, 0,0}
+\definecolor{Myyellow}{cmyk}{0,0,0,1}%{0,0,1,0}
+\definecolor{Mygreen}{cmyk}{0,0,0,1}%{1,.4,1,0}
+\psset{unit=1.4cm}
+%\psset{unit=.5cm, showbbox=true}
+\psset{levelsep=5cm, labelsep=2pt, tnpos=a, radius=2pt}
+\newpsobject{showgrid}{psgrid}{subgriddiv=1, gridwidth=1pt, griddots=40, gridlabelcolor=white, gridlabels=0pt}
+
+\renewcommand{\arraystretch}{1.3} % This is for the payoff matrices, so there's enough space between rows.
+
+
+
+%BEGIN{GAS MARKET GRAPH COMPONENTS}
+\newcommand{\gasbegin}{
+    \begin{center}
+    \begin{pspicture}(0,0)(11,10)\showgrid
+   \rput[r](-.4,1){\Huge \$2.00}
+   \rput[r](-.4,2){\Huge \$4.00}
+   \rput[r](-.4,3){\Huge \$6.00}
+   \rput[r](-.4,4){\Huge \$8.00}
+   \rput[r](-.4,5){\Huge \$10.00}
+   \rput[r](-.4,6){\Huge \$12.00}
+   \rput[r](-.4,7){\Huge \$14.00}
+   \rput[r](-.4,8){\Huge \$16.00}
+   \rput[r](-.4,9){\Huge \$18.00}
+   \rput[r](-.4,10){\Huge \$20.00}
+%   \rput[t](1, -.4){\Huge 5}
+%   \rput[t](2, -.4){\Huge 10}
+%   \rput[t](3, -.4){\Huge 15}
+%   \rput[t](4, -.4){\Huge 20}
+%   \rput[t](5, -.4){\Huge 25}
+%   \rput[t](6, -.4){\Huge 30}
+%   \rput[t](7, -.4){\Huge 35}
+%   \rput[t](8, -.4){\Huge 40}
+%   \rput[t](9, -.4){\Huge 45}
+%   \rput[t](10, -.4){\Huge 50}
+%   \rput[t](11, -.4){\Huge 55}
+   \rput[t](1, -.4){\Huge 3}
+   \rput[t](2, -.4){\Huge 6}
+   \rput[t](3, -.4){\Huge 9}
+   \rput[t](4, -.4){\Huge 12}
+   \rput[t](5, -.4){\Huge 15}
+   \rput[t](6, -.4){\Huge 18}
+   \rput[t](7, -.4){\Huge 21}
+   \rput[t](8, -.4){\Huge 24}
+   \rput[t](9, -.4){\Huge 27}
+   \rput[t](10, -.4){\Huge 30}
+   \rput[t](11, -.4){\Huge 33}
+%   \rput[t](1, -.4){\Huge 2}
+%   \rput[t](2, -.4){\Huge 4}
+%   \rput[t](3, -.4){\Huge 6}
+%   \rput[t](4, -.4){\Huge 8}
+%   \rput[t](5, -.4){\Huge 10}
+%   \rput[t](6, -.4){\Huge 12}
+%   \rput[t](7, -.4){\Huge 14}
+%   \rput[t](8, -.4){\Huge 16}
+%   \rput[t](9, -.4){\Huge 18}
+%   \rput[t](10, -.4){\Huge 20}
+}
+
+\newcommand{\gassupplyold}{
+    \psline(0,0)(10,10)}
+
+\newcommand{\gassupplynew}{
+    \psline(0,2)(8,10)}
+
+\newcommand{\gassupplyarrows}{
+    \psline{->}(3.5,3.8)(3.5,5.2)}
+
+\newcommand{\gasdemandold}{
+    \psline(2,10)(10,2)}
+
+\newcommand{\gasdemandnew}{
+    \psline(0,8)(8,0)}
+
+\newcommand{\gasdemandarrows}{
+    \psline{->}(3.5,6.2)(3.5,4.8)}
+
+\newcommand{\gasend}{
+    \psaxes[labels=none, showorigin=false](11,10)
+    \end{pspicture}
+    \end{center}}
+
+\pagestyle{empty}
+%END{GAS MARKET GRAPH COMPONENTS}
+
+\begin{document}
+
+%{\Huge Hypothetical market for gasoline} \\ \\
+
+\begin{figure}[h]
+\gasbegin  %\showgrid
+%\gassupplyold
+%\gasdemandold
+\gasend
+%\caption{\Huge A hypothetical market for gasoline}
+\label{fig:gas1} % Figure~\ref{fig:gas1}
+\end{figure}
+
+\clearpage
+
+\end{document}

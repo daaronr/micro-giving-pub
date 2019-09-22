@@ -1,0 +1,698 @@
+%Add chain rule
+
+\chapter{Decision theory}      % Enter chapter title between curly braces
+\label{1intro}
+
+\begin{quote}\index{jokes!Zen monk} Two Zen monks walking through a garden stroll onto a small bridge over a goldfish pond and stop to lean their elbows on the railing and look contemplatively down at the fish. One monk turns to the other and says, ``I wish I were a fish; they are so happy and content." The second monk scoffs: ``How do you know fish are happy? You're not a fish!" The reply of the first monk: ``Ah, but how do you know what I know, since you are not me?"
+\end{quote}
+
+\vspace*{.4cm}
+
+\noindent Economics is a social science, and as such tries to explain human behavior. Different disciplines---psychology, sociology, political science, anthropology---take different approaches, each with their own strengths and weaknesses; but all try to shed some light on human behavior and (as the joke suggests) all have to make assumptions about how people work. The basic assumption of economics is that \textbf{decisions are made by optimizing individuals}.\index{economics!basic assumption of}
+
+\subsection*{Decisions}
+
+Economics studies the act and implications of choosing. Without choice, there is nothing to study. As Mancur Olson\index{Olson, Mancur} put it in \emph{The Logic of Collective Action}: %(p. 161)
+``To say a situation is `lost' or hopeless is in one sense equivalent to saying it is perfect, for in both cases efforts at improvement can bring no positive results."
+
+
+\subsection*{Individuals}
+
+Economics assumes that the power to make choices resides in the hands of individuals. The approach that economists take in studying the behavior of groups of individuals (consumers, businesses, countries, etc.) is to study the incentives and behaviors of each individual in that group.
+
+The key question in economics is whether---and under what circumstances---\emph{individual} decision-making leads to results that are good \emph{for the group as a whole}. For a pessimistic view on this issue, see the Prisoner's Dilemma game in Chapter~\ref{2simultaneous}. For an optimistic view, see Chapter~\ref{3transition} or consider the words of Adam Smith, who wrote in 1776 that ``[man is] led by an invisible hand\index{invisible hand}\index{hand!invisible} to promote an end which was no part of his intention\ldots. By pursuing his own interest he frequently promotes that of society more effectually than when he really intends to promote it.''
+
+
+\subsection*{Optimization}
+
+Economics assumes that individuals try to do the best they can. Although economics is unwavering in the assumption that individuals are optimizing---i.e., that each has some objective---there \emph{is} flexibility in determining exactly what those objectives are. In particular, economics does not need to assume that individuals are selfish or greedy; their objectives may well involve friends or family, or people they've never met, or even plants and animals.
+
+Economics also does not make value judgments about different types of individuals; for example, economists do not say that people who avoid risk\index{risk} are better or worse than people who seek out risk\index{risk}. We simply note that, given identical choices, different people act in different ways. In all cases, we assume that each individual is making the decision that is in their best interest.
+
+\smallskip
+
+\noindent \textbf{An aside about individual firms} \ \ Economists often treat companies as optimizing individuals with a goal of \emph{profit maximization\index{profit}.} (For our purposes, \textbf{profit} is simply money in minus money out.\footnote{The ideas in Chapter~\ref{1time} can be used to refine this definition to account for the changing value of money over time. Note also that there are many different definitions of profit, including ``accounting profit"\index{profit!accounting} and ``economic profit"\index{profit!economic}.}) % FIX: Do this is Chapter 1time!
+Although the assumption of profit maximization is useful, it does have some problems. One is that some firms---such as food co-operatives---have different goals. A deeper problem is that it is not entirely correct to attribute any goals whatsoever to firms because firms are not optimizing individuals. Rather, a firm is a collection of individuals---workers, managers, stockholders---that is unlikely to function seamlessly as a cohesive optimizing unit because the various individuals have their own objectives. While some branches of economics do analyze the goings-on inside firms, in many cases it is valuable to simplify matters by assuming---as we will throughout this book---that firms act like optimizing individuals and that their objective is to maximize profit\index{profit}.
+
+\smallskip
+
+\noindent \textbf{An aside about individual people} \ \ Economists say that optimizing individuals pursue \emph{utility maximization}. Although you can think of \textbf{utility} as simply a fancy word for happiness, some complex philosophical and mathematical ideas lie under the surface. At the heart of modern economic theory is the idea of \emph{preferences}: given two options, an individual can say that she prefers one over the other (or that she likes them both equally). If we make certain assumptions---e.g., that if the individual prefers A over B and prefers B over C then she prefers A over C---then we can represent individual preferences using a \textbf{utility function} that assigns a number (a ``happiness level") to each option. Economists in the late 1900s thought that utility might actually be real, something that could be measured using ``hedonometers" or ``psychogalvanometers". In contrast, modern economic theory treats utility as simply a handy mathematical technique for representing an individual's preferences: saying that option A produces a utility of 20 and option B produces a utility of 10 means no more and no less than saying that the individual prefers A to B.\footnote{For details, see Jean-Jacques Laffont, \emph{The Economics of Uncertainty and Information} (MIT Press, 1995), or Mas-Colell, Whinston, and Green, \emph{Microeconomic Theory} (Oxford Univ.\ Press, 1995), which is basically the \emph{Joy of Cooking} of microeconomics.}
+
+
+\section{Decision trees\index{decision tree}}       % Choices in Boxes or Decision Theory???
+
+%\enlargethispage{\baselineskip} % This and the one below are to squeeze this chapter onto one less page.
+
+We can imagine that optimizing individuals make decisions by listing all the options and then choosing the best one. We can visualize this process with the help of a \textbf{decision tree\index{decision tree}} (Figure~\ref{fig:dtree_basic}). The individual starts at the left-most node on the tree, chooses between the various options, and continues moving along the branches until he reaches one of the payoff boxes at the end of the tree.
+
+\begin{Figure}[h]{A simple decision tree\index{decision tree}}[fig:dtree_basic]
+\begin{pspicture}(-4,-4)(16,4)
+\psset{levelsep=3cm}
+\pstree[treemode=R]{\TC*}
+{
+\TC*~[tnpos=r]{\psframebox{$\displaystyle\frac{\mbox{Outcome 1}}{\ldots}$}}
+%\taput{Option 1}
+\pstree{\TC*}
+{\TC*~[tnpos=r]{\psframebox{$\displaystyle\frac{\mbox{Outcome 2}}{\ldots}$}}
+\TC*~[tnpos=r]{\psframebox{$\displaystyle\frac{\mbox{Outcome 3}}{\ldots}$}}
+}
+}
+\end{pspicture}
+\end{Figure}
+
+% FIX: PUT IN EXAMPLE??? Car Mechanic?
+
+%This type of systematic analysis can be quite important, as can be seen in the ``Calculating Your Real Hourly Wage" excerpt from \emph{Your Money or Your Life} in the reading packet.
+
+Comparing the items in the various payoff boxes, we can see that some are in all the payoff boxes and some are not. Items that are in all the payoff boxes are called \textbf{sunk costs\index{cost!sunk}}. For example, say you pay \$20 to enter an all-you-can-eat restaurant. Once you enter and begin making choices about what to eat, the \$20 you paid to get into the restaurant becomes a sunk cost: no matter what you order, you will have paid the \$20 entrance fee.
+
+The important thing about sunk costs\index{cost!sunk} is that they're often not important. \emph{If the same item is in all of the payoff boxes, it's impossible to make a decision solely on the basis of that item.} Sunk costs\index{cost!sunk} can provide important background material for making a decision (see problem~\ref{sunkcostmatters}), but the decision-making process depends crucially on items that are not in all the boxes.
+
+Once you think you've found the best choice, a good way to check your work is to look at some nearby choices. Such \textbf{marginal analysis\index{marginal!analysis}} basically involves asking ``Are you sure you don't want a little more or a little less?" For example, imagine that an optimizing individual goes to the grocery store, sees that oranges are 25 cents apiece (i.e., that the \textbf{marginal cost\index{marginal!cost}} of each orange is 25 cents), and decides to buy five. One nearby choice is ``Buy four"; since our optimizing individual chose ``Buy five" instead, her \textbf{marginal benefit\index{marginal!benefit}} from the fifth orange must be \emph{more} than 25 cents. Another nearby choice is ``Buy six''; since our optimizing individual chose ``Buy five'' instead,  her marginal benefit\index{marginal!benefit} from a sixth orange must be \emph{less} than 25 cents.
+
+%FIX: Do example with firm.
+
+As an analogy for marginal analysis, consider the task of finding the highest place on Earth. If you think you've found the highest place, marginal analysis helps you verify this by establishing a condition that is \emph{necessary but not sufficient}: in order for some spot to be the highest spot on Earth, it is necessarily true that moving a little bit in any direction cannot take you any higher. Simple though it is, this principle is quite useful for checking your work. (It is not, however, infallible: although all mountain peaks pass the marginal analysis test, not all of them rank as the highest spot on Earth.)
+
+
+\section{Example: Monopoly}
+
+Recall that one of our assumptions is that firms are profit-maximizing. This assumption takes on extra significance in the case of \textbf{monopoly\index{monopoly}}---i.e., when there is only one seller of a good---because of the lack of competition. We will see in Part~\ref{many_v_many} that competition between firms imposes tight constraints on their behavior. In contrast, monopolists have more freedom, and a key component of that freedom is the ability to set whatever price they want for their product.\footnote{For this reason, firms with monopoly power are also known as \textbf{price-setting} firms, whereas firms in a competitive market are known as \textbf{price-taking} firms.} Indeed, we will see in Part~\ref{one_v_one} that monopolists will try to charge different people different prices based on their willingness to pay for the product in question.
+
+For now, however, we will focus on a \textbf{uniform pricing monopolist}---like the one in Figure~\ref{fig:dtree_monopoly}---who must charge all customers the same price. In this situation, the monopolist's profit is calculated according to
+\begin{eqnarray*}
+\mbox{Profit} & = & \mbox{Total Revenue} - \mbox{Total Costs} \\
+& = & \mbox{Price} \cdot \mbox{Quantity} - \mbox{Total Costs}
+\end{eqnarray*}
+% FIX: Halvorsen said something about how this is the definition of profit, not the profit function. I think he thinks the profit function is pq - c(q) or something.
+From this equation we can see that a profit-maximizing monopolist will try to minimize costs, just like any other firm; every dollar they save in costs is one more dollar of profit. So the idea that monopolists are slow and lazy doesn't find much support in this model.\footnote{More progress can be made in this direction by studying \textbf{regulated monopolies}\index{monopoly!regulated} that are guaranteed a certain profit level by the government. Such firms are not always allowed to keep cost savings that they find.}%, and they often have a \textbf{cost-plus} agreement that ensures that they will receive sufficient revenue to cover their costs plus earn some predetermined profit. In these cases there can be substantial incentives for \textbf{gold-plating}, e.g., building fancy office buildings with gold-plated bathroom fixtures. }
+% FIX: Halvorsen really didn't like this footnote. He says that cost-plus monopolies will still minimize costs (with some conditions, I think, e.g., that demand is elastic or something). Work on this!
+
+%Second, we can catch a glimpse of the monopolist's fundamental problem: it faces a trade-off between \textbf{profit margin} (making a lot of money on each unit by charging a high price) and \textbf{volume} (making a lot of money by selling lots of units). The decision tree in Figure~\ref{fig:dtree_monopoly} shows some of the different price options for a hypothetical monopolist; it also shows that a higher price will drive away customers, thereby reducing the quantity that it sells. (This inverse relationship between price and the quantity that customers want to buy is formally known as the \textbf{Law of Demand}.) The monopolist would like to sell a large quantity for a high price, but it is forced to choose between selling a smaller quantity for a high price and selling a larger quantity for a low price. The decision tree shows that the monopolist's optimal choice in this example is to choose a price of \$5 per unit.
+
+
+\begin{Figure}[p]{A decision tree\index{decision tree} for a uniform-pricing monopoly. The second line in each payoff box shows the amount that buyers are willing to buy at the given price. The third line show the monopolist's total revenue if it chooses the given price; note that the highest price (\$6 per unit) yields \emph{less} revenue than lower prices! The fourth line shows the monopolist's costs for producing the amount that buyers want to buy at the given price; in this case there are constant production costs of \$1 per unit. The final line shows the monopolist's profit, identifying a price of \$5 per unit as the profit-maximizing choice.}[fig:dtree_monopoly]
+\begin{pspicture}(-1,-14.5)(16,14.5)
+\psset{levelsep=5cm}
+\pstree[treemode=R]{\TC*}
+{
+\TC*~[tnpos=r]{\fbox{\parbox{6cm}{\textbf{At a price of \$2 per unit:}\\buyers will buy 7 million units;\\total revenue will be $2\cdot 7=\$14$ million;\\total cost will be \$7 million; and \\profit will be $14-7=\$7$ million}}}
+\TC*~[tnpos=r]{\fbox{\parbox{6cm}{\textbf{At a price of \$3 per unit:}\\buyers will buy 6 million units;\\total revenue will be $3\cdot 6=\$18$ million;\\total cost will be \$6 million; and \\profit will be $18-6=\$12$ million}}}
+\TC*~[tnpos=r]{\fbox{\parbox{6cm}{\textbf{At a price of \$4 per unit:}\\buyers will buy 5 million units;\\total revenue will be $4\cdot 5=\$20$ million;\\total cost will be \$5 million; and \\profit will be $20-5=\$15$ million}}}
+\TC*~[tnpos=r]{\fbox{\parbox{6cm}{\textbf{At a price of \$5 per unit:}\\buyers will buy 4 million units;\\total revenue will be $5\cdot 4=\$20$ million;\\total cost will be \$4 million; and \\profit will be $20-4=\$16$ million}}}
+\TC*~[tnpos=r]{\fbox{\parbox{6cm}{\textbf{At a price of \$6 per unit:}\\buyers will buy 3 million units;\\total revenue will be $6\cdot 3=\$18$ million;\\total cost will be \$3 million; and \\profit will be $18-3=\$15$ million}}}
+}
+\end{pspicture}
+% This is c(q)=q, q=9-p, with q measured in $millions.
+\end{Figure}
+
+
+We can also see the monopolist's \textbf{uniform pricing problem}: it would like to sell a large quantity for a high price, but it is forced to choose between selling a smaller quantity for a high price and selling a larger quantity for a low price. In other words, it faces a trade-off between \textbf{profit margin} (making a lot of money on each unit by charging a high price) and \textbf{volume} (making a lot of money by selling lots of units). The decision tree in Figure~\ref{fig:dtree_monopoly} gives an example showing how a higher price will drive away customers, thereby reducing the quantity that the monopolist can sell. In Part~\ref{many_v_many} we will return to the inverse relationship between price and the quantity that customers want to buy, a relationship formally known as the \textbf{Law of Demand}.
+
+
+
+%\footnote{If you do calculus\index{calculus}: the mathematics of optimization simply involves taking derivatives and setting them equal to zero. This is precisely what marginal analysis\index{marginal!analysis} entails: you look at small changes (e.g., $\Delta x$) and then take limits as $\Delta x$ approaches zero. Since we don't do calculus\index{calculus} here, we stop at $\Delta x$.}
+
+\begin{CALCULUS}
+
+\section{\emph{Math}: Optimization and calculus\index{calculus}}
+
+
+\subsection*{Derivatives in theory}
+
+The \textbf{derivative\index{derivative}} of a function $f(x)$, written $\displaystyle \frac{d}{dx}\left[ f(x)\right]$ or $\displaystyle \frac{d\,  f(x)}{dx}$ or $f'(x)$, measures the \emph{instantaneous rate of change} of $f(x)$:
+\[
+\frac{d}{dx}\left[ f(x)\right] = \lim_{h\rightarrow 0} \frac{f(x+h) - f(x)}{h}.
+\]
+%
+Intuitively, derivatives measures \textbf{slope\index{slope!and derivative}}: $f'(x)=-3$ intuitively means that if $x$ increases by $1$ then $f(x)$ will decrease by $3$. This intuition matches up with setting $h=1$, which yields
+\[
+f'(x)\approx \frac{f(x+1)-f(x)}{1} = f(x+1)-f(x).
+\]
+
+All of the functions we use in this class have derivatives (i.e., are \textbf{differentiable}), which intuitively means that they are smooth and don't have kinks or discontinuities. The maximum and minimum values of such functions must either be \textbf{corner solutions}---such as $x=\infty$, $x=-\infty$, or (if we are trying to maximize $f(x)$ subject to $x\geq x_{min}$) $x=x_{min}$---or \textbf{interior solutions\index{interior solution}}. The vast majority of the problems in this class will have interior solutions\index{interior solution}.
+
+At an interior maximum or minimum, the slope\index{slope!and derivative} $f'(x)$ must be zero. Why? Well, if $f'(x)\neq 0$ then either $f'(x)>0$ or $f'(x)<0$. Intuitively, this means that you're on the side of a hill---if $f'(x)>0$ you're going uphill, if $f'(x)<0$ you're heading downhill---and if you're on the side of a hill then you're not at the top (a maximum) or at the bottom (a minimum). At the top and the bottom the slope\index{slope!and derivative} $f'(x)$ will be zero.
+
+To say the same thing in math: If $f'(x)\neq 0$ then either $f'(x)>0$ or $f'(x)<0$. If $f'(x)>0$ then $f(x+h)>f(x)$ (this comes from the definition of derivative), so $f(x)$ isn't a maximum; and $f(x-h)<f(x)$ (this follows from continuity, i.e., the fact that $f(x)$ is a smooth function), so $f(x)$ isn't a minimum. Similarly, if $f'(x)<0$ then $f(x+h)<f(x)$ (this comes from the definition of derivative), so $f(x)$ isn't a minimum; and $f(x-h)>f(x)$ (this follows from continuity), so $f(x)$ isn't a maximum. So the only possible (interior) maxima or minima must satisfy $f'(x)=0$, which is called a \textbf{necessary first-order condition\index{necessary first-order condition}}.
+
+\bigskip
+
+\noindent \emph{In sum: to find candidate values for (interior) maxima or minima, simply take a derivative and set it equal to zero, i.e., find values of $x$ that satisfy $f'(x)=0$.}
+
+\bigskip
+
+Such values do not \emph{have} to be maxima or minima: the condition $f'(x)=0$ is \emph{necessary} but not \emph{sufficient}. This is a more advanced topic that we will not get into in this course, but for an example consider $f(x)=x^3$. Setting the derivative ($3x^2$) equal to zero has only one solution: $x=0$. But $x=0$ is neither a minimum nor a maximum value of $f(x)=x^3$. The \textbf{sufficient second-order condition\index{sufficient second-order condition}} has to do with the second derivative (i.e., the derivative of the derivative, written $f''(x)$). For a maximum, the sufficient second-order condition\index{sufficient second-order condition} is $f''(x)<0$; this guarantees that we're on a hill, so together with $f'(x)=0$ it guarantees that we're on the top of the hill.  For a minimum, the sufficient second-order condition\index{sufficient second-order condition} is $f''(x)>0$; this guarantees that we're in a valley, so together with $f'(x)=0$ it guarantees that we're at the bottom of the valley.)
+
+\subsubsection*{Partial derivatives\index{derivative!partial}}
+
+For functions of two or more variables such as $f(x,y)$, it is often useful to see what happens when we change one variable (say, $x$) without changing the other variables. (For example, what happens if we walk in the north-south direction without changing our east-west position?) What we end up with is the \emph{partial derivative with respect to $x$} of the function $f(x,y)$, written $\displaystyle \frac{\partial}{\partial x}\left[ f(x,y)\right]$ or $f_x(x,y)$:
+\[
+\frac{\partial}{\partial x}\left[ f(x,y)\right] = \lim_{h\rightarrow 0} \frac{f(x+h, y) - f(x,y)}{h}.
+\]
+%
+Partial derivatives measure rates of change or slopes\index{slope!and partial derivative} \emph{in a given direction}: $f_x(x,y)=3y$ intuitively means that if $x$ increases by $1$ and $y$ doesn't change then $f(x,y)$ will increase by $3y$. Note that ``regular" derivatives and partial derivatives mean the same thing for a function of only one variable: $\displaystyle \frac{d}{dx}[f(x)] = \frac{\partial}{\partial x}[f(x)]$.
+
+At an (interior) maximum or minimum of a smooth function, the slope\index{slope!and partial derivative} must be zero \emph{in all directions}. In other words, the necessary first-order conditions\index{necessary first-order condition} are that \emph{all} partials must be zero: $f_x(x,y)=0$, $f_y(x,y)=0$, etc. Why? For the same reasons we gave before: if one of the partials---say, $f_y(x,y)$---is not zero, then moving in the $y$ direction takes us up or down the side of a hill, and so we cannot be at a maximum or minimum value of the function $f(x,y)$.
+
+\bigskip
+
+\noindent \emph{In sum: to find candidate values for (interior) maxima or minima, simply take partial derivatives with respect to all the variables and set them equal to zero, e.g., find values of $x$ and $y$ that simultaneously satisfy $f_x(x,y)=0$ \emph{and} $f_y(x,y)=0$.}
+
+\bigskip
+
+As before, these conditions are necessary but not sufficient. This is an even more advanced topic than before, and we will not get into it in this course; all I will tell you here is that (1) the sufficient conditions for a maximum include $f_{xx}<0$ and $f_{yy}<0$, \emph{but these aren't enough}, (2) you can find the sufficient conditions in most advanced textbooks, e.g., Silberberg\index{Silberberg, Eugene} and Suen's\index{Suen, Wing} \emph{The Structure of Economics}, and (3) an interesting example to consider is $\displaystyle f(x,y)=\frac{\cos(x)}{\cos(y)}$ around the point $(0,0)$.
+
+%\clearpage
+
+One final point: Single variable derivatives can be thought of as a degenerate case of partial derivatives: there is no reason we can't write $f_x(x)$ instead of $f'(x)$ or $\displaystyle \frac{\partial}{\partial x} f(x)$ instead of $\displaystyle \frac{d}{dx} f(x)$. All of these terms measure the same thing: the rate of change of the function $f(x)$ in the $x$ direction.
+
+
+
+
+\subsection*{Derivatives in practice}
+
+To see how to calculate derivatives, let's start out with a very simple function: the constant function $f(x)=c$, e.g., $f(x)=2$. We can calculate the derivative of this function from the definition:
+\[
+\frac{d}{dx}(c) = \lim_{h\rightarrow 0} \frac{f(x+h) - f(x)}{h} = \lim_{h\rightarrow 0} \frac{c - c}{h} =0.
+\]
+So the derivative of $f(x)=c$ is $\displaystyle \frac{d}{dx}(c) = 0$. Note that \emph{all} values of $x$ are candidate values for maxima and/or minima. Can you see why?\footnote{Answer: All values of $x$ \emph{are} maxima; all values are minima, too! Any $x$ you pick gives you $f(x)=c$, which is both the best and the worst you can get.}
+
+Another simple function is $f(x)=x$. Again, we can calculate the derivative from the definition:
+\[
+\frac{d}{dx}(x) = \lim_{h\rightarrow 0} \frac{f(x+h) - f(x)}{h} = \lim_{h\rightarrow 0} \frac{(x+h) - x}{h} =\lim_{h\rightarrow 0} \frac{h}{h}=1.
+\]
+So the derivative of $f(x)=x$ is $\displaystyle \frac{d}{dx} (x) = 1$. Note that \emph{no} values of the function $f(x)=x$ are candidate values for maxima or minima. Can you see why?\footnote{Answer: There are no interior maxima or minima of the function $f(x)=x$.}
+
+A final simple derivative involves the function $g(x) = c\cdot f(x)$ where $c$ is a constant and $f(x)$ is any function:
+\[
+\frac{d}{dx}[c\cdot f(x)] = \lim_{h\rightarrow 0} \frac{c\cdot f(x+h) - c\cdot f(x)}{h} = c\cdot \lim_{h\rightarrow 0} \frac{f(x+h) - f(x)}{h}.
+\]
+The last term on the right hand side is simply the derivative of $f(x)$, so the derivative of $g(x) = c\cdot f(x)$ is
+$\displaystyle \frac{d}{dx}[c\cdot f(x)] = c\cdot \frac{d}{dx}[f(x)]$.
+
+
+
+
+
+
+\subsubsection*{More complicated derivatives}
+
+To differentiate (i.e., calculate the derivative of) a more complicated function, use various differentiation rules to methodically break down your problem until you get an expression involving the derivatives of the simple functions shown above.
+
+The most common rules are those involving the three main binary operations: addition, multiplication, and exponentiation.
+\begin{itemize}
+\item \textbf{Addition}\ \ \ $\displaystyle \frac{d}{dx} \left[
+f(x) + g(x) \right]  = \frac{d}{dx} \left[ f(x) \right] +
+\frac{d}{dx} \left[ g(x) \right]$.
+
+\medskip
+
+Example: $\displaystyle \frac{d}{dx} \left[ x + 2 \right]  =
+\frac{d}{dx} \left[ x \right] + \frac{d}{dx} \left[ 2 \right] = 1
++ 0 = 1.$
+
+Example: $\displaystyle \frac{d}{dx} \left[ 3x^2(x+2) + 2x \right]
+= \frac{d}{dx} \left[ 3x^2(x+2) \right] + \frac{d}{dx} \left[ 2x
+\right].$
+
+\medskip
+
+\item \textbf{Multiplication}\ \ \  $\displaystyle \frac{d}{dx}
+\left[ f(x)\cdot g(x) \right]  =  f(x)\cdot \frac{d}{dx} \left[
+g(x) \right] + g(x) \cdot \frac{d}{dx} \left[ f(x) \right].$
+
+\medskip
+
+Example: $\displaystyle \frac{d}{dx} \left[ 3x \right]  =  3\cdot
+\frac{d}{dx} \left[ x \right] + x \cdot \frac{d}{dx} \left[ 3
+\right] = 3(1) + x(0) = 3.$
+
+(Note: this also follows from the result that $\displaystyle
+\frac{d}{dx}[c\cdot f(x)] = c\cdot \frac{d}{dx}[ f(x)]$.)
+
+Example: $\displaystyle \frac{d}{dx} \left[ x(x+2) \right]  =
+x\cdot \frac{d}{dx} \left[ (x+2) \right] + (x+2) \cdot
+\frac{d}{dx} \left[ x \right] = 2x+2.$
+
+Example: $\displaystyle \frac{d}{dx} \left[ 3x^2(x+2) \right]  =
+3x^2\cdot \frac{d}{dx} \left[ (x+2) \right] + (x+2) \cdot
+\frac{d}{dx} \left[ 3x^2 \right].$
+
+\medskip
+
+\item \textbf{Exponentiation} \ \ \  $\displaystyle
+\frac{d}{dx}\left[ f(x)^a \right]  =  a\cdot f(x)^{a-1} \cdot
+\frac{d}{dx}\left[f(x)\right].$
+
+\medskip
+
+Example: $\displaystyle \frac{d}{dx}\left[ (x+2)^2 \right]  =
+2(x+2)^1\cdot \frac{d}{dx}\left[x+2 \right] = 2(x+2)(1) = 2(x+2).$
+
+Example: $\displaystyle \frac{d}{dx}\left[ (2x+2)^{\frac{1}{2}}
+\right]  =  \frac{1}{2}(2x+2)^{-\frac{1}{2}}\cdot
+\frac{d}{dx}\left[2x+2 \right] = (2x+2)^{-\frac{1}{2}}.$
+
+\medskip
+
+\end{itemize}
+
+\noindent Putting all these together, we can calculate lots of messy derivatives:
+\begin{eqnarray*}
+\frac{d}{dx} \left[ 3x^2(x+2) + 2x \right]  & = & \frac{d}{dx} \left[ 3x^2(x+2) \right] + \frac{d}{dx} \left[ 2x \right]\\
+& = & 3x^2\cdot \frac{d}{dx} \left[ x+2\right] + (x+2) \cdot \frac{d}{dx} \left[ 3x^2 \right] + \frac{d}{dx} \left[ 2x \right]\\
+& = & 3x^2(1) + (x+2)(6x) + 2\\
+& = & 9x^2+12x+2
+\end{eqnarray*}
+
+
+\subsubsection*{Subtraction and division}
+
+The rule for addition also works for subtraction, and can be seen by treating $f(x)-g(x)$ as $f(x)+ (-1)\cdot g(x)$ and using the rules for addition and multiplication. Less obviously, the rule for multiplication takes care of division: $\displaystyle \frac{d}{dx} \left[ \frac{f(x)}{g(x)} \right] = \frac{d}{dx} \left[ f(x)\cdot g(x)^{-1} \right]$. Applying the product and exponentiation rules to this yields the quotient rule,\footnote{Popularly remembered as  $\displaystyle \ d \left[\frac{\mbox{Hi}}{\mbox{Ho}} \right] = \frac{\mbox{Ho}\cdot d\mbox{Hi} - \mbox{Hi}\cdot d\mbox{Ho}}{\mbox{Ho}\cdot\mbox{Ho}}.$}
+%
+\begin{itemize}
+
+\medskip
+
+\item \textbf{Division}\ \ \  $\displaystyle
+\frac{d}{dx}\left[\frac{f(x)}{g(x)} \right] =
+\frac{g(x)\cdot\frac{d}{dx}f(x) -
+f(x)\cdot\frac{d}{dx}g(x)}{\left[ g(x)\right]^2}.$
+
+\medskip
+
+Example: $\displaystyle \frac{d}{dx}\left[\frac{3x^2+2}{-e^x}
+\right] = \frac{-e^2\cdot\frac{d}{dx}[3x^2+2] -
+(3x^2+2)\cdot\frac{d}{dx}[-e^x]}{\left[ -e^x\right]^2}.$
+\end{itemize}
+
+\subsubsection*{Exponents}
+
+If you're confused about what's going on with the quotient rule, you may find value in the following rules about exponents, which we will use frequently:
+
+\begin{center}
+\begin{tabular}{cccc}
+$x^a\cdot x^b = x^{a+b}$\hspace{.7cm} & $\left(x^a\right)^b =
+x^{ab}$\hspace{.7cm} & $\displaystyle x^{-a} = \frac{1}{x^a}$
+\hspace{.7cm} & $\displaystyle (xy)^a = x^a y^a$\hspace{.7cm}
+\end{tabular}
+\end{center}
+
+\noindent Examples: $2^2 \cdot 2^3 = 2^5$,\ \ $(2^2)^3 = 2^6$, \ \
+$2^{-2}=\frac{1}{4}$,\ \  $(2\cdot 3)^2 = 2^2\cdot 3^2$.
+
+
+\subsubsection*{Other differentiation rules: $e^x$ and $\ln (x)$}
+
+You won't need the chain rule, but you may need the rules for derivatives involving the exponential function $e^x$ and the natural logarithm function $\ln(x)$. (Recall that $e$ and $\ln$ are inverses of each other, so that $\displaystyle e^{(\ln x)} = \ln (e^x) = x$.)
+
+
+\begin{itemize}
+\item \textbf{The exponential function}\ \ \  $\displaystyle
+\frac{d}{dx}\left[ e^{f(x)} \right] = e^{f(x)}\cdot
+\frac{d}{dx}\left[ f(x)\right].$
+
+\medskip
+
+Example: $\displaystyle \frac{d}{dx}\left[ e^x \right] = e^x\cdot
+\frac{d}{dx}\left[ x\right] = e^x.$
+
+Example: $\displaystyle \frac{d}{dx}\left[ e^{3x^2+2} \right] =
+e^{3x^2+2}\cdot \frac{d}{dx}\left[ 3x^2+2\right] =
+e^{3x^2+2}\cdot(6x).$
+
+\medskip
+
+\item \textbf{The natural logarithm function} \ \ \ $\displaystyle
+\frac{d}{dx}\left[ \ln f(x) \right] =
+\frac{1}{f(x)}\cdot\frac{d}{dx}\left[f(x)\right].$
+
+\medskip
+Example: $\displaystyle \frac{d}{dx}\left[ \ln x \right] =
+\frac{1}{x}\cdot\frac{d}{dx}\left[x\right] = \frac{1}{x}.$
+
+Example: $\displaystyle \frac{d}{dx}\left[ \ln (3x^2+2) \right] =
+\frac{1}{3x^2+2}\cdot\frac{d}{dx}\left[3x^2+2\right] =
+\frac{1}{3x^2+2}(6x).$
+
+\end{itemize}
+
+
+\subsection*{Partial derivatives}
+
+Calculating partial derivatives (say, with respect to $x$) is easy: just treat all the other variables as constants while applying all of the rules from above. So, for example,
+\begin{eqnarray*}
+\frac{\partial}{\partial x}\left[ 3x^2y + 2e^{xy}-2y\right] & = & \frac{\partial}{\partial x}\left[ 3x^2y \right] + \frac{\partial}{\partial x}\left[ 2e^{xy} \right] -  \frac{\partial}{\partial x}\left[ 2y\right]\\
+& = & 3y\frac{\partial}{\partial x}\left[ x^2 \right] + 2e^{xy}\frac{\partial}{\partial x}\left[ xy \right] -  0 \\
+& = & 6xy + 2ye^{xy}.
+\end{eqnarray*}
+Note that the partial derivative $f_x(x,y)$ is a function of both $x$ \emph{and} $y$. This simply says that the rate of change with respect to $x$ of the function $f(x,y)$ depends on where you are in both the $x$ direction and the $y$ direction.
+
+We can also take a partial derivative with respect to $y$ of the
+same function:
+\begin{eqnarray*}
+\frac{\partial}{\partial y}\left[ 3x^2y + 2e^{xy}-2y\right] & = & \frac{\partial}{\partial y}\left[ 3x^2y \right] + \frac{\partial}{\partial y}\left[ 2e^{xy} \right] -  \frac{\partial}{\partial y}\left[ 2y\right]\\
+& = & 3x^2\frac{\partial}{\partial y}\left[ y \right] + 2e^{xy}\frac{\partial}{\partial y}\left[ xy \right] -  2 \\
+& = & 3x^2 + 2xe^{xy} - 2.
+\end{eqnarray*}
+Again, this partial derivative is a function of both $x$ and $y$.
+
+
+\subsection*{Integration\index{integrals}}
+
+The integral of a function, written $\int_a^b f(x)\, dx$, measures the \emph{area} under the function $f(x)$ between the points $a$ and $b$. We won't use integrals much, but they are related to derivatives by the Fundamental Theorem(s) of Calculus\index{calculus}:
+
+\begin{center}
+\begin{tabular}{cc}
+$\displaystyle \int_a^b \frac{d}{dx}\left[ f(x)\right]\, dx  =
+f(b) - f(a)$\ \ \ \ \ \  & $\displaystyle \frac{d}{ds}\left[
+\int_a^s f(x)\, dx \right] = f(s)\ \ \ \ \ \ $
+\end{tabular}
+\end{center}
+
+\noindent Example: $\displaystyle \int_0^1 x \, dx= \int_0^1
+\frac{d}{dx}\left[ \frac{1}{2}x^2\right]\, dx  = \frac{1}{2}(1^2)
+- \frac{1}{2}(0^2) = \frac{1}{2}$
+
+\medskip
+
+\noindent Example: $\displaystyle \frac{d}{ds}\left[ \int_0^s x\,
+dx \right] = s.$
+
+\end{CALCULUS}
+
+
+
+%\bigskip
+%\bigskip
+%\begin{BASIC}
+%\clearpage
+%\end{BASIC}
+\section*{Problems}
+
+\noindent \textbf{Answers are in the endnotes beginning on page~\pageref{1introa}. If you're reading this online, click on the endnote number to navigate back and forth.}
+
+
+\begin{enumerate}
+
+
+\item\index{cost!sunk} A newspaper column in the summer of 2000 complained about the overwhelming number of hours being devoted to the Olympics by NBC. The columnist argued that NBC had such an extensive programming schedule in order to recoup the millions of dollars it had paid for the rights to televise the games. Do you believe this argument? Why or why not?%s
+\endnote{\label{1introa}You should not believe this argument because the amount spent on the rights to the Olympic Games is a sunk cost. The reason the network showed the Olympics for so many hours was because that was the decision that maximized profits.
+
+\begin{CALCULUS}
+We can also see this mathematically: the amount spent on the rights to the Games is a constant term in the profit function, e.g., $\pi = f(h) - c$ where $f(h)$ are advertising revenues from showing the games for $h$ hours and $c$ is the amount spent on the rights to the games. To maximize this, we take a derivative with respect to $h$ and set it equal to zero. Note that the constant term $c$ drops out when we take a derivative, and therefore has no impact on the optimal choice of $h$.
+\end{CALCULUS}
+}
+
+
+
+\item\label{sunkcostmatters}\index{cost!sunk} You win \$1 million in the lottery, and the lottery officials offer you the following bet: You flip a coin; if it comes up heads, you win an additional \$10 million; if it comes up tails, you lose the \$1 million. Will the amount of money you had prior to the lottery affect your decision? (\emph{Hint:} What would you do if you were already a billionaire? What if you were penniless?) What does this say about the importance of sunk costs?%
+\endnote{A billionaire would probably take this bet because this is a terrific (although risky) investment. A penniless person would probably not take the bet because the risk of ending up with zero is too great. So sunk costs cannot be entirely ignored in decision-making; rather, the point is that it is not possible to base decisions \emph{solely} on sunk costs.
+}
+
+%\enlargethispage{\baselineskip} % This and the one above are to squeeze this chapter onto one less page.
+
+\item Alice the axe murderer is on the FBI's Ten Most Wanted list for killing six people. If she is caught, she will be convicted of these murders. The government decides to get tough on crime by passing a new law saying that anybody convicted of murder will get the death penalty. Does this serve as a deterrent for Alice, i.e., does the law give Alice an incentive to stop killing people? Does the law serve as a deterrent for Betty, who is thinking about becoming an axe murderer but hasn't killed anybody yet?%(\emph{Hint:} ``\,`In light of the fact that Texas executes more prisoners than any other state, we have to recognize how vulnerable we are,' said Dennis Longmire, a criminal justice professor at Sam Houston State University in Huntsville. `These men really have nothing to lose.'" Michelle Koidin, ``Gang of Inmates Hunted in Slaying", \emph{Hartford Courant}, Dec. 27, 2000.)
+\endnote{The law does not deter Alice from committing additional crimes because she's already facing the death penalty if she's caught. The law does deter Betty, because she hasn't killed anybody yet.
+}
+
+
+
+
+\item \index{cost!sunk} A drug company comes out with a new pill that prevents baldness. When asked why the drug costs so much, the company spokesman says that they needs to recoup the \$1 billion spent on research and development (R\&D).
+
+\begin{enumerate}
+
+\item Will a profit-maximizing firm pay attention to R\&D costs when determining its pricing?
+
+\item If you said ``Yes" above: Do you think the company would have charged less for the drug if it had discovered it after spending only \$5 million instead of \$1 billion?
+
+If you said ``No" above: Do R\&D costs affect the company's behavior (1) \emph{before} they decide whether or not to invest in the R\&D, (2) \emph{after} they invest in the R\&D, (3) both before and after, or (4) neither?%
+\endnote{You should not believe the spokesman's explanation because the R\&D expenditure is a sunk cost. If it spent twice as much or half as much to discover the drug, it should still charge the same price, because that's the price that maximizes profit. The only time that R\&D costs affect the company's behavior is \emph{before} they're sunk: when the company is thinking about spending money on R\&D, it has to determine whether or not it's going to be profitable to make that investment given their estimate of how much they'll be able to charge for the pill. Once they do the R\&D, however, it's a sunk cost and will no longer influence their profit-maximizing decisions.
+}
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{CALCULUS}
+
+\section*{Calculus Problems}
+
+\renewcommand\theenumi{\emph{C-}\arabic{chapter}.\arabic{enumi}}
+
+\begin{enumerate}
+
+\item Explain the importance of taking derivatives and setting them equal to zero.%
+\endnote{Microeconomics is about the actions and interactions of optimizing agents (e.g., profit-maximizing firms, utility-maximizing consumers). For differentiable functions with interior maxima or minima, the way to find those interior maxima or minima is to take a derivative and set it equal to zero. This gives you \emph{candidate values} for maxima or minima; the reason is that slopes (i.e., derivatives) are equal to zero at the top of a hill (a maximum) or at the bottom of a valley (a minimum).}
+
+
+
+
+\item Use the definition of a derivative to prove that constants pass through derivatives, i.e., that $\frac{d}{dx}[(c\cdot f(x)] = c\cdot \frac{d}{dx}[f'(x)]$.%
+\endnote{
+\begin{eqnarray*}
+\frac{d}{dx}[(c\cdot f(x)] & = & \lim_{h\rightarrow 0} \frac{c\cdot f(x+h) - c\cdot f(x)}{h} \\
+& = & c\cdot \lim_{h\rightarrow 0} \frac{f(x+h) - f(x)}{h} = c\cdot \frac{d}{dx}[f'(x)].
+\end{eqnarray*}
+}
+
+
+
+\item Use the product rule to prove that the derivative of $x^2$ is $2x$. (\emph{Challenge}: Do the same for higher-order integer powers, e.g., $x^{30}$. \emph{Do not} do this the hard way.)%
+\endnote{
+$\frac{d}{dx}(x^2) = \frac{d}{dx}(x\cdot x) = x\cdot \frac{d}{dx}(x) + x\cdot \frac{d}{dx}(x) = 2x$.
+
+\noindent For higher powers, use induction: We've just proved that our rule ($\frac{d}{dx}(x^n)=nx^{n-1}$) is true for $n=2$. So now we assume that it's true for $n$ ($\frac{d}{dx}(x^n)=nx^{n-1}$) and need to show that it's true for $x^{n+1}$. But we can just use the same trick again:
+
+\noindent $\frac{d}{dx}(x^{n+1}) = \frac{d}{dx}(x\cdot x^n) = x\cdot \frac{d}{dx}(x^n) + x^n\cdot \frac{d}{dx}(x) = xnx^{n-1} + x^n = (n+1)x^n$.
+}
+
+
+
+
+\item Use the product and exponent rules to derive the quotient rule.%
+\endnote{
+\begin{eqnarray*}
+\frac{d}{dx}\left[\frac{f(x)}{g(x)}\right] & = & \frac{d}{dx}\left[f(x)\cdot(g(x))^{-1}\right]\\
+& = & f(x)\cdot \frac{d}{dx}\left[(g(x))^{-1}\right]+ (g(x))^{-1}\cdot \frac{d}{dx}[f(x)]\\
+& = & f(x)\cdot (-1)[g(x)]^{-2}\frac{d}{dx}[g(x)] + (g(x))^{-1}\cdot \frac{d}{dx}[f(x)]\\
+& = & \frac{-f(x)\cdot g'(x)}{[g(x)]^2} + \frac{f'(x)}{g(x)}\cdot\frac{g(x)}{g(x)}\\
+& = & \frac{g(x)\cdot f'(x) - f(x)\cdot g'(x)}{[g(x)]^2}.
+\end{eqnarray*}
+}
+
+
+
+\item For each of the following functions, calculate the first derivative, the second derivative, and determine maximum and/or minimum values (if they exist):
+
+    \begin{enumerate}
+
+    \item $x^2+2$\ \ \endnote{We have $f'(x)=2x$ and $f''(x)=2$. Candidate solutions for interior maxima or minima are where $f'(x)=0$. The only candidate is $x=0$, which turns out to be a minimum value of the function $f(x)$. Note that the sign of the second  derivative, $f''(0)=2>0$, identifies this as a minimum; this is also clear from a graph of $f(x)$.}
+
+
+    \item $(x^2+2)^2$\ \ \endnote{We have $f'(x)=2(x^2+2)\cdot\frac{d}{dx}(x^2+2)=4x(x^2+2)=4x^3+8x$ and $f''(x)=12x^2+8.$ Candidate solutions for interior maxima or minima are where $f'(x)=0$. The only candidate is $x=0$, which turns out to be a minimum value of the function $f(x)$. (We are not interested in imaginary roots such as $i\sqrt{2}$.) Note that the sign of the second derivative, $f''(0)=8>0$, identifies this as a minimum.}
+
+
+    \item $(x^2+2)^{\frac{1}{2}}$\ \ \endnote{We have $f'(x)=\frac{1}{2}\cdot(x^2+2)^{-\frac{1}{2}}\cdot\frac{d}{dx}(x^2+2)=x\cdot(x^2+2)^{-\frac{1}{2}}$ and
+\begin{eqnarray*}
+f''(x) & = & x\cdot \frac{d}{dx}\left[(x^2+2)^{-\frac{1}{2}}\right] + \left[(x^2+2)^{-\frac{1}{2}}\right]\cdot\frac{d}{dx}(x)\\
+& = & x\cdot \left(-\frac{1}{2}\right)\cdot (x^2+2)^{-\frac{3}{2}}\frac{d}{dx}(x^2+2) + \left[(x^2+2)^{-\frac{1}{2}}\right]\cdot 1\\
+& = & -x^2\cdot (x^2+2)^{-\frac{3}{2}}+ (x^2+2)^{-\frac{1}{2}}
+\end{eqnarray*}
+%
+Candidate solutions for interior maxima or minima are where $f'(x)=0$. The only candidate is $x=0$, which turns out to be a minimum value of the function $f(x)$. Note that the sign of the second derivative, $f''(0)=\frac{1}{\sqrt{2}}>0$, identifies this as a minimum.}
+
+
+    \item $-x(x^2+2)^{\frac{1}{2}}$\ \ \endnote{We have
+\begin{eqnarray*}
+f'(x) & = & -x\cdot \frac{d}{dx}\left[(x^2+2)^{\frac{1}{2}}\right] + \left[(x^2+2)^{\frac{1}{2}}\right]\cdot\frac{d}{dx}(-x)\\
+& = & -x\cdot \left(\frac{1}{2}\right)\cdot (x^2+2)^{-\frac{1}{2}}\frac{d}{dx}(x^2+2) + \left[(x^2+2)^{\frac{1}{2}}\right]\cdot (-1)\\
+& = & -x^2\cdot (x^2+2)^{-\frac{1}{2}} - (x^2+2)^{\frac{1}{2}}\\
+\mbox{and}\ f''(x) & = & \frac{d}{dx}\left[-x^2\cdot (x^2+2)^{-\frac{1}{2}}\right] -\frac{d}{dx}\left[(x^2+2)^{\frac{1}{2}}\right]\\
+& = & -x^2\cdot \frac{d}{dx}\left[(x^2+2)^{-\frac{1}{2}}\right]+(x^2+2)^{-\frac{1}{2}}\cdot\frac{d}{dx}\left(-x^2\right)\\
+& & - \frac{1}{2}\left[(x^2+2)^{-\frac{1}{2}}\right]\frac{d}{dx}(x^2+2)\\
+& = & -x^2\cdot \left(-\frac{1}{2}\right)\left[(x^2+2)^{-\frac{3}{2}}\right]\frac{d}{dx}(x^2+2)-2x(x^2+2)^{-\frac{1}{2}}\\
+& & -x(x^2+2)^{-\frac{1}{2}}\\
+& = & x^3(x^2+2)^{-\frac{3}{2}}-3x(x^2+2)^{-\frac{1}{2}}
+\end{eqnarray*}
+%
+Candidate solutions for interior maxima or minima are where $f'(x)=0$. Multiplying both sides by $(x^2+2)^{\frac{1}{2}}$ we get $-x^2 - (x^2+2)=0$, which simplifies to $x^2=-1$. Since this equation has no solutions, $f(x)$ has no interior maxima or minima.}
+
+
+    \item $\ln \left[ (x^2+2)^{\frac{1}{2}} \right]$\ \ \endnote{We have
+\begin{eqnarray*}
+f'(x)& =& \frac{1}{(x^2+2)^{\frac{1}{2}}}\cdot \frac{d}{dx}\left[(x^2+2)^{\frac{1}{2}}\right]\\
+& = & (x^2+2)^{-\frac{1}{2}}\cdot x\cdot(x^2+2)^{-\frac{1}{2}} \mbox{(from (c))}\\
+& = & x\cdot (x^2+2)^{-1}\\
+\mbox{and } f''(x) & = & x\cdot \frac{d}{dx}\left[(x^2+2)^{-1}\right] + \left[(x^2+2)^{-1}\right]\frac{d}{dx}(x)\\
+& = & x(-1)(x^2+2)^{-2}\frac{d}{dx}(x^2+2)+(x^2+2)^{-1}\\
+& = & -2x^2(x^2+2)^{-2}+(x^2+2)^{-1}
+\end{eqnarray*}
+%
+Candidate solutions for interior maxima or minima are where $f'(x)=0$. The only candidate is $x=0$, which turns out to be a minimum value of the function $f(x)$. Note that the sign of the second derivative, $f''(0)=\frac{1}{2}>0$, identifies this as a minimum.}
+
+    \end{enumerate}
+
+
+
+\item Calculate partial derivatives with respect to $x$ and $y$ of the following functions:
+
+    \begin{enumerate}
+
+    \item $x^2y - 3x + 2y$\ \ \endnote{We have
+\begin{eqnarray*}
+\frac{\partial}{\partial x} & = & \frac{\partial}{\partial x} (x^2y) + \frac{\partial}{\partial x} (-3x) + \frac{\partial}{\partial x} (2y)\\
+& = & y\cdot \frac{\partial}{\partial x} (x^2) -3\cdot \frac{\partial}{\partial x} (x) + 0\\
+& = & 2xy -3\\
+\mbox{and } \frac{\partial}{\partial y} & = & \frac{\partial}{\partial y} (x^2y) + \frac{\partial}{\partial y} (-3x) + \frac{\partial}{\partial y} (2y)\\
+& = & x^2\cdot \frac{\partial}{\partial y} (y) + 0 + 2\cdot \frac{\partial}{\partial y} (y)\\
+& = & x^2 +2
+\end{eqnarray*}}
+
+
+    \item $e^{xy}$\ \ \endnote{We have $\frac{\partial}{\partial x} = e^{xy}\cdot \frac{\partial}{\partial x} (xy) = ye^{xy}$. Since $f(x,y)$ is symmetric in $x$ and $y$, we must also have $\frac{\partial}{\partial y} =xe^{xy}$.}
+
+
+    \item $e^x y^2 - 2y$\ \ \endnote{We have $\frac{\partial}{\partial x} = y^2\cdot\frac{\partial}{\partial x} (e^x) - 0 = y^2e^x$ and $\frac{\partial}{\partial x} = e^x\cdot\frac{\partial}{\partial x} (y^2) - 2 = 2ye^x-2$.}
+
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+\item Consider a market with demand curve $q = 20 - 2p$.
+
+    \begin{enumerate}
+
+    \item Calculate the slope of the demand curve, i.e., $\displaystyle \frac{dq}{dp}$. Is it positive or negative? Does the sign of the demand curve match your intuition, i.e., does it make sense?%
+    \endnote{The slope of the demand curve is $\frac{dq}{dp}=-2<0$, which makes sense because as the price goes up consumers should want to buy less.}
+
+
+    \item Solve the demand curve to get $p$ as a function of $q$. This is called an \textbf{inverse demand curve}.%
+    \endnote{The inverse demand curve is $p=10-.5q$.}
+
+
+    \item Calculate the slope of the inverse demand curve, i.e., $\displaystyle \frac{dp}{dq}$. Is it related to the slope of the demand curve?\endnote{%
+    The slope of the inverse demand curve is $-.5$, which is the inverse of the slope of the demand curve.}
+
+    \end{enumerate}
+
+
+
+
+
+
+\item Imagine that a monopolist is considering entering a market with demand curve $q = 20 - p$. Building a factory will cost $F$, and producing each unit will cost $2$ so its profit function (if it decides to enter) is $\pi = pq - 2q - F$.
+
+    \begin{enumerate}
+
+    \item Substitute for $p$ using the inverse demand curve and find the (interior) profit-maximizing level of output for the monopolist. Find the profit-maximizing price and the profit-maximizing profit level.\endnote{The inverse demand curve is $p=20-q$, and substituting into the profit function yields $\pi = (20-q)q -2q-F = 18q-q^2-F.$ Taking a derivative and setting it equal to zero gives us our candidate solution for an interior maximum: $\pi ' = 0\Longrightarrow 18-2q=0\Longrightarrow q^*=9$. Substituting this back into the inverse demand curve yields $p^*=11$, so that the profit-maximizing profit level is $\pi^* =11\cdot 9 - 2\cdot 9 - F=81-F$.}
+
+    \item For what values of $F$ will the monopolist choose not to enter the market?\endnote{We can see from above that the monopolist will choose not to enter for $F>81$: zero profits are better than negative profits. Note that we would get a \textbf{corner solution} to the maximization problem in this case. The answer $q^*=pi^*=0$ does \emph{not} show up as one of our candidate interior solutions.}
+
+    \end{enumerate}
+
+
+
+
+\item (Profit maximization for a firm in a competitive market) Profit is $\pi = p\cdot q - C(q).$ If the firm is maximizing profits and takes $p$ as given, find the necessary first order condition for an interior solution to this problem, both in general and in the case where $\displaystyle C(q)=\frac{1}{2}q^2 +2q$.\endnote{In a competitive market the firm is assumed to be so small that its choice of $q$ doesn't affect the market price $p$. So the firm treats $p$ like a constant and takes a derivative of the profit function to find candidate (interior) maxima: $\pi ' = 0\Longrightarrow p - C'(q) = 0 \Longrightarrow p = C'(q^*)$. This says that the firm should produce until price equals marginal cost. Give $C(q)$ as above, we get $p = q+2\Longrightarrow q^*=p-2.$}
+
+
+
+
+
+\item (Profit maximization for a non-price-discriminating monopolist) A monopolist can choose both price and quantity, but choosing one essentially determines the other because of the constraint of the market demand curve: if you choose price, the market demand curve tells you how many units you can sell at that price; if you choose quantity, the market demand curve tells you the maximum price you can charge while still selling everything you produce. So: if the monopolist is profit-maximizing, find the necessary first order condition for an interior solution to the monopolist's problem, both in general and in the case where the demand curve is $q = 20 - p$ and the monopolist's costs are $\displaystyle C(q)=\frac{1}{2}q^2 +2q$.\endnote{If the monopolist chooses to produce $q$, the inverse demand curve establishes the maximum price as $p(q)$. Substituting this into the profit function gives $\pi(p,q) = pq-C(q)\Longrightarrow \pi(q)=p(q)\cdot q - C(q)$. Taking a derivative and setting it equal to zero to find candidate (interior) maxima yields $p(q)\cdot 1 + p'(q)\cdot q -C'(q)=0.$ Given the specific demand and cost curves above, we get $(20-q) + (-1)q - (q+2)=0\Longrightarrow q^*=6$.}
+
+
+
+
+\item (Derivation of Marshallian demand curves) Considered an individual whose preferences can be represented by the utility function
+\[
+U = \left( \frac{100-p_Z\cdot Z}{p_B} \cdot Z \right)^{\frac{1}{2}}.
+\]
+If the individual chooses $Z$ to maximize utility, find the necessary first order condition for an interior solution to this problem. Simplify to get the Marshallian demand curve $\displaystyle Z = \frac{50}{p_Z}.$\endnote{First simplify a bit: $U=p_B^{-\frac{1}{2}}\cdot (100Z-p_Z Z^2)^{\frac{1}{2}}$. Then take a derivative with respect to $Z$:
+\begin{eqnarray*}
+\frac{d}{dZ}U & = & p_B^{-\frac{1}{2}}\cdot \frac{d}{dZ}\left[(100Z-p_Z Z^2)^{\frac{1}{2}}\right]\\
+& = & p_B^{-\frac{1}{2}}\cdot \frac{1}{2}(100Z-p_Z Z^2)^{-\frac{1}{2}}\frac{d}{dZ}(100Z-p_Z Z^2)\\
+& = & p_B^{-\frac{1}{2}}\cdot \frac{1}{2}(100Z-p_Z Z^2)^{-\frac{1}{2}}\cdot (100-2p_Z Z).
+\end{eqnarray*}
+%
+Setting this derivative equal to zero we find that the only candidate solution is $100-2p_z Z=0\Longrightarrow Z^* = \frac{50}{p_Z}$.}
+
+
+
+
+\item \emph{Challenge.} (Stackleberg leader-follower duopoly) Consider a model with two profit-maximizing firms, which respectively produce $q_1$ and $q_2$ units of some good. The inverse demand curve is given by $p = 20 - Q = 20 - (q_1 + q_2)$.) Both firms have costs of $C(q)=2q$. In this market, firm 1 gets to move first, so  the game works like this: firm 1 chooses $q_1$, then firm 2 chooses $q_2$, then both firms sell their output at the market price $p=20 - (q_1 + q_2)$.
+
+    \begin{enumerate}
+
+    \item Write down the maximization problem for Firm 1. What is/are its choice variable(s)?\endnote{Firm 1 chooses $q_1$ to maximize $\pi_1=(20-q_1-q_2)q_1 -2q_1 = 18q_1 - q_1^2 -q_1q_2$.}
+
+    \item Write down the maximization problem for Firm 2. What is/are its choice variable(s)?\endnote{Symmetrically, Firm 2 chooses $q_2$ to maximize $\pi_2=(20-q_1-q_2)q_2 -2q_2 = 18q_2 - q_2^2 -q_1q_2$.}
+
+    \item What's different between the two maximization problems? (Hint: Think about the timing of the game!) \emph{Think hard about this question before going on!}\endnote{The difference between the two maximization problems is that $q_1$ is a constant in Firm 2's problem (because Firm 1 has already chosen $q_1$ by the time Firm 2 gets to pick $q_2$) but $q_2$ is \emph{not} a constant in Firm 1's problem (because Firm 1's choice of $q_1$ will probably affect Firm 2's choice of $q_2$).}
+
+    \item Take the partial derivative (with respect to $q_2$) of Firm 2's objective function (i.e., the thing Firm 2 is trying to maximize) to find the necessary first order condition for an interior solution to Firm 2's problem.\endnote{Take a partial derivative of Firm 2's profit function with respect to its choice variable and set it equal to zero: $\frac{\partial}{\partial q_2} \pi_2 = 18 - 2q_2 - q_1 = 0 \Longrightarrow q_2^* = 9 - .5q_1$.}
+
+    \item Your answer to the previous problem should show how Firm 2's choice of $q_2$ depends on Firm 1's choice of $q_1$, i.e., it should be a \textbf{best response function}. Explain why this function is important to Firm 1.\endnote{Firm 1 needs to anticipate how its choice of $q_1$ will affect Firm 2's behavior in order to choose $q_1$ optimally.}
+
+    \item Plug the best response function into Firm 1's objective function and find the necessary first order condition for an interior solution to Firm 1's problem.\endnote{Plug Firm 2's best response function into Firm 1's objective function, take a derivative, and set it equal to zero to find Firm 1's profit-maximizing choice of $q_1$:
+\begin{eqnarray*}
+\frac{\partial}{\partial q_1} \pi_1 & = & \frac{\partial}{\partial q_1} \left[18q_1 - q_1^2 -q_1(9-.5q_1)\right]\\
+& = & 18 - 2q_1 - 9 + q_1\\
+& = & 9 -q_1 \Longrightarrow q_1^*=9.
+\end{eqnarray*}}
+
+    \item Solve this problem for $q_1$, $q_2$, $p$, and the profit levels of the two firms. Is there a \textbf{first mover advantage} or a \textbf{second mover advantage}? Can you intuitively understand why?\endnote{Firm 1's optimal choice is $q_1^*=9$, which means that Firms 2's optimal choice is $q_2^*=9 - .5(9)=4.5$, which means that $p=20-9-4.5=6.5$, which means that $\pi_1^*=6.5\cdot 9 - 2\cdot 9 =40.5$ and $\pi_2^*=6.5\cdot 4.5 - 2\cdot 4.5 = 20.25.$ Firm 1 comes out ahead, so there is a first mover advantage here.
+    }
+    \end{enumerate}
+
+\end{enumerate}
+\end{CALCULUS}
+
+\renewcommand\theenumi{\arabic{chapter}.\arabic{enumi}} % End of calculus labels
+
+
+
+% Commented out material below
+
+
+
+
+
+\begin{comment}
+\item \emph{Challenge.} Many colleges give reduced or free tuition to children of faculty members. Would it hurt these schools to also pay for these students to attend other schools? Why or why not?
+
+\begin{KEY}
+\noindent This is (obviously) a tricky issue, with lots of potential complications, and this question is not fair game for the exam. Here is one (of many) takes on this topic: Say a Harvard professor's child wanted to go to Yale, but would choose Harvard instead if Harvard's tuition was free and Yale's was not. Now: by paying (say, \$30,000) for that student to go to Yale, Harvard would free up a spot in its incoming class, and could provide that spot to a student paying, say, \$30,000. So Harvard would not necessarily be worse off if it adopted a less restrictive policy.
+\end{KEY}
+\end{comment}
+
+\begin{comment}
+\item \emph{Challenge.} ``Renting [a house or an apartment] is like throwing your money away. It's a better investment to buy a house or a condo." Comment on this quote. Do you agree or disagree? Why?
+
+\begin{KEY}
+\noindent Again, this is a tricky question and is not fair game for the exam. But if you're interested, you should write down all the pluses and minuses of owning and renting and attempt to compare them.
+\end{KEY}
+\end{comment}

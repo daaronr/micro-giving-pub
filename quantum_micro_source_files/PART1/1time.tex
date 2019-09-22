@@ -1,0 +1,837 @@
+\chapter{Optimization over time}
+\label{1time}
+
+\subsubsection{Motivating question\rm : If you win a ``\$20 million" lottery jackpot, you will probably find that you have actually won payments of \$1 million each year for 20 years. Lottery officials generally offer the winner an immediate cash payment as an alternative, but the amount of this \textbf{lump sum\index{lump sum}} payment is usually only half of the ``official" prize. So: Would you rather have \$10 million today or \$1 million each year for 20 years? (See
+Figure~\ref{fig:dtree_time}.)}
+
+%
+\begin{figure}[H]
+\begin{pspicture}(-4,-3)(16,3)
+\pstree[treemode=R]{\TC*}
+{
+\TC*~[tnpos=r]{\fbox{\parbox{3cm}{\$10 million today}}}
+%\taput{Refuse bet}
+\TC*~[tnpos=r]{\fbox{\parbox{3cm}{\$1 million each year for 20 years}}}
+%\tbput{Take bet}
+}
+\end{pspicture}
+\caption{A decision tree\index{decision tree} involving time}
+\label{fig:dtree_time} % Figure~\ref{fig:dtree_time}
+\end{figure}
+
+%\subsubsection{Comparing Values at Different Points in Time}
+
+
+%Example: Lottery payoffs. If you win the \$1 million lottery, most likely you've actually won \$50,000 a year for the next 20 years. Most lottery offices offer an immediate cash payment as an alternative to the 20-year payments, but the amount of this lump sum\index{lump sum} payment will probably only be \$500,000. (It's usually about half of the ``official" prize.)
+
+%Example: Movie tickets. When our grandparents were children, movie tickets were only a nickel---what a deal! But what your grandparents don't tell you is that you only got paid \$5 a day. How can we tell if nickel movie tickets really were a good deal?
+
+
+
+\noindent This is tricky because simply comparing money today and money tomorrow is like comparing apples and oranges. One reason is \textbf{inflation}, a general increase in prices over time. But inflation---which we will discuss in the next chapter---is not the only reason why money today and money tomorrow are not commensurate, and for clarity \emph{we will assume in this chapter that there is no inflation.}
+
+Despite this assumption, money today is still not commensurate with money tomorrow, for the simple reason that people generally prefer not to wait for things: offered a choice between a TV today and a TV next year, most people prefer the TV today. This \emph{time preference} means that money today is worth more than money tomorrow even in the absence of inflation.
+
+The way to compare money today and money tomorrow is to observe that banks and other financial institutions turn money today into money tomorrow and vice versa. We can therefore use the relevant \textbf{interest rates} to put values from the past or the future into \textbf{present value\index{present value}} terms. In other words, we can express everything in terms of today's dollars. 
+
+As an example, assume that you can put money in a savings account and earn 10\% interest, or that you can borrow money from the bank at 10\% interest. Then the present value\index{present value} of receiving \$1 one year from now is about \$0.91: put \$0.91 in the bank today and in a year you'll have about \$1.00; equivalently, borrow \$0.91 today and in a year you'll need \$1.00 to pay back the principal plus the interest.
+
+
+\section{Lump sums\index{lump sum}}
+
+\subsubsection{Question\rm : If you have \$100 in a savings account at a 5\% annual interest rate, how much will be in the account after 30 years?}
+
+\noindent Answer:
+\medskip
+
+\begin{tabular}{lrllll}
+After 1 year: & $\$100(1.05)$& =& $\$100(1.05)^1$& = & $\$105.00$ \\
+After 2 years: &$\$105(1.05)$&=&$\$100(1.05)^2$&=&$\$110.25$ \\
+After 3 years: &$\$110.25(1.05)$&=&$\$100(1.05)^3$&=&$\$115.76$. \\
+So after 30 years: & && $\$100(1.05)^{30}$& $\approx $& $\$432.19$.
+\end{tabular}
+
+\medskip
+
+\noindent More generally, the \textbf{future value\index{future value} of a lump sum\index{lump sum}} of $\$x$
+invested for $n$ years at interest rate $r$ is \[\mbox{FV} = x(1+r)^{n}.\] 
+%
+In addition to being useful in and of itself, the future value formula also sheds light on the topic of present value:
+
+\subsubsection{Question\rm : If someone offers you \$100 in 30 years, how much is that worth today if the interest rate is 5\%?}
+
+Answer: The present value\index{present value} of \$100 in 30 years is that amount of money which, if put in the bank today, would grow to \$100 in 30 years. Using the future value\index{future value} formula, we want to find $x$ such that $x(1.05)^{30}=\$100$. Solving this we find that $\displaystyle x=\frac{100}{(1.05)^{30}}\approx\$23.14$, meaning that if you put \$23.14 in the bank today at 5\% interest, after 30 years you'll have about \$100.
+
+More generally, the \textbf{present value\index{present value} of a lump sum payment\index{lump sum}} of $\$x$ received at the end of $n$ years at interest rate $r$---e.g., $r=0.05$ for a 5\% interest rate---is \[\displaystyle \mbox{PV} = \frac{x}{(1+r)^{n}}.\]
+%
+Note that the present value formula can also be used to evaluate lump sums received not just in the \emph{future} but also in the \emph{past} (simply use, say, $n=-1$ to calculate the present value of a lump sum received one year ago) and even in the \emph{present}: simply use $n=0$ to find that you need to put $\$x$ in the bank today in order to have $\$x$ in the bank today!
+
+
+
+
+\section{Annuities\index{annuity}}
+
+\subsubsection{Question\rm : What is the present value\index{present value} of receiving \$100 at the end of each year for the next three years when the interest rate is 5\%? (We now have a stream of annual payments, which is called an \textbf{annuity\index{annuity}}.)}
+
+\medskip \noindent Answer: We need to figure out how much you have to put in the bank today in order to finance \$100 payments at the end of each year for three years. One way is to calculate the present value\index{present value} of each year's payment and then add them all together. The present value\index{present value} of the first \$100 payment, which comes after one year, is $\displaystyle \frac{100}{(1.05)^1}\approx \$95.24$, meaning that putting \$95.24 in the bank today will allow you to make the first payment. The present value\index{present value} of the second \$100 payment, which comes after two years, is $\displaystyle \frac{100}{(1.05)^2}\approx \$90.70$, meaning that putting \$90.70 in the bank today will allow you to make the second payment. And the present value\index{present value} of the third \$100 is $\displaystyle \frac{100}{(1.05)^3}\approx \$86.38$, meaning that putting \$86.38 in the bank today will allow you to make the final payment. So the present value\index{present value} of this annuity is about $\$95.24+\$90.70+\$86.38 = \$272.32.$
+
+You can also use this method to analyze the lottery question at the beginning of this chapter, but doing twenty separate calculations will get rather tedious. Fortunately, there's a formula that makes things easier. At interest rate $r$---e.g., $r=0.05$ for a 5\% interest rate---the \textbf{present value of an annuity\index{annuity}\index{present value!of annuity}} paying $\$x$ at
+the end of each year for the next $n$ years is
+\[
+\mbox{PV}=x\left[ \frac{1 -
+\displaystyle\frac{1}{(1+r)^n}}{r}\right].
+\]
+The derivation of this formula involves some pretty mathematics, so if you're interested here's an example based on the 3-year \$100 annuity. We want to calculate the present value\index{present value} (PV) of this annuity\index{annuity}:
+\[
+\mbox{PV}=\frac{100}{(1.05)^1}+\frac{100}{(1.05)^2}+\frac{100}{(1.05)^3}.
+\]
+%
+If we multiply both sides of this equation by $1.05$, we get
+\[
+1.05 \cdot
+\mbox{PV}=100+\frac{100}{(1.05)^1}+\frac{100}{(1.05)^2}.
+\]
+%
+Now we subtract the first equation from the second equation:
+\[
+1.05 \cdot \mbox{PV} - \mbox{PV}=\left[
+100+\frac{100}{(1.05)^1}+\frac{100}{(1.05)^2} \right] - \left[
+\frac{100}{(1.05)^1}+\frac{100}{(1.05)^2}+\frac{100}{(1.05)^3}
+\right].
+\]
+%
+The left hand side of this equation simplifies to $0.05 \cdot \mbox{PV}$. The right hand side also simplifies (all the middle terms cancel!), yielding
+\[
+0.05 \cdot \mbox{PV} =100 - \frac{100}{(1.05)^3}.
+\]
+%
+Dividing both sides by $0.05$ and grouping terms gives us a result that parallels the general formula:
+\[
+\mbox{PV} =100\left[ \frac{1 -
+\displaystyle\frac{1}{(1.05)^3}}{0.05}\right].
+\]
+%
+
+% FIX: Halvorsen suggests "Break-even for lottery example"
+
+
+\begin{comment} % FIX: Put this in the Q&A, or as a math add-on...
+\subsection*{Example: Car payments}
+
+Car dealers usually give buyers a choice between a lump sum payment (the car's sticker price of, say, \$15,000) and a monthly payment option (say, \$400 a month for 36 months). The annuity formula can come in handy here because it allows you to compute the sticker price from the monthly payments, or vice versa. The applicability of the annuity formula stems from the fact that the monthly option essentially involves the dealer loaning you an amount of money equal to the sticker price. At the relevant interest rate, then, \emph{the sticker price is the present value of the stream of monthly payments. }
+
+The only real complication here is that car payments are traditionally made monthly, so we need to transform the dealer's \emph{annual} interest rate---the APR, or Annual Percentage Rate---into a \emph{monthly} interest rate.\footnote{Like the other formulas in this chapter, the annuity formula works not just for annual payments but also for payments made daily, weekly, monthly, etc. The only caveat is that you need to make sure that you use an interest rate $r$ with a matching time frame, e.g., a monthly interest rate for payments made monthly.} A good approximation of the monthly interest rate comes from dividing the annual interest rate by 12, so an APR of 6\% translates into a monthly interest rate of about 0.5\%, i.e., $r\approx 0.005$.\footnote{Because of compounding, a monthly interest rate of 0.5\% actually corresponds to an annual interest rate of about 6.17\%. See problem~\ref{monthlyannual} for details.}
+
+With a monthly interest rate in hand, we can use the annuity formula to translate monthly payment information (say, \$400 a month for 36 months at 0.5\%) into a lump sum sticker price:
+\[
+\mbox{PV}=400\left[ \frac{1 -
+\displaystyle\frac{1}{(1.005)^{36}}}{.005}\right] \approx \mbox{\$13,148}.
+\]
+More frequently, you'll want to transform the lump sum sticker price into a monthly payment amount, which you can do by solving the annuity formula for $x$, the monthly payment:
+\[
+\mbox{PV}=x\left[ \frac{1 -
+\displaystyle\frac{1}{(1+r)^n}}{r}\right] \ \Longrightarrow \ x = \mbox{PV}\left[ \frac{r}{1 -
+\displaystyle\frac{1}{(1+r)^n}}\right].
+\]
+Using this formula, we can figure out that a \$15,000 sticker price with a 6\% APR (i.e., a monthly interest rate of about 0.5\%, so that $r\approx 0.005$) translates into 36 monthly payments of \$456.33, or 60 monthly payments of \$289.99.
+\end{comment}
+
+
+\section{Perpetuities\index{perpetuity}}
+
+\subsubsection{Question\rm : What is the present value of receiving \$100 at the end of each year \emph{forever} at a 5\% interest rate? Such a stream of payments is called a \textbf{perpetuity\index{perpetuity}}---i.e., a \emph{perpetual annuity}---and it really is forever: you can pass it along in your will!}
+
+Answer: As with annuities, there's a nice formula. The \textbf{present value of a perpetuity\index{perpetuity}\index{present value!of perpetuity}} paying $\$x$ at the end of each year \emph{forever} at an interest rate of $r$---e.g., $r=0.05$ for a 5\% interest rate---is
+\[
+\mbox{PV}=\frac{x}{r}.
+\]
+So at a 5\% interest rate the present value of receiving \$100 at the end of each year forever is only \$2,000!
+
+One explanation here is \emph{living off the interest}: put \$2,000 in the bank at 5\% interest and at the end of a year you'll have \$100 in interest. Take out that interest---leaving the \$2,000 principal---and in another year you'll have another \$100 in interest. Living off the interest from your \$2,000 principal therefore provides you with \$100 each year in perpetuity.
+
+As with annuities, we can also do some nifty mathematics. What we're looking for is
+\[
+\mbox{PV}=\frac{100}{(1.05)^1}+\frac{100}{(1.05)^2}+\frac{100}{(1.05)^3}+\ldots
+\]
+%
+To figure this out, we apply the same trick we used with annuities. First multiply through by $1.05$ to get
+\[
+1.05 \cdot
+\mbox{PV}=100+\frac{100}{(1.05)^1}+\frac{100}{(1.05)^2}+\frac{100}{(1.05)^3}+\ldots
+\]
+%
+Then subtract the first equation above from the second equation---note that almost everything on the right hand side cancels!---to end up with
+\[
+1.05 \cdot \mbox{PV} - \mbox{PV}=100.
+\]
+%
+This simplifies to $\displaystyle \mbox{PV}=\frac{100}{0.05}=\$2,000.$
+
+
+
+
+\section{Capital theory\index{capital!theory|(}}
+\label{1capital}
+
+%Maybe have three subsections, one on natural resources, one on capital theory, one on inflation???
+
+We can apply the material from the previous sections to study investment decisions, also called \textbf{capital theory}. This topic has some rather unexpected applications, including natural resource economics.
+
+%\subsection{Natural Resource Economics} % Fish Are Capital
+
+\subsubsection{Motivating question\rm : You inherit a lake with some commercially valuable fish in it. If you are profit-maximizing, how should you manage this resource?}
+
+%Partial answer: The growth rate of fish, the cost of fishing (e.g., is fishing easier with a bigger stock of fish?), the market price of fish over time\ldots . Note that one management option, called \textbf{Maximum Sustainable Yield\index{Maximum Sustainable Yield}\index{fish!Maximum Sustainable Yield}} (MSY), is to manage the lake so as to get the maximum possible catch that you can sustain year after year forever, as shown in Figure~\ref{fig:fish1a}. We will return to this option shortly.
+
+
+The key economic idea of this section is that \textbf{fish are capital\index{capital!fish are}\index{fish!are capital}}, i.e., fish are an investment, just like a savings account is an investment. To ``invest in the fish", you simply leave them alone, thereby allowing them to reproduce and grow bigger so you can have a bigger harvest next year. This exactly parallels investing in a savings account: you simply leave your money alone, allowing it to gain interest so you have a bigger balance next year.
+
+In managing your lake you need to compare your options, each of which involves some combination of ``investing in the fish" (by leaving some or all of the fish in the lake so that they will grow and reproduce) and investing in the bank (by catching and selling some or all the fish and putting the proceeds in the bank). This suggests that you need to compare the interest rate at the Bank of America\index{Bank!of America} with the ``interest rate" at the ``Bank of Fish"\index{Bank!of Fish}. (See Figure~\ref{fig:bank}.)
+
+\vspace*{.5cm}
+
+\begin{Figure}[H]{The Bank of America and the Bank of Fish}[fig:bank]
+\graphfile*[35]{1bankofamerica.eps}
+\hspace{.4cm}
+\graphfile*[35]{1bankoffish.eps}
+\end{Figure}
+
+This sounds easy, but there are lots of potential complications: the price of fish could change over time, the effort required to catch fish could vary depending on the number of fish in the lake, etc. To simplify matters, let's assume that the cost of fishing is zero, that the market price of fish is constant over time at \$1 per pound, and that the interest rate at the Bank of America is 5\%.
+
+One interesting result concerns \textbf{Maximum Sustainable Yield\index{Maximum Sustainable Yield}\index{fish!Maximum Sustainable Yield} (MSY)}, defined as the maximum possible catch that you can sustain year after year forever. Although it sounds attractive, MSY is \emph{not} the profit-maximizing approach to managing this resource. To see why, let's consider the example of Figure~\ref{fig:fish1a}, assuming that the lake starts out with 100 pounds of fish. First calculate the present value\index{present value} of following MSY\index{Maximum Sustainable Yield}\index{fish!Maximum Sustainable Yield}: each year you start out with 100 pounds of fish and at the end of the year you catch 10 pounds of fish and sell them for \$1 per pound, so the perpetuity\index{perpetuity} formula gives us a present value\index{present value} of $\displaystyle \frac{10}{0.05}=\$200$.
+
+
+\begin{comment}
+\begin{figure}%[b]
+%\vspace{2in}
+\includegraphics{1bankofamerica.eps}
+\hspace{.4cm}
+\includegraphics{1bankoffish.eps}
+\caption{(a) the Bank of America\index{Bank!of America}; (b) the Bank of Fish\index{Bank!of Fish}}
+\label{fig:bank} % Figure~\ref{fig:bank}
+\end{figure}
+\end{comment}
+
+% FIX: Halvorsen asks for intuition. I agree, and think you should put a graph in also. There's also a numerical example you could do: Imagine that you decide to make your steady-state population S. During the growing season this grows to S+f(S), and during harvest season you catch f(S), returning to your stead-state population of S. Now, what if you "borrow" an extra fish this year and "return" it next year? To do this you catch an extra fish this year, meaning that your current population is (S-1). During the growing season this grows to (S-1) + f(S-1), and to "return" the fish you borrowed you catch only f(S-1)-1 fish. So you catch one extra fish this year, and catch f(S) - [f(S-1) + 1] = 1 + f(S) - f(S-1) fewer fish next year. This amount f(S)-f(S-1) is the "interest rate" on fish, and you need to compare it with the interest rate you get at the bank. This is also the slope of the growth curve.
+
+% This is neat-o!!!
+\psset{unit=.5cm}
+\begin{figure}[p]
+\begin{center}
+\begin{pspicture}(0,0)(21,12)
+    \psplot{0}{20}{.2 x 10 mul mul .001 x 10 mul 2 exp mul sub}
+    \psaxes[labels=all, ticks=all, tickstyle=bottom, showorigin=false, dx=5cm, Dx=100, dy=2.5cm, Dy=5](21,12)
+\rput[lt](.2,12){Growth $G(p)$}
+\rput[b](16, .2){Initial population $p$}
+\psline[linestyle=dashed](10,0)(10,10)(0,10)
+%\rput[l]{90}(-2.5,8){\small{Dollars}}
+\end{pspicture}
+\end{center}
+\caption{With an initial population of 100 pounds of fish, population growth over the course of one year amounts to 10 additional pounds of fish. Harvesting 10 pounds returns the population to 100, at which point the process can begin again. An initial population of 100 pounds of fish therefore produces a \textbf{sustainable yield} of 10 pounds per year; the graph shows that this is the \textbf{maximum sustainable yield}, i.e., the maximum amount that can be harvested year after year forever.}
+\label{fig:fish1a} %
+\end{figure}
+
+\begin{figure}[p]
+\begin{center}
+\begin{pspicture}(0,0)(21,12)
+    \psplot{0}{20}{.2 x 10 mul mul .001 x 10 mul 2 exp mul sub}
+    \psaxes[labels=all, ticks=all, tickstyle=bottom, showorigin=false, dx=5cm, Dx=100, dy=2.5cm, Dy=5](21,12)
+\rput[lt](.2,12){Growth $G(p)$}
+\rput[b](16, .2){Initial population $p$}
+\psline[linestyle=dashed](6.8377,0)(6.8377,9)(0,9)
+\psline(6.8377,-.24)(6.8377,0)
+\psline(-.24,9)(0,9)
+\rput[t](6.8377,-.4){68}
+\rput[r](-.4,9){9}
+%\rput[l]{90}(-2.5,8){\small{Dollars}}
+\end{pspicture}
+\end{center}
+\caption{With an initial population of 68 pounds of fish, population growth over the course of one year amounts to 9 additional pounds of fish. Harvesting 9 pounds returns the population to 68, at which point the process can begin again. An initial population of 68 pounds of fish therefore produces a sustainable yield of 9 pounds per year.} %Put lines at 68.377, 9
+\label{fig:fish1b} %
+\end{figure}
+
+Now consider an alternative policy: as before, you start out with 100 pounds of fish, but now you catch 32 pounds \emph{immediately}, reducing the population to 68. This lower population size corresponds to a sustainable yield of 9 pounds per year (as shown in Figure~\ref{fig:fish1b}), so at the end of every year you can catch 9 pounds of fish. The present value\index{present value} of this harvest policy is $\displaystyle 32 + \frac{9}{0.05}=\$212$, which is more than the present value\index{present value} from the MSY\index{Maximum Sustainable Yield}\index{fish!Maximum Sustainable Yield} policy!
+
+So MSY is \emph{not} the profit-maximizing harvest plan: you can make more money by catching additional fish and investing the proceeds in the Bank of America. Intuitively, the problem with the MSY policy is that population growth is about the same whether you start out with 68 pounds of fish or 100 pounds of fish; \emph{at the margin}, then, the interest rate you're getting at the Bank of Fish\index{Bank!of Fish} is really low. Since the return on those final 32 fish is so small, you're better off catching them and putting the money in the bank.
+
+\subsubsection{Question\rm : What happens if the fish are lousy at growing and reproducing?\index{fish!slow-growing}}
+
+Answer: Well, you're tempted to kill them all right away, since the interest rate at the Bank of Fish\index{Bank!of Fish} is lousy. This is part of the explanation for the decimation of rockfish, orange roughy, and other slow-growing fish species. (A much bigger part of the explanation---to be discussed in Chapter~\ref{2fish}---is that these fish do not live in privately controlled lakes but in oceans and other public areas where anyone who wants to can go fishing. The incentives for ``investing in the fish" are much lower in such \textbf{open-access} fisheries\index{fish!open-access fishery}, which are like a bank account for which everyone has an ATM card.) 
+
+But other investments can be even worse than fish at growing and reproducing. Consider oil, for example, or gold, or Microsoft stock: these don't grow at all. So why do people invest in them? It must be \emph{because they think the price is going to go up.} If I'm sitting on an oil well or a gold mine or some Microsoft stock and I don't think the price of oil or gold or Microsoft stock is going to increase faster than the interest rate at the Bank of America\index{Bank!of America}, I should withdraw my capital from the Bank of Oil\index{Bank!of Oil} or the Bank of Gold\index{Bank!of Gold} or the Bank of Microsoft\index{Bank!of Microsoft} and put it in the Bank of America\index{Bank!of America}.
+
+Phrases such as ``fish are capital" and "oil is capital" emphasize the economic perspective that fish, oil, and many other seemingly unrelated items are all investments. As such, an optimizing individual searching for the best investment strategy needs to examine these different ``banks" and compare their rates of return with each other and with the rate of return at an actual bank.
+
+\index{capital!theory|)}
+
+
+
+
+\begin{CALCULUS}
+
+\section{\emph{Math}: Present value and budget constraints\index{present value!and budget constraint|(}\index{budget constraint!and present value|(}}
+
+The first of two topics here is budget constraints. Consider an individual who lives for two time periods, today and tomorrow (which we will call periods $t=1$ and $t=2$, respectively). If he starts out with wealth of $w=100$ and can borrow or save money in a bank at an interest rate of $100\cdot s\% = 20\%$, he has many different consumption options. For example, he could spend all his money today and nothing tomorrow (i.e., $(c_1,c_2)=(100,0)$ where $c_1$ is consumption today and $c_2$ is consumption tomorrow), or he could spend nothing today and $100(1.20)$ tomorrow (i.e., $(c_1,c_2)=(0,120)$, or anything in between. The constraint on his spending (which is called the \textbf{budget constraint\index{budget constraint}}) is that the present value\index{present value} of his spending must equal the present value of his wealth:
+\[
+c_1 + \frac{c_2}{1.20}=100.
+\]
+Figure~\ref{constraint:pv} shows the graph of this budget constraint, which we can rewrite as $\displaystyle c_2=1.20(100-c_1).$ Note that the slope\index{slope!of budget constraint} of the budget constraint is $-1.20=-(1+s)$, i.e., is related to the interest rate.
+
+\psset{unit=.5cm}
+\begin{figure}
+\begin{center}
+\begin{pspicture}(0,0)(13,13)
+\rput[b](0,12.6){$c_2$}
+\rput[l](12.6,0){$c_1$}
+\pscircle[fillstyle=solid, linecolor=black, fillcolor=black](0,12){.1}
+\rput[r](-.4,12){$(0,120)$}
+\pscircle[fillstyle=solid, linecolor=black, fillcolor=black](10,0){.1}
+\rput[t](10,-.4){$(100,0)$}
+\pscircle[fillstyle=solid, linecolor=black, fillcolor=black](5,6){.1}
+\rput[rt](5,6){$(50,60)$}
+%\psplot{0}{10}{60 22.5 x mul sqrt 4 mul sub 2 exp 36 div 22.5 div} % add sub div mul exp log
+\psplot{0}{10}{5 x 2 div sub 2.40 mul}
+\psaxes[labels=none, ticks=none, showorigin=false](12.4,12.4)
+\end{pspicture}
+\end{center}
+\caption{A budget constraint corresponding to a present value\index{present value} of 100}
+\label{constraint:pv}
+\end{figure}
+
+
+
+The budget constraint can also be used to compare different endowments (e.g., lottery payoffs). For example, an endowment of 50 in the first period and 60 in the second period also lies on the budget constraint shown in Figure~\ref{constraint:pv}. The present value\index{present value} of this endowment is the $x$-intercept of the budget constraint, i.e., 100; the future value\index{future value} of this endowment is the $y$-intercept, i.e., 120. \index{present value!and budget constraint|)}\index{budget constraint!and present value|)}
+
+
+\subsection*{Continuous compounding}\index{continuous compounding}\index{compound interest!continuous}\index{interest!compound}
+
+\subsubsection*{Motivating question: \rm If you had \$100 in the bank and the interest rate was 10\% per year, would you rather have interest calculated every year or every six months? In other words, would you rather get 10\% at the end of each year or 5\% at the end of every six months?}
+
+Answer: Let's compare future values at the end of one year. With an annual calculation (10\% every year) you end up with $\$100(1.1)=\$110.$ With a semiannual calculation (5\% every six months) you end up with $\$100(1.05)=\$105$ at the end of six months and $\$105(1.05)=\$110.25$ at the end of one year. So you should choose the semiannual compounding.
+
+The ``bonus" from the semiannual calculation comes from the \textbf{compounding} of the interest: at the end of six months you get an interest payment on your \$100 investment of $\$100(.05)=\$5$; at the end of one year you get an \emph{interest payment on that interest payment} of $\$5(.05)=\$.25$, plus an interest payment on your original \$100 investment of $\$100(.05)=\$5$.
+
+%One result here is \textbf{annual percentage rate} comparisons: a 5\% semiannual interest rate is in fact equivalent to an annual interest rate of $10.25\%$. We can therefore compare different compounding schedules (daily, weekly, monthly, etc.) by putting them all in terms of annual equivalents.
+
+Next: Let's put \$1 in the bank at an interest rate of 100\% per year and see what happens if we make the compounding interval smaller and smaller:
+\begin{itemize}
+\item If we compound once a year we get $\$1(1+1)=\$2$.
+
+\item If we compound every month we get $\displaystyle \$1\left(1+\frac{1}{12}\right)^{12}\approx\$2.61$.
+
+\item If we compound every hour we get $\displaystyle \$1\left(1+\frac{1}{365\cdot 24}\right)^{(365\cdot 24)}\approx\$2.718127$.
+\end{itemize}
+%
+Comparing this with the value of $e\approx 2.7182818$ suggests that there might be a connection, and there is: one definition of $e$ is
+\[
+e = \lim_{n\rightarrow \infty} \left( 1 + \frac{1}{n} \right)^{n}.
+\]
+A more general result about $e$ leads to the following definition: \textbf{Continuous compounding}\index{continuous compounding}\index{compound interest!continuous}\index{interest!compound} is the limit reached by compounding over shorter and shorter intervals. If the interest rate is $100\cdot s\%$ per year and you invest $x$ with continuous compounding, after $t$ years your investment will be worth $\displaystyle x\cdot e^{st}=x\cdot \lim_{n\rightarrow \infty} \left( 1 + \frac{s}{n} \right)^{n}$.
+
+\subsubsection*{Example: \rm What is the present value\index{present value} of receiving \$100 in 3 years at a 10\% interest rate, compounded continuously?}
+
+\noindent Answer: We want an amount $x$ such that $x\cdot e^{(.1)(3)}=100.$ The solution is $x=100\cdot e^{-.3}\approx \$74.08.$
+
+\end{CALCULUS}
+
+
+
+
+\bigskip
+\bigskip
+\section*{Problems}
+
+\noindent \textbf{Answers are in the endnotes beginning on page~\pageref{1timea}. If you're reading this online, click on the endnote number to navigate back and forth.}
+
+
+\begin{enumerate}
+
+
+\item Say you have \$100 in the bank today.
+
+    \begin{enumerate}
+
+    \item How much will be in the bank after 30 years if the interest rate is 5\%? Call this amount $y$.\endnote{\label{1timea}Plug \$100, 5\%, and 30 years into the future value of a lump sum formula to get $y\approx \$432.19.$}
+
+
+    \item What is the present value\index{present value} of receiving $y$ after 30 years? Call this amount $z$.\endnote{Plug \$432.19, 5\%, and 30 years into the present value of a lump sum formula to get $z\approx \$100$.}
+
+
+    \item How does $z$ compare with the \$100 you currently have in the bank? Can you explain why by looking at the relationship between the formulas for the present value\index{present value} and future value\index{future value} of lump sums?\endnote{They are equal. The explanation here is that the formulas for present value and future value of lump sums are inverses of each other in that you can rearrange either equation to get the other:
+\[
+\mbox{PV} = \frac{FV}{(1+r)^{n}} \Longleftrightarrow \mbox{FV} =
+(PV)(1+r)^{n}.
+\]}
+
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+\item (The Rule of 72)\index{rule of 72}\index{interest!rule of 72}: A rule of thumb is that if you have money in the bank at $r$\% (e.g., 10\%), then your money will double in $\displaystyle\frac{72}{r}$ years, e.g., 7.2 years for a 10\% interest rate.
+
+    \begin{enumerate}
+
+    \item How many years will it actually take your money to double at 10\%? (You can find the answer---plus or minus one year---through trial-and-error; if you know how to use logarithms---no this won't be on the test---you can use them to get a more precise answer.) Compare the true answer with the Rule of 72 approximation.\endnote{Note: The elements of this problem featuring logarithms are not fair game for the exam. Having said that: Solving $2x = x(1.10)^t$ using logarithms yields $t = 7.27$, pretty close to the Rule of 72 estimate of $7.2$.}
+
+
+    \item Do the same with a 5\% interest rate and a 100\% interest rate.\endnote{The Rule of 72 predicts 14.4 years at 5\% and $.72$ years at 100\%. The correct answer at 100\% is 1 year (obviously, since the interest rate is 100\%), so the Rule of 72 is not such a good approximation. The correct answer at 5\% comes from solving $2x = x(1.05)^t$ using logarithms. We get $t\approx 14.2$, which is quite accurate.}
+
+
+    \item Do your results above suggest something about when the Rule of 72 is a good approximation?\endnote{They suggest that the Rule of 72 works well for small interest rates, but not for large ones.}
+
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+\item Investment \#1 pays you \$100 at the end of each year for the next 10 years. Investment \#2 pays you nothing for the first four years, and then \$200 at the end of each year for the next six years.
+
+    \begin{enumerate}
+
+    \item Calculate the present value\index{present value} of each investment if the interest rate is 5\%. Which one has a higher present value?\endnote{For Investment \#1, use the annuity formula to get a present value of about \$772 at a 5\% interest rate. For Investment \#2, the brute force way to calculate the present value is to calculate the present value of each of the 6 lump sum payments and then add them up to get about \$835. A  more elegant way is to note that Investment \#2 is equivalent to a ten-year annuity \emph{minus} a four-year annuity. You can therefore use the annuity formula to calculate the present value of the ten-year annuity (\$1,544) and the four-year annuity (\$709). Subtracting one from the other gives a present value for Investment \#2 of \$835.
+
+Investment \#2 is the better option at a 5\% interest rate.}
+
+
+    \item Which investment has the greater present value\index{present value} at an interest rate of 15\%?\endnote{Following the same process described above, Investments \#1 and \#2 have present values of \$502 and \$433, respectively. So Investment \#1 has a greater present value at a 15\% interest rate.}
+
+
+    \item Do higher interest rates favor investment \#1 or \#2? Can you explain why using intuition and/or math?\endnote{Higher interest rates favor Investment \#1, in which you essentially forfeit money in the distant future in order to get more money in the immediate future. Since higher interest rates make the future less important, they make Investment \#1 more attractive.}
+
+
+    \item Can you think of any real-life decisions that have features like these? (Hint: This about deciding whether or not to go to college!) \endnote{There are many real-life decisions with similar features; for example, Investment \#1 could be going to work right out of high school, and Investment \#2 could be going to college for 4 years first to increase your earnings potential.}
+
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+\item Intuitively, how much difference do you think there is between an annuity\index{annuity} paying \$100 each year for 1 million years and a perpetuity\index{perpetuity} paying \$100 each year forever? Can you mathematically confirm your intuition by relating the annuity\index{annuity} formula to the perpetuity\index{perpetuity} formula?\endnote{Intuitively, there shouldn't be much difference. Mathematically, the annuity formula approaches the perpetuity formulas as $n$ approaches infinity:
+\[
+\lim_{n\rightarrow\infty} x\left[ \frac{1 -
+\displaystyle\frac{1}{(1+s)^n}}{s}\right] = \frac{x}{s}.
+\]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\item Explain the perpetuity\index{perpetuity} formula in terms of ``living off the interest".\endnote{The perpetuity formula says that the present value of a perpetuity paying $x$ every year is $\frac{x}{s}.$ This is like living off the interest because if you put $\frac{x}{s}$ in the bank, every year you will get interest of $r\cdot\frac{x}{s}=x,$ so with this principal you can finance annual consumption of $x$ forever.}
+
+
+
+
+
+
+
+
+
+
+
+\item Consider a ``\$20 million" lottery payoff paying \$1 million at the end of each year for 20 years.
+
+    \begin{enumerate}
+
+    \item Calculate the present value\index{present value} of this payoff if the interest rate is 5\%.\endnote{Plug \$1 million, 5\%, and 20 years into the annuity formula to get about \$12.5 million as the present value of the annuity.}
+
+
+    \item Calculate the present value\index{present value} of the related perpetuity\index{perpetuity} paying \$1 million at the end of each year forever.\endnote{Plug \$1 million and 5\% into the perpetuity formula to get \$20 million as the present value of the perpetuity. Note that the extra payments you get---\$1 million annually beginning in year 21---are only worth about \$7.5 million in present value terms!}
+
+
+    \item Assume that the lump sum\index{lump sum} payoff for your \$20 million lottery is \$10 million, i.e., you can opt to get \$10 million now instead of \$1 million at the end of each year for 20 years. Using trial and error, estimate the interest rate $s$ that makes the lump-sum payoff for the lottery equal to the annuity\index{annuity} payoff.\endnote{Increasing $r$ will make the lump sum payment more attractive, and decreasing $r$ will make the annual payments more attractive. Trial and error yields $s\approx .075$ as the interest rate that makes the two payoffs equal in present value terms.}
+
+% Split this into two to ask about the impact of increasing $r$.
+
+
+    \item Calculate the present value\index{present value} of winning \$1 million at the \emph{beginning} of each year for 20 years. Again, assume the interest rate is 5\%. \emph{Hint:} there are easy ways and hard ways to do this!\endnote{The hard way to do this is to just calculate the present value of each payment and then add them all together. Easy way \#1 is to realize that the difference between the end-of-year payments and the beginning-of-year payments is just an extra payment at the beginning of the first year and a lost payment at the end of the 20th year. The present value of \$1 million today is \$1 million, and the present value of \$1 million at the end of 20 years is \$380,000. Their difference is \$620,000, so adding this to the answer from (a) yields \$13.08 million. Easy way \#2 is to see that the answer from (a) is the right answer from the perspective of one year ago, so using the future value of a lump sum formula to push this answer one year into the future gives us $\$12.46(1.05) = \$13.08$ million.}
+
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\item \emph{Fun.} Compound interest has been called the Eighth Wonder of the World.\index{compound interest}\index{interest!compound} Here's why.
+
+    \begin{enumerate}
+
+    \item According to the Legend of the Ambalappuzha Paal Paayasam (more \href{http://en.wikipedia.org/wiki/Ambalappuzha}{online}\footnote{http://en.wikipedia.org/wiki/Ambalappuzha}), Lord Krishna once appeared in discuss in the court of a great king and challenged the king to a game of chess, with the prize being ``just" one grain of rice for the first square of the board, two for the second, four for the third, and so on, doubling on each of the 64 squares of the chessboard. This seemed reasonable enough, so the king agreed and promptly lost the chess match. How many grains of rice was he supposed to deliver for the 64th square?\endnote{The king was supposed to deliver $2^{63}\approx 1,000,000,000,000,000,000,000$ grains of rice for the last square. According to legend, Lord Krishna informed the king that he could pay on the installment plan, and ever since the king made rice freely available to pilgrims in the nearby temple.}
+
+
+    \item On Day 1, somebody dropped a lily pad in a mountain pond. The number of lily pads (and the percentage of pond they covered) doubled every day. On the 30th day, the pond was completely covered in lily pads. On which day was the pond half-covered?\endnote{The pond was half-covered on the 29th day.}
+
+
+    \item How tall do you think a piece of paper would be if you could fold it in half again and again and again, 40 times? Estimate the thickness of a piece of paper (just guess!) and then calculate this height.\endnote{The answer is the height of a single sheet of paper multiplied by $2^{39}\approx 1,000,000,000,000.$ If 1,000 pages makes an inch, then this gives us 1,000,000,000 inches, or about 83 million feet, or about 16,000 miles.}
+    \end{enumerate}
+
+\emph{Comment:} These examples involve interest rates of 100\% (i.e., doubling), but you will get similar results with much smaller interest rates as long as your time horizons are long enough. This is because all interest rate problems share a common feature: constant doubling time. Put \$100 in the bank at 100\% interest and it will double every year: \$200, \$400, \$800.\ldots\ At 1\% interest it will double every 70 years: \$200, \$400, \$800.\ldots\ So 1\% growth and 100\% growth are different in degree but not in spirit.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\item \emph{Fun.} The Intergovernmental Panel on Climate Change\index{climate change}\index{global warming} reports that human activity (especially the burning of fossil fuels such as coal, oil, and natural gas) is warming the earth. (Note: With the exception of this fact, all of the numbers \&etc in this question are completely made up.)
+
+    \begin{enumerate}
+
+    \item \label{gw1} Assume that global warming will raise sea levels and increase the frequency of hurricanes, leading to damages of \$1 million ($=10^6=1,000,000$) at the end of each year for the next seven years. What is the present value of that damage if the interest rate is 4\%?\endnote{Using the annuity formula we get a present value of about \$6 trillion.}
+
+
+    \item \label{gw2} Next, assume that the full damages you've calculated above will only occur with probability 1/3. With probability 1/3 the damages will be only half as big, and with probability 1/3 the damages will be zero. What is the \textbf{expected value}\index{expected value} of the damage caused by global warming? [Note: If you didn't answer part~\ref{gw1} above, just assume for this part that the total damage is \$1,000,000.] \endnote{The expected damages are $\frac{1}{3}(6) + \frac{1}{3}(3) + \frac{1}{3}(0) \approx \$3$ trillion.}
+
+
+    \item Next, assume that the hurricanes \&etc won't happen for 100 years. Using an interest rate of 4\%, take the expected damages you calculated in part~\ref{gw2} and compute the present value\index{present value} of having that amount of damage occur 100 years in the future. [Note: If you didn't answer part~\ref{gw2}, just assume for this part that the total damage is \$1,000,000.]\endnote{Plug \$3 trillion into the present value of a lump sum formula to get a present value of \$59 billion.}
+
+
+    \item What would be the present value\index{present value} of those damages if they won't occur for \emph{500} years?\endnote{Using the present value\index{present value} of a lump sum formula, we get \$9,130.}
+
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+\item Explain (as if to a non-economist) the phrases ``fish are capital," ``trees are capital," and/or ``oil is capital," or otherwise explain the importance of the interest rate at the Bank of America in management decisions regarding natural resources such as fish, trees, and oil.\endnote{To maximize your present value you need to compare the return you'll get from ``investing in the fish" (or the trees, or the oil) with the return you'll get from investing in the bank. Investing in the bank means catching the fish, cutting down the trees, or selling the oil and putting the proceeds in the bank. Investing in the fish means letting the fish grow and reproduce so there will be more fish next year; investing in the trees means letting the trees grow so there will be more lumber next year; investing in the oil means keeping the oil in the hopes that the price will go up next year.}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\item  \label{louisianapurchase}\index{present value!of Louisiana Purchase} \emph{Fun.} Here is some information from the National Archives:
+\begin{quote}
+In 1803 the United States paid France \$15 million (\$15,000,000) for the Louisiana Territory---828,000 square miles of land west of the Mississippi River. The lands acquired stretched from the Mississippi River to the Rocky Mountains and from the Gulf of Mexico to the Canadian border. Thirteen states were carved from the Louisiana Territory. The Louisiana Purchase nearly doubled the size of the United States, making it one of the largest nations in the world.
+\end{quote}
+At first glance, paying \$15 million for half of the United States seems like quite a bargain! But recall that the Louisiana Purchase was over 200 years ago, and \$15 million then is not the same as \$15 million now. Before we can agree with General Horatio Grant, who told President Jefferson at the time, ``Let the Land rejoice, for you have bought Louisiana for a song," we should calculate the present value\index{present value} of that purchase. So: If President Jefferson had not completed that purchase and had instead put the \$15 million in a bank account, how much would there be after 200 years at an interest rate of: (a) 2\%, or (b) 8\%? (See problem~\ref{louisianapurchase2} on page~\pageref{louisianapurchase2} for more about the Louisiana Purchase.)\endnote{For 2\%, plug \$15 million, 200 years, and 2\% into the future value of a lump sum formula to get a current bank account balance of \$787 million. For 8\%, plug \$15 million, 200 years, and 8\% into the future value of a lump sum formula to get a current bank account balance of \$72.6 trillion.}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\item \label{monthlyannual} It is sometimes useful to change interest rate time periods, i.e., to convert a monthly interest rate into a yearly interest rate, or vice versa. As with all present value concepts, this is done by considering money in the bank at various points of time.
+
+    \begin{enumerate}
+
+    \item To find an annual interest rate that is approximately equal to a monthly interest rate, multiply the monthly interest rate by 12. Use this approximation to estimate an annual interest rate that is equivalent to a monthly rate of 0.5\%.\endnote{The approximate annual interest rate is 6\%.}
+
+
+    \item Assume you have \$100 in the bank at a monthly interest rate of 0.5\%. Use the future value formula to determine how much money will actually be in the bank at the end of one year. What annual interest rate is actually equivalent to a monthly rate of 0.5\%?\endnote{Use the future value of a lump sum formula to calculate how much money we'll have at the end of 12 months if we put $\$100$ in the bank at a monthly interest rate of 0.5\%, i.e. $s=0.005$: FV$=\$100(1.005)^{12}\approx 106.17.$ So a monthly interest rate of 0.5\% actually corresponds to an annual interest rate of 6.17\%.}
+
+
+    \item To find a monthly interest rate that is approximately equal to an annual interest rate, divide the annual interest rate by 12. Use this approximation to estimate a monthly interest rate that is equivalent to an annual rate of 6\% (Note that you can use logarithms---no this won't be on the test---to determine the actual monthly interest rate that is equivalent to an annual rate of 6\%.)\endnote{The approximate monthly interest rate is 0.5\%.}
+
+
+    %\item \emph{Challenge} Use logarithms to determine the actual monthly interest rate that is equivalent to an annual rate of 6\%.\endnote{Use the future value of a lump sum formula to set $x(1+s)^{12}=x(1.06)$ and solve for $s$ using logarithms. This yields $s\approx .00487$, i.e., an interest rate of about 0.487\%.}
+
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+\item \label{sweepstakes} \emph{Fun.} (Thanks to Kea Asato.) The 2001 Publishers Clearing House ``\$10 million sweepstakes" came with three payment options:
+\begin{description}
+\item[Yearly] Receive \$500,000 immediately, \$250,000 at the end of Year 1 and every year thereafter through Year 28, and \$2.5 million at the end of Year 29 (for a total of \$10 million).
+
+\item[Weekly] Receive \$5,000 at the end of each week for 2,000 weeks (for a total of \$10 million).
+
+\item[Lump sum\index{lump sum}] Receive \$3.5 million immediately.
+\end{description}
+
+Calculate the present value\index{present value} of these payment options if the interest rate is 6\% per year. What is the best option in this case? (See problem~\ref{sweepstakes2} on page~\pageref{sweepstakes2} for more about this problem.)\endnote{To calculate the present value of the yearly option, we need to split the payment into three parts: the \$500,000 you get immediately (which has a present value of \$500,000), the 28-year annuity (which, using the annuity formula, has a present value of about \$3.35 million), and the payment in year 29 (which, using the present value of a lump sum formula, has a present value of about \$460,400). We add these up to get a present value of about \$4.31 million.
+
+To calculate the present value of the weekly option, we first need to calculate a weekly interest rate that is in accordance with a yearly interest rate of 6\%. A decent approximation is to divide the yearly interest rate by the number of weeks in a year (52), yielding a weekly interest rate of about 0.115\%, i.e., $s\approx 0.00115$. (If you don't like approximations, here's how to use logarithms to get the true value. If you put $x$ in the bank at a weekly interest rate of $100\cdot s\%$, after one year (52 weeks), you'll have $x(1+s)^{52}$ in the bank. We want this to equal $x(1.06)$, since this follows from a yearly interest rate of 6\%. Setting $x(1+s)^{52}=x(1.06)$ and solving for $s$ using logarithms gives us $s\approx .00112$, i.e., an interest rate of about 0.112\%.) Using this value of $s$ in the annuity\index{annuity} formula along with \$5,000 and 2,000 weeks gives us a present value of about \$3.91 million for the weekly option.
+
+Finally, the present value of receiving \$3.5 million immediately is \$3.5 million. So the best option is the yearly payments.}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\item Imagine that you own a lake and that you're trying to maximize the present value of catching fish from the lake, which currently has 1000 fish in it. The population growth function of the fish is described in Figure~\ref{fig:fishqa1}. Assume that fish are worth \$1 per pound and that the interest rate at the bank is 5\%.
+
+\psset{unit=.5cm}
+\begin{figure}
+\begin{center}
+\begin{pspicture}(0,0)(21,12)
+    \psplot{0}{20}{.2 x 10 mul mul .001 x 10 mul 2 exp mul sub}
+    \psline[linestyle=dashed](10,0)(10,10)(0,10)
+    \psline[linestyle=dashed](6,0)(6,8.4)(0,8.4)
+    \psaxes[labels=none, ticks=none, tickstyle=bottom, showorigin=false, dx=5cm, Dx=1000, dy=5cm, Dy=100](21,12)
+    \rput[t](10,-.2){$1000$}
+    \rput[t](20,-.2){$2000$}
+    \rput[t](6,-.2){$600$}
+    \rput[r](-.2,10){$100$}
+    \rput[r](-.2,8.4){$84$}
+\rput[lt](.2,12){Growth $G(p)$}
+\rput[b](16, .2){Initial population $p$}
+%\rput[l]{90}(-2.5,8){\small{Dollars}}
+\end{pspicture}
+\end{center}
+\caption{A population growth function for fish.} %$G(s)=.2s - .0001s^2$.
+\label{fig:fishqa1} %
+\end{figure}
+
+
+    \begin{enumerate}
+
+    \item The Maximum Sustainable Yield (MSY) policy is to catch 100 fish at the end of this year, 100 fish at the end of the next year, and so on, forever. What is the present value from following MSY?\endnote{Plug \$100 and 5\% into the perpetuity formula to get a present value of \$2000.}
+
+
+    \item An alternative policy is to catch 400 fish \emph{today} (so that 600 remain in the lake), and then catch 84 fish at the end of this year, 84 fish at the end of the next year, and so on, forever. What is the resulting present value? Is it higher or lower than the present value of the maximum sustainable yield policy?\endnote{Plug \$84 and 5\% into the perpetuity formula to get a present value of \$1680. Adding this to the \$400 you get from catching 400 fish today and you get a present value of \$2080, which is higher than the present value of the maximum sustainable yield policy.}
+
+    %\item (5 points) Hopefully you got the somewhat-surprising result that the alternative policy has a \emph{higher} present value than the maximum sustainable yield policy. Explain this result, as if to a non-economist; the phrase ``fish are capital" might come in handy.
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+\item Assume that you've just bought a new carpet. The good news is that the carpet will last forever. The bad news is that you need to steam-clean it at the end of every year, i.e., one year from today, two years from today, etc. What you need to decide is whether to buy a steam-cleaner or just rent one every year. \emph{You can use the bank to save or borrow money at a 5\% interest rate.}
+
+    \begin{enumerate}
+
+    \item Will the amount you paid for the carpet affect your decision regarding renting versus buying?\endnote{No, this is a sunk cost.}
+
+
+    \item One year from today, i.e., when you first need to clean the carpet, you'll be able to buy a steam-cleaner for \$500; like the carpet, the steam-cleaner will last forever. Calculate the present value of this cost.\endnote{Use the present value of a lump sum formula to get a present value of $\frac{\$500}{1.05}\approx \$476.19$.}
+
+
+    \item The alternative to buying is renting a steam-cleaner, which will cost you \$20 at the end of every year forever. Calculate the present value of this cost. Is it better to rent or buy?\endnote{Use the present value of a perpetuity formula to get a present value of $\frac{\$20}{.05}=\$400$. So it's better to rent.}
+
+    \item Imagine that your friend Jack calls to tell you that steam-cleaners are on sale (today only!) for \$450: ``You'd have to be a dummy to pay \$20 every year forever when you can just pay \$450 today and be done with it!" Write a brief response explaining (as if to a non-economist) why you do or do not agree.\endnote{``Jack, I disagree with you. Instead of paying \$450 today to buy a steam-cleaner, I'd rather put that \$450 in the bank and `live off the interest'. At the end of every year I'd have \$22.50 in interest, which would pay for the annual rental of a steam-cleaner \emph{and} leave me with \$2.50 left over for wild parties." (Alternately, you could put \$50 towards a wild party today and put the remaining \$400 in the bank; the interest payments would then be \$20 per year, exactly enough to rent a steam-cleaner.)}
+
+    \end{enumerate}
+
+
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+%Commented items only from here on
+
+
+
+
+% \item Bonds
+
+\begin{comment}
+\item \begin{EXAM} The U.S. Federal Reserve Board\index{Federal Reserve Board} (a.k.a. the Fed) recently took steps to lower interest rates in the U.S.: in January 2001 the Federal Funds rate was 6.0\%, and by June it was 4.0\%. You'll learn a whole bunch more about the Fed in macroeconomics (and can get details about changes in the Federal Funds rate \href{http://www.federalreserve.gov/fomc/fundsrate.htm}{online}\footnote{http://www.federalreserve.gov/fomc/fundsrate.htm}), but we can already understand something about Alan Greenspan and his mysterious ways.\end{EXAM}
+    \begin{enumerate}
+    \item \begin{EXAM} Pretend (you might not have to) that you're a consumer. You're thinking about borrowing some money to buy a new TV set (i.e., you're thinking about buying on credit). Since you can now get a loan at a lower interest rate, does the Fed's action make it more likely or less likely that you'll decide to buy that TV set? \end{EXAM}%Circle one.
+
+\begin{KEY}
+You're more likely to buy the TV set.
+\end{KEY}
+
+    \item \begin{EXAM} There are a lot of consumers out there, all thinking rationally, just like you. Is the Fed's action likely to increase or decrease the total amount of stuff that we buy? \end{EXAM}%Circle one.
+
+\begin{KEY}
+Increase.
+\end{KEY}
+
+    \item \begin{EXAM} Pretend that you're running a business. You have made a tidy profit of \$100, and you're trying to decide whether to put that \$100 in the bank or spend it on expanding your business. Does the Fed's action make spending that money on expanding your business more attractive or less attractive? \end{EXAM} %Circle one.
+
+\begin{KEY}
+More attractive.
+\end{KEY}
+
+    \item \begin{EXAM} There are a lot of CEOs out there, all thinking rationally, just like you. So will the Fed's action tend to increase or decrease business expansions and economic activity? \end{EXAM}%Circle one.
+
+\begin{KEY}
+Increase.
+\end{KEY}
+
+    \item \begin{EXAM} Pretend that you're an investment guru. Somebody's unsuspecting grandmother has given you \$100 to invest on her behalf, and you're trying to decide whether to invest that money in the bank or buy stock. Does the Fed's action make investing in the stock market more attractive or less attractive?\end{EXAM} %Circle one.
+
+\begin{KEY}
+More attractive.
+\end{KEY}
+
+    \item \begin{EXAM} There are a lot of investment gurus out there, all thinking rationally, just like you. So is the Fed's action likely to make the stock market go up or down? \end{EXAM}%Circle one.
+
+\begin{KEY}
+Up.
+\end{KEY}
+    \end{enumerate}
+
+
+
+\item \label{MBA} \begin{EXAM} The Whitman economics department webpage says the following about the benefits of getting an MBA (Masters in Business Administration): ``The typical MBA in the class of 2004 made \$56,499 before earning the MBA degree and expects a post-MBA salary of \$77,147. That's a 35\% increase, and an immediate return on the MBA investment." Let's look at this a little more closely; assume that you can use banks to save or borrow money at an 8\% nominal interest rate. \end{EXAM}
+
+    \begin{enumerate}
+
+    \item \label{MBAannuity} \begin{EXAM} Mr.\ Undergrad graduated from Whitman two years ago. He went straight to work: one year ago he was paid \$56,499, today he was paid another \$56,499, and at the end of every year from now on (i.e., forever) he will be paid \$56,499. Calculate the present value of his income stream. [Hint: split the calculation up into three parts---the amount he was paid last year, the amount he's paid today, and the amount he'll be paid in the future---and add them up at the end. Or, if you're looking for a challenge, think of a more elegant way to do this in two steps instead of four.] \end{EXAM}
+
+\begin{KEY}
+The present value of \$56,499 one year ago is
+\[
+(\$56,499)(1.08)=\$61,018.92.
+\]
+The present value of \$56,499 today is simply that: \$56,499. And the perpetuity formula tells us that the present value of the payments in the future is
+\[
+\frac{\$56,499}{.08}=\$706,237.50.
+\]
+Add them together and you get \$823,755.42. The elegant alternative is to put yourself two years in the past, calculate the present value of the forthcoming stream of payments \emph{from that perspective} to be \$706,237.50, and then translate this into today's money using the future value formula:
+\[
+(\$706,237.50)(1.08)^2 = \$823,755.42.
+\]
+\end{KEY}
+
+
+    \item \begin{EXAM} Ms.\ MBA also graduated from Whitman two years ago. She went to business school instead of working, so one year ago she \emph{paid} \$30,000 in tuition and today (graduation day) she paid \emph{another} \$30,000 in tuition. The good news is that at the end of every year from now on (i.e., forever) she will be paid \$77,147. Calculate the present value of her income stream (which includes the tuition payments as well as her salary). [Hint: again, split up the calculation into three parts and then add them up at the end; this time, there is no elegant short-cut.] \end{EXAM}
+
+\begin{KEY}
+The present value of $-\$30,000$ one year ago is
+\[
+(-\$30,000)(1.08)=-\$32,400.
+\]
+The present value of $-\$30,000$ today is simply that: $-\$30,000$. And the perpetuity formula tells us that the present value of the payments in the future is
+\[
+\frac{\$77,147}{.08}=\$964,337.50.
+\]
+Add them together and you get \$901,937.50.
+\end{KEY}
+
+
+    \item \label{MBAperpetuity} \begin{EXAM} Of course, the assumption that these individuals live and work forever is an approximation made for the sake of mathematical convenience. So let's figure out how bad of an approximation we get by making that assumption: By how much would the present value of Ms.\ MBA's income stream fall if she was paid \$77,147 at the end of every year for a limited time of 40 years instead of forever? First take a wild guess (which is not worth any points) and then see how well your intuition matches up with the actual answer. [Note: The straightforward approach to this problem is fine, but if you have the time and interest you might hunt for an elegant alternative.] \end{EXAM}
+
+\begin{KEY}
+The perpetuity formula tells us that the present value of the infinite stream of payments is \$964,337.50. The annuity formula tells us that the present value of 40 years' worth of payments is
+\[
+\$77,147 \left[ \frac{1 - \displaystyle\frac{1}{(1.08)^{40}}}{.08}\right] \approx \$919,948.14.
+\]
+Subtracting one from the other gives us a difference of \$44,389.36, which isn't really all that much. The elegant alternative approach, incidentally, is to notice that the difference between payments lasting forever and payments lasting 40 years is payments lasting forever starting at the end of year 40; we have already calculated the present value of these payments \emph{from the perspective of year 40} to be \$964,337.50, so all we have to do is discount this amount back to today by using the lump sum formula:
+\[
+\frac{\$964,337.50}{(1.08)^{40}}\approx \$44,389.36.
+\]
+\end{KEY}
+
+
+    \item  \begin{EXAM} Explain (as if to a non-economist) why it makes sense for \$964,337.50 to be the present value of receiving \$77,147 at the end of every year forever when the interest rate is 8\%. \end{EXAM}
+
+\begin{KEY}
+Put that amount of money in the bank at 8\% interest and at the end of every year you can ``live off the interest", an amount that equals $(\$964,337.50)(.08)=\$77,147.$
+\end{KEY}
+
+
+    \item \begin{EXAM} How much do you have to put in the bank today to get \$964,337.50 at the end of 40 years? Compare your answer here with that for question~\ref{MBAperpetuity} above. \end{EXAM}
+
+\begin{KEY}
+This is calculated above to be approximately \$44,389.36.
+\end{KEY}
+
+
+    \item \begin{EXAM} Imagine that Ms.\ MBA actually faces an uncertain future once she gets her MBA: there is a 70\% probability that she will get a business management job paying \$100,000 a year and a 30\% probability that she will fall in love with a non-profit management job paying\ldots somewhat less. How much does the non-profit management job have to pay in order for her to ``expect [in the sense of expected value] a post-MBA salary of \$77,147"? (See problem~\ref{MBA2} on page~\pageref{MBA2} for more about this problem.)\end{EXAM}
+
+\begin{KEY}
+We need $x$ such that $(.7)(\$100,000)+(.3)(\$x)=\$77,147$. Solving for $x$ gives $x\approx 23,823.33$.
+\end{KEY}
+
+    \end{enumerate}
+\end{comment} 

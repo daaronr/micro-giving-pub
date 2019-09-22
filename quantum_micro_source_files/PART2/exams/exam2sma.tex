@@ -1,0 +1,552 @@
+\documentclass[twoside]{article}
+\usepackage{pstricks, pst-node, pst-tree, pstcol, pst-plot, pst-text}
+
+%\usepackage[dvips, pdfnewwindow=true]{hyperref}
+
+\usepackage{version} %Allows version control; also \begin{comment} and \end{comment}
+\includeversion{EXAM}\excludeversion{KEY}
+%\includeversion{KEY}\excludeversion{EXAM}
+
+\newcommand{\mybigskip}{\vspace{1in}}
+\newcommand{\mybiggerskip}{\vspace{1.5in}}
+\usepackage{multirow} % Allows multiple rows in tables
+
+\usepackage{rotating} % Allows rotated material
+
+\psset{unit=.5cm}
+
+\psset{levelsep=5cm, labelsep=2pt, tnpos=a, radius=2pt, treefit=loose}
+
+\renewcommand{\arraystretch}{1.3} % This is for the payoff matrices, so there's enough space between rows.
+
+\pagestyle{empty}
+
+
+\renewcommand{\topfraction}{1}
+\renewcommand{\bottomfraction}{1}
+\renewcommand{\textfraction}{0}
+
+
+
+
+\begin{document}
+
+\begin{EXAM}
+
+\vspace*{-3cm}
+
+%\begin{flushright}
+%Name: \hspace*{1in}
+
+%\medskip
+%Student Number: \hspace*{1in}
+%\end{flushright}
+
+\bigskip
+
+\end{EXAM}
+
+\begin{center}
+\Large Exam \#2 (100 Points Total) \begin{KEY}\textbf{Answer Key}\end{KEY}
+\end{center}
+\normalsize 
+\bigskip
+
+
+\begin{EXAM}
+
+\begin{itemize}
+
+\item The space provided below each question should be sufficient for your answer. If you need additional space, use additional paper.
+
+\item This is a closed-book, closed-notes exam. You are allowed to use a calculator, but only the basic functions. Use of advanced formulas (e.g., if your calculator does present value) or of material that you have programmed into your calculator is not allowed and will be considered cheating.
+
+\item You are encouraged to show your work for partial credit. It is very difficult to give partial credit if the only thing on your page is ``$x=3$".
+
+
+\item \textbf{Expected value} is given by summing likelihood times value over all possible outcomes: 
+\[
+\mbox{Expected Value}\ \ \  = \ \ \ \sum_{\mbox{Outcomes \emph{i}}} \mbox{Probability(\emph{i})} \cdot \mbox{Value(\emph{i})}.
+\]
+
+
+
+\item A \textbf{Pareto efficient} (or \textbf{Pareto optimal}) allocation or outcome is one in which it is not possible find a different allocation or outcome in which nobody is worse off and at least one person is better off. An allocation or outcome B is a \textbf{Pareto improvement over A} if nobody is worse off with B than with A and at least one person is better off.
+
+\item A (strictly) \textbf{dominant strategy} is a strategy which yields higher payoffs than any other strategy regardless of the other players' strategies. A (strictly) \textbf{dominated strategy} is a strategy that yields lower payoffs than some other strategy regardless of the other player's strategy.
+
+\item A \textbf{Nash equilibrium} occurs when the strategies of the various players are best responses to each other. Equivalently but in other words: given the strategies of the other players, you are acting optimally; and given your strategy, your opponents are acting optimally. Equivalently again: No player can gain by deviating alone, i.e., by changing his or her strategy single-handedly. 
+ 
+\item In an \textbf{ascending price auction}, the price starts out at a low value and the bidders raise each other's bids until nobody else wants to bid. In a \textbf{descending price auction}, the price starts out at a high value and the auctioneer lowers it until somebody calls out, ``Mine." In a \textbf{first-price sealed-bid auction}, the bidders submit bids in sealed envelopes; the bidder with the highest bid wins, and pays an amount equal to his or her bid (i.e., the highest bid). In a \textbf{second-price sealed-bid auction}, the bidders submit bids in sealed envelopes; the bidder with the highest bid wins, but pays an amount equal to the \emph{second-highest} bid.
+\end{itemize}
+
+\ \clearpage
+
+\vspace*{-3cm}
+\begin{flushright}
+Name: \hspace*{1in}
+\bigskip
+%Student Number: \hspace*{1in}
+\end{flushright}
+
+
+\end{EXAM}
+
+
+
+
+\begin{enumerate}
+
+
+\item ``A Pareto efficient outcome may not be good, but a Pareto inefficient outcome is in some meaningful sense bad." 
+
+    \begin{enumerate}
+    \item (5 points) Give an example or otherwise explain, as if to a non-economist, the first part of this sentence, ``A Pareto efficient outcome may not be good."
+    \begin{EXAM}\mybigskip\end{EXAM}
+
+\begin{KEY}
+A Pareto efficient allocation of resources may not be good because of equity concerns or other considerations. For example, it would be Pareto efficient for Bill Gates to own everything (or for one kid to get the whole cake), but we might not find these to be very appealing resource allocations. 
+\end{KEY}
+
+    \item (5 points) Give an example or otherwise explain, as if to a non-economist, the second part of this sentence, ``A Pareto inefficient outcome is in some meaningful sense bad."   
+    \begin{EXAM}\mybigskip\end{EXAM}
+
+\begin{KEY}
+A Pareto inefficient allocation is in some meaningful sense bad because it's possible to make someone better off without making anybody else worse off, so why not do it?
+\end{KEY}
+
+    \end{enumerate}
+
+
+
+
+\item Analyze the following sequential move game. 
+
+\psset{levelsep=3cm}
+\begin{center}
+\begin{figure}[h]
+\begin{pspicture}(0,0)(0,14)
+\rput(12,7)%(12,7)
+{
+\pstree[treemode=R]{\TC*~{1}}
+{
+    \pstree[treemode=R]{\TC*~{2}}
+    {
+        \TC*~[tnpos=r]{$(-3, 2)$}
+        \TC*~[tnpos=r]{(4, 1)}
+    }
+    
+    \TC*~[tnpos=r]{(3,3)}
+    
+    \pstree[treemode=R]{\TC*~{2}}
+    {
+        \pstree[treemode=R]{\TC*~{1}}
+        {
+            \TC*~[tnpos=r]{(6, 6)}
+            \TC*~[tnpos=r]{(1, 3)}
+        }
+        \TC*~[tnpos=r]{(1, 10)}
+    }
+}
+}
+\end{pspicture}
+%\caption{Story \#2}
+%\label{overinvestment2} % Figure~\ref{game:draft}
+\end{figure}
+\end{center}
+
+
+
+
+
+    \begin{enumerate}
+    \item (5 points) Identify (e.g., by circling) the likely outcome of this game. 
+
+\begin{KEY}
+Backward induction predicts an outcome of (3, 3). 
+\end{KEY}
+
+    \item (5 points) Is this outcome Pareto efficient? Yes  No  (Circle one. If it is not Pareto efficient, identify, e.g., with a star, a Pareto improvement.)
+
+\begin{KEY}
+No; a Pareto improvement is (6, 6).
+\end{KEY}
+
+    \end{enumerate}
+%   \mybigskip
+
+\begin{EXAM}
+\enlargethispage{\baselineskip}
+\clearpage
+\end{EXAM}
+
+
+
+
+
+\begin{comment}
+
+
+\psset{levelsep=3cm}
+\begin{center}
+\begin{figure}[h]
+\begin{pspicture}(0,0)(0,14)
+\rput(12,7)%(12,7)
+{
+\pstree[treemode=R]{\TC*~{1}}
+{
+    \pstree[treemode=R]{\TC*~{2}}
+    {
+        \pstree[treemode=R]{\TC*~{1}}
+        {
+            \TC*~[tnpos=r]{(2, 2)}
+            \TC*~[tnpos=r]{(8, 3)}
+        }
+        \TC*~[tnpos=r]{(4, 1)}
+    }
+    \pstree[treemode=R]{\TC*~{2}}
+    {
+        \pstree[treemode=R]{\TC*~{1}}
+        {
+            \TC*~[tnpos=r]{(3, 9)}
+            \TC*~[tnpos=r]{(5, 2)}
+            \TC*~[tnpos=r]{(3, 2)}
+        }
+        \TC*~[tnpos=r]{(4, 4)}
+    }
+}
+}
+\end{pspicture}
+%\caption{Story \#2}
+%\label{overinvestment2} % Figure~\ref{game:draft}
+\end{figure}
+\end{center}
+
+
+    \begin{enumerate}
+    \item (5 points) Identify (e.g., by circling) the likely outcome of this game. 
+
+\begin{KEY}
+Backward induction predicts an outcome of (8, 3). 
+\end{KEY}
+
+    \item (5 points) Is this outcome Pareto efficient? Yes  No  (Circle one. If it is not Pareto efficient, identify, e.g., with a star, a Pareto improvement.) 
+
+\begin{KEY}
+Yes, it is Pareto efficient. 
+\end{KEY}
+
+    \end{enumerate}
+    
+    
+
+
+
+\vspace{.5in}
+
+\end{comment}
+
+
+
+\begin{comment}
+
+\item Consider the following 3-period cake-cutting game between two players, each of whom has as his or her sole objective the desire for as much cake as possible. In round 1 there are three pieces of cake, and Player 1 makes a take-it-or-leave-it offer to Player 2. If Player 2 accepts, the game ends and the players divide and eat the three pieces; if Player 2 rejects, Mom eats one of the pieces and the game moves to round 2. In round 2 there are two pieces of cake, and Player 2 makes a take-it-or-leave-it offer to Player 1. If Player 1 accepts, the game ends and the players divide and eat the two pieces; if Player 1 rejects, Mom eats another piece and the game moves to round 3. In round 3 there is one piece of cake, and Player 1 makes a take-it-or-leave-it offer to Player 2. If Player 2 accepts, the game ends and the players divide and eat the one piece; if Player 2 rejects, the game ends and both players get nothing.
+
+    \begin{enumerate}
+    \item (5 points) Backward induction predicts that Player 1 will offer one piece of cake to Player 2 in round 1, leaving two pieces for himself, and that Player 2 will accept. Explain the reasoning behind this prediction.
+    \begin{EXAM}\vspace*{2.6in}\end{EXAM}
+    
+\begin{KEY}
+With backward induction, the analysis begins at the end of the game. So: if the game reaches round 3, there is one piece of cake left. Player 1 will offer Player 2 a tiny sliver, knowing that Player 2 will accept because her only alternative is to reject the offer and get nothing; so if the game reaches round 3, Player 1 will essentially get one piece of cake, and Player 2 will get nothing. Next: if the game reaches round 2, there are two pieces of cake left. Player 2 has to offer Player 1 at least one piece of the cake, or Player 1 will reject her offer and go to round 3 (where, as we have seen, Player 1 can get one piece). So if the game reaches round 2, Player 2 will offer one piece of cake to Player 1, leaving one piece of cake for herself. Finally,: in round 1, there are three pieces of cake. Player 1 has to offer Player 2 at least one piece of cake, or Player 2 will reject his offer and go to round 2 (where, as we have seen, Player 2 can get one piece). So we can predict that Player 1 will offer one piece of cake to Player 2, leaving two pieces for himself, and that Player 2 will accept the offer.
+
+\end{KEY}
+
+    \item (5 points) This cake-cutting game has something in common with such real-world phenomena as labor disputes or lawsuits in that delay hurts both sides: the longer the strike or lawsuit drags on, the worse off the various players are. As in the game above, settlement in round 1 is the only way to reach an outcome that is Pareto (circle one: \ \ efficient \ \ inefficient \ \ ). What does the Coase theorem have to say about such situations? (Recall the essence of the Coase theorem: ``If there is nothing to stop people from trading, nothing will stop people from trading.")
+    \begin{EXAM}\vspace*{.5in}\end{EXAM}
+
+\begin{KEY}
+Settlement in round 1 results in a Pareto efficient outcome. The Coase theorem indicates that there is a strong incentive for both sides to settle these games in round 1 in order to reach a Pareto efficient outcome. In other words, there is a strong incentive to negotiate a labor agreement before a strike happens, or to settle a lawsuit before it goes to trial. 
+\end{KEY}
+    \end{enumerate}
+
+\end{comment}
+
+
+\item \textbf{10 points} Here are some key facts (to the best of my understanding) about the recent D.C. sniper incident:
+\begin{itemize}
+\item the police set up a toll-free number for the sniper to call;
+\item the sniper chose not to call that number, but instead made short phone calls to random local police departments, some of which accidentally hung up on him or otherwise failed to successfully communicate;
+\item both the sniper and the police expressed frustration at the communication problems; the sniper indicated that these problems had resulted in additional deaths (``Your failure to respond has cost you five lives"); police chief Moose said that ``we want you to know how difficult it has been to understand what you want because you have chosen to use only notes, indirect messages and calls to other jurisdictions. The solution remains to call us and get a private toll free number established just for you. If you are reluctant to contact us, be assured that we remain ready to talk directly with you. Our word is our bond." 
+\end{itemize}
+
+Your job is to analyze the strategic aspects of this situation, with the objective of explaining why the two sides had trouble communicating: \emph{why was it that both sides, though frustrated by the poor communication, nonetheless failed to communicate using the toll-free number?} You should assume (I think correctly) that a key issue here is the sniper's concern about telephone wire-tapping, i.e., concern that if he called the toll-free number then the police would trace the call and try to arrest him. You should also assume (again, I think correctly) that wire-tapping is not illegal, so that Chief Moose cannot do anything more to assuage these concerns other than giving his word. Finally, you should assume that wire-tapping is effectively impossible if the sniper calls random local police departments. 
+
+You should write a paragraph or two; it may also help to draw a simple game tree. Some phrases that may come in handy include Pareto efficient/inefficient, Pareto improvement, credible commitment, enforceable contract, Coase Theorem and hold-up. Note that you do not \emph{have} to use any of these phrases; it's also possible to explain what's going on in plain English. Also note that this is (obviously) a new question; if you are confused or have questions, send me an email or otherwise communicate (hopefully successfully) with me.
+
+
+\begin{EXAM}
+\clearpage
+\end{EXAM}
+
+\begin{KEY}
+This is a classic hold-up problem. A Pareto improvement over the poor communication would be for the sniper to call the toll-free line and for the police to not engage in wire-tapping. Unfortunately, the police cannot credibly commit to their end of this deal: if the sniper calls the toll-free number, it is in the best interests of the police to trace the call. Because of the inability of the two sides to make an enforceable contract, the Coase Theorem fails and we end up with a Pareto inefficient outcome in which the sniper calls local jurisdictions, mistakes happen, and people die. A Pareto improvement would be for the police to make their commitment credible, e.g., by passing a law saying that wire-tapping is illegal.
+
+A game tree demonstrating this situation would feature the sniper deciding between calling the toll-free number and calling a local police department. If he calls the toll-free number, the police decide whether or not to trace the call. Backward induction predicts that the police will trace the call, and consequently that the sniper will call local police departments even though the result is Pareto inefficient.
+\end{KEY}
+
+\item Answer the questions below about the following simultaneous move game.
+
+    \begin{figure}[h]
+    \begin{center}
+    \begin{tabular}{crccc}
+    & & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+    & & L & C & R \\ \cline{3-5}
+    \multirow{3}{1.5cm}{Player 1} 
+    & U & \multicolumn{1}{|c|}{$1,1$} & \multicolumn{1}{c}{$3,8$} & \multicolumn{1}{|c|}{$6,-2$} \\ \cline{3-5}
+    & M & \multicolumn{1}{|c|}{$-1,7$} & \multicolumn{1}{c}{$0,0$} & \multicolumn{1}{|c|}{$5,10$} \\ \cline{3-5}
+    & D & \multicolumn{1}{|c|}{$5,3$} & \multicolumn{1}{c}{$1,6$} & \multicolumn{1}{|c|}{$4,9$} \\ \cline{3-5}
+    \end{tabular}
+    \end{center}
+    \end{figure}
+
+
+    \begin{enumerate}
+    \item (5 points) Using the above payoff matrix, cross out as much as you can using iterated (strict) dominance. \emph{For partial credit, list your sequence of eliminations below!}
+    \begin{EXAM}\mybigskip\end{EXAM}
+    
+\begin{KEY}
+M is dominated by U for Player 1, then L is dominated by C for Player 2, then D is dominated by U for Player 1, then R is dominated by C for Player 2. The result: (U, C), with a payoff of (3, 8). 
+\end{KEY}
+
+    \begin{figure}[h]
+    \begin{center}
+    \begin{tabular}{crccc}
+    & & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+    & & L & C & R \\ \cline{3-5}
+    \multirow{3}{1.5cm}{Player 1} 
+    & U & \multicolumn{1}{|c|}{$1,1$} & \multicolumn{1}{c}{$3,8$} & \multicolumn{1}{|c|}{$6,-2$} \\ \cline{3-5}
+    & M & \multicolumn{1}{|c|}{$-1,7$} & \multicolumn{1}{c}{$0,0$} & \multicolumn{1}{|c|}{$5,10$} \\ \cline{3-5}
+    & D & \multicolumn{1}{|c|}{$5,3$} & \multicolumn{1}{c}{$1,6$} & \multicolumn{1}{|c|}{$4,9$} \\ \cline{3-5}
+    \end{tabular}
+    \end{center}
+    \end{figure}
+    
+    \item (5 points) Using the above payoff matrix, identify the Nash equilibrium(s) of this game. (Note that this is the same game as above.)
+    \begin{EXAM}\bigskip\end{EXAM}
+    
+\begin{KEY}
+The only Nash equilibrium is (U, C), with a payoff of (3, 8). 
+\end{KEY}
+
+    
+    \item (5 points) Is/are the Nash equilibrium(s) you identified Pareto efficient? If not, identify a Pareto improvement. \emph{If you identified multiple Nash equilibria, answer this question separately for each one.}     \begin{EXAM}\mybigskip\end{EXAM}
+    
+\begin{KEY}
+The Nash equilibrium is not a Pareto improvement because (M, R) has a payoff of (5, 10). \end{KEY}
+ 
+    \end{enumerate}
+
+
+
+
+
+
+\begin{EXAM}\clearpage\end{EXAM}
+
+\item Answer the questions below about the following simultaneous move game.
+
+    \begin{figure}[h]
+    \begin{center}
+    \begin{tabular}{crccc}
+    & & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+    & & L & C & R \\ \cline{3-5}
+    \multirow{3}{1.5cm}{Player 1} 
+    & U & \multicolumn{1}{|c|}{$3, 8$} & \multicolumn{1}{c}{$2, 0$} & \multicolumn{1}{|c|}{$9, 7$} \\ \cline{3-5}
+    & M & \multicolumn{1}{|c|}{$4, 8$} & \multicolumn{1}{c}{$4, 5$} & \multicolumn{1}{|c|}{$3, 1$} \\ \cline{3-5}
+    & D & \multicolumn{1}{|c|}{$0, 2$} & \multicolumn{1}{c}{$8, 3$} & \multicolumn{1}{|c|}{$6, 0$} \\ \cline{3-5}
+    \end{tabular}
+    \end{center}
+    \end{figure}
+
+
+    \begin{enumerate}
+    \item (5 points) Using the above payoff matrix, cross out as much as you can using iterated (strict) dominance. \emph{For partial credit, list your sequence of eliminations below!}
+    \begin{EXAM}\mybigskip\end{EXAM}
+    
+\begin{KEY}
+R is dominated by L for Player 2, then U is dominated by M for Player 1. This is as far as we can go with iterated strict dominance.
+\end{KEY}
+
+    \begin{figure}[h]
+    \begin{center}
+    \begin{tabular}{crccc}
+    & & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+    & & L & C & R \\ \cline{3-5}
+    \multirow{3}{1.5cm}{Player 1} 
+    & U & \multicolumn{1}{|c|}{$3, 8$} & \multicolumn{1}{c}{$2, 0$} & \multicolumn{1}{|c|}{$9, 7$} \\ \cline{3-5}
+    & M & \multicolumn{1}{|c|}{$4, 8$} & \multicolumn{1}{c}{$4, 5$} & \multicolumn{1}{|c|}{$3, 1$} \\ \cline{3-5}
+    & D & \multicolumn{1}{|c|}{$0, 2$} & \multicolumn{1}{c}{$8, 3$} & \multicolumn{1}{|c|}{$6, 0$} \\ \cline{3-5}
+    \end{tabular}
+    \end{center}
+    \end{figure}
+    
+    \item (5 points) Using the above payoff matrix, identify the Nash equilibrium(s) of this game. (Note that this is the same game as above.)
+    \begin{EXAM}\bigskip\end{EXAM}
+    
+\begin{KEY}
+The Nash equilibria are (M, L), with a payoff of (4, 8), and (D, C), with a payoff of (8, 3). 
+\end{KEY}
+
+    
+    \item (5 points) Is/are the Nash equilibrium(s) you identified Pareto efficient? If not, identify a Pareto improvement. \emph{If you identified multiple Nash equilibria, answer this question separately for each one.}     \begin{EXAM}\mybigskip\end{EXAM}
+    
+\begin{KEY}
+(M, L) is Pareto efficient. (D, C) is not: a Pareto improvement is (U, R). 
+\end{KEY}
+ 
+    \end{enumerate}
+
+
+
+
+
+
+
+\begin{EXAM}
+\vspace{.5in}
+\end{EXAM}
+
+
+
+
+
+\item (The Public/Private Investment Game) You are one of 10 students in a room, and all of you are greedy income-maximizers. Each student has \$1 and must choose (without communicating with the others) whether to invest it in a private investment X or a public investment Y. The private investment X has a payoff of \$2, all of which accrues to the person who made the investment. The public investment Y has a payoff of \$10, but that \$10 is divided among all 10 students (even those who chose to invest their own money privately). So if, say, 6 students decide to invest publicly, those public investments yield \$6 for every student in the class; the 4 students who invested privately get an additional \$2 each from their private investments.  
+
+    \begin{enumerate}
+    \item (5 points) What outcome do you predict in the simultaneous-move game, i.e., if all the students must write down their investment decisions at the same time?
+    \begin{EXAM}\mybiggerskip\end{EXAM}
+    
+\begin{KEY}
+A good prediction is that everybody will invest in the private good because it's a dominant strategy: no matter what everybody else does, you always get \$1 more by investing privately. 
+\end{KEY}
+
+    \item (5 points) Is this outcome Pareto efficient? Yes  No  (Circle one. 
+If not, identify a Pareto improvement.)
+    \begin{EXAM}\mybiggerskip\end{EXAM}
+    
+\begin{KEY}
+This outcome is not Pareto efficient because each player only gets a return of \$2; a Pareto improvement would be for everybody to invest in the public good, in which case each player would get a return of \$10. 
+\end{KEY}
+
+    \item (5 points) ``The central difficulty here is that the students must decide without knowing what the other students are doing. If you knew what the other students decided, you would behave differently." Do you agree with this argument? Circle one (Yes  No) and explain briefly. 
+    \begin{EXAM}\clearpage\end{EXAM}
+    
+\begin{KEY}
+The central difficulty is \emph{not} that you don't know what others are going to do; you have a dominant strategy, so the other players' strategies are irrelevant for determining your optimal strategy. 
+\end{KEY}
+
+    \item (5 points) Imagine that you could play this game twice: you play it once, see the results, and then play again. What is the potential for cooperation in this \textbf{repeated game}? Briefly explain why, and predict the outcome of this game. 
+    \begin{EXAM}\vspace{2in}\end{EXAM}
+    
+\begin{KEY}
+There is no potential for cooperation in this game, and the prediction is that everybody will invest privately both times. To see why, use backward induction: in the second game, investing privately is a dominant strategy, so we can predict that everybody will invest privately in the second round. But now investing privately is a dominant strategy in the first round, too: since everybody is going to invest privately in the second round, your best strategy in the first round is to invest privately.
+\end{KEY}
+
+
+
+
+    \item (5 points) Returning to the one-shot game (i.e., only played once). If communication were possible, what sort of mechanism do you suggest for reaching the optimal outcome in this game? Hint: Make sure to think about enforcement! 
+    \begin{EXAM}\mybiggerskip\end{EXAM}
+    
+\begin{KEY}
+A reasonable mechanism might be passing a law that everybody has to invest in the public good or pay a large fine.
+\end{KEY}
+
+
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+\item It just so happens that eBay is currently running an auction for a collection of \emph{all five} *NSYNC bobblehead dolls. Imagine that your value for such a collection is \$20.  
+
+    \begin{enumerate}
+    \item (5 points) In a first-price sealed bid auction, should you bid an amount $b$ that is (\ \ less than\ \ equal to \ \ more than\ \ ) your true value (\$20)? Circle one and explain briefly. It may help to write down an expected value calculation.
+    \begin{EXAM}\clearpage\end{EXAM}
+
+\begin{KEY}
+Your should bid less than your true value. Otherwise your expected value from the auction will never be more than zero (and will be less than zero if you bid more than your true value):
+\[
+\mbox{EV}=\mbox{Prob(Win)}\cdot (20-b) + \mbox{Prob(Lose)}\cdot (0).
+\]
+\end{KEY}
+    
+    
+    
+    \item (5 points) In a second-price sealed bid auction, explain why it makes sense to bid your true value (i.e., \$20). In other words, explain why bidding your true value is a (weakly) dominant strategy. \emph{Hint: }Consider the highest bid \emph{excluding} your own bid. If that bid is more than \$20, can you do better than bidding your true value? If that bid is less than \$20, can you do better than bidding your true value?
+    \begin{EXAM}\vspace{3in}\end{EXAM}
+    
+\begin{KEY}
+If the highest bid excluding your own bid is $x>\$20$, you cannot do better than bid \$20 (and lose the auction); the only way to win the auction is to bid more than $x$, but if you do that then you'll end up paying $x$, which is more than your true value. On the other hand, if the highest bid excluding your own is $x<\$20$, you cannot do better than bid \$20 (and win the auction, paying $\$x$); raising your bid cannot help you, and lowering your bid doesn't reduce the amount you'll pay, but does increase your risk of losing the auction when you would have liked to have won it.
+\end{KEY}
+
+
+
+
+%    \item (5 points) Economists claim that ascending price auctions are strategically equivalent to second-price sealed bid auctions. What bidding strategy in the ascending price auction is equivalent to bidding your true value in the second-price sealed bid auction?
+%    \begin{EXAM}\mybigskip\end{EXAM}
+
+%\begin{KEY}
+%The equivalent strategy is to continue bidding until the auction price exceeds your true value. This is a (weakly) dominant strategy in an ascending price auction.
+%\end{KEY}
+
+
+
+    
+    \item (5 points) Your friend Ed needs some cash, so he decides to auction off his prized collection of *NSYNC bobblehead dolls. You suggest a second-price sealed bid auction, to which he says, ``Second price? Why should I accept the \emph{second-highest} price when I can do a first-price sealed bid auction and get the \emph{first-highest} price?" Write a response. \emph{Hint: }Think about your answers to the first two auction questions above.
+    \begin{EXAM}\mybiggerskip\end{EXAM}
+
+\begin{KEY}
+Yes, in a first-price sealed bid auction you'll get the first-highest price; but we showed above that bidders will bid less than their true value. In contrast, bidders will bid an amount equal to their true value in a second-price sealed bid auction. So even though you only get the second-highest bid, the bid values will be higher than in a first-price auction. (A deeper result here is the revenue equivalence theorem, which says that these two types of auctions have the same expected payoff for seller.)    
+\end{KEY}
+
+    \end{enumerate}
+
+
+
+
+
+
+\end{enumerate}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

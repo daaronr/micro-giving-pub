@@ -1,0 +1,263 @@
+\chapter{Margins}
+\label{3margins}
+\index{margins|(}
+
+When we draw supply and demand graphs, we put the quantity $Q$ on the $x$-axis and the price $P$ on the $y$-axis. This is odd because we spend all our time talking about $Q$ as a function of $P$, i.e., asking questions like, ``At a price of \$5, how many units will buyers want to buy?" It would be more natural to put $P$ on the $x$-axis and $Q$ on the $y$-axis, so why don't economists do it that way?
+
+One answer is that it was a mistake, a typographical error in the first economics textbook ever written---Alfred Marshall's\index{Marshall, Alfred} \emph{Principles of Economics} from 1890---that led to our being ``locked in" to this weird way of looking at supply and demand in the same way that we're locked into using the particular layout of a computer keyboard. But another answer---and they could both be true, but this second one is definitely true---is that we can reinterpret supply and demand curves to look at $P$ as a function of $Q$ by asking about \textbf{marginal benefit\index{marginal!benefit}} and \textbf{marginal cost\index{marginal!cost}}.
+
+
+\section{Reinterpreting the supply curve}\index{margins!and supply curve}\index{supply curve!in terms of margins}
+
+Consider a firm whose supply curve indicates that at any price above \$5 per unit the firm wants to sell at least 10 units and that at any price below \$5 per unit the firm wants to sell at most 9 units. We can now ask the following question: What is the firm's \emph{marginal cost}\index{marginal!cost} of producing the 10th unit? (\textbf{Marginal cost\index{marginal!cost}} is the cost of producing an additional unit. The marginal cost of the 10th unit is the cost differential between producing 10 units and producing only 9 units.)
+
+The answer follows from profit maximization: the firm's marginal cost of producing the 10th unit must be \$5. Here's why:
+\begin{itemize}
+\item Since the firm wants to sell at least 10 units at any price above \$5 per unit (say, \$5.10), the marginal cost of the 10th unit cannot be more than \$5. If the marginal cost of the 10th unit was, say, \$6, the firm wouldn't be maximizing profits by selling 10 units at a market price of \$5.10 per unit; it would make \$.90 more profit by selling only 9 units instead of 10.
+\item Since the firm doesn't want to sell 10 units at any price below \$5 per unit (say, \$4.90), the marginal cost of the 10th unit cannot be less than \$5. If the marginal cost of the 10th unit was, say, \$4, the firm wouldn't be maximizing profits by selling only 9 units at a market price of \$4.90 per unit; it would make \$.90 more profit by selling 10 units instead of 9.
+\item Since the firm's marginal cost of producing the 10th unit cannot be more than \$5 and cannot be less than \$5, it must be equal to \$5.
+\end{itemize}
+It follows that the point on the graph corresponding to a price of \$5 and a quantity of 10 units can be interpreted in two different ways. From the perspective of the \textbf{supply curve}, it indicates that at a price of \$5 per unit the firm wants to supply 10 units. From the perspective of the \textbf{marginal cost curve}, it indicates that the marginal cost of the 10th unit of production is \$5. This is an example of a more general result: \emph{every point on an individual supply curve is also a point on that individual's marginal cost curve.}\footnote{If you take more economics classes, you'll learn that the \emph{converse} of this statement is not true. It turns out that the supply curve is only part of the upward-sloping section of the marginal cost curve, so there are some points on the firm's marginal cost curve that are not on the firm's supply curve.}
+
+The same result applies to the market as a whole: every point on the \textbf{market supply curve} is also a point on the \textbf{social marginal cost curve}. If the market wants to sell at least 1 million units at any price over \$5 per unit but fewer than 1 million units at any price under \$5 per unit, the marginal cost to society of producing the 1 millionth unit must be \$5.
+
+\begin{figure}[H]
+\centering
+\begin{pspicture}(0,0)(8,9)
+\rput(0,1){
+    \psline(1,1)(7,7)
+    \rput[r](-.2,7.5){$P$}
+    \rput[t](7.5,-.2){$Q$}
+    \psaxes[labels=none, ticks=none, showorigin=false](8,8)
+    }
+\end{pspicture}
+\caption{Every point on an individual (or market) supply curve is also a point on an individual (or social) marginal cost curve}
+\label{fig:marginsupply}
+\end{figure}
+
+
+The close connection between supply curves and marginal cost curves gives us two ways to think about the graph in Figure~\ref{fig:marginsupply}. If you start with a price $p$, an individual supply curve will tell you how many units $q$ that individual seller would want to sell at that price; if you start with a quantity $q$, an individual marginal cost curve will tell you the marginal cost to that individual seller of producing that $q$th unit. Similarly, if you start with a price $p$, a market supply curve will tell you how many units all the sellers together would want to sell at that price; if you start with a quantity $q$, the social marginal cost curve will tell you the marginal cost to society of producing that $q$th unit.
+
+
+\subsection*{Example: Taxes revisited}\index{taxes!in terms of margins}
+
+Let's take another look at taxes. If the government imposes a tax on the sellers of \$1 per unit, we know from Chapter~\ref{3taxes} how to shift the supply curve, e.g., at a price of \$4 per unit, the firms in the market are only going to get to keep \$3 per unit, so at a price of \$4 with a \$1 tax the sellers should be willing to sell exactly what they were willing to sell at \$3 without the tax. But we also saw in Chapter~\ref{3taxes} that it looked like the supply curve shifted \emph{up} by \$1. We can't explain this from the supply curve perspective, but if we remember that the supply curve is also the marginal cost curve then the explanation is simple: the marginal cost\index{marginal!cost} of producing and selling each additional unit has increased by \$1 because of the tax. So the marginal cost\index{marginal!cost} curve shifts up by \$1. Same result, different story!
+
+
+
+\begin{comment}
+\section{Total variable cost and producer surplus}\index{cost!total variable}\index{producer surplus}\index{surplus!producer}
+
+If the marginal cost\index{marginal!cost} of producing the first unit is \$1, that of the second unit is \$2, and that of the third unit is \$3, then the \textbf{total variable cost} of producing three units is \$1 + \$2 + \$3 = \$6. Graphically (see Figure~\ref{fig:producer_surplusa}), the total variable cost can be represented by the area under the supply curve (a.k.a., the marginal cost\index{marginal!cost} curve).\footnote{If you do calculus\index{calculus}, this should make good sense: the marginal cost\index{marginal!cost} curve is the derivative of the total cost curve, so integrating\index{integral} under the marginal cost\index{marginal!cost} curve brings us back to total costs (plus a constant representing fixed costs\index{cost!fixed}).}  This area represents all costs except for fixed costs\index{cost!fixed}, e.g., the cost of building the factory in the first place. (When you add the fixed costs\index{cost!fixed} to the total variable costs, you get total costs.)
+
+
+\begin{figure}
+\centering
+\subfigure[Producer surplus and total variable cost]
+{\label{fig:producer_surplusa}
+\begin{pspicture}(0,0)(8,9)
+\rput(0,1){
+    \psline(0,8)(8,0)
+    \psline(0,0)(8,8)
+    \pspolygon[fillstyle=hlines, fillcolor=black, linecolor=black](0,0)(4,0)(4,4)
+    \rput*(2.7,1){TVC}
+    \pspolygon[fillstyle=vlines, fillcolor=black, linecolor=black](0,0)(0,4)(4,4)
+    \rput*(1.2,2.9){PS}
+    \rput[r](-.2,7.5){$P$}
+    \rput[t](7.5,-.2){$Q$}
+    \psaxes[labels=none, ticks=none, showorigin=false](8,8)
+    }
+\end{pspicture}
+}
+%
+\hspace{2cm}
+%
+\subfigure[Total revenue]
+{\label{fig:producer_surplusb}
+\begin{pspicture}(0,0)(8,9)
+\rput(0,1){
+    \psline(0,8)(8,0)
+    \psline(0,0)(8,8)
+    \pspolygon[fillstyle=vlines, fillcolor=black, linecolor=black](0,0)(4,0)(4,4)(0,4)
+    \rput*(2,2){TR}
+    \rput[r](-.2,7.5){$P$}
+    \rput[t](7.5,-.2){$Q$}
+    \psaxes[labels=none, ticks=none, showorigin=false](8,8)
+    }
+\end{pspicture}
+}
+\caption{Producer surplus = total revenue $-$ total variable cost}
+\label{fig:producer_surplus} % Figure~\ref{fig:producer_surplus}
+\end{figure}
+
+If the market price is \$3.50 per unit and the firm produces three units, its total revenue will be $\$3.50 \cdot 3 = \$10.50$, and its total variable cost of production will be \$6. The difference between total revenue and total variable costs (in this case, \$4.50) is \textbf{producer surplus}: this is the benefit that the seller gets from selling. Note that producer surplus is not the same thing as profit because we haven't accounted for fixed costs\index{cost!fixed}. Once we account for fixed costs\index{cost!fixed}, the profit that is left over should be comparable to profits from comparable investments. (See Chapter~\ref{1transition}.)
+
+
+\begin{figure}[t]
+\begin{center}
+\begin{pspicture}(0,0)(8,8)
+\rput(-6,0){
+    \psline(0,8)(8,0)
+    \psline(0,0)(8,8)
+    \pspolygon[fillstyle=hlines, fillcolor=black, linecolor=black](0,0)(4,0)(4,4)
+    \rput*(2.7,1){TVC}
+    \pspolygon[fillstyle=vlines, fillcolor=black, linecolor=black](0,0)(0,4)(4,4)
+    \rput*(1.2,2.9){PS}
+    \rput[r](-.2,7.5){$P$}
+    \rput[t](7.5,-.2){$Q$}
+    \psaxes[labels=none, ticks=none, showorigin=false](8,8)
+    }
+\rput(6,0){
+    \psline(0,8)(8,0)
+    \psline(0,0)(8,8)
+    \pspolygon[fillstyle=vlines, fillcolor=black, linecolor=black](0,0)(4,0)(4,4)(0,4)
+    \rput*(2,2){TR}
+    \rput[r](-.2,7.5){$P$}
+    \rput[t](7.5,-.2){$Q$}
+    \psaxes[labels=none, ticks=none, showorigin=false](8,8)
+    }
+\end{pspicture}
+\end{center}
+\caption{Producer surplus = total revenue $-$ total variable cost}
+\label{fig:producer_surplus} % Figure~\ref{fig:producer_surplus}
+\end{figure}
+\end{comment}
+
+
+
+
+\section{Reinterpreting the demand curve}\index{demand curve!in terms of margins}\index{margins!and demand curve}
+
+
+Just as we've refashioned the supply curve as a marginal cost\index{marginal!cost} curve, we can refashion the demand curve as a \textbf{marginal benefit\index{marginal!benefit|(} curve}. Unfortunately, as in the analysis Chapter~\ref{3details} concerning downward sloping demand curves, it turns out that there are some theoretical complications.\footnote{Again, the complications stem from the income effect.} A more advanced course can address those complications; our approach will be to gloss over the theoretical difficulties in order to describe the basic ideas.
+
+Consider an individual whose demand curve indicates that (1) at any price below \$5 per unit she wants to buy at least 10 units; and (2) at any price above \$5 per unit she wants to buy at most 9 units. We can now ask the following question: What is this person's \emph{marginal benefit}\index{marginal!benefit} from obtaining the 10th unit? (\textbf{Marginal benefit\index{marginal!benefit}} is the benefit from obtaining an additional unit. The marginal benefit of the 10th unit is the difference in benefits between having 10 units and having only 9 units.)
+
+The answer follows from individual optimization: the individual's marginal benefit from obtaining the 10th unit must be \$5. Here's why:
+\begin{itemize}
+\item Since she wants to buy at least 10 units at any price below \$5 per unit (say, \$4.90 per unit), the marginal benefit of the 10th unit cannot be less than \$5. If the marginal benefit of the 10th unit was, say, \$4, she wouldn't be optimizing by buying 10 units at a market price of \$4.90; she would be better off by buying only 9 units instead of 10. 
+\item Since she wants to buy at most 9 units at any price above \$5 per unit (say, \$5.10), the marginal benefit of the 10th unit cannot be more than \$5. If the marginal benefit of the 10th unit was, say, \$6, she wouldn't be optimizing if she bought only 9 units at a market price of \$5.10; she would be better off buying 10 units instead of 9. 
+\item Since her marginal benefit from the 10th unit cannot be less than \$5 and cannot be more than \$5, it must be equal to \$5.
+\end{itemize}
+It follows that the point on the graph corresponding to a price of \$5 and a quantity of 10 units can be interpreted in two different ways. From the perspective of the \textbf{demand curve}, it indicates that at a price of \$5 per unit this individual wants to buy 10 units. From the perspective of the \textbf{marginal benefit curve}, it indicates that the marginal benefit of obtaining the 10th unit of production is \$5. This is an example of a more general result: \emph{every point on an individual demand curve is also a point on that individual's marginal benefit curve.}
+
+The same result applies to the market as a whole: every point on the \textbf{market demand curve} is also a point on the \textbf{social marginal benefit curve}. If the market wants to buy 1 million units at any price below \$5 per unit but fewer than 1 million units at any price above \$5 per unit, the marginal benefit to society of obtaining the 1 millionth unit must be \$5.
+
+\begin{figure}[H]
+\centering
+\begin{pspicture}(0,0)(8,9)
+\rput(0,1){
+    \psline(1,7)(7,1)
+    \rput[r](-.2,7.5){$P$}
+    \rput[t](7.5,-.2){$Q$}
+    \psaxes[labels=none, ticks=none, showorigin=false](8,8)
+    }
+\end{pspicture}
+\caption{Every point on an individual (or market) demand curve is also a point on an individual (or social) marginal benefit curve}
+\label{fig:margindemand}
+\end{figure}
+
+
+The close connection between demand curves and marginal benefit curves gives us two ways to think about the graph in Figure~\ref{fig:margindemand}. If you start with a given $p$, an individual demand curve will tell you how many units that individual buyer would want to buy at that price; if you start with a quantity $q$, an individual marginal benefit curve will tell you the marginal benefit to that individual seller of obtaining that $q$th unit. Similarly, if you start with a price $p$, a market demand curve will tell you how many units all the buyers together would want to buy at that price; if you start with a quantity $q$, the social marginal benefit curve will tell you the marginal benefit to society of obtaining that $q$th unit.
+
+
+
+\subsection*{Example: Taxes revisited}\index{taxes!in terms of margins}
+
+Let's take another look at taxes. If the government imposes a tax on the buyers of \$1 per unit, we know from Chapter~\ref{3taxes} how to shift the demand curve, e.g., at a price of \$4 per unit, the buyers in the market are going to end up paying \$5, so at a price of \$4 with a \$1 tax the buyers should be willing to buy exactly what they were willing to buy at \$5 without the tax. But we also saw in Chapter~\ref{3taxes} that it looked like the demand curve shifted \emph{down} by \$1. We can't explain this from the demand curve perspective, but if we remember that the demand curve is also the marginal benefit curve then the explanation is simple: the marginal benefit\index{marginal!benefit} of obtaining each additional unit has decreased by \$1 because of the tax. So the marginal benefit\index{marginal!benefit} curve shifts down by \$1. Same result, different story!
+
+
+\begin{comment}
+\section{Total benefit and consumer surplus}\index{total benefit}\index{benefit!total}\index{consumer surplus}\index{surplus!consumer}
+
+
+If the marginal benefit of the first unit is \$6, that of the second unit is \$5, and that of the third unit is \$4, then the \textbf{total benefit} of having three units is \$6 + \$5 + \$4 = \$15. Graphically (see Figure~\ref{fig:consumer_surplusa}), the total benefit can be represented by the area under the demand curve (a.k.a., the marginal benefit curve).\footnote{Again, if you do calculus\index{calculus}, this should make good sense: the marginal benefit curve is the derivative of the total benefit curve, so integrating\index{integral} under the marginal benefit curve brings us back to total benefits (plus a constant).}
+
+If the market price is \$3.50 per unit and our individual buys three units, her total expenditure will be $\$3.50\cdot 3 = \$10.50$ and her total benefit will be \$15. The difference between total benefit and total expenditure (in this case, \$4.50) is \textbf{consumer surplus}: this is the benefit that the buyer gets from buying.\footnote{Just as producer surplus doesn't account for the seller's fixed costs\index{cost!fixed}, consumer surplus doesn't account for the buyer's fixed costs\index{cost!fixed}. For example, the consumer surplus you get from traveling around Hawaii doesn't account for the cost of your plane ticket to get there.}
+
+
+\begin{figure}[bt]
+\centering
+\subfigure[Total benefit]
+{\label{fig:consumer_surplusa}
+\begin{pspicture}(0,0)(8,9)
+\rput(0,1){
+    \psline(0,8)(8,0)
+    \psline(0,0)(8,8)
+    \pspolygon[fillstyle=hlines, fillcolor=black, linecolor=black](0,0)(4,0)(4,4)(0,8)
+    \rput*(2,3){TB}
+    \rput[r](-.2,7.5){$P$}
+    \rput[t](7.5,-.2){$Q$}
+    \psaxes[labels=none, ticks=none, showorigin=false](8,8)
+    }
+\end{pspicture}
+}
+%
+\hspace{2cm}
+%
+\subfigure[Consumer surplus and total expenditure]
+{\label{fig:consumer_surplusb}
+\begin{pspicture}(0,0)(8,9)
+\rput(0,1){
+    \psline(0,8)(8,0)
+    \psline(0,0)(8,8)
+    \pspolygon[fillstyle=hlines, fillcolor=black, linecolor=black] (0,4)(4,4)(0,8)
+    \rput*(1.2,5.1){CS}
+    \pspolygon[fillstyle=vlines, fillcolor=black, linecolor=black](0,0)(4,0)(4,4)(0,4)
+    \rput*(2,2){TE}
+    \rput[r](-.2,7.5){$P$}
+    \rput[t](7.5,-.2){$Q$}
+    \psaxes[labels=none, ticks=none, showorigin=false](8,8)
+    }
+\end{pspicture}
+}
+\caption{Consumer surplus = total benefit $-$ total expenditure}
+\label{fig:consumer_surplus} % Figure~\ref{fig:consumer_surplus}
+\end{figure}
+
+
+
+
+\subsection*{The whole enchilada}
+
+
+Putting supply and demand together, we get Figure~\ref{fig:enchilada}. Total revenue (TR, a.k.a. total expenditure, TE)---is producer surplus (PS) plus total variable cost (TVC). Total benefit (TB) is the area under the demand curve (a.k.a. the marginal benefit\index{marginal!benefit|)} curve), so consumer surplus (CS) is $\mbox{CS}=\mbox{TB}-\mbox{TE}$. Total variable cost is the area under the supply curve (a.k.a. the marginal cost\index{marginal!cost} curve), so producer surplus is $\mbox{PS}=\mbox{TR}-\mbox{TVC}$. Together producer surplus and consumer surplus constitute the \textbf{gains from trade}.
+\end{comment}
+
+
+
+
+\section{Conclusion: Carrots and sticks}\index{margins!in terms of sticks and carrots}
+
+Another way to think about marginal benefit\index{marginal!benefit} and marginal cost\index{marginal!cost} curves is in terms of carrots and sticks. Incentives generally take one of two forms: rewards (i.e., carrots) or punishments (sticks). \footnote{To get a donkey to move forward you can either tie a carrot to a pole and dangling it in front of the donkey, or you can hit the donkey with a stick. To analyze this to death even more, we can use a decision tree to analyze the donkey's choices: go forward or do nothing. To get the donkey to go forward you can either make ``Go forward" look attractive---e.g., with a carrot---or you can make ``Do nothing" look unattractive---e.g., with a stick. Both are---at least in theory---equally good as incentive mechanisms.} You can think of the marginal benefit\index{marginal!benefit} curve as the carrot, and the marginal cost\index{marginal!cost} curve as the stick. The marginal benefit\index{marginal!benefit} curve (i.e., the demand curve) provides an incentive for sellers to produce \emph{more} of good X, and the marginal cost\index{marginal!cost} curve (i.e., the supply curve) provides an incentive for buyers to consume \emph{less} of good X.
+
+Note that in competitive markets the market price, the marginal cost\index{marginal!cost} at the equilibrium quantity, and the marginal benefit\index{marginal!benefit} at the equilibrium quantity are equal. This fact underlies many of the efficiency results that we will discuss in the next chapter.
+
+\begin{comment}
+\begin{figure}
+\begin{center}
+\begin{pspicture}(0,0)(8,8)
+\psline(0,8)(8,0)
+\psline(0,0)(8,8)
+\pspolygon[fillstyle=hlines, fillcolor=black, linecolor=black](0,0)(4,0)(4,4)
+\pspolygon[fillstyle=hlines, fillcolor=black, linecolor=black] (0,4)(4,4)(0,8)
+\pspolygon[fillstyle=vlines, fillcolor=black, linecolor=black](0,0)(0,4)(4,4)
+\rput*(2.7,1){TVC}
+\rput*(1.2,5.1){CS}
+\rput*(1.2,2.9){PS}
+\rput[r](-.2,7.5){$P$}
+\rput[t](7.5,-.2){$Q$}
+\psaxes[labels=none, ticks=none, showorigin=false](8,8)
+\end{pspicture}
+\end{center}
+\caption{The whole enchilada}
+\label{fig:enchilada}  % Figure~\ref{fig:enchilada}
+\end{figure}
+\end{comment}
+
+
+
+\index{margins|)}
+
+
+

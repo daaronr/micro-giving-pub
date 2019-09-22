@@ -1,0 +1,456 @@
+\chapter{Elasticities}
+\label{3elasticity}
+\index{elasticity|(}
+
+Let's go back to the demand curve and ask this question: How sensitive are buyers to changes in price? In other words, how much less (or more) would buyers want to buy if the price went up (or down) by a little bit? This question is relevant, for example, in addressing global warming. Increasing the price of gasoline and other fossil fuels linked to global warming is one way to reduce emissions, so many environmentalists---and even more economists---support a \textbf{carbon tax}\index{climate change}\index{global warming}\index{carbon tax}\index{tax!carbon} on fossil fuels. But what tax rate is needed to cut gasoline use by 5\%, or by 10\%? The answer depends in part on how sensitive buyers are to price changes. %(Question: What else does it depend on?)
+
+
+
+
+\begin{comment}
+
+\begin{figure}[!b]%[bt]
+\centering
+\subfigure[]
+{\label{fig:elasticity1a}
+\begin{pspicture}(0,0)(8,9)
+\rput(0,1){
+    \psline(1,6)(7,4)
+    \rput[r](-.2,7.5){$P$}
+    \rput[t](7.5,-.2){$Q$}
+    \psaxes[labels=none, ticks=none, showorigin=false](8,8)
+    }
+\end{pspicture}
+}
+%
+\hspace{2cm}
+%
+\subfigure[]
+{\label{fig:elasticity1b}
+\begin{pspicture}(0,0)(8,9)
+\rput(0,1){
+    \psline(2,7)(5,1)
+    \rput[r](-.2,7.5){$P$}
+    \rput[t](7.5,-.2){$Q$}
+    \psaxes[labels=none, ticks=none, showorigin=false](8,8)
+    }
+\end{pspicture}
+}
+\caption{(a) a ``flat" demand curve; (b) a ``steep" demand curve}
+\label{fig:elasticity1} % Figure~\ref{fig:elasticity1}
+\end{figure}
+
+One way to measure the sensitivity of demand is to just eyeball the slope\index{slope!of supply/demand curve}\index{slope!versus elasticity}\index{elasticity!versus slope} of the demand curve. Figure~\ref{fig:elasticity1a} shows a ``flat" demand curve, one which appears to be very sensitive to price changes: a small decrease (or increase) in price makes the quantity demanded go way up (or way down). Figure~\ref{fig:elasticity1b} shows a ``steep" demand curve, one which appears to be very insensitive to price changes: a small decrease (or increase) in price has only a small impact on the quantity demanded.
+
+
+
+%This sort of eyeballing is pretty good for some things. For example, by comparing the steepness or flatness of the demand and supply curves we can determine the ultimate burden of a per-unit tax: if the demand curve is much steeper than the supply curve then the buyers will bear the brunt of the tax; if the supply curve is much steeper than the demand curve then the sellers will bear the brunt of the tax.
+
+But there are some problems with the eyeballing approach. The most important is that it is highly susceptible to changes in the graph's scale. Graph the demand curve for gasoline in dollars and it will look like Figure~\ref{fig:elasticity1a}: buyers appear to be very sensitive to price changes. But graph the demand curve for gasoline in pennies and it will look like Figure~\ref{fig:elasticity1b}: buyers will appear to be insensitive to price changes. Similar difficulties affect the $x$-axis: the curve will look different depending on whether we measure gasoline in gallons or barrels.
+
+%For one thing, we'd might like to be able to compare the price responsiveness of consumers to different commodities (e.g., milk and automobiles). This is likely to prove difficult because a price change of \$1 is a lot in terms of milk but nothing in terms of automobiles.
+
+%This highlights a larger problem: the eyeballing approach is highly susceptible to changes in the graph's scale. Graph the demand curve for gasoline in dollars and it will look like Figure~\ref{fig:elasticity1a}: buyers appear to be very sensitive to price changes. But graph the demand curve for gasoline in pennies and it will look like Figure~\ref{fig:elasticity1b}: buyers appear to be insensitive to price changes. Similar difficulties affect the $x$-axis: the curve will look different depending on whether we measure gasoline in gallons, liters, or barrels.
+
+\end{comment}
+
+\section{The price elasticity of demand}
+
+One way to measure the sensitivity of demand is to just eyeball the slope of the demand curve to see if it's ``steep" or ``flat". But it turns out that a better way to analyze sensitivity is to put everything in percentages. %When we do this, the units become irrelevant: we get the same answer whether we're using dollars or pennies, gallons or liters. As an added bonus, using percentages allows us to compare the demand sensitivity of gasoline with that of (say) shampoo. 
+
+The \textbf{price elasticity of demand at point A}\index{elasticity!price elasticity of demand} measures the percentage change in quantity demanded (relative to the quantity demanded at point A) resulting from a 1\% increase in the price (relative to the price at point A). For example, if a 1\% increase in price (relative to the price at point A) results in a 5\% reduction in quantity demanded (relative to the quantity demanded at point A), we say that the price elasticity of demand at point A is $-5$. 
+
+Demand at point A is \textbf{unit elastic}\index{elasticity!unit} if the percentage change in quantity demanded is \emph{equal} in magnitude to the percentage change in price. In English, this means that a change in price causes a \emph{proportional} change in the quantity demanded. In math, this means that the elasticity of demand is $-1$: a 1\% increase in price results in a 1\% decrease in quantity demanded.
+
+Demand at point A is \textbf{elastic}\index{elasticity!elastic}---think of a stretchy rubber band that extends a lot when you pull on it---if the percentage change in quantity demanded is \emph{greater} in magnitude than the percentage change in price. In English, this means that a small change in price causes the quantity demanded to increase \emph{more than proportionally}: demand is sensitive to price changes. In math, this means that the elasticity of demand is more negative than $-1$, e.g., $-2$, in which case a 1\% increase in price results in a 2\% decrease in quantity demanded. Of occasional theoretic interest is the case of infinite sensitivity to price changes: demand is \textbf{perfectly elastic} at point A when the elasticity is $-\infty.$
+
+Demand at point A is \textbf{inelastic}\index{elasticity!inelastic demand}---think of a tight rubber band that doesn't move much when you pull on it---if the percentage change in quantity demanded is \emph{smaller} in magnitude than the percentage change in price. In English, this means that a small change in price causes the quantity demanded to increase \emph{less than proportionally}; demand is insensitive to price changes. In math, this means that the elasticity of demand is more positive than $-1$, e.g., $-\frac{1}{2}$, in which case a 1\% increase in price results in only a $\frac{1}{2}$\% decrease in quantity demanded. Of occasional theoretic interest is the case of completely insensitivity to price changes: demand is \textbf{perfectly inelastic} at point A when the elasticity is $0.$
+
+
+Note that elasticities are always measured at a point: even a straight line demand curve will have different price elasticities of demand at different points! Also note that demand elasticities are never greater than zero because demand curves are downward-sloping: a 1\% increase in price never causes buyers to want to buy more. Because demand elasticities are always negative, economists often talk about elasticities in terms of magnitude or absolute value. Saying that demand is more elastic at point A than at point B means that the elasticity is more negative at A than at B, e.g., $-5$ compared to $-1$.
+
+%\subsubsection{Question: \rm What would it mean for the price elasticity of demand to be a positive number such as $+1$?}
+
+%Answer: It would mean that a 1\% \emph{increase} in price would result in a 1\% \emph{increase} in quantity demanded. This means that the demand curve is upward sloping! We never see upward sloping demand curves, so price elasticities of demand are always negative numbers. Because demand elasticities are always negative, economists often talk about elasticities in terms of magnitude or absolute value. When we say that demand is more elastic at point A than at point B, we mean that the elasticity is more negative at A than at B, e.g., $-5$ compared to $-1$.
+
+\medskip
+
+\begin{description}
+\item [To sum up in English]\index{elasticity!summed up!in English} If, at point A, a small change in price causes the quantity demanded to increase by a lot, demand at point A is elastic. If quantity demanded only changes by a little, demand at point A is inelastic. And if quantity demanded changes by a proportional amount, demand at point A has unit elasticity.
+\item [To sum up in math]\index{elasticity!summed up!in math} If, at point A, the price elasticity of demand is greater in magnitude than $-1$ (e.g., $-2$), demand at point A is elastic. If the elasticity is lesser in magnitude than $-1$ (e.g., $-\frac{1}{2}$), demand at point A is inelastic. And if the elasticity is equal to $-1$, demand at point A has unit elasticity.
+\item [To sum up in pictures] See Figure~\ref{fig:elasticityarrow}. (Ignore for now supply elasticities.)% on page~\pageref{fig:elasticityarrow}.
+\end{description}
+
+
+
+\begin{figure}[H]
+%\begin{center}
+\begin{pspicture}(0,0)(24,3)
+\rput(0,0){
+\psline{<->}(2.5,1)(21.5,1)
+\rput[l](1,1){$-\infty$}
+\rput[bl](3,1.1){$\overbrace{\hspace{2.3cm}}$}
+\rput[b](5.5,2.6){Elastic}
+\rput[t](5.5,2.4){Demand}
+\rput(8,1){$|$}
+\rput(8,0){$-1$}
+\rput[bl](8.2,1.1){$\overbrace{\hspace{1.7cm}}$}
+\rput[b](10,2.6){Inelastic}
+\rput[t](10,2.4){Demand}
+\rput(12,1){$|$}
+\rput(12,0){$0$}
+\rput[bl](12.2,1.1){$\overbrace{\hspace{1.7cm}}$}
+\rput[b](14,2.6){Inelastic}
+\rput[t](14,2.4){Supply}
+\rput(16,1){$|$}
+\rput(16,0){$+1$}
+\rput[bl](16.2,1.1){$\overbrace{\hspace{2.3cm}}$}
+\rput[b](18.5,2.6){Elastic}
+\rput[t](18.5,2.4){Supply}
+\rput[r](23,1){$+\infty$}}
+%\rput[b](12,0){\psovalbox{\begin{tabular}{c}Perfectly\\ inelastic\\ demand\end{tabular}}}
+\end{pspicture}
+%\end{center}
+\caption{Elasticities\index{elasticity!summed up!in pictures} (with thanks to Anh Nyugen)}
+\label{fig:elasticityarrow}
+\end{figure}
+
+\subsection*{Calculating the price elasticity of demand}\index{elasticity!formula}
+
+To measure the price elasticity of demand at point A, we find some other convenient point B that is near point A and calculate the percentage changes in price and quantity demanded between them\footnote{If you do calculus\index{calculus}, what we're getting at is $\displaystyle\frac{dq}{dp}\cdot\frac{p_A}{q_A}$.}:
+\[
+\varepsilon (A)=\frac{\mbox{\% change in } q}{\mbox{\% change in } p} = \displaystyle\frac{\ \ \ \displaystyle\frac{\Delta q}{q_A}\ \ \ }{\displaystyle\frac{\Delta p}{p_A}} =
+\frac{\Delta q}{\Delta p}\cdot\frac{p_A}{q_A} =
+\frac{q_B-q_A}{p_B-p_A}\cdot\frac{p_A}{q_A}.
+\]
+% YORAM: USE A DIFFERENT SYMBOL HERE???
+%
+
+\section{Beyond the price elasticity of demand}\index{elasticity!price elasticity of supply}
+
+The sensitivity of \emph{demand} to changes in \emph{price} is not the only item of interest. For example, we might want to know the sensitivity of \emph{consumption} to changes in \emph{wealth}. In general, the \textbf{$X$ elasticity of $Y$ at point A}\index{elasticity!$X$ elasticity of $Y$} measures the percentage change in $Y$ resulting from a 1\% increase in $X$. (As always, these percentage changes are calculated relative to point A.) So if someone tells you that the wealth elasticity of consumption at present levels is 3, she means that a 1\% increase in wealth from today's levels would increase consumption by 3\%, or, equivalently, that a 1\% decrease in wealth would decrease consumption by 3\%.
+
+As another example, consider the sensitivity of \emph{supply} to changes in \emph{price}, i.e., the \textbf{price elasticity of supply}. Like demand elasticities, supply elasticities are always measured at a point. Unlike demand elasticities, supply curves are positive: a 1\% increase in price results in an increase in the quantity supplied. Accordingly, the terms ``elastic'', ``inelastic'', and ``unit elasticity'' refer to the magnitude of the price elasticity of supply relative to $+1$. As shown in Figure~\ref{fig:elasticityarrow}, supply at point $A$ is \textbf{elastic} if the price elasticity of supply at point $A$ is greater than $+1$; \textbf{inelastic} if the price elasticity of supply at point $A$ is less than $+1$; and \textbf{unit elastic} if the price elasticity of supply at point $A$ is equal to $+1$.
+
+\subsection*{Perfectly elastic and inelastic supply
+}
+As with demand elasticities, supply elasticities have the extremes of \textbf{perfectly elastic supply} (a price elasticity of supply of $+\infty$) and \textbf{perfectly inelastic supply} (a price elasticity of supply of $0$). Unlike their analogues on the demand side, however, these extremes values on the supply side are of great interest. 
+
+\emph{\textbf{Short-run} supply curves can be perfectly inelastic at every point.} As in Figure~\ref{fig:perfectlyinelastic}, such a supply curve is completely insensitive to price changes: no matter what the price, suppliers want to sell the same amount. This makes sense for certain short-run supply curves, such as the supply of apartments in Seattle. Suppliers cannot instantly respond to higher rental prices by building more apartment buildings; it takes time to get permits, do the construction, etc. Similarly, suppliers are unable to instantly respond to lower rental prices by taking apartment buildings off the market; it takes time to convert apartments into condominiums or to tear down apartment buildings and build something else. In the short run, then, the supply of apartments is fixed: if there are 50,000 apartments in Seattle today, there will be 50,000 apartments in Seattle next week, regardless of the rental price. In the short run, the supply curve for apartments is perfectly inelastic.
+%FIX The key assumption here is that the ``short run'' is such a brief period of time that suppliers cannot change how much they want to sell in response to changes in the market price.
+
+\begin{figure}%[bt]
+\centering
+\subfigure[]
+{\label{fig:perfectlyinelastic}
+\begin{pspicture}(0,0)(8,9)
+\rput(0,1){
+    \psline(4,.1)(4,7)
+    \rput[r](-.2,7.5){$P$}
+    \rput[t](7.5,-.2){$Q$}
+    \psaxes[labels=none, ticks=none, showorigin=false](8,8)
+    }
+\end{pspicture}
+}
+%
+\hspace{2cm}
+%
+\subfigure[]
+{\label{fig:perfectlyelastic}
+\begin{pspicture}(0,0)(8,9)
+\rput(0,1){
+    \psline(.5,4)(7.5,4)
+    \rput[r](-.2,7.5){$P$}
+    \rput[t](7.5,-.2){$Q$}
+    \psaxes[labels=none, ticks=none, showorigin=false](8,8)
+    }
+\end{pspicture}
+}
+\caption{(a) A supply curve that is \textbf{perfectly inelastic} at every point; (b) a supply curve that is \textbf{perfectly elastic} at every point}
+\label{fig:perfect} % Figure~\ref{fig:elasticity1}
+\end{figure}
+
+
+
+On the other extreme, \emph{\textbf{long-run} supply curves can be perfectly elastic at every point.} As in Figure~\ref{fig:perfectlyelastic}, such a supply curve is infinitely sensitive to price changes: at any price higher than $p$, suppliers want to sell an infinite amount; at any price lower than $p$, suppliers want to sell zero.  This makes sense for many long-run supply curves such as the supply of apple cider. In the long run, there is some price $p$ at which the apple cider business generates the same rate of return as comparable investments. (Recall here the ideas from Chapter~\ref{1transition}.) At a price of $p$, suppliers \emph{in the long run} are indifferent between investing in the apple cider business and investing elsewhere. As a result, they are indifferent concerning how much apple cider they want to sell at price $p$: they would be willing to sell one hundred gallons, one million gallons, or any other amount.
+
+At any price other than $p$, however, the rate of return in the apple cider business will be different than the rate of return from comparable investments. Just as drivers shift out of slow-moving lanes and into fast-moving ones---the principle of arbitrage---investors will respond by entering or exiting the apple cider industry. At any price higher than $p$, the apple cider business would generate higher rates of return than comparable investments, so \emph{in the long run} sellers would want to sell an infinite amount of apple cider. At any price lower than $p$, the apple cider business would generate lower rates of return than comparable investments, so \emph{in the long run} nobody would want to sell apple cider.
+
+The end result is a perfectly elastic long-run supply curve: suppliers want to sell zero units at any price less than $p$, they want to sell an infinite number of units at any price above $p$, and they are indifferent concerning the number of units they want to sell at a price exactly equal to $p$.
+%FIX One key assumption here is that the ``long run'' provides enough time for firms to enter or exit the industry. A second key assumption is that the supply curve for inputs is perfectly elastic as well: the market price for apples cannot change as firms enter or exit the apple cider industry.
+
+
+
+\begin{comment}
+
+Again, however, the immediately response to the question
+\subsubsection{Question: \rm Why are supply curves upward-sloping?}\index{supply curve!why upward-sloping}
+
+Answer: Well, this is intuitively sensible but theoretically complicated. Here goes: An upward-sloping supply curve indicates that as the price goes up firm A is willing to supply more (or, equivalently, that as the price goes down firm A is willing to supply less). For example, at a price of \$6 firm A might want to sell 4, and at a price of \$8 firm A might want to sell 10.
+
+The explanation here has to do with profit maximization. A tool manufacturer, for example, has a certain number of factories, and those factories can comfortably produce a certain number of tools. It would be possible to increase production even more, e.g., by running the factories 24 hours a day. But such a move involves higher costs: the firm would have to pay people more to work the graveyard shift, there would be extra maintenance costs, etc. So it may be \emph{possible} to increase production, but it may not be \emph{profitable} to do so unless the market price is high enough.
+
+
+% LONG EXERCISE HERE. I'M COMMENTING IT OUT FOR NOW
+
+Exercise: Below is a hypothetical market for soda. Calculate the price elasticity of demand for the points on the demand curve corresponding to prices of \$1.00, \$.60, and \$.20. Then calculate the price elasticity of supply for the points on the supply curve corresponding to prices of \$.80, \$.60, and \$.40.
+
+
+\begin{figure}[bt]
+\vspace{1in}
+\caption{A hypothetical market for soda}
+\label{fig:soda1}
+\end{figure}
+
+
+
+The answers
+
+Recall the formula for elasticity:
+
+At a price of \$1.00, the quantity demanded is 4 million cans per week. A convenient point nearby is the one with a price of \$1.20 and quantity demanded of 2 million cans per week. (If you picked a different convenient point, you should still get the same answer…)
+
+So:
+
+Two points are worth noting here. First, I played fast and loose with the units, writing 4 instead of 4 million. This is because the units cancel when we calculate elasticities; if I wanted to be precise I would have written
+
+ .
+
+So you get the same answer, which is one of the attractions of elasticities. The second point worth noting is that it doesn't matter what convenient nearby point you pick. If we instead picked the convenient point nearby with a price of \$.80 and quantity demanded of 6 million cans per week then we would have
+
+ .
+
+
+Similar calculations give us the elasticities of demand at prices \$.80 and \$.20 of -.75 and -1.66, respectively.
+
+To find the elasticities of supply at the various points, we use the same formula on the supply curve. To find the elasticity of supply at a price of \$.80 (which corresponds to a quantity of 12), we can use the nearby price of \$1.00 and the corresponding quantity, 16:
+
+
+
+
+The supply elasticities at prices \$.60 and \$.40 are 1.5, and 2, respectively.
+\end{comment}
+% END OF LONG EXERCISE
+
+
+\section{Applications}\index{elasticity!and total revenue}
+
+%\subsection*{Application: Elasticities and total revenue}
+
+One application of elasticities involves how price changes affect total revenue. Consider a shift in the supply curve that leads to a small increase in the market price. Since the demand curve remains unchanged, the new equilibrium will feature a higher price and a lower quantity than the old equilibrium. So the impact on total revenue, $pq$, is unclear: $p$ goes up but $q$ goes down.
+
+For simplicity, imagine that the increase in the market price amounts to 1\%. \emph{If the quantity remained unchanged}, then, total revenue would increase by 1\%. But quantity does not remain unchanged. In fact, we have a name for the percentage change in quantity demanded resulting from a 1\% increase in price: the price elasticity of demand!
+
+This means we can use the price elasticity of demand to determine the impact of a supply-induced price change on total revenue. If demand is elastic at our original equilibrium, a 1\% increase in $p$ will lower $q$ by more than 1\%; the combined effect on $pq$ will be to lower total revenue. If demand is inelastic at our original equilibrium, a 1\% increase in $p$ will lower $q$ by less than 1\%; the combined effect on $pq$ will be to raise total revenue.%\footnote{It follows from this that total revenue is maximized at the point of unit elasticity, where the elasticity of demand is $-1$.}
+
+
+%\subsection*{Application: Elasticities and monopoly pricing}
+
+
+Elasticities also provide some insight into the behavior of a monopoly\index{monopoly} that engages in uniform pricing, i.e., that charges everyone the same price.\index{monopoly!and elasticity}\index{elasticity!and monopoly pricing} %
+Monopolists maximize profit, which is total revenue minus total costs, and although we need calculus\index{calculus} to figure out exactly what price a monopolist will charge, we can show that \emph{monopolists will never choose a price at which demand is inelastic}. To see why, imagine that the monopolist does choose a price at which demand is inelastic, and then consider increasing the price by 1\%. This price increase will reduce the quantity demanded, so the monopolist doesn't have to produce as much; this lowers the total costs of production. And total revenue increases because we're on the inelastic portion of the demand curve. Both the higher total revenue and the lower total costs increase the firm's profits, so a profit-maximizing monopolist will always increase its price until it reaches the elastic portion of the demand curve.
+
+
+
+%\subsection*{Application: Elasticities and tax incidence}
+
+A final application of elasticities is tax incidence: the ratio of the elasticities of supply and demand matches the ratio of the tax burdens.\index{taxes!and elasticity}\index{elasticity!and taxes} Since elasticities measure sensitivity to price changes, we can see that the burden of taxes falls most heavily on the party that is least able to avoid them, i.e., the party that is least sensitive to price changes. See problem~\ref{taxelasticity} for an example.
+
+
+
+
+\begin{CALCULUS}
+
+\section{\emph{Math}: Elasticities and Calculus\index{calculus}}\index{elasticity!and calculus}
+
+Without calculus\index{calculus}, the price elasticity of demand at point $A$ is defined as
+\[
+\varepsilon (A)=\frac{\mbox{\% change in } q}{\mbox{\% change in } p} = \displaystyle\frac{\ \ \ \displaystyle\frac{\Delta q}{q_A}\ \ \ }{\displaystyle\frac{\Delta p}{p_A}} =
+\frac{\Delta q}{\Delta p}\cdot\frac{p_A}{q_A}.
+\]
+The ratio $\displaystyle \frac{\Delta q}{\Delta p}$ approximates the slope\index{slope!of supply/demand curve}\index{slope!and elasticity} of the demand curve, so we can use calculus\index{calculus} to take the limit as $\Delta p$ and $\Delta q$ approach zero. The result is a more robust definition of the price elasticity of demand at point $A$:
+\[
+\varepsilon (A)= \frac{dq}{dp}\cdot\frac{p_A}{q_A}.
+\]
+For example, if the demand curve is given by $q=50-2p$, the slope\index{slope!of supply/demand curve} of the demand curve is $\displaystyle \frac{dq}{dp}=-2$. Then the price elasticity of demand at the point $p=10, q=30$ is $\displaystyle \varepsilon = -2\frac{10}{30}=-\frac{2}{3}$ and the price elasticity of demand at the point $p=20, q=10$ is $\displaystyle \varepsilon = -2\frac{20}{10}=-4$.
+
+Similarly, if the demand curve is given by $q=1000-2p^2$, the slope\index{slope!of supply/demand curve} of the demand curve is $\displaystyle \frac{dq}{dp}=-4p$. Then the price elasticity of demand at the point $p=10, q=800$ is $\displaystyle \varepsilon = -4(10)\frac{10}{800}=-\frac{1}{2}$ and the price elasticity of demand at the point $p=20, q=200$ is $\displaystyle \varepsilon = -4(20)\frac{20}{200}=-8$.
+
+We can use calculus\index{calculus} to get a more definitive result about the relationship between total revenue and the price elasticity of demand. Since total revenue is TR$=pq$ and the demand curve tells us that $q$ is a function of $p$, we can use the product rule to calculate the effect on total revenue of an increase in price:
+\[
+\frac{d \mbox{TR}}{dp} =  \frac{d (pq)}{dp} = p\left[\frac{d}{dp}(q)\right] + q\left[\frac{d}{dp}(p)\right]= p\frac{dq}{dp}+q(1) = q\left(\frac{p}{q}\frac{dq}{dp}+1\right) =  q(\varepsilon +1).
+\]
+Since $q$ is always positive, the sign of $\displaystyle \frac{d \mbox{TR}}{dp}$ depends on the sign of $\varepsilon +1$. If demand is elastic, i.e., if the price elasticity of demand is $\varepsilon<-1$, then a price increase will \emph{reduce} total revenue; if demand is inelastic, i.e., if the price elasticity of demand is $\varepsilon>-1$, then a price increase will \emph{increase} total revenue.
+
+Other elasticities can be similarly defined in terms of
+derivatives. For example, the \textbf{cross-price elasticity}\index{elasticity!cross-price}
+measures the impact of a change in the price of good 2 on the
+quantity demanded of good 1:
+\[
+\varepsilon_{12} (A)=\frac{\mbox{\% change in } q_1}{\mbox{\% change in } p_2} = \displaystyle\frac{\ \ \ \displaystyle\frac{\Delta q_1}{q_{1_A}}\ \ \ }{\displaystyle\frac{\Delta p_2}{p_{2_A}}} =
+\frac{\Delta q_1}{\Delta p_2}\cdot\frac{p_{2_A}}{q_{1_A}}=\frac{dq_1}{dp_2}\cdot\frac{p_{2_A}}{q_{1_A}}.
+\]
+For example, if the demand curve for good 1 is given by $q_1=50-2p_1-.5p_2$, the partial derivative of the demand curve with respect to $p_2$ is $\displaystyle \frac{\partial q_1}{\partial p_2}=-.5$. Then the cross-price elasticity at the point $p_1=8, p_2=10, q_1=50-2(8)-.5(10)=29$ is $\displaystyle \varepsilon = -.5\frac{10}{29}=-\frac{5}{29}$.
+
+Cross-price elasticities turn out to be useful for nailing down a concrete definition for substitutes and complements. Good 2 is a \textbf{substitute}\index{substitute!defined using elasticity} for good 1 if an increase in the price of good 2 \emph{increases} demand for good 1, i.e., if the cross-price elasticity is positive. Similarly, good 2 is a \textbf{complement}\index{complement!defined using elasticity} for good 1 if an increase in the price of good 2 \emph{decreases} demand for good 1, i.e., if the cross-price elasticity is negative.
+
+\end{CALCULUS}
+
+
+
+%
+%\begin{EXAM}
+%\section*{Problems}
+%
+%\input{part3/qa3elasticity}
+%\end{EXAM}
+
+\index{elasticity|)}
+
+
+
+\bigskip
+\bigskip
+\section*{Problems}
+
+\noindent \textbf{Answers are in the endnotes beginning on page~\pageref{3elasticitya}. If you're reading this online, click on the endnote number to navigate back and forth.}
+
+
+\begin{enumerate}
+
+
+\item Go over previous problems (and/or make up some of your own) and calculate the elasticities of demand and supply at various points.
+
+
+
+
+
+\item Do you think demand and supply curves are more elastic (i.e., more responsive to price changes) in the short run or in the long run? Why? How does your result translate graphically in terms of the steepness or flatness of the various curves? \index{elasticity!short-run versus long-run}\endnote{\label{3elasticitya}Long-run demand and supply curves are more elastic, i.e., more responsive to price changes; in graphical terms this means that they are flatter. The reason is that buyers and sellers are more limited in short run. For example, in the short run buyers of gasoline are unlikely to respond to a price increase by buying a different car or moving where they live and/or where they work; but they can do these sorts of things in the long run. Similarly, in the short run sellers don't have enough time to build extra factories, or they might be stuck with too many factories; in the long run they can build extra factories or close down existing factories when their useful lifetime expires.}
+
+
+
+
+
+
+\item Figure~\ref{oranges5} shows a hypothetical demand curve for oranges.
+
+\begin{figure}[H]
+\begin{center}
+\vspace{1cm}
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+\psline(0,8)(16,0)
+\pscircle[fillstyle=solid,
+fillcolor=black](8,4){.1}
+\rput(8.5,4.5){Y}
+\pscircle[fillstyle=solid, fillcolor=black](14,1){.1}
+\rput(14.5,1.5){Z}
+\pscircle[fillstyle=solid,
+fillcolor=black](4,6){.1}
+\rput(4.5,6.5){X}
+\psaxes[labels=x,showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+\caption{A hypothetical market for oranges} \label{oranges5}
+\end{figure}
+
+    \begin{enumerate}
+
+    \item \label{elasticY} Calculate the price elasticity of demand at point Y.\endnote{The point Y corresponds to point $A$ in the elasticity formula, so we have $p_A=\$.80$ and $q_A=8$. For point $B$ we can take any other point, e.g., the convenient point with $p_B=\$.60$ and $q_B=10$. Then
+\[
+\varepsilon = \frac{q_B-q_A}{p_B-p_A}\cdot\frac{p_A}{q_A} =
+\frac{2}{-.20}\cdot\frac{.80}{8} = -10 \cdot \frac{1}{10} = -1.
+\]}
+
+%The equation of the demand curve is $q=16-10p$, so the slope is
+%$-10$. The elasticity of demand at point Y is therefore
+%$\displaystyle \varepsilon_Y=-10\frac{.8}{8}=-1$.
+
+
+    \item During normal years, the supply curve is such that point Y is the equilibrium. Of the other two points, one is the equilibrium during ``bad" years (when frost damages the orange crop), and one is the equilibrium during ``good" years (when the orange crop thrives). Which one is point X?\endnote{Point X is the equilibrium during bad years, when frost reduces supply.} %Circle one: X = bad\ \ good
+
+
+    \item What is the total revenue at point X? At point Y? At point Z? (Use correct units!)\endnote{Total revenue at the three points are $pq$, i.e., $(1.2)(4)=\$4.8$ million per day at point X, $(.8)(8)=\$6.4$ million per day at point Y, and $(.2)(14)=\$2.8$ million per day at point Z.}
+
+
+    \item The orange growers' profit is total revenue minus total costs. If total costs are the same in all years, do the growers have higher profits in ``bad" years or ``good" years? %(Circle one.)
+Can you explain what's going on here?\endnote{Growers make higher profits during ``bad" years: their revenue is higher and their costs are assumed to be identical. This is basically a Prisoner's Dilemma situation for the growers: they would all be better off if they could restrict supply during ``good" years, but the individual incentives lead them to flood the market and get low prices and low profits.}
+
+
+    \item \label{taxelasticity} This demand curve is the same as in problems~\ref{prob:taxes1}--\ref{prob:taxes7} in Chapter~\ref{3taxes}. Go back to those problems, calculate the price elasticity of supply at the original equilibrium, and combine your answer there with your answer from problem~\ref{elasticY} above to calculate the ratio of the elasticities $\left( \displaystyle \frac{\epsilon_S}{\epsilon_D} \right)$. Compare the results with the tax burden ratios and the slope\index{slope!and tax burdens} ratios you calculated in those previous problems.\endnote{The point Y corresponds to point $A$ in the elasticity formula, so we have $p_A=\$.80$ and $q_A=8$. For point $B$ we can take any other point on the supply curve, e.g., the convenient point with $p_B=\$.60$ and $q_B=4$. Then
+\[
+\varepsilon = \frac{q_B-q_A}{p_B-p_A}\cdot\frac{p_A}{q_A} =
+\frac{-4}{-.20}\cdot\frac{.80}{8} = 20 \cdot \frac{1}{10} = 2.
+\]
+So the ratio of the elasticities is $\displaystyle \frac{\epsilon_S}{\epsilon_D} = \frac{2}{-1}=-2$. This is the same
+as the ratio of the slopes calculated previously! (This result follows from problem~\ref{taxelasticityslope}.)}
+
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+\item \label{taxelasticityslope} Show mathematically that the ratio of the elasticities of supply and demand is the inverse of the ratio of the slopes\index{slope!and elasticity}\index{slope!of supply/demand curve} of the supply and demand curves, i.e., $\left( \displaystyle \frac{\epsilon_S}{\epsilon_D} \right)$ = $\left( \displaystyle \frac{S_D}{S_S} \right)$.\endnote{We have
+%Algebra version
+\[
+\frac{\varepsilon_S}{\varepsilon_D} = \frac{\displaystyle \ \
+\frac{\Delta q_S}{\Delta p_S}\frac{p}{q}\ \ }{\displaystyle \ \
+\frac{\Delta q_D}{\Delta p_D}\frac{p}{q}\ \ } =
+\frac{\displaystyle \ \ \frac{\Delta p_D}{\Delta q_D}\ \
+}{\displaystyle \ \ \frac{\Delta p_S}{\Delta q_S}\ \ } =
+\frac{S_D}{S_S}.
+\]}
+
+%Calculus version
+%\begin{KEY}
+%\[
+%\frac{\varepsilon_S}{\varepsilon_D} = \frac{\displaystyle \ \
+%\frac{dq_S}{dp_S}\frac{p}{q}\ \ }{\displaystyle \ \
+%\frac{dq_D}{dp_D}\frac{p}{q}\ \ } = \frac{S_D}{S_S}.
+%\]
+%\end{KEY}
+
+
+
+
+
+
+
+
+
+
+\item Very long run supply curves are often assumed to be perfectly elastic.
+
+    \begin{enumerate}
+
+    \item Explain the intuition behind perfectly elastic long run supply curves. (Hint: Recall that comparable assets should have comparable rates of return. Think about whether or not a random firm will decide to start producing widgets.)\endnote{At some market price $p$, firms making widgets earn the market rate of return; in the long run, then, firms are indifferent between making widgets and making other things, so they are willing to produce any number of widgets at price $p$. At any price less than $p$, firms would earn less than the market rate of return; in the long run, then, no firms would be willing to produce widgets, meaning that quantity supplied would be zero at any price less than $p$. Similarly, at any price greater than $p$, firms would earn more than the market rate of return; in the long run, then, everybody would rush into the widget-making business, meaning that the quantity supplied would be infinite at any price greater than $p$.}
+
+
+    \item Draw a graph of a perfectly elastic supply curve.\endnote{A perfectly elastic supply curve for widgets is a horizontal line at some price $p$.}
+
+    \item Add a normal downward sloping demand curve to your graph. Then use the usual analysis to determine the incidence of a per-unit tax in this market. How much of the tax is paid by the buyers, and how much is paid by the sellers?\endnote{A tax on the seller would shift the supply curve up by the amount of the tax. Since the supply curve is horizontal, the equilibrium price would increase by the full amount of the tax, meaning that buyers would pay the entire tax burden. (Similarly, a tax on the buyer would shift the demand curve down, but the equilibrium price would not change, meaning that the buyers bear the full burden of the tax.) This makes sense because of the analysis above: if sellers bear part of the tax burden then they would be earning less than the market rate of return. So in the long run buyers bear the entire burden of taxes in a competitive market.}
+    \end{enumerate}
+
+
+\end{enumerate}

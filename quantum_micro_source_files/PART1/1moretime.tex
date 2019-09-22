@@ -1,0 +1,232 @@
+\chapter{Inflation}
+\label{1moretime}
+
+\index{inflation|(}\index{interest!real rate of|(}\index{interest!nominal rate of|(}
+
+Present value\index{present value} calculations are complicated by the existence of \textbf{inflation}, a general increase in prices over time. In the last chapter we assumed that there was no inflation---i.e., that prices were constant over time---so it made sense to refer to \emph{the} interest rate. But the presence of inflation requires us to distinguish between \emph{nominal} interest rates and \emph{real} interest rates.
+
+\section{Nominal and real interest rates}
+\label{sec:realnominal}
+
+The \textbf{nominal interest rate} is what the bank pays. If you have \$100 and you put it in a bank paying 5\% interest, in one year you'll have 5\% more money. With inflation, however, having 5\% more \emph{money} next year doesn't mean you'll be able to buy 5\% more \emph{stuff} next year. Prices next year will be higher than prices today, so even though your bank account balance will be 5\% larger, your ability to buy stuff---the \textbf{purchasing power} of your money---will not be 5\% greater. In fact, if the inflation rate is higher than 5\%, your purchasing power will be \emph{lower} next year even though you have more money!
+
+The \textbf{real interest rate} measures changes in purchasing power. For example, imagine that the nominal interest rate in Colombia is 13\% and the inflation rate is 9\%. If you put 1,000 Colombian pesos in the bank today at 13\% interest, in one year you'll have 13\% more, i.e., 1,130 pesos. But you won't be able to buy 13\% more stuff, because prices will have risen by 9\%: the same candy you can buy for 10 pesos today will cost $10.9$ pesos next year. To figure out the actual increase in your purchasing power, we need to compare your purchasing power today with your purchasing power in one year. Today candy costs 10 pesos, so with your 1,000 pesos you could buy 100 candies; next year candy will cost 10.9 pesos, so with your 1,130 pesos you'd be able to buy 103.7 candies. Since putting your money in the bank for a year will enable you to buy 3.7\% more candy, the real interest rate is 3.7\%.
+
+\section{Inflation}
+
+To measure inflation economists look at how prices change for a representative ``market basket" of goods and services: food, housing, transportation, education, haircuts, etc.\footnote{This would be as simple as it sounds if people bought the same stuff every year, but it isn't because they don't. Take an advanced microeconomics course to learn more.} If that market basket had a price of \$10,000 in 1990 and \$12,900 in 2000, then we would say that the price level in the United States increased 29\% during the decade. (This was in fact the price increase over that decade; it is equivalent to an annual inflation rate of 2.6\%.\footnote{See problem~\ref{monthlyannual} to understand why a 29\% increase over a decade works out to only 2.6\% per year over the course of that decade.}) %According to a recent article in the Economist, %[p. 92] consumer prices in the U.S. rose 20-fold between 1900 and 2000, which averages out to about 3\% each year.) %Make a problem about this: how is a decadal rate of 29% equal to an annual rate of 2.6%?
+
+The most commonly used measure of inflation in the United States is the Consumer Price Index (CPI), which is shown in Figure~\ref{graphgasinflation}. According to the CPI, a market basket of goods and services that cost \$10 in 1920 would have cost about \$100 in 2005; in other words, the purchasing power of \$10 in 1920 was about the same as \$100 in 2005.
+
+Taking inflation into account can produce significant shifts in perspective. As an example, consider Figures~\ref{graphgasnominal} and~\ref{graphgasreal2005}, both of which show U.S.\ gas prices since 1920. Figure~\ref{graphgasnominal} features \emph{nominal} prices: a gallon of gasoline actually sold for about \$0.30 in 1920 and \$4.10 in mid-2008. This perspective shows gas prices increasing over time, with significant jumps in the late 1970s and in recent years.
+
+The perspective in Figure~\ref{graphgasreal2005}---which adjusts for inflation by putting everything in \textbf{constant year 2005 dollars}, i.e., in terms of year 2005 purchasing power---is quite different. It shows gas prices mostly \emph{falling} over time, interrupted by temporary price shocks in the 1930s and the 1970s and by a more recent price shock that began after oil prices reached an \emph{all-time low} in 1998. Whether the recent price shock is also temporary or is a more permanent price increase caused by ``peak oil" is a matter of debate.
+
+
+
+For a more explicit comparison between Figures~\ref{graphgasnominal} and~\ref{graphgasreal2005}, consider the price of a gallon of gasoline in 1920. Figure~\ref{graphgasnominal} asks this question: ``What was the actual price of gasoline in 1920?" The answer is about \$0.30 per gallon. In contrast, the question posed in Figure~\ref{graphgasreal2005} is this: ``What would the average price of gasoline have been in 1920 \emph{if the general price level in that year had been the same as the general price level in the year 2005}?" The answer is about \$3 per gallon because, according to the CPI, the general price level in the year 2005 was about 10 times higher than in 1920.
+
+% This should really be about wages.
+
+
+Because we have a good grasp of the purchasing power of today's money, it often makes sense to use the current year, or a recent year, as the \textbf{base year} for analyzing real prices. It is, however, possible to use any year as the base year; Figure~\ref{graphgasreal1920} shows gas prices in constant 1920 dollars, i.e., in terms of 1920 purchasing power. Note that the graph is identical to that in Figure~\ref{graphgasreal2005} except for the labels on the vertical axis.
+
+
+
+\begin{figure}%
+\centering
+        \hspace{4mm}
+    \subfigure%[\small CPI, 1920--2008]
+        {\psset{xunit=.45mm,yunit=.3mm}
+        \begin{pspicture}(0,-20)(100,150)
+%\fileplot{part1/examples/gasinflation/graphgasinflation.txt}
+\fileplot{part1/examples/gasinflation/2008inflation.csv}
+\rput[lb](10,127.5){\small (a) CPI, 1920--2008}
+\psaxes[Dx=20,dx=20\psxunit,Ox=1920,Dy=25,showorigin=false](0,0)(100,150)
+\end{pspicture}
+        \label{graphgasinflation}
+        }\hspace{1.7cm}
+    \subfigure%[\small Nominal gas prices, 1920--2008]
+        {\psset{xunit=.45mm,yunit=.75cm}
+        \begin{pspicture}(0,-.8)(100,6)
+%\fileplot{part1/examples/gasinflation/graphgasnominal.txt}
+\fileplot{part1/examples/gasinflation/2008gasnominal.csv}
+\rput[lb](10,5.1){\small (b) Nominal gas prices,}
+\rput[lb](23,4.6){\small 1920--2008}
+\def\psvlabel#1{\$#1}
+\psaxes[Dx=20,dx=20\psxunit,Ox=1920,Dy=1,showorigin=false](0,0)(100,6)
+\end{pspicture}
+        \label{graphgasnominal}
+        }\\[1.5\baselineskip]
+        \hspace{5.1mm}
+        \subfigure%[\small Real gas prices, in 2005 dollars]
+        {\psset{xunit=.45mm,yunit=.75cm}
+        \begin{pspicture}(0,-.8)(100,6)
+%\fileplot{part1/examples/gasinflation/graphgasreal2000.txt}
+\fileplot{part1/examples/gasinflation/2008gasreal2005.csv}
+\rput[lb](10,5.1){\small (c) Real gas prices,}
+\rput[lb](23,4.6){\small 1920--2008, in}
+\rput[lb](23,4.2){\small 2005 dollars}
+\def\psvlabel#1{\$#1}
+\psaxes[Dx=20,dx=20\psxunit,Ox=1920,Oy=0,Dy=1,showorigin=false](0,0)(100,6)
+\end{pspicture}
+        \label{graphgasreal2005}
+        }\hspace{1.7cm}
+    \subfigure%[\small Real gas prices, in 1920 dollars]
+        {\psset{xunit=.45mm,yunit=7.5cm}
+        \begin{pspicture}(0,-.08)(100,.6)
+%\fileplot{part1/examples/gasinflation/graphgasreal1925.txt}
+\fileplot{part1/examples/gasinflation/2008gasreal1920.csv}
+\rput[lb](10,.51){\small (d) Real gas prices,}
+\rput[lb](23,.46){\small 1920--2008, in}
+\rput[lb](23,.42){\small 1920 dollars}
+\def\psvlabel#1{\$#10}
+\psaxes[Dx=20,dx=20\psxunit,Ox=1920,Oy=0,Dy=.1,showorigin=false](0,0)(100,.6001)
+\end{pspicture}
+        \label{graphgasreal1920}
+        }
+\caption{Inflation and U.S.\ gas prices, 1920--2008. Figure (a) shows the Consumer Price Index (CPI) measure of inflation; a representative ``market basket" of goods and services that cost \$10 in 1920 would have cost about \$100 in 2005. (Note that there was a period of \textbf{deflation}---a general \emph{decrease} in prices over time---during the Great Depression that began in 1929.) Figure (b) shows the average price for a gallon of gasoline using \emph{nominal} prices: a gallon of gasoline actually sold for an average of \$0.30 in 1920 and \$4.10 in mid-2008. Figure (c) shows average gas prices using \emph{real} year 2005 dollars, meaning that it adjusts for inflation by putting everything in terms of year 2005 purchasing power. Since a ``market basket" that cost \$10 in 1920 would have cost about \$100 in 2005, the \$0.30 price tag on a gallon of gasoline in 1920 is equivalent to about \$3 in year 2005 dollars. Figure (d) shows the average gas price using \emph{real} 1920 dollars. Figures (c) and (d) show that the \$4.10 price tag on a gallon of gasoline in mid-2008 is equivalent to about \$3.73 in 2005 dollars and \$0.37 in 1920 dollars. (Sources: American Petroleum Institute for pre-1949 gas prices, U.S.\ Energy Information Administration, U.S.\ Bureau of Labor Statistics.)}
+\label{realnominalgas}
+\end{figure}
+
+
+\section{Mathematics}
+
+We can get a mathematical formula relating the nominal interest rate, the real interest rate, and the inflation rate by generalizing the approach from Section~\ref{sec:realnominal}'s discussion of Colombia. If the nominal interest rate is $r_N$ and the inflation rate is $i$ (e.g., $r_N=0.13$ and $i=0.09$), the real interest rate $r_R$ is given by
+\[
+1+r_R=\frac{1+r_N}{1+i}, \ \ \ \mbox{i.e.}, \ \ \ r_R=\frac{1+r_N}{1+i}
+-1.
+\]
+Intuitively, the numerator ($1+r_N$) tells you how much more money you'll have in one year; the denominator ($1+i$) tells you how much prices will have risen in one year; and dividing one by the other tells you how much more purchasing power you'll have in one year. For the Colombia situation described above, the formula gives a real interest rate of 3.7\%:
+\[
+\frac{1+0.13}{1+0.09} -1 = 0.037.
+\]
+
+There is also a handy rule of thumb that works well when the inflation rate is small (say, less than 10\%, so that $1+i\approx 1$). In this case,
+\[
+\displaystyle r_R \ = \ \frac{1+r_N}{1+i} -1 \ = \ \frac{1+r_N}{1+i} - \frac{1+i}{1+i} \ = \ \frac{r_N-i}{1+i} \  \approx \ r_N-i.
+\]
+%
+In short, $r_R \approx \ r_N-i$. In English, this says that the real interest rate is approximately equal to the nominal interest rate minus the inflation rate.
+
+Remember that the rule of thumb is an approximation that works well only when the inflation rate is small. In the Colombia example from above, the rule of thumb estimates the real interest rate at $13\% -9\% = 4\%$, which is pretty close to the actual rate of $3.7\%$. In contrast, consider a nominal interest rate of 113\% and an inflation rate of 109\% ($r_N=1.13$, $i=1.09$). The rule of thumb estimates the real interest rate at $113\% -109\% = 4\%$, but this time the real interest rate is actually only 1.9\%:
+\[
+\displaystyle \frac{1+1.13}{1+1.09} -1 = 0.019.
+\]
+
+
+
+
+
+
+
+
+\subsection*{When to use which}
+
+It can be difficult to figure out when to use the nominal interest rate and when to use the real interest rate when computing present values. Two rules of thumb are described in Problem~\ref{realnominal}, but the only sure-fire strategy is to think about the goal, which is to figure out how much to put in the bank today to be able to afford a certain stream of income and expenses.
+
+
+\index{inflation|)}\index{interest!real rate of|)}\index{interest!nominal rate of|)}
+%\section{Compound Interest: The 8th Wonder of the World}
+
+%NEEDS WORK
+
+%FIX
+
+
+\bigskip
+\bigskip
+\section*{Problems}
+
+\noindent \textbf{Answers are in the endnotes beginning on page~\pageref{1moretimea}. If you're reading this online, click on the endnote number to navigate back and forth.}
+
+\begin{enumerate}
+
+
+\item If a bank is paying 14.4\% and inflation is 8\%, calculate the real interest rate. Round to the nearest .1\% (Hint: Think about purchasing power relative to a good whose price increases at the rate of inflation.) Use both the true formula and the approximation and compare them.\endnote{\label{1moretimea}The approximation is $14.4\% - 8\% = 6.4\%.$ The actual answer comes from the formula, and gives a result of 5.9\%.}
+
+
+
+\item Explain (as if to a non-economist) why the formula relating real and nominal interest rates makes sense. (Hint: Recall that the real interest rate measures increases in purchasing power, and think about how much more of some good you'll be able to purchase in one year if your bank account pays the nominal interest rate and the good's prices increases with inflation.)\endnote{This is explained in the text.}
+
+
+
+\item Assume that the nominal interest rate is 10\% per year and that the rate of inflation is 5\% per year. Round all your answers as appropriate.
+
+    \begin{enumerate}
+
+    \item You put \$100 in the bank today. How much will be in your account after 10 years?\endnote{Use the nominal interest rate and the future value formula to get a bank account balance of about \$259.37.}
+
+    \item You can buy an apple fritter (a type of donut) for \$1 today. The price of donuts goes up at the rate of inflation. How much will an apple fritter cost after 10 years?\endnote{Use the inflation rate and the future value formula to get an apple fritter price of about \$1.63.}
+
+    \item \label{fritter} Calculate $x$, the number of apple fritters you could buy for \$100 today. Then calculate $y$, the number of apple fritters you could buy after ten years if you put that \$100 in the bank. Finally, calculate $\displaystyle z=100\cdot \frac{y-x}{x}$. (The deal with $z$ is that you can say, ``If I put my money in the bank, then after ten years I will be able to buy $z\%$ more apple fritters.")\endnote{Today you have \$100 and fritters cost \$1, so you can buy $x=100$ of them. In ten years you'll have \$259.37 and fritters will cost \$1.63, so you'll be able to buy about $y=159$ of them. So we can calculate $z\approx 59$.}
+
+    \item \label{real} Given the nominal interest rate and inflation rate above, calculate the real interest rate to two significant digits (e.g., ``3.81\%"). Check your answer with the ``rule of thumb" approximation.\endnote{The rule of thumb approximation says that the real interest rate should be about $10\% - 5\% = 5\%$. The actual value is $\frac{1+.1}{1+.05}-1\approx .048$, i.e., 4.8\%.}
+
+    \item Calculate how much money you'd have after 10 years if you put \$100 in the bank today \emph{at the real interest rate you calculated in the previous question} (\ref{real}). Compare your answer here with the result from question~\ref{fritter}.\endnote{If you put \$100 in the bank at this interest rate, after 10 years you'd have about \$159. So you get $z=59$ as your gain in purchasing power.}
+
+    \end{enumerate}
+
+
+
+\item \label{realnominal} Here are a couple of rules of thumb concerning the use of real (rather than nominal) interest rates in present value\index{present value} calculations.
+
+    \begin{description}
+    \item[Use real when your payments are inflation-adjusted.] Somebody offers to sell you a lemon tree that will bear 100 lemons at the end of each year. The price of lemons is \$1.00/lemon right now, and will rise at the rate of inflation, which is 4\% per year; the nominal interest rate is 6\%.
+
+        \begin{enumerate}
+
+        \item What is the present value\index{present value} of the lemon tree if it will bear fruit for 5 years and then die?\endnote{Use the annuity formula and the real interest rate (about $6-4=2\%$) to get a present value of about \$470.}
+
+        \item What if it will bear fruit forever?\endnote{Use the perpetuity formula and the real interest rate (about $6-4=2\%$) to get a present value of about \$5,000.}
+
+        \end{enumerate}
+
+
+    \item[Use real to calculate future purchasing power.] You and a buddy win the \$20 million grand prize in a lottery, and you choose to accept a lump sum\index{lump sum} payment of \$10 million, which you divide equally. Your buddy immediately quits school and moves to Trinidad and Tobago. Being more cautious, you put your \$5 million in a 40-year CD paying 6\%, figuring that after 40 years your wealth will have increased 10-fold and so you'll be able to buy 10 times more stuff. Are you figuring correctly if the inflation rate is 4\%?\endnote{You're not figuring correctly because you're forgetting that prices are going to rise. Yes, you'll have 10 times more money, but you won't be able to buy 10 times more stuff. Using the real interest rate and the future value formula, we get a future value of \$11 million, or about 2.2 times more purchasing power.}
+    \end{description}
+
+
+
+
+\item \label{louisianapurchase2}\index{present value!of Louisiana Purchase} \emph{Fun.} Recall the question from Chapter~\ref{1time} concerning the Louisiana Purchase. That problem (\#\ref{louisianapurchase} on page~\pageref{louisianapurchase}) asked you to calculate the present value of the \$15 million President Jefferson spent in 1803 to buy the Louisiana Territory from France, using interest rates of 2\% and 8\%. Assume now that 2\% was the real interest rate over that time period and that 8\% was the nominal interest rate over that time period. Which is the correct interest rate to use?\endnote{Since we're trying to figure out what the current bank account balance is and the bank pays the nominal interest rate, we should use the nominal interest rate to determine if the Louisiana Purchase was really a great deal.
+
+Note that an estimate of 2\% for the real interest rate actually does make sense; in fact, it's called the Fischer Hypothesis, which you might have (or may yet) come across in macroeconomics\index{macroeconomics}. The 8\% figure for the nominal interest rate, in contrast, is entirely fictitious; you'll have to study some economic history if you want a real approximation for the nominal interest rate over the last 200 years.}
+
+
+
+
+\item \label{sweepstakes2} \emph{Fun.} Recall the question from Chapter~\ref{1time} concerning the Publishers Clearing House sweepstakes. That problem (\#\ref{sweepstakes} on page~\pageref{sweepstakes}) asked you to calculate the present value of different payment options. In calculating those present values\index{present value}, should you use the real interest rate or the nominal interest rate?\endnote{We're trying to figure out how much money we need to put in the bank today in order to finance cash payments in the future. Since the bank pays the nominal interest rate, that's the rate we should use.}
+
+
+\end{enumerate}
+
+
+
+
+
+
+\begin{comment}
+\item \begin{EXAM} \label{MBA2} \emph{Challenge.} Recall the question (\#\ref{MBA} on page~\pageref{MBA}) from Chapter~\ref{1time} concerning the value of getting an MBA. Assume that \$56,499 was the amount that Mr.\ Undergrad was paid one year ago, but that thereafter his wage rose (and continues to rise) at 4\%, the rate of inflation. Recalculate the present value from question~(\ref{MBAannuity}). \end{EXAM}
+
+\begin{KEY}
+The present value of \$56,499 one year ago is still
+\[
+(\$56,499)(1.08)=\$61,018.92.
+\]
+Adjusting today's payment for inflation yields
+\[
+(\$56,499)(1.04)=\$58,758.96,
+\]
+and its present value is exactly that: \$58,758.96. The present value of future payments can be calculated using \$58,758.96 and the \emph{real interest rate}, which turns out to be $\frac{1}{26}$, or about 3.846\%. Plugging this into the perpetuity formula gives us $\$1,527,732.96\approx\frac{\$58,758.96}{.03846}.$ (The number to the left of the equal sign is actually the precise number using $\frac{1}{26}$ rather than $.03846$.) Add them together and you get \$1,647,510.84. The elegant alternative is to put yourself two years in the past, when the inflation-adjusted wage was $\frac{\$56,499}{1.04}=\$54,325.96154$; use the \emph{real} interest rate to calculate the present value of the forthcoming stream of payments \emph{from that perspective} to be $\$1,412,475.00\approx\frac{\$54,325.96}{.03846}$; and then translate this into today's money using the future value formula and the \emph{nominal} interest rate: $(\$1,412,475.00)(1.08)^2=\$1,647,510.84.$
+\end{KEY}
+\end{comment}
+
+%\item Companies and governments use \textbf{bonds} to borrow money. If you buy a ten-year U.S. government bond with a \textbf{face value} of \$100 and a \textbf{coupon} of 5\%, it means that Uncle Sam will pay you \$5 at the end of each year for 10 years, plus \$100 at the end of the tenth year.
+
+%   \begin{enumerate}
+%   \item To calculate the present value of this bond, should you use the real interest rate or the nominal interest rate?
+%   \item Calculate the present value of the bond described above if the appropriate interest rate is 4\%. %You should get an answer of about \$108, meaning that if you pay \$100 for this bond, your rate of return over ten years is about 8\%. (Note: Since I'm giving you the answer, you must show your work to get credit.)
+%   \item Instead of buying the U.S. government bond, you buy a bond from a private company that has a 12\% chance of bankruptcy this year. So with probability $.88$ you get all of the promised payments, and with probability $.12$ you get nothing. What is the \emph{expected} present value of this bond? %You should get an answer of about \$95, meaning that if you pay \$85 for this bond, your expected rate of return over ten years is about 12\%. (Again, you must show your work to get credit.)
+%   \item What is the risk premium associated with the private bond? %(Recall that the risk premium is the difference between the expected rate of return of a risky investment and the rate of return of a risk-free investment such as U.S. government bonds.)
+%   \end{enumerate}

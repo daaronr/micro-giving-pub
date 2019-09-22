@@ -1,0 +1,862 @@
+% Fix M/C for budget
+
+
+\chapter{\emph{Math}: Deriving supply and demand curves}
+\label{3derive}
+
+At a basic level, individual supply and demand curves come from individual optimization: if at price $p$ an individual or firm is willing to buy or sell $q$ units of some good, it must because buying or selling $q$ units of that good is optimal for that individual or firm. But we can go into more depth here by actually deriving individual demand curves from utility maximization and individual supply curves from profit maximization. A useful first step is to examine the cost minimization problem.
+
+\section{Cost minimization}\index{cost!minimization}
+
+For individuals, the cost minimization problem is to achieve a specified level of utility (say, $U=10$) at least cost. For firms, the cost minimization problem is to produce a specified amount of output (say, $Y=10$) at least cost. \emph{These problems are identical: if you like, you can think of the individual as a firm whose ``product" is utility, or of the firm as an individual whose ``utility" depends on output.} We will reinforce this connection by using examples with similar notation: the individual we will consider gets utility from drinking lattes ($L$) and eating cake ($K$); the firm we will consider produces output from inputs of labor ($L$) and capital ($K$).
+
+\subsection*{Utility functions and indifference curves}\index{utility function}\index{indifference curve}
+
+Part I of this course introduced \textbf{utility functions} and \textbf{indifference curves}: if the individual's utility function is $U(L, K)=L^{\frac{1}{2}}K^{\frac{1}{2}}$ (an example of a \textbf{Cobb-Douglas utility function}\footnote{The general form of a Cobb-Douglas utility function\index{utility function!Cobb-Douglas}\index{Cobb-Douglas!utility function} is $U=L^{\alpha}K^{\beta}$ where $\alpha$ and $\beta$ are positive constants.}), then the indifference curve corresponding to a utility level of, say, 2 is the set of all consumption bundles that provide the individual with a utility of 2.
+
+In our example, the indifference curve corresponding to a utility level of 2 contains the points $(L=1, K=4)$, $(L=4, K=1)$, and $(L=2, K=2)$. The equation for this indifference curve is $L^{\frac{1}{2}}K^{\frac{1}{2}}=2$, which we can rewrite as $LK=4$ or $K=4L^{-1}$. The slope\index{slope!of indifference curve} of this indifference curve, $\displaystyle\frac{dK}{dL}=-4L^{-2}$, measures the \textbf{marginal rate of substitution (MRS)}\index{marginal!rate of substitution (MRS)} between lattes and cake: an individual with a utility level of 2 who currently has $L$ lattes and $K$ pieces of cake would be willing to trade up to $4L^{-2}$ pieces of cake in order to gain an extra latte. Such a substitution would leave the individual on the same indifference curve, and therefore with the same utility.
+
+An important result that will be useful later is that the slope\index{slope!of indifference curve} of the indifference curve (i.e., the marginal rate of substitution\index{marginal!rate of substitution (MRS)}) can also be written as
+\[
+\mbox{MRS}=-\frac{\ \ \frac{\partial U}{\partial L}\ \
+}{\frac{\partial U}{\partial K}}.
+\]
+Here the numerator is the \textbf{marginal utility\index{marginal!utility} of lattes} ($MU_L=\displaystyle\frac{\partial U}{\partial L}$), the extra utility the individual would get from an additional latte. The denominator is the \textbf{marginal utility\index{marginal!utility} of cake} ($MU_K=\displaystyle\frac{\partial U}{\partial K}$), the extra utility the individual would get from an additional piece of cake. Intuitively, the slope\index{slope!of indifference curve} of the indifference curve tells us the maximum amount of cake the individual is willing to give up in order to receive one more latte. Since one more latte gives the individual $MU_L$ extra utility, the amount of cake the individual should be willing to give up in order to get an additional latte is $K$ such that $MU_K\cdot K=MU_L$, i.e., $K=\displaystyle\frac{MU_L}{MU_K}$. (For example, if the marginal utility of lattes is 3 and the marginal utility\index{marginal!utility} of cake is 1, the individual should be willing to give up 3 pieces of cake to get one more latte.) It follows that the slope\index{slope!of indifference curve} of the indifference curve is
+\[
+\mbox{MRS}=-\frac{MU_L}{MU_K}=-\frac{\ \ \frac{\partial
+U}{\partial L}\ \ }{\frac{\partial U}{\partial K}}.
+\]
+
+
+
+\subsection*{Production functions and isoquants}
+
+Firms have structures analogous to utility functions and indifference curves; these are called \textbf{production functions}\index{production function} and \textbf{isoquants}\index{isoquant}. Given inputs of labor ($L$) and capital ($K$), the production function $f(L, K)$ describes the quantity of output that can be produced from these inputs. If the firm's production function is $Y=L^{\frac{1}{2}}K^{\frac{1}{2}}$ (an example of a \textbf{Cobb-Douglas production function}\index{production function!Cobb-Douglas}\index{Cobb-Douglas!production function}), then the \textbf{isoquant}\index{isoquant} corresponding to an output level of, say, 2 is the set of all input bundles that the firm  can use to produce 2 units of output.
+
+In our example, the isoquant corresponding to an output level of 2 contains the points $(L=1, K=4)$, $(L=4, K=1)$, and $(L=2, K=2)$. The equation for this isoquant is $L^{\frac{1}{2}}K^{\frac{1}{2}}=2$, which we can rewrite as $LK=4$ or $K=4L^{-1}$. The slope\index{slope!of isoquant} of this isoquant, $\displaystyle\frac{dK}{dL}=-4L^{-2}$, measures the \textbf{marginal rate of technical substitution (MRTS)}\index{marginal!rate of technical substitution (MRTS)} between labor and capital: a firm with an output target of 2 which currently has $L$ units of labor and $K$ units of capital would be willing to trade up to $4L^{-2}$ units of capital in order to gain an extra unit of labor. Such a substitution would leave the firm on the same isoquant, and therefore with the same output.
+
+An important result that will be useful later is that the slope\index{slope!of isoquant} of the isoquant can also be written as
+\[
+\mbox{MRTS}=-\frac{\ \ \frac{\partial f}{\partial L}\ \
+}{\frac{\partial f}{\partial K}}.
+\]
+Here the numerator is the \textbf{marginal product of labor}\index{marginal!product (of labor/capital)} ($MP_L=\displaystyle\frac{\partial f}{\partial L}$), the extra output the firm would get from an additional unit of labor. The denominator is the \textbf{marginal product of capital}\index{marginal!product (of labor/capital)} ($MP_K=\displaystyle\frac{\partial f}{\partial K}$), the extra output the firm would get from an additional unit of capital. Intuitively, the slope\index{slope!of isoquant} of the isoquant tells us the maximum amount of capital the firm is willing to give up in order to get one more unit of labor. Since one unit of labor allows the firm to produce $MP_L$ extra units of output, the amount of capital the firm should be willing to give up in order to get an additional unit of labor is $K$ such that $MP_K\cdot K=MP_L$, i.e., $K=\displaystyle\frac{MP_L}{MP_K}$. (For example, if the marginal product of labor is 3 and the marginal product of capital\index{marginal!product (of labor/capital)} is 1, the firm should be willing to give up 3 units of capital to get one more unit of labor.) It follows that the slope\index{slope!of isoquant} of the isoquant is
+\[
+\mbox{MRTS}=-\frac{MP_L}{MP_K}=-\frac{\ \ \frac{\partial
+f}{\partial L}\ \ }{\frac{\partial f}{\partial K}}.
+\]
+
+
+
+\subsection*{The cost function}
+
+If lattes and cake (or labor and capital) have unit prices of $p_L$ and $p_K$, respectively, then the total cost of purchasing $L$ units of one and $K$ units of the other is
+\[
+C(L, K)=p_L L + p_K K.
+\]
+The cost minimization problem for the individual is to choose $L$ and $K$ to minimize the cost necessary to reach a specified utility level (say, $U=2$). The cost minimization problem for the firm is to choose $L$ and $K$ to minimize the cost necessary to reach a specified output level (say, $Y=2$). Mathematically, the individual wants to choose $L$ and $K$ to minimize $p_L L + p_K K$ subject to the constraint $U(L, K)=2$; the firm wants to choose $L$ and $K$ to minimize $p_L L + p_K K$ subject to the constraint $f(L, K)=2$.
+
+To solve this problem, we need to find the values of our choice variables ($L$ and $K$) that minimize cost. Since two equations in two unknowns generally yields a unique solution, our approach will be to find two relevant equations involving $L$ and $K$; solving these simultaneously will give us the answer to the cost minimization problem.
+
+One equation involving $L$ and $K$ is clear from the set-up of the problem. For the individual, we must have $U(L, K)=2$, i.e., $L^{\frac{1}{2}}K^{\frac{1}{2}}=2$. For the firm, we must have $f(L, K)=2$, i.e., $L^{\frac{1}{2}}K^{\frac{1}{2}}=2$.
+
+Our second constraint is a necessary first-order condition\index{necessary first-order condition} (NFOC) that looks like
+\[
+\frac{\ \ \frac{\partial U}{\partial L}\ \ }{p_L}=\frac{\ \
+\frac{\partial U}{\partial K}\ \ }{p_K} \mbox{\ \ \ \ or \ \ \ \ }
+\frac{\ \ \frac{\partial f}{\partial L}\ \ }{p_L}=\frac{\ \
+\frac{\partial f}{\partial K}\ \ }{p_K}.
+\]
+At the end of this section we will provide three explanations for this NFOC. First, however, we show how to combine the NFOC with the utility (or production) constraint to solve the cost minimization problem.
+
+\subsection*{Solving the individual's cost-minimization problem}\index{cost minimization!for an individual}
+
+Consider an individual with utility function $U=L^{\frac{1}{2}}K^{\frac{1}{2}}$. Assume that the prices of lattes and cake are $p_L=1$ and $p_K=2$. What is the minimum cost necessary to reach a utility level of 2?
+
+Well, we know that the solution must satisfy the constraint $L^{\frac{1}{2}}K^{\frac{1}{2}}=2$, i.e., $LK=4$. Next, we consider our mysterious NFOC. The partial derivative of utility with respect to $L$ is $\displaystyle \frac{\partial U}{\partial L}=\frac{1}{2}L^{-\frac{1}{2}}K^{\frac{1}{2}}$; the partial derivative of utility with respect to $K$ is $\displaystyle \frac{\partial U}{\partial K}=\frac{1}{2}L^{\frac{1}{2}}K^{-\frac{1}{2}}$. Our NFOC is therefore
+\[
+\frac{\ \ \frac{\partial U}{\partial L}\ \ }{p_L}=\frac{\ \
+\frac{\partial U}{\partial K}\ \ }{p_K} \Longrightarrow
+\frac{\frac{1}{2}L^{-\frac{1}{2}}K^{\frac{1}{2}}}{1}=\frac{\frac{1}{2}L^{\frac{1}{2}}K^{-\frac{1}{2}}}{2}
+\Longrightarrow  \frac{1}{2}L^{-\frac{1}{2}}K^{\frac{1}{2}} =
+\frac{1}{4}L^{\frac{1}{2}}K^{-\frac{1}{2}}.
+\]
+Multiplying through by $4L^{\frac{1}{2}}K^{\frac{1}{2}}$ we get
+\[
+2K=L.
+\]
+In other words, the cost-minimizing solution is a consumption bundle with twice as many lattes as pieces of cake.
+
+We can now combine our two equations to find the answer. We know (from the NFOC) that $2K=L$ and (from the utility constraint) that $LK=4$. Solving simultaneously we get $(2K)K=4\Longrightarrow 2K^2=4\Longrightarrow K=\sqrt{2}$. It follows from either of our two equations that the optimal choice of lattes is $L=2\sqrt{2}$. So the cost minimizing consumption bundle that achieves a utility level of 2 is $(L, K)=(2\sqrt{2}, \sqrt{2})$, and the minimum cost necessary to reach that utility level is
+\[
+C(L, K) = p_L L + p_K K = (1)2\sqrt{2}+(2)\sqrt{2}=4\sqrt{2}.
+\]
+
+\subsection*{Solving the firm's cost-minimization problem}\index{cost minimization!for a firm}
+
+Now consider a firm with production function $Y=L^{\frac{1}{2}}K^{\frac{1}{2}}$. The prices of capital and labor are $p_L=1$ and $p_K=2$. What is the minimum cost necessary to produce $q$ units of output?
+
+Well, we know that the solution must satisfy the constraint $L^{\frac{1}{2}}K^{\frac{1}{2}}=q$, i.e., $LK=q^2$. Next, we consider our mysterious NFOC. The partial derivative of the production function with respect to $L$ is $\displaystyle \frac{\partial f}{\partial L}=\frac{1}{2}L^{-\frac{1}{2}}K^{\frac{1}{2}}$; the partial derivative of the production function with respect to $K$ is $\displaystyle \frac{\partial f}{\partial K}=\frac{1}{2}L^{\frac{1}{2}}K^{-\frac{1}{2}}$. Our NFOC is therefore
+\[
+\frac{\ \ \frac{\partial f}{\partial L}\ \ }{p_L}=\frac{\ \
+\frac{\partial f}{\partial K}\ \ }{p_K} \Longrightarrow
+\frac{\frac{1}{2}L^{-\frac{1}{2}}K^{\frac{1}{2}}}{1}=\frac{\frac{1}{2}L^{\frac{1}{2}}K^{-\frac{1}{2}}}{2}
+\Longrightarrow  \frac{1}{2}L^{-\frac{1}{2}}K^{\frac{1}{2}} =
+\frac{1}{4}L^{\frac{1}{2}}K^{-\frac{1}{2}}.
+\]
+Multiplying through by $4L^{\frac{1}{2}}K^{\frac{1}{2}}$ we get
+\[
+2K=L.
+\]
+In other words, the cost-minimizing solution is an input mix with twice as many units of labor as capital.
+
+We can now combine our two equations to find the answer. We know (from the NFOC) that $2K=L$ and (from the utility constraint) that $LK=q^2$. Solving simultaneously we get $(2K)K=q^2\Longrightarrow 2K^2=q^2\Longrightarrow K=\displaystyle\frac{q}{\sqrt{2}}$. It follows from either of our two equations that the optimal choice of labor is $L=q\sqrt{2}$. So the cost minimizing consumption bundle that achieves an output level of $q$ is $(L, K)=\left(q\sqrt{2}, \displaystyle\frac{q}{\sqrt{2}}\right)$, and the minimum cost necessary to reach that output level is
+\[
+C(L, K) = p_L L + p_K K \Longrightarrow C(q) =
+(1)q\sqrt{2}+2\frac{q}{\sqrt{2}}=2q\sqrt{2}.
+\]
+The function $C(q)$ is the firm's \textbf{cost function}\index{cost!function}: specify how much output you want the firm to produce and $C(q)$ tells you the minimum cost necessary to produce that amount of output. Note that we have transformed the cost function from one involving $L$ and $K$ to one involving $q$; this will prove useful in deriving supply curves.
+
+Now that we've seen how to use the mysterious NFOC, let's see why it makes sense. The remainder of this section provides three explanations---one intuitive, one graphical, and one mathematical---for our NFOC,
+\[
+\frac{\ \ \frac{\partial U}{\partial L}\ \ }{p_L}=\frac{\ \
+\frac{\partial U}{\partial K}\ \ }{p_K} \mbox{\ \ or \ \ } \frac{\
+\ \frac{\partial f}{\partial L}\ \ }{p_L}=\frac{\ \ \frac{\partial
+f}{\partial K}\ \ }{p_K}.
+\]
+
+
+\subsection*{An intuitive explanation for the NFOC}\index{cost minimization!explained intuitively}
+
+The first explanation is an intuitive idea called the \textbf{last dollar rule}.\index{last dollar rule}\index{rule!last dollar}\index{cost minimization!last dollar rule} If our cost-minimizing individual is really minimizing costs, shifting one dollar of spending from cake to lattes cannot increase the individual's utility level; similarly, shifting one dollar of spending from lattes to cake cannot increase the individual's utility level. The individual should therefore be indifferent between spending his ``last dollar" on lattes or on cake.
+
+To translate this into mathematics, consider shifting one dollar of spending from \emph{cake} to \emph{lattes}. Such a shift would allow the individual to spend one more dollar on lattes, i.e., to buy $\displaystyle\frac{1}{p_L}$ more lattes; this would increase his utility by $\displaystyle\frac{\partial U}{\partial L}\cdot\frac{1}{p_L}$. (Recall that $\frac{\partial U}{\partial L}$ is the marginal utility\index{marginal!utility} of lattes.) But this shift would require him to spend one less dollar on cake, i.e., to buy $\displaystyle\frac{1}{p_K}$ fewer pieces of cake; this would reduce his utility by $\displaystyle \frac{\partial U}{\partial K}\cdot\frac{1}{p_K}$. (Recall that $\frac{\partial U}{\partial K}$ is the marginal utility\index{marginal!utility} of cake.) Taken as a whole, this shift cannot increase the individual's utility level, so we must have
+\[
+\frac{\partial U}{\partial L}\cdot\frac{1}{p_L} - \frac{\partial
+U}{\partial K}\cdot\frac{1}{p_K} \leq 0 \ \ \Longrightarrow \ \
+\frac{\partial U}{\partial L}\frac{1}{p_L} \leq \frac{\partial
+U}{\partial K}\frac{1}{p_K}.
+\]
+
+Now consider shifting one dollar of spending from \emph{lattes} to \emph{cake}. Such a shift would allow the individual to spend one more dollar on cake, i.e., to buy $\displaystyle\frac{1}{p_K}$ more pieces of cake; this would increase his utility by $\displaystyle\frac{\partial U}{\partial K}\frac{1}{p_K}$. But this shift would require him to spend one less dollar on lattes, i.e., to buy $\displaystyle\frac{1}{p_L}$ fewer lattes; this would reduce his utility by $\displaystyle \frac{\partial U}{\partial L}\frac{1}{p_L}$. Overall, this shift cannot increase the individual's utility level, so we must have
+\[
+\frac{\partial U}{\partial K}\cdot\frac{1}{p_K} - \frac{\partial
+U}{\partial L}\cdot\frac{1}{p_L} \leq 0 \ \ \Longrightarrow \ \
+\frac{\partial U}{\partial K}\frac{1}{p_K} \leq \frac{\partial
+U}{\partial L}\frac{1}{p_L}.
+\]
+
+Looking at the last two equations, we see that
+\[
+\frac{\partial U}{\partial L}\cdot\frac{1}{p_L} \leq
+\frac{\partial U}{\partial K}\cdot\frac{1}{p_K} \ \ \ \ \
+\mbox{and}\ \ \ \ \ \frac{\partial U}{\partial
+K}\cdot\frac{1}{p_K} \leq \frac{\partial U}{\partial
+L}\cdot\frac{1}{p_L}.
+\]
+The only way both of these equations can hold is if
+\[
+\frac{\partial U}{\partial L}\cdot\frac{1}{p_L} = \frac{\partial
+U}{\partial K}\cdot\frac{1}{p_K} \ \ \ \ \ \mbox{i.e.,}\ \ \ \ \
+\frac{\ \ \frac{\partial U}{\partial L}\ \ }{p_L}=\frac{\ \
+\frac{\partial U}{\partial K}\ \ }{p_K}.
+\]
+So if the individual is minimizing cost, this equation must hold.
+
+
+The identical logic works for firms. If the firm is minimizing costs, shifting one dollar of spending from capital to labor cannot increase the firm's output; similarly, shifting one dollar of spending from labor to capital cannot increase the firm's output. The firm should therefore be indifferent between spending its ``last dollar" on labor or on capital.
+
+Mathematically, we end up with
+\[
+\frac{\ \ \frac{\partial f}{\partial L}\ \ }{p_L}=\frac{\ \
+\frac{\partial f}{\partial K}\ \ }{p_K}.
+\]
+With one extra dollar, the firm could hire $\displaystyle\frac{1}{p_L}$ extra units of labor; the extra output the firm could produce is therefore $\displaystyle\frac{\partial f}{\partial L}\cdot\frac{1}{p_L}$. (Recall that $\frac{\partial f}{\partial L}$ is the marginal product\index{marginal!product (of labor/capital)} of labor, i.e., the extra output the firm could produce with one extra unit of labor.) Similarly, spending an extra dollar on capital would allow the firm to hire $\displaystyle\frac{1}{p_K}$ extra units of capital; the extra output the firm could produce is therefore $\displaystyle\frac{\partial f}{\partial K}\cdot\frac{1}{p_K}$. (Recall that $\frac{\partial f}{\partial K}$ is the marginal product of capital\index{marginal!product (of labor/capital)}, i.e., the extra output the firm could produce with one extra unit of capital.) If the firm is minimizing cost, it must be equating these two fractions.
+
+
+\subsection*{A graphical explanation for the NFOC}\index{cost minimization!explained graphically}
+
+The second explanation for the NFOC is graphical. Recall from Part I that an individual's \textbf{budget constraint} is the set of all consumption bundles $(L, K)$ that an individual can purchase with a given budget. The line $p_L L + p_K K=10$ is the budget constraint corresponding to a budget of \$10; we can rewrite this as $\displaystyle K=\frac{10-p_L L}{p_K}$. The slope\index{slope!of budget constraint} of the budget constraint, $\displaystyle \frac{dK}{dL}=-\frac{p_L}{p_K}$, measures the \textbf{marginal rate of transformation}\index{marginal!rate of transformation (MRT)} between lattes and cake. In order to afford an extra latte, the individual needs to give up $\displaystyle\frac{p_L}{p_K}$ pieces of cake in order to stay within his budget. (For example, if lattes cost \$1 and cake costs $\$.50$ per piece, he would have to give up 2 pieces of cake to afford one extra latte.)
+
+Firms have structures analogous to budget constraints called \textbf{isocosts}: the set of all input bundles $(L, K)$ that the firm can purchase with a given budget. The line $p_L L + p_K K=10$ is the isocost corresponding to a budget of \$10; we can rewrite this as $\displaystyle K=\frac{10-p_L L}{p_K}$. The slope\index{slope!of isocost} of the isocost, $\displaystyle \frac{dK}{dL}=-\frac{p_L}{p_K}$, measures the \textbf{marginal rate of technical transformation}\index{marginal!rate of technical transformation (MRTT)} between labor and capital. In order to afford an extra unit of labor, the firm needs to give up $\displaystyle \frac{p_L}{p_K}$ units of capital in order to stay within its budget. (For example, if labor costs \$1 per unit and capital costs $\$.50$ per unit, the firm would have to give up 2 units of capital to afford one extra unit of labor.)
+
+Graphically, the cost minimization problem is for the individual to find the lowest budget constraint that intersects a specified indifference curve (or, equivalently, for the firm to find the lowest isocost that intersects a specified isoquant). We can see from Figure~\ref{costmin} that the solution occurs at a point where the budget constraint is tangent to the indifference curve (or, equivalently, where the isocost is tangent to the isoquant). At this point of tangency, the slope\index{slope!of indifference curve} of the indifference curve must equal the slope\index{slope!of budget constraint} of the budget constraint:
+\[
+-\frac{\ \ \frac{\partial U}{\partial L}\ \ }{\frac{\partial
+U}{\partial K}}=-\frac{p_L}{p_K}\ \ \Longrightarrow \ \ \frac{\ \
+\frac{\partial U}{\partial L}\ \ }{p_L}=\frac{\ \ \frac{\partial
+U}{\partial K}\ \ }{p_K}.
+\]
+Equivalently, in the case of firms we have that the slope\index{slope!of isoquant} of the isoquant must equal the slope\index{slope!of isocost} of the isocost:
+\[
+-\frac{\ \ \frac{\partial f}{\partial L}\ \ }{\frac{\partial
+f}{\partial K}}=-\frac{p_L}{p_K}\ \ \Longrightarrow \ \ \frac{\ \
+\frac{\partial f}{\partial L}\ \ }{p_L}=\frac{\ \ \frac{\partial
+f}{\partial K}\ \ }{p_K}.
+\]
+
+\begin{figure}
+\begin{center}
+\begin{pspicture}(0,0)(20,14)
+\rput[r](-.4,13){$K$}
+\rput[t](19,-.4){$L$}
+
+\psplot{1.2}{20}{4 x 2 div 1 neg exp mul 2 mul}
+\rput[bl](2,12){Indifference curve or isoquant}% for $U=2$}
+%\rput[bl](1,5.5){(or isoquant for $Y=2$)}
+
+\pstextpath[c](0,-.6){\psplot{0}{18}{9 x 2 div sub 2 div 2 mul}}{Big budget}%{Budget of 9}
+\pstextpath[c](-.4,-.8){\psplot{0}{11.314}{5.657 x 2 div sub 2 div 2 mul}}{Goldilocks budget (just right)}%{Budget of $4\sqrt{2}\approx 5.65$}
+\pstextpath[c](-.4,-.6){\psplot{0}{6}{3 x 2 div sub 2 div 2 mul}}{Small budget}%{Budget of 3}
+
+\pscircle[fillstyle=solid, linecolor=black, fillcolor=black](5.66,2.82){.1}
+
+\psaxes[labels=none, ticks=none, showorigin=false](20,14)
+\end{pspicture}
+\end{center}
+\caption{Minimizing costs subject to a utility (or output) constraint}
+\label{costmin}
+\end{figure}
+
+
+
+
+
+\subsection*{A mathematical explanation for the NFOC}\index{cost minimization!explained mathematically}
+
+The third and final explanation for the NFOC comes from brute force mathematics. The individual's problem is to choose $L$ and $K$ to minimize costs $p_L L + p_K K$ subject to a utility constraint $U(L, K)=\overline{U}$. It turns out that we can solve this problem by writing down the \textbf{Lagrangian}\index{Lagrangian}
+\[
+\myl = p_L L + p_K K + \lambda[\overline{U}-U(L, K)].
+\]
+(The Greek letter $\lambda$---pronounced ``lambda"---is called the Lagrange multiplier; it has important economic meanings that you can learn more about in upper-level classes.) Magically, the necessary first-order conditions\index{necessary first-order condition} (NFOCs) for the individual turn out to be
+\[
+\frac{\partial \myl}{\partial L}=0,\ \ \frac{\partial
+\myl}{\partial K}=0,\ \ \mbox{and} \ \frac{\partial \myl}{\partial
+\lambda}=0,
+\]
+i.e.,
+\[
+p_L-\lambda\frac{\partial U}{\partial L}=0,\ \
+p_K-\lambda\frac{\partial U}{\partial K}=0,\ \ \mbox{and} \
+\overline{U}-U(K, L)=0.
+\]
+Solving the first two for $\lambda$ we get
+\[
+\lambda = \displaystyle\frac{p_L}{\ \ \frac{\partial U}{\partial
+L}\ \ }\ \ \mbox{and}\ \ \lambda = \displaystyle\frac{p_K}{\ \
+\frac{\partial U}{\partial K}\ \ }.
+\]
+Setting these equal to each other and rearranging yields the
+mysterious NFOC,
+\[
+\frac{\ \ \frac{\partial U}{\partial L}\ \ }{p_L}=\frac{\ \
+\frac{\partial U}{\partial K}\ \ }{p_K}.
+\]
+
+The mathematics of the firm's problem is identical: choose $L$ and $K$ to minimize costs $p_L L + p_K K$ subject to a production constraint $f(L, K)=\overline{Y}$. The Lagrangian is
+\[
+\myl = p_L L + p_K K + \lambda[\overline{Y}-f(L, K)]
+\]
+and the necessary first-order conditions\index{necessary first-order condition} (NFOCs) are
+\[
+\frac{\partial \myl}{\partial L}=0,\ \ \frac{\partial
+\myl}{\partial K}=0,\ \ \mbox{and} \ \frac{\partial \myl}{\partial
+\lambda}=0,
+\]
+i.e.,
+\[
+p_L-\lambda\frac{\partial f}{\partial L}=0,\ \
+p_K-\lambda\frac{\partial f}{\partial K}=0,\ \ \mbox{and} \
+\overline{Y}-f(L, K)=0.
+\]
+Solving the first two for $\lambda$ we get
+\[
+\lambda = \displaystyle\frac{p_L}{\ \ \frac{\partial f}{\partial
+L}\ \ }\ \ \mbox{and}\ \ \lambda = \displaystyle\frac{p_K}{\ \
+\frac{\partial f}{\partial K}\ \ }.
+\]
+Setting these equal to each other and rearranging yields the
+firm's NFOC,
+\[
+\frac{\ \ \frac{\partial f}{\partial L}\ \ }{p_L}=\frac{\ \
+\frac{\partial f}{\partial K}\ \ }{p_K}.
+\]
+
+
+
+
+
+
+\section{Supply curves}
+
+The firm's ultimate job is not to minimize costs but to maximize profits. An examination of profit maximization allows us to derive \textbf{supply curves}, which show how a change in the price of the firm's output ($p$) affect the firm's choice of output ($q$), \emph{holding other prices constant.} We will also be able to derive the firm's \textbf{factor demand curves},\index{demand curve!factor}\index{factor demand curve} which show how a change in the price of one of the firm's inputs (e.g., $p_L$, the price of labor) affects the firm's choice of how many units of that input to purchase, \emph{holding other prices constant.}
+
+The caveat ``holding other prices constant" arises because of graphical and mental limitations. Supply and demand graphs are only two-dimensional, so we cannot use them to examine how multiple price changes affect the firm's output or input choices; this would require three- or more-dimensional graphs. In fact, what is really going on is this: the firm's profit-maximizing level of output is a function of \emph{all} of the input and output prices. If there are 5 inputs and 1 output, there are 6 prices to consider. Seeing how the profit-maximizing level of output changes as these prices change would require a \emph{seven}-dimensional graph (six dimensions for the prices, and one dimension for the level of output). Unfortunately, we have a hard time visualizing seven-dimensional graphs. To solve this problem, we look at two-dimensional \emph{cross-sections} of this seven-dimensional graph. By changing the output price while holding all of the input prices constant, we are able to see (in two dimensions) how the output price affects the firm's choice of output; in other words, we are able to see the firm's supply curve. Similarly, by changing the price of labor while holding all other prices constant, we are able to see how the price of labor affects the firm's profit-maximizing choice of labor; this gives us the firm's factor demand curve for labor.
+
+An important implication here is that the levels at which we hold other prices constant is important: the firm's supply curve with input prices of $p_L=p_K=2$ will be different than its supply curve with input prices of $p_L=p_K=4$.
+
+
+\subsection*{Choosing Output to Maximize Profits}
+
+To derive the firm's supply curve, we hold the input prices constant at specified levels. We can therefore use the firm's cost function $C(q)$ (derived previously) to express the profit maximization problem as the problem of choosing output $q$ to maximize profits,
+\[
+\pi (q) = p q - C(q).
+\]
+To maximize this we take a derivative with respect to our choice variable and set it equal to zero. We get an NFOC of
+\[
+\frac{d\pi}{dq}=0\ \ \Longrightarrow \ \ p -
+C'(q)=0\Longrightarrow p = C'(q).
+\]
+The right hand side here is the marginal cost\index{marginal!cost} of producing an additional unit of output. The left hand side is the marginal benefit\index{marginal!benefit} of producing an additional unit of output, namely the market price $p$. The NFOC therefore says that a profit-maximizing firm produces until the marginal cost\index{marginal!cost} of production is equal to the output price; this is true as long as the firm's profit-maximization problem has an interior solution\index{interior solution}. It follows that \textbf{the marginal cost\index{marginal!cost} curve \emph{is} the supply curve} (as long as the firm's profit-maximization problem has an interior solution\footnote{At low prices, the firm's optimal choice of output may be the corner solution\index{corner solution} $q=0$. In these cases the marginal cost\index{marginal!cost} curve and the supply curve will not be the same.}).
+
+
+\subsection*{Choosing inputs to maximize profits}
+
+To get the factor demand curves, we express the firm's objective in terms of its input choices: it wants to choose inputs $L$ and $K$ to maximize profits
+\[
+\pi (L, K) = p f(L, K) - p_L L - p_K K.
+\]
+To maximize this we take partial derivatives with respect to our choice variables and set them equal to zero. For labor we get an NFOC of
+\[
+\frac{\partial\pi}{\partial L}=0\ \ \Longrightarrow \ \
+p\frac{\partial f}{\partial L} - p_L=0\ \ \Longrightarrow \ \
+p\frac{\partial f}{\partial L} = p_L.
+\]
+The right hand side here is the marginal cost\index{marginal!cost} of purchasing an additional unit of labor, namely its market price $p_L$. The left hand side is the marginal benefit\index{marginal!benefit} of purchasing an additional unit of labor, namely the market price of the additional output that can be produced with that extra labor: $p$ is the market price of output, and $\displaystyle \frac{\partial f}{\partial L}$ is the marginal product of labor\index{marginal!product (of labor/capital)}, i.e., the extra output that can be produced with one more unit of labor. Multiplying these yields the \textbf{value of the marginal product of labor}\index{marginal!product (of labor/capital)!value of} ($VMP_L$). The NFOC therefore says that a profit-maximizing firm purchases labor until the value of the marginal product of labor $VMP_L$ is equal to the cost of labor $p_L$. If $VMP_L>p_L$ then the firm can increase profits by purchasing additional units of labor; if $VMP_L<p_L$ then the firm can increase profits by purchasing fewer units of labor.
+
+This NFOC turns out to yield the firm's factor demand curve for labor. Given a fixed input of capital and a fixed output price $p$, the NFOC tells us how much labor the firm wants to hire as a function of the price of labor $p_L$.
+
+An identical analysis shows that a profit-maximizing firm must purchase capital until the value of the marginal product of capital $VMP_K$ is equal to the cost of capital $p_K$:
+\[
+\frac{\partial\pi}{\partial K}=0\Longrightarrow p\frac{\partial
+f}{\partial K} - p_K=0\Longrightarrow p\frac{\partial f}{\partial
+K} = p_K.
+\]
+This NFOC gives us the firm's factor demand curve for capital.
+
+
+
+
+\section{Demand curves}
+
+The individual's ultimate job is not to minimize costs subject to a utility constraint but to maximize utility subject to a budget constraint. An examination of utility maximization allows us to derive demand curves, which show how a change in the price of some good (e.g., $p_L$, the price of lattes) affects the individual's consumption choice for that good, \emph{holding other prices constant and holding the individual's budget constant.} We can also derive the individual's \textbf{Engel curves},\index{Engel curve} which show how a change in the individual's \emph{budget} affects the individual's consumption choices for, say, lattes, \emph{holding all prices constant.}
+
+As in the case of firms, the caveat about holding things constant arises because our graphs (and our minds) work best in only two dimensions. If the individual's utility level depends on five different consumption goods and his budget, his optimal choice of lattes ($L$) would be a seven-dimensional graph: five dimensions for the prices of the different goods, one dimension for the budget, and one dimension for his optimal choice of $L$. Since we can't visualize seven dimensions, we hold five of these dimensions constant and get a two-dimensional cross-section. Holding the budget and the other four prices constant allows us to see how the price of lattes affects the individual's optimal choice of lattes; this gives us the individual's demand curve for lattes. Holding all of the prices constant allows us to see how the individual's budget affects his choice of lattes; this give us the  individual's Engel curves for lattes. As in the case of firms, the levels at which we hold various things constant is important: the individual's demand for lattes with a budget of $\$20$ and a price of cake of $\$1$ per piece will be different than his demand for lattes with a budget of $\$30$ and a price of cake of $\$2$ per piece.
+
+
+\subsection*{Marshallian (money held constant) demand curves}\index{demand curve!Marshallian (uncompensated)}\index{Marshallian demand curve}
+
+Consider the problem of choosing consumption amounts $L$ and $K$ to maximize utility $U(L, K)$ subject to a budget constraint $p_L L + p_K K=\overline{C}$. Graphically, this problem (with $p_L=1, p_K=2$, and $\overline{C}=6$) and its solution are shown in Figure~\ref{marshall}.
+
+\begin{figure}
+\begin{center}
+\begin{pspicture}(0,0)(20,14)
+\rput[r](-.4,13){$K$}
+\rput[t](19,-.4){$L$}
+
+\pstextpath[r](-4.4,.2){\psplot{1.6}{20}{4.5 x 2 div 1 neg exp mul 2 mul}}{$U\approx 2.12$}
+\pstextpath[r](-4.4,.2){\psplot{2.8}{20}{9 x 2 div 1 neg exp mul 2 mul}}{Indifference curve for $U=3$}
+\pstextpath[r](-4.4,.2){\psplot{.4}{20}{1 x 2 div 1 neg exp mul 2 mul}}{$U=1$}
+
+\pstextpath[c](-3,-.8){\psplot{0}{12}{6 x 2 div sub}}{Budget of $6$}
+
+\pscircle[fillstyle=solid, linecolor=black, fillcolor=black](6,3){.1}
+
+\psaxes[labels=none, ticks=none, showorigin=false](20,14)
+\end{pspicture}
+\end{center}
+\caption{Maximizing utility subject to a budget constraint of 6}
+\label{marshall}
+\end{figure}
+
+
+As with cost minimization, our solution method will be to find two equations involving $L$ and $K$ and then solve them simultaneously. The first equation comes from the statement of the problem: $L$ and $K$ must satisfy the budget constraint, $p_L L + p_K K=\overline{C}$.
+
+The second equation turns out to be the same mysterious NFOC we found in the case of cost minimization:
+\[
+\frac{\ \ \frac{\partial U}{\partial L}\ \ }{p_L}=\frac{\ \
+\frac{\partial U}{\partial K}\ \ }{p_K}.
+\]
+Intuitively, this is because the utility-maximizing individual must still follow the last dollar rule: if he is choosing optimally, he should be indifferent between spending his last dollar on lattes or on cake. Graphically, we can see from Figure~\ref{marshall} that the individual's task is to choose the highest indifference curve that lies on the relevant budget constraint; the optimum occurs at a point of tangency between the indifference curve and the budget constraint, meaning that the slope\index{slope!of indifference curve} of the indifference curve must equal the slope\index{slope!of budget constraint} of the budget constraint. Mathematically, we can write down the relevant Lagrangian,
+\[
+\myl=U(L, K) -\lambda[\overline{C} - p_L L - p_K K].
+\]
+The NFOCs include $\displaystyle \frac{\partial \myl}{\partial L}=0$ and $\displaystyle \frac{\partial \myl}{\partial K}=0$, i.e., $\displaystyle \frac{\partial U}{\partial L}-\lambda p_L=0$ and $\displaystyle \frac{\partial U}{\partial K}-\lambda p_K=0$. Solving these for $\lambda$ and setting them equal to each other yields the desired NFOC. Combining the budget constraint with the NFOC allow us to solve for the individual's \textbf{Marshallian demand curves}, Engel curves, \&etc.
+
+For example, consider an individual with a budget of \$6 and a utility function of $U=L^{\frac{1}{2}}K^{\frac{1}{2}}$. The price of cake is $p_K=2$. What is this individual's Marshallian demand curve for lattes?
+
+To solve this problem, we substitute the budget ($\overline{C}=\$6$) and the price of cake (\$2 per piece) into the budget constraint to get $p_L L + 2 K=6$. Next, we substitute the price of cake into the NFOC to get
+\[
+\frac{\ \ \frac{\partial U}{\partial L}\ \ }{p_L}=\frac{\ \
+\frac{\partial U}{\partial K}\ \ }{p_K} \Longrightarrow
+\frac{\frac{1}{2}L^{-\frac{1}{2}}K^{\frac{1}{2}}}{p_L}=
+\frac{\frac{1}{2}L^{\frac{1}{2}}K^{-\frac{1}{2}}}{2}
+\Longrightarrow  \frac{1}{2p_L}L^{-\frac{1}{2}}K^{\frac{1}{2}} =
+\frac{1}{4}L^{\frac{1}{2}}K^{-\frac{1}{2}}.
+\]
+Multiplying through by $4p_L L^{\frac{1}{2}}K^{\frac{1}{2}}$ we get
+\[
+2K=p_L L.
+\]
+
+We now have two equations ($p_L L + 2 K=6$ and $2K=p_L L$) in three unknowns ($L$, $K$, and $p_L$). We can eliminate $K$ by using the second equation to substitute for $2K$ in the first equation: $p_L L + p_L L=6$. This simplifies to $2p_L L=6$ or $p_L L=3$, which we can rewrite as
+\[
+L=\frac{3}{p_L}.
+\]
+This is the Marshallian demand curve for lattes when we fix the budget at 6 and the price of cake at $\$2$ per piece. If the price of lattes is $p_L=1$, the optimal choice is $L=3$; if the price of lattes is $p_L=3$, the optimal choice is $L=1$.
+
+
+
+\subsection*{Hicksian (utility held constant) demand curves}\index{demand curve!Hicksian (compensated)}\index{Hicksian (compensated) demand curve}
+
+For reasons to be discussed in the next section, it turns out that we should also consider the demand curves that come from the cost minimization problem discussed previously: choose consumption amounts $L$ and $K$ to minimize costs $C(L, K) = p_L L + p_K K$ subject to a utility constraint $U(L, K)=\overline{U}$. Graphically, this problem (with $p_L=1, p_K=2$, and $\overline{U}=2$) and its solution are shown in Figure~\ref{hicks}.
+
+\begin{figure}
+\begin{center}
+\begin{pspicture}(0,0)(20,14)
+\rput[r](-.4,13){$K$}
+\rput[t](19,-.4){$L$}
+
+\psplot{1.2}{20}{4 x 2 div 1 neg exp mul 2 mul}
+\rput[bl](2,12){Indifference curve for $U=2$}
+\pstextpath[c](0,-.6){\psplot{0}{18}{9 x 2 div sub}}{Budget of 9}
+\pstextpath[c](-.4,-.8){\psplot{0}{11.314}{5.657 x 2 div sub}}{Budget of $\approx 5.66$}
+\pstextpath[c](-.4,-.6){\psplot{0}{6}{3 x 2 div sub}}{Budget of 3}
+
+\pscircle[fillstyle=solid, linecolor=black, fillcolor=black](5.66,2.82){.1}
+
+\psaxes[labels=none, ticks=none, showorigin=false](20,14)
+\end{pspicture}
+\end{center}
+\caption{Minimizing costs subject to a utility constraint}
+\label{hicks}
+\end{figure}
+
+To solve this problem, we combine our utility constraint, $U(L,K)=\overline{U}$, with the usual NFOC,
+\[
+\frac{\ \ \frac{\partial U}{\partial L}\ \ }{p_L}=\frac{\ \
+\frac{\partial U}{\partial K}\ \ }{p_K} .
+\]
+Combining the budget constraint with the NFOC allow us to solve for the individual's \textbf{Hicksian demand curves}.
+
+For example, consider an individual with a utility constraint of $\overline{U}=2$ and a utility function of $U=L^{\frac{1}{2}}K^{\frac{1}{2}}$. The price of cake is $p_K=2$. What is this individual's Hicksian demand curve for lattes?
+
+To solve this problem, we substitute the utility level ($\overline{U}=2$) into the utility constraint to get $L^{\frac{1}{2}}K^{\frac{1}{2}}=2$. Next, we substitute the price of cake (\$2 per piece) into the NFOC to get
+\[
+\frac{\ \ \frac{\partial U}{\partial L}\ \ }{p_L}=\frac{\ \
+\frac{\partial U}{\partial K}\ \ }{p_K} \Longrightarrow
+\frac{\frac{1}{2}L^{-\frac{1}{2}}K^{\frac{1}{2}}}{p_L}=
+\frac{\frac{1}{2}L^{\frac{1}{2}}K^{-\frac{1}{2}}}{2}
+\Longrightarrow  \frac{1}{2p_L}L^{-\frac{1}{2}}K^{\frac{1}{2}} =
+\frac{1}{4}L^{\frac{1}{2}}K^{-\frac{1}{2}}.
+\]
+Multiplying through by $4p_L L^{\frac{1}{2}}K^{\frac{1}{2}}$ we get
+\[
+2K=p_L L.
+\]
+
+We now have two equations ($L^{\frac{1}{2}}K^{\frac{1}{2}}=2$ and $2K=p_L L$) in three unknowns ($L$, $K$, and $p_L$). We can eliminate $K$ by using the second equation to substitute for $K$ in the first equation:
+\[
+L^{\frac{1}{2}}\left(\frac{p_L
+L}{2}\right)^{\frac{1}{2}}=2\Longrightarrow
+L\left(\frac{p_L}{2}\right)^{\frac{1}{2}}=2 \Longrightarrow
+L\sqrt{p_L}=2\sqrt{2}.
+\]
+We can rewrite this as
+\[
+L=\frac{2\sqrt{2}}{\sqrt{p_L}}
+\]
+This is the Hicksian demand curve for lattes when we fix utility at $U=2$ and the price of cake at $\$2$ per piece. If the price of lattes is $p_L=1$, the optimal choice is $L=2\sqrt{2}$; if the price of lattes is $p_L=2$, the optimal choice is $L=2$.
+
+
+
+\subsection*{Marshall v. Hicks}\index{demand curve!Marshal versus Hicks}
+
+Why do we use both Marshallian and Hicksian demand curves? Well, the advantage of the Marshallian demand curve is that it matches real life: people actually do have budget constraints, and they have to do the best they can subject to those constraints. The advantage of the Hicksian demand curve is that it makes for nice economic theory. For example, we can prove that Hicksian demand curves are downward sloping: people buy less as prices rise. And the area underneath a Hicksian demand curve represents a useful concept called \textbf{consumer surplus}. Unfortunately, Marshallian demand curves do not have nice theoretical properties; Marshallian demand curves do not have to be downward sloping, and the area underneath a Marshallian demand curve \emph{does not} represent consumer surplus (or anything else interesting).
+
+We are therefore in the uncomfortable situation of getting pulled in two different directions: reality pulls us toward Marshallian demand curves and theory pulls us toward Hicksian demand curves. There is, however, a silver lining in this cloud: comparing Marshallian and Hicksian demand curves provides insight into both of them.
+
+Consider what happens if, say, the price of lattes increases. In the Marshallian approach, your purchasing power declines, and you will end up on a lower indifference curve (i.e., with a lower utility level). In the Hicksian approach, your budget adjusts upward to \emph{compensate} you for the increased price of lattes, and you end up on the same indifference curve (i.e., with the same utility level). For this reason the Hicksian demand curve is also called the \textbf{compensated demand curve},\index{compensated demand curve} while the Marshallian demand curve is called the \textbf{uncompensated demand curve}.\footnote{Of course, the Hicksian compensation scheme can work against you, too. If the price of lattes \emph{decreases} then the Marshallian approach puts you on a higher indifference curve, i.e., with a higher utility level. The Hicksian approach reduces your budget so that you end up on the same indifference curve, i.e., with the same utility level.}\index{uncompensated demand curve}
+
+An obvious question here is: What exactly is the Hicksian (or compensated) demand curve compensating you \emph{for}? This answer is, \emph{for changes in the purchasing power of your budget.} The Hicksian approach increases or decreases your income so that you're always on the same indifference curve, regardless of price changes. The Hicksian demand curve therefore represents a pure \textbf{substitution effect}:\index{demand curve!and substitution effect}\index{substitution effect} when the price of lattes increases in the Hicksian world, you buy fewer lattes---not because your budget is smaller, but because lattes now look more expensive compared to cake. This change in \emph{relative} prices induces you to buy fewer lattes and more cake, i.e., to substitute out of lattes and into cake.
+
+The substitution effect is also present in the Marshallian approach. When the price of lattes increases, you buy fewer lattes because of the change in relative prices. But there is an additional factor: the increased price of lattes reduces your \emph{purchasing power}\index{purchasing power}. This is called an \textbf{income effect}\index{demand curve!and income effect}\index{income effect} because a loss of purchasing power is essentially a loss of income. Similarly, a decrease in the price of lattes increases your purchasing power; the income effect here is essentially a gain in income.
+
+The Marshallian demand curve therefore incorporates both income and substitution effects; the Hicksian demand curve only incorporates the substitution effect. If you take more economics, you can prove this mathematically using the Slutsky equation, which relates these two types of demand curves.
+
+For our purposes, it is more important to do a qualitative comparison. We can prove that Hicksian demand curves are downward sloping (i.e., that people buy fewer lattes when the price of lattes goes up) because the substitution effect always acts in the \emph{opposite} direction of the price change: when prices go up the substitution effect induces people to buy less, and when prices go down the substitution effect induces people to buy more.
+
+The income effect is more difficult. For \textbf{normal goods},\index{normal good} an increase in income leads you to buy more: your purchasing power rises, so you buy more vacations and more new computers \&etc. But for \textbf{inferior goods},\index{inferior good} an increase in your income leads you to buy \emph{less}: your purchasing power rises, so you buy less Ramen\index{Ramen noodles} and less used underwear \&etc. In a parallel fashion, a reduction in your income leads you to buy more inferior goods: you now have less money, so you buy \emph{more} Ramen and more used underwear \&etc.
+
+%\enlargethispage{.4in}
+
+In sum, while the substitution effect always acts in the opposite direction of the price change, the income effect can go in either direction: increases or decreases in income can either increase or decrease your optimal consumption of some item, depending on whether the item is a normal good or an inferior good. In some instances (rare in practice but possible in theory), the income effect for an inferior good can overwhelm the substitution effect. Consider, for example, an individual who consumes Ramen (an inferior good) and steak (a normal good). If the price of Ramen goes up, the substitution effect will lead the individual to substitute out of Ramen and into steak, i.e., to consume less Ramen. But the increased price of Ramen will also reduce the individual's purchasing power, and this income effect will lead him to consume \emph{more} Ramen. If the income effect is strong enough, the overall result may be that an increase in the price of Ramen leads the individual to consume \emph{more} Ramen. In other words, we have an \emph{upward sloping} Marshallian demand curve! A good with an upward sloping Marshallian demand curve is called a \textbf{Giffen good}.\index{Giffen good}
+
+%
+%\begin{EXAM}
+%\bigskip
+%\bigskip
+%\section*{Problems}
+%
+%\input{part3/qa3derive}
+%\end{EXAM}
+
+
+
+\bigskip
+\bigskip
+\section*{Problems}
+
+\noindent \textbf{Answers are in the endnotes beginning on page~\pageref{3derivea}. If you're reading this online, click on the endnote number to navigate back and forth.}
+
+
+\renewcommand\theenumi{\emph{C-}\arabic{chapter}.\arabic{enumi}}
+
+\begin{enumerate}
+
+\item Explain the importance of taking derivatives and setting them equal to zero.\endnote{\label{3derivea}Microeconomics is about the actions and interactions of optimizing agents (e.g., profit-maximizing firms, utility-maximizing consumers). For differentiable functions with interior maxima or minima, the way to find those interior maxima or minima is to take a derivative and set it equal to zero. This gives you \emph{candidate values} for maxima or minima; the reason is that slopes (i.e., derivatives) are equal to zero at the top of a hill (a maximum) or at the bottom of a valley (a minimum).}
+
+
+
+
+
+
+
+\item Use intuition, graphs, or math to explain the ``mysterious NFOC" (a.k.a. the last dollar rule).\endnote{These are explained to the best of my abilities in the text.}
+
+
+
+
+
+
+\item Consider an individual with a utility function of $U(L, K)=L^2K.$
+
+    \begin{enumerate}
+
+    \item What is the equation for the indifference curve corresponding to a utility level of $9000$?\endnote{The equation of the indifference curve is $L^2K=9000$.}
+
+
+    \item What is the slope $\frac{dK}{dL}$ of the indifference curve, i.e., the marginal rate of substitution?\endnote{We can rewrite the indifference curve as $K=9000L^{-2}$, which has a slope of $\frac{dK}{dL}=-18000L^{-3}$.}
+%    \item Show that the marginal rate of substitution is also given by
+%        \[
+%        \mbox{MRS}=-\frac{\ \ \frac{\partial U}{\partial L}\ \ }{\frac{\partial U}{\partial K}}.
+%        \]
+
+
+
+    \item Explain intuitively what the marginal rate of substitution measures.\endnote{The marginal rate of substitute tells you how much cake the individual is willing to trade for one more latte. If $MRS=-3$, the firm should be willing to trade up to 3 pieces of cake to gain one latte; such a trade would leave the individual on the same indifference curve, i.e., allow the individual to reach the same utility level.}
+
+
+    \item Assume that the prices of $L$ and $K$ are $p_L=2$ and $p_K=3$. Write down the problem for minimizing cost subject to the constraint that utility must equal $9000$. Clearly specify the objective function and the choice variables.\endnote{The individual wants to choose $L$ and $K$ to minimize $C(L, K)=2L+3K$ subject to the utility constraint $L^2K=9000$. The choice variables are $L$ and $K$; the objective function is the cost function $C(L, K)$.}
+
+
+    \item Explain how to go about solving this problem.\endnote{Two equations in two unknowns usually yield a unique solution, so to solve this problem we will find two relevant equations involving $L$ and $K$ and solve them simultaneously. The first equation is the constraint, $U(L, K)=9000$. The second equation comes from the last dollar rule: $\frac{\ \ \frac{\partial U}{\partial L}\ \ }{p_L}=\frac{\ \ \frac{\partial U}{\partial K}\ \ }{p_K}$.}
+
+
+    \item Solve this problem, i.e., find the minimum cost required to reach a utility level of $9000$. What are the optimal choices of $L$ and $K$?\endnote{The marginal utility of lattes is $\frac{\partial U}{\partial L}=2LK$ and the marginal utility of cake is $\frac{\partial f}{\partial K}=L^2$, so the last dollar rule gives us
+        \[
+        \frac{\ \ \frac{\partial U}{\partial L}\ \ }{p_L}=\frac{\ \ \frac{\partial U}{\partial K}\ \ }{p_K} \Longrightarrow \frac{\ \ 2LK\ \ }{2}=\frac{\ \ L^2\ \ }{3},
+        \]
+    which simplifies as
+        \[
+        3LK=L^2\Longrightarrow 3K=L.
+        \]
+    Substituting this into our first equation, the constraint $L^2K=9000$, yields $(3K)^2K=9000$, which simplifies to $9K^3=9000$, and then to $K^3=1000$, and finally to $K=10$. It follows from either of out equations that $L=30$, so the minimum cost required to reach a utility level of 9000 is $p_L L + p_K K=2(30)+3(10)=90$.}
+
+    \end{enumerate}
+
+
+
+
+
+
+
+
+\item Consider the production function $f(L, K)=L^{\frac{1}{4}}K^{\frac{1}{2}}.$
+
+    \begin{enumerate}
+
+    \item What is the equation for the isoquant corresponding to an output level of $q$?\endnote{The isoquant is $f(L, K)=q$, i.e., $L^{\frac{1}{4}}K^{\frac{1}{2}}=q$.}
+
+
+    \item What is the slope $\frac{dK}{dL}$ of the isoquant, i.e., the marginal rate of technical substitution?\endnote{Squaring both sides yields $L^{\frac{1}{2}}K=q^2$, i.e., $K=q^2 L^{-\frac{1}{2}}$. The slope of this is $\frac{dK}{dL} = -\frac{1}{2}q^2 L^{-\frac{3}{2}}.$}
+
+%    \item Show that the marginal rate of technical substitution is also given by
+%        \[
+%       \mbox{MRTS}=-\frac{\ \ \frac{\partial f}{\partial L}\ \ }{\frac{\partial f}{\partial K}}.
+%        \]
+%    \item The marginal product of labor is $\frac{\partial f}{\partial L} = \frac{1}{4}L^{-\frac{3}{4}}K^{\frac{1}{2}}.$ The marginal product of capital is $\frac{\partial f}{\partial K} = \frac{1}{2}L^{\frac{1}{4}}K^{-\frac{1}{2}}.$ So we get
+%        \[
+%        \mbox{MRTS}=-\frac{\ \ \frac{\partial f}{\partial L}\ \ }{\frac{\partial f}{\partial K}} = -\frac{\ \ \frac{1}{4}L^{-\frac{3}{4}}K^{\frac{1}{2}}\ \ }{\frac{1}{2}L^{\frac{1}{4}}K^{-\frac{1}{2}}}.
+%        \]
+
+
+    \item Explain intuitively what the marginal rate of technical substitution measures.\endnote{The marginal rate of technical substitute tells you how much capital the firm is willing to trade for one more unit of labor. If $MRTS=-3$, the firm should be willing to trade up to 3 units of capital to gain one unit of labor; such a trade would leave the firm on the same isoquant, i.e., allow the firm to produce the same level of output.}
+
+
+    \item Assume that the prices of $L$ and $K$ are $p_L=2$ and $p_K=2$. Write down the problem for minimizing cost subject to the constraint that output must equal $q$. Clearly specify the objective function and the choice variables.\endnote{The firm wants to choose $L$ and $K$ to minimize $C(L, K)=2L+2K$ subject to $f(L, K)=q$. The choice variables are $L$ and $K$; the objective function is the cost function $C(L, K)$.}
+
+
+    \item Explain how to go about solving this problem.\endnote{Two equations in two unknowns usually yield a unique solution, so to solve this problem we will find two relevant equations involving $L$ and $K$ and solve them simultaneously. The first equation is the constraint, $f(L, K)=q$. The second equation comes from the last dollar rule: $\frac{\ \ \frac{\partial f}{\partial L}\ \ }{p_L}=\frac{\ \ \frac{\partial f}{\partial K}\ \ }{p_K}$.}
+
+
+    \item Solve this problem, i.e., find the minimum cost $C(q)$ required to reach an output level of $q$. What are the optimal choices of $L$ and $K$? (Note: these will be functions of $q$. You may wish to do the next problem first if you're getting confused by all the variables.)\endnote{The marginal product of labor is $\frac{\partial f}{\partial L}=\frac{1}{4}L^{-\frac{3}{4}}K^{\frac{1}{2}}$ and the marginal product of capital is $\frac{\partial f}{\partial K}=\frac{1}{2}L^{\frac{1}{4}}K^{-\frac{1}{2}}$, so the last dollar rule gives us
+        \[
+        \frac{\ \ \frac{\partial f}{\partial L}\ \ }{p_L}=\frac{\ \ \frac{\partial f}{\partial K}\ \ }{p_K} \Longrightarrow \frac{\ \ \frac{1}{4}L^{-\frac{3}{4}}K^{\frac{1}{2}}\ \ }{2}=\frac{\ \ \frac{1}{2}L^{\frac{1}{4}}K^{-\frac{1}{2}}\ \ }{2},
+        \]
+    which simplifies as
+        \[
+        \frac{1}{4}L^{-\frac{3}{4}}K^{\frac{1}{2}}=\frac{1}{2}L^{\frac{1}{4}}K^{-\frac{1}{2}} \Longrightarrow K=2L.
+        \]
+    Substituting this into our first equation, the constraint $L^{\frac{1}{4}}K^{\frac{1}{2}}=q$, yields $L^{\frac{1}{4}}(2L)^{\frac{1}{2}}=q$, which simplifies to $L^{\frac{3}{4}}2^{\frac{1}{2}}=q$, and then to $L^{\frac{3}{4}}=q\cdot 2^{-\frac{1}{2}}$, and finally to $L=q^{\frac{4}{3}}2^{-\frac{2}{3}}$. Substituting this value of $L$ into either of our two equations yields $K=q^{\frac{4}{3}}2^{\frac{1}{3}}$. So the minimum cost to produce 10 units of output is $p_L L + p_K K = 2(q^{\frac{4}{3}}2^{-\frac{2}{3}})+2(q^{\frac{4}{3}}2^{\frac{1}{3}})= q^{\frac{4}{3}}(2^{\frac{1}{3}}+2^{\frac{4}{3}})\approx 3.78q^{\frac{4}{3}}$.}
+
+
+    \item What is the minimum cost required to reach an output level of 10? What are the optimal choices of $L$ and $K$?\endnote{Plugging in $q=10$ yields $L\approx 13.57$, $K\approx 27.14$, and a minimum cost of $p_L L + p_K K \approx 2(13.57)+2(27.14)=81.42.$}
+
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+\item Consider the production function $f(L, K)=L^{\frac{1}{4}}K^{\frac{1}{2}}.$ Assume (as above) that the firm's input prices are $p_L=p_K=2$; also assume that the price of the firm's output is $p$.
+
+    \begin{enumerate}
+
+    \item Write down the problem of choosing output $q$ to maximize profits. Use the cost function $C(q)\approx 3.78q^{\frac{4}{3}}$ (which you derived above) to represent costs. Clearly specify the objective function and the choice variables.\endnote{The firm's job is to choose $q$ to maximize profits $\pi = pq-C(q)=pq-3.78q^{\frac{4}{3}}$.}
+
+
+    \item Explain how to go about solving this problem. Also explain why it's kosher to substitute $C(q)$ into the profit function, i.e., explain why cost-minimization is a necessary condition for profit-maximization.\endnote{Take a derivative with respect to the choice variable ($q$) and set it equal to zero. Cost minimization is a necessary condition for profit maximization because a firm that is producing $q$ units of output in a non-cost-minimizing way can always increase profits by producing $q$ units of output in the cost-minimizing way. So a profit-maximizing firm must be producing its optimal level of output at least cost.}
+
+
+    \item Solve this problem to derive the firm's supply curve. Use approximations where helpful.\endnote{Taking a derivative of the profit function with respect to $q$ and setting it equal to zero yields
+        \[
+        \frac{d\pi}{dq}=0\Longrightarrow p-\frac{4}{3}(3.78)q^{\frac{1}{3}}=0\Longrightarrow p\approx 5.04q^{\frac{1}{3}}
+        \]
+    Cubing both sides yields $p^3\approx 128q$, i.e., $q=\frac{p^3}{128}$. This is the firm's supply curve.}
+
+
+    \item If the price of output is $p=16$, how much will the firm produce? What will its profits be?\endnote{Plugging $p=16$ into the supply curve yields $q\approx 32$. So its profits are $\pi=pq-C(q)\approx 16(32)-3.78(32)^{\frac{4}{3}}\approx 127.98.$}
+
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+\item The previous problems have dealt with \textbf{long run} cost curves and supply curves, meaning that the firm has complete control over all of its inputs. In the \textbf{short run}, however, the firm cannot change its capital stock---it can choose how much labor to hire, but it can't build any new factories. In this problem we will examine short run cost curves and short run supply curves.
+
+    \begin{enumerate}
+
+    \item Assume that the firm's production function is $f(L, K)=L^{\frac{1}{4}}K^{\frac{1}{2}}$, and that capital is fixed at $K=4$. What is the equation for the isoquant corresponding to an output level of q?\endnote{The isoquant is $L^{\frac{1}{4}}(4)^{\frac{1}{2}}=q$, i.e., $L^{\frac{1}{4}}=\frac{q}{2}$, i.e., $L=\frac{q^4}{16}$. Note that the isoquant is not a line but \emph{just a single point}. This is because capital is fixed at $K=4$, so the firm has no ability to trade-off between capital and labor.}
+
+
+    \item Assume further that the prices of $L$ and $K$ are $p_L=2$ and $p_K=2$. Write down the problem for minimizing cost subject to the constraint that output must equal $q$. Clearly specify the objective function and the choice variables.\endnote{The firm wants to choose $L$ to minimize $C(L, K)=2L+2K=2L+8$ subject to $f(L, K)=q$.}
+
+
+    \item In a previous problem you provided an intuitive explanation for the marginal rate of technical substitution. Given that capital is fixed at $K=4$, what is the relevance (if any) of this concept in the present problem?\endnote{Since the amount of capital the firm has is fixed, the firm cannot substitute between labor and capital. So the marginal rate of technical substitution is irrelevant in this problem.}
+
+
+    \item How will the price of capital $p_K$ affect the firm's behavior?\endnote{Capital is a sunk cost, so the price of capital will not affect the firm's behavior.}
+
+
+    \item Solve this problem, i.e., find the minimum cost $C(q)$ required to reach an output level of $q$. What is the optimal choice of $L$?\endnote{In order to produce output of $q$, the firm has to hire $L=\frac{q^4}{16}$ units of labor. So the cost of producing $q$ units of output is $C(q)=2(\frac{q^4}{16})+2(4)=\frac{1}{8}q^4+8$.}
+
+
+    \item Write down the profit maximization problem, using the function $C(q)$ you found above. Calculate the firm's short run supply curve.\endnote{The firm wants to choose $q$ to maximize profits $\pi=pq-C(q)=pq-(\frac{1}{8}q^4+8)$. To solve this problem we take a derivative with respect to $q$ and set it equal to zero, yielding
+        \[
+        \frac{d\pi}{dq}=0\Longrightarrow p-\frac{1}{2}q^3=0\Longrightarrow 2p= q^3\Longrightarrow q=(2p)^{\frac{1}{3}}.
+        \]}
+
+%    \item Compare long run and short run elasticities? Envelope theorem???
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+\item Consider a firm with production function $f(L, K)=L^{\frac{1}{2}}K^{\frac{1}{2}}$ and input prices of $p_L=1$ and $p_K=2$.
+
+    \begin{enumerate}
+
+    \item Calculate the supply curve for this firm. (Note: the related cost-minimization problem was done in the text, with an answer of $C(q)=2q\sqrt{2}$.)\endnote{The profit function is $\pi = pq-C(q)=pq-2q\sqrt{2}$. Taking a derivative and setting it equal to zero we get $p-2\sqrt{2}=0$, i.e., $p=2\sqrt{2}$.}
+
+
+    \item How much will the firm supply at a price of $p=2$? \emph{Hint: Think about corner solutions!}\endnote{At a price of $p=2$, the firm will supply $q=0$: its cost of producing each unit of output is $2\sqrt{2}>2$, so it loses money on each unit it sells!}
+
+
+    \item How much will the firm supply at a price of $p=4$?\endnote{At a price of $p=4$, the firm will supply infinitely many units of output.}
+
+
+    \item Show that this firm's production function exhibits \textbf{constant returns to scale}, i.e., that doubling inputs doubles output, i.e., $f(2L, 2K)=2f(L, K)$.\endnote{We have $f(2L, 2K)=(2L)^{\frac{1}{2}}(2K)^{\frac{1}{2}}=2L^{\frac{1}{2}}K^{\frac{1}{2}}=2f(K, L)$.}
+
+
+    \item Does the idea of constant returns to scale help explain the firm's behavior when $p=4$? \emph{Hint: Think about this in the context of the objective function.} If it does help you explain the firm's behavior, you may find value in knowing that \textbf{increasing returns to scale} occurs when doubling inputs more than doubles outputs, i.e., $f(2L, 2K)>2f(L, K)$, and that \textbf{decreasing returns to scale} occurs when doubling inputs less than doubles outputs, i.e., $f(2L, 2K)<2f(L, K)$. An industry with constant or increasing returns to scale can often lead to monopolization of production by a single company.\endnote{Since doubling inputs doubles output, the firm can double and redouble its profits simply by doubling and redoubling production (i.e., its choice of inputs). This (hopefully) helps explain why we get a corner solution (of $q=\infty$) when we attempt to maximize profits with $p=4$.}
+
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+%\item Calculate factor demand curves.
+%\begin{KEY}
+%\end{KEY}
+
+
+
+
+
+
+
+\item Consider an individual with a utility function of $U(L, K)=L^2K$ and a budget of $M$.
+
+    \begin{enumerate}
+
+    \item Write down the utility-maximization problem. Clearly specify the objective function and the choice variables. Use $p_L$ and $p_K$ as the prices of $L$ and $K$.\endnote{The individual wants to choose $L$ and $K$ to maximize utility $U(L, K)=L^2K$ subject to the budget constraint $p_L L + p_K K =M$.}
+
+
+    \item Explain how to go about solving this problem if you were given values of $M$, $p_L$, and $p_K$.\endnote{The solution method is to find two equations involving $L$ and $K$ and then solve them simultaneously. One equation is the constraint, $p_L L + p_K K =M$; the other is the last dollar rule, $\frac{\ \ \frac{\partial U}{\partial L}\ \ }{p_L}=\frac{\ \ \frac{\partial U}{\partial K}\ \ }{p_K}$.}
+
+
+    \item Assume the prices of $L$ and $K$ are $p_L=2$ and $p_K=3$, and that the individual's budget is $M=90$. Find the maximum level of utility this individual can reach with a budget of $90$. What are the utility-maximizing choices of $L$ and $K$?\endnote{The last dollar rule gives us $\frac{2LK}{p_L}=\frac{L^2}{p_K}$, which simplifies to $3K=L$ when $p_L=2$ and $p_K=3$. Substituting this into the budget constraint we have $2(3K)+3K=90$, i.e., $K=10$. Substituting back into either of our equations yields $L=30$.}
+
+
+    \item Calculate the individual's Marshallian demand curve for lattes\footnote{The \textbf{Marshallian demand curve} for lattes shows the relationship between the price of lattes and the quantity of lattes demanded, holding all other prices \emph{and the individual's budget} constant. Marshallian demand curves are also called ``money-held constant" demand curves, and the repeated ``m" makes for a useful pneumonic.} if the price of $K$ is $p_K=3$ and the budget is $M=90$. Use $p_L$ for the price of lattes. What is the slope of this demand curve when $p_L=2$?\endnote{The last dollar rule gives us $\frac{2LK}{p_L}=\frac{L^2}{p_K}$, which simplifies to $6K=p_LL$ when $p_K=3$. Solving for $K$ and substituting this into the budget constraint yields $p_LL+3\left(\frac{1}{6}p_LL\right)=90$, i.e., $1.5p_LL=90$. This simplifies to $L=\frac{60}{p_L}$, which is the Marshallian demand curve for lattes when $p_K=3$ and $M=90$. The slope of this demand curve is $\frac{dL}{dp_L}=-60p_L^{-2}$; when $p_L=2$, this simplifies to $\frac{-60}{4}=-15.$}
+
+
+    \item Calculate the individual's Marshallian demand curve for cake if the price of $L$ is $p_L=2$ and the budget is $M=90$. Use $p_K$ for the price of cake. What is the slope of this demand curve when $p_K=3$?\endnote{The last dollar rule gives us $\frac{2LK}{p_L}=\frac{L^2}{p_K}$, which simplifies to $p_KK=L$ when $p_L=2$. Using this to substitute for $L$ in the budget constraint yields $2(p_KK)+p_KK=90$, i.e., $K=\frac{30}{p_K}$, which is the Marshallian demand curve for cake when $p_L=2$ and $M=90$. The slope of this demand curve is $\frac{dK}{dp_K}=-30(p_K)^{-2}$; when $p_K=3$, this simplifies to $-\frac{30}{9}\approx -3.33$.}
+
+
+    \item Calculate the individual's Engel curves for lattes and cake\footnote{The \textbf{Engel curve} for lattes shows the relationship between the individual's \emph{income} and the quantity of lattes demanded, holding all prices constant.} if the price of lattes is $p_L=2$ and the price of cake is $p_K=3$. Use $M$ for the individual's budget.\endnote{The last dollar rule gives us $\frac{2LK}{p_L}=\frac{L^2}{p_K}$, which simplifies to $3K=L$ when $p_L=2$ and $p_K=3$. Using this to substitute for $L$ in the budget constraint yields $2(3K)+3K=M$, i.e., $K=\frac{M}{9}$, which is the Engel curve for cake when $p_L=2$ and $p_K=3$. Using the last dollar rule result $3K=L$ to substitute for $K$ in the budget constraint yields $2L+L=M$, i.e., $L=\frac{M}{3}$, which is the Engel curve for cake when $p_L=2$ and $p_K=3$.}
+
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+\item Consider the same individual as above, with utility function $U(L, K)=L^2K$. This time assume that the individual has a utility constraint of $U=9000$.
+
+    \begin{enumerate}
+
+    \item Write down the cost-minimization problem. Clearly specify the objective function and the choice variables. Use $p_L$ and $p_K$ as the prices of $L$ and $K$.\endnote{Choose $L$ and $K$ to minimize $C(L, K)=p_L L + p_K K$ subject to the constraint $L^2K=9000$.}
+
+
+    \item Explain how to go about solving this problem if you were given values of $p_L$, and $p_K$.\endnote{Combine the constraint with the last dollar rule to get two equations in two unknowns. Solve these simultaneously to get the optimal values of $L$ and $K$.}
+
+
+    \item Assume the prices of $L$ and $K$ are $p_L=2$ and $p_K=3$. Find the minimum budget required to reach a utility level of 9000. What are the cost-minimizing choices of $L$ and $K$?\endnote{We previously calculated the last dollar rule to yield $3K=L$ when $p_L=2$ and $p_K=3$. Substituting this into the constraint yields $(3K)^2K=9000$, which simplifies to $9K^3=9000$, i.e., $K=10$. It follows from either equation that $L=30$. The cost-minimizing cost is therefore $p_LL+p_KK=2(30)+3(10)=90$.}
+
+
+    \item \label{hickslatte} Calculate the individual's Hicksian demand curve for lattes\footnote{The \textbf{Hicksian demand curve} for lattes shows the relationship between the price of lattes and the quantity of lattes demanded, holding all other prices \emph{and the individual's utility level} constant. Hicksian demand curves are also called ``utility-held constant" demand curves.} if the price of $K$ is $p_K=3$. Use $p_L$ for the price of lattes. Calculate the slope of this demand curve when $p_L=2$.\endnote{The last dollar rule gives us $\frac{2LK}{p_L}=\frac{L^2}{p_K}$, which simplifies to $6K=p_LL$ when $p_K=3$. Using this to substitute for $K$ in the constraint $L^2K=9000$ yields $L^2\frac{p_L L}{6}=9000$, which simplifies to $L^3=54000p_L^{-1}$, and then to $L=\left(54000p_L^{-1}\right)^{\frac{1}{3}}=(30)2^{\frac{1}{3}}p_L^{-\frac{1}{3}}$. The slope of this demand curve is $\frac{dL}{dp_L}=-\frac{1}{3}(30)2^{\frac{1}{3}}p_L^{-\frac{4}{3}}$. When $p_L=2$ this simplifies to $(-10)2^{-1}=-5$.}
+
+
+    \item Calculate the individual's Hicksian demand curve for cake if the price of $L$ is $p_L=2$. Use $p_K$ for the price of cake. Calculate the slope of this demand curve when $p_K=3$.\endnote{The last dollar rule gives us $\frac{2LK}{p_L}=\frac{L^2}{p_K}$, which simplifies to $p_KK=L$ when $p_L=2$. Using this to substitute for $L$ in the constraint $L^2K=9000$ yields $(p_KK)^2K=9000$, which simplifies to $p_K^2K^3=9000$, and then to $K=\left(9000p_K^{-2}\right)^{\frac{1}{3}}=(10)3^{\frac{2}{3}}p_K^{-\frac{2}{3}}$. The slope of this demand curve is $\frac{dK}{dp_K}=-\frac{2}{3}(10)3^{\frac{2}{3}}p_k^{-\frac{5}{3}}$. When $p_K=3$ this simplifies to $-\frac{2}{3}(10)3^{-1}=-\frac{20}{9}\approx -2.22$.}
+
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+\item The previous problem (about Hicksian demand curves) asked you to minimize cost subject to a utility constraint of $U=9000$; you should have gotten a minimum budget of $M=90$. The problem before that (about Marshallian demand curves) asked you to maximize utility subject to a budget constraint of $M=90$; you should have gotten a maximum utility of $U=9000$. Explain why these two problems give symmetric answers.\endnote{The two problems are two sides of the same coin: if $U=9000$ is the maximum utility that can be achieved with a budget of $M=90$, then $M=90$ is the minimum budget required to reach a utility level of $U=9000$.}
+%    \item The Hicksian demand curves are more steeply sloped (i.e., are less responsive to price changes). In this problem, both $L$ and $K$ are normal goods, i.e., as incomes rise the individual wants to buy more. (We can see this from the Engel curves.) So the income effect will reinforce the substitution effect: as the price of lattes falls, the substitution effect will lead the consumer to buy more lattes, and the income effect will also lead the consumer to buy more lattes. Similarly, as the price of lattes rises, both effects lead the consumer to buy fewer lattes.
+
+
+
+
+
+
+
+
+
+%    \item Which is more steeply sloped (i.e., more negative), the Marshallian demand curves or the Hicksian demand curves? Can you explain this in terms of income effects and substitution effects?
+
+
+
+
+
+
+
+\item This question examines the relationship between ``willingness to pay" and the area under demand curves.
+
+    \begin{enumerate}
+
+    \item Consider (as above) an individual with utility $U(L,K)=L^2K$ who is facing prices of $p_L=2$ and $p_K=3$. We know from above that this individual can reach a utility level of 9000 at a minimum cost of \$90 by choosing $L=30$, $K=10$. Write down a \emph{formal question} that corresponds to this informal question: what is this individual's willingness-to-pay for 10 more lattes?\endnote{What is the maximum amount of money this individual could exchange for 10 more lattes \emph{and still be on the same indifference curve}, i.e., still have a utility level of 9000?}
+
+
+    \item Solve this problem by answering the following questions: (1) If we give this individual 30 lattes, how much money do they have to spend on cake to reach a utility of 9000? (2) If we give this individual 40 lattes, how much money do they have to spend on cake to reach a utility of 9000? (3) Subtract. [Note: You can also do this problem by assuming that this individual \emph{buys} the first 30 lattes at a price of \$2 each. The answers to (1) and (2) will be \$60 higher, but the answer to (3) will be the same.]\endnote{We must have $L^2K=9000$. So (1) if $L=30$ then we need $K=10$, which at a price of \$3 per cake requires a budget of \$30; (2) if $L=40$ then we need $K=5.625$, which at a price of \$3 per cake requires a budget of \$16.875; (3) subtracting yields \$30-\$16.875 = \$13.125 as this individual's willingness-to-pay for those 10 lattes.}
+
+
+    \item Recall from question~\ref{hickslatte} above that the Hicksian demand curve for lattes is a rearrangement of this equation: $L^3=54000p_L^{-1}$. Instead of rearranging this to get the demand curve $L=\left(54000p_L^{-1}\right)^{\frac{1}{3}}=(30)2^{\frac{1}{3}}p_L^{-\frac{1}{3}}$, rearrange it to get an \textbf{inverse Hicksian demand curve}, i.e., an expression for $p_L$ as a function of $L$\endnote{We have $p_L=54000L^{-3}$.}
+
+
+    \item Draw a graph of this inverse demand curve. Shade in the area between $L=30$ and $L=40$.\endnote{See figure~\ref{hickslattesurplus}.
+
+\psset{unit=.5cm}
+\begin{figure}
+\begin{center}
+\begin{pspicture}(0,0)(21,10)
+\rput[b](0,10.2){$p_L$}
+\rput[l](21.2,0){$L$}
+\psplot{9}{20}{x 2.5 mul -3 exp 54000 mul 2 mul} % add sub div mul exp log neg
+\pspolygon[linestyle=none, fillstyle=hlines, fillcolor=black, linecolor=black](12,0)(12,2)(12,4)(12.2,3.75)(14,2.45)(15,2)(16,1.6875)(16,1)(16,0)(14,0)
+\pscircle[fillstyle=solid, linecolor=black, fillcolor=black](12,4){.1}
+\rput[bl](12.1,4.1){$(30,2)$}
+\psaxes[labels=all, ticks=all, Dx=10, dx=4, Dy=1, dy=2, showorigin=false](21,9.8)
+\end{pspicture}
+\end{center}
+\caption{The area under the \emph{Hicksian} (utility-held-constant) demand curve measures willingness to pay.}
+\label{hickslattesurplus}
+\end{figure}
+}
+
+
+    \item Calculate the area under the inverse Hicksian demand curve between $L=30$ and $L=40$. Compare with your willingness-to-pay calculation above.\endnote{The area is the same as the willingness-to-pay calculated above!
+\[
+\displaystyle \int_{30}^{40}54000L^{-3}dL = -27000L^{-2}\Big|_{30}^{40}=-16.875+30 = \$13.125
+\]}
+
+
+    \item Can you think of a \emph{formal question} that is answered by the area under a \emph{Marshallian} demand curve?\endnote{Various texts (e.g., Silberberg's \emph{Structure of Economics}) insist that the area under Marshallian demand curves is meaningless.}
+
+    \end{enumerate}
+
+
+\end{enumerate}
+
+\renewcommand\theenumi{\arabic{chapter}.\arabic{enumi}}
