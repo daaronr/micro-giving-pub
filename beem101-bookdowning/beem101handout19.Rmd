@@ -8,9 +8,9 @@ Choice](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-pub
 - NS: Ch 2
 *Key goals of these lectures (and accompanying self-study)*
 
-1. Understand what 'utility' is and how is it defined and modeled
+1. Understand what 'utility' is and how it's defined and modeled
 1. Understand the assumptions economists usually make about preferences (choices) and their implications
-1. Learn how to depict preferences and utility with 'indifference curves' and how to interpret these
+1. Learn (recall) how to depict preferences and utility with 'indifference curves' and how to interpret these
     - ... with examples like 'perfect substitutes' and 'perfect complements'
 1. Learn what 'budget constraints' are and how to compute and model them
 1. Understand 'maximising utility subject to constraints'
@@ -32,14 +32,6 @@ In the (neo) classical economics framework, your (optimising) choices are determ
 2. Constraints: how much money do you have, what are the prices of the goods you buy?
 
 
-## Enrichment and extensions (optional)
-
-David Autor's notes (goo.gl/aW3DxB; MIT Microeconomic Theory and Public Policy): [Lecture 3 - Axioms of Consumer Preference and the Theory of
-Choice](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/MIT14_03F16_lec3.pdf)
-
-
-
-- `r format_with_col("Second problem set, first part (NS chapter 2): Preferences, Utility, Consumer optimization, individual and market demand","blue")`
 
 
 ## Some motivation for these abstract ideas
@@ -57,7 +49,6 @@ If you got amnesia and forgot what you decided and then were in the same situati
 
 <br> \bigskip
 Suppose I asked you:   'State a rule that governs how people *do* make decisions'...
-
 
 
 I want this rule to be both
@@ -90,16 +81,16 @@ The 'Standard axioms' (imply that) choices can be expressed by 'individuals maxi
 This yields predictions for individual behavior, markets, etc.
 
 
-## Utility
+## Utility {#utility}
 
 Utility
 :     "The pleasure or satisfaction that people get from their economic activity."
 :     Alt: The thing that people maximise when making economic decisions
 
 
-`r format_with_col(" There is some debate about the meaning and interpretation of utility, particularly in the Behavioural Economics literature ","RawSienna")`
+`r format_with_col("There is some debate about the meaning and interpretation of utility, particularly in the Behavioural Economics literature ","RawSienna")`
 
-`r format_with_col(" A defining feature of the standard Economics approach is that decisions are made as if all characteristics of outcomes can be compared and evaluated, thus we can reduce everything to a single dimension, 'utility', which is maximised.","RawSienna")`
+`r format_with_col("A defining feature of the standard Economics approach is that decisions are made as if all characteristics of outcomes can be compared and evaluated, thus we can reduce everything to a single dimension, 'utility', which is maximised.","RawSienna")`
 
 ## Utility from two goods
 
@@ -116,9 +107,7 @@ We can get a lot of insight from considering models Of an individual's preferenc
 
 - Coffee and tea (holding all else constant)
 
- `r format_with_col("Maths revision","blue")`: $U(X,Y)$ expresses a *function* with two *arguments*, X and Y.
-
-`r format_with_col("At this point, you may want to return to the revision material covering functions of two or more variables.","gray")` [Math-multivariate functions](#multivar-functions)
+Recall $U(X,Y)$ expresses a *function* with two *arguments*, X and Y.
 
 $U(X,Y)$ must take *some* value for every positive value of X and Y.
 
@@ -160,10 +149,8 @@ As we only get at utility through an *individual's* decisions, we have no reliab
 \textcolor{gray}{However, there is work done in the field of public choice trying either to build this up from *axioms* (e.g., the veil of ignorance),
 or by eliciting people's preferences over distributions through interesting surveys, experiments, and voting behavior.}
 
-[comment]: <> (101BB)
 
 ***
-
 
 Standard utility functions are only 'identified' (only make distinct predictions) 'up to a monotonic transformation'
 
@@ -181,25 +168,23 @@ Standard utility functions are only 'identified' (only make distinct predictions
 
 When we deal with *uncertain* choices, the 'Von Neuman - Morgenstern' utility functions will be somewhat more restrictive and better identified. `r format_with_col("If you believe people are really obeying the VMN axioms and thus maximising *expected utility*.","gray")`
 
-`r format_with_col("The Autor reading refers to Cardinal versus Ordinal utility. We use the latter in demand/consumer theory.","gray")`
+`r format_with_col("Note: The Autor reading refers to Cardinal versus Ordinal utility. We use the latter in demand/consumer theory.","gray")`
 
-[comment]: <> (101EE)
 
 ## Assumptions about preferences ('axioms')
 
-[comment]: <> (101BB)
 `r format_with_col("The more formal and parsimonious definition (Autor readings, Jehle/Reny) develop this from a single relation 'weakly preferred to': $\succsim$.","gray")`
-
-[comment]: <> (101EE)
 
 1. Completeness: Given two options, A and B, a person can state which option they prefer or whether they find both options equally attractive.
 
-2. Transitivity (internal consistency): If I prefer A to B, and prefer B to C, then I must prefer A to C.
+2. Transitivity (internal consistency): If I prefer A to B, and prefer B to C, then I must prefer A to C. 
 
 3. More is Better (*nonsatiation*)
 
-\textcolor{gray}{ Completeness and transitivity (and continuity)  are necessary for people's choices to be represented by (continuous) *utility functions*
-Nonsatiation will help us derive results}
+```{block2,  type='note'}
+
+Completeness and transitivity (and continuity)  are necessary for people's choices to be represented by (continuous) *utility functions*. Nonsatiation will help us derive results.
+```
 
 
 ***
@@ -216,18 +201,20 @@ The following is `r format_with_col("forbidden","red")`: "I cannot choose betwee
 
 `r format_with_col("Why *wouldn't* I be able to express a preference? In the case above that seems strange, but for other cases it may be extremely difficult or painful to make a choice, or very hard to compare two things. Imagine if you were asked to choose between never seeing your mother or never seeing your father. In general, economists' standard approach assumes we have a consistent preference ranking over all possibilities, and choose accordingly.  Other social sciences see this differently/","gray")`
 
-`r format_with_col("Also 'forbidden' in the classical model: the *time","gray")` or \emph{frame* in which I make the *decisions* must not affect my choices. This will be relaxed when we discuss behavioral economics.}
+```{block2,  type='note'}
+Also 'forbidden' in the classical model: the *time* or *frame* in which I make the *decisions* must not affect my choices. This will be relaxed when we discuss behavioral economics,"gray"}`
 
-\medskip
+```  
+<br>
 
-Fancy notation: Either A preferred to B, B preferred to A, or A indifferent to B
+Formal notation: Either A preferred to B, B preferred to A, or A indifferent to B
 
 $$A \succ B, B \succ A, \: or \: A \sim B $$
 
 <br> \bigskip
 
 
-
+```{block2,  type='note'}
 
 Violations?:
 
@@ -237,6 +224,9 @@ Is there really a clear 'true preference' here?
 See also Sunstein ad others on 'choosing not to choose'
 
 
+```
+
+
 ***
 
 
@@ -244,17 +234,37 @@ See also Sunstein ad others on 'choosing not to choose'
 
 $$ A \succ B \: and \: B \succ C \rightarrow A \succ C $$
 
-
-- Similar for indifference ($\sim$)
+ 
 
 
 - If I prefer an Apple to a Banana and a Banana to Cherry then I prefer an Apple to a Cherry.
 
 
-`r format_with_col("A similar idea holds if I am indifferent between one pair of these. If this seems confusing it may be because it is *too","gray")` obvious (although behavioral and experimental economists claim to find violations).*
+- A similar idea holds if I am indifferent between one pair of these.  ($\sim$) 
 
 
-`r format_with_col(" If you found someone who stricly preferred a apple to a bananas, a banana to a cherry, and a cherry to an apple,  you could make a lot of money out of them!","RawSienna")`
+- ... this obviously extends to 'chains' combining these ... so
+
+$$ A \succ B \:\: and \: \: B \sim C \rightarrow A \succ C $$
+etc. 
+
+We may write this concisely as $A \succ B \sim C$.
+
+
+```{block2,  type='tip'}
+
+If this seems confusing it may be because it is *too* obvious (although behavioral and experimental economists claim to find [violations](#violations) of this.
+
+```  
+
+
+```{block2,  type=‘technote'}
+
+Formally, completeness of these $\succ$ and $\sim$, and the transitivity of each makes this a 'Partial Ordering' of the choice set.
+
+```
+ 
+`r format_with_col("If you found someone who stricly preferred a apple to a bananas, a banana to a cherry, and a cherry to an apple,  you could make a lot of money out of them!","RawSienna")`
 
 <!--
 Act this out? Make a video?
@@ -292,24 +302,27 @@ It works as follows:
 
 ... Keep repeating steps 1-3, until you've drained all of their resources.
 
+```{block2,  type='compqn'}
 
-`r format_with_col("(Final) Exam question: What are 'transitive preferences'? Give an example of a person making choices that seem to reflect preferences that are \textit{not","gray")` transitive, and explain how you could 'pump money' from this person.}^[Transitivity (internal consistency): If I prefer A to B, and prefer B to C, then I must prefer A to C.
+(Final) Exam question: What are 'transitive preferences'? Give an example of a person making choices that seem to reflect preferences that are transitive, and explain how you could 'pump money' from this person.
+
+```  
+
+Ans: ^[Transitivity (internal consistency): If I prefer A to B, and prefer B to C, then I must prefer A to C.
 If 'Intransitive Eddy' is offered 1 apple and 1 banana and 1p, he chooses the apple. If he is offered 1 banana versus 1 cherry and 1p, he chooses the banana. If he is offered 1 cherry versus 1 apple and 1p, he chooses the cherJjji
 Pump money from him: Buy an apple, a banana, and a cherry. Get him to buy a banana from you. Get him pay you 1p to trade his banana for your apple. Then get him to pay 1p to trade his apple for your cherry. Then get him to pay 1p to trade his cherry for your banana. Then get him to pay 1p to trade his banana for your apple. Repeat ad nauseum.]
 
+<br> 
 
- [comment]: <> (101BB)
-
-Violations?: see (inter alia)
+### Violations of transitivity?: see (inter alia) {-#violations}
 
 - Loomes, Graham, Chris Starmer, and Robert Sugden. "Observing violations of transitivity by experimental methods." Econometrica: Journal of the Econometric Society (1991): 425-439.
 
 - Choi, Syngjoo, et al. "Who is (more) rational?." The American Economic Review 104.6 (2014): 1518-1550.
 
-[comment]: <> (101EE)
 
 
-### 3. More is better ('global nonsatiation') {-}
+### 3. More is better ('global nonsatiation') {-}
 
 ```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/moreisbetter.png")
@@ -327,17 +340,22 @@ whereas those in the questionable areas may or may not be superior to $X^{\ast},
 **If people obey the first two above assumptions/axioms, the completeness and transitivity$\ast$, they will make choices in a way consistent with maximising a (continuous) *utility* function.** (... OK, maybe you still don''t care, but economists do.)
 
 
+```{block2,  type='technote'}
 
-[comment]: <> (101BB)
+$\ast$ technically, these conditions are necessary but not sufficient.  Adding 'Continuity' of preferences yields a sufficient condition, and also guarantees continuous utility functions and demand curves without strange jumps).
 
-($\ast$ technically, these conditions are necessary but not sufficient.  Adding 'Continuity' of preferences yields a sufficient condition, and also guarantees continuous utility functions and demand curves without strange jumps).
+```  
+
 
 The third axiom (nonsatiation) makes the maths more convenient, and is necessary for some results/predictions, like establishing that an outcome allows a 'Pareto improvement'.
 
-[comment]: <> (101EE)
+```{block2,  type='technote'}
 
+Strictly, most results only require 'local nonsatiation'; starting from any consumption point, increasing the amount of *some  good by a tiny $\epsilon$ amount will yield a preferred point. This will yield results like 'people will spend all of their wealth' and '(roughly) people will never buy a more expensive bundle when a cheaper bundle is preferred.'
 
-`r format_with_col("Strictly, most results only require 'local nonsatiation'; starting from any consumption point, increasing the amount of *some","RawSienna")` good by a tiny $\epsilon$ amount will yield a preferred point. This will yield results like 'people will spend all of their wealth' and '(roughly) people will never buy a more expensive bundle when a cheaper bundle is preferred.'*
+```  
+
+<br> 
 
 We are not saying people *actually* consult a utility function. That would be a dumb thing to say.
 We are considering that 'people behave as if they are maximizing utility functions';
@@ -347,20 +365,29 @@ These axioms stand directly behind 'revealed preference' methods for measuring h
 nonmarket goods, like clean air and national parks.
 It also gives us a vocabulary and a way to test for violations of this consistency, and make alternate predictions.
 
-[comment]: <> (101BB)
+### On continuity of preferences {-#continuity}
 
-*Note:* Continuity: If $A \succ B$ and $C$ 'lies within an $\epsilon$ radius of $B$ then $A \succ C$.
-Adding this to the previous axioms $\rightarrow$ utility representation; these are jointly sufficient conditions.
+ Continuity: If $A \succ B$ and $C$ 'lies within an $\epsilon$ radius of $B$ then $A \succ C$.
+ 
+Adding this to the previous axioms $\rightarrow$ a utility representation; these are jointly sufficient conditions.
 
 Continuous preferences will also ensure continuous utility functions and allow us to discuss concepts such as 'marginal utility' and ensure and gradually sloping demand curves.
 
-Note that everywhere-differentiable utility functions are obviously continuous. Tough question -- what preferences have we casually described that are actually *not* continuous?
+Note that everywhere-differentiable utility functions are obviously continuous.
 
-Answer: we assumed the 'right and left shoes' were valued in continuous amounts ... but I can't really use 1.5 pairs of shoes!
 
-An interesting case
+```{block2,  type='compqn'}
+
+Tough question -- what preferences might we describe (given below) that are actually *not* continuous? 
+
+```  
+
+Answer: ^[for example, when we discuss some examples of [perfect complements](perfectcomp)  we may assume 'right and left shoes' were valued in continuous amounts ... but I can't really use 1.5 pairs of shoes!]
+
 
 <br> \bigskip
+
+### An interesting case {-#lexicographic}
 
 *A leading counterexample:*  'lexicographic' preferences (look this up).
 
@@ -372,14 +399,10 @@ In fact, lexicographic preferences (in a continuous product space) *cannot* be r
 
 <br> \bigskip
 
+```{block2,  type='technote'}
 Diminishing marginal returns, or (in multiple dimensions, without requiring differentiability, 'quasiconcavity') will also be necessary for certain results.
 
-[comment]: <> (101EE)
-
-<br> \bigskip
-
-Also...^[Axiom 3 (nonsatiation) makes the maths more convenient, and is necessary for some results/predictions
-Strictly, most results only require a  weaker 'local nonsatiation' condition.]
+```
 
 ***
 
@@ -389,7 +412,7 @@ Strictly, most results only require a  weaker 'local nonsatiation' condition.]
 
 - How can we compare the "?" areas? Which are preferred?
 
-<!—
+<!--
 @mcq
 -->
 
@@ -407,14 +430,16 @@ Indifference curve
 
 \medskip
 
-Formally (for 2 goods), the set of pairs of ${X,Y}$ such that $U(X,Y)=c$ for some constant $c$^[Recall the "level sets" from the maths revision material.]
+Formally (for 2 goods), the set of pairs of ${X,Y}$ such that $U(X,Y)=c$ for some constant $c$^[Recall the "level sets" from the maths revision.]
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
  knitr::include_graphics("picsfigs/indifcurves_util_together.jpg")
+
 ```
 
 
-Consider the above diagram ^[Credit: www2.econ.iastate.edu] . Think of this as a map with a projection above it.
+Consider the above diagram ^[Credit: www2.econ.iastate.edu]. Think of this as a map with a projection above it.
 
 - How far East you go on this map determines how much of the x good is consumed
 
@@ -424,24 +449,24 @@ Consider the above diagram ^[Credit: www2.econ.iastate.edu] . Think of this as a
 
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
  knitr::include_graphics("picsfigs/indif_utility_2_400.jpg")
+
 ```
 
+The above diagram also includes color to depict the utility level, like a 'heat map'.^[This diagram is from a very useful resource from MIT, [Frank's Economics on the web](http://web.mit.edu/11.203/www/econ/).]
 
-The above diagram also includes color to depict the utility level, like a 'heat map'.^[This diagram is from a very useful resource from MIT, [Frank's Economics on the web](http://web.mit.edu/11.203/www/econ/), an interactive tutorial that is  worth checking this out to help you understand these concepts and more.]
 
+## Should Economists care how the mind works? from NS 2.2 application
 
-[comment]: <> (101BB)
+Should we Look to biology, psychology, cognitive science for key principles/modeling?
 
-## App 2.2 : Should Economists care how the mind works?
-
-- Look to biology, psychology, cognitive science for key principles/modeling?
-- Evidence of systematic departures from maximization of a consistent and standard utility *function*
+There is evidence of systematic departures from maximization of a consistent and standard utility *function*
     - E.g., treating some prices differently and ignoring information
     - Self-control and 'paying not to go to the gym'
+    
 - Should we describe/model *optimizing* behavior or 'typical behavioral patterns'?
-    - Arguments for each; see chapter 17 on 'Behavioral Economics'
-
+    - Arguments for each; see 'Behavioral Economics'
 
  There are good arguments for understanding what optimising behavior would look like and what it would predict even if it might not always be descriptive.   There is also good evidence that people's behavior is inconsistent with a very simple maximization and is sometimes 'predictably irrational' (although I hate to use the word 'irrational).   We will return to this when we discuss behavioral economics.
 
@@ -456,8 +481,6 @@ The above diagram also includes color to depict the utility level, like a 'heat 
 - They may also find it mentally costly and time-consuming to carefully calculate the costs and benefits, and thus exhibit 'rational inattention'
 - They may choose to follow simple rules or 'heuristics' to make their decisions easier; e.g., 'I will work every day until I have earned a target income'.
 
-[comment]: <> (101EE)
-
 
 ***
 
@@ -470,8 +493,10 @@ The above diagram also includes color to depict the utility level, like a 'heat 
 
 *Note for above*: Suppose you are someone that likes hamburgers and soft drinks. If this is too difficult to imagine, think of two healthy goods, like runner beans and green tea.   Note that the *period* of consumption---a day, a year, or a lifetime---is not specified.
 
-
-`r format_with_col("Comprehension Q: Rank order of preference between points A-E.","blue")` \textcolor{gray}{Note: I've asked this as a MCQ on exams!} (Answers to most comprehension questions are given in footnotes. Try to answer it yourself before looking at the footnote.) ^[Ans: $E \succ A \sim B \sim C \sim D \succ F$]
+```{block2,  type='compqn'}
+Comprehension Q: Rank order of preference between points A-E using the formal notation (Note: I've asked this as a MCQ on exams!}) 
+(Answers to most comprehension questions are given in footnotes. Try to answer it yourself before looking at the footnote.) ^[Ans: $E \succ A \sim B \sim C \sim D \succ F$]
+```  
 
 <!--
 
@@ -536,7 +561,6 @@ $MRS(X,Y)=-\frac{dY}{dX}|U(X,Y)=U_1$},  the absolute value of the total derivati
 *Returning to fig 2.2:*
 
 \
-
 
 - Moving from A to B: She is willing to give up 2 burgers to get 1 more soda.
     - $\rightarrow$  Here the slope $-2$, implying a $MRS=2$ ^[Because we take the absolute value, i.e., the magnitude of the slope expressed as a positive number.]
@@ -697,7 +721,7 @@ Perfect substitutes
 
 ***
 
-Perfect complements
+#### Perfect complements {-#perfectcomp}
 
 :     Goods A and B are Perfect Complements when an individual only gains utility from (more) A if she also consumes a defined (additional) amount of B, and vice-versa
 

@@ -81,8 +81,24 @@ replacements needed:
 -->
 
 
+```{r install,  echo = FALSE}
+library(pacman)
+p_load(knitr, dplyr, tidyverse, here, janitor, citr, reporttools, magrittr, glue, experiment, estimatr, broom, kableExtra, purrr, ggsignif, recipes, pwr,lubridate,huxtable,sandwich,randomizr,gmodels,emdbook)
+
+library(png)
+library(grid)
+```
+
+```{r include=TRUE, eval=FALSE}
+install.packages("webshot")
+webshot::install_phantomjs()
+
+```
+
 ```{r eval=FALSE}
 install.packages("bookdown")
+
+
 # or the development version
 # devtools::install_github("rstudio/bookdown")
 ```
@@ -125,5 +141,15 @@ my_output <- knitr::opts_knit$get("rmarkdown.pandoc.to")
 
 <!---
 Can define text blocks here, refer to them again and again if desired
+To add to ELE:
+1. zip all content in '_book' folder
+2. drag into VLE site
+  - on prompt, create file resource
+3. edit settings
+  - right click and unzip
+  - double-click starting file
+  - set as main file
+  - save
+Now it is only accessible within the university login
 -->
 

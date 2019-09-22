@@ -1,0 +1,856 @@
+\chapter{Supply and demand basics}%\chapter{Many v. Many}
+\label{3basics}
+\index{supply}
+\index{demand}
+
+
+\noindent If we go to the grocery store and stand in the milk aisle, we can observe the \textbf{quantity transacted}\index{market!quantity transacted} (the number of gallons of milk bought and sold) and we can observe the \textbf{market price}\index{market!price} (the amount the buyers pay the sellers for each gallon). Figure~\ref{fig:observables1a} graphs these observables, $p$ and $q$. The figure also shows an area representing their product, $pq$, which is \textbf{total revenue}\index{market!total revenue} and also \textbf{total expenditure}.\index{market!total expenditure} (If the market price $p$ is \$2.00 per unit and the quantity transacted $q$ is 1,000 units, then the total amount of money that changes hands---the total revenue for sellers, and the total expenditure for buyers---is \$2,000. Graphically we get a rectangle of height $p$, width $q$, and area $pq$.)
+
+
+
+
+If we go back to the grocery store on other occasions, we can see the observables $p$ and $q$ changing over time. (Graphically, we get Figure~\ref{fig:observables1b}.) The story of supply and demand attempts to explain what's going on with $p$ and $q$, i.e., with the dot we see moving around Figure~\ref{fig:observables1b}.
+
+
+
+
+%
+\begin{figure}[h]
+\centering
+\subfigure[]
+{\label{fig:observables1a}
+\begin{pspicture}(0,0)(8,9)
+\rput(0,1){
+    \rput[r](-.6,4){$p$}
+    \rput(4,-.6){$q$}
+    \psframe[fillstyle=vlines, fillcolor=black, linecolor=white](4,4)
+    \psline(0,4)(4,4)(4,0) %[linestyle=dotted]
+    \pscircle[fillstyle=solid, linecolor=black, fillcolor=black](4,4){.2}
+    \rput[r](-.2,7.5){$P$}
+    \rput[t](7.5,-.2){$Q$}
+    \psaxes[labels=none, ticks=none, showorigin=false](8,8)
+    }
+\end{pspicture}
+}
+%
+\hspace{2cm}
+%
+\subfigure[]
+{\label{fig:observables1b}
+\begin{pspicture}(0,0)(8,9)
+\rput(0,1){
+    \pscircle[fillstyle=solid, linecolor=black, fillcolor=black](4,4){.2}
+    \pscircle[fillstyle=solid, linecolor=black, fillcolor=black](2,2){.2}
+    \psline{->}(3.7,3.7)(2.3,2.3)
+    \pscircle[fillstyle=solid, linecolor=black, fillcolor=black](2,6){.2}
+    \psline{->}(3.7,4.3)(2.3,5.7)
+    \pscircle[fillstyle=solid, linecolor=black, fillcolor=black](6,2){.2}
+    \psline{->}(4.3,3.7)(5.7,2.3)
+    \pscircle[fillstyle=solid, linecolor=black, fillcolor=black](6,6){.2}
+    \psline{->}(4.3,4.3)(5.7,5.7)
+    \rput[r](-.2,7.5){$P$}
+    \rput[t](7.5,-.2){$Q$}
+    \psaxes[labels=none, ticks=none, showorigin=false](8,8)
+    }
+\end{pspicture}
+}
+\caption{(a) the observables $p$ and $q$ Total revenue and/or total expenditure is the shaded box with area $pq$; (b) the observables changing over time.}
+\label{fig:observables1} % Figure~\ref{fig:observables1}
+\end{figure}
+%
+
+
+
+
+
+\section{The story of supply and demand}
+
+The story of supply and demand is that the dot we see is really the intersection of two curves: the market supply curve and the market demand curve. When the dot moves around, it is because these curves are moving.
+
+The \textbf{market supply curve}\index{market!supply curve}\index{supply curve!market} (see Figure~\ref{fig:basicsupply}) answers \emph{hypothetical} questions like these: \emph{If} the market price were \$6 per unit, how many units of this good would sellers want to sell? \emph{If} the market price were \$7 per unit, how many units of this good would sellers want to sell? Put all these hypotheticals together, and you get the market supply curve.\footnote{It might seem backwards to have the market price on the $y$-axis and the quantity on the $x$-axis. This counterintuitive set-up is explained further in Chapter~\ref{3margins}.}
+
+Similarly, the \textbf{market demand curve}\index{market!demand curve}\index{demand curve!market} (see Figure~\ref{fig:basicdemand}) is a graphical presentation of \emph{hypothetical} questions like these: \emph{If} the market price were \$6 per unit, how many units of this good would buyers want to buy? \emph{If} the market price were \$7 per unit, how many units of this good would buyers want to buy? Put all these hypotheticals together, and you get the market demand curve.
+
+\begin{figure}[h]%[!t]
+\centering
+    \subfigure[A market supply curve]
+        {
+        \begin{pspicture}(0,0)(8,9)
+        \rput(0,1){
+        \pstextpath[c](0,.5){\psline[linecolor=black](1,1)(7,7)}{Supply}
+        \rput[r](-.2,7.5){$P$}
+        \rput[t](7.5,-.2){$Q$}
+        \psaxes[labels=none, ticks=none, showorigin=false](8,8)}
+        \end{pspicture}
+        \label{fig:basicsupply}
+        }\hspace{2cm}
+    \subfigure[A market demand curve]
+        {
+        \begin{pspicture}(0,0)(8,9)
+        \rput(0,1){
+        \pstextpath[c](0,.5){\psline[linecolor=black](1,7)(7,1)}{Demand}
+        \rput[r](-.2,7.5){$P$}
+        \rput[t](7.5,-.2){$Q$}
+        \psaxes[labels=none, ticks=none, showorigin=false](8,8)}
+        \end{pspicture}
+        \label{fig:basicdemand}
+        }\\[2\baselineskip]
+    \subfigure[The market equilibrium]
+        {
+        \begin{pspicture}(0,0)(8,8)
+        \rput(0,1){
+        \pstextpath[l](1,.5){\psline[linecolor=black](1,1)(7,7)}{Supply}
+        \pstextpath[l](0,.5){\psline[linecolor=black](1,7)(7,1)}{Demand}
+        \pscircle[fillstyle=solid, linecolor=black, fillcolor=black](4,4){.2}
+        \rput[r](-.2,7.5){$P$}
+        \rput[t](7.5,-.2){$Q$}
+        \psaxes[labels=none, ticks=none, showorigin=false](8,8)}
+        \end{pspicture}
+        \label{fig:basictogether}
+        }
+\caption{Supply and demand}
+\label{fig:basicsupplydemand}
+\end{figure}
+
+
+Note from Figure~\ref{fig:basicsupplydemand} that supply and demand curves slope in opposite directions. The supply curve is \emph{upward sloping}, indicating that as the price per unit rises sellers want to sell more units, or, equivalently, that as the price per unit falls sellers want to sell fewer units. The demand curve is \emph{downward sloping}, indicating that as the price per unit rises buyers want to buy fewer units, or, equivalently, that as the price per unit falls buyers want to buy more units. (This phenomenon is known as the \textbf{Law of Demand}.) We will examine these slopes in more detail in Chapter~\ref{3details}.
+
+\subsubsection{Question\rm : Why should we expect the observables $p$ and $q$ to show up at the intersection of the supply and demand curves?}
+
+Answer: Because at that intersection point the following equality holds: the quantity that buyers want to buy at that price is equal to the quantity that sellers want to sell at that price. It is because of this equality that this price is called the \textbf{market-clearing price}\index{market!market-clearing price} and the intersection point is called the \textbf{market equilibrium}.\index{market!equilibrium}\index{equilibrium!market}
+
+\emph{Any outcome other than this market equilibrium is incompatible with individual optimization.} At any price higher than the market-clearing price, the quantity that buyers want to buy is \emph{less} than the quantity that sellers want to sell; this creates incentives for individual sellers to lower their prices and for individual buyers to seek out lower prices. At any price lower than the market-clearing price, the quantity that buyers want to buy is \emph{more} than the quantity that sellers want to sell; this creates incentives for individual buyers to increase their offers and for individual sellers to seek out higher prices. Only at the intersection of the supply and demand curves does the quantity that sellers want to sell at a certain price equal the quantity that buyers want to buy at that same price.
+
+
+
+
+\section{Shifts in supply and demand}
+
+A good way to think about the market equilibrium is to imagine that the demand curve is blue, that the supply curve is yellow, and that the only color we can see in the real world is green. The market equilibrium comes at the point where the two curves intersect, and the punch line---yellow and blue makes green!\index{yellow!and blue makes green}\index{blue!and yellow makes green}\index{green!yellow and blue makes}---carries an important lesson: the green dot has no independent existence of its own, and it doesn't move unless either the yellow line or the blue line moves. In other words, the observables $p$ and $q$ do not change unless either the demand curve or the supply curve changes.
+
+In most cases, outside events will affect only one of the two curves: a late frost in Florida will affect the supply curve for orange juice but not the demand curve; a news report on the health benefits of orange juice will affect the demand curve for orange juice but not the supply curve. With only one of the two curves changing, there are four basic patterns, as shown in Figure~\ref{supplydemandshifts}.
+
+\begin{figure}[h]%
+\centering
+    \subfigure[Demand increases]
+        {
+        \begin{pspicture}(0,0)(8,9)
+        \pstextpath[l](0,.3){\psline(1,1)(7,7)}{\small{S}}
+        \pstextpath[l](0,.3){\psline(1,7)(7,1)}{\small{D (old)}}
+        \pstextpath[l](0,.3){\psline(3.5,7)(8,2.5)}{\small{D (new)}}
+        \psline{->}(5.5,3)(7,3)
+        \rput[r](-.2,7.5){\small{$P$}}
+        \rput[t](7.5,-.2){\small{$Q$}}
+        \psaxes[labels=none, ticks=none, showorigin=false](8,8)
+        \end{pspicture}
+        \label{demandincreases}
+        }\hspace{2cm}
+    \subfigure[Demand decreases]
+        {
+        \begin{pspicture}(0,0)(8,9)
+        \pstextpath[l](0,.3){\psline(1,1)(7,7)}{\small{S}}
+        \pstextpath[l](0,.3){\psline(1,7)(7,1)}{\small{D (old)}}
+        \pstextpath[l](0,.3){\psline(0,5.5)(4.5,1)}{\small{D (new)}}
+        \psline{->}(5.5,2)(4,2)
+        \rput[r](-.2,7.5){\small{$P$}}
+        \rput[t](7.5,-.2){\small{$Q$}}
+        \psaxes[labels=none, ticks=none, showorigin=false](8,8)
+        \end{pspicture}
+        \label{demanddecreases}
+        }\\[2\baselineskip]
+    \subfigure[Supply increases]
+        {
+        \begin{pspicture}(0,0)(8,8)
+        \pstextpath[r](0,.3){\psline(1,1)(7,7)}{\small{S (old)}}
+        \pstextpath[r](0,.3){\psline(1,7)(7,1)}{\small{D}}
+        \pstextpath[r](0,.3){\psline(3.5,1)(8,5.5)}{\small{S (new)}}
+        \psline{->}(2.5,2)(4,2)
+        \rput[r](-.2,7.5){\small{$P$}}
+        \rput[t](7.5,-.2){\small{$Q$}}
+        \psaxes[labels=none, ticks=none, showorigin=false](8,8)
+        \end{pspicture}
+        \label{supplyincreases}
+        }\hspace{2cm}
+    \subfigure[Supply decreases]
+        {
+        \begin{pspicture}(0,0)(8,8)
+        \pstextpath[r](0,.3){\psline(1,1)(7,7)}{\small{S (old)}}
+        \pstextpath[r](0,.3){\psline(1,7)(7,1)}{\small{D}}
+        \pstextpath[r](0,.3){\psline(0,2.5)(4.5,7)}{\small{S (new)}}
+        \psline{->}(2.5,3)(1,3)
+        \rput[r](-.2,7.5){\small{$P$}}
+        \rput[t](7.5,-.2){\small{$Q$}}
+        \psaxes[labels=none, ticks=none, showorigin=false](8,8)
+        \end{pspicture}
+        \label{supplydecreases}
+        }
+\caption{The four basic types of shifts in supply and demand. Note that an increase in one of the curves results in a shift to the \emph{right}, and that a decrease results in a shift to the \emph{left}. So increases \emph{do not} shift curves up, and decreases \emph{do not} shift curves down.}
+\label{supplydemandshifts}
+\end{figure}
+
+
+\begin{description}
+\item[Demand increases]\index{demand curve!increases and decreases} Buyers want to buy more than before at any given price, so the demand curve shifts to the \emph{right}. The equilibrium price and quantity both increase. (See Figure~\ref{demandincreases}.)
+
+\item[Demand decreases] Buyers want to buy less than before at any given price, so the demand curve shifts to the \emph{left}. The equilibrium price and quantity both decrease. (See Figure~\ref{demanddecreases}.)
+
+\item[Supply increases]\index{supply curve!increases and decreases} Sellers want to sell more than before at any given price, so the supply curve shifts to the \emph{right}. The equilibrium price decreases and the equilibrium quantity increases. (See Figure~\ref{supplyincreases}.)
+
+\item[Supply decreases] Sellers want to sell less than before at any given price, so the supply curve shifts to the \emph{left}. The equilibrium price increases and the equilibrium quantity decreases. (See Figure~\ref{supplydecreases}.)
+\end{description}
+%
+Note that an increase in either supply or demand shifts the relevant curve to the \emph{right} (at any price people want to buy or sell more) and that a decrease in either supply or demand shifts the relevant curve to the \emph{left} (at any price people want to buy or sell less). The curves move left or right, \emph{not up or down}! This counterintuitive behavior stems from the fact---to be discussed more in Chapter~\ref{3margins}---that we have the quantity $Q$ on the $x$-axis and the market price $P$ on the $y$-axis.
+
+
+
+\section{\emph{Math}: The algebra of markets}
+
+The market equilibrium occurs at the intersection of the supply curve and the demand curve, and therefore lies on both of these curves. Algebraically, this means that we can find the market equilibrium by simultaneously solving the equations for the supply and demand curves. If the supply curve is $q=S(p)$ and the demand curve is $q=D(p)$, then the market equilibrium is the point $(p^*, q^*)$ such that $q^*=S(p^*)$ and $q^*=D(p^*)$.
+
+For an example, consider the supply curve $q=15+2p$ and the demand curve $q=20-3p$. We can solve these equations simultaneously:
+\[
+20-3p=15+2p\Longrightarrow
+5p=5\Longrightarrow p=1.
+\]
+We can then use this value of $p$ to find $q$ from either the supply curve ($q=15+2p=17$) or the demand curve ($q=20-3p=17$). So the market equilibrium occurs at a price of $p=1$ per unit and a quantity of $q=17$ units.
+
+
+%
+%\begin{EXAM}
+% \section*{Problems}
+%
+%\input{part3/qa3basics}
+%\end{EXAM}
+%
+%
+
+
+\bigskip
+\bigskip
+\section*{Problems}
+
+\noindent \textbf{Answers are in the endnotes beginning on page~\pageref{3basicsa}. If you're reading this online, click on the endnote number to navigate back and forth.}
+
+
+
+\begin{enumerate}
+
+
+\item Explain, as if to a non-economist, why the intersection of the market supply curve and the market demand curve identifies the market equilibrium.\endnote{\label{3basicsa}This is the price at which the amount that buyers want to buy equals the amount that sellers want to sell. At a higher price, sellers want to sell more than buyers want to buy, creating incentives that push prices down toward the equilibrium. At a lower price, buyers want to buy more than sellers want to sell, creating incentives that push prices up toward the equilibrium.}
+
+
+
+
+
+
+
+
+
+\item For each item, indicate the likely impact on the supply and demand for wine. Then indicate the effect on the equilibrium price and quantity. It may help to use a graph.\endnote{\begin{enumerate}
+    \item Demand increases. Equilibrium price up, quantity up.
+    \item Supply decreases. Equilibrium price up, quantity down.
+    \item Demand decreases. Equilibrium price down, quantity down.
+    \item Demand decreases. Equilibrium price down, quantity down.
+    \end{enumerate}}
+
+    \begin{enumerate}
+    \item The legal drinking age for wine is lowered to 18.
+    \item A fungus destroys part of the grape harvest. (Grapes are \textbf{inputs} in wine-making, as are labor, machinery, and glass.)
+    \item The price of cheese increases. (Wine and cheese are \textbf{complements}\index{complementary good} or \textbf{complementary goods}, as are skis and ski boots; monitors and keyboards; and peanut butter and jelly.)
+    \item The price of beer falls. (Beer and wine are \textbf{substitutes},\index{substitute} as are eyeglasses and contact lenses; burritos and hamburgers; and pens and pencils.)
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+\item For each item, indicate the likely impact on the supply and demand for popsicles in Hawaii. Then indicate the effect on the equilibrium price and quantity. It may help to use a graph.\endnote{\begin{enumerate}
+    \item Demand increases. Equilibrium price up, quantity up.
+    \item Supply decreases. Equilibrium price up, quantity down.
+    \end{enumerate}}
+
+    \begin{enumerate}
+    \item More tourists visit Hawaii.
+    \item An arsonist burns down half of the popsicle factories in Hawaii.
+    \end{enumerate}
+
+
+
+
+
+
+
+
+\item For each item, indicate the likely impact on the supply and demand for codfish. Then indicate the effect on the equilibrium price and quantity. It may help to use a graph.\endnote{\begin{enumerate}
+    \item Demand increases. Equilibrium price up, quantity up.
+    \item Supply decreases. Equilibrium price up, quantity down.
+    \end{enumerate}}
+
+    \begin{enumerate}
+    \item News reports that cod contains lots of omega-3 fatty acids, which are great for your health.
+    \item Overfishing drastically reduce the fish population.
+    \end{enumerate}
+
+
+
+
+
+
+\item For each item, indicate the likely impact on the supply and demand for paperback books. Then indicate the effect on the equilibrium price and quantity. It may help to use a graph.\endnote{\begin{enumerate}
+    \item Supply increases. Equilibrium price down, quantity up.
+    \item Demand decreases. Equilibrium price down, quantity down.
+    \item Demand increases. Equilibrium price up, quantity up.
+    \item Demand increases. Equilibrium price up, quantity up.
+    \item Supply increases. Equilibrium price down, quantity up.
+    \end{enumerate}}
+
+    \begin{enumerate}
+    \item The invention (and widespread use) of the printing press.
+    \item The invention (and widespread use) of the television.
+    \item The invention (and widespread use) of "book lights" (the small clip-on lights that allow people to read at night without disturbing their spouses/partners/etc.)
+    \item News reports that reading books is a cure for stress and high blood pressure.
+    \item A decrease in the price of paper.
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+\item For each item, indicate the likely impact on the supply and demand for bulldozer operators and other skilled construction workers. (It may help to think for a moment about who the suppliers and demanders are for these services.) Then indicate the effect on the equilibrium price and quantity. It may help to use a graph.\endnote{\begin{enumerate}
+    \item Supply decreases. Equilibrium price up, quantity down.
+    \item Supply decreases. Equilibrium price up, quantity down.
+    \item Demand increases. Equilibrium price up, quantity up.
+    \item Demand increases. Equilibrium price up, quantity up.
+    \end{enumerate}}
+
+    \begin{enumerate}
+    \item The elimination of vocational programs that teach people how to use bulldozers.
+    \item A huge increase in the number of well-paying service-sector jobs such as computer programming.
+    \item A fall in the price of bulldozers and other construction equipment. (To state the obvious: bulldozers and bulldozer operators are complements, like bread and butter or computers and monitors.)
+    \item An increase in the wage for unskilled laborers. (To state the less obvious: skilled labor (e.g., workers who can use bulldozers) and unskilled labor (e.g., workers who can only use shovels) are substitutes, as are tea and coffee and planes, trains, and automobiles.)
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+\item Read the following excerpt from the \emph{New York Times} of October 5, 2000.
+
+\begin{quote}
+The energy proposals that Mr. Bush, the Republican presidential candidate, brought out last week---including opening part of the Arctic National Wildlife Refuge to exploration and incentives to promote coal and nuclear power---could test the willingness of Americans to rebalance environmental and energy priorities in the face of higher prices. For his part, Vice President Al Gore, the Democratic presidential candidate, favors investments in mass transit and incentives to encourage the use of more fuel-efficient vehicles and alternative energy sources.
+\end{quote}
+%
+The ``energy crisis" was a big topic in the presidential race. (It might be interesting to investigate how the real price of gasoline has changed over the last 30 or so years.) For each item, indicate the likely impact on the supply and demand for oil. Then indicate the effect on the equilibrium price and quantity. It might help to use a graph. Please note that, in addition to being refined to make gasoline for cars, oil is also used to heat homes and to produce electricity; coal and nuclear power are also used to produce electricity.\endnote{\begin{enumerate}
+    \item Supply increases. Equilibrium price down, quantity up.
+    \item Demand decreases. Equilibrium price down, quantity down.
+    \item Demand decreases. Equilibrium price down, quantity down.
+    \item Demand decreases. Equilibrium price down, quantity down.
+    \item Yes.
+    \item No. Opening the Arctic National Wildlife Refuge would increase the equilibrium quantity.
+    \item No. Promoting substitutes to oil (e.g., coal and nuclear power) is a demand-side strategy.
+    \item Yes.
+    \end{enumerate}}
+
+    \begin{enumerate}
+    \item Opening part of the Arctic National Wildlife Refuge to oil exploration.
+    \item Government incentives to promote coal and nuclear power.
+    \item Government investments in mass transit.
+    \item Government incentives to encourage the use of solar-powered vehicles.
+    \item Will all of these policies reduce the price of oil? Yes  No (Circle one)
+    \item Will all of these policies reduce the consumption of oil? Yes  No (Circle one)
+    \item Is it correct that Bush's proposals all address the supply side of the problem? %Yes  No (Circle one)
+    \item Is it correct that Gore's proposals all address the demand side of the problem? %Yes  No (Circle one)
+    \end{enumerate}
+
+
+
+
+
+
+
+\item Let's look a little more closely at one of now-President Bush's energy proposals: opening up the Arctic National Wildlife Refuge (ANWR) to oil drilling.
+
+When you answered the previous question, you probably assumed that that oil would become available immediately, i.e., that oil companies could immediately begin extracting and selling that oil. (I wanted you to assume that, so do not go back and rethink your answer above!) It turns out that life is more complicated than that: it takes time to build pipelines and to drill oil wells into pristine Artic wilderness, so any oil that comes from ANWR will not reach the market for something like 5 years. This fact became a source of contention during the presidential campaign, with Al Gore arguing that opening ANWR would have no effect on current gasoline prices because of this 5-year time lag, and George W. Bush arguing\ldots well, I don't remember what his argument was, but it probably had something to do with how when people take actions there have to be consequences.
+
+Unlike the majority of the American public, you now understand how supply and demand works, and you should be able to assess the validity of Al's argument. You should try to do this on your own; otherwise (or once you try it on your own), the questions below can serve to guide and/or confirm your thinking.\endnote{\begin{enumerate}
+    \item Supply increases. Equilibrium price down, quantity up.
+    \item Lower.
+    \item Less attractive.
+    \item More oil.
+    \item Supply increases. Equilibrium price down, quantity up.
+    \end{enumerate}}
+
+    \begin{enumerate}
+    \item Think ahead five years into the future (to 2006), when that oil from ANWR will finally reach the market. Indicate the effect this will have on the market for oil five years from now. (You should draw a supply and demand graph.)
+    \item Next: looking at your graph, what is the effect on the market price for oil in 2006? Will it be higher, lower, or the same? %(Circle one:  Higher   Lower    Same)
+    \item Next: Come back to the year 2001. We need to figure out the impact of that future price change on the market for oil today. So: imagine that you own a bunch of oil. You're trying to decide whether to invest in the bank (by extracting and selling the oil and putting the money in the bank) or to ``invest in the oil" (by leaving the oil in the ground until, say, 2006). Does your answer to the previous question make investing in oil look more attractive or less attractive? %(Circle: More attractive     Less attractive)
+    \item Next: As a result, are you likely to sell more oil this year or less oil? %(Circle:  More Less)
+    \item Finally, think about what this means in terms of your individual supply curve, and remember that all the oil companies are thinking just like you. So: use a supply and demand graph to determine the effect on oil prices today of opening up ANWR for oil drilling. Does today's price go up, down, or stay the same? %(Circle one and draw the graph.)
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+% COMMENTING OUT THESE PROBLEMS
+\begin{comment}
+
+\item \begin{EXAM} A few years ago a libertarian named Joel Grus came to class, and one of the things he discussed was drug legalization. So: for each item below, indicate the likely impact on the supply and demand for cocaine. Then indicate the effect on the equilibrium price and quantity. It may help to use a graph.
+
+    \begin{enumerate}
+    \item Military aid to Columbia to help that country exterminate the coca plant from which cocaine is made.
+    \item Sentences of life in prison for cocaine traffickers and members of drug-selling gangs.
+    \item Sentences of life in prison for buyers of cocaine.
+    \item Drug treatment programs to try to help addicts stop using drugs.
+    \item News reports that eating nutmeg has the same effect as snorting cocaine.\footnote{It doesn't, really. But nutmeg \emph{is} a hallucinogen, if taken by the tablespoonful. Based on my experience as a camp counselor, I'd recommend against it: you're almost sure to end up in the hospital, and maybe in the morgue\ldots.}
+    \item Finally: Imagine (hypothetically) that legalizing cocaine would have no effect on the demand for that drug. Describe the impact of legalization on the market for cocaine.
+    \item This question is a follow-up to the previous one: Would the legalization of cocaine necessarily lead to more money being spent on cocaine, i.e., would total expenditures necessarily go up?  %Yes  No (Circle one and explain briefly.)
+    \end{enumerate}\end{EXAM}
+
+\begin{KEY}
+    \begin{enumerate}
+    \item Supply decreases. Equilibrium price up, quantity down.
+    \item Supply decreases. Equilibrium price up, quantity down.
+    \item Demand decreases. Equilibrium price down, quantity down.
+    \item Demand decreases. Equilibrium price down, quantity down.
+    \item Demand decreases. Equilibrium price down, quantity down.
+    \item Supply increases. Equilibrium price down, quantity up.
+    \item Not necessarily. The equilibrium quantity would go up, but the equilibrium price would go down. The net impact on total expenditures $pq$ is therefore unclear.
+    \end{enumerate}
+\end{KEY}
+
+
+\item \begin{EXAM} For each item, indicate the likely impact on the supply and demand for beef. Then indicate the effect on the equilibrium price and quantity. It may help to use a graph.
+
+    \begin{enumerate}
+    \item Mad cow disease scares away meat-eating shoppers.
+    \item All the cows in England are slaughtered and thrown into the ocean.
+    \item New drugs make cows grow faster at lower cost to farmers.
+    \item The price of chicken falls.
+    \item News reports that eating red meat is bad for you.
+    \end{enumerate}\end{EXAM}
+
+\begin{KEY}
+    \begin{enumerate}
+    \item Demand decreases. Equilibrium price down, quantity down.
+    \item Supply decreases. Equilibrium price up, quantity down.
+    \item Supply increases. Equilibrium price down, quantity up.
+    \item Demand decreases. Equilibrium price down, quantity down.
+    \item Demand decreases. Equilibrium price down, quantity down.
+    \end{enumerate}
+\end{KEY}
+
+
+\item \begin{EXAM} Read the following excerpt from the \emph{New York Times} of October 27, 2000.
+
+\begin{quotation}
+For 10 years, British officials consistently misled the public by deliberately playing down the possibility that mad-cow disease could be transmitted to humans, an official report said today\ldots The 4,000-page report, published after a three-year investigation\ldots severely criticized the ``culture of secrecy" that characterized the government's response to a crisis that has wreaked havoc with Britain's once-proud beef industry, forced the slaughter of almost four million cows and led to the deaths so far of 77 Britons\ldots ``My own personal belief would be that we are more likely looking in the region of a few hundred to several thousand more" victims, Prof. Peter Smith, acting head of the government's advisory committee on the disease, said on television this morning. ``But it must be said that we can't rule out tens of thousands."
+
+[It was] ``a consuming fear of provoking an irrational public scare"\ldots that caused a government veterinary pathologist to label ``confidential" his first memo on mad-cow disease in 1986; that led John Gummer, then the agriculture minister, to make a show of publicly feeding a hamburger to his 4-year-old daughter, Cordelia, in 1990; and that led Britain's chief medical officer in 1996 to declare, ``I myself will continue to eat beef as part of a varied and balanced diet." \ldots At the same time, government policy was marred by bureaucratic bungling, a lack of coordination between departments and the fact that the Ministry of Agriculture, Fisheries and Food had two somewhat contradictory missions: to protect consumers and to support the beef industry.
+\end{quotation}
+
+    \begin{enumerate}
+    \item What was the effect of mad-cow disease on the demand curve for British beef? Draw a supply and demand graph and indicate the effect on the equilibrium.
+    \item What was the effect of mad-cow disease on the supply curve for British beef? Draw a supply and demand graph and indicate the effect on the equilibrium.
+    \item Combining your answers to the previous two questions, can you predict with certainty what happened to the equilibrium price for British beef? What about the equilibrium quantity?
+    \item The British government put together quite a PR campaign in their effect to avoid ``an irrational public scare". Would such a public scare have pleased or displeased the following groups?
+        \begin{enumerate}
+        \item Die-hard beef eaters
+        \item Die-hard chicken eaters
+        \item Beef suppliers
+        \item Chicken suppliers
+        \end{enumerate}
+    \end{enumerate}\end{EXAM}
+
+\begin{KEY}
+    \begin{enumerate}
+    \item Demand decreases. Equilibrium price down, quantity down.
+    \item Supply decreases. Equilibrium price up, quantity down.
+    \item Equilibrium quantity fell. The effect on equilibrium price is unclear, since the demand shift and the supply shift move in opposite directions.
+    \item A public scare would decrease demand for beef and increase demand for chicken. The equilibrium price and quantity of beef would therefore fall, and the equilibrium price and quantity of chicken would rise. These changes would benefit beef eaters and chicken suppliers and hurt chicken eaters and beef suppliers.
+    \end{enumerate}
+\end{KEY}
+
+
+
+\item The website www.beertax.com is the home of Anheusier-Busch's ``Roll Back the Beer Tax" campaign. The campaign claims that 43\% of the cost of every beer is taxes and that ``America's 80 million beer drinkers have carried the load of outdated, excessive, hidden taxes for too long."
+
+    \begin{enumerate}
+    \item The campaign claims that 19\% of the cost of every beer consists of sales taxes and per-unit taxes paid by the consumers of beer. Indicate (qualitatively) the impact of this tax on supply and demand, and describe how this tax affects the equilibrium quantity, the equilibrium price paid by buyers, and the equilibrium price received by suppliers.
+    \item The campaign claims that 24\% of the cost of every beer consists of corporate taxes on Anheusier-Busch and other beer producers. Indicate (qualitatively) the impact of this tax on supply and demand, and describe how this tax affects the equilibrium quantity, the equilibrium price paid by buyers, and the equilibrium price received by suppliers.
+    \item Imagine that Congress is considering a proposal to reduce the beer tax, a per-unit tax paid by Anheusier-Busch and other suppliers of beer. Predict the support,  opposition, or neutrality to such a proposal of beer drinkers; beer suppliers; wine drinkers; and wine suppliers. Circle your answers below. You may find it useful to first think about this problem intuitively; then do the two problems below; then take the results from below and try to reconcile them with your intuition. (Hopefully they will fit!)
+        \begin{enumerate}
+        \item Beer drinkers
+        \item Wine drinkers
+        \item Beer suppliers
+        \item Wine suppliers
+        \end{enumerate}
+
+    \item Describe (using a supply and demand curve) the impact of such a proposal on the beer market.
+    \item Describe (using a supply and demand curve) the impact of such a proposal on the wine market.
+    \end{enumerate}
+% COMMENTING OUT THIS PROBLEM
+\end{comment}
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+% Old stuff from here down (12/04)
+
+
+
+
+
+
+
+
+
+%BEGIN{GENERIC MARKET GRAPH COMPONENTS}
+%\newcommand{\genericbegin}{
+%    \begin{center}
+%    \begin{pspicture}(0,0)(8,8)}
+%
+%\newcommand{\genericend}{
+%    \end{pspicture}
+%    \end{center}}
+%
+%\newcommand{\genericaxes}{
+%    \rput[r](-.2,7.5){$P$}
+%    \rput[t](7.5,-.2){$Q$}
+%    \psaxes[labels=none, ticks=none, showorigin=false](8,8)}
+%
+%\newcommand{\genericdemand}{
+%    \psline(0,8)(8,0)
+%    }
+%
+%\newcommand{\genericsupply}{
+%    \psline(0,0)(8,8)
+%    }
+%
+%\newcommand{\generictotalvcost}{
+%    \pspolygon[fillstyle=hlines, fillcolor=black, linecolor=black](0,0)(4,0)(4,4)
+%    }
+%
+%\newcommand{\generictotalvcostlabel}{
+%\rput*(2.7,1){TVC}
+%    }
+%
+%\newcommand{\genericproducersurplus}{
+%    \pspolygon[fillstyle=vlines, fillcolor=black, linecolor=black](0,0)(0,4)(4,4)
+%    }
+%
+%\newcommand{\genericproducersurpluslabel}{
+%\rput*(1.2,2.9){PS}
+%    }
+%
+%\newcommand{\genericconsumersurplus}{
+%    \pspolygon[fillstyle=hlines, fillcolor=black, linecolor=black] (0,4)(4,4)(0,8)
+%    }
+%
+%\newcommand{\genericconsumersurpluslabel}{
+%\rput*(1.2,5.1){CS}
+%    }
+%
+%\newcommand{\generictotalvalue}{
+%    \pspolygon[fillstyle=hlines, fillcolor=black, linecolor=black](0,0)(4,0)(4,4)(0,8)
+%    }
+%
+%%crosshatch
+%
+%\newcommand{\generictotalvaluelabel}{
+%\rput*(2,3){TB}
+%    }
+%
+%\newcommand{\generictotalexpenditure}{
+%    \pspolygon[fillstyle=vlines, fillcolor=black, linecolor=black](0,0)(4,0)(4,4)(0,4)
+%    }
+%
+%\newcommand{\generictotalexpenditurelabel}{
+%\rput*(2,2){TE}
+%    }
+%
+%\newcommand{\generictotalrevenue}{\generictotalexpenditure}
+%
+%\newcommand{\generictotalrevenuelabel}{
+%\rput*(2,2){TR}
+%    }
+%
+%%END{GENERIC MARKET GRAPH COMPONENTS}
+%
+%
+%
+%%BEGIN{WIDGET MARKET GRAPH COMPONENTS}
+%\newcommand{\widgetbegin}{
+%    \begin{center}
+%    \begin{pspicture}(0,0)(10,5)} % (-3,-3)
+%
+%\newcommand{\widgetaxes}{
+%    \rput[r](-.6,1){\$1}
+%    \rput[r](-.6,2){\$2}
+%    \rput[r](-.6,3){\$3}
+%    \rput[r](-.6,4){\$4}
+%    \rput[r](-.6,5){\$5}
+%%   \rput[r](-.6,6){\$6}
+%%   \rput[r](-.6,7){\$7}
+%%   \rput[r](-.6,8){\$8}
+%    \psaxes[labels=x, showorigin=false](10,5)}
+%
+%\newcommand{\widgetend}{
+%    \end{pspicture}
+%    \end{center}}
+%%END{WIDGET MARKET GRAPH COMPONENTS}
+%
+%
+%
+%%BEGIN{GAS MARKET GRAPH COMPONENTS}
+%\newcommand{\gasbegin}{
+%    \begin{center}
+%    \begin{pspicture}(0,0)(10,10)%\showgrid
+%    \rput[r](-.6,1){\$0.20}
+%    \rput[r](-.6,2){\$0.40}
+%    \rput[r](-.6,3){\$0.60}
+%    \rput[r](-.6,4){\$0.80}
+%    \rput[r](-.6,5){\$1.00}
+%    \rput[r](-.6,6){\$1.20}
+%    \rput[r](-.6,7){\$1.40}
+%    \rput[r](-.6,8){\$1.60}
+%    \rput[r](-.6,9){\$1.80}
+%    \rput[r](-.6,10){\$2.00}}
+%
+%\newcommand{\gassupplyold}{
+%    \psline(0,0)(10,10)}
+%
+%\newcommand{\gassupplynew}{
+%    \psline(0,2)(8,10)}
+%
+%\newcommand{\gassupplyarrows}{
+%    \psline{->}(3.5,3.8)(3.5,5.2)}
+%
+%\newcommand{\gasdemandold}{
+%    \psline(0,10)(10,0)}
+%
+%\newcommand{\gasdemandnew}{
+%    \psline(0,8)(8,0)}
+%
+%\newcommand{\gasdemandarrows}{
+%    \psline{->}(3.5,6.2)(3.5,4.8)}
+%
+%\newcommand{\gasend}{
+%    \psaxes[labels=x, showorigin=false](10,10)
+%    \end{pspicture}
+%    \end{center}}
+%
+%
+%%END{GAS MARKET GRAPH COMPONENTS}
+%
+%
+%
+%%BEGIN TAX SCHEDULE COMPONENTS
+%\newcommand{\taxbegin}{
+%    \begin{center}
+%    \begin{tabular}{lccccc} %\hline
+%    }
+%
+%\newcommand{\taxend}{
+%    \end{tabular}
+%    \end{center}
+%    }
+%
+%\newcommand{\taxprice}{
+%    At a market price of &1.00&1.20&1.40&   1.60&   1.80
+%    }
+%
+%\newcommand{\taxbpold}{
+%    %At a price per gallon of &1.00&1.20&1.40&  1.60&   1.80 %\\ %\hline
+%    BP without tax would sell&5&6&7&8&9 %\hline
+%    }
+%
+%\newcommand{\taxbpempty}{
+%    %At a price per gallon of &1.00&1.20&1.40&  1.60&   1.80 \\ %\hline
+%    BP with \$.40 tax would sell& ? &?  &?  &?  &?   %\hline
+%    }
+%
+%\newcommand{\taxbpnew}{
+%    %At a price per gallon of &1.00&1.20&1.40&  1.60&   1.80 \\%\hline
+%    BP with \$.40 tax would sell& \ & \ &5&6&7   %\\ \hline
+%    }
+%
+%\newcommand{\taxsupplyold}{
+%    %At a price per gallon of &1.00&1.20&1.40&  1.60&   1.80 \\%\hline
+%    Sellers without tax would sell& 5&6&7&8&9 %\\ \hline
+%    }
+%
+%\newcommand{\taxsupplynew}{
+%    %At a price per gallon of &1.00&1.20&1.40&  1.60&   1.80 \\%\hline
+%    Sellers with \$.40 tax would sell&  &   &5&6&7   %\\ \hline
+%    }
+%
+%\newcommand{\taxpatold}{
+%    %At a price per gallon of &1.00&1.20&1.40&  1.60&   1.80 \\ %\hline
+%    Pat without tax would buy&14&12&10&8&6
+%    }
+%
+%\newcommand{\taxpatempty}{
+%    %At a price per gallon of &1.00&1.20&1.40&  1.60&   1.80 \\ %\hline
+%    Pat with \$.40 tax would buy&?  &?  &?  &?  &?   %\hline
+%    }
+%
+%\newcommand{\taxpatnew}{
+%    %At a price per gallon of &1.00&1.20&1.40&  1.60&   1.80 \\%\hline
+%    Pat with \$.40 tax would buy&10&8&6& &   %\\ \hline
+%    }
+%
+%\newcommand{\taxdemandold}{
+%    %At a price per gallon of &1.00&1.20&1.40&  1.60&   1.80 \\%\hline
+%    Buyers without tax would buy&   5&4&3&2&1 %\\ \hline
+%    }
+%
+%\newcommand{\taxdemandnew}{
+%    %At a price per gallon of &1.00&1.20&1.40&  1.60&   1.80 \\%\hline
+%    Buyers with \$.40 tax would buy&3&2&1& &     %\\ \hline
+%    }
+%
+%\newcommand{\taxsupplyarrows}{
+%    \begin{center}
+%    \psset{unit=.1cm}
+%    \begin{pspicture}(0,0)(10,0)%7.5)
+%    \rput(0,2)
+%    {
+%    \psline{->}(9,16)(26,8)
+%    \psline{->}(19,16)(36,8)
+%    \psline{->}(29,16)(46,8)
+%    }
+%    \end{pspicture}
+%    \end{center}
+%    }
+%
+%\newcommand{\taxdemandarrows}{
+%    \begin{center}
+%    \psset{unit=.1cm}
+%    \begin{pspicture}(0,0)(10,0)
+%    \rput(0,1.5)
+%    {
+%    \psline{->}(28,16)(11,8)
+%    \psline{->}(38,16)(21,8)
+%    \psline{->}(48,16)(31,8)
+%    }
+%    \end{pspicture}
+%    \end{center}
+%    }
+%%END TAX SCHEDULE COMPONENTS
+%
+%
+%
+%%BEGIN SOCKS SCHEDULE COMPONENTS
+%\newcommand{\socksnonmarginbegin}{
+%    \begin{center}
+%    \begin{tabular}{lcccccccc} %\hline
+%    }
+%\newcommand{\socksmarginbegin}{
+%    \begin{center}
+%    \begin{tabular}{lcccc} %\hline
+%    }
+%
+%
+%\newcommand{\socksend}{
+%    \end{tabular}
+%    \end{center}
+%    }
+%
+%\newcommand{\sockssupply}{
+%    Price per pair &.50&1.00&1.50&2.00&2.50&3.00&3.50&4.00 \\ %\hline
+%    Firm A would sell&0&1&1&2&2&3&3&4 %\hline
+%    }
+%
+%\newcommand{\socksmarginalcost}{
+%    Quantity (in pairs) &1&2&3&4 \\ %\hline
+%    Firm A's marginal cost &1.00&2.00&3.00&4.00 %\hline
+%    }
+%
+%\newcommand{\socksdemand}{
+%    Price per pair &6.50&6.00&5.50&5.00&4.50&4.00&3.50&3.00 \\ %\hline
+%    Person A would buy&0&1&1&2&2&3&3&4 %\hline
+%    }
+%
+%\newcommand{\socksmarginalvalue}{
+%    Quantity (in pairs) &1&2&3&4 \\ %\hline
+%    Person A's marginal benefit &6.00&5.00&4.00&3.00 %\hline
+%    }
+%%END SOCKS SCHEDULE COMPONENTS
+%
+%
+%%BEGIN ORANGE MARKET COMPONENTS
+%\newcommand{\orangebegin}{
+%\begin{figure}[h]
+%\begin{center}
+%\vspace{1cm}
+%}
+%
+%\newcommand{\orangegrid}{
+%\begin{pspicture}(0,0)(16,8)
+%\showgrid
+%\rput[r](-.6,1){\$0.20}
+%\rput[r](-.6,2){\$0.40}
+%\rput[r](-.6,3){\$0.60}
+%\rput[r](-.6,4){\$0.80}
+%\rput[r](-.6,5){\$1.00}
+%\rput[r](-.6,6){\$1.20}
+%\rput[r](-.6,7){\$1.40}
+%\rput[r](-.6,8){\$1.60}
+%%\rput[r](-.6,9){\$1.80}
+%%\rput[r](-.6,10){\$2.00}
+%\rput(-.6,9){P (\$/pound)}
+%\rput[r](16,-2){Q (millions of pounds per day)}
+%}
+%
+%\newcommand{\orangedemand}{
+%\psline(0,8)(16,0)
+%}
+
+%\newcommand{\orangesupply}{
+%\psline(0,2)(16,6)
+%}
+%
+%\newcommand{\orangeend}{
+%\psaxes[labels=x, showorigin=false](16,8)
+%\end{pspicture}
+%\vspace{.3in}
+%\end{center}
+%%\caption{A Hypothetical Market for Oranges}
+%%\label{Blah}
+%\end{figure}
+%}
+%% END ORANGE MARKET COMPONENTS
+%
+
+

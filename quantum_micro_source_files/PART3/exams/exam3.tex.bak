@@ -1,0 +1,1257 @@
+\documentclass{article}
+
+\newcommand{\mybigskip}{\vspace{1in}}
+\newcommand{\myitem}{\item (5 points)\ }
+
+\usepackage{pstricks, pst-node, pst-tree, pstcol, pst-plot}
+%\usepackage[dvips]{hyperref}
+\usepackage{version} %Allows version control; also \begin{comment} and \end{comment}
+\includeversion{EXAM}\excludeversion{KEY}
+%\excludeversion{EXAM}\includeversion{KEY}
+
+
+%\usepackage{multirow} % Allows multiple rows in tables
+%\usepackage{rotating} % Allows rotated material
+\psset{unit=.5cm}
+%\psset{levelsep=5cm, labelsep=2pt, tnpos=a, radius=2pt}
+\newpsobject{showgrid}{psgrid}{subgriddiv=1, gridwidth=.5pt, griddots=4, gridlabelcolor=white, gridlabels=0pt}
+
+\pagestyle{empty} %This gets rid of page numbers
+%\setlength{\topmargin}{-.5in}
+%\setlength{\textheight}{8.39in}
+%\setlength{\oddsidemargin}{-.3in}
+%\setlength{\textwidth}{6.42in}
+
+\begin{document}
+
+\begin{EXAM}
+
+
+%\vspace*{-3cm}
+
+%\begin{flushright}
+%Name: \hspace*{1in}
+
+%\medskip
+%Student Number: \hspace*{1in}
+%\end{flushright}
+
+%\bigskip
+
+\end{EXAM}
+
+\begin{center}
+\Large Exam \#3 (100 Points Total) \begin{KEY}\textbf{Answer Key}\end{KEY}
+\end{center}
+\normalsize
+\bigskip
+
+\begin{EXAM}
+
+\begin{itemize}
+
+\item Take the exam during an \emph{uninterrupted period of no more than 3 hours}. (It should not take that long.) The space provided below each question should be sufficient for your answer, but you can use additional paper if needed. \emph{You are encouraged to show your work for partial credit.} It is very difficult to give partial credit if the only thing on your page is ``$x=3$".
+
+\item \emph{Other than this cheat sheet, all you are allowed to use for help are the basic functions on a calculator.} Partial translation: no books, no notes, no websites, no talking to other people, and no advanced calculator features like programmable functions or present value formulas.  
+
+\item People who have taken the exam can talk to each other all they want, and people who have not taken the exam can talk to each other all they want, but communication between the two groups about class should be limited to three phrases: ``Yes", ``No", and ``Have you taken the exam?" 
+
+\item For questions or other emergencies, call me at x5124 or 206-351-5719.
+
+\item A \textbf{Pareto efficient} (or \textbf{Pareto optimal}) allocation or outcome is one in which it is not possible find a different allocation or outcome in which nobody is worse off and at least one person is better off. An allocation or outcome B is a \textbf{Pareto improvement over A} if nobody is worse off with B than with A and at least one person is better off.
+
+\item \textbf{Total revenue} is price times quantity: $TR = pq$.
+
+\item The \textbf{price elasticity of demand at point A} measures the percentage change in quantity demanded (relative to the quantity demanded at point A) resulting from a 1\% increase in the price (relative to the price at point A). The formula is
+
+\[
+\varepsilon (A)=\frac{\mbox{\% change in } q}{\mbox{\% change in } p} = \displaystyle\frac{\ \ \ \displaystyle\frac{\Delta q}{q_A}\ \ \ }{\displaystyle\frac{\Delta p}{p_A}} =
+\frac{\Delta q}{\Delta p}\cdot\frac{p_A}{q_A} =
+\frac{q_B-q_A}{p_B-p_A}\cdot\frac{p_A}{q_A}.
+\]
+
+
+\begin{description}
+
+\item [In English] If, at point A, a small change in price causes the quantity demanded to increase by a lot, demand at point A is elastic; if quantity demanded only changes by a little then demand at point A is inelastic; and if quantity demanded changes by a proportional amount then demand at point A has unit elasticity.
+
+\item [In math] If, at point A, the price elasticity of demand is less than $-1$ (e.g., $-2$), then demand at point A is elastic; if the elasticity is greater than $-1$ (e.g., $-\frac{1}{2}$), then demand at point A is inelastic; if the elasticity is equal to $-1$ then demand at point A has unit elasticity.
+
+\end{description}
+
+
+\end{itemize}
+
+\clearpage
+
+\ \clearpage
+
+\vspace*{-3cm}
+\begin{flushright}
+(5 points) \ \ Name: \hspace*{1in}
+\bigskip
+%Student Number: \hspace*{1in}
+\end{flushright}
+
+\end{EXAM} 
+
+
+
+
+
+\begin{enumerate}
+
+
+%\item (5 points) Draw a supply and demand graph. Appropriately label the axes ($p$ for price, $q$ for quantity), the supply curve, and the demand curve.
+%\mybigskip
+
+
+
+
+
+
+
+
+
+
+% This problem is similar to those in qa3basics
+\item \begin{EXAM} For each item, indicate the likely impact on the supply and demand for apples. Then indicate the effect on the equilibrium price and quantity. If you use a graph, all you need to have is an arrow indicating which curve(s) shift which way. \end{EXAM} 
+
+    \begin{enumerate}
+    
+    \item \begin{EXAM} (5 points) News reports suggest that an apple a day really does keep the doctor away. \mybigskip \end{EXAM} 
+
+\begin{KEY} Demand increases. Equilibrium price up, equilibrium quantity up.\end{KEY} 
+
+
+    \item \begin{EXAM} (5 points) Worms destroy a large part of the apple crop. \mybigskip \end{EXAM} 
+
+\begin{KEY} Supply decreases. Equilibrium price up, equilibrium quantity down.\end{KEY} 
+
+
+    \item \begin{EXAM} (5 points) New farming methods make apple orchards more productive. \mybigskip \end{EXAM} 
+
+\begin{KEY} Supply increases. Equilibrium price down, equilibrium quantity up.\end{KEY} 
+
+
+    \item \begin{EXAM} (5 points) The price of oranges falls. (Assume that apples and oranges are \textbf{substitutes}, like tea and coffee or Coke and Pepsi.) \mybigskip \end{EXAM} 
+
+\begin{KEY} Demand decreases. Equilibrium price down, equilibrium quantity down.\end{KEY} 
+
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% This problem is in qa3basics
+\item \begin{EXAM} (5 points) Explain, as if to a non-economist, why the intersection of the market supply curve and the market demand curve identifies the market equilibrium.
+
+\clearpage \end{EXAM}
+
+\begin{KEY} The amount that buyers want to buy at the market equilibrium price is equal to the amount that sellers want to sell at that price. At a lower price, buyers want to buy more units than sellers want to sell; this creates incentives that push the price up towards equilibrium. At a higher price, sellers want to sell more units than buyers want to buy; this creates incentives that push the price down towards equilibrium. \end{KEY} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newcommand{\orangebegin}{
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+}
+
+\newcommand{\orangegrid}{
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+}
+
+\newcommand{\orangedemand}{
+%\psline(0,8)(16,0)
+\psline(3,8)(16,1.5)
+}
+
+\newcommand{\orangedemandold}{
+\psline(0,8)(16,0)
+%\psline(3,8)(16,1.5)
+}
+
+
+\newcommand{\orangesupply}{
+%\psline(0,2)(16,6)
+\psline(4,0)(12,8)
+}
+
+\newcommand{\orangesupplyflat}{
+%\psline(0,2)(16,6)
+\psline(0,4)(16,4)
+}
+
+\newcommand{\orangeend}{
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+\end{figure}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+%This problem is in qa3elasticity
+\item \begin{EXAM} Below is a hypothetical demand curve for oranges.
+
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+\psline(0,8)(16,0)
+%\psline(3,8)(16,1.5)
+\pscircle[fillstyle=solid, fillcolor=black](8,4){.1}
+\rput(8.5,4.5){Y}
+\pscircle[fillstyle=solid, fillcolor=black](14,1){.1}
+\rput(14.5,1.5){Z}
+\pscircle[fillstyle=solid, fillcolor=black](4,6){.1}
+\rput(4.5,6.5){X}
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+\end{figure}
+\end{EXAM} 
+
+\begin{enumerate}
+
+
+\item \begin{EXAM} (5 points) During normal years, the supply curve is such that point Y is the equilibrium. Of the other two points, one is the equilibrium during ``bad" years (when frost damages the orange crop), and one is the equilibrium during ``good" years (when the orange crop thrives). Which one is point X? Circle one: X = bad\ \ good \end{EXAM} 
+
+\begin{KEY} During bad years the supply decreases (i.e., shifts to the left), so point X is the equilibrium during bad years. \end{KEY} 
+
+
+\item \begin{EXAM} (5 points) What is the total revenue at point X? At point Y? At point Z? (Use
+correct units!)  \vspace{2.5in} \end{EXAM} 
+
+\begin{KEY} Total revenue is $p\cdot q$. At point X this is $4\cdot 1.20 = \$4.8$ million per day. At point Y this is $8\cdot .80 = \$6.4$ million per day. At point Z this is $14\cdot .20 = \$2.8$ million per day. \end{KEY} 
+
+
+\item \begin{EXAM} (5 points) The orange growers' profit is total revenue minus total costs. If total costs are the same in all years, do the growers have higher profits in ``bad" years or ``good" years? (Circle one.) \end{EXAM} 
+
+\begin{KEY} Profits are higher during ``bad" years! During ``good" years there is a Prisoner's Dilemma--type situation for orange growers: they'd make more money if they reduced their harvest (thereby driving up the equilibrium price), but the individual incentives are such that they all produce a lot.\end{KEY} 
+    
+\end{enumerate}
+
+
+\begin{EXAM} \clearpage \end{EXAM}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%ORANGES AND TAXES
+\item \begin{EXAM} Below is a hypothetical market for oranges. \end{EXAM}
+
+\begin{EXAM}
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+%%\psline(0,8)(16,0)
+%\psline(3,8)(16,1.5)
+%%\psline(0,2)(16,6)
+%\psline(4,0)(12,8)
+\psline(14,0)(6,8)
+\psline(0,2)(15,7)
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+\end{figure}
+\end{EXAM}
+
+
+\begin{EXAM} \textbf{Suppose that the government decides to impose a per-unit tax of \$.80 on the buyers of oranges.}  \end{EXAM}
+
+
+    \begin{enumerate}
+
+    \item \begin{EXAM} (5 points) Show the impact of this tax on the supply and demand curves above. \end{EXAM}
+
+\begin{KEY} See figure.
+
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+%%\psline(0,8)(16,0)
+%\psline(3,8)(16,1.5)
+%%\psline(0,2)(16,6)
+%\psline(4,0)(12,8)
+%\psline(4,0)(8,8) % This is the answer
+\psline(14,0)(6,8)
+\psline(0,2)(15,7)
+\psline(10,0)(2,8) % This is the answer
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+\end{figure}
+\end{KEY}
+
+
+    \item \begin{EXAM} (5 points) Explain (as if to a non-economist) why the tax shifts the curves the way it does. Your answer here must be quantitative, i.e., must explain not only the \emph{direction} of the curve shift(s) but also the \emph{amount} of the curve shift(s). \vspace{1.5in} \end{EXAM} 
+
+\begin{KEY} At a price of, say, \$.80, buyers actually have to pay \$1.60 after tax, so with a market price of \$.80 and an \$.80 tax they should be willing to buy as much as they were willing to buy at a price of \$1.60 without the tax. Similarly, with a market price of \$.40 and a \$.80 tax they should be willing to buy as much as they were willing to buy at a price of \$1.20 without the tax. %At a price of, say, \$.80, sellers actually get to keep \$.40 after-tax, so with a market price of \$.80 and a 50\% tax they should be willing to supply as much as they were willing to supply at a price of \$.40 without the tax. Similarly, with a market price of \$1.20 and a 50\% tax they should be willing to supply as much as they were willing to supply at a price of \$.60 without the tax. 
+\end{KEY} 
+
+
+    \item \begin{EXAM} (5 points) Calculate the economic incidence of the tax, i.e., the amount of the tax burden borne by the buyers ($T_B$) and the amount borne by the sellers ($T_S$). Then calculate their ratio \ \ $\displaystyle \frac{T_B}{T_S}$. \vspace{1.6in} \end{EXAM} 
+
+\begin{KEY} The new equilibrium price is \$.80 per pound. Since sellers received \$1.00 per pound originally, they are getting \$.20 less than before. Buyers used to pay \$1.00 per pound; now they pay \$.80, but they pay an additional \$.80 in taxes, so they effectively pay \$1.60 per pound. This is \$.60 more than before. 
+
+%The new equilibrium price is \$1.20 per pound. Since buyers paid \$1.00 per pound originally, they are paying \$.20 more than before. Sellers used to receive \$1.00 per pound; now they receive \$1.20, but they pay 50\% in taxes, so they effectively receive \$.60 per pound. This is \$.40 less than before. 
+
+The ratio of the tax burdens is $\displaystyle \frac{T_B}{T_S} = \frac{.6}{.2}=3.$
+
+%The ratio of the tax burdens is $\displaystyle \frac{T_B}{T_S} = \frac{.2}{.4}=\frac{1}{2}.$
+\end{KEY} 
+
+
+    \item \begin{EXAM} (5 points) Calculate the price elasticity of supply, $\varepsilon_S$, at the original
+(pre-tax) equilibrium. Then calculate the price elasticity of demand, $\varepsilon_D$, at the original (pre-tax) equilibrium. Then calculate their ratio, $\displaystyle \frac{\varepsilon_S}{\varepsilon_D}$. How does this ratio compare to the ratio of the tax burdens? \vspace{3.6in}  \end{EXAM} 
+
+\begin{KEY} 
+
+The price elasticity of supply is $\frac{5}{3}\approx 1.66$; the price elasticity of demand is $\frac{-5}{9}\approx -.556$. Their ratio is $-3$, which is of the same magnitude as the ratio of the tax burdens! 
+
+%The price elasticity of supply is about $.556$; the price elasticity of demand is about $-1.111$. Their ratio is $-\frac{1}{2}$, which is of the same magnitude as the ratio of the tax burdens! 
+
+\end{KEY} 
+
+
+%\myitem At the new equilibrium, how many oranges will people eat? (Note: Please use correct units!)
+
+%\myitem Calculate the amount of the tax burden borne by the buyers
+%($T_B$) and by the sellers ($T_S$), and the ratio \ \
+%$\displaystyle \frac{T_B}{T_S}$.
+
+%\myitem How much do the buyers pay for each pound of oranges?
+
+%\myitem How much after-tax revenue do the sellers receive for each pound of oranges?
+
+%\myitem Compare your answers above with the original equilibrium to determine the ultimate incidence of the tax: How is the tax burden distributed between buyers and sellers?
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\item \begin{EXAM} (5 points) Show the result if the government had instead imposed an \$.80 per-unit tax on the sellers. 
+
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+\psline(14,0)(6,8)
+\psline(0,2)(15,7)
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+\end{figure}
+\end{EXAM}
+
+
+\begin{KEY} \ 
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+\psline(14,0)(5,9)
+\psline(0,2)(15,7)
+\psline(0,6)(9,9) %This is the answer
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+\end{figure}
+\end{KEY}
+
+
+\clearpage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\item \begin{EXAM} (5 points) Show the result if the government had instead imposed a sales tax of 50\% on the sellers.
+
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+\psline(14,0)(6,8)
+\psline(0,2)(15,7)
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+\end{figure}
+
+\vspace{3cm}
+\end{EXAM}
+
+
+\begin{KEY} \ 
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+\psline(14,0)(5,9)
+\psline(0,2)(15,7)
+\psline(0,4)(9,10) % This is the answer
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+\end{figure}
+\end{KEY}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\item\begin{EXAM} (5 points) Show the result if the government had instead imposed a sales tax of 50\% on the buyers.
+
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+\psline(14,0)(6,8)
+\psline(0,2)(15,7)
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+\end{figure}
+
+\clearpage
+\end{EXAM}
+
+
+\begin{KEY}  \ 
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+\psline(14,0)(6,8)
+\psline(0,2)(15,7)
+\psline(14,0)(2,8) % This is the answer
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+\end{figure}
+\end{KEY}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% This problem is in qa3details
+\item \begin{EXAM} (5 points) Consider a world with 1,000 buyers: 500 of them have an individual demand curve of $q=20-2p$, and 500 of them have an individual demand curve of $q=10-5p$. There are also 500 sellers, each with an individual supply curve of $q=6p-10$. Determine the market demand curve and the market supply curve. \emph{Circle your answers!} \vspace{4cm} \end{EXAM}
+
+\begin{KEY} The market demand curve is \[ q=500(20-2p)+500(10-5p)=15000-3500p.\] The market supply curve is \[q=500(6p-10)=3000p-5000.\] \end{KEY}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% This problem is similar to one in qa3taxes
+\item \begin{EXAM} Consider a world with market demand curve $q=50-6p$ and market supply curve $q=20p-28$. \end{EXAM} 
+    \begin{enumerate}
+
+    \item \begin{EXAM}(5 points) What is the market equilibrium price and quantity? \emph{Circle your answer!} \vspace{4cm} \end{EXAM}
+
+\begin{KEY} Solving simultaneously we get $50-6p=20p-28$, which yields $p=3$. Plugging this into either the market demand curve or the market supply curve yields $q=32$.  \end{KEY}
+
+
+    \item \begin{EXAM}(5 points) How would the equations for the supply and demand curves change if the government imposed a tax of \$.50 per unit on the buyers? (Note: You do \emph{not} need to find the new equilibrium; just write down the equations.) \vspace{3cm} \end{EXAM}
+
+\begin{KEY} The supply curve is unchanged. The demand curve becomes \[q=50-6(p+.5).\] \end{KEY}
+
+
+    \item \begin{EXAM}(5 points) How would the equations for the supply and demand curves change if the government imposed a sales tax of 20\% on the sellers? (Note: You do \emph{not} need to find the new equilibrium; just write down the equations.) \vspace{2cm} \end{EXAM}
+
+\begin{KEY} The demand curve is unchanged. The supply curve becomes \[q=20(.8p)-28.\] \end{KEY}
+
+    \end{enumerate}
+
+\end{enumerate}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%ORANGES AND TAXES
+\item Below is a hypothetical market for oranges.
+
+\begin{EXAM}
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+%\psline(0,8)(16,0)
+\psline(3,8)(16,1.5)
+%\psline(0,2)(16,6)
+\psline(4,0)(12,8)
+%\psline(4,0)(8,8) % This is the answer
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+\end{figure}
+\end{EXAM}
+
+\begin{KEY}
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+%\psline(0,8)(16,0)
+\psline(3,8)(16,1.5)
+%\psline(0,2)(16,6)
+\psline(4,0)(12,8)
+\psline(4,0)(8,8) % This is the answer
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+\end{figure}
+\end{KEY}
+
+
+\begin{comment}
+\myitem What is the equilibrium price and quantity? (Use correct
+units!)
+
+\begin{EXAM} \vspace{1in} \end{EXAM} 
+
+\begin{KEY} The equilibrium price is \$1.00 per pound; the equilibrium quantity is 9 million pounds per day. \end{KEY} 
+\end{comment}
+
+
+
+
+
+
+\begin{comment} % BEGINNING OF COMMENT!!!
+
+\textbf{Now suppose that the government decides to impose an excise tax of \$.30 per pound on the sellers of oranges. }
+
+\myitem Show the impact of this tax on the supply and demand curves.
+
+\myitem At the new equilibrium, how many oranges will people eat? (Note: Please use correct units!)
+
+\myitem How much do the buyers pay for each pound of oranges?
+
+\myitem How much after-tax revenue do the sellers receive for each pound of oranges?
+
+\myitem Compare your answers above with the original equilibrium to determine the ultimate incidence of the tax: How is the tax burden distributed between buyers and sellers?
+
+
+\textbf{Suppose that the government decides to impose a per-unit tax of \$.60 per pound on the buyers of oranges. }
+
+
+\myitem Show the impact of this tax on the supply and demand curves above.
+
+
+%\myitem At the new equilibrium, how many oranges will people eat? (Note: Please use correct units!)
+
+%\myitem How much do the buyers pay for each pound of oranges? (Don't forget the tax!)
+
+%\myitem How much revenue do the sellers receive for each pound of oranges?
+
+
+%\myitem Compare your answers here (when the tax is on the buyers) and above (when the tax is on the sellers). What does this suggest about the difference between a tax on buyers and a tax on sellers?
+
+\myitem Explain (as if to a non-economist) why the tax shifts the curves the way it does.
+
+\vspace{1.5in}
+
+\myitem Calculate the economic incidence of the tax, i.e., the amount of the tax burden borne by the buyers ($T_B$) and the amount borne by the sellers ($T_S$). Then calculate their ratio \ \ $\displaystyle \frac{T_B}{T_S}$.
+
+\label{taxratio}
+
+%\myitem Calculate the slope of the supply curve and the slope of the demand curve. (Recall that slope is rise over run, e.g., $\displaystyle S_D = \frac{\Delta p}{\Delta q}$.) Calculate the ratio of the slopes $\left( \displaystyle \frac{S_D}{S_S} \right)$and compare to your answer from the previous problem.
+
+\vspace{1in}
+%\myitem Calculate the total tax revenue for the government from this tax. (Use correct units!)
+
+
+\myitem Calculate the price elasticity of supply at the original (pre-tax) equilibrium.
+
+\label{elasticsupply}
+
+
+\vspace{1in}
+
+\myitem In Problem~(\ref{elasticY}) you calculated the price elasticity of demand at the original (pre-tax) equilibrium. Using your answer there and your answer to question~(\ref{elasticsupply}), calculate the ratio of the elasticities $\left( \displaystyle \frac{\epsilon_S}{\epsilon_D} \right)$ and compare the results with the tax ratio you calculated in question~(\ref{taxratio}).
+
+\vspace{.9in}
+
+\myitem How would these results change if the tax were placed on the sellers instead of on the buyers?
+
+\vspace{1in}
+%\clearpage
+
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+%\psline(0,8)(16,0)
+\psline(3,8)(16,1.5)
+%\psline(0,2)(16,6)
+\psline(4,0)(12,8)
+
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+\caption{An extra graph in case you need it for anything\ldots}
+%\label{Blah}
+\end{figure}
+
+\enlargethispage{2\baselineskip}
+
+ \clearpage
+
+\end{comment} % END OF COMMENT!!!
+
+
+
+
+
+
+
+
+
+
+\textbf{Suppose that the government decides to impose a sales tax of 50\% on the sellers of oranges.} (With a sales tax, if sellers sell a pound of oranges for \$1, they get to keep \$.50 and have to pay the government \$.50; if they sell a pound of oranges for \$2, they get to keep \$1 and have to pay the government \$1.)
+
+
+\begin{enumerate}
+
+\myitem Show the impact of this tax on the supply and demand curves above.
+
+\myitem Explain (as if to a non-economist) why the tax shifts the curves the way it does. Your answer here must be quantitative, i.e., must explain not only the \emph{direction} of the curve shift(s) but also the \emph{amount} of the curve shift(s).
+
+\begin{EXAM} \vspace{1.5in} \end{EXAM} 
+
+\begin{KEY} At a price of, say, \$.80, sellers actually get to keep \$.40 after-tax, so with a market price of \$.80 and a 50\% tax they should be willing to supply as much as they were willing to supply at a price of \$.40 without the tax. Similarly, with a market price of \$1.20 and a 50\% tax they should be willing to supply as much as they were willing to supply at a price of \$.60 without the tax. \end{KEY} 
+
+\myitem Calculate the economic incidence of the tax, i.e., the amount of the tax burden borne by the buyers ($T_B$) and the amount borne by the sellers ($T_S$). Then calculate their ratio \ \ $\displaystyle \frac{T_B}{T_S}$.
+
+\begin{EXAM} \vspace{1.6in} \end{EXAM} 
+
+\begin{KEY} The new equilibrium price is \$1.20 per pound. Since buyers paid \$1.00 per pound originally, they are paying \$.20 more than before. Sellers used to receive \$1.00 per pound; now they receive \$1.20, but they pay 50\% in taxes, so they effectively receive \$.60 per pound. This is \$.40 less than before. 
+
+The ratio of the tax burdens is $\displaystyle \frac{T_B}{T_S} = \frac{.2}{.4}=\frac{1}{2}.$
+\end{KEY} 
+
+
+\myitem Calculate the price elasticity of supply, $\varepsilon_S$, at the original
+(pre-tax) equilibrium. Then calculate the price elasticity of demand, $\varepsilon_D$, at the original (pre-tax) equilibrium. Then calculate their ratio, $\displaystyle \frac{\varepsilon_S}{\varepsilon_D}$. How does this ratio compare to the ratio of the tax burdens?
+
+\begin{EXAM} \vspace{3.6in}  \end{EXAM} 
+
+\begin{KEY} The price elasticity of supply is about $.556$; the price elasticity of demand is about $-1.111$. Their ratio is $-\frac{1}{2}$, which is of the same magnitude as the ratio of the tax burdens! \end{KEY} 
+
+
+%\myitem At the new equilibrium, how many oranges will people eat? (Note: Please use correct units!)
+
+%\myitem Calculate the amount of the tax burden borne by the buyers
+%($T_B$) and by the sellers ($T_S$), and the ratio \ \
+%$\displaystyle \frac{T_B}{T_S}$.
+
+%\myitem How much do the buyers pay for each pound of oranges?
+
+%\myitem How much after-tax revenue do the sellers receive for each pound of oranges?
+
+%\myitem Compare your answers above with the original equilibrium to determine the ultimate incidence of the tax: How is the tax burden distributed between buyers and sellers?
+
+\end{enumerate}
+
+
+\begin{EXAM}
+
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+%\psline(0,8)(16,0)
+\psline(3,8)(16,1.5)
+%\psline(0,2)(16,6)
+\psline(4,0)(12,8)
+
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+\caption{An extra graph in case you need it for anything\ldots}
+%\label{Blah}
+\end{figure}
+
+\clearpage
+
+\begin{comment}
+\vspace{1in}
+
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+%\psline(0,8)(16,0)
+\psline(3,8)(16,1.5)
+%\psline(0,2)(16,6)
+\psline(4,0)(12,8)
+
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+\caption{Another extra graph in case you need it for anything\ldots}
+%\label{Blah}
+\end{figure}
+\end{comment}
+
+\end{EXAM}
+
+
+
+
+
+
+\item Below is a hypothetical market for oranges.
+
+\begin{EXAM}
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+%\psline(0,8)(16,0)
+\psline(3,8)(16,1.5)
+%\psline(0,7.5)(15,0) %This is the answer!
+%\psline(0,2)(16,6)
+\psline(0,4)(16,4)
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+\end{figure}
+\end{EXAM}
+
+\begin{KEY}
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+%\psline(0,8)(16,0)
+\psline(3,8)(16,1.5)
+\psline(0,7.5)(15,0) %This is the answer!
+%\psline(0,2)(16,6)
+\psline(0,4)(16,4)
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+\end{figure}
+\end{KEY}
+
+\textbf{Suppose that the government decides to impose a per-unit tax of \$.40 per pound on the buyers of oranges. }
+
+\begin{enumerate}
+
+
+\myitem Show the impact of this tax on the supply and demand curves above.
+
+
+\myitem Explain (as if to a non-economist) why the tax shifts the curves the way it does. Your answer here must be quantitative, i.e., must explain not only the \emph{direction} of the curve shift(s) but also the \emph{amount} of the curve shift(s).
+
+\begin{EXAM} \vspace{1.5in} \end{EXAM} 
+
+\begin{KEY} At a market price of, say, \$1.00, buyers have to pay an extra \$.40 in tax, so they are effectively paying \$1.40 per pound. So they should be willing to buy at a market price of \$1.00 with the tax as much as they were willing to buy at a market price of \$1.40 without the tax. 
+
+Another approach: the marginal benefit curve shifts down by \$.40 because the marginal benefit of each unit is reduced by that amount by the tax. \end{KEY} 
+
+\begin{comment}
+\myitem Calculate the amount of tax revenue the government collects from this tax. (Use correct units!)
+
+\begin{EXAM} \vspace{1.5in} \end{EXAM} 
+
+\begin{KEY} The new equilibrium is at a market price of \$.80 and a quantity of 7 million pounds per day. With a \$.40 per pound tax, the government collects revenues of $.40 \cdot 7 = \$2.8$ million per day. \end{KEY} 
+\end{comment}
+
+\myitem Calculate the economic incidence of the tax, i.e., the amount of the tax burden borne by the buyers ($T_B$) and the amount borne by the sellers ($T_S$).
+
+\begin{EXAM} \vspace{1.5in} \end{EXAM} 
+
+\begin{KEY} The original equilibrium price, \$.80 per pound, is the same as the original equilibrium price. So the sellers receive the same amount per pound both before and after the tax; hence, they bear none of the economic burden of the tax. The buyers must therefore pay all of it: they paid \$.80 per pound before the tax, and now pay \$.80 per pound to the sellers plus \$.40 per pound to the government, for a total of \$1.20 per pound. So the buyers bear the entire \$.40 tax burden. \end{KEY} 
+
+%\myitem Calculate the price elasticity of supply, $\varepsilon_S$, at the original (pre-tax) equilibrium. Then calculate the price elasticity of demand, $\varepsilon_D$, at the original (pre-tax) equilibrium. (Remember that any non-zero number times 0 equals 0 ($x\cdot 0 = 0$), that any positive number divided by 0 equals positive infinity ($\displaystyle \frac{x}{0}=\infty$ for $x>0$), and that any negative number divided by 0 equals negative infinity ($\displaystyle \frac{x}{0}=-\infty$ for $x<0$).
+
+%\vspace{1.5in}
+
+\myitem How would the economic incidence of the tax change if the \$.40 per-unit tax was placed on the sellers instead of on the buyers? Use the graph below to analyze this situation, and briefly explain your answer.
+
+\begin{EXAM} \vspace{2in} \end{EXAM} 
+
+\begin{KEY} The economic incidence of the tax would not change; this is the tax equivalence result. Ultimately, the incidence of the tax is determined by the relative elasticities of the supply and demand curves; the party that bears the brunt of the economic incidence of the tax is that party that is least able to avoid the tax, i.e., the party with the most inelastic curve. Since the supply curve in this problem is perfectly elastic, the buyer will bear the entire economic tax burden, regardless of whether the legal tax burden falls on the buyers or the sellers. \end{KEY} 
+
+
+\begin{EXAM}
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+%\psline(0,8)(16,0)
+\psline(3,8)(16,1.5)
+%\psline(0,2)(16,6)
+\psline(0,4)(16,4)
+%\psline(0,6)(16,6) % This is the answer!
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+%\caption{An extra graph in case you need it for anything\ldots}
+%\label{Blah}
+\end{figure}
+\end{EXAM}
+
+\begin{KEY}
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+%\psline(0,8)(16,0)
+\psline(3,8)(16,1.5)
+%\psline(0,2)(16,6)
+\psline(0,4)(16,4)
+\psline(0,6)(16,6) % This is the answer!
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+%\caption{An extra graph in case you need it for anything\ldots}
+%\label{Blah}
+\end{figure}
+\end{KEY}
+
+\end{enumerate}
+
+
+\begin{comment} % BEGINNING OF COMMENT!!!
+
+\textbf{Finally: Instead of a sales tax on sellers, suppose that the government decides to impose a sales tax of 100\% on the buyers of oranges. (If buyers buy a pound of oranges for \$1, they have to pay the seller \$1 and the government \$1; if they buy a pound of oranges for \$2, they have to pay the seller \$2 and the government \$2.)}
+
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+%\psline(0,8)(16,0)
+\psline(3,8)(16,1.5)
+%\psline(0,2)(16,6)
+\psline(4,0)(12,8)
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+\end{figure}
+
+
+\myitem Show the impact of this tax on the supply and demand curves. (The original supply and demand curves are pictured below.)
+
+
+
+
+\myitem At the new equilibrium, how many oranges will people eat? (Note: Please use correct units!)
+
+\myitem Compare your results here (with a 100\% sales tax on the buyers) and with your previous results from a 50\% sales tax on the sellers. Is there any difference? 
+
+\myitem Calculate the ratio \ \ $\displaystyle \frac{\mbox{Amount of tax paid by buyers}}{\mbox{Amount paid by sellers}}$ \ \  and compare with the previous ratios you calculated.
+
+\end{comment} % END OF COMMENT!!!
+
+\bigskip
+
+
+\end{enumerate}
+
+
+\end{document}

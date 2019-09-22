@@ -1,0 +1,767 @@
+\documentclass[twoside]{article}
+\usepackage{pstricks, pst-node, pst-tree, pst-plot, pst-text}
+
+%\usepackage[dvips, pdfnewwindow=true]{hyperref}
+
+\usepackage{version} %Allows version control; also \begin{comment} and \end{comment}
+\includeversion{EXAM}\excludeversion{KEY}
+%\includeversion{KEY}\excludeversion{EXAM}
+
+\newcommand{\mybigskip}{\vspace{1in}}
+
+\begin{document}
+
+\pagestyle{empty}
+\thispagestyle{empty}
+
+\vspace*{-3cm}
+\enlargethispage{4\baselineskip}
+\begin{center}
+\Large Exam \#1 \begin{EXAM}(75 points)\end{EXAM} \begin{KEY} Answer Key \end{KEY}
+\end{center}
+\normalsize
+\bigskip
+
+\begin{EXAM}
+
+\begin{itemize}
+\begin{comment}
+\item Other than this cheat sheet (which you should tear off), all you are allowed to use for help are the basic
+functions on a calculator.
+
+\item The space provided below each question should be sufficient for your answer, but you can use additional paper if
+needed.
+\end{comment}
+
+\item \emph{Show your work for partial credit.} It is very difficult to give partial credit if the only thing on your
+page is ``$x=3$".
+
+
+\item If possible, take the exam during an \emph{uninterrupted period of no more than 4 hours}. (It should not take anywhere near that long.) In any case, do not spend more than 4 hours on the exam.
+
+\item \emph{Other than this cheat sheet, all you are allowed to use for help are the basic functions on a calculator.}
+Partial translation: no books, no notes, no websites, no talking to other people, and no advanced calculator features
+like programmable functions or present value formulas.
+
+\item People who have taken the exam can talk to each other all they want, and people who have not taken the exam can
+talk to each other all they want, but communication between the two groups about class should be limited to three
+phrases: ``Yes", ``No", and ``Have you taken the exam?"
+
+
+\item \textbf{Expected value} is given by summing likelihood times value over all possible outcomes:
+\[
+\mbox{Expected Value}\ \ \  = \ \ \ \sum_{\mbox{Outcomes \emph{i}}} \mbox{Probability(\emph{i})} \cdot
+\mbox{Value(\emph{i})}.
+\]
+
+
+\item A \textbf{fair bet} is a bet with an expected value of zero.
+
+\item The \textbf{future value of a lump sum payment} of $\$x$ invested for $n$ years at interest rate $s$ is
+$\displaystyle \mbox{FV} = x(1+s)^{n}$. The \textbf{present value of a lump sum payment} of $\$x$ after $n$ years at
+interest rate $s$ is $\displaystyle \mbox{PV} = \frac{x}{(1+s)^{n}}.$ (Note that this formula also works for values of
+$n$ that are negative or zero.)
+
+\item The present value of an \textbf{annuity} paying $\$x$ at the end of each year for $n$ year at interest rate $s$ is
+\[
+\mbox{PV}=x\left[ \frac{1 - \displaystyle\frac{1}{(1+s)^n}}{s}\right].
+\]
+The present value of the related \textbf{perpetuity} (with annual payments forever) is
+\[
+\mbox{PV}=\frac{x}{s}.
+\]
+
+\item The \textbf{inflation rate}, $i$, is the rate at which prices rise. The \textbf{nominal interest rate}, $n$, is the
+interest rate in terms of dollars. The \textbf{real interest rate}, $r$, is the interest rate in terms of purchasing
+power. These are related by
+\[
+1+r=\frac{1+n}{1+i}.
+\]
+When the inflation rate is small, we can approximate this as
+\[
+r \approx n-i.
+\]
+
+\end{itemize}
+
+\clearpage
+\end{EXAM}
+
+\begin{EXAM}
+
+\vspace*{-2cm}
+
+
+{\bf (3 points) Name your document lastname.firstname. Save often!}
+
+\medskip
+%Student Number: \hspace*{1in}
+
+\bigskip
+
+\end{EXAM}
+
+
+\begin{enumerate}
+
+
+%This problem is in qa1intro
+\item \begin{EXAM} A pharmaceutical company comes out with a new pill that prevents baldness. When asked why the drug
+costs so much, the company spokesman replies that the company needs to recoup the \$1 billion it spent on research and
+development (R\&D). \end{EXAM}
+
+    \begin{enumerate}
+
+    \item \begin{EXAM} (5 points) Will a profit-maximizing firm pay attention to R\&D costs when determining its pricing? Write Yes or No and explain briefly.     \mybigskip \end{EXAM}
+
+\begin{KEY}
+No: the R\&D expenditure is a sunk cost. If it spent twice as much or half as much to discover the drug, it should still
+charge the same price, because that's the price that maximizes profit.
+\end{KEY}
+
+    \item \begin{EXAM} (5 points)
+        \begin{description}
+        \item [If you said ``Yes" above:] Do you think the company would have charged less for the drug if it had
+        discovered it after spending only \$5 million instead of \$1 billion? Write Yes or No and explain briefly.
+        \item [If you said ``No" above:] Do R\&D costs affect the company's behavior \emph{before} they decide whether or
+        not to invest in the R\&D, \emph{after} they invest in the R\&D, both before and after, or neither?
+         \end{description}
+    \vspace{1in} \end{EXAM}
+
+\begin{KEY}
+The only time that R\&D costs affect the company's behavior is \emph{before} they're sunk: when the company is thinking
+about spending money on R\&D, it has to determine whether or not it's going to be profitable to make that investment
+given their estimate of how much they'll be able to charge for the pill. Once they do the R\&D, however, it's a sunk cost
+and will no longer influence their profit-maximizing decisions.
+\end{KEY}
+
+    \end{enumerate}
+
+
+
+
+
+
+\item \begin{EXAM}(6 points) If the nominal interest rate is 10\% and the rate of inflation is 4\%, calculate the real interest rate, using \emph{both} the rule of thumb and the actual formula. \clearpage\end{EXAM}
+
+\begin{KEY}
+We have $n=0.1$ and $i=0.04$. The rule of thumb is $r\approx n-i =0.1-0.04=0.06$, i.e., a real interest rate of about 6\%. Using the actual formula we solve $1+r=\frac{1+n}{1+i}$ to get $r\approx 5.76\%$.
+\end{KEY}
+
+
+
+
+
+\item \begin{EXAM} Geothermal energy involves ``mining" heat by drilling into the earth's crust. Like many clean energy technologies, it has high up-front costs but promises to pay off over time. The made-up numbers in this problem look at the economics of geothermal power. (For the real numbers, see the 2007 MIT report ``The Future of Geothermal Energy".) \end{EXAM}
+
+    \begin{enumerate}
+
+    \item \begin{EXAM} (5 points) Consider spending \$1000 today to build a geothermal plant that will generate \$100 at the end of each year for the next 30 years. Show that the present value of the costs outweigh the present value of the benefits if the interest rate is 13\%. \vspace{2in} \end{EXAM}
+
+\begin{KEY}
+Plug \$1000, $0.13$, and 30 years into the annuity formula to get a present value of about \$749.57 for benefits. Since the present value of costs is \$1000, the costs are greater than the benefits.
+\end{KEY}
+
+
+    \item \begin{EXAM} (5 points) In order to make geothermal more attractive, does the interest rate need to go up or down? Briefly explain. \vspace{1in}  \end{EXAM}
+
+\begin{KEY}
+The interest rate needs to go down. Lower interest rates will increase the present value of the benefits without increasing the present value of the costs. Alternatively, you can imagine borrowing the \$1000 and having to pay it back plus interest. The lower the interest rate, the easier it will be for you to pay back the money with the revenues generated by the power plant.
+\end{KEY}
+
+    \item \begin{EXAM} (5 points) What will the present value of benefits be if the plant generates \$100 a year \emph{forever} instead of just for 30 years? (The interest rate is still 13\%.)  \vspace{1in} \end{EXAM}
+
+\begin{KEY}
+Plug \$100 and $0.13$ into the present value of a perpetuity formula to get \$769.23.
+\end{KEY}
+
+    \item \begin{EXAM} (5 points) Explain (as if to a non-economist) why the present value of benefits will not be infinite even if the plant can operate forever. Do \emph{not} talk about inflation. \vspace{2in} \end{EXAM}
+
+\begin{KEY}
+Put \$769.23 in the bank at 13\% interest and each year you'll get \$100 in interest. By ``living off the interest", you can generate payments of \$100 at the end of each year forever with an initial investment of only \$769.23.
+\end{KEY}
+
+    \end{enumerate}
+
+
+
+
+\item \begin{EXAM} ``Opportunities for arbitrage are self-eliminating." \end{EXAM}
+
+    \begin{enumerate}
+
+    \item \begin{EXAM} (5 points) Explain this statement in the context of lanes of traffic on a congested freeway.\vspace{1.3in} \end{EXAM}
+
+\begin{KEY}
+Drivers who move out of slow lanes and into fast lanes slow down the fast lanes and speed up the slow lanes, thereby equalizing traffic speed in the different lanes.
+\end{KEY}
+
+    \item \begin{EXAM} (5 points) Many economists believe that a similar logic holds when it comes to making investments for, say, a retirement fund. Describe their investment advice, or otherwise explain. \vspace{1.3in} \end{EXAM}
+
+\begin{KEY}
+These economists argue that ``you can't beat the market" (formally, this is called the efficient market hypothesis) and therefore that you should invest in an index fund that buys a little bit of everything. The idea here is that this sort of passively managed fund will have lower management costs than an actively managed fund that tries to beat the market.
+\end{KEY}
+
+    \end{enumerate}
+
+
+
+\item \begin{EXAM} Choosing a president is undoubtedly a more important decision than (say) choosing what kind of car you're going to buy. But many people spend hours deciding what kind of car to buy and only minutes deciding which presidential candidate to vote for. This problem tries to explain why. \end{EXAM}
+
+    \begin{enumerate}
+
+    \item \begin{EXAM} (5 points) Calculate the expected value of each of the following activities. Activity \#1 pays \$1 million with probability 0.0001 and \$0 with probability 0.9999. Activity \#2 pays \$1000 with probability 1. \vspace{1.4in} \end{EXAM}
+
+\begin{KEY}
+The expected values are $(.0001)(\$1000000)+(.9999)(\$0) = \$100$ and $(1)(\$1000)=\$1000$.
+\end{KEY}
+
+    \item \begin{EXAM} (5 points) Use the analysis above to briefly explain why many people spend hours deciding what kind of car to buy and only minutes deciding which presidential candidate to vote for.
+    \vspace{1in} \end{EXAM}
+
+\begin{KEY}
+There is a very low probability that your vote will influence the outcome of the election, so the expected value from thinking about who to vote for can be very low even though the decision itself is very important.
+\end{KEY}
+
+    \end{enumerate}
+
+
+
+
+\item \begin{EXAM} Imagine that you are a profit-maximizing forester. You currently own trees containing 100 board-feet of timber. \end{EXAM}
+
+    \begin{enumerate}
+
+    \item \begin{EXAM} (5 points) With probability 2\%, a fire will destroy your trees, and you'll have no harvestable timber. With probability 98\%, your trees will grow and in one year you'll have 5\% more board-feet of timber. What is the expected number of board-feet of timber you'll have next year? \vspace{2in} \end{EXAM}
+
+\begin{KEY}
+$(0.1)(0) + (.98)(105) = 102.9.$
+\end{KEY}
+
+
+    \item \begin{EXAM} (5 points) Explain (as if to a non-economist) why the interest rate at the bank matters in deciding to cut the trees down now or to cut them down in year.
+ \vspace{1.3in}  \end{EXAM}
+
+\begin{KEY}
+To maximize your present value you need to compare the return you'll get from ``investing in the trees" with the return you'll get from investing in the bank. Investing in the bank means cutting down the trees and putting the proceeds in the bank. Investing in the trees means letting the trees grow so there will be more lumber next year.
+\end{KEY}
+
+    \item \begin{EXAM} (6 points) Assume that the price of lumber grows at the rate of inflation and that you're a risk-neutral forester. In order for cutting the trees down next year to be a better choice than cutting the trees down now, the \underline{\hspace{1in}} interest rate (nominal or real?) has to be \underline{\hspace{1in}} (higher  or lower?) than \underline{\hspace{1in}} \% (what rate?).  \vspace{1in} \end{EXAM}
+
+\begin{KEY}
+The real interest rate has to be lower than 2.9\%.
+\end{KEY}
+
+    \end{enumerate}
+
+
+
+\end{enumerate}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+\item \begin{EXAM} Consider a choice between receiving a lump sum of \$100 today and receiving an annuity of \$20 every
+year for 10 years. \emph{As always, banks are standing by to accept deposits and/or make loans at the nominal interest
+rate.} \end{EXAM}
+
+    \begin{enumerate}
+
+        \item \begin{EXAM} (5 points) One issue that might affect your choice is the interest rate. Compared to a ``low"
+        interest rate (say, 3\%), does a ``high" interest rate (say, 7\%) favor the lump sum or the annuity? (Although it
+        will almost certainly help to do a numerical example with these numbers, this question is really about a more
+        general issue: do higher higher interest rates favor ``money today" or ``money tomorrow"?)  Support your answer
+        with a brief, intuitive (i.e., non-mathematical) explanation.
+    \vspace{1.5in}\end{EXAM}
+
+\begin{KEY}
+Higher interest rates favor the lump sum payment (``money today") because higher interest rates make the future less
+important: you need to put less money in the bank today in order to get \$20 in 10 years if the interest rate goes up
+from 7\% to 10\%.
+\end{KEY}
+
+    \item \begin{EXAM} (5 points) Another issue that might affect your choice is your preference for ``money today"
+    versus ``money tomorrow"; for example, you might \emph{really} want money today so that you can buy a new computer.
+    Does this mean you should choose the \$100 lump sum even if the annuity has a higher present value? Circle one (Yes\
+    \ \ No) and explain \emph{briefly} why or why not.
+    \vspace{1.5in}\end{EXAM}
+
+\begin{KEY}
+No: you can use the bank to transfer money between time periods. If the annuity has a higher value, you should choose the
+annuity and then borrow against it (or sell it) in order to have access to money today.
+\end{KEY}
+
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+\item \begin{EXAM} You win a \$100 lump sum payment in the lottery! You decide to put your money in a 40-year Certificate
+of Deposit (CD) paying 6\% annually. The inflation rate is 4\% annually.\end{EXAM}
+
+    \begin{enumerate}
+    \item \label{itsitmoney} \begin{EXAM} (5 points) How much money will be in your bank account at the end of 40 years?
+    \mybigskip\end{EXAM}
+
+\begin{KEY}
+Put \$100 and 6\% in the future value formula to get about \$1028.57.
+\end{KEY}
+
+
+    \item \begin{EXAM} (5 points) Assume that after 40 years you'll have 10 times more money (i.e., \$1000). Does this
+    mean you'll be able to buy 10 times more stuff? Circle (Yes\ \ \ No) and \emph{briefly} explain.
+    \mybigskip\end{EXAM}
+
+\begin{KEY}
+No: inflation means that you'll have 10 times more money, but not 10 times more purchasing power.
+\end{KEY}
+
+    \item \label{itsit} \begin{EXAM} (5 points) Assume that ``It's It" ice cream bars cost \$1 today, and that their
+    price increases at the rate of inflation. How much will an It's It bar cost in 40 years? How many will you be able to
+    buy with the money you'll have in 40 years? (Note: If you didn't get an answer to question~\ref{itsitmoney}, use
+    \$1000 for the amount of money you'll have in 40 years.)
+    \mybigskip\mybigskip\end{EXAM}
+
+\begin{KEY}
+Plug \$1 and 4\% into the future value formula to get a price of about \$4.80. With \$1028.57, you'll be able to buy
+about 214 ice cream bars.
+\end{KEY}
+
+    \item \begin{EXAM}(5 points) Calculate the real interest rate using \emph{both} the ``rule of thumb" and the true
+    formula.
+    \mybigskip\mybigskip\end{EXAM}
+
+\begin{KEY}
+The rule of thumb says that the real interest rate is approximately $6-4=2\%$. The true formula gives us
+$r=\frac{1+n}{1+i}-1 = \frac{1.06}{1.04}-1\approx .019$, i.e., about 1.9\%.
+\end{KEY}
+
+    \item \begin{EXAM}(5 points) Assume that the real interest rate is 1.92\%. Use this interest rate to calculate the
+    future value of your \$100 lump sum if you let it gain interest for 40 years. How does your answer compare with your
+    answer from question~\ref{itsit}? \end{EXAM}
+
+\begin{KEY}
+Plug \$100 and 1.92\% into the future value formula to get a future value of about \$214. This equals the answer from
+question~\ref{itsit}.
+\end{KEY}
+
+    \end{enumerate}
+
+
+
+
+
+\end{enumerate}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{comment}
+\item For the sake of simplicity, textbooks often assume that interest is calculated and payments are made once a year.
+In reality, the relevant time frames can be months (as in monthly car payments), days (as with bank interest payments) or
+even ``continuous compounding", a method that uses infinitely small time frames and is often used by credit card
+companies. So:
+    \begin{enumerate}
+    \item If you put \$100 in the bank at a 12\% interest rate that is calculated annually, how much will you have at the
+    end of one year?
+    \item A reasonable \emph{monthly} interest rate can be derived from a \emph{yearly} interest rate simply by dividing
+    by 12, which in this case yields an estimates 1\% monthly interest rate. If you put \$100 in the bank for 12 months
+    at a 1\% interest rate that is calculated monthly, how much will you have at the end of one year? [Hint: Just use the
+    same process you would use for figuring out how much you'd have if you put \$100 in the bank for 12 years at a 1\%
+    interest rate that is calculated yearly.]
+    \item (Challenge!) Hopefully you found that you have more money at the end of the year when you get 1\% interest
+    monthly instead of 12\% interest annually. Can you explain (as if to a non-economist) why that is?
+    \end{enumerate}
+\end{comment}
+
+
+
+
+
+
+
+
+
+\begin{comment}
+\item ``Comparable investments should have comparable expected rates of return."
+    \begin{enumerate}
+    \item (5 points) Explain (as if to a non-economist) why this should be true.
+    \begin{EXAM}\mybigskip\mybigskip\end{EXAM}
+
+\begin{KEY}
+If comparable investments didn't have comparable expected rates of return, who would invest in the asset with the lower
+rate of return? This is like the traffic analogy: different lanes should have comparable expected travel times because
+otherwise individuals would get out of the slow lane and into the fast lane.
+\end{KEY}
+
+    \item (5 points) Explain the importance of the word ``expected" in the above phrase. (Note that ``expected" is used
+    here in the technical sense of ``expected value.") It may help to give an example.
+
+\begin{KEY}
+The importance of the word ``expected" is that \emph{expected} rates of return may differ from \emph{actual} rates of
+return. Microsoft and Enron might reasonably have had comparable expected rates of return in 1998, but as it turned out
+Microsoft is doing okay and Enron is bankrupt. By analogy: just because you think different lanes are going to travel at
+about the same speed doesn't mean that they actually will: there may be an accident up ahead that significantly slows
+down one of the lanes.
+\end{KEY}
+
+    \end{enumerate}
+\end{comment}
+
+\begin{EXAM}\mybigskip\mybigskip\end{EXAM}
+
+
+
+
+
+
+
+\begin{comment}
+\item (5 points) Consider choosing between an annuity paying \$100 at the end of every year for 250 years and a
+perpetuity paying \$100 at the end of every year forever. The \emph{difference between these two options} is, well, it's
+an infinite number of \$100 payments beginning at the end of year 251. The \emph{difference between the \emph{present
+values} of these two options} is, well, at an interest rate of 5\% it's about \$.01 (or, even more precisely, about
+\$.0100857). Your job is to try to reconcile these two (rather different) perspectives. It may help to play around with
+the numbers; it will almost certainly help to remember that the key idea behind present values is figuring out how much
+money you need to put in the bank today to finance a stream of payments in the future.
+
+\begin{KEY}
+The difference between the two options is an infinite number of \$100 payments beginning at the end of year 251, so the
+present value of this difference is the difference between the present values of the two options. But the present value
+of this difference is only about \$.01: if you put \$.0100857 in the bank today, at the end of 250 years you'll have
+about \$2000 and can then ``live off the interest", getting interest payments of \$100 every year forever.
+\end{KEY}
+\end{comment}
+
+\end{enumerate}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+\item The nominal interest rate is 10\% per year. The rate of inflation is 5\% per year. Round all your answers as
+appropriate.
+    \begin{enumerate}
+    \item (5 points) You put \$100 in the bank today. How much will be in your account after 10 years?
+    \begin{EXAM}\mybigskip\end{EXAM}
+    \item (5 points) You can buy an apple fritter (a type of donut) for \$1 today. The price of donuts goes up at the
+    rate of inflation. How much will an apple fritter cost after 10 years?
+    \begin{EXAM}\mybigskip\end{EXAM}
+    \item (5 points) Calculate $x$, the number of apple fritters you could buy for \$100 today. Then calculate $y$, the
+    number of apple fritters you could buy after ten years if you put that \$100 in the bank. Finally, calculate
+    $\displaystyle z=100\cdot \frac{y-x}{x}$. (The deal with $z$ is that you can say, ``If I put my money in the bank,
+    then after ten years I will be able to buy $z\%$ more apple fritters.") \label{fritter}
+    \begin{EXAM}\mybigskip\end{EXAM}
+    \item (5 points) Given the nominal interest rate and inflation rate above, calculate the real interest rate to two
+    significant digits (e.g., ``3.81\%"). Check your answer with the ``rule of thumb" approximation. \label{real}
+    \begin{EXAM}\mybigskip\end{EXAM}
+    \item (5 points) Calculate how much money you'd have after 10 years if you put \$100 in the bank today \emph{at the
+    real interest rate you calculated in the previous question (\ref{real}).} Compare your answer here with the result
+    from question~\ref{fritter}. (YORAM: Fix this $z$ thing; it doesn't really work!)
+    \begin{EXAM}\mybigskip\end{EXAM}
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+\item Companies and governments use \textbf{bonds} to borrow money. If you buy a ten-year U.S. government bond with a
+\textbf{face value} of \$100 and a \textbf{coupon} of 5\%, it means that Uncle Sam will pay you \$5 at the end of each
+year for 10 years, plus \$100 at the end of the tenth year.
+
+    \begin{enumerate}
+    \item (5 points) To calculate the present value of this bond, should you use the real interest rate or the nominal
+    interest rate? \newline Circle one: Real \ \  Nominal
+    \medskip
+    \item (5 points) Calculate the present value of the bond described above if the appropriate interest rate is 4\%. You
+    should get an answer of about \$108, meaning that if you pay \$100 for this bond, your rate of return over ten years
+    is about 8\%. (Note: Since I'm giving you the answer, you must show your work to get credit.)
+    \begin{EXAM}\mybigskip\end{EXAM}
+    \item (5 points) Instead of buying the U.S. government bond, you buy a bond from a private company that has a 12\%
+    chance of bankruptcy this year. So with probability $.88$ you get all of the promised payments, and with probability
+    $.12$ you get nothing. What is the \emph{expected} present value of this bond? You should get an answer of about
+    \$95, meaning that if you pay \$85 for this bond, your expected rate of return over ten years is about 12\%. (Again,
+    you must show your work to get credit.)
+
+    \begin{EXAM}\mybigskip\end{EXAM}
+    \item (5 points) What is the risk premium associated with the private bond? (Recall that the risk premium is the
+    difference between the expected rate of return of a risky investment and the rate of return of a risk-free investment
+    such as U.S. government bonds.)
+    \begin{EXAM}\mybigskip\end{EXAM}
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{comment}
+\item In ``The Tragedy of the Commons," Garrett Hardin contrasts ``appeals to conscience" with ``mutual coercion mutually
+agreed upon."
+
+    \begin{enumerate}
+    \item (5 points) Give one example of an ``appeal to conscience" and one example of ``mutual coercion mutually agreed
+    upon," or otherwise define what these terms means.
+    \begin{EXAM}\mybigskip\end{EXAM} \begin{EXAM}\mybigskip\end{EXAM} \begin{EXAM}\mybigskip\end{EXAM}
+    \item (5 points) Which approach does Hardin recommend for dealing with population growth or other situations
+    featuring a ``tragedy of the commons"? (Circle one: Appeals to conscience \ \ \ Mutual coercion)
+    \begin{EXAM}\mybigskip\end{EXAM}
+    \end{enumerate}
+\end{comment}
+
+
+
+
+
+
+
+%A similar problem is in qa1uncertainty
+\item \begin{EXAM} Imagine that you are taking a multiple-guess exam. There are \emph{six} choices for each question; a
+correct answer is worth 1 point, and an incorrect answer is worth 0 points. You are on Problem \#23, and it just so
+happens that the question and possible answers for Problem \#23 are in Hungarian. (When you ask your teacher, she claims
+that the class learned Hungarian on Tuesday\ldots.)\end{EXAM}
+
+    \begin{enumerate}
+    \item \begin{EXAM} (5 points) You missed class on Tuesday, so you don't understand any Hungarian. What is the
+    expected value of guessing randomly on this problem? (Fractions and decimal answers are both fine.)
+    \mybigskip\end{EXAM}
+
+\begin{KEY}
+\noindent The expected value of guessing randomly is $\frac{1}{6}(1) + \frac{5}{6}(0) = \frac{1}{6}.$
+\end{KEY}
+
+
+
+    \item \begin{EXAM} (5 points) Now imagine that your teacher wants to discourage random guessing by people like you.
+    To do this, she changes the scoring system, so that a blank answer is worth 0 points and an incorrect answer is worth
+    $x$, e.g., $x=-\frac{1}{2}$. What should $x$ be in order to make random guessing among six answers a fair bet (i.e.,
+    one with an expected value of 0)?
+    \vspace{2in}\end{EXAM}
+
+\begin{KEY}
+If an incorrect answer is worth $x$, the expected value from guessing randomly is $\frac{1}{6}(1) + \frac{5}{6}(x) =
+\frac{1+5x}{6}.$ If the teacher wants this expected value to equal zero, she must set $x=-\frac{1}{5}.$
+\end{KEY}
+
+
+
+    \item \begin{EXAM} (5 points) Your teacher ends up choosing $x=-\frac{1}{4}$, i.e., penalizing people one quarter of
+    a point for marking an incorrect answer. How much Hungarian will you need to remember from your childhood in order to
+    make guessing a better-than-fair bet? In other words, how many answers will you need to eliminate so that guessing
+    among the remaining answers yields an expected value strictly greater than 0?
+    \clearpage\end{EXAM}
+
+\begin{KEY}
+If you can't eliminate any answers, the expected value of guessing randomly is $\frac{1}{6}(1) +
+\frac{5}{6}\left(-\frac{1}{4}\right) = -\frac{1}{24}.$ If you can eliminate one answer, you have a 1 in 5 chance of
+getting the right answer if you guess randomly, so your expected value if you can eliminate one answer is $\frac{1}{5}(1)
++ \frac{4}{5}\left(-\frac{1}{4}\right) = 0.$ If you can eliminate two answers, you have a 1 in 4 chance of getting the
+right answer if you guess randomly, so your expected value if you can eliminate two answers is $\frac{1}{4}(1) +
+\frac{3}{4}\left(-\frac{1}{4}\right) = \frac{1}{16}.$ So you need to eliminate at least two answers in order to make
+random guessing yield an expected value greater than zero.
+\end{KEY}
+
+    \end{enumerate}
+
+
+
+
+
+\item \label{MBA} \begin{EXAM} The Whitman economics department webpage says the following about the benefits of getting
+an MBA (Masters in Business Administration): ``The typical MBA in the class of 2004 made \$56,499 before earning the MBA
+degree and expects a post-MBA salary of \$77,147. That's a 35\% increase, and an immediate return on the MBA investment."
+Let's look at this a little more closely; assume that you can use banks to save or borrow money at an 8\% nominal
+interest rate. \end{EXAM}
+
+    \begin{enumerate}
+
+    \item \label{MBAannuity} \begin{EXAM} Mr.\ Undergrad graduated from Whitman two years ago. He went straight to work:
+    one year ago he was paid \$56,499, today he was paid another \$56,499, and at the end of every year from now on
+    (i.e., forever) he will be paid \$56,499. Calculate the present value of his income stream. [Hint: split the
+    calculation up into three parts---the amount he was paid last year, the amount he's paid today, and the amount he'll
+    be paid in the future---and add them up at the end. Or, if you're looking for a challenge, think of a more elegant
+    way to do this in two steps instead of four.] \vspace{2in} \end{EXAM}
+
+\begin{KEY}
+The present value of \$56,499 one year ago is
+\[
+(\$56,499)(1.08)=\$61,018.92.
+\]
+The present value of \$56,499 today is simply that: \$56,499. And the perpetuity formula tells us that the present value
+of the payments in the future is
+\[
+\frac{\$56,499}{.08}=\$706,237.50.
+\]
+Add them together and you get \$823,755.42. The elegant alternative is to put yourself two years in the past, calculate
+the present value of the forthcoming stream of payments \emph{from that perspective} to be \$706,237.50, and then
+translate this into today's money using the future value formula:
+\[
+(\$706,237.50)(1.08)^2 = \$823,755.42.
+\]
+\end{KEY}
+
+
+    \item \begin{EXAM} Ms.\ MBA also graduated from Whitman two years ago. She went to business school instead of
+    working, so one year ago she \emph{paid} \$30,000 in tuition and today (graduation day) she paid \emph{another}
+    \$30,000 in tuition. The good news is that at the end of every year from now on (i.e., forever) she will be paid
+    \$77,147. Calculate the present value of her income stream (which includes the tuition payments as well as her
+    salary). [Hint: again, split up the calculation into three parts and then add them up at the end; this time, there is
+    no elegant short-cut.] \clearpage \end{EXAM}
+
+\begin{KEY}
+The present value of $-\$30,000$ one year ago is
+\[
+(-\$30,000)(1.08)=-\$32,400.
+\]
+The present value of $-\$30,000$ today is simply that: $-\$30,000$. And the perpetuity formula tells us that the present
+value of the payments in the future is
+\[
+\frac{\$77,147}{.08}=\$964,337.50.
+\]
+Add them together and you get \$901,937.50.
+\end{KEY}
+
+    \item \label{MBAperpetuity} \begin{EXAM} Of course, the assumption that these individuals live and work forever is an
+    approximation made for the sake of mathematical convenience. So let's figure out how bad of an approximation we get
+    by making that assumption: By how much would the present value of Ms.\ MBA's income stream fall if she was paid
+    \$77,147 at the end of every year for a limited time of 40 years instead of forever? First take a wild guess (which
+    is not worth any points) and then see how well your intuition matches up with the actual answer. [Note: The
+    straightforward approach to this problem is fine, but if you have the time and interest you might hunt for an elegant
+    alternative.] \vspace{2in} \end{EXAM}
+
+\begin{KEY}
+The perpetuity formula tells us that the present value of the infinite stream of payments is \$964,337.50. The annuity
+formula tells us that the present value of 40 years' worth of payments is
+\[
+\$77,147 \left[ \frac{1 - \displaystyle\frac{1}{(1.08)^{40}}}{.08}\right] \approx \$919,948.14.
+\]
+Subtracting one from the other gives us a difference of \$44,389.36, which isn't really all that much. The elegant
+alternative approach, incidentally, is to notice that the difference between payments lasting forever and payments
+lasting 40 years is payments lasting forever starting at the end of year 40; we have already calculated the present value
+of these payments \emph{from the perspective of year 40} to be \$964,337.50, so all we have to do is discount this amount
+back to today by using the lump sum formula:
+\[
+\frac{\$964,337.50}{(1.08)^{40}}\approx \$44,389.36.
+\]
+\end{KEY}
+
+
+    \item  \begin{EXAM} Explain (as if to a non-economist) why it makes sense for \$964,337.50 to be the present value of
+    receiving \$77,147 at the end of every year forever when the interest rate is 8\%. \vspace{2in} \end{EXAM}
+
+\begin{KEY}
+Put that amount of money in the bank at 8\% interest and at the end of every year you can ``live off the interest", an
+amount that equals $(\$964,337.50)(.08)=\$77,147.$
+\end{KEY}
+
+
+    \item \begin{EXAM} How much do you have to put in the bank today to get \$964,337.50 at the end of 40 years? Compare
+    your answer here with that for question~\ref{MBAperpetuity} above. \vspace{2in} \end{EXAM}
+
+\begin{KEY}
+This is calculated above to be approximately \$44,389.36.
+\end{KEY}
+
+
+    \item \begin{EXAM} Imagine that Ms.\ MBA actually faces an uncertain future once she gets her MBA: there is a 70\%
+    probability that she will get a business management job paying \$100,000 a year and a 30\% probability that she will
+    fall in love with a non-profit management job paying\ldots somewhat less. How much does the non-profit management job
+    have to pay in order for her to ``expect [in the sense of expected value] a post-MBA salary of \$77,147"?
+    \vspace{2in} \end{EXAM}
+
+\begin{KEY}
+We need $x$ such that $(.7)(\$100,000)+(.3)(\$x)=\$77,147$. Solving for $x$ gives $x\approx 23,823.33$.
+\end{KEY}
+
+\item \begin{EXAM} \label{MBA2} \emph{Extra credit bonus problem!} Assume that \$56,499 was the amount that Mr.\
+Undergrad was paid one year ago, but that thereafter his wage rose (and continues to rise) at 4\%, the rate of inflation.
+Recalculate the present value from question~(\ref{MBAannuity}). \end{EXAM}
+
+\begin{KEY}
+The present value of \$56,499 one year ago is still
+\[
+(\$56,499)(1.08)=\$61,018.92.
+\]
+Adjusting today's payment for inflation yields
+\[
+(\$56,499)(1.04)=\$58,758.96,
+\]
+and its present value is exactly that: \$58,758.96. The present value of future payments can be calculated using
+\$58,758.96 and the \emph{real interest rate}, which turns out to be $\frac{1}{26}$, or about 3.846\%. Plugging this into
+the perpetuity formula gives us $\$1,527,732.96\approx\frac{\$58,758.96}{.03846}.$ (The number to the left of the equal
+sign is actually the precise number using $\frac{1}{26}$ rather than $.03846$.) Add them together and you get
+\$1,647,510.84. The elegant alternative is to put yourself two years in the past, when the inflation-adjusted wage was
+$\frac{\$56,499}{1.04}=\$54,325.96154$; use the \emph{real} interest rate to calculate the present value of the
+forthcoming stream of payments \emph{from that perspective} to be $\$1,412,475.00\approx\frac{\$54,325.96}{.03846}$; and
+then translate this into today's money using the future value formula and the \emph{nominal} interest rate:
+$(\$1,412,475.00)(1.08)^2=\$1,647,510.84.$
+\end{KEY}
+
+    \end{enumerate}

@@ -1,0 +1,75 @@
+\documentclass[twoside]{article}
+\usepackage{pstricks, pst-node, pst-tree, pst-plot, pst-text}
+
+%\usepackage[dvips, pdfnewwindow=true]{hyperref}
+
+\usepackage{version} %Allows version control; also \begin{comment} and \end{comment}
+\includeversion{EXAM}\excludeversion{KEY}
+%\includeversion{KEY}\excludeversion{EXAM}
+
+\newcommand{\mybigskip}{\vspace{1in}}
+
+\begin{document}
+
+\pagestyle{empty}
+\thispagestyle{empty}
+
+\vspace*{-1cm}
+\enlargethispage{4\baselineskip}
+\begin{center}
+\Large Real and nominal interest rates \begin{KEY} Answer Key \end{KEY}
+\end{center}
+\normalsize
+\bigskip
+\bigskip
+
+\noindent Recall that the \textbf{inflation rate}, $i$, is the rate at which prices rise. The \textbf{nominal interest rate}, $n$, is the interest rate in terms of dollars. The \textbf{real interest rate}, $r$, is the interest rate in terms of purchasing power. These are related by
+\[
+1+r=\frac{1+n}{1+i}.
+\]
+When the inflation rate is small, we can approximate this as
+\[
+r \approx n-i.
+\]
+
+\bigskip
+\bigskip
+
+\noindent Assume that the nominal interest rate is 10\% per year and that the rate of inflation is 5\% per year. Round all your answers
+as appropriate.
+    \begin{enumerate}
+    \item You put \$100 in the bank today. How much will be in your account after 10 years?
+
+\begin{KEY}
+Use the nominal interest rate and the future value formula to get a bank account balance of about \$259.37.
+\end{KEY}
+
+    \item You can buy an apple fritter (a type of donut) for \$1 today. The price of donuts goes up at the rate of inflation. How much will an apple fritter cost after 10 years?
+
+\begin{KEY}
+Use the inflation rate and the future value formula to get an apple fritter price of about \$1.63.
+\end{KEY}
+
+    \item Calculate $x$, the number of apple fritters you could buy for \$100 today. Then calculate $y$, the number of apple fritters you could buy after ten years if you put that \$100 in the bank. Then calculate the percentage by which has your ability to buy apple fritters increased. (You can calculate this as $\displaystyle z=100\cdot \frac{y-x}{x}$. The deal with $z$ is that you can say, ``If I put my money in the bank, then after ten years I will be able to buy $z\%$ more apple fritters.") \label{fritter}
+
+\begin{KEY}
+Today you have \$100 and fritters cost \$1, so you can buy $x=100$ of them. In ten years you'll have \$259.37 and fritters will cost \$1.63, so you'll be able to buy about $y=159$ of them. So we can calculate $z\approx 59$.
+\end{KEY}
+
+    \item Given the nominal interest rate and inflation rate above, calculate the real interest rate to two significant digits (e.g., ``3.81\%"). Check your answer with the ``rule of thumb" approximation. \label{real}
+
+\begin{KEY}
+The rule of thumb approximation says that the real interest rate should be about $10\% - 5\% = 5\%$. The actual value is $\frac{1+.1}{1+.05}-1\approx .048$, i.e., 4.8\%.
+\end{KEY}
+
+    \item Calculate how much money you'd have after 10 years if you put \$100 in the bank today \emph{at the real interest rate you calculated in the previous question} (\ref{real}). Compare your answer here with the result from question~\ref{fritter}.
+%FIX Does z work?
+
+\begin{KEY}
+If you put \$100 in the bank at this interest rate, after 10 years you'd have about \$159. So you get $z=59$ as your gain in purchasing power.
+\end{KEY}
+    \end{enumerate}
+
+
+
+\end{document} 

@@ -1,0 +1,1176 @@
+\documentclass{article}
+
+\newcommand{\mybigskip}{\vspace{1in}}
+\newcommand{\myitem}{\item (5 points)\ }
+
+\usepackage{pstricks, pst-node, pst-tree, pst-plot}
+%\usepackage[dvips]{hyperref}
+\usepackage{version} %Allows version control; also \begin{comment} and \end{comment}
+%\includeversion{EXAM}\excludeversion{KEY}
+\excludeversion{EXAM}\includeversion{KEY}
+
+
+\usepackage{multirow} % Allows multiple rows in tables
+%\usepackage{rotating} % Allows rotated material
+\psset{unit=.5cm}
+\psset{levelsep=5cm, labelsep=2pt, tnpos=a, radius=2pt}
+\newpsobject{showgrid}{psgrid}{subgriddiv=1, gridwidth=.5pt, griddots=4, gridlabelcolor=white, gridlabels=0pt}
+
+\pagestyle{empty} %This gets rid of page numbers
+%\setlength{\topmargin}{-.5in}
+%\setlength{\textheight}{8.39in}
+%\setlength{\oddsidemargin}{-.3in}
+%\setlength{\textwidth}{6.42in}
+
+\renewcommand{\arraystretch}{1.3} % This is for the payoff matrices, so there's enough space between rows.
+
+\newcommand{\orangebegin}{
+\begin{figure}[h]
+\begin{center}
+\vspace{1cm}
+}
+
+\newcommand{\orangegrid}{
+\begin{pspicture}(0,0)(16,8)
+\showgrid
+\rput[r](-.6,1){\$0.20}
+\rput[r](-.6,2){\$0.40}
+\rput[r](-.6,3){\$0.60}
+\rput[r](-.6,4){\$0.80}
+\rput[r](-.6,5){\$1.00}
+\rput[r](-.6,6){\$1.20}
+\rput[r](-.6,7){\$1.40}
+\rput[r](-.6,8){\$1.60}
+%\rput[r](-.6,9){\$1.80}
+%\rput[r](-.6,10){\$2.00}
+\rput(-.6,9){P (\$/pound)}
+\rput[r](16,-2){Q (millions of pounds per day)}
+}
+
+\newcommand{\orangedemand}{
+%\psline(0,8)(16,0)
+\psline(3,8)(16,1.5)
+}
+
+\newcommand{\orangedemandold}{
+\psline(0,8)(16,0)
+%\psline(3,8)(16,1.5)
+}
+
+
+\newcommand{\orangesupply}{
+%\psline(0,2)(16,6)
+\psline(4,0)(12,8)
+}
+
+\newcommand{\orangesupplyflat}{
+%\psline(0,2)(16,6)
+\psline(0,4)(16,4)
+}
+
+\newcommand{\orangeend}{
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+%\caption{A Hypothetical Market for Oranges}
+%\label{Blah}
+\end{figure}
+}
+
+
+
+
+\begin{document}
+
+\begin{comment}
+
+\vspace*{-3cm}
+
+\begin{flushright}
+Name: \hspace*{1in}
+
+\medskip
+Student Number: \hspace*{1in}
+\end{flushright}
+
+\bigskip
+
+\end{comment}
+
+\begin{center}
+\Large Final Exam (100 Points Total) \begin{KEY}\textbf{Answer Key}\end{KEY}
+\end{center}
+\normalsize
+\bigskip
+
+\begin{EXAM}
+
+\begin{itemize}
+
+\item The space provided below each question should be sufficient
+for your answer. If you need additional space, use additional
+paper.
+
+\item You are allowed to use a calculator, but only the basic
+functions. Use of advanced formulas (e.g., if your calculator does
+present value) or of material that you have programmed into your
+calculator is not allowed and will be considered cheating.
+
+\item You are encouraged to show your work for partial credit. It
+is very difficult to give partial credit if the only thing on your
+page is ``$x=3$".
+
+\item \textbf{Expected value} is given by summing likelihood times value over all possible outcomes:
+\[
+\mbox{Expected Value}\ \ \  = \ \ \ \sum_{\mbox{Outcomes \emph{i}}} \mbox{Probability(\emph{i})} \cdot \mbox{Value(\emph{i})}.
+\]
+
+
+\item A \textbf{fair bet} is a bet with an expected value of zero.
+
+\item The \textbf{future value of a lump sum payment} of $\$x$ invested for $n$ years at interest rate $s$ is $\displaystyle \mbox{FV} = x(1+s)^{n}$. The \textbf{present value of a lump sum payment} of $\$x$ after $n$ years at interest rate $s$ is $\displaystyle \mbox{PV} = \frac{x}{(1+s)^{n}}.$ (Note that this formula also works for values of $n$ that are negative or zero.)
+
+\item The present value of an \textbf{annuity} paying $\$x$ at the end of each year for $n$ year at interest rate $s$ is
+\[
+\mbox{PV}=x\left[ \frac{1 - \displaystyle\frac{1}{(1+s)^n}}{s}\right].
+\]
+The present value of the related \textbf{perpetuity} (with annual payments forever) is
+\[
+\mbox{PV}=\frac{x}{s}.
+\]
+
+\item The \textbf{inflation rate}, $i$, is the rate at which prices rise. The \textbf{nominal interest rate}, $n$, is the interest rate in terms of dollars. The \textbf{real interest rate}, $r$, is the interest rate in terms of purchasing power. These are related by
+\[
+1+r=\frac{1+n}{1+i}.
+\]
+When the inflation rate is small, we can approximate this as
+\[
+r \approx n-i.
+\]
+
+
+\item A \textbf{Pareto efficient} (or \textbf{Pareto optimal})
+allocation or outcome is one in which it is not possible find a
+different allocation or outcome in which nobody is worse off and
+at least one person is better off. An allocation or outcome B is a
+\textbf{Pareto improvement over A} if nobody is worse off with B
+than with A and at least one person is better off.
+
+\item A (strictly) \textbf{dominant strategy} is a strategy which yields higher payoffs than any other strategy regardless of the other players' strategies. %A (strictly) \textbf{dominated strategy} is a strategy that yields lower payoffs than some other strategy regardless of the other player's strategy.
+
+%\item A \textbf{Nash equilibrium} occurs when the strategies of the various players are best responses to each other. Equivalently but in other words: given the strategies of the other players, you are acting optimally; and given your strategy, your opponents are acting optimally. Equivalently again: No player can gain by deviating alone, i.e., by changing his or her strategy single-handedly.
+
+\item In an \textbf{ascending price auction}, the price starts out at a low value and the bidders raise each other's bids until nobody else wants to bid. In a \textbf{descending price auction}, the price starts out at a high value and the auctioneer lowers it until somebody calls out, ``Mine." In a \textbf{first-price sealed-bid auction}, the bidders submit bids in sealed envelopes; the bidder with the highest bid wins, and pays an amount equal to his or her bid (i.e., the highest bid). In a \textbf{second-price sealed-bid auction}, the bidders submit bids in sealed envelopes; the bidder with the highest bid wins, but pays an amount equal to the \emph{second-highest} bid.
+
+
+
+\item \textbf{Total revenue} is price times quantity: $TR = pq$.
+
+\item The \textbf{price elasticity of demand at point A} measures
+the percentage change in quantity demanded (relative to the
+quantity demanded at point A) resulting from a 1\% increase in the
+price (relative to the price at point A). The formula is
+
+\[
+\varepsilon (A)=\frac{\mbox{\% change in } q}{\mbox{\% change in } p} = \displaystyle\frac{\ \ \ \displaystyle\frac{\Delta q}{q_A}\ \ \ }{\displaystyle\frac{\Delta p}{p_A}} =
+\frac{\Delta q}{\Delta p}\cdot\frac{p_A}{q_A} =
+\frac{q_B-q_A}{p_B-p_A}\cdot\frac{p_A}{q_A}.
+\]
+
+\enlargethispage{2\baselineskip}
+
+\begin{description}
+
+\item [In English] If, at point A, a small change in price causes
+the quantity demanded to increase by a lot, demand at point A is
+elastic; if quantity demanded only changes by a little then demand
+at point A is inelastic; and if quantity demanded changes by a
+proportional amount then demand at point A has unit elasticity.
+
+\item [In math] If, at point A, the price elasticity of demand is
+less than $-1$ (e.g., $-2$), then demand at point A is elastic; if
+the elasticity is greater than $-1$ (e.g., $-\frac{1}{2}$), then
+demand at point A is inelastic; if the elasticity is equal to $-1$
+then demand at point A has unit elasticity.
+
+\end{description}
+
+
+\end{itemize}
+
+\clearpage
+
+
+\vspace*{-3cm}
+
+\begin{flushright}
+Name: \hspace*{1in}
+\end{flushright}
+
+\bigskip
+
+
+\end{EXAM}
+
+
+
+
+\begin{enumerate}
+
+
+%\item 20 points: sequential move game
+%\item Collective action problem
+
+
+\item \begin{EXAM}Imagine that you own some land and you decide to manage it as a tree farm: you plant some trees, and then you cut them down and sell the lumber. Your objective is to make as much money as possible, i.e., to maximize the present value of the lumber. (Assume for simplicity that replanting or other land uses are not possible.) \end{EXAM}
+    \begin{enumerate}
+    \item \begin{EXAM} (5 points) Is the interest rate at the bank going to affect your decision about when to cut down the trees? Circle one (Yes\ \ No) and explain briefly. \vspace{5cm}\end{EXAM}
+
+\begin{KEY}
+Yes: trees are capital. You need to figure out if you'll make more money investing in the trees (by letting them grow) or investing in the bank (by cutting down the trees and putting the money in the bank, where it will grow at the rate of interest).
+\end{KEY}
+
+    \item \begin{EXAM} (5 points) Is the amount it cost you to plant the trees going to affect your decision about when to cut them down? Circle one (Yes\ \ No) and explain briefly. \vspace{4cm}\end{EXAM}
+
+\begin{KEY}
+No: the amount you spent to plant the trees is a \textbf{sunk cost}.
+\end{KEY}
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+\item \begin{EXAM} Narrowly defined, a ``Prisoners' Dilemma" situation involves the following: (1) a symmetric, simultaneous-move game featuring two players; (2) the existence of a dominant strategy for each player; and (3) a predicted outcome that is Pareto inefficient.  \end{EXAM}
+
+    \begin{enumerate}
+
+    \item \begin{EXAM} (5 points) Draw a payoff matrix that describes such a situation. (It may help to remember the following conventions about payoff matrices: player 1 chooses the row, player 2 chooses the column, and an outcome of $(x,y)$ indicates that player 1 gets $x$ and player 2 gets $y$.) \emph{You do not need to write any explanation}, but if you cannot draw a payoff matrix then some words might get you some partial credit. \mybigskip\bigskip\bigskip \end{EXAM}
+
+    \begin{KEY} There are a number of examples in the text. \end{KEY}
+
+    \item \begin{EXAM} (5 points) A slightly broader definition of ``Prisoners' Dilemma" would include situations featuring more than two players. Provide an example of one such situation---you can describe one we've discussed in class, or make up your own---and briefly explain what the strategies are, what the predicted outcome is, and what would be a Pareto improvement over that predicted outcome. \vspace*{4cm} \end{EXAM}
+
+    \begin{KEY} Anything from the traffic problem to the pollution problem to the public-private investment game to the original prisoner's dilemma which gives the problem its name. %Prisoner's Dilemma situations are ones in which individual optimizing behavior leads to a bad collective outcome, namely a Pareto inefficient outcome. The individual behavior is usually characterized by dominant strategies: regardless of what the other individuals do, it is in my best interest to do $X$. The same is true for everybody else---their dominant strategy is also $X$---but when everybody does $X$ then the outcome is Pareto inefficient.
+\end{KEY}
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{comment}
+\item ``A Pareto efficient outcome may not be good, but a Pareto inefficient outcome is in some meaningful sense bad."
+
+    \begin{enumerate}
+    \myitem Give an example or otherwise explain, as if to a non-economist, the first part of this sentence, ``A Pareto efficient outcome may not be good."
+
+\begin{EXAM} \mybigskip \end{EXAM}
+
+\begin{KEY}
+A Pareto efficient allocation of resources may not be good because of equity concerns or other considerations. For example, it would be Pareto efficient for Bill Gates to own everything (or for one kid to get the whole cake), but we might not find these to be very appealing resource allocations.
+\end{KEY}
+
+    \myitem Give an example or otherwise explain, as if to a non-economist, the second part of this sentence, ``A Pareto inefficient outcome is in some meaningful sense bad."
+
+\begin{EXAM} \mybigskip \end{EXAM}
+
+\begin{KEY}
+A Pareto inefficient allocation is in some meaningful sense bad because it's possible to make someone better off without making anybody else worse off, so why not do it?
+\end{KEY}
+
+    \end{enumerate}
+\end{comment}
+
+
+
+
+
+
+
+
+
+
+
+\begin{comment}
+\item Analyze the following sequential move game.
+
+\psset{levelsep=3cm}
+\begin{center}
+\begin{figure}[h]
+\begin{pspicture}(0,0)(0,14)
+\rput(12,7)%(12,7)
+{
+\pstree[treemode=R]{\TC*~{1}}
+{
+    \pstree[treemode=R]{\TC*~{2}}
+    {
+        \TC*~[tnpos=r]{$(-3, 2)$}
+        \TC*~[tnpos=r]{(4, 1)}
+    }
+
+    \TC*~[tnpos=r]{(3,3)}
+
+    \pstree[treemode=R]{\TC*~{2}}
+    {
+        \pstree[treemode=R]{\TC*~{1}}
+        {
+            \TC*~[tnpos=r]{(6, 6)}
+            \TC*~[tnpos=r]{(1, 3)}
+        }
+        \TC*~[tnpos=r]{(1, 10)}
+    }
+}
+}
+\end{pspicture}
+%\caption{Story \#2}
+%\label{overinvestment2} % Figure~\ref{game:draft}
+\end{figure}
+\end{center}
+
+
+
+
+
+    \begin{enumerate}
+    \myitem Identify (e.g., by circling) the likely outcome of this game.
+
+\begin{KEY}
+Backward induction predicts an outcome of (3, 3).
+\end{KEY}
+
+    \myitem Is this outcome Pareto efficient? Yes  No  (Circle one. If it is not Pareto efficient, identify, e.g., with a star, a Pareto improvement.)
+
+\begin{KEY}
+No; a Pareto improvement is (6, 6).
+\end{KEY}
+
+    \end{enumerate}
+%   \mybigskip
+
+\begin{EXAM}
+%\enlargethispage{\baselineskip}
+\vspace{.3in}%\clearpage
+\end{EXAM}
+\end{comment}
+
+
+
+
+
+
+
+
+
+
+
+\item \begin{EXAM} Consider the following game featuring 4 ounces of cake and two kids, each of whom has as his or her sole objective the desire for as much cake as possible: Player 1 splits the cake by offering Player 2 either 1, 2, 3 ounces of cake; Player 2 then either accepts the offer (in which case they split the cake accordingly) or rejects the offer (\emph{in which case each player gets 1.5 ounces of cake}). \end{EXAM}
+
+    \begin{enumerate}
+    \item \begin{EXAM} (5 points) Draw a game tree that represents this game. \vspace*{2.6in}\end{EXAM}
+
+\begin{KEY}
+Game tree here.
+\end{KEY}
+
+
+    \item \begin{EXAM} (5 points) Identify (with a star on the game tree, or in words if you couldn't draw a game tree) the predicted outcome of this game. Then circle \emph{all} of the Pareto efficient outcomes in the following list, and identify a Pareto improvement for any outcome that is not Pareto efficient: $(3,1), (2,2), (1,3), (1.5,1.5)$. \clearpage \end{EXAM}
+
+\begin{KEY}
+It is Pareto efficient. You can't make Child \#2 better off without making Child \#1 worse off.
+\end{KEY}
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\item \begin{EXAM} The Intergovernmental Panel on Climate Change reports that human activity (especially the burning of fossil fuels such as coal, oil, and natural gas) is warming the earth. (Note: With the exception of this fact, all of the numbers \&etc in this question are completely made up.) \end{EXAM}
+
+    \begin{enumerate}
+
+    \item \begin{EXAM} (5 points) Assume that global warming will raise sea levels and increase the frequency of hurricanes, leading to damages of \$1 trillion ($=10^{12}=1,000,000,000,000$) at the end of each year for the next seven years. What is the present value of that damage if the relevant interest rate is 4\%? [Note: If all the zeroes confuse you or your calculator, use \$1,000,000 or \$1,000 instead.] Also: is the relevant interest rate nominal or real? (Circle one.) \label{gw1} \vspace{1.5in}\end{EXAM}
+
+\begin{KEY}
+Using the annuity formula we get a present value of about \$6 trillion.
+\end{KEY}
+
+
+
+    \item \begin{EXAM} (5 points) Next, assume that the full damages you've calculated above will only occur with probability 1/3. With probability 1/3 the damages will be only half as big, and with probability 1/3 the damages will be zero. What is the expected value of the damage caused by global warming? [Note: If you didn't answer part~\ref{gw1} above, just assume for this part that the total damage is \$1,000,000.] \label{gw2} \vspace{1.5in} \end{EXAM}
+
+\begin{KEY}
+The expected damages are $\frac{1}{3}(6) + \frac{1}{3}(3) +
+\frac{1}{3}(0) \approx \$3$ trillion.
+\end{KEY}
+
+
+
+    \item \begin{EXAM} (5 points) Next, assume that the hurricanes \&etc won't happen for 100 years. So: take the expected damages you calculated in part~\ref{gw2} and compute the present value of having that amount of damage occur 100 years in the future if the relevant interest rate is 4\%. [Note: If you didn't answer part~\ref{gw2}, assume for this part that the total damage is \$1,000,000.] \vspace{1.5in} \end{EXAM}
+
+\begin{KEY}
+Plug \$3 trillion into the present value formula to get a present
+value of \$59 billion.
+\end{KEY}
+
+
+    \end{enumerate}
+
+
+
+
+\begin{comment}
+\item Consider a cake-cutting game in which ``Mom" has five ounces of cake to divide between two children, each of whom has as his or her sole objective the desire for as much cake as possible.
+    \begin{enumerate}
+    \myitem Imagine that Mom decides to use the following 2-period game to allocate the cake: In round 1 there are five ounces of cake, and Player 1 makes a take-it-or-leave-it offer to Player 2. If Player 2 accepts, the game ends and the players divide and eat the cake; if Player 2 rejects, Mom eats two ounces of cake and the game moves to round 2. In round 2 (if there is one) there are three ounces of cake, and Player 2 makes a take-it-or-leave-it offer to Player 1. If Player 1 accepts, the game ends and the players divide and eat the three ounces of cake; if Player 1 rejects, the game ends and both players get nothing.
+
+Predict the outcome of this game using backward induction; explain your reasoning.
+\begin{EXAM}\vspace*{2.6in}\end{EXAM}
+
+\begin{KEY}
+With backward induction, the analysis begins at the end of the game. So: if the game reaches round 2, there are three ounces of cake left. Player 2 will offer Player 1 a tiny sliver, knowing that Player 1 will accept because his only alternative is to reject the offer and get nothing; so if the game reaches round 2, Player 2 will essentially get three ounces of cake, and Player 1 will get nothing. Next: in round 1, there are five ounces of cake. Player 1 has to offer Player 2 at least three ounces, or Player 2 will reject his offer and go to round 2 (where, as we have seen, Player 2 can get three ounces). So we can predict that Player 1 will offer three ounces of cake to Player 2, leaving two ounces for himself, and that Player 2 will accept the offer.
+\end{KEY}
+
+
+    \myitem Imagine that, instead of using a sensible cake-cutting game, Mom has a fit of insanity and decides to just give the entire cake to Child \#1. Is this outcome Pareto efficient or Pareto inefficient? Circle one and explain briefly.
+\begin{EXAM}\clearpage\end{EXAM}
+
+\begin{KEY}
+It is Pareto efficient. You can't make Child \#2 better off without making Child \#1 worse off.
+\end{KEY}
+    \end{enumerate}
+\end{comment}
+
+
+
+
+
+
+
+
+
+\begin{comment}
+
+\item For each item, indicate the likely impact on the supply and demand for oil. Then indicate the effect on the equilibrium price and quantity. It may help to use a graph.
+
+    \begin{enumerate}
+    \myitem People switch from big SUVs to small cars (which get better gas mileage) after reading in Keith Bradsher's book \emph{High and Mighty} how dangerous SUVs are to their drivers (and to everyone else).
+
+    \begin{EXAM}\mybigskip\end{EXAM}
+
+    \begin{KEY} Demand decreases. Equilibrium price and quantity fall.\end{KEY}
+
+    \myitem Saddam blows up oil wells in Iraq, Kuwait, and Saudi Arabia.
+
+    \begin{EXAM}\mybigskip\end{EXAM}
+
+    \begin{KEY}Supply decreases. Equilibrium price increases, equilibrium quantity falls.\end{KEY}
+
+    \item \textbf{Bonus problem!} Explain why the possibility that Saddam might blow up oil wells next week (or next month) affects oil prices \emph{today}. %(Hint: consider your answer to the previous problem and the idea that ``oil is capital".)
+
+    \begin{EXAM}\mybigskip\end{EXAM}
+
+    \begin{KEY}This goes back to capital theory: people who own oil can either ``invest in the bank" (by selling the oil today and putting the money in the bank, where it will grow at the rate of interest) or ``invest in the oil" (by selling the oil next week or next month instead of today). \end{KEY}
+    \end{enumerate}
+
+
+
+\end{comment}
+
+
+
+%\clearpage
+
+
+
+
+\item \begin{EXAM} (5 points) Consider a market with a demand curve of $q=220-20p$ and a supply curve of $q=60p-100$. Determine the price and quantity at the market equilibrium and then show how (if at all) a 25\% sales tax on the sellers will affect both the equation for the supply curve and the equation for the demand curve. \vspace{4cm} \end{EXAM}
+
+\begin{KEY} Solving the demand and supply curves simultaneously yields a market equilibrium of $p=4$ and $q=140$. The The tax has no impact on the demand curve, but market supply curve changes to $q=60(.75p)-100$. \end{KEY}
+
+
+
+
+
+
+
+
+\item Below is a hypothetical market for oranges.
+
+\begin{EXAM}
+\orangebegin
+\orangegrid
+\orangedemand
+\orangesupply
+%\psline(0,6.5)(13,0) % This is the answer
+\orangeend
+\end{EXAM}
+
+\begin{KEY}
+\orangebegin
+\orangegrid
+\orangedemand
+\orangesupply
+\psline(0,6.5)(13,0) % This is the answer
+\orangeend
+\end{KEY}
+
+\begin{EXAM}\bigskip\bigskip\end{EXAM}
+
+\textbf{Suppose that the government decides to impose a per-unit
+tax of \$.60 per pound on the buyers of oranges. }
+
+\begin{enumerate}
+
+
+\item \begin{EXAM} (5 points) Show the impact of this tax on the supply and demand curves above \textbf{and explain} (as if to a non-economist) why the tax shifts the curves the way it does. \vspace{1.5in} \end{EXAM}
+
+\begin{KEY}
+At a market price of, say, \$1.00, buyers have to pay an extra \$.60 in tax, so they are effectively paying \$1.60 per pound. So they should be willing to buy at a market price of \$1.00 with the tax as much as they were willing to buy at a market price of \$1.60 without the tax.
+
+Another approach: the marginal benefit curve shifts down by \$.60 because the marginal benefit of each unit is reduced by that amount by the tax.
+\end{KEY}
+
+
+\begin{comment}
+\myitem Calculate the economic incidence of the tax, i.e., the
+amount of the tax burden borne by the buyers ($T_B$) and the
+amount borne by the sellers ($T_S$). Then calculate their
+ratio \ \ $\displaystyle \frac{T_B}{T_S}$.
+\label{taxratio}
+
+
+\begin{EXAM} \vspace{1.6in} \end{EXAM}
+
+\begin{KEY} The new equilibrium price is \$.60 per pound. Buyers used to pay \$1.00 per pound, but now pay \$.60 to the sellers and \$.60 to the government for a total of \$1.20, \$.20 more than before. Sellers used to receive \$1.00 per pound; now they receive \$.60, \$.40 per pound less than before.
+
+The ratio of the tax burdens is $\displaystyle \frac{T_B}{T_S} = \frac{.2}{.4}=\frac{1}{2}.$
+\end{KEY}
+
+
+\myitem Calculate the price elasticity of supply, $\varepsilon_S$, at the original
+(pre-tax) equilibrium. Then calculate the price elasticity of demand, $\varepsilon_D$, at the original (pre-tax) equilibrium. Then calculate their ratio, $\displaystyle \frac{\varepsilon_S}{\varepsilon_D}$. How does this ratio compare to the ratio of the tax burdens?
+
+\begin{EXAM} \vspace{3.3in} \end{EXAM}
+
+\begin{KEY} The price elasticity of supply is about $.556$; the price elasticity of demand is about $-1.111$. Their ratio is $-\frac{1}{2}$, which is of the same magnitude as the ratio of the tax burdens! \end{KEY}
+\end{comment}
+
+\item \begin{EXAM} (5 points) Imagine that the government imposes a 50\% tax on the buyers instead of a \$.60 per-unit tax. Use the graph below to show how this changes the supply and demand curves. You do not need to explain.
+\ \end{EXAM}
+
+\begin{KEY} The demand curve rotates downward as shown. At a price of \$.40 per pound, for example, buyers would effectively be paying \$.60 per pound, so at a price of \$.40 with a 50\% tax they should be willing to buy as much as they were willing to buy at a price of \$.60 per pound without the tax. \end{KEY}
+
+
+\begin{EXAM}
+\orangebegin
+\orangegrid
+\orangedemand
+\orangesupply
+%\psline(1,6)(16,1) % This is the answer
+\orangeend
+\vspace{1cm}
+\end{EXAM}
+
+\begin{KEY}
+\orangebegin
+\orangegrid
+\orangedemand
+\orangesupply
+\psline(1,6)(16,1) % This is the answer
+\orangeend
+\vspace{1cm}
+\end{KEY}
+
+\begin{comment}
+\begin{EXAM}
+\clearpage
+
+\begin{center}
+Extra graphs in case you need them\ldots.
+\end{center}
+
+\mybigskip
+
+\orangebegin
+\orangegrid
+\orangedemand
+\orangesupply
+%\psline(0,6.5)(13,0) % This is the answer
+\orangeend
+
+
+\mybigskip
+
+\orangebegin
+\orangegrid
+\orangedemand
+\orangesupply
+%\psline(0,6.5)(13,0) % This is the answer
+\orangeend
+\end{EXAM}
+\end{comment}
+
+\end{enumerate}
+
+
+
+
+
+
+
+\item \begin{EXAM} (5 points) ``When I buy a \$20 radio that was made in China, it clearly adds \$20 to $C$, the household consumption part of the GDP equation $Y=C+I+G+(\mbox{Ex} - \mbox{Im})$." Is this statement true or false? (Circle one in the preceding sentence.) Regardless of what you circled, explain how (if at all) the \$20 radio purchase affects the six variables in the equation above, e.g., by writing ``$Y$ increases by \$20" or ``$Y$ is unchanged".  \clearpage \end{EXAM}
+
+\begin{KEY}
+The statement is true: the radio purchase increases $C$ by \$20. But it also increases imports (Im) by \$20, so GDP ($Y$) remains unchanged, as do the other components of GDP.
+\end{KEY}
+
+
+
+
+
+
+
+\item \begin{EXAM} Consider the labor market below, with the price measuring the hourly wage in dollars per hour and the quantity measuring millions of workers. \end{EXAM}
+
+
+    \begin{enumerate}
+
+    \item \begin{EXAM} (5 points) Use a dot and label with an ``F" the market outcome in a free market. Then use a dot and label with an ``M" the market outcome in a market with a minimum wage of \$14 per hour. \bigskip
+
+\begin{figure}[h]
+\begin{center}
+\begin{pspicture}(0,0)(10,10)
+\rput[r](-.6,1){\$2}
+\rput[r](-.6,2){\$4}
+\rput[r](-.6,3){\$6}
+\rput[r](-.6,4){\$8}
+\rput[r](-.6,5){\$10}
+\rput[r](-.6,6){\$12}
+\rput[r](-.6,7){\$14}
+\rput[r](-.6,8){\$16}
+\rput[r](-.6,9){\$18}
+\rput[r](-.6,10){\$20}
+\showgrid
+\psline(0,0)(10,10)
+\psline(0,10)(10,0)
+\psaxes[labels=x, showorigin=false](10,10)
+\end{pspicture}
+\end{center}
+%\caption{A labor market, }
+%\label{fig:labor1}
+\end{figure}
+\bigskip
+\end{EXAM}
+
+\begin{KEY}
+In a free market, the outcome is a price of \$10 per hour and a quantity of 5 million workers. With a minimum wage of \$14 per hour, the outcome is a price of \$14 per hour and a quantity of 3 million workers.
+\end{KEY}
+
+
+    \item \begin{EXAM} (5 points) Explain (as if to a non-economist) why the free market outcome is where it is. \vspace{4cm} \end{EXAM}
+
+\begin{KEY}
+The amount of labor that buyers want to buy at \$10 per hour is equal to the amount of labor that sellers want to sell at \$10 per hour. At any price above \$10 per hour, sellers will want to sell more than buyers want to buy, which will create individual incentives that will push the market price down towards the equilibrium. At any price below \$10 per hour, buyers will want to buy more than sellers want to sell, which will create individual incentives that will push the market price up towards the equilibrium.
+\end{KEY}
+
+
+    \item \begin{EXAM} (5 points) Explain why the \$14 minimum wage creates unemployment. Also: \emph{quantify} the amount of unemployment created by writing down the number of unemployed people resulting from the minimum wage. Please circle your answer. \vspace{5cm} \end{EXAM}
+
+\begin{KEY}
+At a price of \$14 per hour, 7 million workers want employment but only 3 million jobs are available. The minimum wage therefore increases unemployment by 4 million workers.
+\end{KEY}
+
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\item \begin{EXAM} Imagine that the Federal Reserve decides to engage in open-market operations by buying government bonds. \end{EXAM}
+
+    \begin{enumerate}
+
+    \item \begin{EXAM} (5 points) Use a graph to demonstrate the effect of this action on the money market; use an arrow to indicate the direction(s) of movement of the affected curve(s). Clearly indicate what variables are being measured on the $x$ and $y$ axes (e.g., does one measure the wage rate and the other measure the quantity of oranges, or ???). \vspace*{5cm} \end{EXAM}
+
+\begin{KEY}
+The Fed's actions increase the money supply, which causes the equilibrium interest rate to fall. The $y$ axis measures the interest rate, and the $x$ axis measures the amount of money that is demanded or supplied.
+\end{KEY}
+
+
+    \item \begin{EXAM} (5 points) Use an aggregate demand / aggregate supply curve to demonstrate the impact of the Fed's action on the price level and real GDP \emph{in the short run}. Then translate your answer into English by completing this sentence: ``In the short run, the Fed's action\ldots" \vspace{5cm} \end{EXAM}
+
+\begin{KEY}
+The aggregate demand curve shifts out, meaning that in the short run, the Fed's action increases the price level and real GDP in short run.
+\end{KEY}
+
+
+    \item \begin{EXAM} (5 points) Use an aggregate demand / aggregate supply curve to demonstrate the impact of the Fed's action on the price level and real GDP \emph{in the long run}. Then translate your answer into English by completing this sentence: ``In the long run, the Fed's action\ldots" \vspace{5cm} \end{EXAM}
+
+\begin{KEY}
+There is no effect on long-run real GDP because that is determined by real variables like population growth and technological change, not by nominal variables like the money supply. In other words, the long-run AS curve is vertical, meaning that real GDP is the same regardless of the price level. So in the long run, the Fed's action leads to inflation (a higher price level) but does not affect real GDP.
+\end{KEY}
+
+
+    \end{enumerate}
+
+
+
+
+
+
+
+\item \begin{EXAM} (5 points) One curiosity in economics is that the long-run aggregate supply curve is assumed to be perfectly \emph{inelastic} but the long-run supply curve for many individual industries is assumed to be perfectly \emph{elastic}. In the market for dry-cleaning, for example, all firms have about the same costs and there are no barriers to entry (i.e., nothing stops new firms from entering the market), so economists often picture the long-run supply curve as a horizontal line at some price $p^*$ (e.g., \$2 per shirt), meaning that at any price below $p^*$ firms want to supply zero, and at any price above $p^*$ firms want to supply an infinite amount. Explain (as if to a non-economist) why this horizontal long-run supply curve makes sense for dry-cleaning. \mybigskip \end{EXAM}
+
+\begin{KEY} At some market price $p^*$ (say, \$2 per shirt) firms in the dry-cleaning business earn the market rate of return; in the long run, then, firms are indifferent between the dry-cleaning business and other types of businesses, so they are willing to supply an arbitrary amount of dry-cleaning at \$2 per shirt. At any price less than \$2 per shirt, firms would earn less than the market rate of return; in the long run, then, no firms would be willing to dry-clean shirts, meaning that quantity supplied would be zero at any price less than \$2 per shirt. Similarly, at any market price greater than \$2 per shirt, firms in the dry-cleaning business would earn more than the market rate of return; in the long run, then, everybody would rush into the dry-cleaning business, meaning that the quantity supplied would be infinite at any price greater than \$2. \end{KEY}
+
+
+\end{enumerate}
+\end{document}
+
+
+
+\begin{EXAM} \vspace{1in} \end{EXAM}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\myitem Consider the market for dry-cleaning businesses or other industries where all firms have about the same costs and there are no barriers to entry (i.e., nothing stops new firms from entering the market). Economists often treat the \emph{long run} supply curve for this market as being perfectly elastic, meaning that the supply curve is a horizontal line at some price $p^*$ (e.g., \$2 per shirt). Explain (as if to a non-economist) why this makes sense.
+
+\begin{EXAM} \mybigskip \end{EXAM}
+
+\begin{KEY} At some market price $p^*$ (say, \$2 per shirt) firms in the dry-cleaning business earn the market rate of return; in the long run, then, firms are indifferent between the dry-cleaning business and other types of businesses, so they are willing to supply an arbitrary amount of dry-cleaning at \$2 per shirt. At any price less than \$2 per shirt, firms would earn less than the market rate of return; in the long run, then, no firms would be willing to dry-clean shirts, meaning that quantity supplied would be zero at any price less than \$2 per shirt. Similarly, at any market price greater than \$2 per shirt, firms in the dry-cleaning business would earn more than the market rate of return; in the long run, then, everybody would rush into the dry-cleaning business, meaning that the quantity supplied would be infinite at any price greater than \$2. \end{KEY}
+
+
+
+
+
+
+\item The website www.beertax.com is the home of
+Anheuser-Busch's ``Roll Back the Beer Tax" campaign. The campaign
+claims that 43\% of the cost of every beer is taxes and that
+``America's 80 million beer drinkers have carried the load of
+outdated, excessive, hidden taxes for too long."
+
+    \begin{enumerate}
+    \myitem One of the principal taxes on beer is an \$18 per barrel tax on Anheuser-Busch and other suppliers of beer. Since the tax is on the \emph{sellers}, is Anheuser-Busch right or wrong in claiming that the \emph{buyers} of beer suffer from this tax? Circle one (Right\ \ Wrong) and explain briefly.
+    \begin{EXAM}\vspace{2in}\end{EXAM}
+
+\begin{KEY}
+The economic incidence of the tax is independent of the legal incidence of the tax; this is the tax equivalence result. In practice, it means that Anheuser-Busch and other sellers of beer pass some of the tax along to buyers, so that the tax burden is shared between buyers and sellers. So Anheuser-Busch is right in claiming that buyers of beer suffer from the tax.
+\end{KEY}
+
+    \myitem The U.S. House of Representatives is currently considering a bill (H.R. 1305) to reduce the beer tax on sellers from \$18 to \$9 per barrel. If the bill passes, how will it change the supply and demand curves for beer? How will it change the market equilibrium price and quantity? Use a graph! (Two notes: \#1: I am looking for a qualitative answer here---e.g., ``Demand increases"---not a quantitative answer---e.g., ``Demand shifts up by \$6". \#2: It might help to think of a tax reduction as being identical to a subsidy.)
+    \begin{EXAM}\vspace{1.5in}\enlargethispage{2\baselineskip}\end{EXAM}
+
+\begin{KEY}
+Supply increases. Market equilibrium price decreases, quantity increases.
+\end{KEY}
+
+    \myitem Fill in the blanks in the following sentence to describe \emph{quantitatively} how the bill would affect the supply and demand curves for beer: After a \$9 per barrel reduction in the beer tax, buyers would be willing to buy at \$40 per barrel the same amount of beer they were willing to buy at a price of \$[\ \ \ \ \ \ \ ] per barrel before the tax reduction; sellers would be willing to sell at \$40 per barrel the same amount of beer they were willing to sell at a price of \$[\ \ \ \ \ \ \ ] per barrel before the tax reduction.
+    \begin{EXAM}\vspace{.1in}\end{EXAM}
+
+\begin{KEY}
+For buyers, \$40 per barrel; for sellers, \$49 per barrel.
+\end{KEY}
+
+
+    \myitem If the bill passes, how will it change the supply and demand curves for \emph{wine}? How will it change the market equilibrium price and quantity in the market for \emph{wine}? Use a graph!
+    \begin{EXAM}\vspace{1.5in}\end{EXAM}
+
+\begin{KEY}
+Demand decreases because beer and wine are substitutes. Market equilibrium price and quantity both decrease.
+\end{KEY}
+
+
+    \myitem Predict the support, opposition, or neutrality to the bill of beer drinkers; beer suppliers; wine drinkers; and wine suppliers. Circle your answers below. (Hint: Use your intuition, and use the results of the previous questions!)
+        \begin{enumerate}
+        \item Beer drinkers: Support \ \ Oppose \ \ Neutral
+        \item Wine drinkers: Support \ \ Oppose \ \ Neutral
+        \item Beer suppliers: Support \ \ Oppose \ \ Neutral
+        \item Wine suppliers: Support \ \ Oppose \ \ Neutral
+        \end{enumerate}
+\begin{EXAM}
+\clearpage
+\end{EXAM}
+
+\begin{KEY}
+Since the prices of beer and wine both fall, beer and wine drinkers are both better off, so they would support the legislation. Beer suppliers are also better off, since the decrease in the price of beer is less than the decrease in the tax amount. (This is also intuitively clear---Anheuser-Busch wouldn't go through all the trouble of pushing this legislation if they weren't going to benefit!) But wine suppliers would oppose the legislation: by lowering the price of a substitute for wine, the bill's passage would result in them selling less wine at a lower price.
+\end{KEY}
+
+    \end{enumerate}
+
+
+
+
+
+
+\item Imagine that, in the absence of government intervention, the market equilibrium for unskilled labor occurs at a price of \$5 per hour. Now consider a government-established minimum wage of \$10 per hour.
+
+    \begin{enumerate}
+    \myitem Economists argue that the minimum wage is inefficient. Explain why, using a story and/or a graph.
+    \begin{EXAM}\vspace{2in}\end{EXAM}
+
+\begin{KEY}
+There are some businesses which are willing to hire people for \$9 per hour, and some workers who are willing to work for \$9 per hour. The minimum wage is inefficient because it prevents them from engaging in this mutually beneficial transaction; a Pareto improvement would be for them to trade.
+\end{KEY}
+
+\begin{comment}
+    \myitem Despite the minimum wage law, some people might work illegally for less than \$10 per hour. What is the principal \emph{economic} explanation for this phenomenon, and how is it related to the idea that the minimum wage is inefficient? (Hint: Think about the Coase Theorem!)
+    \begin{EXAM}\vspace{2in}\end{EXAM}
+
+\begin{KEY}
+At a price of \$10 per hour, the number of people who want to work is greater than the number of employees that businesses want to hire; some of the people who are unable to find work at \$10 per hour might seek it out at lower levels in the black market. In terms of the Coase Theorem, the black market shows that individual incentives will lead people to try to exhaust all possible gains from trade; in the case of the minimum wage, the black market is evidence of people circumventing the inefficiencies caused by the government policy.
+\end{KEY}
+\end{comment}
+
+    \myitem Since the minimum wage is inefficient, getting rid of the minimum wage seems like it might constitute a Pareto improvement. Does it? Circle one (Yes  No) and explain briefly.
+    \begin{EXAM}\vspace{2in}\end{EXAM}
+
+\begin{KEY}
+No. Getting rid of the minimum wage hurts those workers who currently have minimum-wage jobs. Because the minimum wage is inefficient, there must be other ways of doing things that are Pareto improvements over the minimum wage; but simply getting rid of the minimum wage is not one of them.
+\end{KEY}
+
+    \end{enumerate}
+
+
+
+
+\end{enumerate}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{KEY} \clearpage \end{KEY}
+
+\item Below is a hypothetical demand curve for oranges.
+
+\orangebegin
+\orangegrid
+\orangedemandold
+\pscircle[fillstyle=solid, fillcolor=black](8,4){.1}
+\rput(8.5,4.5){Y}
+\pscircle[fillstyle=solid, fillcolor=black](14,1){.1}
+\rput(14.5,1.5){Z}
+\pscircle[fillstyle=solid, fillcolor=black](4,6){.1}
+\rput(4.5,6.5){X}
+\orangeend
+
+\begin{enumerate}
+
+\myitem Calculate the price elasticity of demand at point Y. (Show
+your work!)
+
+\label{elasticY}
+
+\begin{EXAM} \mybigskip \end{EXAM}
+\begin{KEY} Choose any other point as point B and plug the numbers into the formula. The elasticity turns out to be $-1$. \end{KEY}
+
+\myitem During normal years, the supply curve is such that point Y
+is the equilibrium. Of the other two points, one is the
+equilibrium during ``bad" years (when frost damages the orange
+crop), and one is the equilibrium during ``good" years (when the
+orange crop thrives). Which one is point X? Circle one: X = bad\ \
+good
+
+%\vspace{1in}
+\begin{KEY} During bad years the supply decreases (i.e., shifts to the left), so point X is the equilibrium during bad years. \end{KEY}
+
+\myitem What is the total revenue at points X, Y, and Z? (Use
+correct units!)
+
+
+\begin{EXAM} \vspace{1.5in} \end{EXAM}
+
+\begin{KEY} Total revenue is $pq$. At point X this is $4\cdot 1.20 = \$4.8$ million per day. At point Y this is $8\cdot .80 = \$6.4$ million per day. At point Z this is $14\cdot .20 = \$2.8$ million per day. \end{KEY}
+
+\myitem The orange growers' profit is total revenue minus total
+costs. If total costs are the same in all years, do the growers
+have higher profits in ``bad" years or ``good" years? (Circle
+one.)
+
+
+\begin{KEY} Profits are higher during ``bad" years! During ``good" years there is a Prisoner's Dilemma-type situation for orange growers: they'd make more money if they reduced their harvest (thereby driving up the equilibrium price), but the individual incentives are such that they all produce a lot.\end{KEY}
+
+\end{enumerate}
+
+\begin{EXAM} \clearpage \end{EXAM}
+
+\begin{KEY} \clearpage \end{KEY}
+
+
+
+
+
+\end{enumerate}
+\end{document}
+
+
+
+
+
+
+
+\textbf{Suppose that the government instead decides to
+impose a sales tax of 50\% on the sellers of oranges.} (With a
+sales tax, if sellers sell a pound of oranges for \$1, they get to
+keep \$.50 and have to pay the government \$.50; if they sell a
+pound of oranges for \$2, they get to keep \$1 and have to pay the
+government \$1.)
+
+
+
+\myitem Show the impact of this tax on the supply and demand
+curves above.
+
+\myitem Explain (as if to a non-economist) why the tax shifts the
+curves the way it does.
+
+\begin{EXAM} \vspace{1.5in} \end{EXAM}
+
+\begin{KEY} At a price of, say, \$.80, sellers actually get to keep \$.40 after-tax, so with a market price of \$.80 and a 50\% tax they should be willing to supply as much as they were willing to supply at a price of \$.40 without the tax. Similarly, with a market price of \$1.20 and a 50\% tax they should be willing to supply as much as they were willing to supply at a price of \$.60 without the tax. \end{KEY}
+
+\myitem Calculate the economic incidence of the tax, i.e., the
+amount of the tax burden borne by the buyers ($T_B$) and the
+amount borne by the sellers ($T_S$). Then calculate their
+ratio \ \ $\displaystyle \frac{T_B}{T_S}$.
+
+\begin{EXAM} \vspace{1.6in} \end{EXAM}
+
+\begin{KEY} The new equilibrium price is \$1.20 per pound. Since buyers paid \$1.00 per pound originally, they are paying \$.20 more than before. Sellers used to receive \$1.00 per pound; now they receive \$1.20, but they pay 50\% in taxes, so they effectively receive \$.60 per pound. This is \$.40 less than before.
+
+The ratio of the tax burdens is $\displaystyle \frac{T_B}{T_S} = \frac{.2}{.4}=\frac{1}{2}.$
+\end{KEY}
+
+
+\myitem Calculate the price elasticity of supply, $\varepsilon_S$, at the original
+(pre-tax) equilibrium. Then calculate the price elasticity of demand, $\varepsilon_D$, at the original (pre-tax) equilibrium. Then calculate their ratio, $\displaystyle \frac{\varepsilon_S}{\varepsilon_D}$. How does this ratio compare to the ratio of the tax burdens?
+
+\begin{EXAM} \vspace{1.6in} \end{EXAM}
+
+\begin{KEY} The price elasticity of supply is about $.556$; the price elasticity of demand is about $-1.111$. Their ratio is $-\frac{1}{2}$, which is of the same magnitude as the ratio of the tax burdens! \end{KEY}
+
+
+%\myitem At the new equilibrium, how many oranges will people eat? (Note: Please use correct units!)
+
+%\myitem Calculate the amount of the tax burden borne by the buyers
+%($T_B$) and by the sellers ($T_S$), and the ratio \ \
+%$\displaystyle \frac{T_B}{T_S}$.
+
+%\myitem How much do the buyers pay for each pound of oranges?
+
+%\myitem How much after-tax revenue do the sellers receive for each pound of oranges?
+
+%\myitem Compare your answers above with the original equilibrium to determine the ultimate incidence of the tax: How is the tax burden distributed between buyers and sellers?
+
+\orangebegin
+\orangegrid
+\orangedemand
+\orangesupply
+
+\psaxes[labels=x, showorigin=false](16,8)
+\end{pspicture}
+\vspace{.3in}
+\end{center}
+\caption{An extra graph in case you need it for anything\ldots}
+%\label{Blah}
+\end{figure}
+
+\begin{comment} % BEGINNING OF COMMENT!!!
+
+\textbf{Finally: Instead of a sales tax on sellers, suppose that
+the government decides to impose a sales tax of 100\% on the
+buyers of oranges. (If buyers buy a pound of oranges for \$1, they
+have to pay the seller \$1 and the government \$1; if they buy a
+pound of oranges for \$2, they have to pay the seller \$2 and the
+government \$2.)}
+
+\orangebegin
+\orangegrid
+\orangedemand
+\orangesupply
+\orangeend
+
+
+\myitem Show the impact of this tax on the supply and demand
+curves. (The original supply and demand curves are pictured
+below.)
+
+
+
+
+\myitem At the new equilibrium, how many oranges will people eat?
+(Note: Please use correct units!)
+
+\myitem Compare your results here (with a 100\% sales tax on the
+buyers) and with your previous results from a 50\% sales tax on
+the sellers. Is there any difference?
+
+\myitem Calculate the ratio \ \ $\displaystyle \frac{\mbox{Amount
+of tax paid by buyers}}{\mbox{Amount paid by sellers}}$ \ \  and
+compare with the previous ratios you calculated.
+
+\end{comment} % END OF COMMENT!!!
+
+
+
+
+
+
+
+\item Answer the questions below about the following simultaneous move game.
+
+    \begin{figure}[h]
+    \begin{center}
+    \begin{tabular}{crccc}
+    & & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+    & & L & C & R \\ \cline{3-5}
+    \multirow{3}{1.5cm}{Player 1}
+    & U & \multicolumn{1}{|c|}{$3, 8$} & \multicolumn{1}{c}{$2, 0$} & \multicolumn{1}{|c|}{$9, 7$} \\ \cline{3-5}
+    & M & \multicolumn{1}{|c|}{$4, 8$} & \multicolumn{1}{c}{$4, 5$} & \multicolumn{1}{|c|}{$3, 1$} \\ \cline{3-5}
+    & D & \multicolumn{1}{|c|}{$0, 2$} & \multicolumn{1}{c}{$8, 3$} & \multicolumn{1}{|c|}{$6, 0$} \\ \cline{3-5}
+    \end{tabular}
+    \end{center}
+    \end{figure}
+
+
+    \begin{enumerate}
+    \myitem Using the above payoff matrix, cross out as much as you can using iterated (strict) dominance. \emph{For partial credit, list your sequence of eliminations below!}
+    \begin{EXAM}\mybigskip\end{EXAM}
+
+\begin{KEY}
+R is dominated by L for Player 2, then U is dominated by M for Player 1. This is as far as we can go with iterated strict dominance.
+\end{KEY}
+
+    \begin{figure}[h]
+    \begin{center}
+    \begin{tabular}{crccc}
+    & & \multicolumn{3}{c}{Player 2} \\ [.15cm]
+    & & L & C & R \\ \cline{3-5}
+    \multirow{3}{1.5cm}{Player 1}
+    & U & \multicolumn{1}{|c|}{$3, 8$} & \multicolumn{1}{c}{$2, 0$} & \multicolumn{1}{|c|}{$9, 7$} \\ \cline{3-5}
+    & M & \multicolumn{1}{|c|}{$4, 8$} & \multicolumn{1}{c}{$4, 5$} & \multicolumn{1}{|c|}{$3, 1$} \\ \cline{3-5}
+    & D & \multicolumn{1}{|c|}{$0, 2$} & \multicolumn{1}{c}{$8, 3$} & \multicolumn{1}{|c|}{$6, 0$} \\ \cline{3-5}
+    \end{tabular}
+    \end{center}
+    \end{figure}
+
+    \myitem Using the above payoff matrix, identify the Nash equilibrium(s) of this game. (Note that this is the same game as above.)
+    \begin{EXAM}\bigskip\end{EXAM}
+
+\begin{KEY}
+The Nash equilibria are (M, L), with a payoff of (4, 8), and (D, C), with a payoff of (8, 3).
+\end{KEY}
+
+
+    \myitem Is/are the Nash equilibrium(s) you identified Pareto efficient? If not, identify a Pareto improvement. \emph{If you identified multiple Nash equilibria, answer this question separately for each one.}     \begin{EXAM}\clearpage\end{EXAM}
+
+\begin{KEY}
+(M, L) is Pareto efficient. (D, C) is not: a Pareto improvement is (U, R).
+\end{KEY}
+
+    \end{enumerate}
+
+
+
+
+
+
+
+\item Consider a city with 10,000 households, and assume the following: (1) fireplaces are a significant source of local air pollution; (2) local air pollution negatively impacts the lives of everybody in the city, e.g., because of health impacts or just unpleasant breathing experiences; (3) each household's annual fireplace emissions impose one penny's worth (\$.01) of negative impacts on every household in the city, for a city-wide total of \$100; (4) a miraculous chimney device is available that, for a measly \$5, would eliminate all emissions from that fireplace; (5)  each homeowner in the city is only concerned with him- or her-self.
+
+    \begin{enumerate}
+    \myitem  Do you anticipate that homeowners in this city will adopt the chimney device? Why or why not? Is this outcome Pareto efficient? Explain briefly, and describe a Pareto improvement if your predicted outcome is not Pareto efficient.
+    \begin{EXAM}\mybigskip\end{EXAM}
+
+\begin{KEY}
+A good prediction is that nobody will adopt the device: it costs \$5 to get the device, but it only saves the homeowner \$.01. The result is that each person bears \$100 per year in negative impacts from pollution; this is clearly not Pareto efficient; a Pareto improvement would be for everybody to adopt the device (in which case each person would only bear \$5 per year in costs).
+\end{KEY}
+
+    \myitem ``The central difficulty here is a lack of information: homeowners who don't use the device probably just don't know that it exists, or don't know whether or not other homeowners will use it." Do you agree with this argument? If so, explain why. If not, suggest a mechanism for reaching the optimal outcome in this game.%Circle one (Yes  No) and briefly explain.
+    \begin{EXAM}\mybigskip\mybigskip\mybigskip\end{EXAM}
+
+\begin{KEY}
+The central difficulty is \emph{not} that you don't know what
+others are going to do; you have a dominant strategy, so the other
+players' strategies are irrelevant for determining your optimal
+strategy. A better mechanism might be passing a law that everybody has to use the device or pay a large fine.
+\end{KEY}
+    \end{enumerate}
+
+
+
+
+
+\myitem Explain, as if to a non-economist, why
+the intersection of the market supply curve and the market demand
+curve identifies the market equilibrium.
+
+\begin{EXAM} \vspace{2in} \end{EXAM}
+
+\begin{KEY}
+The amount that buyers want to buy at the market equilibrium price is equal to the amount that sellers want to sell at that price. At a lower price, buyers want to buy more units than sellers want to sell; this creates incentives that push the price up towards equilibrium. At a higher price, sellers want to sell more units than buyers want to buy; this creates incentives that push the price down towards equilibrium.
+\end{KEY}
+
+
