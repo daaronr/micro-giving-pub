@@ -1,4 +1,4 @@
-# Utility and Choice  (Bee2024 - L2) {#util-choice}
+# Utility and Choice  (L2) {#util-choice}
 
 ## Coverage outline
 
@@ -29,7 +29,7 @@ Optional interesting readings:
 
 `r format_with_col("We now consider the very very fundamental building blocks behind the (in)famous 'neoclassical economics model.' If you accept these 'axioms' nearly everything flows from it!","gray")`
 
-### Some motivation for these abstract ideas {-}
+## Some motivation for these abstract ideas
 
 `r format_with_col("Consider a decision you recently made?  Define this decision clearly; what were the options?  How do you think you decided among these options?","blue")`
 
@@ -77,7 +77,7 @@ This yields predictions for individual behavior, markets, etc.
 
 *Note: Part 2 (NS ch 2-3) involves building the demand curve from first principles, and discussing how to interpret it*
 
-```{block2,  type='note'}
+*Notes:*
 We want to develop a model that can be used to show how we make choices or decisions.
 
 In the (neo) classical economics framework, your (optimising) choices are determined by two things:
@@ -85,10 +85,10 @@ In the (neo) classical economics framework, your (optimising) choices are determ
 1. Preferences: what goods do you like?
 
 2. Constraints: how much money do you have, what are the prices of the goods you buy?
-```
-<!--
+
+
+
 - `r format_with_col("Second problem set, first part (NS chapter 2): Preferences, Utility, Consumer optimization, individual and market demand","blue")`
--->
 
 ## Utility
 
@@ -188,11 +188,9 @@ The following is `r format_with_col("forbidden","red")`: "I cannot choose betwee
 
 `r format_with_col("Why *wouldn't* I be able to express a preference? In the case above that seems strange, but for other cases it may be extremely difficult or painful to make a choice, or very hard to compare two things. Imagine if you were asked to choose between never seeing your mother or never seeing your father. In general, economists' standard approach assumes we have a consistent preference ranking over all possibilities, and choose accordingly.  Other social sciences see this differently/","gray")`
 
-```{block2,  type='note'}
-Also 'forbidden' in the classical model: the *time* or *frame* in which I make the *decisions* must not affect my choices. This will be relaxed when we discuss behavioral economics,"gray"}`
-```
+`r format_with_col("Also 'forbidden' in the classical model: the *time* or *frame* in which I make the *decisions* must not affect my choices. This will be relaxed when we discuss behavioral economics.","gray")`
 
-<br>
+\medskip
 
 Fancy notation: Either A preferred to B, B preferred to A, or A indifferent to B
 
@@ -209,7 +207,7 @@ $$A \succ B, B \succ A, \: or \: A \sim B $$
 ***
 
 
-### 2. Transitivity {-}
+### 2. Transitivity {-} 
 
 $$ A \succ B \: and \: B \succ C \rightarrow A \succ C $$
 
@@ -261,14 +259,8 @@ It works as follows:
 
 ... Keep repeating steps 1-3, until you've drained all of their resources.
 
-```{block2,  type='compqn'}
 
-(Final) Exam question: What are 'transitive preferences'? Give an example of a person making choices that seem to reflect preferences that are transitive, and explain how you could 'pump money' from this person.
-
-```
-
-Ans: ^[Transitivity (internal consistency): If I prefer A to B, and prefer B to C, then I must prefer A to C.
-
+`r format_with_col("(Final) Exam question: What are 'transitive preferences'? Give an example of a person making choices that seem to reflect preferences that are \textit{not} transitive, and explain how you could 'pump money' from this person.","gray")`^[Transitivity (internal consistency): If I prefer A to B, and prefer B to C, then I must prefer A to C.
 If 'Intransitive Eddy' is offered 1 apple and 1 banana and 1p, he chooses the apple. If he is offered 1 banana versus 1 cherry and 1p, he chooses the banana. If he is offered 1 cherry versus 1 apple and 1p, he chooses the cherJjji
 Pump money from him: Buy an apple, a banana, and a cherry. Get him to buy a banana from you. Get him pay you 1p to trade his banana for your apple. Then get him to pay 1p to trade his apple for your cherry. Then get him to pay 1p to trade his cherry for your banana. Then get him to pay 1p to trade his banana for your apple. Repeat ad nauseum.]
 
@@ -336,9 +328,8 @@ Indifference curve
 Formally (for 2 goods), the set of pairs of ${X,Y}$ such that $U(X,Y)=c$ for some constant $c$^[Recall the "level sets" from the maths revision material.]
 
 ```{r  fig.cap = '', out.width='55%', fig.asp=.4, fig.align='center',  echo = FALSE}
-knitr::include_graphics("indifcurves_util_together.jpg")
-```/sfdaf
-
+ knitr::include_graphics("indifcurves_util_together.jpg")
+```
 
 
 Consider the above diagram ^[Credit: www2.econ.iastate.edu] . Think of this as a map with a projection above it.
@@ -373,10 +364,8 @@ The above diagram also includes color to depict the utility level, like a 'heat 
 
 *Note for above*: Suppose you are someone that likes hamburgers and soft drinks. If this is too difficult to imagine, think of two healthy goods, like runner beans and green tea.   Note that the *period* of consumption---a day, a year, or a lifetime---is not specified.
 
-```{block2,  type='compqn'}
-Comprehension Q: Rank order of preference between points A-E. (Note: I've asked this as a MCQ on exams!})
-(Answers to most comprehension questions are given in footnotes. Try to answer it yourself before looking at the footnote.) ^[Ans: $E \succ A \sim B \sim C \sim D \succ F$]
-```
+
+`r format_with_col("Note: I've asked this as a MCQ on exams!","blue}{Comprehension Q: Rank order of preference between points A-E.} \textcolor{gray")` (Answers to most comprehension questions are given in footnotes. Try to answer it yourself before looking at the footnote.) ^[Ans: $E \succ A \sim B \sim C \sim D \succ F$]
 
 <!--
 @MCQ: 2.3
@@ -417,7 +406,7 @@ or \
 E.g., a 50-50 split of each bundle yields, in this case, (6+2)/2 = 4 hamburgers and (2+6)/2=4 soft drinks.}
 
 
-## Marginal rate of substitution (MRS): Absolute value of slope of indifference curve {#mrs}
+## Marginal rate of substitution (MRS): Absolute value of slope of indifference curve
 
 The MRS measures the maximum amount of one good ($Y$) that you would be willing to give up in order to gain one more unit of another good ($X$). I.e., this would be the amount you could give up of $Y$ when you gain one unit of $X$ and be no worse or better off. You are 'indifferent' to making this change.^[\textcolor{RawSienna}{Adv, math: This slope will equal the negative of the *ratio* of the rate at which utility increases in each good (partial derivative).
 Intuition: giving up a certain utility from one good must be balanced by an increase in utility from the other good.
@@ -1051,7 +1040,7 @@ Thus $Y = I/(2P_Y)$ etc.]
 
 ***
 
+## Tutorial problems from chapter 2o
 
-
-## Tutorial problems from chapter 2: see VLE
+Watch this space
 
