@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="David Reinstein (Exeter)" />
+  <title>s_2_maths_empirics.utf8.md</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="s_2_maths_empirics_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="s_2_maths_empirics_files/reveal.js-3.3.0.1/css/theme/white.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="reveal.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <link href="s_2_maths_empirics_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="s_2_maths_empirics_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section><section id="second-lecture-maths-tools-skimmed-empirical-microeconomics-introducing-preferences" class="title-slide slide level1"><h1>Second lecture: Maths tools (skimmed), ‘empirical microeconomics’, introducing preferences</h1><p>Mainly for home-study: Maths and empirical tools</p>
+<p><em>Partial coverage for now, some revision as we apply these</em></p></section><section class="slide level2">
+
+<p>Goals of this material:</p>
+<p><br></p>
+<ul>
+<li>(Re)-aquaint you with some of maths tools we will use
+<ul>
+<li>without scaring you</li>
+</ul></li>
+</ul>
+<p><br></p>
+<ul>
+<li>Give a flavour of what <em>empirical</em> microeconomics is
+<ul>
+<li>and a sense of some of the key issues in empirical work</li>
+</ul></li>
+</ul>
+</section><section class="slide level2">
+
+<center>
+<big> <strong>Maths are here to help you</strong> </big>
+</center>
+</section><section class="slide level2">
+
+<p><strong>Math tools you must know or learn (see handout)</strong></p>
+<ol type="1">
+<li><p>(Univariate) functions, linear/nonlinear functions; the slope of a function (arc vs. point slope); concave/convex functions</p></li>
+<li><p>Derivative of a function: a function that tells you the slope at each point</p></li>
+<li><p>Minima, maxima</p></li>
+<li><p>Functions of two or more variables, contour lines</p></li>
+<li><p>(Simple) simultaneous equations</p></li>
+</ol>
+<p><br> </p>
+<p><small> <strong>Slides, resources to help you</strong>, plus supplementary videos; <a href="www.khanacademy.org/math/">www.khanacademy.org/math/</a> </small></p>
+<p><small> <font color='red'>Lecture may skip</font> to <a href="#/empiricalmini">Mini-lecture: Empirical microeconomics/econometrics</a> here </small></p>
+<aside class="notes">
+Don’t worry if you don’t understand everything; we will cover it again in context
+</aside>
+<aside class="notes">
+Do: Understand what the math is about and how to use it. Don’t worry about memorizing ‘cookbook rules’ that can be easily looked up.
+</aside>
+<aside class="notes">
+Khan: E.g., see their Introduction to differential calculus
+</aside>
+</section><section class="slide level2">
+
+</section></section>
+<section><section id="univariate-function" class="title-slide slide level1"><h1>Univariate function</h1><dl>
+<dt>(Univariate) Function</dt>
+<dd>A ‘map’ from one or more <em>variables</em> <span class="math inline">\(x\)</span> to an outcome <span class="math inline">\(y=f(x)\)</span>
+</dd>
+</dl>
+<p><br> </p>
+<ul>
+<li class="fragment">for each value of <span class="math inline">\(x\)</span> the function tells you a single value of <span class="math inline">\(f(x)\)</span>; typically we assign <span class="math inline">\(y=f(x)\)</span></li>
+</ul>
+<aside class="notes">
+‘Variables’ are more formally called the ‘arguments’ of a function
+</aside>
+<aside class="notes">
+<p>LC: Put up and plot the function <span class="math inline">\(f(x)=-10 +3x\)</span> here.</p>
+e.g., if I fish for x hours in a day, how much money do I earn (consider a 10 pound license fee)
+</aside></section><section id="linear-and-nonlinear-functions" class="slide level2">
+<h2>Linear and nonlinear functions</h2>
+<dl>
+<dt>Linear function</dt>
+<dd>A function of the form <span class="math inline">\(y=a+bX\)</span>; e.g., <span class="math inline">\(y = f(x) = -10 + 3x\)</span>
+</dd>
+</dl>
+<p><br> </p>
+<ul>
+<li>Plotted as a straight line; intercept <span class="math inline">\(a\)</span>, constant slope <span class="math inline">\(b\)</span></li>
+</ul>
+<aside class="notes">
+<p>Adv, Maths: For linear functions $f(a X_1 + b X_2) = a f(X_1) + b f(X_2) $ for any values of <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(X_1\)</span>, and <span class="math inline">\(X_2\)</span></p>
+<p>In particular ‘the function of the average is the average of the functions’.</p>
+This does <em>not</em> hold in general for nonlinear functions
+</aside>
+</section><section id="slopes" class="slide level2">
+<h2>Slopes</h2>
+<p>Slope of <span class="math inline">\(y = f(x)\)</span></p>
+<dl>
+<dt><br> </dt>
+<dd><p>The change in y for a given change in x. ‘Rise over run’ <span class="math inline">\((\Delta y / \Delta x)\)</span>.</p>
+</dd>
+</dl>
+<p><br> </p>
+<!-- \pause -->
+<ul>
+<li>Arc slopes vs point slopes</li>
+</ul>
+<aside class="notes">
+<p>Arc slope is the slope over a range.</p>
+<p>Point slope: slope of the tangent to a curve at a point</p>
+For linear functions these are the same
+</aside>
+</section><section class="slide level2">
+
+<p>Nonlinear (univariate) function : A function <span class="math inline">\(f(x)\)</span> of a form other than <span class="math inline">\(f(x) = y=a+bX\)</span>;</p>
+<p><br> </p>
+<!-- . . . -->
+<ul>
+<li>E.g., a quadratic function <span class="math inline">\(y = f(x) = a + bx + cx^2\)</span>
+<ul>
+<li>E,g, <span class="math inline">\(y = f(x) = 10 - 2x + 3x^2\)</span></li>
+</ul></li>
+</ul>
+<p><br> </p>
+<ul>
+<li>Or a logarithmic <span class="math inline">\(y=ln(x)\)</span> or exponential function <span class="math inline">\(y = exp(x)\)</span></li>
+</ul>
+<aside class="notes">
+I will try to limit things to linear and quadratic functions, and possibly exponential and log function
+</aside>
+<aside class="notes">
+I will remind you of the rules for dealing with these whenever it is necessary.
+</aside>
+</section><section class="slide level2">
+
+<p>For linear functions the slope is the same at any point. For nonlinear functions it may differ at each point.</p>
+<div id="left">
+<p><img src="picsfigs/linearslope.jpg" width="80%" /></p>
+</div>
+<div id="right">
+<p><img src="picsfigs/nonlinearslope.jpg" width="180%" /></p>
+</div>
+<aside class="notes">
+Think of the slope of a mountain versus the slope of a wheelchair ramp
+</aside>
+</section><section class="slide level2">
+
+<p><img data-src="picsfigs/linearquadratic.png" alt="Linear and quadratic" /></p>
+<aside class="notes">
+<p>The point here is that increasing X by 1 has the same effect on Y wherever you start, for a linear function</p>
+but a different effect depending on where you start for a nonlinear function
+</aside>
+<!---
+<aside class="notes">LC: Sketch a plot on board of a quadratic function;
+
+$y=-x^2+5x+1$  points (0,1), (1,5), (2,7),(2.5,7.25),(3,7),(6,-5)</aside>
+-->
+</section><section class="slide level2">
+
+<p><img src="picsfigs/concaveconvexquadratics.jpg" width="70%" style="display: block; margin: auto;" /></p>
+<dl>
+<dt>Instantaneous rate of change (instantaneous slope) <small> Aka ‘point slope’ </small></dt>
+<dd>The slope of the line <em>tangent</em> to the curve at a single point
+</dd>
+</dl>
+<aside class="notes">
+Adv, Math: This is the limit of the ‘rise over run’ as the run goes to zero
+</aside>
+<!-- . . . -->
+<p><small> Convex function: Slope everywhere increasing, unique minimum where slope <span class="math inline">\(=0\)</span> </small> <small> Concave function: Slope everywhere decreasing, unique <em>maximum</em> where slope <span class="math inline">\(=0\)</span> </small></p>
+<aside class="notes">
+Quadratics are convex if the squared term has a positive sign … dominates at large x
+</aside>
+<aside class="notes">
+<p>We will mainly deal with functions like these,</p>
+with a single minimum or maximum that occurs at the unique point with slope zero.
+</aside>
+<aside class="notes">
+<p>Ex convex: Tiger’s golf earnings per game as function of hours of golf retraining</p>
+<p>Or cost per smoothie as function of employees behind smoothie counter.</p>
+Ex concave: how funny I am as function of beers I drink
+</aside>
+</section><section id="the-derivative-of-a-function" class="slide level2">
+<h2>The Derivative of a function</h2>
+<dl>
+<dt>Derivative of a function</dt>
+<dd>A <em>derivative</em> of a function <span class="math inline">\(f(x)\)</span> is another function called <span class="math inline">\(f&#39;(x)\)</span>.
+</dd>
+<dd><p><span class="math inline">\(f&#39;(x)\)</span> tells us the (point) <em>slope</em> of the function <span class="math inline">\(f(x)\)</span> at any point <span class="math inline">\(x\)</span>.</p>
+</dd>
+</dl>
+<!-- . . . -->
+<p><br></p>
+<ul>
+<li class="fragment">For example, the derivative of the function <span class="math inline">\(f(x) = 2x + 3\)</span> is <span class="math inline">\(f&#39;(x) = 2\)</span>
+<ul>
+<li class="fragment">For this linear function the slope is a constant, 2</li>
+</ul></li>
+</ul>
+</section><section class="slide level2">
+
+<ul>
+<li>E.g., the derivative of the quadratic function <span class="math inline">\(f(x) = x^2 -4x + 1\)</span> is <span class="math inline">\(f&#39;(x) = 2x - 4\)</span></li>
+</ul>
+<p><img src="picsfigs/plotaquadfncnR.png" width="55%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<center>
+<small> Plotting a function and it’s derivative </small>
+</center>
+<p><img src="picsfigs/plotaquadfncn_andderiv.png" width="40%" style="display: block; margin: auto;" /></p>
+<ul>
+<li><p>Derivative of <span class="math inline">\(f(x) = x^2 -4x + 1\)</span> is <span class="math inline">\(f&#39;(x) = 2x - 4\)</span></p>
+<ul>
+<li><p>E.g., slope at <span class="math inline">\(x=1\)</span> is <span class="math inline">\(f&#39;(x;x=1) = 2\times1 - 4 = -2\)</span></p></li>
+<li><p>The slope is zero where <span class="math inline">\(f&#39;(x)=2x-4=0\)</span>, or where <span class="math inline">\(x=2\)</span></p></li>
+<li><p><em>Is <span class="math inline">\(x=2\)</span> at a min, a max, or neither? How do we know?</em></p></li>
+</ul></li>
+</ul>
+<!---
+R code
+fun1p <-function(x) 2*x -4
+fun1 <-function(x)  x * x - 4*x+1
+plot(fun1p,-.5,5,asp=1,xlim=c(-2,3),ylim=c(-3,4))
+plot(fun1,-.5,5,asp=1,xlim=c(-2,3),ylim=c(-3,4),add=TRUE)
+abline(h=-1:3, v=-3:3, col="gray", lty=3)
+abline(h=0,v=0)
+-->
+<aside class="notes">
+For some functions, there are simple rules for computing the derivative. You don’t have to memorise the rules for this module; I will always tell you the derivative when you might need it.
+</aside>
+<aside class="notes">
+LC: Plot ‘slope of function’ with same X-axis as function itself
+</aside>
+</section><section id="minimum-maximum-or-neither" class="slide level2">
+<h2>Minimum, maximum, or neither?</h2>
+<p><span class="math inline">\(f&#39;(x)\)</span> is a function that tells us the slope of <span class="math inline">\(f(x)\)</span>, or how <span class="math inline">\(f(x)\)</span> changes in <span class="math inline">\(x\)</span> at any point <span class="math inline">\(x\)</span></p>
+<p><br></p>
+<ul>
+<li class="fragment">In turn, the derivative of <span class="math inline">\(f&#39;(x)\)</span> is called <span class="math inline">\(f&#39;&#39;(x)\)</span>.</li>
+</ul>
+<ul>
+<li class="fragment">Tells us how the <em>slope</em> changes as <span class="math inline">\(x\)</span> increases</li>
+</ul>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/concaveconvexquadratics.jpg" width="70%" style="display: block; margin: auto;" /></p>
+<p>Oversimplifying:</p>
+<ul>
+<li><p>slope always <font color='blue'>increasing</font> <span class="math inline">\(\rightarrow\)</span> <span class="math inline">\(f&#39;&#39;(x)&gt;0\)</span> everywhere <span class="math inline">\(\rightarrow\)</span> <em>convex</em> (u-shaped) function <span class="math inline">\(\rightarrow\)</span> single  where <span class="math inline">\(f&#39;(x)=0\)</span></p></li>
+<li><p>slope always <font color='brown'>decreasing</font> <span class="math inline">\(\rightarrow\)</span> <span class="math inline">\(f&#39;&#39;(x)&lt;0\)</span> everywhere <span class="math inline">\(\rightarrow\)</span> <em>concave</em> (inverse-u) fncn <span class="math inline">\(\rightarrow\)</span> single  where <span class="math inline">\(f&#39;(x)=0\)</span></p></li>
+</ul>
+<aside class="notes">
+Adv, Math: Essentially, for a class of functions where the domain is not bounded
+</aside>
+</section></section>
+<section><section id="functions-of-two-or-more-variables-multivariate-functions" class="title-slide slide level1"><h1>Functions of two or more variables (multivariate functions)</h1><p>Utility, profit, cost, production, returns, etc.</p>
+<ul>
+<li>May depend on multiple variables/inputs</li>
+<li>Need to illustrate tradeoffs between these</li>
+</ul>
+<!-- . . . -->
+<p><span class="math display">\[y=f(x,z)\]</span></p></section><section id="section" class="slide level2">
+<h2></h2>
+<p><span class="math display">\[y=f(x,z)\]</span></p>
+<ul>
+<li><p><span class="math inline">\(y\)</span> may increase and/or decrease in <span class="math inline">\(x\)</span> and in <span class="math inline">\(z\)</span>,</p></li>
+<li><p>The rate of increase of y in <span class="math inline">\(x\)</span> may depend on the values of <span class="math inline">\(x\)</span> and <span class="math inline">\(z\)</span></p>
+<ul>
+<li>Similar for the rate of increase of y in z</li>
+</ul></li>
+</ul>
+<p><br></p>
+<!-- . . . -->
+<p>E.g., <span class="math display">\[y=\sqrt(xz) = x^{1/2}z^{1/2}, x \geq 0, z \geq 0\]</span></p>
+<aside class="notes">
+<p>Examples: fun-ness of party = f(beer, snacks)</p>
+smoothies produced = f(labour hours, machines)
+</aside>
+<aside class="notes">
+<p>Note the outcome will increase in each argument at a decreasing rate</p>
+<p>What does it look like? 3d: project up to y from a “map” of x and z coordinates on the desk</p>
+Hard to picture; ‘contour lines’ can help
+</aside>
+</section><section class="slide level2">
+
+<p>Projecting a function up from X,Y space into the Z axis:</p>
+<p><img src="picsfigs/doubledip.jpg" width="70%" style="display: block; margin: auto;" /></p>
+</section></section>
+<section><section id="contour-lines" class="title-slide slide level1"><h1>Contour lines</h1><p><em>We will come back to this later!</em></p>
+<p><br></p>
+<dl>
+<dt>Contour lines</dt>
+<dd>Level sets - depict combinations of variables that hold the function constant at a particular value
+</dd>
+<dd>f(x,z) = A for some value <span class="math inline">\(A\)</span>
+</dd>
+</dl>
+<p><br></p>
+<p><small> Level sets: <em>E.g., indifference curves</em>, <em>isoquants</em> and <em>isocost</em> curves. </small></p>
+<aside class="notes">
+<p>Don’t worry if you find this discussion of level sets confusing</p>
+We will come back to it later in the module for a more specific case
+</aside></section><section class="slide level2">
+
+<p><img src="picsfigs/contourlines.jpeg" width="60%" style="display: block; margin: auto;" /></p>
+<p><br> </p>
+<p><em>Contour lines on a map</em></p>
+<aside class="notes">
+<p>It is difficult to depict more than 2 dimensions on a piece of paper.</p>
+<p>So we find the values for the 2 variables that give us a particular value for the third.</p>
+Which tells us how these trade off.
+</aside>
+</section><section class="slide level2">
+
+<p>Consider a production function:</p>
+<p><span class="math display">\[Y = f(K,L) = \sqrt(KL)\]</span></p>
+<!-- . . . -->
+<p>Setting this equal to 1 we can map out ‘all combinations of K and L that produce output <span class="math inline">\(Y=1\)</span>’:</p>
+<aside class="notes">
+<p>By solving for the amount of K needed to produce 1 as a function of L</p>
+and then plotting this against a range of L
+</aside>
+<p><span class="math display">\[  Y = \sqrt(KL) = 1 \rightarrow KL = 1 \]</span></p>
+<!-- . . . -->
+<p><span class="math display">\[ \rightarrow K = 1/L \]</span></p>
+<!-- . . . -->
+<p>Setting this at Y = 2</p>
+<p><span class="math display">\[  Y = \sqrt(KL) = 2 \rightarrow KL = 4 \]</span> <span class="math display">\[ \rightarrow K = 4/L \]</span></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/contourcombos.png" width="60%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+Connect values of x and z that lead to the same value of y.
+</aside>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/contourlines_example.png" width="60%" style="display: block; margin: auto;" /></p>
+</section></section>
+<section><section id="simultaneous-equations" class="title-slide slide level1"><h1>Simultaneous equations</h1><p><img src="picsfigs/simeqn.png" width="60%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+Class: What does this ‘cross’ remind you of, that we have just seen?
+</aside></section><section class="slide level2">
+
+<p>E.g.,</p>
+<p><span class="math display">\[ X + Y = 3 \]</span> <span class="math display">\[ X - Y = 1 \]</span></p>
+<p><br />
+</p>
+<p>Holds only where <span class="math inline">\(X=2, Y=1\)</span>, the ‘unique solution’</p>
+<aside class="notes">
+Be sure you know how to solve the above.
+</aside>
+<aside class="notes">
+Adv, math: Note, in general, we need as many equations as unknowns (above 2 of each) to <em>possibly</em> be able to find a solution. However, some sets of equations have <em>no</em> solution, and some may have <em>multiple</em> solutions. Consider plotting overlapping lines, or parrallel lines, and looking for the point(s) of intersection.
+</aside>
+<p><br />
+</p>
+<!-- . . . -->
+<p><br />
+</p>
+<ul>
+<li class="fragment">Meaningless to ask ‘how does a change in X affect Y?’ in the above context.</li>
+</ul>
+<aside class="notes">
+Equally meaningless: ‘how does the price affect the quantity exchanged?’ in a demand-supply Marshallian cross.
+</aside>
+</section></section>
+<section><section id="empiricalmini" class="title-slide slide level1"><h1>Mini-lecture: Empirical microeconomics/econometrics</h1><dl>
+<dt>Empirical research</dt>
+<dd>Uses evidence from the <em>real world</em>, i.e., observation, to answer questions
+</dd>
+</dl>
+<aside class="notes">
+Evidence rather than introspection and theory
+</aside>
+<!-- . . . -->
+<p><br></p>
+<dl>
+<dt>Econometrics</dt>
+<dd>The ‘science’ of using data to answer economic questions. Uses statistical tools and often economic theory
+</dd>
+</dl></section><section class="slide level2">
+
+<!-- . . . -->
+<dl>
+<dt>Micro-data</dt>
+<dd>Data where the unit of observation is an individual, household, firm, etc.
+</dd>
+</dl>
+<aside class="notes">
+Contrasts from macro-data, data on aggregates like GDP, inflation, etc.
+</aside>
+<aside class="notes">
+<p>Most of this module will cover economic theory and the application of this theory to the real world.</p>
+We will refer to empirical <em>evidence</em> a bit; I want you to have some sense of how this is evidence is built.
+</aside>
+<aside class="notes">
+LC: Give me an example of micro-data
+</aside>
+<aside class="notes">
+Adv: Econometrics often has a different focus and different methodology than ‘regular statistics’.
+</aside>
+<aside class="notes">
+Adv: Econometrics has taken on a larger role in economics over the past 40 years, because of greater data availability and computing power. Most published papers in economics now involve some econometric analysis.
+</aside>
+</section><section id="empiricalish-example" class="slide level2">
+<h2>Empirical(ish) example</h2>
+<aside class="notes">
+A bit advanced, don’t worry if it goes above your head a little
+</aside>
+<p><img src="picsfigs/peachprices.png" width="50%" style="display: block; margin: auto;" /></p>
+<p>Trying to estimate demand curve, hypothesize linear function <span class="math display">\[Q_d = a-bp\]</span></p>
+<p><small> <font color='gray'>Suppose we know price is shifting because of costs, shifts in supply</font> curve, or the firm is experimenting. Observe price &amp; quantity data for a period where <em>ceteris paribus</em> is reasonable. </small></p>
+<aside class="notes">
+Adv: Otherwise the problem is poorly identified, as demand and supply will jointly determine price
+</aside>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/demanddata.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>Fit ‘best’ line (minimise error) through these points</p>
+<ul>
+<li><p>Estimate demand slope &amp; intercept, use to make inferences</p></li>
+<li><p>Never fits exactly. <font color='blue'>why not?</font></p></li>
+</ul>
+<aside class="notes">
+Ans: unobserved differences, nonlinear demand, measurement error, randomness in behaviour
+</aside>
+<aside class="notes">
+Advanced: Why is this <em>only</em> meaningful if we are observing shifts in the supply curve and not the demand curve?
+</aside>
+</section><section class="slide level2">
+
+<h3 id="ceteris-paribus">Ceteris paribus</h3>
+<blockquote>
+<p>All [most] economic theories employ the assumption that ‘other things are held constant.’</p>
+</blockquote>
+<p><br></p>
+<ul>
+<li>Above, demand may differ between weeks/stores, weather changes, etc.</li>
+</ul>
+<!-- . . . -->
+<blockquote>
+<p>the points may lie on several different demand curves, and attempting to force them into a single curve would be a mistake.</p>
+</blockquote>
+<p><span class="math inline">\(\rightarrow\)</span> Carefully ‘control’ for other observable factors (a partial solution)</p>
+<aside class="notes">
+<p>Can never control for everything or know ‘true’ functional form; sadly all <em>empirical</em> work involves imperfect compromises</p>
+But happily there are ways to test and validate the estimates, e.g., see how well they predict future outcomes
+</aside>
+</section><section id="but-what-if-we-just-observe-a-dataset-of-price-and-quantity-in-a-large-market" class="slide level2">
+<h2>But what if we just observe a dataset of ‘price and quantity’ in a large market?</h2>
+<p><img src="picsfigs/sales_v_price.png" width="40%" style="display: block; margin: auto;" /></p>
+<ul>
+<li class="fragment">Can we estimate a demand curve?</li>
+<li class="fragment">A supply curve? Both?</li>
+</ul>
+</section><section id="application-1a.3-changing-world-oil-prices-time-permitting" class="slide level2">
+<h2>Application 1A.3: … Changing world oil prices (time-permitting)</h2>
+<aside class="notes">
+<p>This is a great example from perhaps the most important global market, with tremendous fluctuations that have huge impacts.</p>
+It shows the power of empirical microeconomics.
+</aside>
+<aside class="notes">
+Note edition 12 updates
+</aside>
+<p></p>
+</section><section class="slide level2">
+
+<p>Empirical work has estimated:</p>
+<aside class="notes">
+dollars, millions of <em>barrels</em>, earlier period
+</aside>
+<p><br />
+</p>
+<p><span class="math display">\[ Q = 85 - 0.4P \: (D) \]</span> <span class="math display">\[ Q = 55 + 0.6P \: (S) \]</span></p>
+<!-- . . . -->
+<p>Solving: <span class="math inline">\(85 - 0.4P=55+0.6P \rightarrow P = 30, Q = 73\)</span></p>
+<aside class="notes">
+This is the sort of simultaneous equation you should be able to solve.
+</aside>
+<p><br />
+</p>
+<p><br> </p>
+<p>Approximates 2000-2002 price</p>
+</section><section class="slide level2">
+
+<p><em>Why did price rise to US$130 in 2008 and fall to $50 by March ’09?</em></p>
+<!-- . . . -->
+<ul>
+<li>China &amp; India’s economies grew <span class="math inline">\(\rightarrow\)</span> growth in the world economy by 3-4% per year
+<ul>
+<li>(Various calculations) <span class="math inline">\(\rightarrow\)</span> Demand shifts out from <span class="math inline">\(Q_D = 85 - 0.4P\)</span> to:</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>I think the ‘new demand’ curve comes from an approximation:</p>
+<p>if the world economy grew at 4% per year over seven years, each year it was 1.05 times it’s previous size. … thus the growth is <span class="math inline">\(1.047^7=1.316\)</span>.</p>
+<p>They assume oil’s demand curve would shift out proportionally but have the same slope. 1.316*85 is about 112.</p>
+Note that the NS text has a typo: equation 3 on page 40, the new demand, should read <span class="math inline">\(Q=112-0.4P\)</span>.
+</aside>
+<p><span class="math display">\[Q_D = 112 - 0.4P\]</span> <span class="math display">\[Q_S = 55 + 0.6P\]</span></p>
+<ul>
+<li class="fragment"><span class="math inline">\(\rightarrow\)</span> solves to <span class="math inline">\(P=57, Q=87\)</span></li>
+</ul>
+<!-- . . . -->
+<ul>
+<li class="fragment">Overall price inflation, US$ devaluation <span class="math inline">\(\rightarrow\)</span> gets us to about $94. <font color='blue'>So why the $130 price?</font></li>
+</ul>
+<aside class="notes">
+The rest? Speculation, other disruptions <em>Supply</em> shifts? (political turmoil, new energy sources…)
+</aside>
+<aside class="notes">
+Class question – current price of oil in USD and GBP? Ans: (look online)… PwC wants ‘industry awareness’.
+</aside>
+<aside class="notes">
+26 Sep 2018 about $80 or £61
+</aside>
+</section><section id="first-problem-set-coverage" class="slide level2">
+<h2>First problem set: coverage</h2>
+<p>See Handout/web-book</p>
+<p><br> </p>
+<!---
+8 total problem sets; each covering a block of material
+- Material from exams or builds exam skills
+-->
+<ul>
+<li><p>Representative answers for each problem set given about 1-week after posting</p></li>
+<li><p>Five support classes (tutorials), cover <em>parts</em> of these</p></li>
+</ul>
+</section><section class="slide level2">
+
+<p>E.g., …</p>
+<ol type="I">
+<li>Plotting supply and demand “for orange juice”, solving, for equilibrium price, excess demand/supply at non-equilibrium prices</li>
+</ol>
+<aside class="notes">
+<p>In the real world, you might collect data like this and want to ‘fit a line’ to it.</p>
+But it will never such a precise fit (you will fit a ‘regression line’ to minimise the deviations), and the ‘all else equal’ assumption is always an issue.
+</aside>
+</section><section class="slide level2">
+
+<ol start="3" type="I">
+<li>Example of some (tricky) MCQs from previous exams</li>
+</ol>
+<p><br> </p>
+<p>E.g., “True or false: It is valid to plot observed prices and quantities traded in a market and fit a line through them to estimate a market demand curve.”</p>
+<!-- . . . -->
+<p><br> </p>
+<ol start="4" type="I">
+<li>Discussion questions: practice writing concise essays and bullet points</li>
+</ol>
+<!---
+BEGINLEC2
+-->
+</section></section>
+<section><section id="preamble-to-utility-and-choice" class="title-slide slide level1"><h1>Preamble to Utility and Choice</h1><p>(NS - Chapter 2)</p></section><section id="motivation" class="slide level2">
+<h2>Motivation</h2>
+<p>Consider a decision you recently made?</p>
+<p><br> </p>
+<ul>
+<li><p>Define this decision clearly.</p></li>
+<li><p>How do you think you decided among these options?</p></li>
+</ul>
+<!-- \pause -->
+<p>2 minutes: discuss with your neighbour</p>
+<aside class="notes">
+<p>What did this depend on? Would other people in your place have made the same decision?</p>
+If you got amnesia and forgot what you decided and then were in the same situation again. Do you think you’d make the same decision?
+</aside>
+</section><section class="slide level2">
+
+<p>Suppose I asked you</p>
+<p>‘State a rule that governs (determines/characterizes) how people <em>do</em> make decisions’…</p>
+<!-- . . . -->
+<p><br> </p>
+<p>I want this rule to be…</p>
+<ol type="1">
+<li><p>Informative (it rules <em>out</em> at least some sets of choices)</p></li>
+<li><p>Predictive (people rarely if ever violate this rule)</p></li>
+</ol>
+</section><section class="slide level2">
+
+<p>Similar question:</p>
+<p>‘State a rule that governs how people <em>should</em> make decisions’..</p>
+<p><br> </p>
+<p>By ‘should’ I mean that <em>they will not regret having made decisions in this way.</em></p>
+<!-- \pause -->
+<p>2 minutes: discuss with your neighbour</p>
+</section><section class="slide level2">
+
+<p><big> If people <em>did</em> follow these rules, what would this imply and predict? </big></p>
+<!-- \pause -->
+<p>Rules defined as ‘axioms about preferences’</p>
+<p><br></p>
+<!-- . . . -->
+<ul>
+<li class="fragment">‘Standard axioms’ <span class="math inline">\(\rightarrow\)</span> (imply that) choices can be expressed by ‘individuals maximising <em>utility functions</em> subject to their <em>budget constraints</em>’</li>
+</ul>
+<ul>
+<li class="fragment"><span class="math inline">\(\rightarrow\)</span> yields predictions for individual behavior, markets, etc.</li>
+</ul>
+<aside class="notes">
+<p>Economists and decision theorists have tried to come up with and defend such rules.</p>
+<p>They have started from these `reasonable axioms’ and follow their logical implications for  individual choices, individual responses to changes in prices and income,</p>
+<p>market prices and quantities and their responses,</p>
+`welfare’ and inequality outcomes for entire economies, etc.
+</aside>
+</section></section>
+    </div>
+  </div>
+
+  <script src="s_2_maths_empirics_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="s_2_maths_empirics_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: true,
+        // Transition style
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        chalkboard: {
+        },
+
+        keyboard: {
+          67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
+          66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+          46: function() { RevealChalkboard.clear() },    // clear chalkboard when 'DEL' is pressed
+           8: function() { RevealChalkboard.reset() },    // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+          68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 's_2_maths_empirics_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+          { src: 's_2_maths_empirics_files/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+          { src: 's_2_maths_empirics_files/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
