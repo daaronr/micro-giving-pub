@@ -3,8 +3,7 @@ date: "`r format(Sys.time(), '%d/%m/%Y')`"
 author: "David Reinstein (Exeter)"
 output:
   revealjs::revealjs_presentation:
-    self_contained: false
-    reveal_plugins: ["notes", "chalkboard","zoom"]
+    self_contained: true
     theme: white
     highlight: pygments
     transition: fade
@@ -16,7 +15,7 @@ output:
     keep_tex: yes
     theme: metropolis
   ioslides_presentation:
-      self_contained: false
+      self_contained: true
       template: io.html
 options: knitr.table.format = "html"
 classoption: table
@@ -574,7 +573,7 @@ Real understanding: be able to explain this stuff in your own words and apply it
 
 ## Fortune Cookie Wisdom
 
-![fortune](fortunecookieyoda.jpg)\
+![fortune](picsfigs/fortunecookieyoda.jpg)\
 
 
 ----
@@ -1369,7 +1368,7 @@ Some questions/problems I liked are in the handout... also see Problem Set 1 on 
 <!---
 -->
 
----- 
+----
 
 Be sure that you can do problems like 1.1 in the N\&S text without difficulty;
 
@@ -1532,7 +1531,7 @@ For linear functions the slope is the same at any point. For nonlinear functions
 
 ----
 
- ![Linear and quadratic](linearquadratic.png)
+ ![Linear and quadratic](picsfigs/linearquadratic.png)
 
 
 <aside class="notes">The point here is that increasing X by 1 has the same effect on Y wherever you start, for a linear function
@@ -1764,20 +1763,20 @@ $$ \rightarrow K = 4/L $$
 
 ----
 
-![Table 1A.2](contourcombos.png)
+![Table 1A.2](picsfigs/contourcombos.png)
 
 <aside class="notes">Connect values of x and z that lead to the same value of y.</aside>
 
 
 ----
 
-![Contour lines](contourlines_example.png)
+![Contour lines](picsfigs/contourlines_example.png)
 
 ----
 
 ## Simultaneous equations
 
-![Simultaneous equations](simeqn.png)
+![Simultaneous equations](picsfigs/simeqn.png)
 
 <aside class="notes">Class: What does this 'cross' remind you of, that we have just seen?</aside>
 
@@ -1955,7 +1954,7 @@ $$P=Q+Z$$
 
 <aside class="notes">Note edition 12 updates</aside>
 
-\includegraphics{Brent_Spot_monthly.png}
+![](picsfigs/Brent_Spot_monthly.png)
 
 ----
 
@@ -2317,7 +2316,7 @@ Utility is not 'observable and measurable in utils'
 
 
 ```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/alscat.jpg")
+knitr::include_graphics("picsfigs/alscat.jpg")
 ```
 
 ----
@@ -2497,7 +2496,7 @@ If not $\rightarrow$ money pump.
 ### 3. More is better (similar to nonsatiation, 'monotonicity')
 
 ```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("moreisbetter.png")
+ knitr::include_graphics("picsfigs/moreisbetter.png")
 ```
 
 \medskip

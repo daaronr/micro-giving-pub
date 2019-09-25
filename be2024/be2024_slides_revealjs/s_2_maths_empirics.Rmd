@@ -1,96 +1,117 @@
-# Second lecure: Maths tools (skimmed), 'empirical microeconomics', introducing preferences
-a
-## Mainly for home-study: Maths and empirical tools
+---
+date: "`r format(Sys.time(), '%d/%m/%Y')`"
+author: "David Reinstein (Exeter)"
+output:
+  revealjs::revealjs_presentation:
+    self_contained: false
+    reveal_plugins: ["notes", "chalkboard","zoom"]
+    theme: white
+    highlight: pygments
+    transition: fade
+    smart: true
+    css: reveal.css
+    center: true
+  beamer_presentation:
+    latex_engine: xelatex
+    keep_tex: yes
+    theme: metropolis
+  ioslides_presentation:
+      self_contained: true
+      template: io.html
+options: knitr.table.format = "html"
+classoption: table
+---
+
+
+```{r somefunctions, echo=FALSE, results='hide'}
+
+#possibly move these to a separate file
+
+#multi-output text color
+#https://dr-harper.github.io/rmarkdown-cookbook/changing-font-colour.html#multi-output-text-colour
+#We can then use the code as an inline R expression format_with_col("my text", "red")
+
+format_with_col = function(x, color){
+  if(knitr::is_latex_output())
+    paste("\\textcolor{",color,"}{",x,"}",sep="")
+  else if(knitr::is_html_output())
+    paste("<font color='",color,"'>",x,"</font>",sep="")
+  else
+    x
+}
+
+
+#do the same for centering etc
+
+```
+
+# Second lecture: Maths tools (skimmed), 'empirical microeconomics', introducing preferences
+
+Mainly for home-study: Maths and empirical tools
 
 *Partial coverage for now, some revision as we apply these*
 
 ----
 
-Goals of this material:*
+Goals of this material:
 
+<br> 
 
 - (Re)-aquaint you with some of maths tools we will use
     - without scaring you
+    
+<br>
 
 
 - Give a flavour of what *empirical* microeconomics is
-    - and you a sense of some of the key issues in empirical work
+    - and  a sense of some of the key issues in empirical work
+
+----
+
+<center> <big> **Maths are here to help you** </big> </center>
 
 
 ----
 
-\textrm{\huge Maths are here to help you}
+**Math tools you must know or learn (see handout)**
 
+1. (Univariate) functions, linear/nonlinear functions;  the slope of a function (arc vs. point slope); concave/convex functions
 
-Math tools you must know or learn -- see handout, referring to NS text
+2. Derivative of a function: a function that tells you the slope at each point
 
-1. (Univariate) functions, linear/nonlinear functions;  the slope of a function (arc vs. point slope), concave/convex functions
+3. Minima, maxima
 
-2. Derivative of a function: a function that tells you the slope at each point;  Minima, maxima
-
-4. Functions of two or more variables,  contour lines
+4. Functions of two or more variables, contour lines
 
 5. (Simple) simultaneous equations
 
 
-**Slides, resources to help you**, plus supplementary videos; www.khanacademy.org/math/
-
 <br> \bigskip
 
-`r format_with_col("Lecture skips","red")` to [Mini-lecture: Empirical microeconomics/econometrics](#empiricalmini) here
-
-\hyperlink{empiricalmini}{\beamerbutton{[link]}}
+<small> **Slides, resources to help you**, plus supplementary videos; [www.khanacademy.org/math/](www.khanacademy.org/math/) </small>
 
 
+<small> `r format_with_col("Lecture may skip","red")` to [Mini-lecture: Empirical microeconomics/econometrics](#empiricalmini) here </small>
 
-----
-
-*Goals of this lecture (and accompanying self-study)*
-
-- Overview of (re)-aquaintance with maths tools we will use
-
-- Flavour of what *empirical* microeconomics is, key issues in empirical work
-
-<!-- . . . -->
-
-*Covers:*
-
-- Nicholson/Snyder Chapter 1a: Mathematics used in Microeconomics
-<aside class="notes">Skimmed very briefly, you should know most of this,
-
-    Here I give a 'calculus for dummies' to make this clearer</aside>
-
-
-
-<aside class="notes">The math is here to help you, don't let it scare you,
-
-and don't worry if you don't understand everything; we will cover it again in context</aside>
-
-
-
+<aside class="notes"> Don't worry if you don't understand everything; we will cover it again in context</aside>
 
 <aside class="notes">Do: Understand what the math is about and how to use it.
-
 Don't worry about memorizing 'cookbook rules' that can be easily looked up.</aside>
 
 
-<!-- . . . -->
+<aside class="notes"> Khan: E.g., see their Introduction to differential calculus </aside>
 
+----
 
-A *very* good resource -- Khan academy: https/posi://www.khanacademy.org/math/
-
-- E.g., see their Introduction to differential calculus
-
-
-##Simple stuff
-
+# Univariate function
 
 (Univariate) Function
 :     A 'map' from one or more *variables* $x$ to an outcome $y=f(x)$
 
-- for each value of $x$ the function tells you a single value of $f(x)$; typically we assign $y=f(x)$
+<br>  \bigskip 
 
-\
+> - for each value of $x$ the function tells you a single value of $f(x)$; typically we assign $y=f(x)$
+
 
 <aside class="notes">'Variables' are more formally called the 'arguments' of a function </aside>
 <aside class="notes">LC: Put up and plot the function $f(x)=-10 +3x$ here.
@@ -98,12 +119,13 @@ A *very* good resource -- Khan academy: https/posi://www.khanacademy.org/math/
 e.g., if I fish for x hours in a day, how much money do I earn (consider a 10 pound license fee)</aside>
 
 
-----
+## Linear and nonlinear functions
 
-\
 
 Linear function
 :     A function of the form $y=a+bX$; e.g., $y = f(x) = -10 + 3x$
+
+<br>  \bigskip 
 
 - Plotted as a straight line; intercept $a$, constant slope $b$
 
@@ -114,10 +136,13 @@ In particular 'the function of the average is the average of the functions'.
 This does *not* hold in general for nonlinear functions</aside>
 
 
-----
+## Slopes
 
 
 Slope of $y = f(x)$
+
+<br> \bigskip
+
 :      The change in y for a given change in x.  'Rise over run' $(\Delta y / \Delta x)$.
 
 
@@ -125,7 +150,7 @@ Slope of $y = f(x)$
 
 <!-- \pause -->
 
-- Arc slope, point slopes
+- Arc slopes vs point slopes
 
 <aside class="notes">Arc slope is the slope over a range.
 
@@ -139,11 +164,17 @@ Nonlinear (univariate) function
             : A function $f(x)$ of a form other than $f(x) = y=a+bX$;
 
 
+<br>  \bigskip 
+
 <!-- . . . -->
 
 
 - E.g., a quadratic function $y = f(x) = a + bx + cx^2$
     - E,g, $y = f(x) = 10 - 2x + 3x^2$
+    
+
+<br>  \bigskip 
+
 - Or a logarithmic $y=ln(x)$ or exponential function $y = exp(x)$
 
 <aside class="notes">I will try to limit things to linear and quadratic functions, and possibly exponential and log function</aside>
@@ -153,29 +184,43 @@ Nonlinear (univariate) function
 ----
 
 
-\
 
 For linear functions the slope is the same at any point. For nonlinear functions it may differ at each point.
 
-<br> \bigskip
 
-```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("linearslope.jpg")
+<div id="left">
+
+``` {r crs_ctrl_top, out.width='80%', echo=FALSE}
+
+knitr::include_graphics('picsfigs/linearslope.jpg')
+
 ```
-```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("nonlinearslope.jpg")
+
+
+</div>
+
+<div id="right">
+
+``` {r crs_test_top, out.width='180%', echo=FALSE}
+
+knitr::include_graphics('picsfigs/nonlinearslope.jpg')
+
 ```
+
+</div>
 
 <aside class="notes">Think of the slope of a mountain versus the slope of a wheelchair ramp</aside>
 
+
 ----
 
- ![Linear and quadratic](linearquadratic.png)
+![Linear and quadratic](picsfigs/linearquadratic.png)
 
 
 <aside class="notes">The point here is that increasing X by 1 has the same effect on Y wherever you start, for a linear function
 
 but a different effect depending on where you start for a nonlinear function</aside>
+
 <!---
 <aside class="notes">LC: Sketch a plot on board of a quadratic function;
 
@@ -186,20 +231,19 @@ $y=-x^2+5x+1$  points (0,1), (1,5), (2,7),(2.5,7.25),(3,7),(6,-5)</aside>
 ----
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("concaveconvexquadratics.jpg")
+ knitr::include_graphics("picsfigs/concaveconvexquadratics.jpg")
 ```
 
-Instantaneous rate of change (instantaneous slope)
+Instantaneous rate of change (instantaneous slope) <small> Aka 'point slope' </small>
 :    The slope of the line *tangent* to the curve at a single point
 
 <aside class="notes">Adv, Math: This is the limit of the 'rise over run' as the run goes to zero</aside>
 
-
 <!-- . . . -->
 
 
-- Convex function: Slope everywhere increasing, unique minimum where slope $=0$
-- Concave function: Slope everywhere decreasing, unique *maximum* where slope $=0$
+<small> Convex function: Slope everywhere increasing, unique minimum where slope $=0$ </small>
+<small>  Concave function: Slope everywhere decreasing, unique *maximum* where slope $=0$ </small>
 
 <aside class="notes">Quadratics are convex if the squared term has a positive sign ... dominates at large x</aside>
 
@@ -215,48 +259,46 @@ Or cost per smoothie as function of employees behind smoothie counter.
 Ex concave: how funny I am as function of beers I drink</aside>
 
 
-----
+## The Derivative of a function
 
 Derivative of a function
-:     A *derivative* of a function $f(x)$ is another function called $f'(x)$.
-$f'(x)$ tells us the (point) *slope* of the function $f(x)$ at any point $x$.
+:     A *derivative* of a function $f(x)$ is another function called $f'(x)$. 
+
+: $f'(x)$ tells us the (point) *slope* of the function $f(x)$ at any point $x$.
 
 
 <!-- . . . -->
 
+<br>
 
-- For example, the derivative of the function $f(x) = 2x + 3$ is $f'(x) = 2$
-    - For this linear function the slope is a constant, 2
+
+> - For example, the derivative of the function $f(x) = 2x + 3$  is   $f'(x) = 2$
+>     - For this linear function the slope is a constant, 2
 
 ----
 
 - E.g., the derivative of the quadratic function $f(x) = x^2 -4x + 1$ is $f'(x) = 2x - 4$
 
-<br> \bigskip
 
-```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("plotaquadfncnR.png")
+```{r  fig.cap = '', out.width='55%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/plotaquadfncnR.png")
 ```
 
 ----
 
-- derivative of the quadratic function $f(x) = x^2 -4x + 1$ is $f'(x) = 2x - 4$
 
-
-```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("plotaquadfncn_andderiv.png")
+<center> <small> Plotting a function and it's derivative </small> </center>
+```{r  fig.cap = '', out.width='40%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/plotaquadfncn_andderiv.png")
 ```
 
+- Derivative of $f(x) = x^2 -4x + 1$ is $f'(x) = 2x - 4$ 
 
+  - E.g.,  slope at $x=1$ is $f'(x;x=1) = 2\times1 - 4 = -2$
 
-<!-- . . . -->
-
-
-- E.g., the slope at $x=1$ is $f'(x;x=1) = 1*1 - 4 = -2
-
-- The slope is zero where $f'(x)=2x-4=0$, or where $x=2$
-
-    - *Is $x=2$ at a min, a max, or neither? How do we know?*
+  - The slope is zero where $f'(x)=2x-4=0$, or where $x=2$
+  
+  - *Is $x=2$ at a min, a max, or neither? How do we know?*
 
 <!---
 R code
@@ -268,7 +310,6 @@ abline(h=-1:3, v=-3:3, col="gray", lty=3)
 abline(h=0,v=0)
 -->
 
-
 <aside class="notes">For some functions, there are simple rules for computing the derivative.
  You don't have to memorise the rules for this module; I will always tell you the derivative when you might need it.</aside>
 <aside class="notes">LC: Plot 'slope of function' with same X-axis as function itself</aside>
@@ -276,31 +317,34 @@ abline(h=0,v=0)
 
 ## Minimum, maximum, or neither?
 
-- $f'(x)$ is a function that tells us the slope of $f(x)$, or how $f(x)$ changes in $x$ at any point $x$
-- In turn, the derivative of $f'(x)$ is called $f''(x)$.
-    - Tells us how the *slope* changes as $x$ increases
+$f'(x)$ is a function that tells us the slope of $f(x)$, or how $f(x)$ changes in $x$ at any point $x$
+
+
+<br> 
+
+> - In turn, the derivative of $f'(x)$ is called $f''(x)$.
+
+> - Tells us how the *slope* changes as $x$ increases
 
 
 ----
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("concaveconvexquadratics.jpg")
-``` \
+ knitr::include_graphics("picsfigs/concaveconvexquadratics.jpg")
+```
 
 Oversimplifying:
 
-<aside class="notes">Adv, Math: Essentially, for a class of functions where the domain is not bounded</aside>
-
 - slope always `r format_with_col("increasing","blue")` $\rightarrow$ $f''(x)>0$ everywhere $\rightarrow$ *convex* (u-shaped) function $\rightarrow$ single \textcolor{blue}{minimum} where $f'(x)=0$
 
-<!-- \pause -->
 
 - slope always `r format_with_col("decreasing","brown")` $\rightarrow$ $f''(x)<0$ everywhere  $\rightarrow$ *concave* (inverse-u) fncn  $\rightarrow$ single \textcolor{brown}{maximum} where $f'(x)=0$
 
 
+<aside class="notes">Adv, Math: Essentially, for a class of functions where the domain is not bounded</aside>
 
 
-## Functions of two or more variables (multivariate functions)
+# Functions of two or more variables (multivariate functions)
 
 Utility, profit, cost, production, returns, etc.
 
@@ -312,12 +356,19 @@ Utility, profit, cost, production, returns, etc.
 
 $$y=f(x,z)$$
 
+##
+
+
+$$y=f(x,z)$$
+
 - $y$ may increase and/or decrease in $x$ and in $z$,
 
 - The rate of increase of y in $x$ may depend on the values of $x$ and $z$
 
      - Similar for the rate of increase of y in z
 
+
+<br> 
 
 <!-- . . . -->
 
@@ -338,18 +389,24 @@ Hard to picture; 'contour lines' can help</aside>
 
 Projecting a function up from X,Y space into the Z axis:
 
-```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("doubledip.jpg")
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/doubledip.jpg")
 ```
 
 
-## Contour lines (we will come back to this later!)
+# Contour lines
+
+*We will come back to this later!*
+
+<br>
 
 Contour lines
 :     Level sets - depict combinations of variables that hold the function constant at a particular value
 :     f(x,z) = A for some value $A$
 
-Level sets: *E.g., indifference curves*, *isoquants* and *isocost* curves.
+<br> 
+
+<small> Level sets: *E.g., indifference curves*, *isoquants* and *isocost* curves. </small>
 
 
 <aside class="notes">Don't worry if you find this discussion of level sets confusing
@@ -358,8 +415,8 @@ Level sets: *E.g., indifference curves*, *isoquants* and *isocost* curves.
 
 ----
 
-```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("contourlines.jpeg")
+```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/contourlines.jpeg")
 ```
 
 <br> \bigskip
@@ -402,20 +459,27 @@ $$ \rightarrow K = 4/L $$
 
 ----
 
-![Table 1A.2](contourcombos.png)
+```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/contourcombos.png")
+```
 
 <aside class="notes">Connect values of x and z that lead to the same value of y.</aside>
 
 
 ----
 
-![Contour lines](contourlines_example.png)
 
-----
+```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/contourlines_example.png")
+```
 
-## Simultaneous equations
 
-![Simultaneous equations](simeqn.png)
+# Simultaneous equations
+
+
+```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/simeqn.png")
+```
 
 <aside class="notes">Class: What does this 'cross' remind you of, that we have just seen?</aside>
 
@@ -443,13 +507,12 @@ Holds only where $X=2, Y=1$, the 'unique solution'
 
 \
 
-Meaningless to ask 'how does a change in X affect Y?' in the above context.
+> - Meaningless to ask 'how does a change in X affect Y?' in the above context.
 
 <aside class="notes">Equally meaningless: 'how does the price affect the quantity exchanged?' in a demand-supply Marshallian cross.</aside>
 
 
-
-## Mini-lecture: Empirical microeconomics/econometrics {#empiricalmini}
+# Mini-lecture: Empirical microeconomics/econometrics {#empiricalmini}
 
 \hypertarget{empiricalmini}{\beamerbutton{link}}
 
@@ -457,7 +520,6 @@ Meaningless to ask 'how does a change in X affect Y?' in the above context.
 
 
 Empirical research
-
 :     Uses evidence from the *real world*, i.e., observation, to answer questions
 
 <aside class="notes">Evidence rather than introspection and theory</aside>
@@ -465,9 +527,12 @@ Empirical research
 
 <!-- . . . -->
 
+<br> 
+
 Econometrics
 :     The 'science' of using data to answer economic questions. Uses statistical tools and often economic theory
 
+----
 
 <!-- . . . -->
 
@@ -488,28 +553,27 @@ Micro-data
 
 ----
 
-
 ## Empirical(ish) example
 
 <aside class="notes">A bit advanced, don't worry if it goes above your head a little</aside>
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("peachprices.png")
+ knitr::include_graphics("picsfigs/peachprices.png")
 ```
 
 Trying to estimate demand curve, hypothesize linear function
     $$Q_d = a-bp$$
 
-`r format_with_col("Suppose we know price is shifting because of costs, shifts in *supply","gray")` curve, or the firm experimenting*
+<small>
+`r format_with_col("Suppose we know price is shifting because of costs, shifts in supply","gray")` curve, or the firm is experimenting. Observe price \& quantity data for a period where *ceteris paribus* is reasonable. </small>
 
 <aside class="notes">Adv: Otherwise the problem is poorly identified, as demand and supply will jointly determine price</aside>
 
-Observe price \& quantity data for a period where *ceteris paribus* is reasonable
 
 ----
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("demanddata.png")
+ knitr::include_graphics("picsfigs/demanddata.png")
 ```
 
 Fit 'best' line (minimise error) through these points
@@ -521,7 +585,6 @@ Fit 'best' line (minimise error) through these points
 <aside class="notes">Ans: unobserved differences, nonlinear demand, measurement error, randomness in behaviour</aside>
 
 
-
 <aside class="notes">Advanced: Why is this *only* meaningful if we are observing shifts in the supply curve and not the demand curve?</aside>
 
 
@@ -531,6 +594,8 @@ Fit 'best' line (minimise error) through these points
 ### Ceteris paribus
 
 > All [most] economic theories employ the assumption that 'other things are held constant.'
+
+<br> 
 
 - Above, demand may differ between weeks/stores, weather changes,  etc.
 
@@ -547,6 +612,15 @@ $\rightarrow$ Carefully 'control' for other observable factors (a partial soluti
 
 But happily there are ways to test and validate the estimates, e.g., see how well they predict future outcomes</aside>
 
+## But what if we just observe a dataset of 'price and quantity' in a large market?
+
+
+```{r  fig.cap = '', out.width='40%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/sales_v_price.png")
+```
+
+> -  Can we estimate a demand curve? 
+> - A supply curve? Both? 
 
 ## Application 1A.3: ... Changing world oil prices (time-permitting)
 
@@ -595,7 +669,7 @@ Approximates 2000-2002 price
 <!-- . . . -->
 
 - China \& India's economies grew $\rightarrow$ growth in the world economy by 3-4\% per year
-    - (Various calculations) $\rightarrow$ Demand shifts out from  $Q_D = 85 - 0.4P$ to:
+   - (Various calculations) $\rightarrow$ Demand shifts out from  $Q_D = 85 - 0.4P$ to:
 
 <aside class="notes">I think the 'new demand' curve comes from an approximation:
 
@@ -609,12 +683,12 @@ $$Q_D = 112 - 0.4P$$
 $$Q_S = 55 + 0.6P$$
 
 
-$\rightarrow$ solves to $P=57, Q=87$
+> - $\rightarrow$ solves to $P=57, Q=87$
 
 <!-- . . . -->
 
 
-- Overall price inflation, US\$ devaluation $\rightarrow$ gets us to about \$94. `r format_with_col("So why the  \$130 price?","blue")`
+> - Overall price inflation, US\$ devaluation $\rightarrow$ gets us to about \$94. `r format_with_col("So why the $130 price?","blue")`
 
 <aside class="notes">The rest? Speculation, other disruptions *Supply* shifts? (political turmoil, new energy sources...)</aside>
 
@@ -624,9 +698,9 @@ $\rightarrow$ solves to $P=57, Q=87$
 
 
 
-##First problem set: coverage
+## First problem set: coverage
 
-See the Problem set 1 file on the VLE
+See Handout/web-book
 
 
 <br> \bigskip
@@ -656,13 +730,6 @@ I.  Plotting supply and demand "for orange juice", solving, for equilibrium pric
 But it will never such a precise fit (you will fit a 'regression line' to minimise the deviations), and the 'all else equal' assumption is always an issue.</aside>
 
 
-----
-
-
-<br> \bigskip
-
-II.  Impact of shift in demand (for milk) on equilibrium, depending on slope of supply curve, explain
-
 
 ----
 
@@ -685,10 +752,12 @@ BEGINLEC2
 -->
 
 
-#Lecture2:  Utility and Choice [Chapter 2: 1-2 hours]
+# Preamble to Utility and Choice 
+
+(NS - Chapter 2)
 
 
-##Motivation
+## Motivation
 
 Consider a decision you recently made?
 
@@ -739,20 +808,22 @@ By 'should' I mean that *they will not regret having made decisions in this way.
 
 ----
 
-\Huge If people *did* follow these rules, what would this imply and predict? \normalsize
+<big> If people *did* follow these rules, what would this imply and predict? </big>
 
 <!-- \pause -->
 
 Rules defined as 'axioms about preferences'
 
 
+<br> 
+
 <!-- . . . -->
 
 
-'Standard axioms'  $\rightarrow$ (imply that) choices can be expressed by 'individuals maximising *utility functions* subject to their *budget constraints*'
+> - 'Standard axioms'  $\rightarrow$ (imply that) choices can be expressed by 'individuals maximising *utility functions* subject to their *budget constraints*'
 
 
-$\rightarrow$ yields predictions for individual behavior, markets, etc.
+> - $\rightarrow$ yields predictions for individual behavior, markets, etc.
 
 <aside class="notes">Economists and decision theorists have tried to come up with and defend such rules.
 
@@ -762,7 +833,5 @@ individual choices, individual responses to changes in prices and income,
 market prices and quantities and their responses,
 
 `welfare' and inequality outcomes for entire economies, etc.</aside>
-
-----
 
 
