@@ -4,6 +4,7 @@ author: "David Reinstein (Exeter)"
 output:
   revealjs::revealjs_presentation:
     self_contained: false
+    reveal_plugins: ["notes", "chalkboard","zoom"]
     theme: white
     highlight: pygments
     transition: fade
@@ -15,7 +16,7 @@ output:
     keep_tex: yes
     theme: metropolis
   ioslides_presentation:
-      self_contained: true
+      self_contained: false
       template: io.html
 options: knitr.table.format = "html"
 classoption: table
