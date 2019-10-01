@@ -149,11 +149,11 @@ For linear functions the slope is the same at any point. For nonlinear functions
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
 
-knitr::include_graphics("linearslope.jpg")
+knitr::include_graphics("picsfigs/linearslope.jpg")
 ```
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("nonlinearslope.jpg")
+ knitr::include_graphics("picsfigs/nonlinearslope.jpg")
 ```
 
 
@@ -173,7 +173,7 @@ linq_hux <- hux(data.frame(x,y,yq)) %>%
   theme_plain
 
 
-#knitr::include_graphics("linearquadratic.png")
+#knitr::include_graphics("picsfigs/linearquadratic.png")
 ```
 
 Consider the original values of $x$ `r x`
@@ -193,7 +193,7 @@ but a different effect depending on where you start for a nonlinear function
 ***
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("concaveconvexquadratics.jpg")
+ knitr::include_graphics("picsfigs/concaveconvexquadratics.jpg")
 ```
 
 Instantaneous rate of change (instantaneous slope)
@@ -243,7 +243,7 @@ Derivative of a function
 <br> \bigskip
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("plotaquadfncnR.png")
+ knitr::include_graphics("picsfigs/plotaquadfncnR.png")
 ```
 
 ***
@@ -252,7 +252,7 @@ Derivative of a function
 
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("plotaquadfncn_andderiv.png")
+ knitr::include_graphics("picsfigs/plotaquadfncn_andderiv.png")
 ```
 
 
@@ -312,7 +312,7 @@ Projecting a function up from X,Y space into the Z axis:
 
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("doubledip.jpg")
+ knitr::include_graphics("picsfigs/doubledip.jpg")
 ```
 
 ## Contour lines (we will come back to this later) {#contourlines_math}
@@ -329,7 +329,7 @@ Level sets: *E.g., indifference curves*, *isoquants* and *isocost* curves.
 ***
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("contourlines.jpeg")
+ knitr::include_graphics("picsfigs/contourlines.jpeg")
 ```
 
 
@@ -414,7 +414,7 @@ ggplot(data.frame(x=c(0, 3)), aes(x=x)) + stat_function(fun=eq, geom="line", aes
 ## Simultaneous equations
 
 ```{r  fig.cap = '', out.width='55%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("simeqn_1.gif")
+ knitr::include_graphics("picsfigs/simeqn_1.gif")
 ```
 
 As shown above, the pair of equations
@@ -473,6 +473,26 @@ Micro-data
 :     Data where the unit of observation is an individual, household, firm, etc.
 :     `r format_with_col("(Contrasts from macro-data, data on aggregates like GDP, inflation, etc.)","gray")`
 
+See, e.g.,
+
+- [Euro-stat microdata](https://www.eui.eu/Research/Library/ResearchGuides/Economics/Statistics/DataPortal/EurostatPublicUse)
+
+- [Data on individual donations (at the donor level) from a large scale field experiment (Karlan and List) downloadable HERE](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910/DVN/27853)
+
+- [Price and product data on gluten-free bread at the supermarket level](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910/DVN/27853s)
+
+\
+
+'Macro-data'
+
+This is contrasted from 'Macro-data' which is aggregated/averaged in some way (e.g., at the country-level or industry-level)
+
+E.g.,
+
+- [Computer penetration and income by year and Chinese province](https://figshare.com/articles/Data_for_Does_Computer_Penetration_Increase_Rural_Residents_Income_An_Empirical_Study_from_China/8963063)
+
+- [Suicide, mental health, and GDP by country and year](https://figshare.com/articles/Suicide_mental_health_economic_statistics/7239857)
+
 
 `r format_with_col("Adv: Econometrics often has a different focus and different methodology than 'regular statistics'. Econometrics has taken on a larger role in economics over the past 40 years, because of greater data availability and computing power.  Most published papers in economics now involve some econometric analysis.","RawSienna")`
 
@@ -495,7 +515,7 @@ Suppose we know that price is changing because of cost changes, shifts in supply
 We observe price and quantity data for a period where *ceteris paribus* is reasonable, such as the data below^[From https://medium.com/teconomics-blog/how-to-get-the-price-right-9fda84a33fe5; see article for explanation on why this is 'residual' price and quantity, if you are interested.]
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("demanddata.png")
+ knitr::include_graphics("picsfigs/demanddata.png")
 ```
 
 We try to fit the 'best' line through these points (minimizing the distances between the line and the points, or minimizing the 'error' of this predicted quantity)
@@ -534,14 +554,14 @@ This is a great example from perhaps the most important unified global market, w
  It shows the power of empirical microeconomics. (Note edition 12 updates.)
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("Brent_Spot_monthly.png")
+ knitr::include_graphics("picsfigs/Brent_Spot_monthly.png")
 ```
 
 
 ***
 
 ```{r  fig.cap = '', out.width='20%', fig.asp=.4, fig.align='left',  echo = FALSE}
- knitr::include_graphics("glasses.png")
+ knitr::include_graphics("picsfigs/glasses.png")
 ```
 
 Henceforth we will refer to:

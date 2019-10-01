@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
 
 
-<meta name="date" content="2019-09-25" />
+<meta name="date" content="2019-10-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -235,9 +235,22 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li><p><a href="https://www.scholars.northwestern.edu/en/publications/introduction-to-economic-analysis-v2">McDL</a>: Ch 12, plus ‘preference relations’</p></li>
 <li><p>AUT: <a href="https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/MIT14_03F16_lec3.pdf">Lecture 3 - Axioms of Consumer Preference and the Theory of
 Choice</a> (note, slightly different notation)</p></li>
-<li><p>NS: Ch 2
-<em>Key goals of these lectures (and accompanying self-study)</em></p></li>
+<li><p>NS: Ch 2</p></li>
 </ul>
+<p>See also my videos <a href="https://vle.exeter.ac.uk/mod/page/view.php?id=803753">HERE</a> on revealed preference.</p>
+<div id="real-research-papers-readings" class="section level3 unnumbered">
+<h3>‘Real research papers’ readings</h3>
+<ul>
+<li><p>Loomes, Graham, Chris Starmer, and Robert Sugden, 1991.“Observing Violations of Transitivity by Experimental Methods”. <a href="https://www.jstor.org/stable/2938263?seq=1#metadata_info_tab_contents">jstor link</a></p></li>
+<li><p>Choi, Syngjoo, et al. “Who is (more) rational?.” The American Economic Review 104.6 (2014): 1518-1550.a.</p></li>
+<li><p>Waldfogel, Joel. “The deadweight loss of Christmas.” The American Economic Review 83.5 (1993): 1328-1336.</p></li>
+<li><p>Reinstein, David. “The Economics of the Gift.” (2014).</p></li>
+<li><p>D. Colander \Edgeworth’s Hedonimeter and the Quest to Measure Utility’’ Journal of Economic Perspectives, Spring 2007: 215-225.</p></li>
+<li><p>‘Predicting Hunger: The Effects of Appetite and Delay on Choice’; Read and van Leeuwen, 1998
+/
+<br> </p></li>
+</ul>
+<p><em>Key goals of these lectures (and accompanying self-study)</em></p>
 <ol style="list-style-type: decimal">
 <li>Understand what ‘utility’ is and how is it defined and modeled</li>
 <li>Understand the assumptions economists usually make about preferences (choices) and their implications</li>
@@ -245,14 +258,18 @@ Choice</a> (note, slightly different notation)</p></li>
 <ul>
 <li>… with examples like ‘perfect substitutes’ and ‘perfect complements’</li>
 </ul></li>
-<li>‘budget constraints’; how to compute and model them</li>
+<li>Learn what ‘budget constraints’ are and how to compute and model them</li>
 <li>Understand ‘maximising utility subject to constraints’
 <ul>
 <li>and the conditions for optimisation involving price ratios and marginal rates of substitution</li>
-<li>Graphical depiction with indifference curves</li>
+</ul></li>
+<li>Learn how to depict this optimisation in a graph with indifference curves and budget constraints
+<ul>
+<li>…and how to interpret this graph</li>
 </ul></li>
 </ol>
 <p><em>Note: This will lead into building the demand curve from first principles, and discussing how to interpret it</em></p>
+</div>
 <div id="pre-util-choice" class="section level3 unnumbered">
 <h3>Preamble to utility and choice</h3>
 <p><font color='gray'>We now consider the very very fundamental building blocks behind the (in)famous ‘neoclassical economics model.’ If you accept these ‘axioms’ nearly everything flows from it!</font></p>
@@ -328,7 +345,7 @@ todo: add detail here
 </div>
 <div id="measuring-and-comparing-utilities" class="section level2">
 <h2><span class="header-section-number">3.2</span> Measuring and comparing utilities</h2>
-<p><font color='RawSienna'> This is a difficult but well-studied issue, as it is important for methodology and welfare analysis. In more detailed discussions, we might speak of ‘cardinal utility’, ‘ordinal utility’, etc., to indicate the ways we can or cannot compare utility between individuals and in response to policy changes.</font></p>
+<p><font color='RawSienna'>This is a difficult but well-studied issue, as it is important for methodology and welfare analysis. In more detailed discussions, we might speak of ‘cardinal utility’, ‘ordinal utility’, etc., to indicate the ways we can or cannot compare utility between individuals and in response to policy changes.</font></p>
 <ul>
 <li>Utility is not ‘observable and measurable in utils’</li>
 </ul>
@@ -348,7 +365,10 @@ todo: add detail here
 <ul>
 <li>the new utility function makes the same predictions. The person will make the same decisions, so we cannot tell them apart.</li>
 </ul></li>
-<li><p>The “benefit” of this property: we can transform (e.g., log) a utility function for convenient calculation</p></li>
+</ul>
+<p>More formally</p>
+<ul>
+<li>The “benefit” of this property: we can transform (e.g., log) a utility function for convenient calculation</li>
 </ul>
 <p><br> </p>
 <p>When we deal with <em>uncertain</em> choices, the ‘Von Neuman - Morgenstern’ utility functions will be somewhat more restrictive and better identified. <font color='gray'>If you believe people are really obeying the VMN axioms and thus maximising <em>expected utility</em>.</font><a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a></p>
@@ -388,8 +408,8 @@ todo: add detail here
 <div class="note">
 <p>Violations?:</p>
 <p>See, e.g., ‘Predicting Hunger: The Effects of Appetite and Delay on Choice’; Read and van Leeuwen, 1998*</p>
-<p>Is there really a clear ‘true preference’ here?
-See also Sunstein ad others on ‘choosing not to choose’</p>
+<p>Is there really a clear ‘true preference’ here?</p>
+<p>See also Sunstein ad others on ‘choosing not to choose’</p>
 </div>
 
 <hr />
@@ -411,7 +431,7 @@ etc.</p>
 </div>
 
 
-<div class="note">
+<div class="technote">
 <p><strong>Technical note:</strong> Formally, completeness of these <span class="math inline">\(\succ\)</span> and <span class="math inline">\(\sim\)</span>, and the transitivity of each makes this a ‘Partial Ordering’ of the choice set.</p>
 </div>
 
@@ -442,6 +462,13 @@ Act this out? Make a video?
 
 <p>Ans:<a href="#fn11" class="footnote-ref" id="fnref11"><sup>11</sup></a></p>
 <p><br></p>
+
+<div class="note">
+<p>Check out:</p>
+<p><a href="https://view.vzaar.com/1387870/video">Becoming a money pump, Nick Chater, Warwick business school</a></p>
+<p>An interesting discussion of ‘money pumps’ (and ‘Dutch books’) in terms of preferences and financial markets. I’ve seen this chocolate beverage argument presented for why people should not have ’wide zones of indifference.</p>
+</div>
+
 </div>
 <div id="violations" class="section level3 unnumbered">
 <h3>Violations of transitivity?: see (inter alia)</h3>
@@ -452,7 +479,7 @@ Act this out? Make a video?
 </div>
 <div id="more-is-better-global-nonsatiation" class="section level3 unnumbered">
 <h3>3. More is better (‘global nonsatiation’)</h3>
-<p><img src="picsfigs/moreisbetter.png" width="80%" style="display: block; margin: auto;" /></p>
+<p><img src="picsfigs/moreisbetter.png" width="75%" style="display: block; margin: auto;" /></p>
 <p>Perhaps this seems unreasonable? One way you might justify it: If the product is a ‘bad’ (e.g., pollution), redefine the product as the <em>absence</em> of the product.</p>
 <p>The darkly shaded area above represents those combinations of X and Y that are unambiguously preferred to the combination X*, Y*.
 This is why goods are called ‘goods’; individuals prefer having more of any good rather than less.
@@ -465,7 +492,7 @@ whereas those in the questionable areas may or may not be superior to <span clas
 
 <div class="technote">
 <p><strong>Technical note:</strong>
-* Technically, these conditions are necessary but not sufficient. Adding ‘Continuity’ of preferences yields a sufficient condition, and also guarantees continuous utility functions and demand curves without strange jumps).</p>
+Technically, these conditions are necessary but not sufficient. Adding ‘Continuity’ of preferences yields a sufficient condition, and also guarantees continuous utility functions and demand curves without strange jumps).</p>
 </div>
 
 <p>The third axiom (nonsatiation) makes the maths more convenient, and is necessary for some results/predictions, like establishing that an outcome allows a ‘Pareto improvement’.</p>
@@ -487,7 +514,7 @@ It also gives us a vocabulary and a way to test for violations of this consisten
 <p>Continuity: If <span class="math inline">\(A \succ B\)</span> and <span class="math inline">\(C\)</span> ’lies within an <span class="math inline">\(\epsilon\)</span> radius of <span class="math inline">\(B\)</span> then <span class="math inline">\(A \succ C\)</span>.</p>
 <p>Adding this to the previous axioms <span class="math inline">\(\rightarrow\)</span> a utility representation; these are jointly sufficient conditions.</p>
 <p>Continuous preferences will also ensure continuous utility functions and allow us to discuss concepts such as ‘marginal utility’ and ensure and gradually sloping demand curves.</p>
-<p>Note that everywhere-differentiable utility functions are obviously continuous.</p>
+<p>Note that everywhere-differentiable utility functions are continuous.</p>
 
 <div class="compqn">
 <p>Tough question – what preferences might we describe (given below) that are actually <em>not</em> continuous?</p>
@@ -505,7 +532,7 @@ It also gives us a vocabulary and a way to test for violations of this consisten
 <p><br> </p>
 
 <div class="technote">
-<p>Diminishing marginal returns, or (in multiple dimensions, without requiring differentiability, ‘quasiconcavity’) will also be necessary for certain results.</p>
+<p>Diminishing marginal returns, or (in multiple dimensions, without requiring differentiability and ensuring a certain consistency, ‘quasiconcavity’) will also be necessary for certain results.</p>
 </div>
 
 <hr />
@@ -656,9 +683,14 @@ More inuitively, consider that the slope of this line represents the slope of th
 <p>where <span class="math inline">\(0&lt;\alpha&lt;1\)</span>.</p>
 <p><br />
 </p>
+<p>We also describe it as having ‘a convex upper contour set’: the set of all bundles strictly preferred to a particular bundle is a ‘convex set’, implying it contains all convex combinations of elements of this set.</p>
+<p><br />
+</p>
 <p>One reason economists like this ‘quasiconcavity’ is because it rules out the ‘false summits’,
 the local, but not global optima, so we only need to use the first-order conditions to find the optima. (<em>But is this ‘<a href="https://en.wikipedia.org/wiki/Streetlight_effect">looking under the streetlight</a> to find our keys’ or is it truly without loss of generality?</em>)</p>
-<p>Note that ‘quasiconcavity’ does not require differentiability, and it is preserved under a ‘monotonic transformation’ (stretching). This means it is called an ‘ordinal property’. Essentially, quasiconcave utility functions yields indifference curves that are ‘convex to the origin’.</p>
+<p>It will also tend to rule out ‘sharp jumps’ in response to price changes, so we can look smoothly at ‘comparitive statics.’</p>
+<p>Note that ‘quasiconcavity’ does not require differentiability.</p>
+<p>Furthermore, unlike properties like ‘diminishing marginal rates of substitution’ this is preserved under a ‘monotonic transformation’ (stretching). This means it is called an ‘ordinal property’. Essentially, quasiconcave utility functions yields indifference curves that are ‘convex to the origin’.</p>
 <p><br> 
 All relevant properties of utility functions are unchanged by such monotonic transformations, including the MRS. This is well-illustrated in Autor’s reading (Lecture 3, pp 11-14)</p>
 <hr />
@@ -741,7 +773,7 @@ I have seen a similar presentation for other hotels presented at <a href="https:
 <div id="choices-are-subject-to-constraints" class="section level2">
 <h2><span class="header-section-number">3.8</span> Choices are subject to constraints</h2>
 <p>You cannot spend more than your (lifetime) income/wealth <span class="math inline">\(\rightarrow\)</span> <em>budget constraint</em>. Consider the budget constraint given in the figure below.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-58"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-59"></span>
 <img src="picsfigs/budgetconstraint.png" alt="Budget constraint for two goods" width="80%" />
 <p class="caption">
 Figure 3.2: Budget constraint for two goods
@@ -906,7 +938,7 @@ Setting it equal to zero and rearranging it yields the rate, at the margin, one 
 <li>however, if an unconstrained problem yields a solution that doesn’t violate the contraint, we can ignore it.</li>
 </ul></li>
 </ul>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-65"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-66"></span>
 <img src="picsfigs/consumerlagrangian.png" alt="From Autor notes" width="90%" />
 <p class="caption">
 Figure 3.3: From Autor notes
@@ -1021,8 +1053,8 @@ Sausages come in packs of 4, and baps come in packs of 8.</p>
 
 <div class="note">
 <p>We are ‘allowed’ to square the whole thing to simplify the problem. Why? Utility is only “identified up to a monotonic transformation”.</p>
-In general you can transform the utility function in any way that preserves the ordering of preferences over the combinations of X and Y. (E.g., multiply/divide it by any positive amount, add any constant, take it to any power, put it into an exponential or large transformationx…<br />
-Doing this, replacing utility function with this “new” utility function will have no impact on the choices the person makes. The only thing that will change is the realized level utility, which is not a meaningful concept. However, this will no longer hold later in the module when we consider uncertainty and expected utility.
+<p>In general you can transform the utility function in any way that preserves the ordering of preferences over the combinations of X and Y. (E.g., multiply/divide it by any positive amount, add any constant, take it to any power, put it into an exponential or large transformationx…
+Doing this, replacing utility function with this “new” utility function will have no impact on the choices the person makes. The only thing that will change is the realized level utility, which is not a meaningful concept. However, this will no longer hold later in the module when we consider uncertainty and expected utility.</p>
 </div>
 
 <p><br />
