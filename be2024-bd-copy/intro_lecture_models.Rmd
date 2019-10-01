@@ -166,13 +166,13 @@ This module particularly emphasizes 5, and also 2 and 4.
 These skills are also highly relevant to employers [updated link](https://www.economicsnetwork.ac.uk/projects/surveys/employers2019):
 
 ```{r  fig.cap = '', out.width='70%', fig.align='center',  echo = FALSE}
- knitr::include_graphics("skillschart.png")
+ knitr::include_graphics("picsfigs/skillschart.png")
 ```
 
 ***
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=1.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("skillsbar.png")
+ knitr::include_graphics("picsfigs/skillsbar.png")
 ```
 
 
@@ -221,7 +221,7 @@ Lectures $\neq$ everything!:  *Some* of the material is only *mentioned* in lect
 
 *Note:* There will be approximately 8 total problem sets, each covering a block of material. As noted above, these are aimed to help prepare you for the assessments.
 
-These will be poster [BELOW](ps)
+These will be posted [BELOW](ps)
 
 Representative answers and explanations for each problem set will given about 1-week after posting.
 
@@ -470,7 +470,7 @@ Some people and organisations seem to value this information:
 *Don't waste this experience fretting about marks. Try to actually learn and not just mimic the process, as in 'cargo cults.'*
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("cargo-cults-336x175.png")
+ knitr::include_graphics("picsfigs/cargo-cults-336x175.png")
 ```
 
 See Richard Feynman, on cargo cult science: \url{https://www.youtube.com/watch?v=yvfAtIJbatg}
@@ -589,7 +589,7 @@ To get the most out of the lectures, I advise you to
 Here are some broad Lessons that I hope you take away from this module, And that will help you throughout... I will come back to these.
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("fortunecookieyoda.jpg")
+ knitr::include_graphics("picsfigs/fortunecookieyoda.jpg")
 ```
 
 \textrm{Economists do not know everything: We know very little but we have thought through many arguments}
@@ -770,7 +770,7 @@ Consider the parable of the tortoise and the hare (Aesop)...
 \
 
 ```{r  fig.cap = 'Hopelessly unrealistic and useless?', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("tortoisehare.jpg")
+ knitr::include_graphics("picsfigs/tortoisehare.jpg")
 ```
 
 
@@ -850,9 +850,9 @@ NS 'A few basic principles'
 The "production possibility frontier" (PPF) illustrates all the combinations of two (or more) goods that can be produced ... by a firm, a family, an economy, globally, etc. Each point is a combination of the amount of the 'x-axis' and 'y-axis' good. All points on or below the curve are achievable; all points above cannot be produced.
 
 ```{r  fig.cap = 'source: tutor2u', width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("ppf_tutor4u.png")
- knitr::include_graphics("ppf_tutor4u_dmr.png")
- knitr::include_graphics("ppf_tutor4u_efficiency.png")
+ knitr::include_graphics("picsfigs/ppf_tutor4u.png")
+ knitr::include_graphics("picsfigs/ppf_tutor4u_dmr.png")
+ knitr::include_graphics("picsfigs/ppf_tutor4u_efficiency.png")
 ```
 
 Above, we see a depiction of the PPF,  the concept of diminishing marginal return, and the concept of inefficiency (from [tutor2u](https://www.tutor2u.net/economics/reference/production-possibility-frontier).)^[See [site](https://www.tutor2u.net/economics/reference/production-possibility-frontier) for a further explanation; these topics will also be covered further in this module.] You may be familiar with this from your previous study. The PPF describes the maximum amount of one good that can be produced conditional on a certain quality of another good being produced.
@@ -910,7 +910,7 @@ Principle 3: Opportunity costs are (often) increasing.
 > Studies of honeybees have found that they generally do not gather all of the nectar in a particular flower before moving on. (NS)
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("buzbee.jpg")
+ knitr::include_graphics("picsfigs/buzbee.jpg")
 ```
 
 
@@ -924,7 +924,7 @@ Principle 3: Opportunity costs are (often) increasing.
 The economics of trade may also apply to the natural world in certain ways.
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("antaphid.jpg")
+ knitr::include_graphics("picsfigs/antaphid.jpg")
 ```
 
 
@@ -999,7 +999,7 @@ Furthermore,  firms  must cater to less and less keen consumers as they wants to
 <br> \bigskip
 
 
-Imagine 'quantity supplied as a function of price': $Q^s(p)$ and 
+Imagine 'quantity supplied as a function of price': $Q^s(p)$ and
 'quantity supplied as a function of price': $Q^d(p)$.
 
 \
@@ -1010,10 +1010,53 @@ and a unique quantity where the value of the "last unit purchased" ... the *lowe
 
 ... equals its cost to produce,
 
-... and this will be the prevailing price. 
+... and this will be the prevailing price.
 
 (These ideas will be further elaborated in later lectures.)
 
+```{block2,  type='note'}
+
+### Cost and value example {-#cvex}
+
+Imagine one consumer and one producer. 
+
+Units 1-5 of some product (say, hats) have a value to each consumer (of *that* unit, add up to get *total value* of units purchased) stated below, in terms of the  'other good', say food. (You can imagine food costs one per unit.) The consumer is willing to give up 5 units of food to gain 1 hat, 4 more units of food to gain the second hat, et. 
+
+
+Hats 1-5 have a production cost stated below (in the same units). The producer is can make the first hat at cost 1, the second hat at cost 2, etc.  
+
+
+| Unit X | Value to consumer  | Cost to produce |
+|--------|--------------------|-----------------|
+| 1      | 5                  | 0.5             |
+| 2      | 4                  | 1               |
+| 3      | 2                  | 2               |
+| 4      | 1                  | 3               |
+| 5      | 0                  | 4               |
+  
+
+At each potential price, how many units is the consumer willing to buy? 
+At each potential price, how many units is the producer willing to make/sell? 
+  
+\
+
+This will imply an individual 'demand curve' and 'supply curve' for the consumer and producer -- can you draw it? 
+  
+\
+
+What price is 'equilibrium', i.e., at what price will the consumer and producer be willing to buy/sell the same amount?^[The answer is $p=2$. The consumer will buy 3 units, because the first three units have a value at or above 2...  (the amount of food he must forgo for each unit). The producer is also willing to produce three units; the first two she can produce at a cost less than 2, and the third unit at a cost of 2.]
+
+At this price (2), notice that the *value* the consumer places on the 'last unit' purchased (the third unit, one yielding the lowest value that he still buys) is equal to the cost of producing this unit, 2 in each case. This is not a coincidence.  It also hints at the *efficiency* of the equilibrium price. 
+
+- If, at some price the amount a consumer valued an additional unit was *less* than the cost of production, and that unit were not produced, then we could make both parties, so such an outcome would not be efficient!
+  
+- If, at some price the amount a consumer valued the last  unit was *greater*  so such an outcome would not be efficient either
+
+- Only where these are equal do we have an efficient level of production/consumption. 
+
+We will return to this later. 
+  
+```  
 
 \
 

@@ -2,23 +2,52 @@
 
 ## Text sources/readings, preamble {-}
 
-- [McDL](https://www.scholars.northwestern.edu/en/publications/introduction-to-economic-analysis-v2): Ch 12, plus 'preference relations'
+- [McDL](https://www.kellogg.northwestern.edu/faculty/dale/ieav21.pdf): Ch 12, plus 'preference relations'
+
+[Here](https://www.dropbox.com/s/tjs1l32at0dd1as/ieav21%20-dale%20micro.pdf?dl=0) is a version we can write dropbox notes in
 
 - AUT: [Lecture 3 - Axioms of Consumer Preference and the Theory of
 Choice](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/MIT14_03F16_lec3.pdf) (note, slightly different notation)
 
+
 - NS: Ch 2
+
+See also my videos [HERE](https://vle.exeter.ac.uk/mod/page/view.php?id=803753) on revealed preference.
+
+
+### 'Real research papers' readings {-}
+
+- Loomes, Graham, Chris Starmer, and Robert Sugden, 1991."Observing Violations of Transitivity by Experimental Methods". [jstor link](https://www.jstor.org/stable/2938263?seq=1#metadata_info_tab_contents)
+
+- Choi, Syngjoo, et al. "Who is (more) rational?." The American Economic Review 104.6 (2014): 1518-1550.a. [link](http://www.chlass.de/public/material/Teaching/aer_2014_more_rational.pdf)
+
+- Waldfogel, Joel. "The deadweight loss of Christmas." The American Economic Review 83.5 (1993): 1328-1336.
+
+- Reinstein, David. "The Economics of the Gift." (2014).
+
+- D. Colander 'Edgeworth's Hedonimeter and the Quest to Measure Utility'' Journal of Economic Perspectives, Spring 2007: 215-225.
+
+- 'Predicting Hunger: The Effects of Appetite and Delay on Choice'; Read and van Leeuwen, 1998
+
+
+<br> \bigskip
+
 *Key goals of these lectures (and accompanying self-study)*
 
 1. Understand what 'utility' is and how is it defined and modeled
 1. Understand the assumptions economists usually make about preferences (choices) and their implications
 1. Learn (recall) how to depict preferences and utility with 'indifference curves' and how to interpret these
     - ... with examples like 'perfect substitutes' and 'perfect complements'
-1. 'budget constraints'; how to compute and model them
+1. Learn what 'budget constraints' are and how to compute and model them
 1. Understand 'maximising utility subject to constraints'
     - and the conditions for optimisation involving price ratios and marginal rates of substitution
-    - Graphical depiction with indifference curves
+1. Learn how to depict this optimisation in a graph with indifference curves and budget constraints
+    - ...and how to interpret this graph
 
+- Extensions to general forms
+
+- Considering the characteristics and 'comparative statics' of this optimisation problem
+    - Dual 'minimization problem'
 
 *Note: This will lead into building the demand curve from first principles, and discussing how to interpret it*
 
@@ -103,7 +132,7 @@ We may specify a "utility function" of two goods (or aggregations of goods) $X$ 
 
 $$Utility = U(X,Y; other)$$
 
-We can get a lot of insight from considering models Of an individual's preferences over only two goods. These two 'goods' could represent, for example:
+We can get a lot of insight from considering models of an individual's preferences over only two goods. These two 'goods' could represent, for example:
 
 - Leisure and 'goods consumption'
 
@@ -111,7 +140,12 @@ We can get a lot of insight from considering models Of an individual's preferenc
 
 - Coffee and tea (holding all else constant)
 
-<br> \bigskip 
+```{block2,  type='note'}
+Empirical question can we 'aggregate goods' in this way?
+E.g., considering a 3-good case... do the preferences of bananas vs apples depend on the *composition* of the (e.g.) housing services bundle, or only on some aggregated measure of 'housing sevices'. In estimating demand systems and considering price elasticities we may want/need to make such assumptions. (See, e.g., 'nested logit'.)</small>
+```
+
+<br> \bigskip
 
 Recall $U(X,Y)$ expresses a *function* with two *arguments*, X and Y.
 
@@ -119,7 +153,7 @@ $U(X,Y)$ must take *some* value for every positive value of X and Y.
 
 In  *general* a function of X and Y might increase or decrease in either X or Y, or increase over some ranges and decrease over other ranges of these two arguments.
 
-<br> \bigskip 
+<br> \bigskip
 
 For example, consider the function 'altitude of land in Britain as a function of degrees longitude and latitude'.
 
@@ -136,7 +170,7 @@ todo: add detail here
 ## Measuring and comparing utilities
 
 
-`r format_with_col(" This is a difficult but well-studied issue, as it is important for methodology and welfare analysis. In more detailed discussions, we might speak of 'cardinal utility', 'ordinal utility', etc.,  to indicate the ways we can or cannot compare utility between individuals and in response to policy changes.","RawSienna")`
+`r format_with_col("This is a difficult but well-studied issue, as it is important for methodology and welfare analysis. In more detailed discussions, we might speak of 'cardinal utility', 'ordinal utility', etc.,  to indicate the ways we can or cannot compare utility between individuals and in response to policy changes.","RawSienna")`
 
 - Utility is not 'observable and measurable in utils'
 
@@ -158,7 +192,7 @@ As we only get at utility through an *individual's* decisions, we have no reliab
 or by eliciting people's preferences over distributions through interesting surveys, experiments, and voting behavior.}
 
 
-<br> \bigskip 
+<br> \bigskip
 
 Standard utility functions are only 'identified' (only make distinct predictions) 'up to a monotonic transformation'
 
@@ -166,7 +200,10 @@ Standard utility functions are only 'identified' (only make distinct predictions
 - i.e., a 'rank preserving' transformation, like stretching a rubber band.
 
 -  E.g., multiply by a positive number, log, square, add/subtract from it;
-    - the new utility function makes the same predictions. The person will make the same decisions, so we cannot tell them apart.
+    - the new utility function makes the same predictions. The person will make the same decisions, so we cannot tell them apart. This is not helpful.
+
+
+More formally
 
 
 - The "benefit" of this property: we can transform (e.g., log) a utility function for convenient calculation
@@ -231,6 +268,7 @@ Violations?:
 See, e.g., 'Predicting Hunger: The Effects of Appetite and Delay on Choice'; Read and van Leeuwen, 1998*
 
 Is there really a clear 'true preference' here?
+
 See also Sunstein ad others on 'choosing not to choose'
 
 ```
@@ -267,10 +305,10 @@ If this seems confusing it may be because it is *too* obvious (although behavior
 ```
 
 
-```{block2,  type='note'}
+```{block2,  type='technote'}
 **Technical note:** Formally, completeness of these $\succ$ and $\sim$, and the transitivity of each makes this a 'Partial Ordering' of the choice set.
 
-```  
+```
 
 *If you found someone who stricly preferred a apple to a bananas, a banana to a cherry, and a cherry to an apple,  you could make a lot of money out of them!.*
 
@@ -322,6 +360,19 @@ Pump money from him: Buy an apple, a banana, and a cherry. Get him to buy a bana
 
 <br>
 
+
+```{block2,  type='note'}
+Check out:
+
+[Becoming a money pump, Nick Chater, Warwick business school](https://view.vzaar.com/1387870/video)
+
+An interesting discussion of 'money pumps' (and  'Dutch books') in terms of preferences and financial markets. I've seen this chocolate beverage argument presented for why people should not have 'wide zones of indifference.
+
+```
+
+
+
+
 ### Violations of transitivity?: see (inter alia) {-#violations}
 
 - Loomes, Graham, Chris Starmer, and Robert Sugden. "Observing violations of transitivity by experimental methods." Econometrica: Journal of the Econometric Society (1991): 425-439.
@@ -332,7 +383,7 @@ Pump money from him: Buy an apple, a banana, and a cherry. Get him to buy a bana
 
 ### 3. More is better ('global nonsatiation') {-}
 
-```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/moreisbetter.png")
 ```
 
@@ -350,7 +401,7 @@ whereas those in the questionable areas may or may not be superior to $X^{\ast},
 
 ```{block2,  type='technote'}
 **Technical note:**
-\* Technically, these conditions are necessary but not sufficient.  Adding 'Continuity' of preferences yields a sufficient condition, and also guarantees continuous utility functions and demand curves without strange jumps).
+ Technically, these conditions are necessary but not sufficient.  Adding 'Continuity' of preferences yields a sufficient condition, and also guarantees continuous utility functions and demand curves without strange jumps).
 
 ```
 
@@ -381,7 +432,7 @@ Adding this to the previous axioms $\rightarrow$ a utility representation; these
 
 Continuous preferences will also ensure continuous utility functions and allow us to discuss concepts such as 'marginal utility' and ensure and gradually sloping demand curves.
 
-Note that everywhere-differentiable utility functions are obviously continuous.
+Note that everywhere-differentiable utility functions are continuous.
 
 
 ```{block2,  type='compqn'}
@@ -389,7 +440,6 @@ Note that everywhere-differentiable utility functions are obviously continuous.
 Tough question -- what preferences might we describe (given below) that are actually *not* continuous?
 
 ```
-
 Answer: ^[for example, when we discuss some examples of [perfect complements](perfect-sub-comp)  we may assume 'right and left shoes' were valued in continuous amounts ... but I can't really use 1.5 pairs of shoes!]
 
 
@@ -408,7 +458,8 @@ In fact, lexicographic preferences (in a continuous product space) *cannot* be r
 <br> \bigskip
 
 ```{block2,  type='technote'}
-Diminishing marginal returns, or (in multiple dimensions, without requiring differentiability, 'quasiconcavity') will also be necessary for certain results.
+
+Diminishing marginal returns, or (in multiple dimensions, without requiring differentiability and ensuring a certain consistency, 'quasiconcavity') will also be necessary for certain results.
 
 ```
 
@@ -441,7 +492,7 @@ Indifference curve
 Formally (for 2 goods), the set of pairs of ${X,Y}$ such that $U(X,Y)=c$ for some constant c.^[Recall the "level sets" from the maths revision.]
 
 
-Autor: 
+Autor:
 > Define a level of utility say $U(x) = U$. Then, the indifference curve for U, $IC(U)$ is the locus of consumption bundles that generate utility level U for utility function $U(x)$.
 
 
@@ -480,7 +531,7 @@ The above diagram also includes color to depict the utility level, like a 'heat 
 *Note for above*: Suppose you are someone that likes hamburgers and soft drinks. If this is too difficult to imagine, think of two healthy goods, like runner beans and green tea.   Note that the *period* of consumption---a day, a year, or a lifetime---is not specified.
 
 ```{block2,  type='compqn'}
-Comprehension Q: Rank order of preference between points A-E using the formal notation 
+Comprehension Q: Rank order of preference between points A-E using the formal notation
 (Answers to most comprehension questions are given in footnotes. Try to answer it yourself before looking at the footnote.) ^[Ans: $E \succ A \sim B \sim C \sim D \succ F$]
 ```
 
@@ -506,7 +557,7 @@ If $E \succ A$ and $B \sim A$ then $E \succ A$ by transitivity of the preference
 
 Even though these concepts are rather abstract, we can already apply this to an interesting question that has been central to economics throughout history.
 
-<br> \bigskip 
+<br> \bigskip
 
 #### Why is there 'voluntary trade' (between individuals)? {-}
 
@@ -552,7 +603,7 @@ Intuition: giving up a certain utility from one good must be balanced by an incr
 So the MRS is the ratio itself, because it's the absolute value.) Formally, the MRS at point $X,Y$, where $U(X,Y)=U_1$ is:
 $MRS(X,Y)=-\frac{dY}{dX}|U(X,Y)=U_1$, the absolute value of the total derivative of Y  with respect to X, holding utility constant
 
-```  
+```
 
 <br> \bigskip
 
@@ -593,10 +644,11 @@ With an indifference curve with this shape ('convex') any consumption bundle tha
 E.g., if I like bundles A and D equally, I prefer a bundle of 1/3 of A and 2/3 of D to either A or D.
 
 ```{block2,  type='technote'}
+
 How do I know the line connecting these points describes such mixtures?  You can see by defining these formally and plotting this line... in multiple dimensions this is a plane or 'hyperplane'. \
 
 More inuitively, consider that the slope of this line represents the slope of the difference in these bundles: 'the reduction in hamburgers divided by the increase in soft drinks'. (Equivalently, in giving up a share of the upper left  bundle to gain the lower right bundle, the number of soft drinks one gains for each hamburger sacrificed.) In giving up a certain share of one bundle to gain a share of the other bundle I am reducing my consumption of one good to gain another good at a *constant linear* rate. Here, I need to move from 6 to 2 hamburgers and from 2 to 6 soft drinks. The slope of this is just one (6-2/6-2) in this case, as seen in the dashed line.
-```  
+```
 
 
 
@@ -626,10 +678,19 @@ where $0<\alpha<1$.
 
 \
 
+We also describe it as having 'a convex upper contour set': the set of all bundles strictly preferred to a particular bundle is a 'convex set', implying it contains all convex combinations of elements of this set.
+
+\
+
 One reason economists like this 'quasiconcavity' is because it rules out the 'false summits',
 the local, but not global optima, so we only need to use the first-order conditions to find the optima. (*But is this '[looking under the streetlight](https://en.wikipedia.org/wiki/Streetlight_effect) to find our keys' or is it truly without loss of generality?*)
 
-Note that 'quasiconcavity' does not require differentiability, and it is preserved under a 'monotonic transformation' (stretching). This means it is called an 'ordinal property'.  Essentially, quasiconcave utility functions yields indifference curves that are 'convex to the origin'.
+It will also tend to rule out 'sharp jumps' in response to price changes, so we can look smoothly at 'comparitive statics.'
+
+Note that 'quasiconcavity' does not require differentiability.
+
+Furthermore, unlike properties like 'diminishing marginal rates of substitution' this is preserved under a 'monotonic transformation' (stretching). This means it is called an 'ordinal property'.  Essentially, quasiconcave utility functions yields indifference curves that are 'convex to the origin'.
+
 
 <br> \bigskip
 All relevant properties of utility functions are unchanged by such monotonic transformations, including the MRS. This is well-illustrated in Autor's reading (Lecture 3, pp 11-14)
@@ -718,6 +779,7 @@ Some suggested answers, others are reasonable...^[These issues are decently addr
 The utility and indifference curve construct may seem highly theoretical. Indeed, these models were developed largely to address big questions like 'who gains from trade?'  Still, it helps organise thinking and analysis for at least some managers and marketing groups.  According to the text, Marriot hotel used focus groups to 'construct (multidimensional) indifference curves' to consider their ideal product positioning.
 I have seen a similar presentation for other hotels presented at [Behavioural boozeonomics](https://www.meetup.com/London-behavioural-comms-monthly-informal-drinks/) in London.}
 ```
+
 ## Definitions: Perfect substitutes and complements {#perfect-sub-comp}
 
 Perfect substitutes
@@ -728,7 +790,7 @@ Perfect substitutes
 
 \
 
-Perfect complements 
+Perfect complements
 
 :     Goods A and B are Perfect Complements when an individual only gains utility from (more) A if she also consumes a defined (additional) amount of B, and vice-versa
 
@@ -742,7 +804,7 @@ You cannot spend more than your (lifetime) income/wealth $\rightarrow$ *budget c
 
 
 ```{r  fig.cap = 'Budget constraint for two goods', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
-    
+
 knitr::include_graphics("picsfigs/budgetconstraint.png")
 
 ```
@@ -837,12 +899,12 @@ It's also (not a coincidence) the point where the slopes are equal.
 
 <br> \bigskip
 
-Slope of budget constraint = slope of indifference curve $\rightleftarrows$^[The  $\rightleftarrows$ symbol means 'if  and only if', i.e., the  object on the right-hand side implies the object on the left-hand side, and vice versa. In  some context this means a 'necessary and sufficient condition',  but here it is just basically a definition.]
+At this point (but not in general!) we have that  "Slope of budget constraint = slope of indifference curve" $\leftrightarrow$ (implying that)^[The  $\leftrightarrow$ symbol means 'if  and only if', i.e., the  object on the right-hand side implies the object on the left-hand side, and vice versa. In  some context this means a 'necessary and sufficient condition',  but here it is just basically a definition.]
 
 $$P_X/P_Y = MRS$$
 
 
-*Note* that both slopes are negative, so both negative signs cancel out, leaving this condition.
+*Note on why the negative signs 'cancel out:*^[Recall that the  slopes of the budget line and the slope of the relevant indifference curve are actually negative. However, recall that we usually state the MRS as the *absolute value* of this, so it is positive, and thus we similarly multiply the slope of the  budget constraint by negative one. As you know, multiplying both sides of a (nonzero) equation by negative one leaves the solution unchanged. More simply, where both slopes are negative, 'the slopes are equal' is the same as saying 'the absolute value of the slopes are equal.]
 
 ```{block2,  type='warning'}
 
@@ -866,7 +928,7 @@ Intuition: If I can give up X for Y in the market (buy less X, get more Y) at a 
 
 Thus the original point could not have been optimal!
 
-```{r  fig.cap = '', out.height='10%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.height='5%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/glasses.png")
 ```
 
@@ -885,6 +947,17 @@ Thus if you give up one burger, you can get one more soda to keep you indifferen
 This means you would be better off; thus the original bundle *wasn't* optimal.
 
 `r format_with_col("Practice question: in which direction would you adjust this bundle if the price of a soda was £2 and a hamburger was £1? Explain.","blue")`
+
+
+
+```{block2,  type='note'}
+More extended example... E.g., if I can give up one glass of wine and gain two beers (i.e., because wine is twice as costly), and (given my proposed consumption of wine and beer) I get the same value from each glass of wine or beer, I can give up this glass of wine, gain two beers, and make myself 'one unit' better off, at the margin.
+
+
+On the other hand, if I can give up one glass of wine and gain two beers (i.e., because wine is twice as costly), and (given my proposed consumption of wine and beer) I get the four times as much value from each glass of wine as each beer, I can give up two beers, gain a wine (which I value at four beers) and make myself 'two units' better off, at the margin.
+
+However, I can *not* apply this argument to a point where I am consuming *only* wine... I cannot consume less than no beer (although some nights I wish I could have done). We return to this point [below](corners)
+```
 
 
 
@@ -942,7 +1015,8 @@ $$\frac{dY}{dX}=-\frac{MU_{X}}{MU_{Y}}$$
 ```{block2,  type='technote'}
 
 **Tech note**:  This is a simple case of the implicit function theorem. Essentially $U(X,Y)=c$ defines an implicit function $Y(X)$, whose slope is the negative of the ratio of the derivatives.
-```  
+
+```
 
 <br>
 
@@ -962,7 +1036,7 @@ I.e., the same 'bang for each buck'.
 *Note:* If this didn't hold true and you were spending on both goods, you would be paying 'more per util' for one good than the other, and thus should reallocate to that other good.
 
 
-## Note on 'corner solutions' {#cornersol}
+## Note on 'corner solutions' {#corners}
 
 The above applies to any *interior* solution
 
@@ -1141,7 +1215,7 @@ Numerical example:
 
 $$U(X,Y)=min(2X,Y)$$
 
-E.g., where X is bicycle frames and Y bicycle wheels. 
+E.g., where X is bicycle frames and Y bicycle wheels.
 
 `r format_with_col("Warning:","red")`^[this min function seems backwards, but it's correct. I've answered this question many times in office hours and on the forum (have a look).  No one believes me at first but in the end they realize that this is the case.]
 
@@ -1162,7 +1236,7 @@ Sausages come in packs of 4, and baps come in packs of 8.
 
 How many packs of each will you buy, supposing both types of packs cost £1 each?
 
-***
+\
 
 #### Middle-ground {-}
 
@@ -1173,12 +1247,13 @@ Recall,  as I noted above,  that for the "general" rather than extreme cases the
 $$ U(X,Y)=\sqrt(XY) $$
 
 ```{block2,  type='note'}
-We are 'allowed' to square the whole thing to simplify the problem. Why? Utility is only "identified up to a monotonic transformation". 
+We are 'allowed' to square the whole thing to simplify the problem. Why? Utility is only "identified up to a monotonic transformation".
 
-In general you can  transform the utility function  in any way that preserves the ordering of preferences  over the combinations of X and Y. (E.g.,  multiply/divide it by any positive amount,  add any constant,  take it to any power,  put it into an exponential or large transformationx...  
-                                                                                Doing this,  replacing utility function with this "new" utility function will have no impact  on the choices the person makes. The only thing that will change is the realized level utility, which is not a meaningful concept. However,  this will no longer hold later in the module when we consider uncertainty and expected utility.
-                                                                                
-```  
+In general you can  transform the utility function  in any way that preserves the ordering of preferences  over the combinations of X and Y. (E.g.,  multiply/divide it by any positive amount,  add any constant,  take it to any power,  put it into an exponential or large transformationx...
+
+Doing this,  replacing utility function with this "new" utility function will have no impact  on the choices the person makes. The only thing that will change is the realized level utility, which is not a meaningful concept. However,  this will no longer hold later in the module when we consider uncertainty and expected utility.
+
+```
 
 \
 
@@ -1280,7 +1355,7 @@ Thus $Y = I/(2P_Y)$ etc.]
 - Many goods; when can I consider all other goods as a 'composite good'?
 
 
-\bigskip 
+\bigskip
 
 
 ### Cobb-Douglas general form  {-#cobbdoug}
@@ -1297,14 +1372,14 @@ Aside note:
 This is *"homothetic"*:
 
 
-Homothetic: MRS constant along a ray through the origin. 
+Homothetic: MRS constant along a ray through the origin.
 
 $\rightarrow$  It can be represented by an HD1 utility function. This ties down 'income effects' in a boring way: consumption of each good expands proportionally in income. This if everyone has these preferences impact of 1 consumer's income increasing by £1 million is the same as 1 million consumers gaining £1. This underlies 'representative consumer' models.
 
 
 `r format_with_col("...so the poor man just buys a tiny amount of *foies gras* and jumps in his tiny money bin","violet")`
 
-<br> \bigskip 
+<br> \bigskip
 
 
 $$MU_X=\frac{\partial U}{\partial X} = aX^{a-1}Y^b$$
@@ -1371,7 +1446,7 @@ E.g., iin principal-agent analysis we can then ignore the question 'but won't th
 
 ###  Note that budget constraints need not be linear {-}
 
-From NS App 2.6: Loyalty programmes 
+From NS App 2.6: Loyalty programmes
 
 ```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/kinkedbc.png")
@@ -1441,6 +1516,6 @@ Representation of the MRS between all goods as a matrix, depicting the propertie
 - Strict quasi-concavity takes the place of DMRS in ensuring 'simple optimisation conditions'
 
 
-## Tutorial/practice problems: see VLE, or watch this space
+## Tutorial/practice problems: see VLE, or watch this space (coming VERY) soon)
 
 

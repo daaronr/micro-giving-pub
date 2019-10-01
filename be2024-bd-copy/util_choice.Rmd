@@ -38,7 +38,7 @@ If you got amnesia and forgot what you decided and then were in the same situati
 
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("mortys-mind-blower.png")
+ knitr::include_graphics("picsfigs/mortys-mind-blower.png")
 ```
 
 <br> \bigskip
@@ -77,7 +77,7 @@ This yields predictions for individual behavior, markets, etc.
 
 *Note: Part 2 (NS ch 2-3) involves building the demand curve from first principles, and discussing how to interpret it*
 
-*Notes:*
+```{block2,  type='note'}
 We want to develop a model that can be used to show how we make choices or decisions.
 
 In the (neo) classical economics framework, your (optimising) choices are determined by two things:
@@ -85,7 +85,7 @@ In the (neo) classical economics framework, your (optimising) choices are determ
 1. Preferences: what goods do you like?
 
 2. Constraints: how much money do you have, what are the prices of the goods you buy?
-
+```
 
 
 - `r format_with_col("Second problem set, first part (NS chapter 2): Preferences, Utility, Consumer optimization, individual and market demand","blue")`
@@ -183,13 +183,15 @@ Nonsatiation will help us derive results}
 The following is `r format_with_col("forbidden","red")`: "I cannot choose between a ski holiday and a beach holiday, yet I am not indifferent between these."
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("donkeybales.jpeg")
+ knitr::include_graphics("picsfigs/donkeybales.jpeg")
 ```
 
 `r format_with_col("Why *wouldn't* I be able to express a preference? In the case above that seems strange, but for other cases it may be extremely difficult or painful to make a choice, or very hard to compare two things. Imagine if you were asked to choose between never seeing your mother or never seeing your father. In general, economists' standard approach assumes we have a consistent preference ranking over all possibilities, and choose accordingly.  Other social sciences see this differently/","gray")`
 
-`r format_with_col("Also 'forbidden' in the classical model: the *time* or *frame* in which I make the *decisions* must not affect my choices. This will be relaxed when we discuss behavioral economics.","gray")`
+```{block2,  type='note'}
+Also 'forbidden' in the classical model: the *time* or *frame* in which I make the *decisions* must not affect my choices. This will be relaxed when we discuss behavioral economics.
 
+```
 \medskip
 
 Fancy notation: Either A preferred to B, B preferred to A, or A indifferent to B
@@ -207,7 +209,7 @@ $$A \succ B, B \succ A, \: or \: A \sim B $$
 ***
 
 
-### 2. Transitivity {-} 
+### 2. Transitivity {-}
 
 $$ A \succ B \: and \: B \succ C \rightarrow A \succ C $$
 
@@ -218,7 +220,23 @@ $$ A \succ B \: and \: B \succ C \rightarrow A \succ C $$
 - If I prefer an Apple to a Banana and a Banana to Cherry then I prefer an Apple to a Cherry.
 
 
-`r format_with_col("A similar idea holds if I am indifferent between one pair of these. If this seems confusing it may be because it is *too* obvious (although behavioral and experimental economists claim to find violations).","gray")`
+
+
+```{block2,  type='tip'}
+
+If this seems confusing it may be because it is *too* obvious (although behavioral and experimental economists claim to find [violations](violations) of this.
+
+```
+
+
+- ... this obviously extends to 'chains' combining these ... so
+
+$$ A \succ B \:\: and \: \: B \sim C \rightarrow A \succ C $$
+etc.
+
+We may write this concisely as $A \succ B \sim C$.
+
+
 
 
 `r format_with_col("Adv: If you found someone who stricly preferred a apple to a bananas, a banana to a cherry, and a cherry to an apple,  you could make a lot of money out of them!","RawSienna")`
@@ -265,12 +283,21 @@ If 'Intransitive Eddy' is offered 1 apple and 1 banana and 1p, he chooses the ap
 Pump money from him: Buy an apple, a banana, and a cherry. Get him to buy a banana from you. Get him pay you 1p to trade his banana for your apple. Then get him to pay 1p to trade his apple for your cherry. Then get him to pay 1p to trade his cherry for your banana. Then get him to pay 1p to trade his banana for your apple. Repeat ad nauseum.]
 
 
+<br>
 
+```{block2,  type='note'}
+Check out:
+
+[Becoming a money pump, Nick Chater, Warwick business school](https://view.vzaar.com/1387870/video)
+
+An interesting discussion of 'money pumps' (and  'Dutch books') in terms of preferences and financial markets. I've seen this chocolate beverage argument presented for why people should not have 'wide zones of indifference.
+
+```
 
 ### 3. More is better ('global nonsatiation') {-}
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("moreisbetter.png")
+ knitr::include_graphics("picsfigs/moreisbetter.png")
 ```
 
 Perhaps this seems unreasonable? One way you might justify it: If the product is a 'bad' (e.g., pollution), redefine the product as the *absence* of the product.
@@ -285,7 +312,23 @@ whereas those in the questionable areas may or may not be superior to $X^{\ast},
 **If people obey the first two above assumptions/axioms, the completeness and transitivity$\ast$, they will make choices in a way consistent with maximising a (continuous) *utility* function.** (... OK, maybe you still don't care, but economists do.)
 
 
-`r format_with_col("(Technically, we also require something called 'continuity', which also yields continuous utility and demand curves that don't have jumps,  but we won't discuss this).","gray")`^[Adv: Strictly, most results only require 'local nonsatiation'; starting from any consumption point, increasing the amount of *some* good by a tiny epsilon amount will yield a preferred point. This will yield results like 'people will spend all of their wealth' and '(roughly) people will never buy a more expensive bundle when a cheaper bundle is preferred.']
+```{block2,  type='technote'}
+**Technical note:**
+Technically, these conditions are necessary but not sufficient.  Adding 'Continuity' of preferences yields a sufficient condition, and also guarantees continuous utility functions and demand curves without strange jumps).
+
+```
+
+
+
+```{block2,  type='technote'}
+
+**Technical note:**
+
+Strictly, most results only require 'local nonsatiation'; starting from any consumption point, increasing the amount of *some  good by a tiny $\epsilon$ amount will yield a preferred point. This will yield results like 'people will spend all of their wealth' and '(roughly) people will never buy a more expensive bundle when a cheaper bundle is preferred.'
+
+```
+
+<br>
 
 We are not saying people *actually* consult a utility function. That would be a dumb thing to say.
 We are considering that 'people behave as if they are maximizing utility functions';
@@ -304,7 +347,7 @@ Strictly, most results only require a  weaker 'local nonsatiation' condition.]
 ***
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("moreisbetter.png")
+ knitr::include_graphics("picsfigs/moreisbetter.png")
 ```
 
 - How can we compare the "?" areas? Which are preferred?
@@ -325,10 +368,16 @@ Indifference curve
 
 \medskip
 
-Formally (for 2 goods), the set of pairs of ${X,Y}$ such that $U(X,Y)=c$ for some constant $c$^[Recall the "level sets" from the maths revision material.]
+Formally (for 2 goods), the set of pairs of ${X,Y}$ such that $U(X,Y)=c$ for some constant c.^[Recall the "level sets" from the maths revision.]
+
+
+Autor:
+> Define a level of utility say $U(x) = U$. Then, the indifference curve for U, $IC(U)$ is the locus of consumption bundles that generate utility level U for utility function $U(x)$.
+
 
 ```{r  fig.cap = '', out.width='55%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("indifcurves_util_together.jpg")
+
+ knitr::include_graphics("picsfigs/indifcurves_util_together.jpg")
 ```
 
 
@@ -342,7 +391,7 @@ Consider the above diagram ^[Credit: www2.econ.iastate.edu] . Think of this as a
 
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("indif_utility_2_400.jpg")
+ knitr::include_graphics("picsfigs/indif_utility_2_400.jpg")
 ```
 
 
@@ -358,14 +407,22 @@ The above diagram also includes color to depict the utility level, like a 'heat 
 ### Properties of indifference curves {-}
 
 ```{r  fig.cap = '', out.height='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("indifccurve.png")
+ knitr::include_graphics("picsfigs/indifccurve.png")
 ```
 
 
 *Note for above*: Suppose you are someone that likes hamburgers and soft drinks. If this is too difficult to imagine, think of two healthy goods, like runner beans and green tea.   Note that the *period* of consumption---a day, a year, or a lifetime---is not specified.
 
 
-`r format_with_col("Note: I've asked this as a MCQ on exams!","blue}{Comprehension Q: Rank order of preference between points A-E.} \textcolor{gray")` (Answers to most comprehension questions are given in footnotes. Try to answer it yourself before looking at the footnote.) ^[Ans: $E \succ A \sim B \sim C \sim D \succ F$]
+```{block2,  type='compqn'}
+Comprehension Q: Rank order of preference between points A-E using the formal notation
+(Answers to most comprehension questions are given in footnotes. Try to answer it yourself before looking at the footnote.) ^[Ans: $E \succ A \sim B \sim C \sim D \succ F$]
+
+`r format_with_col("Note: I've asked this as a MCQ on exams!","blue")`
+```
+
+
+
 
 <!--
 @MCQ: 2.3
@@ -377,10 +434,11 @@ The above diagram also includes color to depict the utility level, like a 'heat 
 `r format_with_col("Q: How do we know","blue")`  $E \succ B$ ? ^[A:  It has more soft drink, and the same amount of hamburgers. By Assumption 3: more is preferred to less.]
 
 
-<br> \bigskip
+```{block2,  type='compqn'}
+Q: How do we know $E \succ B$ ?^[A:  It has more soft drink, and the same amount of hamburgers. By Assumption 3: more is preferred to less.]
 
 
-`r format_with_col("Q:  How do we know","blue")` $E \succ A$ ?^[$B \sim A$ because they are on the same indifference curve
+Q:  How do we know $E \succ A$ ?^[$B \sim A$ because they are on the same indifference curve
 If $E \succ A$ and $B \sim A$ then $E \succ A$ by transitivity of the preferences, assumption 2.]
 
 
@@ -406,13 +464,37 @@ or \
 E.g., a 50-50 split of each bundle yields, in this case, (6+2)/2 = 4 hamburgers and (2+6)/2=4 soft drinks.}
 
 
-## Marginal rate of substitution (MRS): Absolute value of slope of indifference curve
+```{block2,  type='note'}
 
-The MRS measures the maximum amount of one good ($Y$) that you would be willing to give up in order to gain one more unit of another good ($X$). I.e., this would be the amount you could give up of $Y$ when you gain one unit of $X$ and be no worse or better off. You are 'indifferent' to making this change.^[\textcolor{RawSienna}{Adv, math: This slope will equal the negative of the *ratio* of the rate at which utility increases in each good (partial derivative).
+Note that the line between two bundles depicts all 'convex combinations' of these $\alpha$ of D and $1-\alpha$ of A, where $\alpha \in (0,1)$.
+
+In normal-speak, a partial share of each bundle.
+
+We can see that with the same DMRS for both, trades along this line make both better off; the *points* they would trade to depends on their bargaining power. They might also trade in a way that puts one below this line but still above the original indifference curve.
+
+```
+
+
+## Marginal rate of substitution (MRS): Absolute value of slope of indifference curve {#mrs}
+
+The MRS measures the maximum amount of one good ($Y$) that you would be willing to give up in order to gain one more unit of another good ($X$). I.e., this would be the amount you could give up of $Y$ when you gain one unit of $X$ and be no worse or better off. You are 'indifferent' to making this change.
+
+\
+
+
+```{block2,  type='technote'}
+
+**Tech note**
+
+
+
+This slope will equal the negative of the *ratio* of the rate at which utility increases in each good (partial derivative)
+
 Intuition: giving up a certain utility from one good must be balanced by an increase in utility from the other good.
 So the MRS is the ratio itself, because it's the absolute value.) Formally, the MRS at point $X,Y$, where $U(X,Y)=U_1$ is:
-$MRS(X,Y)=-\frac{dY}{dX}|U(X,Y)=U_1$},  the absolute value of the total derivative of Y  with respect to X, holding utility constant.]
+$MRS(X,Y)=-\frac{dY}{dX}|U(X,Y)=U_1$, the absolute value of the total derivative of Y  with respect to X, holding utility constant
 
+```
 <br> \bigskip
 
 
@@ -442,7 +524,7 @@ $MRS(X,Y)=-\frac{dY}{dX}|U(X,Y)=U_1$},  the absolute value of the total derivati
 ### Preference for variety/balance {-}
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("indifcurvebalance.png")
+ knitr::include_graphics("picsfigs/indifcurvebalance.png")
 ```
 
 This 'preference for variety' is thought to hold for most combinations of goods, most of the time, but probably not for all pairings^[\textcolor{RawSienna}{Adv: This  assumption generally makes it easier to find solutions where people consume both goods, and will imply smooth reactions to price changes.
@@ -462,7 +544,7 @@ the X-axis good as one gives up}
 ### Indifference curve map {-}
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("indifcurvemap.png")
+ knitr::include_graphics("picsfigs/indifcurvemap.png")
 ```
 
 
@@ -480,7 +562,7 @@ N\&S give some examples of preference which violate some of the above assumption
 
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("particularpreferences.png")
+ knitr::include_graphics("picsfigs/particularpreferences.png")
 ```
 
 
@@ -513,8 +595,13 @@ Some suggested answers, others are reasonable...
 
 `r format_with_col("These issues are decently addressed in the most recent edition 12.","gray")`
 
-- Utility/indifference curves: Also a framework for marketing analysis^[The utility and indifference curve construct may seem highly theoretical. Indeed, these models were developed largely to address big questions like 'who gains from trade?'  Still, it helps organise thinking and analysis for at least some managers and marketing groups.  According to the text, Marriot hotel used focus groups to 'construct (multidimensional) indifference curves' to consider their ideal product positioning.
-I have seen a similar presentation for other hotels.]
+
+**Utility/indifference curves: Also a framework for marketing analysis**
+```{block2,  type='note'}
+
+The utility and indifference curve construct may seem highly theoretical. Indeed, these models were developed largely to address big questions like 'who gains from trade?'  Still, it helps organise thinking and analysis for at least some managers and marketing groups.  According to the text, Marriot hotel used focus groups to 'construct (multidimensional) indifference curves' to consider their ideal product positioning.
+I have seen a similar presentation for other hotels presented at [Behavioural boozeonomics](https://www.meetup.com/London-behavioural-comms-monthly-informal-drinks/) in London.}
+```
 
 ## Definitions: Perfect substitutes and complements {#perfect-sub-comp}
 
@@ -539,14 +626,12 @@ These goods are 'enjoyed only in fixed proportions'. E.g., left and right shoes 
 You cannot spend more than your (lifetime) income/wealth $\rightarrow$ *budget constraint*. Consider the budget constraint given in the figure below.
 
 
-\begin{figure}[h]
-  \centering
-    ```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("budgetconstraint.png")
+```{r  fig.cap = 'Budget constraint for two goods', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
+knitr::include_graphics("picsfigs/budgetconstraint.png")
+
 ```
-  \caption[Budget constraint for two goods]
-   {Budget constraint for two goods, slope $-P_x/P_y$}
-\end{figure}
+Budget constraint for two goods, slope $-P_x/P_y$
 
 
 
@@ -609,7 +694,7 @@ thus, the less I need to sacrifice of $Y$ to get another unit of $X$.
 `r format_with_col("Be careful","red")`: it is very easy to get this slope ratio backwards! However, I'll try not to make such errors too costly on the assessments.
 -->
 
-## Utility maximization
+## Constrained utility maximization {#utilmax}
 
 We started with an individual's preferences, one of  the baseline elements of the neoclassical model. Under some conditions these can be described by utility functions,  which we depicted graphically as 'mountains'  with levels sets depicted by indifference curves.
 
@@ -620,12 +705,12 @@ So, we have a way of depicting what people prefer,  but this doesn't tell us wha
 We put these together  to describe the consumer's problem: maximizing her utility subject to her budget constraints.  this is depicted in figure 2.7 below for the two good case.
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("utilmax.png")
+ knitr::include_graphics("picsfigs/utilmax.png")
 ```
 
 Imagine  that you are this consumer  with these preferences and this budget constraint. You can choose any point in the shaded area, as it is on or below your budget constraint. You want to get to the highest indifference curve.
 
-`r format_with_col("Consider:","blue")` How do we know A is suboptimal (i.e., NOT optimal(? What about B? Points between B and C?
+`r format_with_col("Consider:","blue")` How do we know A is suboptimal (i.e., NOT optimal)? What about B? Points between B and C?
 
 <br> \bigskip
 
@@ -642,14 +727,19 @@ It's also (not a coincidence) the point where the slopes are equal.
 
 <br> \bigskip
 
-Slope of budget constraint = slope of indifference curve $\rightleftarrows$^[The  $\rightleftarrow$ symbol means 'if  and only if', i.e., the  object on the right-hand side implies the object on the left-hand side, and vice versa. In  some context this means a 'necessary and sufficient condition',  but here it is just basically a definition.]
+At this point (but not in general!) we have that  "Slope of budget constraint = slope of indifference curve" $\leftrightarrow$ (implying that)^[The  $\leftrightarrow$ symbol means 'if  and only if', i.e., the  object on the right-hand side implies the object on the left-hand side, and vice versa. In  some context this means a 'necessary and sufficient condition',  but here it is just basically a definition.]
 
 $$P_X/P_Y = MRS$$
 
 
-*Note* that both slopes are negative, so both negative signs cancel out, leaving this condition.
+*Note*^[Recall that the  slopes of the budget line and the slope of the relevant indifference curve are actually negative. However, recall that we usually state the MRS as the *absolute value* of this, so it is positive, and thus we similarly multiply the slope of the  budget constraint by negative one. As you know, multiplying both sides of a (nonzero) equation by negative one leaves the solution unchanged. More simply, where both slopes are negative, 'the slopes are equal' is the same as saying 'the absolute value of the slopes are equal.]
 
-`r format_with_col("Warning:","red")` The above is shorthand; recall that the  marginal rate of substitution may vary everywhere along an indifference curve (remember the idea of satiation and diminishing MRS). It is a function of the *point* it is evaluated, i.e., $MRS = MRS(X,Y)$. It is only at the *point where the consumer is optimizing* that these slopes must be equal.^[They can also be equal at some other suboptimal points, where  she is not spending all of her income, or  if the indifference curves have a shape very different from the one above (more or less, where they are not 'convex').  Where she is consuming some of every good, this is a *necessary* condition for such a point to represent an optimal consumption choice, but it may not be a sufficient condition.  May also be optimal for her to consume *none*  of certain goods,  in which case this condition  will not hold. We return to this later.]
+```{block2,  type='warning'}
+
+Warning: The above is shorthand; recall that the  marginal rate of substitution may vary everywhere along an indifference curve (remember the idea of satiation and diminishing MRS). It is a function of the *point* it is evaluated, i.e., $MRS = MRS(X,Y)$. It is only at the *point where the consumer is optimizing* that these slopes *must* be equal.
+
+They can also be equal at some other suboptimal points, where  she is not spending all of her income, or if the indifference curves have a shape very different from the one above (more or less, where they are not 'convex').  Where she is consuming some of every good, this is a *necessary* condition for such a point to represent an optimal consumption choice, but it may not be a sufficient condition.  May also be optimal for her to consume *none*  of certain goods,  in which case this condition  will not hold. We return to this later.
+```
 
 
 ### At an optimal consumption choice (given above assumptions, see above footnote) {-}
@@ -667,11 +757,12 @@ Intuition: If I can give up X for Y in the market (buy less X, get more Y) at a 
 
 Thus the original point could not have been optimal!
 
-```{r  fig.cap = '', out.width='20%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("glasses.png")
+```{r  fig.cap = '', out.height='10%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/glasses.png")
 ```
 
 *Think about this carefully; it is a key method of proving things in economic theory called 'proof  by contradiction'.*
+
 
 ***
 
@@ -688,6 +779,17 @@ This means you would be better off; thus the original bundle *wasn't* optimal.
 `r format_with_col("Practice question: in which direction would you adjust this bundle if the price of a soda was £2 and a hamburger was £1? Explain.","blue")`
 
 <br>
+
+
+
+```{block2,  type='note'}
+More extended example... E.g., if I can give up one glass of wine and gain two beers (i.e., because wine is twice as costly), and (given my proposed consumption of wine and beer) I get the same value from each glass of wine or beer, I can give up this glass of wine, gain two beers, and make myself 'one unit' better off, at the margin.
+
+
+On the other hand, if I can give up one glass of wine and gain two beers (i.e., because wine is twice as costly), and (given my proposed consumption of wine and beer) I get the four times as much value from each glass of wine as each beer, I can give up two beers, gain a wine (which I value at four beers) and make myself 'two units' better off, at the margin.
+
+However, I can *not* apply this argument to a point where I am consuming *only* wine... I cannot consume less than no beer (although some nights I wish I could have done). We return to this point [below](corners)
+```
 
 ### More insight: Skip if you like {-}
 
@@ -717,12 +819,14 @@ MRS: 'how much Y would I be willing to give up to get a unit of X'?
 Ans: Depends on marginal benefit of each ... we can show $MRS(X,Y)=\frac{MU_{X}}{MU_{Y}}$
 
 
-
-*Note:*
+```{block2,  type='note'}
+*Mathy intuition:*
 The more valuable a little more X is to me at that point -- the higher is $MU_X$ -- the more Y I am willing to give up to get it.
 That is why $MU_X$ is in the numerator.
 
 The more valuable a bit more Y is at that point -- the higher is $MU_Y$ -- the less Y I am willing to give up to get a bit more X. That is why $MU_Y$ is in the denominator.
+
+```
 
 
 ***
@@ -748,9 +852,13 @@ $$dU  = MU_{X}dX + MU_{Y}dY = 0 $$
 
 $$\frac{dY}{dX}=-\frac{MU_{X}}{MU_{Y}}$$
 
-`r format_with_col("Adv: This is a simple case of the implicit function theorem, essentially $U(X,Y)=c$ defines an implicit function $Y(X)$, whose slope is the negative of the ratio of the derivatives.","RawSienna")`
 
-***
+```{block2,  type='technote'}
+
+**Tech note**:  This is a simple case of the implicit function theorem. Essentially $U(X,Y)=c$ defines an implicit function $Y(X)$, whose slope is the negative of the ratio of the derivatives.
+```
+
+
 
 Rearranging the utility maximising condition yields more intuition:
 
@@ -768,7 +876,7 @@ I.e., the same 'bang for each buck'.
 *Note:* If this didn't hold true and you were spending on both goods, you would be paying 'more per util' for one good than the other, and thus should reallocate to that other good.
 
 
-## Note on 'corner solutions'
+## Note on 'corner solutions' {#corners}
 
 - The above applies to any *interior* solution
     - If you are consuming both goods and optimising, $P_X/P_Y = MRS = MU_X/MU_Y$ must hold
@@ -782,15 +890,22 @@ I.e., the same 'bang for each buck'.
 ^[`r format_with_col("Advanced: The same condition applies to each good you are consuming a positive amount of. ","RawSienna")`]
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("goodwedontbuy.png")
+ knitr::include_graphics("picsfigs/goodwedontbuy.png")
 ```
 
+\
+
+But you might consume *none* of some good (say X):
+
+- if even with *no* X, $MU_X/P_X<MU_Y/P_Y$
+
+- i.e., the marginal utility of the first unit of X is less than that of Y
 
 
 ## App 2.4: ticket scalping
 
 ```{r  fig.cap = '', out.width='55%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("scalping.png")
+ knitr::include_graphics("picsfigs/scalping.png")
 ```
 
 
@@ -812,7 +927,7 @@ Why do people see scalping as unfair? Is there ever a justification to forbid a 
 ## App 2.5: What's a rich uncle's promise worth? (Read this at home.)
 
 ```{r  fig.cap = '', out.width='55%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("williesuncle.png")
+ knitr::include_graphics("picsfigs/williesuncle.png")
 ```
 
 *Note:*  Willie would choose point A with his original income, but his uncle paid him \$5k to abstain from sinful goods.
@@ -859,7 +974,7 @@ Consider: are the following 'perfect substitutes' for someone who wants caffeine
 
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("amount-of-caffeine-in-drinks.jpg")
+ knitr::include_graphics("picsfigs/amount-of-caffeine-in-drinks.jpg")
 ```
 
 Yes, they are!
@@ -888,21 +1003,24 @@ $$U(X,Y)=4X+3Y$$
 \
 
 
-- Rate at which each good (X and Y) increases utility per-unit (derivative) is constant
-    - $MU_X = 4$,  so every additional unit of X  will add four units of utility in this example, no matter what the starting point is.
-    - $MU_Y = 3$, ... so every unit of Y will add 3 units...
-- So `r format_with_col("(for perfect substitutes)","red")` the consumer will buy the one that increases utility more *per-£*
-    - Compare $MU_X/P_X$ to $MU_Y/P_Y$
-    - Here, if $4/P_X > 3/P_Y$, then buy X.
-    - if $4/P_X < 3/P_Y$, then buy Y
-        - (if equal, buy either)
-    - Rearranging, if $P_X < 4/3 P_Y$, buy X ... etc.
+Rate at which each good (X and Y) increases utility per-unit (derivative) is constant
 
-( I sometimes call this the "bang for the buck" condition.)
+- $MU_X = 4$,  so every additional unit of X  will add four units of utility in this example, no matter what the starting point is.
 
-***
+- $MU_Y = 3$, ... so every unit of Y will add 3 units...
 
-### Perfect complements {-}
+So `r format_with_col("(for perfect substitutes)","red")` the consumer will buy the one that increases utility more *per-£*
+
+- Compare $MU_X/P_X$ to $MU_Y/P_Y$
+- Here, if $4/P_X > 3/P_Y$, then buy X.
+- if $4/P_X < 3/P_Y$, then buy Y
+- (if equal, buy either)
+- Rearranging, if $P_X < 4/3 P_Y$, buy X ... etc.
+
+(I sometimes call this the "bang for the buck" condition.)
+
+
+#### Perfect complements {-}
 
 `r format_with_col("AKA 'Leontief preferences'","gray")`
 
@@ -912,7 +1030,9 @@ Numerical example:
 
 $$U(X,Y)=min(2X,Y)$$
 
-E.g., where X is bicycle frames and Y bicycle wheels. `r format_with_col("Warning:","red")` this min function seems backwards, but it's correct. I've answered this question many times in office hours and on the forum (have a look).  No one believes me at first but in the end they realize that this is the case.
+E.g., where X is bicycle frames and Y bicycle wheels.
+
+`r format_with_col("Warning:","red")` this min function seems backwards, but it's correct. I've answered this question many times in office hours and on the forum (have a look).  No one believes me at first but in the end they realize that this is the case.
 
 
  However, I will not ask you specifically to get this 'min' functional form for perfect complements on an exam.
@@ -923,9 +1043,10 @@ E.g., where X is bicycle frames and Y bicycle wheels. `r format_with_col("Warnin
 <br> \bigskip
 
 
-- Shortcut: figure out the proportions it will be consumed in
-    - determine the cost of 'one bundle of the combination' at given prices
-    - ... then buy as many such bundles as you can afford
+Shortcut: figure out the proportions it will be consumed in
+
+- determine the cost of 'one bundle of the combination' at given prices
+- ... then buy as many such bundles as you can afford
 
 You should be able to do this without having taken economics.
 Suppose you were given £100 and asked to spend it to make as many sausages-with-baps as possible.
@@ -934,9 +1055,9 @@ Sausages come in packs of 4, and baps come in packs of 8.
 
 How many packs of each will you buy, supposing both types of packs cost £1 each?
 
-***
+\
 
-### Middle-ground {-}
+#### Middle-ground {-}
 
 A Cobb-Douglas **example**
 
@@ -944,10 +1065,17 @@ Recall,  as I noted above,  that for the "general" rather than extreme cases the
 
 $$ U(X,Y)=\sqrt(XY) $$
 
-`r format_with_col("Adv note","RawSienna")`, may help save you computations:^[We are 'allowed' to square the whole thing to simplify the problem. Why? Utility is only "identified up to a monotonic transformation".  In general you can  transform the utility function  in any way that preserves the ordering of preferences  over the combinations of X and Y. (E.g.,  multiply/divide it by any positive amount,  add any constant,  take it to any power,  put it into an exponential or large transformation...  Doing this,  replacing utility function with this "new" utility function will have no impact  on the choices the person makes. The only thing that will change is the realized level utility, which is not a meaningful concept. However,  this will no longer hold later in the module when we talk about uncertainty and expected utility.]
+```{block2,  type='technote'}
 
+We are 'allowed' to square the whole thing to simplify the problem. Why? Utility is only "identified up to a monotonic transformation".
 
+In general you can  transform the utility function  in any way that preserves the ordering of preferences  over the combinations of X and Y. (E.g.,  multiply/divide it by any positive amount,  add any constant,  take it to any power,  put it into an exponential or large transformationx...
 
+Doing this,  replacing utility function with this "new" utility function will have no impact  on the choices the person makes. The only thing that will change is the realized level utility, which is not a meaningful concept. However,  this will no longer hold later in the module when we consider uncertainty and expected utility.
+
+```
+
+\
 
 *Amount of Y you'd give up to get a unit of X:*
 
@@ -1040,7 +1168,7 @@ Thus $Y = I/(2P_Y)$ etc.]
 
 ***
 
-## Tutorial problems from chapter 2o
+## Tutorial problems from chapter 2
 
-Watch this space
+To be added at bottom...
 

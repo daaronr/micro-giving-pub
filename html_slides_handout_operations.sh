@@ -20,16 +20,34 @@ cd "githubs/micro_econ_pandoc/"
     # create a copy titled 's_*_selfc.Rmd'
     # "self_contained: false" --> "self_contained: true"
     # remove plugins from latter file
-sed 's/self_contained: false/self_contained: true/g' "be2024/be2024_slides_revealjs/s_intro_lecture_models.Rmd" > "be2024/be2024_slides_revealjs/s_intro_lecture_modules_selfc.Rmd"
-sed -i '' '/reveal_plugins/d' "be2024/be2024_slides_revealjs/s_intro_lecture_modules_selfc.Rmd"
+
+
     # knit this
     # (manually, put it on VLE)
 
+cd be2024/be2024_slides_revealjs
+rm selfc_*
+
+for file in s_*.Rmd; do
+  cp -a $file selfc_${file}
+    sed -i '' 's/self_contained: false/self_contained: true/g' selfc_${file}
+    sed -i '' '/reveal_plugins/d' selfc_${file}
+done
+
+cd ../..
+
 
 # same for Beem101
-sed 's/self_contained: false/self_contained: true/g' "beem101-bookdowning/reveal_slides_101/s_intro_models_util_101.Rmd" > "beem101-bookdowning/reveal_slides_101/s_intro_models_util_101_selfc.Rmd"
-sed -i '' '/reveal_plugins/d' "beem101-bookdowning/reveal_slides_101/s_intro_models_util_101_selfc.Rmd"
+cd beem101-bookdowning/reveal_slides_101
+rm selfc_*
 
+for file in s_*.Rmd; do
+  cp -a $file selfc_${file}
+    sed -i '' 's/self_contained: false/self_contained: true/g' selfc_${file}
+    sed -i '' '/reveal_plugins/d' selfc_${file}
+done
+
+cd ../..
 
 # OLD - saved for code -- Cut msc-only sections from slide material, delete lines 1 and 3
 #sed '/101BB/,/101EE/d' slides_bothmodules.md > be2024slidesa.md
