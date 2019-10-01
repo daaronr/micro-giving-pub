@@ -250,8 +250,7 @@ See also my videos [HERE](https://vle.exeter.ac.uk/mod/page/view.php?id=803753) 
 
 - Reinstein, David. "The Economics of the Gift." (2014).
 
-- D. Colander ``Edgeworth's Hedonimeter and the Quest to Measure Utility'' Journal of Economic Perspectives, Spring 2007: 215-225.
-
+- D. Colander "Edgeworth's Hedonimeter and the Quest to Measure Utility" Journal of Economic Perspectives, Spring 2007: 215-225.
 
 
 # Utility
@@ -314,7 +313,8 @@ $$Utility = U(X,Y; other)$$
 <aside class="notes">
 
 <small> Empirical question can we 'aggregate goods' in this way?
-E.g., considering a 3-good case... do the preferences of bananas vs apples depend on the *composition* of the (e.g.) housing services bundle, or only on some aggregated measure of 'housing sevices'. In estimating demand systems and considering price elasticities we may want/need to make such assumptions. (See, e.g., 'nested logit'.)</small>
+E.g., considering a 3-good case... do the preferences of bananas vs apples depend on the *composition* of the (e.g.) housing services bundle,
+or only on some aggregated measure of 'housing sevices'. In estimating demand systems and considering price elasticities we may want/need to make such assumptions. (See, e.g., 'nested logit'.)</small>
 
 </aside>
 
@@ -357,7 +357,6 @@ E.g., If people drove 20km to go to parK B, they must value it at at least the c
 If people pay £20k more for a house with a view of the lake (ceteris paribus)...
 
 	</aside>
-```
 
 ----
 
@@ -386,21 +385,25 @@ If people pay £20k more for a house with a view of the lake (ceteris paribus)..
  knitr::include_graphics("picsfigs/babytakingfood.JPG")
 ```
 
-As we only get at utility through an *individual's* decisions, we have no reliable way to compare it across individuals</aside>
+As we only get at utility through an *individual's* decisions, we have no reliable way to compare it across individuals
 
-<aside class="notes">However, there is work done in the field of public choice trying either to build this up from *axioms* (e.g., the veil of ignorance),
+<aside class="notes">
+However, there is work done in the field of public choice trying either to build this up from *axioms* (e.g., the veil of ignorance),
 or by eliciting people's preferences over distributions through interesting surveys, experiments, and voting behavior.
 
 </aside>
 
 
-----
+##
 
 Standard utility functions are only 'identified' (only make distinct predictions) 'up to a monotonic transformation'
 
 . . .
 
-I.e, a 'rank preserving' transformation. <small> I.e., a transformation f s.t. $f(U(x',y',z',...) > f(U(x,y,z,...)$ whenever $(U(x',y',z',...) > (U(x,y,z,...)$
+I.e, a 'rank preserving' transformation; like *stretching a rubber band*.
+
+
+<small> I.e., a transformation f s.t. $f(U(x',y',z',...) > f(U(x,y,z,...)$ whenever $(U(x',y',z',...) > (U(x,y,z,...)$ </small>
 
 -  E.g., multiply by a positive number, log, square, add/subtract from it;
 
@@ -415,14 +418,14 @@ The "benefit": we can transform (e.g., log) a utility function for convenient ca
 
 . . .
 
+
 Note: Uncertain choices $\rightarrow$ 'Von Neumann - Morgenstern' utility functions;  somewhat more restrictive, thus better identified.
 
-<aside class="notes">If you believe people obey those axioms and are thus EU maximisers</aside>
 
-<aside class="notes">The Autor reading refers to Cardinal versus Ordinal utility.
+<aside class="notes"
+The Autor reading refers to Cardinal versus Ordinal utility. We use the latter in demand/consumer theory.
 
- We use the latter in demand/consumer theory.</aside>
-
+	</aside>
 
 # Preference axioms
 
@@ -431,21 +434,25 @@ Note: Uncertain choices $\rightarrow$ 'Von Neumann - Morgenstern' utility functi
 
 1. Completeness
 
-<aside class="notes">Given two options, A and B, a person can state which option they prefer or whether they find both options equally attractive.</aside>
+<aside class="notes">Given two options, A and B, a person can state which option they prefer or whether they find both options equally attractive.
 
-<aside class="notes">The more formal and parsimonious definition (Autor readings, Jehle/Reny) develop this from a single relation 'weakly preferred to'.</aside>
+The more formal and parsimonious definition (Autor readings, Jehle/Reny) develop this from a single relation 'weakly preferred to'.</aside>
 
 2. Transitivity (internal consistency)
 
-<aside class="notes">If I prefer A to B, and prefer B to C, then I must prefer A to C.</aside>
+
 
 
 3. More is Better (*nonsatiation, or some variant of this*)
 
 
-<aside class="notes"> Completeness and transitivity (and continuity) are necessary for people's choices to be represented by (continuous) *utility functions*
+<aside class="notes">
+Given two options, A and B, a person can state which option they prefer or whether they find both options equally attractive.
 
-Continuity is necessary for 'well behaved' (not-jumpy) demand curves
+The more formal and parsimonious definition (Autor readings, Jehle/Reny) develop this from a single relation 'weakly preferred to'. If I prefer A to B, and prefer B to C, then I must prefer A to C.
+
+Completeness and transitivity (and continuity) are necessary for people's choices to be represented by (continuous) *utility functions*.
+Continuity is necessary for 'well behaved' (not-jumpy) demand curves.
 
 (Local) Nonsatiation will help us derive results </aside>
 
@@ -610,17 +617,15 @@ Continuity and nonsatiation
 ----
 
 
-```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/moreisbetter.png")
 ```
 
 
 - How can we compare the "?" areas? Which are preferred?
 
-\
 
-
- <!-- \pause -->
+. . .
 
 
 $\rightarrow$ Compare utilities, depict using *Indifference Curves*
@@ -628,7 +633,9 @@ $\rightarrow$ Compare utilities, depict using *Indifference Curves*
 
 <aside class="notes">LC: Here, put up indifference curve picture on the visualiser</aside>
 
-# Voluntary trades and indifference curves
+# Indifference curves
+
+## Indifference curves
 
 Indifference curve
 :     A curve that shows all the combinations of goods or services that provide the same level of utility
@@ -636,18 +643,21 @@ Indifference curve
 <br> \bigskip
 
 
-<!-- \pause -->
+. . .
+
 
 Formally (for 2 goods), the set of pairs of $\{X,Y\}$ such that $U(X,Y)=c$ for some constant $c$
 
+
+. . .
+
+For n goods, the level-sets of the $U(x_1, x_2, x_3,...)$ function.
 
 <br> \bigskip
 
 
 <aside class="notes">Recall  "level sets" from math tools</aside>
 
-
-<!-- \pause -->
 
 
 <!---
@@ -663,7 +673,7 @@ Formally (for 2 goods), the set of pairs of $\{X,Y\}$ such that $U(X,Y)=c$ for s
 ----
 
 
-```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/indifcurves_util_together.jpg")
 ```
 
@@ -671,18 +681,19 @@ Credit: www2.econ.iastate.edu
 
 ----
 
-```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/indif_utility_2_400.jpg")
 ```
 
 Credit: Frank's Economics on the web (MIT)
 
 
-----
 
 # Properties of indifference curves
 
-```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+##
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/indifccurve.png")
 ```
 
@@ -696,7 +707,7 @@ If this is too difficult, think of 2 healthy goods, like runner beans and green 
 
 <aside class="notes">LC: draw/KEEP THIS ON THE BOARD</aside>
 
-<!-- . . . -->
+. . .
 
 `r format_with_col("Rank order of preference/indifference between points A-E.","blue")`
 
@@ -704,7 +715,7 @@ If this is too difficult, think of 2 healthy goods, like runner beans and green 
 
 ----
 
-```{r  fig.cap = '', out.height='1.8 in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.height='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/indifccurve.png")
 ```
 
@@ -715,8 +726,7 @@ Q1: How do we know $E \succ B$ ?
 <aside class="notes">Q1: Has more soft drink, same hamburgers. Assumption 3: more preferred to less.</aside>
 
 
-<!-- . . . -->
-
+. . .
 
 Q:  How do we know $E \succ A$ ?
 
