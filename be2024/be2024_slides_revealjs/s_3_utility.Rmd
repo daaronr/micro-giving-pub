@@ -117,9 +117,14 @@ Rules defined as 'axioms about preferences'
 
 $\rightarrow$ yields predictions for individual behavior, markets, etc.
 
-<aside class="notes"><small>Economists and decision theorists have tried to come up with and defend such rules.  They have started from these 'reasonable axioms' and followed their logical implications for  individual choices, individual responses to changes in prices and income,
+<aside class="notes">Economists and decision theorists have tried to come up with and defend such rules.
+
+ They have started from these `reasonable axioms' and follow their logical implications for \textCR
+individual choices, individual responses to changes in prices and income,
+
 market prices and quantities and their responses,
- `welfare' and inequality outcomes for entire economies, etc.</small></aside>
+
+`welfare' and inequality outcomes for entire economies, etc.</aside>
 
 ----
 
@@ -132,25 +137,26 @@ market prices and quantities and their responses,
 
 **Learn, understand, be able to explain and explain:**
 
-::: incremental
-
 - 'Utility', how it's defined
 
-- Key assumptions about preferences/choices; their implication
+- Key assumptions about preferences/choices; their implications
+
+
+<!-- . . . -->
+
 
 - Depict preferences/utility with 'indifference curves'
     - ... examples of 'perfect substitutes' and 'perfect complements'
-
-:::
 
 
 ----
 
 
 
-::: incremental
-
 - 'Budget constraints', compute and model them
+
+
+<!-- . . . -->
 
 
 - Maximising utility subject to constraints
@@ -160,9 +166,10 @@ market prices and quantities and their responses,
     price ratios \& mgnl rates of substn.
     -->
 
-- Depict and interpret optimisation with indifference curves and budget constraints
 
-:::
+<!-- . . . -->
+
+- Depict and interpret optimisation with indifference curves and budget constraints
 
 <aside class="notes">Warn that this is somewhat abstract but it will make sense
 
@@ -210,15 +217,14 @@ Utility
 
 Utility will be expressed as a single number that arises from the combination of all goods and services consumed.
 
-. . .
+<!-- . . . -->
 
-<br> \bigskip 
 
-Essentially, economists assume that 'when making a choice among all available and feasible options, an individual will choose the one that yields the greatest *utility*'
+<br> \bigskip
 
-<aside class="notes">
-This is the 'content' of the model; otherwise it seems circular (we max util, what's util, the thing we max). Content: we consider tradeoffs among *all* alternatives in a consistent way.
-</aside> 
+
+Essentially, economists assume that `when making a choice among all available and feasible options, an individual will choose the one that yields the greatest *utility*'
+
 
 ## Utility from two goods
 
@@ -228,15 +234,14 @@ $$Utility = U(X,Y; other)$$
 \
 
 
-. . .
-
+<!-- . . . -->
 
 
 - Leisure and 'goods consumption'
-
 - Food and non-food
-
 - Coffee and tea (holding all else constant)
+
+
 
 
 
@@ -244,15 +249,11 @@ $$Utility = U(X,Y; other)$$
 
 $$Utility = U(X,Y)$$
 
-
-
 <br> \bigskip
 
  `r format_with_col("Maths revision","blue")`: $U(X,Y)$ expresses a *function* with two *arguments*, X and Y.
 
-<br> \bigskip 
-
-$U(X,Y)$ must take *some* value for every positive value of X and Y.
+- $U(X,Y)$ must take *some* value for every positive value of X and Y.
 
 <aside class="notes">In  *general* a function of X and Y might increase or decrease in either X or Y,
 
@@ -260,14 +261,11 @@ $U(X,Y)$ must take *some* value for every positive value of X and Y.
 
 <aside class="notes">Consider the function `altitude of land in Britain as a function of degrees longitude and latitude'</aside>
 
-. . .
+<!-- . . . -->
 
 This expresses a *general* function; I haven't specified *what* this function is
 
-. . .
-
 - E.g., it could be $U(X,Y)=\sqrt(XY)$
-
 
 <aside class="notes">We can consider functions in general having certain properties without specifying exactly what these functions are.</aside>
 
@@ -275,7 +273,8 @@ This expresses a *general* function; I haven't specified *what* this function is
 
 ## Measuring and comparing utilities
 
-<aside class="notes">Adv: In general, measuring/comparing utility  is a difficult but well-studied issue as it is important for methodology and welfare analysis.
+<aside class="notes">Adv: This is a difficult but well-studied issue, as it is important for methodology and welfare analysis.
+
 
  In more detailed discussions, we might speak of 'cardinal utility', 'ordinal utility', etc.,
 
@@ -285,34 +284,34 @@ Utility is not 'observable and measurable in utils'
 
 <!-- \pause -->
 
-> - (Unlike midi-chlorians or thetans)
+(Unlike midi-chlorians or thetans)
 
 
 <br> \bigskip
 
 <!-- \pause -->
 
-> - Utility is seen to govern an individual's *choices* and thus it's only inferred indirectly, from the *choices* people make
+Utility is seen to govern an individual's *choices* and thus it's only inferred indirectly, from the *choices* people make
 
 ----
 
-
 **Revealed preference:** if Al buys a cat instead of a dog, and a dog was cheaper, we assume Al gets more utility from a cat
 
-. . .
 
-
-```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/alscat.jpg")
 ```
-
 
 ----
 
 
 *Interpersonal comparisons are difficult*
 
+
 - Who gets 'more' utility?
+
+
+<br> \bigskip
 
 
 ```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
@@ -326,11 +325,13 @@ Utility is not 'observable and measurable in utils'
 - Transfer from Al to Betty: Is the reduction in Al's utility more or less than the increase in Betty's?
 
 
-```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/babytakingfood.JPG")
 ```
 
 <aside class="notes">As we only get at utility through an *individual's* decisions, we have no reliable way to compare it across individuals</aside>
+
+
 
 
 # Standard assumptions about preferences ('axioms')
@@ -377,7 +378,9 @@ $$A \succ B, B \succ A, \: or \: A \sim B $$
 
 
 
-. . .
+<!-- . . . -->
+
+
 
 
 
@@ -401,11 +404,8 @@ See also Sunstein and others on 'choosing not to choose'</aside>
 
 $$ A \succ B \: and \: B \succ C \rightarrow A \succ C $$
 
-. . .
 
-- Similar transitivity for indifference ($\sim$)
-
-  - Note: indifference is also 'reflexive' so $A \sim B \rightarrow B \sim A$
+- Similar for indifference ($\sim$)
 
 
 <aside class="notes">If I prefer an Apple to a Banana and a Banana to Cherry then I prefer an Apple to a Cherry.
@@ -428,16 +428,14 @@ $$ A \succ B \: and \: B \succ C \rightarrow A \succ C $$
 If I prefer an Apple to a Banana and a Banana to Cherry
 
 
-. . .
+<!-- . . . -->
 
 
 then I prefer an Apple to a Cherry.
 
 
-. . .
+<!-- . . . -->
 
-
-<br> \bigskip
 
 If not $\rightarrow$ money pump.
 
@@ -449,25 +447,26 @@ If not $\rightarrow$ money pump.
 
 ----
 
-### 3. More is better 
+### 3. More is better (similar to nonsatiation, 'monotonicity')
 
-<center> <small> (similar to nonsatiation, 'monotonicity') </small> </center>
-
-```{r  fig.cap = '', out.width='65%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/moreisbetter.png")
 ```
 
-<center> *Draw this!* </center>
+\medskip
 
-<small> `r format_with_col("If the product is a 'bad' (e.g., pollution), redefine as the *absence* of the product","gray")` </small>
+*Draw this!*
+
+`r format_with_col("\footnotesize{If the product is a 'bad' (e.g., pollution), redefine as the *absence","gray")` of the product*}
 
 <aside class="notes">The darkly shaded area represents those combinations of X and Y that are unambiguously preferred to the combination X\*, Y\*.
 
-This is why goods are called ''goods''; individuals prefer having more of any good rather than less.
+ This is why goods are called ''goods''; individuals prefer having more of any good rather than less.
 
   Combinations of X and Y in the lightly shaded area are inferior to the combination X\*, Y\*,
 
  whereas those in the questionable areas may or may not be superior to X\*, Y\*.</aside>
+
 
 ----
 
@@ -481,6 +480,8 @@ they will make choices in a way consistent with maximising a (continuous) *utili
 <br> \bigskip
 
 
+
+
 `r format_with_col("*(and also 'continuity', which you can ignore for this module)","gray")`
 
 
@@ -488,6 +489,7 @@ they will make choices in a way consistent with maximising a (continuous) *utili
 <aside class="notes">silly to say people *actually* consult a utility function.
 
 instead 'people behave as if they are maximizing utility functions';
+
 
  similar to  "people choose based on preferences that satisfy the above assumptions. </aside>
 
@@ -514,25 +516,18 @@ Also gives a vocabulary and a way to test for violations of this consistency, an
 
 <aside class="notes">LC: Here, put up indifference curve picture on the visualiser</aside>
 
-# Indifference curves
+# Voluntary trades and indifference curves
 
 Indifference curve
 :     A curve that shows all the combinations of goods or services that provide the same level of utility
-
-
-## Indifference curves
-
-Indifference curve
-:     A curve that shows all the combinations of goods or services that provide the same level of utility
-
-
-. . .
-
 
 <br> \bigskip
 
-Formally (for 2 goods), the set of pairs of $\{X,Y\}$ such that $U(X,Y)=c$   
- for some constant $c$
+
+<!-- \pause -->
+
+Formally (for 2 goods), the set of pairs of $\{X,Y\}$ such that $U(X,Y)=c$ 
+for some constant $c$
 
 
 <br> \bigskip
@@ -543,8 +538,6 @@ Formally (for 2 goods), the set of pairs of $\{X,Y\}$ such that $U(X,Y)=c$
 
 <!-- \pause -->
 
-
-. . .
 
 
 `r format_with_col("Warning:","red")` Indifference curves help us *depict* utility functions; a single indifference curve is *not* itself a utility function!
@@ -594,6 +587,7 @@ If this is too difficult, think of 2 healthy goods, like runner beans and green 
 
 <aside class="notes">LC: draw/KEEP THIS ON THE BOARD</aside>
 
+<!-- . . . -->
 
 `r format_with_col("Rank order of preference/indifference between points A-E.","blue")`
 
@@ -610,7 +604,7 @@ Q1: How do we know $E \succ B$ ?
 <aside class="notes">Q1: Has more soft drink, same hamburgers. Assumption 3: more preferred to less.</aside>
 
 
-. . .
+<!-- . . . -->
 
 
 Q:  How do we know $E \succ A$ ?
@@ -621,7 +615,7 @@ If $E \succ A$ and $B \sim A$ then $E \succ A$ by transitivity of the preference
 
 ----
 
-# Why 'voluntary trade'? 
+**Why 'voluntary trade'? **
 
 ```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/indifccurve.png")
@@ -650,12 +644,12 @@ MRS =  Absolute value of slope of indifference curve
 
 <br> \bigskip
 
-'Rate at which you're willing to forgo consuming $Y$
-to consume one more $X$'
+'Rate at which you're willing to forgo consuming ($Y$)
+to consume one more ($X$)'
 
 <aside class="notes">2024, Adv, math: This slope will equal the negative of the *ratio* of the rate at which utility increases in each good (partial derivative).
 
-Intuition: giving up a certain utility from one good must be balanced by an increase in utility from the other good.</aside>
+   Intuition: giving up a certain utility from one good must be balanced by an increase in utility from the other good.</aside>
 
 
 
@@ -708,10 +702,10 @@ the smaller the arc</aside>
 \
 
 
-. . .
+<!-- \pause -->
 
 
-Note the decline: 'diminishing MRS':  may reflect *satiation*
+> - Note the decline: 'diminishing MRS':  may reflect *satiation*
 
 ----
 
@@ -775,19 +769,14 @@ Indifference curves `r format_with_col("never cross!","red")`
 
 ## App 2.3: Product positioning in marketing (read at home, see handout)
 
-# Definitions: Perfect substitutes and complements
 
-## Perfect substitutes
+# Definitions: Perfect substitutes and complements
 
 Perfect substitutes
 
 :     Goods A and B are Perfect Substitutes when an individual's utility is linear in these goods
 
-
-. . .
-
-
-when she is always willing to trade off A for B at a fixed rate (not necessarily 1 for 1)
+: when she is always willing to trade off A for B at a fixed rate (not necessarily 1 for 1)
 
 ----
 
@@ -797,8 +786,6 @@ Perfect complements
 
 <br> \bigskip
 
-. . .
-
 These goods are 'enjoyed only in fixed proportions'.
 
 <aside class="notes">e.g., left and right shoes (1-1) bicycle frames and wheels (1-2) or, perhaps, baking powder and flour (1-40) for someone who only eats soda bread.
@@ -807,7 +794,8 @@ These goods are 'enjoyed only in fixed proportions'.
 
 
 
-# Choices are subject to constraints :(
+
+## Choices are subject to constraints :(
 
 \
 
@@ -820,11 +808,17 @@ $\rightarrow$ *budget constraint*.
 <aside class="notes">Sorry ... maybe that's why they call Economics the dismal science</aside>
 
 
-----
+<!-- . . . -->
 
-```{r  fig.cap = 'Budget constraint for two goods, slope $-P_x/P_y$', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
+\begin{figure}[hb]
+  \centering
+    ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/budgetconstraint.png")
 ```
+  \caption[Budget constraint for two goods]
+   {Budget constraint for two goods, slope $-P_x/P_y$}
+\end{figure}
 
 
 <aside class="notes">Think 'food' and 'nonfood'.
@@ -853,7 +847,9 @@ However, I'll try not to make such errors too costly on the assessments.  </asid
 
 If I spend all my income `r format_with_col("(I will do over a 'relevant lifetime')","gray")`:
 
-. . .
+\
+
+<!-- \pause -->
 
 
 
@@ -863,38 +859,31 @@ Expenditure on X + Expenditure on Y = Income (I)
 $$P_X X + P_Y Y = I $$
 
 
-. . .
+<!-- . . . -->
+
+\
+
+> - To see how $Y$ trades off against $X$, rearrange this to:
 
 
-To see how $Y$ trades off against $X$, rearrange this to:
+<!-- . . . -->
 
-$$Y = -\frac{P_X}{P_Y} X + \frac{I}{P_Y}$$
-
-## 
-
-Expenditure on X + Expenditure on Y = Income (I)
-
-$$P_X X + P_Y Y = I $$
 
 
 $$Y = -\frac{P_X}{P_Y} X + \frac{I}{P_Y}$$
 
-. . .
+
+<!-- . . . -->
 
 
-<br> \bigskip 
+> - Intercept $\frac{I}{P_Y}$: amount of Y you can buy if you only buy Y
+> - Slope $-\frac{P_X}{P_Y}$: how much Y you must give up to get another X
 
-Intercept $\frac{I}{P_Y}$: amount of Y you can buy if you only buy Y
- 
-. . .
-
-Slope $-\frac{P_X}{P_Y}$: how much Y you must give up to get another X
-
-
-
+<!---
 <aside class="notes">Adv: Strictly speaking, the slope is how much Y you *get* when you get another X,
 
 but since this is negative we see that you 'get a negative amount', i.e., give up some amount of Y</aside>
+-->
 
 <aside class="notes">Work on making sure you can calculate the slope and intercept,
 
