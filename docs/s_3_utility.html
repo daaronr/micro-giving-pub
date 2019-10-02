@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="David Reinstein (Exeter)" />
+  <meta name="dcterms.date" content="2019-01-10" />
+  <title>s_3_utility.utf8.md</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="s_3_utility_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="s_3_utility_files/reveal.js-3.3.0.1/css/theme/white.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="reveal.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <link href="s_3_utility_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="s_3_utility_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="utility-and-choice" class="title-slide slide level1"><h1>Utility and Choice</h1></section>
+<section><section id="motivation" class="title-slide slide level1"><h1>Motivation</h1><p>Consider a decision you recently made?</p>
+<p><br> </p>
+<ul>
+<li><p>Define this decision clearly.</p></li>
+<li><p>How do you think you decided among these options?</p></li>
+</ul>
+<!-- \pause -->
+<p>2 minutes: discuss with your neighbour</p>
+<aside class="notes">
+<p>What did this depend on? Would other people in your place have made the same decision?</p>
+If you got amnesia and forgot what you decided and then were in the same situation again. Do you think you’d make the same decision?
+</aside></section><section class="slide level2">
+
+<p>Suppose I asked you</p>
+<p>‘State a rule that governs (determines/characterizes) how people <em>do</em> make decisions’…</p>
+<!-- . . . -->
+<p><br> </p>
+<p>I want this rule to be…</p>
+<ol type="1">
+<li><p>Informative (it rules <em>out</em> at least some sets of choices)</p></li>
+<li><p>Predictive (people rarely if ever violate this rule)</p></li>
+</ol>
+</section><section class="slide level2">
+
+<p>Similar question:</p>
+<p>‘State a rule that governs how people <em>should</em> make decisions’..</p>
+<p><br> </p>
+<p>By ‘should’ I mean that <em>they will not regret having made decisions in this way.</em></p>
+<!-- \pause -->
+<p>2 minutes: discuss with your neighbour</p>
+</section><section class="slide level2">
+
+<p>If people <em>did</em> follow these rules, what would this imply and predict? </p>
+<!-- \pause -->
+<p>Rules defined as ‘axioms about preferences’</p>
+<!-- . . . -->
+<p>‘Standard axioms’ <span class="math inline">\(\rightarrow\)</span> (imply that) choices can be expressed by ‘individuals maximising <em>utility functions</em> subject to their <em>budget constraints</em>’</p>
+<p><span class="math inline">\(\rightarrow\)</span> yields predictions for individual behavior, markets, etc.</p>
+<aside class="notes">
+<small>Economists and decision theorists have tried to come up with and defend such rules. They have started from these ‘reasonable axioms’ and followed their logical implications for individual choices, individual responses to changes in prices and income, market prices and quantities and their responses, `welfare’ and inequality outcomes for entire economies, etc.</small>
+</aside>
+</section><section class="slide level2">
+
+</section></section>
+<section><section id="lecture-2-ch.2-utility-and-choice-coverage" class="title-slide slide level1"><h1>Lecture 2, Ch.2 – Utility and Choice – coverage</h1><p><strong>Learn, understand, be able to explain and explain:</strong></p>
+<div>
+<ul>
+<li class="fragment"><p>‘Utility’, how it’s defined</p></li>
+<li class="fragment"><p>Key assumptions about preferences/choices; their implication</p></li>
+<li class="fragment"><p>Depict preferences/utility with ‘indifference curves’</p>
+<ul>
+<li class="fragment">… examples of ‘perfect substitutes’ and ‘perfect complements’</li>
+</ul></li>
+</ul>
+</div></section><section class="slide level2">
+
+<div>
+<ul>
+<li class="fragment"><p>‘Budget constraints’, compute and model them</p></li>
+<li class="fragment"><p>Maximising utility subject to constraints</p>
+<ul>
+<li class="fragment">optimisation condition for this</li>
+</ul>
+<p><!---
+  price ratios \& mgnl rates of substn.
+  --></p></li>
+<li class="fragment"><p>Depict and interpret optimisation with indifference curves and budget constraints</p></li>
+</ul>
+</div>
+<aside class="notes">
+<p>Warn that this is somewhat abstract but it will make sense</p>
+<p>Part 2 (ch 2-3) involves building the demand curve from first principles,</p>
+and discussing how to interpret it
+</aside>
+<aside class="notes">
+<ul>
+<li>Want to develop a model that can be used to show how we make choices or decisions.</li>
+</ul>
+<p>-Your choices are determined by two things:</p>
+<p>-Preferences: what goods do you like</p>
+-Constraints: how much money do you have, what are the prices of the goods you buy
+</aside>
+</section></section>
+<section><section id="utility" class="title-slide slide level1"><h1>Utility</h1><dl>
+<dt>Utility</dt>
+<dd>“The pleasure or satisfaction that people get from their economic activity.”
+</dd>
+</dl>
+<!-- . . . -->
+<dl>
+<dt><br> </dt>
+<dd><p>Alt: The thing that people maximise when making economic decisions</p>
+</dd>
+</dl>
+<aside class="notes">
+Adv: There is some debate about the meaning and interpretation of utility, particularly in the Behavioural Economics literature
+</aside>
+<aside class="notes">
+<p>Adv: A defining feature of the standard Economics approach is that decisions are made as if all characteristics of outcomes can be compared and evaluated,</p>
+thus we can reduce everything to a single dimension, ‘utility’, which is maximised
+</aside></section><section class="slide level2">
+
+<p><em>How is this used?</em></p>
+<p><br> </p>
+<!-- . . . -->
+<p>Utility will be expressed as a single number that arises from the combination of all goods and services consumed.</p>
+<div class="fragment">
+<p><br> </p>
+<p>Essentially, economists assume that ‘when making a choice among all available and feasible options, an individual will choose the one that yields the greatest <em>utility</em>’</p>
+<aside class="notes">
+This is the ‘content’ of the model; otherwise it seems circular (we max util, what’s util, the thing we max). Content: we consider tradeoffs among <em>all</em> alternatives in a consistent way.
+</aside>
+</div>
+</section><section id="utility-from-two-goods" class="slide level2">
+<h2>Utility from two goods</h2>
+<p><span class="math display">\[Utility = U(X,Y; other)\]</span></p>
+<p><br />
+</p>
+<div class="fragment">
+<ul>
+<li><p>Leisure and ‘goods consumption’</p></li>
+<li><p>Food and non-food</p></li>
+<li><p>Coffee and tea (holding all else constant)</p></li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p><span class="math display">\[Utility = U(X,Y)\]</span></p>
+<p><br> </p>
+<p><font color='blue'>Maths revision</font>: <span class="math inline">\(U(X,Y)\)</span> expresses a <em>function</em> with two <em>arguments</em>, X and Y.</p>
+<p><br> </p>
+<p><span class="math inline">\(U(X,Y)\)</span> must take <em>some</em> value for every positive value of X and Y.</p>
+<aside class="notes">
+<p>In <em>general</em> a function of X and Y might increase or decrease in either X or Y,</p>
+or increase over some ranges and decrease over other ranges of these two arguments.
+</aside>
+<aside class="notes">
+Consider the function `altitude of land in Britain as a function of degrees longitude and latitude’
+</aside>
+<div class="fragment">
+<p>This expresses a <em>general</em> function; I haven’t specified <em>what</em> this function is</p>
+</div>
+<div class="fragment">
+<ul>
+<li>E.g., it could be <span class="math inline">\(U(X,Y)=\sqrt(XY)\)</span></li>
+</ul>
+<aside class="notes">
+We can consider functions in general having certain properties without specifying exactly what these functions are.
+</aside>
+</div>
+</section><section id="measuring-and-comparing-utilities" class="slide level2">
+<h2>Measuring and comparing utilities</h2>
+<aside class="notes">
+<p>Adv: In general, measuring/comparing utility is a difficult but well-studied issue as it is important for methodology and welfare analysis.</p>
+<p>In more detailed discussions, we might speak of ‘cardinal utility’, ‘ordinal utility’, etc.,</p>
+to indicate ways we can compare utility between individuals and in response to policy changes.
+</aside>
+<p>Utility is not ‘observable and measurable in utils’</p>
+<!-- \pause -->
+<ul>
+<li class="fragment">(Unlike midi-chlorians or thetans)</li>
+</ul>
+<p><br> </p>
+<!-- \pause -->
+<ul>
+<li class="fragment">Utility is seen to govern an individual’s <em>choices</em> and thus it’s only inferred indirectly, from the <em>choices</em> people make</li>
+</ul>
+</section><section class="slide level2">
+
+<p><strong>Revealed preference:</strong> if Al buys a cat instead of a dog, and a dog was cheaper, we assume Al gets more utility from a cat</p>
+<div class="fragment">
+<p><img src="picsfigs/alscat.jpg" width="70%" style="display: block; margin: auto;" /></p>
+</div>
+</section><section class="slide level2">
+
+<p><em>Interpersonal comparisons are difficult</em></p>
+<ul>
+<li>Who gets ‘more’ utility?</li>
+</ul>
+<p><img src="picsfigs/facepalmstatue.jpg" width="80%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><em>…Interpersonal comparisons are difficult</em></p>
+<ul>
+<li>Transfer from Al to Betty: Is the reduction in Al’s utility more or less than the increase in Betty’s?</li>
+</ul>
+<p><img src="picsfigs/babytakingfood.JPG" width="80%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+As we only get at utility through an <em>individual’s</em> decisions, we have no reliable way to compare it across individuals
+</aside>
+</section></section>
+<section><section id="standard-assumptions-about-preferences-axioms" class="title-slide slide level1"><h1>Standard assumptions about preferences (‘axioms’)</h1><ol type="1">
+<li>Completeness</li>
+</ol>
+<aside class="notes">
+Given two options, A and B, a person can state which option they prefer or whether they find both options equally attractive.
+</aside>
+<aside class="notes">
+The more formal and parsimonious definition (Autor readings, Jehle/Reny) develop this from a single relation ‘weakly preferred to’.
+</aside>
+<ol start="2" type="1">
+<li>Transitivity (internal consistency)</li>
+</ol>
+<aside class="notes">
+If I prefer A to B, and prefer B to C, then I must prefer A to C.
+</aside>
+<ol start="3" type="1">
+<li>More is Better (<em>nonsatiation</em>)</li>
+</ol>
+<aside class="notes">
+<p>Completeness and transitivity (and continuity) are necessary for people’s choices to be represented by (continuous) <em>utility functions</em></p>
+<p>Continuity is necessary for ‘well behaved’ (not-jumpy) demand curves</p>
+(Local) Nonsatiation will help us derive results
+</aside></section><section class="slide level2">
+
+<h3 id="completeness">1. Completeness</h3>
+<p><span class="math display">\[A \succ B, B \succ A, \: or \: A \sim B \]</span></p>
+
+<p><font color='gray'>Fancy notation: Either A preferred to B, B preferred to A, or A indifferent to B</font></p>
+<aside class="notes">
+<p>You don’t need to know this notation, but it may be a helpful shorthand</p>
+</aside>
+<div class="fragment">
+<p><img src="picsfigs/donkeybales.jpeg" width="50%" style="display: block; margin: auto;" /></p>
+<p>Forbidden: “I can’t choose between a ski holiday and a beach holiday, but I am not indifferent”</p>
+<aside class="notes">
+Also forbidden: the <em>time</em> or <em>frame</em> in which I make the <em>decisions</em> shouldn’t affect my choices
+</aside>
+<aside class="notes">
+<p>Violations?: See, e.g., ’Predicting Hunger: The Effects of Appetite and Delay on Choice; Read and van Leeuwen, 1998</p>
+See also Sunstein and others on ‘choosing not to choose’
+</aside>
+</div>
+</section><section class="slide level2">
+
+<h3 id="transitivity">2. Transitivity</h3>
+<p><span class="math display">\[ A \succ B \: and \: B \succ C \rightarrow A \succ C \]</span></p>
+<div class="fragment">
+<ul>
+<li><p>Similar transitivity for indifference (<span class="math inline">\(\sim\)</span>)</p>
+<ul>
+<li>Note: indifference is also ‘reflexive’ so <span class="math inline">\(A \sim B \rightarrow B \sim A\)</span></li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>If I prefer an Apple to a Banana and a Banana to Cherry then I prefer an Apple to a Cherry.</p>
+A similar idea holds if I am indifferent between one pair of these.
+</aside>
+<aside class="notes">
+If this seems confusing it may be because it is <em>too</em> obvious (although behavioral and experimental economists claim to find violations).
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/applebananacherry.jpg" width="50%" style="display: block; margin: auto;" /></p>
+<p>If I prefer an Apple to a Banana and a Banana to Cherry</p>
+<div class="fragment">
+<p>then I prefer an Apple to a Cherry.</p>
+</div>
+<div class="fragment">
+<p><br> </p>
+<p>If not <span class="math inline">\(\rightarrow\)</span> money pump.</p>
+<aside class="notes">
+<p>Adv: ‘Money pump’ argument – If you found someone who strictly preferred an apple to a banana, a banana to a cherry, and a cherry to an apple,</p>
+you could make a lot of money out of them!
+</aside>
+</div>
+</section><section class="slide level2">
+
+<h3 id="more-is-better">3. More is better</h3>
+<center>
+<small> (similar to nonsatiation, ‘monotonicity’) </small>
+</center>
+<p><img src="picsfigs/moreisbetter.png" width="65%" style="display: block; margin: auto;" /></p>
+<center>
+<em>Draw this!</em>
+</center>
+<p><small> <font color='gray'>If the product is a ‘bad’ (e.g., pollution), redefine as the <em>absence</em> of the product</font> </small></p>
+<aside class="notes">
+<p>The darkly shaded area represents those combinations of X and Y that are unambiguously preferred to the combination X*, Y*.</p>
+<p>This is why goods are called ‘’goods’’; individuals prefer having more of any good rather than less.</p>
+<p>Combinations of X and Y in the lightly shaded area are inferior to the combination X*, Y*,</p>
+whereas those in the questionable areas may or may not be superior to X*, Y*.
+</aside>
+</section><section class="slide level2">
+
+<h3 id="who-cares">Who cares?</h3>
+<p><br> </p>
+<p><strong>If people obey the first two assumptions (axioms),<span class="math inline">\(^\ast\)</span> they will make choices in a way consistent with maximising a (continuous) <em>utility</em> function</strong></p>
+<p><br> </p>
+<p><font color='gray'>*(and also ‘continuity’, which you can ignore for this module)</font></p>
+<aside class="notes">
+<p>silly to say people <em>actually</em> consult a utility function.</p>
+<p>instead ‘people behave as if they are maximizing utility functions’;</p>
+similar to "people choose based on preferences that satisfy the above assumptions.
+</aside>
+<aside class="notes">
+<p>Axioms stand directly behind ‘revealed preference’ methods for measuring how much people value</p>
+<p>nonmarket goods, like clean air and national parks.</p>
+Also gives a vocabulary and a way to test for violations of this consistency, and make alternate predictions
+</aside>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/moreisbetter.png" width="60%" style="display: block; margin: auto;" /></p>
+<ul>
+<li>How can we compare the “?” areas? Which are preferred?</li>
+</ul>
+<ul>
+<li class="fragment"><span class="math inline">\(\rightarrow\)</span> Compare utilities, depict using <em>Indifference Curves</em></li>
+</ul>
+<aside class="notes">
+LC: Here, put up indifference curve picture on the visualiser
+</aside>
+</section></section>
+<section><section id="indifference-curves" class="title-slide slide level1"><h1>Indifference curves</h1><dl>
+<dt>Indifference curve</dt>
+<dd>A curve that shows all the combinations of goods or services that provide the same level of utility
+</dd>
+</dl></section><section id="indifference-curves-1" class="slide level2">
+<h2>Indifference curves</h2>
+<dl>
+<dt>Indifference curve</dt>
+<dd>A curve that shows all the combinations of goods or services that provide the same level of utility
+</dd>
+</dl>
+<div class="fragment">
+<p><br> </p>
+<p>Formally (for 2 goods), the set of pairs of <span class="math inline">\(\{X,Y\}\)</span> such that <span class="math inline">\(U(X,Y)=c\)</span><br />
+for some constant <span class="math inline">\(c\)</span></p>
+<p><br> </p>
+<aside class="notes">
+Recall “level sets” from math tools
+</aside>
+<!-- \pause -->
+</div>
+<div class="fragment">
+<p><font color='red'>Warning:</font> Indifference curves help us <em>depict</em> utility functions; a single indifference curve is <em>not</em> itself a utility function!</p>
+<!---
+## App 2.2 : Should Economists care how the mind works?
+- Look to biology, psychology, cognitive science for key principles/modeling?
+- Evidence of systematic departures from maximization of a consistent and standard utility *function*
+    - E.g., treating some prices differently and ignoring information
+    - Self-control and 'paying not to go to the gym'
+- Should we describe/model *optimizing* behavior or 'typical behavioral patterns'?
+    - Arguments for each; see chapter 17 on 'Behavioral Economics'
+-->
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/indifcurves_util_together.jpg" width="70%" style="display: block; margin: auto;" /></p>
+<p>Credit: www2.econ.iastate.edu</p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/indif_utility_2_400.jpg" width="80%" style="display: block; margin: auto;" /></p>
+<p>Credit: Frank’s Economics on the web (MIT)</p>
+</section></section>
+<section><section id="properties-of-indifference-curves" class="title-slide slide level1"><h1>Properties of indifference curves</h1><p><img src="picsfigs/indifccurve.png" width="80%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+<p>Suppose you are someone that likes hamburgers and soft drinks!</p>
+<p>If this is too difficult, think of 2 healthy goods, like runner beans and green tea.</p>
+Note that the <em>period</em> of consumption; a day, a year, or a lifetime, is not specified.
+</aside>
+<aside class="notes">
+LC: draw/KEEP THIS ON THE BOARD
+</aside>
+<p><font color='blue'>Rank order of preference/indifference between points A-E.</font></p>
+<aside class="notes">
+Ans: <span class="math inline">\(E \succ A \sim B \sim C \sim D \succ F\)</span>
+</aside></section><section class="slide level2">
+
+<p><img src="picsfigs/indifccurve.png" width="476" height="85%" style="display: block; margin: auto;" /></p>
+<p>Q1: How do we know <span class="math inline">\(E \succ B\)</span> ?</p>
+<aside class="notes">
+Q1: Has more soft drink, same hamburgers. Assumption 3: more preferred to less.
+</aside>
+<div class="fragment">
+<p>Q: How do we know <span class="math inline">\(E \succ A\)</span> ?</p>
+<aside class="notes">
+<p>B indifferent to A because on same indifference curve</p>
+If <span class="math inline">\(E \succ A\)</span> and <span class="math inline">\(B \sim A\)</span> then <span class="math inline">\(E \succ A\)</span> by transitivity of the preferences, assumption 2.
+</aside>
+</div>
+</section><section class="slide level2">
+
+</section></section>
+<section id="why-voluntary-trade" class="title-slide slide level1"><h1>Why ‘voluntary trade’?</h1><p><img src="picsfigs/indifccurve.png" width="80%" style="display: block; margin: auto;" /></p>
+<p>The indifference curve offers some intuition.</p>
+<aside class="notes">
+<p>Individual ok giving up soda for hamburgers or v/v <em>along</em> indifference curve</p>
+<p>A trade that put them <em>above</em> the IC makes them ‘strictly’ better off</p>
+<em>Consider if one individual had D and another A, and they had the same preferences.</em>
+</aside>
+<aside class="notes">
+<p>Line between two bundles: all ‘convex combinations’ of these,</p>
+<p>In normal-speak, a partial share of each bundle.</p>
+<p>Note with the same DMRS for both, trades along this line make both better off;</p>
+the <em>points</em> they would trade to depends on their bargaining power
+</aside></section>
+<section><section id="marginal-rate-of-substitution-mrs" class="title-slide slide level1"><h1>Marginal rate of substitution (MRS)</h1><p>MRS = Absolute value of slope of indifference curve</p>
+<p><br> </p>
+<p>‘Rate at which you’re willing to forgo consuming <span class="math inline">\(Y\)</span> to consume one more <span class="math inline">\(X\)</span>’</p>
+<aside class="notes">
+<p>2024, Adv, math: This slope will equal the negative of the <em>ratio</em> of the rate at which utility increases in each good (partial derivative).</p>
+Intuition: giving up a certain utility from one good must be balanced by an increase in utility from the other good.
+</aside></section><section class="slide level2">
+
+<p><em>Back to fig 2.2 (board or visualiser)</em></p>
+<p><br />
+</p>
+<ul>
+<li class="fragment">A to B: willing to give up 2 hamburgers to get 1 more soda.</li>
+</ul>
+<ul>
+<li class="fragment"><span class="math inline">\(\rightarrow\)</span> slope <span class="math inline">\(-2\)</span>, <span class="math inline">\(MRS=2\)</span></li>
+</ul>
+<!-- \pause -->
+<p><br />
+</p>
+<ul>
+<li class="fragment">From B to C? (think about it)</li>
+</ul>
+<!-- \pause -->
+<ul>
+<li class="fragment">…willing to give up 1 hamburger to get 1 more soda <span class="math inline">\(\rightarrow MRS =1\)</span></li>
+</ul>
+<!-- \pause -->
+<p><br />
+</p>
+<ul>
+<li class="fragment">C to D?</li>
+</ul>
+<!-- \pause -->
+<ul>
+<li class="fragment"><span class="math inline">\(MRS = \frac{1}{2}\)</span></li>
+</ul>
+<aside class="notes">
+Be careful: it is very easy to get the MRS inversed
+</aside>
+<aside class="notes">
+<p>Here this refers to arc slopes; however,</p>
+<p>for continuous functions this gets closer and closer to the point slope</p>
+the smaller the arc
+</aside>
+<p><br />
+</p>
+<div class="fragment">
+<p>Note the decline: ‘diminishing MRS’: may reflect <em>satiation</em></p>
+</div>
+</section><section class="slide level2">
+
+<h3 id="preference-for-varietybalance">Preference for variety/balance</h3>
+<p><img data-src="picsfigs/indifcurvebalance.png" alt="Fig 2.3" /><br />
+</p>
+<aside class="notes">
+<p>Adv: this ‘preference for variety’ is thought to hold for most combinations of goods, most of the time, but perhaps not for all pairings.</p>
+<p>It tends to lead to easy-to-solve ‘interior solutions’ where people may consume some amount of each good, and have smooth reactions to price changes.</p>
+Extreme of this is ‘necessity’ goods.
+</aside>
+<aside class="notes">
+LC: Adjust previous picture on visualiser/board
+</aside>
+<aside class="notes">
+<p>With an indifference curve with this shape (‘convex’)</p>
+<p>any consumption bundle that represents a ‘mixture’ between two equally attractive extremes will be preferred to those extremes</p>
+E.g., if I like bundles A and D equally, I prefer a bundle of 1/3 of a and 2/3 of D to either A or D.
+</aside>
+</section><section class="slide level2">
+
+<h3 id="indifference-curve-map">Indifference curve map</h3>
+<p><img src="picsfigs/indifcurvemap.png" width="90%" style="display: block; margin: auto;" /></p>
+<!-- \pause -->
+<p>Indifference curves <font color='red'>never cross!</font> <font color='red'>And are never upwards sloping!</font></p>
+<aside class="notes">
+LC: Adjust previous picture on visualiser/board
+</aside>
+<aside class="notes">
+Key principles: IC’s never cross, never slope upwards, and they have zero-thickness
+</aside>
+</section><section id="illustrating-particular-preferences-ns-fig-2.5" class="slide level2">
+<h2>Illustrating particular preferences (NS fig 2.5)</h2>
+<p><img src="picsfigs/particularpreferences.png" width="70%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+Note, these preference violate some of the above assumptions and do not exhibit diminishing MRS
+</aside>
+<aside class="notes">
+<ul>
+<li><p>Smoke grinders are useless: violates ‘more is better’; can be ignored.</p></li>
+<li><p>Houseflies are a <em>bad</em>. (But housefly <em>reduction</em> is a good).</p></li>
+<li><p>Two types of petrol: <em>perfect substitutes</em> (at 1:1); no preference for variety.</p></li>
+<li><p>Left and right shoes are <em>perfect complements</em> in 1:1 proportions; no benefit to more of one without the other</p>
+</aside></li>
+</ul>
+</section><section id="app-2.3-product-positioning-in-marketing-read-at-home-see-handout" class="slide level2">
+<h2>App 2.3: Product positioning in marketing (read at home, see handout)</h2>
+</section></section>
+<section><section id="definitions-perfect-substitutes-and-complements" class="title-slide slide level1"><h1>Definitions: Perfect substitutes and complements</h1></section><section id="perfect-substitutes" class="slide level2">
+<h2>Perfect substitutes</h2>
+<dl>
+<dt>Perfect substitutes</dt>
+<dd><p>Goods A and B are Perfect Substitutes when an individual’s utility is linear in these goods</p>
+</dd>
+</dl>
+<div class="fragment">
+<p>when she is always willing to trade off A for B at a fixed rate (not necessarily 1 for 1)</p>
+</div>
+</section><section class="slide level2">
+
+<dl>
+<dt>Perfect complements</dt>
+<dd><p>Goods A and B are Perfect Complements when an individual only gains utility from (more) A if she also consumes a defined (additional) amount of B, and vice-versa</p>
+</dd>
+</dl>
+<p><br> </p>
+<div class="fragment">
+<p>These goods are ‘enjoyed only in fixed proportions’.</p>
+<aside class="notes">
+<p>e.g., left and right shoes (1-1) bicycle frames and wheels (1-2) or, perhaps, baking powder and flour (1-40) for someone who only eats soda bread.</p>
+We will give a specific functional form later.
+</aside>
+</div>
+</section></section>
+<section><section id="choices-are-subject-to-constraints" class="title-slide slide level1"><h1>Choices are subject to constraints :(</h1><p><br />
+</p>
+<p>You cannot spend more than your (lifetime) income/wealth</p>
+<p><br />
+</p>
+<p><span class="math inline">\(\rightarrow\)</span> <em>budget constraint</em>.</p>
+<aside class="notes">
+Sorry … maybe that’s why they call Economics the dismal science
+</aside></section><section class="slide level2">
+
+<div class="figure" style="text-align: center">
+<img src="picsfigs/budgetconstraint.png" alt="Budget constraint for two goods, slope $-P_x/P_y$" width="75%" />
+<p class="caption">
+Budget constraint for two goods, slope <span class="math inline">\(-P_x/P_y\)</span>
+</p>
+</div>
+<aside class="notes">
+<p>Think ‘food’ and ‘nonfood’.</p>
+<p>Slope <span class="math inline">\(-Px/Py\)</span>: How much <span class="math inline">\(Y\)</span> I must sacrifice to get another unit of <span class="math inline">\(X\)</span>.</p>
+<p>To get another <span class="math inline">\(X\)</span> it costs me <span class="math inline">\(P_xX\)</span>, so the more costly is <span class="math inline">\(X\)</span> the more <span class="math inline">\(Y\)</span> I must give up.</p>
+<p>For each <span class="math inline">\(Y\)</span> I give up I save <span class="math inline">\(P_Y\)</span>, so the more costly is <span class="math inline">\(Y\)</span> the more I can save by giving up 1 unit of it,</p>
+<p>thus, the less I need to sacrifice of <span class="math inline">\(Y\)</span> to get another unit of <span class="math inline">\(X\)</span>.</p>
+</aside>
+<aside class="notes">
+<p>Careful: it is very easy to get this slope ratio backwards!</p>
+However, I’ll try not to make such errors too costly on the assessments.
+</aside>
+</section><section class="slide level2">
+
+<h3 id="budget-constraint-algebra">Budget constraint algebra</h3>
+<p>If I spend all my income <font color='gray'>(I will do over a ‘relevant lifetime’)</font>:</p>
+<div class="fragment">
+<p>Expenditure on X + Expenditure on Y = Income (I)</p>
+<p><span class="math display">\[P_X X + P_Y Y = I \]</span></p>
+</div>
+<div class="fragment">
+<p>To see how <span class="math inline">\(Y\)</span> trades off against <span class="math inline">\(X\)</span>, rearrange this to:</p>
+<p><span class="math display">\[Y = -\frac{P_X}{P_Y} X + \frac{I}{P_Y}\]</span></p>
+</div>
+</section><section id="section" class="slide level2">
+<h2></h2>
+<p>Expenditure on X + Expenditure on Y = Income (I)</p>
+<p><span class="math display">\[P_X X + P_Y Y = I \]</span></p>
+<p><span class="math display">\[Y = -\frac{P_X}{P_Y} X + \frac{I}{P_Y}\]</span></p>
+<div class="fragment">
+<p><br> </p>
+<p>Intercept <span class="math inline">\(\frac{I}{P_Y}\)</span>: amount of Y you can buy if you only buy Y</p>
+</div>
+<div class="fragment">
+<p>Slope <span class="math inline">\(-\frac{P_X}{P_Y}\)</span>: how much Y you must give up to get another X</p>
+<aside class="notes">
+<p>Adv: Strictly speaking, the slope is how much Y you <em>get</em> when you get another X,</p>
+but since this is negative we see that you ‘get a negative amount’, i.e., give up some amount of Y
+</aside>
+<aside class="notes">
+<p>Work on making sure you can calculate the slope and intercept,</p>
+what they mean, and have intuition for why the slope has this formula. See ‘micro quiz 2.3’.
+</aside>
+</div>
+</section></section>
+<section><section id="utility-maximization" class="title-slide slide level1"><h1>Utility maximization</h1><p><img src="picsfigs/utilmax.png" width="75%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+LC: Depict on visualiser/board
+</aside>
+<aside class="notes">
+<ul>
+<li><p>Can choose any point in shaded area, want to get to highest indifference curve<br />
+</p></li>
+<li><p>How do we know A is suboptimal? B? Points between B and C?</p></li>
+<li><p>Will choose point C, yielding utility <span class="math inline">\(U_2\)</span><br />
+</p></li>
+<li><p>What is special about point C?<br />
+</p></li>
+<li><p>It’s the point of <em>tangency</em> between the budget constraint and an indifference <em>curve</em><br />
+</p></li>
+<li><p>Point where the slope of budget constraint = slope of indifference curve</p></li>
+</ul>
+</aside></section><section class="slide level2">
+
+<p><img src="picsfigs/utilmax.png" width="50%" style="display: block; margin: auto;" /></p>
+<p><br> </p>
+<p><em>If</em> slope budget constraint = slope indifc curve at point X,Y <span class="math inline">\(\rightarrow\)</span> <span class="math display">\[P_X/P_Y = MRS(X,Y)\]</span></p>
+<aside class="notes">
+<p>As both slopes are negative both negative signs cancel out, leaving this condition.</p>
+</aside>
+<!-- . . . -->
+<ul>
+<li class="fragment"><font color='red'>Warning:</font> This equality holds <em>at an optimal choice</em>; it doesn’t hold everywhere.</li>
+</ul>
+</section><section class="slide level2">
+
+<p><strong>At an optimal consumption choice</strong> <font color='gray'>(given above assumptions)</font></p>
+<p><br />
+</p>
+<ul>
+<li>Consume all of income; <font color='gray'>locate <em>on</em> budget line; follows from ‘more is better’</font></li>
+</ul>
+<p><br />
+</p>
+<ul>
+<li class="fragment">Psychic tradeoff (MRS) equals market tradeoff (<span class="math inline">\(P_X/P_Y\)</span>) <font color='gray'>if consuming both goods</font></li>
+</ul>
+<aside class="notes">
+This holds for all goods where you consumed a positive amount, assuming ‘convex preferences’.
+</aside>
+</section><section class="slide level2">
+
+<p>Psychic tradeoff (MRS) equals market tradeoff (<span class="math inline">\(P_X/P_Y\)</span>) <font color='gray'>if consuming both goods</font></p>
+<p><br />
+</p>
+<p><br> </p>
+<p><em>Key intuition:</em></p>
+<ul>
+<li class="fragment">If I can give up X for (buy less X, get more Y) at some rate, and the <em>benefit</em> I get from doing this is at a <em>different</em> rate,</li>
+</ul>
+<!-- . . . -->
+<p><br />
+</p>
+<ul>
+<li class="fragment">…then I can make myself better off.</li>
+</ul>
+<p><br />
+</p>
+<!-- . . . -->
+<ul>
+<li class="fragment">Thus the original point could not have been optimal.</li>
+</ul>
+<aside class="notes">
+Think about this carefully; it is a key method of proving things in economic theory.
+</aside>
+<aside class="notes">
+See example in handout and practice question there
+</aside>
+<!---
+**Example, for intuition**
+- Suppose, at your chosen consumption bundle, your MRS = 1.
+- To remain indifferent, you'd give up 1 ham to get 1 soda.
+<br> \bigskip
+- Suppose the price of soda is £1 and the price of a ham is £2.
+    - Price ratio: $P_S/P_B = 1/2$
+- $\rightarrow$  if you buy one less ham you can buy two more sodas.
+- $\rightarrow$ if you give up a ham, you can get a soda to keep you indifferent *+* another soda.
+    - You'd be better off $\rightarrow$ the original bundle wasn't optimal.
+<aside class="notes">Practice question: in what direction would you adjust this bundle if the price of a soda was £2 and a hamburger was £1. Explain.</aside>
+-->
+</section><section class="slide level2">
+
+<h3 id="more-insight-mathy-ignore-if-this-freaks-you-out">More insight (mathy: ignore if this freaks you out)</h3>
+<p>Recall <span class="math inline">\(U=U(X,Y)\)</span>.</p>
+<p><span class="math display">\[U_X(X,Y) := MU_X(X,Y)\]</span></p>
+
+<!-- . . . -->
+<p><em>Derivative w/ respect to X: rate utility increases if we add a little X, holding Y constant</em></p>
+<p>… Similarly for <span class="math inline">\(MU_Y\)</span>.</p>
+<!-- . . . -->
+<p><br />
+</p>
+<ul>
+<li class="fragment">MRS: ‘how much Y would I be willing to give up to get a unit of X’?</li>
+</ul>
+<!-- . . . -->
+<p><br />
+</p>
+<ul>
+<li class="fragment">Ans: Depends on marginal benefit of each … we can show <span class="math inline">\(MRS(X,Y)=\frac{MU_{X}}{MU_{Y}}\)</span></li>
+</ul>
+<aside class="notes">
+<p>Intuition: the more valuable a little more X is to me – the higher is MU_X –</p>
+the more Y I am willing to give up to get it. That is why MU_X is in the numerator
+</aside>
+<aside class="notes">
+See derivation in handout if interested
+</aside>
+</section><section class="slide level2">
+
+<p>Rearranging the utility maximising condition yields more intuition:</p>
+<p><span class="math display">\[P_X/P_Y = MRS = MU_X/MU_Y\]</span></p>
+<!-- . . . -->
+<p>(at each consumption point X,Y)</p>
+
+<p><br />
+</p>
+<ul>
+<li class="fragment"><span class="math display">\[\frac{MU_X}{P_X} = \frac{MU_Y}{P_Y}\]</span></li>
+</ul>
+<!-- . . . -->
+<p><br />
+</p>
+<ul>
+<li class="fragment">Same ‘bang for each buck’ (<font color='red'>if</font> optimising)</li>
+</ul>
+<aside class="notes">
+<p>If this didn’t hold true and you were spending on both goods,</p>
+<p>you would be paying ‘more per util’ for one good than the other,</p>
+and thus should reallocate to that other good.
+</aside>
+<aside class="notes">
+<p>The more valuable a little more X is to me at that point</p>
+<p>– the higher is MU_x – the more Y I’m willing to give up to get it.</p>
+<p>That is why MU_x is in the numerator. The more valuable a bit more Y is at that point – the higher is MU_y – the less Y I am willing to give up to get a bit more X.</p>
+That is why MU_y is in the denominator
+</aside>
+</section><section id="caveat-on-corner-solutions" class="slide level2">
+<h2>Caveat on ‘corner solutions’</h2>
+<ul>
+<li>If you are consuming <em>both goods</em> and optimising, <span class="math inline">\(P_X/P_Y = MRS = MU_X/MU_Y\)</span> must hold</li>
+</ul>
+<p><br> </p>
+<p><font color='gray'>Advanced: This is a ‘necessary but not sufficient condition’, sufficient if DMRS everywhere</font></p>
+<p><br />
+</p>
+<aside class="notes">
+Same condition applies to each good you are consuming a positive amount o<br> f
+</aside>
+<p><br> </p>
+<p><font color='red'>But…</font></p>
+</section><section class="slide level2">
+
+<h3 id="but">But…</h3>
+<p><img src="picsfigs/chiapet.gif" width="80%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<ul>
+<li>If you are consuming both goods and optimising, <span class="math inline">\(P_X/P_Y = MRS = MU_X/MU_Y\)</span> must hold</li>
+</ul>
+<p><br />
+</p>
+<!-- . . . -->
+<ul>
+<li class="fragment">But you might consume <em>none</em> of some good (say X):</li>
+</ul>
+<p><br />
+</p>
+<ul>
+<li class="fragment">if even with <em>no</em> X, <span class="math inline">\(MU_X/P_X&lt;MU_Y/P_Y\)</span>, the marginal utility of the first unit ‘per pound’ is lower</li>
+</ul>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/goodwedontbuy.png" width="100%" style="display: block; margin: auto;" /></p>
+</section></section>
+<section><section id="app-2.4-ticket-scalping" class="title-slide slide level1"><h1>App 2.4: ticket scalping</h1><p><img src="picsfigs/scalping.png" width="60%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+<ul>
+<li><p>tickets are rationed: one per customer</p></li>
+<li><p>Constraint <span class="math inline">\(\rightarrow\)</span> Lower utility; would choose A if unconstrained</p></li>
+<li><p>budget line not tangent to indifference curve, slopes not equal</p></li>
+<li><p>Would be better off buying more tickets, but cannot</p></li>
+<li><p>Would be willing to buy additional ticket at full price (move to point C)</p></li>
+<li><p>Willing to pay <em>more</em> than full price for second ticket</p>
+<ul>
+<li>could give up up to an additional C-D of goods for ticket 2 and still be as well off</li>
+</ul></li>
+</ul>
+</aside>
+<aside class="notes">
+<ul>
+<li><p>Adv: Tough questions:</p>
+<ul>
+<li><p>Why would NFL institute this rule?</p></li>
+<li><p>Who benefits? (Maybe poor consumers?)</p></li>
+<li><p>Why do people see scalping as unfair?</p></li>
+<li><p>Is there ever a justification to forbid a transaction between 2 consenting parties?</p>
+</aside></li>
+</ul></li>
+</ul></section><section id="app-2.5-whats-a-rich-uncles-promise-worth" class="slide level2">
+<h2>App 2.5: What’s a rich uncle’s promise worth?</h2>
+<p><img data-src="picsfigs/williesuncle.png" /><br />
+</p>
+<aside class="notes">
+<ul>
+<li><p>Willie would choose point A, but paid $5k to abstain, would get him to point B, gain <span class="math inline">\(U_3\)</span></p></li>
+<li><p>Graphically, how much $ would have been enough to compensate for abstaining?</p></li>
+<li><p>Hard question, foreshadowing: How much would Willie need to be paid to get him to <span class="math inline">\(U_3\)</span> <em>without</em> the restriction?</p></li>
+<li><p>Is this more or less than $5k?</p>
+</aside></li>
+</ul>
+</section></section>
+<section><section id="using-the-model-of-choice" class="title-slide slide level1"><h1>Using the model of choice</h1><ol type="1">
+<li>Why do people spend their money on different things?</li>
+<li>What do different preferences/indifference curves imply for choices?</li>
+</ol>
+<aside class="notes">
+<p>LC: Move to PowerPoint slides here for graphical illustration,</p>
+beginning with ‘Utility Maximization: A Graphical View’ and going through ‘different types of goods’
+</aside>
+<aside class="notes">
+<ul>
+<li><p>what indicates each persons’ preference for one good over the other?</p>
+<ul>
+<li><p>The shape of the indifference curve.</p></li>
+<li><p>The flatter (steeper) the indifference curve the stronger the preference for the good on the Y-axis (X-axis)</p>
+</aside></li>
+</ul></li>
+</ul></section><section class="slide level2">
+
+<p><em>Move to ppt slides here beginning with ‘Utility Maximization: A Graphical View’</em></p>
+<aside class="notes">
+todo: integrate into main presentation
+</aside>
+</section><section class="slide level2">
+
+</section></section>
+<section><section id="algebraicnumerical-examples" class="title-slide slide level1"><h1>Algebraic/numerical examples</h1></section><section class="slide level2">
+
+<p>Consider: are these ‘perfect substitutes’ for someone who wants caffeine, but has no taste buds?</p>
+<p><img src="picsfigs/amount-of-caffeine-in-drinks.jpg" width="90%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<h3 id="perfect-substitutes-but-not-identical-e.g.">Perfect substitutes, but not identical, e.g.,</h3>
+<aside class="notes">
+<p>This may be confusing.</p>
+<p>By ‘perfect substitutes’ we mean pairs of goods for which <em>some amount</em> of one is always valued the same as <em>some amount</em> of the other,</p>
+<p>and this proportion is always the same.</p>
+<p>An easy example: I might always be indifferent between three pints of mild ale and two pints of strong ale,</p>
+if they have the same total alcohol content and I only want to get tipsy.
+</aside>
+<p><span class="math display">\[U(X,Y)=4X+3Y\]</span></p>
+<!-- . . . -->
+<p>Rates each increase utility per-unit (derivative) are constant: <span class="math inline">\(MU_X = 4\)</span>, <span class="math inline">\(MU_Y = 3\)</span></p>
+<!-- . . . -->
+<p>So (for perfect substitutes) buy the one that increases it more *per-</p>
+</section><section class="slide level2">
+
+<p><strong>With perfect substitutes: ‘Bang for the buck’ rule</strong></p>
+<p><span class="math display">\[U(X,Y)=4X+3Y\]</span></p>
+<p><br> </p>
+<ul>
+<li>Compare <span class="math inline">\(MU_X/P_X\)</span> to <span class="math inline">\(MU_Y/P_Y\)</span></li>
+</ul>
+<!-- \pause -->
+<ul>
+<li><p>Here, if <span class="math inline">\(4/P_X &gt; 3/P_Y\)</span>, then buy X</p></li>
+<li><p>if <span class="math inline">\(4/P_X &lt; 3/P_Y\)</span>, then buy Y; <font color='gray'>(if equal, buy either)</font></p></li>
+<li><p>Rearranging, if <span class="math inline">\(P_X &lt; 4/3 P_Y\)</span>, buy X … etc.</p></li>
+</ul>
+<!-- \pause -->
+<p><font color='red'>Warning:</font> If <em>not</em> perfect substitutes, MU ratios depend on consumption levels.</p>
+</section><section class="slide level2">
+
+<h3 id="perfect-complements">Perfect complements</h3>
+<aside class="notes">
+AKA ‘Leontief preferences’
+</aside>
+<aside class="notes">
+Lecture question: come up with an example
+</aside>
+<p>Mathematical function example:<br />
+</p>
+<p><span class="math display">\[U(X,Y)=min(2X,Y)\]</span></p>
+<p><font color='gray'>E.g., X: bicycle frames, Y: wheels.</font></p>
+<!-- . . . -->
+<p><br> </p>
+<p><font color='red'>Warning:</font> this min function looks backwards, but it’s correct; see notes</p>
+<p><!-- \pause --></p>
+<ul>
+<li>Shortcut: figure out the proportions it will be consumed in
+<ul>
+<li>determine cost of ‘1 bundle of the combo’ at given prices</li>
+<li>… then buy as many such bundles as you can afford</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>“Min” function just takes the smaller of the arguments</p>
+to max this (not waste money), set the arguments to ‘min’ equal, here 2X=Y
+</aside>
+<aside class="notes">
+<p>You should be able to do this without having taken economics.</p>
+<p>Suppose you were given 100 and asked to spend it to make as many sausages-with-baps as possible.</p>
+<p>No one can eat a sausage without a bap, nor vice-versa. Sausages come in packs of 4, and baps come in packs of 8. How many packs of each will you buy,</p>
+Supposing both types of packs cost 1 each?
+</aside>
+</section><section class="slide level2">
+
+<h3 id="middle-ground">Middle-ground (*)</h3>
+<p>A Cobb-Douglas example</p>
+<p><span class="math display">\[ U(X,Y)=\sqrt(XY) \]</span></p>
+<aside class="notes">
+LC: We are ‘allowed’ to square the whole thing to simplify the problem. Why?
+</aside>
+<!-- . . . -->
+<p><span class="math display">\[MU_X = \frac{\partial}{\partial X} (XY)^{1/2} = \frac{1}{2} (Y/X)^{1/2}\]</span></p>
+<p><span class="math display">\[MU_Y =  \frac{1}{2} (X/Y)^{1/2}\]</span></p>
+<aside class="notes">
+General Cobb-Douglas: <span class="math inline">\(U(X,Y)=X^a Y^b\)</span> for a, b positive constants
+</aside>
+<!---
+<aside class="notes">\* If time is short, we may cover this in the class/tutorial instead)</aside>
+-->
+<!-- . . . -->
+<p><br> </p>
+<p><em>Here, amount of Y you’d give up to get a unit of X:</em></p>
+<p><span class="math display">\[MRS(X,Y)= MU_X/MU_Y = Y/X\]</span></p>
+<aside class="notes">
+MU_X is the slope of U(X,Y) in X at a particular point, i.e., the (partial) derivative with respect to X
+</aside>
+<aside class="notes">
+The last equality comes from this <em>particular</em> function; it is not always Y/X.
+</aside>
+<!-- . . . -->
+<p>{Check reasonable: The more Y I’ve , the more Y I’d give up to get another X :)}</p>
+<aside class="notes">
+This slope is derived through calculus.
+</aside>
+<aside class="notes">
+<p>Adv, maths:</p>
+<p>MU_X is the slope of U(X,Y) in X at a particular point, i.e., the (partial) derivative with respect to X</p>
+<p><span class="math inline">\(MU_X = \frac{\partial&lt;/aside&gt;{\partial X} (XY)^{1/2} = \frac{1}{2} (XY)^{-1/2}Y = \frac{1}{2} (Y/X)^{1/2}\)</span></p>
+<p>Similarly, <span class="math inline">\(MU_Y = \frac{1}{2} (X/Y)^{1/2}\)</span>.}</p>
+<!---
+<aside class="notes">Adv: In doing theoretical (i.e., more pure mathematical) work,
+
+economists typically like to find results under as general 'weak' conditions as possible,
+
+making the fewest possible assumptions or restrictions.
+
+Still, it can be helpful to use particular functional forms, both for estimation using data,
+
+and for illustrating theoretical insights.
+
+However, it is actually rather difficult to find simple functions that are easy to work with and have nice 'reasonable' properties.</aside>
+-->
+</section><section class="slide level2">
+
+<p><em>…Cobb-Douglas ctd</em></p>
+<p><span class="math display">\[MRS(X,Y)= MU_X/MU_Y = Y/X\]</span></p>
+<!-- . . . -->
+<p>Here utility-maximization requires, at optimal choices of X and Y: <span class="math display">\[MRS(X,Y)= Y/X = P_X/P_Y\]</span></p>
+<aside class="notes">
+<p>Check it makes sense.</p>
+<p>As P_X increases the right-hand-side (RHS) increases,</p>
+<p>and so to increase the LHS I must increase the units of Y consumed,</p>
+and thus decrease the units of X consumed
+</aside>
+<aside class="notes">
+<p>I say ‘here’ because we now have nice convex indifference curves with ‘normal’ slopes,</p>
+<p>unlike for perfect complements or substitutes.</p>
+<p>The more of one good you have the less you value it relative to the other good (unlike perfect substitutes)</p>
+but you still value more of it somewhat (unlike for perfect complements)
+</aside>
+<p><!-- . . . --></p>
+<p>For any price ratio, find ratio of Y &amp; X.</p>
+<p>With prices and income, <span class="math inline">\(I\)</span>, find consumption of X &amp; Y.</p>
+<!-- . . . -->
+<p>Rearranging optimization condition:</p>
+<p><span class="math display">\[Y P_Y = X P_X\]</span></p>
+<aside class="notes">
+<p>Class question- What is weird about this? Ans: You always spend the same <em>amount</em> on each good, no matter the price</p>
+<p>(Note, that doesn’t mean the same number of units)</p>
+This ‘constant expenditure shares’ are a characteristic of Cobb-Douglas functions that limit their usefulness and realism
+</aside>
+</section><section class="slide level2">
+
+<p>Optimization condition for <font color='red'>this particular</font> utility function:</p>
+<p><span class="math display">\[Y P_Y = X P_X\]</span></p>
+<!-- . . . -->
+<p>Combining this with the budget constraint <span class="math display">\[P_X X + P_Y Y = I\]</span></p>
+<p>solve for X &amp; Y, as fncns of prices &amp; income (see notes) <span class="math inline">\(\rightarrow\)</span></p>
+<!-- . . . -->
+
+<p><span class="math display">\[Y = I/(2P_Y)\]</span> <span class="math display">\[X = I/(2P_X)\]</span></p>
+<aside class="notes">
+Rearranging the optimization condition, <span class="math inline">\(Y = X P_X/P_Y\)</span>.<br />
+From the b.c., <span class="math inline">\(X = (I - P_Y Y)/P_X\)</span>.<br />
+Substituting in for <span class="math inline">\(Y\)</span> yields <span class="math inline">\(X = (I - P_Y(X P_X / P_Y))/P_X = I/P_X - X\)</span><br />
+<span class="math inline">\(\rightarrow 2X = I/P_X \rightarrow X = I/(2P_X)\)</span><br />
+<span class="math inline">\(X P_X = I / 2 \rightarrow\)</span> always spend half your income on X.<br />
+Adv: You can solve for the optimal <span class="math inline">\(Y\)</span> by ‘symmetry’: as utility<br />
+and budget constraint are symmetric everything we said holds replacing X with Y.<br />
+
+</aside>
+</section><section class="slide level2">
+
+</section></section>
+<section><section id="second-problem-set-covers-ns-chapter-2-and-chapter-3-see-bottom" class="title-slide slide level1"><h1>Second problem set: covers NS chapter 2 (and chapter 3) – see bottom</h1><p>Preferences, Utility, Consumer optimization,</p>
+<!-- \pause -->
+<p><br> </p>
+<p>individual and market demand curves.</p>
+<!-- \pause -->
+<p>This is a very large problem set (others are smaller).</p>
+<!---
+- $2.5.$ Ms. Caffeine enjoys enjoys coffee (C) and tea (T) according to the function $U (C; T ) = 3C + 4T$
+    - Parts a and b only
+    - a. What does her utility function say about her MRS of coffee for tea? What do her indifference curves look like?
+    - b. If coffee and tea cost \$3 each and Ms Caffeine has \$12 to spend on these products, how much coffee and tea should she buy to maximize her utility?
+
+    --></section><section class="slide level2">
+
+<!---
+- 2.3 Paul derives utility only from CDs and DVDs. His utility function is
+    $$U=\sqrt(CD)$$
+    - Parts a-c (*Note,there is a video solution to this on the Cengage web site*   )
+    - a. Sketch Paul's indifference curves for U=5, U=10, and U=20
+    - b. Suppose Paul has \$200 to spend and that CDs cost \$5 and DVDs cost \$20. Draw Paul's budget constraint on the same graph as his indifference curves.
+    - c. Suppose Paul spends all of his income on DVDs. How many can he buy and what is his utility?
+    - We extend this problem: Continuing this, note $MRS=MU_C/MU_D$ in general, and for this case:
+        $$MRS=MU_C/MU_D=\frac{D\frac{1}{2}(CD)^{-1/2}]}{C\frac{1}{2}(CD)^{-1/2}}=D/C$$
+    - I. With this information, determine how many CDs and DVD's Paul will buy, and what his utility will be.
+    - II. Explain intuitively, graphically, and mathematically, why we know this allocation will maximise his utility.
+- 2.7. 'Assume consumers are choosing between housing services...'
+    - All parts
+    - We may not go over this in tutorial as there is a video posted on the NS textbook site.
+    -->
+</section></section>
+    </div>
+  </div>
+
+  <script src="s_3_utility_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="s_3_utility_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: true,
+        // Transition style
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        chalkboard: {
+        },
+
+        keyboard: {
+          67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
+          66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+          46: function() { RevealChalkboard.clear() },    // clear chalkboard when 'DEL' is pressed
+           8: function() { RevealChalkboard.reset() },    // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+          68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 's_3_utility_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+          { src: 's_3_utility_files/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+          { src: 's_3_utility_files/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
