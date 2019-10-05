@@ -425,7 +425,7 @@ It also gives us a vocabulary and a way to test for violations of this consisten
 
 ### On continuity of preferences {-#continuity}
 
- Continuity: If $A \succ B$ and $C$ 'lies within an $\epsilon$ radius of $B$ then $A \succ C$.
+Continuity: If $A \succ B$ and $C$ 'lies within an $\epsilon$ radius of $B$ then $A \succ C$.
 
 Adding this to the previous axioms $\rightarrow$ a utility representation; these are jointly sufficient conditions.
 
@@ -450,9 +450,11 @@ Answer: ^[for example, when we discuss some examples of [perfect complements](pe
 
 E.g., if I have lexicographic preference over houses each category of a house is considered in order. I may prefer the largest house no matter what. If both houses are the same size, I prefer the house closest to my work. If both are the same size and equidistant from work, I prefer the house with more sunlight, etc.
 
-This is not continuous; consider two houses of 800 sq ft, but A is 1 mile closer to my work than B. The 'epsilon-ball' around  the characteristics of B must include the characteristic 800+$\epsilon$ square feet. But any such house would be *preferred* to A.
+This is not continuous; consider two houses of 800 sq ft, but A is 1 mile closer to my work than B. The 'epsilon-ball' around the characteristics of B must include the characteristic 800+$\epsilon$ square feet. But any such house would be *preferred* to A.
 
-In fact, lexicographic preferences (in a continuous product space) *cannot* be represented by a utility function.
+In fact, lexicographic preferences (in a continuous product space) *cannot* be represented by a utility function. (There is a good discussion of this in Gravelle and Reese appendix 1.)
+
+> The lexicographic ordering does not satisfy the assumption of continuity, since the indifference set is a point and not a continuous curve. If we reduce the amount of x1 in the bundle, by however small an amount, we can find no amount of x2 to compensate for the change (the drunkard cannot be bribed by any amount of bread to give up even a sip of beer). 
 
 <br> \bigskip
 
@@ -685,6 +687,11 @@ We also describe it as having 'a convex upper contour set': the set of all bundl
 
 One reason economists like this 'quasiconcavity' is because it rules out the 'false summits',
 the local, but not global optima, so we only need to use the first-order conditions to find the optima. (*But is this '[looking under the streetlight](https://en.wikipedia.org/wiki/Streetlight_effect) to find our keys' or is it truly without loss of generality?*)
+
+
+Gravelle and Reese appendix, on constrained optimisation:
+
+> A local maximum is always a global maximum if (a) the objective function is quasiconcave, and (b) the feasible set is convex.
 
 It will also tend to rule out 'sharp jumps' in response to price changes, so we can look smoothly at 'comparitive statics.'
 

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>6 Second problem set (may add to this): Preferences, Utility, Consumer optimization, individual and market demand curves | Intermediate Microeconomics (applied); produced for Exeter BEE2038</title>
+  <meta name="description" content="Created for Exeter’s BEE2038: Intermediate Microeconomics (applied)" />
+  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="6 Second problem set (may add to this): Preferences, Utility, Consumer optimization, individual and market demand curves | Intermediate Microeconomics (applied); produced for Exeter BEE2038" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Created for Exeter’s BEE2038: Intermediate Microeconomics (applied)" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="6 Second problem set (may add to this): Preferences, Utility, Consumer optimization, individual and market demand curves | Intermediate Microeconomics (applied); produced for Exeter BEE2038" />
+  
+  <meta name="twitter:description" content="Created for Exeter’s BEE2038: Intermediate Microeconomics (applied)" />
+  
+
+<meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
+
+
+<meta name="date" content="2019-10-05" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="ps.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<!-- font families -->
+
+<link href="https://fonts.googleapis.com/css?family=PT+Sans|Pacifico|Source+Sans+Pro" rel="stylesheet">
+
+<script src="js/hideOutput.js"></script>
+
+<!-- Mathjax -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/default.js"></script>
+
+ <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "TeX/AMSmath.js"],
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+        jax: ["input/TeX","output/CommonHTML"]
+      });
+      MathJax.Hub.processSectionDelay = 0;
+  </script>
+
+
+<!-- open review block -->
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+<!--
+<script type="text/javascript">
+
+// toggle visibility of R source blocks in R Markdown output
+function toggle_R() {
+  var x = document.getElementsByClassName('r');
+  if (x.length == 0) return;
+  function toggle_vis(o) {
+    var d = o.style.display;
+    o.style.display = (d == 'block' || d == '') ? 'none':'block';
+  }
+
+  for (i = 0; i < x.length; i++) {
+    var y = x[i];
+    if (y.tagName.toLowerCase() === 'pre') toggle_vis(y);
+  }
+
+    var elem = document.getElementById("myButton1");
+    if (elem.value === "Hide Global") elem.value = "Show Global";
+    else elem.value = "Hide Global";
+}
+
+document.write('<input onclick="toggle_R();" type="button" value="Hide Global" id="myButton1" style="position: absolute; top: 10%; right: 2%; z-index: 200"></input>')
+-->
+
+</script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { background-color: #f8f8f8; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Intermediate Microeconomics (applied)</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="note.html"><a href="note.html"><i class="fa fa-check"></i>Notes to students, outline</a><ul>
+<li class="chapter" data-level="" data-path="note.html"><a href="note.html#on-this-online-resource-and-the-textbook-options"><i class="fa fa-check"></i>On this online resource and the textbook options</a></li>
+<li class="chapter" data-level="" data-path="note.html"><a href="note.html#on-this-module-exeter-bee2038---intermediate-microeconomics---for-students-not-doing-a-straight-economics-degree"><i class="fa fa-check"></i>On this module (Exeter: BEE2038 - Intermediate Microeconomics - for students not doing a straight Economics degree)</a></li>
+<li class="chapter" data-level="" data-path="note.html"><a href="note.html#course-information"><i class="fa fa-check"></i>Course Information</a></li>
+<li class="chapter" data-level="" data-path="note.html"><a href="note.html#outline"><i class="fa fa-check"></i>Outline and description</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction to the module and ‘housekeeping’</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#the-first-chunk-aims-to-cover"><i class="fa fa-check"></i><b>1.1</b> The first chunk aims to cover:</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#me"><i class="fa fa-check"></i><b>1.2</b> Me</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#this-module"><i class="fa fa-check"></i><b>1.3</b> This module</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#problem-sets"><i class="fa fa-check"></i><b>1.4</b> Problem sets</a></li>
+<li class="chapter" data-level="1.5" data-path="intro.html"><a href="intro.html#my-feedback"><i class="fa fa-check"></i><b>1.5</b> Feedback on your highly-esteemed but extremely humble lecturer</a></li>
+<li class="chapter" data-level="1.6" data-path="intro.html"><a href="intro.html#module-story"><i class="fa fa-check"></i><b>1.6</b> The story of this module</a></li>
+<li class="chapter" data-level="1.7" data-path="intro.html"><a href="intro.html#the-big-small-question"><i class="fa fa-check"></i><b>1.7</b> The big (small) question</a></li>
+<li class="chapter" data-level="1.8" data-path="intro.html"><a href="intro.html#resources"><i class="fa fa-check"></i><b>1.8</b> Resources</a></li>
+<li class="chapter" data-level="1.9" data-path="intro.html"><a href="intro.html#how-to-do-well"><i class="fa fa-check"></i><b>1.9</b> How to do well</a></li>
+<li class="chapter" data-level="1.10" data-path="intro.html"><a href="intro.html#fortune-cookie-wisdom"><i class="fa fa-check"></i><b>1.10</b> Fortune Cookie Wisdom</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="models.html"><a href="models.html"><i class="fa fa-check"></i><b>2</b> Economic Models (L1-2)</a><ul>
+<li class="chapter" data-level="2.1" data-path="models.html"><a href="models.html#what-is-economics"><i class="fa fa-check"></i><b>2.1</b> What is Economics?</a></li>
+<li class="chapter" data-level="2.2" data-path="models.html"><a href="models.html#why-learn-these-models"><i class="fa fa-check"></i><b>2.2</b> Why learn these models?</a></li>
+<li class="chapter" data-level="2.3" data-path="models.html"><a href="models.html#economic-models"><i class="fa fa-check"></i><b>2.3</b> Economic Models</a></li>
+<li class="chapter" data-level="2.4" data-path="models.html"><a href="models.html#applications"><i class="fa fa-check"></i><b>2.4</b> Applications</a></li>
+<li class="chapter" data-level="2.5" data-path="models.html"><a href="models.html#basic-supply-demand-model"><i class="fa fa-check"></i><b>2.5</b> Basic Supply-Demand Model</a></li>
+<li class="chapter" data-level="2.6" data-path="models.html"><a href="models.html#how-economists-verify-or-assess-theoretical-models"><i class="fa fa-check"></i><b>2.6</b> How Economists ‘Verify’ (or Assess) Theoretical Models</a></li>
+<li class="chapter" data-level="2.7" data-path="models.html"><a href="models.html#positive-and-normative"><i class="fa fa-check"></i><b>2.7</b> Positive and normative</a></li>
+<li class="chapter" data-level="" data-path="models.html"><a href="models.html#review-questions-and-problems-from-ns-chapter-1"><i class="fa fa-check"></i>Review questions and problems from NS Chapter 1</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="math-tools.html"><a href="math-tools.html"><i class="fa fa-check"></i><b>3</b> Math tools and empirical analysis - – coverage outline</a><ul>
+<li class="chapter" data-level="3.1" data-path="math-tools.html"><a href="math-tools.html#other-maths-resources"><i class="fa fa-check"></i><b>3.1</b> Other maths resources</a></li>
+<li class="chapter" data-level="3.2" data-path="math-tools.html"><a href="math-tools.html#simple-stuff"><i class="fa fa-check"></i><b>3.2</b> Simple stuff</a></li>
+<li class="chapter" data-level="3.3" data-path="math-tools.html"><a href="math-tools.html#minimum-maximum-or-neither"><i class="fa fa-check"></i><b>3.3</b> Minimum, maximum, or neither?</a></li>
+<li class="chapter" data-level="3.4" data-path="math-tools.html"><a href="math-tools.html#multivar-functions"><i class="fa fa-check"></i><b>3.4</b> Functions of two or more variables (multivariate functions)</a></li>
+<li class="chapter" data-level="3.5" data-path="math-tools.html"><a href="math-tools.html#contourlines_math"><i class="fa fa-check"></i><b>3.5</b> Contour lines (we will come back to this later)</a></li>
+<li class="chapter" data-level="3.6" data-path="math-tools.html"><a href="math-tools.html#simultaneous-equations"><i class="fa fa-check"></i><b>3.6</b> Simultaneous equations</a></li>
+<li class="chapter" data-level="3.7" data-path="math-tools.html"><a href="math-tools.html#empirical"><i class="fa fa-check"></i><b>3.7</b> Empirical microeconomics/econometrics</a></li>
+<li class="chapter" data-level="3.8" data-path="math-tools.html"><a href="math-tools.html#empirical-meta-example"><i class="fa fa-check"></i><b>3.8</b> Empirical meta-example</a></li>
+<li class="chapter" data-level="3.9" data-path="math-tools.html"><a href="math-tools.html#changing-world-oil-prices"><i class="fa fa-check"></i><b>3.9</b> Changing world oil prices</a></li>
+<li class="chapter" data-level="3.10" data-path="math-tools.html"><a href="math-tools.html#data-and-economic-analysis-curtis-and-irvine"><i class="fa fa-check"></i><b>3.10</b> Data and economic analysis (Curtis and Irvine)</a></li>
+<li class="chapter" data-level="3.11" data-path="math-tools.html"><a href="math-tools.html#between-first-and-second-week-priority-home-study"><i class="fa fa-check"></i><b>3.11</b> Between first and second week; priority home-study</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="util-choice.html"><a href="util-choice.html"><i class="fa fa-check"></i><b>4</b> Utility and Choice (L2)</a><ul>
+<li class="chapter" data-level="4.1" data-path="util-choice.html"><a href="util-choice.html#coverage-outline"><i class="fa fa-check"></i><b>4.1</b> Coverage outline</a></li>
+<li class="chapter" data-level="4.2" data-path="util-choice.html"><a href="util-choice.html#pre-util-choice"><i class="fa fa-check"></i><b>4.2</b> Preamble to utility and choice</a></li>
+<li class="chapter" data-level="4.3" data-path="util-choice.html"><a href="util-choice.html#some-motivation-for-these-abstract-ideas"><i class="fa fa-check"></i><b>4.3</b> Some motivation for these abstract ideas</a></li>
+<li class="chapter" data-level="4.4" data-path="util-choice.html"><a href="util-choice.html#utility"><i class="fa fa-check"></i><b>4.4</b> Utility</a></li>
+<li class="chapter" data-level="4.5" data-path="util-choice.html"><a href="util-choice.html#utility-from-two-goods"><i class="fa fa-check"></i><b>4.5</b> Utility from two goods</a></li>
+<li class="chapter" data-level="4.6" data-path="util-choice.html"><a href="util-choice.html#measuring-and-comparing-utilities"><i class="fa fa-check"></i><b>4.6</b> Measuring and comparing utilities</a></li>
+<li class="chapter" data-level="4.7" data-path="util-choice.html"><a href="util-choice.html#assumptions-about-preferences-axioms"><i class="fa fa-check"></i><b>4.7</b> Assumptions about preferences (‘axioms’)</a></li>
+<li class="chapter" data-level="4.8" data-path="util-choice.html"><a href="util-choice.html#voluntary-trades-and-indifference-curves"><i class="fa fa-check"></i><b>4.8</b> Voluntary trades and indifference curves</a></li>
+<li class="chapter" data-level="4.9" data-path="util-choice.html"><a href="util-choice.html#mrs"><i class="fa fa-check"></i><b>4.9</b> Marginal rate of substitution (MRS): Absolute value of slope of indifference curve</a></li>
+<li class="chapter" data-level="4.10" data-path="util-choice.html"><a href="util-choice.html#illustrating-particular-preferences"><i class="fa fa-check"></i><b>4.10</b> Illustrating particular preferences</a></li>
+<li class="chapter" data-level="4.11" data-path="util-choice.html"><a href="util-choice.html#app-2.3-product-positioning-in-marketing-not-covered-in-lecture-read-on-your-own"><i class="fa fa-check"></i><b>4.11</b> App 2.3: Product positioning in marketing (not covered in lecture, read on your own)</a></li>
+<li class="chapter" data-level="4.12" data-path="util-choice.html"><a href="util-choice.html#perfect-sub-comp"><i class="fa fa-check"></i><b>4.12</b> Definitions: Perfect substitutes and complements</a></li>
+<li class="chapter" data-level="4.13" data-path="util-choice.html"><a href="util-choice.html#choices-are-subject-to-constraints"><i class="fa fa-check"></i><b>4.13</b> Choices are subject to constraints</a></li>
+<li class="chapter" data-level="4.14" data-path="util-choice.html"><a href="util-choice.html#utilmax"><i class="fa fa-check"></i><b>4.14</b> Constrained utility maximization</a></li>
+<li class="chapter" data-level="4.15" data-path="util-choice.html"><a href="util-choice.html#corners"><i class="fa fa-check"></i><b>4.15</b> Note on ‘corner solutions’</a></li>
+<li class="chapter" data-level="4.16" data-path="util-choice.html"><a href="util-choice.html#app-2.4-ticket-scalping"><i class="fa fa-check"></i><b>4.16</b> App 2.4: ticket scalping</a></li>
+<li class="chapter" data-level="4.17" data-path="util-choice.html"><a href="util-choice.html#app-2.5-whats-a-rich-uncles-promise-worth-read-this-at-home."><i class="fa fa-check"></i><b>4.17</b> App 2.5: What’s a rich uncle’s promise worth? (Read this at home.)</a></li>
+<li class="chapter" data-level="4.18" data-path="util-choice.html"><a href="util-choice.html#using-the-model-of-choice"><i class="fa fa-check"></i><b>4.18</b> Using the model of choice</a></li>
+<li class="chapter" data-level="4.19" data-path="util-choice.html"><a href="util-choice.html#algebraicnumerical-examples"><i class="fa fa-check"></i><b>4.19</b> Algebraic/numerical examples</a></li>
+<li class="chapter" data-level="4.20" data-path="util-choice.html"><a href="util-choice.html#tutorial-problems-from-chapter-2"><i class="fa fa-check"></i><b>4.20</b> Tutorial problems from chapter 2</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="note-further-sections-to-be-added-as-we-progress.html"><a href="note-further-sections-to-be-added-as-we-progress.html"><i class="fa fa-check"></i><b>5</b> Note: Further sections to be added as we progress</a></li>
+<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html"><i class="fa fa-check"></i>Problem sets</a><ul>
+<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#ps1"><i class="fa fa-check"></i>First problem set: Mathematical approaches, economic models, revision and warm-up</a></li>
+<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#ps1_ans"><i class="fa fa-check"></i>First problem set with suggested answers</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="second-problem-set-may-add-to-this-preferences-utility-consumer-optimization-individual-and-market-demand-curves.html"><a href="second-problem-set-may-add-to-this-preferences-utility-consumer-optimization-individual-and-market-demand-curves.html"><i class="fa fa-check"></i><b>6</b> Second problem set (may add to this): Preferences, Utility, Consumer optimization, individual and market demand curves</a><ul>
+<li class="chapter" data-level="6.1" data-path="second-problem-set-may-add-to-this-preferences-utility-consumer-optimization-individual-and-market-demand-curves.html"><a href="second-problem-set-may-add-to-this-preferences-utility-consumer-optimization-individual-and-market-demand-curves.html#more-difficult-mcqs-some-are-from-previous-midterms-adapted-to-a-new-format"><i class="fa fa-check"></i><b>6.1</b> (More difficult) MCQ’s (some are from previous midterms, adapted to a new format)</a></li>
+<li class="chapter" data-level="6.2" data-path="second-problem-set-may-add-to-this-preferences-utility-consumer-optimization-individual-and-market-demand-curves.html"><a href="second-problem-set-may-add-to-this-preferences-utility-consumer-optimization-individual-and-market-demand-curves.html#individual-optimisation"><i class="fa fa-check"></i><b>6.2</b> Individual optimisation</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Intermediate Microeconomics (applied); produced for Exeter BEE2038</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="second-problem-set-may-add-to-this-preferences-utility-consumer-optimization-individual-and-market-demand-curves" class="section level1">
+<h1><span class="header-section-number">6</span> Second problem set (may add to this): Preferences, Utility, Consumer optimization, individual and market demand curves</h1>
+<p>Mainly from NS chapter 2-3.</p>
+<p><font color='Grey'>We will cover key parts of this problem set in the first and second tutorials. However, you should aim to be able to do and understand all of the material on the assigned problem sets.</font></p>
+<p><em>Goals of this problem set:</em></p>
+<ul>
+<li><p>(Exam skills) – further understanding of how to hack difficult MCQs</p></li>
+<li><p>learning how to answer a range of ‘consumer optimization problem’ questions; algebraically, graphically, short answer</p>
+<ul>
+<li>building the ability to connect intuition, graphs, and algebra, and explain this coherently</li>
+</ul></li>
+</ul>
+<hr />
+<div id="more-difficult-mcqs-some-are-from-previous-midterms-adapted-to-a-new-format" class="section level2">
+<h2><span class="header-section-number">6.1</span> (More difficult) MCQ’s (some are from previous midterms, adapted to a new format)</h2>
+<p>We will not go over <em>all</em> of these MCQs in the tutorial, but we will try to go over any of these that you have questions about, after reading the suggested answer.</p>
+<div id="when-is-it-reasonable-to-think-that-people-obey-a-utility-function.-.-." class="section level4 unnumbered">
+<h4>When is it reasonable to think that people obey a utility function. . . ?</h4>
+<p>(Choose ALL THAT APPLY, and no more). We can represent a person’s preferences with a continuous utility function even if</p>
+<ol style="list-style-type: decimal">
+<li>their preferences violate transitivity</li>
+<li>they prefer more of one good over less of that good</li>
+<li>they are unemployed</li>
+<li>they dislike chicken</li>
+<li>they cannot state a preference nor make a choice between many categories of goods</li>
+</ol>
+<!-- [comment]: <> (ANSBB)
+
+*Suggested answer* \
+b,c,d. \
+Transitivity and complete preferences (violated in a and e) are required axioms to have a utility representation. \
+Monotonicity (b) is a common assumption for preferences and utility functions \
+Unemployed people have preferences and utility functions just as do everyone else. Even someone with *no* income may have a utility function.
+You can dislike any good, even chicken, and have a utility function ... that good will simply not enter into this function (or it may enter negatively if it's a 'bad').
+
+[comment]: <> (ANSEE) -->
+<p><font color='gray'>40-50% got this one correct</font></p>
+</div>
+<div id="maximising-a-utility-function-and-comparing-utilities" class="section level4 unnumbered">
+<h4>Maximising a utility function and comparing utilities</h4>
+<p> According to the standard classical assumptions over  utility functions and over budget constraints:</p>
+<ul>
+<li>A. We can meaningfully state ‘person A gets more utility than person B’.</li>
+<li>B. Utility functions cannot be stated in terms of more than two goods</li>
+<li>C. Maximising a utility function <span class="math inline">\(U(x,y)\)</span> subject to a budget constraint <span class="math inline">\(p_xX + p_yY \leq I\)</span> will yield the same choices (of x and y) as maximising the utility function <span class="math inline">\(2U(x,y)\)</span> (doubling the previous utility function) subject to the same budget constraint.</li>
+<li>D. Maximising a utility function subject to the budget constraint <span class="math inline">\(100p_xX + 100p_yY \leq 100\)</span> will yield the same consumption of x and y as maximising this utility function subject to the budget constraint <span class="math inline">\(100p_xX + 100p_yY \leq 200\)</span></li>
+<li>E. We can precisely estimate an individuals’ utility function by measuring their consumption</li>
+</ul>
+<!--
+Ans: 
+C. Maximising a utility function $U(x,y)$  subject to a budget constraint $p_xX  + p_yY \leq  I$ will yield the same choices (of x and y) as maximising the utility function $2U(x,y)$ (doubling the previous utility function) subject to the same budget constraint.
+-->
+</div>
+<div id="steak-and-beer" class="section level4 unnumbered">
+<h4>Steak and beer</h4>
+<p>(Choose all that are correct, and no more.)</p>
+<p>Suppose for a particular consumption plan individual’s MRS (of steak for beer) is 2. That is, at this consumption plan he or she would be willing to give up 3 beers to get an extra steak. Suppose also that the price of a steak is £1 and a beer is £0.25 (i.e,. 25p)</p>
+<ul>
+<li>This plan may be optimal if it involves buying only beer and no steak.</li>
+<li>This plan may be optimal if it involves buying only steak no beer.</li>
+<li>If this plan involves a positive amount of beer and steak, it is not optimal: the individual would prefer to buy more beer and less steak.</li>
+<li>If this plan involves a positive amount of beer and steak, it is not optimal: the individual would prefer to buy more steak and less beer.</li>
+<li>This plan is certainly optimal.</li>
+</ul>
+<!-- [comment]: <> (ANSBB)
+
+*Suggested answer* \
+-  This plan may be optimal if it involves buying only beer and no steak. 
+-  If this plan involves a positive amount of beer and steak, it is not optimal: the individual would prefer to buy more beer and less steak.
+
+
+Let's skip the formulae and just reason.
+
+At her current level of consumption, steak is three times  as valuable to her as beer (per unit), yet it costs *four times* as much per unit. At the margin, every pound she spends, she can buy one steak or four beers; the latter would yield twice as much utility.
+This means she should buy more beer and less steak.
+
+As she does this, the MU of beer will decline, and the MU of steak will increase ... and she should keep making this shift until the rate she is willing to trade off steak to obtain beer is '1 steak per 4 beers', reflecting the price ratio.
+
+However, if this point already represents "only buying beer and not steak" she cannot buy less than no steak.
+
+<br> \bigskip
+
+The tricky thing here is that at the point mentioned, steak is providing 3x as much utility 'per unit', but it costs 4 times as much, so the 'bang for the buck' is lower.
+
+[comment]: <> (ANSEE)
+-->
+<p><br />
+</p>
+<p><em>Extra practice to aid understanding</em>:
+- Draw this using indifference curves and a budget constraint, considering each of the cases (‘positive amount of each, only one, only the other’)</p>
+<!-- [comment]: <> (TABB)
+
+<font color='red'>GTA's:</font> Please draw this on the board at this point (indifference curves, budget constraint). Do all of this with student volunteers, or with the help of student input ('am I doing this right? ... 'should the line be here or here...? Should this curve slope upwards anywhere?').  Practice this in advance because it's easy to make an error (you might set up the axes in advance to save time). Suggest the students 'draw along'. Even though they don't need to draw this to answer the question, it may help them understand it.
+
+Put beer on the vertical axis, so the budget constraint has a slope of (about) -4 (you might want to scale the axes a bit, otherwise the steep diagram is too hard to draw). Draw at least one indifference curve where the curve intersects the budget constraint at a point where the slope is -2 ... somewhat shallower than the budget constraint. This point will be towards the bottom right of the budget constraint.
+
+Note that at this point the consumer is, at the margin willing to give up 3 beers to get 1 steak (the slope is 2) but she would have to give up 4 beers to get a steak, which would make her worse off (moving down and to the right along the B.C.). However, if she is willing to give up 2 beers to gain 1 steak, she is also willing to give up 1 steak to gain 2 beers, or half a steak to gain 1 beer, but she only needs to give up 1/4 of a steak to gain a beer. Thus 'moving up and to the left' along the B.C. makes her better off.
+
+
+<font color='red'>GTA's:</font> This would be a good one to cover I expect some students will still be puzzled by this. Try to get such a student to explain it in her own words. Something like. . .
+
+> if, where I am now each steak gives me twice as much happiness as a beer, but costs four times as much, it’s not worth it. In fact, this means that per pound sterling, steak gives me less happiness than beer. Logically, this means that actually beer gives me more happiness per £ than steak given my current levels. So I should buy more beer and less steak.
+
+Draw it again for the 'no steak' case... redrawwing the indifference curves of course.
+
+
+ [comment]: <> (TAEE) -->
+</div>
+<div id="ticket-scalping" class="section level4 unnumbered">
+<h4>Ticket scalping</h4>
+<p><img src="picsfigs/scalping.png" /></p>
+<p><em>(Choose TWO. For questions like these partial credit will NOT be awarded.)</em> Suppose the NFL had a `rationing policy’, where each consumer could buy at most one ticket to the Super Bowl. Suppose the diagram above represents each consumer’s budget constraint and two of her indifference curves. The maximum amount she would be willing to pay to buy an additional (second) ticket is characterised by the vertical distance between ____ and ____ (choose two):</p>
+<ul>
+<li>A</li>
+<li>B</li>
+<li>C</li>
+<li>D</li>
+</ul>
+<!--
+Ans: B and D
+-->
+</div>
+</div>
+<div id="individual-optimisation" class="section level2">
+<h2><span class="header-section-number">6.2</span> Individual optimisation</h2>
+<p>John M. Countryside makes 50 per week at his summer job and spends his entire weekly income on leeks and chocolate, because these are the only two items that provide utility to him. John gains utility from both of these; his utility is <span class="math inline">\(U(\ell,c)=c^{\frac{1}{3}}\ell^{\frac{2}{3}}\)</span>, where <span class="math inline">\(\ell\)</span> is the number of ounces of leeks he consumes and <span class="math inline">\(c\)</span> the number of ounces of chocolate he consumes.</p>
+<ol style="list-style-type: lower-alpha">
+<li>If leeks costs 2 per ounce and chocolates cost 1 per ounce, how many will John buy of each in a week? Please show your steps: state the optimisation condition and constraint and then solve. Recall the power rule for derivatives: <span class="math inline">\(\frac{d}{dx}ax^{b}=bax^{b-1}\)</span> where <span class="math inline">\(b\neq0\)</span>.</li>
+</ol>
+<!-- [comment]: <> (ANSBB)
+*Suggested answer* \
+$MU_{\ell}={\frac{2}{3}}c^{\frac{1}{3}}\ell^{-\frac{1}{3}}$
+
+$MU_{c}={\frac{1}{3}}c^{-\frac{2}{3}}\ell^{\frac{2}{3}}$
+
+For optimisation (where the second order condition holds, and where we consume some of both so it's not a corner solution; this will be the case here, extra points if anyone mentions this and more if they derive it):
+
+$MU_{\ell}/MU_{c}=MRS=p_{\ell}/p_{c}$
+
+$\ensuremath{\rightarrow}{\frac{2}{3}}c^{\frac{1}{3}}\ell^{-\frac{1}{3}}/{\frac{1}{3}}c^{-\frac{2}{3}}\ell^{\frac{2}{3}}=\frac{2}{1}$
+
+$\rightarrow2c^{\frac{1}{3}}\ell^{-\frac{1}{3}}/c^{-\frac{2}{3}}\ell^{\frac{2}{3}}=2$
+
+$\rightarrow c\ell^{-1}=1$
+
+$\rightarrow c=\ell$
+
+A slightly simpler way would have been to first make a monotonic transformation of the utility function, cubing it: $(U(\ell,c))^{3}=(c^{\frac{1}{3}}\ell^{\frac{2}{3}})^{3}=c\ell^{2}$. Then $MU_{\ell}=2c\ell$ and $MU_{c}=\ell^{2}$, implying $MU_{\ell}/MU_{c}=2c\ell/l^{2}=2c/\ell$... set equal to the price ratio $2c/\ell=2\rightarrow c=\ell$.
+
+Partial credit: We also know the above is a Cobb-Douglas utility function so expenditure shares will be constant and reflect the relative power coefficients; as the coefficient on $\ell$ is twice that on c, we will spend twice as much on $\ell$, which, as it is twice as expensive, means buying the same amount of each.
+
+Budget constraint: $2\ell+c=50$
+
+Substituting in:
+
+$2\ell+;w
+\ell=50\rightarrow3\ell=50\rightarrow\text{\ensuremath{\ell}=50/3}$
+
+$c=\ell=50/3$
+
+Check all the budget is spent: $2(50/3)+1(50/3)=50$
+
+[comment]: <> (ANSEE) -->
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Now suppose that the price of chocolate rises to 2 per ounce. How many of each will he buy?</li>
+</ol>
+<!-- [comment]: <> (ANSBB)
+
+*Suggested answer* \
+
+$MU_{\ell}/MU_{c}=MRS=2c\ell/l^{2}=2c/\ell$ still holds
+
+Set it equal to the new price ratio: $2c/\ell=1\text{\ensuremath{\rightarrow}c=\ensuremath{\ell}/2}$
+
+New budget constraint: $2\ell+2c=50$
+
+Substituting in: $2\ell+\ell=50\rightarrow\ell=50/3\rightarrow c=\frac{50}{6}$
+
+... (costs 100/3+50/3=150/3=50 ... so it adds up)
+
+
+[comment]: <> (ANSEE) -->
+<p><br> </p>
+<p><strong>NS problem 2.3.</strong></p>
+<!-- [comment]: <> (TABB)
+ <font color='red'>GTA's:</font> Cover parts a-c in tutorial 1, return to the followup I and II in the second tutorial. Emphasize drawing budget constraints and indifference curves
+
+[comment]: <> (TAEE) -->
+<p><font color='gray'>Note that even though the midterm is MCQ there are still ways I can still ask about things like this … E.g., I could present several diagrams and ask ’which of the following correctly depicts this budget constraint and indifference curves representing these preferences’? Furthermore, I have tended to ask questions like this on the final exam.</font></p>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="ps.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": true,
+"weibo": true,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

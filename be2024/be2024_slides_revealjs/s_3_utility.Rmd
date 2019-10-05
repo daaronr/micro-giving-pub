@@ -119,7 +119,7 @@ $\rightarrow$ yields predictions for individual behavior, markets, etc.
 
 <aside class="notes">Economists and decision theorists have tried to come up with and defend such rules.
 
- They have started from these `reasonable axioms' and follow their logical implications for \textCR
+ They have started from these 'reasonable axioms' and follow their logical implications for \textCR
 individual choices, individual responses to changes in prices and income,
 
 market prices and quantities and their responses,
@@ -795,7 +795,9 @@ These goods are 'enjoyed only in fixed proportions'.
 
 
 
-## Choices are subject to constraints :(
+## Choices are subject to constraints 
+
+:(
 
 \
 
@@ -840,16 +842,15 @@ thus, the less I need to sacrifice of $Y$ to get another unit of $X$.
 However, I'll try not to make such errors too costly on the assessments.  </aside>
 
 
-----
 
-### Budget constraint algebra
+## Budget constraint algebra
 
 
 If I spend all my income `r format_with_col("(I will do over a 'relevant lifetime')","gray")`:
 
 \
 
-<!-- \pause -->
+. . .
 
 
 
@@ -859,21 +860,21 @@ Expenditure on X + Expenditure on Y = Income (I)
 $$P_X X + P_Y Y = I $$
 
 
-<!-- . . . -->
-
-\
-
-> - To see how $Y$ trades off against $X$, rearrange this to:
+. . .
 
 
-<!-- . . . -->
+
+To see how $Y$ trades off against $X$, rearrange this to:
+
+
+. . .
 
 
 
 $$Y = -\frac{P_X}{P_Y} X + \frac{I}{P_Y}$$
 
 
-<!-- . . . -->
+. . .
 
 
 > - Intercept $\frac{I}{P_Y}$: amount of Y you can buy if you only buy Y
@@ -915,7 +916,7 @@ knitr::include_graphics("picsfigs/utilmax.png")
 
 </aside>
 
-----
+##
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/utilmax.png")
@@ -933,10 +934,10 @@ $$P_X/P_Y = MRS(X,Y)$$
 </aside>
 
 
-<!-- . . . -->
+. . .
 
 
-> - `r format_with_col("Warning:","red")` This equality holds *at an optimal choice*; it doesn't hold everywhere.
+`r format_with_col("Warning:","red")` This equality holds *at an optimal choice*; it doesn't hold everywhere.
 
 ----
 
@@ -1051,24 +1052,24 @@ $$P_X/P_Y = MRS = MU_X/MU_Y$$
 
 
 
-<!-- . . . -->
-
-
 (at each consumption point X,Y)
+
+
+. . .
 
 \medskip
 
 \
 
-> - $$\frac{MU_X}{P_X} = \frac{MU_Y}{P_Y}$$
+$$\frac{MU_X}{P_X} = \frac{MU_Y}{P_Y}$$
 
 
-<!-- . . . -->
+. . .
 
 
 \
 
-> - Same 'bang for each buck' (`r format_with_col("if","red")` optimising)
+$\leftrightarrow$ Same 'bang for each buck' (`r format_with_col("if","red")` optimising)
 
 <aside class="notes">If this didn't hold true and you were spending on both goods,
 
@@ -1089,11 +1090,11 @@ The more valuable a bit more Y is at that point -- the higher is MU_y -- the les
 ## Caveat on 'corner solutions'
 
 
-- If you are consuming *both goods* and optimising, $P_X/P_Y = MRS = MU_X/MU_Y$ must hold
+If you are consuming *both goods* and optimising, $P_X/P_Y = MRS = MU_X/MU_Y$ must hold
 
 <br> \bigskip
 
-`r format_with_col("Advanced: This is a 'necessary but not sufficient condition', sufficient if DMRS everywhere","gray")`
+<center> `r format_with_col("Advanced: This is a 'necessary but not sufficient condition', sufficient if DMRS everywhere","gray")` </center>
 
 \
 
@@ -1114,18 +1115,20 @@ The more valuable a bit more Y is at that point -- the higher is MU_y -- the les
 
 ----
 
-- If you are consuming both goods and optimising, $P_X/P_Y = MRS = MU_X/MU_Y$ must hold
+If you are consuming both goods and optimising, $P_X/P_Y = MRS = MU_X/MU_Y$ must hold
 
 \
 
-<!-- . . . -->
+. . .
 
 
-> - But you might consume *none* of some good (say X):
+But you might consume *none* of some good (say X)
 
 \
 
->    - if even with *no* X, $MU_X/P_X<MU_Y/P_Y$, the marginal utility of the first unit 'per pound' is lower
+. . .
+
+-  if even with *no* X, $MU_X/P_X<MU_Y/P_Y$, the marginal utility of the first unit 'per £' is lower.
 
 ----
 
@@ -1136,7 +1139,7 @@ The more valuable a bit more Y is at that point -- the higher is MU_y -- the les
 
 # App 2.4: ticket scalping
 
-```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/scalping.png")
 ```
 
@@ -1169,7 +1172,10 @@ The more valuable a bit more Y is at that point -- the higher is MU_y -- the les
 
 ## App 2.5: What's a rich uncle's promise worth?
 
-![](picsfigs/williesuncle.png) \
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/williesuncle.png")
+```
+
 
 <aside class="notes">
 - Willie would choose point A, but paid \$5k to abstain, would get him to point B, gain $U_3$
@@ -1200,7 +1206,7 @@ The more valuable a bit more Y is at that point -- the higher is MU_y -- the les
 
 ----
 
-*Move to ppt slides here
+*Move to [ppt slides here](https://www.dropbox.com/s/qhsl6qey0wjcfe5/utility_demand_supplement.pptx?dl=0)
 beginning with 'Utility Maximization: A Graphical View'*
 
 
@@ -1245,7 +1251,7 @@ Rates each increase utility per-unit (derivative) are constant: $MU_X = 4$, $MU_
 <!-- . . . -->
 
 
-So (for perfect substitutes) buy the one that increases it more *per-\pounds*
+So (for perfect substitutes) buy the one that increases it more *per-£*
 
 ----
 
@@ -1255,13 +1261,17 @@ $$U(X,Y)=4X+3Y$$
 
 <br> \bigskip
 
+. . .
+
 - Compare $MU_X/P_X$ to $MU_Y/P_Y$
 
-<!-- \pause -->
+. . .
 
 - Here, if $4/P_X > 3/P_Y$, then buy X
 
 - if $4/P_X < 3/P_Y$, then buy Y;  `r format_with_col("(if equal, buy either)","gray")`
+
+. . .
 
 
 - Rearranging, if $P_X < 4/3 P_Y$, buy X ... etc.
@@ -1284,19 +1294,23 @@ $$U(X,Y)=min(2X,Y)$$
 `r format_with_col("E.g., X: bicycle frames, Y: wheels.","gray")`
 
 
-<!-- . . . -->
+. . .
 
 
-<br> \bigskip
-
-`r format_with_col("Warning:","red")` this min function looks backwards, but it's correct; see notes
+<small> <center> `r format_with_col("Warning:","red")` this min function looks backwards, but it's correct; see notes </small> </center> 
 
 
- <!-- \pause -->
+. . .
 
-- Shortcut: figure out the proportions it will be consumed in
-    - determine cost of '1 bundle of the combo' at given prices
-    - ... then buy as many such bundles as you can afford
+Shortcut: figure out the proportions it will be consumed in
+
+. . .
+
+- determine cost of '1 bundle of the combo' at given prices
+
+. . .
+
+- ... then buy as many such bundles as you can afford
 
 <aside class="notes">"Min" function just takes the smaller of the arguments
 
@@ -1323,10 +1337,15 @@ $$ U(X,Y)=\sqrt(XY) $$
 
 <aside class="notes">LC: We are 'allowed' to square the whole thing to simplify the problem. Why?</aside>
 
-<!-- . . . -->
+
+. . .
 
 
 $$MU_X = \frac{\partial}{\partial X} (XY)^{1/2} = \frac{1}{2} (Y/X)^{1/2}$$
+
+
+. . .
+
 
 $$MU_Y =  \frac{1}{2} (X/Y)^{1/2}$$
 
@@ -1337,7 +1356,7 @@ $$MU_Y =  \frac{1}{2} (X/Y)^{1/2}$$
 <aside class="notes">\* If time is short, we may cover this in the class/tutorial instead)</aside>
 -->
 
-<!-- . . . -->
+. . .
 
 <br> \bigskip
 
@@ -1353,11 +1372,12 @@ $$MRS(X,Y)= MU_X/MU_Y = Y/X$$
 <aside class="notes">The last equality comes from this *particular* function; it is not always Y/X.</aside>
 
 
-<!-- . . . -->
+. . .
 
 
-\footnotesize{Check reasonable: The more Y I've , the more Y I'd give up to get another X :)}
+\
 
+<small> Check it's reasonable: The more Y I've, the more Y I'd give up to get another X :) </small>
 
 
 
@@ -1368,9 +1388,9 @@ MU_X is the slope of U(X,Y) in X at a particular point, i.e., the (partial) deri
 
 $MU_X = \frac{\partial</aside>{\partial X} (XY)^{1/2} = \frac{1}{2} (XY)^{-1/2}Y = \frac{1}{2} (Y/X)^{1/2}$
 
-Similarly, $MU_Y =  \frac{1}{2} (X/Y)^{1/2}$.}
+Similarly, $MU_Y =  \frac{1}{2} (X/Y)^{1/2}$.
 
-
+</aside>
 
 <!---
 <aside class="notes">Adv: In doing theoretical (i.e., more pure mathematical) work,
@@ -1393,7 +1413,9 @@ However, it is actually rather difficult to find simple functions that are easy 
 
 $$MRS(X,Y)= MU_X/MU_Y = Y/X$$
 
-<!-- . . . -->
+. . .
+
+\
 
 Here utility-maximization requires, at optimal choices of X and Y:
 $$MRS(X,Y)= Y/X = P_X/P_Y$$
@@ -1414,14 +1436,18 @@ The more of one good you have the less you value it relative to the other good (
 
 but you still value more of it somewhat (unlike for perfect complements)</aside>
 
- <!-- . . . -->
+. . .
+
+\
 
 
-For any price ratio, find ratio of Y \& X.
 
-With prices and income,  $I$, find consumption of X \& Y.
+<small> For any price ratio, find ratio of Y \& X. With prices and income, $I$, find consumption of X \& Y. </small>
 
-<!-- . . . -->
+. . .
+
+\
+
 
 Rearranging optimization condition:
 
@@ -1436,22 +1462,23 @@ Ans: You always spend the same *amount* on each good, no matter the price
 
 ----
 
-Optimization condition for `r format_with_col("this particular","red")` utility function:
+So optimization condition for `r format_with_col("this particular","red")` utility function:
 
 $$Y P_Y = X P_X$$
 
 
-<!-- . . . -->
+. . .
 
-
+\
 Combining this with the budget constraint
 $$P_X X + P_Y Y = I$$
 
 solve for X \& Y, as fncns of prices \& income (see notes) $\rightarrow$
 
-<!-- . . . -->
+. . .
 
 
+\
 \medskip
 
 $$Y = I/(2P_Y)$$
@@ -1473,7 +1500,6 @@ and budget constraint are symmetric everything we said holds replacing X with Y.
  \
 </aside>
 
-----
 
 
 
