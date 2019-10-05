@@ -17,11 +17,7 @@ cd "githubs/micro_econ_pandoc/"
 # Create self-contained version of slides, knit (for posting on VLE)
 
 # BEE2038 for all 's_*' files in folder  micro_econ_pandoc/be2024/be2024_slides_revealjs/:
-    # create a copy titled 's_*_selfc.Rmd'
-    # "self_contained: false" --> "self_contained: true"
-    # remove plugins from latter file
-
-
+    # create a copy titled 's_*_selfc.Rmd' # "self_contained: false" --> "self_contained: true" # remove plugins from latter file
     # knit this
     # (manually, put it on VLE)
 
