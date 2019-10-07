@@ -1,8 +1,8 @@
 ---
-title: "Problem sets - GTA guide"
+title: "Problem sets - Instructor's guide"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -29,6 +29,23 @@ format_with_col = function(x, color){
 
 ```
 
+<style>
+
+.gtatip {
+  padding: 1em 1em 1em 1em;
+  margin-bottom: 10px;
+  background: #D5FA9D !important;
+  position:relative;
+  left: 100px;
+}
+.tip{
+  padding: 1em 1em 1em 1em;
+  margin-bottom: 5px;
+  background: #f8e6ff 5px center/3em no-repeat !important;
+}
+</style>
+
+
 ## First problem set: Mathematical approaches, economic models, revision and warm-up {-#ps1}
 
 `r format_with_col("We will cover key parts of this problem set in the first tutorial (as well as part of the second problem set). However, you should aim to be able to do and understand all of the material on the assigned problem sets.","Grey")`
@@ -52,6 +69,7 @@ format_with_col = function(x, color){
 
 ----
 
+\
 
 ### 1.1.A: Graph the points of these supply and demand curves for orange juice. Be sure to put price on the vertical axis and quantity on the horizontal axis. {-}
 
@@ -59,13 +77,15 @@ format_with_col = function(x, color){
 
 
 **Ans:**
-```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("ns1a_ans.png")
+
 ```
 
 
-`r format_with_col("GTA's:","red")`
-Ten minutes, i.e., minutes 5-15 of of tutorial, perhaps (after introducing yourself etc).
+```{block2,  type='gtatip'}
+
+**Instructors**: Ten minutes, i.e., minutes 5-15 of of tutorial, perhaps (after introducing yourself etc).
 
 Really try to get the students involved in doing this... call on them, ask questions, bring them up, have them do it on their desks or show their answers in pairs
 
@@ -74,19 +94,26 @@ Really try to get the students involved in doing this... call on them, ask quest
 Explain the axes briefly, and what each point means (ask students first). Graph a few points, connect the lines, have students comment on the slope and whether it ‘makes sense’.
 
 Try to get them to make a correct statement about why ‘demand curves slope down’ (at a higher price, fewer consumers are willing to buy, and consumers willing to buy fewer units, because at a higher price, they can do better by buying other things with that money)
-<!-- . . . --> and why ‘supply curves slope up’.
+
+and why ‘supply curves slope up’.
+
 
 Be careful to make a distinction between ‘Demand curves’ and ‘Quantity demanded’. *Avoid* the use of ambiguous  language like ‘demand increases’.
 
 Ask them to consider how would one find ‘points on a supply curve’ versus ‘points on a demand curve'; remember that in the real-world by simply observing prices and quantities we don’t know whether we are seeing shifts in a demand curve, shifts in a supply curve, or both.
 
+```
 
+
+\
 
 **1.1.B: Do these points lie along two straight lines? If so, figure out the precise algebraic equation of these lines. (Hint: If the points do lie on straight lines, you need only consider two points on each of them to calculate the lines.) **
 
 
 
 *Yes, they do. The 'rise over run' between any two points is the same.*
+
+(To confirm this fully, we should check this for *all* point pairs, even if I didn't do this in tutorial. Another way of saying this is that they should all fit into this same linear algebraic equation)
 
 \textcolor{gray}{E.g., for supply, when price rises from 1 to 2,  quantity supplied rises from 100 to 300, for a 'rise over run' of 200/1=200.
 OK, as we plot price on the vertical axis, we could say that the "rise" is the rise in price of 2-1=1 and the "run" is the rise in quantity supplied or 300-100=200, for a 'rise over run' of 1/200.}
@@ -97,21 +124,35 @@ OK, as we plot price on the vertical axis, we could say that the "rise" is the r
 
 *Now to figure out the algebraic equation...*
 
-- (Recall GCSE maths formula for straight line: $y=mx+b$)
+Recall GCSE maths formula for straight line: $y=mx+b$.
 
-- This is a linear function $P = a+bQ$ (when we get to demand, we allow $b$ to be negative)
+This is a linear function $P = a+bQ$ (when we get to demand, we allow $b$ to be negative).
 
-*Essentially repeating the above 'rise over run' calculation'...*
+\
+
+
+*repeating the above 'rise over run' calculation'...*
 
 - For supply, increase P by 1 and Q increases by 200. (See diagram)
     - i.e, for $\Delta P = 1$, $\Delta Q = 200$
     - ... implying that if price were to increase by 1, firms would be willing to provide 200 more units in total
 
-`r format_with_col("Doing this more carefully ... if we have any two points, $x_1,y_1$ and $x_2,y_2$ we can compute the slope $m= \frac{y_2-y_1","gray")`{x_2-x_1}$, again 'rise over run'.}
+\
+
+Doing this more carefully ... if we have any two points, $x_1,y_1$ and $x_2,y_2$ we can compute the slope $m =\frac{y_2-y_1}{x_2-x_1}$, again 'rise over run'.
 
 `r format_with_col("Take any two points on the supply curve (the table above), and compute this to get the slope.","gray")`
 
-`r format_with_col("E.g., $(P_1,Q_1)$ = $(1,100)$ and $(P_2,Q_2)$=$(2,300)$.  The slope is thus $\frac{(300-100)","gray")`{(2-1)}=200.$ as stated above. However, this is the slope of $Q$ in $P$. Confusingly, although economists usually consider how $Q$ changes in $P$ along supply (or demand curves), our convention is to plot $P$ on the vertical axis an $Q$ on the horizontal. So, when drawing the slope, remember to keep this straight. If the slope of Q in P is 200, the slope of P in Q is actually the inverse of this, namely $1/200$. (Check: $\frac{P_2-P_1}/{Q2-Q1}=1/200$). Also note that a slope of $1/200$ would look almost flat, so it's better to make the quantity axis in units of 100, so you can do a slope of 1/2 (vertical increase of 1 units for each 2 units of horizontal increase).}
+E.g., $(P_1,Q_1)$ = $(1,100)$ and $(P_2,Q_2)$=$(2,300)$.  The slope is thus $\frac{(300-100)}{(2-1)}=200.$ as stated above. However, this is the slope of $Q$ in $P$.
+
+\
+
+```{block2,  type='tip'}
+	Confusingly, although economists usually consider how $Q$ changes in $P$ along supply (or demand curves), our convention is to plot $P$ on the vertical axis an $Q$ on the horizontal. So, when drawing the slope, remember to keep this straight. If the slope of Q in P is 200, the slope of P in Q is actually the inverse of this, namely $1/200$. (Check: $\frac{P_2-P_1}{Q2-Q1}=1/200$). Also note that a slope of $1/200$ would look almost flat, so it's better to make the quantity axis in units of 100, so you can do a slope of 1/2 (vertical increase of 1 units for each 2 units of horizontal increase).
+
+```
+
+\
 
 - Thus $\frac{\Delta P}{\Delta Q} = \frac{1}{200}$
     - We know the slope $b=\frac{1}{200}$
@@ -125,7 +166,10 @@ Just plug some value into the formula and solve for this.
 - Thus the equation is $P = \frac{1}{2} + \frac{Q_s}{200}$
 - or $Q_s=200P-100$
 
-\footnote{Check: does this equation describe the graph? Is it intuitive? Supply upward-sloping in price. Intercept: $P>1/2$ necessary for a positive quantity supplied.}
+```{block2,  type='tip'}
+Check: does this equation describe the graph? Is it intuitive? Supply upward-sloping in price. Intercept: $P>1/2$ necessary for a positive quantity supplied.
+
+```
 
 \
 
@@ -134,14 +178,44 @@ For demand, increase P by 1 and Q declines by 100.
 - Solves similarly to above:
     - $\rightarrow$ $P=8-\frac{Q_d}{100}$ or $Q_d=800-100p$
 
+\
+
+```{block2,  type='tip'}
+
+This was the intuitive way.
+Another way to do this is to simply plug two points into $P = a+bQ$  and solve these equations:
+
+Start with the point $P=1, Q=100$
+
+$$1 = a+b\times 100 \leftrightarrow$$
+$$1 - a = b\times 100 \leftrightarrow$$
+$$b = (1 - a)/100$$
+
+Now we plug this expression for b (the slope) into the formula at another point, the point $P=2, Q=300$.
+
+$$2 = a+b\times 300$$ Plugging in $b=(1 - a)/100$ $\rightarrow$
+$$2 = a + \frac{1 - a}{100} \times 300 = a + 3(1 - a) = 3-2a$$ $\leftrightarrow$
+$$1=2a \leftrightarrow a = 1/2$$
+
+Now we can plug this in to solve for b:
+$$b = (1 - a)/100 = \frac{1}{2}/100 = 1/200$$
+
+Again, this yields the supply curve $P = 1/2 + Q/200$
+which is the same as $Q_s=200P-100$
+
+```
 
 
-`r format_with_col("GTA's:","red")` Go slowly, but not too slowly, with this algebra for the first few computations. Remember that some students may have completely forgotten all maths!
 
+```{block2,  type='gtatip'}
 
+**Instructors**:   Go slowly, but not too slowly, with this algebra for the first few computations. Remember that some students may have completely forgotten all maths!
+```
 
 
 ----
+
+\
 
 **1.1.C: Use your solutions from part b to calculate the "excess demand" for orange juice if the (imposed) market price is zero**
 
@@ -156,14 +230,24 @@ For demand, increase P by 1 and Q declines by 100.
 - Draw these functions on the same graph to aid intuition
 
 
-`r format_with_col("GTA's:","red")` Do draw this on the board, this time on the same axes (supply and demand curves together) ... or add one to the other, already on the board.
+```{block2,  type='gtatip'}
+
+**Instructors:** Do draw this on the board, this time on the same axes (supply and demand curves together) ... or add one to the other, already on the board.
+
+```
+
+Following this linear function yields $Q_s(P)=200P-100$, at $P=0$, $Q_s = -100$
+
+*However*, we must not forget that the *domain* of $Q_s$ is positive only. We actually mean $Q_s(p)=max(0,200P-100)$, so $Q_s(0) = 0$.
 
 
-- $Q_s(P)=200P-100$, at $P=0$, $Q_s = -100$
-    - we must not forget that we actually mean $Q_s(p)=max(0,200P-100)$, so $Q_s(0) = 0$
+```{block2,  type='gtatip'}
 
+**Instructors:** Let us explain at this point what the "max" and "min" functions mean. Give a few examples.
 
-`r format_with_col("GTA's:","red")` Let's explain at this point what the "max" and "min" functions mean. Give a few examples.
+```
+
+\
 
 
 - $Q_d(P)=800-100P$ $\rightarrow$ $Q_d(0)=800$
@@ -172,53 +256,67 @@ For demand, increase P by 1 and Q declines by 100.
 *Consider: does this make sense? If the government declared 'orange juice must be free' and imposed no subsidies, would you expect there to be excess demand?*
 
 
-`r format_with_col("GTA's:","red")` The students are likely to find this difficult, especially the ‘max’ thing. Practice how to explain this in advance so you don’t get tongue-tied.
+```{block2,  type='gtatip'}
+
+**Instructors:** The students are likely to find this difficult, especially the ‘max’ thing. Practice how to explain this in advance so you don’t get tongue-tied.
+```
 
 
-
-
-
-----
+\
 
 **1.1.D: Use your solutions from part b to calculate the "excess supply" for orange juice if the orange juice price is \$6 per gallon.**
 
 - We will skip this in tutorial because it's basically the same task as part c
 
 
-
 Ans: Excess supply at $P=6$ is 900
 
 
-`r format_with_col("GTA's:","red")` Please skip this part.
+```{block2,  type='gtatip'}
+
+**Instructors:** Please skip this part.
+
+```
 
 
+\
 
 
 
 ### MCQs from previous exams, slightly adjusted (these were some of the hardest ones, they are not all so difficult) {-}
 
 
-`r format_with_col("GTA's:","red")` Do the other MCQ's first (further below). Cover these only briefly [5-10 minutes], if time permits, focusing on the logic/strategy of answering MCQ’s.
 
+```{block2,  type='gtatip'}
+
+**Instructors:**  Cover these only briefly [5-10 minutes], if time permits, focusing on the logic/strategy of answering MCQ’s.
+
+```
+
+\
 
 **MCQ2 True or False: One example of microdata is a set of over 5 million observations of income, hours worked, and demographic information from over 1 million households' tax returns over five years.**
 
-<br> <br> \bigskip
+<br> \bigskip
 
 
 **Answer:**
 
 True. Microdata refers to the level of the unit of observation; the economic decision-maker, such as an individual or household, rather than an aggregation, such as an entire country or market. 65\% got this one right.
 
-\textcolor{gray}{Note – this was covered in the mini-lecture ‘Empirical microeconomics/econometrics’ as well as in the text. Again, this is a ‘challenge question’; if you read carefully, and read the suggested applications and additional readings, you should be able to get most of these questions. However, I don’t expect everyone will get these right, so I will limit the number of such questions so that you can still get a good mark without knowing these.
-I want you to have more than just a ‘textbook theoretical’ understanding. Understanding how data is used in business, economic analysis, and policy, will be very important in your career!}
+```{block2,  type='note'}
+
+Note – this was covered in the mini-lecture ‘Empirical microeconomics/econometrics’ as well as in the text. Again, this is a ‘challenge question’; if you read carefully, and read the suggested applications and additional readings, you should be able to get most of these questions. However, I don’t expect everyone will get these right, so I will limit the number of such questions so that you can still get a good mark without knowing these.
+I want you to have more than just a ‘textbook theoretical’ understanding. Understanding how data is used in business, economic analysis, and policy, will be very important in your career!
+```
 
 
-
-<br> <br> \bigskip
+\
+ <br> \bigskip
 
 **MCQ3  True or false: It is valid to plot observed prices and quantities traded in a market and fit a line through them to estimate a market demand curve.**
 
+\
 
 **Answer:**
 False.  "If we plot prices and quantities traded in a market, we are be observing the interaction of shifts in supply and demand curve, so it is difficult to estimate either curve without further assumptions. About 30\% got this one right.
@@ -240,6 +338,7 @@ False.  "If we plot prices and quantities traded in a market, we are be observin
 
 -   e. shows the returns to scale
 
+\
 
 **Answer:**
 
@@ -249,10 +348,13 @@ AND
 
 - d. is typically negative
 
+\
 
+*Notice this question could have had any number of correct answers from 1-5! On assesments, partial credit will be awarded as the 'share of correct answers minus the share of incorrect answers.'
 
+\
 
-<br> <br> \bigskip
+<br> \bigskip
 
 **MCQ5: True or false: If people who attended university earn more than those who did not, this proves that university makes people more productive.**
 
@@ -264,6 +366,7 @@ False. Those who attended university may have had a greater potential to earn mo
 
 If we had a clean experiment randomly assigning people to university we might be able to credibly assert that attending university did *cause* later outcomes, and perhaps caused these people to earn more money. However, we still would not that this occurred through the *channel* of making people more productive. There are other reasons why completing university may increase income other than 'making people more productive'.
 
+\
 
 
 ### Discussion questions {-}
@@ -276,14 +379,32 @@ If we had a clean experiment randomly assigning people to university we might be
 
 *Do you agree? Explain.*
 
+\
 
 ### Ans:
 
 Other things may have changed, including tastes, income, the population; these could *shift* the market demand curve.
-This does not invalidate the more general proposition that 'people buy less when the price rises, all else equal'.
+
+This does not invalidate the more general proposition that 'in aggregate people are willing to buy fewer units at a higher price rises, all else equal' nor that
+
+'when  a shift in the supply curve (or costs) means that firms to require a higher price for each unit, this leads to an equilibrium in which a lower quantity is exchanged (at a higher price)'
 
 
- `r format_with_col("GTA's:","red")` You may want to discuss the idea of ceteris paribus here, if you think you can explain it well. If you have time, try to have a student make this case to the other students.
+----
 
+```{block2,  type='gtatip'}
 
+**Instructors:** You may want to discuss the idea of ceteris paribus here, if you think you can explain it well. If you have time, try to have a student make this case to the other students.
+
+Try to have students state this in their own words. The main point here is that the *demand curve* may have shifted.
+
+```
+
+\
+
+```{block2,  type='gtatip'}
+
+**Instructors:** If time permits (which is very unlikely), or this material is not going well. you can move on to introduce [problem set 2](https://vle.exeter.ac.uk/pluginfile.php/1435123/mod_resource/content/1/_book/ps.html#second-problem-set-preferences-utility-consumer-optimization).
+
+```
 
