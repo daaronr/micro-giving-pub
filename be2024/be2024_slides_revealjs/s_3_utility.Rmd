@@ -33,7 +33,7 @@ classoption: table
 
 format_with_col = function(x, color){
   if(knitr::is_latex_output())
-    paste("\\textcolor{",color,"}{",x,"}",sep="")
+    paste("\`r format_with_col("",x,"","",color,"")`",sep="")
   else if(knitr::is_html_output())
     paste("<font color='",color,"'>",x,"</font>",sep="")
   else
@@ -48,21 +48,21 @@ format_with_col = function(x, color){
 
 #  Utility and Choice
 
-(Largely from NS Chapter 2) 
+(Largely from NS Chapter 2)
 
 
 # Motivation
 
 Consider a decision you recently made?
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - Define this decision clearly.
 
 - How do you think you decided among these options?
 
 
-<!-- \pause -->
+. . .
 
 2 minutes: discuss with your neighbour
 
@@ -76,9 +76,9 @@ Suppose I asked you
 
 'State a rule that governs (determines/characterizes) how people *do* make decisions'...
 
-<!-- . . . -->
+. . .
 
-<br> \bigskip
+<br> <br> \bigskip
 
 I want this rule to be...
 
@@ -92,11 +92,11 @@ Similar question:
 
 'State a rule that governs how people *should* make decisions'..
 
- <br> \bigskip
+ <br> <br> \bigskip
 
 By 'should' I mean that *they will not regret having made decisions in this way.*
 
-<!-- \pause -->
+<!-- <!-- \pause --> -->
 
 2 minutes: discuss with your neighbour
 
@@ -104,12 +104,12 @@ By 'should' I mean that *they will not regret having made decisions in this way.
 
 \Huge If people *did* follow these rules, what would this imply and predict? \normalsize
 
-<!-- \pause -->
+<!-- <!-- \pause --> -->
 
 Rules defined as 'axioms about preferences'
 
 
-<!-- . . . -->
+
 
 
 'Standard axioms'  $\rightarrow$ (imply that) choices can be expressed by 'individuals maximising *utility functions* subject to their *budget constraints*'
@@ -119,7 +119,8 @@ $\rightarrow$ yields predictions for individual behavior, markets, etc.
 
 <aside class="notes">Economists and decision theorists have tried to come up with and defend such rules.
 
- They have started from these 'reasonable axioms' and follow their logical implications for \textCR
+ They have started from these 'reasonable axioms' and follow their logical implications for
+
 individual choices, individual responses to changes in prices and income,
 
 market prices and quantities and their responses,
@@ -133,7 +134,7 @@ market prices and quantities and their responses,
 # Lecture 2, Ch.2 -- Utility and Choice -- coverage
 
 
-\underline{Key goals of these lectures (and accompanying self-study)}
+Key goals of these lectures (and accompanying self-study)}
 
 **Learn, understand, be able to explain and explain:**
 
@@ -142,7 +143,7 @@ market prices and quantities and their responses,
 - Key assumptions about preferences/choices; their implications
 
 
-<!-- . . . -->
+. . .
 
 
 - Depict preferences/utility with 'indifference curves'
@@ -156,18 +157,18 @@ market prices and quantities and their responses,
 - 'Budget constraints', compute and model them
 
 
-<!-- . . . -->
+. . .
 
 
 - Maximising utility subject to constraints
     - optimisation condition for this
 
     <!---
-    price ratios \& mgnl rates of substn.
+    price ratios & mgnl rates of substn.
     -->
 
 
-<!-- . . . -->
+. . .
 
 - Depict and interpret optimisation with indifference curves and budget constraints
 
@@ -194,9 +195,9 @@ market prices and quantities and their responses,
 Utility
 :     "The pleasure or satisfaction that people get from their economic activity."
 
-<!-- . . . -->
+. . .
 
-<br> \bigskip
+<br> <br> \bigskip
 
 :     Alt: The thing that people maximise when making economic decisions
 
@@ -210,17 +211,17 @@ Utility
 
 *How is this used?*
 
-<br> \bigskip
+<br> <br> \bigskip
 
-<!-- . . . -->
+. . .
 
 
 Utility will be expressed as a single number that arises from the combination of all goods and services consumed.
 
-<!-- . . . -->
+. . .
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Essentially, economists assume that `when making a choice among all available and feasible options, an individual will choose the one that yields the greatest *utility*'
@@ -234,7 +235,7 @@ $$Utility = U(X,Y; other)$$
 \
 
 
-<!-- . . . -->
+. . .
 
 
 - Leisure and 'goods consumption'
@@ -249,7 +250,7 @@ $$Utility = U(X,Y; other)$$
 
 $$Utility = U(X,Y)$$
 
-<br> \bigskip
+<br> <br> \bigskip
 
  `r format_with_col("Maths revision","blue")`: $U(X,Y)$ expresses a *function* with two *arguments*, X and Y.
 
@@ -261,7 +262,7 @@ $$Utility = U(X,Y)$$
 
 <aside class="notes">Consider the function `altitude of land in Britain as a function of degrees longitude and latitude'</aside>
 
-<!-- . . . -->
+. . .
 
 This expresses a *general* function; I haven't specified *what* this function is
 
@@ -282,14 +283,14 @@ This expresses a *general* function; I haven't specified *what* this function is
 
 Utility is not 'observable and measurable in utils'
 
-<!-- \pause -->
+<!-- <!-- \pause --> -->
 
 (Unlike midi-chlorians or thetans)
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
-<!-- \pause -->
+<!-- <!-- \pause --> -->
 
 Utility is seen to govern an individual's *choices* and thus it's only inferred indirectly, from the *choices* people make
 
@@ -311,7 +312,7 @@ Utility is seen to govern an individual's *choices* and thus it's only inferred 
 - Who gets 'more' utility?
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 ```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
@@ -378,7 +379,7 @@ $$A \succ B, B \succ A, \: or \: A \sim B $$
 
 
 
-<!-- . . . -->
+. . .
 
 
 
@@ -428,13 +429,13 @@ $$ A \succ B \: and \: B \succ C \rightarrow A \succ C $$
 If I prefer an Apple to a Banana and a Banana to Cherry
 
 
-<!-- . . . -->
+. . .
 
 
 then I prefer an Apple to a Cherry.
 
 
-<!-- . . . -->
+. . .
 
 
 If not $\rightarrow$ money pump.
@@ -472,12 +473,12 @@ If not $\rightarrow$ money pump.
 
 ### Who cares?
 
-<br> \bigskip
+<br> <br> \bigskip
 
 **If people obey the first two assumptions (axioms),$^\ast$
 they will make choices in a way consistent with maximising a (continuous) *utility* function**
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 
@@ -521,22 +522,22 @@ Also gives a vocabulary and a way to test for violations of this consistency, an
 Indifference curve
 :     A curve that shows all the combinations of goods or services that provide the same level of utility
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
-<!-- \pause -->
+<!-- <!-- \pause --> -->
 
-Formally (for 2 goods), the set of pairs of $\{X,Y\}$ such that $U(X,Y)=c$ 
+Formally (for 2 goods), the set of pairs of $\{X,Y\}$ such that $U(X,Y)=c$
 for some constant $c$
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 <aside class="notes">Recall  "level sets" from math tools</aside>
 
 
-<!-- \pause -->
+<!-- <!-- \pause --> -->
 
 
 
@@ -587,7 +588,7 @@ If this is too difficult, think of 2 healthy goods, like runner beans and green 
 
 <aside class="notes">LC: draw/KEEP THIS ON THE BOARD</aside>
 
-<!-- . . . -->
+. . .
 
 `r format_with_col("Rank order of preference/indifference between points A-E.","blue")`
 
@@ -597,14 +598,14 @@ If this is too difficult, think of 2 healthy goods, like runner beans and green 
 
 ```{r  fig.cap = '', out.height='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/indifccurve.png")
-``` 
+```
 
 Q1: How do we know $E \succ B$ ?
 
 <aside class="notes">Q1: Has more soft drink, same hamburgers. Assumption 3: more preferred to less.</aside>
 
 
-<!-- . . . -->
+. . .
 
 
 Q:  How do we know $E \succ A$ ?
@@ -642,10 +643,9 @@ the *points* they would trade to depends on their bargaining power</aside>
 
 MRS =  Absolute value of slope of indifference curve
 
-<br> \bigskip
+<br> <br> \bigskip
 
-'Rate at which you're willing to forgo consuming ($Y$)
-to consume one more ($X$)'
+'Rate at which you're willing to forgo consuming ($Y$) to consume one more ($X$)'
 
 <aside class="notes">2024, Adv, math: This slope will equal the negative of the *ratio* of the rate at which utility increases in each good (partial derivative).
 
@@ -665,7 +665,7 @@ to consume one more ($X$)'
 > - $\rightarrow$ slope $-2$, $MRS=2$
 
 
-<!-- \pause -->
+<!-- <!-- \pause --> -->
 
 
 \
@@ -673,20 +673,20 @@ to consume one more ($X$)'
 > - From B to C? (think about it)
 
 
-<!-- \pause -->
+<!-- <!-- \pause --> -->
 
 
 > - ...willing to give up 1 hamburger to get 1 more soda $\rightarrow MRS =1$
 
 
-<!-- \pause -->
+<!-- <!-- \pause --> -->
 
 \
 
 > - C to D?
 
 
-<!-- \pause -->
+<!-- <!-- \pause --> -->
 
 > - $MRS = \frac{1}{2}$
 
@@ -702,7 +702,7 @@ the smaller the arc</aside>
 \
 
 
-<!-- \pause -->
+<!-- <!-- \pause --> -->
 
 
 > - Note the decline: 'diminishing MRS':  may reflect *satiation*
@@ -737,7 +737,7 @@ E.g., if I like bundles A and D equally, I prefer a bundle of 1/3 of a and 2/3 o
  knitr::include_graphics("picsfigs/indifcurvemap.png")
 ```
 
-<!-- \pause -->
+<!-- <!-- \pause --> -->
 
 Indifference curves `r format_with_col("never cross!","red")`
 `r format_with_col("And are never upwards sloping!","red")`
@@ -784,7 +784,7 @@ Perfect complements
 
 :     Goods A and B are Perfect Complements when an individual only gains utility from (more) A if she also consumes a defined (additional) amount of B, and vice-versa
 
-<br> \bigskip
+<br> <br> \bigskip
 
 These goods are 'enjoyed only in fixed proportions'.
 
@@ -795,13 +795,13 @@ These goods are 'enjoyed only in fixed proportions'.
 
 
 
-## Choices are subject to constraints 
+## Choices are subject to constraints
 
 :(
 
 \
 
-You cannot spend more than your (lifetime) income/wealth 
+You cannot spend more than your (lifetime) income/wealth
 
 \
 
@@ -810,7 +810,7 @@ $\rightarrow$ *budget constraint*.
 <aside class="notes">Sorry ... maybe that's why they call Economics the dismal science</aside>
 
 
-<!-- . . . -->
+. . .
 
 
 \begin{figure}[hb]
@@ -895,7 +895,7 @@ what they mean, and have intuition for why the slope has this formula. See 'micr
 
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
-    
+
 knitr::include_graphics("picsfigs/utilmax.png")
 
 ```
@@ -923,7 +923,7 @@ knitr::include_graphics("picsfigs/utilmax.png")
 ```
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 *If* slope budget constraint = slope indifc curve at point X,Y $\rightarrow$
 $$P_X/P_Y = MRS(X,Y)$$
@@ -962,7 +962,7 @@ Psychic tradeoff (MRS) equals market tradeoff ($P_X/P_Y$) `r format_with_col("if
 
 \
 
-<br> \bigskip
+<br> <br> \bigskip
 
 *Key intuition:*
 
@@ -970,7 +970,7 @@ Psychic tradeoff (MRS) equals market tradeoff ($P_X/P_Y$) `r format_with_col("if
 > - If I can give up X for (buy less X, get more Y) at some rate, and the *benefit* I get from doing this is at a *different* rate,
 
 
-<!-- . . . -->
+. . .
 
 \
 
@@ -978,7 +978,7 @@ Psychic tradeoff (MRS) equals market tradeoff ($P_X/P_Y$) `r format_with_col("if
 
 \
 
-<!-- . . . -->
+. . .
 
 
 > - Thus the original point could not have been optimal.
@@ -991,7 +991,7 @@ Psychic tradeoff (MRS) equals market tradeoff ($P_X/P_Y$) `r format_with_col("if
 **Example, for intuition**
 - Suppose, at your chosen consumption bundle, your MRS = 1.
 - To remain indifferent, you'd give up 1 ham to get 1 soda.
-<br> \bigskip
+<br> <br> \bigskip
 - Suppose the price of soda is £1 and the price of a ham is £2.
     - Price ratio: $P_S/P_B = 1/2$
 - $\rightarrow$  if you buy one less ham you can buy two more sodas.
@@ -1015,7 +1015,7 @@ $$U_X(X,Y) := MU_X(X,Y)$$
 \medskip
 
 
-<!-- . . . -->
+. . .
 
 
 *Derivative w/ respect to X: rate utility increases if we add a little X, holding Y constant*
@@ -1023,18 +1023,18 @@ $$U_X(X,Y) := MU_X(X,Y)$$
 ... Similarly for $MU_Y$.
 
 
-<!-- . . . -->
+. . .
 
 \
 
 
 
-> - MRS: 'how much Y would I be willing to give up to get a unit of X'?
+MRS: 'how much Y would I be willing to give up to get a unit of X'?
 
-<!-- . . . -->
+. . .
 \
 
-> - Ans: Depends on marginal benefit of each ... we can show $MRS(X,Y)=\frac{MU_{X}}{MU_{Y}}$
+Ans: Depends on marginal benefit of each ... we can show $MRS(X,Y)=\frac{MU_{X}}{MU_{Y}}$
 
 <aside class="notes">Intuition: the more valuable a little more X is to me  -- the higher is MU_X --
 
@@ -1092,15 +1092,15 @@ The more valuable a bit more Y is at that point -- the higher is MU_y -- the les
 
 If you are consuming *both goods* and optimising, $P_X/P_Y = MRS = MU_X/MU_Y$ must hold
 
-<br> \bigskip
+<br> <br> \bigskip
 
 <center> `r format_with_col("Advanced: This is a 'necessary but not sufficient condition', sufficient if DMRS everywhere","gray")` </center>
 
 \
 
-<aside class="notes">Same condition applies to each good you are consuming a positive amount o<br> \bigskip f</aside>
+<aside class="notes">Same condition applies to each good you are consuming a positive amount o<br> <br> \bigskip f</aside>
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 `r format_with_col("But...","red")`
@@ -1243,12 +1243,12 @@ An easy example:  I might always be indifferent between three pints of mild ale 
 $$U(X,Y)=4X+3Y$$
 
 
-<!-- . . . -->
+. . .
 
 Rates each increase utility per-unit (derivative) are constant: $MU_X = 4$, $MU_Y = 3$
 
 
-<!-- . . . -->
+. . .
 
 
 So (for perfect substitutes) buy the one that increases it more *per-£*
@@ -1259,7 +1259,7 @@ So (for perfect substitutes) buy the one that increases it more *per-£*
 
 $$U(X,Y)=4X+3Y$$
 
-<br> \bigskip
+<br> <br> \bigskip
 
 . . .
 
@@ -1276,7 +1276,7 @@ $$U(X,Y)=4X+3Y$$
 
 - Rearranging, if $P_X < 4/3 P_Y$, buy X ... etc.
 
-<!-- \pause -->
+<!-- <!-- \pause --> -->
 `r format_with_col("Warning:","red")` If *not* perfect substitutes, MU ratios depend on consumption levels.
 
 ----
@@ -1297,7 +1297,7 @@ $$U(X,Y)=min(2X,Y)$$
 . . .
 
 
-<small> <center> `r format_with_col("Warning:","red")` this min function looks backwards, but it's correct; see notes </small> </center> 
+<small> <center> `r format_with_col("Warning:","red")` this min function looks backwards, but it's correct; see notes </small> </center>
 
 
 . . .
@@ -1358,7 +1358,7 @@ $$MU_Y =  \frac{1}{2} (X/Y)^{1/2}$$
 
 . . .
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 *Here, amount of Y you'd give up to get a unit of X:*
@@ -1442,7 +1442,7 @@ but you still value more of it somewhat (unlike for perfect complements)</aside>
 
 
 
-<small> For any price ratio, find ratio of Y \& X. With prices and income, $I$, find consumption of X \& Y. </small>
+<small> For any price ratio, find ratio of Y & X. With prices and income, $I$, find consumption of X \& Y. </small>
 
 . . .
 
@@ -1473,7 +1473,7 @@ $$Y P_Y = X P_X$$
 Combining this with the budget constraint
 $$P_X X + P_Y Y = I$$
 
-solve for X \& Y, as fncns of prices \& income (see notes) $\rightarrow$
+solve for X & Y, as fncns of prices \& income (see notes) $\rightarrow$
 
 . . .
 
@@ -1508,16 +1508,15 @@ and budget constraint are symmetric everything we said holds replacing X with Y.
 
 Preferences, Utility, Consumer optimization,
 
-<!-- \pause -->
+<!-- <!-- \pause --> -->
 
-<br> \bigskip
+<br> <br> \bigskip
 
 individual and market demand curves.
 
 
-<!-- \pause -->
+<!-- <!-- \pause --> -->
 
-This is a very large problem set (others are smaller).
 
 <!---
 - $2.5.$ Ms. Caffeine enjoys enjoys coffee (C) and tea (T) according to the function $U (C; T ) = 3C + 4T$

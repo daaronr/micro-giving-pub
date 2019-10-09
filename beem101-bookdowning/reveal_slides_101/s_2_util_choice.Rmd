@@ -48,8 +48,6 @@ format_with_col = function(x, color){
 -->
 
 
-----
-
 
 
 <!---
@@ -110,7 +108,7 @@ Suppose I asked you
 
 'State a rule that governs (determines/characterizes) how people *do* make decisions'...
 
-<!-- . . . -->
+. . .
 
 <br> \bigskip
 
@@ -143,7 +141,7 @@ By 'should' I mean that *they will not regret having made decisions in this way.
 Rules defined as 'axioms about preferences'
 
 
-<!-- . . . -->
+. . .
 
 
 <small> 'Standard axioms'  $\rightarrow$ (imply that) choices can be expressed by 'individuals maximising *utility functions* subject to their *budget constraints*' </small>
@@ -419,13 +417,13 @@ The "benefit": we can transform (e.g., log) a utility function for convenient ca
 . . .
 
 
-Note: Uncertain choices $\rightarrow$ 'Von Neumann - Morgenstern' utility functions;  somewhat more restrictive, thus better identified.
+<small> Note: Uncertain choices $\rightarrow$ 'Von Neumann - Morgenstern' utility functions;  somewhat more restrictive, thus better identified. </small>
 
 
-<aside class="notes"
+<aside class="notes">
 The Autor reading refers to Cardinal versus Ordinal utility. We use the latter in demand/consumer theory.
-
-	</aside>
+</aside>
+	
 
 # Preference axioms
 
@@ -439,8 +437,6 @@ The Autor reading refers to Cardinal versus Ordinal utility. We use the latter i
 The more formal and parsimonious definition (Autor readings, Jehle/Reny) develop this from a single relation 'weakly preferred to'.</aside>
 
 2. Transitivity (internal consistency)
-
-
 
 
 3. More is Better (*nonsatiation, or some variant of this*)
@@ -545,7 +541,7 @@ See also [Becoming a money pump, Nick Chater, Warwick business school](https://v
 
 ### 3. More is better (similar to nonsatiation, 'monotonicity')
 
-```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/moreisbetter.png")
 ```
 
@@ -553,7 +549,7 @@ See also [Becoming a money pump, Nick Chater, Warwick business school](https://v
 
 *Draw this!*
 
-`r format_with_col("\footnotesize{If the product is a 'bad' (e.g., pollution), redefine as the *absence","gray")` of the product*}
+<small> `r format_with_col("If the product is a 'bad' (e.g., pollution), redefine as the *absence* of the product", "grey")` </small>
 
 <aside class="notes">The darkly shaded area represents those combinations of X and Y that are unambiguously preferred to the combination X\*, Y\*.
 
@@ -631,7 +627,9 @@ Continuity and nonsatiation
 $\rightarrow$ Compare utilities, depict using *Indifference Curves*
 
 
-<aside class="notes">LC: Here, put up indifference curve picture on the visualiser</aside>
+<aside class="notes">
+LC: Here, put up indifference curve picture on the visualiser
+</aside>
 
 # Indifference curves
 
@@ -646,7 +644,8 @@ Indifference curve
 . . .
 
 
-Formally (for 2 goods), the set of pairs of $\{X,Y\}$ such that $U(X,Y)=c$ for some constant $c$
+Formally (for 2 goods), the set of pairs of $\{X,Y\}$ such that $U(X,Y)=c$
+for some constant $c$
 
 
 . . .
@@ -715,11 +714,9 @@ If this is too difficult, think of 2 healthy goods, like runner beans and green 
 
 ----
 
-```{r  fig.cap = '', out.height='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.height='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/indifccurve.png")
 ```
-
-\
 
 Q1: How do we know $E \succ B$ ?
 
@@ -727,6 +724,7 @@ Q1: How do we know $E \succ B$ ?
 
 
 . . .
+
 
 Q:  How do we know $E \succ A$ ?
 
@@ -738,7 +736,7 @@ If $E \succ A$ and $B \sim A$ then $E \succ A$ by transitivity of the preference
 
 **Why 'voluntary trade'? **
 
-```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/indifccurve.png")
 ```
 
@@ -758,7 +756,7 @@ Note with the same DMRS for both, trades along this line make both better off;
 
 the *points* they would trade to depends on their bargaining power</aside>
 
-# Marginal rate of substitution (MRS)
+## Marginal rate of substitution (MRS)
 
 
 MRS =  Absolute value of slope of indifference curve
@@ -769,7 +767,7 @@ MRS =  Absolute value of slope of indifference curve
 
 <aside class="notes">2024, Adv, math: This slope will equal the negative of the *ratio* of the rate at which utility increases in each good (partial derivative).
 
-   Intuition: giving up a certain utility from one good must be balanced by an increase in utility from the other good.</aside>
+Intuition: giving up a certain utility from one good must be balanced by an increase in utility from the other good.</aside>
 
 
 
@@ -778,7 +776,7 @@ MRS =  Absolute value of slope of indifference curve
 - Formally, the MRS at point $X,Y$, where $U(X,Y)=U_1$ is:
 
 
-<!-- . . . -->
+. . .
 
 
 $$MRS(X,Y)=-\frac{dY}{dX}|U(X,Y)=U_1$$
@@ -801,13 +799,13 @@ $\rightarrow$ slope $-2$, $MRS=2$
 - From B to C? (think about it)
 
 
-<!-- \pause -->
+. . .
 
 
 ...willing to give up 1 hamburger to get 1 more soda $\rightarrow MRS =1$
 
 
-<!-- \pause -->
+. . .
 
 
 - C to D?
@@ -829,13 +827,13 @@ the smaller the arc</aside>
 \
 
 
-<!-- \pause -->
+. . .
 
 
 - Note the decline: 'diminishing MRS':  may reflect *satiation*
 
 
-# Preference for variety/balance
+## Preference for variety/balance
 
 ![Fig 2.3](picsfigs/indifcurvebalance.png) \
 
@@ -849,14 +847,13 @@ Extreme of this is 'necessity' goods. </aside>
 
 <aside class="notes">With an indifference curve with this shape ('convex')
 
-
   any consumption bundle that represents a 'mixture' between two equally attractive extremes will be preferred to those extremes
 
 
 E.g., if I like bundles A and D equally, I prefer a bundle of 1/3 of a and 2/3 of D to either A or D.</aside>
 
 
-----
+##
 
 More formal concept: (strictly) convex preferences $\Leftrightarrow$  (strictly) 'quasiconcave' utility function, allowing  'n goods':
 
@@ -864,7 +861,7 @@ More formal concept: (strictly) convex preferences $\Leftrightarrow$  (strictly)
 With diminishing MRS, for a 'convex combination' of the two bundles $\mathbf{A}=(X_A,Y_A)$ and $\mathbf{D}=(X_D,Y_D)$
 
 
-<!-- . . . -->
+. . .
 
 
 $$U(\alpha\mathbf{A}+(1-\alpha)\mathbf{D})\geq\alpha U(\mathbf{A}) + (1-\alpha)U(\mathbf{D})$$
@@ -874,7 +871,7 @@ where $0<\alpha<1$.
 (Note switch to a 'weak inequality' here for quasiconcavity, strict for 'strict quasiconcavity')
 
 
-<!-- . . . -->
+. . .
 
 e.g., (with two goods),
 
@@ -900,14 +897,14 @@ $$\alpha(U((X_A,Y_A)) + (1-\alpha)(U(X_D,Y_D))$$
 
 ----
 
-# Indifference curve map
+### Indifference curve map
 
 
 ```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/indifcurvemap.png")
 ```
 
-<!-- \pause -->
+. . .
 
 Indifference curves `r format_with_col("never cross!","red")`
 `r format_with_col("And are never upwards sloping!","red")`
@@ -932,7 +929,7 @@ and the impact of a single-consumer's income increasing by \$1 million will be t
 
 # Illustrating particular preferences
 
-![Fig 2.5](picsfigs/particularpreferences.png) \
+![Fig 2.5](picsfigs/particularpreferences.png){width=65%} \
 
 <aside class="notes">Note, these preference violate some of the above assumptions and do not exhibit diminishing MRS</aside>
 <aside class="notes">
@@ -996,14 +993,22 @@ These goods are 'enjoyed only in fixed proportions'.
 
 
 
-## Choices are subject to constraints :(
+## Choices are subject to constraints
 
-You cannot spend more than your (lifetime) income/wealth $\rightarrow$ *budget constraint*.
+:(
+
+\
+
+You cannot spend more than your (lifetime) income/wealth
+
+\
+
+$\rightarrow$ *budget constraint*.
 
 <aside class="notes">Sorry ... maybe that's why they call Economics the dismal science</aside>
 
 
-<!-- . . . -->
+. . .
 
 
 \begin{figure}[hb]
@@ -1035,41 +1040,39 @@ thus, the less I need to sacrifice of $Y$ to get another unit of $X$.
 However, I'll try not to make such errors too costly on the assessments.  </aside>
 
 
-----
 
-### Budget constraint algebra
+## Budget constraint algebra
 
 
 If I spend all my income `r format_with_col("(I will do over a 'relevant lifetime')","gray")`:
 
 \
 
-<!-- \pause -->
+. . .
 
 
 
 Expenditure on X + Expenditure on Y = Income (I)
 
-\
 
 $$P_X X + P_Y Y = I $$
 
 
-<!-- . . . -->
+. . .
+
 
 
 To see how $Y$ trades off against $X$, rearrange this to:
 
 
-<!-- . . . -->
+. . .
 
 
-\
 
 $$Y = -\frac{P_X}{P_Y} X + \frac{I}{P_Y}$$
 
 
-<!-- . . . -->
+. . .
 
 
 - Intercept $\frac{I}{P_Y}$: amount of Y you can buy if you only buy Y
@@ -1088,7 +1091,7 @@ what they mean, and have intuition for why the slope has this formula. See 'micr
 
 ## Utility maximization
 
-![Utility max depiction](picsfigs/utilmax.png) \
+![Utility max depiction](picsfigs/utilmax.png){width=70%} \
 
 <aside class="notes">LC: Depict on visualiser/board</aside>
 
@@ -1106,7 +1109,7 @@ what they mean, and have intuition for why the slope has this formula. See 'micr
 
 </aside>
 
-----
+##
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/utilmax.png")
@@ -1124,7 +1127,7 @@ $$P_X/P_Y = MRS(X,Y)$$
 </aside>
 
 
-<!-- . . . -->
+. . .
 
 
 `r format_with_col("Warning:","red")` This equality holds *at* an optimal choice; it doesn't hold everywhere.
@@ -1156,13 +1159,13 @@ Psychic tradeoff (MRS) equals market tradeoff ($P_X/P_Y$) `r format_with_col("if
 If I can give up X for (buy less X, get more Y) at some rate, and the *benefit* I get from doing this is at a *different* rate,
 
 
-<!-- . . . -->
+. . .
 
 
 ...then I can make myself better off.
 
 
-<!-- . . . -->
+. . .
 
 
 Thus the original point could not have been optimal.
@@ -1197,22 +1200,25 @@ $$U_X(X,Y) := MU_X(X,Y)$$
 \medskip
 
 
-<!-- . . . -->
+. . .
 
 
 *Derivative w/ respect to X: rate utility increases if we add a little X, holding Y constant*
 
-- Similarly for $MU_Y$.
+... Similarly for $MU_Y$.
 
 
-<!-- . . . -->
+. . .
 
+\
 
 
 
 MRS: 'how much Y would I be willing to give up to get a unit of X'?
 
-<!-- . . . -->
+. . .
+
+\
 
 Ans: Depends on marginal benefit of each ... we can show $MRS(X,Y)=\frac{MU_{X}}{MU_{Y}}$
 
@@ -1233,7 +1239,7 @@ $$ = MU_{X}dX + MU_{Y}dY$$
 
 - Where = $\frac{\partial U}{\partial X}$ refers to the partial derivative of U(X,Y) with respect to X, and similarly for Y. I.e., the marginal utility.
 
-<!-- . . . -->
+. . .
 
 
 
@@ -1263,7 +1269,7 @@ $$P_X/P_Y = MRS = MU_X/MU_Y$$
 \
 
 
-<!-- . . . -->
+. . .
 
 
 (at each consumption point X,Y)
@@ -1273,10 +1279,12 @@ $$P_X/P_Y = MRS = MU_X/MU_Y$$
 $$\frac{MU_X}{P_X} = \frac{MU_Y}{P_Y}$$
 
 
-<!-- . . . -->
+. . .
 
 
-Same 'bang for each buck' (`r format_with_col("if","red")` optimising)
+\
+
+$\leftrightarrow$ Same 'bang for each buck' (`r format_with_col("if","red")` optimising)
 
 <aside class="notes">If this didn't hold true and you were spending on both goods,
 
@@ -1294,7 +1302,7 @@ The more valuable a bit more Y is at that point -- the higher is MU_y -- the les
 
  That is why MU_y is in the denominator</aside>
 
-##Caveat on 'corner solutions'
+## Caveat on 'corner solutions'
 
 
 - If you are consuming *both goods* and optimising, $P_X/P_Y = MRS = MU_X/MU_Y$ must hold
@@ -1314,30 +1322,28 @@ The more valuable a bit more Y is at that point -- the higher is MU_y -- the les
 
 ----
 
-But...
+### But...
 
-```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/chiapet.jpg")
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/chiapet.gif")
+
 ```
 
 ----
 
-- If you are consuming both goods and optimising, $P_X/P_Y = MRS = MU_X/MU_Y$ must hold
+If you are consuming both goods and optimising, $P_X/P_Y = MRS = MU_X/MU_Y$ must hold
+
+\
+
+. . .
 
 
-<!-- . . . -->
+But you might consume *none* of some good (say X)
 
+\
 
-- But you might consume *none* of some good (say X):
-    - if even with *no* X, $MU_X/P_X<MU_Y/P_Y$, the marginal utility of the first unit 'per pound' is lower
+. . .
 
-----
-
-```{r  fig.cap = '', out.height='5in', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/goodwedontbuy.png")
-```
-
-----
 
 Enrichment:
 
@@ -1351,9 +1357,8 @@ Constrained problem equivalent to optimising a single unconstrained 'Lagrangian'
  knitr::include_graphics("picsfigs/consumerlagrangian.png")
 ```
 
-- This yields the above optimisation (first-order) conditions
+<small> This yields the above optimisation (first-order) conditions (subject to non-negativity constraints) </small>
 
-(subject to non-negativity constraints)
 
 <aside class="notes">there are additional non-negativity constraints,
 
@@ -1364,15 +1369,28 @@ Constrained problem equivalent to optimising a single unconstrained 'Lagrangian'
 ----
 
 
-```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/solutioninngoods.png")
 ```
 
 
+I.e., 
+$$\nabla U(\mathbf{x^\ast})\cdot \mathbf{p}=0$$
 
-##App 2.4: ticket scalping
 
-```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+<aside class="notes">
+
+The dot product of  the 'gradient vector' of the partial derivatives of utility wrt each element of $x$, evaluated at the optimum and the price vector must equal zero. 
+
+Which, using matrix algebra, tell us that, at optimum 'the rate of increase in utility is greatest in the direction of the vector tangent to the budget line (plane)'.. 
+Which tells us that the plane tangent to the 'indifference set' at this point is the budget plane. 
+
+	
+	</aside> 
+
+## App 2.4: ticket scalping
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/scalping.png")
 ```
 
@@ -1403,9 +1421,12 @@ Constrained problem equivalent to optimising a single unconstrained 'Lagrangian'
 
     - Is there ever a justification to forbid a transaction between 2 consenting parties? </aside>
 
-##App 2.5: What's a rich uncle's promise worth?
+## App 2.5: What's a rich uncle's promise worth?
 
-![](picsfigs/williesuncle.png) \
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/williesuncle.png")
+```
+
 
 <aside class="notes">
 - Willie would choose point A, but paid \$5k to abstain, would get him to point B, gain $U_3$
@@ -1416,7 +1437,7 @@ Constrained problem equivalent to optimising a single unconstrained 'Lagrangian'
 
 - Is this more or less than \$5k?</aside>
 
-##Using the model of choice
+# Using the model of choice
 
 1. Why do people spend their money on different things?
 2. What do different preferences/indifference curves imply for choices?
@@ -1436,7 +1457,7 @@ Constrained problem equivalent to optimising a single unconstrained 'Lagrangian'
 
 ----
 
-*Move to ppt slides here
+*Move to [ppt slides here](https://www.dropbox.com/s/qhsl6qey0wjcfe5/utility_demand_supplement.pptx?dl=0)
 beginning with 'Utility Maximization: A Graphical View'*
 
 
@@ -1447,6 +1468,7 @@ beginning with 'Utility Maximization: A Graphical View'*
 
 # Algebraic/numerical examples
 
+----
 
 Consider: are these 'perfect substitutes' for someone who wants caffeine, but has no taste buds?
 
@@ -1472,15 +1494,15 @@ An easy example:  I might always be indifferent between three pints of mild ale 
 $$U(X,Y)=4X+3Y$$
 
 
-<!-- . . . -->
+. . .
 
 Rates each increase utility per-unit (derivative) are constant: $MU_X = 4$, $MU_Y = 3$
 
 
-<!-- . . . -->
+. . .
 
 
-So (for perfect substitutes) buy the one that increases it more *per-\pounds*
+So (for perfect substitutes) buy the one that increases it more *per-£*
 
 ----
 
@@ -1488,20 +1510,26 @@ So (for perfect substitutes) buy the one that increases it more *per-\pounds*
 
 $$U(X,Y)=4X+3Y$$
 
-<br> \bigskip
+<br> <br> \bigskip
+
+. . .
 
 - Compare $MU_X/P_X$ to $MU_Y/P_Y$
 
-<!-- \pause -->
+. . .
 
 - Here, if $4/P_X > 3/P_Y$, then buy X
 
 - if $4/P_X < 3/P_Y$, then buy Y;  `r format_with_col("(if equal, buy either)","gray")`
 
+. . .
+
 
 - Rearranging, if $P_X < 4/3 P_Y$, buy X ... etc.
 
-<!-- \pause -->
+. . .
+
+
 `r format_with_col("Warning:","red")` If *not* perfect substitutes, MU ratios depend on consumption levels.
 
 ----
@@ -1519,19 +1547,23 @@ $$U(X,Y)=min(2X,Y)$$
 `r format_with_col("E.g., X: bicycle frames, Y: wheels.","gray")`
 
 
-<!-- . . . -->
+. . .
 
 
-<br> \bigskip
-
-`r format_with_col("Warning:","red")` this min function looks backwards, but it's correct; see notes
+<small> <center> `r format_with_col("Warning:","red")` this min function looks backwards, but it's correct; see notes </small> </center>
 
 
- <!-- \pause -->
+. . .
 
-- Shortcut: figure out the proportions it will be consumed in
-    - determine cost of '1 bundle of the combo' at given prices
-    - ... then buy as many such bundles as you can afford
+Shortcut: figure out the proportions it will be consumed in
+
+. . .
+
+- determine cost of '1 bundle of the combo' at given prices
+
+. . .
+
+- ... then buy as many such bundles as you can afford
 
 <aside class="notes">"Min" function just takes the smaller of the arguments
 
@@ -1558,10 +1590,15 @@ $$ U(X,Y)=\sqrt(XY) $$
 
 <aside class="notes">LC: We are 'allowed' to square the whole thing to simplify the problem. Why?</aside>
 
-<!-- . . . -->
+
+. . .
 
 
 $$MU_X = \frac{\partial}{\partial X} (XY)^{1/2} = \frac{1}{2} (Y/X)^{1/2}$$
+
+
+. . .
+
 
 $$MU_Y =  \frac{1}{2} (X/Y)^{1/2}$$
 
@@ -1572,7 +1609,7 @@ $$MU_Y =  \frac{1}{2} (X/Y)^{1/2}$$
 <aside class="notes">\* If time is short, we may cover this in the class/tutorial instead)</aside>
 -->
 
-<!-- . . . -->
+. . .
 
 <br> \bigskip
 
@@ -1588,12 +1625,25 @@ $$MRS(X,Y)= MU_X/MU_Y = Y/X$$
 <aside class="notes">The last equality comes from this *particular* function; it is not always Y/X.</aside>
 
 
-<!-- . . . -->
+. . .
 
 
-\footnotesize{Check reasonable: The more Y I've , the more Y I'd give up to get another X :)}
+\
+
+<small> Check it's reasonable: The more Y I've, the more Y I'd give up to get another X :) </small>
 
 
+
+<aside class="notes">This slope is derived through calculus.</aside>
+<aside class="notes">Adv, maths:
+
+MU_X is the slope of U(X,Y) in X at a particular point, i.e., the (partial) derivative with respect to X
+
+$MU_X = \frac{\partial</aside>{\partial X} (XY)^{1/2} = \frac{1}{2} (XY)^{-1/2}Y = \frac{1}{2} (Y/X)^{1/2}$
+
+Similarly, $MU_Y =  \frac{1}{2} (X/Y)^{1/2}$.
+
+</aside>
 
 <!---
 <aside class="notes">Adv: In doing theoretical (i.e., more pure mathematical) work,
@@ -1627,7 +1677,7 @@ i.e., the (partial) derivative with respect to X
 $$MU_X = \frac{\partial}{\partial X} (XY)^{1/2} = \frac{1}{2} (XY)^{-1/2}Y = \frac{1}{2} (Y/X)^{1/2}$$
 
 
-<!-- . . . -->
+. . .
 
 Similarly,
 
@@ -1640,7 +1690,7 @@ $$MU_Y =  \frac{1}{2} (X/Y)^{1/2}.$$
 
 $$MRS(X,Y)= MU_X/MU_Y = Y/X$$
 
-<!-- . . . -->
+. . .
 
 Here utility-maximization requires, at optimal choices of X and Y:
 $$MRS(X,Y)= Y/X = P_X/P_Y$$
@@ -1661,14 +1711,18 @@ The more of one good you have the less you value it relative to the other good (
 
 but you still value more of it somewhat (unlike for perfect complements)</aside>
 
- <!-- . . . -->
+. . .
+
+\
 
 
-For any price ratio, find ratio of Y \& X.
 
-With prices and income,  $I$, find consumption of X \& Y.
+<small> For any price ratio, find ratio of Y & X. With prices and income, $I$, find consumption of X \& Y. </small>
 
-<!-- . . . -->
+. . .
+
+\
+
 
 Rearranging optimization condition:
 
@@ -1683,23 +1737,23 @@ Ans: You always spend the same *amount* on each good, no matter the price
 
 ----
 
-Optimization condition for `r format_with_col("this particular","red")` utility function:
+So optimization condition for `r format_with_col("this particular","red")` utility function:
 
 $$Y P_Y = X P_X$$
 
 
-<!-- . . . -->
+. . .
 
-
+\
 Combining this with the budget constraint
 $$P_X X + P_Y Y = I$$
 
-solve for X \& Y, as fncns of prices \& income (see notes) $\rightarrow$
+solve for X & Y, as fncns of prices \& income (see notes) $\rightarrow$
 
-<!-- . . . -->
+. . .
 
 
-\medskip
+\
 
 $$Y = I/(2P_Y)$$
 $$X = I/(2P_X)$$
@@ -1733,14 +1787,14 @@ and budget constraint are symmetric everything we said holds replacing X with Y.
 ----
 
 
-###Cobb-Douglas general form (from other text)
+### Cobb-Douglas general form 
 
 $$U(X,Y)=X^aY^b$$
 
-where a, b are positive constants
+<small> where a, b are positive constants </small>
 
 
-<!-- . . . -->
+. . .
 
 
 This is *"homothetic"*:
@@ -1748,7 +1802,7 @@ This is *"homothetic"*:
 
 <aside class="notes">Homothetic: MRS constant along a ray through the origin
 
- Can be represented by an HD1 utility function.
+Can be represented by an HD1 utility function.
 
 ties down 'income effects' in a boring way
 
@@ -1765,7 +1819,7 @@ $$MU_X=\frac{\partial U}{\partial X} = aX^{a-1}Y^b$$
 $$MU_Y=\frac{\partial U}{\partial Y} = bX^{a}Y^{b-1}$$
 
 
-<!-- . . . -->
+. . .
 
 
 Taking the ratio of these yields
@@ -1773,13 +1827,13 @@ Taking the ratio of these yields
 $$MRS = \frac{a}{b}\frac{Y}{X}$$
 
 
-<!-- . . . -->
+. . .
 
 
 So only the *ratio* Y/X affects the MRS; e.g., double both and MRS is the same.
 
 
-<!-- . . . -->
+. . .
 
 
 
@@ -1787,12 +1841,12 @@ So only the *ratio* Y/X affects the MRS; e.g., double both and MRS is the same.
 
 ----
 
-###A non-homothetic example
+### A non-homothetic example
 
 
 $$U(X,Y)=X+ln(Y)$$
 
-<!-- . . . -->
+. . .
 
 Here Y has a diminishing MU, but for X MU is constant
 
@@ -1803,13 +1857,13 @@ $$\frac{MU_X}{MU_Y}= \frac{1}{1/Y}=Y$$
 So the MRS increases as Y increases, but it's independent of the amount of X consumed.
 
 
-<!-- . . . -->
+. . .
 
 
 `r format_with_col(" So, if we double both then (class question)?","blue")`
 
 
-<!-- . . . -->
+. . .
 
 
 Ans: MRS doubles
@@ -1819,12 +1873,11 @@ Ans: MRS doubles
 
 This represents *Quasilinear* preferences:
 
-```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='45%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/Quasilinear_utility.png")
 ```
 
-
-More generally (and usefully) $U=x_1+f(x_2,...,x_n)$ linear in one 'numeraire' good $x_1$.
+<small> More generally (and usefully) $U=x_1+f(x_2,...,x_n)$ linear in one 'numeraire' good $x_1$. </small>
 
 <aside class="notes">Here, the amount of the 'non-numeraire goods' consumed adjust to match the price ratio but don't depend on the income
 
@@ -1839,9 +1892,9 @@ More generally (and usefully) $U=x_1+f(x_2,...,x_n)$ linear in one 'numeraire' g
 
 
 
-##App 2.6: Loyalty programmes (Skip in lecture)
+## App 2.6: Loyalty programmes (Skip in lecture)
 
-```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='40%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/kinkedbc.png")
 ```
 
@@ -1911,11 +1964,10 @@ Representation of the MRS between all goods as a matrix, properties of this
 
 
 
-##  Second problem set: covers chapter 2 (and chapter 3) -- see VLE
+##  Second problem set: Coming soon
 
-Preferences, Utility, Consumer optimization,  individual and market demand curves.
+More on preferences, Utility, Consumer optimization,  individual and market demand curves.
 
-Will put this up shortly.x
 
 <!---
 - $2.5.$ Ms. Caffeine enjoys enjoys coffee (C) and tea (T) according to the function $U (C; T ) = 3C + 4T$
@@ -1940,10 +1992,3 @@ Will put this up shortly.x
     - All parts
     - We may not go over this in tutorial as there is a video posted on the textbook site.
     -->
-
-
-
-<!--
-BEGINLEC3
--->
-
