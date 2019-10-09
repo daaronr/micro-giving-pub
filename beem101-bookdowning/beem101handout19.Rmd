@@ -1,12 +1,19 @@
 
-# Demand Curves [2 hours]
+# Demand Curves
 
 ## Text sources/Readings
 
 - NS: Ch 3
 
+- DA: [Lecture Note 6 – Demand Functions: Income Effects, Substitution Effects, and Labor Supply](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/MIT14_03F16_lec6.pdf), esp. sections 1-3
 
-## Lecture 3 (Chapter 3): Demand Curves -- coverage outline
+- McDL:  3.1 (elasticity), parts of Ch 12; Warning: this books treatment of consumer surplus seems to be incorrect (or at least vastly oversimplified) from my PoV
+
+- QMC: Chapter 17 (elasticities -- very clear treatment, Chapter 18 (supply and demand details)
+
+
+
+## Demand Curves -- coverage outline
 
 `r format_with_col("In lecture at this point I give you an example of a very surprising case that nonetheless may occur, at least in theory.","gray")`
 
@@ -45,7 +52,7 @@ Previously, we considered how consumption choices determined by utility function
 We will refer to her 'quantity demanded of good X' function (or more simply, her 'demand function') as follows:
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 $$Quantity \: of \: X \: demanded = d_x(P_X, P_Y, I; preferences)$$
 
@@ -58,12 +65,12 @@ Homogenous (of degree zero) (demand) function
 :      A function whose outcome value does not change when *all* arguments are changed *proportionally* is *homogenous of degree zero*
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 $d_X(P_X,P_Y,I)$ is homogenous of degree zero in its arguments.
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Multiply all prices and income by the same amount, and the *budget constraint is unchanged.*  Thus ( as preferences have not changed) consumption choices should not change either.
@@ -89,7 +96,7 @@ A: Depends on whether the good is normal or inferior.
 (Whether it is normal or inferior depends on your preferences and the change in the slope of the indifference curves with higher income/utility, as we see below.)
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Normal good
 :     A good that is bought in *greater* quantities as income increases.
@@ -99,7 +106,7 @@ Inferior good
 
 ***
 
-```{r  fig.cap = '', out.height='2.2in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/normalgood.png")
 ```
 
@@ -110,7 +117,7 @@ Inferior good
 
 
 
-```{r  fig.cap = '', out.height='2.2in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/inferiorgood.png")
 ```
 
@@ -121,7 +128,7 @@ This is because the *shape* of the indifference curves changes at higher incomes
 When people have a lot to spend, they want to spend it on Y and not on Z. (Again *in this example*, not in general.)
 Consider, if you won the lottery how much pot noodle would you buy? Pot noodle may be like good Z  in this example.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Thinking in 3d: 'as you walk up this hill, its ridge gradually moves to the west'
 
@@ -179,7 +186,7 @@ More consumption of each good is possible, but the MRS may differ at this higher
 
 ***
 
-```{r  fig.cap = '', out.height='2.2in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/incomeandsubstfx.png")
 ```
 
@@ -247,7 +254,7 @@ Todo: give more explanation here
 ## The (legendary?) Giffen good
 
 
-```{r  fig.cap = '', out.height='2.2in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/griffin.jpg")
 ```
 
@@ -265,13 +272,13 @@ Todo: give more explanation here
 
 ## Some other important functions to know about (doctoral prep):
 
-```{r  fig.cap = '', out.height='2.2in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/axioms.png")
 ```
 
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Indirect utility function: the (max) utility you can get as a function of your income and prevailing prices.
@@ -282,7 +289,7 @@ $$V(p_x,p_y,I_0)$$
 *We can find by solving for the utility-maximising choices, and then plugging these in to compute the utility from these.*
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Expenditure function: How much income you need to to get a certain utility given prevailing prices.
@@ -302,7 +309,7 @@ These functions are actually used in 'structural' estimates of demand used in me
 - because 'Maximise utility s.t. a budget constraint' is sort of equivalent to 'minimise expenditure s.t. attaining a particular level of utility'
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Look:
@@ -314,7 +321,7 @@ $$V(p_x,p_y,E(p_x,p_y,U_0))=U_0$$
 'My utility when I have enough income (expenditure) to give me utility $U_0$ ... is $U_0$'
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 
@@ -336,7 +343,7 @@ $$h_x(p_x,p_y,U_0)=d_x(p_x,p_y,E(p_x,p_y,U_0))$$
 is the amount of X I would consume if I had the income that allowed me to get utility $U_0$.'
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Totally differentiating these equalities allows us to relate the compensated and uncompensated *responses* to price changes.
@@ -350,7 +357,7 @@ Well, from our initial consumption point we now lose  $d_X \times \epsilon$ in s
 
 But why is it OK to consider this 'from the initial consumption point' and not also consider the adjustment to this? I believe that comes from the Envelope theorem.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Intuition for Sheperds' Lemma  is easier.  How much more do we need to spend to get the same utility if $p_x$ rises? We must spend, at the margin, at rate equal to our previous consumption of X, $h_x$. Again, we don't need to consider the adjustment to the consumption bundle in answering this *particular* question because of the envelope theorem.
 
@@ -361,7 +368,7 @@ Intuition for Sheperds' Lemma  is easier.  How much more do we need to spend to 
 $$\frac{\partial d_x}{\partial p_x}= \frac{\partial h_x}{\partial p_x} - \frac{\partial d_x}{\partial I}x$$
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 At the margin, the change in demand for X in response to a change in its price sums:
@@ -370,7 +377,7 @@ At the margin, the change in demand for X in response to a change in its price s
 - the income effect multiplied by the amount of X consumed
     - because a price increase in X reduces 'remaining income' proportionally to how much X is consumed
 
-<br> \bigskip
+<br> <br> \bigskip
 
 A similar result applies to a change in *another* good's price, with similar intuition
 
@@ -385,7 +392,7 @@ A similar result applies to a change in *another* good's price, with similar int
 
 $$Quantity \: of \: X \: demanded = d_x(P_x, P_y, I; preferences)$$
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Previous lecture: What the constrained utility-maximization implied for demand...
 
@@ -434,7 +441,7 @@ Todo: Motivate this more
 
     - `r format_with_col("What causes *shifts* in either?","gray")`
 
-<br> \bigskip
+<br> <br> \bigskip
 
 ## App 3.2: The CPI and its biases
 
@@ -482,18 +489,18 @@ $$cpi_{19}=\frac{b_{19}}{b_{82}}$$
 
 An unadjusted (Fixed-basket) CPI 'claims' you need $I'$ to be as well off in 2019. I.e., to buy *the exact same basket*, including vinyl records.\ But, as seen in the figure below, by substituting you could be as well off with the lower level of income $I''$\ (And income $I'$ would actually make you *better* off).
 
-```{r  fig.cap = '', out.height='2.7in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/cpi_bias.png")
 ```
 
-<br> \bigskip
+<br> <br> \bigskip
 
 In fact, in setting policy, the basket *is* adjusted yearly, based on a survey of consumers' spending.\ But even this is not necessarily the *right* adjustment,\ as consumers may be attaining higher or lower utility from these changes.\ The right adjustment depends on the consumers' utility functions, which are unobservable.
 
 
 [comment]: <> (101BB)
 
-<br> \bigskip
+<br> <br> \bigskip
 
 `r format_with_col("Aside: See also new product/quality bias, and 'outlet bias'.","gray")`
 
@@ -511,7 +518,7 @@ There is a good graphical treatment of  this at \url{policonomics.com/laspeyres-
 
 You may find it interesting and useful to understand the difference between compensating variation and equivalent variation, and what these mean. Essentially, EV considers 'if we had held prices constant, what reduction in income would reduce her utility as much as this price increase did'.  CV asks 'after this price increase, how much income do we have to give someone to make them as well off as they were initially?' (This is the way we have mainly been thinking about it thus far.) it might seem like these amounts would be the same, but they are not the same in general (only for quasi-linear utility).
 
-<br> \bigskip
+<br> <br> \bigskip
 
 We can may also consider the ratio of actual expenses,  the 'money income index' (MI), $\frac{p_1 x_1}{p_0 x_0}$.
 
@@ -532,7 +539,7 @@ Considering this further,  even if the CPI measure that is being used overstates
 Have you seen this?
 
 
-```{r  fig.cap = '', out.height='2.6in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/ukwindows.jpg")
 ```
 
@@ -547,7 +554,7 @@ Consider the 'least efficient tax': Suppose the UK government imposes a tax on a
 
 What's going on here?
 
-```{r  fig.cap = '', out.height='2.6in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/tudoroverhang.jpg")
 ```
 
@@ -575,7 +582,7 @@ A common measure of the burden: 'amount a person would be willing to pay to avoi
 ***
 
 
-```{r  fig.cap = '', out.height='2.8in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/lumpsum1.png")
 ```
 
@@ -677,9 +684,9 @@ He argues this demonstrates a deadweight loss (DWL).
 
 Others have questioned Walfogel's empirical findings, (Solnick – Hemenway 1996; List – Shogren 1998.) instead finding a gain in value over the cost of the gifts. (Reinstein, 'The Economics of the Gift', 2014)
 
-\textbf{Empirical critiques}
+**Empirical critiques**
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - Solnick and Hemenway highlight the non-representativeness of W's survey, and potential experimenter demand and framing issues -- these were Yale microeconomics students. They re-run a similar survey on a (claimed) more representative sample and find a very large gain in value relative to cost (value of 214\% of cost).
 
@@ -688,7 +695,7 @@ Others have questioned Walfogel's empirical findings, (Solnick – Hemenway 1996
 (There are other empirical papers that could also be cited)
 
 
-\textbf{Alternate models}
+**Alternate models**
 
 The standard explanation for this is that gifts gain a sentimental or symbolic value. Other gains may accrue to the giver, such as the shared consumption benefits [the giver also enjoys the use of the gift, or the act of giving] and signaling benefits, or the ability to signal one’s understanding of the receiver’s tastes and needs.
 
@@ -720,7 +727,7 @@ Complements
 *How to remember:* 'complements' go together, so the quantity-demanded response to a price change is the same for both goods
  -- the opposite direction as the price change (unless Giffen).
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Substitutes
 :     If a rise in $P_X$ leads $d_Y$ to increase (and vice versa), then goods Y and X are (gross) *substitutes* to one another.
@@ -744,7 +751,7 @@ At the margin:
 $$ \frac{\partial h_\ell}{\partial p_k} =  \frac{\partial d_\ell}{\partial p_k}+\frac{\partial d_\ell}{\partial I}\ell$$
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 The matrix $S(P,I)$ (function of all prices, income) whose '$\ell,k$' entry is the thing above is called the *Slutsky substitution matrix*
@@ -758,11 +765,11 @@ If you are estimating a demand system, if the axioms hold, then imposing this re
 
 - Quantity of X demanded
 
-<br> \bigskip
+<br> <br> \bigskip
 
 $$d_X(P_X,P_Y,I; \: preferences)$$
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - 'Individual demand curve': depicts how the amount of a good an *individual* buys responds to that good's price
 
@@ -825,7 +832,7 @@ This will almost surely be on one of the exams in some form, see e.g., micro qui
 Consumer surplus
 :     The extra value individuals receive from consuming a good over what they pay for it.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - What people would be willing to pay for the *right* to consume a good *at its current price* rather than not being able to buy it at all.^[In other words, if you said to a consumer 'this product will stop being produced/offered  unless you pay us enough money',  this is the maximum amount the consumer would be will be willing to pay to keep the product on the market,  at its current price.]
 
@@ -866,16 +873,16 @@ Also, 'introducing a new good...'^[This concept can also be applied to measuring
 - More generally,  a 'definite integral'
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 $$\int_{0}^{q^\ast}p(q)-p^\ast dq $$
 
 (where $p(q)$ is the inverse demand.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 For welfare calculations, we often want to know 'how does this integral change as we adjust some parameter'
 
@@ -886,14 +893,14 @@ $\rightarrow$ See the Leibniz rule for differentiating integrals.
 
 [comment]: <> (101EE)
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Market demand
 :     The total quantity of a good or service demanded by all potential buyers
 
 - Sum the individual quantities demanded (at a given price)
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Market demand curve
@@ -946,7 +953,7 @@ A random example:
 
 - Difficulty: These things are measured in different *units* and the prices have different starting values.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Elasticity: the measure of the \% change in one variable brought about by a 1\% change in another variable.
 
@@ -957,7 +964,7 @@ Elasticity: the measure of the \% change in one variable brought about by a 1\% 
 `r format_with_col("Advanced footnote","RawSienna")`^[Strictly speaking we are talking about the limit of these responses, i.e., derivatives. \
   The elasticity is basically the derivative of $ln(y)$ with respect to $ln(x)$; useful to know if you want to run a regression computing an elasticity, or if you want to interpret such a regression.]
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - If a 5\% fall in the price of oranges typically results in a 10\% increase in quantity bought,
 - we say that each percent fall in the price of oranges leads to an increase in sales of about 2 percent.
@@ -1001,7 +1008,7 @@ $Q=ap^b$ where $b<0$, the price elasticity of demand is b.
 
 
 
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/elasticities_are_logs_post.png")
 ```
 
@@ -1042,7 +1049,7 @@ Properties of price elasticity of demand:
 - Typically: more elastic in the *long run* than the short run. `r format_with_col("Q : why?","blue")`^[Ans: Over time, consumers can adjust to price changes by changing their consumption patterns. E.g., if petrol gets more expensive I can switch to a hybrid or electric car, or a bicycle.]
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 <!---
@@ -1087,7 +1094,7 @@ As $e_{Q,P}$ tells you the percent change in quantity for each (small) percentag
 
 -   If the (individual's) demand is *unit-elastic* (with respect to price),  quantity will decrease by a *the same* percentage as price increased.  Thus her expenditure (on this good) will *be unchanged*.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 
@@ -1139,7 +1146,7 @@ $$  = \frac{\Delta Q_d}{Q_d}/\frac{\Delta I}{I}$$
 \
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Normal goods: $e_{Q,I} > 0$
 \
@@ -1149,7 +1156,7 @@ Inferior goods: $e_{Q,I} < 0$
 
 \
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Luxury goods: $e_{Q,I} > 1$
@@ -1164,7 +1171,7 @@ E.g., cocaine is a luxury good, if, when I win £1000 in the lottery, I will inc
 `r format_with_col("Q: Is a luxury good a normal good?","blue")`^[Ans: Yes (do you know why?)]
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 
@@ -1269,14 +1276,14 @@ Todo: desperately need motivation here
 `r format_with_col("This year","red")` we only briefly cover the production function, inputs, and the firm's cost structure.
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Key issues are highlighted on the next slides, and in the handouts.
 
 I'm giving you the 'basic idea' so we can continue the *story.*
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Recommendation: Read the following parts of NS Text ch 6-7; you can skip the parts not mentioned and skip the applications
 
@@ -1301,7 +1308,7 @@ Ch 6:
 
 - A production function is a mathematical relationship between inputs (capital, labour, materials, etc.) and outputs.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 $$q = f( K, L, M, ...)$$
 
@@ -1319,7 +1326,7 @@ $$q = f(K, L)$$
 Todo: give an example here... consider 'how much labour will the firm hire'? Maybe something about automation and a guaranteed living wage?
 -->
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Typically, a particular quantity ($q$) could be produced with several different combinations of inputs.
@@ -1342,7 +1349,7 @@ $\rightarrow$ where the input mix is optimal, each input yields the same *margin
 Todo (future): R content estimating this?
 -->
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 `r format_with_col("This is very similar to the consumer optimization we discussed. For a given total input cost, the firm wants to produce as much as possible. A better way of thinking about this is that for a given production, the firm wants to incur as low a cost as possible. However, there is no 'hard budget constraint' as in the consumer optimisation case. The firm's output choice will be chosen to maximise it's profit, with no constraints other than 'non-negativity. ","gray")`
@@ -1359,7 +1366,7 @@ Optimisation (given a production function and input prices)...
 yields a (minimum) cost for every output $q$ a firm chooses to produce.
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Total cost function: $c(q)$ or $TC(q)$.
@@ -1381,7 +1388,7 @@ Total cost function: $c(q)$ or $TC(q)$.
 
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 - **'Average cost'** $AC=c(q)/q$: the production cost per unit produced
@@ -1392,7 +1399,7 @@ Total cost function: $c(q)$ or $TC(q)$.
 Average costs (for a firm) may be increasing or decreasing in quantity
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 - Increasing average costs $\leftrightarrow$ Decreasing returns to scale
@@ -1404,7 +1411,7 @@ Average costs (for a firm) may be increasing or decreasing in quantity
 - Constant average costs $\leftrightarrow$ Constant returns to scale
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 `r format_with_col("Consider: why/when would we expect DRS/IRS/CRS?","blue")` (We discuss this [further below](##IRS-DRS-reasons).)
 
@@ -1466,7 +1473,7 @@ The shape of the marginal cost curve depends on the production function
 ```
 
 
-```{r  fig.cap = '', out.height='2.2in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/mescostcurves")
 ```
 
@@ -1507,7 +1514,7 @@ Marginal product
 :     The additional output that can be produced by adding one more unit of a particular input while holding all other inputs constant.
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Marginal Product of Labour: $MP_L$
@@ -1526,28 +1533,28 @@ $$MP_L=\frac{\partial}{\partial L}f(K,L)$$
 
 
 
-```{r  fig.cap = '', out.height='2.0in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/outputMP1.png")
 ```
 
 
 ***
 
-```{r  fig.cap = '', out.height='2.0in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/outputMP2.png")
 ```
 
 
 ***
 
-```{r  fig.cap = '', out.height='2.0in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/outputMP3.png")
 ```
 
 
 ## Isoquant maps, rate of technical substitution (RTS)
 
-```{r  fig.cap = '', out.height='2.0in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/prod_isoquant1.png")
 ```
 
@@ -1555,7 +1562,7 @@ $$MP_L=\frac{\partial}{\partial L}f(K,L)$$
 
 ***
 
-```{r  fig.cap = '', out.height='2.0in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/prod_isoquant2.png")
 ```
 
@@ -1575,7 +1582,7 @@ The slope of these is called the 'Rate of Technical Substitution,' to be defined
 ***
 
 
-```{r  fig.cap = '', out.height='2.0in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/prod_isoquant3.png")
 ```
 
@@ -1631,7 +1638,7 @@ Constant returns to scale (CRS)
 - E.g., doubling all inputs (labour, capital, land, etc) means exactly doubling all outputs
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 
@@ -1685,7 +1692,7 @@ Give one reason why production may exhibit 'increasing returns to scale' and one
     - Here MES is 100
         - You should produce in multiples of 100, but could be CRS for each multiple of 100
 
-```{r  fig.cap = '', out.height='1.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/3dhead.jpg")
 ```
 
@@ -1773,7 +1780,7 @@ Opportunity Costs
 :     The value that the inputs used to produce something would generate in their next-best use
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - We care about these from a *social efficiency* point of view.
     - The airline might charge *you* £1000 for a first-class upgrade, but if there's an empty seat the cost to the airline is almost nothing
@@ -1803,16 +1810,16 @@ NOTE: Please *don't* use accounting costs to make a decision going forward.
 - Capital costs - rental rate $v$
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Total costs $= TC = wL + vK$
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Economic profit = $\pi$ = Total Revenues – Total Costs
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 $$\pi = Pq-wL-vK = Pf(K,L)-wL-vK$$
@@ -1837,7 +1844,7 @@ Economic profits differ from accounting profits, \
 
 *The 'benefit tradeoff' must equal the 'price tradeoff' in both cases, otherwise we are not optimizing.*
 
-```{r  fig.cap = '', out.height='1.8in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/costmin2.png")
 ```
 
@@ -1886,7 +1893,7 @@ The combination that produces q at the lowest cost is at the point tangent to th
 
 $$RTS = MP_L/MP_K = w/v$$
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Equivalently, $\frac{MP_L}{w} = \frac{MP_K}{v}$
@@ -1917,7 +1924,7 @@ Short Run (SR)
 
 - E.g., capital (K) is fixed but labour can vary
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Long Run (LR)
 :     The period of time in which a firm may consider all of its inputs to be variable in making its decisions.
@@ -2046,11 +2053,11 @@ NOTE: includes trivial perfect competition case and 'monopoly' case
 
 [comment]: <> (pre2018EE)
 
-<br> \bigskip
+<br> <br> \bigskip
 
 *Now:* what **output** should the firm set to maximise profits?
 
-<br> \bigskip
+<br> <br> \bigskip
 
 *(Next: the consequences of this for the market)*
 
@@ -2059,7 +2066,7 @@ NOTE: includes trivial perfect competition case and 'monopoly' case
 
 Standard (classical) economics definition: A *firm* is an entity that transforms inputs into outputs.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 We assume a firm's goal is to maximise profit.
@@ -2069,7 +2076,7 @@ We assume a firm's goal is to maximise profit.
 Ronald Coase: Why do large entities called 'firms' exist
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 - Many activities, own many assets
@@ -2091,12 +2098,12 @@ at which it can sell all the units it has produced.
 
 `r format_with_col("We will come back to this when we discuss","gray")` [monopolies](#monopolies-pd)
 
-<br> \bigskip
+<br> <br> \bigskip
 
 `r format_with_col("Q: What will be the impact of increasing quantity on a firm's revenue??","blue")`
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 - It can sell an additional unit at some price
@@ -2107,13 +2114,13 @@ at which it can sell all the units it has produced.
 
 $$R=p Q(p)$$
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Or if we allow the 'inverse demand' P(q):
 
 $$R = q P(q)$$
 
-<br> \bigskip
+<br> <br> \bigskip
 
 $$MR = \frac{\partial R}{\partial q} = P(q) +q P'(q)$$
 
@@ -2132,7 +2139,7 @@ $$MR = \frac{\partial R}{\partial q} = P(q) +q P'(q)$$
     - So MR is £0.49
 
 
-```{r  fig.cap = '', out.height='3.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/Mrillustrated.png")
 ```
 
@@ -2140,7 +2147,7 @@ $$MR = \frac{\partial R}{\partial q} = P(q) +q P'(q)$$
 
 **MR curves be like:**
 
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/mrcurve.png")
 ```
 
@@ -2163,7 +2170,7 @@ Each firm:
 
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 *Thus its marginal revenue is constant at $P$*!
 
@@ -2185,7 +2192,7 @@ Each firm:
 - ... profits are maximised at the unique $q^*$ such that $MR=MC$
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 This holds *for all types of firms*
@@ -2254,7 +2261,7 @@ $e_{q,p}$ = abs(\% change in q) / (\% change in P))
 
 
 
-```{r  fig.cap = '', out.height='2.1in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/elast_vs_mr.png")
 ```
 
@@ -2262,7 +2269,7 @@ $e_{q,p}$ = abs(\% change in q) / (\% change in P))
 \
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Rearranging the MR (derivative of revenue wrt price) yields:
 
@@ -2368,7 +2375,7 @@ BEGINLEC7
 - If demand for a good increases (demand curve shifts out), because preferences change, or because population increases,
     - ... should we expect the price of the good to rise in the short or long run?
 
-<br> \bigskip
+<br> <br> \bigskip
 
 **Deeper:**
 
@@ -2388,16 +2395,16 @@ debates over 'industrial policy' and 'trust-busting', etc
 
 **Urgent question: Brexit**^[This seemed to be an urgent question in 2016 when I first wrote this section. It still seems to be an urgent question.]
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Trade with Europe may default to WTO terms
 
-<br> \bigskip
+<br> <br> \bigskip
 
 $\rightarrow$ Very large tariffs on some goods, 'non-tariff barriers' on others
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 UK (and EU) firms: Unknown impact on input prices, demand curves, competition, etc.
@@ -2407,7 +2414,7 @@ UK (and EU) firms: Unknown impact on input prices, demand curves, competition, e
 - How long will it take to return to some 'equilibrium'?
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 - Fewer firms in UK markets $\rightarrow$ less competition $\rightarrow$ loss of consumer surplus?
@@ -2446,7 +2453,7 @@ Under perfect competition each firm
 \
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Thus, for every price $P^{*}$, it produces the $q$ where $mc(q)=P^{*}$.
@@ -2454,7 +2461,7 @@ Thus, for every price $P^{*}$, it produces the $q$ where $mc(q)=P^{*}$.
 \
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 This implies that its mc curve *is* its supply curve!
 \
@@ -2480,7 +2487,7 @@ Sum each firm's supply curve *horizontally*.
 
 This is shown below:
 
-```{r  fig.cap = '', out.height='2.7in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/srsupply.png")
 ```
 
@@ -2521,14 +2528,14 @@ Previous units had marginal costs *below* $P^*$. Thus *average* (variable) costs
 ## Illustration of SR price determination
 
 
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/srpd1.png")
 ```
 
 ***
 
 
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/srpd6.png")
 ```
 
@@ -2550,14 +2557,14 @@ And a signal
     - and 'which consumers should obtain the units produced'?
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 By the definition of the market-clearing price $P^*$, \
 consumers can buy all they desire at P*, \
 i.e., buy units until the last unit they buy gives them a marginal utility of $P^*$.
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 This foreshadows a result we will come to later, the efficiency of equilibrium outcomes (under given conditions).
 \
@@ -2601,7 +2608,7 @@ Suppose *positive economic profits* in an industry (for efficient producers)^[Fo
     - i.e., until $P^*=AC(q)$ for the minimum AC q
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 ***
 
@@ -2632,7 +2639,7 @@ and all must have the same average cost.
 - I.e., the MC curve intersects the AC curve at its minimum point.
     - And this is the same average cost for all firms
 
-<br> \bigskip
+<br> <br> \bigskip
 
 All firms (in the market) produce $q$ that *minimizes* their AC,  and for all firms this is the *same* average cost.
 
@@ -2646,7 +2653,7 @@ Why is  $P* = min [AC(q)] = MC(q)$? Which implies...
 
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 *Answer 'by contradiction':*
 
@@ -2675,7 +2682,7 @@ In the longer run, it does shift in response to price changes, as firms enter. \
 The LR supply curve, which we will now define, does *not* shift in response to price changes \
 But other things may cause it to shift, like changes in input costs
 
-<br> \bigskip
+<br> <br> \bigskip
 
 **So what will the LR supply curve look like?**
 
@@ -2687,7 +2694,7 @@ But other things may cause it to shift, like changes in input costs
 
 DR opinion...^[For a variety of reasons, we shouldn't always expect the LR curve to be upward sloping. It might also be flat or downward sloping. Thus, if the demand curve for, e.g., microchips or personalised software shifts out, we may see that equilibrium price *declines* in the long run.]
 
-<br> \bigskip
+<br> <br> \bigskip
 
 *As alluded to in the introduction, this is relevant when we want to consider tje impact of long run population and economic growth*
 
@@ -2731,7 +2738,7 @@ In the above diagram, we have:
 *Long-run elasticity of supply:* \% change in LR $Q^s$ / \% change P
 
 
-```{r  fig.cap = '', out.height='2.7in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/lr_supplyelast_ests.png")
 ```
 
@@ -2749,7 +2756,7 @@ Consumer surplus (reprise)
 
 - The area between the demand curve and the market price
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Producer surplus
 :     The extra value producers get for a good in excess of the opportunity costs they incur by producing it. What all producers would pay for the right to sell a good at its current market price.
@@ -2791,12 +2798,12 @@ Since you are already incurring these, they don't count against the benefit you 
 Economically efficient allocation of resources: maximizes the sum of consumer and producer surplus.
 - At market equilibrium there are no more mutually beneficial exchanges
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Basically, a *competitive* market *in equilibrium* maximizes the sum of producer and consumer surplus.
 
 
-```{r  fig.cap = '', out.height='1.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/consumerprodrsurplusmax.png")
 ```
 
@@ -2850,7 +2857,7 @@ But many markets have large entry costs, first-mover advantages, and perhaps con
 Perhaps even more crucially, most products are also 'differentiated'; if one firm charges slightly more than another firm, it will still capture the demand from those people whose are 'close' to it. People will pay a little extra to not travel as far. They will also pay a little extra to get the product that most suits their preferences. In this case, with free entry, we have something known as  'monopolistic competition', which has some of the characteristics of monopoly (e.g., pricing above marginal cost) and some characteristics of perfect competition (e.g., zero long-run profits). This model is  another candidate for bring the dominant model; there is an active debate about this!
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 
@@ -2903,7 +2910,7 @@ Efficiency in production (being on the PPF)
 :     No way to reallocate inputs to increase production of one good without reducing production of another
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 \begin{centering}
 
@@ -2941,10 +2948,10 @@ Efficiency in consumption (exchange efficiency)
 :     No way to reallocate output amongst consumers to make them all better off
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 \begin{centering}
 
@@ -2973,12 +2980,12 @@ The 'Edgeworth box' offers a graphical demonstration that this yields a Pareto o
  knitr::include_graphics("picsfigs/Contract-curve-on-edgeworth-box.png")
 ```
 
-<br> \bigskip
+<br> <br> \bigskip
 
 *Does this look familiar? Where can you find it at Exeter? What does it mean?*
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 **A basic argument for exchange efficiency of competitive equilibrium:**
 
@@ -3008,8 +3015,8 @@ yet we may still not be at efficiency? `r format_with_col("Why?","blue")`
 
 We need to produce the right *combination* of goods.
 
-<br> \bigskip
-<br> \bigskip
+<br> <br> \bigskip
+<br> <br> \bigskip
 
 Efficient allocation of resources ('top-level' condition)
 :     No way to produce more of one good and less of another to make all consumers better off
@@ -3044,7 +3051,7 @@ Second fundamental theorem
 First fundamental theorem of welfare economics
 :     A general competitive equilibrium is Pareto efficient, under standard assumptions.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 **But these assumptions may not hold, this there may be 'market failures'**
 
@@ -3054,7 +3061,7 @@ First fundamental theorem of welfare economics
 - $\rightarrow$ Prices may not reflect marginal costs, leading to 'deadweight losses'
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 2. Externalities, public goods, altruism
 
@@ -3066,7 +3073,7 @@ But:
 - Altruism/interdependent utilities: People may care about *others'* consumption
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 3. Asymmetric information: People may have different information about the state of the world (costs, risks, a good's quality)
 
@@ -3105,7 +3112,7 @@ An unusual 'market' (or non-market)
 
 >  imbalances between aggregate supply and demand are a major challenge in blood markets, including excess supply after disasters and insufficient supply at other times.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 > not unexpected given that the blood market operates without market prices and with limited storage length (about six weeks) for whole blood.
@@ -3167,7 +3174,7 @@ What is the use and interpretation of 'economic theory  and models', how are the
 
 [comment]: <> (101EE)
 
-<br> \bigskip
+<br> <br> \bigskip
 
 <!---
 - Note that economists define 'surplus' as excess supply at the prevailing (or enforced) price and 'shortage' as excess demand at the prevailing (or enforced) price
@@ -3175,7 +3182,7 @@ What is the use and interpretation of 'economic theory  and models', how are the
 
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - The 'axioms' over preferences, the justification for these, and what they imply for utility functions
 
@@ -3208,7 +3215,7 @@ Revealed preference, tests for ciolations of transitivity
 
 [comment]: <> (101EE)
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 . . .
@@ -3229,7 +3236,7 @@ Revealed preference, tests for ciolations of transitivity
 
 . . .
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - 'Applications', especially those discussed both in the assigned text and in the lectures.
 
@@ -3254,7 +3261,7 @@ Revealed preference, tests for ciolations of transitivity
 
 . . .
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - Perfect competition in the LR and the SR, what profits look like, how prices move.
 
@@ -3317,11 +3324,11 @@ BEGINLEC8
 
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Outline: What is a public good, why do markets fail to provide these optimally, (how) can governments provide these optimally, when do people provide these voluntarily?
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 **Motivation**
@@ -3345,20 +3352,20 @@ What are the characteristics of a public good?
 
 *Def* -- A **Pure Public Good** is a good that is both
 
-<br> \bigskip
+<br> <br> \bigskip
 
 1. *Non-excludable*: Once the good is provided, it is impossible/costly to prevent any individual from using/benefiting from it.
 
 
 *Note:* This even includes individuals who have not paid for it
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Opposite (and alt definition)
 *Exclusive goods*: ... a good is exclusive if it is relatively easy to bar people from benefitting from it once it has been produced
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 2. *Non-rival:* One person's consumption doesn’t reduce the quantity available for others.
 
@@ -3396,7 +3403,7 @@ Hence, it may well be that the state provides a private good or that the market 
 
 Excludable and rival (depleatable)? $\rightarrow$ *Private good*
 
-<br> \bigskip
+<br> <br> \bigskip
 
 \
 
@@ -3404,12 +3411,12 @@ Excludable and rival (depleatable)? $\rightarrow$ *Private good*
 
 \
 
-<br> \bigskip
+<br> <br> \bigskip
 
 *"Common property"*: Nonexcludable but rivalrous
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 “Somewhat” nonexcludable and/or “somewhat” nonrival:  $\rightarrow$  “impure public goods.”
 
@@ -3462,20 +3469,20 @@ If a good is *non-excludable* it will be difficult to charge people for it
 
 and...
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Even if each person provided it for their *own* benefit (on the assumption that no one else would), they would typically choose *too little* from a social POV...
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Considering their own marginal benefits (and MRS) versus the price or cost, not the *social* marginal benefit (essentially, a positive externality)
 
 
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 But if firms cannot charge for its full value, they might not pay the fixed costs to develop/build/provide it
 
@@ -3529,7 +3536,7 @@ The First Welfare Theorem's assumptions/conditions do not apply to public goods.
 
 ***
 
-```{r  fig.cap = '', out.height='3.7in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/pgprovision1.png")
 ```
 
@@ -3542,7 +3549,7 @@ E.g., one new movie produced, or one firework displayed to the whole city.
 Once produced, all benefit, i.e., the cost of letting additional people enjoy it is *zero*.
 
 
-```{r  fig.cap = '', out.height='3.7in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/pgprovision2.png")
 ```
 
@@ -3557,7 +3564,7 @@ However, he will still purchase less than the *socially optimal* amount, $Q^*$
 
 With a binary choice (provide or don't) it is a Prisoner's Dilemma:
 
-```{r  fig.cap = '', out.height='3.6in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/cleaningmatrix.png")
 ```
 
@@ -3625,7 +3632,7 @@ ii. Ask everyone to state number they want; choose average; those who stated mor
 
 - $\rightarrow$ Many people understate their value to avoid having to pay. Doh!
 
-<br> \bigskip
+<br> <br> \bigskip
 
 *Difficult or impossible to find a 'mechanism' that leads to 'truth-telling'.*
 
@@ -3643,11 +3650,11 @@ Conservatives: Private Housing $\succ$ Green Park $\succ$ Public housing \
 
 \
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Suppose we have a local council with one member of each party (representing equal-sized constituencies).
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - Which proposal would win if they voted on:
     - a Green park versus Public housing?
@@ -3655,12 +3662,12 @@ Suppose we have a local council with one member of each party (representing equa
     - Private housing versus Public housing?
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 *Does a majority vote reveal a clear 'social preference'?*
 
-<br> \bigskip
+<br> <br> \bigskip
 
 No, not here.
 
@@ -3674,7 +3681,7 @@ No, not here.
 - Told that each can choose to invest some or all of it in a 'group project.'
 
 \
-<br> \bigskip
+<br> <br> \bigskip
 
 - Each simultaneously puts an amount between \$0 and \$5 in envelope. (Or via computer terminals).
 
@@ -3763,7 +3770,7 @@ Duncan (2004); Atkinson (2008); List (2011, JEPR)
 
 Non-academic accounts: Behavioural Insights Team (2013), “Applying Behavioural Insights to Charitable Giving.” (Semi-academic)
 
-<br> \bigskip
+<br> <br> \bigskip
 
 ### Charitable giving ... understand {-}
 
@@ -3841,7 +3848,7 @@ Moneybox - \url{https://itunes.apple.com/us/podcast/money-box/id263570678?mt=2&i
     - And in the long run $p=ATC$ and firms produce at $min(AC)$
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 \
 
@@ -3850,7 +3857,7 @@ Moneybox - \url{https://itunes.apple.com/us/podcast/money-box/id263570678?mt=2&i
 \
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 - (Firms with market power might set $p>mc$)
@@ -3959,7 +3966,7 @@ By the way, the AC adds up the MC and the FC and divides by the quantity.
 
 ***
 
-```{r  fig.cap = '', out.height='2.7in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/monopprofitmax.png")
 ```
 
@@ -3973,7 +3980,7 @@ By the way, the AC adds up the MC and the FC and divides by the quantity.
 - Not *affected* by demand, only by costs and number of firms
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 In contrast:
@@ -4006,7 +4013,7 @@ In contrast:
 
 ***
 
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/dwl1.png")
 ```
 
@@ -4130,7 +4137,7 @@ Offering a single price for a good for all consumers is known as 'uniform pricin
  'Perfect' means the seller exactly predicts and charges each consumer her valuation.
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 2. Self-selection (Second degree)
@@ -4146,7 +4153,7 @@ Instead, it sells different bundles, quantities,
   or qualities of products to get high and low-value consumers to separate themselves...
  E.g., first-class seats.
 
- <br> \bigskip
+ <br> <br> \bigskip
 
 
 `r format_with_col("Note: To fully analyse these problems we need to know the techniques of 'mechanism design under asymmetric information', which we are not covering in this module","gray")`
@@ -4160,7 +4167,7 @@ bundle smaller or lower-quality than would be efficient (called quality or quant
 [comment]: <> (101EE)
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 3. Group-based (Third degree; 'market separation')
@@ -4182,14 +4189,14 @@ It might be her age, nationality, student-status, or even perhaps her income.
 - Assuming you know what the consumer is willing to pay, you can make the *highest possible profit*; that is called ‘perfect’ price discrimination.
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Perfect price discrimination
 :     Charging each consumer (for each unit) the *maximum* he or she would be willing to pay, i.e., her valuation
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 - Here the monopolist would extract *all the available surplus*; no consumer surplus remains
@@ -4274,14 +4281,14 @@ Train companies must price first and second class such that consumers will self-
 
 ***
 
-```{r  fig.cap = '', out.height='1.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/thirdclasscarriage.jpg")
 ```
 
 - The Third-Class Carriage is a c. 1862–1864 oil on canvas painting by Honoré Daumier
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Lot's of discussion of this in the media, see e.g.,
@@ -4313,7 +4320,7 @@ Third-degree price discrimination/Market-separation
     - E.g., a discount for the elderly, higher price for the middle-aged
     - Or a lower price in Portugal than in Germany
 
-```{r  fig.cap = '', out.height='1.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/discounts.png")
 ```
 
@@ -4336,7 +4343,7 @@ Note: Decent numerical example, slides 6-8 Here: http://people.hss.caltech.edu/~
 Another depiction, adding demand curves (they call it 'average revenue'):
 
 
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/Price-discrimination-SNP2.png")
 ```
 
@@ -4347,7 +4354,7 @@ Another depiction, adding demand curves (they call it 'average revenue'):
 - Firms can charge higher prices to high-wtp group without losing low-wtp group $\rightarrow$ increase profit
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Net welfare result: theoretically uncertain
@@ -4357,13 +4364,13 @@ Net welfare result: theoretically uncertain
 
 For consumers:
 
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/pdwelfare.png")
 ```
 
 ***
 
-```{r  fig.cap = '', out.height='3.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/pdwelfareoverall.png")
 ```
 
@@ -4405,7 +4412,7 @@ Quantity increase is a necessary but not a sufficient condition.
     - Firm could no longer profit from this
     - Similar issues with quantity discounts, or 'web cookie' personalised pricing
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - So PD only 'works' for goods that are hard to trade, like haircuts
     - Or where purchases are frequent and low-value, and resale markets are difficult
@@ -4426,7 +4433,7 @@ The above issues are sometimes referred to as 'transactions costs'
 - Governments could allow and encourage firms to use this for price-discrimination
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 \
 
@@ -4479,7 +4486,7 @@ With multiple firms in the same market but not complete 'free entry', theory pre
 Recall the indefinitely-repeated prisoner's dillemma here
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 2. 'Cournot' competition, firms choose quantities: This model predicts an intermediate price, between the competitive and monopoly prices
 
@@ -4490,14 +4497,14 @@ Note: You can look into some cool Cournot results like markups equals the invers
 The related 'Stackleberg' model lets one firm choose first -- it will have a 'first-mover advantage' but still prices are intermediate
 \
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 3. 'Bertrand' competition in prices: Predicts firms compete price down to the competitive (MC) level
 
 \
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 4. Product differentiation, monopolistic competition; may lead to zero long-run profits
@@ -4583,7 +4590,7 @@ Previous discussion: Consumers make choices with \underline{known} consequences
 
 `r format_with_col("But in the real world many important economic decisions involve risk.","gray")`
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Here: Choices with *unknown* consequences (but known *probabilities* of each outcome)\footnote{ In the real world, people may also make choices in contexts with unknown probabilities; this is called 'ambiguity' or 'Knightian uncertainty'. This is out of the scope of this module.}
 
@@ -4617,10 +4624,10 @@ Ans: $1-p$
 A discrete random variable $X$ takes on values $x_i$ with probability $p_i$,
 $i=1, \ldots, m$, where $\sum_{i=1}^{m} p_i = 1$.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 The *expected value* (EV) of a discrete random variable $X$ is defined as
 
@@ -4658,7 +4665,7 @@ The expected value  (EV) of a continuous random variable $X$ is then defined by
 $$ E(X) = \int_{- \infty}^{\infty} x f (x)\,dx .$$
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Note that by definition, $\int_{- \infty}^{\infty} f (x)\,dx = 1$.
 
@@ -4669,11 +4676,11 @@ Note that by definition, $\int_{- \infty}^{\infty} f (x)\,dx = 1$.
 Expected value
 :     The 'average outcome' of an uncertain variable (general definition)
 
-<br> \bigskip
+<br> <br> \bigskip
 
 :     The average monetary (or goods) payoff from an uncertain gamble
 
-<br> \bigskip
+<br> <br> \bigskip
 
 :     The sum of the value at each possible outcome, weighted by the probability that outcome will occur
 
@@ -4695,7 +4702,7 @@ b. A 1 in 10 chance of \pounds 1,000,001 (and otherwise you get nothing)?
 
 *Ans: $EV(b)=\pounds 100,000.1>EV(a)=\pounds 100,000$*
 
-<br> \bigskip
+<br> <br> \bigskip
 
 `r format_with_col("Which gives you greater expected utility?","blue")`
 
@@ -4714,7 +4721,7 @@ However, it seems likely that most people would choose b, even though it has a l
 \
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 2. A *Risk-averse* person will always prefer a sure thing to a gamble with the same expected monetary value
 - She will always prefer gambles with less risk, holding the expected value constant
@@ -4773,7 +4780,7 @@ Thus $EV(X) = 0.01 \times 1020 + 0.99 \times 10 = 10.20 + 9.90 = 20.10$
 
 ***
 
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/powerball.png")
 ```
 
@@ -4787,13 +4794,13 @@ Thus $EV(X) = 0.01 \times 1020 + 0.99 \times 10 = 10.20 + 9.90 = 20.10$
 Fair gamble
 :     A bet with an expected (monetary) value of zero is a 'fair gamble'
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Actuarially fair
 
 An investment whose cost is its expected value is 'actuarially fair'
 
-<br> \bigskip
+<br> <br> \bigskip
 
 `r format_with_col("Consider: Which of the following are fair gambles?","blue")`
 
@@ -4811,14 +4818,14 @@ Economists try to measure people's level of risk aversion in various ways.
 
 We try to measure 'revealed preferences' from real-world choices. E.g., what premium are people willing to pay to buy insurance for various things,  how much premium do they demand for taking on risky investments (with the same expected monetary values), and how much more do they have to be paid (on average) in jobs with variable compensation?
 
-<br> \bigskip
+<br> <br> \bigskip
 
 We also run *experiments* with real or hypothetical payoffs to measure this.
 
 
 One technique is the Holt and Laury (2002) risk elicitation task:
 
-```{r  fig.cap = '', out.height='2.2in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/holtlaurie.png")
 ```
 
@@ -4826,9 +4833,9 @@ One technique is the Holt and Laury (2002) risk elicitation task:
 
 - Consider, when would you choose A and when would you choose B?
 
-<br> \bigskip
+<br> <br> \bigskip
 
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/holtlauriedetail.png")
 ```
 
@@ -4839,7 +4846,7 @@ The later you switch, the more risk averse you reveal yourself to be.
 
 ***
 
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/holtlauryresults.png")
 ```
 
@@ -4885,7 +4892,7 @@ Consider the choice between two gambles and one 'certainty':
 3. Earn £75,000 for certain
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Imagine the realised utility $u(y)$ arises from the consumption chosen with income $y$ `r format_with_col("(btw, the utility arising from maximisation under a particular set of income and prices is called 'Indirect Utility')","gray")`
 
@@ -4896,12 +4903,12 @@ This second assumption, called *diminishing marginal utility*,  will imply 'risk
 
 Or, if the person is risk-neutral, it may be linear, thus $u(y) = a + by$, thus $u^{\prime \prime}(y)=0$
 
-<br> \bigskip
+<br> <br> \bigskip
 
-`r format_with_col("","RawSienna")` \textcolor{gray}{Note that when we were choosing between two goods under certainty,
+'r format_with_col("","RawSienna")` \textcolor{gray}{Note that when we were choosing between two goods under certainty,
 the *level* of total utility didn't really matter, only the relative utilities. Now that we are considering gambles, the overall utility level matters, because we need to consider the extent of the tradeoff between 'rich and poor' states.}
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Coming back to the choice between two gambles and one 'certainty':
 
@@ -4918,7 +4925,7 @@ we know $u(1,000,000) > u(100,000) > u(75,000)> u(50,000) > u(0)$...
 but now the *size of the difference* in these utilities matters for your decision!
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - Consider Y1 vs Y3: Is 1 million 'more than ten times as good (utility-wise) as 75k?'
 
@@ -4935,7 +4942,7 @@ $\rightarrow$ Here I only need to know the *ranking* of utilities of each to kno
 
 - If you choose Oxford over Bristol, even though Oxford costs more, I can infer that for you $U(Oxford)>U(Bristol)$
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Now, in contrast suppose the policy is
@@ -4949,13 +4956,13 @@ Now, in contrast suppose the policy is
 Now even if your preferences  are  Oxford $\succ$ Bristol $\succ$ Plymouth, I don't know if you will choose A or B; I would need to know the *strength* of your preferences.
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 This means that if I observe you choose 'option A' I have learned *more* about your utility than I learned under open enrollment. I have learned that your preference for Oxford over Bristol is  "stronger" than your preference for Bristol over Plymouth.
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 The EU framework predicts that she chooses the option that maximizes the sum of 'probabilities $\times$ realised utilities $u(Y)$ of each outcome $Y$'. For a two-outcome case:
 
@@ -4965,9 +4972,9 @@ $$EU = (1-p) u(Y_\ell) + p u(Y_h)$$
 
 ... where $p$ is the probability of the higher income $Y_h$ and $Y_\ell$ is the lower income.
 
-<br> \bigskip
+<br> <br> \bigskip
 
-`r format_with_col("","RawSienna")` \textcolor{gray}{This framework is justified by certain 'reasonable axioms' we might expect choices under uncertainty to follow,
+'r format_with_col("","RawSienna")` \textcolor{gray}{This framework is justified by certain 'reasonable axioms' we might expect choices under uncertainty to follow,
 although these are perhaps not as readily acceptable as the main axioms of regular utility theory (like transitivity).
 ... e.g., the choices made under EU converge to the choices made under certainty as probabilities tend to 1.
 The EU framework yields nice consistent behavior and can be reconciled with general equilibrium theory, preserving the basic welfare theorems}
@@ -4982,7 +4989,7 @@ G2: \pounds100,000 with probability 0.5 \& \pounds50,000 with prob. 0.5
 G3: \pounds75,000 for certain
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 For the three gambles above:
 
@@ -4990,20 +4997,20 @@ $$EU(G_1)=0.1 \times u(1,000,000) + 0.9 \times u(0)$$
 $$EU(G_2)= 0.5 \times u(100,000) + 0.5 \times u(50,000)$$
 $$EU(G_3)= u(75,000)$$
 
-<br> \bigskip
+<br> <br> \bigskip
 
 If she is risk neutral, she will choose the first gamble (why?)
 
 
 Ans: `r format_with_col("It has the highest expected monetary value, \pounds100,000","brown")`
 
-<br> \bigskip
+<br> <br> \bigskip
 
 If she is risk averse, she will definitely prefer gamble 3 over gamble 2 `r format_with_col("Why?","blue")`
 
 Ans: It has the same expected monetary value, £75,000, but involves less risk (no risk)
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - If she is risk averse, she *might* prefer gamble 2 over gamble 1, but it depends *how* risk averse she is
 
@@ -5061,14 +5068,14 @@ and the 'share of the rise' simply projects up from the 'share of the run'
 
 ## Ways of reducing risk: Insurance
 
- ```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+ ```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/insurancereducesrisk.png")
 ```
 
 Fair insurance
 :     Insurance for which the premium is equal to the expected value of the loss
 
-`r format_with_col("","RawSienna")` \textcolor{gray}{We might think that such insurance is provided at its true marginal cost; however there are various reasons why the cost to firms may be above this, including transactions cost, moral hazard, and adverse selection}
+'r format_with_col("","RawSienna")` `r format_with_col("We might think that such insurance is provided at its true marginal cost; however there are various reasons why the cost to firms may be above this, including transactions cost, moral hazard, and adverse selection","gray")`
 
 ***
 
@@ -5108,25 +5115,25 @@ There is a nice illustration of binomial distributions
 - If I bet \pounds 100 each in ten flips,  there is a 38\% chance that I will lose 20\% or more of my investment.
 - If instead, I bet it on 1000 coin flips, betting \pounds 1 on each, there is only 6.00\% chance I will lose 5% of my investment or more, and only 1/10th of 1\% chance that I will lose 10\% of my investment or more.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 *Result*: The more I can do this “diversification”, the less risk I face.
 
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 *Note*: For simplicity, these examples have a 'fair coin flip', zero expected-return investment.
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 But you might be wondering: 'why invest at all?
 Answer: Because this principle also applies to 'unfair coin flips'.
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 E.g., investments in the stock market are more profitable on average than money under the mattress
@@ -5151,13 +5158,13 @@ Suppose you have \pounds35,000 and must invest \pounds15,000 in an Oil company o
 
 2.  If you put half in each company your income has a 25\% chance of each of the following values:
 
-```{r  fig.cap = '', out.height='1.7in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/oiltransitperformance.png")
 ```
 
 - Same expected value, but it is 'better'
 
-<br> \bigskip
+<br> <br> \bigskip
 
 How do we know it is better (for a risk-averse person)?
 
@@ -5196,7 +5203,7 @@ This takes some time to interpret; have a think about it, it is not easy.
 
 Considering VNM (indirect) utility of income ...
 
-<br> \bigskip
+<br> <br> \bigskip
 
 'Nonsatiation' if $u'(m)>0$ everywhere
 
@@ -5210,7 +5217,7 @@ Considering VNM (indirect) utility of income ...
 . . .
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 'Prudence' if risk-averse *and* if $u'''(m)<0$
 
@@ -5233,7 +5240,7 @@ Note this is preserved under an affine transformation; the value itself may be c
 . . .
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - Coefficient of *relative* risk aversion: $R(m) \equiv mA(m)=-\frac{mu''(m)}{u'(m)}$
 
@@ -5253,7 +5260,7 @@ RRA (ARA) constant $\rightarrow$ constant fraction of portfolio (number of dolla
 
 - 'Keep your options open' (simple idea)
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Option contract
 
@@ -5263,7 +5270,7 @@ Option contract
 - 'Real option': an option outside of the financial world
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Attributes of options:
 
@@ -5290,7 +5297,7 @@ Option G (a 'call option'): Right to buy Google share at £500 (£500 'strike pr
 
 `r format_with_col("Warning:","red")` If you didn't read this you probably would have guessed the opposite. On the exam, many students answer that variability *reduces* the value of the option. As you are reading this, you probably won't make that mistake... so tell your friends to read this. (2018: but this won't be focal on the exam.)
 
-<br> \bigskip
+<br> <br> \bigskip
 
 3. Duration: the longer the better -- a longer duration brings a greater chance that the price will rise above strike price (£500)
 
@@ -5311,7 +5318,7 @@ Classic economist's argument: you should 'bet against yourself' to minimise risk
 
 ### Black-Scholes (and Merton) model of options value {-}
 
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/optionsvalue_blackscholes.png")
 ```
 
@@ -5323,7 +5330,7 @@ Red is always above the blue because 'an asset's price may increase'.  At very l
 At prices higher and higher above the strike price of \$100 the red and blue come closer together, because it's unlikely the asset price goes below \$100 any time soon, so the option is almost the same as an actual share.
 But its always priced at least as high as intrinsic value, because you *can* cash it in now.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 The B-S model is insightful; once developed, traders *used it* to price options. This seems to have backfired in some cases, yielding massive losses!
 The problem: It is just a model, based on fairly strong assumptions (normal distribution of returns, etc.)
@@ -5343,7 +5350,7 @@ A famous quote (I forgot whose) 'don't mistake the map for the territory'.
 
 ## Pricing of risk (and assets) in financial markets
 
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/marketriskline.png")
 ```
 
@@ -5357,7 +5364,7 @@ Market line
 
 ***
 
-```{r  fig.cap = '', out.height='3.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/investorchoices.png")
 ```
 
@@ -5373,17 +5380,17 @@ This is the  leading 'baseline' model in finance.
 
 It assumes (or in fact, derives that) investors optimally diversify.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Thus assets are priced based only on 'risk that cannot be diversified away from' ('market risk')
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Holding the expected value of dividends constant, assets with higher market risk are less desirable, thus priced lower, and get higher returns
 
 The trade-off between this risk and return has a linear relationship with slope 'Beta'
 
-<br> \bigskip
+<br> <br> \bigskip
 
 -Typical economist's investment advice: diversify to mimic the 'market basket', choose funds with low fees
     - Doesn't make you a hit at parties :(
@@ -5455,7 +5462,7 @@ Note: Read application from a beautiful mind!
 
 ***
 
-<br> \bigskip
+<br> <br> \bigskip
 
 *Putting this in the context of this Module*:
 
@@ -5526,7 +5533,7 @@ Previous: Each individual (consumer, firm, etc) takes all others' choices as giv
 
 - market price, demand curve, etc.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Now: Consider 'strategic interaction'
 
@@ -5543,13 +5550,13 @@ Now: Consider 'strategic interaction'
 `r format_with_col("Is it better to get lunch at Comida or Pret?","blue")`
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 What if your friends are going to Comida?
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 What if everyone and her cousin are going to Comida, so the queue is miles long?
@@ -5561,7 +5568,7 @@ What if everyone and her cousin are going to Comida, so the queue is miles long?
 `r format_with_col("What should Tim Cook charge for his new Iphone?","blue")`
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Does it depend on whether Samsung and LG...
@@ -5589,7 +5596,7 @@ Life:
 - Ask out your crush or not?
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Politics:
@@ -5599,7 +5606,7 @@ Politics:
 - Run for office or not? Party contests a seat? If so, how much to spend on campaign?
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Standard Economics:
@@ -5618,7 +5625,7 @@ Very interesting problems, does Econ and Game Theory have the solutions?
 ### What game theory can do (wet blanket) {-}
 
 
-```{r  fig.cap = '', out.height='1.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/Eeyore_Pink.jpg")
 ```
 
@@ -5653,12 +5660,12 @@ These make Game Theoretic predictions difficult.}
 Players
 :     the decision makers in the game
 
-<br> \bigskip
+<br> <br> \bigskip
 
-$2, 3, <br> \bigskip,  N$ players
+$2, 3, <br> <br> \bigskip,  N$ players
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 *Who are the players in Chicken?* 1.   The north-facing car 'North' and 2. the south-facing car 'South'
 
@@ -5671,7 +5678,7 @@ Strategies
 - may be a plan contingent on what another player has done
 - may involve randomization
 
-<br> \bigskip
+<br> <br> \bigskip
 
 *Strategies/actions in Chicken?* For both N and S, two actions -- Pull-off, Straight.
 
@@ -5760,12 +5767,12 @@ If you both confess you will each get 3 years.
 
 What would you do? What would most people do? What does game theory predict?
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Which *outcome* is *definitely NOT* Pareto-optimal (for the prisoners)?
 
 
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/pd_normal.png")
 ```
 
@@ -5773,7 +5780,7 @@ Which *outcome* is *definitely NOT* Pareto-optimal (for the prisoners)?
 
 - Payoff convention: listed in the order (row's payoffs, column's payoffs)
 
-<br> \bigskip
+<br> <br> \bigskip
 
 **A Prisoner's Dilemma be like**
 
@@ -5805,7 +5812,7 @@ I.e., Temptation $>$ Reward $>$ Punishment $>$ Sucker
 
 ### The Prisoners’ Dilemma: Extensive form {-}
 
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/pd_extensive.png")
 ```
 
@@ -5844,7 +5851,7 @@ Among other things, you may be stuck on an island 'with 100 blue-eyed people, 10
 
 `r format_with_col("Warning:","red")` this puzzle will do your head in
 
-```{r  fig.cap = '', out.height='1.6in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/blue-eyed.png")
 ```
 
@@ -5858,13 +5865,13 @@ Among other things, you may be stuck on an island 'with 100 blue-eyed people, 10
     - No one can discuss another person's eye colour.
 - American tourist visits, says "It’s so nice to see one or more people with blue eyes in this part of the world”.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Q: *What effect, if any, does this faux pas have on the island?*
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Ans: If his statement is 'common knowledge'
@@ -5885,7 +5892,7 @@ Note: The BR is a function of the others' strategies *S*; it may take a differen
 
 *Note: Iterated strict dominance and rationalizability are NOT covered in the text, but I want you to learn it.  As a prediction it is much easier to justify than Nash Equilibrium.*
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Dominant strategy
 :     A single strategy that is a best response to *any* of the other player’s strategies.
@@ -5902,7 +5909,7 @@ Dominated strategy (not in text!)
 
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 *Note:* With only two strategies to choose from these concepts are the same.
 With more than two, if there is a Dominant strategy this means that all other strategies are dominated by it. We see this in examples below.
@@ -5938,7 +5945,7 @@ Extending this ...
 We know rational players will not play dominated strategies
 The players *themselves* know this.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 \underline{Common Knowledge of Rationality assumption:}
 
@@ -5963,16 +5970,16 @@ ISD example; may yield a unique prediction
 ```
 
 
-```{r  fig.cap = '', out.height='1.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/isd1.png")
 ```
 
-```{r  fig.cap = '', out.height='1.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/isd2.png")
 ```
 
 
-```{r  fig.cap = '', out.height='1.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/isd3.png")
 ```
 
@@ -5994,7 +6001,7 @@ ISD example; may yield a unique prediction
 Market equilibrium (review): given the equilibrium price and quantity, no market participant has an incentive to change his or her behaviour.
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 In strategic settings, a similar concept:
@@ -6020,7 +6027,7 @@ Nash equilibrium (NE)
 1. Inspection: Check each outcome one by one. See if either player has an incentive to *unilaterally* deviate.  If not, it’s an equilibrium.
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 2. Underline method: For each player underline the payoff he would get if he played his best response to each of the other player’s actions. Any outcome where there are *two* underlines is *the outcome of* an equilibrium strategy profile.
@@ -6052,7 +6059,7 @@ yields the single outcome that is clearly NOT pareto optimal. Lesson  group and 
 Find equilibrium via each method:
 
 
-```{r  fig.cap = '', out.height='3.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/pd_normal.png")
 ```
 
@@ -6105,12 +6112,12 @@ Note:  Underline best responses, show no pure strategy NE here
 Pure strategy
 :     Consists of a single action played with certainty
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Mixed strategy
 :     Assigns a probability to each possible action
 
-<br> \bigskip
+<br> <br> \bigskip
 
 *Remember: there is always at least one NE. If there is no pure strategy NE, there will be a NE in mixed strategies.*
 
@@ -6144,7 +6151,7 @@ We want to derive the best response functions, and find the intersection(s) of t
 Let $h$ represent the probability husband chooses Ballet
 
 
-```{r  fig.cap = '', out.height='2.0in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/bosmatrix.png")
 ```
 
@@ -6152,7 +6159,7 @@ Let $h$ represent the probability husband chooses Ballet
 
 - Wife chooses Ballet iff her Expected payoff of Ballet > Expected payoff of Boxing
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 I.e., $2h > 1- h$, i.e, $h > 1/3$
@@ -6176,7 +6183,7 @@ Let w: probability wife chooses Ballet
 
 **Husband's BR:**
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 - Husband chooses Ballet iff his Expected payoff of Ballet > Expected payoff of Boxing
@@ -6208,9 +6215,9 @@ Let w: probability wife chooses Ballet
 
 - Mixed strategies are not about 'being unpredictable'; these are one shot games
 
-`r format_with_col("","RawSienna")` \textcolor{gray}{Some texts and authors make this point about 'unpredictability' but others disagree (including myself). Making sure that it is impossible to predict your later play from your previous is only important if you are playing the same game repeatedly, and being observed.}
+'r format_with_col("","RawSienna")` `r format_with_col("Some texts and authors make this point about 'unpredictability' but others disagree (including myself). Making sure that it is impossible to predict your later play from your previous is only important if you are playing the same game repeatedly, and being observed.","gray")`
 
-`r format_with_col("","RawSienna")` \textcolor{gray}{It makes a bit more sense if we think about 'populations.
+'r format_with_col("","RawSienna")` \textcolor{gray}{It makes a bit more sense if we think about 'populations.
 Suppose in a population 1/3 of men go to Ballet and 2/3 of women go to Ballet:
 ... these ratios are 'stable'; no reason for systematic changes.
 On the other hand, if men always went to boxing and women to ballet this is not stable. A husband would be better off going to ballet ... so the ratios should change over time.}
@@ -6237,7 +6244,7 @@ Payoff to the mixed strategy:
     - Prob(Wife Ballet, Husband Boxing) = $w(1-h) = \frac{2}{3} \times \frac{2}{3} = \frac{4}{9}$
     - Prob(Wife Boxing, Husband Ballet) = $(1-w)(h) = \frac{1}{3} \times \frac{1}{3} = \frac{1}{9}$
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Thus, under the mixed strategy NE play:
 
@@ -6249,7 +6256,7 @@ $$U_{wife} = \frac{2}{3}$$
 
 ## How do you solve a problem like multiple-equilibria?
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Above (BOS), there are three equilibria: both play Boxing, both play Ballet, and the mixed strategy
@@ -6269,7 +6276,7 @@ Above (BOS), there are three equilibria: both play Boxing, both play Ballet, and
 'The Big Game'
 
 
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/coordgame_inlecture.png")
 ```
 
@@ -6334,7 +6341,7 @@ A year after graduating you come back for Alumni Weekend.  You are supposed to m
 *Note:* Remember, it's a one-shot game ... unrealistic within a marriage of course
 
 
-```{r  fig.cap = '', out.height='2.1in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/BOS_sequential.png")
 ```
 
@@ -6360,7 +6367,7 @@ These concerns also apply to politics, and the games can of course include multi
 ***
 
 
-```{r  fig.cap = '', out.height='1.9in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/BOS_sequential.png")
 ```
 
@@ -6388,12 +6395,12 @@ Subgame-Perfect Nash Equilibrium (SPNE)
 Example: BWI for BOS
 
 
-```{r  fig.cap = '', out.height='1.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/bosbwi1.png")
 ```
 
 
-```{r  fig.cap = '', out.height='1.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/bosbwi2.png")
 ```
 
@@ -6403,7 +6410,7 @@ Note that the SPNE in a sequential game always involves 'best responses'. I thin
 
 ***
 
-```{r  fig.cap = '', out.height='1in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/bosbwi1.png")
 ```
 
@@ -6439,12 +6446,12 @@ SPNE:  \{Wife: Ballet; Husband: Ballet, Boxing\}
 
 In 'normal' (matrix form), stating complete contingent strategies:
 
-```{r  fig.cap = '', out.height='1.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/longgame_matrix_full.png")
 ```
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 And the 'abbreviated strategies'; leaving out decision nodes ruled out by a player's own previous choices as specified in the strategy:
 
@@ -6455,7 +6462,7 @@ And the 'abbreviated strategies'; leaving out decision nodes ruled out by a play
 
 ***
 
-```{r  fig.cap = '', out.height='1.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/longgamework_randompayoffs_ul.png")
 ```
 
@@ -6465,7 +6472,7 @@ A: S1, N3, N5
 
 B: s2, n4, n6
 
-<br> \bigskip
+<br> <br> \bigskip
 
 ...
 
@@ -6496,7 +6503,7 @@ Note: For games with multiple stage-game equilibria there may be repeated game e
 ***
 
 
-```{r  fig.cap = '', out.height='1.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/pd_normal.png")
 ```
 
@@ -6508,7 +6515,7 @@ Note: For games with multiple stage-game equilibria there may be repeated game e
 
 Suppose we repeat the Prisoners’ Dilemma a finite (T) number of times, e.g., 10 times.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 - What is the subgame perfect equilibrium?
@@ -6519,7 +6526,7 @@ Suppose we repeat the Prisoners’ Dilemma a finite (T) number of times, e.g., 1
     - ... etc, all the way back to period 1
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Thus each player will Confess in every period.  Not possible to sustain cooperation.
@@ -6579,15 +6586,15 @@ I also know that given his strategy, playing 'silent' in  this period will not h
 
 The payoff from staying Silent (cooperating) each period is:
 
-$$-2 \times (1 + g + g^2 + g^3 + <br> \bigskip )$$
+$$-2 \times (1 + g + g^2 + g^3 + <br> <br> \bigskip )$$
 
 
 
 The payoff from Confessing right away (after which both players Confess always) is:
 
-$$ -1 + -3 \times (g + g^2 + g^3 + <br> \bigskip ) $$
+$$ -1 + -3 \times (g + g^2 + g^3 + <br> <br> \bigskip ) $$
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Formula for a geometric series (where $0<g<1$): $g + g^2 +  g^3 + g^4 ... = g/(1-g)$
 
@@ -6598,25 +6605,25 @@ This formula is an important one in economics (and beyond), particularly for dis
 
 Thus cooperation in a single period is 'weakly preferred' (at least as good) if
 
-$$(-2) \times (1 + g + g^2 + g^3 + <br> \bigskip ) \geq (-1) + -3 \times (g + g^2 + g^3 + \bigskip)$$
+$$(-2) \times (1 + g + g^2 + g^3 + <br> <br> \bigskip ) \geq (-1) + -3 \times (g + g^2 + g^3 + \bigskip)$$
 
-<br> \bigskip
+<br> <br> \bigskip
 
-$$g + g^2 + g^3 + <br> \bigskip \geq 1$$
+$$g + g^2 + g^3 + <br> <br> \bigskip \geq 1$$
 
 Note on intuition for the second formula: left side is loss of future payoffs (-3 vs -2 forever from next period). \
  Right side is gain in that period (get -1 rather than -2))
 
-<br> \bigskip
+<br> <br> \bigskip
 
 $$g/(1-g) \geq 1$$
 
-<br> \bigskip
+<br> <br> \bigskip
 
 $$g \geq \frac{1}{2}$$
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 So, cooperation can be sustained as long as the probability of play continuing is high enough; here, above 1/2.
@@ -6653,11 +6660,11 @@ A general method for finding NE foe continuous games with differentiable payoffs
 
 3. Look for intersection(s) $\rightarrow$ Nash equilibrium (equilibria)
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Source: https://www3.nd.edu/~tjohns20/gametheory_SP13/slides3.pdf}
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 With two players:
@@ -6676,18 +6683,18 @@ Shepherds A and B raise $s_A$ and $s_B$ sheep, respectively, in the same meadow
 
 - More sheep graze $\rightarrow$ the less grass for each, thus less wool/milk/meat per sheep
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Benefit from each sheep raised: $120-s_A-s_B$
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Total benefit from raising $s_A$ and $s_B$ sheep:
 
 - Shepherd A:	$s_A(120-s_A-s_B)$
 - Shepherd B:	$s_B(120-s_A-s_B)$
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Marginal benefit of 'me adding' another sheep:
 
@@ -6707,7 +6714,7 @@ Set the marginal benefit equal to the marginal cost (here zero)
 - Shepherd B:	$120-s_A-2s_B = 0$
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Rearrange the above to solve for the best response functions
 
@@ -6722,7 +6729,7 @@ Solve for the Nash equilibrium:
 
 $$s_A = 60-\frac{1}{2} s_B$$
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Plug this value of $s_A$ into the BRF for B and solve for $s_B$, then for $s_A$
 
@@ -6755,17 +6762,17 @@ Why the “Tragedy” of the Commons?
 
   \
 
-<br> \bigskip
+<br> <br> \bigskip
 
 To maximise *total* payoffs we set $S=s_A+s_B$ to maximise
 $$S\times(120-S)$$
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Concave problem, set first-derivative to zero:
 $$120 - 2S = 0 \rightarrow S^*=60$$
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Leading to total payoff $60 \times (120 - 60) = 3600$.
 - If they split this evenly (each graze 30), they get 1800 each.
@@ -6817,13 +6824,13 @@ E.g., FEELE lab at Exeter
 
 ***
 
-```{r  fig.cap = '', out.height='2.2in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/expeconlab.jpg")
 ```
 
 ***
 
-```{r  fig.cap = '', out.height='2.2in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/ztreePD.png")
 ```
 
@@ -6863,7 +6870,7 @@ Q: What does SPNE predict (use backwards induction)?
 Ans: It predicts the proposal offers the lowest (positive) amount and the responder accepts
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 What happens in experiments?
@@ -6932,7 +6939,7 @@ Another fairly readable and extremely influential (theory) paper:
 - Also see next slides
 ***
 **Additional tutorial problem I (Game theory)**
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/teenchoices.png")
 ```
 Teens A and B are smitten with each other but neither knows of the other’s feelings. Suppose the teachers at their school organize a dance.  The “payoff” is based on whether their advances are rebuffed or accepted.  If they both Declare,  they get positive utility but if they are Rebuffed they face humiliation (significantly negative payoff).  Rebuffing an advance slightly elevates the teen’s standing with peers.
@@ -6940,13 +6947,13 @@ Teens A and B are smitten with each other but neither knows of the other’s fee
 - Find the pure-strategy Nash equilibrium or equilibria
 - Find the mixed strategy equilibrium
 **Additional tutorial problem II (Game theory)**
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/isd4by3game.png")
 ```
 - Apply 'Iterated strict dominance' to the above game, showing your steps
 - State the pure strategies that are rationalizable.
 ** Additional tutorial problem III (Game theory)**
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/entrygame.png")
 ```
 - Use backwards-induction to find the subgame-perfect Nash equilibrium strategies, outcomes, and payoffs, of the above game.
@@ -7100,11 +7107,11 @@ Classical economics assumes
     - Only own consumption matters?
     - No cost to gather information or make calculations?
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Expected utility over gambles/investments, probabilities accurately known
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Geometric discounting of future payoffs with a single (or at least a consistent) discount rate
 
@@ -7113,7 +7120,7 @@ Geometric discounting of future payoffs with a single (or at least a consistent)
  E.g., if $\delta=0.1$ in each period then next period's payoff of 100 is worth as much as $(1-0.1) \times 100 = 90$  today. \
 A payoff of 100 in two periods is worth as much as $(1-0.1) \times 100 = 90$ tomorrow, or as much as $(1-0.1) \times (1-0.1)\times 100 = 81$ today.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Strategic behaviour in interactions
@@ -7150,12 +7157,12 @@ Justifications include:
 
 Relaxes some of the assumptions above, usually one at a time
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Does not typically 'reject rationality' ('bounded rationality')
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Most “behavioral models” involve some sort of optimization (and often equilibrium)
 - There are ‘pure behavioral theorists’ who try to find parsimonious models to explain deviations
@@ -7216,7 +7223,7 @@ There are four general ways people diverge from classical assumptions (text says
 
 *Evidence from Stango and Zinman, 2011*
 
-```{r  fig.cap = '', out.height='1.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/paydayloan.png")
 ```
 
@@ -7237,7 +7244,7 @@ B. Exactly \pounds102
         - Particularly when government 'truth in lending laws' were lax
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 2. Imagine that the interest rate on your savings account was 1\% per year and inflation was 2\% per year. After 1 year, would you be able to buy:
 
@@ -7251,7 +7258,7 @@ B. exactly the same as, or 
 
 C. less than today 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 3.  Do you think that the following statement is true or false? ‘Buying a single company stock usually provides a safer return than a stock mutual fund.’ 
 
@@ -7268,20 +7275,20 @@ Lusardi and Mitchell, 2013; In Germany and Switzerland, just over 50\% get all t
 - Gamble A: an 89\% chance of winning \pounds1 million, a 10\% chance of winning \pounds5 million, and a 1\% chance of winning nothing.
 - Gamble B: \pounds1 million with certainty.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 *Write down: which would you choose?*
 
 \hrulefill
 
-<br> \bigskip
+<br> <br> \bigskip
 
 **Scenario 2. Which would you choose?**
 
 - Gamble C: an 89\% chance of winning nothing and an 11\% chance of winning \pounds 1 million.
 - Gamble D: a 90\% chance of winning nothing and a 10\% chance of winning \pounds5 million.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 *Which would you choose?*
 
@@ -7302,7 +7309,7 @@ $$ \pounds 1k \succ  (\pounds 1k \otimes 0.89 + \pounds 5k \otimes 0.1 + \pounds
 \
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 *But this contradicts Expected Utility theory:*
 
@@ -7327,11 +7334,11 @@ This is an 'independent state of the world'; should have no impact on your decis
 By this logic, the fact that there is a 10\% chance that a meteor destroys England on Friday should not affect my choice \
 of whether to go to a fancy restaurant or get a simple curry on Friday in the 90\% probability case that England is *not* hit.}
 
-<br> \bigskip
+<br> <br> \bigskip
 
 **Explaining it again with pie charts...**
 
-```{r  fig.cap = '', out.height='3.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/allaispies.png")
 ```
 
@@ -7339,16 +7346,16 @@ of whether to go to a fancy restaurant or get a simple curry on Friday in the 90
 
 \footnotesize{A is D plus an additional  89\% chance of £1m}
 
-<br> \bigskip
+<br> <br> \bigskip
 
 \footnotesize{B is C plus an additional 89\% chance of £1m}
 
-<br> \bigskip
+<br> <br> \bigskip
 
 \footnotesize{So "A and B" are "D and C" with \underline{additional 89\% chance of \pounds 1m}}
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 \footnotesize{EU additive} $\rightarrow$: \footnotesize{choice for *remaining* 11\% state ignores \underline{difference}}
 
@@ -7380,7 +7387,7 @@ You get \pounds1000 upfront. \
 
 \hrulefill
 
-<br> \bigskip
+<br> <br> \bigskip
 
 **KT1. Which would you choose?** \
 
@@ -7412,7 +7419,7 @@ You get \pounds2000 upfront. \
 
 - Gamble $D$: Lose \pounds500 with certainty.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 \hrulefill
@@ -7442,7 +7449,7 @@ Seems to depend on how we 'frame' these.
     - or on the starting point, or initial expectations
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 $\rightarrow$ may make decisions to 'avoid losses' \
 that we wouldn't make if we saw it as 'increasing gains'
@@ -7471,7 +7478,7 @@ What leads to the paradoxes and 'inconsistent behaviour'? \
 - Gamble $A$: You have an 50\% chance of winning an additional \pounds1,000.
 - Gamble $B$: An additional \pounds500 with certainty.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 \hrulefill
 
@@ -7483,7 +7490,7 @@ What leads to the paradoxes and 'inconsistent behaviour'? \
 
 \hrulefill
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - In KT1, your reference point may be \pounds1000.
     - Choose between A---a small certain gain and B---a larger uncertain gain; with same EV
@@ -7520,12 +7527,12 @@ Framing effect
 - C: 89\% chance of 0 and 11\% chance of \pounds1,000.
 - D: 90\% chance of 0 and 10\% chance of \pounds5,000.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - Considering A \& B, the ref. point may be close to \pounds1000, as this can be had with certainty.
     -  A seem to 'risk a costly loss of \pounds1000', thus may choose 'safer' $B>A$, notwithstanding its far lower EV (\pounds1000 vs \pounds1390)
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 - Considering D \& C, ref. point may be close to 0, as EV's of each are low, \& 0 is likeliest outcome
@@ -7540,7 +7547,7 @@ Framing effect
 ## Limited willpower and 'hyperbolic discounting'
 
 
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/marshtest.jpg")
 ```
 
@@ -7557,15 +7564,15 @@ Strong results; interpretation debated.
 
 Monday-David wants Tuesday-David to give up 1 marshmallow for 2 marshmallows on Wednesday. \
 
-<br> \bigskip
+<br> <br> \bigskip
 
 `r format_with_col("But Monday-David unwilling to give up 1 marshmallow for 2 marshmallows on Tuesday.","olive")` \
 
-<br> \bigskip
+<br> <br> \bigskip
 
 `r format_with_col("Similarly, Tuesday-David won't give up 1 marshmallow for 2 on Wednesday","brown")`
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - Inconsistency: Monday-David thinks Tuesday-David is acting sub-optimally!
     - Is David acting in his own interest? Can we even define his 'true utility'?
@@ -7575,7 +7582,7 @@ Monday-David wants Tuesday-David to give up 1 marshmallow for 2 marshmallows on 
 Hyperbolic discounting (simple version)
 :     Steep drop in 'weight $w$' on payoffs earned after the current period
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - But constant weight (or constant discounting) for payoffs multiple periods in the future
     - This leads to inconsistencies between 'planned' and chosen behaviour
@@ -7597,7 +7604,7 @@ study very hard on Sunday to be prepared for the whole week, \
 Get a good workout to feel energized the whole week \
 Clean your flat on Sunday .... etc.
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Grasshopper weights payoffs today, tomorrow, and every day the same: $w=1$
 
@@ -7605,7 +7612,7 @@ Grasshopper weights payoffs today, tomorrow, and every day the same: $w=1$
     - payoff(Work) $= -10 + (2 \times 6) = 2$
     - payoff(Lazy) $= -5 + (1 \times 6) = 1$
 
-<br> \bigskip
+<br> <br> \bigskip
 
 Ant always weights payoffs at 1 today and $w=1/2$ on any future day
 
@@ -7613,15 +7620,15 @@ Ant always weights payoffs at 1 today and $w=1/2$ on any future day
     - payoff(Work) $= -10 +(2 \times 6)/2 = -4$
     - payoff(Lazy) $= -5 + (1 \times 6)/2 = -2$
 
-<br> \bigskip
+<br> <br> \bigskip
 
 If Grasshopper were 'choosing for Monday on Sunday', he would choose Work $\rightarrow$ Consistent
 
-<br> \bigskip
+<br> <br> \bigskip
 
 But if Ant were 'choosing for Monday on Sunday', he would choose Work $\rightarrow$ Inconsistent
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - On Sunday he considers
     - payoff(Work Monday) $= (-10 + 2 \times 6)/2 = 1$
@@ -7650,7 +7657,7 @@ But if Ant were 'choosing for Monday on Sunday', he would choose Work $\rightarr
 
 
 
-`r format_with_col("","RawSienna")` \textcolor{gray}{The utilities, and decisions, of family members are highly connected. There is an ongoing debate and research programme considering when to model a household's decisions as 'unitary' and when to consider the individual preferences of the household members.}
+'r format_with_col("","RawSienna")` `r format_with_col("The utilities, and decisions, of family members are highly connected. There is an ongoing debate and research programme considering when to model a household's decisions as 'unitary' and when to consider the individual preferences of the household members.","gray")`
 
 ***
 
@@ -7675,7 +7682,7 @@ But if Ant were 'choosing for Monday on Sunday', he would choose Work $\rightarr
 We can model some forms of other-regarding preferences using standard tools, like indifference curves and budget constraints:
 
 
-```{r  fig.cap = '', out.height='2.7in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/other_regard_IC.png")
 ```
 
@@ -7691,19 +7698,19 @@ We can model some forms of other-regarding preferences using standard tools, lik
 - Motives like 'fairness' may transform monetary payoffs into 'real' payoffs in a straightforward way
     - E.g., in the ultimatum game, suppose player 1's real payoffs are:
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 $$U_1(Y_1,Y_2) = Y_1 - |Y_1-Y_2|$$
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Where $Y_1$ is the amount 1 earns from the ultimatum game, and $Y_2$ is 2's income from this game.
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Similarly for player 2:
@@ -7712,7 +7719,7 @@ Similarly for player 2:
 $$U_2(Y_2,Y_1) = Y_2 - |Y_1-Y_2|$$
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 *Here each player gains 1 unit of utility for each pound they earn, but loses a unit of utility for every pound of difference between the payoffs.*
@@ -7740,7 +7747,7 @@ Using BWI here we see the subgame perfect NE will be that player-1 offers 5 and 
 
 'Envy payoffs'
 
-```{r  fig.cap = '', out.height='3.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/ultimatumenvy.png")
 ```
 
@@ -7757,10 +7764,10 @@ Because of this she will not accept such an offer. Knowing this, player-1 will o
 
 Guth et al. (1982) presented the first experimental test of the ultimatum game.
 
-<br> \bigskip
+<br> <br> \bigskip
 2 players: Proposer and Responder
 
-<br> \bigskip
+<br> <br> \bigskip
 Proposer has a pie of size 1. She must propose a split of the pie between the two players $(1-s, s)$
 
 
@@ -7781,8 +7788,8 @@ login to "elsb2"
 The prize is
 ***
 > This program runs a two-person, bargaining game. In the Dictator version, one person simply decides unilaterally how to split a fixed amount of money. In the Ultimatum treatment, the proposer makes an offer of how to split the money, which the responder either accepts or rejects. An acceptance implements the proposed split, and a rejection results in zero earnings for both.
-<br> \bigskip
-<br> \bigskip
+<br> <br> \bigskip
+<br> <br> \bigskip
 "Random lottery incentive"
 I will randomly choose 1 stage/repetition for 2 participants for payment, and pay based on the actual choices.
 ***
@@ -7823,13 +7830,13 @@ The subgame-perfect Nash equilibrium is found by solving the game backwards:
 
 - Class question: What do you think?
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - 50-50 split is the most common offer
 - Responders tend to reject offers giving them less than 30\%, even when this is a lot of money
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Potential explanations
@@ -7840,7 +7847,7 @@ Potential explanations
 
 ***
 
-```{r  fig.cap = '', out.height='3.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/ult_table.pdf")
 ```
 
@@ -7850,7 +7857,7 @@ In a variety of cultures and contexts (Henrich et al, 2006):
 
 \
 
-```{r  fig.cap = '', out.height='3.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/ultimatumgameoffers_Science.png")
 ```
 
@@ -7918,18 +7925,18 @@ Do they  commit more 'before' than they give 'after', or vice versa, or are thes
 
 **One field experiment: Essex UG students**
 
-<br> \bigskip
+<br> <br> \bigskip
 
-\textbf{Emails from DAs on behalf of FSS}
+**Emails from DAs on behalf of FSS**
 
 \texttt{\footnotesize Subject: Employability promotion -- a 1 in 4 chance of winning a £20 prize for doing a short survey.}
-<br> \bigskip
+<br> <br> \bigskip
 
 \texttt{\footnotesize Text: Please go to [*web site*] --  we have 80 free dinners for two in Colchester to give away, worth £20 each and at least 40 £20 Amazon vouchers!! If you log on, you will have a one in four overall chance of winning one of these prizes!}
 
-<br> \bigskip
+<br> <br> \bigskip
 
-Details:  `r format_with_col("2 rounds over 2 academic years","gray")`. \textcolor{gray}{2 prizes in round 1, Amazon  only in round 2.}  \textcolor{gray}{First covering Faculty of Social Science, then all departments.} \textcolor{gray}{Sign in with email, orthogonal employability treatments.}
+Details:  'r format_with_col("2 rounds over 2 academic years","gray")`. `r format_with_col("2 prizes in round 1, Amazon  only in round 2.","gray")`  \textcolor{gray}{First covering Faculty of Social Science, then all departments.} \textcolor{gray}{Sign in with email, orthogonal employability treatments.}
 
 $\rightarrow$ 352 valid responses with donation opportunities
 
@@ -7957,14 +7964,14 @@ $\rightarrow$ 352 valid responses with donation opportunities
 
 **Results:**  In a variety of experiments, donation incidence and amounts are often higher and never lower in the Before treatment. This is statistically significant in two of five experiments and in the 'pooled' data.
 
-```{r  fig.cap = '', out.height='3in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/BarGrDonpropHiBefore_vAfter.png")
 ```
 
 
 `r format_with_col(" see <https://davidreinstein.wordpress.com/research-and-publications/> under 'working papers'","RawSienna")`
 
-<br> \bigskip
+<br> <br> \bigskip
 
 More details of this project at giveifyouwin.org
 
@@ -8026,12 +8033,12 @@ Answer...
 1. As long as money payoffs are in my favour, I don't have envy, so maximise these if possible
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 2. So proposer will make smallest offer that responder will accept, presuming this is at or below 5
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 3. Responder accepts as long as Earnings - difference in earnings is at or above 0
@@ -8049,7 +8056,7 @@ Answer...
 
 - The Allais Paradox: setup, evidence, explanations
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 [comment]: <> (101BB)
@@ -8064,18 +8071,18 @@ Answer...
 - 'Solving converted games'
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 - Some sense of the evidence 'for behavioral economics' in general
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 - Evidence on voluntary public goods provision and charitable giving (lab, field, etc) and factors leading to greater provision of each
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 - Relevance of 'behavioural biases' for public policy and business
@@ -8095,7 +8102,7 @@ Answer...
 
 - [Nudge database](https://www.stir.ac.uk/media/schools/management/documents/economics/Nudge%20Database%201.2.pdf)
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Also see popular books and web-tools by Dan Ariely ('Arming the Donkeys'), Richard Thaler, etc.
@@ -8141,26 +8148,26 @@ pp. 563–579
 **On charitable giving:**
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 Behavioural Insights Team ['Applying behavioural insights to charitable giving'](http://www.behaviouralinsights.co.uk/publications/applying-behavioural-insights-to-charitable-giving/)
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 
 Ideas42: [Behavior and charitable Giving](http://www.ideas42.org/wp-content/uploads/2016/06/Behavior-and-Charitable-Giving_ideas42.pdf)
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 \url{Giveifyouwin.org}: Discussion of loss aversion, other biases, in the context of charitable giving ... see also \url{innovationsinfundraising.org}
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 List (2011). Econ Perspectives or List (2008, ExpEcon), “Introduction to field experiments in economics with applications to the economics of charity"
 
@@ -8178,7 +8185,7 @@ List (2011). Econ Perspectives or List (2008, ExpEcon), “Introduction to field
 - Huck, Steffen, and Wieland Müller. "Allais for all: Revisiting the paradox in a large representative sample." Journal of Risk and Uncertainty 44.3 (2012): 261-293.
 APA
 
-<br> \bigskip
+<br> <br> \bigskip
 
 See also  [Misweighting probabilities](http://lesswrong.com/lw/ml/but_theres_still_a_chance_right/) ...many useful readings on LessWrong.org
 
@@ -8190,7 +8197,7 @@ See also  [Misweighting probabilities](http://lesswrong.com/lw/ml/but_theres_sti
 ### Additional relevant questions {-}
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 **(25 marks)   Describe a typical 'public goods' experiment, and some standard results. To what extent are these findings relevant for real world policymaking? Explain.  Please write \textit{clearly} and \underline{concisely}.**
@@ -8199,7 +8206,7 @@ See also  [Misweighting probabilities](http://lesswrong.com/lw/ml/but_theres_sti
 
 *Describe a typical 'public goods' experiment, and some standard results.*
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 - Significant cooperation/contributions (counter to  dominant-strategy prediction)
@@ -8209,17 +8216,17 @@ See also  [Misweighting probabilities](http://lesswrong.com/lw/ml/but_theres_sti
 - Declines with repetition but not to zero
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 - More cooperation when groups/players are kept constant than when meeting 'strangers' each time
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 - Factors such as communication, higher return rates, smaller groups increase cooperation
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 - Allowing sanctioning can sometimes improve contributions
@@ -8305,10 +8312,10 @@ People seem to act to maximise targets and avoid losses relative to reference po
 
 **(25 marks)  For \textit{TWO} of the major departures above, give a \textit{specific example} of such behaviour, and briefly describe the nature of the evidence for this, and present one behavioural economics model explaining this behaviour.**
 
-\textbf{First departure I am discussing: 'Inconsistent, changing, and 'non-outcome-based' preferences'}
+**First departure I am discussing: 'Inconsistent, changing, and 'non-outcome-based' preferences'**
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 **'Specific example of behaviour'**
 
@@ -8345,7 +8352,7 @@ $\rightarrow$ $0.11 \: U(1m) >  0.1 U(5m) + 0.01 \: U(0)$
 \medskip
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 
 However,  if $D \succ C$ then $EU(D)>EU(C)$
@@ -8369,7 +8376,7 @@ Contradicting the above!
 
 \textit{Why do many people choose B over A and D over C?}
 
-<br> \bigskip
+<br> <br> \bigskip
 
 \underline{One theory: Loss aversion/Prospect theory}
 
@@ -8380,7 +8387,7 @@ Theory: People evaluate outcomes relative to \textit{reference points}. Falling 
 
 ***
 
-<br> \bigskip
+<br> <br> \bigskip
 
 \textit{Applying this to the example above ... (Allais Paradox)}
 
@@ -8389,7 +8396,7 @@ Theory: People evaluate outcomes relative to \textit{reference points}. Falling 
     -  A seems to 'risk a costly loss of \pounds1000', thus may choose 'safer' $B>A$, notwithstanding its far lower EV (\pounds1000 vs \pounds1390)
 
 
-<br> \bigskip
+<br> <br> \bigskip
 
 - Considering D \& C, ref. point may be close to 0, as EV's of each are low, \& 0 is likeliest outcome
 

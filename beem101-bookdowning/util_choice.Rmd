@@ -230,6 +230,7 @@ When we deal with *uncertain* choices, the 'Von Neuman - Morgenstern' utility fu
 
 Completeness and transitivity (and continuity)  are necessary for people's choices to be represented by (continuous) *utility functions*. Nonsatiation will help us derive results.
 
+
 ```
 
 ***
@@ -411,6 +412,19 @@ The third axiom (nonsatiation) makes the maths more convenient, and is necessary
 
 Strictly, most results only require 'local nonsatiation'; starting from any consumption point, increasing the amount of *some  good by a tiny $\epsilon$ amount will yield a preferred point. This will yield results like 'people will spend all of their wealth' and '(roughly) people will never buy a more expensive bundle when a cheaper bundle is preferred.'
 
+With differentiable utility function $u(\mathbf(x))$, a function of vector $\mathbf{x}=(x_i,...x_n)$...
+
+Global nonsatiation is simply defined as:
+  
+$$\frac{\partial u(\mathbf{x})}{\partial x_i}>0 \forall i=1,...,n$$.
+
+\
+
+Local nonsatiation is simply defined as:
+  
+  
+$$\frac{\partial u(\mathbf{x})}{\partial x_i}>0$$ for some $i=1,...,n$.
+
 ```
 
 <br>
@@ -450,7 +464,9 @@ Answer: ^[for example, when we discuss some examples of [perfect complements](pe
 
 E.g., if I have lexicographic preference over houses each category of a house is considered in order. I may prefer the largest house no matter what. If both houses are the same size, I prefer the house closest to my work. If both are the same size and equidistant from work, I prefer the house with more sunlight, etc.
 
-This is not continuous; consider two houses of 800 sq ft, but A is 1 mile closer to my work than B. The 'epsilon-ball' around the characteristics of B must include the characteristic 800+$\epsilon$ square feet. But any such house would be *preferred* to A.
+This is not continuous. Continuity requires that if $A \succ B$ there is some 'epsilon ball' containing all points with a 'tiny distance' from $B$ such that $A$ is also preferred to all points in this 'epsilon ball'.
+
+Consider two houses of 800 sq ft, but A is 1 mile closer to my work than B. The 'epsilon-ball' around the characteristics of B must include the characteristic $800 +\epsilon$ square feet. But any such house would be *preferred* to A.
 
 In fact, lexicographic preferences (in a continuous product space) *cannot* be represented by a utility function. (There is a good discussion of this in Gravelle and Reese appendix 1.)
 
@@ -576,8 +592,8 @@ Considering figure \@ref(fig:indifcurve)
 'shares of bundles A and D adding up to 1' (e.g., 1/3 of D and 2/3 of A)
 or
 'trading a fraction of bundle D for the same fraction of bundle A, and vice versa.'
+
 E.g., a 50-50 split of each bundle yields, in this case, (6+2)/2 = 4 hamburgers and (2+6)/2=4 soft drinks.
-```
 
 ```{block2,  type='note'}
 
@@ -615,7 +631,7 @@ $MRS(X,Y)=-\frac{dY}{dX}|U(X,Y)=U_1$, the absolute value of the total derivative
 
 \
 
-- Moving from A to B: She is willing to give up 2 burgers to get 1 more soda.
+- Moving from A to B: She is willing to give up 2 hamburgers to get 1 more soda.
     - $\rightarrow$  Here the slope $-2$, implying a $MRS=2$ ^[Because we take the absolute value, i.e., the magnitude of the slope expressed as a positive number.]
 - From B to C? (think about it)
     - willing to give up 1 hamburger to get 1 more soda $\rightarrow MRS =1$
@@ -639,7 +655,7 @@ $MRS(X,Y)=-\frac{dY}{dX}|U(X,Y)=U_1$, the absolute value of the total derivative
  knitr::include_graphics("picsfigs/indifcurvebalance.png")
 ```
 
-This 'preference for variety' is thought to hold for most combinations of goods, most of the time, but probably not for all pairings^[This  assumption generally makes it easier to find solutions where people consume both goods, and will imply smooth reactions to price changes.
+This 'preference for variety' is thought to hold for most combinations of goods, most of the time, but probably not for all pairings^[This  assumption generally makes it easier to find solutions where people consume both goods, and will imply a demand function exists, and it has smooth reactions to price changes.
 An extreme case is where each good is an 'absolute necessity', so as its consumption goes to zero its marginal utility goes to infinity; here people must consume some of *each* good no matter the price.
 
 
@@ -687,6 +703,15 @@ We also describe it as having 'a convex upper contour set': the set of all bundl
 
 One reason economists like this 'quasiconcavity' is because it rules out the 'false summits',
 the local, but not global optima, so we only need to use the first-order conditions to find the optima. (*But is this '[looking under the streetlight](https://en.wikipedia.org/wiki/Streetlight_effect) to find our keys' or is it truly without loss of generality?*)
+
+
+\ 
+
+Without quasiconcavity there may also be no demand *function* only a *demand correspondence*: at a given price and income there may be more than one optimising choice!
+
+`r format_with_col("Can you illustrate this with 'double-humped' indifference curves", "blue")
+
+\
 
 
 Gravelle and Reese appendix, on constrained optimisation:
@@ -948,10 +973,10 @@ Thus the original point could not have been optimal!
 
 Suppose that at the consumption bundle you choose your MRS = 1. To remain indifferent, you would be willing to give up 1 hamburger to get 1 soda.
 
-Suppose the price of soda is £1 and the price of a burger is £2. $\rightarrow$ Price ratio: $P_S/P_B = 1/2$
+Suppose the price of soda is £1 and the price of a hamburger is £2. $\rightarrow$ Price ratio: $P_S/P_B = 1/2$
 
-Thus if you buy one less burger you can buy two more sodas.
-Thus if you give up one burger, you can get one more soda to keep you indifferent *plus* an additional soda.
+Thus if you buy one less hamburger you can buy two more sodas.
+Thus if you give up one hamburger, you can get one more soda to keep you indifferent *plus* an additional soda.
 This means you would be better off; thus the original bundle *wasn't* optimal.
 
 `r format_with_col("Practice question: in which direction would you adjust this bundle if the price of a soda was £2 and a hamburger was £1? Explain.","blue")`
@@ -1090,6 +1115,33 @@ See Autor notes ([Lecture 4: Theory of Choice and Individual Demand](https://dsp
 ```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/solutioninngoods.png")
 ```
+
+We could have derived this without the Lagrangian, simply substituting in the constraint for one good:
+
+$$x=\frac{I-yp_y- ....}{p_x}$$ ... subtracting the expense on all other goods.
+
+And then solving this unconstrained problem. Taking the derivative of the solved optimum this with respect to the income term $I$ will give us a similar expression as $\lambda$, expressing the 'shadow value'... the increase in utility for an increase in income.
+
+\
+
+The conditions for an optimum can also be written in vector notation as:
+
+
+$$\nabla U(\mathbf{x^\ast})= \lambda\mathbf{p}$$
+
+
+The 'gradient vector' of the partial derivatives of utility wrt each element of $x$, evaluated at the optimum will be proportional to the vector of prices.
+
+When two vectors $\mathbf{A}$ and $\mathbf{B}$ are in the same direction, i.e., $\mathbf{A}=c\mathbf{B}$, no matter their length, the *planes* perpendicular to this vector are the same plane. (And all vectors *along* those planes are perpendicular to vectors $\mathbf{A}$ and $\mathbf{B}$).
+
+
+\
+
+This implies that at optimum 'the rate of increase in utility is greatest in the direction of the vector tangent to the budget line (plane)'...
+
+Which tells us that the plane tangent to the '(multi-dimensional) indifference surface' at this point is the budget plane. 
+
+\
 
 ### NS App 2.4: ticket scalping {-#scalping}
 
@@ -1524,6 +1576,6 @@ Representation of the MRS between all goods as a matrix, depicting the propertie
 - Strict quasi-concavity takes the place of DMRS in ensuring 'simple optimisation conditions'
 
 
-## Tutorial/practice problems: see VLE, or watch this space (coming VERY) soon)
+## Tutorial/practice problems: see below
 
 
