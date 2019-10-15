@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>4 The Demand function (L3) | Microeconomics (MSc)</title>
   <meta name="description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
-  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.14.1 and GitBook 2.6.7" />
 
   <meta property="og:title" content="4 The Demand function (L3) | Microeconomics (MSc)" />
   <meta property="og:type" content="book" />
@@ -24,15 +24,15 @@
 <meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
 
 
-<meta name="date" content="2019-10-09" />
+<meta name="date" content="2019-10-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="util-choice.html">
-<link rel="next" href="note-further-sections-to-be-added-as-we-progress.html">
+<link rel="prev" href="util-choice.html"/>
+<link rel="next" href="note-further-sections-to-be-added-as-we-progress.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -40,6 +40,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -155,7 +158,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.3" data-path="note.html"><a href="note.html#this-handout-web-book-online-resource"><i class="fa fa-check"></i><b>1.3</b> This ‘handout’/ web-book/ online resource</a></li>
 <li class="chapter" data-level="1.4" data-path="note.html"><a href="note.html#outline"><i class="fa fa-check"></i><b>1.4</b> Outline and description of module</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction to the module and ‘housekeeping’</a><ul>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction/‘housekeeping’, overview, models, maths, fundamentals</a><ul>
 <li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#the-first-chunk-aims-to-cover"><i class="fa fa-check"></i>The first chunk aims to cover:</a></li>
 <li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#me"><i class="fa fa-check"></i>Me</a></li>
 <li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#this-module"><i class="fa fa-check"></i>This module</a></li>
@@ -236,7 +239,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="5" data-path="note-further-sections-to-be-added-as-we-progress.html"><a href="note-further-sections-to-be-added-as-we-progress.html"><i class="fa fa-check"></i><b>5</b> Note: Further sections to be added as we progress</a></li>
 <li class="chapter" data-level="6" data-path="problemsets.html"><a href="problemsets.html"><i class="fa fa-check"></i><b>6</b> Problem sets</a><ul>
-<li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html#ps1"><i class="fa fa-check"></i>First problem set: Mathematical approaches, economic models, revision and warm-up</a></li>
+<li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html#ps1"><i class="fa fa-check"></i>First problem set: Mathematical approaches, economic models, revision and warm-up, concepts in consumer theory</a></li>
+<li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html#ps1_w_ans"><i class="fa fa-check"></i>First problem set with suggested answer guidelines: Mathematical approaches, economic models, revision and warm-up, concepts in consumer theory</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
@@ -536,12 +540,14 @@ The marginal change in expenditure as <span class="math inline">\(j\)</span>’s
 <p><img src="picsfigs/axioms.png" width="75%" style="display: block; margin: auto;" /></p>
 <p><br> <br> </p>
 <p>Indirect utility function: the (max) utility you can get as a function of your income and prevailing prices.</p>
-<p><span class="math display">\[V(p_x,p_y,I_0)\]</span></p>
+<p><span class="math display">\[V(p_x,p_y,I_0)=max_{x,y}U(x,y) \text{ s.t. }  p_xx+p_yy\leq I\]</span></p>
+<p>Here this is the <em>max</em> and not the <em>argmax</em> … it’s the actual <em>utility</em> level not the consumption level(s). (The consumption levels are the <em>Marshallian</em> demand.)</p>
 <p><em>We can find by solving for the utility-maximising choices, and then plugging these in to compute the utility from these.</em></p>
 <p><br> <br> </p>
 <p>Expenditure function: How much income you need to to get a certain utility given prevailing prices.</p>
-<p><span class="math display">\[E(p_x,p_y,U_0)\]</span></p>
-<p>Hicksian (compensated) Demand for X: The amount of X I consume in a ‘minimising expenditure’ bundle that yields some level of utility (<span class="math inline">\(U_0\)</span>)</p>
+<p><span class="math display">\[E(p_x,p_y,U_0)=min(p_xx+p_yy) \text{ s.t. } U(x,y) \geq U_0\]</span></p>
+<p><em>Min</em> and not <em>argmin</em> … the expenditure amount
+Hicksian (compensated) Demand for X: The amount of X I consume in a ‘minimising expenditure’ bundle that yields some level of utility (<span class="math inline">\(U_0\)</span>)</p>
 <p><em>Note:</em>
 These functions are actually used in ‘structural’ estimates of demand used in merger analysis, pricing, litigation consulting, etc.</p>
 <p><br />
@@ -727,13 +733,16 @@ according to the <em>actual opportunity cost</em> of that commodity, not measure
 <p><font color='blue'>Potential ‘expansive’ exam question: Consider the <em>benefits</em> of in-kind programmes rather than cash transfers.</font></p>
 <p><br />
 </p>
-<p>I’ve added some supplementary powerpoint slides on taxation to the VLE</p>
-<p>Supplementary slides on taxation - powerpoint on VLE</p>
+<p>I’ve put up some supplementary powerpoint slides on taxation and subsidies</p>
+<p>Supplementary slides on taxation and subsidies - powerpoint on VLE - download it and view it in presenter mode!</p>
 <ul>
-<li><p><a href="https://www.dropbox.com/s/bac0ieupb5sjdlh/beem101_taxation_subsidy_supplement.ppt?dl=0">taxation, excess burden</a></p></li>
-<li><p><a href="https://www.dropbox.com/s/13oapcmn1r9gc2x/subsidy%20illustration.pptx?dl=">inefficiency of a price subsidy</a></p></li>
-<li><p>See esp ‘excess burden of milk tax’</p></li>
+<li><a href="https://www.dropbox.com/s/13oapcmn1r9gc2x/subsidy%20illustration.pptx?dl=">inefficiency of a price subsidy</a></li>
 </ul>
+<p>… This one should be largely self-explanatory</p>
+<ul>
+<li><a href="https://www.dropbox.com/s/bac0ieupb5sjdlh/beem101_taxation_subsidy_supplement.ppt?dl=0">taxation, excess burden</a></li>
+</ul>
+<p>… See esp ‘excess burden of milk tax’. Note some concepts from production and general equilibrium are referred to; you may want to come back to these slides later</p>
 <p><br />
 </p>
 </div>
@@ -747,8 +756,8 @@ according to the <em>actual opportunity cost</em> of that commodity, not measure
 <li><p>Gift-givers will not know the recipients exact preferences, and will typically buy gifts the recipient would not themselves have purchased. This implies recipients have other items they would gain more for utility from at the same cost.</p></li>
 <li><p>Giving a cash gift would thus allow them to better optimize, thus put them on a higher indifference curve (higher utility).</p></li>
 <li><p>He depicts an indifference curve between a ‘gift good’ and ‘other goods’ and compares this to a rotation in the budget constraint to a shift outwards.</p></li>
+<li><p>see powerpoint; <a href="https://www.dropbox.com/s/13oapcmn1r9gc2x/subsidy%20illustration.pptx?dl=">inefficiency of a price subsidy</a></p></li>
 </ul>
-<p>(see powerpoint)</p>
 <p><br />
 </p>
 <p>Waldfogel collected evidence from surveying university students, asking them to estimate/state</p>
@@ -832,6 +841,7 @@ Thus, as quantity-demanded for good A typically goes in the <em>opposite</em> di
 
 <p><br />
 </p>
+<p><em>More advanced…</em></p>
 <p>Cross-price <em>(net) substitution effects</em>: impact of a <em>compensated</em> change in <span class="math inline">\(P_A\)</span> on consumption of good B.</p>
 <p>At the margin:</p>
 <p><span class="math display">\[ \frac{\partial h_\ell}{\partial p_k} =  \frac{\partial d_\ell}{\partial p_k}+\frac{\partial d_\ell}{\partial I}\ell\]</span></p>
@@ -1248,11 +1258,13 @@ A caveat is that it might do this for a long term strategic advantage; e.g., to 
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -1296,8 +1308,9 @@ gitbook.start({
     script.type = "text/javascript";
     var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(src))
-      src = src.replace(/^https?:/, '');
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();

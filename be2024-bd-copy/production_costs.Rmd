@@ -1,0 +1,341 @@
+# Production and costs (brief coverage)(L4) {#production-costs}
+
+
+## Lecture  (30 min) - Production and costs (brief treatment: coverage)
+
+
+<!---
+Todo: desperately need motivation here
+-->
+
+Our coverage of the production function, inputs, and the firm's cost structure is somewhat brief.
+
+
+<br> <br> \bigskip
+
+Key issues are highlighted here.
+
+I'm giving you the 'basic idea' so we can continue the *story.*
+
+
+<br> <br> \bigskip
+
+Recommendation: Read the following parts of NS Text ch 6-7; you can skip the parts not mentioned and skip the applications
+
+NS Ch 6:
+
+- Production function (at least the basic idea)
+
+- Returns to scale (!)
+
+- Basic cost concepts (!)
+
+- 'Cost minimising input choice' (understand key principle of 'bang-for-the-buck' equalisation)
+
+- Cost curves (!)
+
+
+... to help understand the key concepts in following chunks
+***
+
+**In standard neo-classical economics the firm (each firm)  is treated as a unified decisionmaker whose goal is to maximise profits**
+
+... this profit-maximization assumption 'leads to predictions of firm behaviour which are time and again bourne out by the evidence'^[Quote from Jehle and Remy's 'Advanced Microeconomic Theory', 2011]
+
+## The Firm's Production function
+
+
+- A production function is a mathematical relationship between inputs (capital, labour, materials, etc.) and outputs.
+
+<br> <br> \bigskip
+
+$$q = f( K, L, M, ...)$$
+
+
+$$q = f(K, L)$$
+
+
+- e.g., $q =2L^{1/3}K^{2/3}$
+
+- Given its production choice, the firm tries to produce it at the minimum cost
+    - This resembles a consumer maximizing utility subject to budget constraints^[A major difference: a firm *also* chooses the *level* of output, while the consumer has a fixed budget constraint ... we return to the firm in later sections.]
+
+
+<!---
+Todo: give an example here... consider 'how much labour will the firm hire'? Maybe something about automation and a guaranteed living wage?
+-->
+
+<br> <br> \bigskip
+
+
+
+## Cost minimizing input choice
+
+Typically, a particular quantity ($q$) could be produced with several different combinations of inputs. E.g., smoothies are produced with labour (employees), technology (blenders, robots perhaps, refrigerators), and raw materials (fruit, ice, yoghurt etc).
+
+\
+
+
+*Which combination will the firm choose?*
+
+
+$$q = f(K,L,...)$$
+
+
+**Main point**: Whatever $q$ it wants to produce, the firm uses the *minimum cost combination of inputs*!
+
+It chooses inputs to get the best 'bang for the buck';
+
+
+$\rightarrow$ where the input mix is optimal, each input yields the same *marginal product per £*
+
+\
+
+\
+
+**Key definitions and results:**
+
+
+These results follow from the *same logic we used when considering utility maximisation*!
+
+\
+
+Consider any combination of (say, two) inputs (capital and labor, K and L) and the output this yields.
+
+- At any such point the firm can 'substitute capital for labour (and hold production constant)
+
+    - This rate it can substitute one for another, at a certain point (K,L)  is called the '(marginal) rate of technical substitution' or $RTS(K,L)$
+
+    - This will equal the ratio of the 'marginal product of labour' ($MP_L$) and the 'marginal product of capital' ($MP_K$)
+
+- When the firm chooses inputs optimally (and where it uses both), it chooses K and L to set the $MRT(K,L)$ equal to the price ratio of these inputs ($w/r$... wages $w$ per unit of for labor, rent $r$ per unit of capital).
+
+- 'Same bang for the buck at optimal choices $K^*$ and $L^*$' i.e.:^[Of course there can be 'corner solutions' as in the consumer case, where you optimally use *none* of one input]
+
+$$\frac{MP_K(K^*,L^*)}{r}= \frac{MP_L(K^*,L^*)}{w}$$
+
+\
+
+
+Also, if markets for labour and capital are *(perfectly) competitive*, when we consider the *price* of each outputs:
+
+- this 'bang for the buck' (measured in terms of revenue) will be the same *for all inputs and for all production processes*
+
+- Inputs (workers, owners of capital) in *every industry* will be paid based on their (marginal) productivity ...
+    - E.g, if workers were being paid less than their marginal productivity, they would be 'hired away' by another producer, ultimately raising wages until these equal the marginal productivity, the marginal contribution to revenue
+
+<!--
+```{block2,  type='note'}
+
+2019: I will not really ask specific questions about this on the assessment, but you should know it, to help you understand how the model fits together, and the results on the efficiency of the market economy.
+```
+-->
+
+<br> <br> \bigskip
+
+
+`r format_with_col("This is very similar to the consumer optimization we discussed. For a given total input cost, the firm wants to produce as much as possible. A better way of thinking about this is that for a given production, the firm wants to incur as low a cost as possible. However, there is no 'hard budget constraint' as in the consumer optimisation case. The firm's output choice will be chosen to maximise it's profit, with no constraints other than 'non-negativity'. ","gray")`
+
+\
+
+
+<!---
+Todo: give more explanation here
+-->
+
+**Summing up**: Optimisation (given a production function and input prices)...
+
+yields a (minimum) cost for every output $q$ a firm chooses to produce.
+
+
+\
+
+## Types of costs ('Basic cost concepts')
+
+
+Fixed costs (FC)
+:     Costs that must be regularly incurred to *remain* in business (i.e., for any level of output), but that do not vary with the level of output
+
+\
+
+Variable costs (VC)
+:    Costs that increase with the quantity produced.
+
+\
+
+Sunk costs
+:     Costs that have been incurred in the past that can never be recovered.
+
+- Sunk costs should not enter into *any* economic decisions.
+- FC from previous years are sunk costs; FC for future years are not.
+
+\
+
+```{block2,  type='note'}
+
+In 2019 we are skipping the discussion of the short-run here: we will assume all inputs can be adjusted.
+
+```
+\
+
+
+Total cost function: $c(q)$ or $TC(q)$.
+
+
+**Total costs** are fixed costs plus variable costs
+
+- **Fixed costs:** must be incurred to produce even the first unit (e.g., hire factory space)
+
+- **Variable costs:** increase as one produces more units
+
+
+***
+
+
+**Marginal cost** $MC(q)=c'(q)$: rate that costs increase in quantity; the derivative of the cost function
+
+- cost of producing one additional unit (given that you already produced q units)
+
+
+
+\
+
+
+**'Average cost'** $AC=c(q)/q$: the production cost per unit produced
+
+
+`r format_with_col("Average costs are also the total ‘rise over run’ for the TC curve at a given quantity as the firm optimally chooses its inputs.","gray")`
+
+Average costs (for a firm) may be increasing or decreasing in quantity. This depends on the *returns to scale*.
+
+\
+
+
+Returns to scale
+:     The rate at which output increases in response to a proportional increase in *all* inputs.
+
+
+\
+
+Constant returns to scale (CRS)
+:     If inputs increase by a factor of X, output increases by a factor equal to X.
+
+- E.g., doubling all inputs (labour, capital, land, etc) means exactly doubling all outputs
+
+
+
+
+
+Increasing returns to scale (IRS)
+:     If inputs increase by a factor of X, output increases by a factor greater than X.
+
+
+
+Decreasing returns to scale (DRS)
+:     If inputs increase by a factor of X, output increases by a factor less than X.
+
+
+\
+
+- Increasing average costs $\leftrightarrow$ Decreasing returns to scale
+
+
+- Decreasing average costs $\leftrightarrow$ Increasing returns to scale
+
+
+- Constant average costs $\leftrightarrow$ Constant returns to scale
+
+
+<br> <br> \bigskip
+
+`r format_with_col("Consider: why/when would we expect DRS/IRS/CRS?","blue")` (We discuss this [further below](IRS-DRS-reasons).)
+
+\
+
+The shape of the marginal cost curve depends on the production function
+
+- Constant returns to scale: constant MC (and no FC)
+
+- Decreasing returns to scale: increasing MC
+
+- Increasing returns to scale: decreasing MC (and/or constant FC)
+
+
+\
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/crsTCcurve.png")
+```
+
+\
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/crscostcurves.png")
+```
+
+\
+
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/drsTCcurve.png")
+```
+
+\
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/drscostcurves.png")
+```
+
+\
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/irsTCcurve.png")
+```
+
+\
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/irscosts_fix.png")
+```
+
+\
+
+
+
+## Returns to scale {#rts}
+
+*Are bigger firms always more efficient? Do things get cheaper to produce the more we produce?*
+
+
+If so, what limits the size of firms? I.e., why don't we see only one firm in each industry?
+
+
+
+### Arguments/reasons for scale (dis)economies {-#IRS-DRS-reasons}
+
+**IRS**
+
+- Fixed costs (incorporation, buildings, management, planning, R\&D) spread over more units
+- Should always be able to at least 'double everything' and produce twice as much? (so at least CRS)
+- Scale allows specialisation
+
+
+
+
+**DRS**
+
+- Limited resources in whole (or local) economy; costs begin to rise
+- Managerial issues and coordination problems, bigger 'centre' to lobby for favours
+    - (See 'theories of the firm')
+- Harder to give incentives to top manager/CEO?
+    - Larger firm $\rightarrow$ harder to make CEO liable for losses
+
+
+`r format_with_col("Advanced footnote","RawSienna")`^[ I think the first point is valid, but it doesn't suggest that 2 firms would be more efficient than 1; these DRS would set in as a function of  *total* output, not a single firm's output. The second and third arguments are complicated and perhaps harder to justify. The case for DRS is unproven, IMHO]
+
+\
+
+`r format_with_col("Mock exam question:
+Give one reason why production may exhibit 'increasing returns to scale' and one reason why it may have 'decreasing returns to scale'.", "gray")`
+
+

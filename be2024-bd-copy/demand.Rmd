@@ -107,7 +107,7 @@ This relates to the puzzle of 'why should monetary policy and inflation have any
 
 ## Response to income changes
 
- `r format_with_col("Q: What happens to the quantity purchased of some good as an individual's income increases?","blue")`
+`r format_with_col("Q: What happens to the quantity purchased of some good as an individual's income increases?","blue")`
 
 \
 
@@ -362,15 +362,14 @@ Todo: Motivate this more
 -->
 
 
-## App 3.2: The CPI and its biases {#cpi}
+## NS App 3.2: The CPI and its biases {#cpi}
 
 The government (and many others) want to know 'how much less (or more) is  a pound this year than a pound in the past?'
 One of the most prominent measures of this is the "consumer price index (CPI)." This a *very* important number: It is used for monetary policy ('inflation targeting') and for targeting many salaries and benefits. For example, my union is always raising the complaint that salaries have not risen in line with inflation. (But don't worry, student fees have done.)
 
 Getting this number substantially and consistently wrong can lead to huge problems;  people may be let into poverty or the government may be led into default. However, it is hard to get this measure right. Using the classical economics framework, we can consider what this means.
 
-
-The UK uses a similar CPI measure to the USA (a change from the 'RPI' in 2003, although RPI is still used for some things). The Bank of England targets a 2\% increase in the CPI per year.^[Something to know: what has been the  inflation rate in recent years? This is an example of 'market and industry knowledge'  that employers value. True, you can look this stuff up, but having a general sense of these things rolling around in your brain will  ground your thinking.  As an analogy, suppose you were a mariner navigating the seven seas and you had to go online every time to remember which direction was North or South.]
+The UK uses a similar CPI measure to the USA.^[a change from the 'RPI' in 2003, although RPI is still used for some things] The Bank of England targets a 2\% increase in the CPI per year.^[Something to know: what has been the  inflation rate in recent years? This is an example of 'market and industry knowledge'  that employers value. True, you can look this stuff up, but having a general sense of these things rolling around in your brain will  ground your thinking.  As an analogy, suppose you were a mariner navigating the seven seas and you had to go online every time to remember which direction was North or South.]
 
 \
 
@@ -644,12 +643,15 @@ Consumer surplus
  knitr::include_graphics("picsfigs/cons_surplus.png")
 ```
 
+```{block2,  type='technote'}
 
-`r format_with_col("Advanced maths note","RawSienna")`^[With a linear demand curve this is a triangle, which has an area that is easy to compute. More generally, this is a `definite integral'.]
-
-Also...^[This can be applied to the individual or market demand curve to obtain individual or total consumer surplus (although there are some technical issues with the latter).]
+*Advanced math-y:*: With a linear demand curve this is a triangle, which has an area that is easy to compute. More generally, this is a `definite integral'.
 
 
+
+```  
+
+This can be applied to the individual or market demand curve to obtain individual or total consumer surplus (although there are some technical issues with the latter).
 
 Also, 'introducing a new good...'^[This concept can also be applied to measuring the value added by the introduction of a new good (see Application 3.4). This is useful to know for policy, particular in formulating subsidies for R\&D and in adjusting the CPI. It also could be used to compute damages in court cases where a firm is accused of stifling innovation.]
 
@@ -755,7 +757,7 @@ If a 5\% fall in the price of oranges typically results in a 10\% increase in qu
 
 **Price elasticity of demand:**
 
-$$e_{Q_d,p} = \frac{percent \ change \ in \ Q_d}{percent \ change \ in \ p} $$
+$$e_{Q_{d}, p} = \frac{percent \ change \ in \ Q_d}{percent \ change \ in \ p} $$
 $$  = \frac{\Delta Q_d}{Q_d}/\frac{\Delta p}{p}$$
 
 \
@@ -820,10 +822,15 @@ The total expenditure (the firm's revenue from this): price $\times$ quantity
 
 By taking the *total differential* of this (you don't need to), and recalling the 'multiplication rule' of derivatives...
 
+\
 
 We have that for *small changes* in price, the percent *change* in total expenditure is:
 
-**percent change in price + percent change in quantity**
+<center> **percent change in price + percent change in quantity** </center>
+
+\
+
+Try it out (for small changes) and you see this will hold approximately.
 
 \
 
@@ -854,8 +861,7 @@ Suppose p=10 and q=10 so TR=100. Then when p=12 and q=8 TR=96. Huh? Price increa
 
 \
 
-
-TR is unchanged when p*q stays the same. With a change in each $\delta p$ and $\delta q$, the new revenue is
+TR is unchanged when p $\times$ q stays the same. With a change in each $\delta p$ and $\delta q$, the new revenue is
 
 $(p+\delta p)(q+\delta q) = pq+\delta p q + \delta q p + \delta p \delta q$.
 
