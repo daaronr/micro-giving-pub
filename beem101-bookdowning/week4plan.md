@@ -42,6 +42,16 @@ output:
   - Other elasticities (read at home)
   
 ## Introduction to production side
+
+- The firm
+
+- The production function
+
+- Cost-minimizing input choice
+
+-  The cost function (time permitting)
+
+-  Types of cost (time permitting)
   
 
 
