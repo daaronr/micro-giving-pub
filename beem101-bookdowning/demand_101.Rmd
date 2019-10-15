@@ -382,8 +382,9 @@ The budget share on j plus the sum of the budget shares of other goods multiplie
 
 Indirect utility function: the (max) utility you can get as a function of your income and prevailing prices.
 
-$$V(p_x,p_y,I_0)$$
+$$V(p_x,p_y,I_0)=max_{x,y}U(x,y) \text{ s.t. }  p_xx+p_yy\leq I$$
 
+Here this is the *max* and not the *argmax* ... it's the actual *utility* level not the consumption level(s). (The consumption levels are the *Marshallian* demand.)
 
 *We can find by solving for the utility-maximising choices, and then plugging these in to compute the utility from these.*
 
@@ -394,9 +395,9 @@ $$V(p_x,p_y,I_0)$$
 Expenditure function: How much income you need to to get a certain utility given prevailing prices.
 
 
-$$E(p_x,p_y,U_0)$$
+$$E(p_x,p_y,U_0)=min(p_xx+p_yy) \text{ s.t. } U(x,y) \geq U_0$$
 
-
+*Min* and not *argmin* ... the expenditure amount 
 Hicksian (compensated) Demand for X: The amount of X I consume in a 'minimising expenditure' bundle that yields some level of utility ($U_0$)
 
 *Note:*
@@ -745,16 +746,20 @@ The potential inefficiency of in-kind programmes and subsidies (App 3.3)^[In the
 
 \
 
-I've added some supplementary powerpoint slides on taxation to the VLE
+I've put up some supplementary powerpoint slides on taxation and subsidies
 
-Supplementary slides on taxation - powerpoint on VLE
+Supplementary slides on taxation and subsidies - powerpoint on VLE - download it and view it in presenter mode!
+
+
+
+- [inefficiency of a price subsidy](https://www.dropbox.com/s/13oapcmn1r9gc2x/subsidy%20illustration.pptx?dl=)
+
+... This one should be largely self-explanatory
 
 
 - [taxation, excess burden](https://www.dropbox.com/s/bac0ieupb5sjdlh/beem101_taxation_subsidy_supplement.ppt?dl=0)
 
-- [inefficiency of a price subsidy](https://www.dropbox.com/s/13oapcmn1r9gc2x/subsidy%20illustration.pptx?dl=)
-
-- See esp 'excess burden of milk tax'
+...  See esp 'excess burden of milk tax'. Note some concepts from production and general equilibrium are referred to; you may want to come back to these slides later
 
 \
 
@@ -773,7 +778,7 @@ Waldfogel's basic argument:
 
 - He depicts an indifference curve between a 'gift good' and 'other goods' and compares this to a rotation in the budget constraint to a shift outwards.
 
-(see powerpoint)
+- see powerpoint; [inefficiency of a price subsidy](https://www.dropbox.com/s/13oapcmn1r9gc2x/subsidy%20illustration.pptx?dl=)
 
 \
 
@@ -866,6 +871,8 @@ These 'cross-price effects' include both *substitution* and *income* effects. (S
 ```
 
 \
+
+*More advanced...*
 
 Cross-price *(net) substitution effects*: impact of a *compensated* change in $P_A$ on consumption of good B.
 

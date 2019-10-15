@@ -1,0 +1,1361 @@
+---
+date: "`r format(Sys.time(), '%d/%m/%Y')`"
+author: "David Reinstein (Exeter)"
+output:
+  revealjs::revealjs_presentation:
+    self_contained: true
+    theme: white
+    highlight: pygments
+    transition: fade
+    smart: true
+    css: reveal.css
+    center: true
+  beamer_presentation:
+    latex_engine: xelatex
+    keep_tex: yes
+    theme: metropolis
+  ioslides_presentation:
+      self_contained: true
+      template: io.html
+options: knitr.table.format = "html"
+classoption: table
+---
+
+```{r somefunctions, echo=FALSE, results='hide'}
+
+#possibly move these to a separate file
+
+#multi-output text color
+#https://dr-harper.github.io/rmarkdown-cookbook/changing-font-colour.html#multi-output-text-colour
+#We can then use the code as an inline R expression format_with_col("my text", "red")
+
+format_with_col = function(x, color){
+  if(knitr::is_latex_output())
+    paste("\\textcolor{",color,"}{",x,"}",sep="")
+  else if(knitr::is_html_output())
+    paste("<font color='",color,"'>",x,"</font>",sep="")
+  else
+    x
+}
+
+
+#do the same for centering etc
+
+```
+
+# The Demand function (L3) {#demand}
+
+
+## Discussion question
+
+>the price of beans went up, so people started buying more beans
+
+<br> \bigskip
+
+`r format_with_col("Could this ever be true? Is there a logical economic justification for this?","blue")`
+
+`r format_with_col("Discuss with your neighbour... we will vote","gray")`
+
+# Key goals
+
+
+## Key goals of these lectures (and accompanying self-study)
+
+How do you derive an *individual's* demand curve from her utility function?
+
+- What causes shifts in either?
+
+. . .
+
+\
+
+What properties do demand curves have?
+
+----
+
+Understand the following concepts/outcomes (& how to derive them):
+
+> Substitution and income effects (of a price change)
+
+> Goods that are 'substitutes' or 'complements' (WARNING!)
+
+. . .
+
+
+> Consumer surplus (from a transaction)
+
+> The lump-sum principle (and the distortion of taxation)
+
+
+<aside class="notes">remember, this is not the same as 'perfect substitutes/complements' </aside>
+
+----
+
+- What is a *market* demand curve, and how do we derive it?
+
+
+. . .
+
+- Understand the concepts:
+
+    - Price elasticity (of market demand for a product), and what it means to firms' pricing strategy
+
+    - Income elasticity (...)
+
+    - Cross-price elasticity (between two products)
+
+. . .
+
+\
+
+- Be able to discuss real world examples and applications of the above
+
+
+----
+
+*[Second part](recap)*
+
+
+**Understand real-world issues:**
+
+1. A 'Fixed-basket' consumer price index (CPI) may overstate inflation
+
+2. The lump-sum principle,  the distortion of taxation
+
+\
+
+
+**Fundamental concepts, useful for business & policy:**
+
+1. Goods may be 'substitutes' or 'complements' for one another (not the same as 'perfect' substitutes/complements!)
+
+2. How can we consider/compute the  *Consumer surplus* from a transaction?
+
+
+
+
+
+# Demand functions
+
+## Demand functions
+
+- Previous: consumption choices determined by utility functions/indifference curves and budget constraints
+
+. . .
+
+$$Quantity \: of \: X \: demanded = d_x(P_X, P_Y, I; preferences)$$
+
+
+<aside class="notes">LC: Write this on the board</aside>
+
+
+
+## Homogeneity
+
+Homogeneous (of degree zero) (demand) function
+:      A function whose outcome value does not change when all arguments are changed proportionally
+
+
+. . .
+
+
+<br> \bigskip
+
+$d_X(P_X,P_Y,I)$ is homogenous in its arguments
+
+
+<br> \bigskip
+
+- Multiply all prices and income by same amount $\rightarrow$ budget constraint unchanged $\rightarrow$ consumption choices the same
+
+
+. . .
+
+E.g., $P_X X + P_Y Y = I$ is the same as $2P_X X + 2P_Y Y = 2I$
+
+
+<aside class="notes">Intuition: Graphically, the budget line and indifference curves are unchanged, so the point of tangency is the same.
+
+ Consider, if your income, as well as prices, were stated in pennies rather than pounds (e.g., 5 million pennies rather than \pounds50,000), why would your choices change?</aside>
+
+<aside class="notes">This relates to the puzzle of 'why should monetary policy and inflation have any real effect?'</aside>
+
+----
+
+## Response to income changes
+
+
+$$d_x(P_X, P_Y, \mathbf{I}; preferences)$$
+
+<br> \bigskip
+
+
+- What happens to the quantity purchased of some good as your income increases?
+
+<aside class="notes">LC: Ask this as class question</aside>
+
+
+. . .
+
+
+- Depends on whether the good is *normal* or *inferior*
+
+<br> \bigskip
+
+<aside class="notes">Whether it is normal or inferior depends on your preferences and the change in the slope of the indifference curves with higher income/utility, as we see below</aside>
+
+
+---
+
+$$d_x(P_X, P_Y, \mathbf{I}; preferences)$$
+
+Normal good
+:     A good that is bought in greater quantities as income increases.
+
+Inferior good
+:     A good that is bought in smaller quantities as income increases.
+
+----
+
+```{r  fig.cap = '', out.height='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/normalgood.png")
+```
+
+<aside class="notes">Two things going on here:
+
+1. A wider set of consumption possibilities ... can afford more of X for any Y and v/v
+
+2. At higher levels of consumption and utility the psychic tradeoffs (mrs) may change</aside>
+
+
+
+----
+
+```{r  fig.cap = 'Inferior good', out.height='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/inferiorgood.png")
+```
+
+
+<aside class="notes">More income, less expenditure on Z?
+
+It's bc the shape of indifference curves differs at higher incomes here; shallower.
+
+When people have a lot to spend, they want to spend it on Y and not on Z.
+
+If you won the lottery how much pot noodle would you buy?</aside>
+
+
+----
+
+```{r  fig.cap = 'Inferior good', out.height='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/inferiorgood.png")
+```
+
+Move to [PPT](https://www.dropbox.com/s/qhsl6qey0wjcfe5/utility_demand_supplement.pptx?dl=0) here ... "Changes in Income: A Normal Good"
+
+<aside class="notes">Adv: To be precise, it's *not* about wealthy people being different than poor people
+
+... We're considering the *same* person with higher income.
+Thinking in 3d: 'as you walk up this hill, it's ridge gradually moves to the west'</aside>
+
+<aside class="notes">Adv: Consider -- all goods cannot be inferior. Why not?</aside>
+
+<aside class="notes">Move to PPT slides to illustrate this,
+
+beginning with 'Changes in Income: A Normal Good'</aside>
+
+## $\Delta$ price $\rightarrow$ substitution & income effects
+
+$$d_x(\mathbf{P_X}, P_Y, I; preferences)$$
+
+\
+
+<center> `r format_with_col("What happens to the quantity purchased of some good when the price of the good falls or rises?","blue")` </center>
+
+
+<aside class="notes">Changes both an intercept and a slope.
+
+New utility-maximizing choice on *another* indifference curve is
+
+ a point on that curve with a different MRS.</aside>
+
+
+----
+
+
+$$d_x(\mathbf{P_X}, P_Y, I; preferences)$$
+
+\
+
+Substitution effect ('Hicksian')
+:     The effect on consumption due to a change in price 'holding utility constant.'
+
+`r format_with_col("Precisely: effect on the lowest-cost bundle yielding this utility","gray")`
+
+
+
+. . .
+
+
+Income effect (of a price change)
+:     The remaining effect on consumption; price change $\rightarrow$ change in purchasing power/achievable utility.
+
+<aside class="notes">This is conceptual: we never *actually* observe either of these effects alone;
+
+ we always observe the net effect of both</aside>
+
+<aside class="notes">Standard definition of the 'income effect' of a price change
+
+combines both 'effects of an income change' we saw above
+
+more consumption of each good is possible, but the MRS may differ at this higher utility</aside>
+
+----
+
+
+```{r  fig.cap = 'income and substitution effects', out.height='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/incomeandsubstfx.png")
+```
+
+<small> (ppt here... "Change in a good's price") </small>
+
+<aside class="notes">Move to PPT slides to illustrate this,
+
+ beginning with 'Change in A Good's Price'</aside>
+
+<aside class="notes">Adv: This topic is more nuanced and complicated than we will cover in the main content of this module.
+
+To fully cover this, we would have to consider the theoretical concept of a 'compensated' aka 'Hicksian' demand curve,
+
+where income is adjusted to hold utility constant while price ratios change.
+
+This also allows us to consider 'net versus gross' substitution, and 'equivalent vs compensating variation'.
+
+More advanced economics modules will cover this extensively and rigorously.</aside>
+
+----
+
+- Substitution effect: `r format_with_col("ALWAYS","blue")` opposite direction as price change
+
+. . .
+
+- Income effect
+    - Normal good $\rightarrow$ `r format_with_col("Opposite direction as price change","blue")`
+    - Inferior good: `r format_with_col("Same direction as price change","brown")`
+. . .
+
+<br> \bigskip
+Thus
+
+- Normal good: Substitution & income effects go in *same direction*
+
+. . .
+
+- Inferior good: Substitution & income effects go in opposite directions
+    - $\rightarrow$ *Net* effect unknown
+    - Usually substitution effect dominates `r format_with_col("but see Giffen goods","gray")`
+
+----
+
+**Read on your own, know:**
+
+- Numerical example of response to price change
+- The relative importance of substitution effects for most goods
+- Substitution and income effects for inferior goods
+
+## Different substitution effects
+
+- Perfect complements: No substitution effect, only an income effect of a price change
+
+- Perfect substitutes: Large substitution effect -- price change may cause a complete switch
+
+- In between: depends on curvature of indifference curve
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/substfxperfect_trim.png")
+```
+
+----
+
+## The (legendary?) Giffen good
+
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/griffin.jpg")
+```
+
+- If the price of a good increases, can quantity demanded actually *increase*?!
+
+
+. . .
+
+
+- Yes, if the good is *very* inferior and is a large portion of income
+
+<aside class="notes">
+- But it has never been seen and documented in the wild
+
+- See Powerpoint (if time permits)
+
+- Practice question: try to draw indifference curves and budget constraints illustrating this effect for a Giffen good
+</aside>
+
+
+# Motivating example... WHAT???!!
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/iphonex.jpg")
+```
+
+
+##
+
+Hands up please <small>(or turningpoint if we've time: A=no, B-yes)</small>. 
+If you could *not* resell or gift it...
+
+- Would you accept a free [IPhone 11 pro](https://www.apple.com/uk/iphone-11-pro/)?
+
+
+. . .
+
+
+Would you pay:
+
+
+- (A) 250?
+
+
+. . .
+
+
+- (B) 500?
+
+
+. . .
+
+
+- (C) 750?
+
+
+. . .
+
+
+- (D) 1000?
+
+
+. . .
+
+
+- (E) 1250?
+
+
+----
+
+If your income was \pounds 100,000, would you pay
+
+Would you pay:
+
+
+- (A) 250?
+
+
+. . .
+
+
+- (B) 500?
+
+
+. . .
+
+
+- (C) 750?
+
+
+. . .
+
+
+- (D) 1000?
+
+
+. . .
+
+
+- (E) 1250?
+
+
+----
+
+Back to your current income .. what if all other smartphones cost \pounds 2000?
+
+\
+
+Would you pay for the Iphone 11pro:
+
+Would you pay:
+
+
+- (A) 250?
+
+
+. . .
+
+
+- (B) 500?
+
+
+. . .
+
+
+- (C) 750?
+
+
+. . .
+
+
+- (D) 1000?
+
+
+. . .
+
+
+- (E) 1250?
+
+
+##
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/ukcpi_inout.png")
+```
+
+`r format_with_col("What do these things have in common?","blue")`
+
+----
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/ukwindows.jpg")
+```
+
+
+`r format_with_col("What explains this?","blue")`
+
+----
+
+$$Quantity \: of \: x \: demanded = d_x(p_x, p_y, I; preferences)$$
+
+. . .
+
+Previous lecture: What the constrained util-max implied for...
+
+- 'Homogeneity of degree zero' of  $d_x(p_x, p_y, I)$
+
+- How $d_x$ responds to $I$ `r format_with_col("(remember: inferior & normal goods)","gray")`
+
+
+. . .
+
+- How $d_x$ responds to $P_x$ `r format_with_col("(rem: normal or Giffen)","gray")`
+
+    - Substitution and income effects
+
+## Goals: This lecture chunk (demand part 2)
+
+*Util-max s.t. constraints* $\rightarrow$
+
+
+. . .
+
+
+**Understand real-world issues:**
+
+- 'Fixed-basket' CPI may overstate inflation
+
+- Lump-sum principle,  distortion of taxation
+
+
+. . .
+
+
+**Fundamental concepts, useful for business & policy:**
+
+- Goods that are 'substitutes' or 'complements'
+
+- Consumer surplus (from a transaction)
+
+
+----
+
+...
+
+
+**Derive**
+
+- *Individual's* demand curve from her utility function
+
+- *Market* demand curve
+
+    - `r format_with_col("What causes *shifts* in either?","gray")`
+
+. . .
+
+- How to compare (the price and income elasticities) of apples and orange juice
+<!---
+**Understand** `r format_with_col("(time-permitting)","gray")`
+- Price elasticity (relevant to *pricing* strategy!), cross-price elasticity
+- Income elasticity
+-->
+
+----
+
+
+# App 3.2: The CPI and it's biases
+
+## App 3.2: The CPI and it's biases
+
+<aside class="notes">Note UK also uses a similar CPI measure (since 2003,
+
+ but RPI still used for some things).
+
+ Bank of England targets 2\% increase in the CPI per year</aside>
+
+- A *very* important number: Used for monetary policy and for targeting many salaries and benefits
+
+    - But does it overstate the rate of inflation?
+
+. . .
+
+Based on a 'typical market basket'
+
+- `r format_with_col("UK: of 700 different goods and services, excluding housing, updated yearly.","gray")`
+
+----
+
+A good example, 1982 vs 2012:
+
+\
+
+$$b_{82}=p^x_{82}x_{82}+p^y_{82}y_{82}$$
+$$b_{12}=p^x_{12}x_{82}+p^y_{12}y_{82}$$
+$$cpi_{12}=\frac{b_{12}}{b_{82}}$$
+
+----
+
+```{r  fig.cap = '', out.width='58%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/cpi_bias.png")
+```
+
+
+<aside class="notes">Unadjusted (fixed-basket, CPI 'claims' you need $I'$ to be as well off in 2012.
+
+I.e., to buy *the exact same basket*, including vinyl records.
+
+But by substituting, can get same utility w/ lower income $I''$
+
+(And $I'$  actually makes you *better* off).</aside>
+
+<aside class="notes">Note basket *is* adjusted yearly, based on a household spending surveys.
+
+But this also has problems: utility may be changing as people adjust their basket.
+
+'Correct' adjustment depends on (unobservable) utility functions.</aside>
+
+----
+
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/12hitsforapenny.jpg")
+```
+
+
+# The Lump-Sum Principle
+
+
+```{r  fig.cap = 'Have you seen this?', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/ukwindows.jpg")
+```
+
+
+<aside class="notes">1696: Act for granting to His Majesty several Rates or Duties upon Houses for
+
+  making good the Deficiency of the clipped Money...
+
+Properties with 10-20 windows paid an extra 4 shillings (\pounds24.79 in 2016),
+
+and those with 20+ windows paid extra 8 shillings (\pounds49.57 in 2016). <https://en.wikipedia.org/wiki/Window_tax></aside>
+
+<aside class="notes">Consider 'least efficient tax': UK government imposes a tax on all windows above 4 per house.
+
+All residents bricks all windows above 4.  Government raises no revenue but people are certainly worse off.</aside>
+
+
+##
+
+
+```{r  fig.cap = 'What is going on here?', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
+knitr::include_graphics("picsfigs/tudoroverhang.jpg")
+
+```
+
+
+
+<aside class="notes">'Taxes based on ground-floor area' are mentioned throughout the web, but I couldn't find an authoritative reference to this.
+
+ If anyone finds one, please let me know!</aside>
+
+----
+
+- The social cost (deadweight loss) is greater the more taxes change 'compensated' behaviour (via substitution)
+
+<aside class="notes">Why 'compensated' behavior?
+
+... bc taxes always leave people with less effective income,
+
+causing consumption choices to reflect new, lower indifference curves.
+
+For the DWL we care how taxes change their behavior *at this new lower-income*</aside>
+
+. . .
+
+
+- The most efficient tax:
+    - raises the most revenue for a given utility loss
+    - reduces utility the least for a given revenue
+
+\
+
+. . .
+
+- ... is a 'lump-sum tax': same tax no matter what you do (including work/leisure!)
+    - rationale for the poll tax
+
+<aside class="notes">A common measure: 'amount person would be willing to pay to avoid tax'
+
+for a given revenue raised</aside>
+
+----
+
+
+<!---
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/lumpsum1.png")
+```
+-->
+
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/taxwithblueline.png")
+```
+
+----
+
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/lumpsum2.png")
+```
+
+
+<aside class="notes">Just a single example; to see that this *does* hold generally, take Public Economics.</aside>
+
+<aside class="notes">Key to understanding: how do we see that the blue and red dot both *raise the same revenue*?</aside>
+
+<aside class="notes">Caveat: If you *can't* tax one good (e.g., leisure)
+
+ you don't want to tax all other goods equally.
+
+ In general, tax goods that distort behaviour less overall. </aside>
+
+----
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/gaarcomment.png")
+```
+
+----
+
+[FT Comment: New rule may even reduce the tax take](https://www.ft.com/content/4ea6ab2c-f900-11e2-86e1-00144feabdc0)
+
+> Suppose I am willing to sell a widget I manufacture for £10 and that you are willing to spend £11 to own it.
+> Then we will do business and I will receive a consumer surplus of £1.
+> Now suppose the government imposes a 20 per cent sales tax, and the price I charge for widgets increases to £12.
+> Since £11 is your maximum price, you won’t buy it and the £1 of consumer surplus you would have gained is lost.
+
+> This is how tax avoidance imposes a so-called deadweight cost on society. People avoid doing valuable things that they would have done if not for the tax.
+
+----
+
+
+**Read on your own, know:**
+
+- Potential inefficiency of in-kind programmes and subsidies (App 3.3)
+
+    - On the other hand, the *benefits* of in-kind programmes rather than cash transfers
+
+<aside class="notes">In  UK,  'welfare wall' called the 'benefits trap' or 'unemployment trap'.
+
+ This is something succesive governments have tried to remedy; recently with the 'Universal Credit'.</aside>
+
+<aside class="notes">Provides an opportunity to *apply* your knowledge to a 'challenge' question</aside>
+
+
+
+# Changes in the Price of Another Good
+
+## Changes in the Price of Another Good; substitutes and complements
+
+<aside class="notes">Previous 2-good diagrams: 'mechanical' impact of the change in $P_X$ on $Y$
+ \
+- New budget constraint and new $X$ $\rightarrow$ spend the remainder on $Y$.
+ \
+- With 3 or more goods, it's more interesting</aside>
+
+
+. . .
+
+
+Complements
+:     If rise in $p_x$  $\rightarrow$ $q_{d,y}$ decreases (& v/v), goods y and x are `r format_with_col("(gross)","gray")` *complements* to one another.
+
+<aside class="notes">Remember: 'complements' go together --> q-demanded of both responds in same direction to price
+
+ -- the opposite direction as the price change (unless Giffen).</aside>
+
+
+ `r format_with_col("These 'cross-price effects' include both *substitution","gray")` and \emph{income* effects. (Hence 'gross'. See micro quiz 3.3).}
+
+. . .
+
+
+Substitutes
+:     If  $p_x$ $\uparrow$ $\rightarrow$ $q_{d,y}$ $\uparrow$ (and vice-versa), goods y and x are `r format_with_col("(gross)","gray")` *substitutes* ...
+
+
+<aside class="notes">Rem: 'substitutes' compete to meet same desires, so when you buy more X, buy less Y
+
+Thus X and Y have *opposite* demand response to a price change in either
+
+As quantity-demanded for A typically goes *opposite* to P_a
+
+... q-dmdd for substitute B will go in the *same* direction as the P_a</aside>
+
+
+<br> \bigskip
+
+`r format_with_col("Warning:","red")` $\neq$ 'perfect' complements/substitutes
+
+<aside class="notes">Here, this is about the *price* reaction, not a fundamental of the utility function.</aside>
+
+
+
+# Individual demand curves
+
+## Individual demand curves
+
+
+$$d_x(p_x,p_y,I; \: preferences)$$
+
+
+- 'Individual demand curve': plots *individual's* purchase of a good versus it's price
+
+
+. . .
+
+
+'Map it out': increase $p_x$ $\rightarrow$
+
+. . .
+
+
+budget constraint shifts inwards $\rightarrow$
+
+- New point tangent to indifference curve
+
+
+
+----
+
+
+![demand1](picsfigs/dmd1.png) \
+
+
+----
+
+
+![demand2](picsfigs/dmd2.png) \
+
+
+----
+
+
+![demand3](picsfigs/dmd3.png) \
+
+
+----
+
+
+![demand4](picsfigs/dmd4.png) \
+
+
+
+## Shifts in an individual's demand curve
+
+What might cause an individual's demand curve for a product to shift (inward or outward)?
+
+
+. . .
+
+
+
+- *Not* 'a change in the price of that good'.
+- *Not* a shift in the supply curve.
+
+
+. . .
+
+
+Yes:
+
+- Change in price of complements or substitutes for that good
+- Change in income
+- Maybe: $\Delta$ consumer's info, preferences, weather, etc.
+
+
+
+\
+
+<center> <small> `r format_with_col("Be sure you understand shifts vs movements along, and 'a demand curve' vs 'quantity demanded'.","red")` </small> </center>
+
+<aside class="notes">Economists disagree as to how to consider or model changes in preference.
+
+Know difference btwn shift in a demand (or supply) curve & movements along a demand curve, and terminology.
+
+Almost surely on some exam in some form, see e.g., micro quiz 3.4
+
+Hint: avoid referring to 'supply and demand'; refer to either 'supply and demand *curves*' or 'quantity demanded or supplied'
+
+Numerical examples: may be covered in tutorials
+</aside>
+
+
+## Consumer surplus
+
+Consumer surplus
+:      The extra value individuals get from consuming a good over what they pay for it.
+
+. . .
+
+- My wtp for 'right to consume good at its current price' (rather than not at all)
+
+  - Measures consumer welfare, used for policy analysis
+
+. . .
+
+\
+
+- Area between demand curve and market price:
+
+```{r  fig.cap = '', out.width='30%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/cons_surplus.png")
+```
+
+<aside class="notes">Skip section 'consumer surplus and utility' in lecture, but read over it for understanding</aside>
+
+----
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/cons_surplus.png")
+```
+
+
+
+<aside class="notes">Can be applied to the individual or market demand curve to obtain individual or total CS.
+
+ However, there are some technical issues with the latter.</aside>
+
+<aside class="notes">Can also be applied to measuring the value added of a new good (see App 3.4).
+
+Useful for policy,  e.g.,  subsidies for R&D, adjusting  CPI; compute damages for 'stifling innovation'</aside>
+
+
+# Market demand
+
+## Market demand
+
+
+Market demand
+:     Total quantity of a good demanded by all consumers
+
+. . .
+
+Sum individual quantities demanded (at a given price)
+
+. . .
+
+\
+
+Market demand curve
+:     Relationship between total quantity demanded of a good and its price, ceteris paribus
+
+<!---
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/summarketdemandcurve.png")
+```
+-->
+
+<aside class="notes">Some results about individual demand also hold for market demand
+
+others don't, or only if we make restrictive assumptions</aside>
+
+----
+
+Market demand curve: Relationship between total quantity demanded of a good and its price, ceteris paribus.
+
+Sum the individual demand curves 'horizontally' ... quantities demanded at each price
+
+
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/summarketdemandcurve.png")
+```
+
+<aside class="notes">Numerical examples of this may be covered in tutorial</aside>
+<aside class="notes">LC: Illustrate 'sums horizontally' on visualiser if possible</aside>
+<aside class="notes">Yes, you can add functions.</aside>
+
+
+## Shifts in the Market Demand Curve
+
+Similar things that cause individual demand curve shifts:
+
+. . .
+
+- Increases in overall income (for normal goods)
+
+. . .
+
+- Reduced prices of complements, increased price of substitutes
+
+
+
+<aside class="notes">You can only express the demand curve as a function of aggregate income under restrictive assumptions.
+
+  In general, it depends *who* gets this income. (See 'aggregation issues').</aside>
+
+----
+
+A random example:
+
+- 2008: 'Gas prices forcing demand for SUVs to plummet' [LINK](http://www.thehour.com/wilton/article/Gas-prices-forcing-demand-for-SUVs-to-plummet-8257785.php)
+
+- 2015: 'Economy, gas prices drive demand for SUVs, high-end cars' [LINK](http://www.sj-r.com/article/20150809/NEWS/150809569)
+
+
+# Elasticities
+
+## Elasticities: comparisons across contexts
+
+
+<div id="left">
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/naveloranges.jpeg")
+```
+</div>
+<div id="right">
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/applejuice.jpeg")
+```
+</div>
+
+
+
+`r format_with_col("Which is 'larger'?:", "blue")`
+
+- change in $q_d$ of oranges when  $p_{orange}$ rises *or*
+
+- the change in  $q_d$ of apple juice when its price rises?
+
+<aside class="notes">LC: This is like comparing apples and oranges!</aside>
+<aside class="notes">Or the response to changes in the price of a related good, or to income.</aside>
+
+. . .
+
+\
+
+*Difficulty:* Measured in different *units*, p and q have different starting values!
+
+
+----
+
+
+Elasticity
+
+:     the measure of the \% change in one variable brought about by a 1\% change in another variable.
+
+\
+
+- a *unitless* measure; will be the same no matter how these variables are measured.
+
+<aside class="notes">Think of responsiveness when talking about elasticity. Actually it's a measure from physics having to do with rubber bands, they tell me.</aside>
+<aside class="notes">Adv, maths: Strictly speaking we are talking about the limit of these responses, i.e., derivatives.
+
+  The elasticity is basically the derivative of $ln(y)$ with respect to $ln(x)$; useful to know if you want to run a regression computing an elasticity, or if you want to interpret such a regression.</aside>
+
+----
+
+- If a 5\% fall in the price of oranges typically results in a 10\% increase in quantity bought
+
+- we might say that 'each percent fall in the price of oranges leads to an increase in sales of about 2 percent'
+
+
+. . .
+
+
+- i.e., the 'elasticity' of orange sales wrt price is about 2 . . .
+
+    - But elasticities need not be constant; they may depend on starting point
+
+    - E.g., linear demand $\rightarrow$ different price elasticity at each point
+
+
+----
+
+## Price elasticity of demand
+
+Price elasticity of demand:
+$$e_{Q_d,p} = \frac{percent \ change \ in \ Q_d}{percent \ change \ in \ p} $$
+$$  = \frac{\Delta Q_d}{Q_d}/\frac{\Delta p}{p}$$
+
+`r format_with_col("(actually, the limit of this as these changes converge to zero)","gray")`
+
+. . .
+
+
+- Should always be negative (except for Giffen goods)
+
+- A unitless measure related to the slope of the demand curve
+
+- *Very* important for price-setting firms (more on this later)
+
+
+
+# Examples from the headlines
+
+##
+[India's Hike Messenger takes aim at WhatsApp](https://www.ft.com/content/2665c794-76a0-11e6-b60a-de4532d5ea35)
+
+> 'Reliance ended up showing that there is elasticity in the market. If you drop prices, people will come on board,' he said.
+
+
+----
+
+
+[Next to add more space despite retail sales 'moving backwards'](https://www.ft.com/content/932927d8-266c-3559-b87a-8d3efb07d5e1)
+
+
+> The retailer does not expect any impact from the drop in sterling since the Brexit vote to kick in until at least the spring of 2017, as it had hedged some of its foreign-currency exposures in advance. Still, it expects expenses to rise by up to 5 per cent next year.
+> `The last time we had to increase prices (which was in 2010 when cotton prices soared) we estimated that price elasticity was around 1.1.'
+
+----
+
+> If that remains the case today, a retail selling price increase of 5% would result in a fall in unit sales of -5.5% and a fall in like for like sales value of between -0.5% to -1.0%. In the scheme of things, we think that this drag on sales is manageable and less damaging than taking a significant hit to margin.'
+
+
+
+----
+
+Properties of price elasticity of demand:
+
+- Goods w/ close substitutes at a close price $\rightarrow$  highly elastic
+- ... with few substitutes ...  inelastic
+- Typically: elasticity greater in *long run* than short run. `r format_with_col("Why?","blue")`
+
+<aside class="notes">Ans: Over time, consumers can adjust to price changes by changing their consumption patterns.
+
+ E.g., if petrol gets more expensive I can switch to a hybrid or electric car, or a bicycle.</aside>
+
+
+. . .
+
+
+| $e_{Q,p}$ | $abs(e_{Q,p})$ | Term         |
+|-----------|-------------|--------------|
+| $< -1$    | $>1$        | Elastic      |
+| $= -1$    | $=1$        | Unit Elastic |
+| $> -1$    | $<1$        | Inelastic    |
+
+<aside class="notes">Sometimes elasticities are expressed in absolute value terms (a positive number). It should be clear from the context.</aside>
+
+
+----
+
+- Total expenditure (revenue): price $\times$ quantity
+
+. . .
+
+- So percent *change* in total expenditure is:
+    - pct change price $\times$ pct *change* quantity
+
+. . .
+
+As $e_{Q,p}$ tells you the pct change quantity for a small pct change in price:
+
+\
+
+. . .
+
+
+| $abs(e_{Q,p})$ | Term         | p rise $\rightarrow$ expdr | p falls $\rightarrow$ expdr |
+|-------------|--------------|--------------------------------|---------------------------------|
+| $>1$        | Elastic      | Falls bc Q falls *more*        | Rises                           |
+| $=1$        | Unit Elastic | Constant                       | Constant                        |
+| $<1$        | Inelastic    | Rises bc Q falls *less*        | Falls                           |
+
+
+<aside class="notes">Q: A price-setting firm should basically never want to set its price at a point where demand is inelastic. Why not?</aside>
+
+<aside class="notes">Ans: If it were at such a point, it could raise its price and its revenue would increase and costs would decline
+
+ (because it would be selling fewer products but for greater total revenue.)
+
+ A caveat is that it might do this for a long term strategic advantage; e.g., to gain customer loyalty and market share, intending to take its profits later.</aside>
+
+----
+
+![Elastrev](picsfigs/elast_revenue.png)
+
+
+
+
+#  More to read
+
+- Numerical example (may be covered in tutorial)
+- Skip: Unit Elastic Curve
+- Read on your own: Application 3.7: An Experiment in Health Insurance
+
+# Income elasticity of demand
+
+## Income elasticity of demand
+
+Income elasticity of demand
+:      \% change in quantity demanded of a good in response to 1\% change in income.
+
+
+
+$$e_{Q_d,I} = \frac{percent \ change \ in \ Q_d}{percent \ change \ in \  I} $$
+$$  = \frac{\Delta Q_d}{Q_d}/\frac{\Delta I}{I}$$
+\
+
+
+. . .
+
+Normal goods: $e_{Q,I} > 0$
+\
+
+
+Inferior goods: $e_{Q,I} < 0$
+
+\
+
+
+. . .
+
+
+
+Luxury goods: $e_{Q,I} > 1$
+
+
+<aside class="notes">E.g., cocaine is a luxury good, if, when I win /pounds1000 in the lottery, I will increase my consumption of cocaine by *more* than /pounds1000 ...
+
+ (assuming, as in classical models, that I treat all sources of income the same</aside>
+
+<aside class="notes">Q: Is a luxury good a normal good?</aside>
+<aside class="notes">Ans: Yes, because $1>0$. However, a normal good may or may not be a luxury good.</aside>
+<aside class="notes">Engel's 'law': As income increases, food becomes a smaller share of income.</aside>
+
+<aside class="notes">Q (micro quiz): Why is it that not every good can have an income elasticity of demand greater than 1?
+
+ Can every good have an income elasticity of demand less than 1?</aside>
+
+
+
+----
+
+
+[Prof. Muellbauer letter to FT](https://www.ft.com/content/4ea79d96-a4d6-11e5-a91e-162b86790c58)o
+
+> Sir, Professor Gordon Gemmill (Letters, December 14), surprisingly for a trained economist, assumes an income elasticity of demand of zero for housing: that is, that people do not demand more and better housing as they become richer. Nowhere in the world is this the case! My own empirical work demonstrates that around two-thirds of the rise in UK house prices, corrected for general inflation, since 1980 is because supply is not keeping up with income and population growth.
+
+----
+
+> Other drivers do exist ... The price effects of extra supply take time to build up. I agree on that. But just imagine what would happen if we did nothing more than we are now doing: population and income growth would drive prices even higher even though we already hold the record for rises in house prices since 1970 among the group of seven leading high-income countries. We need to build far more housing, in the right locations. And we need to start now.
+> -  Prof John Muellbauer Nuffield College, Oxford, UK
+
+----
+
+## Rest of NS chapter 3
+
+Read on your own:
+
+- Cross-price elasticity of demand (read on your own)
+
+- Some elasticity estimates (note these are a bit dated)
+
+
+
+
+
+# Other practice questions
+
+## Other practice questions
+
+
+<!--
+BEGINLEC4
+-->
+
+
+
+<big>Does this make sense??<big>
+
+\normalsize
+
+> Our company is very good at motivating our employees. We get twice as much production for each pound we spend on salaries as for each pound we spend on better machines; and we continue to invest in both.
+
+`r format_with_col("???","blue")`
+
+----
+
+
+> We need to keep producing this product, even though it's unpopular, because it cost us £1 million to develop, and we need to make this back.
+
+\
+
+`r format_with_col("???","blue")`
+
+----
+
+> My business is making a profit, even though I could have earned more money putting the £1,000,000 in a savings bond.
+
+\
+
+`r format_with_col("???","blue")`
+
+<!--
+## Announcements 25 Oct 2018
+
+- Five minutes for early feedback (check your email or go to https://www.surveymonkey.co.uk/r/LNYJ2Y8
+
+- Please do Formative assessment on ch 1-3! (Second one coming shortly)
+
+- Answering some common questions (missing/moving tutorials, midterm...)
+
+
+*Remember, remember, the fifth of November*
+
+----
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/guyfawkes.jpeg")
+```
+-->
+
+
+
+
