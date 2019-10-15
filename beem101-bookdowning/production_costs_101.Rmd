@@ -1,7 +1,14 @@
 # Production and costs (brief coverage) {#production-costs}
 
 
-## Lecture  (30 min) - Production and costs (brief treatment: coverage)
+##  Coverage
+
+*Some key goals of these chunk*
+
+1. Better understand how economists depict a firm's *production function*
+1. ... and how a firm can 'trade off one input for another' in the producing a particular output
+1. ... and why the production function may have *increasing returns to scale* or *diminishing returns to scale*
+
 
 
 <!---
@@ -56,12 +63,100 @@ $$q = f( K, L, M, ...)$$
 
 $$q = f(K, L)$$
 
+E.g.,
 
-- e.g., $q =2L^{1/3}K^{2/3}$
+-  a particular Cobb-Douglas in two inputs, $q =2L^{1/3}K^{2/3}$
 
-- Given its production choice, the firm tries to produce it at the minimum cost
-    - This resembles a consumer maximizing utility subject to budget constraints^[A major difference: a firm *also* chooses the *level* of output, while the consumer has a fixed budget constraint ... we return to the firm in later sections.]
+- "Leontief" fixed proportions: $Q=\min(a_{1}X_{1},a_{2}X_{2},\dotsc ,a_{n}X_{n})$
 
+- ["O-ring" production](https://en.wikipedia.org/wiki/O-ring_theory_of_economic_development) (Michael Kremer, recent Nobel memorial prize winner)
+
+\
+
+
+### A more formal treatment
+
+Most general depiction: 'Production possibility set' (see footnote)^[$Y \in \mathbb{R}^m$ where each vector $\mathbf{y}=(y_1,...y_m) \in Y$ is a production plan whose components are the amounts of various inputs and output. (From JR)]
+
+\
+
+A reasonably general depiction of a production function (JR notation) maps from the vector of inputs $\mathbf{x}$ to a single output $y$: $f(\mathbf{x})$.^[But note that we may need multi-output multivalued functions to depict ideas such as economies of scope within a firm.]
+
+
+\
+
+Some standard assumptions (JR Ass 3.1)
+
+> Production function $f: \mathbb{R}^n_+ \rightarrow \mathbb{R}_+$ is continuous strictly increasing and strictly quasiconcave on $\mathbb{R}_+$, and $f(\mathbf{0})=0$.
+
+\
+`r format_with_col("Compare these assumptions to our assumptions over the consumer's utility function.","gray")`
+
+***
+
+**(Back to the simpler treatment)**
+\
+
+## Marginal product
+
+Marginal product
+:     The additional output that can be produced by adding one more unit of a particular input while holding all other inputs constant.
+
+
+\bigskip
+
+
+Marginal Product of Labour: $MP_L$
+
+- Slope of production function in units of labour (holding capital etc constant)
+
+$$MP_L=\frac{\partial}{\partial L}f(K,L)$$
+
+- Similarly for Marginal Product of Capital $MP_K$
+
+
+
+\
+
+## Output curves, marginal product curve, average product
+
+
+
+```{r  fig.cap = '', out.height='30%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/outputMP1.png")
+```
+
+
+***
+
+```{r  fig.cap = '', out.height='30%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/outputMP2.png")
+```
+
+
+***
+
+```{r  fig.cap = '', out.height='30%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/outputMP3.png")
+```
+
+Given its production choice, the firm tries to produce it at the minimum cost
+    - This resembles a consumer maximizing utility subject to budget constraints^[A major difference: a firm *also* chooses the *level* of output, while the consumer has a fixed budget constraint ... we return to this in later sections.]
+
+\
+
+```{block2,  type='digression'}
+**One reason why you might care about input choice and production functions:**
+
+How will you earn a living in the future?
+
+Production may be a function of capital (esp 'high-tech'), materials, and various types/skill-levels of labour. We'll note that in a competitive market each input, including workers, is paid based on their marginal contribution to output, given the firms' optimising choice of inputs.
+
+If production functions (or costs of various inputs) change 'your kind of labour' may become less productive (per hour) as part of this process, meaning wages must fall. If they fall low enough people may not want to work.  If these are 'sticky' or legally prevented from falling firms may reduce employment of 'your kind of labour.'
+
+2020 US presidential candidate Andrew Yang is making this sort of argument, and he claims the best response is a tax-funded 'universal basic income'. Do you think he is correct?
+
+```
 
 <!---
 Todo: give an example here... consider 'how much labour will the firm hire'? Maybe something about automation and a guaranteed living wage?
@@ -111,7 +206,7 @@ Consider any combination of (say, two) inputs (capital and labor, K and L) and t
 
 - When the firm chooses inputs optimally (and where it uses both), it chooses K and L to set the $MRT(K,L)$ equal to the price ratio of these inputs ($w/r$... wages $w$ per unit of for labor, rent $r$ per unit of capital).
 
-- 'Same bang for the buck at optimal choices $K^*$ and $L^*$' i.e.:^[Of course there can be 'corner solutions' as in the consumer case, where you optimally use *none* of one input]
+It will make these choices to attain the "same bang for the buck at optimal choices $K^*$ and $L^*$",  i.e.:^[Of course there can be 'corner solutions' as in the consumer case, where you optimally use *none* of one input]
 
 $$\frac{MP_K(K^*,L^*)}{r}= \frac{MP_L(K^*,L^*)}{w}$$
 
@@ -135,215 +230,55 @@ Also, if markets for labour and capital are *(perfectly) competitive*, when we c
 <br> <br> \bigskip
 
 
-`r format_with_col("This is very similar to the consumer optimization we discussed. For a given total input cost, the firm wants to produce as much as possible. A better way of thinking about this is that for a given production, the firm wants to incur as low a cost as possible. However, there is no 'hard budget constraint' as in the consumer optimisation case. The firm's output choice will be chosen to maximise it's profit, with no constraints other than 'non-negativity'. ","gray")`
+`r format_with_col("This is very similar to the consumer optimization we discussed. For a given total input cost, the firm wants to produce as much as possible. A better way of thinking about this is that for a given production, the firm wants to incur as low a cost as possible. However, there is no 'hard budget constraint' as in the consumer optimisation case. The firm's output choice will be chosen to maximise its profit, with no constraints other than 'non-negativity'. ","gray")`
 
 \
 
+`r format_with_col("Next we depict this graphically and in more detail","green")`
 
-<!---
-Todo: give more explanation here
--->
-
-**Summing up**: Optimisation (given a production function and input prices)...
-
-yields a (minimum) cost for every output $q$ a firm chooses to produce.
-
-
-
-
-
-Total cost function: $c(q)$ or $TC(q)$.
-
-
-**Total costs** are fixed costs plus variable costs
-
-- **Fixed costs:** must incur to produce even the first unit (e.g., hire factory space)
-
-- **Variable costs:** increase as one produces more units
-
-
-***
-
-
-**Marginal cost** $MC(q)=c'(q)$: rate that costs increase in quantity; derivative of cost function
-
-- cost of producing one additional unit (given you already produced q units)
-
-
-
-\bigskip
-
-
-- **'Average cost'** $AC=c(q)/q$: the production cost per unit produced
-
-
-\textcolor{gray}{Average costs are also the total ‘rise over run’ for the TC curve at a given quantity as the firm optimally chooses its inputs.}
-
-Average costs (for a firm) may be increasing or decreasing in quantity
-
-
-\bigskip
-
-
-- Increasing average costs $\leftrightarrow$ Decreasing returns to scale
-
-
-- Decreasing average costs $\leftrightarrow$ Increasing returns to scale
-
-
-- Constant average costs $\leftrightarrow$ Constant returns to scale
-
-
-\bigskip
-
-\textcolor{blue}{Consider: why/when would we expect DRS/IRS/CRS?} (We discuss this [further below](##IRS-DRS-reasons).)
-
-
-***
-
-The shape of the marginal cost curve depends on the production function
-
-- Constant returns to scale: constant MC (and no FC)
-
-- Decreasing returns to scale: increasing MC
-
-- Increasing returns to scale: decreasing MC (and/or constant FC)
-
-
-***
-
-\includegraphics[height=2in]{picsfigs/crsTCcurve.png}
-
-***
-
-\includegraphics[height=2in]{picsfigs/crscostcurves}
-
-***
-
-
-\includegraphics[height=2in]{picsfigs/drsTCcurve.png}
-
-***
-
-\includegraphics[height=2in]{picsfigs/drscostcurves}
-
-***
-
-\includegraphics[height=2in]{picsfigs/irsTCcurve.png}
-
-***
-
-\includegraphics[height=2in]{picsfigs/irscosts_fix.png}
-
-***
-
-[comment]: <> (pre2019BB)
-
-\includegraphics[height=2in]{picsfigs/mesTCcurve.png}
-
-
-\includegraphics[height=2.2in]{picsfigs/mescostcurves}
-
-[comment]: <> (pre2019EE)
-
-
-[comment]: <> (pre2018BB)
-
-*Notes:*
-We will go rather quickly over this material, skipping some details
-We
-- 6.1 Production function
-- 6.2 Marginal product
-- 6.3 Isoquant maps
-- 6.4 Returns to scale
-
-*Note that we will skip input substitution and technological change*
-
-
-***
-
-*Key goals of these lectures (and accompanying self-study)*
-
-1. Better understand how economists depict a firm's *production function*
-1. ... and how a firm can 'trade off one input for another' in the producing a particular output
-1. ... and why the production function may have *increasing returns to scale* or *diminishing returns to scale*
-
-
-[comment]: <> (pre2018EE)
-
-
-
-[comment]: <> (pre2018BB)
-
-## Marginal product
-
-Marginal product
-:     The additional output that can be produced by adding one more unit of a particular input while holding all other inputs constant.
-
-
-\bigskip
-
-
-Marginal Product of Labour: $MP_L$
-
-- Slope of production function in units of labour (holding capital etc constant)
-
-$$MP_L=\frac{\partial}{\partial L}f(K,L)$$
-
-- Similarly for Marginal Product of Capital $MP_K$
-
-
-- *Standard assumption: diminishing marginal product of each input*
-
-
-## Output curves, marginal product curve, average product
-
-
-
-\includegraphics[height=2.0in]{picsfigs/outputMP1.png}
-
-
-***
-
-\includegraphics[height=2.0in]{picsfigs/outputMP2.png}
-
-
-***
-
-\includegraphics[height=2.0in]{picsfigs/outputMP3.png}
-
+\
 
 ## Isoquant maps, rate of technical substitution (RTS)
 
-\includegraphics[height=2.0in]{picsfigs/prod_isoquant1.png}
+The 'isoquant' depicts all combinations of inputs that yield the same amount of output.  
 
+'Iso' probably means 'the same' in some language. So 'isoquants' connect all points, all combinations of output that produce the same 'quant'(ity.)
 
+This is depicted below.
+
+```{r  fig.cap = '', out.height='30%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/prod_isoquant1.png")
+```
+
+Suppose points A and B produce the same output.
 
 ***
 
-\includegraphics[height=2.0in]{picsfigs/prod_isoquant2.png}
+```{r  fig.cap = '', out.height='30%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/prod_isoquant2.png")
+```
 
+...They will then be on the same isoquant 
 
+\
 
-\textcolor{blue}{Q: How do these indifference curves display 'diminishing marginal product' of each input?}
+`r format_with_col("How do these isoquants curves display 'diminishing marginal product' of each input?","blue")`" ^[Ans: Slope gets steeper as we move towards more capital, less labour
+Implying with more K we need to add more and more K to make up for a loss of a small amount of L. Slope shallower with more L, less K ... similar point]
 
-Ans: Slope gets steeper as we move towards more capital, less labour
-Implying with more K we need to add more and more K to make up for a loss of a small amount of L. Slope shallower with more L, less K ... similar point
-
-'Iso' probably means 'the same' in some language. So 'isoquants' connect all points, all combinations of output that produce the same 'quant'(ity.)
 
 The slope of these is called the 'Rate of Technical Substitution,' to be defined shortly
 
 
-
 ***
 
 
-\includegraphics[height=2.0in]{picsfigs/prod_isoquant3.png}
+```{r  fig.cap = '', out.height='20%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/prod_isoquant3.png")
+```
 
 ***
 
-Marginal rate of technical substitution (RTS)
+Marginal rate of technical substitution (M)RTS
 :     The amount by which one input can be reduced when one more unit of another input is added while holding output constant
 
 
@@ -358,7 +293,7 @@ RTS = - slope of the isoquant
 
 ***
 
-$$RTS = MP_L/MP_K$$
+$$MRTS = MP_L/MP_K$$
 
 - RTS is the ratio of marginal products
 
@@ -370,22 +305,134 @@ $$RTS = MP_L/MP_K$$
     - If MPL is large I can give up much K, because getting more L adds a lot of production
     - If MPK is large I cannot give up as much K to get more L, because reducing K reduces output a lot
 
-- Diminishing RTS
+- Diminishing MRTS is a common assumption 
 
-[comment]: <> (pre2018EE)
+  \
 
-## Returns to scale
+
+### Graphical depiction: isoquant and isocost ... optimisation
+
+Just as a consumer choosing to consume a positive amount of two goods will find the point X,Y on her budget constraint where the indifference curve through this point has the same slope (i.e. X,Y that has MRS(X,Y) equal to the price ratio) ...
+
+\
+So a firm will choose a point on some 'isocost curve' (all pairs of inputs  costing a certain amount) where the 'isoquant' (all pairs of inputs producing the same quantity) has the same slope. The same marginality argument holds -- if this is not the case, the firm could produce more at the same cost (or the same at a lower cost).
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/isocost-isoquant.png")
+```
+
+If the firm depicted above
+
+- chooses to produce 40 hamburgers per hour
+- given the 1-1 price ratio depicted (price of grill per hour = price of workers per hour)
+- given its production function (which is described, in part, by the 'isoquant')
+
+$\rightarrow$ It will choose to use 4 grills and 4 workers per hour: this is the *minimum-cost* input choice for this level of output
+
+The other points on the same isoquant (inputs yielding 40 hamburgers/hour) all cost more. Dually, the other points on the same isocost line (costing \$40/hour) all produce less.
+
+Such optimum input choices (where both inputs are used) must occur at points where the isocost is tangent to the isoquant... the 'rate at which one can trade off between the inputs at no cost' equals the 'rate at which inputs tradeoff to hold the output constant.' The intuition is the same as in the consumer case.  (But again, the difference is that the firm will *also* choose its output level, there is no equivalent of the 'budget constraint'.) 
+
+<!---
+Todo: give more explanation here
+-->
+
+\
+
+## The cost function
+
+**Summing up**: Optimisation (given a production function and input prices)...
+
+yields a (minimum) cost for every output $q$ a firm chooses to produce.
+
+I.e., the firm's 'cost function'.^[By the way this is the analogue to the consumer's expenditure function']
+
+```{block2,  type='technote'}
+
+Formally (JR notation)
+
+The cost function, defined for all input prices $\mathbf{w}>>\mathbf{0}$ and all output levels $y\in f(\mathbb{R}^n_+)$ is the minimum-value function:
+
+$$c(w,y)\equiv \min_{\mathbf{x}\in\mathbb{R}_+^n}\mathbf{w\cdot x}\text{ s.t. } f(\mathbf{x})\geq y$$
+
+If the 'conditional nput demand' $\mathbf{x}(\mathbf{w},y)$ solves the cost-minimisation problem, then:
+
+$$c(\mathbf{w},y)=\mathbf{w}\cdot\mathbf{x(w},y)$$.
+```
+
+\
+
+## Types of costs ('Basic cost concepts')
+
+
+Fixed costs (FC)
+:     Costs that must be regularly incurred to *remain* in business (i.e., for any level of output), but that do not vary with the level of output
+
+\
+
+Variable costs (VC)
+:    Costs that increase with the quantity produced.
+
+\
+
+Sunk costs
+:     Costs that have been incurred in the past that can never be recovered.
+
+- Sunk costs should not enter into *any* economic decisions.
+- FC from previous years are sunk costs; FC for future years are not.
+
+```{block2,  type='note'}
+
+In 2019 we are skipping the discussion of the short-run here: we will assume all inputs can be adjusted.
+
+```
+
+Total cost function: $c(q)$ or $TC(q)$.
+
+
+**Total costs** are fixed costs plus variable costs
+
+- **Fixed costs:** must be incurred to produce even the first unit (e.g., hire factory space)
+
+- **Variable costs:** increase as one produces more units
+
+
+***
+
+
+**Marginal cost** $MC(q)=c'(q)$: rate that costs increase in quantity; the derivative of the cost function
+
+- cost of producing one additional unit (given that you already produced q units)
+
+\
+
+**'Average cost'** $AC=c(q)/q$: the production cost per unit produced
+
+
+`r format_with_col("Average costs are also the total ‘rise over run’ for the TC curve at a given quantity as the firm optimally chooses its inputs.","gray")`
+
+Average costs (for a firm) may be increasing or decreasing in quantity. This depends on the *returns to scale*.
+
+\
+
+
+
+
+## Returns to scale {#rts}
+
+`r format_with_col("Note: I will add a formal depiction of returns to scale here, and explain how to determine the returns to scale for a particular function", "green")`
 
 *Are bigger firms always more efficient? Do things get cheaper to produce the more we produce?*
 
 
 If so, what limits the size of firms? I.e., why don't we see only one firm in each industry?
 
+
 Returns to scale
 :     The rate at which output increases in response to a proportional increase in *all* inputs.
 
 
-***
+\
 
 Constant returns to scale (CRS)
 :     If inputs increase by a factor of X, output increases by a factor equal to X.
@@ -406,7 +453,69 @@ Decreasing returns to scale (DRS)
 :     If inputs increase by a factor of X, output increases by a factor less than X.
 
 
-***
+\
+
+- Increasing average costs $\leftrightarrow$ Decreasing returns to scale
+
+
+- Decreasing average costs $\leftrightarrow$ Increasing returns to scale
+
+
+- Constant average costs $\leftrightarrow$ Constant returns to scale
+
+
+<br> <br> \bigskip
+
+`r format_with_col("Consider: why/when would we expect DRS/IRS/CRS?","blue")` (We discuss this [further below](IRS-DRS-reasons).)
+
+
+The shape of the marginal cost curve depends on the production function
+
+- Constant returns to scale: constant MC (and no FC)
+
+- Decreasing returns to scale: increasing MC
+
+- Increasing returns to scale: decreasing MC (and/or constant FC)
+
+
+\
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/crsTCcurve.png")
+```
+
+\
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/crscostcurves.png")
+```
+
+\
+
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/drsTCcurve.png")
+```
+
+\
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/drscostcurves.png")
+```
+
+\
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/irsTCcurve.png")
+```
+
+\
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/irscosts_fix.png")
+```
+
+\
 
 ### Arguments/reasons for scale (dis)economies {#IRS-DRS-reasons}
 
@@ -428,15 +537,9 @@ Decreasing returns to scale (DRS)
     - Larger firm $\rightarrow$ harder to make CEO liable for losses
 
 
-\textcolor{RawSienna}{Advanced footnote}^[ I think the first point is valid, but it doesn't suggest that 2 firms would be more efficient than 1; these DRS would set in as a function of  *total* output, not a single firm's output. The second and third arguments are complicated and perhaps harder to justify. The case for DRS is unproven, IMHO]
+`r format_with_col("Advanced footnote","RawSienna")`^[ I think the first point is valid, but it doesn't suggest that 2 firms would be more efficient than 1; these DRS would set in as a function of  *total* output, not a single firm's output. The second and third arguments are complicated and perhaps harder to justify. The case for DRS is unproven, IMHO]
 
-\textcolor{gray}{Mock exam question:
-Give one reason why production may exhibit 'increasing returns to scale' and one reason why it may have 'decreasing returns to scale'.}
-
-
-[comment]: <> (pre2018BB)
-
-***
+\
 
 ### Interesting case: 'Minimum efficient scale' (MES) production
 
@@ -447,21 +550,28 @@ Give one reason why production may exhibit 'increasing returns to scale' and one
     - Here MES is 100
         - You should produce in multiples of 100, but could be CRS for each multiple of 100
 
-\includegraphics[height=1.5in]{picsfigs/3dhead.jpg}
+```{r  fig.cap = '', out.height='15%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/3dhead.jpg")
+```
 
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/mesTCcurve.png")
+```
 
-- Remember, in a perfectly competitive market, firms must produce as cheaply as all other firms, or exit
+- As we shall see, in a perfectly competitive market, firms must produce as cheaply as all other firms, or they must exit
 
-## Suggested practice problems from Nicholson and Snyder Chapter 6 (12th ed)
+## Some suggested practice problems from Nicholson and Snyder Chapter 6 (12th ed)
 
 'Problems':
 
 6.1, 6.3, 6.5, 6.7 (very useful)
 
-- Multiple choice questions to be posted soon (as part of a formative assessment)
+See problem set (when posted)
 
-[comment]: <> (pre2018EE)
 
-[comment]: <> (pre2018BB)
+Give one reason why production may exhibit 'increasing returns to scale' and one reason why it may have 'decreasing returns to scale'.", "gray")`
+  \
+
+
 
 
