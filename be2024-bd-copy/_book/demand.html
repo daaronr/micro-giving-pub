@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>5 The Demand function (L3) | Intermediate Microeconomics (applied); produced for Exeter BEE2038</title>
   <meta name="description" content="Created for Exeter’s BEE2038: Intermediate Microeconomics (applied)" />
-  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.14.1 and GitBook 2.6.7" />
 
   <meta property="og:title" content="5 The Demand function (L3) | Intermediate Microeconomics (applied); produced for Exeter BEE2038" />
   <meta property="og:type" content="book" />
@@ -24,15 +24,15 @@
 <meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
 
 
-<meta name="date" content="2019-10-14" />
+<meta name="date" content="2019-10-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="util-choice.html">
-<link rel="next" href="production-costs.html">
+<link rel="prev" href="util-choice.html"/>
+<link rel="next" href="production-costs.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -40,6 +40,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -264,7 +267,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.20" data-path="demand.html"><a href="demand.html#further-material-to-study"><i class="fa fa-check"></i><b>5.20</b> Further material to study</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="production-costs.html"><a href="production-costs.html"><i class="fa fa-check"></i><b>6</b> Production and costs (brief coverage)(L4)</a><ul>
-<li class="chapter" data-level="6.1" data-path="production-costs.html"><a href="production-costs.html#lecture-30-min---production-and-costs-brief-treatment-coverage"><i class="fa fa-check"></i><b>6.1</b> Lecture (30 min) - Production and costs (brief treatment: coverage)</a></li>
+<li class="chapter" data-level="6.1" data-path="production-costs.html"><a href="production-costs.html#production-and-costs-brief-treatment-coverage"><i class="fa fa-check"></i><b>6.1</b> Production and costs (brief treatment: coverage)</a></li>
 <li class="chapter" data-level="6.2" data-path="production-costs.html"><a href="production-costs.html#the-firms-production-function"><i class="fa fa-check"></i><b>6.2</b> The Firm’s Production function</a></li>
 <li class="chapter" data-level="6.3" data-path="production-costs.html"><a href="production-costs.html#cost-minimizing-input-choice"><i class="fa fa-check"></i><b>6.3</b> Cost minimizing input choice</a></li>
 <li class="chapter" data-level="6.4" data-path="production-costs.html"><a href="production-costs.html#types-of-costs-basic-cost-concepts"><i class="fa fa-check"></i><b>6.4</b> Types of costs (‘Basic cost concepts’)</a></li>
@@ -276,6 +279,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#ps1_ans"><i class="fa fa-check"></i>First problem set with suggested answers</a></li>
 <li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#second-problem-set-preferences-utility-consumer-optimization"><i class="fa fa-check"></i>Second problem set: Preferences, Utility, Consumer optimization</a></li>
 <li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#second-problem-set-with-suggested-answers-preferences-utility-consumer-optimization"><i class="fa fa-check"></i>Second problem set with suggested answers: Preferences, Utility, Consumer optimization</a></li>
+<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#mock-mid-term-exam"><i class="fa fa-check"></i>Mock mid-term exam</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
@@ -1098,11 +1102,13 @@ A caveat is that it might do this for a long term strategic advantage; e.g., to 
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -1146,8 +1152,9 @@ gitbook.start({
     script.type = "text/javascript";
     var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(src))
-      src = src.replace(/^https?:/, '');
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();

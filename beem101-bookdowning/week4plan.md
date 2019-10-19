@@ -1,9 +1,3 @@
----
-title: "Beem101 4th week lecture"
-output:
-  pdf_document: default
-  html_document: default
----
 
 **Overall goal: Finish demand, begin production side**
 
