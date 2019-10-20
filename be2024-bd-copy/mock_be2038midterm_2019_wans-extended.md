@@ -88,6 +88,7 @@ Microeconomic theory. Although you may be used to thinking of 'theory'
 as a bunch of woolly verbiage, in Economics it involves very formal
 mathematics (especially Real Analysis) and logic.
 
+\
 
 ###
 *(Choose all that are correct, and no more.)* Suppose we observe prices
@@ -128,6 +129,8 @@ curve not a supply curve.
 "if this data pertains to several dissimilar products, and we cannot
 separate these products in the data set." ---With several unrelated
 products it is unclear what this relationship would be depicting
+
+\
 
 ###
 
