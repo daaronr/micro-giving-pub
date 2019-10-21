@@ -4189,7 +4189,7 @@ Also, output is *observable and measurable}
 
 
 
-##Marginal product
+## Marginal product
 
 Marginal product
 :     Additional output from adding +1 unit of an input, holding other inputs constant.
