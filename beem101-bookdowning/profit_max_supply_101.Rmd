@@ -1,0 +1,339 @@
+# Profit maximisation and supply (L5-L6) {#profitmax}
+
+
+
+<!---
+
+Todo: give some motivation here!
+
+-->
+
+## Profit maximisation and supply - coverage
+
+- NS: Ch 8
+- IEA: 9.2 and 9.3 (parts)
+
+- 8.1 The nature of firms (why they exist, goals, etc)
+- 8.2 Profit maximisation
+- 8.3 Marginal revenue
+
+NOTE: includes trivial perfect competition case and 'monopoly' case
+
+- 8.4 Marginal revenue curve
+- 8.5 Supply decisions of a price-taking firm
+
+\
+
+*Key goals of this chunk*
+
+1. Understand the economist's definition(s) of a firm, and its goals
+1. Learn what 'marginal revenue' is
+- (and why it is less than the market price for a firm facing downward sloping demand)
+- but equal to the market price for a price-taking firm
+1. Understand the price and output choice (condition) for a price-taking firm
+- and a firm's shut-down/entry decision
+- and what *is* a 'price-taking firm'?
+
+\
+
+
+**Context**
+
+- We considered production functions and cost ...
+
+- We considered cost and cost minimization
+    - And expansion paths
+
+<br> <br> \bigskip
+
+*Now:* what **output** should the firm set to maximise profits?
+
+<br> <br> \bigskip
+
+*(Next: the consequences of this for the market)*
+
+## Important aside: What are 'firms' and why do they exist?
+
+
+Standard (classical) economics definition: A *firm* is an entity that transforms inputs into outputs.
+
+<br> <br> \bigskip
+
+
+We assume a firm's goal is to maximise profit.
+
+```{block2,  type='digression'}
+Ronald Coase asked the question "Why do large entities called 'firms' exist?"
+
+
+
+They engage in many activities and own many assets
+
+They often use 'command and control' within firms rather than markets
+
+This spawned a large literature on the 'theory of the firm' emphasizing things like incomplete contracts, hold-up, relationship specific assets, lobbying costs, and more.
+
+We will hopefully come back to this when we consider asymmetric information.
+
+```
+
+
+
+### Marginal revenue {-}
+
+Marginal revenue
+:     The additional gross income a firm gains from increasing the quantity it supplies by one unit
+
+
+Remember, given its choice of production the firm will always choose the highest price at which it can sell all the units it has produced.
+
+`r format_with_col("We will come back to this when we discuss","gray")` [monopolies](#monopolies-pd)
+
+<br> <br> \bigskip
+
+`r format_with_col("Q: What will be the impact of increasing quantity on a firm's revenue??","blue")`
+
+
+<br> <br> \bigskip
+
+
+- It can sell an additional unit at some price
+- But it may have to reduce prices on *all* units to do this (more on this later)
+
+
+
+
+$$R=p Q(p)$$
+
+<br> <br> \bigskip
+
+Or if we allow the 'inverse demand' P(q):
+
+$$R = q P(q)$$
+
+<br> <br> \bigskip
+
+$$MR = \frac{\partial R}{\partial q} = P(q) +q P'(q)$$
+
+(This is a very nice intuitive use of the product rule in differentiation.)
+
+\
+
+
+### MR for firm facing 'downward-sloping demand'^[See example in table 1 in text.] {-}
+
+
+Assume it's charging a single price to all consumers.
+
+$\rightarrow$ It can sell more only by reducing price on *all units*
+
+E.g., it can sell 51 units rather than 50 by reducing price from £1 to £0.99
+
+The marginal revenue is less than market price here *because*
+- Get (new) market price for additional unit $\rightarrow$ + £0.99
+- But lose £0.01 on all previous 50 units $\rightarrow$ - £0.50
+- So MR is £0.49
+
+
+```{r  fig.cap = '', out.width='65%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/Mrillustrated.png")
+```
+
+\
+
+**MR curves be like:**
+
+```{r  fig.cap = '', out.width='65%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/mrcurve.png")
+```
+
+
+`r format_with_col("Q: Why might MR curves typically decrease in Q?","blue")`^[ Ans: Demand curves slope down, so less revenue for each additional unit. \
+ Also, the *impact* of the reduced price is greater because the more we sell the more units this affects.]
+
+
+\
+
+### MR for a 'price-taking' firm {-}
+
+Under 'perfect competition' (which we will describe soon), each firm is a 'price-taker'
+
+Each firm:
+
+- gets market price P for each additional unit
+- the firm is small, so its output has (virtually) no impact on P ^[The NS text gives a good illustration and examples of why it is fine to assume that a small producer's output has no impact on price]
+    - (More on this later)
+
+
+
+<br> <br> \bigskip
+
+*Thus its marginal revenue is constant at $P$*!
+
+
+`r format_with_col("Note that for such a firm, the total revenue curve will be a straight line ... 'double quantity and you double revenue'","gray")`
+
+
+\
+
+## Profit-maximisation
+
+- If operating, set optimal output $q^*$
+- Under standard assumed conditions
+
+
+`r format_with_col("Advanced footnote","RawSienna")`^[ There are specific conditions for the existence of a 'unique maximum-profit quantity'. E.g., this will be ensured by everywher- decreasing marginal revenue and increasing or nondecreasing marginal costs]
+
+- ... profits are maximised at the unique $q^*$ such that $MR=MC$
+
+
+<br> <br> \bigskip
+
+
+This holds *for all types of firms*
+
+- For firms with market power ('price-setters') the MR takes into account the downward sloping demand curve.
+
+- For a price-taker, setting $MR(q)=MC(q)$ means setting $P=MC(q)$, because $P=MR(q)$
+
+
+\textcolor{blue}{Q:  Why? Suppose actual output was greater or less than q*.
+Explain what is true about marginal profits as output increases or decreases.}^[Ans:
+if q>q*, MR, which is decreasing in q, will be below MC.
+Firm can do better if it reduces q somewhat-- cost decrease will be larger than revenue decrease.
+ If $q<q^{\ast}$, $MR<MC$ -- better to increase q and revenue increases more than costs]
+
+\
+
+**Consider a firm with market power:**
+
+
+The firm wants to maximise profit. This means making the vertical distance between the revenue and cost curves as large as possible. \
+If the curves had differing slopes, profits could be increased by adjusting output in the direction in which the curves diverged. (Consider this starting from points $q_1$ or $q_2$ on the curves below.)
+
+```{r  fig.cap = '', out.height='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/fig8-1.png")
+```
+
+
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/monopmcmr.png")
+```
+
+
+
+## MR=mc condition for a price-taking firm
+
+$$MR(q) = P$$ ... because of price-taking
+
+Notice in the diagram below that the profits---the distance between total revenue (TC) and total costs (TC) is maximised at the quantity $q$ where $MR(q)=mc(q)$, i.e., where $P=mc(q)$.
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/mcmr_tc_tr.png")
+```
+
+<!---
+```{r  fig.cap = '', out.width='2in', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/pctcctr.png")
+```
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("pcmcmr.png")
+```
+-->
+
+\
+
+
+
+### Inverse elasticity markup rule, intuition {-}
+
+
+Price elasticity of demand for single firm’s output (q):
+
+$e_{q,p}$ = abs(\% change in q) / (\% change in P))
+
+
+\
+
+
+
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/elast_vs_mr.png")
+```
+
+
+\
+
+
+<br> <br> \bigskip
+
+Rearranging the MR (derivative of revenue wrt price) yields:
+
+$$MR= P(1-\frac{1}{e_{q,p}})$$
+
+
+Intuition: Sell another unit, gain 'P' on that unit
+but lose 'P $\times$ \% reduction in P needed for a \% increase in Q' on other units
+the last term is the inverse of price elasticity
+
+
+
+$$MR= P(1-\frac{1}{e_{q,p}})$$
+
+
+Setting MR=MC $\rightarrow$ 'markup as \% of price' $\frac{P-MC}{P}=\frac{1}{e_{q,p}}$
+
+*(You don't have to memorise this formula)*
+
+- It's called the 'Lerner markup rule'
+    - this 'markup as \% of price is also used as a measure of the extent of a firm's market power
+
+
+\
+
+
+## Supply decisions of a price-taking firm
+
+**Price-taking firms:** *How much should they charge?*
+
+They can sell all the output they and at market price P*. Will price at P*. We can see this is the case by considering points *other than this* and noting that these are always *worse* (for the firm):
+
+- Set p<P* $\rightarrow$  Sell same amount, earn less. Not smart!
+
+-  Set p>P* $\rightarrow$ Sell no units. Bad move!
+
+
+\
+
+**Price-taking firms** *How much should they produce?*
+
+
+One standard assumption is that $MC(0)<P^*$,  $MC(q)$ increasing in q (assumed)
+(... perhaps a more reasonable assumption is that there is at least some region for which AVC< $P^*$).
+
+Thus, the firm should choose q for which $MC(q) = P^*$
+
+$\rightarrow$  'Perfectly competitive firms price at marginal cost'
+
+\
+
+But if P* is below your average cost for *any possible* output q you must shut down!
+
+- If it's below '(short run) average variable costs', shut down right away; each unit you produce adds to your loss!
+
+- If it's below your (long-run) average cost, shut down before incurring any more fixed costs, you will never be able to produce at a profit!
+
+
+```{block2,  type='note'}
+*NOTE:* I am not focusing on the distinction between the short and long run cost curves in this module
+```
+
+## Some suggested practice problems from Nicholson and Snyder Chapter 8 (12th ed)
+
+'Problems':
+
+- 8.1
+- Supplemental: 8.5, 8.7
+
+

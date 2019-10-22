@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>8 Perfect competition in a single market (L7) | Intermediate Microeconomics (applied); produced for Exeter BEE2038</title>
+  <meta name="description" content="Created for Exeter’s BEE2038: Intermediate Microeconomics (applied)" />
+  <meta name="generator" content="bookdown 0.14.1 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="8 Perfect competition in a single market (L7) | Intermediate Microeconomics (applied); produced for Exeter BEE2038" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Created for Exeter’s BEE2038: Intermediate Microeconomics (applied)" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="8 Perfect competition in a single market (L7) | Intermediate Microeconomics (applied); produced for Exeter BEE2038" />
+  
+  <meta name="twitter:description" content="Created for Exeter’s BEE2038: Intermediate Microeconomics (applied)" />
+  
+
+<meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
+
+
+<meta name="date" content="2019-10-21" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="profitmax.html"/>
+<link rel="next" href="note-further-sections-to-be-added-as-we-progress.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<!-- font families -->
+
+<link href="https://fonts.googleapis.com/css?family=PT+Sans|Pacifico|Source+Sans+Pro" rel="stylesheet">
+
+<script src="js/hideOutput.js"></script>
+
+<!-- Mathjax -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/default.js"></script>
+
+ <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "TeX/AMSmath.js"],
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+        jax: ["input/TeX","output/CommonHTML"]
+      });
+      MathJax.Hub.processSectionDelay = 0;
+  </script>
+
+
+<!-- open review block -->
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+<!--
+<script type="text/javascript">
+
+// toggle visibility of R source blocks in R Markdown output
+function toggle_R() {
+  var x = document.getElementsByClassName('r');
+  if (x.length == 0) return;
+  function toggle_vis(o) {
+    var d = o.style.display;
+    o.style.display = (d == 'block' || d == '') ? 'none':'block';
+  }
+
+  for (i = 0; i < x.length; i++) {
+    var y = x[i];
+    if (y.tagName.toLowerCase() === 'pre') toggle_vis(y);
+  }
+
+    var elem = document.getElementById("myButton1");
+    if (elem.value === "Hide Global") elem.value = "Show Global";
+    else elem.value = "Hide Global";
+}
+
+document.write('<input onclick="toggle_R();" type="button" value="Hide Global" id="myButton1" style="position: absolute; top: 10%; right: 2%; z-index: 200"></input>')
+-->
+
+</script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { background-color: #f8f8f8; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Intermediate Microeconomics (applied)</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="note.html"><a href="note.html"><i class="fa fa-check"></i>Notes to students, outline</a><ul>
+<li class="chapter" data-level="" data-path="note.html"><a href="note.html#on-this-online-resource-and-the-textbook-options"><i class="fa fa-check"></i>On this online resource and the textbook options</a></li>
+<li class="chapter" data-level="" data-path="note.html"><a href="note.html#on-this-module-exeter-bee2038---intermediate-microeconomics---for-students-not-doing-a-straight-economics-degree"><i class="fa fa-check"></i>On this module (Exeter: BEE2038 - Intermediate Microeconomics - for students not doing a straight Economics degree)</a></li>
+<li class="chapter" data-level="" data-path="note.html"><a href="note.html#course-information"><i class="fa fa-check"></i>Course Information</a></li>
+<li class="chapter" data-level="" data-path="note.html"><a href="note.html#outline"><i class="fa fa-check"></i>Outline and description</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction to the module and ‘housekeeping’</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#the-first-chunk-aims-to-cover"><i class="fa fa-check"></i><b>1.1</b> The first chunk aims to cover:</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#me"><i class="fa fa-check"></i><b>1.2</b> Me</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#this-module"><i class="fa fa-check"></i><b>1.3</b> This module</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#problem-sets"><i class="fa fa-check"></i><b>1.4</b> Problem sets</a></li>
+<li class="chapter" data-level="1.5" data-path="intro.html"><a href="intro.html#my-feedback"><i class="fa fa-check"></i><b>1.5</b> Feedback on your highly-esteemed but extremely humble lecturer</a></li>
+<li class="chapter" data-level="1.6" data-path="intro.html"><a href="intro.html#module-story"><i class="fa fa-check"></i><b>1.6</b> The story of this module</a></li>
+<li class="chapter" data-level="1.7" data-path="intro.html"><a href="intro.html#the-big-small-question"><i class="fa fa-check"></i><b>1.7</b> The big (small) question</a></li>
+<li class="chapter" data-level="1.8" data-path="intro.html"><a href="intro.html#resources"><i class="fa fa-check"></i><b>1.8</b> Resources</a></li>
+<li class="chapter" data-level="1.9" data-path="intro.html"><a href="intro.html#how-to-do-well"><i class="fa fa-check"></i><b>1.9</b> How to do well</a></li>
+<li class="chapter" data-level="1.10" data-path="intro.html"><a href="intro.html#fortune-cookie-wisdom"><i class="fa fa-check"></i><b>1.10</b> Fortune Cookie Wisdom</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="models.html"><a href="models.html"><i class="fa fa-check"></i><b>2</b> Economic Models (L1-2)</a><ul>
+<li class="chapter" data-level="2.1" data-path="models.html"><a href="models.html#what-is-economics"><i class="fa fa-check"></i><b>2.1</b> What is Economics?</a></li>
+<li class="chapter" data-level="2.2" data-path="models.html"><a href="models.html#why-learn-these-models"><i class="fa fa-check"></i><b>2.2</b> Why learn these models?</a></li>
+<li class="chapter" data-level="2.3" data-path="models.html"><a href="models.html#economic-models"><i class="fa fa-check"></i><b>2.3</b> Economic Models</a></li>
+<li class="chapter" data-level="2.4" data-path="models.html"><a href="models.html#applications"><i class="fa fa-check"></i><b>2.4</b> Applications</a></li>
+<li class="chapter" data-level="2.5" data-path="models.html"><a href="models.html#basic-supply-demand-model"><i class="fa fa-check"></i><b>2.5</b> Basic Supply-Demand Model</a></li>
+<li class="chapter" data-level="2.6" data-path="models.html"><a href="models.html#how-economists-verify-or-assess-theoretical-models"><i class="fa fa-check"></i><b>2.6</b> How Economists ‘Verify’ (or Assess) Theoretical Models</a></li>
+<li class="chapter" data-level="2.7" data-path="models.html"><a href="models.html#positive-and-normative"><i class="fa fa-check"></i><b>2.7</b> Positive and normative</a></li>
+<li class="chapter" data-level="" data-path="models.html"><a href="models.html#review-questions-and-problems-from-ns-chapter-1"><i class="fa fa-check"></i>Review questions and problems from NS Chapter 1</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="math-tools.html"><a href="math-tools.html"><i class="fa fa-check"></i><b>3</b> Math tools and empirical analysis - – coverage outline</a><ul>
+<li class="chapter" data-level="3.1" data-path="math-tools.html"><a href="math-tools.html#other-maths-resources"><i class="fa fa-check"></i><b>3.1</b> Other maths resources</a></li>
+<li class="chapter" data-level="3.2" data-path="math-tools.html"><a href="math-tools.html#simple-stuff"><i class="fa fa-check"></i><b>3.2</b> Simple stuff</a></li>
+<li class="chapter" data-level="3.3" data-path="math-tools.html"><a href="math-tools.html#minimum-maximum-or-neither"><i class="fa fa-check"></i><b>3.3</b> Minimum, maximum, or neither?</a></li>
+<li class="chapter" data-level="3.4" data-path="math-tools.html"><a href="math-tools.html#multivar-functions"><i class="fa fa-check"></i><b>3.4</b> Functions of two or more variables (multivariate functions)</a></li>
+<li class="chapter" data-level="3.5" data-path="math-tools.html"><a href="math-tools.html#contourlines_math"><i class="fa fa-check"></i><b>3.5</b> Contour lines (we will come back to this later)</a></li>
+<li class="chapter" data-level="3.6" data-path="math-tools.html"><a href="math-tools.html#simultaneous-equations"><i class="fa fa-check"></i><b>3.6</b> Simultaneous equations</a></li>
+<li class="chapter" data-level="3.7" data-path="math-tools.html"><a href="math-tools.html#empirical"><i class="fa fa-check"></i><b>3.7</b> Empirical microeconomics/econometrics</a></li>
+<li class="chapter" data-level="3.8" data-path="math-tools.html"><a href="math-tools.html#empirical-meta-example"><i class="fa fa-check"></i><b>3.8</b> Empirical meta-example</a></li>
+<li class="chapter" data-level="3.9" data-path="math-tools.html"><a href="math-tools.html#changing-world-oil-prices"><i class="fa fa-check"></i><b>3.9</b> Changing world oil prices</a></li>
+<li class="chapter" data-level="3.10" data-path="math-tools.html"><a href="math-tools.html#data-and-economic-analysis-curtis-and-irvine"><i class="fa fa-check"></i><b>3.10</b> Data and economic analysis (Curtis and Irvine)</a></li>
+<li class="chapter" data-level="3.11" data-path="math-tools.html"><a href="math-tools.html#between-first-and-second-week-priority-home-study"><i class="fa fa-check"></i><b>3.11</b> Between first and second week; priority home-study</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="util-choice.html"><a href="util-choice.html"><i class="fa fa-check"></i><b>4</b> Utility and Choice (L2)</a><ul>
+<li class="chapter" data-level="4.1" data-path="util-choice.html"><a href="util-choice.html#coverage-outline"><i class="fa fa-check"></i><b>4.1</b> Coverage outline</a></li>
+<li class="chapter" data-level="4.2" data-path="util-choice.html"><a href="util-choice.html#pre-util-choice"><i class="fa fa-check"></i><b>4.2</b> Preamble to utility and choice</a></li>
+<li class="chapter" data-level="4.3" data-path="util-choice.html"><a href="util-choice.html#some-motivation-for-these-abstract-ideas"><i class="fa fa-check"></i><b>4.3</b> Some motivation for these abstract ideas</a></li>
+<li class="chapter" data-level="4.4" data-path="util-choice.html"><a href="util-choice.html#utility"><i class="fa fa-check"></i><b>4.4</b> Utility</a></li>
+<li class="chapter" data-level="4.5" data-path="util-choice.html"><a href="util-choice.html#utility-from-two-goods"><i class="fa fa-check"></i><b>4.5</b> Utility from two goods</a></li>
+<li class="chapter" data-level="4.6" data-path="util-choice.html"><a href="util-choice.html#measuring-and-comparing-utilities"><i class="fa fa-check"></i><b>4.6</b> Measuring and comparing utilities</a></li>
+<li class="chapter" data-level="4.7" data-path="util-choice.html"><a href="util-choice.html#assumptions-about-preferences-axioms"><i class="fa fa-check"></i><b>4.7</b> Assumptions about preferences (‘axioms’)</a></li>
+<li class="chapter" data-level="4.8" data-path="util-choice.html"><a href="util-choice.html#voluntary-trades-and-indifference-curves"><i class="fa fa-check"></i><b>4.8</b> Voluntary trades and indifference curves</a></li>
+<li class="chapter" data-level="4.9" data-path="util-choice.html"><a href="util-choice.html#mrs"><i class="fa fa-check"></i><b>4.9</b> Marginal rate of substitution (MRS): Absolute value of slope of indifference curve</a></li>
+<li class="chapter" data-level="4.10" data-path="util-choice.html"><a href="util-choice.html#illustrating-particular-preferences"><i class="fa fa-check"></i><b>4.10</b> Illustrating particular preferences</a></li>
+<li class="chapter" data-level="4.11" data-path="util-choice.html"><a href="util-choice.html#app-2.3-product-positioning-in-marketing-not-covered-in-lecture-read-on-your-own"><i class="fa fa-check"></i><b>4.11</b> App 2.3: Product positioning in marketing (not covered in lecture, read on your own)</a></li>
+<li class="chapter" data-level="4.12" data-path="util-choice.html"><a href="util-choice.html#perfect-sub-comp"><i class="fa fa-check"></i><b>4.12</b> Definitions: Perfect substitutes and complements</a></li>
+<li class="chapter" data-level="4.13" data-path="util-choice.html"><a href="util-choice.html#choices-are-subject-to-constraints"><i class="fa fa-check"></i><b>4.13</b> Choices are subject to constraints</a></li>
+<li class="chapter" data-level="4.14" data-path="util-choice.html"><a href="util-choice.html#utilmax"><i class="fa fa-check"></i><b>4.14</b> Constrained utility maximization</a></li>
+<li class="chapter" data-level="4.15" data-path="util-choice.html"><a href="util-choice.html#corners"><i class="fa fa-check"></i><b>4.15</b> Note on ‘corner solutions’</a></li>
+<li class="chapter" data-level="4.16" data-path="util-choice.html"><a href="util-choice.html#app-2.4-ticket-scalping"><i class="fa fa-check"></i><b>4.16</b> App 2.4: ticket scalping</a></li>
+<li class="chapter" data-level="4.17" data-path="util-choice.html"><a href="util-choice.html#app-2.5-whats-a-rich-uncles-promise-worth-read-this-at-home."><i class="fa fa-check"></i><b>4.17</b> App 2.5: What’s a rich uncle’s promise worth? (Read this at home.)</a></li>
+<li class="chapter" data-level="4.18" data-path="util-choice.html"><a href="util-choice.html#using-the-model-of-choice"><i class="fa fa-check"></i><b>4.18</b> Using the model of choice</a></li>
+<li class="chapter" data-level="4.19" data-path="util-choice.html"><a href="util-choice.html#algebraicnumerical-examples"><i class="fa fa-check"></i><b>4.19</b> Algebraic/numerical examples</a></li>
+<li class="chapter" data-level="4.20" data-path="util-choice.html"><a href="util-choice.html#tutorial-problems-from-chapter-2"><i class="fa fa-check"></i><b>4.20</b> Tutorial problems from chapter 2</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="demand.html"><a href="demand.html"><i class="fa fa-check"></i><b>5</b> The Demand function (L3)</a><ul>
+<li class="chapter" data-level="5.1" data-path="demand.html"><a href="demand.html#coverage-outline-1"><i class="fa fa-check"></i><b>5.1</b> Coverage outline</a></li>
+<li class="chapter" data-level="5.2" data-path="demand.html"><a href="demand.html#demand-functions"><i class="fa fa-check"></i><b>5.2</b> Demand functions</a></li>
+<li class="chapter" data-level="5.3" data-path="demand.html"><a href="demand.html#homogeneity"><i class="fa fa-check"></i><b>5.3</b> Homogeneity</a></li>
+<li class="chapter" data-level="5.4" data-path="demand.html"><a href="demand.html#response-to-income-changes"><i class="fa fa-check"></i><b>5.4</b> Response to income changes</a></li>
+<li class="chapter" data-level="5.5" data-path="demand.html"><a href="demand.html#substitution-and-income-effects-from-a-fall-or-rise-in-price"><i class="fa fa-check"></i><b>5.5</b> Substitution and income effects from a fall (or rise) in <em>price</em></a></li>
+<li class="chapter" data-level="5.6" data-path="demand.html"><a href="demand.html#different-substitution-effects-of-a-price-change"><i class="fa fa-check"></i><b>5.6</b> Different substitution effects of a price change</a></li>
+<li class="chapter" data-level="5.7" data-path="demand.html"><a href="demand.html#the-legendary-giffen-good"><i class="fa fa-check"></i><b>5.7</b> The (legendary?) Giffen good</a></li>
+<li class="chapter" data-level="" data-path="demand.html"><a href="demand.html#recap"><i class="fa fa-check"></i>Quick recap</a></li>
+<li class="chapter" data-level="5.8" data-path="demand.html"><a href="demand.html#cpi"><i class="fa fa-check"></i><b>5.8</b> NS App 3.2: The CPI and its biases</a></li>
+<li class="chapter" data-level="5.9" data-path="demand.html"><a href="demand.html#the-lump-sum-principle"><i class="fa fa-check"></i><b>5.9</b> The Lump-Sum Principle</a></li>
+<li class="chapter" data-level="5.10" data-path="demand.html"><a href="demand.html#changes-in-the-price-of-another-goodcomplements-or-substitutes"><i class="fa fa-check"></i><b>5.10</b> Changes in the Price of Another Good;‘complements’ or ‘substitutes’</a></li>
+<li class="chapter" data-level="5.11" data-path="demand.html"><a href="demand.html#individual-demand-curves"><i class="fa fa-check"></i><b>5.11</b> Individual demand curves</a></li>
+<li class="chapter" data-level="5.12" data-path="demand.html"><a href="demand.html#shifts-in-an-individuals-demand-curve"><i class="fa fa-check"></i><b>5.12</b> Shifts in an individual’s demand curve</a></li>
+<li class="chapter" data-level="5.13" data-path="demand.html"><a href="demand.html#consumer-surplus"><i class="fa fa-check"></i><b>5.13</b> Consumer surplus</a></li>
+<li class="chapter" data-level="5.14" data-path="demand.html"><a href="demand.html#mktdemand"><i class="fa fa-check"></i><b>5.14</b> Market demand (function)</a></li>
+<li class="chapter" data-level="5.15" data-path="demand.html"><a href="demand.html#shifts-in-the-market-demand-curve"><i class="fa fa-check"></i><b>5.15</b> Shifts in the Market Demand Curve</a></li>
+<li class="chapter" data-level="5.16" data-path="demand.html"><a href="demand.html#elasticities"><i class="fa fa-check"></i><b>5.16</b> Elasticities</a></li>
+<li class="chapter" data-level="5.17" data-path="demand.html"><a href="demand.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>5.17</b> Price elasticity of demand</a></li>
+<li class="chapter" data-level="" data-path="demand.html"><a href="demand.html#examples-from-the-headlines"><i class="fa fa-check"></i>Examples from the headlines</a></li>
+<li class="chapter" data-level="5.18" data-path="demand.html"><a href="demand.html#properties-of-price-elasticity-of-demand"><i class="fa fa-check"></i><b>5.18</b> Properties of price elasticity of demand</a></li>
+<li class="chapter" data-level="5.19" data-path="demand.html"><a href="demand.html#income-elast"><i class="fa fa-check"></i><b>5.19</b> Income elasticity of demand; Normal, luxury, and inferior goods</a></li>
+<li class="chapter" data-level="5.20" data-path="demand.html"><a href="demand.html#further-material-to-study"><i class="fa fa-check"></i><b>5.20</b> Further material to study</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="production-costs.html"><a href="production-costs.html"><i class="fa fa-check"></i><b>6</b> Production and costs (brief coverage)(L4)</a><ul>
+<li class="chapter" data-level="6.1" data-path="production-costs.html"><a href="production-costs.html#production-and-costs-brief-treatment-coverage"><i class="fa fa-check"></i><b>6.1</b> Production and costs (brief treatment: coverage)</a></li>
+<li class="chapter" data-level="6.2" data-path="production-costs.html"><a href="production-costs.html#the-firms-production-function"><i class="fa fa-check"></i><b>6.2</b> The Firm’s Production function</a></li>
+<li class="chapter" data-level="6.3" data-path="production-costs.html"><a href="production-costs.html#marginal-product"><i class="fa fa-check"></i><b>6.3</b> Marginal product</a></li>
+<li class="chapter" data-level="6.4" data-path="production-costs.html"><a href="production-costs.html#cost-minimizing-input-choice"><i class="fa fa-check"></i><b>6.4</b> Cost minimizing input choice</a></li>
+<li class="chapter" data-level="6.5" data-path="production-costs.html"><a href="production-costs.html#types-of-costs-basic-cost-concepts"><i class="fa fa-check"></i><b>6.5</b> Types of costs (‘Basic cost concepts’)</a></li>
+<li class="chapter" data-level="6.6" data-path="production-costs.html"><a href="production-costs.html#rts"><i class="fa fa-check"></i><b>6.6</b> Returns to scale</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="profitmax.html"><a href="profitmax.html"><i class="fa fa-check"></i><b>7</b> Profit maximisation and supply</a><ul>
+<li class="chapter" data-level="7.1" data-path="profitmax.html"><a href="profitmax.html#profit-maximisation-and-supply---coverage"><i class="fa fa-check"></i><b>7.1</b> Profit maximisation and supply - coverage</a></li>
+<li class="chapter" data-level="7.2" data-path="profitmax.html"><a href="profitmax.html#important-aside-what-are-firms-and-why-do-they-exist"><i class="fa fa-check"></i><b>7.2</b> Important aside: What are ‘firms’ and why do they exist?</a></li>
+<li class="chapter" data-level="7.3" data-path="profitmax.html"><a href="profitmax.html#profit-maximisation"><i class="fa fa-check"></i><b>7.3</b> Profit-maximisation</a></li>
+<li class="chapter" data-level="7.4" data-path="profitmax.html"><a href="profitmax.html#mrmc-condition-for-a-price-taking-firm"><i class="fa fa-check"></i><b>7.4</b> MR=mc condition for a price-taking firm</a></li>
+<li class="chapter" data-level="7.5" data-path="profitmax.html"><a href="profitmax.html#supply-decisions-of-a-price-taking-firm"><i class="fa fa-check"></i><b>7.5</b> Supply decisions of a price-taking firm</a></li>
+<li class="chapter" data-level="7.6" data-path="profitmax.html"><a href="profitmax.html#some-suggested-practice-problems-from-nicholson-and-snyder-chapter-8-12th-ed"><i class="fa fa-check"></i><b>7.6</b> Some suggested practice problems from Nicholson and Snyder Chapter 8 (12th ed)</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="perfect-competition.html"><a href="perfect-competition.html"><i class="fa fa-check"></i><b>8</b> Perfect competition in a single market (L7)</a><ul>
+<li class="chapter" data-level="8.1" data-path="perfect-competition.html"><a href="perfect-competition.html#perfect-competition-in-a-single-market---coverage"><i class="fa fa-check"></i><b>8.1</b> Perfect competition in a single market - coverage</a></li>
+<li class="chapter" data-level="8.2" data-path="perfect-competition.html"><a href="perfect-competition.html#sr-supply"><i class="fa fa-check"></i><b>8.2</b> SR supply</a></li>
+<li class="chapter" data-level="8.3" data-path="perfect-competition.html"><a href="perfect-competition.html#sr-price-determination"><i class="fa fa-check"></i><b>8.3</b> SR Price determination</a></li>
+<li class="chapter" data-level="8.4" data-path="perfect-competition.html"><a href="perfect-competition.html#illustration-of-sr-price-determination"><i class="fa fa-check"></i><b>8.4</b> Illustration of SR price determination</a></li>
+<li class="chapter" data-level="8.5" data-path="perfect-competition.html"><a href="perfect-competition.html#shifts-in-s-and-d-curves"><i class="fa fa-check"></i><b>8.5</b> Shifts in S and D curves</a></li>
+<li class="chapter" data-level="8.6" data-path="perfect-competition.html"><a href="perfect-competition.html#the-long-run"><i class="fa fa-check"></i><b>8.6</b> The Long run</a></li>
+<li class="chapter" data-level="8.7" data-path="perfect-competition.html"><a href="perfect-competition.html#long-run-lr-supply"><i class="fa fa-check"></i><b>8.7</b> Long Run (LR) Supply (*)</a></li>
+<li class="chapter" data-level="8.8" data-path="perfect-competition.html"><a href="perfect-competition.html#consumer-and-producer-surplus-efficiency"><i class="fa fa-check"></i><b>8.8</b> Consumer and producer surplus, efficiency</a></li>
+<li class="chapter" data-level="8.9" data-path="perfect-competition.html"><a href="perfect-competition.html#suggested-practice-problems-from-nicholson-and-snyder-chapter-9-12th-ed"><i class="fa fa-check"></i><b>8.9</b> Suggested practice problems from Nicholson and Snyder Chapter 9 (12th ed)</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="note-further-sections-to-be-added-as-we-progress.html"><a href="note-further-sections-to-be-added-as-we-progress.html"><i class="fa fa-check"></i><b>9</b> Note: Further sections to be added as we progress</a></li>
+<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html"><i class="fa fa-check"></i>Problem sets</a><ul>
+<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#ps1"><i class="fa fa-check"></i>First problem set: Mathematical approaches, economic models, revision and warm-up</a></li>
+<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#ps1_ans"><i class="fa fa-check"></i>First problem set with suggested answers</a></li>
+<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#second-problem-set-preferences-utility-consumer-optimization"><i class="fa fa-check"></i>Second problem set: Preferences, Utility, Consumer optimization</a></li>
+<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#second-problem-set-with-suggested-answers-preferences-utility-consumer-optimization"><i class="fa fa-check"></i>Second problem set with suggested answers: Preferences, Utility, Consumer optimization</a></li>
+<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#mock-mid-term-exam"><i class="fa fa-check"></i>Mock mid-term exam</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Intermediate Microeconomics (applied); produced for Exeter BEE2038</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="perfect-competition" class="section level1">
+<h1><span class="header-section-number">8</span> Perfect competition in a single market (L7)</h1>
+<div id="perfect-competition-in-a-single-market---coverage" class="section level2">
+<h2><span class="header-section-number">8.1</span> Perfect competition in a single market - coverage</h2>
+<ul>
+<li>NS: Ch 9 (parts)</li>
+</ul>
+<!--
+ <font color='blue'>Third problem set: Costs/production, perfect competition in a single market, Welfare/General Equilibrium </font>
+-->
+<p><br />
+</p>
+<p><em>Key goals of this chunk</em></p>
+<ol style="list-style-type: decimal">
+<li>Understand how firms’ supply curves aggregate to a <em>market</em> supply curve?</li>
+<li>Revise: what is a ‘perfectly competitive market’?</li>
+<li>Understand the importance of entry and exit in such a market, and the implications for the short and long run:</li>
+</ol>
+<ul>
+<li>firms’ economic profits</li>
+<li>market price and</li>
+<li>reaction to a shift in the demand curve</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>Understand <em>consumer surplus</em> and <em>producer surplus</em> and the implications for welfare analysis</li>
+<li>Understand the concept of Pareto Optimality</li>
+<li>Learn the argument for why a perfectly competitive market may lead to a Pareto Optimal outcome (under certain conditions)</li>
+<li>Understand the critiques of this, and the idea of ‘market failure’</li>
+</ol>
+<p><br />
+</p>
+<div id="motivating-questions" class="section level3 unnumbered">
+<h3>Motivating questions</h3>
+<ul>
+<li>With many ‘price taking firms’, how does <em>aggregate</em> supply respond to changes in demand?
+<ul>
+<li>Can such firms make a profit in the short run? In the long run?</li>
+</ul></li>
+<li>If demand for a good increases (demand curve shifts out), because preferences change, or because population increases,
+<ul>
+<li>… should we expect the price of the good to rise in the short or long run?<a href="#fn71" class="footnote-ref" id="fnref71"><sup>71</sup></a></li>
+</ul></li>
+</ul>
+<p><br> <br> </p>
+<p><strong>Deeper:</strong></p>
+<p>Should we expect ‘competition’ to lead to the most efficient outcomes, and if so, when and under what conditions?</p>
+<ul>
+<li><p>Would it be better to restrict the entry of firms, or have a single firm with a guaranteed monopoly?</p></li>
+<li><p>Would it be better to restrict or regulate prices?</p></li>
+</ul>
+
+<div class="note">
+<p>These questions are at the core of political and economic debates
+throughout the 19th and 20th century. Mercantilists vs physiocrats (classical liberals),
+Socialists vs laissez-faire
+debates over ‘industrial policy’ and ‘trust-busting’, etc</p>
+</div>
+
+<p><br />
+</p>
+<p><strong>‘’Urgent’’ question: Brexit</strong><a href="#fn72" class="footnote-ref" id="fnref72"><sup>72</sup></a></p>
+<p>Trade with EU countries may default to WTO terms. There may be very large tariffs on some goods, ‘non-tariff barriers’ on others. UK (and EU) firms face an unknown impact on input prices, demand curves, competition, etc.</p>
+<p>Can ‘General Equilibrium (GE) models’ help predict these and help firms plan and reoptimise? How long will it take to return to some ‘equilibrium’?</p>
+<p><br> <br> </p>
+<ul>
+<li>Fewer firms in UK markets <span class="math inline">\(\rightarrow\)</span> less competition <span class="math inline">\(\rightarrow\)</span> loss of consumer surplus?</li>
+</ul>
+<p>We will have to decide on many new regulations bundled with new trade deals:</p>
+<ul>
+<li>Which of these are ‘pro-competitive’ or redress market failures and which restrain trade?</li>
+</ul>
+<p><br />
+</p>
+<p><font color='gray'>Skip the NS material on ‘Pricing in the very short run’</font></p>
+<p><br />
+</p>
+</div>
+</div>
+<div id="sr-supply" class="section level2">
+<h2><span class="header-section-number">8.2</span> SR supply</h2>
+<ul>
+<li><p>Number of firms in the market is fixed: no entry/exit</p></li>
+<li><p>Existing firms will respond to demand shifts by changing their quantity supplied</p></li>
+<li><p>Market supply curve: sum of each firm’s supply curve</p></li>
+</ul>
+<p><br />
+</p>
+<p>Under perfect competition each firm</p>
+<ul>
+<li>must charge the market price <span class="math inline">\(P^*\)</span></li>
+<li>produces q so that <span class="math inline">\(mc(q)=P^*\)</span>
+<ul>
+<li>as long as there is some output q where <span class="math inline">\(AVC \leq P*\)</span></li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+<p><br> <br> </p>
+<p>Thus, for every price <span class="math inline">\(P^{*}\)</span>, each firm produces the <span class="math inline">\(q\)</span> where <span class="math inline">\(mc(q)=P^{*}\)</span>.</p>
+<p><br />
+</p>
+<p><br> <br> </p>
+<p>This implies that its marginal cost curve <em>is</em> its supply curve!<br />
+</p>
+<p>(except where <span class="math inline">\(AVC(q)&gt;P^*\)</span> for all q; where it produces zero)</p>
+<p><font color='gray'>Note: Where the minimum AVC exceeds P*, the firm has no way to produce profitably, so it will produce nothing.</font></p>
+
+<div class="tip">
+<p>For a further revision, this process is well mapped out in a step-by step Powerpoint you can download <a href="http://web.mnstate.edu/stutes/notes/mankiwjustpp/firms_competitive.ppt">here</a>.</p>
+<p>Start from the beginning, this is specifically referred to beginning on about slide 20 ‘The Firm’s Long-Run Decision to Exit or Enter a Market’; use ‘presentation mode’.</p>
+<p>However, note that slide 19 states ‘the firm considers its sunk costs when deciding to exit, but ignores them when deciding whether to shut down.’ This is not stated precisely. They are referring to those ‘fixed costs’ which must be incurred at regular intervals (e.g., a license fee every year)… from the pov of midyear, this years’ license fee is sunk, but next year’s is not.</p>
+</div>
+
+<p><br />
+</p>
+<p><strong>To get the market supply curve:</strong></p>
+<p>Sum each firm’s supply curve <em>horizontally</em> (recalling that a price-taking firm’s supply curve is the relevant part of its MC curve).</p>
+<p>This is shown below:</p>
+<p><img src="picsfigs/srsupply.png" width="75%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="sr-price-determination" class="section level2">
+<h2><span class="header-section-number">8.3</span> SR Price determination</h2>
+<p>Sum each firm’s supply curve (part of MC curve) to get the <em>market</em> supply curve.</p>
+<p>Next sum individual demand curves to get the <em>market</em> demand curve.</p>
+<p><em>At what point do these intersect?</em></p>
+<ul>
+<li><p>At this price <span class="math inline">\(P^*\)</span> we have <span class="math inline">\(Q_D(P^*)=Q_S(P^*)\)</span></p></li>
+<li><p>We call this the (short run) <em>equilibrium</em> price</p></li>
+</ul>
+<p><br />
+</p>
+<p>This price may be above <em>average</em> variable or even <em>average total</em> costs for many firms (<span class="math inline">\(P^*&gt;AC\)</span>)</p>
+<p><span class="math inline">\(\rightarrow\)</span> They can make real <em>economic</em> profits! (But only in the short run.)</p>
+
+<div class="warning">
+<p>To avoid confusion, recall that firms are producing where their <em>marginal</em> costs equal the market price. MC are often assumed to <em>increase</em> as quantity increases; this means that only the cost of the <em>last</em> unit produced equals <span class="math inline">\(P^*\)</span>.</p>
+<p><br />
+</p>
+<p>Previous units had marginal costs <em>below</em> <span class="math inline">\(P^*\)</span>. Thus <em>average</em> (variable) costs may be below <span class="math inline">\(P^*\)</span></p>
+</div>
+
+</div>
+<div id="illustration-of-sr-price-determination" class="section level2">
+<h2><span class="header-section-number">8.4</span> Illustration of SR price determination</h2>
+<p><img src="picsfigs/srpd1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p><img src="picsfigs/srpd6.png" width="75%" style="display: block; margin: auto;" /></p>
+<div id="price-signal" class="section level3 unnumbered">
+<h3>Price signal</h3>
+<p>The price acts as a signal (leading to efficient choices):</p>
+<ul>
+<li>to firms, telling them ‘how much to produce’</li>
+</ul>
+<p>It tells them: ‘Don’t produce past the point where your marginal cost exceeds the price you can get in the market, jerk!’</p>
+<p>At the price where the market ‘clears’ <span class="math inline">\(Q_d=Q_s\)</span>.</p>
+<p><br />
+</p>
+<p>It also acts as a signal to <strong>consumers</strong>, telling them ‘how much to purchase’</p>
+<p>…and ‘which consumers should obtain the units produced’?</p>
+<p><br> <br> </p>
+<p>By the definition of the market-clearing price <span class="math inline">\(P^*\)</span>, consumers can buy all they desire at P.</p>
+<p>I.e., they can buy units until the last unit they buy gives them a marginal utility of <span class="math inline">\(P^*\)</span>.</p>
+<p><br> <br> </p>
+<p>This foreshadows a result we will come to later, the efficiency of equilibrium outcomes (under given conditions).<br />
+The above result means that each consumer values the last unit they consume at the same amount.<br />
+</p>
+<p>Thus, we <em>never</em> have that the ‘wrong’ consumer obtains the good.</p>
+<p>This in term implies there can be no further gains from ‘exchange among consumers’.<br />
+</p>
+<p><br />
+</p>
+<p>If prices were too low (e.g., because of a price ceiling), implying <span class="math inline">\(Q_d(p)&gt;Q_s(p)\)</span>, then demand would have to be rationed, and consumers who valued the product more than other consumers might not get as much.</p>
+</div>
+</div>
+<div id="shifts-in-s-and-d-curves" class="section level2">
+<h2><span class="header-section-number">8.5</span> Shifts in S and D curves</h2>
+<p>(See NS text; this is revision, to some extent.)</p>
+</div>
+<div id="the-long-run" class="section level2">
+<h2><span class="header-section-number">8.6</span> The Long run</h2>
+<p>Here we assume ‘free entry and exit’ of firms, and a large number of firms have access to the same production process.</p>
+<p>Suppose there are <em>positive economic profits</em> in an industry (for efficient producers)<a href="#fn73" class="footnote-ref" id="fnref73"><sup>73</sup></a></p>
+<p><br />
+</p>
+<p>I.e., suppose <span class="math inline">\(P^*&gt;AC(q)\)</span> for some q. This implies the following process.</p>
+<ul>
+<li><p><span class="math inline">\(\rightarrow\)</span> Firms enter</p></li>
+<li><p><span class="math inline">\(\rightarrow\)</span> Supply curve shifts out</p></li>
+<li><p><span class="math inline">\(\rightarrow\)</span> equilibrium price declines</p></li>
+<li><p><span class="math inline">\(\rightarrow\)</span> profits decline</p></li>
+<li><p>the above process continues until economic profit falls to zero</p></li>
+<li><p>i.e., until <span class="math inline">\(P^*=AC(q)\)</span> for the minimum AC q</p></li>
+</ul>
+
+<div class="digression">
+Note that positive economic profits are sometimes called ‘supernormal profits.’<br />
+Remember, economic profits are profits <em>after</em> subtracting the (opportunity) cost of capital, management, and other inputs.
+</div>
+
+<p><br />
+<br />
+</p>
+<p>Did you enjoy watching these dominoes fall? We can do it in the opposite direction too.</p>
+<p>Now instead suppose there are <em>negative economic profits</em> in an industry (for efficient producers)
+I.e., suppose<span class="math inline">\(P^*&lt;AC(q)\)</span> for any q. This implies the following series of events:</p>
+<ul>
+<li><p><span class="math inline">\(\rightarrow\)</span> Firms exit</p></li>
+<li><p><span class="math inline">\(\rightarrow\)</span> Supply curve shifts inwards</p></li>
+<li><p><span class="math inline">\(\rightarrow\)</span> equilibrium price rises</p></li>
+<li><p><span class="math inline">\(\rightarrow\)</span> profits rise</p></li>
+<li><p>the above process continues until economic profits rise to zero</p></li>
+<li><p>i.e., until <span class="math inline">\(P^*=AC(q)\)</span> for the minimum AC q</p></li>
+</ul>
+<p><br> <br> </p>
+<p><br />
+</p>
+<p><strong>Long Run Equilibrium</strong></p>
+<p><em>In long run equilibrium:</em></p>
+<ul>
+<li>Firms choose output to maximize their profits
+<ul>
+<li>Profit max: <span class="math inline">\(P^* = MC(q)\)</span></li>
+</ul></li>
+</ul>
+<p>No firms in the market want to exit, and no firms out of the market want to enter</p>
+<p>Zero economic profits:</p>
+<p><span class="math inline">\(P^* = AC(q)\)</span></p>
+<p><br />
+</p>
+<p><em>Also:</em></p>
+<p>With free entry and exit (and no limits on production)…</p>
+<p>All firms in the market must produce the quantity that <em>minimizes</em> their average cost,</p>
+<p>and all must have the same average cost.</p>
+<ul>
+<li>I.e., <span class="math inline">\(P* = min AC(q) = MC(q)\)</span> for any firm in the market</li>
+<li>I.e., the MC curve intersects the AC curve at its minimum point.
+<ul>
+<li>And this is the same average cost for all firms</li>
+</ul></li>
+</ul>
+<p><br> <br> </p>
+<p>All firms (in the market) produce the quantity <span class="math inline">\(q\)</span> that <em>minimizes</em> their AC, and for all firms this is the <em>same</em> average cost.</p>
+<p><br />
+</p>
+
+<div class="note">
+<p><strong>Why is this the case?</strong></p>
+<p>Why is <span class="math inline">\(P* = min [AC(q)] = MC(q)\)</span>? Which implies…</p>
+<ul>
+<li><p>no profit in equilibrium and firms produce at P=MC.</p></li>
+<li><p>and thus implies that <span class="math inline">\(P*=AC(q)=MC(q)\)</span> for all firms in the market.</p></li>
+</ul>
+<p><br> <br> </p>
+<p><em>Answer ‘by contradiction’:</em></p>
+<p>Suppose here that a firm were producing at a point <em>above</em> it’s minimum AC,</p>
+<p>i.e., suppose <span class="math inline">\(AC(q)&gt; min [AC(q)]\)</span>.</p>
+<p><br />
+</p>
+<p>This firm could instead produce at the q that minimised its AC, and make a profit (contradicting the above)</p>
+<p>… (and so would other firms, who’d be induced to enter)</p>
+<p>We assume a large number of firms have access to this efficient technology.<br />
+As previously mentioned, entry shifts the supply curve out, equilibrium price falls, until the point where <span class="math inline">\(P^*=AC(q)\)</span> for firms producing at this lowest AC point.</p>
+</div>
+
+<p><br />
+</p>
+</div>
+<div id="long-run-lr-supply" class="section level2">
+<h2><span class="header-section-number">8.7</span> Long Run (LR) Supply (*)</h2>
+<p>(* Note: In 2019 this is not covered in detail and it will not appear explicitly on the mid-term assessment, but it might be part of a ‘choose-able’ question on the final assesment.)</p>
+<p>We have the SR supply curve (upward sloping). But we know that in the long run this will shift out in response to a price change. Taking this shift into account gives us the <em>Long Run Supply Curve.</em></p>
+<p>To avoid confusion, note:<br />
+In the SR there are movements <em>along</em> this curve in response to price changes.<br />
+In the longer run, it does shift in response to price changes, as firms enter.<br />
+The LR supply curve, which we will now define, does <em>not</em> shift in response to price changes<br />
+But other things may cause it to shift, like changes in input costs</p>
+<p><br> <br> </p>
+<p><strong>So what will the LR supply curve look like?</strong></p>
+<ul>
+<li>If demand shifts out, do more enter and produce at the same efficient minimum AC?
+<ul>
+<li>Depends on whether entry and higher aggregate production <em>change</em> the firms’ cost functions</li>
+<li><em>Input costs</em> may rise; increased demand for scarce inputs, skilled workers and public resources</li>
+<li>(Also, other potential ‘externalities’ between firms, consumers, e.g., network externalities)</li>
+</ul></li>
+</ul>
+<p>DR opinion…<a href="#fn74" class="footnote-ref" id="fnref74"><sup>74</sup></a></p>
+<p><br> <br> </p>
+<p><em>As alluded to in the introduction, this is relevant when we want to consider the impact of long run population and economic growth</em></p>
+<p>Economic and population growth leads to increased demands for most products (especially natural resources and other primary products). The shape of the LR supply curve tells us whether real resource prices will increase rapidly over time.<br />
+</p>
+<p>The relative slope for different products tells us which prices will rise <em>relative</em> to prices for other goods. E.g., will housing become relatively more or less expensive?</p>
+<!---
+Todo: Motivation: Baumol effect
+-->
+<div id="lr-supply-constant-cost-case" class="section level3 unnumbered">
+<h3>LR Supply: Constant cost case</h3>
+<p><img src="picsfigs/LR_constantcost.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+</div>
+<div id="lr-supply-increasing-cost-case" class="section level3 unnumbered">
+<h3>LR Supply: Increasing cost case</h3>
+<p><img src="picsfigs/incrcosts_lrsupply.png" width="80%" height="90%" style="display: block; margin: auto;" /></p>
+<p>In the above diagram, we have:</p>
+<ul>
+<li><p>Initial market equilibrium: P1, Q1<br />
+</p></li>
+<li><p>Increase in demand to D’ <span class="math inline">\(\rightarrow\)</span> price to P2 in SR <span class="math inline">\(\rightarrow\)</span> firms produce at q2, profit <span class="math inline">\(\rightarrow\)</span><br />
+</p></li>
+<li><p>Profit attracts new firms. <span class="math inline">\(\rightarrow\)</span> costs rise to the levels shown in (b). <span class="math inline">\(\rightarrow\)</span><br />
+</p></li>
+<li><p>New equilibrium at P3, Q3.</p></li>
+</ul>
+<p><br />
+</p>
+<p><em>Long-run elasticity of supply:</em> % change in LR <span class="math inline">\(Q^s\)</span> / % change P</p>
+<p><img src="picsfigs/lr_supplyelast_ests.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><small> (Various estimates over the years, see text) </small></p>
+<!---
+*Note:*
+Todo: give more explanation of the above
+-->
+</div>
+</div>
+<div id="consumer-and-producer-surplus-efficiency" class="section level2">
+<h2><span class="header-section-number">8.8</span> Consumer and producer surplus, efficiency</h2>
+<dl>
+<dt>Consumer surplus (reprise)</dt>
+<dd>The extra value individuals receive from consuming a good over what they pay for it. What people would be willing to pay for the right to consume a good at its current price.
+</dd>
+</dl>
+<ul>
+<li>The area between the demand curve and the market price</li>
+</ul>
+<p><br> <br> </p>
+<dl>
+<dt>Producer surplus</dt>
+<dd>The extra value producers get for a good in excess of the opportunity costs they incur by producing it. What all producers would pay for the right to sell a good at its current market price.
+</dd>
+</dl>
+<ul>
+<li>The area between the supply curve and the market price</li>
+</ul>
+<p>Basically producer surplus is profit + unavoidable costs.<br />
+In the short run you cannot shut down and avoid the fixed costs, whether or not you sell any units.<br />
+Since you are already incurring these, they don’t count against the benefit you would get from selling at the market price.</p>
+<ul>
+<li>In the long run, profits are zero, and all costs are variable, so producer surplus is zero<a href="#fn75" class="footnote-ref" id="fnref75"><sup>75</sup></a></li>
+</ul>
+<p><br />
+</p>
+<p><img src="picsfigs/prodsurp1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p><img src="picsfigs/prodsurp2.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p><img src="picsfigs/prodsurp3.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<div id="in-what-sense-is-a-competitive-market-efficient" class="section level3 unnumbered">
+<h3>In what sense is a competitive market efficient?</h3>
+<p>Economically efficient allocation of resources: maximizes the sum of consumer and producer surplus.
+- At market equilibrium there are no more mutually beneficial exchanges</p>
+<p><br> <br> </p>
+<p>Basically, a <em>competitive</em> market <em>in equilibrium</em> maximizes the sum of producer and consumer surplus.</p>
+<p><img src="picsfigs/consumerprodrsurplusmax.png" width="50%" style="display: block; margin: auto;" /></p>
+
+<div class="note">
+<p>Q* maximizes the sum of consumer and producer surplus. Any other quantity yields a lower sum.</p>
+<p>E.g., at Q1 in the above diagram we ‘lose’ the triangle FEG
+… this is called a ‘deadweight loss’ (‘DWL’) as it is a loss to society, it just disappears.</p>
+<p><br />
+</p>
+<p>We can use these models and concepts to study things like:</p>
+<ul>
+<li>‘Who suffers from a tax’ in the LR and SR?</li>
+<li>Who gains from technological innovation?</li>
+<li>Who gains and who is harmed by trade restrictions, and do the costs outweigh the benefits?</li>
+</ul>
+<p>This is also relevant to rail regulation and music copyright.</p>
+</div>
+
+</div>
+<div id="section" class="section level3">
+<h3><span class="header-section-number">8.8.1</span> </h3>
+
+<div class="digression">
+<p>Important caveat and discussion point</p>
+<p><em>Should price-taking firms and perfect competition be our ‘baseline’ dominant model? Is it reasonable to assume:</em></p>
+<ul>
+<li><p>Free entry of firms/no ‘barriers’?</p></li>
+<li><p>Homogenous products?</p></li>
+<li><p>Decreasing returns to scale at some point?</p></li>
+</ul>
+<p>These conditions will indeed lead to perfect competition/MC pricing.</p>
+<p>But many markets have large entry costs, first-mover advantages, and perhaps continuously increasing returns to scale. This will lead to monopoly or oligopoly in the absence of regulation.</p>
+<p>Perhaps even more crucially, most products are also ‘differentiated’; if one firm charges slightly more than another firm, it will still capture the demand from those people whose are ‘close’ to it. People will pay a little extra to not travel as far. They will also pay a little extra to get the product that most suits their preferences. In this case, with free entry, we have something known as ‘monopolistic competition’, which has some of the characteristics of monopoly (e.g., pricing above marginal cost) and some characteristics of perfect competition (e.g., zero long-run profits). This model is another candidate for bring the dominant model; there is an active debate about this!</p>
+</div>
+
+</div>
+</div>
+<div id="suggested-practice-problems-from-nicholson-and-snyder-chapter-9-12th-ed" class="section level2">
+<h2><span class="header-section-number">8.9</span> Suggested practice problems from Nicholson and Snyder Chapter 9 (12th ed)</h2>
+<p>‘Micro-quizes’
+9.2, 9.3, 9.4,</p>
+<p>‘Problems’:
+- 9.3a and b
+- 9.5?
+- 9.9 a-d?</p>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="71">
+<li id="fn71"><p>Note: in 2019 we are not covering the LR supply curve quite as much<a href="perfect-competition.html#fnref71" class="footnote-back">↩</a></p></li>
+<li id="fn72"><p>This seemed to be an urgent question in 2016 when I first wrote this section. It still seems to be an urgent question.<a href="perfect-competition.html#fnref72" class="footnote-back">↩</a></p></li>
+<li id="fn73"><p>For a further revision, this process is well mapped out in a step-by step Powerpoint you can download: <a href="https://www.dropbox.com/s/vyvao528job7q0q/fc.ppt?dl=0" class="uri">https://www.dropbox.com/s/vyvao528job7q0q/fc.ppt?dl=0</a> (This is specifically referred to beginning on slide 39; use ‘presentation mode’)<a href="perfect-competition.html#fnref73" class="footnote-back">↩</a></p></li>
+<li id="fn74"><p>For a variety of reasons, we shouldn’t always expect the LR curve to be upward sloping. It might also be flat or downward sloping. Thus, if the demand curve for, e.g., microchips or personalised software shifts out, we may see that equilibrium price <em>declines</em> in the long run.<a href="perfect-competition.html#fnref74" class="footnote-back">↩</a></p></li>
+<li id="fn75"><p>Adv: When a firm owns a unique resource it can arguably make a LR profit called a ‘Ricardian rent’. However this could be seen as the return to an asset which should be ‘charged against’ these profits.<a href="perfect-competition.html#fnref75" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="profitmax.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="note-further-sections-to-be-added-as-we-progress.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": true,
+"weibo": true,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
