@@ -1,0 +1,425 @@
+# Key principles for efficiency and 'general' equilibrium
+
+## General equilibrium and efficiency: Coverage
+
+- This is a very brief excerpt and summary of the material in NS chapter 10, with some additional motivation
+- If you understand these slides/notes you don't have to read chapter 10
+
+
+We can show that *under certain conditions* competitive markets will be efficient in equilibrium.
+
+However:
+
+- Some markets may not reach equilibrium 'quickly'
+- These conditions may not hold $\rightarrow$ *market failure*
+
+- Efficiency itself does not imply preferred outcomes: there can be a great deal of inequality
+
+\
+
+*General Equilibrium* analysis considers the entire economy as a system of markets which may interact with one another
+
+- General equilibrium: a set of prices so that $Q_s(P)=Q_d(P)$ in all markets, including input markets
+- Markets are interdependent
+    - E.g., a government push for tomato consumption may shift tomato demand out and prices up
+    - this may lead in the LR, to a shift out in tomato supply curves (firms enter)
+    - this may increase the demand for *inputs* such as farm labour, raising the cost of production of other vegetables
+    - etc.
+- Will we return to equilibrium, and with what prices and quantities?
+- Stay tuned true believers! (and take more Econ, because we won't cover it here)
+
+\
+
+Overall Pareto efficiency: no one can be made better off without making someone else worse off
+
+- If we *could* do so, we would not be at an efficient point
+
+
+*Note:*
+Pareto efficiency is hard to disagree with, as a policy goal; \
+if we could move to a situation where some were better off and none made worse off, we should do it.
+
+Overall efficiency requires several conditions: Productive, Exchange, and Top-level efficiency
+
+
+Efficiency in production (being on the PPF)
+:     No way to reallocate inputs to increase production of one good without reducing production of another
+
+
+<br> <br> \bigskip
+
+\begin{centering}
+
+Given society's resources, we are producing 'as much as possible'
+
+\end{centering}
+
+\
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/hightower_cartoon1.png")
+```
+
+Efficiency in production?
+
+
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/self-checkout.jpg")
+```
+
+
+
+\textcolor{gray}{Note: Basic argument for productive efficiency of competitive equilibrium:
+Firms hire more of each input until its 'bang for buck' is the same as all other inputs,
+and a single market price for the input will ensure this is the same across firms.
+This 'equilibrium' input price must reflect its marginal productivity
+in producing the 'last unit' for each and every firm.}
+
+\
+
+
+
+Efficiency in consumption (exchange efficiency)
+:     No way to reallocate output amongst consumers to make them all better off
+
+
+<br> <br> \bigskip
+
+
+<br> <br> \bigskip
+
+\begin{centering}
+
+Given what we're producing, it is going to the 'right consumers'.
+
+\end{centering}
+
+*Note--* Basic argument for productive efficiency of competitive equilibrium:
+If, given the 'endowments', one person values A in units B more than someone else,
+an equilibrium price ensures that they will trade these amongst one another until each has the same MRS
+The 'Edgeworth box' offers a graphical demonstration that this yields a Pareto optimum (given the amounts produced).
+
+\
+
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/exchange_efcy.png")
+```
+
+
+\
+
+
+## Edgeworth box scavenger hunt
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/Contract-curve-on-edgeworth-box.png")
+```
+
+<br> <br> \bigskip
+
+*Does this look familiar? Where can you find it at Exeter? What does it mean?*
+
+
+<br> <br> \bigskip
+
+**A basic argument for exchange efficiency of competitive equilibrium:**
+
+An equilibrium price ensures that they will trade these amongst one another until each has the same MRS.
+
+The 'Edgeworth box' offers a graphical demonstration that this yields a Pareto optimum (given the amounts produced).
+
+
+\
+
+Given our inputs, we can produce 'efficiently', i.e, along the PPF,
+
+
+and given the amounts of each good produced, it is 'consumed by the right people' (no more room for trade) ...
+
+
+
+yet we may still not be at efficiency? `r format_with_col("Why?","blue")`
+
+
+
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/toplevelefficiency.png")
+```
+
+
+
+We need to produce the right *combination* of goods.
+
+<br> <br> \bigskip
+<br> <br> \bigskip
+
+Efficient allocation of resources ('top-level' condition)
+:     No way to produce more of one good and less of another to make all consumers better off
+
+Note:
+
+Basic argument for top-level efficiency of competitive equilibrium:
+Equilibrium prices from exchange reflect each consumer's marginal rates of substitution for their  last unit
+This signals to firms the rate at which *all* consumers would be willing to trade off A for B at the margin
+In equilibrium firms produce at a point where the cost tradeoffs between A and B (slope of PPF) reflects these prices.
+
+
+\
+
+
+<!--
+Todo: give more explanation here
+-->
+
+First fundamental theorem of welfare economics
+:     A general competitive equilibrium is Pareto efficient, under standard assumptions.
+
+- Loose intuition: free exchange leaves no room for mutually-beneficial improvements, and firms and consumers optimise
+
+Second fundamental theorem
+:     Under some fancy assumptions, any Pareto efficient outcome is a competitive equilibrium for some pattern of initial endowments
+
+- So if we could costlessly redistribute *endowments*, we could attain any socially-desirable outcome by doing so, and then relying on the free market.
+
+\
+
+First fundamental theorem of welfare economics
+:     A general competitive equilibrium is Pareto efficient, under standard assumptions.
+
+<br> <br> \bigskip
+
+**But these assumptions may not hold, this there may be 'market failures'**
+
+1. Imperfect Competition
+
+- Markets may not be competitive, because of barriers to entry or increasing returns to scale
+- $\rightarrow$ Prices may not reflect marginal costs, leading to 'deadweight losses'
+
+
+<br> <br> \bigskip
+
+2. Externalities, public goods, altruism
+
+The assumptions require 'anything someone values' is bought and sold in the market on their own behalf.
+But:
+
+- Externalities: All costs (and benefits) may not be priced; e.g., pollution
+- Public goods (and bads): Many people may benefit from the same good (e.g., fireworks)
+- Altruism/interdependent utilities: People may care about *others'* consumption
+
+
+<br> <br> \bigskip
+
+3. Asymmetric information: People may have different information about the state of the world (costs, risks, a good's quality)
+
+4. Bounded rationality: people may not choose in their own best interests
+
+
+\
+
+**Second Welfare theorem** implied that if we could costlessly redistribute *endowments*, we could attain any socially-desirable outcome by doing so, and then relying on the free market.
+
+- But redistribution via 'optimal lump-sum' taxes is not so easy, as endowments may be unobservable
+
+- And redistribution based on things you can affect, e.g. income, may distort incentives.
+
+
+[comment]: <> (101BB)
+# Notes on supplementary reading
+
+- Supplementary reading:
+    - Slonim, Robert, Carmen Wang, and Ellen Garbarino. "The market for blood." The Journal of Economic Perspectives 28.2 (2014): 177-196.
+
+\
+
+## Key points:
+
+An unusual 'market' (or non-market)
+
+- Altruism, repugnance, asymmetric information about disease
+- Limited storage of blood
+- Many countries a largely or entirely *volunteer* supply, so no 'price' to donate
+    - Volunteer behavior responds to entirely different motivations! Not guided by demand.
+- $\rightarrow$  How efficient can it be?
+
+
+\
+
+>  imbalances between aggregate supply and demand are a major challenge in blood markets, including excess supply after disasters and insufficient supply at other times.
+
+<br> <br> \bigskip
+
+
+> not unexpected given that the blood market operates without market prices and with limited storage length (about six weeks) for whole blood.
+
+> Yet shifting to a system of paying blood donors seems a practical impossibility given attitudes toward paying blood donors and concerns that a paid system could compromise blood safety.
+
+\
+
+- Large variation in systems across countries (volunteer versus paid and family/friend donors)
+
+- Historical shifts:
+    - Paid 'blood on the hoof', markets needed immediate matching
+    - Better storage, blood banking, impersonal diffuse markets
+    - WWII: Patriotism, voluntary donations
+    - AIDS crisis
+
+\
+
+Issues with paying donors
+
+- Does it crowd out intrinsic motivation?
+- Does it bring moral hazard and 'select' the wrong, unsafe donors?
+- Is it harmful to the donors (paternalistic idea)
+- or otherwise 'repugnant'?
+
+
+
+Issues with volunteer supply
+
+- Not adequate in many countries
+- Responds to other motivations than actual need, as there is no price
+    - Donate more after disasters like 9-11 even where need is *not* high
+    - But agencies don't want to turn away donors ('ungrateful', signal 'never need blood')
+
+
+
+### Suggestions for improvements to blood market {-}
+
+- Techniques for boosting donations
+    - Mandate choice
+    - Symbolic and reputational rewards, gift exchange
+- Clearinghouse, donor registry, invitations
+
+
+[comment]: <> (101EE)
+
+
+## Some key things for midterm (recap)
+
+- How do economists measure and test models,
+    - techniques and terms used
+    - thoughts on estimating demand and supply curves
+
+. . .
+
+[comment]: <> (101BB)
+
+What is the use and interpretation of 'economic theory  and models', how are these tested, readings on this and on relevance for experiments.
+
+[comment]: <> (101EE)
+
+<br> <br> \bigskip
+
+<!---
+- Note that economists define 'surplus' as excess supply at the prevailing (or enforced) price and 'shortage' as excess demand at the prevailing (or enforced) price
+-->
+
+
+
+<br> <br> \bigskip
+
+- The 'axioms' over preferences, the justification for these, and what they imply for utility functions
+
+
+[comment]: <> (101BB)
+
+- Economists' views on 'what utility is'
+
+'Behavioural' challenges to the model of a consistent maximisation
+
+Revealed preference, tests for ciolations of transitivity
+
+[comment]: <> (101EE)
+
+
+\
+
+- Understand indifference curves and budget constraints well
+
+
+. . .
+
+
+- Conditions for consumer optimisation (obviously this is important) including for when a consumer will choose to consume none of a good
+
+
+[comment]: <> (101BB)
+
+- be able to state and solve a simple consumer optimisation problem, considering corner solutions
+
+[comment]: <> (101EE)
+
+<br> <br> \bigskip
+
+
+. . .
+
+- Definitions of 'types of goods' as implied by characteristics of the demand function
+
+- Impacts of price changes (own good, other good) and income on an individual's consumption, and what goes into this and how to depict it.
+
+
+[comment]: <> (101BB)
+
+- Lump sum principle, deadweight loss of commodity tax, gifts, or price subsidies
+
+[comment]: <> (101EE)
+
+- (Producer and) consumer surplus.
+
+
+. . .
+
+<br> <br> \bigskip
+
+- 'Applications', especially those discussed both in the assigned text and in the lectures.
+
+\
+
+[comment]: <> (pre2018BB)
+
+- Firm's conditions for optimisation in input choice.
+
+[comment]: <> (pre2018EE)
+
+- Firm's conditions for 'what quantity to choose' under different market conditions (price-taking, non-price-taking)
+
+[comment]: <> (101BB)
+
+- Which production functions have CRS, IRS, etc
+
+- *Why* IRS, DRS, etc?
+
+[comment]: <> (101EE)
+
+
+. . .
+
+<br> <br> \bigskip
+
+- Perfect competition in the LR and the SR, what profits look like, how prices move.
+
+
+. . .
+
+
+- Very basic idea of the efficiency of general equilibrium under perfect competition
+    - When it yields a Pareto-efficient outcome,
+
+    - very basically what the first and second welfare theorems mean.
+
+-  Components of efficiency (top-level, exchange, productive) and what these mean
+
+
+
+
+
+[comment]: <> (101BB)
+
+We will return to 'Market Failures: Asymmetric Information' (some of the NS text as well as  some additional notes readings after we have covered uncertainty and game theory
+
+[comment]: <> (101EE)
+
+
