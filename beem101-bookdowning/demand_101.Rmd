@@ -259,7 +259,25 @@ Todo: give more explanation here
  knitr::include_graphics("picsfigs/substfxperfect_trim.png")
 ```
 
+
+*Above*: We see
+
+- (Left) when goods are **perfect complements**, there is no Substitution effect of a price change. For prices $l$ and $l'$, the minimum-cost consumption that attains $U_1$ is the same point (A,B)
+
+- (Right) When goods are **perfect substitutes**, if the price changes, to attain $U_1$ at the lowest cost we must either
+  - See a complete shift to the other good, as above, if the 'better-bang-for-the-buck' product switches
+  - or see no change in the consumption, if the same product remains the better 'bang for the buck'
+
 \
+
+```{block2,  type='note'}
+Note that, for the above cases, if we consider the *combined* substitution and income effects of a price decrease in one good we will also see
+
+- Perfect complements: some increase in the number of combinations of each good consumed, and thus greater utility
+
+- Perfect substitutes: some increase in the amount of the original good consumed (or, if there is a switch, a larger amount of the other good than was initially affordable), and thus greater utility.
+```
+
 
 ## The (legendary?) Giffen good
 
@@ -374,7 +392,7 @@ The budget share on j plus the sum of the budget shares of other goods multiplie
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/axioms.png")
 ```
-
+  
 
 
 <br> <br> \bigskip
@@ -398,7 +416,18 @@ Expenditure function: How much income you need to to get a certain utility given
 $$E(p_x,p_y,U_0)=min(p_xx+p_yy) \text{ s.t. } U(x,y) \geq U_0$$
 
 *Min* and not *argmin* ... the expenditure amount 
+
+\
+
 Hicksian (compensated) Demand for X: The amount of X I consume in a 'minimising expenditure' bundle that yields some level of utility ($U_0$)
+
+\
+
+With two goods, x and y, the Hicksian demand for x is the first, 'x' element of the below ('Hicksian demand vector x,y')
+
+$$h_{x,y}(p_x,p_y,U_0)=arg\min_{x,y} (p_xx+p_yy) \text{ s.t. } U(x,y) \geq U_0$$
+
+
 
 *Note:*
 These functions are actually used in 'structural' estimates of demand used in merger analysis, pricing, litigation consulting, etc.
@@ -437,7 +466,6 @@ $$E\Big(p_x,p_y,V(p_x,p_y,I_0)\Big)=I_0$$
 ### Hicksian (compensated) and Marshallian (regular) identities {-}
 
 
-
 $$h_x(p_x,p_y,U_0)=d_x(p_x,p_y,E(p_x,p_y,U_0))$$
 
 
@@ -474,7 +502,7 @@ But why is it OK to consider this 'from the initial consumption point' and not a
 
 <br> <br> \bigskip
 
-Intuition for Sheppard's Lemma  is easier.  How much more do we need to spend to get the same utility if $p_x$ rises? 
+Intuition for Sheppard's Lemma is easier.  How much more do we need to spend to get the same utility if $p_x$ rises? 
 
 We must spend, at the margin, at a rate equal to our previous consumption of $x$, $h_x$. Again, we don't need to consider the adjustment to the consumption bundle in answering this *particular* question because of the envelope theorem.
 
@@ -498,7 +526,6 @@ At the margin, the change in demand for X in response to a change in its price s
 
 A similar result applies to a change in *another* good's price, with similar intuition
 
-[comment]: <> (101EE)
 
 
 

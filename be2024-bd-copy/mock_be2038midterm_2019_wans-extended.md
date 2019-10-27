@@ -53,7 +53,7 @@ public financial reportings. Each firm's 4-digit SIC industry code is
 reported and merged to an independent measure of regulatory burden by
 industry by year.
 
-\ 
+\
 
 Note, the other choices depict, respectively: a. aggregated data (not
 micro-data, not firm-level data) b. a panel dataset not repeated
@@ -131,6 +131,8 @@ separate these products in the data set." ---With several unrelated
 products it is unclear what this relationship would be depicting
 
 \
+
+See my youtube video on a related question [HERE](https://www.youtube.com/watch?v=gIejQCcuZP8&list=PLwCHmz77VrK1oG-QY_OuALehZRsxYOXeB&index=3&t=89s)
 
 ###
 
