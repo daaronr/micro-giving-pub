@@ -1206,7 +1206,9 @@ Decreasing returns to scale (DRS)
 **IRS**
 
 - Fixed costs (incorporation, buildings, management, planning, R\&D) spread over more units
+
 - Should always be able to at least 'double everything' and produce twice as much? (so at least CRS)
+
 - Scale allows specialisation
 
 
@@ -2085,10 +2087,10 @@ Overall Pareto efficiency: no one can be made better off without making someone 
 
 - If we *could* do so, we would not be at an efficient point
 
-
-*Note:*
+```{block2,  type='note'}
 Pareto efficiency is hard to disagree with, as a policy goal; \
 if we could move to a situation where some were better off and none made worse off, we should do it.
+```
 
 Overall efficiency requires several conditions: Productive, Exchange, and Top-level efficiency
 
@@ -2099,16 +2101,13 @@ Efficiency in production (being on the PPF)
 
 <br> <br> \bigskip
 
-\begin{centering}
+<center> Given society's resources, we are producing 'as much as possible' </center>
 
-Given society's resources, we are producing 'as much as possible'
-
-\end{centering}
 
 \
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("hightower_cartoon1.png")
+ knitr::include_graphics("picsfigs/hightower_cartoon1.png")
 ```
 
 Efficiency in production?
@@ -2116,7 +2115,7 @@ Efficiency in production?
 
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("self-checkout.jpg")
+ knitr::include_graphics("picsfigs/self-checkout.jpg")
 ```
 
 
@@ -2154,7 +2153,7 @@ The 'Edgeworth box' offers a graphical demonstration that this yields a Pareto o
 \
 
 ```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("exchange_efcy.png")
+ knitr::include_graphics("picsfigs/exchange_efcy.png")
 ```
 
 
@@ -2164,7 +2163,7 @@ The 'Edgeworth box' offers a graphical demonstration that this yields a Pareto o
 ## Edgeworth box scavenger hunt
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("Contract-curve-on-edgeworth-box.png")
+ knitr::include_graphics("picsfigs/Contract-curve-on-edgeworth-box.png")
 ```
 
 <br> <br> \bigskip
@@ -2180,11 +2179,9 @@ An equilibrium price ensures that they will trade these amongst one another unti
 
 The 'Edgeworth box' offers a graphical demonstration that this yields a Pareto optimum (given the amounts produced).
 
-[comment]: <> (2024BB)
 
-*Note:* You do not need to know how the Edgeworth box works; we do not have time to cover this.
+`r format_with_col("*Note:* You do not need to know how the Edgeworth box works; we do not have time to cover this.","gray")`
 
-[comment]: <> (2024EE)
 
 \
 
@@ -2200,7 +2197,7 @@ yet we may still not be at efficiency? `r format_with_col("Why?","blue")`
 
 
 ```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("toplevelefficiency.png")
+ knitr::include_graphics("picsfigs/toplevelefficiency.png")
 ```
 
 
@@ -2213,12 +2210,16 @@ We need to produce the right *combination* of goods.
 Efficient allocation of resources ('top-level' condition)
 :     No way to produce more of one good and less of another to make all consumers better off
 
-Note:
+
+```{block2,  type='note'}
 
 Basic argument for top-level efficiency of competitive equilibrium:
 Equilibrium prices from exchange reflect each consumer's marginal rates of substitution for their  last unit
 This signals to firms the rate at which *all* consumers would be willing to trade off A for B at the margin
 In equilibrium firms produce at a point where the cost tradeoffs between A and B (slope of PPF) reflects these prices.
+
+```
+
 
 
 \
@@ -2281,95 +2282,8 @@ But:
 - And redistribution based on things you can affect, e.g. income, may distort incentives.
 
 
+`r format_with_col("Note: we are skipping 'Market Failures: Asymmetric Information'; this is not covered in this module","grey")`
 
-
-## Some key things for midterm (recap)
-
-- How do economists measure and test models,
-    - techniques and terms used
-    - thoughts on estimating demand and supply curves
-
-. . .
-
-
-<br> <br> \bigskip
-
-<!---
-- Note that economists define 'surplus' as excess supply at the prevailing (or enforced) price and 'shortage' as excess demand at the prevailing (or enforced) price
--->
-
-
-
-<br> <br> \bigskip
-
-- The 'axioms' over preferences, the justification for these, and what they imply for utility functions
-
-
-
-
-\
-
-- Understand indifference curves and budget constraints well
-
-
-. . .
-
-
-- Conditions for consumer optimisation (obviously this is important) including for when a consumer will choose to consume none of a good
-
-
-
-<br> <br> \bigskip
-
-
-. . .
-
-- Definitions of 'types of goods' as implied by characteristics of the demand function
-
-- Impacts of price changes (own good, other good) and income on an individual's consumption, and what goes into this and how to depict it.
-
-
-
-- (Producer and) consumer surplus.
-
-
-. . .
-
-<br> <br> \bigskip
-
-- 'Applications', especially those discussed both in the assigned text and in the lectures.
-
-\
-
-
-- Firm's conditions for 'what quantity to choose' under different market conditions (price-taking, non-price-taking)
-
-
-
-. . .
-
-<br> <br> \bigskip
-
-- Perfect competition in the LR and the SR, what profits look like, how prices move.
-
-
-. . .
-
-
-- Very basic idea of the efficiency of general equilibrium under perfect competition
-    - When it yields a Pareto-efficient outcome,
-
-    - very basically what the first and second welfare theorems mean.
-
--  Components of efficiency (top-level, exchange, productive) and what these mean
-
-
-
-[comment]: <> (2024BB)
-
-## Note: we are skipping 'Market Failures: Asymmetric Information'; this is not covered in this module
-
-[comment]: <> (2024EE)
 
 
 
@@ -2389,7 +2303,7 @@ BEGINLEC8
 *Note:* `r format_with_col("Some parts of this material relate strongly to game theory. I will give you a preview of game theory as we consider these, and we may return to these examples in our game theory section.","gray")`
 
 
-- NS: Ch 16 -- public goods section only (skip Lindahl euiliibrium, median voter, single-peaked preferences optional)
+- NS: Ch 16 -- public goods section only (skip Lindahl equiliibrium, median voter, single-peaked preferences optional)
 
 - T1:06
 
@@ -2429,7 +2343,7 @@ Outline: What is a public good, why do markets fail to provide these optimally, 
 *Are these questions important? Some people seem to think so:*
 
 ```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("GES_sandwich_qns.png")
+ knitr::include_graphics("picsfigs/GES_sandwich_qns.png")
 ```
 
 [comment]: <> (2024EE)
@@ -2483,10 +2397,13 @@ Alt (equivalent def):
 Q: think of some examples.
 
 
-*Note:*
+```{block2,  type='note'}
+
 In market economies, private suppliers provide the majority of goods and services to consumers. However, certain goods are publicly provided. These include for example defense, education, and health. Why does the government instead of the market provide these goods?  Which characteristics differentiate goods that are privately provided from goods that are publicly provided? How do we define public goods?
 The terminology might induce the conclusion that 'public goods are good that are publicly provided as opposed to private goods which are privately provided.' This conclusion is simply WRONG! The public or private nature of the good is an intrinsic characteristic of goods that is not related to the provider of the good
 Hence, it may well be that the state provides a private good or that the market provides a public good.
+
+```
 
 
 ```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
@@ -2691,6 +2608,91 @@ Algebraic example of PG underprovision here?
 
 
 2. What are some things you think may lead to more *voluntary* provision of public goods?
+
+
+
+## Some key things for midterm (recap)
+
+- How do economists measure and test models,
+    - techniques and terms used
+    - thoughts on estimating demand and supply curves
+
+. . .
+
+
+<br> <br> \bigskip
+
+<!---
+- Note that economists define 'surplus' as excess supply at the prevailing (or enforced) price and 'shortage' as excess demand at the prevailing (or enforced) price
+-->
+
+
+
+<br> <br> \bigskip
+
+- The 'axioms' over preferences, the justification for these, and what they imply for utility functions
+
+
+
+
+\
+
+- Understand indifference curves and budget constraints well
+
+
+. . .
+
+
+- Conditions for consumer optimisation (obviously this is important) including for when a consumer will choose to consume none of a good
+
+
+
+<br> <br> \bigskip
+
+
+. . .
+
+- Definitions of 'types of goods' as implied by characteristics of the demand function
+
+- Impacts of price changes (own good, other good) and income on an individual's consumption, and what goes into this and how to depict it.
+
+
+
+- (Producer and) consumer surplus.
+
+
+. . .
+
+<br> <br> \bigskip
+
+- 'Applications', especially those discussed both in the assigned text and in the lectures.
+
+\
+
+
+- Firm's conditions for 'what quantity to choose' under different market conditions (price-taking, non-price-taking)
+
+
+
+. . .
+
+<br> <br> \bigskip
+
+- Perfect competition in the LR and the SR, what profits look like, how prices move.
+
+
+. . .
+
+
+- Very basic idea of the efficiency of general equilibrium under perfect competition
+    - When it yields a Pareto-efficient outcome,
+
+    - very basically what the first and second welfare theorems mean.
+
+-  Components of efficiency (top-level, exchange, productive) and what these mean
+
+
+
 
 
 \
