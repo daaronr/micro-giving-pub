@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="David Reinstein (Exeter)" />
+  <title>s_6_profit_perfectcomp.utf8.md</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="s_6_profit_perfectcomp_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="s_6_profit_perfectcomp_files/reveal.js-3.3.0.1/css/theme/white.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="reveal.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <link href="s_6_profit_perfectcomp_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="s_6_profit_perfectcomp_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="profitmax" class="title-slide slide level1"><h1>Profit maximisation and supply (L6)</h1><p>Main source: NS ch 8</p>
+<ul>
+<li>8.2 Profit maximisation</li>
+<li>8.3 Marginal revenue
+<aside class="notes">
+includes trivial perfect competition case and ‘monopoly’ case
+</aside></li>
+<li>8.4 Marginal revenue curve</li>
+<li>8.5 Supply decisions of a price-taking firm</li>
+</ul></section>
+<section><section id="practical-questions" class="title-slide slide level1"><h1>Practical questions</h1></section><section id="practical-questions-1" class="slide level2">
+<h2>Practical questions</h2>
+<p><big>What makes sense?</big></p>
+<blockquote>
+<p>We should set the price that maximises our revenue</p>
+</blockquote>
+</section><section class="slide level2">
+
+<blockquote>
+<p>We are at the point where if we raise our price by 10% sales will fall by 5%, so we better not do it!</p>
+</blockquote>
+<p><br />
+</p>
+<p><font color='blue'>???</font></p>
+</section><section class="slide level2">
+
+<blockquote>
+<p>We reduced our price to £1000 this year and we were able to sell 10 units more this year than last year. These only cost us £500 to make, so we are better off.</p>
+</blockquote>
+<p><br />
+</p>
+<p><font color='blue'>???</font></p>
+</section><section class="slide level2">
+
+<blockquote>
+<p>We should stop producing immediately, because the market price has fallen below our average costs, if we take into account our yearly license fee</p>
+</blockquote>
+<p><br />
+</p>
+<p><font color='blue'>???</font></p>
+</section></section>
+<section><section id="key-goals-of-this-chunk" class="title-slide slide level1"><h1>Key goals of this chunk</h1></section><section id="key-goals-of-this-chunk-1" class="slide level2">
+<h2>Key goals of this chunk</h2>
+<ul>
+<li>What is ‘marginal revenue’, why is
+<ul>
+<li><span class="math inline">\(MR\leq p\)</span> for firm facing downward sloping demand?</li>
+<li>but <span class="math inline">\(MR= p\)</span> for a price-taking firm</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<p><br />
+</p>
+<ul>
+<li>Price and output choice (condition) for a price-taking firm
+<ul>
+<li>firm’s shut-down/entry decision</li>
+<li>what <em>is</em> a ‘price-taking firm’?</li>
+</ul></li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p><strong>Context</strong></p>
+<ul>
+<li>We considered production functions</li>
+<li>… cost and cost minimization
+<ul>
+<li>… expansion paths</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<p>Production functions, prices <span class="math inline">\(\rightarrow\)</span> cost of production …</p>
+<p><em>Now:</em> “what <strong>output</strong> to set to max profits?”</p>
+</div>
+<div class="fragment">
+<p><font color='gray'>Next: consequences for the market</font></p>
+</div>
+</section></section>
+<section><section id="marginal-revenue" class="title-slide slide level1"><h1>Marginal revenue</h1></section><section id="marginal-revenue-1" class="slide level2">
+<h2>Marginal revenue</h2>
+<dl>
+<dt>Marginal revenue</dt>
+<dd>The additional gross income a firm gains from increasing the quantity it supplies by one unit
+</dd>
+</dl>
+<aside class="notes">
+<p>Remember, given its production the firm always chooses highest p at which</p>
+it can sell all the units it produced
+</aside>
+<p><font color='blue'>Q: Impact of increasing quantity?</font></p>
+<div class="fragment">
+<p><br> </p>
+<ul>
+<li>It can sell an additional unit at some price</li>
+</ul>
+<p><br> </p>
+</div>
+<div class="fragment">
+<ul>
+<li>But it may have to reduce prices on <em>all</em> units to do this (more on this later)</li>
+</ul>
+<!---
+## Profit-maximisation
+
+- If operating, set optimal output q*
+-->
+<!---
+- Under standard assumed conditions
+-->
+</div>
+</section><section id="mr-for-firm-facing-downward-sloping-demand" class="slide level2">
+<h2>MR for firm facing ‘downward-sloping demand’</h2>
+<aside class="notes">
+See example in table 1 in text
+</aside>
+<ul>
+<li>Single price <span class="math inline">\(\rightarrow\)</span> sell more only by reducing price on <em>all units</em>
+<ul>
+<li>E.g., sell 51 units rather than 50 by reducing price from 1 to 0.99</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><p>MR <span class="math inline">\(&lt;\)</span> market price here <em>because</em></p></li>
+<li><p>Get (new) market price for additional unit <span class="math inline">\(\rightarrow\)</span> + 0.99</p></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><p>But lose 0.01 on all previous 50 units <span class="math inline">\(\rightarrow\)</span> - 0.50</p></li>
+<li><p>So MR is 0.49</p></li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/Mrillustrated.png" width="80%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><strong>MR curves be like:</strong></p>
+<p><img src="picsfigs/mrcurve.png" width="578" height="80%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+Q: Why might MR curves typically decrease in Q?
+</aside>
+<aside class="notes">
+<p>Ans: Demand curves slope down, so less revenue for each additional unit.</p>
+Also, the <em>impact</em> of the reduced price is greater because the more we sell the more units this affects
+</aside>
+</section><section class="slide level2">
+
+<h3 id="price-taker">Price-taker</h3>
+<p><img src="picsfigs/tunaauction.png" width="80%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+<p>Price-taker: produces a good that is the <em>same</em> in every way, to the consumer, as other’s goods,</p>
+<p>and everyone knows this, and everyone knows all the prices. And there are lots of small producers.</p>
+With ‘differentiated products’ we may have ‘monopolistic competition’
+</aside>
+</section><section class="slide level2">
+
+<h3 id="mr-for-a-price-taking-firm">MR for a price-taking firm</h3>
+<p>A price-taking firm (perfect competition):</p>
+<div class="fragment">
+<ul>
+<li>gets market price P for each additional unit</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>the firm is small, so its output has (virtually) no impact on P</li>
+</ul>
+<!---
+    - (More on this later)
+-->
+<aside class="notes">
+<p>the NS text gives a good illustration and examples of why it is fine to assume that</p>
+a small producer’s output has no impact on price
+</aside>
+</div>
+<div class="fragment">
+<p><em>Thus its marginal revenue is constant at <span class="math inline">\(P\)</span></em></p>
+<aside class="notes">
+Total revenue curve will be a straight line … double quantity, double revenue
+</aside>
+</div>
+</section></section>
+<section><section id="profit-maximisation" class="title-slide slide level1"><h1>Profit-maximisation</h1></section><section id="profit-maximisation-1" class="slide level2">
+<h2>Profit-maximisation</h2>
+<ul>
+<li>Operating? <span class="math inline">\(\rightarrow\)</span> Set optimal output <span class="math inline">\(q^*\)</span></li>
+</ul>
+<aside class="notes">
+<p>Conditions for a ‘unique maximum’, e.g. everywhere decreasing MR and</p>
+increasing or nondecreasing marginal costs
+</aside>
+<ul>
+<li>… profit-maximising output: at the (unique) <span class="math inline">\(q^*\)</span> such that <span class="math inline">\(MR=MC\)</span></li>
+</ul>
+<p><font color='gray'>…if this exists</font></p>
+<div class="fragment">
+<p><br> </p>
+<h3 id="holds-for-all-firms">Holds for all firms</h3>
+<ul>
+<li>Market power (‘price-setters’): MR declining (down-sloping ‘demand’)</li>
+</ul>
+<div class="fragment">
+<p><br />
+</p>
+<ul>
+<li>Price-takers: setting <span class="math inline">\(MR(q)=MC(q)\)</span> means setting <span class="math inline">\(P=MC(q)\)</span>, bc <span class="math inline">\(P=MR(q)\)</span></li>
+</ul>
+<aside class="notes">
+<p>Q: Why? Suppose actual output was &lt; or &gt; than q*.</p>
+Explain what is true about marginal profits as output increases or decreases.
+</aside>
+<aside class="notes">
+<p>Ans: if q&gt;q*, MR, which is decreasing in q, will be below MC.</p>
+<p>Firm can do better if it reduces q somewhat– cost decrease will be larger than revenue decrease.</p>
+If q&lt;q*, MR&lt;MC – better to increase q and revenue increases more than costs
+</aside>
+</div>
+</div>
+</section><section id="for-a-firm-with-market-power" class="slide level2">
+<h2>For a firm with market power:</h2>
+<p><img src="picsfigs/fig8-1.png" width="379" height="100%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+Firm wants to make the vertical distance between the revenue and cost curves as large as possible.
+</aside>
+</section><section class="slide level2">
+
+<p><strong>For a firm with market power:</strong></p>
+<p><img src="picsfigs/monoptctr.png" width="50%" style="display: block; margin: auto;" /></p>
+<p><img src="picsfigs/monopmcmr.png" width="50%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+<p>Firm wants to make the vertical distance between the revenue and cost curves as large as possible.</p>
+If the curves had differing slopes, profits could be increased by adjusting output in the direction in which the curves diverged.
+</aside>
+<!---
+## MR=mc condition for price-taking firm
+$$MR(q) = P$$
+<img src="picsfigs/mcmr_tc_tr.png" width="5.5cm" style="display: block; margin: auto;" />
+
+-->
+</section><section id="supply-decisions-of-a-price-taking-firm" class="slide level2">
+<h2>Supply decisions of a price-taking firm</h2>
+<p><strong>Price-taking firms: what price?</strong></p>
+<p>Can sell all output at market price P<em>. Will price at P</em>.</p>
+<p><br />
+</p>
+<div class="fragment">
+<p>Set P&lt;P* <span class="math inline">\(\rightarrow\)</span>?</p>
+</div>
+<div class="fragment">
+<ul>
+<li>Sell same amount, earn less. … Not smart!</li>
+</ul>
+<p><br />
+</p>
+</div>
+<div class="fragment">
+<p>Set P&gt;P*?</p>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/fonz.jpeg" width="90%" style="display: block; margin: auto;" /></p>
+<center>
+Sell no units. Smooth move, hotshot!
+</center>
+<aside class="notes">
+Good textbook discussion of ‘why and when price-taking’?
+</aside>
+</section><section class="slide level2">
+
+<p><strong>Price-taking firms: How much to produce?</strong></p>
+<p><font color='gray'>(Draw)</font></p>
+<ul>
+<li>Standard assumption: <span class="math inline">\(MC(0)&lt;P^*\)</span>, <span class="math inline">\(MC(q)\)</span> increasing in q <font color='gray'>… or at least there’s some region for which AVC&lt; <span class="math inline">\(P^*\)</span></font></li>
+</ul>
+<div class="fragment">
+<p><br> </p>
+<ul>
+<li>Thus choose q for which <span class="math inline">\(MC(q) = P^*\)</span> <span class="math inline">\(\rightarrow\)</span> ‘Perfectly competitive firms price at marginal cost’</li>
+</ul>
+<p><br> </p>
+<p>But…</p>
+</div>
+</section><section class="slide level2">
+
+<p>But if P* below your average cost for <em>any possible</em> output q <span class="math inline">\(\rightarrow\)</span> shut down!</p>
+<div class="fragment">
+<p><br> </p>
+<p><font color='gray'>If P* below ‘(SR) average variable costs’</font> <span class="math inline">\(\rightarrow\)</span> <font color='gray'>shut down immediately.</font></p>
+<p><font color='gray'>If</font> P* <span class="math inline">\(&lt;\)</span> LRAC <span class="math inline">\(\rightarrow\)</span> <font color='gray'>shut down before incurring further FC.</font></p>
+<aside class="notes">
+I am not focusing on distinction between short and long run cost curves in this module
+</aside>
+</div>
+</section></section>
+<section><section id="some-revision-questions" class="title-slide slide level1"><h1>Some revision questions</h1><p><font color='gray'>From 2017 final exam</font></p>
+<p><br> </p>
+<p>A firm that sought to maximize revenue (rather than profit) would choose to produce an output level for which marginal revenue was equal to</p>
+<ul>
+<li><ol type="a">
+<li>marginal cost</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>average cost.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>price.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>zero.</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>as high as possible.</li>
+</ol></li>
+</ul></section><section class="slide level2">
+
+<p>Choose all that apply: If the demand faced by a firm is elastic (but not perfectly elastic), selling one less unit of output will</p>
+<ul>
+<li><ol type="a">
+<li>decrease revenue.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>keep revenues constant.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>require a decreased price.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>increase revenue.</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>allow an increased price.</li>
+</ol></li>
+</ul>
+</section></section>
+<section><section id="perfectcomp" class="title-slide slide level1"><h1>Perfect competition in a single market (L7)</h1><ul>
+<li>Main source: NS Ch 9</li>
+</ul></section><section id="key-goals-of-this-chunk-2" class="slide level2">
+<h2>Key goals of this chunk</h2>
+<ul>
+<li><p>How firms’ supply curves aggregate to the <em>market</em> supply curve</p></li>
+<li><p>What is a ‘perfectly competitive market’?</p></li>
+</ul>
+</section><section class="slide level2">
+
+<p>Motivating questions:</p>
+<ul>
+<li>With many ‘price taking firms’, how does <em>aggregate</em> supply respond to changes in demand?</li>
+<li>Can such firms make a profit in the short run? In the long run?</li>
+</ul>
+<div class="fragment">
+<ul>
+<li><p>Importance of entry /&amp; exit, implications for short &amp; long run:</p></li>
+<li><p><em>LR market supply curve</em>: what it looks like &amp; why</p></li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p>…</p>
+<ul>
+<li><em>Consumer surplus</em>, <em>producer surplus</em>, implications for welfare analysis</li>
+<li>Pareto Optimality</li>
+</ul>
+<div class="fragment">
+<ul>
+<li><p>Basic argument: why perfectly competitive market <span class="math inline">\(\rightarrow\)</span> Pareto Optimal outcome (under certain conditions)</p></li>
+<li><p>Critiques of this, idea of ‘market failure’</p></li>
+</ul>
+<aside class="notes">
+2019: skip right here
+</aside>
+<!---
+### Motivating questions
+- If demand for a good increases (demand curve shifts out), because preferences change, or population increase
+    - ... should we expect the price of the good to rise in the short or long run?
+-->
+</div>
+</section><section class="slide level2">
+
+<p><font color='blue'>Consider:</font> Should price-taking firms and perfect competition be our ‘baseline’ dominant model?</p>
+<p><font color='blue'>Reasonable to assume?</font></p>
+<ul>
+<li><p>Free entry of firms/no ‘barriers’?</p></li>
+<li><p>Homogenous products?</p></li>
+<li><p>Decreasing returns to scale at some point?</p></li>
+</ul>
+<aside class="notes">
+<p>These conditions will indeed lead to <span class="math inline">\(\rightarrow\)</span> perfect competition/MC pricing.</p>
+<p>But many markets have large entry costs, first-mover advantages, and perhaps continuously increase returns to scale <span class="math inline">\(\rightarrow\)</span> monop/oligopoly</p>
+Most products are also ‘differentiated’; with free entry <span class="math inline">\(\rightarrow\)</span> ‘monopolistic competition’, another candidate for bring the dominant model
+</aside>
+<p><br> </p>
+</section><section class="slide level2">
+
+<p><strong>Deep political/philosophical question:</strong></p>
+<p>Should we expect ‘chaotic competition’ to lead to the most efficient outcomes, and if so, when and under what conditions?</p>
+<div class="fragment">
+<ul>
+<li><p>Better to restrict the entry of firms <font color='gray'>(single firm with a guaranteed monopoly?)</font></p></li>
+<li><p>Better to regulate prices?</p></li>
+</ul>
+<aside class="notes">
+<p>Questions are at the core of political and economic debates</p>
+<p>throughout the 19th and 20th century. Mercantilists vs physiocrats (classical liberals),</p>
+<p>Socialists vs laissez-faire; debates over ‘industrial policy’ and ‘trust-busting’, etc</p>
+Keynes vs Hayek…
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><strong>Urgent question: Brexit</strong></p>
+<div class="fragment">
+<p>Trade with Europe may default to WTO terms</p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(\rightarrow\)</span> Very large tariffs on some goods, ‘non-tariff barriers’ on others</p>
+</div>
+<div class="fragment">
+<p>UK (and EU) firms: Unknown impact on input prices, demand curves, competition, etc.</p>
+<ul>
+<li><p>Can ‘GE models’ help predict these and help firms plan and reoptimise?</p></li>
+<li><p>How long will it take to return to some ‘equilibrium’?</p></li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<ul>
+<li>Fewer firms in UK markets <span class="math inline">\(\rightarrow\)</span> less competition <span class="math inline">\(\rightarrow\)</span> loss of consumer surplus?</li>
+</ul>
+<p><br> </p>
+<div class="fragment">
+<p>Also, … many new regulations bundled with new trade deals:</p>
+<ul>
+<li>Which are ‘pro-competitive’ or redress market failures and which restrain trade?</li>
+</ul>
+</div>
+</section><section id="skip-pricing-in-the-very-short-run" class="slide level2">
+<h2>SKIP: Pricing in the very short run</h2>
+</section></section>
+<section><section id="sr-supply" class="title-slide slide level1"><h1>SR supply</h1></section><section id="sr-supply-1" class="slide level2">
+<h2>SR supply</h2>
+<p>For a further revision, ‘firms in competitive markets’ is well mapped out in a step-by step Powerpoint you can download:</p>
+<p><br> </p>
+<p><a href="http://web.mnstate.edu/stutes/notes/mankiwjustpp/firms_competitive.ppt" class="uri">http://web.mnstate.edu/stutes/notes/mankiwjustpp/firms_competitive.ppt</a></p>
+<p><br> </p>
+<p>(start from beginning, this is specifically referred to beginning on slide 17; use ‘presentation mode’)</p>
+</section><section class="slide level2">
+
+<p><font color='gray'>We will quickly outline:</font></p>
+<p>SR: Number of firms in the market is fixed: no entry/exit</p>
+<div class="fragment">
+<p><br />
+</p>
+<ul>
+<li>Demand shifts <span class="math inline">\(\rightarrow\)</span> prices change <span class="math inline">\(\rightarrow\)</span> existing firms adjust quantities supplied</li>
+</ul>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<ul>
+<li>Market supply curve: sum each firm’s supply curve</li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p>Recall: Under perfect competition each firm</p>
+<ul>
+<li><p>charges market price <span class="math inline">\(P^*\)</span></p></li>
+<li><p>produces q at a point where <span class="math inline">\(mc(q)=p^*\)</span></p>
+<ul>
+<li>as long as there’s some output q where <span class="math inline">\(AC \leq P*\)</span></li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+<div class="fragment">
+<p>Thus, for every price <span class="math inline">\(P^{*}\)</span>, it produces <span class="math inline">\(q\)</span> where <span class="math inline">\(mc(q)=P^{*}\)</span>.</p>
+<p><br />
+</p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(\rightarrow\)</span> its mc curve <em>is</em> its supply curve!</p>
+<p><br />
+</p>
+<p><font color='grey'>Except where</font> <span class="math inline">\(AC(q)&gt;p^*\)</span> <font color='gray'>for all</font> q <span class="math inline">\(\rightarrow\)</span> <font color='gray'>it produces zero</font></p>
+<aside class="notes">
+<small> We can (usually) ‘invert’ the marginal cost function <span class="math inline">\(mc(q)\)</span> to get, for every marginal cost, ‘the quantity that yields this marginal cost.’ If we replace this mc with P<em>, we get the firm’s supply curve, i.e., ’the quantity produced at P</em>.’ Where the minimum AC exceeds p*, the firm has no way to produce profitably, so it will produce nothing.</small>
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p>Sum each firm’s supply curve <em>horizontally</em></p>
+<p><img src="picsfigs/srsupply.png" width="90%" style="display: block; margin: auto;" /></p>
+</section></section>
+<section><section id="sr-price-determination" class="title-slide slide level1"><h1>SR Price determination</h1></section><section id="sr-price-determination-1" class="slide level2">
+<h2>SR Price determination</h2>
+<p>(Read at home: handout, text)</p>
+</section><section class="slide level2">
+
+<p>Sum across firms (mc curve where <span class="math inline">\(&gt;\)</span> AC curves) <span class="math inline">\(\rightarrow\)</span> <em>market</em> supply curve</p>
+<p><br />
+</p>
+<p>Sum individual demand curves <span class="math inline">\(\rightarrow\)</span> <em>market</em> demand curve</p>
+<p><br />
+</p>
+<div class="fragment">
+<p>Where do these intersect?</p>
+<ul>
+<li>At this price <span class="math inline">\(P^*\)</span> we have <span class="math inline">\(Q_d(P^*)=Q_s(P^*)\)</span> <span class="math inline">\(\rightarrow\)</span> the ‘short run <em>equilibrium</em> price’</li>
+</ul>
+<p><br />
+</p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(P^* &gt; AC\)</span> possible in the short run</p>
+<p><span class="math inline">\(\rightarrow\)</span> can make SR <em>economic</em> profits!</p>
+<aside class="notes">
+<p>Rem: firms produce where their MC=P*</p>
+<p>MC(q) are often assumed <em>increasing</em> in q –&gt; only the cost of <em>last</em> unit produced equals P*.</p>
+Previous units had MC&lt;p<em>, so A(V)C may be below p</em>
+</aside>
+</div>
+</section><section id="illustration-of-sr-price-determination" class="slide level2">
+<h2>Illustration of SR price determination</h2>
+<p><img src="picsfigs/srpd1.png" width="90%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/srpd2.png" width="90%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/srpd3.png" width="90%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/srpd4.png" width="90%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/srpd5.png" width="90%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/srpd6.png" width="90%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/srpd6.png" width="50%" style="display: block; margin: auto;" /></p>
+<p><font color='red'>Avoid confusion:</font> The <em>market</em> demand curve is downward sloping. The demand curve for an individual firm under perfect competition is effectively horizontal.</p>
+</section><section class="slide level2">
+
+<h3 id="price-acts-as-a-signal-leading-to-efficient-choices">Price acts as a signal, leading to efficient choices:</h3>
+<ul>
+<li>to firms, telling them ‘how much to produce’</li>
+</ul>
+<aside class="notes">
+Don’t produce past where your MC exceeds the p you can get in the market; at p where market ‘clears’ i.e., <span class="math inline">\(Q_d=Q_s\)</span> .
+</aside>
+</section><section class="slide level2">
+
+<h3 id="price-signal-leading-to-efficient-choices">Price signal, leading to efficient choices:</h3>
+<ul>
+<li>to consumers, how much to purchase</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>and ‘which consumers should obtain the units produced’?</li>
+</ul>
+<aside class="notes">
+<p><small>By the def of market-clearing price P<em>, consumers can buy all they desire at P</em>, i.e., until last unit gives them a MU of P<em>. Adv, foreshadowing equilibrium efficiency: Thus every consumer values last unit they consume the same –&gt; we </em>never* have the ‘wrong’ consumer obtains the good; –&gt; no further gains from ‘exchange among consumers’. If prices were too low (e.g., because of a price ceiling), <span class="math inline">\(Q_d&gt;Q_s\)</span></p>
+demand would have to be rationed, and consumers who valued the product more than other consumers might not get as much. </small>
+</aside>
+</div>
+</section><section id="read-on-your-own-shifts-in-s-and-d-curves" class="slide level2">
+<h2>Read on your own: shifts in S and D curves</h2>
+<aside class="notes">
+Basically this should all be revision, but read it anyway. You are required to know this material.
+</aside>
+</section></section>
+<section><section id="the-long-run" class="title-slide slide level1"><h1>The Long run</h1><p><img src="picsfigs/lr_constant_cost.png" width="90%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<center>
+<small> Draw it: Long run equilibrium response to a demand shift, constant-cost case (ignore SMC)
+</center>
+<p></small></p></section><section id="the-long-run-1" class="slide level2">
+<h2>The Long run</h2>
+<p>In LR ‘free entry and exit’ of firms, many firms have access to same production process</p>
+<div class="fragment">
+<p><br> </p>
+<p>Suppose <em>positive economic profits</em> in industry (for efficient producers)</p>
+<p>I.e., <span class="math inline">\(P^*&gt;AC(q)\)</span> for some q</p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(\rightarrow\)</span> Firms enter <span class="math inline">\(\rightarrow\)</span> Supply curve shifts out</p>
+<p><br />
+</p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(\rightarrow\)</span> equilibrium price declines <span class="math inline">\(\rightarrow\)</span> profits decline</p>
+</div>
+<div class="fragment">
+<p>Repeat until economic profit falls to zero, i.e., until <span class="math inline">\(P^*=AC(q)\)</span> for the minimum AC q</p>
+<aside class="notes">
+<p>Positive economic profits are sometimes called ‘supernormal profits.’</p>
+<p>Rem: economic profits are <em>after</em> subtracting the (opportunity) cost of capital, management, and other inputs.</p>
+Note the powerpoint depicts this better
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p>Now suppose <em>negative economic profits</em> in industry (for efficient producers)</p>
+<ul>
+<li>I.e., <span class="math inline">\(P^*&lt;AC(q)\)</span> for any q</li>
+</ul>
+<div class="fragment">
+<p><span class="math inline">\(\rightarrow\)</span> Firms exit <span class="math inline">\(\rightarrow\)</span> Supply curve shifts inwards</p>
+<p><br />
+</p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(\rightarrow\)</span> equilibrium price rises <span class="math inline">\(\rightarrow\)</span> profits rise</p>
+<p>Repeat until economic profit rises to zero; i.e., until <span class="math inline">\(P^*=AC(q)\)</span> for the minimum AC q</p>
+</div>
+</section><section class="slide level2">
+
+<p><strong>Long Run Equilibrium</strong></p>
+<p>Firms choose output to max profit</p>
+<p><br> </p>
+<p>Profit max: <span class="math inline">\(P^* = MC(q)\)</span></p>
+<div class="fragment">
+<p><br>  <br> </p>
+<p>No firms <em>in</em> the market want to exit, no firms <em>outside</em> want to enter</p>
+<p><br> </p>
+<p>Zero economic profits:</p>
+<p><span class="math inline">\(P^* = AC(q)\)</span></p>
+</div>
+</section><section class="slide level2">
+
+<p><em>Also, with free entry/exit…</em></p>
+<aside class="notes">
+(and with no production limits)…
+</aside>
+<p><br> </p>
+<div class="fragment">
+<p>all firms (in) produce <span class="math inline">\(q\)</span> that <em>minimizes</em> their AC, and all <em>same</em> average cost</p>
+<p><br> </p>
+</div>
+<div class="fragment">
+<ul>
+<li><p>I.e., <span class="math inline">\(P^\ast = min[AC(q)] = MC(q)\)</span> for any firm in the market</p></li>
+<li><p>I.e., MC curve intersects AC curve at its minimum.</p>
+<ul>
+<li>and it’s the <em>same</em> AC for all firms</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<p><font color='blue'>Why?</font></p>
+</div>
+</section><section class="slide level2">
+
+<p><font color='blue'>Why <span class="math inline">\(P* = min [ac(q)] = mc(q)\)</span>?</font></p>
+<p><br> </p>
+<p>No profit in equilibrium and firms choose q so that <span class="math inline">\(P^\ast=mc(q)\)</span></p>
+<div class="fragment">
+<p><span class="math inline">\(\rightarrow\)</span> <span class="math inline">\(P^\ast = AC(q) = MC(q)\)</span> for all firms (in the market)</p>
+<p><br> </p>
+</div>
+<div class="fragment">
+<p>Suppose a firm produced at a point <em>above</em> it’s minimum AC,</p>
+<ul>
+<li>i.e., if <span class="math inline">\(AC(q)&gt; min [AC(q)]\)</span></li>
+</ul>
+</div>
+<div class="fragment">
+<p><br> </p>
+<p><span class="math inline">\(\rightarrow\)</span> it could profit by producing at the q that <em>minimised</em> its AC (contradicting above)</p>
+<ul>
+<li>… so would other firms, who’d be induced to enter; so that couldn’t have been an equilibrium</li>
+</ul>
+<aside class="notes">
+<p>We assume a large number of firms have access to this efficient technology.</p>
+<p>As previously mentioned, entry shifts the supply curve out, equilibrium price falls,</p>
+until the point where <span class="math inline">\(P^*=AC(q)\)</span> for firms producing at this lowest AC point.
+</aside>
+</div>
+</section><section id="long-run-lr-supply" class="slide level2">
+<h2>Long Run (LR) Supply</h2>
+<p><small> <font color='red'>2019: This curve itself is not covered on the midterm, so we may skip it for now</font> </small></p>
+<ul>
+<li><p>We have the SR supply curve (upward sloping)</p></li>
+<li><p>But we know that in the LR this will shift out in response to a price change</p></li>
+</ul>
+<div class="fragment">
+<p><br> </p>
+<p><span class="math inline">\(\rightarrow\)</span> Taking this shift into account gives us the <em>Long Run Supply Curve</em></p>
+<aside class="notes">
+<p>Avoid confusion:</p>
+<p>In the SR there are movements <em>along</em> this curve in response to price changes.</p>
+<p>In the longer run, it does shift in response to price changes, as firms enter.</p>
+<p>The LR supply curve, which we will now define, does <em>not</em> shift in response to price changes</p>
+But other things may cause it to shift, like changes in input costs
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><strong>LR supply curve looks like?</strong></p>
+<ul>
+<li><p>Demand curve shifts out <span class="math inline">\(\rightarrow\)</span> price rise <span class="math inline">\(\rightarrow\)</span> firms enter</p></li>
+<li><p>… do firms produce at the <em>same</em> minimum AC as before?</p></li>
+</ul>
+<div class="fragment">
+<p><br> </p>
+<p><em>Depends:</em></p>
+<ul>
+<li>Does entry/higher production <em>change</em> cost function?</li>
+</ul>
+<!-- \pause -->
+<ul>
+<li>So <em>input costs</em> rise?</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>‘Externalities’ between firms, consumers’ <font color='gray'>(e.g., network externalities)</font></li>
+</ul>
+<aside class="notes">
+increased demand for scarce inputs, skilled workers &amp; public resources
+</aside>
+<aside class="notes">
+<p>DR opinion: We shouldn’t always expect the LR curve to be upward sloping.</p>
+<p>might also be flat or downward sloping. Thus, if the demand curve for, e.g., microchips or personalised software</p>
+shifts out, we may see that equilibrium price <em>declines</em> in the long run.
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><big>Long run population and economic growth <span class="math inline">\(\rightarrow\)</span> ?</big></p>
+<p><br> </p>
+<p><font color='blue'>As the economy grows, which items will get relatively more expensive?</font></p>
+<aside class="notes">
+<p>Economic, population growth leads to increased demand for most products</p>
+<p>(esp. natural resources and primary products). The shape of the LR supply curve tells us</p>
+<p>whether real resource prices will increase rapidly over time.</p>
+<p>Relative slope for different products tells us which prices will rise <em>relative</em> to other goods.</p>
+E.g., will housing become relatively more or less expensive?
+</aside>
+</section><section class="slide level2">
+
+<h3 id="lr-supply-constant-cost-case">LR Supply: Constant cost case</h3>
+<p><img src="picsfigs/LR_constantcost.png" width="80%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+Practice drawing this for the SR and then the LR, and observe SR and LR prices, profits
+</aside>
+</section><section class="slide level2">
+
+<h3 id="lr-supply-increasing-cost-case">LR Supply: Increasing cost case</h3>
+<p><img src="picsfigs/incrcosts_lrsupply.png" width="659" height="80%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+<p>Initial market equilibrium: P1, Q1</p>
+<p>Increase in demand to D’ <span class="math inline">\(\rightarrow\)</span> price to P2 in SR <span class="math inline">\(\rightarrow\)</span> firms produce at q2, profit <span class="math inline">\(\rightarrow\)</span></p>
+<p>Profit attracts new firms. <span class="math inline">\(\rightarrow\)</span> costs rise to the levels shown in (b). <span class="math inline">\(\rightarrow\)</span></p>
+New equilibrium at P3, Q3.
+</aside>
+</section><section class="slide level2">
+
+<p><em>Long-run elasticity of supply:</em> % change in LR <span class="math inline">\(Q^s\)</span> / % change P</p>
+<p><img src="picsfigs/lr_supplyelast_ests.png" width="90%" style="display: block; margin: auto;" /></p>
+<p><small>(Various estimates over the years, see NS text) </small></p>
+</section></section>
+<section><section id="consumer-and-producer-surplus-efficiency" class="title-slide slide level1"><h1>Consumer and producer surplus, efficiency</h1></section><section id="consumer-and-producer-surplus-efficiency-1" class="slide level2">
+<h2>Consumer and producer surplus, efficiency</h2>
+<dl>
+<dt>Consumer surplus (reprise)</dt>
+<dd><p>Extra value … from consuming good over its price. WTP for right to consume a good at its current price.</p>
+</dd>
+</dl>
+<ul>
+<li>Area between the demand curve and the market price</li>
+</ul>
+</section><section class="slide level2">
+
+<dl>
+<dt>Producer surplus</dt>
+<dd><p>Value producers get for a good less the opportunity costs they incur by producing it. What producers would pay for right to sell good at current market price. (Essentially profits not counting FC.)</p>
+</dd>
+</dl>
+<div class="fragment">
+<p><br />
+</p>
+<ul>
+<li>Area between supply curve and market price</li>
+</ul>
+<aside class="notes">
+<p>Basically producer surplus is profit + unavoidable costs.</p>
+<p>In the SR you cannot shut down and avoid the fixed costs, whether or not you sell any units.</p>
+Since you are already incurring these, they don’t count against the benefit you would get from selling at the market price.
+</aside>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<ul>
+<li>In LR, zero-profits, all costs are variable <span class="math inline">\(\rightarrow\)</span> producer surplus is zero</li>
+</ul>
+<aside class="notes">
+<p>Adv: When a firm owns a unique resource it can arguably make a LR profit called a ‘Ricardian rent’.</p>
+However this could be seen as the return to an asset which should be ‘charged against’ these profits.
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/prodsurp1.png" width="1280" height="80%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+Revenue: price times quantity
+</aside>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/prodsurp2.png" width="1280" height="80%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+Firm/firms were willing to produce each incremental unit at the price corresponding to that point on the supply curve.
+</aside>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/prodsurp3.png" width="1280" height="80%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+They ‘got the rectangle’, ‘would have produced each unit’ for the yellow shape, the green difference is their surplus.
+</aside>
+</section><section class="slide level2">
+
+<h3 id="in-what-sense-is-a-competitive-market-efficient">In what sense is a competitive market ‘efficient’?</h3>
+<p><small> Roughly; single-market depiction </small></p>
+<p><br />
+</p>
+<center>
+Allocation of resources maximizes total surplus
+</center>
+<p><br> </p>
+<p>Total surplus <span class="math inline">\(=\)</span> consumer <span class="math inline">\(+\)</span> producer surplus</p>
+<p><br />
+</p>
+<p><small> At market equilibrium: no more mutually-beneficial exchanges can be made</small></p>
+</section><section class="slide level2">
+
+<p>‘A <em>competitive</em> market <em>in equilibrium</em> will max total surplus’</p>
+<p><img src="picsfigs/consumerprodrsurplusmax.png" width="50%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+<p>Q* maximizes the sum of consumer and producer surplus.</p>
+<p>Any other quantity yields a lower sum. E.g., at Q1 we ‘lose’ the triangle FEG</p>
+… this is called a ‘deadweight loss’ as it is a loss to society, it just disappears.
+</aside>
+<aside class="notes">
+Note this doesn’t tell us that the supply curve reflects efficient production, nor that the ‘right’ consumers get the good
+</aside>
+</section><section class="slide level2">
+
+<p><em>We can use these models/concepts to consider…</em></p>
+<ul>
+<li>‘Who suffers from a tax’ in the LR and SR?</li>
+</ul>
+<div class="fragment">
+<p><br />
+</p>
+<ul>
+<li>Who gains from technological innovation?</li>
+</ul>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<ul>
+<li>Who gains and who is harmed by trade restrictions, and do the costs outweigh the benefits?</li>
+</ul>
+<aside class="notes">
+<p>Simplest models of ‘tax incidence’: tax drives a wedge btwn price consumer pays and the price the firm gets;</p>
+<p>can be depicted as a inward shift in supply curve; rem not to count government revenue as a ‘loss’</p>
+Also note that tech innovation reduces (long run, average ) costs
+</aside>
+<aside class="notes">
+2019: jump right here
+</aside>
+<!---
+Additional potential applications: rail regulation, music copyright
+-->
+</div>
+</section><section id="suggested-practice-problems-from-nicholson-and-snyder-chapter-9-12th-ed" class="slide level2">
+<h2>Suggested practice problems from Nicholson and Snyder Chapter 9 (12th ed)</h2>
+<p>‘Micro-quizes’</p>
+<p>9.2, 9.3, 9.4,</p>
+<p>‘Problems’:</p>
+<ul>
+<li><p>9.3a and b</p></li>
+<li><p>9.5?</p></li>
+<li><p>9.9 a-d?</p></li>
+</ul>
+</section><section class="slide level2">
+
+<h3 id="revision-questions">Revision questions</h3>
+<p>Under perfect competition, if an industry is characterized by positive economic profits in the short run</p>
+<p><br> </p>
+<ul>
+<li><ol type="a">
+<li>firms will leave the market in the long run and the short-run supply curve will shift outward.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>firms will enter the market in the long run and the short-run supply curve will shift outward.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>firms will enter the market in the long run and the short-run supply curve will shift inward.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>firms will leave the market in the long run and the short-run supply curve will shift inward.</li>
+</ol></li>
+</ul>
+</section><section class="slide level2">
+
+<p>If the market for coconut water is characterized by a very elastic supply curve and a very inelastic demand curve, an outward shift in the supply curve would be reflected primarily in the form of</p>
+<p><br> </p>
+<ul>
+<li><ol type="a">
+<li>higher prices</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>higher output</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>lower prices</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>lower output</li>
+</ol></li>
+</ul>
+</section><section class="slide level2">
+
+<p>Under perfect competition, if an industry is characterized by positive economic profits in the short run</p>
+<p><br> </p>
+<ul>
+<li><ol type="a">
+<li>firms will leave the market in the long run and the short-run supply curve will shift outward.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>firms will enter the market in the long run and the short-run supply curve will shift outward.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>firms will enter the market in the long run and the short-run supply curve will shift inward.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>firms will leave the market in the long run and the short-run supply curve will shift inward.</li>
+</ol></li>
+</ul>
+</section></section>
+<section id="todays-goals-28-oct-2019" class="title-slide slide level1"><h1>Today’s goals (28 Oct 2019)</h1><!-- 1. Recap 'in what sense is a competitive market efficient' (single product, consumer and producer surplus)
+-->
+<ol type="1">
+<li>General equilibrium and efficiency – key principles and arguments</li>
+</ol>
+<ul>
+<li>What is ‘Pareto efficiency?’</li>
+<li>What conditions must hold for an economy to achieve this?</li>
+<li>Basic story for why efficiency <em>should</em> attain</li>
+<li>First and second welfare theorems</li>
+<li>Market failures</li>
+</ul>
+<p><br />
+</p>
+<ol start="2" type="1">
+<li>Market failure: one case - Public goods</li>
+</ol>
+<ul>
+<li>How do we define a ‘public good’… what are some examples?</li>
+<li>Basic argument for market failure here</li>
+</ul>
+<p><br />
+</p>
+<ol start="3" type="1">
+<li>Second annual pre-midterm championship (revision)</li>
+</ol></section>
+<section><section id="additional-material-on-efficiency-key-principles" class="title-slide slide level1"><h1>Additional material on efficiency: key principles</h1></section><section id="general-equilibrium-and-efficiency-coverage" class="slide level2">
+<h2>General equilibrium and efficiency: Coverage</h2>
+<p><small> This is a very brief excerpt and summary of the material in NS chapter 10, with some additional motivation. If you understand these slides/notes you don’t have to read chapter 10. </small></p>
+</section><section id="key-principles-efficiency-general-equilibrium" class="slide level2">
+<h2>Key principles: efficiency &amp; ‘general’ equilibrium</h2>
+<p><em>Under certain conditions</em> competitive markets are efficient in equilibrium</p>
+<p><br> </p>
+<div class="fragment">
+<p>But:</p>
+<ul>
+<li>Some markets may not reach equilibrium ‘quickly’</li>
+</ul>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<ul>
+<li>These conditions may not hold <span class="math inline">\(\rightarrow\)</span> <em>market failure</em></li>
+</ul>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<ul>
+<li>Efficiency itself doesn’t imply preferred outcomes: can involve a great deal of inequality</li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p><em>General Equilibrium</em> (GE) analysis: entire economy as a system of interacting, interdependent markets</p>
+<p><br />
+</p>
+<p><strong>GE:</strong> Set of prices s.t. <span class="math inline">\(Q_s(P)=Q_d(P)\)</span> in <em>all</em> markets, including input markets</p>
+<aside class="notes">
+<p>E.g., government push for tomato consumption shifts tomato demand out, prices up</p>
+<p>this lead to LR shift out in tomato supply curves (firms enter)</p>
+<p>increases demand for <em>inputs</em> like farm labour, raises cost of production of other veg, etc</p>
+<p>Will we return to equilibrium, and with what prices and quantities?</p>
+Stay tuned true believers! (and take more Econ, because we won’t cover it here)
+</aside>
+</section><section class="slide level2">
+
+<p>Overall Pareto efficiency: no one can be made better off without making someone else worse off</p>
+<p><br />
+</p>
+<p><font color='blue'>Why is this how we define efficiency?</font></p>
+<div class="fragment">
+<p><br />
+</p>
+<p>Because if we <em>could</em> do so, we would not be at an efficient point</p>
+<aside class="notes">
+<p>Pareto efficiency is hard to disagree with, as a policy goal;</p>
+if we could move to a situation where some were better off and none made worse off, we should do it.
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p>Overall efficiency requires three conditions:</p>
+<dl>
+<dt>Efficiency in production (being on the PPF)</dt>
+<dd>No way to reallocate inputs to increase production of one good without reducing production of another
+</dd>
+</dl>
+<p><br> </p>
+<p>Given society’s resources, we are producing ‘as much as possible’</p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/hightower_cartoon1.png" width="90%" style="display: block; margin: auto;" /></p>
+<p>Efficiency in production?</p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/self-checkout.jpg" width="90%" style="display: block; margin: auto;" /></p>
+<p>Efficiency in production?</p>
+</section><section class="slide level2">
+
+<h3 id="formal-argument-efficiency-in-production">Formal argument: efficiency in production</h3>
+<p>Specifically, economy produces on the PPF: given available inputs, we produce ‘as much as possible’</p>
+<div class="fragment">
+<ul>
+<li>I.e., we can’t produce more of any good without producing less of some other good</li>
+</ul>
+<p><br> </p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(\leftarrow\)</span> Ensured by ‘efficient use of inputs’ (same ‘bang for the buck’ per input for all firms and products)</p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(\leftarrow\)</span> Ensured by ‘competitive market for inputs’ (all firms face the same prices, prices set to equalise demand and supply for inputs)</p>
+<aside class="notes">
+<p><small>Basic argument: firms hire more of each input until its ‘bang for buck’ is the same as all other inputs,</p>
+<p>a single market price for the input will ensure this is the same across firms.</p>
+<p>This ‘equilibrium’ input price must reflect its marginal productivity in producing the ‘last unit’ for <em>each and every firm and product</em></p>
+<p>MRTS(k,l) must be equal across all firms/products, otherwise they would ‘trade’</p>
+… Can also be seen as ensured through ‘exchange between firms’ (production Edgeworth box) </small>
+</aside>
+</div>
+</section><section class="slide level2">
+
+<dl>
+<dt>Efficiency in consumption (exchange efficiency)</dt>
+<dd>No way to reallocate output amongst consumers to make them all better off
+</dd>
+</dl>
+<div class="fragment">
+<p><br> </p>
+<p>Given what we’re producing, it is going to the ‘right consumers’.</p>
+<aside class="notes">
+<p>Basic argument for exchange efficiency of competitive equilibrium:</p>
+<p>If, given the ‘endowments’, one person values A in units B more than someone else,</p>
+<p>an equilibrium price ensures that they will trade these amongst one another until each has the same MRS</p>
+The ‘Edgeworth box’ offers a graphical demonstration that this yields a Pareto optimum (given the amounts produced).
+</aside>
+<aside class="notes">
+<p>More prosaically, a single price for each good ensures that everyone who buys the good</p>
+values their last unit of it the same amount (its price)
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/exchange_efcy.png" width="680" height="100%" style="display: block; margin: auto;" /></p>
+</section><section id="edgeworth-box-scavenger-hunt" class="slide level2">
+<h2>Edgeworth box scavenger hunt</h2>
+<p><img src="picsfigs/Contract-curve-on-edgeworth-box.png" width="640" height="70%" style="display: block; margin: auto;" /></p>
+<p><br> </p>
+<p><em>Does this look familiar? Where can you find it at Exeter? What does it mean?</em></p>
+<aside class="notes">
+<p>Basic argument for exchange efficiency of competitive equilibrium:</p>
+<p>An equilibrium price ensures that they will trade these amongst one another until each has the same MRS</p>
+The ‘Edgeworth box’ offers a graphical demonstration that this yields a Pareto optimum (given the amounts produced).
+</aside>
+</section><section class="slide level2">
+
+<h3 id="formal-conditions-and-argument-for-efficiency-in-consumption-exchange-efficiency">Formal conditions and argument for efficiency in consumption (Exchange efficiency)</h3>
+<p>Specifically: No way to reallocate output amongst consumers to make them all better off</p>
+<div class="fragment">
+<p><br> </p>
+<p>With DMRS, this is equivalent to ‘for the last (positive) unit of X purchased by each consumer, they are all willing to give up the same amount of X to get another Y’</p>
+</div>
+<div class="fragment">
+<p>I.e., their marginal rates of substitution for the last unit they buy are all the same: equal to the price ratio.</p>
+<p><br> </p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(\leftarrow\)</span> basically ensured by the <span class="math inline">\(MRS(x,y)=p_x/p_y\)</span> ‘bang for the buck’ condition.</p>
+<aside class="notes">
+<p><small> All purchase a good up to the point in which their willingness to trade it off for another good equals the price ratio; thus all have the same relative valuation (MRS) for the ‘last unit’ of each good. </small></p>
+<small> Edgeworth box shows how this could occur more directly through exchange the price that leads one guy to want to ‘sell A units of X and buy B units of Y’, and also leads the other guy to want to ‘buy A units of X and sell B units of X’ leads them to both have the same MRS at this ’equilibrium bundle </small>
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p>Given our inputs, we can produce ‘efficiently’, i.e, along the PPF,</p>
+<p><br> </p>
+<p>and given the amounts of each good produced, it is ‘consumed by the right people’ (no more room for trade) …</p>
+<p><br> </p>
+<p>yet we may still not be at efficiency? <font color='blue'>Why not?</font></p>
+</section><section id="section" class="slide level2" data-background="picsfigs/soviet_store.jpg">
+<h2></h2>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/toplevelefficiency.png" width="667" height="80%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p>We need to produce the right <em>combination</em> of goods.</p>
+<p><br>  <br> </p>
+<dl>
+<dt>Efficient allocation of resources (‘top-level’ condition)</dt>
+<dd>No way to produce more of one good and less of another to make all consumers better off
+</dd>
+</dl>
+<aside class="notes">
+<p>Basic argument for top-level efficiency of competitive equilibrium:</p>
+<p>Equilibrium prices from exchange reflect each consumer’s marginal rates of substitution for their last unit</p>
+<p>This signals to firms the rate at which <em>all</em> consumers would be willing to trade off A for B at the margin</p>
+In equilibrium firms produce at a point where the cost tradeoffs between A and B (slope of PPF) reflects these prices.
+</aside>
+</section><section class="slide level2">
+
+<h3 id="formal-conditionsargument-for-top-level-cond.">Formal conditions/argument for top-level cond.</h3>
+<p>Efficiency <span class="math inline">\(\leftarrow\)</span> (Along PPF), can’t adjust <strong>product mix</strong> to make any consumers better off without making some worse off</p>
+<div class="fragment">
+<p><em>Formally:</em></p>
+<p>DMRT on x PPF &amp; DMRS for consumers <small> (rem: all have same MRS) </small>…</p>
+<p><span class="math inline">\(\leftrightarrow MRS(x,y)=MRT(x,y)\)</span> is necessary/sufficient for top-level efficiency</p>
+</div>
+<div class="fragment">
+<p><small> I.e., marginal tradeoff in production = marginal tradeoff in consumption, i.e., Slope of PPF at chosen point = slope of everyone’s indifference curve at their chosen point </small></p>
+</div>
+</section><section class="slide level2">
+
+<p>Need <span class="math display">\[MRS(x,y)=MRT(x,y)\]</span> for top-level efficiency.</p>
+<p><font color='blue'>Why should the free-market lead to this?</font></p>
+<p><br />
+</p>
+<p>Optimizing consumers, free exchange <span class="math inline">\(\rightarrow\)</span> MRS reflects relative prices</p>
+<div class="fragment">
+<p>competitive firms choose q’s s.t. <span class="math inline">\(mc(q_x)=p_x\)</span> <span class="math inline">\(\forall\)</span> firms, goods</p>
+<p><span class="math inline">\(\rightarrow\)</span> ratios are equal; consumers’ value tradeoff equals production tradeoff :)</p>
+<aside class="notes">
+through free exchange, price signals, competition
+</aside>
+</div>
+</section><section class="slide level2">
+
+<dl>
+<dt>First fundamental theorem of welfare economics</dt>
+<dd>A general competitive equilibrium is Pareto efficient, under standard assumptions
+</dd>
+</dl>
+<p><br> </p>
+<ul>
+<li>Intuition: free exchange leaves no room for mutually-beneficial improvements, and firms and consumers optimise</li>
+</ul>
+</section><section class="slide level2">
+
+<dl>
+<dt>Second fundamental theorem</dt>
+<dd>Under some fancy assumptions, any Pareto efficient outcome is a competitive equilibrium for <em>some</em> pattern of initial endowments
+</dd>
+</dl>
+<div class="fragment">
+<p><br> </p>
+<p>So if we could costlessly redistribute <em>endowments</em>, we could attain any socially-desirable outcome by doing so, and then relying on the free market.</p>
+</div>
+</section><section class="slide level2">
+
+<dl>
+<dt>First fundamental theorem of welfare economics</dt>
+<dd>A general competitive equilibrium is Pareto efficient, under standard assumptions.
+</dd>
+</dl>
+<div class="fragment">
+<p><br />
+</p>
+<p><strong>But these assumptions may not hold <span class="math inline">\(\rightarrow\)</span> ‘market failures’</strong></p>
+<ol type="1">
+<li>Imperfect Competition</li>
+</ol>
+<ul>
+<li><p>Markets not competitive, because of barriers to entry or increasing returns to scale</p></li>
+<li><p><span class="math inline">\(\rightarrow\)</span> Prices won’t reflect marginal costs <span class="math inline">\(\rightarrow\)</span> ‘deadweight losses’</p></li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<ol start="2" type="1">
+<li>Externalities, public goods, altruism</li>
+</ol>
+<p>Assumptions: ‘anything someone values’ is bought &amp; sold in the market on their own behalf</p>
+<div class="fragment">
+<p><br> </p>
+<p>But:</p>
+<ul>
+<li><p>Externalities: All costs (&amp; benefits) may not be priced; e.g., pollution</p></li>
+<li><p>Public goods (and bads): Many benefit from the same good (e.g., fireworks)</p></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><small> Also: Altruism/interdependent utilities: People care about <em>others’</em> consumption </small></li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<ol start="3" type="1">
+<li>Asymmetric information: People have different information about the state of the world (costs, risks, a good’s quality…)</li>
+</ol>
+<p><br> </p>
+<div class="fragment">
+<ol start="4" type="1">
+<li>Bounded rationality: people may not choose in their own best interests</li>
+</ol>
+</div>
+</section><section class="slide level2">
+
+<p><strong>Second Welfare theorem</strong></p>
+<p>If we could costlessly redistribute <em>endowments</em>, we could attain any socially-desirable outcome</p>
+<p>by redistributing and then relying on the free market</p>
+<p><br> </p>
+<p>But:</p>
+<div class="fragment">
+<ul>
+<li><p>Redistribution via ‘optimal lump-sum’ taxes isn’t easy, as endowments may be unobservable</p></li>
+<li><p>and redistribution based on things you can affect, e.g. income, may distort incentives.</p></li>
+</ul>
+</div>
+</section><section id="practice-question-on-geefficiency" class="slide level2">
+<h2>Practice question on GE/efficiency</h2>
+<p><em>Choose one or all that are correct.</em> <strong>The following situation(s) or condition(s) imply the economy has NOT attained a Pareto efficient outcome.</strong></p>
+<p><strong>A.</strong> We can produce more toothbrushes w/o producing less toothpaste, but this requires us to produce less food; all 3 goods are valued by consumers.</p>
+<p><strong>B.</strong> The economy is not producing any liverwurst; however, liverwurst does not enter into any consumer’s utility function.<br />
+</p>
+<p><strong>C.</strong> At the current levels of consumption, older people are willing to give up 2 toothbrushes for 1 toothpaste, while younger people are willing to trade these off 1-for-1; both groups have a positive amount of each.<br />
+</p>
+<p><strong>D.</strong> At current production, the PPF implies we could produce one fewer tube of toothpaste and thus produce two more toothbrushes; however, all consumers have a MRS of 1 between these two goods, and are consuming a positive amount of both.</p>
+<aside class="notes">
+Ans: c and d
+</aside>
+</section><section id="some-key-things-for-midterm-recap" class="slide level2">
+<h2>Some key things for midterm (recap)</h2>
+<ul>
+<li>How do economists measure and test models,
+<ul>
+<li>techniques and terms used</li>
+<li>thoughts on estimating demand and supply curves</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<p><br> </p>
+<!---
+- Note that economists define 'surplus' as excess supply at the prevailing (or enforced) price and 'shortage' as excess demand at the prevailing (or enforced) price
+-->
+<p><br> </p>
+<ul>
+<li>The ‘axioms’ over preferences, the justification for these, and what they imply for utility functions</li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<ul>
+<li>Understand indifference curves and budget constraints well</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Conditions for consumer optimisation (obviously this is important) including for when a consumer will choose to consume none of a good</li>
+</ul>
+<p><br> </p>
+</div>
+<div class="fragment">
+<ul>
+<li><p>Definitions of ‘types of goods’ as implied by characteristics of the demand function</p></li>
+<li><p>Impacts of price changes (own good, other good) and income on an individual’s consumption, and what goes into this and how to depict it.</p></li>
+<li><p>(Producer and) consumer surplus.</p></li>
+</ul>
+</div>
+<div class="fragment">
+<p><br> </p>
+<ul>
+<li>‘Applications’, especially those discussed both in the assigned text and in the lectures.</li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<ul>
+<li><p>Firm’s conditions for optimisation in input choice.</p></li>
+<li><p>Firm’s conditions for ‘what quantity to choose’ under different market conditions (price-taking, non-price-taking)</p></li>
+</ul>
+<div class="fragment">
+<p><br> </p>
+<ul>
+<li>Perfect competition in the LR and the SR, what profits look like, how prices move.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Very basic idea of the efficiency of general equilibrium under perfect competition
+<ul>
+<li><p>When it yields a Pareto-efficient outcome,</p></li>
+<li><p>very basically what the first and second welfare theorems mean.</p></li>
+</ul></li>
+<li>Components of efficiency (top-level, exchange, productive) and what these mean</li>
+</ul>
+</div>
+</section></section>
+<section><section id="market-failure-one-case-public-goods-l8" class="title-slide slide level1"><h1>Market failure (One case: Public goods) (L8)</h1></section><section id="consider" class="slide level2" data-background="picsfigs/pubgoodspic.png">
+<h2>Consider…</h2>
+<aside class="notes">
+Given what we have learned, (how) will the market provide the goods in this picture?
+</center>
+<pre><code>&lt;/aside&gt; </code></pre>
+</section><section id="market-failures---public-goods-coverage" class="slide level2">
+<h2>Market failures - public goods, coverage</h2>
+<ul>
+<li>NS: Ch 16 – public goods section only <small> (skip Lindahl equiliibrium, median voter, single-peaked preferences optional) </small></li>
+</ul>
+<p><em>Goals of this introduction</em></p>
+<ul>
+<li><p>How do economists define a public good? What fits into this category?</p></li>
+<li><p>Better understand ‘market failures’</p></li>
+</ul>
+</section><section id="market-failures" class="slide level2">
+<h2>Market failures</h2>
+<p>… Occur when prices don’t fully reflect the marginal social benefits or costs</p>
+<ul>
+<li><p>May provide scope for political intervention</p></li>
+<li><p>How does this happen?</p></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>One potential source of market failure: Public Goods</li>
+</ul>
+</div>
+</section><section id="public-goods-attributes-categories" class="slide level2">
+<h2>Public Goods (attributes, categories)</h2>
+<p>What are the characteristics of a public good?</p>
+</section><section class="slide level2">
+
+<p><em>Def</em> – A <strong>Pure Public Good</strong> is a good that is both</p>
+<div class="fragment">
+<ol type="1">
+<li><em>Non-excludable</em>: Once the good is provided, it is impossible/costly to prevent any individual from using/benefiting from it.</li>
+</ol>
+<aside class="notes">
+Even individuals who have not paid for it
+</aside>
+<aside class="notes">
+Opposite: Exclusive goods*: … if it is relatively easy to bar people from benefitting from it once it has been produced
+</aside>
+</div>
+<div class="fragment">
+<ol start="2" type="1">
+<li><em>Non-rival:</em> One person’s consumption doesn’t reduce the quantity available for others.</li>
+</ol>
+</div>
+<div class="fragment">
+<ul>
+<li><p>The fact that some people use the good doesn’t prevent others from using the <em>same</em> good.</p></li>
+<li><p>There is no ‘crowding.’</p></li>
+<li><p>Provision/consumption to additional users at zero marginal (social) cost.</p></li>
+</ul>
+<aside class="notes">
+Q: think of some examples.
+</aside>
+<aside class="notes">
+<small> In market economies, private suppliers provide the majority of goods and services to consumers. However, certain goods are publicly provided. These include for example defense, education, and health. Why does the government instead of the market provide these goods? Which characteristics differentiate goods that are privately provided from goods that are publicly provided? How do we define public goods? The terminology might induce the conclusion that ‘—-public goods are good that are publicly provided as opposed to private goods which are privately provided.’ This conclusion is simply WRONG! The public or private nature of the good is an intrinsic characteristic of goods that is not related to the provider of the good Hence, it may well be that the state provides a private good or that the market provides a public good. </small>
+</aside>
+</div>
+</section><section id="in-betweens-self-study" class="slide level2">
+<h2>In between’s (self-study)</h2>
+<p><img src="rivalexcludabletable.png" height="90%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p>Excludable and rival (depleatable)? <span class="math inline">\(\rightarrow\)</span> <em>Private good</em></p>
+<div class="fragment">
+<p><br />
+</p>
+<p><em>‘Club goods’:</em> excludable but non-rivalrous (at least up to a congestion point).</p>
+<p><br />
+</p>
+</div>
+<div class="fragment">
+<p><em>“Common property”</em>: Nonexcludable but rivalrous</p>
+</div>
+<div class="fragment">
+<p><br>  <font color='gray'>‘Somewhat’ nonexcludable and/or ‘somewhat’ nonrival: $ ightarrow$ ‘impure public goods.’</font></p>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/rivalexcludabletable1.png" width="518" height="90%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><strong>What about?</strong></p>
+<ul>
+<li>Recorded music</li>
+<li>‘Information’ goods (e.g., software)</li>
+<li>A national park</li>
+<li>A theatre performance</li>
+<li>Roads</li>
+<li>Clean air</li>
+<li>Education</li>
+<li>Aid to the needy</li>
+</ul>
+</section><section class="slide level2">
+
+<p><strong>What about?</strong></p>
+<ul>
+<li>Loud music coming from my window</li>
+<li>Disease control</li>
+<li>Economic research</li>
+<li>The justice system</li>
+<li>Fireworks in Disney World</li>
+<li>The 2012 Olympics in London</li>
+</ul>
+</section><section class="slide level2">
+
+<p><strong>The basic ideas</strong></p>
+<p>If a good is <em>non-rival</em> then additional provision (of the units produced, to more consumers) is costless.</p>
+<div class="fragment">
+<p>Thus,</p>
+<ul>
+<li>if exclusion is possible, and <em>any</em> positive price is charged, some are deterred from consuming it</li>
+</ul>
+<!-- \pause -->
+<ul>
+<li>this is inefficient: people who could benefit from the good, at no cost to others, will not consume it :(</li>
+</ul>
+<p>And…</p>
+</div>
+</section><section class="slide level2">
+
+<p>(If non-rival)</p>
+<p>Even if each person provided it for their <em>own</em> benefit (on the assumption that no one else would), they would typically choose <em>too little</em> from a social POV…</p>
+<p><br> </p>
+<p>Considering their own marginal benefits (and MRS) versus the price or cost, not the <em>social</em> marginal benefit (an ‘externality’ to them)</p>
+</section><section class="slide level2">
+
+<p>If a good is <em>non-excludable</em> it will be difficult to charge people for it</p>
+<ul>
+<li>many will prefer to wait for <em>others</em> to buy it, and then they enjoy it anyways (free-ride) <font color='gray'>(that’s a ‘coordination problem’)</font></li>
+</ul>
+<div class="fragment">
+<p>But if firms cannot charge for its full value, they might not pay the fixed costs to develop/build/provide it</p>
+</div>
+<div class="fragment">
+<p>Who would pay to produce a film that is freely pirated/distributed? Who would pay to develop a drug that must be priced at its marginal cost? Why contribute to police protection for your village, if your neighbours will pay for it anyways?</p>
+<aside class="notes">
+<p>Loosely, ‘rivalryness’ basically relates to whether market provision will be <em>efficient</em>,</p>
+while ‘excludability’ tells you whether firms can make <em>significant amounts of revenue</em> from providing it, selling (access to) the same produced good to more than one person
+</aside>
+</div>
+</section><section class="slide level2">
+
+<h3 id="motivation">Motivation</h3>
+<p><strong>Policy:</strong> ‘Public goods argument’ - justifies many government programmes (military, environmental cleanup, research, etc)</p>
+<p><br> </p>
+<div class="fragment">
+<p><strong>Management:</strong> Companies/individuals can only profit (or even cover costs) from providing a public good through <font color='blue'>???</font></p>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/envservice.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>…gaining subsidies, helping others avoid enforcement (fines) <font color='blue'>or ???</font></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/elephantfundme.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>gaining voluntary support … <font color='blue'>or ??</font></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/disneyfireworks.jpg" width="55%" style="display: block; margin: auto;" /></p>
+<p>by turning it into a private (or excludable) good.</p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="s_6_profit_perfectcomp_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="s_6_profit_perfectcomp_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: true,
+        // Transition style
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        chalkboard: {
+        },
+
+        keyboard: {
+          67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
+          66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+          46: function() { RevealChalkboard.clear() },    // clear chalkboard when 'DEL' is pressed
+           8: function() { RevealChalkboard.reset() },    // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+          68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 's_6_profit_perfectcomp_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+          { src: 's_6_profit_perfectcomp_files/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+          { src: 's_6_profit_perfectcomp_files/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>

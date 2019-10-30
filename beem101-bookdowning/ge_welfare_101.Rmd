@@ -32,13 +32,44 @@ However:
 
 \
 
+```{block2,  type='digression'}
+
+When reading papers, you may hear of  'partial equilibrium' vs. 'general equilibrium analyses.'
+
+Varian, 1992:
+
+> The single-market story ...is a partial equilibrium model in that all prices other than the price of the good being studied are assumed to remain fixed. In the general equilibrium model all prices are variable, and equilibrium requires that all markets clear. Thus, general equilibrium theory takes account of all of the interactions between markets, as well as the functioning of the individual markets.
+
+```
+
+\
+
 ## Pareto efficiency
+```{block2,  type='technote'}
+**Walrasian General equilibrium; a more formal definition (peek)**
+
+(But for an exchange economy only)
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/walrasian_eqbm_exchange_formal_varian.png")
+
+Source: Varian, Microeconomic Analysis, 1992
+
+```
 
 Overall Pareto efficiency: no one can be made better off without making someone else worse off
 
 - If we *could* do so, we would not be at an efficient point
 
-```{block2,  type='note'}
+```{block2,  type='technote'}
+**Pareto efficiency: A more formal definition (peek)**
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/pareto_formal_varian.png")
+
+Source: Varian, Microeconomic Analysis, 1992
+```
+
 Pareto efficiency is hard to disagree with, as a policy goal; \
 if we could move to a situation where some were better off and none made worse off, we should do it.
 ```
@@ -80,7 +111,7 @@ Firms hire more of each input until its 'bang for buck' is the same as all other
 and a single market price for the input will ensure this is the same across firms.
 This 'equilibrium' input price must reflect its marginal productivity
 in producing the 'last unit' for each and every firm.
-
+```
 \
 
 
@@ -94,15 +125,16 @@ Efficiency in consumption (exchange efficiency)
 
 <br> <br> \bigskip
 
-\begin{centering}
+<center>
 
 Given what we're producing, it is going to the 'right consumers'.
 
-\end{centering}
+</center>
 
 *Note--* Basic argument for productive efficiency of competitive equilibrium:
 If, given the 'endowments', one person values A in units B more than someone else,
 an equilibrium price ensures that they will trade these amongst one another until each has the same MRS
+
 The 'Edgeworth box' offers a graphical demonstration that this yields a Pareto optimum (given the amounts produced).
 
 \
@@ -134,8 +166,34 @@ An equilibrium price ensures that they will trade these amongst one another unti
 
 The 'Edgeworth box' offers a graphical demonstration that this yields a Pareto optimum (given the amounts produced).
 
+```{block2,  type='note'}
+
+***Conditions and argument for efficiency in consumption (Exchange efficiency)***
+
+
+With DMRS, this is equivalent to 'for the last (positive) unit of X purchased by each consumer, they are all willing to give up the same amount of X to get another Y'
+
+
+
+
+I.e., their marginal rates of substitution for the last unit they buy are all the same: equal to the price ratio.
+
+
+
+
+$\leftarrow$ basically ensured by the $MRS(x,y)=p_x/p_y$ 'bang for the buck' condition.
+
+All purchase a good up to the point in which their willingness to trade it off for another good equals the price ratio; thus all have the same relative valuation (MRS) for the 'last unit' of each good.
+
+The Edgeworth box shows how this could occur more directly through exchange.
+the price that leads one guy to want to 'sell A units of X and buy B units of Y',
+ and also leads the other guy to want to 'buy A units of X and sell B units of X'
+ leads them to both have the same MRS at this 'equilibrium bundle.
+
+```
 
 \
+
 
 Given our inputs, we can produce 'efficiently', i.e, along the PPF,
 
@@ -157,8 +215,6 @@ yet we may still not be at efficiency? `r format_with_col("Why?","blue")`
 We need to produce the right *combination* of goods.
 
 <br> <br> \bigskip
-<br> <br> \bigskip
-
 Efficient allocation of resources ('top-level' condition)
 :     No way to produce more of one good and less of another to make all consumers better off
 
@@ -186,7 +242,10 @@ Todo: give more explanation here
 First fundamental theorem of welfare economics
 :     A general competitive equilibrium is Pareto efficient, under standard assumptions.
 
-- Loose intuition: free exchange leaves no room for mutually-beneficial improvements, and firms and consumers optimise
+Loose intuition: free exchange leaves no room for mutually-beneficial improvements, and firms and consumers optimise
+
+
+\
 
 Second fundamental theorem
 :     Under some fancy assumptions, any Pareto efficient outcome is a competitive equilibrium for some pattern of initial endowments
@@ -204,8 +263,9 @@ First fundamental theorem of welfare economics
 
 1. Imperfect Competition
 
-- Markets may not be competitive, because of barriers to entry or increasing returns to scale
-- $\rightarrow$ Prices may not reflect marginal costs, leading to 'deadweight losses'
+Markets may not be competitive, because of barriers to entry or increasing returns to scale
+
+$\rightarrow$ Prices may not reflect marginal costs, leading to 'deadweight losses'
 
 
 <br> <br> \bigskip
@@ -229,6 +289,115 @@ But:
 4. Bounded rationality: people may not choose in their own best interests
 
 
+# Notes on supplementary reading
+
+*2019: this is not neccesary the midterm, but could be relevant to the final*
+
+## Supplementary reading:
+
+- Slonim, Robert, Carmen Wang, and Ellen Garbarino. "The market for blood." The Journal of Economic Perspectives 28.2 (2014): 177-196.
+
+----
+
+## Key points:
+
+An unusual 'market' (or non-market)
+
+- Altruism, repugnance, asymmetric information about disease
+
+- Limited storage of blood
+
+. . .
+
+
+- Many countries have *volunteer* supply, so no 'price' to donate
+    - Volunteer behavior responds to entirely different motivations! Not guided by demand.
+- $\rightarrow$  How efficient can it be?
+
+
+----
+
+>  imbalances between aggregate supply and demand are a major challenge in blood markets, including excess supply after disasters and insufficient supply at other times.
+
+. . .
+
+
+> not unexpected given that the blood market operates without market prices and with limited storage length (about six weeks) for whole blood.
+
+
+. . .
+
+
+> Yet shifting to a system of paying blood donors seems a practical impossibility given attitudes toward paying blood donors and concerns that a paid system could compromise blood safety.
+
+----
+
+- Large variation in systems across countries (volunteer versus paid and family/friend donors)
+
+. . .
+
+- Historical shifts:
+    - Paid 'blood on the hoof', markets needed immediate matching
+    - Better storage, blood banking, impersonal diffuse markets
+    - WWII: Patriotism, voluntary donations
+    - AIDS crisis
+
+----
+
+Issues with paying donors
+
+- Does it crowd out intrinsic motivation?
+
+. . .
+
+- Does it bring moral hazard and 'select' the wrong, unsafe donors?
+
+
+. . .
+
+- Is it harmful to the donors (paternalistic idea)
+
+- or otherwise 'repugnant'?
+
+
+----
+
+Issues with volunteer supply
+
+- Not adequate in many countries
+
+
+. . .
+
+- Responds to other motivations than actual need, as there is no price
+
+    - Donate more after disasters like 9-11 even where need is *not* high
+
+    - But agencies don't want to turn away donors ('ungrateful', signal 'never need blood')
+
+
+----
+
+###Suggestions for improvements to blood market
+
+- Techniques for boosting donations
+
+
+    - Mandate choice
+
+    - Symbolic and reputational rewards, gift exchange
+
+
+. . .
+
+
+- Clearinghouse, donor registry, invitations
+
+
+
+
+
+----
 \
 
 **Second Welfare theorem** implied that if we could costlessly redistribute *endowments*, we could attain any socially-desirable outcome by doing so, and then relying on the free market.
