@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>11 Monopolies and price discrimination (L9) | Intermediate Microeconomics (applied); produced for Exeter BEE2038</title>
+  <meta name="description" content="Created for Exeter’s BEE2038: Intermediate Microeconomics (applied)" />
+  <meta name="generator" content="bookdown 0.14.1 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="11 Monopolies and price discrimination (L9) | Intermediate Microeconomics (applied); produced for Exeter BEE2038" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Created for Exeter’s BEE2038: Intermediate Microeconomics (applied)" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="11 Monopolies and price discrimination (L9) | Intermediate Microeconomics (applied); produced for Exeter BEE2038" />
+  
+  <meta name="twitter:description" content="Created for Exeter’s BEE2038: Intermediate Microeconomics (applied)" />
+  
+
+<meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
+
+
+<meta name="date" content="2019-11-03" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="market-failure.html"/>
+<link rel="next" href="note-further-sections-to-be-added-as-we-progress.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<!-- font families -->
+
+<link href="https://fonts.googleapis.com/css?family=PT+Sans|Pacifico|Source+Sans+Pro" rel="stylesheet">
+
+<script src="js/hideOutput.js"></script>
+
+<!-- Mathjax -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/default.js"></script>
+
+ <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "TeX/AMSmath.js"],
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+        jax: ["input/TeX","output/CommonHTML"]
+      });
+      MathJax.Hub.processSectionDelay = 0;
+  </script>
+
+
+<!-- open review block -->
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+<!--
+<script type="text/javascript">
+
+// toggle visibility of R source blocks in R Markdown output
+function toggle_R() {
+  var x = document.getElementsByClassName('r');
+  if (x.length == 0) return;
+  function toggle_vis(o) {
+    var d = o.style.display;
+    o.style.display = (d == 'block' || d == '') ? 'none':'block';
+  }
+
+  for (i = 0; i < x.length; i++) {
+    var y = x[i];
+    if (y.tagName.toLowerCase() === 'pre') toggle_vis(y);
+  }
+
+    var elem = document.getElementById("myButton1");
+    if (elem.value === "Hide Global") elem.value = "Show Global";
+    else elem.value = "Hide Global";
+}
+
+document.write('<input onclick="toggle_R();" type="button" value="Hide Global" id="myButton1" style="position: absolute; top: 10%; right: 2%; z-index: 200"></input>')
+-->
+
+</script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { background-color: #f8f8f8; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Intermediate Microeconomics (applied)</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="note.html"><a href="note.html"><i class="fa fa-check"></i>Notes to students, outline</a><ul>
+<li class="chapter" data-level="" data-path="note.html"><a href="note.html#on-this-online-resource-and-the-textbook-options"><i class="fa fa-check"></i>On this online resource and the textbook options</a></li>
+<li class="chapter" data-level="" data-path="note.html"><a href="note.html#on-this-module-exeter-bee2038---intermediate-microeconomics---for-students-not-doing-a-straight-economics-degree"><i class="fa fa-check"></i>On this module (Exeter: BEE2038 - Intermediate Microeconomics - for students not doing a straight Economics degree)</a></li>
+<li class="chapter" data-level="" data-path="note.html"><a href="note.html#course-information"><i class="fa fa-check"></i>Course Information</a></li>
+<li class="chapter" data-level="" data-path="note.html"><a href="note.html#outline"><i class="fa fa-check"></i>Outline and description</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction to the module and ‘housekeeping’</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#the-first-chunk-aims-to-cover"><i class="fa fa-check"></i><b>1.1</b> The first chunk aims to cover:</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#me"><i class="fa fa-check"></i><b>1.2</b> Me</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#this-module"><i class="fa fa-check"></i><b>1.3</b> This module</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#problem-sets"><i class="fa fa-check"></i><b>1.4</b> Problem sets</a></li>
+<li class="chapter" data-level="1.5" data-path="intro.html"><a href="intro.html#my-feedback"><i class="fa fa-check"></i><b>1.5</b> Feedback on your highly-esteemed but extremely humble lecturer</a></li>
+<li class="chapter" data-level="1.6" data-path="intro.html"><a href="intro.html#module-story"><i class="fa fa-check"></i><b>1.6</b> The story of this module</a></li>
+<li class="chapter" data-level="1.7" data-path="intro.html"><a href="intro.html#the-big-small-question"><i class="fa fa-check"></i><b>1.7</b> The big (small) question</a></li>
+<li class="chapter" data-level="1.8" data-path="intro.html"><a href="intro.html#resources"><i class="fa fa-check"></i><b>1.8</b> Resources</a></li>
+<li class="chapter" data-level="1.9" data-path="intro.html"><a href="intro.html#how-to-do-well"><i class="fa fa-check"></i><b>1.9</b> How to do well</a></li>
+<li class="chapter" data-level="1.10" data-path="intro.html"><a href="intro.html#fortune-cookie-wisdom"><i class="fa fa-check"></i><b>1.10</b> Fortune Cookie Wisdom</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="models.html"><a href="models.html"><i class="fa fa-check"></i><b>2</b> Economic Models (L1-2)</a><ul>
+<li class="chapter" data-level="2.1" data-path="models.html"><a href="models.html#what-is-economics"><i class="fa fa-check"></i><b>2.1</b> What is Economics?</a></li>
+<li class="chapter" data-level="2.2" data-path="models.html"><a href="models.html#why-learn-these-models"><i class="fa fa-check"></i><b>2.2</b> Why learn these models?</a></li>
+<li class="chapter" data-level="2.3" data-path="models.html"><a href="models.html#economic-models"><i class="fa fa-check"></i><b>2.3</b> Economic Models</a></li>
+<li class="chapter" data-level="2.4" data-path="models.html"><a href="models.html#applications"><i class="fa fa-check"></i><b>2.4</b> Applications</a></li>
+<li class="chapter" data-level="2.5" data-path="models.html"><a href="models.html#basic-supply-demand-model"><i class="fa fa-check"></i><b>2.5</b> Basic Supply-Demand Model</a></li>
+<li class="chapter" data-level="2.6" data-path="models.html"><a href="models.html#how-economists-verify-or-assess-theoretical-models"><i class="fa fa-check"></i><b>2.6</b> How Economists ‘Verify’ (or Assess) Theoretical Models</a></li>
+<li class="chapter" data-level="2.7" data-path="models.html"><a href="models.html#positive-and-normative"><i class="fa fa-check"></i><b>2.7</b> Positive and normative</a></li>
+<li class="chapter" data-level="" data-path="models.html"><a href="models.html#review-questions-and-problems-from-ns-chapter-1"><i class="fa fa-check"></i>Review questions and problems from NS Chapter 1</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="math-tools.html"><a href="math-tools.html"><i class="fa fa-check"></i><b>3</b> Math tools and empirical analysis - – coverage outline</a><ul>
+<li class="chapter" data-level="3.1" data-path="math-tools.html"><a href="math-tools.html#other-maths-resources"><i class="fa fa-check"></i><b>3.1</b> Other maths resources</a></li>
+<li class="chapter" data-level="3.2" data-path="math-tools.html"><a href="math-tools.html#simple-stuff"><i class="fa fa-check"></i><b>3.2</b> Simple stuff</a></li>
+<li class="chapter" data-level="3.3" data-path="math-tools.html"><a href="math-tools.html#minimum-maximum-or-neither"><i class="fa fa-check"></i><b>3.3</b> Minimum, maximum, or neither?</a></li>
+<li class="chapter" data-level="3.4" data-path="math-tools.html"><a href="math-tools.html#multivar-functions"><i class="fa fa-check"></i><b>3.4</b> Functions of two or more variables (multivariate functions)</a></li>
+<li class="chapter" data-level="3.5" data-path="math-tools.html"><a href="math-tools.html#contourlines_math"><i class="fa fa-check"></i><b>3.5</b> Contour lines (we will come back to this later)</a></li>
+<li class="chapter" data-level="3.6" data-path="math-tools.html"><a href="math-tools.html#simultaneous-equations"><i class="fa fa-check"></i><b>3.6</b> Simultaneous equations</a></li>
+<li class="chapter" data-level="3.7" data-path="math-tools.html"><a href="math-tools.html#empirical"><i class="fa fa-check"></i><b>3.7</b> Empirical microeconomics/econometrics</a></li>
+<li class="chapter" data-level="3.8" data-path="math-tools.html"><a href="math-tools.html#empirical-meta-example"><i class="fa fa-check"></i><b>3.8</b> Empirical meta-example</a></li>
+<li class="chapter" data-level="3.9" data-path="math-tools.html"><a href="math-tools.html#changing-world-oil-prices"><i class="fa fa-check"></i><b>3.9</b> Changing world oil prices</a></li>
+<li class="chapter" data-level="3.10" data-path="math-tools.html"><a href="math-tools.html#data-and-economic-analysis-curtis-and-irvine"><i class="fa fa-check"></i><b>3.10</b> Data and economic analysis (Curtis and Irvine)</a></li>
+<li class="chapter" data-level="3.11" data-path="math-tools.html"><a href="math-tools.html#between-first-and-second-week-priority-home-study"><i class="fa fa-check"></i><b>3.11</b> Between first and second week; priority home-study</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="util-choice.html"><a href="util-choice.html"><i class="fa fa-check"></i><b>4</b> Utility and Choice (L2)</a><ul>
+<li class="chapter" data-level="4.1" data-path="util-choice.html"><a href="util-choice.html#coverage-outline"><i class="fa fa-check"></i><b>4.1</b> Coverage outline</a></li>
+<li class="chapter" data-level="4.2" data-path="util-choice.html"><a href="util-choice.html#pre-util-choice"><i class="fa fa-check"></i><b>4.2</b> Preamble to utility and choice</a></li>
+<li class="chapter" data-level="4.3" data-path="util-choice.html"><a href="util-choice.html#some-motivation-for-these-abstract-ideas"><i class="fa fa-check"></i><b>4.3</b> Some motivation for these abstract ideas</a></li>
+<li class="chapter" data-level="4.4" data-path="util-choice.html"><a href="util-choice.html#utility"><i class="fa fa-check"></i><b>4.4</b> Utility</a></li>
+<li class="chapter" data-level="4.5" data-path="util-choice.html"><a href="util-choice.html#utility-from-two-goods"><i class="fa fa-check"></i><b>4.5</b> Utility from two goods</a></li>
+<li class="chapter" data-level="4.6" data-path="util-choice.html"><a href="util-choice.html#measuring-and-comparing-utilities"><i class="fa fa-check"></i><b>4.6</b> Measuring and comparing utilities</a></li>
+<li class="chapter" data-level="4.7" data-path="util-choice.html"><a href="util-choice.html#assumptions-about-preferences-axioms"><i class="fa fa-check"></i><b>4.7</b> Assumptions about preferences (‘axioms’)</a></li>
+<li class="chapter" data-level="4.8" data-path="util-choice.html"><a href="util-choice.html#voluntary-trades-and-indifference-curves"><i class="fa fa-check"></i><b>4.8</b> Voluntary trades and indifference curves</a></li>
+<li class="chapter" data-level="4.9" data-path="util-choice.html"><a href="util-choice.html#mrs"><i class="fa fa-check"></i><b>4.9</b> Marginal rate of substitution (MRS): Absolute value of slope of indifference curve</a></li>
+<li class="chapter" data-level="4.10" data-path="util-choice.html"><a href="util-choice.html#illustrating-particular-preferences"><i class="fa fa-check"></i><b>4.10</b> Illustrating particular preferences</a></li>
+<li class="chapter" data-level="4.11" data-path="util-choice.html"><a href="util-choice.html#app-2.3-product-positioning-in-marketing-not-covered-in-lecture-read-on-your-own"><i class="fa fa-check"></i><b>4.11</b> App 2.3: Product positioning in marketing (not covered in lecture, read on your own)</a></li>
+<li class="chapter" data-level="4.12" data-path="util-choice.html"><a href="util-choice.html#perfect-sub-comp"><i class="fa fa-check"></i><b>4.12</b> Definitions: Perfect substitutes and complements</a></li>
+<li class="chapter" data-level="4.13" data-path="util-choice.html"><a href="util-choice.html#choices-are-subject-to-constraints"><i class="fa fa-check"></i><b>4.13</b> Choices are subject to constraints</a></li>
+<li class="chapter" data-level="4.14" data-path="util-choice.html"><a href="util-choice.html#utilmax"><i class="fa fa-check"></i><b>4.14</b> Constrained utility maximization</a></li>
+<li class="chapter" data-level="4.15" data-path="util-choice.html"><a href="util-choice.html#corners"><i class="fa fa-check"></i><b>4.15</b> Note on ‘corner solutions’</a></li>
+<li class="chapter" data-level="4.16" data-path="util-choice.html"><a href="util-choice.html#app-2.4-ticket-scalping"><i class="fa fa-check"></i><b>4.16</b> App 2.4: ticket scalping</a></li>
+<li class="chapter" data-level="4.17" data-path="util-choice.html"><a href="util-choice.html#app-2.5-whats-a-rich-uncles-promise-worth-read-this-at-home."><i class="fa fa-check"></i><b>4.17</b> App 2.5: What’s a rich uncle’s promise worth? (Read this at home.)</a></li>
+<li class="chapter" data-level="4.18" data-path="util-choice.html"><a href="util-choice.html#using-the-model-of-choice"><i class="fa fa-check"></i><b>4.18</b> Using the model of choice</a></li>
+<li class="chapter" data-level="4.19" data-path="util-choice.html"><a href="util-choice.html#algebraicnumerical-examples"><i class="fa fa-check"></i><b>4.19</b> Algebraic/numerical examples</a></li>
+<li class="chapter" data-level="4.20" data-path="util-choice.html"><a href="util-choice.html#tutorial-problems-from-chapter-2"><i class="fa fa-check"></i><b>4.20</b> Tutorial problems from chapter 2</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="demand.html"><a href="demand.html"><i class="fa fa-check"></i><b>5</b> The Demand function (L3)</a><ul>
+<li class="chapter" data-level="5.1" data-path="demand.html"><a href="demand.html#coverage-outline-1"><i class="fa fa-check"></i><b>5.1</b> Coverage outline</a></li>
+<li class="chapter" data-level="5.2" data-path="demand.html"><a href="demand.html#demand-functions"><i class="fa fa-check"></i><b>5.2</b> Demand functions</a></li>
+<li class="chapter" data-level="5.3" data-path="demand.html"><a href="demand.html#homogeneity"><i class="fa fa-check"></i><b>5.3</b> Homogeneity</a></li>
+<li class="chapter" data-level="5.4" data-path="demand.html"><a href="demand.html#response-to-income-changes"><i class="fa fa-check"></i><b>5.4</b> Response to income changes</a></li>
+<li class="chapter" data-level="5.5" data-path="demand.html"><a href="demand.html#substitution-and-income-effects-from-a-fall-or-rise-in-price"><i class="fa fa-check"></i><b>5.5</b> Substitution and income effects from a fall (or rise) in <em>price</em></a></li>
+<li class="chapter" data-level="5.6" data-path="demand.html"><a href="demand.html#different-substitution-effects-of-a-price-change"><i class="fa fa-check"></i><b>5.6</b> Different substitution effects of a price change</a></li>
+<li class="chapter" data-level="5.7" data-path="demand.html"><a href="demand.html#the-legendary-giffen-good"><i class="fa fa-check"></i><b>5.7</b> The (legendary?) Giffen good</a></li>
+<li class="chapter" data-level="" data-path="demand.html"><a href="demand.html#recap"><i class="fa fa-check"></i>Quick recap</a></li>
+<li class="chapter" data-level="5.8" data-path="demand.html"><a href="demand.html#cpi"><i class="fa fa-check"></i><b>5.8</b> NS App 3.2: The CPI and its biases</a></li>
+<li class="chapter" data-level="5.9" data-path="demand.html"><a href="demand.html#the-lump-sum-principle"><i class="fa fa-check"></i><b>5.9</b> The Lump-Sum Principle</a></li>
+<li class="chapter" data-level="5.10" data-path="demand.html"><a href="demand.html#changes-in-the-price-of-another-goodcomplements-or-substitutes"><i class="fa fa-check"></i><b>5.10</b> Changes in the Price of Another Good;‘complements’ or ‘substitutes’</a></li>
+<li class="chapter" data-level="5.11" data-path="demand.html"><a href="demand.html#individual-demand-curves"><i class="fa fa-check"></i><b>5.11</b> Individual demand curves</a></li>
+<li class="chapter" data-level="5.12" data-path="demand.html"><a href="demand.html#shifts-in-an-individuals-demand-curve"><i class="fa fa-check"></i><b>5.12</b> Shifts in an individual’s demand curve</a></li>
+<li class="chapter" data-level="5.13" data-path="demand.html"><a href="demand.html#consumer-surplus"><i class="fa fa-check"></i><b>5.13</b> Consumer surplus</a></li>
+<li class="chapter" data-level="5.14" data-path="demand.html"><a href="demand.html#mktdemand"><i class="fa fa-check"></i><b>5.14</b> Market demand (function)</a></li>
+<li class="chapter" data-level="5.15" data-path="demand.html"><a href="demand.html#shifts-in-the-market-demand-curve"><i class="fa fa-check"></i><b>5.15</b> Shifts in the Market Demand Curve</a></li>
+<li class="chapter" data-level="5.16" data-path="demand.html"><a href="demand.html#elasticities"><i class="fa fa-check"></i><b>5.16</b> Elasticities</a></li>
+<li class="chapter" data-level="5.17" data-path="demand.html"><a href="demand.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>5.17</b> Price elasticity of demand</a></li>
+<li class="chapter" data-level="" data-path="demand.html"><a href="demand.html#examples-from-the-headlines"><i class="fa fa-check"></i>Examples from the headlines</a></li>
+<li class="chapter" data-level="5.18" data-path="demand.html"><a href="demand.html#properties-of-price-elasticity-of-demand"><i class="fa fa-check"></i><b>5.18</b> Properties of price elasticity of demand</a></li>
+<li class="chapter" data-level="5.19" data-path="demand.html"><a href="demand.html#income-elast"><i class="fa fa-check"></i><b>5.19</b> Income elasticity of demand; Normal, luxury, and inferior goods</a></li>
+<li class="chapter" data-level="5.20" data-path="demand.html"><a href="demand.html#further-material-to-study"><i class="fa fa-check"></i><b>5.20</b> Further material to study</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="production-costs.html"><a href="production-costs.html"><i class="fa fa-check"></i><b>6</b> Production and costs (brief coverage)(L4-L5)</a><ul>
+<li class="chapter" data-level="6.1" data-path="production-costs.html"><a href="production-costs.html#production-and-costs-brief-treatment-coverage"><i class="fa fa-check"></i><b>6.1</b> Production and costs (brief treatment: coverage)</a></li>
+<li class="chapter" data-level="6.2" data-path="production-costs.html"><a href="production-costs.html#the-firms-production-function"><i class="fa fa-check"></i><b>6.2</b> The Firm’s Production function</a></li>
+<li class="chapter" data-level="6.3" data-path="production-costs.html"><a href="production-costs.html#marginal-product"><i class="fa fa-check"></i><b>6.3</b> Marginal product</a></li>
+<li class="chapter" data-level="6.4" data-path="production-costs.html"><a href="production-costs.html#cost-minimizing-input-choice"><i class="fa fa-check"></i><b>6.4</b> Cost minimizing input choice</a></li>
+<li class="chapter" data-level="6.5" data-path="production-costs.html"><a href="production-costs.html#types-of-costs-basic-cost-concepts"><i class="fa fa-check"></i><b>6.5</b> Types of costs (‘Basic cost concepts’)</a></li>
+<li class="chapter" data-level="6.6" data-path="production-costs.html"><a href="production-costs.html#rts"><i class="fa fa-check"></i><b>6.6</b> Returns to scale</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="profitmax.html"><a href="profitmax.html"><i class="fa fa-check"></i><b>7</b> Profit maximisation and supply (L5-L6)</a><ul>
+<li class="chapter" data-level="7.1" data-path="profitmax.html"><a href="profitmax.html#profit-maximisation-and-supply---coverage"><i class="fa fa-check"></i><b>7.1</b> Profit maximisation and supply - coverage</a></li>
+<li class="chapter" data-level="7.2" data-path="profitmax.html"><a href="profitmax.html#important-aside-what-are-firms-and-why-do-they-exist"><i class="fa fa-check"></i><b>7.2</b> Important aside: What are ‘firms’ and why do they exist?</a></li>
+<li class="chapter" data-level="7.3" data-path="profitmax.html"><a href="profitmax.html#profit-maximisation"><i class="fa fa-check"></i><b>7.3</b> Profit-maximisation</a></li>
+<li class="chapter" data-level="7.4" data-path="profitmax.html"><a href="profitmax.html#mrmc-condition-for-a-price-taking-firm"><i class="fa fa-check"></i><b>7.4</b> MR=mc condition for a price-taking firm</a></li>
+<li class="chapter" data-level="7.5" data-path="profitmax.html"><a href="profitmax.html#supply-decisions-of-a-price-taking-firm"><i class="fa fa-check"></i><b>7.5</b> Supply decisions of a price-taking firm</a></li>
+<li class="chapter" data-level="7.6" data-path="profitmax.html"><a href="profitmax.html#some-suggested-practice-problems-from-nicholson-and-snyder-chapter-8-12th-ed"><i class="fa fa-check"></i><b>7.6</b> Some suggested practice problems from Nicholson and Snyder Chapter 8 (12th ed)</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="perfect-competition.html"><a href="perfect-competition.html"><i class="fa fa-check"></i><b>8</b> Perfect competition in a single market (L7)</a><ul>
+<li class="chapter" data-level="8.1" data-path="perfect-competition.html"><a href="perfect-competition.html#perfect-competition-in-a-single-market---coverage"><i class="fa fa-check"></i><b>8.1</b> Perfect competition in a single market - coverage</a></li>
+<li class="chapter" data-level="8.2" data-path="perfect-competition.html"><a href="perfect-competition.html#sr-supply"><i class="fa fa-check"></i><b>8.2</b> SR supply</a></li>
+<li class="chapter" data-level="8.3" data-path="perfect-competition.html"><a href="perfect-competition.html#sr-price-determination"><i class="fa fa-check"></i><b>8.3</b> SR Price determination</a></li>
+<li class="chapter" data-level="8.4" data-path="perfect-competition.html"><a href="perfect-competition.html#illustration-of-sr-price-determination"><i class="fa fa-check"></i><b>8.4</b> Illustration of SR price determination</a></li>
+<li class="chapter" data-level="8.5" data-path="perfect-competition.html"><a href="perfect-competition.html#shifts-in-s-and-d-curves"><i class="fa fa-check"></i><b>8.5</b> Shifts in S and D curves</a></li>
+<li class="chapter" data-level="8.6" data-path="perfect-competition.html"><a href="perfect-competition.html#the-long-run"><i class="fa fa-check"></i><b>8.6</b> The Long run</a></li>
+<li class="chapter" data-level="8.7" data-path="perfect-competition.html"><a href="perfect-competition.html#long-run-lr-supply"><i class="fa fa-check"></i><b>8.7</b> Long Run (LR) Supply (*)</a></li>
+<li class="chapter" data-level="8.8" data-path="perfect-competition.html"><a href="perfect-competition.html#consumer-and-producer-surplus-efficiency"><i class="fa fa-check"></i><b>8.8</b> Consumer and producer surplus, efficiency</a></li>
+<li class="chapter" data-level="8.9" data-path="perfect-competition.html"><a href="perfect-competition.html#suggested-practice-problems-from-nicholson-and-snyder-chapter-9-12th-ed"><i class="fa fa-check"></i><b>8.9</b> Suggested practice problems from Nicholson and Snyder Chapter 9 (12th ed)</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html"><i class="fa fa-check"></i><b>9</b> Key principles for efficiency and ‘general’ equilibrium</a><ul>
+<li class="chapter" data-level="9.1" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#general-equilibrium-and-efficiency-coverage"><i class="fa fa-check"></i><b>9.1</b> General equilibrium and efficiency: Coverage</a></li>
+<li class="chapter" data-level="9.2" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#introduction-general-equilibrium"><i class="fa fa-check"></i><b>9.2</b> Introduction: General equilibrium</a></li>
+<li class="chapter" data-level="9.3" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#pareto-efficiency"><i class="fa fa-check"></i><b>9.3</b> Pareto efficiency</a></li>
+<li class="chapter" data-level="9.4" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#the-three-amigos-of-efficiency-productive-exchange-and-top-level"><i class="fa fa-check"></i><b>9.4</b> The three amigos of efficiency: productive, exchange, and top-level</a></li>
+<li class="chapter" data-level="9.5" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#a-basic-argument-for-exchange-efficiency-of-competitive-equilibrium"><i class="fa fa-check"></i><b>9.5</b> A basic argument for exchange efficiency of competitive equilibrium:</a></li>
+<li class="chapter" data-level="9.6" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#fundamental-theorems-of-welfare-economics-market-failures"><i class="fa fa-check"></i><b>9.6</b> Fundamental theorems of welfare economics; market failures</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="market-failure.html"><a href="market-failure.html"><i class="fa fa-check"></i><b>10</b> Public Goods and Market Failure (L8)</a><ul>
+<li class="chapter" data-level="10.1" data-path="market-failure.html"><a href="market-failure.html#coverage"><i class="fa fa-check"></i><b>10.1</b> Coverage</a></li>
+<li class="chapter" data-level="10.2" data-path="market-failure.html"><a href="market-failure.html#market-failures"><i class="fa fa-check"></i><b>10.2</b> Market failures</a></li>
+<li class="chapter" data-level="10.3" data-path="market-failure.html"><a href="market-failure.html#public-goods-attributes-categories"><i class="fa fa-check"></i><b>10.3</b> Public Goods (attributes, categories)</a></li>
+<li class="chapter" data-level="10.4" data-path="market-failure.html"><a href="market-failure.html#why-do-public-goods-lead-to-market-failure"><i class="fa fa-check"></i><b>10.4</b> Why do public goods lead to market failure?</a></li>
+<li class="chapter" data-level="" data-path="market-failure.html"><a href="market-failure.html#social-benefit-of-a-private-good-vs-a-public-good"><i class="fa fa-check"></i>Social benefit of a private good vs a public good</a></li>
+<li class="chapter" data-level="" data-path="market-failure.html"><a href="market-failure.html#application-drug-development"><i class="fa fa-check"></i>Application: drug development</a></li>
+<li class="chapter" data-level="10.5" data-path="market-failure.html"><a href="market-failure.html#solutions-to-the-public-goods-problem"><i class="fa fa-check"></i><b>10.5</b> Solutions to the Public Goods Problem</a></li>
+<li class="chapter" data-level="" data-path="market-failure.html"><a href="market-failure.html#governments-role"><i class="fa fa-check"></i>Government’s role</a></li>
+<li class="chapter" data-level="10.6" data-path="market-failure.html"><a href="market-failure.html#lab-evidence-on-voluntary-provision-of-public-goods"><i class="fa fa-check"></i><b>10.6</b> Lab evidence on <em>voluntary</em> provision of Public Goods</a></li>
+<li class="chapter" data-level="10.7" data-path="market-failure.html"><a href="market-failure.html#today-i-learned-til"><i class="fa fa-check"></i><b>10.7</b> Today I learned (‘TIL’)</a></li>
+<li class="chapter" data-level="10.8" data-path="market-failure.html"><a href="market-failure.html#suggested-practice-problems-from-nicholson-and-snyder-chapter-16-12th-ed"><i class="fa fa-check"></i><b>10.8</b> Suggested practice problems from Nicholson and Snyder Chapter 16 (12th ed)</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="monopolies-pd.html"><a href="monopolies-pd.html"><i class="fa fa-check"></i><b>11</b> Monopolies and price discrimination (L9)</a><ul>
+<li class="chapter" data-level="11.1" data-path="monopolies-pd.html"><a href="monopolies-pd.html#coverage-and-key-readings"><i class="fa fa-check"></i><b>11.1</b> Coverage and key readings</a></li>
+<li class="chapter" data-level="11.2" data-path="monopolies-pd.html"><a href="monopolies-pd.html#barriers-to-entry"><i class="fa fa-check"></i><b>11.2</b> Barriers to entry</a></li>
+<li class="chapter" data-level="11.3" data-path="monopolies-pd.html"><a href="monopolies-pd.html#monopoly-profit-maximisation"><i class="fa fa-check"></i><b>11.3</b> Monopoly profit-maximisation</a></li>
+<li class="chapter" data-level="11.4" data-path="monopolies-pd.html"><a href="monopolies-pd.html#you-may-skip-the-no-supply-curve-for-a-monopoly-section-in-the-ns-text"><i class="fa fa-check"></i><b>11.4</b> 2019: you may Skip the ‘no supply curve for a monopoly’ section in the NS text</a></li>
+<li class="chapter" data-level="11.5" data-path="monopolies-pd.html"><a href="monopolies-pd.html#the-deadweight-loss-of-monopoly"><i class="fa fa-check"></i><b>11.5</b> The deadweight loss of monopoly</a></li>
+<li class="chapter" data-level="11.6" data-path="monopolies-pd.html"><a href="monopolies-pd.html#price-discrimination-basics"><i class="fa fa-check"></i><b>11.6</b> Price discrimination: basics</a></li>
+<li class="chapter" data-level="11.7" data-path="monopolies-pd.html"><a href="monopolies-pd.html#first-degree-andor-perfect-price-discrimination"><i class="fa fa-check"></i><b>11.7</b> First-degree and/or ‘perfect’ price discrimination</a></li>
+<li class="chapter" data-level="11.8" data-path="monopolies-pd.html"><a href="monopolies-pd.html#second-degree-price-discrimination"><i class="fa fa-check"></i><b>11.8</b> Second-degree price discrimination</a></li>
+<li class="chapter" data-level="11.9" data-path="monopolies-pd.html"><a href="monopolies-pd.html#third-degree-price-discrimination-3dpd-market-separation"><i class="fa fa-check"></i><b>11.9</b> Third-degree price discrimination (3dpd) / Market separation</a></li>
+<li class="chapter" data-level="11.10" data-path="monopolies-pd.html"><a href="monopolies-pd.html#who-benefits-from-3dpd"><i class="fa fa-check"></i><b>11.10</b> Who benefits from 3DPD?</a></li>
+<li class="chapter" data-level="11.11" data-path="monopolies-pd.html"><a href="monopolies-pd.html#arbitrage-can-foil-price-discrimination"><i class="fa fa-check"></i><b>11.11</b> Arbitrage … can foil price discrimination</a></li>
+<li class="chapter" data-level="11.12" data-path="monopolies-pd.html"><a href="monopolies-pd.html#davids-old-new-idea-a-policy-tool"><i class="fa fa-check"></i><b>11.12</b> David’s (old) new idea: A policy tool</a></li>
+<li class="chapter" data-level="11.13" data-path="monopolies-pd.html"><a href="monopolies-pd.html#natural-monopolies-and-regulation-very-brief"><i class="fa fa-check"></i><b>11.13</b> Natural monopolies and regulation (very brief!)</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="note-further-sections-to-be-added-as-we-progress.html"><a href="note-further-sections-to-be-added-as-we-progress.html"><i class="fa fa-check"></i><b>12</b> Note: Further sections to be added as we progress</a></li>
+<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html"><i class="fa fa-check"></i>Problem sets</a><ul>
+<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#ps1"><i class="fa fa-check"></i>First problem set: Mathematical approaches, economic models, revision and warm-up</a></li>
+<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#ps1_ans"><i class="fa fa-check"></i>First problem set with suggested answers</a></li>
+<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#second-problem-set-preferences-utility-consumer-optimization"><i class="fa fa-check"></i>Second problem set: Preferences, Utility, Consumer optimization</a></li>
+<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#second-problem-set-with-suggested-answers-preferences-utility-consumer-optimization"><i class="fa fa-check"></i>Second problem set with suggested answers: Preferences, Utility, Consumer optimization</a></li>
+<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#mock-mid-term-exam"><i class="fa fa-check"></i>Mock mid-term exam</a></li>
+<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#third-problem-set-public-goods"><i class="fa fa-check"></i>Third problem set: Public goods</a></li>
+<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#third-problem-set-with-suggested-answers-public-goods"><i class="fa fa-check"></i>Third problem set, with suggested answers: Public goods</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Intermediate Microeconomics (applied); produced for Exeter BEE2038</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="monopolies-pd" class="section level1">
+<h1><span class="header-section-number">11</span> Monopolies and price discrimination (L9)</h1>
+<div id="coverage-and-key-readings" class="section level2">
+<h2><span class="header-section-number">11.1</span> Coverage and key readings</h2>
+<ul>
+<li><p>NS text: 11.2-11.4</p></li>
+<li><p>causes of monopoly (brief)</p></li>
+<li><p>profit maximization</p></li>
+<li><p>What’s wrong with monopoly?</p></li>
+<li><p>Price discrimination: first coverage; types of pd</p></li>
+<li><p>Article: <a href="https://theconversation.com/should-we-help-companies-tailor-prices-to-your-wage-packet-47719">Should we help companies tailor prices to your wage packet?</a></p></li>
+<li><p>With accompanying <a href="https://docs.google.com/document/d/16jos_PT9w1wGpyD5A8ZiWJ9HW6kaLOJH6EWc_AYWnkk/pub">worked examples</a></p></li>
+<li><p>More advanced: ‘The Government May Want to Encourage Price Discrimination by Income’ <a href="https://davidreinstein.wordpress.com/research-and-publications/">Linked here</a></p></li>
+<li><p><font color='blue'>Sixth problem set: Monopolies and price discrimination</font></p></li>
+</ul>
+<p><br />
+</p>
+<div id="price-discrimination-in-the-media" class="section level3 unnumbered">
+<h3>Price discrimination in the media</h3>
+<p><a href="https://itunes.apple.com/us/podcast/money-box/id263570678?mt=2&amp;i=1000379397237">Moneybox</a></p>
+<p><font color='red'>This podcast contains many mis-statements; can you identify them?</font></p>
+<p><br />
+</p>
+</div>
+<div id="learning-goals" class="section level3 unnumbered">
+<h3>Learning goals</h3>
+<ol style="list-style-type: decimal">
+<li><p>What are monopolies and what are barriers to entry?</p></li>
+<li><p>How do monopolies choose prices and quantities?</p></li>
+<li><p>What are the social (welfare) consequences of monopoly?</p></li>
+</ol>
+<p><br />
+</p>
+<ol start="4" style="list-style-type: decimal">
+<li><p>What is ‘price discrimination’?</p></li>
+<li><p>What forms can price discrimination take, and how does it increase a monopoly’s profits?</p></li>
+<li><p>How does price discrimination affect social welfare, and whom does it help or hurt?</p></li>
+<li><p>(Very briefly: other forms of imperfect competition)</p></li>
+</ol>
+<p><br />
+</p>
+<p><em>Recall</em>: under perfect competition</p>
+<ul>
+<li>free entry and exit
+<ul>
+<li><span class="math inline">\(\rightarrow\)</span> zero long-run economic profit</li>
+</ul></li>
+<li>many many tiny firms
+<ul>
+<li><span class="math inline">\(\rightarrow\)</span> firms are price takers</li>
+</ul></li>
+<li><span class="math inline">\(\rightarrow\)</span> p=mc
+<ul>
+<li>And in the long run <span class="math inline">\(p=ATC\)</span> and firms produce at <span class="math inline">\(min(AC)\)</span></li>
+</ul></li>
+</ul>
+<p><br> <br> </p>
+<p><br />
+</p>
+<p><em>these are extreme assumptions; perhaps only a theoretical ideal</em></p>
+<p><br />
+</p>
+<p><br> <br> </p>
+<ul>
+<li>(Firms with market power might set <span class="math inline">\(p&gt;mc\)</span>)</li>
+</ul>
+
+<div class="digression">
+There are a variety of <em>market structures</em> we might consider that fall in between the extremes of perfect competition and monopoly. These include ‘oligopoly’ and ‘monopolistic competition’. The field of Industrial Organization focuses on these ,odels of market structure and their implications for pricing, welfare, innovation, and more
+</div>
+
+<p><br />
+</p>
+<p><strong>The opposite extreme is a monopoly:</strong>^</p>
+<ul>
+<li><p>A single firm</p></li>
+<li><p>Barriers to entry <span class="math inline">\(\rightarrow\)</span> No threat of entry</p></li>
+<li><p>The monopoly can choose it’s price, which becomes the ‘market price’</p></li>
+</ul>
+<p><br />
+</p>
+<p>Still, the more it charges the fewer units demanded. Thus, it chooses a price (or quantity) where MR=MC (like all firms do)</p>
+<ul>
+<li>Produces ‘less than socially optimal quantity’ in order to charge a high price and increase its profit<br />
+</li>
+</ul>
+</div>
+</div>
+<div id="barriers-to-entry" class="section level2">
+<h2><span class="header-section-number">11.2</span> Barriers to entry</h2>
+<div id="technical-barriers-to-entry" class="section level3 unnumbered">
+<h3>Technical barriers to entry</h3>
+<ul>
+<li>IRS/ Diminishing average cost over a broad range of output
+<ul>
+<li><span class="math inline">\(\rightarrow\)</span> ‘a natural monopoly’</li>
+<li>(Here multiple firms producing separately are <em>less efficient</em>, cannot produce the lowest cost)</li>
+</ul></li>
+<li>Special knowledge of a low-cost method of production, or key resource</li>
+</ul>
+<p><br />
+</p>
+</div>
+<div id="legal-barriers-to-entry." class="section level3 unnumbered">
+<h3>Legal barriers to entry.</h3>
+<ul>
+<li>Patents and copyrights</li>
+<li>Exclusive franchise or license (granted by government, by another firm, by a university)</li>
+<li>Government support for a dominant firm, discouraging/forbidding others</li>
+</ul>
+<p><br />
+</p>
+<p>… from the 2016 Massachusetts ballot initiative:</p>
+<p><img src="picsfigs/gaming_open.png" width="40%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="monopoly-profit-maximisation" class="section level2">
+<h2><span class="header-section-number">11.3</span> Monopoly profit-maximisation</h2>
+<ul>
+<li><p>As always, set Q to maximize <span class="math inline">\(QP(Q)-C(Q)\)</span></p></li>
+<li><p>leads to optimization where <span class="math inline">\(MR(Q) = MC(Q)\)</span> (assuming P&gt;AC)</p></li>
+<li><p>Remember, the ‘volume’ benefit of increasing Q is countered by</p>
+<ul>
+<li>Greater cost (producing more always costs more)</li>
+<li>The need to reduce price (on all units) to get people to buy it</li>
+</ul></li>
+</ul>
+<div id="graphically-monopoly-profit-max" class="section level3 unnumbered">
+<h3>Graphically: Monopoly profit-max</h3>
+<p><img src="picsfigs/monopprofit1.png" width="60%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p><img src="picsfigs/monopprofit2.png" width="60%" style="display: block; margin: auto;" /></p>
+
+<div class="note">
+Recall that a firm’s revenue is Price <span class="math inline">\(\times\)</span> Quantity. This is depicted as a rectangle corresponding to a specific point on the demand curve facing the firm.<br />
+The firm’s <em>profit</em> is this revenue less average cost.<br />
+MR tells you how the ‘revenue rectangle’ will increase (or decrease) with another unit. MC tells you the <em>cost</em> of this additional unit.<br />
+Where MR&gt;MC, increasing quantity a little bit increases revenue more than costs, thus increasing profit.
+</div>
+
+<p>This is depicted in the figures below:</p>
+<p><br />
+</p>
+<p><img src="picsfigs/monopprofit3.png" width="60%" style="display: block; margin: auto;" /></p>
+
+<div class="warning">
+Be careful here:<br />
+The price the monopoly can get at quantity <span class="math inline">\(Q^*\)</span> is <span class="math inline">\(P^*\)</span><br />
+… to see the price charged you need to ‘project up’ to the <em>demand</em> curve NOT the MR curve.
+</div>
+
+<p><br />
+</p>
+<p><img src="picsfigs/monopprofit4.png" width="60%" style="display: block; margin: auto;" /></p>
+<p>Again, remember that revenue is <span class="math inline">\(P^*Q^*\)</span> but costs at <span class="math inline">\(Q^*\)</span> are <span class="math inline">\(Q^* \times AC\)</span><br />
+so profit is <span class="math inline">\((P^*-AC)Q^*\)</span>.<br />
+</p>
+<p>Again remember that the AC adds up the MC and the FC and divides by the quantity.</p>
+<p><img src="picsfigs/monopprofitmax.png" width="50%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="you-may-skip-the-no-supply-curve-for-a-monopoly-section-in-the-ns-text" class="section level2">
+<h2><span class="header-section-number">11.4</span> 2019: you may Skip the ‘no supply curve for a monopoly’ section in the NS text</h2>
+</div>
+<div id="the-deadweight-loss-of-monopoly" class="section level2">
+<h2><span class="header-section-number">11.5</span> The deadweight loss of monopoly</h2>
+<p><em>Criticisms of monopoly:</em></p>
+<ol style="list-style-type: decimal">
+<li><p>Monopolies produce too little output, the standard ‘deadweight loss triangle’. This leads to <em>allocative inefficiency</em> (i.e., top-level inefficiency, i.e., the wrong mix of goods is being produced; too little of the monopolized good and too much of other goods).</p></li>
+<li><p>There is a redistribution of wealth from consumers to owners of monopoly.</p></li>
+</ol>
+<p>(But the latter could be counterbalanced by government redistribution; so maybe we shouldn’t consider it a strike against monopoly?)</p>
+<p><br />
+</p>
+<p>Compared to perfect competition, a monopoly typically produces less output and charges a higher price</p>
+<ul>
+<li><p>Some of the consumer surplus under perfect competition is transferred to the monopolist.</p></li>
+<li><p>There is also a deadweight loss under monopoly, as depicted below. This ‘deadweight’ is lost to society— no one gets it. It represents net value that <em>could</em> be generated but is <em>not</em> generated.</p></li>
+</ul>
+<p><br />
+</p>
+<p><img src="picsfigs/dwl1.png" width="65%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p><em>Be sure you understand and can depict</em></p>
+<p>The difference in monopoly vs perfect competitive quantity<br />
+… difference in price<br />
+… difference in consumer surplus<br />
+… difference in firm profit or producer surplus</p>
+<p><br />
+</p>
+<p><img src="picsfigs/dwl2.png" width="65%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p><em>Note:</em> The differences mentioned (costs, transfers) refer to the monopoly outcomes <em>relative to perfect competition</em>.</p>
+<p><br />
+</p>
+<p><img src="picsfigs/dwl3.png" width="90%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p><em>Other criticisms:</em> Some argue the deadweight loss (DWL) above <em>understates</em> the true harm of monopoly. This is controversial. These arguments include</p>
+<ul>
+<li><p>‘Secure’ monopolies don’t innovate as much, and spend wastefully?</p></li>
+<li><p>Monopolies may expend wasteful resources (lobbying, threats, lawsuits…) to preserve barriers to entry</p>
+<ul>
+<li>Thus the above monopoly profits may turn into <em>further</em> deadweight losses!</li>
+</ul></li>
+</ul>
+<p>On the other side, some people argue monopolies tend not to persist in the long run, are disciplined by <em>potential</em> entry, and have <em>greater</em> incentives to innovate</p>
+<p><br />
+</p>
+<p>Empirically, the magnitude of the social cost of monopoly is an open question. Estimates range from 0.5% of GDP to 5% of GDP</p>
+<p><br />
+</p>
+</div>
+<div id="price-discrimination-basics" class="section level2">
+<h2><span class="header-section-number">11.6</span> Price discrimination: basics</h2>
+<dl>
+<dt>Price Discrimination</dt>
+<dd><p>The practice of firms offering different prices to different consumers</p>
+</dd>
+</dl>
+<ul>
+<li>Or different prices for slightly different <em>products</em> or quantities,
+<ul>
+<li>where the difference in price does <em>not</em> merely reflect cost difference,</li>
+<li>with the goal of distinguishing consumers’ <em>willingness to pay</em> (WTP).</li>
+</ul></li>
+</ul>
+<p><em>Note: This includes ‘volume discounts’, or offering an ‘all you can eat’ plan alongside a per-unit plan</em></p>
+<p><br />
+</p>
+<p><img src="picsfigs/exeter_picturehouse.png" width="40%" style="display: block; margin: auto;" /></p>
+<p>Why such a complicated price list?</p>
+<p><br />
+</p>
+<div id="why-do-firms-price-discriminate" class="section level3 unnumbered">
+<h3>Why do firms price discriminate?</h3>
+<p><strong>It can increase profit…</strong> by ‘extracting more surplus’ from consumers</p>
+<p>In general, for a monopoly firm, the ability to identify consumers based on their WTP and charge distinct prices <em>will</em> increase profit.</p>
+<p>However, it may increase or decrease <em>social</em> (consumer+producer) surplus. Consumer surplus itself may increase or decrease.</p>
+<p><br />
+</p>
+</div>
+<div id="uniform-pricing-what-we-were-previously-considering-the-usual-analysis" class="section level3 unnumbered">
+<h3>Uniform pricing (what we were previously considering… the usual analysis)</h3>
+<p>Offering a single price for a good for all consumers is known as ‘uniform pricing’.</p>
+<p><br />
+</p>
+<p>This does not deal with differences amongst consumers. It may ‘’force the firm to target a particular group’’, such as the wealthy, reducing its total sales.</p>
+<p>Under monopoly, uniform pricing leads to a deadweight loss, as we have already seen:</p>
+<p><img src="picsfigs/dwl3.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p>However, price discrimination holds the potential to increase profit (it will, in general, increase profit). It might also reduce the deadweight loss, i.e., increase total welfare. If price discrimination is ‘Perfect’ then it <em>will</em> boost total welfare, as depicted below. (But if it is not perfect, it might reduce welfare…)</p>
+<p><img src="picsfigs/ppd1.png" width="60%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p><img src="picsfigs/ppd2.png" width="60%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p>Price discrimination may seem counter-intuitive: ‘how can offering some consumers lower prices increase profit?’</p>
+<ul>
+<li><p>Higher prices increase your profit per unit, but at a higher price you will sell fewer units. The more you charge the less you sell.</p></li>
+<li><p>Some groups of ‘less keen’ consumers are very sensitive to the price, and they will buy very little at a high price, so a lower price would be more profitable.</p></li>
+<li><p>Some groups of ‘more keen’ consumers will buy a lot even at a high price. They are less ‘price-sensitive’, so you want to charge them more.</p></li>
+</ul>
+<p><br />
+</p>
+</div>
+<div id="the-three-types-of-price-discrimination" class="section level3 unnumbered">
+<h3>The three types of price discrimination</h3>
+<ol style="list-style-type: decimal">
+<li>Individual-based (First degree; at best ‘perfect’)</li>
+</ol>
+<p><br />
+</p>
+<p>Note that ‘targeting a price at each consumer’ may be done on the internet or on a discretionary basis by an individual seller. But this alone does not imply Perfect price discrimination.</p>
+<p>‘Perfect’ means the seller exactly predicts and charges each consumer her exact valuation! It’s basically a theoretical ideal.</p>
+<p><br> <br> </p>
+<ol start="2" style="list-style-type: decimal">
+<li>Self-selection (Second degree)</li>
+</ol>
+<p><br />
+</p>
+<p>For ‘self-selection’ or ‘second-degree price discrimination… we can imagine that the firm doesn’t know each consumer’s valuations. Or, perhaps the firm is not allowed to ’discriminate’ by charging different prices to different people.</p>
+<p><br />
+</p>
+<p>Instead, it sells different bundles, quantities or qualities of products to get high and low-value consumers to separate themselves…
+E.g., first-class seats.</p>
+<p><br> <br> </p>
+
+<div class="technote">
+To fully analyse these problems we need to know the techniques of ‘mechanism design under asymmetric information’, which we are not covering in this module.
+</div>
+
+<p><br> <br> </p>
+<ol start="3" style="list-style-type: decimal">
+<li>Group-based (Third degree; ‘market separation’)</li>
+</ol>
+<p>Here the firm finds something identifiable and inherent about the consumer that is indicative of her likely valuations (and price-sensitivity).<br />
+It might be her age, nationality, student-status, or even perhaps her income.</p>
+<p><br />
+</p>
+</div>
+</div>
+<div id="first-degree-andor-perfect-price-discrimination" class="section level2">
+<h2><span class="header-section-number">11.7</span> First-degree and/or ‘perfect’ price discrimination</h2>
+<ul>
+<li><p>The firm can offer each individual a different price for each unit they purchase.</p></li>
+<li><p>Assuming you know what the consumer is willing to pay, you can make the <em>highest possible profit</em>; that is called ‘perfect’ price discrimination.</p></li>
+</ul>
+<p><br> <br> </p>
+<dl>
+<dt>Perfect price discrimination</dt>
+<dd>Charging each consumer (for each unit) the <em>maximum</em> he or she would be willing to pay, i.e., her valuation
+</dd>
+</dl>
+<p><br> <br> </p>
+<p>Here the monopolist would extract <em>all the available surplus</em>; no consumer surplus remains.</p>
+<p>Because the monopolists extracts <em>all</em> the possible surplus, this is efficient! This holds because the monopolist captures:</p>
+<p><span class="math inline">\(\max\)</span>(total value of good - cost) <span class="math inline">\(\rightarrow\)</span> max(CS+PS)</p>
+<p><br />
+</p>
+<p>But perfect PD is a rare/impossible extreme: requires mind reading.</p>
+<p>A possible close example: a website targets an individualised price to each consumer, based on clues like time-of-day, web clicks, cookie data, IP location. But even this is not really <em>perfect</em> price discrimination:
+Here, the seller does not really know exactly what the consumer is willing to pay; he is using broad clues.[See Shiller, B. R. (2013, or updated version). First degree price discrimination using big data.]</p>
+<p><br />
+</p>
+<p><img src="picsfigs/ppd3.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p><img src="picsfigs/ppd4.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p><img src="picsfigs/ppd5.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+</div>
+<div id="second-degree-price-discrimination" class="section level2">
+<h2><span class="header-section-number">11.8</span> Second-degree price discrimination</h2>
+<p>Here the firm is unable to differentiate between consumers explicitly.</p>
+<p>Instead it offers various varieties and bundles. It uses variations in quality/quantity to get consumers to “self-select.”</p>
+<p>Some examples:</p>
+<ul>
+<li><p>Quality- Transport- Different classes, Supermarkets- budget products</p></li>
+<li><p>Quantity- Supermarkets- Larger quantities at lower prices per unit; i.e., ‘nonlinear pricing’</p></li>
+</ul>
+<p><br />
+</p>
+<p>Consider…</p>
+<p><strong>Quantity</strong></p>
+<p>An 8 ounce cup of coffee for £1.60 vs. 16 ounces for £2.00</p>
+<ul>
+<li>20 p per oz vs. 12.5p per oz. (with linear pricing there would be the same price of 15p/oz.)</li>
+</ul>
+<p>0 Result: with 2 prices monopoly can get ‘high value’ consumers to buy/get more in total without losing ‘low-value’ consumers</p>
+<p><br />
+</p>
+<p><strong>Quality</strong></p>
+<p>The calculations are similar when we consider variations in quality:</p>
+<p>An airline doesn’t know whom the high-valuation flyers are (willingness-to-pay, ‘wtp’ for travel <em>itself</em> varies)</p>
+<p>But it may know on <em>average</em> that flyers with higher wtp for travel <em>also</em> value comfort more. Thus:</p>
+<ul>
+<li><p>Make second-class seats very uncomfortable, first-class luxurious, and charge more for first-class seats</p></li>
+<li><p>Can get consumers with higher values for travel <em>and</em> comfort to pay more</p></li>
+<li><p>…without losing lower-valuing customers</p></li>
+</ul>
+<p>(NOTE: I am not going to cover the algebra nor graphical analysis of second-degree PD, nonlinear pricing, or two-part pricing.)</p>
+<p><br />
+</p>
+<div id="the-self-selection-problem" class="section level3 unnumbered">
+<h3>The ‘self-selection’ problem</h3>
+<p>Train companies must price first and second class such that consumers will self-select.</p>
+<ul>
+<li><p>If first class is too expensive then the high valuing group will not choose first class</p></li>
+<li><p>If second-class is too cheap, both the high and low groups will choose second class</p></li>
+<li><p>But if second class is too expensive, the low groups will not buy a ticket.</p></li>
+</ul>
+<p><br />
+</p>
+<p><img src="picsfigs/thirdclasscarriage.jpg" width="50%" style="display: block; margin: auto;" /></p>
+<p><a href="#fn78" class="footnote-ref" id="fnref78"><sup>78</sup></a></p>
+<p><br> <br> </p>
+<p>There is typically Lots of discussion of this in the media, see e.g.,</p>
+<p><a href="https://www.1843magazine.com/ideas/the-daily/why-companies-make-their-products-worse">THIS</a> article in The Economist</p>
+<p><br />
+</p>
+</div>
+</div>
+<div id="third-degree-price-discrimination-3dpd-market-separation" class="section level2">
+<h2><span class="header-section-number">11.9</span> Third-degree price discrimination (3dpd) / Market separation</h2>
+<dl>
+<dt>Third-degree price discrimination/Market-separation</dt>
+<dd>The practice of charging different prices to different groups that can be identified
+</dd>
+</dl>
+<p>Here, the firm can differentiate <em>groups of consumers</em> or ‘local markets’, not individuals.</p>
+<p>Each group has a different willingness to pay <em>on average</em>.</p>
+<p><br />
+</p>
+<p><span class="math inline">\(\rightarrow\)</span> Offer lower prices to lower-valuing groups, higher prices to higher-valuing groups.</p>
+<p><br />
+</p>
+<p><strong>Example:</strong> Students and old-age-pensioners may face lower prices for transport, food and other goods; as they have a lower willingness to pay for these</p>
+<p>Remember: this is <em>not</em> done out of charity but to boost profits.</p>
+<p><br />
+</p>
+<div id="pricing-under-3dpdmarket-separation-calculationsgraphical-depiction" class="section level3 unnumbered">
+<h3>Pricing under 3dpd/market separation (calculations/graphical depiction)</h3>
+<p>Each group or market has it’s own demand <span class="math inline">\(\rightarrow\)</span> marginal revenue curve</p>
+<ul>
+<li><p>So set an optimising price quantity <em>separately</em> for each group.</p></li>
+<li><p>E.g., a discount for the elderly, higher price for the middle-aged</p></li>
+<li><p>Or a lower price in Portugal than in Germany</p></li>
+</ul>
+<p><img src="picsfigs/discounts.png" width="50%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p><img src="picsfigs/3dpd.png" width="60%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p><img src="picsfigs/3dpd.png" width="60%" style="display: block; margin: auto;" /></p>
+<p><br />
+<em>A pretty good numerical example is given in slides 6-8</em> <a href="http://people.hss.caltech.edu/~mshum/ec105/matt9.pdf">HERE</a></p>
+<p><br />
+</p>
+<p>Another depiction, adding demand curves (they call it ‘average revenue’):</p>
+<p><img src="picsfigs/Price-discrimination-SNP2.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+</div>
+</div>
+<div id="who-benefits-from-3dpd" class="section level2">
+<h2><span class="header-section-number">11.10</span> Who benefits from 3DPD?</h2>
+<ul>
+<li><p>Consumers <em>in identifiable group</em> with lower wtp face lower prices, thus they benefit</p></li>
+<li><p>Consumers <em>in identifiable group</em> with higher wtp face higher prices, thus they lose</p></li>
+<li><p>Firms can charge higher prices to high-wtp group without losing low-wtp group <span class="math inline">\(\rightarrow\)</span> increase profit</p></li>
+</ul>
+<p><br> <br> </p>
+<p>Net welfare result: theoretically uncertain. This is a difficult point to understand, but I think you are up to the challenge! This is <em>not</em> covered in the NS text, but I give several explanations and references.</p>
+<p><br />
+</p>
+<p><strong>For consumers:</strong></p>
+<p><img src="picsfigs/pdwelfare.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p><img src="picsfigs/pdwelfareoverall.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<div id="why-is-the-benefit-uncertain" class="section level3 unnumbered">
+<h3>Why is the benefit uncertain?</h3>
+<p><strong>Exchange efficiency</strong></p>
+<p>When groups can be identified as ‘low and high valuation’</p>
+<ul>
+<li><p>the high-valuation groups get charged more, and thus consume less</p></li>
+<li><p>low-valuation groups get charged less, and consume more</p></li>
+</ul>
+<p><span class="math inline">\(\rightarrow\)</span> Exchange efficiency: <em>given what is produced</em>, PD causes it to be consumed by people who value it relatively less!</p>
+<p><br />
+</p>
+<p><strong>Top-level efficiency; amount produced</strong></p>
+<p>On the other hand, PD could lead more to be produced/consumed (but not necessarily) of the otherwise underproduced ‘monopolised’ good (remember DWL of monopoly)</p>
+<p><span class="math inline">\(\rightarrow\)</span> top-level efficiency may increase (or decrease)</p>
+<p><br />
+</p>
+<p>E.g., suppose that with a ‘uniform price’ only the wealthy went to a restaurant…</p>
+<ul>
+<li><p>after PD (early-bird discounts, OAP discounts, benefits discounts) the low-income may also dine in the restaurant</p></li>
+<li><p><span class="math inline">\(\rightarrow\)</span> more value is produced</p></li>
+</ul>
+<p><br />
+</p>
+<p>Considering the two effects on efficiency just described … one (Exchange efficiency) is negative and the other (Top-level) may be positive or negative. If the latter is positive (if production increases with PD) the effects trade off one another. Because the ‘Exchange efficiency effect’ is negative, the quantity produced <em>must</em> increase after PD for it to be beneficial. But this quantity increase is a necessary but not a sufficient condition; this effect also must be large enough to <em>outweigh</em> the exchange-efficiency effect.</p>
+<p><br />
+</p>
+</div>
+</div>
+<div id="arbitrage-can-foil-price-discrimination" class="section level2">
+<h2><span class="header-section-number">11.11</span> Arbitrage … can foil price discrimination</h2>
+<p>If, e.g., elderly who get discounts could sell the products to the middle-aged…</p>
+<ul>
+<li><p>Then middle-aged would always ask them to do this, never pay high prices</p></li>
+<li><p>Firm could no longer profit from this</p></li>
+<li><p>Similar issues with quantity discounts, or ‘web cookie’ personalised pricing</p></li>
+</ul>
+<p><br> <br> </p>
+<p>So PD only ‘works’ for goods that are hard to trade, like haircuts…</p>
+<p>or where purchases are frequent and low-value, and resale markets are difficult</p>
+<p>(The above issues are sometimes referred to as ‘transactions costs’.)</p>
+
+<div class="warning">
+<p>When I ask about the welfare effect of price discrimination, students often mention arbitrage in this discussion. However, the potential for arbitrage doesn’t make price discrimination <em>inefficient</em>, it just makes it <em>ineffectual</em> and makes firms not want to bother.</p>
+</div>
+
+<p><br />
+</p>
+</div>
+<div id="davids-old-new-idea-a-policy-tool" class="section level2">
+<h2><span class="header-section-number">11.12</span> David’s (old) new idea: A policy tool</h2>
+<p>People with low-incomes tend to have lower-wtp for most goods.<br />
+</p>
+<p>Government can typically identify and verify incomes.<br />
+</p>
+<p>Thus governments could allow and encourage low-income consumers to get an ID indicating this.<br />
+</p>
+<p>Governments could allow and encourage firms to use this for price-discrimination<br />
+</p>
+<p><em>But should they do so?</em></p>
+<p><br />
+</p>
+<ul>
+<li>Firms would increase profit</li>
+<li>Low-income households would benefit, reducing inequality</li>
+<li>Net impact on efficiency uncertain; worth investigating</li>
+</ul>
+<p>See the readings on this: ‘The Government may want to encourage price discrimination by income’ <a href="https://davidreinstein.wordpress.com/research-and-publications/">linked here</a></p>
+</div>
+<div id="natural-monopolies-and-regulation-very-brief" class="section level2">
+<h2><span class="header-section-number">11.13</span> Natural monopolies and regulation (very brief!)</h2>
+<p>Where an industry involves a ‘natural monopoly’ (IRS) the most efficient production is a unified production process<br />
+</p>
+<p>But if a monopoly reigns it overcharges and underprovides. Thus the government may want to allow/enforce monopoly privileges but <em>regulate</em> price it can charge</p>
+<p><br />
+The difficulty in doing this: Government wants to regulate <span class="math inline">\(p=AC\)</span>, but it doesn’t know firms’ actual cost function (asymmetric information).
+The firm wants government to think it is high cost, to justify a high price.</p>
+<p><br />
+</p>
+<p>This yields another mechanism design ‘hidden information’ ‘principal-agent problem’</p>
+<p>\</p>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="78">
+<li id="fn78"><p>The Third-Class Carriage is a c. 1862–1864 oil on canvas painting by Honoré Daumier<a href="monopolies-pd.html#fnref78" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="market-failure.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="note-further-sections-to-be-added-as-we-progress.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": true,
+"weibo": true,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

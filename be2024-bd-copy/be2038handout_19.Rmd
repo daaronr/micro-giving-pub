@@ -2831,13 +2831,20 @@ BEGINLEC9
      geometry: margin=0.7in
 ---
 
-# Monopolies and price discrimination [1-2 hours] (L9) {#monopolies-pd}
+# Monopolies and price discrimination (L9) {#monopolies-pd}
 
-- ns: 11.2-11.4
-- T1:07
+## Outline and key readings
+
+
+- NS text: 11.2-11.4
+
+
 - causes of monopoly (brief)
--   profit maximization
+
+
+- profit maximization
 - What’s wrong with monopoly?
+
 - Price discrimination: first coverage; types of pd
 - Article: [Should we help companies tailor prices to your wage packet?](https://theconversation.com/should-we-help-companies-tailor-prices-to-your-wage-packet-47719)
 - With accompanying [worked examples](https://docs.google.com/document/d/16jos_PT9w1wGpyD5A8ZiWJ9HW6kaLOJH6EWc_AYWnkk/pub)
@@ -2849,31 +2856,41 @@ BEGINLEC9
 
 ### Price discrimination in the media {-}
 
-Moneybox - \url{https://itunes.apple.com/us/podcast/money-box/id263570678?mt=2&i=1000379397237} -- many mis-statements; can you identify them?
+[Moneybox](https://itunes.apple.com/us/podcast/money-box/id263570678?mt=2&i=1000379397237)
+
+`r format_with_col("This podcast contains many mis-statements; can you identify them?","red")`
 
 \
 
-### Lecture goals {-}
+### Learning goals {-}
 
 1. What are monopolies and what are barriers to entry?
+
 2. How do monopolies choose prices and quantities?
+
 3. What are the social (welfare) consequences of monopoly?
 
+\
 
 4. What is 'price discrimination'?
+
 5. What forms can price discrimination take, and how does it increase a monopoly's profits?
+
 6. How does price discrimination affect social welfare, and whom does it help or hurt?
+
 7. (Very briefly: other forms of imperfect competition)
 
 \
 
 
-*Rem*: perfect competition
+*Recall*: perfect competitio in
 
 - free entry and exit
     - $\rightarrow$ zero long-run economic profit
+
 - many many tiny firms
     - $\rightarrow$ firms are price takers
+
 - $\rightarrow$ p=mc
     - And in the long run $p=ATC$ and firms produce at $min(AC)$
 
@@ -2892,19 +2909,25 @@ Moneybox - \url{https://itunes.apple.com/us/podcast/money-box/id263570678?mt=2&i
 
 - (Firms with market power might set $p>mc$)
 
-\
+```{block2,  type='digression'}
+There are a variety of *market structures* we might consider that fall in between the extremes of perfect competition and monopoly. These include 'oligopoly' and 'monopolistic competition'. The field of Industrial Organization focuses on these ,odels of market structure  and their implications for pricing, welfare, innovation, and more
+```  \
 
-Opposite extreme: *monopoly*
+**The opposite extreme is a monopoly:**^
 
 - A single firm
+
 - Barriers to entry $\rightarrow$ No threat of entry
-- Can choose price, which becomes the 'market price'
 
-    - Still, the more it charges the fewer units demanded
+- The monopoly can choose it's price, which becomes the 'market price'
 
-    - Chooses a price (or quantity) where MR=MC (like all firms do)
+\
 
-    - Produces 'less than socially optimal quantity' in order to charge a high price and increase its profit
+Still, the more it charges the fewer units demanded. Thus, it chooses a price (or quantity) where MR=MC (like all firms do)
+
+- Produces 'less than socially optimal quantity' in order to charge a high price and increase its profit
+\
+
 
 ## Barriers to entry
 
@@ -2929,7 +2952,7 @@ Opposite extreme: *monopoly*
 
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("gaming_open.png")
+ knitr::include_graphics("picsfigs/gaming_open.png")
 ```
 
 
@@ -2948,63 +2971,58 @@ Opposite extreme: *monopoly*
 ### Graphically: Monopoly profit-max {-}
 
 
-```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("monopprofit1.png")
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/monopprofit1.png")
 ```
 
 \
 
-```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("monopprofit2.png")
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/monopprofit2.png")
 ```
 
 
-
-*Notes:*
-Rem: Firm's revenue is Price $\times$ Quantity. \
-Rectangle for a specific point on demand curve. \
-Firm' *profit* is this less average cost. \
-MR tells you how the 'revenue rectangle' will increase (or decrease) with another unit. \
-MC tells you the *cost* of this additional unit.
+```{block2,  type='note'}
+Recall that a  dirm's revenue is Price $\times$ Quantity. This is depicted as a rectangle corresponding to a specific point on the demand curve facing the firm. \
+The firm's *profit* is this revenue less average cost. \
+MR tells you how the 'revenue rectangle' will increase (or decrease) with another unit. MC tells you the *cost* of this additional unit. \
 Where MR>MC, increasing quantity a little bit increases revenue more than costs, thus increasing profit.
 
+```
+This is depicted in the figures below
 
 \
 
-```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("monopprofit3.png")
+```{r  fig.cap = '', out.width=50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/monopprofit3.png")
 ```
 
-
-*Note:*
+```{block2,  type='warning'}
 Be careful here: \
 The price the monopoly can get at quantity $Q^*$ is $P^*$  \
-... project up to the *demand* curve NOT the MR curve.
+... to see the price charged project up to the *demand* curve NOT the MR curve.
+```
 
 \
 
-```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("monopprofit4.png")
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/monopprofit4.png")
 ```
 
 
-*Note:*
 Again, remember that revenue is $P^*Q^*$ but costs at $Q^*$ are $Q^* \times AC$ \
  so profit is $(P^*-AC)Q^*$. \
-By the way, the AC adds up the MC and the FC and divides by the quantity.
 
-\
+Again remember that the AC adds up the MC and the FC and divides by the quantity.
 
-```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("monopprofitmax.png")
+
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/monopprofitmax.png")
 ```
 
+## 2019: you may Skip the 'no supply curve for a monopoly' section in the NS text
 
-[comment]: <> (2024BB)
-
-## Skip: 'no supply curve for a monopoly'
-
-[comment]: <> (2024EE)
 
 
 ## The deadweight loss of monopoly
@@ -3012,63 +3030,69 @@ By the way, the AC adds up the MC and the FC and divides by the quantity.
 
 *Criticisms of monopoly:*
 
-1. Monopolies produce too little output: allocatively inefficient.
+1. Monopolies produce too little output, the standard 'deadweight loss triangle'. This leads to *allocative inefficiency* (i.e., top-level inefficiency, i.e., the wrong mix of goods is being produced; too little of the monopolized good and too much of other goods).
 
-2. There is a redistribution of wealth from consumers to owners.
+2. There is a redistribution of wealth from consumers to owners of monopoly.
 
-- But this could be counterbalanced by government redistribution
+(But the latter could be counterbalanced by government redistribution; so maybe we shouldn't consider it a strike against monopoly?)
 
 
 \
 
-- Compared to perfect competition, a monopoly typically produces less output and charges a higher price
+Compared to perfect competition, a monopoly typically produces less output and charges a higher price
 
 - Some of the consumer surplus under perfect competition is transferred to the monopolist.
 
-- There is also a deadweight loss under monopoly
+- There is also a deadweight loss under monopoly, as depicted below. This 'deadweight' is lost to society--- no one gets it. It represents net value that could be generated but is not.
 
 \
 
 ```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("dwl1.png")
+ knitr::include_graphics("picsfigs/dwl1.png")
 ```
 
+\
 
+*Be sure you understand and can depict*
 
-*Note:*
 The difference in monopoly vs perfect competitive quantity \
 ... difference in price \
 ... difference in consumer surplus \
-... difference in firm profit
+... difference in firm profit or producer surplus
 
 \
 
 ```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("dwl2.png")
+ knitr::include_graphics("picsfigs/dwl2.png")
 ```
 
+\
 
-
-*Note:* The differences (costs, transfers) refer to the monopoly outcomes *relative to perfect competition*.
+*Note:* The differences mentioned (costs, transfers) refer to the monopoly outcomes *relative to perfect competition*.
 
 \
 
 ```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("dwl3.png")
+ knitr::include_graphics("picsfigs/dwl3.png")
 ```
 
 \
 
-*Other criticisms:* Some argue the deadweight loss (DWL) above *understates* the true harm of monopoly
+*Other criticisms:* Some argue the deadweight loss (DWL) above *understates* the true harm of monopoly. This is controversial. These arguments include
 
 - 'Secure' monopolies don't innovate as much, and spend wastefully?
+
 - Monopolies may expend wasteful resources (lobbying, threats, lawsuits...) to preserve barriers to entry
+
     - Thus the above monopoly profits may turn into further deadweight losses!
 
-- On the other side, some argue monopolies tend not to persist in the long run, are disciplined by *potential* entry, and have *greater* incentives to innovate
+On the other side, some people argue monopolies tend not to persist in the long run, are disciplined by *potential* entry, and have *greater* incentives to innovate
 
-- Empirically, the magnitude of the social cost of monopoly is an open question
-    - Estimates range from 0.5\% of GDP to 5\% of GDP
+\
+
+Empirically, the magnitude of the social cost of monopoly is an open question. Estimates range from 0.5\% of GDP to 5\% of GDP
+
+\
 
 ## Price discrimination
 
@@ -3081,12 +3105,12 @@ Price Discrimination
     - with the goal of distinguishing consumers' *willingness to pay* (WTP).
 
 
-Note: This includes 'volume discounts', or offering an 'all you can eat' plan alongside a per-unit plan
+*Note: This includes 'volume discounts', or offering an 'all you can eat' plan alongside a per-unit plan*
 
 \
 
 ```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("exeter_picturehouse.png")
+ knitr::include_graphics("picsfigs/exeter_picturehouse.png")
 ```
 
 Why such a complicated price list?
@@ -3095,47 +3119,54 @@ Why such a complicated price list?
 
 ### Why do firms price discriminate? {-}
 
-- It can increase profit
+**It can increase profit...**  by 'extracting more surplus' from consumers
 
-    - by 'extracting more surplus' from consumers
 
-- In general, for a monopoly firm, the ability to identify consumers based on their WTP and charge distinct prices *will* increase profit
-    - However, it may increase or decrease *social* (consumer+producer) surplus...
-    - Consumer surplus itself may increase or decrease.
+In general, for a monopoly firm, the ability to identify consumers based on their WTP and charge distinct prices *will* increase profit.
+
+However, it may increase or decrease *social* (consumer+producer) surplus. Consumer surplus itself may increase or decrease.
 
 \
 
-### The alternative to price discrimination (previous analysis) {-}
+### Uniform pricing (what we were previously considering... the usual analysis}
 
 Offering a single price for a good for all consumers is known as 'uniform pricing'.
 
-- This does not deal with differences amongst consumers.
-- May force you to target a particular group, such as the wealthy, reducing your total sales.
-- Under monopoly, this leads to a deadweight loss
+\
+
+This does not deal with differences amongst consumers. It may ''force the firm to target a particular group'', such as the wealthy, reducing its total sales.
+
+Under monopoly, uniform pricing leads to a deadweight loss, as we have already seen:
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("dwl3.png")
+ knitr::include_graphics("picsfigs/dwl3.png")
 ```
 
 \
 
+However, price discrimination holds the potential to increase profit (it will, in general, increase profit). It might also reduce the deadweight loss, i.e., increase total welfare. If price discrimination is 'Perfect' then it *will* boost total welfare, as depicted below. (But if it is not perfect, it might reduce welfare...)
+
+The
 
 ```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("ppd1.png")
+ knitr::include_graphics("picsfigs/ppd1.png")
 ```
 
 \
 
 ```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("ppd2.png")
+ knitr::include_graphics("picsfigs/ppd2.png")
 ```
 
 \
 
-- Price discrimination may seem counter-intuitive: ‘how can offering some consumers lower prices increase profit?’
-    - Higher prices increase your profit per unit, but at a higher price you will sell fewer units. The more you charge the less you sell.
-    - Some groups of ‘less keen’ consumers are very sensitive to the price, and they will buy very little at a high price, so a lower price would be more profitable.
-    - Some groups of ‘more keen’ consumers will buy a lot even at a high price. They are less ‘price-sensitive’, so you want to charge them more.
+Price discrimination may seem counter-intuitive: ‘how can offering some consumers lower prices increase profit?’
+
+- Higher prices increase your profit per unit, but at a higher price you will sell fewer units. The more you charge the less you sell.
+
+- Some groups of ‘less keen’ consumers are very sensitive to the price, and they will buy very little at a high price, so a lower price would be more profitable.
+
+- Some groups of ‘more keen’ consumers will buy a lot even at a high price. They are less ‘price-sensitive’, so you want to charge them more.
 
 \
 
@@ -3147,8 +3178,9 @@ Offering a single price for a good for all consumers is known as 'uniform pricin
 
 
 
-*Note*: Targeting a price at each consumer; may be done on the internet or on a discretionary basis by an individual seller. \
- 'Perfect' means the seller exactly predicts and charges each consumer her valuation.
+Note that 'targeting a price at each consumer' may be done on the internet or on a discretionary basis by an individual seller.  But this alone does not imply Perfect price discrimination.
+
+'Perfect' means the seller exactly predicts and charges each consumer her exact valuation! It's basically a theoretical ideal.
 
 
 <br> <br> \bigskip
@@ -3159,18 +3191,18 @@ Offering a single price for a good for all consumers is known as 'uniform pricin
 \
 
 
+For 'self-selection' or 'second-degree price discrimination... we can imagine that  the firm doesn't know each consumer's valuations.  Or, perhaps the firm is not allowed to 'discriminate' by charging different prices to different people.
 
+\
 
-*Note:*
-Here the firm doesn't know each consumer's valuations, or is not allowed to 'discriminate' by charging different prices to different people
-Instead, it sells different bundles, quantities,
-  or qualities of products to get high and low-value consumers to separate themselves...
+Instead, it sells different bundles, quantities or qualities of products to get high and low-value consumers to separate themselves...
  E.g., first-class seats.
 
  <br> <br> \bigskip
 
-
-`r format_with_col("Note: To fully analyse these problems we need to know the techniques of 'mechanism design under asymmetric information', which we are not covering in this module","gray")`
+```{block2,  type='technote'}
+To fully analyse these problems we need to know the techniques of 'mechanism design under asymmetric information', which we are not covering in this module.
+```
 
 
 
@@ -3180,10 +3212,7 @@ Instead, it sells different bundles, quantities,
 3. Group-based (Third degree; 'market separation')
 
 
-
-*Note:*
-Here the firm finds something identifiable and inherent about the consumer \
- that is indicative of her likely valuations (and price-sensitivity). \
+Here the firm finds something identifiable and inherent about the consumer  that is indicative of her likely valuations (and price-sensitivity). \
 It might be her age, nationality, student-status, or even perhaps her income.
 
 
@@ -3206,41 +3235,38 @@ Perfect price discrimination
 <br> <br> \bigskip
 
 
-- Here the monopolist would extract *all the available surplus*; no consumer surplus remains
-- Because monopolists extracts *all* the possible surplus, this is efficient
-    - Because max(total value of good - cost) $\rightarrow$ max(CS+PS)
+Here the monopolist would extract *all the available surplus*; no consumer surplus remains.
 
-- But perfect PD is a rare/impossible extreme: requires mind reading
-    - Close example: Website targets an individualised price to each consumer, based on clues like time-of-day, web clicks, cookie data, IP location.
-    - But even this is not really *perfect* price discrimination:
+Because the monopolists extracts *all* the possible surplus, this is efficient!  This holds because the monopolist captures:
 
+$\max$(total value of good - cost) $\rightarrow$ max(CS+PS)
 
+\
 
-*Note:*
-Here, the seller does not really know exactly what the consumer is willing to pay; he is using broad clues.
+But perfect PD is a rare/impossible extreme: requires mind reading.
 
-
-Note: See Shiller, B. R. (2013, or updated version). First degree price discrimination using big data.
+A possible close example: a website targets an individualised price to each consumer, based on clues like time-of-day, web clicks, cookie data, IP location. But even this is not really *perfect* price discrimination:
+Here, the seller does not really know exactly what the consumer is willing to pay; he is using broad clues.[See Shiller, B. R. (2013, or updated version). First degree price discrimination using big data.]
 
 \
 
 
-```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("ppd3.png")
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/ppd3.png")
 ```
 
 \
 
 
-```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("ppd4.png")
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/ppd4.png")
 ```
 
 \
 
 
-```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("ppd5.png")
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/ppd5.png")
 ```
 
 
@@ -3248,29 +3274,50 @@ Note: See Shiller, B. R. (2013, or updated version). First degree price discrimi
 
 ### Second-degree price discrimination {-}
 
-- Firm is unable to differentiate between consumers, uses quality/quantity so consumers self-select.
-    - Quality- Transport- Different classes, Supermarkets- budget products
-    - Quantity- Supermarkets- Larger quantities at lower prices per unit; i.e., 'nonlinear pricing'
+Here the firm is unable to differentiate between consumers explicitly.
+
+Instead it offers various varieties and bundles. It uses variations in quality/quantity to get consumers to "self-select."
+
+Some examples:
+
+- Quality- Transport- Different classes, Supermarkets- budget products
+
+- Quantity- Supermarkets- Larger quantities at lower prices per unit; i.e., 'nonlinear pricing'
 
 
 \
 
-- 8 oz coffee for £1.60 vs. 16 oz. for £2.00
-- 20 p per oz vs. 12.5p per oz.
-- (with linear pricing there would be the same price of 15p/oz.)
-    - Result: with 2 prices monopoly can get 'high value' consumers to buy/get more in total without losing 'low-value' consumers
+Consider...
+
+**Quantity**
+
+An 8 ounce cup of coffee for £1.60 vs. 16 ounces for £2.00
+
+- 20 p per oz vs. 12.5p per oz.  (with linear pricing there would be the same price of 15p/oz.)
+
+0 Result: with 2 prices monopoly can get 'high value' consumers to buy/get more in total without losing 'low-value' consumers
 
 
 \
 
-- Similar with quality: Don't know who high-valuation flyers are (wtp for travel *itself* varies)
-- But may know on *average* that flyers with higher wtp for travel *also* value comfort more
-    - Make second-class seats very uncomfortable, first-class luxurious, and charge more for first-class seats
-    - Can get consumers with higher values for travel *and* comfort to pay more
-    - without losing lower-valuing customers
 
 
-NOTE: I am not going to cover the algebra nor graphical analysis of second-degree PD, nonlinear pricing, or two-part pricing
+**Quality**
+
+The calculations are similar when we consider variations in quality:
+
+An airline doesn't  know whom the high-valuation flyers are (willingness-to-pay, 'wtp' for travel *itself* varies)
+
+But it may know on *average* that flyers with higher wtp for travel *also* value comfort more. Thus:
+
+- Make second-class seats very uncomfortable, first-class luxurious, and charge more for first-class seats
+
+- Can get consumers with higher values for travel *and* comfort to pay more
+
+- ...without losing lower-valuing customers
+
+
+(NOTE: I am not going to cover the algebra nor graphical analysis of second-degree PD, nonlinear pricing, or two-part pricing.)
 
 \
 
@@ -3289,18 +3336,18 @@ Train companies must price first and second class such that consumers will self-
 \
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("thirdclasscarriage.jpg")
+ knitr::include_graphics("picsfigs/thirdclasscarriage.jpg")
 ```
 
-- The Third-Class Carriage is a c. 1862–1864 oil on canvas painting by Honoré Daumier
+^[The Third-Class Carriage is a c. 1862–1864 oil on canvas painting by Honoré Daumier]
 
 
 <br> <br> \bigskip
 
 
-Lot's of discussion of this in the media, see e.g.,
+There is typically Lots of discussion of this in the media, see e.g.,
 
-\href{https://www.1843magazine.com/ideas/the-daily/why-companies-make-their-products-worse}{THIS} article in The Economist
+[THIS](https://www.1843magazine.com/ideas/the-daily/why-companies-make-their-products-worse) article in The Economist
 
 \
 
@@ -3309,41 +3356,50 @@ Lot's of discussion of this in the media, see e.g.,
 Third-degree price discrimination/Market-separation
 :    The practice of charging different prices to different groups that can be identified
 
-- The firm can differentiate *groups of consumers* or 'local markets', not individuals.
-- Each group has a different willingness to pay *on average*
-    -  $\rightarrow$ Offer lower prices to lower-valuing groups, higher prices to higher-valuing groups
+Here, the firm can differentiate *groups of consumers* or 'local markets', not individuals.
+
+Each group has a different willingness to pay *on average*.
 
 \
 
-- Example: Students face lower prices for transport, food and other goods as they have a lower willingness to pay
-    - Remember: this is *not* done out of charity but to boost profits
+$\rightarrow$ Offer lower prices to lower-valuing groups, higher prices to higher-valuing groups.
 
 \
 
-### Pricing under 3dpd/market separation {-}
+**Example:** Students and old-age-pensioners may face lower prices for transport, food and other goods; as they have a lower willingness to pay for these
 
-- Each group or market has it's own demand $\rightarrow$ marginal revenue curve
-    - So set an optimising price quantity *separately* for each group
-    - E.g., a discount for the elderly, higher price for the middle-aged
-    - Or a lower price in Portugal than in Germany
+Remember: this is *not* done out of charity but to boost profits.
+
+\
+
+### Pricing under 3dpd/market separation (calculations/graphical depiction) {-}
+
+Each group or market has it's own demand $\rightarrow$ marginal revenue curve
+
+- So set an optimising price quantity *separately* for each group.
+
+- E.g., a discount for the elderly, higher price for the middle-aged
+
+- Or a lower price in Portugal than in Germany
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("discounts.png")
+ knitr::include_graphics("picsfigs/discounts.png")
 ```
 
 \
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("3dpd.png")
+ knitr::include_graphics("picsfigs/3dpd.png")
 ```
 
 \
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("3dpd.png")
+ knitr::include_graphics("picsfigs/3dpd.png")
 ```
 
-Note: Decent numerical example, slides 6-8 Here: http://people.hss.caltech.edu/~mshum/ec105/matt9.pdf
+\
+*A pretty good numerical example is given in slides 6-8* [HERE](http://people.hss.caltech.edu/~mshum/ec105/matt9.pdf)
 
 \
 
@@ -3351,20 +3407,24 @@ Another depiction, adding demand curves (they call it 'average revenue'):
 
 
 ```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("Price-discrimination-SNP2.png")
+ knitr::include_graphics("picsfigs/Price-discrimination-SNP2.png")
 ```
+
+\
 
 ### Who benefits from 3DPD? {-}
 
 - Consumers *in identifiable group* with lower wtp face lower prices, thus they benefit
+
 - Consumers *in identifiable group* with higher wtp face higher prices, thus they lose
+
 - Firms can charge higher prices to high-wtp group without losing low-wtp group $\rightarrow$ increase profit
 
 
 <br> <br> \bigskip
 
 
-Net welfare result: theoretically uncertain
+Net welfare result: theoretically uncertain. This is a difficult point to understand, but I think you are up to the challenge! This is *not* covered in the NS text, but I give several explanations and references.
 
 
 \
@@ -3372,73 +3432,93 @@ Net welfare result: theoretically uncertain
 For consumers:
 
 ```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("pdwelfare.png")
+ knitr::include_graphics("picsfigs/pdwelfare.png")
 ```
 
 \
 
 ```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("pdwelfareoverall.png")
+ knitr::include_graphics("picsfigs/pdwelfareoverall.png")
 ```
 
 
 \
 
 
-### Why uncertain? {-}
+### Why is the benefit uncertain? {-}
 
-- When groups can be identified as 'low and high valuation'
-    - the high-valuation groups get charged more, and thus consume less
-    - low-valuation groups get charged less, and consume more
-    - Exchange efficiency: *given what is produced*, PD causes it to be consumed by people who value it relatively less!
+**Exchange efficiency**
 
-\
+When groups can be identified as 'low and high valuation'
 
-- Production: On the other hand PD can lead more to be produced/consumed
+- the high-valuation groups get charged more, and thus consume less
 
+- low-valuation groups get charged less, and consume more
 
-...of the otherwise underproduced good (rem DWL of monopoly) $\rightarrow$ top-level efficiency may increase (or decrease)
-
-- E.g., if with a 'uniform price' only the wealthy went to a restaurant...
-    - after PD (early-bird discounts, OAP discounts, benefits discounts) the low-income may also dine in the restaurant
-    - $\rightarrow$ more value is produced
+$\rightarrow$ Exchange efficiency: *given what is produced*, PD causes it to be consumed by people who value it relatively less!
 
 
-- These two effects trade off.
-    - Because of the negative 'Exchange efficiency effect', quantity *produced* must increase after PD for it to be beneficial
+**Top-level efficiency; amount produced**
 
-Quantity increase is a necessary but not a sufficient condition.
+On the other hand, PD could lead more to be produced/consumed (but not necessarily) of the otherwise underproduced 'monopolised' good (remember DWL of monopoly)
+
+$\rightarrow$ top-level efficiency may increase (or decrease)
 
 \
 
+E.g., suppose that with a 'uniform price' only the wealthy went to a restaurant...
 
-### But 'arbitrage' can foil price discrimination {-}
+- after PD (early-bird discounts, OAP discounts, benefits discounts) the low-income may also dine in the restaurant
 
-- If, e.g., elderly who get discounts could sell the products to the middle-aged...
-    - Then middle-aged would always ask them to do this, never pay high prices
-    - Firm could no longer profit from this
-    - Similar issues with quantity discounts, or 'web cookie' personalised pricing
+- $\rightarrow$ more value is produced
+
+\
+
+Considering the two effects on efficiency just described ... one (Exchange efficiency) is negative and the other (Top-level) may be positive or negative. If the latter is positive (if production increases with PD) the effects trade off one another. Because the 'Exchange efficiency effect' is negative, the quantity produced *must* increase after PD for it to be beneficial. But this quantity increase is a necessary but not a sufficient condition; this effect also must be large enough to *outweigh* the exchange-efficiency effect.
+
+\
+
+
+### Also, 'arbitrage' can foil price discrimination {-}
+
+If, e.g., elderly who get discounts could sell the products to the middle-aged...
+
+- Then middle-aged would always ask them to do this, never pay high prices
+
+- Firm could no longer profit from this
+
+- Similar issues with quantity discounts, or 'web cookie' personalised pricing
 
 <br> <br> \bigskip
 
-- So PD only 'works' for goods that are hard to trade, like haircuts
-    - Or where purchases are frequent and low-value, and resale markets are difficult
+So PD only 'works' for goods that are hard to trade, like haircuts...
+
+or where purchases are frequent and low-value, and resale markets are difficult
 
 
 
-*Note:*
-The above issues are sometimes referred to as 'transactions costs'
+(The above issues are sometimes referred to as 'transactions costs'.)
+
+```{block2,  type='warning'}
+When I ask about the welfare effect of price discrimination, students often mention arbitrage in this discussion. However, the potential for arbitrage doesn't make price discrimination *inefficient*, it just makes it *ineffectual* and makes firms not want to bother.
+
+```
 
 
 \
 
-### David's idea: A new policy tool {-}
+### David's (old) new idea: A policy tool {-}
 
-- People with low-incomes tend to have lower-wtp for most goods
-- Government can typically identify and verify incomes
-- Governments could allow and encourage low-income consumers to get an ID indicating this
-- Governments could allow and encourage firms to use this for price-discrimination
+People with low-incomes tend to have lower-wtp for most goods. \
 
+Government can typically identify and verify incomes. \
+
+Thus governments could allow and encourage low-income consumers to get an ID indicating this. \
+
+Governments could allow and encourage firms to use this for price-discrimination
+\
+
+*But should they do so?*
 
 <br> <br> \bigskip
 
@@ -3452,26 +3532,21 @@ See the readings on this:  'The Government may want to encourage price discrimin
 
 ## Natural monopolies and regulation (very brief!)
 
-- Where an industry involves a 'natural monopoly' (IRS) the most efficient production is a unified production process
-    - But if a monopoly reigns it overcharges and underprovides
-    - Government may want to allow/enforce monopoly privileges but *regulate* price it can charge
-    - Difficulty: Government wants to regulate $p=AC$, but it doesn't know firms' actual cost function (asymmetric information)
-    - Firm wants government to think it is high cost
+Where an industry involves a 'natural monopoly' (IRS) the most efficient production is a unified production process
+\
+
+But if a monopoly reigns it overcharges and underprovides. Thus the government may want to allow/enforce monopoly privileges but *regulate* price it can charge
+
+\
+The difficulty in doing this: Government wants to regulate $p=AC$, but it doesn't know firms' actual cost function (asymmetric information).
+The firm wants government to think it is high cost, to justify a high price.
+
+\
 
 
 This yields another mechanism design 'hidden information' 'principal-agent problem'
 
-\
-
-NS Problem 11.1
-
-Plus:
-
-d. In under 30 words and making reference to your diagram, explain why this deadweight loss would be avoided if the firm could perfectly price-discriminate.
-
-
-
-\
+\\
 
 
 
