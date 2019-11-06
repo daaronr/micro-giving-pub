@@ -1,0 +1,701 @@
+---
+date: "`r format(Sys.time(), '%d/%m/%Y')`"
+author: "David Reinstein (Exeter)"
+output:
+  revealjs::revealjs_presentation:
+    self_contained: true
+    theme: white
+    highlight: pygments
+    transition: fade
+    smart: true
+    css: reveal.css
+    center: true
+  beamer_presentation:
+    latex_engine: xelatex
+    keep_tex: yes
+    theme: metropolis
+  ioslides_presentation:
+      self_contained: true
+      template: io.html
+options: knitr.table.format = "html"
+classoption: table
+---
+
+```{r somefunctions, echo=FALSE, results='hide'}
+
+#possibly move these to a separate file
+
+#multi-output text color
+#https://dr-harper.github.io/rmarkdown-cookbook/changing-font-colour.html#multi-output-text-colour
+#We can then use the code as an inline R expression format_with_col("my text", "red")
+
+format_with_col = function(x, color){
+  if(knitr::is_latex_output())
+    paste("\\textcolor{",color,"}{",x,"}",sep="")
+  else if(knitr::is_html_output())
+    paste("<font color='",color,"'>",x,"</font>",sep="")
+  else
+    x
+}
+```
+
+# Today's goals (29 Oct 2019)
+
+1. Recap 'in what sense is a competitive market efficient' (single product, consumer and producer surplus)
+
+
+2. General equilibrium and efficiency -- key principles and arguments
+
+<small> What is 'Pareto efficiency?'
+What conditions must hold for an economy to achieve this?
+Basic story for why efficiency *should* attain
+First and second welfare theorems
+Market failures </small>
+
+\
+
+3. Market failure: one case - Public goods
+<small>
+How do we define a 'public good'... what are some examples?
+Basic argument for market failure here
+Further coverage (past the midterm) and understanding (time-permitting)
+</small>
+
+# In what sense is a competitive market 'efficient'? (roughly)
+
+## In what sense is a competitive market 'efficient'?
+
+<small> Roughly; single-market depiction </small>
+
+\
+
+<center> Allocation of resources maximizes total surplus </center>
+
+<br> \bigskip
+
+Total surplus $=$ consumer $+$ producer surplus
+
+\
+
+<small> At market equilibrium: no more mutually-beneficial exchanges can be made</small>
+
+----
+
+'A *competitive* market *in equilibrium* will max total surplus'
+
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/consumerprodrsurplusmax.png")
+```
+
+<aside class="notes">Q* maximizes the sum of consumer and producer surplus.
+
+Any other quantity yields a lower sum. E.g., at Q1 we 'lose' the triangle FEG
+
+ ... this is called a 'deadweight loss' as it is a loss to society, it just disappears.</aside>
+
+
+<aside class="notes">Note this doesn't tell us that the supply curve reflects efficient production, nor that the 'right' consumers get the good</aside>
+
+----
+
+*We can use the models/concepts of LR equilibrium o consider...*
+ 
+
+
+- 'Who suffers from a tax' in the LR and SR?
+
+. . .
+
+
+\
+
+
+- Who gains from technological innovation?
+
+
+. . .
+
+\
+
+
+- Who gains and who is harmed by trade restrictions, and do the costs outweigh the benefits?
+
+<aside class="notes">Simplest models of 'tax incidence': tax drives a wedge btwn price consumer pays and the price the firm gets;
+
+can be depicted as a inward shift in supply curve; rem not to count government revenue as a 'loss'
+
+Also note that tech innovation reduces (long run, average ) costs</aside>
+
+
+# Additional material on efficiency: key principles
+
+## General equilibrium and efficiency: Coverage
+
+<small> This is a very brief excerpt and summary of the material in NS chapter 10, with some additional motivation. If you understand these slides/notes you don't have to read chapter 10. </small>
+
+## Key principles: efficiency \& 'general' equilibrium
+
+*Under certain conditions* competitive markets are efficient in equilibrium
+
+<br> \bigskip
+
+. . .
+
+
+But:
+
+- Some markets may not reach equilibrium 'quickly'
+
+. . .
+
+\
+
+- These conditions may not hold $\rightarrow$ *market failure*
+
+
+. . .
+
+\
+
+- Efficiency itself doesn't imply preferred outcomes: can involve a great deal of inequality
+
+----
+
+*General Equilibrium* (GE) analysis: entire economy as a system of interacting, interdependent markets
+
+- GE: set of prices s.t. $Q_s(P)=Q_d(P)$ in *all* markets, including input markets
+
+<small> Consider: 'partial equilibrium' vs. 'general
+ equilibrium analyses.' </small>
+
+ <aside class="notes">E.g., government push for tomato consumption shifts tomato demand out, prices up
+
+this lead to LR shift out in tomato supply curves (firms enter)
+
+increases demand for *inputs* like farm labour, raises cost of production of other veg, etc
+
+Will we return to equilibrium, and with what prices and quantities?
+
+Stay tuned true believers! (and take more Econ, because we won't cover it here) </aside>
+
+----
+
+**Walrasian General equilibrium; a more formal definition (peek)**
+
+(But for an exchange economy only)
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/walrasian_eqbm_exchange_formal_varian.png")
+```
+
+<aside class="notes">
+Source: Varian, Microeconomic Analysis, 1992
+</aside>
+
+
+
+----
+
+
+Overall Pareto efficiency: no one can be made better off without making someone else worse off
+
+- `r format_with_col("Why is this how we define efficiency?","blue")`
+
+
+. . .
+
+
+- If we *could* do so, we would not be at an efficient point
+
+
+<aside class="notes">Pareto efficiency is hard to disagree with, as a policy goal;
+
+if we could move to a situation where some were better off and none made worse off, we should do it.</aside>
+
+
+----
+
+**Pareto efficiency: A more formal definition (peek)**
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/pareto_formal_varian.png")
+
+
+```
+
+
+<aside class="notes">
+Source: Varian, Microeconomic Analysis, 1992
+</aside>
+
+----
+
+Overall efficiency requires several conditions:
+
+
+Efficiency in production (being on the PPF)
+:     No way to reallocate inputs to increase production of one good without reducing production of another
+
+
+<br> \bigskip
+
+
+
+Given society's resources, we are producing 'as much as possible'
+
+
+
+----
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/hightower_cartoon1.png")
+```
+
+Efficiency in production?
+
+----
+
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/self-checkout.jpg")
+```
+
+Efficiency in production?
+
+
+----
+
+### Argument: efficiency in production
+
+
+Specifically, economy produces on the PPF: given available inputs, we produce 'as much as possible'
+
+. . .
+
+
+- I.e., we can't produce more of any good without producing less of some other good
+
+
+<br> \bigskip
+
+
+. . .
+
+
+
+
+$\leftarrow$ Ensured by 'efficient use of inputs' (same 'bang for the buck' per input for all firms and products)
+
+
+
+. . .
+
+
+$\leftarrow$ Ensured by 'competitive market for inputs' (all firms face the same prices, prices set to equalise demand and supply for inputs)
+
+
+<aside class="notes"><small>Basic argument: firms hire more of each input until its 'bang for buck' is the same as all other inputs,
+
+a single market price for the input will ensure this is the same across firms.
+
+This 'equilibrium' input price must reflect its marginal productivity in producing the 'last unit' for *each and every firm and product*
+
+MRTS(k,l) must be equal across all firms/products, otherwise they would 'trade'
+
+
+... Can also be seen as ensured through 'exchange between firms' (production Edgeworth box) </small>
+</aside>
+
+----
+
+
+
+Efficiency in consumption (exchange efficiency)
+:     No way to reallocate output amongst consumers to make them all better off
+
+
+. . .
+
+
+<br> \bigskip
+
+
+
+Given what we're producing, it is going to the 'right consumers'.
+
+
+
+<aside class="notes">Basic argument for exchange efficiency of competitive equilibrium:
+
+If, given the 'endowments', one person values A in units B more than someone else,
+
+an equilibrium price ensures that they will trade these amongst one another until each has the same MRS
+
+The 'Edgeworth box' offers a graphical demonstration that this yields a Pareto optimum (given the amounts produced).</aside>
+
+<aside class="notes">More prosaically, a single price for each good ensures that everyone who buys the good
+
+ values their last unit of it the same amount (its price)</aside>
+
+----
+
+```{r  fig.cap = '', out.height='100%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/exchange_efcy.png")
+
+```
+
+
+----
+
+
+## Edgeworth box scavenger hunt
+
+```{r  fig.cap = '', out.height='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/Contract-curve-on-edgeworth-box.png")
+```
+
+<br> \bigskip
+
+*Does this look familiar? Where can you find it at Exeter? What does it mean?*
+
+<aside class="notes">Basic argument for exchange efficiency of competitive equilibrium:
+
+An equilibrium price ensures that they will trade these amongst one another until each has the same MRS
+
+The 'Edgeworth box' offers a graphical demonstration that this yields a Pareto optimum (given the amounts produced).</aside>
+
+----
+
+
+### Formal conditions and argument for efficiency in consumption (Exchange efficiency)
+
+Specifically: No way to reallocate output amongst consumers to make them all better off
+
+
+. . .
+
+
+<br> \bigskip
+
+With DMRS, this is equivalent to 'for the last (positive) unit of X purchased by each consumer, they are all willing to give up the same amount of X to get another Y'
+
+
+. . .
+
+
+I.e., their marginal rates of substitution for the last unit they buy are all the same: equal to the price ratio.
+
+
+<br> \bigskip
+
+. . .
+
+
+$\leftarrow$ basically ensured by the $MRS(x,y)=p_x/p_y$ 'bang for the buck' condition.
+
+<aside class="notes"> <small> All purchase a good up to the point in which their willingness to trade it off for another good equals the price ratio; thus all have the same relative valuation (MRS) for the 'last unit' of each good. </small>
+
+<small> Edgeworth box shows how this could occur more directly through exchange
+the price that leads one guy to want to 'sell A units of X and buy B units of Y',
+ and also leads the other guy to want to 'buy A units of X and sell B units of X'
+ leads them to both have the same MRS at this 'equilibrium bundle </small></aside>
+
+----
+
+Given our inputs, we can produce 'efficiently', i.e, along the PPF,
+
+<br> \bigskip
+
+and given the amounts of each good produced, it is 'consumed by the right people' (no more room for trade) ...
+
+<br> \bigskip
+
+
+yet we may still not be at efficiency? `r format_with_col("Why not?","blue")`
+
+----
+
+##  {data-background="picsfigs/soviet_store.jpg"}
+ 
+----
+
+```{r  fig.cap = '', out.height='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/toplevelefficiency.png")
+```
+
+
+----
+
+We need to produce the right *combination* of goods.
+
+<br> \bigskip
+<br> \bigskip
+
+Efficient allocation of resources ('top-level' condition)
+:     No way to produce more of one good and less of another to make all consumers better off
+
+<aside class="notes">Basic argument for top-level efficiency of competitive equilibrium:
+
+Equilibrium prices from exchange reflect each consumer's marginal rates of substitution for their last unit
+
+This signals to firms the rate at which *all* consumers would be willing to trade off A for B at the margin
+
+In equilibrium firms produce at a point where the cost tradeoffs between A and B (slope of PPF) reflects these prices.</aside>
+
+----
+
+### Formal conditions/argument for top-level cond.
+
+Efficiency $\leftarrow$ (Along PPF), can't adjust **product mix** to make any consumers better off without making some worse off
+
+. . .
+
+*Formally:*
+
+DMRT on x PPF & DMRS for consumers <small> (rem: all have same MRS) </small>...
+
+$\leftrightarrow MRS(x,y)=MRT(x,y)$
+
+is necessary/sufficient for top-level efficiency
+
+
+. . .
+
+
+<small> I.e., marginal tradeoff in production = marginal tradeoff in consumption, i.e., Slope of PPF at chosen point = slope of everyone's indifference curve at their chosen point </small>
+
+. . .
+
+
+----
+
+Need $$MRS(x,y)=MRT(x,y)$$ for top-level efficiency.
+
+`r format_with_col("Why should the free-market lead to this?", "blue")`
+
+\
+
+Optimizing consumers, free exchange $\rightarrow$ MRS reflects relative prices
+
+. . .
+
+competitive firms choose q's s.t. $mc(q_x)=p_x$ $\forall$ firms, goods
+
+$\rightarrow$ ratios are equal; consumers' value tradeoff equals production tradeoff :)
+
+<aside class="notes">through free exchange, price signals, competition</aside>
+
+
+----
+
+First fundamental theorem of welfare economics
+:     A general competitive equilibrium is Pareto efficient, under standard assumptions
+
+
+<br> \bigskip
+
+
+- Intuition: free exchange leaves no room for mutually-beneficial improvements, and firms and consumers optimise
+
+----
+
+
+Second fundamental theorem
+:     Under some fancy assumptions, any Pareto efficient outcome is a competitive equilibrium for *some* pattern of initial endowments
+
+
+. . .
+
+<br> \bigskip
+
+So if we could costlessly redistribute *endowments*, we could attain any socially-desirable outcome by doing so, and then relying on the free market.
+
+----
+
+First fundamental theorem of welfare economics
+:     A general competitive equilibrium is Pareto efficient, under standard assumptions.
+
+. . .
+
+\
+
+**But these assumptions may not hold $\rightarrow$ 'market failures'**
+
+1. Imperfect Competition
+
+- Markets not competitive, because of barriers to entry or increasing returns to scale
+
+- $\rightarrow$ Prices won't reflect marginal costs $\rightarrow$ 'deadweight losses'
+
+
+----
+
+2. Externalities, public goods, altruism
+
+Assumptions: 'anything someone values' is bought & sold in the market on their own behalf
+
+
+. . .
+
+<br> \bigskip
+
+But:
+
+- Externalities: All costs (& benefits) may not be priced; e.g., pollution
+
+- Public goods (and bads): Many benefit from the same good (e.g., fireworks)
+
+
+. . .
+
+
+- <small> Also: Altruism/interdependent utilities: People care about *others'* consumption </small>
+
+
+----
+
+3. Asymmetric information: People have different information about the state of the world (costs, risks, a good's quality...)
+
+
+<br> \bigskip
+
+
+. . .
+
+
+4. Bounded rationality: people may not choose in their own best interests
+
+
+----
+
+**Second Welfare theorem**
+
+If we could costlessly redistribute *endowments*, we could attain any socially-desirable outcome
+
+by redistributing and then relying on the free market
+
+<br> \bigskip
+
+
+But:
+
+
+. . .
+
+
+- Redistribution via 'optimal lump-sum' taxes isn't easy, as endowments may be unobservable
+
+
+- and redistribution based on things you can affect, e.g. income, may distort incentives.
+
+
+# Notes on supplementary reading
+
+*2019: this is not neccesary the midterm, but could be relevant to the final*
+
+## Supplementary reading:
+
+- Slonim, Robert, Carmen Wang, and Ellen Garbarino. "The market for blood." The Journal of Economic Perspectives 28.2 (2014): 177-196.
+
+----
+
+## Key points:
+
+An unusual 'market' (or non-market)
+
+- Altruism, repugnance, asymmetric information about disease
+
+- Limited storage of blood
+
+. . .
+
+
+- Many countries have *volunteer* supply, so no 'price' to donate
+    - Volunteer behavior responds to entirely different motivations! Not guided by demand.
+- $\rightarrow$  How efficient can it be?
+
+
+----
+
+>  imbalances between aggregate supply and demand are a major challenge in blood markets, including excess supply after disasters and insufficient supply at other times.
+
+. . .
+
+
+> not unexpected given that the blood market operates without market prices and with limited storage length (about six weeks) for whole blood.
+
+
+. . .
+
+
+> Yet shifting to a system of paying blood donors seems a practical impossibility given attitudes toward paying blood donors and concerns that a paid system could compromise blood safety.
+
+----
+
+- Large variation in systems across countries (volunteer versus paid and family/friend donors)
+
+. . .
+
+- Historical shifts:
+    - Paid 'blood on the hoof', markets needed immediate matching
+    - Better storage, blood banking, impersonal diffuse markets
+    - WWII: Patriotism, voluntary donations
+    - AIDS crisis
+
+----
+
+Issues with paying donors
+
+- Does it crowd out intrinsic motivation?
+
+. . .
+
+- Does it bring moral hazard and 'select' the wrong, unsafe donors?
+
+
+. . .
+
+- Is it harmful to the donors (paternalistic idea)
+
+- or otherwise 'repugnant'?
+
+
+----
+
+Issues with volunteer supply
+
+- Not adequate in many countries
+
+
+. . .
+
+- Responds to other motivations than actual need, as there is no price
+
+    - Donate more after disasters like 9-11 even where need is *not* high
+
+    - But agencies don't want to turn away donors ('ungrateful', signal 'never need blood')
+
+
+----
+
+### Suggestions for improvements to blood market
+
+- Techniques for boosting donations
+
+
+    - Mandate choice
+
+    - Symbolic and reputational rewards, gift exchange
+
+
+. . .
+
+
+- Clearinghouse, donor registry, invitations
+
+
+
+
+
+----

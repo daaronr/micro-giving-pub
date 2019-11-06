@@ -618,55 +618,144 @@ Neither flatmate will pay \pounds80 to have the house cleaned, even though it is
 
 
 # Optimal provision of public goods
-## Optimal provision of public goods
 
-Normalize utility (monotonic transformation) s.t. each \pounds
-spent on private good (X) yields 1 util
+## Optimal provision of public goods (more formal)
 
-<aside class="notes">Difficult question: when is is reasonable to do this, and why?</aside>
-
-DMRS $\rightarrow$ unique optimum provision of any PG:
-
-. . .
+<small>**Move to board and web-book for detailed solution here** </small>
 
 
-Optimally provide $G^\ast$ units of PG, where $G^\ast$ is the $G$ that satisfies
+Normalizations, basically "WLOG":
 
-$$\sum_{i=1}^{N} MB_i(G) = MC(G)$$
+- Each £ spent (or £ of cost incurred) on the private good (X) yields "1 util", and costs £1
 
-`r format_with_col("(given the allocation of private consumption)","gray")`
+-  Same quasilinear utility function for everyone
+
+$$u_i(x,G)= x + u(G)$$, where $G=\sum_{i=1}^{N}$
+
 
 \
 
-... with $G^\ast$  units of PG, *social* MB (sum individual MB) of public good equals MC
+. . .
 
-<aside class="notes">Note that here MC(G) essentially expresses the MRT and MB_i is essentially i's MRS</aside>
+Assume diminishing MRS
+
+$\rightarrow$ we have the unique optimum provision... requires $G=G^\ast$ sets:
+
+
+$$\sum_{i=1}^{N} \frac{\partial u_i(x_i,G)}{\partial G}/MC(G) = \frac{\partial u_i(x_i,G)}{\partial x_i}/MC(x)$$
+
+<aside class="notes">
+<small> The 'bang for the buck' must be equal (at least if the problem is symmetric).
+ If net utility can be gained by adding  a unit of resource towards the production of  one good and taking it away from the other, we cannot be at an optimum point.
+Note that an additional unit of the public good yields value to *all* individuals (hence the sum term), while an additional unit of the private good only benefits one person. </small>
+	</aside>
+
+----
+
+\
+Given our normalisations, simplify to ...
+
+
+
+$$\sum_{i=1}^{N} \frac{\partial u(G)}{\partial G}/MC(G) = 1$$
+
+
+I.e.,
+$$\sum_{i=1}^{N} MB_i(G) = MC(G)$$
+
+<aside class="notes">
+Normalization ...that each unit of the private good yields one unit of utility  $\frac{\partial u_i(x_i,G)}{\partial x_i}/mc_x=1$ and the utility is quasilinear and the same for everyone this simplifies to
+...Note that here MC(G) essentially expresses the MRT and MB_i is essentially i's MRS, as the private good yields a constant marginal utility.
+	</aside>
+
+----
+
+
+
+**Now... individuals' private contributions w/o intervention**
+
+Denote ... $G \equiv\sum_{i=1}^{N}g_i$ ...$g_{-i}\equiv G-g_i$.
+
+\
+
+"Symmetric interior solution, best-response 'equilibrium'''
+
+. . .
+
+\
+\
+
+
+*Given amount provided by others, I 'top-up' until my  PRIVATE marginal benefit  equals the cost:
+
+
+$$\frac{\partial u_i(g_i+g_{-i})}{\partial g_i}\equiv MB_i(g_i+g_{-i})\equiv MB_i(G)=mc(G)$$
+
+<small> ... the old 'bang for the buck' ... but here it's the 'private bang'. </small>
+\
+
+<aside class="notes">
+Consider individuals  ($i=i..N$) who privately best-respond to each  others' choices; an 'equilibrium'. Consider an interior solution where everyone provides a positive amount of the public good. Here (incorporating the normalisation)... they will choose to provide amounts of the public good $g_i$ such that,
+	</aside>
+
+----
+
+
+$$\frac{\partial u_i(g_i+g_{-i})}{\partial g_i}\equiv MB_i(g_i+g_{-i})\equiv MB_i(G)=mc(G)$$
+
+Clearly *not* compatible with  condition for  Pareto-optimal provision (if $N>1$):
+
+
+$$\sum_{i=1}^{N} MB_i(G) = MC(G)$$
 
 
 ----
 
-More generally, the "Samuelson condition":
+Stated slightly differently we have have the **"Samuelson condition"** for optimal provision
 
-
-<aside class="notes">Can be derived by solving the  "Pareto problem": max 1 persons utility
-
-s.t. holding all others' utility at or above a threshold
-
-and s.t. the "aggregate production constraint"
-
-See http://community.dur.ac.uk/t.i.renstrom/teaching/PUBECON/Lect_12.pdf for a 2-household case</aside>
 
 $$\sum_{i=1}^{N} MRS_i(G,X) = MRT(G,X)$$
 
-*Sum* of our MRS's must equal the economy's MRT
+\
 
-<br> <br> \bigskip
+For the efficient mix of public and private goods (top-level efficiency)... the *sum* of each individual's MRS's must equal the economy's MRT.
 
-(Cf., private good, each} $MRS_i=MRT$)
+\
+
+Cf private goods: top-level efficiency required that for each individual $i$ the $MRS_i=MRT$.
 
 
+<aside class="notes">
+This can be derived by solving the  "Pareto problem":
+maximise 1 person's utility
+subject to holding all others' utility at or above a threshold
+and s.t. the "aggregate production constraint"
+See [Durham lecture 12](http://community.dur.ac.uk/t.i.renstrom/teaching/PUBECON/Lect_12.pdf) for a 2-household case deriving this.
+	</aside>
+
+----
+
+### Practice question
+
+Consider an economy with N individuals each with income m which they can use for own consumption c at “numeraire” price 1 (representing the cost of production), or contribute to a public good.
+
+Suppose each individual’s utility is:  $U_i(c,G)= c + ln(G)$
+
+\
+
+1. What is the optimal total provision of this public good?
+
+2. What will be the total private voluntary provision? Does it matter if we consider only 'symmetric' equilibria or if we allow asymmetric provision (some provided more than others)
+
+3. Show/argue that an omniscient and powerful government could ensure an outcome that is a Pareto-improvement over the symmetric private outcome?
+
+
+4. Now let $U_i = c+0.9*(G)$; answer the above questions for this case.
+
+\
 
 # Solutions to the Public Goods Problem
+
 ## Solutions to the Public Goods Problem
 
 - Skip: Lindahl equilibrium
@@ -810,7 +899,6 @@ Conservatives: Private Housing $\succ$ Green Park $\succ$ Public housing \
 
 No, not here.
 
-----
 
 # Lab evidence on *voluntary* provision of Public Goods
 ## Lab evidence on *voluntary* provision of Public Goods

@@ -40,6 +40,29 @@ format_with_col = function(x, color){
 }
 ```
 
+# Midterm performance and congratulations
+
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+knitr::include_graphics("picsfigs/samuelson_2019_winners.png")
+
+```
+
+## Midterm success (preliminary statistics)
+
+With adjustments and considerate marking (preliminary, needs careful doublechecking)...
+
+
+**Mean**:	67.35
+
+**Median**:	68.50
+
+| Mark | Share | Cumulative |
+| ------------- |:-------------:| :-----:|
+| Firsts | 	45.7% ||
+| Attila | 	26.9% |	72.6% |
+
+
 # Monopolies and price discrimination (L9)
 
 
@@ -225,6 +248,7 @@ From the 2016 Massachusetts ballot initiative?
 ```
 
 # Monopoly profit-maximisation
+
 ## Monopoly profit-maximisation
 
 - As always, set Q to maximize $QP(Q)-C(Q)$
@@ -269,15 +293,16 @@ $\rightarrow$ optimization where $MR(Q) = MC(Q)$ (assuming $P>AC$)
 
 <aside class="notes"><small>Rem: Firm's revenue is Price*Quantity.
 Rectangle for a specific point on demand curve.
-Firm' *profit* is this less average cost.
+Firm's *profit* is this less average cost.
 MR tells you how the 'revenue rectangle' will increase (or decrease) with another unit.
 MC tells you the *cost* of this additional unit.
-Where MR>MC, increasing quantity a little bit increases revenue more than costs, thus increasing profit.</small>
+Where MR>MC, increasing quantity a little bit increases revenue more than costs, thus increasing profit.
+</small>
 </aside>
 
 ----
 
-```{r  fig.cap = '', out.height='4.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/monopprofit3.png")
 ```
 
@@ -310,15 +335,14 @@ By the way, the AC adds up the MC and the FC and divides by the quantity.</aside
 
 1. Monopolies produce too little output: allocatively (top-level) inefficient.
 
-- Less output, higher price than under perfect competition
+- Less output, higher price than perfect competition $\rightarrow$ deadweight loss
 
 
 . . .
 
 
-- Some of the consumer surplus under perfect competition is transferred to the monopolist.
+\
 
-- There is also a *deadweight loss* under monopoly
 
 2. Redistribution from consumers to owners?
 
@@ -326,8 +350,9 @@ By the way, the AC adds up the MC and the FC and divides by the quantity.</aside
 <small> the standard 'deadweight loss triangle'
 leads to *allocative inefficiency*
 (i.e., top-level inefficiency, i.e., the wrong mix of goods is being produced;
-too little of the monopolized good and too much of other goods). 
-Redistribution of wealth from consumers to owners... could be counterbalanced by government redistribution. </small> 
+too little of the monopolized good and too much of other goods).
+Redistribution of wealth from consumers to owners... could be counterbalanced by government redistribution.
+</small>
 </aside>
 
 ----
@@ -369,7 +394,7 @@ Redistribution of wealth from consumers to owners... could be counterbalanced by
 . . .
 
 
-<br> \bigskip
+\
 
 
 `r format_with_col("Monopolies expend wasteful resources (lobbying, threats, lawsuits...) to preserve barriers to entry?","gray")` $\rightarrow$ `r format_with_col("further deadweight losses", "gray")`
@@ -634,7 +659,9 @@ The more you charge the less you sell.
 2dpd: Here the firm doesn't know each consumer's valuations, or is not allowed to 'discriminate' by charging different prices to different people. Instead, it sells different bundles, quantities, or qualities of products to get high and low-value consumers to separate themselves E.g., first-class seats.
 3dpd: Here the firm finds something identifiable and inherent about the consumer
  that is indicative of her likely valuations (and price-sensitivity).
-It might be her age, nationality, student-status, or even perhaps her income.</small></aside>
+It might be her age, nationality, student-status, or even perhaps her income.
+</small>
+</aside>
 
 
 
@@ -687,8 +714,9 @@ Perfect price discrimination
 
 <br> \bigskip
 
-- Perfect PD is a rare/impossible extreme: requires mind reading
-    - Close example: Website targets individualised price to each consumer, using clues like time-of-day, web clicks, cookie data, IP location.
+Perfect PD is a rare/impossible extreme: requires mind reading
+
+- Close example: Website targets individualised price to each consumer, using clues like time-of-day, web clicks, cookie data, IP location.
 
 
 <br> \bigskip
@@ -703,31 +731,32 @@ Perfect price discrimination
 
 - No, it isn't (see note).
 
-<aside class="notes">Web cookies etc: Here, the seller does not really know exactly what the consumer is willing to pay; he is using broad clues.
-
- Also, the ability to 'browse incognito' severely limits this </aside>
-
-
-<aside class="notes">See Shiller, B. R. (2013, or updated version). First degree price discrimination using big data.</aside>
+<aside class="notes">
+<small>Web cookies etc: Here, the seller does not really know exactly what the consumer is willing to pay; he is using broad clues.
+ Also, the ability to 'browse incognito' severely limits this
+ See Shiller, B. R. (2013, or updated version).
+ First degree price discrimination using big data.
+ </small>
+ </aside>
 
 ----
 
 
-```{r  fig.cap = '', out.height='4.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/ppd3.png")
 ```
 
 ----
 
 
-```{r  fig.cap = '', out.height='4.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/ppd4.png")
 ```
 
 ----
 
 
-```{r  fig.cap = '', out.height='4.5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/ppd5.png")
 ```
 
@@ -752,12 +781,13 @@ Firm cannot differentiate between consumers , uses quality/quantity so consumers
 \
 
 
-- 8 oz coffee for \pounds1.60 vs. 16 oz. for \pounds2.00
+- 8 oz coffee for £ 1.60 vs. 16 oz. for £ 2.00
 
 - 20 p per oz vs. 12.5p per oz.
 
 <small> With linear pricing there would be the same price of 15p/oz. </small>
-    - Result: with 2 prices monopoly can get 'high value' consumers to buy/get more in total without losing 'low-value' consumers
+
+Result: with 2 prices monopoly can get 'high value' consumers to buy/get more in total without losing 'low-value' consumers
 
 
 ----
@@ -807,7 +837,12 @@ Train companies must price first and second class such that consumers will self-
 ```
 
 
-<aside class="notes">The Third-Class Carriage is a c. 1862-1864 oil on canvas painting by Honore Daumier</aside>
+<aside class="notes">The Third-Class Carriage is a c. 1862-1864 oil on canvas painting by Honore Daumier
+<small> " It is not because of the few thousand francs which have to be spent to put a roof over the third-class carriages or to upholster the third class seats that some company or other has open carriages with wooden benches.
+What the company is trying to do is to prevent the passengers who pay the second class fare from traveling third class;
+it hits the poor, not because it wants to hurt them, but to frighten the rich." - Jules Dupuit
+</small>
+</aside>
 
 ----
 
@@ -841,10 +876,10 @@ Each group has a different willingness to pay *on average*
 $\rightarrow$ Offer lower prices to lower-valuing groups, higher prices to higher-valuing groups
 
 
-```{block2,  type='note'}
+ <aside class="notes">
 Example: Students face lower prices for transport, food and other goods as they have a lower willingness to pay
 Remember: this is *not* done out of charity but to boost profits
-```
+	</aside>
 
 
 
@@ -885,6 +920,7 @@ Another depiction, adding demand curves ('average revenue'):
 
 
 # Who benefits from 3DPD?
+
 ## Who benefits from 3DPD?
 
 - Consumers *in identifiable group* with lower wtp face lower prices, thus they benefit
@@ -996,6 +1032,7 @@ Bc  'exchange efficiency effect' is negative, 3DPD can *only* be beneficial if q
 
 
 # But 'arbitrage' can foil price discrimination (see readings)
+
 ## But 'arbitrage' can foil price discrimination (see readings)
 
 
@@ -1057,6 +1094,7 @@ Also note-- arbitrage makes PD *undesirable for firms*... not socially inefficie
 
 
 # Natural monopolies and regulation (very brief or skip)
+
 ## Natural monopolies and regulation (very brief or skip)
 
 - Where an industry involves a 'natural monopoly' (IRS) the most efficient production is a unified production process . . .
@@ -1148,7 +1186,6 @@ With multiple firms in the same market but not complete 'free entry', theory pre
 
 
 <aside class="notes">When firms can differentiate their products from one another this may reduce competition.
-
  each firm acts as a 'local' monopoly over it's own unique product. with free entry, however, firms introduce new products which shift the demand curves inwards for the other products (substitutes), until no firm is making long run profits.</aside>
 
 

@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="David Reinstein (Exeter)" />
+  <meta name="dcterms.date" content="2019-05-11" />
   <title>s_public_goods.utf8.md</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -848,37 +849,86 @@ Neither flatmate will pay 80 to have the house cleaned, even though it is worth 
 Algebraic example of PG underprovision here?
 </aside>
 </section></section>
-<section><section id="optimal-provision-of-public-goods" class="title-slide slide level1"><h1>Optimal provision of public goods</h1></section><section id="optimal-provision-of-public-goods-1" class="slide level2">
-<h2>Optimal provision of public goods</h2>
-<p>Normalize utility (monotonic transformation) s.t. each  spent on private good (X) yields 1 util</p>
-<aside class="notes">
-Difficult question: when is is reasonable to do this, and why?
-</aside>
-<p>DMRS <span class="math inline">\(\rightarrow\)</span> unique optimum provision of any PG:</p>
-<div class="fragment">
-<p>Optimally provide <span class="math inline">\(G^\ast\)</span> units of PG, where <span class="math inline">\(G^\ast\)</span> is the <span class="math inline">\(G\)</span> that satisfies</p>
-<p><span class="math display">\[\sum_{i=1}^{N} MB_i(G) = MC(G)\]</span></p>
-<p><font color='gray'>(given the allocation of private consumption)</font></p>
+<section><section id="optimal-provision-of-public-goods" class="title-slide slide level1"><h1>Optimal provision of public goods</h1></section><section id="optimal-provision-of-public-goods-more-formal" class="slide level2">
+<h2>Optimal provision of public goods (more formal)</h2>
+<p><small><strong>Move to board and web-book for detailed solution here</strong> </small></p>
+<p>Normalizations, basically “WLOG”:</p>
+<ul>
+<li><p>Each £ spent (or £ of cost incurred) on the private good (X) yields “1 util”, and costs £1</p></li>
+<li><p>Same quasilinear utility function for everyone</p></li>
+</ul>
+<p><span class="math display">\[u_i(x,G)= x + u(G)\]</span>, where <span class="math inline">\(G=\sum_{i=1}^{N}\)</span></p>
 <p><br />
 </p>
-<p>… with <span class="math inline">\(G^\ast\)</span> units of PG, <em>social</em> MB (sum individual MB) of public good equals MC</p>
+<div class="fragment">
+<p>Assume diminishing MRS</p>
+<p><span class="math inline">\(\rightarrow\)</span> we have the unique optimum provision… requires <span class="math inline">\(G=G^\ast\)</span> sets:</p>
+<p><span class="math display">\[\sum_{i=1}^{N} \frac{\partial u_i(x_i,G)}{\partial G}/MC(G) = \frac{\partial u_i(x_i,G)}{\partial x_i}/MC(x)\]</span></p>
 <aside class="notes">
-Note that here MC(G) essentially expresses the MRT and MB_i is essentially i’s MRS
+<small> The ‘bang for the buck’ must be equal (at least if the problem is symmetric). If net utility can be gained by adding a unit of resource towards the production of one good and taking it away from the other, we cannot be at an optimum point. Note that an additional unit of the public good yields value to <em>all</em> individuals (hence the sum term), while an additional unit of the private good only benefits one person. </small>
 </aside>
 </div>
 </section><section class="slide level2">
 
-<p>More generally, the “Samuelson condition”:</p>
+<p><br />
+Given our normalisations, simplify to …</p>
+<p><span class="math display">\[\sum_{i=1}^{N} \frac{\partial u(G)}{\partial G}/MC(G) = 1\]</span></p>
+<p>I.e., <span class="math display">\[\sum_{i=1}^{N} MB_i(G) = MC(G)\]</span></p>
 <aside class="notes">
-<p>Can be derived by solving the “Pareto problem”: max 1 persons utility</p>
-<p>s.t. holding all others’ utility at or above a threshold</p>
-<p>and s.t. the “aggregate production constraint”</p>
-See <a href="http://community.dur.ac.uk/t.i.renstrom/teaching/PUBECON/Lect_12.pdf" class="uri">http://community.dur.ac.uk/t.i.renstrom/teaching/PUBECON/Lect_12.pdf</a> for a 2-household case
+Normalization …that each unit of the private good yields one unit of utility <span class="math inline">\(\frac{\partial u_i(x_i,G)}{\partial x_i}/mc_x=1\)</span> and the utility is quasilinear and the same for everyone this simplifies to …Note that here MC(G) essentially expresses the MRT and MB_i is essentially i’s MRS, as the private good yields a constant marginal utility.
 </aside>
+</section><section class="slide level2">
+
+<p><strong>Now… individuals’ private contributions w/o intervention</strong></p>
+<p>Denote … <span class="math inline">\(G \equiv\sum_{i=1}^{N}g_i\)</span> …<span class="math inline">\(g_{-i}\equiv G-g_i\)</span>.</p>
+<p><br />
+</p>
+<p>"Symmetric interior solution, best-response ‘equilibrium’’’</p>
+<div class="fragment">
+<p><br />
+<br />
+</p>
+<p>*Given amount provided by others, I ‘top-up’ until my PRIVATE marginal benefit equals the cost:</p>
+<p><span class="math display">\[\frac{\partial u_i(g_i+g_{-i})}{\partial g_i}\equiv MB_i(g_i+g_{-i})\equiv MB_i(G)=mc(G)\]</span></p>
+<p><small> … the old ‘bang for the buck’ … but here it’s the ‘private bang’. </small><br />
+</p>
+<aside class="notes">
+Consider individuals (<span class="math inline">\(i=i..N\)</span>) who privately best-respond to each others’ choices; an ‘equilibrium’. Consider an interior solution where everyone provides a positive amount of the public good. Here (incorporating the normalisation)… they will choose to provide amounts of the public good <span class="math inline">\(g_i\)</span> such that,
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><span class="math display">\[\frac{\partial u_i(g_i+g_{-i})}{\partial g_i}\equiv MB_i(g_i+g_{-i})\equiv MB_i(G)=mc(G)\]</span></p>
+<p>Clearly <em>not</em> compatible with condition for Pareto-optimal provision (if <span class="math inline">\(N&gt;1\)</span>):</p>
+<p><span class="math display">\[\sum_{i=1}^{N} MB_i(G) = MC(G)\]</span></p>
+</section><section class="slide level2">
+
+<p>Stated slightly differently we have have the <strong>“Samuelson condition”</strong> for optimal provision</p>
 <p><span class="math display">\[\sum_{i=1}^{N} MRS_i(G,X) = MRT(G,X)\]</span></p>
-<p><em>Sum</em> of our MRS’s must equal the economy’s MRT</p>
-<p><br> <br> </p>
-<p>(Cf., private good, each} <span class="math inline">\(MRS_i=MRT\)</span>)</p>
+<p><br />
+</p>
+<p>For the efficient mix of public and private goods (top-level efficiency)… the <em>sum</em> of each individual’s MRS’s must equal the economy’s MRT.</p>
+<p><br />
+</p>
+<p>Cf private goods: top-level efficiency required that for each individual <span class="math inline">\(i\)</span> the <span class="math inline">\(MRS_i=MRT\)</span>.</p>
+<aside class="notes">
+This can be derived by solving the “Pareto problem”: maximise 1 person’s utility subject to holding all others’ utility at or above a threshold and s.t. the “aggregate production constraint” See <a href="http://community.dur.ac.uk/t.i.renstrom/teaching/PUBECON/Lect_12.pdf">Durham lecture 12</a> for a 2-household case deriving this.
+</aside>
+</section><section class="slide level2">
+
+<h3 id="practice-question">Practice question</h3>
+<p>Consider an economy with N individuals each with income m which they can use for own consumption c at “numeraire” price 1 (representing the cost of production), or contribute to a public good.</p>
+<p>Suppose each individual’s utility is: <span class="math inline">\(U_i(c,G)= c + ln(G)\)</span></p>
+<p><br />
+</p>
+<ol type="1">
+<li><p>What is the optimal total provision of this public good?</p></li>
+<li><p>What will be the total private voluntary provision? Does it matter if we consider only ‘symmetric’ equilibria or if we allow asymmetric provision (some provided more than others)</p></li>
+<li><p>Show/argue that an omniscient and powerful government could ensure an outcome that is a Pareto-improvement over the symmetric private outcome?</p></li>
+<li><p>Now let <span class="math inline">\(U_i = c+0.9*(G)\)</span>; answer the above questions for this case.</p></li>
+</ol>
+<p><br />
+</p>
 </section></section>
 <section><section id="solutions-to-the-public-goods-problem" class="title-slide slide level1"><h1>Solutions to the Public Goods Problem</h1></section><section id="solutions-to-the-public-goods-problem-1" class="slide level2">
 <h2>Solutions to the Public Goods Problem</h2>
@@ -988,8 +1038,6 @@ Q: would this work?
 <div class="fragment">
 <p>No, not here.</p>
 </div>
-</section><section class="slide level2">
-
 </section></section>
 <section><section id="lab-evidence-on-voluntary-provision-of-public-goods" class="title-slide slide level1"><h1>Lab evidence on <em>voluntary</em> provision of Public Goods</h1></section><section id="lab-evidence-on-voluntary-provision-of-public-goods-1" class="slide level2">
 <h2>Lab evidence on <em>voluntary</em> provision of Public Goods</h2>
