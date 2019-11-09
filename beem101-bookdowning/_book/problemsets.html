@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
 
 
-<meta name="date" content="2019-11-05" />
+<meta name="date" content="2019-11-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -307,7 +307,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="11.10" data-path="monopolies-pd.html"><a href="monopolies-pd.html#third-degree-price-discrimination-3dpd-market-separation"><i class="fa fa-check"></i><b>11.10</b> Third-degree price discrimination (3dpd) / Market separation</a></li>
 <li class="chapter" data-level="11.11" data-path="monopolies-pd.html"><a href="monopolies-pd.html#who-benefits-from-3dpd"><i class="fa fa-check"></i><b>11.11</b> Who benefits from 3DPD?</a></li>
 <li class="chapter" data-level="11.12" data-path="monopolies-pd.html"><a href="monopolies-pd.html#arbitrage-can-foil-price-discrimination"><i class="fa fa-check"></i><b>11.12</b> Arbitrage … can foil price discrimination</a></li>
-<li class="chapter" data-level="11.13" data-path="monopolies-pd.html"><a href="monopolies-pd.html#some-practice-problems"><i class="fa fa-check"></i><b>11.13</b> Some practice problems*</a></li>
+<li class="chapter" data-level="11.13" data-path="monopolies-pd.html"><a href="monopolies-pd.html#some-practice-problems"><i class="fa fa-check"></i><b>11.13</b> Some practice problems</a></li>
 <li class="chapter" data-level="11.14" data-path="monopolies-pd.html"><a href="monopolies-pd.html#davids-old-new-idea-a-policy-tool"><i class="fa fa-check"></i><b>11.14</b> David’s (old) new idea: A policy tool</a></li>
 <li class="chapter" data-level="11.15" data-path="monopolies-pd.html"><a href="monopolies-pd.html#natural-monopolies-and-regulation-very-brief"><i class="fa fa-check"></i><b>11.15</b> Natural monopolies and regulation (very brief!)</a></li>
 <li class="chapter" data-level="11.16" data-path="monopolies-pd.html"><a href="monopolies-pd.html#brief-notes-on-imperfect-competition"><i class="fa fa-check"></i><b>11.16</b> Brief notes on imperfect competition</a></li>
@@ -316,6 +316,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="13" data-path="problemsets.html"><a href="problemsets.html"><i class="fa fa-check"></i><b>13</b> Problem sets</a><ul>
 <li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html#ps1"><i class="fa fa-check"></i>First problem set: Mathematical approaches, economic models, revision and warm-up, concepts in consumer theory</a></li>
 <li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html#ps1_w_ans"><i class="fa fa-check"></i>First problem set with suggested answer guidelines: Mathematical approaches, economic models, revision and warm-up, concepts in consumer theory</a></li>
+<li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html#ps_pg"><i class="fa fa-check"></i>Problem set: Public Goods</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
@@ -888,6 +889,262 @@ Yes, it does; recall our solution above that one always spends half of their inc
 <p><strong>Answer</strong></p>
 <p>There are differing views. See discussion in web book <a href="https://vle.exeter.ac.uk/pluginfile.php/1438859/mod_resource/content/1/_book/intro.html#economic-models">Differing views on the use of economic models</a> and in <a href="https://vle.exeter.ac.uk/mod/ouwiki/view.php?id=690987&amp;page=%28Group%29+discussion+of+articles+on+modeling">wiki</a>.</p>
 <p>–&gt;</p>
+
+</div>
+</div>
+<div id="ps_pg" class="section level2 unnumbered">
+<h2>Problem set: Public Goods</h2>
+<p><em>Goals of this problem set:</em></p>
+<ul>
+<li><p>Build understanding of market failures arising from public goods, and the incentives for private provision</p></li>
+<li><p>Introduce ‘best responses’ and equilibria</p></li>
+</ul>
+<p>…</p>
+<ul>
+<li>Discussing and writing a coherent response to applied Economics questions</li>
+</ul>
+<p>Through worked problems and discussion, you will better understand the concept of a public good (or a club good), its (usual) underprovision by the market, and the difficulties with determining and implementing optimal government provision. Some of the questions in the problem sent touch on Game theory, as the optimal provision choice by one person might (or might not) depend on the amount provided by others.</p>
+<p><br />
+</p>
+<p>In considering the losses of consumer surplus from pricing above the marginal cost (of allowing another person to access the good), this also provides insight into the deadweight loss of monopoly, a topic we will get to soon.</p>
+<div id="parametric-examples" class="section level3">
+<h3><span class="header-section-number">13.0.1</span> Parametric examples</h3>
+<p>Consider an economy with N individuals each with income m which they can use for own consumption c at “numeraire” price 1 (representing the cost of production), or contribute to a public good.</p>
+<p><br />
+</p>
+<p>Suppose each individual’s utility is:</p>
+<p><span class="math inline">\(U_i(c,G)= c + ln(G)\)</span></p>
+<p><br />
+</p>
+<p><strong>1. What is the optimal total provision of this public good?</strong><br />
+</p>
+<p><strong>Solving</strong></p>
+<p>Let each individual i’s contribution be <span class="math inline">\(g_i\)</span>, total contributions are <span class="math inline">\(G=\sum(g_i)\)</span> and total “others” contributions are <span class="math inline">\(G_{-i}\)</span>.</p>
+<p>Each individual’s utility is:</p>
+<p><span class="math display">\[U_i= c + ln(G_{-i}+g_i)\]</span></p>
+<p>and her budget constraint is: <span class="math inline">\(c+g_i=m\)</span>.</p>
+<p><br />
+Plugging this constraint in:</p>
+<p><span class="math display">\[U_i= m - g_i + ln(G_{-i}+g_i)\]</span><br />
+The sum of utilities is:</p>
+<p><span class="math display">\[\sum_{i=1}^{N} U_i = Nm - G_i + N ln(G_i)\]</span></p>
+<p>(Notice that because of the assumed quasilinear utility function this aggregates easily; the <em>distribution</em> of private consumption doesn’t matter to this sum.)</p>
+<p><br />
+</p>
+<p>The optimal provision (to maximise the sum of utilities) sets: (FOC, set=0)</p>
+<p><span class="math display">\[N \frac{d ln(G)}{dG}=1 \rightarrow G=N\]</span></p>
+<p>Thus the optimal provision <span class="math inline">\(G^{opt}=N\)</span>.<br />
+</p>
+<p>For all i, for an <em>equal</em> division of this optimal provision we would have everyone contribute:</p>
+<p><span class="math display">\[g_i=N/N = 1\]</span></p>
+<p><br />
+</p>
+<p><strong>2. What will be the total private voluntary provision? Does it matter if we consider only ‘symmetric’ equilibria or if we allow asymmetric provision (some provided more than others)</strong><br />
+</p>
+<p><strong>Solving</strong></p>
+<p>But <span class="math inline">\(g_i =1 \ \forall \  i\)</span> is not a Nash equilibrium strategy profile. In fact i’s best response chooses <span class="math inline">\(g_i\)</span> conditional on the sum of others’ contributions <span class="math inline">\(G_{-i}\)</span>,</p>
+<p><span class="math display">\[U_i= m - g_i + ln(G_{-i} + g_i)\]</span>, (s.t. <span class="math inline">\(g_i \geq 0\)</span>)</p>
+<p><br />
+</p>
+<p>…hence in effect choosing <span class="math inline">\(G\)</span> to maximise</p>
+<p><span class="math display">\[U_i(G, G_{-i})= m - (G - G_{-i}) + ln(G)\]</span>, (s.t. <span class="math inline">\(G \geq G_{-i}\)</span>)
+<span class="math display">\[U_i(G, G_{-i})= (m +G_{-i})- G + ln(G)\]</span>.</p>
+
+<div class="digression">
+Note that here others’ contributions <span class="math inline">\(G_{-i}\)</span>, at least those below the point where i’s MB of G equals her mc of 1, plays the same role as i’s income <span class="math inline">\(m\)</span>. Thus <span class="math inline">\(i\)</span> will respond to an increase in <span class="math inline">\(G_{-i}\)</span> in the same way she would respond to an increase in her income.
+</div>
+
+<p>It’s easy to see that this is a concave problem (but we should still check the boundary condition … here this is <span class="math inline">\(G \geq G_{-i}\)</span>).</p>
+<p>Taking the first-order condition:</p>
+<p><span class="math display">\[\frac{\partial U_i(\cdot)}{\partial G} = -1 + \frac{1}{G} = 0\]</span>
+<span class="math display">\[\rightarrow G = 1\]</span>..</p>
+<p>So, to best-respond, the individual considers <span class="math inline">\(G_{-i}\)</span>, the sum provided by everyone else, and sets <span class="math inline">\(g_i\)</span> to “top this up” such that the ‘best response’ <span class="math inline">\(G^{BR}\)</span> sets <span class="math inline">\(G \equiv G_{-i} + g_i = 1\)</span>. Equivalently we could state this as <span class="math inline">\(g_i^BR = 1 - G_{-i}\)</span></p>
+<p>(Of course if <span class="math inline">\(G_{-i}&gt;1\)</span> then <span class="math inline">\(i\)</span> cannot contribute a negative amount, so he simply contributes 0; the ‘boundary condition’. But if <span class="math inline">\(G_{-i}&gt;1\)</span> the other individuals would not have been best responding.)</p>
+<p><br />
+If we want to consider a ‘symmetric’ equilibrium where all individuals do the same thing this implies that <span class="math inline">\(g_i^{BR} = G^{BR}/N = 1/N\)</span>.</p>
+<p><br />
+</p>
+<p><strong>3. Show/argue that an omniscient and powerful government could ensure an outcome that is a Pareto-improvement over the (symmetric) private outcome?</strong></p>
+<p><br />
+</p>
+<p>Consider any private outcome that involves best responses (a Nash Equilibrium), where individuals <span class="math inline">\(i=1..n\)</span> contribute <span class="math inline">\(g_i\)</span>, respectively, to te public good, each attaining utility <span class="math inline">\(u_i(\cdot) = m_i - g_i + ln(G^{BR})\)</span> = <span class="math inline">\(m_i - g_i + ln(1) = m_i - g_i\)</span> (as we know that mutual best-responses lead to a total provision of 1 unit.) In the symmetric case (symmetric income and a symmetric response <span class="math inline">\(g_i=1/N \ \forall \ i\)</span>) this implies each gain <span class="math inline">\(u_i(\cdot) = m - 1/N.\)</span></p>
+<p><br />
+</p>
+<p>The government could make all better off (relative to the <em>symmetric</em> Nash equilibrium) by:</p>
+<ol style="list-style-type: decimal">
+<li><p>Imposing a (lump-sum) tax <span class="math inline">\(t_i\)</span> on each person <span class="math inline">\(i\)</span> such that <span class="math inline">\(\sum_{i=1..N} t_i = N\)</span>. For a symmetric tax this means everyone must pay <span class="math inline">\(t_i=1\)</span> … As long as <span class="math inline">\(t_i &lt; m_i\)</span> for all individuals <span class="math inline">\(i\)</span>, this will be feasible.</p></li>
+<li><p>Using this revenue to provide a total public good of <span class="math inline">\(G^{opt}=N\)</span>. As it knows everyones preferences (and income) it knows this is the optimal amount.<br />
+</p></li>
+<li><p>This (symmetric tax) yields utility which we label <span class="math inline">\(u_i^{g,s} = m - t_i + ln(N) = m - 1 + ln(N)\)</span> compared to <span class="math inline">\(u_i^{br,s} = m - 1/N\)</span> in the symmetric private voluntary provision case.</p></li>
+</ol>
+<p>Comparing these</p>
+<p><span class="math inline">\(u_i^{g,s} - u_i^{br,s} = (m - 1 + ln(N)) - (m - 1/N) = ln(N)-\frac{N-1}{N} = ln(N)-1 -\frac{1}{N}\)</span>. As <span class="math inline">\(ln(2)&gt;1/2\)</span>, <span class="math inline">\(ln(3)&gt;1\)</span> and <span class="math inline">\(ln(N)\)</span> increases in <span class="math inline">\(N\)</span> and <span class="math inline">\(1 -\frac{1}{N}\)</span> never exceeds 1, we see that this increases welfare for any <span class="math inline">\(N&gt;1\)</span>.</p>
+<p><br />
+</p>
+<p>We can also show a Pareto improvement over any asymmetric equilibrium private outcomes … The logic is that the optimal provision <span class="math inline">\(G^{opt}\)</span> will yield more total value, and this could be redistributed in any way by government through taxes and benefits, increase or decreasing each individual’s private consumption. So, you could show a public goods provision redistribution where all are as well off or better than under the (asymmetric) private provision as well.</p>
+<p><br />
+</p>
+<p><strong>4. Now let <span class="math inline">\(U_i = c+0.9*(G)\)</span>; answer the above questions for this case.</strong></p>
+<p><em>A. What will be the socially optimal level of the public good provided (hint: it need not be an interior solution)?</em></p>
+<p><br />
+</p>
+<p>Budget constraints are: <span class="math inline">\(c+g_i=m\)</span></p>
+<p>Plugging this in: <span class="math inline">\(U_i = m - g_i +0.9(G-i +g_i)\)</span>, noting that all variables must be non-negative.<br />
+</p>
+<p>Sum of utilities:</p>
+<p><span class="math display">\[\sum_{i=1}^{N} u_i = N m - G + \ N(0.9G) =Nm \ – \  (N-1)0.9G \]</span></p>
+<p>It costs society “1” per unit of public good that yields ‘<span class="math inline">\(N \times 0.9\)</span>’ in benefit. So, as long as <span class="math inline">\(N&gt;1\)</span> (more than 1 person) we should spend as much as possible on the public good, namely, <span class="math inline">\(G^{opt}=Nm\)</span>.</p>
+<p>Divided equally (in fact, the only possible division, obviously), <span class="math inline">\(g_i^{opt}=m\)</span>.</p>
+<p>Note this was <em>not</em> a concave problem, we could not use the “first order condition” technique; we had a “boundary solution” here.</p>
+<p><br />
+</p>
+<p><em>… What is the Nash Equilibrium outcome? Show that the latter is Pareto-inefficient.</em></p>
+<p>Individual utilities: <span class="math inline">\(U_i = m - g_i +0.9(G_{-i} +g_i)\)</span>, noting all variables must be non-negative.</p>
+<p>Each individual will maximize this, holding <span class="math inline">\(G_{-i}\)</span> constant.</p>
+<p>Think how this changes with <span class="math inline">\(g_i\)</span>. Each individual herself gains 0.9 from her own contribution of 1 unit, but loses 1 in private consumption.<br />
+</p>
+<p>So no one will contribute anything.</p>
+<p><br />
+</p>
+<p>It is easy to show this is Pareto-inefficient and that the government could make everyone better-off under the conditions for the previous part, using similar arguments.</p>
+</div>
+<div id="easier-problems-mainly-from-the-ns-text" class="section level3">
+<h3><span class="header-section-number">13.0.2</span> Easier problems, mainly from the NS text</h3>
+<p><strong>16.8 parts a and b</strong></p>
+<p>Suppose there are three people in society who vote on whether the government should undertake specific projects. Let the net benefits of a particular project be 150, 140, and 50 dollars for persons A, B, and C, respectively.</p>
+<ol style="list-style-type: lower-alpha">
+<li>If the project costs $300 and these costs are to be shared equally, would a majority vote to undertake the project? What would be the net benefits to each person under such a scheme? Would total net benefits be positive?</li>
+</ol>
+<p><br> </p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Suppose the project cost $375 and again costs were to be shared equally. Now would a majority vote for the project and would total net benefits be positive?</li>
+</ol>
+<p><br />
+<strong>Ans to 16.8.a</strong></p>
+<ul>
+<li>Total Net Benefits less costs = $340 &gt;$300.</li>
+<li>Under equal sharing ($100 each) A and B would vote for the project, C against it.
+<ul>
+<li>Net benefits for person A = 50, for person B = 40, and for person C = –50.</li>
+</ul></li>
+</ul>
+<p><strong>Ans to 16.8b.</strong></p>
+<ul>
+<li><p>Now net benefits fall short of costs ($340&lt;$375) but A and B would still vote for the project.</p></li>
+<li><p>Implication: the democratic process, ‘public choice’ may lead to <em>overprovision</em> (or underprovision) of certain goods</p></li>
+</ul>
+<p><br />
+<br />
+</p>
+<p><strong>16.9 parts a-c</strong></p>
+<p>The town of Pleasantville is thinking of building a swimming pool. Building and operating the pool will cost the town $5,000 per day. There are three groups of potential pool users in Pleasantville:</p>
+<ol style="list-style-type: decimal">
+<li>1,000 families who are each willing to pay $3 per day for the pool</li>
+<li>1,000 families who are each willing to pay $2 per day for the pool, and</li>
+<li>1,000 families who are each willing to pay $1 per day for the pool.</li>
+</ol>
+<p>Suppose also that the intended pool is large enough so that whatever number of families come on any day will not affect what people are willing to pay for the pool. (I.e., no congestion)</p>
+<p>1a. Which property of public goods does this pool have? Which does it not have?</p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li><p>Would building the pool be an efficient use of resources?</p></li>
+<li><p>Consider four possible prices for family admission to the pool: (1) 3 dollars, (2) 2 dollars, (3) 1 dollar, and (4) 0 dollars. Which of these prices would result in covering the cost of the pool? Which of the prices would achieve an efficient allocation of resources?</p></li>
+</ol>
+<p><br />
+</p>
+<p><strong>Ans to 16.9a</strong></p>
+<p>This pool is <em>excludable</em> (unlike a pure public good). It is <em>nonrival</em> because there is a zero marginal cost for one more user.
+(This is thus a <em>club good</em>).</p>
+<p><br />
+</p>
+<p><strong>Ans to 16.9b</strong></p>
+<ul>
+<li><p>Families as a whole are willing to pay $6,000 per day for the pool (<span class="math inline">\(3\times1000+2\times1000+1\times1000\)</span>).</p></li>
+<li><p>The pool costs only $5,000 per day to operate.</p></li>
+<li><p>Thus building the pool would improve the allocation of resources (relative to no pool).</p></li>
+</ul>
+<p><br />
+</p>
+<p><strong>Ans to 16.9c</strong></p>
+<p>None of these prices would cover the $5000 cost of the pool.</p>
+<ul>
+<li><p>At 3 dollars, only the highest-valuing (1000) families would come, yielding $3000 in revenue</p></li>
+<li><p>At 2 dollars the highest-valuing families would come, as well as the second group, yielding 2000 entrants and $4000 in revenue</p></li>
+<li><p>at 1 dollars, all 3000 families would come, yielding $3000 revenue</p></li>
+</ul>
+<p><em>(Note that here, if the managers knew who had what value, ‘price-discrimination’ might raise enough revenue)</em></p>
+<p>Any price that deterred someone with a positive value from using the pool would be <em>inefficient</em>; this is a key reason why a nonrival good cannot typically be provided efficiently in the free market.</p>
+<ul>
+<li>A price of either 1 dollar or 0 dollars would be efficient—as all the families who valued it would enter—but would require the pool to operate at a loss.</li>
+</ul>
+<p><em>Implication:</em> This is an argument for government provision (have the government pay for the pool through taxation, i.e., enforced payment, make it available to all). A similar argument could be made for subsidizing the railway networks.</p>
+<p><br />
+<br />
+</p>
+<p><strong>‘Not 16.7’</strong></p>
+<p><strong>NOTE:</strong> For the problem below (‘Not 16-7’), first solve this with the <strong>marginal cost of 180 per unit.</strong></p>
+<p>Next, solve it as written but (<font color='red'>Warning</font>) note that the problem as written is fairly difficult and the textbook answer is incorrect.</p>
+<p>In each case, assume for part b that the public good will be provided at marginal cost.</p>
+<p><br> </p>
+<p>Suppose the ‘demand curves’ referred to are, as discussed in lecture, the amount an individual consumer would purchase if she knew no one else would purchase any of the public good. Remember that this is the same as her marginal benefit curve (her marginal benefit of the <em>total</em> amount provided Q).</p>
+<p>Also assume that these MB curves will <em>never</em> become negative. The minimum marginal benefit is 0.</p>
+<p><img src="picsfigs/16-7ac.png" width="90%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p><strong>Diagram illustrating the answers for both cases (MC=180 and MC=50)</strong></p>
+<p><img src="picsfigs/not-16-7.png" width="90%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p><strong>Answer to A and B with MC=180</strong></p>
+<p>If <span class="math inline">\(MC=180\)</span> the optimal provision of the public good will be in the range where both individuals are gaining marginal benefits of additional units. Here the social marginal benefit (SMB) is <span class="math inline">\(SMB(Q)=MB_A(Q)+MB_B(Q)=100-Q+200-Q=300-2Q\)</span>.</p>
+<p><br> </p>
+<p>Setting <span class="math inline">\(SMB(Q)=300-2Q=MC(Q)=180 \rightarrow Q^{optimal}=60\)</span>.</p>
+<p><br> </p>
+<p>However, noting A and B’s demand curves (shown above), at a price of 180 (the least it could cost per unit, given that MC=180), person A would buy no units (recall her demand curve). Person B would buy 20 units. Here we would see the classic ‘underprovision of a public good.’</p>
+<p><br />
+</p>
+<p><strong>Ans to ’Not-16.7’a (with MC=50)</strong></p>
+<ul>
+<li><p>The optimal level occurs where the social benefit less cost is maximised.</p></li>
+<li><p>With diminishing marginal benefit and constant marginal cost, as here, this occurs where social marginal benefit equals marginal cost.</p></li>
+</ul>
+<p><br />
+</p>
+<p>Marginal benefit can be expressed as the price an individual is willing to pay for the next unit; i.e., the price that comes from their demand curve, <em>where this price is positive</em>:</p>
+<ul>
+<li><p>Here, for person A, <span class="math inline">\(q_A = 100 - P \rightarrow P= 100-q= MB_A(q)\)</span> where <span class="math inline">\(q&lt;100\)</span>, otherwise <span class="math inline">\(MB_A=0\)</span></p></li>
+<li><p>For person B, <span class="math inline">\(q_B=200-p \rightarrow P = 200-q = MB_B(q)\)</span> where <span class="math inline">\(q&lt;200\)</span>, otherwise <span class="math inline">\(MB_B=0\)</span></p></li>
+</ul>
+<p>As they both consume the same units, summing these ‘individual marginal benefits of each unit’ yields the ‘social marginal benefit’ of each unit. But this is difficult, as we need to be careful to sum <em>only</em> over the range where the marginal benefits are positive.</p>
+<ul>
+<li><p>After the 100th unit, the marginal benefit is positive for B only. Thus, if B’s value of these units exceeds its cost, we can ignore A.</p></li>
+<li><p>After 100 units B still gets a marginal benefit <span class="math inline">\(200-100=100\)</span>, exceeding the MC of 50. Thus, we can ignore A’s preferences in computing the optimum here.</p></li>
+<li><p>Setting <span class="math inline">\(MB_B(q)=200-q=mc=50\)</span> will yields the optimum provision of the good here, a provision of <span class="math inline">\(q=150\)</span>.</p></li>
+</ul>
+<p><em>Interpretation:</em> The optimal units for B alone is 150. As A doesn’t value any units above 50, the fact that A gains from the first 50 units provided is irrelevant.</p>
+<p><br />
+</p>
+<p><strong>Ans to Not-16.7.b (with MC=50)</strong></p>
+<p>This question is difficult; the key issue is that each person’s optimal choice depends on the other person’s choice!</p>
+<p>Here are some simple points for your intuition. we will return to this in more detail when we get into game theory and ‘rationalizability’/iterated strct dominance</p>
+<p>(Assume here that the public good will be priced at marginal cost).</p>
+<p><br />
+</p>
+<p>We previously considered the above demand curves as each person’s demand ‘if the other purchased nothing.’ We can extend this to consider each person’s best response function: how much mosquito control they would pay for as a function of what the other would do.</p>
+<p><br />
+We might imagine that for any outcome, players will be ‘best-responding:’</p>
+<ul>
+<li><p>If A purchased no units, B would choose to consume where her <span class="math inline">\(MB(Q)=MC\)</span>, i.e., <span class="math inline">\(q_B=150\)</span> units.</p></li>
+<li><p>If A purchased some amount of units (below 150… of course), B would ‘top these up’ to the point where, for the total units provided, <span class="math inline">\(MB_B(Q)=MB_B(q_A+q_B)=MC\)</span>. This implies <span class="math inline">\(MB_B(q_A+q_B)= 200-q_A-q_B=50\)</span>. Thus <span class="math inline">\(q_A+q_B=150\)</span> at B’s optimal choice</p>
+<ul>
+<li><p>In this case, even though it is a public good, voluntary provision will be optimal, as noted above. (For other cases this may not occur)</p></li>
+<li><p>The reason it is optimal here is that only B gains from units 100-150 of the public good, so the fact that he doesn’t take A’s valuation into account doesn’t matter for the margin of his choice</p></li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+<p><strong>Ans to Not-16.7.c</strong></p>
+<p>This optimal provision (150), would cost <span class="math inline">\(150\times50=7500\)</span>. If we split it according to the benefits each get, we need to add up not the <em>marginal</em> but the <em>total</em> benefits each get – the area under the demand curve. I won’t bother with the calculation here.</p>
+<p>However, noting A and B’s demand curves (shown above), at a price of 180 (the least it could cost per unit as MC=180), person A would buy no units (recall her demand curve). Person B would buy 20 units. Here we would see the classic ‘underprovision of a public good.’</p>
 
 <div id="refs" class="references">
 <div>

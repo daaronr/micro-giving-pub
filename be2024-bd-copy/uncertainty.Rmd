@@ -1,0 +1,753 @@
+
+# Uncertainty (with a bit of finance) (L10)) {#uncertainty}
+
+## Lecture (2 hours) - Chapter 4 coverage outline
+
+- NS: Ch 4 (not including 4a)
+
+### Coverage {-}
+
+- 4.1 Probability and expected value (revision)
+- Expected utility; additional discussion
+- 4.2 Risk Aversion
+- Insurance
+- Diversification
+- Flexibility and options
+
+- Information (read alone)
+- Pricing of risk in financial assets
+
+
+Supplementary reading (postgraduate level):
+
+
+
+
+Holt, C., and S. Laury (2002), Risk Aversion and Incentive Effects, American Economic Review, v. 92 (5): 1644-1655.
+
+- For a popular audience: Reinstein (2016) 'Should you hedge your bets on a Brexit?' [LINK](https://davidreinstein.wordpress.com/2016/06/19/should-you-hedge-your-bets-on-a-brexit/)
+
+- `r format_with_col("Seventh problem set: Uncertainty (Chapter 4)","blue")`
+
+
+`r format_with_col("Note: We will not cover the two-state model, although you may find it helpful in understanding the concepts from another perspective","gray")`
+
+
+<!---
+`r format_with_col("This material is an 'aside', as we will not return to uncertainty until much later. But it is an extremely important aside!!","gray")`
+-->
+
+*Key goals of this chunk*
+
+1. Revise the concepts of probability and expected value
+1. Learn how economists consider choices involving uncertain outcomes
+1. ... how to compute an 'expected utility' and what it means
+- in particular, how it differs from 'expected monetary value'
+1. ... how to define 'risk aversion' and how it is modeled using expected utility
+1. ... why buying insurance, diversifying investments, and buying 'options' may improve welfare for risk-averse individuals
+- and the implication of this for the pricing of financial assets!
+
+- including a rough understanding of the Black-Scholes model of options pricing
+
+
+\
+
+## What's up with uncertainty?
+
+
+\
+
+Previous discussion: Consumers make choices with *known* consequences
+
+
+
+`r format_with_col("But in the real world many important economic decisions involve risk.","gray")`
+
+<br> <br> \bigskip
+
+Here: Choices with *unknown* consequences (but known *probabilities* of each outcome)^[Adv: In the real world, people may also make choices in contexts with unknown probabilities; this is called 'ambiguity' or 'Knightian uncertainty'. This is out of the scope of this module.]
+
+How can we consider this in a utility-maximisation framework?
+
+The standard framework for this involves maximising 'expected utility'.
+
+
+`r format_with_col("Warning:","red")` Making choices to maximise expected utility is *not* the same as making choices to maximise expected monetary outcomes. This is one of the main points here. A good share of students get this mixed up!
+
+## Probability concepts: a quick review
+
+Probability
+:     The relative frequency with which an event occurs, or can be expected to occur.
+^[Adv: Note, there are some debates, e.g., between 'Bayesians' and 'Frequentists' over the meaning of probability.]
+
+- Always between 0 and 1
+
+
+
+`r format_with_col("Q: If $p$ is the probability an event occurs, what is the probability this event does *not* occur?","blue")`^[Ans: $1-p$ ]
+\
+
+Expected value
+:     The 'average outcome' of an uncertain variable (general definition)
+
+<br> <br> \bigskip
+
+:     The average monetary (or goods) payoff from an uncertain gamble
+
+<br> <br> \bigskip
+
+:     The sum of the value at each possible outcome, weighted by the probability that outcome will occur
+
+^[Adv, maths: When outcomes are in a continuous space, e.g., the returns to a stock can take any of an infinite number of possible values, the expected value becomes a definite integral rather than a sum.]
+
+\
+
+This is *NOT* the same as expected utility (coming up); people don't necessary choose the investment with the highest expected value!
+
+
+\
+
+Consider: would you prefer...
+
+a. £ 100,000 with certainty or
+b. A 1 in 10 chance of £ 1,000,001 (and otherwise you get nothing)?
+
+
+`r format_with_col("Which has a higher expected monetary value?","blue")`
+
+*Ans: $EV(b)=£ 100,000.1>EV(a)=£ 100,000$*
+
+<br> <br> \bigskip
+
+`r format_with_col("Which gives you greater expected utility?","blue")`
+
+*Ans:* This is unknown. We need to know the individual's *utility function* to know the answer to this.
+
+However, it seems likely that most people would choose b, even though it has a lower expected monetary value, because they are *risk-averse*.
+
+
+\
+
+
+**Definitions (loose):**
+
+1. A *Risk-neutral* person always chooses the option with the highest expected monetary value
+
+\
+
+
+<br> <br> \bigskip
+
+2. A *Risk-averse* person will always prefer a sure thing to a gamble with the same expected monetary value
+- She will always prefer gambles with less risk, holding the expected value constant
+- She will always reject 'fair gambles' (see below) and prefer certainties
+- To accept a (fair) gamble, she must expect a 'risk-premium'
+
+\
+<!---
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/weirdalscissors.jpg")
+```
+-->
+
+
+3. A *Risk-lover* will always choose fair gambles over certainties, and sometimes choose a gamble that is unfair against her
+
+\
+
+**Example: two possible outcomes**
+
+
+*Q: What is an example of such an investment with only two outcomes?*
+
+Ans: perhaps making a loan to someone to start a business; they will either pay back the loan with a high interest, or go bankrupt and pay none of it back.
+
+Suppose there is a simple investment.
+
+It will either pay a low (or zero or negative amount) or a high amount.
+
+- It pays X where either $X =x_1$ or $X=x_2$, where $x_1<x_2$
+
+Probability it pays $x_2$ is $p$; thus probability it pays $x_1$ is...?
+$Pr(X=x_1)= 1-p$
+
+The expected monetary value sums the values weighted by the probabilities, i.e.,
+
+$EV(X)=(1-p) x_1 + p  x_2$
+
+\
+
+Consider
+
+**Example: two possible outcomes**
+
+
+
+It pays X where either $X =x_1$ or $X=x_2$, where $x_1< x_2$
+
+- Specifically, pays £1020 w/ prob. 1\% \& pays £10 w/ prob. 99\%
+
+
+
+
+Thus $EV(X) = 0.01 \times 1020 + 0.99 \times 10 = 10.20 + 9.90 = 20.10$
+
+\
+
+`r format_with_col("Consider: would you prefer this investment over one that paid £20 with certainty? Would everyone prefer it? If not, why not?","RoyalBlue")`
+
+\
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/powerball.png")
+```
+
+```{block2,  type='digression'}
+```
+*As an aside, an interesting example: computing expected value of recent US 'Powerball' lottery [Link HERE](http://uk.businessinsider.com/powerball-lottery-expected-value-jan-9-draw-2016-1?r=US&IR=T)*
+
+Note: This is the net expected value of buying a $2 ticket. By this calculation each $2 ticket is worth $3.06 in expected value terms; however, with the adjustments further down in the article, we see this drops considerably and becomes negative in net after taxes.","gray")`
+```
+
+
+\
+
+Fair gamble
+:     A bet with an expected (monetary) value of zero is a 'fair gamble'
+
+<br> <br> \bigskip
+
+Actuarially fair
+
+An investment whose cost is its expected value is 'actuarially fair'
+
+<br> <br> \bigskip
+
+`r format_with_col("Consider: Which of the following are fair gambles?","blue")` ^[Ans: A and D; E is uncertain, but it is probably a fair gamble]
+
+- A. 'Double or nothing' bets with a fair coin
+- B. Roulette in a casino
+- C. A gamble where you win £10 with probability 1/2 and lose £5 with probability 1/2
+- D. A gamble where you win £10 with probability 1/4, lose £5 with probability 1/2, and neither lose nor win with the remaining probability?
+- E. A stock option (without any transactions fees)
+
+
+\
+
+## Example: experimental measures of risk attitudes
+
+Economists try to measure people's level of risk aversion in various ways.
+
+We try to measure 'revealed preferences' from real-world choices. E.g., what premium are people willing to pay to buy insurance for various things,  how much premium do they demand for taking on risky investments (with the same expected monetary values), and how much more do they have to be paid (on average) in jobs with variable compensation?
+
+<br> <br> \bigskip
+
+We also run *experiments* with real or hypothetical payoffs to measure this.
+
+
+One technique is the Holt and Laury (2002) risk elicitation task:
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/holtlaurie.png")
+```
+
+`r format_with_col("Asked to choose one in each row (A or B)","gray")`
+
+- Consider, when would you choose A and when would you choose B?
+
+<br> <br> \bigskip
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/holtlauriedetail.png")
+```
+
+At what point do people switch from choosing the safe to choosing the risky lottery?
+
+This is a measure of their risk-aversion.  A risk-neutral person would switch to B on the fifth choice.
+The later you switch, the more risk averse you reveal yourself to be.
+
+\
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/holtlauryresults.png")
+```
+
+Above: Results for different 'stake sizes'. Most people are risk-averse.  People switch to the risky option later when stakes are higher.
+
+\
+
+
+## Expected utility
+
+**Note: this concept is only covered indirectl* in the NS text**
+
+- Previous utility functions: predict choices under certainty
+    - No predictions for choices with uncertain probabilistic outcomes!
+
+- People don't maximise expected monetary value; tend to be risk-averse
+
+An *Expected Utility* (EU) framework allows for risk-aversion
+
+
+Assume each individual has a single function $u(Y)$ expressing their preferences over outcomes} Y `r format_with_col("called 'Von-Neumann Morgenstern' utility (VNM)","gray")`
+
+\
+
+
+This 'little u' function is similar to 'regular' utility, but here 'curvature matters'
+
+
+When making choices involving uncertainty, she does **not** (necessarily) maximise expected monetary value.
+
+Instead, she maximises 'Expected Utility' (EU): the sum of her (VNM) valuations '$u(\cdot)$' under each outcome weighted by the *probability* of each outcome
+
+
+... I.e., she chooses to maximise the value of her $u(Y)$ function under each outcome $Y$ weighted by the probability of each outcome $p_Y$
+
+- By varying the $u(Y)$ function we can vary the risk preference; ...Risk-loving, risk neutral and risk averse individuals can all be seen as maximizing EU
+
+\
+
+Consider the choice between two gambles and one 'certainty':
+
+1. Earn £1,000,000 with probability 0.1 \& zero with prob. 0.9
+2. Earn £100,000 with probability 1/2 \& £50,000 with prob. 1/2
+3. Earn £75,000 for certain
+
+
+<br> <br> \bigskip
+
+Imagine the realised utility $u(y)$ arises from the consumption chosen with income $y$ `r format_with_col("(btw, the utility arising from maximisation under a particular set of income and prices is called 'Indirect Utility')","gray")`
+
+- This should be increasing (because of nonsatiation), thus $u^\prime (y)>0$
+- But it mays increase at a *decreasing* rate, implying $u^{\prime \prime}(y)< 0$
+
+This second assumption, called *diminishing marginal utility*,  will imply 'risk aversion'!
+
+Or, if the person is risk-neutral, it may be linear, thus $u(y) = a + by$, thus $u^{\prime \prime}(y)=0$
+
+<br> <br> \bigskip
+
+
+
+```{block2,  type='note'}
+ Note that when we were choosing between two goods under certainty,
+the *level* of total utility didn't really matter, only the relative utilities. Now that we are considering gambles, the overall utility level matters, because we need to consider the extent of the tradeoff between 'rich and poor' states.
+```
+
+<br> <br> \bigskip
+
+Coming back to the choice between two gambles and one 'certainty':
+
+1. $Y_1$: £1,000,000 with probability 0.1 and zero with prob. 0.9
+2. $Y_2$: £100,000 with probability 0.5 and £50,000 with prob. 0.5
+3. $Y_3$: £75,000 for certain
+
+
+
+Considering each *outcome* from any of these...
+
+we know $u(1,000,000) > u(100,000) > u(75,000)> u(50,000) > u(0)$...
+
+but now the *size of the difference* in these utilities matters for your decision!
+
+
+<br> <br> \bigskip
+
+- Consider Y1 vs Y3: Is 1 million 'more than ten times as good (utility-wise) as 75k?'
+
+- Y2 v Y3: Relative to 75k, does an additional 25k yield a utility gain worth the (equally probable) loss of 25k?
+
+\
+
+
+**Illustration:** Why the 'size of the difference in u(y) matters' when dealing with uncertainty.
+
+Suppose there is open-enrollment in Oxford, Bristol, Plymouth.
+
+$\rightarrow$ Here I only need to know the *ranking* of utilities of each to know your choices.
+
+- If you choose Oxford over Bristol, even though Oxford costs more, I can infer that for you $U(Oxford)>U(Bristol)$
+
+<br> <br> \bigskip
+
+
+Now, in contrast suppose the policy is
+
+> A. Rank Oxford over Bristol and you have a 25\% chance of getting into either, and a 50\% chance of Plymouth.
+
+> B. Rank Bristol highest and you have a 100\% chance of getting into Bristol.
+
+
+
+Now even if your preferences  are  Oxford $\succ$ Bristol $\succ$ Plymouth, I don't know if you will choose A or B; I would need to know the *strength* of your preferences.
+
+
+<br> <br> \bigskip
+
+
+This means that if I observe you choose 'option A' I have learned *more* about your utility than I learned under open enrollment. I have learned that your preference for Oxford over Bristol is  "stronger" than your preference for Bristol over Plymouth.
+
+
+<br> <br> \bigskip
+
+The EU framework predicts that she chooses the option that maximizes the sum of 'probabilities $\times$ realised utilities $u(Y)$ of each outcome $Y$'. For a two-outcome case:
+
+
+
+$$EU = (1-p) u(Y_\ell) + p u(Y_h)$$
+
+... where $p$ is the probability of the higher income $Y_h$ and $Y_\ell$ is the lower income.
+
+<br> <br> \bigskip
+
+'r format_with_col("Adv:} \textcolor{gray","RawSienna")`{This framework is justified by certain 'reasonable axioms' we might expect choices under uncertainty to follow,
+although these are perhaps not as readily acceptable as the main axioms of regular utility theory (like transitivity).
+... e.g., the choices made under EU converge to the choices made under certainty as probabilities tend to 1.
+
+The EU framework yields nice consistent behavior and can be reconciled with general equilibrium theory, preserving the basic welfare theorems}
+
+\
+
+
+G1: £1,000,000 with probability 0.1 and 0 with prob. 0.9
+
+G2: £100,000 with probability 0.5 \& £50,000 with prob. 0.5
+
+G3: £75,000 for certain
+
+
+<br> <br> \bigskip
+
+For the three gambles above:
+
+$$EU(G_1)=0.1 \times u(1,000,000) + 0.9 \times u(0)$$
+$$EU(G_2)= 0.5 \times u(100,000) + 0.5 \times u(50,000)$$
+$$EU(G_3)= u(75,000)$$
+
+<br> <br> \bigskip
+
+If she is risk neutral, she will choose the first gamble (why?)
+
+
+Ans: `r format_with_col("It has the highest expected monetary value, £100,000","brown")`
+
+<br> <br> \bigskip
+
+If she is risk averse, she will definitely prefer gamble 3 over gamble 2 `r format_with_col("Why?","blue")`
+
+Ans: It has the same expected monetary value, £75,000, but involves less risk (no risk)
+
+<br> <br> \bigskip
+
+- If she is risk averse, she *might* prefer gamble 2 over gamble 1, but it depends *how* risk averse she is
+
+## Risk aversion: graphical depiction
+
+**How to illustrate this:**
+
+- Show: $EU(gamble) = (1-p)u(x_{low}) + pu(x_{high}) < u(EV(x)) = u((1-p)x_{low} + px_{high})$
+
+Draw a diagonal line between $u(x_{low})$ and $u(x_{high})$; the Expected Utility is in between these.
+
+
+- Horizontal distance $p$ of the way between $x_{low}$ and $x_{high}$
+- Project up to diagonal for average of functions (EU)
+
+- Compare this to the vertical height of utililty function at same point $(1-p)x_{low} + px_{high}$
+
+This is a mathematical/graphical property.
+
+
+Intuition: The slope of a line tells me 'rise for a given run', the 'expectation' calculation is a linear function, so the slope is constant
+and the 'share of the rise' simply projects up from the 'share of the run'
+
+\
+
+
+```{r  fig.cap = '', out.height='35%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/riskaversion1.png")
+```
+
+*Note: You start with \$35k*
+
+```{r  fig.cap = '', out.height='35%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/riskaversion2.png")
+```
+
+
+```{r  fig.cap = '', out.height='35%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/riskaversion3.png")
+```
+
+
+```{r  fig.cap = '', out.height='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/riskaversion4.png")
+```
+
+
+```{r  fig.cap = '', out.height='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/riskaversion5a.png")
+```
+
+## Ways of reducing risk: Insurance
+
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/insurancereducesrisk.png")
+```
+
+Fair insurance
+:     Insurance for which the premium is equal to the expected value of the loss
+
+i
+
+```{block2,  type='note'}
+ We might think that such insurance is provided at its true marginal cost; however there are various reasons why the cost to firms may be above this, including transactions cost, moral hazard, and adverse selection
+ ```
+
+
+\
+
+
+- Uninsurable (difficult to insure) risks
+- Adverse selection
+- Moral hazard
+- The rationale for insurance 'deductibles'
+
+
+## Ways of reducing risk: Diversification
+
+Diversification: Buying multiple assets (with risks that are not perfectly correlated with one another)
+
+- Putting your eggs in multiple baskets tends to reduce risk, holding expected value profit (or loss) constant!
+
+
+\
+
+### Illustration: Binomial distribution {-}
+
+- Suppose I have £ 1000, and I can bet on fair coin flips. My returns will then have what we call a “binomial distribution”.
+
+There is a nice illustration of binomial distributions
+
+- If I bet all £ 1000 in a single flip, there is a 50\% chance I will lose my entire investment.
+- If I bet £ 500 on two flips, there is only a 25% chance I will lose my entire investment (also reduces chance of doubling by 25\%).
+    - The expected value is the same (0); thus this is better if you are risk averse.
+
+
+"Less risky": B and A overlap with 0.5 probability; the remaining 50\% of time A's outcomes are more extreme. So it is less risky in a very general sense.
+
+- If I bet £ 100 each in ten flips,  there is a 38\% chance that I will lose 20\% or more of my investment.
+- If instead, I bet it on 1000 coin flips, betting £ 1 on each, there is only 6.00\% chance I will lose 5% of my investment or more, and only 1/10th of 1\% chance that I will lose 10\% of my investment or more.
+
+<br> <br> \bigskip
+
+*Result*: The more I can do this “diversification”, the less risk I face.
+
+
+
+<br> <br> \bigskip
+
+
+*Note*: For simplicity, these examples have a 'fair coin flip', zero expected-return investment.
+
+
+<br> <br> \bigskip
+
+But you might be wondering: 'why invest at all?
+Answer: Because this principle also applies to 'unfair coin flips'.
+
+
+<br> <br> \bigskip
+
+
+E.g., investments in the stock market are more profitable on average than money under the mattress
+
+Each £1 invested in shares has a higher expected return, but also a higher risk.
+ However by spreading across *many different* assets we can reduce this risk, as seen above
+
+\
+
+### Example {-}
+
+Suppose you have £35,000 and must invest £15,000 in an Oil company or a Transportation company
+
+- A share in each firm costs £ 1. (Alternatively, suppose it costs £ 0.9, so on average it is profitable)
+
+- At the end of the year there is a 50:50 chance that the share price will rise to £2 and a 50:50 chance it will fall to £ 0.
+
+1. If you put all your money in one company there is a 50\% chance you will end up with £20,000 and a 50\% chance you end up with £ 50,000
+
+- Your expected value is £ 35,000
+
+
+2.  If you put half in each company your income has a 25\% chance of each of the following values:
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/oiltransitperformance.png")
+```
+
+- Same expected value, but it is 'better'
+
+<br> <br> \bigskip
+
+How do we know it is better (for a risk-averse person)?
+
+- Less risk with same EV: 50\% of the time (when oil and transit go in opposite directions) you've less gain or loss than before.
+
+- I.e., comparing the distribution of returns to the undiversified investment:
+    - 25\% of the time you gain 0 rather than gaining £ 15K (leaving you with £35k rather than £ 50k)
+    - 25\% of the time you gain 0 rather than losing £ 15K  (leaving you with £ 35k rather than £ 20k)
+    - The remaining 50\% of the time (when both rise or both fall) is similar to the remaining 50\% of the time under the undiversified investment
+
+
+\
+
+- See the benefit graphically (next)
+
+\
+
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/diverselessrisk.png")
+```
+
+
+*Notes:*
+This depicts the average of 2 EUs (when B does poorly, when B does well)
+each of which average the utility over 2 outcomes (A does poorly, A does well).
+The average of the average of these exceeds the average of the utility of 2 extreme outcomes.
+
+This takes some time to interpret; have a think about it, it is not easy.
+
+
+
+
+
+
+
+## Flexibility and options contracts
+
+
+
+
+- 'Keep your options open' (simple idea)
+
+<br> <br> \bigskip
+
+Option contract
+
+:     Financial contract offering the right (but not the obligation) to buy or sell an asset over a specified period (at a certain price).
+
+
+- 'Real option': an option outside of the financial world
+
+
+<br> <br> \bigskip
+
+Attributes of options:
+
+1. Specification of transaction: what is bought/sold, how many units maximum, at what price, etc
+2. Period the option may be exercised (from when until when)
+3. Price of the option
+
+\
+
+### Price of options determined by {-}
+
+1. Expected value of underlying transaction (e.g., for a call option, expected future share price minus strike price)
+
+2. Variability of the value of the transaction
+
+Option G (a 'call option'): Right to buy Google share at £500 (£500 'strike price') in December 2020
+
+- Worth more the higher the current share price
+
+- If $P_{google}<£ 500$ currently, then option G is worth more the higher the expected *variability* in $P_{google}$
+    - Variability can only help the option-holder:
+    - price increase helps her
+    - if price falls below £ 500, she doesn't need to exercise the option
+
+`r format_with_col("Warning:","red")` If you didn't read this you probably would have guessed the opposite. On the exam, many students answer that variability *reduces* the value of the option. As you are reading this, you probably won't make that mistake... so tell your friends to read this. (2018: but this won't be focal on the exam.)
+
+<br> <br> \bigskip
+
+3. Duration: the longer the better -- a longer duration brings a greater chance that the price will rise above strike price (£500)
+
+Note that the results for 'right to sell = call options' are similar, just replace the words 'buy' with 'sell' and reverse the directions ('rise' with 'fall), etc.
+
+`r format_with_col("Q: 1. How might an airline buy options to counter its risk from rising petrol prices? 2. How could an airline pilot buy options to counter her risk of being fired in case her airline goes out of business?","blue")`^[
+Ans: 1. The airline could buy call options (rights to buy at a price) for oil and gas company shares, or for oil and gas commodity units. 2. The pilot could buy put options (rights to sell at a price) in the airline she works for; if the airline shares become worthless these put options will be very valuable.\
+Classic economist's argument: you should 'bet against yourself' to minimise risk; but this might give you bad incentives to perform. See column about this [HERE](http://www.marketplace.org/2008/08/11/business/hedging-your-bets-hard-times) ... "Hedging your bets in hard times"]
+
+\
+
+
+## Pricing of risk (and assets) in financial markets
+
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/marketriskline.png")
+```
+
+
+Market line
+:     Shows the relationship between risk and annual returns that an investor can achieve by mixing financial assets.
+
+`r format_with_col("Note typo in diagram: 'risk assets' should be 'risky'","gray")`
+
+`r format_with_col("With efficient markets, line depicts 'best mix': proportional to the total 'market basket', plus borrowing/lending at the 'risk-free rate'","gray")`
+
+\
+
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/investorchoices.png")
+```
+
+- Different preferences for risk versus *expected* (average) return
+- 'Risk' is the overall variance around the average
+- Assumes 'optimal diversification': no one chooses points *below* market line
+
+\
+
+**Extension: "Capital asset pricing model" (CAPM)**
+
+This is the  leading 'baseline' model in finance.
+
+It assumes (or in fact, derives that) investors optimally diversify.
+
+<br> <br> \bigskip
+
+Thus assets are priced based only on 'risk that cannot be diversified away from' ('market risk')
+
+<br> <br> \bigskip
+
+Holding the expected value of dividends constant, assets with higher market risk are less desirable, thus priced lower, and get higher returns
+
+The trade-off between this risk and return has a linear relationship with slope 'Beta'
+
+<br> <br> \bigskip
+
+- Typical boring economist's investment advice: diversify to mimic the 'market basket', choose funds with low fees
+
+This doesn't make you a hit at parties :(
+
+\
+
+## Not covered: two state model
+
+- You may find it helpful in understanding
+    - But you may be confused by it, so read it at your own peril!
+
+## Suggested practice problems: see problem set
+
+<!---
+from Nicholson and Snyder Chapter 4 (12th ed)
+"Problems"
+- 4.1, 4.3, 4.5, 4.6, 4.7 (challenging)
+Also see problem on next slide
+- ... Please let us know your preferences over what is covered
+-->
+
+\
+
+

@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="David Reinstein (Exeter)" />
+  <meta name="dcterms.date" content="2019-06-11" />
+  <title>s_9_uncertainty.utf8.md</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="s_9_uncertainty_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="s_9_uncertainty_files/reveal.js-3.3.0.1/css/theme/white.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="reveal.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <link href="s_9_uncertainty_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="s_9_uncertainty_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section><section id="uncertainty-with-a-bit-of-finance-l10" class="title-slide slide level1"><h1>Uncertainty (with a bit of finance) (L10)</h1></section><section id="intro" class="slide level2">
+<h2>Intro</h2>
+<p><img src="picsfigs/graduateplastics.jpg" width="75%" style="display: block; margin: auto;" /></p>
+<p>‘So, you are studying Economics. Tell me something: …’</p>
+</section><section id="coverage" class="slide level2">
+<h2>Coverage</h2>
+<ul>
+<li><p>NS: Ch 4 (not including 4a)</p></li>
+<li><p>4.1 Probability and expected value (revision)</p></li>
+<li><p>Expected utility; additional discussion</p></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><p>4.2 Risk Aversion</p></li>
+<li><p>Insurance</p></li>
+<li><p>Diversification</p></li>
+<li><p>Flexibility and options</p></li>
+<li><p>Information (read alone)</p></li>
+<li><p>Pricing of risk in financial assets</p></li>
+</ul>
+<aside class="notes">
+We will not cover the 2 state model, although you may find it helpful in understanding the concepts from another perspective
+</aside>
+</div>
+</section><section class="slide level2">
+
+<ul>
+<li>Supplementary reading (optional, post-graduate level):
+<ul>
+<li>Holt, C., and S. Laury (2002), Risk Aversion and Incentive Effects, American Economic Review, v. 92 (5): 1644-1655.</li>
+</ul></li>
+</ul>
+<p><br> <br> </p>
+<ul>
+<li>For a popular audience (may be good revision/understanding):
+<ul>
+<li>Reinstein (2016) ‘Should you hedge your bets on a Brexit?’ <a href="https://davidreinstein.wordpress.com/2016/06/19/should-you-hedge-your-bets-on-a-brexit/">LINK</a></li>
+</ul></li>
+</ul>
+</section><section class="slide level2">
+
+<p><em>Key goals of these lectures (and accompanying self-study)…</em></p>
+<ul>
+<li>Revise the concepts of probability and expected value</li>
+</ul>
+<div class="fragment">
+<p><br> <br> </p>
+<ul>
+<li><p>Learn how economists consider choices involving uncertain outcomes</p></li>
+<li><p>… how to compute an ‘expected utility’ and what it means</p>
+<ul>
+<li>in particular, how it differs from ‘expected monetary value’</li>
+</ul></li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p><em>…Key goals</em></p>
+<ul>
+<li>… how to define ‘risk aversion’ and how it is modeled using expected utility</li>
+</ul>
+<div class="fragment">
+<ul>
+<li><p>… why buying insurance, diversifying investments, and buying ‘options’ may improve welfare for risk-averse individuals</p>
+<ul>
+<li><p>and the implication of this for the pricing of financial assets!</p></li>
+<li><p>including a glance at the Black-Scholes model of options pricing</p></li>
+</ul></li>
+</ul>
+</div>
+</section></section>
+<section><section id="whats-up-with-uncertainty" class="title-slide slide level1"><h1>What’s up with uncertainty?</h1></section><section id="whats-up-with-uncertainty-1" class="slide level2">
+<h2>What’s up with uncertainty?</h2>
+<p><br />
+</p>
+<p>Previous discussion: Consumers make choices with known consequences</p>
+<aside class="notes">
+But in the real world many important economic decisions involve risk.
+</aside>
+<p><br />
+</p>
+<p><br> <br> </p>
+<div class="fragment">
+<p>Here: Choices with <em>unknown</em> consequences (but known <em>probabilities</em> of each outcome)</p>
+<aside class="notes">
+<p>Adv: In the real world, people may also make choices in contexts with unknown probabilities; this is called ‘ambiguity’ or ‘Knightian uncertainty’.</p>
+This is out of the scope of this module.
+</aside>
+<ul>
+<li>How to consider this in the utility-max framework?
+<ul>
+<li>Standard framework: maximize ‘expected utility’</li>
+</ul></li>
+</ul>
+<p><font color='red'>Warning:</font> ‘expected utility’ vs ‘expected monetary value’!</p>
+<aside class="notes">
+Making choices to maximise expected utility is <em>not</em> the same as making choices to maximise expected monetary outcomes. This is one of the main points here. A good share of students get this mixed up!
+</aside>
+</div>
+</section><section id="probability-concepts-a-quick-review" class="slide level2">
+<h2>Probability concepts: a quick review</h2>
+<p><br />
+</p>
+<dl>
+<dt>Probability</dt>
+<dd>The relative frequency with which an event occurs, or can be expected to occur.
+</dd>
+</dl>
+<p><br />
+</p>
+<ul>
+<li>Always between 0 and 1</li>
+</ul>
+<aside class="notes">
+Adv: There are some debates, e.g., between ‘Bayesians’ and ‘Frequentists’ over the meaning of probability.
+</aside>
+<aside class="notes">
+Q: If <span class="math inline">\(p\)</span> is the probability an event occurs, what is the probability this event does <em>not</em> occur?
+</aside>
+<aside class="notes">
+Ans: <span class="math inline">\(1-p\)</span>
+</aside>
+</section><section class="slide level2">
+
+<dl>
+<dt>Expected value (EV)</dt>
+<dd>The ‘average outcome’ of an uncertain variable (general definition)
+</dd>
+</dl>
+<div class="fragment">
+<p>The average monetary (or goods) payoff from an uncertain gamble</p>
+<p><br />
+</p>
+</div>
+<div class="fragment">
+<p>The sum of the value at each possible outcome, weighted by the probability that outcome will occur</p>
+<aside class="notes">
+<p>Adv, maths: When outcomes are in a continuous space, e.g., the returns to a stock can take any of an infinite number of possible values,</p>
+the expected value becomes a definite integral rather than a sum.
+</aside>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<p><em>Not</em> the same as expected utility (coming up)! People need not choose the investment with the highest expected value.</p>
+</div>
+</section><section class="slide level2">
+
+<p>Consider: would you prefer…</p>
+<ol type="a">
+<li>100,000 with certainty or</li>
+<li>A 1 in 10 chance of 1,000,001 (and otherwise you get nothing)?</li>
+</ol>
+<div class="fragment">
+<ul>
+<li>Which has a higher expected monetary value?</li>
+</ul>
+<aside class="notes">
+Ans: <span class="math inline">\(EV(b)=100,000.1&gt;EV(a)=100,000\)</span>
+</aside>
+</div>
+<div class="fragment">
+<ul>
+<li>Which gives you greater expected utility?</li>
+</ul>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<p>Most people would choose certain 100k, although it has a lower <em>expected monetary</em> value. <font color='blue'>Why?</font></p>
+<p><br />
+</p>
+</div>
+<div class="fragment">
+<p>Because they are <em>risk-averse</em>.</p>
+</div>
+</section><section class="slide level2">
+
+<p><strong>Definitions (loose):</strong></p>
+<ol type="1">
+<li><em>Risk-neutral</em> people always choose the option with a highest expected monetary value</li>
+</ol>
+<p><br />
+</p>
+<div class="fragment">
+<ol start="2" type="1">
+<li><em>Risk-averse</em> people always choose a sure thing over a gamble with same expected monetary value</li>
+</ol>
+</div>
+<div class="fragment">
+<ul>
+<li><p>Always prefer gambles with less risk, holding the expected value constant</p></li>
+<li><p>Always reject ‘fair gambles’ (see below) and prefer certainties</p></li>
+</ul>
+<p><br />
+</p>
+</div>
+<div class="fragment">
+<ul>
+<li>To accept a (fair) gamble, must expect a ‘risk-premium’</li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/weirdalscissors.jpg" width="70%" style="display: block; margin: auto;" /></p>
+<div class="fragment">
+<ol start="3" type="1">
+<li>A <em>Risk-lover</em> will always choose fair gambles over certainties, and will sometimes choose a gamble that is unfair against her</li>
+</ol>
+</div>
+</section><section class="slide level2">
+
+<p><strong>Example: two possible outcomes</strong></p>
+<aside class="notes">
+Q: example of such an investment with only two outcomes?
+</aside>
+<aside class="notes">
+Ans: perhaps making a loan to someone to start a business; they will either pay back the loan with a high interest, or go bankrupt and pay none of it back.
+</aside>
+<p>A simple investment, which either pays a low (or 0 or - amount) or a high amount</p>
+<div class="fragment">
+<p>It pays X where either <span class="math inline">\(X =x_1\)</span> or <span class="math inline">\(X=x_2\)</span>, where <span class="math inline">\(x_1&lt; x_2\)</span></p>
+<ul>
+<li>Specifically, pays 1020 w/ prob. 1% &amp; pays 10 w/ prob. 99%</li>
+</ul>
+</div>
+<div class="fragment">
+<p>Probability it pays <span class="math inline">\(x_2\)</span> is <span class="math inline">\(p\)</span>; thus probability it pays <span class="math inline">\(x_1\)</span> is?</p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(Pr(X=x_1)= 1-p\)</span></p>
+</div>
+<div class="fragment">
+<p>The <em>expected (monetary) value</em> sums the values weighted by the probabilities, i.e., <span class="math inline">\(EV(X)=(1-p) x_1 + p x_2\)</span></p>
+
+<p>Thus <span class="math inline">\(EV(X) = 0.01 \times 1020 + 0.99 \times 10 = 10.20 + 9.90 = 20.10\)</span></p>
+<aside class="notes">
+Consider: would you prefer this investment over one that paid 20 with certainty? Would everyone prefer it? If not, why not?
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/powerball.png" width="90%" style="display: block; margin: auto;" /></p>
+<p><em>Interesting example: computing expected value of recent US ‘Powerball’ lottery <a href="http://uk.businessinsider.com/powerball-lottery-expected-value-jan-9-draw-2016-1?r=US&amp;IR=T">Link HERE</a></em></p>
+<aside class="notes">
+<p>This is the <em>net</em> expected value of buying a $2 ticket. By this calculation each $2 ticket is worth $3.06 in expected value terms;</p>
+however, with the adjustments further down in the article, we see this drops considerably and becomes negative in net after taxes.
+</aside>
+</section><section class="slide level2">
+
+<dl>
+<dt>Fair gamble</dt>
+<dd>A bet with an expected (monetary) value of zero is a ‘fair gamble’
+</dd>
+</dl>
+<p><br />
+</p>
+<div class="fragment">
+<dl>
+<dt>Actuarially fair</dt>
+<dd>An investment whose cost is its expected value is ‘actuarially fair’
+</dd>
+</dl>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/roulette_european-vs-american-wheel.jpg" width="80%" style="display: block; margin: auto;" /></p>
+<p><em>Is it actuarially fair?</em></p>
+</section><section class="slide level2">
+
+<ul>
+<li><p>Which of the following are fair gambles?</p>
+<ul>
+<li><p>A. ‘Double or nothing’ bets with a fair coin</p></li>
+<li><p>B. Roulette in a casino</p></li>
+<li><p>C. A gamble where you win 10 with probability 1/2 and lose 5 with probability 1/2</p></li>
+<li><p>D. A gamble where you win 10 with probability 1/4, lose 5 with probability 1/2, and neither lose nor win with the remaining probability?</p></li>
+<li><p>E. A stock option (without any transactions fees)</p></li>
+</ul></li>
+</ul>
+<aside class="notes">
+Ans: A and D; E is uncertain, but it is probably a fair gamble
+</aside>
+</section></section>
+<section><section id="example-experimental-measures-of-risk-attitudes-time-permitting" class="title-slide slide level1"><h1>Example: experimental measures of risk attitudes (time permitting)</h1></section><section id="example-experimental-measures-of-risk-attitudes-time-permitting-1" class="slide level2">
+<h2>Example: experimental measures of risk attitudes (time permitting)</h2>
+<ul>
+<li>Economists try to measure people’s level of risk aversion in various ways
+<ul>
+<li>Revealed preference from real-world choices</li>
+<li>Experimental measures, with real or hypothetical payoffs</li>
+</ul></li>
+</ul>
+</section><section class="slide level2">
+
+<p>One technique is the Holt and Laury (2002) risk elicitation task:</p>
+<p><img src="picsfigs/holtlaurie.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><small> Consider, when would you choose A and when would you choose B? </small></p>
+<aside class="notes">
+Asked to choose one in each row (A or B)
+</aside>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/holtlauriedetail.png" width="90%" style="display: block; margin: auto;" /></p>
+<ul>
+<li>At what point do people switch from choosing the safe to choosing the risky lottery?</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>This is a measure of their risk-aversion
+<ul>
+<li>A risk-neutral person would switch to B on the fifth choice</li>
+<li>The later you switch, the more risk averse</li>
+</ul></li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/holtlauryresults.png" width="50%" style="display: block; margin: auto;" /></p>
+<center>
+Results for different ‘stake sizes’
+</center>
+<ul>
+<li>Most people are risk-averse</li>
+<li>People switch to the risky option later when stakes are higher</li>
+</ul>
+</section></section>
+<section><section id="expected-utility" class="title-slide slide level1"><h1>Expected utility</h1></section><section id="expected-utility-1" class="slide level2">
+<h2>Expected utility</h2>
+<p><strong>Note: this concept is only covered <em>indirectly</em> in the NS text</strong></p>
+<p>Previous utility functions: predict choices under certainty</p>
+<ul>
+<li>No predictions for choices with uncertain probabilistic outcomes!</li>
+</ul>
+<div class="fragment">
+<p><br />
+</p>
+<ul>
+<li>People don’t maximise expected monetary value; tend to be risk-averse</li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p>An <em>Expected Utility</em> (EU) framework allows for risk-aversion!</p>
+<p><br />
+</p>
+<div class="fragment">
+<p>Assume each individual has a single function <span class="math inline">\(u(Y)\)</span> expressing their preferences over outcomes} Y <font color='gray'>called ‘Von-Neumann Morgenstern’ utility (VNM)</font></p>
+<p><br />
+</p>
+<p>Similar to ‘regular’ utility, but here ‘curvature matters’</p>
+</div>
+</section><section class="slide level2">
+
+<p>When making choices involving uncertainty, she does <strong>not</strong> (necessarily) maximise expected monetary value.<br />
+</p>
+<p>Instead, she maximises ‘Expected Utility’ (EU): the sum of her (VNM) valuations ‘<span class="math inline">\(u(\cdot)\)</span>’ under each outcome weighted by the <em>probability</em> of each outcome</p>
+<p><br />
+</p>
+<div class="fragment">
+<p>Risk-loving, -neutral, &amp; -averse individuals all max EU. By varying the <span class="math inline">\(u(\cdot)\)</span> function we vary the implied risk preference.</p>
+</div>
+</section><section class="slide level2">
+
+<p>Consider the choice between two gambles and one ‘certainty’:</p>
+<ol type="1">
+<li><p>Earn 1,000,000 with probability 0.1 &amp; zero with prob. 0.9</p></li>
+<li><p>Earn 100,000 with probability 1/2 &amp; 50,000 with prob. 1/2</p></li>
+<li><p>Earn 75,000 for certain</p></li>
+</ol>
+</section><section class="slide level2">
+
+<p>Imagine <span class="math inline">\(u(y)\)</span> arises from the <em>consumption chosen with</em> income <span class="math inline">\(y\)</span> <font color='gray'>(i.e., ‘Indirect Utility’)</font></p>
+<ul>
+<li>Should be increasing <font color='gray'>(bc of nonsatiation)</font>, thus <span class="math inline">\(u^\prime (y)&gt;0\)</span></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>But may increase at a <em>decreasing</em> rate <span class="math inline">\(\rightarrow\)</span> <span class="math inline">\(u^{\prime \prime}(y)&lt;0\)</span></li>
+</ul>
+</div>
+<div class="fragment">
+<p>This second assumption, called <em>diminishing marginal utility</em>, implies risk aversion!</p>
+<p><br />
+</p>
+</div>
+<div class="fragment">
+<p>Or, if you are risk-neutral, it must be linear <span class="math inline">\(\rightarrow\)</span> <span class="math inline">\(u(y) = a + by\)</span>, thus <span class="math inline">\(u^{\prime \prime}(y)=0\)</span></p>
+<aside class="notes">
+<p>Adv: Note that when we were choosing between two goods under certainty, her <em>level</em> of total utility didn’t really matter, only the relative utilities.</p>
+Now that we are considering gambles, the overall utility level matters, because we need to consider the tradeoff between ‘rich and poor’ states.
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p>Back to the choice between two gambles and one ‘certainty’:</p>
+<ol type="1">
+<li><span class="math inline">\(Y_1\)</span>: 1,000,000 with probability 0.1 and zero with prob. 0.9</li>
+<li><span class="math inline">\(Y_2\)</span>: 100,000 with probability 0.5 and 50,000 with prob. 0.5</li>
+<li><span class="math inline">\(Y_3\)</span>: 75,000 for certain</li>
+</ol>
+<div class="fragment">
+<p><br />
+</p>
+<p>Considering each <em>outcome</em> from any of these,</p>
+<p>we know <span class="math inline">\(u(1,000,000) &gt; u(100,000) &gt; u(75,000)&gt; u(50,000) &gt; u(0)\)</span></p>
+</div>
+<div class="fragment">
+<p>… but now the <em>size of the difference</em> in <span class="math inline">\(u(y)\)</span> matters for your decision!</p>
+<aside class="notes">
+<p>Y1 vs Y3: Is 1 million ‘more than ten times as good (utility-wise) as 75k?’</p>
+Y2 v Y3: Relative to 75k, does an additional 25k yield a utility gain worth the (equiprobable) loss of 25k?
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><em>Example</em>: Suppose there is open-enrollment in Oxford, Bristol, Plymouth.</p>
+<div class="fragment">
+<ul>
+<li><p>I only need to know the <em>ranking</em> of utilities of each to know your choices.</p></li>
+<li><p>If you choose Oxford over Bristol, even though Oxford costs more, I can infer that for you <span class="math inline">\(U(Oxford)&gt;U(Bristol)\)</span></p></li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p>Now suppose the policy is (you are only admitted to a single uni)</p>
+<blockquote>
+<p>A. Rank Oxford over Bristol and you have a 25% chance of getting into either, and (the remaining) 50% chance of Plymouth.</p>
+</blockquote>
+<blockquote>
+<p>B. Rank Bristol highest and you have a 100% chance of getting into Bristol.</p>
+</blockquote>
+<div class="fragment">
+<p>Now even if you rank Oxford <span class="math inline">\(\succ\)</span> Bristol <span class="math inline">\(\succ\)</span> Plymouth, I don’t know if you will choose A or B; I would need to know the <em>strength</em> of your preferences.</p>
+</div>
+<div class="fragment">
+<p>If I observe you choose A I learn <em>more</em> about your utility. Your preference for Oxford over Bristol is “stronger” than your preference for Bristol over Plymouth</p>
+</div>
+</section><section class="slide level2">
+
+<p>EU framework predicts she chooses the option that maximizes the sum of probabilities <span class="math inline">\(\times\)</span> utilities of each outcome. For a two-outcome case:</p>
+<div class="fragment">
+<p><span class="math display">\[EU = (1-p) u(Y_\ell) + p u(Y_h)\]</span></p>
+<p>… where <span class="math inline">\(p\)</span> is the probability of the higher income <span class="math inline">\(Y_h\)</span> and <span class="math inline">\(Y_\ell\)</span> is the lower income</p>
+<aside class="notes">
+<p>This is justified by certain ‘reasonable axioms’ we might expect choices under uncertainty to follow</p>
+<p>although these are perhaps not as readily acceptable as the main axioms of regular utility theory (like transitivity)</p>
+<p>… e.g., it converges to the choices made under certainty as probabilities tend to 1.</p>
+It yields nice consistent behavior and can be reconciled with general equilibrium theory, preserving the basic welfare theorems
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p>G1: 1,000,000 with probability 0.1 and 0 with prob. 0.9</p>
+<p>G2: 100,000 with probability 0.5 &amp; 50,000 with prob. 0.5</p>
+<p>G3: 75,000 for certain</p>
+<p><br />
+</p>
+<div class="fragment">
+<p><span class="math inline">\(EU(G_1)=0.1 \times u(1,000,000) + 0.9 \times u(0)\)</span></p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(EU(G_2)= 0.5 \times u(100,000) + 0.5 \times u(50,000)\)</span></p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(EU(G_3)= u(75,000)\)</span></p>
+</div>
+<div class="fragment">
+<p><font color='blue'>What</font> would a risk neutral or a risk averse person choose?</p>
+</div>
+<div class="fragment">
+<p>Risk neutral <span class="math inline">\(\rightarrow\)</span> chooses G1 <font color='blue'>(why?)</font></p>
+<aside class="notes">
+Ans1: It has the highest expected monetary value, 100,000
+</aside>
+<p><br />
+</p>
+<p>Risk averse <span class="math inline">\(\rightarrow G3 \succ G2\)</span> <font color='blue'>(why?)</font></p>
+<aside class="notes">
+Ans2: Same expected monetary value, /pounds75,000, but less risk (no risk)
+</aside>
+</div>
+<div class="fragment">
+<p>Risk averse <span class="math inline">\(\rightarrow\)</span> <em>maybe</em> <span class="math inline">\(G2 \succ G1\)</span>, but depends <em>how</em> risk averse she is</p>
+</div>
+</section></section>
+<section><section id="risk-aversion-graphical-depiction" class="title-slide slide level1"><h1>Risk aversion: graphical depiction</h1></section><section id="risk-aversion-graphical-depiction-1" class="slide level2">
+<h2>Risk aversion: graphical depiction</h2>
+<p>She values gamble X less than ‘gaining its EV for certain’:</p>
+<div class="fragment">
+<p><em>Draw diminishing MU VnM utility function</em></p>
+<p><br />
+</p>
+</div>
+<div class="fragment">
+<p>Expected <strong>monetary</strong> value of gamble <span class="math inline">\(X\)</span> is <span class="math inline">\(E(X)=(1-px_{l} + px_{h})\)</span>. However…</p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[EU(X)=(1-p)u(x_{l} + pu(x_{h})&lt; u(E(X))= u((1-p)x_{l}+px_{h})\]</span></p>
+</div>
+<div class="fragment">
+<p><small></p>
+<p>Depict <span class="math inline">\(E(X)\)</span> on x-axis, project up to <span class="math inline">\(u(E(X))\)</span></p>
+<p>Diagonal line btwn <span class="math inline">\(u(x_{low})\)</span> &amp; <span class="math inline">\(u(x_{high})\)</span>; EU in-btwn these.</p>
+<p>Horizontal distance <span class="math inline">\(p\)</span> of the way btwn <span class="math inline">\(x_{low}\)</span> &amp; <span class="math inline">\(x_{high}\)</span> <span class="math inline">\(\rightarrow\)</span> <span class="math inline">\(E(X)\)</span></p>
+<p>Project up to diagonal for average of functions (EU).</p>
+<p></small></p>
+<aside class="notes">
+This is a mathematical/graphical property; a special case of Jensen’s inequality. Intuition: slope of line tells me ‘rise for a given run’, The EV calc is a linear function, so the slope is constant and the ‘share of the rise’ simply projects up from the ‘share of the run’
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/riskaversion1.png" width="1280" height="85%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+You start with $35k
+</aside>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/riskaversion2.png" width="1280" height="85%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/riskaversion3.png" width="1280" height="85%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/riskaversion4.png" width="1280" height="85%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/riskaversion5a.png" width="1280" height="85%" style="display: block; margin: auto;" /></p>
+</section><section id="ways-of-reducing-risk-insurance" class="slide level2">
+<h2>Ways of reducing risk: Insurance</h2>
+<p><img src="picsfigs/insurancereducesrisk.png" width="75%" style="display: block; margin: auto;" /></p>
+<dl>
+<dt>Fair insurance</dt>
+<dd>… premium equals expected (money) value of loss
+</dd>
+</dl>
+<aside class="notes">
+<p>Adv: We might think that such insurance is provided at its true marginal cost;</p>
+however there are various reasons why the cost to firms may be above this, including transactions cost, moral hazard, and adverse selection
+</aside>
+</section><section class="slide level2">
+
+<p>Read and know (basic understanding):</p>
+<ul>
+<li><p>Uninsurable (difficult to insure) risks</p></li>
+<li><p>Adverse selection</p></li>
+<li><p>Moral hazard</p></li>
+<li><p>The rationale for insurance ‘deductibles’</p></li>
+</ul>
+</section><section id="ways-of-reducing-risk-diversification" class="slide level2">
+<h2>Ways of reducing risk: Diversification</h2>
+<ul>
+<li><p>Diversification: Buying multiple assets</p>
+<ul>
+<li>With risks that are not perfectly correlated with one another</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<p><br> <br> </p>
+<p>Putting your eggs in multiple baskets: tends to reduce risk, for a given expected value of profit (or loss)</p>
+</div>
+</section><section class="slide level2">
+
+<h3 id="illustration-binomial-distribution">Illustration: Binomial distribution</h3>
+<p>Suppose I’ve 1000, and can bet on fair coin flips <span class="math inline">\(\rightarrow\)</span> My returns have a ‘binomial distribution’.</p>
+<div class="fragment">
+<p>A. Bet all 1000 on single flip <span class="math inline">\(\rightarrow\)</span> 50% chance I lose (or double) entire investment.</p>
+</div>
+<div class="fragment">
+<p>B. Bet 500 on 2 flips <span class="math inline">\(\rightarrow\)</span> 25% chance I’ll lose (or double) investment. <font color='blue'>Better?</font></p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(EV(A)=EV(B)=1000\)</span> but B is “less risky” <span class="math inline">\(\rightarrow\)</span> <span class="math inline">\(B \succ A\)</span> if you’re risk averse</p>
+<aside class="notes">
+Less risky: B and A overlap with 0.5 probability; remaining 50% of time A’s outcomes are more extreme
+</aside>
+</div>
+<div class="fragment">
+<p>C. 100 each in 10 flips, there’s a 38% chance that I’ll lose 20% or more of my investment.</p>
+<p>D. 1 each on on 1000 flips <span class="math inline">\(\rightarrow\)</span> 6% chance I lose 5% of my investment or more; 1/10th of 1% chance I’ll lose 10%+.</p>
+</div>
+<div class="fragment">
+<p><em>Result</em>: More ‘diversification’ <span class="math inline">\(\rightarrow\)</span> less risk, for same EV.</p>
+</div>
+</section><section class="slide level2">
+
+<p><em>Result</em>: The more I can do this ‘diversification’, the less risk I face.</p>
+<p><em>Note</em>: For simplicity, above examples have a ‘fair coin flip’, zero expected-return investment.</p>
+<p><br> <br> </p>
+<div class="fragment">
+<p>But: ‘why invest at all? Because this principle also applies to ’unfair coin flips’.</p>
+</div>
+<div class="fragment">
+<p>E.g., investments in the stock market are more profitable on average than money under the mattress.</p>
+<aside class="notes">
+<p>Each 1 invested in shares has a higher expected return, but also a higher risk.</p>
+However by spreading across <em>many different</em> assets we can reduce this risk, as seen above
+</aside>
+</div>
+</section><section class="slide level2">
+
+<h3 id="example">Example</h3>
+<p>You’ve 35k, must invest 15k in an Oil or Transportation firm. A share in either costs 1 (alt: costs 0.9).</p>
+<aside class="notes">
+Alt: suppose it costs 0.9, so on average it is profitable
+</aside>
+<div class="fragment">
+<p>By EOY, 50% chance price <span class="math inline">\(\uparrow\)</span> to 2, 50% chance <span class="math inline">\(\downarrow\)</span> to 0.</p>
+<ol type="1">
+<li>Put it all in one firm <span class="math inline">\(\rightarrow\)</span> 50% chance you’ll end up with 20k, 50% chance of 50k. EV = 35k.</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="2" type="1">
+<li>If you put half in each you’ve a 25% chance of each of …:</li>
+</ol>
+<p><img src="picsfigs/oiltransitperformance.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Same expected value, but it’s ‘better’</p>
+<aside class="notes">
+Draw histograms on the board
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><em>Why better</em> (for a risk-averse person)?</p>
+
+<p><em>Less risk, same EV</em>: 50% of the time (when oil &amp; transit move opposite) you’ve less gain/loss than if undiversified.</p>
+<div class="fragment">
+<p>I.e., comparing distribution of returns vs. undiversified investment:</p>
+<ul>
+<li><p>25% of time, gain 0 vs. 15K (leaving you 35k vs. 50k)</p></li>
+<li><p>25% of time, gain 0 vs. lose 15K (leaves 35k vs. 20k)</p></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Remaining 50% of time (both rise/both fall) … same as remaining 50% of the time under undiversified investment</li>
+</ul>
+<p><br />
+</p>
+</div>
+<div class="fragment">
+<p><em>See the benefit graphically (next slide)</em></p>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/diverselessrisk.png" width="90%" style="display: block; margin: auto;" /></p>
+<p><font color='brown'>Takes some time to interpret; see text</font></p>
+<aside class="notes">
+<p>This depicts the average of 2 EUs (when B does poorly, when B does well)</p>
+<p>each of which average the utility over 2 outcomes (A does poorly, A does well).</p>
+The average of the average of these exceeds the average of the utility of 2 extreme outcomes.
+</aside>
+</section><section id="flexibility-and-options-contracts" class="slide level2">
+<h2>Flexibility and options contracts</h2>
+<p><font color='green'>2018: Read at home; less coverage in assesment than in prior years</font></p>
+<p><font color='gray'>Keep your options open’ (simple idea)</font></p>
+<p><font color='gray'>‘Real option’: an option outside the financial world</font></p>
+<div class="fragment">
+<dl>
+<dt>Option contract</dt>
+<dd><p>Financial contract offering the right (but not the obligation) to buy or sell an asset over a specified period (at a certain price).</p>
+</dd>
+</dl>
+</div>
+<div class="fragment">
+<p>Attributes of options:</p>
+<ol type="1">
+<li>Specification of transaction}: what is bought/sold, how many units maximum, at what price, etc</li>
+<li>Period} the option may be exercised (from when until when)</li>
+<li>Price} of the option</li>
+</ol>
+</div>
+</section><section class="slide level2">
+
+<h3 id="price-of-options-determined-by">Price of options determined by</h3>
+<ol type="1">
+<li>EV of underlying transaction</li>
+</ol>
+<div class="fragment">
+<ol start="2" type="1">
+<li>Variability of the value of the transaction</li>
+</ol>
+</div>
+<div class="fragment">
+<p>Ex: Option G (‘call option’): Right to buy Google share at 500 (500 ‘strike price’) between Jan. 2018 and Dec. 2020</p>
+</div>
+<div class="fragment">
+<ul>
+<li><p>Worth more the higher the current share price</p></li>
+<li><p>If <span class="math inline">\(P_{google}&lt; £ 500\)</span> currently, then option G is worth more the higher the expected <em>variability</em> in <span class="math inline">\(P_{google}\)</span>. <font color='blue'>Why?</font></p></li>
+</ul>
+</div>
+<div class="fragment">
+<p>Bc variability can only help option-holder: price <span class="math inline">\(\uparrow\)</span> <span class="math inline">\(\rightarrow\)</span> profit, but if price falls below 500, she doesn’t need to exercise option</p>
+</div>
+</section><section class="slide level2">
+
+<p>Price of options determined by 1. EV of underlying transaction, 2. Variability of this value, and…</p>
+<ol start="3" type="1">
+<li>Duration: the longer the better. <font color='blue'>(Why?)</font></li>
+</ol>
+<div class="fragment">
+<ul>
+<li>Greater chance the price will rise above strike price (500)</li>
+</ul>
+<aside class="notes">
+Results for ‘right to sell = call options’ are similar, just replace the words ‘buy’ with ‘sell’ and reverse the directions (‘rise’ with ’fall), etc.
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p>Options can be used for <em>hedging risk</em> … that was their original purpose. <font color='blue'>How</font>?</p>
+<aside class="notes">
+<p>Q1 How might an airline buy options to counter its risk from rising petrol prices?</p>
+<p>Q2. How could an airline pilot buy options to counter her risk of being fired in case her airline goes out of business?</p>
+But always priced at least as high as intrinsic value, because you <em>can</em> cash it in now.
+</aside>
+<aside class="notes">
+<p>Ans: 1. The airline could buy call options (rights to buy at a price) for oil and gas company shares, or for oil and gas commodity units.</p>
+<ol start="2" type="1">
+<li>The pilot could buy put options (rights to sell at a price) in the airline she works for; if the airline shares become worthless these put options will be very valuable.</li>
+</ol>
+<p>Classic economist’s argument: you should ‘bet against yourself’ to minimise risk; but this might give you bad incentives to perform.</p>
+See column about this <a href="http://www.marketplace.org/2008/08/11/business/hedging-your-bets-hard-times" title="Hedging your bets in hard times">HERE</a>
+</aside>
+<aside class="notes">
+This sort of thing could be asked as an exam question, perhaps multiple choice
+</aside>
+</section><section class="slide level2">
+
+<h3 id="black-scholes-and-merton-model-of-options-value">Black-Scholes (and Merton) model of options value</h3>
+<p><img src="picsfigs/optionsvalue_blackscholes.png" width="75%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+<p>Above is for option that can be executed from now indefinitely into the future.</p>
+<p>Not of infinite value because future payoffs are discounted at risk-free rate.</p>
+<p>Blue is value that can be ‘cashed in’, red is Black-Scholes calculation.</p>
+<p>Red always above the blue because ‘asset’s price may increase’.</p>
+<p>At very low asset price it is unlikely the price will rise above $100 in forseeable future, so not valuable.</p>
+<p>At prices higher and higher above strike price of $100 the red and blue come closer together, because it’s unlikely</p>
+<p>the asset price goes below $100 any time soon, so option is almost the same as an actual share.</p>
+But always priced at least as high as intrinsic value, because you <em>can</em> cash it in now.
+</aside>
+<ul>
+<li>{Insightful; once developed, traders <em>used it</em> to price options}</li>
+<li>{Problem: It’s just a model, makes fairly strong assumptions (normal distribution of returns, etc.)}</li>
+</ul>
+<aside class="notes">
+Unlike, e.g., value of continuously compounded interest, we still don’t <em>know</em> true value of options
+</aside>
+</section><section id="value-and-cost-of-information" class="slide level2">
+<h2>Value and cost of information</h2>
+<p><em>This section is fairly straightforward: please read it on your own (and post any questions you may have)</em></p>
+</section><section id="pricing-of-risk-and-assets-in-financial-markets" class="slide level2">
+<h2>Pricing of risk (and assets) in financial markets</h2>
+<p><img src="picsfigs/marketriskline.png" width="55%" style="display: block; margin: auto;" /></p>
+<dl>
+<dt>Market line</dt>
+<dd>… relationship between risk &amp; return an investor can achieve by mixing assets
+</dd>
+</dl>
+<!--
+Typo: "risk assets" should be "risky"
+-->
+<aside class="notes">
+With efficient markets, this line depicts the ‘best mix’: proportional to the total ‘market basket’, plus borrowing/lending at the ‘risk-free rate’
+</aside>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/investorchoices.png" width="80%" style="display: block; margin: auto;" /></p>
+<p><small> Different preferences for risk versus expected} (average) return. ‘Risk’ is the overall variance around the average. Assumes ‘optimal diversification’: no one chooses points <em>below</em> market line. </small> —-</p>
+<p><strong>Extension: ‘Capital asset pricing model’ (CAPM)</strong></p>
+<p>CAPM: Leading ‘baseline’ model in finance, assumes investors optimally diversify</p>
+<div class="fragment">
+<p>Thus assets are priced based only on ‘risk that cannot be diversified away from’ (‘market risk’)</p>
+</div>
+<div class="fragment">
+<ul>
+<li><p>Holding EV of dividends constant, assets with higher <em>market risk</em> are less desirable, thus priced lower, and get higher returns</p></li>
+<li><p>The trade-off between this risk and return has a linear relationship with slope ‘Beta’</p></li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p>Typical economist’s investment advice: diversify to mimic the ‘market basket’, choose funds with low fees</p>
+<aside class="notes">
+This Doesn’t make you a hit at parties
+</aside>
+<p><img src="picsfigs/graduateplastics.jpg" width="50%" style="display: block; margin: auto;" /></p>
+</section><section id="not-covered-two-state-model" class="slide level2">
+<h2>Not covered: two state model</h2>
+<ul>
+<li>You may find it helpful in understanding
+<ul>
+<li>But you may be confused by it, so read it at your own peril!</li>
+</ul></li>
+</ul>
+</section><section id="suggested-practice-problems-see-problem-set" class="slide level2">
+<h2>Suggested practice problems: see problem set</h2>
+<!---
+from Nicholson and Snyder Chapter 4 (12th ed)
+"Problems"
+- 4.1, 4.3, 4.5, 4.6, 4.7 (challenging)
+Also see problem on next slide
+- ... Please let us know your preferences over what is covered
+-->
+</section><section class="slide level2">
+
+<p>Suppose there is a 50-50 chance that a risk averse individual with a current wealth of 20,000 will contract a debilitating disease and suffer a loss of 10,000.</p>
+<ol type="a">
+<li>Calculate the cost of actuarially fair insurance in this situation and use a utility-of-income graph to show that the individual will prefer fair insurance against this loss to accepting the gamble uninsured.</li>
+</ol>
+<p>…</p>
+<ol start="2" type="a">
+<li>Suppose two types of insurance policies were available: 1. A fair policy covering the complete loss and 2. A fair policy covering only half of any loss incurred.</li>
+</ol>
+<p><br />
+</p>
+<p>Calculate the cost of the second type of policy and show that the individual will generally regard it as inferior to the first.<br />
+</p>
+<!---
+c) Suppose individuals who purchase cost-sharing policies of the second type take better care of their health, thereby reducing the loss suffered when ill to only \pounds7,000. In this situation, what will be the cost of a cost-sharing policy? Show that some individuals may now prefer this type of policy. (This is an example of the moral hazard problem in insurance theory.)
+-->
+</section></section>
+    </div>
+  </div>
+
+  <script src="s_9_uncertainty_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="s_9_uncertainty_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: true,
+        // Transition style
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        chalkboard: {
+        },
+
+        keyboard: {
+          67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
+          66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+          46: function() { RevealChalkboard.clear() },    // clear chalkboard when 'DEL' is pressed
+           8: function() { RevealChalkboard.reset() },    // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+          68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 's_9_uncertainty_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+          { src: 's_9_uncertainty_files/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+          { src: 's_9_uncertainty_files/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>

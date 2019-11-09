@@ -7,6 +7,13 @@ output:
     reveal_plugins: ["notes", "chalkboard","zoom"]
     theme: white
     highlight: pygments
+    reveal_plugins:
+    - notes
+    - chalkboard
+    - zoom
+    self_contained: no
+    smart: yes
+    theme: white
     transition: fade
     smart: true
     css: reveal.css
@@ -470,7 +477,7 @@ We wanted to help students, many of whom are living away from home for the first
 Exeter Picturehouse:
 
 
-```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.height='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/exeter_picturehouse.png")
 ```
 
@@ -479,7 +486,6 @@ Exeter Picturehouse:
 
 <br> \bigskip
 
-\Large
 
 
 `r format_with_col("Why such a complicated price list?","blue")`
