@@ -1,0 +1,137 @@
+## Fourth problem set: Monopolies and price discrimination {-}
+
+
+*Goals of this problem set:*
+
+To work through the monopoly optimisation problem and the welfare implications, gaining a better understanding of why there is a deadweight loss.
+
+To better understand the application of economics to policy issues
+
+
+### Monopolies, public goods, economics logic (not covered in tutorial) {-}
+
+Consider the following statement:
+
+> Taxes distorts the incentive to work, getting people to work less. To produce public goods like motorways, governments need to raise taxes, which are inefficient. Governments also have no way of knowing how much of these public goods to produce. Thus, for efficiency reasons, we should sell the motorways to a single company, who would have the right to charge whatever tolls it wanted, and the responsibility to maintain these roads.
+
+Find two things in the above statement that an economist would find incorrect, and explain why. Find one thing in the above statement that an economist might agree with, and explain why.
+
+
+### Ans {-}
+
+- Correct: (Income) taxes distort the incentive to provide labour
+
+- Wrong: \dots but it may not get people to work *less*, effects could go in either direction depending on the whether leisure is a normal good, etc
+
+- (Nearly) correct: Motorways may be seen as a public good, because they are largely nonrival and nonexcludable
+
+- Wrong: Motorways are not really a pure public good, because 'rivalry' (there can be congestion, each car wears down the road) and 'excludability' (via toll roads.)
+
+- Correct: It is hard for governments to know how much of a public good to provide
+
+    - Because of the difficulty of getting people to state their true values (see the voting paradox, Arrow's impossibility theorem).
+
+- Wrong: Selling the roads to a single company is likely to lead to inefficiency; it will tend to charge a price above the efficient level, which will lead to the 'deadweight loss of monopoly' (unless it can perfectly price discriminate). Also, toll roads themselves may impose additional  costs, especially if people must slow down to pay the tolls.
+
+### Monopoly and deadweight loss (covered in tutorial) {-}
+
+```{r  fig.cap = '', out.height='15%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/prob11-1.png")
+```
+
+\
+
+*Note, on an exam I might ask you to do part c via a graph.*
+
+\
+
+
+### Ans. {-}
+
+*Note: This (answer) should say: MR=53-2Q=MC=5...
+the "-" or dash in the previous statement is confusing here
+
+```{r  fig.cap = '', out.height='20%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/NS11-1-partsa-c.png")
+```
+
+
+In the above, also note that the Consumer Surplus is 1/2*48*48   because this is the area under the demand curve above the price of 5. The 'minimum price at which 0 units are purchased' is 53 and the MC price is 5... the difference is 53-5=48.
+
+\
+
+
+<!--
+d. Explain (and depict in a diagram) why this deadweight loss would be avoided if the firm could perfectly price-discriminate.
+  ```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/ppd5.png")
+```
+  ```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/ppd6.png")
+```
+
+\begin{itemize}
+    \item With perfect PD firm charges everyone her maximum value of each unit
+    \item Can sell to 'low value' units/consumers without reducing price for high-value ones
+    \item Firm captures entire potential surplus, shown above.
+\end{itemize}
+-->
+\
+
+
+### Monopoly price discrimination (Covered in tutorial, at least the 'draw a diagram' part). {-}
+
+
+*Choose all that are correct, and no more. Briefly explain why each is true or false.* Draw a diagram to illustrate 3dpd in two markets, and it's consequences.
+
+Economic theory predicts, concerning third-degree (group-based) price discrimination (3dpd) \dots
+
+A.  If a monopoly practices 3dpd, and this leads to a reduction in the consumption of some consumers and an increase in the consumption of others, this suggests a reduction in exchange efficiency.
+
+B. If 3dpd leads to an increase in quantity exchanged then it will definitely increase the total sum of consumer and producer surplus.
+
+C. If firms in an oligopoly are allowed to practice 3dpd, their profits will definitely increase.
+
+D. Allowing a monopoly to practice 3dpd may reduce its profits.
+
+E. 3dpd definitely leads to 'quality distortion' of the product intended for the group with a lower valuation of the good
+
+### Ans. {-}
+
+
+A is true. The consumers whose consumption increased (say 'by X new units') are obviously those in the group who get a price *reduction* after 3DPD, the 'favoured group', say 'group B'. (Note: it may be helpful to consider individual demand curves here).  Let $p_B < p_u < p_A$ represent the price for the favoured group after 3dpd, the uniform price, and the price for the unfavoured group ("A") after 3dpd, respectively.  Suppose that before 3dpd group B bought a total of $d_B$ units, and after 3dpd group B buys a total of $d_B + x$ units. Suppose that before 3dpd group A bought a total of $d_A$ units, and after 3dpd group A buys a total of $d_B - y$ units.
+
+
+
+Before 3DPD those in the favoured group obviously didn't value these x new units of the good as much as the (consumption of other goods they would give up) at $p_u$ (or they would have already bought them.) Now that the price for B's has reduced to $p_B$ they also buy these additional x units that (some in) this group value at an amount between $P_B$ and $p_u$.
+
+\
+At the same time, in response to their own price rising, people in group A buy $y$ fewer units; they stop buying those units that someone in this group values at a between
+ $P_A$ and $p_u$.
+
+\
+
+But note that the units people in group A 'stop buying' were valued higher (they were willing to trade off more of other goods) than the units people in group 'start buying'. This implies a reduction in exchange inefficiency ... given the amount produced, 3dpd causes it to go to people who value it *less* than others, relative to uniform pricing.
+
+\
+
+B is false -- This increase in production (a move towards allocative efficiency, because monopolies tend to underproduce) needs to be balanced against the aforementioned reduction in exchange efficiency. It's not clear which effect is larger. So the increase in production is a *neccessary* but not a *sufficient* condition for 3dpd to increase welfare.
+
+\
+
+C is false -- under oligopoly (which I only briefly mentioned), a few firms are in a strategic environment with one another, and the ability to do 3dpd may or may not increase their profits. These strategic environments involve complex equilibria (we'll see this a bit in Game Theory), so, e.g., allowing 3dpd may lead to a price war, reducing profits. We don't know if it will 'help firms' in this environment.
+
+\
+
+D is false: Allowing a *monopoly* to practice 3dpd will in general increase its profits (if it can identify markets/groups with distinct elasticities and tailor its prices to these, and there is limited 'arbitrage' amongst consumers). It should *never reduce* a monopolist's profits: it merely offers a tool a monopolist could use (if profitable) or ignore otherwise.
+
+\
+
+E is false -- this statement would basically be true except that it's about *2DPD* (self-selection) and not 3DPD.
+
+\
+
+Diagrams are given in the [relevant part of the web book above](#pd3d). Practice drawing these and understand their interpretation. In which market will price be higher and why? How does the consumer surplus change in each market? How does the monopoly's profit change?
+
+
+

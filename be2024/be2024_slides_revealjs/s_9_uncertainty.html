@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="David Reinstein (Exeter)" />
-  <meta name="dcterms.date" content="2019-06-11" />
   <title>s_9_uncertainty.utf8.md</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -496,7 +495,7 @@ We will not cover the 2 state model, although you may find it helpful in underst
 
 <p><em>Key goals of these lectures (and accompanying self-study)…</em></p>
 <ul>
-<li>Revise the concepts of probability and expected value</li>
+<li>(Revise) the concepts of probability and expected value</li>
 </ul>
 <div class="fragment">
 <p><br> <br> </p>
@@ -528,29 +527,30 @@ We will not cover the 2 state model, although you may find it helpful in underst
 <h2>What’s up with uncertainty?</h2>
 <p><br />
 </p>
-<p>Previous discussion: Consumers make choices with known consequences</p>
-<aside class="notes">
-But in the real world many important economic decisions involve risk.
-</aside>
+<p>Previous: Consumers &amp; firms make choices w/ <em>known</em> consequences</p>
+<p><em><font color='green'>REALITY: Many important economic decisions involve ‘risk.’</font></em></p>
 <p><br />
 </p>
-<p><br> <br> </p>
 <div class="fragment">
-<p>Here: Choices with <em>unknown</em> consequences (but known <em>probabilities</em> of each outcome)</p>
+<p><em>Here</em>: Choices w/ <em>unknown</em> consequences (but known outcome <em>probabilities</em>)</p>
+<p>How to consider this in the utility-max framework?</p>
+<p><br />
+</p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(\rightarrow\)</span> Standard framework: maximize ‘expected utility’</p>
+<p><br />
+</p>
+<center>
+<small> <font color='red'>Warning:</font> ‘expected utility’ vs ‘expected monetary value’!
+</center>
+<p></small></p>
 <aside class="notes">
-<p>Adv: In the real world, people may also make choices in contexts with unknown probabilities; this is called ‘ambiguity’ or ‘Knightian uncertainty’.</p>
-This is out of the scope of this module.
-</aside>
-<ul>
-<li>How to consider this in the utility-max framework?
-<ul>
-<li>Standard framework: maximize ‘expected utility’</li>
-</ul></li>
-</ul>
-<p><font color='red'>Warning:</font> ‘expected utility’ vs ‘expected monetary value’!</p>
-<aside class="notes">
-Making choices to maximise expected utility is <em>not</em> the same as making choices to maximise expected monetary outcomes. This is one of the main points here. A good share of students get this mixed up!
-</aside>
+<ol type="1">
+<li>Adv: In the real world, people may also make choices in contexts with unknown probabilities; this is called ‘ambiguity’ or ‘Knightian uncertainty’.</li>
+<li>Making choices to maximise expected utility is <em>not</em> the same as making choices to maximise expected monetary outcomes. This is one of the main points here. A good share of students get this mixed up!
+</aside></li>
+</ol>
 </div>
 </section><section id="probability-concepts-a-quick-review" class="slide level2">
 <h2>Probability concepts: a quick review</h2>
@@ -567,13 +567,7 @@ Making choices to maximise expected utility is <em>not</em> the same as making c
 <li>Always between 0 and 1</li>
 </ul>
 <aside class="notes">
-Adv: There are some debates, e.g., between ‘Bayesians’ and ‘Frequentists’ over the meaning of probability.
-</aside>
-<aside class="notes">
-Q: If <span class="math inline">\(p\)</span> is the probability an event occurs, what is the probability this event does <em>not</em> occur?
-</aside>
-<aside class="notes">
-Ans: <span class="math inline">\(1-p\)</span>
+Adv: There are some debates, e.g., between ‘Bayesians’ and ‘Frequentists’ over the meaning of probability. Q: If <span class="math inline">\(p\)</span> is the probability an event occurs, what is the probability this event does <em>not</em> occur? Ans: <span class="math inline">\(1-p\)</span>
 </aside>
 </section><section class="slide level2">
 
@@ -582,6 +576,9 @@ Ans: <span class="math inline">\(1-p\)</span>
 <dd>The ‘average outcome’ of an uncertain variable (general definition)
 </dd>
 </dl>
+<p><a href="https://seeing-theory.brown.edu/basic-probability/index.html">Visualisation</a></p>
+<p><br />
+</p>
 <div class="fragment">
 <p>The average monetary (or goods) payoff from an uncertain gamble</p>
 <p><br />
@@ -590,23 +587,24 @@ Ans: <span class="math inline">\(1-p\)</span>
 <div class="fragment">
 <p>The sum of the value at each possible outcome, weighted by the probability that outcome will occur</p>
 <aside class="notes">
-<p>Adv, maths: When outcomes are in a continuous space, e.g., the returns to a stock can take any of an infinite number of possible values,</p>
-the expected value becomes a definite integral rather than a sum.
+Adv, maths: When outcomes are in a continuous space, e.g., the returns to a stock can take any of an infinite number of possible values, the expected value becomes a definite integral rather than a sum.
 </aside>
 </div>
 <div class="fragment">
 <p><br />
 </p>
-<p><em>Not</em> the same as expected utility (coming up)! People need not choose the investment with the highest expected value.</p>
+<p><small> <em>Not</em> the same as expected utility (coming up)! People need not choose the investment with the highest expected value. </small></p>
 </div>
 </section><section class="slide level2">
 
-<p>Consider: would you prefer…</p>
+<p><font color='blue'>Consider (turningpoint vote): would you prefer…</font></p>
 <ol type="a">
 <li>100,000 with certainty or</li>
 <li>A 1 in 10 chance of 1,000,001 (and otherwise you get nothing)?</li>
 </ol>
 <div class="fragment">
+<p><br />
+</p>
 <ul>
 <li>Which has a higher expected monetary value?</li>
 </ul>
@@ -651,13 +649,11 @@ Ans: <span class="math inline">\(EV(b)=100,000.1&gt;EV(a)=100,000\)</span>
 </p>
 </div>
 <div class="fragment">
-<ul>
-<li>To accept a (fair) gamble, must expect a ‘risk-premium’</li>
-</ul>
+<p>To accept a (fair) gamble, a risk-averse person must expect a ‘risk-premium’</p>
 </div>
 </section><section class="slide level2">
 
-<p><img src="picsfigs/weirdalscissors.jpg" width="70%" style="display: block; margin: auto;" /></p>
+<p><img src="picsfigs/weirdalscissors.jpg" width="40%" style="display: block; margin: auto;" /></p>
 <div class="fragment">
 <ol start="3" type="1">
 <li>A <em>Risk-lover</em> will always choose fair gambles over certainties, and will sometimes choose a gamble that is unfair against her</li>
@@ -666,32 +662,30 @@ Ans: <span class="math inline">\(EV(b)=100,000.1&gt;EV(a)=100,000\)</span>
 </section><section class="slide level2">
 
 <p><strong>Example: two possible outcomes</strong></p>
-<aside class="notes">
-Q: example of such an investment with only two outcomes?
-</aside>
-<aside class="notes">
-Ans: perhaps making a loan to someone to start a business; they will either pay back the loan with a high interest, or go bankrupt and pay none of it back.
-</aside>
-<p>A simple investment, which either pays a low (or 0 or - amount) or a high amount</p>
+<p>A simple investment, paying either a low (or 0 or - amount) or a high amount</p>
 <div class="fragment">
 <p>It pays X where either <span class="math inline">\(X =x_1\)</span> or <span class="math inline">\(X=x_2\)</span>, where <span class="math inline">\(x_1&lt; x_2\)</span></p>
-<ul>
-<li>Specifically, pays 1020 w/ prob. 1% &amp; pays 10 w/ prob. 99%</li>
-</ul>
+<blockquote>
+<p>Specifically, pays 1020 w/ prob. 1% &amp; pays 10 w/ prob. 99%</p>
+</blockquote>
 </div>
 <div class="fragment">
-<p>Probability it pays <span class="math inline">\(x_2\)</span> is <span class="math inline">\(p\)</span>; thus probability it pays <span class="math inline">\(x_1\)</span> is?</p>
+<p><font color='blue'>Probability it pays <span class="math inline">\(x_2\)</span> is <span class="math inline">\(p\)</span>; thus probability it pays <span class="math inline">\(x_1\)</span> is?</font></p>
 </div>
 <div class="fragment">
 <p><span class="math inline">\(Pr(X=x_1)= 1-p\)</span></p>
 </div>
 <div class="fragment">
 <p>The <em>expected (monetary) value</em> sums the values weighted by the probabilities, i.e., <span class="math inline">\(EV(X)=(1-p) x_1 + p x_2\)</span></p>
-
+<p><br />
+</p>
 <p>Thus <span class="math inline">\(EV(X) = 0.01 \times 1020 + 0.99 \times 10 = 10.20 + 9.90 = 20.10\)</span></p>
 <aside class="notes">
-Consider: would you prefer this investment over one that paid 20 with certainty? Would everyone prefer it? If not, why not?
-</aside>
+<ol type="1">
+<li>Q: example of such an investment with only two outcomes? Ans: perhaps making a loan to someone to start a business; they will either pay back the loan with a high interest, or go bankrupt and pay none of it back.</li>
+<li>Consider: would you prefer this investment over one that paid 20 with certainty? Would everyone prefer it? If not, why not?
+</aside></li>
+</ol>
 </div>
 </section><section class="slide level2">
 
@@ -723,15 +717,13 @@ however, with the adjustments further down in the article, we see this drops con
 <p><em>Is it actuarially fair?</em></p>
 </section><section class="slide level2">
 
-<ul>
-<li><p>Which of the following are fair gambles?</p>
+<p><font color='blue'>Which of the following are fair gambles?</font></p>
 <ul>
 <li><p>A. ‘Double or nothing’ bets with a fair coin</p></li>
 <li><p>B. Roulette in a casino</p></li>
 <li><p>C. A gamble where you win 10 with probability 1/2 and lose 5 with probability 1/2</p></li>
 <li><p>D. A gamble where you win 10 with probability 1/4, lose 5 with probability 1/2, and neither lose nor win with the remaining probability?</p></li>
 <li><p>E. A stock option (without any transactions fees)</p></li>
-</ul></li>
 </ul>
 <aside class="notes">
 Ans: A and D; E is uncertain, but it is probably a fair gamble
@@ -739,13 +731,17 @@ Ans: A and D; E is uncertain, but it is probably a fair gamble
 </section></section>
 <section><section id="example-experimental-measures-of-risk-attitudes-time-permitting" class="title-slide slide level1"><h1>Example: experimental measures of risk attitudes (time permitting)</h1></section><section id="example-experimental-measures-of-risk-attitudes-time-permitting-1" class="slide level2">
 <h2>Example: experimental measures of risk attitudes (time permitting)</h2>
-<ul>
-<li>Economists try to measure people’s level of risk aversion in various ways
+<p>Economists try to measure people’s level of risk aversion in various ways, including:</p>
+<div class="fragment">
 <ul>
 <li>Revealed preference from real-world choices</li>
-<li>Experimental measures, with real or hypothetical payoffs</li>
-</ul></li>
 </ul>
+<p><br />
+</p>
+<ul>
+<li>Experimental and survey measures, with real or hypothetical payoffs</li>
+</ul>
+</div>
 </section><section class="slide level2">
 
 <p>One technique is the Holt and Laury (2002) risk elicitation task:</p>
@@ -800,20 +796,28 @@ Results for different ‘stake sizes’
 <p><br />
 </p>
 <div class="fragment">
-<p>Assume each individual has a single function <span class="math inline">\(u(Y)\)</span> expressing their preferences over outcomes} Y <font color='gray'>called ‘Von-Neumann Morgenstern’ utility (VNM)</font></p>
+<p>Assume each individual has a single function <span class="math inline">\(u(Y)\)</span> expressing their preferences over outcomes <span class="math inline">\(Y\)</span> <font color='gray'>called ‘Von-Neumann Morgenstern’ utility (VNM)</font></p>
 <p><br />
 </p>
 <p>Similar to ‘regular’ utility, but here ‘curvature matters’</p>
 </div>
 </section><section class="slide level2">
 
-<p>When making choices involving uncertainty, she does <strong>not</strong> (necessarily) maximise expected monetary value.<br />
-</p>
-<p>Instead, she maximises ‘Expected Utility’ (EU): the sum of her (VNM) valuations ‘<span class="math inline">\(u(\cdot)\)</span>’ under each outcome weighted by the <em>probability</em> of each outcome</p>
+<p>When making choices involving uncertainty, she does <strong>not</strong> (necessarily) maximise expected monetary value.</p>
+<div class="fragment">
+<p>Instead, she maximises ‘Expected Utility’ (EU): <small> the sum of her (VNM) valuations ‘<span class="math inline">\(u(\cdot)\)</span>’ under each outcome weighted by the <em>probability</em> of each outcome </small></p>
 <p><br />
 </p>
+<p>EU(<span class="math inline">\(y_1\)</span> w prob. <span class="math inline">\(p_1\)</span>, <span class="math inline">\(y_2\)</span> w prob <span class="math inline">\(p_2\)</span>) = ???</p>
+</div>
 <div class="fragment">
-<p>Risk-loving, -neutral, &amp; -averse individuals all max EU. By varying the <span class="math inline">\(u(\cdot)\)</span> function we vary the implied risk preference.</p>
+<p><br />
+<br />
+</p>
+<p><br />
+</p>
+<p>Risk-loving, -neutral, &amp; -averse individuals all max EU.</p>
+<p>By varying the <span class="math inline">\(u(\cdot)\)</span> function we vary the implied risk preference.</p>
 </div>
 </section><section class="slide level2">
 
@@ -830,6 +834,8 @@ Results for different ‘stake sizes’
 <li>Should be increasing <font color='gray'>(bc of nonsatiation)</font>, thus <span class="math inline">\(u^\prime (y)&gt;0\)</span></li>
 </ul>
 <div class="fragment">
+<p><br />
+</p>
 <ul>
 <li>But may increase at a <em>decreasing</em> rate <span class="math inline">\(\rightarrow\)</span> <span class="math inline">\(u^{\prime \prime}(y)&lt;0\)</span></li>
 </ul>
@@ -840,7 +846,8 @@ Results for different ‘stake sizes’
 </p>
 </div>
 <div class="fragment">
-<p>Or, if you are risk-neutral, it must be linear <span class="math inline">\(\rightarrow\)</span> <span class="math inline">\(u(y) = a + by\)</span>, thus <span class="math inline">\(u^{\prime \prime}(y)=0\)</span></p>
+<p>Or, if you are risk-neutral, it must be linear <span class="math inline">\(\rightarrow\)</span></p>
+<p><span class="math inline">\(u(y) = a + by\)</span>, thus <span class="math inline">\(u^{\prime \prime}(y)=0\)</span></p>
 <aside class="notes">
 <p>Adv: Note that when we were choosing between two goods under certainty, her <em>level</em> of total utility didn’t really matter, only the relative utilities.</p>
 Now that we are considering gambles, the overall utility level matters, because we need to consider the tradeoff between ‘rich and poor’ states.
@@ -857,13 +864,13 @@ Now that we are considering gambles, the overall utility level matters, because 
 <div class="fragment">
 <p><br />
 </p>
-<p>Considering each <em>outcome</em> from any of these,</p>
+<p>Considering each <em>outcome</em> from any of these ‘lotteries’,</p>
 <p>we know <span class="math inline">\(u(1,000,000) &gt; u(100,000) &gt; u(75,000)&gt; u(50,000) &gt; u(0)\)</span></p>
 </div>
 <div class="fragment">
 <p>… but now the <em>size of the difference</em> in <span class="math inline">\(u(y)\)</span> matters for your decision!</p>
 <aside class="notes">
-<p>Y1 vs Y3: Is 1 million ‘more than ten times as good (utility-wise) as 75k?’</p>
+<p>Y1 vs Y3: Is 1 million vs 0 ‘more than ten times the gain (utility-wise) as 75k vs 0?’</p>
 Y2 v Y3: Relative to 75k, does an additional 25k yield a utility gain worth the (equiprobable) loss of 25k?
 </aside>
 </div>
@@ -871,9 +878,17 @@ Y2 v Y3: Relative to 75k, does an additional 25k yield a utility gain worth the 
 
 <p><em>Example</em>: Suppose there is open-enrollment in Oxford, Bristol, Plymouth.</p>
 <div class="fragment">
+<p><br />
+</p>
 <ul>
-<li><p>I only need to know the <em>ranking</em> of utilities of each to know your choices.</p></li>
-<li><p>If you choose Oxford over Bristol, even though Oxford costs more, I can infer that for you <span class="math inline">\(U(Oxford)&gt;U(Bristol)\)</span></p></li>
+<li>I only need to know your <em>ranking</em> of utilities of each to predict your choices.</li>
+</ul>
+<p><br />
+</p>
+</div>
+<div class="fragment">
+<ul>
+<li>If you choose Oxford over Bristol, even though Oxford costs more, I can infer that for you <span class="math inline">\(U(Oxford)&gt;U(Bristol)\)</span></li>
 </ul>
 </div>
 </section><section class="slide level2">
@@ -886,15 +901,22 @@ Y2 v Y3: Relative to 75k, does an additional 25k yield a utility gain worth the 
 <p>B. Rank Bristol highest and you have a 100% chance of getting into Bristol.</p>
 </blockquote>
 <div class="fragment">
+<p><br />
+</p>
 <p>Now even if you rank Oxford <span class="math inline">\(\succ\)</span> Bristol <span class="math inline">\(\succ\)</span> Plymouth, I don’t know if you will choose A or B; I would need to know the <em>strength</em> of your preferences.</p>
 </div>
 <div class="fragment">
-<p>If I observe you choose A I learn <em>more</em> about your utility. Your preference for Oxford over Bristol is “stronger” than your preference for Bristol over Plymouth</p>
+<p><br />
+</p>
+<p><small> If I observe you choose A I learn <em>more</em> about your utility. Your preference for Oxford over Bristol is “stronger” than your preference for Bristol over Plymouth </small></p>
 </div>
 </section><section class="slide level2">
 
-<p>EU framework predicts she chooses the option that maximizes the sum of probabilities <span class="math inline">\(\times\)</span> utilities of each outcome. For a two-outcome case:</p>
+<p>EU framework predicts she chooses the option that maximizes the sum of probabilities <span class="math inline">\(\times\)</span> utilities of each outcome.</p>
+<p><br />
+</p>
 <div class="fragment">
+<p>For a two-outcome case:</p>
 <p><span class="math display">\[EU = (1-p) u(Y_\ell) + p u(Y_h)\]</span></p>
 <p>… where <span class="math inline">\(p\)</span> is the probability of the higher income <span class="math inline">\(Y_h\)</span> and <span class="math inline">\(Y_\ell\)</span> is the lower income</p>
 <aside class="notes">
@@ -925,18 +947,16 @@ It yields nice consistent behavior and can be reconciled with general equilibriu
 </div>
 <div class="fragment">
 <p>Risk neutral <span class="math inline">\(\rightarrow\)</span> chooses G1 <font color='blue'>(why?)</font></p>
-<aside class="notes">
-Ans1: It has the highest expected monetary value, 100,000
-</aside>
-<p><br />
-</p>
+</div>
+<div class="fragment">
 <p>Risk averse <span class="math inline">\(\rightarrow G3 \succ G2\)</span> <font color='blue'>(why?)</font></p>
-<aside class="notes">
-Ans2: Same expected monetary value, /pounds75,000, but less risk (no risk)
-</aside>
 </div>
 <div class="fragment">
 <p>Risk averse <span class="math inline">\(\rightarrow\)</span> <em>maybe</em> <span class="math inline">\(G2 \succ G1\)</span>, but depends <em>how</em> risk averse she is</p>
+<aside class="notes">
+<p>Ans1: It has the highest expected monetary value, 100,000</p>
+Ans2: Same expected monetary value, /pounds75,000, but less risk (no risk)
+</aside>
 </div>
 </section></section>
 <section><section id="risk-aversion-graphical-depiction" class="title-slide slide level1"><h1>Risk aversion: graphical depiction</h1></section><section id="risk-aversion-graphical-depiction-1" class="slide level2">
@@ -948,10 +968,10 @@ Ans2: Same expected monetary value, /pounds75,000, but less risk (no risk)
 </p>
 </div>
 <div class="fragment">
-<p>Expected <strong>monetary</strong> value of gamble <span class="math inline">\(X\)</span> is <span class="math inline">\(E(X)=(1-px_{l} + px_{h})\)</span>. However…</p>
+<p>Expected <strong>monetary</strong> value of gamble <span class="math inline">\(X\)</span> is <span class="math inline">\(E(X)=(1-p)x_{l} + px_{h}\)</span>. However…</p>
 </div>
 <div class="fragment">
-<p><span class="math display">\[EU(X)=(1-p)u(x_{l} + pu(x_{h})&lt; u(E(X))= u((1-p)x_{l}+px_{h})\]</span></p>
+<p><span class="math display">\[EU(X)=(1-p)u(x_{l}) + pu(x_{h})&lt; u\big(E(X)\big)= u\big((1-p)x_{l}+px_{h}\big)\]</span></p>
 </div>
 <div class="fragment">
 <p><small></p>
@@ -966,44 +986,42 @@ This is a mathematical/graphical property; a special case of Jensen’s inequali
 </div>
 </section><section class="slide level2">
 
-<p><img src="picsfigs/riskaversion1.png" width="1280" height="85%" style="display: block; margin: auto;" /></p>
+<p><img src="picsfigs/riskaversion1.png" width="1280" height="100%" style="display: block; margin: auto;" /></p>
 <aside class="notes">
 You start with $35k
 </aside>
 </section><section class="slide level2">
 
-<p><img src="picsfigs/riskaversion2.png" width="1280" height="85%" style="display: block; margin: auto;" /></p>
+<p><img src="picsfigs/riskaversion2.png" width="1280" height="95%" style="display: block; margin: auto;" /></p>
 </section><section class="slide level2">
 
-<p><img src="picsfigs/riskaversion3.png" width="1280" height="85%" style="display: block; margin: auto;" /></p>
+<p><img src="picsfigs/riskaversion3.png" width="1280" height="100%" style="display: block; margin: auto;" /></p>
 </section><section class="slide level2">
 
-<p><img src="picsfigs/riskaversion4.png" width="1280" height="85%" style="display: block; margin: auto;" /></p>
+<p><img src="picsfigs/riskaversion4.png" width="1280" height="100%" style="display: block; margin: auto;" /></p>
 </section><section class="slide level2">
 
-<p><img src="picsfigs/riskaversion5a.png" width="1280" height="85%" style="display: block; margin: auto;" /></p>
-</section><section id="ways-of-reducing-risk-insurance" class="slide level2">
+<p><img src="picsfigs/riskaversion5a.png" width="1280" height="100%" style="display: block; margin: auto;" /></p>
+</section></section>
+<section><section id="ways-of-reducing-risk-insurance" class="title-slide slide level1"><h1>Ways of reducing risk: Insurance</h1></section><section id="ways-of-reducing-risk-insurance-1" class="slide level2">
 <h2>Ways of reducing risk: Insurance</h2>
-<p><img src="picsfigs/insurancereducesrisk.png" width="75%" style="display: block; margin: auto;" /></p>
-<dl>
-<dt>Fair insurance</dt>
-<dd>… premium equals expected (money) value of loss
-</dd>
-</dl>
+<p><img src="picsfigs/insurancereducesrisk.png" width="601" height="40%" style="display: block; margin: auto;" /></p>
+<p>Fair insurance: premium equals expected (money) value of loss</p>
 <aside class="notes">
 <p>Adv: We might think that such insurance is provided at its true marginal cost;</p>
 however there are various reasons why the cost to firms may be above this, including transactions cost, moral hazard, and adverse selection
 </aside>
 </section><section class="slide level2">
 
-<p>Read and know (basic understanding):</p>
+<p>Read and know (very basic understanding):</p>
 <ul>
 <li><p>Uninsurable (difficult to insure) risks</p></li>
 <li><p>Adverse selection</p></li>
 <li><p>Moral hazard</p></li>
 <li><p>The rationale for insurance ‘deductibles’</p></li>
 </ul>
-</section><section id="ways-of-reducing-risk-diversification" class="slide level2">
+</section></section>
+<section><section id="ways-of-reducing-risk-diversification" class="title-slide slide level1"><h1>Ways of reducing risk: Diversification</h1></section><section id="ways-of-reducing-risk-diversification-1" class="slide level2">
 <h2>Ways of reducing risk: Diversification</h2>
 <ul>
 <li><p>Diversification: Buying multiple assets</p>
@@ -1018,26 +1036,35 @@ however there are various reasons why the cost to firms may be above this, inclu
 </section><section class="slide level2">
 
 <h3 id="illustration-binomial-distribution">Illustration: Binomial distribution</h3>
-<p>Suppose I’ve 1000, and can bet on fair coin flips <span class="math inline">\(\rightarrow\)</span> My returns have a ‘binomial distribution’.</p>
+<p>Suppose I’ve 1000, and can bet on fair coin flips <span class="math inline">\(\rightarrow\)</span> <small> My returns have a ‘binomial distribution’. </small></p>
 <div class="fragment">
-<p>A. Bet all 1000 on single flip <span class="math inline">\(\rightarrow\)</span> 50% chance I lose (or double) entire investment.</p>
+<p>A. Bet all 1000 on single flip <span class="math inline">\(\rightarrow\)</span> <small> 50% chance I lose (or double) entire investment. </small></p>
 </div>
 <div class="fragment">
-<p>B. Bet 500 on 2 flips <span class="math inline">\(\rightarrow\)</span> 25% chance I’ll lose (or double) investment. <font color='blue'>Better?</font></p>
+<p>B. Bet 500 on 2 flips <small> <span class="math inline">\(\rightarrow\)</span> 25% chance I’ll lose (or double) investment. </small> <font color='blue'>Better?</font></p>
 </div>
 <div class="fragment">
-<p><span class="math inline">\(EV(A)=EV(B)=1000\)</span> but B is “less risky” <span class="math inline">\(\rightarrow\)</span> <span class="math inline">\(B \succ A\)</span> if you’re risk averse</p>
+<p><br />
+</p>
+<p><span class="math inline">\(EV(A)=EV(B)=1000\)</span> but B has “less variance” <span class="math inline">\(\rightarrow\)</span></p>
+<p><span class="math inline">\(B \succ A\)</span> if you’re risk averse</p>
+<p><br />
+</p>
+</div>
+<div class="fragment">
+<p>C. 100 each in 10 flips <span class="math inline">\(\rightarrow\)</span> <small> 38% chance that I’ll lose 20% or more of my investment. </small></p>
+<p>D. 1 each on 1000 flips <span class="math inline">\(\rightarrow\)</span> <small> 6% chance I lose 5% of my investment or more; 1/10th of 1% chance I’ll lose 10%+. </small></p>
+</div>
+<div class="fragment">
+<p><em>Result</em>: More ‘diversification’ <span class="math inline">\(\rightarrow\)</span> less risk, for same EV.</p>
 <aside class="notes">
 Less risky: B and A overlap with 0.5 probability; remaining 50% of time A’s outcomes are more extreme
 </aside>
 </div>
-<div class="fragment">
-<p>C. 100 each in 10 flips, there’s a 38% chance that I’ll lose 20% or more of my investment.</p>
-<p>D. 1 each on on 1000 flips <span class="math inline">\(\rightarrow\)</span> 6% chance I lose 5% of my investment or more; 1/10th of 1% chance I’ll lose 10%+.</p>
-</div>
-<div class="fragment">
-<p><em>Result</em>: More ‘diversification’ <span class="math inline">\(\rightarrow\)</span> less risk, for same EV.</p>
-</div>
+</section><section class="slide level2">
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/PM7z_03o_kk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
 </section><section class="slide level2">
 
 <p><em>Result</em>: The more I can do this ‘diversification’, the less risk I face.</p>
@@ -1081,16 +1108,14 @@ Draw histograms on the board
 <p><em>Why better</em> (for a risk-averse person)?</p>
 
 <p><em>Less risk, same EV</em>: 50% of the time (when oil &amp; transit move opposite) you’ve less gain/loss than if undiversified.</p>
+<p><br />
+</p>
 <div class="fragment">
 <p>I.e., comparing distribution of returns vs. undiversified investment:</p>
 <ul>
 <li><p>25% of time, gain 0 vs. 15K (leaving you 35k vs. 50k)</p></li>
 <li><p>25% of time, gain 0 vs. lose 15K (leaves 35k vs. 20k)</p></li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>Remaining 50% of time (both rise/both fall) … same as remaining 50% of the time under undiversified investment</li>
+<li><p>Remaining 50% of time (both rise/both fall) … same as remaining 50% of the time under undiversified investment</p></li>
 </ul>
 <p><br />
 </p>
@@ -1107,11 +1132,10 @@ Draw histograms on the board
 <p>each of which average the utility over 2 outcomes (A does poorly, A does well).</p>
 The average of the average of these exceeds the average of the utility of 2 extreme outcomes.
 </aside>
-</section><section id="flexibility-and-options-contracts" class="slide level2">
+</section></section>
+<section><section id="flexibility-and-options-contracts" class="title-slide slide level1"><h1>Flexibility and options contracts</h1></section><section id="flexibility-and-options-contracts-1" class="slide level2">
 <h2>Flexibility and options contracts</h2>
-<p><font color='green'>2018: Read at home; less coverage in assesment than in prior years</font></p>
-<p><font color='gray'>Keep your options open’ (simple idea)</font></p>
-<p><font color='gray'>‘Real option’: an option outside the financial world</font></p>
+<p><small> <font color='green'>2019: Largely self-study. </font> <font color='gray'>Keep your options open’ (simple idea).</font> <font color='gray'>‘Real option’: an option outside the financial world.</font> </small></p>
 <div class="fragment">
 <dl>
 <dt>Option contract</dt>
@@ -1120,11 +1144,13 @@ The average of the average of these exceeds the average of the utility of 2 extr
 </dl>
 </div>
 <div class="fragment">
-<p>Attributes of options:</p>
+<p><br />
+</p>
+<p><strong>Attributes of options</strong></p>
 <ol type="1">
-<li>Specification of transaction}: what is bought/sold, how many units maximum, at what price, etc</li>
-<li>Period} the option may be exercised (from when until when)</li>
-<li>Price} of the option</li>
+<li><p><em>Specification of transaction</em>: what is bought/sold, how many units max, at what price, …</p></li>
+<li><p><em>Period</em> the option may be exercised (from when until when)</p></li>
+<li><p><em>Price</em> of the option</p></li>
 </ol>
 </div>
 </section><section class="slide level2">
@@ -1139,7 +1165,9 @@ The average of the average of these exceeds the average of the utility of 2 extr
 </ol>
 </div>
 <div class="fragment">
-<p>Ex: Option G (‘call option’): Right to buy Google share at 500 (500 ‘strike price’) between Jan. 2018 and Dec. 2020</p>
+<blockquote>
+<p>Ex: Option G (‘call option’): Right to buy Alphabits share at 500 (500 ‘strike price’) between Jan. 2019 and Dec. 2021</p>
+</blockquote>
 </div>
 <div class="fragment">
 <ul>
@@ -1148,18 +1176,20 @@ The average of the average of these exceeds the average of the utility of 2 extr
 </ul>
 </div>
 <div class="fragment">
-<p>Bc variability can only help option-holder: price <span class="math inline">\(\uparrow\)</span> <span class="math inline">\(\rightarrow\)</span> profit, but if price falls below 500, she doesn’t need to exercise option</p>
+<p><br />
+</p>
+<p><small> Bc variability can only help option-holder: price <span class="math inline">\(\uparrow\)</span> <span class="math inline">\(\rightarrow\)</span> profit, but if price falls below 500, she doesn’t need to exercise option </small></p>
 </div>
 </section><section class="slide level2">
 
-<p>Price of options determined by 1. EV of underlying transaction, 2. Variability of this value, and…</p>
+<p>Price of options determined by <small> 1. EV of underlying transaction, 2. Variability of this value, </small> and…</p>
 <ol start="3" type="1">
 <li>Duration: the longer the better. <font color='blue'>(Why?)</font></li>
 </ol>
 <div class="fragment">
-<ul>
-<li>Greater chance the price will rise above strike price (500)</li>
-</ul>
+<p><br />
+</p>
+<p>Because there is a greater chance the price will rise above (put option: fall below) the strike price (500)</p>
 <aside class="notes">
 Results for ‘right to sell = call options’ are similar, just replace the words ‘buy’ with ‘sell’ and reverse the directions (‘rise’ with ’fall), etc.
 </aside>
@@ -1167,26 +1197,19 @@ Results for ‘right to sell = call options’ are similar, just replace the wor
 </section><section class="slide level2">
 
 <p>Options can be used for <em>hedging risk</em> … that was their original purpose. <font color='blue'>How</font>?</p>
+<p><br />
+</p>
+<p><a href="http://www.marketplace.org/2008/08/11/business/hedging-your-bets-hard-times">Marketplace: ’hedging your bets in hard times</a></p>
+<p><br />
+</p>
+<p><a href="https://davidreinstein.wordpress.com/2016/06/19/should-you-hedge-your-bets-on-a-brexit/">Reinstein: ‘Should you hedge your bets on a Brexit?’</a></p>
 <aside class="notes">
-<p>Q1 How might an airline buy options to counter its risk from rising petrol prices?</p>
-<p>Q2. How could an airline pilot buy options to counter her risk of being fired in case her airline goes out of business?</p>
-But always priced at least as high as intrinsic value, because you <em>can</em> cash it in now.
-</aside>
-<aside class="notes">
-<p>Ans: 1. The airline could buy call options (rights to buy at a price) for oil and gas company shares, or for oil and gas commodity units.</p>
-<ol start="2" type="1">
-<li>The pilot could buy put options (rights to sell at a price) in the airline she works for; if the airline shares become worthless these put options will be very valuable.</li>
-</ol>
-<p>Classic economist’s argument: you should ‘bet against yourself’ to minimise risk; but this might give you bad incentives to perform.</p>
-See column about this <a href="http://www.marketplace.org/2008/08/11/business/hedging-your-bets-hard-times" title="Hedging your bets in hard times">HERE</a>
-</aside>
-<aside class="notes">
-This sort of thing could be asked as an exam question, perhaps multiple choice
+<small> Q1 How might an airline buy options to counter its risk from rising petrol prices? Q2. How could an airline pilot buy options to counter her risk of being fired in case her airline goes out of business? But always priced at least as high as intrinsic value, because you <em>can</em> cash it in now. Ans: 1. The airline could buy call options (rights to buy at a price) for oil and gas company shares, or for oil and gas commodity units. 2. The pilot could buy put options (rights to sell at a price) in the airline she works for; if the airline shares become worthless these put options will be very valuable. Classic economist’s argument: you should ‘bet against yourself’ to minimise risk; but this might give you bad incentives to perform. </small>
 </aside>
 </section><section class="slide level2">
 
 <h3 id="black-scholes-and-merton-model-of-options-value">Black-Scholes (and Merton) model of options value</h3>
-<p><img src="picsfigs/optionsvalue_blackscholes.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="picsfigs/optionsvalue_blackscholes.png" width="55%" style="display: block; margin: auto;" /></p>
 <aside class="notes">
 <p>Above is for option that can be executed from now indefinitely into the future.</p>
 <p>Not of infinite value because future payoffs are discounted at risk-free rate.</p>
@@ -1195,19 +1218,20 @@ This sort of thing could be asked as an exam question, perhaps multiple choice
 <p>At very low asset price it is unlikely the price will rise above $100 in forseeable future, so not valuable.</p>
 <p>At prices higher and higher above strike price of $100 the red and blue come closer together, because it’s unlikely</p>
 <p>the asset price goes below $100 any time soon, so option is almost the same as an actual share.</p>
-But always priced at least as high as intrinsic value, because you <em>can</em> cash it in now.
+<p>But always priced at least as high as intrinsic value, because you <em>can</em> cash it in now.</p>
+Simplifications: Unlike, e.g., value of continuously compounded interest, we still don’t <em>know</em> true value of options
 </aside>
-<ul>
-<li>{Insightful; once developed, traders <em>used it</em> to price options}</li>
-<li>{Problem: It’s just a model, makes fairly strong assumptions (normal distribution of returns, etc.)}</li>
-</ul>
-<aside class="notes">
-Unlike, e.g., value of continuously compounded interest, we still don’t <em>know</em> true value of options
-</aside>
+<div class="fragment">
+<p><br />
+</p>
+<p><small> - Insightful; once developed, traders <em>used it</em> to price options </small></p>
+<p><small> - Problem: It’s just a model, makes fairly strong assumptions (normal distribution of returns, etc.) </small></p>
+</div>
 </section><section id="value-and-cost-of-information" class="slide level2">
 <h2>Value and cost of information</h2>
 <p><em>This section is fairly straightforward: please read it on your own (and post any questions you may have)</em></p>
-</section><section id="pricing-of-risk-and-assets-in-financial-markets" class="slide level2">
+</section></section>
+<section><section id="pricing-of-risk-and-assets-in-financial-markets" class="title-slide slide level1"><h1>Pricing of risk (and assets) in financial markets</h1></section><section id="pricing-of-risk-and-assets-in-financial-markets-1" class="slide level2">
 <h2>Pricing of risk (and assets) in financial markets</h2>
 <p><img src="picsfigs/marketriskline.png" width="55%" style="display: block; margin: auto;" /></p>
 <dl>
@@ -1224,7 +1248,9 @@ With efficient markets, this line depicts the ‘best mix’: proportional to th
 </section><section class="slide level2">
 
 <p><img src="picsfigs/investorchoices.png" width="80%" style="display: block; margin: auto;" /></p>
-<p><small> Different preferences for risk versus expected} (average) return. ‘Risk’ is the overall variance around the average. Assumes ‘optimal diversification’: no one chooses points <em>below</em> market line. </small> —-</p>
+<p><small> Different preferences for risk versus expected (average) return. ‘Risk’ is the overall variance around the average. Assumes ‘optimal diversification’: no one chooses points <em>below</em> market line. </small></p>
+</section><section class="slide level2">
+
 <p><strong>Extension: ‘Capital asset pricing model’ (CAPM)</strong></p>
 <p>CAPM: Leading ‘baseline’ model in finance, assumes investors optimally diversify</p>
 <div class="fragment">

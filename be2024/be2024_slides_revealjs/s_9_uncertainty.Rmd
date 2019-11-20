@@ -106,7 +106,7 @@ format_with_col = function(x, color){
 
 *Key goals of these lectures (and accompanying self-study)...*
 
-- Revise the concepts of probability and expected value
+- (Revise) the concepts of probability and expected value
 
 . . .
 
@@ -145,30 +145,37 @@ format_with_col = function(x, color){
 
 \
 
-Previous discussion: Consumers make choices with *known* consequences
+Previous: Consumers & firms make choices w/ *known* consequences
 
 
-<aside class="notes">But in the real world many important economic decisions involve risk.</aside>
+*`r format_with_col("REALITY: Many important economic decisions involve 'risk.'", "green")`*
 
 \
 
-<br> <br> \bigskip
 
 . . .
 
 
-Here: Choices with *unknown* consequences (but known *probabilities* of each outcome)
+*Here*: Choices w/ *unknown* consequences (but known outcome *probabilities*)
 
-<aside class="notes">Adv: In the real world, people may also make choices in contexts with unknown probabilities; this is called 'ambiguity' or 'Knightian uncertainty'.
 
-This is out of the scope of this module.</aside>
 
-- How to consider this in the utility-max framework?
-    - Standard framework: maximize 'expected utility'
+How to consider this in the utility-max framework?
 
-`r format_with_col("Warning:","red")` 'expected utility' vs 'expected monetary value'!
+\
 
-<aside class="notes">Making choices to maximise expected utility is *not* the same as making choices to maximise expected monetary outcomes. This is one of the main points here. A good share of students get this mixed up!</aside>
+. . .
+
+$\rightarrow$ Standard framework: maximize 'expected utility'
+
+\
+
+<center> <small> `r format_with_col("Warning:","red")` 'expected utility' vs 'expected monetary value'! </center> </small>
+
+
+<aside class="notes">
+1. Adv: In the real world, people may also make choices in contexts with unknown probabilities; this is called 'ambiguity' or 'Knightian uncertainty'.
+2.  Making choices to maximise expected utility is *not* the same as making choices to maximise expected monetary outcomes. This is one of the main points here. A good share of students get this mixed up!</aside>
 
 ## Probability concepts: a quick review
 \
@@ -181,9 +188,9 @@ Probability
 
 - Always between 0 and 1
 
-<aside class="notes">Adv: There are some debates, e.g., between 'Bayesians' and 'Frequentists' over the meaning of probability.</aside>
-<aside class="notes">Q: If $p$ is the probability an event occurs, what is the probability this event does *not* occur?</aside>
-<aside class="notes">Ans: $1-p$</aside>
+<aside class="notes">Adv: There are some debates, e.g., between 'Bayesians' and 'Frequentists' over the meaning of probability.
+Q: If $p$ is the probability an event occurs, what is the probability this event does *not* occur?
+Ans: $1-p$</aside>
 
 ----
 
@@ -192,7 +199,9 @@ Probability
 Expected value (EV)
 :     The 'average outcome' of an uncertain variable (general definition)
 
+[Visualisation](https://seeing-theory.brown.edu/basic-probability/index.html)
 
+\
 
 . . .
 
@@ -217,17 +226,19 @@ The sum of the value at each possible outcome, weighted by the probability that 
 
 \
 
-*Not* the same as expected utility (coming up)! People need not choose the investment with the highest expected value.
+<small> *Not* the same as expected utility (coming up)! People need not choose the investment with the highest expected value. </small>
 
 
 ----
 
-Consider: would you prefer...
+`r format_with_col("Consider (turningpoint vote): would you prefer...","blue")`
 
 a. \pounds100,000 with certainty or
 b. A 1 in 10 chance of \pounds1,000,001 (and otherwise you get nothing)?
 
 . . .
+
+\
 
 - Which has a higher expected monetary value?
 
@@ -284,14 +295,14 @@ Because they are *risk-averse*.
 . . .
 
 
-- To accept a (fair) gamble, must expect a 'risk-premium'
+To accept a (fair) gamble,  a risk-averse person must expect a 'risk-premium'
 
 
 
 ----
 
 
-```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='40%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/weirdalscissors.jpg")
 ```
 
@@ -309,10 +320,7 @@ Because they are *risk-averse*.
 **Example: two possible outcomes**
 
 
-<aside class="notes">Q: example of such an investment with only two outcomes?</aside>
-<aside class="notes">Ans: perhaps making a loan to someone to start a business; they will either pay back the loan with a high interest, or go bankrupt and pay none of it back.</aside>
-
-A simple investment, which either pays a low (or 0 or - amount) or a high amount
+A simple investment, paying either a low (or 0 or - amount) or a high amount
 
 
 . . .
@@ -321,7 +329,7 @@ A simple investment, which either pays a low (or 0 or - amount) or a high amount
 
 It pays X where either $X =x_1$ or $X=x_2$, where $x_1< x_2$
 
-- Specifically, pays \pounds1020 w/ prob. 1\% & pays \pounds10 w/ prob. 99\%
+> Specifically, pays \pounds1020 w/ prob. 1\% & pays \pounds10 w/ prob. 99\%
 
 
 
@@ -330,10 +338,9 @@ It pays X where either $X =x_1$ or $X=x_2$, where $x_1< x_2$
 . . .
 
 
-Probability it pays $x_2$ is $p$; thus probability it pays $x_1$ is?
+`r format_with_col("Probability it pays $x_2$ is $p$; thus probability it pays $x_1$ is?","blue")`
 
 . . .
-
 
 $Pr(X=x_1)= 1-p$
 
@@ -343,12 +350,13 @@ $Pr(X=x_1)= 1-p$
 
 The *expected (monetary) value* sums the values weighted by the probabilities, i.e., $EV(X)=(1-p) x_1 + p  x_2$
 
-\medskip
+\
 
 Thus $EV(X) = 0.01 \times 1020 + 0.99 \times 10 = 10.20 + 9.90 = 20.10$
 
 
-<aside class="notes">Consider: would you prefer this investment over one that paid \pounds20 with certainty? Would everyone prefer it? If not, why not?</aside>
+<aside class="notes">1. Q: example of such an investment with only two outcomes? Ans: perhaps making a loan to someone to start a business; they will either pay back the loan with a high interest, or go bankrupt and pay none of it back.
+12. Consider: would you prefer this investment over one that paid \pounds20 with certainty? Would everyone prefer it? If not, why not?</aside>
 
 ----
 
@@ -390,17 +398,17 @@ Actuarially fair
 
 ----
 
-- Which of the following are fair gambles?
+`r format_with_col("Which of the following are fair gambles?","blue")`
 
-    - A. 'Double or nothing' bets with a fair coin
+- A. 'Double or nothing' bets with a fair coin
 
-    - B. Roulette in a casino
+- B. Roulette in a casino
 
-    - C. A gamble where you win \pounds10 with probability 1/2 and lose \pounds5 with probability 1/2
+- C. A gamble where you win \pounds10 with probability 1/2 and lose \pounds5 with probability 1/2
 
-    - D. A gamble where you win \pounds10 with probability 1/4, lose \pounds5 with probability 1/2, and neither lose nor win with the remaining probability?
+- D. A gamble where you win \pounds10 with probability 1/4, lose \pounds5 with probability 1/2, and neither lose nor win with the remaining probability?
 
-    - E. A stock option (without any transactions fees)
+- E. A stock option (without any transactions fees)
 
 <aside class="notes">Ans: A and D; E is uncertain, but it is probably a fair gamble</aside>
 
@@ -408,9 +416,17 @@ Actuarially fair
 # Example: experimental measures of risk attitudes (time permitting)
 ## Example: experimental measures of risk attitudes (time permitting)
 
-- Economists try to measure people's level of risk aversion in various ways
-    - Revealed preference from real-world choices
-    - Experimental measures, with real or hypothetical payoffs
+Economists try to measure people's level of risk aversion in various ways, including:
+
+. . .
+
+
+
+- Revealed preference from real-world choices
+
+\
+
+- Experimental and survey measures, with real or hypothetical payoffs
 
 
 ----
@@ -479,7 +495,7 @@ An *Expected Utility* (EU) framework allows for risk-aversion!
 . . .
 
 
-Assume each individual has a single function $u(Y)$ expressing their preferences over outcomes} Y `r format_with_col("called 'Von-Neumann Morgenstern' utility (VNM)","gray")`
+Assume each individual has a single function $u(Y)$ expressing their preferences over outcomes $Y$ `r format_with_col("called 'Von-Neumann Morgenstern' utility (VNM)","gray")`
 
 \
 
@@ -489,19 +505,28 @@ Similar to 'regular' utility, but here 'curvature matters'
 ----
 
 When making choices involving uncertainty, she does **not** (necessarily) maximise expected monetary value.
-\
-
-Instead, she maximises 'Expected Utility' (EU): the sum of her (VNM) valuations '$u(\cdot)$' under each outcome weighted by the *probability* of each outcome
-
-
-\
-
 
 . . .
 
+Instead, she maximises 'Expected Utility' (EU):  <small> the sum of her (VNM) valuations '$u(\cdot)$' under each outcome weighted by the *probability* of each outcome </small>
 
 
-Risk-loving, -neutral, & -averse individuals all max EU.  By varying the $u(\cdot)$ function we vary the implied risk preference.
+
+\
+
+EU($y_1$ w prob. $p_1$, $y_2$ w prob $p_2$) = ???
+
+. . .
+
+\
+\
+
+\
+
+
+Risk-loving, -neutral, & -averse individuals all max EU.
+
+By varying the $u(\cdot)$ function we vary the implied risk preference.
 
 ----
 
@@ -522,6 +547,8 @@ Imagine $u(y)$ arises from the *consumption chosen with* income $y$ `r format_wi
 
 . . .
 
+\
+
 
 - But may increase at a *decreasing* rate $\rightarrow$  $u^{\prime \prime}(y)<0$
 
@@ -534,7 +561,9 @@ This second assumption, called *diminishing marginal utility*, implies risk aver
 . . .
 
 
-Or, if you are risk-neutral, it must be linear $\rightarrow$  $u(y) = a + by$, thus $u^{\prime \prime}(y)=0$
+Or, if you are risk-neutral, it must be linear $\rightarrow$
+
+$u(y) = a + by$, thus $u^{\prime \prime}(y)=0$
 
 <aside class="notes">Adv: Note that when we were choosing between two goods under certainty, her *level* of total utility didn't really matter, only the relative utilities.
 
@@ -555,7 +584,7 @@ Back to the choice between two gambles and one 'certainty':
 \
 
 
-Considering each *outcome* from any of these,
+Considering each *outcome* from any of these 'lotteries',
 
 we know $u(1,000,000) > u(100,000) > u(75,000)> u(50,000) > u(0)$
 
@@ -565,7 +594,7 @@ we know $u(1,000,000) > u(100,000) > u(75,000)> u(50,000) > u(0)$
 
  ... but now the *size of the difference* in $u(y)$ matters for your decision!
 
-<aside class="notes">Y1 vs Y3: Is 1 million 'more than ten times as good (utility-wise) as 75k?'
+<aside class="notes">Y1 vs Y3: Is 1 million  vs 0 'more than ten times the gain (utility-wise) as 75k vs 0?'
 
 Y2 v Y3: Relative to 75k, does an additional 25k yield a utility gain worth the (equiprobable) loss of 25k?</aside>
 
@@ -577,8 +606,13 @@ Y2 v Y3: Relative to 75k, does an additional 25k yield a utility gain worth the 
 
 . . .
 
+\
 
-- I only need to know the *ranking* of utilities of each to know your choices.
+- I only need to know your *ranking* of utilities of each to predict your choices.
+
+\
+
+. . .
 
 - If you choose Oxford over Bristol, even though Oxford costs more, I can infer that for you $U(Oxford)>U(Bristol)$
 
@@ -594,22 +628,32 @@ Now suppose the policy is (you are only admitted to a single uni)
 . . .
 
 
+
+\
+
 Now even if you rank Oxford $\succ$ Bristol $\succ$ Plymouth, I don't know if you will choose A or B; I would need to know the *strength* of your preferences.
 
 
 . . .
 
 
+\
 
-If I observe you choose A I learn *more* about your utility. Your preference for Oxford over Bristol is  "stronger" than your preference for Bristol over Plymouth
+<small> If I observe you choose A I learn *more* about your utility.
+Your preference for Oxford over Bristol is  "stronger" than your preference for Bristol over Plymouth </small>
 
 
 ----
 
-EU framework predicts she chooses the option that maximizes the sum of probabilities $\times$ utilities of each outcome. For a two-outcome case:
+EU framework predicts she chooses the option that maximizes the sum of probabilities $\times$ utilities of each outcome.
 
+\
 
 . . .
+
+For a two-outcome case:
+
+
 
 $$EU = (1-p) u(Y_\ell) + p u(Y_h)$$
 
@@ -661,18 +705,21 @@ $EU(G_3)= u(75,000)$
 
 Risk neutral $\rightarrow$ chooses G1 `r format_with_col("(why?)","blue")`
 
-<aside class="notes">Ans1: It has the highest expected monetary value, \pounds100,000</aside>
 
-\
+. . .
 
 Risk averse $\rightarrow  G3 \succ G2$ `r format_with_col("(why?)","blue")`
 
-<aside class="notes">Ans2: Same expected monetary value, /pounds75,000, but less risk (no risk)</aside>
 
 . . .
 
 
 Risk averse $\rightarrow$  *maybe* $G2 \succ G1$, but depends *how* risk averse she is
+
+
+<aside class="notes"> Ans1: It has the highest expected monetary value, \pounds100,000
+
+Ans2: Same expected monetary value, /pounds75,000, but less risk (no risk)</aside>
 
 # Risk aversion: graphical depiction
 ## Risk aversion: graphical depiction
@@ -690,12 +737,12 @@ She values gamble X less than 'gaining its EV for certain':
 
 . . .
 
-Expected **monetary** value of gamble $X$ is $E(X)=(1-px_{l} + px_{h})$. However...
+Expected **monetary** value of gamble $X$ is $E(X)=(1-p)x_{l} + px_{h}$. However...
 
 . . .
 
 
-$$EU(X)=(1-p)u(x_{l} + pu(x_{h})< u(E(X))= u((1-p)x_{l}+px_{h})$$
+$$EU(X)=(1-p)u(x_{l}) + pu(x_{h})< u\big(E(X)\big)= u\big((1-p)x_{l}+px_{h}\big)$$
 
 
 . . .
@@ -721,7 +768,7 @@ and the 'share of the rise' simply projects up from the 'share of the run'</asid
 
 ----
 
-```{r  fig.cap = '', out.height='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.height='100%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/riskaversion1.png")
 ```
 
@@ -730,43 +777,43 @@ and the 'share of the rise' simply projects up from the 'share of the run'</asid
 ----
 
 
-```{r  fig.cap = '', out.height='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.height='95%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/riskaversion2.png")
 ```
 
 ----
 
 
-```{r  fig.cap = '', out.height='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.height='100%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/riskaversion3.png")
 ```
 
 ----
 
 
-```{r  fig.cap = '', out.height='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.height='100%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/riskaversion4.png")
 ```
 
 ----
 
 
-```{r  fig.cap = '', out.height='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.height='100%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/riskaversion5a.png")
 ```
 
-----
 
 
+
+# Ways of reducing risk: Insurance
 
 ## Ways of reducing risk: Insurance
 
-```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.height='40%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/insurancereducesrisk.png")
 ```
 
-Fair insurance
-:     ... premium equals expected (money) value of loss
+Fair insurance: premium equals expected (money) value of loss
 
 <aside class="notes">Adv: We might think that such insurance is provided at its true marginal cost;
 
@@ -774,7 +821,7 @@ Fair insurance
 
 ----
 
-Read and know (basic understanding):
+Read and know (very basic understanding):
 
 
 
@@ -787,6 +834,7 @@ Read and know (basic understanding):
 - The rationale for insurance 'deductibles'
 
 
+# Ways of reducing risk: Diversification
 ## Ways of reducing risk: Diversification
 
 - Diversification: Buying multiple assets
@@ -809,46 +857,54 @@ Putting your eggs in multiple baskets: tends to reduce risk, for a given expecte
 
 
 
-Suppose I've \pounds 1000, and can bet on fair coin flips $\rightarrow$ My returns have a 'binomial distribution'.
+Suppose I've \pounds 1000, and can bet on fair coin flips $\rightarrow$ <small> My returns have a 'binomial distribution'. </small>
 
 
 
 . . .
 
 
-A. Bet all \pounds 1000 on single flip $\rightarrow$ 50\% chance I lose (or double) entire investment.
+A. Bet all \pounds 1000 on single flip $\rightarrow$ <small> 50\% chance I lose (or double) entire investment. </small>
 
 
 . . .
 
 
-B. Bet \pounds 500 on 2 flips $\rightarrow$ 25% chance I'll lose (or double) investment.  `r format_with_col("Better?","blue")`
+B. Bet \pounds 500 on 2 flips <small> $\rightarrow$ 25% chance I'll lose (or double) investment.  </small> `r format_with_col("Better?","blue")`
+
+
+. . .
+
+\
+
+$EV(A)=EV(B)=1000$
+but B has "less variance" $\rightarrow$
+
+$B \succ A$ if you're risk averse
+
+
+\
 
 
 . . .
 
 
-$EV(A)=EV(B)=1000$ but B is "less risky" $\rightarrow$ $B \succ A$ if you're risk averse
+C. \pounds100 each in 10 flips $\rightarrow$ <small>  38\% chance that I'll lose 20\% or more of my investment. </small>
 
-
-<aside class="notes">Less risky: B and A overlap with 0.5 probability; remaining 50\% of time A's outcomes are more extreme</aside>
-
-
-
-. . .
-
-
-C. \pounds100 each in 10 flips,  there's a 38\% chance that I'll lose 20\% or more of my investment.
-
-D. \pounds1 each on on 1000 flips $\rightarrow$ 6\% chance I lose 5% of my investment or more; 1/10th of 1\% chance I'll lose 10\%+.
+D. \pounds1 each on 1000 flips $\rightarrow$ <small> 6\% chance I lose 5% of my investment or more; 1/10th of 1\% chance I'll lose 10\%+. </small>
 
 
 . . .
 
 *Result*: More 'diversification' $\rightarrow$  less risk, for same EV.
 
+<aside class="notes">Less risky: B and A overlap with 0.5 probability; remaining 50\% of time A's outcomes are more extreme</aside>
+
 ----
 
+<iframe width="800" height="500" src="https://www.youtube.com/embed/PM7z_03o_kk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+----
 
 *Result*: The more I can do this 'diversification', the less risk I face.
 
@@ -919,18 +975,18 @@ Same expected value, but it's 'better'
 *Less risk, same EV*: 50\% of the time (when oil & transit move opposite) you've less gain/loss than if undiversified.
 
 
+\
+
 . . .
 
 
 I.e., comparing distribution of returns vs. undiversified investment:
 
+
+
 - 25\% of time, gain 0 vs. \pounds15K (leaving you \pounds35k vs. \pounds50k)
 
 - 25\% of time, gain 0 vs. lose \pounds15K (leaves \pounds35k vs. \pounds20k)
-
-
-. . .
-
 
 - Remaining 50\% of time (both rise/both fall) ... same as remaining 50\% of the time under undiversified investment
 
@@ -960,17 +1016,11 @@ The average of the average of these exceeds the average of the utility of 2 extr
 
 
 
+# Flexibility and options contracts
 ## Flexibility and options contracts
 
-
-
-`r format_with_col("2018: Read at home; less coverage in assesment than in prior years","green")`
-
-
-
-`r format_with_col("Keep your options open' (simple idea)","gray")`
-
-`r format_with_col("'Real option': an option outside the financial world","gray")`
+<small> `r format_with_col("2019: Largely self-study. ","green")`  `r format_with_col("Keep your options open' (simple idea).","gray")`  `r format_with_col("'Real option': an option outside the financial world.","gray")`
+</small>
 
 . . .
 
@@ -982,11 +1032,15 @@ Option contract
 
 . . .
 
-Attributes of options:
+\
 
-1. Specification of transaction}: what is bought/sold, how many units maximum, at what price, etc
-2. Period} the option may be exercised (from when until when)
-3. Price} of the option
+**Attributes of options**
+
+1. *Specification of transaction*: what is bought/sold, how many units max, at what price, ...
+
+2. *Period* the option may be exercised (from when until when)
+
+3. *Price* of the option
 
 ----
 
@@ -1003,7 +1057,7 @@ Attributes of options:
 . . .
 
 
-Ex: Option G ('call option'): Right to buy Google share at \pounds500 (\pounds500 'strike price') between Jan. 2018 and Dec. 2020
+> Ex: Option G ('call option'): Right to buy Alphabits share at \pounds500 (\pounds500 'strike price') between Jan. 2019 and Dec. 2021
 
 
 . . .
@@ -1018,12 +1072,14 @@ Ex: Option G ('call option'): Right to buy Google share at \pounds500 (\pounds50
 . . .
 
 
+\
 
-Bc variability can only help option-holder: price $\uparrow$ $\rightarrow$ profit, but if price falls below \pounds500, she doesn't need to exercise option
+<small> Bc variability can only help option-holder:
+price $\uparrow$ $\rightarrow$ profit, but if price falls below \pounds500, she doesn't need to exercise option </small>
 
 ----
 
-Price of options determined by 1. EV of underlying transaction, 2. Variability of this value, and...
+Price of options determined by <small> 1. EV of underlying transaction, 2. Variability of this value, </small> and...
 
 
 
@@ -1033,7 +1089,9 @@ Price of options determined by 1. EV of underlying transaction, 2. Variability o
 . . .
 
 
-- Greater chance the price will rise above strike price (\pounds500)
+\
+
+Because there is a greater chance the price will rise above (put option: fall below) the strike price (\pounds500)
 
 
 <aside class="notes">Results for 'right to sell = call options' are similar, just replace the words 'buy' with 'sell' and reverse the directions ('rise' with 'fall), etc.</aside>
@@ -1042,22 +1100,25 @@ Price of options determined by 1. EV of underlying transaction, 2. Variability o
 
 Options can be used for *hedging risk* ... that was their original purpose. `r format_with_col("How","blue")`?
 
-<aside class="notes">Q1 How might an airline buy options to counter its risk from rising petrol prices?
 
+\
+
+[Marketplace: 'hedging your bets in hard times](http://www.marketplace.org/2008/08/11/business/hedging-your-bets-hard-times)
+
+
+\
+
+[Reinstein: 'Should you hedge your bets on a Brexit?'](https://davidreinstein.wordpress.com/2016/06/19/should-you-hedge-your-bets-on-a-brexit/)
+
+
+<aside class="notes"><small> Q1 How might an airline buy options to counter its risk from rising petrol prices?
 Q2. How could an airline pilot buy options to counter her risk of being fired in case her airline goes out of business?
-
-But always priced at least as high as intrinsic value, because you *can* cash it in now.</aside>
-
-<aside class="notes">Ans: 1. The airline could buy call options (rights to buy at a price) for oil and gas company shares, or for oil and gas commodity units.
-
+But always priced at least as high as intrinsic value, because you *can* cash it in now.
+Ans: 1. The airline could buy call options (rights to buy at a price) for oil and gas company shares, or for oil and gas commodity units.
 2. The pilot could buy put options (rights to sell at a price) in the airline she works for; if the airline shares become worthless these put options will be very valuable.
-
 Classic economist's argument: you should 'bet against yourself' to minimise risk; but this might give you bad incentives to perform.
-
-See column about this [HERE](http://www.marketplace.org/2008/08/11/business/hedging-your-bets-hard-times "Hedging your bets in hard times")
+</small>
 </aside>
-
-<aside class="notes">This sort of thing could be asked as an exam question, perhaps multiple choice</aside>
 
 
 ----
@@ -1065,7 +1126,7 @@ See column about this [HERE](http://www.marketplace.org/2008/08/11/business/hedg
 ### Black-Scholes (and Merton) model of options value
 
 
-```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='55%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/optionsvalue_blackscholes.png")
 ```
 
@@ -1083,13 +1144,24 @@ At prices higher and higher above strike price of \$100 the red and blue come cl
 
 the asset price goes below \$100 any time soon, so option is almost the same as an actual share.
 
-But always priced at least as high as intrinsic value, because you *can* cash it in now.</aside>
+But always priced at least as high as intrinsic value, because you *can* cash it in now.
+
+Simplifications: Unlike, e.g., value of continuously compounded interest, we still don't *know* true value of options</aside>
 
 
-- \footnotesize{Insightful; once developed, traders *used it* to price options}
-- \footnotesize{Problem: It's just a model, makes fairly strong assumptions (normal distribution of returns, etc.)}
+. . .
 
-<aside class="notes">Unlike, e.g., value of continuously compounded interest, we still don't *know* true value of options</aside>
+
+\
+
+<small>
+- Insightful; once developed, traders *used it* to price options
+</small>
+
+<small>
+- Problem: It's just a model, makes fairly strong assumptions (normal distribution of returns, etc.)
+</small>
+
 
 
 ----
@@ -1130,7 +1202,7 @@ proportional to the total 'market basket', plus borrowing/lending at the 'risk-f
 ```
 
 <small>
-Different preferences for risk versus expected} (average) return. 'Risk' is the overall variance around the average. Assumes 'optimal diversification': no one chooses points *below* market line.
+Different preferences for risk versus expected (average) return. 'Risk' is the overall variance around the average. Assumes 'optimal diversification': no one chooses points *below* market line.
 </small>
 
 ----
