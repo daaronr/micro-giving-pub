@@ -619,6 +619,8 @@ To be a prisoner's dilemma, payoffs must satisfy $T > R > P > S$
 \multicolumn{1}{l|}{}         & \multicolumn{1}{l|}{Defect}    & \multicolumn{1}{c|}{3,0}       & \multicolumn{1}{c|}{1,1}    \\ \cline{2-4}
 \end{tabular}
 \end{center}
+-->
+
 
 ----
 
@@ -627,6 +629,7 @@ To be a prisoner's dilemma, payoffs must satisfy $T > R > P > S$
  knitr::include_graphics("picsfigs/PD_japan.png")
 ```
 
+<aside class="notes">Read PD in Extensive form; we'll come back to this later</aside>
 
 
 ----
@@ -908,7 +911,7 @@ But there may be *no* dominated strategies, or ISD may leave many possibilities
 
 ----
 
-###TIL
+### TIL
 
 1. How economists consider strategic interaction
 
@@ -954,7 +957,12 @@ But there may be *no* dominated strategies, or ISD may leave many possibilities
 
 [comment]: <> (101BB)
 
-2. Pure and Mixed strategies, equilibrium
+\
+
+
+2. Pure and Mixed strategies <small>(Mixed strategies: get the basic concept, no need to *compute* these)</small>
+
+
 
 [comment]: <> (101EE)
 
@@ -980,13 +988,11 @@ But there may be *no* dominated strategies, or ISD may leave many possibilities
 <br> \bigskip
 
 
-[comment]: <> (101BB)
 
 6. Continuous Action games
 
 7. Experimental evidence: What is a laboratory experiment in Economics?
 
-[comment]: <> (101EE)
 
 ----
 
@@ -1240,7 +1246,8 @@ Mixed strategy
 
 - If she believes he will always go boxing, she should go boxing.
 
-- What other beliefs may she have? </aside>
+- What other beliefs may she have?
+</aside>
 
 
 Want to derive the best response functions, find intersections.
@@ -1249,7 +1256,7 @@ Want to derive the best response functions, find intersections.
 . . .
 
 
-Let h: probability husband chooses Ballet, w: probability wife chooses Ballet
+Let $h$: probability husband chooses Ballet, $w$: probability wife chooses Ballet
 
 
 
@@ -1336,12 +1343,7 @@ Shortcut:  only someone who is indifferent will randomise...
 
 Wife goes Ballet if thinks husband goes Ballet $>$ 1/3 of time
 
-<small>If she thinks he goes below 1/3 of the time she goes Boxing </small>
-
-<small> If she thinks he goes *exactly* 1/3 of the time she is indifferent</small>
-
-Next, plot similar BRF for husband, on other axis...
-
+<small> If she thinks he goes below 1/3 of the time she goes Boxing</small>
 
 
 
@@ -1449,9 +1451,7 @@ $$U_{husb} =  \frac{2}{9} \times 1 +  \frac{2}{9} \times 2 +  \frac{4}{9} \times
 
 and same for the Wife's payoffs.
 
-----
 
-[comment]: <> (101EE)
 
 ----
 
@@ -1501,8 +1501,6 @@ Oh, how do you solve a problem like multiple-equilibria? \
 
 
 
-
-
 ----
 
 ### In-class experiment: BOS & coordination; need 2 volunteers
@@ -1536,13 +1534,13 @@ LC: Get 2 more volunteers, same drill (row/column are the same, so it doesn't ma
 Rest of students choose 1-5 on clickers, no communication.
 
  Consider: assuming random matching, what would be the average and range of payoffs?
- 
+
  </aside>
 
 ----
 
+**A previous year's results (2016, with slightly different payoffs)**
 
-**A previous year's results (2016)**
 
 
 |         | Share chose | .. squared | Pay if match | E(Pay) |
@@ -1639,23 +1637,31 @@ What if you are meeting for a reunion in London, and no one has internet or phon
  knitr::include_graphics("picsfigs/staghunt.png")
 ```
 
-<aside class="notes">Stag,Stag and Hare,Hare are NE; the former is 'payoff-dominant' but the latter is 'risk-dominant' </aside>
+<aside class="notes"> Stag,Stag and Hare,Hare are NE;
+the former is 'payoff-dominant' but the latter is 'risk-dominant'
+</aside>
 
 
 
 # Sequential Games (and extensive form)
 ## Sequential Games (and extensive form)
 
-<aside class="notes">Note: don't worry about the 'normal form' of sequential games; we will only use the extensive form for these
+<aside class="notes">Note: don't worry about the 'normal form' of sequential games;
+we will only use the extensive form for these
 LC: describe this notation again: decision nodes, etc
 </aside>
 
-Consider Battle of Sexes, but now Wife chooses first, Husband observes this and then chooses. What do you think will happen? Vote:
+<small>Consider Battle of Sexes, but now Wife chooses first, Husband observes this and then chooses.
+What do you think will happen? Vote:</small>
 
- A. Wife: Ballet, Husband: Box
- B. Wife: Ballet, Husband: Ballet
-C. Wife: Box, Husband: Ballet
-D. Wife: Box, Husband: Box
+<small>A. Wife: Ballet, Husband: Box</small>
+
+
+<small>B. Wife: Ballet, Husband: Ballet</small>
+
+<small>C. Wife: Box, Husband: Ballet</small>
+
+<small>D. Wife: Box, Husband: Box</small>
 
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
@@ -1686,7 +1692,8 @@ Remember, it's a one-shot game ... unrealistic within a marriage of course
 <aside class="notes">
 Here we see there is a 'first-mover advantage'.
 
-We see a very similar strategic advantage in other contexts, including 'which firm enters a market first'</aside>
+We see a very similar strategic advantage in other contexts, including 'which firm enters a market first'
+</aside>
 
 ----
 
@@ -1819,12 +1826,6 @@ Where actions are stated in the order of the decision nodes for each player
 
 
 
-
-[comment]: <> (101BB)
-
-
-[comment]: <> (101EE)
-
 A 'stage game' is a simple (matrix) game that may be played repeatedly
 
 
@@ -1887,7 +1888,7 @@ What is the subgame perfect equilibrium?
 \
 
 
-*Backwards induction:*
+**Backwards induction:**
 
 - In period 10 (period T) both confess as it's the dominant strategy
 
@@ -1983,6 +1984,22 @@ I also know that given his strategy, playing 'silent' in  this period will not h
 
 
 
+
+
+
+
+<aside class="notes">Know the principle as well as  the computation if possible.
+
+ **geometric discounting** is super-relevant for finance and cost-benefit analysis
+
+and it also will come up in behavioral economics.</aside>
+
+
+
+
+
+
+
 ----
 
 
@@ -2003,7 +2020,7 @@ Formula for a geometric series (where $0<g<1$): $g + g^2 +  g^3 + g^4 ... = g/(1
 
 
 
-<aside class="notes">Maths: The standard derivation of this, which is pretty neat, is in the text.
+<aside class="notes">Maths: The standard derivation of this, which is pretty neat, is in the NS text.
 
 This formula is an important one in economics (and beyond),
 
@@ -2096,7 +2113,6 @@ $\rightarrow$ Payoff functions, continuous 'best response functions'; rather tha
 
 <aside class="notes">Here the iterated dominance or 'rationalizability' is harder to compute; we won't cover this</aside>
 
-[comment]: <> (101BB)
 
 ----
 
@@ -2115,6 +2131,8 @@ Continuous games with differentiable payoffs, finding NE:
 
 <!-- \pause -->
 
+[comment]: <> (101BB)
+
 With two players:
 
 $$s_i^\ast=B_i(B_-i(s_i^\ast))$$
@@ -2123,7 +2141,7 @@ $$s_i^\ast=B_i(B_-i(s_i^\ast))$$
 
 ### Tragedy of the Commons
 
-Shepherds A & B graze $s_A$ \& $s_B$ sheep, respectively, in same meadow
+Shepherds A & B graze $s_A$ & $s_B$ sheep, respectively, in same meadow
 
 
 . . .
@@ -2241,7 +2259,7 @@ $\rightarrow s_A* = s_B* = 40$
 
 
 
-Each grazes until his *private* marginal benefit equals his cost (0):
+<small>Each grazes until his *private* marginal benefit equals his cost (0):</small>
 
 - $120-2s_A-s_B = 0$
 
@@ -2249,7 +2267,7 @@ Each grazes until his *private* marginal benefit equals his cost (0):
 . . .
 
 
-Does  not consider the harm he imposes on the other guy
+<small>Does not consider the harm he imposes on the other guy</small>
 
 
 . . .
@@ -2260,7 +2278,7 @@ Above, $s_A* = s_B* = 40$. Each get payoff $40 \times (120 - 40 - 40) = 40 \time
 
 . . .
 
-<small>To max *total* payoffs, set $S=s_A+s_B$ to max </small>
+<small>To max *total* payoffs, set</small> $S=s_A+s_B$ <small> to max </small>
 $$S\times(120-S)$$
 
 
@@ -2310,6 +2328,7 @@ $$120 - 2S = 0 \rightarrow S^*=60$$
 
 
 # Experimental evidence: What is a laboratory experiment in Economics?
+## Experimental evidence: What is a laboratory experiment in Economics?
 
 E.g., FEELE lab at Exeter
 
@@ -2358,14 +2377,12 @@ E.g., FEELE lab at Exeter
 Cooper et al (1996)
 
 <small>Cooperation even in anonymous '1-shot' games (different opponents each time)</small>
-/smallskip
 
 
 . . .
 
 
 <small>Cooperation declines somewhat over time, but not to zero</small>
-/smallskip
 
 . . .
 
@@ -2492,6 +2509,6 @@ from Nicholson and Snyder Chapter 5 (12th ed)
  knitr::include_graphics("picsfigs/entrygame.png")
 ```
 - Use backwards-induction to find the subgame-perfect Nash equilibrium strategies, outcomes, and payoffs, of the above game.
---
+-->
 
 
