@@ -172,8 +172,8 @@ $\rightarrow$ Standard framework: maximize 'expected utility'
 <center> <small> `r format_with_col("Warning:","red")` 'expected utility' vs 'expected monetary value'! </center> </small>
 
 
-<aside class="notes"> 
-1. Adv: In the real world, people may also make choices in contexts with unknown probabilities; this is called 'ambiguity' or 'Knightian uncertainty'. 
+<aside class="notes">
+1. Adv: In the real world, people may also make choices in contexts with unknown probabilities; this is called 'ambiguity' or 'Knightian uncertainty'.
 2.  Making choices to maximise expected utility is *not* the same as making choices to maximise expected monetary outcomes. This is one of the main points here. A good share of students get this mixed up!</aside>
 
 ## Probability concepts: a quick review
@@ -187,9 +187,9 @@ Probability
 
 - Always between 0 and 1
 
-<aside class="notes">Adv: There are some debates, e.g., between 'Bayesians' and 'Frequentists' over the meaning of probability.</aside>
-<aside class="notes">Q: If $p$ is the probability an event occurs, what is the probability this event does *not* occur?</aside>
-<aside class="notes">Ans: $1-p$</aside>
+<aside class="notes">Adv: There are some debates, e.g., between 'Bayesians' and 'Frequentists' over the meaning of probability.
+Q: If $p$ is the probability an event occurs, what is the probability this event does *not* occur?
+Ans: $1-p$</aside>
 
 ----
 
@@ -198,7 +198,7 @@ Probability
 Expected value (EV)
 :     The 'average outcome' of an uncertain variable (general definition)
 
-[Visualisation](https://seeing-theory.brown.edu/basic-probability/index.html) 
+[Visualisation](https://seeing-theory.brown.edu/basic-probability/index.html)
 
 \
 
@@ -415,7 +415,7 @@ Actuarially fair
 # Example: experimental measures of risk attitudes (time permitting)
 ## Example: experimental measures of risk attitudes (time permitting)
 
-Economists try to measure people's level of risk aversion in various ways, including: 
+Economists try to measure people's level of risk aversion in various ways, including:
 
 . . .
 
@@ -424,7 +424,7 @@ Economists try to measure people's level of risk aversion in various ways, inclu
 - Revealed preference from real-world choices
 
 \
-    
+
 - Experimental and survey measures, with real or hypothetical payoffs
 
 
@@ -513,7 +513,7 @@ Instead, she maximises 'Expected Utility' (EU):  <small> the sum of her (VNM) va
 
 \
 
-EU($y_1$ w prob. $p_1$, $y_2$ w prob $p_2$) = ??? 
+EU($y_1$ w prob. $p_1$, $y_2$ w prob $p_2$) = ???
 
 . . .
 
@@ -523,7 +523,7 @@ EU($y_1$ w prob. $p_1$, $y_2$ w prob $p_2$) = ???
 \
 
 
-Risk-loving, -neutral, & -averse individuals all max EU. 
+Risk-loving, -neutral, & -averse individuals all max EU.
 
 By varying the $u(\cdot)$ function we vary the implied risk preference.
 
@@ -560,7 +560,7 @@ This second assumption, called *diminishing marginal utility*, implies risk aver
 . . .
 
 
-Or, if you are risk-neutral, it must be linear $\rightarrow$ 
+Or, if you are risk-neutral, it must be linear $\rightarrow$
 
 $u(y) = a + by$, thus $u^{\prime \prime}(y)=0$
 
@@ -593,7 +593,7 @@ we know $u(1,000,000) > u(100,000) > u(75,000)> u(50,000) > u(0)$
 
  ... but now the *size of the difference* in $u(y)$ matters for your decision!
 
-<aside class="notes">Y1 vs Y3: Is 1 million 'more than ten times as good (utility-wise) as 75k?'
+<aside class="notes">Y1 vs Y3: Is 1 million  vs 0 'more than ten times the gain (utility-wise) as 75k vs 0?'
 
 Y2 v Y3: Relative to 75k, does an additional 25k yield a utility gain worth the (equiprobable) loss of 25k?</aside>
 
@@ -638,13 +638,13 @@ Now even if you rank Oxford $\succ$ Bristol $\succ$ Plymouth, I don't know if yo
 
 \
 
-<small> If I observe you choose A I learn *more* about your utility. 
+<small> If I observe you choose A I learn *more* about your utility.
 Your preference for Oxford over Bristol is  "stronger" than your preference for Bristol over Plymouth </small>
 
 
 ----
 
-EU framework predicts she chooses the option that maximizes the sum of probabilities $\times$ utilities of each outcome. 
+EU framework predicts she chooses the option that maximizes the sum of probabilities $\times$ utilities of each outcome.
 
 \
 
@@ -705,7 +705,7 @@ $EU(G_3)= u(75,000)$
 Risk neutral $\rightarrow$ chooses G1 `r format_with_col("(why?)","blue")`
 
 
-. . . 
+. . .
 
 Risk averse $\rightarrow  G3 \succ G2$ `r format_with_col("(why?)","blue")`
 
@@ -736,12 +736,12 @@ She values gamble X less than 'gaining its EV for certain':
 
 . . .
 
-Expected **monetary** value of gamble $X$ is $E(X)=(1-px_{l} + px_{h})$. However...
+Expected **monetary** value of gamble $X$ is $E(X)=(1-p)x_{l} + px_{h}$. However...
 
 . . .
 
 
-$$EU(X)=(1-p)u(x_{l} + pu(x_{h})< u\big(E(X)\big)= u\big((1-p)x_{l}+px_{h}\big)$$
+$$EU(X)=(1-p)u(x_{l}) + pu(x_{h})< u\big(E(X)\big)= u\big((1-p)x_{l}+px_{h}\big)$$
 
 
 . . .
@@ -767,7 +767,7 @@ and the 'share of the rise' simply projects up from the 'share of the run'</asid
 
 ----
 
-```{r  fig.cap = '', out.height='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.height='100%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/riskaversion1.png")
 ```
 
@@ -776,36 +776,36 @@ and the 'share of the rise' simply projects up from the 'share of the run'</asid
 ----
 
 
-```{r  fig.cap = '', out.height='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.height='95%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/riskaversion2.png")
 ```
 
 ----
 
 
-```{r  fig.cap = '', out.height='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.height='100%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/riskaversion3.png")
 ```
 
 ----
 
 
-```{r  fig.cap = '', out.height='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.height='100%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/riskaversion4.png")
 ```
 
 ----
 
 
-```{r  fig.cap = '', out.height='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.height='100%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/riskaversion5a.png")
 ```
 
-----
 
 
 
 # Ways of reducing risk: Insurance
+
 ## Ways of reducing risk: Insurance
 
 ```{r  fig.cap = '', out.height='40%', fig.asp=.4, fig.align='center',  echo = FALSE}
@@ -856,7 +856,7 @@ Putting your eggs in multiple baskets: tends to reduce risk, for a given expecte
 
 
 
-Suppose I've \pounds 1000, and can bet on fair coin flips $\rightarrow$ <small> My returns have a 'binomial distribution'. </small> 
+Suppose I've \pounds 1000, and can bet on fair coin flips $\rightarrow$ <small> My returns have a 'binomial distribution'. </small>
 
 
 
@@ -877,7 +877,7 @@ B. Bet \pounds 500 on 2 flips <small> $\rightarrow$ 25% chance I'll lose (or dou
 \
 
 $EV(A)=EV(B)=1000$
-but B has "less variance" $\rightarrow$ 
+but B has "less variance" $\rightarrow$
 
 $B \succ A$ if you're risk averse
 
@@ -1145,7 +1145,7 @@ the asset price goes below \$100 any time soon, so option is almost the same as 
 
 But always priced at least as high as intrinsic value, because you *can* cash it in now.
 
-Simplifications: Unlike, e.g., value of continuously compounded interest, we still don't *know* true value of options</aside></aside>
+Simplifications: Unlike, e.g., value of continuously compounded interest, we still don't *know* true value of options</aside>
 
 
 . . .
@@ -1153,11 +1153,11 @@ Simplifications: Unlike, e.g., value of continuously compounded interest, we sti
 
 \
 
-<small> 
+<small>
 - Insightful; once developed, traders *used it* to price options
-</small> 
+</small>
 
-<small> 
+<small>
 - Problem: It's just a model, makes fairly strong assumptions (normal distribution of returns, etc.)
 </small>
 

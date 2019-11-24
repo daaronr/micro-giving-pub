@@ -1,0 +1,414 @@
+## Sixth problem set: Game theory (no answers) {-#ps6noans}
+
+
+Suggested answers are [BELOW](#ps6ans).
+
+\
+
+This problem set covers material in NS chapter 5, plus a few additional concepts covered in lecture.
+
+\
+
+### 5.1 from NS - Nash equilibrium/equilibria in a simultaneous matrix game; dominant strategies {-}
+
+```{r  fig.cap = '', out.height='45%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/prob5-1.png")
+```
+
+
+\
+
+[comment]: <> (ANSBB)
+
+**Ans:**
+
+<!--
+(*This question NOT to be covered in tutorial as it is straightforward.*)
+-->
+
+a. A plays Up; B plays Left.
+
+b. A’s dominant strategy is Up. B does not have a dominant strategy.
+
+*Note: this problem should be easy for you to do. If you are struggling with problems like these, you need to keep practicing and come to office hours if necessary.*
+\
+
+*Note: There is a video solution on to this on the Cengage web site; however, in the past these videos have sometimes been hard to access
+\
+
+\
+
+
+### 5.5 from NS - writing down a game matrix, finding NE and dominant strategies {-}
+
+```{r  fig.cap = '', out.height='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/prob5-5.png")
+```
+
+\
+
+[Suggested answer](#ans55)
+
+\
+
+
+### NS 5.6 - Mixed strategy NE {-}
+
+
+
+\
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/prob5-6.png")
+```
+
+\
+
+[Suggested answer](#ans56)
+\
+
+### 5.7 - The indefinitely/infinitely repeated prisoners' dillemma {-#ans57}
+
+Do parts A and B; part C is optional enrichment
+
+\
+
+
+```{r  fig.cap = '', out.height='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/prob5-7.png")
+```
+
+<!--(*Parts a and b to be covered in tutorial*)-->
+
+
+[Suggested answer](#ans57)
+\
+
+\
+
+
+\
+
+### Grazing sheep: a game with a continuous action space {-}
+
+However, I want you to understand the concepts and principles,  how to interpret  a best response functions diagram,  and the nature of this collective action problem.   I believe that by going through all parts of this problem it will help you understand this.
+
+\
+
+
+This setup comes from NS problem 5.10
+
+Consider the Tragedy of the Commons game from the chapter with two shepherds, A and B, where $s_A$ and $s_B$ denote the number of sheep each grazes on the common pasture.
+
+Assume that the benefit per sheep (in terms of mutton and wool) for each shepherd equals $300 - s_A - s_B$
+
+0. - Compute the total benefit and marginal benefit (of grazing another sheep) to to shepherds A and B
+
+
+\
+
+\
+\
+
+1. State the formula that tells us how many sheep farmer A will graze (as a function of the number of sheep B grazes).
+State the formula that tells us how many sheep farmer B will graze (as a function of the number of sheep A grazes). \
+\
+
+\
+\
+
+#### 2. Check your answer to see that you have correctly derived these best response functions. Now use these to derive the (outcome that is consistent with) Nash equilibrium. {-#ansgs2}
+
+\
+
+
+\
+
+
+\
+
+#### 3. Now draw the farmers' 'best response functions' in a diagram. {-#ansgs3}
+
+\
+
+[Suggested answer](#ansgs3)
+
+\
+\
+
+4. Consider the BR diagram (you may want to check the answer to the previous question first).
+
+- In this context, are sheep 'strategic complements' or 'strategic substitutes'? Explain.
+
+- How can you identify the Nash equilibrium (outcome) on this diagram?
+
+\
+
+
+[Suggested answer](#ansgs4)
+\
+
+5. Now consider the *total surplus of these shepherds*:
+
+$$\pi_A+\pi_B =  s_A\times(300 - s_A - s_B)+s_B\times(300 - s_A - s_B)$$
+$$(s_A+s_B)\times(300 - s_A - s_B).$$
+
+
+Rewrite this in terms of the TOTAL number of sheep grazed $S$ defined as $s_A+s_B$ (try it before looking).
+
+\
+
+This yields
+
+$$\pi_A+pi_B = S\times(300 - S).$$
+
+\
+
+Derive the number of sheep grazed that maximises this *total profit*.
+
+\
+(Hint: taking the derivative we see that total profits increase in the number of sheep at rate  $300-2S$.)
+
+\
+
+\
+\
+
+If each farmer grazed half of this optimal number, what profit would they each gain, and how does this compare to their profits under Nash-equilibrium play?
+
+What concept does this illustrate?
+
+
+[Suggested answer](#ansgs5)
+
+\
+\
+
+### Applying iterated strict dominance  to find the set of rationalizable strategies {-#isdqn}
+
+```{r  fig.cap = '', out.width='65%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/isd4by3game.png")
+```
+
+- Apply 'Iterated strict dominance' to the above game, showing your steps
+- State the pure strategies that are rationalizable.
+
+
+[comment]: <> (ANSBB)
+
+
+
+**Ans:**
+
+i. B strictly dominates A \
+
+ii. X strictly dominates Y \
+
+iii. C strictly dominates D \
+
+This leaves X and Z for player 1 and B and C for player 2
+
+\
+
+Nothing else is strictly dominated for either player.
+Thus for player 1 X and Z are rationalizable.
+And for player 2 C and B are rationalizable.
+
+\
+
+[comment]: <> (ANSEE)
+
+
+
+\
+\
+
+### 'Teen choices' dominant strategies, pure-strategy Nash equilibria, and understanding the mixed strategy NE {-#ansteen}
+
+```{r  fig.cap = '', out.width='65%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/teenchoices.png")
+```
+
+Teens A and B are smitten with each other but neither knows of the other’s feelings. Suppose the teachers at their school organize a dance.  The “payoff” is based on whether their advances are rebuffed or accepted.  If they both Declare,  they get positive utility but if they are Rebuffed they face humiliation (significantly negative payoff).  Rebuffing an advance slightly elevates the teen’s standing with peers.
+
+1.  What is a teen’s dominant strategy, or is there no dominant strategy?
+
+
+\
+
+[comment]: <> (ANSBB)
+
+**Ans:**
+
+- There is no dominant strategy here
+- It should be easy to see this; each player's best response differs depending on the other player's action.
+
+[comment]: <> (ANSEE)
+
+
+\
+\
+
+2. Find the pure-strategy Nash equilibrium or equilibria
+
+
+[comment]: <> (ANSBB)
+
+**Ans:**
+- There are two: in one, both Declare, and in the other, both Rebuff/Ignore.
+- Use the 'underline best responses' method
+[comment]: <> (ANSEE)
+
+[comment]: <> (101BB)
+
+
+\
+
+3. Will there be a mixed strategy Nash equilibrium? Explain. If you like, solve for this MSNE (2019-20 Bee2038: not necessary for exam).
+
+
+[comment]: <> (ANSBB)
+**Ans:**
+In addition to the pure-strategy Nash equilibria, there is another one in mixed strategies.
+
+\
+
+We knew this must be the case because there was an odd number of equilibria in these matrix games.
+
+Furthermore, this game is essentially a coordination game (although one where there are asymmetric payoffs to coordinating on each equilibrium in failing to coordinate);  we know that such games also have a mixed strategy Nash equilibrium. ...   If one player is mixing with the 'right' proportions between the  two actions it can make the other player indifferent between the two actions.
+
+\
+
+
+In this MSNE, each teen chooses to declare with probability 0.526. How do we find this?"
+
+\
+
+- Let the probability teen A declares be $p$ and the probability teen B declares be $q$
+- Consider: what probability of teen B declaring makes teen A indifferent between declaring and ignoring?
+
+- Compute payoffs to teen A from declaring and from ignoring as a function of $q$
+
+        - set these equal, solve for $q$
+
+$$EU_{A,declare} = q \times 10 + (1-q) \times (-10) = 10q-10+10q = 20q-10$$
+$$EU_{A,ignore} = q \times 1 + (1-q) \times (0) = q$$
+
+Setting these equal and solving for $q$ that makes A indifferent:
+
+$$EU_{A,declare}=EU_{A,ignore}$$
+$$20q-10=q \rightarrow 19q=10 \rightarrow q=10/19 = 0.526$$
+
+(approximately)
+
+\
+
+As this game is symmetric the value of $p$ that makes teen B indifferent must also be $10/19$ (check it yourself if you doubt this).
+\
+
+Thus if A and B both plays 'declare' with probability 10/19, both are indifferent and thus best responding, and this is a Nash equilibrium.
+
+
+*(By the way, this is related to my research on 'Losing Face')*
+
+[comment]: <> (ANSEE)
+
+[comment]: <> (101EE)
+
+\
+
+
+###  Subgame perfect Nash equilibrium and backwards induction {-#ansspne}
+
+Consider the sequential game described by the game tree below.
+
+```{r  fig.cap = '', out.width='55%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/entrygame.png")
+```
+1.  Use backwards-induction to find the subgame-perfect Nash equilibrium strategies, outcomes, and payoffs, of the above game.
+
+
+
+[comment]: <> (ANSBB)
+
+**Ans:**
+
+
+*Note: this problem should be easy for you to do. If you are struggling with problems like these, you need to keep practicing and come to office hours if necessary.*
+
+- The one BWI outcome will be (In,Accommodate)
+
+- SPNE strategies are 'In' for player 1 and 'Accomodate if player 1 plays In' for player 2 (don't worry too much about this)
+- Payoffs are 2 for player 1 and 1 for player 2.
+- Note the 'first-mover advantage' in these entry games
+
+[comment]: <> (ANSEE)
+
+
+[comment]: <> (101BB)
+
+
+\
+\
+
+
+### Another Continous action space game{-}
+
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/bestresponses.jpg")
+```
+
+\
+\
+
+### Best responses, a multiple choice question example {-}
+
+Consider a game where governments of countries A and B simultaneously choose how many fishing boats to allow in the Arctic sea to allow from their country. Country A gets a net benefit (benefits minus costs) $s_A(120-s_A-s_B)$ and B gets a net benefit of $s_B(120-s_A-s_B)$, where $S_A$ and $S_B$ are the boats allowed by countries A and B, respectively.  This leads to the best response functions depicted above.
+
+Which statement below is True:
+
+A. The more boats country A allows, the more boats country B wants to allow \
+
+B. There is a unique Nash Equilibrium \
+
+C. The Pareto Optimal, efficient outcome is for each country to allow 40 boats \
+
+D. There are multiple Nash Equilibria in this game \
+
+E. There are no Nash Equilibria in this game \
+
+
+
+[comment]: <> (ANSBB)
+
+\
+
+**Ans.**
+
+B. There is a unique Nash Equilibrium
+
+... this is the unique point where the best response functions intersect, where each country is best responding to one another. B's best response when B allows 40 boats is to also allow 40 boats, and vice-versa.
+
+False answers explained:
+
+- A is false because these BR functions are both negative sloping; this is also intuitive as the benefit of allowing an additional boat declines the more boats the other country allows.
+
+- C is false because it is not efficient in the Pareto optimality sense.
+
+\
+To compute this, for Pareto optimality here we would need that total boats are at the point where the total net marginal benefit is zero. If it were positive, more boats could be allowed. If it were negative, fewer boats should be allowed. In either case the total surplus could be increased and split between the two countries. If an improvement can be made for both parties, the original situation is not Pareto optimal.
+
+But you do not need to compute this; each country's boats are exerting a negative externality on the others'. We know each country will not care about this, so they will choose *too many* boats from a total (both countries) net-benefit context. This is a 'tragedy of the commons' situation; it is similar to a prisoner's dillemma, but in the context of continuous strategy space (any positive number of boats, rather than Rat vs. Silent)
+
+- D is false because B is true. (Note that I will *never* ask you to consider mixed strategy equilibria in a continuous-strategy context, only perhaps in a matrix game like BoS)
+
+- E is false because B is true
+
+<br> \bigskip
+
+... For B, if you wanted to compute this, consider the *total benefit* $S\times(120-S)$, where $S=s_A+S_B$. Taking the 'first order condition' (set derivative equal to 0) yields $120-2S=0$ $\rightarrow S^{\ast}=60$  Note this is fewer boats than the Nash Equilibrium $s_A+s_B=40+40=80$, and it yields correspondingly higher total benefit: $60\times(120-60)=3600 > 2\times 40 \times (120-40-40)=3200$.
+
+
+[comment]: <> (ANSEE)
+
+-->
