@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Microeconomics (MSc)</title>
+  <meta name="description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
+  <meta name="generator" content="bookdown 0.14.1 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Microeconomics (MSc)" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Microeconomics (MSc)" />
+  
+  <meta name="twitter:description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
+  
+
+<meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
+
+
+<meta name="date" content="2019-11-29" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="dv-experiment.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<!-- font families -->
+
+<link href="https://fonts.googleapis.com/css?family=PT+Sans|Pacifico|Source+Sans+Pro" rel="stylesheet">
+
+<script src="js/hideOutput.js"></script>
+
+<!-- Mathjax -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/default.js"></script>
+
+ <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "TeX/AMSmath.js"],
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+        jax: ["input/TeX","output/CommonHTML"]
+      });
+      MathJax.Hub.processSectionDelay = 0;
+  </script>
+
+
+<!-- open review block -->
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { background-color: #f8f8f8; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Microeconomics (MSc)<a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="price-impact.html"><a href="price-impact.html"><i class="fa fa-check"></i><b>1</b> Supplement: Charitable giving – Donors response to ‘prices’ and (information about) impact and effectiveness</a><ul>
+<li class="chapter" data-level="1.1" data-path="price-impact.html"><a href="price-impact.html#price-match"><i class="fa fa-check"></i><b>1.1</b> Price of giving: Impact of matches</a></li>
+<li class="chapter" data-level="1.2" data-path="price-impact.html"><a href="price-impact.html#framing-of-match-match-versus-rebate"><i class="fa fa-check"></i><b>1.2</b> Framing of match: match versus rebate</a></li>
+<li class="chapter" data-level="1.3" data-path="price-impact.html"><a href="price-impact.html#info-recip"><i class="fa fa-check"></i><b>1.3</b> Info/comms: Does information (about recipients/charity…) help?</a></li>
+<li class="chapter" data-level="1.4" data-path="price-impact.html"><a href="price-impact.html#ratings"><i class="fa fa-check"></i><b>1.4</b> Charity ratings, overhead</a></li>
+<li class="chapter" data-level="1.5" data-path="price-impact.html"><a href="price-impact.html#overhead"><i class="fa fa-check"></i><b>1.5</b> Overhead and fundraising expense ratios</a></li>
+<li class="chapter" data-level="1.6" data-path="price-impact.html"><a href="price-impact.html#realimpact"><i class="fa fa-check"></i><b>1.6</b> Impact on (outputs and) <em>outcomes</em> per dollar; responses to scientific analytical information</a></li>
+<li class="chapter" data-level="1.7" data-path="price-impact.html"><a href="price-impact.html#prior-evidence"><i class="fa fa-check"></i><b>1.7</b> How do donations respond to (analytical) effectiveness and impact information? The evidence.</a></li>
+<li class="chapter" data-level="1.8" data-path="price-impact.html"><a href="price-impact.html#information-as-an-excuse-not-to-give-allows-motivated-reasoning"><i class="fa fa-check"></i><b>1.8</b> Information as an ‘excuse’ not to give; allows motivated reasoning</a></li>
+<li class="chapter" data-level="1.9" data-path="price-impact.html"><a href="price-impact.html#empirical-approach"><i class="fa fa-check"></i><b>1.9</b> Reinstein ‘Our empirical approach’</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="dv-experiment.html"><a href="dv-experiment.html"><i class="fa fa-check"></i><b>2</b> DonorsVoice mailing experiment</a><ul>
+<li class="chapter" data-level="2.1" data-path="dv-experiment.html"><a href="dv-experiment.html#plans-from-prereg-osflink"><i class="fa fa-check"></i><b>2.1</b> Plans from prereg <span>OSF—link</span>:</a></li>
+<li class="chapter" data-level="2.2" data-path="dv-experiment.html"><a href="dv-experiment.html#context"><i class="fa fa-check"></i><b>2.2</b> Context</a></li>
+<li class="chapter" data-level="2.3" data-path="dv-experiment.html"><a href="dv-experiment.html#setup"><i class="fa fa-check"></i><b>2.3</b> Setup</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Microeconomics (MSc)</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Microeconomics (MSc)</h1>
+<p class="author"><em>Dr. David Reinstein, University of Exeter, <a href="https://davidreinstein.wordpress.com">main web page</a>, <a href="https://innovationsinfundraising.org">innovationsinfundraising.org</a>, Twitter: givingtools</em></p>
+<p class="date"><em>2019-11-29</em></p>
+</div>
+<div id="price-impact" class="section level1">
+<h1><span class="header-section-number">1</span> Supplement: Charitable giving – Donors response to ‘prices’ and (information about) impact and effectiveness</h1>
+<p>With most goods we naturally assume that consumer choice is deeply influenced by the ‘price per unit’, which determines the consumer’s budget constraint. We have considered price-elasticity, income and substitution effects, the impact of price on revenue (expenditure), etc.</p>
+<p><br />
+</p>
+<p>With charitable donations this is not so clear cut: What is the ‘price’ and what is the ‘output consumed’? This depends on what benefits the potential donors gain from giving, and how they perceive this. As charity is largely a <em>creedence good</em>, donors may not get direct and accurate feedback between the activities (outputs) and achievements (outcomes) of the these.</p>
+<p><br />
+</p>
+<p>This chapter deals with several aspects of price and effectiveness:</p>
+<ul>
+<li><p>Prices expressed <a href="price-impact.html#price-match">matches</a> and rebates to donors/gifts</p></li>
+<li><p><a href="price-impact.html#ratings">Charity ratings</a> that do not directly measure per-dollar impact (but overall governance)</p></li>
+<li><p>Responses to <a href="price-impact.html#overhead">‘Overhead’</a> information, a common measure that does <em>not</em> do a good job of explaining a donor’s marginal impact on outcomes</p></li>
+</ul>
+<p><br />
+</p>
+<ul>
+<li><a href="price-impact.html#realimpact">Impact on (outputs and) <em>outcomes</em> per dollar; responses to scientific analytical information</a></li>
+</ul>
+<p>The latter is arguably the most important measure for donors who are striving to ‘do the most good’ with their donations.</p>
+<p><br />
+</p>
+<div id="price-match" class="section level2">
+<h2><span class="header-section-number">1.1</span> Price of giving: Impact of matches</h2>
+<p>To justify a tax break, a price elasticity of 1 or greater (more elastic) is considered the ‘gold standard’.</p>
+<p>Otherwise this policy leads the government to forgo more in taxes than it raises in terms of charitable contributions.</p>
+<p><br />
+</p>
+<p>There are many ‘observational data’ papers on how charitable giving responds to changes in the ‘tax price’</p>
+<ul>
+<li><p>The results vary greatly across studies, although there is a very weak consensus around unit elasticity</p></li>
+<li><p>But these are arguably ‘poorly identified’: income and tax rates tend to move together</p></li>
+<li><p>And the effect of private ‘matches’ may be different</p></li>
+<li><p>So we might turn to field experiments</p></li>
+</ul>
+<p><br />
+</p>
+<div id="karlan-and-list-does-price-matter-in-charitable-giving-2007-aer" class="section level3 unnumbered">
+<h3>Karlan and List: “Does Price Matter in charitable giving…” (2007, AER)</h3>
+<!--^[Summary in Andreoni] -->
+<blockquote>
+<p>Issue: Marginal illusion; Match comes with a Maximum. What if it is met? In practice….it is often met by definition</p>
+</blockquote>
+<p><br />
+</p>
+<p><img src="picsfigs/karlanmailing.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Returns from 50,000 mailings</p>
+<ul>
+<li>2% response rate</li>
+<li>300 controls (1.8% response)</li>
+<li>735 treatments: about 245 of each (2.2% response)</li>
+</ul>
+<p><br />
+</p>
+<ul>
+<li><p>Finding 1: Extensive effect - The existence of a match increased propensity to give by 22%</p></li>
+<li><p>Finding 2: Extensive effect: Match alone increased donation from $0.81 to $0.97 per mailing. Increase of 19%</p></li>
+<li><p>Finding 3: No intensive margin effect of the match on d, out-of-pocket donation, (but g, charity receipt per mailing, rose a lot with match, all the way to $3.75 per mailing.)</p></li>
+<li><p>Finding 5: No effect of limits; Marginal illusion or not?</p></li>
+</ul>
+<!-- ^[To do: flesh out the argument about marginal illusion] -->
+<ul>
+<li>“Match ratios have no additional impact”</li>
+</ul>
+<p><br />
+</p>
+</div>
+<div id="huck-and-rasul-matched-fundraising-evidence-from-a-natural-field-experiment-j-public-econ-2011-andreoni-summary" class="section level3 unnumbered">
+<h3>Huck and Rasul “Matched fundraising: Evidence from a natural field experiment,” J Public Econ 2011, Andreoni summary</h3>
+<ul>
+<li><p>Huck and Rasul (2011; Bavarian State Opera, program to benefit local disadvantaged). 60k leadership gift:</p>
+<ul>
+<li><p>Announced</p></li>
+<li><p>0.5-1 match (60k match cap; truthful, real differences, or misleading information?)</p></li>
+<li><p>1-1 match</p></li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+<p><em>Conditions:</em></p>
+<p>C: Control, No mention of leadership gift
+L: Leadership gift mentioned, but not match
+M1: L + a 0.5 to 1 match is stated
+M2: L + a 1 to 1 match is stated</p>
+<p><br />
+</p>
+<ul>
+<li><p>C vs L isolate the effect of a leadership gift</p></li>
+<li><p>L vs M1 and M2 isolate the effect of match</p></li>
+</ul>
+<p><br />
+</p>
+<p><em>Findings: All the increase is due to the Leadership gift</em></p>
+<ul>
+<li><p>Matches actually have a dominating income effect.</p></li>
+<li><p>Higher matches lower d (amount sacrificed). That is, g (amount received) is inelastic wrt p.</p></li>
+<li><p>Charities would be better off just announcing the lead gift and having no match.</p></li>
+</ul>
+<p><br />
+</p>
+<p>So, it seems the ‘price of giving’ doesn’t matter in a conventional way in ‘matching contributions’</p>
+<ul>
+<li><p>Caveats to both studies: special samples; self selection of “who opens envelope”)</p>
+<ul>
+<li>but this should resemble selection for real interventions in similar contexts</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+</div>
+</div>
+<div id="framing-of-match-match-versus-rebate" class="section level2">
+<h2><span class="header-section-number">1.2</span> Framing of match: match versus rebate</h2>
+<ul>
+<li>Eckel and Grossman, 2008 (ExpEcon), how do theoretically equivalent rebates and matching grants affect donations?</li>
+</ul>
+<p><br> </p>
+<p><br />
+</p>
+<p><small> “A rebate subsidy of <span class="math inline">\(s_r\)</span> and a matching subsidy of rate <span class="math inline">\(s_m\)</span> = <span class="math inline">\(s_r/(1 - s_r)\)</span> present a donor with the same net cost of giving to the charity and therefore should result in the same level of giving” </small></p>
+<p><br />
+</p>
+<p>REBATE: pledge $1 to Minnesota Public Radio, later receive a partial refund (e.g., $0.20) from the authors of the study.</p>
+<p>MATCHING: $1.00 matched by an additional donation (e.g. $0.25) to MPR by the researchers.</p>
+<ul>
+<li>Random allocation: (1) No subsidy, (2) Match 25%, (3) Match 1/3, (4) Rebate 20%, (5) Rebate 25%</li>
+</ul>
+<!---
+summarized in  List (2008, ExpEcon)
+-->
+<ul>
+<li><p>Matching grants raise more than equivalent rebates in this study (echoes previous lab results)</p></li>
+<li><p>Price elasticities are roughly one and one-half to three times as large as for the rebate subsidy</p></li>
+</ul>
+</div>
+<div id="info-recip" class="section level2">
+<h2><span class="header-section-number">1.3</span> Info/comms: Does information (about recipients/charity…) help?</h2>
+<p><strong>Fong, C., Oberholzer-Gee, F., Truth in giving: Experimental evidence on the welfare effects of informed giving to the poor, J. Public Econ. (2010)</strong></p>
+<ul>
+<li><p>dictators from the university community [Carnegie-Mellon]</p></li>
+<li><p>Real-life welfare recipients living in 178 public housing in Pittsburgh</p></li>
+<li><p>Choice treatment: Can choose to pay $1 to learn about subject’s drug/disability</p></li>
+<li><p>Exogenous: this information is provided freely. (Also tested with comparable $9 endowment)</p></li>
+</ul>
+<p><br />
+</p>
+<p><img src="picsfigs/fongtreatments.png" width="4.3in" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<!---
+Our dictators can purchase signals 26 about why the recipients are poor. We find that a third of the dictators are willing to pay money to learn more 27 about their recipient. Dictators who acquire information mostly use it to withhold resources from less- 28 preferred types, leading to a drastic decline in aggregate transfers. With endogenous information about 29 recipients, we find that all types of poor recipients are worse off. Subjects play a \$10 dictatorgame not knowing whether they are paired with a disabled recipient or with a drug user.
+-->
+<p><img src="picsfigs/fonggraph.png" width="60%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p>“both types of recipients are worse off when dictators can choose to learn”
+… [but] dictators are weakly better off by construction</p>
+<p><br> </p>
+<p>“In the endogenous information treatment, we not only ask dictators how much they want to give to a poor person, we also encourage them to think about why the recipients are poor, possibly highlighting reasons not to give”</p>
+<p><br />
+</p>
+<p><br> </p>
+<p>"a third of subjects are willing to sacrifice resources to obtain additional information</p>
+<p><br />
+</p>
+<p><img src="picsfigs/fong_key_results.png" width="60%" style="display: block; margin: auto;" /></p>
+<ul>
+<li>But it’s not a fair comparison: those who decide <em>not</em> to buy information appear less generous than the average</li>
+</ul>
+<p><br />
+</p>
+<p><img src="picsfigs/fong_adjustedresults.png" width="4.3in" style="display: block; margin: auto;" /></p>
+<p><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<p><br />
+</p>
+<p>Eyeballing their results on <em>exogenous</em> information (e.g., regression table 4)</p>
+<ul>
+<li>It increases transfers to the disabled by about $1-$3 (statistically significant) but decreases transfers to drug-abusers a small amount (insignificant)
+<ul>
+<li>Seems to increase transfers on average</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+</div>
+<div id="ratings" class="section level2">
+<h2><span class="header-section-number">1.4</span> Charity ratings, overhead</h2>
+<p>There are a few organisations that rate charities on the basis of their transparency, governance and overhead ratios. As we have argued these are not great metrics for the per-dollar <em>impact</em> of a gift. Nonetheless, we might consider Whether donors are more likely to give/give more to charities that are highly rated. This would provide evidence against the most extreme warm glow model, where donors do not care at all about how their funds are used. It’s also important to understand the workings of this ‘industry’. There are several papers providing evidence on this.</p>
+<p><br />
+</p>
+<p><strong>Yörük, Barış K. “Charity ratings.” Journal of Economics &amp; Management Strategy 25.1 (2016): 195-219.</strong></p>
+<ul>
+<li>We have data on charity ratings (here, from ‘Charity Navigator’) and on amounts each charity raises per year (public reporting)
+<ul>
+<li>Does a regression of amounts raised on the rating tell us the <em>impact</em> of the rating?</li>
+<li>No! Better charities may get higher ratings and more donations because of their <em>quality</em>, not because of the rating.</li>
+<li>Response: Look at <em>changes</em> in ratings/donation (fixed effect modeling)</li>
+<li>But: “time-variant unobservable charity characteristics that are correlated with charitable contributions may also be correlated with the third party ratings”</li>
+</ul></li>
+<li>But note that the ‘Charity Navigator’ gives discrete ‘star ratings’ based on a continuous score
+<ul>
+<li>Class: Any idea how this can help?</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+<p>“Regression discontinuity”: If we robustly control for the <em>score</em>, we can look at the effect of <em>crossing a star threshold</em></p>
+<ul>
+<li><p>Being ‘just above’ or ‘just below’ a threshold can be seen as random</p></li>
+<li><p>But donors may react to the <em>stars</em> and not see the score itself; so crossing the threshold may have a large effect</p></li>
+</ul>
+<p><br />
+</p>
+<p><img src="picsfigs/yorukRDcutoffspooled.png" width="60%" style="display: block; margin: auto;" /></p>
+<p><a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p><br />
+</p>
+<p><img src="picsfigs/yorukRD4star.png" width="60%" style="display: block; margin: auto;" /></p>
+<p><img src="picsfigs/yoruk_regsmall.png" width="60%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p><em>Results</em>:</p>
+<ul>
+<li><p>No significant overall effect (contradicts previous literature)</p></li>
+<li><p>Significant impact for small charities only: finds a nearly 20% effect of a one star increase</p>
+<ul>
+<li>Argument: These charities are less well-known, so people rely more on this information</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+<p><strong>Other work:</strong> <a href="https://www.sciencedirect.com/science/article/abs/pii/S2214804316300209">Brown ea (2017)</a>, <a href="https://doi.org/10.1016%2Fj.jaccpubpol.2009.08.001">Gordon ea (2009)</a>; they tend to find positive effects of good ratings, but the former is a lab experiment, and the latter doesn’t clearly identify causality (imho).</p>
+<p><br />
+</p>
+<div id="parsons" class="section level3">
+<h3><span class="header-section-number">1.4.1</span> Financial measures in a mailing experiment (Parsons, 2007)</h3>
+<p>2 x 2 mailing appeal for People with Aids Coalition-Houston,</p>
+<ul>
+<li>Add “Service efforts and accomplishment info”(SEA)</li>
+<li>Add favorable “FINANCIAL” spending/overhead ratio info</li>
+</ul>
+<p>FINANCIAL (alone) <span class="math inline">\(\rightarrow\)</span> 180% increase in odds of donating <em>among prior donors</em> (<span class="math inline">\(p&lt;0.05\)</span>)</p>
+<p>(Other effects mainly insignificant, underpowered)</p>
+
+<div class="note">
+Unsure if it’s a logit or LPM – confusing writing
+Not effect-coded; no measure of <em>overall</em> impact of FINANCIAL across both SEA treatments
+Probably not preregistered
+I’d like to see CI’s
+</div>
+
+<p><br />
+</p>
+<p><small> Details from Parsons </small></p>
+<p><img src="parsons_fin_treat.png" width="40%" style="display: block; margin: auto;" /></p>
+<p><img src="parsons_logit.png" width="40%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="overhead" class="section level2">
+<h2><span class="header-section-number">1.5</span> Overhead and fundraising expense ratios</h2>
+<div id="gneezy-uri-elizabeth-a.-keenan-and-ayelet-gneezy.-avoiding-overhead-aversion-in-charity.-science-346.6209-2014-632-635." class="section level3 unnumbered">
+<h3>Gneezy, Uri, Elizabeth A. Keenan, and Ayelet Gneezy. “Avoiding overhead aversion in charity.” Science 346.6209 (2014): 632-635.</h3>
+<ul>
+<li><p>“We test whether designating early large gifts to cover overhead costs increases donors’ willingness to contribute to a charity”</p>
+<ul>
+<li>It “should not matter”</li>
+</ul></li>
+<li><p>People might see it as a sign of efficiency and honesty, or it might give them a greater feeling of impact</p></li>
+</ul>
+
+<div class="note">
+From an economic perspective, designating initial large gifts as seed money or using them to cover overhead costs is the same. Charities are interested in maximizing the total funds raised and are agnostic about whether overhead costs are cov- ered by initial donations or are shared by all donors. Consumers, however, seem to have clear, strong preferences: They want their donations to be put to “good” use—in other words, for di- rect program costs.}
+</div>
+
+<p><br />
+</p>
+<ol style="list-style-type: decimal">
+<li>Lab experiment: two charities: (i) Kids Korps USA, and (ii) charity: water;</li>
+</ol>
+<ul>
+<li><p>each participant could choose which got $100 <em>if their decision was randomly chosen</em></p>
+<ul>
+<li>They varied how much of the $100 went to the charity, and whether this ‘overhead’ was covered by a third party</li>
+</ul></li>
+</ul>
+<p><em>DR: I don’t agree that their lab experiment represents the sort of ‘overhead aversion’ we care about.</em></p>
+<p><br />
+</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Field experiment, education charity, request letter to 40,000 US households, wants to fund as many $20k projects as possible (in USA). Asked to give $ 20/50/100</li>
+</ol>
+<p>Treatments:</p>
+<ul>
+<li><p>SEED: “A private donor who believes in the importance of the project has given this campaign seed money in the amount of $10,000.”</p></li>
+<li><p>MATCH: "… The matching grant will match every dollar given by donors like you with a dollar, up to a total of $20,000</p></li>
+<li><p>OVERHEAD: " … $10,000 to cover all the overhead costs associated with raising the needed donations…"</p></li>
+</ul>
+<p><br />
+</p>
+<p><em>Results</em></p>
+<p><img src="picsfigs/overheadgraph.png" width="70%" style="display: block; margin: auto;" /></p>
+<ul>
+<li><p>Share donating: Overhead (8.5%) <span class="math inline">\(&gt;\)</span> *** Seed <span class="math inline">\(\geq\)</span> Match <span class="math inline">\(&gt;\)</span> Control (3.4%)</p></li>
+<li><p>Amount raised: Overhead ($2.31) &gt; *** Seed, Match &gt; *** Control ($0.80)</p></li>
+</ul>
+<p>(Extensive margin: Seed <span class="math inline">\(&gt;\)</span>*** Control)</p>
+<p>These results have been replicated in other trials [ref].</p>
+<p><br />
+</p>
+</div>
+</div>
+<div id="realimpact" class="section level2">
+<h2><span class="header-section-number">1.6</span> Impact on (outputs and) <em>outcomes</em> per dollar; responses to scientific analytical information</h2>
+<!--
+
+0. [Definition of 'effective giving' for our purposes, motivation](#intro)
+
+1. [Barriers to effectiveness in giving (very brief taxonomy/outline)](#barriers)
+
+2. [Focus: 'Processing of effectiveness information' & dual-system](#effect-info-dual)
+<small> [(Concepts/theory)](#concepts) </small>
+
+3. [Prior evidence and gaps](#prior-evidence), [Reinstein et al team empirical approach](#empirical-approach)
+
+Our approach?: Naturalistic settings, robustness across setups/frames, honestly presentation of evidence, allow integration
+
+4. [DonorsVoice mailing experiment](#dv-experiment) <small> (many co-authors)  i) Setup  ii) Results iii) Proposed follow-up  </small>
+
+5. [Bergh project (Mturk)](#bergh-mturk-experiment) <small> Setups, Results </small>
+
+6. [Bergh/Reinstein (Essex piggyback)](#essex-piggyback) <small> Setups, [Results](#bergh-results) </small>
+
+7. [Preliminary conclusions, proposed future directions](#conclusion) (time permitting)
+
+
+-->
+<div id="the-puzzle" class="section level3">
+<h3><span class="header-section-number">1.6.1</span> The puzzle</h3>
+<p><font color='blue'>There is a puzzle:</font> inefficient giving/little to highest-impact causes<br />
+</p>
+<ol style="list-style-type: decimal">
+<li>“Why don’t we give more to the most effective charities and to those most in need?”,</li>
+</ol>
+<center>
+<em>and</em>
+</center>
+<ol start="2" style="list-style-type: decimal">
+<li>“Why are we not more efficient with our giving choices?”</li>
+</ol>
+<p><br />
+</p>
+<p>Ben Grodeck:</p>
+<blockquote>
+<p>… although people have their pet charity causes (e.g. blindness), even if you buy an argument of incommensurability between causes (which we shouldn’t imo), there are more effective charities within these subsets.</p>
+</blockquote>
+
+<div class="note">
+<p><em>From a recent grant application …</em></p>
+<p>When confronted with a “<a href="https://www.thelifeyoucansave.org/videos#pondvideo">girl drowning in a pond</a>” most people are willing to sacrifice substantial wealth to save her life. However, <a href="https://givingusa.org/giving-usa-2017-total-charitable-donations-rise-to-new-high-of-390-05-billion/">most people</a><em><a href="https://givingusa.org/giving-usa-2017-total-charitable-donations-rise-to-new-high-of-390-05-billion/">don’*t</a><a href="https://givingusa.org/giving-usa-2017-total-charitable-donations-rise-to-new-high-of-390-05-billion/">make large donations to the very poor</a>, in spite of evidence suggesting that lives can be saved <a href="https://www.givewell.org/how-we-work/our-criteria/cost-effectiveness">for less than $10,000</a>. There is a <a href="https://www.theguardian.com/books/2015/aug/20/doing-good-better-william-macaskill-review">strong case</a> that most donations go to charities that improve well-being far less per-dollar than others. Even within the same category, more can be achieved for less: e.g., while it costs about<a href="https://www.researchgate.net/publication/5421378_The_Economic_Costs_and_Benefits_of_Dog_Guides_for_the_Blind">$40,000</a> to provide a blind person a guide dog, <a href="https://www.givewell.org/international/charities/The-Carter-Center/River-Blindness">each $100</a> given for mass-distribution of ivermectin may </em>prevent* 10-50 years of river-blindness. This raises two related questions: 1. “Why don’t we give more to the most effective charities and to those most in need?”, and 2. “Why are we not more efficient with our giving choices?” To address this, we must understand what drives giving choices, and how people react to the presentation of charity-effectiveness information. (NOTE: Singer, Peter. “The Singer solution to world poverty.” The New York Times Magazine 5.September (1999): 60-63.)</p>
+While social science, biology and philosophy suggest a range of explanations for ineffective giving– invoking values, preferences, and biases–the discussion and evidence is scattered. There have been no systematic reviews or large projects targeting this, and limited communication across disciplines. Loewenstein and Small (2007) offer a theoretical framework, focusing on the interplay between the mental processes of “deliberation” and “sympathy”. Other (largely unpublished or non-academic) merely “lists” the evidence, typically citing a single paper for each potential channel, without evaluation.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>
+</div>
+
+</div>
+<div id="what-are-these-barriers-to-effective-giving" class="section level3">
+<h3><span class="header-section-number">1.6.2</span> What are these ’ barriers’ to effective giving?</h3>
+<p>If people are motivated by ‘the extent that they can help others, and reason in a maximizing way’, the above is a puzzle. What ‘barriers’ and ‘biases’ might explain it?<br />
+</p>
+<p>Some of the following mechanisms may drive giving behavior" in ways that depart from “maximizing one’s impact” (for a given contribution), and might deter giving to the most effective causes. These may lead some causes to be ‘neglected’, i.e., underfunded. If we imagine a diminishing marginal impact of giving to each cause or recipient, the causes that are neglected, receiving less support, will be left with a greater marginal impact per dollar.</p>
+<p><br />
+</p>
+<p><strong>Barriers: a workable categorization</strong></p>
+<p><img src="picsfigs/anon_donor.jpg" style="width:25.0%" /></p>
+<ol start="0" style="list-style-type: decimal">
+<li>No moral-utilitarian concerns: people may simply not be ‘moral utilitarians’; they may give for other reasons (e.g., reputation; although this kicks the problem up a level; why should one’s reputation and standing be tied to charitable giving… and shouldn’t the effectiveness of such giving matter to this?)<br />
+</li>
+</ol>
+<p><strong>Psychological distance,’ (lack of) awareness and consideration psychological distance/emotional arousal:</strong> Whether a cause/charity is something people are aware of, feel is important/salient, and feel close to.<br />
+</p>
+<p><img src="picsfigs/cultural-distance.jpg" style="width:55.0%" /></p>
+<p><br />
+</p>
+<p>Key examples:</p>
+<ul>
+<li><p>Spatial/Physical distance, cultural distance; parochial altruism and ingroup bias may lead some causes to be <em>neglected</em>.</p></li>
+<li><p>Temporal (future problems and people) may not be as salient as current problems</p></li>
+<li><p>Other sorts of distance: Lower-probability events, Emotional/Affective distance (Small), experiential</p></li>
+<li><p>Consistent problems aren’t as noticeable (reflected in media also)</p></li>
+<li><p>availability heuristic</p></li>
+</ul>
+<p><br />
+</p>
+<p><strong>Identity and self-perception:</strong> Things that run against one’s self-perception and how one believes others will will see you.</p>
+<div class="figure" style="text-align: center"><span id="fig:measuringpov"></span>
+<img src="rather-fight-than-switch.jpg" alt="2. Identity &amp; self-perception;      3. Inertia and systemic factors;     4. Quantitative biases" width="33%" /><img src="fb_supoprtmydaughter.jpg" alt="2. Identity &amp; self-perception;      3. Inertia and systemic factors;     4. Quantitative biases" width="33%" />
+<p class="caption">
+Figure 1.1: 2. Identity &amp; self-perception; 3. Inertia and systemic factors; 4. Quantitative biases
+</p>
+</div>
+<ul>
+<li><p>Avoiding cognitive dissonance; people don’t want to admit that their previous choices were sub-optimal</p></li>
+<li><p>‘The volunteer experience unlocks emotion and giving’; but to local causes only?</p></li>
+<li><p>Social perceptions and signaling empathy vs effectiveness;</p>
+<ul>
+<li>Related: difficulty of coordinated signaling with a hard-to-coordinate measure such as ‘effectiveness’<br />
+</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+<p><strong>Quantitative biases:</strong> Problems dealing with numbers and making logical evaluations involving numbers, values and amounts. Common cognitive errors <em>or</em> intuitive and emotional reactions triggered in these contexts.</p>
+<p><img src="picsfigs/measuring-poverty.jpg" style="width:20.0%" /></p>
+<p>These may lead people to not reason well and make less efficient charitable choices. Some of these biases may <em>particularly</em> affect the more effective and neglected charities.</p>
+<ul>
+<li><p>Altruistic opportunity cost neglect</p></li>
+<li><p>Statistical/identifiable victim effect</p></li>
+<li><p>Availability heuristic (in probabilities?)</p></li>
+<li><p>Misunderstanding need (and misunderstanding marginality/tractability/sunk costs?)</p></li>
+<li><p>Proportional dominance effect/drop in bucket/psychosocial numbing/psychophysical numbing</p></li>
+<li><p>Scope insensitivity/embedding effect/part-whole effec</p></li>
+<li><p>Overhead aversion</p></li>
+</ul>
+<p><br />
+Inertia and systemic/institutional factors: Factors limiting individual and social <em>change</em> in behavior</p>
+<ul>
+<li>Social norms and difficult-to-ignore requests to donate to local charities<br />
+</li>
+</ul>
+<p><strong>Aversion to DOING evaluations:</strong> Things that make people reluctant to evaluate and consider the effectiveness of charities, and ways that doing these evaluations reduce generosity.</p>
+<center>
+<img src="picsfigs/lifeboat_choice.jpg" style="width:35.0%" /> <img src="picsfigs/givewell-sheet.png" style="width:35.0%" />
+</center>
+<ul>
+<li><p>“Taboo Trade-Offs (c.f., Protected Values)”</p></li>
+<li><p>Market &amp; Social Norms may clash</p></li>
+</ul>
+<p>-Cost-benefit analysis (CBA) aversion/disinterest (or simply finding it less appropriate/normal/virtuous in the charity context)</p>
+<ul>
+<li><p>Cost effectiveness information may turn off System-1 and reduce giving; statistics diminish impact of ‘identifiable victim’</p>
+<ul>
+<li>I.e., the evaluation process itself may switch off empathy; see ‘dual system’ models of fast/slow thinking</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+<p><font color='green'>NOTE: I mainly focus on this latter channel below</font></p>
+<p><br />
+### Defining ‘per dollar impact’ of a donation {#def-impact}</p>
+
+<div class="note">
+<p>(Total or marginal) impact per dollar = output per dollar <span class="math inline">\(\times\)</span> impact per output</p>
+</div>
+
+<p><br />
+</p>
+<p><em>Impact</em> of a donation:</p>
+<p><span class="math inline">\(B&#39;(G_i)\)</span> for the marginal donor</p>
+<ul>
+<li>GiveWell, ImpactMatters, and others attempt to measure this</li>
+</ul>
+<p><br></p>
+<center>
+<p><em>We know:</em></p>
+<p><span class="math inline">\(B&#39;(G_i)\)</span> is much larger for the most <em>impactful</em> relative to the most <em>popular</em> charities.</p>
+</center>
+<!-- Add statistics ... Trust me on this, or at least accept that this seems likely in many cases. -->
+<p>(See Steinberg &amp; Morris 2010, for a discussion of marginal vs average effectiveness in this context.)</p>
+<p><br />
+</p>
+</div>
+</div>
+<div id="prior-evidence" class="section level2">
+<h2><span class="header-section-number">1.7</span> How do donations respond to (analytical) effectiveness and impact information? The evidence.</h2>
+<div id="evidence-brief-key-findings" class="section level3">
+<h3><span class="header-section-number">1.7.1</span> Evidence brief: key findings</h3>
+<ul>
+<li><strong>Small, Lowenstein, Slovic, ’07</strong> (Lab char’l giving), prime analytic (vs emotion): <font color='blue'>NEGATIVE</font></li>
+</ul>
+<p>Study 3: Identifiable victim <span class="math inline">\(&gt;\)</span> donation stats,</p>
+<p>Study : Priming analytic (maths) vs. priming feelings (‘impressions’) <span class="math inline">\(\rightarrow\)</span> less giving to identifiable victims</p>
+<p><br />
+</p>
+<ul>
+<li><strong>Karlan &amp; Wood, ’17</strong>, field mailing, scientific impact info: NULL, tight-ish bounds; (<font color='red'>+</font>/<font color='blue'>-</font> for ‘prior large/small donors’<br />
+</li>
+</ul>
+
+<div class="technote">
+Karlan &amp; W bounds, table 2: column 1 incidence near-0, se under 1%, baseline incidence 14%
+Amount donated +2.35, se 1.98, mean 14.17; windsorised -0.074, se 0.82, mean 11.30
+</div>
+
+<ul>
+<li><p><strong>Parson, ’07</strong>, field mailing, numeric overhead info: <font color='red'>POSITIVE</font> effect for previous donor subset (but not really ‘impact’ information)</p></li>
+<li><p>Mixed/null/positive evidence of ‘real-world ratings’ <small> (Yoruk ’16; Brown ea ’17; Gordon ’ea ’19) </small></p></li>
+<li><p>Mixed evidence (lab; charity/non) of ‘excuse-driven information seeking’ <small> (Exley ’16b; Fong &amp; O, ’10; Metzger &amp; G ’19) </small></p></li>
+<li><p><a href="https://www.researchgate.net/publication/337060647_Empathic_and_Numerate_Giving_The_Joint_Effects_of_Images_and_Charity_Evaluations">Bergh and Reinstein 2019 (SPPS)</a>: Analytical efficiency information has a fairly effect overall (somewhat underpowered); emotional information has a stronger effect, and it <em>can</em> drive people to choose the more efficient charity</p></li>
+<li><p>Reinstein et al, further experiments: ‘per-dollar-impact’ (unrealistically high) seems to drive an increased contribution rate</p></li>
+</ul>
+<p>See also: Sandra Goff; Cohn et al ’14; Dalk and Schzech ’13</p>
+<!-- Add work on framing of market and social in economics experiments (e.g., Public goods)
+Incorporate Sandra Goff's work ... field experiment in Maine)
+'Market framing e.g., Cohn ea 2014
+Market interactions erode moral values Falk and Sczech '13 .. Mouse study
+-->
+<p><br />
+</p>
+</div>
+<div id="identifiable-victims-effect-deservingness-vs-deliberation-initial-evidence-that-giving-is-emotional-only" class="section level3">
+<h3><span class="header-section-number">1.7.2</span> Identifiable victims effect/ deservingness vs deliberation; initial evidence that giving is emotional only?</h3>
+<p>Claim: Better to portray an individual (child) than convey the total affected <small> Small &amp; Loewenstein (03); Small et al (07); Kogut &amp; R (05) </small></p>
+<ul>
+<li>Driven by System-1 empathy, switched off by analytic thinking</li>
+</ul>
+<p><br />
+</p>
+<p><strong>Small, Lowenstein, Slovic (2007):</strong></p>
+<p><br></p>
+<p>[Study 3] “individuals who faced an identifiable victim donated more…”</p>
+<p><br></p>
+<blockquote>
+<ul>
+<li>“…than those who faced victim statistics, p &lt; .01,”</li>
+</ul>
+</blockquote>
+<p><br></p>
+<blockquote>
+<ul>
+<li>…“than those who faced [both] an identifiable victim [and] statistics, p &lt; .05.”"</li>
+</ul>
+</blockquote>
+<p><br />
+</p>
+<p><strong>Small et al, ’07, Study 4</strong></p>
+<p><br></p>
+<blockquote>
+<p>Priming analytic thinking reduced donations to an identifiable victim relative to a feeling-based thinking prime.</p>
+</blockquote>
+<p><br></p>
+<blockquote>
+<p>Yet, the primes had no distinct effect on donations to statistical victims, which is symptomatic of the difficulty in generating feelings for these victims.</p>
+</blockquote>
+<p><br></p>
+<center>
+<small> <font color='blue'><em>Tightly bounded null, but … nonlinearity?</em></font> </small>
+</center>
+
+<div class="note">
+the latter non-effect appears tightly bounded; but this could simply be driven by nonlinearity. If people gave little to statistical victims, there is less room for this to decrease further. A classic problem when considering interactions.
+</div>
+
+<p><br />
+</p>
+<p><em>DR comment</em>: The ‘identifiable victim effect’ appears strong and has been replicated. However, the Small et al papers is at best weak evidence on the impact of providing <em>analytical</em> information on giving.</p>
+<p><br />
+</p>
+<p><em>Verkaik (2016) notes:</em></p>
+<blockquote>
+<p>While previous studies have convincingly shown that providing output information, informing donors of how their donation is used, increases generosity <small> (Cryder &amp; L, ’10; Cryder ea ’13; Aknin ea ’13) </small></p>
+</blockquote>
+<p><a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
+<blockquote>
+<p>…the evidence on the effects of impact information are more mixed, with mainly null effects <small> (Metzger &amp; G ’15; Karlan &amp; W, ’14; Baron &amp; S, ’10; Caviola ea ’14, Berman ea ’15) </small></p>
+</blockquote>
+<!-- Check more closely
+See also Frumkin & Kim, 2001
+[MORE on how this is claimed to be via system 1/2]
+Some limitations/caveats: (Ein-Gar and L, '12;  Kogut and R '07)
+-->
+<p><br />
+</p>
+</div>
+<div id="ratings-and-information-in-general-mixed-evidence-recapping" class="section level3">
+<h3><span class="header-section-number">1.7.3</span> Ratings and information in general: mixed evidence (recapping)</h3>
+<p>Above (see <a href="price-impact.html#ratings">Charity ratings, overhead</a>) we have already discussed the (mixed) evidence suggesting that</p>
+<ul>
+<li><p>People seem to respond somewhat to general <a href="price-impact.html#ratings">charity ratings</a> as well as to <a href="price-impact.html#parsons">specific positive financial information presented in charity appeals</a></p></li>
+<li><p>People are averse to what is referred to as <a href="price-impact.html#overhead">‘overhead’</a></p></li>
+<li><p>People may react to evidence about the perceived <a href="price-impact.html#info-recip">‘deservingness’ of recipients</a></p></li>
+</ul>
+<p>However, none of these are reliable measures of the per-dollar impact on outcomes <a href="#def-impact">defined above</a>.</p>
+<p><br />
+</p>
+</div>
+<div id="effectiveness-info" class="section level3">
+<h3><span class="header-section-number">1.7.4</span> “Effectiveness” info</h3>
+<p>So, how do donations respond to (analytical) effectiveness and impact information?</p>
+<p>One of the strongest pieces of evidence is provided by:</p>
+<p><strong>Karlan and Wood (2017)</strong></p>
+<p>Add scientific impact text to appeal (&amp; remove emotional text):</p>
+<p><span class="math inline">\(\rightarrow\)</span> little net effect</p>
+<p><span class="math inline">\(\rightarrow\)</span> reduced (increased) giving among small (large) prior donors <font color='grey'>(not a preregistered hypothesis)</font></p>
+<p><br></p>
+<p><font color='blue'><em>Potential confounds, specificity</em></font></p>
+
+<div class="note">
+<p>Some skeptical notes:</p>
+<ul>
+<li>Yale/institution effect (seemed negative)</li>
+<li>Nature of ‘impact’ information (not exactly quantitative)</li>
+<li>ex-post splitting</li>
+<li>two things changed at once (impact in, emotional out)
+</div></li>
+</ul>
+<p><br />
+</p>
+<p><strong>Details of Karlan first wave: SCIENCE vs EMOTION</strong></p>
+<blockquote>
+<p>According to studies on our programs in Peru that used rigorous scientific methodologies, women who have received both loans and business education saw their profits grow, even when compared to women who just received loans for their businesses. But the real difference comes when times are slow. The study showed that women in Freedom from Hunger’s Credit with Education program kept their profits strong–ensuring that their families would not suffer, but thrive.</p>
+</blockquote>
+<p><br></p>
+<blockquote>
+<p>Because of caring people like you, Freedom from Hunger was able to offer Sebastiana a self-help path toward achieving her dream of getting “a little land to farm” and pass down to her children. As Sebastiana’s young son, Aurelio, runs up to hug her, she says, “I do whatever I can for my children.”</p>
+</blockquote>
+<p><br />
+</p>
+</div>
+</div>
+<div id="information-as-an-excuse-not-to-give-allows-motivated-reasoning" class="section level2">
+<h2><span class="header-section-number">1.8</span> Information as an ‘excuse’ not to give; allows motivated reasoning</h2>
+<p>Do people selectively seek information on charities to <em>avoid</em> giving? Do they interpret such evidence with ‘motivated reasoning’ in order to feel good about <em>not donating</em>?</p>
+<p><br />
+</p>
+<p><strong>Exley, 2016b:</strong> Greater discounting of ‘less-efficient’ charity in charity-charity decision-making than in charity-self decision-making.</p>
+<p><br></p>
+<p><strong>Fong &amp; O, ’10:</strong></p>
+<blockquote>
+<p>“Dictators [charitable giving] who acquire information mostly use it to withhold resources from less-preferred types, leading to a drastic decline in aggregate transfers”</p>
+</blockquote>
+<p><font color='blue'>But…</font></p>
+<p><br></p>
+
+<div class="note">
+Exley issues: Experimenter demand (M-turk focus), not really ‘impact’ information
+Fong: Selection effects. In their tables, exogenous provision of information seems to <em>increase</em> donations overall.
+Also … it’s evidence on the deservingness of the recipients, not on impact of a charity itself.
+</div>
+
+<p><br></p>
+<p><br />
+</p>
+<p><strong>Metzger &amp; Gunther, ’19 </strong></p>
+<p>Lab donations to high/low-performing NGO</p>
+<ul>
+<li><p>More purchasing of ‘recipient type’ than ‘impact’ info</p></li>
+<li><p>Mixed &amp; weak evidence on excuse-driven information-seeking</p></li>
+</ul>
+<p><br></p>
+<center>
+<font color='blue'>Caveats…</font>
+</center>
+
+<div class="note">
+<p>Opportunity to buy info on ‘recipient type’ increased giving, on ‘admin costs’ decreased giving (marginal significance for both), no effect of ‘aid impact’ but wide CI</p>
+<p>‘Free info’ on each of these had insignificant effects (underpowered!)</p>
+<p>Lots of caveats; e.g., recipient type (artists vs children) may have been seen as a proxy for impact</p>
+</div>
+
+<!--
+In a laboratory experiment, we analyze individuals’ demand for information about a donation’s welfare impact, and compare it with demand for information on recipient types and administrative costs. We find the least demand for information about aid impact, indicating that individuals either do not understand, do not trust, or do not care about the specific information we provide. Average donations increase in response to information about the recipient type and decrease in response to information about administrative costs. Information about aid impact does not significantly change average donations: donors who demand information respond positively to high impact projects and negatively to low impact projects, resulting in a zero net effect on donation levels. Our results further show that information has the same effect on donation behavior regardless of whether it is provided for free or at a cost.
+-->
+<!-- "Making an impact? The relevance of information on aid effectiveness for charitable giving. A laboratory experiment.":
+
+>...the demand for information about aid impact is lowest, and it is highest for information about the recipient type.
+
+> ... exact information about aid impact did not lead to a significant change in average donation levels, while information about the exact recipient type and administrative costs led to a significant change in donation levels.
+
+> In the recipient type group, informed participants donated significantly more than uninformed participants because they "rewarded" the preferred recipient with higher-than-average transfers. In the administration costs group, informed participants donated significantly less than uninformed participants because they used the information to "punish" NGOs with high administration costs.
+
+DR: It is not clear to me when they are reporting on the self-selected groups and when they report on the sample overall, or in a way that deals with the self-selection.
+
+Looking at their one clearer result, we see a lack of power.
+
+Average don:    2.45 CHF
+
+Aid impact group coef: -.231 (.45)
+
+This looks like an underpowered study. They can perhaps rule out an effect greater than around half of the average donation, but no more precisely.
+-->
+</div>
+<div id="empirical-approach" class="section level2">
+<h2><span class="header-section-number">1.9</span> Reinstein ‘Our empirical approach’</h2>
+<ul>
+<li><p>Naturalistic environments</p></li>
+<li><p>Robustness across setups/frames</p></li>
+<li><p>Honest presentation of evidence, allowing integration</p></li>
+</ul>
+
+<div class="note">
+The general project is a practical one (although Bergh’s project aims to explore into specific mechanisms).
+By measuring the impact of several types of efficiency information, across several contexts, we aim to produce a fairly robust picture. We expect heterogeneity and sensitivity to frames; thus results may vary, and we will carefully examine the overall picture as well as this variation in a ‘mini-meta-analysis’.
+To limit various types of experimenter demand and arbitrary coherence, these experiments are <em>between</em> participant, and (largely) run in contexts where the donation is not the focus of the interaction.
+We have preregistered our studies, hypotheses and analyses.
+We will share all of our data to enable future reanalyses.
+</div>
+
+<!---
+
+### Reinstein and Harms -- engaging in the ratings process (preliminary) {-}
+
+Preliminary experimental results, ongoing experiments
+
+- Funds from 'Giving for Impact'
+
+
+- Pilot experiments run on 'Prolific Academic', piggybacked on other surveys
+
+- Survey interface created with 'Qualtrics'
+
+\
+
+- Pledges and promises can promote pro-social behaviour, even where reputation is not at stake (Kerr et al., 1997; Charness and Dufwenberg, 2006).
+
+- People may want to maintain a self-image of being consistent.
+
+- Does asking people to rate or rank charities may indirectly and implicitly commit them to making donations?
+
+\
+
+Experimental setup
+
+- Followed questions on 'charity similarity' (R1) or 'Prolific site and donation options' (R2)
+
+- Information on two charities (AMF & GiveDirectly)
+    - (i) what type of activities these charities implement,
+    - (ii) how much impact they generated per dollar, in terms of lives saved for AMF and money transferred to recipients for GiveDirectly
+
+-  asked to give a brief description of each charity.
+
+- TREATMENT ONLY: Asked to rate the effectiveness of these two charities and  rank which  they thought had more/less impact.
+
+- All had 1/20 chance of winning 10
+
+    - asked to divide this between themselves and each charity
+
+\
+
+<img src="picsfigs/givedirectmisc.png" width="60%" style="display: block; margin: auto;" />
+
+\
+
+
+<img src="picsfigs/againstmalariadesc.png" width="60%" style="display: block; margin: auto;" />
+
+\
+
+
+<img src="picsfigs/describecharities.png" width="50%" style="display: block; margin: auto;" />
+
+\
+
+
+<img src="picsfigs/ratecharities.png" width="50%" style="display: block; margin: auto;" />
+
+\
+
+
+<img src="picsfigs/rankcharities.png" width="50%" style="display: block; margin: auto;" />
+
+
+\
+
+*Results (preliminary):*
+
+<img src="picsfigs/prolificratingtreat.png" width="50%" style="display: block; margin: auto;" />
+
+- Increased likelihood of donating (Mann-Whitney p=0.047)
+
+-->
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>Todo: How should we interpret these estimates?<a href="price-impact.html#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>This is for small charities<a href="price-impact.html#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>See: Loewenstein and Small 2007); (Berman et al. 2018) (introduction). (Baron and Szymanska, 2011). Unpublished or non-academic: ‘Ideas42, 2016; Gertler, 2015; Yoeli<a href="price-impact.html#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p> Robin: I personally wouldn’t count the Cryder studies as examples of studies demonstrating that effectiveness has a positive effect on giving. There’s a fundamental difference between psychological perceptions of impact (and “tweaks” of info to make it seem more impactful to donate) versus evaluating actual evidence of effectiveness. For instance, the fact that donors are more willing to donate when a fundraiser is close to reaching a goal tells us something about how people feel about donating, but it tells us absolutely nothing about the actual effectiveness of a charity and how people process such information. Effectiveness is an attribute of the charity, not a perception of making a difference (if we reduce effectiveness to a subjective impact belief then guide dogs could also argued to be highly effective).
+DR: True; But I wouldn’t say it is completely unrelated. For actual cost-effectiveness/impact information to be used to increase/improve giving we presumably need both
+1. Individuals care about their own impact per $, as they perceive it (Cryder speaks to this),2. Individuals can reasonably draw conclusions about effectiveness per $ from the information properly presented, and 3. The presentation of this information does not itself substantially reduce the actualized motivation to give<a href="price-impact.html#fnref4" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="dv-experiment.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": true,
+"weibo": true,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

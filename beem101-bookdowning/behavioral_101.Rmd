@@ -1,0 +1,1378 @@
+# Behavioural economics (L12)
+
+
+
+- Covers selected parts of NS: Ch 17, plus supplements, particularly work on other-regarding behavior and charitable giving
+
+
+An older (but very similar) pdf version can be found  [Here](https://www.dropbox.com/s/d0llymz7vgvw4uv/m_lecture12.pdf?dl=0). 
+
+
+<!-- `r format_with_col("Eighth problem set: Behavioural economics","blue")`
+-->
+
+Thou shalt be carefully sceptical; critique do not just criticise;
+Consider the assumptions made; Consider the evidence
+
+## Neoclassical versus Behavioural economics
+
+
+*(Neo)classical economics assumes:*
+
+- Firms maximise profit
+
+- Individuals/households have a consistent utility function which they act 'rationally' to maximise
+
+Furthermore, it is mainly focused on *own* consumption,  ignores 'cognitive costs', ignores 'malleable and changing preferences'
+
+
+```{block2,  type='note'}
+We can not say someones *preferences* are irrational, only that either \
+they are not acting optimally to maximize their welfare *given* these preferences or \
+their preferences are not internally consistent (e.g., not-transitive), are not fully self-interested (altruism), \
+ or are otherwise difficult to model (e.g., depending on the *manner* they make choices and not only the outcomes.
+```
+
+\
+
+Classical economics assumes
+
+- Optimization of a consistent ‘normal’ utility function subject to  known constraints
+    - Only own consumption matters?
+    - No cost to gather information or make calculations?
+
+\
+
+Expected utility over gambles/investments, and probabilities are  accurately known.
+
+\
+
+Geometric discounting of future payoffs with a single (or at least a consistent) discount rate
+
+```{block2,  type='technote'}
+The discount rate between two periods or two calendar years *is* allowed to vary in the classical model.
+However, it must be consistent in the following sense: the discount rate must depend on *which periods the consumption is being traded off between.*
+It should *not* depend on which period I am in when I am making the decision. More on this under 'hyperbolic discounting', time-inconsistency, and impatience, below.
+```
+
+
+
+E.g., if $\delta=0.1$ in each period then next period's payoff of 100 is worth as much as $(1-0.1) \times 100 = 90$  today. \
+
+A payoff of 100 in two periods is worth as much as $(1-0.1) \times 100 = 90$ tomorrow, or as much as $(1-0.1) \times (1-0.1)\times 100 = 81$ today.
+
+\
+
+
+
+
+Strategic behaviour in interactions
+- Common knowledge of rationality, Nash equilibrium?
+
+\
+
+We can find behaviour and outcomes that seem to contradict the above assumptions (see, e.g., DellaVigna, 2009).
+
+\
+
+This 'non-classical' behaviour is (arguably) common, significant, and follows predictable patterns
+
+
+Should we then *stop learning classical economics?*
+
+\
+
+
+## Classical economists are not naïve
+
+They know preferences change, people make mistakes, etc.
+
+Justifications include:
+
+- ‘Most people, most of the time,’ and many mistakes will be ‘fixed’ by the market.
+- Strong predictive power
+- 'Normative':  how we 'should' behave to get the best outcomes
+- A good starting point, framework for insight, benchmark
+
+\
+
+## Behavioural Economics
+
+Relaxes some of the assumptions above, usually one at a time
+
+\
+
+Does not typically 'reject rationality' ('bounded rationality')
+
+
+\
+
+Most “behavioral models” involve some sort of optimization (and often equilibrium)
+- There are ‘pure behavioral theorists’ who try to find parsimonious models to explain deviations
+
+*Most influential authors: Kahneman and Tversky*
+
+\
+
+## Modern consensus/entente
+
+Both classical and behavioural economics are useful
+
+- Different models and techniques (for different spheres?)
+
+*Notes:* \textcolor{gray}{It is worth testing for, and admitting the possibility of 'systematic violations' of the classical assumptions.
+*Classical* economics is usually more relevant for firm behavior
+But Classical may (or may not) predict well for *aggregates* and for *firm behaviour* \
+*Behavioural models* may predict better for individual behaviour in isolation \
+but behavioural admits many possibilities and heterogeneous behavior, so it makes broad predictions difficult \
+Behavioural insights are (probably) useful in making policy (and in marketing) \
+Evidence from the lab may be informative, but some 'behavioural anomalies' may be inconsequential in larger markets in equilibrium}
+
+
+## Limits to Human Decision Making: An Overview
+
+There are four general ways people diverge from classical assumptions (text says three)
+
+1. Limited cognitive ability – difficult and costly to make complex decisions
+
+2. Limited willpower – self control problems
+
+3. Limited self interest – care about others (fairness, altruism), issues beyond income/consumption
+
+4. Inconsistent, changing, and 'non-outcome-based' preferences
+
+
+
+\textcolor{gray}{DR: I added this final one to the textbook's account; under (e.g.) Prospect Theory people may be acting to maximise their true preferences, \
+ but their true preferences may change depending on reference points etc.}
+
+## Limited cognitive ability
+
+- Complexity of problems
+    - Optimising calculations take time; this may *itself* be a cost
+        - A 'simplifying decision-making rule' (rule-of-thumb) may be better if it saves these costs
+    - Relevant both to individual decision-making (consumption, investment) and strategic choices
+        - Game theory: recall 'iterated strict dominance' and 'backwards induction'
+
+- People (seem to) systematically misunderstand probabilities (and other maths concepts)
+
+\
+
+### Application: lack of financial literacy {-}
+
+- Consumers who underestimated interest rates in quizzes held the highest interest loans in real life
+- Particularly when government 'truth in lending laws' were lax
+
+
+*Evidence from Stango and Zinman, 2011*
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/paydayloan.png")
+```
+
+
+\
+
+1. Suppose you had £100 in a savings account and the interest rate was 2\% per year. After 5 years, how much do you think you would have in the account if you left the money to grow: 
+
+\
+
+A. More than £102
+\
+
+B. Exactly £102
+\
+
+- Consumers who underestimated interest rates in quizzes held the highest interest loans in real life (Stango and Zinman, 2011)
+        - Particularly when government 'truth in lending laws' were lax
+
+
+\
+
+2. Imagine that the interest rate on your savings account was 1\% per year and inflation was 2\% per year. After 1 year, would you be able to buy:
+
+\
+
+A. more than
+\
+
+B. exactly the same as, or 
+\
+
+C. less than today 
+
+\
+
+3.  Do you think that the following statement is true or false? ‘Buying a single company stock usually provides a safer return than a stock mutual fund.’ 
+
+(True/False)
+
+
+\medskip
+
+Around the world, across many studies, less than half answer *all three* correctly.
+Lusardi and Mitchell, 2013; In Germany and Switzerland, just over 50\% get all three right.  In most other surveyed countries, the numbers are far lower.  E.g., in the USA 65\% get the interest rate question right, 64\% the inflation question, and 52\% the diversification question.
+
+## Allais paradox
+
+- Gamble A: an 89\% chance of winning £1 million, a 10\% chance of winning £5 million, and a 1\% chance of winning nothing.
+- Gamble B: £1 million with certainty.
+
+\
+
+*Write down: which would you choose?*
+
+\hrulefill
+
+\
+
+**Scenario 2. Which would you choose?**
+
+- Gamble C: an 89\% chance of winning nothing and an 11\% chance of winning £ 1 million.
+- Gamble D: a 90\% chance of winning nothing and a 10\% chance of winning £5 million.
+
+\
+
+*Which would you choose?*
+
+
+\
+
+Many people choose B over A and choose D over C:
+
+$$B \succ A $$
+
+$$ £ 1m \succ  (£ 1m \otimes 0.89 + £ 5m \otimes 0.1 + £0 \otimes 0.01)$$
+$$D \succ C $$
+$$(£ 0 \otimes 0.9 +  £ 5m \otimes 0.10) \succ (£ 0 \otimes 0.89 + £ 1m \otimes 0.11) $$
+
+i.e.,
+
+$$ £ 1k \succ  (£ 1k \otimes 0.89 + £ 5k \otimes 0.1 + £0 \otimes 0.01)$$
+\
+
+
+\
+
+*But this contradicts Expected Utility theory:*
+
+- If $B \succ A$ then $EU(A) > EU(B)$
+    - $\rightarrow u(1m) > 0.89 \: u(1m) + 0.1 \: u(5m) + 0.01 \: u(0)$
+    - $\rightarrow$ $0.11 \: u(1m) >  0.1 u(5m) + 0.01 \: u(0)$
+- If $D \succ C$ then $EU(D)>EU(C)$
+    - $\rightarrow 0.9 \: u(0) + 0.1 u(5m) > 0.89 \: u(0) + 0.11 \: u(1m)$
+    - Implying $0.1 \: u(5m) + 0.01 \: u(0) > 0.11 \: u(1m)$
+    - Contradicting the above!
+
+
+
+*Note there is a 'reversal':*
+In choosing B over A you gave up a 10\% chance of £5000 to get a 1\% greater chance of £1000 \
+... but in choosing D over C you gave up a 1\% greater chance of £1000 to get a 10\% change of £5000
+
+
+
+\textcolor{RawSienna}{ By EU theory it shouldn't matter that for the remaining 89\% of the time A differs from C: \
+This is an 'independent state of the world'; should have no impact on your decisions for the remaining 11\% of the time. \
+By this logic, the fact that there is a 10\% chance that a meteor destroys England on Friday should not affect my choice \
+of whether to go to a fancy restaurant or get a simple curry on Friday in the 90\% probability case that England is *not* hit.}
+
+\
+
+**Explaining it again with pie charts...**
+
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/allaispies.png")
+```
+
+\medskip
+
+\footnotesize{A is D plus an additional  89\% chance of £1m}
+
+\
+
+\footnotesize{B is C plus an additional 89\% chance of £1m}
+
+\
+
+\footnotesize{So "A and B" are "D and C" with **additional 89\% chance of £ 1m**}
+
+
+\
+
+\footnotesize{EU additive} $\rightarrow$: \footnotesize{choice for *remaining* 11\% state ignores **difference**}
+
+By the EU calculation I make choices over which I prefer for the (remaining)
+ 11% of the time without considering what happens 89% of the time. 'Independent states of the world'.
+
+
+
+**SO WHY do people choose B over A and D over C?**
+
+- One theory: People overweight small probabilities
+    - $\rightarrow$  Gamble A: the 1\% chance of 0 is treated as larger?
+
+\
+
+### Kahneman and Tversky scenariae {-}
+
+`r format_with_col("Warning: This is not the standard Allais paradox, it is a different paradox.","red")`
+
+**KT1. Which would you choose?** \
+
+You get £1000 upfront. \
+
+- Gamble $A: You have an 50\% chance of winning an additional £$1,000.
+
+- Gamble $B: An additional £$500 with certainty.
+
+*Write down: which would you choose?*
+
+\hrulefill
+
+\
+
+**KT1. Which would you choose?** \
+
+You get £2000 upfront. \
+
+- Gamble $C$: You have an 50\% chance of losing £1,000.
+
+- Gamble $D$: You lose £500 with certainty.
+
+
+\hrulefill
+
+
+
+
+**KT1:** You get £1000 upfront. \
+
+
+- Gamble $A$: You have an 50\% chance of winning an additional £1,000.
+
+- Gamble $B$: An additional £500 with certainty.
+
+
+\hrulefill
+
+**KT1:** You get £2000 upfront. \
+
+- Gamble $C$: You have an 50\% chance of losing £1,000.
+
+- Gamble $D$: Lose £500 with certainty.
+
+\
+
+
+\hrulefill
+
+KT (hypothetical) experiment: 16\% of subjects chose $A$ over $B$, and 68\% chose $C$ over $D$
+
+- *But $A$ is the same as $C$ (50/50 chance of £1000 or £2000),*
+- *and $B$ is the same as $D$ (certain £1500)!*
+
+Seems to depend on how we 'frame' these.
+
+## Explaining the above paradoxes with prospect theory
+
+- Above choices: cannot be explained by 'regular' EU theory
+    - Mistakes, misunderstanding probabilities?
+    - Prospect theory, loss-aversion: *not* mistakes, but maximising something other than EU
+
+\
+
+
+### Prospect theory -- loss aversion (LA) part {-}
+
+1. People don't think only about *outcomes* but about 'gains or losses relative to a reference point'
+1. Outcomes considered *losses* are particular painful
+1. Whether an outcome is a *loss* depends on the reference point
+    - which may depend on how a decision is framed
+    - or on the starting point, or initial expectations
+
+
+\
+
+$\rightarrow$ may make decisions to 'avoid losses' \
+that we wouldn't make if we saw it as 'increasing gains'
+
+\
+
+### Standard and loss-averse utility {-}
+
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/std_u_prospect_u.png")
+```
+
+
+*Notes:*
+What leads to the paradoxes and 'inconsistent behaviour'? \
+ The fact that the reference point can vary depending on things that are 'irrelevant' from an EU perspective
+
+
+
+\
+
+### KT experiment with prospect theory (loss aversion) {-}
+
+**KT1:** £1000 upfront. \
+
+- Gamble $A$: You have an 50\% chance of winning an additional £1,000.
+- Gamble $B$: An additional £500 with certainty.
+
+\
+
+\hrulefill
+
+**KT2:** £2000 upfront. \
+
+- Gamble $C$: You have an 50\% chance of losing £1,000.
+- Gamble $D$: You lose £500 with certainty.
+
+
+\hrulefill
+
+\
+
+- In KT1, your reference point may be £1000.
+    - Choose between A---a small certain gain and B---a larger uncertain gain; with same EV
+    - ... standard risk aversion predicts choosing B
+- In KT1, your reference point may be £2000.
+    - Choose between C---a possible large loss and D---a certain smaller loss (with same EV)
+    - ... standard risk aversion predicts choosing D
+    - But if feeling of *loss* is very painful, may choose C>D to have a 50\% chance of avoiding pain
+
+
+*Note:* This may help explain why some problem gamblers incur larger and larger losses to try to 'make up' for bad performance earlier in the day.
+
+\
+
+
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/ktprospect.png")
+```
+
+\
+
+Framing effect
+:     The same choice, presented in two different ways, may lead to different decisions.
+
+\
+
+### Allais redux: loose prospect theory (Loss Aversion) explanation {-}
+
+*Note:* We previously mentioned misweighting probabilities as an explanation for this. \
+ An alternative explanation could be loss-aversion
+
+- A: 89\% chance of £1,000, a 10\% chance of £5,000, 1\% chance of 0.
+- B: £1,000 with certainty.
+- C: 89\% chance of 0 and 11\% chance of £1,000.
+- D: 90\% chance of 0 and 10\% chance of £5,000.
+
+\
+
+- Considering A \& B, the ref. point may be close to £1000, as this can be had with certainty.
+    -  A seem to 'risk a costly loss of £1000', thus may choose 'safer' $B>A$, notwithstanding its far lower EV (£1000 vs £1390)
+
+\
+
+
+- Considering D \& C, ref. point may be close to 0, as EV's of each are low, \& 0 is likeliest outcome
+    - So 'don't worry about losses', choose D > C bc higher EV (£500 vs. £110)
+
+\
+
+
+*Note:* Skipped in lecture for time constraints: limited reasoning steps -- Centipede game; you can read this if you like; remember, things like this may provide you 'ammunition' on an essay question.
+
+
+## Limited willpower and 'hyperbolic discounting'
+
+
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/marshtest.jpg")
+```
+
+[Marshmallow test](https://youtu.be/d8M7Xzjy_m8?t=3)
+
+*Notes:*
+In the 1960's-70's Stanford experiment. Children could have 1 marshmallow now or 2 in 15 minutes if they could resist temptation. \
+There is some evidence that this correlates to later life outcomes (test scores, degrees, BMI, etc). \
+Strong results; interpretation debated.
+
+`r format_with_col("This result is now in question!","red")` The strongest results have failed to replicate. See a popular discussion [here](https://www.vox.com/science-and-health/2018/6/6/17413000/marshmallow-test-replication-mischel-psychology).
+
+\
+
+Monday-David wants Tuesday-David to give up 1 marshmallow for 2 marshmallows on Wednesday. \
+
+\
+
+`r format_with_col("But Monday-David unwilling to give up 1 marshmallow for 2 marshmallows on Tuesday.","olive")` \
+
+\
+
+`r format_with_col("Similarly, Tuesday-David won't give up 1 marshmallow for 2 on Wednesday","brown")`
+
+\
+
+- Inconsistency: Monday-David thinks Tuesday-David is acting sub-optimally!
+    - Is David acting in his own interest? Can we even define his 'true utility'?
+
+\
+
+Hyperbolic discounting (simple version)
+:     Steep drop in 'weight $w$' on payoffs earned after the current period
+
+\
+
+- But constant weight (or constant discounting) for payoffs multiple periods in the future
+    - This leads to inconsistencies between 'planned' and chosen behaviour
+
+\
+
+Compare two 'streams of payoffs'
+
+\
+
+1. Work: -10 today, +2 for the next 6 days
+
+2. Lazy: -5 today, +1 for next 6 days
+
+
+*Examples:* Should you...?
+
+study very hard on Sunday to be prepared for the whole week, \
+Get a good workout to feel energized the whole week \
+Clean your flat on Sunday .... etc.
+
+\
+
+Grasshopper weights payoffs today, tomorrow, and every day the same: $w=1$
+
+- Monday, Grasshopper compares Work to Lazy, and chooses Work.
+    - payoff(Work) $= -10 + (2 \times 6) = 2$
+    - payoff(Lazy) $= -5 + (1 \times 6) = 1$
+
+\
+
+Ant always weights payoffs at 1 today and $w=1/2$ on any future day
+
+- Monday, Ant chooses Lazy:
+    - payoff(Work) $= -10 +(2 \times 6)/2 = -4$
+    - payoff(Lazy) $= -5 + (1 \times 6)/2 = -2$
+
+\
+
+If Grasshopper were 'choosing for Monday on Sunday', he would choose Work $\rightarrow$ Consistent
+
+\
+
+But if Ant were 'choosing for Monday on Sunday', he would choose Work $\rightarrow$ Inconsistent
+
+\
+
+- On Sunday he considers
+    - payoff(Work Monday) $= (-10 + 2 \times 6)/2 = 1$
+    - payoff(Lazy Monday) $= (-5 + 1 \times 6)/2 = 1/2$
+- But as we saw, on Monday he chooses to be lazy
+- Would he 'benefit from pre-committing?'
+
+
+### Application: 'put a contract out on yourself {-}
+
+
+## Altruism and fairness
+
+'Other-regarding preferences':  My utility may be impacted by...
+
+1.  Other people's utility, or their consumption of particular 'merit' goods
+
+E.g., I suffer if I know my neighbour suffers, or her child eats too little
+ $\rightarrow$ this implies  'aid to the poor' may become a public good; thus it  may be massively under-provided in a voluntary setting
+
+\
+
+2. My perceived 'impact' on outcomes
+
+- If I donate to charity, I feel better
+- If my contribution improves people's lives, protects the environment (relative to my having done nothing)
+- $\rightarrow$ People may make choices reducing their own consumption, to increase other's consumption
+- Charitable giving is widespread; accounts for about 1\% of UK GDP
+- 'Donations' to family members much higher
+
+
+
+ `r format_with_col("The utilities, and decisions, of family members are highly connected. There is an ongoing debate and research programme considering when to model a household's decisions as 'unitary' and when to consider the individual preferences of the household members.","gray")`
+
+\
+
+'Other-regarding preferences':  My utility may be impacted by...
+
+1. My reputation and how others perceive me
+
+$\rightarrow$ Thus people may donate  and cooperate more when they are observed by others.
+
+\
+
+2. How 'fair' I believe the outcomes and actions taken are
+
+- $\rightarrow$ People reject significant positive offers in ultimatum games and bargaining
+    - Anticipating this, people make offers considerably above zero
+
+- $\rightarrow$ People cooperate when they expect others to do so
+
+- $\rightarrow$ people engage in 'costly punishment' of others they believe acted unfairly
+
+\
+
+[comment]: <> (101BB)
+
+\
+
+**Rational altruism?**
+
+We can model some forms of other-regarding preferences using standard tools, like indifference curves and budget constraints:
+
+
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/other_regard_IC.png")
+```
+
+\
+
+[comment]: <> (101EE)
+
+### Converting from 'material payoffs' to 'psychological payoffs' {-}
+
+As we have previouslt noted, the 'real' payoffs in a game (or an individual decision) may not be identical to the monetary/material payoffs
+
+(Important to note, this is a *distinct issue* from 'diminishing marginal utility' and risk-aversion.)
+
+\
+
+
+
+Motives like 'fairness' may transform monetary payoffs into 'real' payoffs in a straightforward way
+
+\
+E.g., in the ultimatum game, suppose player 1's real payoffs are:
+
+\
+
+
+$$U_1(Y_1,Y_2) = Y_1 - |Y_1-Y_2|$$
+
+
+\
+
+
+Where $Y_1$ is the amount 1 earns from the ultimatum game, and $Y_2$ is 2's income from this game.
+
+
+\
+
+
+Similarly for player 2:
+
+
+$$U_2(Y_2,Y_1) = Y_2 - |Y_1-Y_2|$$
+
+
+\
+
+
+*Here each player gains 1 unit of utility for each pound they earn, but loses a unit of utility for every pound of difference between the payoffs.*
+
+
+
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/ultimatumgametree.png")
+```
+
+
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/ultimatumfairness.png")
+```
+
+
+* *Notes on the above:**
+
+Here if earnings are equal, real payoffs are the same as earnings; 0,0 or 5,5 \
+Where earnings are unequal, player-1 gets 9 and player-2 gets 1 from material payoffs. \
+But because of a difference of 8 in earnings, both players lose 8 in psychological payoffs \
+so the net real payoffs if player-1 offered 1 and 2 accepted would be 9-8=1 for player-1 and 1-8=-7 for player-2. \
+Using BWI here we see the subgame perfect NE will be that player-1 offers 5 and player-2 accepts.
+
+\
+
+'Envy payoffs'
+
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/ultimatumenvy.png")
+```
+
+
+**Notes on the above:**
+Here we assume because of 'envy', real payoffs equal material payoffs minus the difference in payoffs *for the player with lower payoffs only.* \
+For the outcomes considered, only player-2's payoffs are adjusted from the material payoffs; \
+she gets 1-8 = -7 from accepting an offer of 1; her payoff is 1 but she loses 7 in envy. \
+Because of this she will not accept such an offer. Knowing this, player-1 will offer 5.
+
+
+## Supplemental (reading): Evidence on the Ultimatum Game
+
+
+Guth et al. (1982) presented the first experimental test of the ultimatum game.
+
+\
+This game has two players: a  Proposer and a Responder
+
+\
+Proposer has a pie of size 1. She must propose a split of the pie between the two players $(1-s, s)$
+
+\
+
+The Responder may:
+
+- accept (in which case the split is executed)
+- reject (in which case both players get zero
+
+
+\
+
+This is a 'take it or leave it offer' in bargaining. What do you think he/she will offer?  Do you think he/she will accept?  Why or why not?
+
+<!---
+\
+Now let us try this on veconlab, along with a simple 'Dictator' game
+http://veconlab.econ.virginia.edu/login.htm
+login to "elsb2"
+The prize is
+\
+> This program runs a two-person, bargaining game. In the Dictator version, one person simply decides unilaterally how to split a fixed amount of money. In the Ultimatum treatment, the proposer makes an offer of how to split the money, which the responder either accepts or rejects. An acceptance implements the proposed split, and a rejection results in zero earnings for both.
+\
+\
+"Random lottery incentive"
+I will randomly choose 1 stage/repetition for 2 participants for payment, and pay based on the actual choices.
+\
+-->
+\
+
+
+## Ultimatum game: theoretical predictions
+
+Allowing 'non-credible threats', this game has as many Nash equilibria as there are possible splits of the pie.
+
+
+In each of them, the Responder's strategy is to 'accept only if offered X (or more)' for some $X\geq0$, and the Proposer's strategy is to offer exactly X.
+
+
+But maybe these equilibria don't seem like reasonable predictions (why?)
+
+\
+
+Q: What does SPNE predict (use backwards induction)?
+
+
+- If the split is $(1,0)$, the Responder is indifferent between accepting and rejecting
+
+- That still means the Proposer offering $(1,0)$ and the Responder accepting is a NE
+
+\
+
+The subgame-perfect Nash equilibrium is found by solving the game backwards:
+
+The Proposer (correctly) anticipates the Responder will accept any offer
+
+- Thus she offers zero, which is accepted 'in equilibrium'
+
+(A 'near zero' offer would lead to a similar result, and might seem more intuitive)
+
+`r format_with_col("Note, that these are basic game theoretic predictions, not Behavioral.","gray")`
+
+\
+
+### What happens in experiments? {-}
+
+`r format_with_col("Class question: What do you think will happen?", "blue")`
+
+\
+
+- A 50-50 split is the most common offer
+
+- Responders tend to reject offers giving them less than 30\%, even when this is a lot of money.
+
+
+\
+
+
+Potential explanations for the above
+
+- Fairness concerns; monetary payoffs may not represent actual payoffs
+
+- Proposers may anticipate this, and thus offer more than the minimum to avoid their offer being rejected.  (Also, proposers may themselves have fairness preferences.)
+
+
+\
+
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/ult_table.pdf")
+```
+
+\
+
+In a variety of cultures and contexts (Henrich et al, 2006):
+
+\
+
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/ultimatumgameoffers_Science.png")
+```
+
+<!---
+## Discussion
+- Let's look at our results (and pay)
+- What do you think explained your choices? What did you think other people would do?
+- What real-world situations does this resemble?
+    - In what ways does this differ from a 'typical' bargaining situation
+-->
+\
+
+
+## Application: Give-if-you-win (EU vs. Prospect theory)
+
+
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/borisbanks.png")
+```
+
+\
+
+**EU over outcomes predicts these choices will be the same.**
+
+Here, in choosing *conditional* choices 'if I win' etc., the decision for each state (win or lose) are separate.
+
+- Max $EU = pr(win)u(win,choice if win) + pr(lose)u(lose,choice if lose)$
+- Choice for 'if I win' does *not* affect payoff 'if I lose'
+
+\
+
+**Before** I know the outcome, I may anticipate what my utility-maximising donation $g^*$ would be if I win the bonus
+
+- Let $c$ be own consumption, $Y$ income pre-bonus, $w$ the bonus amount, and $g_b$ the committed donation 'if I  win $w$'
+
+- I choose $g_b$ to maximize utility $u(c, g)$ s.t. budget constraint $c+g \leq Y+w$
+
+- If asked to pre-commit 'if I win', I commit to that choice, so $g_b=g^*$
+
+\
+
+**After** I have won the bonus $w$, I maximize utility $u(c, g)$ s.t. budget constraint $c+g \leq Y+w$
+
+- Same maximisation as above, so $g_a=g_b=g^*$
+
+
+\
+
+**However, other models predict distinct choices with the Before and After asks**
+
+**Reputation:** If I give to benefit my reputation or self-esteem, *unrealised* donations may matter, not just donation outcomes
+
+- This may be an incentive to commit *more* the less likely a donation needs to be paid
+- 'If I win the lottery megabucks, I will give it all away'
+
+\
+
+**Loss aversion:** If I am 'loss averse' over my own consumption, it may seem 'cheaper' to commit before I win the bonus than after
+
+Why? Because my *reference point* may change. Suppose I've £50k income and a potential £50k bonus with 50% probability
+
+- Before winning my reference consumption may be the EV, £75k
+
+- So a conditional donation to donate £10k if I have a total income+bonus of £100k may not seem like a loss
+
+- But after I win the bonus, my new reference consumption may be £100k
+
+- So each pound donated might feel like a loss
+
+\
+
+**What do you think happens when you ask people to donate either Before-conditionally or After winning a prize or bonus?**
+Do they  commit more 'before' than they give 'after', or vice versa, or are these equivalent?
+
+\
+
+### Field experiment {-}
+
+**One field experiment: University of Essex undergraduate students**
+
+\
+
+**Emails from DAs on behalf of FSS**
+
+<small>  Subject: Employability promotion -- a 1 in 4 chance of winning a £20 prize for doing a short survey. </small>
+\
+
+<small> Text: Please go to [*web site*] --  we have 80 free dinners for two in Colchester to give away, worth £20 each and at least 40 £20 Amazon vouchers!! If you log on, you will have a one in four overall chance of winning one of these prizes! </small>
+
+\
+
+<small> Details:  `r format_with_col("2 rounds over 2 academic years","gray")`. `r format_with_col("2 prizes in round 1, Amazon  only in round 2.","gray")`
+First covering Faculty of Social Science, then all departments. Sign in with email, orthogonal employability treatments.</small>
+
+$\rightarrow$ 352 valid responses with donation opportunities
+
+\
+
+**Before charity treatments**
+
+```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/eligibleforamazon.png")
+```
+
+```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/beforeamazon.png")
+```
+
+```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/wonamazon.png")
+```
+
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/after_amazon.png")
+```
+
+\
+
+**Results:**  In a variety of experiments, donation incidence and amounts are often higher and never lower in the Before treatment. This is statistically significant in two of five experiments and in the 'pooled' data.
+
+```{r  fig.cap = '', out.width='65%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/BarGrDonpropHiBefore_vAfter.png")
+```
+
+
+`r format_with_col(" see <https://davidreinstein.wordpress.com/research-and-publications/> under 'working papers'","RawSienna")`
+
+\
+
+More details of this project at giveifyouwin.org
+
+\
+
+```{r  fig.cap = '', out.height='4in', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/beforeafer_allexp.png")
+```
+
+\
+
+## Behavioral Economics: further exercises and examples
+
+*Below, I provide some revision material and questions focusing on Behavioral economics*
+
+
+- Recap 'converted ultimatum game' problems
+
+[comment]: <> (101EE)
+
+
+- Sources of evidence on various departures from classical assumptions
+
+
+[comment]: <> (101BB)
+
+\
+
+```{r  fig.cap = '', out.height='4in', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/ultimatumgame2017_exam.png")
+```
+
+From an earlier final exam
+
+Answer...
+
+1. As long as money payoffs are in my favour, I don't have envy, so maximise these if possible
+
+
+\
+
+2. So proposer will make smallest offer that responder will accept, presuming this is at or below 5
+
+
+\
+
+
+3. Responder accepts as long as Earnings - difference in earnings is at or above 0
+
+
+
+[comment]: <> (101EE)
+
+\
+
+### Sources of evidence and discussion {-}
+
+*I want you to have a decent background on...*
+
+
+- The Allais Paradox: setup, evidence, explanations
+
+\
+
+
+[comment]: <> (101BB)
+
+<!---
+- Inconsistent preferences, impatience and 'hyperbolic discounting'
+-->
+
+[comment]: <> (101EE)
+
+
+- 'Solving converted games'
+
+
+\
+
+
+- Some sense of the evidence 'for behavioral economics' in general
+
+\
+
+
+- Evidence on voluntary public goods provision and charitable giving (lab, field, etc) and factors leading to greater provision of each
+
+
+\
+
+
+- Relevance of 'behavioural biases' for public policy and business
+
+
+\
+
+**Evidence in general, some helpful (easier) readings**
+
+
+- Very good examples and applications in your text (Chapter 17), given references
+
+- DellaVigna, Stefano. "Psychology and economics: Evidence from the field." Journal of Economic literature 47.2 (2009): 315-372.
+
+- “EAST: Four simple ways to apply behavioural insights” (BIT, 2014)
+
+
+- [Nudge database](https://www.stir.ac.uk/media/schools/management/documents/economics/Nudge%20Database%201.2.pdf)
+
+\
+
+
+Also see popular books and web-tools by Dan Ariely ('Arming the Donkeys'), Richard Thaler, etc.
+
+Yudkowski's blogs $\rightarrow$ ['From AI to Zombies'](https://wiki.lesswrong.com/wiki/Rationality:_From_AI_to_Zombies')
+
+
+\
+
+[comment]: <> (101BB)
+
+
+**Fairness, social preferences**
+
+Discussion of fairness from 'Golden Balls' game show -- see [HERE](https://docs.google.com/document/d/1A8nFf0KYkRq5BTobWQf9X3QBEu3JmB_sCmOWd0vKoko/pub) and links provided
+
+
+­ Meier (2009). “A Survey of Economic Theories and Field Evidence on Pro‐Social Behavior”
+
+- List, John A. “Social Preferences: Some Thoughts from the Field.” Annual Review of Economics, vol. 1, 2009,
+pp. 563–579
+
+- Bowes and Gintis "Social Preferences" chapter in "A Cooperative  Species"
+
+
+\
+
+**Public goods contributions**
+
+
+- Chaudhuri, 2009. Sustaining cooperation in laboratory public goods experiments: a selective survey of the literature
+
+\
+
+**Time-inconsistency**
+
+
+- Ashraf, N. et al. (2006) “Tying Odysseus to the mast: Evidence from a commitment savings product in the Philippines”
+
+
+\
+
+**On charitable giving:**
+
+[innovationsinfundraising.org](innovationsinfundraising.org): A collaborative wiki guide to the evidence on practical influences on charitable giving
+
+\
+
+
+Behavioural Insights Team ['Applying behavioural insights to charitable giving'](http://www.behaviouralinsights.co.uk/publications/applying-behavioural-insights-to-charitable-giving/)
+
+
+\
+
+
+
+Ideas42: [Behavior and charitable Giving](http://www.ideas42.org/wp-content/uploads/2016/06/Behavior-and-Charitable-Giving_ideas42.pdf)
+
+
+\
+
+
+\url{Giveifyouwin.org}: Discussion of loss aversion, other biases, in the context of charitable giving ... see also \url{innovationsinfundraising.org}
+
+
+\
+
+List (2011). Econ Perspectives or List (2008, ExpEcon), “Introduction to field experiments in economics with applications to the economics of charity"
+
+
+
+
+\
+
+**Allais paradox**
+
+- Writeup in Wired magazine [HERE](https://www.wired.com/2010/10/the-allais-paradox/)
+
+- Yudkowski [on the Allais paradox](http://lesswrong.com/lw/my/the_allais_paradox/) ... and
+
+- Huck, Steffen, and Wieland Müller. "Allais for all: Revisiting the paradox in a large representative sample." Journal of Risk and Uncertainty 44.3 (2012): 261-293.
+APA
+
+\
+
+See also  [Misweighting probabilities](http://lesswrong.com/lw/ml/but_theres_still_a_chance_right/) ...many useful readings on LessWrong.org
+
+
+\
+
+
+
+### Additional relevant questions {-}
+
+
+\
+
+
+**(25 marks)   Describe a typical 'public goods' experiment, and some standard results. To what extent are these findings relevant for real world policymaking? Explain.  Please write \textit{clearly} and **concisely**.**
+
+\
+
+*Describe a typical 'public goods' experiment, and some standard results.*
+
+\
+
+
+- Significant cooperation/contributions (counter to  dominant-strategy prediction)
+
+- Some 'selfish' players, many 'reciprocal'
+
+- Declines with repetition but not to zero
+
+
+\
+
+
+- More cooperation when groups/players are kept constant than when meeting 'strangers' each time
+
+\
+
+
+- Factors such as communication, higher return rates, smaller groups increase cooperation
+
+\
+
+
+- Allowing sanctioning can sometimes improve contributions
+
+\
+
+*To what extent are these findings relevant for real world policymaking?*
+
+Relevance to real world:
+
+- Game theory predictions for total payoffs, not just for money $\rightarrow$ social and fairness preferences hard to control
+- NE not really a 'prediction' but a description of what would be an equilibrium
+- Limitations of lab; (scale of incentives, student participants\dots) NE still may be predictive in large real-world settings (mixed evidence on this)
+- Still, robustness of these results suggest we should be sceptical of NE as a universal prediction
+
+\
+
+Relevance for policy:
+
+- Anticipate some voluntary contributions; taxation need not always cover full costs
+- Structure institutions and local groups to facilitate contributions (see principles above and in slides); try not to 'crowd out' voluntarism
+- People may also cooperate in undesirable ways (benefits fraud, crime, corruption)
+
+
+[comment]: <> (101EE)
+
+\
+
+**(25 marks) In this module we discussed \textit{four} major ways in which behavioural economists argue that people diverge from classical assumptions. Briefly explain each of these four ways, citing some evidence (academic or anecdotal) for each.**
+
+
+There are four general ways people diverge from classical assumptions
+
+**1. Limited cognitive ability $\rightarrow$ difficult and costly to make complex decisions**
+
+It may be very costly and difficult to  do the calculations that we assume are part of standard maximization. Rather than strictly finding the optimal consumption bundles, choosing the optimal number of hours to work per day,  calculating the optimal investment portfolio, etc. people may use heuristics and 'rules of thumb'.
+
+
+\
+
+**Evidence for Limited Cognitive Ability:** `r format_with_col("This is too long an answer, I'm just giving you some ideas","gray")`
+
+Systematically incorrect answers  to simple financial literacy questions;  and responses correlate with holding an extremely high interest loans.
+
+Many people state they have keep separate fixed budgets for different  categories of expenditure (food, vacations, charity etc).
+
+In marketing/behavioral experiments adding more choices  has sometimes been found to reduce  purchases within a category.
+
+Also, adding an (unchosen) 'largest size' choice  seen to increase consumption of the second largest choice (heuristic: 'choose the middle option')
+
+See also 'taxi driver's heuristic'
+
+
+<!---
+Various experiments:  when people are given coupons and subsidies for one particular good,  for which they typically consume more than that amount of anyways,  this  still disproportionately increases their consumption of that item, rather than being fully fungible.  E.g., there's a paper where a 'drinks voucher' (relative to a 'food voucher')  at a restaurant leads to a greater overall consumption of beverages even for people who normally consume many beverages.
+-->
+
+\
+
+**2. Limited willpower $\rightarrow$  self control problems**
+
+People  struggle to make choices that they know are in their best long-term interest. (Evidence: see next part)
+
+**3. Limited self interest $\rightarrow$  care about others (fairness, altruism), issues beyond income/consumption**
+
+\textit{Evidence:}  Significant  charitable giving (1\% of UK GDP),  large part of income spent on family and gifts.  Rejection of positive offers in ultimatum game experiments  (in various lab and naturalistic contexts). Contribution to linear public goods, cooperation in  prisoners dilemmas, even in 1-shot games ...
+
+
+\
+
+**4. Inconsistent, changing, and 'non-outcome-based' preferences**
+
+\small
+
+People seem to act to maximise targets and avoid losses relative to reference points.  For example several papers report evidence consistent with people (e.g., taxi drivers) setting 'earnings targets' and thus working \textit{fewer hours} on days when their per-hour earnings are higher (and they should know this).    It can be shown that if drivers were to  work fewer hours on 'bad'  and more hours on 'good'  days they could more money working the same number of hours,  and even have less variance in a number of hours they work. This cannot be reconciled with a model maximising an unchanging utility function.
+
+
+
+\
+
+**(25 marks)  For \textit{TWO} of the major departures above, give a \textit{specific example} of such behaviour, and briefly describe the nature of the evidence for this, and present one behavioural economics model explaining this behaviour.**
+
+**First departure I am discussing: 'Inconsistent, changing, and 'non-outcome-based' preferences'**
+
+
+\
+
+**'Specific example of behaviour'**
+
+
+The Allais paradox offers evidence against Expected Utility maximisation (over outcomes) and in line with Loss Aversion and Prospect Theory.
+
+
+\
+
+ Scenario such as
+
+- Gamble A: 89\% chance win £ 1 mln, 10\% chance win £ 5 mln, \& 1\% chance win 0.
+
+- Gamble B: £1 million with certainty.
+
+\textit{vs.}
+
+- Gamble C: 89\% chance of winning 0 and an 11\% chance of winning £1 million
+
+- Gamble D: a 90\% chance of win 0  and 10\% chance of winning £5 million.
+
+Consistently in hypothetical and incentivised experiments people tend to choose B over A and also choose D over C.
+
+\
+
+\textit{This contradicts Expected Utility theory}:
+
+If $B \succ A$ then $EU(A) > EU(B)$
+
+$\rightarrow U(1m) > 0.89 \: U(1m) + 0.1 \: U(5m) + 0.01 \: U(0)$
+
+$\rightarrow$ $0.11 \: U(1m) >  0.1 U(5m) + 0.01 \: U(0)$
+
+\medskip
+
+
+\
+
+
+However,  if $D \succ C$ then $EU(D)>EU(C)$
+
+$\rightarrow 0.9 \: U(0) + 0.1 U(5m) > 0.89 \: U(0) + 0.11 \: U(1m)$
+
+Implying $0.1 \: U(5m) + 0.01 \: U(0) > 0.11 \: U(1m)$
+
+Contradicting the above!
+
+\
+
+
+**'Describe the nature of evidence for this'**
+
+**Evidence:**  In hypothetical experiments by Kahneman and Tversky, as well in experiments with real incentives (e.g., Huck and Muller),  people tend to choose B over A, and also to choose D over C. (Sometimes the same people  will make  of these apparently inconsistent choices but in general  the differences in proportions are large enough that we can show the general pattern even if we're only asking people to make a single choice.)
+
+\
+
+**'...and present one behavioural economics model'**
+
+\textit{Why do many people choose B over A and D over C?}
+
+\
+
+**One theory: Loss aversion/Prospect theory**
+
+
+Theory: People evaluate outcomes relative to \textit{reference points}. Falling below these reference points is particular costly to utility; the usual specification models utility as the  some of a  standard risk-averse utility function and a ' gain-loss' utility function. The latter is negative where some outcome (e.g., earnings) falls below a reference point; it's slope is assumed to be greatest for 'small losses' and then more gradual for larger losses. In net this can make people risk seekers over a range of losses, willing to increase the risk of a large loss to reduce the risk of a small loss. The reference points themselves may change depending on the framing of the decision, on previous expectation, on unrealised states, and in general on things that are not relevant to future material outcomes of the decision.
+
+
+\
+
+\
+
+\textit{Applying this to the example above ... (Allais Paradox)}
+
+Considering A & B, the ref. point may be close to £1000, as this can be had with certainty.
+
+-  A seems to 'risk a costly loss of £1000', thus may choose 'safer' $B>A$, notwithstanding its far lower EV (£1000 vs £1390)
+
+
+\
+
+Considering D & C, ref. point may be close to 0, as EV's of each are low, \& 0 is likeliest outcome
+
+- So 'don't worry about losses', choose D over C because  higher EV (£500 vs. £110)
+
+`r format_with_col("This could also be shown with a diagram of EU in income, and a  shifting reference point ; see notes and text","gray")`
+
+
+\
+
+*By the way, here are some more behavioural econ problems to practice ... from Nicholson and Snyder chapter 17 (12th ed, 11th similar)*
+
+- 17.2: this will be especially helpful for understanding the EU basis of the Allais Paradox
+- 17.3
+- (17.5)
+- 17.7: pretty good setup for time inconsistent behaviour
+- (17.8) - also a good setup for time inconsistency, has video solution on CourseMate
+- 17.9 - decent for understanding loss aversion. Should say 'would his choice change *if* his reference point' ('if' is missing)
+
+\
