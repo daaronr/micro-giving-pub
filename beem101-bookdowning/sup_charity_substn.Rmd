@@ -31,18 +31,18 @@ Simpler question: Does a typical "promotion for CRUK" cause more or less giving 
 
 - More difficult: Is the causality...
 
-. . .
+\
 
 
 "CRUK promo" $\rightarrow$
 
-. . .
+\
 
 
 "give more to CRUK"
 
 
-. . .
+\
 
 
 $\rightarrow$ give less (more) to Oxfam
@@ -52,18 +52,23 @@ $\rightarrow$ give less (more) to Oxfam
 
 - Hard to rule out *direct* effects of promo
 
-^[("mediation analysis" is difficult)]
+("mediation analysis" is difficult; -- see Heckman's work on this)
+
+
+
+
 
 - And do we want to include or exclude the impact of "less money remains to spend"
 
-^[Pollak calls this the 'money-income' effect]
+(Pollak calls this the 'money-income' effect; it is distinct from  the 'income effect' in the standard Slutsky decomposition.)
 
 
+\
 
 
 ## Why is it important/ who cares?
 
-- Moral issue for individuals, fundraisers, charities `r format_with_col("("am I really increasing the pie?")","gray")`
+- Moral issue for individuals, fundraisers, charities `r format_with_col("('am I really increasing the pie?')","gray")`
 
 - Practical issue for charity managers, charity networks, governments (tax, choice of charities to tax-favor)
 
@@ -71,8 +76,10 @@ $\rightarrow$ give less (more) to Oxfam
 
 - Intellectual: differentiates models and general understanding of other-regarding preferences and behavior
 
-^[My impression is (get or recover references) that charities publicly claim that the sector does not compete, there is 'learned giving', etc.
-but privately their fundraising strategies assume they are in competition for the same charity dollar.)]
+```{block2,  type='note'}
+My impression is (get or recover references) that charities publicly claim that the sector does not compete, there is 'learned giving', etc.
+but privately their fundraising strategies assume they are in competition for the same charity dollar.)
+```
 
 
 \
@@ -85,7 +92,7 @@ but privately their fundraising strategies assume they are in competition for th
 > to the [Katrina/ flooding] relief .... But the largess is starting to come at
 > the expense of charities with other missions (WSJ, 2005).
 
-***
+\
 
 > The challenge is people like Betty and Larry Sullivan ... They save
 > all the charity solicitations they receive each year until December, then sort
@@ -134,7 +141,7 @@ $x_{i}+p_{i}g_{i}-m_{i}=0$
 $g_{i}\geq 0,x_{i}\geq0$
 
 
-***
+\
 
 
 \begin{tabular} [c]{ll}
@@ -153,7 +160,7 @@ Impact (Duncan, 2004) & $u(x,Z(G_{-i}+g_{i})-Z(G_{-i})$\\
 \end{tabular}
 
 
-***
+\
 
 <!---
 \begin{tabular}[c]{ll}
@@ -180,7 +187,7 @@ $ k}$ 's: constants%
 
 ^[Add models from recent papers here]
 
-***
+\
 
 ---
 fontsize:11pt
@@ -197,29 +204,26 @@ Reinstein (2010) defines ''Expenditure substitution''
 
 ^[Note that if I care only about the total amount of the PG, the crowding out of 'my previous giving' should be the same as for others' or for government spending, plus the money-income effect (less remaining after my prev donation).]
 
-***
+\
 
-\begin{tabular}
-[c]{ll}\hline\hline
-**Model** & \textbf{Net Substitution?} \\\hline
-Shock/Appeal driven & None \\
-Public Goods (strict) & Complete within same category\\
-& otherwise none \\
-"Kantian" model & Only between similar categories\\
-Reciprocity & Anything goes, may depend\\
-& ... on group members' reaction\\
-Warm Glow (sophisticated) & "Anything goes"\\
- & "probably" some substitution.\\
-Impact Philanthropy (concave) & Substitution scales with "impact" \\
- & of shocked gift \\
-Tithing/Fixed Purse/Homogeneous & Complete (perfect crowding-out)\\\hline
-\end{tabular}
-
+| \*\*Model\*\*                   | **Net Substitution?**             |
+| :------------------------------ | :-------------------------------- |
+| Shock/Appeal driven             | None                              |
+| Public Goods (strict)           | Complete within same category     |
+|                                 | otherwise none                    |
+| "Kantian" model                 | Only between similar categories   |
+| Reciprocity                     | Anything goes, may depend         |
+|                                 | ... on group members’ reaction    |
+| Warm Glow (sophisticated)       | "Anything goes"                   |
+|                                 | "probably" some substitution.     |
+| Impact Philanthropy (concave)   | Substitution scales with "impact" |
+|                                 | of shocked gift                   |
+| Tithing/Fixed Purse/Homogeneous | Complete (perfect crowding-out)   |
 
 ## Literature  II:\ Lab Experiments
 
 
-***
+\
 
 ### Lab in-group dictator games and VCMs {-}
 
@@ -237,7 +241,7 @@ $||X||\rightarrow\infty$
 
     - KS find complementarities: giving for both PGs increases with a bonus for giving to one of these
 
-***
+\
 
 ### Lab tests of competition/crowding out, involving real charitable giving {-}
 
@@ -257,20 +261,20 @@ $||X||\rightarrow\infty$
 
 - Lab experiment, convenience sample
 
-***
+\
 
 
 ```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/firstwave_means_ed.png")
+ knitr::include_graphics(file.path("picsfigs","firstwave_means_ed.png"))
 ```
 
-***
+\
 
 ```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/secondwave_Ameans_ed.png")
+ knitr::include_graphics(file.path("picsfigs","secondwave_Ameans_ed.png"))
 ```
 
-***
+\
 
 > All of the specific shocks strongly increase giving to the targeted charities,
 > and this leads to decreased giving to the charities not targeted;
@@ -278,7 +282,7 @@ $||X||\rightarrow\infty$
 > subjects exhibit price-elastic demand and positive cross-price elasticities between charities,
 > particularly when the charities serve similar goals [Unicef & Care]
 
-. . .
+\
 
 > When subjects ... increase giving to one charity in periods where [it alone] is given to a positive treatment
 > they generally decrease their total giving to the other charities and rarely increase it
@@ -292,12 +296,12 @@ $||X||\rightarrow\infty$
 
 
 ```{r  fig.cap = '', out.width='4.3in', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/priceelast_reinstein2012.png")
+ knitr::include_graphics(file.path("picsfigs","priceelast_reinstein2012.png"))
 ```
 
 
 
-***
+\
 
 **Harwell et al. (2015, mimeo)**
 
@@ -308,7 +312,7 @@ $||X||\rightarrow\infty$
 3. Repeat donation decision.
 
 
-. . .
+\
 
 
 $\rightarrow$ Campaign for one charity "fully crowds out giving to the other charities without changing the total donations"
@@ -322,7 +326,7 @@ $\rightarrow$ Campaign for one charity "fully crowds out giving to the other cha
 
 ^[Finds expenditure substitution, as in Reinstein, but in contrast, complete crowding-out]
 
-***
+\
 
 **Ek (2017) "...The Effect of Similarity on Substitution..."**
 
@@ -339,16 +343,16 @@ Abstract: Donation matching and other directed interventions to encourage prosoc
 - Consider two dimensions of charity difference: Local/Global (geographical scope) and 'Cause dimension'
 
 
-. . .
+\
 
 
 Between-subject variation in charity paired with UNICEF:
 
 ```{r  fig.cap = '', out.height='0.9in', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/ektreatments.png")
+ knitr::include_graphics(file.path("picsfigs","ektreatments.png"))
 ```
 
-***
+\
 
 *Design*
 
@@ -369,35 +373,35 @@ Between-subject variation in charity paired with UNICEF:
 
 ^[Note they've a sixth round with exchange rate of 16 for both, but they don't discuss it much]
 
-***
+\
 
 ```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/sliderbars.png")
+ knitr::include_graphics(file.path("picsfigs","sliderbars.png"))
 ```
 
-***
+\
 
 *Results*
 
 
 ```{r  fig.cap = '', out.width='4.2in', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/ek_effortresponse.png")
+ knitr::include_graphics(file.path("picsfigs","ek_effortresponse.png"))
 ```
 
 
 ^[Little or no response of *effort* to the exchange rates]
 
-***
+\
 
 
 ```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/ekpriceresponse.png")
+ knitr::include_graphics(file.path("picsfigs","ekpriceresponse.png"))
 ```
 
 
-\footnote{Give less (basically lower share, as earnings are similar) to UNICEF when other charity is 'cheaper'
+^[Give less (basically lower share, as earnings are similar) to UNICEF when other charity is 'cheaper'
 And slope is steeper (confirmed in regressions) when paired with a similar charity;
-much shallower when paired with charity that is dissimilar along othb dimensions }
+much shallower when paired with charity that is dissimilar along othb dimensions ]
 
 ^[Todo: Think about, look closer into whether this difference holds for people at the intensive margin (give to both).]
 
@@ -408,11 +412,11 @@ much shallower when paired with charity that is dissimilar along othb dimensions
 
 
 
-***
+\
 
 ## Lit. III:\ Field evidence (field and natural experiments, observational results)
 
-***
+\
 
 ### Observational (PSID) results (Reinstein, 2010) {-}
 
@@ -430,22 +434,22 @@ Data: 2001-2007 waves of the PSID/COPPS  (annual then biennial), recall survey, 
 
 - Interpretation: heterogeneous motivations for giving, small vs large givers
 
-\footnote{Small donors may be mainly driven by temporary shocks and personal appeals, larger givers may have concave multi-charity warm-glow preferences.
- This broadly agrees with findings from Dellavigna et al; and Karlan and McConnell}
+^[Small donors may be mainly driven by temporary shocks and personal appeals, larger givers may have concave multi-charity warm-glow preferences.
+ This broadly agrees with findings from Dellavigna et al; and Karlan and McConnell]
 
 
-***
+\
 
 
 ```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/distinctcat_resid_psid.png")
+ knitr::include_graphics(file.path("picsfigs","distinctcat_resid_psid.png"))
 ```
 
 <br> \bigskip
 
 *(Reinstein, 2010)*
 
-***
+\
 
 ### Disasters: {-}
 
@@ -455,7 +459,7 @@ Data: 2001-2007 waves of the PSID/COPPS  (annual then biennial), recall survey, 
 
     - Argue evidence against (complete) crowding out
 
-***
+\
 
 Scharf ea. (15, unfinished):
 
@@ -473,8 +477,8 @@ Scharf ea. (15, unfinished):
 
     - Giving to *all* charities, even unrelated ones, seems to increase in the 5 weeks after disaster, but then decrease in weeks 6-13
 
-\footnote{"Second, for the most part the large increase in giving to international relief does not come at the expense of giving to other charitable purposes. Looking at the effect of disaster appeals to donations to the combination of all other charitable purposes (except international relief), we fail to reject zero substitution. The failure to reject zero substitution is not due to large standard errors, but rather effects that are close to zero and precisely estimated. When we look within the “all other” category at more narrowly defined charitable purposes, we also fail to reject zero substitution in all but one case. Giving to health charities is the one case we cannot reject zero substitution, and even there the magnitude of substitution is small. Third, although the substitution we find between international relief and other)
-charitable purposes is statistically indistinguishable from zero (excepting health), we see that the disaster appeals are associated with a behavioural response in giving to other charitable purposes, but the response is a shift in the timing of giving to other purposes. That is, the disaster appeals have an effect on giving to other charitable purposes, but the effect is time-shifting, not substitution.}
+^["Second, for the most part the large increase in giving to international relief does not come at the expense of giving to other charitable purposes. Looking at the effect of disaster appeals to donations to the combination of all other charitable purposes (except international relief), we fail to reject zero substitution. The failure to reject zero substitution is not due to large standard errors, but rather effects that are close to zero and precisely estimated. When we look within the “all other” category at more narrowly defined charitable purposes, we also fail to reject zero substitution in all but one case. Giving to health charities is the one case we cannot reject zero substitution, and even there the magnitude of substitution is small. Third, although the substitution we find between international relief and other)
+charitable purposes is statistically indistinguishable from zero (excepting health), we see that the disaster appeals are associated with a behavioural response in giving to other charitable purposes, but the response is a shift in the timing of giving to other purposes. That is, the disaster appeals have an effect on giving to other charitable purposes, but the effect is time-shifting, not substitution.]
 
 
 <!---
@@ -483,7 +487,7 @@ At the other end of the other spectrum, Lange and Stocking (2012) provide a fiel
 
 
 ### Lange & Stocking (12) {-}
-(Todo: add notes on this paper)
+<!-- (Todo: add notes on this paper) -->
 
 ### Natural expt: Meer (17) {-}
 
@@ -526,17 +530,17 @@ We have access to the databases of five large charity organizations in the Nethe
 -->
 
 ```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/donkers_mailings.png")
+ knitr::include_graphics(file.path("picsfigs","donkers_mailings.png"))
 ```
 
-***
+\
 
 **Results**
 
 *Direct:* each experimental mailing generates 1.81 Euro in revenues, on average, so the short-run impact of mailings is positive.
 
 
-. . .
+\
 
 
 <br> \bigskip
@@ -544,13 +548,13 @@ We have access to the databases of five large charity organizations in the Nethe
 *Cannibalization, net:* Each mailing lowers future revenues by 1.21 Euros, representing a 62% loss of the initial gain ...the net revenues of 0.69 Euro is still statistically significant.
 
 
-***
+\
 
 
 *Competition*
 
 
-. . .
+\
 
 
 <br> \bigskip
@@ -560,7 +564,7 @@ Extensive margin:  -0.36\% impact of a competitive mailing (cf predicted respons
 Combined margins: reduction of 0.10 Euros for an additional competitive mailing (cf 2.41 Euros baseline)
     - 10\% summed effect on all competitors
 
-***
+\
 
 Long run: 5 months
 
@@ -571,14 +575,14 @@ Long run: 5 months
 
 - Marketing policy suggestions...
 
-\footnote{Cannibalization is estimated to be about 63\%, so mailings are profitable for the charity as long as the costs are lower than 37% of the revenues
+^[Cannibalization is estimated to be about 63\%, so mailings are profitable for the charity as long as the costs are lower than 37% of the revenues
   or about 0.90 Euro. Accounting for sector-level effects, there is an additional loss of 10% of the revenues through competitive effects.
  The costs of a mailing should there- fore not exceed 27\% of revenues, which is about 0.65 Euro.
 [cf actual mailing cost of 0.51 Euro], charities can still send out more mailings to increase their own revenues,
- without harming the total amount of money available for the good causes that the charitable sector supports as a whole.}
+ without harming the total amount of money available for the good causes that the charitable sector supports as a whole.]
 
 
-***
+\
 
 ## Synthesis, limits of previous evidence
 
@@ -614,7 +618,7 @@ Nonstudents (marketing list, local Colchester residents) get emails and letters:
 
 - "Second Ask" treatment at end of Omnibus survey
 
-***
+\
 
 Nonstudents, first invitation email, includes language:
 
@@ -622,7 +626,7 @@ Nonstudents, first invitation email, includes language:
 > You have been randomly selected for a special reward for signing up - a £10 Amazon voucher!
 
 
-***
+\
 
 Students (already ESSExLab participants) get email invitations:
 
@@ -635,7 +639,7 @@ Students (already ESSExLab participants) get email invitations:
 - "Second Ask" treatment at end
 
 
-***
+\
 
 
 *First ask treatments (between-subject randomisation)*
@@ -644,7 +648,7 @@ Students (already ESSExLab participants) get email invitations:
 2. Asked for Oxfam
 3. Asked for British Heart Foundation
 
-***
+\
 
 *Second ask treatments (between-subject randomisation, balance by first treatment)*
 
@@ -652,25 +656,25 @@ Students (already ESSExLab participants) get email invitations:
 1. Asked for CRUK
 2. Ask for Save the Children
 
-***
+\
 
 ```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("askforCRUK.png")
+ knitr::include_graphics(file.path("picsfigs","askforCRUK.png"))
 ```
 
-***
+\
 
 ```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("askSTC.png")
+ knitr::include_graphics(file.path("picsfigs","askSTC.png"))
 ```
 
-***
+\
 
 ```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("askctd.png")
+ knitr::include_graphics(file.path("picsfigs","askctd.png"))
 ```
 
-***
+\
 
 *Charity choices; similar or distinct*
 
@@ -680,7 +684,7 @@ Students (already ESSExLab participants) get email invitations:
 
     - Similarity was measured using both unincentivized and beauty-contest elicitation.
 
-***
+\
 
 ### Timing, samples {-}
 
@@ -699,7 +703,7 @@ Students (already ESSExLab participants) get email invitations:
 - 97 completed (33\% 'attrition')
 
 
-***
+\
 
 1. Student invites first ask (Omnibus)
 
@@ -719,7 +723,7 @@ Students (already ESSExLab participants) get email invitations:
 
 - 144 completed (35\% 'attrition')
 
-***
+\
 
 ### Results (very preliminary, see Stata) {-}
 
@@ -729,7 +733,7 @@ Students (already ESSExLab participants) get email invitations:
 
 - Evidence of selective attrition for nonstudents
 
-***
+\
 
 
 ## What determines where people give?
@@ -743,6 +747,5 @@ Students (already ESSExLab participants) get email invitations:
 
 - My ongoing experiments with ranking and rating
 
-#Group project work (iii), feedback
 
 

@@ -122,21 +122,21 @@ $$MP_L=\frac{\partial}{\partial L}f(K,L)$$
 
 
 ```{r  fig.cap = '', out.height='30%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/outputMP1.png")
+ knitr::include_graphics(file.path("picsfigs","outputMP1.png"))
 ```
 
 
 ***
 
 ```{r  fig.cap = '', out.height='30%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/outputMP2.png")
+ knitr::include_graphics(file.path("picsfigs","outputMP2.png"))
 ```
 
 
 ***
 
 ```{r  fig.cap = '', out.height='30%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/outputMP3.png")
+ knitr::include_graphics(file.path("picsfigs","outputMP3.png"))
 ```
 
 Given its production choice, the firm tries to produce it at the minimum cost
@@ -239,14 +239,14 @@ Also, if markets for labour and capital are *(perfectly) competitive*, when we c
 
 ## Isoquant maps, rate of technical substitution (RTS)
 
-The 'isoquant' depicts all combinations of inputs that yield the same amount of output.  
+The 'isoquant' depicts all combinations of inputs that yield the same amount of output.
 
 'Iso' probably means 'the same' in some language. So 'isoquants' connect all points, all combinations of output that produce the same 'quant'(ity.)
 
 This is depicted below.
 
 ```{r  fig.cap = '', out.height='30%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/prod_isoquant1.png")
+ knitr::include_graphics(file.path("picsfigs","prod_isoquant1.png"))
 ```
 
 Suppose points A and B produce the same output.
@@ -254,10 +254,10 @@ Suppose points A and B produce the same output.
 ***
 
 ```{r  fig.cap = '', out.height='30%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/prod_isoquant2.png")
+ knitr::include_graphics(file.path("picsfigs","prod_isoquant2.png"))
 ```
 
-...They will then be on the same isoquant 
+...They will then be on the same isoquant
 
 \
 
@@ -272,7 +272,7 @@ The slope of these is called the 'Rate of Technical Substitution,' to be defined
 
 
 ```{r  fig.cap = '', out.height='20%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/prod_isoquant3.png")
+ knitr::include_graphics(file.path("picsfigs","prod_isoquant3.png"))
 ```
 
 ***
@@ -304,7 +304,7 @@ $$MRTS = MP_L/MP_K$$
     - If MPL is large I can give up much K, because getting more L adds a lot of production
     - If MPK is large I cannot give up as much K to get more L, because reducing K reduces output a lot
 
-- Diminishing MRTS is a common assumption 
+- Diminishing MRTS is a common assumption
 
   \
 
@@ -317,7 +317,7 @@ Just as a consumer choosing to consume a positive amount of two goods will find 
 So a firm will choose a point on some 'isocost curve' (all pairs of inputs  costing a certain amount) where the 'isoquant' (all pairs of inputs producing the same quantity) has the same slope. The same marginality argument holds -- if this is not the case, the firm could produce more at the same cost (or the same at a lower cost).
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/isocost-isoquant.png")
+ knitr::include_graphics(file.path("picsfigs","isocost-isoquant.png"))
 ```
 
 If the firm depicted above
@@ -330,7 +330,7 @@ $\rightarrow$ It will choose to use 4 grills and 4 workers per hour: this is the
 
 The other points on the same isoquant (inputs yielding 40 hamburgers/hour) all cost more. Dually, the other points on the same isocost line (costing \$40/hour) all produce less.
 
-Such optimum input choices (where both inputs are used) must occur at points where the isocost is tangent to the isoquant... the 'rate at which one can trade off between the inputs at no cost' equals the 'rate at which inputs tradeoff to hold the output constant.' The intuition is the same as in the consumer case.  (But again, the difference is that the firm will *also* choose its output level, there is no equivalent of the 'budget constraint'.) 
+Such optimum input choices (where both inputs are used) must occur at points where the isocost is tangent to the isoquant... the 'rate at which one can trade off between the inputs at no cost' equals the 'rate at which inputs tradeoff to hold the output constant.' The intuition is the same as in the consumer case.  (But again, the difference is that the firm will *also* choose its output level, there is no equivalent of the 'budget constraint'.)
 
 <!---
 Todo: give more explanation here
@@ -480,38 +480,38 @@ The shape of the marginal cost curve depends on the production function
 \
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/crsTCcurve.png")
+ knitr::include_graphics(file.path("picsfigs","crsTCcurve.png"))
 ```
 
 \
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/crscostcurves.png")
+ knitr::include_graphics(file.path("picsfigs","crscostcurves.png"))
 ```
 
 \
 
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/drsTCcurve.png")
+ knitr::include_graphics(file.path("picsfigs","drsTCcurve.png"))
 ```
 
 \
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/drscostcurves.png")
+ knitr::include_graphics(file.path("picsfigs","drscostcurves.png"))
 ```
 
 \
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/irsTCcurve.png")
+ knitr::include_graphics(file.path("picsfigs","irsTCcurve.png"))
 ```
 
 \
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/irscosts_fix.png")
+ knitr::include_graphics(file.path("picsfigs","irscosts_fix.png"))
 ```
 
 \
@@ -576,11 +576,11 @@ You can always just try doubling everything and see if output doubles but this w
         - You should produce in multiples of 100, but could be CRS for each multiple of 100
 
 ```{r  fig.cap = '', out.height='15%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/3dhead.jpg")
+ knitr::include_graphics(file.path("picsfigs","3dhead.jpg"))
 ```
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/mesTCcurve.png")
+ knitr::include_graphics(file.path("picsfigs","mesTCcurve.png"))
 ```
 
 - As we shall see, in a perfectly competitive market, firms must produce as cheaply as all other firms, or they must exit

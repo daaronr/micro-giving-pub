@@ -111,7 +111,7 @@ Inferior good
 \
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/normalgood.png")
+ knitr::include_graphics(file.path("picsfigs","normalgood.png"))
 ```
 
 
@@ -121,7 +121,7 @@ Inferior good
 
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/inferiorgood.png")
+ knitr::include_graphics(file.path("picsfigs","inferiorgood.png"))
 ```
 
 
@@ -193,7 +193,7 @@ More consumption of each good is possible, but the MRS may differ at this higher
 \
 
 ```{r  fig.cap = '', out.width='65%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/incomeandsubstfx.png")
+ knitr::include_graphics(file.path("picsfigs","incomeandsubstfx.png"))
 ```
 
 (Note: In the lecture we move to the PPT slides to illustrate this, beginning with 'Change in A Good’s Price'.)
@@ -256,7 +256,7 @@ Todo: give more explanation here
 -->
 
 ```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/substfxperfect_trim.png")
+ knitr::include_graphics(file.path("picsfigs","substfxperfect_trim.png"))
 ```
 
 
@@ -283,14 +283,14 @@ Note that, for the above cases, if we consider the *combined* substitution and i
 
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/griffin.jpg")
+ knitr::include_graphics(file.path("picsfigs","griffin.jpg"))
 ```
 
 - If the price of a good increases, can quantity demanded actually *INCREASE*?!
     - Yes, if the good is *very* inferior,  not very substitutable,  and is a large portion of income.
     We call this case a *Giffen good*.
-    - It has never been seen and documented in the wild 
-    
+    - It has never been seen and documented in the wild
+
   \
 
 - See Powerpoint
@@ -299,22 +299,22 @@ Note that, for the above cases, if we consider the *combined* substitution and i
 
 
 
-## More formal statements of properties of Marshallian demand 
+## More formal statements of properties of Marshallian demand
 
 Source^[Preston, 2006; https://www.ucl.ac.uk/~uctp100/g021/g021lect.pdf; notation changed to agree with more standard (Jehle and Reny) notation]
 
-Note: *bold* means 'vectors'. 
+Note: *bold* means 'vectors'.
 
 \
 
 
-Budget set 
+Budget set
 
 $$B=\{\mathbf{q} \in R^n_{+}|\mathbf{p'q} \leq I \}$$
 
-Slopes $dq_i/dq_j|_B = -p_j/p_i$. 
+Slopes $dq_i/dq_j|_B = -p_j/p_i$.
 in
-Consumer chooses $\mathbf{x}(\mathbf{p},I)\in B$; Marshallian demands. 
+Consumer chooses $\mathbf{x}(\mathbf{p},I)\in B$; Marshallian demands.
 
 \
 The graph of $x_i(\mathbf{p},I)$ in $y$ is the 'Engel curve'.
@@ -327,13 +327,13 @@ $$\eta_i \equiv \frac{\partial x_i}{\partial I} / \frac{x_i}{I}  = \frac{\partia
 
 'By what percentage does consumption of i change as income changes by a small percent?'
 
-- $\eta_i > 0$ $\rightarrow$ 'normal good', otherwise 'inferior' 
+- $\eta_i > 0$ $\rightarrow$ 'normal good', otherwise 'inferior'
 
 \
 
 Applying this to 'budget shares': $s_i \equiv p_i x_i/I$... noting these must add up to one: $\sum_{i=1..n}s_i=1$
 
-- $\eta_i > 1$ $\rightarrow$ 'luxury' (budget share rises in income), otherwise 'neccessity' 
+- $\eta_i > 1$ $\rightarrow$ 'luxury' (budget share rises in income), otherwise 'neccessity'
 \
 
 `r format_with_col("Can you write the own price elasticity  in this notation?","blue")`^[$\epsilon_i \equiv \frac{\partial x_i}{\partial p_j} / \frac{x_i}{p_j} $]
@@ -347,9 +347,9 @@ If an individual 'always spends all her income' then this equality must hold eve
 
 - between how things *change* in response to income and price...
   -as one spends more on one good she must spend less on another
-  
+
 - between *shares* of expenditure and how these change.
-  
+
 
 Rewriting the budget constraint with the Marshallian demands vector $\mathbf{x}$, and imposing budget-balance (which can be proved must hold for an optimising consumer given local nonsatiation):
 
@@ -369,14 +369,14 @@ Thus not all goods can be inferior ($\epsilon_i < 0$); these must be balanced by
 
 \
 
-Also not all goods can be luxuries ($\epsilon_i > 1$) and not all goods can be necessities ($\epsilon_i < 1$). These must balance each other out, in an expenditure-weighted sense. 
+Also not all goods can be luxuries ($\epsilon_i > 1$) and not all goods can be necessities ($\epsilon_i < 1$). These must balance each other out, in an expenditure-weighted sense.
 \
 
 Differentiating the 'demand budget constraint wrt some price $p_i$ yields *Cournot aggregation*:
 
 (rem: product rule here, carried through sums )
 
-$$x_j + \sum_i p_i \frac{\partial x_i}{\partial p_j} = 0 \rightarrow$$ 
+$$x_j + \sum_i p_i \frac{\partial x_i}{\partial p_j} = 0 \rightarrow$$
 The marginal change in expenditure as $j$'s price changes sums the amount of $j$ originally purchased and the sum of the prices of other goods times their responses to the price change in j.
 
 Next we multiply this by the price of j and divide by income $I$ to get (bunch of steps here:)
@@ -385,14 +385,14 @@ $$ -s_j = \sum s_i \epsilon_{ij} $$
 
 The budget share on j plus the sum of the budget shares of other goods multiplied by the cross-price elasticities must add up to 0. ... as the price of j increases the price-weighted consumption shares must decrease.  So, e.g., all goods cannot be Giffen.
 
-\ 
+\
 
 ## Some other important functions to know about (doctoral prep):
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/axioms.png")
+ knitr::include_graphics(file.path("picsfigs","axioms.png"))
 ```
-  
+
 
 
 <br> <br> \bigskip
@@ -415,7 +415,7 @@ Expenditure function: How much income you need to to get a certain utility given
 
 $$E(p_x,p_y,U_0)=min(p_xx+p_yy) \text{ s.t. } U(x,y) \geq U_0$$
 
-*Min* and not *argmin* ... the expenditure amount 
+*Min* and not *argmin* ... the expenditure amount
 
 \
 
@@ -482,14 +482,14 @@ Totally differentiating these equalities allows us to relate the compensated and
 \
 
 
-The proof of Roy's identity is rather involved and uses the envelope theorem. However, I always thought I saw some intuition for it, if we rearrange it. 
+The proof of Roy's identity is rather involved and uses the envelope theorem. However, I always thought I saw some intuition for it, if we rearrange it.
 
 ```{block2,  type='technote'}
 
 What is the [Envelope theorem](https://mjo.osborne.economics.utoronto.ca/index.php/tutorial/index/1/mee/t)?
-  
-  
-```  
+
+
+```
 
 
 \
@@ -502,7 +502,7 @@ But why is it OK to consider this 'from the initial consumption point' and not a
 
 <br> <br> \bigskip
 
-Intuition for Sheppard's Lemma is easier.  How much more do we need to spend to get the same utility if $p_x$ rises? 
+Intuition for Sheppard's Lemma is easier.  How much more do we need to spend to get the same utility if $p_x$ rises?
 
 We must spend, at the margin, at a rate equal to our previous consumption of $x$, $h_x$. Again, we don't need to consider the adjustment to the consumption bundle in answering this *particular* question because of the envelope theorem.
 
@@ -633,7 +633,7 @@ $$cpi_{19}=\frac{b_{19}}{b_{82}}$$
 An unadjusted (Fixed-basket) CPI 'claims' you need $I'$ to be as well off in 2019. I.e., to buy *the exact same basket*, including vinyl records.\ But, as seen in the figure below, by substituting you could be as well off with the lower level of income $I''$\ (And income $I'$ would actually make you *better* off).
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/cpi_bias.png")
+ knitr::include_graphics(file.path("picsfigs","cpi_bias.png"))
 ```
 
 <br> <br> \bigskip
@@ -683,7 +683,7 @@ Have you seen this?
 
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/ukwindows.jpg")
+ knitr::include_graphics(file.path("picsfigs","ukwindows.jpg"))
 ```
 
 \textcolor{gray}{1696: An Act for granting to His Majesty several Rates or Duties upon Houses for making good the Deficiency of the clipped Money...
@@ -698,7 +698,7 @@ Consider the 'least efficient tax': Suppose the UK government imposes a tax on a
 What's going on here?
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/tudoroverhang.jpg")
+ knitr::include_graphics(file.path("picsfigs","tudoroverhang.jpg"))
 ```
 
 ^[Note: 'Taxes based on ground-floor area' are mentioned throughout the web, but I couldn't find an authoritative reference to this. If anyone finds one, please let me know!]
@@ -726,7 +726,7 @@ A common measure of the burden: 'amount a person would be willing to pay to avoi
 
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/lumpsum1.png")
+ knitr::include_graphics(file.path("picsfigs","lumpsum1.png"))
 ```
 
 
@@ -944,21 +944,21 @@ In each case we find new point of tangency with indifference curve. We plot this
 \
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/dmd1.png")
+ knitr::include_graphics(file.path("picsfigs","dmd1.png"))
 ```
 
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/dmd2.png")
+ knitr::include_graphics(file.path("picsfigs","dmd2.png"))
 ```
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/dmd3.png")
+ knitr::include_graphics(file.path("picsfigs","dmd3.png"))
 ```
 
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/dmd4.png")
+ knitr::include_graphics(file.path("picsfigs","dmd4.png"))
 ```
 
 
@@ -1009,7 +1009,7 @@ Consumer surplus
 
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/cons_surplus.png")
+ knitr::include_graphics(file.path("picsfigs","cons_surplus.png"))
 ```
 
 
@@ -1075,7 +1075,7 @@ Market demand curve
 
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/summarketdemandcurve.png")
+ knitr::include_graphics(file.path("picsfigs","summarketdemandcurve.png"))
 ```
 
 `r format_with_col("Make sure you can do numerical examples of this","gray")`
@@ -1194,7 +1194,7 @@ $Q = ap^b$ where $b<0$, the price elasticity of demand is b.
 
 
 ```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/elasticities_are_logs_post.png")
+ knitr::include_graphics(file.path("picsfigs","elasticities_are_logs_post.png"))
 ```
 
 \

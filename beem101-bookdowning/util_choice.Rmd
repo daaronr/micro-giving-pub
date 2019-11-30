@@ -66,7 +66,7 @@ If you got amnesia and forgot what you decided and then were in the same situati
 
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/mortys-mind-blower.png")
+ knitr::include_graphics("../picsfigs/mortys-mind-blower.png")
 ```
 
 <br> \bigskip
@@ -242,7 +242,7 @@ Completeness and transitivity (and continuity)  are necessary for people's choic
 The following is `r format_with_col("forbidden","red")`: "I cannot choose between a ski holiday and a beach holiday, yet I am not indifferent between these."
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/donkeybales.jpeg")
+ knitr::include_graphics(file.path("picsfigs","donkeybales.jpeg")))
 ```
 
 `r format_with_col("Why *wouldn't* I be able to express a preference? In the case above that seems strange, but for other cases it may be extremely difficult or painful to make a choice, or very hard to compare two things. Imagine if you were asked to choose between never seeing your mother or never seeing your father. In general, economists' standard approach assumes we have a consistent preference ranking over all possibilities, and choose accordingly.  Other social sciences see this differently/","gray")`
@@ -381,10 +381,11 @@ An interesting discussion of 'money pumps' (and  'Dutch books') in terms of pref
 
 
 
-### 3. More is better ('global nonsatiation') {-}
+### 3. More is better ('global nonsatiation') {-};
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/moreisbetter.png")
+ knitr::include_graphics(file.path("picsfigs","moreisbetter.png"))
+
 ```
 
 Perhaps this seems unreasonable? One way you might justify it: If the product is a 'bad' (e.g., pollution), redefine the product as the *absence* of the product.
@@ -415,14 +416,14 @@ Strictly, most results only require 'local nonsatiation'; starting from any cons
 With differentiable utility function $u(\mathbf(x))$, a function of vector $\mathbf{x}=(x_i,...x_n)$...
 
 Global nonsatiation is simply defined as:
-  
+
 $$\frac{\partial u(\mathbf{x})}{\partial x_i}>0 \forall i=1,...,n$$.
 
 \
 
 Local nonsatiation is simply defined as:
-  
-  
+
+
 $$\frac{\partial u(\mathbf{x})}{\partial x_i}>0$$ for some $i=1,...,n$.
 
 ```
@@ -470,7 +471,7 @@ Consider two houses of 800 sq ft, but A is 1 mile closer to my work than B. The 
 
 In fact, lexicographic preferences (in a continuous product space) *cannot* be represented by a utility function. (There is a good discussion of this in Gravelle and Reese appendix 1.)
 
-> The lexicographic ordering does not satisfy the assumption of continuity, since the indifference set is a point and not a continuous curve. If we reduce the amount of x1 in the bundle, by however small an amount, we can find no amount of x2 to compensate for the change (the drunkard cannot be bribed by any amount of bread to give up even a sip of beer). 
+> The lexicographic ordering does not satisfy the assumption of continuity, since the indifference set is a point and not a continuous curve. If we reduce the amount of x1 in the bundle, by however small an amount, we can find no amount of x2 to compensate for the change (the drunkard cannot be bribed by any amount of bread to give up even a sip of beer).
 
 <br> \bigskip
 
@@ -705,7 +706,7 @@ One reason economists like this 'quasiconcavity' is because it rules out the 'fa
 the local, but not global optima, so we only need to use the first-order conditions to find the optima. (*But is this '[looking under the streetlight](https://en.wikipedia.org/wiki/Streetlight_effect) to find our keys' or is it truly without loss of generality?*)
 
 
-\ 
+\
 
 Without quasiconcavity there may also be no demand *function* only a *demand correspondence*: at a given price and income there may be more than one optimising choice!
 
@@ -1139,7 +1140,7 @@ When two vectors $\mathbf{A}$ and $\mathbf{B}$ are in the same direction, i.e., 
 
 This implies that at optimum 'the rate of increase in utility is greatest in the direction of the vector tangent to the budget line (plane)'...
 
-Which tells us that the plane tangent to the '(multi-dimensional) indifference surface' at this point is the budget plane. 
+Which tells us that the plane tangent to the '(multi-dimensional) indifference surface' at this point is the budget plane.
 
 \
 
