@@ -514,7 +514,7 @@ To get the most out of the lectures, I advise you to
 Here are some broad lessons that I hope you take away from this module, And that will help you throughout... I will come back to these.
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/fortunecookieyoda.jpg")
+ knitr::include_graphics(file.path("picsfigs","fortunecookieyoda.jpg"))
 ```
 
 \textrm{Economists do not know everything: We know very little but we have thought through many arguments}
@@ -686,7 +686,7 @@ Consider the parable of the tortoise and the hare (Aesop)...
 \
 
 ```{r  fig.cap = '', out.width='55%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/tortoisehare.jpg")
+ knitr::include_graphics(file.path("picsfigs","tortoisehare.jpg"))
 ```
 
 
@@ -818,7 +818,7 @@ At this point we consider a simple and specific model to fix ideas, to make thin
 ```
 
 ```{r  fig.cap = '', out.height='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/PPF_text.png")
+ knitr::include_graphics(file.path("picsfigs","PPF_text.png"))
 ```
 
 Above, we see a depiction of the "production possibility frontier" (PPF), explained in the figure's caption. You may be familiar with this from your previous study. The PPF describes the maximum amount of one good that can be produced conditional on a certain quality of another good being produced.
@@ -918,7 +918,7 @@ Note: `r format_with_col("For comprehension: *Be sure you can draw the PPF; cons
 >Studies of honeybees have found that they generally do not gather all of the nectar in a particular flower before moving on.
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/buzbee.jpg")
+ knitr::include_graphics(file.path("picsfigs","buzbee.jpg"))
 ```
 
 
@@ -929,7 +929,7 @@ Note: `r format_with_col("For comprehension: *Be sure you can draw the PPF; cons
 
 
 ```{r  fig.cap = '', out.width='1.8in', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/bumblebeearticle.png")
+ knitr::include_graphics(file.path("picsfigs","bumblebeearticle.png"))
 ```
 
 
@@ -938,7 +938,7 @@ Note: `r format_with_col("For comprehension: *Be sure you can draw the PPF; cons
 The economics of trade may also apply to the natural world in certain ways.
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/antaphid.jpg")
+ knitr::include_graphics(file.path("picsfigs","antaphid.jpg"))
 ```
 
 
@@ -1214,10 +1214,10 @@ I will remind you of the rules for dealing with these whenever it is necessary.
 For linear functions the slope is the same at any point. For nonlinear functions it may differ at each point.
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/linearslope.jpg")
+ knitr::include_graphics(file.path("picsfigs","linearslope.jpg"))
 ```
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/nonlinearslope.jpg")
+ knitr::include_graphics(file.path("picsfigs","nonlinearslope.jpg"))
 ```
 
 
@@ -1226,7 +1226,7 @@ Think of the slope of a mountain versus the slope of a wheelchair ramp.
 ***
 
 ```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/linearquadratic.png")
+ knitr::include_graphics(file.path("picsfigs","linearquadratic.png"))
 ```
 
 The point here is that increasing X by 1 has the same effect on Y wherever you start, for a linear function
@@ -1235,7 +1235,7 @@ but a different effect depending on where you start for a nonlinear function
 ***
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/concaveconvexquadratics.jpg")
+ knitr::include_graphics(file.path("picsfigs","concaveconvexquadratics.jpg"))
 ```
 
 Instantaneous rate of change (instantaneous slope)
@@ -1284,7 +1284,7 @@ Derivative of a function
 <br> \bigskip
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/plotaquadfncnR.png")
+ knitr::include_graphics(file.path("picsfigs","plotaquadfncnR.png"))
 ```
 
 ***
@@ -1293,7 +1293,7 @@ Derivative of a function
 
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/plotaquadfncn_andderiv.png")
+ knitr::include_graphics(file.path("picsfigs","plotaquadfncn_andderiv.png"))
 ```
 
 
@@ -1365,7 +1365,7 @@ Projecting a function up from X,Y space into the Z axis:
 
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/doubledip.jpg")
+ knitr::include_graphics(file.path("picsfigs","doubledip.jpg"))
 ```
 
 ## Contour lines  {-#contourlines_math}
@@ -1381,7 +1381,7 @@ Level sets: *E.g., indifference curves*, *isoquants* and *isocost* curves.
 ***
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/contourlines.jpeg")
+ knitr::include_graphics(file.path("picsfigs","contourlines.jpeg"))
 ```
 
 
@@ -1437,7 +1437,7 @@ contour_ex <- hux(data.frame(K,L,y)) %>%
   theme_plain
 
 
- #knitr::include_graphics("contourcombos.png")
+ #knitr::include_graphics(file.path("picsfigs","contourcombos.png"))
 ```
 
 For values of K `r K`
@@ -1463,7 +1463,7 @@ ggplot(data.frame(x=c(0, 3)), aes(x=x)) + stat_function(fun=eq, geom="line", aes
 
 <!--
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/contourlines_example.png")
+ knitr::include_graphics(file.path("picsfigs","contourlines_example.png"))
 ```
 -->
 
@@ -1473,7 +1473,7 @@ ggplot(data.frame(x=c(0, 3)), aes(x=x)) + stat_function(fun=eq, geom="line", aes
 ## Simultaneous equations
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/simeqn_1.gif")
+ knitr::include_graphics(file.path("picsfigs","simeqn_1.gif"))
 ```
 
 As shown above, the pair of equations
@@ -1575,7 +1575,7 @@ We observe price and quantity data for a period where *ceteris paribus* is reaso
 
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/demanddata.png")
+ knitr::include_graphics(file.path("picsfigs","demanddata.png"))
 ```
 
 We try to fit the 'best' line through these points (minimizing the distances between the line and the points, or minimizing the 'error' of this predicted quantity)
@@ -1647,14 +1647,14 @@ This is a great example from perhaps the most important unified global market, w
  It shows the power of empirical microeconomics.
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/Brent_Spot_monthly.png")
+ knitr::include_graphics(file.path("picsfigs","Brent_Spot_monthly.png"))
 ```
 
 
 ***
 
 ```{r  fig.cap = '', out.width='20%', fig.asp=.4, fig.align='left',  echo = FALSE}
- knitr::include_graphics("picsfigs/glasses.png")
+ knitr::include_graphics(file.path("picsfigs","glasses.png"))
 ```
 
 Henceforth we will refer to:

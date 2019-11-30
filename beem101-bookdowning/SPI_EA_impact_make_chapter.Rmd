@@ -300,9 +300,7 @@ DR: True;  But I wouldn't say it is completely unrelated. For actual cost-effect
 > ...the evidence on the effects of impact information are more mixed, with mainly null effects  <small> (Metzger & G '15; Karlan & W, '14; Baron & S, '10; Caviola ea '14, Berman ea '15) </small>
 
 
-```{block2,  type='note'}
 
-	```
 
 <!-- Check more closely
 See also Frumkin & Kim, 2001
@@ -320,7 +318,7 @@ Some limitations/caveats: (Ein-Gar and L, '12;  Kogut and R '07)
 - Charity Navigator stars based on continuous score across categories (not EA criteria)
 - Identification via RD: Impact of crossing a 'star' threshold on amounts raised
 *Results:*  Significant impact for small charities only: finds a nearly 20\% effect of a one star increase
-	```
+```
 
 ## "Effectiveness" info
 
@@ -488,7 +486,22 @@ We will share all of our data to enable future reanalyses.
 Co-authors:  David Reinstein, Elizabeth Keenan, Ayelet Gneezy, Hengchen Dai, Enrico Rubaltelli, Stephan Dickert, Kiki Koutmeridou, and Peter Ayton
 </small>
 
-## Plans from prereg [OSF---link](https://osf.io/ucwm3):
+## Plans from preregistration [OSF---link](https://osf.io/ucwm3):
+
+```{block2,  type='note'}
+
+"Preregistration" of one's experimental design, and plan to analyse the data   serves several goals in promoting credible "Open Science."
+\
+
+
+It reduces the potential for manipulating the results to seem more dramatic or significant than they truly are, e.g., through 'researcher degrees of freedom', 'specification-fishing', and 'p-hacking', and by testing multiple hypotheses and only reporting one of these without correcting the statistics for this
+
+\
+
+It also helps to ameliorate the 'file-drawer' problem. Findings that are not striking or significant tend to be less likely to be published, and less likely to be discovered and reported in the media. Thus the scientific consensus may be biased in favor of 'publishable' findings. By preserving a record of all experiments planned and run, and by sharing this data, pre-registration may help to reduce this bias. (E.g., pre-registered 'null' findings may be reported in later literature reviews and meta-analyses.)
+
+
+```  
 
 > What is the impact of including 'information about the per-dollar impact'  of a charity (in terms of services provided) on the average donation (equivalently, total amount raised) and the donation incidence rate?
 
@@ -554,7 +567,7 @@ Sample size and composition:
 
 ``` {r crs_ctrl_top, out.width='140%', echo=FALSE}
 
-knitr::include_graphics('crs_ctrl_top.png')
+knitr::include_graphics(file.path('picsfigs','crs_ctrl_top.png'))
 
 ```
 
@@ -565,7 +578,7 @@ knitr::include_graphics('crs_ctrl_top.png')
 
 ``` {r crs_test_top, out.width='140%', echo=FALSE}
 
-knitr::include_graphics('crs_test_top.png')
+knitr::include_graphics(file.path('picsfigs','crs_test_top.png'))
 
 ```
 
@@ -577,7 +590,7 @@ knitr::include_graphics('crs_test_top.png')
 <div id="left">
 ```{r crs_ctrl_bottom, out.width='140%', echo=FALSE}
 
-knitr::include_graphics('crs_ctrl_bottom.png')
+knitr::include_graphics(file.path('picsfigs','crs_ctrl_bottom.png'))
 
 ```
 
@@ -586,7 +599,7 @@ knitr::include_graphics('crs_ctrl_bottom.png')
 <div id="right">
 ```{r crs_test_bottom, out.width='140%', echo=FALSE}
 
-knitr::include_graphics('crs_test_bottom.png')
+knitr::include_graphics(file.path('picsfigs','crs_test_bottom.png'))
 
 ```
 </div>
@@ -718,7 +731,6 @@ Spam filtering may have also been affected by the different messages.
 See 'https://www.hipb2b.com/blog/email-opens-measuring-actually' for the issue of how email opens are tracked.
 ```
 
-<\aside>
 
 
 \
@@ -884,17 +896,17 @@ matrix(c(100-2, 2, 91296-5, 5),
   \
 
 
-# Bergh project (Mturk) {#bergh-mturk-experiment}
+## Bergh project (Mturk) {#bergh-mturk-experiment}
 
 Robin Bergh ran a series of experiments mostly on Amazon's M-Turk.
-I worked with Robin to run a further 'field' experiment at the university of Essex, further described below. We put these results together into a paper that is now  forthcoming at Social Psychology and Personality Science, which is suggest reading.
+I worked with Robin to run a further 'field' experiment at the university of Essex, further described below. We put these results together into a paper that is now  forthcoming at Social Psychology and Personality Science, which is suggested reading.
 
 \
 
 
 ```{r bergh_syria_examples.png, out.width='100%', fig.align='center', echo=FALSE}
 
-knitr::include_graphics("picsfigs/bergh_syria_examples.png")
+knitr::include_graphics(file.path("picsfigs","bergh_syria_examples.png"))
 ```
 
 \
@@ -942,7 +954,7 @@ Bergh setups
 
 ```{r bergh-s1-s6, out.width='84%', fig.align='center', echo=FALSE}
 
-knitr::include_graphics("picsfigs/dp_studies_matrix.png")
+knitr::include_graphics(file.path("picsfigs","dp_studies_matrix.png"))
 
 ```
 
@@ -952,7 +964,7 @@ knitr::include_graphics("picsfigs/dp_studies_matrix.png")
 
 ```{r bergh-s1-3-designmatrix, out.width='80%', fig.align='center', echo=FALSE}
 
-knitr::include_graphics("picsfigs/bergh-s1-3-designmatrix.png")
+knitr::include_graphics(file.path("picsfigs","bergh-s1-3-designmatrix.png"))
 
 ```
 
@@ -962,7 +974,7 @@ knitr::include_graphics("picsfigs/bergh-s1-3-designmatrix.png")
 
 ```{r bergh-s1-3-timings, out.width='95%', fig.align='center', echo=FALSE}
 
-knitr::include_graphics("picsfigs/bergh-s1-3-timings.png")
+knitr::include_graphics(file.path("picsfigs","bergh-s1-3-timings.png"))
 
 ```
 
@@ -972,7 +984,7 @@ knitr::include_graphics("picsfigs/bergh-s1-3-timings.png")
 
 ```{r bergh-s4.png, out.width='85%', fig.align='center', echo=FALSE}
 
-knitr::include_graphics("picsfigs/bergh-s4.png")
+knitr::include_graphics(file.path("picsfigs","bergh-s4.png"))
 
 ```
 
@@ -981,7 +993,7 @@ knitr::include_graphics("picsfigs/bergh-s4.png")
 
 ```{r fig.cap='', out.width='80%', fig.asp=.5, fig.align='center', echo = FALSE}
 
-knitr::include_graphics("picsfigs/bergh_bars.png")
+knitr::include_graphics(file.path("picsfigs","bergh_bars.png"))
 
 ```
 
@@ -996,15 +1008,21 @@ Strong positive effect of *images* on donation incidence, amounts
 \
 
 
-Little impact of effectiveness information on donation incidence, amounts
+Little impact of effectiveness information on donation incidence, amounts.
 
-- "Fairly tightly-bounded null"
+\
+
+
+An *insignificant* result is not necessary a credible finding that 'the impact is small or nonexistent.'  If I have very few observations and a lot of 'statistical noise' than I will not be able to detect an impact even if there is truly a strong impact. Suh a design would be 'underpowered'.
+
+\
+However, here, looking at confidence intervals, I believe we have a "fairly tightly-bounded null". We can, in some sense, statistically rule out the existence of a very large effect. I.e., a very large effect seems unlikely, given this data. 
 
 \
 
 ```{r bergh-anova, out.width='90%', fig.align='center', echo=FALSE}
 
-knitr::include_graphics("picsfigs/bergh_anova.png")
+knitr::include_graphics(file.path("picsfigs","bergh_anova.png"))
 
 ```
 
@@ -1016,9 +1034,9 @@ Meta-analysis is simple pooling (fixed effects)
 
 ```
 
-# Bergh/Reinstein (Essex piggyback) {#essex-piggyback}
+## Bergh/Reinstein (Essex piggyback) {#essex-piggyback}
 
-## Setup
+### Setup
 
 - Connected to EssexLab 2019 Omnibus online survey
   - $\approx$ 20 minutes, many psycho/demog/polit/econ questions, mostly unrelated to charity
@@ -1056,7 +1074,7 @@ Some of these questions are conditionally included based on the earlier ones, fo
 
 \
 
-**2 $\times$ 2, balanced blocked randomisation, between sbjt: **
+**2 $\times$ 2, balanced blocked randomisation, between-subject: **
 
 > 1. Analytic information about 'cost per outcome' & 'cost per impact'
 
@@ -1066,7 +1084,8 @@ Some of these questions are conditionally included based on the earlier ones, fo
 
 ```{block2,  type='note'}
 
-Also block randomize the order the charities are presented; need to examine this or control for it.
+We also block-randomize the order the charities are presented/
+  
 And blocking balances especially across previous unrelated variation (Pat's treatment).
 ```
 
@@ -1077,7 +1096,7 @@ And blocking balances especially across previous unrelated variation (Pat's trea
 
 ```{r intro-all, out.width='90%', fig.align='center', echo=FALSE}
 
-knitr::include_graphics('intro_prize_blind.png')
+knitr::include_graphics(file.path('picsfigs','intro_prize_blind.png'))
 
 ```
 
@@ -1087,7 +1106,7 @@ knitr::include_graphics('intro_prize_blind.png')
 
 ```{r imagetreat-png, out.width='75%', fig.align='center', echo=FALSE}
 
-knitr::include_graphics('blind_image.png')
+knitr::include_graphics(file.path('picsfigs','blind_image.png'))
 
 ```
 
@@ -1097,8 +1116,8 @@ knitr::include_graphics('blind_image.png')
 
 ```{r control-png, out.width='60%', fig.align='center', echo=FALSE}
 
-knitr::include_graphics('info_no_eff.png')
-knitr::include_graphics('char_chc.png')
+knitr::include_graphics(file.path('picsfigs','info_no_eff.png'))
+knitr::include_graphics(file.path('picsfigs','char_chc.png'))
 
 ```
 
@@ -1112,8 +1131,8 @@ Remember, 1/2 of these have charity order reversed
 
 ```{r info-png, out.width='55%', fig.align='center', echo=FALSE}
 
-knitr::include_graphics('descr_chars_eff_inf.png')
-knitr::include_graphics('char_chc.png')
+knitr::include_graphics(file.path('picsfigs','descr_chars_eff_inf.png'))
+knitr::include_graphics(file.path('picsfigs','char_chc.png'))
 
 ```
 
@@ -1127,13 +1146,13 @@ Remember, 1/2 of these have charity order reversed
 ### Donation amount choices
 
 <center>
-![Donation slider](don_slider.png){width='80%'}
+![Donation slider](picsfigs/don_slider.png){width='80%'}
 </center>
 
 \
 
 <center>
-![Donation slider](don_slider_33.png){width='80%'}
+![Donation slider](picsfigs/don_slider_33.png){width='80%'}
 </center>
 
 

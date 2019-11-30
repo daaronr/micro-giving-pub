@@ -4,7 +4,7 @@
 
 
 *Goals of this problem set:*
-  
+
 
 - Re-acquaintance  with mathematical approaches to Economics (e.g., simultaneous equations, graphing functions)
 - Revising the supply and demand model and its implications, applying this to real-world problems, considering *empirical* approaches
@@ -235,14 +235,14 @@ $$U(x,y) = \frac{1}{4} ln x + \frac{3}{4} ln y$$ where 'ln' denotes the natural 
 
 Global nonsatiation:
 
-$$\frac{\partial U(\mathbf{x})}{\partial x_i}>0 \: \forall i\:  \forall \mathbf{x}$$ 
+$$\frac{\partial U(\mathbf{x})}{\partial x_i}>0 \: \forall i\:  \forall \mathbf{x}$$
 
 I.e.,  at any consumption bundle $\mathbf{x}$ the marginal utility of each good is positive.
 \
 
-Here $MU_x = \frac{\partial U(x,y)}{\partial x} = \frac{\partial(\frac{1}{4} ln x + \frac{3}{4} ln y)}{\partial x} = \frac{1}{4x} \: >0 \: \forall x>0$. 
+Here $MU_x = \frac{\partial U(x,y)}{\partial x} = \frac{\partial(\frac{1}{4} ln x + \frac{3}{4} ln y)}{\partial x} = \frac{1}{4x} \: >0 \: \forall x>0$.
 
-Here $MU_y = \frac{3}{4y} \: >0 \: \forall x>0$. 
+Here $MU_y = \frac{3}{4y} \: >0 \: \forall x>0$.
 
 (Note that as consumption of either good goes to zero the utility converges to $-\infty$).
 
@@ -263,20 +263,20 @@ As this is always positive for both goods (at least for positive levels of consu
 
 **Answer**:  we can either
 
-ii. Explicitly totally differentiate this for this particular function, as in the Autor notes: 
+ii. Explicitly totally differentiate this for this particular function, as in the Autor notes:
 
 ```{r  fig.cap = '', out.width='65%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/dmrs_cobbdoug_autor_calc.png")
+ knitr::include_graphics(file.path("picsfigs","dmrs_cobbdoug_autor_calc.png"))
 ```
 
-ii. Recall our general formula for MRS as the ratio of marginal utilities:  $MRS(x,y) = \frac{MU_x(x,y)}{MU_y(x,y)}$  (amount of y you will give up to attain a bit of x at point x,y) and plug in the values computed in the previous part $\rightarrow$ 
+ii. Recall our general formula for MRS as the ratio of marginal utilities:  $MRS(x,y) = \frac{MU_x(x,y)}{MU_y(x,y)}$  (amount of y you will give up to attain a bit of x at point x,y) and plug in the values computed in the previous part $\rightarrow$
 $\frac{MU_x(x,y)}{MU_y(x,y)}=\frac{4y}/{12x} = \frac{y}{3x}$
 
 
 
 \
 
-As Autor notes, this is increasing in the amount of y consumed ... The willingness to give up x for y is of course the reciprocal of this, $\frac{3x}{y}$ which is increasing in the amount of $x$ consumed. 
+As Autor notes, this is increasing in the amount of y consumed ... The willingness to give up x for y is of course the reciprocal of this, $\frac{3x}{y}$ which is increasing in the amount of $x$ consumed.
 
 \
 
@@ -308,13 +308,13 @@ $$\frac{1}{4x} + \frac{3}{4(x-12)} \: = \frac{1}{x} + \frac{3}{(x-12)}=0  \right
 
 $$\frac{1}{3x} = \frac{1}{12-x} \rightarrow 3x= 12-x \rightarrow 4x=12 \rightarrow x^*=3  $$
 
-Plugging in to the modified budget constraint: 
+Plugging in to the modified budget constraint:
 $y^{*} =\frac{12-x}{2} = (12-3)/2 = \frac{9}{2}$
 
 \
 
 ii. Set up the *general* Lagrangian or general optimization necessary conditions (see [Khan 'just skip the Lagrangian'](https://www.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/constrained-optimization/a/lagrange-multipliers-examples) that the gradient of the target and constraint function must align. This will yield the conditions
-$$\frac{MU_x(x,y)}{MU_y(x,y)} = \frac{p_x}{p_y}$$ and     
+$$\frac{MU_x(x,y)}{MU_y(x,y)} = \frac{p_x}{p_y}$$ and
 $$I-xp_x-yp_y = 0$$.
 
 Then plug in the specific values for this problem and simplify/solve.
@@ -328,7 +328,7 @@ Note in all of this you must check your solution and consider the non-negativity
 
 Here you knew in advance that the FOC of this utility function would never yield a negative solution for either good -- do you know why?
 
-```  
+```
 
 \
 
@@ -342,7 +342,7 @@ Here you can do this either with the Lagrangian method or by plugging the constr
 The value of the Lagrange constant tells us this, as Autor's notes demonstrate in general (sec 2.3; also an application of the 'envelope theorem')
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/autor_lagrange_general.png")
+ knitr::include_graphics(file.path("picsfigs","autor_lagrange_general.png"))
 ```
 
 ```{block2,  type='note'}
@@ -353,14 +353,14 @@ The value of the Lagrange constant tells us this, as Autor's notes demonstrate i
 So,  know that we believe that this is represented by $\lambda$,  we simply need to compute $\lambda$ for this case, as Autor shows us:
 
 ```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/autor_lagrange_example.png")
+ knitr::include_graphics(file.path("picsfigs","autor_lagrange_example.png"))
 ```
 
 Plugging  in our solutions for $x^*$ and $y^*$ yields $1/(4\times 3)=1/12$ and $\frac{3}{8(9/2)}=1/12$.
 \
 
 
-So, at this point (the optimum point given these prices and income) an  additional unit of income yields utility at the rate $1/12$ per dollar.  
+So, at this point (the optimum point given these prices and income) an  additional unit of income yields utility at the rate $1/12$ per dollar.
 
 \
 Is this is a meaningful concept? No. We don't see the *absolute magnitude*  utility as meaning anything in the consumer optimization context. We  would not have been able to distinguish this from a utility  function that yielded twice as much utility per dollar everywhere. (However,  when we apply the same optimization framework in other contexts, particularly the production context it will be meaningful, telling us how much output  an additional dollar of costs will produce.)
@@ -385,7 +385,7 @@ Derive the optimal consumption (the individual demand functions) for x and y as 
 There are lots of shortcuts to solving this. I solved this same case in the web-book [above](cobbdoug). Autor gives us the most complicated way to solve it, with the full Lagrangian:
 
 ```{r  fig.cap = '', out.width='65%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/autor_cobbdoug_lagrange.png")
+ knitr::include_graphics(file.path("picsfigs","autor_cobbdoug_lagrange.png"))
 ```
 
 \
@@ -404,7 +404,7 @@ There are lots of shortcuts to solving this. I solved this same case in the web-
 
 **Answer:**
 
-The 'regular' utility function we are considering is 
+The 'regular' utility function we are considering is
 
 $$U(x,y) = x^{\frac{1}{2}}y^{\frac{1}{2}}$$
 Plugging in the optimised choices $x^{*} = \frac{I}{2p_x}$ and  $y^{*} = \frac{I}{2p_y}$ yields the indirect utility function
@@ -424,21 +424,21 @@ $$V(I,p_x,p_y) = (\frac{I}{2p_x})^\frac{1}{2} (\frac{I}{2p_y})^\frac{1}{2}$$
 \
 
 
-**Ans**: 
+**Ans**:
 
 $$\frac{\partial V(\cdot)}{\partial p_x}= -\dfrac{I}{2^\frac{3}{2}\sqrt{\frac{I}{p_x}}p_x^2}(\frac{I}{2p_y})^\frac{1}{2}$$
 
-Interpretation: How (optimised) utility changes (decreases) as the price of X increases, at a given value of   
+Interpretation: How (optimised) utility changes (decreases) as the price of X increases, at a given value of
 
 \
 
 This is kind of a mess: too much algebra. Let me simplify the example by using the equivalent utility function $u=xy$.
 
-This yields indirect utility 
+This yields indirect utility
 
 $$\tilde{V}(I,p_x,p_y) = (\frac{I}{2p_x}) (\frac{I}{2p_y})= \frac{I^2}{4p_yp_x} =  \frac{I^2}{4p_y}p_x^{-1} $$
 
-Derivative wrt the $p_x$ is just 
+Derivative wrt the $p_x$ is just
 $$\frac{\partial \tilde{V}(\cdot)}{\partial p_x}=-\frac{I^2}{4p_yp_x^2}$$
 
 Again, interpretation: How (optimised) utility changes (decreases) as the price of X increases, starting from the optimal choices and utility at a given value of income and prices.
@@ -448,18 +448,18 @@ Again, interpretation: How (optimised) utility changes (decreases) as the price 
 
 **Now take the partial derivative of the above indirect utility function** $V(p_x,p_y,I)$ **with respect to income** $I$. **What is the interpretation of this?**
 
-**Ans**: 
+**Ans**:
 
 $$\frac{\partial}{\partial I}   \frac{I^2}{4p_yp_x}   = \frac{2I}{4p_yp_x}  $$
 
-Interpretation: How (optimised) utility changes (decreases) as the income increases, starting from the point achieved with a particular income and prices... this is the same as the $\lambda$ coefficient in the Lagrangian. 
+Interpretation: How (optimised) utility changes (decreases) as the income increases, starting from the point achieved with a particular income and prices... this is the same as the $\lambda$ coefficient in the Lagrangian.
 
 \
 
 
 **Now take the negative of the ratio of the above partial derivatives:**
 
-**Ans**: 
+**Ans**:
 
 $$-\frac{\partial V/\partial p_x}{\partial V/\partial I} = \frac{I^2}{4p_yp_x^2}/\frac{2I}{4p_yp_x}= \frac{1}{2}\frac{I}{p_x}   $$
 
@@ -467,7 +467,7 @@ $$-\frac{\partial V/\partial p_x}{\partial V/\partial I} = \frac{I^2}{4p_yp_x^2}
 
 **Check: this should yield the (Marshallian demand) for good** $x$, $d_x(p_x,p_y,I)$.
 
-**Ans**: 
+**Ans**:
 Yes, it does; recall our solution above that one always spends half of their income on good $x$.
 
 
@@ -480,11 +480,11 @@ In fact, this holds in general, for any utility function: $$-\frac{\partial V/\p
 
 **Ans:**
 
-Intuition: The rate that utility decreases in the price of x divided by the rate utility increase in income, at optimum, is equal to the optimised consumption of good x. 
+Intuition: The rate that utility decreases in the price of x divided by the rate utility increase in income, at optimum, is equal to the optimised consumption of good x.
 
-Numerator: The more $x$ I am consuming the more an increase in price reduces my 'income left over after consuming $x$, (holding consumption of x constant). 
+Numerator: The more $x$ I am consuming the more an increase in price reduces my 'income left over after consuming $x$, (holding consumption of x constant).
 
-Denominator: Each unit of 'reduced remaining income' costs me utility at rate $\partial V/\partial I$. 
+Denominator: Each unit of 'reduced remaining income' costs me utility at rate $\partial V/\partial I$.
 
 *Voila.*
 

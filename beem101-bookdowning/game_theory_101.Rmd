@@ -69,7 +69,7 @@ Is game theory useful???
 Some people [seem to think so](https://www.linkedin.com/posts/eyal-winter-739b6b44_if-you-have-economics-students-who-complain-activity-6595028520324472832-dbJa/?fbclid=IwAR2K_dmkK7vazjZa6GRa3ZtSMWXhgLE30Fe0wzZ1ezPzNibYG7_Q5hn5jog):
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/winter_claims_gametheory_useful.png")
+ knitr::include_graphics(file.path("picsfigs","winter_claims_gametheory_useful.png"))
 ```
 \
 
@@ -177,7 +177,7 @@ Very interesting problems, does Econ and Game Theory have the solutions?
 
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/Eeyore_Pink.jpg")
+ knitr::include_graphics(file.path("picsfigs","Eeyore_Pink.jpg"))
 ```
 
 Game theory gives us a language and framework for analyzing strategic situations
@@ -365,7 +365,7 @@ Which *outcome* is *definitely NOT* Pareto-optimal (for the prisoners)?
 
 
 ```{r  fig.cap = '', out.width='65%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/pd_normal.png")
+ knitr::include_graphics(file.path("picsfigs","pd_normal.png"))
 ```
 
 - Normal form payoff matrix (also called 'matrix form')
@@ -417,7 +417,7 @@ I.e., Temptation $>$ Reward $>$ Punishment $>$ Sucker
 We can depict the same game in another format which we call the 'extensive form':
 
 ```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/pd_extensive.png")
+ knitr::include_graphics(file.path("picsfigs","pd_extensive.png"))
 ```
 
 \
@@ -474,7 +474,7 @@ Warning: this puzzle will do your head in
 \
 
 
- knitr::include_graphics("picsfigs/blue-eyed.png")
+ knitr::include_graphics(file.path("picsfigs","blue-eyed.png"))
 
 \
 
@@ -552,14 +552,14 @@ With more than two, if there is a Dominant strategy this means that all other st
 
 
 ```{r  fig.cap = '', out.width='55%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/pd_normal.png")
+ knitr::include_graphics(file.path("picsfigs","pd_normal.png"))
 ```
 Here it clearly predicts that both will confess. However, in other games this concept may have no clear prediction
 
 \
 
 ```{r  fig.cap = '', out.width='65%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/matrixforISD.png")
+ knitr::include_graphics(file.path("picsfigs","matrixforISD.png"))
 ```
 
 `r format_with_col("Consider","blue")`: What does 'players play dominant strategies' predict above? What about 'players never play dominated strategies'?
@@ -597,21 +597,21 @@ ISD example; may yield a unique prediction
 
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/matrixforISD.png")
+ knitr::include_graphics(file.path("picsfigs","matrixforISD.png"))
 ```
 
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/isd1.png")
+ knitr::include_graphics(file.path("picsfigs","isd1.png"))
 ```
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/isd2.png")
+ knitr::include_graphics(file.path("picsfigs","isd2.png"))
 ```
 
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/isd3.png")
+ knitr::include_graphics(file.path("picsfigs","isd3.png"))
 ```
 
 
@@ -620,7 +620,7 @@ ISD example; may yield a unique prediction
 However, there may be *no* dominated strategies, or there may be *some*, but still ISD may leave many possibilities:
 
 ```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/bossmall.png")
+ knitr::include_graphics(file.path("picsfigs","bossmall.png"))
 ```
 
 \
@@ -664,7 +664,7 @@ Nash equilibrium (NE)
 
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/pd_normal.png")
+ knitr::include_graphics(file.path("picsfigs","pd_normal.png"))
 ```
 
 
@@ -690,7 +690,7 @@ Exercise: Find equilibrium via each method:
 
 
 ```{r  fig.cap = '', out.width='55%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/pd_normal.png")
+ knitr::include_graphics(file.path("picsfigs","pd_normal.png"))
 ```
 \
 
@@ -724,7 +724,7 @@ However binding agreements are not allowed, and "cheap talk" communication shoul
 ### Coordination: Battle of the sexes (BOS) {-}
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/bosmatrix.png")
+ knitr::include_graphics(file.path("picsfigs","bosmatrix.png"))
 ```
 - to make it more PC, assume it is a very violent ballet and a very gentle boxing match
 
@@ -733,7 +733,7 @@ However binding agreements are not allowed, and "cheap talk" communication shoul
 ### Anti-coordination: Matching pennies (odds/evens) {-}
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/matchpennies.png")
+ knitr::include_graphics(file.path("picsfigs","matchpennies.png"))
 ```
 
 Note:  Underline best responses, show no pure strategy NE here
@@ -773,7 +773,7 @@ So, technically, each of us choosing heads half the time is a NE. `r format_with
 ### Battle of sexes: mixed strategies {-}
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/bosmatrix.png")
+ knitr::include_graphics(file.path("picsfigs","bosmatrix.png"))
 ```
 
 *Note:* Wife wants to end up at the same place as her husband but doesn’t know where he is going.\
@@ -790,7 +790,7 @@ Let $h$ represent the probability husband chooses Ballet
 
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/bosmatrix.png")
+ knitr::include_graphics(file.path("picsfigs","bosmatrix.png"))
 ```
 \
 
@@ -813,7 +813,7 @@ Thus, wife goes to Ballet if she believes husband goes to Ballet more than 1/3 o
 \
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/bosbr1.png")
+ knitr::include_graphics(file.path("picsfigs","bosbr1.png"))
 ```
 
 *Note:* This plots the value of w that best responds to h;\ the probability the wife goes Ballet given the probability the husband goes Boxing.
@@ -850,12 +850,12 @@ Thus, husband goes to Ballet if he believes wife goes Ballet more than 2/3 of th
 
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/bosbr2.png")
+ knitr::include_graphics(file.path("picsfigs","bosbr2.png"))
 ```
 
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/bosbr3.png")
+ knitr::include_graphics(file.path("picsfigs","bosbr3.png"))
 ```
 
 
@@ -949,7 +949,7 @@ Above (BOS), there are three equilibria: both play Boxing, both play Ballet, and
 ### In-class experiment: BOS \& coordination; need 2 volunteers {-}
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/BOS_inlecture.png")
+ knitr::include_graphics(file.path("picsfigs","BOS_inlecture.png"))
 ```
 
 \
@@ -958,7 +958,7 @@ Above (BOS), there are three equilibria: both play Boxing, both play Ballet, and
 
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/coordgame_inlecture.png")
+ knitr::include_graphics(file.path("picsfigs","coordgame_inlecture.png"))
 ```
 
 
@@ -1030,14 +1030,14 @@ What do you think will happen? Vote (clickers):
 - D. Wife: Box, Husband: Box
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
-knitr::include_graphics("picsfigs/BOS_sequential.png")
+knitr::include_graphics(file.path("picsfigs","BOS_sequential.png"))
 ```
 
 *Note:* Remember, it's a one-shot game ... unrealistic within a marriage of course
 
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/BOS_sequential.png")
+ knitr::include_graphics(file.path("picsfigs","BOS_sequential.png"))
 ```
 
 - The wife has two strategies: Ballet or Boxing
@@ -1066,7 +1066,7 @@ These concerns also apply to politics, and the games can of course include multi
 
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/BOS_sequential.png")
+ knitr::include_graphics(file.path("picsfigs","BOS_sequential.png"))
 ```
 \
 
@@ -1100,12 +1100,12 @@ Example: BWI for *Sequential* Battle of the Sexes
 
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/bosbwi1.png")
+ knitr::include_graphics(file.path("picsfigs","bosbwi1.png"))
 ```
 
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/bosbwi2.png")
+ knitr::include_graphics(file.path("picsfigs","bosbwi2.png"))
 ```
 
 Note that the SPNE in a sequential game always involves 'best responses'. I think this makes SPNE more credible as a prediction in sequential games than NE in simultaneous games.
@@ -1114,7 +1114,7 @@ Note that the SPNE in a sequential game always involves 'best responses'. I thin
 \
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/bosbwi1.png")
+ knitr::include_graphics(file.path("picsfigs","bosbwi1.png"))
 ```
 \
 
@@ -1136,7 +1136,7 @@ SPNE:  \{Wife: Ballet; Husband: Ballet, Boxing\}
 **It can get fancier**
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/longgamework_randompayoffs_noul.png")
+ knitr::include_graphics(file.path("picsfigs","longgamework_randompayoffs_noul.png"))
 ```
 
 
@@ -1146,7 +1146,7 @@ SPNE:  \{Wife: Ballet; Husband: Ballet, Boxing\}
 
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/longgamework_randompayoffs_ul.png")
+ knitr::include_graphics(file.path("picsfigs","longgamework_randompayoffs_ul.png"))
 ```
 
 \
@@ -1154,7 +1154,7 @@ SPNE:  \{Wife: Ballet; Husband: Ballet, Boxing\}
 In 'normal' (matrix form), stating complete contingent strategies:
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/longgame_matrix_full.png")
+ knitr::include_graphics(file.path("picsfigs","longgame_matrix_full.png"))
 ```
 
 
@@ -1163,14 +1163,14 @@ In 'normal' (matrix form), stating complete contingent strategies:
 And the 'abbreviated strategies'; leaving out decision nodes ruled out by a player's own previous choices as specified in the strategy:
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/longgame_matrix_abbrev.png")
+ knitr::include_graphics(file.path("picsfigs","longgame_matrix_abbrev.png"))
 ```
 
 
 \
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/longgamework_randompayoffs_ul.png")
+ knitr::include_graphics(file.path("picsfigs","longgamework_randompayoffs_ul.png"))
 ```
 
 The SPNE; 'state the complete contingent strategies'
@@ -1424,7 +1424,7 @@ $s_A* = s_B* = 40$
 \
 
 ```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/brsheep.png")
+ knitr::include_graphics(file.path("picsfigs","brsheep.png"))
 ```
 
 - Shepherd A:	 $s_A = 60-\frac{1}{2} s_B$
@@ -1479,7 +1479,7 @@ Note that both the PD and the above 'tragedy of the commons' game illustrate a s
 
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/moroccansheep.jpg")
+ knitr::include_graphics(file.path("picsfigs","moroccansheep.jpg"))
 ```
 
 ### "Strategic complements" and "strategic substitutes" {-}
@@ -1524,13 +1524,13 @@ E.g., FEELE lab at Exeter
 \
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/expeconlab.jpg")
+ knitr::include_graphics(file.path("picsfigs","expeconlab.jpg"))
 ```
 
 \
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/ztreePD.png")
+ knitr::include_graphics(file.path("picsfigs","ztreePD.png"))
 ```
 
 \
@@ -1555,7 +1555,7 @@ Cooper et al (1996)
 *Notes:* Results are similar for experiments involving contributions to public goods.some cooperation, declining over time but not to zero, and a mix of players who never contribute and many 'reciprocal' types.
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/cooperPD.png")
+ knitr::include_graphics(file.path("picsfigs","cooperPD.png"))
 ```
 
 ## Laboratory evidence 2: Ultimatum game
@@ -1640,7 +1640,7 @@ Another fairly readable and extremely influential (theory) paper, extending this
 \
 **Additional tutorial problem I (Game theory)**
 ```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/teenchoices.png")
+ knitr::include_graphics(file.path("picsfigs","teenchoices.png"))
 ```
 Teens A and B are smitten with each other but neither knows of the other’s feelings. Suppose the teachers at their school organize a dance.  The “payoff” is based on whether their advances are rebuffed or accepted.  If they both Declare,  they get positive utility but if they are Rebuffed they face humiliation (significantly negative payoff).  Rebuffing an advance slightly elevates the teen’s standing with peers.
 - What is a teen’s dominant strategy, or is there no dominant strategy?
@@ -1648,13 +1648,13 @@ Teens A and B are smitten with each other but neither knows of the other’s fee
 - Find the mixed strategy equilibrium
 **Additional tutorial problem II (Game theory)**
 ```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/isd4by3game.png")
+ knitr::include_graphics(file.path("picsfigs","isd4by3game.png"))
 ```
 - Apply 'Iterated strict dominance' to the above game, showing your steps
 - State the pure strategies that are rationalizable.
 ** Additional tutorial problem III (Game theory)**
 ```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/entrygame.png")
+ knitr::include_graphics(file.path("picsfigs","entrygame.png"))
 ```
 - Use backwards-induction to find the subgame-perfect Nash equilibrium strategies, outcomes, and payoffs, of the above game.
 -->

@@ -34,7 +34,6 @@ Otherwise this policy leads the government to forgo more in taxes than it raises
 
 \
 
-
 There are many 'observational data' papers on how charitable giving responds to changes in the 'tax price'
 
 - The results vary greatly across studies, although there is a very weak consensus around unit elasticity
@@ -58,7 +57,7 @@ There are many 'observational data' papers on how charitable giving responds to 
 
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/karlanmailing.png")
+ knitr::include_graphics(file.path("picsfigs","karlanmailing.png"))
 ```
 
 
@@ -174,7 +173,7 @@ summarized in  List (2008, ExpEcon)
 \
 
 ```{r  fig.cap = '', out.width='4.3in', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/fongtreatments.png")
+ knitr::include_graphics(file.path("picsfigs","fongtreatments.png"))
 ```
 
 \
@@ -185,7 +184,7 @@ Our dictators can purchase signals 26 about why the recipients are poor. We find
 
 
 ```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/fonggraph.png")
+ knitr::include_graphics(file.path("picsfigs","fonggraph.png"))
 ```
 
 \
@@ -212,7 +211,7 @@ Our dictators can purchase signals 26 about why the recipients are poor. We find
 \
 
 ```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/fong_key_results.png")
+ knitr::include_graphics(file.path("picsfigs","fong_key_results.png"))
 ```
 
 - But it's not a fair comparison: those who decide *not* to buy information appear less generous than the average
@@ -221,7 +220,7 @@ Our dictators can purchase signals 26 about why the recipients are poor. We find
 \
 
 ```{r  fig.cap = '', out.width='4.3in', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/fong_adjustedresults.png")
+ knitr::include_graphics(file.path("picsfigs","fong_adjustedresults.png"))
 ```
 
 
@@ -265,7 +264,7 @@ There are a few organisations that rate charities on the basis of their transpar
 \
 
 ```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/yorukRDcutoffspooled.png")
+ knitr::include_graphics(file.path("picsfigs","yorukRDcutoffspooled.png"))
 ```
 
 ^[This is for small charities]
@@ -273,17 +272,16 @@ There are a few organisations that rate charities on the basis of their transpar
 \
 
 ```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/yorukRD4star.png")
+ knitr::include_graphics(file.path("picsfigs","yorukRD4star.png"))
 ```
 
 
 
 ```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/yoruk_regsmall.png")
+ knitr::include_graphics(file.path("picsfigs","yoruk_regsmall.png"))
 ```
 
 \
-
 
 *Results*:
 
@@ -320,31 +318,40 @@ I'd like to see CI's
 
 <small> Details from Parsons </small>
 
-```{r parsons0, out.width='40%', fig.align='center', echo=FALSE}
+```{r parsons0, out.width='70%', fig.align='center', echo=FALSE}
 
-knitr::include_graphics(c('parsons_fin_treat.png'))
+knitr::include_graphics(file.path("picsfigs","parsons_fin_treat.png"))
 
 ```
 
-```{r parsons_logit, out.width='40%', fig.align='center', echo=FALSE}
+```{r parsons_logit, out.width='70%', fig.align='center', echo=FALSE}
 
-knitr::include_graphics(c('parsons_logit.png'))
+knitr::include_graphics(file.path("picsfigs","parsons_logit.png"))
 
 ```
 
 
 ## Overhead and fundraising expense ratios {#overhead}
 
-### Gneezy, Uri, Elizabeth A. Keenan, and Ayelet Gneezy. "Avoiding overhead aversion in charity." Science 346.6209 (2014): 632-635. {-}
+### Gneezy, Uri, Elizabeth A. Keenan, and Ayelet Gneezy. "Avoiding overhead aversion in charity." Science 346.6209 (2014): 632-635. [download LINK](https://rady.ucsd.edu/docs/Science-2014-Gneezy-632-5.pdf) {-}
 
-- "We test whether designating early large gifts to cover overhead costs increases donors’ willingness to contribute to a charity"
+@Gneezy2014b
 
-    - It "should not matter"
+"We test whether designating early large gifts to cover overhead costs increases donors’ willingness to contribute to a charity"
 
-- People might see it as a sign of efficiency and honesty, or it might give them a greater feeling of impact
+This intervention "should not matter" (as the money is essentially fungible ... so the impact of an individual's donation on outcomes is the same under either policy.)
+
+\
+
+*However*,  people might see it as a sign of efficiency and honesty, or it might give them a greater feeling of impact
 
 ```{block2,  type='note'}
-From an economic perspective, designating initial large gifts as seed money or using them to cover overhead costs is the same. Charities are interested in maximizing the total funds raised and are agnostic about whether overhead costs are cov- ered by initial donations or are shared by all donors. Consumers, however, seem to have clear, strong preferences: They want their donations to be put to “good” use—in other words, for di- rect program costs.}
+
+*From a recent grant application:*
+  
+From an economic perspective, designating initial large gifts as seed money or using them to cover overhead costs is the same. Charities are interested in maximizing the total funds raised and are agnostic about whether overhead costs are covered by initial donations or are shared by all donors. Consumers, however, seem to have clear, strong preferences: They want their donations to be put to “good” use—in other words, for direct program costs.
+
+(Although as noted above , the actual impact is equivalent.)
 ```
 
 \
@@ -359,7 +366,7 @@ From an economic perspective, designating initial large gifts as seed money or u
 
 \
 
-2. Field experiment, education charity, request letter to 40,000 US households, wants to fund as many \$20k projects as possible (in USA). Asked to give \$ 20/50/100
+2. Field experiment, education charity, request letter to 40,000 US households, wants to fund as many 20k usd  projects as possible (in USA). Asked to give  20/50/100 US dollars.
 
 Treatments:
 
@@ -374,14 +381,23 @@ Treatments:
 *Results*
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/overheadgraph.png")
+ knitr::include_graphics(file.path("picsfigs","overheadgraph.png"))
 ```
+
+Which of the above differences are statistically significant?
+
+Below, our usual notation for 'significant differences' using stars: ("***")  implies a p-value value of .01 or lower  for the statistical test of the relevant comparison.
+
+\
+
 
 - Share donating: Overhead (8.5\%) $>$ \*\*\* Seed $\geq$ Match $>$ Control (3.4\%)
 
-- Amount raised: Overhead (\$2.31) > \*\*\* Seed, Match > \*\*\* Control (\$0.80)
+- Amount raised: Overhead (2.31) $>$ \*\*\* Seed, Match $>$ \*\*\* Control  (0.80 USD)
 
 (Extensive margin: Seed $>$\*\*\* Control)
+
+
 
 
 These results have been replicated in other trials [ref].
@@ -445,10 +461,16 @@ Ben Grodeck:
 *From a recent grant application ...*
 
 
-When confronted with a "[girl drowning in a pond](https://www.thelifeyoucansave.org/videos#pondvideo)" most people are willing to sacrifice substantial wealth to save her life. However, [most people ](https://givingusa.org/giving-usa-2017-total-charitable-donations-rise-to-new-high-of-390-05-billion/)*[don’*t](https://givingusa.org/giving-usa-2017-total-charitable-donations-rise-to-new-high-of-390-05-billion/)[ make large donations to the very poor](https://givingusa.org/giving-usa-2017-total-charitable-donations-rise-to-new-high-of-390-05-billion/), in spite of evidence suggesting that lives can be saved [for less than $10,000](https://www.givewell.org/how-we-work/our-criteria/cost-effectiveness). There is a [strong case](https://www.theguardian.com/books/2015/aug/20/doing-good-better-william-macaskill-review) that most donations go to charities that improve well-being far less per-dollar than others. Even within the same category, more can be achieved for less: e.g., while it costs about[ $40,000](https://www.researchgate.net/publication/5421378_The_Economic_Costs_and_Benefits_of_Dog_Guides_for_the_Blind) to provide a blind person a guide dog, [each $100](https://www.givewell.org/international/charities/The-Carter-Center/River-Blindness) given for mass-distribution of ivermectin may *prevent* 10-50 years of river-blindness. This raises two related questions: 1. “Why don’t we give more to the most effective charities and to those most in need?”, and 2. “Why are we not more efficient with our giving choices?” To address this, we must understand what drives giving choices, and how people react to the presentation of charity-effectiveness information. (NOTE: Singer, Peter. "The Singer solution to world poverty." The New York Times Magazine 5.September (1999): 60-63.)
+When confronted with a "[girl drowning in a pond](https://www.thelifeyoucansave.org/videos#pondvideo)" most people are willing to sacrifice substantial wealth to save her life. However, [most people ](https://givingusa.org/giving-usa-2017-total-charitable-donations-rise-to-new-high-of-390-05-billion/)  [don’t](https://givingusa.org/giving-usa-2017-total-charitable-donations-rise-to-new-high-of-390-05-billion/) ... [ake large donations to the very poor, in spite of evidence suggesting that lives can be saved [for less than $10,000](https://www.givewell.org/how-we-work/our-criteria/cost-effectiveness).
+ \ There is a [strong case](https://www.theguardian.com/books/2015/aug/20/doing-good-better-william-macaskill-review) that most donations go to charities that improve well-being far less per-dollar than others. Even within the same category, more can be achieved for less: e.g., while it costs about[ $40,000](https://www.researchgate.net/publication/5421378_The_Economic_Costs_and_Benefits_of_Dog_Guides_for_the_Blind) to provide a blind person a guide dog, [each $100](https://www.givewell.org/international/charities/The-Carter-Center/River-Blindness) given for mass-distribution of ivermectin may *prevent* 10-50 years of river-blindness.  
+ \
+ 
+ This raises two related questions: 1. “Why don’t we give more to the most effective charities and to those most in need?”, and 2. “Why are we not more efficient with our giving choices?” To address this, we must understand what drives giving choices, and how people react to the presentation of charity-effectiveness information. (See: Singer, Peter. "The Singer solution to world poverty." The New York Times Magazine 5.September (1999): 60-63.)
 
-While social science, biology and philosophy suggest a range of explanations for ineffective giving– invoking values, preferences, and biases–the discussion and evidence is scattered. There have been no systematic reviews or large projects targeting this, and limited communication across disciplines. Loewenstein and Small (2007) offer a theoretical framework, focusing on the interplay between the mental processes of "deliberation" and “sympathy”. Other (largely unpublished or non-academic) merely “lists” the evidence, typically citing a single paper for each potential channel, without evaluation.^[See: Loewenstein and Small 2007); (Berman et al. 2018) (introduction).  (Baron and Szymanska, 2011). Unpublished or non-academic:  ‘Ideas42, 2016; Gertler, 2015; Yoeli]
+While social science, biology and philosophy suggest a range of explanations for ineffective giving– invoking values, preferences, and biases–the discussion and evidence is scattered. There have been no systematic reviews or large projects targeting this, and limited communication across disciplines. Loewenstein and Small @Loewenstein2007 offer a theoretical framework, focusing on the interplay between the mental processes of "deliberation" and “sympathy”. Other (largely unpublished or non-academic) merely “lists” the evidence, typically citing a single paper for each potential channel, without evaluation.^[See: @Loewenstein2007 ; @Berman2018 (introduction).  @baron2011heuristics Unpublished or non-academic:  ‘Ideas42, 2016; Gertler, 2015; Yoeli]
 ```
+
+\
 
 ### What are these ' barriers' to effective giving?
 
@@ -494,8 +516,9 @@ Key examples:
 **Identity and self-perception:** Things that run against one's self-perception and how one believes others will will see you.
 
 
-```{r measuringpov, out.width='33%', fig.align='center', fig.cap='2. Identity & self-perception;      3. Inertia and systemic factors;     4. Quantitative biases', echo=FALSE, fig.show='hold'}
-knitr::include_graphics(rep(c('rather-fight-than-switch.jpg','fb_supoprtmydaughter.jpg')))
+
+```{r measuringpov, out.width='33%', fig.align='center', echo=FALSE}
+knitr::include_graphics(c(file.path('picsfigs','rather-fight-than-switch.jpg'),file.path('picsfigs','fb_supoprtmydaughter.jpg')))
 ```
 
 
@@ -511,7 +534,7 @@ knitr::include_graphics(rep(c('rather-fight-than-switch.jpg','fb_supoprtmydaught
 
 **Quantitative biases:**  Problems dealing with numbers and making logical evaluations involving numbers, values and amounts. Common cognitive errors *or* intuitive and emotional reactions triggered in these contexts.
 
-![](picsfigs/measuring-poverty.jpg){width=20%}
+<center> ![](picsfigs/measuring-poverty.jpg){width=40%} </center>
 
 These may lead people to not reason well and make less efficient charitable choices. Some of these biases may *particularly* affect the more effective and neglected charities.
 
@@ -525,7 +548,7 @@ These may lead people to not reason well and make less efficient charitable choi
 
 - Proportional dominance effect/drop in bucket/psychosocial numbing/psychophysical numbing
 
-- Scope insensitivity/embedding effect/part-whole effec
+- Scope insensitivity/embedding effect/part-whole effect
 
 - Overhead aversion
 
@@ -538,8 +561,9 @@ Inertia and systemic/institutional factors: Factors limiting individual and soci
 
 **Aversion to DOING evaluations:**  Things that make people reluctant to evaluate and consider the effectiveness of charities, and ways that doing these evaluations reduce generosity.
 
+
 <center>
-![](picsfigs/lifeboat_choice.jpg){width=35%} ![](picsfigs/givewell-sheet.png){width=35%}
+![](picsfigs/lifeboat_choice.jpg){width=45%} ![](picsfigs/givewell-sheet.png){width=45%}
 </center>
 
 - "Taboo Trade-Offs (c.f., Protected Values)"
@@ -557,7 +581,7 @@ Inertia and systemic/institutional factors: Factors limiting individual and soci
 `r format_with_col("NOTE: I mainly focus on this latter channel below", "green")`
 
 
-\
+
 ### Defining 'per dollar impact' of a donation {#def-impact}
 
 ```{block2,  type='note'}
@@ -588,7 +612,9 @@ $B'(G_i)$  is much larger for the most *impactful* relative to the most *popular
 <!-- Add statistics ... Trust me on this, or at least accept that this seems likely in many cases. -->
 
 
-(See Steinberg & Morris 2010, for a discussion of marginal vs average effectiveness in this context.)
+\
+
+(See @steinberg2010ratio, for a discussion of marginal vs average effectiveness in this context.)
 
 \
 
@@ -617,7 +643,7 @@ Amount donated +2.35, se 1.98, mean 14.17; windsorised -0.074, se 0.82, mean 11.
 
 - Mixed/null/positive evidence of 'real-world ratings' <small> (Yoruk '16; Brown ea '17; Gordon 'ea '19) </small>
 
-- Mixed evidence (lab; charity/non) of 'excuse-driven information seeking' <small> (Exley '16b; Fong & O, '10; Metzger & G '19) </small>
+- Mixed evidence (lab; charity/non) of 'excuse-driven information seeking' <small> (@Exley2016b, @Fong2011a; @Metzger2019) </small>
 
 - [Bergh and Reinstein 2019 (SPPS)](https://www.researchgate.net/publication/337060647_Empathic_and_Numerate_Giving_The_Joint_Effects_of_Images_and_Charity_Evaluations): Analytical efficiency information has a fairly effect overall (somewhat underpowered); emotional information has a stronger effect, and it *can* drive people to choose the more efficient charity
 
@@ -638,6 +664,8 @@ Market interactions erode moral values Falk and Sczech '13 .. Mouse study
 
 
 Claim: Better to portray an individual (child) than convey the total affected <small> Small & Loewenstein (03); Small et al (07); Kogut & R (05) </small>
+
+
 
 - Driven by System-1 empathy, switched off by analytic thinking
 
@@ -772,7 +800,7 @@ Some skeptical notes:
 
 \
 
-## Information as an 'excuse' not to give; allows motivated reasoning
+### Information as an 'excuse' not to give; allows motivated reasoning {#excuse}
 
 
 Do people selectively seek information on charities to *avoid* giving? Do they interpret such evidence with 'motivated reasoning' in order to feel good about *not donating*?
@@ -780,11 +808,25 @@ Do people selectively seek information on charities to *avoid* giving? Do they i
 \
 
 
-**Exley, 2016b:** Greater discounting of 'less-efficient' charity in charity-charity decision-making than in charity-self decision-making.
+@Exley2018: Greater discounting of 'less-efficient' charity in charity-self decision-making than in charity-self decision-making, when the former can be used as a justification for not giving
+
+
+Abstract: 
+
+> ... In two studies, participants evaluate giving options to charities differentiated by their performance metrics. When participants decide how to allocate money between different charities, they give less to charities with lower metrics. When participants decide how to allocate money between themselves and charities, the reduced giving in response to lower metrics is more severe. This finding is consistent with participants overweighting their dislike of lower charity performance metrics as an excuse not to give.
+
+\
+
+@Exley2016b:  ... similar to the above, but for 'risk of nothing being transferred'. 
+
+Abstract: 
+> Decisions involving charitable giving often occur under the shadow of risk. A common finding is that potential donors give less when there is greater risk that their donation will have less impact. While this behavior could be fully rationalized by standard economic models, this paper shows that an additional mechanism is relevant: the use of risk as an excuse not to give. In a laboratory study, participants evaluate risky payoffs for themselves and risky payoffs for a charity. When their decisions do not involve tradeoffs between money for themselves and the charity, they respond very similarly to self risk and charity risk. By contrast, when their decisions force tradeoffs between money for themselves and the charity, participants act more averse to charity risk and less averse to self risk. These altered responses to risk bias participants towards choosing payoffs for themselves more often, consistent with excuse-driven responses to risk. Additional results support the existence of excuse-driven types.
 
 <br>
+\
 
-**Fong & O, '10:**
+
+**@Fong2011a**
 
 > "Dictators [charitable giving] who acquire information mostly use it to withhold resources from less-preferred types, leading to a drastic decline in aggregate transfers"
 
@@ -793,9 +835,21 @@ Do people selectively seek information on charities to *avoid* giving? Do they i
 <br>
 
 ```{block2,  type='note'}
-Exley issues: Experimenter demand (M-turk focus), not really 'impact' information
-Fong: Selection effects. In their tables, exogenous provision of information seems to *increase* donations overall.
+Some comments on  the above papers and their potential limitations:
+  
+**Exley**
+  
+- Experimenter demand: these m-Turk trials focus attention on charitable giving and  comparisons in ways they might not be present in the real-world. 
+
+- She is not really using 'impact' information in the Givewell sense
+
+\
+**Fong:** 
+  
+  Selection effects. In their tables, exogenous provision of information seems to *increase* donations overall.
+
 Also ... it's evidence on the deservingness of the recipients, not on impact of a charity itself.
+
 ```
 
 <br>
@@ -817,6 +871,8 @@ Lab donations to high/low-performing NGO
 ```{block2,  type='note'}
 
 Opportunity to buy info on 'recipient type' increased giving, on 'admin costs' decreased giving (marginal significance for both), no effect of 'aid impact' but wide CI
+
+\
 
 'Free info' on each of these had insignificant effects (underpowered!)
 
@@ -908,35 +964,35 @@ Experimental setup
 \
 
 ```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/givedirectmisc.png")
+ knitr::include_graphics(file.path("picsfigs","givedirectmisc.png"))
 ```
 
 \
 
 
 ```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/againstmalariadesc.png")
+ knitr::include_graphics(file.path("picsfigs","againstmalariadesc.png"))
 ```
 
 \
 
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/describecharities.png")
+ knitr::include_graphics(file.path("picsfigs","describecharities.png"))
 ```
 
 \
 
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/ratecharities.png")
+ knitr::include_graphics(file.path("picsfigs","ratecharities.png"))
 ```
 
 \
 
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/rankcharities.png")
+ knitr::include_graphics(file.path("picsfigs","rankcharities.png"))
 ```
 
 
@@ -945,7 +1001,7 @@ Experimental setup
 *Results (preliminary):*
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/prolificratingtreat.png")
+ knitr::include_graphics(file.path("picsfigs","prolificratingtreat.png"))
 ```
 
 - Increased likelihood of donating (Mann-Whitney p=0.047)
@@ -961,40 +1017,69 @@ Co-authors:  David Reinstein, Elizabeth Keenan, Ayelet Gneezy, Hengchen Dai, Enr
 
 ### Plans from prereg [OSF---link](https://osf.io/ucwm3):
 
-> What is the impact of including 'information about the per-dollar impact'  of a charity (in terms of services provided) on the average donation (equivalently, total amount raised) and the donation incidence rate?
+
+```{block2,  type='note'}
+
+"Preregistration" of one's experimental design, and plan to analyse the data   serves several goals in promoting credible "Open Science."
+\
+
+
+It reduces the potential for manipulating the results to seem more dramatic or significant than they truly are, e.g., through 'researcher degrees of freedom', 'specification-fishing', and 'p-hacking', and by testing multiple hypotheses and only reporting one of these without correcting the statistics for this
 
 \
 
-> We are running this subject to the final say of the charity. We have proposed that the Treatment emails (but not the control emails) will include a sentence/fragment such as the following in both a captioned photo in the email, and the email text:
+It also helps to ameliorate the 'file-drawer' problem. Findings that are not striking or significant tend to be less likely to be published, and less likely to be discovered and reported in the media. Thus the scientific consensus may be biased in favor of 'publishable' findings. By preserving a record of all experiments planned and run, and by sharing this data, pre-registration may help to reduce this bias. (E.g., pre-registered 'null' findings may be reported in later literature reviews and meta-analyses.)
 
-> "Last year, we were able to provide [general provision of an outcome here relevant to the charity] to a [recipient unit] with just $[small amount of money]."
+
+```  
 
 \
 
-<center> (from prereg) </center>
 
-> We plan to perform standard nonparametric statistical tests of the effect of this treatment on
+**Preregistration excerpts** 
+
+```{block2,  type='note'}
+What is the impact of including 'information about the per-dollar impact'  of a charity (in terms of services provided) on the average donation (equivalently, total amount raised) and the donation incidence rate?
+
+\
+
+We are running this subject to the final say of the charity. We have proposed that the Treatment emails (but not the control emails) will include a sentence/fragment such as the following in both a captioned photo in the email, and the email text:
+
+"Last year, we were able to provide [general provision of an outcome here relevant to the charity] to a [recipient unit] with just $[small amount of money]."
+
+\
+
+
+We plan to perform standard nonparametric statistical tests of the effect of this treatment on
 
 - Average gift amount (including zeroes)
 - Incidence/number of people making a gift, [and]
 - Incidence of gifts of exactly $10.
 
->  In particular, we will focus on Fisher's exact test (for incidence) and the standard rank sum and t-tests for the donation amounts.
+ In particular, we will focus on Fisher's exact test (for incidence) and the standard rank sum and t-tests for the donation amounts.
 
 \
+```
 
-**Power calculations**
 
-> Response rates in previous such emails were extremely low: approximately 1 per 3,000 emails. Our power calculations suggest that we have .29 power to detect a 50% effect, and 0.90 power to detect approximately a 100% (doubling) on incidence...
 
-> Because of this limited power, we will ask the charity to run this trial a second time with an equivalent-sized sample.
+**Preregistration ...: Power calculations**
+
+```{block2,  type='note'}
+
+Response rates in previous such emails were extremely low: approximately 1 per 3,000 emails. Our power calculations suggest that we have .29 power to detect a 50% effect, and 0.90 power to detect approximately a 100% (doubling) on incidence...
+
+Because of this limited power, we will ask the charity to run this trial a second time with an equivalent-sized sample.
+
+```  
 
 \
-
 **Stopping rule**
 
-> We aim to continue this treatment in future charity appeals until we can statistically bound (with 95% confidence) the impact of the treatment on both incidence and average donation within a margin of 1/3 of the incidence and average donation in the control condition.
+```{block2,  type='note'}
 
+ We aim to continue this treatment in future charity appeals until we can statistically bound (with 95% confidence) the impact of the treatment on both incidence and average donation within a margin of 1/3 of the incidence and average donation in the control condition.
+```
 \
 
 ### Context
@@ -1012,7 +1097,7 @@ Sample size and composition:
 \
 <center>
 
-![dv_crs_prereg](picsfigs/dv_crs_prereg1.png){width=50%}
+![dv_crs_prereg](picsfigs/dv_crs_prereg1.png){width=80%}
 
 </center>
 
@@ -1022,9 +1107,9 @@ Sample size and composition:
 
 <div id="left">
 
-``` {r crs_ctrl_top, out.width='140%', echo=FALSE}
+``` {r crs_ctrl_top, out.width='80%', echo=FALSE}
 
-knitr::include_graphics('crs_ctrl_top.png')
+knitr::include_graphics(file.path('picsfigs','crs_ctrl_top.png'))
 
 ```
 
@@ -1033,9 +1118,9 @@ knitr::include_graphics('crs_ctrl_top.png')
 
 <div id="right">
 
-``` {r crs_test_top, out.width='140%', echo=FALSE}
+``` {r crs_test_top, out.width='80%', echo=FALSE}
 
-knitr::include_graphics('crs_test_top.png')
+knitr::include_graphics(file.path('picsfigs','crs_test_top.png'))
 
 ```
 
@@ -1045,18 +1130,714 @@ knitr::include_graphics('crs_test_top.png')
 \
 
 <div id="left">
-```{r crs_ctrl_bottom, out.width='140%', echo=FALSE}
+```{r crs_ctrl_bottom, out.width='80%', echo=FALSE}
 
-knitr::include_graphics('crs_ctrl_bottom.png')
+knitr::include_graphics(file.path('picsfigs','crs_ctrl_bottom.png'))
 
 ```
 
 </div>
 
 <div id="right">
-```{r crs_test_bottom, out.width='140%', echo=FALSE}
+```{r crs_test_bottom, out.width='80%', echo=FALSE}
 
-knitr::include_graphics('crs_test_bottom.png')
+knitr::include_graphics(file.path('picsfigs','crs_test_bottom.png'))
 
 ```
 </div>
+
+\
+
+
+### Results
+
+```{block2,  type='note'}
+At this point in the File that produces these notes, I'm importing some data and running some analysis *within the file itself*. This is a form of a'dynamic document' (however, some of the results are 'hard-coded', I'll try to adjust this when I have time.)
+
+\
+
+I'm showing some of the code below in case you are interested but feel free to skip it
+```
+
+<!-- summarised data input
+-->
+
+```{r dv-input-cross, echo=TRUE, results='hide', warning=FALSE}
+
+#input donation crosstabs (summary data we can analyse)
+
+dv_cross <- read_excel("../../dualprocess/other_experimental_data/DV_work/Stats-for-DV-Formula_TYVid_dr_editing.xlsx",range="moved_from...!R11:V41") %>%
+  mutate(
+    range = ordered(range, levels = c("<$50", "$50-$99", "$100-$499","$500-$999", "$1000+")),
+    mode = ordered(mode, levels = c("email-link", "not-email","any" ))
+  )
+
+```
+
+```{r dv-input-ranks, echo=FALSE, results='hide'}
+
+#input rank data and add zeroes
+
+dv_ranks <- read_excel("../../dualprocess/other_experimental_data/DV_work/Stats-for-DV-Formula_TYVid_dr_editing.xlsx",sheet="ty_video_ranks")
+
+dv_ranks_pos <- dv_ranks %>%
+  mutate(
+    treatment=as.factor(Treatment),
+    rev_rank = rank(-Rank)
+  ) %>%
+  rename(rank=Rank) %>%
+  dplyr::select(-Treatment)
+
+#Add 91298-27 zeroes for control, add 91296-71 zeroes for treatment
+
+zcontrol <- as_tibble(dv_ranks_pos[1,]) %>%
+  mutate(
+    rank=max(dv_ranks_pos$rank)+1,
+    rev_rank=min(dv_ranks_pos$rev_rank)-1,
+    treatment=as.factor("Control")
+  ) %>%
+  slice(rep(1:n(), each = 91298-27))
+
+ztreat <- as_tibble(dv_ranks_pos[1,]) %>%
+  mutate(
+    rank=max(dv_ranks_pos$rank)+1,
+    rev_rank=min(dv_ranks_pos$rev_rank)-1,
+    treatment=as.factor("Test")
+  ) %>%
+  slice(rep(1:n(), each = 91296-71))
+
+dv_ranks_all_em <- as_tibble(bind_rows(dv_ranks_pos,zcontrol,ztreat))
+
+```
+
+```{r fisher-dv, echo=TRUE, results='hide', warning=FALSE}
+
+#Fisher tests (could adjust to integrate input data i.e. softcode)
+
+fisherme <- function(g1=91298, g1pos = 16816, g2 = 91296, g2pos= 16105) {
+  mat <- matrix(c(g1-g1pos, g1pos, g2-g2pos, g2pos),
+       nrow = 2,
+       dimnames = list(control = c("no", "yes"), treat = c("no", "yes")))
+  fisher.test(mat, or=1, alternative="t", conf.int)
+}
+
+dv_d_don_gte_100 <-
+matrix(c(91298-241-72-63, 241-72-63, 91296-267-69-67, 267-69-67),
+       nrow = 2, dimnames = list(control = c("no", "yes"), treat = c("no", "yes")))
+
+dv_d_don_open_gte_100 <-
+matrix(c(16816-241-72-63, 241-72-63, 16105-267-69-67, 267-69-67),
+       nrow = 2, dimnames = list(control = c("no", "yes"), treat = c("no", "yes")))
+
+(ft_dv_d_open <- fisherme())
+(ft_dv_d_click <- fisherme(16816,412,16105,371))
+(ft_dv_d_don_all <- fisherme(91298,26,91296,71))
+(ft_dv_d_don_open <-  fisherme(16816,26,16105,71))
+(ft_dv_d_don_7day <- fisherme(91298,241,91296,267))
+(ft_dv_d_don_open_7day <- fisherme(16816,241,16105,267))
+
+(ft_dv_don_gte100 <- fisherme(91298,241-72-63,91296,267-69-67))
+(ft_dv_don_open_gte100 <- fisherme(16816,241-72-63,16105,267-69-67))
+
+```
+
+```{r input-dv-ranks, echo=TRUE, results='hide', warning=FALSE}
+dv_ranks_all_em %>% group_by(treatment) %>% summarise(mn = mean(rank))
+dv_ranks_pos %>% group_by(treatment) %>% summarise(mn = mean(rank))
+
+
+#dv_ranks %>
+#liftedWilcox(rev_rank,treatment)
+
+#Ranksum test - CoP
+(dv_ranksum <- wilcox.test(rev_rank ~ treatment, data = dv_ranks_pos, exact = FALSE, conf.int=TRUE))
+
+#Ranksum test - include zeroes
+
+(dv_ranks_all_em_t <- wilcox.test(rev_rank ~ treatment, data = dv_ranks_all_em, exact = FALSE, conf.int=TRUE))
+```
+
+**Cost (Impact/\$) information treatment $\rightarrow$**
+
+The treatment seems to have led to...
+
+\
+
+1. Slightly lower rate of opened emails:
+
+- 16816/91298  (18.4%) in control vs 16105/91296 in treatment (17.6%)
+- Highly significant in Fisher's exact test ($p<0.001$)
+
+<br> \
+
+
+2. Slightly (insignificantly) lower rate of click-through after opening
+
+- 2.3% vs 2.5% (95% Odds ratio confidence interval: 0.81, 1.08)
+
+```{block2,  type='technote'}
+
+The 'Odds ratio' refers to the relative rate of some outcome occurring under the different conditions. Here we present the usual 95% confidence intervals for this ratio. 
+
+\
+This  is a 'frequentist' analysis and not a "Bayesian" analysis.  Thus the confidence intervals should not literally be interpreted as a stating 'there is a 95% probability that the true value of a parameter (or ratio)' is within this interval. Further discussion of this hotly  controversial issue can be found , e.g., [at stackexchange](https://stats.stackexchange.com/questions/2272/whats-the-difference-between-a-confidence-interval-and-a-credible-interval). 
+
+```  
+
+\
+Why the above difference?
+
+```{block2,  type='digression'}
+
+Headers were identical but people may 'peek' at content in some email systems, I believe.
+Spam filtering may have also been affected by the different messages.
+See 'https://www.hipb2b.com/blog/email-opens-measuring-actually' for the issue of how email opens are tracked.
+```
+
+
+
+\
+
+... (Impact per) Cost information led to  $\rightarrow$
+
+
+**3. Greater donation incidence:**
+
+
+*Via email click-through:* **66 > 25**
+
+- Highly significant in Fisher's exact test ($p<0.001$, 95% CI OR: (1.7, 4.5); (1.8,4.5) conditional on opening email)
+
+\
+
+<br>
+
+*Over the next 7 days, all channels, for email-openers:* **267 > 241 **
+
+- This is "marginally insignificant" in Fisher's exact ($p=0.1$, 95\% CI OR: (0.97,1.39))
+
+<!--
+Some intertemporal substitution?
+But I'm not sure yet whether the latter is 'all modes' or 'modes other than the original email'.
+-->
+
+
+\
+
+```{r dv-histo, echo=TRUE, results='hide', warning=FALSE}
+
+smalltext <- element_text(size = 7)
+
+dv_hist_email <- dv_cross %>%
+  dplyr::arrange(desc(mode)) %>%
+  ggplot() + geom_col(aes(x=range, y=gifts, fill=treatment), position = position_dodge(width=.5), width=.5) + facet_grid(mode ~ .)  + theme(axis.text.x = smalltext)
+
+dv_hist_email_stack <- dv_cross %>%
+  filter(mode!="any") %>%
+  dplyr::arrange(desc(mode)) %>%
+  ggplot() +  geom_col(aes(x=range, y=gifts, fill=mode), position = position_stack(reverse = TRUE))  + facet_grid(. ~ treatment)
+
+```
+
+4. **Mixed results on avg. donation (overall & 'Conditional on Positive'), amount raised**
+
+```{block2,  type='warning'}
+
+I report the 'conditional on positive' effects below--- the differing average contribution of those making positive contributions. However,  unless we can confidently assert very strong conditions over the process determining whether one makes a donation, this should be seen as a *descriptive* measure only.  It should not be interpreted as 'the  impact of the treatment on the donation made by someone who would donate whether or not they were treated.' There may be strong selection effects:  the treatment may increase (or decrease)  the likelihood of donating and it may particularly drive certain groups to donate who would not have donated in the other condition. See further discussions of this, e.g., in @AngristJD2008 ("good CoP, bad CoP") and @Lee2009.
+
+
+```  
+
+\
+
+<center> **Average revenue/email** </center>
+
+*A. Via email clickthrough:*
+
+- Treatment: raised USD \\$ 0.07 per email
+
+- Control group raised \\$0.16	per email (\\$90.46 vs \\$536.89 Conditional-on-positive-donation) 
+
+
+Ranksum test: insignificant overall, strongly significant (but probably misleading) for CoP <small> (mean ranks for latter: 30.3 vs 47.0) </small>
+
+```{block2,  type='note'}
+The difference appears driven by a single donation outlier in the control group
+```
+
+\
+
+
+```{block2,  type='technote'}
+
+"Wilcoxon's rank sum test" is a nonparametric test of whether one  population  is  "higher ranked than" another set of values. The two groups are ranked overall,  and the average ranks are compared.  The test  computer like it is that the difference in the average ranks in the sample  between the two groups could have arisen by chance.
+
+By "nonparametric"  we mean that the validity of this test does not depend on the data following any particular parametric distribution, such as normal,  chi-squared, etc.
+
+```  
+
+<!--
+Todo:  t-test, incidence of highest contributions, distribution shift?
+-->
+
+<br>
+\
+
+
+*B. Over the next 7 days (among those who opened the email)*
+
+- Treatment \$0.48 per email vs 
+- Control \$0.34
+
+
+Ranksum test: marginally insignificant <small> overall (p=0.10) and for CoP </small>
+
+\
+
+T-test: marginally insignificant <small> in levels (p= 0.10, CI [-1.84, 0.161]), windsorised at 1000 (p= 0.17, CI [-1.054, 0.182]) </small>
+
+\
+
+The difference seems driven by the largest donations.
+
+<!--
+dv_ttest_all$p.value
+dv_ttest_all$conf.int[1:2]]
+dv_ttest_all_w1000$p.value
+dv_ttest_all_w1000$conf.int[1:2]`
+-->
+
+```{block2,  type='note'}
+
+For inverse hyperbolic sign: this blows up zeroes ... (so what did  @Karlan2017 do in the column where they claim to have done this?)
+
+  \
+
+7 days \\$43,448 raised (treatment)  vs \\$30,931 (control), divided by number of emails *sent*
+
+We need to consider which tests to use... noting mostly zeroes, great skew? Zero-inflated negative binomial?? Problem: no access to raw data, need to request.
+
+```
+
+\
+
+<center> Don. freq., range-coded; by trtmt/rsps-mode </center>
+
+```{r dv_hist_email, out.width='80%', fig.align='center',  echo=TRUE}
+
+dv_hist_email
+
+```
+
+<small>
+Fisher: 95\% CI OR 'donations over \$100 within 7 days (opened emails)' =  [0.992 1.688]
+</small>
+
+\
+
+<center> Donn. freq., range-coded; by trtmt/rsps-mode </center>
+
+<!-- Which tests to use... noting mostly zeroes, great skew?
+- Rank sum?
+- regression with transformed outcome? (e.g., Windsorised outliers, inverse hyperbolic sine cf Karlan and W)
+- zero-inflated Poisson or ZI Negative Binomial? (probably this is best)
+- "Zero-Inflated Rank Test"
+-->
+
+```{r dv_hist_email_stack, out.width='80%', fig.align='center',  echo=FALSE}
+
+dv_hist_email_stack
+
+```
+
+
+
+<!--
+Karlan Because there are outliers in the dependent variable, we use four methods to examine robustness to different functional forms: simple amount donated, amount donated winsorized at $1000 (which constitutes the 99.8th percentile), and the inverse hyperbolic sine of the amount donated (because log of amount donated would drop those who did not donate).
+Note: if we can get 'last amount donated' this would be good.
+-->
+
+
+```{block2,  type='note'}
+The charity partner did not share individual donation amounts with us, only the 'sufficient statistics' used to construct all of the above.
+Such rules and sensitivities are common in these contexts.
+```
+
+
+\
+
+5. Lack of power to detect relative rate of donations at/under \$10 (email responses)
+
+<br>
+
+2/91298 in control
+
+5/91296 in treatment
+
+
+```{r dv_don_ranges_fisher, results='hide', echo=FALSE}
+
+dv_10don <-
+matrix(c(100-2, 2, 91296-5, 5),
+       nrow = 2, dimnames = list(control = c("no", "yes"), treat = c("no", "yes")))
+
+(ft_dv_10don <- fisher.test(dv_10don, or=1, alternative="t", conf.int))
+
+
+```
+
+### DV: Proposed follow-up
+
+We continue to work with this partner,  following our long-term plan.  In future trials we aim to use more realistic impact information.
+
+<!-- Pre-register an analysis technique designed to accomodate rare events. -->
+
+  \
+
+## Bergh project (Mturk) {#bergh-mturk-experiment}
+
+Robin Bergh ran a series of experiments mostly on Amazon's M-Turk.
+I worked with Robin to run a further 'field' experiment at the university of Essex, further described below. We put these results together into a paper that is now  forthcoming at Social Psychology and Personality Science, which is suggested reading.
+
+[Empathic and Numerate Giving: The Joint Effects of Images and Charity Evaluations](https://www.researchgate.net/publication/337060647_Empathic_and_Numerate_Giving_The_Joint_Effects_of_Images_and_Charity_Evaluations
+)
+
+\
+
+Abstract: 
+
+> Helping behaviors are often driven by emotional reactions to the suffering of particular individuals, but these behaviors do not seem to be upregulated when many people need help. In this paper we consider if these reactions are also “innumerate” to information about how charities spend their money. Across six experiments we examined how images of identified victims interact with information about charity efficiency (money toward program) and effectiveness (program outcome). We further examined if the images primarily get people to
+donate (yes/no), while efficiency/effectiveness might provide a tuning mechanism for how much to give. Results showed that images influenced the propensity to donate and induced participants donate their full bonuses, indicating heuristic effects. Efficiency and effectiveness information had no effects on donations.
+
+
+\
+
+Note  that the  designs were mainly "2 x 2":  with and without emotional information and with and without analytical/impact information.  In our pre-analysis plan you can see  we propose several hypotheses and we anticipated that there would be an interaction effect. In particular, we expected the emotional stimuli to have a dampened  affect,  in the presence of analytical information, i.e. the analytical  information would "switch off" the empathy.  However, we did not find this although our statistical power was somewhat limited.
+
+\
+
+Below  our images depicting some of Bergh's  experimental designs, with   treatment and control always varying *between* (rather than *among*) participants. I.e., each participant was always asked to donate in only a single way,  but different participants were  given different presentations.
+
+\
+
+```{r bergh_syria_examples.png, out.width='100%', fig.align='center', echo=FALSE}
+
+knitr::include_graphics(file.path("picsfigs","bergh_syria_examples.png"))
+```
+
+\
+**Context**
+
+Participants were paid volunteers on the website 'Amazon M-turk', This was limited to US Americans with a 'hit approval rating' 98%+ and with  100 hits or less.
+
+ <small> $\rightarrow$ final sample sizes: 398, 614, 611, 608, and 433 in Studies 1-5 respectively (variation tracking design complexity)
+</small>
+
+
+*Details*: Some observations were excluded based on 'attention check' questions. The percentage of women varied between 57 and 60%, the median age across all studies was 29-30 years (SDs from 9.55 to 10.64)
+
+
+\
+
+**Payments**
+
+The rewards ---  will baseline amounts and the amount people could donate from---  varied somewhat across the studies:
+
+\
+
+For studies 1-5 (S1-S5)
+
+- \$1.50 (\$2 in S4)  baseline pay^[Bsaseline pay was  $2 in study 4 because it took longer to complete.]
+
+- Bonuses: \$3 in S1-S2, \$5 in S5
+
+- Raffle: \$50 (1:25 odds) in S3-S4
+
+
+<br>
+\
+
+
+**Donation asks (from bonus) \& treatments**
+
+The requests  donate also varied somewhat, but involved  the following essential elements:
+
+- Participants  were asked to donate to 1 charity (or 2 within the same category); Syria relief, Polio.
+
+- Between-subject treatments: Image \&/or information
+
+- Commit (\& choose a charity); next select an amount; the  ordering of this was varied as well as  when  the different stimuli (image, analytical information) took place. 
+
+
+
+\
+
+<center>
+Bergh setups
+</center>
+
+```{r bergh-s1-s6, out.width='84%', fig.align='center', echo=FALSE}
+
+knitr::include_graphics(file.path("picsfigs","dp_studies_matrix.png"))
+
+```
+
+\
+
+<center> Studies 1-3: </center>
+
+```{r bergh-s1-3-designmatrix, out.width='80%', fig.align='center', echo=FALSE}
+
+knitr::include_graphics(file.path("picsfigs","bergh-s1-3-designmatrix.png"))
+
+```
+
+\
+<center> Study 4: </center>
+
+
+```{r bergh-s1-3-timings, out.width='95%', fig.align='center', echo=FALSE}
+
+knitr::include_graphics(file.path("picsfigs","bergh-s1-3-timings.png"))
+
+```
+
+\
+
+<center> Study 4 </center>
+
+```{r bergh-s4.png, out.width='85%', fig.align='center', echo=FALSE}
+
+knitr::include_graphics(file.path("picsfigs","bergh-s4.png"))
+
+```
+
+
+\
+
+###  Bergh/Reinstein Results {#bergh-results}
+
+```{r fig.cap='', out.width='80%', fig.asp=.5, fig.align='center', echo = FALSE}
+
+knitr::include_graphics(file.path("picsfigs","bergh_bars.png"))
+
+```
+
+\
+
+**Overall:**
+
+<br>\
+
+There was a strong positive effect of *images* on donation incidence and amounts.
+
+\
+
+
+There was little impact of effectiveness information on donation incidence, amounts.
+
+\
+
+
+An *insignificant* result is not necessary a credible finding that 'the impact is small or nonexistent.'  If I have very few observations and a lot of 'statistical noise' than I will not be able to detect an impact even if there is truly a strong impact. Suh a design would be 'underpowered'.
+
+\
+However, here, looking at confidence intervals, I believe we have a "fairly tightly-bounded null". We can, in some sense, statistically rule out the existence of a very large effect. I.e., a very large effect seems unlikely, given this data. 
+
+\
+
+The  results across the six studies are  summarized below:
+
+```{r bergh-anova, out.width='90%', fig.align='center', echo=FALSE}
+
+knitr::include_graphics(file.path("picsfigs","bergh_anova_meta.png"))
+
+```
+
+
+  The final column gives a "mini meta-analysis." (Although more sophisticated Bayesian and random effects approaches are possible, this is simply an unweighted pooling of the data across the experiments.)  Most of the measures given are unitless, such as correlation coefficients. (And 'CI's tands for "confidence interval". )
+
+\
+
+The first set of rows  provides evidence that the image manipulation had a strong positive effect overall.  We found this strong impact of the image at both the extensive (' did people donate') and intensive margin ('how much did the donate').  For example, in regressions on donation incidence we find a  95% confidence interval for the odds ratio of [1.14, 1.60].
+
+\
+
+The second set suggests that the  information/analytical treatments  did not have a particularly strong effect,  although the confidence intervals are not extremely tight so we might not be able to rule out a  moderate effect, perhaps a negative one.
+
+\
+
+The third  set of rows very just may have been some interaction effect in the direction predicted;  but the statistical significance  of this is marginal at best.
+
+
+Economists may be more familiar with the regression presentation below;  I find it easier to interpret.
+
+
+```{r bergh-pooled-reg, out.width='90%', fig.align='center', echo=FALSE}
+
+knitr::include_graphics(file.path("picsfigs","bergh-reinstein_pooled.png"))
+
+```
+
+We regress outcomes for the pooled data on the treatments and their interactions "effect coded".  The effect coding implies that there is no "base group":  the coefficient on "Image" and "Effectiveness"  represents the average effect of  each of these treatments across  all of the other treatments. The coefficient on "Image x Eff"  represents the additional effect of adding a second treatment to either treatment alone, i.e.,  the interaction effect.^[Note that whenever there are two variables  there is only *one* interaction effect. I.e., the 'difference between treatment A+B versus the sum of the effect of treatments B and A alone'.]  All of these regression include a dummy for each study and a  control for the "maximum potential donation" in a study.   As outcomes, we consider i. the amount donated, ii.  the share  of the maximum amount that was donated, and iii.  whether a donation was made (0/1). For the 'share'  variable we consider both an OLS model and a  fractional response model.  Again, we see a strong positive effect of image treatments and  and effect of  analytical  effectiveness information that seems at least not to be substantially positive.  Interaction effects  are basically inconsistent across specifications.
+
+
+
+\
+
+## Bergh/Reinstein (Essex piggyback) {#essex-piggyback}
+
+I give some more details of the final (6th)  experiment below as this is the one I was most familiar with and the one involving clearest measure of per-pound impact.
+
+### Setup
+
+
+This experiment was connected to EssexLab 2019 Omnibus online survey.  (We set up a survey to get background measures on all participants in the lab's experiments,  to make it easier for later experimenters to use this information without having to ask for it when running their experiments.)
+
+All participants in this lab pool (several thousand) were invited (by email) to take the survey  and promised rewards. As  a different experiment was run on earlier and UK-based respondents, this experiment targeted those who responded later and those who were not UK  permanent residents.
+
+The survey itself took about 20 minutes, and included many psycho/demog/polit/econ questions, mostly unrelated to charity.
+
+\
+
+Completion of  this surveymade you eligible for a raffle for 1 of 20 Amazon vouchers worth £50 each;  this was announced from the outset.  As response rates were lower than expected, the probability of winning was fairly high, roughly 1 in 20.^[The chances of winning were unknown to participants but could be inferred to be of magnitude of between 1/10 and 1/300. Ex post about 1/20.]
+
+After the 'main survey' participants were given information about blindness in general.
+
+Next,   they were given specific information described below and asked to  commit to donate  from any amount that they might win in the raffle.
+
+\
+
+
+```{block2,  type='note'}
+
+Advantages over S1-5 (Mturk): Not a 'donation experiment,' real impact measures, distinct emotional simuli, choose between distinct *causes*, larger amounts, tied to rich Omnibus survey data
+
+
+```
+
+\
+
+**The 'last' Omnibus questions just before this were things like...**
+
+
+```{r last-omni-qs, out.width='50%', fig.align='center', echo=FALSE}
+
+knitr::include_graphics(file.path("picsfigs",'q_born_uk.png'))
+
+
+```
+
+etc.  
+
+\
+
+**2 $\times$ 2, balanced blocked randomisation, between-subject: **
+
+> 1. Analytic information about 'cost per outcome' & 'cost per impact'
+
+<br>
+
+> 2. Empathy-inducing image: picture of blind girl (Yes/No)
+
+\
+
+```{block2,  type='note'}
+
+We also 'block-randomize' the order the charities were presented/
+  
+And this blocking balanced especially across some previous unrelated variation.
+
+In smaller samples one can attain greater statistical power by blocking,  to gain an approximate balance between treatment(s) and control over those variables (e.g., age, gender, income) that one might anticipate to  be particularly relevant outcomes. 
+
+(In extremely large samples,  especially where it is  virtually costless to obtain more data, the gains to such blocking may be smaller and pure randomization may be used instead.)
+```
+
+
+\
+
+**Here what some of the key screens looked like:**
+
+### Introduction screen (all)
+
+```{r intro-all, out.width='90%', fig.align='center', echo=FALSE}
+
+knitr::include_graphics(file.path('picsfigs','intro_prize_blind.png'))
+
+```
+
+\
+
+### Image treatment (Half of participants)
+
+```{r imagetreat-png, out.width='75%', fig.align='center', echo=FALSE}
+
+knitr::include_graphics(file.path('picsfigs','blind_image.png'))
+
+```
+
+\
+
+**Control: description, choice**  (1/2 of subjects)
+
+```{r control-png, out.width='60%', fig.align='center', echo=FALSE}
+
+knitr::include_graphics(file.path('picsfigs','info_no_eff.png'))
+
+```
+
+```{block2,  type='note'}
+Remember, 1/2 of these participants had the order of charities reversed.
+```
+
+\
+
+**Info-treatment: description, choice**  (1/2 of subjects)
+
+```{r info-png, out.width='55%', fig.align='center', echo=FALSE}
+
+knitr::include_graphics(file.path('picsfigs','descr_chars_eff_inf.png'))
+knitr::include_graphics(file.path('picsfigs','char_chc.png'))
+
+```
+
+```{block2,  type='note'}
+Again, 1/2 of these had the order of charities reversed.
+```
+
+
+\
+
+### Donation amount choices
+
+Those who  opted to donate next made their choices via a "slider".  (The slider was initially blank.)  In fact one could change their mind at this point and set the slider to zero if they didn't want to conditionally donate ( although this occurred only rarely).
+
+\
+
+<center>
+![Donation slider](picsfigs/don_slider_33.png){width='80%'}
+</center>
+
+
+
+### Results
+
+This experiment alone turned out to have  limited power to  detect differences in amounts donated or incidence by treatment. Most of the confidence intervals were extremely wide. We cound only a few strong effects. 
+
+<br>
+
+\
+
+The *IMAGE* treatment *reduced* donation (incidence and amounts) to Guide Dogs (and this was a fairly strong and significant effect).
+It 'increased' donations to River Blindness, but not statistically significantly.
+
+\
+
+Our intuition for this was that  presenting the image of the girl who looked arguably more African than British, may have subtly made people more sympathetic to the River Blindness campaign.  (As a side point, this suggests that emotional information can be used to drive people towards *more* impactful causes.)
+
+\
+
+
+
+
+

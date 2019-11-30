@@ -223,7 +223,7 @@ However, it seems likely that most people would choose b, even though it has a l
 \
 <!---
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/weirdalscissors.jpg")
+ knitr::include_graphics(file.path("picsfigs","weirdalscissors.jpg"))
 ```
 -->
 
@@ -275,7 +275,7 @@ Thus $EV(X) = 0.01 \times 1020 + 0.99 \times 10 = 10.20 + 9.90 = 20.10$
 \
 
 ```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/powerball.png")
+ knitr::include_graphics(file.path("picsfigs","powerball.png"))
 ```
 
 ```{block2,  type='digression'}
@@ -323,7 +323,7 @@ We also run *experiments* with real or hypothetical payoffs to measure this.
 One technique is the Holt and Laury (2002) risk elicitation task:
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/holtlaurie.png")
+ knitr::include_graphics(file.path("picsfigs","holtlaurie.png"))
 ```
 
 `r format_with_col("Asked to choose one in each row (A or B)","gray")`
@@ -333,7 +333,7 @@ One technique is the Holt and Laury (2002) risk elicitation task:
 <br> <br> \bigskip
 
 ```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/holtlauriedetail.png")
+ knitr::include_graphics(file.path("picsfigs","holtlauriedetail.png"))
 ```
 
 At what point do people switch from choosing the safe to choosing the risky lottery?
@@ -344,7 +344,7 @@ The later you switch, the more risk averse you reveal yourself to be.
 \
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/holtlauryresults.png")
+ knitr::include_graphics(file.path("picsfigs","holtlauryresults.png"))
 ```
 
 Above: Results for different 'stake sizes'. Most people are risk-averse.  People switch to the risky option later when stakes are higher.
@@ -596,34 +596,34 @@ $$f(E(X)) > E(f(X))$$
 
 
 ```{r  fig.cap = '', out.height='35%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/riskaversion1.png")
+ knitr::include_graphics(file.path("picsfigs","riskaversion1.png"))
 ```
 
 *Note: You start with \$35k*
 
 ```{r  fig.cap = '', out.height='35%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/riskaversion2.png")
+ knitr::include_graphics(file.path("picsfigs","riskaversion2.png"))
 ```
 
 
 ```{r  fig.cap = '', out.height='35%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/riskaversion3.png")
+ knitr::include_graphics(file.path("picsfigs","riskaversion3.png"))
 ```
 
 
 ```{r  fig.cap = '', out.height='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/riskaversion4.png")
+ knitr::include_graphics(file.path("picsfigs","riskaversion4.png"))
 ```
 
 
 ```{r  fig.cap = '', out.height='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/riskaversion5a.png")
+ knitr::include_graphics(file.path("picsfigs","riskaversion5a.png"))
 ```
 
 ## Ways of reducing risk: Insurance
 
 ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/insurancereducesrisk.png")
+ knitr::include_graphics(file.path("picsfigs","insurancereducesrisk.png"))
 ```
 
 Fair insurance
@@ -733,7 +733,7 @@ Suppose you have £35,000 and must invest £15,000 in an Oil company or a Transp
 2.  If you put half in each company your income has a 25\% chance of each of the following values:
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/oiltransitperformance.png")
+ knitr::include_graphics(file.path("picsfigs","oiltransitperformance.png"))
 ```
 
 - Same expected value, but it is 'better'
@@ -758,7 +758,7 @@ How do we know it is better (for a risk-averse person)?
 
 
 ```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/diverselessrisk.png")
+ knitr::include_graphics(file.path("picsfigs","diverselessrisk.png"))
 ```
 
 
@@ -892,7 +892,7 @@ Classic economist's argument: you should 'bet against yourself' to minimise risk
 ## Pricing of risk (and assets) in financial markets
 
 ```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/marketriskline.png")
+ knitr::include_graphics(file.path("picsfigs","marketriskline.png"))
 ```
 
 
@@ -906,7 +906,7 @@ Market line
 \
 
 ```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/investorchoices.png")
+ knitr::include_graphics(file.path("picsfigs","investorchoices.png"))
 ```
 
 - Different preferences for risk versus *expected* (average) return

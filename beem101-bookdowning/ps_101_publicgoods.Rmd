@@ -45,7 +45,7 @@ $U_i(c,G)= c + ln(G)$
 
 Let each individual i’s contribution be $g_i$, total contributions are $G=\sum(g_i)$ and total “others” contributions are $G_{-i}$.
 
-Each individual’s utility is:                                  
+Each individual’s utility is:
 
 $$U_i= c + ln(G_{-i}+g_i)$$
 
@@ -76,27 +76,27 @@ For all i, for an *equal* division of this optimal provision we would have every
 $$g_i=N/N = 1$$
 
 \
-  
+
 
 **2. What will be the total private voluntary provision? Does it matter if we consider only 'symmetric' equilibria or if we allow asymmetric provision (some provided more than others)**
 \
 
 **Solving**
 
-But $g_i =1 \ \forall \  i$ is not a Nash equilibrium strategy profile.  In fact i’s best response chooses $g_i$ conditional on the sum of others’ contributions $G_{-i}$,  
+But $g_i =1 \ \forall \  i$ is not a Nash equilibrium strategy profile.  In fact i’s best response chooses $g_i$ conditional on the sum of others’ contributions $G_{-i}$,
 
-$$U_i= m - g_i + ln(G_{-i} + g_i)$$, (s.t. $g_i \geq 0$) 
+$$U_i= m - g_i + ln(G_{-i} + g_i)$$, (s.t. $g_i \geq 0$)
 
 \
 
-...hence in effect choosing $G$ to maximise 
+...hence in effect choosing $G$ to maximise
 
-$$U_i(G, G_{-i})= m - (G - G_{-i}) + ln(G)$$, (s.t. $G \geq  G_{-i}$) 
+$$U_i(G, G_{-i})= m - (G - G_{-i}) + ln(G)$$, (s.t. $G \geq  G_{-i}$)
 $$U_i(G, G_{-i})= (m +G_{-i})- G + ln(G)$$.
 
 ```{block2,  type='digression'}
 Note that here others' contributions $G_{-i}$, at least those below the point where i's MB of G equals her mc of 1, plays the same role as i's income $m$. Thus $i$ will respond to an increase in $G_{-i}$ in the same way she would respond to an increase in her income.
-``` 
+```
 
 It's easy to see that this is a concave problem (but we should still check the boundary condition ... here this is $G \geq  G_{-i}$).
 
@@ -110,7 +110,7 @@ So, to best-respond, the individual considers $G_{-i}$, the sum provided by ever
 (Of course if $G_{-i}>1$ then $i$ cannot contribute a negative amount, so he simply contributes 0; the 'boundary condition'. But if $G_{-i}>1$ the other individuals would not have been best responding.)
 
 \
-If we want to consider a 'symmetric' equilibrium where all individuals do the same thing this implies that $g_i^{BR} = G^{BR}/N = 1/N$. 
+If we want to consider a 'symmetric' equilibrium where all individuals do the same thing this implies that $g_i^{BR} = G^{BR}/N = 1/N$.
 
 \
 
@@ -125,15 +125,15 @@ Consider any private outcome that involves best responses (a Nash Equilibrium), 
 
 The government could make all better off (relative to the *symmetric* Nash equilibrium) by:
 
-1. Imposing a (lump-sum) tax $t_i$ on each person $i$ such that $\sum_{i=1..N} t_i = N$. For a symmetric tax this means everyone must pay $t_i=1$ ... As long as $t_i < m_i$ for all individuals $i$, this will be feasible. 
+1. Imposing a (lump-sum) tax $t_i$ on each person $i$ such that $\sum_{i=1..N} t_i = N$. For a symmetric tax this means everyone must pay $t_i=1$ ... As long as $t_i < m_i$ for all individuals $i$, this will be feasible.
 
 
 2. Using this revenue to provide a total public good of $G^{opt}=N$. As it knows everyones preferences (and income) it knows this is the optimal amount.
 \
 
-3. This (symmetric tax) yields utility which we label $u_i^{g,s} = m - t_i + ln(N) = m - 1 + ln(N)$ compared to  $u_i^{br,s} = m - 1/N$ in the symmetric private voluntary provision case. 
+3. This (symmetric tax) yields utility which we label $u_i^{g,s} = m - t_i + ln(N) = m - 1 + ln(N)$ compared to  $u_i^{br,s} = m - 1/N$ in the symmetric private voluntary provision case.
 
-Comparing these 
+Comparing these
 
 $u_i^{g,s} - u_i^{br,s} = (m - 1 + ln(N)) - (m - 1/N) =  ln(N)-\frac{N-1}{N} = ln(N)-1 -\frac{1}{N}$. As $ln(2)>1/2$, $ln(3)>1$ and $ln(N)$ increases in $N$ and $1 -\frac{1}{N}$ never exceeds 1, we see that this increases welfare for any $N>1$.
 
@@ -157,11 +157,11 @@ Budget constraints are: $c+g_i=m$
 Plugging this in: $U_i = m - g_i +0.9(G-i +g_i)$, noting that all variables must be non-negative.
 \
 
-Sum of utilities: 
+Sum of utilities:
 
 $$\sum_{i=1}^{N} u_i = N m - G + \ N(0.9G) =Nm \ – \  (N-1)0.9G $$
 
-It costs society “1” per unit of public good that yields '$N \times 0.9$' in benefit. So, as long as $N>1$ (more than 1 person) we should spend as much as possible on the public good, namely, $G^{opt}=Nm$. 
+It costs society “1” per unit of public good that yields '$N \times 0.9$' in benefit. So, as long as $N>1$ (more than 1 person) we should spend as much as possible on the public good, namely, $G^{opt}=Nm$.
 
 Divided equally (in fact, the only possible division, obviously), $g_i^{opt}=m$.
 
@@ -183,7 +183,7 @@ So no one will contribute anything.
 
 \
 
-It is easy to show this is Pareto-inefficient and that the government could make everyone better-off under the conditions for the previous part, using similar arguments.  
+It is easy to show this is Pareto-inefficient and that the government could make everyone better-off under the conditions for the previous part, using similar arguments.
 
 
 ### Easier problems, mainly from the NS text
@@ -290,7 +290,7 @@ Suppose the 'demand curves' referred to are, as discussed in lecture, the amount
 Also assume that these MB curves will *never* become negative. The minimum marginal benefit is 0.
 
 ```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/16-7ac.png")
+ knitr::include_graphics(file.path("picsfigs","16-7ac.png"))
 ```
 
 
@@ -300,7 +300,7 @@ Also assume that these MB curves will *never* become negative. The minimum margi
 
 ```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
 
- knitr::include_graphics("picsfigs/not-16-7.png")
+ knitr::include_graphics(file.path("picsfigs","not-16-7.png"))
 
 ```
 
