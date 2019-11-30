@@ -1,4 +1,11 @@
-# Update: this content is being adjusted for the html/bookdown format
+# R-markdown to html -- web-book and slides
+
+See this page as rendered html (web page) [HERE](https://daaronr.github.io/micro_econ_pandoc/)
+
+- [Web book for Beem101 (MSc Microeconomics)](beem101-bookdowning/index.html)
+
+- [Web book for Beem2038 (Intermediate Microeconomics for business and politics students)](be2024-bd-copy/index.html)
+
 
 # Pandoc (Latex enhanced) to pdf slides/handouts; material and process for two modules (Beem101 and BEE2024)
 
@@ -10,7 +17,7 @@ The content is largely drawn from Nicholson and Snyder's "Intermediate Economics
 
 (Further description of content will be given.)
 
-#Setup
+# Setup - md only versions
 
 For any of this to work, you need to have [Pandoc](http://pandoc.org/) installed, which I recall takes some time. You will also want to configure the relevant "templates”. Is often difficult to figure out which format to which type of output and where exactly these templates are stored.
 
@@ -19,7 +26,7 @@ Some of the templates contain latex commands that are referred to in the markdow
 I believe you will also need to have (the correct version?) of latex installed.
 
 
-#Key files used
+## Key files used
 
 - be2024/slides_bothmodules.md: Lecture slides (for two modules); all content and tags
 
@@ -33,7 +40,7 @@ I believe you will also need to have (the correct version?) of latex installed.
 
 -  be2024/compiletutorials.sh:  "batch” file that I run to make all the different versions of the tutorials and compile them into PDFs.  I'm doing this on a Mac with “Bash” as the shell script
 
-##Templates and macros
+### Templates and macros
 
 (Folder: 'templates_etc')
 
@@ -43,9 +50,9 @@ I believe you will also need to have (the correct version?) of latex installed.
 - default.latex
 - default.beamer
 
-#Process, editing software, and improvements
+## Process, editing software, and improvements
 
-##Présentation:
+### Présentation:
 
 I use the obscure app “présentation” \url{http://iihm.imag.fr/blanch/software/osx-presentation/} to show the slides on my Mac and see the speakers notes on a private screen. It is not perfect.
 
@@ -55,7 +62,7 @@ I use the obscure app “présentation” \url{http://iihm.imag.fr/blanch/softwa
 
 - Movie and web browser view doesn't work
 
-##Text editor:
+### Text editor:
 
 I'm using MacVim/VIM1 for the most part.
 
@@ -63,7 +70,7 @@ I'm using MacVim/VIM1 for the most part.
 - 'Source' and 'mksession' are useful for setting up an environment
 
 
-##Issues
+### Issues
 
 This is far from a perfect process. Formats could be improved and extended beyond just PDFs. The code in the batch files is extremely messy. There is lots of things I would like to automate and improve, if I have the skills and time.
 
@@ -91,7 +98,4 @@ For example...
 
 1. Not sure if I've been able to put internal hyperlinks (other than in the ToC)
 
-<<<<<<< HEAD
 1. Slides ToC (with links) goes off the page
-=======
->>>>>>> 389ce044bb28473a8b0cb25fb6ce34aa4e738f4b
