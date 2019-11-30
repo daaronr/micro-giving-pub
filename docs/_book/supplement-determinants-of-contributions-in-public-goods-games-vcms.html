@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>17 Supplement: Determinants of contributions in public goods games (VCMs) | Microeconomics (MSc)</title>
+  <meta name="description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
+  <meta name="generator" content="bookdown 0.14.1 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="17 Supplement: Determinants of contributions in public goods games (VCMs) | Microeconomics (MSc)" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="17 Supplement: Determinants of contributions in public goods games (VCMs) | Microeconomics (MSc)" />
+  
+  <meta name="twitter:description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
+  
+
+<meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
+
+
+<meta name="date" content="2019-11-30" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="supplement-gift-giving-christmas-chuseok-birthdays-why-do-people-do-it-and-is-it-efficient.html"/>
+<link rel="next" href="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<!-- font families -->
+
+<link href="https://fonts.googleapis.com/css?family=PT+Sans|Pacifico|Source+Sans+Pro" rel="stylesheet">
+
+<script src="js/hideOutput.js"></script>
+
+<!-- Mathjax -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/default.js"></script>
+
+ <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "TeX/AMSmath.js"],
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+        jax: ["input/TeX","output/CommonHTML"]
+      });
+      MathJax.Hub.processSectionDelay = 0;
+  </script>
+
+
+<!-- open review block -->
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { background-color: #f8f8f8; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Microeconomics (MSc)<a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="note.html"><a href="note.html"><i class="fa fa-check"></i><b>1</b> Notes to students; overview</a><ul>
+<li class="chapter" data-level="1.1" data-path="note.html"><a href="note.html#level-of-this-module"><i class="fa fa-check"></i><b>1.1</b> Level of this module</a></li>
+<li class="chapter" data-level="1.2" data-path="note.html"><a href="note.html#readings-and-resources"><i class="fa fa-check"></i><b>1.2</b> Readings and resources</a></li>
+<li class="chapter" data-level="1.3" data-path="note.html"><a href="note.html#this-handout-web-book-online-resource"><i class="fa fa-check"></i><b>1.3</b> This ‘handout’/ web-book/ online resource</a></li>
+<li class="chapter" data-level="1.4" data-path="note.html"><a href="note.html#outline"><i class="fa fa-check"></i><b>1.4</b> Outline and description of module</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction/‘housekeeping’, overview, models, maths, fundamentals</a><ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#the-first-chunk-aims-to-cover"><i class="fa fa-check"></i>The first chunk aims to cover:</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#me"><i class="fa fa-check"></i>Me</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#this-module"><i class="fa fa-check"></i>This module</a></li>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#my-feedback"><i class="fa fa-check"></i><b>2.1</b> Feedback on your highly-esteemed but extremely humble lecturer</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#the-story-of-this-module"><i class="fa fa-check"></i><b>2.2</b> The story of this module</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#the-big-small-question"><i class="fa fa-check"></i>The big (small) question</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#resources"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#how-to-do-well"><i class="fa fa-check"></i>How to do well</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#fortune-cookie-wisdom"><i class="fa fa-check"></i>Fortune Cookie Wisdom</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#background"><i class="fa fa-check"></i><b>2.3</b> Background</a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#why-learn-these-models"><i class="fa fa-check"></i><b>2.4</b> Why learn these models?</a></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#economic-models"><i class="fa fa-check"></i><b>2.5</b> Economic Models</a></li>
+<li class="chapter" data-level="2.6" data-path="intro.html"><a href="intro.html#ns-application-1.1-economics-in-the-natural-world"><i class="fa fa-check"></i><b>2.6</b> NS Application 1.1: Economics in the Natural world</a></li>
+<li class="chapter" data-level="2.7" data-path="intro.html"><a href="intro.html#returns-to-education-is-university-worth-the-time-and-money"><i class="fa fa-check"></i><b>2.7</b> Returns to education; Is university worth the time and money?</a></li>
+<li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#basic-supply-demand-model"><i class="fa fa-check"></i><b>2.8</b> Basic Supply-Demand Model</a></li>
+<li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#marshalls-model-of-supply-and-demand"><i class="fa fa-check"></i><b>2.9</b> Marshall’s Model of Supply and Demand</a></li>
+<li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#how-economists-verify-or-assess-theoretical-models"><i class="fa fa-check"></i><b>2.10</b> How Economists ‘Verify’ (or Assess) Theoretical Models</a></li>
+<li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#some-maths-i-expect-you-to-know"><i class="fa fa-check"></i><b>2.11</b> Some maths I expect you to know</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#simple-stuff"><i class="fa fa-check"></i>Simple stuff</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#minimum-maximum-or-neither"><i class="fa fa-check"></i>Minimum, maximum, or neither?</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#multivar-functions"><i class="fa fa-check"></i>Functions of two or more variables (multivariate functions)</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#contourlines_math"><i class="fa fa-check"></i>Contour lines</a></li>
+<li class="chapter" data-level="2.12" data-path="intro.html"><a href="intro.html#simultaneous-equations"><i class="fa fa-check"></i><b>2.12</b> Simultaneous equations</a></li>
+<li class="chapter" data-level="2.13" data-path="intro.html"><a href="intro.html#empirical"><i class="fa fa-check"></i><b>2.13</b> Empirical microeconomics/econometrics</a></li>
+<li class="chapter" data-level="2.14" data-path="intro.html"><a href="intro.html#empirical-meta-example"><i class="fa fa-check"></i><b>2.14</b> Empirical meta-example</a></li>
+<li class="chapter" data-level="2.15" data-path="intro.html"><a href="intro.html#exogenous-and-endogenous-variables"><i class="fa fa-check"></i><b>2.15</b> Exogenous and endogenous variables</a></li>
+<li class="chapter" data-level="2.16" data-path="intro.html"><a href="intro.html#changing-world-oil-prices"><i class="fa fa-check"></i><b>2.16</b> Changing world oil prices</a></li>
+<li class="chapter" data-level="2.17" data-path="intro.html"><a href="intro.html#more-advanced-material-on-causal-inference"><i class="fa fa-check"></i><b>2.17</b> More advanced material on causal inference</a></li>
+<li class="chapter" data-level="2.18" data-path="intro.html"><a href="intro.html#between-first-and-second-week-priority-home-study"><i class="fa fa-check"></i><b>2.18</b> Between first and second week; priority home-study</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="util-choice.html"><a href="util-choice.html"><i class="fa fa-check"></i><b>3</b> Utility and Choice (BEEM101 - L2)</a><ul>
+<li class="chapter" data-level="" data-path="util-choice.html"><a href="util-choice.html#text-sourcesreadings-preamble"><i class="fa fa-check"></i>Text sources/readings, preamble</a></li>
+<li class="chapter" data-level="3.1" data-path="util-choice.html"><a href="util-choice.html#utility"><i class="fa fa-check"></i><b>3.1</b> Utility</a></li>
+<li class="chapter" data-level="3.2" data-path="util-choice.html"><a href="util-choice.html#measuring-and-comparing-utilities"><i class="fa fa-check"></i><b>3.2</b> Measuring and comparing utilities</a></li>
+<li class="chapter" data-level="3.3" data-path="util-choice.html"><a href="util-choice.html#axioms"><i class="fa fa-check"></i><b>3.3</b> Assumptions about preferences (‘axioms’)</a></li>
+<li class="chapter" data-level="3.4" data-path="util-choice.html"><a href="util-choice.html#ics"><i class="fa fa-check"></i><b>3.4</b> Indifference curves</a></li>
+<li class="chapter" data-level="3.5" data-path="util-choice.html"><a href="util-choice.html#mrs"><i class="fa fa-check"></i><b>3.5</b> Marginal rate of substitution (MRS): Absolute value of slope of indifference curve</a></li>
+<li class="chapter" data-level="3.6" data-path="util-choice.html"><a href="util-choice.html#illustrating-particular-preferences"><i class="fa fa-check"></i><b>3.6</b> Illustrating particular preferences</a></li>
+<li class="chapter" data-level="" data-path="util-choice.html"><a href="util-choice.html#product-positioning-in-marketing"><i class="fa fa-check"></i>Product positioning in marketing</a></li>
+<li class="chapter" data-level="3.7" data-path="util-choice.html"><a href="util-choice.html#perfect-sub-comp"><i class="fa fa-check"></i><b>3.7</b> Definitions: Perfect substitutes and complements</a></li>
+<li class="chapter" data-level="3.8" data-path="util-choice.html"><a href="util-choice.html#choices-are-subject-to-constraints"><i class="fa fa-check"></i><b>3.8</b> Choices are subject to constraints</a></li>
+<li class="chapter" data-level="3.9" data-path="util-choice.html"><a href="util-choice.html#utilmax"><i class="fa fa-check"></i><b>3.9</b> Constrained utility maximization</a></li>
+<li class="chapter" data-level="3.10" data-path="util-choice.html"><a href="util-choice.html#corners"><i class="fa fa-check"></i><b>3.10</b> Note on ‘corner solutions’</a></li>
+<li class="chapter" data-level="3.11" data-path="util-choice.html"><a href="util-choice.html#enrichment-applications"><i class="fa fa-check"></i><b>3.11</b> Enrichment, ‘applications’</a></li>
+<li class="chapter" data-level="3.12" data-path="util-choice.html"><a href="util-choice.html#difprefs"><i class="fa fa-check"></i><b>3.12</b> Different sorts of preferences, optimisation examples</a></li>
+<li class="chapter" data-level="3.13" data-path="util-choice.html"><a href="util-choice.html#generalisations"><i class="fa fa-check"></i><b>3.13</b> Generalisations</a></li>
+<li class="chapter" data-level="" data-path="util-choice.html"><a href="util-choice.html#should-economists-care-how-the-mind-works-from-ns-2.2-application"><i class="fa fa-check"></i>Should Economists care how the mind works? from NS 2.2 application</a></li>
+<li class="chapter" data-level="3.14" data-path="util-choice.html"><a href="util-choice.html#docprep"><i class="fa fa-check"></i><b>3.14</b> Doctoral-prep concepts</a></li>
+<li class="chapter" data-level="3.15" data-path="util-choice.html"><a href="util-choice.html#tutorialpractice-problems-see-below"><i class="fa fa-check"></i><b>3.15</b> Tutorial/practice problems: see below</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="demand.html"><a href="demand.html"><i class="fa fa-check"></i><b>4</b> The Demand function (L3)</a><ul>
+<li class="chapter" data-level="4.1" data-path="demand.html"><a href="demand.html#text-sourcesreadings"><i class="fa fa-check"></i><b>4.1</b> Text sources/Readings</a></li>
+<li class="chapter" data-level="4.2" data-path="demand.html"><a href="demand.html#demand-curves-coverage-outline"><i class="fa fa-check"></i><b>4.2</b> Demand Curves – coverage outline</a></li>
+<li class="chapter" data-level="4.3" data-path="demand.html"><a href="demand.html#demand-functions"><i class="fa fa-check"></i><b>4.3</b> Demand functions</a></li>
+<li class="chapter" data-level="4.4" data-path="demand.html"><a href="demand.html#response-to-income-changes"><i class="fa fa-check"></i><b>4.4</b> Response to income changes</a></li>
+<li class="chapter" data-level="4.5" data-path="demand.html"><a href="demand.html#substitution-and-income-effects-from-a-fall-or-rise-in-price"><i class="fa fa-check"></i><b>4.5</b> Substitution and income effects from a fall (or rise) in <em>price</em></a></li>
+<li class="chapter" data-level="4.6" data-path="demand.html"><a href="demand.html#different-substitution-effects-of-a-price-change"><i class="fa fa-check"></i><b>4.6</b> Different substitution effects of a price change</a></li>
+<li class="chapter" data-level="4.7" data-path="demand.html"><a href="demand.html#the-legendary-giffen-good"><i class="fa fa-check"></i><b>4.7</b> The (legendary?) Giffen good</a></li>
+<li class="chapter" data-level="4.8" data-path="demand.html"><a href="demand.html#more-formal-statements-of-properties-of-marshallian-demand"><i class="fa fa-check"></i><b>4.8</b> More formal statements of properties of Marshallian demand</a></li>
+<li class="chapter" data-level="4.9" data-path="demand.html"><a href="demand.html#some-other-important-functions-to-know-about-doctoral-prep"><i class="fa fa-check"></i><b>4.9</b> Some other important functions to know about (doctoral prep):</a></li>
+<li class="chapter" data-level="4.10" data-path="demand.html"><a href="demand.html#intuition-from-the-slutsky-equation"><i class="fa fa-check"></i><b>4.10</b> Intuition from the ‘Slutsky equation’</a></li>
+<li class="chapter" data-level="4.11" data-path="demand.html"><a href="demand.html#recap"><i class="fa fa-check"></i><b>4.11</b> … Recap</a></li>
+<li class="chapter" data-level="4.12" data-path="demand.html"><a href="demand.html#goals-of-this-chunk-demand-part-2"><i class="fa fa-check"></i><b>4.12</b> Goals of this chunk (demand part 2)</a></li>
+<li class="chapter" data-level="4.13" data-path="demand.html"><a href="demand.html#app-3.2-the-cpi-and-its-biases"><i class="fa fa-check"></i><b>4.13</b> App 3.2: The CPI and its biases</a></li>
+<li class="chapter" data-level="4.14" data-path="demand.html"><a href="demand.html#the-lump-sum-principle"><i class="fa fa-check"></i><b>4.14</b> The Lump-Sum Principle</a></li>
+<li class="chapter" data-level="4.15" data-path="demand.html"><a href="demand.html#an-important-diversion-does-christmas-gift-giving-reduce-welfare"><i class="fa fa-check"></i><b>4.15</b> An important diversion: Does Christmas gift-giving reduce welfare?</a></li>
+<li class="chapter" data-level="4.16" data-path="demand.html"><a href="demand.html#changes-in-the-price-of-another-good-complements-or-substitutes"><i class="fa fa-check"></i><b>4.16</b> Changes in the Price of Another Good; ‘complements’ or ‘substitutes’</a></li>
+<li class="chapter" data-level="4.17" data-path="demand.html"><a href="demand.html#individual-demand-curves"><i class="fa fa-check"></i><b>4.17</b> Individual demand curves</a></li>
+<li class="chapter" data-level="4.18" data-path="demand.html"><a href="demand.html#shifts-in-an-individuals-demand-curve"><i class="fa fa-check"></i><b>4.18</b> Shifts in an individual’s demand curve</a></li>
+<li class="chapter" data-level="4.19" data-path="demand.html"><a href="demand.html#consumer-surplus"><i class="fa fa-check"></i><b>4.19</b> Consumer surplus</a></li>
+<li class="chapter" data-level="4.20" data-path="demand.html"><a href="demand.html#mktdemand"><i class="fa fa-check"></i><b>4.20</b> Market demand (function)</a></li>
+<li class="chapter" data-level="4.21" data-path="demand.html"><a href="demand.html#shifts-in-the-market-demand-curve"><i class="fa fa-check"></i><b>4.21</b> Shifts in the Market Demand Curve</a></li>
+<li class="chapter" data-level="4.22" data-path="demand.html"><a href="demand.html#elasticities"><i class="fa fa-check"></i><b>4.22</b> Elasticities</a></li>
+<li class="chapter" data-level="4.23" data-path="demand.html"><a href="demand.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>4.23</b> Price elasticity of demand</a></li>
+<li class="chapter" data-level="" data-path="demand.html"><a href="demand.html#examples-from-the-headlines"><i class="fa fa-check"></i>Examples from the headlines</a></li>
+<li class="chapter" data-level="4.24" data-path="demand.html"><a href="demand.html#properties-of-price-elasticity-of-demand"><i class="fa fa-check"></i><b>4.24</b> Properties of price elasticity of demand</a></li>
+<li class="chapter" data-level="4.25" data-path="demand.html"><a href="demand.html#income-elast"><i class="fa fa-check"></i><b>4.25</b> Income elasticity of demand; Normal, luxury, and inferior goods</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="production-costs.html"><a href="production-costs.html"><i class="fa fa-check"></i><b>5</b> Production and costs (brief) (L4-L5)</a><ul>
+<li class="chapter" data-level="5.1" data-path="production-costs.html"><a href="production-costs.html#coverage"><i class="fa fa-check"></i><b>5.1</b> Coverage</a></li>
+<li class="chapter" data-level="5.2" data-path="production-costs.html"><a href="production-costs.html#the-firms-production-function"><i class="fa fa-check"></i><b>5.2</b> The Firm’s Production function</a></li>
+<li class="chapter" data-level="5.3" data-path="production-costs.html"><a href="production-costs.html#marginal-product"><i class="fa fa-check"></i><b>5.3</b> Marginal product</a></li>
+<li class="chapter" data-level="5.4" data-path="production-costs.html"><a href="production-costs.html#output-curves-marginal-product-curve-average-product"><i class="fa fa-check"></i><b>5.4</b> Output curves, marginal product curve, average product</a></li>
+<li class="chapter" data-level="5.5" data-path="production-costs.html"><a href="production-costs.html#cost-minimizing-input-choice"><i class="fa fa-check"></i><b>5.5</b> Cost minimizing input choice</a></li>
+<li class="chapter" data-level="5.6" data-path="production-costs.html"><a href="production-costs.html#isoquant-maps-rate-of-technical-substitution-rts"><i class="fa fa-check"></i><b>5.6</b> Isoquant maps, rate of technical substitution (RTS)</a></li>
+<li class="chapter" data-level="5.7" data-path="production-costs.html"><a href="production-costs.html#the-cost-function"><i class="fa fa-check"></i><b>5.7</b> The cost function</a></li>
+<li class="chapter" data-level="5.8" data-path="production-costs.html"><a href="production-costs.html#types-of-costs-basic-cost-concepts"><i class="fa fa-check"></i><b>5.8</b> Types of costs (‘Basic cost concepts’)</a></li>
+<li class="chapter" data-level="5.9" data-path="production-costs.html"><a href="production-costs.html#rts"><i class="fa fa-check"></i><b>5.9</b> Returns to scale</a></li>
+<li class="chapter" data-level="5.10" data-path="production-costs.html"><a href="production-costs.html#some-suggested-practice-problems-from-nicholson-and-snyder-chapter-6-12th-ed"><i class="fa fa-check"></i><b>5.10</b> Some suggested practice problems from Nicholson and Snyder Chapter 6 (12th ed)</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="profitmax.html"><a href="profitmax.html"><i class="fa fa-check"></i><b>6</b> Profit maximisation and supply (L5-L6)</a><ul>
+<li class="chapter" data-level="6.1" data-path="profitmax.html"><a href="profitmax.html#profit-maximisation-and-supply---coverage"><i class="fa fa-check"></i><b>6.1</b> Profit maximisation and supply - coverage</a></li>
+<li class="chapter" data-level="6.2" data-path="profitmax.html"><a href="profitmax.html#important-aside-what-are-firms-and-why-do-they-exist"><i class="fa fa-check"></i><b>6.2</b> Important aside: What are ‘firms’ and why do they exist?</a></li>
+<li class="chapter" data-level="6.3" data-path="profitmax.html"><a href="profitmax.html#profit-maximisation"><i class="fa fa-check"></i><b>6.3</b> Profit-maximisation</a></li>
+<li class="chapter" data-level="6.4" data-path="profitmax.html"><a href="profitmax.html#mrmc-condition-for-a-price-taking-firm"><i class="fa fa-check"></i><b>6.4</b> MR=mc condition for a price-taking firm</a></li>
+<li class="chapter" data-level="6.5" data-path="profitmax.html"><a href="profitmax.html#supply-decisions-of-a-price-taking-firm"><i class="fa fa-check"></i><b>6.5</b> Supply decisions of a price-taking firm</a></li>
+<li class="chapter" data-level="6.6" data-path="profitmax.html"><a href="profitmax.html#some-suggested-practice-problems-from-nicholson-and-snyder-chapter-8-12th-ed"><i class="fa fa-check"></i><b>6.6</b> Some suggested practice problems from Nicholson and Snyder Chapter 8 (12th ed)</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="perfect-competition.html"><a href="perfect-competition.html"><i class="fa fa-check"></i><b>7</b> Perfect competition in a single market (L6)</a><ul>
+<li class="chapter" data-level="7.1" data-path="perfect-competition.html"><a href="perfect-competition.html#perfect-competition-in-a-single-market---coverage"><i class="fa fa-check"></i><b>7.1</b> Perfect competition in a single market - coverage</a></li>
+<li class="chapter" data-level="7.2" data-path="perfect-competition.html"><a href="perfect-competition.html#sr-supply"><i class="fa fa-check"></i><b>7.2</b> SR supply</a></li>
+<li class="chapter" data-level="7.3" data-path="perfect-competition.html"><a href="perfect-competition.html#sr-price-determination"><i class="fa fa-check"></i><b>7.3</b> SR Price determination</a></li>
+<li class="chapter" data-level="7.4" data-path="perfect-competition.html"><a href="perfect-competition.html#illustration-of-sr-price-determination"><i class="fa fa-check"></i><b>7.4</b> Illustration of SR price determination</a></li>
+<li class="chapter" data-level="7.5" data-path="perfect-competition.html"><a href="perfect-competition.html#shifts-in-s-and-d-curves"><i class="fa fa-check"></i><b>7.5</b> Shifts in S and D curves</a></li>
+<li class="chapter" data-level="7.6" data-path="perfect-competition.html"><a href="perfect-competition.html#the-long-run"><i class="fa fa-check"></i><b>7.6</b> The Long run</a></li>
+<li class="chapter" data-level="7.7" data-path="perfect-competition.html"><a href="perfect-competition.html#long-run-lr-supply"><i class="fa fa-check"></i><b>7.7</b> Long Run (LR) Supply (*)</a></li>
+<li class="chapter" data-level="7.8" data-path="perfect-competition.html"><a href="perfect-competition.html#consumer-and-producer-surplus-efficiency"><i class="fa fa-check"></i><b>7.8</b> Consumer and producer surplus, efficiency</a></li>
+<li class="chapter" data-level="7.9" data-path="perfect-competition.html"><a href="perfect-competition.html#some-suggested-practice-problems-from-nicholson-and-snyder-chapter-9-12th-ed"><i class="fa fa-check"></i><b>7.9</b> Some suggested practice problems from Nicholson and Snyder Chapter 9 (12th ed)</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html"><i class="fa fa-check"></i><b>8</b> Key principles for efficiency and ‘general’ equilibrium</a><ul>
+<li class="chapter" data-level="8.1" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#general-equilibrium-and-efficiency-coverage"><i class="fa fa-check"></i><b>8.1</b> General equilibrium and efficiency: Coverage</a></li>
+<li class="chapter" data-level="8.2" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#introduction-general-equilibrium"><i class="fa fa-check"></i><b>8.2</b> Introduction: General equilibrium</a></li>
+<li class="chapter" data-level="8.3" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#pareto-efficiency"><i class="fa fa-check"></i><b>8.3</b> Pareto efficiency</a></li>
+<li class="chapter" data-level="8.4" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#the-three-amigos-of-efficiency-productive-exchange-and-top-level"><i class="fa fa-check"></i><b>8.4</b> The three amigos of efficiency: productive, exchange, and top-level</a></li>
+<li class="chapter" data-level="8.5" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#a-basic-argument-for-exchange-efficiency-of-competitive-equilibrium"><i class="fa fa-check"></i><b>8.5</b> A basic argument for exchange efficiency of competitive equilibrium:</a></li>
+<li class="chapter" data-level="8.6" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#fundamental-theorems-of-welfare-economics-market-failures"><i class="fa fa-check"></i><b>8.6</b> Fundamental theorems of welfare economics; market failures</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="notes-on-supplementary-reading.html"><a href="notes-on-supplementary-reading.html"><i class="fa fa-check"></i><b>9</b> Notes on supplementary reading</a><ul>
+<li class="chapter" data-level="9.1" data-path="notes-on-supplementary-reading.html"><a href="notes-on-supplementary-reading.html#supplementary-reading"><i class="fa fa-check"></i><b>9.1</b> Supplementary reading:</a></li>
+<li class="chapter" data-level="9.2" data-path="notes-on-supplementary-reading.html"><a href="notes-on-supplementary-reading.html#key-points"><i class="fa fa-check"></i><b>9.2</b> Key points:</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="market-failure.html"><a href="market-failure.html"><i class="fa fa-check"></i><b>10</b> Public Goods and Market Failure (L8)</a><ul>
+<li class="chapter" data-level="10.1" data-path="market-failure.html"><a href="market-failure.html#coverage-1"><i class="fa fa-check"></i><b>10.1</b> Coverage</a></li>
+<li class="chapter" data-level="10.2" data-path="market-failure.html"><a href="market-failure.html#market-failures"><i class="fa fa-check"></i><b>10.2</b> Market failures</a></li>
+<li class="chapter" data-level="10.3" data-path="market-failure.html"><a href="market-failure.html#public-goods-attributes-categories"><i class="fa fa-check"></i><b>10.3</b> Public Goods (attributes, categories)</a></li>
+<li class="chapter" data-level="10.4" data-path="market-failure.html"><a href="market-failure.html#why-do-public-goods-lead-to-market-failure"><i class="fa fa-check"></i><b>10.4</b> Why do public goods lead to market failure?</a></li>
+<li class="chapter" data-level="" data-path="market-failure.html"><a href="market-failure.html#social-benefit-of-a-private-good-vs-a-public-good"><i class="fa fa-check"></i>Social benefit of a private good vs a public good</a></li>
+<li class="chapter" data-level="" data-path="market-failure.html"><a href="market-failure.html#application-drug-development"><i class="fa fa-check"></i>Application: drug development</a></li>
+<li class="chapter" data-level="10.5" data-path="market-failure.html"><a href="market-failure.html#optimal-provision-of-public-goods-equilibrium-provision"><i class="fa fa-check"></i><b>10.5</b> Optimal provision of public goods, equilibrium provision</a></li>
+<li class="chapter" data-level="10.6" data-path="market-failure.html"><a href="market-failure.html#solutions-to-the-public-goods-problem"><i class="fa fa-check"></i><b>10.6</b> Solutions to the Public Goods Problem</a></li>
+<li class="chapter" data-level="10.7" data-path="market-failure.html"><a href="market-failure.html#food-for-thought-discussion"><i class="fa fa-check"></i><b>10.7</b> Food for thought, discussion</a></li>
+<li class="chapter" data-level="10.8" data-path="market-failure.html"><a href="market-failure.html#lab-evidence-on-voluntary-provision-of-public-goods"><i class="fa fa-check"></i><b>10.8</b> Lab evidence on <em>voluntary</em> provision of Public Goods</a></li>
+<li class="chapter" data-level="10.9" data-path="market-failure.html"><a href="market-failure.html#today-i-learned-til"><i class="fa fa-check"></i><b>10.9</b> Today I learned (‘TIL’)</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="aside-some-key-things-for-midterm-recap.html"><a href="aside-some-key-things-for-midterm-recap.html"><i class="fa fa-check"></i>Aside: Some key things for midterm (recap)</a></li>
+<li class="chapter" data-level="11" data-path="monopolies-pd.html"><a href="monopolies-pd.html"><i class="fa fa-check"></i><b>11</b> Monopolies and price discrimination (L9)</a><ul>
+<li class="chapter" data-level="11.1" data-path="monopolies-pd.html"><a href="monopolies-pd.html#coverage-and-key-readings"><i class="fa fa-check"></i><b>11.1</b> Coverage and key readings</a></li>
+<li class="chapter" data-level="11.2" data-path="monopolies-pd.html"><a href="monopolies-pd.html#coverage-2"><i class="fa fa-check"></i><b>11.2</b> Coverage</a></li>
+<li class="chapter" data-level="11.3" data-path="monopolies-pd.html"><a href="monopolies-pd.html#barriers-to-entry"><i class="fa fa-check"></i><b>11.3</b> Barriers to entry</a></li>
+<li class="chapter" data-level="11.4" data-path="monopolies-pd.html"><a href="monopolies-pd.html#monopoly-profit-maximisation"><i class="fa fa-check"></i><b>11.4</b> Monopoly profit-maximisation</a></li>
+<li class="chapter" data-level="11.5" data-path="monopolies-pd.html"><a href="monopolies-pd.html#no-supply-curve-for-a-monopoly"><i class="fa fa-check"></i><b>11.5</b> ‘No supply curve for a monopoly’</a></li>
+<li class="chapter" data-level="11.6" data-path="monopolies-pd.html"><a href="monopolies-pd.html#the-deadweight-loss-of-monopoly"><i class="fa fa-check"></i><b>11.6</b> The deadweight loss of monopoly</a></li>
+<li class="chapter" data-level="11.7" data-path="monopolies-pd.html"><a href="monopolies-pd.html#price-discrimination-basics"><i class="fa fa-check"></i><b>11.7</b> Price discrimination: basics</a></li>
+<li class="chapter" data-level="11.8" data-path="monopolies-pd.html"><a href="monopolies-pd.html#first-degree-andor-perfect-price-discrimination"><i class="fa fa-check"></i><b>11.8</b> First-degree and/or ‘perfect’ price discrimination</a></li>
+<li class="chapter" data-level="11.9" data-path="monopolies-pd.html"><a href="monopolies-pd.html#second-degree-price-discrimination"><i class="fa fa-check"></i><b>11.9</b> Second-degree price discrimination</a></li>
+<li class="chapter" data-level="11.10" data-path="monopolies-pd.html"><a href="monopolies-pd.html#third-degree-price-discrimination-3dpd-market-separation"><i class="fa fa-check"></i><b>11.10</b> Third-degree price discrimination (3dpd) / Market separation</a></li>
+<li class="chapter" data-level="11.11" data-path="monopolies-pd.html"><a href="monopolies-pd.html#who-benefits-from-3dpd"><i class="fa fa-check"></i><b>11.11</b> Who benefits from 3DPD?</a></li>
+<li class="chapter" data-level="11.12" data-path="monopolies-pd.html"><a href="monopolies-pd.html#arbitrage-can-foil-price-discrimination"><i class="fa fa-check"></i><b>11.12</b> Arbitrage … can foil price discrimination</a></li>
+<li class="chapter" data-level="11.13" data-path="monopolies-pd.html"><a href="monopolies-pd.html#some-practice-problems"><i class="fa fa-check"></i><b>11.13</b> Some practice problems</a></li>
+<li class="chapter" data-level="11.14" data-path="monopolies-pd.html"><a href="monopolies-pd.html#davids-old-new-idea-a-policy-tool"><i class="fa fa-check"></i><b>11.14</b> David’s (old) new idea: A policy tool</a></li>
+<li class="chapter" data-level="11.15" data-path="monopolies-pd.html"><a href="monopolies-pd.html#natural-monopolies-and-regulation-very-brief"><i class="fa fa-check"></i><b>11.15</b> Natural monopolies and regulation (very brief!)</a></li>
+<li class="chapter" data-level="11.16" data-path="monopolies-pd.html"><a href="monopolies-pd.html#brief-notes-on-imperfect-competition"><i class="fa fa-check"></i><b>11.16</b> Brief notes on imperfect competition</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="uncertainty.html"><a href="uncertainty.html"><i class="fa fa-check"></i><b>12</b> Uncertainty (with a bit of finance) (L10))</a><ul>
+<li class="chapter" data-level="12.1" data-path="uncertainty.html"><a href="uncertainty.html#whats-up-with-uncertainty"><i class="fa fa-check"></i><b>12.1</b> What’s up with uncertainty?</a></li>
+<li class="chapter" data-level="12.2" data-path="uncertainty.html"><a href="uncertainty.html#probability-concepts-a-quick-review"><i class="fa fa-check"></i><b>12.2</b> Probability concepts: a quick review</a></li>
+<li class="chapter" data-level="12.3" data-path="uncertainty.html"><a href="uncertainty.html#some-probability-basics-from-anne-greenbaum-wash-u-notes"><i class="fa fa-check"></i><b>12.3</b> Some probability basics (From Anne Greenbaum Wash U notes)</a></li>
+<li class="chapter" data-level="12.4" data-path="uncertainty.html"><a href="uncertainty.html#example-experimental-measures-of-risk-attitudes"><i class="fa fa-check"></i><b>12.4</b> Example: experimental measures of risk attitudes</a></li>
+<li class="chapter" data-level="12.5" data-path="uncertainty.html"><a href="uncertainty.html#more-formally-see-jehle-and-reny-text"><i class="fa fa-check"></i><b>12.5</b> More formally (see Jehle and Reny text)</a></li>
+<li class="chapter" data-level="12.6" data-path="uncertainty.html"><a href="uncertainty.html#expected-utility"><i class="fa fa-check"></i><b>12.6</b> Expected utility</a></li>
+<li class="chapter" data-level="12.7" data-path="uncertainty.html"><a href="uncertainty.html#risk-aversion-graphical-depiction"><i class="fa fa-check"></i><b>12.7</b> Risk aversion: graphical depiction</a></li>
+<li class="chapter" data-level="12.8" data-path="uncertainty.html"><a href="uncertainty.html#ways-of-reducing-risk-insurance"><i class="fa fa-check"></i><b>12.8</b> Ways of reducing risk: Insurance</a></li>
+<li class="chapter" data-level="12.9" data-path="uncertainty.html"><a href="uncertainty.html#ways-of-reducing-risk-diversification"><i class="fa fa-check"></i><b>12.9</b> Ways of reducing risk: Diversification</a></li>
+<li class="chapter" data-level="12.10" data-path="uncertainty.html"><a href="uncertainty.html#somewhat-more-advanced-but-useful-concepts-to-look-into-if-you-like"><i class="fa fa-check"></i><b>12.10</b> Somewhat more advanced but useful concepts to look into, if you like</a></li>
+<li class="chapter" data-level="12.11" data-path="uncertainty.html"><a href="uncertainty.html#flexibility-and-options-contracts"><i class="fa fa-check"></i><b>12.11</b> Flexibility and options contracts</a></li>
+<li class="chapter" data-level="12.12" data-path="uncertainty.html"><a href="uncertainty.html#pricing-of-risk-and-assets-in-financial-markets"><i class="fa fa-check"></i><b>12.12</b> Pricing of risk (and assets) in financial markets</a></li>
+<li class="chapter" data-level="12.13" data-path="uncertainty.html"><a href="uncertainty.html#not-covered-two-state-model"><i class="fa fa-check"></i><b>12.13</b> Not covered: two state model</a></li>
+<li class="chapter" data-level="12.14" data-path="uncertainty.html"><a href="uncertainty.html#suggested-practice-problems-see-problem-set"><i class="fa fa-check"></i><b>12.14</b> Suggested practice problems: see problem set</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="game-theory.html"><a href="game-theory.html"><i class="fa fa-check"></i><b>13</b> Game Theory (L11)</a><ul>
+<li class="chapter" data-level="13.1" data-path="game-theory.html"><a href="game-theory.html#coverage-outline"><i class="fa fa-check"></i><b>13.1</b> Coverage outline</a></li>
+<li class="chapter" data-level="13.2" data-path="game-theory.html"><a href="game-theory.html#basic-concepts-strategic-interaction-elements-of-a-game"><i class="fa fa-check"></i><b>13.2</b> Basic concepts (strategic interaction, elements of a game))</a></li>
+<li class="chapter" data-level="13.3" data-path="game-theory.html"><a href="game-theory.html#some-examples"><i class="fa fa-check"></i><b>13.3</b> Some examples</a></li>
+<li class="chapter" data-level="13.4" data-path="game-theory.html"><a href="game-theory.html#four-elements-describe-a-game"><i class="fa fa-check"></i><b>13.4</b> Four elements describe a game</a></li>
+<li class="chapter" data-level="13.5" data-path="game-theory.html"><a href="game-theory.html#illustrating-games"><i class="fa fa-check"></i><b>13.5</b> Illustrating Games</a></li>
+<li class="chapter" data-level="13.6" data-path="game-theory.html"><a href="game-theory.html#common-knowledge"><i class="fa fa-check"></i><b>13.6</b> Common knowledge</a></li>
+<li class="chapter" data-level="13.7" data-path="game-theory.html"><a href="game-theory.html#dominant-dominated-strategies-and-rationalizability"><i class="fa fa-check"></i><b>13.7</b> Dominant, dominated strategies and rationalizability</a></li>
+<li class="chapter" data-level="13.8" data-path="game-theory.html"><a href="game-theory.html#rationalisability-iterated-strict-dominance-not-in-ns-text"><i class="fa fa-check"></i><b>13.8</b> Rationalisability/ Iterated strict dominance (not in NS text!)</a></li>
+<li class="chapter" data-level="13.9" data-path="game-theory.html"><a href="game-theory.html#equilibrium"><i class="fa fa-check"></i><b>13.9</b> Equilibrium</a></li>
+<li class="chapter" data-level="13.10" data-path="game-theory.html"><a href="game-theory.html#coordination-and-anti-coordination-games"><i class="fa fa-check"></i><b>13.10</b> Coordination and anti-coordination games</a></li>
+<li class="chapter" data-level="13.11" data-path="game-theory.html"><a href="game-theory.html#mixed-strategies"><i class="fa fa-check"></i><b>13.11</b> Mixed strategies</a></li>
+<li class="chapter" data-level="13.12" data-path="game-theory.html"><a href="game-theory.html#how-do-you-solve-a-problem-like-multiple-equilibria"><i class="fa fa-check"></i><b>13.12</b> How do you solve a problem like multiple-equilibria?</a></li>
+<li class="chapter" data-level="13.13" data-path="game-theory.html"><a href="game-theory.html#sequential-games"><i class="fa fa-check"></i><b>13.13</b> Sequential Games</a></li>
+<li class="chapter" data-level="13.14" data-path="game-theory.html"><a href="game-theory.html#repeated-games"><i class="fa fa-check"></i><b>13.14</b> Repeated games</a></li>
+<li class="chapter" data-level="13.15" data-path="game-theory.html"><a href="game-theory.html#trigger-strategies"><i class="fa fa-check"></i><b>13.15</b> Trigger strategies</a></li>
+<li class="chapter" data-level="13.16" data-path="game-theory.html"><a href="game-theory.html#repeated-games-indefinite-or-infinite-time-horizon"><i class="fa fa-check"></i><b>13.16</b> Repeated Games: Indefinite or infinite time horizon</a></li>
+<li class="chapter" data-level="13.17" data-path="game-theory.html"><a href="game-theory.html#continuous-actions"><i class="fa fa-check"></i><b>13.17</b> Continuous Actions</a></li>
+<li class="chapter" data-level="13.18" data-path="game-theory.html"><a href="game-theory.html#experimental-evidence-what-is-a-laboratory-experiment-in-economics"><i class="fa fa-check"></i><b>13.18</b> Experimental evidence: What is a laboratory experiment in Economics?</a></li>
+<li class="chapter" data-level="13.19" data-path="game-theory.html"><a href="game-theory.html#laboratory-evidence-1-prisoners-dilemmas"><i class="fa fa-check"></i><b>13.19</b> Laboratory evidence 1: Prisoners’ dilemmas</a></li>
+<li class="chapter" data-level="13.20" data-path="game-theory.html"><a href="game-theory.html#laboratory-evidence-2-ultimatum-game"><i class="fa fa-check"></i><b>13.20</b> Laboratory evidence 2: Ultimatum game</a></li>
+<li class="chapter" data-level="13.21" data-path="game-theory.html"><a href="game-theory.html#issues-in-lab-experiments"><i class="fa fa-check"></i><b>13.21</b> Issues in lab experiments</a></li>
+<li class="chapter" data-level="13.22" data-path="game-theory.html"><a href="game-theory.html#issues-in-lab-experiments-external-generalisability"><i class="fa fa-check"></i><b>13.22</b> Issues in lab experiments: External generalisability</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="asymmetric-information-optional-for-2019-20.html"><a href="asymmetric-information-optional-for-2019-20.html"><i class="fa fa-check"></i><b>14</b> Asymmetric information: “optional” for 2019-20</a><ul>
+<li class="chapter" data-level="14.1" data-path="asymmetric-information-optional-for-2019-20.html"><a href="asymmetric-information-optional-for-2019-20.html#principal-agent-problem"><i class="fa fa-check"></i><b>14.1</b> Principal-Agent Problem</a></li>
+<li class="chapter" data-level="14.2" data-path="asymmetric-information-optional-for-2019-20.html"><a href="asymmetric-information-optional-for-2019-20.html#moral-hazard-basic-principles"><i class="fa fa-check"></i><b>14.2</b> Moral hazard: Basic principles</a></li>
+<li class="chapter" data-level="14.3" data-path="asymmetric-information-optional-for-2019-20.html"><a href="asymmetric-information-optional-for-2019-20.html#lemons-problem"><i class="fa fa-check"></i><b>14.3</b> Lemons problem</a></li>
+<li class="chapter" data-level="14.4" data-path="asymmetric-information-optional-for-2019-20.html"><a href="asymmetric-information-optional-for-2019-20.html#to-learn-this-material-fully-and-to-be-prepared-to-answer-an-exam-question-please-also-read"><i class="fa fa-check"></i><b>14.4</b> To learn this material fully (and to be prepared to answer an exam question), please also read:</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html"><i class="fa fa-check"></i><b>15</b> Behavioural economics (L12)</a><ul>
+<li class="chapter" data-level="15.1" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#neoclassical-versus-behavioural-economics"><i class="fa fa-check"></i><b>15.1</b> Neoclassical versus Behavioural economics</a></li>
+<li class="chapter" data-level="15.2" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#classical-economists-are-not-naive"><i class="fa fa-check"></i><b>15.2</b> Classical economists are not naïve</a></li>
+<li class="chapter" data-level="15.3" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#behavioural-economics"><i class="fa fa-check"></i><b>15.3</b> Behavioural Economics</a></li>
+<li class="chapter" data-level="15.4" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#modern-consensusentente"><i class="fa fa-check"></i><b>15.4</b> Modern consensus/entente</a></li>
+<li class="chapter" data-level="15.5" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#limits-to-human-decision-making-an-overview"><i class="fa fa-check"></i><b>15.5</b> Limits to Human Decision Making: An Overview</a></li>
+<li class="chapter" data-level="15.6" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#limited-cognitive-ability"><i class="fa fa-check"></i><b>15.6</b> Limited cognitive ability</a></li>
+<li class="chapter" data-level="15.7" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#allais-paradox"><i class="fa fa-check"></i><b>15.7</b> Allais paradox</a></li>
+<li class="chapter" data-level="15.8" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#explaining-the-above-paradoxes-with-prospect-theory"><i class="fa fa-check"></i><b>15.8</b> Explaining the above paradoxes with prospect theory</a></li>
+<li class="chapter" data-level="15.9" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#limited-willpower-and-hyperbolic-discounting"><i class="fa fa-check"></i><b>15.9</b> Limited willpower and ‘hyperbolic discounting’</a></li>
+<li class="chapter" data-level="15.10" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#altruism-and-fairness"><i class="fa fa-check"></i><b>15.10</b> Altruism and fairness</a></li>
+<li class="chapter" data-level="15.11" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#supplemental-reading-evidence-on-the-ultimatum-game"><i class="fa fa-check"></i><b>15.11</b> Supplemental (reading): Evidence on the Ultimatum Game</a></li>
+<li class="chapter" data-level="15.12" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#ultimatum-game-theoretical-predictions"><i class="fa fa-check"></i><b>15.12</b> Ultimatum game: theoretical predictions</a></li>
+<li class="chapter" data-level="15.13" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#application-give-if-you-win-eu-vs.-prospect-theory"><i class="fa fa-check"></i><b>15.13</b> Application: Give-if-you-win (EU vs. Prospect theory)</a></li>
+<li class="chapter" data-level="15.14" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#behavioral-economics-further-exercises-and-examples"><i class="fa fa-check"></i><b>15.14</b> Behavioral Economics: further exercises and examples</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="supplement-gift-giving-christmas-chuseok-birthdays-why-do-people-do-it-and-is-it-efficient.html"><a href="supplement-gift-giving-christmas-chuseok-birthdays-why-do-people-do-it-and-is-it-efficient.html"><i class="fa fa-check"></i><b>16</b> Supplement: Gift-giving (Christmas, Chuseok, birthdays…): why do people do it and is it efficient?</a><ul>
+<li class="chapter" data-level="16.1" data-path="supplement-gift-giving-christmas-chuseok-birthdays-why-do-people-do-it-and-is-it-efficient.html"><a href="supplement-gift-giving-christmas-chuseok-birthdays-why-do-people-do-it-and-is-it-efficient.html#introduction"><i class="fa fa-check"></i><b>16.1</b> Introduction</a></li>
+<li class="chapter" data-level="16.2" data-path="supplement-gift-giving-christmas-chuseok-birthdays-why-do-people-do-it-and-is-it-efficient.html"><a href="supplement-gift-giving-christmas-chuseok-birthdays-why-do-people-do-it-and-is-it-efficient.html#does-christmas-gift-giving-reduce-welfare"><i class="fa fa-check"></i><b>16.2</b> Does Christmas gift-giving reduce welfare?</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="supplement-determinants-of-contributions-in-public-goods-games-vcms.html"><a href="supplement-determinants-of-contributions-in-public-goods-games-vcms.html"><i class="fa fa-check"></i><b>17</b> Supplement: Determinants of contributions in public goods games (VCMs)</a><ul>
+<li class="chapter" data-level="17.1" data-path="supplement-determinants-of-contributions-in-public-goods-games-vcms.html"><a href="supplement-determinants-of-contributions-in-public-goods-games-vcms.html#notes"><i class="fa fa-check"></i><b>17.1</b> Notes</a></li>
+<li class="chapter" data-level="17.2" data-path="supplement-determinants-of-contributions-in-public-goods-games-vcms.html"><a href="supplement-determinants-of-contributions-in-public-goods-games-vcms.html#consensus-of-evidence"><i class="fa fa-check"></i><b>17.2</b> Consensus of evidence</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"><a href="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"><i class="fa fa-check"></i><b>18</b> Supplement: Charitable giving, volunteering, and other pro-social behavior – the basics</a><ul>
+<li class="chapter" data-level="18.1" data-path="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"><a href="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html#outline-1"><i class="fa fa-check"></i><b>18.1</b> Outline</a></li>
+<li class="chapter" data-level="18.2" data-path="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"><a href="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html#modeling-and-measuring-other-regarding-behavior"><i class="fa fa-check"></i><b>18.2</b> Modeling and measuring other-regarding behavior</a></li>
+<li class="chapter" data-level="18.3" data-path="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"><a href="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html#the-big-question"><i class="fa fa-check"></i><b>18.3</b> The big question</a></li>
+<li class="chapter" data-level="18.4" data-path="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"><a href="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html#economics-and-other-regarding-behavior-a-useful-undertaking"><i class="fa fa-check"></i><b>18.4</b> Economics and other-regarding behavior; a useful undertaking?</a></li>
+<li class="chapter" data-level="18.5" data-path="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"><a href="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html#facts-and-figures-on-giving"><i class="fa fa-check"></i><b>18.5</b> Facts and figures on giving</a></li>
+<li class="chapter" data-level="18.6" data-path="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"><a href="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html#models-of-giving-and-other-regarding-behavior-orb"><i class="fa fa-check"></i><b>18.6</b> Models of giving and other-regarding-behavior (ORB)</a></li>
+<li class="chapter" data-level="18.7" data-path="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"><a href="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html#empirically-motivated-arguments-for-wg-and-against-pg-experimental-evidence"><i class="fa fa-check"></i><b>18.7</b> Empirically-motivated arguments for WG and against PG, experimental evidence</a></li>
+<li class="chapter" data-level="18.8" data-path="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"><a href="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html#sources-of-evidence-on-charitable-giving"><i class="fa fa-check"></i><b>18.8</b> Sources of evidence on charitable giving</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="supplement-what-causes-people-to-donate-more-to-charity.html"><a href="supplement-what-causes-people-to-donate-more-to-charity.html"><i class="fa fa-check"></i><b>19</b> Supplement: What <em>causes</em> people to donate (more) to charity</a><ul>
+<li class="chapter" data-level="19.1" data-path="supplement-what-causes-people-to-donate-more-to-charity.html"><a href="supplement-what-causes-people-to-donate-more-to-charity.html#andreoni-and-payne---major-approaches-to-researching-giving"><i class="fa fa-check"></i><b>19.1</b> Andreoni and Payne - Major approaches to researching giving:</a></li>
+<li class="chapter" data-level="19.2" data-path="supplement-what-causes-people-to-donate-more-to-charity.html"><a href="supplement-what-causes-people-to-donate-more-to-charity.html#categories-of-tools-to-increase-giving-effectiveness"><i class="fa fa-check"></i><b>19.2</b> Categories of ‘tools’ to increase giving (effectiveness)</a></li>
+<li class="chapter" data-level="19.3" data-path="supplement-what-causes-people-to-donate-more-to-charity.html"><a href="supplement-what-causes-people-to-donate-more-to-charity.html#investigation-timing-and-conditionality-of-donation-commitment"><i class="fa fa-check"></i><b>19.3</b> Investigation: timing and conditionality of donation commitment</a></li>
+<li class="chapter" data-level="19.4" data-path="supplement-what-causes-people-to-donate-more-to-charity.html"><a href="supplement-what-causes-people-to-donate-more-to-charity.html#investigation-social-giving"><i class="fa fa-check"></i><b>19.4</b> Investigation: ‘Social giving’</a></li>
+<li class="chapter" data-level="19.5" data-path="supplement-what-causes-people-to-donate-more-to-charity.html"><a href="supplement-what-causes-people-to-donate-more-to-charity.html#investigation-social-giving-1"><i class="fa fa-check"></i><b>19.5</b> Investigation: ‘Social giving’</a></li>
+<li class="chapter" data-level="19.6" data-path="supplement-what-causes-people-to-donate-more-to-charity.html"><a href="supplement-what-causes-people-to-donate-more-to-charity.html#price-of-giving-see-price-impact-and-effectiveness"><i class="fa fa-check"></i><b>19.6</b> Price of giving: see <span>Price, impact, and effectiveness</span></a></li>
+<li class="chapter" data-level="19.7" data-path="supplement-what-causes-people-to-donate-more-to-charity.html"><a href="supplement-what-causes-people-to-donate-more-to-charity.html#other-influencers"><i class="fa fa-check"></i><b>19.7</b> Other influencers</a></li>
+<li class="chapter" data-level="19.8" data-path="supplement-what-causes-people-to-donate-more-to-charity.html"><a href="supplement-what-causes-people-to-donate-more-to-charity.html#fundraising-other-tricks-and-puzzles-to-add"><i class="fa fa-check"></i><b>19.8</b> Fundraising: other tricks and puzzles (to add)</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><a href="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><i class="fa fa-check"></i><b>20</b> Supplement: What determines which charity people donate to? Are they in competition?</a><ul>
+<li class="chapter" data-level="20.1" data-path="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><a href="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html#charity-does-one-contribution-come-at-the-expense-of-another-evidence-theoretical-framework-empirical-and-experimental-issues"><i class="fa fa-check"></i><b>20.1</b> Charity: Does one contribution come at the expense of another? (Evidence, theoretical framework, empirical and experimental issues)</a></li>
+<li class="chapter" data-level="20.2" data-path="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><a href="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html#what-does-this-question-mean"><i class="fa fa-check"></i><b>20.2</b> What does this question mean?</a></li>
+<li class="chapter" data-level="20.3" data-path="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><a href="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html#why-is-it-important-who-cares"><i class="fa fa-check"></i><b>20.3</b> Why is it important/ who cares?</a></li>
+<li class="chapter" data-level="20.4" data-path="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><a href="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html#literature-ii-lab-experiments"><i class="fa fa-check"></i><b>20.4</b> Literature II: Lab Experiments</a></li>
+<li class="chapter" data-level="20.5" data-path="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><a href="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html#lit.-iii-field-evidence-field-and-natural-experiments-observational-results"><i class="fa fa-check"></i><b>20.5</b> Lit. III: Field evidence (field and natural experiments, observational results)</a></li>
+<li class="chapter" data-level="20.6" data-path="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><a href="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html#synthesis-limits-of-previous-evidence"><i class="fa fa-check"></i><b>20.6</b> Synthesis, limits of previous evidence</a></li>
+<li class="chapter" data-level="20.7" data-path="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><a href="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html#reinstein-and-riener-2017-wip"><i class="fa fa-check"></i><b>20.7</b> Reinstein and Riener, 2017 (WIP)</a></li>
+<li class="chapter" data-level="20.8" data-path="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><a href="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html#what-determines-where-people-give"><i class="fa fa-check"></i><b>20.8</b> What determines where people give?</a></li>
+<li class="chapter" data-level="20.9" data-path="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><a href="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html#do-people-care-about-effectiveness"><i class="fa fa-check"></i><b>20.9</b> Do people care about effectiveness</a></li>
+</ul></li>
+<li class="chapter" data-level="21" data-path="price-impact.html"><a href="price-impact.html"><i class="fa fa-check"></i><b>21</b> Supplement: Charitable giving – Donors response to ‘prices’ and (information about) impact and effectiveness</a><ul>
+<li class="chapter" data-level="21.1" data-path="price-impact.html"><a href="price-impact.html#price-match"><i class="fa fa-check"></i><b>21.1</b> Price of giving: Impact of matches</a></li>
+<li class="chapter" data-level="21.2" data-path="price-impact.html"><a href="price-impact.html#framing-of-match-match-versus-rebate"><i class="fa fa-check"></i><b>21.2</b> Framing of match: match versus rebate</a></li>
+<li class="chapter" data-level="21.3" data-path="price-impact.html"><a href="price-impact.html#info-recip"><i class="fa fa-check"></i><b>21.3</b> Info/comms: Does information (about recipients/charity…) help?</a></li>
+<li class="chapter" data-level="21.4" data-path="price-impact.html"><a href="price-impact.html#ratings"><i class="fa fa-check"></i><b>21.4</b> Charity ratings, overhead</a></li>
+<li class="chapter" data-level="21.5" data-path="price-impact.html"><a href="price-impact.html#overhead"><i class="fa fa-check"></i><b>21.5</b> Overhead and fundraising expense ratios</a></li>
+<li class="chapter" data-level="21.6" data-path="price-impact.html"><a href="price-impact.html#realimpact"><i class="fa fa-check"></i><b>21.6</b> Impact on (outputs and) <em>outcomes</em> per dollar; responses to scientific analytical information</a></li>
+<li class="chapter" data-level="21.7" data-path="price-impact.html"><a href="price-impact.html#prior-evidence"><i class="fa fa-check"></i><b>21.7</b> How do donations respond to (analytical) effectiveness and impact information? The evidence.</a></li>
+<li class="chapter" data-level="21.8" data-path="price-impact.html"><a href="price-impact.html#empirical-approach"><i class="fa fa-check"></i><b>21.8</b> Reinstein ‘Our empirical approach’</a></li>
+<li class="chapter" data-level="21.9" data-path="price-impact.html"><a href="price-impact.html#dv-experiment"><i class="fa fa-check"></i><b>21.9</b> DonorsVoice mailing experiment</a></li>
+<li class="chapter" data-level="21.10" data-path="price-impact.html"><a href="price-impact.html#bergh-mturk-experiment"><i class="fa fa-check"></i><b>21.10</b> Bergh project (Mturk)</a></li>
+<li class="chapter" data-level="21.11" data-path="price-impact.html"><a href="price-impact.html#essex-piggyback"><i class="fa fa-check"></i><b>21.11</b> Bergh/Reinstein (Essex piggyback)</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="note-more-material-may-be-added.html"><a href="note-more-material-may-be-added.html"><i class="fa fa-check"></i>Note: more material may be added</a></li>
+<li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html"><i class="fa fa-check"></i>Problem sets</a><ul>
+<li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html#ps1"><i class="fa fa-check"></i>First problem set: Mathematical approaches, economic models, revision and warm-up, concepts in consumer theory</a></li>
+<li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html#ps1_w_ans"><i class="fa fa-check"></i>First problem set with suggested answer guidelines: Mathematical approaches, economic models, revision and warm-up, concepts in consumer theory</a></li>
+<li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html#ps_pg"><i class="fa fa-check"></i>Problem set: Public Goods</a></li>
+<li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html#problem-set-monopolies-and-price-discrimination"><i class="fa fa-check"></i>Problem set: Monopolies and price discrimination</a></li>
+<li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html#problem-set-uncertainty-eu-applications"><i class="fa fa-check"></i>Problem set: Uncertainty, EU, applications</a></li>
+<li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html#ps6noans"><i class="fa fa-check"></i>Sixth problem set: Game theory (no answers)</a></li>
+<li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html#ps6ans"><i class="fa fa-check"></i>Sixth problem set: Game theory, with answers</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="exams-with-answers-and-mock-exams.html"><a href="exams-with-answers-and-mock-exams.html"><i class="fa fa-check"></i>Exams with answers and mock exams</a></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Microeconomics (MSc)</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="supplement-determinants-of-contributions-in-public-goods-games-vcms" class="section level1">
+<h1><span class="header-section-number">17</span> Supplement: Determinants of contributions in public goods games (VCMs)</h1>
+<div id="notes" class="section level2">
+<h2><span class="header-section-number">17.1</span> Notes</h2>
+<p>Enrichment (optional): Chaudhuri (2011). “Sustaining cooperation in laboratory public goods experiments: a selective survey of the literature”</p>
+<ul>
+<li>Consensus of evidence (how strong?)</li>
+<li>Communication</li>
+<li>Exclude or learn</li>
+</ul>
+</div>
+<div id="consensus-of-evidence" class="section level2">
+<h2><span class="header-section-number">17.2</span> Consensus of evidence</h2>
+<p>From Ledyard (1995), recapped in Chaudhuri (2011)</p>
+<ul>
+<li>In one-shot games, 40-60% contributions on average</li>
+<li>With repeated interaction, declines over time</li>
+</ul>
+<p>What helps?</p>
+<p><img src="picsfigs/ledyardtable.png" width="60%" style="display: block; margin: auto;" /></p>
+<hr />
+<div id="what-helps" class="section level3 unnumbered">
+<h3>What helps?</h3>
+<ul>
+<li>A higher Marginal Per Capita Return (MPCR) (even if it is still below 1)
+- Why?
+- Perhaps the private return and social preference benefit (fairness, altruism, etc.) are additive, and sum to a benefit above 1?
+- (Or at least they don’t fully crowd each other out)</li>
+</ul>
+<hr />
+<p>…What helps</p>
+<ul>
+<li><p>Communication, particularly “that dealing directly with the problem at hand”</p>
+<ul>
+<li>Newer research: what aspects and types of communication help, and why?</li>
+</ul></li>
+<li><p>Why should communication help? What do you think?</p>
+<ul>
+<li>Does it change preferences?</li>
+<li>Does it change beliefs? If so, why and what does that matter in a VCM?</li>
+<li>With conditional cooperaters and reciprocal types, does it help them identify and each other?</li>
+</ul></li>
+<li><p>Communication may make people more sympathetic to one another; language is seen as one of the most critical bonds.</p></li>
+<li><p>In the linear VCM, does my optimal choice depend on the other(s)’ choice(s)?</p></li>
+<li><p>What if I have fairness preferences? What if my preferences are such that ‘I only want to give if the other gives’?</p></li>
+<li><p>But wait, how could communication help: “bad” types can make the same promises and assurances that good types would!</p>
+<ul>
+<li>But what if lying is costly?</li>
+<li>Or it is easy to detect a lie</li>
+<li>Can people detect these lies? Do we need face-to-face interaction for this?
+-* … evidence suggests yes and maybe)</li>
+</ul></li>
+</ul>
+<hr />
+</div>
+<div id="what-helps-thresholds" class="section level3 unnumbered">
+<h3>What helps? Thresholds?</h3>
+<p>A “threshold” or provision point, sometimes helps (in theory and in the lab).</p>
+<div class="incremental">
+<p>Fundraisers seem to think this helps</p>
+<p><img src="picsfigs/1-Multiplex-Fundraising-Thermometer-Ticks-Upward-PIC.jpg" width="60%" style="display: block; margin: auto;" /></p>
+<hr />
+<p><img src="picsfigs/raisematch.png" width="60%" style="display: block; margin: auto;" /></p>
+<hr />
+</div>
+</div>
+<div id="what-helps-thresholds-1" class="section level3 unnumbered">
+<h3>What helps? Thresholds?</h3>
+<p>Suppose everyone in this class personally values trip to the waterslide park at 51K SKW. The trip for the whole class costs 400K SKW, and once we book it everyone in the class can go. However, unless we raise 400K no one can go.</p>
+<p><br />
+</p>
+<p>We can only raise the funds through voluntary donations of 51K SKW, as the waterpark managers and bus drivers are legally and religiously bound not to accept admissions fees, only ‘donations’ of 50K SKW.</p>
+<p>We discretely pass an envelope around the class and everyone decides in secret to put in, or not put in, a 50K SKW note. Donations can not be refunded (this doesn’t matter so much, actually).</p>
+<ul>
+<li><p>Who if anyone would contribute?</p></li>
+<li><p>What is/are the Nash equilibria?</p></li>
+<li><p>Is there a dominant strategy?</p></li>
+</ul>
+<div class="incremental">
+<p>In fact, there are two types of equilibria, assuming self-interest:</p>
+<ul>
+<li><p>No one contributes (therefore, no reason to contribute, as a single contribution makes no difference)</p></li>
+<li><p>Exactly 8 people contribute 50K each – all 8 of these are best responding, as are the remaining students who don’t contribute</p></li>
+<li><p>This transforms the strategic incentives of the game; remember, in the linear VCM/PGG the dominant strategy is not to contribute.</p>
+<ul>
+<li>This now becomes about ‘which equilibrium do we coordinate on, if any’?; hard to separate this from social preferences</li>
+</ul></li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="what-helps-smaller-or-larger-groups" class="section level3 unnumbered">
+<h3>What helps? Smaller or larger groups?</h3>
+<ul>
+<li><p>Which and why: What do you think?</p></li>
+<li><p>Larger groups: Harder to communicate and coordinate, less close social ties, social pressure less effective, more likely to have at least one ‘bad apple’</p>
+<ul>
+<li>But holding the MPCR (individual private return from own contribution) the constant, a larger group means each contribution yields more social benefit</li>
+<li>… so altruists (those who gain from benefiting others) would give more</li>
+</ul></li>
+<li><p>Ledyard’s survey found mixed effects, a lack of evidence</p></li>
+<li><p>Still seems an open question: Nonsenzo et al, 2015 “Cooperation in small groups: the effect of group size”</p></li>
+</ul>
+<hr />
+<p><img src="picsfigs/nonsenzo_groupsize_linegraph.png" width="60%" style="display: block; margin: auto;" /></p>
+<hr />
+<p><img src="picsfigs/nonsenzo_groupsize_regression.png" width="60%" style="display: block; margin: auto;" /></p>
+<hr />
+<p>Their simple explanation:</p>
+<blockquote>
+<p>In environments that are favorable to cooperation, there may be limited scope for a positive effect of group size on the already high levels of cooperation, and the negative effects of group size may be more evident.</p>
+</blockquote>
+<div class="incremental">
+<p>There can always be:</p>
+<ul>
+<li>Heterogeneity: Different people are affected differently
+<ul>
+<li>The people motivated to give by larger group size may already be giving near their maximum under higher MPCR</li>
+</ul></li>
+<li>Nonlinearity
+<ul>
+<li>A factor like ‘social benefit of contribution driven by group size’ may have a smaller positive effect on my contribution when I am otherwise already contributing a lot</li>
+<li>While a factor like ‘seeing a single bad apple’ may have a larger effect the more I otherwise contribute</li>
+</ul></li>
+</ul>
+<hr />
+<p>Many papers, many experiments:</p>
+<ul>
+<li>3970 papers on Google scholar with text “public goods experiment” and 1910 with “voluntary contributions mechanism”</li>
+<li>758 papers on Econpapers matched one of these 2 terms</li>
+</ul>
+<p>Lots of data out there, loads of money spent, debates over interpretation, room for meta-analysis</p>
+<ul>
+<li>But difficulties in data sharing, coordinating and standardising methods, willingness to cooperate
+<ul>
+<li><span class="math inline">\(\rightarrow\)</span> there is a collective action problem in collaborating on research into collective action problems</li>
+</ul></li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="meta-analysis" class="section level3 unnumbered">
+<h3>Meta-analysis</h3>
+<p>**Zelmer, 2003, ``Linear Public Goods Experiments: A Meta-Analysis’’</p>
+<p><img src="picsfigs/zelnerabstract.png" width="60%" style="display: block; margin: auto;" /></p>
+<hr />
+<p><img src="picsfigs/zelmerresultstable.png" width="60%" style="display: block; margin: auto;" /></p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="supplement-gift-giving-christmas-chuseok-birthdays-why-do-people-do-it-and-is-it-efficient.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": true,
+"weibo": true,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

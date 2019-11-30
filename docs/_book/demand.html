@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4 The Demand function (L3) | Microeconomics (MSc)</title>
+  <meta name="description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
+  <meta name="generator" content="bookdown 0.14.1 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4 The Demand function (L3) | Microeconomics (MSc)" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4 The Demand function (L3) | Microeconomics (MSc)" />
+  
+  <meta name="twitter:description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
+  
+
+<meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
+
+
+<meta name="date" content="2019-11-30" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="util-choice.html"/>
+<link rel="next" href="production-costs.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<!-- font families -->
+
+<link href="https://fonts.googleapis.com/css?family=PT+Sans|Pacifico|Source+Sans+Pro" rel="stylesheet">
+
+<script src="js/hideOutput.js"></script>
+
+<!-- Mathjax -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/default.js"></script>
+
+ <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "TeX/AMSmath.js"],
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+        jax: ["input/TeX","output/CommonHTML"]
+      });
+      MathJax.Hub.processSectionDelay = 0;
+  </script>
+
+
+<!-- open review block -->
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { background-color: #f8f8f8; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Microeconomics (MSc)<a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="note.html"><a href="note.html"><i class="fa fa-check"></i><b>1</b> Notes to students; overview</a><ul>
+<li class="chapter" data-level="1.1" data-path="note.html"><a href="note.html#level-of-this-module"><i class="fa fa-check"></i><b>1.1</b> Level of this module</a></li>
+<li class="chapter" data-level="1.2" data-path="note.html"><a href="note.html#readings-and-resources"><i class="fa fa-check"></i><b>1.2</b> Readings and resources</a></li>
+<li class="chapter" data-level="1.3" data-path="note.html"><a href="note.html#this-handout-web-book-online-resource"><i class="fa fa-check"></i><b>1.3</b> This ‘handout’/ web-book/ online resource</a></li>
+<li class="chapter" data-level="1.4" data-path="note.html"><a href="note.html#outline"><i class="fa fa-check"></i><b>1.4</b> Outline and description of module</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction/‘housekeeping’, overview, models, maths, fundamentals</a><ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#the-first-chunk-aims-to-cover"><i class="fa fa-check"></i>The first chunk aims to cover:</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#me"><i class="fa fa-check"></i>Me</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#this-module"><i class="fa fa-check"></i>This module</a></li>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#my-feedback"><i class="fa fa-check"></i><b>2.1</b> Feedback on your highly-esteemed but extremely humble lecturer</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#the-story-of-this-module"><i class="fa fa-check"></i><b>2.2</b> The story of this module</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#the-big-small-question"><i class="fa fa-check"></i>The big (small) question</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#resources"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#how-to-do-well"><i class="fa fa-check"></i>How to do well</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#fortune-cookie-wisdom"><i class="fa fa-check"></i>Fortune Cookie Wisdom</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#background"><i class="fa fa-check"></i><b>2.3</b> Background</a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#why-learn-these-models"><i class="fa fa-check"></i><b>2.4</b> Why learn these models?</a></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#economic-models"><i class="fa fa-check"></i><b>2.5</b> Economic Models</a></li>
+<li class="chapter" data-level="2.6" data-path="intro.html"><a href="intro.html#ns-application-1.1-economics-in-the-natural-world"><i class="fa fa-check"></i><b>2.6</b> NS Application 1.1: Economics in the Natural world</a></li>
+<li class="chapter" data-level="2.7" data-path="intro.html"><a href="intro.html#returns-to-education-is-university-worth-the-time-and-money"><i class="fa fa-check"></i><b>2.7</b> Returns to education; Is university worth the time and money?</a></li>
+<li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#basic-supply-demand-model"><i class="fa fa-check"></i><b>2.8</b> Basic Supply-Demand Model</a></li>
+<li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#marshalls-model-of-supply-and-demand"><i class="fa fa-check"></i><b>2.9</b> Marshall’s Model of Supply and Demand</a></li>
+<li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#how-economists-verify-or-assess-theoretical-models"><i class="fa fa-check"></i><b>2.10</b> How Economists ‘Verify’ (or Assess) Theoretical Models</a></li>
+<li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#some-maths-i-expect-you-to-know"><i class="fa fa-check"></i><b>2.11</b> Some maths I expect you to know</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#simple-stuff"><i class="fa fa-check"></i>Simple stuff</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#minimum-maximum-or-neither"><i class="fa fa-check"></i>Minimum, maximum, or neither?</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#multivar-functions"><i class="fa fa-check"></i>Functions of two or more variables (multivariate functions)</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#contourlines_math"><i class="fa fa-check"></i>Contour lines</a></li>
+<li class="chapter" data-level="2.12" data-path="intro.html"><a href="intro.html#simultaneous-equations"><i class="fa fa-check"></i><b>2.12</b> Simultaneous equations</a></li>
+<li class="chapter" data-level="2.13" data-path="intro.html"><a href="intro.html#empirical"><i class="fa fa-check"></i><b>2.13</b> Empirical microeconomics/econometrics</a></li>
+<li class="chapter" data-level="2.14" data-path="intro.html"><a href="intro.html#empirical-meta-example"><i class="fa fa-check"></i><b>2.14</b> Empirical meta-example</a></li>
+<li class="chapter" data-level="2.15" data-path="intro.html"><a href="intro.html#exogenous-and-endogenous-variables"><i class="fa fa-check"></i><b>2.15</b> Exogenous and endogenous variables</a></li>
+<li class="chapter" data-level="2.16" data-path="intro.html"><a href="intro.html#changing-world-oil-prices"><i class="fa fa-check"></i><b>2.16</b> Changing world oil prices</a></li>
+<li class="chapter" data-level="2.17" data-path="intro.html"><a href="intro.html#more-advanced-material-on-causal-inference"><i class="fa fa-check"></i><b>2.17</b> More advanced material on causal inference</a></li>
+<li class="chapter" data-level="2.18" data-path="intro.html"><a href="intro.html#between-first-and-second-week-priority-home-study"><i class="fa fa-check"></i><b>2.18</b> Between first and second week; priority home-study</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="util-choice.html"><a href="util-choice.html"><i class="fa fa-check"></i><b>3</b> Utility and Choice (BEEM101 - L2)</a><ul>
+<li class="chapter" data-level="" data-path="util-choice.html"><a href="util-choice.html#text-sourcesreadings-preamble"><i class="fa fa-check"></i>Text sources/readings, preamble</a></li>
+<li class="chapter" data-level="3.1" data-path="util-choice.html"><a href="util-choice.html#utility"><i class="fa fa-check"></i><b>3.1</b> Utility</a></li>
+<li class="chapter" data-level="3.2" data-path="util-choice.html"><a href="util-choice.html#measuring-and-comparing-utilities"><i class="fa fa-check"></i><b>3.2</b> Measuring and comparing utilities</a></li>
+<li class="chapter" data-level="3.3" data-path="util-choice.html"><a href="util-choice.html#axioms"><i class="fa fa-check"></i><b>3.3</b> Assumptions about preferences (‘axioms’)</a></li>
+<li class="chapter" data-level="3.4" data-path="util-choice.html"><a href="util-choice.html#ics"><i class="fa fa-check"></i><b>3.4</b> Indifference curves</a></li>
+<li class="chapter" data-level="3.5" data-path="util-choice.html"><a href="util-choice.html#mrs"><i class="fa fa-check"></i><b>3.5</b> Marginal rate of substitution (MRS): Absolute value of slope of indifference curve</a></li>
+<li class="chapter" data-level="3.6" data-path="util-choice.html"><a href="util-choice.html#illustrating-particular-preferences"><i class="fa fa-check"></i><b>3.6</b> Illustrating particular preferences</a></li>
+<li class="chapter" data-level="" data-path="util-choice.html"><a href="util-choice.html#product-positioning-in-marketing"><i class="fa fa-check"></i>Product positioning in marketing</a></li>
+<li class="chapter" data-level="3.7" data-path="util-choice.html"><a href="util-choice.html#perfect-sub-comp"><i class="fa fa-check"></i><b>3.7</b> Definitions: Perfect substitutes and complements</a></li>
+<li class="chapter" data-level="3.8" data-path="util-choice.html"><a href="util-choice.html#choices-are-subject-to-constraints"><i class="fa fa-check"></i><b>3.8</b> Choices are subject to constraints</a></li>
+<li class="chapter" data-level="3.9" data-path="util-choice.html"><a href="util-choice.html#utilmax"><i class="fa fa-check"></i><b>3.9</b> Constrained utility maximization</a></li>
+<li class="chapter" data-level="3.10" data-path="util-choice.html"><a href="util-choice.html#corners"><i class="fa fa-check"></i><b>3.10</b> Note on ‘corner solutions’</a></li>
+<li class="chapter" data-level="3.11" data-path="util-choice.html"><a href="util-choice.html#enrichment-applications"><i class="fa fa-check"></i><b>3.11</b> Enrichment, ‘applications’</a></li>
+<li class="chapter" data-level="3.12" data-path="util-choice.html"><a href="util-choice.html#difprefs"><i class="fa fa-check"></i><b>3.12</b> Different sorts of preferences, optimisation examples</a></li>
+<li class="chapter" data-level="3.13" data-path="util-choice.html"><a href="util-choice.html#generalisations"><i class="fa fa-check"></i><b>3.13</b> Generalisations</a></li>
+<li class="chapter" data-level="" data-path="util-choice.html"><a href="util-choice.html#should-economists-care-how-the-mind-works-from-ns-2.2-application"><i class="fa fa-check"></i>Should Economists care how the mind works? from NS 2.2 application</a></li>
+<li class="chapter" data-level="3.14" data-path="util-choice.html"><a href="util-choice.html#docprep"><i class="fa fa-check"></i><b>3.14</b> Doctoral-prep concepts</a></li>
+<li class="chapter" data-level="3.15" data-path="util-choice.html"><a href="util-choice.html#tutorialpractice-problems-see-below"><i class="fa fa-check"></i><b>3.15</b> Tutorial/practice problems: see below</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="demand.html"><a href="demand.html"><i class="fa fa-check"></i><b>4</b> The Demand function (L3)</a><ul>
+<li class="chapter" data-level="4.1" data-path="demand.html"><a href="demand.html#text-sourcesreadings"><i class="fa fa-check"></i><b>4.1</b> Text sources/Readings</a></li>
+<li class="chapter" data-level="4.2" data-path="demand.html"><a href="demand.html#demand-curves-coverage-outline"><i class="fa fa-check"></i><b>4.2</b> Demand Curves – coverage outline</a></li>
+<li class="chapter" data-level="4.3" data-path="demand.html"><a href="demand.html#demand-functions"><i class="fa fa-check"></i><b>4.3</b> Demand functions</a></li>
+<li class="chapter" data-level="4.4" data-path="demand.html"><a href="demand.html#response-to-income-changes"><i class="fa fa-check"></i><b>4.4</b> Response to income changes</a></li>
+<li class="chapter" data-level="4.5" data-path="demand.html"><a href="demand.html#substitution-and-income-effects-from-a-fall-or-rise-in-price"><i class="fa fa-check"></i><b>4.5</b> Substitution and income effects from a fall (or rise) in <em>price</em></a></li>
+<li class="chapter" data-level="4.6" data-path="demand.html"><a href="demand.html#different-substitution-effects-of-a-price-change"><i class="fa fa-check"></i><b>4.6</b> Different substitution effects of a price change</a></li>
+<li class="chapter" data-level="4.7" data-path="demand.html"><a href="demand.html#the-legendary-giffen-good"><i class="fa fa-check"></i><b>4.7</b> The (legendary?) Giffen good</a></li>
+<li class="chapter" data-level="4.8" data-path="demand.html"><a href="demand.html#more-formal-statements-of-properties-of-marshallian-demand"><i class="fa fa-check"></i><b>4.8</b> More formal statements of properties of Marshallian demand</a></li>
+<li class="chapter" data-level="4.9" data-path="demand.html"><a href="demand.html#some-other-important-functions-to-know-about-doctoral-prep"><i class="fa fa-check"></i><b>4.9</b> Some other important functions to know about (doctoral prep):</a></li>
+<li class="chapter" data-level="4.10" data-path="demand.html"><a href="demand.html#intuition-from-the-slutsky-equation"><i class="fa fa-check"></i><b>4.10</b> Intuition from the ‘Slutsky equation’</a></li>
+<li class="chapter" data-level="4.11" data-path="demand.html"><a href="demand.html#recap"><i class="fa fa-check"></i><b>4.11</b> … Recap</a></li>
+<li class="chapter" data-level="4.12" data-path="demand.html"><a href="demand.html#goals-of-this-chunk-demand-part-2"><i class="fa fa-check"></i><b>4.12</b> Goals of this chunk (demand part 2)</a></li>
+<li class="chapter" data-level="4.13" data-path="demand.html"><a href="demand.html#app-3.2-the-cpi-and-its-biases"><i class="fa fa-check"></i><b>4.13</b> App 3.2: The CPI and its biases</a></li>
+<li class="chapter" data-level="4.14" data-path="demand.html"><a href="demand.html#the-lump-sum-principle"><i class="fa fa-check"></i><b>4.14</b> The Lump-Sum Principle</a></li>
+<li class="chapter" data-level="4.15" data-path="demand.html"><a href="demand.html#an-important-diversion-does-christmas-gift-giving-reduce-welfare"><i class="fa fa-check"></i><b>4.15</b> An important diversion: Does Christmas gift-giving reduce welfare?</a></li>
+<li class="chapter" data-level="4.16" data-path="demand.html"><a href="demand.html#changes-in-the-price-of-another-good-complements-or-substitutes"><i class="fa fa-check"></i><b>4.16</b> Changes in the Price of Another Good; ‘complements’ or ‘substitutes’</a></li>
+<li class="chapter" data-level="4.17" data-path="demand.html"><a href="demand.html#individual-demand-curves"><i class="fa fa-check"></i><b>4.17</b> Individual demand curves</a></li>
+<li class="chapter" data-level="4.18" data-path="demand.html"><a href="demand.html#shifts-in-an-individuals-demand-curve"><i class="fa fa-check"></i><b>4.18</b> Shifts in an individual’s demand curve</a></li>
+<li class="chapter" data-level="4.19" data-path="demand.html"><a href="demand.html#consumer-surplus"><i class="fa fa-check"></i><b>4.19</b> Consumer surplus</a></li>
+<li class="chapter" data-level="4.20" data-path="demand.html"><a href="demand.html#mktdemand"><i class="fa fa-check"></i><b>4.20</b> Market demand (function)</a></li>
+<li class="chapter" data-level="4.21" data-path="demand.html"><a href="demand.html#shifts-in-the-market-demand-curve"><i class="fa fa-check"></i><b>4.21</b> Shifts in the Market Demand Curve</a></li>
+<li class="chapter" data-level="4.22" data-path="demand.html"><a href="demand.html#elasticities"><i class="fa fa-check"></i><b>4.22</b> Elasticities</a></li>
+<li class="chapter" data-level="4.23" data-path="demand.html"><a href="demand.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>4.23</b> Price elasticity of demand</a></li>
+<li class="chapter" data-level="" data-path="demand.html"><a href="demand.html#examples-from-the-headlines"><i class="fa fa-check"></i>Examples from the headlines</a></li>
+<li class="chapter" data-level="4.24" data-path="demand.html"><a href="demand.html#properties-of-price-elasticity-of-demand"><i class="fa fa-check"></i><b>4.24</b> Properties of price elasticity of demand</a></li>
+<li class="chapter" data-level="4.25" data-path="demand.html"><a href="demand.html#income-elast"><i class="fa fa-check"></i><b>4.25</b> Income elasticity of demand; Normal, luxury, and inferior goods</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="production-costs.html"><a href="production-costs.html"><i class="fa fa-check"></i><b>5</b> Production and costs (brief) (L4-L5)</a><ul>
+<li class="chapter" data-level="5.1" data-path="production-costs.html"><a href="production-costs.html#coverage"><i class="fa fa-check"></i><b>5.1</b> Coverage</a></li>
+<li class="chapter" data-level="5.2" data-path="production-costs.html"><a href="production-costs.html#the-firms-production-function"><i class="fa fa-check"></i><b>5.2</b> The Firm’s Production function</a></li>
+<li class="chapter" data-level="5.3" data-path="production-costs.html"><a href="production-costs.html#marginal-product"><i class="fa fa-check"></i><b>5.3</b> Marginal product</a></li>
+<li class="chapter" data-level="5.4" data-path="production-costs.html"><a href="production-costs.html#output-curves-marginal-product-curve-average-product"><i class="fa fa-check"></i><b>5.4</b> Output curves, marginal product curve, average product</a></li>
+<li class="chapter" data-level="5.5" data-path="production-costs.html"><a href="production-costs.html#cost-minimizing-input-choice"><i class="fa fa-check"></i><b>5.5</b> Cost minimizing input choice</a></li>
+<li class="chapter" data-level="5.6" data-path="production-costs.html"><a href="production-costs.html#isoquant-maps-rate-of-technical-substitution-rts"><i class="fa fa-check"></i><b>5.6</b> Isoquant maps, rate of technical substitution (RTS)</a></li>
+<li class="chapter" data-level="5.7" data-path="production-costs.html"><a href="production-costs.html#the-cost-function"><i class="fa fa-check"></i><b>5.7</b> The cost function</a></li>
+<li class="chapter" data-level="5.8" data-path="production-costs.html"><a href="production-costs.html#types-of-costs-basic-cost-concepts"><i class="fa fa-check"></i><b>5.8</b> Types of costs (‘Basic cost concepts’)</a></li>
+<li class="chapter" data-level="5.9" data-path="production-costs.html"><a href="production-costs.html#rts"><i class="fa fa-check"></i><b>5.9</b> Returns to scale</a></li>
+<li class="chapter" data-level="5.10" data-path="production-costs.html"><a href="production-costs.html#some-suggested-practice-problems-from-nicholson-and-snyder-chapter-6-12th-ed"><i class="fa fa-check"></i><b>5.10</b> Some suggested practice problems from Nicholson and Snyder Chapter 6 (12th ed)</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="profitmax.html"><a href="profitmax.html"><i class="fa fa-check"></i><b>6</b> Profit maximisation and supply (L5-L6)</a><ul>
+<li class="chapter" data-level="6.1" data-path="profitmax.html"><a href="profitmax.html#profit-maximisation-and-supply---coverage"><i class="fa fa-check"></i><b>6.1</b> Profit maximisation and supply - coverage</a></li>
+<li class="chapter" data-level="6.2" data-path="profitmax.html"><a href="profitmax.html#important-aside-what-are-firms-and-why-do-they-exist"><i class="fa fa-check"></i><b>6.2</b> Important aside: What are ‘firms’ and why do they exist?</a></li>
+<li class="chapter" data-level="6.3" data-path="profitmax.html"><a href="profitmax.html#profit-maximisation"><i class="fa fa-check"></i><b>6.3</b> Profit-maximisation</a></li>
+<li class="chapter" data-level="6.4" data-path="profitmax.html"><a href="profitmax.html#mrmc-condition-for-a-price-taking-firm"><i class="fa fa-check"></i><b>6.4</b> MR=mc condition for a price-taking firm</a></li>
+<li class="chapter" data-level="6.5" data-path="profitmax.html"><a href="profitmax.html#supply-decisions-of-a-price-taking-firm"><i class="fa fa-check"></i><b>6.5</b> Supply decisions of a price-taking firm</a></li>
+<li class="chapter" data-level="6.6" data-path="profitmax.html"><a href="profitmax.html#some-suggested-practice-problems-from-nicholson-and-snyder-chapter-8-12th-ed"><i class="fa fa-check"></i><b>6.6</b> Some suggested practice problems from Nicholson and Snyder Chapter 8 (12th ed)</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="perfect-competition.html"><a href="perfect-competition.html"><i class="fa fa-check"></i><b>7</b> Perfect competition in a single market (L6)</a><ul>
+<li class="chapter" data-level="7.1" data-path="perfect-competition.html"><a href="perfect-competition.html#perfect-competition-in-a-single-market---coverage"><i class="fa fa-check"></i><b>7.1</b> Perfect competition in a single market - coverage</a></li>
+<li class="chapter" data-level="7.2" data-path="perfect-competition.html"><a href="perfect-competition.html#sr-supply"><i class="fa fa-check"></i><b>7.2</b> SR supply</a></li>
+<li class="chapter" data-level="7.3" data-path="perfect-competition.html"><a href="perfect-competition.html#sr-price-determination"><i class="fa fa-check"></i><b>7.3</b> SR Price determination</a></li>
+<li class="chapter" data-level="7.4" data-path="perfect-competition.html"><a href="perfect-competition.html#illustration-of-sr-price-determination"><i class="fa fa-check"></i><b>7.4</b> Illustration of SR price determination</a></li>
+<li class="chapter" data-level="7.5" data-path="perfect-competition.html"><a href="perfect-competition.html#shifts-in-s-and-d-curves"><i class="fa fa-check"></i><b>7.5</b> Shifts in S and D curves</a></li>
+<li class="chapter" data-level="7.6" data-path="perfect-competition.html"><a href="perfect-competition.html#the-long-run"><i class="fa fa-check"></i><b>7.6</b> The Long run</a></li>
+<li class="chapter" data-level="7.7" data-path="perfect-competition.html"><a href="perfect-competition.html#long-run-lr-supply"><i class="fa fa-check"></i><b>7.7</b> Long Run (LR) Supply (*)</a></li>
+<li class="chapter" data-level="7.8" data-path="perfect-competition.html"><a href="perfect-competition.html#consumer-and-producer-surplus-efficiency"><i class="fa fa-check"></i><b>7.8</b> Consumer and producer surplus, efficiency</a></li>
+<li class="chapter" data-level="7.9" data-path="perfect-competition.html"><a href="perfect-competition.html#some-suggested-practice-problems-from-nicholson-and-snyder-chapter-9-12th-ed"><i class="fa fa-check"></i><b>7.9</b> Some suggested practice problems from Nicholson and Snyder Chapter 9 (12th ed)</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html"><i class="fa fa-check"></i><b>8</b> Key principles for efficiency and ‘general’ equilibrium</a><ul>
+<li class="chapter" data-level="8.1" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#general-equilibrium-and-efficiency-coverage"><i class="fa fa-check"></i><b>8.1</b> General equilibrium and efficiency: Coverage</a></li>
+<li class="chapter" data-level="8.2" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#introduction-general-equilibrium"><i class="fa fa-check"></i><b>8.2</b> Introduction: General equilibrium</a></li>
+<li class="chapter" data-level="8.3" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#pareto-efficiency"><i class="fa fa-check"></i><b>8.3</b> Pareto efficiency</a></li>
+<li class="chapter" data-level="8.4" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#the-three-amigos-of-efficiency-productive-exchange-and-top-level"><i class="fa fa-check"></i><b>8.4</b> The three amigos of efficiency: productive, exchange, and top-level</a></li>
+<li class="chapter" data-level="8.5" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#a-basic-argument-for-exchange-efficiency-of-competitive-equilibrium"><i class="fa fa-check"></i><b>8.5</b> A basic argument for exchange efficiency of competitive equilibrium:</a></li>
+<li class="chapter" data-level="8.6" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#fundamental-theorems-of-welfare-economics-market-failures"><i class="fa fa-check"></i><b>8.6</b> Fundamental theorems of welfare economics; market failures</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="notes-on-supplementary-reading.html"><a href="notes-on-supplementary-reading.html"><i class="fa fa-check"></i><b>9</b> Notes on supplementary reading</a><ul>
+<li class="chapter" data-level="9.1" data-path="notes-on-supplementary-reading.html"><a href="notes-on-supplementary-reading.html#supplementary-reading"><i class="fa fa-check"></i><b>9.1</b> Supplementary reading:</a></li>
+<li class="chapter" data-level="9.2" data-path="notes-on-supplementary-reading.html"><a href="notes-on-supplementary-reading.html#key-points"><i class="fa fa-check"></i><b>9.2</b> Key points:</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="market-failure.html"><a href="market-failure.html"><i class="fa fa-check"></i><b>10</b> Public Goods and Market Failure (L8)</a><ul>
+<li class="chapter" data-level="10.1" data-path="market-failure.html"><a href="market-failure.html#coverage-1"><i class="fa fa-check"></i><b>10.1</b> Coverage</a></li>
+<li class="chapter" data-level="10.2" data-path="market-failure.html"><a href="market-failure.html#market-failures"><i class="fa fa-check"></i><b>10.2</b> Market failures</a></li>
+<li class="chapter" data-level="10.3" data-path="market-failure.html"><a href="market-failure.html#public-goods-attributes-categories"><i class="fa fa-check"></i><b>10.3</b> Public Goods (attributes, categories)</a></li>
+<li class="chapter" data-level="10.4" data-path="market-failure.html"><a href="market-failure.html#why-do-public-goods-lead-to-market-failure"><i class="fa fa-check"></i><b>10.4</b> Why do public goods lead to market failure?</a></li>
+<li class="chapter" data-level="" data-path="market-failure.html"><a href="market-failure.html#social-benefit-of-a-private-good-vs-a-public-good"><i class="fa fa-check"></i>Social benefit of a private good vs a public good</a></li>
+<li class="chapter" data-level="" data-path="market-failure.html"><a href="market-failure.html#application-drug-development"><i class="fa fa-check"></i>Application: drug development</a></li>
+<li class="chapter" data-level="10.5" data-path="market-failure.html"><a href="market-failure.html#optimal-provision-of-public-goods-equilibrium-provision"><i class="fa fa-check"></i><b>10.5</b> Optimal provision of public goods, equilibrium provision</a></li>
+<li class="chapter" data-level="10.6" data-path="market-failure.html"><a href="market-failure.html#solutions-to-the-public-goods-problem"><i class="fa fa-check"></i><b>10.6</b> Solutions to the Public Goods Problem</a></li>
+<li class="chapter" data-level="10.7" data-path="market-failure.html"><a href="market-failure.html#food-for-thought-discussion"><i class="fa fa-check"></i><b>10.7</b> Food for thought, discussion</a></li>
+<li class="chapter" data-level="10.8" data-path="market-failure.html"><a href="market-failure.html#lab-evidence-on-voluntary-provision-of-public-goods"><i class="fa fa-check"></i><b>10.8</b> Lab evidence on <em>voluntary</em> provision of Public Goods</a></li>
+<li class="chapter" data-level="10.9" data-path="market-failure.html"><a href="market-failure.html#today-i-learned-til"><i class="fa fa-check"></i><b>10.9</b> Today I learned (‘TIL’)</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="aside-some-key-things-for-midterm-recap.html"><a href="aside-some-key-things-for-midterm-recap.html"><i class="fa fa-check"></i>Aside: Some key things for midterm (recap)</a></li>
+<li class="chapter" data-level="11" data-path="monopolies-pd.html"><a href="monopolies-pd.html"><i class="fa fa-check"></i><b>11</b> Monopolies and price discrimination (L9)</a><ul>
+<li class="chapter" data-level="11.1" data-path="monopolies-pd.html"><a href="monopolies-pd.html#coverage-and-key-readings"><i class="fa fa-check"></i><b>11.1</b> Coverage and key readings</a></li>
+<li class="chapter" data-level="11.2" data-path="monopolies-pd.html"><a href="monopolies-pd.html#coverage-2"><i class="fa fa-check"></i><b>11.2</b> Coverage</a></li>
+<li class="chapter" data-level="11.3" data-path="monopolies-pd.html"><a href="monopolies-pd.html#barriers-to-entry"><i class="fa fa-check"></i><b>11.3</b> Barriers to entry</a></li>
+<li class="chapter" data-level="11.4" data-path="monopolies-pd.html"><a href="monopolies-pd.html#monopoly-profit-maximisation"><i class="fa fa-check"></i><b>11.4</b> Monopoly profit-maximisation</a></li>
+<li class="chapter" data-level="11.5" data-path="monopolies-pd.html"><a href="monopolies-pd.html#no-supply-curve-for-a-monopoly"><i class="fa fa-check"></i><b>11.5</b> ‘No supply curve for a monopoly’</a></li>
+<li class="chapter" data-level="11.6" data-path="monopolies-pd.html"><a href="monopolies-pd.html#the-deadweight-loss-of-monopoly"><i class="fa fa-check"></i><b>11.6</b> The deadweight loss of monopoly</a></li>
+<li class="chapter" data-level="11.7" data-path="monopolies-pd.html"><a href="monopolies-pd.html#price-discrimination-basics"><i class="fa fa-check"></i><b>11.7</b> Price discrimination: basics</a></li>
+<li class="chapter" data-level="11.8" data-path="monopolies-pd.html"><a href="monopolies-pd.html#first-degree-andor-perfect-price-discrimination"><i class="fa fa-check"></i><b>11.8</b> First-degree and/or ‘perfect’ price discrimination</a></li>
+<li class="chapter" data-level="11.9" data-path="monopolies-pd.html"><a href="monopolies-pd.html#second-degree-price-discrimination"><i class="fa fa-check"></i><b>11.9</b> Second-degree price discrimination</a></li>
+<li class="chapter" data-level="11.10" data-path="monopolies-pd.html"><a href="monopolies-pd.html#third-degree-price-discrimination-3dpd-market-separation"><i class="fa fa-check"></i><b>11.10</b> Third-degree price discrimination (3dpd) / Market separation</a></li>
+<li class="chapter" data-level="11.11" data-path="monopolies-pd.html"><a href="monopolies-pd.html#who-benefits-from-3dpd"><i class="fa fa-check"></i><b>11.11</b> Who benefits from 3DPD?</a></li>
+<li class="chapter" data-level="11.12" data-path="monopolies-pd.html"><a href="monopolies-pd.html#arbitrage-can-foil-price-discrimination"><i class="fa fa-check"></i><b>11.12</b> Arbitrage … can foil price discrimination</a></li>
+<li class="chapter" data-level="11.13" data-path="monopolies-pd.html"><a href="monopolies-pd.html#some-practice-problems"><i class="fa fa-check"></i><b>11.13</b> Some practice problems</a></li>
+<li class="chapter" data-level="11.14" data-path="monopolies-pd.html"><a href="monopolies-pd.html#davids-old-new-idea-a-policy-tool"><i class="fa fa-check"></i><b>11.14</b> David’s (old) new idea: A policy tool</a></li>
+<li class="chapter" data-level="11.15" data-path="monopolies-pd.html"><a href="monopolies-pd.html#natural-monopolies-and-regulation-very-brief"><i class="fa fa-check"></i><b>11.15</b> Natural monopolies and regulation (very brief!)</a></li>
+<li class="chapter" data-level="11.16" data-path="monopolies-pd.html"><a href="monopolies-pd.html#brief-notes-on-imperfect-competition"><i class="fa fa-check"></i><b>11.16</b> Brief notes on imperfect competition</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="uncertainty.html"><a href="uncertainty.html"><i class="fa fa-check"></i><b>12</b> Uncertainty (with a bit of finance) (L10))</a><ul>
+<li class="chapter" data-level="12.1" data-path="uncertainty.html"><a href="uncertainty.html#whats-up-with-uncertainty"><i class="fa fa-check"></i><b>12.1</b> What’s up with uncertainty?</a></li>
+<li class="chapter" data-level="12.2" data-path="uncertainty.html"><a href="uncertainty.html#probability-concepts-a-quick-review"><i class="fa fa-check"></i><b>12.2</b> Probability concepts: a quick review</a></li>
+<li class="chapter" data-level="12.3" data-path="uncertainty.html"><a href="uncertainty.html#some-probability-basics-from-anne-greenbaum-wash-u-notes"><i class="fa fa-check"></i><b>12.3</b> Some probability basics (From Anne Greenbaum Wash U notes)</a></li>
+<li class="chapter" data-level="12.4" data-path="uncertainty.html"><a href="uncertainty.html#example-experimental-measures-of-risk-attitudes"><i class="fa fa-check"></i><b>12.4</b> Example: experimental measures of risk attitudes</a></li>
+<li class="chapter" data-level="12.5" data-path="uncertainty.html"><a href="uncertainty.html#more-formally-see-jehle-and-reny-text"><i class="fa fa-check"></i><b>12.5</b> More formally (see Jehle and Reny text)</a></li>
+<li class="chapter" data-level="12.6" data-path="uncertainty.html"><a href="uncertainty.html#expected-utility"><i class="fa fa-check"></i><b>12.6</b> Expected utility</a></li>
+<li class="chapter" data-level="12.7" data-path="uncertainty.html"><a href="uncertainty.html#risk-aversion-graphical-depiction"><i class="fa fa-check"></i><b>12.7</b> Risk aversion: graphical depiction</a></li>
+<li class="chapter" data-level="12.8" data-path="uncertainty.html"><a href="uncertainty.html#ways-of-reducing-risk-insurance"><i class="fa fa-check"></i><b>12.8</b> Ways of reducing risk: Insurance</a></li>
+<li class="chapter" data-level="12.9" data-path="uncertainty.html"><a href="uncertainty.html#ways-of-reducing-risk-diversification"><i class="fa fa-check"></i><b>12.9</b> Ways of reducing risk: Diversification</a></li>
+<li class="chapter" data-level="12.10" data-path="uncertainty.html"><a href="uncertainty.html#somewhat-more-advanced-but-useful-concepts-to-look-into-if-you-like"><i class="fa fa-check"></i><b>12.10</b> Somewhat more advanced but useful concepts to look into, if you like</a></li>
+<li class="chapter" data-level="12.11" data-path="uncertainty.html"><a href="uncertainty.html#flexibility-and-options-contracts"><i class="fa fa-check"></i><b>12.11</b> Flexibility and options contracts</a></li>
+<li class="chapter" data-level="12.12" data-path="uncertainty.html"><a href="uncertainty.html#pricing-of-risk-and-assets-in-financial-markets"><i class="fa fa-check"></i><b>12.12</b> Pricing of risk (and assets) in financial markets</a></li>
+<li class="chapter" data-level="12.13" data-path="uncertainty.html"><a href="uncertainty.html#not-covered-two-state-model"><i class="fa fa-check"></i><b>12.13</b> Not covered: two state model</a></li>
+<li class="chapter" data-level="12.14" data-path="uncertainty.html"><a href="uncertainty.html#suggested-practice-problems-see-problem-set"><i class="fa fa-check"></i><b>12.14</b> Suggested practice problems: see problem set</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="game-theory.html"><a href="game-theory.html"><i class="fa fa-check"></i><b>13</b> Game Theory (L11)</a><ul>
+<li class="chapter" data-level="13.1" data-path="game-theory.html"><a href="game-theory.html#coverage-outline"><i class="fa fa-check"></i><b>13.1</b> Coverage outline</a></li>
+<li class="chapter" data-level="13.2" data-path="game-theory.html"><a href="game-theory.html#basic-concepts-strategic-interaction-elements-of-a-game"><i class="fa fa-check"></i><b>13.2</b> Basic concepts (strategic interaction, elements of a game))</a></li>
+<li class="chapter" data-level="13.3" data-path="game-theory.html"><a href="game-theory.html#some-examples"><i class="fa fa-check"></i><b>13.3</b> Some examples</a></li>
+<li class="chapter" data-level="13.4" data-path="game-theory.html"><a href="game-theory.html#four-elements-describe-a-game"><i class="fa fa-check"></i><b>13.4</b> Four elements describe a game</a></li>
+<li class="chapter" data-level="13.5" data-path="game-theory.html"><a href="game-theory.html#illustrating-games"><i class="fa fa-check"></i><b>13.5</b> Illustrating Games</a></li>
+<li class="chapter" data-level="13.6" data-path="game-theory.html"><a href="game-theory.html#common-knowledge"><i class="fa fa-check"></i><b>13.6</b> Common knowledge</a></li>
+<li class="chapter" data-level="13.7" data-path="game-theory.html"><a href="game-theory.html#dominant-dominated-strategies-and-rationalizability"><i class="fa fa-check"></i><b>13.7</b> Dominant, dominated strategies and rationalizability</a></li>
+<li class="chapter" data-level="13.8" data-path="game-theory.html"><a href="game-theory.html#rationalisability-iterated-strict-dominance-not-in-ns-text"><i class="fa fa-check"></i><b>13.8</b> Rationalisability/ Iterated strict dominance (not in NS text!)</a></li>
+<li class="chapter" data-level="13.9" data-path="game-theory.html"><a href="game-theory.html#equilibrium"><i class="fa fa-check"></i><b>13.9</b> Equilibrium</a></li>
+<li class="chapter" data-level="13.10" data-path="game-theory.html"><a href="game-theory.html#coordination-and-anti-coordination-games"><i class="fa fa-check"></i><b>13.10</b> Coordination and anti-coordination games</a></li>
+<li class="chapter" data-level="13.11" data-path="game-theory.html"><a href="game-theory.html#mixed-strategies"><i class="fa fa-check"></i><b>13.11</b> Mixed strategies</a></li>
+<li class="chapter" data-level="13.12" data-path="game-theory.html"><a href="game-theory.html#how-do-you-solve-a-problem-like-multiple-equilibria"><i class="fa fa-check"></i><b>13.12</b> How do you solve a problem like multiple-equilibria?</a></li>
+<li class="chapter" data-level="13.13" data-path="game-theory.html"><a href="game-theory.html#sequential-games"><i class="fa fa-check"></i><b>13.13</b> Sequential Games</a></li>
+<li class="chapter" data-level="13.14" data-path="game-theory.html"><a href="game-theory.html#repeated-games"><i class="fa fa-check"></i><b>13.14</b> Repeated games</a></li>
+<li class="chapter" data-level="13.15" data-path="game-theory.html"><a href="game-theory.html#trigger-strategies"><i class="fa fa-check"></i><b>13.15</b> Trigger strategies</a></li>
+<li class="chapter" data-level="13.16" data-path="game-theory.html"><a href="game-theory.html#repeated-games-indefinite-or-infinite-time-horizon"><i class="fa fa-check"></i><b>13.16</b> Repeated Games: Indefinite or infinite time horizon</a></li>
+<li class="chapter" data-level="13.17" data-path="game-theory.html"><a href="game-theory.html#continuous-actions"><i class="fa fa-check"></i><b>13.17</b> Continuous Actions</a></li>
+<li class="chapter" data-level="13.18" data-path="game-theory.html"><a href="game-theory.html#experimental-evidence-what-is-a-laboratory-experiment-in-economics"><i class="fa fa-check"></i><b>13.18</b> Experimental evidence: What is a laboratory experiment in Economics?</a></li>
+<li class="chapter" data-level="13.19" data-path="game-theory.html"><a href="game-theory.html#laboratory-evidence-1-prisoners-dilemmas"><i class="fa fa-check"></i><b>13.19</b> Laboratory evidence 1: Prisoners’ dilemmas</a></li>
+<li class="chapter" data-level="13.20" data-path="game-theory.html"><a href="game-theory.html#laboratory-evidence-2-ultimatum-game"><i class="fa fa-check"></i><b>13.20</b> Laboratory evidence 2: Ultimatum game</a></li>
+<li class="chapter" data-level="13.21" data-path="game-theory.html"><a href="game-theory.html#issues-in-lab-experiments"><i class="fa fa-check"></i><b>13.21</b> Issues in lab experiments</a></li>
+<li class="chapter" data-level="13.22" data-path="game-theory.html"><a href="game-theory.html#issues-in-lab-experiments-external-generalisability"><i class="fa fa-check"></i><b>13.22</b> Issues in lab experiments: External generalisability</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="asymmetric-information-optional-for-2019-20.html"><a href="asymmetric-information-optional-for-2019-20.html"><i class="fa fa-check"></i><b>14</b> Asymmetric information: “optional” for 2019-20</a><ul>
+<li class="chapter" data-level="14.1" data-path="asymmetric-information-optional-for-2019-20.html"><a href="asymmetric-information-optional-for-2019-20.html#principal-agent-problem"><i class="fa fa-check"></i><b>14.1</b> Principal-Agent Problem</a></li>
+<li class="chapter" data-level="14.2" data-path="asymmetric-information-optional-for-2019-20.html"><a href="asymmetric-information-optional-for-2019-20.html#moral-hazard-basic-principles"><i class="fa fa-check"></i><b>14.2</b> Moral hazard: Basic principles</a></li>
+<li class="chapter" data-level="14.3" data-path="asymmetric-information-optional-for-2019-20.html"><a href="asymmetric-information-optional-for-2019-20.html#lemons-problem"><i class="fa fa-check"></i><b>14.3</b> Lemons problem</a></li>
+<li class="chapter" data-level="14.4" data-path="asymmetric-information-optional-for-2019-20.html"><a href="asymmetric-information-optional-for-2019-20.html#to-learn-this-material-fully-and-to-be-prepared-to-answer-an-exam-question-please-also-read"><i class="fa fa-check"></i><b>14.4</b> To learn this material fully (and to be prepared to answer an exam question), please also read:</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html"><i class="fa fa-check"></i><b>15</b> Behavioural economics (L12)</a><ul>
+<li class="chapter" data-level="15.1" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#neoclassical-versus-behavioural-economics"><i class="fa fa-check"></i><b>15.1</b> Neoclassical versus Behavioural economics</a></li>
+<li class="chapter" data-level="15.2" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#classical-economists-are-not-naive"><i class="fa fa-check"></i><b>15.2</b> Classical economists are not naïve</a></li>
+<li class="chapter" data-level="15.3" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#behavioural-economics"><i class="fa fa-check"></i><b>15.3</b> Behavioural Economics</a></li>
+<li class="chapter" data-level="15.4" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#modern-consensusentente"><i class="fa fa-check"></i><b>15.4</b> Modern consensus/entente</a></li>
+<li class="chapter" data-level="15.5" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#limits-to-human-decision-making-an-overview"><i class="fa fa-check"></i><b>15.5</b> Limits to Human Decision Making: An Overview</a></li>
+<li class="chapter" data-level="15.6" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#limited-cognitive-ability"><i class="fa fa-check"></i><b>15.6</b> Limited cognitive ability</a></li>
+<li class="chapter" data-level="15.7" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#allais-paradox"><i class="fa fa-check"></i><b>15.7</b> Allais paradox</a></li>
+<li class="chapter" data-level="15.8" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#explaining-the-above-paradoxes-with-prospect-theory"><i class="fa fa-check"></i><b>15.8</b> Explaining the above paradoxes with prospect theory</a></li>
+<li class="chapter" data-level="15.9" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#limited-willpower-and-hyperbolic-discounting"><i class="fa fa-check"></i><b>15.9</b> Limited willpower and ‘hyperbolic discounting’</a></li>
+<li class="chapter" data-level="15.10" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#altruism-and-fairness"><i class="fa fa-check"></i><b>15.10</b> Altruism and fairness</a></li>
+<li class="chapter" data-level="15.11" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#supplemental-reading-evidence-on-the-ultimatum-game"><i class="fa fa-check"></i><b>15.11</b> Supplemental (reading): Evidence on the Ultimatum Game</a></li>
+<li class="chapter" data-level="15.12" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#ultimatum-game-theoretical-predictions"><i class="fa fa-check"></i><b>15.12</b> Ultimatum game: theoretical predictions</a></li>
+<li class="chapter" data-level="15.13" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#application-give-if-you-win-eu-vs.-prospect-theory"><i class="fa fa-check"></i><b>15.13</b> Application: Give-if-you-win (EU vs. Prospect theory)</a></li>
+<li class="chapter" data-level="15.14" data-path="behavioural-economics-l12.html"><a href="behavioural-economics-l12.html#behavioral-economics-further-exercises-and-examples"><i class="fa fa-check"></i><b>15.14</b> Behavioral Economics: further exercises and examples</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="supplement-gift-giving-christmas-chuseok-birthdays-why-do-people-do-it-and-is-it-efficient.html"><a href="supplement-gift-giving-christmas-chuseok-birthdays-why-do-people-do-it-and-is-it-efficient.html"><i class="fa fa-check"></i><b>16</b> Supplement: Gift-giving (Christmas, Chuseok, birthdays…): why do people do it and is it efficient?</a><ul>
+<li class="chapter" data-level="16.1" data-path="supplement-gift-giving-christmas-chuseok-birthdays-why-do-people-do-it-and-is-it-efficient.html"><a href="supplement-gift-giving-christmas-chuseok-birthdays-why-do-people-do-it-and-is-it-efficient.html#introduction"><i class="fa fa-check"></i><b>16.1</b> Introduction</a></li>
+<li class="chapter" data-level="16.2" data-path="supplement-gift-giving-christmas-chuseok-birthdays-why-do-people-do-it-and-is-it-efficient.html"><a href="supplement-gift-giving-christmas-chuseok-birthdays-why-do-people-do-it-and-is-it-efficient.html#does-christmas-gift-giving-reduce-welfare"><i class="fa fa-check"></i><b>16.2</b> Does Christmas gift-giving reduce welfare?</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="supplement-determinants-of-contributions-in-public-goods-games-vcms.html"><a href="supplement-determinants-of-contributions-in-public-goods-games-vcms.html"><i class="fa fa-check"></i><b>17</b> Supplement: Determinants of contributions in public goods games (VCMs)</a><ul>
+<li class="chapter" data-level="17.1" data-path="supplement-determinants-of-contributions-in-public-goods-games-vcms.html"><a href="supplement-determinants-of-contributions-in-public-goods-games-vcms.html#notes"><i class="fa fa-check"></i><b>17.1</b> Notes</a></li>
+<li class="chapter" data-level="17.2" data-path="supplement-determinants-of-contributions-in-public-goods-games-vcms.html"><a href="supplement-determinants-of-contributions-in-public-goods-games-vcms.html#consensus-of-evidence"><i class="fa fa-check"></i><b>17.2</b> Consensus of evidence</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"><a href="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"><i class="fa fa-check"></i><b>18</b> Supplement: Charitable giving, volunteering, and other pro-social behavior – the basics</a><ul>
+<li class="chapter" data-level="18.1" data-path="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"><a href="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html#outline-1"><i class="fa fa-check"></i><b>18.1</b> Outline</a></li>
+<li class="chapter" data-level="18.2" data-path="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"><a href="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html#modeling-and-measuring-other-regarding-behavior"><i class="fa fa-check"></i><b>18.2</b> Modeling and measuring other-regarding behavior</a></li>
+<li class="chapter" data-level="18.3" data-path="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"><a href="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html#the-big-question"><i class="fa fa-check"></i><b>18.3</b> The big question</a></li>
+<li class="chapter" data-level="18.4" data-path="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"><a href="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html#economics-and-other-regarding-behavior-a-useful-undertaking"><i class="fa fa-check"></i><b>18.4</b> Economics and other-regarding behavior; a useful undertaking?</a></li>
+<li class="chapter" data-level="18.5" data-path="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"><a href="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html#facts-and-figures-on-giving"><i class="fa fa-check"></i><b>18.5</b> Facts and figures on giving</a></li>
+<li class="chapter" data-level="18.6" data-path="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"><a href="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html#models-of-giving-and-other-regarding-behavior-orb"><i class="fa fa-check"></i><b>18.6</b> Models of giving and other-regarding-behavior (ORB)</a></li>
+<li class="chapter" data-level="18.7" data-path="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"><a href="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html#empirically-motivated-arguments-for-wg-and-against-pg-experimental-evidence"><i class="fa fa-check"></i><b>18.7</b> Empirically-motivated arguments for WG and against PG, experimental evidence</a></li>
+<li class="chapter" data-level="18.8" data-path="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html"><a href="supplement-charitable-giving-volunteering-and-other-pro-social-behavior-the-basics.html#sources-of-evidence-on-charitable-giving"><i class="fa fa-check"></i><b>18.8</b> Sources of evidence on charitable giving</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="supplement-what-causes-people-to-donate-more-to-charity.html"><a href="supplement-what-causes-people-to-donate-more-to-charity.html"><i class="fa fa-check"></i><b>19</b> Supplement: What <em>causes</em> people to donate (more) to charity</a><ul>
+<li class="chapter" data-level="19.1" data-path="supplement-what-causes-people-to-donate-more-to-charity.html"><a href="supplement-what-causes-people-to-donate-more-to-charity.html#andreoni-and-payne---major-approaches-to-researching-giving"><i class="fa fa-check"></i><b>19.1</b> Andreoni and Payne - Major approaches to researching giving:</a></li>
+<li class="chapter" data-level="19.2" data-path="supplement-what-causes-people-to-donate-more-to-charity.html"><a href="supplement-what-causes-people-to-donate-more-to-charity.html#categories-of-tools-to-increase-giving-effectiveness"><i class="fa fa-check"></i><b>19.2</b> Categories of ‘tools’ to increase giving (effectiveness)</a></li>
+<li class="chapter" data-level="19.3" data-path="supplement-what-causes-people-to-donate-more-to-charity.html"><a href="supplement-what-causes-people-to-donate-more-to-charity.html#investigation-timing-and-conditionality-of-donation-commitment"><i class="fa fa-check"></i><b>19.3</b> Investigation: timing and conditionality of donation commitment</a></li>
+<li class="chapter" data-level="19.4" data-path="supplement-what-causes-people-to-donate-more-to-charity.html"><a href="supplement-what-causes-people-to-donate-more-to-charity.html#investigation-social-giving"><i class="fa fa-check"></i><b>19.4</b> Investigation: ‘Social giving’</a></li>
+<li class="chapter" data-level="19.5" data-path="supplement-what-causes-people-to-donate-more-to-charity.html"><a href="supplement-what-causes-people-to-donate-more-to-charity.html#investigation-social-giving-1"><i class="fa fa-check"></i><b>19.5</b> Investigation: ‘Social giving’</a></li>
+<li class="chapter" data-level="19.6" data-path="supplement-what-causes-people-to-donate-more-to-charity.html"><a href="supplement-what-causes-people-to-donate-more-to-charity.html#price-of-giving-see-price-impact-and-effectiveness"><i class="fa fa-check"></i><b>19.6</b> Price of giving: see <span>Price, impact, and effectiveness</span></a></li>
+<li class="chapter" data-level="19.7" data-path="supplement-what-causes-people-to-donate-more-to-charity.html"><a href="supplement-what-causes-people-to-donate-more-to-charity.html#other-influencers"><i class="fa fa-check"></i><b>19.7</b> Other influencers</a></li>
+<li class="chapter" data-level="19.8" data-path="supplement-what-causes-people-to-donate-more-to-charity.html"><a href="supplement-what-causes-people-to-donate-more-to-charity.html#fundraising-other-tricks-and-puzzles-to-add"><i class="fa fa-check"></i><b>19.8</b> Fundraising: other tricks and puzzles (to add)</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><a href="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><i class="fa fa-check"></i><b>20</b> Supplement: What determines which charity people donate to? Are they in competition?</a><ul>
+<li class="chapter" data-level="20.1" data-path="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><a href="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html#charity-does-one-contribution-come-at-the-expense-of-another-evidence-theoretical-framework-empirical-and-experimental-issues"><i class="fa fa-check"></i><b>20.1</b> Charity: Does one contribution come at the expense of another? (Evidence, theoretical framework, empirical and experimental issues)</a></li>
+<li class="chapter" data-level="20.2" data-path="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><a href="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html#what-does-this-question-mean"><i class="fa fa-check"></i><b>20.2</b> What does this question mean?</a></li>
+<li class="chapter" data-level="20.3" data-path="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><a href="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html#why-is-it-important-who-cares"><i class="fa fa-check"></i><b>20.3</b> Why is it important/ who cares?</a></li>
+<li class="chapter" data-level="20.4" data-path="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><a href="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html#literature-ii-lab-experiments"><i class="fa fa-check"></i><b>20.4</b> Literature II: Lab Experiments</a></li>
+<li class="chapter" data-level="20.5" data-path="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><a href="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html#lit.-iii-field-evidence-field-and-natural-experiments-observational-results"><i class="fa fa-check"></i><b>20.5</b> Lit. III: Field evidence (field and natural experiments, observational results)</a></li>
+<li class="chapter" data-level="20.6" data-path="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><a href="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html#synthesis-limits-of-previous-evidence"><i class="fa fa-check"></i><b>20.6</b> Synthesis, limits of previous evidence</a></li>
+<li class="chapter" data-level="20.7" data-path="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><a href="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html#reinstein-and-riener-2017-wip"><i class="fa fa-check"></i><b>20.7</b> Reinstein and Riener, 2017 (WIP)</a></li>
+<li class="chapter" data-level="20.8" data-path="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><a href="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html#what-determines-where-people-give"><i class="fa fa-check"></i><b>20.8</b> What determines where people give?</a></li>
+<li class="chapter" data-level="20.9" data-path="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html"><a href="supplement-what-determines-which-charity-people-donate-to-are-they-in-competition.html#do-people-care-about-effectiveness"><i class="fa fa-check"></i><b>20.9</b> Do people care about effectiveness</a></li>
+</ul></li>
+<li class="chapter" data-level="21" data-path="price-impact.html"><a href="price-impact.html"><i class="fa fa-check"></i><b>21</b> Supplement: Charitable giving – Donors response to ‘prices’ and (information about) impact and effectiveness</a><ul>
+<li class="chapter" data-level="21.1" data-path="price-impact.html"><a href="price-impact.html#price-match"><i class="fa fa-check"></i><b>21.1</b> Price of giving: Impact of matches</a></li>
+<li class="chapter" data-level="21.2" data-path="price-impact.html"><a href="price-impact.html#framing-of-match-match-versus-rebate"><i class="fa fa-check"></i><b>21.2</b> Framing of match: match versus rebate</a></li>
+<li class="chapter" data-level="21.3" data-path="price-impact.html"><a href="price-impact.html#info-recip"><i class="fa fa-check"></i><b>21.3</b> Info/comms: Does information (about recipients/charity…) help?</a></li>
+<li class="chapter" data-level="21.4" data-path="price-impact.html"><a href="price-impact.html#ratings"><i class="fa fa-check"></i><b>21.4</b> Charity ratings, overhead</a></li>
+<li class="chapter" data-level="21.5" data-path="price-impact.html"><a href="price-impact.html#overhead"><i class="fa fa-check"></i><b>21.5</b> Overhead and fundraising expense ratios</a></li>
+<li class="chapter" data-level="21.6" data-path="price-impact.html"><a href="price-impact.html#realimpact"><i class="fa fa-check"></i><b>21.6</b> Impact on (outputs and) <em>outcomes</em> per dollar; responses to scientific analytical information</a></li>
+<li class="chapter" data-level="21.7" data-path="price-impact.html"><a href="price-impact.html#prior-evidence"><i class="fa fa-check"></i><b>21.7</b> How do donations respond to (analytical) effectiveness and impact information? The evidence.</a></li>
+<li class="chapter" data-level="21.8" data-path="price-impact.html"><a href="price-impact.html#empirical-approach"><i class="fa fa-check"></i><b>21.8</b> Reinstein ‘Our empirical approach’</a></li>
+<li class="chapter" data-level="21.9" data-path="price-impact.html"><a href="price-impact.html#dv-experiment"><i class="fa fa-check"></i><b>21.9</b> DonorsVoice mailing experiment</a></li>
+<li class="chapter" data-level="21.10" data-path="price-impact.html"><a href="price-impact.html#bergh-mturk-experiment"><i class="fa fa-check"></i><b>21.10</b> Bergh project (Mturk)</a></li>
+<li class="chapter" data-level="21.11" data-path="price-impact.html"><a href="price-impact.html#essex-piggyback"><i class="fa fa-check"></i><b>21.11</b> Bergh/Reinstein (Essex piggyback)</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="note-more-material-may-be-added.html"><a href="note-more-material-may-be-added.html"><i class="fa fa-check"></i>Note: more material may be added</a></li>
+<li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html"><i class="fa fa-check"></i>Problem sets</a><ul>
+<li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html#ps1"><i class="fa fa-check"></i>First problem set: Mathematical approaches, economic models, revision and warm-up, concepts in consumer theory</a></li>
+<li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html#ps1_w_ans"><i class="fa fa-check"></i>First problem set with suggested answer guidelines: Mathematical approaches, economic models, revision and warm-up, concepts in consumer theory</a></li>
+<li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html#ps_pg"><i class="fa fa-check"></i>Problem set: Public Goods</a></li>
+<li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html#problem-set-monopolies-and-price-discrimination"><i class="fa fa-check"></i>Problem set: Monopolies and price discrimination</a></li>
+<li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html#problem-set-uncertainty-eu-applications"><i class="fa fa-check"></i>Problem set: Uncertainty, EU, applications</a></li>
+<li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html#ps6noans"><i class="fa fa-check"></i>Sixth problem set: Game theory (no answers)</a></li>
+<li class="chapter" data-level="" data-path="problemsets.html"><a href="problemsets.html#ps6ans"><i class="fa fa-check"></i>Sixth problem set: Game theory, with answers</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="exams-with-answers-and-mock-exams.html"><a href="exams-with-answers-and-mock-exams.html"><i class="fa fa-check"></i>Exams with answers and mock exams</a></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Microeconomics (MSc)</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="demand" class="section level1">
+<h1><span class="header-section-number">4</span> The Demand function (L3)</h1>
+<div id="text-sourcesreadings" class="section level2">
+<h2><span class="header-section-number">4.1</span> Text sources/Readings</h2>
+<ul>
+<li><p>NS: Ch 3</p></li>
+<li><p>DA: <a href="https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/MIT14_03F16_lec6.pdf">Lecture Note 6 – Demand Functions: Income Effects, Substitution Effects, and Labor Supply</a>, esp. sections 1-3</p></li>
+<li><p>McDL: 3.1 (elasticity), parts of Ch 12; Warning: this books treatment of consumer surplus seems to be incorrect (or at least vastly oversimplified) from my PoV</p></li>
+<li><p>QMC: Chapter 17 (elasticities – very clear treatment, Chapter 18 (supply and demand details)</p></li>
+</ul>
+</div>
+<div id="demand-curves-coverage-outline" class="section level2">
+<h2><span class="header-section-number">4.2</span> Demand Curves – coverage outline</h2>
+<p><font color='gray'>In lecture at this point I give you an example of a very surprising case that nonetheless may occur, at least in theory.</font></p>
+<p><em>Key goals of these lectures (and accompanying self-study)</em></p>
+<ol style="list-style-type: decimal">
+<li>How do you derive an <em>individual’s</em> demand curve from her utility function?<a href="#fn37" class="footnote-ref" id="fnref37"><sup>37</sup></a></li>
+<li>What properties do demand curves have?</li>
+<li>Understand the following concepts and outcomes (and/or how to derive them):
+<ul>
+<li>Substitution and income effects (of a price change)</li>
+<li>Goods that are ‘substitutes’ or ‘complements’<a href="#fn38" class="footnote-ref" id="fnref38"><sup>38</sup></a></li>
+<li>Consumer surplus (from a transaction)</li>
+<li>The lump-sum principle (and the distortion of taxation)</li>
+</ul></li>
+<li>What is a <em>market</em> demand curve, and how do we derive it?</li>
+<li>Understand the concepts:
+<ul>
+<li>Price elasticity (of market demand for a product), and what it means to firms’ pricing strategy</li>
+<li>Income elasticity (…)</li>
+<li>Cross-price elasticity (between two products)</li>
+</ul></li>
+<li>Be able to discuss real world examples and applications of the above</li>
+</ol>
+<ul>
+<li>And be able to compute the above</li>
+</ul>
+<hr />
+<ul>
+<li><font color='blue'>Second problem set, second part (NS chapter 2-3): Preferences, Utility, Consumer optimization, individual and market demand</font></li>
+</ul>
+</div>
+<div id="demand-functions" class="section level2">
+<h2><span class="header-section-number">4.3</span> Demand functions</h2>
+<p>Previously, we considered how consumption choices determined by utility functions/indifference curves and budget constraints. We can now consider how an individual’s choice of a good varies with each element of her budget constraint: for income and the price of each good.</p>
+<p>We will refer to her ‘quantity demanded of good X’ function (or more simply, her ‘demand function’) as follows:</p>
+<p><br> <br> </p>
+<p><span class="math display">\[Quantity \: of \: X \: demanded = d_x(P_X, P_Y, I; preferences)\]</span></p>
+<p><br />
+</p>
+<div id="homogeneity" class="section level3 unnumbered">
+<h3>Homogeneity</h3>
+<dl>
+<dt>Homogenous (of degree zero) (demand) function</dt>
+<dd>A function whose outcome value does not change when <em>all</em> arguments are changed <em>proportionally</em> is <em>homogenous of degree zero</em>
+</dd>
+</dl>
+<p><br> <br> </p>
+<p><span class="math inline">\(d_X(P_X,P_Y,I)\)</span> is homogenous of degree zero in its arguments.</p>
+<p><br> <br> </p>
+<p>Multiply all prices and income by the same amount, and the <em>budget constraint is unchanged.</em> Thus ( as preferences have not changed) consumption choices should not change either.</p>
+<ul>
+<li>E.g., the budget constraint <span class="math inline">\(P_X X + P_Y Y = I\)</span> is the same as the budget constraint <span class="math inline">\(2P_X X + 2P_Y Y = 2I\)</span></li>
+</ul>
+<p><em>Intuition for this:</em> Graphically, the budget line and indifference curves are unchanged, so her optimization problem is identical to the optimization problem before. The point of tangency between an indifference curve and her budget line is the same as before.</p>
+<p>Consider, if your income, as well as prices, were stated in pennies rather than pounds (e.g., 5 million pennies rather than £50,000), would your choices change?<a href="#fn39" class="footnote-ref" id="fnref39"><sup>39</sup></a></p>
+<p>This relates to the puzzle of ‘why should monetary policy and inflation have any real effect?’</p>
+</div>
+</div>
+<div id="response-to-income-changes" class="section level2">
+<h2><span class="header-section-number">4.4</span> Response to income changes</h2>
+<p><font color='blue'>Q: What happens to the quantity purchased of some good as an individual’s income increases?</font></p>
+<p><br />
+</p>
+<p><em>A: Depends on whether the good is normal or inferior.</em></p>
+<p><br />
+</p>
+<p>(Whether it is normal or inferior depends on your preferences and the change in the slope of the indifference curves with higher income/utility, as we see below.)</p>
+<p><br> <br> </p>
+<div id="defining-a-normal-and-inferior-good" class="section level3 unnumbered">
+<h3>Defining a normal and inferior good</h3>
+<dl>
+<dt>Normal good</dt>
+<dd>A good that is bought in <em>greater</em> quantities as income increases.
+</dd>
+<dt>Inferior good</dt>
+<dd>A good that is bought in <em>smaller</em> quantities as income increases.
+</dd>
+</dl>
+<p><br />
+</p>
+<p><img src="picsfigs/normalgood.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><font color='gray'>In lecture we might move to the PPT slides to illustrate this, beginning with ‘Changes in Income: A Normal Good’. You may find these helpful (download and use ‘presentation mode’.) See</font> <a href="https://www.dropbox.com/s/qhsl6qey0wjcfe5/utility_demand_supplement.pptx?dl=0">here</a></p>
+<p><img src="picsfigs/inferiorgood.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><em>Consider:</em> Here we see more income <span class="math inline">\(\rightarrow\)</span> less expenditure on Z! (Not just ‘a lesser share’ but actually <em>less</em>.)</p>
+<p>This is because the <em>shape</em> of the indifference curves changes at higher incomes in this example.
+When people have a lot to spend, they want to spend it on Y and not on Z. (Again <em>in this example</em>, not in general.)</p>
+<p>Consider, if you won the lottery how much pot noodle would you buy? Pot noodle may be like good Z in this example.</p>
+<p><br> <br> </p>
+<p>Thinking in 3d: ‘as you walk up this hill, its ridge gradually moves to the west’.</p>
+
+<div class="note">
+<p>To be precise, this is <em>not</em> about wealthy people being different than poor people
+nor that their taste ‘changes’ when they become wealthy.
+We are considering the same person with higher income,
+and thus the potential to choose a different bundle of goods.
+Empirically, these are hard to distinguish, however.</p>
+</div>
+
+<p><font color='blue'>Consider: all goods cannot be inferior. Why not?</font><a href="#fn40" class="footnote-ref" id="fnref40"><sup>40</sup></a></p>
+</div>
+</div>
+<div id="substitution-and-income-effects-from-a-fall-or-rise-in-price" class="section level2">
+<h2><span class="header-section-number">4.5</span> Substitution and income effects from a fall (or rise) in <em>price</em></h2>
+<p><font color='blue'>What happens to the quantity purchased of some good when the price of the good falls or rises?</font></p>
+<p><br />
+</p>
+<p><em>This changes both an intercept and a slope.</em><br />
+</p>
+<p>The new utility-maximizing choice is on <em>another</em> indifference curve and it is a point on that curve with a different MRS.</p>
+<p><br />
+</p>
+<dl>
+<dt>Substitution effect (‘Hicksian’)</dt>
+<dd>The effect on consumption due to a change in price ‘holding real income or utility constant.’
+</dd>
+</dl>
+<p><br />
+</p>
+<p><strong>More precisely</strong>, the effect on the lowest-cost consumption bundle yielding this utility.</p>
+<p>Note that this is the impact of price on the ‘compensated’ or ‘Hicksian’ demand.
+This comes from the equivalent ‘dual’ problem of minimising expenditure subject to a fixed utility.</p>
+<p><br />
+</p>
+<dl>
+<dt>Income effect (of a price change)</dt>
+<dd>The remaining effect on consumption; due to the change in purchasing power and achievable utility caused by a change in price.
+</dd>
+</dl>
+<p>Note that this is largely <em>conceptual</em>: we never <em>actually</em> observe either of these effects alone; we always observe the net effect of both. However, econometricians attempt to estimate each separately, through independent variation in income and prices.</p>
+<p><br />
+</p>
+<p>This standard definition of the ‘income effect’ of a price change combines both of the effects we saw when looking at the impact of an income change on consumption of X.</p>
+<p>More consumption of each good is possible, but the MRS may differ at this higher consumption and utility level.</p>
+<p><font color='gray'>Pollak’s 1969 conception of ‘conditional demand’ offers an alternative decomposition, which may be more intuitive.</font></p>
+<p><br />
+</p>
+<p><img src="picsfigs/incomeandsubstfx.png" width="65%" style="display: block; margin: auto;" /></p>
+<p>(Note: In the lecture we move to the PPT slides to illustrate this, beginning with ‘Change in A Good’s Price’.)</p>
+<p>I also present the answer to a problem set question on this on YouTube:
+<a href="https://youtu.be/D5mqyOnYaAU">Problem set 2: substitution and income effects of price change</a></p>
+<p>There are plenty of other YouTube videos covering this online, with better production value than my videos, e.g.,</p>
+<p><a href="https://www.youtube.com/watch?v=vQsDCo-xVZY">Indifference Curves - Income and Substitution Effects for Inferior Goods</a></p>
+<p>and</p>
+<p><a href="https://www.youtube.com/watch?v=vQsDCo-xVZY&amp;pbjreload=10">Indifference Curves - Income and Substitution Effects for Normal Goods</a></p>
+<p><br />
+</p>
+<p>Some things to remember and ‘remember why’:</p>
+<ul>
+<li><p>The SUBSTITUTION EFFECT <em>always</em> goes in the opposite direction as the price change</p></li>
+<li><p>The INCOME EFFECT goes in the opposite direction as the price change for a normal good</p></li>
+<li><p>… But the income effect goes in the <em>same</em> direction as the price change for an inferior good</p>
+<ul>
+<li><p>Thus the substitution and income effects go in the same direction for a normal good,</p></li>
+<li><p>… and they go in different directions for an inferior good.</p></li>
+<li><p>For an inferior good the net effect is unknown, but usually the substitution effect dominates (but see Giffen goods below)</p></li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+<p>See also (in NS and other texts)</p>
+<ul>
+<li><p>Numerical example of response to price change</p></li>
+<li><p>The relative importance of substitution effects for most goods</p></li>
+<li><p>Substitution and income effects for inferior goods</p></li>
+</ul>
+<p><br />
+</p>
+</div>
+<div id="different-substitution-effects-of-a-price-change" class="section level2">
+<h2><span class="header-section-number">4.6</span> Different substitution effects of a price change</h2>
+<p>The substitution effect of a price change will depend on the utility function, i.e., on the curvature of the indifference curves at the relevant point.</p>
+<ul>
+<li><p>Perfect complements: There is no substitution effect, only an income effect of a price change.</p></li>
+<li><p>Perfect substitutes: There may be a large substitution effect – a price change may cause a complete switch from one good (or set of goods) to another. On the other hand there may be no substitution effect for a ‘small’ change in price… see examples.</p></li>
+<li><p>In-between utility functions: depends on curvature of indifference curve at the relevant point.</p></li>
+</ul>
+<!---
+Todo: give more explanation here
+-->
+<p><img src="picsfigs/substfxperfect_trim.png" width="80%" style="display: block; margin: auto;" /></p>
+<p><em>Above</em>: We see</p>
+<ul>
+<li><p>(Left) when goods are <strong>perfect complements</strong>, there is no Substitution effect of a price change. For prices <span class="math inline">\(l\)</span> and <span class="math inline">\(l&#39;\)</span>, the minimum-cost consumption that attains <span class="math inline">\(U_1\)</span> is the same point (A,B)</p></li>
+<li><p>(Right) When goods are <strong>perfect substitutes</strong>, if the price changes, to attain <span class="math inline">\(U_1\)</span> at the lowest cost we must either</p>
+<ul>
+<li>See a complete shift to the other good, as above, if the ‘better-bang-for-the-buck’ product switches</li>
+<li>or see no change in the consumption, if the same product remains the better ‘bang for the buck’</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+
+<div class="note">
+<p>Note that, for the above cases, if we consider the <em>combined</em> substitution and income effects of a price decrease in one good we will also see</p>
+<ul>
+<li><p>Perfect complements: some increase in the number of combinations of each good consumed, and thus greater utility</p></li>
+<li><p>Perfect substitutes: some increase in the amount of the original good consumed (or, if there is a switch, a larger amount of the other good than was initially affordable), and thus greater utility.</p>
+</div></li>
+</ul>
+</div>
+<div id="the-legendary-giffen-good" class="section level2">
+<h2><span class="header-section-number">4.7</span> The (legendary?) Giffen good</h2>
+<p><img src="picsfigs/griffin.jpg" width="75%" style="display: block; margin: auto;" /></p>
+<ul>
+<li><p>If the price of a good increases, can quantity demanded actually <em>INCREASE</em>?!</p>
+<ul>
+<li>Yes, if the good is <em>very</em> inferior, not very substitutable, and is a large portion of income.
+We call this case a <em>Giffen good</em>.</li>
+<li>It has never been seen and documented in the wild</li>
+</ul>
+<p><br />
+</p></li>
+<li><p>See Powerpoint</p></li>
+<li><p>Practice question: try to draw indifference curves and budget constraints illustrating this effect for a Giffen good</p></li>
+</ul>
+</div>
+<div id="more-formal-statements-of-properties-of-marshallian-demand" class="section level2">
+<h2><span class="header-section-number">4.8</span> More formal statements of properties of Marshallian demand</h2>
+<p>Source<a href="#fn41" class="footnote-ref" id="fnref41"><sup>41</sup></a></p>
+<p>Note: <em>bold</em> means ‘vectors’.</p>
+<p><br />
+</p>
+<p>Budget set</p>
+<p><span class="math display">\[B=\{\mathbf{q} \in R^n_{+}|\mathbf{p&#39;q} \leq I \}\]</span></p>
+<p>Slopes <span class="math inline">\(dq_i/dq_j|_B = -p_j/p_i\)</span>.
+in
+Consumer chooses <span class="math inline">\(\mathbf{x}(\mathbf{p},I)\in B\)</span>; Marshallian demands.</p>
+<p><br />
+The graph of <span class="math inline">\(x_i(\mathbf{p},I)\)</span> in <span class="math inline">\(y\)</span> is the ‘Engel curve’.</p>
+<p><br />
+</p>
+<p><em>Total budget (income) elasticity:</em></p>
+<p><span class="math display">\[\eta_i \equiv \frac{\partial x_i}{\partial I} / \frac{x_i}{I}  = \frac{\partial ln(q_i)}{\partial ln(I)} \]</span></p>
+<p>‘By what percentage does consumption of i change as income changes by a small percent?’</p>
+<ul>
+<li><span class="math inline">\(\eta_i &gt; 0\)</span> <span class="math inline">\(\rightarrow\)</span> ‘normal good’, otherwise ‘inferior’</li>
+</ul>
+<p><br />
+</p>
+<p>Applying this to ‘budget shares’: <span class="math inline">\(s_i \equiv p_i x_i/I\)</span>… noting these must add up to one: <span class="math inline">\(\sum_{i=1..n}s_i=1\)</span></p>
+<ul>
+<li><span class="math inline">\(\eta_i &gt; 1\)</span> <span class="math inline">\(\rightarrow\)</span> ‘luxury’ (budget share rises in income), otherwise ‘neccessity’<br />
+</li>
+</ul>
+<p><font color='blue'>Can you write the own price elasticity in this notation?</font><a href="#fn42" class="footnote-ref" id="fnref42"><sup>42</sup></a></p>
+<p><br />
+</p>
+<div id="adding-up-aggregation-etc" class="section level3 unnumbered">
+<h3>Adding-up (‘aggregation’) etc</h3>
+<p>If an individual ‘always spends all her income’ then this equality must hold everywhere. This implies a set of relationships:</p>
+<ul>
+<li><p>between how things <em>change</em> in response to income and price…
+-as one spends more on one good she must spend less on another</p></li>
+<li><p>between <em>shares</em> of expenditure and how these change.</p></li>
+</ul>
+<p>Rewriting the budget constraint with the Marshallian demands vector <span class="math inline">\(\mathbf{x}\)</span>, and imposing budget-balance (which can be proved must hold for an optimising consumer given local nonsatiation):</p>
+<p><span class="math display">\[\mathbf{p&#39;x}(\mathbf{p},I) = I\]</span></p>
+<p><br />
+</p>
+<p>Differentiating this wrt <span class="math inline">\(I\)</span> yields <strong>Engel aggregation</strong>:</p>
+<p><span class="math display">\[\sum_i p_i \frac{\partial x_i}{\partial I} =\sum_i \frac{p_i x_i}{I} \frac{\frac{\partial x_i}{\partial I}}{\frac{x_i}{I}} =\sum_i s_i\eta_i = 1\]</span></p>
+<p><span class="math inline">\(\rightarrow\)</span> Sum (over all goods) of ‘budget share’ <span class="math inline">\(\times\)</span> ‘income elasticity’ must add up to one.</p>
+<p><br />
+</p>
+<p>Thus not all goods can be inferior (<span class="math inline">\(\epsilon_i &lt; 0\)</span>); these must be balanced by normal goods (including some luxuries, to get the average above one.)</p>
+<p><br />
+</p>
+<p>Also not all goods can be luxuries (<span class="math inline">\(\epsilon_i &gt; 1\)</span>) and not all goods can be necessities (<span class="math inline">\(\epsilon_i &lt; 1\)</span>). These must balance each other out, in an expenditure-weighted sense.<br />
+</p>
+<p>Differentiating the ’demand budget constraint wrt some price <span class="math inline">\(p_i\)</span> yields <em>Cournot aggregation</em>:</p>
+<p>(rem: product rule here, carried through sums )</p>
+<p><span class="math display">\[x_j + \sum_i p_i \frac{\partial x_i}{\partial p_j} = 0 \rightarrow\]</span>
+The marginal change in expenditure as <span class="math inline">\(j\)</span>’s price changes sums the amount of <span class="math inline">\(j\)</span> originally purchased and the sum of the prices of other goods times their responses to the price change in j.</p>
+<p>Next we multiply this by the price of j and divide by income <span class="math inline">\(I\)</span> to get (bunch of steps here:)</p>
+<p><span class="math display">\[ -s_j = \sum s_i \epsilon_{ij} \]</span></p>
+<p>The budget share on j plus the sum of the budget shares of other goods multiplied by the cross-price elasticities must add up to 0. … as the price of j increases the price-weighted consumption shares must decrease. So, e.g., all goods cannot be Giffen.</p>
+<p><br />
+</p>
+</div>
+</div>
+<div id="some-other-important-functions-to-know-about-doctoral-prep" class="section level2">
+<h2><span class="header-section-number">4.9</span> Some other important functions to know about (doctoral prep):</h2>
+<p><img src="picsfigs/axioms.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><br> <br> </p>
+<p>Indirect utility function: the (max) utility you can get as a function of your income and prevailing prices.</p>
+<p><span class="math display">\[V(p_x,p_y,I_0)=max_{x,y}U(x,y) \text{ s.t. }  p_xx+p_yy\leq I\]</span></p>
+<p>Here this is the <em>max</em> and not the <em>argmax</em> … it’s the actual <em>utility</em> level not the consumption level(s). (The consumption levels are the <em>Marshallian</em> demand.)</p>
+<p><em>We can find by solving for the utility-maximising choices, and then plugging these in to compute the utility from these.</em></p>
+<p><br> <br> </p>
+<p>Expenditure function: How much income you need to to get a certain utility given prevailing prices.</p>
+<p><span class="math display">\[E(p_x,p_y,U_0)=min(p_xx+p_yy) \text{ s.t. } U(x,y) \geq U_0\]</span></p>
+<p><em>Min</em> and not <em>argmin</em> … the expenditure amount</p>
+<p><br />
+</p>
+<p>Hicksian (compensated) Demand for X: The amount of X I consume in a ‘minimising expenditure’ bundle that yields some level of utility (<span class="math inline">\(U_0\)</span>)</p>
+<p><br />
+</p>
+<p>With two goods, x and y, the Hicksian demand for x is the first, ‘x’ element of the below (‘Hicksian demand vector x,y’)</p>
+<p><span class="math display">\[h_{x,y}(p_x,p_y,U_0)=arg\min_{x,y} (p_xx+p_yy) \text{ s.t. } U(x,y) \geq U_0\]</span></p>
+<p><em>Note:</em>
+These functions are actually used in ‘structural’ estimates of demand used in merger analysis, pricing, litigation consulting, etc.</p>
+<p><br />
+These are ‘inverses’ of one another.</p>
+<p>This is because ‘Maximise utility s.t. a budget constraint’ is sort of equivalent to ‘minimise expenditure s.t. attaining a particular level of utility’</p>
+<p><br> <br> </p>
+<div id="expenditure-and-indirect-utility-identities" class="section level3 unnumbered">
+<h3>Expenditure and Indirect utility identities</h3>
+<p>Look:</p>
+<p><span class="math display">\[V\Big(p_x,p_y,E(p_x,p_y,U_0)\Big)=U_0\]</span></p>
+<p>‘My utility when I have enough income (expenditure) to give me utility <span class="math inline">\(U_0\)</span> … is <span class="math inline">\(U_0\)</span>’</p>
+<p><br> <br> </p>
+<p><em>And</em></p>
+<p><span class="math display">\[E\Big(p_x,p_y,V(p_x,p_y,I_0)\Big)=I_0\]</span></p>
+<p>‘The amount I need to spend to get the utility I can achieve with income <span class="math inline">\(I_0\)</span> is <span class="math inline">\(I_0\)</span>’</p>
+</div>
+<div id="hicksian-compensated-and-marshallian-regular-identities" class="section level3 unnumbered">
+<h3>Hicksian (compensated) and Marshallian (regular) identities</h3>
+<p><span class="math display">\[h_x(p_x,p_y,U_0)=d_x(p_x,p_y,E(p_x,p_y,U_0))\]</span></p>
+<p>’The amount of X I consume that yields <span class="math inline">\(U_0\)</span> at the lowest cost…</p>
+<p>is the amount of X I would consume if I had the income that allowed me to get utility <span class="math inline">\(U_0\)</span>.’</p>
+<p><br> <br> </p>
+<p>Totally differentiating these equalities allows us to relate the compensated and uncompensated <em>responses</em> to price changes.</p>
+<p><br />
+</p>
+<p>The proof of Roy’s identity is rather involved and uses the envelope theorem. However, I always thought I saw some intuition for it, if we rearrange it.</p>
+
+<div class="technote">
+<p>What is the <a href="https://mjo.osborne.economics.utoronto.ca/index.php/tutorial/index/1/mee/t">Envelope theorem</a>?</p>
+</div>
+
+<p><br />
+</p>
+<p>How much does utility decrease when good X becomes more expensive by <span class="math inline">\(\epsilon\)</span>, i.e., what is <span class="math inline">\(\frac{\partial V}{\partial p_x}\)</span>?</p>
+<p>Well, from our initial consumption point we now lose <span class="math inline">\(d_X \times \epsilon\)</span> in spending power. The marginal deteriment of that to our utility is the same as if we had lost this in income, which hurts us at rate <span class="math inline">\(\frac{\partial V}{\partial I}\)</span>.</p>
+<p>But why is it OK to consider this ‘from the initial consumption point’ and not also consider the adjustment to this? I believe that comes from the Envelope theorem.</p>
+<p><br> <br> </p>
+<p>Intuition for Sheppard’s Lemma is easier. How much more do we need to spend to get the same utility if <span class="math inline">\(p_x\)</span> rises?</p>
+<p>We must spend, at the margin, at a rate equal to our previous consumption of <span class="math inline">\(x\)</span>, <span class="math inline">\(h_x\)</span>. Again, we don’t need to consider the adjustment to the consumption bundle in answering this <em>particular</em> question because of the envelope theorem.</p>
+</div>
+</div>
+<div id="intuition-from-the-slutsky-equation" class="section level2">
+<h2><span class="header-section-number">4.10</span> Intuition from the ‘Slutsky equation’</h2>
+<p><span class="math display">\[\frac{\partial d_x}{\partial p_x}= \frac{\partial h_x}{\partial p_x} - \frac{\partial d_x}{\partial I}x\]</span></p>
+<p><br> <br> </p>
+<p>At the margin, the change in demand for X in response to a change in its price sums:</p>
+<ul>
+<li>The compensated change in demand (the first term); the marginal substitution effect</li>
+<li>the income effect multiplied by the amount of X consumed
+<ul>
+<li>because a price increase in X reduces ‘remaining income’ proportionally to how much X is consumed</li>
+</ul></li>
+</ul>
+<p><br> <br> </p>
+<p>A similar result applies to a change in <em>another</em> good’s price, with similar intuition</p>
+</div>
+<div id="recap" class="section level2">
+<h2><span class="header-section-number">4.11</span> … Recap</h2>
+<p><span class="math display">\[Quantity \: of \: X \: demanded = d_x(P_x, P_y, I; preferences)\]</span></p>
+<p><br> <br> </p>
+<p>Previous chunk: What the constrained utility-maximization implied for demand…</p>
+<ul>
+<li><p>“Homogeneity of degree zero” of <span class="math inline">\(d_x(P_x, P_y, I)\)</span></p></li>
+<li><p>How <span class="math inline">\(d_x\)</span> responds to <span class="math inline">\(I\)</span> <font color='gray'>(Rem: Inferior and normal goods)</font></p></li>
+<li><p>How <span class="math inline">\(d_x\)</span> responds to <span class="math inline">\(P_x\)</span> <font color='gray'>(Rem: Normal or Giffen)</font></p>
+<ul>
+<li>Substitution and income effects</li>
+</ul></li>
+</ul>
+</div>
+<div id="goals-of-this-chunk-demand-part-2" class="section level2">
+<h2><span class="header-section-number">4.12</span> Goals of this chunk (demand part 2)</h2>
+<!---
+Todo: Motivate this more
+-->
+<p><em>Util-max s.t. constraints</em> <span class="math inline">\(\rightarrow\)</span></p>
+<p><strong>Understand real-world issues:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>A ‘Fixed-basket’ consumer price index (CPI) may overstate inflation</p></li>
+<li><p>The lump-sum principle, the distortion of taxation</p></li>
+</ol>
+<p><strong>Fundamental concepts, useful for business &amp; policy:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Goods may be ‘substitutes’ or ‘complements’ for one another</p></li>
+<li><p>How can we consider/compute the <em>Consumer surplus</em> from a transaction?</p></li>
+</ol>
+<p><strong>Derive</strong></p>
+<ul>
+<li><p>An <em>individual’s</em> demand curve from her utility function</p></li>
+<li><p>The <em>Market</em> demand curve (from individual demand curves)</p>
+<ul>
+<li><font color='gray'>What causes <em>shifts</em> in either?</font></li>
+</ul></li>
+</ul>
+<p><br> <br> </p>
+</div>
+<div id="app-3.2-the-cpi-and-its-biases" class="section level2">
+<h2><span class="header-section-number">4.13</span> App 3.2: The CPI and its biases</h2>
+<p>The government (and many others) want to know ‘how much less (or more) is a pound this year than a pound in the past?’
+One of the most prominent measures of this is the “consumer price index (CPI).”</p>
+<p>The is a <em>very</em> important number: It is used for monetary policy (‘inflation targeting’) and for targeting many salaries and benefits. For example, my union is always raising the complaint that salaries have not risen in line with inflation. (But don’t worry, student fees have.)</p>
+<p>Getting this number substantially and consistently wrong can lead to huge problems; people may be let into poverty or the government may be led into default. However, it is hard to get this measure right. Using the classical economics framework, we can consider what this means.</p>
+<p>The UK uses a similar CPI measure to the USA (a change from the ‘RPI’ in 2003, although RPI is still used for some things). The Bank of England targets a 2% increase in the CPI per year.^[Something to know: what has been the inflation rate in recent years? This is an example of ‘market and industry knowledge’ that employers value. True, you can look this stuff up, but having a general sense of these things rolling around in your brain will ground your thinking. As an analogy, suppose you were a mariner navigating the seven seas and you had to go online every time to remember which direction was North or South.}</p>
+<p><em>But does the CPI overstate the rate of inflation?</em></p>
+<p>It is based on a ‘typical market basket’ (UK: of 700 different goods and services, excluding housing, updated yearly).</p>
+<p><strong>1982 vs 2019 two-good example</strong></p>
+<p>We can consider this with a minimal example, using only our two favourite goods, x and y.</p>
+<p>Suppose in 1982 the “average household” consumed <span class="math inline">\(x_{82}\)</span> units of good x and <span class="math inline">\(y_{82}\)</span> units of good y.
+The prices were <span class="math inline">\(p^x_{82}\)</span> and <span class="math inline">\(p^y_{82}\)</span> for each of these, respectively.</p>
+<p>Now in 2019 the average household consume <span class="math inline">\(x_{19}\)</span> units of good x and <span class="math inline">\(y_{19}\)</span> units of good y.
+The prices are <span class="math inline">\(p^x_{19}\)</span> and <span class="math inline">\(p^y_{18}\)</span> for each of these, respectively.</p>
+<p><br />
+</p>
+<p>The expenditure (in pounds) in 1982 was thus <span class="math inline">\(b_{82}\)</span>:</p>
+<p><span class="math display">\[b_{82}=p^x_{82}x_{82}+p^y_{82}y_{82}\]</span></p>
+<p>How much would it cost to consume the “average 1982” basket today (2019), with today’s prices? … This is defined as <span class="math inline">\(b_{19}\)</span>:</p>
+<p><span class="math display">\[b_{19}=p^x_{19}x_{82}+p^y_{19}y_{82}\]</span></p>
+<p>The “regular” CPI will simply take the ratio of these two numbers:</p>
+<p><span class="math display">\[cpi_{19}=\frac{b_{19}}{b_{82}}\]</span></p>
+<p>An unadjusted (Fixed-basket) CPI ‘claims’ you need <span class="math inline">\(I&#39;\)</span> to be as well off in 2019. I.e., to buy <em>the exact same basket</em>, including vinyl records. But, as seen in the figure below, by substituting you could be as well off with the lower level of income <span class="math inline">\(I&#39;&#39;\)</span> (And income <span class="math inline">\(I&#39;\)</span> would actually make you <em>better</em> off).</p>
+<p><img src="picsfigs/cpi_bias.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><br> <br> </p>
+<p>In fact, in setting policy, the basket <em>is</em> adjusted yearly, based on a survey of consumers’ spending. But even this is not necessarily the <em>right</em> adjustment, as consumers may be attaining higher or lower utility from these changes. The right adjustment depends on the consumers’ utility functions, which are unobservable.</p>
+<p><br> <br> </p>
+<p><font color='gray'>Aside: See also new product/quality bias, and ‘outlet bias’.</font></p>
+<p><em>Some additional notes on this, particularly relevant for government policy</em>:</p>
+<p>The index based on the fixed basket <span class="math inline">\(\frac{p_1 x_0}{p_0 x_0}\)</span> is called the Laspeyres (LP) index (where the x-terms now refer to bundles of goods consumed in periods 0 and 1). An alternative, the ‘Paasche’ index (PI), considers the relative cost of the <em>current-weighted</em> basket of goods, i.e., <span class="math inline">\(\frac{p_1 x_1}{p_0 x_1}\)</span>.</p>
+<p>The LP completely ignores substitution and overestimates inflation, as we discussed. If we compensate people enough so that (their consumption implies that) they could have afforded their original basket, when we do the above calculation based on their expenditure, we find LP=1.</p>
+<p>The PI underestimates inflation. If we compensate people enough so that the bundle they are choosing now is one they could have afforded in the <em>base</em> period, and we do this calculation, we find that PI=1. Essentially, this underestimates inflation because assumes the substitutions people made certainly made in response to price changes them no worse off than they were before.</p>
+<p>There is a good graphical treatment of this at . They demonstrate that for normal goods, when there is inflation, <span class="math inline">\(LP&gt;CV&gt;CS&gt;EV&gt;PI\)</span>: the Laspeyeres adjustment overcompensates for inflation and the Paasche adjustment undercompensates for it. These both bound the ‘true’ necessary adjustments according to either the compensating variation, ‘maintain consumer surplus’, or equivalent variation criteria.</p>
+<p>You may find it interesting and useful to understand the difference between compensating variation and equivalent variation, and what these mean. Essentially, EV considers ‘if we had held prices constant, what reduction in income would reduce her utility as much as this price increase did’. CV asks ‘after this price increase, how much income do we have to give someone to make them as well off as they were initially?’ (This is the way we have mainly been thinking about it thus far.) it might seem like these amounts would be the same, but they are not the same in general (only for quasi-linear utility).</p>
+<p><br> <br> </p>
+<p>We can may also consider the ratio of actual expenses, the ‘money income index’ (MI), <span class="math inline">\(\frac{p_1 x_1}{p_0 x_0}\)</span>.</p>
+<p>For an individual, we could use revealed preferences considerations to understand when the consumers better or worse off. For example, suppose that the new expenditure exceeds the cost of the old basket at the new prices, i.e., <span class="math inline">\(p_1 x_1 \geq p_1 x_0\)</span>. This implies that the new basket is revealed preferred to the old basket (i.e., <span class="math inline">\(x_1\)</span> RP to <span class="math inline">\(x_0\)</span>), as the former was chosen when the latter was available. Dividing each side of the above inequality by the original money expenditure yields <span class="math inline">\(MI=\frac{p_1 x_1}{p_0 x_0}\geq \frac{p_1 x_0}{p_0 x_0}=LP\)</span>. Thus, is if the money income (MI) index is at least as large as the Laspeyeres index (LP), the consumer is better off than she was before. (However, if the new basket costs <em>more</em> than the old basket at the new prices,, revealed preference tells us nothing, and we do not know whether she is better or worse off.)</p>
+<p>By a similar consideration, if the MI is less than (or equal to) the <em>Paasche</em> Index (PI), this means the new basket at the old prices is no more expensive than the old basket at the old prices, so the latter is revealed preferred. This implies that the consumer is worse off than in the base period.</p>
+<p>However, as the actual price indices are calculated using average models for particular groups, the comparison becomes much more complicated, unless consumers have identical preferences and incomes or identical homothetic preferences. There are whole books written about this stuff.</p>
+<p>Considering this further, even if the CPI measure that is being used overstates true inflation. it might be justified to stick with the system people were promised, and are used to. On the other hand, getting cost-of-living-adjustments (COLA) too high will eventually bankrupt the system, as whatever is being inflated incorrectly will grow and grow geometrically to outstrip the size of the economy/tax base!</p>
+</div>
+<div id="the-lump-sum-principle" class="section level2">
+<h2><span class="header-section-number">4.14</span> The Lump-Sum Principle</h2>
+<p>Have you seen this?</p>
+<p><img src="picsfigs/ukwindows.jpg" width="75%" style="display: block; margin: auto;" /></p>
+<p> &lt;&gt;</p>
+<p>Consider the ‘least efficient tax’: Suppose the UK government imposes a tax on all windows above 4 per house.<br />
+</p>
+<p><em>Suppose all UK residents put bricks over their excess windows.</em> The government raises no revenue but people are certainly worse off.</p>
+<hr />
+<p>What’s going on here?</p>
+<p><img src="picsfigs/tudoroverhang.jpg" width="75%" style="display: block; margin: auto;" /></p>
+<p><a href="#fn43" class="footnote-ref" id="fnref43"><sup>43</sup></a></p>
+<p>The social cost (deadweight loss, i.e., ‘DWL’) of taxation is greater the more taxes change ‘compensated’ behaviour (via the substitution effect)<a href="#fn44" class="footnote-ref" id="fnref44"><sup>44</sup></a></p>
+<p>The most efficient tax:</p>
+<ul>
+<li><p>raises the most revenue for a given utility loss</p></li>
+<li><p>reduces utility the least for a given revenue</p></li>
+<li><p>… is a ‘lump-sum tax’: same tax no matter what you do (including work/leisure!)</p></li>
+</ul>
+<p>This is a rationale for the poll tax, the proposed tax that brought down Margaret Thatcher’s government</p>
+<p><br />
+</p>
+<p>A common measure of the burden: ‘amount a person would be willing to pay to avoid tax’, for a given revenue raised</p>
+<hr />
+<p><img src="picsfigs/lumpsum1.png" width="75%" style="display: block; margin: auto;" /></p>
+<!---
+
+Todo: explain this here
+
+-->
+<p>*A step-by-step illustration of this is given in the <a href="https://www.dropbox.com/s/qhsl6qey0wjcfe5/utility_demand_supplement.pptx?dl=0">PowerPoint file</a> under ‘Lump sum principle’.</p>
+<p>Key to understanding the above example illustration: how do we see that the blue and red dot both <em>raise the same revenue</em>?</p>
+<p>You could also compute these tax revenues algebraically and see they are the same (see footnote in NS textbook), but it is better to gain intuitive insight.</p>
+<p>The revenue can be seen as the distance on the vertical axis, representing the value in terms of Y at the pre-tax price ratio.</p>
+<p>This holds whether we measure it in terms of either commodity – you just have to pick one.</p>
+<p>The tax revenue is the difference between the individual’s income and the amount he consumes; both measured in terms of one commodity only,
+according to the <em>actual opportunity cost</em> of that commodity, not measured with the ‘after tax price’.</p>
+<p>Note…<a href="#fn45" class="footnote-ref" id="fnref45"><sup>45</sup></a></p>
+<hr />
+<p>Aside: <a href="https://ryansafner.shinyapps.io/tax-incidence/">a cool app to visualise tax-incidence</a> (in a very simple supply-demand framework)</p>
+<p><a href="https://ryansafner.com/post/visualizing-tax-incidence-with-shiny/">Discussed here</a></p>
+<hr />
+<p><strong>Read on your own, know:</strong></p>
+<p>The potential inefficiency of in-kind programmes and subsidies (App 3.3)<a href="#fn46" class="footnote-ref" id="fnref46"><sup>46</sup></a></p>
+<p><font color='blue'>Potential ‘expansive’ exam question: Consider the <em>benefits</em> of in-kind programmes rather than cash transfers.</font></p>
+<p><br />
+</p>
+<p>I’ve put up some supplementary powerpoint slides on taxation and subsidies</p>
+<p>Supplementary slides on taxation and subsidies - powerpoint on VLE - download it and view it in presenter mode!</p>
+<ul>
+<li><a href="https://www.dropbox.com/s/13oapcmn1r9gc2x/subsidy%20illustration.pptx?dl=">inefficiency of a price subsidy</a></li>
+</ul>
+<p>… This one should be largely self-explanatory</p>
+<ul>
+<li><a href="https://www.dropbox.com/s/bac0ieupb5sjdlh/beem101_taxation_subsidy_supplement.ppt?dl=0">taxation, excess burden</a></li>
+</ul>
+<p>… See esp ‘excess burden of milk tax’. Note some concepts from production and general equilibrium are referred to; you may want to come back to these slides later</p>
+<p><br />
+</p>
+</div>
+<div id="an-important-diversion-does-christmas-gift-giving-reduce-welfare" class="section level2">
+<h2><span class="header-section-number">4.15</span> An important diversion: Does Christmas gift-giving reduce welfare?</h2>
+<ul>
+<li>Waldfolgel (1993), “The deadweight loss of Christmas.”</li>
+</ul>
+<p>Waldfogel’s basic argument:</p>
+<ul>
+<li><p>Gift-givers will not know the recipients exact preferences, and will typically buy gifts the recipient would not themselves have purchased. This implies recipients have other items they would gain more for utility from at the same cost.</p></li>
+<li><p>Giving a cash gift would thus allow them to better optimize, thus put them on a higher indifference curve (higher utility).</p></li>
+<li><p>He depicts an indifference curve between a ‘gift good’ and ‘other goods’ and compares this to a rotation in the budget constraint to a shift outwards.</p></li>
+<li><p>see powerpoint; <a href="https://www.dropbox.com/s/13oapcmn1r9gc2x/subsidy%20illustration.pptx?dl=">inefficiency of a price subsidy</a></p></li>
+</ul>
+<p><br />
+</p>
+<p>Waldfogel collected evidence from surveying university students, asking them to estimate/state</p>
+<ul>
+<li>the prices paid for the gifts they received</li>
+<li>How much they would have been willing to pay for these</li>
+<li>(alternately) how much they would need to be paid to part with these</li>
+<li>who gave the gifts</li>
+</ul>
+<p>He claimed that his evidence demonstrates that students stated a significantly lower value (WTP and WTA) then the gifts were worth (87% on average), and this gap was larger the less ‘close’ the giver was to the recipient’.</p>
+<p>He argues this demonstrates a deadweight loss (DWL).</p>
+<p><font color='blue'>Are there flaws in his argument and his evidence?</font></p>
+<ul>
+<li>Could gift-giving instead <em>increase</em> welfare?</li>
+</ul>
+<p><br />
+</p>
+<p>Others have questioned Walfogel’s empirical findings, (Solnick – Hemenway 1996; List – Shogren 1998.) instead finding a gain in value over the cost of the gifts. (Reinstein, ‘The Economics of the Gift’, 2014)</p>
+<p><strong>Empirical critiques</strong></p>
+<p><br> <br> </p>
+<ul>
+<li><p>Solnick and Hemenway highlight the non-representativeness of W’s survey, and potential experimenter demand and framing issues – these were Yale microeconomics students. They re-run a similar survey on a (claimed) more representative sample and find a very large gain in value relative to cost (value of 214% of cost).</p></li>
+<li><p>The List and Shogren (1998) paper’s main critique is that the Waldfogel’s WTP/WTA estimates are based on a hypothetical non-incentivised survey. They ran there own surveys about material and sentimental value, and then a hypothetical and a real incentive compatible (random n’th price) auction. Putting this together they estimate a 121-135%  in value relative to the cost of the gifts.</p></li>
+</ul>
+<p>(There are other empirical papers that could also be cited)</p>
+<p><strong>Alternate models</strong></p>
+<p>The standard explanation for this is that gifts gain a sentimental or symbolic value. Other gains may accrue to the giver, such as the shared consumption benefits [the giver also enjoys the use of the gift, or the act of giving] and signaling benefits, or the ability to signal one’s understanding of the receiver’s tastes and needs.</p>
+<ul>
+<li>Gift-giving allows the giver to accumulate goods that cannot be purchased commercially;</li>
+<li>When the giver retains some use, experience, or control over the gift, she shares in the consumption of it; (and this may help solve a public goods problem)</li>
+<li>Considering behavioural issues such as regret aversion, gift-giving may offer overlooked efficiencies that may balance out the deadweight losses from ‘inadequate gifts’;</li>
+</ul>
+<p>(From Reinstein, ‘The Economics of the Gift’, 2014)</p>
+<hr />
+<ul>
+<li>Also, repeated bilateral gift-giving may be a way to demonstrate and sustain trust 
+<ul>
+<li>Buying ‘rounds’ in the pub</li>
+</ul></li>
+<li>It can also be a way to demonstrate one’s understand of the others’ preferences, which itself may be of value</li>
+<li>a repeated ‘gift economy’ can substitute for market exchange in environments where trust is critical
+<ul>
+<li>Some historians have argued that a ‘gift economy’ evolved into the market economy</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+</div>
+<div id="changes-in-the-price-of-another-good-complements-or-substitutes" class="section level2">
+<h2><span class="header-section-number">4.16</span> Changes in the Price of Another Good; ‘complements’ or ‘substitutes’</h2>
+
+<div class="note">
+In the previous 2-good diagrams the impact of the change in <span class="math inline">\(P_X\)</span> on <span class="math inline">\(Y\)</span> was mechanical.
+With a new budget constraint and a new <span class="math inline">\(X\)</span> <span class="math inline">\(\rightarrow\)</span>, the individual needed to spend the remainder on <span class="math inline">\(Y\)</span>. If expenditure on one good went up, expenditure on the other good must have gone down, and vice/versa. With 3 or more goods, this need not hold.
+</div>
+
+<p><br />
+</p>
+<dl>
+<dt>Complements</dt>
+<dd>If a rise in <span class="math inline">\(P_X\)</span> leads the quantity demanded of Y, <span class="math inline">\(d_Y\)</span>, to decrease (and vice-versa), then goods Y and X are (gross) <em>complements</em> to one another.
+</dd>
+</dl>
+<p><em>How to remember:</em> ‘complements’ go together, so the quantity-demanded response to a price change is the same for both goods
+– the opposite direction as the price change (unless Giffen).</p>
+<p><br> <br> </p>
+<dl>
+<dt>Substitutes</dt>
+<dd>If a rise in <span class="math inline">\(P_X\)</span> leads <span class="math inline">\(d_Y\)</span> to increase (and vice versa), then goods Y and X are (gross) <em>substitutes</em> to one another.
+</dd>
+</dl>
+
+<div class="tip">
+<p>A tip on how to remember ‘complements’ vs ‘substitutes’:</p>
+<p>‘Substitutes’ are competing to meet the same desires, so when you buy more of one, you tend to buy less of the other.<br />
+Thus the quantity demanded response to a price change go in opposite directions for the two goods<br />
+Thus, as quantity-demanded for good A typically goes in the <em>opposite</em> direction as the price of A<br />
+… quantity demanded for a substitute good B will go in the <em>same</em> direction as the price of A.</p>
+<p>These ‘cross-price effects’ include both <em>substitution</em> and <em>income</em> effects. (See NS micro quiz 3.3).;w</p>
+</div>
+
+<p><br />
+</p>
+<p><em>More advanced…</em></p>
+<p>Cross-price <em>(net) substitution effects</em>: impact of a <em>compensated</em> change in <span class="math inline">\(P_A\)</span> on consumption of good B.</p>
+<p>At the margin:</p>
+<p><span class="math display">\[ \frac{\partial h_\ell}{\partial p_k} =  \frac{\partial d_\ell}{\partial p_k}+\frac{\partial d_\ell}{\partial I}\ell\]</span></p>
+<p><br> </p>
+<p>The matrix <span class="math inline">\(S(P,I)\)</span> (function of all prices, income) whose ‘<span class="math inline">\(\ell,k\)</span>’ entry is the thing above is called the <em>Slutsky substitution matrix</em>.</p>
+<p><br />
+</p>
+<p>The choice axioms imply this matrix must have certain properties, such as ‘Negative semi-definiteness’.</p>
+<p>If you are estimating a demand system, if the axioms hold, then imposing this restriction will make your more estimate more efficient!</p>
+<p>(Just one way this stuff can be <em>applied</em>. However, I have my doubts that the axioms will hold, taking behavioral economics/psychology into consideration.)</p>
+<p><br />
+</p>
+</div>
+<div id="individual-demand-curves" class="section level2">
+<h2><span class="header-section-number">4.17</span> Individual demand curves</h2>
+<ul>
+<li>Quantity of X demanded</li>
+</ul>
+<p><br> </p>
+<p><span class="math display">\[d_X(P_X,P_Y,I; \: preferences)\]</span></p>
+<p><br> </p>
+<ul>
+<li>‘Individual demand curve’: depicts how the amount of a good an <em>individual</em> buys responds to that good’s price</li>
+</ul>
+<p>How do we derive this (graphically)?</p>
+<p>We can ‘map it out’ by increasing <span class="math inline">\(P_X\)</span> <span class="math inline">\(\rightarrow\)</span> budget constraint shifts in <span class="math inline">\(\rightarrow\)</span>.
+In each case we find new point of tangency with indifference curve. We plot this in the example below (better illustrated in the PowerPoint, perhaps.)</p>
+<p><br />
+</p>
+<p><img src="picsfigs/dmd1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><img src="picsfigs/dmd2.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><img src="picsfigs/dmd3.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><img src="picsfigs/dmd4.png" width="70%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="shifts-in-an-individuals-demand-curve" class="section level2">
+<h2><span class="header-section-number">4.18</span> Shifts in an individual’s demand curve</h2>
+<p><font color='blue'>Q: What might cause the (individual’s) demand curve for a product to shift (inward or outward)?</font></p>
+<p><em>Not:</em></p>
+<ul>
+<li><em>Not</em> ‘a change in the price of that good’.</li>
+<li><em>Not</em> a shift in the supply curve.</li>
+</ul>
+<p><em>Yes:</em></p>
+<ul>
+<li>Change in price of complements or substitutes for that good</li>
+<li>Change in income</li>
+<li>Perhaps: Change in consumer’s information, preferences,<a href="#fn47" class="footnote-ref" id="fnref47"><sup>47</sup></a> or other factors (weather, etc).</li>
+</ul>
+<p><font color='gray'> I’m sure you can see how I could write a multiple-choice question about this.</font></p>
+
+<div class="warning">
+<p><code>r format_with_col("Be sure you understand shifts vs movements along, and 'demand' vs 'quantity demanded'.","red")</code></p>
+<p>Know the difference between shifts in a shift in a demand (or supply) curve and movements along a demand curve, and the terminology.<br />
+</p>
+<ul>
+<li>Hint: I suggest you avoid referring to ‘supply and demand’; refer to either ‘supply and demand <em>curves</em>’ or ‘quantity demanded or supplied’.</li>
+</ul>
+</div>
+
+</div>
+<div id="consumer-surplus" class="section level2">
+<h2><span class="header-section-number">4.19</span> Consumer surplus</h2>
+<dl>
+<dt>Consumer surplus</dt>
+<dd>The extra value individuals receive from consuming a good over what they pay for it.
+</dd>
+</dl>
+<p><br> </p>
+<ul>
+<li><p>What people would be willing to pay for the <em>right</em> to consume a good <em>at its current price</em> rather than not being able to buy it at all.<a href="#fn48" class="footnote-ref" id="fnref48"><sup>48</sup></a></p></li>
+<li><p>The area between the demand curve and the market price</p></li>
+<li><p>A measure of consumer welfare, useful for policy analysis</p></li>
+</ul>
+<p><img src="picsfigs/cons_surplus.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p>Also… This can be applied to the individual or market demand curve to obtain individual or total consumer surplus (although there are some technical issues with the latter).</p>
+<p><br />
+</p>
+
+<div class="technote">
+<p>The issue is that to get consumer surplus we want to sum the value <em>each</em> consumer gets from each unit. Suppose, as we derive/assume under perfect competition, firms are pricing at the marginal cost of the final unit produced. Assume that cost varies over time, so we observe shifts in the supply curve, tracing out points on the demand curve. This allows us to estimate a market demand curve. But this demand curve (inverted) only tells us the <em>last</em> consumer’s value of (willingness-to pay for) the final unit produced. We don’t know how other consumers valued each of these units.“,”gray")`</p>
+</div>
+
+<p>Also, ‘introducing a new good…’<a href="#fn49" class="footnote-ref" id="fnref49"><sup>49</sup></a></p>
+<p><font color='gray'>Note: We may skip section ‘consumer surplus and utility’ in lecture, but please read over it for understanding</font></p>
+<p><br />
+</p>
+<p>With a linear demand curve this is a triangle, which has an area that is easy to compute. More generally, this is a `definite integral’.</p>
+<p><br> </p>
+<p><span class="math display">\[\int_{0}^{q^\ast}p(q)-p^\ast dq \]</span></p>
+<p>(where <span class="math inline">\(p(q)\)</span> is the inverse demand.</p>
+<p><br> </p>
+<p>For welfare calculations, we often want to know ‘how does this integral change as we adjust some parameter’?</p>
+<p><span class="math inline">\(\rightarrow\)</span> See the <a href="https://brilliant.org/wiki/differentiate-through-the-integral/">(more general version of) the Leibniz rule for differentiating integrals.</a>, related to the ‘Fundamental theorem of calculus’.</p>
+<p><br> </p>
+</div>
+<div id="mktdemand" class="section level2">
+<h2><span class="header-section-number">4.20</span> Market demand (function)</h2>
+<dl>
+<dt>Market demand (or better, ‘market quantity demanded’)</dt>
+<dd>The total quantity of a good or service demanded by all potential buyers
+</dd>
+</dl>
+<ul>
+<li>This just sums the individual quantities demanded (at a given price)</li>
+</ul>
+<p><br> </p>
+<dl>
+<dt>Market demand curve</dt>
+<dd>Relationship between total quantity demanded of a good and its price, ceteris paribus
+</dd>
+</dl>
+<ul>
+<li>Sum the individual demand curves (‘horizontally’ … quantities demanded at each price)</li>
+</ul>
+<p><img src="picsfigs/summarketdemandcurve.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><font color='gray'>Make sure you can do numerical examples of this</font></p>
+<!--
+LC: Illustrate 'sums horizontally' on visualiser if possible*
+-->
+<p>Some of our previous results about individual demand also hold for market demand, while others do not, or only if we make restrictive assumptions</p>
+</div>
+<div id="shifts-in-the-market-demand-curve" class="section level2">
+<h2><span class="header-section-number">4.21</span> Shifts in the Market Demand Curve</h2>
+<p>Shifts in the market demand curve are caused by similar things that cause individual demand curve shifts</p>
+<ul>
+<li>Increases in overall income (for normal goods)</li>
+<li>Reduced prices of complements, increased price of substitute</li>
+<li>Change in tastes</li>
+</ul>
+
+<div class="technote">
+However, the aggregate income does not have a single effect; it cannot be easily reduced to a single variable here. You can only express the demand curve as a function of aggregate income under restrictive assumptions. In general, it depends <em>who</em> gets this income. (See ‘aggregation issues’).
+</div>
+
+<p>(In addition, the market demand curve could shift out if more consumers enter the market, e.g., because of demographic change.)</p>
+<p><br />
+</p>
+<p><strong>A random example:</strong></p>
+<ul>
+<li><p>2008: ‘Gas prices forcing demand for SUVs to plummet’ <a href="http://www.thehour.com/wilton/article/Gas-prices-forcing-demand-for-SUVs-to-plummet-8257785.php">LINK</a></p></li>
+<li><p>2015: ‘Economy, gas prices drive demand for SUVs, high-end cars’ <a href="http://www.sj-r.com/article/20150809/NEWS/150809569">LINK</a></p></li>
+</ul>
+</div>
+<div id="elasticities" class="section level2">
+<h2><span class="header-section-number">4.22</span> Elasticities</h2>
+<p><font color='gray'> This is a fundamental mathematics concept that comes from Physics; it’s not just for Economics.</font></p>
+<p>How do we measure and compare the extent to which one thing responds to another? E.g., which is ‘larger’?:</p>
+<ul>
+<li>the change in quantity demanded of oranges when the price of oranges rises or</li>
+<li>the change in quantity demanded of apple juice when the price of apple juice rises?</li>
+</ul>
+<p><font color='gray'>(Or the response to changes in the price of a related good, or to income.)</font></p>
+<p>Difficulty: These things are measured in different <em>units</em> and the prices have different starting values.</p>
+<p><br> </p>
+<p><strong>Elasticity:</strong> the measure of the % change in one variable brought about by a 1% change in another variable.</p>
+<ul>
+<li>a <em>unitless</em> measure; will be the same no matter how these variables are measured.</li>
+</ul>
+<p><font color='gray'>Think of <em>responsiveness</em> when talking about elasticity. Actually it’s a measure from physics having to do with rubber bands, they tell me.</font></p>
+
+<div class="note">
+<p>Strictly speaking we are talking about the limit of these responses, i.e., derivatives.<br />
+</p>
+<p>The elasticity is basically the derivative of <span class="math inline">\(ln(y)\)</span> with respect to <span class="math inline">\(ln(x)\)</span>; useful to know if you want to run a regression computing an elasticity, or if you want to interpret such a regression.</p>
+<p>Actually, this, and its subtleties and interpretations is one of the <em>most</em> important things to comprehend for empirical work!!</p>
+</div>
+
+<p><br> </p>
+<ul>
+<li>If a 5% fall in the price of oranges typically results in a 10% increase in quantity bought,</li>
+<li>we say that each percent fall in the price of oranges leads to an increase in sales of about 2 percent.</li>
+<li>I.e., the ‘‘elasticity’’ of orange sales with respect to price is about 2,</li>
+</ul>
+<p><em>Note that elasticities may not be constant</em>; they may depend on the starting point; e.g., linear demand implies a different price elasticity at each point.</p>
+<p><br />
+</p>
+<div id="elasticities-more-precisely" class="section level3 unnumbered">
+<h3>Elasticities more precisely</h3>
+<ul>
+<li><p>calculate in terms of derivatives</p></li>
+<li><p>estimated using log transformations</p></li>
+</ul>
+<p><br />
+</p>
+</div>
+</div>
+<div id="price-elasticity-of-demand" class="section level2">
+<h2><span class="header-section-number">4.23</span> Price elasticity of demand</h2>
+<p><strong>Price elasticity of demand:</strong></p>
+<p><span class="math display">\[e_{Q_d,p} = \frac{percent \ change \ in \ Q_d}{percent \ change \ in \ p} \]</span>
+<span class="math display">\[  = \frac{\Delta Q_d}{Q_d}/\frac{\Delta p}{p}\]</span></p>
+<p>This should always be negative (except for Giffen goods).</p>
+<p>It is a <em>unitless measure</em> related to the slope of the demand curve.</p>
+<p>It is <em>very</em> important for price-setting firms (more on this later).</p>
+<p><br />
+</p>
+<p><strong>From the NS text (footnote):</strong></p>
+<p>If demand happens to take the ‘constant elasticity’ form
+<span class="math inline">\(Q = ap^b\)</span> where <span class="math inline">\(b&lt;0\)</span>, the price elasticity of demand is b.</p>
+<ul>
+<li><p>This elasticity is the same everywhere along such a demand curve.</p></li>
+<li><p>Taking logarithms of this yields <span class="math inline">\(ln(q) = ln(a) + b ln(p)\)</span></p></li>
+<li><p>note that elasticities are often estimated by regressing logs on logs</p></li>
+</ul>
+<p><img src="picsfigs/elasticities_are_logs_post.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+
+<div class="digression">
+<blockquote>
+<p>Indeed, one important implication of Jensen’s inequality is that the standard practice of interpreting the parameters of log-linearized models estimated by ordinary least squares (OLS) as elasticities can be highly misleading in the presence of heteroskedasticity.</p>
+</blockquote>
+<ul>
+<li>Santos-Silva and Tenreyro, 2006, ‘the Log of Gravity’.
+</div></li>
+</ul>
+</div>
+<div id="examples-from-the-headlines" class="section level2 unnumbered">
+<h2>Examples from the headlines</h2>
+<p><a href="https://www.ft.com/content/2665c794-76a0-11e6-b60a-de4532d5ea35">India’s Hike Messenger takes aim at WhatsApp</a></p>
+<blockquote>
+<p>“Reliance ended up showing that there is elasticity in the market. If you drop prices, people will come on board,” he said.</p>
+</blockquote>
+<p><br />
+</p>
+<p><a href="https://www.ft.com/content/932927d8-266c-3559-b87a-8d3efb07d5e1">‘Next’ to add more space despite retail sales ‘moving backwards’</a></p>
+<blockquote>
+<p>The retailer does not expect any impact from the drop in sterling since the Brexit vote to kick in until at least the Spring of 2017, as it had hedged some of its foreign-currency exposures in advance. Still, it expects expenses to rise by up to 5 per cent next year.</p>
+</blockquote>
+<blockquote>
+<p>‘The last time we had to increase prices (which was in 2010 when cotton prices soared) we estimated that price elasticity was around 1.1. If that remains the case today, a retail selling price increase of 5% would result in a fall in unit sales of -5.5% and a fall in like for like sales value of between -0.5% to -1.0%. In the scheme of things, we think that this drag on sales is manageable and less damaging than taking a significant hit to margin.’</p>
+</blockquote>
+<p><br />
+</p>
+</div>
+<div id="properties-of-price-elasticity-of-demand" class="section level2">
+<h2><span class="header-section-number">4.24</span> Properties of price elasticity of demand</h2>
+<ul>
+<li>Goods with many close substitutes at a similar price will be highly elastic</li>
+<li>with few substitutes … inelastic</li>
+<li>Typically: more elastic in the <em>long run</em> than the short run. <font color='blue'>Q : why?</font><a href="#fn50" class="footnote-ref" id="fnref50"><sup>50</sup></a></li>
+</ul>
+<p><br> <br> </p>
+<!---
+Todo: give more explanation here
+-->
+<p>We refer to price elasticities with the following terminology:</p>
+<table>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(e_{Q,p}\)</span></th>
+<th><span class="math inline">\(abs(e_{Q,p})\)</span></th>
+<th>Term</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(&lt; -1\)</span></td>
+<td><span class="math inline">\(&gt;1\)</span></td>
+<td>Elastic</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(= -1\)</span></td>
+<td><span class="math inline">\(=1\)</span></td>
+<td>Unit Elastic</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(&gt; -1\)</span></td>
+<td><span class="math inline">\(&lt;1\)</span></td>
+<td>Inelastic</td>
+</tr>
+</tbody>
+</table>
+<p><font color='gray'>Note that sometimes elasticities are expressed in absolute value terms (a positive number). It should be clear from the context.</font></p>
+<p><br />
+</p>
+<p>Consider an individual’s expenditure on a product.</p>
+<p>The total expenditure (the firm’s revenue from this): price <span class="math inline">\(\times\)</span> quantity</p>
+<p>By taking the <em>total differential</em> of this and recalling the ‘multiplication rule’ of derivatives…</p>
+<p><span class="math display">\[E = p(q)q  = pq(p)\]</span>
+<span class="math display">\[dE = pq&#39;(p)dp+q(p)dp\]</span>
+<span class="math display">\[dE/E = \frac{pq&#39;(p)dp}{pq} +\frac{q(p)dp}{pq}\]</span>
+<span class="math display">\[dE/E = \frac{q&#39;(p)dp}{q} +\frac{dp}{p}\]</span></p>
+<p><br />
+</p>
+<p>We have that for <em>small changes</em> in price, the percent <em>change</em> in total expenditure is:</p>
+<p><strong>percent change in price + percent change in quantity</strong></p>
+<p><br />
+</p>
+<p>As <span class="math inline">\(e_{Q,P}\)</span> tells you the percent change in quantity for each (small) percentage change in price, we can use this to determine the change in expenditure for a small change in price.</p>
+<p><br />
+</p>
+<p><em>Considering very small increases in a good’s price:</em></p>
+<ul>
+<li><p>If the (individual’s) demand is <em>price-elastic</em>, quantity will decrease by a <em>larger</em> percentage than price increased. Thus her expenditure (on this good) will <em>decline</em>.</p></li>
+<li><p>If the (individual’s) demand is <em>price-inelastic</em>, quantity will decrease by a <em>smaller</em> percentage than price increased. Thus her expenditure (on this good) will <em>increase </em>.</p></li>
+<li><p>If the (individual’s) demand is <em>unit-elastic</em> (with respect to price), quantity will decrease by a <em>the same</em> percentage as price increased. Thus her expenditure (on this good) will <em>be unchanged</em>.</p></li>
+</ul>
+<p><br> <br> </p>
+<div id="example-and-algebra" class="section level4 unnumbered">
+<h4>Example and algebra…</h4>
+<p>If price rises by 20% and quantity demanded falls by 20% what happens to revenue?</p>
+<p><br />
+</p>
+<p>Suppose p=10 and q=10 so TR=100. Then when p=12 and q=8 TR=96. Huh? Price increased by 20% and quantity decreased by 20% so shouldn’t TR be unchanged? No! This only works for small changes.</p>
+<p><br />
+</p>
+<p>TR is unchanged when p*q stays the same. With a change in each <span class="math inline">\(\delta p\)</span> and <span class="math inline">\(\delta q\)</span>, the new revenue is</p>
+<p><span class="math inline">\((p+\delta p)(q+\delta q) = pq+\delta p q + \delta q p + \delta p \delta q\)</span>.</p>
+<p><br />
+</p>
+<p>This is the same as before if <span class="math inline">\(pq=pq+\delta p q + \delta q p + \delta p \delta q\)</span>, i.e., if</p>
+<p><span class="math inline">\(\delta p q + \delta q p + \delta p \delta q=0\)</span>, i.e., if</p>
+<p><span class="math inline">\(\delta p q + \delta p \delta q =-\delta q p\)</span>, i.e., if</p>
+<p><span class="math inline">\(\delta p q/p + \delta p \delta q/p =-\delta q\)</span>, i.e., if</p>
+<p><span class="math inline">\(\delta p/ \delta q (q/p) + \delta p /p =-1\)</span>, i.e., if</p>
+<p><span class="math inline">\(-e_p + \delta p /p = -1\)</span></p>
+<p>In the limit, as <span class="math inline">\(\delta p\)</span> goes to zero, this gives us that ‘unit elasticity means a small change in quantity leads to no change in revenue.’</p>
+<p><br />
+</p>
+<p><strong>Important question/result</strong></p>
+<p><font color='blue'>Q: Suppose a firm is setting its price and selling to only one individual , and facing no competitors. It should basically never want to set its price at a point where demand is inelastic. Why not?</font><a href="#fn51" class="footnote-ref" id="fnref51"><sup>51</sup></a></p>
+<p><br />
+</p>
+<p><img src="picsfigs/elast_revenue.png" alt="Elastrev" /><br />
+</p>
+</div>
+</div>
+<div id="income-elast" class="section level2">
+<h2><span class="header-section-number">4.25</span> Income elasticity of demand; Normal, luxury, and inferior goods</h2>
+<dl>
+<dt>Income elasticity of demand</dt>
+<dd>% change in quantity demanded of a good in response to 1% change in income (approximately).
+</dd>
+</dl>
+<p><span class="math display">\[e_{Q_d,I} = \frac{percent \ change \ in \ Q_d}{percent \ change \ in \ I} \]</span>
+<span class="math display">\[  = \frac{\Delta Q_d}{Q_d}/\frac{\Delta I}{I}\]</span><br />
+</p>
+<p><br> </p>
+<p><strong>Normal goods:</strong> <span class="math inline">\(e_{Q,I} &gt; 0\)</span></p>
+<p><br />
+</p>
+<p><strong>Inferior goods:</strong> <span class="math inline">\(e_{Q,I} &lt; 0\)</span></p>
+<p><br />
+</p>
+<p><strong>Luxury goods:</strong> <span class="math inline">\(e_{Q,I} &gt; 1\)</span></p>
+<p><br />
+</p>
+<p>E.g., cocaine is a luxury good, if, when I win £1000 in the lottery, I will increase my consumption of cocaine by <em>more</em> than £1000 …
+(assuming, as in classical models, that I treat all sources of income the same</p>
+<p><font color='blue'>Q: Is a luxury good a normal good?</font><a href="#fn52" class="footnote-ref" id="fnref52"><sup>52</sup></a></p>
+<p><br> <br> </p>
+<p></p>
+<div id="some-real-world-discussion-of-this" class="section level3 unnumbered">
+<h3>Some real-world discussion of this</h3>
+<!---
+Todo: give more explanation here
+-->
+<p><a href="https://www.ft.com/content/4ea79d96-a4d6-11e5-a91e-162b86790c58">Prof. Muellbauer letter to FT</a></p>
+<blockquote>
+<p>Sir, Professor Gordon Gemmill (Letters, December 14), surprisingly for a trained economist, assumes an income elasticity of demand of zero for housing: that is, that people do not demand more and better housing as they become richer. Nowhere in the world is this the case! My own empirical work demonstrates that around two-thirds of the rise in UK house prices, corrected for general inflation, since 1980 is because supply is not keeping up with income and population growth. Other drivers do exist … The price effects of extra supply take time to build up. I agree on that. But just imagine what would happen if we did nothing more than we are now doing: population and income growth would drive prices even higher even though we already hold the record for rises in house prices since 1970 among the group of seven leading high-income countries. We need to build far more housing, in the right locations. And we need to start now.
+- Prof John Muellbauer Nuffield College, Oxford, UK</p>
+</blockquote>
+<ul>
+<li>Cross-price elasticity of demand (read about this in one of the suggested texts please)</li>
+</ul>
+<p><font color='blue'>Look up: what are some <em>real-world</em> price and income elasticity estimates? How were these derived?</font></p>
+<p><br />
+</p>
+<p><br />
+</p>
+<p>NOTE: Be able to sketch and explain income and substitution effects of a price change</p>
+
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="37">
+<li id="fn37"><p>Answer: practice, practice, practice. :)<a href="demand.html#fnref37" class="footnote-back">↩</a></p></li>
+<li id="fn38"><p>remember, this is not the same as ‘perfect substitutes/complements’<a href="demand.html#fnref38" class="footnote-back">↩</a></p></li>
+<li id="fn39"><p>Of course not! At least they ‘should’ not change; your optimal choices would not change. Perhaps in some specific context the way the problem is framed may affect people’s choices, but that is not what is being asked here. Furthermore, we are considering ‘normative’ economics in the sense of ‘what would rational optimizing agents do’?<a href="demand.html#fnref39" class="footnote-back">↩</a></p></li>
+<li id="fn40"><p> There are ‘adding up’ conditions.
+You always spend all of your income. Thus, if as your income increases, you spend less on some subset of goods,
+you <em>must</em> spend more on the remaining goods.<a href="demand.html#fnref40" class="footnote-back">↩</a></p></li>
+<li id="fn41"><p>Preston, 2006; <a href="https://www.ucl.ac.uk/~uctp100/g021/g021lect.pdf" class="uri">https://www.ucl.ac.uk/~uctp100/g021/g021lect.pdf</a>; notation changed to agree with more standard (Jehle and Reny) notation<a href="demand.html#fnref41" class="footnote-back">↩</a></p></li>
+<li id="fn42"><p>$_i  /  $<a href="demand.html#fnref42" class="footnote-back">↩</a></p></li>
+<li id="fn43"><p>Note: ‘Taxes based on ground-floor area’ are mentioned throughout the web, but I couldn’t find an authoritative reference to this. If anyone finds one, please let me know!<a href="demand.html#fnref43" class="footnote-back">↩</a></p></li>
+<li id="fn44"><p>Why ‘compensated’ behavior? Essentially, because taxes in general will always leave people with less effective income, causing them to change their consumption choices to reflect the new, lower indifference curves. What matters for the deadweight loss is how the taxes change their behavior at this new lower-income state. This is a fundamental issue in Public Finance/taxation.<a href="demand.html#fnref44" class="footnote-back">↩</a></p></li>
+<li id="fn45"><p>This illustration is a single example; to see that this holds generally, take Public Economics. There are some interesting and surprising results. A caveat: If you <em>can’t</em> tax one good (e.g., leisure)<br />
+you <em>don’t</em> want to tax all other goods equally.<br />
+In general, you want to tax goods that distort behaviour less overall.<a href="demand.html#fnref45" class="footnote-back">↩</a></p></li>
+<li id="fn46"><p>In the UK, the ‘welfare wall’ is usually referred to as the ‘benefits trap’ or ‘unemployment trap’. This is something successive UK governments have tried to remedy, recently, with the controversial ‘Universal Credit’.<a href="demand.html#fnref46" class="footnote-back">↩</a></p></li>
+<li id="fn47"><p>Note: Economists disagree as to how to consider or model changes in preferences<a href="demand.html#fnref47" class="footnote-back">↩</a></p></li>
+<li id="fn48"><p>In other words, if you said to a consumer ‘this product will stop being produced/offered unless you pay us enough money’, this is the maximum amount the consumer would be will be willing to pay to keep the product on the market, at its current price.<a href="demand.html#fnref48" class="footnote-back">↩</a></p></li>
+<li id="fn49"><p>This concept can also be applied to measuring the value added by the introduction of a new good (see Application 3.4). This is useful to know for policy, particular in formulating subsidies for R&amp;D and in adjusting the CPI. It also could be used to compute damages in court cases where a firm is accused of stifling innovation.<a href="demand.html#fnref49" class="footnote-back">↩</a></p></li>
+<li id="fn50"><p>Ans: Over time, consumers can adjust to price changes by changing their consumption patterns. E.g., if petrol gets more expensive I can switch to a hybrid or electric car, or a bicycle.<a href="demand.html#fnref50" class="footnote-back">↩</a></p></li>
+<li id="fn51"><p>Ans: If it were at such a point, it could raise its price and its revenue would increase and costs would decline<br />
+(because it would be selling fewer products but for greater total revenue.)<br />
+A caveat is that it might do this for a long term strategic advantage; e.g., to gain customer loyalty and market share, intending to take its profits later. we come back to a related point later in the context of monopoly pricing.<a href="demand.html#fnref51" class="footnote-back">↩</a></p></li>
+<li id="fn52"><p>Ans: Yes (do you know why?)<a href="demand.html#fnref52" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="util-choice.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="production-costs.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": true,
+"weibo": true,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
