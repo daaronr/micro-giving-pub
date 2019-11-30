@@ -1,5 +1,7 @@
 # R-markdown to html -- web-book and slides
 
+See this page as rendered html (web page) [HERE](https://daaronr.github.io/micro_econ_pandoc/)
+
 - [Web book for Beem101 (MSc Microeconomics)](beem101-bookdowning/index.html)
 
 - [Web book for Beem2038 (Intermediate Microeconomics for business and politics students)](be2024-bd-copy/index.html)
