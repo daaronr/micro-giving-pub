@@ -127,6 +127,5 @@ A: Before I give an explanation, please write what you *think it means* and why,
 - I don’t understand the entire sections, since I can’t understand the minimal and maximal alternatives and since the following parts do not make sense to me.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2ODcyOTc4MiwtMTgzNTczNjIyMywxOT
-AyMjU5MjIzXX0=
+eyJoaXN0b3J5IjpbLTI2ODcyOTc4Ml19
 -->
