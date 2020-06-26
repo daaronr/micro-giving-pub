@@ -2,7 +2,7 @@
 
 # Discussion and annotation of Osborne and Rubinstein "Models in Microeconomic Theory"
 
-- Discussion between David Reinstein and Britt Li, possibly others
+(Discussion between David Reinstein and Britt Li, possibly others)
 
 ## Chapter 1
 
@@ -39,5 +39,5 @@ A binary relation on a set $X$ specifies, for each ordered pair $(x , y )$ of me
 - I don’t understand the entire sections, since I can’t understand the minimal and maximal alternatives and since the following parts do not make sense to me.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMjI1OTIyM119
+eyJoaXN0b3J5IjpbLTE4MzU3MzYyMjMsMTkwMjI1OTIyM119
 -->
