@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2 Introduction to the module and ‘housekeeping’ | Intermediate Microeconomics (applied); produced for Exeter BEE2038</title>
   <meta name="description" content="Created for Exeter’s BEE2038: Intermediate Microeconomics (applied)" />
-  <meta name="generator" content="bookdown 0.14.1 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2 Introduction to the module and ‘housekeeping’ | Intermediate Microeconomics (applied); produced for Exeter BEE2038" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
 
 
-<meta name="date" content="2019-11-29" />
+<meta name="date" content="2020-01-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -34,6 +34,7 @@
 <link rel="prev" href="note.html"/>
 <link rel="next" href="models.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/elevate-section-attrs-2.0/elevate-section-attrs.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -50,7 +51,6 @@
 
 
 
-<script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <!-- font families -->
 
 <link href="https://fonts.googleapis.com/css?family=PT+Sans|Pacifico|Source+Sans+Pro" rel="stylesheet">
@@ -103,25 +103,26 @@ document.write('<input onclick="toggle_R();" type="button" value="Hide Global" i
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -130,9 +131,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  { background-color: #f8f8f8; }
+  {  background-color: #f8f8f8; }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
@@ -180,13 +181,15 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Intermediate Microeconomics (applied)</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="note.html"><a href="note.html"><i class="fa fa-check"></i><b>1</b> Notes to students</a><ul>
+<li class="chapter" data-level="1" data-path="note.html"><a href="note.html"><i class="fa fa-check"></i><b>1</b> Notes to students</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="note.html"><a href="note.html#level-of-this-module"><i class="fa fa-check"></i><b>1.1</b> Level of this module</a></li>
 <li class="chapter" data-level="1.2" data-path="note.html"><a href="note.html#readings-and-resources"><i class="fa fa-check"></i><b>1.2</b> Readings and resources</a></li>
 <li class="chapter" data-level="1.3" data-path="note.html"><a href="note.html#this-handout-web-book-online-resource"><i class="fa fa-check"></i><b>1.3</b> This ‘handout’/ web-book/ online resource</a></li>
 <li class="chapter" data-level="1.4" data-path="note.html"><a href="note.html#outline"><i class="fa fa-check"></i><b>1.4</b> Outline and description of module</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction to the module and ‘housekeeping’</a><ul>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction to the module and ‘housekeeping’</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#the-first-chunk-aims-to-cover"><i class="fa fa-check"></i><b>2.1</b> The first chunk aims to cover:</a></li>
 <li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#me"><i class="fa fa-check"></i><b>2.2</b> Me</a></li>
 <li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#this-module"><i class="fa fa-check"></i><b>2.3</b> This module</a></li>
@@ -198,7 +201,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#how-to-do-well"><i class="fa fa-check"></i><b>2.9</b> How to do well</a></li>
 <li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#fortune-cookie-wisdom"><i class="fa fa-check"></i><b>2.10</b> Fortune Cookie Wisdom</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="models.html"><a href="models.html"><i class="fa fa-check"></i><b>3</b> Economic Models (L1-2)</a><ul>
+<li class="chapter" data-level="3" data-path="models.html"><a href="models.html"><i class="fa fa-check"></i><b>3</b> Economic Models (L1-2)</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="models.html"><a href="models.html#what-is-economics"><i class="fa fa-check"></i><b>3.1</b> What is Economics?</a></li>
 <li class="chapter" data-level="3.2" data-path="models.html"><a href="models.html#why-learn-these-models"><i class="fa fa-check"></i><b>3.2</b> Why learn these models?</a></li>
 <li class="chapter" data-level="3.3" data-path="models.html"><a href="models.html#economic-models"><i class="fa fa-check"></i><b>3.3</b> Economic Models</a></li>
@@ -208,179 +212,6 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.7" data-path="models.html"><a href="models.html#positive-and-normative"><i class="fa fa-check"></i><b>3.7</b> Positive and normative</a></li>
 <li class="chapter" data-level="" data-path="models.html"><a href="models.html#review-questions-and-problems-from-ns-chapter-1"><i class="fa fa-check"></i>Review questions and problems from NS Chapter 1</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="math-tools.html"><a href="math-tools.html"><i class="fa fa-check"></i><b>4</b> Math tools and empirical analysis - – coverage outline</a><ul>
-<li class="chapter" data-level="4.1" data-path="math-tools.html"><a href="math-tools.html#other-maths-resources"><i class="fa fa-check"></i><b>4.1</b> Other maths resources</a></li>
-<li class="chapter" data-level="4.2" data-path="math-tools.html"><a href="math-tools.html#simple-stuff"><i class="fa fa-check"></i><b>4.2</b> Simple stuff</a></li>
-<li class="chapter" data-level="4.3" data-path="math-tools.html"><a href="math-tools.html#minimum-maximum-or-neither"><i class="fa fa-check"></i><b>4.3</b> Minimum, maximum, or neither?</a></li>
-<li class="chapter" data-level="4.4" data-path="math-tools.html"><a href="math-tools.html#multivar-functions"><i class="fa fa-check"></i><b>4.4</b> Functions of two or more variables (multivariate functions)</a></li>
-<li class="chapter" data-level="4.5" data-path="math-tools.html"><a href="math-tools.html#contourlines_math"><i class="fa fa-check"></i><b>4.5</b> Contour lines (we will come back to this later)</a></li>
-<li class="chapter" data-level="4.6" data-path="math-tools.html"><a href="math-tools.html#simultaneous-equations"><i class="fa fa-check"></i><b>4.6</b> Simultaneous equations</a></li>
-<li class="chapter" data-level="4.7" data-path="math-tools.html"><a href="math-tools.html#empirical"><i class="fa fa-check"></i><b>4.7</b> Empirical microeconomics/econometrics</a></li>
-<li class="chapter" data-level="4.8" data-path="math-tools.html"><a href="math-tools.html#empirical-meta-example"><i class="fa fa-check"></i><b>4.8</b> Empirical meta-example</a></li>
-<li class="chapter" data-level="4.9" data-path="math-tools.html"><a href="math-tools.html#changing-world-oil-prices"><i class="fa fa-check"></i><b>4.9</b> Changing world oil prices</a></li>
-<li class="chapter" data-level="4.10" data-path="math-tools.html"><a href="math-tools.html#data-and-economic-analysis-curtis-and-irvine"><i class="fa fa-check"></i><b>4.10</b> Data and economic analysis (Curtis and Irvine)</a></li>
-<li class="chapter" data-level="4.11" data-path="math-tools.html"><a href="math-tools.html#between-first-and-second-week-priority-home-study"><i class="fa fa-check"></i><b>4.11</b> Between first and second week; priority home-study</a></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="util-choice.html"><a href="util-choice.html"><i class="fa fa-check"></i><b>5</b> Utility and Choice (L2)</a><ul>
-<li class="chapter" data-level="5.1" data-path="util-choice.html"><a href="util-choice.html#coverage-outline"><i class="fa fa-check"></i><b>5.1</b> Coverage outline</a></li>
-<li class="chapter" data-level="5.2" data-path="util-choice.html"><a href="util-choice.html#pre-util-choice"><i class="fa fa-check"></i><b>5.2</b> Preamble to utility and choice</a></li>
-<li class="chapter" data-level="5.3" data-path="util-choice.html"><a href="util-choice.html#some-motivation-for-these-abstract-ideas"><i class="fa fa-check"></i><b>5.3</b> Some motivation for these abstract ideas</a></li>
-<li class="chapter" data-level="5.4" data-path="util-choice.html"><a href="util-choice.html#utility"><i class="fa fa-check"></i><b>5.4</b> Utility</a></li>
-<li class="chapter" data-level="5.5" data-path="util-choice.html"><a href="util-choice.html#utility-from-two-goods"><i class="fa fa-check"></i><b>5.5</b> Utility from two goods</a></li>
-<li class="chapter" data-level="5.6" data-path="util-choice.html"><a href="util-choice.html#measuring-and-comparing-utilities"><i class="fa fa-check"></i><b>5.6</b> Measuring and comparing utilities</a></li>
-<li class="chapter" data-level="5.7" data-path="util-choice.html"><a href="util-choice.html#assumptions-about-preferences-axioms"><i class="fa fa-check"></i><b>5.7</b> Assumptions about preferences (‘axioms’)</a></li>
-<li class="chapter" data-level="5.8" data-path="util-choice.html"><a href="util-choice.html#voluntary-trades-and-indifference-curves"><i class="fa fa-check"></i><b>5.8</b> Voluntary trades and indifference curves</a></li>
-<li class="chapter" data-level="5.9" data-path="util-choice.html"><a href="util-choice.html#mrs"><i class="fa fa-check"></i><b>5.9</b> Marginal rate of substitution (MRS): Absolute value of slope of indifference curve</a></li>
-<li class="chapter" data-level="5.10" data-path="util-choice.html"><a href="util-choice.html#illustrating-particular-preferences"><i class="fa fa-check"></i><b>5.10</b> Illustrating particular preferences</a></li>
-<li class="chapter" data-level="5.11" data-path="util-choice.html"><a href="util-choice.html#app-2.3-product-positioning-in-marketing-not-covered-in-lecture-read-on-your-own"><i class="fa fa-check"></i><b>5.11</b> App 2.3: Product positioning in marketing (not covered in lecture, read on your own)</a></li>
-<li class="chapter" data-level="5.12" data-path="util-choice.html"><a href="util-choice.html#perfect-sub-comp"><i class="fa fa-check"></i><b>5.12</b> Definitions: Perfect substitutes and complements</a></li>
-<li class="chapter" data-level="5.13" data-path="util-choice.html"><a href="util-choice.html#choices-are-subject-to-constraints"><i class="fa fa-check"></i><b>5.13</b> Choices are subject to constraints</a></li>
-<li class="chapter" data-level="5.14" data-path="util-choice.html"><a href="util-choice.html#utilmax"><i class="fa fa-check"></i><b>5.14</b> Constrained utility maximization</a></li>
-<li class="chapter" data-level="5.15" data-path="util-choice.html"><a href="util-choice.html#corners"><i class="fa fa-check"></i><b>5.15</b> Note on ‘corner solutions’</a></li>
-<li class="chapter" data-level="5.16" data-path="util-choice.html"><a href="util-choice.html#app-2.4-ticket-scalping"><i class="fa fa-check"></i><b>5.16</b> App 2.4: ticket scalping</a></li>
-<li class="chapter" data-level="5.17" data-path="util-choice.html"><a href="util-choice.html#app-2.5-whats-a-rich-uncles-promise-worth-read-this-at-home."><i class="fa fa-check"></i><b>5.17</b> App 2.5: What’s a rich uncle’s promise worth? (Read this at home.)</a></li>
-<li class="chapter" data-level="5.18" data-path="util-choice.html"><a href="util-choice.html#using-the-model-of-choice"><i class="fa fa-check"></i><b>5.18</b> Using the model of choice</a></li>
-<li class="chapter" data-level="5.19" data-path="util-choice.html"><a href="util-choice.html#algebraicnumerical-examples"><i class="fa fa-check"></i><b>5.19</b> Algebraic/numerical examples</a></li>
-<li class="chapter" data-level="5.20" data-path="util-choice.html"><a href="util-choice.html#tutorial-problems-from-chapter-2"><i class="fa fa-check"></i><b>5.20</b> Tutorial problems from chapter 2</a></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="demand.html"><a href="demand.html"><i class="fa fa-check"></i><b>6</b> The Demand function (L3)</a><ul>
-<li class="chapter" data-level="6.1" data-path="demand.html"><a href="demand.html#coverage-outline-1"><i class="fa fa-check"></i><b>6.1</b> Coverage outline</a></li>
-<li class="chapter" data-level="6.2" data-path="demand.html"><a href="demand.html#demand-functions"><i class="fa fa-check"></i><b>6.2</b> Demand functions</a></li>
-<li class="chapter" data-level="6.3" data-path="demand.html"><a href="demand.html#homogeneity"><i class="fa fa-check"></i><b>6.3</b> Homogeneity</a></li>
-<li class="chapter" data-level="6.4" data-path="demand.html"><a href="demand.html#response-to-income-changes"><i class="fa fa-check"></i><b>6.4</b> Response to income changes</a></li>
-<li class="chapter" data-level="6.5" data-path="demand.html"><a href="demand.html#substitution-and-income-effects-from-a-fall-or-rise-in-price"><i class="fa fa-check"></i><b>6.5</b> Substitution and income effects from a fall (or rise) in <em>price</em></a></li>
-<li class="chapter" data-level="6.6" data-path="demand.html"><a href="demand.html#different-substitution-effects-of-a-price-change"><i class="fa fa-check"></i><b>6.6</b> Different substitution effects of a price change</a></li>
-<li class="chapter" data-level="6.7" data-path="demand.html"><a href="demand.html#the-legendary-giffen-good"><i class="fa fa-check"></i><b>6.7</b> The (legendary?) Giffen good</a></li>
-<li class="chapter" data-level="" data-path="demand.html"><a href="demand.html#recap"><i class="fa fa-check"></i>Quick recap</a></li>
-<li class="chapter" data-level="6.8" data-path="demand.html"><a href="demand.html#cpi"><i class="fa fa-check"></i><b>6.8</b> NS App 3.2: The CPI and its biases</a></li>
-<li class="chapter" data-level="6.9" data-path="demand.html"><a href="demand.html#the-lump-sum-principle"><i class="fa fa-check"></i><b>6.9</b> The Lump-Sum Principle</a></li>
-<li class="chapter" data-level="6.10" data-path="demand.html"><a href="demand.html#changes-in-the-price-of-another-goodcomplements-or-substitutes"><i class="fa fa-check"></i><b>6.10</b> Changes in the Price of Another Good;‘complements’ or ‘substitutes’</a></li>
-<li class="chapter" data-level="6.11" data-path="demand.html"><a href="demand.html#individual-demand-curves"><i class="fa fa-check"></i><b>6.11</b> Individual demand curves</a></li>
-<li class="chapter" data-level="6.12" data-path="demand.html"><a href="demand.html#shifts-in-an-individuals-demand-curve"><i class="fa fa-check"></i><b>6.12</b> Shifts in an individual’s demand curve</a></li>
-<li class="chapter" data-level="6.13" data-path="demand.html"><a href="demand.html#consumer-surplus"><i class="fa fa-check"></i><b>6.13</b> Consumer surplus</a></li>
-<li class="chapter" data-level="6.14" data-path="demand.html"><a href="demand.html#mktdemand"><i class="fa fa-check"></i><b>6.14</b> Market demand (function)</a></li>
-<li class="chapter" data-level="6.15" data-path="demand.html"><a href="demand.html#shifts-in-the-market-demand-curve"><i class="fa fa-check"></i><b>6.15</b> Shifts in the Market Demand Curve</a></li>
-<li class="chapter" data-level="6.16" data-path="demand.html"><a href="demand.html#elasticities"><i class="fa fa-check"></i><b>6.16</b> Elasticities</a></li>
-<li class="chapter" data-level="6.17" data-path="demand.html"><a href="demand.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>6.17</b> Price elasticity of demand</a></li>
-<li class="chapter" data-level="" data-path="demand.html"><a href="demand.html#examples-from-the-headlines"><i class="fa fa-check"></i>Examples from the headlines</a></li>
-<li class="chapter" data-level="6.18" data-path="demand.html"><a href="demand.html#properties-of-price-elasticity-of-demand"><i class="fa fa-check"></i><b>6.18</b> Properties of price elasticity of demand</a></li>
-<li class="chapter" data-level="6.19" data-path="demand.html"><a href="demand.html#income-elast"><i class="fa fa-check"></i><b>6.19</b> Income elasticity of demand; Normal, luxury, and inferior goods</a></li>
-<li class="chapter" data-level="6.20" data-path="demand.html"><a href="demand.html#further-material-to-study"><i class="fa fa-check"></i><b>6.20</b> Further material to study</a></li>
-</ul></li>
-<li class="chapter" data-level="7" data-path="production-costs.html"><a href="production-costs.html"><i class="fa fa-check"></i><b>7</b> Production and costs (brief coverage)(L4-L5)</a><ul>
-<li class="chapter" data-level="7.1" data-path="production-costs.html"><a href="production-costs.html#production-and-costs-brief-treatment-coverage"><i class="fa fa-check"></i><b>7.1</b> Production and costs (brief treatment: coverage)</a></li>
-<li class="chapter" data-level="7.2" data-path="production-costs.html"><a href="production-costs.html#the-firms-production-function"><i class="fa fa-check"></i><b>7.2</b> The Firm’s Production function</a></li>
-<li class="chapter" data-level="7.3" data-path="production-costs.html"><a href="production-costs.html#marginal-product"><i class="fa fa-check"></i><b>7.3</b> Marginal product</a></li>
-<li class="chapter" data-level="7.4" data-path="production-costs.html"><a href="production-costs.html#cost-minimizing-input-choice"><i class="fa fa-check"></i><b>7.4</b> Cost minimizing input choice</a></li>
-<li class="chapter" data-level="7.5" data-path="production-costs.html"><a href="production-costs.html#types-of-costs-basic-cost-concepts"><i class="fa fa-check"></i><b>7.5</b> Types of costs (‘Basic cost concepts’)</a></li>
-<li class="chapter" data-level="7.6" data-path="production-costs.html"><a href="production-costs.html#rts"><i class="fa fa-check"></i><b>7.6</b> Returns to scale</a></li>
-</ul></li>
-<li class="chapter" data-level="8" data-path="profitmax.html"><a href="profitmax.html"><i class="fa fa-check"></i><b>8</b> Profit maximisation and supply (L5-L6)</a><ul>
-<li class="chapter" data-level="8.1" data-path="profitmax.html"><a href="profitmax.html#profit-maximisation-and-supply---coverage"><i class="fa fa-check"></i><b>8.1</b> Profit maximisation and supply - coverage</a></li>
-<li class="chapter" data-level="8.2" data-path="profitmax.html"><a href="profitmax.html#important-aside-what-are-firms-and-why-do-they-exist"><i class="fa fa-check"></i><b>8.2</b> Important aside: What are ‘firms’ and why do they exist?</a></li>
-<li class="chapter" data-level="8.3" data-path="profitmax.html"><a href="profitmax.html#profit-maximisation"><i class="fa fa-check"></i><b>8.3</b> Profit-maximisation</a></li>
-<li class="chapter" data-level="8.4" data-path="profitmax.html"><a href="profitmax.html#mrmc-condition-for-a-price-taking-firm"><i class="fa fa-check"></i><b>8.4</b> MR=mc condition for a price-taking firm</a></li>
-<li class="chapter" data-level="8.5" data-path="profitmax.html"><a href="profitmax.html#supply-decisions-of-a-price-taking-firm"><i class="fa fa-check"></i><b>8.5</b> Supply decisions of a price-taking firm</a></li>
-<li class="chapter" data-level="8.6" data-path="profitmax.html"><a href="profitmax.html#some-suggested-practice-problems-from-nicholson-and-snyder-chapter-8-12th-ed"><i class="fa fa-check"></i><b>8.6</b> Some suggested practice problems from Nicholson and Snyder Chapter 8 (12th ed)</a></li>
-</ul></li>
-<li class="chapter" data-level="9" data-path="perfect-competition.html"><a href="perfect-competition.html"><i class="fa fa-check"></i><b>9</b> Perfect competition in a single market (L7)</a><ul>
-<li class="chapter" data-level="9.1" data-path="perfect-competition.html"><a href="perfect-competition.html#perfect-competition-in-a-single-market---coverage"><i class="fa fa-check"></i><b>9.1</b> Perfect competition in a single market - coverage</a></li>
-<li class="chapter" data-level="9.2" data-path="perfect-competition.html"><a href="perfect-competition.html#sr-supply"><i class="fa fa-check"></i><b>9.2</b> SR supply</a></li>
-<li class="chapter" data-level="9.3" data-path="perfect-competition.html"><a href="perfect-competition.html#sr-price-determination"><i class="fa fa-check"></i><b>9.3</b> SR Price determination</a></li>
-<li class="chapter" data-level="9.4" data-path="perfect-competition.html"><a href="perfect-competition.html#illustration-of-sr-price-determination"><i class="fa fa-check"></i><b>9.4</b> Illustration of SR price determination</a></li>
-<li class="chapter" data-level="9.5" data-path="perfect-competition.html"><a href="perfect-competition.html#shifts-in-s-and-d-curves"><i class="fa fa-check"></i><b>9.5</b> Shifts in S and D curves</a></li>
-<li class="chapter" data-level="9.6" data-path="perfect-competition.html"><a href="perfect-competition.html#the-long-run"><i class="fa fa-check"></i><b>9.6</b> The Long run</a></li>
-<li class="chapter" data-level="9.7" data-path="perfect-competition.html"><a href="perfect-competition.html#long-run-lr-supply"><i class="fa fa-check"></i><b>9.7</b> Long Run (LR) Supply (*)</a></li>
-<li class="chapter" data-level="9.8" data-path="perfect-competition.html"><a href="perfect-competition.html#consumer-and-producer-surplus-efficiency"><i class="fa fa-check"></i><b>9.8</b> Consumer and producer surplus, efficiency</a></li>
-<li class="chapter" data-level="9.9" data-path="perfect-competition.html"><a href="perfect-competition.html#suggested-practice-problems-from-nicholson-and-snyder-chapter-9-12th-ed"><i class="fa fa-check"></i><b>9.9</b> Suggested practice problems from Nicholson and Snyder Chapter 9 (12th ed)</a></li>
-</ul></li>
-<li class="chapter" data-level="10" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html"><i class="fa fa-check"></i><b>10</b> Key principles for efficiency and ‘general’ equilibrium</a><ul>
-<li class="chapter" data-level="10.1" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#general-equilibrium-and-efficiency-coverage"><i class="fa fa-check"></i><b>10.1</b> General equilibrium and efficiency: Coverage</a></li>
-<li class="chapter" data-level="10.2" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#introduction-general-equilibrium"><i class="fa fa-check"></i><b>10.2</b> Introduction: General equilibrium</a></li>
-<li class="chapter" data-level="10.3" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#pareto-efficiency"><i class="fa fa-check"></i><b>10.3</b> Pareto efficiency</a></li>
-<li class="chapter" data-level="10.4" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#the-three-amigos-of-efficiency-productive-exchange-and-top-level"><i class="fa fa-check"></i><b>10.4</b> The three amigos of efficiency: productive, exchange, and top-level</a></li>
-<li class="chapter" data-level="10.5" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#a-basic-argument-for-exchange-efficiency-of-competitive-equilibrium"><i class="fa fa-check"></i><b>10.5</b> A basic argument for exchange efficiency of competitive equilibrium:</a></li>
-<li class="chapter" data-level="10.6" data-path="key-principles-for-efficiency-and-general-equilibrium.html"><a href="key-principles-for-efficiency-and-general-equilibrium.html#fundamental-theorems-of-welfare-economics-market-failures"><i class="fa fa-check"></i><b>10.6</b> Fundamental theorems of welfare economics; market failures</a></li>
-</ul></li>
-<li class="chapter" data-level="11" data-path="market-failure.html"><a href="market-failure.html"><i class="fa fa-check"></i><b>11</b> Public Goods and Market Failure (L8)</a><ul>
-<li class="chapter" data-level="11.1" data-path="market-failure.html"><a href="market-failure.html#coverage"><i class="fa fa-check"></i><b>11.1</b> Coverage</a></li>
-<li class="chapter" data-level="11.2" data-path="market-failure.html"><a href="market-failure.html#market-failures"><i class="fa fa-check"></i><b>11.2</b> Market failures</a></li>
-<li class="chapter" data-level="11.3" data-path="market-failure.html"><a href="market-failure.html#public-goods-attributes-categories"><i class="fa fa-check"></i><b>11.3</b> Public Goods (attributes, categories)</a></li>
-<li class="chapter" data-level="11.4" data-path="market-failure.html"><a href="market-failure.html#why-do-public-goods-lead-to-market-failure"><i class="fa fa-check"></i><b>11.4</b> Why do public goods lead to market failure?</a></li>
-<li class="chapter" data-level="" data-path="market-failure.html"><a href="market-failure.html#social-benefit-of-a-private-good-vs-a-public-good"><i class="fa fa-check"></i>Social benefit of a private good vs a public good</a></li>
-<li class="chapter" data-level="" data-path="market-failure.html"><a href="market-failure.html#application-drug-development"><i class="fa fa-check"></i>Application: drug development</a></li>
-<li class="chapter" data-level="11.5" data-path="market-failure.html"><a href="market-failure.html#solutions-to-the-public-goods-problem"><i class="fa fa-check"></i><b>11.5</b> Solutions to the Public Goods Problem</a></li>
-<li class="chapter" data-level="" data-path="market-failure.html"><a href="market-failure.html#governments-role"><i class="fa fa-check"></i>Government’s role</a></li>
-<li class="chapter" data-level="11.6" data-path="market-failure.html"><a href="market-failure.html#lab-evidence-on-voluntary-provision-of-public-goods"><i class="fa fa-check"></i><b>11.6</b> Lab evidence on <em>voluntary</em> provision of Public Goods</a></li>
-<li class="chapter" data-level="11.7" data-path="market-failure.html"><a href="market-failure.html#today-i-learned-til"><i class="fa fa-check"></i><b>11.7</b> Today I learned (‘TIL’)</a></li>
-<li class="chapter" data-level="11.8" data-path="market-failure.html"><a href="market-failure.html#suggested-practice-problems-from-nicholson-and-snyder-chapter-16-12th-ed"><i class="fa fa-check"></i><b>11.8</b> Suggested practice problems from Nicholson and Snyder Chapter 16 (12th ed)</a></li>
-</ul></li>
-<li class="chapter" data-level="12" data-path="monopolies-pd.html"><a href="monopolies-pd.html"><i class="fa fa-check"></i><b>12</b> Monopolies and price discrimination (L9)</a><ul>
-<li class="chapter" data-level="12.1" data-path="monopolies-pd.html"><a href="monopolies-pd.html#coverage-and-key-readings"><i class="fa fa-check"></i><b>12.1</b> Coverage and key readings</a></li>
-<li class="chapter" data-level="12.2" data-path="monopolies-pd.html"><a href="monopolies-pd.html#coverage-1"><i class="fa fa-check"></i><b>12.2</b> Coverage</a></li>
-<li class="chapter" data-level="12.3" data-path="monopolies-pd.html"><a href="monopolies-pd.html#barriers-to-entry"><i class="fa fa-check"></i><b>12.3</b> Barriers to entry</a></li>
-<li class="chapter" data-level="12.4" data-path="monopolies-pd.html"><a href="monopolies-pd.html#monopoly-profit-maximisation"><i class="fa fa-check"></i><b>12.4</b> Monopoly profit-maximisation</a></li>
-<li class="chapter" data-level="12.5" data-path="monopolies-pd.html"><a href="monopolies-pd.html#you-may-skip-the-no-supply-curve-for-a-monopoly-section-in-the-ns-text"><i class="fa fa-check"></i><b>12.5</b> 2019: you may Skip the ‘no supply curve for a monopoly’ section in the NS text</a></li>
-<li class="chapter" data-level="12.6" data-path="monopolies-pd.html"><a href="monopolies-pd.html#the-deadweight-loss-of-monopoly"><i class="fa fa-check"></i><b>12.6</b> The deadweight loss of monopoly</a></li>
-<li class="chapter" data-level="12.7" data-path="monopolies-pd.html"><a href="monopolies-pd.html#price-discrimination-basics"><i class="fa fa-check"></i><b>12.7</b> Price discrimination: basics</a></li>
-<li class="chapter" data-level="12.8" data-path="monopolies-pd.html"><a href="monopolies-pd.html#first-degree-andor-perfect-price-discrimination"><i class="fa fa-check"></i><b>12.8</b> First-degree and/or ‘perfect’ price discrimination</a></li>
-<li class="chapter" data-level="12.9" data-path="monopolies-pd.html"><a href="monopolies-pd.html#pd2d"><i class="fa fa-check"></i><b>12.9</b> Second-degree price discrimination</a></li>
-<li class="chapter" data-level="12.10" data-path="monopolies-pd.html"><a href="monopolies-pd.html#pd3d"><i class="fa fa-check"></i><b>12.10</b> Third-degree price discrimination, aka Market separation</a></li>
-<li class="chapter" data-level="12.11" data-path="monopolies-pd.html"><a href="monopolies-pd.html#who-benefits-from-3dpd"><i class="fa fa-check"></i><b>12.11</b> Who benefits from 3DPD?</a></li>
-<li class="chapter" data-level="12.12" data-path="monopolies-pd.html"><a href="monopolies-pd.html#arbitrage-can-foil-price-discrimination"><i class="fa fa-check"></i><b>12.12</b> Arbitrage … can foil price discrimination</a></li>
-<li class="chapter" data-level="12.13" data-path="monopolies-pd.html"><a href="monopolies-pd.html#davids-old-new-idea-a-policy-tool"><i class="fa fa-check"></i><b>12.13</b> David’s (old) new idea: A policy tool</a></li>
-<li class="chapter" data-level="12.14" data-path="monopolies-pd.html"><a href="monopolies-pd.html#natural-monopolies-and-regulation-very-brief"><i class="fa fa-check"></i><b>12.14</b> Natural monopolies and regulation (very brief!)</a></li>
-</ul></li>
-<li class="chapter" data-level="13" data-path="uncertainty.html"><a href="uncertainty.html"><i class="fa fa-check"></i><b>13</b> Uncertainty (with a bit of finance) (L10))</a><ul>
-<li class="chapter" data-level="13.1" data-path="uncertainty.html"><a href="uncertainty.html#lecture-2-hours---chapter-4-coverage-outline"><i class="fa fa-check"></i><b>13.1</b> Lecture (2 hours) - Chapter 4 coverage outline</a></li>
-<li class="chapter" data-level="13.2" data-path="uncertainty.html"><a href="uncertainty.html#whats-up-with-uncertainty"><i class="fa fa-check"></i><b>13.2</b> What’s up with uncertainty?</a></li>
-<li class="chapter" data-level="13.3" data-path="uncertainty.html"><a href="uncertainty.html#probability-concepts-a-quick-review"><i class="fa fa-check"></i><b>13.3</b> Probability concepts: a quick review</a></li>
-<li class="chapter" data-level="13.4" data-path="uncertainty.html"><a href="uncertainty.html#example-experimental-measures-of-risk-attitudes"><i class="fa fa-check"></i><b>13.4</b> Example: experimental measures of risk attitudes</a></li>
-<li class="chapter" data-level="13.5" data-path="uncertainty.html"><a href="uncertainty.html#expected-utility"><i class="fa fa-check"></i><b>13.5</b> Expected utility</a></li>
-<li class="chapter" data-level="13.6" data-path="uncertainty.html"><a href="uncertainty.html#risk-aversion-graphical-depiction"><i class="fa fa-check"></i><b>13.6</b> Risk aversion: graphical depiction</a></li>
-<li class="chapter" data-level="13.7" data-path="uncertainty.html"><a href="uncertainty.html#ways-of-reducing-risk-insurance"><i class="fa fa-check"></i><b>13.7</b> Ways of reducing risk: Insurance</a></li>
-<li class="chapter" data-level="13.8" data-path="uncertainty.html"><a href="uncertainty.html#ways-of-reducing-risk-diversification"><i class="fa fa-check"></i><b>13.8</b> Ways of reducing risk: Diversification</a></li>
-<li class="chapter" data-level="13.9" data-path="uncertainty.html"><a href="uncertainty.html#flexibility-and-options-contracts"><i class="fa fa-check"></i><b>13.9</b> Flexibility and options contracts</a></li>
-<li class="chapter" data-level="13.10" data-path="uncertainty.html"><a href="uncertainty.html#pricing-of-risk-and-assets-in-financial-markets"><i class="fa fa-check"></i><b>13.10</b> Pricing of risk (and assets) in financial markets</a></li>
-<li class="chapter" data-level="13.11" data-path="uncertainty.html"><a href="uncertainty.html#not-covered-two-state-model"><i class="fa fa-check"></i><b>13.11</b> Not covered: two state model</a></li>
-<li class="chapter" data-level="13.12" data-path="uncertainty.html"><a href="uncertainty.html#suggested-practice-problems-see-problem-set"><i class="fa fa-check"></i><b>13.12</b> Suggested practice problems: see problem set</a></li>
-</ul></li>
-<li class="chapter" data-level="14" data-path="game-theory.html"><a href="game-theory.html"><i class="fa fa-check"></i><b>14</b> Game Theory (L11)</a><ul>
-<li class="chapter" data-level="14.1" data-path="game-theory.html"><a href="game-theory.html#coverage-outline-2"><i class="fa fa-check"></i><b>14.1</b> Coverage outline</a></li>
-<li class="chapter" data-level="14.2" data-path="game-theory.html"><a href="game-theory.html#basic-concepts-strategic-interaction-elements-of-a-game"><i class="fa fa-check"></i><b>14.2</b> Basic concepts (strategic interaction, elements of a game))</a></li>
-<li class="chapter" data-level="14.3" data-path="game-theory.html"><a href="game-theory.html#some-examples"><i class="fa fa-check"></i><b>14.3</b> Some examples</a></li>
-<li class="chapter" data-level="" data-path="game-theory.html"><a href="game-theory.html#what-game-theory-can-do-wet-blanket"><i class="fa fa-check"></i>What game theory can do (wet blanket)</a></li>
-<li class="chapter" data-level="14.4" data-path="game-theory.html"><a href="game-theory.html#four-elements-describe-a-game"><i class="fa fa-check"></i><b>14.4</b> Four elements describe a game</a></li>
-<li class="chapter" data-level="14.5" data-path="game-theory.html"><a href="game-theory.html#illustrating-games"><i class="fa fa-check"></i><b>14.5</b> Illustrating Games</a></li>
-<li class="chapter" data-level="14.6" data-path="game-theory.html"><a href="game-theory.html#common-knowledge"><i class="fa fa-check"></i><b>14.6</b> Common knowledge</a></li>
-<li class="chapter" data-level="14.7" data-path="game-theory.html"><a href="game-theory.html#dominant-dominated-strategies-and-rationalizability"><i class="fa fa-check"></i><b>14.7</b> Dominant, dominated strategies and rationalizability</a></li>
-<li class="chapter" data-level="14.8" data-path="game-theory.html"><a href="game-theory.html#rationalisability-iterated-strict-dominance-not-in-ns-text"><i class="fa fa-check"></i><b>14.8</b> Rationalisability/ Iterated strict dominance (not in NS text!)</a></li>
-<li class="chapter" data-level="14.9" data-path="game-theory.html"><a href="game-theory.html#equilibrium"><i class="fa fa-check"></i><b>14.9</b> Equilibrium</a></li>
-<li class="chapter" data-level="14.10" data-path="game-theory.html"><a href="game-theory.html#coordination-and-anti-coordination-games"><i class="fa fa-check"></i><b>14.10</b> Coordination and anti-coordination games</a></li>
-<li class="chapter" data-level="14.11" data-path="game-theory.html"><a href="game-theory.html#mixed-strategies"><i class="fa fa-check"></i><b>14.11</b> Mixed strategies</a></li>
-<li class="chapter" data-level="14.12" data-path="game-theory.html"><a href="game-theory.html#how-do-you-solve-a-problem-like-multiple-equilibria"><i class="fa fa-check"></i><b>14.12</b> How do you solve a problem like multiple-equilibria?</a></li>
-<li class="chapter" data-level="14.13" data-path="game-theory.html"><a href="game-theory.html#sequential-games"><i class="fa fa-check"></i><b>14.13</b> Sequential Games</a></li>
-<li class="chapter" data-level="14.14" data-path="game-theory.html"><a href="game-theory.html#repeated-games"><i class="fa fa-check"></i><b>14.14</b> Repeated games</a></li>
-<li class="chapter" data-level="14.15" data-path="game-theory.html"><a href="game-theory.html#trigger-strategies"><i class="fa fa-check"></i><b>14.15</b> Trigger strategies</a></li>
-<li class="chapter" data-level="14.16" data-path="game-theory.html"><a href="game-theory.html#repeated-games-indefinite-or-infinite-time-horizon"><i class="fa fa-check"></i><b>14.16</b> Repeated Games: Indefinite or infinite time horizon</a></li>
-<li class="chapter" data-level="14.17" data-path="game-theory.html"><a href="game-theory.html#continuous-actions"><i class="fa fa-check"></i><b>14.17</b> Continuous Actions</a></li>
-<li class="chapter" data-level="14.18" data-path="game-theory.html"><a href="game-theory.html#experimental-evidence-what-is-a-laboratory-experiment-in-economics"><i class="fa fa-check"></i><b>14.18</b> Experimental evidence: What is a laboratory experiment in Economics?</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="note-more-material-might-be-added.html"><a href="note-more-material-might-be-added.html"><i class="fa fa-check"></i>Note: More material might be added</a></li>
-<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html"><i class="fa fa-check"></i>Problem sets</a><ul>
-<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#ps1"><i class="fa fa-check"></i>First problem set: Mathematical approaches, economic models, revision and warm-up</a></li>
-<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#ps1_ans"><i class="fa fa-check"></i>First problem set with suggested answers</a></li>
-<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#second-problem-set-preferences-utility-consumer-optimization"><i class="fa fa-check"></i>Second problem set: Preferences, Utility, Consumer optimization</a></li>
-<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#second-problem-set-with-suggested-answers-preferences-utility-consumer-optimization"><i class="fa fa-check"></i>Second problem set with suggested answers: Preferences, Utility, Consumer optimization</a></li>
-<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#mock-mid-term-exam"><i class="fa fa-check"></i>Mock mid-term exam</a></li>
-<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#third-problem-set-public-goods"><i class="fa fa-check"></i>Third problem set: Public goods</a></li>
-<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#third-problem-set-with-suggested-answers-public-goods"><i class="fa fa-check"></i>Third problem set, with suggested answers: Public goods</a></li>
-<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#fourth-problem-set-monopolies-and-price-discrimination"><i class="fa fa-check"></i>Fourth problem set: Monopolies and price discrimination</a></li>
-<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#fifth-problem-set-uncertainty-eu-applications"><i class="fa fa-check"></i>Fifth problem set: Uncertainty, EU, applications</a></li>
-<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#ps6noans"><i class="fa fa-check"></i>Sixth problem set: Game theory (no answers)</a></li>
-<li class="chapter" data-level="" data-path="ps.html"><a href="ps.html#ps6ans"><i class="fa fa-check"></i>Sixth problem set: Game theory, with answers</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="prior-exams-with-answers-and-mock-exams.html"><a href="prior-exams-with-answers-and-mock-exams.html"><i class="fa fa-check"></i>Prior exams with answers and ‘mock exams’</a></li>
 <li class="divider"></li>
 <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
 
@@ -401,10 +232,10 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="intro" class="section level1">
+<div id="intro" class="section level1" number="2">
 <h1><span class="header-section-number">2</span> Introduction to the module and ‘housekeeping’</h1>
 <p><font color='Grey'>Note: The lecturing ‘slides’ are posted contemporaneously to each lecture, but there is no need to look at them – this web-book (‘handout’ is king). OK, fine… the link to the slides is <a href="https://vle.exeter.ac.uk/pluginfile.php/1442060/mod_resource/content/0/s_intro_lecture_models_selfcontained.html#/lecture-1-intro-coverage-1-hour">HERE</a>, but don’t look at them. (If you do you will need to press ‘o’ to see the navigation map.</font></p>
-<div id="the-first-chunk-aims-to-cover" class="section level2">
+<div id="the-first-chunk-aims-to-cover" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> The first chunk aims to cover:</h2>
 <p>Note – this coverage this goes into the <a href="models">next section ‘models’</a> and <a href="math-tools">‘maths tools’</a></p>
 <p><em>Goals of this lecture (and accompanying self-study)</em></p>
@@ -425,7 +256,7 @@ Based on Theory and Application of Intermediate Microeconomics 11th edition,  Ni
 Some material from PowerPoint Slide Presentation:  Philip Heap, James Madison University
 -->
 </div>
-<div id="me" class="section level2">
+<div id="me" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> Me</h2>
 <p><a href="davidreinstein.wordpress.com">Dr. David Reinstein</a></p>
 <center>
@@ -479,7 +310,7 @@ Twitter: ‘givingtools’ <a href="https://twitter.com/GivingTools?ref_src=twsr
 I will also be advertising two "Student Campus Partner" positions which offer real research and professional experience.
 -->
 </div>
-<div id="this-module" class="section level2">
+<div id="this-module" class="section level2" number="2.3">
 <h2><span class="header-section-number">2.3</span> This module</h2>
 <p><strong>bee2038: Intermediate Microeconomics (applied)</strong></p>
 <ul>
@@ -520,7 +351,7 @@ I will also be advertising two "Student Campus Partner" positions which offer re
 <p><img src="picsfigs/skillschart.png" width="70%" style="display: block; margin: auto;" /></p>
 <hr />
 <p><img src="picsfigs/skillsbar.png" width="70%" style="display: block; margin: auto;" /></p>
-<div id="texts" class="section level3 unnumbered">
+<div id="texts" class="section level3 unnumbered" number="">
 <h3>Texts and resources</h3>
 <ul>
 <li>Recommended text: ‘Intermediate Microeconomics and Its Application’ (12th ed.)
@@ -552,14 +383,14 @@ Play around with this, they are super-helpful and intuitive. <em>Thanks Frank.)<
 <p>Lectures <span class="math inline">\(\neq\)</span> everything!: <em>Some</em> of the material is only <em>mentioned</em> in lecture/handout, but you still must read &amp; learn it (I will be clear on this). On the other hand some sections of the NS text are skipped. Some material is covered in these handouts, or recommended readings, that is <em>not</em> in the text; this is clearly emphasized. All of this is laid out in this handout.</p>
 </div>
 </div>
-<div id="problem-sets" class="section level2">
+<div id="problem-sets" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> Problem sets</h2>
 <p><em>Note:</em> There will be approximately 8 total problem sets, each covering a block of material. As noted above, these are aimed to help prepare you for the assessments.</p>
 <p>These will be posted <a href="ps">BELOW</a></p>
 <p>Representative answers and explanations for each problem set will given about 1-week after posting.</p>
 <p>The five support classes (tutorials) will cover <em>parts</em> of these.</p>
 </div>
-<div id="my-feedback" class="section level2">
+<div id="my-feedback" class="section level2" number="2.5">
 <h2><span class="header-section-number">2.5</span> Feedback on your highly-esteemed but extremely humble lecturer</h2>
 <p>We will have two ‘official’ feedback points. There will be an ‘early feedback’ survey, perhaps around week 4 or 5. This gives you a chance to give me constructive suggestions that I can adapt to <em>during</em> the rest of the module.</p>
 <p><br> </p>
@@ -595,7 +426,7 @@ These questions vary from year to year. In a recent year these were:
 <p><em>If at any time you think you don’t agree with any of these, please let me know how I can make it better</em></p>
 <p><em>You can tell me directly, or anonymously at:</em> </p>
 <p>I am not particularly a fan of the “customer service” model of education. It leads lecturers to water-down the content and hinders us from presenting challenging and engaging material. and limit your educational experience. In fact, there is in fairly compelling research that suggests that these measures are <a href="https://www.tandfonline.com/doi/full/10.1080/2331186X.2017.1304016">not reliable</a> and are <a href="https://thepsychologist.bps.org.uk/volume-32/april-2019/excellence-or-ease-exploring-student-evaluations-teaching">“poorly correlated with student learning”</a>.</p>
-<div id="responding-to-feedback" class="section level3">
+<div id="responding-to-feedback" class="section level3" number="2.5.1">
 <h3><span class="header-section-number">2.5.1</span> Responding to feedback</h3>
 <p>I listen carefully to your responses and continually adjust the material and the approach. To give you the best education, I try to follow a process of <em>Kaizen</em>, or continual improvement.</p>
 <p>I also make changes from year-to-year, in response to your feedback.</p>
@@ -622,7 +453,7 @@ These questions vary from year to year. In a recent year these were:
 <hr />
 </div>
 </div>
-<div id="module-story" class="section level2">
+<div id="module-story" class="section level2" number="2.6">
 <h2><span class="header-section-number">2.6</span> The story of this module</h2>
 <p><em>Note:</em> You will have seen many of these concepts before.</p>
 <p>But do you really understand them well enough to <em>explain</em> them to a non-economist and to <em>apply</em> them to a new real-world situation?</p>
@@ -630,9 +461,10 @@ These questions vary from year to year. In a recent year these were:
 <p><font color='gray'>Asessment hint: I try to ask you questions that you would not know the answer to had you not taken this module. What would be the purpose of you simply learning ‘common sense’ or ‘conventional wisdom’ … that you already knew? If you are answering an open response/essay question by simply stating something that the average Joe sitting on a pub bench would have said, you may want to rethink the way you are answering this question. I am not designing the exams to trip you up… just to check that you have learned something.</font></p>
 <hr />
 <p>*For details on the coverage in each part, and references to coverage in texts other than NS, see the relevant section below, or the <a href="outline">outline above</a></p>
-<div id="economic-basics-weeks-1-2-approx" class="section level3">
+<div id="economic-basics-weeks-1-2-approx" class="section level3" number="2.6.1">
 <h3><span class="header-section-number">2.6.1</span> 1. Economic basics (weeks 1-2 approx)</h3>
-
+<p>
+</p>
 <p>In weeks one and two we will go over some of the simple tools in the economists’ kit. I will try to explain to you what we mean by ‘economic models’ and give you some examples of these which may be familiar to you. I will not go over the math tools in the lecture; you should study/revise this on your own. We <em>will</em> go over many of these again briefly as we apply these math tools to our economic models throughout the module.</p>
 <p>We will also start thinking about, and formalisng individual decisions—over nearly all spheres of life— in a way you may not have seen before, which may even strike you as weirdly hyper-rational.</p>
 <p>Essentially, this (sometimes confusingly called ‘normative decision theory’) is the way economists typically conceive of and model people’s choices. Even though it seems to require precise optimization, perhaps to a strange extent, there are various reasonable justifications for this, and you might also see it as a benchmark… ‘Let’s understand what optimization would look like, as a starting point’.</p>
@@ -642,24 +474,24 @@ These questions vary from year to year. In a recent year these were:
 <p><em>I will also introduce ‘data’ and some key concepts from ‘Empirical analysis’ and ‘Econometrics’ here</em></p>
 <hr />
 </div>
-<div id="building-the-model-putting-it-together-examining-it-weeks-3-5-approx" class="section level3">
+<div id="building-the-model-putting-it-together-examining-it-weeks-3-5-approx" class="section level3" number="2.6.2">
 <h3><span class="header-section-number">2.6.2</span> 2. Building the model, putting it together, examining it (weeks 3-5 approx)</h3>
 <p>‘What determines the price and quantities exchanged in an unregulated (or ’free’) market?’ ‘Do markets yield good outcomes?’</p>
 <p>These questions have been at the backbone of Economics for millennia, at least since Aristotle.</p>
 <p>Classical economists such as Adam Smith built-up ideas of how seemingly random and disorganized markets can yield predictable and efficient outcomes, at least under appropriate conditions.
 Neoclassical and modern economists (such as Alfred Marshall, David Ricardo, Leon Walras, and Paul Samuelson) have formalized these, building models involving of systems of demand and supply and general equilibrium, and have made the case for the efficiency and desirability of the free market outcomes, at least under specified conditions.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
 <p>In the second (and largest) chunk of the course, we will learn some of the essential building blocks of this model, and how they are justified and put together to yield predictions for market outcomes and ‘welfare’. In the process, we will get useful ideas and intuitions about the working of markets.</p>
-
+<p></p>
 <p>We will learn how individual optimization implies a relationship between the price of a good (and the consumer’s income) and the amount a consumer chooses to purchase of that good; her individual <em>demand curve</em>.</p>
 <p>Adding up these individual demand curves yields the <em>market demand curve</em>, which describes the way the <em>total</em> amount of a good consumers wish to purchase depends on the market price of that good.</p>
-
+<p></p>
 <p><font color='gray'>Note: This is covered NS ch. 6-7, but reading these sections is optional. You are only responsible for the brief ‘sketch’ of this that I provide in this handout and in a short lecture, and any problem sets related to this.</font></p>
 <p>Someone has to make this stuff, you know! We consider ‘production functions’ that map how inputs can be turned into outputs. If firms are seeking to maximize profits, then whatever output they want to produce … they will try to produce it using the combination of inputs (Capital, labor, etc.) that can do this at the lowest cost. If we know production functions and input costs, we can describe a firm’s cost of producing every amount of a particular good.</p>
-
+<p></p>
 <p>Economists typically assume that firms make choices to maximize profits. (Mathematically, this ‘optimisation’, i.e., maximisation, has some things in common with the consumer optimisation of utility, so it may look familiar).</p>
 <p>Knowing their cost of production and the demand curve they will face, firms will thus choose to produce the <em>amount</em> that yields them the highest profit; we will explain the conditions for this.</p>
 <p>With ‘free entry/exit of firms’ we have the (ideal) situation of <em>perfect competition</em>.</p>
-
+<p></p>
 <p>Each firm’s supply curve is added up to generate the market supply curve; we consider this in both the ‘short and long run’.
 We define the concepts of ‘consumer surplus’ and ‘producer surplus’; adding these yields the total value in an economy or the total ‘social welfare’.</p>
 <p>We will briefly and roughly consider the idea of an <em>equilibrium</em> in all markets; prices such that quantity demanded equals quantity supplied for all outputs and inputs.
@@ -667,27 +499,27 @@ We will get some sense of the idea of what general ‘economic efficiency’ mea
 <p>I will state and give you some intuition behind the ‘first and second welfare theorems’; the conditions under which free markets yield ‘good outcomes’, defined in a particular sense.</p>
 <hr />
 </div>
-<div id="how-the-market-can-go-wrong-and-how-to-maybe-fix-it-weeks-6-7-approx" class="section level3">
+<div id="how-the-market-can-go-wrong-and-how-to-maybe-fix-it-weeks-6-7-approx" class="section level3" number="2.6.3">
 <h3><span class="header-section-number">2.6.3</span> 3. How the market can go wrong (and how to maybe fix it) (weeks 6-7 approx)</h3>
 <p>Notice I kept saying “under certain conditions” free markets yield good outcomes. These conditions may not hold, for various reasons. In the third chunk, we discuss two of these reasons, which lead to ‘market failures’. It is important to understand these. These (sometimes) offer a justification for government intervention, and help us understand how government can best respond. These also offer insights for business models; which ‘goods’ may be hard to provide without government subsidies, and how can we use technological innovation to capture value and reduce the extent of market failures? (Businesses may also be able to take advantage of market failures in ways that are harmful to public welfare, But I would hate to think I’m training you to do this.)</p>
-
+<p></p>
 <p>Not all goods can easily be restricted to a single consumer. ‘Non-rival’ and ‘non-excludable’ goods (e.g., a fireworks display) are called <em>public goods</em>: these will tend to be undersupplied by the free market, as we will come to understand. We will also discuss the evidence for the private provision of these, and consider government’s ability to provide them.</p>
-
+<p></p>
 <p>This is the polar opposite market structure to perfect competition; a monopoly is a single firm that exclusively dominated a particular industry. It will tend to produce less and charge more than would be socially optimal, yielding a ‘deadweight loss’ (aka ‘DWL’).</p>
 <p>‘Price discrimination’ is (more or less) when a firm charges different prices to different consumers; this can reduce (or increase) the ‘deadweight loss’ of monopoly, as we will learn.</p>
 </div>
-<div id="extensions-to-the-model-and-applications-weeks-8-11-approx" class="section level3">
+<div id="extensions-to-the-model-and-applications-weeks-8-11-approx" class="section level3" number="2.6.4">
 <h3><span class="header-section-number">2.6.4</span> 4. Extensions to the model and applications (weeks 8-11 approx)</h3>
 <p>In the final chunk we extend the model to accommodate some important aspects of the real world. We investigate the implication of these for market outcomes.</p>
-
+<p></p>
 <p>We make many decisions without knowing exactly what the consequence of each choice will be. Economists typically model this using the “expected utility” framework. A warning: students often get this concept wrong, so be careful. Expected utility is not the same as ‘expected monetary value’; and this allows EU to embody risk aversion.</p>
-
+<p></p>
 <p>For many decisions we make the consequences depend on what <em>others</em> do; we have ‘strategic interaction’. Economist usually consider this using the framework and tools of <em>game theory</em>.</p>
-
+<p></p>
 <p>People may not actually make decisions In the hyper-rational way we have been assuming. Here we carefully consider the adaptation of some insights from Psychology to Economics, yielding ‘behavioral economics’</p>
 </div>
 </div>
-<div id="the-big-small-question" class="section level2">
+<div id="the-big-small-question" class="section level2" number="2.7">
 <h2><span class="header-section-number">2.7</span> The big (small) question</h2>
 <blockquote>
 <p>What’s gonna be on the exam??</p>
@@ -702,7 +534,7 @@ We will get some sense of the idea of what general ‘economic efficiency’ mea
 <p>You need to work hard; here is the guideline specified…</p>
 <p><font color='ForestGreen'>Guided Independent Study per half: 143 hours to be divided between background reading (e.g. 40 hrs), solving/reviewing problem sets (e.g. 40 hrs) and exam revision (e.g. 43 hrs)</font></p>
 <p>And now, a pep talk.</p>
-<div id="the-real-big-question-why-are-you-here" class="section level3">
+<div id="the-real-big-question-why-are-you-here" class="section level3" number="2.7.1">
 <h3><span class="header-section-number">2.7.1</span> The real big question: why are you here?</h3>
 <p>To learn.</p>
 <ul>
@@ -734,7 +566,7 @@ We will get some sense of the idea of what general ‘economic efficiency’ mea
 <hr />
 </div>
 </div>
-<div id="resources" class="section level2">
+<div id="resources" class="section level2" number="2.8">
 <h2><span class="header-section-number">2.8</span> Resources</h2>
 <p>I highly advise you to use the forum to ask and answer questions and make suggestions and comments. Students typically find this forum very useful.</p>
 <ul>
@@ -759,7 +591,7 @@ A copy (dropbox link) of each week's 'handouts' file will be added to the VLE ea
 
 Note: You need a (free) Dropbox account to leave these comments; use your real name to get Kudos.
 -->
-<div id="in-lecture-interaction" class="section level3">
+<div id="in-lecture-interaction" class="section level3" number="2.8.1">
 <h3><span class="header-section-number">2.8.1</span> In-lecture interaction</h3>
 <p>Even though our lecture time is scarce, It seems to me that to get value out of this antiquated format known as a lecture, we should have at least some interaction. Otherwise, you may as well be watching a video.</p>
 <p>Some things we may work with include:</p>
@@ -784,7 +616,7 @@ Note: You need a (free) Dropbox account to leave these comments; use your real n
 -->
 </div>
 </div>
-<div id="how-to-do-well" class="section level2">
+<div id="how-to-do-well" class="section level2" number="2.9">
 <h2><span class="header-section-number">2.9</span> How to do well</h2>
 <ol style="list-style-type: decimal">
 <li>Put in the work</li>
@@ -814,7 +646,7 @@ Note: You need a (free) Dropbox account to leave these comments; use your real n
 การเตือ, चेतावनीน: This last comment is especially relevant for non-native speakers of English.</font></p>
 <p><em>Students in past years often worried a great deal but got very good marks, and showed good understanding</em></p>
 </div>
-<div id="fortune-cookie-wisdom" class="section level2">
+<div id="fortune-cookie-wisdom" class="section level2" number="2.10">
 <h2><span class="header-section-number">2.10</span> Fortune Cookie Wisdom</h2>
 <p>Here are some broad Lessons that I hope you take away from this module, And that will help you throughout… I will come back to these.</p>
 <p><img src="picsfigs/fortunecookieyoda.jpg" width="50%" style="display: block; margin: auto;" /></p>
@@ -892,8 +724,8 @@ Todo: add in-document links to the above
 <div class="footnotes">
 <hr />
 <ol start="1">
-<li id="fn1"><p>Much of this work has tried to specify more and more <em>general</em> conditions for this, requiring less and less stringent assumptions.<a href="intro.html#fnref1" class="footnote-back">↩</a></p></li>
-<li id="fn2"><p>For a different approach see ‘radical xchange’ (sp?), Blockchain and Robert Wiblin 80000 hours podcast episode 63,interview with Vitalik Buterin.<a href="intro.html#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn1"><p>Much of this work has tried to specify more and more <em>general</em> conditions for this, requiring less and less stringent assumptions.<a href="intro.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>For a different approach see ‘radical xchange’ (sp?), Blockchain and Robert Wiblin 80000 hours podcast episode 63,interview with Vitalik Buterin.<a href="intro.html#fnref2" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -921,12 +753,12 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": true,
 "weibo": true,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"],
+"google": false
 },
 "fontsettings": {
 "theme": "white",
@@ -938,6 +770,10 @@ gitbook.start({
 "text": null
 },
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },

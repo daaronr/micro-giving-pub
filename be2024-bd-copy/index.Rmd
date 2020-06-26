@@ -11,8 +11,6 @@ output:
     toc_depth: 2
     config:
       toc:
-        before: |
-          <li><a href="./">Intermediate Microeconomics (applied)</a></li>
         after: |
           <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
         collapse: section
@@ -83,10 +81,8 @@ replacements needed:
 
 ```{r install,  echo = FALSE}
 library(pacman)
-p_load(knitr, dplyr, tidyverse, here, janitor, citr, reporttools, magrittr, glue, experiment, estimatr, broom, kableExtra, purrr, ggsignif, recipes, pwr,lubridate,huxtable,sandwich,randomizr,gmodels,emdbook)
+p_load(knitr, dplyr, tidyverse, here, janitor, citr, reporttools, magrittr, glue, experiment, estimatr, broom, kableExtra, purrr, ggsignif, recipes, pwr,lubridate,huxtable,sandwich,randomizr,gmodels,emdbook,png,grid)
 
-library(png)
-library(grid)
 ```
 
 ```{r include=TRUE, eval=FALSE}
