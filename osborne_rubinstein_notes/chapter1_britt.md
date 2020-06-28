@@ -28,6 +28,8 @@ Another binary relation could be '$R_l$: 'the first object is usually larger tha
 'Whale' $R_s$ 'Minnow' $\rightarrow$ `true`
 'Minnow' $R_s$ 'Whale' $\rightarrow$ `false`
 
+Britt's comment: Thank you! These examples are great!! I think they would be great to put in the web-book if you are planning to create one.
+
 <br>
 
 >  For example, “acquaintance” is a binary relation on a set of people. For some pairs $(x , y )$ of people, the statement “x is acquainted with y ” is true, and for some pairs it is false. 
@@ -47,6 +49,8 @@ Britt $R_a$ "Britt's mother" $\rightarrow$ `true`
 
 "Britt's mother" $R_a$ "Britt's lecturer in the UK" $\rightarrow$ `false` (so it's not 'transitive') 
 
+Britt: I do understand the english word 'aquaintance', I was not sure that does this word means in this example. Now I do understand!!
+
 
 > Another example of a binary relation is “smaller than” on the set of numbers. For some pairs $(x,y )$ of numbers, x is smaller than y , and for some it is not.
 
@@ -61,6 +65,8 @@ A: It means 'x relates to y, by the relation R'. If the relation R is 'greater t
 *Q: If so, what does yRx mean?*
 A: It means 'y relates to x' .... with the above example it means 'y is greater than x'.
 
+Britt: Aha!! I see.
+
 <br> 
 
 
@@ -69,12 +75,16 @@ A: It means 'y relates to x' .... with the above example it means 'y is greater 
 A: No, reflexivity is a property (a characteristic) of the *relation* $R$ (where this 'relation' could be 'greater than', 'smaller than', 'equal', 'having the same number of elements', 'preferred to', etc.)
 
 It holds where an object always "relates to itself". For example, in standard maths the relationship  'greater than or equal to ($\geq$) is reflexive, while the relationship $\gt$ is *not* reflexive.  For any number $x$ the statement $x \geq x$ is true (e.g., $10 \geq 10$ is true because $10=10$). However, the statement $x>x$ is false ... obviously a number cannot be greater than itself! (Only the Queen can exceed her own greatness.)
+
+Britt: Hmmmm, why is $10 \geq 10$ true??? How could 10 possibly be greater than 10? Shouldn't the only correct statement be 10 = 10?
  
 > The property that for all alternatives x and y , distinct or not, either $x \succsim y$ or $y \succsim x$ , is called completeness.
 
 > A binary relation R on the set X is complete if for all members x and y of X , either $x R y$ or $y R x$ (or both). A complete binary relation is, in particular, reflexive: for every $x \in X$ we have $x R x$.
 
 Note that the authors are saying that the first property of the binary relationship, 'completeness' automatically ensures the second property 'reflexivity'. Equivalently (contrapositive statement) "a relationship that is not reflexive can not be complete." They don't give the proof of this in the main text. 
+
+Britt: Sorry, I'm still not getting it. Why does 'completeness' automatically ensures the second property 'reflexivity'??
 
 <br>
 
@@ -110,6 +120,8 @@ Each of these rankings are 'complete' (they assess any potential pairing of elem
 
 A: Before I give an explanation, please write what you *think it means* and why, so I can see where your head is.  
 
+Britt: I think I get it now after your upper explanation.
+
 <br>
 
  > This binary relation is transitive but not necessarily complete. Specifically, if two of the relations $\succsim_i$ disagree $(x \succsim_j y$ and $y \succ_k x )$, then $\succsim$ is not complete.
@@ -127,6 +139,6 @@ A: Before I give an explanation, please write what you *think it means* and why,
 - I don’t understand the entire sections, since I can’t understand the minimal and maximal alternatives and since the following parts do not make sense to me.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2ODcyOTc4MiwtMTgzNTczNjIyMywxOT
-AyMjU5MjIzXX0=
+eyJoaXN0b3J5IjpbLTE5Njk2ODQxNzksLTI2ODcyOTc4MiwtMT
+gzNTczNjIyMywxOTAyMjU5MjIzXX0=
 -->
