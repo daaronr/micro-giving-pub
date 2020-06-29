@@ -138,7 +138,10 @@ Britt: I think I get it now after your upper explanation.
 **Britt questions:**
 - I don’t understand the entire sections, since I can’t understand the minimal and maximal alternatives and since the following parts do not make sense to me.
 
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Njk2ODQxNzksLTI2ODcyOTc4MiwtMT
-gzNTczNjIyMywxOTAyMjU5MjIzXX0=
+eyJoaXN0b3J5IjpbLTY0MjQzNDE4NSwtMTk2OTY4NDE3OSwtMj
+Y4NzI5NzgyLC0xODM1NzM2MjIzLDE5MDIyNTkyMjNdfQ==
 -->
