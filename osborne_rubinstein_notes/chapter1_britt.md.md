@@ -140,7 +140,7 @@ Britt: I think I get it now after your upper explanation.
 
 ### 2 Choice
 
-**Britt Question: overall I think chapter 2 is much more challenging than chapter 1. The issues that I have with chapter one did not stopped me from understanding the main **
+**Britt Question: overall I think chapter 2 is much more challenging than chapter 1. The problems I encountered in chapter 1 did not affect my general understanding of chapter 1 since they are consider. However,  **
 
 
 ### 2.1 Utility functions 
@@ -158,7 +158,7 @@ Britt: I think I get it now after your upper explanation.
 **Britt questions:**
 - I don't understand this whole paragraph. Is it possible if you can explain it briefly? Perphas it would make sense to me after you explain the previous question regarding the subset 'A' to me.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDY0NzMyNTQsLTIzMTQ5ODA4MSwtOT
+eyJoaXN0b3J5IjpbLTEzNTU5NDgzNjMsLTIzMTQ5ODA4MSwtOT
 g4NDg3ODMyLC0yNDUzNjI1MDcsMTk2OTY2MzUwOSwtMTAyNTI3
 NjEzOCwtNjQyNDM0MTg1XX0=
 -->
