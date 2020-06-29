@@ -140,7 +140,7 @@ Britt: I think I get it now after your upper explanation.
 
 ### 2 Choice
 
-**Britt Question: overall I think chapter 2 is much more challenging than chapter 1. The problems I encountered in chapter 1 were minor compare to chapter 2 so they did not affect my general understanding of chapter 1. However, I think with chapter 2, because I can't understand the first bit of the utility functions, I fail to understand the following contents.**
+**Britt Question: overall I think chapter 2 is much more challenging than chapter 1. The problems I encountered in chapter 1 were minor compare to chapter 2 so they did not affect my general understanding of chapter 1. However, I think with chapter 2, because I can't understand the first bit of the utility functions, I fail to understand the following contents. since they ar. However,  **
 
 
 ### 2.1 Utility functions 
@@ -158,8 +158,9 @@ Britt: I think I get it now after your upper explanation.
 **Britt questions:**
 - I don't understand this whole paragraph. Is it possible if you can explain it briefly? Perphas it would make sense to me after you explain the previous question regarding the subset 'A' to me.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNTQ4MzQyOCwtMjMxNDk4MDgxLC05OD
-g0ODc4MzIsLTI0NTM2MjUwNywxOTY5NjYzNTA5LC0xMDI1Mjc2
-MTM4LC02NDI0MzQxODUsLTE5Njk2ODQxNzksLTI2ODcyOTc4Mi
-wtMTgzNTczNjIyMywxOTAyMjU5MjIzXX0=
+eyJoaXN0b3J5IjpbLTE1NjY1NzE4MjMsMTkxNTQ4MzQyOCwtMj
+MxNDk4MDgxLC05ODg0ODc4MzIsLTI0NTM2MjUwNywxOTY5NjYz
+NTA5LC0xMDI1Mjc2MTM4LC02NDI0MzQxODUsLTE5Njk2ODQxNz
+ksLTI2ODcyOTc4MiwtMTgzNTczNjIyMywxOTAyMjU5MjIzXX0=
+
 -->
