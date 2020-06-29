@@ -145,11 +145,11 @@ Britt: I think I get it now after your upper explanation.
 >Given a set X, a choice problem for X is a nonempty subset of X and a choice function for X associates with every choice problem A ⊆ X a single member of A (the member chosen).
 
 **Britt questions:**
-- I don’t understand the entire sections, since I can’t understand the minimal and maximal alternatives and since the following parts do not make sense to me.
-- 
+- What does 'nonempty' means in this context? Is it just a 'fancy' word to describe that the subset of X exist?
+- I am not quit understanding this statement. I know you want to ask 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY1Nzc2ODU5LC0xMDI1Mjc2MTM4LC02ND
-I0MzQxODUsLTE5Njk2ODQxNzksLTI2ODcyOTc4MiwtMTgzNTcz
-NjIyMywxOTAyMjU5MjIzXX0=
+eyJoaXN0b3J5IjpbLTI0NTM2MjUwNywtMTAyNTI3NjEzOCwtNj
+QyNDM0MTg1LC0xOTY5Njg0MTc5LC0yNjg3Mjk3ODIsLTE4MzU3
+MzYyMjMsMTkwMjI1OTIyM119
 -->
