@@ -146,10 +146,10 @@ Britt: I think I get it now after your upper explanation.
 
 **Britt questions:**
 - What does 'nonempty' means in this context? Is it just a 'fancy' word to describe that the subset of X exist?
-- I am not quit understanding this statement. I know you want to ask 
+- I am not quit understanding this statement. I know you want to ask what do I think this mean so you can tell me if I am correct. However, to be honest I am not 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0NTM2MjUwNywtMTAyNTI3NjEzOCwtNj
-QyNDM0MTg1LC0xOTY5Njg0MTc5LC0yNjg3Mjk3ODIsLTE4MzU3
-MzYyMjMsMTkwMjI1OTIyM119
+eyJoaXN0b3J5IjpbNDg5MzUxNDI3LC0xMDI1Mjc2MTM4LC02ND
+I0MzQxODUsLTE5Njk2ODQxNzksLTI2ODcyOTc4MiwtMTgzNTcz
+NjIyMywxOTAyMjU5MjIzXX0=
 -->
