@@ -149,8 +149,13 @@ Britt: I think I get it now after your upper explanation.
 
 **Britt questions:**
 - What does 'nonempty' means in this context? Is it just a 'fancy' word to describe that the subset of X exist?
->
+
+>max{u(x):x ∈A}
+>Note that if two individuals have two different strict preference relations and, given any set A choose alternatives in A that are best according to these prefer- ence relations, then their corresponding choice functions differ. That is, if for two alternatives x and y one individual prefers x to y and the other prefers y to x , then the choice function of the first individual assigns x to the problem {x , y } and the choice function of the second individual assigns y to this set.
+
+**Britt questions:**
+- I don't understand this whole paragraph. Is it possible if you can 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MTI3NjU0MiwtMjQ1MzYyNTA3LDE5Nj
+eyJoaXN0b3J5IjpbLTk4ODQ4NzgzMiwtMjQ1MzYyNTA3LDE5Nj
 k2NjM1MDksLTEwMjUyNzYxMzgsLTY0MjQzNDE4NV19
 -->
