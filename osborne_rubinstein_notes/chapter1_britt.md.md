@@ -140,7 +140,7 @@ Britt: I think I get it now after your upper explanation.
 
 
 
-
+### 2.1 Utility functions 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MjQzNDE4NV19
+eyJoaXN0b3J5IjpbLTEwMjUyNzYxMzgsLTY0MjQzNDE4NV19
 -->
