@@ -156,10 +156,10 @@ Britt: I think I get it now after your upper explanation.
 >Note that if two individuals have two different strict preference relations and, given any set A choose alternatives in A that are best according to these prefer- ence relations, then their corresponding choice functions differ. That is, if for two alternatives x and y one individual prefers x to y and the other prefers y to x , then the choice function of the first individual assigns x to the problem {x , y } and the choice function of the second individual assigns y to this set.
 
 **Britt questions:**
-- I don't understand this whole paragraph. Is it possible if you can explain it briefly? Perphas it would make sense to me after you explain the previous question regarding the subset 'A' to me
+- I don't understand this whole paragraph. Is it possible if you can explain it briefly? Perphas it would make sense to me after you explain the previous question regarding the subset 'A' to me.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDUwNzA4MDksLTk4ODQ4NzgzMiwtMj
-Q1MzYyNTA3LDE5Njk2NjM1MDksLTEwMjUyNzYxMzgsLTY0MjQz
-NDE4NSwtMTk2OTY4NDE3OSwtMjY4NzI5NzgyLC0xODM1NzM2Mj
-IzLDE5MDIyNTkyMjNdfQ==
+eyJoaXN0b3J5IjpbLTIzMTQ5ODA4MSwtOTg4NDg3ODMyLC0yND
+UzNjI1MDcsMTk2OTY2MzUwOSwtMTAyNTI3NjEzOCwtNjQyNDM0
+MTg1LC0xOTY5Njg0MTc5LC0yNjg3Mjk3ODIsLTE4MzU3MzYyMj
+MsMTkwMjI1OTIyM119
 -->
