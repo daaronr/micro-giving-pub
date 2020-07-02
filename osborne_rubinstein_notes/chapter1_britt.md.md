@@ -140,17 +140,19 @@ Britt: I think I get it now after your upper explanation.
 
 ### 2 Choice
 
-**Britt Question: overall I think chapter 2 is much more challenging than chapter 1. The problems I encountered in chapter 1 were minor compare to chapter 2 so they did not affect my general understanding of chapter 1. However, I think with chapter 2, because I can't understand the first bit of the utility functions, I fail to understand the following contents. since they ar. However,  **
+**Britt Question:** overall I think chapter 2 is much more challenging than chapter 1. The problems I encountered in chapter 1 were minor compare to chapter 2 so they did not affect my general understanding of chapter 1. However, I think with chapter 2, because I can't understand the first bit of the utility functions, I fail to understand the following contents. since they ar. However,  
 
-DR: OK let’s see if I can help you through it..
+*DR: OK let’s see if I can help you through it.*
 
 ### 2.1 Utility functions 
 
->Formally, let X be the set of all the alternatives an individual might face. A choice problem is a nonempty subset A of X , from which the individual chooses an alternative. A choice function describes the individual’s choice for every possible choice problem.
+> Formally, let X be the set of all the alternatives an individual might face. A choice problem is a nonempty subset A of X , from which the individual chooses an alternative. A choice function describes the individual’s choice for every possible choice problem.
 >Given a set X, a choice problem for X is a nonempty subset of X and a choice function for X associates with every choice problem A ⊆ X a single member of A (the member chosen).
 
-**Britt questions:**
-- What does 'nonempty' means in this context? Is it just a 'fancy' word to describe that the subset of X exist?
+Q: What does 'nonempty' means in this context? Is it just a 'fancy' word to describe that the subset of X exist?
+
+A: 
+
 - What does the subset 'A' actually means in this context? Does it means one of the alternative choices?
 
 >max{u(x):x ∈A}
@@ -159,7 +161,7 @@ DR: OK let’s see if I can help you through it..
 **Britt questions:**
 - I don't understand this whole paragraph. Is it possible if you can explain it briefly? Perphas it would make sense to me after you explain the previous question regarding the subset 'A' to me.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMzE4NDMxMSwtMTU2NjU3MTgyMywxOT
+eyJoaXN0b3J5IjpbMTE3MTU3NjE4NCwtMTU2NjU3MTgyMywxOT
 E1NDgzNDI4LC0yMzE0OTgwODEsLTk4ODQ4NzgzMiwtMjQ1MzYy
 NTA3LDE5Njk2NjM1MDksLTEwMjUyNzYxMzgsLTY0MjQzNDE4NV
 19
