@@ -151,10 +151,21 @@ DR: OK but it still might be a good exercise to write it down, when you have tim
 - I don’t understand the entire sections, since I can’t understand the minimal and maximal alternatives and since the following parts do not make sense to me.
 
 
+## 2 Choice
+
+**Britt Question:** overall I think chapter 2 is much more challenging than chapter 1. The problems I encountered in chapter 1 were minor compare to chapter 2 so they did not affect my general understanding of chapter 1. However, I think with chapter 2, because I can't understand the first bit of the utility functions, I fail to understand the following contents. since they a...
+
+*DR: Hopefully I can explain enough to have it make sense. Here we go :). *
+
+\
 
 ### 2.1 Utility functions
 
->Given a set X, a choice problem for X is a nonempty subset of X and a choice function for X associates with every choice problem A ⊆ X a single member of A (the member chosen).
+>Formally, let X be the set of all the alternatives an individual might face. A choice problem is a nonempty
+subset A of X , from which the individual chooses an alternative. A choice function describes the individual’s choice for every possible choice problem.
+>Given a set X, a choice problem for X is a nonempty subset of X and a choice function for X associates with every choice problem $A \in  X$ a single member of A (the member chosen).
+
+
 
 **Britt questions:**
 
@@ -177,42 +188,66 @@ Q:  What does the subset 'A' actually means in this context? Does it means one o
 
 - In applying this,  the set $X$ could be something like 'all combinations of consumption goods in the economy' and a subset $A$ of the set $X$ might be 'all combinations that are in the budget set for the individual at current prices and wages'.
 
+(So note that $A$ can represent a bundle of goods and services, or just a single good, or even 'no goods'.)
+
+\
+
+
 > a choice function for $X$ associates with every choice problem $A \in X$ a single member of $A$ (the member chosen).
 
 - Again, in the most common application the 'choice function' will specify which bundle of goods the consumer will purchase for any possible endowment (think 'income') and set of prices.
 
 - In undergraduate economics, when we assigned a utility function to the individual, this usually allowed us to solve for her unique maximising choice (how much of each good she would purchase) for any budget constraint. We might think of this as her 'multi-valued demand function'.  (Although there were also cases in which there was more than one choice that lead to the same utility, e.g., where two goods were perfect substitutes and the prices were set equal to the constant MRS).
 
-- They are being very formal and precise here. This will allow them to explore a broader set of models and situations. E.g., there may be a 'choice function' that does not result from 'constrained utility maximisation' (and could not be expressed in terms of constrained utility maximisation).  This is particularly relevant for behavioral economics.
+- They are being formal and precise here. This will allow them to explore a broader set of models and situations. E.g., there may be a 'choice function' that does not result from 'constrained utility maximisation' (and could not be expressed in terms of constrained utility maximisation).  This is particularly relevant for behavioral economics.
 
 \
 
+Formal problem for a utility maximiser:
 
+> $max\{u(x):x \in A\}$
 
->max{u(x):x ∈A}
->Note that if two individuals have two different strict preference relations and, given any set A choose alternatives in A that are best according to these prefer- ence relations, then their corresponding choice functions differ. That is, if for two alternatives x and y one individual prefers x to y and the other prefers y to x , then the choice function of the first individual assigns x to the problem {x , y } and the choice function of the second individual assigns y to this set.
+(\@Britt: does the above problem make sense for you?)
+
+\
+
+>Note that if two individuals have two different strict preference relations and, given any set A choose alternatives in A that are best according to these preference relations, then their corresponding choice functions differ. That is, if for two alternatives x and y one individual prefers x to y and the other prefers y to x , then the choice function of the first individual assigns x to the problem {x , y } and the choice function of the second individual assigns y to this set.
+
+\
 
 **Britt questions:**
-- I don't understand this whole paragraph. Is it possible if you can explain it briefly? Perphas it would make sense to me after you explain the previous question regarding the subset 'A' to me.
-<!--stackedit_data:
+
+- I don't understand this whole paragraph. Is it possible if you can explain it briefly? Perhaps it would make sense to me after you explain the previous question regarding the subset 'A' to me.
 
 
+*DR:* Let me break it up. It could be better written, imho:
 
-## 2 Choice
 
-**Britt Question:** overall I think chapter 2 is much more challenging than chapter 1. The problems I encountered in chapter 1 were minor compare to chapter 2 so they did not affect my general understanding of chapter 1. However, I think with chapter 2, because I can't understand the first bit of the utility functions, I fail to understand the following contents. since they a...
+> Note that if two individuals have two different strict preference relations
 
-*DR: I'll see what I can address .
+... So, suppose that these two people have different preferences, i.e., they rank alternatives differently...
 
-### 2.1 Utility functions
+> and, given any set A choose alternatives in A that are best according to these preference relations,
 
->Formally, let X be the set of all the alternatives an individual might face. A choice problem is a nonempty subset A of X , from which the individual chooses an alternative. A choice function describes the individual’s choice for every possible choice problem.
->Given a set X, a choice problem for X is a nonempty subset of X and a choice function for X associates with every choice problem A ⊆ X a single member of A (the member chosen).
-**Britt questions:**
-- What does 'nonempty' means in this context? Is it just a 'fancy' word to describe that the subset of X exist?
-- What does the subset 'A' actually means in this context? Does it means one of the alternative choices?
+and suppose that they *choose according to their preference relations* (it is not automatic; we could have people that prefer one thing but choose something else... this gets to behavioral economics and the 'deep meaning' of preferences)...
 
->max{u(x):x ∈A}
->Note that if two individuals have two different strict preference relations and, given any set A choose alternatives in A that are best according to these prefer- ence relations, then their corresponding choice functions differ. That is, if for two alternatives x and y one individual prefers x to y and the other prefers y to x , then the choice function of the first individual assigns x to the problem {x , y } and the choice function of the second individual assigns y to this set.
-**Britt questions:**
+
+> then their corresponding choice functions differ.
+
+... then they will make different choices in some cases. For some choice sets (but not necessarily for all choice sets) these individuals will choose different bundles of goods and services. So if we call the 'mapping between choice sets and choices made' a *choice function*, these two people will have different choice functions.
+
+\
+
+> That is, if for two alternatives x and y one individual prefers x to y and the other prefers y to x , then the choice function of the first individual assigns x to the problem $\{x , y \}$ and the choice function of the second individual assigns y to this set.
+
+They give an example of this difference.
+
+- If choice set $A_0$ consists of two elements, $x$ and $y$  (a choice between the two; each are 'feasible' and nothing else is feasible) and for person 1 $x \succ y$ but for person 2  $y \succ x$,
+
+- then when presented with choice set $A_0$ person 1 chooses x but person 2 would choose y.
+
+- Thus the 'choice function' must map from $A_0 \rightarrow x$ for person 1, but it must map from $A_0 \rightarrow y$ for person 2.
+
+- Thus these functions must differ. "QED."
+
 
