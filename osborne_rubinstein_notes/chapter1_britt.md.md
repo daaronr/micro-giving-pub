@@ -138,17 +138,35 @@ Britt: I think I get it now after your upper explanation.
 **Britt questions:**
 - I don’t understand the entire sections, since I can’t understand the minimal and maximal alternatives and since the following parts do not make sense to me.
 
+### 2 Choice
 
+**Britt Question:** overall I think chapter 2 is much more challenging than chapter 1. The problems I encountered in chapter 1 were minor compare to chapter 2 so they did not affect my general understanding of chapter 1. However, I think with chapter 2, because I can't understand the first bit of the utility functions, I fail to understand the following contents. since they ar. However,  
+
+*DR: OK let’s see if I can help you through it.*
 
 ### 2.1 Utility functions 
 
->Given a set X, a choice problem for X is a nonempty subset of X and a choice function for X associates with every choice problem A ⊆ X a single member of A (the member chosen).
+> Formally, let X be the set of all the alternatives an individual might face. A choice problem is a nonempty subset A of X , from which the individual chooses an alternative. A choice function describes the individual’s choice for every possible choice problem.
+
+Q: What does 'nonempty' means in this context? Is it just a 'fancy' word to describe that the subset of X exist?
+
+*A: Almost. A set can have any number of elements including 0 elements. The set with 0 elements is called the ‘empty set’. (This is an important part of set theory; it also relates to concepts in computer programming; you can have a ‘list with 0 elements).*
+
+*So they are just saying that the subset $A$ has at least one element in it; at least one choice*
+
+> Given a set X, a choice problem for X is a nonempty subset of X and a choice function for X associates with every choice problem A ⊆ X a single member of A (the member chosen).
+
+
+- What does the subset 'A' actually means in this context? Does it means one of the alternative choices?
+
+>max{u(x):x ∈A}
+>Note that if two individuals have two different strict preference relations and, given any set A choose alternatives in A that are best according to these prefer- ence relations, then their corresponding choice functions differ. That is, if for two alternatives x and y one individual prefers x to y and the other prefers y to x , then the choice function of the first individual assigns x to the problem {x , y } and the choice function of the second individual assigns y to this set.
 
 **Britt questions:**
-- What does 'nonempty' means in this context? Is it just a 'fancy' word to describe that the subset of X exist?
-
-
+- I don't understand this whole paragraph. Is it possible if you can explain it briefly? Perphas it would make sense to me after you explain the previous question regarding the subset 'A' to me.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2OTY2MzUwOSwtMTAyNTI3NjEzOCwtNj
-QyNDM0MTg1XX0=
+eyJoaXN0b3J5IjpbLTI3NDczNjE4NywtMTU2NjU3MTgyMywxOT
+E1NDgzNDI4LC0yMzE0OTgwODEsLTk4ODQ4NzgzMiwtMjQ1MzYy
+NTA3LDE5Njk2NjM1MDksLTEwMjUyNzYxMzgsLTY0MjQzNDE4NV
+19
 -->
