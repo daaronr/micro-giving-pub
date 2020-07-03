@@ -253,7 +253,7 @@ and suppose that they *choose according to their preference relations* (it is no
 
 ... then they will make different choices in some cases. For some choice sets (but not necessarily for all choice sets) these individuals will choose different bundles of goods and services. So if we call the 'mapping between choice sets and choices made' a *choice function*, these two people will have different choice functions.
 
-Britt: Ooooh I see. In simple words, does it mean that two people would chooese things differently? For example,  when David and Luke go to Starbucks David chooses Latte and Luke chooses cheesecake David prefers coffee and Luke prefers cakes.
+**Britt: Ooooh I see. In simple words, does it mean that two people would choose things differently? Example: when David and Luke go to Starbucks David chooses Latte and Luke chooses cheesecake since David prefers coffee to cak and Luke prefers cakes. Is this example correct?**
 
 \
 
@@ -271,6 +271,6 @@ They give an example of this difference.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNDUyOTEwNiwtNDExODc0ODA5LDE3Mz
+eyJoaXN0b3J5IjpbLTM3Mzg4ODg5MywtNDExODc0ODA5LDE3Mz
 k0MjIxLDEzMzU0Nzk3OTddfQ==
 -->
