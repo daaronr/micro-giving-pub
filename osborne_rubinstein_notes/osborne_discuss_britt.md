@@ -211,16 +211,16 @@ Q:  What does the subset 'A' actually means in this context? Does it means one o
 - They are being formal and precise here. This will allow them to explore a broader set of models and situations. E.g., there may be a 'choice function' that does not result from 'constrained utility maximisation' (and could not be expressed in terms of constrained utility maximisation).  This is particularly relevant for behavioral economics.
 
 **Britt: Yes, I think the language they use is very formal and concised which makes it hard to understand. Sorry, I don't understand this bit: E.g., there may be a 'choice function' that does not result from 'constrained utility maximisation' (and could not be expressed in terms of constrained utility maximisation).** 
-
-Do you mean there may be a choice function with any constrain? Can you please give an example?
-
-We missed the entire part of 'behaviroal economics' in our BEE2038 module due to the strike. Perphas this pa
+**Do you mean there may be a choice function with any constrain? Can you please give an example?
+We missed the entire section of 'behaviroal economics' in our BEE2038 module due to the strike. Perphas this part would make more sense to me if I have studied behavirol economics last year?**
 
 Formal problem for a utility maximiser:
 
 > $max\{u(x):x \in A\}$
 
 (\@Britt: does the above problem make sense for you?)
+
+Britt: Partly... I am still not getting the second part of the statment. I will do some research tomorrow to 
 
 \
 
@@ -265,6 +265,6 @@ They give an example of this difference.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxOTI0ODY3OSwxNzM5NDIyMSwxMzM1ND
-c5Nzk3XX0=
+eyJoaXN0b3J5IjpbMjE5ODgzOTM0LDE3Mzk0MjIxLDEzMzU0Nz
+k3OTddfQ==
 -->
