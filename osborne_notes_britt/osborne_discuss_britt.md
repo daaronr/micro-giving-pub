@@ -193,7 +193,7 @@ Q:  What does the subset 'A' actually means in this context? Does it means one o
 
 - In applying this,  the set $X$ could be something like 'all combinations of consumption goods in the economy' and a subset $A$ of the set $X$ might be 'all combinations that are in the budget set for the individual at current prices and wages'.
 
-**Britt: Ohhhhhhh I see. Is 'utility maximisation with a budget constrain' an example of a choice problem?** 
+**Britt: Ohhhhhhh I see. Is 'utility maximisation with a budget constrain' an example of a choice problem? If so, is 'minimising production cost for a given production function' also an example of a choice problem?** 
 
 (So note that $A$ can represent a bundle of goods and services, or just a single good, or even 'no goods'.)
 
@@ -206,7 +206,7 @@ Q:  What does the subset 'A' actually means in this context? Does it means one o
 
 - In undergraduate economics, when we assigned a utility function to the individual, this usually allowed us to solve for her unique maximising choice (how much of each good she would purchase) for any budget constraint. We might think of this as her 'multi-valued demand function'.  (Although there were also cases in which there was more than one choice that lead to the same utility, e.g., where two goods were perfect substitutes and the prices were set equal to the constant MRS).
 
-Britt: So my example was correct! 
+**Britt: So my example was correct!** 
 
 - They are being formal and precise here. This will allow them to explore a broader set of models and situations. E.g., there may be a 'choice function' that does not result from 'constrained utility maximisation' (and could not be expressed in terms of constrained utility maximisation).  This is particularly relevant for behavioral economics.
 
@@ -261,6 +261,6 @@ They give an example of this difference.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMTAwNDcxNCwxNzM5NDIyMSwxMzM1ND
-c5Nzk3XX0=
+eyJoaXN0b3J5IjpbMTMxMjg3NDQ2LDE3Mzk0MjIxLDEzMzU0Nz
+k3OTddfQ==
 -->
