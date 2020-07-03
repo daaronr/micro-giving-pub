@@ -244,7 +244,7 @@ Britt: Partly... I am still not getting the second part of the statment. I will 
 
 and suppose that they *choose according to their preference relations* (it is not automatic; we could have people that prefer one thing but choose something else... this gets to behavioral economics and the 'deep meaning' of preferences)...
 
-**Britt: Wow! Seems like behavioral economics play a vital role in microeconomics!**
+**Britt: Wow! Seems like behavioral economics play a vital role in microeconomics! Hohow do people prefer one thing but choose something else **
 
 
 > then their corresponding choice functions differ.
@@ -267,6 +267,6 @@ They give an example of this difference.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE5OTA0NTQ4LC00MTE4NzQ4MDksMTczOT
+eyJoaXN0b3J5IjpbODI1NjMzMTI0LC00MTE4NzQ4MDksMTczOT
 QyMjEsMTMzNTQ3OTc5N119
 -->
