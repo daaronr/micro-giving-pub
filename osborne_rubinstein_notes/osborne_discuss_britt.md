@@ -193,7 +193,7 @@ Q:  What does the subset 'A' actually means in this context? Does it means one o
 
 - In applying this,  the set $X$ could be something like 'all combinations of consumption goods in the economy' and a subset $A$ of the set $X$ might be 'all combinations that are in the budget set for the individual at current prices and wages'.
 
-
+Britt: Ohhhhhhh I see. So the utility function 
 
 (So note that $A$ can represent a bundle of goods and services, or just a single good, or even 'no goods'.)
 
@@ -259,6 +259,6 @@ They give an example of this difference.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NjQyMjcyNywxNzM5NDIyMSwxMzM1ND
+eyJoaXN0b3J5IjpbLTkxNzcxMTAyMiwxNzM5NDIyMSwxMzM1ND
 c5Nzk3XX0=
 -->
