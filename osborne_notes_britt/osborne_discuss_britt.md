@@ -253,6 +253,8 @@ and suppose that they *choose according to their preference relations* (it is no
 
 ... then they will make different choices in some cases. For some choice sets (but not necessarily for all choice sets) these individuals will choose different bundles of goods and services. So if we call the 'mapping between choice sets and choices made' a *choice function*, these two people will have different choice functions.
 
+Britt: Ooooh I see. In simple words, does it mean that two people would chooese things differently? For example, 
+
 \
 
 > That is, if for two alternatives x and y one individual prefers x to y and the other prefers y to x , then the choice function of the first individual assigns x to the problem $\{x , y \}$ and the choice function of the second individual assigns y to this set.
@@ -269,6 +271,6 @@ They give an example of this difference.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc4NzM3Mzk1LC00MTE4NzQ4MDksMTczOT
-QyMjEsMTMzNTQ3OTc5N119
+eyJoaXN0b3J5IjpbLTE3NDg4NDc5NTEsLTQxMTg3NDgwOSwxNz
+M5NDIyMSwxMzM1NDc5Nzk3XX0=
 -->
