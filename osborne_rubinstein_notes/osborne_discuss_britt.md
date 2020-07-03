@@ -184,7 +184,7 @@ Q:  What does the subset 'A' actually means in this context? Does it means one o
 
 *A: I think this needs more explanation. They are being very concise...*
 
-Britt's New comment: I think
+Britt's New comment: I agree... There are a lot of maths knowledge that the authors 'assumed' the students to have known in advance which are quite challenging for me. However, your master students may have a better maths background compare to me since I am still a second year student. 
 
 > Given a set X, a choice problem for X is a nonempty subset of X
 
@@ -254,5 +254,5 @@ They give an example of this difference.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc0MzU0NjI0LDEzMzU0Nzk3OTddfQ==
+eyJoaXN0b3J5IjpbMjUyNTg3NTE0LDEzMzU0Nzk3OTddfQ==
 -->
