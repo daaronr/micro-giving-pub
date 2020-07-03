@@ -212,7 +212,7 @@ Q:  What does the subset 'A' actually means in this context? Does it means one o
 
 **Britt: Yes, I think the language they use is very formal and concised which makes it hard to understand.** 
 
-Britt: I am not sure what do you mean by "there may be a 'choice function' that does not result from 'constrained utility maximisation'". Is it possible if you can give an exampl
+Britt: I am not sure what do you mean by "there may be a 'choice function' that does not result from 'constrained utility maximisation'". Is it possible if you can give a 'daily example'? Does it mean an individual is facing a choice between soft drink and burger without 
 
 Formal problem for a utility maximiser:
 
@@ -263,6 +263,6 @@ They give an example of this difference.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4OTU3OTc4OCwxNzM5NDIyMSwxMzM1ND
-c5Nzk3XX0=
+eyJoaXN0b3J5IjpbLTk3Njk1NTk0LDE3Mzk0MjIxLDEzMzU0Nz
+k3OTddfQ==
 -->
