@@ -219,7 +219,7 @@ Formal problem for a utility maximiser:
 
 (\@Britt: does the above problem make sense for you?)
 
-Britt: Partly... I am still not getting the second part of the statment. I will do some research and watch some videos online tomorrow to aid my understanding. 
+Britt: Partly... I am still not getting the second part of the statement. I will do some research and watch some videos online tomorrow to aid my understanding. 
 
 \
 
@@ -272,6 +272,6 @@ They give an example of this difference.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MzEzOTA0MiwtNTY4NzU5NDY2LC00MT
-E4NzQ4MDksMTczOTQyMjEsMTMzNTQ3OTc5N119
+eyJoaXN0b3J5IjpbNjEyNzU2ODkzLC01Njg3NTk0NjYsLTQxMT
+g3NDgwOSwxNzM5NDIyMSwxMzM1NDc5Nzk3XX0=
 -->
