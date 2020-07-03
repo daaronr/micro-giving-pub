@@ -246,7 +246,7 @@ and suppose that they *choose according to their preference relations* (it is no
 
 **Britt: Wow! Seems like behavioral economics play a vital role in microeconomics!** 
 
-**Britt's question: In previous section, the authors said that they assume 'the individual is rational' ------ how can people prefer one thing but choose something else if they are rational? I though people w** 
+**Britt's question: In previous section, the authors said that they assume 'the individual is rational' ------ how can people prefer one thing but choose something else if they are rational? I thought an individual chooses an alternative that is best according to her preference relation over the set of possible alternatives?** 
 
 
 > then their corresponding choice functions differ.
@@ -269,6 +269,6 @@ They give an example of this difference.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNjg1MDg3NSwtNDExODc0ODA5LDE3Mz
-k0MjIxLDEzMzU0Nzk3OTddfQ==
+eyJoaXN0b3J5IjpbNzc4NzM3Mzk1LC00MTE4NzQ4MDksMTczOT
+QyMjEsMTMzNTQ3OTc5N119
 -->
