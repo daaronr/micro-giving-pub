@@ -220,7 +220,7 @@ Formal problem for a utility maximiser:
 
 (\@Britt: does the above problem make sense for you?)
 
-Britt: Partly... I am still not getting the second part of the statment. I will do some research tomorrow to aid my understan
+Britt: Partly... I am still not getting the second part of the statment. I will do some research and watch some videos online tomorrow to aid my understanding. 
 
 \
 
@@ -265,6 +265,6 @@ They give an example of this difference.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA1MjIzMiwxNzM5NDIyMSwxMzM1NDc5Nz
-k3XX0=
+eyJoaXN0b3J5IjpbLTQxMTg3NDgwOSwxNzM5NDIyMSwxMzM1ND
+c5Nzk3XX0=
 -->
