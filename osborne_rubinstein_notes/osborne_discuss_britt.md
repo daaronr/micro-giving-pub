@@ -177,6 +177,8 @@ Q: What does 'nonempty' means in this context? Is it just a 'fancy' word to desc
 
 *So they are just saying that the subset $A$ has at least one element in it; there is at least one choice available (of course you will want at least 2 choices for this to be interesting)*
 
+Britt: hmmm
+
 \
 
 > Given a set X, a choice problem for X is a nonempty subset of X and a choice function for X associates with every choice problem $A \in X$ a single member of $A$ (the member chosen).
@@ -256,6 +258,6 @@ They give an example of this difference.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjkyODk1NDcsMTczOTQyMjEsMTMzNT
-Q3OTc5N119
+eyJoaXN0b3J5IjpbMTcyNTc1NTcwNSwxNzM5NDIyMSwxMzM1ND
+c5Nzk3XX0=
 -->
