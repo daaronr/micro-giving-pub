@@ -177,7 +177,6 @@ Q: What does 'nonempty' means in this context? Is it just a 'fancy' word to desc
 
 *So they are just saying that the subset $A$ has at least one element in it; there is at least one choice available (of course you will want at least 2 choices for this to be interesting)*
 
-Britt: hmmm
 
 \
 
@@ -188,11 +187,13 @@ Q:  What does the subset 'A' actually means in this context? Does it means one o
 
 *A: I think this needs more explanation. They are being very concise...*
 
-Britt's New comment: I agree that they are being very concise... There are a lot of maths knowledge that the authors 'assumed' the students to have known in advance which are quite challenging for me. However, your master students may have a better maths background compare to me since I am currently a second year student. Perphas this book would be easier for me after my third year.
+**Britt's New comment: I agree that they are being very concise... There are a lot of maths knowledge that the authors 'assumed' the students to have known in advance which are quite challenging for me. However, your master students may have a better maths background compare to me since I am currently a second year student. Perphas this book would be easier for me after my third year.**
 
 > Given a set X, a choice problem for X is a nonempty subset of X
 
 - In applying this,  the set $X$ could be something like 'all combinations of consumption goods in the economy' and a subset $A$ of the set $X$ might be 'all combinations that are in the budget set for the individual at current prices and wages'.
+
+
 
 (So note that $A$ can represent a bundle of goods and services, or just a single good, or even 'no goods'.)
 
@@ -258,6 +259,6 @@ They give an example of this difference.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNTc1NTcwNSwxNzM5NDIyMSwxMzM1ND
+eyJoaXN0b3J5IjpbMTk1NjQyMjcyNywxNzM5NDIyMSwxMzM1ND
 c5Nzk3XX0=
 -->
