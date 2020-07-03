@@ -193,7 +193,7 @@ Q:  What does the subset 'A' actually means in this context? Does it means one o
 
 - In applying this,  the set $X$ could be something like 'all combinations of consumption goods in the economy' and a subset $A$ of the set $X$ might be 'all combinations that are in the budget set for the individual at current prices and wages'.
 
-**Britt: Ohhhhhhh I see. Is 'utility maximisation with a budget constrain' an example of a choice problem? If so, is 'minimising production cost for a given production function' also an example of a choice problem?** 
+**Britt: Ohhhhhhh I see. Is 'utility maximisation with a budget constrain' an example of a choice problem? If so, is 'minimising production cost for a given production function' also an example of a choice problem? In this case, A represent 'all combinations of capital and labour in the economy' and a ** 
 
 (So note that $A$ can represent a bundle of goods and services, or just a single good, or even 'no goods'.)
 
@@ -261,6 +261,6 @@ They give an example of this difference.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUyNjIxOTczLDE3Mzk0MjIxLDEzMzU0Nz
+eyJoaXN0b3J5IjpbMjYxMzYyMjkzLDE3Mzk0MjIxLDEzMzU0Nz
 k3OTddfQ==
 -->
