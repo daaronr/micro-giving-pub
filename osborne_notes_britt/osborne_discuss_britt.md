@@ -80,6 +80,8 @@ Britt: Hmmmm, why is $10 \geq 10$ true??? How could 10 possibly be greater than 
 
 DR: Because this is the 'greater than or equal to' sign. Of course '10 is greater than or equal to 10' because they are equal. Just as in computer programming, with an 'OR' operator the condition evaluates as true if either (or both) of the conditions are true.
 
+B
+
 '
 
 
@@ -184,7 +186,7 @@ Q:  What does the subset 'A' actually means in this context? Does it means one o
 
 *A: I think this needs more explanation. They are being very concise...*
 
-Britt's New comment: I agree... There are a lot of maths knowledge that the authors 'assumed' the students to have known in advance which are quite challenging for me. However, your master students may have a better maths background compare to me since I am still a second year student. Perphas 
+Britt's New comment: I agree that they are being very concise... There are a lot of maths knowledge that the authors 'assumed' the students to have known in advance which are quite challenging for me. However, your master students may have a better maths background compare to me since I am currently a second year student. Perphas this book would be easier for me after my third year.
 
 > Given a set X, a choice problem for X is a nonempty subset of X
 
@@ -254,5 +256,5 @@ They give an example of this difference.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMDAyOTc1OSwxMzM1NDc5Nzk3XX0=
+eyJoaXN0b3J5IjpbLTU5MDEzOTI5MCwxMzM1NDc5Nzk3XX0=
 -->
