@@ -184,6 +184,8 @@ Q:  What does the subset 'A' actually means in this context? Does it means one o
 
 *A: I think this needs more explanation. They are being very concise...*
 
+Britt's New comment: I think
+
 > Given a set X, a choice problem for X is a nonempty subset of X
 
 - In applying this,  the set $X$ could be something like 'all combinations of consumption goods in the economy' and a subset $A$ of the set $X$ might be 'all combinations that are in the budget set for the individual at current prices and wages'.
@@ -252,5 +254,5 @@ They give an example of this difference.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNTQ3OTc5N119
+eyJoaXN0b3J5IjpbNTc0MzU0NjI0LDEzMzU0Nzk3OTddfQ==
 -->
