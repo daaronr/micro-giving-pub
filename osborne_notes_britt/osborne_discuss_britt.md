@@ -80,8 +80,7 @@ Britt: Hmmmm, why is $10 \geq 10$ true??? How could 10 possibly be greater than 
 
 DR: Because this is the 'greater than or equal to' sign. Of course '10 is greater than or equal to 10' because they are equal. Just as in computer programming, with an 'OR' operator the condition evaluates as true if either (or both) of the conditions are true.
 
-**Britt's new comment: Ooook, I think I understand it now. It makes sense to me when you linked it with computer programming; but what is the point of the '>' sign? Couldn't the authors only use the '=' sign?**
-
+**Britt's new comment: Ooook, I think I understand it now. It makes sense to me when you linked it with computer programming; but whaty is the point of the '>' sign? Couldn't the authors only use the '= si
 '
 
 
@@ -273,6 +272,6 @@ They give an example of this difference.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2ODc1OTQ2NiwtNDExODc0ODA5LDE3Mz
-k0MjIxLDEzMzU0Nzk3OTddfQ==
+eyJoaXN0b3J5IjpbMTU5MzEzOTA0MiwtNTY4NzU5NDY2LC00MT
+E4NzQ4MDksMTczOTQyMjEsMTMzNTQ3OTc5N119
 -->
