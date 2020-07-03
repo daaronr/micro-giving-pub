@@ -267,12 +267,12 @@ They give an example of this difference.
 
 - Thus the 'choice function' must map from $A_0 \rightarrow x$ for person 1, but it must map from $A_0 \rightarrow y$ for person 2.
 
-**Britt: Ohhh I see.  I understand perfectly what you meant by the first two sentences, however I am wondering what do you mean by map from $A_0 \rightarrow x$ ?** 
+**Britt: Ohhh I see.  I understand perfectly what you meant by the first two sentences, however I am wondering what do you mean by map from $A_0 \rightarrow x$ ? Also, what does the choice function looks like for person 1 and 2 respectively?** 
 
 - Thus these functions must differ. "QED."
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MTcwMjQ0NywtNDExODc0ODA5LDE3Mz
+eyJoaXN0b3J5IjpbLTU2ODc1OTQ2NiwtNDExODc0ODA5LDE3Mz
 k0MjIxLDEzMzU0Nzk3OTddfQ==
 -->
