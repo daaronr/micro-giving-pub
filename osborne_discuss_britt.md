@@ -80,8 +80,7 @@ Britt: Hmmmm, why is $10 \geq 10$ true??? How could 10 possibly be greater than 
 
 DR: Because this is the 'greater than or equal to' sign. Of course '10 is greater than or equal to 10' because they are equal. Just as in computer programming, with an 'OR' operator the condition evaluates as true if either (or both) of the conditions are true.
 
-**Britt's new comment: Ooook, I think I understand it now. It makes sense to me when you linked it with computer programming; but what is the point of the '>' sign? Couldn't the authors only use the '=' sign?**
-
+**Britt's new comment: Ooook, I think I understand it now. It makes sense to me when you linked it with computer programming; but whaty is the point of the '>' sign? Couldn't the authors only use the '= si
 '
 
 
@@ -220,7 +219,7 @@ Formal problem for a utility maximiser:
 
 (\@Britt: does the above problem make sense for you?)
 
-Britt: Partly... I am still not getting the second part of the statment. I will do some research and watch some videos online tomorrow to aid my understanding. 
+Britt: Partly... I am still not getting the second part of the statement. I will do some research and watch some videos online tomorrow to aid my understanding. 
 
 \
 
@@ -273,5 +272,5 @@ They give an example of this difference.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2ODc1OTQ2Nl19
+eyJoaXN0b3J5IjpbNjEyNzU2ODkzLC01Njg3NTk0NjZdfQ==
 -->
