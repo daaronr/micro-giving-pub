@@ -1,0 +1,226 @@
+---
+title: "Microeconomics (MSc)"
+author: "Dr. David Reinstein, University of Exeter, [main web page](https://davidreinstein.wordpress.com), [innovationsinfundraising.org](https://innovationsinfundraising.org), Twitter: givingtools"
+abstract: ""
+cover-image: ""
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output:
+  bookdown::gitbook:
+    css: style.css
+    toc_depth: 2
+    config:
+      toc:
+        before: |
+          <li><a href="./">Microeconomics (MSc)<a></li>
+        after: |
+          <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
+        collapse: section
+        scroll_highlight: yes
+      fontsettings:
+        theme: white
+        size: 2
+      sharing:
+        facebook: yes
+        twitter: yes
+        google: no
+        linkedin: yes
+        weibo: yes
+        instapaper: no
+        vk: no
+        #all: ['facebook', 'twitter', 'linkedin', 'weibo', 'instapaper']
+    highlight: tango
+    includes:
+      in_header: [header_include.html]
+    css: support/tufte_plus.css
+    download: [pdf, epub, mobi]
+    sharing:
+      github: yes
+      facebook: no
+bookdown::pdf_book:
+    keep_tex: yes
+always_allow_html: yes
+bibliography: ["support/reinstein_bibtex_from_dropbox.bib", "support/reinstein_references.bib", "support/packages.bib"] #this second one should be included in the citr settings, first comes from Zotero-dropbox sync, and it's re-downloaded below
+biblio-style: apalike
+link-citations: yes
+github-repo:
+description: "Created for Exeter's BEEM101: Microeconomics, MSc module"
+url: ''
+tags: [Economics, Microeconomics, Applied, Theory, MSc, Textbook]
+---
+
+
+<!--
+download: ["book.pdf", "book.epub"]
+    includes:
+      in_header:  style.css
+-->
+
+```{r}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+---
+site: "bookdown::bookdown_site"
+output:
+  bookdown::gitbook:
+    lib_dir: "book_assets"
+  bookdown::pdf_book:
+    keep_tex: yes
+---
+
+<!--
+base file created from
+
+`pandoc -f docx -t gfm -o writing_econ_gfm.md "bookoutline3-cutting examples down-cutnamesd.docx" `
+
+and similar from
+
+`pandoc -f docx -t gfm -o writing_econ_gfm1.md "Adapting back for BOOK --Ec831 outline-fillingindetails_forslides_edMiriam-conflict.docx"`
+
+replacements needed:
+
+- "\[ \]" surrounds math -- square brackets do not need 'escape' in main text
+- colors need adjusting to 'format_with_col'
+
+-->
+
+Try downloading and accessing some functions here:
+```{r download-formatting-to-support-folder}
+
+library(here)
+tryCatch(
+  {
+download.file(url = "https://raw.githubusercontent.com/daaronr/dr-rstuff/master/bookdown_template/support/header.html", destfile = here("support", "headerX.html"))
+  download.file(url = "https://raw.githubusercontent.com/daaronr/dr-rstuff/master/bookdown_template/support/tufte_plus.css", destfile = here("support", "tufte_plusX.css"))
+},  error = function(e) {
+  print("you are not online, so we can't download")
+}
+)
+
+tryCatch(
+file.rename(here("support", "headerX.html"), here("support", "header.html"))
+)
+
+tryCatch(
+file.rename(here("support", "tufte_plusX.css"), here("support", "tufte_plus.css"))
+)
+
+```
+
+```{r download-fncns}
+
+library(here)
+library(devtools)
+
+tryCatch(
+  {
+download.file(url = "https://raw.githubusercontent.com/daaronr/dr-rstuff/master/functions/functions.R", destfile = here("code", "functionsX.R"))
+  download.file(url = "https://raw.githubusercontent.com/daaronr/dr-rstuff/master/functions/baseoptions.R", destfile = here("code", "baseoptionsX.R"))
+},  error = function(e) {
+  print("you are not online, so we source locally instead; hope you've updated")
+  source(here("code", "functions.R")) # functions grabbed from web and created by us for analysis/output
+ source(here("code", "baseoptions.R")) # Basic options used across files and shortcut functions, e.g., 'pp()' for print
+}
+)
+
+#Note - workaround naming and code because otherwise a failed download seems to delete the destination file -- how to fix that? Renaming files?
+
+file.rename(here::here("code", "functionsX.R"), here::here("code", "functions.R"))
+file.rename(here::here("code", "baseoptionsX.R"), here::here("code", "baseoptions.R"))
+
+source(here("code", "functions.R"))
+source(here("code", "baseoptions.R"))
+
+# Basic options used across files and shortcut functions, e.g., 'pp()' for print
+# functions grabbed from web and created by us for analysis/output
+```
+
+
+
+```{r install,  echo = FALSE}
+library(png)
+library(grid)
+```
+
+```{r include=TRUE, eval=FALSE}
+install.packages("webshot")
+webshot::install_phantomjs()
+
+```
+
+```{r eval=FALSE}
+install.packages("bookdown")
+
+
+# or the development version
+# devtools::install_github("rstudio/bookdown")
+```
+
+<!-- Download 'backup' bibtex file from dropbox (synced with Zotero), do the rename workaround -->
+
+
+```{r }
+
+tryCatch(
+  {
+download.file(url = "https://www.dropbox.com/s/3i8bjrgo8u08v5w/reinstein_bibtex.bib?raw=1", destfile = here("support", "reinstein_bibtex_from_dropboxX.bib"))
+
+
+file.rename(here("support", "reinstein_bibtex_from_dropboxX.bib"), here("support", "reinstein_bibtex_from_dropbox.bib"))
+  }
+)
+
+```
+
+<!-- note installing packages is mainly removed because this is done in baseoptions.R -->
+
+```{r }
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
+
+```{r somefunctions}
+
+#possibly move these to a separate file
+
+#multi-output text color
+#https://dr-harper.github.io/rmarkdown-cookbook/changing-font-colour.html#multi-output-text-colour
+#We can then use the code as an inline R expression format_with_col("my text", "red")
+
+format_with_col = function(x, color){
+  if(knitr::is_latex_output())
+    paste("\\textcolor{",color,"}{",x,"}",sep="")
+  else if(knitr::is_html_output())
+    paste("<font color='",color,"'>",x,"</font>",sep="")
+  else
+    x
+}
+
+```
+
+```{r html, echo=FALSE}
+# globally set chunk options
+knitr::opts_chunk$set(fig.align='center', out.width='80%')
+
+my_output <- knitr::opts_knit$get("rmarkdown.pandoc.to")
+
+```
+
+
+<!---
+Can define text blocks here, refer to them again and again if desired
+To add to ELE:
+1. zip all content in '_book' folder
+2. drag into VLE site
+  - on prompt, create file resource
+3. edit settings
+  - right click and unzip
+  - double-click starting file
+  - set as main file
+  - save
+Now it is only accessible within the university login
+-->
+
