@@ -9,7 +9,7 @@ output:
   bookdown::gitbook:
     lib_dir: "book_assets"
     includes:
-      in_header: [header_include.html]
+      in_header: [support/header.html]
     css: support/tufte_plus.css
     config:
       toc:
@@ -111,15 +111,14 @@ library(png)
 library(grid)
 ```
 
-```{r, eval=FALSE}
-install.packages("webshot")
+```{r, include=FALSE}
+#install.packages("webshot")
 webshot::install_phantomjs()
 
 ```
 
 ```{r, eval=FALSE}
 install.packages("bookdown")
-
 
 # or the development version
 # devtools::install_github("rstudio/bookdown")
@@ -468,7 +467,7 @@ Let me know if you want to look 'under the hood'...
 
 ```{block2,  type='fold'}
 
-All source material and code can be accessed [on my Github repo](https://github.com/daaronr/micro-giving-pub)\\\\\lp;[[
+All source material and code can be accessed [on my Github repo](https://github.com/daaronr/micro-giving-pub)
 
 
 ```
