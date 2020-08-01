@@ -8,7 +8,9 @@ site: bookdown::bookdown_site
 output:
   bookdown::gitbook:
     lib_dir: "book_assets"
-    toc_depth: 2
+    includes:
+      in_header: [header_include.html]
+    css: support/tufte_plus.css
     config:
       toc:
         before: |
@@ -28,11 +30,8 @@ output:
         weibo: yes
         instapaper: no
         vk: no
-        #all: ['facebook', 'twitter', 'linkedin', 'weibo', 'instapaper']
+        all: ['facebook', 'twitter', 'linkedin', 'weibo', 'instapaper']
     highlight: tango
-    includes:
-      in_header: [header_include.html]
-    css: support/tufte_plus.css
     download: [pdf, epub, mobi]
     sharing:
       github: yes
@@ -50,43 +49,12 @@ tags: [Economics, Microeconomics, Applied, Theory, MSc, Textbook]
 ---
 
 
-<!--
-download: ["book.pdf", "book.epub"]
-    includes:
-      in_header:  style.css
--->
-
-```{r}
+```{r, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
----
-site: "bookdown::bookdown_site"
-output:
-  bookdown::gitbook:
-    lib_dir: "book_assets"
-  bookdown::pdf_book:
-    keep_tex: yes
----
-
-<!--
-base file created from
-
-`pandoc -f docx -t gfm -o writing_econ_gfm.md "bookoutline3-cutting examples down-cutnamesd.docx" `
-
-and similar from
-
-`pandoc -f docx -t gfm -o writing_econ_gfm1.md "Adapting back for BOOK --Ec831 outline-fillingindetails_forslides_edMiriam-conflict.docx"`
-
-replacements needed:
-
-- "\[ \]" surrounds math -- square brackets do not need 'escape' in main text
-- colors need adjusting to 'format_with_col'
-
--->
-
-Try downloading and accessing some functions here:
-```{r download-formatting-to-support-folder}
+<!-- Try downloading and accessing some functions here: -->
+```{r download-formatting-to-support-folder, include=FALSE}
 
 library(here)
 tryCatch(
@@ -108,7 +76,7 @@ file.rename(here("support", "tufte_plusX.css"), here("support", "tufte_plus.css"
 
 ```
 
-```{r download-fncns}
+```{r download-fncns, include=FALSE}
 
 library(here)
 library(devtools)
@@ -138,18 +106,18 @@ source(here("code", "baseoptions.R"))
 
 
 
-```{r install,  echo = FALSE}
+```{r install,  echo = FALSE, include=FALSE}
 library(png)
 library(grid)
 ```
 
-```{r include=TRUE, eval=FALSE}
+```{r, eval=FALSE}
 install.packages("webshot")
 webshot::install_phantomjs()
 
 ```
 
-```{r eval=FALSE}
+```{r, eval=FALSE}
 install.packages("bookdown")
 
 
@@ -160,7 +128,7 @@ install.packages("bookdown")
 <!-- Download 'backup' bibtex file from dropbox (synced with Zotero), do the rename workaround -->
 
 
-```{r }
+```{r, include=FALSE}
 
 tryCatch(
   {
@@ -175,14 +143,14 @@ file.rename(here("support", "reinstein_bibtex_from_dropboxX.bib"), here("support
 
 <!-- note installing packages is mainly removed because this is done in baseoptions.R -->
 
-```{r }
+```{r, include=FALSE }
 # automatically create a bib database for R packages
 knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
 ```
 
-```{r somefunctions}
+```{r somefunctions, include=FALSE}
 
 #possibly move these to a separate file
 
@@ -201,7 +169,7 @@ format_with_col = function(x, color){
 
 ```
 
-```{r html, echo=FALSE}
+```{r html, include=FALSE}
 # globally set chunk options
 knitr::opts_chunk$set(fig.align='center', out.width='80%')
 
@@ -223,4 +191,286 @@ To add to ELE:
   - save
 Now it is only accessible within the university login
 -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -- need to adapt to a new ID
+<html>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QLKFNFTGXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QLKFNFTGXX');
+</script>
+</html>
+
+-->
+
+# Notes to students; overview {#note}
+
+**Notes by instructor [David Reinstein](davidreinstein.wordpress.com/)**
+
+## Focus and style of this module {focus}
+
+
+**This is...**
+
+1. a **Microeconomics** module.  We will learn and use maths and rigorous logic to consider deep questions of:
+
+- Individual preferences, choices and optimization subject to constraints
+
+- How individuals interact with one another, and the consequences of this (Game theory and mechanism design/agency problems)
+
+- "Markets", prices, and "welfare" (how much value is created, who gets what, how do we consider these outcomes as a society)
+
+- Psychological influences on the above, and limits to optimization (Behavioral Economics)
+
+\
+
+
+2. a  **Selective and bespoke** module
+
+We will not cover 'all of Microeconomics'.  I will **focus on a limited set of concepts, models and application**s (and academic articles) that I hope you will find most interesting and useful.
+
+We will skip many major important topics. But that's OK. We will learn tools, 'modes of thinking', and 'modes of proving results' that should strengthen your brain muscles and help you understand a much wider body of material.
+
+- I often focus on models with 'surprising' or 'counter-intuitive' results. If you can explain the logic behind these (as well as the maths), you have achieved an understanding beyond a layman's intuition.
+
+- I will try to incorporate a small set *applications* that are particularly relevant to your careers and your research interests.
+,
+<div class="marginnote">
+I may also try to incorporate data, statistics/empirical modeling, and 'computer coding' because these will be super-important in your career.
+</div>
+
+*Please give me feedback on what you are interested in.*
+
+
+3. an **Inquisitive module**: we ask **the 'how?', 'why?', 'so what?', and 'is this reasonable?'** ... of the models and concepts
+
+When studying Economics, I often models presented, with strong assumptions, without any explanation of what these were for and how they could be justified. In this module we will always be skeptical and carefully ask 'what is the purpose' of each model and concept.
+
+<div class="marginnote">
+For example, 'what does it mean to say that something is a mixed-strategy Nash equilibrium?' ... Do we expect people to actually randomise in this way?
+</div>
+
+
+
+## Level of this module
+
+This module is adapted to students from a variety of backgrounds.
+
+
+For students interested in pursuing a PhD in Economics, and interested in research:
+
+- We will cover some approaches and relevant building blocks, and I will point you to relevant materials for further enrichment
+
+- I will incorporate content from academic literature ('articles in peer reviewed journals') and sophisticated research considerations
+
+- I will incorporate my own research, research methods, and 'really getting our hands dirty' in digging into research questions, building theoretical (maths) models, and even perhaps experiments, coding, and data analysis.
+
+- We will discuss *your* proposed research, relate microeconomic theory and models to this, and bring this into coursework
+
+- I will try to help you 'think, research and write' like a good economist. (See my [Writing and research guide here](https://daaronr.github.io/writing_econ_research/about-this-work.html).
+
+\
+
+*However, please note that will not fully prepare you for doctoral study and academic research that requires advanced Microeconomics. MRes programmes and modules are better geared to this.*
+
+
+\
+
+For students coming from backgrounds with limited Economics training and limited abstract maths:
+
+- I will explain most concepts 'from the ground up', or point you to what you will need to revise.
+
+- I will present most material *also* at an intermediate level, using diagrams and simple intuition.
+
+<div class="marginnote">
+But note that you need to have SOME background in Economics to do well in this module. This is an MSc-level Economics module, after all.
+</div>
+
+
+\
+
+For students who are not as fluent in English as they would like to be (perhaps many/most of our students):
+
+- I will try to communicate clearly and at a reasonable pace, avoiding slang and using diagrams and maths to convey ideas
+
+- Most of what I say in lectures/videos/tutorials is also in writing here in this web book (or in links)
+
+- I will strongly encourage you to participate actively and try to help you improve your English communication skills.
+
+- Interacting with  my [Writing and research guide here](https://daaronr.github.io/writing_econ_research/introduction.html) should also be helpful for this (and for your dissertation, if you will be writing one).
+
+
+
+
+
+## Readings and resources {#readings}
+
+This module will use a variety of resources: I will guide you through this via this online text. **Consider this online text the 'governing resource'.**
+
+This draws heavily from several texts and other resources, **all of which are free and available online**. I will make it clear what come from where, and where you can find additional readings.
+
+In particular:
+
+1. "O-R": [Models in Microeconomic Theory, by Osborne and Rubinstein](https://www.openbookpublishers.com/product/1171)
+
+
+> Our main aim is to give the reader an understanding of the concepts of model and equilibrium in microeconomic theory
+
+This book is very precise, abstract (in a mathematical sense), and extremely well-written and full of wisdom and insight. It is *dense*; don 't worry if it takes you a long time to digest each concept (but if you get stuck, please do ask questions and try different approaches).  It is the most relevant (at least of these three) for further postgraduate/PhD study.
+
+The authors claim 'the mathematics we use is elementary'. However, I think it contains a deep sort of maths that you will find challenging. As they say, 'many of the proofs involve sustained logical arguments'.
+
+
+2. "QMC": [Quantum Microeconomics with Calculus](http://www.smallparty.org/yoram/quantum/quantumcalc.pdf) by Yoram Baumann, the self-proclaimed 'World's First Standup Economist'
+
+This is somewhat less rigorous than O-R, but it has its own strengths. It approaches the material in an unusual way, and covers some material that is non traditionally covered in Economics courses (and skips many core concepts).
+
+3. [Introduction to Economic Analysis version 2.1 by McAfee, Lewis, and Dale]](https://www.scholars.northwestern.edu/en/publications/introduction-to-economic-analysis-v21)
+
+This is a more traditional text, with more 'computational-style' problems. It covers a wider set of Economics concepts than the others.
+
+
+As I am incorporating some material *directly* from these works, I include the licences below (in the fold).
+
+```{block2,  type='fold'}
+Paste licenses here.
+
+```
+
+\
+
+### Other relevant resources
+
+**Simpler resources**
+
+- Intermediate Microeconomics and its Application (an Undergraduate text) by Nicholson and Snyder. We have used this for a good chunk of this module in past years.
+
+Free online access to this text may be available through your university/library (this works at Exeter) via [www.vlebooks.com](https://www.vlebooks.com/)
+
+ - A free alternative, at a similar level: [Microeconomics an Open Text by Douglas Curtis and Ian Irvine](https://open.umn.edu/opentextbooks/textbooks/microeconomics-markets-methods-and-models)
+
+-  Microeconomics by Hugh Gravelle and Ray Rees (version 3, widely available online for free):  A somewhat more advanced-intermediate-level text which I think you will find very useful; this is not yet officially Open-Source, but you can find it online for free (and the authors are OK with this, I have emailed them). Just do a web search for 'Gravelle and Rees Microeconomics' and you will find the pdf
+
+
+\
+
+**More rigorous, advanced and applied work will draw from**
+
+- David Autor’s MIT Open Courseware “Microeconomic Theory and Public Policy”; [all the files for this course can be downloaded here)[https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/] this will give you a flavor of the PhD level micro
+- David Autor. 14.03 Microeconomic Theory and Public Policy. Fall 2016. Massachusetts Institute of Technology: MIT OpenCourseWare, https://ocw.mit.edu. License: Creative Commons BY-NC-SA.
+
+
+**Also**
+
+For maths, see also [Mathematical methods for economic theory](https://mjo.osborne.economics.utoronto.ca/index.php/tutorial/index/1/toc) ... also free online!
+
+\
+
+
+- Academic articles and working papers as well as  some of my own writings... these are mentioned below
+
+
+
+
+## This web-book: the Governing Resource
+
+**Welcome to the exciting world of Microeconomics**
+
+I wrote these notes to outline all of the material you are responsible for,  and to give you more resources and insight than I can convey in the short  amount contact time that we have.   I *don't* mean you're simply responsible for material in these printed notes:  I mean that these notes will aim to *refer to* everything that you are responsible for.
+
+These notes are meant to be a complement to the texts and readings (and to the lectures/videos,  tutorials/problem sets and other material on the ELE) and to tie all of this together.
+
+<!-- I am providing you these notes both as a complete file as well as divided by lecture week (approximately). Use either version.
+-->
+
+ I will try my best to stick to the structure outlined in these notes.  However, things may adjust slightly as we go and I will need to make updates to these notes as we go along.  I will try to keep you informed of any changes via the VLE forums.
+
+<br> \bigskip
+
+*Notes versus slides?:*
+
+These notes should include all of the slide material *plus* explanatory notes and enrichment material. (However, I left out some of the jokes.) I use some abbreviations before certain notes to help you understand how to digest this.  I will also  make the slides themselves available even though they are redundant– these notes have everything.
+
+<br> \bigskip
+
+
+### 'Markers', abbreviations, and callouts/boxes {#markers}
+
+- OR:  Osborne and Rubinstein's [Models in Microeconomic Theory]((https://www.openbookpublishers.com/product/1171)
+
+
+- 'McDL' refers to the [McAfee, Dale and Lewis text](https://www.scholars.northwestern.edu/en/publications/introduction-to-economic-analysis-v2)
+
+- 'QMC' refers to ['Quantum Microeconomics with Calculus'](http://www.smallparty.org/yoram/quantum/quantumcalc.pdf)  (Baumann)
+
+- 'NS'  refers to the Nicholson and Snyder text (usually chapters/numbering from the 12th edition is referenced;  if you're using an earlier edition, make sure the content corresponds)
+
+- GR refers to Gravelle and Rees' Microeconomics text
+- 'DA' refers to [David Autor's MIT open courseware notes for Microeconomic Theory and Public Policy](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/)
+
+
+
+<!--
+- 'LC' indicates a lecturer comment I may make in lecture that you don't need to worry about (I meant to cut these but I sometimes forget to)
+-->
+
+`r format_with_col("Text in blue usually refers to questions you should  try to answer on your own (and I sometimes provide suggested answers in the footnotes. Try to answer it yourself first.)","blue")`
+
+`r format_with_col("Some text is given in gray to indicate that this is a side point or a discussion. (I'm moving most of this to footnotes.)","gray")`
+
+
+- 'Comprehension Q:' A question you should be able to answer if you are following along.
+
+
+\
+
+
+Margin notes:
+
+<div class="marginnote">
+These reflect brief comments, hints, side points, or reference links.
+
+</div>
+
+
+\
+
+Folding boxes:
+
+I will occasionally put additional material in boxes that can be unfolded. Sometimes I do this with "question and answer" so you've an opportunity to consider the answer before peeking. I also will do this with some material that involves a side conversation, or material that is very tangential.
+
+Look in the fold:
+
+```{block2,  type='fold'}
+
+Greetings from the fold! The weather is nice in here.
+```
+
+<!---
+batch file: 'bash \$HOME/"Google Drive/exeter_teaching/be2024/compileslidesnotes.sh"'
+-->
+
+<br> \bigskip
+
+### Tech details of this book ('do I call this 'collophon'?)
+
+I created this in Rmd (the 'R languages' 'markdown'), including some latex and html code too, with features adapted from the 'Tufte' package.
+
+This is all put together by  Knitr and Bookdown using the 'Pandoc' conversion tool into an Html file which I'm hosting via Github pages for now. For details on how this works, I have a guide (to how I work in a similarly constructed 'bookdown') [HERE](https://daaronr.github.io/ea_giving_barriers/bookdown-appendix.html).
+
+I'll occasionally use/show some R code; you should consider getting proficient in R and developing other 'data-sciencey' tech skills (things like R, Python, Stata, git, vim, shell scripts...)
+
+Let me know if you want to look 'under the hood'...
+
+```{block2,  type='fold'}
+
+All source material and code can be accessed [on my Github repo](https://github.com/daaronr/micro-giving-pub)\\\\\lp;[[
+
+
+```
+
 
