@@ -1,0 +1,524 @@
+# Outline and description of module {#outline}
+
+**Planned syllabus, coverage:**
+
+*The planned module outline is below;  as noted, timings may need to be adjusted,  and so material may cut for time constraints.  Feel free to skip over the first time you read these notes; you may want to refer to this later. The relevant part of this outline will be repeated at the beginning of each 'section.'*
+
+## Overview, broad discussion and background, Explaining the module, Economic models (and maths tools), 'empirical' evidence**  (1/2 week approximately) {-}
+
+*This content will take roughly half a week to cover, but we will return to it later*
+
+
+<!--  `r format_with_col("First problem set: Mathematical approaches, economic models, revision and warm-up; (to add: some practice MCQ's)","blue")`
+I will put up slides and other resources to help you with this (and we will re-cover some of this when we apply it throughout the module).
+
+-->
+
+Main reading: this web book
+
+\
+**Choose some readings on 'what is Economics'**, 'what are the purpose of Economic models', etc.: The readings below are each optional, but you must read *at least some of these*
+
+
+- [McDL'](https://www.scholars.northwestern.edu/en/publications/introduction-to-economic-analysis-v2)  Chapter 1. A very simple undergraduate discussion of 'what is Economics, what are models' etc. You probably already know this but take a look just in case.
+
+- Friedman, Milton. "The methodology of positive economics." (1953): 259. *Classic but perhaps outdated*
+
+- [Sugden, Robert. "Credible worlds: the status of theoretical models in economics." Journal of Economic Methodology 7.1 (2000): 1-31.](https://www.tandfonline.com/doi/pdf/10.1080/135017800362220)
+
+- [Sugden, Robert; Sitzia, Stefania. "Implementing theoretical models in the laboratory, and what this can and cannot achieve."  Journal of Economic Methodology, Vol. 18, 2011, p. 323-343.](https://ueaeco.github.io/working-papers/papers/cbess/UEA-CBESS-11-08.pdf)
+
+
+*We will return to the issues of 'what and why models' throughout the module*.
+
+\
+
+
+**Empirics, maths revision**
+
+1.  Discussion of 'empirical identification': [The mixtape, Scott Cunningham](http://scunning.com/cunningham_mixtape.pdf) pp 18-22
+
+2.  Math revision concepts in
+
+- [DA lecture 3](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/MIT14_03F16_lec3MathTools.pdf); we may not use all of this
+
+- QMC 1.3 (some good stuff; don't worry too much about all the derivative rules)
+
+
+<div class="marginnote">
+Some of the maths you need will also be simultaneously covered in your Optimisation and Econometric modules, sometimes at a higher level.
+</div>
+
+
+### Interactive exercises  ('problem set'): {-}
+
+- Discussion and brief writing/speaking exercise on 'what Economic models are for', examples of models. {-}
+
+## Preferences and utility; Choice (1.5 weeks approximately) {-}
+
+What can we reasonably say about 'what people prefer and choose'? How can we state this carefully and precisely? What are the implications of particular 'reasonable' assumptions? (How) can we consider this in terms of 'optimization'? How have Economists and decision-scientists considered these questions?
+
+<div class="marginnote">
+Digging deeply into the logic and justifications for these models of choice, and alternative frameworks, will be very relevant in considering Behavioral Economics (This is a specialty of Ariel Rubinstein, one of the O-R text's two authors, and also a research interest of mine). In fact this text works behavioral economics in from the beginning.
+
+I also think it is relevant in building empirical models such as 'models of consumer choices and preferences' in ways that are relevant to (e.g.) Business-data-analytics consulting.
+</div>
+
+We approach this in an abstract and logically and mathematically-rigorous, but not highly 'computational' way. Even if you have taken Economics as an undergraduate, you may not have seen this approach.
+
+This will take at least two weeks to cover meaningfully.
+
+\
+
+
+```{block2,  type='note'}
+
+We will not always be so mathematically rigorous throughout the module. However, I want to at least give you some of these tools, and a 'flavour' of this approach, which characterises modern Microeconomics (and will be at the core of PhD modules).
+
+```
+
+<!--`-->
+
+Main reading (largely integrated into web book):
+
+- O-R Chapters 1-2 (we will focus on selected material as described in this web book, but feel free to read these chapters in their entirety if you find it interesting)
+
+```{block2,  type='note'}
+
+*Within O-R chapter 1, feel free to skip*  the proof of propositions 1.1 ('representing preferences by utility functions') and 1.2 ('Preference relation not represented by utility function')
+
+```  
+
+
+\
+
+Alternative treatments for some of this material (read this if you need a different approach than the ones O-R are taking):
+
+- NS Chapter 2 "Assumptions about preferences" (covers a limited subset in a very simple way)
+\
+
+
+Supplementary and conceptual readings (please read at least *some* of these):
+
+
+- D. Colander \\Edgeworth's Hedonimeter and the Quest to Measure Utility'' Journal of Economic Perspectives, Spring 2007: 215-225.
+
+- [Sugden, Robert. "Looking for a Psychology for the Inner Rational Agent." Social Theory and Practice 41, no. 4 (2015): 579-98.](http://www.jstor.org/stable/24575750).
+
+- [‘Predicting Hunger: The Effects of Appetite and Delay on Choice’; Read and van Leeuwen, 1998](https://www.sciencedirect.com/science/article/pii/S0749597898928035) ... and related work... worth getting a sense of this, particularly in the context of the Sugden (2015) reading, such as [Kahneman and Richard H. Thaler. 2006. "Anomalies: Utility Maximization and Experienced Utility." Journal of Economic Perspectives, 20 (1): 221-234](https://pdfs.semanticscholar.org/2899/d2516fb877da40c4a7b95fe0b084a103b9bf.pdf)
+
+
+Other/alternative readings:
+
+- NS, chapter 2, p. 55-57 'assumptions about preferences' (a simpler brief and partial treatment)
+
+
+### Interactive exercises ('problem set') {-}
+
+1. Discussion and writing on the realism of particular assumptions and on 'observing preferences and observing violations of transitivity'
+
+2. Preferences and utility: Definitions, proofs, and sketched examples -- Problems and exercises
+
+Question 6 on the "Shepard scale" is very cool!
+\
+
+
+## Preferences under uncertainty and over time; 'Expected Utility';  risk-aversion, finance and diversification; time-preference and discounting (1 weeks approx.) {-}
+
+With uncertainty (outcomes are unknown when choices are made, but we assume the *probabilities* of outcomes are known), again ...
+
+> What can we reasonably say about 'what people prefer and choose'? How can we state this carefully and precisely? What are the implications of particular 'reasonable' assumptions? (How) can we consider this in terms of 'optimization'? How have Economists and decision-scientists considered these questions?
+
+Applications (esp. to finance):
+
+- How do we express and measure 'risk aversion'?
+
+- How does this affect (financial, investment, insurance) choices?  Why does 'diversification improve outcomes for the risk-averse'?
+
+- How does this affect asset prices (Stocks, bonds, etc.) with 'efficient markets' (this will be briefly defined)
+
+- Behavioral Economics: the "Allais Paradox" (first treatment, time-permitting)
+
+
+\
+
+Brief (first) presentation: preferences (and optimization over) assets and consumption over time; 'discounting'
+
+\
+
+Main Readings:
+
+*Web book*, and also...
+
+- O-R Chapter 3: "Preferences under Uncertainty"
+
+```{block2,  type='note'}
+
+*Feel free to skip*  the proof of propositions 3.2 ('Continuity and independence implies EU'). It's interesting but we can't cover everything.
+
+If you don't understand the proof of prop. 3.3. (the equivalence of risk aversion and the concavity of the Bernoulli function) that's also OK. 
+
+```
+
+- McDL: 13.3 on 'dynamic choice'
+
+
+
+\
+
+**Other resources/references**
+
+- QMC: Ch 5, optimization and risk; selections (good discussion of diversification but doesn't use utility functions)
+
+- DA: [Lecture Note 16: Uncertainty, Risk Preference, and Expected Utility Theory](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/MIT14_03F16_lec16.pdf)
+
+- NS: Ch 4 (not including 4a)
+
+- McDL: Ch 13, section 4 'Risk Aversion'
+
+
+\
+
+
+Supplementary recommended readings:
+
+- Holt, C., and S. Laury (2002), Risk Aversion and Incentive Effects, American Economic Review, v. 92 (5): 1644-1655.
+
+- For a popular audience: Reinstein (2016) 'Should you hedge your bets on a Brexit?' [LINK](https://davidreinstein.wordpress.com/2016/06/19/should-you-hedge-your-bets-on-a-brexit/)
+
+
+\
+
+### Interactive exercises ('problem set')  {-}
+
+- Proof-based problem
+
+- Example-based problem (lotteries, insurance, investment)
+
+- Allais Paradox question
+
+- Potentially: data/code based simulation
+
+- Discussion/explanation question
+
+  \
+
+
+## Consumer preferences, indifference curves/sets (0.5 weeks approx) {-}
+
+- O-R Chapter 4, selected parts
+
+<div class="marginnote">
+Note this chapter covers only a simple 2-good example. If time permits, we will consider the properties of examples with "$N>2$ goods"; $N>2$ is necessary to consider reasonable substitution patterns between goods for many applications. You will also probably learn the N-good optimisation in your maths module.
+</div>
+ 
+```{block2,  type='note'}
+
+*Within O-R chapter 4, feel free to skip*
+  
+- Section 4.6 "Differentiability" (just look at figure 4.5 to get the basic idea)
+
+```
+
+\
+
+ - AUT: [Lecture 3 - Axioms of Consumer Preference and the Theory of
+Choice](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/MIT14_03F16_lec3.pdf) (note, slightly different notation)
+    - Simpler treatment - NS: Ch 2
+
+
+### Interactive exercises ('problem set')  {-}
+
+- Standard problem set problems
+
+- Business case study/investigation: modeling 'which (sorts of) new product will consumers prefer?'
+
+\
+
+## Consumer behavior/Individual (and market) demand functions and their properties (1 week approx.) {-}
+
+- Formal definition
+- Derivation of 'demand' from individual optimization
+- 'Comparative statics': responses to changes in price, income, etc.;
+    - Application: The mysterious 'Giffen good'
+- Elasticities
+    - Application: empirical models
+- Aggregation and 'market demand'
+- Welfare and consumer surplus (brief)
+
+
+Main reading (largely integrated into web book):
+
+- O-R Chapter 5 (selections)
+
+```{block2,  type='note'}
+
+Feel free to skip the first part of O-R section 5.5 on 'rationalizing a demand function.'
+
+But make sure you *do read* the discussion of 'the weak axiom of revealed preferences' (WARP).
+
+```  
+
+
+\
+
+Alternative treatments: 
+
+- DA: [Lecture Note 6 – Demand Functions: Income Effects, Substitution Effects, and Labor Supply](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/MIT14_03F16_lec6.pdf), esp. sections 1-3
+
+- McDL:  3.1 (elasticity), parts of Ch 12; Warning: this book's treatment of consumer surplus seems to be incorrect (or at least vastly oversimplified) from my PoV
+
+- QMC: Chapter 17 (elasticities -- very clear treatment, Chapter 18 (supply and demand details)
+
+\
+
+
+Supplementary recommended readings:
+
+- Loomes, Graham, Chris Starmer, and Robert Sugden, 1991. "Observing Violations of Transitivity by Experimental Methods". [jstor link](https://www.jstor.org/stable/2938263?seq=1#metadata_info_tab_contents)
+
+- Choi, Syngjoo, et al. "Who is (more) rational?." The American Economic Review 104.6 (2014): 1518-1550.a.
+
+- Waldfogel, Joel. "The deadweight loss of Christmas." The American Economic Review 83.5 (1993): 1328-1336.
+
+- [Reinstein, David. "The Economics of the Gift." (2014; working paper and chapter in Gift Giving and the'embedded' Economy in the Ancient World, F Carlà, M Gori - 2014).](https://core.ac.uk/download/pdf/74369736.pdf)
+
+\
+
+### Interactive exercises ('problem set')  {-}
+
+- Something about finding departures from the WARP in real data?
+\
+
+- O-R problem 5 (introduces the 'expenditure function)
+- O-R problem 8-9 (re-)introduce 'time preferences' 
+
+
+### Noting a major "skip" {-}
+
+**Note here that we are SKIPPING several key topics!**
+
+- In the consumer behavior, we are skipping core topics including formal definitions of Hicksian demand, substitution and income effects, the 'and the Slutsky decomposition. 
+
+<div class="marginnote">
+
+These are important for characterizing the welfare effects of price changes and policy changes (including taxation), and for conceptualizing issues involving multiple constraints on consumer optimization (e.g., rationing). I will provide notes on these for anyone who is interested. 
+
+</div>
+
+
+
+\
+
+We are also skipping most of the 'production side'
+
+- Production functions, firm optimisation
+
+- Perfect competition/competitive equilibrium; short and long run
+
+- Supply and demand systems
+
+- General equilibrium and it's welfare properties
+
+- Market failures, including externalities/public goods (although these come back as examples in our Game Theory discussion)
+
+*We this skip these chapters in the text(s). So skip O-R chapter 6 and skip any material on this in the other texts.*
+
+<div class="marginnote">
+ Or read it if you want to; you might find it useful in getting an overall picture, but it's up to you. 
+</div>
+
+To the extent that these are relevant to material we cover later, I will give you the 'short version' when it comes up.
+
+\
+
+
+## 'Monopolies and pricing of profit-maximizing price-setting firms' (especially monopolies); price discrimination/market segmentation (1.5 weeks approx.) {-}
+
+How would a firm that knows all the stuff above about consumer demand set prices in order to maximise its profit? What if it can segment its customers into different ‘markets’ with distinct demand functions? What are the consequences of all of this for profit and welfare?
+
+Today’s businesses, consultants, data analysts, and regulators are extremely interested in these questions. This is a very practical topic. We will consider it both from the theoretical optimization point view (while always gaining insights from the maths). We will also dig into “what do firms *actually* do in setting pricing” and “how can data be used to do this better?”
+
+\
+
+Main reading
+
+- O-R ch. 7 "Monopoly"
+
+We will focus on the (standard) profit-maximisation goal, although their discussion of other goals is interesting. 
+
+They define consumer and producer surplus here to give a brief treatment of the deadweight loss of monopoly.
+
+They also have a very interesting treatment of the two main types of price discrimination; 'Implicit discrimination' foreshadows our later study of asymmetric information and agency problems. 
+
+<div class="marginnote">
+There are various names of each of these ... I am familiar with "second degree  = self-selection" and "third degree or 'explicit segmentation'". They call the latter 'Implicit discrimination.
+</div>
+ 
+
+\
+
+Alternative treatments:
+
+- McDL: Ch 15 -- Monopoly
+- NS: 11.2-11.4
+- QMC: Appendix A.1 - Monopoly - the vanilla version
+
+\
+Supplementary readings:
+
+- Article: [Should we help companies tailor prices to your wage packet?](https://theconversation.com/should-we-help-companies-tailor-prices-to-your-wage-packet-47719)
+- With accompanying [worked examples](https://docs.google.com/document/d/16jos_PT9w1wGpyD5A8ZiWJ9HW6kaLOJH6EWc_AYWnkk/pub)
+- More advanced: 'The Government May Want to Encourage Price Discrimination by Income' [Linked here](https://davidreinstein.wordpress.com/research-and-publications/)
+
+
+
+### Interactive exercises ('problem set')  {-}
+
+OR question 1, dbl marginalization (very relevant and interesting!)
+OR question 5-7
+
+Possible exercise involving data and 'choosing a firm's best price and segmentation'
+
+<!--
+- ** Imperfect competition (brief) ** (multiple firms with market power; esp Bertrand/Cournot models)
+-->
+
+## Noting a major "skip" {-}
+
+Here we are largely skipping
+
+- 'imperfect competition' and interactions between firms. We may come back to this briefly in our 'game theory' examples.
+
+
+
+## Strategic interactions: Game theory (and evidence) (1.5 weeks approx) {-}
+
+The outcomes we care about don't only depend on what *we choose*, but on what *others' choose* (and perhaps we can also influence the latter). How should we think about choices and outcomes in such settings? What will we predict will happen in single or repeated interactions, and what will affect these outcomes? 
+
+\
+
+- Strategic interactions
+- Stating the game in 'normal' form
+- Dominance, iterated dominance, Rationalisability
+- Best response functions, Nash equilibrium in pure and mixed strategies 
+
+<div class="marginnote">
+(if time is tight we may skip mixed strategies)
+</div>
+ 
+
+- Extensive-form games; sequential aand repeated games 
+
+- Backwards induction and Subgame Perfection (subgame-perfect Nash equilibrium)
+
+- Infinitely or indefinitely repeated games
+
+- Games of imperfect information
+
+- Behavioral economics: transforming material payoffs into *true* payoffs
+- Evidence on play in strategic situations, including in 'experiments'
+
+- Time-permitting: Research applications to 'Marriage markets and Tinder', 'Fair trade and consumer altruism'
+
+\
+
+
+We will incorporate material from:
+
+- O-R Chapters 15-16 
+  - *Skip* sections 15.5 (Strictly competitive games), and 15.6 (Kantian equilibrium)
+  - In chapter 16, we may or may not skip the formal depiction of extensive/sequential games; this depends on our timing
+
+\
+In addition to (some) of the Game Theory material covered in O-R: 
+
+- We will also focus on 'Dominant strategies', and 'Iterated-strict-dominance'. Compared to 'Nash equilibria', these are (IMHO) more justifiable as *predictors of choices* especially in one-shot games. 
+
+- We will consider games involving asymmetric information, especially 'signaling games'
+
+\
+
+Other readings to be incorporated:
+
+- QMC: Ch 9, 10, 12 (includes 'iterated dominance')
+- McDL: Ch 16
+- NS: Ch 5 (parts)
+- Several additional concepts from handout, plus supplement on experiments
+
+\
+
+Supplementary recommended reading:
+
+- Spence, M. (1973): 'Job market signaling,'? The Quarterly Journal of Economics, vol. 87, pp. 355-374.
+
+- 'Ten Little Treasures of Game Theory and Ten Intuitive Contradictions' Goeree and Holt, 2001
+
+\
+
+
+  
+
+## Behavioural economics: Selected further concepts (1 weeks approx) {-}
+
+- Overview: Limits to cognition, willpower, self-interest, applications
+
+- Time-inconsistent preferences ('hyperbolic or $\beta$-$\delta$ discounting)
+
+- Reference-dependent preferences and 'prospect theory' (also re-capping the Allais paradox)
+
+- Evidence for these 'anomalies' 
+  - Aside on  the nature of credible evidence, replication and open-science
+
+- Modeling charitable giving and 'other-regarding behavior'; departures from and barriers to 'effective altruism'
+
+\
+
+
+Overall each reading is optional, but to do well on the exam you need to do at least some of these readings, and/or cover some of the more advanced material.
+
+\
+
+Supplementary reading: theory
+
+(31 Jul 2020 note: This will be revised)
+
+- Amos Tversky & Daniel Kahneman, 1979. "Prospect Theory: An Analysis of Decision under Risk" (*Seminal*)
+
+\
+
+Supplementary reading: applications and empirical work
+
+- DellaVigna, Stefano. "Psychology and economics: Evidence from the field." Journal of Economic literature 47.2 (2009): 315-372.
+- Benartzi, S. & Thaler, R.H., 2007. Heuristics and biases in retirement savings behavior. The journal of economic perspectives, pp.81-104.
+- Farber, H., 2008. Reference-dependent preferences and labor supply: The case of New York City taxi drivers. The American Economic Review. Available at: http://www.ingentaconnect.com/content/aea/aer/2008/00000098/00000003/art00021 [Accessed November 19, 2015].
+
+\
+    
+Other-regarding behavior and charitable giving: 
+
+- Kellner, Reinstein and Riener, 2016. [Conditional generosity and uncertain income: Field and lab evidence](https://dl.dropboxusercontent.com/u/91553/Giving_and_Probability.pdf)
+
+- Material linked at [giveifyouwin.org](giveifyouwin.org) and  [innovationsinfundraising.org](innovationsinfundraising.org)
+- [Increasing effective charitable giving: The puzzle, what we know, what we need to know next](https://daaronr.github.io/ea_giving_barriers/outline.html)
+
+## Recap, discussion of research, projects, and exams (1/2 week) {-}
+    
+## Supplement (optional): Asymmetric information (Moral hazard, adverse selection, signaling) and applications {-}
+
+'Principal-agent' models to be integrated into lecture notes
+
+- Moral hazard and incentives
+
+- 'Lemons model'
+
+- Hidden information about types/adverse-selection (time-permitting)
+
+- 'Live research' application (time-permitting): Financial market micro-structure and government policy
+
+\
+
+Readings:
+
+- O-R Chapter 14 on a market with Asymmetric Information (a highly formal treatment of the adverse-selection context)
+
