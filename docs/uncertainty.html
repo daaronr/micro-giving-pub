@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Preferences under uncertainty (and over time) | Microeconomics (MSc)</title>
+  <meta name="description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Preferences under uncertainty (and over time) | Microeconomics (MSc)" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
+  <meta name="github-repo" content="daaronr/micro-giving-pub" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Preferences under uncertainty (and over time) | Microeconomics (MSc)" />
+  
+  <meta name="twitter:description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
+  
+
+<meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
+
+
+<meta name="date" content="2020-08-16" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="pref-util-choice.html"/>
+<link rel="next" href="consumers-dmd.html"/>
+<script src="book_assets/header-attrs-2.3/header-attrs.js"></script>
+<script src="book_assets/jquery-2.2.3/jquery.min.js"></script>
+<link href="book_assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="book_assets/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<!-- font families -->
+
+<link href="https://fonts.googleapis.com/css?family=PT+Sans|Pacifico|Source+Sans+Pro" rel="stylesheet">
+
+<!-- <script src="js/hideOutput.js"></script> -->
+
+<!-- Mathjax -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/default.js"></script>
+
+ <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "TeX/AMSmath.js"],
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+        jax: ["input/TeX","output/CommonHTML"]
+      });
+      MathJax.Hub.processSectionDelay = 0;
+  </script>
+
+
+
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+<!-- Folding text box javascript thing -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $folds = $(".fold");
+  $folds.wrapInner("<div class=\"fold-blck\">"); // wrap a div container around content
+  $folds.prepend("<button class=\"fold-btn\">Unfold</button>");  // add a button
+  $(".fold-blck").toggle();  // fold all blocks
+  $(".fold-btn").on("click", function() {  // add onClick event
+    $(this).text($(this).text() === "Fold" ? "Unfold" : "Fold");  // if the text equals "Fold", change it to "Unfold"or else to "Fold"
+    $(this).next(".fold-blck").toggle("linear");  // "swing" is the default easing function. This can be further customized in its speed or the overall animation itself.
+  })
+});
+</script>
+
+
+<script type="text/javascript">
+
+// toggle visibility of R source blocks in R Markdown output
+function toggle_R() {
+  var x = document.getElementsByClassName('r');
+  if (x.length == 0) return;
+  function toggle_vis(o) {
+    var d = o.style.display;
+    o.style.display = (d == 'block' || d == '') ? 'none':'block';
+  }
+
+  for (i = 0; i < x.length; i++) {
+    var y = x[i];
+    if (y.tagName.toLowerCase() === 'pre') toggle_vis(y);
+  }
+
+    var elem = document.getElementById("myButton1");
+    if (elem.value === "Hide Global") elem.value = "Show Global";
+    else elem.value = "Hide Global";
+}
+
+document.write('<input onclick="toggle_R();" type="button" value="Hide Global" id="myButton1" style="position: absolute; top: 10%; right: 2%; z-index: 200"></input>')
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148137970-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148137970-3');
+</script>
+-->
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="support/tufte_plus.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Microeconomics (MSc)<a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Notes for Beem101 Microeconomics students; overview</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#focus"><i class="fa fa-check"></i>Focus and style of this module</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#level"><i class="fa fa-check"></i>Level of this module</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#readings"><i class="fa fa-check"></i>Readings and resources</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#other-reseources"><i class="fa fa-check"></i>Other relevant resources</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#this-book"><i class="fa fa-check"></i>About this web-book: the Governing Resource</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#markers"><i class="fa fa-check"></i>‘Markers’, abbreviations, and callouts/boxes</a></li>
+<li><a href="index.html#hypoth">Leaving comments and asking questions <em>within this book</em> using Hypothes.is</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#some-more-cool-things-about-this-book"><i class="fa fa-check"></i>Some more cool things about this book</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#collophon"><i class="fa fa-check"></i>Tech details of this book (‘do I call this ’collophon’?)</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#welcome-vids"><i class="fa fa-check"></i>Welcome and introduction videos outlined</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#aboutme"><i class="fa fa-check"></i>Aside: A bit about me (Dr. David Reinstein), contact info</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#me"><i class="fa fa-check"></i>Me</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#contact-info"><i class="fa fa-check"></i>Contact information</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="outline.html"><a href="outline.html"><i class="fa fa-check"></i>Outline and description of module</a>
+<ul>
+<li class="chapter" data-level="" data-path="outline.html"><a href="outline.html#briefly"><i class="fa fa-check"></i>Briefly</a></li>
+<li class="chapter" data-level="" data-path="outline.html"><a href="outline.html#coverage"><i class="fa fa-check"></i>Planned syllabus, coverage (detailed)</a>
+<ul>
+<li><a href="outline.html#overview-of-module-rules-discussionbackground-economic-models-maths-tools-empirical-evidence-frac12-week">Overview of module &amp; rules, discussion/background, <span>Economic models (&amp; maths tools), ‘empirical’ evidence</span> (<span class="math inline">\(\frac{1}{2}\)</span> week)</a></li>
+<li><a href="outline.html#sec.-refpref-util-choice-preferences-and-utility-choice-1.5-weeks">Sec. @ref(pref-util-choice): <span>Preferences and utility; Choice</span> (1.5 weeks)</a></li>
+<li><a href="outline.html#sec.-refuncertainty-preferences-under-uncertainty-and-over-time">Sec. @ref{#uncertainty} <span>Preferences under uncertainty (and over time)</span></a></li>
+<li><a href="outline.html#consumer-preferences-indifference-curvessets-0.5-weeks"><span>Consumer preferences, indifference curves/sets</span> (0.5 weeks)</a></li>
+<li><a href="outline.html#consumer-behaviorindividual-and-market-demand-functions-and-their-properties-1-week"><span>Consumer behavior/Individual (and market) demand functions and their properties</span> (1 week)</a></li>
+<li class="chapter" data-level="" data-path="outline.html"><a href="outline.html#noting-a-major-skip"><i class="fa fa-check"></i>Noting a major “skip”</a></li>
+<li><a href="outline.html#monopolies-and-pricing-of-profit-maximizing-price-setting-firms-especially-monopolies-price-discriminationmarket-segmentationpd-1.5-weeks"><span>‘Monopolies and pricing of profit-maximizing price-setting firms’ (especially monopolies)</span>; [price discrimination/market segmentation[(#pd) (1.5 weeks)</a></li>
+<li class="chapter" data-level="" data-path="outline.html"><a href="outline.html#notes-mid-term-examination-and-a-major-skip"><i class="fa fa-check"></i>Notes: Mid-term examination, and a major “skip”</a></li>
+<li><a href="outline.html#strategic-interactions-game-theory-and-evidence-1.5-weeks"><span>Strategic interactions: Game theory</span> (and evidence) (1.5 weeks)</a></li>
+<li><a href="outline.html#behavioural-economics-selected-further-concepts-1-week"><span>Behavioural economics: Selected further concepts</span> (1 week)</a></li>
+<li class="chapter" data-level="" data-path="outline.html"><a href="outline.html#project-discussion-of-research-recap-12-week"><i class="fa fa-check"></i>Project, discussion of research, recap (1/2 week)</a></li>
+<li class="chapter" data-level="" data-path="outline.html"><a href="outline.html#supplement-optional-asymmetric-information-moral-hazard-adverse-selection-signaling-and-applications"><i class="fa fa-check"></i>Supplement (optional): Asymmetric information (Moral hazard, adverse selection, signaling) and applications</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="outline.html"><a href="outline.html#scheduled-lecturestutorials-rules-for-assesment-see-ele-page-and-module-descriptor"><i class="fa fa-check"></i>Scheduled lectures/tutorials, rules for assesment: see ELE page and module descriptor</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction/‘housekeeping’, overview, models, maths, fundamentals</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#intro-coverage"><i class="fa fa-check"></i>This chunk aims to cover:</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#what-is-economics"><i class="fa fa-check"></i>What is Economics?</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#what-is-microeconomics"><i class="fa fa-check"></i>What is Microeconomics?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#the-content-and-meaning-of-economic-models-theories-and-analysis"><i class="fa fa-check"></i>The content and meaning of Economic models, theories, and analysis</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#intro-exercise"><i class="fa fa-check"></i>Interactive exercises (‘problem set’):</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="pref-util-choice.html"><a href="pref-util-choice.html"><i class="fa fa-check"></i><b>2</b> Preferences, Utility and Choice</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="pref-util-choice.html"><a href="pref-util-choice.html#reading-prefs"><i class="fa fa-check"></i><b>2.1</b> Reading</a>
+<ul>
+<li class="chapter" data-level="" data-path="pref-util-choice.html"><a href="pref-util-choice.html#readings-real-research-papers"><i class="fa fa-check"></i>Readings: ‘real research papers’</a></li>
+<li class="chapter" data-level="2.1.1" data-path="pref-util-choice.html"><a href="pref-util-choice.html#pref-exc"><i class="fa fa-check"></i><b>2.1.1</b> Interactive exercises (‘problem set’)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="uncertainty.html"><a href="uncertainty.html"><i class="fa fa-check"></i><b>3</b> Preferences under uncertainty (and over time)</a></li>
+<li class="chapter" data-level="4" data-path="consumers-dmd.html"><a href="consumers-dmd.html"><i class="fa fa-check"></i><b>4</b> Consumer preferences, constraints and choice, demand functions</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="consumers-dmd.html"><a href="consumers-dmd.html#consumer_pref"><i class="fa fa-check"></i><b>4.1</b> Consumer preferences, indifference curves/sets (0.5 weeks)</a></li>
+<li class="chapter" data-level="4.2" data-path="consumers-dmd.html"><a href="consumers-dmd.html#demand"><i class="fa fa-check"></i><b>4.2</b> Consumer behavior/Individual (and market) demand functions and their properties (1 week)</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="monop-firm-opt.html"><a href="monop-firm-opt.html"><i class="fa fa-check"></i><b>5</b> (Monopoly) Firms’ optimization and pricing, price-discrimination</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="monop-firm-opt.html"><a href="monop-firm-opt.html#monop"><i class="fa fa-check"></i><b>5.1</b> Monopolies and pricing of profit-maximizing price-setting firms (especially monopolies)</a></li>
+<li class="chapter" data-level="5.2" data-path="monop-firm-opt.html"><a href="monop-firm-opt.html#pd"><i class="fa fa-check"></i><b>5.2</b> Price discrimination/market segmentation</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="game-theory.html"><a href="game-theory.html"><i class="fa fa-check"></i><b>6</b> Strategic interactions: Game theory</a></li>
+<li class="chapter" data-level="7" data-path="more-be.html"><a href="more-be.html"><i class="fa fa-check"></i><b>7</b> Behavioural economics: Selected further concepts</a></li>
+<li class="chapter" data-level="8" data-path="project.html"><a href="project.html"><i class="fa fa-check"></i><b>8</b> Beem101: Project, discussion of research</a></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Microeconomics (MSc)</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="uncertainty" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Preferences under uncertainty (and over time)</h1>
+<p>‘Expected Utility’; risk-aversion, finance and diversification; time-preference and discounting</p>
+
+<div class="note">
+<strong>I will add a great deal of content here.</strong>
+</div>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="pref-util-choice.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="consumers-dmd.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="book_assets/gitbook-2.6.7/js/app.min.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/lunr.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": true,
+"weibo": true,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"],
+"google": false
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
