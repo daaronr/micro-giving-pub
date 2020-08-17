@@ -1,4 +1,4 @@
-# Introduction/'housekeeping', overview, models, maths, fundamentals {#intro}
+# Models, maths, fundamentals {#intro}
 
 This, combined with the above outline represents approximately half a week of material
 
@@ -43,38 +43,95 @@ Unfold to see these...
 We will return to the issues of 'what and why models' throughout the module.
 </div>
 
-\
-
 ```
 
-**Empirics, maths revision**
+## Empirics, maths revision
 
 <div class="marginnote">
 Some of the maths you need will also be simultaneously covered in your Optimisation and Econometric modules, sometimes at a higher level.
 </div>
 
-```{block2,  type='fold'}
+We will use some maths in this module, and now would be a good time to revise some of this on your own. 
 
-1.  Discussion of 'empirical identification': [The mixtape, Scott Cunningham](http://scunning.com/cunningham_mixtape.pdf) pp 18-22
+Here are some key elements.
 
-2.  Math revision concepts in
+<!-- #TODO: link some revision material -->
 
-- [DA lecture 3](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/MIT14_03F16_lec3MathTools.pdf); we may not use all of this
+1.  We will consider the use of microeconomics in **'empirical identification'** of effects using data.  [The mixtape, Scott Cunningham](http://scunning.com/cunningham_mixtape.pdf) pp 18-22, provides a good introduction to this
+
+2.  So called 'pre-calculus' and general maths concepts including
+
+- The symbolic language and notation of maths
+
+- Multivariate and univariate functions (and mappings), inverses of functions, implicit functions 
+
+- Summation and product operators
+
+- Plotting these functions over their domain and range; the 'level sets' of multivariate functions
+
+- Specific functions including: Logarithms/exponential functions, quadratic and higher-order polynomial functions, 'min' and 'max' operators
+
+- Limits 
+
+- Geometric series
+
+
+3. Some elements of basic calculus, including, perhaps
+
+- Derivatives and their interpretations
+  - As 'slopes'
+  - Higher-order derivatives and cross-partials, relevance for 'minima and maxima' (optimization)
+  
+- Integrals and their interpretation
+
+<div class="marginnote">
+However, in general I'm not asking you to memorize sets of rules; I'll give hints to remind you of these rules on any examination.
+
+</div>
+
+- 'Total differentiation' of a function
+
+- Constrained optimization and (perhaps) the Lagrangian method (probably optional)
+
+- The implicit function theorem (probably optional) and 'comparative statics'
+
+3. Some elements of **Set theory**, including
+
+- Open and closed sets
+- Subsets, ordered sets, unions and intersections
+
+4. Basic ideas of probability and expectation
+
+5. The logic and construction of formal definitions and proofs
+
+<div class="marginnote">
+The logic of definitions and proofs may be the most important concept for this module
+</div>
+ 
+- Proof by contradiction
+- Proof by construction
+
+
+<!--
+- Math revision concepts in
+
+- [DA lecture 3](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/MIT14_03F16_lec3MathTools.pdf); we may use some of this
 
 - QMC 1.3 (some good stuff; don't worry too much about all the derivative rules)
 
-- The key maths concept for this module: The logic and language of formal definitions and proofs, e.g., 'proof by contadiction', and 'proof by construction'.
+-->
 
-```
 
-### What is Economics? {-}
+## What is Economics? {#whats-econ}
 
 \
 <div class="marginnote">
 *Note: DR: It has changed. There are different views. Ask two economists, and you'll probably get at least three answers.*
 </div>
 
+```{block2,  type='note'}
 What is Economics? Please propose a definition (from your head... give your own impression) as a comment HERE using Hypothes.is. Then unfold the box below to see some proposed definitions and ideas.
+```
 
 ```{block2,  type='fold'}
 
@@ -101,15 +158,12 @@ One definition: "The study of the (economic) choices individuals and firms make 
 
 Largely, using theoretical and mathematical 'models' that depend on strong assumptions.
 
-`r format_with_col("Comprehension Q: Consider some examples of 'relevant choices' for economic study. ","gray")` 
+`r format_with_col("Comprehension Q: Consider some examples of 'relevant choices' for economic study. ","gray")`
 
 `r format_with_col("Students: please propose some of these as a Hypothes.is comment HERE.", "brown")`
 <div class="marginnote">
 For help on using hypothes.is please see [ABOVE](#hypoth) or go to https://web.hypothes.is/.
 </div>
- 
-
-
 
 
 What sort of models are we talking about?...
@@ -128,22 +182,251 @@ But I don't find it satisfactory if people respond to a meaningful criticism of 
 </div>
 
 
+### So why learn these models, if they are not realistic?
 
-## The content and meaning of Economic models, theories, and analysis {-}
+Consider the parable of the tortoise and the hare (Aesop)...
 
+- [Original version, English translation](http://read.gov/aesop/025.html)
+- [Merrie Melodies version](https://www.youtube.com/watch?v=LthoQPO6YLE)
+
+\
 
 ```{r  fig.cap = '', out.width='55%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics("picsfigs/tortoisehare.jpg")
+ knitr::include_graphics(file.path("picsfigs","tortoisehare.jpg"))
 ```
 
+
+
+One might question the realism of this story:
+
+- Can hares really speak?
+
+- Is this a rabbit or a hare?
+
+- What other animals were racing?
+
+
+Okay, the story is not so realistic. However, it conveys an important message. Is this message in any way affected by the answers to the above questions?
+
+The same can be asked about many criticisms of simple economic models. Of course one should always consider the applicability of particular models to real-world problems, and carefully consider whether the assumptions are reasonable and relevant, and whether the departures from these assumptions will lead to any different predictions. However, in considering the general insight conveyed by the model, some criticisms can merely be distracting. At the very least, we should not reject economic models simply because they are not fully realistic, just as we do not reject Aesop's fables because they involve talking animals. The idea of 'Ceteris paribus' (all other things being equal) can help us here.
+
+
+**Again, so why learn these models?**
+
+- They are a starting point
+
+- They (sometimes) make concrete predictions you can test
+
+- They may be useful for building insight, clear arguments, a way of thinking
+
+
+- Discussion is framed around these models and they are seen as a 'baseline'
+
+- You must understand the arguments and models to be able to effectively critique or extend them
+
+<div class="marginnote">
+For example, some critics of what they call 'neoliberal economics' can be misinformed about what it is. Their criticism can sound to us mainstream economists like someone who says 'cars are dangerous and should be banned because they go too fast and have no mechanism for stopping'.
+</div>
+ 
+## Economic Models {#econ-models}
+
+**Economic model:**
+
+One definition: 
+
+> A simple theoretical description that captures the essentials of how the economy works.
+
+<div class="marginnote">
+For the material we cover in this module, this definition would only work if we interpret the term 'economy' very broadly.
+</div>
+ 
+\
+
+
+### Differing views about models
+
+There are **differing views** on the meaning, purpose, and use of economic models. 
 
 ```{block2,  type='note'}
-**I will add a great deal of content here shortly.**
+
+This discussion is rather abstract but important. These concerns and issues may make more sense as we get into considering specific models in detail. So we will try to come back to this.  
+
+```  
+
+<div class="marginnote">
+We will return to this in our discussions, and again when we consider the use of experiments. See the suggested  readings/notes on readings.
+</div>
+
+```{block2,  type='note'}
+
+
+**Source reading**: The discussion below is largely from [@Sugden2017] "Credible worlds: the status of theoretical models in economics." Journal of Economic Methodology 7.1 (2010): 1-31.](https://www.jstor.org/stable/40267405?seq=1)
+
+
+
+
+Sugden's paper mentions two famous papers, one of which is (Nobel Laureate George) Akerlof's "the Market for Lemons" [@Akerlof1970]. It would be worth reading some of Akerlof's paper and seeing how much you can follow; it is rather accessible. We may return to this specific model of asymmetric information later in the module, and it could certainly be relevant for your project.
+
+
+If you are interested, I will set up a wiki to engage in a group discussion of these articles. 
+
 ```
 
+\
+
+The  *instrumentalist* view:
+
+
+The Methodology of Positive Economics [@friedmanMethodologyPositiveEconomics1953]: the ultimate goal of theory is to "yield valid and meaningful ... predictions about phenomena not yet observed""
+
+
+“Simplicity” -- ‘the less initial knowledge needed to make a prediction'.
+
+“Fruitful” -- more precise predictions, for a wider range of situations
+
+
+\
+
+
+In contrast, the *'Fictionalist'* view  [@Sugden2017]:
+
+> describes a fictional world that is credible or truthlike in something like the way that the events of a realistic novel are; the model connects with the real world by relations of similarity
+
+\
+
+*Some considerations:*
+
+Are these models predictive? If not, are they useful?  There are arguments for modeling optimising behavior if it is *not* predictive.  There is some evidence for near-optimisation in some settings, and that choices move in this direction. 
+
+There is also evidence of 'predictable irrationality' (or 'bounded rationality); this motivates behavioural economics.  There is some evidence for the following (unfold).
+
+```{block2,  type='fold'}
+
+
+1. Psychological costs/benefits relating to *outcomes other than their own final consumption. People may care about
+
+- others' consumption (altruism etc.),
+- about the way they *make* the decision
+- ... and about how close they come to certain goals (see 'reference points' and 'loss aversion').
+
+2. People have self-control problems.  They also may realize their short-term choices are not in their lt interest, and try to constrain themselves.
+
+2. It is mentally costly to carefully calculate the costs and benefits $\rightarrow$  'rational inattention'
+
+- As a result, people may follow simple rules or 'heuristics' to make their decisions easier; e.g., 'work every day until I've earned  target income'.
+
+```
+
+
+### The PPF: a 'model' and a way of seeing things {-}
+
+```{block2,  type='note'}
+
+At this point we consider a simple and specific model to fix ideas, to make things less abstract. The NS text brings up the production possibility frontier; this is a common example to start with, although by itself it could be argued that 'the insights gained are basically by assumption' ... there is not really an additional reasoning step. Perhaps a better depiction of this example is in [the Curtis and Irvine open access text](https://open.umn.edu/opentextbooks/textbooks/microeconomics-markets-methods-and-models), sections 1.3-1.5, where they consider two individuals with distinct production possibilities, and derive the 'aggregate' ppf, and show the gains to trade.
+
+```
+
+```{r  fig.cap = 'Production possibility frontier', out.height='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs", "ppf_cc.png"))
+```
+
+<div class="marginnote">
+PPF file source [LINK](https://commons.wikimedia.org/wiki/File:Production_Possibilities_Frontier_Curve.svg), User:Everlong, CC-BY-SA-3.0)
+</div>
+ 
+Above, we see a depiction of the "production possibility frontier". You may be familiar with this from your previous study. The PPF describes the maximum amount of one good that can be produced conditional on a certain quality of another good being produced.
+
+According to  [@nicholsonIntermediateMicroeconomicsIts2007]
+
+The PPF illustrates key principles:
+
+1. Scarce Resources
+
+2. Scarcity involves opportunity cost. 
+
+<div class="marginnote">
+- The opportunity cost of a good is measured by the alternative uses that are foregone producing it.
+- On the PPF above the opportunity cost of more guns is less butter. 
+- The opportunity cost of a choice is the foregone 'next best' opportunity from a choice.
+- I may just call this ‘cost’
+</div>
+ 
+```{block2,  type='inputq'}
+
+Can you think of an example that illustrates the distinction between what is commonly thought of as the  'cost' and the economists' definition of an 'opportunity cost'?
+
+```  
+
+
+3.  Opportunity costs are (often) increasing.
+
+-  What this means is that as you produce more of one good, its opportunity cost (in terms of the other good foregone) increases.
+
+- The “law” of diminishing marginal returns.^[I'm somewhat sceptical of this being a 'law'; there are certainly increasing returns in certain regions.* However, you will see it again and again as it is a fairly standard assumption.]
+
+<br>
+
+**However**
+
+I'm not sure if I would call this a 'model'. It certainly provides a way of visualizing the trade-offs in an economy, and the way it is drawn embody certain assumptions. 
+<div class="marginnote">
+This graphic has a mathematical representation which we will not cover now.
+</div>
+
+Consider: How wo make this a meaningful 'model with assumptions'? 
+
+I could imagine it as below (unfold).
+
+
+```{block2,  type='fold'}
+
+To make this more clearly a 'model with assumptions', let's assume an economy with
+
+1. Two possible goods: food and clothing
+2. A single input into the production process for either good labour (L)
+3. The economy has a fixed supply of labour $\bar{L}$.
+4. The production function for food is $F_f(L)$ and the production function for clothing is $F_c(L)$, with both 'strictly and continuously increasing in their argument'. All firms have these same production functions (this implies there are no spillovers/externalities between firms, and no complementarities between producing each good)
+
+5. Both production functions exhibit diminishing returns to scale (we leave off the maths for how to precisely define this for now)
+
+```
+
+
+These assumptions in the folde above could be considered a 'model' of an economy. Note that not everything has been specified. E.g., we might ask: i.  How many firms are there? ii. How do the firms compete in output and input markets? iii. What exactly are these production functions?  There are also clearly unrealistic elements, e.g.: i. Only two goods, ii.  Only one input, iii.  No complementarities in production
+
+Still, the assumptions given will yield a PPF with the shape above: the 'feasible production set' of the economy will have a particular shape. It's 'maximal elements' constitute the 'frontier' of this set, which will be:
+
+- downward-sloping, because each unit of the input ($L$) used to produce clothing cannot be used to produce food, and
+
+- concave (increasing opportunity costs), because of the diminishing returns to scale for each good ... as more labour is diverted to clothing away from food, it becomes less and less relatively productive.
+
+This seems to convey an insight that 1. teaches us a way of thinking and 2. seems likely to carry over into more 'realistic' models. At the very least, it suggests that, under any economic system, there *may* be tradeoffs between how much of each good or service can be consumed. E.g., policymakers may need to consider 'should we have more health care or more non-health consumption', rather than simply saying 'we should provide the best health care that money can buy to everyone.' 
+
+<div class="marginnote">
+One might at this point raise the 'paradox of analysis': we have stated a set of 'assumptions' and then noted what logically follows. But actually, the 'results' and the assumptions are basically logically equivalent. So have we simply defined the answer we wanted to get, i.e., circular reasoning? This is a deeply philosophical issue.
+</div>
+ 
+The '*increasing* opportunity costs' insight seems more fragile, more dependent on a fairly strong assumption. How do we know that there are diminishing returns to scale for each good? There are plausible reasons why it may be the opposite... returns to specialisation as an economy, etc.
+
+Furthermore, the model at *this* level of simplicity cannot speak to a number of questions. E.g., without a sense of the market structure (how many firms and how do they compete), we do not know whether we will *attain* the PPF-- the economy may end up producing at the inferior point 'C', for example.
+
+A 'simpler' model is not necessarily better, nor necessarily worse.
+
+```{block2,  type='tip'}
+For comprehension: *Be sure you can draw the PPF; consider its slope and what it means*
+```  
 
 
 ### Interactive exercises  ('problem set'): {-#intro-exercise}
 
 - Discussion and brief writing/speaking exercise on 'what Economic models are for', examples of models.
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148137970-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148137970-5');
+</script>
 
