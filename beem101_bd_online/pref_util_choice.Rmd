@@ -21,10 +21,18 @@ This is also relevant for building empirical models such as 'models of consumer 
 We approach this in an abstract and logically and mathematically-rigorous, but not highly 'computational' way. Even if you have taken Economics as an undergraduate, you may not have seen this approach.
 
 We will not always be quite so mathematically rigorous throughout the module. However, I want to at least give you some of these tools, and a 'flavour' of this approach, which characterises modern Microeconomics (and will be at the core of PhD modules).
-
 ```
 
-<!--`-->
+## Key goals of this chunk
+
+1. Understand ways preferences are formally modeled. Learn this notation and be able to construct and use these models
+
+2. Consider the meaning and reasonableness of distinct assumptions over preferences
+
+3. Gain some sense of the implications of these models and assumptions for deep questions of human behavior, as well as  practical applied questions
+
+4. Learn how to construct and understand simple mathematical proofs involving preference relations
+
 
 ## Reading {#reading-prefs}
 
@@ -32,7 +40,7 @@ We will not always be quite so mathematically rigorous throughout the module. Ho
 
 - O-R Chapters 1-2 (we will focus on selected material as described in this web book, but feel free to read these chapters in their entirety if you find it interesting; it all may be useful for your project, dissertation, and future work and study)
 
-*Note:* *Within O-R chapter 1, feel free to skip*  the proof of propositions 1.1 ('representing preferences by utility functions') and 1.2 ('Preference relation not represented by utility function')
+*Note:* *Within O-R chapter 1, feel free to skip* the proof of propositions 1.1 ('representing preferences by utility functions') and 1.2 ('Preference relation not represented by utility function')
 
 \
 
@@ -81,16 +89,308 @@ To be determined ('tbd'). Some possibilities below the fold.
 Question 6 on the "Shepard scale" is very cool!
 \
 
+```
+
 ### Content
 
 ```{block2,  type='note'}
-**I will add a great deal of content here shortly.**
+**I amm adding  content here now**
 
-This will go through the relevant OR text material and a bit more.
+This will go through the relevant O-R text material and a bit more. However, you should read the relevant sections of O-R alonside this.
+
+```
+
+
+## Preferences and utility {#pref-util}
+
+### Preamble
+
+
+<div class="marginnote">
+We now consider the very very fundamental building blocks behind the (in)famous 'neoclassical economics model.' If you accept these 'axioms' nearly everything flows from it! We will also consider alternative assumptions influenced by  behavioral economics.
+</div>
+
+### A 'motivating' exercise
+
+<div class="marginnote">
+Please feel free to type somw thoughts in the Hypothes.is sidebar, to engage discussion on this.
+
+You can find another 'idea-stimulating' exercise referenced in the O-R book, the questionnaire they give at [http://gametheory.tau.ac.il/exp11/](http://gametheory.tau.ac.il/exp11/). It's worth doing as they refer to it later in several parts of the book.
+</div>
+
+
+```{block2,  type='inputq'}
+
+Consider a decision you recently made?  Define this decision clearly; what were the options?  How do you think you decided among these options?
+
+What did this depend on? Would other people in your place have made the same decision?
+
+If you got amnesia and forgot what you decided and then were in the same situation again. Do you think you'd make the same decision?
+
+```
+
+```{r  fig.cap = 'Am I blowing your mind here?', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/mortys-mind-blower.png")
 ```
 
 
+\
+
+```{block2,  type='inputq'}
+Next, suppose I asked you:   'State a rule that governs how people *do* make decisions'...
+
+I want this rule to be both
+
+1. Informative (it rules *out* at least some sets of choices) and
+
+2. Predictive (people rarely if ever violate this rule).
+
 ```
+\
+
+
+
+Now suppose I asked an apparently similar question:
+
+```{block2,  type='inputq'}
+
+'State a rule that governs how people *should* make decisions'..
+
+
+By 'should' I mean that *they will not regret having made decisions in this way.*
+
+
+If people *did* follow these rules, what would this imply and predict?
+
+```
+
+
+
+Economists (and decision theorists/decision scientists) have specifically defined such rules in terms of 'axioms about preferences'
+
+They have started from these 'reasonable axioms' and followed their logical implications for individual choices, individual responses to changes in prices and income, market prices and quantities and their responses, 'welfare' and inequality outcomes for entire economies, etc.
+
+The 'Standard axioms' (imply that) choices can be expressed by 'individuals maximising *utility functions* subject to their *budget constraints*'.
+
+This yields predictions for individual behavior, markets, etc. We will get to this.
+
+
+```{block2,  type='note'}
+
+We want to develop a model that can be used to show how we make choices or decisions.
+
+In the (neo) classical economics framework, your (optimising) choices are determined by two things:
+
+1. Preferences: what goods do you like?
+
+2. Constraints: how much money do you have, what are the prices of the goods you buy?
+
+```
+
+### Preferences
+
+```{block2,  type='note'}
+
+Note that this excerpts and mainly follows O-R chapter 1. I try to highlight the key points, explain them a bit more, and add some additional content that seems important You must read that chapter *along with* these notes. All quotes are from O-R unles otherwise noted.
+
+```
+
+
+#### Notation, definition, explanation {-}
+
+O-R give some background
+
+> We follow the approach almost all economic theory and characterize an individual by her preferences among the alternatives, without considering the origin of these preferences. they nicely explain the why unlike many texts
+
+<div class="marginnote">
+And unlike many other texts, O-R *explain* that they are doing this.
+</div>
+
+
+\
+
+What sort of 'preferences' are we considering? Just 'ordinal' ones, at least for now:
+
+> When we express preferences, we make statements like “I prefer a to b”, “I like a much better than b”, ...
+
+> In this book [as is standard]  the model of preferences captures only statements of the first type... [the *ranking*]
+
+
+\
+
+> We can think of an individual’s preferences over a set of alternatives as encoding the answers to a questionnaire. For every pair $(x, y)$ of alternatives in the set,  the questionnaire asks the individual which of the following three statements fits best his attitude to the alternatives.
+
+> 1. I prefer x to y.
+
+> 2. I prefer y to x.
+
+> 3. I regard x and y as equally desirable.
+
+<div class="marginnote">
+These will later be formally encoded as
+
+1. $x \succ y$,
+
+2. $y \succ x$ (or $x \prec y$),
+
+and
+
+3.  $x \sim y$, or equivalently, $y \sim x$ (formally: because 'equivalence operators are reflexive'),
+
+... respectively. However, as O-R show, these can all in fact be denoted with the careful use of a single 'at least as good' operator.
+
+</div>
+
+
+
+\
+
+O-R next discuss 'binary relations' and their properties.
+
+
+> A binary relation on a set $X$ specifies, for each ordered pair $(x , y )$ of members of X , whether or not x relates to y in a certain way.
+
+
+This is getting abstract, and unless you've taken some 'pure maths' you may be a bit confused and overwhelmed here. In this case, I will try to help you: the folded content below is a question and answer on this with a student. Beware that this is a digression, so if you already know this stuff, you can skip it.
+
+***
+
+```{block2,  type='fold'}
+
+
+**Q (from student whom I will call 'Sue'): Not sure the meaning of ‘binary relation’. Does it refer to relationships between two objects?**
+
+**A: Yes, this is a pure maths concept.**8 Think of a 'binary relation' as a computer program that does the following...
+
+1. You enter two objects (say 'peanut butter' and 'jelly')
+2. It tells you 'yes, these objects are related' or 'no, they are not related'.
+
+For example, we can apply the binary relationship '$R_s$: objects  go well together in a sandwich' to the above...
+
+'Peanut butter' $R_s$ 'Jelly' $\rightarrow$ `true`
+
+'Peanut butter' $R_s$ 'tuna fish' $\rightarrow$ `false`
+
+\
+
+
+Another binary relation could be '$R_l$: 'the first object is usually larger than the second one.'  Here we would have:
+
+'Whale' $R_s$ 'Minnow' $\rightarrow$ `true`
+
+'Minnow' $R_s$ 'Whale' $\rightarrow$ `false`
+
+
+*Sue: Thank you! These examples are great!! I think they would be great to put in the web-book if you are planning to create one.*
+
+
+<br>
+
+>  For example, “acquaintance” is a binary relation on a set of people. For some pairs $(x , y )$ of people, the statement “x is acquainted with y ” is true, and for some pairs it is false.
+
+(The English word 'acquaintance'  basically means 'has met' or 'knows').
+
+```
+
+\
+
+Continuing with these questions and answers ... (unfold)
+
+```{block2,  type='fold'}
+
+**Q: What does the ‘acquaintance’ example mean?**
+
+**A: To give more specific examples,** we could have, for $R_a$: 'is aquainted with':
+
+Sue $R_a$ "Sue's lecturer in the UK" $\rightarrow$ `true`
+
+Sue $R_a$ "Sue's mother" $\rightarrow$ `true`
+
+"Sue's mother" $R_a$ "Sue" $\rightarrow$ `true` (note it is 'reflexive')
+
+"Sue's mother" $R_a$ "Sue's lecturer in the UK" $\rightarrow$ `false` (so it's not 'transitive')
+
+*Sue: I was not sure what 'aquaintance meant in this example. Now I do understand!*
+
+```
+
+Another example of a binary relation (unfold Q&A)...
+
+
+```{block2,  type='fold'}
+
+> Another example of a binary relation is “smaller than” on the set of numbers. For some pairs $(x,y )$ of numbers, x is smaller than y , and for some it is not.
+
+>  For a binary relation R, the expression $x R y$ means that x is related to y according to R. For any pair $(x, y)$ of members of X , the statement $x R y$ either holds or does not hold. For example, for the binary relation < on the set of numbers, we have $3 < 5$, but not $7<1$.
+
+<br>
+
+**Q: Given that R stands for relation, what does $xRy$ means? Does it mean the relationship between x and y?**
+
+**A: It means 'x relates to y, by the relation R'.** If the relation R is 'greater than', then $xRy$ means 'x is greater than y$.
+
+\
+
+**Q: If so, what does yRx mean?**
+
+**A: It means 'y relates to x' .... with the above example it means 'y is greater than x'.**
+
+Sue: Aha!! I see.
+
+```
+
+***
+
+O-R begin with the formal definition of 'at least as desirable as' (or 'seen as at least as good as'). In other words, 
+
+"x is at least as desirable as y" is  denoted $x \succsim y$... 
+
+> if the individual’s answer to the question regarding x and y is either “I prefer x to y” or “I regard x and y as equally desirable”. 
+
+
+O-R show, that in fact, *all* of the preference relationships can be denoted with the careful use of the $\succsim$ operator. For example:
+
+'Indifference': 
+
+$$x \sim y \text{ if both } x \succsim y \text{ and } y \succsim x$$. 
+
+and
+
+'Strict preference' 
+
+
+$$x \succ y \text{ if } x \succsim y \text{ but not } y \succsim x$$. 
+
+
+<div class="marginnote">
+Why? In pure maths, and perhaps in economic theory, they value stating a concept with the fewest and most 'primal' definitions possible. 
+
+Technical note: This can help in proving properties of these objects and systems. By characterising something as the simplest mathematical object possible, we can apply all of the properties of that mathematical object that have been proven over the centuries.
+</div>
+
+
+```{block2,  type='inputq'}
+
+Exercise: to be sure you understand these things, close your book/computer and try to reconstruct the construction of strict preferences or indifference from only the $\succsim$ operator. Can you give the intuition for this, explaining it clearly?
+
+```  
+
+
+\
+
+Below I reprint the 'Venn diagram' of preferences over x an y from the O-R text.
+
+```{r  fig.cap = 'Venn diagram of possible preference relationships (from O-R)', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/pref-venn-or.png")
+```
+
+Note that the set of preferences where 'x and y are equally desirable' is included in both the set 'x is at least as desirable as y' and the set 'y is at least as desirable as x'.
+
+
+#### (Standard assumptions over) properties of preferences  {-}
+
+
+
 
 
 

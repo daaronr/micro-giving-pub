@@ -53,57 +53,34 @@ tags: [Economics, Microeconomics, Applied, Theory, MSc, Textbook]
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-<!-- Try downloading and accessing some functions here: -->
-```{r download-formatting-to-support-folder, include=FALSE}
+#### Download,  access and run project_setup.R ####
 
+(Note: we ultimately can do this in main, but this is a bridge)
+
+
+```{r download-project-setup}
 library(here)
-tryCatch(
-  {
-download.file(url = "https://raw.githubusercontent.com/daaronr/dr-rstuff/master/bookdown_template/support/header.html", destfile = here("support", "headerX.html"))
-  download.file(url = "https://raw.githubusercontent.com/daaronr/dr-rstuff/master/bookdown_template/support/tufte_plus.css", destfile = here("support", "tufte_plusX.css"))
-},  error = function(e) {
-  print("you are not online, so we can't download")
-}
-)
 
-tryCatch(
-file.rename(here("support", "headerX.html"), here("support", "header.html"))
-)
 
-tryCatch(
-file.rename(here("support", "tufte_plusX.css"), here("support", "tufte_plus.css"))
-)
-
-```
-
-```{r download-fncns, include=FALSE}
-
-library(here)
 library(devtools)
-
 tryCatch(
   {
-download.file(url = "https://raw.githubusercontent.com/daaronr/dr-rstuff/master/functions/functions.R", destfile = here("code", "functionsX.R"))
-  download.file(url = "https://raw.githubusercontent.com/daaronr/dr-rstuff/master/functions/baseoptions.R", destfile = here("code", "baseoptionsX.R"))
-},  error = function(e) {
-  print("you are not online, so we source locally instead; hope you've updated")
-  source(here("code", "functions.R")) # functions grabbed from web and created by us for analysis/output
- source(here("code", "baseoptions.R")) # Basic options used across files and shortcut functions, e.g., 'pp()' for print
-}
+     download.file(url = "https://raw.githubusercontent.com/daaronr/dr-rstuff/master/functions/project_setup.R", destfile = here("code", "project_setupX.R"))
+  },  error = function(e) {
+  print("you are not online, so we can't download")
+  }
 )
 
-#Note - workaround naming and code because otherwise a failed download seems to delete the destination file -- how to fix that? Renaming files?
-
-file.rename(here::here("code", "functionsX.R"), here::here("code", "functions.R"))
-file.rename(here::here("code", "baseoptionsX.R"), here::here("code", "baseoptions.R"))
-
-source(here("code", "functions.R"))
-source(here("code", "baseoptions.R"))
-
-# Basic options used across files and shortcut functions, e.g., 'pp()' for print
-# functions grabbed from web and created by us for analysis/output
+tryCatch(
+  file.rename(here("code", "project_setupX.R"), here("code", "project_setup.R"))
+)
 ```
 
+```{r run-project-setup}
+
+source(here("code", "project_setup.R"))
+
+```
 
 
 ```{r install,  echo = FALSE, include=FALSE}
@@ -127,17 +104,6 @@ install.packages("bookdown")
 <!-- Download 'backup' bibtex file from dropbox (synced with Zotero), do the rename workaround -->
 
 
-```{r, include=FALSE}
-
-tryCatch(
-  {
-download.file(url = "https://www.dropbox.com/s/3i8bjrgo8u08v5w/reinstein_bibtex.bib?raw=1", destfile = here("support", "reinstein_bibtex_from_dropboxX.bib"))
-
-file.rename(here("support", "reinstein_bibtex_from_dropboxX.bib"), here("support", "reinstein_bibtex_from_dropbox.bib"))
-  }
-)
-
-```
 
 <!-- note installing packages is mainly removed because this is done in baseoptions.R -->
 
@@ -298,6 +264,12 @@ In particular:
 1. "O-R": [Models in Microeconomic Theory, by Osborne and Rubinstein](https://www.openbookpublishers.com/product/1171)
 
 
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/models-text-cover.png")
+```
+
+
 > Our main aim is to give the reader an understanding of the concepts of model and equilibrium in microeconomic theory
 
 This book is very precise, abstract (in a mathematical sense), and extremely well-written and full of wisdom and insight. It is *dense*; don 't worry if it takes you a long time to digest each concept (but if you get stuck, please do ask questions and try different approaches).  It is the most relevant (at least of these three) for further postgraduate/PhD study.
@@ -312,7 +284,7 @@ This is a more traditional text, with more 'computational-style' problems. It co
 
 3. "QMC": [Quantum Microeconomics with Calculus](http://www.smallparty.org/yoram/quantum/quantumcalc.pdf) by Yoram Baumann, the self-proclaimed 'World's First Standup Economist'
 
-This is somewhat less rigorous than O-R, but it has its own strengths. It approaches the material in an unusual way, and covers some material that is non traditionally covered in Economics courses (and skips many core concepts).  
+This is somewhat less rigorous than O-R, but it has its own strengths. It approaches the material in an unusual way, and covers some material that is non traditionally covered in Economics courses (and skips many core concepts).
 
 As I am incorporating some material *directly* from these works, I include the licences below (in the fold).
 
@@ -444,19 +416,19 @@ batch file: 'bash \$HOME/"Google Drive/exeter_teaching/be2024/compileslidesnotes
 ```{block2,  type='note'}
 
 I will use these boxes for 'notes' expressing material that is important, but is somewhat 'aside' from the main content.
-```  
+```
 
 ```{block2,  type='tip'}
 
 This color of box is used for 'hints and tips'.
 
-```  
+```
 
 ```{block2,  type='warning'}
 
-Boxes with this color indicate 'warnings' ... usually highlighting ways that students often *misunderstand* particular content. 
+Boxes with this color indicate 'warnings' ... usually highlighting ways that students often *misunderstand* particular content.
 
-```  
+```
 
 \
 
@@ -478,10 +450,10 @@ You can do this using a browser tool called [hypothes.is](https://web.hypothes.i
 
 It will be better if you get an account that identifies you to me, so I can follow up with individual feedback and learn more about who you are. However, it's also fine if you want to make your account ID basically anonymous... or you could even get two accounts,  if you prefer.
 
-You don't need to install anything. However, if you install the Hypothes.is plugin for your browser this will give you the additional ability to leave comments on other sites and start private groups. 
+You don't need to install anything. However, if you install the Hypothes.is plugin for your browser this will give you the additional ability to leave comments on other sites and start private groups.
 
 </div>
- 
+
 **To add a comment or question**
 
 After you've an account (and you are signed in), to add a comment or ask a question here, just:
@@ -499,11 +471,11 @@ After you've an account (and you are signed in), to add a comment or ask a quest
 
 2. Click the 'annotate' icon that comes up
 
-3. Write your comment or question 
+3. Write your comment or question
 
 - Write your question in the box (see icons to use math notation and other features)
 
-- Please add the tag 'beem101' to help others search for this. 
+- Please add the tag 'beem101' to help others search for this.
 
 - Click 'post to public'
 
@@ -515,7 +487,7 @@ After you've an account (and you are signed in), to add a comment or ask a quest
 
 \
 
-- I will periodically browse and respond. 
+- I will periodically browse and respond.
 
 
 \
@@ -550,9 +522,9 @@ I will write something in a box like the one below
 
 Please let me know how Hypothesis is working for you by leaving a  Hypothes.is comment HERE.
 
-``` 
+```
 
-This means I really want you to put a comment exactly at that point in the web-book, and I'll be watching for these.  
+This means I really want you to put a comment exactly at that point in the web-book, and I'll be watching for these.
 
 
 
@@ -604,22 +576,22 @@ All source material and code can be accessed [on my Github repo](https://github.
 ```{block2,  type='fold'}
 
 - Welcome to Exeter
-- My background 
+- My background
   - (grew up in USA:  New England/NY, in UK 14 years)
   - PhD in UC Berkeley, love California
   - Very interested and involved in research and it's application: behavioral economics, charitable giving and 'doing good', field experiments and data on individual decisions
 
-- What you will get out of this module and your Exeter experience: interaction 
+- What you will get out of this module and your Exeter experience: interaction
 
-Not to hear what I have to say/write, but to 
+Not to hear what I have to say/write, but to
   - Ask detailed questions in your own words and get answers, suggestions and feedback, with many followups
   - Show your ideas and understanding and get my feedback (and possible recommendations/references )
-  - Be part of exciting discussions and problem-solving with me and with fellow students 
+  - Be part of exciting discussions and problem-solving with me and with fellow students
   - Work on a project to build your understanding, ability to apply concepts from the module, communication skills...  and to get feedback on your ideas ... helping you prepare for your dissertation and professional projects
 
 
-Interact... 
-  
+Interact...
+
 - In synchronous sessions and tutorials (and in comments on pre-record)
 - On the ELE forum
 - Within the web-book itself!
@@ -628,9 +600,9 @@ Interact...
 - Through your project and presentation (coursework), which I'll give you feedback on
 
 
-Next videos: 
-  
-What you will learn and why it matters, 
+Next videos:
+
+What you will learn and why it matters,
 the resources for this module, especially an ‘interactive web-book’ and the Open-Access Osborne & Rubinstein
 Please get in touch and contact me (or write on the student forum in this ELE) to tell me (and your classmates) about yourself and your interests, and to ask any questions
 
@@ -645,7 +617,7 @@ Please get in touch and contact me (or write on the student forum in this ELE) t
 ```{block2,  type='fold'}
 
 Web book:
-  
+
 - Online, open-access
 - Continually updated and adapted to your interests and ideas
 - A variety of formats (text, expansions/links, math, Q\&A, data/code, video, interactive)
@@ -653,26 +625,26 @@ Web book:
 
 \
 
-ELE 
+ELE
 
 - Organisational, parameters of the module
 - Announcements and the 'forum'
 - A variety of other tools and resources for interacting,
-  - including possible collaborative wiki and note taking 
+  - including possible collaborative wiki and note taking
 
 
 \
 
 The main textbook
 
-- Martin Osborne and Ariel Rubinstein: leading researchers, thinkers, and communicators in microeconomics, especially Game Theory and Behavioral Economics 
+- Martin Osborne and Ariel Rubinstein: leading researchers, thinkers, and communicators in microeconomics, especially Game Theory and Behavioral Economics
 
-- Online and open-source $\rightarrow$ at the core of a potential global conversation 
+- Online and open-source $\rightarrow$ at the core of a potential global conversation
 
 - Very rigourous, formal and logical (including maths) but not too 'computational'
 
 - Very good at explanations, examples, counter-examples, and motivation. The exercises are interesting applications in themselves!
-  
+
 - Considers the assumptions and the 'why carefully' ...
 - not just the 'standard classical differentiable models' but 'behavioral economics' is considered throughout, and models relaxing the 'standard assumptions'
 
@@ -864,16 +836,16 @@ Easy link to make appointments: https://calendly.com/daaronr/out-of-oh-mtg-need-
 4. Be careful you know how to interpret the midterm exam instructions correctly, as well as the instructions for the project. Use your time wisely.
 
 
-5. For the project: start writing and outlining as you begin and as you progress -- don't wait to write things down. Be in contact with me (and your fellow students) to continually discuss how this is going. 
+5. For the project: start writing and outlining as you begin and as you progress -- don't wait to write things down. Be in contact with me (and your fellow students) to continually discuss how this is going.
 
 
 6. *Skills to hone and build.* Your success in this module will depend in large part on building and applying maths skills and tools, as well as strong reading/writing/logic and communication abilities. You should build the ability to comprehend and respond carefully and logically to nuanced questions, in careful writing, orally, in maths, and in diagrams. Be able to incorporate quantitative reasoning, logic, and the ability to understand and clearly express ideas, to correctly characterise and describe theories and evidence, and to apply learned principles to new situations.
 
-```  
+```
 
 <div class="marginnote">
- 
-تحذير, 警报, ескерту, การเตือ, चेतावनीน: Suggestion 4 is especially relevant for non-native speakers of English. 
+
+تحذير, 警报, ескерту, การเตือ, चेतावनीน: Suggestion 4 is especially relevant for non-native speakers of English.
 
 </div>
 
