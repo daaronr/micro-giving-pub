@@ -42,7 +42,6 @@ We will not always be quite so mathematically rigorous throughout the module. Ho
 
 *Note:* *Within O-R chapter 1, feel free to skip* the proof of propositions 1.1 ('representing preferences by utility functions') and 1.2 ('Preference relation not represented by utility function')
 
-\
 
 \
 
@@ -101,7 +100,23 @@ This will go through the relevant O-R text material and a bit more. However, you
 ```
 
 
-## Preferences and utility {#pref-util}
+## Preferences {#preferences}
+
+
+```{block2,  type='note'}
+
+Note that this excerpts and mainly follows O-R chapter 1. I try to highlight the key points, explain them a bit more, and add some additional content that seems important You must read that chapter *along with* these notes. All quotes are from O-R unles otherwise noted.
+
+```
+
+```{block2,  type='warning'}
+
+This section considers preferences *separately* from choices. Later, we will consider choices as potentially being made according to one's preferences subject to one's constraints.
+
+However, behavioral economics also considers the possibility (and ways in which) individual might make *choices* that in fact to not optimise, even given their own preferences. 
+
+```  
+
 
 ### Preamble
 
@@ -188,16 +203,7 @@ In the (neo) classical economics framework, your (optimising) choices are determ
 
 ```
 
-### Preferences
-
-```{block2,  type='note'}
-
-Note that this excerpts and mainly follows O-R chapter 1. I try to highlight the key points, explain them a bit more, and add some additional content that seems important You must read that chapter *along with* these notes. All quotes are from O-R unles otherwise noted.
-
-```
-
-
-#### Notation, definition, explanation {-}
+### Preferences: Notation, definition, explanation {-}
 
 O-R give some background
 
@@ -256,7 +262,9 @@ O-R next discuss 'binary relations' and their properties.
 ***
 
 ```{block2,  type='tip'}
+
 This is getting abstract, and unless you've taken some 'pure maths' you may be a bit confused and overwhelmed here. In this case, I will try to help you: the folded content below is a question and answer on this with a student. Beware that this is a digression, so if you already know this stuff, you can skip it.
+
 ```
 
 
@@ -317,6 +325,8 @@ Sue $R_a$ "Sue's mother" $\rightarrow$ `true`
 *Sue: I was not sure what 'aquaintance meant in this example. Now I do understand!*
 
 ```
+
+\
 
 Another example of a binary relation (unfold Q&A)...
 
@@ -391,10 +401,208 @@ Below I reprint the 'Venn diagram' of preferences over x an y from the O-R text.
 Note that the set of preferences where 'x and y are equally desirable' is included in both the set 'x is at least as desirable as y' and the set 'y is at least as desirable as x'.
 
 
-#### (Standard assumptions over) properties of preferences  {-}
+####  *Properties* of preferences (some standard assumptions)  {#pref-prop}
+
+### Completeness {-}
+
+
+Completeness (informal definition): "Given two options, A and B, a person can state which option they prefer or whether they find both options equally attractive."
+
+
+The following is `r format_with_col("forbidden","red")`: "I cannot choose between a ski holiday and a beach holiday, yet I am not indifferent between these."
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","donkeybales.jpeg"))
+```
+
+\
+
+"Why *wouldn't* I be able to express a preference? (Consider this for a moment, and then unfold...)
+
+```{block2,  type='fold'}
+
+In the case above it seems strange to not be able to express a preference. But for other cases it may be extremely difficult or painful to compare two things. Imagine if you were asked to compare 'between 'never seeing your mother' or 'never seeing your father.' In general, economists' standard approach assumes we have a consistent preference ranking over all possibilities, and choose accordingly.  
+
+However, other social sciences see this differently.
+
+```
+
+<div class="marginnote">
+Aside: Also 'forbidden' in the classical model: the *time* or *frame* in which I make the *decisions* must not affect my preferences (or choices). This will be relaxed when we discuss behavioral economics.
+</div>
 
 
 
+**Definition: Completeness** (From O-R)
+  
+The property that for all alternatives $x$ and $y$ , distinct or not, either $x \succ y$ or $y \succ x$ [or both].   Even more formally...
+
+```{block2,  type='def'}
+
+**Definition (O-R): Complete binary relation**
+
+A binary relation $R$ on the set $X$ is complete if for all members $x$ and $y$ of $X$, either $x R y$ or $y R x$ (or both).
+
+```  
+
+> A complete binary relation is, in particular, *reflexive*: for every $x \in X$ we have $x R x$.
+
+\
+
+In case you are confused, please unfold the Q &A below...
+
+
+```{block2,  type='fold'}
+
+**Q:	I am still confused with the concept of ‘reflexivity’ after reading these paragraphs. Does it mean all ‘x’ are the same**
+
+  \
+
+**A: Not exactly,** reflexivity is a property (a characteristic) of the *relation* $R$ (where this 'relation' could be 'greater than', 'smaller than', 'equal', 'having the same number of elements', 'preferred to', etc.), not the property of a 'mathematial object' itself.
+
+Reflexivity  holds where an object always "relates to itself". For example, in standard maths the relationship  'greater than or equal to ($\geq$) is reflexive, while the relationship $\gt$ is *not* reflexive.  For any number $x$ the statement $x \geq x$ is true (e.g., $10 \geq 10$ is true because $10=10$). However, the statement $x>x$ is false ... obviously a number cannot be greater than itself! (Only the Queen can exceed her own greatness.)
+
+Sue: Hmmmm, why is $10 \geq 10$ true??? How could 10 possibly be greater than 10? Shouldn't the only correct statement be 10 = 10?
+  
+DR: Because this is the 'greater than *or* equal to' sign. Of course '10 is greater than or equal to 10' because they are equal. Just as in computer programming, with an 'OR' operator the condition evaluates as true if either (or both) of the conditions are true.
+
+Sue: Ooook, I think I understand it now. It makes sense to me when you linked it with computer programming; **but what is the point of the $\succsim$ sign? Couldn't the authors only use the $\geq$ sign?**
+
+DR: This is in fact a notation from set theory. We are expressing preferences over objects which may not be representable by a single number.
+ 
+\
+  
+  
+Sue: ... **But then why 'completeness' automatically ensures the second property 'reflexivity'? **
+
+DR:  The authors are saying that the first property of the binary relationship, 'completeness' automatically ensures the second property 'reflexivity'. Equivalently (contrapositive statement) "a relationship that is not reflexive can not be complete." 
+
+But they have only *stated* that this is the case. **They have not PROVEN it.** We would have to look up a proof or try to construct it ourselves. They don't give the proof of this in the main text.
+
+```
+
+### Transitivity 
+
+
+> For a binary relation $\succ$ to correspond to a preference relation, we require not only that it be complete, but also that it be consistent in the sense that if $x \succsim y$ and $y \succsim z$ then $x \succsim z$. This property is called transitivity.
+
+
+Intuitively: Transitive preferences are 'internally consistent': If I prefer A to B, and prefer B to C, then I must prefer A to C.
+
+\
+
+
+Formally: 
+
+```{block2,  type='def'}
+
+**Definition: Transitive binary relation** [O-R]
+  
+A binary relation R on the set X is transitive if for any members x , y , and z of $X$ for which $x R y$ and $y R z$, we have $x R z$.
+
+```
+
+
+Let's explore this more simply in terms of *strict* preferences, the $\succ$ symbol.
+
+Transitivity means:
+
+$$ A \succ B \: and \: B \succ C \rightarrow A \succ C $$
+
+
+- If I prefer an Apple to a Banana and a Banana to Cherry then I prefer an Apple to a Cherry.
+
+
+- A similar idea holds if I am indifferent between one pair of these.  ($\sim$)
+
+
+- ... this obviously extends to 'chains' combining these ... so
+
+$$ A \succ B \:\: and \: \: B \sim C \rightarrow A \succ C $$
+etc.
+
+We may write this concisely as $A \succ B \sim C$.
+
+
+```{block2,  type='tip'}
+
+If this seems confusing it may be because it is *too* obvious (although behavioral and experimental economists claim to find violations of this.
+
+```
+
+
+*If you found someone who striclty preferred a apple to a bananas, a banana to a cherry, and a cherry to an apple,  you could make a lot of money out of them!.*
+
+```{block2,  type='compq'}
+
+Consider: How would you do this? (Unfold below for a description).
+
+```  
+
+```{block2,  type='fold'}
+
+It works as follows (being a bit informal here):
+
+0. Obtain (or borrow) an apple, a banana and a cherry.
+
+1. Offer to give this person an apple in exchange for their banana plus a tiny little extra small unit of  banana (or 'money').
+
+2. Next offer them a cherry for their apple plus a bit extra.
+
+3. Next offer a banana for their cherry plus a bit extra.
+
+... Keep repeating steps 1-3, until you've drained them of all of their resources.
+
+```
+
+\
+
+Some supplements ... why this matters:
+
+```{block2,  type='supplement'}
+
+**An interesting video discussing this**
+
+[Becoming a money pump, Nick Chater, Warwick business school](https://view.vzaar.com/1387870/video)
+
+An interesting discussion of 'money pumps' (and  'Dutch books') in terms of preferences and financial markets. I've seen this chocolate beverage argument presented for why people should not have 'wide zones of indifference'.
+
+\
+```
+
+
+\
+
+*Violations of transitivity?* (Unfold)
+
+```{block2,  type='fold'}
+
+**Violations of transitivity? see...**
+
+- Loomes, Graham, Chris Starmer, and Robert Sugden. "Observing violations of transitivity by experimental methods." Econometrica: Journal of the Econometric Society (1991): 425-439.
+
+- Choi, Syngjoo, et al. "Who is (more) rational?." The American Economic Review 104.6 (2014): 1518-1550.
+
+We will return to this after we consider *choice.*
+
+
+```
+
+
+<!--
+Act this out? Make a video?
+-->
+
+
+<br> \bigskip
+
+```{block2,  type='note'}
+
+*Feel free to* **skip** the O-R discussion of symmetric and anti-symmetric relations, and also skip the discussion of symmetric/antisymmetric relations, if you want. 
+
+It is *not* used much later in the text. 
+
+```  
 
 
 

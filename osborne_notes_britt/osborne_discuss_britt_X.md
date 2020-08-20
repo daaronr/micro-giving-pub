@@ -162,11 +162,8 @@ DR: OK but it still might be a good exercise to write it down, when you have tim
 
 ### 2.1 Utility functions
 
->Formally, let X be the set of all the alternatives an individual might face. A choice problem is a nonempty
-subset A of X , from which the individual chooses an alternative. A choice function describes the individual’s choice for every possible choice problem.
->Given a set X, a choice problem for X is a nonempty subset of X and a choice function for X associates with every choice problem $A \in  X$ a single member of A (the member chosen).
-
-
+>Formally, let X be the set of all the alternatives an individual might face. A choice problem is a nonempty subset A of X , from which the individual chooses an alternative. A choice function describes the individual’s choice for every possible choice problem.
+>Given a set X, a choice problem for X is a nonempty subset of X and a choice function for X associates with every choice problem A ⊆ X a single member of A (the member chosen).
 
 **Britt questions:**
 
@@ -192,7 +189,7 @@ Q:  What does the subset 'A' actually means in this context? Does it means one o
 
 - In applying this,  the set $X$ could be something like 'all combinations of consumption goods in the economy' and a subset $A$ of the set $X$ might be 'all combinations that are in the budget set for the individual at current prices and wages'.
 
-**Britt: Ohhhhhhh I see. Is 'utility maximisation with a budget constrain' an example of a choice problem? If so, is 'minimising production cost for a given production function' also an example of a choice problem? Which in this case, X represent 'all combinations of capital and labour in the economy' and the subset A represents the cost constrain?** 
+**Britt: Ohhhhhhh I see. Is 'utility maximisation with a budget constrain' an example of a choice problem? If so, is 'minimising production cost for a given production function' also an example of a choice problem? Which in this case, X represent 'all combinations of capital and labour in the economy' and the subset A represents the cost constrain?**
 
 (So note that $A$ can represent a bundle of goods and services, or just a single good, or even 'no goods'.)
 
@@ -205,11 +202,11 @@ Q:  What does the subset 'A' actually means in this context? Does it means one o
 
 - In undergraduate economics, when we assigned a utility function to the individual, this usually allowed us to solve for her unique maximising choice (how much of each good she would purchase) for any budget constraint. We might think of this as her 'multi-valued demand function'.  (Although there were also cases in which there was more than one choice that lead to the same utility, e.g., where two goods were perfect substitutes and the prices were set equal to the constant MRS).
 
-**Britt: Hmmmmmmm.... I am wondering what does this 'multi-valued demand function' represent? Is it possible if you can give an example?** 
+**Britt: Hmmmmmmm.... I am wondering what does this 'multi-valued demand function' represent? Is it possible if you can give an example?**
 
 - They are being formal and precise here. This will allow them to explore a broader set of models and situations. E.g., there may be a 'choice function' that does not result from 'constrained utility maximisation' (and could not be expressed in terms of constrained utility maximisation).  This is particularly relevant for behavioral economics.
 
-**Britt: Yes, I think the language they use is very formal and concised which makes it hard to understand. Sorry, I don't understand this bit: E.g., there may be a 'choice function' that does not result from 'constrained utility maximisation' (and could not be expressed in terms of constrained utility maximisation).** 
+**Britt: Yes, I think the language they use is very formal and concised which makes it hard to understand. Sorry, I don't understand this bit: E.g., there may be a 'choice function' that does not result from 'constrained utility maximisation' (and could not be expressed in terms of constrained utility maximisation).**
 **Do you mean there may be a choice function with any constrain? Can you please give an example?
 We missed the entire section of 'behaviroal economics' in our BEE2038 module due to the strike. Perphas this part would make more sense to me if I have studied behavirol economics last year?**
 
@@ -219,7 +216,7 @@ Formal problem for a utility maximiser:
 
 (\@Britt: does the above problem make sense for you?)
 
-Britt: Partly... I am still not getting the second part of the statement. I will do some research and watch some videos online tomorrow to aid my understanding. 
+Britt: Partly... I am still not getting the second part of the statement. I will do some research and watch some videos online tomorrow to aid my understanding.
 
 \
 
@@ -243,9 +240,9 @@ Britt: Partly... I am still not getting the second part of the statement. I will
 
 and suppose that they *choose according to their preference relations* (it is not automatic; we could have people that prefer one thing but choose something else... this gets to behavioral economics and the 'deep meaning' of preferences)...
 
-**Britt: Wow! Seems like behavioral economics play a vital role in microeconomics!** 
+**Britt: Wow! Seems like behavioral economics play a vital role in microeconomics!**
 
-**Britt's question: In previous section, the authors said that they assume 'the individual is rational' ------ how can people prefer one thing but choose something else if they are rational? I thought an individual chooses an alternative that is best according to her preference relation over the set of possible alternatives?** 
+**Britt's question: In previous section, the authors said that they assume 'the individual is rational' ------ how can people prefer one thing but choose something else if they are rational? I thought an individual chooses an alternative that is best according to her preference relation over the set of possible alternatives?**
 
 
 > then their corresponding choice functions differ.
@@ -266,7 +263,7 @@ They give an example of this difference.
 
 - Thus the 'choice function' must map from $A_0 \rightarrow x$ for person 1, but it must map from $A_0 \rightarrow y$ for person 2.
 
-**Britt: Ohhh I see.  I understand perfectly what you meant by the first two sentences, however I am wondering what do you mean by map from $A_0 \rightarrow x$ ? Also, what does the choice function looks like for person 1 and 2 respectively?** 
+**Britt: Ohhh I see.  I understand perfectly what you meant by the first two sentences, however I am wondering what do you mean by map from $A_0 \rightarrow x$ ? Also, what does the choice function looks like for person 1 and 2 respectively?**
 
 - Thus these functions must differ. "QED."
 

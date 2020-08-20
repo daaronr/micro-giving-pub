@@ -256,7 +256,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Models, maths, fundamentals</a>
 <ul>
-<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#intro-coverage"><i class="fa fa-check"></i>This chunk aims to cover:</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#intro-coverage"><i class="fa fa-check"></i>Key goals of this chunk:</a></li>
 <li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#empirics-maths-revision"><i class="fa fa-check"></i><b>1.1</b> Empirics, maths revision</a></li>
 <li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#whats-econ"><i class="fa fa-check"></i><b>1.2</b> What is Economics?</a>
 <ul>
@@ -269,6 +269,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.3.2" data-path="intro.html"><a href="intro.html#the-ppf-a-model-and-a-way-of-seeing-things"><i class="fa fa-check"></i><b>1.3.2</b> The PPF: a ‘model’ and a way of seeing things</a></li>
 <li class="chapter" data-level="1.3.3" data-path="intro.html"><a href="intro.html#supply-and-demand-functions-the-marshallian-cross-equilibrium-effects"><i class="fa fa-check"></i><b>1.3.3</b> “Supply and demand functions”, the “Marshallian cross”, “equilibrium effects”</a></li>
 <li class="chapter" data-level="1.3.4" data-path="intro.html"><a href="intro.html#models-applied-in-the-context-of-returns-to-university-education"><i class="fa fa-check"></i><b>1.3.4</b> Models applied in the context of “returns to university education”</a></li>
+<li class="chapter" data-level="1.3.5" data-path="intro.html"><a href="intro.html#how-to-evaluate-asses-and-test-models"><i class="fa fa-check"></i><b>1.3.5</b> How to evaluate, asses, and test models?</a></li>
 </ul></li>
 <li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#aside-empirical-workeconometrics"><i class="fa fa-check"></i><b>1.4</b> Aside: Empirical work/econometrics</a></li>
 </ul></li>
@@ -282,11 +283,13 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.2.1" data-path="pref-util-choice.html"><a href="pref-util-choice.html#pref-exc"><i class="fa fa-check"></i><b>2.2.1</b> Interactive exercises (‘problem set’)</a></li>
 <li class="chapter" data-level="2.2.2" data-path="pref-util-choice.html"><a href="pref-util-choice.html#content"><i class="fa fa-check"></i><b>2.2.2</b> Content</a></li>
 </ul></li>
-<li class="chapter" data-level="2.3" data-path="pref-util-choice.html"><a href="pref-util-choice.html#pref-util"><i class="fa fa-check"></i><b>2.3</b> Preferences and utility</a>
+<li class="chapter" data-level="2.3" data-path="pref-util-choice.html"><a href="pref-util-choice.html#preferences"><i class="fa fa-check"></i><b>2.3</b> Preferences</a>
 <ul>
 <li class="chapter" data-level="2.3.1" data-path="pref-util-choice.html"><a href="pref-util-choice.html#preamble"><i class="fa fa-check"></i><b>2.3.1</b> Preamble</a></li>
 <li class="chapter" data-level="2.3.2" data-path="pref-util-choice.html"><a href="pref-util-choice.html#a-motivating-exercise"><i class="fa fa-check"></i><b>2.3.2</b> A ‘motivating’ exercise</a></li>
-<li class="chapter" data-level="2.3.3" data-path="pref-util-choice.html"><a href="pref-util-choice.html#preferences"><i class="fa fa-check"></i><b>2.3.3</b> Preferences</a></li>
+<li class="chapter" data-level="" data-path="pref-util-choice.html"><a href="pref-util-choice.html#preferences-notation-definition-explanation"><i class="fa fa-check"></i>Preferences: Notation, definition, explanation</a></li>
+<li class="chapter" data-level="" data-path="pref-util-choice.html"><a href="pref-util-choice.html#completeness"><i class="fa fa-check"></i>Completeness</a></li>
+<li class="chapter" data-level="2.3.3" data-path="pref-util-choice.html"><a href="pref-util-choice.html#transitivity"><i class="fa fa-check"></i><b>2.3.3</b> Transitivity</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="uncertainty.html"><a href="uncertainty.html"><i class="fa fa-check"></i><b>3</b> Preferences under uncertainty (and over time)</a></li>
@@ -369,8 +372,6 @@ We will not always be quite so mathematically rigorous throughout the module. Ho
 <p><em>Note:</em> <em>Within O-R chapter 1, feel free to skip</em> the proof of propositions 1.1 (‘representing preferences by utility functions’) and 1.2 (‘Preference relation not represented by utility function’)</p>
 <p><br />
 </p>
-<p><br />
-</p>
 <p>Alternative treatments for some of this material (read this if you need a different approach than the ones O-R are taking)… unfold</p>
 
 <div class="fold">
@@ -416,8 +417,17 @@ ial treatment)</p></li>
 </div>
 </div>
 </div>
-<div id="pref-util" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Preferences and utility</h2>
+<div id="preferences" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Preferences</h2>
+
+<div class="note">
+<p>Note that this excerpts and mainly follows O-R chapter 1. I try to highlight the key points, explain them a bit more, and add some additional content that seems important You must read that chapter <em>along with</em> these notes. All quotes are from O-R unles otherwise noted.</p>
+</div>
+
+<div class="warning">
+<p>This section considers preferences <em>separately</em> from choices. Later, we will consider choices as potentially being made according to one’s preferences subject to one’s constraints.</p>
+<p>However, behavioral economics also considers the possibility (and ways in which) individual might make <em>choices</em> that in fact to not optimise, even given their own preferences.</p>
+</div>
 <div id="preamble" class="section level3" number="2.3.1">
 <h3><span class="header-section-number">2.3.1</span> Preamble</h3>
 <div class="marginnote">
@@ -436,7 +446,7 @@ ial treatment)</p></li>
 <p>What did this depend on? Would other people in your place have made the same decision?</p>
 <p>If you got amnesia and forgot what you decided and then were in the same situation again. Do you think you’d make the same decision?</p>
 </div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-72"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-74"></span>
 <img src="picsfigs/mortys-mind-blower.png" alt="Am I blowing your mind here?" width="50%" />
 <p class="caption">
 Figure 2.1: Am I blowing your mind here?
@@ -476,14 +486,8 @@ Figure 2.1: Am I blowing your mind here?
 </ol>
 </div>
 </div>
-<div id="preferences" class="section level3" number="2.3.3">
-<h3><span class="header-section-number">2.3.3</span> Preferences</h3>
-
-<div class="note">
-<p>Note that this excerpts and mainly follows O-R chapter 1. I try to highlight the key points, explain them a bit more, and add some additional content that seems important You must read that chapter <em>along with</em> these notes. All quotes are from O-R unles otherwise noted.</p>
-</div>
-<div id="notation-definition-explanation" class="section level4 unnumbered" number="">
-<h4>Notation, definition, explanation</h4>
+<div id="preferences-notation-definition-explanation" class="section level3 unnumbered" number="">
+<h3>Preferences: Notation, definition, explanation</h3>
 <p>O-R give some background</p>
 <blockquote>
 <p>We follow the approach almost all economic theory and characterize an individual by her preferences among the alternatives, without considering the origin of these preferences. they nicely explain the why unlike many texts</p>
@@ -541,7 +545,7 @@ Figure 2.1: Am I blowing your mind here?
 <hr />
 
 <div class="tip">
-This is getting abstract, and unless you’ve taken some ‘pure maths’ you may be a bit confused and overwhelmed here. In this case, I will try to help you: the folded content below is a question and answer on this with a student. Beware that this is a digression, so if you already know this stuff, you can skip it.
+<p>This is getting abstract, and unless you’ve taken some ‘pure maths’ you may be a bit confused and overwhelmed here. In this case, I will try to help you: the folded content below is a question and answer on this with a student. Beware that this is a digression, so if you already know this stuff, you can skip it.</p>
 </div>
 
 <div class="fold">
@@ -579,6 +583,8 @@ This is getting abstract, and unless you’ve taken some ‘pure maths’ you ma
 <p>“Sue’s mother” <span class="math inline">\(R_a\)</span> “Sue’s lecturer in the UK” <span class="math inline">\(\rightarrow\)</span> <code>false</code> (so it’s not ‘transitive’)</p>
 <p><em>Sue: I was not sure what ’aquaintance meant in this example. Now I do understand!</em></p>
 </div>
+<p><br />
+</p>
 <p>Another example of a binary relation (unfold Q&amp;A)…</p>
 
 <div class="fold">
@@ -620,18 +626,140 @@ This is getting abstract, and unless you’ve taken some ‘pure maths’ you ma
 <p><br />
 </p>
 <p>Below I reprint the ‘Venn diagram’ of preferences over x an y from the O-R text.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-82"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-83"></span>
 <img src="picsfigs/pref-venn-or.png" alt="Venn diagram of possible preference relationships (from O-R)" width="900%" />
 <p class="caption">
 Figure 2.2: Venn diagram of possible preference relationships (from O-R)
 </p>
 </div>
 <p>Note that the set of preferences where ‘x and y are equally desirable’ is included in both the set ‘x is at least as desirable as y’ and the set ‘y is at least as desirable as x’.</p>
+<div id="pref-prop" class="section level4" number="2.3.2.1">
+<h4><span class="header-section-number">2.3.2.1</span> <em>Properties</em> of preferences (some standard assumptions)</h4>
 </div>
-<div id="standard-assumptions-over-properties-of-preferences" class="section level4 unnumbered" number="">
-<h4>(Standard assumptions over) properties of preferences</h4>
+</div>
+<div id="completeness" class="section level3 unnumbered" number="">
+<h3>Completeness</h3>
+<p>Completeness (informal definition): “Given two options, A and B, a person can state which option they prefer or whether they find both options equally attractive.”</p>
+<p>The following is <font color='red'>forbidden</font>: “I cannot choose between a ski holiday and a beach holiday, yet I am not indifferent between these.”</p>
+<p><img src="picsfigs/donkeybales.jpeg" width="50%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p>"Why <em>wouldn’t</em> I be able to express a preference? (Consider this for a moment, and then unfold…)</p>
 
+<div class="fold">
+<p>In the case above it seems strange to not be able to express a preference. But for other cases it may be extremely difficult or painful to compare two things. Imagine if you were asked to compare ‘between ’never seeing your mother’ or ‘never seeing your father.’ In general, economists’ standard approach assumes we have a consistent preference ranking over all possibilities, and choose accordingly.</p>
+<p>However, other social sciences see this differently.</p>
 </div>
+<div class="marginnote">
+<p>Aside: Also ‘forbidden’ in the classical model: the <em>time</em> or <em>frame</em> in which I make the <em>decisions</em> must not affect my preferences (or choices). This will be relaxed when we discuss behavioral economics.</p>
+</div>
+<p><strong>Definition: Completeness</strong> (From O-R)</p>
+<p>The property that for all alternatives <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> , distinct or not, either <span class="math inline">\(x \succ y\)</span> or <span class="math inline">\(y \succ x\)</span> [or both]. Even more formally…</p>
+
+<div class="def">
+<p><strong>Definition (O-R): Complete binary relation</strong></p>
+<p>A binary relation <span class="math inline">\(R\)</span> on the set <span class="math inline">\(X\)</span> is complete if for all members <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> of <span class="math inline">\(X\)</span>, either <span class="math inline">\(x R y\)</span> or <span class="math inline">\(y R x\)</span> (or both).</p>
+</div>
+<blockquote>
+<p>A complete binary relation is, in particular, <em>reflexive</em>: for every <span class="math inline">\(x \in X\)</span> we have <span class="math inline">\(x R x\)</span>.</p>
+</blockquote>
+<p><br />
+</p>
+<p>In case you are confused, please unfold the Q &amp;A below…</p>
+
+<div class="fold">
+<p><strong>Q: I am still confused with the concept of ‘reflexivity’ after reading these paragraphs. Does it mean all ‘x’ are the same</strong></p>
+<p><br />
+</p>
+<p><strong>A: Not exactly,</strong> reflexivity is a property (a characteristic) of the <em>relation</em> <span class="math inline">\(R\)</span> (where this ‘relation’ could be ‘greater than’, ‘smaller than’, ‘equal’, ‘having the same number of elements’, ‘preferred to’, etc.), not the property of a ‘mathematial object’ itself.</p>
+<p>Reflexivity holds where an object always “relates to itself”. For example, in standard maths the relationship ’greater than or equal to (<span class="math inline">\(\geq\)</span>) is reflexive, while the relationship <span class="math inline">\(\gt\)</span> is <em>not</em> reflexive. For any number <span class="math inline">\(x\)</span> the statement <span class="math inline">\(x \geq x\)</span> is true (e.g., <span class="math inline">\(10 \geq 10\)</span> is true because <span class="math inline">\(10=10\)</span>). However, the statement <span class="math inline">\(x&gt;x\)</span> is false … obviously a number cannot be greater than itself! (Only the Queen can exceed her own greatness.)</p>
+<p>Sue: Hmmmm, why is <span class="math inline">\(10 \geq 10\)</span> true??? How could 10 possibly be greater than 10? Shouldn’t the only correct statement be 10 = 10?</p>
+<p>DR: Because this is the ‘greater than <em>or</em> equal to’ sign. Of course ‘10 is greater than or equal to 10’ because they are equal. Just as in computer programming, with an ‘OR’ operator the condition evaluates as true if either (or both) of the conditions are true.</p>
+<p>Sue: Ooook, I think I understand it now. It makes sense to me when you linked it with computer programming; <strong>but what is the point of the <span class="math inline">\(\succsim\)</span> sign? Couldn’t the authors only use the <span class="math inline">\(\geq\)</span> sign?</strong></p>
+<p>DR: This is in fact a notation from set theory. We are expressing preferences over objects which may not be representable by a single number.</p>
+<p><br />
+</p>
+<p>Sue: … <strong>But then why ‘completeness’ automatically ensures the second property ‘reflexivity’? </strong></p>
+<p>DR: The authors are saying that the first property of the binary relationship, ‘completeness’ automatically ensures the second property ‘reflexivity’. Equivalently (contrapositive statement) “a relationship that is not reflexive can not be complete.”</p>
+<p>But they have only <em>stated</em> that this is the case. <strong>They have not PROVEN it.</strong> We would have to look up a proof or try to construct it ourselves. They don’t give the proof of this in the main text.</p>
+</div>
+</div>
+<div id="transitivity" class="section level3" number="2.3.3">
+<h3><span class="header-section-number">2.3.3</span> Transitivity</h3>
+<blockquote>
+<p>For a binary relation <span class="math inline">\(\succ\)</span> to correspond to a preference relation, we require not only that it be complete, but also that it be consistent in the sense that if <span class="math inline">\(x \succsim y\)</span> and <span class="math inline">\(y \succsim z\)</span> then <span class="math inline">\(x \succsim z\)</span>. This property is called transitivity.</p>
+</blockquote>
+<p>Intuitively: Transitive preferences are ‘internally consistent’: If I prefer A to B, and prefer B to C, then I must prefer A to C.</p>
+<p><br />
+</p>
+<p>Formally:</p>
+
+<div class="def">
+<p><strong>Definition: Transitive binary relation</strong> [O-R]</p>
+<p>A binary relation R on the set X is transitive if for any members x , y , and z of <span class="math inline">\(X\)</span> for which <span class="math inline">\(x R y\)</span> and <span class="math inline">\(y R z\)</span>,we have <span class="math inline">\(x R z\)</span>.</p>
+</div>
+<p>Let’s explore this more simply in terms of <em>strict</em> preferences, the <span class="math inline">\(\succ\)</span> symbol.</p>
+<p>Transitivity means:</p>
+<p><span class="math display">\[ A \succ B \: and \: B \succ C \rightarrow A \succ C \]</span></p>
+<ul>
+<li><p>If I prefer an Apple to a Banana and a Banana to Cherry then I prefer an Apple to a Cherry.</p></li>
+<li><p>A similar idea holds if I am indifferent between one pair of these. (<span class="math inline">\(\sim\)</span>)</p></li>
+<li><p>… this obviously extends to ‘chains’ combining these … so</p></li>
+</ul>
+<p><span class="math display">\[ A \succ B \:\: and \: \: B \sim C \rightarrow A \succ C \]</span>
+etc.</p>
+<p>We may write this concisely as <span class="math inline">\(A \succ B \sim C\)</span>.</p>
+
+<div class="tip">
+<p>If this seems confusing it may be because it is <em>too</em> obvious (although behavioral and experimental economists claim to find violations of this.</p>
+</div>
+<p><em>If you found someone who striclty preferred a apple to a bananas, a banana to a cherry, and a cherry to an apple, you could make a lot of money out of them!.</em></p>
+
+<div class="compq">
+<p>Consider: How would you do this? (Unfold below for a description).</p>
+</div>
+
+<div class="fold">
+<p>It works as follows (being a bit informal here):</p>
+<ol start="0" style="list-style-type: decimal">
+<li><p>Obtain (or borrow) an apple, a banana and a cherry.</p></li>
+<li><p>Offer to give this person an apple in exchange for their banana plus a tiny little extra small unit of banana (or ‘money’).</p></li>
+<li><p>Next offer them a cherry for their apple plus a bit extra.</p></li>
+<li><p>Next offer a banana for their cherry plus a bit extra.</p></li>
+</ol>
+<p>… Keep repeating steps 1-3, until you’ve drained them of all of their resources.</p>
+</div>
+<p><br />
+</p>
+<p>Some supplements … why this matters:</p>
+
+<div class="supplement">
+<p><strong>An interesting video discussing this</strong></p>
+<p><a href="https://view.vzaar.com/1387870/video">Becoming a money pump, Nick Chater, Warwick business school</a></p>
+<p>An interesting discussion of ‘money pumps’ (and ‘Dutch books’) in terms of preferences and financial markets. I’ve seen this chocolate beverage argument presented for why people should not have ‘wide zones of indifference’.</p>
+<p>&lt;/div&gt;</p>
+<p><br />
+</p>
+<p><em>Violations of transitivity?</em> (Unfold)</p>
+
+<div class="fold">
+<p><strong>Violations of transitivity? see…</strong></p>
+<ul>
+<li><p>Loomes, Graham, Chris Starmer, and Robert Sugden. “Observing violations of transitivity by experimental methods.” Econometrica: Journal of the Econometric Society (1991): 425-439.</p></li>
+<li><p>Choi, Syngjoo, et al. “Who is (more) rational?.” The American Economic Review 104.6 (2014): 1518-1550.</p></li>
+</ul>
+<p>We will return to this after we consider <em>choice.</em></p>
+</div>
+<!--
+Act this out? Make a video?
+-->
+<p><br> </p>
+
+<div class="note">
+<p><em>Feel free to</em> <strong>skip</strong> the O-R discussion of symmetric and anti-symmetric relations, and also skip the discussion of symmetric/antisymmetric relations, if you want.</p>
+<p>It is <em>not</em> used much later in the text.</p>
+</div>
+
 </div>
 </div>
 </div>
