@@ -203,7 +203,7 @@ In the (neo) classical economics framework, your (optimising) choices are determ
 
 ```
 
-### Preferences: Notation, definition, explanation {-}
+### Preferences: Notation, definition, explanation
 
 O-R give some background
 
@@ -357,7 +357,7 @@ Sue: Aha!! I see.
 
 O-R begin with the formal definition of 'at least as desirable as' (or 'seen as at least as good as'). In other words, 
 
-"x is at least as desirable as y" is  denoted $x \succsim y$... 
+"x is at least as desirable as y" is  denoted $x \succsim y$ 
 
 > if the individual’s answer to the question regarding x and y is either “I prefer x to y” or “I regard x and y as equally desirable”. 
 
@@ -366,7 +366,8 @@ O-R show, that in fact, *all* of the preference relationships can be denoted wit
 
 'Indifference': 
 
-$$x \sim y \text{ if both } x \succsim y \text{ and } y \succsim x$$. 
+$$x \sim y \text{ if both } x \succsim y \text{ and } y \succsim x$$
+
 
 and
 
@@ -401,13 +402,12 @@ Below I reprint the 'Venn diagram' of preferences over x an y from the O-R text.
 Note that the set of preferences where 'x and y are equally desirable' is included in both the set 'x is at least as desirable as y' and the set 'y is at least as desirable as x'.
 
 
-####  *Properties* of preferences (some standard assumptions)  {#pref-prop}
+###  *Properties* of preferences (some standard assumptions)  {#pref-prop}
 
-### Completeness {-}
+#### Completeness {-}
 
 
 Completeness (informal definition): "Given two options, A and B, a person can state which option they prefer or whether they find both options equally attractive."
-
 
 The following is `r format_with_col("forbidden","red")`: "I cannot choose between a ski holiday and a beach holiday, yet I am not indifferent between these."
 
@@ -431,11 +431,12 @@ However, other social sciences see this differently.
 Aside: Also 'forbidden' in the classical model: the *time* or *frame* in which I make the *decisions* must not affect my preferences (or choices). This will be relaxed when we discuss behavioral economics.
 </div>
 
+\
 
 
 **Definition: Completeness** (From O-R)
   
-The property that for all alternatives $x$ and $y$ , distinct or not, either $x \succ y$ or $y \succ x$ [or both].   Even more formally...
+The property that for all alternatives $x$ and $y$ , distinct or not, either $x \succsim y$ or $y \succsim x$ (or both].   Even more formally (optional)...
 
 ```{block2,  type='def'}
 
@@ -460,7 +461,7 @@ In case you are confused, please unfold the Q &A below...
 
 **A: Not exactly,** reflexivity is a property (a characteristic) of the *relation* $R$ (where this 'relation' could be 'greater than', 'smaller than', 'equal', 'having the same number of elements', 'preferred to', etc.), not the property of a 'mathematial object' itself.
 
-Reflexivity  holds where an object always "relates to itself". For example, in standard maths the relationship  'greater than or equal to ($\geq$) is reflexive, while the relationship $\gt$ is *not* reflexive.  For any number $x$ the statement $x \geq x$ is true (e.g., $10 \geq 10$ is true because $10=10$). However, the statement $x>x$ is false ... obviously a number cannot be greater than itself! (Only the Queen can exceed her own greatness.)
+Reflexivity  holds where an object always "relates to itself". For example, in standard maths the relationship  'greater than or equal to ($\geq$) is reflexive, while the relationship $\gt$ is *not* reflexive.  For any number $x$ the statement $x \geq x$ is true (e.g., $10 \geq 10$ is true because $10=10$). However, the statement $x>x$ is false ... obviously a number cannot be greater than itself! (Only the Red Queen can exceed her own greatness.)
 
 Sue: Hmmmm, why is $10 \geq 10$ true??? How could 10 possibly be greater than 10? Shouldn't the only correct statement be 10 = 10?
   
@@ -481,7 +482,7 @@ But they have only *stated* that this is the case. **They have not PROVEN it.** 
 
 ```
 
-### Transitivity 
+#### Transitivity {-}
 
 
 > For a binary relation $\succ$ to correspond to a preference relation, we require not only that it be complete, but also that it be consistent in the sense that if $x \succsim y$ and $y \succsim z$ then $x \succsim z$. This property is called transitivity.
@@ -492,16 +493,17 @@ Intuitively: Transitive preferences are 'internally consistent': If I prefer A t
 \
 
 
-Formally: 
+Formally definition of 'transitive binary relation' (optional) 
 
 ```{block2,  type='def'}
 
 **Definition: Transitive binary relation** [O-R]
   
-A binary relation R on the set X is transitive if for any members x , y , and z of $X$ for which $x R y$ and $y R z$, we have $x R z$.
+A binary relation R on the set $X$ is transitive if for any members $x$ , $$ , and $z$ of $X$ for which $x R y$ and $y R z$, we have $x R z$.
 
 ```
 
+\
 
 Let's explore this more simply in terms of *strict* preferences, the $\succ$ symbol.
 
@@ -599,9 +601,98 @@ Act this out? Make a video?
 
 *Feel free to* **skip** the O-R discussion of symmetric and anti-symmetric relations, and also skip the discussion of symmetric/antisymmetric relations, if you want. 
 
-It is *not* used much later in the text. 
+It is fun, but it is *barely* used later in the text. 
 
 ```  
 
 
+### Possible preferences .. "Preference formation" {#pref-form}
+
+We might derive preference relations from a few "basic considerations", perhaps reflecting how people describe their own preferences (and choices) in conversation.
+
+\
+
+#### Value functions {-} 
+
+O-R first consider 'value function' "$v$ that attaches to each alternative a number" ... the preference relation here "is defined by $x \succsim y  if and only if $v(x) \succsim v(y)$. 
+
+<div class="marginnote">
+This is close to the 'utility function' that we will discuss later. It is trivial to show that this is complete and transitive. (Can you show it?).
+</div>
+
+```{block2,  type='warning'}
+*Do you know what 'if and only if' means?* This is important. (If you don't know, unfold below.)
+```  
+
+
+```{block2,  type='fold'}
+
+"If and only if" is sometimes depicted as $\leftrightarrow$ (and abbreviated '*iff*').
+
+When we say "statement A holds *if and only* statement B holds", we mean that whenever statement B holds statement A must hold, and also, whenever statement A holds statement B must hold. This also implies that if statement A *does not* hold, statement B *cannot hold* and vice versa. 
+
+Another way of saying this is "statement A is a necessary and sufficient condition for statement B."
+
+For example, in simple algebra we can assert (and prove):
+  
+> $x > y$ *if and only if* $2x > 2y$, i.e., 
+> $x > y \leftrightarrow 2x > 2y$,
+
+To prove the 'if and only if' relationship, you need to prove *both directions* of this relationship. For this example, I would need to show both:
+
+1. $x > y \rightarrow 2x > 2y$ *and*
+2. $2x > 2y \rightarrow x > y$. 
+
+
+If you are struggling with this, you may find the [Khan academy Logic material helpful](https://www.khanacademy.org/test-prep/lsat/lsat-lessons/logic-toolbox-new/a/logic-toolbox--if-and-only-if), as well as more advanced treatments of hte logic of mathematical proofs.
+
+```
+\
+
+ 
+#### Distance functions {-}
+
+
+```{r fig.cap = 'American Gothic, by Grant Wood', out.width='50%', fig.asp=.4, fig.align='center', echo = FALSE}
+
+knitr::include_graphics("picsfigs/american-gothic-painting.jpg")
+
+```  
+
+Maybe you have heard someone say something like:
+
+> I know what I like; there is a perfect life for me. I simply want everything to look as close to this as possible. 
+
+<div class="marginnote">
+O-R: "One alternative is “ideal” for the individual; how much he likes every other alternative is determined by the distance of that alternative from the ideal, as given by a function $d$. "
+</div>
+
+This might be expressed as the preference relation $\succsim$ defined by
+
+$$x \succsim y \: \leftrightarrow \: d(x) \leq d(y)$$
+
+<div class="marginnote">
+
+We will return to "distance functions" later. We are all familiar with the 'Euclidean distance' function... which happens to represent the actual straight-line distance between two physical objects in three dimensional space. However, there is no obvious single measure of the "distances between two bundles of goods and services, with many measurable attributes." This issue also comes up in analysis of real considering (e.g.) consumer preferences over different products a firm could manufacture.
+
+</div>
+
+Note that the above is, in fact a value function, with the 'value of alternative x' expressed as $v(x)=-d(x)$.
+
+
+\
+
+#### Lexicographic preferences {-}
+
+Remember the Blue Cat in the video? ... When he considered his preferences over the teas, he said:
+
+> I care first and foremost about whether the tea box is rectangular. If several boxes are equally rectangular, then I care about which box is the most white.  If the boxes are equally white, then I care about which box is biggest.
+
+This seems to be an example of what we call 'lexicographic preferences'. 
+
+<div class="marginnote">
+In fact, some 'tree-based data science' models of choice implicitly assume such preferences. Business marketers speak of 'hygeine factors'. 
+</div>
+
+Formally, as stated by O-R: 
 
