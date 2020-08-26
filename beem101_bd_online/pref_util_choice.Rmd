@@ -682,7 +682,7 @@ Note that the above is, in fact a value function, with the 'value of alternative
 
 \
 
-#### Lexicographic preferences {-}
+#### Lexicographic ('lex') preferences {-#lex-pref}
 
 Remember the Blue Cat in the video? ... When he considered his preferences over the teas, he said:
 
@@ -691,8 +691,198 @@ Remember the Blue Cat in the video? ... When he considered his preferences over 
 This seems to be an example of what we call 'lexicographic preferences'. 
 
 <div class="marginnote">
-In fact, some 'tree-based data science' models of choice implicitly assume such preferences. Business marketers speak of 'hygeine factors'. 
+In fact, some 'tree-based data science' models of choice implicitly assume such preferences. Business marketers speak of 'hygiene factors'; if these are not achieved, the customer will walk away. 
 </div>
 
-Formally, as stated by O-R: 
+\
+
+As stated by O-R: 
+
+> An individual has in mind two [or more] [complete](#Completeness) and [transitive](#Transitivity) binary relations, $\succsim_1$ and $\succsim_2$, each of which relates to one feature of the alternatives. For example, if $X$ is a set of computers, the features might be the size of the memory and the resolution of the screen. 
+
+<div class="marginnote">
+Lexicographic preferences can be applied to any number of features, but we will only consider two features here. 
+</div>
+ 
+
+> The individual gives priority to the first feature, breaking ties by the second feature. 
+
+
+> Formally, [for lexicographic preferences] the individual’s preference relation $\succsim$ is defined by $x \succsim y$ if:  
+
+> (i) $x \succ_1 y$ or 
+
+> (ii) $x \sim_1 y$ and $x \succsim_2 y$ .
+
+
+*From now on, I may use the abbreviation 'lex preferences' to mean 'lexicographic preferences.*
+
+\
+
+**Are lexicographic (lex) preferences complete?**
+
+```{block2,  type='inputq'}
+Consider how you might show whether they are or are not complete, and then unfold the box below.
+```  
+
+
+```{block2,  type='fold'}
+
+> Its completeness follows from the completeness of $\succsim_1$ and $\succsim_2$.
+
+-  If we suppose that the 'sub-preference orderings' $succsim_1$ and $succsim_2$ can be applied to these features of any alternative...
+
+- then we can apply the procedure above to determine the overall preference ordering $\succsim$ between any two pairings.  
+
+```
+
+\
+
+##### Are lex preferences transitive? {-}
+
+
+> Suppose that $x \succsim y$ and $y \succsim z$. 
+
+*To show transitivity by our definition*, we now need to show that this neccesarily implies that $x \succsim z$ holds. 
+
+<div class="marginnote">
+Also note that the above example happens to be perfectly general (we sometimes state this as 'without loss of generality' or 'WLOG'). As we have complete preferences, for any three options, it must be that you can choose labels for them x, y, and z, such that $x \succsim y$ and $y \succsim z$. 
+
+</div>
+ 
+\
+
+There are two possible cases:
+
+<div class="marginnote">
+Note that these are the *only* two possible cases. (We know this because case 2 is simply the 'negation' of case 1.  In standard logic either something is true, or it is not true). Thus if we can prove transitivity for both case 1 and case 2, we have proved it 'for all possible cases'. 
+</div>
+ 
+  
+*Case 1: "The first feature is decisive when comparing $x$ and $y$: $x \succ_1 y$."*
+
+*Case 2: "The first feature is *not* decisive when comparing $x$ and $y$..."*
+
+
+**Considering Case 1**:
+
+Given, by the above assumption, that $y \succsim z$, it must be that $y \succsim_1 z$ 
+
+... i.e., y is "at least as good as z in it's first feature" -- otherwise, according to our preferences, y could not be 'at least as good as z').
+
+
+> so by the transitivity of $\succsim_1$ [which was part of the definition of lex preferences]... 
+
+> we obtain ... $x \succ_1 z$ 
+
+> and thus $x \succsim z$ 
+\
+
+Wait, why does  $x \succ_1 y$ combined with $y \succsim_1 z$  imply that  $x \succ_1 z$? (think, and then unfold).
+
+```{block2,  type='fold'}
+
+This seems intuitively obvious: if 'x is strictly better than y' and 'y is at least as good as z', then it should be that 'x is strictly better than z'. But if we are compulsive mathematicians, we would need to actually formally prove this, as Problem 1b requests.  
+
+```
+
+\
+
+
+... And why does $x \succ_1 z$ imply that $x \succsim z$? (think, and then unfold)
+
+
+```{block2,  type='fold'}
+
+By condition (i) in the definition of lex preferences, if $x \succ_1 y$ then $x \succsim y$. (Obviously, as this is a general definition, it also applies if we swap z for y in this statement.)
+
+```
+
+
+..."but wait, why aren't you stating  $x \succsim z$ ('x is at least as good as z')... don't we know that $x \succ z$, ('x is strictly preferred to z')? (unfold)
+
+```{block2,  type='fold'}
+
+Three responses:
+  
+-  For this case, $x \succ z$ does not come directly out of the definition of lex preferences. (I think this could be derived, but we do not need to.)
+
+- Our definition of transitivity involves the $\succsim$ operator, and not the $\succ$ operator; we need to prove it precisely as defined.
+
+- Anyways, $x \succ y$ *implies* $x \succsim y$ (but not vice versa). $\succsim$ is the 'weaker' condition.  So if $x \succ y$ is a true statement then $x \succsim y$ is as well (always).
+
+```
+
+\
+
+*Wait we are not done! We only proved this for one case; now we must consider the 'negation' of this case:*
+
+
+**Considering Case 2... **:  "The first feature is *not* decisive when comparing $x$ and $y$: $x \sim_1 y$ 
+
+...(and $x \succsim_2 y$ must hold as we assumed that $x \succsim y$ overall.)
+
+Case 2 is further broken down into two comprehensive sub-cases, which I will call 2a and 2b.  Given that the first feature is not decisive for comparing x and y...
+
+...then either the first feature is decisive when comparing y and z ('case 2a'), or it is not ('case 2b').
+
+*Either... *
+
+**2a:** $y \succ_1 z$ 
+
+... then ...  "we obtain $x \succ_1 z$ and therefore $x \succsim z$."
+
+<div class="marginnote">
+O-R write  that this follows "from the transitivity of $\succ_1$".
+I believe that here they mean we know that if $A \sim B$ and $B \succ C$ then $A \succ C$ by the property of these logical relations $\sim$ and $\succ$.
+
+Thus we must have that  $x \sim_1 y$ and $y \succ_1 z$ implies $z \succ_1 z$ 
+</div>
+
+*or*
+
+**2b:** $y \sim_1 z$ 
+
+implying that $y \succ_2 z$ for y to be preferred to z overall, as assumed. 
+
+> By the transitivity of $\sim_1$ we obtain $x \sim_1 z$ ...
+
+(recalling $x \sim_1 y$ is what defined case 2)...
+
+
+> and by the transitivity of $\succsim_2$ we obtain $x \succsim_2 z$. Thus $x \succsim z$.
+
+Thus we have shown, for all possible cases that, or lexicographic preferences $\succsim$ as defined [above](#lex-pref), $x \succsim y$ and $y \succsim z$, implying that these preferences are transitive. 
+
+We can now write *quo erat demonstrandum* or 'Q.E.D', meaning 'what was to be demonstrated' [has been demonstrated]. This is sometimes expressed with the symbol
+
+$$\blacksquare$$.
+
+\
+
+```{block2,  type='note'}
+**Why did we do this??**
+  
+Gee, this took a long time. 
+
+Was it a fun puzzle or a tedious chore? Why did I show you this?
+
+I think it is good for you to get a sense of what mathematical/theoretical economics proofs look like. It's good for improving the rigorous structure of your arguments in general. It may be helpful for future reading. It helps you be sure that you understand the concepts defined. 
+
+\
+
+Also, we learned a few concepts here in doing this. I would suggest that we learned things like...
+
+- A proof can constructed by demonstrating that something must hold for all possible cases. We can do it by dividing up the space of all possible cases and showing it for each part of this space.
+
+- The idea of "weaker and stronger conditions" (strict vs weak preference)
+
+- How to use ‘general properties of mathematical objects’ (like the transitivity of the $\succsim$ operator) to construct proofs for specific cases.
+
+However, as this is so time-consuming, and not always insightful, I won't drag you through all the proofs... only dip in occassionally.
+  
+```  
+
+
+
 

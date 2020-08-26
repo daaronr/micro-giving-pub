@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
 
 
-<meta name="date" content="2020-08-25" />
+<meta name="date" content="2020-08-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -226,6 +226,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#aboutme"><i class="fa fa-check"></i>Aside: A bit about me (Dr. David Reinstein), contact info</a>
 <ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#me"><i class="fa fa-check"></i>Me</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#office-hours-tbd-see-ele"><i class="fa fa-check"></i>Office hours: (TBD; see ELE)</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#contact-info"><i class="fa fa-check"></i>Contact information</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#success-tip"><i class="fa fa-check"></i>How to do well in this module</a></li>
@@ -823,18 +824,162 @@ Figure 2.3: American Gothic, by Grant Wood
 <p><br />
 </p>
 </div>
-<div id="lexicographic-preferences" class="section level4 unnumbered" number="">
-<h4>Lexicographic preferences</h4>
+<div id="lex-pref" class="section level4 unnumbered" number="">
+<h4>Lexicographic (‘lex’) preferences</h4>
 <p>Remember the Blue Cat in the video? … When he considered his preferences over the teas, he said:</p>
 <blockquote>
 <p>I care first and foremost about whether the tea box is rectangular. If several boxes are equally rectangular, then I care about which box is the most white. If the boxes are equally white, then I care about which box is biggest.</p>
 </blockquote>
 <p>This seems to be an example of what we call ‘lexicographic preferences’.</p>
 <div class="marginnote">
-<p>In fact, some ‘tree-based data science’ models of choice implicitly assume such preferences. Business marketers speak of ‘hygeine factors’.</p>
+<p>In fact, some ‘tree-based data science’ models of choice implicitly assume such preferences. Business marketers speak of ‘hygiene factors’; if these are not achieved, the customer will walk away.</p>
 </div>
-<p>Formally, as stated by O-R:</p>
+<p><br />
+</p>
+<p>As stated by O-R:</p>
+<blockquote>
+<p>An individual has in mind two [or more] <a href="#Completeness">complete</a> and <a href="#Transitivity">transitive</a> binary relations, <span class="math inline">\(\succsim_1\)</span> and <span class="math inline">\(\succsim_2\)</span>, each of which relates to one feature of the alternatives. For example, if <span class="math inline">\(X\)</span> is a set of computers, the features might be the size of the memory and the resolution of the screen.</p>
+</blockquote>
+<div class="marginnote">
+<p>Lexicographic preferences can be applied to any number of features, but we will only consider two features here.</p>
+</div>
+<blockquote>
+<p>The individual gives priority to the first feature, breaking ties by the second feature.</p>
+</blockquote>
+<blockquote>
+<p>Formally, [for lexicographic preferences] the individual’s preference relation <span class="math inline">\(\succsim\)</span> is defined by <span class="math inline">\(x \succsim y\)</span> if:</p>
+</blockquote>
+<blockquote>
+<ol style="list-style-type: lower-roman">
+<li><span class="math inline">\(x \succ_1 y\)</span> or</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2" style="list-style-type: lower-roman">
+<li><span class="math inline">\(x \sim_1 y\)</span> and <span class="math inline">\(x \succsim_2 y\)</span> .</li>
+</ol>
+</blockquote>
+<p><em>From now on, I may use the abbreviation ‘lex preferences’ to mean ’lexicographic preferences.</em></p>
+<p><br />
+</p>
+<p><strong>Are lexicographic (lex) preferences complete?</strong></p>
 
+<div class="inputq">
+Consider how you might show whether they are or are not complete, and then unfold the box below.
+</div>
+
+<div class="fold">
+<blockquote>
+<p>Its completeness follows from the completeness of <span class="math inline">\(\succsim_1\)</span> and <span class="math inline">\(\succsim_2\)</span>.</p>
+</blockquote>
+<ul>
+<li><p>If we suppose that the ‘sub-preference orderings’ <span class="math inline">\(succsim_1\)</span> and <span class="math inline">\(succsim_2\)</span> can be applied to these features of any alternative…</p></li>
+<li><p>then we can apply the procedure above to determine the overall preference ordering <span class="math inline">\(\succsim\)</span> between any two pairings.<br />
+</p></li>
+</ul>
+</div>
+<p><br />
+</p>
+<div id="are-lex-preferences-transitive" class="section level5 unnumbered" number="">
+<h5>Are lex preferences transitive?</h5>
+<blockquote>
+<p>Suppose that <span class="math inline">\(x \succsim y\)</span> and <span class="math inline">\(y \succsim z\)</span>.</p>
+</blockquote>
+<p><em>To show transitivity by our definition</em>, we now need to show that this neccesarily implies that <span class="math inline">\(x \succsim z\)</span> holds.</p>
+<div class="marginnote">
+<p>Also note that the above example happens to be perfectly general (we sometimes state this as ‘without loss of generality’ or ‘WLOG’). As we have complete preferences, for any three options, it must be that you can choose labels for them x, y, and z, such that <span class="math inline">\(x \succsim y\)</span> and <span class="math inline">\(y \succsim z\)</span>.</p>
+</div>
+<p><br />
+</p>
+<p>There are two possible cases:</p>
+<div class="marginnote">
+<p>Note that these are the <em>only</em> two possible cases. (We know this because case 2 is simply the ‘negation’ of case 1. In standard logic either something is true, or it is not true). Thus if we can prove transitivity for both case 1 and case 2, we have proved it ‘for all possible cases’.</p>
+</div>
+<p><em>Case 1: “The first feature is decisive when comparing <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>: <span class="math inline">\(x \succ_1 y\)</span>.”</em></p>
+<p><em>Case 2: “The first feature is <em>not</em> decisive when comparing <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>…”</em></p>
+<p><strong>Considering Case 1</strong>:</p>
+<p>Given, by the above assumption, that <span class="math inline">\(y \succsim z\)</span>, it must be that <span class="math inline">\(y \succsim_1 z\)</span></p>
+<p>… i.e., y is “at least as good as z in it’s first feature” – otherwise, according to our preferences, y could not be ‘at least as good as z’).</p>
+<blockquote>
+<p>so by the transitivity of <span class="math inline">\(\succsim_1\)</span> [which was part of the definition of lex preferences]…</p>
+</blockquote>
+<blockquote>
+<p>we obtain … <span class="math inline">\(x \succ_1 z\)</span></p>
+</blockquote>
+<blockquote>
+<p>and thus <span class="math inline">\(x \succsim z\)</span><br />
+</p>
+</blockquote>
+<p>Wait, why does <span class="math inline">\(x \succ_1 y\)</span> combined with <span class="math inline">\(y \succsim_1 z\)</span> imply that <span class="math inline">\(x \succ_1 z\)</span>? (think, and then unfold).</p>
+
+<div class="fold">
+<p>This seems intuitively obvious: if ‘x is strictly better than y’ and ‘y is at least as good as z’, then it should be that ‘x is strictly better than z’. But if we are compulsive mathematicians, we would need to actually formally prove this, as Problem 1b requests.</p>
+</div>
+<p><br />
+</p>
+<p>… And why does <span class="math inline">\(x \succ_1 z\)</span> imply that <span class="math inline">\(x \succsim z\)</span>? (think, and then unfold)</p>
+
+<div class="fold">
+<p>By condition (i) in the definition of lex preferences, if <span class="math inline">\(x \succ_1 y\)</span> then <span class="math inline">\(x \succsim y\)</span>. (Obviously, as this is a general definition, it also applies if we swap z for y in this statement.)</p>
+</div>
+<p>…"but wait, why aren’t you stating <span class="math inline">\(x \succsim z\)</span> (‘x is at least as good as z’)… don’t we know that <span class="math inline">\(x \succ z\)</span>, (‘x is strictly preferred to z’)? (unfold)</p>
+
+<div class="fold">
+<p>Three responses:</p>
+<ul>
+<li><p>For this case, <span class="math inline">\(x \succ z\)</span> does not come directly out of the definition of lex preferences. (I think this could be derived, but we do not need to.)</p></li>
+<li><p>Our definition of transitivity involves the <span class="math inline">\(\succsim\)</span> operator, and not the <span class="math inline">\(\succ\)</span> operator; we need to prove it precisely as defined.</p></li>
+<li><p>Anyways, <span class="math inline">\(x \succ y\)</span> <em>implies</em> <span class="math inline">\(x \succsim y\)</span> (but not vice versa). <span class="math inline">\(\succsim\)</span> is the ‘weaker’ condition. So if <span class="math inline">\(x \succ y\)</span> is a true statement then <span class="math inline">\(x \succsim y\)</span> is as well (always).</p></li>
+</ul>
+</div>
+<p><br />
+</p>
+<p><em>Wait we are not done! We only proved this for one case; now we must consider the ‘negation’ of this case:</em></p>
+<p><strong>Considering Case 2… </strong>: "The first feature is <em>not</em> decisive when comparing <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>: <span class="math inline">\(x \sim_1 y\)</span></p>
+<p>…(and <span class="math inline">\(x \succsim_2 y\)</span> must hold as we assumed that <span class="math inline">\(x \succsim y\)</span> overall.)</p>
+<p>Case 2 is further broken down into two comprehensive sub-cases, which I will call 2a and 2b. Given that the first feature is not decisive for comparing x and y…</p>
+<p>…then either the first feature is decisive when comparing y and z (‘case 2a’), or it is not (‘case 2b’).</p>
+<p><em>Either… </em></p>
+<p><strong>2a:</strong> <span class="math inline">\(y \succ_1 z\)</span></p>
+<p>… then … “we obtain <span class="math inline">\(x \succ_1 z\)</span> and therefore <span class="math inline">\(x \succsim z\)</span>.”</p>
+<div class="marginnote">
+<p>O-R write that this follows “from the transitivity of <span class="math inline">\(\succ_1\)</span>”.
+I believe that here they mean we know that if <span class="math inline">\(A \sim B\)</span> and <span class="math inline">\(B \succ C\)</span> then <span class="math inline">\(A \succ C\)</span> by the property of these logical relations <span class="math inline">\(\sim\)</span> and <span class="math inline">\(\succ\)</span>.</p>
+<p>Thus we must have that <span class="math inline">\(x \sim_1 y\)</span> and <span class="math inline">\(y \succ_1 z\)</span> implies <span class="math inline">\(z \succ_1 z\)</span></p>
+</div>
+<p><em>or</em></p>
+<p><strong>2b:</strong> <span class="math inline">\(y \sim_1 z\)</span></p>
+<p>implying that <span class="math inline">\(y \succ_2 z\)</span> for y to be preferred to z overall, as assumed.</p>
+<blockquote>
+<p>By the transitivity of <span class="math inline">\(\sim_1\)</span> we obtain <span class="math inline">\(x \sim_1 z\)</span> …</p>
+</blockquote>
+<p>(recalling <span class="math inline">\(x \sim_1 y\)</span> is what defined case 2)…</p>
+<blockquote>
+<p>and by the transitivity of <span class="math inline">\(\succsim_2\)</span> we obtain <span class="math inline">\(x \succsim_2 z\)</span>. Thus <span class="math inline">\(x \succsim z\)</span>.</p>
+</blockquote>
+<p>Thus we have shown, for all possible cases that, or lexicographic preferences <span class="math inline">\(\succsim\)</span> as defined <a href="pref-util-choice.html#lex-pref">above</a>, <span class="math inline">\(x \succsim y\)</span> and <span class="math inline">\(y \succsim z\)</span>, implying that these preferences are transitive.</p>
+<p>We can now write <em>quo erat demonstrandum</em> or ‘Q.E.D’, meaning ‘what was to be demonstrated’ [has been demonstrated]. This is sometimes expressed with the symbol</p>
+<p><span class="math display">\[\blacksquare\]</span>.</p>
+<p><br />
+</p>
+
+<div class="note">
+<p><strong>Why did we do this??</strong></p>
+<p>Gee, this took a long time.</p>
+<p>Was it a fun puzzle or a tedious chore? Why did I show you this?</p>
+<p>I think it is good for you to get a sense of what mathematical/theoretical economics proofs look like. It’s good for improving the rigorous structure of your arguments in general. It may be helpful for future reading. It helps you be sure that you understand the concepts defined.</p>
+<p><br />
+</p>
+<p>Also, we learned a few concepts here in doing this. I would suggest that we learned things like…</p>
+<ul>
+<li><p>A proof can constructed by demonstrating that something must hold for all possible cases. We can do it by dividing up the space of all possible cases and showing it for each part of this space.</p></li>
+<li><p>The idea of “weaker and stronger conditions” (strict vs weak preference)</p></li>
+<li><p>How to use ‘general properties of mathematical objects’ (like the transitivity of the <span class="math inline">\(\succsim\)</span> operator) to construct proofs for specific cases.</p></li>
+</ul>
+However, as this is so time-consuming, and not always insightful, I won’t drag you through all the proofs… only dip in occassionally.
+</div>
+
+</div>
 </div>
 </div>
 </div>
