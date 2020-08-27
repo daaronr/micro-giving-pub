@@ -62,7 +62,7 @@ Choice](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-pub
 
 ```
 
-### Readings: 'real research papers' {-}
+### Readings: 'real research papers' {-#readings}
 
 Supplementary and conceptual readings (please read at least *some* of these):
 
@@ -610,7 +610,15 @@ It is fun, but it is *barely* used later in the text.
 
 We might derive preference relations from a few "basic considerations", perhaps reflecting how people describe their own preferences (and choices) in conversation.
 
+<div class="marginnote">
+These can be considered in terms of individual preferences, or, as we will see later, ways to express group-preferences or social preferences.
+</div>
+
+
+We will consider a few examples, some of which *do*  satisfy completeness and transitivity, and some of which do not satisfy one or both of these.
+
 \
+
 
 #### Value functions {-} 
 
@@ -690,13 +698,24 @@ Remember the Blue Cat in the video? ... When he considered his preferences over 
 
 This seems to be an example of what we call 'lexicographic preferences'. 
 
-<div class="marginnote">
-In fact, some 'tree-based data science' models of choice implicitly assume such preferences. Business marketers speak of 'hygiene factors'; if these are not achieved, the customer will walk away. 
-</div>
+*Why are lexicographic preferences important*? (Think and unfold:)
+
+```{block2,  type='fold'}
+
+Ask people how they make their choices, particularly when they are shopping online. I bet that some people will describe a process of 'ruling out' one set of options after another. This is, in fact an optimal procedure for someone with lex preferences. This is *not* for someone with the more standard preferences you may have seen in economics courses, someone who considers trade-offs between one attribute and another. 
+
+The 'filtering' is also consistent with the standard way data is organised. Try to search for a product or service online (on Amazon, or Kayak): it is hard to *specify* your trade off between different characteristics, but it's easy to 'narrow things down' one category at a time.  
+
+In business data science, some 'tree-based' models of choice implicitly assume lex preferences. Business marketers speak of 'hygiene factors'; if these are not achieved, the customer will walk away.
+
+
+```
+
 
 \
 
 As stated by O-R: 
+
 
 > An individual has in mind two [or more] [complete](#Completeness) and [transitive](#Transitivity) binary relations, $\succsim_1$ and $\succsim_2$, each of which relates to one feature of the alternatives. For example, if $X$ is a set of computers, the features might be the size of the memory and the resolution of the screen. 
 
@@ -798,6 +817,7 @@ By condition (i) in the definition of lex preferences, if $x \succ_1 y$ then $x 
 
 ```
 
+\
 
 ..."but wait, why aren't you stating  $x \succsim z$ ('x is at least as good as z')... don't we know that $x \succ z$, ('x is strictly preferred to z')? (unfold)
 
@@ -879,10 +899,216 @@ Also, we learned a few concepts here in doing this. I would suggest that we lear
 
 - How to use ‘general properties of mathematical objects’ (like the transitivity of the $\succsim$ operator) to construct proofs for specific cases.
 
+- Mathematical and logical arguments often contain *many simple steps*, perhaps too many to keep in your head all at the same time. That's why it's important to write things down and not try to do everything in 'spoken form.'
+
 However, as this is so time-consuming, and not always insightful, I won't drag you through all the proofs... only dip in occassionally.
   
 ```  
 
+\
+
+#### Unanimity rule {#unanimity}
 
 
+
+> The individual has in mind $n$ considerations, represented by the complete and transitive binary relations $\succsim_1, \succsim_2,..., \succsim_n$.
+
+> For example, a parent  may take in account the preferences of her $n$ children. 
+
+\
+
+<div class="marginnote">
+ 
+In the movie (and book) "Sophie's choice" a mother is asked to make a horrible choice [very disturbing clip here](https://www.youtube.com/embed/DZ9bht5H2p4?start=214). This may be a case in which we think preferences are not 'complete'; we cannot express preferences among our children's lives. 
+
+</div>
+
+\
+
+
+Or, getting back to our basic idea, an individual may simply have preferences over $n$ characteristics of an outcome (or a product, or a bundle of products)
+
+> Define the binary relation $\succsim$ by $x \succsim y$ if $x \succsim_i y$ for $i = 1,...,n$.
+
+In other words, this may be is a person who says something like:
+
+`r format_with_col("I only prefer a holiday in Jamaica to a holiday in France if Jamaica is better than France in all attributes (or vice-versa). Otherwise I can't say anything about it.", "gray")`
+
+\
+
+Or a group policy-maker who says (unfold):
+
+```{block2,  type='fold'}
+
+Group PM: "I can only state that we prefer the Conservatives' policy is better than the Liberals'  if it is better for everyone in our society (or vice-versa). Otherwise, we don't have a group preference."
+
+In fact, these precise definitions of preferences, and their characteristics, are useful in considering the idea of 'public choice' and social welfare functions. We may derive things like 'impossibility theorems' that tell us the limits of what group-decision-making can accomplish.
+
+O-R discuss this in chapter 20, 'Aggregating preferences', but we probably won't have time to cover it directly in this module.
+
+
+  
+```  
+
+\ 
+
+![Difficult choices: "We have to think about the rest of the family"](https://www.youtube.com/embed/mGzBjTKaX1c?start=95){width="275" height="155"}
+
+\
+
+
+```{block2,  type='inputq'}
+
+What properties does the 'Unanimity rule' preference relation have or not have? (Unfold)
+```  
+
+
+```{block2,  type='fold'}
+
+> This binary relation is transitive but not necessarily complete. 
+
+> Specifically, if two of the relations $\succsim_i$  disagree ($x \succsim_j y$ and $y \succsim_k x$, then $\succsim$ is not complete.
+
+\
+                                                            
+How do we know it's transitive? (unfold next section)
+
+```
+
+```{block2,  type='fold'}
+
+Informally 'If X is at least as good as Y in all aspects, and Y is at least as good Z in all aspects, then X is at least as good as Z in all aspects,                                  
+
+\
+
+How does the example in the prior fold show that it's not complete?  (unfold below)
+
+```
+
+```{block2,  type='fold'}
+
+If 'two of the relations disagree' when comparing any two elements in the choice set (x and y), then the condition 'x is at least as good as y in all aspects' does not hold, nor does 'y is at least as good as x in all aspects' hold. So the unanimity preference relation 'rule' does not state that either is preferred.
+
+Maybe this is obvious when you think in the group context: If we can only make a decision if everyone agrees that one option is better than the other, there will be cases where we cannot say either way which is preferred.
+
+```
+
+\
+
+The 'unanimity rule'-based preferences are not complete, which suggests this has limited use as a decision rule (when we get to actual 'choice'). 
+
+
+\
+
+
+'Majority rule' (read about this in O-R) solves this problem but brings another problem, which leads to the 'Condorcet paradox', also known as the 'voting paradox'.  After reading this in O-R, unfold below for an example of how this makes it difficult to clearly express 'public choice' through majority voting. 
+
+```{block2,  type='fold'}
+
+**Voting paradox example** 
+  
+Suppose we are trying to choose, as a society, between three options in our choice set $X$: a Green Park, Public Housing, or Private Housing.
+  
+\
+
+Suppose we have a local council with one member from each party (representing equal-sized constituencies). Preferences of these groups are as follows (considering strict preferences; as O-R state, the preferences here are 'anti-symmetric'):
+
+  \
+
+Green party: Green Park $\succ$ Public housing $\succ$ Private housing \
+
+Labour: Public housing $\succ$ Private Housing $\succ$ Green Park \
+
+Conservatives: Private Housing $\succ$ Green Park $\succ$ Public housing \
+
+
+\
+
+Suppose we have a local council with one member of each party (representing equal-sized constituencies).
+
+\
+
+Which proposal would win if they voted on:
+- a Green park versus Public housing?
+- a Green Park versus Private housing?
+- Private housing versus Public housing?
+
+
+\
+
+*Try each vote and see who wins*.
+
+\
+
+
+
+  
+*Does a majority vote reveal a clear 'consistent social preference'?*
+
+No, not here.
+
+
+```
+
+
+#### Are preferences transitive in the real world? {-}
+
+In the [O-R questionnaire](http://gametheory.tau.ac.il/exp11/) they asked people to make 36 choices between pairs of alternatives taken from a set of 9 alternatives.
+
+> Each alternative is a description of a vacation package with four parameters: the city, hotel quality, food quality, and price.
+
+They varied the ordering of the description of these features.
+
+```{block2,  type='note'}
+You might want to do that survey now if you haven't done it yet, to understand what we are talking about.
+```  
+
+e.g., one choice could be between 
+
+- "A weekend in Paris, with 4 star hotel, food quality 17, for 574 USD" versus 
+- "A weekend in Berlin, with 5 star hotel, food quality 15, for 500 USD"
+
+\
+
+They found that 85% of the roughly 1300 showed at least one 'intransitivity', where their stated preferences implied "A is preferred to B", "B is preferred to C", and "C is preferred to A" for some combination of three alternatives. 
+
+<div class="marginnote">
+Or they simply reversed themselves, stating 'A is preferred to B' in one case and 'B is preferred to A' in another case. That is also a violation of transitivity, of course.
+</div>
+
+They also note that
+
+> the order in which the features of the package are listed has an effect on the expressed preferences.
+
+This is something we call a 'framing effect'; the way an option is stated affects people's choices (or stated preferences). 
+
+<div class="marginnote">
+This is a major discussion in behavioral economics. Framing effects include things like 'anchoring', 'halo effects', 'decoy effects', etc. (Look up what some of these mean if you are interesting). Framing effects might be interpreted as a violation of the idea of 'transitive preferences'. On the other hand, one  might  argue instead that 'the frame is itself a characteristic of the product.'
+
+</div>
+
+ 
+ 
+ 
+```{block2,  type='inputq'}
+
+**Do the results of the O-R survey demonstrate that 'people frequently exhibit intransitive preferences'?** Consider why this may or may not be considered definitive evidence (and then unfold below for some suggestions.)
+```  
+
+\
+
+```{block2,  type='fold'}
+
+This may be *suggestive* evidence, but I don't think it should be considered definitive. 
+
+One possible objection... These were 'hypothetical' questions; no one was actually making real choices here. In contrast, Economics research usually emphasizes real 'incentivised' choices, either in lab or field experiments or relying on 'observational' data. Thinking about these choices carefully is mentally costly. Respondents may not have put in the time to carefully consider these choices. 
+
+
+On the other hand there is a great deal of more 'serious' evidence of choices that seem to violate transitivity, or extensions of this; we will come back to in the later sections. The [suggested 'real research paper'](#readings) for this section also consider some violations of the idea of a 'stable consistent set of preferences', noting that individual's choices seem to depend on the *time of day the choice is made* (holding constant the time that the consumption will be realised); see [Read and van Leeuwen](https://www.sciencedirect.com/science/article/pii/S0749597898928035).
+
+
+```
+
+
+## Utility functions {#util}
 

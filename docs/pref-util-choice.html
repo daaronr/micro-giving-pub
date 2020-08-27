@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
 
 
-<meta name="date" content="2020-08-26" />
+<meta name="date" content="2020-08-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -280,7 +280,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1" data-path="pref-util-choice.html"><a href="pref-util-choice.html#key-goals-of-this-chunk"><i class="fa fa-check"></i><b>2.1</b> Key goals of this chunk</a></li>
 <li class="chapter" data-level="2.2" data-path="pref-util-choice.html"><a href="pref-util-choice.html#reading-prefs"><i class="fa fa-check"></i><b>2.2</b> Reading</a>
 <ul>
-<li class="chapter" data-level="" data-path="pref-util-choice.html"><a href="pref-util-choice.html#readings-real-research-papers"><i class="fa fa-check"></i>Readings: ‘real research papers’</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#readings"><i class="fa fa-check"></i>Readings: ‘real research papers’</a></li>
 <li class="chapter" data-level="2.2.1" data-path="pref-util-choice.html"><a href="pref-util-choice.html#pref-exc"><i class="fa fa-check"></i><b>2.2.1</b> Interactive exercises (‘problem set’)</a></li>
 <li class="chapter" data-level="2.2.2" data-path="pref-util-choice.html"><a href="pref-util-choice.html#content"><i class="fa fa-check"></i><b>2.2.2</b> Content</a></li>
 </ul></li>
@@ -292,6 +292,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.3.4" data-path="pref-util-choice.html"><a href="pref-util-choice.html#pref-prop"><i class="fa fa-check"></i><b>2.3.4</b> <em>Properties</em> of preferences (some standard assumptions)</a></li>
 <li class="chapter" data-level="2.3.5" data-path="pref-util-choice.html"><a href="pref-util-choice.html#pref-form"><i class="fa fa-check"></i><b>2.3.5</b> Possible preferences .. “Preference formation”</a></li>
 </ul></li>
+<li class="chapter" data-level="2.4" data-path="pref-util-choice.html"><a href="pref-util-choice.html#util"><i class="fa fa-check"></i><b>2.4</b> Utility functions</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="uncertainty.html"><a href="uncertainty.html"><i class="fa fa-check"></i><b>3</b> Preferences under uncertainty (and over time)</a></li>
 <li class="chapter" data-level="4" data-path="consumers-dmd.html"><a href="consumers-dmd.html"><i class="fa fa-check"></i><b>4</b> Consumer preferences, constraints and choice, demand functions</a>
@@ -386,7 +387,7 @@ Choice</a> (note, slightly different notation)</p></li>
 <li><p>NS: Ch 2</p></li>
 </ul>
 </div>
-<div id="readings-real-research-papers" class="section level3 unnumbered" number="">
+<div id="readings" class="section level3 unnumbered" number="">
 <h3>Readings: ‘real research papers’</h3>
 <p>Supplementary and conceptual readings (please read at least <em>some</em> of these):</p>
 <ul>
@@ -768,6 +769,10 @@ Act this out? Make a video?
 <div id="pref-form" class="section level3" number="2.3.5">
 <h3><span class="header-section-number">2.3.5</span> Possible preferences .. “Preference formation”</h3>
 <p>We might derive preference relations from a few “basic considerations”, perhaps reflecting how people describe their own preferences (and choices) in conversation.</p>
+<div class="marginnote">
+<p>These can be considered in terms of individual preferences, or, as we will see later, ways to express group-preferences or social preferences.</p>
+</div>
+<p>We will consider a few examples, some of which <em>do</em> satisfy completeness and transitivity, and some of which do not satisfy one or both of these.</p>
 <p><br />
 </p>
 <div id="value-functions" class="section level4 unnumbered" number="">
@@ -831,8 +836,12 @@ Figure 2.3: American Gothic, by Grant Wood
 <p>I care first and foremost about whether the tea box is rectangular. If several boxes are equally rectangular, then I care about which box is the most white. If the boxes are equally white, then I care about which box is biggest.</p>
 </blockquote>
 <p>This seems to be an example of what we call ‘lexicographic preferences’.</p>
-<div class="marginnote">
-<p>In fact, some ‘tree-based data science’ models of choice implicitly assume such preferences. Business marketers speak of ‘hygiene factors’; if these are not achieved, the customer will walk away.</p>
+<p><em>Why are lexicographic preferences important</em>? (Think and unfold:)</p>
+
+<div class="fold">
+<p>Ask people how they make their choices, particularly when they are shopping online. I bet that some people will describe a process of ‘ruling out’ one set of options after another. This is, in fact an optimal procedure for someone with lex preferences. This is <em>not</em> for someone with the more standard preferences you may have seen in economics courses, someone who considers trade-offs between one attribute and another.</p>
+<p>The ‘filtering’ is also consistent with the standard way data is organised. Try to search for a product or service online (on Amazon, or Kayak): it is hard to <em>specify</em> your trade off between different characteristics, but it’s easy to ‘narrow things down’ one category at a time.</p>
+<p>In business data science, some ‘tree-based’ models of choice implicitly assume lex preferences. Business marketers speak of ‘hygiene factors’; if these are not achieved, the customer will walk away.</p>
 </div>
 <p><br />
 </p>
@@ -922,6 +931,8 @@ Consider how you might show whether they are or are not complete, and then unfol
 <div class="fold">
 <p>By condition (i) in the definition of lex preferences, if <span class="math inline">\(x \succ_1 y\)</span> then <span class="math inline">\(x \succsim y\)</span>. (Obviously, as this is a general definition, it also applies if we swap z for y in this statement.)</p>
 </div>
+<p><br />
+</p>
 <p>…"but wait, why aren’t you stating <span class="math inline">\(x \succsim z\)</span> (‘x is at least as good as z’)… don’t we know that <span class="math inline">\(x \succ z\)</span>, (‘x is strictly preferred to z’)? (unfold)</p>
 
 <div class="fold">
@@ -975,13 +986,166 @@ I believe that here they mean we know that if <span class="math inline">\(A \sim
 <li><p>A proof can constructed by demonstrating that something must hold for all possible cases. We can do it by dividing up the space of all possible cases and showing it for each part of this space.</p></li>
 <li><p>The idea of “weaker and stronger conditions” (strict vs weak preference)</p></li>
 <li><p>How to use ‘general properties of mathematical objects’ (like the transitivity of the <span class="math inline">\(\succsim\)</span> operator) to construct proofs for specific cases.</p></li>
+<li><p>Mathematical and logical arguments often contain <em>many simple steps</em>, perhaps too many to keep in your head all at the same time. That’s why it’s important to write things down and not try to do everything in ‘spoken form.’</p></li>
 </ul>
 However, as this is so time-consuming, and not always insightful, I won’t drag you through all the proofs… only dip in occassionally.
 </div>
+<p><br />
+</p>
+</div>
+</div>
+<div id="unanimity" class="section level4" number="2.3.5.1">
+<h4><span class="header-section-number">2.3.5.1</span> Unanimity rule</h4>
+<blockquote>
+<p>The individual has in mind <span class="math inline">\(n\)</span> considerations, represented by the complete and transitive binary relations <span class="math inline">\(\succsim_1, \succsim_2,..., \succsim_n\)</span>.</p>
+</blockquote>
+<blockquote>
+<p>For example, a parent may take in account the preferences of her <span class="math inline">\(n\)</span> children.</p>
+</blockquote>
+<p><br />
+</p>
+<div class="marginnote">
+<p>In the movie (and book) “Sophie’s choice” a mother is asked to make a horrible choice <a href="https://www.youtube.com/embed/DZ9bht5H2p4?start=214">very disturbing clip here</a>. This may be a case in which we think preferences are not ‘complete’; we cannot express preferences among our children’s lives.</p>
+</div>
+<p><br />
+</p>
+<p>Or, getting back to our basic idea, an individual may simply have preferences over <span class="math inline">\(n\)</span> characteristics of an outcome (or a product, or a bundle of products)</p>
+<blockquote>
+<p>Define the binary relation <span class="math inline">\(\succsim\)</span> by <span class="math inline">\(x \succsim y\)</span> if <span class="math inline">\(x \succsim_i y\)</span> for <span class="math inline">\(i = 1,...,n\)</span>.</p>
+</blockquote>
+<p>In other words, this may be is a person who says something like:</p>
+<p><font color='gray'>I only prefer a holiday in Jamaica to a holiday in France if Jamaica is better than France in all attributes (or vice-versa). Otherwise I can’t say anything about it.</font></p>
+<p><br />
+</p>
+<p>Or a group policy-maker who says (unfold):</p>
 
+<div class="fold">
+<p>Group PM: “I can only state that we prefer the Conservatives’ policy is better than the Liberals’ if it is better for everyone in our society (or vice-versa). Otherwise, we don’t have a group preference.”</p>
+<p>In fact, these precise definitions of preferences, and their characteristics, are useful in considering the idea of ‘public choice’ and social welfare functions. We may derive things like ‘impossibility theorems’ that tell us the limits of what group-decision-making can accomplish.</p>
+<p>O-R discuss this in chapter 20, ‘Aggregating preferences’, but we probably won’t have time to cover it directly in this module.</p>
+</div>
+<p> </p>
+<div class="figure">
+<img src="https://www.youtube.com/embed/mGzBjTKaX1c?start=95" width="275" height="155" alt="" />
+<p class="caption">Difficult choices: “We have to think about the rest of the family”</p>
+</div>
+<p><br />
+</p>
+
+<div class="inputq">
+What properties does the ‘Unanimity rule’ preference relation have or not have? (Unfold)
+</div>
+
+<div class="fold">
+<blockquote>
+<p>This binary relation is transitive but not necessarily complete.</p>
+</blockquote>
+<blockquote>
+<p>Specifically, if two of the relations <span class="math inline">\(\succsim_i\)</span> disagree (<span class="math inline">\(x \succsim_j y\)</span> and <span class="math inline">\(y \succsim_k x\)</span>, then <span class="math inline">\(\succsim\)</span> is not complete.</p>
+</blockquote>
+<p><br />
+</p>
+<p>How do we know it’s transitive? (unfold next section)</p>
+</div>
+
+<div class="fold">
+<p>Informally ’If X is at least as good as Y in all aspects, and Y is at least as good Z in all aspects, then X is at least as good as Z in all aspects,</p>
+<p><br />
+</p>
+<p>How does the example in the prior fold show that it’s not complete? (unfold below)</p>
+</div>
+
+<div class="fold">
+<p>If ‘two of the relations disagree’ when comparing any two elements in the choice set (x and y), then the condition ‘x is at least as good as y in all aspects’ does not hold, nor does ‘y is at least as good as x in all aspects’ hold. So the unanimity preference relation ‘rule’ does not state that either is preferred.</p>
+<p>Maybe this is obvious when you think in the group context: If we can only make a decision if everyone agrees that one option is better than the other, there will be cases where we cannot say either way which is preferred.</p>
+</div>
+<p><br />
+</p>
+<p>The ‘unanimity rule’-based preferences are not complete, which suggests this has limited use as a decision rule (when we get to actual ‘choice’).</p>
+<p><br />
+</p>
+<p>‘Majority rule’ (read about this in O-R) solves this problem but brings another problem, which leads to the ‘Condorcet paradox’, also known as the ‘voting paradox’. After reading this in O-R, unfold below for an example of how this makes it difficult to clearly express ‘public choice’ through majority voting.</p>
+
+<div class="fold">
+<p><strong>Voting paradox example</strong></p>
+<p>Suppose we are trying to choose, as a society, between three options in our choice set <span class="math inline">\(X\)</span>: a Green Park, Public Housing, or Private Housing.</p>
+<p><br />
+</p>
+<p>Suppose we have a local council with one member from each party (representing equal-sized constituencies). Preferences of these groups are as follows (considering strict preferences; as O-R state, the preferences here are ‘anti-symmetric’):</p>
+<p><br />
+</p>
+<p>Green party: Green Park <span class="math inline">\(\succ\)</span> Public housing <span class="math inline">\(\succ\)</span> Private housing<br />
+</p>
+<p>Labour: Public housing <span class="math inline">\(\succ\)</span> Private Housing <span class="math inline">\(\succ\)</span> Green Park<br />
+</p>
+<p>Conservatives: Private Housing <span class="math inline">\(\succ\)</span> Green Park <span class="math inline">\(\succ\)</span> Public housing<br />
+</p>
+<p><br />
+</p>
+<p>Suppose we have a local council with one member of each party (representing equal-sized constituencies).</p>
+<p><br />
+</p>
+<p>Which proposal would win if they voted on:
+- a Green park versus Public housing?
+- a Green Park versus Private housing?
+- Private housing versus Public housing?</p>
+<p><br />
+</p>
+<p><em>Try each vote and see who wins</em>.</p>
+<p><br />
+</p>
+<p><em>Does a majority vote reveal a clear ‘consistent social preference’?</em></p>
+<p>No, not here.</p>
+</div>
+</div>
+<div id="are-preferences-transitive-in-the-real-world" class="section level4 unnumbered" number="">
+<h4>Are preferences transitive in the real world?</h4>
+<p>In the <a href="http://gametheory.tau.ac.il/exp11/">O-R questionnaire</a> they asked people to make 36 choices between pairs of alternatives taken from a set of 9 alternatives.</p>
+<blockquote>
+<p>Each alternative is a description of a vacation package with four parameters: the city, hotel quality, food quality, and price.</p>
+</blockquote>
+<p>They varied the ordering of the description of these features.</p>
+
+<div class="note">
+You might want to do that survey now if you haven’t done it yet, to understand what we are talking about.
+</div>
+<p>e.g., one choice could be between</p>
+<ul>
+<li>“A weekend in Paris, with 4 star hotel, food quality 17, for 574 USD” versus</li>
+<li>“A weekend in Berlin, with 5 star hotel, food quality 15, for 500 USD”</li>
+</ul>
+<p><br />
+</p>
+<p>They found that 85% of the roughly 1300 showed at least one ‘intransitivity’, where their stated preferences implied “A is preferred to B”, “B is preferred to C”, and “C is preferred to A” for some combination of three alternatives.</p>
+<div class="marginnote">
+<p>Or they simply reversed themselves, stating ‘A is preferred to B’ in one case and ‘B is preferred to A’ in another case. That is also a violation of transitivity, of course.</p>
+</div>
+<p>They also note that</p>
+<blockquote>
+<p>the order in which the features of the package are listed has an effect on the expressed preferences.</p>
+</blockquote>
+<p>This is something we call a ‘framing effect’; the way an option is stated affects people’s choices (or stated preferences).</p>
+<div class="marginnote">
+<p>This is a major discussion in behavioral economics. Framing effects include things like ‘anchoring’, ‘halo effects’, ‘decoy effects’, etc. (Look up what some of these mean if you are interesting). Framing effects might be interpreted as a violation of the idea of ‘transitive preferences’. On the other hand, one might argue instead that ‘the frame is itself a characteristic of the product.’</p>
+</div>
+
+<div class="inputq">
+<strong>Do the results of the O-R survey demonstrate that ‘people frequently exhibit intransitive preferences’?</strong> Consider why this may or may not be considered definitive evidence (and then unfold below for some suggestions.)
+</div>
+<p><br />
+</p>
+
+<div class="fold">
+<p>This may be <em>suggestive</em> evidence, but I don’t think it should be considered definitive.</p>
+<p>One possible objection… These were ‘hypothetical’ questions; no one was actually making real choices here. In contrast, Economics research usually emphasizes real ‘incentivised’ choices, either in lab or field experiments or relying on ‘observational’ data. Thinking about these choices carefully is mentally costly. Respondents may not have put in the time to carefully consider these choices.</p>
+<p>On the other hand there is a great deal of more ‘serious’ evidence of choices that seem to violate transitivity, or extensions of this; we will come back to in the later sections. The <a href="index.html#readings">suggested ‘real research paper’</a> for this section also consider some violations of the idea of a ‘stable consistent set of preferences’, noting that individual’s choices seem to depend on the <em>time of day the choice is made</em> (holding constant the time that the consumption will be realised); see <a href="https://www.sciencedirect.com/science/article/pii/S0749597898928035">Read and van Leeuwen</a>.</p>
 </div>
 </div>
 </div>
+</div>
+<div id="util" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Utility functions</h2>
+
 </div>
 </div>
             </section>
