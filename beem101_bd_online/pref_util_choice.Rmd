@@ -77,18 +77,11 @@ ial treatment)
 
 ### Interactive exercises ('problem set') {#pref-exc}
 
-To be determined ('tbd'). Some possibilities below the fold.
+See below 
 
-```{block2,  type='fold'}
+- [On preferences and utility](#prefs-ex)
 
-1. Discussion and writing on the realism of particular assumptions and on 'observing preferences and observing violations of transitivity'
-
-2. Preferences and utility: Definitions, proofs, and sketched examples -- Problems and exercises
-
-Question 6 on the "Shepard scale" is very cool!
-\
-
-```
+- On Choice (tbd) 
 
 ### Content
 
@@ -128,7 +121,7 @@ We now consider the very very fundamental building blocks behind the (in)famous 
 ### A 'motivating' exercise
 
 <div class="marginnote">
-Please feel free to type somw thoughts in the Hypothes.is sidebar, to engage discussion on this.
+Please feel free to type some thoughts in the Hypothes.is sidebar, to engage discussion on this.
 
 You can find another 'idea-stimulating' exercise referenced in the O-R book, the questionnaire they give at [http://gametheory.tau.ac.il/exp11/](http://gametheory.tau.ac.il/exp11/). It's worth doing as they refer to it later in several parts of the book.
 </div>
@@ -144,10 +137,13 @@ If you got amnesia and forgot what you decided and then were in the same situati
 
 ```
 
+<center>
+
 ```{r  fig.cap = 'Am I blowing your mind here?', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/mortys-mind-blower.png")
 ```
 
+</center>
 
 \
 
@@ -179,8 +175,7 @@ If people *did* follow these rules, what would this imply and predict?
 
 ```
 
-
-
+\
 
 Economists (and decision theorists/decision scientists) have specifically defined such rules in terms of 'axioms about preferences'
 
@@ -203,14 +198,46 @@ In the (neo) classical economics framework, your (optimising) choices are determ
 
 ```
 
+\
+
+`r format_with_col("Some more thoughts on 'why are we learning this strange stuff?' (unfold)", "green")`
+
+
+```{block2,  type='fold'}
+
+For the classical Economics model, the work on preferences seems (to me) mainly as largely a matter of 'finding a consistent justification for our models of utility and choice'. If you already find these models plausible, perhaps this is not so interesting.
+
+However, I see these details as particular relevant for a few reasons and in a few contexts.
+  
+**When we take a step back and look outside the classical model to consider:** 
+
+**1. Group and 'social preferences'** including preferences over abstract quantities and contexts that nonetheless have real impact on decisions. For example, 'effective altruists' and social planners need to consider whether to support charities and policies that may 'bring more happy people into existence' against others that do more to 'improve the happiness of existing people'. The philosophical issue of "population ethics" (see., e.g., [@blackorbyIntertemporalPopulationEthics1995], and the discussion in [this podcast](https://80000hours.org/podcast/episodes/hilary-greaves-global-priorities-institute/#transcript)) delves deeply into how preferences can be reasonably defined. ... and millions of dollars in donations are potentially at stake.
+
+\
+
+**2. 'Behavioral economics'** models that consider choices (and perhaps preferences) that are inconsistent in certain ways, and potential affected by 'frames'.
+
+\
+
+**3. Empirical approaches to modeling choices**, including some models such as 'tree-models', which may not be easily connected to the standard 'utility-maximizing' approach. 
+
+\
+
+**Also, this formality sharpens your mind**, and makes you better at logical argumentation in your research work, and perhaps also in things like computer programming
+
+
+```
+
+
 ### Preferences: Notation, definition, explanation
 
 O-R give some background
 
-> We follow the approach almost all economic theory and characterize an individual by her preferences among the alternatives, without considering the origin of these preferences. they nicely explain the why unlike many texts
+> We follow the approach almost all economic theory and characterize an individual by her preferences among the alternatives, without considering the origin of these preferences. 
+
 
 <div class="marginnote">
-And unlike many other texts, O-R *explain* that they are doing this.
+And unlike many other texts, O-R *explain* that they are doing this, and, in the examples, give some indication of *why* this is relevant.
 </div>
 
 
@@ -395,9 +422,11 @@ Exercise: to be sure you understand these things, close your book/computer and t
 
 Below I reprint the 'Venn diagram' of preferences over x an y from the O-R text.
 
+<center> 
 ```{r  fig.cap = 'Venn diagram of possible preference relationships (from O-R)', out.width='900%', fig.asp=.7, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/pref-venn-or.png")
 ```
+</center>
 
 Note that the set of preferences where 'x and y are equally desirable' is included in both the set 'x is at least as desirable as y' and the set 'y is at least as desirable as x'.
 
@@ -574,7 +603,7 @@ An interesting discussion of 'money pumps' (and  'Dutch books') in terms of pref
 
 \
 
-*Violations of transitivity?* (Unfold)
+*Violations of transitive preferences?* (Unfold)
 
 ```{block2,  type='fold'}
 
@@ -620,7 +649,7 @@ We will consider a few examples, some of which *do*  satisfy completeness and tr
 \
 
 
-#### Value functions {-} 
+#### Value functions {-#value_function} 
 
 O-R first consider 'value function' "$v$ that attaches to each alternative a number" ... the preference relation here "is defined by $x \succsim y  if and only if $v(x) \succsim v(y)$. 
 
@@ -660,12 +689,15 @@ If you are struggling with this, you may find the [Khan academy Logic material h
  
 #### Distance functions {-}
 
+<center>
 
 ```{r fig.cap = 'American Gothic, by Grant Wood', out.width='50%', fig.asp=.4, fig.align='center', echo = FALSE}
 
 knitr::include_graphics("picsfigs/american-gothic-painting.jpg")
 
 ```  
+</center>
+
 
 Maybe you have heard someone say something like:
 
@@ -854,7 +886,7 @@ Case 2 is further broken down into two comprehensive sub-cases, which I will cal
 
 <div class="marginnote">
 O-R write  that this follows "from the transitivity of $\succ_1$".
-I believe that here they mean we know that if $A \sim B$ and $B \succ C$ then $A \succ C$ by the property of these logical relations $\sim$ and $\succ$.
+I believe that here they mean we know that if $A \sim B$ and $B \succ C$ then $A \succ C$ by the property of these logical relations $\sim$ and $\succ$. 
 
 Thus we must have that  $x \sim_1 y$ and $y \succ_1 z$ implies $z \succ_1 z$ 
 </div>
@@ -1119,4 +1151,418 @@ On the other hand there is a great deal of more 'serious' evidence of choices th
 
 
 ## Utility functions {#util}
+
+Recall, a ['value function'](#valfunc) simply assigns a real number to each alternative. A *Utility function' is simply a value function which 'represents preferences'. 
+
+```{block2,  type='def'}
+
+**Utility function** (O-R definition)
+
+For any set $X and preference relation $\succsim$ on $X$, the function $u : X \rightarrow \mathbb{R}$ represents $\succsim$  if
+
+$$x \succsim y \text{if and only if} u(x) \geq u(y)$$
+We say that $u$ is a *utility function for $\succsim$.
+
+```  
+
+<div class="marginnote">
+$u : X \rightarrow R$ means that the function $u$ takes any element in the set $X$ (perhaps each element is a combination of goods, services, and leisure time) and returns a real number.
+</div>
+
+\
+
+```{block2,  type='inputq'}
+
+To make this concrete...
+
+Can you construct a utility function that 'represents' preferences $a \succ b \sim c \succ d on the set \{a,b,c,d\} (Unfold)
+  
+```  
+
+```{block2,  type='fold'}
+
+One such utility function (O-R page 9)
+  
+$u(a)=5$, 
+$u(b)=u(c)=-1$, 
+$u(d)=-17$.
+
+Of course many other utility functions also represent these preferences. 
+
+```
+ 
+
+### When can utility functions 'represent preferences'?
+
+```{block2,  type='note'}
+
+The rest of this section in O-R is highly abstract and I don't see many direct applications to practice. You can skip much of it, but please do cover the parts mentioned below.
+```  
+
+\
+
+Here O-R give a fancy definition of 'maximal element with respect to $\succsim$' ... basically, the 'best or (at least tied-for-best) element in the set, considering these preferences.'
+
+Similarly for the 'minimal' element.
+
+\
+
+O-R Lemma 1.1 ... in any 'nonempty finite set' there must be at least one mimal and at least one maximal element. This is pretty obvious and intuitive. 
+
+Still, it is worth reading over the *proof* of this as it gives you an easy example of 'proof by induction'. The logic of 'proof by induction'... (to prove that something holds for a set of any countable size $N$):
+
+1. Show statement X holds for the first element (here, for $n=1$)
+2. Show that 'if X holds for any element $n-1$ it must also hold for element $n$'
+3.  Putting 1 and 2 together, you now know that statement X must always hold (for any countable finite set of some size $N$). 'Just start with the first element and count up to N'. 
+
+\
+
+*Aside: is there a 'smallest interesting integer number'? Can you prove why or why not?*
+
+```{block2,  type='fold'}
+No, there cannot be, I can 'prove it'. Suppose there that $K$ were the 'smallest interesting integer'. But then integer $K-1$ would be the 'largest *non-interesting* number.' That fact alone should make it interesting! Therefore, there cannot be any smallest interesting integer!
+  
+(I think this passes for a joke in the maths community.)
+
+```
+
+
+\
+
+The following proposition, and other propositions extending this, are  fundamental to the idea that we can conduct our economic analysis *as if* people actually consulted a utility function. x
+
+```{block2,  type='def'}
+
+Proposition (O-R 1.1): Every preference relation on a finite set can be represented by a utility function. 
+```  
+
+Note that this requires *a finite set*; this must involve a countable number of elements to choose among. It is not guaranteed (at least not without further conditions) for a preference relation on an infinite set. For example, the set of elements 'any real number between 0 and 10' is an infinite set. 
+
+*You may skip the proof of this proposition, if you like.*
+
+#### Examples: lexicographic preferences on a finite set {-} 
+
+Lexicographic preference on a *finite* set (like the set of seats in a movie theatre) *can* be represented by a utility function,
+
+Following O-R example 1.2:
+
+- Suppose an individual prefers to sit as far back as possible (in the highest numbered 'row'). This is her first priority.
+- Within any 'row' she prefers to sit as far to the left as possible (in the highest numbered 'column')
+
+<center>
+
+
+```{r  fig.cap = 'Cinema seats (from O-R)', out.width='100%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
+ knitr::include_graphics("picsfigs/or_cinema.png")
+
+
+```
+</center>
+
+
+```{block2,  type='inputq'}
+
+Consider, how could you assign a utility function to these preferences?
+  
+```  
+
+```{block2,  type='fold'}
+
+Just rank the seat preferences, and assign the lowest utility number to the least-preferred seat (most front and right). Then increase the utility by 1 as you move each seet to the left. Then start at the next row back, all the way to the right, adding 1 to the utility, etc. 
+\
+
+O-R give another (equivalent) utility function for this, noting that, for this example there are 40 rows of seats and 50 columns (50 seats per row).
+  
+$$u(x)=50 r(x) - c(x) + 1$$ 
+
+where $r(x)$ is the row number and $c(x)$ the column number. 
+(I'm not sure why they added the '+1', there is no need for a utility number to be positive.)
+  
+```
+
+#### On infinite sets: *some* (but not all) preferences can be represented by a utility function {-}
+
+For example, consider the infinite set $\mathbb{R}^+$, the set of all non-negative real numbers. This is a reasonable choice set to consider, perhaps, in some contexts. E.g., 'I may be able to consume any zero or positive amount of food' ( note we have not yet brought in *constraints*, we are just considering *preferences*). 
+
+Suppose 'I always find more food at least as good as less food'. We could represent this preference as
+
+> $x \succsim y$ if and only if $x \geq y$
+
+This is easily represented bu the utility function $u(x)=x$.
+<div class="marginnote">
+... or in fact, by any utility function which is an increasing function, such as $u(x)= x^2 + ln(x) + 108 
+</div>
+ 
+\
+
+In contrast, consider lex preferences on an *infinite* set, the 'unit square", where the first priority is the first coordinate and the second priority is the second coordinate. This is like the 'movie theatre' example, except instead of specific seats, one can locate at any exact point in the square.
+
+<center> 
+```{r  fig.cap = 'O-R: Lex. preferences withinin a square', out.width='100%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
+ knitr::include_graphics("picsfigs/lex_square.png")
+
+
+```
+</center>
+
+
+> so that, for example, $(0.3,0.1) \succsim  (0.2,0.9) \succsim  (0.2,0.8))$ 
+
+O-R show and then 'prove' (alluding to a more general proof), that:
+
+<div class="marginnote">
+Notation: 
+The '{}' enclose the definition of the set.
+"$(x_1,x_2)$" means we are talking about sets of pairs of elements.
+The colon (":") is read as 'such that'.
+"$x_1,x_2 \in [0,1]$" means that each of these elements must be greater than or equal to 0, and less than or equal to 1. The brackets ("[]") specify a 'closed set' including these boundaries. 
+</div>
+
+> The (lexicographic) preference relation $\succsim$ on $\{(x_1,x_2) : x_1,x_2 \in [0,1]\}$ ....
+
+
+> defined by $(x_1,x_2) \succ (y1, y2)$ if and only if either 
+> (i) $x_1 > y_1$ or
+> (ii) $x_1 = y_1$ and $x_2 > y_2$ is not represented by any utility functiom
+
+<div class="marginnote">
+ You may find it more worthwhile to 'try and fail' to give a utility function depicting such preferences. Of course, no matter how many times you fail, you have not proved that it is 'impossible'. But it may help you gain intuition. 
+</div>
+
+You can skip the following proof. 
+
+### An increasing function of a ('regular'\*) utility function represents the same preferences
+
+<div class="marginnote">
+O-R say 'Increasing function of utility function is utility function'. But it's more than this. It's the *same utility function*.
+
+\* Note that I say 'regular utility function'. When we consider uncertainty in the 'expected utility' framework, this will not hold with respect to 'increasing transformations' of the functions we will be dealing with, only with respect to 'affine (linear) transformations'.
+</div>
+
+This is pretty important because it gives us a sense of how closely we might be able to identify a utility function. As O-R note: 
+
+> if the function $u(x,y)$ represents a given preference relation then so does the function $3u(x,y) −7$ [for example]
+
+This means that even if we knew a persons' preferences, we wouldn't know whether the utility function was "actually" $U(Apples, Bananas) = A + B^2$  or $U(Apples, Bananas) = 4(A + B^2)^3 + 37$ etc. These utility functions express the same preferences. 
+
+<div class="marginnote">
+Utility functions are often interpreted to be simply 'the thing that drives choices, subject to constraints', as we will see later. That's the standard approach at least. We don't imagine that we can somehow measure an individuals actual 'amount' of utility, or to compare whether one person gets 'more' or 'less' utility than another. 
+
+See  D. Colander 'Edgeworth's Hedonimeter and the Quest to Measure Utility'' Journal of Economic Perspectives, Spring 2007: 215-225 for a discussion of the history of this idea.
+
+</div>
+ 
+
+
+In general:
+
+<div class="marginnote">
+
+The notation here is a bit loose perhaps? 
+When we say $x \in X$ we are considering elements $x$ that may have multiple components... $x$ may be a bundle of goods and services, etc., so $u(x)$ may be a function of several variables.
+</div>
+ 
+
+```{block2,  type='def'}
+O-R Proposition 1.3: 
+
+Let $f : \mathbb{R}  \rightarrow \mathbb{R}$ be an increasing function. If $u$ represents the preference relation $\succsim$  on $X$ , then so does the function $w$ defined by $w(x) = f(u(x))$ for all $x \in X$.
+
+```  
+
+\
+
+The proof is pretty quick and reasonable:
+
+```{block2,  type='def'}
+
+$w(x) \geq w (y)$ means is the same thing as saying $f(u(x)) \geq f(u(y))$, by the above definition. 
+
+Because $f$ is an *increasing function* (\*), $f(u(x)) \geq f(u(y))$ holds if and only if $u(x) \geq u(y)$.
+  
+$u(x) \geq u(y)$  which is true if and only if $x \succsim y$, by the definition of utility functions 'representing preferences.'
+ 
+```  
+
+<div class="marginnote">
+An *increasing function* is simply a function that increases in it's arguments. By definition, $f$ is an increasing function if and only if $f(a)>f(b)$ whenever $a>b$.
+</div>
+ 
+
+# Preferences and utility: Suggested exercises  ('problem set'): {-#prefs-ex}
+
+
+We will also have a discussion and writing exercise (time permitting) on the realism of particular assumptions and on 'observing preferences and observing violations of transitivity'
+
+## (Highly optional): Properties of binary relations -   O-R problem 1a.  {-#or_p1}
+
+<div class="marginnote">
+I assign this problem to give you a sense of
+
+- 'How the $\succ$ operator is defined based on the $\succsim$ operator' (as previously asserted)
+
+- What proofs look like using these operators.
+
+Consider this optional... but at least worth having a quick look at to *understand* the proof. 
+</div>
+ 
+
+Assume that $\succsim$ is a preference relation.
+
+-  a. ... the binary relation $\succ$ defined by:
+
+```{block2,  type='def'}
+**Defining 'strictly preferred to' "$\succ$":**
+
+$x \succ y$ 
+  
+  if $x \succsim y$ and not $y \succsim x$.
+
+```  
+
+[... show that] $\succ$ is transitive [skip: 'and antisymmetric'].
+
+Think, try it if you like, and then unfold: 
+
+```{block2,  type='fold'}
+
+Transitivity: Assume $x \succ y$ and $y \succ z$. 
+*To show transitivity of the $\succ$ operator, we simply need to show that this implies that $x \succ z$.
+
+\
+
+
+By the above definition of $\succ$, this implies that:
+  
+1.  $x \succsim y$ is true, and 
+2.  $y \succsim z$ is true
+
+but
+
+- $y \succsim x$ is *false*, and 
+- $z \succsim y$ is also.
+\
+
+
+We've already shown that $\succsim$ is transitive. Given this  transitivity, we know that points 1 and 2 above imply that $x \succsim z$.
+
+\
+
+*Remember, we are trying to show that $x \succ z$.* To show this, by our definition of $\succ$ we need to show that:
+
+A. $x \succsim z$ (as we have just done) *and*
+
+B. ... show that $z \succsim x$ does NOT hold (which we show now...) 
+
+Let's consider the thing we are trying to disprove, and show that it cannot hold. If, indeed $z \succsim x$ then the transitivity of $\succsim$ would imply that $z \succsim y$ (because point 1 above noted that $x \succsim y$). But this would contradict $y \succ z$, as assumed. 
+
+Thus, $z \succsim x$ can NOT hold. 
+
+Hence, we have shown points A and B, thus showing that 
+
+$$x \succ y \text{and} y \succ z \rightarrow   z \succ x$$, 
+thus showing the transitivity of $\succ$.
+
+```
+
+You can skip 1b, if you like.
+
+
+## Shepard Scale and Penrose stairs (O-R problem 6) {-}
+
+
+
+```{r  fig.cap = 'MC Escher:  Penrose stairs', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
+ knitr::include_graphics("picsfigs/penrose_stairs.jpg")
+
+```
+
+
+> Shepard scale and Escher. Listen to the Shepard scale and look at a picture of Penrose stairs. 
+
+(The video [HERE](http://techchannel.att.com/play-video.cfm/2011/10/10/AT&T-Archives-A-Pair-of-Paradoxes) combines them.
+
+> The lithograph Ascending and descending by M. C. Escher is a rendering of Penrose stairs.) Explain the connection between these two examples and the concept of transitivity.
+
+(think about it, write a short answer, and then unfold)
+
+```{block2,  type='fold'}
+
+> The Shepard scale consists of a sequence $x_1, x_2, ...$ of sounds. For every value of $t$ , the sound $x_t$ appears to be higher than $x_{t−1}. 
+
+Consider the binary relation $H$ loosely defined as "$A H B$ if and only if $A$ appears to be a higher note than $B$"
+  
+> However, $x_T = x_1$ for some value of T. [for some value in the sequence that comes later than the first one; $T>1$]
+
+> Thus the binary relation $H$ defined by $x_t H x_{t−1}$ for all $t$ is not transitive. 
+
+
+> Similarly, Penrose stairs consist of a sequence $x_1, x_2,...$ such that each step $x_t$ appears to be higher than $x_{t−1}, but $x_T = x_1$ for some value of $T$.
+
+> For an explanation of the Shepard scale, see [HERE](https://www.youtube.com/watch?v=LVWTQcZbLgY).
+
+```
+
+
+## Representations with additive utility [O-R 9b]
+
+
+> An individual has preferences over the set of units in an apartment building. He prefers a unit with 5 rooms on floor 12 to one with 4 rooms on floor 20, one with 4 rooms on floor 5 to one with 2 rooms on floor 12, and one with 2 rooms on floor 20 to one with 5 rooms on floor
+
+(Skip part A: "Show that the individual’s preference are consistent with a preference relation.")
+
+\
+
+Try part B... here we consider whether this person's preferences can be represented by a utility function that is *additive* in the number of rooms and the floor.  I.e., a utility function that is the sum of two functions, one that is a function of the floor ($\ell$), and another that is a function of the number of rooms (r). For example $r^2 + exp(l)$ would is the sum of the functions $f(r)=r^2$ and $g(\ell)= exp(\ell)$.
+
+It turns out that it *cannot* be represented by a utility function that is additive in this way...
+
+\
+
+
+> B. Show that the individual’s preference relation cannot be represented by a function $u$ with $u(x) = f(r(x))+g(\ell(x))$
+
+for functions $f$ and $g$, where $r(x)$ is the number of rooms and $\ell(x)$ is the floor for any unit $x$. (The $r$ and $\ell$ functions simply identify the number of rooms and the floor of a unit, they are not 'really' functions.)
+
+Think about it, try it, and then unfold.
+
+```{block2,  type='fold'}
+
+> If there is a utility representation of this form, then it satisfies [all of the following]
+
+$$f (5) + g (12) > f (4) + g (20)$$ 
+  
+$$f (4) + g (5) > f (2) + g (12)$$
+  
+$$f (2) + g (20) > f (5) + g (5)$$
+  
+Can all of this be possible at the same time? How would you check this? (think, and then unfold below)
+  
+```
+\
+
+```{block2,  type='fold'}
+
+If each of these three inequalities hold, then the *sum* of all the terms on the left of these must exceed the sum of all the terms on the right of these.
+
+So add up the right and left sides: 
+  
+$$f (5) + g (12) + f (4) + g (5) + f (2) + g (20) > f (4) + g (20) + f (2) + g (12) f (5) + g (5) $$.
+
+\
+
+But look closely: the left and right sides are the same (just in a different order). If we cancel them out we get $0 >0$, a contradiction. This proves that if a utility function is to represent these preferences, is *cannot be additive in the two characteristics*.
+
+\
+
+We might have thought of this earlier: The characteristics of the 'preferred' apartments are the same, in total, as the characteristics of the less-preferred apartments. They are just combined in different ways. So the *ways they are combined* must matter to this utility function. It cannot simply add up a separate function of each characteristic. 
+
+By the way, one reason I showed you this is because this 'add up the inequalities on both sides' check, for 'proof by contradiction' comes up a bit in simple proofs in microeconomics. (I have seen it, e.g., in the 'mechanism design/principle-agent' stuff).
+
+I also think it is good to think about 'what sort of (utility) function can represent a particular relationship'. That should come up again in your work, study, and research. 
+
+```
 

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3 Preferences under uncertainty (and over time) | Microeconomics (MSc)</title>
+  <title>Preferences and utility: Suggested exercises (‘problem set’): | Microeconomics (MSc)</title>
   <meta name="description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3 Preferences under uncertainty (and over time) | Microeconomics (MSc)" />
+  <meta property="og:title" content="Preferences and utility: Suggested exercises (‘problem set’): | Microeconomics (MSc)" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="daaronr/micro-giving-pub" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3 Preferences under uncertainty (and over time) | Microeconomics (MSc)" />
+  <meta name="twitter:title" content="Preferences and utility: Suggested exercises (‘problem set’): | Microeconomics (MSc)" />
   
   <meta name="twitter:description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="prefs-ex.html"/>
-<link rel="next" href="consumers-dmd.html"/>
+<link rel="prev" href="pref-util-choice.html"/>
+<link rel="next" href="uncertainty.html"/>
 <script src="book_assets/header-attrs-2.3/header-attrs.js"></script>
 <script src="book_assets/jquery-2.2.3/jquery.min.js"></script>
 <link href="book_assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -352,22 +352,153 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="uncertainty" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Preferences under uncertainty (and over time)</h1>
-<p>‘Expected Utility’; risk-aversion, finance and diversification; time-preference and discounting</p>
+<div id="prefs-ex" class="section level1 unnumbered" number="">
+<h1>Preferences and utility: Suggested exercises (‘problem set’):</h1>
+<p>We will also have a discussion and writing exercise (time permitting) on the realism of particular assumptions and on ‘observing preferences and observing violations of transitivity’</p>
+<div id="or_p1" class="section level2 unnumbered" number="">
+<h2>(Highly optional): Properties of binary relations - O-R problem 1a.</h2>
+<div class="marginnote">
+<p>I assign this problem to give you a sense of</p>
+<ul>
+<li><p>‘How the <span class="math inline">\(\succ\)</span> operator is defined based on the <span class="math inline">\(\succsim\)</span> operator’ (as previously asserted)</p></li>
+<li><p>What proofs look like using these operators.</p></li>
+</ul>
+<p>Consider this optional… but at least worth having a quick look at to <em>understand</em> the proof.</p>
+</div>
+<p>Assume that <span class="math inline">\(\succsim\)</span> is a preference relation.</p>
+<ul>
+<li><ol style="list-style-type: lower-alpha">
+<li>… the binary relation <span class="math inline">\(\succ\)</span> defined by:</li>
+</ol></li>
+</ul>
 
-<div class="note">
-<strong>I will add a great deal of content here.</strong>
+<div class="def">
+<p><strong>Defining ‘strictly preferred to’ “<span class="math inline">\(\succ\)</span>”:</strong></p>
+<p><span class="math inline">\(x \succ y\)</span></p>
+<p>if <span class="math inline">\(x \succsim y\)</span> and not <span class="math inline">\(y \succsim x\)</span>.</p>
+</div>
+<p>[… show that] <span class="math inline">\(\succ\)</span> is transitive [skip: ‘and antisymmetric’].</p>
+<p>Think, try it if you like, and then unfold:</p>
+
+<div class="fold">
+<p>Transitivity: Assume <span class="math inline">\(x \succ y\)</span> and <span class="math inline">\(y \succ z\)</span>.
+*To show transitivity of the <span class="math inline">\(\succ\)</span> operator, we simply need to show that this implies that <span class="math inline">\(x \succ z\)</span>.</p>
+<p><br />
+</p>
+<p>By the above definition of <span class="math inline">\(\succ\)</span>, this implies that:</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(x \succsim y\)</span> is true, and</li>
+<li><span class="math inline">\(y \succsim z\)</span> is true</li>
+</ol>
+<p>but</p>
+<ul>
+<li><span class="math inline">\(y \succsim x\)</span> is <em>false</em>, and</li>
+<li><span class="math inline">\(z \succsim y\)</span> is also.<br />
+</li>
+</ul>
+<p>We’ve already shown that <span class="math inline">\(\succsim\)</span> is transitive. Given this transitivity, we know that points 1 and 2 above imply that <span class="math inline">\(x \succsim z\)</span>.</p>
+<p><br />
+</p>
+<p><em>Remember, we are trying to show that <span class="math inline">\(x \succ z\)</span>.</em> To show this, by our definition of <span class="math inline">\(\succ\)</span> we need to show that:</p>
+<p>A. <span class="math inline">\(x \succsim z\)</span> (as we have just done) <em>and</em></p>
+<p>B. … show that <span class="math inline">\(z \succsim x\)</span> does NOT hold (which we show now…)</p>
+<p>Let’s consider the thing we are trying to disprove, and show that it cannot hold. If, indeed <span class="math inline">\(z \succsim x\)</span> then the transitivity of <span class="math inline">\(\succsim\)</span> would imply that <span class="math inline">\(z \succsim y\)</span> (because point 1 above noted that <span class="math inline">\(x \succsim y\)</span>). But this would contradict <span class="math inline">\(y \succ z\)</span>, as assumed.</p>
+<p>Thus, <span class="math inline">\(z \succsim x\)</span> can NOT hold.</p>
+<p>Hence, we have shown points A and B, thus showing that</p>
+<p><span class="math display">\[x \succ y \text{and} y \succ z \rightarrow   z \succ x\]</span>,
+thus showing the transitivity of <span class="math inline">\(\succ\)</span>.</p>
+</div>
+<p>You can skip 1b, if you like.</p>
+</div>
+<div id="shepard-scale-and-penrose-stairs-o-r-problem-6" class="section level2 unnumbered" number="">
+<h2>Shepard Scale and Penrose stairs (O-R problem 6)</h2>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-129"></span>
+<img src="picsfigs/penrose_stairs.jpg" alt="MC Escher:  Penrose stairs" width="50%" />
+<p class="caption">
+Figure 2.6: MC Escher: Penrose stairs
+</p>
+</div>
+<blockquote>
+<p>Shepard scale and Escher. Listen to the Shepard scale and look at a picture of Penrose stairs.</p>
+</blockquote>
+<p>(The video <a href="http://techchannel.att.com/play-video.cfm/2011/10/10/AT&amp;T-Archives-A-Pair-of-Paradoxes">HERE</a> combines them.</p>
+<blockquote>
+<p>The lithograph Ascending and descending by M. C. Escher is a rendering of Penrose stairs.) Explain the connection between these two examples and the concept of transitivity.</p>
+</blockquote>
+<p>(think about it, write a short answer, and then unfold)</p>
+
+<div class="fold">
+<blockquote>
+<p>The Shepard scale consists of a sequence <span class="math inline">\(x_1, x_2, ...\)</span> of sounds. For every value of <span class="math inline">\(t\)</span> , the sound <span class="math inline">\(x_t\)</span> appears to be higher than $x_{t−1}.</p>
+</blockquote>
+<p>Consider the binary relation <span class="math inline">\(H\)</span> loosely defined as “<span class="math inline">\(A H B\)</span> if and only if <span class="math inline">\(A\)</span> appears to be a higher note than <span class="math inline">\(B\)</span>”</p>
+<blockquote>
+<p>However, <span class="math inline">\(x_T = x_1\)</span> for some value of T. [for some value in the sequence that comes later than the first one; <span class="math inline">\(T&gt;1\)</span>]</p>
+</blockquote>
+<blockquote>
+<p>Thus the binary relation <span class="math inline">\(H\)</span> defined by <span class="math inline">\(x_t H x_{t−1}\)</span> for all <span class="math inline">\(t\)</span> is not transitive.</p>
+</blockquote>
+<blockquote>
+<p>Similarly, Penrose stairs consist of a sequence <span class="math inline">\(x_1, x_2,...\)</span> such that each step <span class="math inline">\(x_t\)</span> appears to be higher than $x_{t−1}, but <span class="math inline">\(x_T = x_1\)</span> for some value of <span class="math inline">\(T\)</span>.</p>
+</blockquote>
+<blockquote>
+<p>For an explanation of the Shepard scale, see <a href="https://www.youtube.com/watch?v=LVWTQcZbLgY">HERE</a>.</p>
+</blockquote>
+</div>
+</div>
+<div id="representations-with-additive-utility-o-r-9b" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Representations with additive utility [O-R 9b]</h2>
+<blockquote>
+<p>An individual has preferences over the set of units in an apartment building. He prefers a unit with 5 rooms on floor 12 to one with 4 rooms on floor 20, one with 4 rooms on floor 5 to one with 2 rooms on floor 12, and one with 2 rooms on floor 20 to one with 5 rooms on floor</p>
+</blockquote>
+<p>(Skip part A: “Show that the individual’s preference are consistent with a preference relation.”)</p>
+<p><br />
+</p>
+<p>Try part B… here we consider whether this person’s preferences can be represented by a utility function that is <em>additive</em> in the number of rooms and the floor. I.e., a utility function that is the sum of two functions, one that is a function of the floor (<span class="math inline">\(\ell\)</span>), and another that is a function of the number of rooms (r). For example <span class="math inline">\(r^2 + exp(l)\)</span> would is the sum of the functions <span class="math inline">\(f(r)=r^2\)</span> and <span class="math inline">\(g(\ell)= exp(\ell)\)</span>.</p>
+<p>It turns out that it <em>cannot</em> be represented by a utility function that is additive in this way…</p>
+<p><br />
+</p>
+<blockquote>
+<p>B. Show that the individual’s preference relation cannot be represented by a function <span class="math inline">\(u\)</span> with <span class="math inline">\(u(x) = f(r(x))+g(\ell(x))\)</span></p>
+</blockquote>
+<p>for functions <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span>, where <span class="math inline">\(r(x)\)</span> is the number of rooms and <span class="math inline">\(\ell(x)\)</span> is the floor for any unit <span class="math inline">\(x\)</span>. (The <span class="math inline">\(r\)</span> and <span class="math inline">\(\ell\)</span> functions simply identify the number of rooms and the floor of a unit, they are not ‘really’ functions.)</p>
+<p>Think about it, try it, and then unfold.</p>
+
+<div class="fold">
+<blockquote>
+<p>If there is a utility representation of this form, then it satisfies [all of the following]</p>
+</blockquote>
+<p><span class="math display">\[f (5) + g (12) &gt; f (4) + g (20)\]</span></p>
+<p><span class="math display">\[f (4) + g (5) &gt; f (2) + g (12)\]</span></p>
+<p><span class="math display">\[f (2) + g (20) &gt; f (5) + g (5)\]</span></p>
+Can all of this be possible at the same time? How would you check this? (think, and then unfold below)
+</div>
+<p><br />
+</p>
+
+<div class="fold">
+<p>If each of these three inequalities hold, then the <em>sum</em> of all the terms on the left of these must exceed the sum of all the terms on the right of these.</p>
+<p>So add up the right and left sides:</p>
+<p><span class="math display">\[f (5) + g (12) + f (4) + g (5) + f (2) + g (20) &gt; f (4) + g (20) + f (2) + g (12) f (5) + g (5) \]</span>.</p>
+<p><br />
+</p>
+<p>But look closely: the left and right sides are the same (just in a different order). If we cancel them out we get <span class="math inline">\(0 &gt;0\)</span>, a contradiction. This proves that if a utility function is to represent these preferences, is <em>cannot be additive in the two characteristics</em>.</p>
+<p><br />
+</p>
+<p>We might have thought of this earlier: The characteristics of the ‘preferred’ apartments are the same, in total, as the characteristics of the less-preferred apartments. They are just combined in different ways. So the <em>ways they are combined</em> must matter to this utility function. It cannot simply add up a separate function of each characteristic.</p>
+<p>By the way, one reason I showed you this is because this ‘add up the inequalities on both sides’ check, for ‘proof by contradiction’ comes up a bit in simple proofs in microeconomics. (I have seen it, e.g., in the ‘mechanism design/principle-agent’ stuff).</p>
+<p>I also think it is good to think about ‘what sort of (utility) function can represent a particular relationship’. That should come up again in your work, study, and research.</p>
 </div>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="prefs-ex.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="consumers-dmd.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="pref-util-choice.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="uncertainty.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="book_assets/gitbook-2.6.7/js/app.min.js"></script>

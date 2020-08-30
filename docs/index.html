@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
 
 
-<meta name="date" content="2020-08-27" />
+<meta name="date" content="2020-08-30" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -292,7 +292,17 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.3.4" data-path="pref-util-choice.html"><a href="pref-util-choice.html#pref-prop"><i class="fa fa-check"></i><b>2.3.4</b> <em>Properties</em> of preferences (some standard assumptions)</a></li>
 <li class="chapter" data-level="2.3.5" data-path="pref-util-choice.html"><a href="pref-util-choice.html#pref-form"><i class="fa fa-check"></i><b>2.3.5</b> Possible preferences .. “Preference formation”</a></li>
 </ul></li>
-<li class="chapter" data-level="2.4" data-path="pref-util-choice.html"><a href="pref-util-choice.html#util"><i class="fa fa-check"></i><b>2.4</b> Utility functions</a></li>
+<li class="chapter" data-level="2.4" data-path="pref-util-choice.html"><a href="pref-util-choice.html#util"><i class="fa fa-check"></i><b>2.4</b> Utility functions</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="pref-util-choice.html"><a href="pref-util-choice.html#when-can-utility-functions-represent-preferences"><i class="fa fa-check"></i><b>2.4.1</b> When can utility functions ‘represent preferences’?</a></li>
+<li class="chapter" data-level="2.4.2" data-path="pref-util-choice.html"><a href="pref-util-choice.html#an-increasing-function-of-a-regular-utility-function-represents-the-same-preferences"><i class="fa fa-check"></i><b>2.4.2</b> An increasing function of a (‘regular’*) utility function represents the same preferences</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="prefs-ex.html"><a href="prefs-ex.html"><i class="fa fa-check"></i>Preferences and utility: Suggested exercises (‘problem set’):</a>
+<ul>
+<li class="chapter" data-level="" data-path="prefs-ex.html"><a href="prefs-ex.html#or_p1"><i class="fa fa-check"></i>(Highly optional): Properties of binary relations - O-R problem 1a.</a></li>
+<li class="chapter" data-level="" data-path="prefs-ex.html"><a href="prefs-ex.html#shepard-scale-and-penrose-stairs-o-r-problem-6"><i class="fa fa-check"></i>Shepard Scale and Penrose stairs (O-R problem 6)</a></li>
+<li class="chapter" data-level="2.5" data-path="prefs-ex.html"><a href="prefs-ex.html#representations-with-additive-utility-o-r-9b"><i class="fa fa-check"></i><b>2.5</b> Representations with additive utility [O-R 9b]</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="uncertainty.html"><a href="uncertainty.html"><i class="fa fa-check"></i><b>3</b> Preferences under uncertainty (and over time)</a></li>
 <li class="chapter" data-level="4" data-path="consumers-dmd.html"><a href="consumers-dmd.html"><i class="fa fa-check"></i><b>4</b> Consumer preferences, constraints and choice, demand functions</a>
@@ -345,7 +355,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="header">
 <h1 class="title">Microeconomics (MSc)</h1>
 <p class="author"><em>Dr. David Reinstein, University of Exeter, <a href="https://davidreinstein.wordpress.com">main web page</a>, <a href="https://innovationsinfundraising.org">innovationsinfundraising.org</a>, Twitter: givingtools</em></p>
-<p class="date"><em>2020-08-27</em></p>
+<p class="date"><em>2020-08-30</em></p>
 </div>
 <div id="note" class="section level1 unnumbered" number="">
 <h1>Notes for Beem101 Microeconomics students; overview</h1>
@@ -394,11 +404,11 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>This module is adapted to students from a variety of backgrounds.</p>
 <p>For students interested in pursuing a PhD in Economics, and interested in research:</p>
 <ul>
-<li><p>We will cover some approaches and relevant building blocks, and I will point you to relevant materials for further enrichment</p></li>
-<li><p>I will incorporate content from academic literature (‘articles in peer reviewed journals’) and sophisticated research considerations</p></li>
-<li><p>I will incorporate my own research, research methods, and ‘really getting our hands dirty’ in digging into research questions, building theoretical (maths) models, and even perhaps experiments, coding, and data analysis.</p></li>
-<li><p>We will discuss <em>your</em> proposed research, relate microeconomic theory and models to this, and bring this into coursework</p></li>
-<li><p>I will try to help you ‘think, research and write’ like a good economist. (See my <a href="https://daaronr.github.io/writing_econ_research/about-this-work.html">Writing and research guide here</a>.</p></li>
+<li>We will cover some approaches and relevant building blocks, and I will point you to relevant materials for further enrichment</li>
+<li>I will incorporate content from academic literature (‘articles in peer reviewed journals’) and sophisticated research considerations</li>
+<li>I will incorporate my own research, research methods, and ‘really getting our hands dirty’ in digging into research questions, building theoretical (maths) models, and even perhaps experiments, coding, and data analysis.</li>
+<li>We will discuss <em>your</em> proposed research, relate microeconomic theory and models to this, and bring this into coursework</li>
+<li>I will try to help you ‘think, research and write’ like a good economist. (See my <a href="https://daaronr.github.io/writing_econ_research/about-this-work.html">Writing and research guide here</a>.</li>
 </ul>
 <p><br />
 </p>
@@ -448,22 +458,33 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>As I am incorporating some material <em>directly</em> from these works, I include the licences below (in the fold).</p>
 
 <div class="fold">
-<p>Paste licenses here.</p>
+<p>Osborne and Rubinstein: <a href="https://creativecommons.org/licenses/by/4.0/">creative CC BY-NC-ND 4.0</a></p>
+<p><img src="picsfigs/or_license.png" /></p>
+<p><br />
+</p>
+<p>I could not find the license information for the McAfee et al text.</p>
+<p><br />
+</p>
+<p>Baumann (QMC): Creative Commons Attribution-NonCommercial 3.0</p>
+<p><img src="picsfigs/qmc_licence.png" /></p>
 </div>
+<ul>
+<li>We also make use of academic articles and working papers as well as some of my own writings… these are mentioned below</li>
+</ul>
 <p><br />
 </p>
 <div id="other-reseources" class="section level3 unnumbered" number="">
 <h3>Other relevant resources</h3>
-<p><strong>Simpler resources</strong></p>
+<p><strong>Simpler resources</strong> (unfold if interested)</p>
+
+<div class="fold">
 <ul>
 <li><p>Varian, Hal R., Intermediate microeconomics: a modern approach. New York, NY: WW Norton &amp; Company, 2010: Somewhat less formal than O-R but it also covers a wider set of material and computations.</p></li>
-<li><p>Intermediate Microeconomics and its Application (an Undergraduate text) by Nicholson and Snyder. We have used this for a good chunk of this module in past years. It is at a very basic level, in terms of the maths</p></li>
-</ul>
-<p>Free online access to this text may be available through your university/library (this works at Exeter) via <a href="https://www.vlebooks.com/">www.vlebooks.com</a></p>
-<ul>
+<li><p>Intermediate Microeconomics and its Application (an Undergraduate text) by Nicholson and Snyder. We have used this for a good chunk of this module in past years. It is at a very basic level, in terms of the maths. Free online access to this text may be available through your university/library (this works at Exeter) via <a href="https://www.vlebooks.com/">www.vlebooks.com</a></p></li>
 <li><p>A free alternative, at a similar level: <a href="https://open.umn.edu/opentextbooks/textbooks/microeconomics-markets-methods-and-models">Microeconomics an Open Text by Douglas Curtis and Ian Irvine</a></p></li>
 <li><p>Microeconomics by Hugh Gravelle and Ray Rees (version 3, widely available online for free): A somewhat more advanced-intermediate-level text which I think you will find very useful; this is not yet officially Open-Source, but you can find it online for free (and the authors are OK with this, I have emailed them). Just do a web search for ‘Gravelle and Rees Microeconomics’ and you will find the pdf</p></li>
 </ul>
+</div>
 <p><br />
 </p>
 <p><strong>More rigorous, advanced and applied work will draw from</strong></p>
@@ -475,9 +496,6 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>For maths, see also <a href="https://mjo.osborne.economics.utoronto.ca/index.php/tutorial/index/1/toc">Mathematical methods for economic theory</a> … also free online!</p>
 <p><br />
 </p>
-<ul>
-<li>Academic articles and working papers as well as some of my own writings… these are mentioned below</li>
-</ul>
 </div>
 </div>
 <div id="this-book" class="section level2 unnumbered" number="">
@@ -570,7 +588,7 @@ I will use these boxes for ‘notes’ expressing material that is important, bu
 </ol>
 <p><br />
 </p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-12"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-13"></span>
 <img src="picsfigs/hyp_select.png" alt="highlighting text" width="65%" />
 <p class="caption">
 Figure 0.1: highlighting text
@@ -632,7 +650,7 @@ Figure 0.1: highlighting text
 <li>Change the font style, color, and size</li>
 <li>Show keyboard shortcuts</li>
 </ul>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-18"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-19"></span>
 <img src="picsfigs/night_font.png" alt="For example, you can choose nighttime serif font" width="95%" />
 <p class="caption">
 Figure 0.2: For example, you can choose nighttime serif font
