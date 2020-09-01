@@ -98,7 +98,7 @@ This will go through the relevant O-R text material and a bit more. However, you
 
 ```{block2,  type='note'}
 
-Note that this excerpts and mainly follows O-R chapter 1. I try to highlight the key points, explain them a bit more, and add some additional content that seems important You must read that chapter *along with* these notes. All quotes are from O-R unles otherwise noted.
+Note that this excerpts and mainly follows O-R chapter 1. I try to highlight the key points, explain them a bit more, and add some additional content that seems important. You must read that chapter (except for the sections I note you may skip) *along with* these notes. All quotes are from O-R unles otherwise noted.
 
 ```
 
@@ -229,7 +229,7 @@ However, I see these details as particular relevant for a few reasons and in a f
 ```
 
 
-### Preferences: Notation, definition, explanation
+### Preferences: Notation, definition, explanation {#pref-def}
 
 O-R give some background
 
@@ -420,21 +420,40 @@ Exercise: to be sure you understand these things, close your book/computer and t
 
 \
 
-Below I reprint the 'Venn diagram' of preferences over x an y from the O-R text.
+Consider the 'Venn diagram' of preferences over x and y from the O-R text (O-R, page 5, fig. 1.1)
 
+<div class="marginnote">
+Note: Osborne and Rubinstein have requested that we not reprint any figures directly from their book.
+</div>
+
+<!--
 <center> 
 ```{r  fig.cap = 'Venn diagram of possible preference relationships (from O-R)', out.width='900%', fig.asp=.7, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/pref-venn-or.png")
 ```
 </center>
+-->
 
 Note that the set of preferences where 'x and y are equally desirable' is included in both the set 'x is at least as desirable as y' and the set 'y is at least as desirable as x'.
 
 
-###  *Properties* of preferences (some standard assumptions)  {#pref-prop}
+###  *Properties* of preferences (some standard assumptions; aka 'axioms')  {#pref-prop}
+
+We consider some standard assumptions over preferences that, combined with some other assumptions,  will be  sufficient to justify using a 'utility function. 
+
+<div class="marginnote">
+Later, we will also consider the 'More is Better' ('nonsatiation' or 'monotonicity') type of assumptions.
+
+We skip the standard 'continuity' assumption here, although we return to a version of it when we consider uncertainty.
+
+Another common 'axiom' involves 'diminishing marginal rates of substitution' or, in multiple dimensions, 'strict quasi-concavity', something you may come across in your maths/optimization module.
+
+In general, axioms like these also stand directly behind 'revealed preference' methods for measuring how much people value
+nonmarket goods, like clean air and national parks.
+</div>
+ 
 
 #### Completeness {-}
-
 
 Completeness (informal definition): "Given two options, A and B, a person can state which option they prefer or whether they find both options equally attractive."
 
@@ -514,7 +533,7 @@ But they have only *stated* that this is the case. **They have not PROVEN it.** 
 #### Transitivity {-}
 
 
-> For a binary relation $\succ$ to correspond to a preference relation, we require not only that it be complete, but also that it be consistent in the sense that if $x \succsim y$ and $y \succsim z$ then $x \succsim z$. This property is called transitivity.
+> For a binary relation $\succ$ to correspond to a preference relation, we require not only that it be complete, but also that it be consistent in the sense that if $x \succsim y$ and $y \succsim z$ then $x \succsim z$. This property is called transitivity. (O-R)
 
 
 Intuitively: Transitive preferences are 'internally consistent': If I prefer A to B, and prefer B to C, then I must prefer A to C.
@@ -562,7 +581,7 @@ If this seems confusing it may be because it is *too* obvious (although behavior
 ```
 
 
-*If you found someone who striclty preferred a apple to a bananas, a banana to a cherry, and a cherry to an apple,  you could make a lot of money out of them!.*
+*If you found someone who striclty preferred an apple to a bananas, a banana to a cherry, and a cherry to an apple,  you could make a lot of money out of them!.*
 
 ```{block2,  type='compq'}
 
@@ -587,18 +606,6 @@ It works as follows (being a bit informal here):
 ```
 
 \
-
-Some supplements ... why this matters:
-
-```{block2,  type='supplement'}
-
-**An interesting video discussing this**
-
-[Becoming a money pump, Nick Chater, Warwick business school](https://view.vzaar.com/1387870/video)
-
-An interesting discussion of 'money pumps' (and  'Dutch books') in terms of preferences and financial markets. I've seen this chocolate beverage argument presented for why people should not have 'wide zones of indifference'.
-
-```
 
 
 \
@@ -651,7 +658,7 @@ We will consider a few examples, some of which *do*  satisfy completeness and tr
 
 #### Value functions {-#value_function} 
 
-O-R first consider 'value function' "$v$ that attaches to each alternative a number" ... the preference relation here "is defined by $x \succsim y  if and only if $v(x) \succsim v(y)$. 
+O-R first consider a 'value function' "$v$ that attaches to each alternative a number" ... the preference relation here "is defined by $x \succsim y$  if and only if $v(x) \succsim v(y)$. 
 
 <div class="marginnote">
 This is close to the 'utility function' that we will discuss later. It is trivial to show that this is complete and transitive. (Can you show it?).
@@ -682,7 +689,6 @@ To prove the 'if and only if' relationship, you need to prove *both directions* 
 
 
 If you are struggling with this, you may find the [Khan academy Logic material helpful](https://www.khanacademy.org/test-prep/lsat/lsat-lessons/logic-toolbox-new/a/logic-toolbox--if-and-only-if), as well as more advanced treatments of hte logic of mathematical proofs.
-
 ```
 \
 
@@ -750,6 +756,7 @@ As stated by O-R:
 
 
 > An individual has in mind two [or more] [complete](#Completeness) and [transitive](#Transitivity) binary relations, $\succsim_1$ and $\succsim_2$, each of which relates to one feature of the alternatives. For example, if $X$ is a set of computers, the features might be the size of the memory and the resolution of the screen. 
+(O-R, p. 7)
 
 <div class="marginnote">
 Lexicographic preferences can be applied to any number of features, but we will only consider two features here. 
@@ -757,6 +764,8 @@ Lexicographic preferences can be applied to any number of features, but we will 
  
 
 > The individual gives priority to the first feature, breaking ties by the second feature. 
+(O-R, p. 7)
+
 
 
 > Formally, [for lexicographic preferences] the individual’s preference relation $\succsim$ is defined by $x \succsim y$ if:  
@@ -779,7 +788,7 @@ Consider how you might show whether they are or are not complete, and then unfol
 
 ```{block2,  type='fold'}
 
-> Its completeness follows from the completeness of $\succsim_1$ and $\succsim_2$.
+> Its completeness follows from the completeness of $\succsim_1$ and $\succsim_2$. (O-R, p. 7)
 
 -  If we suppose that the 'sub-preference orderings' $succsim_1$ and $succsim_2$ can be applied to these features of any alternative...
 
@@ -797,6 +806,7 @@ Consider how you might show whether they are or are not complete, and then unfol
 *To show transitivity by our definition*, we now need to show that this neccesarily implies that $x \succsim z$ holds. 
 
 <div class="marginnote">
+
 Also note that the above example happens to be perfectly general (we sometimes state this as 'without loss of generality' or 'WLOG'). As we have complete preferences, for any three options, it must be that you can choose labels for them x, y, and z, such that $x \succsim y$ and $y \succsim z$. 
 
 </div>
@@ -913,11 +923,18 @@ $$\blacksquare$$.
 \
 
 ```{block2,  type='note'}
+
 **Why did we do this??**
   
 Gee, this took a long time. 
 
 Was it a fun puzzle or a tedious chore? Why did I show you this?
+  
+(Unfold the box below for my thoughts on this.
+```
+
+```{block2,  type='fold'}
+
 
 I think it is good for you to get a sense of what mathematical/theoretical economics proofs look like. It's good for improving the rigorous structure of your arguments in general. It may be helpful for future reading. It helps you be sure that you understand the concepts defined. 
 
@@ -939,7 +956,7 @@ However, as this is so time-consuming, and not always insightful, I won't drag y
 
 \
 
-#### Unanimity rule {#unanimity}
+#### Unanimity rule {-#unanimity}
 
 
 
@@ -1126,8 +1143,6 @@ This is something we call a 'framing effect'; the way an option is stated affect
 This is a major discussion in behavioral economics. Framing effects include things like 'anchoring', 'halo effects', 'decoy effects', etc. (Look up what some of these mean if you are interesting). Framing effects might be interpreted as a violation of the idea of 'transitive preferences'. On the other hand, one  might  argue instead that 'the frame is itself a characteristic of the product.'
 
 </div>
-
- 
  
  
 ```{block2,  type='inputq'}
@@ -1143,7 +1158,6 @@ This may be *suggestive* evidence, but I don't think it should be considered def
 
 One possible objection... These were 'hypothetical' questions; no one was actually making real choices here. In contrast, Economics research usually emphasizes real 'incentivised' choices, either in lab or field experiments or relying on 'observational' data. Thinking about these choices carefully is mentally costly. Respondents may not have put in the time to carefully consider these choices. 
 
-
 On the other hand there is a great deal of more 'serious' evidence of choices that seem to violate transitivity, or extensions of this; we will come back to in the later sections. The [suggested 'real research paper'](#readings) for this section also consider some violations of the idea of a 'stable consistent set of preferences', noting that individual's choices seem to depend on the *time of day the choice is made* (holding constant the time that the consumption will be realised); see [Read and van Leeuwen](https://www.sciencedirect.com/science/article/pii/S0749597898928035).
 
 
@@ -1152,16 +1166,16 @@ On the other hand there is a great deal of more 'serious' evidence of choices th
 
 ## Utility functions {#util}
 
-Recall, a ['value function'](#valfunc) simply assigns a real number to each alternative. A *Utility function' is simply a value function which 'represents preferences'. 
+Recall, a ['value function'](#valfunc) simply assigns a real number to each alternative. A *Utility function* is simply a value function which 'represents preferences'. 
 
 ```{block2,  type='def'}
 
 **Utility function** (O-R definition)
 
-For any set $X and preference relation $\succsim$ on $X$, the function $u : X \rightarrow \mathbb{R}$ represents $\succsim$  if
+For any set $X$ and preference relation $\succsim$ on $X$, the function $u : X \rightarrow \mathbb{R}$ represents $\succsim$  if
 
-$$x \succsim y \text{if and only if} u(x) \geq u(y)$$
-We say that $u$ is a *utility function for $\succsim$.
+$$x \succsim y \text{ if and only if } u(x) \geq u(y)$$
+We say that $u$ is 'a utility function for $\succsim$.
 
 ```  
 
@@ -1191,8 +1205,48 @@ Of course many other utility functions also represent these preferences.
 
 ```
  
+ \
+ 
+#### Aside: 'what is utility' and what does it mean?
 
-### When can utility functions 'represent preferences'?
+`r format_with_col("There is some debate about the meaning and interpretation of utility, particularly in the Behavioural Economics literature ","RawSienna")` 
+
+Although the NS text describes it as "The pleasure or satisfaction that people get from their economic activity" I think that most economists do *not* see it that way.
+
+Perhaps the modern non-behavioral definition of utility would be 'the thing that drives choices, subject to constraints'.
+
+So if utility is (at best) defined as 'the thing that people maximise', does it have any meaning, or does it simply lead to circular reasoning. What do you think? (My thoughts in the fold).
+
+```{block2,  type='fold'}
+My opinion is that there is some 'bite'. 
+
+A defining feature of the standard Economics approach is that decisions are made as if all characteristics of outcomes can be compared and evaluated, thus we can reduce everything to a single dimension, 'utility', which is maximised. Other social sciences often reject this.
+```
+
+
+Also note that behavioral economics often separates preferences from choices, as in the O-R text, and some models even separate 'choice-utility' from 'realized utility.'  
+
+\
+
+In general,  we don't imagine that we can somehow measure an individual's actual 'amount' of utility. To the extent that we can measure it at all, it is only inferred indirectly, from the *choices* people make.
+
+
+<div class="marginnote">
+ See  D. Colander 'Edgeworth's Hedonimeter and the Quest to Measure Utility'' Journal of Economic Perspectives, Spring 2007: 215-225 for a discussion of the history of this idea.
+</div>
+
+
+This raises another issue: can we compare whether one person gets 'more' or 'less' utility than another? Can we know whether a policy can "increase one person's utility more than it decreases another person's utility"? These issues are considered in  modeling social welfare and social choices. 
+
+<div class="marginnote">
+ In more detailed discussions, we might speak of 'cardinal utility', 'ordinal utility'. 
+ </div>
+ 
+Empirically, it is hard to imagine how these could be measured: if utility is only indirectly and partially observable through an individual's choices... when do we observe choices that trade off between one person and another in ways that reflect the 'sum of their utilities'? (Never, I guess.)
+ 
+ 
+
+### When can utility functions 'represent preferences'? 
 
 ```{block2,  type='note'}
 
@@ -1234,6 +1288,7 @@ The following proposition, and other propositions extending this, are  fundament
 ```{block2,  type='def'}
 
 Proposition (O-R 1.1): Every preference relation on a finite set can be represented by a utility function. 
+
 ```  
 
 Note that this requires *a finite set*; this must involve a countable number of elements to choose among. It is not guaranteed (at least not without further conditions) for a preference relation on an infinite set. For example, the set of elements 'any real number between 0 and 10' is an infinite set. 
@@ -1249,16 +1304,28 @@ Following O-R example 1.2:
 - Suppose an individual prefers to sit as far back as possible (in the highest numbered 'row'). This is her first priority.
 - Within any 'row' she prefers to sit as far to the left as possible (in the highest numbered 'column')
 
+\
+
+`r format_with_col("Please view figure 1.3 from O-R (page 12).","green")`
+
+<div class="marginnote">
+Osborne and Rubinstein have requested that we not reprint any figures directly from their book.
+</div>
+ 
+
+<!--
 <center>
 
 
-```{r  fig.cap = 'Cinema seats (from O-R)', out.width='100%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = 'Cinema seats (from O-R)', out.width='50%', fig.asp=.27, fig.align='center',  echo = FALSE}
 
  knitr::include_graphics("picsfigs/or_cinema.png")
 
 
 ```
 </center>
+-->
+
 
 
 ```{block2,  type='inputq'}
@@ -1281,7 +1348,31 @@ where $r(x)$ is the row number and $c(x)$ the column number.
   
 ```
 
-#### On infinite sets: *some* (but not all) preferences can be represented by a utility function {-}
+#### Allowing for infinite sets: *some* (but not all) preferences can be represented by a utility function {-}
+
+```{block2,  type='technote'}
+There are 'important' economic theorems specifying 'sufficient conditions for preferences to be represented by a utility fncn' ; we will not cover it, but unfold below for some more discussion, if you are interested.
+
+```  
+
+
+```{block2,  type='fold'}
+
+'Continuous preferences' as well as completeness and transitivity  $\rightarrow$ a utility representation; these are jointly sufficient conditions. Continuous preferences will also ensure continuous utility functions and allow us to discuss concepts such as 'marginal utility' and ensure and gradually sloping demand curves.
+
+Note that everywhere-differentiable utility functions are continuous.
+
+Howevee, the 'lexicographic' preferences are not continuous. 
+
+\
+
+What is continuity?  One definition:
+
+Continuity: If $A \succ B$ and $C$ 'lies within an $\epsilon$ radius of $B$ then $A \succ C$.
+
+Notice this does *not* hold for lex preferences. 
+
+```
 
 For example, consider the infinite set $\mathbb{R}^+$, the set of all non-negative real numbers. This is a reasonable choice set to consider, perhaps, in some contexts. E.g., 'I may be able to consume any zero or positive amount of food' ( note we have not yet brought in *constraints*, we are just considering *preferences*). 
 
@@ -1298,7 +1389,9 @@ This is easily represented bu the utility function $u(x)=x$.
 
 In contrast, consider lex preferences on an *infinite* set, the 'unit square", where the first priority is the first coordinate and the second priority is the second coordinate. This is like the 'movie theatre' example, except instead of specific seats, one can locate at any exact point in the square.
 
-<center> 
+`r format_with_col("See O-R page 13, figure 1.4, for a depiction of  lex. preferences withinin a square.", "green")`
+
+<!-- <center> 
 ```{r  fig.cap = 'O-R: Lex. preferences withinin a square', out.width='100%', fig.asp=.4, fig.align='center',  echo = FALSE}
 
  knitr::include_graphics("picsfigs/lex_square.png")
@@ -1307,6 +1400,7 @@ In contrast, consider lex preferences on an *infinite* set, the 'unit square", w
 ```
 </center>
 
+-->
 
 > so that, for example, $(0.3,0.1) \succsim  (0.2,0.9) \succsim  (0.2,0.8))$ 
 
@@ -1314,7 +1408,7 @@ O-R show and then 'prove' (alluding to a more general proof), that:
 
 <div class="marginnote">
 Notation: 
-The '{}' enclose the definition of the set.
+The '\{\}' enclose the definition of the set.
 "$(x_1,x_2)$" means we are talking about sets of pairs of elements.
 The colon (":") is read as 'such that'.
 "$x_1,x_2 \in [0,1]$" means that each of these elements must be greater than or equal to 0, and less than or equal to 1. The brackets ("[]") specify a 'closed set' including these boundaries. 
@@ -1331,7 +1425,7 @@ The colon (":") is read as 'such that'.
  You may find it more worthwhile to 'try and fail' to give a utility function depicting such preferences. Of course, no matter how many times you fail, you have not proved that it is 'impossible'. But it may help you gain intuition. 
 </div>
 
-You can skip the following proof. 
+You can skip the  proof that follows this. 
 
 ### An increasing function of a ('regular'\*) utility function represents the same preferences
 
@@ -1346,14 +1440,6 @@ This is pretty important because it gives us a sense of how closely we might be 
 > if the function $u(x,y)$ represents a given preference relation then so does the function $3u(x,y) −7$ [for example]
 
 This means that even if we knew a persons' preferences, we wouldn't know whether the utility function was "actually" $U(Apples, Bananas) = A + B^2$  or $U(Apples, Bananas) = 4(A + B^2)^3 + 37$ etc. These utility functions express the same preferences. 
-
-<div class="marginnote">
-Utility functions are often interpreted to be simply 'the thing that drives choices, subject to constraints', as we will see later. That's the standard approach at least. We don't imagine that we can somehow measure an individuals actual 'amount' of utility, or to compare whether one person gets 'more' or 'less' utility than another. 
-
-See  D. Colander 'Edgeworth's Hedonimeter and the Quest to Measure Utility'' Journal of Economic Perspectives, Spring 2007: 215-225 for a discussion of the history of this idea.
-
-</div>
- 
 
 
 In general:
@@ -1391,27 +1477,421 @@ An *increasing function* is simply a function that increases in it's arguments. 
 </div>
  
 
-# Preferences and utility: Suggested exercises  ('problem set'): {-#prefs-ex}
+```{block2,  type='tip'}
 
+At this point, you may want to work through the exercises on [preferences and utility](#ex-pref-util). (But not the exercises on choice just yet.)
+
+```  
+
+## Choice {#choice}
+
+
+```{block2,  type='note'}
+
+Note that this follows much of O-R chapter 2. You must read that chapter *along with* these notes. All quotes are from O-R unless otherwise noted.
+
+```
+
+### Choice and rational choice 
+
+> Recall ... a preference relation refers only to the individual's mental attitude, not to the choices she may make. In this chapter, we describe a concept of choice, independently of preferences. (O-R, p. 17)
+
+<div class="marginnote">
+
+The separation of Preferences and Choice in their text, into separate concepts and chapters, is a bit unusual. I suspect that this reflects how these are often separated in Behavioral Economics; unlike in classical economics choices might *not* simply optimise with respect to an individual's preferences (and 'experienced' utility). 
+
+</div>
+
+#### Choice problems, choice functions {-}
+ 
+```{block2,  type='def'}
+
+> Given a set $X$, a choice problem for $X$ is a nonempty subset of $X$ and a choice function for $X$ associates with every choice problem $A \in X$ a single member of $A$ (the member chosen).
+
+(O-R, def 2.1)
+
+```  
+
+This is 'dense'. In more plain English, a 'choice problem' is a subset of alternatives (perhaps those alternatives which are 'feasible' for the individual to choose among).
+
+A 'choice function' specifies 'for any given (sub)set of alternatives, which one will be chosen'?
+
+\
+
+#### Rationality defined {-}
+
+O-R loosely define a rational individual as an individual who:
+
+- has a [preference relation (as defined above)](#pref-def) over (any) set $X$,
+- is aware of the set of possible alternatives (whenever she needs to choose), and
+- always "chooses an alternative that is best according to her preference relation over the set of possible alternatives".
+
+<div class="marginnote">
+ But this allows *any* set of preferences; even 'preference for apparent pain'. This is perhaps a 'weak' definition of rationality.
+</div>
+
+\
+
+**Let's call this rational individual 'Ratchell'**.
+
+
+#### Utility-maximizing choice {-}
+
+If... 
+
+1. Ratchell's preferences can be *[represented](#util) by* the utility function* $u$ and 
+
+2. he is rational in the sense defined above (he chooses the 'best feasible option' according to his preferences) ...
+
+...then his 'choice function' will solve the 'problem' 
+
+$$ max\{u(x): x \in A\}$$.
+
+We read this as "he chooses x to maximize the utility function $u(x)$ under the constraint that $x$ is in the 'feasible' set $A$."" 
+
+<div class="marginnote">
+$A$ This may be the set of all alternatives Ratchell can afford to buy given his wealth, or the set of combination of goods and liesure time he can consume given his productivity and the prices he faces in the market, etc. 
+</div>
+Utility
+:     "The pleasure or satisfaction that people get from their economic activity."
+:     Alt: The thing that people maximise when making economic decisions
+
+
+`r format_with_col("There is some debate about the meaning and interpretation of utility, particularly in the Behavioural Economics literature ","RawSienna")`
+
+`r format_with_col("A defining feature of the standard Economics approach is that decisions are made as if all characteristics of outcomes can be compared and evaluated, thus we can reduce everything to a single dimension, 'utility', which is maximised.","RawSienna")`
+
+\
+
+#### Utility from two goods (simpler digression) {-}
+
+Stepping away from O-R now, we may specify a "utility function" of two goods (or aggregations of goods) $X$ and $Y$. 
+
+```{block2,  type='tip'}
+This may be familiar from your undergraduate work. If so, you can skip this sub-section and go directly to ['rationalising choice'](#rat-choice)
+
+``` 
+
+$$Utility = U(X,Y; other)$$
+
+We can get a lot of insight from considering models of an individual's preferences over only two goods. These two 'goods' could represent, for example:
+
+- Leisure and 'goods consumption'
+
+- Food and non-food
+
+- Coffee and tea (holding all else constant)
+
+
+\
+
+```{block2,  type='note'}
+Empirical aside:  can we 'aggregate goods' in this way?  (Unfold below)
+```
+
+```{block2,  type='fold'}
+E.g., considering a 3-good case... do the preferences of bananas vs apples depend on the *composition* of the (e.g.) housing services bundle, or only on some aggregated measure of 'housing sevices'. In estimating demand systems and considering price elasticities we may want/need to make such assumptions. (See, e.g., 'nested logit' models.)
+```
+
+
+<br> \bigskip
+
+Recall $U(X,Y)$ expresses a *function* with two *arguments*, X and Y.
+
+$U(X,Y)$ must take *some* value for every positive value of X and Y.
+
+In  *general* a function of X and Y might increase or decrease in either X or Y, or increase over some ranges and decrease over other ranges of these two arguments.
+
+<br> \bigskip
+
+For example, consider the function 'altitude of land in Britain as a function of degrees longitude and latitude'.
+
+$U(X,Y)$ expresses a *general* function; I haven't specified *what* this function is.
+
+E.g., it could be $U(X,Y)=\sqrt(XY)$.
+
+Individuals' utility functions may differ, of course.
+
+<!--
+todo: add detail here
+-->
+
+\
+
+
+
+### Rationalizing choice {#rat-choice}
+ 
+We are not saying people *actually* consult a utility function or maximize a preference relation. That would be a dumb thing to say. We are considering that 'people behave as if they are maximizing utility functions'; this is (basically) equivalent to saying "people choose based on preferences that satisfy the above assumptions."
+
+\
+
+So, what do we really mean? We might consider whether people's choices are 'rationalizable'... whether their choices *might* be explainable by choosing according to a (transitive) preference relation (or maximizing a utility function.)
+
+\
+
+OR's definition:
+
+<div class="marginnote">
+Note: this definition of rationalizability is distinct from the one I will present when considering game theory. I will give that one a different name.
+</div>
+
+
+> A choice function is *rationalizable* if there is a preference relation such that for every choice problem the alternative specified by the choice function is the best alternative according to the preference relation.
+ 
+
+Remember: a *choice function* assigns a choice to every set of alternatives.  For example, suppose the following three alternatives are potentially under consideration... $X = \{a,b,c\}$:
+
+a: an apple and a carrot
+b: an apple (and no carrot)
+c: three apples, four carrots, and a spiderman costume
+
+There are four possible 'non-trivial' choice sets among these alternatives (unfold):
+
+```{block2,  type='fold'}
+
+1. $\{a,b\}$: Choose between 'an apple and a carrot' and 'only an apple'
+2. $\{a,c\}$: Choose between '1 apple and 1 carrot' and '3 apples, 4 carrots, and 1 spiderman costume' 
+3. $\{b,c\}$: ...
+4. $\{a,b,c\}$: Choose between  '1 apple and 1 carrot', '1 apple and no carrot', and '3 apples, 4 carrots, and 1 spiderman costume'
+```
+
+A choice function must assign an individual's choice to any of the above choice sets. For example it might assign 
+
+- $\{a,b\} \rightarrow a$
+- $\{a,c\} \rightarrow c$
+- $\{b,c\} \rightarrow b$
+- $\{a,b,c\} \rightarrow a$
+
+Could this be 'rationalised' by any preferences? (Unfold)
+
+```{block2,  type='fold'}
+No it can not! See O-R example 3.1 for a further discussion.
+
+```
+
+In fact, in observed data, people seem to often make choices with intransitivities. 
+
+There are other 'choice rules' that we might imagine people use that also cannot be rationalised by any preferences. For example (O-R 2.3), ... suppose... 
+
+>  From any set A of available alternatives, the individual chooses a median alternative.
+
+This example relates to a proposed 'middle-choice' norm in behavioral economics. (Unfold...)
+
+```{block2,  type='fold'}
+It is at least folk wisdom that customers tend to choose 'middle choices' (e.g., a 'medium Coke') among a set of alternatives. Note that this means that even unchosen 'irrelevant alternatives' may affect their behavior. 
+
+E.g., if offered
+"Set S": {10ml, 50ml, 100ml} this person chooses 50ml. 
+
+But if offered
+"Set L"  {50ml, 100ml, 200ml}, this person chooses 100ml.
+
+But the 50ml and 100ml were available in both sets S and L. IN this hypothetical example, the 'irrelevant alternative' changed their choice!
+  
+```
+
+As O-R show (Example 2.2., p 19), this choice function *cannot* be rationalised (unless we re-define the choices in terms of their position, see O-R discussion.)
+
+\
+
+Is *this* rationalizable? :
+
+> The waiter informs him ... he may have either broiled salmon at 2.50 USD or steak at 4.00 USD. ... he elects the salmon. Soon after the waiter returns from the kitchen ... to  tell him that fried snails and frog’s legs are [also available] for 4.50 USD  each. ... his response is “Splendid, I’ll change my order to steak”.
+
+This comes from [@luceTheoryIndividualChoice1957], as cited by O-R.
+
+
+O-R (Ex 2.3) explain why this seemingly perverse behavior *could* be rationalizable, because of the *information conveyed*.
+
+\
+
+<div class="marginnote">
+ 
+O-R's example '2.4 Partygoer' is also interesting; I think the point here is that in a social setting these alternatives cannot be depicted simply as discrete options. The 'offers made and accepted' is part of the value of each alternative.
+
+This translation from straightforward payoffs to payoffs that depend on the nature of the strategic interaction is explored in my paper 'Losing Face' [@gallLosingFace2020] (as well as in much previous work; I'm just self-promoting here).
+
+</div>
+<!-- TODO: empirical evidence here -->
+
+#### Property $\alpha$  
+
+The above 'violations' and the discussion of 'irrelevant alternatives' relate to what O-R refer to as:
+
+```{block2,  type='def'}
+
+**Property $\alpha%: 
+  
+> Given a set X, a choice function $c$ for $X$ satisfies property $\alpha$ if ...
+
+> for any sets $A$ and $B$ with $B  \subset A \subseteq X$ and $c(A) \in B$ we have $c(B) = c(A)$.
+
+```  
+
+\
+
+*Explaining the above notation:*
+
+"a choice function $c$ for $X$": a function $c$ that takes any of the choice sets made from the elements of $X$ as an argument, and outputs the choice made.
+
+\
+
+
+"for any sets $A$ and $B$ with $B  \subset A \subseteq X$": For any choice sets where $B$ is a 'proper subset of $A$'... 
+    - "proper subset"... meaning that set $A$ has all the elements that  set $B$ has, and $A$ also has at least one more element.
+
+<div class="marginnote">
+For example,  B: {fish, giraffe}, is a *proper subset of* A: {fish, giraffe, turnip}.
+</div>
+
+"$A \subseteq X$":  $A$ is subset of $X$... it contains none, some or all of the elements in $X$ (but $A$ doesn't contain any elements that are *not* in $X$)
+
+"... and $c(A) \in B$:" Where the choice made when presented with set $A$ is also part of choice set $B$.
+\
+
+"... we have $c(B) = c(A)$":  the same element must then be chosen when presented with sets $A$ or $B$.
+
+\
+
+*In other words*: Property-$\alpha$ requires that if you make a particular choice (say 'fish') from a larger menu ($A$) you must also choose 'fish' when you are given a reduced version of that menu. 
+
+Going in the other direction... Suppose  I choose 'fish' from a small menu ($B$). Next I am presented a menu  $A$ that includes all of menu $B$ plus (e.g.) some 'dairy choices'. Property $\alpha$ says that if I don't choose any of the new 'dairy choices' on this larger menu, I must continue to choose the fish. The 'irrelevant alternatives' can not affect my choice.
+
+\
+
+```{block2,  type='def'}
+O-R  Proposition 2.1: 
+  
+> Every rationalizable choice function satisfies property $\alpha$.
+
+```  
+
+If (A) a choice function is rationalizable then (B) it must satisfy property $\alpha$. $(A) \rightarrow (B)$. 
+
+<!-- 
+By the standard rules of logic (which are based on set theory, by the way) $(A) \rightarrow (B) \leftrightarrow \: \text{'not' } (A) \rightarrow \text{'not' } (B)$.
+
+What this means: if a choice function *does not* satisfy property $\alpha$ (if irrelevant alternatives *do* impact choices), then it *is not* rationalizable. 
+
+<div class="marginnote">
+This does *not* imply that satisfying property-$\alpha$ implies, by itself, that a choice function *is* rationalizable.  Property-$\alpha$ is a 'necessary but not sufficient condition' for rationalizability.
+
+</div>
+ 
+-->
+\
+
+### Satisficing
+
+People may say they choose by "choosing the first option that meets a level that is 'good enough', and then I quit". O-R formalise this in their section 2.4. This choice procedure *is* rationalizable (You can skim this, you don't need to do the proof.) 
+
+<div class="marginnote">
+This should not be confused with 'search models' and the ['optimal stopping problem'](https://en.wikipedia.org/wiki/Optimal_stopping). We are not considering search costs here.
+</div>
+ 
+### The 'Money pump' argument 
+
+One argument for why choices must reflect transitive preferences is that "behavior that is inconsistent with rationality could produce
+choices that harm the individual" (O-R, p. 23). Perhaps we should imagine that biological evolution would have 'weeded out' such individuals, or that their parents would teach them to do otherwise. 
+
+
+\
+
+Consider:
+
+\
+
+```{block2,  type='inputq'}
+
+If you found someone who strictly preferred a apple to a bananas, a banana to a cherry, and a cherry to an apple,  you could make a lot of money out of them. How would you illustrate this?
+
+
+```  
+
+<div class="marginnote">
+This is easiest to illustrate if we allow these goods to be non-discrete and assume 'more is always better'... this is a bit of a fudge, but it's OK.
+</div>
+ 
+Unfold for a simple depiction
+```{block2,  type='fold'}
+It works as follows:
+
+
+0. Obtain (or borrow) an apple, a banana and a cherry.
+
+1. Offer to give this person an apple in exchange for their banana plus a tiny little extra small unit of  banana (or 'money').
+
+2. Next offer them a cherry for their apple plus a bit extra.
+
+3. Next offer a banana for their cherry plus a bit extra.
+
+... Keep repeating steps 1-3, until you've drained all of their resources.
+
+
+```
+
+O-R present this slightly more formally (you can skip the formality if you like).
+
+
+
+
+```{block2,  type='supplement'}
+
+**An interesting video discussing this**
+
+[Becoming a money pump, Nick Chater, Warwick business school](https://view.vzaar.com/1387870/video)
+
+An interesting discussion of 'money pumps' (and 'Dutch books') in terms of preferences and financial markets. I've seen this chocolate beverage argument presented for why people should not have 'wide zones of indifference'.
+
+```
+
+
+### Framing and 'decoy options'  
+
+O-R next present a case where a third 'decoy' option has a substantial affect on people's choices, even though people rarely choose it!
+
+The standard story: "A" is better than "B" in one dimension, but worse in another dimension; people are evenly split between A and B. 
+
+However, if a third alternative "C" is added to the choice set, and C is 'worse in all ways than B' (but still better than A in some ways). Now people tend to choose B.
+
+This 'decoy effect' (aka, "asymmetrically dominated choice", aka "the attraction effect" ) is widely discussed in behavioral economics and marketing. 
+
+Dan Ariely gives a presentation on this below; see also [this article](https://theconversation.com/the-decoy-effect-how-you-are-influenced-to-choose-without-really-knowing-it-111259#:~:text=The%20decoy%20effect%20is%20defined,or%20%E2%80%9Casymmetric%20dominance%20effect%E2%80%9D) in 'The Conversation'. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xOhb4LwAaJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+
+\
+
+O-R next discuss 'framing effects' in the context of roulette wheel choices; people make distinct choices in choice problems that are *identical, other than the way that they are described.*
+
+<div class="marginnote">
+The 'decoy effect' is (arguably) not a framing effect, because the choice set is actually changing. 
+
+We will come back to framing effects when we consider decisions about uncertainty, and the idea of 'loss aversion'.
+
+</div>
+ 
+Clearly these cannot reflect rationalizable preferences unless we make the *description* part of the preference itself. 
+
+
+\
+
+# Exercises: Preferences, utility and choice ('problem set'): {-#prefs-ex}
+
+
+## Exercises: Preferences and utility {-#ex-pref-util}
 
 We will also have a discussion and writing exercise (time permitting) on the realism of particular assumptions and on 'observing preferences and observing violations of transitivity'
 
-## (Highly optional): Properties of binary relations -   O-R problem 1a.  {-#or_p1}
+### (Highly optional): Properties of binary relations -   O-R problem 1a.  {-#or_p1}
 
-<div class="marginnote">
-I assign this problem to give you a sense of
+The problem begins... 
 
-- 'How the $\succ$ operator is defined based on the $\succsim$ operator' (as previously asserted)
 
-- What proofs look like using these operators.
+> Assume that $\succsim$ is a preference relation. ... 
 
-Consider this optional... but at least worth having a quick look at to *understand* the proof. 
-</div>
- 
-
-Assume that $\succsim$ is a preference relation.
-
--  a. ... the binary relation $\succ$ defined by:
 
 ```{block2,  type='def'}
 **Defining 'strictly preferred to' "$\succ$":**
@@ -1421,10 +1901,32 @@ $x \succ y$
   if $x \succsim y$ and not $y \succsim x$.
 
 ```  
+...
 
-[... show that] $\succ$ is transitive [skip: 'and antisymmetric'].
 
-Think, try it if you like, and then unfold: 
+Please read O-R (p. 13) for the full problem description. 
+
+<div class="marginnote">
+Osborne and Rubinstein have requested that we not post their problem sets (neither questions nor answers) directly on the web. I will engage with students on these directly.
+</div>
+
+\
+
+Think about this and give it a try. You can skip the 'antisymmetric' part.  I will share a suggested answer.
+
+
+<div class="marginnote">
+I assign this problem to give you a sense of:
+
+- 'How the $\succ$ operator is defined based on the $\succsim$ operator' (as previously asserted)
+
+- What proofs look like using these operators.
+
+Consider this optional... but at least worth having a quick look at to *understand* the proof. 
+</div>
+
+
+<!-- 
 
 ```{block2,  type='fold'}
 
@@ -1469,8 +1971,11 @@ thus showing the transitivity of $\succ$.
 
 You can skip 1b, if you like.
 
+-->
 
-## Shepard Scale and Penrose stairs (O-R problem 6) {-}
+
+
+### Shepard Scale and Penrose stairs (O-R problem 6) {-}
 
 
 
@@ -1481,14 +1986,24 @@ You can skip 1b, if you like.
 ```
 
 
-> Shepard scale and Escher. Listen to the Shepard scale and look at a picture of Penrose stairs. 
+... See O-R chapter 1 problem 6, page 14.
 
-(The video [HERE](http://techchannel.att.com/play-video.cfm/2011/10/10/AT&T-Archives-A-Pair-of-Paradoxes) combines them.
+
+(The video [HERE](http://techchannel.att.com/play-video.cfm/2011/10/10/AT&T-Archives-A-Pair-of-Paradoxes) combines these examples.)
+
+<!--
+
+> Shepard scale and Escher. Listen to the Shepard scale and look at a picture of Penrose stairs. 
 
 > The lithograph Ascending and descending by M. C. Escher is a rendering of Penrose stairs.) Explain the connection between these two examples and the concept of transitivity.
 
-(think about it, write a short answer, and then unfold)
+-->
 
+
+Think about the question they ask, and write a short answer. We will discuss this.
+
+
+<!-- 
 ```{block2,  type='fold'}
 
 > The Shepard scale consists of a sequence $x_1, x_2, ...$ of sounds. For every value of $t$ , the sound $x_t$ appears to be higher than $x_{t−1}. 
@@ -1505,12 +2020,16 @@ Consider the binary relation $H$ loosely defined as "$A H B$ if and only if $A$ 
 > For an explanation of the Shepard scale, see [HERE](https://www.youtube.com/watch?v=LVWTQcZbLgY).
 
 ```
+-->
 
 
-## Representations with additive utility [O-R 9b]
+### Representations with additive utility [O-R 9b] {-#ex-add-util}
 
 
-> An individual has preferences over the set of units in an apartment building. He prefers a unit with 5 rooms on floor 12 to one with 4 rooms on floor 20, one with 4 rooms on floor 5 to one with 2 rooms on floor 12, and one with 2 rooms on floor 20 to one with 5 rooms on floor
+> An individual has preferences over the set of units 
+
+<!-- in an apartment building. He prefers a unit with 5 rooms on floor 12 to one with 4 rooms on floor 20, one with 4 rooms on floor 5 to one with 2 rooms on floor 12, and one with 2 rooms on floor 20 to one with 5 rooms on floor
+-->
 
 (Skip part A: "Show that the individual’s preference are consistent with a preference relation.")
 
@@ -1523,12 +2042,18 @@ It turns out that it *cannot* be represented by a utility function that is addit
 \
 
 
+<!-- 
 > B. Show that the individual’s preference relation cannot be represented by a function $u$ with $u(x) = f(r(x))+g(\ell(x))$
 
-for functions $f$ and $g$, where $r(x)$ is the number of rooms and $\ell(x)$ is the floor for any unit $x$. (The $r$ and $\ell$ functions simply identify the number of rooms and the floor of a unit, they are not 'really' functions.)
+for functions $f$ and $g$, where $r(x)$ is the number of rooms and $\ell(x)$ is the floor for any unit $x$.
 
-Think about it, try it, and then unfold.
+--> 
 
+(Note that the given the $r$ and $\ell$ functions simply identify the number of rooms and the floor of a unit, they are not 'really' functions.)
+
+Think about it, try it; we will discuss the answer in some detail.
+
+<!--
 ```{block2,  type='fold'}
 
 > If there is a utility representation of this form, then it satisfies [all of the following]
@@ -1565,4 +2090,12 @@ By the way, one reason I showed you this is because this 'add up the inequalitie
 I also think it is good to think about 'what sort of (utility) function can represent a particular relationship'. That should come up again in your work, study, and research. 
 
 ```
+
+-->
+
+
+## Exercises: Choice {-#ex-choice}
+
+To be determined. The exercises in O-R are possibly too mathematical. For now, please be sure you can do all the 'comprehension questions' throughout the above section.
+
 
