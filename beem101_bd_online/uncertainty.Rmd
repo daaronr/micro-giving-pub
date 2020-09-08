@@ -1,11 +1,433 @@
-
 # Preferences under uncertainty (and over time) {#uncertainty}
+
 
 'Expected Utility';  risk-aversion, finance and diversification; time-preference and discounting
 
 
 ```{block2,  type='note'}
 **I will add a great deal of content here.**
+  
+This material is largely drawn from O-R Chapter 3, but I also consult a number of other sources as well as  my own notes. You are advised to read most of this O-R chapter along with this web-book. But please see my [notes below](#unc-readings) on what you can skip.
 ```
+
+<div class="marginnote">
+ 
+Here we follow the order of O-R in covering preferences under uncertainty *before* consumer behavior and demand. Either ordering is possible, but the idea is to fully cover the 'primitives' of the model before considering it's implications.
+
+</div>
+
+## Introduction
+
+
+Previous discussion:  Choices with *known* consequences
+
+
+`r format_with_col("But in the real world many important economic decisions involve uncertainty.","gray")`
+
+<br> <br> \bigskip
+
+Here: Choices with *unknown* consequences (but known *probabilities* of each outcome)
+
+<div class="marginnote">
+Adv: In the real world, people may also make choices in contexts with unknown probabilities; this is called 'ambiguity' or 'Knightian uncertainty'. This is out of the scope of this module. (But this is the sort of extension that may motivate a good project).
+</div>
+ 
+How can we consider this in a choice (or utility-maximisation) framework?
+
+The standard framework for this involves maximising 'expected utility'.
+
+
+```{block2,  type='warning'}
+Making choices to maximise expected utility is *not* the same as making choices to maximise expected monetary outcomes. This is one of the main points here. 
+
+Do not get this mixed up! You must understand this distinction to consider yourself an 'intermediate microeconomist' or better.
+  
+``` 
+
+
+### Main Readings {-#unc-readings}
+
+*Web book*, and also...
+
+- O-R Chapter 3: "Preferences under Uncertainty"
+
+
+*Feel free to skip the following* (unfold)
+
+```{block2,  type='fold'}
+
+Feel free to SKIP:
+
+... the proof of propositions 3.2 ('Continuity and independence implies EU'). It's interesting but we can't cover everything.
+
+If you don't understand the proof of prop. 3.3. (the equivalence of risk aversion and the concavity of the Bernoulli function) that's also OK.
+
+```
+
+- McDL: 13.3 on 'dynamic choice'
+
+\
+
+**Other resources/references** (unfold)
+
+
+```{block2,  type='fold'}
+
+- QMC: Ch 5, optimization and risk; selections (good discussion of diversification but doesn't use utility functions)
+
+- DA: [Lecture Note 16: Uncertainty, Risk Preference, and Expected Utility Theory](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/MIT14_03F16_lec16.pdf)
+
+- NS: Ch 4 (not including 4a)
+
+- McDL: Ch 13, section 4 'Risk Aversion'
+
+
+\
+
+Supplementary recommended readings:
+
+- Holt, C., and S. Laury (2002), Risk Aversion and Incentive Effects, American Economic Review, v. 92 (5): 1644-1655.
+
+- For a popular audience: Reinstein (2016) 'Should you hedge your bets on a Brexit?' [LINK](https://davidreinstein.wordpress.com/2016/06/19/should-you-hedge-your-bets-on-a-brexit/)
+
+```
+
+\
+
+## Probability concepts and notation (including sums and integrals): a quick review
+
+```{block2,  type='note'}
+You must understand the logic and notation of probability to understand this (and much more material in your degree). If you already know this stuff, feel free to skip/skim.
+
+```  
+
+Probability (informal definition)
+:     The relative frequency with which an event occurs, or can be expected to occur.
+
+- Always between 0 and 1
+
+
+<div class="marginnote">
+
+Note, there are some debates, e.g., between 'Bayesians' and 'Frequentists' over the meaning of probability.
+
+</div>
+
+<div class="inputq">
+Q: If $p$ is the probability an event occurs, what is the probability this event does *not* occur?
+</div>
+  
+```{block2,  type='fold'}
+Ans: $1-p$
+
+If you didn't find this obvious, I would suggest seriously revising simple probability, perhaps using the Khan academy materials.
+
+```
+
+\
+
+<div class="marginnote">
+Some of the discussion of these  probability basics comes from Anne Greenbaum Wash U notes)
+</div>
+ 
+### Discrete Random Variables 
+
+```{block2,  type='note'}
+
+The O-R chapter on uncertainty considers only discrete 'lotteries' ... those with a finite number of prizes. However, outcomes described by continuous random variables will likely come up in other material, and these are extremely important for Finance, as well as for Econometrics and many other fields.
+
+```  
+
+A discrete random variable $X$ takes on values $x_i$ with probability $p_i$,
+$i=1, \ldots, m$, where $\sum_{i=1}^{m} p_i = 1$.
+
+
+<div class="marginnote">
+For example, the outcome of a lottery ticket that pays a prize of £100 with probability $\frac{1}{2}$, a prize of £10 with probability $\frac{1}{10}$, and nothing (£0) with the remaining $\frac{4}{10}$ ... can be naturally expressed as a discrete random variable. 
+</div>
+ 
+
+<br> <br> \bigskip
+
+The *expected value* (EV) of a discrete random variable $X$ is defined as
+
+$$E(X) \equiv \langle X \rangle = \sum_{i=1}^m p_i x_i$$
+
+...also called the *mean* of the random variable $X$, denoted as $\mu$.
+
+\
+
+`r format_with_col("Also see the 'variance' and other 'moments'.","gray")`
+
+<br> <br> \bigskip
+
+
+### Continuous Random Variables
+
+A 'continuous random variable' takes on any of an infinite number of values within a range.  
+
+An example: the possible exact duration of rainfall (in hours, seconds, milliseconds....) to fall on Exeter in Summer 2025 is most naturally expressed as a continuous random variable. 
+
+If it has no 'mass points' then we can only express the probability of it falling *within* an interval. 
+
+<div class="marginnote">
+If you are not familiar with this concept, you should try to understand it, at least for your studies in general; consult Khan academy and other tutorials. This is a very important concept but takes some time to fully comprehend. 
+</div>
+ 
+\
+
+*Cumulative distribution function*:
+
+$$ F(x) \equiv \mbox{Prob}(X < x ),$$
+
+This is essentially a function that specifies "the probability of random variable $X$ falling (at or) below some level x." 
+
+E.g., $F_r(103.4) =  \mbox{Prob}(X < 103.4 )$...
+
+"the probability of 103.4 hours or fewer of rainfall ($X$) in Exeter for Summer 2025".
+
+
+\
+
+
+The *probability density function* (pdf).
+
+$$ f (x)\,dx \equiv \mbox{Prob}( X \in [ x, x+\,dx ] ) = F(x+\,dx ) - F(x) .$$
+
+\
+
+This function is not really interpretable on its own. You might be tempted to read it as 'the probability of exactly a certain value, such as 'exactly 103.4 hours of rainfall', but this would be incorrect (unless we have mass points).  It is best thought of as the 'rate of change' of the CDF, as the limit of the difference in the CDF function for each small interval. 
+
+Letting $dx \rightarrow 0$:  
+
+$$ f (x) = F' (x) ,~~~F(x) = \int_{- \infty}^{x} f (t)\,dt .$$
+
+\
+
+<div class="marginnote">
+Todo: look up and include some graphics showing the pdf and cdf. 
+
+</div>
+ 
+
+
+The expected value  (EV) of a continuous random variable $X$ is then defined by
+$$ E(X) = \int_{- \infty}^{\infty} x f (x)\,dx .$$
+
+
+<br> <br> \bigskip
+
+Note that by definition, $\int_{- \infty}^{\infty} f (x)\,dx = 1$.
+
+
+\
+
+Expected value
+:     The 'average outcome' of an uncertain variable (general definition)
+
+<br> <br> \bigskip
+
+:     The average monetary (or goods) payoff from an uncertain gamble
+
+<br> <br> \bigskip
+
+:     The sum of the value at each possible outcome, weighted by the probability that outcome will occur
+
+```{block2,  type='technote'}
+
+When outcomes are in a continuous space, e.g., the returns to a stock can take any of an infinite number of possible values, the expected value becomes a definite integral rather than a sum.
+
+```
+
+This is *NOT* the same as expected utility (coming up); people don't necessary choose the investment with the highest expected value!
+
+## "Lotteries"
+
+O-R, p. 31: 
+
+> An alternative in the set involves randomness regarding the consequence it yields. We refer to these alternatives as lotteries. For example, a raffle ticket that yields a car with probability 0.001 and nothing otherwise is a lottery. A vacation on which you will experience grey weather with probability 0.3 and sunshine with probability 0.7 can be thought of as a lottery as well.
+
+
+\
+
+### Formal definition of Lotteries (from O-R), explanation
+
+
+> Let $Z$ be a set (of prizes).
+
+$Z$ could be a list of amounts, say $\{0,10,100\}$ or a list of bundles of goods, say {(nothing),(apple and carrot), (two carrots)}.
+
+
+> A lottery over $Z$ is a function $p : Z \rightarrow \mathbb{R}$...
+> that assigns a positive number (probability) $p(z)$ to a finite number of members of $Z$ and $0$ to all other members,
+
+Simplifying this, the probability function $p$ 'tells you the probability of each outcome ($z$) among the set of possible outcomes ($Z$)' for this lottery.  (Recall )
+
+> with $\sum_{z \in Z} p(z) = 1$.
+
+(Unfold for further explanation of this)
+```{block2,  type='fold'}
+
+The sum of the probabilities of each possible outcome must be 1... 'one of the possibilities must happen'.  (Note that this also implies that no individual probability can exceed 1, so $0 \leq p(z) 1$ for all 'possibilities' $z$.)
+
+```
+
+> We denote the set of all lotteries over $Z$ by $L(Z)$
+
+(Unfold)
+
+```{block2,  type='fold'}
+
+For the example I give above, this means $L(Z)$ is 'any possible lottery with some  some probability of "apple and carrot", some probability of "two carrots", and (the remaining) probability of "nothing". Each of these probabilities could be anything between 0 and 1.  
+
+```
+
+>  the lottery that yields the prize $z$ with probability 1 by [z]
+
+<div class="marginnote">
+$[z]$ represents a trivial case (sometimes called a 'degenerate' lottery). A 'certainty' is also a lottery, by this definition.
+</div>
+ 
+
+> and the lottery that yields the prize $z_k$ with probability $\alpha_k$ for $k = 1,..., K$
+
+<div class="marginnote">
+I.e., each prize $z_k$ occurs with probability  $\alpha_k$ ... so  $\z_1$ occurs with probability  $\alpha_1$, etc.
+</div>
+
+> by $\alpha_1 \cdot z_1 \oplus \alpha_2\cdot z_2 \oplus ··· \oplus \alpha_K \cdot z_K$
+
+This is a very handy notation but it needs some explanation (unfold).
+
+```{block2,  type='fold'}
+
+We are trying to concisely depict a lottery with K possible outcomes (where K can be any number). Each of these possibile outcomes is indicated by $z_1$, $z_2$, ... etc., all the way up to $z_K$.
+
+Each of these possibities has some probability of occuring. We denote these possibilities by $\alpha_1$ for outcome $z_1$, $\alpha_2$ for outcome $z_2$, etc. 
+
+E.g., for a two-outcome lottery, rather than writing 'a lottery where outcome $z_1$ occurs with probability $\alpha_1$, $z_2$ occurs with probability $\alpha_2$, etc., we can simply write it as $\alpha_1 \cdot z_1 \oplus \alpha_2\cdot z_2$. Here the $\oplus$ means 'and also outcome...' and the $\cdot$ means 'with probability'.
+
+```
+
+\
+
+```{block2,  type='inputq'}
+How would you use this notation to depict "a lottery with a 1/3 probability of an outcome with value 10, and a 2/3 probability of an outcome with value 100"?
+```  
+
+```{block2,  type='fold'}
+
+$10 \cdot \frac{1}{3} \oplus 100\cdot \frac{2}{3}$
+  
+```
+
+\
+
+```{block2,  type='inputq'}
+
+Consider the diagrams in figure 3.1 in O-R. Can you explain what the points depicted mean? Could you depict the lottery $\frac{3}{4} \cdot z_1 \oplus \frac{1}{4}\cdot z_2 \oplus 0\cdot z_3$ in a 3-D diagram similar to figure 3.1b? (by the way, this is called a 'probability simplex').
+
+```  
+
+
+## Preferences over lotteries
+
+We now have the tools consider the question that motivated this: how might an individual choose among a set of uncertain choices, and what can we say about this?
+
+Formally, what are the "preferences over the set of lotteries $L(Z)$” and “what restrictions over these preferences seem reasonable”?
+
+\
+
+O-R consider some 'examples' of preferences (or categories of preferences) over these lotteries that may seem rather extreme;
+
+<div class="marginnote">
+
+We might instead consider these as "simple decision rules" or "heuristics" rather than actual preferences. Behavioral economics considers that people may adopt such simplifying rules instead of maximizing perfectly in the complete set of alternatives, particularly because such maximization is mentally costly.
+
+Of course it is doubtful that anyone completely has these preferences or follows these rules all the time. Still, it is instructive to consider what doing so would mean. It's worth reading these definitions carefully, and then we can consider how these diverge from the "expected utility" framework we will discuss in a moment.
+
+</div>
+ 
+- **Ex. 3.1 "A pessimist"**: Essentially, someone whose preferences among these lotteries simply depends on "which one has the worst possible outcome ($w(p)$) that is least bad". (Where 'worst' is according to some particular ranking... which can have any form.)
+
+- **Ex 3.2 "good and bad"**: This person divides all possible outcomes into "good  outcomes" and "bad outcomes" (in some particular way...there are many possibilities for doing this.)  They simply prefer the lottery which has the highest probability of a "good" outcome (or conversely the lowest probability of a bad outcome). 
+
+- **Ex 3.3 minimizing options**:  This person doesn't actually care about the content of any of the outcomes; they simpler prefer the lottery with the fewest possible outcomes.
+
+
+<div class="marginnote">
+This seems to me to be a sort of 'opposite extreme' to the pessimistic preference.  While the pessimist is extremely sensitive to the very worst thing, the "good and bad" person is insensitive to whether the "good things" are 'really good or just OK'  or whether  the bad things" are really bad or just a bit mediocre.
+</div>
+
+## Properties of preferences (O-R 3.2.1)
+
+Continuity (see diagram I will add)
+
+"Some probablistic mix of a great thing and a terrible thing will be as good as an OK thing"
+
+- Counterexample: Pessimistic preferences (counterexamples help illustrate the 'bite' of a property)
+
+\
+
+Def: Compound lotteries
+
+- Important;  might be considered an 'algebra of finance'... 
+- a distributed format 
+- 'sum product of x across all lotteries $p_1...p_k$'
+
+\
+
+Def: Independence
+
+"If I prefer a particular (certain) A over a particular lottery B, I also prefer to increase the probability of A over B... in a 'compound lottery'"
+
+- Counterexamples: pessimistic preferences, 'minimizing options' 
+- Note that a property over $\succsim$ extends to $\succ$
+
+<div class="marginnote">
+Relevant to 'population ethics' and 'effective altruism' and 'other-regarding preferences', and 'social welfare functions/social preferences'. 
+</div>
+ 
+\
+
+Def: Monotonicity
+
+"A lottery (between two things) gets better as the better thing gets more likely"
+
+- Independence implies monotonicity; a fairly easy and cool proof.
+
+
+## Expected utility 
+
+The 'most commonly assumed' framework in economic theory. 
+\
+
+## Applications (esp. to finance):
+
+- How do we express and measure 'risk aversion'?
+- How does this affect (financial, investment, insurance) choices?  Why does 'diversification improve outcomes for the risk-averse'?
+- How does this affect asset prices (Stocks, bonds, etc.) with 'efficient markets' (this will be briefly defined)
+- Behavioral Economics: the "Allais Paradox" (first treatment, time-permitting)
+
+
+# Exercises - uncertainty, finance, time preferences ('problem set')  {-#prefs-uncert}
+
+Tbd; some possibilities in the fold.
+
+```{block2,  type='fold'}
+
+- Proof-based problem
+
+- Example-based problem (lotteries, insurance, investment)
+
+- Allais Paradox question
+
+- Potentially: data/code based simulation
+
+- Discussion/explanation question
+
+```
+
+
 
 
