@@ -333,6 +333,7 @@ Baumann (QMC): Creative Commons Attribution-NonCommercial 3.0
 - David Autor’s MIT Open Courseware “Microeconomic Theory and Public Policy”; [all the files for this course can be downloaded here)[https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/] this will give you a flavor of the PhD level micro
 
 (License information in the fold)
+
 ```{block2,  type='fold'}
 David Autor. 14.03 Microeconomic Theory and Public Policy. Fall 2016. Massachusetts Institute of Technology: MIT OpenCourseWare, https://ocw.mit.edu. License: Creative Commons BY-NC-SA.
 
@@ -2122,7 +2123,7 @@ What can we reasonably say about 'what people prefer and choose'? How can we sta
 
 ```{block2,  type='note'}
 
-Digging deeply into the logic and justifications for these models of choice, and alternative frameworks, will be very relevant in considering Behavioral Economics (This is a specialty of Ariel Rubinstein, one of the O-R text's two authors, and also a research interest of mine). In fact this text works behavioral economics in from the beginning.
+Digging deeply into the logic and justifications for these models of choice, and alternative frameworks, will be very relevant in considering Behavioral Economics (This is a specialty of Ariel Rubinstein, one of the O-R text's two authors, and also a research interest of mine). In fact, this text works behavioral economics in from the beginning.
 
 This is also relevant for building empirical models such as 'models of consumer choices and preferences' in ways that are relevant to (e.g.) Business-data-analytics consulting.
 
@@ -3115,6 +3116,7 @@ O-R discuss this in chapter 20, 'Aggregating preferences', but we probably won't
 
 \ 
 
+<!-- 
 <center> 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mGzBjTKaX1c?start=88" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -3124,6 +3126,7 @@ Difficult choices: "We have to think about the rest of the family."
 (Warning: the above video may be offensive to some people.)
 
 </center>
+-->
 
 \
 
@@ -4223,12 +4226,12 @@ To be determined. The exercises in O-R are possibly too mathematical. For now, p
 
 ```{block2,  type='note'}
 **I will add a great deal of content here.**
-  
+
 This material is largely drawn from O-R Chapter 3, but I also consult a number of other sources as well as  my own notes. You are advised to read most of this O-R chapter along with this web-book. But please see my [notes below](#unc-readings) on what you can skip.
 ```
 
 <div class="marginnote">
- 
+
 Here we follow the order of O-R in covering preferences under uncertainty *before* consumer behavior and demand. Either ordering is possible, but the idea is to fully cover the 'primitives' of the model before considering it's implications.
 
 </div>
@@ -4248,19 +4251,31 @@ Here: Choices with *unknown* consequences (but known *probabilities* of each out
 <div class="marginnote">
 Adv: In the real world, people may also make choices in contexts with unknown probabilities; this is called 'ambiguity' or 'Knightian uncertainty'. This is out of the scope of this module. (But this is the sort of extension that may motivate a good project).
 </div>
- 
+
 How can we consider this in a choice (or utility-maximisation) framework?
 
 The standard framework for this involves maximising 'expected utility'.
 
 
 ```{block2,  type='warning'}
-Making choices to maximise expected utility is *not* the same as making choices to maximise expected monetary outcomes. This is one of the main points here. 
+Making choices to maximise expected utility is *not* the same as making choices to maximise expected monetary outcomes. This is one of the main points here.
 
 Do not get this mixed up! You must understand this distinction to consider yourself an 'intermediate microeconomist' or better.
-  
-``` 
 
+```
+
+
+```{block2,  type='note'}
+
+**Some summary notes**
+
+Previously descrived utility functions: predict choices under certainty. They made no predictions for choices with uncertain probabilistic outcomes!
+
+People don't "maximise expected monetary value"" tend to be risk-averse
+
+An *Expected Utility* (EU) framework, as defined below, allows for risk-aversion/
+
+```
 
 ### Main Readings {-#unc-readings}
 
@@ -4305,6 +4320,8 @@ Supplementary recommended readings:
 
 - Holt, C., and S. Laury (2002), Risk Aversion and Incentive Effects, American Economic Review, v. 92 (5): 1644-1655.
 
+- To add: other work on measuring risk aversion and the reliability of distinct measures
+
 - For a popular audience: Reinstein (2016) 'Should you hedge your bets on a Brexit?' [LINK](https://davidreinstein.wordpress.com/2016/06/19/should-you-hedge-your-bets-on-a-brexit/)
 
 ```
@@ -4316,7 +4333,7 @@ Supplementary recommended readings:
 ```{block2,  type='note'}
 You must understand the logic and notation of probability to understand this (and much more material in your degree). If you already know this stuff, feel free to skip/skim.
 
-```  
+```
 
 Probability (informal definition)
 :     The relative frequency with which an event occurs, or can be expected to occur.
@@ -4333,7 +4350,7 @@ Note, there are some debates, e.g., between 'Bayesians' and 'Frequentists' over 
 <div class="inputq">
 Q: If $p$ is the probability an event occurs, what is the probability this event does *not* occur?
 </div>
-  
+
 ```{block2,  type='fold'}
 Ans: $1-p$
 
@@ -4346,23 +4363,23 @@ If you didn't find this obvious, I would suggest seriously revising simple proba
 <div class="marginnote">
 Some of the discussion of these  probability basics comes from Anne Greenbaum Wash U notes)
 </div>
- 
-### Discrete Random Variables 
+
+### Discrete Random Variables
 
 ```{block2,  type='note'}
 
 The O-R chapter on uncertainty considers only discrete 'lotteries' ... those with a finite number of prizes. However, outcomes described by continuous random variables will likely come up in other material, and these are extremely important for Finance, as well as for Econometrics and many other fields.
 
-```  
+```
 
 A discrete random variable $X$ takes on values $x_i$ with probability $p_i$,
 $i=1, \ldots, m$, where $\sum_{i=1}^{m} p_i = 1$.
 
 
 <div class="marginnote">
-For example, the outcome of a lottery ticket that pays a prize of £100 with probability $\frac{1}{2}$, a prize of £10 with probability $\frac{1}{10}$, and nothing (£0) with the remaining $\frac{4}{10}$ ... can be naturally expressed as a discrete random variable. 
+For example, the outcome of a lottery ticket that pays a prize of £100 with probability $\frac{1}{2}$, a prize of £10 with probability $\frac{1}{10}$, and nothing (£0) with the remaining $\frac{4}{10}$ ... can be naturally expressed as a discrete random variable.
 </div>
- 
+
 
 <br> <br> \bigskip
 
@@ -4381,23 +4398,23 @@ $$E(X) \equiv \langle X \rangle = \sum_{i=1}^m p_i x_i$$
 
 ### Continuous Random Variables
 
-A 'continuous random variable' takes on any of an infinite number of values within a range.  
+A 'continuous random variable' takes on any of an infinite number of values within a range.
 
-An example: the possible exact duration of rainfall (in hours, seconds, milliseconds....) to fall on Exeter in Summer 2025 is most naturally expressed as a continuous random variable. 
+An example: the possible exact duration of rainfall (in hours, seconds, milliseconds....) to fall on Exeter in Summer 2025 is most naturally expressed as a continuous random variable.
 
-If it has no 'mass points' then we can only express the probability of it falling *within* an interval. 
+If it has no 'mass points' then we can only express the probability of it falling *within* an interval.
 
 <div class="marginnote">
-If you are not familiar with this concept, you should try to understand it, at least for your studies in general; consult Khan academy and other tutorials. This is a very important concept but takes some time to fully comprehend. 
+If you are not familiar with this concept, you should try to understand it, at least for your studies in general; consult Khan academy and other tutorials. This is a very important concept but takes some time to fully comprehend.
 </div>
- 
+
 \
 
 *Cumulative distribution function*:
 
 $$ F(x) \equiv \mbox{Prob}(X < x ),$$
 
-This is essentially a function that specifies "the probability of random variable $X$ falling (at or) below some level x." 
+This is essentially a function that specifies "the probability of random variable $X$ falling (at or) below some level x."
 
 E.g., $F_r(103.4) =  \mbox{Prob}(X < 103.4 )$...
 
@@ -4413,19 +4430,19 @@ $$ f (x)\,dx \equiv \mbox{Prob}( X \in [ x, x+\,dx ] ) = F(x+\,dx ) - F(x) .$$
 
 \
 
-This function is not really interpretable on its own. You might be tempted to read it as 'the probability of exactly a certain value, such as 'exactly 103.4 hours of rainfall', but this would be incorrect (unless we have mass points).  It is best thought of as the 'rate of change' of the CDF, as the limit of the difference in the CDF function for each small interval. 
+This function is not really interpretable on its own. You might be tempted to read it as 'the probability of exactly a certain value, such as 'exactly 103.4 hours of rainfall', but this would be incorrect (unless we have mass points).  It is best thought of as the 'rate of change' of the CDF, as the limit of the difference in the CDF function for each small interval.
 
-Letting $dx \rightarrow 0$:  
+Letting $dx \rightarrow 0$:
 
 $$ f (x) = F' (x) ,~~~F(x) = \int_{- \infty}^{x} f (t)\,dt .$$
 
 \
 
 <div class="marginnote">
-Todo: look up and include some graphics showing the pdf and cdf. 
+Todo: look up and include some graphics showing the pdf and cdf.
 
 </div>
- 
+
 
 
 The expected value  (EV) of a continuous random variable $X$ is then defined by
@@ -4460,7 +4477,7 @@ This is *NOT* the same as expected utility (coming up); people don't necessary c
 
 ## "Lotteries"
 
-O-R, p. 31: 
+O-R, p. 31:
 
 > An alternative in the set involves randomness regarding the consequence it yields. We refer to these alternatives as lotteries. For example, a raffle ticket that yields a car with probability 0.001 and nothing otherwise is a lottery. A vacation on which you will experience grey weather with probability 0.3 and sunshine with probability 0.7 can be thought of as a lottery as well.
 
@@ -4468,6 +4485,11 @@ O-R, p. 31:
 \
 
 ### Formal definition of Lotteries (from O-R), explanation
+
+<div class="marginnote">
+In other texts you may see these  referred to as "simple gambles".
+/div>
+
 
 
 > Let $Z$ be a set (of prizes).
@@ -4495,7 +4517,7 @@ The sum of the probabilities of each possible outcome must be 1... 'one of the p
 
 ```{block2,  type='fold'}
 
-For the example I give above, this means $L(Z)$ is 'any possible lottery with some  some probability of "apple and carrot", some probability of "two carrots", and (the remaining) probability of "nothing". Each of these probabilities could be anything between 0 and 1.  
+For the example I give above, this means $L(Z)$ is 'any possible lottery with some  some probability of "apple and carrot", some probability of "two carrots", and (the remaining) probability of "nothing". Each of these probabilities could be anything between 0 and 1.
 
 ```
 
@@ -4504,7 +4526,7 @@ For the example I give above, this means $L(Z)$ is 'any possible lottery with so
 <div class="marginnote">
 $[z]$ represents a trivial case (sometimes called a 'degenerate' lottery). A 'certainty' is also a lottery, by this definition.
 </div>
- 
+
 
 > and the lottery that yields the prize $z_k$ with probability $\alpha_k$ for $k = 1,..., K$
 
@@ -4520,7 +4542,7 @@ This is a very handy notation but it needs some explanation (unfold).
 
 We are trying to concisely depict a lottery with K possible outcomes (where K can be any number). Each of these possibile outcomes is indicated by $z_1$, $z_2$, ... etc., all the way up to $z_K$.
 
-Each of these possibities has some probability of occuring. We denote these possibilities by $\alpha_1$ for outcome $z_1$, $\alpha_2$ for outcome $z_2$, etc. 
+Each of these possibities has some probability of occuring. We denote these possibilities by $\alpha_1$ for outcome $z_1$, $\alpha_2$ for outcome $z_2$, etc.
 
 E.g., for a two-outcome lottery, rather than writing 'a lottery where outcome $z_1$ occurs with probability $\alpha_1$, $z_2$ occurs with probability $\alpha_2$, etc., we can simply write it as $\alpha_1 \cdot z_1 \oplus \alpha_2\cdot z_2$. Here the $\oplus$ means 'and also outcome...' and the $\cdot$ means 'with probability'.
 
@@ -4530,12 +4552,12 @@ E.g., for a two-outcome lottery, rather than writing 'a lottery where outcome $z
 
 ```{block2,  type='inputq'}
 How would you use this notation to depict "a lottery with a 1/3 probability of an outcome with value 10, and a 2/3 probability of an outcome with value 100"?
-```  
+```
 
 ```{block2,  type='fold'}
 
 $10 \cdot \frac{1}{3} \oplus 100\cdot \frac{2}{3}$
-  
+
 ```
 
 \
@@ -4544,7 +4566,7 @@ $10 \cdot \frac{1}{3} \oplus 100\cdot \frac{2}{3}$
 
 Consider the diagrams in figure 3.1 in O-R. Can you explain what the points depicted mean? Could you depict the lottery $\frac{3}{4} \cdot z_1 \oplus \frac{1}{4}\cdot z_2 \oplus 0\cdot z_3$ in a 3-D diagram similar to figure 3.1b? (by the way, this is called a 'probability simplex').
 
-```  
+```
 
 
 ## Preferences over lotteries
@@ -4564,10 +4586,10 @@ We might instead consider these as "simple decision rules" or "heuristics" rathe
 Of course it is doubtful that anyone completely has these preferences or follows these rules all the time. Still, it is instructive to consider what doing so would mean. It's worth reading these definitions carefully, and then we can consider how these diverge from the "expected utility" framework we will discuss in a moment.
 
 </div>
- 
+
 - **Ex. 3.1 "A pessimist"**: Essentially, someone whose preferences among these lotteries simply depends on "which one has the worst possible outcome ($w(p)$) that is least bad". (Where 'worst' is according to some particular ranking... which can have any form.)
 
-- **Ex 3.2 "good and bad"**: This person divides all possible outcomes into "good  outcomes" and "bad outcomes" (in some particular way...there are many possibilities for doing this.)  They simply prefer the lottery which has the highest probability of a "good" outcome (or conversely the lowest probability of a bad outcome). 
+- **Ex 3.2 "good and bad"**: This person divides all possible outcomes into "good  outcomes" and "bad outcomes" (in some particular way...there are many possibilities for doing this.)  They simply prefer the lottery which has the highest probability of a "good" outcome (or conversely the lowest probability of a bad outcome).
 
 - **Ex 3.3 minimizing options**:  This person doesn't actually care about the content of any of the outcomes; they simpler prefer the lottery with the fewest possible outcomes.
 
@@ -4588,8 +4610,8 @@ Continuity (see diagram I will add)
 
 Def: Compound lotteries
 
-- Important;  might be considered an 'algebra of finance'... 
-- a distributed format 
+- Important;  might be considered an 'algebra of finance'...
+- a distributed format
 - 'sum product of x across all lotteries $p_1...p_k$'
 
 \
@@ -4598,13 +4620,13 @@ Def: Independence
 
 "If I prefer a particular (certain) A over a particular lottery B, I also prefer to increase the probability of A over B... in a 'compound lottery'"
 
-- Counterexamples: pessimistic preferences, 'minimizing options' 
-- Note that a property over $\succsim$ extends to $\succ$
+- Counterexamples: pessimistic preferences, 'minimizing options'
+- Note how, in this case, a property over $\succsim$ extends to $\succ$
 
 <div class="marginnote">
-Relevant to 'population ethics' and 'effective altruism' and 'other-regarding preferences', and 'social welfare functions/social preferences'. 
+Relevant to 'population ethics' and 'effective altruism' and 'other-regarding preferences', and 'social welfare functions/social preferences'.
 </div>
- 
+
 \
 
 Def: Monotonicity
@@ -4614,17 +4636,933 @@ Def: Monotonicity
 - Independence implies monotonicity; a fairly easy and cool proof.
 
 
-## Expected utility 
+## Expected utility
 
-The 'most commonly assumed' framework in economic theory. 
+Expected Utility is the 'most commonly assumed' framework in economic theory. We will consider certain “axioms” that seem reasonable, particularly the ‘independence’ axiom. We can formally prove people’s preferences obey these axioms, then their preferences must be "consistent with expected utility".
+
+<div class="marginnote">
+Again, this method...
+- Define axioms that seem reasonable
+- prove what this implies (in terms of 'maximizing behavior')
+...
+is sometimes called "normative Economics".  But this is confusing as "normative" is also used to refer to several other things.
+
+</div>
+
+
+However, Expected Utility preferences (choices) rules out some stated preferences (and choices) that seem common. We will see this in the [“Allais Paradox”](#allais), for example.
+
+
 \
+
+**Under this framework**
+
+When evaluating alternatives (or, if optimising, when making choices) involving uncertainty, she does **not** (necessarily) maximise expected monetary value.
+
+Instead, she maximises 'Expected Utility' (EU): the sum of her (VNM) valuations '$v(\cdot)$' under each outcome weighted by the *probability* of each outcome. (O-R refer to this as the *Bernoulli function*.) 
+
+<div class="marginnote">
+
+I use the $v(\cdot)$ function notation rather than $u(\cdot)$ to differentiate the utility over a lottery in the EU framework ($U$) from the utility of one possible outcome of that lottery ($v$). However, in the EU framework we see that that the EU of a 'degenerate lottery' containing  outcome $z$ with probability 1 is simply $U(p) = p_z \times v(z) = 1 \times v(z)$.
+
+</div>
+ 
+
+
+... I.e., she chooses to maximise the value of her $v(z)$ function under each outcome $z$ weighted by the probability of each outcome $p_z$.
+
+<div class="marginnote">
+While I descrive a set of countable alternatives, O-R define the below over the more general idea of a 'set of lotteries $L(Z)$ over prizes $Z$'.
+
+
+</div>
+
+
+```{block2,  type='def'}
+
+Remember, each lottery $p$ is a set of probabilities over each possible alternative. With a finite set of $n$ alternatives $z_1, z_2, ...,z_n$ we have probabilities $p_1, p_2, ... p_n$ over eeach.
+
+Consider the "Expected Utility" function $U$. This has a particular form. It is defined over each lottery $p$ as:
+
+$$U(p)= \sum_{i=1}^{n}p_i v(z_i)$$.
+
+Where $v(\cdot)$ is a 'value function' (aka 'sub-utility function', aka 'Bernoully function').
+
+\
+
+If an individual's preferences (choices) are 'consistent with this',
+
+- so she always prefers (chooses) the lottery with the highest value of the above sum,
+
+- for some specific $v$ function (which is the same $v$ function across lotteries, of course),
+
+... then we say she has 'Expected utility' ('EU', or von-Neumann Morganstern) preferences (if she *chooses* according to these preferences, she is an 'EU maximizer').
+
+```
+
+
+Note that the above does not specify *what* the $v$ function must be. Obviously this may differ across individuals.
+
+\
+
+When we dealt with certainties, utility was 'ordinal'. All we could say or know is whether “A yielded more utility than B or vice versa”.
+
+However, if we assume EU preferences and focus on the $v$ function, now the *magnitude* of the difference matters. Furthermore, it is now meaningful to consider the "curvature" of this $v$ function in a single good which we could just call ‘wealth’.
+
+
+\
+
+*Unfold for a further discussion of this; which may make more sense after reading further*
+
+```{block2,  type='fold'}
+
+With uncertainty, linear (affine) transformations of the $v$ function represent the same preferences and thus lead to the same behaviour; nonlinear monotonic transformations may not.
+
+\
+
+Formally, if the VNM utility function $v(\cdot) represents a set of preferences, the VNM utility function $w(\cdot)$ represents the same preferences if and only if, for some scalar $\alpha$ and some scalar $\beta>0$
+
+$$w(g) = \alpha + \beta v(g)$$.
+
+\
+Note that when we were choosing between two goods under certainty,
+the *level* of total utility didn't really matter, only the relative utilities. Now that we are considering gambles, the overall utility level matters, because we need to consider the extent of the tradeoff between 'rich and poor' states.
+
+```
+
+\
+
+By varying the $v(\cdot)$ function we can vary what we will define as  the '[risk preference](risk-pref)'; ...Risk-loving, risk neutral, and risk averse individuals can all be seen as maximizing EU, as discussed [below](#eu-risk).
+
+
+```{block2,  type='tip'}
+
+Although O-R cover the Allais paradox next, I think it may be easier to understand after considering EU and risk preferences. Thus I consider it [further down](#allais) and again when we consider behavioral economics, time permitting. 
+```  
+
+\
+## Risk preferences (#risk-pref)
+
+Consider the choice between two gambles and one 'certainty':
+
+1. Earn £1,000,000 with probability 0.1 \& zero with prob. 0.9
+2. Earn £100,000 with probability 1/2 \& £50,000 with prob. 1/2
+3. Earn £75,000 for certain
+
+<br>  \bigskip
+
+```{block2,  type='inputq'}
+
+Consider: which do you think you would choose? What would you predict others will choose, and why? Are any of these 'clearly better' than any other?
+```
+
+\
+
+The decision among such lotteries depends on an individual's preferences, in particular, her 'risk preferences'. We divide up the space of possible preferences with the following definitions...
+
+\
+
+
+**Definitions (loose):**
+
+1. Risk Neutrality: a *Risk-neutral* person always chooses the option with the highest *expected monetary value*
+
+<div class="marginnote">
+Expected monetary value: the probability-weighted sum of the monetary outcomes. E.g., above, choice 2 as an expected monetary value of £100,000 $\times \frac{1}{2}$ +  £50,000  $\times \frac{1}{2} = $ £75,000.
+</div>
+
+```{block2,  type='inputq'}
+
+Consider: what sort of $v$ function, a function of monetary income, would have the property that
+
+.... it implies that the expected utility (the probability-weighted sum of the $v$ terms) is of a  gamble is always higher when the expected monetary value of this gamble is higher?
+
+```
+
+```{block2,  type='fold'}
+
+Answer: Such a $v$ function must be linear (or affine);
+
+it must take the form $v(y)= a + by$ for some $b>0$.
+
+Can you prove this?
+```
+
+
+\
+
+
+<br>
+
+2. Risk-Averse: a *risk-averse* person will always prefer a 'sure thing' over a 'gamble with the same expected monetary value'
+
+- She will always prefer gambles with less risk, holding the expected value constant
+- She will always reject 'fair gambles' (see below) and prefer certainties
+- To accept a (fair) gamble, she must expect a 'risk-premium'
+
+\
+<!---
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","weirdalscissors.jpg"))
+```
+-->
+
+
+3. A *Risk-lover* will always choose fair gambles over certainties, and sometimes choose a gamble that is unfair against her.
+
+\
+
+```{block2,  type='note'}
+
+To be added or mentioned here:
+  
+O-R formal definition of risk aversion
+  
+```
+
+### Risk preferences and EU {-}
+
+Imagine the realised utility $v(y)$ that arises from the consumption chosen with wealth $y$.
+
+<div class="marginnote">
+
+This is referred to as a 'indirect utility function', and sometimes written in capitals as $V(y)$: an indirect utility function maps the utility that can be attained (assuming optimal choices) as we shift an individual's wealth (and prices).
+
+</div>
+
+- This should be increasing (because of nonsatiation, 'more preferred to less'), thus (assuming differentiability) $V^\prime (y)>0$
+
+- But it may increase at a *decreasing* rate, implying $V^{\prime \prime}(y)< 0$
+
+This second assumption, called *diminishing marginal utility*,  will imply 'risk aversion'! (This is a 'sufficient condition').
+
+If the person is 'risk-neutral', it must be linear, thus $V(y) = a + by$, thus $V^{\prime \prime}(y)=0$
+
+<br>
+
+```{block2,  type='note'}
+
+Add: formal statement and proof that risk aversion depends on the concavity of Bernoulli (value) function $v(\cdot)$, (Prop 3.3 in O-R)
+```  
+
+
+
+<br> 
+
+### Further intuition and discussion {-}
+
+Coming back to the choice between two gambles and one 'certainty':
+
+1. $Y_1$: £1,000,000 with probability 0.1 and zero with prob. 0.9
+2. $Y_2$: £100,000 with probability 0.5 and £50,000 with prob. 0.5
+3. $Y_3$: £75,000 for certain
+
+\
+
+
+
+Considering each *outcome* from any of these...
+
+we know $u(1,000,000) > u(100,000) > u(75,000)> u(50,000) > u(0)$...
+
+but now the *size of the difference* in these utilities matters for your decision!
+
+
+<br> 
+
+- Consider Y1 vs Y3: Is 1 million 'more than ten times as good (utility-wise) as 75k?'
+
+- Y2 v Y3: Relative to 75k, does an additional 25k yield a utility gain worth the (equally probable) loss of 25k?
+
+\
+
+
+**Illustration:** Why the 'size of the difference in u(y) matters' when dealing with uncertainty.
+
+Suppose there is Open Enrollment in Oxford, Bristol, Plymouth.
+
+$\rightarrow$ Here I only need to know the *ranking* of utilities of each to know your choices.
+
+- If you choose Oxford over Bristol, even though Oxford costs more, I can infer that for you $u(Oxford)>u(Bristol)$
+
+<br> 
+
+Now, in contrast suppose there is a "Lottery policy", which is:
+
+> A. Rank Oxford over Bristol and you have a 25\% chance of getting into either, and a 50\% chance of Plymouth.
+
+> B. Rank Bristol highest and you have a 100\% chance of getting into Bristol.
+
+\
+
+
+```{block2,  type='inputq'}
+
+Now, suppose that I know that your preferences are  Oxford $\succ$ Bristol $\succ$ Plymouth.
+
+Do I now know whether you will choose A or B? What would it depend on?
+
+```  
+
+\
+
+```{block2,  type='fold'}
+
+No. I don't know if you will choose A or B; I would need to know the *strength* of your preferences.
+
+```
+
+
+<br> 
+
+```{block2,  type='inputq'}
+
+So, which tells me more about your preferences: your choices under Open Enrollment or your choices under the Lottery policy?
+  
+```  
+
+```{block2,  type='fold'}
+
+Your choices under the Lottery policy can be more informative. 
+
+\
+
+If I observe that you choose 'option A' under the Lottery policy I have learned *more* about your utility than I learned under Open Enrollment.
+
+I have learned that your preference for Oxford over Bristol is  "stronger" than your preference for Bristol over Plymouth.
+
+```
+
+
+### Intuition for 'risk aversion iff concave value function $v(\cdot)$ {-}
+
+Risk aversion is defined (at least one definition) as being unwilling to take any "fair gambles" (gambles with an expected monetary value of zero) not even small ones.  A risk averse person would never be willing to take on an equal probability of gaining a certain amount and losing that same amount.  If they are "globally risk-averse" this holds no matter what level of income/wealth they start at, and no matter how large or small this amount is.
+
+\
+
+If the value function is strictly concave that means it is 'everywhere increasing at a decreasing rate'.  This means that, starting from a single point the rate of increase above this point is always lower than the rate of decrease below this point.  A small loss is always at least somewhat more costly than a small gain of an equal monetary value. 
+
+\
+
+Thus a risk-averse person would reject such gambles.
+
+\
+
+### Graphical illustration of 'risk aversion iff concave value function $v(\cdot)$ {-}
+
+
+**How to illustrate this:**
+
+- Show: $EU(gamble) = (1-p)u(x_{low}) + pu(x_{high}) < u(EV(x)) = u((1-p)x_{low} + px_{high})$
+
+Draw a diagonal line between $u(x_{low})$ and $u(x_{high})$; the Expected Utility is in between these.
+
+To find this expected utility: 
+
+1. Go horizontal distance $p$ of the way between $x_{low}$ and $x_{high}$
+2. Project up to the diagonal for the 'average of functions (EU)'
+
+<div class="marginnote">
+
+This is a mathematical/graphical property we can easily prove.
+
+Intuition: The slope of a line tells me 'rise for a given run', the 'expectation' calculation is a linear function, so the slope is constant
+and the 'share of the rise' simply projects up from the 'share of the run'
+</div>
+ 
+
+
+- Compare this to the vertical height of utililty function at same point $(1-p)x_{low} + px_{high}$
+
+\
+
+
+The result that the EV of the gamble is less than the EV of the certainty is actually a special case of *Jensen's inequality* (unfold if you are interested )
+
+```{block2,  type='fold'}
+
+For a strictly concave function $f(\cdot)$ and for constant $t \in [0,1]$
+
+$$f(tx_1+(1-t)x_2) > tf(x_1)+(1-t)f(x_2)$$ ...
+
+extended to expected values for a random variable $X$ ...
+
+$$f(E(X)) > E(f(X))$$
+
+```
+
+
+
+```{r  fig.cap = '', out.height='35%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","riskaversion1.png"))
+```
+
+*Note: You start with \$35k*
+
+```{r  fig.cap = '', out.height='35%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","riskaversion2.png"))
+```
+
+
+```{r  fig.cap = '', out.height='35%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","riskaversion3.png"))
+```
+
+
+```{r  fig.cap = '', out.height='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","riskaversion4.png"))
+```
+
+
+```{r  fig.cap = '', out.height='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","riskaversion5a.png"))
+```
+
+\
+
+
+
+## Allais paradox; considering other (non-EU) frameworks (#allais)
+
+(Content to be added here, drawing both from O-R and from my previous notes)
+
+
+### Simple depiction of Allais paradox {-}
+
+Consider: 
+
+- Gamble A: an 89\% chance of winning £1 million, a 10\% chance of winning £5 million, and a 1\% chance of winning nothing.
+- Gamble B: £1 million with certainty.
+
+\
+
+```{block2,  type='inputqn'}
+
+Write down (in Hypothesis): which would you choose?
+
+```  
+
+<!--#TODO: add a survey link -->
+
+
+\hrulefill
+
+\
+
+**Scenario 2. Which would you choose?**
+
+- Gamble C: an 89\% chance of winning nothing and an 11\% chance of winning £ 1 million.
+- Gamble D: a 90\% chance of winning nothing and a 10\% chance of winning £5 million.
+
+\
+
+
+```{block2,  type='inputqn'}
+
+Write down (in Hypothesis): which would you choose?
+
+```  
+
+\
+
+Many people choose B over A and choose D over C. But look what this implies!!:
+
+$$B \succ A $$
+
+$$ £ 1m \cdot 1\succ  £ 1m \cdot 0.89 \oplus £ 5m \cdot 0.1 \oplus £0 \cdot 0.01$$
+
+\
+
+At the same time...
+
+$$D \succ C $$
+
+$$(£ 0 \cdot 0.9 \oplus  £ 5m \cdot 0.10) \succ (£ 0 \cdot 0.89 \oplus £ 1m \cdot 0.11) $$
+
+i.e.,
+
+$$ £ 1m \succ  (£ 1m \cdot 0.89 \oplus £ 5m \cdot 0.1 \oplus £0 \cdot 0.01)$$
+\
+
+
+
+*But this contradicts Expected Utility maximization:*
+
+If $B \succ A$ then $EU(A) > EU(B)$
+
+- $\rightarrow u(1m) > 0.89 \: u(1m) + 0.1 \: u(5m) + 0.01 \: u(0)$
+- $\rightarrow$ $0.11 \: u(1m) >  0.1 u(5m) + 0.01 \: u(0)$
+
+\
+
+Yet if $D \succ C$ then $EU(D)>EU(C)$
+    - $\rightarrow 0.9 \: u(0) + 0.1 u(5m) > 0.89 \: u(0) + 0.11 \: u(1m)$
+    - Implying $0.1 \: u(5m) + 0.01 \: u(0) > 0.11 \: u(1m)$
+    - Contradicting the above!
+
+\
+
+
+*More intuitively, note there is a 'reversal':*
+
+In choosing B over A you gave up a 10\% chance of £5000 to get a 1\% greater chance of £1000 \
+... but in choosing D over C you gave up a 1\% greater chance of £1000 to get a 10\% change of £5000
+
+
+
+For EU mazimization it shouldn't matter that 'for the remaining 89\% of the time A differs from C'.... (unfold)
+
+```{block2,  type='fold'}
+
+This is an 'independent state of the world'; it should have no impact on your decisions for the remaining 11\% of the time.  Remember the 'independence property'?
+
+By this logic, the fact that there is a 10\% chance that a meteor destroys England on Friday should not affect my choice \
+
+of whether to go to a fancy restaurant or get a simple curry on Friday in the 90\% probability case that England is *not* hit.
+
+```
+
+\
+
+**Explaining it again with pie charts...**
+
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs", "allaispies.png"))
+```
+
+\
+
+A is D plus an additional  89\% chance of £1m
+
+
+B is C plus an additional 89\% chance of £1m
+
+
+So "A and B" are "D and C" with **additional 89\% chance of £ 1m**
+
+
+\
+
+EU is *additive*: $\rightarrow$: \footnotesize{choice for *remaining* 11\% state ignores **difference**
+
+By the EU calculation I make choices over which I prefer for the (remaining)
+ 11% of the time without considering what happens 89% of the time. 'Independent states of the world'.
+
+\
+
+
+
+**SO WHY do people choose B over A and D over C?**
+
+One theory: People may maximize something like EU but they get the probabilities wrong.  They overweight small probabilities.
+
+- $\rightarrow$  Gamble A: the 1\% chance of 0 is treated as larger?
+
+\
+
+Another theory: People do *not* choose in a way that could be characterised as maximizing the probability-weighted sum of a value function over outcomes. They do not do anything that could be depicted as EU maximization. Instead, the assess gambles using other criteria, perhaps framing 'reference points', and 'gains and losses' relative to this reference point. We will (time permitting) return to this in our discussion of 'prospect theory' when we consider Behavioral Economics. 
+
+## Explaining the above paradoxes with prospect theory
+
+- Above choices: cannot be explained by 'regular' EU theory
+    - Mistakes, misunderstanding probabilities?
+    - Prospect theory, loss-aversion: *not* mistakes, but maximising something other than EU
+
+
+\
+
+## Experimental measures of risk attitudes
+
+Economists try to measure people's level of risk aversion in various ways.
+
+We try to measure 'revealed preferences' from real-world choices. E.g., what premium are people willing to pay to buy insurance for various things,  how much premium do they demand for taking on risky investments (with the same expected monetary values), and how much more do they have to be paid (on average) in jobs with variable compensation?
+
+<br> <br> \bigskip
+
+We also run *experiments* with real or hypothetical payoffs to measure this.
+
+
+<div class="marginnote">
+
+Although it is widely used, the validity of the Holt and Laury method is disputed, and there are alternatives. (Add/link discussion here)
+
+</div>
+
+
+One technique is the Holt and Laury (2002) risk elicitation task:
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","holtlaurie.png"))
+```
+
+`r format_with_col("Asked to choose one in each row (A or B)","gray")`
+
+- Consider, when would you choose A and when would you choose B?
+
+<br> <br> \bigskip
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","holtlauriedetail.png"))
+```
+
+At what point do people switch from choosing the safe to choosing the risky lottery?
+
+This is a measure of their risk-aversion.  A risk-neutral person would switch to B on the fifth choice.
+The later you switch, the more risk averse you reveal yourself to be.
+
+\
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","holtlauryresults.png"))
+```
+
+Above: Results for different 'stake sizes'. Most people are risk-averse.  People switch to the risky option later when stakes are higher.
+
+\
+
 
 ## Applications (esp. to finance):
 
 - How do we express and measure 'risk aversion'?
+
 - How does this affect (financial, investment, insurance) choices?  Why does 'diversification improve outcomes for the risk-averse'?
+
 - How does this affect asset prices (Stocks, bonds, etc.) with 'efficient markets' (this will be briefly defined)
-- Behavioral Economics: the "Allais Paradox" (first treatment, time-permitting)
+
+### Insurance {-}
+
+(Content to be added)
+
+### Benefits of diversification {-}
+
+(Content to be added)
+
+See also QMC, chapters 5-6 for a fairly nontechnical and intuitive explanation
+
+Diversification: Buying multiple assets (with risks that are not perfectly correlated with one another)
+
+- "Putting your eggs in multiple baskets" tends to reduce risk, holding expected monetary value of profit (return) sconstant!
+
+\
+
+### Illustration: Binomial distribution {-}
+
+- Suppose I have £ 1000, and I can bet on fair coin flips. My returns will then have what we call a “binomial distribution”.
+
+\
+
+Consider an illustration of binomial distributions
+
+- If I bet all £ 1000 in a single flip, there is a 50\% chance I will lose my entire investment.
+- If I bet £ 500 on two flips, there is only a 25% chance I will lose my entire investment (also reduces chance of doubling by 25\%).
+    - The expected value is the same (0); thus this is better if you are risk averse.
+
+
+<!--#TODO: put in a shiny example here illustrating this -->
+
+"Less risky": B and A overlap with 0.5 probability; the remaining 50\% of time A's outcomes are more extreme. So it is less risky in a very general sense.
+
+- If I bet £ 100 each in ten flips,  there is a 38\% chance that I will lose 20\% or more of my investment.
+- If instead, I bet it on 1000 coin flips, betting £ 1 on each, there is only 6.00\% chance I will lose 5% of my investment or more, and only 1/10th of 1\% chance that I will lose 10\% of my investment or more.
+
+\
+
+You can check this, e.g., [here](https://shiny.rit.albany.edu/stat/binomial/)
+
+```{r knitrapp}
+knitr::include_app("https://shiny.rit.albany.edu/stat/binomial/",
+height = "400px")
+```
+
+<br> 
+
+*Result*: The more I can do this “diversification”, the less risk I face.
+
+<br> 
+
+
+*Note*: For simplicity, these examples have a 'fair coin flip', zero expected-return investment.
+
+
+\
+
+But you might be wondering: 'why invest at all? 
+
+
+```{block2,  type='fold'}
+
+Answer: Because this principle also applies to 'unfair coin flips'.
+
+
+\
+
+E.g., investments in the stock market are more profitable on average than money under the mattress
+
+Each £1 invested in shares has a higher expected return, but also a higher risk.
+ However by spreading across *many different* assets we can reduce this risk, as seen above, maintaining the same expected returns. 
+
+\
+
+```
+
+
+### Asset pricing and the CAPM (basic characterization) {-}
+
+
+```{r  fig.cap = 'Figure reprinted from Nicholson and Snyder, 2010', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
+knitr::include_graphics(file.path("picsfigs", "marketriskline.png"))
+
+```
+
+
+Market line
+:     Shows the relationship between risk and annual returns that an investor can achieve by mixing financial assets.
+
+`r format_with_col("Note typo in diagram: 'risk assets' should be 'risky'","gray")`
+
+`r format_with_col("With efficient markets, line depicts 'best mix': proportional to the total 'market basket', plus borrowing/lending at the 'risk-free rate'","gray")`
+
+\
+
+```{r  fig.cap = 'Figure reprinted from Nicholson and Snyder, 2010', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs", "investorchoices.png"))
+```
+
+People may have  different preferences for risk versus *expected* (average) return
+
+(Risk' is the overall variance around the average)
+
+The above assumes 'optimal diversification': no one chooses points *below* market line
+
+\
+
+#### Extension: "Capital asset pricing model" (CAPM) {-}
+
+More content/reading to be added here. 
+
+<!-- #TODO -->
+
+This is the  leading 'baseline' model in finance.
+
+It assumes (or in fact, derives that) investors optimally diversify.
+
+\
+
+Thus assets are priced based only on 'risk that cannot be diversified away from', which is called 'market risk'.
+
+\
+
+Holding the expected value of dividends constant, assets with higher market risk are less desirable, thus priced lower, and get higher returns
+
+The trade-off between this risk and return has a linear relationship, and it has a  slope called  'Beta'.
+
+<div class="marginnote">
+Confusing matters further, in some discussions, the measure of the market risk itself is referred to as “Beta”.
+
+You will also hear "Alpha" referred to, representing the intercept and and to depict the excess return of an asset over and above what would be predicted by its market risk.  People who claim to be able to beat the markets will flex about their ‘high Alpha’. But maybe they are just lucky.
+</div>
+ 
+
+\
+
+- Typical boring economist's investment advice: diversify to mimic the 'market basket', choose funds with low fees
+
+This doesn't make you a hit at parties :(
+
+\
+
+```{block2,  type='tip'}
+See also QMC, chapters 5-6 for a fairly nontechnical and intuitive explanation.
+
+```  
+
+\
+
+## Options contracts
+
+<div class="marginnote">
+The content in this section is largely drawn from Nicholson and Snyder, "Intermediate Microeconomics and Its Application", 2010, Cengage.
+</div>
+ 
+
+
+Option contract
+
+:     Financial contract offering the right (but not the obligation) to buy or sell an asset over a specified period (at a certain price).
+
+
+<br> 
+
+Attributes of options:
+
+1. Specification of transaction: what is bought/sold, how many units maximum, at what price, etc
+2. Period the option may be exercised (from when until when)
+3. Price of the option
+
+\
+
+### Price of options determined by {-}
+
+1. Expected value of underlying transaction (e.g., for a call option, expected future share price minus strike price)
+
+2. Variability of the value of the transaction
+
+Option G (a 'call option'): Right to buy Google share at £500 (£500 'strike price') in December 2020
+
+- Worth more the higher the current share price
+
+- If $P_{google}< £500$ currently, then option G is worth more the higher the expected *variability* in $P_{google}$
+    - Variability can only help the option-holder:
+    - price increase helps her
+    - if price falls below £ 500, she doesn't need to exercise the option
+
+```{block2,  type='warning'}
+
+If you didn't read this you probably would have guessed the opposite. Common sense does not get you everywhere, and definitely not a good mark on exams. I *particularly* want you to understand those results that are *not* common sense.
+
+```  
+
+
+3. Duration: the longer the better -- a longer duration brings a greater chance that the price will rise above strike price (£500)
+
+Note that the results for 'right to sell = call options' are similar, just replace the words 'buy' with 'sell' and reverse the directions ('rise' with 'fall), etc.
+
+
+\
+
+```{block2,  type='note'}
+
+Classic economist's argument: you should 'bet against yourself' to minimise risk; but this might give you bad incentives to perform. See column about this [HERE](http://www.marketplace.org/2008/08/11/business/hedging-your-bets-hard-times) ... "Hedging your bets in hard times"]
+
+```
+\
+
+
+\
+
+**Extension: "Capital asset pricing model" (CAPM)**
+
+This is the  leading 'baseline' model in finance.
+
+It assumes (or in fact, derives that) investors optimally diversify.
+
+<br> <br> \bigskip
+
+Thus assets are priced based only on 'risk that cannot be diversified away from' ('market risk')
+
+<br> <br> \bigskip
+
+Holding the expected value of dividends constant, assets with higher market risk are less desirable, thus priced lower, and get higher returns
+
+The trade-off between this risk and return has a linear relationship with slope 'Beta'
+
+<br> <br> \bigskip
+
+- Typical boring economist's investment advice: diversify to mimic the 'market basket', choose funds with low fees
+
+This doesn't make you a hit at parties :(
+
+\
+
+## Measures of risk preferences, further characterizations {-}
+
+- CARA, CRRA
+
+
+- Certainty equivalence
+
+<div class="marginnote">
+Content to be added here, drawing from McDL section 13.4.
+</div>
+
+\
+
+### Local measures of risk-aversion {-}
+
+- Coefficient of *absolute* risk aversion: $A(m) \equiv -\frac{u''(m)}{u'(m)}$
+
+Note this is preserved under an affine transformation; the value itself may be constant, decreasing, increasing in income...
+
+
+\
+
+
+
+<br> <br> \bigskip
+
+- Coefficient of *relative* risk aversion: $R(m) \equiv mA(m)=-\frac{mu''(m)}{u'(m)}$
+
+
+
+`r format_with_col("Note that these ideas are also relevant to intertemporal substitution and to social welfare functions","gray")`
+
+RRA (ARA) constant $\rightarrow$ constant fraction of portfolio (number of dollars) held in risky asset as wealth increases.
+
+### 'Prudence'  {-}
+
+```{block2,  type='inputq'}
+
+Does 'risk aversion' imply that it will be beneficial to lay aside more savings if you are facing greater risk, i.e., outcomes with greater variance? Why or why not?
+  
+```  
+
+
+```{block2,  type='fold'}
+
+Surprisingly, it does not imply this; it can go either way. Why? 
+  
+Consider the case with two state of the world, "good and bad". Imagine each occur with some probability, perhaps $\frac{1}{2}$.
+
+Consider two people, Sam and Rick, with the same expected value income of 50 'next year'. Suppose both have the exact same risk-averse utility function.  
+
+However, Rick faces a much greater variance of income than Sam. Suppose Rick gets income 10 half the time and 90 half the time, while Sam gets 40 half the time and 60 half the time. 
+
+Now suppose each is considering how much of "this year's" income to lay aside for next year, at the cost of less pleasure this year. (I may not  have covered utility across time and discounting yet, but I think you will get the idea.)
+
+Who will find it more important to put aside money, Sam or Rick? ... think and unfold. 
+
+```
+
+```{block2,  type='fold'}
+
+The answer:  not enough information to say either way.
+
+With  diminishing returns to income (each year)...
+
+- For the 50% 'bad state of the world' (where they have a lower income), the additional savings is more valuable to Rick than to Sam, as increasing from 10 to 11 (say) yields more utility gain than increasing from 40 to 41.
+ 
+- However, for the 50% 'good' state of the world, the additional savings is *less* valuable to Rick than to Sam, as an increase from 90 to 91 is worth *less* utility than an increase from 60 to 61. 
+
+So we don't know without more information about their value functions.
+
+```
+
+
+\
+
+
+Economists have a particular definition of something called "Prudence". 
+
+<div class="marginnote">
+
+This is something economists do. We take a normal word and we define it with a particular mathematical meaning that may or may not agree with most people's common sense of that word is.
+
+</div>
+
+We define someone as *prudent* if they are risk-averse *and* if $v'''(y)<0$.  That's right, even the *third derivative* matters, and has an interpretation!
+
+\
+
+Prudence implies that risk is less painful at higher incomes. This implies that I will *save more* when facing greater risk. 
+
+\
+
+That might seem the obvious choice to you, in spite of the above discussion. If so, congratulations on knowing the sign of the third derivative of your value function!
+
+
+\
+
 
 
 # Exercises - uncertainty, finance, time preferences ('problem set')  {-#prefs-uncert}
@@ -4632,6 +5570,11 @@ The 'most commonly assumed' framework in economic theory.
 Tbd; some possibilities in the fold.
 
 ```{block2,  type='fold'}
+
+O-R Q2: "A parent"
+O-R Q7: "Additional lottery"
+O-R Q8: "Casino"
+O-R Q9: "Insurance"
 
 - Proof-based problem
 
@@ -4655,17 +5598,205 @@ Tbd; some possibilities in the fold.
 
 ## Consumer preferences, indifference curves/sets (0.5 weeks) {#consumer_pref}
 
-```{block2,  type='note'}
-**I will add a great deal of content here shortly.**
+We will cover most of O-R chapter 4, but we will skip section 4.6 (differentiability) 
+
+### "Bundles of goods" (O-R 4.1) {-}
+
+### Preferences over bundles, indifference sets (indifference curves) (O-R 4.2 and supplements
+{-}
+
+```{r  fig.cap = 'From Nicholson and Snyder 2010', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","moreisbetter.png"))
 ```
+
+- How can we compare the "?" areas? Which are preferred?
+
+
+\
+
+
+$\rightarrow$ Compare utilities, depict this using *Indifference Curves*
+
+
+Indifference curve
+:     A curve that shows all the combinations of goods or services that provide the same level of utility. (Source: Nicholson and Snyder, 2010)
+
+\
+
+Formally (for 2 goods), the set of pairs of ${X,Y}$ such that $U(X,Y)=c$ for some constant c.^[Recall the "level sets" from the maths revision.]
+
+
+Autor:
+> Define a level of utility say $U(x) = U$. Then, the indifference curve for U, $IC(U)$ is the locus of consumption bundles that generate utility level U for utility function $U(x)$.
+
+
+```{r  fig.cap = '', out.width='55%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
+knitr::include_graphics(file.path("picsfigs","indifcurves_util_together.jpg"))
+
+```
+
+
+Consider the above diagram ^[Credit: www2.econ.iastate.edu]. Think of this as a map with a projection above it.
+
+- How far East you go on this map determines how much of the x good is consumed
+
+- How far North you go determines how much of the Y good is consumed.
+
+- How high is the projected image... Determines how much utility is obtained from this combination of goods X and Y.^[Hmm... If we think of this as a traveler who loves 'getting high', and  'consumes' by driving East or North, and his utility is his altitude, maybe that helps.]
+
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
+ knitr::include_graphics(file.path("picsfigs","indif_utility_2_400.jpg"))
+
+```
+
+The above diagram also includes color to depict the utility level, like a 'heat map'.^[This diagram is from a very useful resource from MIT, [Frank's Economics on the web](http://web.mit.edu/11.203/www/econ/).]
+
+### Examples of preferences (over 2 goods) {-}
+
+### Properties: Monotonicity {-}
+
+### Properties: Continuity (we may skip this for time-concerns) {-}
+
+### Properties: Convexity (skipping the proofs) {-}
+
+#### More formal concept: quasiconcavity (optional)   {-}
+
+<div class="marginnote">
+This is the 'preferred assumption' which resembles Convexity, but has several advantages as a concept. For example, it doesn't require differentiable preferences, and its properties are not affected by monotonic transformations of utility functions. This is the concept that you might be taught in a PhD module. I think it may also have some value in understanding optimization problems in general, which is an important part of research and industry and finance, I believe.
+</div>
+ 
+
+More formal concept: (strictly) convex preferences $\Leftrightarrow$  (strictly) **'quasiconcave' utility function**, allowing 'n goods':
+
+This essentially means that for a 'convex combination' of any two bundles $\mathbf{A}=(X_A,Y_A)$ and $\mathbf{D}=(X_D,Y_D)$
+
+$$U(\alpha\mathbf{A}+(1-\alpha)\mathbf{D})\geq\alpha U(\mathbf{A}) + (1-\alpha)U(\mathbf{D})$$
+
+where $0<\alpha<1$.
+
+<div class="marginnote">
+ Note the switch to a 'weak inequality' here for quasiconcavity, strict for 'strict quasiconcavity'*)
+</div>
+
+\
+
+E.g. (with two goods),
+
+
+$$U(\alpha X_A + (1-\alpha)X_D,\alpha Y_A + (1-\alpha)Y_D) \geq $$
+
+$$\alpha(U((X_A,Y_A)) + (1-\alpha)(U(X_D,Y_D)$$
+
+where $0<\alpha<1$.
+
+\
+
+We also describe it as having 'a convex upper contour set': the set of all bundles strictly preferred to a particular bundle is a 'convex set', implying it contains all convex combinations of elements of this set.
+
+\
+
+One reason economists like this 'quasiconcavity' is because it rules out the 'false summits',
+the local, but not global optima, so we only need to use the first-order conditions to find the optima. 
+
+<div class="marginnote">
+
+But is this '[looking under the streetlight](https://en.wikipedia.org/wiki/Streetlight_effect) to find our keys' or is it truly without loss of generality?
+
+</div>
+ 
+
+\
+
+Without quasiconcavity there may also be no demand *function* only a *demand correspondence*: at a given price and income there may be more than one optimising choice!
+
+```{block2,  type='inputq'}
+Can you illustrate this with 'double-humped' indifference curves?
+```  
+
+\
+
+
+Gravelle and Reese appendix, on constrained optimisation (unfold)
+
+```{block2,  type='fold'}
+
+> A local maximum is always a global maximum if (a) the objective function is quasiconcave, and (b) the feasible set is convex.
+
+It will also tend to rule out 'sharp jumps' in response to price changes, so we can look smoothly at 'comparitive statics.'
+
+Note that 'quasiconcavity' does not require differentiability.
+
+Furthermore, unlike properties like 'diminishing marginal rates of substitution' this is preserved under a 'monotonic transformation' (stretching). This means it is called an 'ordinal property'.  Essentially, quasiconcave utility functions yields indifference curves that are 'convex to the origin'.
+
+All relevant properties of utility functions are unchanged by such monotonic transformations, including the MRS. This is well-illustrated in Autor's reading (Lecture 3, pp 11-14)
+
+```
+
+
+### Applications: Product positioning, marketing
+
+(Content to be added here)
+
+Do people have a preference for balance? (Convex indifference curves)?
+
+Naive argument?: If market research suggests a broad group indifferent between two options A and C, maybe they strictly prefer G  $\rightarrow$ a possible *niche* for a new profitable product ?
+
+<br>
+
+```{block2,  type='inputqn'}
+
+But what may be a critique, exception to this logic, e.g., for a particular food?
+  
+```  
+
+
+```{block2,  type='fold'}
+
+-  Convex preferences, 'preferring mixtures' is a very strong assumption, unlikely to hold everywhere, or for actual *mixtures*.   I may be indifferent between liver and custard, but it doesn't mean that I prefer liver-flavoured custard, nor even necessarily equal amounts of liver and custard side by side.
+
+- Producing an 'intermediate' attribute may be more costly; it may be easy to make crunchy but low-taste cereal or tasty but low-crunch cereal, but expensive to make a cereal with both attributes.  
+
+E.g., it's hard to make a car that is spacious *and* fast.
+
+```
+
+\
+
+**Utility/indifference curves: Also a framework for marketing analysis**
+
+```{block2,  type='note'}
+
+The utility and indifference curve construct may seem highly theoretical. Indeed, these models were developed largely to address big questions like 'who gains from trade?'  Still, it helps organise thinking and analysis for at least some managers and marketing groups.  According to Nicholson and Snyder (2010) Marriot hotel used focus groups to 'construct (multidimensional) indifference curves' to consider their ideal product positioning.
+
+I have seen a similar presentation for other hotels presented at [Behavioural boozeonomics](https://www.meetup.com/London-behavioural-comms-monthly-informal-drinks/) in London.
+
+This may also provide a structure to guide data-driven 'searches for the next best product'.
+```
+
 
 ## Consumer behavior/Individual (and market) demand functions and their properties (1 week) {#demand}
 
+(Chapter 5 in O-R)
+
+We may skip  'rationalizing a demand function
+
 
 ```{block2,  type='note'}
 **I will add a great deal of content here shortly.**
 ```
 
+### Budget sets/constraints {-}
+
+### Individual (consumer) demand functions {-}
+
+### Rational consumer and her optimisation problem {-}
+
+### Marginal rates of substitution 
+
+MORE TO BE ADDED HERE
 
 
 <!--chapter:end:consumers_pref_demand.Rmd-->
@@ -4713,6 +5844,11 @@ Tbd; some possibilities in the fold.
 
 
 
+<!-- ## Prospect theory {#prospect}
+
+## Time-inconsistent preferences 
+
+-->
 
 <!--chapter:end:more_be.Rmd-->
 
