@@ -1102,11 +1102,17 @@ How does the example in the prior fold show that it's not complete?  (unfold bel
 
 
 
+
+
+```
+
+
+
+
+
 <div class="marginnote">
 DR Todo: I intend to add a video here discussing this
 </div>
-
-```
 
 ```{block2,  type='fold'}
 
@@ -1254,7 +1260,7 @@ $u : X \rightarrow R$ means that the function $u$ takes any element in the set $
 
 To make this concrete...
 
-Can you construct a utility function that 'represents' preferences $a \succ b \sim c \succ d on the set \{a,b,c,d\} (Unfold)
+Can you construct a utility function that 'represents' preferences $a \succ b \sim c \succ d$ on the set \{a,b,c,d\} (Unfold)
   
 ```  
 
@@ -1272,7 +1278,7 @@ Of course many other utility functions also represent these preferences.
  
  \
  
-#### Aside: 'what is utility' and what does it mean?
+#### Aside: 'what is utility' and what does it mean? {-}
 
 `r format_with_col("There is some debate about the meaning and interpretation of utility, particularly in the Behavioural Economics literature ","RawSienna")` 
 
@@ -1456,7 +1462,7 @@ Consider, how could you assign a utility function to these preferences?
 
 
 <div class="marginnote">
-DR Todo: I chope to add a video here discussing this
+DR Todo: I hope to add a video here discussing this
 </div>
 
 ```{block2,  type='fold'}
@@ -1499,6 +1505,8 @@ Notice this does *not* hold for lex preferences.
 
 ```
 
+\
+
 For example, consider the infinite set $\mathbb{R}^+$, the set of all non-negative real numbers. This is a reasonable choice set to consider, perhaps, in some contexts. E.g., 'I may be able to consume any zero or positive amount of food' ( note we have not yet brought in *constraints*, we are just considering *preferences*). 
 
 Suppose 'I always find more food at least as good as less food'. We could represent this preference as
@@ -1514,7 +1522,7 @@ This is easily represented by the utility function $u(x)=x$.
 
 In contrast, consider lex preferences on an *infinite* set, the 'unit square", where the first priority is the first coordinate and the second priority is the second coordinate. This is like the 'movie theatre' example, except instead of specific seats, one can locate at any exact point in the square.
 
-`r format_with_col("See O-R page 13, figure 1.4, for a depiction of  lex. preferences withinin a square.", "green")`
+`r format_with_col("See O-R page 13, figure 1.4, for a depiction of  lex. preferences within in a square.", "green")`
 
 <!-- <center> 
 ```{r  fig.cap = 'O-R: Lex. preferences withinin a square', out.width='100%', fig.asp=.4, fig.align='center',  echo = FALSE}
@@ -1645,7 +1653,7 @@ The separation of Preferences and Choice in their text, into separate concepts a
 
 ```  
 
-This is 'dense'. In more plain English, a 'choice problem' is a subset of alternatives (perhaps those alternatives which are 'feasible' for the individual to choose among).
+This is 'dense language'. In more plain English, a 'choice problem' is a subset of alternatives (perhaps those alternatives which are 'feasible' for the individual to choose among).
 
 A 'choice function' specifies 'for any given (sub)set of alternatives, which one will be chosen'?
 
@@ -1683,7 +1691,7 @@ $$ max\{u(x): x \in A\}$$.
 We read this as "he chooses x to maximize the utility function $u(x)$ under the constraint that $x$ is in the 'feasible' set $A$." \* 
 
 <div class="marginnote">
-$A$:  This may be the set of all alternatives Ratchell can afford to buy given his wealth, or the set of combination of goods and liesure time he can consume given his productivity and the prices he faces in the market, etc. 
+* Set $A$:  This may be the set of all alternatives Ratchell can afford to buy given his wealth, or the set of combination of goods and liesure time he can consume given his productivity and the prices he faces in the market, etc. 
 </div>
 Utility
 :     "The pleasure or satisfaction that people get from their economic activity."
@@ -1825,7 +1833,7 @@ E.g., if offered
 But if offered
 "Set L"  {50ml, 100ml, 200ml}, this person chooses 100ml.
 
-But the 50ml and 100ml were available in both sets S and L. IN this hypothetical example, the 'irrelevant alternative' changed their choice!
+But the 50ml and 100ml were available in both sets S and L. In this hypothetical example, the 'irrelevant alternative' changed their choice!
   
 ```
 

@@ -51,7 +51,7 @@ Do not get this mixed up! You must understand this distinction to consider yours
 
 **Some summary notes**
 
-Previously descrived utility functions: predict choices under certainty. They made no predictions for choices with uncertain probabilistic outcomes!
+Previously described utility functions: predict choices under certainty. They made no predictions for choices with uncertain probabilistic outcomes!
 
 People don't "maximise expected monetary value"" tend to be risk-averse
 
@@ -268,6 +268,11 @@ O-R, p. 31:
 
 ### Formal definition of Lotteries (from O-R), explanation
 
+
+<div class="marginnote">
+DR Todo: I intend to add a video here discussing this
+</div>
+
 <div class="marginnote">
 In other texts you may see these  referred to as "simple gambles".
 </div>
@@ -313,10 +318,12 @@ $[z]$ represents a trivial case (sometimes called a 'degenerate' lottery). A 'ce
 > and the lottery that yields the prize $z_k$ with probability $\alpha_k$ for $k = 1,..., K$
 
 <div class="marginnote">
-I.e., each prize $z_k$ occurs with probability  $\alpha_k$ ... so  $\z_1$ occurs with probability  $\alpha_1$, etc.
+I.e., each prize $z_k$ occurs with probability  $\alpha_k$ ... so  $z_1$ occurs with probability  $\alpha_1$, etc.
 </div>
 
 > by $\alpha_1 \cdot z_1 \oplus \alpha_2\cdot z_2 \oplus ··· \oplus \alpha_K \cdot z_K$
+
+\
 
 This is a very handy notation but it needs some explanation (unfold).
 
@@ -356,6 +363,11 @@ Consider the diagrams in figure 3.1 in O-R. Can you explain what the points depi
 We now have the tools consider the question that motivated this: how might an individual choose among a set of uncertain choices, and what can we say about this?
 
 Formally, what are the "preferences over the set of lotteries $L(Z)$” and “what restrictions over these preferences seem reasonable”?
+
+
+<div class="marginnote">
+DR Todo: I intend to add a video here discussing this
+</div>
 
 \
 
@@ -459,6 +471,9 @@ While I descrive a set of countable alternatives, O-R define the below over the 
 
 </div>
 
+\
+
+
 
 ```{block2,  type='def'}
 
@@ -468,7 +483,7 @@ Consider the "Expected Utility" function $U$. This has a particular form. It is 
 
 $$U(p)= \sum_{i=1}^{n}p_i v(z_i)$$.
 
-Where $v(\cdot)$ is a 'value function' (aka 'sub-utility function', aka 'Bernoully function').
+Where $v(\cdot)$ is a 'value function' (aka 'sub-utility function', aka 'Bernoulli function').
 
 \
 
@@ -504,7 +519,7 @@ With uncertainty, linear (affine) transformations of the $v$ function represent 
 
 Formally, if the VNM utility function $v(\cdot)$ represents a set of preferences, the VNM utility function $w(\cdot)$ represents the same preferences if and only if, for some scalar $\alpha$ and some scalar $\beta>0$
 
-$$w(g) = \alpha + \beta v(g)$$.
+$$w(g) = \alpha + \beta v(g).$$
 
 \
 Note that when we were choosing between two goods under certainty,
@@ -523,6 +538,7 @@ Although O-R cover the Allais paradox next, I think it may be easier to understa
 ```  
 
 \
+
 ## Risk preferences {#risk-pref}
 
 Consider the choice between two gambles and one 'certainty':
