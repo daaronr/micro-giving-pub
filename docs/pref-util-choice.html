@@ -567,6 +567,8 @@ ial treatment)</p></li>
 <p>What did this depend on? Would other people in your place have made the same decision?</p>
 <p>If you got amnesia and forgot what you decided and then were in the same situation again. Do you think you’d make the same decision?</p>
 </div>
+<p><br />
+</p>
 <center>
 <div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-73"></span>
 <img src="picsfigs/mortys-mind-blower.png" alt="Am I blowing your mind here?" width="50%" />
@@ -1085,12 +1087,14 @@ Consider how you might show whether they are or are not complete, and then unfol
 </div>
 <p><br />
 </p>
-<p>There are two possible cases:</p>
+<p>There are (only) two possible cases:</p>
 <div class="marginnote">
 <p>Note that these are the <em>only</em> two possible cases. (We know this because case 2 is simply the ‘negation’ of case 1. In standard logic either something is true, or it is not true). Thus if we can prove transitivity for both case 1 and case 2, we have proved it ‘for all possible cases’.</p>
 </div>
 <p><em>Case 1: “The first feature is decisive when comparing <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>: <span class="math inline">\(x \succ_1 y\)</span>.”</em></p>
 <p><em>Case 2: “The first feature is <em>not</em> decisive when comparing <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>…”</em></p>
+<p><br />
+</p>
 <p><strong>Considering Case 1</strong>:</p>
 <p>Given, by the above assumption, that <span class="math inline">\(y \succsim z\)</span>, it must be that <span class="math inline">\(y \succsim_1 z\)</span></p>
 <p>… i.e., y is “at least as good as z in its first feature” – otherwise, according to our preferences, y could not be ‘at least as good as z’).</p>
@@ -1107,7 +1111,7 @@ Consider how you might show whether they are or are not complete, and then unfol
 <p>Wait, why does <span class="math inline">\(x \succ_1 y\)</span> combined with <span class="math inline">\(y \succsim_1 z\)</span> imply that <span class="math inline">\(x \succ_1 z\)</span>? (think, and then unfold).</p>
 
 <div class="fold">
-<p>This seems intuitively obvious: if ‘x is strictly better than y’ and ‘y is at least as good as z’, then it should be that ‘x is strictly better than z’. But if we are compulsive mathematicians, we would need to actually formally prove this, as Problem 1b requests.</p>
+<p>This seems intuitively obvious: if ‘feature 1 of x is strictly better than feature 1 of y’ and ‘feature 1 of y is at least as good as feature 1 of z’, then it should be that ‘feature 1 of x is strictly better than feature 1 of z’. But if we are compulsive mathematicians, we would need to actually formally prove this, as Problem 1b requests.</p>
 </div>
 <p><br />
 </p>
@@ -1249,6 +1253,9 @@ What properties does the ‘Unanimity rule’ preference relation have or not ha
 <p><br />
 </p>
 <p>How does the example in the prior fold show that it’s not complete? (unfold below)</p>
+<div class="marginnote">
+<p>DR Todo: I intend to add a video here discussing this</p>
+</div>
 </div>
 
 <div class="fold">
@@ -1373,7 +1380,12 @@ Can you construct a utility function that ‘represents’ preferences $a b c d 
 <p><font color='RawSienna'>There is some debate about the meaning and interpretation of utility, particularly in the Behavioural Economics literature </font></p>
 <p>Although the NS text describes it as “The pleasure or satisfaction that people get from their economic activity” I think that most economists do <em>not</em> see it that way.</p>
 <p>Perhaps the modern non-behavioral definition of utility would be ‘the thing that drives choices, subject to constraints’.</p>
-<p>So if utility is (at best) defined as ‘the thing that people maximise’, does it have any meaning, or does it simply lead to circular reasoning. What do you think? (My thoughts in the fold).</p>
+<p>So if utility is (at best) defined as ‘the thing that people maximise’, does it have any meaning, or does it simply lead to circular reasoning?</p>
+
+<div class="inputq">
+What do you think?
+</div>
+<p>(My thoughts in the fold).</p>
 
 <div class="fold">
 <p>My opinion is that there is some ‘bite’.</p>
@@ -1399,7 +1411,7 @@ A defining feature of the standard Economics approach is that decisions are made
 </p>
 <p><strong>Consider: Revealed preference:</strong></p>
 <p>if Al buys a cat instead of a dog, and a dog was cheaper, we assume Al gets more utility from a cat</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-118"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-119"></span>
 <img src="picsfigs/alscat.jpg" alt="Al and his cat" width="40%" />
 <p class="caption">
 Figure 2.3: Al and his cat
@@ -1416,7 +1428,10 @@ Figure 2.3: Al and his cat
 <div class="marginnote">
 <p>In more detailed discussions, we might speak of ‘cardinal utility’, ‘ordinal utility’.</p>
 </div>
-<p>Empirically, it is hard to imagine how these could be measured: if utility is only indirectly and partially observable through an individual’s choices… when do we observe choices that trade off between one person and another in ways that reflect the ‘sum of their utilities’? (Never, I guess.)</p>
+<p>Empirically, it is hard to imagine how these could be measured: if utility is only indirectly and partially observable through an individual’s choices… when do we observe choices that trade off between one person and another in ways that reflect the ‘sum of their utilities’?</p>
+<div class="marginnote">
+<p>Never, I think.</p>
+</div>
 </div>
 <div id="when-can-utility-functions-represent-preferences" class="section level3" number="2.4.1">
 <h3><span class="header-section-number">2.4.1</span> When can utility functions ‘represent preferences’?</h3>
@@ -1474,13 +1489,16 @@ The rest of this section in O-R is highly abstract and I don’t see many direct
 
 <div class="figure" style="text-align: center">
 <img src="picsfigs/or_cinema.png" alt="Cinema seats (from O-R)" width="50%" />
-<p class="caption">(\#fig:unnamed-chunk-122)Cinema seats (from O-R)</p>
+<p class="caption">(\#fig:unnamed-chunk-123)Cinema seats (from O-R)</p>
 </div>
 </center>
 -->
 
 <div class="inputq">
 Consider, how could you assign a utility function to these preferences?
+</div>
+<div class="marginnote">
+<p>DR Todo: I chope to add a video here discussing this</p>
 </div>
 
 <div class="fold">
@@ -1496,7 +1514,7 @@ where <span class="math inline">\(r(x)\)</span> is the row number and <span clas
 <h4>Allowing for infinite sets: <em>some</em> (but not all) preferences can be represented by a utility function</h4>
 
 <div class="technote">
-<p>There are ‘important’ economic theorems specifying ‘sufficient conditions for preferences to be represented by a utility fncn’ ; we will not cover it, but unfold below for some more discussion, if you are interested.</p>
+<p>There are ‘important’ economic theorems specifying ‘sufficient conditions for preferences to be represented by a utility function’ ; we will not cover it, but unfold below for some more discussion, if you are interested.</p>
 </div>
 
 <div class="fold">
@@ -1514,9 +1532,9 @@ where <span class="math inline">\(r(x)\)</span> is the row number and <span clas
 <blockquote>
 <p><span class="math inline">\(x \succsim y\)</span> if and only if <span class="math inline">\(x \geq y\)</span></p>
 </blockquote>
-This is easily represented bu the utility function <span class="math inline">\(u(x)=x\)</span>.
+This is easily represented by the utility function <span class="math inline">\(u(x)=x\)</span>.
 <div class="marginnote">
-<p>… or in fact, by any utility function which is an increasing function, such as $u(x)= x^2 + ln(x) + 108</p>
+<p>… or in fact, by any utility function which is an increasing function, such as <span class="math inline">\(u(x)= x^2 + ln(x) + 108\)</span></p>
 </div>
 <p><br />
 </p>
@@ -1525,7 +1543,7 @@ This is easily represented bu the utility function <span class="math inline">\(u
 <!-- <center> 
 <div class="figure" style="text-align: center">
 <img src="picsfigs/lex_square.png" alt="O-R: Lex. preferences withinin a square" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-127)O-R: Lex. preferences withinin a square</p>
+<p class="caption">(\#fig:unnamed-chunk-128)O-R: Lex. preferences withinin a square</p>
 </div>
 </center>
 
@@ -1561,6 +1579,9 @@ The colon (“:”) is read as ‘such that’.
 <p>O-R say ‘Increasing function of utility function is utility function’. But it’s more than this. It’s the <em>same utility function</em>.</p>
 <p>* Note that I say ‘regular utility function’. When we consider uncertainty in the ‘expected utility’ framework, this will not hold with respect to ‘increasing transformations’ of the functions we will be dealing with, only with respect to ‘affine (linear) transformations’.</p>
 </div>
+<div class="marginnote">
+<p>DR Todo: I intend to add a video here discussing this</p>
+</div>
 <p>This is pretty important because it gives us a sense of how closely we might be able to identify a utility function. As O-R note:</p>
 <blockquote>
 <p>if the function <span class="math inline">\(u(x,y)\)</span> represents a given preference relation then so does the function <span class="math inline">\(3u(x,y) −7\)</span> [for example]</p>
@@ -1583,10 +1604,10 @@ When we say <span class="math inline">\(x \in X\)</span> we are considering elem
 <div class="def">
 <p><span class="math inline">\(w(x) \geq w (y)\)</span> means is the same thing as saying <span class="math inline">\(f(u(x)) \geq f(u(y))\)</span>, by the above definition.</p>
 <p>Because <span class="math inline">\(f\)</span> is an <em>increasing function</em> (*), <span class="math inline">\(f(u(x)) \geq f(u(y))\)</span> holds if and only if <span class="math inline">\(u(x) \geq u(y)\)</span>.</p>
-<span class="math inline">\(u(x) \geq u(y)\)</span> which is true if and only if <span class="math inline">\(x \succsim y\)</span>, by the definition of utility functions ‘representing preferences.’
+<span class="math inline">\(u(x) \geq u(y)\)</span> is true if and only if <span class="math inline">\(x \succsim y\)</span>, by the definition of utility functions ‘representing preferences.’
 </div>
 <div class="marginnote">
-<p>An <em>increasing function</em> is simply a function that increases in its arguments. By definition, <span class="math inline">\(f\)</span> is an increasing function if and only if <span class="math inline">\(f(a)&gt;f(b)\)</span> whenever <span class="math inline">\(a&gt;b\)</span>.</p>
+<p>* An <em>increasing function</em> is simply a function that increases in its arguments. By definition, <span class="math inline">\(f\)</span> is an increasing function if and only if <span class="math inline">\(f(a)&gt;f(b)\)</span> whenever <span class="math inline">\(a&gt;b\)</span>.</p>
 </div>
 
 <div class="tip">
@@ -1606,14 +1627,17 @@ When we say <span class="math inline">\(x \in X\)</span> we are considering elem
 <p>Recall … a preference relation refers only to the individual’s mental attitude, not to the choices she may make. In this chapter, we describe a concept of choice, independently of preferences. (O-R, p. 17)</p>
 </blockquote>
 <div class="marginnote">
-<p>The separation of Preferences and Choice in their text, into separate concepts and chapters, is a bit unusual. I suspect that this reflects how these are often separated in Behavioral Economics; unlike in classical economics choices might <em>not</em> simply optimise with respect to an individual’s preferences (and ‘experienced’ utility).</p>
+<p>The separation of Preferences and Choice in their text, into separate concepts and chapters, is a bit unusual. I suspect that this reflects how these are often separated in Behavioral Economics; unlike in classical Economics, choices might <em>not</em> simply optimise with respect to an individual’s preferences (and ‘experienced’ utility).</p>
 </div>
 <div id="choice-problems-choice-functions" class="section level4 unnumbered" number="">
 <h4>Choice problems, choice functions</h4>
 
 <div class="def">
 <blockquote>
-<p>Given a set <span class="math inline">\(X\)</span>, a choice problem for <span class="math inline">\(X\)</span> is a nonempty subset of <span class="math inline">\(X\)</span> and a choice function for <span class="math inline">\(X\)</span> associates with every choice problem <span class="math inline">\(A \in X\)</span> a single member of <span class="math inline">\(A\)</span> (the member chosen).</p>
+<p>Given a set <span class="math inline">\(X\)</span>, a choice problem for <span class="math inline">\(X\)</span> is a nonempty subset of <span class="math inline">\(X\)</span>…</p>
+</blockquote>
+<blockquote>
+<p>and a choice function for <span class="math inline">\(X\)</span> associates with every choice problem <span class="math inline">\(A \in X\)</span> a single member of <span class="math inline">\(A\)</span> (the member chosen).</p>
 </blockquote>
 <p>(O-R, def 2.1)</p>
 </div>
@@ -1646,9 +1670,9 @@ When we say <span class="math inline">\(x \in X\)</span> we are considering elem
 </ol>
 <p>…then his ‘choice function’ will solve the ‘problem’</p>
 <p><span class="math display">\[ max\{u(x): x \in A\}\]</span>.</p>
-<p>We read this as “he chooses x to maximize the utility function <span class="math inline">\(u(x)\)</span> under the constraint that <span class="math inline">\(x\)</span> is in the ‘feasible’ set <span class="math inline">\(A\)</span>.”"</p>
+<p>We read this as “he chooses x to maximize the utility function <span class="math inline">\(u(x)\)</span> under the constraint that <span class="math inline">\(x\)</span> is in the ‘feasible’ set <span class="math inline">\(A\)</span>.” *</p>
 <div class="marginnote">
-<p><span class="math inline">\(A\)</span> This may be the set of all alternatives Ratchell can afford to buy given his wealth, or the set of combination of goods and liesure time he can consume given his productivity and the prices he faces in the market, etc.</p>
+<p><span class="math inline">\(A\)</span>: This may be the set of all alternatives Ratchell can afford to buy given his wealth, or the set of combination of goods and liesure time he can consume given his productivity and the prices he faces in the market, etc.</p>
 </div>
 <dl>
 <dt>Utility</dt>
@@ -1745,6 +1769,9 @@ c: three apples, four carrots, and a spiderman costume</p>
 </div>
 <p>In fact, in observed data, people seem to often make choices with intransitivities.</p>
 <p>There are other ‘choice rules’ that we might imagine people use that also cannot be rationalised by any preferences. For example (O-R 2.3), … suppose…</p>
+<div class="marginnote">
+<p>DR Todo: I hope to add a video here discussing this</p>
+</div>
 <blockquote>
 <p>From any set A of available alternatives, the individual chooses a median alternative.</p>
 </blockquote>
@@ -1765,7 +1792,9 @@ But the 50ml and 100ml were available in both sets S and L. IN this hypothetical
 <blockquote>
 <p>The waiter informs him … he may have either broiled salmon at 2.50 USD or steak at 4.00 USD. … he elects the salmon. Soon after the waiter returns from the kitchen … to tell him that fried snails and frog’s legs are [also available] for 4.50 USD each. … his response is “Splendid, I’ll change my order to steak”.</p>
 </blockquote>
-<p>This comes from <span class="citation">(<span class="citeproc-not-found" data-reference-id="luceTheoryIndividualChoice1957"><strong>???</strong></span>)</span>, as cited by O-R.</p>
+<div class="marginnote">
+<p>This comes from Luce (1957) <span class="citation">(<span class="citeproc-not-found" data-reference-id="luceTheoryIndividualChoice1957"><strong>???</strong></span>)</span>, as cited by O-R.</p>
+</div>
 <p>O-R (Ex 2.3) explain why this seemingly perverse behavior <em>could</em> be rationalizable, because of the <em>information conveyed</em>.</p>
 <p><br />
 </p>
@@ -1774,8 +1803,11 @@ But the 50ml and 100ml were available in both sets S and L. IN this hypothetical
 <p>This translation from straightforward payoffs to payoffs that depend on the nature of the strategic interaction is explored in my paper ‘Losing Face’ <span class="citation">(<span class="citeproc-not-found" data-reference-id="gallLosingFace2020"><strong>???</strong></span>)</span> (as well as in much previous work; I’m just self-promoting here).</p>
 </div>
 <!-- TODO: empirical evidence here -->
-<div id="property-alpha" class="section level4" number="2.5.2.1">
-<h4><span class="header-section-number">2.5.2.1</span> Property <span class="math inline">\(\alpha\)</span></h4>
+<div id="property-alpha" class="section level4 unnumbered" number="">
+<h4>Property <span class="math inline">\(\alpha\)</span></h4>
+<div class="marginnote">
+<p>DR Todo: I intend to add a video here discussing this</p>
+</div>
 <p>The above ‘violations’ and the discussion of ‘irrelevant alternatives’ relate to what O-R refer to as:</p>
 
 <div class="def">

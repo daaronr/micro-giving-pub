@@ -142,6 +142,8 @@ If you got amnesia and forgot what you decided and then were in the same situati
 
 ```
 
+\
+
 <center>
 
 ```{r  fig.cap = 'Am I blowing your mind here?', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
@@ -868,7 +870,7 @@ Also note that the above example happens to be perfectly general (we sometimes s
  
 \
 
-There are two possible cases:
+There are (only) two possible cases:
 
 <div class="marginnote">
 Note that these are the *only* two possible cases. (We know this because case 2 is simply the 'negation' of case 1.  In standard logic either something is true, or it is not true). Thus if we can prove transitivity for both case 1 and case 2, we have proved it 'for all possible cases'. 
@@ -879,6 +881,7 @@ Note that these are the *only* two possible cases. (We know this because case 2 
 
 *Case 2: "The first feature is *not* decisive when comparing $x$ and $y$..."*
 
+\
 
 **Considering Case 1**:
 
@@ -898,7 +901,7 @@ Wait, why does  $x \succ_1 y$ combined with $y \succsim_1 z$  imply that  $x \su
 
 ```{block2,  type='fold'}
 
-This seems intuitively obvious: if 'x is strictly better than y' and 'y is at least as good as z', then it should be that 'x is strictly better than z'. But if we are compulsive mathematicians, we would need to actually formally prove this, as Problem 1b requests.  
+This seems intuitively obvious: if 'feature 1 of x is strictly better than feature 1 of y' and 'feature 1 of y is at least as good as feature 1 of z', then it should be that 'feature 1 of x is strictly better than feature 1 of z'. But if we are compulsive mathematicians, we would need to actually formally prove this, as Problem 1b requests.  
 
 ```
 
@@ -1097,6 +1100,12 @@ Informally 'If X is at least as good as Y in all aspects, and Y is at least as g
 
 How does the example in the prior fold show that it's not complete?  (unfold below)
 
+
+
+<div class="marginnote">
+DR Todo: I intend to add a video here discussing this
+</div>
+
 ```
 
 ```{block2,  type='fold'}
@@ -1271,7 +1280,13 @@ Although the NS text describes it as "The pleasure or satisfaction that people g
 
 Perhaps the modern non-behavioral definition of utility would be 'the thing that drives choices, subject to constraints'.
 
-So if utility is (at best) defined as 'the thing that people maximise', does it have any meaning, or does it simply lead to circular reasoning. What do you think? (My thoughts in the fold).
+So if utility is (at best) defined as 'the thing that people maximise', does it have any meaning, or does it simply lead to circular reasoning? 
+
+```{block2,  type='inputq'}
+What do you think?
+```  
+
+(My thoughts in the fold).
 
 ```{block2,  type='fold'}
 My opinion is that there is some 'bite'. 
@@ -1343,7 +1358,11 @@ This raises another issue: can we compare whether one person gets 'more' or 'les
  In more detailed discussions, we might speak of 'cardinal utility', 'ordinal utility'. 
 </div>
  
-Empirically, it is hard to imagine how these could be measured: if utility is only indirectly and partially observable through an individual's choices... when do we observe choices that trade off between one person and another in ways that reflect the 'sum of their utilities'? (Never, I guess.)
+Empirically, it is hard to imagine how these could be measured: if utility is only indirectly and partially observable through an individual's choices... when do we observe choices that trade off between one person and another in ways that reflect the 'sum of their utilities'? 
+
+<div class="marginnote">
+Never, I think. 
+</div>
  
  
 
@@ -1435,6 +1454,11 @@ Consider, how could you assign a utility function to these preferences?
   
 ```  
 
+
+<div class="marginnote">
+DR Todo: I chope to add a video here discussing this
+</div>
+
 ```{block2,  type='fold'}
 
 Just rank the seat preferences, and assign the lowest utility number to the least-preferred seat (most front and right). Then increase the utility by 1 as you move each seet to the left. Then start at the next row back, all the way to the right, adding 1 to the utility, etc. 
@@ -1452,7 +1476,7 @@ where $r(x)$ is the row number and $c(x)$ the column number.
 #### Allowing for infinite sets: *some* (but not all) preferences can be represented by a utility function {-}
 
 ```{block2,  type='technote'}
-There are 'important' economic theorems specifying 'sufficient conditions for preferences to be represented by a utility fncn' ; we will not cover it, but unfold below for some more discussion, if you are interested.
+There are 'important' economic theorems specifying 'sufficient conditions for preferences to be represented by a utility function' ; we will not cover it, but unfold below for some more discussion, if you are interested.
 
 ```  
 
@@ -1481,9 +1505,9 @@ Suppose 'I always find more food at least as good as less food'. We could repres
 
 > $x \succsim y$ if and only if $x \geq y$
 
-This is easily represented bu the utility function $u(x)=x$.
+This is easily represented by the utility function $u(x)=x$.
 <div class="marginnote">
-... or in fact, by any utility function which is an increasing function, such as $u(x)= x^2 + ln(x) + 108 
+... or in fact, by any utility function which is an increasing function, such as $u(x)= x^2 + ln(x) + 108$
 </div>
  
 \
@@ -1530,10 +1554,16 @@ You can skip the  proof that follows this.
 
 ### An increasing function of a ('regular'\*) utility function represents the same preferences
 
+
 <div class="marginnote">
 O-R say 'Increasing function of utility function is utility function'. But it's more than this. It's the *same utility function*.
 
 \* Note that I say 'regular utility function'. When we consider uncertainty in the 'expected utility' framework, this will not hold with respect to 'increasing transformations' of the functions we will be dealing with, only with respect to 'affine (linear) transformations'.
+</div>
+
+
+<div class="marginnote">
+DR Todo: I intend to add a video here discussing this
 </div>
 
 This is pretty important because it gives us a sense of how closely we might be able to identify a utility function. As O-R note: 
@@ -1569,12 +1599,12 @@ $w(x) \geq w (y)$ means is the same thing as saying $f(u(x)) \geq f(u(y))$, by t
 
 Because $f$ is an *increasing function* (\*), $f(u(x)) \geq f(u(y))$ holds if and only if $u(x) \geq u(y)$.
   
-$u(x) \geq u(y)$  which is true if and only if $x \succsim y$, by the definition of utility functions 'representing preferences.'
+$u(x) \geq u(y)$ is true if and only if $x \succsim y$, by the definition of utility functions 'representing preferences.'
  
 ```  
 
 <div class="marginnote">
-An *increasing function* is simply a function that increases in its arguments. By definition, $f$ is an increasing function if and only if $f(a)>f(b)$ whenever $a>b$.
+\* An *increasing function* is simply a function that increases in its arguments. By definition, $f$ is an increasing function if and only if $f(a)>f(b)$ whenever $a>b$.
 </div>
  
 
@@ -1599,7 +1629,7 @@ Note that this follows much of O-R chapter 2. You must read that chapter *along 
 
 <div class="marginnote">
 
-The separation of Preferences and Choice in their text, into separate concepts and chapters, is a bit unusual. I suspect that this reflects how these are often separated in Behavioral Economics; unlike in classical economics choices might *not* simply optimise with respect to an individual's preferences (and 'experienced' utility). 
+The separation of Preferences and Choice in their text, into separate concepts and chapters, is a bit unusual. I suspect that this reflects how these are often separated in Behavioral Economics; unlike in classical Economics, choices might *not* simply optimise with respect to an individual's preferences (and 'experienced' utility). 
 
 </div>
 
@@ -1607,7 +1637,9 @@ The separation of Preferences and Choice in their text, into separate concepts a
  
 ```{block2,  type='def'}
 
-> Given a set $X$, a choice problem for $X$ is a nonempty subset of $X$ and a choice function for $X$ associates with every choice problem $A \in X$ a single member of $A$ (the member chosen).
+> Given a set $X$, a choice problem for $X$ is a nonempty subset of $X$...
+
+> and a choice function for $X$ associates with every choice problem $A \in X$ a single member of $A$ (the member chosen).
 
 (O-R, def 2.1)
 
@@ -1648,10 +1680,10 @@ If...
 
 $$ max\{u(x): x \in A\}$$.
 
-We read this as "he chooses x to maximize the utility function $u(x)$ under the constraint that $x$ is in the 'feasible' set $A$."" 
+We read this as "he chooses x to maximize the utility function $u(x)$ under the constraint that $x$ is in the 'feasible' set $A$." \* 
 
 <div class="marginnote">
-$A$ This may be the set of all alternatives Ratchell can afford to buy given his wealth, or the set of combination of goods and liesure time he can consume given his productivity and the prices he faces in the market, etc. 
+$A$:  This may be the set of all alternatives Ratchell can afford to buy given his wealth, or the set of combination of goods and liesure time he can consume given his productivity and the prices he faces in the market, etc. 
 </div>
 Utility
 :     "The pleasure or satisfaction that people get from their economic activity."
@@ -1775,6 +1807,11 @@ In fact, in observed data, people seem to often make choices with intransitiviti
 
 There are other 'choice rules' that we might imagine people use that also cannot be rationalised by any preferences. For example (O-R 2.3), ... suppose... 
 
+
+<div class="marginnote">
+DR Todo: I hope to add a video here discussing this
+</div>
+
 >  From any set A of available alternatives, the individual chooses a median alternative.
 
 This example relates to a proposed 'middle-choice' norm in behavioral economics. (Unfold...)
@@ -1800,7 +1837,10 @@ Is *this* rationalizable? :
 
 > The waiter informs him ... he may have either broiled salmon at 2.50 USD or steak at 4.00 USD. ... he elects the salmon. Soon after the waiter returns from the kitchen ... to  tell him that fried snails and frog’s legs are [also available] for 4.50 USD  each. ... his response is “Splendid, I’ll change my order to steak”.
 
-This comes from [@luceTheoryIndividualChoice1957], as cited by O-R.
+<div class="marginnote">
+This comes from Luce (1957) [@luceTheoryIndividualChoice1957], as cited by O-R.
+</div>
+ 
 
 
 O-R (Ex 2.3) explain why this seemingly perverse behavior *could* be rationalizable, because of the *information conveyed*.
@@ -1816,7 +1856,12 @@ This translation from straightforward payoffs to payoffs that depend on the natu
 </div>
 <!-- TODO: empirical evidence here -->
 
-#### Property $\alpha$  
+#### Property $\alpha$ {-}
+
+
+<div class="marginnote">
+DR Todo: I intend to add a video here discussing this
+</div>
 
 The above 'violations' and the discussion of 'irrelevant alternatives' relate to what O-R refer to as:
 
@@ -1984,7 +2029,9 @@ Clearly these cannot reflect rationalizable preferences unless we make the *desc
 
 ## Exercises: Preferences and utility {-#ex-pref-util}
 
-We will also have a discussion and writing exercise (time permitting) on the realism of particular assumptions and on 'observing preferences and observing violations of transitivity'
+We will also have a discussion and writing exercise (time permitting) on the realism of particular assumptions and on 'observing preferences and observing violations of transitivity'.
+
+<!-- #TODO: plan this -->
 
 ### (Highly optional): Properties of binary relations -   O-R problem 1a.  {-#or_p1}
 
