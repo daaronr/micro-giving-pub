@@ -733,14 +733,14 @@ Figure 2.1: Am I blowing your mind here?
 
 <div class="fold">
 <blockquote>
-<p>Another example of a binary relation is “smaller than” on the set of numbers. For some pairs <span class="math inline">\((x,y )\)</span> of numbers, x is smaller than y , and for some it is not.</p>
+<p>Another example of a binary relation is “smaller than” on the set of numbers. For some pairs <span class="math inline">\((x,y )\)</span> of numbers, x is smaller than y, and for some it is not.</p>
 </blockquote>
 <blockquote>
 <p>For a binary relation R, the expression <span class="math inline">\(x R y\)</span> means that x is related to y according to R. For any pair <span class="math inline">\((x, y)\)</span> of members of X , the statement <span class="math inline">\(x R y\)</span> either holds or does not hold. For example, for the binary relation &lt; on the set of numbers, we have <span class="math inline">\(3 &lt; 5\)</span>, but not <span class="math inline">\(7&lt;1\)</span>.</p>
 </blockquote>
 <p><br></p>
 <p><strong>Q: Given that R stands for relation, what does <span class="math inline">\(xRy\)</span> means? Does it mean the relationship between x and y?</strong></p>
-<p><strong>A: It means ‘x relates to y, by the relation R’.</strong> If the relation R is ‘greater than’, then <span class="math inline">\(xRy\)</span> means ’x is greater than y$.</p>
+<p><strong>A: It means ‘x relates to y, by the relation R’.</strong> If the relation R is ‘greater than’, then <span class="math inline">\(xRy\)</span> means ‘<span class="math inline">\(x\)</span> is greater than <span class="math inline">\(y\)</span>’.</p>
 <p><br />
 </p>
 <p><strong>Q: If so, what does yRx mean?</strong></p>
@@ -794,6 +794,9 @@ Figure 2.1: Am I blowing your mind here?
 </div>
 <div id="completeness" class="section level4 unnumbered" number="">
 <h4>Completeness</h4>
+<div class="marginnote">
+<p>DR Todo: I intend to add a video here discussing these properties</p>
+</div>
 <p>Completeness (informal definition): “Given two options, A and B, a person can state which option they prefer or whether they find both options equally attractive.”</p>
 <p>The following is <font color='red'>forbidden</font>: “I cannot choose between a ski holiday and a beach holiday, yet I am not indifferent between these.”</p>
 <p><img src="picsfigs/donkeybales.jpeg" width="50%" style="display: block; margin: auto;" /></p>
@@ -802,7 +805,11 @@ Figure 2.1: Am I blowing your mind here?
 <p>"Why <em>wouldn’t</em> I be able to express a preference? (Consider this for a moment, and then unfold…)</p>
 
 <div class="fold">
-<p>In the case above it seems strange to not be able to express a preference. But for other cases it may be extremely difficult or painful to compare two things. Imagine if you were asked to compare ‘between ’never seeing your mother’ or ‘never seeing your father.’ In general, economists’ standard approach assumes we have a consistent preference ranking over all possibilities, and choose accordingly.</p>
+<p>In the case above it seems strange to not be able to express a preference. But for other cases it may be extremely difficult or painful to compare two things. Imagine if you were asked to compare ‘between ’never seeing your mother’ or ‘never seeing your father.’</p>
+<div class="marginnote">
+<p>Alternately, imagine you are asked ‘do you prefer a blargh-colored shirt or a fleem-colored shirt’, where blargh and fleem are colors you have never heard of before.</p>
+</div>
+<p>In general, economists’ standard approach assumes we have a consistent preference ranking over all possibilities, and choose accordingly.</p>
 <p>However, other social sciences see this differently.</p>
 </div>
 <div class="marginnote">
@@ -866,7 +873,12 @@ Figure 2.1: Am I blowing your mind here?
 <ul>
 <li><p>If I prefer an Apple to a Banana and a Banana to Cherry then I prefer an Apple to a Cherry.</p></li>
 <li><p>A similar idea holds if I am indifferent between one pair of these. (<span class="math inline">\(\sim\)</span>)</p></li>
-<li><p>… this obviously extends to ‘chains’ combining these … so</p></li>
+</ul>
+<div class="marginnote">
+<p>The transitivity of the ‘indifference relation’ <span class="math inline">\(\sim\)</span> is a general property of ‘equivalence relations’.</p>
+</div>
+<ul>
+<li>… this obviously extends to ‘chains’ combining these … so</li>
 </ul>
 <p><span class="math display">\[ A \succ B \:\: and \: \: B \sim C \rightarrow A \succ C \]</span>
 etc.</p>
@@ -934,7 +946,7 @@ Act this out? Make a video?
 </p>
 <div id="value_function" class="section level4 unnumbered" number="">
 <h4>Value functions</h4>
-<p>O-R first consider a ‘value function’ “<span class="math inline">\(v\)</span> that attaches to each alternative a number” … the preference relation here "is defined by <span class="math inline">\(x \succsim y\)</span> if and only if <span class="math inline">\(v(x) \succsim v(y)\)</span>.</p>
+<p>O-R first consider a ‘value function’ “<span class="math inline">\(v\)</span> that attaches to each alternative a number” … the preference relation here "is defined by <span class="math inline">\(x \succsim y\)</span> if and only if <span class="math inline">\(v(x) \geq v(y)\)</span>.</p>
 <div class="marginnote">
 <p>This is close to the ‘utility function’ that we will discuss later. It is trivial to show that this is complete and transitive. (Can you show it?).</p>
 </div>
@@ -1006,7 +1018,7 @@ Figure 2.2: American Gothic, by Grant Wood
 <p>In business data science, some ‘tree-based’ models of choice implicitly assume lex preferences. Business marketers speak of ‘hygiene factors’; if these are not achieved, the customer will walk away.</p>
 </div>
 <div class="marginnote">
-<p>DR #TODO: I intend to add a video or audio content discussing the above.</p>
+<p>DR #TODO: I intend to add a video or audio content discussing the above, perhaps ‘going online’ or with a ‘vox pop’.</p>
 </div>
 <p><br />
 </p>
@@ -1015,6 +1027,9 @@ Figure 2.2: American Gothic, by Grant Wood
 <p>An individual has in mind two [or more] <a href="#Completeness">complete</a> and <a href="#Transitivity">transitive</a> binary relations, <span class="math inline">\(\succsim_1\)</span> and <span class="math inline">\(\succsim_2\)</span>, each of which relates to one feature of the alternatives. For example, if <span class="math inline">\(X\)</span> is a set of computers, the features might be the size of the memory and the resolution of the screen.
 (O-R, p. 7)</p>
 </blockquote>
+<div class="marginnote">
+<p>DR Todo: I intend to add a video here discussing this with a numerical example</p>
+</div>
 <div class="marginnote">
 <p>Lexicographic preferences can be applied to any number of features, but we will only consider two features here.</p>
 </div>
@@ -1035,7 +1050,7 @@ Figure 2.2: American Gothic, by Grant Wood
 <li><span class="math inline">\(x \sim_1 y\)</span> and <span class="math inline">\(x \succsim_2 y\)</span> .</li>
 </ol>
 </blockquote>
-<p><em>From now on, I may use the abbreviation ‘lex preferences’ to mean ’lexicographic preferences.</em></p>
+<p><em>From now on, I may use the abbreviation ‘lex preferences’ to mean ‘lexicographic preferences’.</em></p>
 <p><br />
 </p>
 <p><strong>Are lexicographic (lex) preferences complete?</strong></p>
@@ -1049,7 +1064,7 @@ Consider how you might show whether they are or are not complete, and then unfol
 <p>Its completeness follows from the completeness of <span class="math inline">\(\succsim_1\)</span> and <span class="math inline">\(\succsim_2\)</span>. (O-R, p. 7)</p>
 </blockquote>
 <ul>
-<li><p>If we suppose that the ‘sub-preference orderings’ <span class="math inline">\(succsim_1\)</span> and <span class="math inline">\(succsim_2\)</span> can be applied to these features of any alternative…</p></li>
+<li><p>If we suppose that the ‘sub-preference orderings’ <span class="math inline">\(\succsim_1\)</span> and <span class="math inline">\(\succsim_2\)</span> can be applied to these features of any alternative…</p></li>
 <li><p>then we can apply the procedure above to determine the overall preference ordering <span class="math inline">\(\succsim\)</span> between any two pairings.<br />
 </p></li>
 </ul>
@@ -1058,6 +1073,9 @@ Consider how you might show whether they are or are not complete, and then unfol
 </p>
 <div id="are-lex-preferences-transitive" class="section level5 unnumbered" number="">
 <h5>Are lex preferences transitive?</h5>
+<div class="marginnote">
+<p>DR Todo: I intend to add a video here covering this</p>
+</div>
 <blockquote>
 <p>Suppose that <span class="math inline">\(x \succsim y\)</span> and <span class="math inline">\(y \succsim z\)</span>.</p>
 </blockquote>

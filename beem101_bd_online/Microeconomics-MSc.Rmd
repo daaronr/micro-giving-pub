@@ -161,13 +161,15 @@ Now it is only accessible within the university login
 
 **Notes by instructor [David Reinstein](davidreinstein.wordpress.com/)**
 
-```{r  fig.cap = 'Famous photograph by Ansel Adams, who loved black and white photography, colorised using De-Oldify by Jason Antic', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = 'Famous photograph by Ansel Adams, who loved black and white photography, colorised using De-Oldify by Jason Antic', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/ansel_halfdome_coloronly.png")
 ```
 
 ## Focus and style of this module {-#focus}
 
+<!--
 *Note: [In the next section](#outline), I give a brief---and then a descriptive---outline of the 'story of this module' and the we will consider... and why these are interesting.*
+-->
 
 \
 
@@ -2467,7 +2469,7 @@ Another example of a binary relation (unfold Q&A)...
 
 ```{block2,  type='fold'}
 
-> Another example of a binary relation is “smaller than” on the set of numbers. For some pairs $(x,y )$ of numbers, x is smaller than y , and for some it is not.
+> Another example of a binary relation is “smaller than” on the set of numbers. For some pairs $(x,y )$ of numbers, x is smaller than y, and for some it is not.
 
 >  For a binary relation R, the expression $x R y$ means that x is related to y according to R. For any pair $(x, y)$ of members of X , the statement $x R y$ either holds or does not hold. For example, for the binary relation < on the set of numbers, we have $3 < 5$, but not $7<1$.
 
@@ -2475,7 +2477,7 @@ Another example of a binary relation (unfold Q&A)...
 
 **Q: Given that R stands for relation, what does $xRy$ means? Does it mean the relationship between x and y?**
 
-**A: It means 'x relates to y, by the relation R'.** If the relation R is 'greater than', then $xRy$ means 'x is greater than y$.
+**A: It means 'x relates to y, by the relation R'.** If the relation R is 'greater than', then $xRy$ means '$x$ is greater than $y$'.
 
 \
 
@@ -2561,6 +2563,11 @@ In general, axioms like these also stand directly behind 'revealed preference' m
 
 #### Completeness {-}
 
+
+<div class="marginnote">
+DR Todo: I intend to add a video here discussing these properties
+</div>
+
 Completeness (informal definition): "Given two options, A and B, a person can state which option they prefer or whether they find both options equally attractive."
 
 The following is `r format_with_col("forbidden","red")`: "I cannot choose between a ski holiday and a beach holiday, yet I am not indifferent between these."
@@ -2575,7 +2582,13 @@ The following is `r format_with_col("forbidden","red")`: "I cannot choose betwee
 
 ```{block2,  type='fold'}
 
-In the case above it seems strange to not be able to express a preference. But for other cases it may be extremely difficult or painful to compare two things. Imagine if you were asked to compare 'between 'never seeing your mother' or 'never seeing your father.' In general, economists' standard approach assumes we have a consistent preference ranking over all possibilities, and choose accordingly.  
+In the case above it seems strange to not be able to express a preference. But for other cases it may be extremely difficult or painful to compare two things. Imagine if you were asked to compare 'between 'never seeing your mother' or 'never seeing your father.' 
+
+<div class="marginnote">
+Alternately, imagine you are asked 'do you prefer a blargh-colored shirt or a fleem-colored shirt', where blargh and fleem are colors you have never heard of before.
+</div>
+ 
+In general, economists' standard approach assumes we have a consistent preference ranking over all possibilities, and choose accordingly.  
 
 However, other social sciences see this differently.
 
@@ -2676,6 +2689,11 @@ $$ A \succ B \: and \: B \succ C \rightarrow A \succ C $$
 
 
 - A similar idea holds if I am indifferent between one pair of these.  ($\sim$)
+
+<div class="marginnote">
+The transitivity of the 'indifference relation' $\sim$ is a general property of 'equivalence relations'. 
+</div>
+
 
 
 - ... this obviously extends to 'chains' combining these ... so
@@ -2780,7 +2798,7 @@ We will consider a few examples, some of which *do*  satisfy completeness and tr
 
 #### Value functions {-#value_function} 
 
-O-R first consider a 'value function' "$v$ that attaches to each alternative a number" ... the preference relation here "is defined by $x \succsim y$  if and only if $v(x) \succsim v(y)$. 
+O-R first consider a 'value function' "$v$ that attaches to each alternative a number" ... the preference relation here "is defined by $x \succsim y$  if and only if $v(x) \geq  v(y)$. 
 
 <div class="marginnote">
 This is close to the 'utility function' that we will discuss later. It is trivial to show that this is complete and transitive. (Can you show it?).
@@ -2873,12 +2891,11 @@ The 'filtering' is also consistent with the standard way data is organised. Try 
 
 In business data science, some 'tree-based' models of choice implicitly assume lex preferences. Business marketers speak of 'hygiene factors'; if these are not achieved, the customer will walk away.
 
-
 ```
 
 
 <div class="marginnote">
-DR #TODO: I intend to add a video or audio content discussing the above.
+DR #TODO: I intend to add a video or audio content discussing the above, perhaps 'going online' or with a 'vox pop'.
 </div>
  
 
@@ -2889,6 +2906,12 @@ As stated by O-R:
 
 > An individual has in mind two [or more] [complete](#Completeness) and [transitive](#Transitivity) binary relations, $\succsim_1$ and $\succsim_2$, each of which relates to one feature of the alternatives. For example, if $X$ is a set of computers, the features might be the size of the memory and the resolution of the screen. 
 (O-R, p. 7)
+
+
+
+<div class="marginnote">
+DR Todo: I intend to add a video here discussing this with a numerical example
+</div>
 
 <div class="marginnote">
 Lexicographic preferences can be applied to any number of features, but we will only consider two features here. 
@@ -2907,7 +2930,7 @@ Lexicographic preferences can be applied to any number of features, but we will 
 > (ii) $x \sim_1 y$ and $x \succsim_2 y$ .
 
 
-*From now on, I may use the abbreviation 'lex preferences' to mean 'lexicographic preferences.*
+*From now on, I may use the abbreviation 'lex preferences' to mean 'lexicographic preferences'.*
 
 \
 
@@ -2922,7 +2945,7 @@ Consider how you might show whether they are or are not complete, and then unfol
 
 > Its completeness follows from the completeness of $\succsim_1$ and $\succsim_2$. (O-R, p. 7)
 
--  If we suppose that the 'sub-preference orderings' $succsim_1$ and $succsim_2$ can be applied to these features of any alternative...
+-  If we suppose that the 'sub-preference orderings' $\succsim_1$ and $\succsim_2$ can be applied to these features of any alternative...
 
 - then we can apply the procedure above to determine the overall preference ordering $\succsim$ between any two pairings.  
 
@@ -2932,6 +2955,10 @@ Consider how you might show whether they are or are not complete, and then unfol
 
 ##### Are lex preferences transitive? {-}
 
+
+<div class="marginnote">
+DR Todo: I intend to add a video here covering this
+</div>
 
 > Suppose that $x \succsim y$ and $y \succsim z$. 
 
