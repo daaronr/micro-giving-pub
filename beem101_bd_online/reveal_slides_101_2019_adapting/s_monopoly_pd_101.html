@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="David Reinstein (Exeter)" />
+  <meta name="dcterms.date" content="2019-05-11" />
+  <title>s_monopoly_pd_101.utf8.md</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="s_monopoly_pd_101_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="s_monopoly_pd_101_files/reveal.js-3.3.0.1/css/theme/white.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="reveal.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <link href="s_monopoly_pd_101_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="s_monopoly_pd_101_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section><section id="monopolies-and-price-discrimination-l9" class="title-slide slide level1"><h1>Monopolies and price discrimination (L9)</h1><p><img src="picsfigs/exetermonopoly.jpg" width="70%" style="display: block; margin: auto;" /></p></section><section id="coverage-and-key-readings" class="slide level2">
+<h2>Coverage and key readings</h2>
+<p>Reading:</p>
+<ul>
+<li><p>NS text : 11.2-11.4</p></li>
+<li><p><a href="https://open.umn.edu/opentextbooks/textbooks/introduction-to-economic-analysis">McAfee and Lewis</a> Chapter 15: Monopoly</p></li>
+</ul>
+<p><br />
+</p>
+<ul>
+<li><p>additional material in handout on <em>price discrimination</em></p>
+<ul>
+<li>And… Essay: ‘The Government may want to encourage price discrimination by income’ <a href="https://davidreinstein.wordpress.com/research-and-publications/">linked here</a></li>
+<li>or The Conversation article mentioned below, plus links</li>
+</ul></li>
+<li><p>Article: <a href="https://theconversation.com/should-we-help-companies-tailor-prices-to-your-wage-packet-47719">Should we help companies tailor prices to your wage packet?</a></p></li>
+<li><p>With accompanying <a href="https://docs.google.com/document/d/16jos_PT9w1wGpyD5A8ZiWJ9HW6kaLOJH6EWc_AYWnkk/pub">worked examples</a></p></li>
+<li><p>I may add some other suggested readings if you are interested</p></li>
+</ul>
+</section><section id="learning-goals" class="slide level2">
+<h2>Learning goals</h2>
+<ol type="1">
+<li><p>What are monopolies and what are barriers to entry?</p></li>
+<li><p>How do monopolies choose prices and quantities?</p></li>
+<li><p>What are the social (welfare) consequences of monopoly?</p></li>
+</ol>
+<p><br />
+</p>
+<ol start="4" type="1">
+<li><p>What is ‘price discrimination’?</p></li>
+<li><p>What forms can price discrimination take, and how does it increase a monopoly’s profits?</p></li>
+<li><p>How does price discrimination affect social welfare, and whom does it help or hurt?</p></li>
+<li><p>(Briefly: other forms of imperfect competition)</p></li>
+</ol>
+<p><br />
+</p>
+</section></section>
+<section><section id="the-basic-idea" class="title-slide slide level1"><h1>The basic idea</h1></section><section id="the-basic-idea-1" class="slide level2">
+<h2>The basic idea</h2>
+<p><em>Recall</em>: under perfect competition</p>
+<ul>
+<li>free entry and exit
+<ul>
+<li><span class="math inline">\(\rightarrow\)</span> zero long-run economic profit</li>
+</ul></li>
+<li>many many tiny firms
+<ul>
+<li><span class="math inline">\(\rightarrow\)</span> firms are price takers</li>
+</ul></li>
+<li><span class="math inline">\(\rightarrow\)</span> p=mc
+<ul>
+<li>And in the long run <span class="math inline">\(p=ATC\)</span> and firms produce at <span class="math inline">\(min(AC)\)</span></li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+<p><em>these are extreme assumptions; theoretical ideal</em></p>
+<p><br />
+</p>
+</section><section class="slide level2">
+
+<p>(Firms with market power might set <span class="math inline">\(p&gt;mc\)</span>)</p>
+<p>Opposite extreme: <em>monopoly</em></p>
+<ul>
+<li>A single firm</li>
+</ul>
+<div class="fragment">
+<p><br />
+</p>
+<ul>
+<li>Barriers to entry <span class="math inline">\(\rightarrow\)</span> No threat of entry</li>
+</ul>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<ul>
+<li>Can choose price, which becomes the ‘market price’</li>
+</ul>
+</div>
+<div class="fragment">
+<p>Still, the more it charges the fewer units demanded. <span class="math inline">\(\rightarrow\)</span> Chooses a price (or quantity) where MR=MC (like all firms do)</p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(\rightarrow\)</span> Produces ‘less than socially optimal quantity’ in order to charge a high price and increase its profit!</p>
+</div>
+</section><section id="barriers-to-entry" class="slide level2">
+<h2>Barriers to entry</h2>
+<p><img src="picsfigs/midvale.png" width="75%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<h3 id="technical-barriers-to-entry">Technical barriers to entry</h3>
+<ul>
+<li><p>IRS/ Diminishing average cost over a broad range of output</p>
+<ul>
+<li><p><span class="math inline">\(\rightarrow\)</span> ‘a natural monopoly’</p></li>
+<li><p>(Here multiple firms producing separately are <em>less efficient producers</em>, cannot produce at the lowest cost)</p></li>
+</ul></li>
+</ul>
+<div class="fragment">
+<p><small> Debatable: Special knowledge of a low-cost method of production, or key resource </small></p>
+</div>
+</section><section class="slide level2">
+
+<h3 id="legal-barriers-to-entry.">Legal barriers to entry.</h3>
+<ul>
+<li><p>Patents and copyrights</p></li>
+<li><p>Exclusive franchise or license (granted by government, by another firm, by a university)</p></li>
+<li><p>Government support for a dominant firm, discouraging/forbidding others</p></li>
+</ul>
+</section><section class="slide level2">
+
+<p>From the 2016 Massachusetts ballot initiative?</p>
+<p><img src="picsfigs/gaming_open.png" width="50%" style="display: block; margin: auto;" /></p>
+</section></section>
+<section><section id="monopoly-profit-maximisation" class="title-slide slide level1"><h1>Monopoly profit-maximisation</h1></section><section id="monopoly-profit-maximisation-1" class="slide level2">
+<h2>Monopoly profit-maximisation</h2>
+<ul>
+<li>As always, set Q to maximize <span class="math inline">\(QP(Q)-C(Q)\)</span></li>
+</ul>
+<p><br> </p>
+<div class="fragment">
+<p><span class="math inline">\(\rightarrow\)</span> optimization where <span class="math inline">\(MR(Q) = MC(Q)\)</span> (assuming <span class="math inline">\(P&gt;AC\)</span>)</p>
+</div>
+<div class="fragment">
+<p><br> </p>
+<ul>
+<li>Remember, the ‘volume’ benefit of increasing Q is countered by
+<ul>
+<li>Greater cost (producing more always costs more)</li>
+<li>The need to reduce price (on all units) to get people to buy it</li>
+</ul></li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<h3 id="graphically-monopoly-profit-max">Graphically: Monopoly profit-max</h3>
+<p><img src="picsfigs/monopprofit1.png" width="60%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/monopprofit2.png" width="60%" style="display: block; margin: auto;" /></p>
+<div class="fragment">
+<center>
+<font color='red'>Warning:</font> price is on the <em>demand</em> curve
+</center>
+<aside class="notes">
+<small> Rem: Firm’s revenue is Price<em>Quantity. Rectangle for a specific point on demand curve. Firm’s </em>profit* is this less average cost. MR tells you how the ‘revenue rectangle’ will increase (or decrease) with another unit. MC tells you the <em>cost</em> of this additional unit. Where MR&gt;MC, increasing quantity a little bit increases revenue more than costs, thus increasing profit. </small>
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/monopprofit3.png" width="80%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+Be careful here: The price the monopoly can get at quantity <span class="math inline">\(Q^*\)</span> is <span class="math inline">\(P^*\)</span> … project up to the <em>demand</em> curve NOT the MR curve.
+</aside>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/monopprofit4.png" width="60%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+Again, remember that revenue is <span class="math inline">\(P^*Q^*\)</span> but costs at <span class="math inline">\(Q^*\)</span> are <span class="math inline">\(Q^* \times AC\)</span> so profit is <span class="math inline">\((P^*-AC)Q^*\)</span>. By the way, the AC adds up the MC and the FC and divides by the quantity.
+</aside>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/monopprofitmax.png" width="50%" style="display: block; margin: auto;" /></p>
+</section></section>
+<section><section id="no-supply-curve-for-a-monopoly" class="title-slide slide level1"><h1>‘no supply curve for a monopoly’</h1><p>A ‘Supply curve’: maps from p to q (and usually v/v) for a firm or industry</p>
+<p><br />
+</p>
+<p>This is <strong>not affected</strong> by demand, only by costs and number of firms</p>
+<p><br />
+</p>
+<p>. . .</p>
+<p><strong>In contrast:</strong></p>
+<p>Monopoly <em>chooses</em> price (<span class="math inline">\(\rightarrow\)</span> also choosing quantity it can sell) where <span class="math inline">\(MR(q)=mc(q)\)</span></p>
+<p>But MR(q) depends on the demand curve slope/curvature at q</p>
+<p>so if demand curve changes (slope) it will affect the supply/pricing decision</p>
+<p><br />
+</p>
+<p><span class="math inline">\(\rightarrow\)</span> No single mapping</p></section><section id="the-deadweight-loss-of-monopoly" class="slide level2">
+<h2>The deadweight loss of monopoly</h2>
+<p><em>Criticisms of monopoly:</em></p>
+<ol type="1">
+<li>Monopolies produce too little output: allocatively (top-level) inefficient.</li>
+</ol>
+<ul>
+<li>Less output, higher price than perfect competition <span class="math inline">\(\rightarrow\)</span> deadweight loss</li>
+</ul>
+<div class="fragment">
+<p><br />
+</p>
+<ol start="2" type="1">
+<li>Redistribution from consumers to owners?</li>
+</ol>
+<aside class="notes">
+<small> the standard ‘deadweight loss triangle’ leads to <em>allocative inefficiency</em> (i.e., top-level inefficiency, i.e., the wrong mix of goods is being produced; too little of the monopolized good and too much of other goods). Redistribution of wealth from consumers to owners… could be counterbalanced by government redistribution. </small>
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/dwl1.png" width="85%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+Note the difference in monopoly vs perfect competitive quantity … difference in price … difference in consumer surplus … difference in firm profit
+</aside>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/dwl2.png" width="85%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+The differences (costs, transfers) refer to the monopoly outcomes <em>relative to perfect competition</em>.
+</aside>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/dwl3.png" width="90%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><em>Other criticisms:</em> Some argue the DWL above <em>understates</em> the true harm of monopoly</p>
+<p><font color='gray'>‘Secure’ monopolies don’t innovate as much, and spend wastefully?</font></p>
+<div class="fragment">
+<p><br />
+</p>
+<p><font color='gray'>Monopolies expend wasteful resources (lobbying, threats, lawsuits…) to preserve barriers to entry?</font> <span class="math inline">\(\rightarrow\)</span> <font color='gray'>further deadweight losses</font></p>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<p><font color='gray'>Counters: Monopolies are SR only? Disciplined by <em>potential</em> entry, &amp; have <em>greater</em> incentives to innovate?</font></p>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<p><font color='gray'>Estimates of social cost of monopoly … range from 0.5% to 5% of GDP</font></p>
+</div>
+</section></section>
+<section><section id="price-discrimination-introduction" class="title-slide slide level1"><h1>Price discrimination (introduction)</h1></section><section id="preamble" class="slide level2">
+<h2>Preamble</h2>
+<iframe width="800" height="500" src="https://www.youtube.com/embed/tXpx21Uf7hs?start=12" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</section><section class="slide level2">
+
+<iframe width="900" height="600" src="https://www.youtube.com/embed/3BAjYreCko8?start=42" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</section><section class="slide level2">
+
+<h3 id="price-discrimination-15-sept-2013-co-op-press-release">Price discrimination: 15 Sept 2013, Co-op press release</h3>
+<p><big>Ground-breaking supermarket discount for students</big></p>
+<blockquote>
+<p>Co-operative Food and NUS … announced a ground-breaking deal that will see students … receive a 10% discount on all groceries, at more than 3600 participating Co-operative food stores across the UK.</p>
+</blockquote>
+</section><section class="slide level2">
+
+<p><strong>CJ Antal-Smith, Head of Commercial - Grocery at The Co-operative Food:</strong></p>
+<p><br />
+</p>
+<p>’Students are facing increasing financial pressures while studying, and are becoming more savvy when it comes to food shopping.</p>
+<p><br />
+</p>
+<p>We wanted to help students, many of whom are living away from home for the first time, to live and cook on a budget."</p>
+<div class="fragment">
+<p><br />
+</p>
+<p><font color='blue'>Why would they do this?</font></p>
+</div>
+</section><section class="slide level2">
+
+<p>Exeter Picturehouse:</p>
+<p><img src="picsfigs/exeter_picturehouse.png" width="361" height="80%" style="display: block; margin: auto;" /></p>
+<div class="fragment">
+<p><br> </p>
+<p><font color='blue'>Why such a complicated price list?</font></p>
+</div>
+</section><section class="slide level2">
+
+<ul>
+<li>What is ‘price discrimination’?</li>
+</ul>
+<div class="fragment">
+<p><br> </p>
+<ul>
+<li>What forms can price discrimination take, and how does it increase a monopoly’s profits?</li>
+</ul>
+</div>
+<div class="fragment">
+<p><br> </p>
+<ul>
+<li>How does price discrimination affect social welfare, and whom does it help or hurt?</li>
+</ul>
+<p><br> </p>
+<aside class="notes">
+<p>You should care because this is both an important business practice,</p>
+<p>increasingly relevant and interesting with online tracking/big data</p>
+it affects you as a consumer, and it’s an important policy issue
+</aside>
+</div>
+</section><section id="price-discrimination" class="slide level2">
+<h2>Price discrimination</h2>
+<dl>
+<dt>Price Discrimination</dt>
+<dd><p>The practice of firms offering different prices to different consumers for the same product,</p>
+</dd>
+</dl>
+<div class="fragment">
+<p><br> </p>
+<ul>
+<li>or different prices for slightly different <em>products</em> or quantities,
+<ul>
+<li>where the price difference <em>doesn’t</em> merely reflect a production cost difference,</li>
+<li>aiming to distinguish consumers’ <em>willingness to pay</em> (WTP).</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>This includes ‘volume discounts’, or offering an ‘all you can eat’ plan alongside a per-unit plan;</p>
+it may also include time-of-day pricing and couponing.
+</aside>
+</div>
+</section><section id="why-do-firms-price-discriminate" class="slide level2">
+<h2>Why do firms price discriminate?</h2>
+<div class="fragment">
+<ul>
+<li>To increase profit
+<ul>
+<li>by ‘extracting more surplus’ from consumers</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<p><br> </p>
+<p><strong>In general…</strong></p>
+<p>for a monopoly firm, the ability to identify consumers based on their WTP and charge distinct prices <em>will</em> increase profit.</p>
+</div>
+<div class="fragment">
+<p><br> </p>
+<p>… but it may increase or decrease <em>social</em> (consumer+producer) surplus</p>
+<p><br> </p>
+<p>Consumer surplus itself may increase or decrease.</p>
+</div>
+</section><section id="the-alternative-to-price-discrimination-previous-analysis" class="slide level2">
+<h2>The alternative to price discrimination (previous analysis)</h2>
+<p>‘Uniform pricing’: Offering a single price for a good for all consumers.</p>
+<ul>
+<li><p>This does not deal with differences amongst consumers.</p></li>
+<li><p>‘Forces you’ to target a particular group (e.g., the wealthy) reducing total sales.</p></li>
+<li><p>Under monopoly, this leads to a deadweight loss</p></li>
+</ul>
+<div class="fragment">
+<p><img src="picsfigs/dwl3.png" width="80%" style="display: block; margin: auto;" /></p>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/ppd1.png" width="80%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/ppd2.png" width="80%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p>Price discrimination may seem counter-intuitive: ‘how can offering some consumers lower prices increase profit?’</p>
+<div class="fragment">
+<p><br />
+</p>
+<p>Higher prices <span class="math inline">\(\rightarrow\)</span> greater profit per unit; but also higher price <span class="math inline">\(\rightarrow\)</span> sell fewer units.</p>
+<p>The more you charge the less you sell.</p>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<ul>
+<li><p>Groups of ‘less keen’ consumers are very sensitive to price; would buy little at high price <span class="math inline">\(\rightarrow\)</span> lower price more profitable here.</p></li>
+<li><p>Identifiable ‘keen’ consumers buy a lot even at a high price. ‘Less price-sensitive’: higher price more profitable here.</p></li>
+</ul>
+</div>
+</section></section>
+<section><section id="the-three-types-of-price-discrimination" class="title-slide slide level1"><h1>The three types of price discrimination</h1></section><section id="the-three-types-of-price-discrimination-1" class="slide level2">
+<h2>The three types of price discrimination</h2>
+<ol type="1">
+<li>Individual-based (First degree; at best ‘perfect’)</li>
+</ol>
+<p><br />
+</p>
+<div class="fragment">
+<ol start="2" type="1">
+<li>Self-selection (Second degree)</li>
+</ol>
+<p><br />
+</p>
+</div>
+<div class="fragment">
+<ol start="3" type="1">
+<li>Group-based (Third degree; ‘market separation’)</li>
+</ol>
+<aside class="notes">
+<small> 1d-perfect: Target a price at each consumer… ‘Perfect’= seller exactly predicts and charges each consumer her valuation. 2dpd: Here the firm doesn’t know each consumer’s valuations, or is not allowed to ‘discriminate’ by charging different prices to different people. Instead, it sells different bundles, quantities, or qualities of products to get high and low-value consumers to separate themselves E.g., first-class seats. 3dpd: Here the firm finds something identifiable and inherent about the consumer that is indicative of her likely valuations (and price-sensitivity). It might be her age, nationality, student-status, or even perhaps her income. </small>
+</aside>
+</div>
+</section><section id="first-degree-andor-perfect-price-discrimination" class="slide level2">
+<h2>First-degree and/or ‘perfect’ price discrimination</h2>
+<p>The firm can offer each individual a different price for each unit they purchase.</p>
+<div class="fragment">
+<p><br> </p>
+<p>Assuming you know what the consumer is willing to pay, you can make the <em>highest possible profit</em>; that is called ‘perfect’ price discrimination.</p>
+</div>
+</section><section class="slide level2">
+
+<dl>
+<dt>Perfect price discrimination</dt>
+<dd>Charging each consumer (for each unit) the <em>maximum</em> he/she would be willing to pay, i.e., her valuation
+</dd>
+</dl>
+<div class="fragment">
+<ul>
+<li>Here, monopolist extracts <em>all available surplus</em>; no consumer surplus remains</li>
+</ul>
+</div>
+<div class="fragment">
+<p><br> </p>
+<ul>
+<li>Because monopolists extract <em>all</em> the possible surplus, this is efficient
+<ul>
+<li>Because max(total value of good - cost) <span class="math inline">\(\rightarrow\)</span> max(CS+PS)</li>
+</ul></li>
+</ul>
+<p><font color='blue'>Is this easy to do?</font></p>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/mindreadcustomers.jpg" width="50%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><br> </p>
+<p>Perfect PD is a rare/impossible extreme: requires mind reading</p>
+<ul>
+<li>Close example: Website targets individualised price to each consumer, using clues like time-of-day, web clicks, cookie data, IP location.</li>
+</ul>
+<p><br> </p>
+<p><font color='blue'>Is this ‘perfect’ PD?</font></p>
+<p><br> </p>
+<div class="fragment">
+<ul>
+<li>No, it isn’t (see note).</li>
+</ul>
+<aside class="notes">
+<small>Web cookies etc: Here, the seller does not really know exactly what the consumer is willing to pay; he is using broad clues. Also, the ability to ‘browse incognito’ severely limits this See Shiller, B. R. (2013, or updated version). First degree price discrimination using big data. </small>
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/ppd3.png" width="80%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/ppd4.png" width="80%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/ppd5.png" width="80%" style="display: block; margin: auto;" /></p>
+</section></section>
+<section><section id="second-degree-price-discrimination-self-selection" class="title-slide slide level1"><h1>Second-degree price discrimination (self-selection)</h1></section><section id="second-degree-price-discrimination-self-selection-1" class="slide level2">
+<h2>Second-degree price discrimination (self-selection)</h2>
+<p>Firm cannot differentiate between consumers, uses quality/quantity so consumers self-select.</p>
+<p><br />
+</p>
+<div class="fragment">
+<ul>
+<li><p>Quality- Transport- Different classes, Supermarkets- budget products</p></li>
+<li><p>Quantity- Supermarkets- Larger quantities at lower prices per unit; i.e., ‘nonlinear pricing’</p></li>
+</ul>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<ul>
+<li><p>8 oz coffee for £ 1.60 vs. 16 oz. for £ 2.00</p></li>
+<li><p>20 p per oz vs. 12.5p per oz.</p></li>
+</ul>
+<p><small> With linear pricing there would be the same price of 15p/oz. </small></p>
+<p>Result: with 2 prices monopoly can get ‘high value’ consumers to buy/get more in total without losing ‘low-value’ consumers</p>
+</div>
+</section><section class="slide level2">
+
+<ul>
+<li>Similar with quality: Don’t know who high-valuation flyers are (wtp for travel <em>itself</em> varies)</li>
+</ul>
+<div class="fragment">
+<p><br />
+</p>
+<p>But may know on <em>average</em> that flyers with higher wtp for travel <em>also</em> value comfort more… thus:</p>
+<ul>
+<li><p>Make second-class seats very uncomfortable, first-class luxurious, and charge more for first-class seats</p></li>
+<li><p>Can get consumers with higher values for travel <em>and</em> comfort to pay more, without losing lower-valuing customers</p></li>
+</ul>
+<aside class="notes">
+I am not going to cover the algebra nor graphical analysis of second-degree PD, nonlinear pricing, or two-part pricing
+</aside>
+</div>
+</section><section id="the-self-selection-problem" class="slide level2">
+<h2>The ‘self-selection’ problem</h2>
+<p>Train companies must price first and second class such that consumers will self-select.</p>
+<ul>
+<li>If first class is too expensive then the high valuing group will not choose first class</li>
+</ul>
+<div class="fragment">
+<p><br> </p>
+<ul>
+<li>If second-class is too cheap, both the high and low groups will choose second class</li>
+</ul>
+</div>
+<div class="fragment">
+<p><br> </p>
+<ul>
+<li>But if second class is too expensive, the low groups will not buy a ticket.</li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/thirdclasscarriage.jpg" width="90%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+The Third-Class Carriage is a c. 1862-1864 oil on canvas painting by Honore Daumier <small> " It is not because of the few thousand francs which have to be spent to put a roof over the third-class carriages or to upholster the third class seats that some company or other has open carriages with wooden benches. What the company is trying to do is to prevent the passengers who pay the second class fare from traveling third class; it hits the poor, not because it wants to hurt them, but to frighten the rich." - Jules Dupuit </small>
+</aside>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/voyagetrain.jpg" width="90%" style="display: block; margin: auto;" /></p>
+</section></section>
+<section><section id="third-degree-price-discrimination-3dpd-group-based-market-separation" class="title-slide slide level1"><h1>Third-degree price discrimination (3dpd)/ Group based/ Market separation</h1></section><section id="third-degree-price-discrimination-3dpd-group-based-market-separation-1" class="slide level2">
+<h2>Third-degree price discrimination (3dpd)/ Group based/ Market separation</h2>
+<dl>
+<dt>Third-degree (group-based) price discrimination</dt>
+<dd>The practice of charging different prices to different groups that can be identified by the seller
+</dd>
+</dl>
+<div class="fragment">
+<p><br />
+</p>
+<p>The firm can differentiate <em>groups of consumers</em> or ‘local markets’, not individuals.</p>
+<p>Each group has a different willingness to pay <em>on average</em></p>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<p><span class="math inline">\(\rightarrow\)</span> Offer lower prices to lower-valuing groups, higher prices to higher-valuing groups</p>
+<aside class="notes">
+Example: Students face lower prices for transport, food and other goods as they have a lower willingness to pay Remember: this is <em>not</em> done out of charity but to boost profits
+</aside>
+</div>
+</section><section id="pricing-under-3dpdmarket-separation" class="slide level2">
+<h2>Pricing under 3dpd/market separation</h2>
+<p>Each group or market has it’s own demand <span class="math inline">\(\rightarrow\)</span> marginal revenue curve</p>
+<p><span class="math inline">\(\rightarrow\)</span> So set an optimising price quantity <em>separately</em> for each group</p>
+<p><br />
+</p>
+<div class="fragment">
+<p>E.g., a discount for the elderly, higher price for the middle-aged</p>
+<p>Or a lower price in Portugal than in Germany</p>
+<p><img src="picsfigs/discounts.png" width="50%" style="display: block; margin: auto;" /></p>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/3dpd.png" width="90%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+Decent numerical example, slides 6-8 Here: <a href="http://people.hss.caltech.edu/~mshum/ec105/matt9.pdf" class="uri">http://people.hss.caltech.edu/~mshum/ec105/matt9.pdf</a>
+</aside>
+</section><section class="slide level2">
+
+<p>Another depiction, adding demand curves (‘average revenue’):</p>
+<p><img src="picsfigs/Price-discrimination-SNP2.png" width="90%" style="display: block; margin: auto;" /></p>
+</section></section>
+<section><section id="who-benefits-from-3dpd" class="title-slide slide level1"><h1>Who benefits from 3DPD?</h1></section><section id="who-benefits-from-3dpd-1" class="slide level2">
+<h2>Who benefits from 3DPD?</h2>
+<ul>
+<li>Consumers <em>in identifiable group</em> with lower wtp face lower prices, thus they benefit</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Consumers <em>in identifiable group</em> with higher wtp face higher prices, thus they lose</li>
+</ul>
+</div>
+<div class="fragment">
+<p><br> </p>
+<ul>
+<li>Firms can charge higher prices to high-wtp group without losing low-wtp group <span class="math inline">\(\rightarrow\)</span> increase profit</li>
+</ul>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<p>Net welfare result: theoretically uncertain</p>
+</div>
+</section><section class="slide level2">
+
+<p>For consumers:</p>
+<p><img src="picsfigs/pdwelfare.png" width="90%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/pdwelfareoverall.png" width="85%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<h3 id="why-is-the-benefit-uncertain" class="unnumbered">Why is the benefit uncertain?</h3>
+<p>Two factors (may) trade off… Exchange and Top-level efficiency … who eats the quiche vs amount of quiche baked</p>
+<p><br />
+</p>
+<p><strong>Exchange efficiency</strong></p>
+<p>When ‘low and high valuation’ groups can be identified</p>
+<ul>
+<li><p>high-valuation groups charged more, thus consume less (vs uniform price)</p></li>
+<li><p>low-valuation groups get charged less <span class="math inline">\(\rightarrow\)</span> consume more</p></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><span class="math inline">\(\rightarrow\)</span> Who eats it?: <em>Given what is produced</em>, PD causes it to be consumed by people who value it relatively less!</li>
+</ul>
+<p><br> </p>
+<p><em>This is bad, it reduces “exchange efficiency” but…</em></p>
+</div>
+</section><section class="slide level2">
+
+<p><strong>Production and allocative efficiency</strong>: On the other hand PD can lead more to be produced/consumed</p>
+<p><br> </p>
+<div class="fragment">
+<p>E.g., suppose that with a ‘uniform price’ only the wealthy went to a restaurant…</p>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<p>after PD (early-bird, OAP, benefits discounts) the low-income may also dine in the restaurant</p>
+<p><span class="math inline">\(\rightarrow\)</span> more value is produced</p>
+<aside class="notes">
+In this example it comes closer to perfect PD
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p>Two effects trade off: negative ‘exchange efficiency’ impact, potentially positive impact on production</p>
+<p>…of the otherwise underproduced good (rem DWL of monopoly)i</p>
+<div class="fragment">
+<p><span class="math inline">\(\rightarrow\)</span> top-level efficiency may increase (or decrease)</p>
+</div>
+<div class="fragment">
+<p>Bc ‘exchange efficiency effect’ is negative, 3DPD can <em>only</em> be beneficial if quantity increases (necessary but not sufficient condition)</p>
+</div>
+</section></section>
+<section><section id="but-arbitrage-can-foil-price-discrimination-see-readings" class="title-slide slide level1"><h1>But ‘arbitrage’ can foil price discrimination (see readings)</h1></section><section id="but-arbitrage-can-foil-price-discrimination-see-readings-1" class="slide level2">
+<h2>But ‘arbitrage’ can foil price discrimination (see readings)</h2>
+<p><font color='blue'>If, e.g., elderly who get discounts could sell products to middle-aged, can OAP discounts work?…</font></p>
+<div class="fragment">
+<ul>
+<li><p>Middle-aged would ask them to do this, never pay high price</p></li>
+<li><p>Firm could no longer profit from this</p></li>
+</ul>
+<p><small> Similar issues with quantity discounts, or ‘web cookie’ personalised pricing </small></p>
+</div>
+<div class="fragment">
+<p>So PD only ‘works’ for hard-to-trade goods like haircuts, or where purchases are frequent &amp; low-value, resale markets difficult</p>
+<aside class="notes">
+The above issues are sometimes referred to as ‘transactions costs’. We don’t see people trading jars of mayonaise outside Tescos. Also note– arbitrage makes PD <em>undesirable for firms</em>… not socially inefficient
+</aside>
+</div>
+</section><section id="davids-old-new-policy-idea" class="slide level2">
+<h2>David’s old ‘new’ policy idea:</h2>
+<ul>
+<li><p>People with low-incomes tend to have lower-wtp for most goods</p></li>
+<li><p>Government can typically identify and verify incomes</p></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><p>Governments could allow and encourage low-income consumers to get an ID indicating this</p></li>
+<li><p>Governments could allow and encourage firms to use this for price-discrimination</p></li>
+</ul>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<ul>
+<li><p>Firms would increase profit</p></li>
+<li><p>Low-income households would benefit, reducing inequality</p></li>
+</ul>
+<p><br> </p>
+</div>
+<div class="fragment">
+<ul>
+<li>Net impact on efficiency uncertain; worth investigating?</li>
+</ul>
+</div>
+</section></section>
+<section><section id="natural-monopolies-and-regulation-very-brief-or-skip" class="title-slide slide level1"><h1>Natural monopolies and regulation (very brief or skip)</h1></section><section id="natural-monopolies-and-regulation-very-brief-or-skip-1" class="slide level2">
+<h2>Natural monopolies and regulation (very brief or skip)</h2>
+<ul>
+<li>Where an industry involves a ‘natural monopoly’ (IRS) the most efficient production is a unified production process . . .
+<ul>
+<li>But if a monopoly reigns it overcharges and underprovides</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<p><br> </p>
+<p><span class="math inline">\(\rightarrow\)</span> Government may want to allow/enforce monopoly privileges but <em>regulate</em> price it can charge</p>
+<ul>
+<li><p>Difficulty: Government wants to regulate <span class="math inline">\(p=AC\)</span>, but it doesn’t know firms’ actual cost function (asymmetric information)</p>
+<ul>
+<li>Firm wants government to think it is high cost</li>
+</ul></li>
+</ul>
+<aside class="notes">
+This yields another mechanism design ‘hidden information’ ‘principal-agent problem’
+</aside>
+</div>
+</section><section id="til" class="slide level2">
+<h2>TIL</h2>
+<p>Basic ideas about:</p>
+<ul>
+<li><p>…what ‘price discrimination’ is and why firms use it</p></li>
+<li><p>…what the forms of price discrimination are (1st-3rd degree; perfect, self-selection, market-separation)</p></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>…how firms choose prices for separated markets</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>…what limits price discrimination</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>…(when) price discrimination helps/hurts social welfare</li>
+</ul>
+</div>
+</section><section id="brief-notes-on-imperfect-competition" class="slide level2">
+<h2>Brief notes on imperfect competition</h2>
+<p>With multiple firms in the same market but not complete ‘free entry’, theory predicts a range of possible outcomes.</p>
+<ol type="1">
+<li>collusion: ‘patient’ firms may collude to establish monopoly price, or any price above competitive price</li>
+</ol>
+<p><br />
+</p>
+<aside class="notes">
+recall the indefinitely-repeated prisoner’s dillemma here
+</aside>
+<div class="fragment">
+<ol start="2" type="1">
+<li>‘Cournot’ competition, firms choose quantities: predicts intermediate price, between competitive &amp; monopoly prices</li>
+</ol>
+<aside class="notes">
+Some cool Cournot results like markups equal the inverse elasticity of demand divided by the number of firms
+</aside>
+<aside class="notes">
+the related ‘Stackleberg’ model lets one firm choose first – it will have a ‘first-mover advantage’ but still prices are intermediate
+</aside>
+<p><br />
+</p>
+</div>
+<div class="fragment">
+<ol start="3" type="1">
+<li>‘Bertrand’ competition in prices: predicts firms compete price down to the competitive (mc) level</li>
+</ol>
+<p><br />
+</p>
+</div>
+<div class="fragment">
+<ol start="4" type="1">
+<li>Product differentiation, monopolistic competition: may lead to zero long-run profits, with <span class="math inline">\(p=AC&gt;MC&gt;\)</span> for each firm.</li>
+</ol>
+<aside class="notes">
+When firms can differentiate their products from one another this may reduce competition. each firm acts as a ‘local’ monopoly over it’s own unique product. With free entry, however, firms introduce new products which shift the demand curves inwards for the other products (substitutes), until no firm is making long run profits.
+</aside>
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script src="s_monopoly_pd_101_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="s_monopoly_pd_101_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: true,
+        // Transition style
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        chalkboard: {
+        },
+
+        keyboard: {
+          67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
+          66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+          46: function() { RevealChalkboard.clear() },    // clear chalkboard when 'DEL' is pressed
+           8: function() { RevealChalkboard.reset() },    // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+          68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 's_monopoly_pd_101_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+          { src: 's_monopoly_pd_101_files/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+          { src: 's_monopoly_pd_101_files/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>

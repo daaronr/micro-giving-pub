@@ -1,0 +1,2233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="David Reinstein (Exeter)" />
+  <title>s_game_theory_101.utf8.md</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="s_game_theory_101_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="s_game_theory_101_files/reveal.js-3.3.0.1/css/theme/white.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="reveal.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <link href="s_game_theory_101_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="s_game_theory_101_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section><section id="game-theory" class="title-slide slide level1"><h1>Game Theory</h1></section><section id="game-theory---coverage" class="slide level2">
+<h2>Game Theory - coverage</h2>
+<p>NS: chapter 5 (nearly all of it, see web book)</p>
+<ul>
+<li><p><font color='gray'>Additional to text: Dominance, rationalizability</font></p></li>
+<li><p>Experimental evidence (and evidence from the real world); supplemental readings</p></li>
+</ul>
+<p>… Problem set coming, heavy coverage of game theory!</p>
+</section><section class="slide level2">
+
+<p><em>Module context</em></p>
+<ol type="1">
+<li><p>Basic tools, the economic approach</p></li>
+<li><p>The simple classical model, welfare results</p></li>
+</ol>
+<div class="fragment">
+<ol start="3" type="1">
+<li>Market failures (Monopoly, Public Goods)</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="4" type="1">
+<li>Extensions of simple model: ‘Die roll’ Uncertainty</li>
+</ol>
+<p><span class="math inline">\(\rightarrow\)</span> and now <em>Strategic</em> uncertainty <span class="math inline">\(\rightarrow\)</span> <strong>Game Theory</strong></p>
+<aside class="notes">
+Finally, behavioural economics
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><strong>Today:</strong></p>
+<ol type="1">
+<li>How economists consider strategic interaction. What’s game theory and who cares?</li>
+</ol>
+<p><br> </p>
+<ol start="2" type="1">
+<li>How to illustrate games; ‘Notation &amp; grammar’</li>
+</ol>
+<div class="fragment">
+<p><br> </p>
+<ol start="3" type="1">
+<li><font color='purple'>Prisoners’ Dilemma</font> example</li>
+</ol>
+<p><br> </p>
+</div>
+<div class="fragment">
+<ol start="4" type="1">
+<li>Some key concepts, predictions: Common Knowledge, Dominant/dominated strategies, ISD/Rationalisability…</li>
+</ol>
+<p><em>Please have Turningpoint/Responseware available over next lectures</em></p>
+</div>
+</section><section id="basic-concepts-strategic-interaction-elements-of-a-game" class="slide level2">
+<h2>Basic concepts (strategic interaction, elements of a game)</h2>
+<p><font color='brown'>Previously</font>: Each individual (consumer, firm… ) takes others’ choices as <em>given</em></p>
+<ul>
+<li>market price, demand curve, etc.</li>
+</ul>
+<div class="fragment">
+<p><br />
+</p>
+<p><font color='brown'>Now:</font> Consider <em>strategic interaction</em></p>
+</div>
+<div class="fragment">
+<p>My best choice may <em>depend</em> on your choice, &amp; vice versa</p>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<ul>
+<li>Sequential games: My earlier choices may change your later choices</li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p><strong>One minute exercise</strong></p>
+<p><br> </p>
+<p><em>Find a situation</em>—in business, government, fiction, history or your own life—</p>
+<p>… where one party’s optimal choice depends on what <em>another</em> party does.</p>
+<div class="fragment">
+<p><br> </p>
+<p><em>Write it down</em>, <font color='gray'>give 1-sentence explanation of why it involves ‘strategic dependence’</font></p>
+</div>
+</section><section class="slide level2">
+
+<p><strong>Some possible examples:</strong></p>
+<ul>
+<li>Ask out your crush or not?</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Country makes war or peace? Soldiers fight or run away?</li>
+</ul>
+<p><br />
+</p>
+<ul>
+<li>Run for office or not? Party contests a seat? If so, how much to spend on campaign?</li>
+</ul>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<ul>
+<li><p>Amount to bid at a first-price auction?</p></li>
+<li><p>Whether Robotic Chef opens a new branch in Exeter, and where?</p></li>
+<li><p>How hard to work towards a promotion at your job?</p></li>
+</ul>
+<aside class="notes">
+<p>Very interesting problems, does Econ have the solution?</p>
+You know I am careful and not one to oversell things
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p>##Some examples</p>
+<p><font color='blue'>Is it better to get lunch at Comida or Pret?</font></p>
+<p><br> </p>
+<p>What if your friends are going to Comida?</p>
+<p><br> </p>
+<p>What if everyone and her cousin are going to Comida, so the queue is miles long?</p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/iphonex.jpg" width="90%" style="display: block; margin: auto;" /></p>
+<p><font color='blue'>What should Tim Cook charge for his new Iphone?</font></p>
+<!-- \pause -->
+<p><br> </p>
+<p>Does it depend on whether Samsung and LG…</p>
+<p>… Sell their phones for £200, or £1000, or go out of business?</p>
+</section><section class="slide level2">
+
+<h3 id="what-game-theory-can-do-wet-blanket">What game theory can do (wet blanket)</h3>
+<p><img src="picsfigs/Eeyore_Pink.jpg" width="30%" style="display: block; margin: auto;" /></p>
+<p>A language &amp; framework for analyzing strategic situations</p>
+<div class="fragment">
+<p><br />
+</p>
+<ul>
+<li><p><em>Solution concepts</em> make predictions under given assumptions</p></li>
+<li><p><em>Equilibrium</em> defined as a baseline</p></li>
+</ul>
+<aside class="notes">
+<p>David: Overrated as a tool to predict how people/firms will behave; see notes</p>
+<p><small> Often makes multiple predictions, or predicts ‘mixed strategies’ (randomisation).</p>
+<p>Real-world &amp; experimental choices often predicted poorly by classical GT.</p>
+<p>E.g., stdd game theory says chess is boring, has a pre-determined outcome.</p>
+<p>Adv: But note complicating issues make it difficult to asses predictions of GT</p>
+<p>… monetary payoff may not be the same as utility payoffs; makes prediction unclear</p>
+<p>Esp. with social/fairness preferences or fairness preferences.</p>
+<p>We also see failures to coordinate, failure to take higher-order cognitive steps</p>
+And preferences over the <em>manner decisions are made</em>. </small>
+</aside>
+</div>
+</section></section>
+<section><section id="four-elements-describe-a-game" class="title-slide slide level1"><h1>Four elements describe a game</h1></section><section id="four-elements-describe-a-game-1" class="slide level2">
+<h2>Four elements describe a game</h2>
+<ol type="1">
+<li><p>Players</p></li>
+<li><p>Strategies</p></li>
+<li><p>Payoffs</p></li>
+<li><p>Information</p></li>
+</ol>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/chicken.png" width="50%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<iframe width="800" height="600" src="https://www.youtube.com/embed/u7hZ9jKrwvo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</section><section class="slide level2">
+
+<dl>
+<dt><strong>Players</strong></dt>
+<dd><p>the decision makers <font color='gray'>in the game</font></p>
+</dd>
+</dl>
+<p><br />
+</p>
+<div class="fragment">
+<p><span class="math inline">\(2, 3, . . . , N\)</span> players</p>
+<p><br />
+</p>
+<p><font color='blue'>Who are the players in the game ‘Chicken?’</font></p>
+<aside class="notes">
+The north-facing car ‘North’ and the south-facing car ‘South’
+</aside>
+</div>
+</section><section class="slide level2">
+
+<dl>
+<dt>Strategies</dt>
+<dd>a player’s choices <font color='gray'>at each ‘decision node’ of the game</font>
+</dd>
+</dl>
+<div class="fragment">
+<p>Simple games: same as actions</p>
+<aside class="notes">
+<p>More complex games: ‘plan <em>contingent on</em> what other player did’, and/or may involve randomisation</p>
+<br />
+Strategies/actions in Chicken? For both N and S, two actions – Pull-off, Straight.
+</aside>
+</div>
+</section><section class="slide level2">
+
+<dl>
+<dt>Payoffs</dt>
+<dd><p>Each player’s <em>utility</em> from the combination of each player’s strategies (and chance) <font color='gray'>in the game</font></p>
+</dd>
+</dl>
+<div class="fragment">
+<ul>
+<li><p>May include ‘money earned’ + other considerations; all summarised in the payoff numbers</p></li>
+<li><p>Each player’s goal: maximise her payoff <font color='gray'>(not just to ‘win’)</font></p></li>
+</ul>
+<aside class="notes">
+<p>E.g., each player prefers to get 2 in <em>utility</em> and have the other player get 8 than for both to get 1.</p>
+<p>Don’t complain ‘I don’t think players will max payoffs, bc they also care about how others do, etc.’</p>
+<p>Whatever it is they care about can be expressed in the theoretical payoffs.</p>
+<p><small> However, these concerns are relevant to experiments that may incorrectly assume participants are maximising only their monetary payoffs.</p>
+Adv: There are also certain kinds of ‘psychological’ motivations that cannot be modeled in a straightforward way by payoffs. (see ‘psychological games’).</small>
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/chicken-gamecrash.jpg" width="30%" style="display: block; margin: auto;" /></p>
+<center>
+Payoffs in chicken?
+</center>
+<div class="fragment">
+<ul>
+<li>Both pull-off <span class="math inline">\(\rightarrow\)</span> Tie</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><p>N Straight, S pulls off <span class="math inline">\(\rightarrow\)</span> N ‘wins’, S ‘loses’</p></li>
+<li><p>N pulls off, S straight <span class="math inline">\(\rightarrow\)</span> N ‘loses’, S ‘wins’</p></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Both straight <span class="math inline">\(\rightarrow\)</span> crash</li>
+</ul>
+</div>
+<div class="fragment">
+<p><em>To convey this game</em> payoffs must follow: Win <span class="math inline">\(\succ\)</span> tie <span class="math inline">\(\succ\)</span> lose <span class="math inline">\(\succ\)</span> crash</p>
+</div>
+</section><section class="slide level2">
+
+<p>Example of payoffs in Chicken (as matrix)</p>
+<p><img src="picsfigs/chicken-matrix.png" width="70%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<dl>
+<dt>Information</dt>
+<dd><p>what each player knows, at a particular point in the game, about payoffs and previous actions</p>
+</dd>
+</dl>
+<div class="fragment">
+<p>For <em>sequential</em> games, players may or may not know other players’ previous actions</p>
+<aside class="notes">
+But for this module we will have complete and perfect information in all such games
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><font color='blue'> Consider… for the game you imagined earlier…</font></p>
+<p><br> </p>
+<ul>
+<li><p>Who are the <em>players</em></p></li>
+<li><p>What are the actions/strategies</p></li>
+<li><p>What are the payoffs?</p></li>
+<li><p>Is it simultaneous or sequential?</p></li>
+</ul>
+<aside class="notes">
+What information does each player have when making her decision?
+</aside>
+</section></section>
+<section><section id="illustrating-games" class="title-slide slide level1"><h1>Illustrating Games</h1></section><section id="the-prisoners-dilemma" class="slide level2">
+<h2>The Prisoners’ dilemma</h2>
+<p><img src="picsfigs/pd-movies.png" width="100%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+<p><small>Two individuals are arrested for a crime. They don’t care about each other. They both know that they can only be convicted for a lesser crime, for which they get 2 years in jail. Chief Crown Prosecutor puts them in separate rooms and offers each the same deal. If you confess and your partner stays quiet you will only get 1 year in jail and he will get 10 years. If you both confess you will each get 3 years. </small></p>
+</aside>
+</section><section class="slide level2">
+
+<h3 id="the-prisoners-dilemma-normal-form">The Prisoners’ Dilemma: Normal form</h3>
+<p><img src="picsfigs/pd_normal.png" width="80%" style="display: block; margin: auto;" /></p>
+<p><font color='blue'>Vote:</font> A - confess, B - Silent</p>
+<aside class="notes">
+<p>Normal-form payoff matrix (also called ‘matrix form’)</p>
+Payoff convention: (row, column)
+</aside>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/pd_normal.png" width="50%" style="display: block; margin: auto;" /></p>
+<p><font color='blue'>Vote:</font> A - confess, B - Silent</p>
+<p>Q1: What would you do?</p>
+<div class="fragment">
+<p>Q2: What do you think game theory predicts people will do?</p>
+<aside class="notes">
+What do you think most people would do?
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/pd_normal.png" width="30%" style="display: block; margin: auto;" /></p>
+<p><font color='blue'>Q4:</font> Which <em>outcome</em> is <em>definitely NOT</em> Pareto-optimal (for the prisoners)?</p>
+<p><br />
+</p>
+<ul>
+<li><p>A. Both players confess<br />
+</p></li>
+<li><p>B. Both players are silent<br />
+</p></li>
+<li><p>C. A confesses and B is silent<br />
+</p></li>
+<li><p>D. B confesses and A is silent<br />
+</p></li>
+<li><p>E. All outcomes may be Pareto-optimal</p></li>
+</ul>
+<aside class="notes">
+REMEMBER to mention the payoff convention … row’s payoff first
+</aside>
+</section><section class="slide level2">
+
+<p><strong>A Prisoner’s Dilemma be like</strong></p>
+<p><br> </p>
+<p>Two Players: (A and B, row and column, whatever)</p>
+<p><br />
+</p>
+<p>Strategies (Actions): ‘Cooperate’ <font color='gray'>with other prisoner</font> (C) or defect (D) <font color='gray'>and confess</font></p>
+<p><br />
+</p>
+<div class="fragment">
+<p>In normal form:</p>
+<p><img src="picsfigs/normal_pd_general.png" width="40%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+Note ‘cooperate’ is like ‘silent’ and ‘defect’ is like ‘confess’, and we switched the ordering of this in the matrix; none of this matters, so get used to seeing it with either ordering
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p>In normal form:</p>
+<p><img src="picsfigs/normal_pd_general.png" width="70%" style="display: block; margin: auto;" /></p>
+<div class="fragment">
+<p><br />
+</p>
+<p>To be a prisoner’s dilemma, payoffs must satisfy <span class="math inline">\(T &gt; R &gt; P &gt; S\)</span></p>
+<ul>
+<li>Temptation <span class="math inline">\(&gt;\)</span> Reward <span class="math inline">\(&gt;\)</span> Punishment <span class="math inline">\(&gt;\)</span> Sucker</li>
+</ul>
+<!--
+**(Another) playable example**
+
+\begin{center}
+\begin{tabular}{llcc}
+                              & \multicolumn{3}{l}{Player 2}                                                                  \\ \cline{2-4}
+\multicolumn{1}{l|}{}         & \multicolumn{1}{l|}{}          & \multicolumn{1}{l|}{Cooperate} & \multicolumn{1}{l|}{Defect} \\ \cline{2-4}
+\multicolumn{1}{l|}{Player 1} & \multicolumn{1}{l|}{Cooperate} & \multicolumn{1}{c|}{2,2}       & \multicolumn{1}{c|}{0,3}    \\ \cline{2-4}
+\multicolumn{1}{l|}{}         & \multicolumn{1}{l|}{Defect}    & \multicolumn{1}{c|}{3,0}       & \multicolumn{1}{c|}{1,1}    \\ \cline{2-4}
+\end{tabular}
+\end{center}
+-->
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/PD_japan.png" width="650" height="50%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+Read PD in Extensive form; we’ll come back to this later
+</aside>
+</section><section class="slide level2">
+
+<p><strong>Common knowledge</strong></p>
+<ul>
+<li>What all players know, and</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>all players know that all other players know,</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>and all players know that all other players know that all other players know,</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>and all players know that all other players know that all other players know that all other players know,</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>and all players know that all other players know that all other players know that all other players know that all other players know,</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>and all players know that all other players know that all other players know that all other players know that all other players know that all other players know,</li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<ul>
+<li>and all players know that all other players know that all other players know that all other players know that all other players know that all other players know that all other players know,</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>and all players know that all other players know that all other players know that all other players know that all other players know that all other players know that all other players know that all other players know,</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>and all players know that all other players know that all other players know that all other players know that all other players know that all other players know that all other players know that all other players know that all other players know,</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>and all players know that all other players know that all other players know that all other players know that all other players know that all other players know that all other players know that all other players know that all other players know that all other players know,</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>etc.</li>
+</ul>
+<aside class="notes">
+By the way, we always assume that the rules of the game are common knowledge.
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><strong>Why is common knowledge important?</strong></p>
+<div class="fragment">
+<p>You may be stuck on an island with 100 blue-eyed people and 900 brown-eyed people</p>
+<p><font color='gray'>(Links to video and cartoon versions in handout)</font></p>
+<!---
+[XKCD_link](https://xkcd.com/blue_eyes.html "puzzle"), [XKCD solution link](https://xkcd.com/solution.html "solution" ,  [Rob Heaton version, more violent](http://robertheaton.com/2014/01/06/how-to-win-at-dinner-party-the-blue-eyed-islanders/ "puzzle and solution"),  [Ted-ed video](http://ed.ted.com/lessons/the-famously-difficult-green-eyed-logic-puzzle-alex-gendler)
+-->
+<ul>
+<li><font color='red'>Warning:</font> puzzle will do your head in</li>
+</ul>
+<p><img src="picsfigs/blue-eyed.png" width="50%" style="display: block; margin: auto;" /></p>
+</div>
+</section><section class="slide level2">
+
+<p>Island with 1000 people. 100 w/ blue eyes, 900 brown eyes. No reflective surfaces.</p>
+<div class="fragment">
+<p>By strict custom: </p>
+</div>
+<div class="fragment">
+<p><font color='red'>American tourist says</font> ‘It’s so nice to see one or more people with blue eyes in this part of the world’.</p>
+</div>
+<div class="fragment">
+<p><br> </p>
+<p><font color='blue'>Q: What effect, if any, does this faux pas have on the island?</font></p>
+</div>
+<div class="fragment">
+<p><em>GT predicts:</em> Statement made <strong>common knowledge</strong> <span class="math inline">\(\rightarrow\)</span> all 100 blue-eyed suicides 100 days later</p>
+<aside class="notes">
+SKIP if time is short
+</aside>
+</div>
+</section><section class="slide level2">
+
+<dl>
+<dt>A’s <em>Best Response</em> (BR) to strategy <em>S</em>:</dt>
+<dd><p>a strategy for player A that gives him the highest payoff of all his possible strategies, given that the other player(s) play <em>S</em></p>
+</dd>
+</dl>
+<aside class="notes">
+The BR is a function of the others’ strategies <em>S</em>; it may take a different value for each strategy the others play.
+</aside>
+</section></section>
+<section><section id="dominant-dominated-strategies-and-rationalizability" class="title-slide slide level1"><h1>Dominant, dominated strategies and rationalizability</h1><dl>
+<dt>Dominant strategy</dt>
+<dd>A single strategy that is a best response to <em>any</em> of the other player’s strategies.
+</dd>
+</dl>
+<p><small> Simple prediction: a ‘rational’ player will play a dominant strategy if she has one. </small></p>
+<p>. . .</p>
+<p><br />
+</p>
+<dl>
+<dt>Dominated strategy</dt>
+<dd>Strategy A is dominated by strategy B if B yields higher payoffs for <em>any</em> of the other player’s strategies
+</dd>
+</dl>
+<p><small> A simple prediction: a rational player will <em>never</em> play a dominated strategy </small></p>
+<aside class="notes">
+Dominated strategy, ISD not in text!
+</aside></section><section class="slide level2">
+
+<p>Prediction of ‘players play <strong>dominant</strong> strategies’</p>
+<p><br>  <font color='blue'>…in Prisoner’s dilemma?</font></p>
+<p><img src="picsfigs/pd_normal.png" width="60%" style="display: block; margin: auto;" /></p>
+<div class="fragment">
+<p><em>But in other cases, this may have no clear prediction</em></p>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/matrixforISD.png" width="912" height="90%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+<p>What does ‘players play dominant strategies’ predict above?</p>
+What about ‘players never play dominated strategies’?
+</aside>
+</section><section class="slide level2">
+
+<h3 id="rationalisability-iterated-strict-dominance">Rationalisability/ Iterated strict dominance</h3>
+<p>Extending this …</p>
+<p><br />
+</p>
+<p>Rationality assumption: the players are rational</p>
+<div class="fragment">
+<ul>
+<li>We know rational players won’t play dominated strategies</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>The players <em>themselves</em> know this</li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p><em>Common Knowledge of Rationality assumption:</em></p>
+<p>Players know all other players are rational. They know all players know all players are rational. They know… (all players know … ad infinitum) … all are rational.</p>
+<div class="fragment">
+<p><br> </p>
+<p>Thus they know other players will never play a dominated strategy, and eliminate these from consideration.</p>
+</div>
+<div class="fragment">
+<p>Thus they won’t play a strategy if another strategy is always better against this reduced set of possibilities.</p>
+<p>…Etc.</p>
+</div>
+<div class="fragment">
+<p><br> </p>
+<p>… the process of ‘<em>Iterated Strict Dominance</em>’ (ISD). <span class="math inline">\(\rightarrow\)</span> Strategies that survive ISD: <strong>‘rationalizable’</strong></p>
+<aside class="notes">
+Adv: There are differences between ‘rationalizable’ and ‘survives ISD’ but for our purposes these are the same
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p>ISD example; may yield a unique prediction</p>
+<p><img src="picsfigs/matrixforISD.png" width="912" height="80%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/isd1.png" width="1280" height="80%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/isd2.png" width="1280" height="80%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/isd3.png" width="1280" height="80%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p>But there may be <em>no</em> dominated strategies, or ISD may leave many possibilities</p>
+<div class="fragment">
+<p><img src="picsfigs/bossmall.png" width="50%" style="display: block; margin: auto;" /></p>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/chicken-matrix.png" width="50%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p>###TIL</p>
+<ol type="1">
+<li><p>How economists consider strategic interaction</p></li>
+<li><p>Basic notation &amp; grammar of game theory</p></li>
+</ol>
+<div class="fragment">
+<p><br> </p>
+<ol start="3" type="1">
+<li>What defines a “Prisoners’ Dilemma”</li>
+</ol>
+<p><br> </p>
+</div>
+<div class="fragment">
+<ol start="4" type="1">
+<li><p>Key concept: Common Knowledge</p></li>
+<li><p>Predictions: Dominant/dominated strategies, ISD/Rationalisability</p></li>
+</ol>
+</div>
+<div class="fragment">
+<!--
+<font color='gray'>Next lecture: the famous '(Nash) Equilibrium'... definition, how to solve for these, what it means and should we expect 'Nash equilibrium play'?</font>
+-->
+</div>
+</section></section>
+<section><section id="second-game-theory-chunk-coverage" class="title-slide slide level1"><h1>Second game theory chunk: coverage</h1></section><section id="second-game-theory-chunk-coverage-1" class="slide level2">
+<h2>Second game theory chunk: coverage</h2>
+<p><img src="picsfigs/john-nash-alicia.jpg" width="50%" style="display: block; margin: auto;" /></p>
+<ol type="1">
+<li>Equilibrium and Nash Equilibrium: definition, finding NE in matrix games (some examples)</li>
+</ol>
+<ol start="2" type="1">
+<li>Pure and Mixed strategies, equilibrium</li>
+</ol>
+</section><section class="slide level2">
+
+<p>…</p>
+<ol start="3" type="1">
+<li>Multiple equilibria and refinements</li>
+</ol>
+<p><br> </p>
+<ol start="4" type="1">
+<li>Sequential Games (and extensive form)</li>
+</ol>
+<p><br> </p>
+<ol start="5" type="1">
+<li><p>Repeated games: definite time horizon; indefinite/infinite</p></li>
+<li><p>Repeated games: indefinite/infinite</p></li>
+</ol>
+<p><br> </p>
+<ol start="6" type="1">
+<li><p>Continuous Action games</p></li>
+<li><p>Experimental evidence: What is a laboratory experiment in Economics?</p></li>
+</ol>
+</section><section class="slide level2">
+
+</section></section>
+<section><section id="equilibrium" class="title-slide slide level1"><h1>Equilibrium</h1></section><section id="equilibrium-1" class="slide level2">
+<h2>Equilibrium</h2>
+<p><font color='gray'>Market equilibrium (recapping): given the equilibrium price &amp; quantity, no market participant has an incentive to change her behaviour.</font></p>
+<div class="fragment">
+<p><br> </p>
+<p><br />
+</p>
+<p>Similar concept for strategic settings:</p>
+<dl>
+<dt>Nash equilibrium (NE)</dt>
+<dd>A set (i.e., ‘profile’) of <em>strategies</em>, one for each player, that are best responses against one another
+</dd>
+</dl>
+</div>
+</section><section class="slide level2">
+
+<dl>
+<dt>Nash equilibrium (NE)</dt>
+<dd>A set (‘profile’) of <em>strategies</em>, one for each player, that are best responses against one another
+</dd>
+</dl>
+<p>If I play my BR to your chosen strategy and you’re playing your BR to mine, neither of us has an incentive to deviate — an equilibrium.</p>
+<div class="fragment">
+<p>All games have at least one Nash equilibrium</p>
+<ul>
+<li>But it may be an equilibrium in ‘mixed strategies’ (involving randomisation)</li>
+</ul>
+</div>
+<div class="fragment">
+<p>Caveat: we might not expect such play to actually occur (particularly not in one-shot games)</p>
+<aside class="notes">
+In fact, 2-player games will have an <em>odd</em> number of equilibria; you can see this by looking at the crosses of the BR functions
+</aside>
+</div>
+</section><section id="two-ways-to-find-the-nash-equilibrium-ne" class="slide level2">
+<h2>Two ways to find the Nash equilibrium (NE)</h2>
+<p><img src="picsfigs/pd_normal.png" width="80%" style="display: block; margin: auto;" /></p>
+<p><em>First method: Inspection</em></p>
+<p>Check each outcome.</p>
+<div class="fragment">
+<p><br> </p>
+<p>Either player has incentive to <em>unilaterally</em> deviate?</p>
+</div>
+<div class="fragment">
+<p><br> </p>
+<p>If not <span class="math inline">\(\rightarrow\)</span> it’s (outcome of) a NE.</p>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/pd_normal.png" width="60%" style="display: block; margin: auto;" /></p>
+<p><em>Second method to find NE – Underlining</em></p>
+<div class="fragment">
+<p><br> </p>
+<p>Underline payoffs for BR’s of each player.</p>
+</div>
+<div class="fragment">
+<p><br> </p>
+<p>Outcome with 2 underlines <span class="math inline">\(\rightarrow\)</span> <font color='gray'>outcome of</font> a NE (strat. profile).</p>
+<aside class="notes">
+<p>Caveat: works in a game with a countable set of actions … a ‘matrix’ game</p>
+If the actions are a continuous variable (e.g., price, quantity) you must solve for point(s) where these functions meet
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p>Find equilibrium via each method:</p>
+<p><img src="picsfigs/pd_normal.png" width="90%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+<p>Note this is the same ‘prediction’ as dominant strategies, but the interpretations are different;</p>
+This is not by accident, there is a general result…
+</aside>
+<aside class="notes">
+<p>Recall again that the NE, and the prediction of ‘players play dominant strategies’ (also ‘rationalisability’)</p>
+yields the single outcome that is clearly NOT pareto optimal. Lesson group and individual interests don’t always align
+</aside>
+</section><section id="relationship-between-dominant-strategies-rationalisability-and-nash-equilibrium" class="slide level2">
+<h2>Relationship between dominant strategies, rationalisability, and Nash equilibrium</h2>
+<p>If eliminating dominated strategies yields a single prediction for each player, these form a NE (profile).</p>
+<div class="fragment">
+<p><br> </p>
+<p>Same for ISD (rationalizability) … if it leads to a unique prediction, it’s a NE.</p>
+</div>
+<div class="fragment">
+<p><br> </p>
+<p>HOWEVER: not every NE involves dominant strategies</p>
+<!---
+## Efficiency and the PD
+*Lesson: group and individual interests don't always align*
+- If the players could communicate what would seem to be the best outcome?
+. . .
+- Both cooperating (silent) better for both than the outcome in NE: 2 yrs vs. 3 yrs (R vs P)
+    - But binding agreements not allowed, and communication shouldn't help
+-->
+</div>
+</section><section id="coordination-and-anti-coordination-games" class="slide level2">
+<h2>Coordination and anti-coordination games</h2>
+<p><strong>In-class experiment: BOS &amp; coordination; need 2 volunteers</strong></p>
+<p><img src="picsfigs/bos_inlecture_swan.png" width="75%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+<p>LC: One is assigned the Kangaroo role, the other the Swan role. Each to write down their move in private.</p>
+<p>Rest of students to consider how they would play, and what they expect each to do.</p>
+Instructor opens papers and pays each their assigned amount.
+</aside>
+<h3 id="coordination-battle-of-the-sexes-bos">Coordination: Battle of the sexes (BOS)</h3>
+<p><img src="picsfigs/bosmatrix.png" width="282" height="80%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+to make it more PC, assume it is a very violent ballet and a very gentle boxing match
+</aside>
+<aside class="notes">
+LC: Underline best responses, find pure strategy NE here
+</aside>
+</section><section class="slide level2">
+
+<h3 id="anti-coordination-matching-pennies-oddsevens">Anti-coordination: Matching pennies (odds/evens)</h3>
+<p><img src="picsfigs/matchpennies.png" width="90%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+LC: Underline best responses, show no pure strategy NE here
+</aside>
+</section></section>
+<section><section id="mixed-strategies" class="title-slide slide level1"><h1>Mixed strategies</h1></section><section id="mixed-strategies-1" class="slide level2">
+<h2>Mixed strategies</h2>
+<dl>
+<dt>Pure strategy</dt>
+<dd>Consists of a single action played with certainty
+</dd>
+</dl>
+<div class="fragment">
+<dl>
+<dt>Mixed strategy</dt>
+<dd>Assigns a probability to each possible action
+</dd>
+</dl>
+</div>
+<div class="fragment">
+<p><em>Remember: there is always at least one NE. If there is no pure strategy NE, there will be a NE in mixed strategies.</em></p>
+</div>
+</section><section class="slide level2">
+
+<h3 id="matching-pennies-mixed-strategies">Matching pennies: mixed strategies</h3>
+<p><strong>Intuition</strong></p>
+<ul>
+<li>If you choose heads/tails half the time then I’m indifferent between heads or tails
+<ul>
+<li>choosing heads half the time is <em>among</em> my best responses</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>If I choose heads half the time then you’re indifferent between heads/tails
+<ul>
+<li>choosing heads half the time is <em>among</em> your best responses</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>So, technically, each of us choosing heads half the time is a NE</li>
+</ul>
+<aside class="notes">
+But it is called a ‘weak’ NE because either of us would do no <em>worse</em> if he deviated alone
+</aside>
+</div>
+</section><section class="slide level2">
+
+<h3 id="battle-of-sexes-mixed-strategies">Battle of sexes: mixed strategies</h3>
+<p><img src="picsfigs/bosmatrix.png" width="75%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+<p>Wife wants to end up at the same place as her husband but doesn’t know where he is going.</p>
+<ul>
+<li><p>If she believes that he will always go to the ballet she should always go to the ballet.</p></li>
+<li><p>If she believes he will always go boxing, she should go boxing.</p></li>
+<li><p>What other beliefs may she have?</p></li>
+</ul>
+</aside>
+<p>Want to derive the best response functions, find intersections.</p>
+<div class="fragment">
+<p>Let <span class="math inline">\(h\)</span>: probability husband chooses Ballet, <span class="math inline">\(w\)</span>: probability wife chooses Ballet</p>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/bosmatrix.png" width="50%" style="display: block; margin: auto;" /></p>
+<p><strong>Wife’s BR:</strong></p>
+<ul>
+<li>Wife chooses Ballet iff her Expected payoff of Ballet &gt; Expected payoff of Boxing</li>
+</ul>
+<div class="fragment">
+<p>I.e., <span class="math inline">\(2h &gt; 1- h\)</span>, i.e, <span class="math inline">\(h &gt; 1/3\)</span></p>
+<ul>
+<li>Thus, wife goes Ballet if she believes husband goes Ballet more than 1/3 of the time
+<ul>
+<li>If she thinks he goes below 1/3 of the time she goes Boxing</li>
+<li>If she thinks he goes <em>exactly</em> 1/3 of the time she is indifferent</li>
+</ul></li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p><img src="bosbr1.png" height="5in" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+<p>This plots the value of w that best responds to h;</p>
+the probability the wife goes Ballet given the probability the husband goes Boxing.
+</aside>
+</section><section class="slide level2">
+
+<p>Let w: probability wife chooses Ballet</p>
+<p><strong>Husband’s BR:</strong></p>
+<div class="fragment">
+<p>Husband chooses Ballet iff his Expected payoff of Ballet &gt; Expected payoff of Boxing</p>
+<p><br> </p>
+<p><span class="math inline">\(1w &gt; 2- 2w\)</span></p>
+<p><span class="math inline">\(\rightarrow w &gt; 2/3\)</span></p>
+</div>
+<div class="fragment">
+<p>Thus, husband goes ballet if he believes wife goes Ballet more than 2/3 of the time</p>
+<ul>
+<li><p>If he thinks she goes less than 2/3 of the time he goes Boxing</p></li>
+<li><p>If she thinks he goes <em>exactly</em> 2/3 of the time he is indifferent</p></li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/bosbr2.png" width="1280" height="5in" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/bosbr3.png" width="1280" height="80%S" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p>Shortcut: only someone who is indifferent will randomise…</p>
+<p>Wife goes Ballet if thinks husband goes Ballet <span class="math inline">\(&gt;\)</span> 1/3 of time</p>
+<p><small> If she thinks he goes below 1/3 of the time she goes Boxing</small></p>
+</section><section class="slide level2">
+
+<h3 id="whats-all-this-rot">What’s all this rot?</h3>
+<div class="fragment">
+<p>Mixed strategies are not about ‘being unpredictable’; these are one shot games</p>
+<aside class="notes">
+Adv: Some texts and authors make this point about ‘unpredictability’ but others disagree (including myself). Making sure that it is impossible to predict your later play from your previous is only important if you are playing the same game repeatedly, and being observed.
+</aside>
+</div>
+<div class="fragment">
+<p>It makes a bit more sense if we think about ‘populations’</p>
+</div>
+<div class="fragment">
+<ul>
+<li>Suppose in a population 1/3 of men go to Ballet and 2/3 of women go to Ballet:</li>
+<li>… these ratios are ‘stable’; no reason for systematic changes.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>On the other hand, if men always went to boxing and women to ballet this is not stable</li>
+<li>A husband would be better off going to ballet … so the ratios should change over time.</li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p>###Computing payoffs with mixing</p>
+<p>Formally NE specifies <em>strategies</em> (strategy ‘profiles’) not payoffs</p>
+<p><br />
+</p>
+<div class="fragment">
+<p><br />
+</p>
+<p>In the BOS the pure strategy equilibria were</p>
+<ul>
+<li><ol type="i">
+<li>Husband: Boxing, Wife: Boxing</li>
+</ol></li>
+<li><ol start="2" type="i">
+<li>Husband: Ballet, Wife: Ballet</li>
+</ol></li>
+</ul>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<p>The mixed-strategy NE was:</p>
+<ul>
+<li><ol start="3" type="i">
+<li>Husband: go Ballet with probability h=1/3, Wife: Go Ballet with prob w=2/3.</li>
+</ol></li>
+</ul>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<p>The <em>payoffs</em> to these were, respectively</p>
+<ul>
+<li><ol type="i">
+<li>Husband: 2, Wife: 1</li>
+</ol></li>
+<li><ol start="2" type="i">
+<li>Husband: 1, Wife: 2</li>
+</ol></li>
+<li><ol start="3" type="i">
+<li>…</li>
+</ol></li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p>Payoff to the mixed strategy: simple EU computations, see handout (work on your own)</p>
+<!---
+- Payoffs are utilities, sum utility of each outcome $\times$ probability of that outcome
+    - Prob(Both go Ballet) = $w \times h = \frac{2}{3} \times \frac{1}{3} = \frac{2}{9}$
+    - Prob(Both go Boxing) = $(1-w)(1-h) = \frac{1}{3} \times \frac{2}{3} = \frac{2}{9}$
+    - Prob(Wife Ballet, Husband Boxing) = $w(1-h) = \frac{2}{3} \times \frac{2}{3} = \frac{4}{9}$
+    - Prob(Wife Boxing, Husband Ballet) = $(1-w)(h) = \frac{1}{3} \times \frac{1}{3} = \frac{1}{9}$
+    -->
+<!---
+Thus, under the mixed strategy NE play:
+$$U_{husb} =  \frac{2}{9} \times 1 +  \frac{2}{9} \times 2 +  \frac{4}{9} \times 0 + \frac{1}{9} \times 0 = \frac{6}{9} = \frac{2}{3}$$
+$$U_{wife} = \frac{2}{3}$$
+<br> \bigskip
+<font color='gray'>Wife's payoff inferred from symmetry of problem or similarly calculated</font>
+-->
+<p>It turns out:</p>
+<p><span class="math display">\[U_{husb} =  \frac{2}{9} \times 1 +  \frac{2}{9} \times 2 +  \frac{4}{9} \times 0 + \frac{1}{9} \times 0 = \frac{6}{9} = \frac{2}{3}\]</span></p>
+<p>and same for the Wife’s payoffs.</p>
+</section><section class="slide level2">
+
+<p><img src="bosbr3.png" height="5in" style="display: block; margin: auto;" /></p>
+<p>Three equilibria: both Boxing, both Ballet, mixed strategy; are any more reasonable as predicted outcomes?</p>
+</section><section class="slide level2">
+
+<h3 id="how-do-you-solve-a-problem-like-multiple-equilibria-wip">How do you solve a problem like multiple-equilibria? (WIP)</h3>
+<p><a href="https://youtu.be/OvsNgQS_Qa8?t=40">LINK</a></p>
+<p>There’s always one or more they say but sometimes it is mixed<br />
+you find one where the best responses meet at some point fixed<br />
+you only know you won’t regret the strategies it ‘picksed’<br />
+I hear that it’s prediction power is shabby</p>
+<p><br />
+</p>
+<p>It might not yield the best outcome and might not yield the worst<br />
+In prisoner’s dillemas a confession is coerced,<br />
+I hate to have to say it, but I very firmly feel Nash Equilibrium’s not an asset to the abbey<br />
+</p>
+<p>I have to say a word on its behalf: multiple-equilibria make me laugh</p>
+</section><section id="so" class="slide level2">
+<h2>So,</h2>
+<p>How do you solve a problem like multiple-equilibria?</p>
+<ul>
+<li>How do you catch a cloud and pin it down?
+<ul>
+<li>How do choose among the multiple-equilibria?</li>
+<li>A flibbertjibbet! A will-o’-the wisp! A clown!</li>
+</ul></li>
+</ul>
+<p>Many a thing you’d like old Nash to tell you<br />
+Many a thing you thought you’d understand<br />
+But how do you find a way to predict equilibrium play?<br />
+How do you keep a wave upon the sand?</p>
+<p>Oh, how do you solve a problem like multiple-equilibria?<br />
+<em>How do you hold a moonbeam in your hand?</em></p>
+</section><section class="slide level2">
+
+<h3 id="in-class-experiment-bos-coordination-need-2-volunteers">In-class experiment: BOS &amp; coordination; need 2 volunteers</h3>
+<p><img src="picsfigs/BOS_inlecture.png" width="1011" height="4in" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+<p>LC: One is assigned the Husband role, the other the Wife role. Each to write down their move in private.</p>
+<p>Rest of students to consider how they would play, and what they expect each to do.</p>
+Instructor opens papers and pays each their assigned amount.
+</aside>
+</section><section class="slide level2">
+
+<p>‘The Big Game’</p>
+<p><img src="picsfigs/coordgame_inlecture_mod.png" width="90%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+<p>LC: Get 2 more volunteers, same drill (row/column are the same, so it doesn’t matter)</p>
+<p>Rest of students choose 1-5 on clickers, no communication.</p>
+<p>Consider: assuming random matching, what would be the average and range of payoffs?</p>
+</aside>
+</section><section class="slide level2">
+
+<p><strong>A previous year’s results (2016, with slightly different payoffs)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;">Share chose</th>
+<th style="text-align: center;">.. squared</th>
+<th style="text-align: center;">Pay if match</th>
+<th style="text-align: center;">E(Pay)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0.26</td>
+<td style="text-align: center;">.068</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0.52</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0.21</td>
+<td style="text-align: center;">.044</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">.42</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">0.11</td>
+<td style="text-align: center;">.012</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">.11</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">0.16</td>
+<td style="text-align: center;">.026</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">.32</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">0.26</td>
+<td style="text-align: center;">.068</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">.52</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Wtd avg</td>
+<td style="text-align: center;">0.22</td>
+<td style="text-align: center;">0.05</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.42</td>
+</tr>
+</tbody>
+</table>
+</section></section>
+<section><section id="multiple-equilibrium-and-refinements" class="title-slide slide level1"><h1>Multiple equilibrium and refinements</h1></section><section id="multiple-equilibrium-and-refinements-1" class="slide level2">
+<h2>Multiple equilibrium and refinements</h2>
+<p>We refer to <em>refinement criteria</em> and <em>focal points</em></p>
+<ul>
+<li>Equilibrium with the highest payoffs for both?
+<ul>
+<li>In BOS this rules out mixing (payoffs 2/3, 2/3 for h,w respectively)</li>
+<li>But doesn’t say whether it’s Box, Box (payoffs 2,1) or Ballet, Ballet (payoffs 1,2)</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Choose the ‘symmetric equilibrium?’ … here, mixing</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Choose the one that seems like a ‘focal point’? (rem, the ‘big game’)</li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<h3 id="is-there-a-focal-point">Is there a focal point?</h3>
+<p>A year after graduating you come back for Alumni Weekend. You are supposed to meet the veterans of this module for a night of festivities but can’t remember where or when.</p>
+<div class="fragment">
+<p>The internet does not exist.</p>
+</div>
+<div class="fragment">
+<p>Where do you go? Write it down on a piece of paper</p>
+</div>
+<div class="fragment">
+<ul>
+<li>Now type what you wrote in to the chat window</li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p>What if you are meeting for a reunion in London, and no one has internet or phone access?</p>
+<ul>
+<li><p>Where do you go?</p></li>
+<li><p>Write it down</p></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Type it into the chat window.</li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p><em>Refinements are real-</em></p>
+<div class="fragment">
+<p><br />
+</p>
+<p><em>(ly) important to some academic referees:</em></p>
+<p><img src="picfigs/ref_refinement.png" width="90%" style="display: block; margin: auto;" /></p>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/staghunt.png" width="90%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+Stag,Stag and Hare,Hare are NE; the former is ‘payoff-dominant’ but the latter is ‘risk-dominant’
+</aside>
+</section></section>
+<section><section id="sequential-games-and-extensive-form" class="title-slide slide level1"><h1>Sequential Games (and extensive form)</h1></section><section id="sequential-games-and-extensive-form-1" class="slide level2">
+<h2>Sequential Games (and extensive form)</h2>
+<aside class="notes">
+Note: don’t worry about the ‘normal form’ of sequential games; we will only use the extensive form for these LC: describe this notation again: decision nodes, etc
+</aside>
+<p><small>Consider Battle of Sexes, but now Wife chooses first, Husband observes this and then chooses. What do you think will happen? Vote:</small></p>
+<p><small>A. Wife: Ballet, Husband: Box</small></p>
+<p><small>B. Wife: Ballet, Husband: Ballet</small></p>
+<p><small>C. Wife: Box, Husband: Ballet</small></p>
+<p><small>D. Wife: Box, Husband: Box</small></p>
+<p><img src="picsfigs/BOS_sequential.png" width="50%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+Remember, it’s a one-shot game … unrealistic within a marriage of course
+</aside>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/BOS_sequential.png" width="80%" style="display: block; margin: auto;" /></p>
+<ul>
+<li>The wife has two strategies: Ballet or Boxing</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>The husband has four contingent strategies, but we focus on what he will do in each of his two possible ‘decision nodes’</li>
+</ul>
+<aside class="notes">
+<p>Here we see there is a ‘first-mover advantage’.</p>
+We see a very similar strategic advantage in other contexts, including ‘which firm enters a market first’
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/BOS_sequential.png" width="50%" style="display: block; margin: auto;" /></p>
+<dl>
+<dt>Proper subgame</dt>
+<dd>Part of the game tree including an initial decision not connected to another (oval or dashed lines) and everything branching out below it.
+</dd>
+</dl>
+<ul>
+<li>I.e., each ‘game’ starting from a point where a player knows where she is (knows previous choices)</li>
+</ul>
+<aside class="notes">
+SPNE via backwards induction – essentially requires that each player would act optimally at each of these points
+</aside>
+</section><section class="slide level2">
+
+<dl>
+<dt>Subgame-Perfect Nash Equilibrium (SPNE)</dt>
+<dd>Strategies that form a Nash equilibrium on every proper subgame.
+</dd>
+</dl>
+<div class="fragment">
+<p>You can solve for this with ‘backwards induction’ (BWI)</p>
+</div>
+<div class="fragment">
+<ul>
+<li>Solve for best move for last decision node (proper subgame)
+<ul>
+<li>Given these, solve for best response for previous decision node</li>
+<li>Etc.</li>
+</ul></li>
+<li>State the <em>complete contingent strategies</em> suggested by this</li>
+</ul>
+<aside class="notes">
+Technically, the strategies where the ‘continuation strategies’ form a NE…
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p>Example: BWI for BOS</p>
+<p><img src="picsfigs/bosbwi1.png" width="50%" style="display: block; margin: auto;" /></p>
+<div class="fragment">
+<p><img src="picsfigs/bosbwi2.png" width="50%" style="display: block; margin: auto;" /></p>
+<aside class="notes">
+<p>Note that the SPNE in a sequential game basically always involves ‘best responses’.</p>
+I think this makes SPNE more credible as a prediction in sequential games than NE in simultaneous games.
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/bosbwi1.png" width="890" height="1in" style="display: block; margin: auto;" /></p>
+<p><em>Formally specify (SP)NE strategies for above game:</em></p>
+<p>a NE, not SP: {Wife: Boxing; Husband: Boxing, Boxing}</p>
+<p>SPNE: {Wife: Ballet; Husband: Ballet, Boxing}</p>
+<p><em>(reading Husband’s decision nodes left to right; please specify this)</em></p>
+</section><section class="slide level2">
+
+<p><strong>It can get fancier</strong></p>
+<p><img src="picsfigs/longgamework_randompayoffs_noul.png" width="90%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/longgamework_randompayoffs_ul.png" width="90%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p>In ‘normal’ (matrix form), stating complete contingent strategies:</p>
+<p><img src="picsfigs/longgame_matrix_full.png" width="80%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/longgame_matrix_abbrev.png" width="90%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/longgamework_randompayoffs_ul.png" width="50%" style="display: block; margin: auto;" /></p>
+<p>The SPNE; ‘state the complete contingent strategies’</p>
+<p>A: S1, N3, N5</p>
+<p>B: s2, n4, n6</p>
+<aside class="notes">
+Where actions are stated in the order of the decision nodes for each player
+</aside>
+</section></section>
+<section><section id="repeated-games-definite-time-horizon" class="title-slide slide level1"><h1>Repeated games: definite time horizon</h1></section><section id="repeated-games-definite-time-horizon-1" class="slide level2">
+<h2>Repeated games: definite time horizon</h2>
+<p>A ‘stage game’ is a simple (matrix) game that may be played repeatedly</p>
+<div class="fragment">
+<ul>
+<li>Definite horizon: play stage game a <em>known</em> and finite number of times</li>
+</ul>
+<p><font color='red'>Note:</font> In repeated (as in sequential) games, a strategy is a ‘complete contingent plan’; specifies what the player will choose at <em>every</em> decision node</p>
+</div>
+</section><section id="a-general-rule-for-finitely-repeated-games" class="slide level2">
+<h2>A general rule for (finitely) repeated games</h2>
+<p>Whenever the stage-game is repeated, repeated play of the stage-game equilibrium is an equilibrium of this repeated game</p>
+<div class="fragment">
+<ul>
+<li>In a <em>finitely-repeated</em> Prisoner’s dilemma this is the <em>only</em> equilibrium</li>
+</ul>
+<aside class="notes">
+<p>This is the case for any stage game with only a single equilibrium</p>
+For games with multiple stage-game equilibria there may be repeated game equilibria involving different play in some stages; not discussed here.
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><img src="pd_normal.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Is there a way in which we can sustain cooperation in a finitely repeated Prisoners’ Dilemma?</p>
+<div class="fragment">
+<p><br> </p>
+<p>No.</p>
+<aside class="notes">
+PUT THE PAYOFFS on the board
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p>Suppose we repeat the Prisoners’ Dilemma a finite (T) number of times, e.g., 10 times.</p>
+<div class="fragment">
+<p>What is the subgame perfect equilibrium?</p>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<p><strong>Backwards induction:</strong></p>
+<ul>
+<li>In period 10 (period T) both confess as it’s the dominant strategy</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>In period 9 (period T-1)
+<ul>
+<li>Knowing period 10 (period T) decision is unaffected by earlier moves, players confess in period 9 (their dominant strategy)</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>… etc, all the way back to period 1</li>
+</ul>
+</div>
+<div class="fragment">
+<p>Thus each Confesses in every period <span class="math inline">\(\rightarrow\)</span> Can’t sustain cooperation.</p>
+</div>
+</section></section>
+<section><section id="repeated-games-indefinite-or-infinite-time-horizon-mathematically-equivalent" class="title-slide slide level1"><h1>Repeated Games: Indefinite or infinite time horizon (mathematically equivalent)</h1><ul>
+<li>Game played repeatedly for potentially infinite number of periods</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li>But there is a ‘discount factor’ <span class="math inline">\(g\)</span></li>
+</ul>
+<p>. . .</p>
+<ul>
+<li><span class="math inline">\(g\)</span> may instead represent ‘probability the game is repeated another time’</li>
+</ul>
+<aside class="notes">
+<p>With an infinitely-repeated game with no discounting, payoffs would be potentially infinite, making it hard to decipher.</p>
+It’s realistic to imagine people discount the future, and we don’t know how long these repeated interactions last; people die, move away, etc.
+</aside></section><section class="slide level2">
+
+<h3 id="trigger-strategies">Trigger strategies</h3>
+<dl>
+<dt>Trigger strategy</dt>
+<dd>Strategy in a repeated game where one player stops cooperating in order to punish another player for not cooperating.
+</dd>
+</dl>
+<div class="fragment">
+<p><br> </p>
+<dl>
+<dt>Grim trigger strategy</dt>
+<dd>If other player fails to cooperate in one period, play the (undominated) strategy that makes the other player worst off in all later periods
+</dd>
+</dl>
+</div>
+</section><section class="slide level2">
+
+<p><strong>Indefinitely repeated Prisoners’ Dilemma</strong></p>
+<p>Consider the following trigger strategy (for both players):</p>
+<ul>
+<li>Stay silent as long as the other player stays silent.</li>
+<li>If one player confesses, both players will confess from them on.</li>
+</ul>
+<div class="fragment">
+<p>Is this a SPNE?</p>
+</div>
+<div class="fragment">
+<ul>
+<li>In each subgame after someone confesses, we play confess in all stage games (forever on), which we know is a NE</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>What about periods where no one has confessed (yet)?</li>
+</ul>
+<aside class="notes">
+<p>How do we know both players playing ‘confess forever’ is a SPNE?</p>
+<p>Starting in any subgame, knowing the other player will confess, I will want to confess (for that period’s payoffs).</p>
+I also know that given his strategy, playing ‘silent’ in this period will not have any impact on my later payoffs.
+</aside>
+<aside class="notes">
+<p>Know the principle as well as the computation if possible.</p>
+<p><strong>geometric discounting</strong> is super-relevant for finance and cost-benefit analysis</p>
+and it also will come up in behavioral economics.
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p>The payoff from staying Silent (cooperating) each period is:</p>
+<p><span class="math display">\[-2 \times (1 + g + g^2 + g^3 + . . . )\]</span></p>
+<div class="fragment">
+<p>The payoff from Confessing right away (after which both players Confess always) is:</p>
+<p><span class="math display">\[ -1 + -3 \times (g + g^2 + g^3 + . . . ) \]</span></p>
+</div>
+<div class="fragment">
+<p>Formula for a geometric series (where <span class="math inline">\(0&lt;g&lt;1\)</span>): <span class="math inline">\(g + g^2 + g^3 + g^4 ... = g/(1-g)\)</span></p>
+<aside class="notes">
+<p>Maths: The standard derivation of this, which is pretty neat, is in the NS text.</p>
+<p>This formula is an important one in economics (and beyond),</p>
+particularly for discounting a constant stream of payoffs, e.g., stock dividends
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p>Thus cooperation in a single period is ‘weakly preferred’ (at least as good) if</p>
+<p><span class="math display">\[(-2) \times (1 + g + g^2 + g^3 + . . . ) \geq (-1) + -3 \times (g + g^2 + g^3 + . . .)\]</span></p>
+<div class="fragment">
+<p><span class="math display">\[g + g^2 + g^3 + . . . \geq 1\]</span></p>
+<aside class="notes">
+<p>Intuition for the second formula: left side is loss of future payoffs (-3 vs -2 forever from next period).</p>
+Right side is gain in that period (get -1 rather than -2))
+</aside>
+</div>
+<div class="fragment">
+<p><span class="math display">\[g/(1-g) \geq 1\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[g \geq \frac{1}{2}\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(\rightarrow\)</span> cooperation can be sustained if the ‘probability of play continuing’ (or ‘patience’) is high enough; here, above 1/2.</p>
+<aside class="notes">
+Just because it can be sustained doesn’t mean it will; there are other Subgame-Perfect Nash equilibria, including ‘always confess’.
+</aside>
+<aside class="notes">
+This setup is directly applied to the case of ‘a cartel’ of firms tacitly or overtly colluding to sustain high prices!
+</aside>
+</div>
+</section></section>
+<section><section id="continuous-actions" class="title-slide slide level1"><h1>Continuous Actions</h1><p>GT for cases where people choose ‘continuous’ actions, e.g.:</p>
+<p>. . .</p>
+<ul>
+<li>Firms choose product price or quantity, or a level of R&amp;D, etc.</li>
+</ul>
+<p>E.g., <span class="math inline">\(q_i \in [0,\infty]\)</span> for <span class="math inline">\(i=1,...n\)</span> firms</p>
+<p>. . .</p>
+<ul>
+<li>Households voluntarily contribute to local public good (e.g., neighborhood watch)
+<ul>
+<li>or choose how many fish to catch from the shared pond</li>
+</ul></li>
+</ul>
+<p>. . .</p>
+<ul>
+<li>Nations: How large an army to build</li>
+</ul>
+<aside class="notes">
+As you can see from mock exams etc., GT with continuous actions IS something I may test you on!
+</aside></section><section class="slide level2">
+
+<p><font color='gray'>With continuous actions…</font></p>
+<p><br> </p>
+<p><span class="math inline">\(\rightarrow\)</span> Payoff functions, continuous ‘best response functions’; rather than a payoff matrix</p>
+<div class="fragment">
+<ul>
+<li>Nash equilibrium: Again, choices that are best responses to one another</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Dominant strategies: Again, a strategy that is preferred against <em>any</em> other player(s)’ strategies</li>
+</ul>
+<aside class="notes">
+Here the iterated dominance or ‘rationalizability’ is harder to compute; we won’t cover this
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p>Continuous games with differentiable payoffs, finding NE:</p>
+<ol type="1">
+<li><p>Write down payoff functions. (Differentiable?)</p></li>
+<li><p>Max each player’s payoff wrt own strategy; other player’s payoff as a ‘parameter’ <span class="math inline">\(\rightarrow\)</span> Players’ best-response functions.</p></li>
+<li><p>Look for intersection(s) <span class="math inline">\(\rightarrow\)</span> Nash equilibrium/equilibria</p></li>
+</ol>
+<aside class="notes">
+Source: <a href="https://www3.nd.edu/~tjohns20/gametheory_SP13/slides3.pdf" class="uri">https://www3.nd.edu/~tjohns20/gametheory_SP13/slides3.pdf</a>
+</aside>
+<p><br> </p>
+<!-- \pause -->
+<p>With two players:</p>
+<p><span class="math display">\[s_i^\ast=B_i(B_-i(s_i^\ast))\]</span></p>
+<h3 id="tragedy-of-the-commons">Tragedy of the Commons</h3>
+<p>Shepherds A &amp; B graze <span class="math inline">\(s_A\)</span> &amp; <span class="math inline">\(s_B\)</span> sheep, respectively, in same meadow</p>
+<div class="fragment">
+<p>More sheep graze <span class="math inline">\(\rightarrow\)</span> less grass for each <span class="math inline">\(\rightarrow\)</span> less wool/milk/meat per sheep</p>
+</div>
+<div class="fragment">
+<p>Benefit per sheep raised: <span class="math inline">\(120-s_A-s_B\)</span></p>
+</div>
+<div class="fragment">
+<p><br> </p>
+<p><em>Total</em> benefit from raising <span class="math inline">\(s_A\)</span> and <span class="math inline">\(s_B\)</span> sheep:</p>
+<ul>
+<li>Shepherd A: <span class="math inline">\(s_A(120-s_A-s_B)\)</span></li>
+<li>Shepherd B: <span class="math inline">\(s_B(120-s_A-s_B)\)</span></li>
+</ul>
+</div>
+<div class="fragment">
+<p><br />
+</p>
+<p><em>Marginal</em> benefit of ‘me adding’ another sheep:</p>
+<ul>
+<li>Shepherd A: <span class="math inline">\(120-2s_A-s_B\)</span></li>
+<li>Shepherd B: <span class="math inline">\(120-s_A-2s_B\)</span></li>
+</ul>
+<aside class="notes">
+BEEM101: covered in tutorial
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p>For simplicity, assume zero marginal cost</p>
+<p><br />
+</p>
+<p>Set MB=MC (here MC=0)</p>
+<ul>
+<li>Shepherd A: <span class="math inline">\(120-2s_A-s_B = 0\)</span></li>
+<li>Shepherd B: <span class="math inline">\(120-s_A-2s_B = 0\)</span></li>
+</ul>
+<div class="fragment">
+<p><br> </p>
+<p>Rearrange above to solve for BRFs:</p>
+<ul>
+<li>Shepherd A: <span class="math inline">\(s_A = 60-\frac{1}{2} s_B\)</span></li>
+<li>Shepherd B: <span class="math inline">\(s_B = 60-\frac{1}{2} s_A\)</span></li>
+</ul>
+</div>
+</section><section class="slide level2">
+
+<p>Solve for Nash equilibrium:</p>
+<p><span class="math display">\[s_A = 60-\frac{1}{2} s_B\]</span></p>
+<div class="fragment">
+<p>Plug this value of <span class="math inline">\(s_A\)</span> into the BRF for B, solve for <span class="math inline">\(s_B\)</span>, then for <span class="math inline">\(s_A\)</span></p>
+<p><span class="math display">\[s_B = 60-\frac{1}{2} s_A = 60 - \frac{1}{2}(60-\frac{1}{2} s_B)\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(s_A* = s_B* = 40\)</span></p>
+</div>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/brsheep.png" width="363" height="40%" style="display: block; margin: auto;" /></p>
+<p>Shepherd A: <span class="math inline">\(s_A = 60-\frac{1}{2} s_B\)</span></p>
+<p><br />
+</p>
+<p>Shepherd B: <span class="math inline">\(s_B = 60-\frac{1}{2} s_A\)</span></p>
+<div class="fragment">
+<p><br />
+</p>
+<p><span class="math inline">\(\rightarrow s_A* = s_B* = 40\)</span></p>
+</div>
+</section><section class="slide level2">
+
+<p><strong>Why the ‘Tragedy’ of the Commons?</strong></p>
+<div class="fragment">
+<p><small>Each grazes until his <em>private</em> marginal benefit equals his cost (0):</small></p>
+<ul>
+<li><span class="math inline">\(120-2s_A-s_B = 0\)</span></li>
+</ul>
+</div>
+<div class="fragment">
+<p><small>Does not consider the harm he imposes on the other guy</small></p>
+</div>
+<div class="fragment">
+<p>Above, <span class="math inline">\(s_A* = s_B* = 40\)</span>. Each get payoff <span class="math inline">\(40 \times (120 - 40 - 40) = 40 \times 40 = 1600\)</span><br />
+</p>
+</div>
+<div class="fragment">
+<p><small>To max <em>total</em> payoffs, set</small> <span class="math inline">\(S=s_A+s_B\)</span> <small> to max </small> <span class="math display">\[S\times(120-S)\]</span></p>
+</div>
+<div class="fragment">
+<p><small>Concave problem, set first-derivative to zero:</small> <span class="math display">\[120 - 2S = 0 \rightarrow S^*=60\]</span></p>
+</div>
+<div class="fragment">
+<p><small>Leading to total payoff <span class="math inline">\(60 \times (120 - 60) = 3600\)</span>. If split evenly (each graze 30), get 1800 each.</small></p>
+<aside class="notes">
+This is the ‘continuous action’ analogue of the Prisoner’s dilemma
+</aside>
+<aside class="notes">
+<p>Both the PD and the above ‘tragedy of the commons’ game illustrate a similar point:</p>
+Individuals acting in their own private interest may end up each doing worse off than if they could cooperate or collude.
+</aside>
+</div>
+</section><section class="slide level2">
+
+<p><strong>Sadly, this problem (literally!) is still relevant</strong></p>
+<ul>
+<li>See, e.g., <a href="http://www.ifad.org/evaluation/public_html/eksyst/doc/profile/pn/morocco.htm">“Morocco: Managing the ‘commons’ Livestock and Pasture Development Project in the Eastern Region”</a></li>
+</ul>
+<p><img src="picsfigs/moroccansheep.jpg" width="70%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p>… Continuous Action games</p>
+<ul>
+<li>`Comparative statics analysis’: Allow us to see how the equilibrium shifts as we change one ‘parameter’
+<ul>
+<li>E.g., increase A’s benefit per sheep</li>
+</ul></li>
+</ul>
+<aside class="notes">
+See example in text
+</aside>
+</section><section class="slide level2">
+
+</section></section>
+<section><section id="experimental-evidence-what-is-a-laboratory-experiment-in-economics" class="title-slide slide level1"><h1>Experimental evidence: What is a laboratory experiment in Economics?</h1></section><section id="experimental-evidence-what-is-a-laboratory-experiment-in-economics-1" class="slide level2">
+<h2>Experimental evidence: What is a laboratory experiment in Economics?</h2>
+<p>E.g., FEELE lab at Exeter</p>
+<ul>
+<li>Real incentives (typically small)</li>
+<li>Typically student subject pool</li>
+<li>No deception protocol</li>
+</ul>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/expeconlab.jpg" width="400" height="80%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<p><img src="picsfigs/ztreePD.png" width="708" height="80%" style="display: block; margin: auto;" /></p>
+</section><section class="slide level2">
+
+<h3 id="various-experimental-goals">Various experimental goals</h3>
+<ul>
+<li>Measure preferences (risk, time, social preferences…)</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Asses theoretical predictions (classical and behavioural), including game theory
+<ul>
+<li>Also see ‘likely’ outcomes where theory has no prediction or predicts multiple equilibria</li>
+<li><em>Critical</em> to assert ‘control’ over payoffs for this</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Understand cognitive processes in economic realm</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>‘Test’ institutions and mechanisms (e.g., auctions, markets)</li>
+</ul>
+</div>
+</section><section id="laboratory-evidence-1-prisoners-dilemmas" class="slide level2">
+<h2>Laboratory evidence 1: Prisoners’ dilemmas</h2>
+<p>Cooper et al (1996)</p>
+<p><small>Cooperation even in anonymous ‘1-shot’ games (different opponents each time)</small></p>
+<div class="fragment">
+<p><small>Cooperation declines somewhat over time, but not to zero</small></p>
+</div>
+<div class="fragment">
+<p><small>Mix of other-regarding and selfish types</small></p>
+<aside class="notes">
+<p>Results are similar for experiments involving contributions to public goods.</p>
+<ul>
+<li>some cooperation, declining over time but not to zero, and a mix of players who never contribute and many ‘reciprocal’ types. We may return to this later in the module.
+</aside></li>
+</ul>
+<p><img src="picsfigs/cooperPD.png" width="50%" style="display: block; margin: auto;" /></p>
+</div>
+</section><section id="laboratory-evidence-2-ultimatum-game" class="slide level2">
+<h2>Laboratory evidence 2: Ultimatum game</h2>
+<p>Proposer goes first, proposes split of the ‘pie’, anything between 0%-100% and 100%-0% inclusive.</p>
+<p><br> </p>
+<div class="fragment">
+<p>Responder can accept, or reject and get nothing</p>
+<aside class="notes">
+Q: What does SPNE predict (use backwards induction)?
+</aside>
+<aside class="notes">
+Ans: It predicts the proposal offers the lowest (positive) amount and the responder accepts
+</aside>
+</div>
+<div class="fragment">
+<p>What happens in experiments?</p>
+</div>
+<div class="fragment">
+<ul>
+<li>Most common offer: 50-50 split</li>
+<li>Responders: Often reject offers of less than 30% (even when it’s a lot of money)</li>
+</ul>
+</div>
+<div class="fragment">
+<p>Potential explanations</p>
+<ul>
+<li>Fairness concerns; monetary payoffs may not be <em>actual</em> payoffs</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Proposers may anticipate this</li>
+</ul>
+</div>
+</section><section id="issues-in-lab-experiments" class="slide level2">
+<h2>Issues in lab experiments</h2>
+<h3 id="what-is-being-measured">What is being measured?</h3>
+<p>PD: Does money measure the true payoffs? Do we have the ‘control’ to test the model?</p>
+<div class="fragment">
+<ul>
+<li>Other-regarding preferences; may be unobservable.</li>
+<li>‘Experimenter demand’: desire to please experimenter, aware of study goals?</li>
+</ul>
+</div>
+</section><section id="issues-in-lab-experiments-external-generalisability" class="slide level2">
+<h2>Issues in lab experiments: External generalisability</h2>
+<ol type="1">
+<li>Relevance of subject-pool (participants)</li>
+</ol>
+<ul>
+<li><p>Do they resemble the ‘real world’ group of interest? (e.g., firms, countries, taxpayers, voters, home-buyers)</p></li>
+<li><p>Right preferences and experience?</p></li>
+</ul>
+<div class="fragment">
+<ol start="2" type="1">
+<li>Relevance of environment</li>
+</ol>
+<ul>
+<li><p>Are the (small) stakes relevant?</p></li>
+<li><p>Are the right ‘environmental characteristics’ present?</p></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><p>Does the ‘imposed model’ apply?</p></li>
+<li><p>Observed self-conscious environment, perhaps made aware of contrasts</p></li>
+</ul>
+<aside class="notes">
+Adv: a recommended ‘advanced’ reading: ‘Ten Little Treasures of Game Theory and Ten Intuitive Contradictions’ Goeree and Holt, 2001
+</aside>
+</div>
+</section><section id="suggested-practice-problems-see-vle" class="slide level2">
+<h2>Suggested practice problems: see VLE</h2>
+<!---
+from Nicholson and Snyder Chapter 5 (12th ed)
+- 5.1, 5.5, 5.6, 5.7, 5.10
+- Also see next slides
+----
+**Additional tutorial problem I (Game theory)**
+<img src="picsfigs/teenchoices.png" width="90%" style="display: block; margin: auto;" />
+<small>Teens A and B are smitten with each other but neither knows of the other's feelings. Suppose the teachers at their school organize a dance.  The 'payoff' is based on whether their advances are rebuffed or accepted.  If they both Declare,  they get positive utility but if they are Rebuffed they face humiliation (significantly negative payoff).  Rebuffing an advance slightly elevates the teen's standing with peers.</small>
+
+- What is a teen's dominant strategy, or is there no dominant strategy?
+- Find the pure-strategy Nash equilibrium or equilibria
+- Find the mixed strategy equilibrium
+**Additional tutorial problem II (Game theory)**
+<img src="picsfigs/isd4by3game.png" width="90%" style="display: block; margin: auto;" />
+- Apply 'Iterated strict dominance' to the above game, showing your steps
+- State the pure strategies that are rationalizable.
+** Additional tutorial problem III (Game theory)**
+<img src="picsfigs/entrygame.png" width="90%" style="display: block; margin: auto;" />
+- Use backwards-induction to find the subgame-perfect Nash equilibrium strategies, outcomes, and payoffs, of the above game.
+-->
+</section></section>
+    </div>
+  </div>
+
+  <script src="s_game_theory_101_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="s_game_theory_101_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: true,
+        // Transition style
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        chalkboard: {
+        },
+
+        keyboard: {
+          67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
+          66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+          46: function() { RevealChalkboard.clear() },    // clear chalkboard when 'DEL' is pressed
+           8: function() { RevealChalkboard.reset() },    // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+          68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 's_game_theory_101_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+          { src: 's_game_theory_101_files/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+          { src: 's_game_theory_101_files/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>

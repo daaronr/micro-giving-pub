@@ -1,6 +1,5 @@
 # Preferences, Utility and Choice {#pref-util-choice}
 
-
 What can we reasonably say about 'what people prefer and choose'? How can we state this carefully and precisely? What are the implications of particular 'reasonable' assumptions? (How) can we consider this in terms of 'optimization'? How have Economists and decision-scientists considered these questions?
 
 
@@ -122,7 +121,15 @@ We now consider the very very fundamental building blocks behind the (in)famous 
 Please feel free to type some thoughts in the Hypothes.is sidebar, to engage discussion on this.
 
 You can find another 'idea-stimulating' exercise referenced in the O-R book, the questionnaire they give at [http://gametheory.tau.ac.il/exp11/](http://gametheory.tau.ac.il/exp11/). It's worth doing as they refer to it later in several parts of the book.
+
 </div>
+
+
+ 
+<div class="marginnote">
+DR #TODO: I intend to add a video here discussing the below 'motivating exercise'.
+</div>
+ 
 
 
 ```{block2,  type='inputq'}
@@ -205,7 +212,7 @@ In the (neo) classical economics framework, your (optimising) choices are determ
 
 For the classical Economics model, the work on preferences seems (to me) mainly as largely a matter of 'finding a consistent justification for our models of utility and choice'. If you already find these models plausible, perhaps this is not so interesting.
 
-However, I see these details as particular relevant for a few reasons and in a few contexts.
+However, I see these details as particularly relevant for a few reasons and in a few contexts.
   
 **When we take a step back and look outside the classical model to consider:** 
 
@@ -446,8 +453,7 @@ We skip the standard 'continuity' assumption here, although we return to a versi
 
 Another common 'axiom' involves 'diminishing marginal rates of substitution' or, in multiple dimensions, 'strict quasi-concavity', something you may come across in your maths/optimization module.
 
-In general, axioms like these also stand directly behind 'revealed preference' methods for measuring how much people value
-nonmarket goods, like clean air and national parks.
+In general, axioms like these also stand directly behind 'revealed preference' methods for measuring how much people value nonmarket goods, like clean air and national parks.
 </div>
  
 
@@ -482,6 +488,12 @@ Aside: Also 'forbidden' in the classical model: the *time* or *frame* in which I
 
 **Definition: Completeness** (From O-R)
   
+
+<div class="marginnote">
+DR #TODO: I intend to add a video here discussing this
+</div>
+ 
+
 The property that for all alternatives $x$ and $y$ , distinct or not, either $x \succsim y$ or $y \succsim x$ (or both].   Even more formally (optional)...
 
 ```{block2,  type='def'}
@@ -496,7 +508,7 @@ A binary relation $R$ on the set $X$ is complete if for all members $x$ and $y$ 
 
 \
 
-In case you are confused, please unfold the Q &A below...
+In case you are confused, please unfold the Q & A below...
 
 
 ```{block2,  type='fold'}
@@ -574,10 +586,11 @@ We may write this concisely as $A \succ B \sim C$.
 
 ```{block2,  type='tip'}
 
-If this seems confusing it may be because it is *too* obvious (although behavioral and experimental economists claim to find violations of this.
+If this seems confusing it may be because it is *too* obvious (although behavioral and experimental economists claim to find violations of this, as we shall see).
 
 ```
 
+\
 
 *If you found someone who striclty preferred an apple to a bananas, a banana to a cherry, and a cherry to an apple,  you could make a lot of money out of them!.*
 
@@ -602,6 +615,14 @@ It works as follows (being a bit informal here):
 ... Keep repeating steps 1-3, until you've drained them of all of their resources.
 
 ```
+
+
+
+
+<div class="marginnote">
+DR #TODO: I intend to add a video here discussing this
+</div>
+ 
 
 \
 
@@ -639,13 +660,14 @@ It is fun, but it is *barely* used later in the text.
 
 ```  
 
+\
 
 ### Possible preferences .. "Preference formation" {#pref-form}
 
 We might derive preference relations from a few "basic considerations", perhaps reflecting how people describe their own preferences (and choices) in conversation.
 
 <div class="marginnote">
-These can be considered in terms of individual preferences, or, as we will see later, ways to express group-preferences or social preferences.
+These can be considered in terms of individual preferences, or, as we will see later, ways to express group-preferences or social preferences. This is considered the 'axiomatic approach'.
 </div>
 
 
@@ -688,6 +710,7 @@ To prove the 'if and only if' relationship, you need to prove *both directions* 
 
 If you are struggling with this, you may find the [Khan academy Logic material helpful](https://www.khanacademy.org/test-prep/lsat/lsat-lessons/logic-toolbox-new/a/logic-toolbox--if-and-only-if), as well as more advanced treatments of hte logic of mathematical proofs.
 ```
+
 \
 
  
@@ -721,7 +744,11 @@ We will return to "distance functions" later. We are all familiar with the 'Eucl
 
 </div>
 
-Note that the above is, in fact a value function, with the 'value of alternative x' expressed as $v(x)=-d(x)$.
+Note that the above is, in fact a value function, with the 'value of alternative x' expressed as $v(x)=-d(x)$ 
+
+<div class="marginnote">
+Negative because 'the further from the ideal', the worse it is.
+</div>
 
 
 \
@@ -738,7 +765,7 @@ This seems to be an example of what we call 'lexicographic preferences'.
 
 ```{block2,  type='fold'}
 
-Ask people how they make their choices, particularly when they are shopping online. I bet that some people will describe a process of 'ruling out' one set of options after another. This is, in fact an optimal procedure for someone with lex preferences. This is *not* for someone with the more standard preferences you may have seen in economics courses, someone who considers trade-offs between one attribute and another. 
+Ask people how they make their choices, particularly when they are shopping online. I bet that some people will describe a process of 'ruling out' one set of options after another. This is, in fact an optimal procedure for someone with lex preferences. This is *not optimal* for someone with the more standard preferences you may have seen in economics courses, someone who considers trade-offs between one attribute and another. 
 
 The 'filtering' is also consistent with the standard way data is organised. Try to search for a product or service online (on Amazon, or Kayak): it is hard to *specify* your trade off between different characteristics, but it's easy to 'narrow things down' one category at a time.  
 
@@ -747,6 +774,11 @@ In business data science, some 'tree-based' models of choice implicitly assume l
 
 ```
 
+
+<div class="marginnote">
+DR #TODO: I intend to add a video or audio content discussing the above.
+</div>
+ 
 
 \
 
@@ -1227,6 +1259,12 @@ Also note that behavioral economics often separates preferences from choices, as
 
 \
 
+
+
+
+
+**Consider: Measuring and comparing utilities** (unfold)
+
 In general,  we don't imagine that we can somehow measure an individual's actual 'amount' of utility. To the extent that we can measure it at all, it is only inferred indirectly, from the *choices* people make.
 
 
@@ -1235,11 +1273,50 @@ In general,  we don't imagine that we can somehow measure an individual's actual
 </div>
 
 
+\
+
+So utility is not 'directly observable and measurable'. 
+
+
+<div class="marginnote">
+Unlike midi-chlorians or thetans.
+</div>
+
+
+<br> \bigskip
+
+
+Utility is seen to govern an individual's *choices* and thus only inferred indirectly, from the *choices* an people make.
+
+\
+
+
+**Consider: Revealed preference:** 
+
+if Al buys a cat instead of a dog, and a dog was cheaper, we assume Al gets more utility from a cat
+
+
+```{r  fig.cap = 'Al and his cat', out.width='40%', fig.asp=.4, fig.align='center',  echo = FALSE}
+knitr::include_graphics("picsfigs/alscat.jpg")
+```
+
+
+Such methods are used to try to measure the value of goods that have no observed market price, for public policy choices.
+
+<div class="marginnote">
+E.g., If people drove 20km to go to parK B, they must value it at at least the cost of driving there.
+
+If people pay £20k more for a house with a view of the lake (ceteris paribus), or in a neighborhood with better air quality...
+
+</div>
+
+\
+
 This raises another issue: can we compare whether one person gets 'more' or 'less' utility than another? Can we know whether a policy can "increase one person's utility more than it decreases another person's utility"? These issues are considered in  modeling social welfare and social choices. 
 
 <div class="marginnote">
  In more detailed discussions, we might speak of 'cardinal utility', 'ordinal utility'. 
- </div>
+</div>
  
 Empirically, it is hard to imagine how these could be measured: if utility is only indirectly and partially observable through an individual's choices... when do we observe choices that trade off between one person and another in ways that reflect the 'sum of their utilities'? (Never, I guess.)
  
@@ -1282,7 +1359,7 @@ No, there cannot be, I can 'prove it'. Suppose there that $K$ were the 'smallest
 
 \
 
-The following proposition, and other propositions extending this, are  fundamental to the idea that we can conduct our economic analysis *as if* people actually consulted a utility function. x
+The following proposition, and other propositions extending this, are  fundamental to the idea that we can conduct our economic analysis *as if* people actually consulted a utility function. 
 
 ```{block2,  type='def'}
 
@@ -1720,7 +1797,7 @@ The above 'violations' and the discussion of 'irrelevant alternatives' relate to
 
 ```{block2,  type='def'}
 
-**Property $\alpha%: 
+**Property $\alpha$**: 
   
 > Given a set X, a choice function $c$ for $X$ satisfies property $\alpha$ if ...
 

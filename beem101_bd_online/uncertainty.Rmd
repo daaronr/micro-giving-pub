@@ -4,8 +4,10 @@
 'Expected Utility';  risk-aversion, finance and diversification; time-preference and discounting
 
 
+
 ```{block2,  type='note'}
-**I will add a great deal of content here.**
+
+*More content likely to be added.*
 
 This material is largely drawn from O-R Chapter 3, but I also consult a number of other sources as well as  my own notes. You are advised to read most of this O-R chapter along with this web-book. But please see my [notes below](#unc-readings) on what you can skip.
 ```
@@ -53,7 +55,7 @@ Previously descrived utility functions: predict choices under certainty. They ma
 
 People don't "maximise expected monetary value"" tend to be risk-averse
 
-An *Expected Utility* (EU) framework, as defined below, allows for risk-aversion/
+An *Expected Utility* (EU) framework, as defined below, allows for risk-aversion or any other attitude towards risky *outcomes*
 
 ```
 
@@ -219,7 +221,7 @@ $$ f (x) = F' (x) ,~~~F(x) = \int_{- \infty}^{x} f (t)\,dt .$$
 \
 
 <div class="marginnote">
-Todo: look up and include some graphics showing the pdf and cdf.
+Todo: look up and include some graphics showing the pdf and cdf, or create these within R.
 
 </div>
 
@@ -268,7 +270,7 @@ O-R, p. 31:
 
 <div class="marginnote">
 In other texts you may see these  referred to as "simple gambles".
-/div>
+</div>
 
 
 
@@ -500,7 +502,7 @@ With uncertainty, linear (affine) transformations of the $v$ function represent 
 
 \
 
-Formally, if the VNM utility function $v(\cdot) represents a set of preferences, the VNM utility function $w(\cdot)$ represents the same preferences if and only if, for some scalar $\alpha$ and some scalar $\beta>0$
+Formally, if the VNM utility function $v(\cdot)$ represents a set of preferences, the VNM utility function $w(\cdot)$ represents the same preferences if and only if, for some scalar $\alpha$ and some scalar $\beta>0$
 
 $$w(g) = \alpha + \beta v(g)$$.
 
@@ -512,7 +514,7 @@ the *level* of total utility didn't really matter, only the relative utilities. 
 
 \
 
-By varying the $v(\cdot)$ function we can vary what we will define as  the '[risk preference](risk-pref)'; ...Risk-loving, risk neutral, and risk averse individuals can all be seen as maximizing EU, as discussed [below](#eu-risk).
+By varying the $v(\cdot)$ function we can vary what we will define as  the '[risk preference](#risk-pref)'; ...Risk-loving, risk neutral, and risk averse individuals can all be seen as maximizing EU, as discussed [below](#eu-risk).
 
 
 ```{block2,  type='tip'}
@@ -521,7 +523,7 @@ Although O-R cover the Allais paradox next, I think it may be easier to understa
 ```  
 
 \
-## Risk preferences (#risk-pref)
+## Risk preferences {#risk-pref}
 
 Consider the choice between two gambles and one 'certainty':
 
@@ -600,7 +602,7 @@ O-R formal definition of risk aversion
   
 ```
 
-### Risk preferences and EU {-}
+### Risk preferences and EU {-#eu-risk}
 
 Imagine the realised utility $v(y)$ that arises from the consumption chosen with wealth $y$.
 
@@ -728,8 +730,7 @@ Thus a risk-averse person would reject such gambles.
 
 \
 
-### Graphical illustration of 'risk aversion iff concave value function $v(\cdot)$ {-}
-
+### Graphical illustration of "risk aversion $\leftrightarrow the value function $v(\cdot)$ is concave" {-}
 
 **How to illustrate this:**
 
@@ -802,7 +803,7 @@ $$f(E(X)) > E(f(X))$$
 
 
 
-## Allais paradox; considering other (non-EU) frameworks (#allais)
+## Allais paradox; considering other (non-EU) frameworks {#allais}
 
 (Content to be added here, drawing both from O-R and from my previous notes)
 
@@ -811,12 +812,14 @@ $$f(E(X)) > E(f(X))$$
 
 Consider: 
 
+**Scenario 2. Which would you choose?**
+
 - Gamble A: an 89\% chance of winning £1 million, a 10\% chance of winning £5 million, and a 1\% chance of winning nothing.
 - Gamble B: £1 million with certainty.
 
 \
 
-```{block2,  type='inputqn'}
+```{block2,  type='inputq'}
 
 Write down (in Hypothesis): which would you choose?
 
@@ -837,7 +840,7 @@ Write down (in Hypothesis): which would you choose?
 \
 
 
-```{block2,  type='inputqn'}
+```{block2,  type='inputq'}
 
 Write down (in Hypothesis): which would you choose?
 
@@ -876,9 +879,10 @@ If $B \succ A$ then $EU(A) > EU(B)$
 \
 
 Yet if $D \succ C$ then $EU(D)>EU(C)$
-    - $\rightarrow 0.9 \: u(0) + 0.1 u(5m) > 0.89 \: u(0) + 0.11 \: u(1m)$
-    - Implying $0.1 \: u(5m) + 0.01 \: u(0) > 0.11 \: u(1m)$
-    - Contradicting the above!
+
+- $\rightarrow 0.9 \: u(0) + 0.1 u(5m) > 0.89 \: u(0) + 0.11 \: u(1m)$
+- Implying $0.1 \: u(5m) + 0.01 \: u(0) > 0.11 \: u(1m)$
+- Contradicting the above!
 
 \
 
@@ -940,13 +944,11 @@ One theory: People may maximize something like EU but they get the probabilities
 
 \
 
-Another theory: People do *not* choose in a way that could be characterised as maximizing the probability-weighted sum of a value function over outcomes. They do not do anything that could be depicted as EU maximization. Instead, the assess gambles using other criteria, perhaps framing 'reference points', and 'gains and losses' relative to this reference point. We will (time permitting) return to this in our discussion of 'prospect theory' when we consider Behavioral Economics. 
+```{block2,  type='note'}
+Another theory: 
+People do *not* choose in a way that could be characterised as maximizing the probability-weighted sum of a value function over outcomes. They do not do anything that could be depicted as EU maximization. Instead, the assess gambles using other criteria, perhaps framing 'reference points', and 'gains and losses' relative to this reference point. We will (time permitting) return to this in our discussion of 'prospect theory' when we consider Behavioral Economics. 
+```  
 
-## Explaining the above paradoxes with prospect theory
-
-- Above choices: cannot be explained by 'regular' EU theory
-    - Mistakes, misunderstanding probabilities?
-    - Prospect theory, loss-aversion: *not* mistakes, but maximising something other than EU
 
 
 \
@@ -1051,7 +1053,7 @@ You can check this, e.g., [here](https://shiny.rit.albany.edu/stat/binomial/)
 
 ```{r knitrapp}
 knitr::include_app("https://shiny.rit.albany.edu/stat/binomial/",
-height = "400px")
+height = "600px")
 ```
 
 <br> 
@@ -1086,6 +1088,8 @@ Each £1 invested in shares has a higher expected return, but also a higher risk
 ```
 
 
+\
+
 ### Asset pricing and the CAPM (basic characterization) {-}
 
 
@@ -1119,7 +1123,7 @@ The above assumes 'optimal diversification': no one chooses points *below* marke
 
 #### Extension: "Capital asset pricing model" (CAPM) {-}
 
-More content/reading to be added here. 
+(*More content/reading to be added here.*)
 
 <!-- #TODO -->
 
@@ -1345,15 +1349,22 @@ That might seem the obvious choice to you, in spite of the above discussion. If 
 
 
 
-# Exercises - uncertainty, finance, time preferences ('problem set')  {-#prefs-uncert}
+## Time preferences and discounting {#time-pref}
+
+(To be added, partly from McDL: 13.3 on ‘dynamic choice’)
+
+# Exercises - uncertainty, finance, time preferences ('problem set')  {-#ex-uncertainty}
 
 Tbd; some possibilities in the fold.
 
 ```{block2,  type='fold'}
 
 O-R Q2: "A parent"
+
 O-R Q7: "Additional lottery"
+
 O-R Q8: "Casino"
+
 O-R Q9: "Insurance"
 
 - Proof-based problem

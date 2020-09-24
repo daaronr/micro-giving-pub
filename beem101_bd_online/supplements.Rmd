@@ -46,6 +46,20 @@ However, when it comes to applying these things to the real world, or testing th
 
 **A major theme in Economics is: Markets work well but not perfectly. Imperfections in existing markets $\rightarrow$ opportunities.** \
 
+
+Audio/slide presentations (unfold) 
+
+```{block2,  type='fold'}
+[HERE](https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=9b44de1e-2569-4076-9d7b-aacc0064717d&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=al), starting at 44:20, ending about 51:30. 
+                                
+<iframe src="https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=9b44de1e-2569-4076-9d7b-aacc0064717d&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>                              
+  
+Or starting at 31:00 [HERE](https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=e0866970-34e1-4aa5-8385-8c1ef8d75b1c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all):
+  
+<iframe src="https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=e0866970-34e1-4aa5-8385-8c1ef8d75b1c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+                                
+```  
+
 Although we are not focusing on 'market failure' in this module (BEEM101, 2020)...
 
 I don't want you to go away thinking that economists believe, 'markets solve everything, markets yield the best of all possible worlds'.  The simplest models do aim to show the conditions under which this holds, but that is not a good characterization of most economic work. Most economists recognize the existence of market failures, and I believe that most recognize the usefulness of government intervention in many cases. Difference of opinion mainly arise over the prevalence of these market failures, and the extent to which government can do a good job of fixing them, or ends up making things worse.
@@ -247,6 +261,13 @@ The economics of trade may also apply to the natural world in certain ways.
 
 ## Supplement: Empirical research {#empir-research}
 
+```{block2,  type='note'}
+
+See an earlier lecture video below, starting at about 1:37:30.
+
+<iframe src="https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=e0866970-34e1-4aa5-8385-8c1ef8d75b1c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+```  
+
 
 Empirical research
 
@@ -377,6 +398,168 @@ $$P=Q+Z$$
 
 
 `r format_with_col("We now consider the very very fundamental building blocks behind the (in)famous 'neoclassical economics model.' Accept these 'axioms and nearly everything flows from it!","gray")`
+
+
+## Supplement: Gains to voluntary trade {#gain-to-trade}
+
+
+Indifference curves and 'convex combinations' give us insight into why people trade with one another. It may seem obvious but historically and even in the present, some people see trade as a zero-sum game, with a winner and a loser.  But if this were the case, why would both parties sometimes consent to making such a trade?
+
+Considering [figure to be added]
+ , an individual is ok with giving up soda for hamburgers or vice/versa *along* her indifference curve. A trade that put her *above* the IC makes her 'strictly' better off.
+
+*So consider if one individual had allocation D and another allocation A, and they had the same preferences.* 
+
+```{block2,  type='inputqn'}
+What trade could they make to make each of them better off?
+```
+
+
+\
+
+ Note that a straight line between these two points describes the combinations of
+'shares of bundles A and D adding up to 1' (e.g., 1/3 of D and 2/3 of A) or 'trading a fraction of bundle D for the same fraction of bundle A, and vice versa.'
+
+E.g., a 50-50 split of each bundle yields, in this case, (6+2)/2 = 4 hamburgers and (2+6)/2=4 soft drinks.
+
+```{block2,  type='note'}
+
+Note that the line between two bundles depicts all 'convex combinations' of these $\alpha$ of D and $1-\alpha$ of A, where $\alpha \in (0,1)$.
+
+In normal-speak, a partial share of each bundle.
+
+We can see that with the same DMRS for both, trades along this line make both better off; the *points* they would trade to depends on their bargaining power. They might also trade in a way that puts one below this line but still above the original indifference curve.
+
+```
+
+<div class="marginnote">
+For an alternative depiction using indifference curves, where preference differ but allocations are the same, see the online text [HERE](https://2012books.lardbucket.org/books/microeconomics-principles-v1.0/s10-03-indifference-curve-analysis-an.html#:~:text=An%20indifference%20curve%20shows%20combinations,tangent%20to%20the%20budget%20line) under 'Case in Point: Preferences Prevail in P.O.W. Camps'
+
+\
+
+However, trade between two individuals is better illustrated using an "Edgeworth box", see, e.g., the explanation [HERE on economicsdiscussion.net](https://www.economicsdiscussion.net/essays/economics/exchange-between-two-individuals-gain-from-trade/1207).
+</div>
+ 
+
+
+## Supplement: Quasiconcavity (of utility function/preferences) {#quasi-conc}
+
+This is the 'preferred assumption' which resembles convexity, but has several advantages as a concept. For example, it doesn't require differentiable preferences, and its properties are not affected by monotonic transformations of utility functions. This is the concept that you might be taught in a PhD module. I think it may also have some value in understanding optimization problems in general, which is an important part of research and industry and finance, I believe. 
+ 
+
+More formal concept: (strictly) convex preferences $\Leftrightarrow$  (strictly) **'quasiconcave' utility function**, allowing 'n goods':
+
+This essentially means that for a 'convex combination' of any two bundles $\mathbf{A}=(X_A,Y_A)$ and $\mathbf{D}=(X_D,Y_D)$
+
+$$U(\alpha\mathbf{A}+(1-\alpha)\mathbf{D})\geq\alpha U(\mathbf{A}) + (1-\alpha)U(\mathbf{D})$$
+
+where $0<\alpha<1$.
+
+<div class="marginnote">
+ Note the switch to a 'weak inequality' here for quasiconcavity, strict for 'strict quasiconcavity'*)
+</div>
+
+\
+
+E.g. (with two goods),
+
+
+$$U(\alpha X_A + (1-\alpha)X_D,\alpha Y_A + (1-\alpha)Y_D) \geq $$
+
+$$\alpha(U((X_A,Y_A)) + (1-\alpha)(U(X_D,Y_D)$$
+
+where $0<\alpha<1$.
+
+\
+
+We also describe it as having 'a convex upper contour set': the set of all bundles strictly preferred to a particular bundle is a 'convex set', implying it contains all convex combinations of elements of this set.
+
+\
+
+One reason economists like this 'quasiconcavity' is because it rules out the 'false summits',
+the local, but not global optima, so we only need to use the first-order conditions to find the optima. 
+
+<div class="marginnote">
+
+But is this '[looking under the streetlight](https://en.wikipedia.org/wiki/Streetlight_effect) to find our keys' or is it truly without loss of generality?
+
+</div>
+ 
+
+\
+
+Without quasiconcavity there may also be no demand *function* only a *demand correspondence*: at a given price and income there may be more than one optimising choice!
+
+```{block2,  type='inputq'}
+Can you illustrate this with 'double-humped' indifference curves?
+```  
+
+\
+
+
+Gravelle and Reese appendix, on constrained optimisation (unfold)
+
+```{block2,  type='fold'}
+
+> A local maximum is always a global maximum if (a) the objective function is quasiconcave, and (b) the feasible set is convex.
+
+It will also tend to rule out 'sharp jumps' in response to price changes, so we can look smoothly at 'comparitive statics.'
+
+Note that 'quasiconcavity' does not require differentiability.
+
+Furthermore, unlike properties like 'diminishing marginal rates of substitution' this is preserved under a 'monotonic transformation' (stretching). This means it is called an 'ordinal property'.  Essentially, quasiconcave utility functions yields indifference curves that are 'convex to the origin'.
+
+All relevant properties of utility functions are unchanged by such monotonic transformations, including the MRS. This is well-illustrated in Autor's reading (Lecture 3, pp 11-14)
+
+```
+
+## Supplement: Constrained optimization (with many goods), Lagrangian method {#lagrange}
+
+The constrained problem is equivalent to optimising a single unconstrained 'Lagrangian' function.
+
+\
+
+See Autor notes ([Lecture 4: Theory of Choice and Individual Demand](https://dspace.mit.edu/bitstream/handle/1721.1/109484/14-03-fall-2010/contents/lecture-notes/MIT14_03F10_lec04.pdf))
+
+- This yields the above optimisation (first-order) conditions
+
+- but only where solutions are positive; there are additional non-negativity constraints,
+    - $\rightarrow$ should use Kuhn-Tucker 'complementary slackness' conditions;
+    - however, if an unconstrained problem yields a solution that doesn't violate the contraint, we can ignore it.
+
+```{r  fig.cap = 'From Autor notes', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
+ knitr::include_graphics(file.path("picsfigs","consumerlagrangian.png"))
+```
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","solutioninngoods.png"))
+```
+
+We could have derived this without the Lagrangian, simply substituting in the constraint for one good:
+
+$$x=\frac{I-yp_y- ....}{p_x}$$ ... subtracting the expense on all other goods.
+
+And then solving this unconstrained problem. Taking the derivative of the solved optimum this with respect to the income term $I$ will give us a similar expression as $\lambda$, expressing the 'shadow value'... the increase in utility for an increase in income.
+
+\
+
+The conditions for an optimum can also be written in vector notation as:
+
+
+$$\nabla U(\mathbf{x^\ast})= \lambda\mathbf{p}$$
+
+
+The 'gradient vector' of the partial derivatives of utility wrt each element of $x$, evaluated at the optimum will be proportional to the vector of prices.
+
+When two vectors $\mathbf{A}$ and $\mathbf{B}$ are in the same direction, i.e., $\mathbf{A}=c\mathbf{B}$, no matter their length, the *planes* perpendicular to this vector are the same plane. (And all vectors *along* those planes are perpendicular to vectors $\mathbf{A}$ and $\mathbf{B}$).
+
+
+\
+
+This implies that at optimum 'the rate of increase in utility is greatest in the direction of the vector tangent to the budget line (plane)'...
+
+Which tells us that the plane tangent to the '(multi-dimensional) indifference surface' at this point is the budget plane.
 
 
 ### References {-}

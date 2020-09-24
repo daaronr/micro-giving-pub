@@ -835,66 +835,78 @@ These goods are 'enjoyed only in fixed proportions'. E.g., left and right shoes 
 
 ## Choices are subject to constraints
 
-You cannot spend more than your (lifetime) income/wealth $\rightarrow$ *budget constraint*. Consider the budget constraint given in the figure below.
+You cannot spend more than your (lifetime) income/wealth $\rightarrow$ *budget constraint* (and 'budget sets').
+
+Consider the budget line given in figure 5.1 in O-R.
 
 
+<!--
 ```{r  fig.cap = 'Budget constraint for two goods', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
 
 knitr::include_graphics(file.path("picsfigs","budgetconstraint.png"))
 
 ```
-Budget constraint for two goods, slope $-P_x/P_y$
+-->
+
+Budget constraint for two goods, slope $-p_x/p_y$
 
 
-
-*Notes:* For example, think 'food' and 'nonfood'.
-
+<div class="marginnote">
+Only two goods?  For example, think 'food' and 'nonfood'.
+</div>
+ 
 
 
 
 ### Budget constraint algebra {-}
 
-
-*I realise this may be trivial for many of you, but others will find this a helpful refresher.*
-
-If I spend all my income (which I should do over a 'relevant lifetime'), then:
-
-\
+<div class="marginnote">
+*I realise this may be trivial for many of you, but others will find this a helpful refresher.
+</div>
+ 
 
 
-Expenditure on X + Expenditure on Y = Income (I)
+If I spend all my wealth (which I should do over a 'relevant lifetime' given monotonic preferences), then:
 
 \
 
-$$P_X X + P_Y Y = I $$
+
+Expenditure on $x_1$ + Expenditure on $x_2$ = wealth ($w$)
+
+\
+
+$$p_1 x_1 + p_2 x_2 = w $$
 
 
 <br> \bigskip
 
 
-To see how $Y$ trades off against $X$, rearrange this to:
+To see how $x_1$ trades off against $x_2$, rearrange this to:
 
 \
 
-$$Y = -\frac{P_X}{P_Y} X + \frac{I}{P_Y}$$
+$$w =  \frac{w}{p_2} -\frac{p_1}{p_2}x_1$$
 
-- Intercept:  $\frac{I}{P_Y}$, i.e., amount of Y you can buy if you only buy Y
-- Slope: $-\frac{P_X}{P_Y}$, i.e.,  how much Y you must give up to get another unit of X
+- Intercept:  $\frac{w}{P_2}$, i.e., amount of $x_2$ you can buy if you only buy $x_2$
+
+- Slope: $-\frac{p_1}{p_2}$, i.e.,  how much $x_2$ you must give up to get another unit of $x_1$
 
 
 <br>
 
-*Notes and intuition*:
+*Notes and intuition* (unfold if you want more explanation)
 
-The slope $-P_X/P_Y$: How much $Y$ I must sacrifice to get another unit of $X$, expressed as a negative number.^[Strictly speaking, the slope is how much Y you *get* when you get another X, but since this is negative we see that you 'get a negative amount', i.e., give up some amount of Y.]
+```{block2,  type='fold'}
 
-
-To get another unit of $X$ it costs me $P_xX$, so the more costly is $X$ the *more* $Y$ I must give up.
-
-For each unit of $Y$ I give up I save $P_Y$, so the more costly is $Y$ the more I can save by giving up 1 unit of it,
-thus, the less I need to sacrifice of $Y$ to get another unit of $X$.
+The slope $-\frac{p_1}{p_2}$: How much $x_2$ I must sacrifice to get another unit of $x_1$, expressed as a negative number. (Strictly speaking, the slope is how much $x_2$ you *get* when you get another $x_1$, but since this is negative we see that you 'get a negative amount', i.e., give up some amount of $x_2$.)
 
 
+To get another unit of $x_1$ it costs me $p_1 x_1$, so the more costly is $x_1$ the *more* $x_2$ I must give up.
+
+For each unit of $x_2$ I give up I save $p_2$, so the more costly is $x_2$ the more I can save by giving up 1 unit of it,
+thus, the less I need to sacrifice of $x_2$ to get another unit of $x_1$.
+
+```
 
 <!--
 MCQ:

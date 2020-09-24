@@ -161,6 +161,10 @@ Now it is only accessible within the university login
 
 **Notes by instructor [David Reinstein](davidreinstein.wordpress.com/)**
 
+```{r  fig.cap = 'Ansel Adam's famous black and white photograph, colorised using De-Oldify', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/ansel_halfdome_coloronly.png")
+```
+
 ## Focus and style of this module {-#focus}
 
 *Note: [In the next section](#outline), I give a brief---and then a descriptive---outline of the 'story of this module' and the we will consider... and why these are interesting.*
@@ -582,40 +586,49 @@ All source material and code can be accessed [on my Github repo](https://github.
 
 ## Welcome and introduction videos outlined {-#welcome-vids}
 
-1. Hello, introducing myself and the module
+1. Welcome, introducing myself and the module
 
 ```{block2,  type='fold'}
 
-- Welcome to Exeter
+- Welcome to this module
+- I'm Dr. David Reinstein (feel free to call me Dr. Reinstein)
+
 - My background
   - (grew up in USA:  New England/NY, in UK 14 years)
   - PhD in UC Berkeley, love California
   - Very interested and involved in research and it's application: behavioral economics, charitable giving and 'doing good', field experiments and data on individual decisions
 
-- What you will get out of this module and your Exeter experience: interaction
+```
+
+\
+
+
+What you will get out of this module and your Exeter experience: interaction (unfold)
+
+
+```{block2,  type='fold'}
+
 
 Not to hear what I have to say/write, but to
-  - Ask detailed questions in your own words and get answers, suggestions and feedback, with many followups
-  - Show your ideas and understanding and get my feedback (and possible recommendations/references )
-  - Be part of exciting discussions and problem-solving with me and with fellow students
-  - Work on a project to build your understanding, ability to apply concepts from the module, communication skills...  and to get feedback on your ideas ... helping you prepare for your dissertation and professional projects
+
+- Ask detailed questions in your own words and get answers, suggestions and feedback, with many followups
+
+- Show your ideas and understanding and get my feedback (and possible 
+recommendations/references )
+
+- Be part of exciting discussions and problem-solving with me and with fellow students
+
+- Work on a project to build your understanding, ability to apply concepts from the module, communication skills...  and to get feedback on your ideas ... helping you prepare for your dissertation and professional projects
 
 
 Interact...
 
 - In synchronous sessions and tutorials (and in comments on pre-record)
 - On the ELE forum
-- Within the web-book itself!
+- Within this web-book itself!
 - In my office hours (or by appointment)
 - Possible additional discussion groups and breakout rooms with your peers, which I will moderate
 - Through your project and presentation (coursework), which I'll give you feedback on
-
-
-Next videos:
-
-What you will learn and why it matters,
-the resources for this module, especially an ‘interactive web-book’ and the Open-Access Osborne & Rubinstein
-Please get in touch and contact me (or write on the student forum in this ELE) to tell me (and your classmates) about yourself and your interests, and to ask any questions
 
 
 ```
@@ -646,7 +659,7 @@ ELE
 
 \
 
-The main textbook
+The main textbook (mostly)
 
 - Martin Osborne and Ariel Rubinstein: leading researchers, thinkers, and communicators in microeconomics, especially Game Theory and Behavioral Economics
 
@@ -984,7 +997,10 @@ We will not always be quite so mathematically rigorous throughout the module. Ho
 
 **Readings: see sec.** \@ref(reading-prefs) 
 
-##### [Interactive exercises](#pref-exc) ('problem set') {-}
+##### [Interactive exercises: preferences](#pref-exc) ('problem set') {-}
+
+##### [Interactive exercises: choice](#ex-choice) ('problem set') {-}
+
 
 
 ###  Sec. \@ref(uncertainty) [Preferences under uncertainty (and over time)](#uncertainty) (1 week) {-} 
@@ -1072,8 +1088,7 @@ Supplementary recommended readings:
 
 \
 
-#### Interactive exercises ('problem set')  {-}
-
+#### [Interactive exercises - uncertainty('problem set')](#ex-uncertainty)  {-}
 
 
 ### [Consumer preferences, indifference curves/sets](#consumer_pref) (0.5 weeks) {-}
@@ -1081,7 +1096,7 @@ Supplementary recommended readings:
 - O-R Chapter 4, selected parts
 
 <div class="marginnote">
-Note this chapter covers only a simple 2-good example. If time permits, we will consider the properties of examples with "$N>2$ goods"; $N>2$ is necessary to consider reasonable substitution patterns between goods for many applications. You will also probably learn the N-good optimisation in your maths module.
+Note this chapter covers only a simple 2-good example. If time permits, we will consider the properties of examples with "$N>2$ goods"; $N>2$ is necessary to consider reasonable substitution patterns between goods for many applications. You will also probably learn the N-good optimisation in your maths (optimisation techniques) module.
 </div>
 
 \
@@ -1106,18 +1121,13 @@ Choice](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-pub
 -->
 
 
-#### Interactive exercises ('problem set')  {-}
-
-- Standard problem set problems
-
-- Business case study/investigation: modeling 'which (sorts of) new product will consumers prefer?'
 
 \
 
 ### [Consumer behavior/Individual (and market) demand functions and their properties](#demand) (1 week) {-}
 
 - Formal definition
-- Derivation of 'demand' from individual optimization
+- Derivation of individual 'demand' from individual optimization
 - 'Comparative statics': responses to changes in price, income, etc.;
  <!--   - Application: The mysterious 'Giffen good' -->
 
@@ -1129,70 +1139,13 @@ Choice](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-pub
 
 **Main reading** (largely integrated into web book):
 
-- O-R Chapter 5 (selections)
+- O-R Chapter 5 (selections; see [below](#demand))
 
+- Alternative treatments (see below)
 
-Feel free to skip (unfold):
+- Supplementary but recommended readings (see below)
 
-```{block2,  type='fold'}
-
-Feel free to SKIP:
-  
-The first part of O-R section 5.5 on 'rationalizing a demand function.'
-
-However, make sure you *do read* the discussion of 'the weak axiom of revealed preferences' (WARP).
-
-```
-
-
-\
-
-*Alternative treatments: (Unfold)*
-
-
-```{block2,  type='fold'}
-
-- DA: [Lecture Note 6 – Demand Functions: Income Effects, Substitution Effects, and Labor Supply](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/MIT14_03F16_lec6.pdf), esp. sections 1-3
-
-- McDL:  3.1 (elasticity), parts of Ch 12; Warning: this book's treatment of consumer surplus seems to be incorrect (or at least vastly oversimplified) from my PoV
-
-- QMC: Chapter 17 (elasticities -- very clear treatment, Chapter 18 (supply and demand details)
-
-
-```
-
-\
-
-Supplementary recommended readings (unfold):
-
-```{block2,  type='fold'}
-
-- Loomes, Graham, Chris Starmer, and Robert Sugden, 1991. "Observing Violations of Transitivity by Experimental Methods". [jstor link](https://www.jstor.org/stable/2938263?seq=1#metadata_info_tab_contents)
-
-- Choi, Syngjoo, et al. "Who is (more) rational?." The American Economic Review 104.6 (2014): 1518-1550.a.
-
-- Waldfogel, Joel. "The deadweight loss of Christmas." The American Economic Review 83.5 (1993): 1328-1336.
-
-- [Reinstein, David. "The Economics of the Gift." (2014; working paper and chapter in Gift Giving and the'embedded' Economy in the Ancient World, F Carlà, M Gori - 2014).](https://core.ac.uk/download/pdf/74369736.pdf)
-
-```
-\
-
-#### Interactive exercises ('problem set')  {-}
-
-Tbd (unfold for possibilities)
-
-```{block2,  type='fold'}
-
-- Something about finding departures from the WARP in real data
-\
-
-- O-R problem 5 (introduces the 'expenditure function')
-
-- O-R problem 8-9 (re-)introduce 'time preferences'
-
-```
-
+#### [Interactive exercises - consumer preferences, behavior, demand ('problem set')](#ex-cons-pref)  {-}
 
 ### Noting a major "skip" {-}
 
@@ -1282,7 +1235,8 @@ There are various names of each of these ... I am familiar with "second degree  
 - With accompanying [worked examples](https://docs.google.com/document/d/16jos_PT9w1wGpyD5A8ZiWJ9HW6kaLOJH6EWc_AYWnkk/pub)
 - More advanced: 'The Government May Want to Encourage Price Discrimination by Income' [Linked here](https://davidreinstein.wordpress.com/research-and-publications/)
 
-- Material from data science and industry pricing practice to be incorporated here
+- Material from data science and industry pricing practice to be incorporated here; see "Marketing" chapter in [Business analytics with R](https://bookdown.org/jeffreytmonroe/business_analytics_with_r7/)
+
 
 ```
 
@@ -1561,6 +1515,12 @@ Here are some key elements.
 However, in general I'm not asking you to memorize sets of rules; I'll give hints to remind you of these rules on any examination.
 </div>
 
+```{block2,  type='tip'}
+
+Some very simple math revision [HERE](https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=e0866970-34e1-4aa5-8385-8c1ef8d75b1c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all), from my prior lecture. However, you will find better coverage of this at Khan Academy (free) and elsewhere.
+
+```  
+
 - Derivatives and their interpretations
   - As 'slopes'
   - Higher-order derivatives and cross-partials, relevance for 'minima and maxima' (optimization)
@@ -1690,6 +1650,7 @@ Okay, the story is not so realistic. However, it conveys an important message. I
 
 The same can be asked about many criticisms of simple economic models. Of course one should always consider the applicability of particular models to real-world problems, and carefully consider whether the assumptions are reasonable and relevant, and whether the departures from these assumptions will lead to any different predictions. However, in considering the general insight conveyed by the model, some criticisms can merely be distracting. At the very least, we should not reject economic models simply because they are not fully realistic, just as we do not reject Aesop's fables because they involve talking animals. The idea of 'Ceteris paribus' (all other things being equal) can help us here.
 
+\
 
 **Again, so why learn these models?**
 
@@ -1706,6 +1667,9 @@ For example, some critics of what they call 'neoliberal economics' can be misinf
 </div>
 
 ## Economic Models {#econ-models}
+
+
+See audio/slides here, from 101:25 - https://recapexeter.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=9B44DE1E-2569-4076-9D7B-AACC0064717D#
 
 **Economic model:**
 
@@ -1731,7 +1695,7 @@ For example, my impression is that in Psychology a 'theory' can represent broad 
 </div>
 
 
-In Economic theory we can prove theorems, essentially the logic of 'if-then' statements... 'if one assumes the following preferences, the following choice is optimising', etc. However, here the realism of the *assumptions* is always in question; as caricatured in this [Twitter meme](https://twitter.com/rethinkecon/status/1164477365243785216/photo/1)]
+In Economic theory we can prove theorems, essentially the logic of 'if-then' statements... 'if one assumes the following preferences, the following choice is optimising', etc. However, here the realism of the *assumptions* is always in question; as caricatured in this [Twitter 'meme'](https://twitter.com/rethinkecon/status/1164477365243785216/photo/1).
 
 
 ```{block2,  type='note'}
@@ -1788,12 +1752,12 @@ If you are interested, I will set up a wiki to engage in a group discussion of t
 The  *instrumentalist* view:
 
 
-The Methodology of Positive Economics [@friedmanMethodologyPositiveEconomics1953]: the ultimate goal of theory is to "yield valid and meaningful ... predictions about phenomena not yet observed""
+The Methodology of Positive Economics [@friedmanMethodologyPositiveEconomics1953]: the ultimate goal of theory is to "yield valid and meaningful ... predictions about phenomena not yet observed."
 
 
-“Simplicity” -- ‘the less initial knowledge needed to make a prediction'.
+- “Simplicity” -- ‘the less initial knowledge needed to make a prediction'.
 
-“Fruitful” -- more precise predictions, for a wider range of situations
+- “Fruitful” -- more precise predictions, for a wider range of situations
 
 
 \
@@ -1807,14 +1771,19 @@ In contrast, the *'Fictionalist'* view  [@Sugden2017]:
 
 *Some considerations:*
 
-Are these models predictive? If not, are they useful?  There are arguments for modeling optimising behavior if it is *not* predictive.  There is some evidence for near-optimisation in some settings, and that choices move in this direction.
+Are these models predictive? If not, are they useful?  
 
-There is also evidence of 'predictable irrationality' (or 'bounded rationality); this motivates behavioural economics.  There is some evidence for the following (unfold).
+- There are arguments for modeling optimising behavior even if it is *not* predictive.  
+
+
+- There is some evidence for near-optimisation in some settings, and that choices move in this direction.
+
+- There is also evidence of 'predictable irrationality' (or 'bounded rationality); this motivates behavioural economics.  There is also some evidence for the following (unfold).
 
 ```{block2,  type='fold'}
 
 
-1. Psychological costs/benefits relating to *outcomes other than their own final consumption. People may care about
+1. Psychological costs/benefits relating to *outcomes other than their own final consumption*. People may care about
 
 - others' consumption (altruism etc.),
 - about the way they *make* the decision
@@ -1992,10 +1961,10 @@ For some fairly recent academic references, see (e.g.) [@Carneiro2011], papers c
 
 1. How would you frame the above question, as an economist, in terms of things that can be defined and measured?
 
-2. What does the answer to the question depends on, from an economics perspective?
-
-
 \
+
+2. What does the answer to the question depend on, from an economics perspective?
+
 
 This involves microeconomic concepts such as (unfold)
 
@@ -2015,6 +1984,9 @@ Even framing the question requires microeconomics.
 Consider: Social vs private returns. Is there a case for 'market failure' in the provision of education?
 
 ```
+
+\
+
 
 3. How would you measure this *empirically*? (some thoughts in the fold)
 
@@ -2050,22 +2022,31 @@ We might consider two broad approaches:
 
 1. Testing Assumptions: Examining the validity of *assumptions* upon which models are based. (Is it reasonable to assume that people are rational, that firms maximize profits etc.?)
 
-2. Testing Predictions of the models: Can the model accurately *predict* real-world events (in the context which it purports to?)  If the model predicts events well, then the theory is useful even if the assumption may not appear to be valid.
+2. Testing Predictions (of the models): Can the model accurately *predict* real-world events (in the context which it purports to?)  If the model predicts events well, then the theory is useful even if the assumption may not appear to be valid.
 
 *DR: But if the assumptions are substantially wrong, it may predict well in one particular case but not in general.*
 
-```{block2,  type='note'}
+\
 
-*Note:* The undergraduate textbook [@nicholsonIntermediateMicroeconomicsIts2007] is somewhat dismissive of the idea of testing assumptions.  However, there are many cases in which the *predictions* of the models are very hard to test; e.g., the impact of a radical change in government policy or the merger of the two largest firms.  On the other hand, in many cases the key assumptions entering into models, such as 'constant relative risk aversion' or 'geometric discounting' can be very credibly tested.  We can use existing micro data on thousands of household decisions, as well as experiments, to measure 'how close' behavior is to the assumption.
+Consider: Should we ever 'test assumptions'? (Unfold)
+
+```{block2,  type='fold'}
+
+Some authors (e.g., the undergraduate textbook [@nicholsonIntermediateMicroeconomicsIts2007]) are somewhat dismissive of the idea of testing assumptions.  
+
+However, there are many cases in which the *predictions* of the models are very hard to test; e.g., the impact of a radical change in government policy or the merger of the two largest firms.  On the other hand, in many cases the key assumptions entering into models, such as 'constant relative risk aversion' or 'geometric discounting' can be very credibly tested.  We can use existing micro data on thousands of household decisions, as well as experiments, to measure 'how close' behavior is to the assumption.
 
 ```
+
+\
+
 
 There is also substantial debate over what it means, and whether/when it is valuable to 'test an Economic model in the laboratory'.  See the discussion by [Sugden and Sitzia, 2011; "Implementing theoretical models in the laboratory, and what this can and cannot achieve."](https://ueaeco.github.io/working-papers/papers/cbess/UEA-CBESS-11-08.pdf)
 
 
 ## Aside: Empirical work/econometrics
 
-I want you to have a sense of what this is, and how it connects to economic theory. This is relevant background for the present module, and extremely important for your later research/dissertation work (and it may give some perspective for other modules like Econometrics). I give a supplement on this which I highly recommend reading in supplement \@ref(empir-research) ['Empirical research'](empir-research).
+I want you to have a sense of what this is, and how it connects to economic theory. This is relevant background for the present module, and extremely important for your later research/dissertation work (and it may give some perspective for other modules like Econometrics). I give a supplement on this which I highly recommend reading in supplement \@ref(empir-research) ['Empirical research'](#empir-research).
 
 
 # Models: Interactive exercises  ('problem set'): {-#intro-exercise}
@@ -2101,6 +2082,10 @@ Form groups of 4-5 students. Arrange to meet to follow-up on this.
 
 ```
 
+<div class="marginnote">
+DR #TODO: I intend to add a video here discussing this
+</div>
+ 
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148137970-5"></script>
@@ -2116,7 +2101,6 @@ Form groups of 4-5 students. Arrange to meet to follow-up on this.
 <!--chapter:end:intro_models.Rmd-->
 
 # Preferences, Utility and Choice {#pref-util-choice}
-
 
 What can we reasonably say about 'what people prefer and choose'? How can we state this carefully and precisely? What are the implications of particular 'reasonable' assumptions? (How) can we consider this in terms of 'optimization'? How have Economists and decision-scientists considered these questions?
 
@@ -2239,7 +2223,15 @@ We now consider the very very fundamental building blocks behind the (in)famous 
 Please feel free to type some thoughts in the Hypothes.is sidebar, to engage discussion on this.
 
 You can find another 'idea-stimulating' exercise referenced in the O-R book, the questionnaire they give at [http://gametheory.tau.ac.il/exp11/](http://gametheory.tau.ac.il/exp11/). It's worth doing as they refer to it later in several parts of the book.
+
 </div>
+
+
+ 
+<div class="marginnote">
+DR #TODO: I intend to add a video here discussing the below 'motivating exercise'.
+</div>
+ 
 
 
 ```{block2,  type='inputq'}
@@ -2322,7 +2314,7 @@ In the (neo) classical economics framework, your (optimising) choices are determ
 
 For the classical Economics model, the work on preferences seems (to me) mainly as largely a matter of 'finding a consistent justification for our models of utility and choice'. If you already find these models plausible, perhaps this is not so interesting.
 
-However, I see these details as particular relevant for a few reasons and in a few contexts.
+However, I see these details as particularly relevant for a few reasons and in a few contexts.
   
 **When we take a step back and look outside the classical model to consider:** 
 
@@ -2563,8 +2555,7 @@ We skip the standard 'continuity' assumption here, although we return to a versi
 
 Another common 'axiom' involves 'diminishing marginal rates of substitution' or, in multiple dimensions, 'strict quasi-concavity', something you may come across in your maths/optimization module.
 
-In general, axioms like these also stand directly behind 'revealed preference' methods for measuring how much people value
-nonmarket goods, like clean air and national parks.
+In general, axioms like these also stand directly behind 'revealed preference' methods for measuring how much people value nonmarket goods, like clean air and national parks.
 </div>
  
 
@@ -2599,6 +2590,12 @@ Aside: Also 'forbidden' in the classical model: the *time* or *frame* in which I
 
 **Definition: Completeness** (From O-R)
   
+
+<div class="marginnote">
+DR #TODO: I intend to add a video here discussing this
+</div>
+ 
+
 The property that for all alternatives $x$ and $y$ , distinct or not, either $x \succsim y$ or $y \succsim x$ (or both].   Even more formally (optional)...
 
 ```{block2,  type='def'}
@@ -2613,7 +2610,7 @@ A binary relation $R$ on the set $X$ is complete if for all members $x$ and $y$ 
 
 \
 
-In case you are confused, please unfold the Q &A below...
+In case you are confused, please unfold the Q & A below...
 
 
 ```{block2,  type='fold'}
@@ -2691,10 +2688,11 @@ We may write this concisely as $A \succ B \sim C$.
 
 ```{block2,  type='tip'}
 
-If this seems confusing it may be because it is *too* obvious (although behavioral and experimental economists claim to find violations of this.
+If this seems confusing it may be because it is *too* obvious (although behavioral and experimental economists claim to find violations of this, as we shall see).
 
 ```
 
+\
 
 *If you found someone who striclty preferred an apple to a bananas, a banana to a cherry, and a cherry to an apple,  you could make a lot of money out of them!.*
 
@@ -2719,6 +2717,14 @@ It works as follows (being a bit informal here):
 ... Keep repeating steps 1-3, until you've drained them of all of their resources.
 
 ```
+
+
+
+
+<div class="marginnote">
+DR #TODO: I intend to add a video here discussing this
+</div>
+ 
 
 \
 
@@ -2756,13 +2762,14 @@ It is fun, but it is *barely* used later in the text.
 
 ```  
 
+\
 
 ### Possible preferences .. "Preference formation" {#pref-form}
 
 We might derive preference relations from a few "basic considerations", perhaps reflecting how people describe their own preferences (and choices) in conversation.
 
 <div class="marginnote">
-These can be considered in terms of individual preferences, or, as we will see later, ways to express group-preferences or social preferences.
+These can be considered in terms of individual preferences, or, as we will see later, ways to express group-preferences or social preferences. This is considered the 'axiomatic approach'.
 </div>
 
 
@@ -2805,6 +2812,7 @@ To prove the 'if and only if' relationship, you need to prove *both directions* 
 
 If you are struggling with this, you may find the [Khan academy Logic material helpful](https://www.khanacademy.org/test-prep/lsat/lsat-lessons/logic-toolbox-new/a/logic-toolbox--if-and-only-if), as well as more advanced treatments of hte logic of mathematical proofs.
 ```
+
 \
 
  
@@ -2838,7 +2846,11 @@ We will return to "distance functions" later. We are all familiar with the 'Eucl
 
 </div>
 
-Note that the above is, in fact a value function, with the 'value of alternative x' expressed as $v(x)=-d(x)$.
+Note that the above is, in fact a value function, with the 'value of alternative x' expressed as $v(x)=-d(x)$ 
+
+<div class="marginnote">
+Negative because 'the further from the ideal', the worse it is.
+</div>
 
 
 \
@@ -2855,7 +2867,7 @@ This seems to be an example of what we call 'lexicographic preferences'.
 
 ```{block2,  type='fold'}
 
-Ask people how they make their choices, particularly when they are shopping online. I bet that some people will describe a process of 'ruling out' one set of options after another. This is, in fact an optimal procedure for someone with lex preferences. This is *not* for someone with the more standard preferences you may have seen in economics courses, someone who considers trade-offs between one attribute and another. 
+Ask people how they make their choices, particularly when they are shopping online. I bet that some people will describe a process of 'ruling out' one set of options after another. This is, in fact an optimal procedure for someone with lex preferences. This is *not optimal* for someone with the more standard preferences you may have seen in economics courses, someone who considers trade-offs between one attribute and another. 
 
 The 'filtering' is also consistent with the standard way data is organised. Try to search for a product or service online (on Amazon, or Kayak): it is hard to *specify* your trade off between different characteristics, but it's easy to 'narrow things down' one category at a time.  
 
@@ -2864,6 +2876,11 @@ In business data science, some 'tree-based' models of choice implicitly assume l
 
 ```
 
+
+<div class="marginnote">
+DR #TODO: I intend to add a video or audio content discussing the above.
+</div>
+ 
 
 \
 
@@ -3344,6 +3361,12 @@ Also note that behavioral economics often separates preferences from choices, as
 
 \
 
+
+
+
+
+**Consider: Measuring and comparing utilities** (unfold)
+
 In general,  we don't imagine that we can somehow measure an individual's actual 'amount' of utility. To the extent that we can measure it at all, it is only inferred indirectly, from the *choices* people make.
 
 
@@ -3352,11 +3375,50 @@ In general,  we don't imagine that we can somehow measure an individual's actual
 </div>
 
 
+\
+
+So utility is not 'directly observable and measurable'. 
+
+
+<div class="marginnote">
+Unlike midi-chlorians or thetans.
+</div>
+
+
+<br> \bigskip
+
+
+Utility is seen to govern an individual's *choices* and thus only inferred indirectly, from the *choices* an people make.
+
+\
+
+
+**Consider: Revealed preference:** 
+
+if Al buys a cat instead of a dog, and a dog was cheaper, we assume Al gets more utility from a cat
+
+
+```{r  fig.cap = 'Al and his cat', out.width='40%', fig.asp=.4, fig.align='center',  echo = FALSE}
+knitr::include_graphics("picsfigs/alscat.jpg")
+```
+
+
+Such methods are used to try to measure the value of goods that have no observed market price, for public policy choices.
+
+<div class="marginnote">
+E.g., If people drove 20km to go to parK B, they must value it at at least the cost of driving there.
+
+If people pay £20k more for a house with a view of the lake (ceteris paribus), or in a neighborhood with better air quality...
+
+</div>
+
+\
+
 This raises another issue: can we compare whether one person gets 'more' or 'less' utility than another? Can we know whether a policy can "increase one person's utility more than it decreases another person's utility"? These issues are considered in  modeling social welfare and social choices. 
 
 <div class="marginnote">
  In more detailed discussions, we might speak of 'cardinal utility', 'ordinal utility'. 
- </div>
+</div>
  
 Empirically, it is hard to imagine how these could be measured: if utility is only indirectly and partially observable through an individual's choices... when do we observe choices that trade off between one person and another in ways that reflect the 'sum of their utilities'? (Never, I guess.)
  
@@ -3399,7 +3461,7 @@ No, there cannot be, I can 'prove it'. Suppose there that $K$ were the 'smallest
 
 \
 
-The following proposition, and other propositions extending this, are  fundamental to the idea that we can conduct our economic analysis *as if* people actually consulted a utility function. x
+The following proposition, and other propositions extending this, are  fundamental to the idea that we can conduct our economic analysis *as if* people actually consulted a utility function. 
 
 ```{block2,  type='def'}
 
@@ -3837,7 +3899,7 @@ The above 'violations' and the discussion of 'irrelevant alternatives' relate to
 
 ```{block2,  type='def'}
 
-**Property $\alpha%: 
+**Property $\alpha$**: 
   
 > Given a set X, a choice function $c$ for $X$ satisfies property $\alpha$ if ...
 
@@ -4224,8 +4286,10 @@ To be determined. The exercises in O-R are possibly too mathematical. For now, p
 'Expected Utility';  risk-aversion, finance and diversification; time-preference and discounting
 
 
+
 ```{block2,  type='note'}
-**I will add a great deal of content here.**
+
+*More content likely to be added.*
 
 This material is largely drawn from O-R Chapter 3, but I also consult a number of other sources as well as  my own notes. You are advised to read most of this O-R chapter along with this web-book. But please see my [notes below](#unc-readings) on what you can skip.
 ```
@@ -4273,7 +4337,7 @@ Previously descrived utility functions: predict choices under certainty. They ma
 
 People don't "maximise expected monetary value"" tend to be risk-averse
 
-An *Expected Utility* (EU) framework, as defined below, allows for risk-aversion/
+An *Expected Utility* (EU) framework, as defined below, allows for risk-aversion or any other attitude towards risky *outcomes*
 
 ```
 
@@ -4439,7 +4503,7 @@ $$ f (x) = F' (x) ,~~~F(x) = \int_{- \infty}^{x} f (t)\,dt .$$
 \
 
 <div class="marginnote">
-Todo: look up and include some graphics showing the pdf and cdf.
+Todo: look up and include some graphics showing the pdf and cdf, or create these within R.
 
 </div>
 
@@ -4488,7 +4552,7 @@ O-R, p. 31:
 
 <div class="marginnote">
 In other texts you may see these  referred to as "simple gambles".
-/div>
+</div>
 
 
 
@@ -4720,7 +4784,7 @@ With uncertainty, linear (affine) transformations of the $v$ function represent 
 
 \
 
-Formally, if the VNM utility function $v(\cdot) represents a set of preferences, the VNM utility function $w(\cdot)$ represents the same preferences if and only if, for some scalar $\alpha$ and some scalar $\beta>0$
+Formally, if the VNM utility function $v(\cdot)$ represents a set of preferences, the VNM utility function $w(\cdot)$ represents the same preferences if and only if, for some scalar $\alpha$ and some scalar $\beta>0$
 
 $$w(g) = \alpha + \beta v(g)$$.
 
@@ -4732,7 +4796,7 @@ the *level* of total utility didn't really matter, only the relative utilities. 
 
 \
 
-By varying the $v(\cdot)$ function we can vary what we will define as  the '[risk preference](risk-pref)'; ...Risk-loving, risk neutral, and risk averse individuals can all be seen as maximizing EU, as discussed [below](#eu-risk).
+By varying the $v(\cdot)$ function we can vary what we will define as  the '[risk preference](#risk-pref)'; ...Risk-loving, risk neutral, and risk averse individuals can all be seen as maximizing EU, as discussed [below](#eu-risk).
 
 
 ```{block2,  type='tip'}
@@ -4741,7 +4805,7 @@ Although O-R cover the Allais paradox next, I think it may be easier to understa
 ```  
 
 \
-## Risk preferences (#risk-pref)
+## Risk preferences {#risk-pref}
 
 Consider the choice between two gambles and one 'certainty':
 
@@ -4820,7 +4884,7 @@ O-R formal definition of risk aversion
   
 ```
 
-### Risk preferences and EU {-}
+### Risk preferences and EU {-#eu-risk}
 
 Imagine the realised utility $v(y)$ that arises from the consumption chosen with wealth $y$.
 
@@ -4948,8 +5012,7 @@ Thus a risk-averse person would reject such gambles.
 
 \
 
-### Graphical illustration of 'risk aversion iff concave value function $v(\cdot)$ {-}
-
+### Graphical illustration of "risk aversion $\leftrightarrow the value function $v(\cdot)$ is concave" {-}
 
 **How to illustrate this:**
 
@@ -5022,7 +5085,7 @@ $$f(E(X)) > E(f(X))$$
 
 
 
-## Allais paradox; considering other (non-EU) frameworks (#allais)
+## Allais paradox; considering other (non-EU) frameworks {#allais}
 
 (Content to be added here, drawing both from O-R and from my previous notes)
 
@@ -5031,12 +5094,14 @@ $$f(E(X)) > E(f(X))$$
 
 Consider: 
 
+**Scenario 2. Which would you choose?**
+
 - Gamble A: an 89\% chance of winning £1 million, a 10\% chance of winning £5 million, and a 1\% chance of winning nothing.
 - Gamble B: £1 million with certainty.
 
 \
 
-```{block2,  type='inputqn'}
+```{block2,  type='inputq'}
 
 Write down (in Hypothesis): which would you choose?
 
@@ -5057,7 +5122,7 @@ Write down (in Hypothesis): which would you choose?
 \
 
 
-```{block2,  type='inputqn'}
+```{block2,  type='inputq'}
 
 Write down (in Hypothesis): which would you choose?
 
@@ -5096,9 +5161,10 @@ If $B \succ A$ then $EU(A) > EU(B)$
 \
 
 Yet if $D \succ C$ then $EU(D)>EU(C)$
-    - $\rightarrow 0.9 \: u(0) + 0.1 u(5m) > 0.89 \: u(0) + 0.11 \: u(1m)$
-    - Implying $0.1 \: u(5m) + 0.01 \: u(0) > 0.11 \: u(1m)$
-    - Contradicting the above!
+
+- $\rightarrow 0.9 \: u(0) + 0.1 u(5m) > 0.89 \: u(0) + 0.11 \: u(1m)$
+- Implying $0.1 \: u(5m) + 0.01 \: u(0) > 0.11 \: u(1m)$
+- Contradicting the above!
 
 \
 
@@ -5160,13 +5226,11 @@ One theory: People may maximize something like EU but they get the probabilities
 
 \
 
-Another theory: People do *not* choose in a way that could be characterised as maximizing the probability-weighted sum of a value function over outcomes. They do not do anything that could be depicted as EU maximization. Instead, the assess gambles using other criteria, perhaps framing 'reference points', and 'gains and losses' relative to this reference point. We will (time permitting) return to this in our discussion of 'prospect theory' when we consider Behavioral Economics. 
+```{block2,  type='note'}
+Another theory: 
+People do *not* choose in a way that could be characterised as maximizing the probability-weighted sum of a value function over outcomes. They do not do anything that could be depicted as EU maximization. Instead, the assess gambles using other criteria, perhaps framing 'reference points', and 'gains and losses' relative to this reference point. We will (time permitting) return to this in our discussion of 'prospect theory' when we consider Behavioral Economics. 
+```  
 
-## Explaining the above paradoxes with prospect theory
-
-- Above choices: cannot be explained by 'regular' EU theory
-    - Mistakes, misunderstanding probabilities?
-    - Prospect theory, loss-aversion: *not* mistakes, but maximising something other than EU
 
 
 \
@@ -5271,7 +5335,7 @@ You can check this, e.g., [here](https://shiny.rit.albany.edu/stat/binomial/)
 
 ```{r knitrapp}
 knitr::include_app("https://shiny.rit.albany.edu/stat/binomial/",
-height = "400px")
+height = "600px")
 ```
 
 <br> 
@@ -5306,6 +5370,8 @@ Each £1 invested in shares has a higher expected return, but also a higher risk
 ```
 
 
+\
+
 ### Asset pricing and the CAPM (basic characterization) {-}
 
 
@@ -5339,7 +5405,7 @@ The above assumes 'optimal diversification': no one chooses points *below* marke
 
 #### Extension: "Capital asset pricing model" (CAPM) {-}
 
-More content/reading to be added here. 
+(*More content/reading to be added here.*)
 
 <!-- #TODO -->
 
@@ -5565,15 +5631,22 @@ That might seem the obvious choice to you, in spite of the above discussion. If 
 
 
 
-# Exercises - uncertainty, finance, time preferences ('problem set')  {-#prefs-uncert}
+## Time preferences and discounting {#time-pref}
+
+(To be added, partly from McDL: 13.3 on ‘dynamic choice’)
+
+# Exercises - uncertainty, finance, time preferences ('problem set')  {-#ex-uncertainty}
 
 Tbd; some possibilities in the fold.
 
 ```{block2,  type='fold'}
 
 O-R Q2: "A parent"
+
 O-R Q7: "Additional lottery"
+
 O-R Q8: "Casino"
+
 O-R Q9: "Insurance"
 
 - Proof-based problem
@@ -5602,8 +5675,7 @@ We will cover most of O-R chapter 4, but we will skip section 4.6 (differentiabi
 
 ### "Bundles of goods" (O-R 4.1) {-}
 
-### Preferences over bundles, indifference sets (indifference curves) (O-R 4.2 and supplements
-{-}
+### Preferences over bundles, indifference sets (indifference curves) (O-R 4.2 and supplements {-}
 
 ```{r  fig.cap = 'From Nicholson and Snyder 2010', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics(file.path("picsfigs","moreisbetter.png"))
@@ -5623,10 +5695,10 @@ Indifference curve
 
 \
 
-Formally (for 2 goods), the set of pairs of ${X,Y}$ such that $U(X,Y)=c$ for some constant c.^[Recall the "level sets" from the maths revision.]
-
+Formally (for 2 goods), the set of pairs of ${x,y}$ such that $U(X,Y)=c$ for some constant c. 
 
 Autor:
+
 > Define a level of utility say $U(x) = U$. Then, the indifference curve for U, $IC(U)$ is the locus of consumption bundles that generate utility level U for utility function $U(x)$.
 
 
@@ -5637,14 +5709,23 @@ knitr::include_graphics(file.path("picsfigs","indifcurves_util_together.jpg"))
 ```
 
 
-Consider the above diagram ^[Credit: www2.econ.iastate.edu]. Think of this as a map with a projection above it.
+Consider the above diagram.
+<div class="marginnote">
+[Credit: www2.econ.iastate.edu].
+</div>
+
+Think of this as a map with a projection above it.
 
 - How far East you go on this map determines how much of the x good is consumed
 
 - How far North you go determines how much of the Y good is consumed.
 
-- How high is the projected image... Determines how much utility is obtained from this combination of goods X and Y.^[Hmm... If we think of this as a traveler who loves 'getting high', and  'consumes' by driving East or North, and his utility is his altitude, maybe that helps.]
+- How 'high' is the projected image... determines how much utility is obtained from this combination of goods X and Y.
 
+<div class="marginnote">
+[Hmm... If we think of this as a traveler who loves 'getting high', and  'consumes' by riving East or North, and his utility is his altitude, maybe that helps.
+</div>
+ 
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
 
@@ -5656,85 +5737,85 @@ The above diagram also includes color to depict the utility level, like a 'heat 
 
 ### Examples of preferences (over 2 goods) {-}
 
+#### Simpler Definitions: Perfect substitutes and complements {-#perfect-sub-comp}
+
+Perfect substitutes
+
+:     Goods A and B are Perfect Substitutes when an individual's utility is linear in these goods
+
+: when she is always willing to trade off A for B at a fixed rate (not necessarily 1 for 1)
+
+\
+
+Perfect complements
+
+:     Goods A and B are Perfect Complements when an individual only gains utility from (more) A if she also consumes a defined (additional) amount of B, and vice-versa
+
+<br> \bigskip
+
+These goods are 'enjoyed only in fixed proportions'. E.g., left and right shoes (1:1) bicycle frames and wheels (1:2) or, perhaps, baking powder and flour (1:40) for someone who only eats soda bread.
+
+<div class="warning">
+These are not the same as the 'complements' and 'substitutes' in demand functions which we may see you later, referring to the impact of changing prices.
+</div>
+ 
+
 ### Properties: Monotonicity {-}
+
+Read O-R section 4.3.
+
+Know how to define, test, and compare at least two 'monotonicity-type' assumptions, e.g., Monotonicity vs Strong Monotonicity; see O-R p. 49
 
 ### Properties: Continuity (we may skip this for time-concerns) {-}
 
+In O-R section 4.4: 
+
+> Continuity is a property of a consumer’s preference relation that captures the idea that if a bundle x is preferred to a bundle y then bundles close to x are preferred to bundles close to y.
+
+<div class="marginnote">
+You may skip the formal definition of continuity in O-R, and  also skip the proof of  it's relationship to a continuous utility function. 
+
+However, knowing the definition of continuity as a mathematical property may be relevant in your future studies and research..
+</div>
+
 ### Properties: Convexity (skipping the proofs) {-}
 
-#### More formal concept: quasiconcavity (optional)   {-}
+Read O-R section 4.5, skipping the proofs, if you like. 
 
-<div class="marginnote">
-This is the 'preferred assumption' which resembles Convexity, but has several advantages as a concept. For example, it doesn't require differentiable preferences, and its properties are not affected by monotonic transformations of utility functions. This is the concept that you might be taught in a PhD module. I think it may also have some value in understanding optimization problems in general, which is an important part of research and industry and finance, I believe.
-</div>
- 
+```{r block05, fig.cap = 'Convex preferences - from McDL', out.width='40%', fig.asp=.4, fig.align='center', echo = FALSE}
 
-More formal concept: (strictly) convex preferences $\Leftrightarrow$  (strictly) **'quasiconcave' utility function**, allowing 'n goods':
+ knitr::include_graphics(file.path("picsfigs","mcdl_convex_pref_indif.png"))
 
-This essentially means that for a 'convex combination' of any two bundles $\mathbf{A}=(X_A,Y_A)$ and $\mathbf{D}=(X_D,Y_D)$
-
-$$U(\alpha\mathbf{A}+(1-\alpha)\mathbf{D})\geq\alpha U(\mathbf{A}) + (1-\alpha)U(\mathbf{D})$$
-
-where $0<\alpha<1$.
-
-<div class="marginnote">
- Note the switch to a 'weak inequality' here for quasiconcavity, strict for 'strict quasiconcavity'*)
-</div>
-
-\
-
-E.g. (with two goods),
-
-
-$$U(\alpha X_A + (1-\alpha)X_D,\alpha Y_A + (1-\alpha)Y_D) \geq $$
-
-$$\alpha(U((X_A,Y_A)) + (1-\alpha)(U(X_D,Y_D)$$
-
-where $0<\alpha<1$.
-
-\
-
-We also describe it as having 'a convex upper contour set': the set of all bundles strictly preferred to a particular bundle is a 'convex set', implying it contains all convex combinations of elements of this set.
-
-\
-
-One reason economists like this 'quasiconcavity' is because it rules out the 'false summits',
-the local, but not global optima, so we only need to use the first-order conditions to find the optima. 
-
-<div class="marginnote">
-
-But is this '[looking under the streetlight](https://en.wikipedia.org/wiki/Streetlight_effect) to find our keys' or is it truly without loss of generality?
-
-</div>
- 
-
-\
-
-Without quasiconcavity there may also be no demand *function* only a *demand correspondence*: at a given price and income there may be more than one optimising choice!
-
-```{block2,  type='inputq'}
-Can you illustrate this with 'double-humped' indifference curves?
 ```  
 
-\
+Be sure you understand the difference between the definition of convexity and strict convexity here.
 
 
-Gravelle and Reese appendix, on constrained optimisation (unfold)
 
-```{block2,  type='fold'}
+```{block2,  type='warning'}
 
-> A local maximum is always a global maximum if (a) the objective function is quasiconcave, and (b) the feasible set is convex.
+> A preference relation on  $R^2_+$ that is represented by a concave [utility] function is convex
 
-It will also tend to rule out 'sharp jumps' in response to price changes, so we can look smoothly at 'comparitive statics.'
+It will also have convex indifference curves.
 
-Note that 'quasiconcavity' does not require differentiability.
+Make sure you don't get this confused.
 
-Furthermore, unlike properties like 'diminishing marginal rates of substitution' this is preserved under a 'monotonic transformation' (stretching). This means it is called an 'ordinal property'.  Essentially, quasiconcave utility functions yields indifference curves that are 'convex to the origin'.
+```  
 
-All relevant properties of utility functions are unchanged by such monotonic transformations, including the MRS. This is well-illustrated in Autor's reading (Lecture 3, pp 11-14)
+> The convexity of a strongly monotone preference relation is connected with the property known as decreasing marginal rate of substitution.  
 
-```
+#### More formal concept: [quasiconcavity (optional, linked as supplement)](#quasi-conc)   {-}
 
+This is the 'preferred assumption' which resembles convexity, but has several advantages as a concept. For example, it doesn't require differentiable preferences, and its properties are not affected by monotonic transformations of utility functions. This is the concept that you might be taught in a PhD module. I think it may also have some value in understanding optimization problems in general, which is an important part of research and industry and finance, I believe.  [Linked as supplement here](#quasi-conc).
+
+### (Differentiability: mainly skip)
+
+```{block2,  type='note'}
+You can skip O-R's discussion of  differentiability. 
+
+However,  do have a look at O-R figure 4.5  to get a sense of what differentiability  means for indifference curves (indifferencesets).
+
+```  
 
 ### Applications: Product positioning, marketing
 
@@ -5746,7 +5827,7 @@ Naive argument?: If market research suggests a broad group indifferent between t
 
 <br>
 
-```{block2,  type='inputqn'}
+```{block2,  type='inputq'}
 
 But what may be a critique, exception to this logic, e.g., for a particular food?
   
@@ -5779,24 +5860,1431 @@ This may also provide a structure to guide data-driven 'searches for the next be
 
 ## Consumer behavior/Individual (and market) demand functions and their properties (1 week) {#demand}
 
-(Chapter 5 in O-R)
+Main reading: 
+- O-R Chapter 5 (selections as outlined below)
 
-We may skip  'rationalizing a demand function
 
+Feel free to skip (unfold):
+
+```{block2,  type='fold'}
+
+You may skip the first part of O-R section 5.5 on 'rationalizing a demand function.'
+
+However, make sure you *do read* the discussion of 'the weak axiom of revealed preferences' (WARP). This relates to some of the supplementary readings/exercises.
+
+```
+
+
+\
+
+*Alternative treatments: (Unfold)*
+
+
+```{block2,  type='fold'}
+
+- DA: [Lecture Note 6 – Demand Functions: Income Effects, Substitution Effects, and Labor Supply](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/MIT14_03F16_lec6.pdf), esp. sections 1-3
+
+- McDL:  3.1 (elasticity), parts of Ch 12; Warning: this book's treatment of consumer surplus seems to be incorrect (or at least vastly oversimplified) from my PoV
+
+- QMC: Chapter 17 (elasticities -- very clear treatment, Chapter 18 (supply and demand details)
+
+```
+
+\
+
+Individual choices: supplementary recommended readings
+
+<div class="marginnote">
+As noted before: 
+
+- You don't need to read all of these
+
+- But you must read *some* of these... in terms of marking, you may need some themes to discuss in open answer questions on the midterm exam, for example. 
+
+</div>
+ 
+
+```{block2,  type='fold'}
+
+- Loomes, Graham, Chris Starmer, and Robert Sugden, 1991. "Observing Violations of Transitivity by Experimental Methods". [jstor link](https://www.jstor.org/stable/2938263?seq=1#metadata_info_tab_contents)
+
+- Choi, Syngjoo, et al. "Who is (more) rational?." The American Economic Review 104.6 (2014): 1518-1550.a.
+
+- Waldfogel, Joel. "The deadweight loss of Christmas." The American Economic Review 83.5 (1993): 1328-1336.
+
+- [Reinstein, David. "The Economics of the Gift." (2014; working paper and chapter in Gift Giving and the'embedded' Economy in the Ancient World, F Carlà, M Gori - 2014).](https://core.ac.uk/download/pdf/74369736.pdf)
+
+```
+\
 
 ```{block2,  type='note'}
 **I will add a great deal of content here shortly.**
 ```
 
-### Budget sets/constraints {-}
 
-### Individual (consumer) demand functions {-}
+### Choices are subject to constraints {-}
 
-### Rational consumer and her optimisation problem {-}
+You cannot spend more than your (lifetime) income/wealth $\rightarrow$ *budget constraint* (and 'budget sets').
 
-### Marginal rates of substitution 
+<div class="marginnote">
+There are also other potential constraints on consumption, such as a leisure time constraint and legal constraints. 
+</div>
+ 
 
-MORE TO BE ADDED HERE
+Consider the budget line given in figure 5.1 in O-R.
+
+
+<!--
+```{r  fig.cap = 'Budget constraint for two goods', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
+knitr::include_graphics(file.path("picsfigs","budgetconstraint.png"))
+
+```
+-->
+
+Budget constraint for two goods, slope $-p_x/p_y$
+
+
+<div class="marginnote">
+Only two goods?  For example, think 'food' and 'nonfood'.
+</div>
+ 
+
+#### Budget constraint algebra (simple) {-}
+
+<div class="marginnote">
+*I realise this may be trivial for many of you, but others will find this a helpful refresher. If it is obvious, feel free to skip ahead.
+</div>
+ 
+
+
+If I spend all my wealth (which I should do over a 'relevant lifetime' given monotonic preferences), then, if there are only two goods $x_1$ and $x_2$ to choose from, with prices $p_1$ and $p_2$ respectively ...:
+
+\
+
+
+Expenditure on $x_1$ + Expenditure on $x_2$ = wealth ($w$)
+
+\
+
+$$p_1 x_1 + p_2 x_2 = w $$
+
+
+<br> \bigskip
+
+
+To see how $x_1$ trades off against $x_2$, rearrange this to:
+
+\
+
+$$w =  \frac{w}{p_2} -\frac{p_1}{p_2}x_1$$
+
+- Intercept:  $\frac{w}{P_2}$, i.e., amount of $x_2$ you can buy if you only buy $x_2$
+
+- Slope: $-\frac{p_1}{p_2}$, i.e.,  how much $x_2$ you must give up to get another unit of $x_1$
+
+
+<br>
+
+*Notes and intuition* (unfold if you want more explanation)
+
+```{block2,  type='fold'}
+
+The slope $-\frac{p_1}{p_2}$: How much $x_2$ I must sacrifice to get another unit of $x_1$, expressed as a negative number. (Strictly speaking, the slope is how much $x_2$ you *get* when you get another $x_1$, but since this is negative we see that you 'get a negative amount', i.e., give up some amount of $x_2$.)
+
+
+To get another unit of $x_1$ it costs me $p_1 x_1$, so the more costly is $x_1$ the *more* $x_2$ I must give up.
+
+For each unit of $x_2$ I give up I save $p_2$, so the more costly is $x_2$ the more I can save by giving up 1 unit of it,
+thus, the less I need to sacrifice of $x_2$ to get another unit of $x_1$.
+
+```
+
+
+#### Budget sets (O-R 5.1, formal presentation); normalization {-}
+  
+```{block2,  type='def'}
+
+O-R definition (for two goods)
+  
+> ... the budget set of a consumer with wealth $w$ when the prices are ($p_1, p 2$) is
+
+$$B((p_1, p 2), w) = \{(x_1,x_2) \in X : p_1 x_1 + p_2 x_2 \leq w \}$$
+
+(Note that the part after the colon ($p_1 x_1 + p_2 x_2 \leq w$) is referred to as the 'budget constraint')/
+  \
+
+>   The set $\{(x_1,x_2) \in X : p_1 x_1 + p_2 x_2 = w \}$ is the consumer’s budget line
+
+```  
+
+
+O-R continue: 
+
+> Geometrically, a budget set is a triangle like the one in Figure 5.1. Note that multiplying wealth and prices by the same positive number does not change the set: 
+
+> $B((\lambda p_1,\lambda p_2), \lambda w) = B((p_1, p_2), w)$ for any $\lambda > 0$,
+
+> because the inequalities $\lambda p_1 x_1 + \lambda p_2 x_2 \leq \lambda w$ and $p_1 x 1 + p_2 x_2 \leq w$ that define these sets are equivalent
+
+Multiply all prices and income by the same amount, and the *budget constraint is unchanged.* 
+
+This will imply that we can simplify any such maximization problem by "normalizing" the budget constraint so that one good simply has price equal to one.  (But if this is an applied problem, we should remember to convert it back into the actual prices.)
+
+<div class="marginnote">
+Also:  As the budget constraints are unchanged when all prices and wealth are increased by the same proportion, neither will be the choices made; thus demand functions are "homogenous of degree zero". (We'll come back to this )
+</div>
+ 
+\
+
+**"Every budget set is convex"** 
+
+As O-R show algebraically (for two goods, but this would extend to $n$ goods)... 
+
+- if any two bundles $a$ and $b£ are both within a particular budget set, a third bundle that is a "convex combination" of these two bundles will also be in this budget set. 
+
+<div class="marginnote">
+
+This holds as a result of constant linear pricing; in the proof you see this is used.  With complicated (e.g., nonlinear) pricing, budget constraints may not have this property. Perhaps it is reasonable to assume that a 'standard small consumer' faces constant prices for many goods. On the other hand, we can think of all sorts of exceptions, where you get a discount if you buy in bulk and also note that you cannot buy, e.g., "one third of a car."  With nonlinear budget constraints  optimization problems become much more mathematically "interesting".
+</div>
+
+\
+
+What's a "convex combination"? (unfold)
+
+```{block2,  type='fold'}
+
+Essentially this is just a fancy economics word for "shares of two things adding to one".
+
+It is simply some (non-negative) share of the first bundle and one minus this share of the second bundle.  E.g., 100% of the  first bundle and none of the second bundle, or 50% of each bundle, or 25% of the first bundle and 75% of the second bundle. (Obviously this could be extended to to multiple bundles too.)
+
+Think also about 'dividing up two bundles'. We see  that if there are two bundles out there and one person takes a convex combination of these that is convex, what remains is also a convex combination of these.  
+
+
+\
+
+We could use this to demonstrate "gains to trade". Suppose two people with the same preferences, each with a distinct bundle (at a point other than XXX). They can divide up these bundles among each other, each taking a convex combination of the bundles, and the other taking the remainder, which is also a convex combination.
+ See [THIS SUPPLEMENT](#gain-to-trade) for more detail.
+```
+
+
+
+### Individual (consumer) demand functions (Marshallian demand) - first pass {-}
+
+```{block2,  type='def'}
+
+O-R:
+
+> A demand function is a function $x$ that assigns to each budget set one of its members. 
+
+> Define $x((p_1, p_2), w )$ to be the bundle assigned to the budget set $B((p_1, p_2), w)$.
+
+(It is easy to imagine extending this to a case with many goods to choose from, rather than just two.)
+
+```  
+
+```{block2,  type='inputq'}
+O-R present 'individual demand functions' *before* presenting the optimisation problem. This is unusual... why do they do this?
+
+They highlight that the demand function does not *need* to arise from an optimization process (as we describe below)... it merely maps from the budget set to a particular choice.
+
+This can arise as a result of a simple rule or "heuristic" such as "spend equal amount of income on each good". Behavioral economics considers the implications of decisions made on the basis of such heuristics.
+```  
+
+<div class="marginnote">
+These demand functions are stated as a function of the  budget set, or more simply, as functions of price and wealth (or income).
+
+These are referred to as the "Marshallian demand functions" after the great Alfred Marshall.  These are the demand functions that we may actually be able to observe in the real world.
+
+There are another type of demand functions  that have very interesting properties for theory and welfare analysis called "Hicksian demand functions" or "compensated demand functions".  These take prices and *utility* as the arguments.  We will not cover these in 2020  because of time constraints.
+
+</div>
+ 
+\
+
+### Rational consumer and his/her optimisation problem {-}
+
+We started with an individual's preferences, one of the baseline elements of the neoclassical model. Under some conditions these can be described by utility functions,  which we may consider as 'mountains'  with levels sets depicted by indifference curves.
+
+So, we have a way of depicting what people prefer,  but this doesn't tell us what people will *choose* to consume (and firms to produce).
+
+We next introduced the second fundamental element of the neoclassical model, constraints, in particular, the budget constraint.
+
+We put these together to describe the consumer's problem: maximizing her utility subject to her budget constraints.  This is depicted in figure  below for the two-good case.
+<div class="marginnote">
+Image Source: https://courses.byui.edu/econ_150/econ_150_old_site/lesson_05.htm
+</div>
+ 
+
+(Or see O-R fig 5.3)
+
+
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","crop-byui-5-2_Indifference_Curves_08.png"))
+```
+
+Imagine that you are this consumer with these preferences and this budget constraint. You can choose any point at or below the straight blue line, as it is on or below your budget constraint. You want to get to the highest indifference curve, to attain the most utility.
+
+```{block2,  type='inputq'}
+
+How do we know point B is suboptimal (i.e., not optimal)? What about point D? What about points between A and B?
+  
+```  
+
+
+
+```{block2,  type='note'}
+
+Again, this is material that you will have seen before if you have studied Economics. Feel free to skip this if you remember it all; the O-R text gives a concise explanation. 
+
+As this is a bit remedial I will not cover it in detail. I suggest the [Khan academy videos/materials here](https://www.khanacademy.org/economics-finance-domain/microeconomics/choices-opp-cost-tutorial/utility-maximization-with-indifference-curves/v/optimal-point-on-budget-line) if you need revision.
+```  
+
+<br> \bigskip
+
+We can demonstrate that you will choose point A, yielding utility $100$.
+
+What is special about point A?
+
+It's the point of *tangency* between the budget constraint and an indifference *curve*.
+
+It's also (not a coincidence) the point where the slopes are equal.
+
+\
+
+At this point (but not in general!) we have that  "Slope of budget constraint = slope of indifference curve". 
+
+<div class="marginnote">
+Recall that the  $\leftrightarrow$ symbol means 'if  and only if', i.e., the  object on the right-hand side implies the object on the left-hand side, and vice versa. In  some contexts this means a 'necessary and sufficient condition',  but here it is just basically a definition.
+</div>
+
+
+### Marginal rates of substitution {-}
+
+O-R section 5.4 'Differentiable preferences'
+
+
+```{block2,  type='note'}
+Note that O-R use the notation
+
+$v_1(z)$ and $v_2(z)$ to represent "the consumer’s valuations
+of small changes in the amounts of the goods she consumes away from z". They refer to the consumer's 'local valuations at z' (remember that $z$ is a bundle of goods).
+
+This is usually referred to as the *marginal utility*; the partial derivative of the utility function with respect to each argument (each good or service), at a particular point (bundle), say $z = (x_1, x_2)$:
+
+$$mu_1(z) \equiv \frac{d}{d x_1} u(x_1, x_2)$$  
+
+```
+
+$$mu_1(z) \equiv \frac{d}{d x_1} u(x_1, x_2)$$  
+
+```{block2,  type='def'}
+
+O-R define the "marginal rate of substitution at $z$ ... $MRS(z)$" as $v_1(z)/v_2(z)$
+
+Assume bundle $z$ contains elements $x_1$ and $x_2$. Relating this to a more standard notation:
+
+$$MRS(z) = MRS(x_1,x_2) = v_1(x_1,x_2)/v_2(x_1,x_2)=\frac{mu_1(x_1,x_2)}{mu_2(x_1, x_2)}$$
+  
+```  
+
+
+```{block2,  type='note'}
+I prefer to define and think of the MRS as 
+
+> Starting from a particular point ($x_1', x_2'$) how much $x_2$ would I be willing to give up to get a unit of $x_1$'? (As this 'unit size' converges to 0, as we are considering a point slope here. )
+  
+Or starting from a particular point ... if I gained a tiny tiny  unit of $x_1$ how much $x_2$ would I have to give up to hold my utility constant?
+
+I loosely derive the 'ratio of the marginal utilities' from this definition [BELOW](#mrsinsight), offering some insight. 
+
+```   
+
+\
+
+Above, at an optimal interior consumption choice, we had that the  "slope of budget constraint = slope of indifference curve"... at least that's what it looked like. 
+
+\
+
+
+This is equivalent to "the point or bundle (which we will call $x^{\ast}$) where the price ratio equals the marginal rate of substitution", i.e., the point $x^{\ast} \equiv (x_1^{\ast},x_2^{\ast})$ where 
+
+$$p_1/p_2 = MRS(x^{\ast}) = MU_1(x^{\ast})/MU_2(x^{\ast}) =v_1(x^{\ast})/v_2(x^{\ast}) $$ holds.
+
+\
+<!--
+*Note on why the negative signs 'cancel out:*
+```{block2,  type='fold'}
+
+Recall that the  slopes of the budget line and the slope of the relevant indifference curve are actually negative. However, recall that we usually state the MRS as the *absolute value* of this, so it is positive, and thus we similarly multiply the slope of the  budget constraint by negative one. As you know, multiplying both sides of a (nonzero) equation by negative one leaves the solution unchanged. More simply, where both slopes are negative, 'the slopes are equal' is the same as saying 'the absolute value of the slopes are equal.
+
+```
+
+-->
+
+```{block2,  type='warning'}
+
+Warning:  Recall that the marginal rate of substitution may vary everywhere along an indifference curve (remember the idea of satiation and diminishing MRS). 
+
+Unfold for further explanation...
+```
+
+
+```{block2,  type='fold'}
+
+It is a function of the *point* it is evaluated, i.e., $MRS = MRS(x_1, x_2)$. It is only at the *point where the consumer is optimizing* that these slopes *must* be equal.
+
+\
+
+They can also be equal at some other suboptimal points, where she is not spending all of her income... (e.g., perhaps point D in the above figure.
+
+Where she is consuming some of every good, this is a *necessary* condition for such a point to represent an optimal consumption choice, but it may not be a sufficient condition.  May also be optimal for her to consume *none*  of certain goods,  in which case this condition  will not hold. We return to this later.
+
+```
+
+#### At an optimal consumption choice (given above assumptions, see above footnote) {-}
+
+- Consume all of income (locate *on* budget line; follows from 'more is better')
+
+- Psychic tradeoff (MRS) equals market tradeoff ($p_X/p_Y$)
+
+
+
+\
+
+Intuition: If I can give up X for Y in the market (buy less X, get more Y) at a certain rate, and the *benefit* I get from doing this is at a different rate, I can make myself better off.
+
+Thus the original point could not have been optimal!
+
+```{r  fig.cap = '', out.height='5%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","glasses.png"))
+```
+
+<div class="marginnote">
+
+If this is not clear to you, try to think about this carefully. This is a key insight in microeconomics, a sort of 'marginality' argument/'proof  by contradiction'. that will come back later.
+</div>
+ 
+
+
+
+### Very simple example, for intuition {-}
+
+
+```{block2,  type='fold'}
+
+
+Suppose that at the consumption bundle you choose, your MRS = 1. To remain indifferent, you would be willing to give up 1 hamburger to get 1 soda.
+
+Suppose the price of soda is £1 and the price of a hamburger is £2. $\rightarrow$ Price ratio: $P_S/P_B = 1/2$
+
+Thus if you buy one less hamburger you can buy two more sodas.
+Thus if you give up one hamburger, you can get one more soda to keep you indifferent *plus* an additional soda.
+This means you would be better off; thus the original bundle *wasn't* optimal.
+
+Practice question: in which direction would you adjust this bundle if the price of a soda was £2 and a hamburger was £1?
+
+```
+
+
+
+\
+
+More extended example... (unfold)
+
+```{block2,  type='fold'}
+E.g., if I can give up one glass of wine and gain two beers (i.e., because wine is twice as costly), and (given my proposed consumption of wine and beer) I get the same value from each glass of wine or beer, I can give up this glass of wine, gain two beers, and make myself 'one unit' better off, at the margin.
+
+
+On the other hand, if I can give up one glass of wine and gain two beers (i.e., because wine is twice as costly), and (given my proposed consumption of wine and beer) I get the four times as much value from each glass of wine as each beer, I can give up two beers, gain a wine (which I value at four beers) and make myself 'two units' better off, at the margin.
+
+However, I can *not* apply this argument to a point where I am consuming *only* wine... I cannot consume less than no beer (although some nights I wish I could have done). We return to this point [below](corners)
+```
+
+
+
+### More insight into MRS  {-#mrsinsight}
+
+Recall $u=u(x_1, x_2)$.
+
+$$U_1(x_1,x_2) \equiv MU_{x_1}(x_1,x_2)$$
+
+\medskip
+
+*Derivative with respect to $x_1$ : rate that utility increases if we add a little $x_1$, holding $x_2$ constant.*
+
+Similarly for $MU_{x_2}$.
+
+
+<br> \bigskip
+
+As noted (and we can derive this), the MRS at a point is the ratio of these marginal utilities.
+
+MRS: 'how much $x_2$ would I be willing to give up to get a unit of $x_1$'?
+
+<br> \bigskip
+
+Ans: Depends on marginal benefit of each ... we can show $MRS(x_1,x_2)=\frac{MU_{x_1}}{MU_{x_2}}$
+
+
+```{block2,  type='note'}
+
+*Mathy intuition:*
+
+The more valuable a little more X is to me at that point -- the higher is $MU_{x_1}$ -- the more $x_2@ I am willing to give up to get it. That is why $MU_{x_1}$ is in the numerator.
+
+The more valuable a bit more $x_2@ is at that point -- the higher is $MU_{x_2}$ -- the less $x_2$ I am willing to give up to get a bit more $x_1$. That is why $MU_{x_2}$ is in the denominator.
+
+```
+
+\
+
+
+
+The 'first order change in utility' (or 'total differential'), considering 'small changes in $x_1$ and $x_2$, $d_{x_1}$ and $d_{x_2}$ is:
+
+$$ dU  = \frac{\partial U}{\partial x_1}d_{x_1} + \frac{\partial U}{\partial x_2}d_{x_2}$$
+$$ = MU_{x_1}d_{x_1} + MU_{x_2}d_{x_2}$$
+
+- Where  $\frac{\partial U}{\partial x_1}$ refers to the partial derivative of U(x_1,x_2) with respect to $x_1$, and similarly for $x_2$,  i.e., the marginal utility.
+
+
+Essentially, for very small changes in X and Y;  this approximates the total change in utility. It's a 'linear projection'. 
+
+Setting it equal to zero and rearranging it yields the rate, at the margin, one is willing to give up $x_2$ for $x_1$:
+
+$$dU  = MU_{x_1}d_{x_1} + MU_{x_2}d_{x_2} = 0 $$
+
+Rearranging...
+
+$$\frac{dx_2}{dx_1}=-\frac{MU_{x_1}}{MU_{x_2}}$$
+
+<div class="marginnote">
+**Tech note**:  This is a simple case of the implicit function theorem. Essentially $U(x_1,x_2)=c$ defines an implicit function $x_2(x_1)$, whose slope is the negative of the ratio of the derivatives.
+</div>
+ 
+
+
+<br>
+
+Rearranging the utility maximising condition yields more intuition:
+
+$$P_X/P_Y = MRS(z^*) = MU_X(z^*)/MU_Y(z^*)$$
+
+(at each consumption point X,Y)
+
+$$\frac{MU_X}{P_X} = \frac{MU_Y}{P_Y}.$$
+
+
+<br> \bigskip
+
+I.e., the same 'bang for each buck'.
+
+*Note:* If this didn't hold true and you were spending on both goods, you would be paying 'more per util' for one good than the other, and thus should reallocate to that other good.
+
+
+### Note on 'corner solutions' {#corners}
+
+The above 'bang for the buck' condition applies to any *interior* solution
+
+- If you are consuming both goods and optimising, $P_{x_1}/P_{x_2} = MRS = MU_{x_1}/MU_{x_2}$ must hold
+
+- This is a "necessary but not sufficient condition", sufficient if there is a diminishing MRS everywhere.
+
+But you might consume *none* of some good (say $x_1$):
+
+If even with *no*  $x_1$  we still have $MU_{x_1}/P_{x_1} <MU_{x_2}/P_{x_2}$
+
+- i.e., the marginal utility of the first unit of $x_1$ is less than that of $x_2$.
+
+
+The same condition applies to each good you are consuming a positive amount of.
+
+
+```{r  fig.cap = 'From Autor notes', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","goodwedontbuy.png"))
+```
+
+
+### Some 'popular' forms for utility functions, and their properties; computation
+
+
+
+#### Cobb-Douglas general form  {-#cobbdoug}
+
+$$U(X,Y)=X^aY^b$$
+
+where a, b are positive constants
+
+
+<br> \bigskip
+
+```{block2,  type='note'}
+
+This is *"homothetic"*:
+
+Homothetic: MRS constant along a ray through the origin.
+
+$\rightarrow$  It can be represented by an HD1 utility function. This ties down 'income effects' in a boring way: consumption of each good expands proportionally in income. 
+
+
+
+...So the poor man just buys a tiny amount of *foies gras* and jumps in his tiny money bin.
+
+
+Thus if everyone has these preferences impact of 1 consumer's income increasing by £1 million is the same as 1 million consumers gaining £1. This (possibly dubious) assumption underlies 'representative consumer' models.
+
+```
+
+<br> \bigskip
+
+
+$$MU_X=\frac{\partial U}{\partial X} = aX^{a-1}Y^b$$
+$$MU_Y=\frac{\partial U}{\partial Y} = bX^{a}Y^b-1$$
+
+<br> \bigskip
+
+
+Taking the ratio of these yields
+
+$$MRS = \frac{a}{b}\frac{Y}{X}$$
+
+
+<br> \bigskip
+
+
+So only the *ratio* Y/X affects the MRS; double both, MRS is the same.
+
+
+<br> \bigskip
+
+
+- `r format_with_col("Another relevant example: 'Constant Elasticity of Substitution preferences'","gray")`
+
+
+
+
+#### A non-homothetic (here, 'Quasilinear') example {-#quasilinear}
+
+
+$$U(X,Y)=X+ln(Y)$$
+
+
+Here Y has a diminishing MU, but for X MU is constant
+
+
+$$\frac{MU_X}{MU_Y}= \frac{1}{1/Y}=Y$$
+
+So the MRS diminishes as Y decreases (as we go 'down the indifference curve' ... this is what we confusingly call diminishing MRS), but it is independent of the amount of X consumed.
+
+```{block2,  type='inputq'}
+
+So, if we double both then what happens?
+  
+```  
+
+```{block2,  type='fold'}
+Ans: MRS doubles]
+
+```
+
+This represents *Quasilinear* preferences:
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","Quasilinear_utility.png"))
+```
+
+These are particularly relevant with three or more goods.
+
+More generally, quasilinear utility satisfies $U=x_1+f(x_2,...,x_n)$; i.e., it is linear in one 'numeraire' good $x_1$.
+
+Here, the amount of the 'non-numeraire goods' consumed adjust to match the price ratio but *don't* depend on the income.
+
+We imagine that 'the tradeoff between these goods is the same for people of all income levels'.
+
+E.g., in principal-agent analysis we can then ignore the question 'but won't the preference for leisure change when people are richer'?
+
+*Mathy intuition:* if the 'Y' goods $(x2,..., xn)$ have more MU consume them 'first', until their MU diminishes to that of the numeraire, then consume X.
+
+
+### Rationalizing a demand function (Skip O-R section 5.5) {#}
+
+(Brief comments here)
+
+
+## Properties of demand functions
+
+```{block2,  type='note'}
+
+This material is presented at a less advanced level than the previous material. I imagine for many of you, this will be revision, and feel free to skim it or skip it.
+
+```  
+
+Previously, we considered how consumption choices determined by utility functions/indifference curves and budget constraints.  We can now consider how an individual's choice of a good  varies with  each element of her budget constraint:  for income and the price of each good.
+
+
+```{block2,  type='warning'}
+
+The notation has changed here, to some extent.
+
+```  
+
+<div class="marginnote">
+ The OR notation is difficult to adapt here. I try to keep notation constant as much as possible. However, this could be seen as a good thing to get used to: in reading various papers in Economics, authors will use a variety of labels for variables and formats.
+ </div>
+ 
+
+We will refer to her 'quantity demanded of good X' function (or more simply, her 'demand function') as follows:
+
+
+<br> <br> \bigskip
+
+$$Quantity \: of \: X \: demanded = d_x(P_X, P_Y, I; preferences)$$
+
+\
+
+### Homogeneity {-}
+
+Homogenous (of degree zero) (demand) function
+:      A function whose outcome value does not change when *all* arguments are changed *proportionally* is *homogenous of degree zero*
+
+
+<br> 
+
+$d_X(P_X,P_Y,I)$ is homogenous of degree zero in its arguments.
+
+
+<br> 
+
+
+Multiply all prices and income by the same amount, and the *budget constraint is unchanged.*  Thus (as preferences have not changed) consumption choices should not change either.
+
+-  E.g., the budget constraint $P_X X + P_Y Y = I$ is the same as the budget constraint $2P_X X + 2P_Y Y = 2I$
+
+
+*Intuition for this (unfold if desired):*
+
+```{block2,  type='fold'}
+
+```
+
+<div class="marginnote">
+This relates to the puzzle of 'why should monetary policy and inflation have any real effect on the econom?'
+</div>
+ 
+
+
+### Response to income changes
+
+```{block2,  type='inputq'}
+
+Q: What happens to the quantity purchased of some good as an individual's income increases?","blue")`
+
+```  
+
+\
+
+```{block2,  type='fold'}
+
+A: It depends on the preferences (i.e, the utility function, i.e., the relative curvature of the indifference curve at various points).
+
+This defines whether the good is "normal" or "inferior."
+
+Whether it is normal or inferior depends on your preferences and the change in the slope of the indifference curves with higher income/utility, as we see below.)
+
+```
+\
+
+
+
+<br>
+
+#### Defining a normal and inferior good {-}
+
+Normal good
+:     A good that is bought in *greater* quantities as income increases.
+
+Inferior good
+:     A good that is bought in *smaller* quantities as income increases.
+
+\
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","normalgood.png"))
+```
+
+
+<div class="marginnote">
+For a simple powerpoint supplement on this, see   [here](https://www.dropbox.com/s/qhsl6qey0wjcfe5/utility_demand_supplement.pptx?dl=0)
+
+(download and use 'presentation mode')
+</div>
+ 
+
+
+<!-- 
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","inferiorgood.png"))
+```
+
+-->
+
+*Consider:* Here we see more income $\rightarrow$ less expenditure on Z! (Not just 'a lesser share' but actually *less*.)
+
+This is because the *shape* of the indifference curves changes at higher incomes in this example.
+When people have a lot to spend, they want to spend it on Y and not on Z. (Again *in this example*, not in general.)
+
+Consider, if you won the lottery how much pot noodle would you buy? Pot noodle may be like good Z  in this example.
+
+<br> 
+
+Thinking in 3d: 'as you walk up this hill, its ridge gradually moves to the west'.
+
+```{block2,  type='note'}
+
+To be precise, this is *not* about wealthy people being different than poor people
+nor that their taste 'changes' when they become wealthy.
+
+We are considering the same person with higher income,
+and thus the potential to choose a different bundle of goods.
+
+Empirically, these are hard to distinguish, however.
+
+```
+\
+
+```{block2,  type='inputq'}
+Consider: all goods cannot be inferior. Why not?
+```  
+
+```{block2,  type='fold'}
+There are 'adding up' conditions.
+
+You always spend all of your income. Thus, if as your income increases, you spend less on some subset of goods,
+you *must* spend more on the remaining goods.
+
+```
+
+
+### Response to (own) price changes (limited coverage) {#price_changes}
+
+```{block2,  type='inputq'}
+
+What happens to an individual's demand for a good as the price of this good rises, in our model? (I.e., if people are optimizing and their preferences obey all of the above axioms.)
+
+```
+
+```{block2,  type='fold'}
+
+You might have thought that when price rises quantity demanded falls, and vice versa, the so-called "iron law of demand". 
+
+However, we cannot derive this from our model and in fact, when price rises, an optimizing  consumer might  demand more of this good or less of this good, we do not know!
+  
+If the good is *inferior* (as defined above) there will be  two  countervailing effects:
+  
+1. "Substitution effect":  Is a good (say, good 'X', on the X-axis) becomes more expensive, the budget line rotates (inward), and the point of tangency (where the price ratio equals the marginal rate of substitution) on *any* indifference curve moves towards a point with less of good X.  In other words, 'along a particular indifference curve'  the individual "substitutes away" from X as it becomes more expensive.
+
+2. "Income effect": As X becomes more expensive, the individual's budget set is restricted. The individual is "poorer in a sense".  If X is an inferior good (in this region), this consumer, being 'poorer'  chooses consume *more* of the good, all else equal.
+
+If the second effect outweighs the first we have the surprising result that , and we label such a good a "Giffen good".
+
+```
+
+To cover this in more detail, we would need to define another concept called "Hicksian  demand". 
+
+
+### Complements/substitutes; response to (other) price changes (limited coverage) {#price_changes}
+
+## Consumer surplus (brief and incomplete treatment)
+
+Consumer surplus
+:     The extra value individuals receive from consuming a good over what they pay for it.
+
+<br> \bigskip
+
+- What people would be willing to pay for the *right* to consume a good *at its current price* rather than not being able to buy it at all.^[In other words, if you said to a consumer 'this product will stop being produced/offered  unless you pay us enough money',  this is the maximum amount the consumer would be will be willing to pay to keep the product on the market,  at its current price.]
+
+- The area between the demand curve and the market price
+
+- A measure of consumer welfare, useful for policy analysis
+
+
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","cons_surplus.png"))
+```
+
+
+\
+
+
+Also... This can be applied to the individual or market demand curve to obtain individual or total consumer surplus (although there are some technical issues with the latter).
+
+
+\
+
+```{block2,  type='technote'}
+
+The issue is that to get consumer surplus we want to sum the value *each* consumer gets from each unit. Suppose, as we derive/assume under perfect competition, firms are pricing at the marginal cost of the final unit produced. Assume that cost varies over time, so we observe shifts in the supply curve, tracing out points on the demand curve. This allows us to estimate a market demand curve. But this demand curve (inverted) only tells us the *last* consumer's value of (willingness-to pay for) the final unit produced. We don't know how other consumers valued each of these units.","gray")`
+
+```
+
+Also, 'introducing a new good...'^[This concept can also be applied to measuring the value added by the introduction of a new good (see Application 3.4). This is useful to know for policy, particular in formulating subsidies for R\&D and in adjusting the CPI. It also could be used to compute damages in court cases where a firm is accused of stifling innovation.]
+
+`r format_with_col("Note: We may skip section 'consumer surplus and utility' in lecture, but please read over it for understanding","gray")`
+
+
+
+\
+
+
+With a linear demand curve this is a triangle, which has an area that is easy to compute. More generally, this is a `definite integral'.
+
+
+<br> \bigskip
+
+
+$$\int_{0}^{q^\ast}p(q)-p^\ast dq $$
+
+(where $p(q)$ is the inverse demand.
+
+<br> \bigskip
+
+For welfare calculations, we often want to know 'how does this integral change as we adjust some parameter'?
+
+$\rightarrow$ See the [(more general version of) the Leibniz rule for differentiating integrals.](https://brilliant.org/wiki/differentiate-through-the-integral/), related to the 'Fundamental theorem of calculus'.
+
+
+
+
+<br> \bigskip
+
+## Market demand (function) (brief and incomplete treatment)  {#mktdemand}
+
+Market demand (or better, 'market quantity demanded')
+:     The total quantity of a good or service demanded by all potential buyers
+
+- This just sums the individual quantities demanded (at a given price)
+
+
+<br> \bigskip
+
+
+Market demand curve
+:     Relationship between total quantity demanded of a good and its price, ceteris paribus
+
+- Sum the individual demand curves ('horizontally' ... quantities demanded at each price)
+
+
+<!-- 
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","summarketdemandcurve.png"))
+```
+-->
+`r format_with_col("Make sure you can do numerical examples of this","gray")`
+
+<!--
+LC: Illustrate 'sums horizontally' on visualiser if possible*
+-->
+
+
+
+Some of our previous results about individual demand also hold for market demand, while others do not, or only if we make restrictive assumptions
+
+
+Shifts in the market demand curve are caused by similar things that cause individual demand curve shifts
+
+- Increases in overall income (for normal goods)
+- Reduced prices of complements, increased price of substitute goods
+- Change in tastes
+
+```{block2,  type='technote'}
+However, the aggregate income does not have a single effect; it cannot be easily reduced to a single variable here. You can only express the demand curve as a function of aggregate income under restrictive assumptions. In general, it depends *who* gets this income. (See 'aggregation issues').
+```
+
+(In addition, the market demand curve could shift out if more consumers enter the market, e.g., because of demographic change.)
+
+\
+
+**A random example:**
+
+- 2008: 'Gas prices forcing demand for SUVs to plummet' [LINK](http://www.thehour.com/wilton/article/Gas-prices-forcing-demand-for-SUVs-to-plummet-8257785.php)
+
+- 2015: 'Economy, gas prices drive demand for SUVs, high-end cars' [LINK](http://www.sj-r.com/article/20150809/NEWS/150809569)
+
+## Elasticities
+
+`r format_with_col(" This is a fundamental mathematics concept that comes from Physics;  it's not just for Economics.","gray")`
+
+How do we measure and compare the extent to which one thing responds to another? E.g., which is 'larger'?:
+
+- the change in quantity demanded of oranges when the price of oranges rises or
+- the change in quantity demanded of apple juice when the price of apple juice rises?
+
+`r format_with_col("(Or the response to changes in the price of a related good, or to income.)","gray")`
+
+Difficulty: These things are measured in different *units* and the prices have different starting values.
+
+<br> \bigskip
+
+**Elasticity:** the measure of the \% change in one variable brought about by a 1\% change in another variable.
+
+- a *unitless* measure; will be the same no matter how these variables are measured.
+
+`r format_with_col("Think of *responsiveness* when talking about elasticity. Actually it's a measure from physics having to do with rubber bands, they tell me.","gray")`
+
+
+```{block2,  type='note'}
+
+Strictly speaking we are talking about the limit of these responses, i.e., derivatives. \
+
+The elasticity is basically the derivative of $ln(y)$ with respect to $ln(x)$; useful to know if you want to run a regression computing an elasticity, or if you want to interpret such a regression.
+
+Actually, this, and its subtleties and interpretations  is one of the *most* important things to comprehend for empirical work!!
+
+```
+
+<br> \bigskip
+
+- If a 5\% fall in the price of oranges typically results in a 10\% increase in quantity bought,
+- we say that each percent fall in the price of oranges leads to an increase in sales of about 2 percent.
+- I.e., the ‘‘elasticity’’ of orange sales with respect to price is about 2,
+
+*Note that elasticities may not be constant*; they may depend on the starting point;  e.g., linear demand implies a different price elasticity at each point.
+
+\
+
+### Elasticities more precisely {-}
+
+- calculate in terms of derivatives
+
+- estimated using log transformations
+
+
+\
+
+### Price elasticity of demand
+
+**Price elasticity of demand:**
+
+$$e_{Q_d,p} = \frac{percent \ change \ in \ Q_d}{percent \ change \ in \ p} $$
+$$  = \frac{\Delta Q_d}{Q_d}/\frac{\Delta p}{p}$$
+
+This should always be negative (except for Giffen goods).
+
+It is a *unitless measure* related to the slope of the demand curve.
+
+It is *very* important for price-setting firms (more on this later).
+
+
+\
+
+**From the NS text (footnote):**
+
+If demand happens to take the 'constant elasticity' form
+$Q = ap^b$ where $b<0$, the price elasticity of demand is b.
+
+- This elasticity is the same everywhere along such a demand curve.
+
+
+- Taking logarithms of this yields $ln(q) = ln(a) + b ln(p)$
+
+- note that elasticities are often estimated by regressing logs on logs
+
+
+
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","elasticities_are_logs_post.png"))
+```
+
+\
+
+
+```{block2,  type='digression'}
+
+> Indeed, one important implication of Jensen’s inequality is that the standard practice of interpreting the parameters of log-linearized models estimated by ordinary least squares (OLS) as elasticities can be highly misleading in the presence of heteroskedasticity.
+
+- Santos-Silva and Tenreyro, 2006, 'the Log of Gravity'.
+```
+
+
+
+### Examples from the headlines {-}
+
+[India’s Hike Messenger takes aim at WhatsApp](https://www.ft.com/content/2665c794-76a0-11e6-b60a-de4532d5ea35)
+
+> “Reliance ended up showing that there is elasticity in the market. If you drop prices, people will come on board,” he said.
+
+\
+
+['Next' to add more space despite retail sales ‘moving backwards’](https://www.ft.com/content/932927d8-266c-3559-b87a-8d3efb07d5e1)
+
+
+> The retailer does not expect any impact from the drop in sterling since the Brexit vote to kick in until at least the Spring of 2017, as it had hedged some of its foreign-currency exposures in advance. Still, it expects expenses to rise by up to 5 per cent next year.
+
+> 'The last time we had to increase prices (which was in 2010 when cotton prices soared) we estimated that price elasticity was around 1.1. If that remains the case today, a retail selling price increase of 5% would result in a fall in unit sales of -5.5% and a fall in like for like sales value of between -0.5% to -1.0%. In the scheme of things, we think that this drag on sales is manageable and less damaging than taking a significant hit to margin.'
+
+
+
+\
+
+### Properties of price elasticity of demand
+
+- Goods with many close substitutes at a similar price will be highly elastic
+-  with few substitutes ...  inelastic
+- Typically: more elastic in the *long run* than the short run. `r format_with_col("Q : why?","blue")`^[Ans: Over time, consumers can adjust to price changes by changing their consumption patterns. E.g., if petrol gets more expensive I can switch to a hybrid or electric car, or a bicycle.]
+
+
+<br> <br> \bigskip
+
+
+<!---
+Todo: give more explanation here
+-->
+
+We refer to price elasticities with the following terminology:
+
+$e_{Q,p}$ | $abs(e_{Q,p})$ | Term         |
+|-----------|-------------|--------------|
+| $< -1$    | $>1$        | Elastic      |
+| $= -1$    | $=1$        | Unit Elastic |
+| $> -1$    | $<1$        | Inelastic    |
+
+`r format_with_col("Note that sometimes elasticities are expressed in absolute value terms (a positive number). It should be clear from the context.","gray")`
+
+
+\
+
+Consider an individual's  expenditure on a product.
+
+The total expenditure (the firm's revenue from this): price $\times$ quantity
+
+
+By taking the *total differential* of this  and recalling the 'multiplication rule' of derivatives...
+
+$$E = p(q)q  = pq(p)$$
+$$dE = pq'(p)dp+q(p)dp$$
+$$dE/E = \frac{pq'(p)dp}{pq} +\frac{q(p)dp}{pq}$$
+$$dE/E = \frac{q'(p)dp}{q} +\frac{dp}{p}$$
+
+\
+
+We have that for *small changes* in price, the percent *change* in total expenditure is:
+
+**percent change in price + percent change in quantity**
+
+\
+
+As $e_{Q,P}$ tells you the percent change in quantity for each (small) percentage change in price, we can use this to determine the change in expenditure for a small change in price.
+
+\
+
+*Considering very small increases in a good's price:*
+
+
+-   If the (individual's) demand is *price-elastic*,  quantity will decrease by a *larger* percentage than price increased.  Thus her expenditure (on this good) will *decline*.
+
+-   If the (individual's) demand is *price-inelastic*,  quantity will decrease by a *smaller* percentage than price increased.  Thus her expenditure (on this good) will *increase *.
+
+-   If the (individual's) demand is *unit-elastic* (with respect to price),  quantity will decrease by a *the same* percentage as price increased.  Thus her expenditure (on this good) will *be unchanged*.
+
+<br> 
+
+
+
+#### Example and algebra... {-}
+
+If price rises by 20\% and quantity demanded falls by 20\% what happens to revenue?
+
+\
+
+Suppose p=10 and q=10 so TR=100. Then when p=12 and q=8 TR=96. Huh? Price increased by 20\% and quantity decreased by 20\% so shouldn't TR be unchanged?  No! This only works for small changes.
+
+\
+
+
+TR is unchanged when p*q stays the same. With a change in each $\delta p$ and $\delta q$, the new revenue is
+
+$(p+\delta p)(q+\delta q) = pq+\delta p q + \delta q p + \delta p \delta q$.
+
+\
+
+This is the same as before if $pq=pq+\delta p q + \delta q p + \delta p \delta q$, i.e., if
+
+$\delta p q + \delta q p + \delta p \delta q=0$, i.e., if
+
+$\delta p q + \delta p \delta q =-\delta q p$, i.e., if
+
+$\delta p q/p + \delta p \delta q/p =-\delta q$, i.e., if
+
+$\delta p/ \delta q (q/p) + \delta p /p =-1$, i.e., if
+
+$-e_p +  \delta p /p = -1$
+
+In the limit, as  $\delta p$ goes to zero, this gives us that 'unit elasticity means a small change in quantity leads to no change in revenue.'
+
+
+\
+
+**Important question/result**
+
+`r format_with_col("Q: Suppose a firm is setting its price and selling to only one individual , and facing no  competitors. It should basically never want to set its price at a point where demand is inelastic. Why not?","blue")`^[Ans: If it were at such a point, it could raise its price and its revenue would increase and costs would decline \
+ (because it would be selling fewer products but for greater total revenue.) \
+ A caveat is that it might do this for a long term strategic advantage; e.g., to gain customer loyalty and market share, intending to take its profits later.  We come back to a related point later in the context of monopoly pricing.]
+
+
+
+\
+
+![Elastrev](picsfigs/elast_revenue.png) \
+
+
+
+## Income elasticity of demand; Normal, luxury, and inferior goods {#income-elast}
+
+Income elasticity of demand
+:      \% change in quantity demanded of a good in response to 1\% change in income (approximately).
+
+
+
+$$e_{Q_d,I} = \frac{percent \ change \ in \ Q_d}{percent \ change \ in \ I} $$
+$$  = \frac{\Delta Q_d}{Q_d}/\frac{\Delta I}{I}$$
+\
+
+
+<br> \bigskip
+
+**Normal goods:** $e_{Q,I} > 0$
+
+\
+
+
+**Inferior goods:** $e_{Q,I} < 0$
+
+\
+
+
+
+**Luxury goods:** $e_{Q,I} > 1$
+
+
+\
+
+
+E.g., cocaine is a luxury good, if, when I win £1000 in the lottery, I will increase my consumption of cocaine by *more* than £1000 ...
+ (assuming, as in classical models, that I treat all sources of income the same
+
+`r format_with_col("Q: Is a luxury good a normal good?","blue")`^[Ans: Yes (do you know why?)]
+
+
+<br> <br> \bigskip
+
+
+
+\textcolor{blue}{Q:  (micro quiz): Why is it that not every good can have an income elasticity of demand greater than 1?
+ Can every good have an income elasticity of demand less than 1?}
+
+
+
+### Some real-world discussion of this {-}
+
+<!---
+Todo: give more explanation here
+-->
+
+[Prof. Muellbauer letter to FT](https://www.ft.com/content/4ea79d96-a4d6-11e5-a91e-162b86790c58)
+
+> Sir, Professor Gordon Gemmill (Letters, December 14), surprisingly for a trained economist, assumes an income elasticity of demand of zero for housing: that is, that people do not demand more and better housing as they become richer. Nowhere in the world is this the case! My own empirical work demonstrates that around two-thirds of the rise in UK house prices, corrected for general inflation, since 1980 is because supply is not keeping up with income and population growth. Other drivers do exist ... The price effects of extra supply take time to build up. I agree on that. But just imagine what would happen if we did nothing more than we are now doing: population and income growth would drive prices even higher even though we already hold the record for rises in house prices since 1970 among the group of seven leading high-income countries. We need to build far more housing, in the right locations. And we need to start now.
+> -  Prof John Muellbauer Nuffield College, Oxford, UK
+
+
+
+- Cross-price elasticity of demand (read about this in one of the suggested texts please)
+
+
+
+`r format_with_col("Look up: what are some *real-world* price and income elasticity estimates? How were these derived?","blue")`
+
+\
+
+
+\
+### More formal statements of properties of Marshallian demand
+
+<div class="marginnote">
+Source: Preston, 2006; https://www.ucl.ac.uk/~uctp100/g021/g021lect.pdf; notation changed.
+</div>
+ 
+
+Note: *bold* means 'vectors'.
+
+\
+
+
+Budget set
+
+$$B=\{\mathbf{q} \in R^n_{+}|\mathbf{p'q} \leq I \}$$
+
+Slopes $dq_i/dq_j|_B = -p_j/p_i$.
+in
+Consumer chooses $\mathbf{x}(\mathbf{p},I)\in B$; Marshallian demands.
+
+\
+The graph of $x_i(\mathbf{p},I)$ in $y$ is the 'Engel curve'.
+
+\
+
+*Total budget (income) elasticity:*
+
+$$\eta_i \equiv \frac{\partial x_i}{\partial I} / \frac{x_i}{I}  = \frac{\partial ln(q_i)}{\partial ln(I)} $$
+
+'By what percentage does consumption of i change as income changes by a small percent?'
+
+- $\eta_i > 0$ $\rightarrow$ 'normal good', otherwise 'inferior'
+
+\
+
+Applying this to 'budget shares': $s_i \equiv p_i x_i/I$... noting these must add up to one: $\sum_{i=1..n}s_i=1$
+
+- $\eta_i > 1$ $\rightarrow$ 'luxury' (budget share rises in income), otherwise 'neccessity'
+\
+
+`r format_with_col("Can you write the own price elasticity  in this notation?","blue")`^[$\epsilon_i \equiv \frac{\partial x_i}{\partial p_j} / \frac{x_i}{p_j} $]
+
+\
+
+
+### Adding-up ('aggregation') etc {-}
+
+If an individual 'always spends all her income' then this equality must hold everywhere.  This implies a set of relationships:
+
+- between how things *change* in response to income and price...
+  -as one spends more on one good she must spend less on another
+
+- between *shares* of expenditure and how these change.
+
+
+Rewriting the budget constraint with the Marshallian demands vector $\mathbf{x}$, and imposing budget-balance (which can be proved must hold for an optimising consumer given local nonsatiation):
+
+$$\mathbf{p'x}(\mathbf{p},I) = I$$
+
+\
+
+Differentiating this wrt $I$ yields **Engel aggregation**:
+
+$$\sum_i p_i \frac{\partial x_i}{\partial I} =\sum_i \frac{p_i x_i}{I} \frac{\frac{\partial x_i}{\partial I}}{\frac{x_i}{I}} =\sum_i s_i\eta_i = 1$$
+
+$\rightarrow$ Sum (over all goods) of 'budget share' $\times$ 'income elasticity' must add up to one.
+
+\
+
+Thus not all goods can be inferior ($\epsilon_i < 0$); these must be balanced by normal goods (including some luxuries, to get the average above one.)
+
+\
+
+Also not all goods can be luxuries ($\epsilon_i > 1$) and not all goods can be necessities ($\epsilon_i < 1$). These must balance each other out, in an expenditure-weighted sense.
+\
+
+Differentiating the 'demand budget constraint wrt some price $p_i$ yields *Cournot aggregation*:
+
+(rem: product rule here, carried through sums )
+
+$$x_j + \sum_i p_i \frac{\partial x_i}{\partial p_j} = 0 \rightarrow$$
+The marginal change in expenditure as $j$'s price changes sums the amount of $j$ originally purchased and the sum of the prices of other goods times their responses to the price change in j.
+
+Next we multiply this by the price of j and divide by income $I$ to get (bunch of steps here:)
+
+$$ -s_j = \sum s_i \epsilon_{ij} $$
+
+The budget share on j plus the sum of the budget shares of other goods multiplied by the cross-price elasticities must add up to 0. ... as the price of j increases the price-weighted consumption shares must decrease.  So, e.g., all goods cannot be Giffen.
+
+\
+
+## Enrichment, further material to consider
+
+To consider constrained optimization (with many goods) using the Lagrangian method  see [THIS supplement](#lagrange) (based on David Autor's notes)
+
+### Some doctoral-prep concepts {-#docprep}
+
+*Some examples of things you may need to learn and use for a PhD micro module, (although only a small subset of economists actually use this in their research!). You will not be directly examined on this in the present module. Some of these are covered or touched on in O-R*
+
+```{block2,  type='fold'}
+
+Another taste, nice [UCLA notes here](http://www.econ.ucla.edu/iobara/LecturePreferenceandUtility201A.pdf)
+
+\
+
+As noted, standard utility functions are defined up to 'monotonic transformations'. We can derive proofs of the invariance of the implied preferences to these.
+
+\
+
+A formal definition and proof of the idea that a utility function 'represents' preferences.
+
+- Exercises like 'show that lexicographic preferences cannot be represented by a continuous utility function'
+
+\
+
+What conditions on a (multivariate) utility function ensure it exhibits the equivalent of a *diminishing marginal rates of substitution*?
+    - Something called 'quasi-concavity', equivalent to 'having convex upper contour sets'
+
+
+
+Representation of the MRS between all goods as a matrix, depicting the properties of this
+
+- Strict quasi-concavity takes the place of DMRS in ensuring 'simple optimisation conditions'
+
+
+
+
+**Several topics that we have skipped** 
+
+- Formal definitions of Hicksian (compensated) demand functions
+
+- Substitution and income effects, and the Slutsky decomposition
+
+
+
+<div class="marginnote">
+Some of these concepts are important for characterizing the welfare effects of price changes and policy changes (including taxation), and for conceptualizing issues involving multiple constraints on consumer optimization (e.g., rationing). I will provide notes on these for anyone who is interested.
+</div>
+ 
+- Aggregation of individual demand functions into 'market demand', and the properties of this
+
+```
+
+
+
+# Exercises: Consumer preferences and behavior/demand ('problem set') {-#ex-cons-pref}
+
+
+Tbd (unfold for possibilities)
+
+```{block2,  type='fold'}
+
+
+- Business case study/investigation: modeling 'which (sorts of) new product will consumers prefer?'
+
+- Finding departures from the WARP in real data
+\
+
+O-R chapter 4
+
+- Q1a: utility function 'distance from origin'; depict, determine monotonicity, continuity, convexity
+
+- Q2 
+
+- Q4a: Quasilinear preferences; depict indifference curves
+
+\
+
+
+O-R chapter 5
+
+- problem 5 (introduces the 'expenditure function')
+
+-  problems 8-9 (re-)introduce 'time preferences'
+
+```
 
 
 <!--chapter:end:consumers_pref_demand.Rmd-->
@@ -5911,6 +7399,20 @@ However, when it comes to applying these things to the real world, or testing th
 ## Supplement: market imperfections can suggest business opportunities {#mkt-fail-bus}
 
 **A major theme in Economics is: Markets work well but not perfectly. Imperfections in existing markets $\rightarrow$ opportunities.** \
+
+
+Audio/slide presentations (unfold) 
+
+```{block2,  type='fold'}
+[HERE](https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=9b44de1e-2569-4076-9d7b-aacc0064717d&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=al), starting at 44:20, ending about 51:30. 
+                                
+<iframe src="https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=9b44de1e-2569-4076-9d7b-aacc0064717d&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>                              
+  
+Or starting at 31:00 [HERE](https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=e0866970-34e1-4aa5-8385-8c1ef8d75b1c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all):
+  
+<iframe src="https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=e0866970-34e1-4aa5-8385-8c1ef8d75b1c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+                                
+```  
 
 Although we are not focusing on 'market failure' in this module (BEEM101, 2020)...
 
@@ -6113,6 +7615,13 @@ The economics of trade may also apply to the natural world in certain ways.
 
 ## Supplement: Empirical research {#empir-research}
 
+```{block2,  type='note'}
+
+See an earlier lecture video below, starting at about 1:37:30.
+
+<iframe src="https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=e0866970-34e1-4aa5-8385-8c1ef8d75b1c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+```  
+
 
 Empirical research
 
@@ -6243,6 +7752,168 @@ $$P=Q+Z$$
 
 
 `r format_with_col("We now consider the very very fundamental building blocks behind the (in)famous 'neoclassical economics model.' Accept these 'axioms and nearly everything flows from it!","gray")`
+
+
+## Supplement: Gains to voluntary trade {#gain-to-trade}
+
+
+Indifference curves and 'convex combinations' give us insight into why people trade with one another. It may seem obvious but historically and even in the present, some people see trade as a zero-sum game, with a winner and a loser.  But if this were the case, why would both parties sometimes consent to making such a trade?
+
+Considering [figure to be added]
+ , an individual is ok with giving up soda for hamburgers or vice/versa *along* her indifference curve. A trade that put her *above* the IC makes her 'strictly' better off.
+
+*So consider if one individual had allocation D and another allocation A, and they had the same preferences.* 
+
+```{block2,  type='inputqn'}
+What trade could they make to make each of them better off?
+```
+
+
+\
+
+ Note that a straight line between these two points describes the combinations of
+'shares of bundles A and D adding up to 1' (e.g., 1/3 of D and 2/3 of A) or 'trading a fraction of bundle D for the same fraction of bundle A, and vice versa.'
+
+E.g., a 50-50 split of each bundle yields, in this case, (6+2)/2 = 4 hamburgers and (2+6)/2=4 soft drinks.
+
+```{block2,  type='note'}
+
+Note that the line between two bundles depicts all 'convex combinations' of these $\alpha$ of D and $1-\alpha$ of A, where $\alpha \in (0,1)$.
+
+In normal-speak, a partial share of each bundle.
+
+We can see that with the same DMRS for both, trades along this line make both better off; the *points* they would trade to depends on their bargaining power. They might also trade in a way that puts one below this line but still above the original indifference curve.
+
+```
+
+<div class="marginnote">
+For an alternative depiction using indifference curves, where preference differ but allocations are the same, see the online text [HERE](https://2012books.lardbucket.org/books/microeconomics-principles-v1.0/s10-03-indifference-curve-analysis-an.html#:~:text=An%20indifference%20curve%20shows%20combinations,tangent%20to%20the%20budget%20line) under 'Case in Point: Preferences Prevail in P.O.W. Camps'
+
+\
+
+However, trade between two individuals is better illustrated using an "Edgeworth box", see, e.g., the explanation [HERE on economicsdiscussion.net](https://www.economicsdiscussion.net/essays/economics/exchange-between-two-individuals-gain-from-trade/1207).
+</div>
+ 
+
+
+## Supplement: Quasiconcavity (of utility function/preferences) {#quasi-conc}
+
+This is the 'preferred assumption' which resembles convexity, but has several advantages as a concept. For example, it doesn't require differentiable preferences, and its properties are not affected by monotonic transformations of utility functions. This is the concept that you might be taught in a PhD module. I think it may also have some value in understanding optimization problems in general, which is an important part of research and industry and finance, I believe. 
+ 
+
+More formal concept: (strictly) convex preferences $\Leftrightarrow$  (strictly) **'quasiconcave' utility function**, allowing 'n goods':
+
+This essentially means that for a 'convex combination' of any two bundles $\mathbf{A}=(X_A,Y_A)$ and $\mathbf{D}=(X_D,Y_D)$
+
+$$U(\alpha\mathbf{A}+(1-\alpha)\mathbf{D})\geq\alpha U(\mathbf{A}) + (1-\alpha)U(\mathbf{D})$$
+
+where $0<\alpha<1$.
+
+<div class="marginnote">
+ Note the switch to a 'weak inequality' here for quasiconcavity, strict for 'strict quasiconcavity'*)
+</div>
+
+\
+
+E.g. (with two goods),
+
+
+$$U(\alpha X_A + (1-\alpha)X_D,\alpha Y_A + (1-\alpha)Y_D) \geq $$
+
+$$\alpha(U((X_A,Y_A)) + (1-\alpha)(U(X_D,Y_D)$$
+
+where $0<\alpha<1$.
+
+\
+
+We also describe it as having 'a convex upper contour set': the set of all bundles strictly preferred to a particular bundle is a 'convex set', implying it contains all convex combinations of elements of this set.
+
+\
+
+One reason economists like this 'quasiconcavity' is because it rules out the 'false summits',
+the local, but not global optima, so we only need to use the first-order conditions to find the optima. 
+
+<div class="marginnote">
+
+But is this '[looking under the streetlight](https://en.wikipedia.org/wiki/Streetlight_effect) to find our keys' or is it truly without loss of generality?
+
+</div>
+ 
+
+\
+
+Without quasiconcavity there may also be no demand *function* only a *demand correspondence*: at a given price and income there may be more than one optimising choice!
+
+```{block2,  type='inputq'}
+Can you illustrate this with 'double-humped' indifference curves?
+```  
+
+\
+
+
+Gravelle and Reese appendix, on constrained optimisation (unfold)
+
+```{block2,  type='fold'}
+
+> A local maximum is always a global maximum if (a) the objective function is quasiconcave, and (b) the feasible set is convex.
+
+It will also tend to rule out 'sharp jumps' in response to price changes, so we can look smoothly at 'comparitive statics.'
+
+Note that 'quasiconcavity' does not require differentiability.
+
+Furthermore, unlike properties like 'diminishing marginal rates of substitution' this is preserved under a 'monotonic transformation' (stretching). This means it is called an 'ordinal property'.  Essentially, quasiconcave utility functions yields indifference curves that are 'convex to the origin'.
+
+All relevant properties of utility functions are unchanged by such monotonic transformations, including the MRS. This is well-illustrated in Autor's reading (Lecture 3, pp 11-14)
+
+```
+
+## Supplement: Constrained optimization (with many goods), Lagrangian method {#lagrange}
+
+The constrained problem is equivalent to optimising a single unconstrained 'Lagrangian' function.
+
+\
+
+See Autor notes ([Lecture 4: Theory of Choice and Individual Demand](https://dspace.mit.edu/bitstream/handle/1721.1/109484/14-03-fall-2010/contents/lecture-notes/MIT14_03F10_lec04.pdf))
+
+- This yields the above optimisation (first-order) conditions
+
+- but only where solutions are positive; there are additional non-negativity constraints,
+    - $\rightarrow$ should use Kuhn-Tucker 'complementary slackness' conditions;
+    - however, if an unconstrained problem yields a solution that doesn't violate the contraint, we can ignore it.
+
+```{r  fig.cap = 'From Autor notes', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
+ knitr::include_graphics(file.path("picsfigs","consumerlagrangian.png"))
+```
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","solutioninngoods.png"))
+```
+
+We could have derived this without the Lagrangian, simply substituting in the constraint for one good:
+
+$$x=\frac{I-yp_y- ....}{p_x}$$ ... subtracting the expense on all other goods.
+
+And then solving this unconstrained problem. Taking the derivative of the solved optimum this with respect to the income term $I$ will give us a similar expression as $\lambda$, expressing the 'shadow value'... the increase in utility for an increase in income.
+
+\
+
+The conditions for an optimum can also be written in vector notation as:
+
+
+$$\nabla U(\mathbf{x^\ast})= \lambda\mathbf{p}$$
+
+
+The 'gradient vector' of the partial derivatives of utility wrt each element of $x$, evaluated at the optimum will be proportional to the vector of prices.
+
+When two vectors $\mathbf{A}$ and $\mathbf{B}$ are in the same direction, i.e., $\mathbf{A}=c\mathbf{B}$, no matter their length, the *planes* perpendicular to this vector are the same plane. (And all vectors *along* those planes are perpendicular to vectors $\mathbf{A}$ and $\mathbf{B}$).
+
+
+\
+
+This implies that at optimum 'the rate of increase in utility is greatest in the direction of the vector tangent to the budget line (plane)'...
+
+Which tells us that the plane tangent to the '(multi-dimensional) indifference surface' at this point is the budget plane.
 
 
 ### References {-}

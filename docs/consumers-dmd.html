@@ -24,15 +24,15 @@
 <meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
 
 
-<meta name="date" content="2020-09-15" />
+<meta name="date" content="2020-09-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="prefs-uncert.html"/>
-<link rel="next" href="monop-firm-opt.html"/>
+<link rel="prev" href="ex-uncertainty.html"/>
+<link rel="next" href="ex-cons-pref.html"/>
 <script src="book_assets/header-attrs-2.3/header-attrs.js"></script>
 <script src="book_assets/jquery-2.2.3/jquery.min.js"></script>
 <link href="book_assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -335,25 +335,24 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.5" data-path="uncertainty.html"><a href="uncertainty.html#properties-of-preferences-o-r-3.2.1"><i class="fa fa-check"></i><b>3.5</b> Properties of preferences (O-R 3.2.1)</a></li>
 <li class="chapter" data-level="3.6" data-path="uncertainty.html"><a href="uncertainty.html#expected-utility"><i class="fa fa-check"></i><b>3.6</b> Expected utility</a>
 <ul>
-<li class="chapter" data-level="" data-path="uncertainty.html"><a href="uncertainty.html#risk-preferences-and-eu"><i class="fa fa-check"></i>Risk preferences and EU</a></li>
+<li class="chapter" data-level="" data-path="uncertainty.html"><a href="uncertainty.html#eu-risk"><i class="fa fa-check"></i>Risk preferences and EU</a></li>
 <li class="chapter" data-level="" data-path="uncertainty.html"><a href="uncertainty.html#further-intuition-and-discussion"><i class="fa fa-check"></i>Further intuition and discussion</a></li>
 <li><a href="uncertainty.html#intuition-for-risk-aversion-iff-concave-value-function-vcdot">Intuition for ’risk aversion iff concave value function <span class="math inline">\(v(\cdot)\)</span></a></li>
-<li><a href="uncertainty.html#graphical-illustration-of-risk-aversion-iff-concave-value-function-vcdot">Graphical illustration of ’risk aversion iff concave value function <span class="math inline">\(v(\cdot)\)</span></a></li>
+<li><a href="uncertainty.html#graphical-illustration-of-risk-aversion-the-value-function-vcdot-is-concave">Graphical illustration of “risk aversion $the value function <span class="math inline">\(v(\cdot)\)</span> is concave”</a></li>
 </ul></li>
-<li class="chapter" data-level="3.7" data-path="uncertainty.html"><a href="uncertainty.html#allais-paradox-considering-other-non-eu-frameworks-allais"><i class="fa fa-check"></i><b>3.7</b> Allais paradox; considering other (non-EU) frameworks (#allais)</a>
+<li class="chapter" data-level="3.7" data-path="uncertainty.html"><a href="uncertainty.html#allais"><i class="fa fa-check"></i><b>3.7</b> Allais paradox; considering other (non-EU) frameworks</a>
 <ul>
 <li class="chapter" data-level="" data-path="uncertainty.html"><a href="uncertainty.html#simple-depiction-of-allais-paradox"><i class="fa fa-check"></i>Simple depiction of Allais paradox</a></li>
 </ul></li>
-<li class="chapter" data-level="3.8" data-path="uncertainty.html"><a href="uncertainty.html#explaining-the-above-paradoxes-with-prospect-theory"><i class="fa fa-check"></i><b>3.8</b> Explaining the above paradoxes with prospect theory</a></li>
-<li class="chapter" data-level="3.9" data-path="uncertainty.html"><a href="uncertainty.html#experimental-measures-of-risk-attitudes"><i class="fa fa-check"></i><b>3.9</b> Experimental measures of risk attitudes</a></li>
-<li class="chapter" data-level="3.10" data-path="uncertainty.html"><a href="uncertainty.html#applications-esp.-to-finance"><i class="fa fa-check"></i><b>3.10</b> Applications (esp. to finance):</a>
+<li class="chapter" data-level="3.8" data-path="uncertainty.html"><a href="uncertainty.html#experimental-measures-of-risk-attitudes"><i class="fa fa-check"></i><b>3.8</b> Experimental measures of risk attitudes</a></li>
+<li class="chapter" data-level="3.9" data-path="uncertainty.html"><a href="uncertainty.html#applications-esp.-to-finance"><i class="fa fa-check"></i><b>3.9</b> Applications (esp. to finance):</a>
 <ul>
 <li class="chapter" data-level="" data-path="uncertainty.html"><a href="uncertainty.html#insurance"><i class="fa fa-check"></i>Insurance</a></li>
 <li class="chapter" data-level="" data-path="uncertainty.html"><a href="uncertainty.html#benefits-of-diversification"><i class="fa fa-check"></i>Benefits of diversification</a></li>
 <li class="chapter" data-level="" data-path="uncertainty.html"><a href="uncertainty.html#illustration-binomial-distribution"><i class="fa fa-check"></i>Illustration: Binomial distribution</a></li>
 <li class="chapter" data-level="" data-path="uncertainty.html"><a href="uncertainty.html#asset-pricing-and-the-capm-basic-characterization"><i class="fa fa-check"></i>Asset pricing and the CAPM (basic characterization)</a></li>
 </ul></li>
-<li class="chapter" data-level="3.11" data-path="uncertainty.html"><a href="uncertainty.html#options-contracts"><i class="fa fa-check"></i><b>3.11</b> Options contracts</a>
+<li class="chapter" data-level="3.10" data-path="uncertainty.html"><a href="uncertainty.html#options-contracts"><i class="fa fa-check"></i><b>3.10</b> Options contracts</a>
 <ul>
 <li class="chapter" data-level="" data-path="uncertainty.html"><a href="uncertainty.html#price-of-options-determined-by"><i class="fa fa-check"></i>Price of options determined by</a></li>
 </ul></li>
@@ -362,28 +361,61 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="uncertainty.html"><a href="uncertainty.html#local-measures-of-risk-aversion"><i class="fa fa-check"></i>Local measures of risk-aversion</a></li>
 <li class="chapter" data-level="" data-path="uncertainty.html"><a href="uncertainty.html#prudence"><i class="fa fa-check"></i>‘Prudence’</a></li>
 </ul></li>
+<li class="chapter" data-level="3.11" data-path="uncertainty.html"><a href="uncertainty.html#time-pref"><i class="fa fa-check"></i><b>3.11</b> Time preferences and discounting</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="prefs-uncert.html"><a href="prefs-uncert.html"><i class="fa fa-check"></i>Exercises - uncertainty, finance, time preferences (‘problem set’)</a></li>
+<li class="chapter" data-level="" data-path="ex-uncertainty.html"><a href="ex-uncertainty.html"><i class="fa fa-check"></i>Exercises - uncertainty, finance, time preferences (‘problem set’)</a></li>
 <li class="chapter" data-level="4" data-path="consumers-dmd.html"><a href="consumers-dmd.html"><i class="fa fa-check"></i><b>4</b> Consumer preferences, constraints and choice, demand functions</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="consumers-dmd.html"><a href="consumers-dmd.html#consumer_pref"><i class="fa fa-check"></i><b>4.1</b> Consumer preferences, indifference curves/sets (0.5 weeks)</a>
 <ul>
 <li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#bundles-of-goods-o-r-4.1"><i class="fa fa-check"></i>“Bundles of goods” (O-R 4.1)</a></li>
-<li class="chapter" data-level="4.1.1" data-path="consumers-dmd.html"><a href="consumers-dmd.html#preferences-over-bundles-indifference-sets-indifference-curves-o-r-4.2-and-supplements"><i class="fa fa-check"></i><b>4.1.1</b> Preferences over bundles, indifference sets (indifference curves) (O-R 4.2 and supplements</a></li>
+<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#preferences-over-bundles-indifference-sets-indifference-curves-o-r-4.2-and-supplements"><i class="fa fa-check"></i>Preferences over bundles, indifference sets (indifference curves) (O-R 4.2 and supplements</a></li>
 <li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#examples-of-preferences-over-2-goods"><i class="fa fa-check"></i>Examples of preferences (over 2 goods)</a></li>
 <li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#properties-monotonicity"><i class="fa fa-check"></i>Properties: Monotonicity</a></li>
 <li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#properties-continuity-we-may-skip-this-for-time-concerns"><i class="fa fa-check"></i>Properties: Continuity (we may skip this for time-concerns)</a></li>
 <li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#properties-convexity-skipping-the-proofs"><i class="fa fa-check"></i>Properties: Convexity (skipping the proofs)</a></li>
+<li class="chapter" data-level="4.1.1" data-path="consumers-dmd.html"><a href="consumers-dmd.html#differentiability-mainly-skip"><i class="fa fa-check"></i><b>4.1.1</b> (Differentiability: mainly skip)</a></li>
 <li class="chapter" data-level="4.1.2" data-path="consumers-dmd.html"><a href="consumers-dmd.html#applications-product-positioning-marketing"><i class="fa fa-check"></i><b>4.1.2</b> Applications: Product positioning, marketing</a></li>
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="consumers-dmd.html"><a href="consumers-dmd.html#demand"><i class="fa fa-check"></i><b>4.2</b> Consumer behavior/Individual (and market) demand functions and their properties (1 week)</a>
 <ul>
-<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#budget-setsconstraints"><i class="fa fa-check"></i>Budget sets/constraints</a></li>
-<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#individual-consumer-demand-functions"><i class="fa fa-check"></i>Individual (consumer) demand functions</a></li>
-<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#rational-consumer-and-her-optimisation-problem"><i class="fa fa-check"></i>Rational consumer and her optimisation problem</a></li>
-<li class="chapter" data-level="4.2.1" data-path="consumers-dmd.html"><a href="consumers-dmd.html#marginal-rates-of-substitution"><i class="fa fa-check"></i><b>4.2.1</b> Marginal rates of substitution</a></li>
+<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#choices-are-subject-to-constraints"><i class="fa fa-check"></i>Choices are subject to constraints</a></li>
+<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#individual-consumer-demand-functions-marshallian-demand---first-pass"><i class="fa fa-check"></i>Individual (consumer) demand functions (Marshallian demand) - first pass</a></li>
+<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#rational-consumer-and-hisher-optimisation-problem"><i class="fa fa-check"></i>Rational consumer and his/her optimisation problem</a></li>
+<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#marginal-rates-of-substitution"><i class="fa fa-check"></i>Marginal rates of substitution</a></li>
+<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#very-simple-example-for-intuition"><i class="fa fa-check"></i>Very simple example, for intuition</a></li>
+<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#mrsinsight"><i class="fa fa-check"></i>More insight into MRS</a></li>
+<li class="chapter" data-level="4.2.1" data-path="consumers-dmd.html"><a href="consumers-dmd.html#corners"><i class="fa fa-check"></i><b>4.2.1</b> Note on ‘corner solutions’</a></li>
+<li class="chapter" data-level="4.2.2" data-path="consumers-dmd.html"><a href="consumers-dmd.html#some-popular-forms-for-utility-functions-and-their-properties-computation"><i class="fa fa-check"></i><b>4.2.2</b> Some ‘popular’ forms for utility functions, and their properties; computation</a></li>
+<li class="chapter" data-level="4.2.3" data-path="consumers-dmd.html"><a href="consumers-dmd.html#rationalizing-a-demand-function-skip-o-r-section-5.5"><i class="fa fa-check"></i><b>4.2.3</b> Rationalizing a demand function (Skip O-R section 5.5) {#}</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="consumers-dmd.html"><a href="consumers-dmd.html#properties-of-demand-functions"><i class="fa fa-check"></i><b>4.3</b> Properties of demand functions</a>
+<ul>
+<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#homogeneity"><i class="fa fa-check"></i>Homogeneity</a></li>
+<li class="chapter" data-level="4.3.1" data-path="consumers-dmd.html"><a href="consumers-dmd.html#response-to-income-changes"><i class="fa fa-check"></i><b>4.3.1</b> Response to income changes</a></li>
+<li class="chapter" data-level="4.3.2" data-path="consumers-dmd.html"><a href="consumers-dmd.html#price_changes"><i class="fa fa-check"></i><b>4.3.2</b> Response to (own) price changes (limited coverage)</a></li>
+<li class="chapter" data-level="4.3.3" data-path="consumers-dmd.html"><a href="consumers-dmd.html#price_changes"><i class="fa fa-check"></i><b>4.3.3</b> Complements/substitutes; response to (other) price changes (limited coverage)</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="consumers-dmd.html"><a href="consumers-dmd.html#consumer-surplus-brief-and-incomplete-treatment"><i class="fa fa-check"></i><b>4.4</b> Consumer surplus (brief and incomplete treatment)</a></li>
+<li class="chapter" data-level="4.5" data-path="consumers-dmd.html"><a href="consumers-dmd.html#mktdemand"><i class="fa fa-check"></i><b>4.5</b> Market demand (function) (brief and incomplete treatment)</a></li>
+<li class="chapter" data-level="4.6" data-path="consumers-dmd.html"><a href="consumers-dmd.html#elasticities"><i class="fa fa-check"></i><b>4.6</b> Elasticities</a>
+<ul>
+<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#elasticities-more-precisely"><i class="fa fa-check"></i>Elasticities more precisely</a></li>
+<li class="chapter" data-level="4.6.1" data-path="consumers-dmd.html"><a href="consumers-dmd.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>4.6.1</b> Price elasticity of demand</a></li>
+<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#examples-from-the-headlines"><i class="fa fa-check"></i>Examples from the headlines</a></li>
+<li class="chapter" data-level="4.6.2" data-path="consumers-dmd.html"><a href="consumers-dmd.html#properties-of-price-elasticity-of-demand"><i class="fa fa-check"></i><b>4.6.2</b> Properties of price elasticity of demand</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="consumers-dmd.html"><a href="consumers-dmd.html#income-elast"><i class="fa fa-check"></i><b>4.7</b> Income elasticity of demand; Normal, luxury, and inferior goods</a>
+<ul>
+<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#some-real-world-discussion-of-this"><i class="fa fa-check"></i>Some real-world discussion of this</a></li>
+<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#adding-up-aggregation-etc"><i class="fa fa-check"></i>Adding-up (‘aggregation’) etc</a></li>
+</ul></li>
+<li class="chapter" data-level="4.8" data-path="consumers-dmd.html"><a href="consumers-dmd.html#enrichment-further-material-to-consider"><i class="fa fa-check"></i><b>4.8</b> Enrichment, further material to consider</a>
+<ul>
+<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#docprep"><i class="fa fa-check"></i>Some doctoral-prep concepts</a></li>
 </ul></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="ex-cons-pref.html"><a href="ex-cons-pref.html"><i class="fa fa-check"></i>Exercises: Consumer preferences and behavior/demand (‘problem set’)</a></li>
 <li class="chapter" data-level="5" data-path="monop-firm-opt.html"><a href="monop-firm-opt.html"><i class="fa fa-check"></i><b>5</b> (Monopoly) Firms’ optimization and pricing, price-discrimination</a>
 <ul>
 <li class="chapter" data-level="5.1" data-path="monop-firm-opt.html"><a href="monop-firm-opt.html#monop"><i class="fa fa-check"></i><b>5.1</b> Monopolies and pricing of profit-maximizing price-setting firms (especially monopolies)</a></li>
@@ -403,6 +435,11 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.4.2" data-path="supplements.html"><a href="supplements.html#ceteris-paribus"><i class="fa fa-check"></i><b>9.4.2</b> Ceteris paribus</a></li>
 <li class="chapter" data-level="9.4.3" data-path="supplements.html"><a href="supplements.html#exogenous-and-endogenous-variables"><i class="fa fa-check"></i><b>9.4.3</b> Exogenous and endogenous variables</a></li>
 <li class="chapter" data-level="9.4.4" data-path="supplements.html"><a href="supplements.html#more-advanced-material-on-causal-inference"><i class="fa fa-check"></i><b>9.4.4</b> More advanced material on causal inference</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="supplements.html"><a href="supplements.html#gain-to-trade"><i class="fa fa-check"></i><b>9.5</b> Supplement: Gains to voluntary trade</a></li>
+<li class="chapter" data-level="9.6" data-path="supplements.html"><a href="supplements.html#quasi-conc"><i class="fa fa-check"></i><b>9.6</b> Supplement: Quasiconcavity (of utility function/preferences)</a></li>
+<li class="chapter" data-level="9.7" data-path="supplements.html"><a href="supplements.html#lagrange"><i class="fa fa-check"></i><b>9.7</b> Supplement: Constrained optimization (with many goods), Lagrangian method</a>
+<ul>
 <li class="chapter" data-level="" data-path="supplements.html"><a href="supplements.html#references"><i class="fa fa-check"></i>References</a></li>
 </ul></li>
 </ul></li>
@@ -434,10 +471,9 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="bundles-of-goods-o-r-4.1" class="section level3 unnumbered" number="">
 <h3>“Bundles of goods” (O-R 4.1)</h3>
 </div>
-<div id="preferences-over-bundles-indifference-sets-indifference-curves-o-r-4.2-and-supplements" class="section level3" number="4.1.1">
-<h3><span class="header-section-number">4.1.1</span> Preferences over bundles, indifference sets (indifference curves) (O-R 4.2 and supplements</h3>
-<p>{-}</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-201"></span>
+<div id="preferences-over-bundles-indifference-sets-indifference-curves-o-r-4.2-and-supplements" class="section level3 unnumbered" number="">
+<h3>Preferences over bundles, indifference sets (indifference curves) (O-R 4.2 and supplements</h3>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-199"></span>
 <img src="picsfigs/moreisbetter.png" alt="From Nicholson and Snyder 2010" width="80%" />
 <p class="caption">
 Figure 4.1: From Nicholson and Snyder 2010
@@ -456,78 +492,101 @@ Figure 4.1: From Nicholson and Snyder 2010
 </dl>
 <p><br />
 </p>
-<p>Formally (for 2 goods), the set of pairs of <span class="math inline">\({X,Y}\)</span> such that <span class="math inline">\(U(X,Y)=c\)</span> for some constant c.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
-<p>Autor:
-&gt; Define a level of utility say <span class="math inline">\(U(x) = U\)</span>. Then, the indifference curve for U, <span class="math inline">\(IC(U)\)</span> is the locus of consumption bundles that generate utility level U for utility function <span class="math inline">\(U(x)\)</span>.</p>
+<p>Formally (for 2 goods), the set of pairs of <span class="math inline">\({x,y}\)</span> such that <span class="math inline">\(U(X,Y)=c\)</span> for some constant c. </p>
+<p>Autor:</p>
+<blockquote>
+<p>Define a level of utility say <span class="math inline">\(U(x) = U\)</span>. Then, the indifference curve for U, <span class="math inline">\(IC(U)\)</span> is the locus of consumption bundles that generate utility level U for utility function <span class="math inline">\(U(x)\)</span>.</p>
+</blockquote>
 <p><img src="picsfigs/indifcurves_util_together.jpg" width="55%" style="display: block; margin: auto;" /></p>
-<p>Consider the above diagram.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> Think of this as a map with a projection above it.</p>
+Consider the above diagram.
+<div class="marginnote">
+<p>[Credit: www2.econ.iastate.edu].</p>
+</div>
+<p>Think of this as a map with a projection above it.</p>
 <ul>
 <li><p>How far East you go on this map determines how much of the x good is consumed</p></li>
 <li><p>How far North you go determines how much of the Y good is consumed.</p></li>
-<li><p>How high is the projected image… Determines how much utility is obtained from this combination of goods X and Y.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p></li>
+<li><p>How ‘high’ is the projected image… determines how much utility is obtained from this combination of goods X and Y.</p></li>
 </ul>
+<div class="marginnote">
+<p>[Hmm… If we think of this as a traveler who loves ‘getting high’, and ‘consumes’ by riving East or North, and his utility is his altitude, maybe that helps.</p>
+</div>
 <p><img src="picsfigs/indif_utility_2_400.jpg" width="70%" style="display: block; margin: auto;" /></p>
-<p>The above diagram also includes color to depict the utility level, like a ‘heat map.’<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
+<p>The above diagram also includes color to depict the utility level, like a ‘heat map.’<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
 </div>
 <div id="examples-of-preferences-over-2-goods" class="section level3 unnumbered" number="">
 <h3>Examples of preferences (over 2 goods)</h3>
+<div id="perfect-sub-comp" class="section level4 unnumbered" number="">
+<h4>Simpler Definitions: Perfect substitutes and complements</h4>
+<dl>
+<dt>Perfect substitutes</dt>
+<dd><p>Goods A and B are Perfect Substitutes when an individual’s utility is linear in these goods</p>
+</dd>
+<dd><p>when she is always willing to trade off A for B at a fixed rate (not necessarily 1 for 1)</p>
+</dd>
+</dl>
+<p><br />
+</p>
+<dl>
+<dt>Perfect complements</dt>
+<dd><p>Goods A and B are Perfect Complements when an individual only gains utility from (more) A if she also consumes a defined (additional) amount of B, and vice-versa</p>
+</dd>
+</dl>
+<p><br> </p>
+<p>These goods are ‘enjoyed only in fixed proportions’. E.g., left and right shoes (1:1) bicycle frames and wheels (1:2) or, perhaps, baking powder and flour (1:40) for someone who only eats soda bread.</p>
+<div class="warning">
+<p>These are not the same as the ‘complements’ and ‘substitutes’ in demand functions which we may see you later, referring to the impact of changing prices.</p>
+</div>
+</div>
 </div>
 <div id="properties-monotonicity" class="section level3 unnumbered" number="">
 <h3>Properties: Monotonicity</h3>
+<p>Read O-R section 4.3.</p>
+<p>Know how to define, test, and compare at least two ‘monotonicity-type’ assumptions, e.g., Monotonicity vs Strong Monotonicity; see O-R p. 49</p>
 </div>
 <div id="properties-continuity-we-may-skip-this-for-time-concerns" class="section level3 unnumbered" number="">
 <h3>Properties: Continuity (we may skip this for time-concerns)</h3>
+<p>In O-R section 4.4:</p>
+<blockquote>
+<p>Continuity is a property of a consumer’s preference relation that captures the idea that if a bundle x is preferred to a bundle y then bundles close to x are preferred to bundles close to y.</p>
+</blockquote>
+<div class="marginnote">
+<p>You may skip the formal definition of continuity in O-R, and also skip the proof of it’s relationship to a continuous utility function.</p>
+<p>However, knowing the definition of continuity as a mathematical property may be relevant in your future studies and research..</p>
+</div>
 </div>
 <div id="properties-convexity-skipping-the-proofs" class="section level3 unnumbered" number="">
 <h3>Properties: Convexity (skipping the proofs)</h3>
-<div id="more-formal-concept-quasiconcavity-optional" class="section level4 unnumbered" number="">
-<h4>More formal concept: quasiconcavity (optional)</h4>
-<div class="marginnote">
-<p>This is the ‘preferred assumption’ which resembles Convexity, but has several advantages as a concept. For example, it doesn’t require differentiable preferences, and its properties are not affected by monotonic transformations of utility functions. This is the concept that you might be taught in a PhD module. I think it may also have some value in understanding optimization problems in general, which is an important part of research and industry and finance, I believe.</p>
+<p>Read O-R section 4.5, skipping the proofs, if you like.</p>
+<div class="figure" style="text-align: center"><span id="fig:block05"></span>
+<img src="picsfigs/mcdl_convex_pref_indif.png" alt="Convex preferences - from McDL" width="40%" />
+<p class="caption">
+Figure 4.2: Convex preferences - from McDL
+</p>
 </div>
-<p>More formal concept: (strictly) convex preferences <span class="math inline">\(\Leftrightarrow\)</span> (strictly) <strong>‘quasiconcave’ utility function</strong>, allowing ‘n goods’:</p>
-<p>This essentially means that for a ‘convex combination’ of any two bundles <span class="math inline">\(\mathbf{A}=(X_A,Y_A)\)</span> and <span class="math inline">\(\mathbf{D}=(X_D,Y_D)\)</span></p>
-<p><span class="math display">\[U(\alpha\mathbf{A}+(1-\alpha)\mathbf{D})\geq\alpha U(\mathbf{A}) + (1-\alpha)U(\mathbf{D})\]</span></p>
-<p>where <span class="math inline">\(0&lt;\alpha&lt;1\)</span>.</p>
-<div class="marginnote">
-<p>Note the switch to a ‘weak inequality’ here for quasiconcavity, strict for ‘strict quasiconcavity’*)</p>
-</div>
-<p><br />
-</p>
-<p>E.g. (with two goods),</p>
-<p><span class="math display">\[U(\alpha X_A + (1-\alpha)X_D,\alpha Y_A + (1-\alpha)Y_D) \geq \]</span></p>
-<p><span class="math display">\[\alpha(U((X_A,Y_A)) + (1-\alpha)(U(X_D,Y_D)\]</span></p>
-<p>where <span class="math inline">\(0&lt;\alpha&lt;1\)</span>.</p>
-<p><br />
-</p>
-<p>We also describe it as having ‘a convex upper contour set’: the set of all bundles strictly preferred to a particular bundle is a ‘convex set’, implying it contains all convex combinations of elements of this set.</p>
-<p><br />
-</p>
-<p>One reason economists like this ‘quasiconcavity’ is because it rules out the ‘false summits’,
-the local, but not global optima, so we only need to use the first-order conditions to find the optima.</p>
-<div class="marginnote">
-<p>But is this ‘<a href="https://en.wikipedia.org/wiki/Streetlight_effect">looking under the streetlight</a> to find our keys’ or is it truly without loss of generality?</p>
-</div>
-<p><br />
-</p>
-<p>Without quasiconcavity there may also be no demand <em>function</em> only a <em>demand correspondence</em>: at a given price and income there may be more than one optimising choice!</p>
+<p>Be sure you understand the difference between the definition of convexity and strict convexity here.</p>
 
-<div class="inputq">
-Can you illustrate this with ‘double-humped’ indifference curves?
-</div>
-<p><br />
-</p>
-<p>Gravelle and Reese appendix, on constrained optimisation (unfold)</p>
-
-<div class="fold">
+<div class="warning">
 <blockquote>
-<p>A local maximum is always a global maximum if (a) the objective function is quasiconcave, and (b) the feasible set is convex.</p>
+<p>A preference relation on <span class="math inline">\(R^2_+\)</span> that is represented by a concave [utility] function is convex</p>
 </blockquote>
-<p>It will also tend to rule out ‘sharp jumps’ in response to price changes, so we can look smoothly at ‘comparitive statics.’</p>
-<p>Note that ‘quasiconcavity’ does not require differentiability.</p>
-<p>Furthermore, unlike properties like ‘diminishing marginal rates of substitution’ this is preserved under a ‘monotonic transformation’ (stretching). This means it is called an ‘ordinal property’. Essentially, quasiconcave utility functions yields indifference curves that are ‘convex to the origin’.</p>
-<p>All relevant properties of utility functions are unchanged by such monotonic transformations, including the MRS. This is well-illustrated in Autor’s reading (Lecture 3, pp 11-14)</p>
+<p>It will also have convex indifference curves.</p>
+<p>Make sure you don’t get this confused.</p>
 </div>
+<blockquote>
+<p>The convexity of a strongly monotone preference relation is connected with the property known as decreasing marginal rate of substitution.</p>
+</blockquote>
+<div id="more-formal-concept-quasiconcavity-optional-linked-as-supplement" class="section level4 unnumbered" number="">
+<h4>More formal concept: <a href="supplements.html#quasi-conc">quasiconcavity (optional, linked as supplement)</a></h4>
+<p>This is the ‘preferred assumption’ which resembles convexity, but has several advantages as a concept. For example, it doesn’t require differentiable preferences, and its properties are not affected by monotonic transformations of utility functions. This is the concept that you might be taught in a PhD module. I think it may also have some value in understanding optimization problems in general, which is an important part of research and industry and finance, I believe. <a href="supplements.html#quasi-conc">Linked as supplement here</a>.</p>
+</div>
+</div>
+<div id="differentiability-mainly-skip" class="section level3" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> (Differentiability: mainly skip)</h3>
+
+<div class="note">
+<p>You can skip O-R’s discussion of differentiability.</p>
+<p>However, do have a look at O-R figure 4.5 to get a sense of what differentiability means for indifference curves (indifferencesets).</p>
 </div>
 </div>
 <div id="applications-product-positioning-marketing" class="section level3" number="4.1.2">
@@ -537,7 +596,7 @@ Can you illustrate this with ‘double-humped’ indifference curves?
 <p>Naive argument?: If market research suggests a broad group indifferent between two options A and C, maybe they strictly prefer G <span class="math inline">\(\rightarrow\)</span> a possible <em>niche</em> for a new profitable product ?</p>
 <p><br></p>
 
-<div class="inputqn">
+<div class="inputq">
 But what may be a critique, exception to this logic, e.g., for a particular food?
 </div>
 
@@ -561,35 +620,982 @@ This may also provide a structure to guide data-driven ‘searches for the next 
 </div>
 <div id="demand" class="section level2" number="4.2">
 <h2><span class="header-section-number">4.2</span> Consumer behavior/Individual (and market) demand functions and their properties (1 week)</h2>
-<p>(Chapter 5 in O-R)</p>
-<p>We may skip ’rationalizing a demand function</p>
+<p>Main reading:
+- O-R Chapter 5 (selections as outlined below)</p>
+<p>Feel free to skip (unfold):</p>
+
+<div class="fold">
+<p>You may skip the first part of O-R section 5.5 on ‘rationalizing a demand function.’</p>
+<p>However, make sure you <em>do read</em> the discussion of ‘the weak axiom of revealed preferences’ (WARP). This relates to some of the supplementary readings/exercises.</p>
+</div>
+<p><br />
+</p>
+<p><em>Alternative treatments: (Unfold)</em></p>
+
+<div class="fold">
+<ul>
+<li><p>DA: <a href="https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/MIT14_03F16_lec6.pdf">Lecture Note 6 – Demand Functions: Income Effects, Substitution Effects, and Labor Supply</a>, esp. sections 1-3</p></li>
+<li><p>McDL: 3.1 (elasticity), parts of Ch 12; Warning: this book’s treatment of consumer surplus seems to be incorrect (or at least vastly oversimplified) from my PoV</p></li>
+<li><p>QMC: Chapter 17 (elasticities – very clear treatment, Chapter 18 (supply and demand details)</p></li>
+</ul>
+</div>
+<p><br />
+</p>
+<p>Individual choices: supplementary recommended readings</p>
+<div class="marginnote">
+<p>As noted before:</p>
+<ul>
+<li><p>You don’t need to read all of these</p></li>
+<li><p>But you must read <em>some</em> of these… in terms of marking, you may need some themes to discuss in open answer questions on the midterm exam, for example.</p></li>
+</ul>
+</div>
+
+<div class="fold">
+<ul>
+<li><p>Loomes, Graham, Chris Starmer, and Robert Sugden, 1991. “Observing Violations of Transitivity by Experimental Methods”. <a href="https://www.jstor.org/stable/2938263?seq=1#metadata_info_tab_contents">jstor link</a></p></li>
+<li><p>Choi, Syngjoo, et al. “Who is (more) rational?.” The American Economic Review 104.6 (2014): 1518-1550.a.</p></li>
+<li><p>Waldfogel, Joel. “The deadweight loss of Christmas.” The American Economic Review 83.5 (1993): 1328-1336.</p></li>
+<li><p><a href="https://core.ac.uk/download/pdf/74369736.pdf">Reinstein, David. “The Economics of the Gift.” (2014; working paper and chapter in Gift Giving and the’embedded’ Economy in the Ancient World, F Carlà, M Gori - 2014).</a></p></li>
+</ul>
+</div>
+<p><br />
+</p>
 
 <div class="note">
 <strong>I will add a great deal of content here shortly.</strong>
 </div>
-<div id="budget-setsconstraints" class="section level3 unnumbered" number="">
-<h3>Budget sets/constraints</h3>
+<div id="choices-are-subject-to-constraints" class="section level3 unnumbered" number="">
+<h3>Choices are subject to constraints</h3>
+<p>You cannot spend more than your (lifetime) income/wealth <span class="math inline">\(\rightarrow\)</span> <em>budget constraint</em> (and ‘budget sets’).</p>
+<div class="marginnote">
+<p>There are also other potential constraints on consumption, such as a leisure time constraint and legal constraints.</p>
 </div>
-<div id="individual-consumer-demand-functions" class="section level3 unnumbered" number="">
-<h3>Individual (consumer) demand functions</h3>
+<p>Consider the budget line given in figure 5.1 in O-R.</p>
+<!--
+<div class="figure" style="text-align: center">
+<img src="picsfigs/budgetconstraint.png" alt="Budget constraint for two goods" width="80%" />
+<p class="caption">(\#fig:unnamed-chunk-211)Budget constraint for two goods</p>
 </div>
-<div id="rational-consumer-and-her-optimisation-problem" class="section level3 unnumbered" number="">
-<h3>Rational consumer and her optimisation problem</h3>
+-->
+<p>Budget constraint for two goods, slope <span class="math inline">\(-p_x/p_y\)</span></p>
+<div class="marginnote">
+<p>Only two goods? For example, think ‘food’ and ‘nonfood’.</p>
 </div>
-<div id="marginal-rates-of-substitution" class="section level3" number="4.2.1">
-<h3><span class="header-section-number">4.2.1</span> Marginal rates of substitution</h3>
-<p>MORE TO BE ADDED HERE</p>
+<div id="budget-constraint-algebra-simple" class="section level4 unnumbered" number="">
+<h4>Budget constraint algebra (simple)</h4>
+<div class="marginnote">
+<p>*I realise this may be trivial for many of you, but others will find this a helpful refresher. If it is obvious, feel free to skip ahead.</p>
+</div>
+<p>If I spend all my wealth (which I should do over a ‘relevant lifetime’ given monotonic preferences), then, if there are only two goods <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span> to choose from, with prices <span class="math inline">\(p_1\)</span> and <span class="math inline">\(p_2\)</span> respectively …:</p>
+<p><br />
+</p>
+<p>Expenditure on <span class="math inline">\(x_1\)</span> + Expenditure on <span class="math inline">\(x_2\)</span> = wealth (<span class="math inline">\(w\)</span>)</p>
+<p><br />
+</p>
+<p><span class="math display">\[p_1 x_1 + p_2 x_2 = w \]</span></p>
+<p><br> </p>
+<p>To see how <span class="math inline">\(x_1\)</span> trades off against <span class="math inline">\(x_2\)</span>, rearrange this to:</p>
+<p><br />
+</p>
+<p><span class="math display">\[w =  \frac{w}{p_2} -\frac{p_1}{p_2}x_1\]</span></p>
+<ul>
+<li><p>Intercept: <span class="math inline">\(\frac{w}{P_2}\)</span>, i.e., amount of <span class="math inline">\(x_2\)</span> you can buy if you only buy <span class="math inline">\(x_2\)</span></p></li>
+<li><p>Slope: <span class="math inline">\(-\frac{p_1}{p_2}\)</span>, i.e., how much <span class="math inline">\(x_2\)</span> you must give up to get another unit of <span class="math inline">\(x_1\)</span></p></li>
+</ul>
+<p><br></p>
+<p><em>Notes and intuition</em> (unfold if you want more explanation)</p>
 
+<div class="fold">
+<p>The slope <span class="math inline">\(-\frac{p_1}{p_2}\)</span>: How much <span class="math inline">\(x_2\)</span> I must sacrifice to get another unit of <span class="math inline">\(x_1\)</span>, expressed as a negative number. (Strictly speaking, the slope is how much <span class="math inline">\(x_2\)</span> you <em>get</em> when you get another <span class="math inline">\(x_1\)</span>, but since this is negative we see that you ‘get a negative amount’, i.e., give up some amount of <span class="math inline">\(x_2\)</span>.)</p>
+<p>To get another unit of <span class="math inline">\(x_1\)</span> it costs me <span class="math inline">\(p_1 x_1\)</span>, so the more costly is <span class="math inline">\(x_1\)</span> the <em>more</em> <span class="math inline">\(x_2\)</span> I must give up.</p>
+<p>For each unit of <span class="math inline">\(x_2\)</span> I give up I save <span class="math inline">\(p_2\)</span>, so the more costly is <span class="math inline">\(x_2\)</span> the more I can save by giving up 1 unit of it,
+thus, the less I need to sacrifice of <span class="math inline">\(x_2\)</span> to get another unit of <span class="math inline">\(x_1\)</span>.</p>
+</div>
+</div>
+<div id="budget-sets-o-r-5.1-formal-presentation-normalization" class="section level4 unnumbered" number="">
+<h4>Budget sets (O-R 5.1, formal presentation); normalization</h4>
+
+<div class="def">
+<p>O-R definition (for two goods)</p>
+<blockquote>
+<p>… the budget set of a consumer with wealth <span class="math inline">\(w\)</span> when the prices are (<span class="math inline">\(p_1, p 2\)</span>) is</p>
+</blockquote>
+<p><span class="math display">\[B((p_1, p 2), w) = \{(x_1,x_2) \in X : p_1 x_1 + p_2 x_2 \leq w \}\]</span></p>
+<p>(Note that the part after the colon (<span class="math inline">\(p_1 x_1 + p_2 x_2 \leq w\)</span>) is referred to as the ‘budget constraint’)/<br />
+</p>
+<blockquote>
+<p>The set <span class="math inline">\(\{(x_1,x_2) \in X : p_1 x_1 + p_2 x_2 = w \}\)</span> is the consumer’s budget line</p>
+</blockquote>
+</div>
+<p>O-R continue:</p>
+<blockquote>
+<p>Geometrically, a budget set is a triangle like the one in Figure 5.1. Note that multiplying wealth and prices by the same positive number does not change the set:</p>
+</blockquote>
+<blockquote>
+<p><span class="math inline">\(B((\lambda p_1,\lambda p_2), \lambda w) = B((p_1, p_2), w)\)</span> for any <span class="math inline">\(\lambda &gt; 0\)</span>,</p>
+</blockquote>
+<blockquote>
+<p>because the inequalities <span class="math inline">\(\lambda p_1 x_1 + \lambda p_2 x_2 \leq \lambda w\)</span> and <span class="math inline">\(p_1 x 1 + p_2 x_2 \leq w\)</span> that define these sets are equivalent</p>
+</blockquote>
+<p>Multiply all prices and income by the same amount, and the <em>budget constraint is unchanged.</em></p>
+<p>This will imply that we can simplify any such maximization problem by “normalizing” the budget constraint so that one good simply has price equal to one. (But if this is an applied problem, we should remember to convert it back into the actual prices.)</p>
+<div class="marginnote">
+<p>Also: As the budget constraints are unchanged when all prices and wealth are increased by the same proportion, neither will be the choices made; thus demand functions are “homogenous of degree zero”. (We’ll come back to this )</p>
+</div>
+<p><br />
+</p>
+<p><strong>“Every budget set is convex”</strong></p>
+<p>As O-R show algebraically (for two goods, but this would extend to <span class="math inline">\(n\)</span> goods)…</p>
+<ul>
+<li>if any two bundles <span class="math inline">\(a\)</span> and $b£ are both within a particular budget set, a third bundle that is a “convex combination” of these two bundles will also be in this budget set.</li>
+</ul>
+<div class="marginnote">
+<p>This holds as a result of constant linear pricing; in the proof you see this is used. With complicated (e.g., nonlinear) pricing, budget constraints may not have this property. Perhaps it is reasonable to assume that a ‘standard small consumer’ faces constant prices for many goods. On the other hand, we can think of all sorts of exceptions, where you get a discount if you buy in bulk and also note that you cannot buy, e.g., “one third of a car.” With nonlinear budget constraints optimization problems become much more mathematically “interesting”.</p>
+</div>
+<p><br />
+</p>
+<p>What’s a “convex combination”? (unfold)</p>
+
+<div class="fold">
+<p>Essentially this is just a fancy economics word for “shares of two things adding to one”.</p>
+<p>It is simply some (non-negative) share of the first bundle and one minus this share of the second bundle. E.g., 100% of the first bundle and none of the second bundle, or 50% of each bundle, or 25% of the first bundle and 75% of the second bundle. (Obviously this could be extended to to multiple bundles too.)</p>
+<p>Think also about ‘dividing up two bundles’. We see that if there are two bundles out there and one person takes a convex combination of these that is convex, what remains is also a convex combination of these.</p>
+<p><br />
+</p>
+We could use this to demonstrate “gains to trade”. Suppose two people with the same preferences, each with a distinct bundle (at a point other than XXX). They can divide up these bundles among each other, each taking a convex combination of the bundles, and the other taking the remainder, which is also a convex combination.
+See <a href="supplements.html#gain-to-trade">THIS SUPPLEMENT</a> for more detail.
+</div>
+</div>
+</div>
+<div id="individual-consumer-demand-functions-marshallian-demand---first-pass" class="section level3 unnumbered" number="">
+<h3>Individual (consumer) demand functions (Marshallian demand) - first pass</h3>
+
+<div class="def">
+<p>O-R:</p>
+<blockquote>
+<p>A demand function is a function <span class="math inline">\(x\)</span> that assigns to each budget set one of its members.</p>
+</blockquote>
+<blockquote>
+<p>Define <span class="math inline">\(x((p_1, p_2), w )\)</span> to be the bundle assigned to the budget set <span class="math inline">\(B((p_1, p_2), w)\)</span>.</p>
+</blockquote>
+<p>(It is easy to imagine extending this to a case with many goods to choose from, rather than just two.)</p>
+</div>
+
+<div class="inputq">
+<p>O-R present ‘individual demand functions’ <em>before</em> presenting the optimisation problem. This is unusual… why do they do this?</p>
+<p>They highlight that the demand function does not <em>need</em> to arise from an optimization process (as we describe below)… it merely maps from the budget set to a particular choice.</p>
+This can arise as a result of a simple rule or “heuristic” such as “spend equal amount of income on each good”. Behavioral economics considers the implications of decisions made on the basis of such heuristics.
+</div>
+<div class="marginnote">
+<p>These demand functions are stated as a function of the budget set, or more simply, as functions of price and wealth (or income).</p>
+<p>These are referred to as the “Marshallian demand functions” after the great Alfred Marshall. These are the demand functions that we may actually be able to observe in the real world.</p>
+<p>There are another type of demand functions that have very interesting properties for theory and welfare analysis called “Hicksian demand functions” or “compensated demand functions”. These take prices and <em>utility</em> as the arguments. We will not cover these in 2020 because of time constraints.</p>
+</div>
+<p><br />
+</p>
+</div>
+<div id="rational-consumer-and-hisher-optimisation-problem" class="section level3 unnumbered" number="">
+<h3>Rational consumer and his/her optimisation problem</h3>
+<p>We started with an individual’s preferences, one of the baseline elements of the neoclassical model. Under some conditions these can be described by utility functions, which we may consider as ‘mountains’ with levels sets depicted by indifference curves.</p>
+<p>So, we have a way of depicting what people prefer, but this doesn’t tell us what people will <em>choose</em> to consume (and firms to produce).</p>
+<p>We next introduced the second fundamental element of the neoclassical model, constraints, in particular, the budget constraint.</p>
+We put these together to describe the consumer’s problem: maximizing her utility subject to her budget constraints. This is depicted in figure below for the two-good case.
+<div class="marginnote">
+<p>Image Source: <a href="https://courses.byui.edu/econ_150/econ_150_old_site/lesson_05.htm" class="uri">https://courses.byui.edu/econ_150/econ_150_old_site/lesson_05.htm</a></p>
+</div>
+<p>(Or see O-R fig 5.3)</p>
+<p><img src="picsfigs/crop-byui-5-2_Indifference_Curves_08.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>Imagine that you are this consumer with these preferences and this budget constraint. You can choose any point at or below the straight blue line, as it is on or below your budget constraint. You want to get to the highest indifference curve, to attain the most utility.</p>
+
+<div class="inputq">
+How do we know point B is suboptimal (i.e., not optimal)? What about point D? What about points between A and B?
+</div>
+
+<div class="note">
+<p>Again, this is material that you will have seen before if you have studied Economics. Feel free to skip this if you remember it all; the O-R text gives a concise explanation.</p>
+As this is a bit remedial I will not cover it in detail. I suggest the <a href="https://www.khanacademy.org/economics-finance-domain/microeconomics/choices-opp-cost-tutorial/utility-maximization-with-indifference-curves/v/optimal-point-on-budget-line">Khan academy videos/materials here</a> if you need revision.
+</div>
+<p><br> </p>
+<p>We can demonstrate that you will choose point A, yielding utility <span class="math inline">\(100\)</span>.</p>
+<p>What is special about point A?</p>
+<p>It’s the point of <em>tangency</em> between the budget constraint and an indifference <em>curve</em>.</p>
+<p>It’s also (not a coincidence) the point where the slopes are equal.</p>
+<p><br />
+</p>
+<p>At this point (but not in general!) we have that “Slope of budget constraint = slope of indifference curve”.</p>
+<div class="marginnote">
+<p>Recall that the <span class="math inline">\(\leftrightarrow\)</span> symbol means ‘if and only if’, i.e., the object on the right-hand side implies the object on the left-hand side, and vice versa. In some contexts this means a ‘necessary and sufficient condition’, but here it is just basically a definition.</p>
+</div>
+</div>
+<div id="marginal-rates-of-substitution" class="section level3 unnumbered" number="">
+<h3>Marginal rates of substitution</h3>
+<p>O-R section 5.4 ‘Differentiable preferences’</p>
+
+<div class="note">
+<p>Note that O-R use the notation</p>
+<p><span class="math inline">\(v_1(z)\)</span> and <span class="math inline">\(v_2(z)\)</span> to represent “the consumer’s valuations
+of small changes in the amounts of the goods she consumes away from z”. They refer to the consumer’s ‘local valuations at z’ (remember that <span class="math inline">\(z\)</span> is a bundle of goods).</p>
+<p>This is usually referred to as the <em>marginal utility</em>; the partial derivative of the utility function with respect to each argument (each good or service), at a particular point (bundle), say <span class="math inline">\(z = (x_1, x_2)\)</span>:</p>
+<p><span class="math display">\[mu_1(z) \equiv \frac{d}{d x_1} u(x_1, x_2)\]</span></p>
+</div>
+<p><span class="math display">\[mu_1(z) \equiv \frac{d}{d x_1} u(x_1, x_2)\]</span></p>
+
+<div class="def">
+<p>O-R define the “marginal rate of substitution at <span class="math inline">\(z\)</span> … <span class="math inline">\(MRS(z)\)</span>” as <span class="math inline">\(v_1(z)/v_2(z)\)</span></p>
+<p>Assume bundle <span class="math inline">\(z\)</span> contains elements <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>. Relating this to a more standard notation:</p>
+<span class="math display">\[MRS(z) = MRS(x_1,x_2) = v_1(x_1,x_2)/v_2(x_1,x_2)=\frac{mu_1(x_1,x_2)}{mu_2(x_1, x_2)}\]</span>
+</div>
+
+<div class="note">
+<p>I prefer to define and think of the MRS as</p>
+<blockquote>
+<p>Starting from a particular point (<span class="math inline">\(x_1&#39;, x_2&#39;\)</span>) how much <span class="math inline">\(x_2\)</span> would I be willing to give up to get a unit of <span class="math inline">\(x_1\)</span>‘? (As this ’unit size’ converges to 0, as we are considering a point slope here. )</p>
+</blockquote>
+<p>Or starting from a particular point … if I gained a tiny tiny unit of <span class="math inline">\(x_1\)</span> how much <span class="math inline">\(x_2\)</span> would I have to give up to hold my utility constant?</p>
+<p>I loosely derive the ‘ratio of the marginal utilities’ from this definition <a href="consumers-dmd.html#mrsinsight">BELOW</a>, offering some insight.</p>
+</div>
+<p><br />
+</p>
+<p>Above, at an optimal interior consumption choice, we had that the “slope of budget constraint = slope of indifference curve”… at least that’s what it looked like.</p>
+<p><br />
+</p>
+<p>This is equivalent to “the point or bundle (which we will call <span class="math inline">\(x^{\ast}\)</span>) where the price ratio equals the marginal rate of substitution”, i.e., the point <span class="math inline">\(x^{\ast} \equiv (x_1^{\ast},x_2^{\ast})\)</span> where</p>
+<p><span class="math display">\[p_1/p_2 = MRS(x^{\ast}) = MU_1(x^{\ast})/MU_2(x^{\ast}) =v_1(x^{\ast})/v_2(x^{\ast}) \]</span> holds.</p>
+<p><br />
+<!--
+*Note on why the negative signs 'cancel out:*
+\BeginKnitrBlock{fold}<div class="fold">
+Recall that the  slopes of the budget line and the slope of the relevant indifference curve are actually negative. However, recall that we usually state the MRS as the *absolute value* of this, so it is positive, and thus we similarly multiply the slope of the  budget constraint by negative one. As you know, multiplying both sides of a (nonzero) equation by negative one leaves the solution unchanged. More simply, where both slopes are negative, 'the slopes are equal' is the same as saying 'the absolute value of the slopes are equal.
+</div>\EndKnitrBlock{fold}
+
+--></p>
+
+<div class="warning">
+<p>Warning: Recall that the marginal rate of substitution may vary everywhere along an indifference curve (remember the idea of satiation and diminishing MRS).</p>
+Unfold for further explanation…
+</div>
+
+<div class="fold">
+<p>It is a function of the <em>point</em> it is evaluated, i.e., <span class="math inline">\(MRS = MRS(x_1, x_2)\)</span>. It is only at the <em>point where the consumer is optimizing</em> that these slopes <em>must</em> be equal.</p>
+<p><br />
+</p>
+<p>They can also be equal at some other suboptimal points, where she is not spending all of her income… (e.g., perhaps point D in the above figure.</p>
+<p>Where she is consuming some of every good, this is a <em>necessary</em> condition for such a point to represent an optimal consumption choice, but it may not be a sufficient condition. May also be optimal for her to consume <em>none</em> of certain goods, in which case this condition will not hold. We return to this later.</p>
+</div>
+<div id="at-an-optimal-consumption-choice-given-above-assumptions-see-above-footnote" class="section level4 unnumbered" number="">
+<h4>At an optimal consumption choice (given above assumptions, see above footnote)</h4>
+<ul>
+<li><p>Consume all of income (locate <em>on</em> budget line; follows from ‘more is better’)</p></li>
+<li><p>Psychic tradeoff (MRS) equals market tradeoff (<span class="math inline">\(p_X/p_Y\)</span>)</p></li>
+</ul>
+<p><br />
+</p>
+<p>Intuition: If I can give up X for Y in the market (buy less X, get more Y) at a certain rate, and the <em>benefit</em> I get from doing this is at a different rate, I can make myself better off.</p>
+<p>Thus the original point could not have been optimal!</p>
+<p><img src="picsfigs/glasses.png" width="80%" height="5%" style="display: block; margin: auto;" /></p>
+<div class="marginnote">
+<p>If this is not clear to you, try to think about this carefully. This is a key insight in microeconomics, a sort of ‘marginality’ argument/‘proof by contradiction’. that will come back later.</p>
+</div>
+</div>
+</div>
+<div id="very-simple-example-for-intuition" class="section level3 unnumbered" number="">
+<h3>Very simple example, for intuition</h3>
+
+<div class="fold">
+<p>Suppose that at the consumption bundle you choose, your MRS = 1. To remain indifferent, you would be willing to give up 1 hamburger to get 1 soda.</p>
+<p>Suppose the price of soda is £1 and the price of a hamburger is £2. <span class="math inline">\(\rightarrow\)</span> Price ratio: <span class="math inline">\(P_S/P_B = 1/2\)</span></p>
+<p>Thus if you buy one less hamburger you can buy two more sodas.
+Thus if you give up one hamburger, you can get one more soda to keep you indifferent <em>plus</em> an additional soda.
+This means you would be better off; thus the original bundle <em>wasn’t</em> optimal.</p>
+<p>Practice question: in which direction would you adjust this bundle if the price of a soda was £2 and a hamburger was £1?</p>
+</div>
+<p><br />
+</p>
+<p>More extended example… (unfold)</p>
+
+<div class="fold">
+<p>E.g., if I can give up one glass of wine and gain two beers (i.e., because wine is twice as costly), and (given my proposed consumption of wine and beer) I get the same value from each glass of wine or beer, I can give up this glass of wine, gain two beers, and make myself ‘one unit’ better off, at the margin.</p>
+<p>On the other hand, if I can give up one glass of wine and gain two beers (i.e., because wine is twice as costly), and (given my proposed consumption of wine and beer) I get the four times as much value from each glass of wine as each beer, I can give up two beers, gain a wine (which I value at four beers) and make myself ‘two units’ better off, at the margin.</p>
+However, I can <em>not</em> apply this argument to a point where I am consuming <em>only</em> wine… I cannot consume less than no beer (although some nights I wish I could have done). We return to this point <a href="corners">below</a>
+</div>
+</div>
+<div id="mrsinsight" class="section level3 unnumbered" number="">
+<h3>More insight into MRS</h3>
+<p>Recall <span class="math inline">\(u=u(x_1, x_2)\)</span>.</p>
+<p><span class="math display">\[U_1(x_1,x_2) \equiv MU_{x_1}(x_1,x_2)\]</span></p>
+<p><em>Derivative with respect to <span class="math inline">\(x_1\)</span> : rate that utility increases if we add a little <span class="math inline">\(x_1\)</span>, holding <span class="math inline">\(x_2\)</span> constant.</em></p>
+<p>Similarly for <span class="math inline">\(MU_{x_2}\)</span>.</p>
+<p><br> </p>
+<p>As noted (and we can derive this), the MRS at a point is the ratio of these marginal utilities.</p>
+<p>MRS: ‘how much <span class="math inline">\(x_2\)</span> would I be willing to give up to get a unit of <span class="math inline">\(x_1\)</span>’?</p>
+<p><br> </p>
+<p>Ans: Depends on marginal benefit of each … we can show <span class="math inline">\(MRS(x_1,x_2)=\frac{MU_{x_1}}{MU_{x_2}}\)</span></p>
+
+<div class="note">
+<p><em>Mathy intuition:</em></p>
+<p>The more valuable a little more X is to me at that point – the higher is <span class="math inline">\(MU_{x_1}\)</span> – the more $x_2@ I am willing to give up to get it. That is why <span class="math inline">\(MU_{x_1}\)</span> is in the numerator.</p>
+<p>The more valuable a bit more $x_2@ is at that point – the higher is <span class="math inline">\(MU_{x_2}\)</span> – the less <span class="math inline">\(x_2\)</span> I am willing to give up to get a bit more <span class="math inline">\(x_1\)</span>. That is why <span class="math inline">\(MU_{x_2}\)</span> is in the denominator.</p>
+</div>
+<p><br />
+</p>
+<p>The ‘first order change in utility’ (or ‘total differential’), considering ’small changes in <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>, <span class="math inline">\(d_{x_1}\)</span> and <span class="math inline">\(d_{x_2}\)</span> is:</p>
+<p><span class="math display">\[ dU  = \frac{\partial U}{\partial x_1}d_{x_1} + \frac{\partial U}{\partial x_2}d_{x_2}\]</span>
+<span class="math display">\[ = MU_{x_1}d_{x_1} + MU_{x_2}d_{x_2}\]</span></p>
+<ul>
+<li>Where <span class="math inline">\(\frac{\partial U}{\partial x_1}\)</span> refers to the partial derivative of U(x_1,x_2) with respect to <span class="math inline">\(x_1\)</span>, and similarly for <span class="math inline">\(x_2\)</span>, i.e., the marginal utility.</li>
+</ul>
+<p>Essentially, for very small changes in X and Y; this approximates the total change in utility. It’s a ‘linear projection’.</p>
+<p>Setting it equal to zero and rearranging it yields the rate, at the margin, one is willing to give up <span class="math inline">\(x_2\)</span> for <span class="math inline">\(x_1\)</span>:</p>
+<p><span class="math display">\[dU  = MU_{x_1}d_{x_1} + MU_{x_2}d_{x_2} = 0 \]</span></p>
+<p>Rearranging…</p>
+<p><span class="math display">\[\frac{dx_2}{dx_1}=-\frac{MU_{x_1}}{MU_{x_2}}\]</span></p>
+<div class="marginnote">
+<p><strong>Tech note</strong>: This is a simple case of the implicit function theorem. Essentially <span class="math inline">\(U(x_1,x_2)=c\)</span> defines an implicit function <span class="math inline">\(x_2(x_1)\)</span>, whose slope is the negative of the ratio of the derivatives.</p>
+</div>
+<p><br></p>
+<p>Rearranging the utility maximising condition yields more intuition:</p>
+<p><span class="math display">\[P_X/P_Y = MRS(z^*) = MU_X(z^*)/MU_Y(z^*)\]</span></p>
+<p>(at each consumption point X,Y)</p>
+<p><span class="math display">\[\frac{MU_X}{P_X} = \frac{MU_Y}{P_Y}.\]</span></p>
+<p><br> </p>
+<p>I.e., the same ‘bang for each buck’.</p>
+<p><em>Note:</em> If this didn’t hold true and you were spending on both goods, you would be paying ‘more per util’ for one good than the other, and thus should reallocate to that other good.</p>
+</div>
+<div id="corners" class="section level3" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Note on ‘corner solutions’</h3>
+<p>The above ‘bang for the buck’ condition applies to any <em>interior</em> solution</p>
+<ul>
+<li><p>If you are consuming both goods and optimising, <span class="math inline">\(P_{x_1}/P_{x_2} = MRS = MU_{x_1}/MU_{x_2}\)</span> must hold</p></li>
+<li><p>This is a “necessary but not sufficient condition”, sufficient if there is a diminishing MRS everywhere.</p></li>
+</ul>
+<p>But you might consume <em>none</em> of some good (say <span class="math inline">\(x_1\)</span>):</p>
+<p>If even with <em>no</em> <span class="math inline">\(x_1\)</span> we still have <span class="math inline">\(MU_{x_1}/P_{x_1} &lt;MU_{x_2}/P_{x_2}\)</span></p>
+<ul>
+<li>i.e., the marginal utility of the first unit of <span class="math inline">\(x_1\)</span> is less than that of <span class="math inline">\(x_2\)</span>.</li>
+</ul>
+<p>The same condition applies to each good you are consuming a positive amount of.</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-230"></span>
+<img src="picsfigs/goodwedontbuy.png" alt="From Autor notes" width="90%" />
+<p class="caption">
+Figure 4.3: From Autor notes
+</p>
+</div>
+</div>
+<div id="some-popular-forms-for-utility-functions-and-their-properties-computation" class="section level3" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> Some ‘popular’ forms for utility functions, and their properties; computation</h3>
+<div id="cobbdoug" class="section level4 unnumbered" number="">
+<h4>Cobb-Douglas general form</h4>
+<p><span class="math display">\[U(X,Y)=X^aY^b\]</span></p>
+<p>where a, b are positive constants</p>
+<p><br> </p>
+
+<div class="note">
+<p>This is <em>“homothetic”</em>:</p>
+<p>Homothetic: MRS constant along a ray through the origin.</p>
+<p><span class="math inline">\(\rightarrow\)</span> It can be represented by an HD1 utility function. This ties down ‘income effects’ in a boring way: consumption of each good expands proportionally in income.</p>
+<p>…So the poor man just buys a tiny amount of <em>foies gras</em> and jumps in his tiny money bin.</p>
+<p>Thus if everyone has these preferences impact of 1 consumer’s income increasing by £1 million is the same as 1 million consumers gaining £1. This (possibly dubious) assumption underlies ‘representative consumer’ models.</p>
+</div>
+<p><br> </p>
+<p><span class="math display">\[MU_X=\frac{\partial U}{\partial X} = aX^{a-1}Y^b\]</span>
+<span class="math display">\[MU_Y=\frac{\partial U}{\partial Y} = bX^{a}Y^b-1\]</span></p>
+<p><br> </p>
+<p>Taking the ratio of these yields</p>
+<p><span class="math display">\[MRS = \frac{a}{b}\frac{Y}{X}\]</span></p>
+<p><br> </p>
+<p>So only the <em>ratio</em> Y/X affects the MRS; double both, MRS is the same.</p>
+<p><br> </p>
+<ul>
+<li><font color='gray'>Another relevant example: ‘Constant Elasticity of Substitution preferences’</font></li>
+</ul>
+</div>
+<div id="quasilinear" class="section level4 unnumbered" number="">
+<h4>A non-homothetic (here, ‘Quasilinear’) example</h4>
+<p><span class="math display">\[U(X,Y)=X+ln(Y)\]</span></p>
+<p>Here Y has a diminishing MU, but for X MU is constant</p>
+<p><span class="math display">\[\frac{MU_X}{MU_Y}= \frac{1}{1/Y}=Y\]</span></p>
+<p>So the MRS diminishes as Y decreases (as we go ‘down the indifference curve’ … this is what we confusingly call diminishing MRS), but it is independent of the amount of X consumed.</p>
+
+<div class="inputq">
+So, if we double both then what happens?
+</div>
+
+<div class="fold">
+<p>Ans: MRS doubles]</p>
+</div>
+<p>This represents <em>Quasilinear</em> preferences:</p>
+<p><img src="picsfigs/Quasilinear_utility.png" width="50%" style="display: block; margin: auto;" /></p>
+<p>These are particularly relevant with three or more goods.</p>
+<p>More generally, quasilinear utility satisfies <span class="math inline">\(U=x_1+f(x_2,...,x_n)\)</span>; i.e., it is linear in one ‘numeraire’ good <span class="math inline">\(x_1\)</span>.</p>
+<p>Here, the amount of the ‘non-numeraire goods’ consumed adjust to match the price ratio but <em>don’t</em> depend on the income.</p>
+<p>We imagine that ‘the tradeoff between these goods is the same for people of all income levels’.</p>
+<p>E.g., in principal-agent analysis we can then ignore the question ‘but won’t the preference for leisure change when people are richer’?</p>
+<p><em>Mathy intuition:</em> if the ‘Y’ goods <span class="math inline">\((x2,..., xn)\)</span> have more MU consume them ‘first’, until their MU diminishes to that of the numeraire, then consume X.</p>
+</div>
+</div>
+<div id="rationalizing-a-demand-function-skip-o-r-section-5.5" class="section level3" number="4.2.3">
+<h3><span class="header-section-number">4.2.3</span> Rationalizing a demand function (Skip O-R section 5.5) {#}</h3>
+<p>(Brief comments here)</p>
+</div>
+</div>
+<div id="properties-of-demand-functions" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Properties of demand functions</h2>
+
+<div class="note">
+<p>This material is presented at a less advanced level than the previous material. I imagine for many of you, this will be revision, and feel free to skim it or skip it.</p>
+</div>
+<p>Previously, we considered how consumption choices determined by utility functions/indifference curves and budget constraints. We can now consider how an individual’s choice of a good varies with each element of her budget constraint: for income and the price of each good.</p>
+
+<div class="warning">
+<p>The notation has changed here, to some extent.</p>
+</div>
+<div class="marginnote">
+The OR notation is difficult to adapt here. I try to keep notation constant as much as possible. However, this could be seen as a good thing to get used to: in reading various papers in Economics, authors will use a variety of labels for variables and formats.
+</div>
+<p>We will refer to her ‘quantity demanded of good X’ function (or more simply, her ‘demand function’) as follows:</p>
+<p><br> <br> </p>
+<p><span class="math display">\[Quantity \: of \: X \: demanded = d_x(P_X, P_Y, I; preferences)\]</span></p>
+<p><br />
+</p>
+<div id="homogeneity" class="section level3 unnumbered" number="">
+<h3>Homogeneity</h3>
+<dl>
+<dt>Homogenous (of degree zero) (demand) function</dt>
+<dd>A function whose outcome value does not change when <em>all</em> arguments are changed <em>proportionally</em> is <em>homogenous of degree zero</em>
+</dd>
+</dl>
+<p><br></p>
+<p><span class="math inline">\(d_X(P_X,P_Y,I)\)</span> is homogenous of degree zero in its arguments.</p>
+<p><br></p>
+<p>Multiply all prices and income by the same amount, and the <em>budget constraint is unchanged.</em> Thus (as preferences have not changed) consumption choices should not change either.</p>
+<ul>
+<li>E.g., the budget constraint <span class="math inline">\(P_X X + P_Y Y = I\)</span> is the same as the budget constraint <span class="math inline">\(2P_X X + 2P_Y Y = 2I\)</span></li>
+</ul>
+<p><em>Intuition for this (unfold if desired):</em></p>
+
+<div class="fold">
+
+</div>
+<div class="marginnote">
+<p>This relates to the puzzle of ‘why should monetary policy and inflation have any real effect on the econom?’</p>
+</div>
+</div>
+<div id="response-to-income-changes" class="section level3" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> Response to income changes</h3>
+
+<div class="inputq">
+<p>Q: What happens to the quantity purchased of some good as an individual’s income increases?“,”blue")`</p>
+</div>
+<p><br />
+</p>
+
+<div class="fold">
+<p>A: It depends on the preferences (i.e, the utility function, i.e., the relative curvature of the indifference curve at various points).</p>
+<p>This defines whether the good is “normal” or “inferior.”</p>
+<p>Whether it is normal or inferior depends on your preferences and the change in the slope of the indifference curves with higher income/utility, as we see below.)</p>
+</div>
+<p><br />
+</p>
+<p><br></p>
+<div id="defining-a-normal-and-inferior-good" class="section level4 unnumbered" number="">
+<h4>Defining a normal and inferior good</h4>
+<dl>
+<dt>Normal good</dt>
+<dd>A good that is bought in <em>greater</em> quantities as income increases.
+</dd>
+<dt>Inferior good</dt>
+<dd>A good that is bought in <em>smaller</em> quantities as income increases.
+</dd>
+</dl>
+<p><br />
+</p>
+<p><img src="picsfigs/normalgood.png" width="70%" style="display: block; margin: auto;" /></p>
+<div class="marginnote">
+<p>For a simple powerpoint supplement on this, see <a href="https://www.dropbox.com/s/qhsl6qey0wjcfe5/utility_demand_supplement.pptx?dl=0">here</a></p>
+<p>(download and use ‘presentation mode’)</p>
+</div>
+<!-- 
+<img src="picsfigs/inferiorgood.png" width="70%" style="display: block; margin: auto;" />
+
+-->
+<p><em>Consider:</em> Here we see more income <span class="math inline">\(\rightarrow\)</span> less expenditure on Z! (Not just ‘a lesser share’ but actually <em>less</em>.)</p>
+<p>This is because the <em>shape</em> of the indifference curves changes at higher incomes in this example.
+When people have a lot to spend, they want to spend it on Y and not on Z. (Again <em>in this example</em>, not in general.)</p>
+<p>Consider, if you won the lottery how much pot noodle would you buy? Pot noodle may be like good Z in this example.</p>
+<p><br></p>
+<p>Thinking in 3d: ‘as you walk up this hill, its ridge gradually moves to the west’.</p>
+
+<div class="note">
+<p>To be precise, this is <em>not</em> about wealthy people being different than poor people
+nor that their taste ‘changes’ when they become wealthy.</p>
+<p>We are considering the same person with higher income,
+and thus the potential to choose a different bundle of goods.</p>
+<p>Empirically, these are hard to distinguish, however.</p>
+</div>
+<p><br />
+</p>
+
+<div class="inputq">
+Consider: all goods cannot be inferior. Why not?
+</div>
+
+<div class="fold">
+<p>There are ‘adding up’ conditions.</p>
+<p>You always spend all of your income. Thus, if as your income increases, you spend less on some subset of goods,
+you <em>must</em> spend more on the remaining goods.</p>
+</div>
+</div>
+</div>
+<div id="price_changes" class="section level3" number="4.3.2">
+<h3><span class="header-section-number">4.3.2</span> Response to (own) price changes (limited coverage)</h3>
+
+<div class="inputq">
+<p>What happens to an individual’s demand for a good as the price of this good rises, in our model? (I.e., if people are optimizing and their preferences obey all of the above axioms.)</p>
+</div>
+
+<div class="fold">
+<p>You might have thought that when price rises quantity demanded falls, and vice versa, the so-called “iron law of demand”.</p>
+<p>However, we cannot derive this from our model and in fact, when price rises, an optimizing consumer might demand more of this good or less of this good, we do not know!</p>
+<p>If the good is <em>inferior</em> (as defined above) there will be two countervailing effects:</p>
+<ol style="list-style-type: decimal">
+<li><p>“Substitution effect”: Is a good (say, good ‘X’, on the X-axis) becomes more expensive, the budget line rotates (inward), and the point of tangency (where the price ratio equals the marginal rate of substitution) on <em>any</em> indifference curve moves towards a point with less of good X. In other words, ‘along a particular indifference curve’ the individual “substitutes away” from X as it becomes more expensive.</p></li>
+<li><p>“Income effect”: As X becomes more expensive, the individual’s budget set is restricted. The individual is “poorer in a sense”. If X is an inferior good (in this region), this consumer, being ‘poorer’ chooses consume <em>more</em> of the good, all else equal.</p></li>
+</ol>
+<p>If the second effect outweighs the first we have the surprising result that , and we label such a good a “Giffen good”.</p>
+</div>
+<p>To cover this in more detail, we would need to define another concept called “Hicksian demand”.</p>
+</div>
+<div id="price_changes" class="section level3" number="4.3.3">
+<h3><span class="header-section-number">4.3.3</span> Complements/substitutes; response to (other) price changes (limited coverage)</h3>
+</div>
+</div>
+<div id="consumer-surplus-brief-and-incomplete-treatment" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Consumer surplus (brief and incomplete treatment)</h2>
+<dl>
+<dt>Consumer surplus</dt>
+<dd>The extra value individuals receive from consuming a good over what they pay for it.
+</dd>
+</dl>
+<p><br> </p>
+<ul>
+<li><p>What people would be willing to pay for the <em>right</em> to consume a good <em>at its current price</em> rather than not being able to buy it at all.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p></li>
+<li><p>The area between the demand curve and the market price</p></li>
+<li><p>A measure of consumer welfare, useful for policy analysis</p></li>
+</ul>
+<p><img src="picsfigs/cons_surplus.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p>Also… This can be applied to the individual or market demand curve to obtain individual or total consumer surplus (although there are some technical issues with the latter).</p>
+<p><br />
+</p>
+
+<div class="technote">
+<p>The issue is that to get consumer surplus we want to sum the value <em>each</em> consumer gets from each unit. Suppose, as we derive/assume under perfect competition, firms are pricing at the marginal cost of the final unit produced. Assume that cost varies over time, so we observe shifts in the supply curve, tracing out points on the demand curve. This allows us to estimate a market demand curve. But this demand curve (inverted) only tells us the <em>last</em> consumer’s value of (willingness-to pay for) the final unit produced. We don’t know how other consumers valued each of these units.“,”gray")`</p>
+</div>
+<p>Also, ‘introducing a new good…’<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+<p><font color='gray'>Note: We may skip section ‘consumer surplus and utility’ in lecture, but please read over it for understanding</font></p>
+<p><br />
+</p>
+<p>With a linear demand curve this is a triangle, which has an area that is easy to compute. More generally, this is a `definite integral’.</p>
+<p><br> </p>
+<p><span class="math display">\[\int_{0}^{q^\ast}p(q)-p^\ast dq \]</span></p>
+<p>(where <span class="math inline">\(p(q)\)</span> is the inverse demand.</p>
+<p><br> </p>
+<p>For welfare calculations, we often want to know ‘how does this integral change as we adjust some parameter’?</p>
+<p><span class="math inline">\(\rightarrow\)</span> See the <a href="https://brilliant.org/wiki/differentiate-through-the-integral/">(more general version of) the Leibniz rule for differentiating integrals.</a>, related to the ‘Fundamental theorem of calculus’.</p>
+<p><br> </p>
+</div>
+<div id="mktdemand" class="section level2" number="4.5">
+<h2><span class="header-section-number">4.5</span> Market demand (function) (brief and incomplete treatment)</h2>
+<dl>
+<dt>Market demand (or better, ‘market quantity demanded’)</dt>
+<dd>The total quantity of a good or service demanded by all potential buyers
+</dd>
+</dl>
+<ul>
+<li>This just sums the individual quantities demanded (at a given price)</li>
+</ul>
+<p><br> </p>
+<dl>
+<dt>Market demand curve</dt>
+<dd>Relationship between total quantity demanded of a good and its price, ceteris paribus
+</dd>
+</dl>
+<ul>
+<li>Sum the individual demand curves (‘horizontally’ … quantities demanded at each price)</li>
+</ul>
+<!-- 
+<img src="picsfigs/summarketdemandcurve.png" width="70%" style="display: block; margin: auto;" />
+-->
+<p><font color='gray'>Make sure you can do numerical examples of this</font></p>
+<!--
+LC: Illustrate 'sums horizontally' on visualiser if possible*
+-->
+<p>Some of our previous results about individual demand also hold for market demand, while others do not, or only if we make restrictive assumptions</p>
+<p>Shifts in the market demand curve are caused by similar things that cause individual demand curve shifts</p>
+<ul>
+<li>Increases in overall income (for normal goods)</li>
+<li>Reduced prices of complements, increased price of substitute goods</li>
+<li>Change in tastes</li>
+</ul>
+
+<div class="technote">
+However, the aggregate income does not have a single effect; it cannot be easily reduced to a single variable here. You can only express the demand curve as a function of aggregate income under restrictive assumptions. In general, it depends <em>who</em> gets this income. (See ‘aggregation issues’).
+</div>
+<p>(In addition, the market demand curve could shift out if more consumers enter the market, e.g., because of demographic change.)</p>
+<p><br />
+</p>
+<p><strong>A random example:</strong></p>
+<ul>
+<li><p>2008: ‘Gas prices forcing demand for SUVs to plummet’ <a href="http://www.thehour.com/wilton/article/Gas-prices-forcing-demand-for-SUVs-to-plummet-8257785.php">LINK</a></p></li>
+<li><p>2015: ‘Economy, gas prices drive demand for SUVs, high-end cars’ <a href="http://www.sj-r.com/article/20150809/NEWS/150809569">LINK</a></p></li>
+</ul>
+</div>
+<div id="elasticities" class="section level2" number="4.6">
+<h2><span class="header-section-number">4.6</span> Elasticities</h2>
+<p><font color='gray'> This is a fundamental mathematics concept that comes from Physics; it’s not just for Economics.</font></p>
+<p>How do we measure and compare the extent to which one thing responds to another? E.g., which is ‘larger’?:</p>
+<ul>
+<li>the change in quantity demanded of oranges when the price of oranges rises or</li>
+<li>the change in quantity demanded of apple juice when the price of apple juice rises?</li>
+</ul>
+<p><font color='gray'>(Or the response to changes in the price of a related good, or to income.)</font></p>
+<p>Difficulty: These things are measured in different <em>units</em> and the prices have different starting values.</p>
+<p><br> </p>
+<p><strong>Elasticity:</strong> the measure of the % change in one variable brought about by a 1% change in another variable.</p>
+<ul>
+<li>a <em>unitless</em> measure; will be the same no matter how these variables are measured.</li>
+</ul>
+<p><font color='gray'>Think of <em>responsiveness</em> when talking about elasticity. Actually it’s a measure from physics having to do with rubber bands, they tell me.</font></p>
+
+<div class="note">
+<p>Strictly speaking we are talking about the limit of these responses, i.e., derivatives.<br />
+</p>
+<p>The elasticity is basically the derivative of <span class="math inline">\(ln(y)\)</span> with respect to <span class="math inline">\(ln(x)\)</span>; useful to know if you want to run a regression computing an elasticity, or if you want to interpret such a regression.</p>
+<p>Actually, this, and its subtleties and interpretations is one of the <em>most</em> important things to comprehend for empirical work!!</p>
+</div>
+<p><br> </p>
+<ul>
+<li>If a 5% fall in the price of oranges typically results in a 10% increase in quantity bought,</li>
+<li>we say that each percent fall in the price of oranges leads to an increase in sales of about 2 percent.</li>
+<li>I.e., the ‘‘elasticity’’ of orange sales with respect to price is about 2,</li>
+</ul>
+<p><em>Note that elasticities may not be constant</em>; they may depend on the starting point; e.g., linear demand implies a different price elasticity at each point.</p>
+<p><br />
+</p>
+<div id="elasticities-more-precisely" class="section level3 unnumbered" number="">
+<h3>Elasticities more precisely</h3>
+<ul>
+<li><p>calculate in terms of derivatives</p></li>
+<li><p>estimated using log transformations</p></li>
+</ul>
+<p><br />
+</p>
+</div>
+<div id="price-elasticity-of-demand" class="section level3" number="4.6.1">
+<h3><span class="header-section-number">4.6.1</span> Price elasticity of demand</h3>
+<p><strong>Price elasticity of demand:</strong></p>
+<p><span class="math display">\[e_{Q_d,p} = \frac{percent \ change \ in \ Q_d}{percent \ change \ in \ p} \]</span>
+<span class="math display">\[  = \frac{\Delta Q_d}{Q_d}/\frac{\Delta p}{p}\]</span></p>
+<p>This should always be negative (except for Giffen goods).</p>
+<p>It is a <em>unitless measure</em> related to the slope of the demand curve.</p>
+<p>It is <em>very</em> important for price-setting firms (more on this later).</p>
+<p><br />
+</p>
+<p><strong>From the NS text (footnote):</strong></p>
+<p>If demand happens to take the ‘constant elasticity’ form
+<span class="math inline">\(Q = ap^b\)</span> where <span class="math inline">\(b&lt;0\)</span>, the price elasticity of demand is b.</p>
+<ul>
+<li><p>This elasticity is the same everywhere along such a demand curve.</p></li>
+<li><p>Taking logarithms of this yields <span class="math inline">\(ln(q) = ln(a) + b ln(p)\)</span></p></li>
+<li><p>note that elasticities are often estimated by regressing logs on logs</p></li>
+</ul>
+<p><img src="picsfigs/elasticities_are_logs_post.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+
+<div class="digression">
+<blockquote>
+<p>Indeed, one important implication of Jensen’s inequality is that the standard practice of interpreting the parameters of log-linearized models estimated by ordinary least squares (OLS) as elasticities can be highly misleading in the presence of heteroskedasticity.</p>
+</blockquote>
+<ul>
+<li>Santos-Silva and Tenreyro, 2006, ‘the Log of Gravity’.
+</div></li>
+</ul>
+</div>
+<div id="examples-from-the-headlines" class="section level3 unnumbered" number="">
+<h3>Examples from the headlines</h3>
+<p><a href="https://www.ft.com/content/2665c794-76a0-11e6-b60a-de4532d5ea35">India’s Hike Messenger takes aim at WhatsApp</a></p>
+<blockquote>
+<p>“Reliance ended up showing that there is elasticity in the market. If you drop prices, people will come on board,” he said.</p>
+</blockquote>
+<p><br />
+</p>
+<p><a href="https://www.ft.com/content/932927d8-266c-3559-b87a-8d3efb07d5e1">‘Next’ to add more space despite retail sales ‘moving backwards’</a></p>
+<blockquote>
+<p>The retailer does not expect any impact from the drop in sterling since the Brexit vote to kick in until at least the Spring of 2017, as it had hedged some of its foreign-currency exposures in advance. Still, it expects expenses to rise by up to 5 per cent next year.</p>
+</blockquote>
+<blockquote>
+<p>‘The last time we had to increase prices (which was in 2010 when cotton prices soared) we estimated that price elasticity was around 1.1. If that remains the case today, a retail selling price increase of 5% would result in a fall in unit sales of -5.5% and a fall in like for like sales value of between -0.5% to -1.0%. In the scheme of things, we think that this drag on sales is manageable and less damaging than taking a significant hit to margin.’</p>
+</blockquote>
+<p><br />
+</p>
+</div>
+<div id="properties-of-price-elasticity-of-demand" class="section level3" number="4.6.2">
+<h3><span class="header-section-number">4.6.2</span> Properties of price elasticity of demand</h3>
+<ul>
+<li>Goods with many close substitutes at a similar price will be highly elastic</li>
+<li>with few substitutes … inelastic</li>
+<li>Typically: more elastic in the <em>long run</em> than the short run. <font color='blue'>Q : why?</font><a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></li>
+</ul>
+<p><br> <br> </p>
+<!---
+Todo: give more explanation here
+-->
+<p>We refer to price elasticities with the following terminology:</p>
+<table>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(e_{Q,p}\)</span></th>
+<th><span class="math inline">\(abs(e_{Q,p})\)</span></th>
+<th>Term</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(&lt; -1\)</span></td>
+<td><span class="math inline">\(&gt;1\)</span></td>
+<td>Elastic</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(= -1\)</span></td>
+<td><span class="math inline">\(=1\)</span></td>
+<td>Unit Elastic</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(&gt; -1\)</span></td>
+<td><span class="math inline">\(&lt;1\)</span></td>
+<td>Inelastic</td>
+</tr>
+</tbody>
+</table>
+<p><font color='gray'>Note that sometimes elasticities are expressed in absolute value terms (a positive number). It should be clear from the context.</font></p>
+<p><br />
+</p>
+<p>Consider an individual’s expenditure on a product.</p>
+<p>The total expenditure (the firm’s revenue from this): price <span class="math inline">\(\times\)</span> quantity</p>
+<p>By taking the <em>total differential</em> of this and recalling the ‘multiplication rule’ of derivatives…</p>
+<p><span class="math display">\[E = p(q)q  = pq(p)\]</span>
+<span class="math display">\[dE = pq&#39;(p)dp+q(p)dp\]</span>
+<span class="math display">\[dE/E = \frac{pq&#39;(p)dp}{pq} +\frac{q(p)dp}{pq}\]</span>
+<span class="math display">\[dE/E = \frac{q&#39;(p)dp}{q} +\frac{dp}{p}\]</span></p>
+<p><br />
+</p>
+<p>We have that for <em>small changes</em> in price, the percent <em>change</em> in total expenditure is:</p>
+<p><strong>percent change in price + percent change in quantity</strong></p>
+<p><br />
+</p>
+<p>As <span class="math inline">\(e_{Q,P}\)</span> tells you the percent change in quantity for each (small) percentage change in price, we can use this to determine the change in expenditure for a small change in price.</p>
+<p><br />
+</p>
+<p><em>Considering very small increases in a good’s price:</em></p>
+<ul>
+<li><p>If the (individual’s) demand is <em>price-elastic</em>, quantity will decrease by a <em>larger</em> percentage than price increased. Thus her expenditure (on this good) will <em>decline</em>.</p></li>
+<li><p>If the (individual’s) demand is <em>price-inelastic</em>, quantity will decrease by a <em>smaller</em> percentage than price increased. Thus her expenditure (on this good) will <em>increase </em>.</p></li>
+<li><p>If the (individual’s) demand is <em>unit-elastic</em> (with respect to price), quantity will decrease by a <em>the same</em> percentage as price increased. Thus her expenditure (on this good) will <em>be unchanged</em>.</p></li>
+</ul>
+<p><br></p>
+<div id="example-and-algebra" class="section level4 unnumbered" number="">
+<h4>Example and algebra…</h4>
+<p>If price rises by 20% and quantity demanded falls by 20% what happens to revenue?</p>
+<p><br />
+</p>
+<p>Suppose p=10 and q=10 so TR=100. Then when p=12 and q=8 TR=96. Huh? Price increased by 20% and quantity decreased by 20% so shouldn’t TR be unchanged? No! This only works for small changes.</p>
+<p><br />
+</p>
+<p>TR is unchanged when p*q stays the same. With a change in each <span class="math inline">\(\delta p\)</span> and <span class="math inline">\(\delta q\)</span>, the new revenue is</p>
+<p><span class="math inline">\((p+\delta p)(q+\delta q) = pq+\delta p q + \delta q p + \delta p \delta q\)</span>.</p>
+<p><br />
+</p>
+<p>This is the same as before if <span class="math inline">\(pq=pq+\delta p q + \delta q p + \delta p \delta q\)</span>, i.e., if</p>
+<p><span class="math inline">\(\delta p q + \delta q p + \delta p \delta q=0\)</span>, i.e., if</p>
+<p><span class="math inline">\(\delta p q + \delta p \delta q =-\delta q p\)</span>, i.e., if</p>
+<p><span class="math inline">\(\delta p q/p + \delta p \delta q/p =-\delta q\)</span>, i.e., if</p>
+<p><span class="math inline">\(\delta p/ \delta q (q/p) + \delta p /p =-1\)</span>, i.e., if</p>
+<p><span class="math inline">\(-e_p + \delta p /p = -1\)</span></p>
+<p>In the limit, as <span class="math inline">\(\delta p\)</span> goes to zero, this gives us that ‘unit elasticity means a small change in quantity leads to no change in revenue.’</p>
+<p><br />
+</p>
+<p><strong>Important question/result</strong></p>
+<p><font color='blue'>Q: Suppose a firm is setting its price and selling to only one individual , and facing no competitors. It should basically never want to set its price at a point where demand is inelastic. Why not?</font><a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
+<p><br />
+</p>
+<p><img src="picsfigs/elast_revenue.png" alt="Elastrev" /><br />
+</p>
+</div>
+</div>
+</div>
+<div id="income-elast" class="section level2" number="4.7">
+<h2><span class="header-section-number">4.7</span> Income elasticity of demand; Normal, luxury, and inferior goods</h2>
+<dl>
+<dt>Income elasticity of demand</dt>
+<dd>% change in quantity demanded of a good in response to 1% change in income (approximately).
+</dd>
+</dl>
+<p><span class="math display">\[e_{Q_d,I} = \frac{percent \ change \ in \ Q_d}{percent \ change \ in \ I} \]</span>
+<span class="math display">\[  = \frac{\Delta Q_d}{Q_d}/\frac{\Delta I}{I}\]</span><br />
+</p>
+<p><br> </p>
+<p><strong>Normal goods:</strong> <span class="math inline">\(e_{Q,I} &gt; 0\)</span></p>
+<p><br />
+</p>
+<p><strong>Inferior goods:</strong> <span class="math inline">\(e_{Q,I} &lt; 0\)</span></p>
+<p><br />
+</p>
+<p><strong>Luxury goods:</strong> <span class="math inline">\(e_{Q,I} &gt; 1\)</span></p>
+<p><br />
+</p>
+<p>E.g., cocaine is a luxury good, if, when I win £1000 in the lottery, I will increase my consumption of cocaine by <em>more</em> than £1000 …
+(assuming, as in classical models, that I treat all sources of income the same</p>
+<p><font color='blue'>Q: Is a luxury good a normal good?</font><a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></p>
+<p><br> <br> </p>
+<p></p>
+<div id="some-real-world-discussion-of-this" class="section level3 unnumbered" number="">
+<h3>Some real-world discussion of this</h3>
+<!---
+Todo: give more explanation here
+-->
+<p><a href="https://www.ft.com/content/4ea79d96-a4d6-11e5-a91e-162b86790c58">Prof. Muellbauer letter to FT</a></p>
+<blockquote>
+<p>Sir, Professor Gordon Gemmill (Letters, December 14), surprisingly for a trained economist, assumes an income elasticity of demand of zero for housing: that is, that people do not demand more and better housing as they become richer. Nowhere in the world is this the case! My own empirical work demonstrates that around two-thirds of the rise in UK house prices, corrected for general inflation, since 1980 is because supply is not keeping up with income and population growth. Other drivers do exist … The price effects of extra supply take time to build up. I agree on that. But just imagine what would happen if we did nothing more than we are now doing: population and income growth would drive prices even higher even though we already hold the record for rises in house prices since 1970 among the group of seven leading high-income countries. We need to build far more housing, in the right locations. And we need to start now.
+- Prof John Muellbauer Nuffield College, Oxford, UK</p>
+</blockquote>
+<ul>
+<li>Cross-price elasticity of demand (read about this in one of the suggested texts please)</li>
+</ul>
+<p><font color='blue'>Look up: what are some <em>real-world</em> price and income elasticity estimates? How were these derived?</font></p>
+<p><br />
+</p>
+<p><br />
+### More formal statements of properties of Marshallian demand</p>
+<div class="marginnote">
+<p>Source: Preston, 2006; <a href="https://www.ucl.ac.uk/~uctp100/g021/g021lect.pdf" class="uri">https://www.ucl.ac.uk/~uctp100/g021/g021lect.pdf</a>; notation changed.</p>
+</div>
+<p>Note: <em>bold</em> means ‘vectors’.</p>
+<p><br />
+</p>
+<p>Budget set</p>
+<p><span class="math display">\[B=\{\mathbf{q} \in R^n_{+}|\mathbf{p&#39;q} \leq I \}\]</span></p>
+<p>Slopes <span class="math inline">\(dq_i/dq_j|_B = -p_j/p_i\)</span>.
+in
+Consumer chooses <span class="math inline">\(\mathbf{x}(\mathbf{p},I)\in B\)</span>; Marshallian demands.</p>
+<p><br />
+The graph of <span class="math inline">\(x_i(\mathbf{p},I)\)</span> in <span class="math inline">\(y\)</span> is the ‘Engel curve’.</p>
+<p><br />
+</p>
+<p><em>Total budget (income) elasticity:</em></p>
+<p><span class="math display">\[\eta_i \equiv \frac{\partial x_i}{\partial I} / \frac{x_i}{I}  = \frac{\partial ln(q_i)}{\partial ln(I)} \]</span></p>
+<p>‘By what percentage does consumption of i change as income changes by a small percent?’</p>
+<ul>
+<li><span class="math inline">\(\eta_i &gt; 0\)</span> <span class="math inline">\(\rightarrow\)</span> ‘normal good’, otherwise ‘inferior’</li>
+</ul>
+<p><br />
+</p>
+<p>Applying this to ‘budget shares’: <span class="math inline">\(s_i \equiv p_i x_i/I\)</span>… noting these must add up to one: <span class="math inline">\(\sum_{i=1..n}s_i=1\)</span></p>
+<ul>
+<li><span class="math inline">\(\eta_i &gt; 1\)</span> <span class="math inline">\(\rightarrow\)</span> ‘luxury’ (budget share rises in income), otherwise ‘neccessity’<br />
+</li>
+</ul>
+<p><font color='blue'>Can you write the own price elasticity in this notation?</font><a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a></p>
+<p><br />
+</p>
+</div>
+<div id="adding-up-aggregation-etc" class="section level3 unnumbered" number="">
+<h3>Adding-up (‘aggregation’) etc</h3>
+<p>If an individual ‘always spends all her income’ then this equality must hold everywhere. This implies a set of relationships:</p>
+<ul>
+<li><p>between how things <em>change</em> in response to income and price…
+-as one spends more on one good she must spend less on another</p></li>
+<li><p>between <em>shares</em> of expenditure and how these change.</p></li>
+</ul>
+<p>Rewriting the budget constraint with the Marshallian demands vector <span class="math inline">\(\mathbf{x}\)</span>, and imposing budget-balance (which can be proved must hold for an optimising consumer given local nonsatiation):</p>
+<p><span class="math display">\[\mathbf{p&#39;x}(\mathbf{p},I) = I\]</span></p>
+<p><br />
+</p>
+<p>Differentiating this wrt <span class="math inline">\(I\)</span> yields <strong>Engel aggregation</strong>:</p>
+<p><span class="math display">\[\sum_i p_i \frac{\partial x_i}{\partial I} =\sum_i \frac{p_i x_i}{I} \frac{\frac{\partial x_i}{\partial I}}{\frac{x_i}{I}} =\sum_i s_i\eta_i = 1\]</span></p>
+<p><span class="math inline">\(\rightarrow\)</span> Sum (over all goods) of ‘budget share’ <span class="math inline">\(\times\)</span> ‘income elasticity’ must add up to one.</p>
+<p><br />
+</p>
+<p>Thus not all goods can be inferior (<span class="math inline">\(\epsilon_i &lt; 0\)</span>); these must be balanced by normal goods (including some luxuries, to get the average above one.)</p>
+<p><br />
+</p>
+<p>Also not all goods can be luxuries (<span class="math inline">\(\epsilon_i &gt; 1\)</span>) and not all goods can be necessities (<span class="math inline">\(\epsilon_i &lt; 1\)</span>). These must balance each other out, in an expenditure-weighted sense.<br />
+</p>
+<p>Differentiating the ’demand budget constraint wrt some price <span class="math inline">\(p_i\)</span> yields <em>Cournot aggregation</em>:</p>
+<p>(rem: product rule here, carried through sums )</p>
+<p><span class="math display">\[x_j + \sum_i p_i \frac{\partial x_i}{\partial p_j} = 0 \rightarrow\]</span>
+The marginal change in expenditure as <span class="math inline">\(j\)</span>’s price changes sums the amount of <span class="math inline">\(j\)</span> originally purchased and the sum of the prices of other goods times their responses to the price change in j.</p>
+<p>Next we multiply this by the price of j and divide by income <span class="math inline">\(I\)</span> to get (bunch of steps here:)</p>
+<p><span class="math display">\[ -s_j = \sum s_i \epsilon_{ij} \]</span></p>
+<p>The budget share on j plus the sum of the budget shares of other goods multiplied by the cross-price elasticities must add up to 0. … as the price of j increases the price-weighted consumption shares must decrease. So, e.g., all goods cannot be Giffen.</p>
+<p><br />
+</p>
+</div>
+</div>
+<div id="enrichment-further-material-to-consider" class="section level2" number="4.8">
+<h2><span class="header-section-number">4.8</span> Enrichment, further material to consider</h2>
+<p>To consider constrained optimization (with many goods) using the Lagrangian method see <a href="supplements.html#lagrange">THIS supplement</a> (based on David Autor’s notes)</p>
+<div id="docprep" class="section level3 unnumbered" number="">
+<h3>Some doctoral-prep concepts</h3>
+<p><em>Some examples of things you may need to learn and use for a PhD micro module, (although only a small subset of economists actually use this in their research!). You will not be directly examined on this in the present module. Some of these are covered or touched on in O-R</em></p>
+
+<div class="fold">
+<p>Another taste, nice <a href="http://www.econ.ucla.edu/iobara/LecturePreferenceandUtility201A.pdf">UCLA notes here</a></p>
+<p><br />
+</p>
+<p>As noted, standard utility functions are defined up to ‘monotonic transformations’. We can derive proofs of the invariance of the implied preferences to these.</p>
+<p><br />
+</p>
+<p>A formal definition and proof of the idea that a utility function ‘represents’ preferences.</p>
+<ul>
+<li>Exercises like ‘show that lexicographic preferences cannot be represented by a continuous utility function’</li>
+</ul>
+<p><br />
+</p>
+<p>What conditions on a (multivariate) utility function ensure it exhibits the equivalent of a <em>diminishing marginal rates of substitution</em>?
+- Something called ‘quasi-concavity’, equivalent to ‘having convex upper contour sets’</p>
+<p>Representation of the MRS between all goods as a matrix, depicting the properties of this</p>
+<ul>
+<li>Strict quasi-concavity takes the place of DMRS in ensuring ‘simple optimisation conditions’</li>
+</ul>
+<p><strong>Several topics that we have skipped</strong></p>
+<ul>
+<li><p>Formal definitions of Hicksian (compensated) demand functions</p></li>
+<li><p>Substitution and income effects, and the Slutsky decomposition</p></li>
+</ul>
+<div class="marginnote">
+<p>Some of these concepts are important for characterizing the welfare effects of price changes and policy changes (including taxation), and for conceptualizing issues involving multiple constraints on consumer optimization (e.g., rationing). I will provide notes on these for anyone who is interested.</p>
+</div>
+<ul>
+<li>Aggregation of individual demand functions into ‘market demand’, and the properties of this</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
 <div class="footnotes">
 <hr />
 <ol start="1">
-<li id="fn1"><p>Recall the “level sets” from the maths revision.<a href="consumers-dmd.html#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>Credit: www2.econ.iastate.edu<a href="consumers-dmd.html#fnref2" class="footnote-back">↩︎</a></p></li>
-<li id="fn3"><p>Hmm… If we think of this as a traveler who loves ‘getting high’, and ‘consumes’ by driving East or North, and his utility is his altitude, maybe that helps.<a href="consumers-dmd.html#fnref3" class="footnote-back">↩︎</a></p></li>
-<li id="fn4"><p>This diagram is from a very useful resource from MIT, <a href="http://web.mit.edu/11.203/www/econ/">Frank’s Economics on the web</a>.<a href="consumers-dmd.html#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn1"><p>This diagram is from a very useful resource from MIT, <a href="http://web.mit.edu/11.203/www/econ/">Frank’s Economics on the web</a>.<a href="consumers-dmd.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>In other words, if you said to a consumer ‘this product will stop being produced/offered unless you pay us enough money’, this is the maximum amount the consumer would be will be willing to pay to keep the product on the market, at its current price.<a href="consumers-dmd.html#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>This concept can also be applied to measuring the value added by the introduction of a new good (see Application 3.4). This is useful to know for policy, particular in formulating subsidies for R&amp;D and in adjusting the CPI. It also could be used to compute damages in court cases where a firm is accused of stifling innovation.<a href="consumers-dmd.html#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Ans: Over time, consumers can adjust to price changes by changing their consumption patterns. E.g., if petrol gets more expensive I can switch to a hybrid or electric car, or a bicycle.<a href="consumers-dmd.html#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>Ans: If it were at such a point, it could raise its price and its revenue would increase and costs would decline<br />
+(because it would be selling fewer products but for greater total revenue.)<br />
+A caveat is that it might do this for a long term strategic advantage; e.g., to gain customer loyalty and market share, intending to take its profits later. We come back to a related point later in the context of monopoly pricing.<a href="consumers-dmd.html#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>Ans: Yes (do you know why?)<a href="consumers-dmd.html#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p>$_i  /  $<a href="consumers-dmd.html#fnref7" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -597,8 +1603,8 @@ This may also provide a structure to guide data-driven ‘searches for the next 
           </div>
         </div>
       </div>
-<a href="prefs-uncert.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="monop-firm-opt.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ex-uncertainty.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ex-cons-pref.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="book_assets/gitbook-2.6.7/js/app.min.js"></script>

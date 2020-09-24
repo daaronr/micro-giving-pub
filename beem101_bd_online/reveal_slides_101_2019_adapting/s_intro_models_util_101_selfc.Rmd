@@ -1,0 +1,3895 @@
+---
+date: "`r format(Sys.time(), '%d/%m/%Y')`"
+author: "David Reinstein (Exeter)"
+output:
+  revealjs::revealjs_presentation:
+    self_contained: true
+    theme: white
+    highlight: pygments
+    transition: fade
+    smart: true
+    css: reveal.css
+    center: true
+  beamer_presentation:
+    latex_engine: xelatex`
+    keep_tex: yes
+    theme: metropolis
+  ioslides_presentation:
+      self_contained: true
+      template: io.html
+options: knitr.table.format = "html"
+classoption: table
+---
+
+
+```{r somefunctions, echo=FALSE, results='hide'}
+
+#possibly move these to a separate file
+
+#multi-output text color
+#https://dr-harper.github.io/rmarkdown-cookbook/changing-font-colour.html#multi-output-text-colour
+#We can then use the code as an inline R expression format_with_col("my text", "red")
+
+format_with_col = function(x, color){
+  if(knitr::is_latex_output())
+    paste("\\textcolor{",color,"}{",x,"}",sep="")
+  else if(knitr::is_html_output())
+    paste("<font color='",color,"'>",x,"</font>",sep="")
+  else
+    x
+}
+```
+
+
+
+<!---
+
+% Slides by instructor David Reinstein
+
+-->
+
+
+----
+
+
+
+<!---
+\newbool{extrastuff}
+\ifbool{extrastuff}{extra stuff}{minimal stuff}
+-->
+
+
+
+<!---
+bash "$HOME/Google Drive/exeter_teaching/be2024/ compileslidesnotes_fuller.sh"
+-->
+
+<!---
+See also:
+general_notes_text_handout.md
+tutorials_all.md
+bee2024_lecturesupplements_quizes [Autosaved].pptx
+compileslidesnotes.sh
+examwork/be2024_mockexam.tex
+-->
+
+<!--
+test: for be101 only
+- test
+
+-->
+
+<!---
+-->
+
+<!--
+BEGINLEC1
+-->
+
+
+# Lecture1: (i) Housekeeping, models and basics [1 hour]  {.allowframebreaks}
+
+
+
+- Supplementary reading:
+    - Friedman, Milton. "The methodology of positive economics." (1953): 259. *Classic but perhaps outdated*
+    - Sugden, Robert. "Credible worlds: the status of theoretical models in economics." Journal of Economic Methodology 7.1 (2000): 1-31.
+    - Loomes, Graham, Chris Starmer, and Robert Sugden. "Observing violations of transitivity by experimental methods." Econometrica: Journal of the Econometric Society (1991): 425-439.
+    - Choi, Syngjoo, et al. "Who is (more) rational?." The American Economic Review 104.6 (2014): 1518-1550.
+
+
+# Outline and description:  The first chunk aims to cover:
+
+1. Explain what this module is about and how to get the most out of it
+2. Explain what Microeconomics is about and why it is useful
+3. Explain what the point of 'models' are
+4. Mention some *applications* of these
+5. Recap some examples of microeconomic models and questions (should be largely revision)
+    - Get your econ brain flowing
+6. Discuss 'empirical work' in Microeconomics, and how it connects to 'theory'
+
+
+
+
+<!--
+See discussion/work in Google Doc: <https://docs.google.com/document/d/10IrcCbnr7z_OdXVSptXfFNMx5uYoV7wzZEdkhKm4UW4/edit#heading=h.vo6qktxc1rvp>
+-->
+
+**Planned syllabus, coverage:**
+
+
+**Plans:** '(\*)': partially covered in pre-reqs
+
+- McAfee et al, Chapter 1  (or) Nicholson \& Snyder: Chapter 1 and 1a
+- Discussion of 'empirical identification': [The mixtape, Scott Cunningham](http://scunning.com/cunningham_mixtape.pdf) pp 18-22
+
+<aside class="notes">Based on Nicholson/Snyder Chapter 1: Economic Models</aside>
+
+---
+
+*Key goals of this lecture (and accompanying self-study)...*
+
+0. Get excited
+
+<!-- . . . -->
+
+1. What's this module's purpose and *story arc*? How to get the most out of it.
+
+
+
+<!-- . . . -->
+
+
+2. What's Microeconomics? Why is it useful? Why use 'models'? Some *applications* of models
+
+
+<!-- . . . -->
+
+
+- `r format_with_col("Recap microeconomics examples, get econ brain flowing","gray")`
+
+
+<!---
+`r format_with_col("Some material from PowerPoint Slide Presentation:  Philip Heap, James Madison University ","gray")`
+-->
+
+
+
+#  About Me
+
+```{r  fig.cap = '', out.width='25%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/youngreinstein.png")
+```
+
+
+<center> Dr. David Reinstein, davidreinstein.wordpress.com
+
+</center>
+
+<small>
+**Office hours:** Tuesday and Thursday 11am-noon during Spring term (just come by); Streatham Court 1.39 unless otherwise mentioned.
+or by appointment calendly.com/daaronr/20min/.
+ </small>
+
+
+- My research interests
+
+- My teaching and projects
+
+
+<!-- *My research interests:* Applied microeconomics and behavioral economics, impact on policy and business innovation
+
+- Charitable giving, other-regarding behaviour
+
+- Price discrimination by income
+
+- Impact of HE institution on income and life outcomes
+
+- Communicating with policymakers, managers, entrepreneurs; *Impact*
+
+- Policy markets (mechanism design)
+
+- Open science: data-sharing, meta-analysis and replication
+
+
+
+
+
+- Long walks on the beach
+
+<aside class="notes">Will incorporate research/impact in the module; ways you can get involved;
+
+
+## This module
+
+
+
+BEEM101: Microeconomics
+
+
+- Marks
+    - Midterm, 90 minutes 35 marks
+    - Final examination, 2 hours: 65 marks
+
+- Classes every fortnight
+
+
+- Plus research 'coffees' (discussion sessions) in alternate weeks, if you are interested
+
+
+
+
+
+### Texts and resources  {-#texts} {-}
+
+In previous years I recommended Intermediate Microeconomics and its Application (an Undergraduate text) by Nicholson and Snyder (available at the bookstore for about £50... older editions are fine too). However, you may find this to be  too basic a level, as it's meant for undergraduates. Have a look.
+
+I am now using and recommending several other free online resources instead (or in addition).
+
+Note that this is a 'standard core': any intermediate or advanced textbook in microeconomics will cover most of the same material.
+
+A focal resource:
+
+- [Introduction to
+Economic Analysis - MacAffee, Lewis, Dale](https://www.kellogg.northwestern.edu/faculty/dale/ieav21.pdf)
+
+A 'no-fluff' text from an esteemed source. Covers much of this module, but  the level varies somewhat throughout. Includes calculus and lots of parametric examples. Lots of great content. Lots of solved problems.
+
+I will also heavily draw on:
+
+- [Quantum Microeconomics](http://www.smallparty.org/yoram/quantum/#downloads); consider the version either with or without calculus
+    - An unconventional but very careful and interesting approach; my impression is that it is well organised and explained. You may like it!
+
+- David Autor’s MIT Open Courseware “Microeconomic Theory and Public Policy”; [all the files for this course can be downloaded here](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/) this will give you a flavor of nearly-PhD-level micro
+
+
+- [Microeconomics
+Markets, Methods & Models
+an Open Text
+by Douglas Curtis and Ian Irvine](https://laecon1.lyryx.com/textbooks/OPEN_CURTIS_MIC_1/marketing/CurtisIrvine-Microeconomics-2017A.pdf)
+    - A full-fledged text covering many of the topics of this module, without calculus
+
+- [Intermediate microeconomics - M Walbert Illinois tutorials](http://my.ilstu.edu/~mswalber/ECO240/index.html) - click 'tutorials'
+    - A series of tutorials for an intermediate microeconomics module. Covers many of the topics of this module. No calculus but a lot of algebra. Lots of supplementary materials too.
+
+<br> \bigskip
+
+***
+----
+
+`r format_with_col("Note:","red")` Module moves selectively through text: see **handout** for coverage/order
+
+- Lectures $\neq$ everything!: some material briefly mentioned in lecture/handout; learn it anyways
+
+
+
+
+
+
+
+
+----
+<!---
+##My marks
+For the Accelerate end-of-module feedback, you will be asked to rate me.
+*All* of these questions are seen as an evaluation of *my performance* specifically.
+You will be asked to express an opinion, from 'strongly agree' to 'strongly disagree'
+- The lecturer is good at explaining things
+- The module is intellectually stimulating
+- The lecturer has made the subject interesting
+- Any other comments on teaching? (open-ended question)
+- Tutorial/Seminar/Workshop staff were good at explaining things
+- Tutorials/Seminars/Workshops were well structured and encouraged me to participate
+- Any other comments on tutorials? (open-ended)
+- I have been able to contact staff when I needed to.
+- The module lead valued students' views and opinions about the module
+- Any other comments about academic support (open-ended)?
+- The criteria used in marking have been made clear in advance
+- Feedback on my work has been timely and helpful
+- Any other comments on assessment and feedback? (open-ended)
+- What opportunities has the module given you to explore ideas or concepts in depth and/or apply what you have learnt?
+- To what extent have you engaged with academic research?
+- Other comments on learning opportunities? (open-ended)
+- Do you have any comments on the learning resources (for example equipment facilities software collections)?
+- Any other comments on the module (open-ended)?
+(Most important question:)
+**Overall I am satisfied with the quality of the module.**
+*If at any time you think you don't agree with any of these, please let me know how I can make it better*
+*You can tell me directly, or anonymously at:
+-->
+
+----
+
+**Enrichment texts**
+
+*Have a look at in case you are thinking of going for a PhD in economics or taking further coursework at the MRes level*
+
+
+<aside class="notes">is similar to our text, but with more maths and formalism, and some extensions (but fewer applications)</aside>
+
+1. Microeconomic Theory: Basic Principles and Extension (also by Nicholson and Snyder): more maths and extensions
+
+2. David Autor's MIT Open Courseware "Microeconomic Theory and Public Policy": More rigorous, close to PhD level, includes good research applications; we'll be drawing from it
+
+
+3. PhD level: Jehle and Reny's "Advanced Microeconomic Theory", or  Hal Varian's text "Microeconomic Analysis"; Mas-Colell et al for wizards only
+
+#  The story of this module
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/neverendingstory.gif")
+```
+
+<aside class="notes">You will have seen many of these concepts before.
+
+But do you really understand them well enough to *explain* them to a non-economist
+
+and to *apply* them to a new real-world situation?
+
+And do you understand the *limits and critiques* of these,
+
+ and how economists try to *measure and test* them?</aside>
+
+----
+
+**1. Economic basics (weeks 1-2)**
+
+- Economic models, maths tools, introduction (NS ch. 1)
+
+- Utility, preferences, indifference curves, budget constraints (NS 2)
+
+----
+
+
+> we build it up and then burn it down...
+
+**2. Build the model, put it together, examine it (weeks 3-5)**
+
+The Demand side:
+
+Demand curves: Individual and market demand (NS ch. 3)
+
+<br> \bigskip
+
+<!-- \pause -->
+
+
+- Production, costs, returns to scale, choice of inputs
+
+<!-- \pause -->
+
+<br> \bigskip
+
+Profit maximisation and supply, perfect competition in a single market
+
+<br> \bigskip
+
+Supply curves, entry/exit, Consumer and Producer Surplus, general equilibrium and welfare (brief)
+
+----
+
+**3. How the market can go wrong (and how to maybe fix it) (weeks 6-7)**
+
+- Market failures -- Public goods
+
+- Monopolies; price discrimination as an imperfect remedy
+
+
+----
+
+
+**4. Extensions to the model and applications (weeks 8-11)**
+
+- Uncertainty (basic concepts, EU, risk aversion, investment choices)
+
+- Game theory; experimental evidence
+
+- `Behavioural': Limits to cognition, willpower, self-interest; applications and evidence
+
+
+## The big (small) question
+
+\
+
+
+> What's gonna be on the exam??
+
+<!-- \pause -->
+
+<br> \bigskip
+
+- Everything
+
+
+<br> \bigskip
+<!-- \pause -->
+
+<aside class="notes">You are responsible for *all* material on syllabus + assigned readings + materials covered in lecture and tutorials</aside>
+
+<aside class="notes">E.g., exam may cover material only briefly mentioned in lecture, and will expect knowledge from prerequisites</aside>
+
+- I reward broad understanding; `r format_with_col("'can YOU explain it?'","blue")`
+  - Show *strengths* in at least some areas (maths, readings, explanation...)
+
+Examples of exam material: Practice problems in notes/lectures, problem sets, mock and sample questions on the VLE; mock exams, previous exams (esp since 2015-16)
+
+
+
+
+
+<!-- . . . -->
+
+
+<br> \bigskip
+
+
+<!---
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("cargo-cults-336x175.png")
+```
+https://www.youtube.com/watch?v=yvfAtIJbatg
+-->
+
+
+##But anything I say you can find online, or in a book, so why are you here?
+
+
+<!-- \pause -->
+
+To interact
+
+<br> \bigskip
+
+`r format_with_col("Not to hear what the *lecturer","brown")` has to say, but for the lecturer to respond to what \emph{you* say.}
+
+<aside class="notes">Because you can interact with me, ask me questions, come up with ideas, work with other students
+
+ Impress me and get a good letter of reference.
+
+ I advise everyone to come to my OH at least once</aside>
+
+ <br> \bigskip
+
+
+
+----
+
+## Resources
+
+
+**The VLE and other resources**
+
+- VLE [let's see it](https://vle.exeter.ac.uk/course/view.php?id=7890#section-1)
+
+- Ask questions and make comments on the forum
+- [LINK](http://vle.exeter.ac.uk/mod/forum/view.php?id=535415), I will monitor it
+- I may not have time to give a detailed answer to all individual emails; but you are welcome to come to my office hours
+-->
+
+## The 'HANDOUT' file/web-book
+
+<small> For now, available to you exclusively on the [VLE](https://vle.exeter.ac.uk/pluginfile.php/1438859/mod_resource/content/1/_book/note.html) </small>
+
+<aside class="notes">In future: fully public, open source etc</aside>
+
+<br> \bigskip
+
+
+<aside class="notes">I'll add more material to this as we progress (and demarcate where we are up to); you can read ahead but I improve it  1 week in advance...</aside>
+
+<!-- \pause -->
+
+
+<!-- Handouts on VLE link: Big pdf with table of contents, or pdfs week-by-week) of individual 'chunks'
+-->
+
+Contains all the lecture slide material *and more*, html links, etc.
+
+- As we progress...
+    -  Read the introduction: Key information to understand how it works (abbreviations etc)
+    -  Leave comments/question *directly* on file via hypothes.is; it will be a conversation!
+
+
+<!-- . . . -->
+\
+
+
+<center>  `r format_with_col("The future is here!","magenta")` </center>
+
+<center> `r format_with_col("(Made with r-markdown and bookdown)","Turquoise")` </center>
+
+<aside class="notes">Occasionally I'll show you some r-code to produce diagrams, computations etc.
+
+Contact me if you wanna geek-out. </aside>
+
+
+## In-lecture interaction
+
+
+- In-lecture experiments and games
+
+- Ask me questions throughout the lecture
+
+- raise a white handkerchief if you are lost
+
+<!-- \pause -->
+
+- Draw-along and solve-along
+
+- I will hot and cold-call
+
+<!---
+- [Trial - chat feature](http://vle.exeter.ac.uk/mod/chat/gui_header_js/index.php?id=361 "chat")
+- In-lecture questions and polls (Turning-point)
+    - Possible experiments
+    - We may play games, e.g., on the 'Kahoot' web site
+- Remember to install Responseware on your smart phones, or get a free turningpoint clicker!
+    - Download it on app stores, or use it on a laptop (https://responseware.turningtechnologies.eu/responseware/)
+    - the session id is 'david' (or ?)
+    - browser mode: https://responseware.turningtechnologies.eu/responseware/
+-->
+
+
+## How to do well
+
+1. Put in the work
+
+- Read in advance, bring questions (can we flip?)
+
+<aside class="notes">This is a somewhat 'flipped teaching' module!</aside>
+
+<aside class="notes">Handouts and lectures mainly follow the text</aside>
+
+<!-- \pause -->
+
+
+
+<!-- \pause -->
+
+<br> \bigskip
+
+2. Care about the *content*
+
+
+<aside class="notes">Care about *actually* understanding this stuff and relating it to the real world. This will be rewarded.
+
+Real understanding: be able to explain this stuff in your own words and apply it to new situations
+
+</aside>
+
+<!-- \pause -->
+
+<br> \bigskip
+
+3. Interact and discuss: Peers, Forum, office hours
+
+4. Interpret the exam instructions correctly! (and use your time wisely)
+
+<aside class="notes">The last comment is especially relevant for non-native speakers of English</aside>
+
+-->
+
+<aside class="notes">Last year most people worried a great deal but got very good marks, and showed good understanding</aside>
+
+## Fortune Cookie Wisdom
+
+![fortune](picsfigs/fortunecookieyoda.jpg)\
+
+
+----
+
+## Heavies
+
+> Economists do not know everything (but we have thought through many arguments)}
+
+<aside class="notes">It may *seem* like we have the answers, but this is only where we have asked the questions very carefully </aside>
+
+----
+
+> Most non-economists do not fully understand these arguments, and they make mistakes, and they worry.
+
+> -  But sometimes ignorance is bliss.
+
+<aside class="notes">Sunk cost fallacy, gains to trade/comparative advantage, opportunity cost,
+
+free-riding/prisoners' dilemma, double-marginalization, 'raise price to raise profit', etc.</aside>
+
+<!-- \pause -->
+
+`r format_with_col("... more deep truths to follow, enough for now","gray")`
+
+
+# A BIG THEME
+
+Markets work well but not perfectly.
+
+<small> Imperfections in existing markets $\rightarrow$ opportunities. </small>
+
+
+```{r  fig.cap = '', out.width='25%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/hamdogger.PNG")
+```
+
+---
+
+
+<center> *Imperfection:* Inefficient markups for information goods with per-unit pricing </center>
+
+```{r  fig.cap = '', out.width='55%', fig.asp=.4, fig.align='center',  echo = FALSE}
+knitr::include_graphics("picsfigs/price_comparison_album_list.jpg")
+
+```
+
+
+<!-- . . . -->
+
+
+$\rightarrow$ 'All you can eat'  $\rightarrow$ `r format_with_col("Spotify, Netflix, Kindle Unlimited","blue")` \
+\
+
+<!---
+----
+Free-riding on public goods (fireworks) \
+$\rightarrow$ `r format_with_col("Disneyworld, resorts","blue")` \
+<br> \bigskip
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigsdisneyfireworks.jpg")
+```
+----
+-->
+
+----
+
+Imperfection: Lack of information about 'experience goods', lack of trust in one-shot-interactions\
+
+\
+
+```{r  fig.cap = '', out.width='65%', fig.asp=.4, fig.align='center',  echo = FALSE}
+knitr::include_graphics("picsfigs/statue.gif")
+
+```
+
+$\rightarrow$ `r format_with_col("??","blue")`
+
+---
+
+
+```{r  fig.cap = '', out.width='100%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/uglyroom.jpg")
+
+```
+
+$\rightarrow$ `r format_with_col("??","blue")`
+
+---
+
+
+$\rightarrow$ `r format_with_col("Uber, AirBnb, 'bilateral reputation systems'","blue")` \
+
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/airbnbalbertareview.png")
+```
+
+----
+
+Shyness and fear of 'losing face' \
+
+```{r  fig.cap = '', out.width='100%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/littleredhairedgirl.gif")
+```
+
+<!-- . . . -->
+
+> - $\rightarrow$ `r format_with_col("Tinder, Squad, etc.","blue")`
+
+----
+
+```{r  fig.cap = '', out.height='100%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/squad.png")
+```
+
+----
+
+Ties in to my research ...
+
+```{r  fig.cap = '', out.width='80%',  fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/losingface.png")
+```
+
+<!---
+Asymmetric information, adverse selection  \
+$\rightarrow$ `r format_with_col("NHS, Obamacare","blue")`
+-->
+
+
+# Economics and Economic Models
+
+\
+
+```{r  fig.cap = '', out.width='45%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/sphericalchicken.jpeg")
+
+```
+
+
+### What is Economics?
+
+\
+
+\note{DR: It has changed. There are different views.}
+
+> 'Economics is the study of the allocation of scarce resources among alternative uses.'
+
+\
+
+<!-- \pause -->
+
+> 'Economics is the study of mankind in the ordinary business of life.' Alfred Marshall
+
+<aside class="notes">The first quote suggests an *approach*, the second suggests a *domain*.</aside>
+<aside class="notes">'Economics never tells a man how he should act; it merely shows how a man must act if he wants to attain definite ends.' Ludwig von Mises</aside>
+ <aside class="notes">Asked two economists and will probably get at least three answers</aside>
+
+----
+
+### What is Microeconomics?
+
+
+\
+
+
+The study of the (economic) choices individuals and firms make and how these choices create markets.
+
+<!-- . . . -->
+
+
+\
+
+<br> \bigskip
+
+Largely, using theoretical and mathematical 'models' that depend on strong assumptions.
+
+
+<aside class="notes">Give some examples of economic choices: Consumer purchases, investments, life and family choices, taking a job,
+
+starting a firm, entering a market, producing a product (type, quality, inputs), pricing it...</aside>
+
+----
+
+<center>
+<big> Models are general, and can be applied to many contexts; deep meanings </big> </center>
+
+----
+
+
+
+<center>
+<big> Humans are not like billiard balls,
+universal rules are hard to come by
+</big> </center>
+
+
+<!---
+![Pilkington](http://img10.deviantart.net/c0b7/i/2015/178/f/7/karl_pilkington_by_kevandre-d8z0zzh.png)\
+-->
+
+
+
+```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/karl_pilkington_by_kevandre-d8z0zzh.png")
+```
+
+<aside class="notes">Are models 'fully realistic'? No. They are models, i.e., simplifications.
+
+ A huge body of work has gone into making these models more complex and 'general';
+
+ some of the conclusions are preserved, others are weakened or reversed.
+
+ But even these more general models are simplifications</aside>
+
+
+
+#  So why learn these models?
+
+**The tortoise and the hare**
+
+
+```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/tortoisehare.jpg")
+```
+
+<!-- . . . -->
+<center>
+<small>
+Can hares really speak?
+Is this a rabbit or a hare?
+What other animals were racing?
+</small>
+</center>
+
+<aside class="notes">'Ceteris Paribus' helps us understand why these fables can be helpful</aside>
+
+----
+
+
+What do models give us?
+
+<br> \bigskip
+
+*`r format_with_col("There are different views of this","blue")`*
+
+<br> \bigskip
+
+<!-- . . . -->
+
+
+Assumptions $\rightarrow$ Results \
+
+
+<!-- . . . -->
+
+and sometimes $\rightarrow$ testable predictions (if the assumptions hold)
+
+<br> \bigskip
+
+<aside class="notes">Adv: You can critique only the assumptions;
+
+the results are logically/mathematically proven
+
+  although when the results contradict real-world evidence this hints that the assumptions may be substantially wrong.
+
+Do these simplified models yield conclusions that are relevant to the more complicated real world?
+
+Maybe, and sometimes. We will consider the evidence </aside>
+
+
+----
+
+
+**So why learn these models?**
+
+- A starting point
+
+- (Sometimes) make testable concrete predictions
+
+- Building insight, clear arguments, a way of thinking
+
+
+<!-- \pause -->
+
+- Discussion is framed around them; seen as a 'baseline'
+
+- Understand the models to effectively critique or extend them
+
+
+
+<aside class="notes">Some critics of 'neoliberal economics' can be misinformed about what it is.
+
+Their criticism sounds to us like someone who says 'cars are dangerous and should be banned
+
+ because they go too fast and have no mechanism for stopping'</aside>
+
+
+----
+
+**Differing views** on the use of economic models
+
+*Instrumentalist:*
+
+
+The Methodology of Positive Economics (Friedman): the ultimate goal of theory is to "yield valid and meaningful ... predictions about phenomena not yet observed"
+
+----
+
+<!-- . . . -->
+
+
+'Fictionalist' (Sugden):
+
+> describes a fictional world that is credible or truthlike in something like the way that the events of a realistic novel are;
+> the model connects with the real world by relations of similarity
+
+
+
+----
+
+Are these models predictive?
+
+<br> \bigskip
+
+If not, are they useful?
+
+<aside class="notes">Reasons to model optimising behavior if it is not predictive.
+
+ But good evidence for optimisation and 'predictable irrationality' ... behavioural economics.</aside>
+
+<aside class="notes">
+-e.g., :
+    - psychological costs/benefits relating to *outcomes other than their own final consumption.*
+
+    - They may care about others' consumption (altruism etc.),
+
+    - about the way they *make* the decision,
+
+    - and about how close they come to certain goals ('reference points' and 'loss aversion').
+
+    -  may realize their  short-term choices are not in their lt interest, and try to constrain themselves
+
+    - mentally costly to carefully calculate the costs and benefits $\rightarrow$  'rational inattention'
+
+    -follow simple rules or 'heuristics' to make their decisions easier; e.g., 'work every day until I've earned  target income'.
+        </aside>
+
+
+## Economic Models
+
+<aside class="notes">Models: Simple theoretical descriptions that capture the essentials of how the economy works.</aside>
+
+<aside class="notes">LC: You already know these: Just to get your brain flowing again after all the surfing and barbecues.</aside>
+
+
+### The PPF: a 'model' and a way of seeing things
+
+<aside class="notes">Adv: Draw it; consider its slope and what it means
+See fig 1.1
+Consider: what assumptions does the PPF (implicitly) make?
+</aside>
+
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/PPF_text.png")
+
+```
+
+----
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/PPF_text.png")
+```
+
+\
+
+Principle 1: Scarce Resources
+
+Principle 2: Scarcity involves opportunity cost. \
+
+<aside class="notes">PPF illustrates key principles</aside>
+
+<aside class="notes">The opportunity cost of a good is measured by the alternative uses that are foregone producing it.</aside>
+<aside class="notes">The opportunity cost of a choice is the foregone 'next best' opportunity from a choice.</aside>
+<aside class="notes">Comprehension question, adv: Think of an example that illustrates the distinction between what is commonly thought of as the  'cost' and the economists' definition of an 'opportunity cost'</aside>
+
+<aside class="notes">I may just call this 'cost'</aside>
+
+`r format_with_col("Above PPF: opportunity cost of more clothing is less food.","gray")` \
+
+<br> \bigskip
+
+<!-- . . . -->
+
+Principle 3: Opportunity costs are (often) increasing
+
+
+<aside class="notes">As you produce more of one good, its OC (in terms of the other good foregone) increases. To produce more and more clothing you would have to give up increasing amounts of food.</aside>
+
+
+-  'Law' of diminishing marginal returns
+
+<aside class="notes">I'm somewhat sceptical of the 'law' of dmr; there are certainly increasing returns in certain regions</aside>
+
+## Akerlof's Lemons model (simplified)
+
+*See notes [here](https://www.dropbox.com/s/ygamgrzwnoz6i31/lecture5_supplement_notes_on_akerlof_slides.pdf?dl=0)*
+
+
+## Application 1.1: Economics in the Natural world
+
+<aside class="notes">You should read and consider these applications on your own.
+
+They will show how the economic principles and theory can be applied to the real-world
+
+ and test and improve your understanding of the theory.</aside>
+
+ ![buzbee](picsfigs/buzbee.jpg "Buzz the bee") \
+
+>Studies of honeybees have found that they generally do not gather all of the nectar in a particular flower before moving on.
+
+`r format_with_col("Why not?","brown")`
+
+<aside class="notes">Adv: What key features do modern human economies have that 'animal economies' don't have?
+
+ Largely: trade, prices, specialisation, free choice vs instinct </aside>
+
+----
+
+```{r  fig.cap = '', out.width='100%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/bumblebeearticle.png")
+```
+
+----
+
+![Antaphid](picsfigs/antaphid.jpg "Ant-Aphid symbiosis") \
+
+<aside class="notes">LC, Adv: Ant-aphid symbiosis, a form of mutualism. Relevant to the 'conditions necessary for trade to occur'?
+
+The ants 'farm' the aphids, who secrete sweet substances. In return the ants protect the aphids and only sometimes eat them. </aside>
+
+----
+
+<iframe src="https://player.vimeo.com/video/168280851" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+# Does (elite) higher education increase (individual) income/social welfare? Do the gains outweigh the (opportunity) costs?
+
+<small> Application 1.2 in NS text. Handout: some articles discussing this. Read at home, discuss </small>
+
+<aside class="notes">
+
+The answer to this question depends on Microeconomic concepts such as
+
+- Returns to labour inputs in (competitive?) markets; human capital
+
+- The role of skilled labor in the production function
+
+- Asymmetric information over employee 'type' and 'signaling'
+
+- Intertemporal substitution of consumption and 'discount rates'
+
+Even framing the question requires microeconomics.
+
+Consider: Social vs private returns. Is there a case for 'market failure' in the provision of education?
+
+<\aside>
+
+```{r  fig.cap = '<center>Most prominent cynic: Bryan Caplan</center>', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/bryan_caplan.jpg")
+```
+
+
+$\leftarrow$
+
+##
+
+- Consider the same for the UK/Exeter; give your best estimate
+
+- How does the analysis differ from the one your uncle would do?
+
+
+<aside class="notes">Adv:
+
+- What are the limitations to the analysis as discussed in the NS text?
+
+    - How would you estimate the 'return'; who to compare?
+
+    - What years of data are these based on -- does it tell us about *future* returns?
+
+        </aside>
+
+<aside class="notes">
+- Should the government subsidise it?
+
+    - Won't people get the optimal education without subsidies?
+
+    - Social vs private returns
+
+    - Case for market failure?
+
+</aside>
+
+----
+
+<big>Hey, ma and pa, what determines the price of a bread and the amount that gets sold?</big>
+
+
+## Would an increase in the minimum wage 'help the poor'?
+
+See [Autor lecture 1: the minimum wage debate](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/MIT14_03F16_lec1.pdf)
+
+#  Basic Supply-Demand Model
+
+
+... Describes how a good's **price** and the **quantity exchanged** are determined
+
+- Determined by the preferences/behaviour/costs of potential buyers and sellers
+
+
+<!--
+
+*I want you to be able to answer...*
+
+Marshall's Model of Supply and Demand:
+
+
+Who are these guys?
+
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/alfredmarshall.png")
+```
+
+```{r  fig.cap = '', out.width='50%in', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/adamsmith.png")
+```
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("ricardo.png")
+```
+<!--
+
+Adam Smith, David Ricardo, Alfred Marshall
+
+-->
+
+----
+
+**Adam Smith and the Invisible Hand**
+
+Prices
+
+- Not random nor morally determined
+
+- *Signals* to direct resources, reflecting the 'worth' of goods
+
+<br> \bigskip
+
+----
+
+Labour-cost-based theory of prices
+
+> Claim: If it takes twice as long for a hunter to catch a deer as to catch a beaver, one deer should trade for two beavers.
+
+<br> \bigskip
+
+<aside class="notes">Draw flat line supply here: any amount of deer supplied at price 2 beavers</aside>
+
+<aside class="notes">One argument: If it were trading at any other price (say 1-1), no one would hunt a deer,
+
+  they would just hunt a beaver and trade it for a deer; so that can't be the prevailing price.</aside>
+
+
+`r format_with_col("Why/when should this not hold (or not tell the whole story)?","blue")`
+
+<aside class="notes">One reason is that labour is not always the only input.
+ \
+Also, this 'time ratio' may depend on the quantity of each that are supplied ... diminishing returns.
+And hunters may differ in skill.</aside>
+
+----
+
+
+
+\medskip
+
+> Farmland was expanding in England ... as new and less fertile land was brought into use,
+
+> it would naturally take more labor ... to produce an extra bushel of grain.
+
+
+\
+
+
+
+Ricardo - *Diminishing returns:* the cost of producing one more of good A (here, food)---in other goods foregone---rises as more of A is produced
+
+
+<!-- . . . -->
+
+
+----
+
+**Diminishing returns/increasing costs:**
+
+<br> \bigskip
+
+- Explains why a supply curve might slope upwards
+    - Produce more $\rightarrow$ costs more $\rightarrow$ higher price necessary
+
+
+> - Left unexplained: How much is produced, thus 'what *is* the price?'
+
+<aside class="notes">LC: Draw supply curve here</aside>
+<aside class="notes">In this conception the quantity was just determined by the 'need' for the good</aside>
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/earlyviewsprice.png")
+```
+
+
+----
+
+```{r  fig.cap = '', out.height='4.8in', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/pqaxes.png")
+
+```
+
+
+<small>Upwards-sloping supply curve, but *where* on this curve do we end up?</small>
+
+
+# Marshall’s Model of Supply and Demand
+
+Argued price must equal both the value (to consumers) *and* the cost (to produce) of the last unit produced and consumed
+
+
+<aside class="notes">Needed to explain falling prices in the 19th century, while quantities were increasing</aside>
+
+Introduced the 'demand curve';  *with a downward slope*  -- because:
+
+
+<!-- . . . -->
+
+
+'Satiation' (later units valued less) and catering to less keen consumers
+
+<aside class="notes">Wtp less and less for the next unit purchased, so will buy more only at a lower price.</aside>
+<aside class="notes">Equivalently, at a lower price more people find the value exceeds the price, and for additional units</aside>
+
+
+- Equilibrium model, scissors analogy; neither *scis* cuts alone
+
+<aside class="notes">So *don't* ask 'how does the price affect the quantity exchanged'?</aside>
+
+
+<!-- . . . -->
+
+
+```{r  fig.cap = '', out.width='30%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/scis.png")
+```
+
+
+
+
+
+<!-- . . . -->
+
+
+With 'single crossing' there is a unique price where $Q_s(p)=Q_d(p)$
+
+<br> \bigskip
+
+
+<!-- . . . -->
+
+
+and a unique quantity where the last unit's value to the consumer equals it's cost to produce.
+
+
+----
+
+*Draw: the famous Marshallian cross*
+
+*Can you explain?*
+
+
+- The inefficiency of any price other than where $Q^D(p)=Q^S(p)$?
+
+- If the price was set at a different value, what forces might push it to the equilibrium?
+
+
+- Who gains and who suffers with a government-imposed price floor/ceiling?
+
+<aside class="notes">
+To economists, a 'shortage' is where, at the prevailing or imposed price,
+
+consumers are willing to buy more than is available.
+
+Some consumers get value from the good in excess of the price.
+
+They might offer a higher price, or sellers might ask for a higher price.
+
+The price rise would reduce quantity demanded (not 'reduce demand')
+
+ and increase quantity supplied (not 'reduce supply').
+ </aside>
+
+<aside class="notes">Adv: Harder question: Who gains and who suffers with a government-imposed price floor/ceiling?</aside>
+
+
+----
+
+<aside class="notes">We will also return to these questions in more depth as we build up the demand and supply curves</aside>
+
+<aside class="notes">LC: Ask students to draw for themselves, then draw standard supply and demand curves on the board here
+
+ to jog their memory.</aside>
+
+
+
+
+
+<!---
+## How Economists 'Verify' (or Assess) Theoretical Models
+Two methods:
+1. Testing Assumptions
+<aside class="notes">'Verifying' economic models by examining validity of assumptions upon which models are based.
+  Is it reasonable to assume that people are rational, that firms maximize profits etc.? DR: 'Verifying' is a bit too black and white'; all models have limitations.</aside>
+<aside class="notes">Adv: The text is somewhat dismissive of the idea of testing assumptions.
+ However, there are many cases in which the *predictions* of the models are very hard to test; e.g., the impact of a radical change in government policy or the merger of the two largest firms. \textCR
+On the other hand, in many cases the key assumptions entering into models, such as 'constant relative risk aversion' or 'geometric discounting' can be very credibly tested.
+ We can use existing micro data on thousands of household decisions, as well as experiments, to measure 'how close' behavior is to the assumption.</aside>
+2. Testing Predictions
+<aside class="notes">Verifying economic models by asking whether models can accurately predict real-world events.
+ If the model predicts events well, then the theory is useful even if the assumption may not appear to be valid. \textCR
+DR: But if the assumptions are substantially wrong, it may predict well in one particular case but not in general.
+</aside>
+## Positive and normative
+*What's the difference between the following two statements?*
+1.  "An increase in the minimum wage leads to greater unemployment."
+<aside class="notes">Adv: Previous slides had: 'We should increase the minimum wage to help low income workers.'
+ Why do I think this is not a good parallel?</aside>
+2. 'We should reduce the minimum wage, to lessen unemployment'
+- The first is a *positive* statement: it looks at 'what is'
+- The second is a *normative* statement: it looks at  'what should be'
+<aside class="notes">We will mainly focus on *positive* statements.
+
+ However, you are not forbidden from making normative statements,
+
+ and *positive* results are useful in making *normative* judgements.
+
+ But we should try to be clear which type of statement we are making.
+
+ Still, much economic research has both positive and normative interpretations and implications.
+
+ Some economists work on ways of clearly defining and quantifying preferences over social outcomes.
+
+ Others work on determining determining 'how to optimise', with implications for which policies and decisions
+
+ (for individuals, firms, governments, and nonprofits) will be most efficient and effective at attaining particular goals.</aside>
+-->
+
+
+
+## APPLICATION 1.4: Economics According to Bono
+
+Do US farm subsidies help or hurt Africans in net?
+
+Consider the effects on African *farmers* and African *producers*. How could we consider the `net effect'?
+
+<!---
+    - *Note*: Fig. 1 in text depicts *African* supply/demand mapped against *world* price
+-->
+
+## Review questions and problems from Chapter 1
+
+<aside class="notes">The 'review questions' are fundamental, thought-provoking, and challenging; don't expect an easy answer!</aside>
+
+Some questions/problems I liked are in the handout... also see Problem Set 1 on the VLE
+
+
+<aside class="notes">6. ''Gasoline sells for \$4.00 per *gallon* this year, and it sold for \$3.00 per gallon last year.
+ But consumers bought more gasoline this year than they did last year. \textCR This is clear proof that the economic theory that people buy less when the price rises is incorrect.'' Do you agree? Explain. \textCR</aside>
+
+
+<aside class="notes">Also recommended: Problems 1.5 and 1.9 with video accompaniment, for review</aside>
+
+<!-- Last year first tutorial did 1.1-1.3, 1.7-1.8 -->
+
+
+<!---
+-->
+
+----
+
+Be sure that you can do problems like 1.1 in the N\&S text without difficulty;
+
+<aside class="notes">I won't cover this but it should be easy for you. Let me know if you have difficulties.</aside>
+
+- For 1.1.C, note that for the supply curve, quantity supplied is never negative -- below a certain price, it will just be zero.
+
+
+
+- Also consider 'review questions' 6 and 8 from the text
+
+-  will go over the key parts of these problems, and you can ask questions
+
+
+
+----
+
+
+----
+
+\textrm{\huge Maths are here to help you}
+
+# Lecture 1-ii: Maths and empirical tools
+
+Math tools you must know -- see handout, referring to NS text
+
+1. (Univariate) functions, linear/nonlinear functions;  the slope of a function (arc vs. point slope), concave/convex functions
+
+2. Derivative of a function: a function that tells you the slope at each point;  Minima, maxima
+
+4. Functions of two or more variables,  contour lines
+
+5. (Simple) simultaneous equations
+
+
+**Slides, resources to help you**, plus supplementary videos; www.khanacademy.org/math/
+
+<br> \bigskip
+
+`r format_with_col("Lecture skips","red")` to [Mini-lecture: Empirical microeconomics/econometrics](empiricalmini) here
+
+
+
+
+----
+
+*Goals of this lecture (and accompanying self-study)*
+
+- Overview of (re)-aquaintance with maths tools we will use
+
+- Flavour of what *empirical* microeconomics is, key issues in empirical work
+
+<!-- . . . -->
+
+*Covers:*
+
+- Nicholson/Snyder Chapter 1a: Mathematics used in Microeconomics
+<aside class="notes">Skimmed very briefly, you should know most of this,
+
+    Here I give a 'calculus for dummies' to make this clearer</aside>
+
+
+
+<aside class="notes">Do: Understand what the math is about and how to use it.
+
+Don't worry about memorizing 'cookbook rules' that can be easily looked up.</aside>
+
+
+<!-- . . . -->
+
+
+A *very* good resource -- Khan academy: https://www.khanacademy.org/math/
+
+- E.g., see their Introduction to differential calculus
+
+
+##Simple stuff
+
+
+(Univariate) Function
+:     A 'map' from one or more *variables* $x$ to an outcome $y=f(x)$
+
+- for each value of $x$ the function tells you a single value of $f(x)$; typically we assign $y=f(x)$
+
+\
+
+<aside class="notes">'Variables' are more formally called the 'arguments' of a function </aside>
+<aside class="notes">LC: Put up and plot the function $f(x)=-10 +3x$ here.
+
+e.g., if I fish for x hours in a day, how much money do I earn (consider a 10 pound license fee)</aside>
+
+
+----
+
+\
+
+Linear function
+:     A function of the form $y=a+bX$; e.g., $y = f(x) = -10 + 3x$
+
+- Plotted as a straight line; intercept $a$, constant slope $b$
+
+<aside class="notes">Adv, Maths: For linear functions $f(a X_1 + b X_2) = a f(X_1) + b f(X_2) $ for any values of $a$, $b$, $X_1$, and $X_2$
+
+In particular 'the function of the average is the average of the functions'.
+
+This does *not* hold in general for nonlinear functions</aside>
+
+
+----
+
+
+Slope of $y = f(x)$
+:      The change in y for a given change in x.  'Rise over run' $(\Delta y / \Delta x)$.
+
+
+<br> \bigskip
+
+<!-- \pause -->
+
+- Arc slope, point slopes
+
+<aside class="notes">Arc slope is the slope over a range.
+
+Point slope: slope of the tangent to a curve at a point
+
+For linear functions these are the same</aside>
+
+----
+
+Nonlinear (univariate) function
+            : A function $f(x)$ of a form other than $f(x) = y=a+bX$;
+
+
+<!-- . . . -->
+
+
+- E.g., a quadratic function $y = f(x) = a + bx + cx^2$
+    - E,g, $y = f(x) = 10 - 2x + 3x^2$
+- Or a logarithmic $y=ln(x)$ or exponential function $y = exp(x)$
+
+<aside class="notes">I will try to limit things to linear and quadratic functions, and possibly exponential and log function</aside>
+<aside class="notes">I will remind you of the rules for dealing with these whenever it is necessary.</aside>
+
+
+----
+
+
+For linear functions the slope is the same at any point. For nonlinear functions it may differ at each point.
+
+<br> \bigskip
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/linearslope.jpg")
+```
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/nonlinearslope.jpg")
+```
+
+<aside class="notes">Think of the slope of a mountain versus the slope of a wheelchair ramp</aside>
+
+----
+
+ ![Linear and quadratic](picsfigs/linearquadratic.png)
+
+
+<aside class="notes">The point here is that increasing X by 1 has the same effect on Y wherever you start, for a linear function
+
+but a different effect depending on where you start for a nonlinear function</aside>
+<!---
+<aside class="notes">LC: Sketch a plot on board of a quadratic function;
+
+$y=-x^2+5x+1$  points (0,1), (1,5), (2,7),(2.5,7.25),(3,7),(6,-5)</aside>
+-->
+
+
+----
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/concaveconvexquadratics.jpg")
+```
+
+Instantaneous rate of change (instantaneous slope)
+:    The slope of the line *tangent* to the curve at a single point
+
+<aside class="notes">Adv, Math: This is the limit of the 'rise over run' as the run goes to zero</aside>
+
+
+<!-- . . . -->
+
+
+- Convex function: Slope everywhere increasing, unique minimum where slope $=0$
+- Concave function: Slope everywhere decreasing, unique *maximum* where slope $=0$
+
+<aside class="notes">Quadratics are convex if the squared term has a positive sign ... dominates at large x</aside>
+
+
+<aside class="notes">We will mainly deal with functions like these,
+
+ with a single minimum or maximum that occurs at the unique point with slope zero. </aside>
+
+<aside class="notes">Ex convex: Tiger's golf earnings per game as function of hours of golf retraining
+
+Or cost per smoothie as function of employees behind smoothie counter.
+
+Ex concave: how funny I am as function of beers I drink</aside>
+
+
+----
+
+Derivative of a function
+:     A *derivative* of a function $f(x)$ is another function called $f'(x)$.
+$f'(x)$ tells us the (point) *slope* of the function $f(x)$ at any point $x$.
+
+
+<!-- . . . -->
+
+
+- For example, the derivative of the function $f(x) = 2x + 3$ is $f'(x) = 2$
+    - For this linear function the slope is a constant, 2
+
+----
+
+- E.g., the derivative of the quadratic function $f(x) = x^2 -4x + 1$ is $f'(x) = 2x - 4$
+
+<br> \bigskip
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/plotaquadfncnR.png")
+```
+
+----
+
+- derivative of the quadratic function $f(x) = x^2 -4x + 1$ is $f'(x) = 2x - 4$
+
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/plotaquadfncn_andderiv.png")
+```
+
+
+
+<!-- . . . -->
+
+
+- E.g., the slope at $x=1$ is $f'(x;x=1) = 1*1 - 4 = -2
+
+- The slope is zero where $f'(x)=2x-4=0$, or where $x=2$
+
+    - *Is $x=2$ at a min, a max, or neither? How do we know?*
+
+<!---
+R code
+fun1p <-function(x) 2*x -4
+fun1 <-function(x)  x * x - 4*x+1
+plot(fun1p,-.5,5,asp=1,xlim=c(-2,3),ylim=c(-3,4))
+plot(fun1,-.5,5,asp=1,xlim=c(-2,3),ylim=c(-3,4),add=TRUE)
+abline(h=-1:3, v=-3:3, col="gray", lty=3)
+abline(h=0,v=0)
+-->
+
+
+<aside class="notes">For some functions, there are simple rules for computing the derivative.
+ You don't have to memorise the rules for this module; I will always tell you the derivative when you might need it.</aside>
+<aside class="notes">LC: Plot 'slope of function' with same X-axis as function itself</aside>
+
+
+## Minimum, maximum, or neither?
+
+- $f'(x)$ is a function that tells us the slope of $f(x)$, or how $f(x)$ changes in $x$ at any point $x$
+- In turn, the derivative of $f'(x)$ is called $f''(x)$.
+    - Tells us how the *slope* changes as $x$ increases
+
+
+----
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/concaveconvexquadratics.jpg")
+```
+
+Oversimplifying:
+
+<aside class="notes">Adv, Math: Essentially, for a class of functions where the domain is not bounded</aside>
+
+- slope always `r format_with_col("increasing","blue")` $\rightarrow$ $f''(x)>0$ everywhere $\rightarrow$ *convex* (u-shaped) function $\rightarrow$ single \textcolor{blue}{minimum} where $f'(x)=0$
+
+<!-- \pause -->
+
+- slope always `r format_with_col("decreasing","brown")` $\rightarrow$ $f''(x)<0$ everywhere  $\rightarrow$ *concave* (inverse-u) fncn  $\rightarrow$ single \textcolor{brown}{maximum} where $f'(x)=0$
+
+
+
+
+## Functions of two or more variables (multivariate functions)
+
+Utility, profit, cost, production, returns, etc.
+
+- May depend on multiple variables/inputs
+- Need to illustrate tradeoffs between these
+
+
+<!-- . . . -->
+
+$$y=f(x,z)$$
+
+- $y$ may increase and/or decrease in $x$ and in $z$,
+
+- The rate of increase of y in $x$ may depend on the values of $x$ and $z$
+
+     - Similar for the rate of increase of y in z
+
+
+<!-- . . . -->
+
+E.g., $$y=\sqrt(xz) = x^{1/2}z^{1/2}, x \geq 0, z \geq 0$$
+
+<aside class="notes">Examples: fun-ness of party = f(beer, snacks)
+
+smoothies produced = f(labour hours, machines)</aside>
+
+
+<aside class="notes">Note the outcome will increase in each argument at a decreasing rate
+
+What does it look like? 3d: project up to y from a "map" of x and z coordinates on the desk
+
+Hard to picture; 'contour lines' can help</aside>
+
+----
+
+Projecting a function up from X,Y space into the Z axis:
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/doubledip.jpg")
+```
+
+
+## Contour lines (we will come back to this later!)
+
+Contour lines
+:     Level sets - depict combinations of variables that hold the function constant at a particular value
+:     f(x,z) = A for some value $A$
+
+Level sets: *E.g., indifference curves*, *isoquants* and *isocost* curves.
+
+
+<aside class="notes">Don't worry if you find this discussion of level sets confusing
+
+ We will come back to it later in the module for a more specific case</aside>
+
+----
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/contourlines.jpeg")
+```
+
+<br> \bigskip
+
+*Contour lines on a map*
+
+<aside class="notes">It is difficult to depict more than 2 dimensions on a piece of paper.
+
+So we find the values for the 2 variables that give us a particular value for the third.
+
+Which tells us how these trade off.</aside>
+
+
+----
+
+Consider a production function:
+
+$$Y = f(K,L) = \sqrt(KL)$$
+
+<!-- . . . -->
+
+Setting this equal to 1 we can map out 'all combinations of K and L that produce output $Y=1$':
+
+<aside class="notes">By solving for the amount of K needed to produce 1 as a function of L
+
+and then plotting this against a range of L</aside>
+
+$$  Y = \sqrt(KL) = 1 \rightarrow KL = 1 $$
+
+<!-- . . . -->
+
+$$ \rightarrow K = 1/L $$
+
+<!-- . . . -->
+
+Setting this at Y = 2
+
+$$  Y = \sqrt(KL) = 2 \rightarrow KL = 4 $$
+$$ \rightarrow K = 4/L $$
+
+----
+
+![Table 1A.2](picsfigs/contourcombos.png)
+
+<aside class="notes">Connect values of x and z that lead to the same value of y.</aside>
+
+
+----
+
+![Contour lines](picsfigs/contourlines_example.png)
+
+----
+
+## Simultaneous equations
+
+![Simultaneous equations](picsfigs/simeqn.png)
+
+<aside class="notes">Class: What does this 'cross' remind you of, that we have just seen?</aside>
+
+----
+
+E.g.,
+
+$$ X + Y = 3 $$
+$$ X - Y = 1 $$
+
+\
+
+Holds only where $X=2, Y=1$, the 'unique solution'
+
+<aside class="notes">Be sure you know how to solve the above.</aside>
+
+<aside class="notes">Adv, math: Note, in general, we need as many equations as unknowns (above 2 of each) to *possibly* be able to find a solution.
+ However, some sets of equations have *no* solution, and some may have *multiple* solutions. \textCR Consider plotting overlapping lines, or parrallel lines, and looking for the point(s) of intersection.</aside>
+
+\
+
+
+<!-- . . . -->
+
+
+\
+
+Meaningless to ask 'how does a change in X affect Y?' in the above context.
+
+<aside class="notes">Equally meaningless: 'how does the price affect the quantity exchanged?' in a demand-supply Marshallian cross.</aside>
+
+
+
+## Empirical microeconomics/econometrics {#empiricalmini}
+
+
+Empirical research
+
+:     Uses evidence from the *real world*, i.e., observation, to answer questions
+
+<aside class="notes">Evidence rather than introspection and theory</aside>
+
+
+<!-- . . . -->
+
+Econometrics
+:     The 'science' of using data to answer economic questions. Uses statistical tools and often economic theory
+
+
+<!-- . . . -->
+
+Micro-data
+:     Data where the unit of observation is an individual, household, firm, etc.
+
+<aside class="notes">Contrasts from macro-data, data on aggregates like GDP, inflation, etc.</aside>
+
+ <aside class="notes">Most of this module will cover economic theory and the application of this theory to the real world.
+
+ We will refer to empirical *evidence* a bit; I want you to have some sense of how this is evidence is built.</aside>
+
+<aside class="notes">LC: Give me an example of micro-data</aside>
+
+<aside class="notes">Adv: Econometrics often has a different focus and different methodology than 'regular statistics'.</aside>
+<aside class="notes">Adv: Econometrics has taken on a larger role in economics over the past 40 years, because of greater data availability and computing power.
+ Most published papers in economics now involve some econometric analysis.</aside>
+
+----
+
+
+See, e.g.,
+
+- [Euro-stat microdata](https://www.eui.eu/Research/Library/ResearchGuides/Economics/Statistics/DataPortal/EurostatPublicUse)
+
+- [Data on individual donations (at the donor level) from a large scale field experiment (Karlan and List) downloadable HERE](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910/DVN/27853)
+
+- [Price and product data on gluten-free bread at the supermarket level](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910/DVN/27853s)
+
+\
+
+----
+
+
+## Empirical(ish) example
+
+<aside class="notes">A bit advanced, don't worry if it goes above your head a little</aside>
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/peachprices.png")
+```
+
+Trying to estimate demand curve, hypothesize linear function
+    $$Q_d = a-bp$$
+
+`r format_with_col("Suppose we know price is shifting because of costs, shifts in *supply","gray")` curve, or the firm experimenting*
+
+<aside class="notes">Adv: Otherwise the problem is poorly identified, as demand and supply will jointly determine price</aside>
+
+Observe price \& quantity data for a period where *ceteris paribus* is reasonable
+
+----
+
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/demanddata.png")
+```
+
+Fit 'best' line (minimise error) through these points
+
+- Estimate demand slope \& intercept, use to make inferences
+
+- Never fits exactly. `r format_with_col("why not?","blue")`
+
+<aside class="notes">Ans: unobserved differences, nonlinear demand, measurement error, randomness in behaviour</aside>
+
+
+- Advanced: `r format_with_col("Why is this *only","blue")` meaningful if we are observing shifts in the \emph{supply curve and not the demand curve?*}
+
+----
+
+### Ceteris paribus
+
+> All [most] economic theories employ the assumption that 'other things are held constant.'
+
+- Above, demand may differ between weeks/stores, weather changes,  etc.
+
+
+<!-- . . . -->
+
+
+> the points may lie on several different demand curves, and attempting to force them into a single curve would be a mistake.
+
+$\rightarrow$ Carefully 'control' for other observable factors (a partial solution)
+
+<aside class="notes">Adv: May also use flexible functions permitting heterogeneity -- differing *slopes*</aside>
+
+<aside class="notes">Can never control for everything or know 'true' functional form; sadly all *empirical* work involves imperfect compromises
+
+But happily there are ways to test and validate the estimates, e.g., see how well they predict future outcomes</aside>
+
+
+## Exogenous and endogenous variables
+
+<aside class="notes">This is a difficult concept</aside>
+
+Suppose a model of supply and demand with 'exogenous shifters':
+
+- $W$:  an external or *exogenous* variable that increases the quantity demanded (at any price)
+
+<aside class="notes">E.g., the amount of a windfall tax rebate, boosting net income</aside>
+
+- $Z$:  an *exogenous* variable that makes production more costly
+<aside class="notes">increasing the price firms require to supply a particular quantity</aside>
+<aside class="notes">E.g., the level of the minimum wage, or e.g., energy prices</aside>
+
+\
+
+<!-- . . . -->
+
+Now write the supply/demand model as:
+$$Q=-P+W$$
+$$P=Q+Z$$
+
+- P and Q are *endogenous* variables, so don't ask 'how does P change in Q?'
+- W and Z are *exogenous* variables
+    - If we know W and Z we can solve for the equilibrium Q and P
+    - 'Comparative statics': how equilibrium responds to shifts in W \& Z
+
+<aside class="notes">I think the discussion of the reduced form is too short to be helpful</aside>
+
+
+## Application 1A.3: ... Changing world oil prices (time-permitting)
+
+<aside class="notes">This is a great example from perhaps the most important global market, with tremendous fluctuations that have huge impacts.
+
+ It shows the power of empirical microeconomics.</aside>
+
+<aside class="notes">Note edition 12 updates</aside>
+
+![](picsfigs/Brent_Spot_monthly.png)
+
+----
+
+
+Empirical work has estimated:
+
+<aside class="notes">dollars, millions of *barrels*, earlier period</aside>
+
+\
+
+$$ Q = 85 - 0.4P \: (D) $$
+$$ Q = 55 + 0.6P \: (S) $$
+
+
+<!-- . . . -->
+
+
+Solving: $85 - 0.4P=55+0.6P \rightarrow P = 30, Q = 73$
+
+\
+
+<br> \bigskip
+
+Approximates 2000-2002 price
+
+
+----
+
+*Why did price rise to US\$130 in 2008 and fall to \$50 by March '09?*
+
+<!-- . . . -->
+
+- China \& India's economies grew $\rightarrow$ growth in the world economy by 3-4\% per year
+    - (Various calculations) $\rightarrow$ Demand shifts out from  $Q_D = 85 - 0.4P$ to:
+
+<aside class="notes">I think the 'new demand' curve comes from an approximation:
+
+if the world economy grew at 4\% per year over seven years, each year it was 1.05 times it's previous size. ... thus the growth is $1.047^7=1.316$.
+
+They assume oil's demand curve would shift out proportionally but have the same slope. 1.316*85 is about 112.
+
+Note that the NS text has a typo: equation 3 on page 40, the new demand, should read $Q=112-0.4P$.</aside>
+
+$$Q_D = 112 - 0.4P$$
+$$Q_S = 55 + 0.6P$$
+
+
+$\rightarrow$ solves to $P=57, Q=87$
+
+<!-- . . . -->
+
+
+- Overall price inflation, US\$ devaluation $\rightarrow$ gets us to about \$94. `r format_with_col("So why the 130 USD price?","blue")`
+
+<aside class="notes">The rest? Speculation, other disruptions *Supply* shifts? (political turmoil, new energy sources...)</aside>
+
+<aside class="notes">Class question -- current price of oil in USD and GBP? Ans: (look online)... PwC wants `industry awareness'.</aside>
+
+<aside class="notes">26 Sep 2018 about \$80 or £61</aside>
+
+
+
+##First problem set: coverage
+
+See the Problem set 1 file on the VLE
+
+<br> \bigskip
+
+
+
+
+<!---
+8 total problem sets; each covering a block of material
+- Material from exams or builds exam skills
+-->
+
+
+- Representative answers for each problem set given about 1-week after posting
+
+- Five support classes (tutorials), cover *parts* of these
+
+----
+
+
+E.g., ...
+
+I.  Plotting supply and demand "for orange juice", solving, for equilibrium price, excess demand/supply at non-equilibrium prices
+
+<aside class="notes">In the real world, you might collect data like this and want to 'fit a line' to it.
+
+But it will never such a precise fit (you will fit a 'regression line' to minimise the deviations), and the 'all else equal' assumption is always an issue.</aside>
+
+
+----
+
+
+<br> \bigskip
+
+II.  Impact of shift in demand (for milk) on equilibrium, depending on slope of supply curve, explain
+
+
+----
+
+III. Example of some (tricky) MCQs from previous exams
+
+
+<br> \bigskip
+
+E.g., "True or false: It is valid to plot observed prices and quantities traded in a market and fit a line through them to estimate a market demand curve."
+
+<!-- . . . -->
+
+<br> \bigskip
+
+IV. Discussion questions: practice writing concise essays and bullet points
+
+
+<!---
+BEGINLEC2
+-->
+
+
+# Lecture2:  Utility and Choice [Chapter 2: 1-2 hours]
+
+
+## Motivation (preamble)
+
+Consider a decision you recently made?
+
+<br> \bigskip
+
+- Define this decision clearly.
+
+- How do you think you decided among these options?
+
+
+<!-- \pause -->
+
+2 minutes: discuss with your neighbour
+
+<aside class="notes">What did this depend on? Would other people in your place have made the same decision?
+
+If you got amnesia and forgot what you decided and then were in the same situation again. Do you think you'd make the same decision?</aside>
+
+----
+
+Suppose I asked you
+
+'State a rule that governs (determines/characterizes) how people *do* make decisions'...
+
+<!-- . . . -->
+
+<br> \bigskip
+
+I want this rule to be...
+
+1. Informative (it rules *out* at least some sets of choices)
+
+2. Predictive (people rarely if ever violate this rule)
+
+----
+
+Similar question:
+
+'State a rule that governs how people *should* make decisions'..
+
+ <br> \bigskip
+
+By 'should' I mean that *they will not regret having made decisions in this way.*
+
+<!-- \pause -->
+
+2 minutes: discuss with your neighbour
+
+----
+
+<big> If  people *did* follow these rules, what would this imply and predict? </big>
+
+<!-- \pause -->
+
+Rules defined as 'axioms about preferences'
+
+
+<!-- . . . -->
+
+
+<small> 'Standard axioms'  $\rightarrow$ (imply that) choices can be expressed by 'individuals maximising *utility functions* subject to their *budget constraints*' </small>
+
+
+$\rightarrow$ yields predictions for individual behavior, markets, etc.
+
+<aside class="notes">Economists and decision theorists have tried to come up with and defend such rules.
+
+ They have started from these `reasonable axioms' and follow their logical implications for \textCR
+individual choices, individual responses to changes in prices and income,
+
+market prices and quantities and their responses,
+
+`welfare' and inequality outcomes for entire economies, etc.</aside>
+
+----
+
+
+# Lecture 2, Ch.2 -- Utility and Choice -- coverage
+
+\underline{Key goals of these lectures (and accompanying self-study)}
+
+**Learn, understand, be able to explain and explain:**
+
+- 'Utility', how it's defined
+
+- Key assumptions about preferences/choices; their implications
+
+
+<!-- . . . -->
+
+
+> - Depict preferences/utility with 'indifference curves'
+    - ... examples of 'perfect substitutes' and 'perfect complements'
+
+
+----
+
+
+
+> - 'Budget constraints', compute and model them
+
+
+<!-- . . . -->
+
+
+> - Maximising utility subject to constraints
+    - optimisation condition for this
+
+    <!---
+    price ratios \& mgnl rates of substn.
+    -->
+
+----
+
+<!-- . . . -->
+
+- Depict and interpret optimisation with indifference curves and budget constraints
+
+<aside class="notes">Warn that this is somewhat abstract but it will make sense
+
+ Part 2 (ch 2-3) involves building the demand curve from first principles,
+
+  and discussing how to interpret it</aside>
+
+<aside class="notes">
+- Want to develop a model that can be used to show how we make choices or decisions.
+
+-Your choices are determined by two things:
+
+-Preferences: what goods do you like
+
+-Constraints: how much money do you have, what are the prices of the goods you buy
+</aside>
+
+## Main readings and sources
+
+- [McDL](https://www.scholars.northwestern.edu/en/publications/introduction-to-economic-analysis-v2): Ch 12, plus 'preference relations'
+
+- AUT: [Lecture 3 - Axioms of Consumer Preference and the Theory of
+Choice](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/MIT14_03F16_lec3.pdf) (note, slightly different notation)
+
+- NS: Ch 2
+
+
+
+## Enrichment and extensions (optional)
+
+David Autor's notes \url{https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/} -- MIT Microeconomic Theory and Public Policy
+Open CourseWare
+
+
+
+# Utility
+
+Utility
+:     "The pleasure or satisfaction that people get from their economic activity."
+
+<!-- . . . -->
+
+<br> \bigskip
+
+:     Alt: The thing that people maximise when making economic decisions
+
+<aside class="notes">Adv: There is some debate about the meaning and interpretation of utility, particularly in the Behavioural Economics literature</aside>
+
+<aside class="notes">Adv: A defining feature of the standard Economics approach is that decisions are made as if all characteristics of outcomes can be compared and evaluated,
+
+  thus we can reduce everything to a single dimension, 'utility', which is maximised</aside>
+
+----
+
+*How is this used?*
+
+<br> \bigskip
+
+<!-- . . . -->
+
+
+> - Utility will be expressed as a single number that arises from the combination of all goods and services consumed.
+
+<!-- . . . -->
+
+
+<br> \bigskip
+
+
+>  Essentially, economists assume that `when making a choice among all available and feasible options, an individual will choose the one that yields the greatest *utility*'
+
+
+## Utility from two goods
+
+$$Utility = U(X,Y; other)$$
+
+
+\
+
+
+<!-- . . . -->
+
+
+- Leisure and 'goods consumption'
+- Food and non-food
+- Coffee and tea (holding all else constant)
+
+
+
+
+## Measuring and comparing utilities
+
+<aside class="notes">Adv: This is a difficult but well-studied issue, as it is important for methodology and welfare analysis.
+
+
+ In more detailed discussions, we might speak of 'cardinal utility', 'ordinal utility', etc.,
+
+ to indicate ways we can compare utility between individuals and in response to policy changes.</aside>
+
+Utility is not 'observable and measurable in utils'
+
+<!-- \pause -->
+
+(Unlike midi-chlorians or thetans)
+
+
+<br> \bigskip
+
+<!-- \pause -->
+
+> - Utility is seen to govern an individual's *choices* and thus it's only inferred indirectly, from the *choices* people make
+
+----
+
+**Revealed preference:** if Al buys a cat instead of a dog, and a dog was cheaper, we assume Al gets more utility from a cat
+
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+knitr::include_graphics("picsfigs/alscat.jpg")
+```
+
+----
+
+
+*Interpersonal comparisons are difficult*
+
+
+- Who gets 'more' utility?
+
+
+<br> \bigskip
+
+
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/facepalmstatue.jpg")
+```
+
+----
+
+*...Interpersonal comparisons are difficult*
+
+- Transfer from Al to Betty: Is the reduction in Al's utility more or less than the increase in Betty's?
+
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/babytakingfood.JPG")
+```
+
+As we only get at utility through an *individual's* decisions, we have no reliable way to compare it across individuals</aside>
+
+<aside class="notes">However, there is work done in the field of public choice trying either to build this up from *axioms* (e.g., the veil of ignorance),
+or by eliciting people's preferences over distributions through interesting surveys, experiments, and voting behavior.
+
+</aside>
+
+
+----
+
+Standard utility functions are only 'identified' (only make distinct predictions) 'up to a monotonic transformation'
+
+- i.e., a 'rank preserving' transformation.
+
+-  E.g., multiply by a positive number, log, square, add/subtract from it;
+
+    - the new utility function makes the same predictions; this is not helpful, because it means we cannot distinguish these empirically!
+
+
+<!-- . . . -->
+
+
+> - The "benefit": we can transform (e.g., log) a utility function for convenient calculation
+
+
+<!-- . . . -->
+
+> - When we deal with uncertain choices, the 'Von Neumann - Morgenstern' utility functions will be somewhat more restrictive and thus better identified.
+
+<aside class="notes">If you believe people obey those axioms and are thus EU maximisers</aside>
+
+<aside class="notes">The Autor reading refers to Cardinal versus Ordinal utility.
+
+ We use the latter in demand/consumer theory.</aside>
+
+
+
+# Standard assumptions about preferences ('axioms')
+
+
+
+1. Completeness
+
+<aside class="notes">Given two options, A and B, a person can state which option they prefer or whether they find both options equally attractive.</aside>
+
+<aside class="notes">The more formal and parsimonious definition (Autor readings, Jehle/Reny) develop this from a single relation 'weakly preferred to'.</aside>
+
+2. Transitivity (internal consistency)
+
+<aside class="notes">If I prefer A to B, and prefer B to C, then I must prefer A to C.</aside>
+
+
+3. More is Better (*nonsatiation, or some variant of this*)
+
+
+<aside class="notes">Completeness and transitivity (and continuity)  are necessary for people's choices to be represented by (continuous) *utility functions*
+
+Continuity is necessary for 'well behaved' (not-jumpy) demand curves
+
+(Local) Nonsatiation will help us derive results</aside>
+
+
+----
+
+### 1. Completeness
+
+$$A \succ B, B \succ A, \: or \: A \sim B $$
+
+\medskip
+
+`r format_with_col("Fancy notation: Either A preferred to B, B preferred to A, or A indifferent to B","gray")`
+
+
+
+<!-- . . . -->
+
+
+
+
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/donkeybales.jpeg")
+```
+
+
+Forbidden: "I can't choose between a ski holiday and a beach holiday, but I am not indifferent"
+
+<aside class="notes">Also forbidden: the *time* or *frame* in which I make the *decisions* shouldn't affect my choices</aside>
+
+<aside class="notes">Violations?: See, e.g., 'Predicting Hunger: The Effects of Appetite and Delay on Choice; Read and van Leeuwen, 1998... is there really a true preference here?
+
+See also Sunstein and others on 'choosing not to choose'</aside>
+
+----
+
+
+### 2. Transitivity
+
+$$ A \succ B \: and \: B \succ C \rightarrow A \succ C $$
+
+
+- Similar for indifference ($\sim$)
+
+
+<aside class="notes">If I prefer an Apple to a Banana and a Banana to Cherry then I prefer an Apple to a Cherry.
+
+ A similar idea holds if I am indifferent between one pair of these.</aside>
+
+<aside class="notes">If this seems confusing it may be because it is *too* obvious (although behavioral and experimental economists claim to find violations).</aside>
+
+
+----
+
+
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
+knitr::include_graphics("picsfigs/applebananacherry.jpg")
+```
+
+
+
+If I prefer an Apple to a Banana and a Banana to Cherry
+
+
+<!-- . . . -->
+
+
+then I prefer an Apple to a Cherry.
+
+
+<!-- . . . -->
+
+
+If not $\rightarrow$ money pump.
+
+<aside class="notes">Adv: 'Money pump' argument -- If you found someone who strictly preferred an apple to a banana, a banana to a cherry, and a cherry to an apple,
+
+ you could make a lot of money out of them!</aside>
+
+
+
+<aside class="notes">LC: Measuring violations: references in handout</aside>
+
+
+----
+
+### 3. More is better (similar to nonsatiation, 'monotonicity')
+
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/moreisbetter.png")
+```
+
+\medskip
+
+*Draw this!*
+
+`r format_with_col("\footnotesize{If the product is a 'bad' (e.g., pollution), redefine as the *absence","gray")` of the product*}
+
+<aside class="notes">The darkly shaded area represents those combinations of X and Y that are unambiguously preferred to the combination X\*, Y\*.
+
+ This is why goods are called ''goods''; individuals prefer having more of any good rather than less.
+
+  Combinations of X and Y in the lightly shaded area are inferior to the combination X\*, Y\*,
+
+ whereas those in the questionable areas may or may not be superior to X\*, Y\*.</aside>
+
+
+
+# Who cares?
+
+<br> \bigskip
+
+**If people obey the first two assumptions (axioms),$^\ast$
+they will make choices in a way consistent with maximising a (continuous) *utility* function**
+
+<br> \bigskip
+
+
+*($\ast$ and also 'continuity')
+
+
+
+<aside class="notes">silly to say people *actually* consult a utility function.
+
+instead 'people behave as if they are maximizing utility functions';
+
+
+ similar to  "people choose based on preferences that satisfy the above assumptions. </aside>
+
+<aside class="notes">Axioms stand directly behind 'revealed preference' methods for measuring how much people value
+
+nonmarket goods, like clean air and national parks.
+
+Also gives a vocabulary and a way to test for violations of this consistency, and make alternate predictions</aside>
+
+
+----
+
+Continuity and nonsatiation
+
+<aside class="notes">Continuity: If bundle A pref B and $C$ 'lies within an epsilon radius of $B$ than A pref C.
+
+  Adding this to the previous axioms $\rightarrow$ utility representation.
+
+ Also ensures continuous utility functions and allow ... 'marginal utility' and gradually sloping demand curves
+
+ of course differential utility ensures continuity</aside>
+
+ <aside class="notes">LC/CQ: What preferences (later in this chapter) suggest *not* differentiable utility? Were these continuous?(rem -- right and left shoes)
+
+ What about 'lexicographic'? preferences</aside>
+
+<aside class="notes">Axiom 3 (nonsatiation) makes the maths more convenient, and is necessary for some results/predictions</aside>
+
+<aside class="notes">Strictly, most results only require the weaker 'local nonsatiation' condition</aside>
+
+
+----
+
+
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/moreisbetter.png")
+```
+
+
+- How can we compare the "?" areas? Which are preferred?
+
+\
+
+
+ <!-- \pause -->
+
+
+$\rightarrow$ Compare utilities, depict using *Indifference Curves*
+
+
+<aside class="notes">LC: Here, put up indifference curve picture on the visualiser</aside>
+
+# Voluntary trades and indifference curves
+
+Indifference curve
+:     A curve that shows all the combinations of goods or services that provide the same level of utility
+
+<br> \bigskip
+
+
+<!-- \pause -->
+
+Formally (for 2 goods), the set of pairs of $\{X,Y\}$ such that $U(X,Y)=c$ for some constant $c$
+
+
+<br> \bigskip
+
+
+<aside class="notes">Recall  "level sets" from math tools</aside>
+
+
+<!-- \pause -->
+
+
+<!---
+## App 2.2 : Should Economists care how the mind works?
+- Look to biology, psychology, cognitive science for key principles/modeling?
+- Evidence of systematic departures from maximization of a consistent and standard utility *function*
+    - E.g., treating some prices differently and ignoring information
+    - Self-control and 'paying not to go to the gym'
+- Should we describe/model *optimizing* behavior or 'typical behavioral patterns'?
+    - Arguments for each; see chapter 17 on 'Behavioral Economics'
+-->
+
+----
+
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/indifcurves_util_together.jpg")
+```
+
+Credit: www2.econ.iastate.edu
+
+----
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/indif_utility_2_400.jpg")
+```
+
+Credit: Frank's Economics on the web (MIT)
+
+
+----
+
+# Properties of indifference curves
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/indifccurve.png")
+```
+
+\
+
+<aside class="notes">Suppose you are someone that likes hamburgers and soft drinks!
+
+If this is too difficult, think of 2 healthy goods, like runner beans and green tea.
+
+  Note that the *period* of consumption; a day, a year, or a lifetime, is not specified.</aside>
+
+<aside class="notes">LC: draw/KEEP THIS ON THE BOARD</aside>
+
+<!-- . . . -->
+
+`r format_with_col("Rank order of preference/indifference between points A-E.","blue")`
+
+<aside class="notes">Ans: $E \succ A \sim B \sim C \sim D \succ F$</aside>
+
+----
+
+```{r  fig.cap = '', out.height='1.8 in', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/indifccurve.png")
+```
+
+\
+
+Q1: How do we know $E \succ B$ ?
+
+<aside class="notes">Q1: Has more soft drink, same hamburgers. Assumption 3: more preferred to less.</aside>
+
+
+<!-- . . . -->
+
+
+Q:  How do we know $E \succ A$ ?
+
+<aside class="notes">B indifferent to  A because on same indifference curve
+
+If $E \succ A$ and $B \sim A$ then $E \succ A$ by transitivity of the preferences, assumption 2.</aside>
+
+----
+
+**Why 'voluntary trade'? **
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/indifccurve.png")
+```
+
+The indifference curve offers some intuition.
+
+<aside class="notes">Individual ok giving up soda for hamburgers or v/v *along* indifference curve
+
+A trade that put them *above* the IC makes them 'strictly' better off
+
+*Consider if one individual had D and another A, and they had the same preferences.*</aside>
+
+<aside class="notes">Line between two bundles:  all 'convex combinations' of these,
+
+In normal-speak, a partial share of each bundle.
+
+Note with the same DMRS for both, trades along this line make both better off;
+
+the *points* they would trade to depends on their bargaining power</aside>
+
+# Marginal rate of substitution (MRS)
+
+
+MRS =  Absolute value of slope of indifference curve
+
+<br> \bigskip
+
+'Rate at which you're willing to forgo consuming ($Y$) to consume one more ($X$)'
+
+<aside class="notes">2024, Adv, math: This slope will equal the negative of the *ratio* of the rate at which utility increases in each good (partial derivative).
+
+   Intuition: giving up a certain utility from one good must be balanced by an increase in utility from the other good.</aside>
+
+
+
+- (So the MRS is the ratio itself, because it's the absolute value.)
+
+- Formally, the MRS at point $X,Y$, where $U(X,Y)=U_1$ is:
+
+
+<!-- . . . -->
+
+
+$$MRS(X,Y)=-\frac{dY}{dX}|U(X,Y)=U_1$$
+
+
+----
+
+
+*Back to fig 2.2 (board or visualiser)*
+
+\
+
+- A to B: willing to give up 2 hamburgers to get 1 more soda.
+
+$\rightarrow$ slope $-2$, $MRS=2$
+
+
+<!-- \pause -->
+
+- From B to C? (think about it)
+
+
+<!-- \pause -->
+
+
+...willing to give up 1 hamburger to get 1 more soda $\rightarrow MRS =1$
+
+
+<!-- \pause -->
+
+
+- C to D?
+
+
+<!-- \pause -->
+
+$MRS = \frac{1}{2}$
+
+
+<aside class="notes">Be careful: it is very easy to get the MRS inversed</aside>
+
+<aside class="notes">Here this refers to arc slopes; however,
+
+for continuous functions this gets closer and closer to the point slope
+
+the smaller the arc</aside>
+
+\
+
+
+<!-- \pause -->
+
+
+- Note the decline: 'diminishing MRS':  may reflect *satiation*
+
+
+# Preference for variety/balance
+
+![Fig 2.3](picsfigs/indifcurvebalance.png) \
+
+<aside class="notes">Adv: this 'preference for variety' is thought to hold for most combinations of goods, most of the time, but perhaps not for all pairings.
+
+It tends to lead to easy-to-solve 'interior solutions' where people may consume some amount of each good, and have smooth reactions to price changes.
+
+Extreme of this is 'necessity' goods. </aside>
+
+<aside class="notes">LC: Adjust previous picture on visualiser/board</aside>
+
+<aside class="notes">With an indifference curve with this shape ('convex')
+
+
+  any consumption bundle that represents a 'mixture' between two equally attractive extremes will be preferred to those extremes
+
+
+E.g., if I like bundles A and D equally, I prefer a bundle of 1/3 of a and 2/3 of D to either A or D.</aside>
+
+
+----
+
+More formal concept: (strictly) convex preferences $\Leftrightarrow$  (strictly) 'quasiconcave' utility function, allowing  'n goods':
+
+
+With diminishing MRS, for a 'convex combination' of the two bundles $\mathbf{A}=(X_A,Y_A)$ and $\mathbf{D}=(X_D,Y_D)$
+
+
+<!-- . . . -->
+
+
+$$U(\alpha\mathbf{A}+(1-\alpha)\mathbf{D})\geq\alpha U(\mathbf{A}) + (1-\alpha)U(\mathbf{D})$$
+
+where $0<\alpha<1$.
+
+(Note switch to a 'weak inequality' here for quasiconcavity, strict for 'strict quasiconcavity')
+
+
+<!-- . . . -->
+
+e.g., (with two goods),
+
+
+$$U(\alpha X_A + (1-\alpha)X_D,\alpha Y_A + (1-\alpha)Y_D)\geq  $$
+$$\alpha(U((X_A,Y_A)) + (1-\alpha)(U(X_D,Y_D))$$
+
+
+<aside class="notes">One reason economists like this 'quasiconcavity' is because it rules out local, but not global optima, so we only need to use
+
+ the first-order conditions to find the optima.
+
+ Looking under the lamp or 'without loss of generality'?</aside>
+
+ <aside class="notes">Note that 'quasiconcavity' does not require differentiability,
+
+ and it is preserved under a 'monotonic transformation' (stretching).
+
+ This means its called an 'ordinal property'</aside>
+
+<aside class="notes">Holds for all relevant properties, including MRS; see Autor's Lecture 3</aside>
+
+
+----
+
+# Indifference curve map
+
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/indifcurvemap.png")
+```
+
+<!-- \pause -->
+
+Indifference curves `r format_with_col("never cross!","red")`
+`r format_with_col("And are never upwards sloping!","red")`
+
+
+
+
+<aside class="notes">This looks like the special case of 'homothetic preferences':
+
+- these have the same slopes as you shift them outward
+
+implying that consumption of each good expands proportionally in income
+
+and the impact of a single-consumer's income increasing by \$1 million will be the same as
+
+1 million consumers' incomes increasing by \$1; this assumption underlies 'representative consumer' models</aside>
+
+
+<aside class="notes">LC: Adjust previous picture on visualiser/board</aside>
+<aside class="notes">Key principles: IC's never cross, never slope upwards, and they have zero-thickness</aside>
+
+
+# Illustrating particular preferences
+
+![Fig 2.5](picsfigs/particularpreferences.png) \
+
+<aside class="notes">Note, these preference violate some of the above assumptions and do not exhibit diminishing MRS</aside>
+<aside class="notes">
+- Smoke grinders are useless: violates 'more is better'; can be ignored.
+
+- Houseflies are a *bad*. (But housefly *reduction* is a good).
+
+- Two types of petrol: *perfect substitutes* (at 1:1); no preference for variety.
+
+- Left and right shoes are *perfect complements* in 1:1 proportions; no benefit to more of one without the other
+    </aside>
+
+## App 2.3: Product positioning in marketing (read at home, see handout)
+
+
+- Preference for balance? (Convex indifference curves)?
+    - If market research suggests a broad group indifferent between A and D (in fig 2.3), they may strictly prefer G
+    - $\rightarrow$ a possible *niche* for a new profitable product
+<aside class="notes">Class question: What may be a critique, exception to this logic, e.g., for a particular food?</aside>
+
+
+<aside class="notes">SA: Convex preferences, 'preferring mixtures' a very strong assumption, unlikely to hold everywhere, or for actual *mixtures*.
+
+  1. I'm  indifferent between liver and custard, I don't prefer  liver-flavoured custard, nor equal amounts of side by side. \textCR
+- 2. Producing an 'intermediate' attribute may be more costly;
+
+  E.g., hard to make a car that is spacious *and* fast.
+</aside>
+
+- Utility/indifference curves: Also a framework for marketing analysis
+
+<aside class="notes">Yes, highly theoretical, developed to address big questions like 'who gains from trade?'
+
+Still, it helps organise thinking for some managers/marketers
+
+ Marriot hotel used focus groups to 'construct (multidimensional) indifference curves' to consider ideal product positioning</aside>
+
+
+# Definitions: Perfect substitutes and complements
+
+Perfect substitutes
+
+:     Goods A and B are Perfect Substitutes when an individual's utility is linear in these goods
+
+: when she is always willing to trade off A for B at a fixed rate (not necessarily 1 for 1)
+
+----
+
+Perfect complements
+
+:     Goods A and B are Perfect Complements when an individual only gains utility from (more) A if she also consumes a defined (additional) amount of B, and vice-versa
+
+<br> \bigskip
+
+These goods are 'enjoyed only in fixed proportions'.
+
+<aside class="notes">e.g., left and right shoes (1-1) bicycle frames and wheels (1-2) or, perhaps, baking powder and flour (1-40) for someone who only eats soda bread.
+
+ We will give a specific functional form later.</aside>
+
+
+
+
+## Choices are subject to constraints :(
+
+You cannot spend more than your (lifetime) income/wealth $\rightarrow$ *budget constraint*.
+
+<aside class="notes">Sorry ... maybe that's why they call Economics the dismal science</aside>
+
+
+<!-- . . . -->
+
+
+\begin{figure}[hb]
+  \centering
+    ```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/budgetconstraint.png")
+```
+  \caption[Budget constraint for two goods]
+   {Budget constraint for two goods, slope $-P_x/P_y$}
+\end{figure}
+
+
+<aside class="notes">Think 'food' and 'nonfood'.
+
+Slope $-Px/Py$: How much $Y$ I must sacrifice to get another unit of $X$.
+
+
+
+To get another $X$ it costs me $P_xX$, so the more costly is $X$ the more $Y$ I must give up.
+
+For each  $Y$ I give up I save $P_Y$, so the more costly is $Y$ the more I can save by giving up 1 unit of it,
+
+thus, the less I need to sacrifice of $Y$ to get another unit of $X$.
+
+ </aside>
+
+<aside class="notes">Careful: it is very easy to get this slope ratio backwards!
+
+However, I'll try not to make such errors too costly on the assessments.  </aside>
+
+
+----
+
+### Budget constraint algebra
+
+
+If I spend all my income `r format_with_col("(I will do over a 'relevant lifetime')","gray")`:
+
+\
+
+<!-- \pause -->
+
+
+
+Expenditure on X + Expenditure on Y = Income (I)
+
+\
+
+$$P_X X + P_Y Y = I $$
+
+
+<!-- . . . -->
+
+
+To see how $Y$ trades off against $X$, rearrange this to:
+
+
+<!-- . . . -->
+
+
+\
+
+$$Y = -\frac{P_X}{P_Y} X + \frac{I}{P_Y}$$
+
+
+<!-- . . . -->
+
+
+- Intercept $\frac{I}{P_Y}$: amount of Y you can buy if you only buy Y
+- Slope $-\frac{P_X}{P_Y}$: how much Y you must give up to get another X
+
+<!---
+<aside class="notes">Adv: Strictly speaking, the slope is how much Y you *get* when you get another X,
+
+but since this is negative we see that you 'get a negative amount', i.e., give up some amount of Y</aside>
+-->
+
+<aside class="notes">Work on making sure you can calculate the slope and intercept,
+
+what they mean, and have intuition for why the slope has this formula. See 'micro quiz 2.3'.</aside>
+
+
+## Utility maximization
+
+![Utility max depiction](picsfigs/utilmax.png) \
+
+<aside class="notes">LC: Depict on visualiser/board</aside>
+
+<aside class="notes">
+- Can choose any point in shaded area,  want to get to highest indifference curve \
+
+- How do we know A is suboptimal? B? Points between B and C?
+- Will choose point C, yielding utility $U_2$ \
+
+- What is special about point C? \
+
+- It's the point of *tangency* between the budget constraint and an indifference *curve* \
+
+- Point where the slope of budget constraint = slope of indifference curve
+
+</aside>
+
+----
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/utilmax.png")
+```
+
+
+<br> \bigskip
+
+*If* slope budget constraint = slope indifc curve at point X,Y $\rightarrow$
+$$P_X/P_Y = MRS(X,Y)$$
+
+
+<aside class="notes">As both slopes are negative both negative signs cancel out, leaving this condition.
+
+</aside>
+
+
+<!-- . . . -->
+
+
+`r format_with_col("Warning:","red")` This equality holds *at* an optimal choice; it doesn't hold everywhere.
+
+----
+
+**At an optimal consumption choice** `r format_with_col("(given above assumptions)","gray")`
+
+- Consume all of income; `r format_with_col("locate *on* budget line; follows from 'more is better'","gray")`
+
+- Psychic tradeoff (MRS) equals market tradeoff ($P_X/P_Y$) `r format_with_col("if consuming both goods","gray")`
+
+<aside class="notes">This holds for all goods where you consumed a positive amount, assuming  'convex preferences'.
+</aside>
+
+
+----
+
+
+Psychic tradeoff (MRS) equals market tradeoff ($P_X/P_Y$) `r format_with_col("if consuming both goods","gray")`
+
+\
+
+<br> \bigskip
+
+*Key intuition:*
+
+
+If I can give up X for (buy less X, get more Y) at some rate, and the *benefit* I get from doing this is at a *different* rate,
+
+
+<!-- . . . -->
+
+
+...then I can make myself better off.
+
+
+<!-- . . . -->
+
+
+Thus the original point could not have been optimal.
+
+
+<aside class="notes">Think about this carefully; it is a key method of proving things in economic theory.</aside>
+<aside class="notes">See example in handout and practice question there</aside>
+
+<!---
+**Example, for intuition**
+- Suppose, at your chosen consumption bundle, your MRS = 1.
+- To remain indifferent, you'd give up 1 ham to get 1 soda.
+<br> \bigskip
+- Suppose the price of soda is £1 and the price of a ham is £2.
+    - Price ratio: $P_S/P_B = 1/2$
+- $\rightarrow$  if you buy one less ham you can buy two more sodas.
+- $\rightarrow$ if you give up a ham, you can get a soda to keep you indifferent *+* another soda.
+    - You'd be better off $\rightarrow$ the original bundle wasn't optimal.
+<aside class="notes">Practice question: in what direction would you adjust this bundle if the price of a soda was £2 and a hamburger was £1. Explain.</aside>
+-->
+
+----
+
+
+### More insight
+
+
+Recall $U=U(X,Y)$.
+
+$$U_X(X,Y) := MU_X(X,Y)$$
+
+\medskip
+
+
+<!-- . . . -->
+
+
+*Derivative w/ respect to X: rate utility increases if we add a little X, holding Y constant*
+
+- Similarly for $MU_Y$.
+
+
+<!-- . . . -->
+
+
+
+
+MRS: 'how much Y would I be willing to give up to get a unit of X'?
+
+<!-- . . . -->
+
+Ans: Depends on marginal benefit of each ... we can show $MRS(X,Y)=\frac{MU_{X}}{MU_{Y}}$
+
+<aside class="notes">Intuition: the more valuable a little more X is to me  -- the higher is MU_X --
+
+  the more Y I am willing to give up to get it. That is why MU_X is in the numerator</aside>
+
+<aside class="notes">See derivation in handout if interested</aside>
+
+
+----
+
+
+The 'first order change in utility' (or 'total differential') is:
+
+$$ dU  = \frac{\partial U}{\partial X}dX + \frac{\partial U}{\partial Y}dY$$
+$$ = MU_{X}dX + MU_{Y}dY$$
+
+- Where = $\frac{\partial U}{\partial X}$ refers to the partial derivative of U(X,Y) with respect to X, and similarly for Y. I.e., the marginal utility.
+
+<!-- . . . -->
+
+
+
+Essentially, approximates the total change in utility for very small changes in X and Y.
+Setting it equal to zero and rearranging it yields the rate, at the margin, one is willing to give up Y for X:
+
+
+$$ dU  = MU_{X}dX + MU_{Y}dY = 0 $$
+
+$$\frac{dY}{dX}=-\frac{MU_{X}}{MU_{Y}}$$
+
+
+
+<aside class="notes">This is a simple case of the implicit function theorem,
+
+ essentially $U(X,Y)=c$ defines an implicit function Y(X), whose slope is the negative of the ratio of the derivatives.</aside>
+
+
+
+
+----
+
+
+Rearranging the utility maximising condition yields more intuition:
+
+$$P_X/P_Y = MRS = MU_X/MU_Y$$
+\
+
+
+<!-- . . . -->
+
+
+(at each consumption point X,Y)
+
+\medskip
+
+$$\frac{MU_X}{P_X} = \frac{MU_Y}{P_Y}$$
+
+
+<!-- . . . -->
+
+
+Same 'bang for each buck' (`r format_with_col("if","red")` optimising)
+
+<aside class="notes">If this didn't hold true and you were spending on both goods,
+
+you would be paying 'more per util' for one good than the other,
+
+and thus should reallocate to that other good.</aside>
+
+
+<aside class="notes">The more valuable a little more X is to me at that point
+
+ -- the higher is MU_x -- the more Y I'm willing to give up to get it.
+
+That is why MU_x is in the numerator.
+The more valuable a bit more Y is at that point -- the higher is MU_y -- the less Y I am willing to give up to get a bit more X.
+
+ That is why MU_y is in the denominator</aside>
+
+##Caveat on 'corner solutions'
+
+
+- If you are consuming *both goods* and optimising, $P_X/P_Y = MRS = MU_X/MU_Y$ must hold
+
+<br> \bigskip
+
+`r format_with_col("Advanced: This is a necessary but not sufficient condition, sufficient if DMRS everywhere","gray")`
+
+\
+
+<aside class="notes">Same condition applies to each good you are consuming a positive amount o<br> \bigskip f</aside>
+
+<br> \bigskip
+
+
+`r format_with_col("But...","red")`
+
+----
+
+But...
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/chiapet.jpg")
+```
+
+----
+
+- If you are consuming both goods and optimising, $P_X/P_Y = MRS = MU_X/MU_Y$ must hold
+
+
+<!-- . . . -->
+
+
+- But you might consume *none* of some good (say X):
+    - if even with *no* X, $MU_X/P_X<MU_Y/P_Y$, the marginal utility of the first unit 'per pound' is lower
+
+----
+
+```{r  fig.cap = '', out.height='5in', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/goodwedontbuy.png")
+```
+
+----
+
+Enrichment:
+
+Constrained problem equivalent to optimising a single unconstrained 'Lagrangian' function
+
+- See Autor Lecture 4, 'mathematical solution to the Consumer's problem'
+
+----
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/consumerlagrangian.png")
+```
+
+- This yields the above optimisation (first-order) conditions
+
+(subject to non-negativity constraints)
+
+<aside class="notes">there are additional non-negativity constraints,
+
+  $\rightarrow$ should use Kuhn-Tucker 'complementary slackness' condition
+
+ but if an unconstrained ... solution doesn't violate the constraint, ignore it</aside>
+
+----
+
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/solutioninngoods.png")
+```
+
+
+
+##App 2.4: ticket scalping
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/scalping.png")
+```
+
+
+<aside class="notes">
+- tickets are rationed: one per customer
+
+ - Constraint $\rightarrow$ Lower utility; would choose A if unconstrained
+
+ - budget line not tangent to indifference curve, slopes not equal
+
+ - Would be better off buying more tickets, but cannot
+
+ - Would be willing to buy additional ticket at full price (move to point C)
+
+ - Willing to pay *more* than full price for second ticket
+    - could give up up to an additional C-D of goods for ticket 2 and still be as well off
+</aside>
+
+<aside class="notes">
+- Adv: Tough questions:
+
+    - Why would NFL institute this rule?
+
+    - Who benefits? (Maybe poor consumers?)
+
+    - Why do people see scalping as unfair?
+
+    - Is there ever a justification to forbid a transaction between 2 consenting parties? </aside>
+
+##App 2.5: What's a rich uncle's promise worth?
+
+![](picsfigs/williesuncle.png) \
+
+<aside class="notes">
+- Willie would choose point A, but paid \$5k to abstain, would get him to point B, gain $U_3$
+
+- Graphically, how much \$ would have been enough to compensate for abstaining?
+
+- Hard question, foreshadowing: How much would Willie need to be paid to get him to $U_3$ *without* the restriction?
+
+- Is this more or less than \$5k?</aside>
+
+##Using the model of choice
+
+1. Why do people spend their money on different things?
+2. What do different preferences/indifference curves imply for choices?
+
+<aside class="notes">LC: Move to PowerPoint slides here for graphical illustration,
+
+ beginning with 'Utility Maximization: A Graphical View' and going through 'different types of goods'</aside>
+
+
+<aside class="notes">
+- what indicates each persons' preference for one good over the other?
+
+    - The shape of the indifference curve.
+
+    - The flatter (steeper) the indifference curve the stronger the preference for the good on the Y-axis (X-axis)</aside>
+
+
+----
+
+*Move to ppt slides here
+beginning with 'Utility Maximization: A Graphical View'*
+
+
+<aside class="notes">todo: integrate into main presentation</aside>
+
+----
+
+
+# Algebraic/numerical examples
+
+
+Consider: are these 'perfect substitutes' for someone who wants caffeine, but has no taste buds?
+
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/amount-of-caffeine-in-drinks.jpg")
+```
+
+----
+
+### Perfect substitutes, but not identical, e.g.,
+
+<aside class="notes">This may be confusing.
+
+By 'perfect substitutes' we mean pairs of goods for which *some amount* of one is always valued the same as *some amount* of the other,
+
+  and this proportion is always the same.
+
+An easy example:  I might always be indifferent between three pints of mild ale and two pints of strong ale,
+
+ if they have the same total alcohol content and I only want to get tipsy.</aside>
+
+$$U(X,Y)=4X+3Y$$
+
+
+<!-- . . . -->
+
+Rates each increase utility per-unit (derivative) are constant: $MU_X = 4$, $MU_Y = 3$
+
+
+<!-- . . . -->
+
+
+So (for perfect substitutes) buy the one that increases it more *per-\pounds*
+
+----
+
+**With perfect substitutes: 'Bang for the buck' rule**
+
+$$U(X,Y)=4X+3Y$$
+
+<br> \bigskip
+
+- Compare $MU_X/P_X$ to $MU_Y/P_Y$
+
+<!-- \pause -->
+
+- Here, if $4/P_X > 3/P_Y$, then buy X
+
+- if $4/P_X < 3/P_Y$, then buy Y;  `r format_with_col("(if equal, buy either)","gray")`
+
+
+- Rearranging, if $P_X < 4/3 P_Y$, buy X ... etc.
+
+<!-- \pause -->
+`r format_with_col("Warning:","red")` If *not* perfect substitutes, MU ratios depend on consumption levels.
+
+----
+
+### Perfect complements
+
+<aside class="notes">AKA 'Leontief preferences'</aside>
+<aside class="notes">Lecture question: come up with an example</aside>
+
+Mathematical function example:
+\
+
+$$U(X,Y)=min(2X,Y)$$
+
+`r format_with_col("E.g., X: bicycle frames, Y: wheels.","gray")`
+
+
+<!-- . . . -->
+
+
+<br> \bigskip
+
+`r format_with_col("Warning:","red")` this min function looks backwards, but it's correct; see notes
+
+
+ <!-- \pause -->
+
+- Shortcut: figure out the proportions it will be consumed in
+    - determine cost of '1 bundle of the combo' at given prices
+    - ... then buy as many such bundles as you can afford
+
+<aside class="notes">"Min" function just takes the smaller of the arguments
+
+to max this (not waste money), set the arguments to 'min' equal, here 2X=Y</aside>
+
+<aside class="notes">You should be able to do this without having taken economics.
+
+ Suppose you were given \pounds100 and asked to spend it to make as many sausages-with-baps as possible.
+
+ No one can eat a sausage without a bap, nor vice-versa.
+   Sausages come in packs of 4, and baps come in packs of 8. How many packs of each will you buy,
+
+  Supposing both types of packs cost \pounds1 each?</aside>
+
+----
+
+### Middle-ground (\*)
+
+A Cobb-Douglas example
+
+$$ U(X,Y)=\sqrt(XY) $$
+
+
+
+<aside class="notes">LC: We are 'allowed' to square the whole thing to simplify the problem. Why?</aside>
+
+<!-- . . . -->
+
+
+$$MU_X = \frac{\partial}{\partial X} (XY)^{1/2} = \frac{1}{2} (Y/X)^{1/2}$$
+
+$$MU_Y =  \frac{1}{2} (X/Y)^{1/2}$$
+
+
+<aside class="notes">General Cobb-Douglas: $U(X,Y)=X^a Y^b$ for a, b positive constants</aside>
+
+<!---
+<aside class="notes">\* If time is short, we may cover this in the class/tutorial instead)</aside>
+-->
+
+<!-- . . . -->
+
+<br> \bigskip
+
+
+*Here, amount of Y you'd give up to get a unit of X:*
+
+$$MRS(X,Y)= MU_X/MU_Y = Y/X$$
+
+<aside class="notes">MU_X is the slope of U(X,Y) in X at a particular point, i.e., the (partial) derivative with respect to X</aside>
+
+
+
+<aside class="notes">The last equality comes from this *particular* function; it is not always Y/X.</aside>
+
+
+<!-- . . . -->
+
+
+\footnotesize{Check reasonable: The more Y I've , the more Y I'd give up to get another X :)}
+
+
+
+<!---
+<aside class="notes">Adv: In doing theoretical (i.e., more pure mathematical) work,
+
+economists typically like to find results under as general 'weak' conditions as possible,
+
+making the fewest possible assumptions or restrictions.
+
+Still, it can be helpful to use particular functional forms, both for estimation using data,
+
+and for illustrating theoretical insights.
+
+However, it is actually rather difficult to find simple functions that are easy to work with and have nice 'reasonable' properties.</aside>
+-->
+
+
+----
+
+$$ U(X,Y)=\sqrt(XY) $$
+
+$$MRS(X,Y)= MU_X/MU_Y = Y/X$$
+
+
+<br> \bigskip
+
+Calculus:
+
+$MU_X$ is the slope of $U(X,Y)$ in X at a particular point,
+i.e., the (partial) derivative with respect to X
+
+$$MU_X = \frac{\partial}{\partial X} (XY)^{1/2} = \frac{1}{2} (XY)^{-1/2}Y = \frac{1}{2} (Y/X)^{1/2}$$
+
+
+<!-- . . . -->
+
+Similarly,
+
+$$MU_Y =  \frac{1}{2} (X/Y)^{1/2}.$$
+
+
+----
+
+*...Cobb-Douglas ctd*
+
+$$MRS(X,Y)= MU_X/MU_Y = Y/X$$
+
+<!-- . . . -->
+
+Here utility-maximization requires, at optimal choices of X and Y:
+$$MRS(X,Y)= Y/X = P_X/P_Y$$
+
+<aside class="notes">Check it makes sense.
+
+ As P_X increases the right-hand-side (RHS) increases,
+
+  and so to increase the LHS I must increase the units of Y consumed,
+
+  and thus decrease the units of X consumed</aside>
+
+<aside class="notes">I say 'here' because we now have nice convex indifference curves with 'normal' slopes,
+
+unlike for perfect complements or substitutes.
+
+The more of one good you have the less you value it relative to the other good (unlike perfect substitutes)
+
+but you still value more of it somewhat (unlike for perfect complements)</aside>
+
+ <!-- . . . -->
+
+
+For any price ratio, find ratio of Y \& X.
+
+With prices and income,  $I$, find consumption of X \& Y.
+
+<!-- . . . -->
+
+Rearranging optimization condition:
+
+$$Y P_Y = X P_X$$
+
+<aside class="notes">Class question-  What is weird about this?
+Ans: You always spend the same *amount* on each good, no matter the price
+
+ (Note, that doesn't mean the same number of units)
+
+ This 'constant expenditure shares' are a characteristic of Cobb-Douglas functions that limit their usefulness and realism</aside>
+
+----
+
+Optimization condition for `r format_with_col("this particular","red")` utility function:
+
+$$Y P_Y = X P_X$$
+
+
+<!-- . . . -->
+
+
+Combining this with the budget constraint
+$$P_X X + P_Y Y = I$$
+
+solve for X \& Y, as fncns of prices \& income (see notes) $\rightarrow$
+
+<!-- . . . -->
+
+
+\medskip
+
+$$Y = I/(2P_Y)$$
+$$X = I/(2P_X)$$
+
+<aside class="notes">Rearranging the optimization condition, $Y = X P_X/P_Y$.
+ \
+From the b.c., $X = (I - P_Y Y)/P_X$.
+ \
+Substituting in for $Y$ yields $X = (I - P_Y(X P_X / P_Y))/P_X = I/P_X - X$
+ \
+$\rightarrow 2X = I/P_X \rightarrow X = I/(2P_X)$
+ \
+$X P_X = I / 2 \rightarrow$ always spend half your income on X.
+ \
+Adv: You can solve for the optimal $Y$ by 'symmetry': as utility
+ \
+and budget constraint are symmetric everything we said holds replacing X with Y.
+ \
+</aside>
+
+
+# Generalisations
+
+- Complicated (e.g., nonlinear) pricing and budget constraints
+
+- Many goods; when can I consider 'all other goods' as a 'composite good' in considering price changes, etc?
+
+
+<aside class="notes">To explore these issues further ... take more advanced modules in Economics!</aside>
+
+----
+
+
+###Cobb-Douglas general form (from other text)
+
+$$U(X,Y)=X^aY^b$$
+
+where a, b are positive constants
+
+
+<!-- . . . -->
+
+
+This is *"homothetic"*:
+
+
+<aside class="notes">Homothetic: MRS constant along a ray through the origin
+
+ Can be represented by an HD1 utility function.
+
+ties down 'income effects' in a boring way
+
+consumption of each good expands proportionally in income,
+
+so impact of 1 consumer's income increasing by \$1 million the same as 1 miln consumers' gaining \$1;
+
+underlies 'representative consumer' models;
+
+... poor man just buys a tiny amount of foies gras and jumps in a tiny money bin</aside>
+
+
+$$MU_X=\frac{\partial U}{\partial X} = aX^{a-1}Y^b$$
+$$MU_Y=\frac{\partial U}{\partial Y} = bX^{a}Y^{b-1}$$
+
+
+<!-- . . . -->
+
+
+Taking the ratio of these yields
+
+$$MRS = \frac{a}{b}\frac{Y}{X}$$
+
+
+<!-- . . . -->
+
+
+So only the *ratio* Y/X affects the MRS; e.g., double both and MRS is the same.
+
+
+<!-- . . . -->
+
+
+
+- `r format_with_col("Another relevant example: 'Constant Elasticity of Substitution preferences'","gray")`
+
+----
+
+###A non-homothetic example
+
+
+$$U(X,Y)=X+ln(Y)$$
+
+<!-- . . . -->
+
+Here Y has a diminishing MU, but for X MU is constant
+
+
+$$\frac{MU_X}{MU_Y}= \frac{1}{1/Y}=Y$$
+
+
+So the MRS increases as Y increases, but it's independent of the amount of X consumed.
+
+
+<!-- . . . -->
+
+
+`r format_with_col(" So, if we double both then (class question)?","blue")`
+
+
+<!-- . . . -->
+
+
+Ans: MRS doubles
+
+
+----
+
+This represents *Quasilinear* preferences:
+
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/Quasilinear_utility.png")
+```
+
+
+More generally (and usefully) $U=x_1+f(x_2,...,x_n)$ linear in one 'numeraire' good $x_1$.
+
+<aside class="notes">Here, the amount of the 'non-numeraire goods' consumed adjust to match the price ratio but don't depend on the income
+
+ we think 'the tradeoff between these goods is the same for people of all income levels'
+
+ in, e.g., principal-agent analysis we can then ignore 'but won't the preference for leisure change when people are richer'?</aside>
+
+<aside class="notes">Intuition: if the 'Y' goods have more MU consume them 'first',
+
+  until their MU diminishes to that of the numeraire, then consume X</aside>
+
+
+
+
+##App 2.6: Loyalty programmes (Skip in lecture)
+
+```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/kinkedbc.png")
+```
+
+<aside class="notes">Purchases in excess of $X_D$ are at a lower price.
+
+Unlikely price programme which *exactly* makes consumer indifferent.
+
+Lower slope after $X_D$: still locate at A, higher slope: buy larger quantity.
+
+I think this example is important but a bit confusing here ... what is the connection to frequent flier miles?
+
+The 'business customers pay zero out of pocket' seems an unrelated point</aside>
+
+
+# Doctoral-prep concepts
+
+*Some examples of things you will need to learn and use for a PhD micro module*
+
+Another taste,  [UCLA notes here](http://www.econ.ucla.edu/iobara/LecturePreferenceandUtility201A.pdf)
+
+
+- Utility functions defined up to 'monotonic transformations'
+    - proofs of the invariance of the implied preferences
+
+- More formal (and multivariable) representations of the preference axioms
+    - Involving set theory (e.g., open and closed sets)
+
+- More general 'weaker' conditions, e.g., only *local* nonsatiation
+
+
+----
+
+(Doctoral-prep concepts)
+
+\
+
+- A formal definition and proof of the idea that a utility function 'represents' preferences
+
+- Exercises like 'show that lexicographic preferences cannot be represented by a continuous utility function'
+
+----
+
+
+What conditions on a (multivariate) utility function ensure it exhibits the equivalent of a *diminishing marginal rates of substitution*?
+
+- Something called 'quasi-concavity', equivalent to having 'convex upper contour sets'
+
+
+<br> \bigskip
+
+Representation of the MRS between all goods as a matrix, properties of this
+
+- Strict quasi-concavity takes the place of DMRS in ensuring 'simple optimisation conditions'
+
+
+----
+
+
+
+
+##  Second problem set: covers chapter 2 (and chapter 3) -- see VLE
+
+Preferences, Utility, Consumer optimization,
+
+<!-- \pause -->
+
+<br> \bigskip
+
+individual and market demand curves.
+
+
+<!-- \pause -->
+
+This is a very large problem set (others are smaller).
+
+<!---
+- $2.5.$ Ms. Caffeine enjoys enjoys coffee (C) and tea (T) according to the function $U (C; T ) = 3C + 4T$
+    - Parts a and b only
+    - a. What does her utility function say about her MRS of coffee for tea? What do her indifference curves look like?
+    - b. If coffee and tea cost \$3 each and Ms Caffeine has \$12 to spend on these products, how much coffee and tea should she buy to maximize her utility?
+
+    -->
+----
+<!---
+- 2.3 Paul derives utility only from CDs and DVDs. His utility function is
+    $$U=\sqrt(CD)$$
+    - Parts a-c (*Note,there is a video solution to this on the Cengage web site*   )
+    - a. Sketch Paul's indifference curves for U=5, U=10, and U=20
+    - b. Suppose Paul has \$200 to spend and that CDs cost \$5 and DVDs cost \$20. Draw Paul's budget constraint on the same graph as his indifference curves.
+    - c. Suppose Paul spends all of his income on DVDs. How many can he buy and what is his utility?
+    - We extend this problem: Continuing this, note $MRS=MU_C/MU_D$ in general, and for this case:
+        $$MRS=MU_C/MU_D=\frac{D\frac{1}{2}(CD)^{-1/2}]}{C\frac{1}{2}(CD)^{-1/2}}=D/C$$
+    - I. With this information, determine how many CDs and DVD's Paul will buy, and what his utility will be.
+    - II. Explain intuitively, graphically, and mathematically, why we know this allocation will maximise his utility.
+- 2.7. 'Assume consumers are choosing between housing services...'
+    - All parts
+    - We may not go over this in tutorial as there is a video posted on the textbook site.
+    -->
+
+
+
+<!--
+BEGINLEC3
+-->
