@@ -7,7 +7,7 @@ What can we reasonably say about 'what people prefer and choose'? How can we sta
 
 Digging deeply into the logic and justifications for these models of choice, and alternative frameworks, will be very relevant in considering Behavioral Economics (This is a specialty of Ariel Rubinstein, one of the O-R text's two authors, and also a research interest of mine). In fact, this text works behavioral economics in from the beginning.
 
-This is also relevant for building empirical models such as 'models of consumer choices and preferences' in ways that are relevant to (e.g.) Business-data-analytics consulting.
+This is also relevant for building empirical models such as 'models of consumer choices and preferences' in ways that are relevant to (e.g.) business-data-analytics consulting.
 
 ```
 
@@ -59,7 +59,7 @@ Choice](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-pub
 
 ```
 
-### Readings: 'real research papers' {-#readings}
+### Readings: 'real research papers' {-#readings0}
 
 Supplementary and conceptual readings (please read at least *some* of these):
 
@@ -219,7 +219,7 @@ However, I see these details as particularly relevant for a few reasons and in a
   
 **When we take a step back and look outside the classical model to consider:** 
 
-**1. Group and 'social preferences'** including preferences over abstract quantities and contexts that nonetheless have real impact on decisions. For example, 'effective altruists' and social planners need to consider whether to support charities and policies that may 'bring more happy people into existence' against others that do more to 'improve the happiness of existing people'. The philosophical issue of "population ethics" (see., e.g., [@blackorbyIntertemporalPopulationEthics1995], and the discussion in [this podcast](https://80000hours.org/podcast/episodes/hilary-greaves-global-priorities-institute/#transcript)) delves deeply into how preferences can be reasonably defined. ... and millions of dollars in donations are potentially at stake.
+**1. Group and 'social preferences'** including preferences over abstract quantities and contexts that nonetheless have real impact on decisions. For example, 'effective altruists' and social planners need to consider whether to support charities and policies that may 'bring more happy people into existence' against others that do more to 'improve the happiness of existing people'. The philosophical issue of "population ethics" (see., e.g., @blackorbyIntertemporalPopulationEthics1995, and the discussion in [this podcast](https://80000hours.org/podcast/episodes/hilary-greaves-global-priorities-institute/#transcript)) delves deeply into how preferences can be reasonably defined. ... and millions of dollars in donations are potentially at stake.
 
 \
 
@@ -459,12 +459,14 @@ Note that the set of preferences where 'x and y are equally desirable' is includ
 
 We consider some standard assumptions over preferences that, combined with some other assumptions,  will be  sufficient to justify using a 'utility function. 
 
+
 <div class="marginnote">
-Later, we will also consider the 'More is Better' ('nonsatiation' or 'monotonicity') type of assumptions.
 
-We skip the standard 'continuity' assumption here, although we return to a version of it when we consider uncertainty.
+Other common assumptions (which we will return to when we consider [consumer preferences](#consumers_dmd): 
 
-Another common 'axiom' involves 'diminishing marginal rates of substitution' or, in multiple dimensions, 'strict quasi-concavity', something you may come across in your maths/optimization module.
+- 'More is Better' ('nonsatiation' or 'monotonicity') type of assumptions.
+
+- 'Convex preferences,' 'diminishing marginal rates of substitution' or, in multiple dimensions, 'strict quasi-concavity', something you may come across in your maths/optimization module.
 
 In general, axioms like these also stand directly behind 'revealed preference' methods for measuring how much people value nonmarket goods, like clean air and national parks.
 </div>
@@ -510,12 +512,11 @@ Aside: Also 'forbidden' in the classical model: the *time* or *frame* in which I
 
 \
 
-
 **Definition: Completeness** (From O-R)
   
 
 <div class="marginnote">
-DR #TODO: I intend to add a video here discussing this
+Also please see my video above.
 </div>
  
 
@@ -691,6 +692,31 @@ It is fun, but it is *barely* used later in the text.
 ```  
 
 \
+#### Continuity (for  preferences over certainties) {#continuity}
+
+```{block2,  type='note'}
+Note: I define continuous preferences here, while O-R do not define this until the chapter 'Consumer Preferences'. I'm not sure why they made that choice.
+
+```  
+
+
+What is continuity?  One definition:
+
+Continuity: If $A \succ B$ and $C$ 'lies within an $\epsilon$ radius of $B$' then $A \succ C$.
+
+
+More completely, O-R define continuity as:
+
+```{block2,  type='def'}
+
+The preference relation $\succsim$ on $\R^2_{+}$ is continuous if whenever $x \succ y$ there
+exists a number $\epsilon> 0$ such that for every bundle $a$ for which the distance
+to $x$ is less than $\epsilon$ and every bundle $b$ for which the distance to $y$ is less
+than  $\epsilon$  we have $a \succ b$ (where the distance between any bundles $(w_1, w_2)$
+and $(z_1, z_2)$ is $\sqrt{|w_1 − z_1|^2 + |w_2 − z_2|^2}$
+```  
+
+
 
 ### Possible preferences .. "Preference formation" {#pref-form}
 
@@ -1257,6 +1283,15 @@ One possible objection... These were 'hypothetical' questions; no one was actual
 
 ## Utility functions {#util}
 
+
+<center>
+
+Video: "A utility function represents preferences"
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9TwugICeJfw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</center>
+
 Recall, a ['value function'](#valfunc) simply assigns a real number to each alternative. A *Utility function* is simply a value function which 'represents preferences'. 
 
 ```{block2,  type='def'}
@@ -1407,7 +1442,7 @@ Similarly for the 'minimal' element.
 
 \
 
-O-R Lemma 1.1 ... in any 'nonempty finite set' there must be at least one mimal and at least one maximal element. This is pretty obvious and intuitive. 
+O-R Lemma 1.1 ... in any 'nonempty finite set' there must be at least one minimal and at least one maximal element. This is pretty obvious and intuitive. 
 
 Still, it is worth reading over the *proof* of this as it gives you an easy example of 'proof by induction'. The logic of 'proof by induction'... (to prove that something holds for a set of any countable size $N$):
 
@@ -1501,29 +1536,29 @@ where $r(x)$ is the row number and $c(x)$ the column number.
 
 #### Allowing for infinite sets: *some* (but not all) preferences can be represented by a utility function {-}
 
-```{block2,  type='technote'}
-There are 'important' economic theorems specifying 'sufficient conditions for preferences to be represented by a utility function' ; we will not cover it, but unfold below for some more discussion, if you are interested.
-
-```  
+There are 'important' economic theorems specifying 'sufficient conditions for preferences to be represented by a utility function'. We will consider this briefly.
 
 
-```{block2,  type='fold'}
+'Continuous preferences' (defined [above](#continuity)) as well as completeness and transitivity  $\rightarrow$ a utility representation; these are jointly sufficient conditions for preferences to be represented by a utility function. Continuous preferences will also ensure continuous utility functions and allow us to discuss concepts such as 'marginal utility' and ensure and gradually sloping demand curves.
 
-'Continuous preferences' as well as completeness and transitivity  $\rightarrow$ a utility representation; these are jointly sufficient conditions. Continuous preferences will also ensure continuous utility functions and allow us to discuss concepts such as 'marginal utility' and ensure and gradually sloping demand curves.
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9TwugICeJfw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
+<div class="marginnote">
 Note that everywhere-differentiable utility functions are continuous.
+</div>
+ 
+However, 'lexicographic' preferences are not continuous and, on an infinite set, they cannot be represented by a utility function (see video below).
 
-Howevee, the 'lexicographic' preferences are not continuous. 
+
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yzxQ2JmJn7Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
 \
 
-What is continuity?  One definition:
-
-Continuity: If $A \succ B$ and $C$ 'lies within an $\epsilon$ radius of $B$ then $A \succ C$.
-
-Notice this does *not* hold for lex preferences. 
-
-```
 
 \
 
@@ -1534,6 +1569,7 @@ Suppose 'I always find more food at least as good as less food'. We could repres
 > $x \succsim y$ if and only if $x \geq y$
 
 This is easily represented by the utility function $u(x)=x$.
+
 <div class="marginnote">
 ... or in fact, by any utility function which is an increasing function, such as $u(x)= x^2 + ln(x) + 108$
 </div>
@@ -1853,7 +1889,7 @@ E.g., if offered
 But if offered
 "Set L"  {50ml, 100ml, 200ml}, this person chooses 100ml.
 
-But the 50ml and 100ml were available in both sets S and L. In this hypothetical example, the 'irrelevant alternative' changed their choice!
+But the 50ml and 100ml were available in both sets S and L. In this hypothetical example, the 'irrelevant alternative' caused their choice to change!
   
 ```
 
@@ -2004,6 +2040,8 @@ It works as follows:
 
 
 ```
+
+\
 
 O-R present this slightly more formally (you can skip the formality if you like).
 

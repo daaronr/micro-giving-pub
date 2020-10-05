@@ -157,13 +157,23 @@ Now it is only accessible within the university login
 -->
 
 
-# Notes for Beem101 Microeconomics students; overview {-#note}
+# Notes for (Beem101 Microeconomics) students; overview {-#note}
 
 **Notes by instructor [David Reinstein](davidreinstein.wordpress.com/)**
 
 ```{r  fig.cap = 'Famous photograph by Ansel Adams, who loved black and white photography, colorised using Jason Antic\'s de-oldify', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/ansel_halfdome_coloronly.png")
 ```
+
+
+## Reading and using this web-book
+
+```{block2,  type='note'}
+
+This web book is designed to be read on on a computer or a tablet (an iPad works well, I imagine other tablets will also work). But it is not designed for a mobile phone. Nor is it easy to 'printed out and read', or read on an e-reader (Kindle etc) in its current format. There are a lot of 'folds' that need to be opened to get the most out of this.  I am working on making it available as a pdf, but this will take some time to do. 
+
+```  
+
 
 ## Focus and style of this module {-#focus}
 
@@ -363,7 +373,7 @@ For maths, see also [Mathematical methods for economic theory](https://mjo.osbor
 
 I wrote this web-book to outline all of the material you are responsible for,  and to give you more resources and insight than I can convey in the short  amount contact time that we have.   I *don't* mean you're simply responsible for material in these printed notes:  I mean that these notes will aim to *refer to* everything that you are responsible for.
 
-This web-book is meant to be a complement to the texts and readings (and to the lectures/videos,  tutorials/problem sets and other material on the ELE) and to tie all of this together.
+This web-book is meant to be a complement to the texts and readings (and to  lectures/videos,  tutorials/problem sets and other material on the module web site) and to tie all of this together.
 
 <!-- I am providing you these notes both as a complete file as well as divided by lecture week (approximately). Use either version.
 -->
@@ -2111,7 +2121,7 @@ What can we reasonably say about 'what people prefer and choose'? How can we sta
 
 Digging deeply into the logic and justifications for these models of choice, and alternative frameworks, will be very relevant in considering Behavioral Economics (This is a specialty of Ariel Rubinstein, one of the O-R text's two authors, and also a research interest of mine). In fact, this text works behavioral economics in from the beginning.
 
-This is also relevant for building empirical models such as 'models of consumer choices and preferences' in ways that are relevant to (e.g.) Business-data-analytics consulting.
+This is also relevant for building empirical models such as 'models of consumer choices and preferences' in ways that are relevant to (e.g.) business-data-analytics consulting.
 
 ```
 
@@ -2163,7 +2173,7 @@ Choice](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-pub
 
 ```
 
-### Readings: 'real research papers' {-#readings}
+### Readings: 'real research papers' {-#readings0}
 
 Supplementary and conceptual readings (please read at least *some* of these):
 
@@ -2323,7 +2333,7 @@ However, I see these details as particularly relevant for a few reasons and in a
   
 **When we take a step back and look outside the classical model to consider:** 
 
-**1. Group and 'social preferences'** including preferences over abstract quantities and contexts that nonetheless have real impact on decisions. For example, 'effective altruists' and social planners need to consider whether to support charities and policies that may 'bring more happy people into existence' against others that do more to 'improve the happiness of existing people'. The philosophical issue of "population ethics" (see., e.g., [@blackorbyIntertemporalPopulationEthics1995], and the discussion in [this podcast](https://80000hours.org/podcast/episodes/hilary-greaves-global-priorities-institute/#transcript)) delves deeply into how preferences can be reasonably defined. ... and millions of dollars in donations are potentially at stake.
+**1. Group and 'social preferences'** including preferences over abstract quantities and contexts that nonetheless have real impact on decisions. For example, 'effective altruists' and social planners need to consider whether to support charities and policies that may 'bring more happy people into existence' against others that do more to 'improve the happiness of existing people'. The philosophical issue of "population ethics" (see., e.g., @blackorbyIntertemporalPopulationEthics1995, and the discussion in [this podcast](https://80000hours.org/podcast/episodes/hilary-greaves-global-priorities-institute/#transcript)) delves deeply into how preferences can be reasonably defined. ... and millions of dollars in donations are potentially at stake.
 
 \
 
@@ -2563,12 +2573,14 @@ Note that the set of preferences where 'x and y are equally desirable' is includ
 
 We consider some standard assumptions over preferences that, combined with some other assumptions,  will be  sufficient to justify using a 'utility function. 
 
+
 <div class="marginnote">
-Later, we will also consider the 'More is Better' ('nonsatiation' or 'monotonicity') type of assumptions.
 
-We skip the standard 'continuity' assumption here, although we return to a version of it when we consider uncertainty.
+Other common assumptions (which we will return to when we consider [consumer preferences](#consumers_dmd): 
 
-Another common 'axiom' involves 'diminishing marginal rates of substitution' or, in multiple dimensions, 'strict quasi-concavity', something you may come across in your maths/optimization module.
+- 'More is Better' ('nonsatiation' or 'monotonicity') type of assumptions.
+
+- 'Convex preferences,' 'diminishing marginal rates of substitution' or, in multiple dimensions, 'strict quasi-concavity', something you may come across in your maths/optimization module.
 
 In general, axioms like these also stand directly behind 'revealed preference' methods for measuring how much people value nonmarket goods, like clean air and national parks.
 </div>
@@ -2614,12 +2626,11 @@ Aside: Also 'forbidden' in the classical model: the *time* or *frame* in which I
 
 \
 
-
 **Definition: Completeness** (From O-R)
   
 
 <div class="marginnote">
-DR #TODO: I intend to add a video here discussing this
+Also please see my video above.
 </div>
  
 
@@ -2795,6 +2806,31 @@ It is fun, but it is *barely* used later in the text.
 ```  
 
 \
+#### Continuity (for  preferences over certainties) {#continuity}
+
+```{block2,  type='note'}
+Note: I define continuous preferences here, while O-R do not define this until the chapter 'Consumer Preferences'. I'm not sure why they made that choice.
+
+```  
+
+
+What is continuity?  One definition:
+
+Continuity: If $A \succ B$ and $C$ 'lies within an $\epsilon$ radius of $B$' then $A \succ C$.
+
+
+More completely, O-R define continuity as:
+
+```{block2,  type='def'}
+
+The preference relation $\succsim$ on $\R^2_{+}$ is continuous if whenever $x \succ y$ there
+exists a number $\epsilon> 0$ such that for every bundle $a$ for which the distance
+to $x$ is less than $\epsilon$ and every bundle $b$ for which the distance to $y$ is less
+than  $\epsilon$  we have $a \succ b$ (where the distance between any bundles $(w_1, w_2)$
+and $(z_1, z_2)$ is $\sqrt{|w_1 − z_1|^2 + |w_2 − z_2|^2}$
+```  
+
+
 
 ### Possible preferences .. "Preference formation" {#pref-form}
 
@@ -3361,6 +3397,15 @@ One possible objection... These were 'hypothetical' questions; no one was actual
 
 ## Utility functions {#util}
 
+
+<center>
+
+Video: "A utility function represents preferences"
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9TwugICeJfw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</center>
+
 Recall, a ['value function'](#valfunc) simply assigns a real number to each alternative. A *Utility function* is simply a value function which 'represents preferences'. 
 
 ```{block2,  type='def'}
@@ -3511,7 +3556,7 @@ Similarly for the 'minimal' element.
 
 \
 
-O-R Lemma 1.1 ... in any 'nonempty finite set' there must be at least one mimal and at least one maximal element. This is pretty obvious and intuitive. 
+O-R Lemma 1.1 ... in any 'nonempty finite set' there must be at least one minimal and at least one maximal element. This is pretty obvious and intuitive. 
 
 Still, it is worth reading over the *proof* of this as it gives you an easy example of 'proof by induction'. The logic of 'proof by induction'... (to prove that something holds for a set of any countable size $N$):
 
@@ -3605,29 +3650,29 @@ where $r(x)$ is the row number and $c(x)$ the column number.
 
 #### Allowing for infinite sets: *some* (but not all) preferences can be represented by a utility function {-}
 
-```{block2,  type='technote'}
-There are 'important' economic theorems specifying 'sufficient conditions for preferences to be represented by a utility function' ; we will not cover it, but unfold below for some more discussion, if you are interested.
-
-```  
+There are 'important' economic theorems specifying 'sufficient conditions for preferences to be represented by a utility function'. We will consider this briefly.
 
 
-```{block2,  type='fold'}
+'Continuous preferences' (defined [above](#continuity)) as well as completeness and transitivity  $\rightarrow$ a utility representation; these are jointly sufficient conditions for preferences to be represented by a utility function. Continuous preferences will also ensure continuous utility functions and allow us to discuss concepts such as 'marginal utility' and ensure and gradually sloping demand curves.
 
-'Continuous preferences' as well as completeness and transitivity  $\rightarrow$ a utility representation; these are jointly sufficient conditions. Continuous preferences will also ensure continuous utility functions and allow us to discuss concepts such as 'marginal utility' and ensure and gradually sloping demand curves.
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9TwugICeJfw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
+<div class="marginnote">
 Note that everywhere-differentiable utility functions are continuous.
+</div>
+ 
+However, 'lexicographic' preferences are not continuous and, on an infinite set, they cannot be represented by a utility function (see video below).
 
-Howevee, the 'lexicographic' preferences are not continuous. 
+
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yzxQ2JmJn7Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
 \
 
-What is continuity?  One definition:
-
-Continuity: If $A \succ B$ and $C$ 'lies within an $\epsilon$ radius of $B$ then $A \succ C$.
-
-Notice this does *not* hold for lex preferences. 
-
-```
 
 \
 
@@ -3638,6 +3683,7 @@ Suppose 'I always find more food at least as good as less food'. We could repres
 > $x \succsim y$ if and only if $x \geq y$
 
 This is easily represented by the utility function $u(x)=x$.
+
 <div class="marginnote">
 ... or in fact, by any utility function which is an increasing function, such as $u(x)= x^2 + ln(x) + 108$
 </div>
@@ -3957,7 +4003,7 @@ E.g., if offered
 But if offered
 "Set L"  {50ml, 100ml, 200ml}, this person chooses 100ml.
 
-But the 50ml and 100ml were available in both sets S and L. In this hypothetical example, the 'irrelevant alternative' changed their choice!
+But the 50ml and 100ml were available in both sets S and L. In this hypothetical example, the 'irrelevant alternative' caused their choice to change!
   
 ```
 
@@ -4108,6 +4154,8 @@ It works as follows:
 
 
 ```
+
+\
 
 O-R present this slightly more formally (you can skip the formality if you like).
 
@@ -4437,7 +4485,7 @@ Do not get this mixed up! You must understand this distinction to consider yours
 
 Previously described utility functions: predict choices under certainty. They made no predictions for choices with uncertain probabilistic outcomes!
 
-People don't "maximise expected monetary value"" tend to be risk-averse
+People don't "maximise expected monetary value": they tend to be risk-averse
 
 An *Expected Utility* (EU) framework, as defined below, allows for risk-aversion or any other attitude towards risky *outcomes*
 
@@ -4568,11 +4616,29 @@ A 'continuous random variable' takes on any of an infinite number of values with
 
 An example: the possible exact duration of rainfall (in hours, seconds, milliseconds....) to fall on Exeter in Summer 2025 is most naturally expressed as a continuous random variable.
 
-If it has no 'mass points' then we can only express the probability of it falling *within* an interval.
-
 <div class="marginnote">
+
 If you are not familiar with this concept, you should try to understand it, at least for your studies in general; consult Khan academy and other tutorials. This is a very important concept but takes some time to fully comprehend.
+
 </div>
+
+
+If it has no 'mass points'then we can only express the probability of it falling *within* an interval.
+
+"Mass points" explained (unfold)
+
+```{block2,  type='fold'}
+A "mass point" would describe a specific exact value of a continuous variable that occurs with a positive probability.
+
+With rainfall and with most naturally occuring phenomena it is hard to imagine that this is possible.
+
+But for 'measured rainfall' we might expect that there is a positive probability of 'zero measured rainfall'.
+
+Perhaps in the context of income it's reasonable to expect substantial 'mass points' at round numbers … e.g., many people may earn exactly £50,000 per year.
+
+
+```
+
 
 \
 
@@ -4603,11 +4669,36 @@ Letting $dx \rightarrow 0$:
 $$ f (x) = F' (x) ,~~~F(x) = \int_{- \infty}^{x} f (t)\,dt .$$
 
 \
+The 'standard normal density function' is depicted below:
+```{r}
+
+curve(dnorm(x),
+      xlim = c(-3.5, 3.5),
+      ylab = "Density", 
+      main = "Standard Normal Density Function") 
+
+```
+
+If a variable has this (or any) probability distribution, we can determine the probability that it falls in any particular region by computing the *area under the curve* between these regions, i.e., computing the integral between these regions. 
 
 <div class="marginnote">
-Todo: look up and include some graphics showing the pdf and cdf, or create these within R.
-
+For some distributions, like the normal distribution or the uniform distribution, we can compute all of these 'analytically', i.e., we have a formula.  In other cases we will need to 'simulate' these through a process of drawing random numbers.
 </div>
+ 
+\
+
+Below [(link here)](https://bookdown.org/machar1991/ITER/2-pt.html), a very useful review of probability theory that also shows you how to compute and plot these using the `R` language.
+
+<div class="marginnote">
+You don't need to learn how to compute these in `R` for this module, but it may aid your understanding, and may be helpful for your future work. 
+
+This material is from the web version of 'Introduction to Econometrics with R', 
+Christoph Hanck, Martin Arnold, Alexander Gerber and Martin Schmelzer
+</div>
+   
+```{r}
+knitr::include_url("https://bookdown.org/machar1991/ITER/2-1-random-variables-and-probability-distributions.html#probability-distributions-of-discrete-random-variables")
+```
 
 
 
@@ -4671,7 +4762,7 @@ $Z$ could be a list of amounts, say $\{0,10,100\}$ or a list of bundles of goods
 > A lottery over $Z$ is a function $p : Z \rightarrow \mathbb{R}$...
 > that assigns a positive number (probability) $p(z)$ to a finite number of members of $Z$ and $0$ to all other members,
 
-Simplifying this, the probability function $p$ 'tells you the probability of each outcome ($z$) among the set of possible outcomes ($Z$)' for this lottery.  (Recall )
+Simplifying this, the probability function $p$ 'tells you the probability of each outcome ($z$) among the set of possible outcomes ($Z$)' for this lottery.  
 
 > with $\sum_{z \in Z} p(z) = 1$.
 
@@ -4682,10 +4773,11 @@ The sum of the probabilities of each possible outcome must be 1... 'one of the p
 
 ```
 
+\
+
 > We denote the set of all lotteries over $Z$ by $L(Z)$
 
 (Unfold)
-
 ```{block2,  type='fold'}
 
 For the example I give above, this means $L(Z)$ is 'any possible lottery with some  some probability of "apple and carrot", some probability of "two carrots", and (the remaining) probability of "nothing". Each of these probabilities could be anything between 0 and 1.
@@ -4721,6 +4813,10 @@ E.g., for a two-outcome lottery, rather than writing 'a lottery where outcome $z
 
 ```
 
+
+<div class="marginnote">
+TODO: I might include a video here explaining this notation and giving examples
+</div>
 \
 
 ```{block2,  type='inputq'}
@@ -4741,6 +4837,10 @@ Consider the diagrams in figure 3.1 in O-R. Can you explain what the points depi
 
 ```
 
+<div class="marginnote">
+(Possible video here)
+</div>
+ 
 
 ## Preferences over lotteries
 
@@ -4749,8 +4849,13 @@ We now have the tools consider the question that motivated this: how might an in
 Formally, what are the "preferences over the set of lotteries $L(Z)$” and “what restrictions over these preferences seem reasonable”?
 
 
+```{block2,  type='note'}
+
+Please learn the precise definitions of these concepts from the O-R text, whether or not I spell them out here.
+```  
+
 <div class="marginnote">
-DR Todo: I intend to add a video here discussing this
+DR Todo: I intend to add a video here discussing this... I want to convey why the 'Expected Utility framework' is not obvious.
 </div>
 
 \
@@ -4767,7 +4872,13 @@ Of course it is doubtful that anyone completely has these preferences or follows
 
 - **Ex. 3.1 "A pessimist"**: Essentially, someone whose preferences among these lotteries simply depends on "which one has the worst possible outcome ($w(p)$) that is least bad". (Where 'worst' is according to some particular ranking... which can have any form.)
 
-- **Ex 3.2 "good and bad"**: This person divides all possible outcomes into "good  outcomes" and "bad outcomes" (in some particular way...there are many possibilities for doing this.)  They simply prefer the lottery which has the highest probability of a "good" outcome (or conversely the lowest probability of a bad outcome).
+- **Ex 3.2 "good and bad"**: This person divides all possible outcomes into "good outcomes" and "bad outcomes" (in some particular way...there are many possibilities for doing this.)  They simply prefer the lottery which has the highest probability of a "good" outcome (or conversely the lowest probability of a bad outcome).
+
+<div class="marginnote">
+TODO: I intend to include a video here discussing the 'good and bad' preference. 
+</div>
+
+
 
 - **Ex 3.3 minimizing options**:  This person doesn't actually care about the content of any of the outcomes; they simpler prefer the lottery with the fewest possible outcomes.
 
@@ -4778,15 +4889,73 @@ This seems to me to be a sort of 'opposite extreme' to the pessimistic preferenc
 
 ## Properties of preferences (O-R 3.2.1)
 
-Continuity (see diagram I will add)
 
-"Some probablistic mix of a great thing and a terrible thing will be as good as an OK thing"
+```{block2,  type='note'}
 
-- Counterexample: Pessimistic preferences (counterexamples help illustrate the 'bite' of a property)
+**Some notation: **
+
+Lotteries $L(Z)$ involve possible outcomes drawn from the 'prize space' $Z$. E.g., a lottery could be a 0.25 chance of each of outcomes 0, 10, 100, and 1000, drawn from the 'prize space' $\mathbb{R}^{+}$, the space of positive real numbers.
+
+
+
+$E(p)$ denotes (basically) the expected monetary value of the lottery.
+
+
+O-R use brackets to denote a 'certain outcome', 
+
+e.g., $[b]$ represents 'outcome $b$ occuring with probablity one.'
+
+```  
+
+
+
+<div class="marginnote">
+TODO: I intend to include a video here going over the formal notation and understanding of  each of these properties.
+</div>
 
 \
 
-Def: Compound lotteries
+**Continuity of VnM preferences** 
+
+"Some probablistic mix of a great thing and a terrible thing will be as good as an OK thing"
+
+
+```{block2,  type='note'}
+Note that this is distinct from the continuity of preferences over certainties [defined in the previous section](#continuity) 
+```  
+
+```{block2,  type='def'}
+
+More formally (from O-R): 
+  
+> For any set $Z$ of prizes, a preference relation $\succsim$ over $L(Z)$ is continuous if for
+any three prizes a, b, and c in $Z$ such that $[a] \succ [b] \succ [c]$ there is a number
+$\alpha$ with $0 < \alpha < 1$ such that $[b] \sim  \alpha \cdot a \oplus (1 − \alpha) \cdot c$. 
+
+```  
+
+
+\
+
+```{r  fig.cap = '', out.height='20%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","continuity_scribble.png"))
+```
+
+
+
+
+- Counterexample: Pessimistic preferences are *not continuous* (counterexamples help illustrate the 'bite' of a property)
+
+<div class="marginnote">
+Note that this definition of continuity is remeniscent but not identical to the definition of continuity for preferences over certain outcomes, which you may have seen before, and which we will return to in the next chapter. One difference is that here we are not considering making a bundle that is itself similar to bundle $b$, but we are considering a probablistic conbination of two other bundles, a and b.
+</div>
+ 
+
+
+
+\
+
+**Def: Compound lotteries**
 
 - Important;  might be considered an 'algebra of finance'...
 - a distributed format
@@ -4794,7 +4963,7 @@ Def: Compound lotteries
 
 \
 
-Def: Independence
+**Def: Independence**
 
 "If I prefer a particular (certain) A over a particular lottery B, I also prefer to increase the probability of A over B... in a 'compound lottery'"
 
@@ -4802,12 +4971,12 @@ Def: Independence
 - Note how, in this case, a property over $\succsim$ extends to $\succ$
 
 <div class="marginnote">
-Relevant to 'population ethics' and 'effective altruism' and 'other-regarding preferences', and 'social welfare functions/social preferences'.
+Independence and pessimistic preferences are relevant to 'population ethics' and 'effective altruism' and 'other-regarding preferences', and 'social welfare functions/social preferences'. E.g., sometimes we must decide between 'making a big positive difference with a high probability' (e.g., providing bednets to prevent malaria) and 'making an extremely large positive difference with a very small probabillity' (e.g., building a system to block an asteroid from destroying the earth).
 </div>
 
 \
 
-Def: Monotonicity
+**Def: Monotonicity of VnM preferences**
 
 "A lottery (between two things) gets better as the better thing gets more likely"
 
@@ -4816,17 +4985,16 @@ Def: Monotonicity
 
 ## Expected utility
 
-Expected Utility is the 'most commonly assumed' framework in economic theory. We will consider certain “axioms” that seem reasonable, particularly the ‘independence’ axiom. We can formally prove people’s preferences obey these axioms, then their preferences must be "consistent with expected utility".
+Expected Utility is the 'most commonly assumed' framework in economic theory. We will consider certain “axioms” that seem reasonable, particularly the ‘independence’ axiom. We can formally prove that "if people’s preferences obey these axioms, then their preferences must be 'consistent with expected utility'".
 
 <div class="marginnote">
 Again, this method...
 - Define axioms that seem reasonable
 - prove what this implies (in terms of 'maximizing behavior')
 ...
-is sometimes called "normative Economics".  But this is confusing as "normative" is also used to refer to several other things.
+is sometimes called "normative Economics".  But this is confusing as "normative" is also used to refer to several other things. I hate that word!
 
 </div>
-
 
 However, Expected Utility preferences (choices) rules out some stated preferences (and choices) that seem common. We will see this in the [“Allais Paradox”](#allais), for example.
 
@@ -4850,7 +5018,7 @@ I use the $v(\cdot)$ function notation rather than $u(\cdot)$ to differentiate t
 ... I.e., she chooses to maximise the value of her $v(z)$ function under each outcome $z$ weighted by the probability of each outcome $p_z$.
 
 <div class="marginnote">
-While I descrive a set of countable alternatives, O-R define the below over the more general idea of a 'set of lotteries $L(Z)$ over prizes $Z$'.
+While I describe a set of countable alternatives, O-R define the below over the more general idea of a 'set of lotteries $L(Z)$ over prizes $Z$'.
 
 
 </div>
@@ -4858,10 +5026,15 @@ While I descrive a set of countable alternatives, O-R define the below over the 
 \
 
 
+<div class="marginnote">
+TODO: I intend to include a video here 
+</div>
 
 ```{block2,  type='def'}
 
-Remember, each lottery $p$ is a set of probabilities over each possible alternative. With a finite set of $n$ alternatives $z_1, z_2, ...,z_n$ we have probabilities $p_1, p_2, ... p_n$ over eeach.
+**Definitions:**
+  
+Remember, each lottery $p$ is a set of probabilities over each possible alternative. With a finite set of $n$ alternatives $z_1, z_2, ...,z_n$ we have probabilities $p_1, p_2, ..., p_n$ over each.
 
 Consider the "Expected Utility" function $U$. This has a particular form. It is defined over each lottery $p$ as:
 
@@ -4881,6 +5054,7 @@ If an individual's preferences (choices) are 'consistent with this',
 
 ```
 
+\
 
 Note that the above does not specify *what* the $v$ function must be. Obviously this may differ across individuals.
 
@@ -4925,6 +5099,7 @@ Although O-R cover the Allais paradox next, I think it may be easier to understa
 
 ## Risk preferences {#risk-pref}
 
+ 
 Consider the choice between two gambles and one 'certainty':
 
 1. Earn £1,000,000 with probability 0.1 \& zero with prob. 0.9
@@ -4957,7 +5132,7 @@ Expected monetary value: the probability-weighted sum of the monetary outcomes. 
 
 Consider: what sort of $v$ function, a function of monetary income, would have the property that
 
-.... it implies that the expected utility (the probability-weighted sum of the $v$ terms) is of a  gamble is always higher when the expected monetary value of this gamble is higher?
+.... it implies that the expected utility (the probability-weighted sum of the $v$ terms) of a  gamble is always higher when the expected monetary value of this gamble is higher?
 
 ```
 
@@ -4994,17 +5169,35 @@ Can you prove this?
 
 \
 
-```{block2,  type='note'}
+```{block2,  type='def'}
 
-To be added or mentioned here:
+**Formal definitions of risk preferences from O-R** (emphasis added):
   
-O-R formal definition of risk aversion
+Recall that lotteries $L(Z)$ involve possible outcomes drawn from the 'prize space' of positive real numbers. E.g., a lottery could be a 0.25 chance of each of outcomes 0, 10, 100, and 1000.
+  
+> If $Z = \mathbb{R}^{+}$ 
+> a preference relation  on the set $L(Z)$ of lotteries over $Z$ 
+> is **risk-averse** if $[E(p)] \succsim p$ for every lottery $p \in L(Z)$
+
+Recall  '$[E(p)]$' denotes (basically) the expected monetary value of the lottery occuring with probability 1, a weighted sum or integral, formally $E(p) = \sum_{z \in Z} p(z)z$ 
+<div class="marginnote">
+Of course it doesn't have to be 'monetary value' ... it could equivalently be a measure of the size of a bundle of goods.
+</div>
+ 
+
+So this defines *risk averse* as 'weakly preferring a certainty to a lottery with the same expected monetary value'  
+
+  
+>  is **strictly risk-averse** if $[E(p)] \succ p$ for every lottery $p \i L(Z)$ that involves more than one prize, 
+
+> and is **risk-neutral** if $[E(p)] \sim p$ for every lottery $p \in L(Z)$, 
   
 ```
 
 ### Risk preferences and EU {-#eu-risk}
 
-Imagine the realised utility $v(y)$ that arises from the consumption chosen with wealth $y$.
+Imagine the realised utility $v(y)$ that arises from the consumption chosen with wealth $y$. H$.
+ere we will express this as the (similar concept) 'indirect utility function' $V(y)
 
 <div class="marginnote">
 
@@ -5116,7 +5309,7 @@ I have learned that your preference for Oxford over Bristol is  "stronger" than 
 ```
 
 
-### Intuition for 'risk aversion iff concave value function $v(\cdot)$ {-}
+### Intuition for 'risk aversion iff concave value function $v(\cdot)$' {-}
 
 Risk aversion is defined (at least one definition) as being unwilling to take any "fair gambles" (gambles with an expected monetary value of zero) not even small ones.  A risk averse person would never be willing to take on an equal probability of gaining a certain amount and losing that same amount.  If they are "globally risk-averse" this holds no matter what level of income/wealth they start at, and no matter how large or small this amount is.
 
@@ -5130,9 +5323,13 @@ Thus a risk-averse person would reject such gambles.
 
 \
 
-### Graphical illustration of "risk aversion $\leftrightarrow the value function $v(\cdot)$ is concave" {-}
+### Graphical illustration of "risk aversion $\leftrightarrow$ the value function $v(\cdot)$ is concave" {-}
 
 **How to illustrate this:**
+
+<div class="marginnote">
+TODO: I intend to include a video here 
+</div>
 
 - Show: $EU(gamble) = (1-p)u(x_{low}) + pu(x_{high}) < u(EV(x)) = u((1-p)x_{low} + px_{high})$
 
@@ -5205,7 +5402,7 @@ $$f(E(X)) > E(f(X))$$
 
 ## Allais paradox; considering other (non-EU) frameworks {#allais}
 
-(Content to be added here, drawing both from O-R and from my previous notes)
+<!-- #TODO (Content to be added here, drawing both from O-R and from my previous notes) -->
 
 
 ### Simple depiction of Allais paradox {-}
@@ -5402,6 +5599,22 @@ Above: Results for different 'stake sizes'. Most people are risk-averse.  People
 
 \
 
+```{block2,  type='note'}
+
+**However**, although it has been the most widely used procedure, the Holt and Laury task has been widely criticized, both on theoretical and empirical grounds. There are a variety of proposed  risk elicitation methods, as explored by @crosettoTheoreticalExperimentalAppraisal2016 and @charnessExperimentalMethodsEliciting2013.
+
+It is not clear whether these 'do a good job'. According to [Charness et al, 2020](https://link.springer.com/article/10.1007/s11166-020-09325-6) [@charnessMeasuresRiskAttitude2020].
+
+
+>...  these measures have some predictive power on behavior in experimental settings, and that the most complex procedure (TCN) is outperformed by simpler procedures. Finally, we find no correlation between field behavior and measures of risk attitude. This finding is confirmed for all of the implemented measures, either simple or complex.
+
+However, the Charness et al 'correlation' results appear largely underpowered.  
+
+Other work finds that simple survey measures do a better job of predicting real world risk-taking behavior [@beauchampPsychometricEmpiricalProperties2017; @lonnqvistMeasuringIndividualRisk2015].
+
+
+```  
+
 
 ## Applications (esp. to finance):
 
@@ -5411,9 +5624,11 @@ Above: Results for different 'stake sizes'. Most people are risk-averse.  People
 
 - How does this affect asset prices (Stocks, bonds, etc.) with 'efficient markets' (this will be briefly defined)
 
-### Insurance {-}
+<!-- ### Insurance {-}
 
 (Content to be added)
+
+--> 
 
 ### Benefits of diversification {-}
 
@@ -5557,6 +5772,7 @@ This doesn't make you a hit at parties :(
 \
 
 ```{block2,  type='tip'}
+
 See also QMC, chapters 5-6 for a fairly nontechnical and intuitive explanation.
 
 ```  
@@ -5569,7 +5785,6 @@ See also QMC, chapters 5-6 for a fairly nontechnical and intuitive explanation.
 The content in this section is largely drawn from Nicholson and Snyder, "Intermediate Microeconomics and Its Application", 2010, Cengage.
 </div>
  
-
 
 Option contract
 
@@ -5653,7 +5868,6 @@ This doesn't make you a hit at parties :(
 
 - CARA, CRRA
 
-
 - Certainty equivalence
 
 <div class="marginnote">
@@ -5672,8 +5886,7 @@ Note this is preserved under an affine transformation; the value itself may be c
 \
 
 
-
-<br> <br> \bigskip
+<br> 
 
 - Coefficient of *relative* risk aversion: $R(m) \equiv mA(m)=-\frac{mu''(m)}{u'(m)}$
 
@@ -5682,6 +5895,8 @@ Note this is preserved under an affine transformation; the value itself may be c
 `r format_with_col("Note that these ideas are also relevant to intertemporal substitution and to social welfare functions","gray")`
 
 RRA (ARA) constant $\rightarrow$ constant fraction of portfolio (number of dollars) held in risky asset as wealth increases.
+
+\
 
 ### 'Prudence'  {-}
 
@@ -5877,6 +6092,7 @@ These goods are 'enjoyed only in fixed proportions'. E.g., left and right shoes 
 These are not the same as the 'complements' and 'substitutes' in demand functions which we may see you later, referring to the impact of changing prices.
 </div>
  
+\
 
 ### Properties: Monotonicity {-}
 
@@ -5884,17 +6100,8 @@ Read O-R section 4.3.
 
 Know how to define, test, and compare at least two 'monotonicity-type' assumptions, e.g., Monotonicity vs Strong Monotonicity; see O-R p. 49
 
-### Properties: Continuity (we may skip this for time-concerns) {-}
 
-In O-R section 4.4: 
-
-> Continuity is a property of a consumer’s preference relation that captures the idea that if a bundle x is preferred to a bundle y then bundles close to x are preferred to bundles close to y.
-
-<div class="marginnote">
-You may skip the formal definition of continuity in O-R, and  also skip the proof of  it's relationship to a continuous utility function. 
-
-However, knowing the definition of continuity as a mathematical property may be relevant in your future studies and research..
-</div>
+\
 
 ### Properties: Convexity (skipping the proofs) {-}
 
