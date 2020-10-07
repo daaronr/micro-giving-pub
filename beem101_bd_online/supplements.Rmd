@@ -50,14 +50,14 @@ However, when it comes to applying these things to the real world, or testing th
 
 Audio/slide presentations
 
-[HERE](https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=9b44de1e-2569-4076-9d7b-aacc0064717d&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=al), starting at 44:20, ending about 51:30. 
-                                
+[HERE](https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=9b44de1e-2569-4076-9d7b-aacc0064717d&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=al), starting at 44:20, ending about 51:30.
+
 <iframe src="https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=9b44de1e-2569-4076-9d7b-aacc0064717d&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay">
-</iframe>                              
-  
+</iframe>
+
 - Or starting at 31:00 [HERE](https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=e0866970-34e1-4aa5-8385-8c1ef8d75b1c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all):
-  
-\           
+
+\
 
 Although we are not focusing on 'market failure' in this module (BEEM101, 2020)...
 
@@ -217,7 +217,7 @@ There is a strong case to be made that a mandate to purchase insurance (or syste
 
 *Note:* Firms themselves do not typically use markets: if we look inside the firm and see all sorts of mechanisms to correct or circumvent internal markets. Understanding when and why firms do this, and the trade-offs involved, can help you be a better manager. For example, when should you 'outsource' and when should you keep a task in house? When should you offer employees very strong incentives and when should you just tell them what to do?
 
-## Supplement: is Microeconomics applicable to nature... outside of humans? 
+## Supplement: is Microeconomics applicable to nature... outside of humans?
 
 
 >Studies of honeybees have found that they generally do not gather all of the nectar in a particular flower before moving on.
@@ -265,7 +265,7 @@ The economics of trade may also apply to the natural world in certain ways.
 See an earlier lecture video below, starting at about 1:37:30.
 
 <iframe src="https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=e0866970-34e1-4aa5-8385-8c1ef8d75b1c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-```  
+```
 
 
 Empirical research
@@ -348,7 +348,7 @@ But this fitted line is *only* meaningful if we are observing shifts in the *sup
 
 \
 
-### Ceteris paribus 
+### Ceteris paribus
 
 > All [most] economic theories employ the assumption that 'other things are held constant.'
 
@@ -407,7 +407,7 @@ Indifference curves and 'convex combinations' give us insight into why people tr
 Considering [figure to be added]
  , an individual is ok with giving up soda for hamburgers or vice/versa *along* her indifference curve. A trade that put her *above* the IC makes her 'strictly' better off.
 
-*So consider if one individual had allocation D and another allocation A, and they had the same preferences.* 
+*So consider if one individual had allocation D and another allocation A, and they had the same preferences.*
 
 ```{block2,  type='inputqn'}
 What trade could they make to make each of them better off?
@@ -438,13 +438,13 @@ For an alternative depiction using indifference curves, where preference differ 
 
 However, trade between two individuals is better illustrated using an "Edgeworth box", see, e.g., the explanation [HERE on economicsdiscussion.net](https://www.economicsdiscussion.net/essays/economics/exchange-between-two-individuals-gain-from-trade/1207).
 </div>
- 
+
 
 
 ## Supplement: Quasiconcavity (of utility function/preferences) {#quasi-conc}
 
-This is the 'preferred assumption' which resembles convexity, but has several advantages as a concept. For example, it doesn't require differentiable preferences, and its properties are not affected by monotonic transformations of utility functions. This is the concept that you might be taught in a PhD module. I think it may also have some value in understanding optimization problems in general, which is an important part of research and industry and finance, I believe. 
- 
+This is the 'preferred assumption' which resembles convexity, but has several advantages as a concept. For example, it doesn't require differentiable preferences, and its properties are not affected by monotonic transformations of utility functions. This is the concept that you might be taught in a PhD module. I think it may also have some value in understanding optimization problems in general, which is an important part of research and industry and finance, I believe.
+
 
 More formal concept: (strictly) convex preferences $\Leftrightarrow$  (strictly) **'quasiconcave' utility function**, allowing 'n goods':
 
@@ -476,14 +476,14 @@ We also describe it as having 'a convex upper contour set': the set of all bundl
 \
 
 One reason economists like this 'quasiconcavity' is because it rules out the 'false summits',
-the local, but not global optima, so we only need to use the first-order conditions to find the optima. 
+the local, but not global optima, so we only need to use the first-order conditions to find the optima.
 
 <div class="marginnote">
 
 But is this '[looking under the streetlight](https://en.wikipedia.org/wiki/Streetlight_effect) to find our keys' or is it truly without loss of generality?
 
 </div>
- 
+
 
 \
 
@@ -491,7 +491,7 @@ Without quasiconcavity there may also be no demand *function* only a *demand cor
 
 ```{block2,  type='inputq'}
 Can you illustrate this with 'double-humped' indifference curves?
-```  
+```
 
 \
 
@@ -561,6 +561,146 @@ This implies that at optimum 'the rate of increase in utility is greatest in the
 Which tells us that the plane tangent to the '(multi-dimensional) indifference surface' at this point is the budget plane.
 
 
-## Supplement
+## Supplement: Primal and dual of demand (max and min), Hicksian demand, Identities, Slutskly equation
+
+### Primal and dual -- functions and relationships (doctoral prep):
+
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","axioms.png"))
+```
+
+
+
+<br> <br> \bigskip
+
+
+Indirect utility function: the (max) utility you can get as a function of your income and prevailing prices.
+
+$$V(p_x,p_y,I_0)=max_{x,y}U(x,y) \text{ s.t. }  p_xx+p_yy\leq I$$
+
+Here this is the *max* and not the *argmax* ... it's the actual *utility* level not the consumption level(s). (The consumption levels are the *Marshallian* demand.)
+
+*We can find by solving for the utility-maximising choices, and then plugging these in to compute the utility from these.*
+
+
+<br> <br> \bigskip
+
+
+Expenditure function: How much income you need to to get a certain utility given prevailing prices.
+
+
+$$E(p_x,p_y,U_0)=min(p_xx+p_yy) \text{ s.t. } U(x,y) \geq U_0$$
+
+*Min* and not *argmin* ... the expenditure amount
+
+\
+
+Hicksian (compensated) Demand for X: The amount of X I consume in a 'minimising expenditure' bundle that yields some level of utility ($U_0$)
+
+\
+
+With two goods, x and y, the Hicksian demand for x is the first, 'x' element of the below ('Hicksian demand vector x,y')
+
+$$h_{x,y}(p_x,p_y,U_0)=arg\min_{x,y} (p_xx+p_yy) \text{ s.t. } U(x,y) \geq U_0$$
+
+
+
+*Note:*
+These functions are actually used in 'structural' estimates of demand used in merger analysis, pricing, litigation consulting, etc.
+
+\
+These are 'inverses' of one another.
+
+This is  because 'Maximise utility s.t. a budget constraint' is sort of equivalent to 'minimise expenditure s.t. attaining a particular level of utility'
+
+
+<br> <br> \bigskip
+
+### Expenditure and Indirect utility identities {-}
+
+Look:
+
+
+$$V\Big(p_x,p_y,E(p_x,p_y,U_0)\Big)=U_0$$
+
+
+'My utility when I have enough income (expenditure) to give me utility $U_0$ ... is $U_0$'
+
+
+<br> <br> \bigskip
+
+
+*And*
+
+$$E\Big(p_x,p_y,V(p_x,p_y,I_0)\Big)=I_0$$
+
+
+'The amount I need to spend to get the utility I can achieve with income $I_0$ is $I_0$'
+
+
+
+### Hicksian (compensated) and Marshallian (regular) identities {-}
+
+
+$$h_x(p_x,p_y,U_0)=d_x(p_x,p_y,E(p_x,p_y,U_0))$$
+
+
+'The amount of X I consume that yields $U_0$ at the lowest cost...
+
+is the amount of X I would consume if I had the income that allowed me to get utility $U_0$.'
+
+
+<br> <br> \bigskip
+
+
+Totally differentiating these equalities allows us to relate the compensated and uncompensated *responses* to price changes.
+
+\
+
+
+The proof of Roy's identity is rather involved and uses the envelope theorem. However, I always thought I saw some intuition for it, if we rearrange it.
+
+```{block2,  type='technote'}
+
+What is the [Envelope theorem](https://mjo.osborne.economics.utoronto.ca/index.php/tutorial/index/1/mee/t)?
+
+
+```
+
+
+\
+
+How much does utility decrease when good X becomes more expensive by $\epsilon$, i.e., what is $\frac{\partial V}{\partial p_x}$?
+
+Well, from our initial consumption point we now lose  $d_X \times \epsilon$ in spending power. The marginal deteriment of that to our utility is the same as if we had lost this in income, which hurts us at rate $\frac{\partial V}{\partial I}$.
+
+But why is it OK to consider this 'from the initial consumption point' and not also consider the adjustment to this? I believe that comes from the Envelope theorem.
+
+<br> <br> \bigskip
+
+Intuition for Sheppard's Lemma is easier.  How much more do we need to spend to get the same utility if $p_x$ rises?
+
+We must spend, at the margin, at a rate equal to our previous consumption of $x$, $h_x$. Again, we don't need to consider the adjustment to the consumption bundle in answering this *particular* question because of the envelope theorem.
+
+
+## Intuition from the 'Slutsky equation'
+
+
+$$\frac{\partial d_x}{\partial p_x}= \frac{\partial h_x}{\partial p_x} - \frac{\partial d_x}{\partial I}x$$
+
+
+<br> <br> \bigskip
+
+
+At the margin, the change in demand for X in response to a change in its price sums:
+
+- The compensated change in demand (the first term); the marginal substitution effect
+- the income effect multiplied by the amount of X consumed
+    - because a price increase in X reduces 'remaining income' proportionally to how much X is consumed
+
+<br> <br> \bigskip
+
+A similar result applies to a change in *another* good's price, with similar intuition
+
 
 ### References {-}
