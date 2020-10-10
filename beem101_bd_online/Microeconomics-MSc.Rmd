@@ -7198,12 +7198,13 @@ Market demand curve
 - Sum the individual demand curves ('horizontally' ... quantities demanded at each price)
 
 
-<!--
-```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics(file.path("picsfigs","summarketdemandcurve.png"))
+<div class="marginnote">
+Image source: McAfee et al, Introduction to Economic Analysis v. 2.1, chapter 2.3
+</div>
+ 
+```{r  fig.cap = 'McAfee et al: Individual demand aggregates to market demand', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","individual_to_mkt_dmd-mcafee.png"))
 ```
-`r format_with_col("Make sure you can do numerical examples of this","gray")`
--->
 
 <!--
 LC: Illustrate 'sums horizontally' on visualiser if possible*
@@ -7211,8 +7212,10 @@ LC: Illustrate 'sums horizontally' on visualiser if possible*
 
 
 
-Some of our previous results about individual demand also hold for market demand, while others do not, or only if we make restrictive assumptions
+Some of our previous results about individual demand also hold for market demand, while others do not, or only if we make restrictive assumptions.
 
+
+\
 
 Shifts in the market demand curve are caused by similar things that cause individual demand curve shifts
 
@@ -7434,7 +7437,7 @@ Suppose p=10 and q=10 so TR=100. Then when p=12 and q=8 TR=96. Huh? Price increa
 \
 
 
-TR is unchanged when p*q stays the same. With a change in each $\delta p$ and $\delta q$, the new revenue is
+TR is unchanged when $p \times q$ stays the same. With a change in each $\delta p$ and $\delta q$, the new revenue is
 
 $(p+\delta p)(q+\delta q) = pq+\delta p q + \delta q p + \delta p \delta q$.
 
@@ -7655,7 +7658,12 @@ The budget share on j plus the sum of the budget shares of other goods multiplie
 
 1. To consider **constrained optimization** (with many goods) using the Lagrangian method  see [THIS supplement](#lagrange) (based on David Autor's notes)
 
-2. The dual 'minimization problem' and 'Hicksian demand' are discussed [HERE]()
+2. The dual 'minimization problem' and 'Hicksian demand' are discussed [HERE](#dual). For a simpler treatment, please see QMC Chapter 20.3\*. 
+
+<div class="marginnote">
+Recall: QMC refers to ['Quantum Microeconomics with Calculus'](http://www.smallparty.org/yoram/quantum/quantumcalc.pdf) by Yoram Baumann 
+</div>
+ 
 
 ### Further doctoral-prep concepts {-#docprep}
 
@@ -7752,7 +7760,7 @@ O-R chapter 5
 ## Readings:
 
 
-### Textbook reading
+### Textbook reading {-}
 
 - O-R chapter 7 (you can skip the discussion of monopolists that maximise something *other than* profit)
 
@@ -7809,12 +7817,12 @@ This podcast contains many mis-statements; can you identify them?
 \
 
 
-### Material from data science and industry pricing practice
+### Material from data science and industry pricing practice {-}
 
 See "Marketing" chapter in [Business analytics with R](https://bookdown.org/jeffreytmonroe/business_analytics_with_r7/)
 
 
-### Peer-reviewed academic work
+### Peer-reviewed academic work {-}
 
 Recent theoretical microeconomic analyses and characterizations of the welfare consequences of "third-degree" price discrimination:
 
@@ -7834,14 +7842,15 @@ A Monopoly is a single firm operating in a market without competition. Such a fi
 \
 
 
-A monopoly firm, like all firms, will set it's quantity Q to maximize it's profits $\pi(Q) \equiv QP(Q)-C(Q)$ where $P(Q)$ is the inverse demand (the maximum price that can be charged if a firm wants to sell quantity $Q$, and $C(Q)$ is the cost of producing $Q$.
+A monopoly firm, like all firms, will set it's quantity $Q$ to maximize it's profits $\pi(Q) \equiv QP(Q)-C(Q)$ where $P(Q)$ is the inverse demand (the maximum price that can be charged if a firm wants to sell quantity $Q$), and $C(Q)$ is the cost of producing $Q$.
 
-Under standard simple conditions, if the monopoly can only charge a single price, this  leads to the monopoly maximising it's profit by producing $Q$ such that $MR(Q) = MC(Q)$ (assuming $P>AC$
+Under standard simple conditions, if the monopoly can only charge a single price, this  leads to the monopoly maximising it's profit by producing $Q$ such that $MR(Q) = MC(Q)$ (assuming $P>AC$).
 
 
 Intuition:  the 'volume' benefit of increasing $Q$ is countered by
-    - Greater cost (producing more always costs more)
-    - The need to reduce price (on all units) to get people to buy it
+
+- Greater cost (producing more always costs more)
+- The need to reduce price (on all units) to get people to buy it
 
 \
 
@@ -7989,7 +7998,7 @@ There are a variety of *market structures* we might consider that fall in betwee
 
 \
 
-## The deadweight loss of monopoly: simple discussion
+### The deadweight loss of monopoly: simple discussion {-#dwl-simple}
 
 
 *Criticisms of monopoly:*
@@ -8011,18 +8020,15 @@ Compared to perfect competition, a monopoly typically produces less output and c
 
 \
 
-<div class="marginnote">
-Add graphical depiction here
-</div>
 
 
-<!--
-```{r  fig.cap = '', out.width='65%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics(file.path("picsfigs","dwl1.png"))
+```{r  fig.cap = 'Source: McAfee et al. ', out.width='65%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","dwl_monop_mcafee_explanation.png"))
 ```
 
 \
 
+<div class="marginnote">
 *Be sure you understand and can depict*
 
 The difference in monopoly vs perfect competitive quantity \
@@ -8030,9 +8036,12 @@ The difference in monopoly vs perfect competitive quantity \
 ... difference in consumer surplus \
 ... difference in firm profit or producer surplus
 
+</div>
+ 
+
 
 \
-
+<!--
 ```{r  fig.cap = '', out.width='65%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics(file.path("picsfigs","dwl2.png"))
 ```
@@ -8052,22 +8061,43 @@ The difference in monopoly vs perfect competitive quantity \
 
 \
 
+### Aside: Types of inefficiency; simple definitions {-}
 
-```{block2,  type='note'}
+We refer to underprovision of monopoly as a departure from '**allocative inefficiency**' AKA '**top-level inefficiency'**.
 
-**Other social costs and benefits of monopoly?**
+\
 
-  Some argue the deadweight loss (DWL) above *understates* the true harm of monopoly. This is controversial. These arguments include...
+Essentially, from the point of view of the entire economy: 
+  
+1. If we could produce more of one good without producing less of any other good (i.e., we are below the 'production possibility frontier' (PPF)), perhaps because we are misallocating inputs to different production processes (e.g., capital and labor) ... this is called **Productive inefficiency**
 
-- 'Secure' monopolies don't innovate as much, and spend wastefully?
+<div class="marginnote">
+Here 'goods' includes all things that people value, including services, environmental amenities, leisure time, etc. 
+</div>
+ 
+
+2. Suppose the economy is producing the combination of goods yielding 'point Z on the PPF.'  However, suppose that given the combination of goods produced Z, and the distribution of these goods to consumers we could *reallocate* these.  (E.g., have person 1 trade good $z_1$ to person 2 in  exchange for some of good $z_2$). Suppose that this reallocation would  to make at least one person better off without making anyone worse off (a Pareto imrovement). Then the original point (before any such reallocation) was not Pareto Optimal; it suffered from **Exchange inefficiency**.
+
+
+3. Suppose  the economy is producing at 'Point X on the PPF' and there is no Exchange inefficiency. However, we are producing the 'wrong goods': we  could make a Pareto improvement by producing 'more of one good and less of another' (and allocating these to consumers).  We call this **'top-level inefficiency'** or **'allocative inefficiency'**. The DWL of monopoly leads to allocative inefficiency: too little of the monopolized good will be produced relative to other goods. (The remaining productive resources will presumably be used towards non-monopolized goods, and these will be relatively over-produced.)
+
+
+
+
+
+\
+
+### Other social costs and benefits of monopoly? {#other-costs=monop -}
+
+Some argue the deadweight loss (DWL) above *understates* the true harm of monopoly. This is controversial. These arguments include...
+
+- 'Secure' monopolies don't innovate as much, and spend wastefully (leading to productive inefficiency)?
 
 - Monopolies may expend wasteful resources (lobbying, threats, lawsuits...) to preserve barriers to entry
 
 Thus the above monopoly profits may turn into *further* deadweight losses!
 
-On the other side, some people argue monopolies tend not to persist in the long run, are disciplined by *potential* entry, and have *greater* incentives to innovate
-
-```
+On the other side, some people argue monopolies tend not to persist in the long run, are disciplined by *potential* entry, and have *greater* incentives to innovate.
 
 
 \
@@ -8208,31 +8238,35 @@ This does not deal with differences amongst consumers. It may ''force the firm t
 
 Under monopoly, uniform pricing leads to a deadweight loss, as we have already seen:
 
-<!-- 
-```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics(file.path("picsfigs","dwl3.png"))
+
+
+```{r  fig.cap = 'Source: McAfee et al. ', out.width='20%', fig.asp=.25, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","dwl_monop_mcafee.png"))
 ```
--->
+\
+
+However, price discrimination holds the potential to increase profit (it will, in general, increase profit). It might also reduce the deadweight loss, i.e., increase total welfare. If price discrimination is 'Perfect' then it *will* boost total welfare, as suggested in the illustration below (see Saylor academy [First-Degree Price Discrimination: Personalized Pricing](https://saylordotorg.github.io/text_developing-new-products-and-services/s05-02-first-degree-price-discriminat.html) for an interesting discussion, but see margin note.
+ ]) 
+
+
+```{r  fig.cap = 'Source: Saylor Academy', out.width='40%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","saylor_single_price.png"))
+```
+
+\
+
+```{r  fig.cap = 'Source: Saylor Academy', out.width='40%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","saylor_ppd_auction.png"))
+```
 
 <div class="marginnote">
-Add graphical depiction here 
+**Note**: I would say that an auction *might* lead to outcomes resembling perfect price discrimination, where the seller captures most of the consumers' valuations. But this is a whole field of study, 'Auction theory', which engages the issues of Asymmetric information and Mechanism design (principle/agent models).
 </div>
- 
-\
-
-However, price discrimination holds the potential to increase profit (it will, in general, increase profit). It might also reduce the deadweight loss, i.e., increase total welfare. If price discrimination is 'Perfect' then it *will* boost total welfare, as depicted below. (But if it is not perfect, it might reduce welfare...)
-
-<!--
-```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics(file.path("picsfigs","ppd1.png"))
-```
 
 \
 
-```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics(file.path("picsfigs","ppd2.png"))
-```
--->
+**But if it is not 'perfect', price discrimination can reduce (or increase) welfare...**
+
 \
 
 ```{block2,  type='inputq'}
@@ -8285,14 +8319,11 @@ Instead, it sells different bundles, quantities or qualities of products to get 
 
  <br> <br> \bigskip
 
-```{block2,  type='technote'}
-To fully analyse these problems we need to know the techniques of 'mechanism design under asymmetric information', which we are not covering in this module.
-```
 
 
 ```{block2,  type='note'}
 
- To fully analyse these problems we need to know the techniques of 'mechanism design under asymmetric information'; we will touch on this later in the module, time permitting
+ To fully analyse these problems we need to know the techniques of 'mechanism design under asymmetric information'; we will touch on this later in the module, time permitting, and cover a brief version of it here, following the O-R notes.
 
 There are some interesting results, such as 'the firm finds it optimal to make the low(er)-valuing type/types' bundle smaller or lower-quality than would be efficient (called quality or quantity distortion), while the higher-valuing type gets a 'rent' (consumer surplus).
 
@@ -8325,7 +8356,7 @@ Perfect price discrimination
 :     Charging each consumer (for each unit) the *maximum* he or she would be willing to pay, i.e., her valuation
 
 
-<br> <br> \bigskip
+<br> 
 
 
 Here the monopolist would extract *all the available surplus*; no consumer surplus remains.
@@ -8551,13 +8582,13 @@ Net welfare result: theoretically uncertain. This is a nuanced point, but I thin
 
 **For consumers:**
 
-```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics(file.path("picsfigs","pdwelfare.png"))
 ```
 
 \
 
-```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='55%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics(file.path("picsfigs","pdwelfareoverall.png"))
 ```
 
@@ -8581,9 +8612,9 @@ $\rightarrow$ Exchange efficiency: *given what is produced*, PD causes it to be 
 
 **Top-level efficiency; amount produced**
 
-On the other hand, PD could lead more to be produced/consumed (but not necessarily) of the otherwise underproduced 'monopolised' good (remember DWL of monopoly)
+On the other hand, PD could lead more to be produced/consumed (but not necessarily) of the otherwise underproduced 'monopolised' good (remember the general DWL of monopoly).
 
-$\rightarrow$ top-level efficiency may increase (or decrease)
+$\rightarrow$ top-level (allocative) efficiency may increase (or decrease).
 
 \
 
@@ -8616,8 +8647,6 @@ So PD only 'works' for goods that are hard to trade, like haircuts...
 
 or where purchases are frequent and low-value, and resale markets are difficult
 
-
-
 (The above issues are sometimes referred to as 'transactions costs'.)
 
 ```{block2,  type='warning'}
@@ -8646,7 +8675,7 @@ This yields another mechanism design 'hidden information' 'principal-agent probl
 
 
 ```{block2,  type='note'}
-**I will present a full description of this shortly, adding some helpful content.**
+**I am filling this in below; I'll let you know when this is finalised (which should be soon).**
 ```
 
 ## Description from ELE page:
@@ -8655,11 +8684,59 @@ This yields another mechanism design 'hidden information' 'principal-agent probl
 
 Several options (to be explained):  all will ask you to 'explain, assess and apply microeconomic theory'
 
-- To be submitted by beginning 8 December (this is subject to confirmation)
-- Written length: approximately 10-15 pages (this is flexible)
+The project must *not* principally involve material covered in the midterm (and obviously please do not copy content from the lecture materials/web book/textbooks): it must involve Game Theory and/or enrichment/supplemental topics.
+
+
+- All projects must include and explain some formal economic modeling (with maths), showing your understanding and insight. In other words, you *must* demonstrate your understanding of Microeconomics and your ability to apply it in some way,
+
+- All projects must cite and explain at least 2 peer-reviewed academic Economics articles (and perhaps more).
+
+- Ideally, these projects will relate to your proposed dissertation (if your programme requires you to do one), or to your career goals
+
+\
+
+
+- To be submitted by 8 December (this is subject to confirmation)
+
+- Written length: approximately 8-15 pages (this is flexible; group projects may longer than this)
+
 - Spoken presentation (with slides if desired): 10 minutes plus 5 minutes discussion and feedback.
 
 - Presentations to be scheduled and take place (online or in person if health conditions permit) by 11 December or earlier (subject to confirmation)
+
+
+## Option 1: Game Theory: Characterization and analysis of a real-world situation/problem/issue
+
+## Option 2: Asymmetric information/agency theory/mechanism design: Characterization and analysis of a real-world situation/problem/issue
+
+## Option 3: Application of economic theory to (observational) empirical work (econometric/statistical analysis)
+
+Econometricians collect and use data, and seek to 'identify' particular parameters and relationships, often seeking 'causal inference'.
+Consider a *particular* empirical question or policy issue (in Economics or an adjacent area). Conduct a brief survey to identify and characterise the work that has been done in this area. (But please do not go into too much detail in writing about this, if it does not relate to microeconomic theory). You may want to focus on a small number of papers.
+
+Explain how microeconomic theory *influences* the statistical/econometric framing and analysis of this question, and the interpretation of the results. What theoretical models (e.g., of consumer and firm choices, government policy goals, strategic interactions, asymmetric information, institutions and market structures) do they use to 'motivate' their question and justify their empirical econometric approach. Specify and explain these models carefully. Consider how these inform the authors empirical analysis. (E.g., the authors may justify their analysis by stating 'this technique identifies the following parameter under the assumptions of the XXX model'.)
+
+Explain and critique the authors claims and justifications. If possible, consider the *difference* between the approaches of several authors, contrasting and evaluating their claims and arguments.
+
+
+(If you like, you can use this as an opportunity to propose and present your *own actual* analysis of data, although this is not necessary).
+
+## Option 4: Comparison of 'Economic experiment' designs (lab or field experiments) guided by Microeconomic theory
+
+
+## Option 5: Explanation of another 'advanced concept' in Microeconomic theory (not covered in midterm), application to a real-world situation/problem/issue (or a deep theoretical question involving human values and behavior)
+
+In the notes and readings I mention 'enrichment' and 'advanced' concepts. If you choose this option, your project should explore one of these concepts further. For the concept you choose, please present the formal models clearly and explain these 'in your own words'. Discuss the insights these models provide. Discuss the differing approaches and 'controversies' surrounding these models. Provide and explain an example of how this concept applies (and perhaps 'how it has been applied by researchers') to either a  real-world situation/problem/issue, or to a 'deep question informing our understanding of human values and behavior, and aggregate social and market outcomes'.
+
+## Other options:  You can propose another project that doesn't exactly fit into the categories above. BUT ...
+
+If you do so, please do so by early November, and obtain my tentative approval. I want to make sure that all projects achieve the goals of demonstrating your understanding and ability to apply Microeconomics. So be careful.
+
+
+
+
+
+
 
 <!--chapter:end:project.Rmd-->
 
@@ -9245,7 +9322,7 @@ This implies that at optimum 'the rate of increase in utility is greatest in the
 Which tells us that the plane tangent to the '(multi-dimensional) indifference surface' at this point is the budget plane.
 
 
-## Supplement: Primal and dual of demand (max and min), Hicksian demand, Identities, Slutskly equation
+## Supplement: Primal and dual of demand (max and min), Hicksian demand, Identities, Slutskly equation {#dual}
 
 ### Primal and dual -- functions and relationships (doctoral prep):
 

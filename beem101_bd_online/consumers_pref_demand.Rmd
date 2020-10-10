@@ -1213,12 +1213,13 @@ Market demand curve
 - Sum the individual demand curves ('horizontally' ... quantities demanded at each price)
 
 
-<!--
-```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics(file.path("picsfigs","summarketdemandcurve.png"))
+<div class="marginnote">
+Image source: McAfee et al, Introduction to Economic Analysis v. 2.1, chapter 2.3
+</div>
+ 
+```{r  fig.cap = 'McAfee et al: Individual demand aggregates to market demand', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","individual_to_mkt_dmd-mcafee.png"))
 ```
-`r format_with_col("Make sure you can do numerical examples of this","gray")`
--->
 
 <!--
 LC: Illustrate 'sums horizontally' on visualiser if possible*
@@ -1226,8 +1227,10 @@ LC: Illustrate 'sums horizontally' on visualiser if possible*
 
 
 
-Some of our previous results about individual demand also hold for market demand, while others do not, or only if we make restrictive assumptions
+Some of our previous results about individual demand also hold for market demand, while others do not, or only if we make restrictive assumptions.
 
+
+\
 
 Shifts in the market demand curve are caused by similar things that cause individual demand curve shifts
 
@@ -1449,7 +1452,7 @@ Suppose p=10 and q=10 so TR=100. Then when p=12 and q=8 TR=96. Huh? Price increa
 \
 
 
-TR is unchanged when p*q stays the same. With a change in each $\delta p$ and $\delta q$, the new revenue is
+TR is unchanged when $p \times q$ stays the same. With a change in each $\delta p$ and $\delta q$, the new revenue is
 
 $(p+\delta p)(q+\delta q) = pq+\delta p q + \delta q p + \delta p \delta q$.
 
@@ -1670,7 +1673,12 @@ The budget share on j plus the sum of the budget shares of other goods multiplie
 
 1. To consider **constrained optimization** (with many goods) using the Lagrangian method  see [THIS supplement](#lagrange) (based on David Autor's notes)
 
-2. The dual 'minimization problem' and 'Hicksian demand' are discussed [HERE]()
+2. The dual 'minimization problem' and 'Hicksian demand' are discussed [HERE](#dual). For a simpler treatment, please see QMC Chapter 20.3\*. 
+
+<div class="marginnote">
+Recall: QMC refers to ['Quantum Microeconomics with Calculus'](http://www.smallparty.org/yoram/quantum/quantumcalc.pdf) by Yoram Baumann 
+</div>
+ 
 
 ### Further doctoral-prep concepts {-#docprep}
 
