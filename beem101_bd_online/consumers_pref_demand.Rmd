@@ -64,7 +64,9 @@ Think of this as a map with a projection above it.
 
 ```
 
-The above diagram also includes color to depict the utility level, like a 'heat map'.^[This diagram is from a very useful resource from MIT, [Frank's Economics on the web](http://web.mit.edu/11.203/www/econ/).]
+The above diagram also includes color to depict the utility level, like a 'heat map'. <div class="marginnote">
+This diagram is from a very useful resource from MIT, [Frank's Economics on the web](http://web.mit.edu/11.203/www/econ/).]
+</div>
 
 ### Examples of preferences (over 2 goods) {-}
 
@@ -1094,21 +1096,23 @@ If the second effect outweighs the first we have the surprising result that , an
 
 ```
 
-To cover this in more detail, we would need to define another concept called "Hicksian  demand".
+To cover this in more detail, we would need to define another concept called "Hicksian  demand" (see [supplement](#dual)).
 
 
 ### Complements/substitutes; response to (other) price changes (limited coverage) {#price_changes}
 
 ## Consumer surplus (brief and incomplete treatment)
 
-Consumer surplus (Undergraduate definition: Nicholson and Snyde)
+Consumer surplus (Undergraduate definition: Nicholson and Snyder)
 :     The extra value individuals receive from consuming a good over what they pay for it.
 
 <br> \bigskip
 
 - What people would be willing to pay for the *right* to consume a good *at its current price* rather than not being able to buy it at all.\*
+
 <div class="marginnote">
- *In other words, if you said to a consumer 'this product will stop being produced/offered  unless you pay us enough money',  this is the maximum amount the consumer would be will be willing to pay to keep the product on the market,  at its current price.</div>
+In other words, if you said to a consumer 'this product will stop being produced/offered  unless you pay us enough money',  this is the maximum amount the consumer would be willing to pay to keep the product on the market,  at its current price.
+ </div>
 
 
 - The area between the demand curve and the market price
@@ -1133,13 +1137,12 @@ This concept can also be applied to measuring the value added by the introductio
 
 \
 
-```{r  fig.cap = 'Source: Nicholson and Snyder, 2010', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = 'Source: Nicholson and Snyder, 2010', out.width='80%', fig.asp=.5, fig.align='center',  echo = FALSE}
  knitr::include_graphics(file.path("picsfigs","cons_surplus.png"))
 ```
 
 
 \
-
 
 Also... This can be applied to the individual or market demand curve to obtain individual or total consumer surplus (although there are some technical issues with the latter).
 
@@ -1254,9 +1257,11 @@ However, the aggregate income does not have a single effect; it cannot be easily
 
 ## Elasticities
 
-`r format_with_col(" This is a fundamental mathematics concept that comes from Physics;  it's not just for Economics.","gray")`
+<div class="marginnote">
+This is a fundamental mathematics concept that comes from Physics;  it's not just for Economics.
+</div>
+ 
 
-How do we measure and compare the extent to which one thing responds to another? E.g., which is 'larger'?:
 
 - the change in quantity demanded of oranges when the price of oranges rises or
 - the change in quantity demanded of apple juice when the price of apple juice rises?
@@ -1537,17 +1542,23 @@ $$  = \frac{\Delta Q_d}{Q_d}/\frac{\Delta I}{I}$$
 
 
 E.g., cocaine is a luxury good, if, when I win £1000 in the lottery, I will increase my consumption of cocaine by *more* than £1000 ...
- (assuming, as in classical models, that I treat all sources of income the same
-
-`r format_with_col("Q: Is a luxury good a normal good?","blue")`^[Ans: Yes (do you know why?)]
+ (assuming, as in classical models, that I treat all sources of income the same...
 
 
-<br> <br> \bigskip
+```{block2,  type='inputq'}
+Q: Is a luxury good a normal good?
+```  
+```{block2,  type='fold'}
+Ans: Yes (do you know why?)
+```
+
+<br>
 
 
-
-\textcolor{blue}{Q:  (micro quiz): Why is it that not every good can have an income elasticity of demand greater than 1?
- Can every good have an income elasticity of demand less than 1?}
+```{block2,  type='inputq'}
+Why is it that not every good can have an income elasticity of demand greater than 1?
+Can every good have an income elasticity of demand less than 1?
+```
 
 
 
@@ -1618,7 +1629,7 @@ Applying this to 'budget shares': $s_i \equiv p_i x_i/I$... noting these must ad
 \
 
 
-## Adding-up ('aggregation') etc {-aggregation}
+## Adding-up ('aggregation') etc {-#aggregation}
 
 If an individual 'always spends all her income' then this equality must hold everywhere.  This implies a set of relationships:
 

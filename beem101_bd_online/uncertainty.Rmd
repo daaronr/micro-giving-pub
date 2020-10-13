@@ -533,7 +533,7 @@ Note that this definition of continuity is remeniscent but not identical to the 
 
 **Def: Independence**
 
-"If I prefer a particular (certain) A over a particular lottery B, I also prefer to increase the probability of A over B... in a 'compound lottery'"
+"If I prefer a particular (certain) $A$ over a particular lottery $B$, I also prefer to increase the probability of A over B... in a 'compound lottery'"
 
 - Counterexamples: pessimistic preferences, 'minimizing options'
 - Note how, in this case, a property over $\succsim$ extends to $\succ$
@@ -542,7 +542,27 @@ Note that this definition of continuity is remeniscent but not identical to the 
 Independence and pessimistic preferences are relevant to 'population ethics' and 'effective altruism' and 'other-regarding preferences', and 'social welfare functions/social preferences'. E.g., sometimes we must decide between 'making a big positive difference with a high probability' (e.g., providing bednets to prevent malaria) and 'making an extremely large positive difference with a very small probabillity' (e.g., building a system to block an asteroid from destroying the earth).
 </div>
 
+<center>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Mv4j9v-apEE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Explaining 'independence' property of preferences over lotteries; quick overview of O-R notation
+</center> 
+
 \
+
+
+<center>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kRFzZPuKy7E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Further explanation ... why is this property called 'independence'?
+</center> 
+
+
+
+\
+
 
 **Def: Monotonicity of VnM preferences**
 
@@ -790,6 +810,12 @@ If the person is 'risk-neutral', it must be linear, thus $V(y) = a + by$, thus $
 Add: formal statement and proof that risk aversion depends on the concavity of Bernoulli (value) function $v(\cdot)$, (Prop 3.3 in O-R)
 ```  
 
+
+```{block2,  type='tip'}
+
+For a very simple explanation of the relationship between the concavity of  the utility function and risk preference, and a discussion of 'why people buy insurance' ... see any of the many videos online, like [This one by Ronald Moy](https://www.youtube.com/watch?v=tCreeXzCNRc)
+
+```  
 
 
 <br> 
@@ -1192,6 +1218,7 @@ Other work finds that simple survey measures do a better job of predicting real 
 
 - How does this affect (financial, investment, insurance) choices?  Why does 'diversification improve outcomes for the risk-averse'?
 
+
 - How does this affect asset prices (Stocks, bonds, etc.) with 'efficient markets' (this will be briefly defined)
 
 <!-- ### Insurance {-}
@@ -1440,7 +1467,7 @@ This doesn't make you a hit at parties :(
 
 - CARA, CRRA
 
-- Certainty equivalenne
+- Certainty equivalent
 
 <div class="marginnote">
 Content to be added here, drawing from McDL section 13.4.
@@ -1450,25 +1477,58 @@ Content to be added here, drawing from McDL section 13.4.
 
 ### Local measures of risk-aversion {-}
 
-- Coefficient of *absolute* risk aversion: $A(m) \equiv -\frac{u''(m)}{u'(m)}$
+- Coefficient of *absolute* risk aversion in income or weath $m$: $A(m) \equiv -\frac{u''(m)}{u'(m)}$
 
-Note this is preserved under an affine transformation; the value itself may be constant, decreasing, increasing in income...
+Note this is preserved under an affine transformation, it is only affected by things that affect *preferences* (see indifference curves), not by 'the same preferences represented by a different utility function'. 
+
+Note that the value of this measure itself may be constant, decreasing, increasing in income...
 
 
+\
+
+I say 'local' because these measures need not be constant. However, using differential equations we can derive a 'constant absolute risk aversion' utility function, also known as 'Exponential utility'
+
+$$u(m) = 1 - exp(-\alpha m)$$
 \
 
 
 <br> 
 
-- Coefficient of *relative* risk aversion: $R(m) \equiv mA(m)=-\frac{mu''(m)}{u'(m)}$
+- Coefficient of *relative* risk aversion: $$R(m) \equiv mA(m)=-\frac{mu''(m)}{u'(m)}$$
 
 
+This need not be constant in income. It is only constant if utility is of the 'isoelastic' form
 
-`r format_with_col("Note that these ideas are also relevant to intertemporal substitution and to social welfare functions","gray")`
+$$u(w) = \frac{m^{1- \rho} - 1}{1-\rho}$$ 
+
+... Note that *for the above utility function* $R(m) = \rho$ (and this it is constant).
+
+<div class="marginnote">
+Note that these ideas are also relevant to intertemporal substitution and to social welfare functions. The way we depict utility and preferences over time is similar to the way we depict preferences over uncertainty. This sometimes makes it hard to separate the two in empirical studies and applied questions.
+</div>
+ 
+
+**For these measures** 
 
 RRA (ARA) constant $\rightarrow$ constant fraction of portfolio (number of dollars) held in risky asset as wealth increases.
 
+
+
 \
+
+
+
+
+\
+
+
+These measures are discussed very neatly in the video below, giving some specific parametric examples.  However, he never explains exactly what the 'units' here are. What exactly do $A(W)$ and $R(W)$ measure?
+
+<center> 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1kU4pvdIdT4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</center> 
 
 ### 'Prudence'  {-}
 
