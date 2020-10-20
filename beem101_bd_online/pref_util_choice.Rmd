@@ -1897,7 +1897,7 @@ A choice function must assign an individual's choice to any of the above choice 
 - $\{b,c\} \rightarrow b$
 - $\{a,b,c\} \rightarrow a$
 
-Could this be 'rationalised' by any preferences? (Unfold)
+Could this (above) be 'rationalised' by any preferences? (Unfold)
 
 ```{block2,  type='fold'}
 No it can not! See O-R example 3.1 for a further discussion.
@@ -2287,7 +2287,7 @@ Consider the binary relation $H$ loosely defined as "$A H B$ if and only if $A$ 
 
 \
 
-Try part B... here we consider whether this person's preferences can be represented by a utility function that is *additive* in the number of rooms and the floor.  I.e., a utility function that is the sum of two functions, one that is a function of the floor ($\ell$), and another that is a function of the number of rooms (r). For example $r^2 + exp(l)$ would is the sum of the functions $f(r)=r^2$ and $g(\ell)= exp(\ell)$.
+Try part B... here we consider whether this person's preferences can be represented by a utility function that is *additive* in the number of rooms and the floor.  I.e., a utility function that is the sum of two functions, one that is a function of the floor ($\ell$), and another that is a function of the number of rooms (r). For example $r^2 + exp(l)$ is the sum of the functions $f(r)=r^2$ and $g(\ell)= exp(\ell)$.
 
 It turns out that it *cannot* be represented by a utility function that is additive in this way...
 
@@ -2346,8 +2346,52 @@ I also think it is good to think about 'what sort of (utility) function can repr
 -->
 
 
+### Some easier exercises (from Varian's intermediate text)
+
+i. What does it mean to say that a function, $u(x_1; x_2)$ represents a consumer’s preferences over bundles of $x_1$ and $x_2$?
+
+```{block2,  type='fold'}
+
+Answer: A utility function $u$ represents a consumer’s preferences, $\succsim$, over bundles X and Y , if $u(X) \geq u(Y)$ if and only if $X \succsim Y$. I.e. whenever bundle $X$ is (weakly) preferred to bundle $Y$, u assigns a higher number to $X$ than it does to $Y$ (and vice-versa)
+,
+```
+
+\
+ii.  What assumptions do we need to make so that preferences can be represented by a utility function?
+
+```{block2,  type='fold'}
+
+Answer: If the choice set is finite (i.e., it contains some finite number of bundles to choose from, e.g., 100 bundles) and preferences are complete, transitive, and reflexive, then there exists a utility function that can represent the consumer’s preferences.
+
+\
+
+If the choice set is infinite (e.g.,$\{x_1,x_2\} \in \mathbb{R^2_{+}}$) we also need to assume preferences are *[continuous](#continuity)*.
+```
+
+
 ## Exercises: Choice {-#ex-choice}
 
-To be determined. The exercises in O-R are possibly too mathematical. For now, please be sure you can do all the 'comprehension questions' throughout the above section.
+Please be sure you can do all the 'comprehension questions' throughout section \@ref(choice) above. Note that some O-R's  exercises for this are too mathematical for this module/for my taste.
+
+\
+
+### O-R ex. 2.3 
+
+> The waiter informs him ... he may have either broiled salmon at 2.50 USD or steak at 4.00 USD. ... he elects the salmon. Soon after the waiter returns from the kitchen ... to  tell him that fried snails and frog’s legs are [also available] for 4.50 USD  each. ... his response is “Splendid, I’ll change my order to steak”.
+
+Explain in your own words, and using the formal language of preferences and choices, why this seemingly perverse behavior *could* or *could not* be rationalizable. Does it depend on how we define the goods in the choice set?
+
+\
+
+
+### Exercise: Decoy effect
+
+Formally depict a choice function representing the 'decoy effect’ (aka, “asymmetrically dominated choice”, aka “the attraction effect).
+
+
+- What is (some of the) the evidence for this? (give a very brief description, with some citations, explaining what the authors do and what they find)
+
+- Can these be rationalised by a preference relation? Explain why or why not. 
+
 
 

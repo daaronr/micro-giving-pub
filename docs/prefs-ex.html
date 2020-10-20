@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
 
 
-<meta name="date" content="2020-10-13" />
+<meta name="date" content="2020-10-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -314,8 +314,13 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="prefs-ex.html"><a href="prefs-ex.html#or_p1"><i class="fa fa-check"></i>(Highly optional): Properties of binary relations - O-R problem 1a.</a></li>
 <li class="chapter" data-level="" data-path="prefs-ex.html"><a href="prefs-ex.html#shepard-scale-and-penrose-stairs-o-r-problem-6"><i class="fa fa-check"></i>Shepard Scale and Penrose stairs (O-R problem 6)</a></li>
 <li class="chapter" data-level="" data-path="prefs-ex.html"><a href="prefs-ex.html#ex-add-util"><i class="fa fa-check"></i>Representations with additive utility [O-R 9b]</a></li>
+<li class="chapter" data-level="2.5.6" data-path="prefs-ex.html"><a href="prefs-ex.html#some-easier-exercises-from-varians-intermediate-text"><i class="fa fa-check"></i><b>2.5.6</b> Some easier exercises (from Varian’s intermediate text)</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="prefs-ex.html"><a href="prefs-ex.html#ex-choice"><i class="fa fa-check"></i>Exercises: Choice</a></li>
+<li class="chapter" data-level="" data-path="prefs-ex.html"><a href="prefs-ex.html#ex-choice"><i class="fa fa-check"></i>Exercises: Choice</a>
+<ul>
+<li class="chapter" data-level="2.5.7" data-path="prefs-ex.html"><a href="prefs-ex.html#o-r-ex.-2.3"><i class="fa fa-check"></i><b>2.5.7</b> O-R ex. 2.3</a></li>
+<li class="chapter" data-level="2.5.8" data-path="prefs-ex.html"><a href="prefs-ex.html#exercise-decoy-effect"><i class="fa fa-check"></i><b>2.5.8</b> Exercise: Decoy effect</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="uncertainty.html"><a href="uncertainty.html"><i class="fa fa-check"></i><b>3</b> Preferences under uncertainty (and over time)</a>
 <ul>
@@ -648,7 +653,7 @@ Consider the binary relation $H$ loosely defined as "$A H B$ if and only if $A$ 
 <p>(Skip part A: “Show that the individual’s preference are consistent with a preference relation.”)</p>
 <p><br />
 </p>
-<p>Try part B… here we consider whether this person’s preferences can be represented by a utility function that is <em>additive</em> in the number of rooms and the floor. I.e., a utility function that is the sum of two functions, one that is a function of the floor (<span class="math inline">\(\ell\)</span>), and another that is a function of the number of rooms (r). For example <span class="math inline">\(r^2 + exp(l)\)</span> would is the sum of the functions <span class="math inline">\(f(r)=r^2\)</span> and <span class="math inline">\(g(\ell)= exp(\ell)\)</span>.</p>
+<p>Try part B… here we consider whether this person’s preferences can be represented by a utility function that is <em>additive</em> in the number of rooms and the floor. I.e., a utility function that is the sum of two functions, one that is a function of the floor (<span class="math inline">\(\ell\)</span>), and another that is a function of the number of rooms (r). For example <span class="math inline">\(r^2 + exp(l)\)</span> is the sum of the functions <span class="math inline">\(f(r)=r^2\)</span> and <span class="math inline">\(g(\ell)= exp(\ell)\)</span>.</p>
 <p>It turns out that it <em>cannot</em> be represented by a utility function that is additive in this way…</p>
 <p><br />
 </p>
@@ -696,11 +701,50 @@ I also think it is good to think about 'what sort of (utility) function can repr
 
 -->
 </div>
+<div id="some-easier-exercises-from-varians-intermediate-text" class="section level3" number="2.5.6">
+<h3><span class="header-section-number">2.5.6</span> Some easier exercises (from Varian’s intermediate text)</h3>
+<ol style="list-style-type: lower-roman">
+<li>What does it mean to say that a function, <span class="math inline">\(u(x_1; x_2)\)</span> represents a consumer’s preferences over bundles of <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>?</li>
+</ol>
+
+<div class="fold">
+Answer: A utility function <span class="math inline">\(u\)</span> represents a consumer’s preferences, <span class="math inline">\(\succsim\)</span>, over bundles X and Y , if <span class="math inline">\(u(X) \geq u(Y)\)</span> if and only if <span class="math inline">\(X \succsim Y\)</span>. I.e. whenever bundle <span class="math inline">\(X\)</span> is (weakly) preferred to bundle <span class="math inline">\(Y\)</span>, u assigns a higher number to <span class="math inline">\(X\)</span> than it does to <span class="math inline">\(Y\)</span> (and vice-versa)
+,
+</div>
+<p><br />
+ii. What assumptions do we need to make so that preferences can be represented by a utility function?</p>
+
+<div class="fold">
+<p>Answer: If the choice set is finite (i.e., it contains some finite number of bundles to choose from, e.g., 100 bundles) and preferences are complete, transitive, and reflexive, then there exists a utility function that can represent the consumer’s preferences.</p>
+<p><br />
+</p>
+If the choice set is infinite (e.g.,<span class="math inline">\(\{x_1,x_2\} \in \mathbb{R^2_{+}}\)</span>) we also need to assume preferences are <em><a href="pref-util-choice.html#continuity">continuous</a></em>.
+</div>
+</div>
 </div>
 <div id="ex-choice" class="section level2 unnumbered" number="">
 <h2>Exercises: Choice</h2>
-<p>To be determined. The exercises in O-R are possibly too mathematical. For now, please be sure you can do all the ‘comprehension questions’ throughout the above section.</p>
+<p>Please be sure you can do all the ‘comprehension questions’ throughout section <a href="pref-util-choice.html#choice">2.5</a> above. Note that some O-R’s exercises for this are too mathematical for this module/for my taste.</p>
+<p><br />
+</p>
+<div id="o-r-ex.-2.3" class="section level3" number="2.5.7">
+<h3><span class="header-section-number">2.5.7</span> O-R ex. 2.3</h3>
+<blockquote>
+<p>The waiter informs him … he may have either broiled salmon at 2.50 USD or steak at 4.00 USD. … he elects the salmon. Soon after the waiter returns from the kitchen … to tell him that fried snails and frog’s legs are [also available] for 4.50 USD each. … his response is “Splendid, I’ll change my order to steak”.</p>
+</blockquote>
+<p>Explain in your own words, and using the formal language of preferences and choices, why this seemingly perverse behavior <em>could</em> or <em>could not</em> be rationalizable. Does it depend on how we define the goods in the choice set?</p>
+<p><br />
+</p>
+</div>
+<div id="exercise-decoy-effect" class="section level3" number="2.5.8">
+<h3><span class="header-section-number">2.5.8</span> Exercise: Decoy effect</h3>
+<p>Formally depict a choice function representing the ‘decoy effect’ (aka, “asymmetrically dominated choice”, aka “the attraction effect).</p>
+<ul>
+<li><p>What is (some of the) the evidence for this? (give a very brief description, with some citations, explaining what the authors do and what they find)</p></li>
+<li><p>Can these be rationalised by a preference relation? Explain why or why not.</p></li>
+</ul>
 
+</div>
 </div>
 </div>
             </section>
