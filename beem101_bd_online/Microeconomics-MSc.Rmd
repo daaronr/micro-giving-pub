@@ -3993,6 +3993,13 @@ So, what do we really mean? We might consider whether people's choices are 'rati
 
 \
 
+<center>
+Defining 'a rationalizable choice function':
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1JEht-HGPtA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+\
+
 OR's definition:
 
 <div class="marginnote">
@@ -4093,9 +4100,6 @@ This translation from straightforward payoffs to payoffs that depend on the natu
 #### Property $\alpha$ {-}
 
 
-<div class="marginnote">
-DR Todo: I intend to add a video here discussing this
-</div>
 
 The above 'violations' and the discussion of 'irrelevant alternatives' relate to what O-R refer to as:
 
@@ -4160,6 +4164,14 @@ This does *not* imply that satisfying property-$\alpha$ implies, by itself, that
 </div>
  
 -->
+
+<center>
+
+Proof:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yOtqAIcw9ik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
 \
 
 ### Satisficing
@@ -4383,7 +4395,11 @@ You can skip 1b, if you like.
 -->
 
 
-Think about the question they ask, and write a short answer. We will discuss this.
+Think about the question they ask, and write a short answer. We will discuss this.  I give an answer and discussion in the video below.
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XItTRwCah3s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
 
 <!-- 
@@ -4414,7 +4430,77 @@ Consider the binary relation $H$ loosely defined as "$A H B$ if and only if $A$ 
 <!-- in an apartment building. He prefers a unit with 5 rooms on floor 12 to one with 4 rooms on floor 20, one with 4 rooms on floor 5 to one with 2 rooms on floor 12, and one with 2 rooms on floor 20 to one with 5 rooms on floor
 -->
 
-(Skip part A: "Show that the individual’s preference are consistent with a preference relation.")
+(Not assigned, but maybe helpful ... Part A: "Show that the individual’s preference are consistent with a preference relation.")
+
+```{block2,  type='fold'}
+We want preference relations that lead to the *strict preferences* stated in the problem....
+ 
+$$(5, 12) \succ (4, 20)$$
+$$(4, 5) \succ (2, 12)$$
+and 
+$$(2, 20) \succ (5,5)$$
+  
+Where the first element in each pairing  is 'rooms' and the second element is 'floor'.
+
+Recall the $\succ$  meaning 'strictly preferred' is defined as
+$A \succ B$ if  $A \succsim B$ but not  $B \succsim A$.
+
+\
+
+OK, we could merely restate the preferences above. But perhaps we want to generalise. 
+
+One preference relation (but not the only one) over all pairs $(r,l)$ that is consistent with the preferences given above is defined by
+
+ 
+$(r,l) \succsim (r′,l′)$ if and only if either
+
+ 
+
+1. $r \geq r′$ and $(r,l) \neq (5,5)$, or
+
+2. $(r′,l′) = (5,5)$.
+
+
+\
+
+Why the "and $(r,l) \neq (5,5)$" in point 1?
+
+Considering the $(2, 20) \succ (5,5)$ preference ... try the above rule applied in both directions:
+ 
+First, is (2, 20) weakly preferred to  (5,5)?
+
+
+1. $r ≥ r′$ and $(r,l) \neq  (5,5)$ $\rightarrow$ FALSE (because $r<r'$), so go to step 2 (interpret the 'or' as an 'inclusive or')
+
+2. $(r′,l′) = (5,5)$. $\rightarrow$  TRUE
+ 
+As "1 or 2" is TRUE, the conditions hold, so (2, 20) is weakly preferred to  (5,5).
+
+\
+
+Next, is (5, 5) NOT weakly preferred to (2,20)? ... now let (5,5) be (r,l) and 2,20 be (r',l')
+
+ 
+
+1. $r ≥ r′$ and $(r,l) \neq  (5,5)$ $\rightarrow$ FALSE ... because now (r,l) is (5,5) ... so go to the second condition... 
+ 
+2. $(r′,l′) = (5,5)$. $\rightarrow$  FALSE 
+ 
+So (5, 5) is NOT weakly preferred to (2,20).
+
+ 
+ \
+ 
+Thus, as we have th
+... (2,20) weakly preferred to (5,5)
+... (5,5) not weakly preferred to (2,20)
+We thus have (2,20) strictly preferred to (5,5).
+ 
+But note how the "and $(r,l) \neq (5,5)$" condition above was needed ... if it weren't there, we would have concluded a weak preference in both directions (implying indifference).
+
+```
+
+
 
 \
 
@@ -4502,9 +4588,20 @@ If the choice set is infinite (e.g.,$\{x_1,x_2\} \in \mathbb{R^2_{+}}$) we also 
 
 ## Exercises: Choice {-#ex-choice}
 
-Please be sure you can do all the 'comprehension questions' throughout section \@ref(choice) above. Note that some O-R's  exercises for this are too mathematical for this module/for my taste.
+Please be sure you can do all the 'comprehension questions' throughout section \@ref(choice) above. Note that some of O-R's  exercises for this are too mathematical for this module/for my taste.
 
 \
+
+### OR chapter 2 Exercise 6 "Caring up to a limit"
+
+
+\
+
+### OR chapter 2 Exercise 8 "Money pump"
+
+
+\
+
 
 ### O-R ex. 2.3 
 
@@ -4517,7 +4614,7 @@ Explain in your own words, and using the formal language of preferences and choi
 
 ### Exercise: Decoy effect
 
-Formally depict a choice function representing the 'decoy effect’ (aka, “asymmetrically dominated choice”, aka “the attraction effect).
+Formally depict a choice function representing the 'decoy effect’ (aka, “asymmetrically dominated choice”, aka “the attraction effect"  ).
 
 
 - What is (some of the) the evidence for this? (give a very brief description, with some citations, explaining what the authors do and what they find)
@@ -4540,7 +4637,7 @@ Formally depict a choice function representing the 'decoy effect’ (aka, “asy
 
 *More content likely to be added.*
 
-This material is largely drawn from O-R Chapter 3, but I also consult a number of other sources as well as  my own notes. You are advised to read most of this O-R chapter along with this web-book. But please see my [notes below](#unc-readings) on what you can skip.
+This material is largely drawn from O-R Chapter 3, but I also consult a number of other sources as well as my own notes. You are advised to read most of this O-R chapter along with this web-book. But please see my [notes below](#unc-readings) on what you can skip.
 ```
 
 <div class="marginnote">
@@ -4552,12 +4649,12 @@ Here we follow the order of O-R in covering preferences under uncertainty *befor
 ## Introduction
 
 
-Previous discussion:  Choices with *known* consequences
+Our previous discussion:  Choices with *known* consequences
 
 
 `r format_with_col("But in the real world many important economic decisions involve uncertainty.","gray")`
 
-<br> <br> \bigskip
+<br> 
 
 Here: Choices with *unknown* consequences (but known *probabilities* of each outcome)
 
@@ -4582,13 +4679,22 @@ Do not get this mixed up! You must understand this distinction to consider yours
 
 **Some summary notes**
 
-Previously described utility functions: predict choices under certainty. They made no predictions for choices with uncertain probabilistic outcomes!
+Previously described utility functions: predict choices under certainty. They made no predictions for choices with uncertain probabilistic outcomes! In principle, we could allow any preferences over these 'lotteries', making no restrictions ... each lottery might be valued by an individual in *any way*. 
 
-People don't "maximise expected monetary value": they tend to be risk-averse
+\
 
-An *Expected Utility* (EU) framework, as defined below, allows for risk-aversion or any other attitude towards risky *outcomes*
+We will focus on the 'Expected utility' model of preferences.
+
+True, people don't "maximise expected monetary value": they tend to be risk-averse.
+n *Expected Utility* (EU) framework, as defined below, allows for risk-aversion or any other attitude towards risky *outcomes*. 
+
+\
+
+But EU *does* make some meaningful (and perhaps unrealistic) restrictions on preferences and choices, as the Allais paradox indicates.  
 
 ```
+
+\
 
 ### Main Readings {-#unc-readings}
 
@@ -4644,6 +4750,7 @@ Supplementary recommended readings:
 ## Probability concepts and notation (including sums and integrals): a quick review
 
 ```{block2,  type='note'}
+
 You must understand the logic and notation of probability to understand this (and much more material in your degree). If you already know this stuff, feel free to skip/skim.
 
 ```
@@ -4988,6 +5095,10 @@ This seems to me to be a sort of 'opposite extreme' to the pessimistic preferenc
 
 ## Properties of preferences (O-R 3.2.1)
 
+<div class="marginnote">
+These properties will justify EU preferences. If you like, you may want to jump down to [Expected utility](#expected-util) first, and come back here, or watch [this video](https://youtu.be/VjnOWik5nbU)
+</div>
+ 
 
 ```{block2,  type='note'}
 
@@ -5102,7 +5213,11 @@ Further explanation ... why is this property called 'independence'?
 - Independence implies monotonicity; a fairly easy and cool proof.
 
 
-## Expected utility
+## Expected utility {#expected-util}
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VjnOWik5nbU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
 Expected Utility is the 'most commonly assumed' framework in economic theory. We will consider certain “axioms” that seem reasonable, particularly the ‘independence’ axiom. We can formally prove that "if people’s preferences obey these axioms, then their preferences must be 'consistent with expected utility'".
 
@@ -6050,7 +6165,6 @@ RRA (ARA) constant $\rightarrow$ constant fraction of portfolio (number of dolla
 
 
 
-\
 
 
 These measures are discussed very neatly in the video below, giving some specific parametric examples.  However, he never explains exactly what the 'units' here are. What exactly do $A(W)$ and $R(W)$ measure?
