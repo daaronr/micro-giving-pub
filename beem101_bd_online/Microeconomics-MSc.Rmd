@@ -2200,7 +2200,6 @@ Supplementary and conceptual readings (please read at least *some* of these):
 - D. Colander 'Edgeworth's Hedonimeter and the Quest to Measure Utility'' Journal of Economic Perspectives, Spring 2007: 215-225.
 
 - [‘Predicting Hunger: The Effects of Appetite and Delay on Choice’; Read and van Leeuwen, 1998](https://www.sciencedirect.com/science/article/pii/S0749597898928035) ... and related work... worth getting a sense of this, particularly in the context of the Sugden (2015) reading, such as [Kahneman and Richard H. Thaler. 2006. "Anomalies: Utility Maximization and Experienced Utility." Journal of Economic Perspectives, 20 (1): 221-234](https://pdfs.semanticscholar.org/2899/d2516fb877da40c4a7b95fe0b084a103b9bf.pdf)
-ial treatment)
 
 
 ### Interactive exercises ('problem set') {#pref-exc}
@@ -2445,7 +2444,7 @@ This is getting abstract, and unless you've taken some 'pure maths' you may be a
 
 **Q (from student whom I will call 'Sue'): Not sure the meaning of ‘binary relation’. Does it refer to relationships between two objects?**
 
-**A: Yes, this is a pure maths concept.**8 Think of a 'binary relation' as a computer program that does the following...
+**A: Yes, this is a pure maths concept.** Think of a 'binary relation' as a computer program that does the following...
 
 1. You enter two objects (say 'peanut butter' and 'jelly')
 2. It tells you 'yes, these objects are related' or 'no, they are not related'.
@@ -2487,15 +2486,22 @@ Continuing with these questions and answers ... (unfold)
 
 **A: To give more specific examples,** we could have, for $R_a$: 'is aquainted with':
 
+\
+
+The following claims seem reasonable for the real world: 
+  
 Sue $R_a$ "Sue's lecturer in the UK" $\rightarrow$ `true`
 
 Sue $R_a$ "Sue's mother" $\rightarrow$ `true`
 
-"Sue's mother" $R_a$ "Sue" $\rightarrow$ `true` (note it is 'reflexive')
+"Sue's mother" $R_a$ "Sue" $\rightarrow$ `true` (perhaps the acquaintance relationship is 'reflexive')
 
-"Sue's mother" $R_a$ "Sue's lecturer in the UK" $\rightarrow$ `false` (so it's not 'transitive')
+"Sue's mother" $R_a$ "Sue's lecturer in the UK" $\rightarrow$ `false`.
 
-*Sue: I was not sure what 'aquaintance meant in this example. Now I do understand!*
+If so, this demonstrate that the real-world relationship 'is aquainted with' is not 'transitive'.
+
+
+*Sue: I was not sure what 'aquaintance' meant in this example. Now I do understand!*
 
 ```
 
@@ -2841,8 +2847,7 @@ More completely, O-R define continuity as:
 
 ```{block2,  type='def'}
 
-The preference relation $\succsim$ on $\R^2_{+}$ is continuous if whenever $x \succ y$ there
-exists a number $\epsilon> 0$ such that for every bundle $a$ for which the distance
+The preference relation $\succsim$ on $\mathbb{R}^2_{+}$ is continuous if whenever $x \succ y$ there exists a number $\epsilon> 0$ such that for every bundle $a$ for which the distance
 to $x$ is less than $\epsilon$ and every bundle $b$ for which the distance to $y$ is less
 than  $\epsilon$  we have $a \succ b$ (where the distance between any bundles $(w_1, w_2)$
 and $(z_1, z_2)$ is $\sqrt{|w_1 − z_1|^2 + |w_2 − z_2|^2}$
@@ -2850,6 +2855,15 @@ and $(z_1, z_2)$ is $\sqrt{|w_1 − z_1|^2 + |w_2 − z_2|^2}$
   
 ```  
 
+
+
+<center>
+
+Discussion of continuity, and sufficient conditions for a utility representation of preferences:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/972kOwZPnX8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</center>
 
 \
 
@@ -3260,6 +3274,13 @@ Difficult choices: "We have to think about the rest of the family."
 What properties does the 'Unanimity rule' preference relation have or not have? (Unfold)
 ```  
 
+<center>
+
+Unanimity rule, properties: 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rwwc9BNbrSY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</center>
 
 ```{block2,  type='fold'}
 
@@ -3762,6 +3783,8 @@ O-R say 'Increasing function of a utility function is a utility function'. But i
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rV290xiqQzQ?start=11" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>  
+
 
 ...**Or dropbox link** [HERE](https://www.dropbox.com/s/1glvwv4359ew9jm/util_functions_monot_transforms_sun_effects.mp4?dl=0) 
 
@@ -3773,7 +3796,6 @@ Wherein I explain
 
 \*
 
-</center>  
 
 <div class="marginnote">
 \* Note in the above video I equivocated over whether unanimity preferences can be represented by a utility function. Such preference are *not complete*, so they cannot be fully represented: where one bundle is better by one criteria and another by a different criteria, we cannot assign utility numbers to either of these bundles. 
@@ -3801,7 +3823,7 @@ When we say $x \in X$ we are considering elements $x$ that may have multiple com
 ```{block2,  type='def'}
 O-R Proposition 1.3: 
 
-Let $f : \mathbb{R}  \rightarrow \mathbb{R}$ be an increasing function. If $u$ represents the preference relation $\succsim$  on $X$ , then so does the function $w$ defined by $w(x) = f(u(x))$ for all $x \in X$.
+Let $f : \mathbb{R}  \rightarrow \mathbb{R}$ be an increasing function (\*). If $u$ represents the preference relation $\succsim$  on $X$ , then so does the function $w$ defined by $w(x) = f(u(x))$ for all $x \in X$.
 
 ```  
 
@@ -4099,6 +4121,14 @@ This translation from straightforward payoffs to payoffs that depend on the natu
 
 #### Property $\alpha$ {-}
 
+<center>
+
+Property alpha defined:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eJhr93R1tO4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</center>
+  
 
 
 The above 'violations' and the discussion of 'irrelevant alternatives' relate to what O-R refer to as:
@@ -4167,9 +4197,10 @@ This does *not* imply that satisfying property-$\alpha$ implies, by itself, that
 
 <center>
 
-Proof:
+Proof (sorry, a bit long-winded):
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yOtqAIcw9ik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2lXRgpBi4IA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 </center>
 
 \
@@ -4425,6 +4456,29 @@ Consider the binary relation $H$ loosely defined as "$A H B$ if and only if $A$ 
 ### Representations with additive utility [O-R 9b] {-#ex-add-util}
 
 
+<center>
+
+Apartment building preferences:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fq0a7Tptpls" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+\
+
+Follow-up point:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U7lq1ooQ0uI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</center> 
+
+<div class="marginnote">
+Exeter students: Or see recording of online tutorial (no students on screen/audio) [HERE](https://web.microsoftstream.com/video/266cc9f9-2526-4124-89ed-e31b98e9b067)
+
+</div>
+ 
+
+
+\
+
 > An individual has preferences over the set of units 
 
 <!-- in an apartment building. He prefers a unit with 5 rooms on floor 12 to one with 4 rooms on floor 20, one with 4 rooms on floor 5 to one with 2 rooms on floor 12, and one with 2 rooms on floor 20 to one with 5 rooms on floor
@@ -4611,8 +4665,21 @@ Explain in your own words, and using the formal language of preferences and choi
 
 \
 
+<div class="marginnote">
+A discussion of an aside question [HERE](https://www.youtube.com/watch?v=sKe66Bh0v20): what if my choices are influenced by a freind's choice. Could this be rationalisable?
+</div>
+ 
 
-### Exercise: Decoy effect
+
+### Exercise: Decoy effect (Attraction effect)
+
+
+<center>
+Attraction effect: example
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OPcaGTyB44E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
 
 Formally depict a choice function representing the 'decoy effect’ (aka, “asymmetrically dominated choice”, aka “the attraction effect"  ).
 
@@ -4635,7 +4702,6 @@ Formally depict a choice function representing the 'decoy effect’ (aka, “asy
 
 ```{block2,  type='note'}
 
-*More content likely to be added.*
 
 This material is largely drawn from O-R Chapter 3, but I also consult a number of other sources as well as my own notes. You are advised to read most of this O-R chapter along with this web-book. But please see my [notes below](#unc-readings) on what you can skip.
 ```
@@ -4949,10 +5015,12 @@ O-R, p. 31:
 
 ### Formal definition of Lotteries (from O-R), explanation
 
+<center>
+Uncertainty, lotteries, and O-R notation:
 
-<div class="marginnote">
-DR Todo: I intend to add a video here discussing this
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R7cQYVTYMVA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</center>
 
 <div class="marginnote">
 In other texts you may see these  referred to as "simple gambles".
@@ -5020,10 +5088,7 @@ E.g., for a two-outcome lottery, rather than writing 'a lottery where outcome $z
 ```
 
 
-<div class="marginnote">
-TODO: I might include a video here explaining this notation and giving examples
-</div>
-\
+
 
 ```{block2,  type='inputq'}
 How would you use this notation to depict "a lottery with a 1/3 probability of an outcome with value 10, and a 2/3 probability of an outcome with value 100"?
@@ -5181,7 +5246,7 @@ Note that this definition of continuity is remeniscent but not identical to the 
 - Note how, in this case, a property over $\succsim$ extends to $\succ$
 
 <div class="marginnote">
-Independence and pessimistic preferences are relevant to 'population ethics' and 'effective altruism' and 'other-regarding preferences', and 'social welfare functions/social preferences'. E.g., sometimes we must decide between 'making a big positive difference with a high probability' (e.g., providing bednets to prevent malaria) and 'making an extremely large positive difference with a very small probabillity' (e.g., building a system to block an asteroid from destroying the earth).
+Independence and pessimistic preferences are relevant to 'population ethics' and 'effective altruism' and 'other-regarding preferences', and 'social welfare functions/social preferences'. E.g., sometimes we must decide between 'making a big positive difference with a high probability' (e.g., providing bednets to prevent malaria) and 'making an extremely large positive difference with a very small probability' (e.g., building a system to block an asteroid from destroying the earth).
 </div>
 
 <center>
@@ -5258,11 +5323,6 @@ While I describe a set of countable alternatives, O-R define the below over the 
 </div>
 
 \
-
-
-<div class="marginnote">
-TODO: I intend to include a video here 
-</div>
 
 ```{block2,  type='def'}
 
@@ -6158,12 +6218,7 @@ Note that these ideas are also relevant to intertemporal substitution and to soc
 
 RRA (ARA) constant $\rightarrow$ constant fraction of portfolio (number of dollars) held in risky asset as wealth increases.
 
-
-
 \
-
-
-
 
 
 
