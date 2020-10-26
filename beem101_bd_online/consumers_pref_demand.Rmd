@@ -430,6 +430,7 @@ knitr::include_url("https://www.qresearchsoftware.com/conjoint-analysis-the-basi
 ## Consumer behavior/Individual (and market) demand functions and their properties (1 week) {#demand}
 
 Main reading:
+
 - O-R Chapter 5 (selections as outlined below)
 
 Feel free to skip (unfold):
@@ -463,11 +464,12 @@ However, make sure you *do read* the discussion of 'the weak axiom of revealed p
 Individual choices: supplementary recommended readings
 
 <div class="marginnote">
+
 As noted before:
 
 - You don't need to read all of these
 
-- But you must read *some* of these... in terms of marking, you may need some themes to discuss in open answer questions on the midterm exam, for example.
+- But you should read *some* of these... in terms of marking, you may need some themes to discuss in open answer questions on the midterm exam, for example.
 
 </div>
 
@@ -485,17 +487,15 @@ As noted before:
 ```
 \
 
-<div class="marginnote">
-**I intend to  more content here **
-</div>
+<!--I intend to  more content here -->
 
 
 \
 
 
-### Choices are subject to constraints {-}
+### Choices are subject to constraints {#constraints}
 
-You cannot spend more than your (lifetime) income/wealth $\rightarrow$ *budget constraint* (and 'budget sets').
+You cannot spend more than your (lifetime) income or wealth $\rightarrow$ *budget constraints* (and 'budget sets').
 
 <div class="marginnote">
 There are also other potential constraints on consumption, such as a leisure time constraint and legal constraints.
@@ -513,12 +513,14 @@ knitr::include_graphics(file.path("picsfigs","budgetconstraint.png"))
 ```
 -->
 
-Budget constraint for two goods, slope $-p_x/p_y$
+Budget constraint for two goods, slope  $-p_{x_1}/p_{x_2}$
 
 
 <div class="marginnote">
 Only two goods?  For example, think 'food' and 'nonfood'.
 </div>
+
+\
 
 
 #### Budget constraint algebra (simple) {-}
@@ -535,17 +537,14 @@ If I spend all my wealth (which I should do over a 'relevant lifetime' given mon
 
 Expenditure on $x_1$ + Expenditure on $x_2$ = wealth ($w$)
 
-\
 
 $$p_1 x_1 + p_2 x_2 = w $$
 
 
-<br> \bigskip
+<br> 
 
 
 To see how $x_1$ trades off against $x_2$, rearrange this to:
-
-\
 
 $$w =  \frac{w}{p_2} -\frac{p_1}{p_2}x_1$$
 
@@ -568,6 +567,16 @@ For each unit of $x_2$ I give up I save $p_2$, so the more costly is $x_2$ the m
 
 ```
 
+<div class="marginnote">
+O-R also refer to a different way of presenting the consumer's environment: 
+
+> Rather than assuming that the consumer can purchase the goods at given prices using his wealth, assume that he initially owns a bundle $e$ and can exchange goods at the fixed rate of one unit of good 1 for $\beta$ units of
+good 2.
+
+This presentation helps us consider the welfare properties of exchange economies under different conditions and 'initial allocations'. However, we will not be covering this here. 
+</div>
+ 
+
 \
 
 
@@ -581,8 +590,7 @@ O-R definition (for two goods)
 
 $$B((p_1, p 2), w) = \{(x_1,x_2) \in X : p_1 x_1 + p_2 x_2 \leq w \}$$
 
-(Note that the part after the colon ($p_1 x_1 + p_2 x_2 \leq w$) is referred to as the 'budget constraint')/
-  \
+(Note that the part after the colon ($p_1 x_1 + p_2 x_2 \leq w$) is referred to as the 'budget constraint')
 
 >   The set $\{(x_1,x_2) \in X : p_1 x_1 + p_2 x_2 = w \}$ is the consumer’s budget line
 
@@ -598,16 +606,18 @@ O-R continue:
 
 > because the inequalities $\lambda p_1 x_1 + \lambda p_2 x_2 \leq \lambda w$ and $p_1 x 1 + p_2 x_2 \leq w$ that define these sets are equivalent
 
-Multiply all prices and income by the same amount, and the *budget constraint is unchanged.*
 
-This will imply that we can simplify any such maximization problem by "normalizing" the budget constraint so that one good simply has price equal to one.  (But if this is an applied problem, we should remember to convert it back into the actual prices.)
+\
+
+Multiply all prices and income by the same amount, and the *budget constraint is unchanged.* This will imply that we can simplify any such maximization problem by "normalizing" the budget constraint so that one good simply has price equal to one.  (But if this is an applied problem, we should remember to convert it back into the actual prices.) (See my ['numeraire good' video](https://www.youtube.com/watch?v=HAA0Q_3YoS).)
 
 
 <div class="marginnote">
-Also:  As the budget constraints are unchanged when all prices and wealth are increased by the same proportion, neither will be the choices made; thus demand functions are "homogenous of degree zero". (We'll come back to this.)
 
-I hope to make a video of this here.
+Also:  As the budget constraints are unchanged when all prices and wealth are increased by the same proportion, neither will be the choices made; thus demand functions must be "homogenous of degree zero", as noted below. 
 </div>
+
+<!-- I hope to make a video of this here.-->
 
 \
 
@@ -619,7 +629,7 @@ As O-R show algebraically (for two goods, but this would extend to $n$ goods)...
 
 <div class="marginnote">
 
-\* This holds as a result of constant linear pricing; in the proof you see this is used.  With complicated (e.g., nonlinear) pricing, budget constraints may not have this property. Perhaps it is reasonable to assume that a 'standard small consumer' faces constant prices for many goods. On the other hand, we can think of all sorts of exceptions, where you get a discount if you buy in bulk and also note that you cannot buy, e.g., "one third of a car."  With nonlinear budget constraints  optimization problems become much more mathematically "interesting".
+\* This holds as a result of constant linear pricing; in the proof you see this is used.  With complicated (e.g., nonlinear) pricing, or subsidies that only apply to certain units (recall 'eat out to help out'?) budget constraints may not have this property. Perhaps it is reasonable to assume that a 'standard small consumer' faces constant prices for many goods. On the other hand, we can think of all sorts of exceptions, where you get a discount if you buy in bulk and also note that you cannot buy, e.g., "one third of a car."  With nonlinear budget constraints  optimization problems become much more mathematically "interesting".
 </div>
 
 \
@@ -652,8 +662,9 @@ We could use this to demonstrate "gains to trade". Suppose two people with the s
 ```
 
 
+\
 
-### Individual (consumer) demand functions (Marshallian demand) - first pass {-}
+### Individual (consumer) demand functions (Marshallian demand) - first pass {#demand1}
 
 ```{block2,  type='def'}
 
@@ -661,42 +672,61 @@ O-R:
 
 > A demand function is a function $x$ that assigns to each budget set one of its members.
 
-> Define $x((p_1, p_2), w )$ to be the bundle assigned to the budget set $B((p_1, p_2), w)$.
+> Define $x((p_1, p_2), w)$ to be the bundle assigned to the budget set $B((p_1, p_2), w)$.
 
 (It is easy to imagine extending this to a case with many goods to choose from, rather than just two.)
 
 ```
+
+
+O-R note that if you multiply all prices and wealth by some positive constant $\lambda$, the budget set is unchanged; thus the demand function is also unchanged, 
+
+<div class="marginnote">
+As the demand function is (stated above to be) a function of the budget set, and nothing else, (at least holding preferences constant), if the 'budget set as an argument' is unchanged, the output must not change.
+
+Considering $x(p_1, p_2, w)$ as a simple function of three arguments, this implies it has the mathematical property 'homogenous of degree zero'. A function is 'homogenous of degree $n$' when multiplying all of its inputs by some number $\lambda$ causes the output to be multiplied by $\lambda^{n}$. ... Here, Hd-0, so $\lambda^{0} = 1$ .... i.e., the output is unchanged.
+</div>
 
 \
 
 ```{block2,  type='inputq'}
 O-R present 'individual demand functions' *before* presenting the optimisation problem. This is unusual... why do they do this?
 
+```
+
+
+```{block2,  type='fold'}
 They highlight that the demand function does not *need* to arise from an optimization process (as we describe below)... it merely maps from the budget set to a particular choice.
 
 This can arise as a result of a simple rule or "heuristic" such as "spend equal amount of income on each good". Behavioral economics considers the implications of decisions made on the basis of such heuristics.
+
 ```
 
-<div class="marginnote">
+\
+
+Types of demand functions: Marshallian and Hicksian... 
+
+```{block2,  type='fold'}
 These demand functions are stated as a function of the  budget set, or more simply, as functions of price and wealth (or income).
 
 These are referred to as the "Marshallian demand functions" after the great Alfred Marshall.  These are the demand functions that we may actually be able to observe in the real world.
 
-[There are another type of demand functions  that have very interesting properties for theory and welfare analysis called "Hicksian demand functions" or "compensated demand functions"](#hicksian).  These take prices and *utility* as the arguments.  We will not cover these in 2020  because of time constraints.
+[There are another type of demand functions that have very interesting properties for theory and welfare analysis called "Hicksian demand functions" or "compensated demand functions"](#hicksian). These take prices and *utility* as the arguments.  We will not cover these in 2020 because of time constraints. But as an Economist you should have some familiarity with this.
 
-</div>
+```
 
 \
 
-### Rational consumer and his/her optimisation problem {-}
+### Rational consumer and his/her optimisation problem {#rat-opt}
 
-We started with an individual's preferences, one of the baseline elements of the neoclassical model. Under some conditions these can be described by utility functions,  which we may consider as 'mountains'  with levels sets depicted by indifference curves.
+We started with an individual's preferences, one of the base elements of the neoclassical model. Under some conditions these can be described by utility functions,  which we may consider as 'mountains'  with levels sets depicted by indifference curves.
 
 So, we have a way of depicting what people prefer,  but this doesn't tell us what people will *choose* to consume (and firms to produce).
 
 We next introduced the second fundamental element of the neoclassical model, constraints, in particular, the budget constraint.
 
-We put these together to describe the consumer's problem: maximizing her utility subject to her budget constraints.  This is depicted in figure  below for the two-good case.
+We put these together to describe the consumer's problem: maximizing her utility subject to her budget constraints.  This is depicted in figure below for the two-good case.
+
 <div class="marginnote">
 Image Source: https://courses.byui.edu/econ_150/econ_150_old_site/lesson_05.htm
 </div>
@@ -711,11 +741,24 @@ Image Source: https://courses.byui.edu/econ_150/econ_150_old_site/lesson_05.htm
 
 Imagine that you are this consumer with these preferences and this budget constraint. You can choose any point at or below the straight blue line, as it is on or below your budget constraint. You want to get to the highest indifference curve, to attain the most utility.
 
+\
+
 ```{block2,  type='inputq'}
 
-How do we know point B is suboptimal (i.e., not optimal)? What about point D? What about points between A and B?
+How do we know point B is suboptimal (i.e., not optimal)? What about point D? What about points between A and B? How do such points compare with point B?
 
 ```
+
+```{block2,  type='fold'}
+We can see B is suboptimal as it is on a lower indifference curve than A, but both are on the same budget line. Same for D. 
+
+In fact, if we assumed even *weak monotonicity* we would already know that point A was preferred to point D. 
+
+Points between A and B are also below the '$U=100$' indifference curve... again, with weak (or strict) monotonicity these must be inferior to point A (but superior to point B). 
+
+```
+
+\
 
 
 
@@ -732,9 +775,10 @@ We can demonstrate that you will choose point A, yielding utility $100$. What is
 
 It's the point of *tangency* between the budget constraint and an indifference *curve*. It's also (not a coincidence) the point where the slopes are equal. At this point (but not in general!) we have that  "Slope of budget constraint = slope of indifference curve".
 
-<div class="marginnote">
+<!-- <div class="marginnote">
 Recall that the  $\leftrightarrow$ symbol means 'if  and only if', i.e., the  object on the right-hand side implies the object on the left-hand side, and vice versa. In  some contexts this means a 'necessary and sufficient condition',  but here it is just basically a definition.
 </div>
+-->
 
 \
 
@@ -830,7 +874,6 @@ Where she is consuming some of every good, this is a *necessary* condition for s
 - The "Psychic tradeoff" (MRS) equals the market tradeoff ($p_X/p_Y$)
 
 
-
 Intuition: If I can give up X for Y in the market (buy less X, get more Y) at a certain rate, and the *benefit* I get from doing this is at a different rate, I can make myself better off.
 
 Thus the original point could not have been optimal!
@@ -842,8 +885,6 @@ Thus the original point could not have been optimal!
 
 If this is not clear to you, try to think about this carefully. This is a key insight in microeconomics, a sort of 'marginality' argument/'proof  by contradiction'. that will come back later.
 </div>
-
-
 
 
 ### Very simple example, for intuition {-}
@@ -910,7 +951,7 @@ Ans: Depends on marginal benefit of each ... we can show $MRS(x_1,x_2)=\frac{MU_
 
 *Mathy intuition:*
 
-The more valuable a little more X is to me at that point -- the higher is $MU_{x_1}$ -- the more $x_2@ I am willing to give up to get it. That is why $MU_{x_1}$ is in the numerator.
+The more valuable a little more X is to me at that point -- the higher is $MU_{x_1}$ -- the more $x_2$ I am willing to give up to get it. That is why $MU_{x_1}$ is in the numerator.
 
 The more valuable a bit more $x_2$ is at that point -- the higher is $MU_{x_2}$ -- the less $x_2$ I am willing to give up to get a bit more $x_1$. That is why $MU_{x_2}$ is in the denominator.
 
@@ -987,10 +1028,73 @@ The same condition applies to each good you are consuming a positive amount of.
  knitr::include_graphics(file.path("picsfigs","goodwedontbuy.png"))
 ```
 
+\
+
+### Overview: Solution to consumer's problem {#cons-solution}
+
+#### General solution (two goods) {-}
+
+O-R (proposition 5.1) present the basic results for the *solution to a consumer's problem* (at least for two goods):
+
+> [Consider] a preference relation on $\mathbf{R}_+^2$ and a budget set
+
+> a. If the preference relation is continuous then the consumer’s problem has a solution.
+
+By this they mean, that 'there is a highest point in this set'. They cite a 'standard mathematical result'. 
+
+<div class="marginnote">
+This seems obvious; at first glance you might think 'every set must have a minimal and maximal element'. 
+
+But then, think about the set "numbers that are strictly below 10". Is there a largest number in this set? (No, there isn't.) 
+</div>
+ 
+
+> b. If the preference relation is strictly convex then the consumer’s problem has at most one solution.
+
+The proof of this is pretty neat!
+
+```{block2,  type='fold'}
+
+First they 'assume the negation of b holds' ... and look for a contradiction: 
+   
+> Assume that distinct bundles $a$ and $b$ are both solutions to a consumer’s problem. 
+
+
+> Then the bundle $(a +b)/2$ is in the budget set (which is convex); by the strict convexity of the preference relation this bundle is strictly preferred to both $a$ and $b$.
+
+So, 'if there are two optimal distinct bundles, there must be an even better bundle.' Thus, a contradiction... so the negation of b cannot hold... there cannot be two distinct optimal bundles. 
+
+```
+
+
+> c. If the preference relation is monotone then any solution of the consumer’s problem is on the budget line
+
+(This one seems pretty obvious, skip the proof)
 
 \
 
-### Some 'popular' forms for utility functions, and their properties; computation
+#### Solution with monotone, convex, and differentiable preference relation (two goods)
+
+O-R summarize this nicely, allowing for the possibility of corner solutions"
+
+
+> Assume that a consumer has a monotone, convex, and differentiable preference relation on $\mathbf{R}_+^2$. If $x^{\ast}$ is a solution of the consumer’s problem for $(p_1, p_2, w)$ then
+
+> a. $x_1^{\ast}> 0$ and $x_2 > 0$ $\rightarrow MRS(x^{\ast}) = p_1/p_2$
+
+> b. $x_1^{\ast} = 0 \rightarrow MRS(x^{\ast}) \leq p_1/p_2$
+
+> c. $x_2^{\ast} = 0 \rightarrow MRS(x^{\ast}) \geq p_1/p_2$
+
+```{block2,  type='inputq'}
+
+Consider each case for a-c, depicting these graphically. (See, e.g., O-R example 5.8)
+
+```  
+
+\
+
+### Some 'popular' forms for utility functions, and their properties; computation {#util-forms}
 
 
 
@@ -1001,7 +1105,7 @@ $$U(X,Y)=X^aY^b$$
 where a, b are positive constants
 
 
-<br> \bigskip
+<br> 
 
 
 This is *"homothetic"* ... what does this mean? (unfold)
@@ -1070,12 +1174,12 @@ So only the *ratio* Y/X affects the MRS; double both, MRS is the same.
 $$U(X,Y)=X+ln(Y)$$
 
 
-Here Y has a diminishing MU, but for X MU is constant
+Here $Y$ has a diminishing MU, but for $X$ MU is constant
 
 
 $$\frac{MU_X}{MU_Y}= \frac{1}{1/Y}=Y$$
 
-So the MRS diminishes as Y decreases (as we go 'down the indifference curve' ... this is what we confusingly call diminishing MRS), but it is independent of the amount of X consumed.
+So the MRS diminishes as $Y$ decreases (as we go 'down the indifference curve' ... this is what we confusingly call diminishing MRS), but it is independent of the amount of $X$ consumed.
 
 ```{block2,  type='inputq'}
 
@@ -1084,7 +1188,7 @@ So, if we double both then what happens?
 ```
 
 ```{block2,  type='fold'}
-Ans: MRS doubles]
+Ans: MRS doubles
 
 ```
 \
@@ -1116,8 +1220,18 @@ E.g., in principal-agent analysis we can then ignore the question 'but won't the
 
 ### Rationalizing a demand function (Skip O-R section 5.5) {#}
 
+We already considered 'rationalizability of a choice function' ... so I won't cover this special case.
+
 <!-- (Brief comments here) -->
 
+
+### (Weak axiom of) Revealed Preference {#warp}
+
+```{block2,  type='note'}
+
+Content to be added here, largely from pages 67-68 of O-R
+
+```  
 
 ## Properties of (Marshallian) demand functions {#demand-prop}
 
@@ -1593,7 +1707,7 @@ The constant-elasticity form is derived from the 'constant elasticity' using the
 
 \
 
-### Properties of price elasticity of demand
+### Properties of price elasticity of demand 
 
 - Goods with many close substitutes at a similar price will be highly elastic
 -  with few substitutes ...  inelastic
@@ -1669,7 +1783,7 @@ If price rises by 20\% and quantity demanded falls by 20\% what happens to reven
 
 \
 
-Suppose p=10 and q=10 so TR=100. Then when p=12 and q=8 TR=96. Huh? Price increased by 20\% and quantity decreased by 20\% so shouldn't TR be unchanged?  No! This only works for small changes.
+Suppose $p=10$ and $q=10$ so $TR=100$. Then when p=12 and q=8 TR=96. Huh? Price increased by 20\% and quantity decreased by 20\% so shouldn't TR be unchanged?  No! This only works for small changes.
 
 \
 
@@ -1714,7 +1828,6 @@ A caveat is that it might do this for a long term strategic advantage; e.g., to 
 
 
 
-
 \
 
 ![Elastrev](picsfigs/elast_revenue.png) \
@@ -1723,7 +1836,6 @@ A caveat is that it might do this for a long term strategic advantage; e.g., to 
 Image source: Nicholson and Snyder, 2010
 </div>
  
-
 
 ## Income elasticity of demand; Normal, luxury, and inferior goods {#income-elast}
 
@@ -2033,6 +2145,22 @@ $$e((p_1, p_2), x^{\ast}) = \min_{(x1,x2)}\{p_1 x_1 + p_2 x_2 : (x_1,x_2) \succs
 
 > a. Show that the function $e$ is increasing in $p_1$ (and $p_2$).
 
+
+Unfold a hint:
+
+```{block2,  type='fold'}
+
+Hint ... start of answer: 
+   
+> Let $Y = \{x \in X : x \succsim x^{\ast} \}$. (The set of all bundles that are 'at least as good' as $x^{\ast}$).
+
+> Let $a$ be a bundle that is least expensive in $Y$ for the price vector $(p_1 +\epsilon , p_2)$, where $\epsilon>0$.
+
+
+```
+
+<!-- rem to correct the geq to a gt in answer key --> 
+
 > b. Show that for all $\lambda > 0$ and every pair $(p_1, p_2)$ of prices we have 
 
 $e \big((\lambda p_1, \lambda p_2), x^{\ast}\big) = \lambda  e\big((p_1, p_2),x_\{ast}\big).$
@@ -2050,7 +2178,6 @@ $e \big((\lambda p_1, \lambda p_2), x^{\ast}\big) = \lambda  e\big((p_1, p_2),x_
 Possible further questions tbd (unfold for possibilities)
 
 ```{block2,  type='fold'}
-
 
 - Business case study/investigation: modeling 'which (sorts of) new product will consumers prefer?'
 

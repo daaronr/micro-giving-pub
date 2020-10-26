@@ -387,15 +387,17 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="consumers-dmd.html"><a href="consumers-dmd.html#demand"><i class="fa fa-check"></i><b>4.2</b> Consumer behavior/Individual (and market) demand functions and their properties (1 week)</a>
 <ul>
-<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#choices-are-subject-to-constraints"><i class="fa fa-check"></i>Choices are subject to constraints</a></li>
-<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#individual-consumer-demand-functions-marshallian-demand---first-pass"><i class="fa fa-check"></i>Individual (consumer) demand functions (Marshallian demand) - first pass</a></li>
-<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#rational-consumer-and-hisher-optimisation-problem"><i class="fa fa-check"></i>Rational consumer and his/her optimisation problem</a></li>
+<li class="chapter" data-level="4.2.1" data-path="consumers-dmd.html"><a href="consumers-dmd.html#constraints"><i class="fa fa-check"></i><b>4.2.1</b> Choices are subject to constraints</a></li>
+<li class="chapter" data-level="4.2.2" data-path="consumers-dmd.html"><a href="consumers-dmd.html#demand1"><i class="fa fa-check"></i><b>4.2.2</b> Individual (consumer) demand functions (Marshallian demand) - first pass</a></li>
+<li class="chapter" data-level="4.2.3" data-path="consumers-dmd.html"><a href="consumers-dmd.html#rat-opt"><i class="fa fa-check"></i><b>4.2.3</b> Rational consumer and his/her optimisation problem</a></li>
 <li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#marginal-rates-of-substitution"><i class="fa fa-check"></i>Marginal rates of substitution</a></li>
 <li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#very-simple-example-for-intuition"><i class="fa fa-check"></i>Very simple example, for intuition</a></li>
 <li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#mrsinsight"><i class="fa fa-check"></i>More insight into MRS</a></li>
-<li class="chapter" data-level="4.2.1" data-path="consumers-dmd.html"><a href="consumers-dmd.html#corners"><i class="fa fa-check"></i><b>4.2.1</b> Note on ‘corner solutions’</a></li>
-<li class="chapter" data-level="4.2.2" data-path="consumers-dmd.html"><a href="consumers-dmd.html#some-popular-forms-for-utility-functions-and-their-properties-computation"><i class="fa fa-check"></i><b>4.2.2</b> Some ‘popular’ forms for utility functions, and their properties; computation</a></li>
-<li class="chapter" data-level="4.2.3" data-path="consumers-dmd.html"><a href="consumers-dmd.html#rationalizing-a-demand-function-skip-o-r-section-5.5"><i class="fa fa-check"></i><b>4.2.3</b> Rationalizing a demand function (Skip O-R section 5.5) {#}</a></li>
+<li class="chapter" data-level="4.2.4" data-path="consumers-dmd.html"><a href="consumers-dmd.html#corners"><i class="fa fa-check"></i><b>4.2.4</b> Note on ‘corner solutions’</a></li>
+<li class="chapter" data-level="4.2.5" data-path="consumers-dmd.html"><a href="consumers-dmd.html#cons-solution"><i class="fa fa-check"></i><b>4.2.5</b> Overview: Solution to consumer’s problem</a></li>
+<li class="chapter" data-level="4.2.6" data-path="consumers-dmd.html"><a href="consumers-dmd.html#util-forms"><i class="fa fa-check"></i><b>4.2.6</b> Some ‘popular’ forms for utility functions, and their properties; computation</a></li>
+<li class="chapter" data-level="4.2.7" data-path="consumers-dmd.html"><a href="consumers-dmd.html#rationalizing-a-demand-function-skip-o-r-section-5.5"><i class="fa fa-check"></i><b>4.2.7</b> Rationalizing a demand function (Skip O-R section 5.5) {#}</a></li>
+<li class="chapter" data-level="4.2.8" data-path="consumers-dmd.html"><a href="consumers-dmd.html#warp"><i class="fa fa-check"></i><b>4.2.8</b> (Weak axiom of) Revealed Preference</a></li>
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="consumers-dmd.html"><a href="consumers-dmd.html#demand-prop"><i class="fa fa-check"></i><b>4.3</b> Properties of (Marshallian) demand functions</a>
 <ul>
@@ -728,7 +730,7 @@ Content to be included/summarised here from O-R 7.1-7.2
 </ul>
 <p><br />
 </p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-305"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-312"></span>
 <img src="picsfigs/dwl_monop_mcafee_explanation.png" alt="Source: McAfee et al. " width="85%" />
 <p class="caption">
 Figure 5.1: Source: McAfee et al. 
@@ -890,7 +892,7 @@ What other barriers might exist?
 </p>
 <p>This does not deal with differences amongst consumers. It may ‘’force the firm to target a particular group’’, such as the wealthy, reducing its total sales.</p>
 <p>Under monopoly, uniform pricing leads to a deadweight loss, as we have already seen:</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-315"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-322"></span>
 <img src="picsfigs/dwl_monop_mcafee.png" alt="Source: McAfee et al. " width="50%" />
 <p class="caption">
 Figure 5.2: Source: McAfee et al. 
@@ -902,7 +904,7 @@ Figure 5.2: Source: McAfee et al. 
 <div class="marginnote">
 <p><strong>Note</strong>: I would say that an auction <em>might</em> lead to outcomes resembling perfect price discrimination, where the seller captures most of the consumers’ valuations. But this is a whole field of study, ‘Auction theory’, which engages the issues of Asymmetric information and Mechanism design (principle/agent models).</p>
 </div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-316"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-323"></span>
 <img src="picsfigs/saylor_single_price.png" alt="Source: Saylor Academy" width="80%" />
 <p class="caption">
 Figure 5.3: Source: Saylor Academy
@@ -910,7 +912,7 @@ Figure 5.3: Source: Saylor Academy
 </div>
 <p><br />
 </p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-317"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-324"></span>
 <img src="picsfigs/saylor_ppd_auction.png" alt="Source: Saylor Academy" width="80%" />
 <p class="caption">
 Figure 5.4: Source: Saylor Academy
