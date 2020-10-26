@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
 
 
-<meta name="date" content="2020-10-25" />
+<meta name="date" content="2020-10-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -378,12 +378,12 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="4.1.1" data-path="consumers-dmd.html"><a href="consumers-dmd.html#bundles-of-goods-o-r-4.1"><i class="fa fa-check"></i><b>4.1.1</b> “Bundles of goods” (O-R 4.1)</a></li>
 <li class="chapter" data-level="4.1.2" data-path="consumers-dmd.html"><a href="consumers-dmd.html#preferences-over-bundles-indifference-sets-indifference-curves-o-r-4.2-and-supplements"><i class="fa fa-check"></i><b>4.1.2</b> Preferences over bundles, indifference sets (indifference curves) (O-R 4.2 and supplements)</a></li>
-<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#examples-of-preferences-over-2-goods"><i class="fa fa-check"></i>Examples of preferences (over 2 goods)</a></li>
-<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#properties-monotonicity"><i class="fa fa-check"></i>Properties: Monotonicity</a></li>
-<li class="chapter" data-level="4.1.3" data-path="consumers-dmd.html"><a href="consumers-dmd.html#properties-continuity---discussed-in-a-previous-section"><i class="fa fa-check"></i><b>4.1.3</b> Properties: Continuity - discussed <span>in a previous section</span></a></li>
-<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#convexity"><i class="fa fa-check"></i>Properties: Convexity (skipping the proofs)</a></li>
-<li class="chapter" data-level="4.1.4" data-path="consumers-dmd.html"><a href="consumers-dmd.html#differentiability-mainly-skip"><i class="fa fa-check"></i><b>4.1.4</b> (Differentiability: mainly skip)</a></li>
-<li class="chapter" data-level="4.1.5" data-path="consumers-dmd.html"><a href="consumers-dmd.html#applications-product-positioning-marketing"><i class="fa fa-check"></i><b>4.1.5</b> Applications: Product positioning, marketing</a></li>
+<li class="chapter" data-level="4.1.3" data-path="consumers-dmd.html"><a href="consumers-dmd.html#example-prefs"><i class="fa fa-check"></i><b>4.1.3</b> Examples of preferences (over 2 goods)</a></li>
+<li class="chapter" data-level="4.1.4" data-path="consumers-dmd.html"><a href="consumers-dmd.html#monotonicity"><i class="fa fa-check"></i><b>4.1.4</b> Properties: Monotonicity</a></li>
+<li class="chapter" data-level="4.1.5" data-path="consumers-dmd.html"><a href="consumers-dmd.html#properties-continuity---discussed-in-a-previous-section"><i class="fa fa-check"></i><b>4.1.5</b> Properties: Continuity - discussed <span>in a previous section</span></a></li>
+<li class="chapter" data-level="4.1.6" data-path="consumers-dmd.html"><a href="consumers-dmd.html#convexity"><i class="fa fa-check"></i><b>4.1.6</b> Properties: Convexity (skipping the proofs)</a></li>
+<li class="chapter" data-level="" data-path="consumers-dmd.html"><a href="consumers-dmd.html#differentiability-mainly-skip"><i class="fa fa-check"></i>(Differentiability: mainly skip)</a></li>
+<li class="chapter" data-level="4.1.7" data-path="consumers-dmd.html"><a href="consumers-dmd.html#applications-product-positioning-marketing"><i class="fa fa-check"></i><b>4.1.7</b> Applications: Product positioning, marketing</a></li>
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="consumers-dmd.html"><a href="consumers-dmd.html#demand"><i class="fa fa-check"></i><b>4.2</b> Consumer behavior/Individual (and market) demand functions and their properties (1 week)</a>
 <ul>
@@ -737,7 +737,7 @@ Econometrics often has a different focus and different methodology than ‘regul
 <p><span class="math display">\[Q_d = a-bp\]</span></p>
 <p>Suppose we know that price is changing because of cost changes, shifts in supply curve, or the firm experimenting.</p>
 <p><font color='RawSienna'> Otherwise the problem is poorly identified, as demand and supply will jointly determine price</font></p>
-<p>We observe price and quantity data for a period where <em>ceteris paribus</em> is reasonable, such as the data below<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<p>We observe price and quantity data for a period where <em>ceteris paribus</em> is reasonable, such as the data below<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
 <p><img src="picsfigs/demanddata.png" width="70%" style="display: block; margin: auto;" /></p>
 <p>We try to fit the ‘best’ line through these points (minimizing the distances between the line and the points, or minimizing the ‘error’ of this predicted quantity). We estimate the demand curve’s slope and intercept. We can use this to make inferences.</p>
 <p>This line will never fit exactly, because of unobserved differences, nonlinear demand, measurement error, randomness in behaviour.</p>
@@ -895,7 +895,7 @@ Can you illustrate this with ‘double-humped’ indifference curves?
 <li>however, if an unconstrained problem yields a solution that doesn’t violate the contraint, we can ignore it.</li>
 </ul></li>
 </ul>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-344"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-347"></span>
 <img src="picsfigs/consumerlagrangian.png" alt="From Autor notes" width="90%" />
 <p class="caption">
 Figure 9.1: From Autor notes
@@ -1000,8 +1000,8 @@ These are ‘inverses’ of one another.</p>
 </div>
 <div class="footnotes">
 <hr />
-<ol start="1">
-<li id="fn1"><p>From <a href="https://medium.com/teconomics-blog/how-to-get-the-price-right-9fda84a33fe5" class="uri">https://medium.com/teconomics-blog/how-to-get-the-price-right-9fda84a33fe5</a>; see article for explanation on why this is ‘residual’ price and quantity, if you are interested.<a href="supplements.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<ol start="2">
+<li id="fn2"><p>From <a href="https://medium.com/teconomics-blog/how-to-get-the-price-right-9fda84a33fe5" class="uri">https://medium.com/teconomics-blog/how-to-get-the-price-right-9fda84a33fe5</a>; see article for explanation on why this is ‘residual’ price and quantity, if you are interested.<a href="supplements.html#fnref2" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
