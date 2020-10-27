@@ -600,6 +600,13 @@ is sometimes called "normative Economics".  But this is confusing as "normative"
 
 </div>
 
+
+```{block2,  type='tip'}
+
+For a more intuitive, less formal characterisation of Expected Utility, i.e., the 'the von Neumann-Morgenstern utility function', [please see the McDL text on this.](https://saylordotorg.github.io/text_introduction-to-economic-analysis/s14-04-risk-aversion.html)
+
+```  
+
 However, Expected Utility preferences (choices) rules out some stated preferences (and choices) that seem common. We will see this in the [“Allais Paradox”](#allais), for example.
 
 
@@ -816,10 +823,57 @@ If the person is 'risk-neutral', it must be linear, thus $V(y) = a + by$, thus $
 
 <br>
 
-```{block2,  type='note'}
 
-Add: formal statement and proof that risk aversion depends on the concavity of Bernoulli (value) function $v(\cdot)$, (Prop 3.3 in O-R)
+### Risk attitude: O-R formal depiction
+  
+  
+Assume a 'set of prizes $Z$' that are (nonnegative) real numbers .. think of each prize $z \in Z$  as some monetary reward.
+
+> We denote the expected value of any lottery $p$ by $E(p) = \sum_{z∈supp(Z)} p(z)z$ 
+
+This adds up every monetary prize in the 'support of Z' (i.e., those that occur with positive probability), weighted by their respective probabilities.  
+
+
+<div class="marginnote">
+(Above quote is from O-R, page 40) If we have a continuum of prizes with some probability, we will depict this using a probability density function and the above will be expressed as a definite integral.)
+</div>
+ 
+ 
+```{block2,  type='def'}
+
+**O-R Definition 3.6: Risk aversion and risk neutrality** 
+  
+> If $Z = \mathbb{R_+}$, ...
+
+*(real 'money' prizes)*
+
+> ... a preference relation $\succsim$ on the set $L(Z)$ of lotteries over Z 
+
+> is **risk-averse** if $[E(p)] \succsim p$ for every lottery $p \in L(Z)$,
+
+*(if the expected value of the certainty of a lottery is 'at least as good as' each lottery)*
+
+
+> is strictly risk-averse if $[E(p)] \succ p$ for every lottery $p \in L(Z)$ that involves more than one
+prize, ...
+
+*(note the change to the $\succ$ strict preference operator)*
+
+> and is risk-neutral if $[E(p)] \sim p$ for every lottery $p \in L(Z)$ ...
+
 ```  
+ 
+\
+O-R next state, and show, that **risk-aversion is equivalent to the concavity of the Bernoulli function $v$**. The proof follows from a general math identity known as Jensen's inequality, which essentially states that for concave functions 'the function of the average of two arguments' always exceeds 'the average of the function of two arguments'. 
+
+<div class="marginnote">
+This is easy to see for a graph with a single argument ... connect two points on the 'ceiling of a cave or a dome' and note that the string connecting the two points is always below the ceiling. 
+
+</div>
+
+*Note that for smoothly differentiable functions (those with a second derivative) concavity is equivalent to a second derivative that is zero or negative*. 
+ 
+\
 
 
 ```{block2,  type='tip'}
@@ -930,12 +984,22 @@ Thus a risk-averse person would reject such gambles.
 
 \
 
-### Graphical illustration of "risk aversion $\leftrightarrow$ the value function $v(\cdot)$ is concave" {-}
+### Graphical illustration of "risk aversion $\leftrightarrow$ the value function $v(\cdot)$ is concave" {-concave}
+
+\
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
+ knitr::include_graphics("picsfigs/risk_averse_eu_mcdl.png")
+
+```
+
+
+
 
 **How to illustrate this:**
 
 <div class="marginnote">
-TODO: I intend to include a video here 
+TODO: I hope to include a video here 
 </div>
 
 - Show: $EU(gamble) = (1-p)u(x_{low}) + pu(x_{high}) < u(EV(x)) = u((1-p)x_{low} + px_{high})$
@@ -955,7 +1019,6 @@ Intuition: The slope of a line tells me 'rise for a given run', the 'expectation
 and the 'share of the rise' simply projects up from the 'share of the run'
 </div>
  
-
 
 - Compare this to the vertical height of utililty function at same point $(1-p)x_{low} + px_{high}$
 
@@ -1149,10 +1212,12 @@ One theory: People may maximize something like EU but they get the probabilities
 \
 
 ```{block2,  type='note'}
-Another theory: 
-People do *not* choose in a way that could be characterised as maximizing the probability-weighted sum of a value function over outcomes. They do not do anything that could be depicted as EU maximization. Instead, the assess gambles using other criteria, perhaps framing 'reference points', and 'gains and losses' relative to this reference point. We will (time permitting) return to this in our discussion of 'prospect theory' when we consider Behavioral Economics. 
-```  
 
+Another theory: 
+
+People do *not* choose in a way that could be characterised as maximizing the probability-weighted sum of a value function over outcomes. They do not do anything that could be depicted as EU maximization. Instead, the assess gambles using other criteria, perhaps framing 'reference points', and 'gains and losses' relative to this reference point. We will (time permitting) return to this in our discussion of 'prospect theory' when we consider Behavioral Economics. 
+
+```  
 
 
 \
@@ -1163,17 +1228,17 @@ Economists try to measure people's level of risk aversion in various ways.
 
 We try to measure 'revealed preferences' from real-world choices. E.g., what premium are people willing to pay to buy insurance for various things,  how much premium do they demand for taking on risky investments (with the same expected monetary values), and how much more do they have to be paid (on average) in jobs with variable compensation?
 
-<br> <br> \bigskip
+<br> 
 
 We also run *experiments* with real or hypothetical payoffs to measure this.
 
 
 <div class="marginnote">
 
-Although it is widely used, the validity of the Holt and Laury method is disputed, and there are alternatives. (Add/link discussion here)
+Although it is widely used, the validity of the Holt and Laury method is disputed, and there are alternatives. 
 
 </div>
-
+<!--(Add/link discussion here) -->
 
 One technique is the Holt and Laury (2002) risk elicitation task:
 
@@ -1185,7 +1250,7 @@ One technique is the Holt and Laury (2002) risk elicitation task:
 
 - Consider, when would you choose A and when would you choose B?
 
-<br> <br> \bigskip
+<br> 
 
 ```{r  fig.cap = '', out.width='90%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics(file.path("picsfigs","holtlauriedetail.png"))
@@ -1213,7 +1278,7 @@ Above: Results for different 'stake sizes'. Most people are risk-averse.  People
 It is not clear whether these 'do a good job'. According to [Charness et al, 2020](https://link.springer.com/article/10.1007/s11166-020-09325-6) [@charnessMeasuresRiskAttitude2020].
 
 
->...  these measures have some predictive power on behavior in experimental settings, and that the most complex procedure (TCN) is outperformed by simpler procedures. Finally, we find no correlation between field behavior and measures of risk attitude. This finding is confirmed for all of the implemented measures, either simple or complex.
+>...  these measures have some predictive power on behavior in experimental settings, and ... the most complex procedure (TCN) is outperformed by simpler procedures. Finally, we find no correlation between field behavior and measures of risk attitude. This finding is confirmed for all of the implemented measures, either simple or complex.
 
 However, the Charness et al 'correlation' results appear largely underpowered.  
 
@@ -1229,7 +1294,6 @@ Other work finds that simple survey measures do a better job of predicting real 
 
 - How does this affect (financial, investment, insurance) choices?  Why does 'diversification improve outcomes for the risk-averse'?
 
-
 - How does this affect asset prices (Stocks, bonds, etc.) with 'efficient markets' (this will be briefly defined)
 
 <!-- ### Insurance {-}
@@ -1238,21 +1302,22 @@ Other work finds that simple survey measures do a better job of predicting real 
 
 --> 
 
+\
+
 ### Benefits of diversification {-}
 
 <div class="marginnote">
-Content to be added here.
+See also QMC, chapters 5-6 for a fairly nontechnical and intuitive explanation.
 </div>
  
-See also QMC, chapters 5-6 for a fairly nontechnical and intuitive explanation
 
 Diversification: Buying multiple assets (with risks that are not perfectly correlated with one another)
 
-- "Putting your eggs in multiple baskets" tends to reduce risk, holding expected monetary value of profit (return) sconstant!
+- "Putting your eggs in multiple baskets" tends to reduce risk, holding expected monetary value of profit (returns) constant!
 
 \
 
-### Illustration: Binomial distribution {-}
+#### Illustration: Binomial distribution {-}
 
 - Suppose I have £ 1000, and I can bet on fair coin flips. My returns will then have what we call a “binomial distribution”.
 
@@ -1328,56 +1393,74 @@ knitr::include_graphics(file.path("picsfigs", "marketriskline.png"))
 Market line
 :     Shows the relationship between risk and annual returns that an investor can achieve by mixing financial assets.
 
-`r format_with_col("Note typo in diagram: 'risk assets' should be 'risky'","gray")`
+
 
 `r format_with_col("With efficient markets, line depicts 'best mix': proportional to the total 'market basket', plus borrowing/lending at the 'risk-free rate'","gray")`
 
 \
 
+
+<div class="marginnote">
+ 
+Note typo in diagram: 'risk assets' should be 'risky'
+</div>
+
 ```{r  fig.cap = 'Figure reprinted from Nicholson and Snyder, 2010', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics(file.path("picsfigs", "investorchoices.png"))
 ```
 
-People may have  different preferences for risk versus *expected* (average) return
+People may have  different preferences for risk versus *expected* (average) return. ('Risk' is the overall variance around the average.)
 
-(Risk' is the overall variance around the average)
-
-The above assumes 'optimal diversification': no one chooses points *below* market line
+The above assumes 'optimal diversification': no one chooses points *below* the market line.
 
 \
 
 #### Extension: "Capital asset pricing model" (CAPM) {-}
 
-(*More content/reading to be added here.*)
 
-<!-- #TODO -->
+
+<!-- #TODO (*More content/reading to be added here.*) -->
 
 This is the  leading 'baseline' model in finance.
 
 It assumes (or in fact, derives that) investors optimally diversify.
 
-\
 
-Thus assets are priced based only on 'risk that cannot be diversified away from', which is called 'market risk'.
-
-\
+```{block2,  type='note'}
 
 Holding the expected value of dividends constant, assets with higher market risk are less desirable, thus priced lower, and get higher returns
 
-The trade-off between this risk and return has a linear relationship, and it has a  slope called  'Beta'.
+- Typical boring economist's investment advice: diversify to mimic the 'market basket', choose funds with low fees
+
+This doesn't make you a hit at parties :(.
+                                         
+```  
+
+
+\
+
+Thus assets are priced based only on 'risk that cannot be diversified away from', which is called 'market risk'. The correlation between an asset's return and the return of the 'market basket optly diverse portfolio is sometimes called the asset's 'beta'.
+
+\
+
+Holding the expected value of dividends constant, assets with higher market risk are less desirable, thus they are priced lower, and they gain higher returns.
+
+The trade-off between this risk and return has a linear relationship, i.e., the ('security market line')[https://en.wikipedia.org/wiki/Security_market_line] has a constant slope.
+
+```{block2,  type='inputq'}
+
+Why, according to this model, is there a 'return to market risk' that is constant across all assets? The answer has to do with leveraging or de-leveraging using a 'risk free asset', and arbitrage.  See my hypothes.is comment [here](https://hyp.is/SxyAqBhMEeue-se-RO6R_w/en.wikipedia.org/wiki/Security_market_line)
+
+```  
 
 <div class="marginnote">
-Confusing matters further, in some discussions, the measure of the market risk itself is referred to as “Beta”.
+Confusing matters further, in some discussions, the slope of the returns in the the market risk is referred depicted as a coefficient $\beta$.
 
 You will also hear "Alpha" referred to, representing the intercept and and to depict the excess return of an asset over and above what would be predicted by its market risk.  People who claim to be able to beat the markets will flex about their ‘high Alpha’. But maybe they are just lucky.
 </div>
  
 
 \
-
-- Typical boring economist's investment advice: diversify to mimic the 'market basket', choose funds with low fees
-
-This doesn't make you a hit at parties :(
 
 \
 
@@ -1389,92 +1472,51 @@ See also QMC, chapters 5-6 for a fairly nontechnical and intuitive explanation.
 
 \
 
-## Options contracts
 
-<div class="marginnote">
-The content in this section is largely drawn from Nicholson and Snyder, "Intermediate Microeconomics and Its Application", 2010, Cengage.
-</div>
- 
-
-Option contract
-
-:     Financial contract offering the right (but not the obligation) to buy or sell an asset over a specified period (at a certain price).
-
-
-<br> 
-
-Attributes of options:
-
-1. Specification of transaction: what is bought/sold, how many units maximum, at what price, etc
-2. Period the option may be exercised (from when until when)
-3. Price of the option
-
-\
-
-### Price of options determined by {-}
-
-1. Expected value of underlying transaction (e.g., for a call option, expected future share price minus strike price)
-
-2. Variability of the value of the transaction
-
-Option G (a 'call option'): Right to buy Google share at £500 (£500 'strike price') in December 2020
-
-- Worth more the higher the current share price
-
-- If $P_{google}< £500$ currently, then option G is worth more the higher the expected *variability* in $P_{google}$
-    - Variability can only help the option-holder:
-    - price increase helps her
-    - if price falls below £ 500, she doesn't need to exercise the option
-
-```{block2,  type='warning'}
-
-If you didn't read this you probably would have guessed the opposite. Common sense does not get you everywhere, and definitely not a good mark on exams. I *particularly* want you to understand those results that are *not* common sense.
-
-```  
-
-
-3. Duration: the longer the better -- a longer duration brings a greater chance that the price will rise above strike price (£500)
-
-Note that the results for 'right to sell = call options' are similar, just replace the words 'buy' with 'sell' and reverse the directions ('rise' with 'fall), etc.
-
-
-\
 
 ```{block2,  type='note'}
 
-Classic economist's argument: you should 'bet against yourself' to minimise risk; but this might give you bad incentives to perform. See column about this [HERE](http://www.marketplace.org/2008/08/11/business/hedging-your-bets-hard-times) ... "Hedging your bets in hard times"]
+**Are you interested in finance and investment?** You should aim to gain a solid mathematical understanding of the CAPM model, which is the basis of modern portfolio theory.
 
-```
+[Wikipedia on 'Capital_asset_pricing_model'](https://en.wikipedia.org/wiki/Capital_asset_pricing_model) is a good starting point. Note that I am leaving comments on this page using the Hypothes.is tool with tags 'microeconomics', 'beem101' and 'capm'.
+
+**Please install a hypothesis.is plugin into your browser, and then read and interact!**
+  
+  
+![](picsfigs/wiki_capm_hypothesis.png)
+
+Also leaving comments on wiki articles on : 
+  
+- [Diversification](https://en.wikipedia.org/wiki/Diversification_(finance)) 
+
+- [Security market line](https://en.wikipedia.org/wiki/Security_market_line)
+
+
+![](picsfigs/diversification_wiki_comments.png)
+
+![](picsfigs/security_market_line_wiki.png)
+
+
+
+*Please interact!*
+
+This is also potentially relevant to Midterm coverage, or to your project, if you choose to go in this direction.
+
+
+```  
 \
 
+## Options contracts [moved to supplement](#options-sup) {-}
+
+```{block2,  type='note'}
+
+For time concerns, we will not cover options contracts in Beem101 for 2020. This section has been moved into the supplements [HERE](#options-sup).
+
+```  
 
 \
 
-**Extension: "Capital asset pricing model" (CAPM)**
-
-This is the  leading 'baseline' model in finance.
-
-It assumes (or in fact, derives that) investors optimally diversify.
-
-<br> <br> \bigskip
-
-Thus assets are priced based only on 'risk that cannot be diversified away from' ('market risk')
-
-<br> <br> \bigskip
-
-Holding the expected value of dividends constant, assets with higher market risk are less desirable, thus priced lower, and get higher returns
-
-The trade-off between this risk and return has a linear relationship with slope 'Beta'
-
-<br> <br> \bigskip
-
-- Typical boring economist's investment advice: diversify to mimic the 'market basket', choose funds with low fees
-
-This doesn't make you a hit at parties :(
-
-\
-
-## Measures of risk preferences, further characterizations {risk_measures}
+## Measures of risk preferences, further characterizations {#risk_measures}
 
 - CARA, CRRA
 
@@ -1486,11 +1528,74 @@ Content to be added here, drawing from McDL section 13.4.
 
 \
 
+### 'Certainty equivalent' of a gamble, 'Risk premium'
+
+From [McDL](https://saylordotorg.github.io/text_introduction-to-economic-analysis/s14-04-risk-aversion.html#mcafee-ch13_s04_f01)
+
+> The **certainty equivalent** is an amount of money that provides equal utility to the random payoff of the gamble. The certainty equivalent is labeled CE in the figure. Note that CE is less than the expected outcome, if the person is risk averse.
+
+
+
+
+```{r  fig.cap = 'Diagram rom McDL', out.width='55%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
+ knitr::include_graphics("picsfigs/risk_averse_eu_mcdl.png")
+
+```
+
+
+> The **risk premium** is defined to be the difference between the expected payoff (this is expressed as $\pi x_1 + (1 – \pi)x_2 in the figure) and the certainty equivalent.
+
+> ... the amount of money an individual would be willing to pay to avoid [this particular] risk. 
+
+Of course the risk premium needs to be expressed as a function of a particular gamble ... a larger amount at risk will presumably demand a higher premium from a risk-adverse person. 
+
+But consider the amount you would need to pay an extremely poor person to be willing  take a coin-flip gamble over winning/losing £100. Now consider the amount you would need to pay a University Vice-Chancellor to take this risk. Would these amounts be the same? I.e,. as McDL ask:
+
+
+> How does the risk premium of a given gamble change when the base wealth is increased? 
+
+We might imagine think the risk premium (for any particular gamble) would fall as wealth increases. This depends on a particular condition on the curvature of the value function:
+
+> It can be shown that the risk premium falls as wealth increases for any gamble, if and only if $−v''(x)/v′(x)$ is decreasing [in $x$].
+
+
+```{block2,  type='warning'}
+
+It looks like some of the equations in the McDL text did not render properly, at least not in the html version. Be careful with this! If you are in doubt, please doublecheck, e.g., with [wikipedia](https://en.wikipedia.org/wiki/Risk_aversion)
+  
+```  
+
+\
+
+**My attempt at intuition.** Note that the value function is always assumed to be increasing in $x$, essentially monotonicity. Thus $v'(x)$ >0$ at all points.
+
+\
+
+For a risk averse person (someone who is 'everywhere risk averse') this rate of increase, this 'marginal utility of income in a particular state', is decreasing in income. Thus each additional unit of income yields less and less additional value. Thus, as $v'(x)$ is decrease in $x$ we know $v''(x)$ is negative. 
+
+\
+
+So what about the negative of ratio $−v''(x)/v′(x)$ ... the negative sign up front makes it positive -- this is just to make it a simpler intuitive measure of 'more risk aversion'.  But what does it mean? Well, what will a risk premium depend on? 
+
+1.  The 'price' of additional value at point $x$ depends on the marginal value of income, $v′(x)$. If I need to be 'given more utility to make up for the cost of taking on a small risk', this required payment (in income) will depend on $v′(x)$ at this point. This is in the denominator as it's a 'price per unit of value'.
+
+2. The 'cost' of taking on a small risk at a certain point $x$ is that the value benefit of winning a small amount $\epsilon$ (from increasing your income past this point) is less than the cost of losing this $\epsilon$ amount. The difference in these depends on 'how much shallower $v(x)$ gets', i.e., 'how much does $v'(x)$ change' as I increase income a tiny bit from point $x$. But this difference  is precisely $v''(x)$. 
+
+So perhaps we can think of the above ratio as the 'cost of taking on $\epsilon$ risk'---the numerator, as measured in units of the 'price of additional value ... (needed to compensate this)'--- the denominator. 
+
+If the utility of taking on additional $\epsilon$ risk, as measured in terms of the price of compensating price this utility loss, is decreasing in wealth, then wealthier people will demand a smaller risk premium for the same small bet.
+
+\
+
+Anyways, this ratio is also referred to as the (Arrow-Pratt) 'coefficient of *absolute* risk aversion'.
+
+
 ### Local measures of risk-aversion {-}
 
 - Coefficient of *absolute* risk aversion in income or weath $m$: $A(m) \equiv -\frac{u''(m)}{u'(m)}$
 
-Note this is preserved under an affine transformation, it is only affected by things that affect *preferences* (see indifference curves), not by 'the same preferences represented by a different utility function'. 
+Note this is 'preserved under an affine transformation'; it is only affected by things that affect *preferences* (see indifference curves), not by 'the same preferences represented by a different utility function'. 
 
 Note that the value of this measure itself may be constant, decreasing, increasing in income...
 
@@ -1503,12 +1608,20 @@ $$u(m) = 1 - exp(-\alpha m)$$
 \
 
 
+This 'CARA' utility is convenient for constructing and solving models, as we don't need to consider how risk preferences (and choices people are willing to make) changes with higher or lower wealth (perhaps as a consequence of policies). However, I suspect most people would not find it realistic.  McDL report:
+
+> An important aspect of CARA with normally distributed risks is that the
+preferences of the consumer are linear in the mean of the gamble and the
+variance. Such preferences are often  called mean variance preferences, and they describe people who value risk linearly with the expected return. Such preferences comprise the foundation of modern finance theory
+
 <br> 
+
+Perhaps a more informative measure pertains to the willingness to take risks as a *share of one's income*: 
 
 - Coefficient of *relative* risk aversion: $$R(m) \equiv mA(m)=-\frac{mu''(m)}{u'(m)}$$
 
 
-This need not be constant in income. It is only constant if utility is of the 'isoelastic' form
+This also need not be constant in income, although it seems more plausible to assume that it is. It is only constant if utility is of the 'isoelastic' form
 
 $$u(w) = \frac{m^{1- \rho} - 1}{1-\rho}$$ 
 
@@ -1518,13 +1631,13 @@ $$u(w) = \frac{m^{1- \rho} - 1}{1-\rho}$$
 Note that these ideas are also relevant to intertemporal substitution and to social welfare functions. The way we depict utility and preferences over time is similar to the way we depict preferences over uncertainty. This sometimes makes it hard to separate the two in empirical studies and applied questions.
 </div>
  
+\
 
 **For these measures** 
 
 RRA (ARA) constant $\rightarrow$ constant fraction of portfolio (number of dollars) held in risky asset as wealth increases.
 
 \
-
 
 
 These measures are discussed very neatly in the video below, giving some specific parametric examples.  However, he never explains exactly what the 'units' here are. What exactly do $A(W)$ and $R(W)$ measure?
@@ -1534,6 +1647,9 @@ These measures are discussed very neatly in the video below, giving some specifi
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1kU4pvdIdT4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </center> 
+
+
+\
 
 ### 'Prudence'  {-}
 
@@ -1554,7 +1670,7 @@ Consider two people, Sam and Rick, with the same expected value income of 50 'ne
 
 However, Rick faces a much greater variance of income than Sam. Suppose Rick gets income 10 half the time and 90 half the time, while Sam gets 40 half the time and 60 half the time. 
 
-Now suppose each is considering how much of "this year's" income to lay aside for next year, at the cost of less pleasure this year. (I may not  have covered utility across time and discounting yet, but I think you will get the idea.)
+Now suppose each is considering how much of "this year's" income to lay aside for next year, at the cost of less pleasure this year. (I may not have covered utility across time and discounting yet, but I think you will get the idea.)
 
 Who will find it more important to put aside money, Sam or Rick? ... think and unfold. 
 
@@ -1600,37 +1716,133 @@ That might seem the obvious choice to you, in spite of the above discussion. If 
 \
 
 
-
 ## Time preferences and discounting {#time-pref}
 
 (To be added, partly from McDL: 13.3 on ‘dynamic choice’)
 
-# Exercises - uncertainty, finance, time preferences ('problem set')  {-#ex-uncertainty}
+Economists often consider preferences over time using nearly the same framework that they use for considering preferences over uncertainty. 
 
-Tbd; some possibilities in the fold.
+We 'sum a sequence of weighted payoffs' in both cases ... for uncertainty we weight by probability... 
+
+For time-preferences we (might) consider 'discounting' future payoffs. 
+
+(*Some discussion: (when) should we 'discount future payoffs'?*)
 
 ```{block2,  type='fold'}
 
-O-R Q2: "A parent"
+**Individuals might discount future “pleasure”:**
 
-O-R Q7: "Additional lottery"
+because they might not survive to the future (although this should enter in as a ‘survival discount’ tied to the probability of surviving)
 
-O-R Q8: "Casino"
+because they are impatient (but this is potentially not in their own interest).
 
-O-R Q9: "Insurance"
+But other than this, it is not entirely clear why this discounting makes sense. Why should I value 'a unit of utility' in the future less than a unit today? 
+
+\
+
+
+Discounting future *income* is much more reasonable, and 
+**Individuals may discount future ‘income’ (in currency, inflation-adjusted) or ‘physical consumption’** 
+
+If we think the ‘future me’ will be wealthier than the present me (consumption smoothing)
+
+Or if we think I will be less sensitive to pleasure/pain
+
+```
+
+Suppose an individual has concave payoffs (utility), perhaps a slope of the value function $v(x)$ (aka the 'utility of income' function) with a positive first derivative and a negative second derivative. They are 'risk averse' as defined above.
+
+\
+**Risk**:
+*If there are two possible state of the worlds (a coin flip, heads or tails, each with probability $1/2$)*... 
+
+*if this person is an 'expected utility maximiser'*, when choosing among lotteries with the same expected monetary payoffs, they prefer the lottery where the payoffs in each state are as similar as possible. Equivalently, if they start with a certain income they will 'reject all fair gambles'.
+
+If they can divide a fixed income $m$ between the 'heads' and 'tails' states, they would divide it equally, setting $x_{heads} = x_{tails} = m/2$. This will maximise their 'expected utility' $\frac{1}{2} v(x_{heads}) + \frac{1}{2} v(x_{tails})$
+
+\
+
+**Time**:
+
+Analogously, suppose there are 'two periods', 'Period 1'  and 'Period 2', that the same individual must divide a fixed income between ($x_1$ in period 1 and $x_2$ in period 2). Assume they do not 'discount future utility'. The 'utility of income function in a period' (equivalent to $v(x)$) is the same in every period.  Thus their 'total stream of utility' simply adds the utility in each period:
+
+$u(x_1, x_2) = v(x_1) + v(x_2)$.  
+
+Suppose they can divide a fixed income $m$ to be used for consumption in either of the two periods (so $x_1+x_2=m$).
+
+This is equivalent to the above 'Risk' problem, with the same concave value function. Thus, they will again divide the consumption equally, setting $x_{1} = x_{2} = m/2$.
+
+<div class="marginnote">
+Note there are some criticisms of the standard ways in which both risk-preferences and time-preferences are handled. There is evidence suggesting people do not treat these tradeoffs equivalently. See, e.g., [Andreoni and Sprenger](http://www.dklevine.com/archive/refs4814577000000000452.pdf)
+
+</div>
+ 
+\
+
+When there are diminishing returns to consumption in every period (or in every state) and income can be freely shifted from one period (or equi-probable state) to another, and there is no 'discounting', the individual will set the consumption equal in every period (or state). This is called 'consumption smoothing'. 
+
+<div class="marginnote">
+Because of this, the standard economic prediction is that a one-time increase in wealth will have only a small effect on consumption in that period. A general 'consumption smoothing' result also applies when there is discounting, but somewhat less consumption applied to later periods... the ratios of the marginal utilities multiplied by the discount factors will be set equal.
+</div>
+ 
+
+
+
+# Exercises - uncertainty, finance, time preferences ('problem set')  {-#ex-uncertainty}
+
+
+## Some questions from previous exams (somewhat easier questions) 
+
+**Hedging bets?** 
+
+Consider Betty, a UK resident working at a company that ships goods from Britain to France. In May 2016, an economist (Al) advises Betty that if the UK votes 'leave' in the June referendum, this may reduce trade with France. Al advises Betty to buy an asset (a 'bet on leave' with a bookmaker) that will pay off in the event that the UK votes for 'leave'. The bookmaker offers odds that are seen as fair, and he only takes a small commission. What would justify the economist's advice to buy this asset? What sort of preferences would Betty have to have to make this advice worth following?
+
+
+\
+
+**Risk aversion, choices** Define risk aversion formally and intuitively. Describe one choice that a risk nuetral person might make that a risk-averse person would never make. Describe  a particular \textit{measure} of risk-aversion that would allow us to rank individuals according to their level of risk aversion, considering the strengths and weaknesses of this measure.
+
+\
+
+**Risk aversion and diversification** 
+
+Define 'risk aversion'. Explain why an economist would advise a risk-averse investor to `diversify' her investments.  Would the advice be the same for any risk-averse investor, or would it vary depending on her level of risk-aversion? Does this depend on whether she can borrow or lend at the 'risk-free' rate? . Explain why or why not, referring to equations and diagrams as needed. 
+
+
+\
+
+
+**Allais paradox** 
+
+Describe the 'Allais paradox', giving a specific example of a set of choices that illustrate this paradox. Explain why these choices are inconsistent with the standard theory of expected utility maximisation. 
+
+
+
+
+## From O-R 
+
+**O-R Q2: "A parent"**
+
+**O-R Q7: "Additional lottery"**
+
+**O-R Q8: "Casino"**
+
+**O-R Q9: "Insurance"**
+
+
+\
+
+\
+<!--
+```{block2,  type='fold'}
 
 - Proof-based problem
 
 - Example-based problem (lotteries, insurance, investment)
-
-- Allais Paradox question
 
 - Potentially: data/code based simulation
 
 - Discussion/explanation question
 
 ```
-
-
-
-
+-->
