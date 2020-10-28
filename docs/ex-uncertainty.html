@@ -357,13 +357,13 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.9" data-path="uncertainty.html"><a href="uncertainty.html#exp-risk"><i class="fa fa-check"></i><b>3.9</b> Experimental measures of risk attitudes</a></li>
 <li class="chapter" data-level="3.10" data-path="uncertainty.html"><a href="uncertainty.html#applications-esp.-to-finance"><i class="fa fa-check"></i><b>3.10</b> Applications (esp. to finance):</a>
 <ul>
-<li class="chapter" data-level="" data-path="uncertainty.html"><a href="uncertainty.html#benefits-of-diversification"><i class="fa fa-check"></i>Benefits of diversification</a></li>
-<li class="chapter" data-level="" data-path="uncertainty.html"><a href="uncertainty.html#asset-pricing-and-the-capm-basic-characterization"><i class="fa fa-check"></i>Asset pricing and the CAPM (basic characterization)</a></li>
+<li class="chapter" data-level="" data-path="uncertainty.html"><a href="uncertainty.html#diversification"><i class="fa fa-check"></i>Benefits of diversification</a></li>
+<li class="chapter" data-level="" data-path="uncertainty.html"><a href="uncertainty.html#capm"><i class="fa fa-check"></i>Asset pricing and the CAPM (basic characterization)</a></li>
 </ul></li>
 <li><a href="uncertainty.html#options-contracts-moved-to-supplement">Options contracts <span>moved to supplement</span></a></li>
 <li class="chapter" data-level="3.11" data-path="uncertainty.html"><a href="uncertainty.html#risk_measures"><i class="fa fa-check"></i><b>3.11</b> Measures of risk preferences, further characterizations</a>
 <ul>
-<li class="chapter" data-level="3.11.1" data-path="uncertainty.html"><a href="uncertainty.html#certainty-equivalent-of-a-gamble-risk-premium"><i class="fa fa-check"></i><b>3.11.1</b> ‘Certainty equivalent’ of a gamble, ‘Risk premium’</a></li>
+<li class="chapter" data-level="3.11.1" data-path="uncertainty.html"><a href="uncertainty.html#ce-risk-premia"><i class="fa fa-check"></i><b>3.11.1</b> ‘Certainty equivalent’ of a gamble, ‘Risk premium’</a></li>
 <li class="chapter" data-level="" data-path="uncertainty.html"><a href="uncertainty.html#cara-crra"><i class="fa fa-check"></i>Local measures of risk-aversion</a></li>
 <li class="chapter" data-level="" data-path="uncertainty.html"><a href="uncertainty.html#prudence"><i class="fa fa-check"></i>‘Prudence’</a></li>
 </ul></li>
@@ -584,6 +584,21 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </p>
 <p><strong>Risk aversion and diversification</strong></p>
 <p>Define ‘risk aversion’. Explain why an economist would advise a risk-averse investor to `diversify’ her investments. Would the advice be the same for any risk-averse investor, or would it vary depending on her level of risk-aversion? Does this depend on whether she can borrow or lend at the ‘risk-free’ rate? . Explain why or why not, referring to equations and diagrams as needed.</p>
+<br />
+
+<div class="fold">
+<p>Risk aversion: The extent to which uncertainty of an outcome (holding the expected material or monetary value constant) implies an individual values it less. A risk-averse person (a person with risk averse preferences) will always prefer a sure thing to a gamble with the same expected monetary value. Equivalently, a risk averse person will always reject a fair gamble.</p>
+<p>Neoclassical microeconomics concieves of and models this using an ‘outcome based’ (Von-Neuman Morgenstern) value function that increases at a diminishing rate, and an individual who tries to maximize the expected value of the outcome as measured by this utility function.</p>
+<p>The greater the curvature (relative to the slope) of the VnM utility function, the more risk averse, at least by the <a href="uncertainty.html#ce-risk-premia">popular ‘Arrow-Pratt’ measures</a>.</p>
+<p><br />
+An economist would advise a risk-averse investor to ‘diversify’ her investments, no matter how risk averse she is … as long as she is at least a little bit risk-averse, she will prefer to minimise the variance of the return (for a given expected return). As the returns of assets are not perfectly correlated, dividing the investment over ‘more coin flips’ implies a lower overall variance. (See discussion under <a href="uncertainty.html#diversification">‘benefits of diversification’</a><br />
+as well as the discussion of the <a href="uncertainty.html#capm">CAPM model</a>).</p>
+<p>This allows her to reduce the variance of her returns for a given expected return, or increase the expected return for a given variance. She can optimise along this margin by ‘optimally diversifying’, buying assets in proportion to their representation (relative value) in the market. She can then move to her desired point on the risk/return frontier, aka the ‘market line’, by either leveraging (borrowing) or putting some of her investment in a risk-free asset.</p>
+<p><br />
+</p>
+<p>However (advanced point) if she cannot borrow/lend at the risk-free rate she cannot choose along the ‘market line’ and thus may not want to diversify quite as much; buying the ‘market basket’ may then be too-risky/too-safe relative to her preferences. (To fully answer this last part it will help to have read into the ‘CAPM’ model: see, e.g., the hypothes.is annotated Wikipedia entries on referred to above).</p>
+<p>\end{solution}</p>
+</div>
 <p><br />
 </p>
 <p><strong>Allais paradox</strong></p>
@@ -626,7 +641,9 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="from-o-r" class="section level2" number="3.13">
 <h2><span class="header-section-number">3.13</span> From O-R</h2>
-<p>(<em>Note: Suggested answers provided to Beem101 students, not to be posted on the web by request of O-R</em>)</p>
+<p>(<em>Note: Suggested answers provided to Beem101 students, not to be posted on the web by request of O-R</em>. Beem101 students can consult the Class Notebook, or the direct link <a href="https://universityofexeteruk.sharepoint.com/sites/Section_20BEEM101TERM1/_layouts/15/Doc.aspx?sourcedoc=%7B565a25c8-1817-4845-b9a5-7ced66b92add%7D&amp;action=edit&amp;wd=target%28_Collaboration%20Space%2FTutorials%20%28seminars%5C%29%20Notes.one%7Ca745a153-ea3f-4b6e-8f16-9163bfe64932%2FTut.%20wk%203%5C%2F8%20Uncertainty%7C55e82eb0-f36e-4f1c-9190-b384cb7fc51d%2F%29&amp;wdorigin=703">HERE</a>)</p>
+<p><br />
+</p>
 <p><strong>O-R Q2: “A parent”</strong></p>
 <blockquote>
 <p>A parent. A parent has two children, A and B. The parent has in hand only one gift. He is indifferent between giving the gift to either child but prefers to toss a fair coin to determine which child obtains the gift over giving it to either of the children. Explain why the parent’s preferences are not consistent with expected utility.</p>
@@ -636,6 +653,10 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="fold">
 <p>Note that expected utility requires the ‘independence’ property.</p>
 </div>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YtYV2bguYLU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</center>
 <p><br />
 </p>
 <p><strong>O-R Q7: “Additional lottery”</strong></p>
@@ -651,6 +672,11 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </blockquote>
 <p><br />
 <em>Note</em>: In answering this question, you can assume that he is an ‘expected utility’ maximiser, and thus the continuity and independence axioms must hold (and by extension, monotonicity).</p>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5rSAWiuoGNk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p>Note: I can probably improve the notation in the above video.</p>
+</center>
 <p><br />
 </p>
 <p><strong>O-R Q8: “Casino”</strong></p>
@@ -688,7 +714,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </blockquote>
 
 <div class="note">
-This is referred to as ‘actuarially fair insurance’. This should hold in a perfectly competitive insurance market if there are no moral hazard or asymmetric information issues, no transactions costs, etc.
+<p>This is referred to as ‘actuarially fair insurance’. This should hold in a perfectly competitive insurance market if there are no moral hazard or asymmetric information issues, no transactions costs, etc.</p>
 </div>
 <blockquote>
 <p>Show that if the individual is risk-averse he optimally chooses <span class="math inline">\(x = pD\)</span> , so that he is fully insured: [implying that] his net wealth is the same whether or not he has an accident.</p>
