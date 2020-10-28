@@ -5170,7 +5170,7 @@ TODO: I intend to include a video here discussing the 'good and bad' preference.
 This seems to me to be a sort of 'opposite extreme' to the pessimistic preference.  While the pessimist is extremely sensitive to the very worst thing, the "good and bad" person is insensitive to whether the "good things" are 'really good or just OK'  or whether  the bad things" are really bad or just a bit mediocre.
 </div>
 
-## Properties of preferences (O-R 3.2.1)
+## Properties of preferences (over uncertainties) (O-R 3.2.1) {#prop-unc-pref}
 
 <div class="marginnote">
 These properties will justify EU preferences. If you like, you may want to jump down to [Expected utility](#expected-util) first, and come back here, or watch [this video](https://youtu.be/VjnOWik5nbU)
@@ -5239,7 +5239,6 @@ Note that this definition of continuity is remeniscent but not identical to the 
  
 
 
-
 \
 
 **Def: Compound lotteries**
@@ -5287,7 +5286,7 @@ Further explanation ... why is this property called 'independence'?
 
 "A lottery (between two things) gets better as the better thing gets more likely"
 
-- Independence implies monotonicity; a fairly easy and cool proof.
+- Independence implies monotonicity; this is a fairly easy and cool proof (check it out)
 
 
 ## Expected utility {#expected-util}
@@ -5531,8 +5530,7 @@ If the person is 'risk-neutral', it must be linear, thus $V(y) = a + by$, thus $
 <br>
 
 
-### Risk attitude: O-R formal depiction
-  
+### Risk attitude: O-R formal depiction {#risk-attitude-formal}
   
 Assume a 'set of prizes $Z$' that are (nonnegative) real numbers .. think of each prize $z \in Z$  as some monetary reward.
 
@@ -5677,7 +5675,7 @@ I have learned that your preference for Oxford over Bristol is  "stronger" than 
 ```
 
 
-### Intuition for 'risk aversion iff concave value function $v(\cdot)$' {-}
+### Intuition for 'risk aversion iff concave value function $v(\cdot)$' {-#ra_concave}
 
 Risk aversion is defined (at least one definition) as being unwilling to take any "fair gambles" (gambles with an expected monetary value of zero) not even small ones.  A risk averse person would never be willing to take on an equal probability of gaining a certain amount and losing that same amount.  If they are "globally risk-averse" this holds no matter what level of income/wealth they start at, and no matter how large or small this amount is.
 
@@ -5929,7 +5927,7 @@ People do *not* choose in a way that could be characterised as maximizing the pr
 
 \
 
-## Experimental measures of risk attitudes
+## Experimental measures of risk attitudes {#exp-risk}
 
 Economists try to measure people's level of risk aversion in various ways.
 
@@ -6298,7 +6296,7 @@ If the utility of taking on additional $\epsilon$ risk, as measured in terms of 
 Anyways, this ratio is also referred to as the (Arrow-Pratt) 'coefficient of *absolute* risk aversion'.
 
 
-### Local measures of risk-aversion {-}
+### Local measures of risk-aversion {-#cara-crra}
 
 - Coefficient of *absolute* risk aversion in income or weath $m$: $A(m) \equiv -\frac{u''(m)}{u'(m)}$
 
@@ -6498,18 +6496,71 @@ Because of this, the standard economic prediction is that a one-time increase in
 # Exercises - uncertainty, finance, time preferences ('problem set')  {-#ex-uncertainty}
 
 
-## Some questions from previous exams (somewhat easier questions) 
+## Some questions from previous exams (somewhat easier questions) {-}
 
 **Hedging bets?** 
 
 Consider Betty, a UK resident working at a company that ships goods from Britain to France. In May 2016, an economist (Al) advises Betty that if the UK votes 'leave' in the June referendum, this may reduce trade with France. Al advises Betty to buy an asset (a 'bet on leave' with a bookmaker) that will pay off in the event that the UK votes for 'leave'. The bookmaker offers odds that are seen as fair, and he only takes a small commission. What would justify the economist's advice to buy this asset? What sort of preferences would Betty have to have to make this advice worth following?
 
+\
+
+*Suggested answer guidelines:* 
+
+```{block2,  type='fold'}
+
+Main points:
+  
+- If Leave passes she may lose her job or suffer reduced income.
+
+- If she 'bets on leave' this loss would be counterbalanced by an income gain from the asset.
+
+- On the other hand if leave does not pass she keeps her job, but loses the bet.
+
+-  Thus both the gains and losses are reduced by making this bet; i.e., the variance is reduced.
+
+-  If she is *risk-averse* she prefers to reduce the variance of her returns, holding the expected value the same. If she is substantially risk-averse, she is willing to sacrifice at least some amount of expected monetary value (i.e., the commission) to reduce the variance.
 
 \
 
-**Risk aversion, choices** Define risk aversion formally and intuitively. Describe one choice that a risk nuetral person might make that a risk-averse person would never make. Describe  a particular \textit{measure} of risk-aversion that would allow us to rank individuals according to their level of risk aversion, considering the strengths and weaknesses of this measure.
+*Note to Beem101 2020*: this was part of a question on a previous exam. For the upcoming midterm, I would probably add an additional challenging element to such a question, e.g., asking you to formally specify her preferences in some way (concavity of value function, etc.) or consider the measurement of risk (certainty equivalent, Arrow-Pratt measures, etc.)
+
+```
 
 \
+
+
+**Risk aversion, choices**
+
+
+Define risk aversion formally and intuitively. Describe one choice that a risk neutral person might make that a risk-averse person would never make. Describe  a particular *measur*} of risk-aversion that would allow us to rank individuals according to their level of risk aversion, considering the strengths and weaknesses of this measure.
+
+\
+
+*Suggested answer guidelines:* 
+
+```{block2,  type='fold'}
+A risk averse person always prefers the expected monetary  value of a gamble to the gamble itself. They will never take 'fair bets' and will refuse even some gambles that have a positive expected value. Please see (and present and give intuition for) formal presentations as given [above](#risk-attitude-formal).
+
+If utility is differentiable we can  define risk aversion in terms of a diminishing marginal utility of income (or in general, concavity). More formal definitions, depictions, and intuition is given in this web book [above](#ra_concave).
+
+The 'coefficient of absolute'  risk aversion is one measure but it may not be constant within the range of an individual's income; thus some normalisation or averaging would be required to make this comparison across individuals. 
+
+However, this depends what our purpose is in making this comparison across individuals  -- if we want to compare how risk averse they are given their *current wealth*, this may not be a problem. On the other hand, if we want to make a comparison (e.g., between men and women) to say something about genetic or culturl predisposition to risk-seeking, then the issue of 'differing baseline incomes' may be important. 
+
+'Coefficient of relative risk aversion' is another measure; it also may not be constant throughout the range of income (but that is at least more plausible). These measures, and the intuition for them, are discussed [above](#cara-crra).
+
+\
+
+Other measures include specific empirical elicitations/comparisons as those done in experiments, such as Holt and Laury [discussed here](#exp-risk). (You should briefly characterise it).
+
+These are also arbitrary and may be sensitive to the experimental framing. In particular, there is some evidence (cite) that the Holt and Laury does not substantially predict real-world behavior.  One possibility is that it is too complicated and analytical for most people to handle or to take seriously given low stakes. Another possibility is that the succession of choices presented by HL leads people to consider it in a way they would not naturally have done, to aim for an 'arbitrary coherence'. 
+
+
+```
+
+\
+
+
 
 **Risk aversion and diversification** 
 
@@ -6523,21 +6574,113 @@ Define 'risk aversion'. Explain why an economist would advise a risk-averse inve
 
 Describe the 'Allais paradox', giving a specific example of a set of choices that illustrate this paradox. Explain why these choices are inconsistent with the standard theory of expected utility maximisation. 
 
+\
+*Suggested answer guidelines:* 
+
+```{block2,  type='fold'}
+
+Please see lecture notes on [Allais paradox](#allais)
 
 
+Allais paradox illustrated by a scenario such as
+
+- Gamble A: an 89 percent chance of winning \pounds 1 million a 10 percent chance of winning \£ 5 million, and a 1 pct chance of winning nothing.
+- Gamble B: £ 1 million with certainty.
+
+
+vs
+
+- Gamble C: an 89 percent  chance of winning nothing and an 11\% chance of winning \pounds1 million
+- Gamble D: a 90 percent chance of winning nothing and a 10 percent  chance of winning £ 5 million.
+
+\
+
+Many people choose B over A and choose D over C:
+
+This contradicts Expected Utility theory:
+
+- If $B \succ A$ then $EU(A) > EU(B)$
+    - $\rightarrow U(1m) > 0.89 \: U(1m) + 0.1 \: U(5m) + 0.01 \: U(0)$
+    - $\rightarrow$ $0.11 \: U(1m) >  0.1 U(5m) + 0.01 \: U(0)$
+- If $D \succ C$ then $EU(D)>EU(C)$
+    - $\rightarrow 0.9 \: U(0) + 0.1 U(5m) > 0.89 \: U(0) + 0.11 \: U(1m)$
+    - Implying $0.1 \: U(5m) + 0.01 \: U(0) > 0.11 \: U(1m)$
+    - Contradicting the above!
+
+```
+
+\
 
 ## From O-R 
 
+(*Note: Suggested answers provided to Beem101 students, not to be posted on the web by request of O-R*)
+
 **O-R Q2: "A parent"**
+
+> A parent. A parent has two children, A and B. The parent has in hand only one gift. He is indifferent between giving the gift to either child but prefers to toss a fair coin to determine which child obtains the gift over giving it to either of the children. Explain why the parent’s preferences are not consistent with expected utility. 
+
+Hint below:
+
+```{block2,  type='fold'}
+Note that expected utility requires the 'independence' property.
+
+```
+\
 
 **O-R Q7: "Additional lottery"**
 
-**O-R Q8: "Casino"**
+> An individual faces the monetary lottery $p$. He is made the following offer. For each realization of the lottery another lottery will be executed according to which he will win an additional dollar with probability $\frac{1}{2}$   and lose a dollar with probability $\frac{1}{2}$.
 
-**O-R Q9: "Insurance"**
+> Describe the lottery $q$ that he faces if he accepts the offer 
+
+*Note:* Here you are being asked to depict the lottery he faces *in net* including the lottery $p$, which may have any number of prizes, as well as the additional 'coin flip' lottery mentioned above. 
+
+> and show that if he is strictly risk-averse he rejects the offer.
+
+\
+*Note*: In answering this question, you can assume that he is an 'expected utility' maximiser, and thus the continuity and independence axioms must hold (and by extension, monotonicity).
 
 
 \
+
+**O-R Q8: "Casino"**
+
+> An individual has wealth $w$ and has to choose an amount $x$, after which a lottery is conducted in which with probability $\alpha$ he gets $2x$ and with probability $1 − \alpha$ he loses $x$.
+
+> Show that the higher is $\alpha$ the higher is the amount $x$ he chooses.
+
+\
+
+**O-R Q9: "Insurance"**
+
+> Insurance. An individual has wealth $w$ and is afraid that an accident will occur with probability $p$ that will cause him a loss of $D$. 
+
+<div class="marginnote">
+Please assume, of course, that this is indeed the probability that such an accident will occur.
+</div>
+ 
+> The individual has to choose an amount, $x$, he will pay for insurance that will pay him $\lambda x$ (for some given $\lambda$) if the accident occurs.
+
+<div class="marginnote">
+Note that $\lambda$ will determine, in effect, the 'price' of the insurance, per unit of compensation in the event of an accident. 
+</div>
+ 
+> a. The insurer’s expected profit is $x − \lambda p x$
+
+<div class="marginnote">
+Because the individual paid $x$ and the insurer must compensate him $\lambda x$ with probability $p$
+</div>
+ 
+
+
+> Assume that $\lambda$ makes this profit zero, so that $\lambda = 1/p$.
+
+```{block2,  type='note'}
+This is referred to as 'actuarially fair insurance'. This should hold in a perfectly competitive insurance market if there are no moral hazard or asymmetric information issues, no transactions costs, etc. 
+```  
+
+> Show that if the individual is risk-averse he optimally chooses $x = pD$ , so that he is fully insured: [implying that] his net wealth is the same whether or not he has an accident.
+
 
 \
 <!--
