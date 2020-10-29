@@ -1,0 +1,119 @@
+
+## Trying out the 'monopoly simulator'
+
+From "Simulations and Analysis github.com/EconometricsBySimulation/"
+
+
+>  Our monopolist is a broadband internet supplier within a city.
+ 
+> For now let's say they only offer one bundle.
+ 
+> Let's generate our consumers
+ 
+ 
+```{r}
+
+npeep <- 2000 # Number of potential consumers
+ 
+wtp <- 45 + rnorm(npeep)*15 # Each person has a different willingness to pay 
+
+```
+
+He supposes `r npeep` consumers,  each person has a different willingness to pay that is 45 + a normally distributed error term ... this yields a vector of willingnesses to pay.
+
+
+ 
+> To figure out the demand curve we count the number of people willing to pay at least as much as the offering price.
+ 
+ 
+```{r}
+
+maxop <- 90 # Max offering price
+op <- 0:maxop # Offering price ranges from 0 to maxop
+qd <- rep(NA,length(op)) # Quantity demanded
+for (i in 1:length(op)) qd[i] <- sum(wtp>=op[i])
+ 
+mc <- qd*.01
+
+```
+
+He considers this over a range of offered prices, generating a vector specifying the quantity dmemanded for each price.
+
+
+\
+
+He assumes: 
+
+>  Marginal cost is increasing though this is not a neccessity. For something like broadband services we might think that up to a point marginal costs might be decreasing since the cost of adding one more customer might be less than the cost of adding the previous customer.
+
+\
+
+Now we plot quantity demanded as a function of price:
+
+```{r}
+
+plot(qd, op, type="l", xlab="Quantity", ylab="Price, Marginal Cost - Red", 
+      main="Demand for Broadband Internet", lwd=2)
+abline(h=0, lwd=2)
+lines(qd, mc, col="red", lwd=2)
+
+
+```
+
+ 
+>  The monopolist must choose a price in which to sell services at. If the monopolist chooses $mc=p$ then the monopolist will not make any money but the consumers will be very happy.  We know that the optimal point for the monopolist is at the point where marginal revenue curve intersects the marginal cost curve.  Let's see if we can find it.
+ 
+```{r}
+
+tr <- tp <- tc <- rep(NA,length(op)) # Total revenue, total profit, total cost vectors
+
+```
+ 
+ \
+ 
+```{r}
+
+tr <- qd*op
+tp <- tr-tc
+ 
+minmax <- function(...) c(min(...),max(...))
+
+plot(minmax(op),minmax(tr,tp), type="n", ylab="Total Revenue - Blue, Total Profit - Red", 
+     xlab="Price", 
+     main="We can see optimal pricing for the monopolist is around 39 dollars")
+
+grid()
+abline(h=0, lwd=2)
+abline(v=39, col="red", lwd=2)
+lines(op,tr, col="blue", lwd=3)
+lines(op,tp, col="red", lwd=2)
+```
+ 
+He calculates total revenue and total profit for each price. 
+
+
+> We can see at the price around 18 which would be the optimal price for the consumer, the supplier is making almost no profits.
+ 
+>  The last thing we might wish to consider to Total Surplus or total system efficiency which is defined as that which the consumer benefits by purchasing a good below the consumers willingness to pay plus that of the suppliers profit at that price.
+ 
+```{r}
+
+cs <- tr
+for (i in 1:length(op)) cs[i] <- sum((wtp[wtp>=op[i]]-op[i]))
+ 
+tts <- cs+tp
+ 
+op[tts==max(tts)] # Check the optimatal societal price
+ 
+plot(c(min(op),max(op)),c(min(cs,tp),max(cs,tp)), type="n",
+     main="Optimal societal pricing is at\n mc=wtp which is $19",
+     xlab="Price",
+     ylab="purple=CS, blue=PS, black=TS")
+lines(op, cs, col="purple", lwd=2)
+lines(op, tp, col="blue", lwd=2)
+lines(op, tts, lwd=2)
+abline(h=0,col="red", lwd=2)
+
+```
+
+

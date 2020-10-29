@@ -9147,6 +9147,7 @@ Possible further questions tbd (unfold for possibilities)
 </div>
 
 ***
+
 **University of Exeter students**: You can find a simple video presentation of many of these concepts from my 2018 lecture below:
 
 <center>
@@ -9240,15 +9241,18 @@ Empirical analyses of price discrimination:
 
 ## Monopoly profit-maximisation: simple (undergraduate-level) take:
 
-A Monopoly is a single firm operating in a market without competition. Such a firm may incur an *Economic Profit*; a Monopoly situation can only be sustained by some [barriers to entry](#barriers), discussed below.
+A *monopoly* is a single firm operating in a market without competition. Such a firm may incur an *Economic Profit*; a monopoly situation can only be sustained by some [barriers to entry](#barriers), discussed below.
 
 \
 
 
-A monopoly firm, like all firms, will set it's quantity $Q$ to maximize it's profits $\pi(Q) \equiv QP(Q)-C(Q)$ where $P(Q)$ is the inverse demand (the maximum price that can be charged if a firm wants to sell quantity $Q$), and $C(Q)$ is the cost of producing $Q$.
+A monopoly firm, like all firms, will set it's quantity $Q$ to maximize it's profits $\pi(Q) \equiv QP(Q)-C(Q)$ where $P(Q)$ is the inverse demand (the maximum price that can be charged if a firm wants to sell quantity $Q$), and $C(Q)$ is the cost of producing $Q$. 
 
+\
 Under standard simple conditions, if the monopoly can only charge a single price, this  leads to the monopoly maximising it's profit by producing $Q$ such that $MR(Q) = MC(Q)$ (assuming $P>AC$).
 
+
+\
 
 Intuition:  the 'volume' benefit of increasing $Q$ is countered by
 
@@ -9259,10 +9263,18 @@ Intuition:  the 'volume' benefit of increasing $Q$ is countered by
 
 ### Graphically: Monopoly profit-max {-}
 
+<center>
+
+*Marginal cost, demand, marginal revenue, and quantity of a monopoly producer* 
+
+![](picsfigs/basic_monop_mcdl.jpg)
+
+</center>
 
 <div class="marginnote">
-Add graphical depiction here
+Image source: [McDL](https://saylordotorg.github.io/text_introduction-to-economic-analysis/s16-monopoly.html)
 </div>
+ 
 
 
 <!--
@@ -9282,6 +9294,7 @@ Add graphical depiction here
 Recall that a firm's revenue is Price $\times$ Quantity. This is depicted as a rectangle corresponding to a specific point on the demand curve facing the firm. \
 
 The firm's *profit* is this revenue less average cost. \
+
 MR tells you how the 'revenue rectangle' will increase (or decrease) with another unit. MC tells you the *cost* of this additional unit. \
 Where MR>MC, increasing quantity a little bit increases revenue more than costs, thus increasing profit.
 ```
@@ -9291,19 +9304,14 @@ This is depicted in the figures below:
 \
 
 <div class="marginnote">
-Add graphical depiction here
+Image source: [Wikimedia commons](https://commons.wikimedia.org/wiki/File:Imperfect_competition_in_the_short_run.svg)
 </div>
 
-<!--
-```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics(file.path("picsfigs","monopprofit3.png"))
+```{r  fig.cap = 'Monopoly pricing and profits', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
+knitr::include_graphics(file.path("picsfigs","wiki_File_Imperfect_competition_in_the_short_run.png"))
+
 ```
--->
-
-<div class="marginnote">
-**I plan to add a great deal of content here.**
-</div>
- 
 
 
 ```{block2,  type='warning'}
@@ -9326,19 +9334,20 @@ Again, remember that revenue is $P^*Q^*$ but costs at $Q^*$ are $Q^* \times AC$ 
 
 
 
+<!--
 <div class="marginnote">
 Add graphical depiction here
 </div>
 
-<!--
 ```{r  fig.cap = '', out.width='50%', fig.asp=.6, fig.align='center',  echo = FALSE}
  knitr::include_graphics(file.path("picsfigs","monopprofitmax.png"))
 ```
 
 -->
 
+\
 
-### 'No supply curve for a monopoly'
+### 'There is no supply curve for a monopoly!'
 
 A  'Supply curve': maps from p to q (and usually vice-versa) for a firm or industry
 
@@ -9353,16 +9362,56 @@ In contrast:
 
 A monopoly *chooses* price (thus also choosing quantity it can sell) where $MR(q)=mc(q)$
 
-- But MR(q) depends on the demand curve slope/curvature at q,
+- But $MR(q)$ depends on the demand curve slope/curvature at $q$,
 
-- so if demand curve changes it will affect the supply/pricing decision
+- so if the demand curve changes it will affect the supply/pricing decision
 
 
 ## Monopolistic market, profit-maximization: O-R formal depiction and advanced insights
 
-```{block2,  type='note'}
+<div class="marginnote">
 Content to be included/summarised here from O-R 7.1-7.2
-```
+</div>
+
+O-R formally define a monopolistic market. 
+
+<div class="marginnote">
+Note that they are defining the 'primitives' of such a market in a way that allows one to apply rigorous math proofs and (potentially) define an 'equilibrium'.
+</div>
+
+Their definition and approach is unusual because:
+
+1. They incorporate, from the beginning, a demand function $q_i(p_i)$ for each 'segment' $i$ ... allowing for the possibility of price discrimination (something which we will focus on).
+
+2. They let the producer have a 'preference' ($\succsim$), which may incorporate both profit and quantities sold in each segment. We will not focus on this: we will focus on the standard profit-maximisation goal. 
+
+<div class="marginnote">
+This second point is very interesting, but we've no time to address it now.  </div>
+ 
+
+```{block2,  type='def'}
+
+**Monopolistic market** 
+
+> A monopolistic market $\langle (q_i)^k_i=1, C, \succsim  \rangle$  for a single good has the following components:
+  
+(They are just specifying the 'objects defining a monopolistic market' here; they have not told us what these things are yet.)
+  
+> **Demand** 
+
+> The function $q_i$, the demand function in segment $i$, associates with every price $p_i$ for segment $i$ the total amount $q_i(p_i)$ of the good demanded in that segment.
+
+They note that these functions are 'decreasing' functions: this means that for higher values of the argument, the output of the function is *not* higher. In other words, we are considering demand functions that are decreasing, or at least not increasing in price. This rules out the 'Giffen' good, I believe. 
+
+> **Producer**
+> A single producer, called a monopolist, characterized by a cost function $C$ that is continuous and convex and satisfies $C(0) = 0$, 
+
+> and a preference relation $\succsim$ over pairs $((y_1,... , y_k), \pi)$, where $y_i$ is the quantity sold in segment $i$ for $i = 1,..., k$ and $\pi$ is the producer’s profit
+
+```   
+
+**More to be added here**
+
 
 ## Monopolies and 'allocative inefficiency' {#monop-inef}
 
@@ -9732,7 +9781,7 @@ There are some interesting results, such as 'the firm finds it optimal to make t
 ```
 
 
-<br> <br> \bigskip
+ \ 
 
 
 3. Group-based (Third degree; 'market separation')
@@ -10002,7 +10051,7 @@ Another depiction, adding demand curves (they call it 'average revenue'):
 - Firms can charge higher prices to high-wtp group without losing low-wtp group $\rightarrow$ increase profit
 
 
-<br> <br> \bigskip
+ \ 
 
 
 Net welfare result: theoretically uncertain. This is a nuanced point, but I think you are up to the challenge! This is *not* covered in the NS text, but I give several explanations and references.
@@ -10071,7 +10120,7 @@ If, e.g., elderly who get discounts could sell the products to the middle-aged..
 
 - Similar issues with quantity discounts, or 'web cookie' personalised pricing
 
-<br> <br> \bigskip
+\ 
 
 So PD only 'works' for goods that are hard to trade, like haircuts...
 
@@ -10085,7 +10134,6 @@ When I ask about the welfare effect of price discrimination, students often ment
 ```
 
 This yields another mechanism design 'hidden information' 'principal-agent problem'
-
 
 <!--chapter:end:monop_price.Rmd-->
 
