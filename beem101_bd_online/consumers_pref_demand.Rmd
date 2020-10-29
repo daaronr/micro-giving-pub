@@ -782,7 +782,7 @@ Recall that the  $\leftrightarrow$ symbol means 'if  and only if', i.e., the  ob
 
 \
 
-### Marginal rates of substitution {-}
+### Marginal rates of substitution {#mrs}
 
 O-R section 5.4 'Differentiable preferences'
 
@@ -1233,13 +1233,175 @@ Content to be added here, largely from pages 67-68 of O-R
 
 ```  
 
+
+Consider: Suppose a consumer is rational (chooses to maximise according to her preferences) and she has a monotone preference relation.
+
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.7, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/wiki_warp.png")
+
+```
+
+
+Consider the budget sets depicted above:^[Source: https://en.wikipedia.org/wiki/Revealed_preference#/media/File:Weak_Axiom_of_Revealed_Preferences.png]
+
+1. All points on or below the blue line ... budget set $B$
+2. All points on or below the green line ... budget set $B'$
+
+\
+
+```{block2,  type='inputq'}
+
+*Is it possible* that she would choose bundle $b$ in the (blue) budget set $B$, and that this same person choose bundle $a$ when faced with the (green) budget set $B'$?
+
+Would this contradict rationality and monotonicity?
+
+```  
+
+```{block2,  type='fold'}
+
+Indeed it would violate one or both of these. 
+
+It would violate what we define as the 'Weak Axiom of Revealed Preferences, as discussed below.
+
+```
+
+
+\
+
+*The main point*
+
+Note that both $b$ and $a$ were available in the (blue) budget set $B$. If she chose $b$ here, if she is optimizing, she must find it to be 'at least as good as $a$' ... $\b \succsim a$, according to her preferences. We will say that such a choice implies '$b$ is revealed directly weakly preferred to $a$, or '$b R^{D} a$'. (O-R say 'revealed at least as good'). 
+
+<div class="marginnote">
+The $R^{D}$ and $P^{D}$ notation comes from Varian 1992; it is not used in O-R.
+Note that Varian seems to define the WARP differently, saying that it rules out that both $A R^{D} B$ and $B R^{D} A$ when $A$ and $B$ are distinct bundles. I will stick with the  definition from O-R (also consistent with the current Wikipedia entry.)
+</div>
+
+/
+   
+Now note that in the (green) budget set $B'$, both $b$ and $a$ are again available. In fact now, we note that in the green budget set 'bundles with more of both goods than b' are available. 
+
+So if she now chooses $a$ this tells us that she prefers $a$ to *points with more of both goods than $b$'!* 
+
+<div class="marginnote">
+As O-R note: 
+
+> For example, if an individual purchases the bundle (2,0) when she could have purchased the bundle (0,2), then we conclude that she finds (2,0) at least as good as the bundle (0,2) and prefers (2,0) to (0,1.9)
+
+</div>
+ 
+ 
+Given monotonicity, this implies that she must *strictly prefer $a$ to $b$, i.e., $b \succ a$. We say that such a choice implies '$a$ is revealed strictly preferred to $b$.
+
+\
+
+Obviously, we cannot have that both $b \succsim a$  and $b \succ a$.  Thus, either she is not choosing rationally, or she is indifferent between $a$ and $b$ and her preferences are not monotonic. 
+
+
+
+\
+
+
+***
+
+**Some videos on this:** 
+
+<center>
+First consider 'mapping indifference curves':
+
+<iframe src="https://player.vimeo.com/video/297144175" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+</center>
+
+
+\
+
+<center>
+
+WARP: This is one of the few videos on Youtube that states it correctly. But it's too slow. Watch it in 2x speed. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LNfHYb-TiU4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</center>
+
+***
+
+\
+
+**From O-R:**
+
+First they define 'revealed preferred' and 'Revealed to be better than'
+
+
+
+```{block2,  type='def'}
+
+'Revealed at least as good'
+
+> Given the demand function $x$, the bundle $a$ is *revealed to be at least as
+good* as the bundle $b$ if for some prices $(p_1, p_2)$ and wealth $w$ the budget
+set $B((p_1, p_2), w)$ contains both $a$ and $b$ , and $x((p_1, p_2), w) = a$ . 
+
+
+\
+
+'Revealed to be better than'
+
+> The bundle $a$ is *revealed to be better than b* if for some prices *(p_1, p_2)* and wealth $w$ the budget set $B((p_1, p_2), w)$ contains both $a$ and $b$ , $p_1 b_1 + p_2 b_2 < w$, and $x((p_1, p_2), w) = a$ .
+
+
+
+```  
+
+
+\
+Next, the WARP is stated simply:
+
+```{block2,  type='def'}
+
+> A demand function satisfies the weak axiom of revealed preference (WARP) if for no bundles a and b, both a is revealed to be at least as good as b and b is revealed to be better than a .
+
+```  
+
+\
+
+Finally, they state and prove that this is a necessary condition for a demand function of a rational consumer (with monotonicity):
+
+```{block2,  type='def'}
+
+A demand function that is rationalized by a monotone preference relation
+satisfies the weak axiom of revealed preference.
+
+```  
+
+The proof of this is fairly simple (not covered here because of time and space concerns).
+
+
+\
+
+```{block2,  type='note'}
+
+We can extend the WARP to 'chains' of revealed preference, so called 'indirect revealed preferences'  This allows us to use sequences of choices to sketch out indifference curves for actual consumers. 
+
+There are also interesting ways to measure the 'extent' of violations of the revealed preference axioms. 
+
+See:
+   
+- Loomes, Graham, Chris Starmer, and Robert Sugden. "Observing violations of transitivity by experimental methods." Econometrica: Journal of the Econometric Society (1991): 425-439.
+
+- Choi, Syngjoo, et al. "Who is (more) rational?." The American Economic Review 104.6 (2014): 1518-1550.
+
+
+```  
+
 ## Properties of (Marshallian) demand functions {#demand-prop}
 
 ```{block2,  type='note'}
 
 This material is presented at a less advanced level than the previous material. I imagine for many of you, this will be revision, and feel free to skim it or skip it.
 
-More advanced material is considered [below
+More advanced material is considered further below.
 
 ```
 
@@ -1260,8 +1422,7 @@ The notation has changed here, to some extent.
 We will refer to her 'quantity demanded of good X' function (or more simply, her 'demand function') as follows:
 
 
-<br> <br> \bigskip
-
+<br> 
 $$Quantity \: of \: X \: demanded = d_x(P_X, P_Y, I; preferences)$$
 
 \
@@ -2185,7 +2346,6 @@ Possible further questions tbd (unfold for possibilities)
 
 - Finding departures from the WARP in real data
 
-\
 ```
 
 
