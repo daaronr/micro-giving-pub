@@ -726,11 +726,9 @@ Know how monotonicity rules out ‘bliss points’
 </div>
 <p>Simply, weak convexity implies that convex combinations of two distinct bundles, one at least as good as the other, is at least as good as the ‘weakly worse’ bundle.</p>
 <p>Strict convexity implies that this convex combination is <em>strictly preferred</em> to the ‘weakly worse’ worse bundle.</p>
-<p>Note that as <span class="math inline">\(\succsim\)</span> also holds (in both directions) for two bundles where <span class="math inline">\(a \sim b\)</span>, weak (strict) convexity implies that a convex combination of such bundles will also be at least as good as (better than) either bundle.</p>
+<p>Note that as <span class="math inline">\(\succsim\)</span> also holds (in both directions) for two bundles where <span class="math inline">\(a \sim b\)</span>, weak (strict) convexity implies that a convex combination of such bundles will also be at least as good as (better than) either bundle.*</p>
 <div class="marginnote">
 <p>Reading tip: when we make an mathematical statement and put multiple things in parentheses, you can read this sentence either ‘reading everything in parentheses’ or ‘reading none of the parentheses’.</p>
-<p><br />
-</p>
 <p>E.g., “In (New) York people should (not) drive on the left side of the road.”</p>
 </div>
 <p><br />
@@ -747,9 +745,9 @@ set <span class="math inline">\(\{x \in X : x \succsim x^{\ast}\}\)</span> … i
 </p>
 <p>In other words, it is the same as saying</p>
 <p>‘the set of all bundles at least as good as some bundle’ … (which we call the ‘upper contour set’) is a convex set.seed(</p>
-<p>A ‘convex set’ is a set that is ‘closed under convex combinations’, i.e., it contains all of its convex combinations. For any two elements in a convex set, the convex combination of these elements is in the set as well.</p>
+<p>A ‘convex set’ is a set that is ‘closed under convex combinations’, i.e., it contains all of its convex combinations. For any two elements in a convex set, the convex combination of these elements is in the set as well.*</p>
 <div class="marginnote">
-<p>Pretty easy to visualise for a set in 2 or 3 dimensional space … but much harder when we go to higher dimensions. Yet most of the proofs will indeed generalise to higher dimensions. Remember, when we are dealing with real-world products and bundles, we are dealing with many important dimensions. E.g., a box of cereal could be considered to be described by a vector (or list) of characteristics, including, sweetness, saltiness, crunch, calories, carbohydrates, etc…. all of which a consumer may care about</p>
+<p>A convex set is pretty easy to visualise for a set in 2 or 3 dimensional space … but much harder when we go to higher dimensions. Yet most of the proofs will indeed generalise to higher dimensions. Remember, when we are dealing with real-world products and bundles, we are dealing with many important dimensions. E.g., a box of cereal could be considered to be described by a vector (or list) of characteristics, including, sweetness, saltiness, crunch, calories, carbohydrates, etc…. all of which a consumer may care about</p>
 </div>
 </div>
 <p><br />
@@ -807,8 +805,7 @@ Convexity is a convenient assumption, but not one that is reasonable in all case
 <p><strong>How to show (mathematically) that preferences (and indifference curves are convex)?</strong></p>
 
 <div class="fold">
-<p>The answers <a href="https://www.quora.com/How-can-I-mathematically-prove-that-indifference-curves-are-convex-shaped-with-derivatives">here</a></p>
-<p>… by Abrink and Teytelboym appear correct. However, I do not want to get into this computational issue in this module. (However, it is covered in the ‘optimisation’ module).</p>
+<p>The answers <a href="https://www.quora.com/How-can-I-mathematically-prove-that-indifference-curves-are-convex-shaped-with-derivatives">here</a> … by Abrink and Teytelboym appear correct. However, I do not want to get into this computational issue in this module. (However, it is covered in the ‘optimisation’ module).</p>
 </div>
 <p><br />
 </p>
@@ -844,7 +841,7 @@ Convexity is a convenient assumption, but not one that is reasonable in all case
 <!-- I hope to add more content to be added here, including applications directly from the private sector.
 -->
 <p>Do people have a preference for balance? (Convex indifference curves)?</p>
-<p>Naive argument?: If market research suggests that a broad group are indifferent between two options A and C, maybe they strictly prefer G <span class="math inline">\(\rightarrow\)</span> a possible <em>niche</em> for a new profitable product ?</p>
+<p>Naive argument?: If market research suggests that a broad group are indifferent between two options A and C, maybe they strictly prefer G <span class="math inline">\(\rightarrow\)</span> a possible <em>niche</em> for a new profitable product?</p>
 <p><br></p>
 
 <div class="inputq">
@@ -869,10 +866,21 @@ This may also provide a structure to guide data-driven ‘searches for the next 
 </div>
 <p><br />
 </p>
-<p>One (often survey-based) approach to this is called ‘conjoint analysis’ or ‘conjoint modeling’. Consider: How would the assumptions of this approach, as described below, translate into microeconomic assumptions about choices and preferences? <em>Note: the site below states things in loose terms, for those without Economics training.</em></p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="consumers-dmd.html#cb12-1"></a>knitr<span class="op">::</span><span class="kw">include_url</span>(<span class="st">&quot;https://www.qresearchsoftware.com/conjoint-analysis-the-basics&quot;</span>)</span></code></pre></div>
-<iframe src="https://www.qresearchsoftware.com/conjoint-analysis-the-basics" width="80%" height="400px">
-</iframe>
+<p>One (often survey-based) approach to this is called ‘conjoint analysis’ or ‘conjoint modeling’. Consider: How would the assumptions of this approach, as described below, translate into microeconomic assumptions about choices and preferences?</p>
+<p><br />
+</p>
+<p><em>Note: the site <a href="https://www.qresearchsoftware.com/conjoint-analysis-the-basics">provided by ‘Qresearch’, part of a commercial firm</a> states things in loose terms, for those without Economics training.</em></p>
+<center>
+<p><img src="picsfigs/qresearch_conjoint.png" title="Qresearch on the basics of conjoint analysis" alt="MyToyBox" />](<a href="https://www.qresearchsoftware.com/conjoint-analysis-the-basics" class="uri">https://www.qresearchsoftware.com/conjoint-analysis-the-basics</a>)</p>
+</center>
+<!--
+
+```r
+knitr::include_url("https://www.qresearchsoftware.com/conjoint-analysis-the-basics")
+```
+
+<iframe src="https://www.qresearchsoftware.com/conjoint-analysis-the-basics" width="80%" height="400px"></iframe>
+-->
 <p><br />
 </p>
 </div>
@@ -1097,7 +1105,11 @@ good 2.</p>
 </div>
 <p>(Or see O-R fig 5.3)</p>
 <p><img src="picsfigs/crop-byui-5-2_Indifference_Curves_08.png" width="75%" style="display: block; margin: auto;" /></p>
-<p>Imagine that you are this consumer with these preferences and this budget constraint. You can choose any point at or below the straight blue line, as it is on or below your budget constraint. You want to get to the highest indifference curve, to attain the most utility.</p>
+<p>Imagine that you are this consumer with these preferences and this budget constraint. You can choose any point at or below the straight blue line, as it is on or below your budget constraint. You want to get to the highest indifference curve, to attain the most utility.*</p>
+<div class="marginnote">
+<p>* Again, this is material that you will have seen before if you have studied Economics. Feel free to skip this if you remember it all; the O-R text gives a concise explanation.</p>
+<p>As this is a bit remedial I will not cover it in detail. I suggest the <a href="https://www.khanacademy.org/economics-finance-domain/microeconomics/choices-opp-cost-tutorial/utility-maximization-with-indifference-curves/v/optimal-point-on-budget-line">Khan academy videos/materials here</a> if you need revision.</p>
+</div>
 <p><br />
 </p>
 
@@ -1109,13 +1121,6 @@ good 2.</p>
 <p>We can see B is suboptimal as it is on a lower indifference curve than A, but both are on the same budget line. Same for D.</p>
 <p>In fact, if we assumed even <em>weak monotonicity</em> we would already know that point A was preferred to point D.</p>
 <p>Points between A and B are also below the ‘<span class="math inline">\(U=100\)</span>’ indifference curve… again, with weak (or strict) monotonicity these must be inferior to point A (but superior to point B).</p>
-</div>
-<p><br />
-</p>
-
-<div class="note">
-<p>Again, this is material that you will have seen before if you have studied Economics. Feel free to skip this if you remember it all; the O-R text gives a concise explanation.</p>
-As this is a bit remedial I will not cover it in detail. I suggest the <a href="https://www.khanacademy.org/economics-finance-domain/microeconomics/choices-opp-cost-tutorial/utility-maximization-with-indifference-curves/v/optimal-point-on-budget-line">Khan academy videos/materials here</a> if you need revision.
 </div>
 <p><br> </p>
 <p>We can demonstrate that you will choose point A, yielding utility <span class="math inline">\(100\)</span>. What is special about point A?</p>
@@ -1281,7 +1286,7 @@ However, I can <em>not</em> apply this argument to a point where I am consuming 
 <li>i.e., the marginal utility of the first unit of <span class="math inline">\(x_1\)</span> is less than that of <span class="math inline">\(x_2\)</span>.</li>
 </ul>
 <p>The same condition applies to each good you are consuming a positive amount of.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-274"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-273"></span>
 <img src="picsfigs/goodwedontbuy.png" alt="From Autor notes" width="100%" />
 <p class="caption">
 Figure 4.3: From Autor notes
@@ -1435,12 +1440,11 @@ Figure 4.3: From Autor notes
 </div>
 <div id="warp" class="section level3" number="4.2.9">
 <h3><span class="header-section-number">4.2.9</span> (Weak axiom of) Revealed Preference</h3>
-
-<div class="note">
-<p>Content to be added here, largely from pages 67-68 of O-R</p>
+<div class="marginnote">
+<p>This comes largely from pages 67-68 of O-R.</p>
 </div>
-<p>Consider: Suppose a consumer is rational (chooses to maximise according to her preferences) and she has a monotone preference relation.</p>
-<p><img src="picsfigs/wiki_warp.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><em>Consider:</em> Suppose a consumer is rational (chooses to maximise according to her preferences) and she has a monotone preference relation.</p>
+<p><img src="picsfigs/wiki_warp.png" width="50%" style="display: block; margin: auto;" /></p>
 <p>Consider the budget sets depicted above:<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
 <ol style="list-style-type: decimal">
 <li>All points on or below the blue line … budget set <span class="math inline">\(B\)</span></li>
@@ -1460,13 +1464,14 @@ Figure 4.3: From Autor notes
 </div>
 <p><br />
 </p>
-<p><em>The main point</em></p>
-<p>Note that both <span class="math inline">\(b\)</span> and <span class="math inline">\(a\)</span> were available in the (blue) budget set <span class="math inline">\(B\)</span>. If she chose <span class="math inline">\(b\)</span> here, if she is optimizing, she must find it to be ‘at least as good as <span class="math inline">\(a\)</span>’ … <span class="math inline">\(\b \succsim a\)</span>, according to her preferences. We will say that such a choice implies ‘<span class="math inline">\(b\)</span> is revealed directly weakly preferred to <span class="math inline">\(a\)</span>, or’<span class="math inline">\(b R^{D} a\)</span>‘. (O-R say ’revealed at least as good’).</p>
+<p><strong>The main point</strong></p>
+<p>Note that both <span class="math inline">\(b\)</span> and <span class="math inline">\(a\)</span> were available in the (blue) budget set <span class="math inline">\(B\)</span>. If she chose <span class="math inline">\(b\)</span> here, if she is optimizing, she must find it to be ‘at least as good as <span class="math inline">\(a\)</span>’ … <span class="math inline">\(b \succsim a\)</span>, according to her preferences. We will say that such a choice implies ‘<span class="math inline">\(b\)</span> is revealed directly weakly preferred to <span class="math inline">\(a\)</span>, or’<span class="math inline">\(b R^{D} a\)</span>‘. (O-R say ’revealed at least as good’).</p>
 <div class="marginnote">
 <p>The <span class="math inline">\(R^{D}\)</span> and <span class="math inline">\(P^{D}\)</span> notation comes from Varian 1992; it is not used in O-R.
 Note that Varian seems to define the WARP differently, saying that it rules out that both <span class="math inline">\(A R^{D} B\)</span> and <span class="math inline">\(B R^{D} A\)</span> when <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are distinct bundles. I will stick with the definition from O-R (also consistent with the current Wikipedia entry.)</p>
 </div>
-<p>/</p>
+<p><br />
+</p>
 <p>Now note that in the (green) budget set <span class="math inline">\(B&#39;\)</span>, both <span class="math inline">\(b\)</span> and <span class="math inline">\(a\)</span> are again available. In fact now, we note that in the green budget set ‘bundles with more of both goods than b’ are available.</p>
 <p>So if she now chooses <span class="math inline">\(a\)</span> this tells us that she prefers <span class="math inline">\(a\)</span> to <em>points with more of both goods than <span class="math inline">\(b\)</span>’!</em></p>
 <div class="marginnote">
@@ -1475,12 +1480,8 @@ Note that Varian seems to define the WARP differently, saying that it rules out 
 <p>For example, if an individual purchases the bundle (2,0) when she could have purchased the bundle (0,2), then we conclude that she finds (2,0) at least as good as the bundle (0,2) and prefers (2,0) to (0,1.9)</p>
 </blockquote>
 </div>
-<p>Given monotonicity, this implies that she must *strictly prefer <span class="math inline">\(a\)</span> to <span class="math inline">\(b\)</span>, i.e., <span class="math inline">\(b \succ a\)</span>. We say that such a choice implies ’<span class="math inline">\(a\)</span> is revealed strictly preferred to <span class="math inline">\(b\)</span>.</p>
-<p><br />
-</p>
+<p>Given monotonicity, this implies that she must <em>strictly</em> prefer <span class="math inline">\(a\)</span> to <span class="math inline">\(b\)</span>, i.e., <span class="math inline">\(b \succ a\)</span>. We say that such a choice implies ’<span class="math inline">\(a\)</span> is revealed strictly preferred to <span class="math inline">\(b\)</span>.</p>
 <p>Obviously, we cannot have that both <span class="math inline">\(b \succsim a\)</span> and <span class="math inline">\(b \succ a\)</span>. Thus, either she is not choosing rationally, or she is indifferent between <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> and her preferences are not monotonic.</p>
-<p><br />
-</p>
 <hr />
 <p><strong>Some videos on this:</strong></p>
 <center>
@@ -1528,17 +1529,20 @@ Next, the WARP is stated simply:</p>
 <p>Finally, they state and prove that this is a necessary condition for a demand function of a rational consumer (with monotonicity):</p>
 
 <div class="def">
+<blockquote>
 <p>A demand function that is rationalized by a monotone preference relation
 satisfies the weak axiom of revealed preference.</p>
+</blockquote>
 </div>
+<p><br />
+</p>
 <p>The proof of this is fairly simple (not covered here because of time and space concerns).</p>
 <p><br />
 </p>
 
 <div class="note">
 <p>We can extend the WARP to ‘chains’ of revealed preference, so called ‘indirect revealed preferences’ This allows us to use sequences of choices to sketch out indifference curves for actual consumers.</p>
-<p>There are also interesting ways to measure the ‘extent’ of violations of the revealed preference axioms.</p>
-<p>See:</p>
+<p>There are also interesting ways to measure the ‘extent’ of violations of the revealed preference axioms. See:</p>
 <ul>
 <li><p>Loomes, Graham, Chris Starmer, and Robert Sugden. “Observing violations of transitivity by experimental methods.” Econometrica: Journal of the Econometric Society (1991): 425-439.</p></li>
 <li><p>Choi, Syngjoo, et al. “Who is (more) rational?.” The American Economic Review 104.6 (2014): 1518-1550.</p></li>
@@ -1550,9 +1554,10 @@ satisfies the weak axiom of revealed preference.</p>
 <h2><span class="header-section-number">4.3</span> Properties of (Marshallian) demand functions</h2>
 
 <div class="note">
-<p>This material is presented at a less advanced level than the previous material. I imagine for many of you, this will be revision, and feel free to skim it or skip it.</p>
-<p>More advanced material is considered further below.</p>
+<p>This material is presented at a less advanced level than the previous material. I imagine for many of you, this will be revision, and feel free to skim it or skip it. More advanced material is considered further below.</p>
 </div>
+<p><br />
+</p>
 <p>Previously, we considered how consumption choices determined by utility functions/indifference curves and budget constraints. We can now consider how an individual’s choice of a good varies with each element of her budget constraint: for income and the price of each good.</p>
 
 <div class="warning">
@@ -1711,7 +1716,7 @@ In other words, if you said to a consumer ‘this product will stop being produc
 </div>
 <p><br />
 </p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-301"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-299"></span>
 <img src="picsfigs/cons_surplus.png" alt="Source: Nicholson and Snyder, 2010" width="80%" />
 <p class="caption">
 Figure 4.4: Source: Nicholson and Snyder, 2010
@@ -1747,7 +1752,7 @@ Figure 4.4: Source: Nicholson and Snyder, 2010
 <p>With a linear demand curve this is a triangle, which has an area that is easy to compute. More generally, this is a ‘definite integral’.</p>
 <p><br> </p>
 <p><span class="math display">\[\int_{0}^{q^\ast}p(q)-p^\ast dq \]</span></p>
-<p>(where <span class="math inline">\(p(q)\)</span> is the inverse demand.</p>
+<p>(where <span class="math inline">\(p(q)\)</span> is the inverse demand).</p>
 <p><br> </p>
 <p>For welfare calculations, we often want to know ‘how does this integral change as we adjust some parameter’?</p>
 <p><span class="math inline">\(\rightarrow\)</span> See the <a href="https://brilliant.org/wiki/differentiate-through-the-integral/">(more general version of) the Leibniz rule for differentiating integrals.</a>, related to the ‘Fundamental theorem of calculus’.</p>
@@ -1760,9 +1765,7 @@ Figure 4.4: Source: Nicholson and Snyder, 2010
 <dd>The total quantity of a good or service demanded by all potential buyers
 </dd>
 </dl>
-<ul>
-<li>This just sums the individual quantities demanded (at a given price)</li>
-</ul>
+<p>This just sums the individual quantities demanded (at a given price)</p>
 <p><br> </p>
 <dl>
 <dt>Market demand curve</dt>
@@ -1775,7 +1778,7 @@ Figure 4.4: Source: Nicholson and Snyder, 2010
 <div class="marginnote">
 <p>Image source: McAfee et al, Introduction to Economic Analysis v. 2.1, chapter 2.3</p>
 </div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-304"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-302"></span>
 <img src="picsfigs/individual_to_mkt_dmd-mcafee.png" alt="McAfee et al: Individual demand aggregates to market demand" width="70%" />
 <p class="caption">
 Figure 4.5: McAfee et al: Individual demand aggregates to market demand
@@ -1846,7 +1849,7 @@ However, the aggregate income does not have a single effect; it cannot be easily
 <li><p>estimated using log transformations*</p></li>
 </ul>
 <div class="marginnote">
-<p>But see Santos-Silva’s 2006 warning about this.</p>
+<p>* But see Santos-Silva’s 2006 warning about this.</p>
 </div>
 <p><br />
 </p>
@@ -1951,7 +1954,7 @@ Todo: give more explanation here
 <p><br />
 </p>
 <p>Consider an individual’s expenditure on a product.</p>
-<p>The total expenditure (the firm’s revenue from this): price <span class="math inline">\(\times\)</span> quantity</p>
+<p>The total expenditure (which will equal the firms’ revenue from this): price <span class="math inline">\(\times\)</span> quantity = Expenditure (<span class="math inline">\(E\)</span>)</p>
 <p>By taking the <em>total differential</em> of this and recalling the ‘multiplication rule’ of derivatives…</p>
 <p><span class="math display">\[E = p(q)q  = pq(p)\]</span>
 <span class="math display">\[dE = pq&#39;(p)dp+q(p)dp\]</span>

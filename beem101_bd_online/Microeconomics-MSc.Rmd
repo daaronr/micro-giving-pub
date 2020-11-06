@@ -7001,12 +7001,10 @@ Simply, weak convexity implies that convex combinations of two distinct bundles,
 
 Strict convexity implies that this convex combination is *strictly preferred* to the 'weakly worse' worse bundle. 
 
-Note that as $\succsim$ also holds (in both directions) for two bundles where $a \sim b$, weak (strict) convexity implies that a convex combination of such bundles will also be at least as good as (better than) either bundle. 
+Note that as $\succsim$ also holds (in both directions) for two bundles where $a \sim b$, weak (strict) convexity implies that a convex combination of such bundles will also be at least as good as (better than) either bundle.\*
 
 <div class="marginnote">
 Reading tip: when we make an mathematical statement and put  multiple things in parentheses, you can read this sentence either 'reading everything in parentheses' or 'reading none of the parentheses'.
-
-\
 
 E.g., "In (New) York people should (not) drive on the left side of the road."
 
@@ -7031,10 +7029,10 @@ In other words, it is the same as saying
 
 'the set of all bundles at least as good as some bundle' ... (which we call the 'upper contour set') is a convex set.seed(
 
-A 'convex set' is a set that is 'closed under convex combinations', i.e., it contains  all of its convex combinations. For any two elements in a convex set, the convex combination of these elements is in the set as well. 
+A 'convex set' is a set that is 'closed under convex combinations', i.e., it contains  all of its convex combinations. For any two elements in a convex set, the convex combination of these elements is in the set as well.\*
 
 <div class="marginnote">
-Pretty easy to visualise for a set in 2 or 3 dimensional space ... but much harder when we go to higher dimensions. Yet most of the proofs will indeed generalise to higher dimensions. Remember, when we are dealing with real-world products and bundles, we are dealing with many important dimensions. E.g., a box of cereal could be considered to be described by a vector (or list) of characteristics, including, sweetness, saltiness, crunch, calories, carbohydrates, etc.... all of which a consumer may care about
+A convex set is pretty easy to visualise for a set in 2 or 3 dimensional space ... but much harder when we go to higher dimensions. Yet most of the proofs will indeed generalise to higher dimensions. Remember, when we are dealing with real-world products and bundles, we are dealing with many important dimensions. E.g., a box of cereal could be considered to be described by a vector (or list) of characteristics, including, sweetness, saltiness, crunch, calories, carbohydrates, etc.... all of which a consumer may care about
 </div>
  
 ```      
@@ -7113,9 +7111,7 @@ In these cases is easy to see why I may prefer 'a lot of A or B' over 'a medium 
 
 ```{block2,  type='fold'}
 
-The answers [here](https://www.quora.com/How-can-I-mathematically-prove-that-indifference-curves-are-convex-shaped-with-derivatives)
-
-... by Abrink and Teytelboym appear correct. However, I do not want to get into this computational issue in this module. (However, it is covered in the 'optimisation' module).
+The answers [here](https://www.quora.com/How-can-I-mathematically-prove-that-indifference-curves-are-convex-shaped-with-derivatives) ... by Abrink and Teytelboym appear correct. However, I do not want to get into this computational issue in this module. (However, it is covered in the 'optimisation' module).
 
  
 ```
@@ -7163,7 +7159,7 @@ However,  do have a look at O-R figure 4.5  to get a sense of what differentiabi
 
 Do people have a preference for balance? (Convex indifference curves)?
 
-Naive argument?: If market research suggests that a broad group are indifferent between two options A and C, maybe they strictly prefer G  $\rightarrow$ a possible *niche* for a new profitable product ?
+Naive argument?: If market research suggests that a broad group are indifferent between two options A and C, maybe they strictly prefer G  $\rightarrow$ a possible *niche* for a new profitable product?
 
 <br>
 
@@ -7201,13 +7197,26 @@ This may also provide a structure to guide data-driven 'searches for the next be
 
 \
 
-One (often survey-based) approach to this is called 'conjoint analysis' or 'conjoint modeling'.  Consider: How would the assumptions of this approach, as described below, translate into microeconomic assumptions about choices and preferences? *Note: the site below states things in loose terms, for those without Economics training.*
+One (often survey-based) approach to this is called 'conjoint analysis' or 'conjoint modeling'.  Consider: How would the assumptions of this approach, as described below, translate into microeconomic assumptions about choices and preferences? 
+
+\
+
+*Note: the site [provided by  'Qresearch', part of a commercial firm](https://www.qresearchsoftware.com/conjoint-analysis-the-basics) states things in loose terms, for those without Economics training.*
 
 
+
+<center>
+
+![MyToyBox](picsfigs/qresearch_conjoint.png "Qresearch on the basics of conjoint analysis")](https://www.qresearchsoftware.com/conjoint-analysis-the-basics)
+
+</center>
+
+<!--
 ```{r}
+
 knitr::include_url("https://www.qresearchsoftware.com/conjoint-analysis-the-basics")
 ```
-
+-->
 
 \
 
@@ -7524,7 +7533,14 @@ Image Source: https://courses.byui.edu/econ_150/econ_150_old_site/lesson_05.htm
  knitr::include_graphics(file.path("picsfigs","crop-byui-5-2_Indifference_Curves_08.png"))
 ```
 
-Imagine that you are this consumer with these preferences and this budget constraint. You can choose any point at or below the straight blue line, as it is on or below your budget constraint. You want to get to the highest indifference curve, to attain the most utility.
+Imagine that you are this consumer with these preferences and this budget constraint. You can choose any point at or below the straight blue line, as it is on or below your budget constraint. You want to get to the highest indifference curve, to attain the most utility.\*
+
+<div class="marginnote">
+ 
+\* Again, this is material that you will have seen before if you have studied Economics. Feel free to skip this if you remember it all; the O-R text gives a concise explanation.
+
+As this is a bit remedial I will not cover it in detail. I suggest the [Khan academy videos/materials here](https://www.khanacademy.org/economics-finance-domain/microeconomics/choices-opp-cost-tutorial/utility-maximization-with-indifference-curves/v/optimal-point-on-budget-line) if you need revision.
+</div>
 
 \
 
@@ -7543,16 +7559,7 @@ Points between A and B are also below the '$U=100$' indifference curve... again,
 
 ```
 
-\
 
-
-
-```{block2,  type='note'}
-
-Again, this is material that you will have seen before if you have studied Economics. Feel free to skip this if you remember it all; the O-R text gives a concise explanation.
-
-As this is a bit remedial I will not cover it in detail. I suggest the [Khan academy videos/materials here](https://www.khanacademy.org/economics-finance-domain/microeconomics/choices-opp-cost-tutorial/utility-maximization-with-indifference-curves/v/optimal-point-on-budget-line) if you need revision.
-```
 
 <br> \bigskip
 
@@ -8012,17 +8019,14 @@ We already considered 'rationalizability of a choice function' ... so I won't co
 
 ### (Weak axiom of) Revealed Preference {#warp}
 
-```{block2,  type='note'}
-
-Content to be added here, largely from pages 67-68 of O-R
-
-```  
-
-
-Consider: Suppose a consumer is rational (chooses to maximise according to her preferences) and she has a monotone preference relation.
+<div class="marginnote">
+This comes largely from pages 67-68 of O-R.
+</div>
+ 
+*Consider:* Suppose a consumer is rational (chooses to maximise according to her preferences) and she has a monotone preference relation.
 
 
-```{r  fig.cap = '', out.width='70%', fig.asp=.7, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='50%', fig.asp=5, fig.align='center',  echo = FALSE}
  knitr::include_graphics("picsfigs/wiki_warp.png")
 
 ```
@@ -8054,16 +8058,16 @@ It would violate what we define as the 'Weak Axiom of Revealed Preferences, as d
 
 \
 
-*The main point*
+**The main point**
 
-Note that both $b$ and $a$ were available in the (blue) budget set $B$. If she chose $b$ here, if she is optimizing, she must find it to be 'at least as good as $a$' ... $\b \succsim a$, according to her preferences. We will say that such a choice implies '$b$ is revealed directly weakly preferred to $a$, or '$b R^{D} a$'. (O-R say 'revealed at least as good'). 
+Note that both $b$ and $a$ were available in the (blue) budget set $B$. If she chose $b$ here, if she is optimizing, she must find it to be 'at least as good as $a$' ... $b \succsim a$, according to her preferences. We will say that such a choice implies '$b$ is revealed directly weakly preferred to $a$, or '$b R^{D} a$'. (O-R say 'revealed at least as good'). 
 
 <div class="marginnote">
 The $R^{D}$ and $P^{D}$ notation comes from Varian 1992; it is not used in O-R.
 Note that Varian seems to define the WARP differently, saying that it rules out that both $A R^{D} B$ and $B R^{D} A$ when $A$ and $B$ are distinct bundles. I will stick with the  definition from O-R (also consistent with the current Wikipedia entry.)
 </div>
 
-/
+\
    
 Now note that in the (green) budget set $B'$, both $b$ and $a$ are again available. In fact now, we note that in the green budget set 'bundles with more of both goods than b' are available. 
 
@@ -8077,15 +8081,11 @@ As O-R note:
 </div>
  
  
-Given monotonicity, this implies that she must *strictly prefer $a$ to $b$, i.e., $b \succ a$. We say that such a choice implies '$a$ is revealed strictly preferred to $b$.
+Given monotonicity, this implies that she must *strictly* prefer $a$ to $b$, i.e., $b \succ a$. We say that such a choice implies '$a$ is revealed strictly preferred to $b$.
 
-\
 
 Obviously, we cannot have that both $b \succsim a$  and $b \succ a$.  Thus, either she is not choosing rationally, or she is indifferent between $a$ and $b$ and her preferences are not monotonic. 
 
-
-
-\
 
 
 ***
@@ -8155,10 +8155,12 @@ Finally, they state and prove that this is a necessary condition for a demand fu
 
 ```{block2,  type='def'}
 
-A demand function that is rationalized by a monotone preference relation
+> A demand function that is rationalized by a monotone preference relation
 satisfies the weak axiom of revealed preference.
 
 ```  
+
+\
 
 The proof of this is fairly simple (not covered here because of time and space concerns).
 
@@ -8169,14 +8171,11 @@ The proof of this is fairly simple (not covered here because of time and space c
 
 We can extend the WARP to 'chains' of revealed preference, so called 'indirect revealed preferences'  This allows us to use sequences of choices to sketch out indifference curves for actual consumers. 
 
-There are also interesting ways to measure the 'extent' of violations of the revealed preference axioms. 
-
-See:
+There are also interesting ways to measure the 'extent' of violations of the revealed preference axioms. See:
    
 - Loomes, Graham, Chris Starmer, and Robert Sugden. "Observing violations of transitivity by experimental methods." Econometrica: Journal of the Econometric Society (1991): 425-439.
 
 - Choi, Syngjoo, et al. "Who is (more) rational?." The American Economic Review 104.6 (2014): 1518-1550.
-
 
 ```  
 
@@ -8184,11 +8183,11 @@ See:
 
 ```{block2,  type='note'}
 
-This material is presented at a less advanced level than the previous material. I imagine for many of you, this will be revision, and feel free to skim it or skip it.
-
-More advanced material is considered further below.
+This material is presented at a less advanced level than the previous material. I imagine for many of you, this will be revision, and feel free to skim it or skip it. More advanced material is considered further below.
 
 ```
+
+\
 
 Previously, we considered how consumption choices determined by utility functions/indifference curves and budget constraints.  We can now consider how an individual's choice of a good  varies with  each element of her budget constraint:  for income and the price of each good.
 
@@ -8458,7 +8457,7 @@ With a linear demand curve this is a triangle, which has an area that is easy to
 
 $$\int_{0}^{q^\ast}p(q)-p^\ast dq $$
 
-(where $p(q)$ is the inverse demand.
+(where $p(q)$ is the inverse demand).
 
 <br> \bigskip
 
@@ -8475,7 +8474,7 @@ $\rightarrow$ See the [(more general version of) the Leibniz rule for differenti
 Market demand (or better, 'market quantity demanded')
 :     The total quantity of a good or service demanded by all potential buyers
 
-- This just sums the individual quantities demanded (at a given price)
+This just sums the individual quantities demanded (at a given price)
 
 
 <br> \bigskip
@@ -8576,7 +8575,7 @@ Actually, this, and its subtleties and interpretations is one of the *most* impo
 - estimated using log transformations\* 
 
 <div class="marginnote">
-But see Santos-Silva’s 2006 warning about this.
+\* But see Santos-Silva’s 2006 warning about this.
 
 </div>
  
@@ -8688,7 +8687,7 @@ Note that sometimes elasticities are expressed in absolute value terms (a positi
 
 Consider an individual's  expenditure on a product.
 
-The total expenditure (the firm's revenue from this): price $\times$ quantity
+The total expenditure (which will equal the firms' revenue from this): price $\times$ quantity = Expenditure ($E$)
 
 
 By taking the *total differential* of this  and recalling the 'multiplication rule' of derivatives...
