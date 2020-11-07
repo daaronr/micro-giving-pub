@@ -422,7 +422,7 @@ One (often survey-based) approach to this is called 'conjoint analysis' or 'conj
 
 <center>
 
-![MyToyBox](picsfigs/qresearch_conjoint.png "Qresearch on the basics of conjoint analysis")](https://www.qresearchsoftware.com/conjoint-analysis-the-basics)
+[![MyToyBox](picsfigs/qresearch_conjoint.png "Qresearch on the basics of conjoint analysis")]](https://www.qresearchsoftware.com/conjoint-analysis-the-basics)
 
 </center>
 
@@ -1727,7 +1727,9 @@ Shifts in the market demand curve are caused by similar things that cause indivi
 - Change in tastes
 
 ```{block2,  type='technote'}
+
 However, the aggregate income does not have a single effect; it cannot be easily reduced to a single variable here. You can only express the demand curve as a function of aggregate income under restrictive assumptions. In general, it depends *who* gets this income. (See 'aggregation issues').
+
 ```
 
 (In addition, the market demand curve could shift out if more consumers enter the market, e.g., because of demographic change.)
@@ -1788,6 +1790,8 @@ Actually, this, and its subtleties and interpretations is one of the *most* impo
 - calculate in terms of derivatives
 
 - estimated using log transformations\* 
+
+(There is a decent video explaining how to interpret these regressions [here](https://www.youtube.com/watch?v=73jA1PG9B0Y), and another one [here](https://www.youtube.com/watch?v=aXBFKKh54Es) but you need to recall what is meant by 'total differentiation'.)
 
 <div class="marginnote">
 \* But see Santos-Silva’s 2006 warning about this.
@@ -2018,6 +2022,14 @@ Image source: Nicholson and Snyder, 2010
 
 ## Income elasticity of demand; Normal, luxury, and inferior goods {#income-elast}
 
+
+```{block2,  type='note'}
+
+[This video](https://www.youtube.com/watch?v=T_W16lKj4fM) offers a good explanation of neccesity and luxury goods, and how this concept relates to inferior and normal goods.
+
+```  
+
+
 Income elasticity of demand
 :      \% change in quantity demanded of a good in response to 1\% change in income (approximately).
 
@@ -2114,7 +2126,29 @@ in
 Consumer chooses $\mathbf{x}(\mathbf{p},I)\in B$; Marshallian demands.
 
 \
-The graph of $x_i(\mathbf{p},I)$ in $I$ is the 'Engel curve'.
+The graph of $x_i(\mathbf{p},I)$ in $I$ is the 'Engel curve'. The Engel curve simply depicts how quantity demanded of one good increases in (an individual's) income, holding all else constant.
+
+Graphing the Engel curve (some links):
+
+```{block2,  type='fold'}
+
+Some decent youtube videos on this, in a simple form  We see the graphical derivation of an Engel curve 
+
+- For a neccesity (i.e., a non-luxury) good [here](https://www.youtube.com/watch?v=fh6RvLH7Q1Q&t=27s)
+
+- for a normal good (remember, an inferior good is also a neccesity, but not necessarily vice versa) [here](https://www.youtube.com/watch?v=4jQNvDq29Tg).
+
+- And for a luxury good [here](https://www.youtube.com/watch?v=kPRjGuOwMsc&t=114s) (remember, a luxury good is also a normal good, but not necessarily vice versa)
+
+
+He presents the indifference curves and then 'Income consumption curve'... the optimizing choice of each of two goods as income increases. Next, he plots this for one good only, yielding the 'Engel curve'. 
+
+Notice how the Engel curve gets steeper for a necessary good, but gets shallower for a luxury good. For an inferior good, it has a negative slope.
+
+Of course the response to changes in income need not be constant throughout the whole range ... a good can even be inferior in one range and luxury within another range of income.
+
+```
+
 
 \
 
@@ -2142,6 +2176,9 @@ Can you write the 'own price elasticity' in this notation?
 ```  
 
 ```{block2,  type='fold'}
+
+Similarly, ...
+
 $\epsilon_i \equiv \frac{\partial x_i}{\partial p_j} / \frac{x_i}{p_j} $
 
 ```

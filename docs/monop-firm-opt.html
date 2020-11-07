@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
 
 
-<meta name="date" content="2020-11-06" />
+<meta name="date" content="2020-11-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -591,24 +591,41 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="price-discrimination-in-the-media-and-public-debate" class="section level3 unnumbered" number="">
 <h3>Price discrimination in the media and public debate</h3>
-<p><a href="https://itunes.apple.com/us/podcast/money-box/id263570678?mt=2&amp;i=1000379397237">Moneybox</a></p>
+<p><em>Some interesting content to bring these concepts alive</em></p>
+
+<div class="fold">
+<p><a href="http://www.bbc.co.uk/programmes/b086kf1b">Moneybox (fixed link)</a></p>
 <div class="marginnote">
 <p>This podcast contains many mis-statements; can you identify them?</p>
 </div>
+</div>
+<p><br />
+</p>
+<p><em>Some of my own non-technical writing on this topic:</em></p>
+
+<div class="fold">
 <ul>
-<li><p>Article: <a href="https://theconversation.com/should-we-help-companies-tailor-prices-to-your-wage-packet-47719">Should we help companies tailor prices to your wage packet?</a></p>
+<li>Article: <a href="https://theconversation.com/should-we-help-companies-tailor-prices-to-your-wage-packet-47719">Should we help companies tailor prices to your wage packet?</a>
 <ul>
 <li>With accompanying <a href="https://docs.google.com/document/d/16jos_PT9w1wGpyD5A8ZiWJ9HW6kaLOJH6EWc_AYWnkk/pub">worked examples</a></li>
 </ul></li>
-<li><p>Somewhat more advanced: ‘The Government May Want to Encourage Price Discrimination by Income’ <a href="https://davidreinstein.wordpress.com/research-and-publications/">Linked here</a></p></li>
-<li><p>Teaching discussion; insightful <span class="citation">(Marsden and Sibly <a href="#ref-Marsden2011" role="doc-biblioref">2011</a>)</span></p></li>
+<li>Somewhat more advanced: ‘The Government May Want to Encourage Price Discrimination by Income’ <a href="https://davidreinstein.wordpress.com/research-and-publications/">Linked here</a></li>
+</ul>
+</div>
+<ul>
+<li>Teaching discussion; insightful: <span class="citation">(Marsden and Sibly <a href="#ref-Marsden2011" role="doc-biblioref">2011</a>)</span></li>
 </ul>
 <p><br />
 </p>
 </div>
 <div id="material-from-data-science-and-industry-pricing-practice" class="section level3 unnumbered" number="">
 <h3>Material from data science and industry pricing practice</h3>
-<p>See “Marketing” chapter in <a href="https://bookdown.org/jeffreytmonroe/business_analytics_with_r7/">Business analytics with R</a></p>
+<div class="marginnote">
+<p>I want to add more here</p>
+</div>
+<p>See “Marketing” chapter in <a href="https://bookdown.org/jeffreytmonroe/business_analytics_with_r7/">Business analytics with R</a> (Note, this needs some clarification)</p>
+<p><br />
+</p>
 </div>
 <div id="peer-reviewed-academic-work" class="section level3 unnumbered" number="">
 <h3>Peer-reviewed academic work</h3>
@@ -623,26 +640,45 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="monopoly-profit-maximisation-simple-undergraduate-level-take" class="section level2" number="5.2">
 <h2><span class="header-section-number">5.2</span> Monopoly profit-maximisation: simple (undergraduate-level) take:</h2>
-<p>A <em>monopoly</em> is a single firm operating in a market without competition. Such a firm may incur an <em>Economic Profit</em>; a monopoly situation can only be sustained by some <a href="monop-firm-opt.html#barriers">barriers to entry</a>, discussed below.</p>
+A <em>monopoly</em> is a single firm operating in a market without competition. Such a firm may gain an <em>Economic Profit</em> *;
+<div class="marginnote">
+An economic profit is the revenue minus costs, where the costs <em>include</em> normal returns to the capital invested in the project. You should be clear on this basic and fundamental (undergraduate) concept.
+</div>
+<p>a monopoly situation can only be sustained by some <a href="monop-firm-opt.html#barriers">barriers to entry</a>, discussed below.</p>
 <p><br />
 </p>
 <p>A monopoly firm, like all firms, will set it’s quantity <span class="math inline">\(Q\)</span> to maximize it’s profits <span class="math inline">\(\pi(Q) \equiv QP(Q)-C(Q)\)</span> where <span class="math inline">\(P(Q)\)</span> is the inverse demand (the maximum price that can be charged if a firm wants to sell quantity <span class="math inline">\(Q\)</span>), and <span class="math inline">\(C(Q)\)</span> is the cost of producing <span class="math inline">\(Q\)</span>.</p>
 <p><br />
-Under standard simple conditions, if the monopoly can only charge a single price, this leads to the monopoly maximising it’s profit by producing <span class="math inline">\(Q\)</span> such that <span class="math inline">\(MR(Q) = MC(Q)\)</span> (assuming <span class="math inline">\(P&gt;AC\)</span>).</p>
+</p>
+<p>Under standard simple conditions, if the monopoly can only charge a single price, this leads to the monopoly maximising it’s profit by producing <span class="math inline">\(Q\)</span> such that <span class="math inline">\(MR(Q) = MC(Q)\)</span> (assuming <span class="math inline">\(P&gt;AC\)</span>).</p>
+<p>This is because under these simple conditions, we simply need to take the ‘first order condition’ … i.e., to find the profit-maximising quantity <span class="math inline">\(argmax_{Q} \Big(QP(Q)-C(Q)\Big)\)</span> we find the point where the slope in <span class="math inline">\(Q\)</span> (the derivative is zero), so <span class="math inline">\(P(Q)+QP&#39;(Q) + C&#39;(Q) = 0\)</span>.</p>
+<div class="marginnote">
+<p>Marginal revenue is the rate at which revenue (<span class="math inline">\(QP(Q)\)</span>) changes in quantity, which is thus <span class="math inline">\(P(Q)+QP&#39;(Q)\)</span>.</p>
+</div>
 <p><br />
 </p>
 <p>Intuition: the ‘volume’ benefit of increasing <span class="math inline">\(Q\)</span> is countered by</p>
-<ul>
-<li>Greater cost (producing more always costs more)</li>
+<ol style="list-style-type: decimal">
+<li>Greater cost (producing more always costs more) and</li>
 <li>The need to reduce price (on all units) to get people to buy it</li>
-</ul>
+</ol>
+<p><br />
+</p>
+<p>For a linear demand curve the marginal revenue will have a slope of twice of the inverse demand curve, and the same intercept (see computation below). See <a href="https://youtu.be/IEjcTLPtTIY">HERE</a> for a very simple and clear depiction of monopoly profit maximization with a linear demand curve (and only a bit of oversimplification.)</p>
+
+<div class="fold">
+<p>Suppose <span class="math inline">\(Q = \alpha - \frac{1}{\beta} P\)</span>, so
+<span class="math inline">\(P = \alpha\beta - \beta Q\)</span></p>
+<p>Then revenue is <span class="math inline">\(PQ = \alpha\beta Q - \beta Q^2\)</span> so
+<span class="math inline">\(MR = \alpha\beta - 2\beta Q\)</span>, as noted, twice the slope of the inverse demand curve</p>
+</div>
 <p><br />
 </p>
 <div id="graphically-monopoly-profit-max" class="section level3 unnumbered" number="">
 <h3>Graphically: Monopoly profit-max</h3>
 <center>
 <p><em>Marginal cost, demand, marginal revenue, and quantity of a monopoly producer</em></p>
-<p><img src="picsfigs/basic_monop_mcdl.jpg" /></p>
+<p><img src="picsfigs/basic_monop_mcdl.jpg" style="width:50.0%" /></p>
 </center>
 <div class="marginnote">
 <p>Image source: <a href="https://saylordotorg.github.io/text_introduction-to-economic-analysis/s16-monopoly.html">McDL</a></p>
@@ -660,16 +696,19 @@ Under standard simple conditions, if the monopoly can only charge a single price
 </p>
 <p>The firm’s <em>profit</em> is this revenue less average cost.<br />
 </p>
-MR tells you how the ‘revenue rectangle’ will increase (or decrease) with another unit. MC tells you the <em>cost</em> of this additional unit.<br />
+<p>MR tells you how the ‘revenue rectangle’ will increase (or decrease) with another unit. MC tells you the <em>cost</em> of this additional unit.<br />
+</p>
 Where MR&gt;MC, increasing quantity a little bit increases revenue more than costs, thus increasing profit.
 </div>
+<p><br />
+</p>
 <p>This is depicted in the figures below:</p>
 <p><br />
 </p>
 <div class="marginnote">
 <p>Image source: <a href="https://commons.wikimedia.org/wiki/File:Imperfect_competition_in_the_short_run.svg">Wikimedia commons</a></p>
 </div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-325"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-330"></span>
 <img src="picsfigs/wiki_File_Imperfect_competition_in_the_short_run.png" alt="Monopoly pricing and profits" width="60%" />
 <p class="caption">
 Figure 5.1: Monopoly pricing and profits
@@ -677,7 +716,7 @@ Figure 5.1: Monopoly pricing and profits
 </div>
 
 <div class="warning">
-<p>Be careful here:<br />
+<p><em>Be careful here:</em><br />
 </p>
 The price the monopoly can get at quantity <span class="math inline">\(Q^*\)</span> is <span class="math inline">\(P^*\)</span><br />
 … to see the price charged you need to ‘project up’ to the <em>demand</em> curve NOT the MR curve.
@@ -702,14 +741,13 @@ Add graphical depiction here
 </div>
 <div id="there-is-no-supply-curve-for-a-monopoly" class="section level3" number="5.2.1">
 <h3><span class="header-section-number">5.2.1</span> ‘There is no supply curve for a monopoly!’</h3>
-<p>A ‘Supply curve’: maps from p to q (and usually vice-versa) for a firm or industry</p>
-<p>This is not <em>affected</em> by demand, only by the costs and number of firms</p>
+<p>A ‘Supply curve’: maps from p to q (and usually vice-versa) for a firm or industry This is not <em>affected</em> by demand, only by the costs and number of firms</p>
 <p><br></p>
-<p>In contrast:</p>
+<p><em>In contrast:</em></p>
 <p>A monopoly <em>chooses</em> price (thus also choosing quantity it can sell) where <span class="math inline">\(MR(q)=mc(q)\)</span></p>
 <ul>
-<li><p>But <span class="math inline">\(MR(q)\)</span> depends on the demand curve slope/curvature at <span class="math inline">\(q\)</span>,</p></li>
-<li><p>so if the demand curve changes it will affect the supply/pricing decision</p></li>
+<li>But <span class="math inline">\(MR(q)\)</span> depends on the demand curve slope/curvature at <span class="math inline">\(q\)</span>,</li>
+<li>so if the demand curve changes it will affect the supply/pricing decision</li>
 </ul>
 </div>
 </div>
@@ -718,11 +756,10 @@ Add graphical depiction here
 <div class="marginnote">
 <p>Content to be included/summarised here from O-R 7.1-7.2</p>
 </div>
-<p>O-R formally define a monopolistic market.</p>
+<p>O-R formally define a monopolistic market. Their definition and approach is unusual because:</p>
 <div class="marginnote">
 <p>Note that they are defining the ‘primitives’ of such a market in a way that allows one to apply rigorous math proofs and (potentially) define an ‘equilibrium’.</p>
 </div>
-<p>Their definition and approach is unusual because:</p>
 <ol style="list-style-type: decimal">
 <li><p>They incorporate, from the beginning, a demand function <span class="math inline">\(q_i(p_i)\)</span> for each ‘segment’ <span class="math inline">\(i\)</span> … allowing for the possibility of price discrimination (something which we will focus on).</p></li>
 <li><p>They let the producer have a ‘preference’ (<span class="math inline">\(\succsim\)</span>), which may incorporate both profit and quantities sold in each segment. We will not focus on this: we will focus on the standard profit-maximisation goal.</p></li>
@@ -743,7 +780,7 @@ This second point is very interesting, but we’ve no time to address it now.
 <blockquote>
 <p>The function <span class="math inline">\(q_i\)</span>, the demand function in segment <span class="math inline">\(i\)</span>, associates with every price <span class="math inline">\(p_i\)</span> for segment <span class="math inline">\(i\)</span> the total amount <span class="math inline">\(q_i(p_i)\)</span> of the good demanded in that segment.</p>
 </blockquote>
-<p>They note that these functions are ‘decreasing’ functions: this means that for higher values of the argument, the output of the function is <em>not</em> higher. In other words, we are considering demand functions that are decreasing, or at least not increasing in price. This rules out the ‘Giffen’ good, I believe.</p>
+<p>They note that these functions are ‘decreasing’ functions: this means that for higher values of the argument, the output of the function is <em>not</em> higher. In other words, we are considering demand functions that are decreasing, or at least not increasing, in price. (This rules out the ‘Giffen’ good.)</p>
 <blockquote>
 <p><strong>Producer</strong>
 A single producer, called a monopolist, characterized by a cost function <span class="math inline">\(C\)</span> that is continuous and convex and satisfies <span class="math inline">\(C(0) = 0\)</span>,</p>
@@ -752,7 +789,9 @@ A single producer, called a monopolist, characterized by a cost function <span c
 <p>and a preference relation <span class="math inline">\(\succsim\)</span> over pairs <span class="math inline">\(((y_1,... , y_k), \pi)\)</span>, where <span class="math inline">\(y_i\)</span> is the quantity sold in segment <span class="math inline">\(i\)</span> for <span class="math inline">\(i = 1,..., k\)</span> and <span class="math inline">\(\pi\)</span> is the producer’s profit</p>
 </blockquote>
 </div>
+<div class="marginnote">
 <p><strong>More to be added here</strong></p>
+</div>
 </div>
 <div id="monop-inef" class="section level2" number="5.4">
 <h2><span class="header-section-number">5.4</span> Monopolies and ‘allocative inefficiency’</h2>
@@ -793,7 +832,7 @@ A single producer, called a monopolist, characterized by a cost function <span c
 </ul>
 <p><br />
 </p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-331"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-336"></span>
 <img src="picsfigs/dwl_monop_mcafee_explanation.png" alt="Source: McAfee et al. " width="85%" />
 <p class="caption">
 Figure 5.2: Source: McAfee et al. 
@@ -977,7 +1016,7 @@ What other barriers might exist?
 </p>
 <p>This does not deal with differences amongst consumers. It may ‘’force the firm to target a particular group’’, such as the wealthy, reducing its total sales.</p>
 <p>Under monopoly, uniform pricing leads to a deadweight loss, as we have already seen:</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-343"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-348"></span>
 <img src="picsfigs/dwl_monop_mcafee.png" alt="Source: McAfee et al. " width="50%" />
 <p class="caption">
 Figure 5.3: Source: McAfee et al. 
@@ -989,7 +1028,7 @@ Figure 5.3: Source: McAfee et al. 
 <div class="marginnote">
 <p><strong>Note</strong>: I would say that an auction <em>might</em> lead to outcomes resembling perfect price discrimination, where the seller captures most of the consumers’ valuations. But this is a whole field of study, ‘Auction theory’, which engages the issues of Asymmetric information and Mechanism design (principle/agent models).</p>
 </div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-344"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-349"></span>
 <img src="picsfigs/saylor_single_price.png" alt="Source: Saylor Academy" width="80%" />
 <p class="caption">
 Figure 5.4: Source: Saylor Academy
@@ -997,7 +1036,7 @@ Figure 5.4: Source: Saylor Academy
 </div>
 <p><br />
 </p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-345"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-350"></span>
 <img src="picsfigs/saylor_ppd_auction.png" alt="Source: Saylor Academy" width="80%" />
 <p class="caption">
 Figure 5.5: Source: Saylor Academy

@@ -62,27 +62,47 @@ The notes in this book may draw from some of these alternate texts
 
 ### Price discrimination in the media and public debate {-}
 
-[Moneybox](https://itunes.apple.com/us/podcast/money-box/id263570678?mt=2&i=1000379397237)
+*Some interesting content to bring these concepts alive*
+
+
+```{block2,  type='fold'}
+
+[Moneybox (fixed link)](http://www.bbc.co.uk/programmes/b086kf1b)
 
 <div class="marginnote">
 This podcast contains many mis-statements; can you identify them?
 </div>
 
+```
+
+\
+
+*Some of my own non-technical writing on this topic:*
+
+```{block2,  type='fold'}
 
 - Article: [Should we help companies tailor prices to your wage packet?](https://theconversation.com/should-we-help-companies-tailor-prices-to-your-wage-packet-47719)
   - With accompanying [worked examples](https://docs.google.com/document/d/16jos_PT9w1wGpyD5A8ZiWJ9HW6kaLOJH6EWc_AYWnkk/pub)
 
 - Somewhat more advanced: 'The Government May Want to Encourage Price Discrimination by Income' [Linked here](https://davidreinstein.wordpress.com/research-and-publications/)
 
-- Teaching discussion; insightful [@Marsden2011]
+```
+
+- Teaching discussion; insightful: [@Marsden2011]
 
 \
 
 
 ### Material from data science and industry pricing practice {-}
 
-See "Marketing" chapter in [Business analytics with R](https://bookdown.org/jeffreytmonroe/business_analytics_with_r7/)
+<div class="marginnote">
+I want to add more here
+</div>
+ 
+See "Marketing" chapter in [Business analytics with R](https://bookdown.org/jeffreytmonroe/business_analytics_with_r7/) (Note, this needs some clarification)
 
+
+\
 
 ### Peer-reviewed academic work {-}
 
@@ -99,7 +119,10 @@ Empirical analyses of price discrimination:
 
 ## Monopoly profit-maximisation: simple (undergraduate-level) take:
 
-A *monopoly* is a single firm operating in a market without competition. Such a firm may incur an *Economic Profit*; a monopoly situation can only be sustained by some [barriers to entry](#barriers), discussed below.
+A *monopoly* is a single firm operating in a market without competition. Such a firm may gain an *Economic Profit* \*;<div class="marginnote">
+An economic profit is the revenue minus costs, where the costs *include* normal returns to the capital invested in the project. You should be clear on this basic and fundamental (undergraduate) concept.
+ </div>
+  a monopoly situation can only be sustained by some [barriers to entry](#barriers), discussed below.
 
 \
 
@@ -107,17 +130,40 @@ A *monopoly* is a single firm operating in a market without competition. Such a 
 A monopoly firm, like all firms, will set it's quantity $Q$ to maximize it's profits $\pi(Q) \equiv QP(Q)-C(Q)$ where $P(Q)$ is the inverse demand (the maximum price that can be charged if a firm wants to sell quantity $Q$), and $C(Q)$ is the cost of producing $Q$. 
 
 \
+
 Under standard simple conditions, if the monopoly can only charge a single price, this  leads to the monopoly maximising it's profit by producing $Q$ such that $MR(Q) = MC(Q)$ (assuming $P>AC$).
 
+This is because under these simple conditions, we simply need to take the 'first order condition' ... i.e., to find the profit-maximising quantity $argmax_{Q} \Big(QP(Q)-C(Q)\Big)$ we find the point where the slope in $Q$ (the derivative is zero), so $P(Q)+QP'(Q) + C'(Q) = 0$.
 
+<div class="marginnote">
+Marginal revenue is the rate at which revenue ($QP(Q)$) changes in quantity, which is thus $P(Q)+QP'(Q)$.
+</div>
+ 
 \
 
 Intuition:  the 'volume' benefit of increasing $Q$ is countered by
 
-- Greater cost (producing more always costs more)
-- The need to reduce price (on all units) to get people to buy it
+1. Greater cost (producing more always costs more) and
+2. The need to reduce price (on all units) to get people to buy it
 
 \
+
+For a linear demand curve the marginal revenue will have a slope of twice of the inverse demand curve, and the same intercept (see computation below). See [HERE](https://youtu.be/IEjcTLPtTIY) for a very simple and clear depiction of monopoly profit maximization with a linear demand curve (and only a bit of oversimplification.)
+
+
+```{block2,  type='fold'}
+
+Suppose $Q = \alpha - \frac{1}{\beta} P$, so 
+$P = \alpha\beta - \beta Q$
+  
+Then revenue is $PQ = \alpha\beta Q - \beta Q^2$ so
+$MR =  \alpha\beta - 2\beta Q$, as noted, twice the slope of the inverse demand curve
+
+```
+
+
+\
+
 
 ### Graphically: Monopoly profit-max {-}
 
@@ -125,7 +171,8 @@ Intuition:  the 'volume' benefit of increasing $Q$ is countered by
 
 *Marginal cost, demand, marginal revenue, and quantity of a monopoly producer* 
 
-![](picsfigs/basic_monop_mcdl.jpg)
+
+![](picsfigs/basic_monop_mcdl.jpg){width=50%}
 
 </center>
 
@@ -154,8 +201,12 @@ Recall that a firm's revenue is Price $\times$ Quantity. This is depicted as a r
 The firm's *profit* is this revenue less average cost. \
 
 MR tells you how the 'revenue rectangle' will increase (or decrease) with another unit. MC tells you the *cost* of this additional unit. \
+
 Where MR>MC, increasing quantity a little bit increases revenue more than costs, thus increasing profit.
 ```
+
+
+\
 
 This is depicted in the figures below:
 
@@ -173,7 +224,7 @@ knitr::include_graphics(file.path("picsfigs","wiki_File_Imperfect_competition_in
 
 
 ```{block2,  type='warning'}
-Be careful here: \
+*Be careful here:* \
 
 The price the monopoly can get at quantity $Q^*$ is $P^*$  \
 ... to see the price charged you need to 'project up' to the *demand* curve NOT the MR curve.
@@ -188,7 +239,6 @@ The price the monopoly can get at quantity $Q^*$ is $P^*$  \
 
 Again, remember that revenue is $P^*Q^*$ but costs at $Q^*$ are $Q^* \times AC$ \
  so profit is $(P^*-AC)Q^*$. \
-
 
 
 
@@ -207,21 +257,17 @@ Add graphical depiction here
 
 ### 'There is no supply curve for a monopoly!'
 
-A  'Supply curve': maps from p to q (and usually vice-versa) for a firm or industry
-
-
-This is not *affected* by demand, only by the costs and number of firms
+A  'Supply curve': maps from p to q (and usually vice-versa) for a firm or industry This is not *affected* by demand, only by the costs and number of firms
 
 
 <br>
 
 
-In contrast:
+*In contrast:*
 
 A monopoly *chooses* price (thus also choosing quantity it can sell) where $MR(q)=mc(q)$
 
 - But $MR(q)$ depends on the demand curve slope/curvature at $q$,
-
 - so if the demand curve changes it will affect the supply/pricing decision
 
 
@@ -231,13 +277,11 @@ A monopoly *chooses* price (thus also choosing quantity it can sell) where $MR(q
 Content to be included/summarised here from O-R 7.1-7.2
 </div>
 
-O-R formally define a monopolistic market. 
+O-R formally define a monopolistic market.  Their definition and approach is unusual because:
 
 <div class="marginnote">
 Note that they are defining the 'primitives' of such a market in a way that allows one to apply rigorous math proofs and (potentially) define an 'equilibrium'.
 </div>
-
-Their definition and approach is unusual because:
 
 1. They incorporate, from the beginning, a demand function $q_i(p_i)$ for each 'segment' $i$ ... allowing for the possibility of price discrimination (something which we will focus on).
 
@@ -259,8 +303,8 @@ This second point is very interesting, but we've no time to address it now.  </d
 
 > The function $q_i$, the demand function in segment $i$, associates with every price $p_i$ for segment $i$ the total amount $q_i(p_i)$ of the good demanded in that segment.
 
-They note that these functions are 'decreasing' functions: this means that for higher values of the argument, the output of the function is *not* higher. In other words, we are considering demand functions that are decreasing, or at least not increasing in price. This rules out the 'Giffen' good, I believe. 
-
+They note that these functions are 'decreasing' functions: this means that for higher values of the argument, the output of the function is *not* higher. In other words, we are considering demand functions that are decreasing, or at least not increasing, in price. (This rules out the 'Giffen' good.)
+ 
 > **Producer**
 > A single producer, called a monopolist, characterized by a cost function $C$ that is continuous and convex and satisfies $C(0) = 0$, 
 
@@ -268,7 +312,10 @@ They note that these functions are 'decreasing' functions: this means that for h
 
 ```   
 
+<div class="marginnote">
 **More to be added here**
+</div>
+ 
 
 
 ## Monopolies and 'allocative inefficiency' {#monop-inef}
