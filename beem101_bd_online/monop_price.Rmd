@@ -18,12 +18,16 @@
 
 
 ***
-## Readings:
+## Readings: {-}
 
 ### Textbook reading {-}
 
 - O-R chapter 7 (you can skip the discussion of monopolists that maximise something *other than* profit)
 
+- Consult [McAfee and Lewis](https://open.umn.edu/opentextbooks/textbooks/introduction-to-economic-analysis)
+[Chapter 15: Monopoly](https://saylordotorg.github.io/text_introduction-to-economic-analysis/s16-monopoly.html) on the 'Lerner index' (or 'Lerner Markup Rule'). Note: the pdf version of this text is easier to read than the html version.
+
+\
 
 Notes on O-R chapter:
 
@@ -50,8 +54,6 @@ The notes in this book may draw from some of these alternate texts
 
 ```{block2,  type='fold'}
 
-- [McAfee and Lewis](https://open.umn.edu/opentextbooks/textbooks/introduction-to-economic-analysis)
-[Chapter 15: Monopoly](https://saylordotorg.github.io/text_introduction-to-economic-analysis/s16-monopoly.html)
 - NS: 11.2-11.4
 - QMC: Appendix A.1 - Monopoly - the vanilla version
 
@@ -77,7 +79,7 @@ This podcast contains many mis-statements; can you identify them?
 
 \
 
-*Some of my own non-technical writing on this topic:*
+*Some of my own non-technical writing on price discrimination:*
 
 ```{block2,  type='fold'}
 
@@ -98,9 +100,13 @@ This podcast contains many mis-statements; can you identify them?
 <div class="marginnote">
 I want to add more here
 </div>
+
+```{block2,  type='fold'}
+
  
 See "Marketing" chapter in [Business analytics with R](https://bookdown.org/jeffreytmonroe/business_analytics_with_r7/) (Note, this needs some clarification)
 
+```
 
 \
 
@@ -117,12 +123,45 @@ Empirical analyses of price discrimination:
 [@Courty2012; @Kiser1998]
 \
 
+
+
+## Why study the monopoly?
+
+A *monopoly* is a single firm operating in a market without competition. 
+
+Although this is an extreme situation (the opposite extreme to 'perfect competition'), we focus on this because:
+
+- The mathematics of the quantity/pricing choices are easy to interpret, and relevant to other environments. 
+
+<div class="marginnote">
+E.g., the optimization is equivalent to the case of 'monopolistic competition', which is sometimes argued to be the most realistic benchmark framework. In 'monopolistic competition', each firm has a somewhat differentiated product (or 'location') and faces a downward sloping demand for its own product.  However, with monopolistic competition, unlike under monopoly, as more firms selling related products enter, each firm's profit dissipates to zero.
+</div>
+ 
+- It provides a simple example of the "deadweight" welfare loss from firms with market power reducing their supply in order to keep up prices.
+
+- We can most simply percent models of price discrimination and segmentation, which is a highly relevant business practice (and may face similar concerns in other competitive environments like monopolistic competition)
+
+- Monopolies (or near-monopolies) certainly do exist and have always existed in some industries ... And perhaps these are growing even more important (consider the "big 4 tech firms")
+
+\
+
 ## Monopoly profit-maximisation: simple (undergraduate-level) take:
 
-A *monopoly* is a single firm operating in a market without competition. Such a firm may gain an *Economic Profit* \*;<div class="marginnote">
+As noted, a *monopoly* is a single firm operating in a market without competition. 
+
+\
+
+
+Such a firm may gain an *Economic Profit* \*.
+
+<div class="marginnote">
 An economic profit is the revenue minus costs, where the costs *include* normal returns to the capital invested in the project. You should be clear on this basic and fundamental (undergraduate) concept.
  </div>
-  a monopoly situation can only be sustained by some [barriers to entry](#barriers), discussed below.
+
+
+\
+
+A monopoly situation can only be sustained by some [barriers to entry](#barriers), discussed below.
 
 \
 
@@ -131,20 +170,29 @@ A monopoly firm, like all firms, will set it's quantity $Q$ to maximize it's pro
 
 \
 
-Under standard simple conditions, if the monopoly can only charge a single price, this  leads to the monopoly maximising it's profit by producing $Q$ such that $MR(Q) = MC(Q)$ (assuming $P>AC$).
+Under standard simple conditions (discussed below), if the monopoly can only charge a single price, this  leads to the monopoly maximising it's profit by producing $Q$ such that $MR(Q) = MC(Q)$ (assuming $P>AC$).
 
-This is because under these simple conditions, we simply need to take the 'first order condition' ... i.e., to find the profit-maximising quantity $argmax_{Q} \Big(QP(Q)-C(Q)\Big)$ we find the point where the slope in $Q$ (the derivative is zero), so $P(Q)+QP'(Q) + C'(Q) = 0$.
+This is because under these simple conditions, we simply need to take the 'first order condition' ... i.e., to find the profit-maximising quantity $$argmax_{Q} \Big(QP(Q)-C(Q)\Big),$$
+we simply find the unique point where the slope in $Q$ (the derivative) is zero, so $$P(Q)+QP'(Q) - C'(Q) = 0,$$ i.e., 
+$$P(Q)+QP'(Q) =  C'(Q)$$, i.e., again, $MR(Q) = MC(Q)$. 
 
-<div class="marginnote">
-Marginal revenue is the rate at which revenue ($QP(Q)$) changes in quantity, which is thus $P(Q)+QP'(Q)$.
-</div>
- 
+
+\
+
+Marginal revenue is the rate at which revenue $QP(Q)$ changes in quantity, which is thus $P(Q)+QP'(Q)$. 
+
+
+For a small increase in $Q$: 
+
+- The rectangle of revenue increases proportionally to the current price, 
+- but it decreases at rate $P'(Q)$ as price must decrease to sell the next unit, and this price decrease reduces revenue in proportion to the current quantity $Q$. For my money, this example offers the most intuitive example of the product rule for derivatives. 
+
 \
 
 Intuition:  the 'volume' benefit of increasing $Q$ is countered by
 
-1. Greater cost (producing more always costs more) and
-2. The need to reduce price (on all units) to get people to buy it
+1. a greater cost (producing more always costs more) and
+2. the need to reduce price (on all units) to get people to buy it.
 
 \
 
@@ -165,7 +213,7 @@ $MR =  \alpha\beta - 2\beta Q$, as noted, twice the slope of the inverse demand 
 \
 
 
-### Graphically: Monopoly profit-max {-}
+### Graphically: Monopoly profit-max 
 
 <center>
 
@@ -257,7 +305,7 @@ Add graphical depiction here
 
 ### 'There is no supply curve for a monopoly!'
 
-A  'Supply curve': maps from p to q (and usually vice-versa) for a firm or industry This is not *affected* by demand, only by the costs and number of firms
+A  'Supply curve': maps from p to q (and usually vice-versa) for a firm or industry. This is not *affected* by demand, only by the costs and number of firms.
 
 
 <br>
@@ -265,10 +313,10 @@ A  'Supply curve': maps from p to q (and usually vice-versa) for a firm or indus
 
 *In contrast:*
 
-A monopoly *chooses* price (thus also choosing quantity it can sell) where $MR(q)=mc(q)$
+A monopoly *chooses* price (thus also choosing quantity it can sell) where $MR(q)=mc(q)$.
 
 - But $MR(q)$ depends on the demand curve slope/curvature at $q$,
-- so if the demand curve changes it will affect the supply/pricing decision
+- so if the demand curve changes it will affect the supply/pricing decision!
 
 
 ## Monopolistic market, profit-maximization: O-R formal depiction and advanced insights
@@ -288,7 +336,8 @@ Note that they are defining the 'primitives' of such a market in a way that allo
 2. They let the producer have a 'preference' ($\succsim$), which may incorporate both profit and quantities sold in each segment. We will not focus on this: we will focus on the standard profit-maximisation goal. 
 
 <div class="marginnote">
-This second point is very interesting, but we've no time to address it now.  </div>
+This second point is very interesting, but we've no time to address it now. 
+</div>
  
 
 ```{block2,  type='def'}
@@ -296,29 +345,210 @@ This second point is very interesting, but we've no time to address it now.  </d
 **Monopolistic market** 
 
 > A monopolistic market $\langle (q_i)^k_i=1, C, \succsim  \rangle$  for a single good has the following components:
+```
+
+\
+
+
+They are just specifying the 'objects defining a monopolistic market' here; they have not told us what these things are yet.
+
+<div class="marginnote">
+Note that we are focusing on a producer of a *single* good; more complex cases could involve multiple goods with production synergies, strategic bundling, etc.
+</div>
+ 
   
-(They are just specifying the 'objects defining a monopolistic market' here; they have not told us what these things are yet.)
+```{block2,  type='def'}
+
+OR continue: 
   
 > **Demand** 
 
 > The function $q_i$, the demand function in segment $i$, associates with every price $p_i$ for segment $i$ the total amount $q_i(p_i)$ of the good demanded in that segment.
+```
 
-They note that these functions are 'decreasing' functions: this means that for higher values of the argument, the output of the function is *not* higher. In other words, we are considering demand functions that are decreasing, or at least not increasing, in price. (This rules out the 'Giffen' good.)
+\
+
+They note that these demand functions are 'decreasing' functions: for higher values of the argument, the output of the function is *not* higher. In other words, we are considering demand functions that are decreasing, or at least not increasing, in price.\* 
+
+<div class="marginnote">
+ This rules out the 'Giffen' good.
+</div>
  
+
+```{block2,  type='def'}
+
+OR: 
+  
 > **Producer**
 > A single producer, called a monopolist, characterized by a cost function $C$ that is continuous and convex and satisfies $C(0) = 0$, 
+
 
 > and a preference relation $\succsim$ over pairs $((y_1,... , y_k), \pi)$, where $y_i$ is the quantity sold in segment $i$ for $i = 1,..., k$ and $\pi$ is the producer’s profit
 
 ```   
 
+\
+
+Note that cost increases in output at an increasing rate; this is a fairly restrictive assumption, and it rules out the 'natural monopoly' case.  They also assume that the cost of producing 0 is 0, which seems natural.
+
+\
+
+### Profit maximization and marginal revenue 
+
+
+O-R Essentially restate the analysis we presented above, however they are slightly more formal, and they consider an interesting wrinkle: marginal revenue *need not be decreasing* in quantity.
+
+
+\
+O-R definitions ... 
+
+> Let $\langle (q_i)^k_i=1, C, \succsim  \rangle$ be a uniform-price monopolistic market.
+
+...we refer to 'uniform pricing', because here (as above) we are considering only a single price for the market as a whole. We discuss [below](#arbitrage) why price discrimination my not always be possible, for legal or practical reasons. 
+
+\
+
+> Define the total demand function $Q$ by $Q(p)=\sum_{i=1}^k q_i(p)$
+
+... simply summing the quantity demanded at a certain price across all segments 1 through k. 
+
+\
+
+O-R Define marginal revenue essentially as above,
+ 
+> $MR(y) = [P(y)y]' = P(y) + P'(y)y$, where P is the inverse of Q.
+
+giving additional intuition ... 
+
+> If the function P is decreasing, ...
+
+(i.e., if the demand curve slopes downwards)
+
+> ..we have $MR(y) ≤ P(y)$ for all y. [Because] selling an additional unit of the good increases revenue by approximately $P(y)$ but also causes a reduction in the price of all $y$ units sold.
+
 <div class="marginnote">
-**More to be added here**
+I restate this point because it's just that important.
+</div>
+
+\
+
+They next make an interesting point which I have not seen noted before:
+
+> Usually the function MR is assumed to be decreasing, but this property does not follow from the assumptions we have made. The derivative of $MR$ at $y$ is $2P′(y) + P′′(y)y$
+
+<div class="marginnote">
+Of course the MR is itself the derivative of the revenue function, so here we are considering the *derivative of a derivative*.  I.e., the derivative of $P(y) + P'(y)$ with respect to $Y$ ... and thus considering, 'Is the rate at which revenue *increases* in output decreasing as output increases, so additional units of output add less to revenue than earlier units? This was the case in all the graphs depicted above, but it need not hold in general. 
 </div>
  
 
+> so that if $P′′(y)$ is positive and large enough, the derivative is positive even if $P$ is decreasing.
+
+We assumed above that price is decreasing in quantity (only ruling out 'Giffen goods'). Thus as the quantity increases the *benefit* of an additional unit of increase in quantity (holding price constant) must be smaller, because you are charging a lower price. This by itself would point to a declining MR. 
+
+\
+
+However, for every increase in quantity the price must fall somewhat, which itself reduces revenue. The necessary marginal drop in price $P'(y)$ need not be constant, it may be increasing or decreasing, i.e., $P′′(y)$ may be positive or negative in any region. Thus, it's possible that for increases in quantity from a *larger* starting quantity, the necessary reduction in price is relatively much *smaller* than it was when increasing quantity from a smaller base, leading to a lower loss of revenue than before, and even outweighing the effect in the previous paragraph. 
+
+
+This is illustrated in O-R example 7.1, depicting three consumers with 'maximum willingness to pay' of 10, 6, and 5, respectively:
+
+| y 	| p 	| rev(y) 	| mr(y) 	|
+|-	|-	|-	|-	|
+| 1 	| 10 	| 10 	| 10 	|
+| 2 	| 6 	| 12 	| 2 	|
+| 3 	| 5 	| 15 	| 3 	|
+
+
+\
+
+Above, we see that increasing the quantity $y$ from 1 to 2 requires reducing price from £10 to £6, and thus increasing revenue by only £2. However, increasing the quantity from 2 to 3 requires reducing price by only £1 further, and thus increasing revenue by £3. Although the latter price decrease 'operates on more prior units' (2 rather than 1), it is a much smaller price decrease (£1 reduction rather than a £4 reduction), outweighing the 'volume effect'.  
+
+\
+
+The fact that $MR$ need not be everywhere downward sloping means that the $MR(y)=MC(y)$ condition for profit maximizing output $y$ is a necessary condition but not a sufficient condition.\*
+
+<div class="marginnote">
+\* This is not a 'corner solution' issue: it is not even sufficient for an *interior* optimum, with a positive output. Furthermore, this is not because of regions of decreasing marginal costs; it is not sufficient even if MC are constant or rising everywhere.
+</div>
+
+O-R illustrate this point in Figure 7.1. *Have a look*. 
+
+\
+
+### "Lerner markup rule" -- an additional insight {#lerner}
+
+From McDL:
+
+> We can rearrange the monopoly pricing formula to produce an additional insight.
+
+(Going back to our earlier notation...)
+
+A profit-maximizing monopolist must set $Q$ (if positive) such that: 
+
+$$P(Q)+QP'(Q) =  C'(Q).$$
+Rearrange this to consider the 'markup over marginal cost':
+
+$$P(Q) -  C'(Q) = -QP'(Q),$$
+and now as the 'markup as a fraction of the price charged', the so-called 'Lerner Index':
+
+$$\frac{P(Q) -  C'(Q)}{P(Q)} = -\frac{QP'(Q)}{P(Q)}=\frac{1}{\epsilon} ,$$
+
+The right hand side of this is simply the 'inverse price elasticity' $\frac{1}{\epsilon}$.
+
+Derivation:
+
+```{block2,  type='fold'}
+
+Take the inverse of the second term
+
+$\frac{1}{-\frac{QP'(Q)}{P(Q)}}$
+$=-\frac{\frac{1}{Q}{\frac{P'(Q)}{P(Q)}}$
+$=-\frac{\frac{1}{Q}}{\frac{\frac{dP}{dQ}}{P(Q)}}$
+$=-\frac{\frac{dQ}{Q}}{\frac{dP}{P}}$
+$=\epsilon$
+
+```
+
+> this formula provides a measure of the deviation from competition, and in particular says that the deviation from competition is small when the elasticity of demand is large, and vice versa.
+
+> ... If demand is very elastic, the effect of monopoly on prices is quite limited. In contrast, if the demand is relatively inelastic, monopolies will increase prices by a large margin.
+
+\
+
+
+This is also a formula firms might directly use ... if they knew their marginal cost and, more challengingly, if they knew the price elasticity of demand over its entire range. In the real world, firms do sometimes use 'markup rules' for pricing.  
+
+According to McDL: 
+
+> This formula is sometimes used to justify a “fixed markup policy,” which means a company adds a constant percentage markup to its products. This is an ill-advised policy not justified by the formula, because the formula suggests a markup which depends on the demand for the product in question and thus not a fixed markup for all products a company produces.
+
+\
+
+Some more insights from McDL:
+
+```{block2,  type='fold'}
+
+> Marginal cost will always be at least zero or larger.... Thus, the price-cost margin is no greater than one, and as a result, a monopolist produces in the elastic portion of demand.
+
+DR: Note that I emphasze at great length that a monopolist will never price in the inelastic portion of the demand curve it faces, and I try to give lots of insight into this. 
+
+> One implication c ...  if demand is everywhere inelastic (e.g. $p(q) = q−a$ for $a>1$), the optimal monopoly quantity is essentially zero, and in any event would be no more than one molecule of the product.
+
+
+```
 
 ## Monopolies and 'allocative inefficiency' {#monop-inef}
+
+O-R: 
+
+> Since $MR(y)  < P(y)$ for all $y$, an implication of Proposition 7.1 [$MR(y^{\ast})=MC(y^{\ast})$] is that the price charged by a profit-maximizing producer in a uniform-price monopolistic market is greater than the marginal cost at this output.
+
+This leads to an inefficiency: 
+
+> the cost of production of another unit of the good is less than the price that some buyers are willing to pay for the good. The monopolist does not produce the extra unit because he takes into account that the price reduction necessary to sell the extra unit will affect all the other units, too, causing his profit to fall.
+
+\
+
 
 ```{block2,  type='note'}
 
@@ -357,7 +587,7 @@ There are a variety of *market structures* we might consider that fall in betwee
 
 \
 
-### The deadweight loss of monopoly: simple discussion {-#dwl-simple}
+### The deadweight loss of monopoly: simple discussion {#dwl-simple}
 
 
 *Criticisms of monopoly:*
@@ -381,7 +611,7 @@ Compared to perfect competition, a monopoly typically produces less output and c
 
 
 
-```{r  fig.cap = 'Source: McAfee et al. ', out.width='85%', fig.asp=.6, fig.align='center',  echo = FALSE}
+```{r  fig.cap = 'Source: McAfee et al. ', out.width='95%', fig.asp=.7, fig.align='center',  echo = FALSE}
  knitr::include_graphics(file.path("picsfigs","dwl_monop_mcafee_explanation.png"))
 ```
 
@@ -418,6 +648,12 @@ The difference in monopoly vs perfect competitive quantity \
 
 -->
 
+```{block2,  type='note'}
+
+2020 BEEM101 students: For time concerns, I am not going to focus on the measures of the welfare cost or deadweight loss of monopoly, nor on the potential regulatory responses to reduce these costs. These are certainly important for economic policymaking, however. The stereotypical free-market economist is thought to argue that 'price ceilings are always harmful'; this is not necessarily the case. 
+
+```  
+
 \
 
 ### Aside: Types of inefficiency; simple definitions {-}
@@ -438,12 +674,12 @@ Here 'goods' includes all things that people value, including services, environm
 2. Suppose the economy is producing the combination of goods yielding 'point Z on the PPF.'  However, suppose that given the combination of goods produced Z, and the distribution of these goods to consumers we could *reallocate* these.  (E.g., have person 1 trade good $z_1$ to person 2 in  exchange for some of good $z_2$). Suppose that this reallocation would  to make at least one person better off without making anyone worse off (a Pareto imrovement). Then the original point (before any such reallocation) was not Pareto Optimal; it suffered from **Exchange inefficiency**.
 
 
-3. Suppose  the economy is producing at 'Point X on the PPF' and there is no Exchange inefficiency. However, we are producing the 'wrong goods': we  could make a Pareto improvement by producing 'more of one good and less of another' (and allocating these to consumers).  We call this **'top-level inefficiency'** or **'allocative inefficiency'**. The DWL of monopoly leads to allocative inefficiency: too little of the monopolized good will be produced relative to other goods. (The remaining productive resources will presumably be used towards non-monopolized goods, and these will be relatively over-produced.)
+3. Suppose the economy is producing at 'Point X on the PPF' and there is no Exchange inefficiency. However, we are producing the 'wrong goods': we  could make a Pareto improvement by producing 'more of one good and less of another' (and allocating these to consumers).  We call this **'top-level inefficiency'** or **'allocative inefficiency'**. The DWL of monopoly leads to allocative inefficiency: too little of the monopolized good will be produced relative to other goods. (The remaining productive resources will presumably be used towards non-monopolized goods, and these will be relatively over-produced.)
 
 
 \
 
-### Other social costs and benefits of monopoly? {#other-costs=monop}
+### Other potential social costs and benefits of monopoly {#other_costs_monop}
 
 Some argue the deadweight loss (DWL) above *understates* the true harm of monopoly. This is controversial. These arguments include...
 
@@ -459,6 +695,8 @@ On the other side, some people argue monopolies tend not to persist in the long 
 \
 
 Empirically, the magnitude of the social cost of monopoly is an open question. Estimates range from 0.5\% of GDP to 5\% of GDP
+
+\
 
 
 #### The double marginalisation problem {-#double-marg}
@@ -578,7 +816,8 @@ Ballot measure: is this establishing a legal barrier to entry?
 ### The basics
 
 ```{block2,  type='note'}
-Note: This is largely undergraduate material -- I plan to update and supplementing this soon with more formal material from O-R and elsewhere, and  some applied material from data science and business
+
+Note: This is largely undergraduate material -- I plan to update and supplement this soon with more formal material from O-R and elsewhere, and with some applied material from data science and business
 
 ```
 
@@ -801,6 +1040,12 @@ Add graphical depiction here
 
 ## Second-degree price discrimination
 
+
+<div class="marginnote">
+**More to be added here**
+</div>
+ 
+ 
 ```{block2,  type='note'}
 Although it involves concepts from asymmetric information (which we have not yet covered and is only included as a supplement), this is nicely addressed in O-R section 7.4. I will add more material here as well.
 
@@ -1042,7 +1287,7 @@ Considering the two effects on efficiency just described ... one (Exchange effic
 \
 
 
-## Arbitrage ...  can foil price discrimination
+## Arbitrage ...  can foil price discrimination {#arbitrage}
 
 If, e.g., elderly who get discounts could sell the products to the middle-aged...
 
