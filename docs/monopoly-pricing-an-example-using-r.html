@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>1 Models, maths, fundamentals | Microeconomics (MSc)</title>
+  <title>Monopoly pricing: An example using R | Microeconomics (MSc)</title>
   <meta name="description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
   <meta name="generator" content="bookdown 0.20.3 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="1 Models, maths, fundamentals | Microeconomics (MSc)" />
+  <meta property="og:title" content="Monopoly pricing: An example using R | Microeconomics (MSc)" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="daaronr/micro-giving-pub" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="1 Models, maths, fundamentals | Microeconomics (MSc)" />
+  <meta name="twitter:title" content="Monopoly pricing: An example using R | Microeconomics (MSc)" />
   
   <meta name="twitter:description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="outline.html"/>
-<link rel="next" href="intro-exercise.html"/>
+<link rel="prev" href="exercises-pricingmonopolyprice-discrimination-simpler.html"/>
+<link rel="next" href="exercises-price-discrimination-and-segmentation-pricing-mechanisms-intro-to-strategic-interaction.html"/>
 <script src="book_assets/header-attrs-2.3/header-attrs.js"></script>
 <script src="book_assets/jquery-2.2.3/jquery.min.js"></script>
 <link href="book_assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -550,493 +550,98 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="intro" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Models, maths, fundamentals</h1>
-<p>This, combined with the above outline represents approximately half a week of material</p>
-<div id="intro-coverage" class="section level2 unnumbered" number="">
-<h2>Key goals of this chunk:</h2>
-<p>Get a sense of, and be able to explain:</p>
-<ol style="list-style-type: decimal">
-<li>What Microeconomics is about and why it is useful</li>
-<li>What the point of ‘models’ are</li>
-<li>Some <em>applications</em> of these models</li>
-<li>Some examples of microeconomic models and questions (should be largely revision)
-<ul>
-<li>Get your econ brain flowing</li>
-</ul></li>
-<li>Discuss maths revision: know which maths you need to revise (if any)</li>
-<li>Discuss ‘empirical work’ in Microeconomics, and how it connects to ‘theory’</li>
-</ol>
-<p><strong>Main reading for this chunk:</strong> this web book</p>
-<p><br />
-Readings on ‘what is Economics’, ‘what are the purpose of Economic models’, etc.: The readings below are each optional, but you must read at least some of these*</p>
-<p>Unfold to see these…</p>
-
-<div class="fold">
-<ul>
-<li><p><a href="https://www.scholars.northwestern.edu/en/publications/introduction-to-economic-analysis-v2">McDL’</a> Chapter 1. A very simple undergraduate discussion of ‘what is Economics, what are models’ etc. You probably already know this but take a look just in case.</p></li>
-<li><p>Friedman, Milton. “The methodology of positive economics.” (1953): 259. <em>Classic but perhaps outdated</em></p></li>
-<li><p><a href="https://www.jstor.org/stable/40267405?seq=1">Sugden, Robert. “Credible worlds: the status of theoretical models in economics.” Journal of Economic Methodology 7.1 (2000): 1-31.</a></p></li>
-<li><p><a href="https://ueaeco.github.io/working-papers/papers/cbess/UEA-CBESS-11-08.pdf">Sugden, Robert; Sitzia, Stefania. “Implementing theoretical models in the laboratory, and what this can and cannot achieve.” Journal of Economic Methodology, Vol. 18, 2011, p. 323-343.</a></p></li>
-</ul>
-<div class="marginnote">
-<p>We will return to the issues of ‘what and why models’ throughout the module.</p>
-</div>
-</div>
-</div>
-<div id="empirics-maths-revision" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Empirics, maths revision</h2>
-<div class="marginnote">
-<p>Some of the maths you need will also be simultaneously covered in your Optimisation and Econometric modules, sometimes at a higher level.</p>
-</div>
-<p>We will use some maths in this module, and now would be a good time to revise some of this on your own.</p>
-<p>Here are some key elements.</p>
-<!-- #TODO: link some revision material -->
-<ol style="list-style-type: decimal">
-<li><p>We will consider the use of microeconomics in <strong>‘empirical identification’</strong> of effects using data. <a href="http://scunning.com/cunningham_mixtape.pdf">The mixtape, Scott Cunningham</a> pp 18-22, provides a good introduction to this</p></li>
-<li><p>So called ‘pre-calculus’ and general maths concepts including</p></li>
-</ol>
-<ul>
-<li>The symbolic language and notation of maths, summation and product operators</li>
-<li>Multivariate and univariate functions (and mappings), inverses of functions, implicit functions
-<ul>
-<li>Plotting these functions over their domain and range; the ‘level sets’ of multivariate functions</li>
-<li>Specific functions including: Logarithms/exponential functions, quadratic and higher-order polynomial functions, ‘min’ and ‘max’ operators</li>
-</ul></li>
-<li>Limits, Geometric series</li>
-</ul>
-<ol start="3" style="list-style-type: decimal">
-<li>Some elements of basic calculus, including, perhaps</li>
-</ol>
-<div class="marginnote">
-<p>However, in general I’m not asking you to memorize sets of rules; I’ll give hints to remind you of these rules on any examination.</p>
-</div>
-
-<div class="tip">
-<p>Some very simple math revision <a href="https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=e0866970-34e1-4aa5-8385-8c1ef8d75b1c&amp;autoplay=false&amp;offerviewer=true&amp;showtitle=true&amp;showbrand=false&amp;start=0&amp;interactivity=all">HERE</a>, from my prior lecture. However, you will find better coverage of this at Khan Academy (free) and elsewhere.</p>
-</div>
-<ul>
-<li>Derivatives and their interpretations
-<ul>
-<li>As ‘slopes’</li>
-<li>Higher-order derivatives and cross-partials, relevance for ‘minima and maxima’ (optimization)</li>
-</ul></li>
-<li>Integrals and their interpretation</li>
-<li>‘Total differentiation’ of a function</li>
-<li>Constrained optimization and (perhaps) the Lagrangian method (probably optional)</li>
-<li>The implicit function theorem (probably optional) and ‘comparative statics’</li>
-</ul>
-<ol start="3" style="list-style-type: decimal">
-<li><p>Some elements of <strong>Set theory</strong>, including open and closed sets, subsets, ordered sets, unions and intersections</p></li>
-<li><p>Basic ideas of probability and expectation</p></li>
-<li><p>The logic and construction of formal definitions and proofs</p></li>
-</ol>
-<ul>
-<li>Proof by contradiction</li>
-<li>Proof by construction</li>
-</ul>
-<div class="marginnote">
-<p>The logic of definitions and proofs may be the most important concept for this module.</p>
-</div>
-<!--
-- Math revision concepts in
-
-- [DA lecture 3](https://ocw.mit.edu/courses/economics/14-03-microeconomic-theory-and-public-policy-fall-2016/lecture-notes/MIT14_03F16_lec3MathTools.pdf); we may use some of this
-
-- QMC 1.3 (some good stuff; don't worry too much about all the derivative rules)
-
--->
-<p><br />
-</p>
-
-<div class="technote">
-<p>Optional: I may also occasionally use matrix and vector notation, and combine this with calculus (see concepts such as the ‘gradient’ and ‘Hessian matrix’). However, these will be provided as supplements; you shouldn’t consider these to be required.</p>
-</div>
-</div>
-<div id="whats-econ" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> What is Economics?</h2>
-<br />
-
-<div class="marginnote">
-<p><em>Note: DR: It has changed. There are different views. Ask two economists, and you’ll probably get at least three answers.</em></p>
-</div>
-
-<div class="inputq">
-What is Economics? Please propose a definition (from your head… give your own impression) as a comment HERE using Hypothes.is. Then unfold the box below to see some proposed definitions and ideas.
-</div>
-<div class="marginnote">
-<p>For help on using hypothes.is please see <a href="index.html#hypoth">ABOVE</a> or go to <a href="https://web.hypothes.is/" class="uri">https://web.hypothes.is/</a>.</p>
-</div>
-
-<div class="fold">
-<ol style="list-style-type: decimal">
-<li><p>“Economics is the study of the allocation of scarce resources among alternative uses.”</p></li>
-<li><p>“Economics is the study of mankind in the ordinary business of life.” Alfred Marshall</p></li>
-</ol>
-<p>– The first quote suggests an <em>approach</em> (<em>how</em> we do our research), the second suggests a <em>domain</em> (what we focus on).</p>
-<p>Another famous quote:
-“Economics never tells a man how he should act; it merely shows how a man must act if he wants to attain definite ends.” - Ludwig von Mises</p>
-</div>
-<div id="what-is-microeconomics" class="section level3 unnumbered" number="">
-<h3>What is Microeconomics?</h3>
-<p>One definition, not necessarily the correct one: “The study of the (economic) choices individuals and firms make and how these choices create markets.”</p>
-<p><br> </p>
-<p>Largely, using theoretical and mathematical ‘models’ that depend on strong assumptions.</p>
-<p><font color='gray'>Comprehension Q: Consider some examples of ‘relevant choices’ for economic study. </font></p>
-
-<div class="inputq">
-Students: please propose some of these as a Hypothes.is comment HERE.
-</div>
-<p>What sort of models are we talking about?…</p>
-<div class="marginnote">
-<p>To refresh your memory… you have probably seen some of these models before in your previous economics module. You should have some familiarity with the simple models of supply and demand curves yielding an equilibrium price and quantity. You may also have seen a models of trade, between two countries or two individuals, with only two goods, where for each good one has a ‘comparative advantage’. Other models involve ‘strategic’ interactions bwtween a few ‘players’. Others involve individual ‘optimizing’ choices. Still others involve firms and governments setting ‘mechanisms’ trying to induce particular choices by others.</p>
-</div>
-<p>Consider: Are they ‘fully realistic’? No. They are models, i.e., simplifications.</p>
-<p>A huge body of work has gone into making these models more complex and ‘general’; some of the conclusions are preserved, others are weakened or reversed. But even these more general models are simplifications.</p>
-<div class="marginnote">
-<p>But I don’t find it satisfactory if people respond to a meaningful criticism of a model and the way it is being applied with ‘it’s just a model, and all models are abstractions.’ Specific critiques need to be dealt with directly.</p>
-</div>
-</div>
-<div id="so-why-learn-these-models-if-they-are-not-realistic" class="section level3" number="1.2.1">
-<h3><span class="header-section-number">1.2.1</span> So why learn these models, if they are not realistic?</h3>
-<p>Consider the parable of the tortoise and the hare (Aesop)…</p>
-<ul>
-<li><a href="http://read.gov/aesop/025.html">Original version, English translation</a></li>
-<li><a href="https://www.youtube.com/watch?v=LthoQPO6YLE">Merrie Melodies version</a></li>
-</ul>
-<p><br />
-</p>
-<p><img src="picsfigs/tortoisehare.jpg" width="55%" style="display: block; margin: auto;" /></p>
-<p>One might question the realism of this story:</p>
-<ul>
-<li>Can hares really speak?</li>
-<li>Is this a rabbit or a hare?</li>
-<li>What other animals were racing?</li>
-</ul>
-<p>Okay, the story is not so realistic. However, it conveys an important message. Is this message in any way affected by the answers to the above questions?</p>
-<p>The same can be asked about many criticisms of simple economic models. Of course one should always consider the applicability of particular models to real-world problems, and carefully consider whether the assumptions are reasonable and relevant, and whether the departures from these assumptions will lead to any different predictions. However, in considering the general insight conveyed by the model, some criticisms can merely be distracting. At the very least, we should not reject economic models simply because they are not fully realistic, just as we do not reject Aesop’s fables because they involve talking animals. The idea of ‘Ceteris paribus’ (all other things being equal) can help us here.</p>
-<p><br />
-</p>
-<p><strong>Again, so why learn these models?</strong></p>
-<ul>
-<li><p>They are a starting point</p></li>
-<li><p>They (sometimes) make concrete predictions you can test</p></li>
-<li><p>They may be useful for building insight, clear arguments, a way of thinking</p></li>
-<li><p>Discussion is framed around these models and they are seen as a ‘baseline’</p></li>
-<li><p>You must understand the arguments and models to be able to effectively critique or extend them</p></li>
-</ul>
-<div class="marginnote">
-<p>For example, some critics of what they call ‘neoliberal economics’ can be misinformed about what it is. Their criticism can sound to us mainstream economists like someone who says ‘cars are dangerous and should be banned because they go too fast and have no mechanism for stopping’.</p>
-</div>
-</div>
-</div>
-<div id="econ-models" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> Economic Models</h2>
-<p>See audio/slides, from 101:25 - <a href="https://recapexeter.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=9B44DE1E-2569-4076-9D7B-AACC0064717D#">HERE</a></p>
-<p><strong>Economic model:</strong></p>
-<p>One definition:</p>
+<div id="monopoly-pricing-an-example-using-r" class="section level1 unnumbered" number="">
+<h1>Monopoly pricing: An example using R</h1>
+<p>Adapted from: <a href="http://www.econometricsbysimulation.com/2013/07/optimal-pricing-for-simple-monopolist.html">Econometrics by Simulation</a></p>
+<p>Our monopolist is a broadband internet supplier within a city. Suppose for now that they only offer one bundle. For now we will consider a scenario with 2000 potential consumers but this can be changed by altering the <code>npeep</code> variable. For each of these consumers we generate a willingness to pay for broadband internet (internet). If we assume that each consumer has a willingness to pay of £45 then we can add an error term to this in order to simulate variation between consumers. To do this we use the <code>rnorm</code> function which draws a random sample from the normal distribution.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="monopoly-pricing-an-example-using-r.html#cb12-1"></a>npeep &lt;-<span class="st"> </span><span class="dv">2000</span> <span class="co"># Number of potential consumers</span></span>
+<span id="cb12-2"><a href="monopoly-pricing-an-example-using-r.html#cb12-2"></a></span>
+<span id="cb12-3"><a href="monopoly-pricing-an-example-using-r.html#cb12-3"></a>wtp &lt;-<span class="st"> </span><span class="dv">45</span> <span class="op">+</span><span class="st"> </span><span class="kw">rnorm</span>(npeep)<span class="op">*</span><span class="dv">15</span> <span class="co"># Each person has a different willingness to pay </span></span></code></pre></div>
 <blockquote>
-<p>A simple theoretical description that captures the essentials of how the economy works.</p>
+<p>To figure out the demand curve we count the number of people willing to pay at least as much as the offering price.</p>
 </blockquote>
-<div class="marginnote">
-<p>For the material we cover in this module, this definition would only work if we interpret the term ‘economy’ very broadly.</p>
-</div>
+<p>If we set the maximum offering price to 90 then we consider that offering prices can be (for simplicity) any integer between 0 and 90. From this we sum the number of consumers who have a willingness to pay above the offering price in order to give us a vector of quantity demanded at each price level.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="monopoly-pricing-an-example-using-r.html#cb13-1"></a>maxop &lt;-<span class="st"> </span><span class="dv">90</span> <span class="co"># Max offering price</span></span>
+<span id="cb13-2"><a href="monopoly-pricing-an-example-using-r.html#cb13-2"></a>op &lt;-<span class="st"> </span><span class="dv">0</span><span class="op">:</span>maxop <span class="co"># Offering price ranges from 0 to maxop i.e 0,1, ... 90</span></span>
+<span id="cb13-3"><a href="monopoly-pricing-an-example-using-r.html#cb13-3"></a></span>
+<span id="cb13-4"><a href="monopoly-pricing-an-example-using-r.html#cb13-4"></a>qd &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="ot">NA</span>,<span class="kw">length</span>(op)) <span class="co"># Empty vector for quantity demanded</span></span>
+<span id="cb13-5"><a href="monopoly-pricing-an-example-using-r.html#cb13-5"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(op)) qd[i] &lt;-<span class="st"> </span><span class="kw">sum</span>(wtp<span class="op">&gt;=</span>op[i]) <span class="co"># We fill qd with the number of consumers with a wtp &gt;= offering price</span></span></code></pre></div>
 <p><br />
 </p>
-<p><strong>What is economic theory and what can it do?</strong></p>
-<p>Unlike “theory” in some other social science disciplines, economic theory is mostly based on mathematical modelling and rigorous proof that certain conclusions or results can be derived from certain assumptions. But theory alone can say little about the real world.</p>
-<div class="marginnote">
-<p>For example, my impression is that in Psychology a ‘theory’ can represent broad descriptions and stories summarizing and providing a framework for understanding empirical evidence.</p>
-</div>
-<p>In Economic theory we can prove theorems, essentially the logic of ‘if-then’ statements… ‘if one assumes the following preferences, the following choice is optimising’, etc. However, here the realism of the <em>assumptions</em> is always in question; as caricatured in this <a href="https://twitter.com/rethinkecon/status/1164477365243785216/photo/1">Twitter ‘meme’</a>.</p>
-
-<div class="note">
-<p>In Economics: Models = Theory = Uses Mathematics… for the most part.</p>
-</div>
-<p>Again, ‘economic theory’ and models generally do not provide evidence about the real world, they just tell us things like</p>
+<p>We assume:</p>
 <blockquote>
-<p>if (i) people make choices exactly as specified by assumption <em>X</em>, (ii) their choices will be the same as if they made these according to assumption <em>Y</em>, (iii) and the outcomes will have the following relationship (e.g., quantity demanded sloping downward in prices), and vice-versa.</p>
+<p>Marginal cost is increasing though this is not a necessity. For something like broadband services we might think that up to a point marginal costs might be decreasing since the cost of adding one more customer might be less than the cost of adding the previous customer.</p>
 </blockquote>
-<p>But this doesn’t tell us that people <em>do</em> make choices as specified by assumption <em>X</em>. We are simply showing the mathematical equivalence of (i), (ii), and (iii).</p>
-<div class="marginnote">
-<p>I discuss this further:
-- in my ‘writing book’ <a href="https://daaronr.github.io/writing_econ_research/theory-modeling-empirical.html">here</a> and
-- <a href="https://daaronr.github.io/writing_econ_research/methods-fields.html">here</a></p>
-</div>
-<div id="differing-views-about-models" class="section level3" number="1.3.1">
-<h3><span class="header-section-number">1.3.1</span> Differing views about models</h3>
-<p>There are <strong>differing views</strong> on the meaning, purpose, and use of economic models.</p>
-
-<div class="note">
-<p>This discussion is rather abstract but important. These concerns and issues may make more sense as we get into considering specific models in detail. So we will try to come back to this.</p>
-</div>
-<div class="marginnote">
-<p>We will return to this in our discussions, and again when we consider the use of experiments. See the suggested readings/notes on readings.</p>
-</div>
-
-<div class="note">
-<p><strong>Source reading</strong>: The discussion below is largely from <span class="citation">(Sugden <a href="#ref-Sugden2017" role="doc-biblioref">2017</a>)</span> <a href="https://www.jstor.org/stable/40267405?seq=1">“Credible worlds: the status of theoretical models in economics.” Journal of Economic Methodology (2010)</a></p>
-<p>Sugden’s paper mentions two famous papers, one of which is (Nobel Laureate George) Akerlof’s “the Market for Lemons” <span class="citation">(Akerlof <a href="#ref-Akerlof1970" role="doc-biblioref">1970</a>)</span>. It would be worth reading some of Akerlof’s paper and seeing how much you can follow; it is rather accessible. We may return to this specific model of asymmetric information later in the module, and it could certainly be relevant for your project.</p>
-<p>If you are interested, I will set up a wiki to engage in a group discussion of these articles.</p>
-</div>
+<p>In our <span class="math inline">\(MC = 0.01(q_d)\)</span></p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="monopoly-pricing-an-example-using-r.html#cb14-1"></a>mc &lt;-<span class="st"> </span>qd<span class="op">*</span>.<span class="dv">01</span> <span class="co"># Setting marginal cost</span></span></code></pre></div>
 <p><br />
 </p>
-<p>The <em>instrumentalist</em> view:</p>
-<p>The Methodology of Positive Economics <span class="citation">(Friedman <a href="#ref-friedmanMethodologyPositiveEconomics1953" role="doc-biblioref">1953</a>)</span>: the ultimate goal of theory is to “yield valid and meaningful … predictions about phenomena not yet observed.”</p>
-<ul>
-<li><p>“Simplicity” – ‘the less initial knowledge needed to make a prediction’.</p></li>
-<li><p>“Fruitful” – more precise predictions, for a wider range of situations</p></li>
-</ul>
-<p><br />
-</p>
-<p>In contrast, the <em>‘Fictionalist’</em> view <span class="citation">(Sugden <a href="#ref-Sugden2017" role="doc-biblioref">2017</a>)</span>:</p>
+<p>Now we plot quantity demanded as a function of price:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="monopoly-pricing-an-example-using-r.html#cb15-1"></a><span class="kw">plot</span>(qd, op, <span class="dt">type=</span><span class="st">&quot;l&quot;</span>, <span class="dt">xlab=</span><span class="st">&quot;Quantity&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;Price / Cost&quot;</span>, </span>
+<span id="cb15-2"><a href="monopoly-pricing-an-example-using-r.html#cb15-2"></a>      <span class="dt">main=</span><span class="st">&quot;Demand for Broadband Internet&quot;</span>, <span class="dt">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb15-3"><a href="monopoly-pricing-an-example-using-r.html#cb15-3"></a><span class="kw">abline</span>(<span class="dt">h=</span><span class="dv">0</span>, <span class="dt">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb15-4"><a href="monopoly-pricing-an-example-using-r.html#cb15-4"></a><span class="kw">lines</span>(qd, mc, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>, <span class="dt">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb15-5"><a href="monopoly-pricing-an-example-using-r.html#cb15-5"></a><span class="kw">legend</span>(<span class="dv">1450</span>, <span class="dv">75</span>, <span class="dt">legend=</span><span class="kw">c</span>(<span class="st">&quot;Price&quot;</span>, <span class="st">&quot;Marginal Cost&quot;</span>), <span class="dt">col=</span><span class="kw">c</span>(<span class="st">&quot;black&quot;</span>, <span class="st">&quot;red&quot;</span>), <span class="dt">lty=</span><span class="dv">1</span>)</span></code></pre></div>
+<p><img src="Microeconomics-MSc_files/figure-html/unnamed-chunk-379-1.png" width="80%" style="display: block; margin: auto;" /></p>
 <blockquote>
-<p>describes a fictional world that is credible or truthlike in something like the way that the events of a realistic novel are; the model connects with the real world by relations of similarity</p>
+<p>The monopolist must choose a price in which to sell services at. If the monopolist chooses <span class="math inline">\(MC=P\)</span> then the monopolist will not make any money but the consumers will be very happy. We know that the optimal point for the monopolist is at the point where marginal revenue curve intersects the marginal cost curve. Let’s see if we can find it.</p>
 </blockquote>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="monopoly-pricing-an-example-using-r.html#cb16-1"></a>tr &lt;-<span class="st"> </span>tp &lt;-<span class="st"> </span>tc &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="ot">NA</span>,<span class="kw">length</span>(op)) <span class="co"># Total revenue, total profit, total cost vectors</span></span></code></pre></div>
 <p><br />
 </p>
-<p><em>Some considerations:</em></p>
-<p>Are these models predictive? If not, are they useful?</p>
-<ul>
-<li><p>There are arguments for modeling optimising behavior even if it is <em>not</em> predictive.</p></li>
-<li><p>There is some evidence for near-optimisation in some settings, and that choices move in this direction.</p></li>
-<li><p>There is also evidence of ‘predictable irrationality’ (or ’bounded rationality); this motivates behavioural economics. There is also some evidence for the following (unfold).</p></li>
-</ul>
-
-<div class="fold">
-<ol style="list-style-type: decimal">
-<li>Psychological costs/benefits relating to <em>outcomes other than their own final consumption</em>. People may care about</li>
-</ol>
-<ul>
-<li>others’ consumption (altruism etc.),</li>
-<li>about the way they <em>make</em> the decision</li>
-<li>… and about how close they come to certain goals (see ‘reference points’ and ‘loss aversion’).</li>
-</ul>
-<ol start="2" style="list-style-type: decimal">
-<li><p>People have self-control problems. They also may realize their short-term choices are not in their lt interest, and try to constrain themselves.</p></li>
-<li><p>It is mentally costly to carefully calculate the costs and benefits <span class="math inline">\(\rightarrow\)</span> ‘rational inattention’</p></li>
-</ol>
-<ul>
-<li>As a result, people may follow simple rules or ‘heuristics’ to make their decisions easier; e.g., ‘work every day until I’ve earned target income’.</li>
-</ul>
-</div>
-</div>
-<div id="the-ppf-a-model-and-a-way-of-seeing-things" class="section level3" number="1.3.2">
-<h3><span class="header-section-number">1.3.2</span> The PPF: a ‘model’ and a way of seeing things</h3>
-
-<div class="note">
-<p>At this point we consider a simple and specific model to fix ideas, to make things less abstract. The NS text brings up the production possibility frontier; this is a common example to start with, although by itself it could be argued that ‘the insights gained are basically by assumption’ … there is not really an additional reasoning step. Perhaps a better depiction of this example is in <a href="https://open.umn.edu/opentextbooks/textbooks/microeconomics-markets-methods-and-models">the Curtis and Irvine open access text</a>, sections 1.3-1.5, where they consider two individuals with distinct production possibilities, and derive the ‘aggregate’ ppf, and show the gains to trade.</p>
-</div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-59"></span>
-<img src="picsfigs/ppf_cc.png" alt="Production possibility frontier" width="80%" height="75%" />
-<p class="caption">
-Figure 1.1: Production possibility frontier
-</p>
-</div>
-<div class="marginnote">
-<p>PPF file source <a href="https://commons.wikimedia.org/wiki/File:Production_Possibilities_Frontier_Curve.svg">LINK</a>, User:Everlong, CC-BY-SA-3.0)</p>
-</div>
-<p>Above, we see a depiction of the “production possibility frontier”. You may be familiar with this from your previous study. The PPF describes the maximum amount of one good that can be produced conditional on a certain quality of another good being produced.</p>
-<p>According to <span class="citation">(Nicholson and Christoper <a href="#ref-nicholsonIntermediateMicroeconomicsIts2007" role="doc-biblioref">2007</a>)</span></p>
-<p>The PPF illustrates key principles:</p>
-<ol style="list-style-type: decimal">
-<li><p>Scarce Resources</p></li>
-<li><p>Scarcity involves opportunity cost.</p></li>
-</ol>
-<div class="marginnote">
-<ul>
-<li>The opportunity cost of a good is measured by the alternative uses that are foregone producing it.</li>
-<li>On the PPF above the opportunity cost of more guns is less butter.</li>
-<li>The opportunity cost of a choice is the foregone ‘next best’ opportunity from a choice.</li>
-<li>I may just call this ‘cost’</li>
-</ul>
-</div>
-
-<div class="inputq">
-<p>Can you think of an example that illustrates the distinction between what is commonly thought of as the ‘cost’ and the economists’ definition of an ‘opportunity cost’?</p>
-</div>
-<ol start="3" style="list-style-type: decimal">
-<li>Opportunity costs are (often) increasing.</li>
-</ol>
-<ul>
-<li><p>What this means is that as you produce more of one good, its opportunity cost (in terms of the other good foregone) increases.</p></li>
-<li><p>The “law” of diminishing marginal returns.</p></li>
-</ul>
-<div class="marginnote">
-<p>I’m somewhat sceptical of this being a ‘law’; there are certainly increasing returns in certain regions. However, you will see it again and again as it is a fairly standard assumption.</p>
-</div>
-<p><br></p>
-<p><strong>However</strong></p>
-<p>I’m not sure if I would call this a ‘model’. It certainly provides a way of visualizing the trade-offs in an economy, and the way it is drawn embody certain assumptions.</p>
-<div class="marginnote">
-<p>This graphic has a mathematical representation which we will not cover now.</p>
-</div>
-<p>Consider: How could we make this a meaningful ‘model with assumptions’? <em>I could imagine it as below (unfold).</em></p>
-
-<div class="fold">
-<p>To make this more clearly a ‘model with assumptions’, let’s assume an economy with</p>
-<ol style="list-style-type: decimal">
-<li><p>Two possible goods: food and clothing</p></li>
-<li><p>A single input into the production process for either good labour (L)</p></li>
-<li><p>The economy has a fixed supply of labour <span class="math inline">\(\bar{L}\)</span>.</p></li>
-<li><p>The production function for food is <span class="math inline">\(F_f(L)\)</span> and the production function for clothing is <span class="math inline">\(F_c(L)\)</span>, with both ‘strictly and continuously increasing in their argument’. All firms have these same production functions (this implies there are no spillovers/externalities between firms, and no complementarities between producing each good)</p></li>
-<li><p>Both production functions exhibit diminishing returns to scale (we leave off the maths for how to precisely define this for now)</p></li>
-</ol>
-</div>
-<p>These assumptions in the fold above could be considered a ‘model’ of an economy. Note that not everything has been specified. E.g., we might ask: i. How many firms are there? ii. How do the firms compete in output and input markets? iii. What exactly are these production functions? There are also clearly unrealistic elements, e.g.: i. Only two goods, ii. Only one input, iii. No complementarities in production</p>
-<p>Still, the assumptions given will yield a PPF with the shape above: the ‘feasible production set’ of the economy will have a particular shape. It’s ‘maximal elements’ constitute the ‘frontier’ of this set, which will be:</p>
-<ul>
-<li><p>downward-sloping, because each unit of the input (<span class="math inline">\(L\)</span>) used to produce clothing cannot be used to produce food, and</p></li>
-<li><p>concave (increasing opportunity costs), because of the diminishing returns to scale for each good … as more labour is diverted to clothing away from food, it becomes less and less relatively productive.</p></li>
-</ul>
-<p>This seems to convey an insight that 1. teaches us a way of thinking and 2. seems likely to carry over into more ‘realistic’ models. At the very least, it suggests that, under any economic system, there <em>may</em> be tradeoffs between how much of each good or service can be consumed. E.g., policymakers may need to consider ‘should we have more health care or more non-health consumption’, rather than simply saying ‘we should provide the best health care that money can buy to everyone.’</p>
-<div class="marginnote">
-<p>One might at this point raise the ‘paradox of analysis’: we have stated a set of ‘assumptions’ and then noted what logically follows. But actually, the ‘results’ and the assumptions are basically logically equivalent. So have we simply defined the answer we wanted to get, i.e., circular reasoning? This is a deeply philosophical issue.</p>
-</div>
-<p>The ‘<em>increasing</em> opportunity costs’ insight seems more fragile, more dependent on a fairly strong assumption. How do we know that there are diminishing returns to scale for each good? There are plausible reasons why it may be the opposite… returns to specialisation as an economy, etc.</p>
-<p>Furthermore, the model at <em>this</em> level of simplicity cannot speak to a number of questions. E.g., without a sense of the market structure (how many firms and how do they compete), we do not know whether we will <em>attain</em> the PPF– the economy may end up producing at the inferior point ‘C’, for example.</p>
-<p>A ‘simpler’ model is not necessarily better, nor necessarily worse.</p>
-<div class="marginnote">
-<p>For comprehension: <em>Be sure you can draw the PPF; consider its slope and what it means</em></p>
-</div>
-</div>
-<div id="supply-and-demand-functions-the-marshallian-cross-equilibrium-effects" class="section level3 unnumbered" number="">
-<h3>“Supply and demand functions”, the “Marshallian cross”, “equilibrium effects”</h3>
-<p>Perhaps the most famous model from micro-economics is what is often called ‘supply and demand’, the ‘Marshallian cross’.</p>
-<div class="marginnote">
-<p>I try to avoid the terms ‘supply’ or ‘demand’ because it confuses whether we are referring to:</p>
-<ol style="list-style-type: decimal">
-<li>Supply curves and demand curves (or functions) <em>or</em></li>
-<li><em>Quantities</em> exchanged (in equilibrium quantity demanded will equal quantity supplied in each market.</li>
-</ol>
-</div>
-<p>Is this helpful in explaining the real world?</p>
-<p>Does it make better predictions than other approaches might do in terms of… (for example)?</p>
-<ul>
-<li>The impact of taxes on prices and quantities exchanged?</li>
-<li>The response of oil prices to events like the Coronavirus pandemic?</li>
-<li>Whether a tradesperson would find it profitable to increase his or her price when she seems to be getting more orders than she can handle?</li>
-</ul>
-<div class="marginnote">
-<p>Of course the simple model predicts that she should raise her prices in this situation… so there should never be a ‘shortage’ unless prices are restrained. However, when I tried to hire a plumber in Exeter in 2017 I was repeatedly told ‘everyone is too busy’, not ‘rates are very high these days’. What could explain this?</p>
-</div>
-<p><br />
-</p>
-</div>
-<div id="models-applied-in-the-context-of-returns-to-university-education" class="section level3 unnumbered" number="">
-<h3>Models applied in the context of “returns to university education”</h3>
-<p>We may ask a question something like:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="monopoly-pricing-an-example-using-r.html#cb17-1"></a><span class="co"># Calculate total cost</span></span>
+<span id="cb17-2"><a href="monopoly-pricing-an-example-using-r.html#cb17-2"></a>qd.gain &lt;-<span class="st"> </span>qd[<span class="op">-</span><span class="kw">length</span>(qd)]<span class="op">-</span>qd[<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb17-3"><a href="monopoly-pricing-an-example-using-r.html#cb17-3"></a>qd.gain[<span class="kw">length</span>(qd.gain)<span class="op">+</span><span class="dv">1</span>] &lt;-<span class="st"> </span>qd.gain[<span class="kw">length</span>(qd.gain)]</span>
+<span id="cb17-4"><a href="monopoly-pricing-an-example-using-r.html#cb17-4"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(op)) tc[i] &lt;-<span class="st"> </span><span class="kw">sum</span>((mc<span class="op">*</span>qd.gain)[<span class="kw">length</span>(qd)<span class="op">:</span>i])</span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="monopoly-pricing-an-example-using-r.html#cb18-1"></a>tr &lt;-<span class="st"> </span>qd<span class="op">*</span>op</span>
+<span id="cb18-2"><a href="monopoly-pricing-an-example-using-r.html#cb18-2"></a>tp &lt;-<span class="st"> </span>tr<span class="op">-</span>tc</span>
+<span id="cb18-3"><a href="monopoly-pricing-an-example-using-r.html#cb18-3"></a> </span>
+<span id="cb18-4"><a href="monopoly-pricing-an-example-using-r.html#cb18-4"></a>minmax &lt;-<span class="st"> </span><span class="cf">function</span>(...) <span class="kw">c</span>(<span class="kw">min</span>(...),<span class="kw">max</span>(...))</span>
+<span id="cb18-5"><a href="monopoly-pricing-an-example-using-r.html#cb18-5"></a></span>
+<span id="cb18-6"><a href="monopoly-pricing-an-example-using-r.html#cb18-6"></a><span class="kw">plot</span>(<span class="kw">minmax</span>(op),<span class="kw">minmax</span>(tr,tp), <span class="dt">type=</span><span class="st">&quot;n&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;Cost / Profit&quot;</span>, </span>
+<span id="cb18-7"><a href="monopoly-pricing-an-example-using-r.html#cb18-7"></a>     <span class="dt">xlab=</span><span class="st">&quot;Price&quot;</span>, </span>
+<span id="cb18-8"><a href="monopoly-pricing-an-example-using-r.html#cb18-8"></a>     <span class="dt">main=</span><span class="st">&quot;We can see optimal pricing for the monopolist is around 39 dollars&quot;</span>)</span>
+<span id="cb18-9"><a href="monopoly-pricing-an-example-using-r.html#cb18-9"></a></span>
+<span id="cb18-10"><a href="monopoly-pricing-an-example-using-r.html#cb18-10"></a><span class="kw">grid</span>()</span>
+<span id="cb18-11"><a href="monopoly-pricing-an-example-using-r.html#cb18-11"></a><span class="kw">abline</span>(<span class="dt">h=</span><span class="dv">0</span>, <span class="dt">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb18-12"><a href="monopoly-pricing-an-example-using-r.html#cb18-12"></a><span class="kw">abline</span>(<span class="dt">v=</span><span class="dv">39</span>, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>, <span class="dt">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb18-13"><a href="monopoly-pricing-an-example-using-r.html#cb18-13"></a><span class="kw">lines</span>(op,tr, <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>, <span class="dt">lwd=</span><span class="dv">3</span>)</span>
+<span id="cb18-14"><a href="monopoly-pricing-an-example-using-r.html#cb18-14"></a><span class="kw">lines</span>(op,tp, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>, <span class="dt">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb18-15"><a href="monopoly-pricing-an-example-using-r.html#cb18-15"></a><span class="kw">legend</span>(<span class="dv">65</span>, <span class="dt">y =</span> <span class="dv">45000</span>, <span class="dt">legend=</span><span class="kw">c</span>(<span class="st">&quot;Total revenue&quot;</span>, <span class="st">&quot;Total profit&quot;</span>), <span class="dt">col=</span><span class="kw">c</span>(<span class="st">&quot;blue&quot;</span>, <span class="st">&quot;red&quot;</span>), <span class="dt">lty=</span><span class="dv">1</span>, <span class="dt">cex=</span><span class="fl">0.72</span>)</span></code></pre></div>
+<p><img src="Microeconomics-MSc_files/figure-html/unnamed-chunk-382-1.png" width="80%" style="display: block; margin: auto;" /></p>
+<p>The monopolist calculates total revenue and total profit for each price.</p>
 <blockquote>
-<p>Is it worth the cost and time for the typical US high-school student to enroll in university (‘college’)?</p>
+<p>We can see at the price around 18 which would be the optimal price for the consumer, the supplier is making almost no profits.</p>
 </blockquote>
-<p>In the US private university tuitions run at over £40,000 per year (for a four-year course!) There is constant popular (and academic) discussion of this. See some links below the fold.</p>
-
-<div class="fold">
-<ul>
-<li><p><a href="https://www.forbes.com/sites/dereknewton/2018/12/16/please-stop-asking-whether-college-is-worth-it/">Please stop asking whether college is worth it</a></p></li>
-<li><p><a href="https://www.theguardian.com/commentisfree/2018/mar/16/university-degree-measure-benefits-tuition-fees">Is your university degree barely worth the paper it’s written on? Discuss</a></p></li>
-<li><p><a href="https://blogs.lse.ac.uk/lsereviewofbooks/2018/05/30/book-review-the-case-against-education-why-the-education-system-is-a-waste-of-time-and-money-by-bryan-caplan/">The case against education, Bryan Caplan; LSE review</a></p></li>
-</ul>
-<p><br />
-</p>
-<p><em>Note: the above are popular accounts, not academic Economic peer-reviewed publications.</em></p>
-<p>For some fairly recent academic references, see (e.g.) <span class="citation">(Carneiro <a href="#ref-Carneiro2011" role="doc-biblioref">2011</a>)</span>, papers cited wihin this, and papers citing it. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4126808/">Link to paper</a></p>
-</div>
-<p><em>Consider:</em></p>
-<ol style="list-style-type: decimal">
-<li>How would you frame the above question, as an economist, in terms of things that can be defined and measured?</li>
-</ol>
-<p><br />
-</p>
-<ol start="2" style="list-style-type: decimal">
-<li>What does the answer to the question depend on, from an economics perspective?</li>
-</ol>
-<p>This involves microeconomic concepts such as (unfold)</p>
-
-<div class="fold">
-<ul>
-<li><p>Returns to labour inputs in (competitive?) markets; human capital</p></li>
-<li><p>The role of skilled labor in the production function</p></li>
-<li><p>Asymmetric information over employee ‘type’ and ‘signaling’</p></li>
-<li><p>Intertemporal substitution of consumption and ‘discount rates’</p></li>
-</ul>
-<p>Even framing the question requires microeconomics.</p>
-<p>Consider: Social vs private returns. Is there a case for ‘market failure’ in the provision of education?</p>
-</div>
-<p><br />
-</p>
-<ol start="3" style="list-style-type: decimal">
-<li>How would you measure this <em>empirically</em>? (some thoughts in the fold)</li>
-</ol>
-
-<div class="fold">
-<p>Empirical ‘identification’ is very difficult. Suppose you simply compared the incomes of those who did and didn’t go to university. These is a well known ‘endogeneity’ or ‘omitted variable bias’ problem here. It seems reasonable to think:</p>
-<p>“…compared to those who did not go to university, those who went to university would have tended to earn more (and perhaps to be more socially productive) <em>even if they had not gone to university</em>.” So how can we identify the actual <em>effect</em> of university on their outcomes.</p>
-<p>We have a set of other approaches that arguably allow us to answer this ‘causal question’… see further discussions on ‘causal inference’, causal econometrics, and in ‘empirical labor economics’.</p>
-<p>These approaches generally involve either:</p>
-<ol style="list-style-type: decimal">
-<li><p>Very careful ‘control strategies’ to try to compare observably similar people who did or did not attend university <em>or</em></p></li>
-<li><p>Something approximately equivalent to a ‘natural experiment’ (‘instrumental variables’, lottery assignments, ‘regression discontinuities’, etc.)</p></li>
-</ol>
-</div>
-<p><br />
-</p>
-</div>
-<div id="how-to-evaluate-asses-and-test-models" class="section level3 unnumbered" number="">
-<h3>How to evaluate, asses, and test models?</h3>
-<p>Unsurprisingly, there are a variety of opinions as to how to asses the value of a model. Some considerations include their ‘elegance’ (which is a bit vague), their ‘insightfulness’, ‘how many predictions are generated from the fewest assumptions’, the ‘simplicity’ of the model, and other somewhat-difficult to asses concerns.</p>
-<p>As models are simplifications, it is not always clear what it would mean to ‘test their validity’ in terms of the real world.</p>
-<p>We might consider two broad approaches:</p>
-<ol style="list-style-type: decimal">
-<li><p>Testing Assumptions: Examining the validity of <em>assumptions</em> upon which models are based. (Is it reasonable to assume that people are rational, that firms maximize profits etc.?)</p></li>
-<li><p>Testing Predictions (of the models): Can the model accurately <em>predict</em> real-world events (in the context which it purports to?) If the model predicts events well, then the theory is useful even if the assumption may not appear to be valid.</p></li>
-</ol>
-<div class="marginnote">
-<p>DR: But if the assumptions are substantially wrong, it may predict well in one particular case but not in general.</p>
-</div>
-<p><br />
-</p>
-<p>Consider: Should we ever ‘test assumptions’? (Unfold)</p>
-
-<div class="fold">
-<p>Some authors (e.g., the undergraduate textbook <span class="citation">(Nicholson and Christoper <a href="#ref-nicholsonIntermediateMicroeconomicsIts2007" role="doc-biblioref">2007</a>)</span>) are somewhat dismissive of the idea of testing assumptions.</p>
-<p>However, there are many cases in which the <em>predictions</em> of the models are very hard to test; e.g., the impact of a radical change in government policy or the merger of the two largest firms. On the other hand, in many cases the key assumptions entering into models, such as ‘constant relative risk aversion’ or ‘geometric discounting’ can be very credibly tested. We can use existing micro data on thousands of household decisions, as well as experiments, to measure ‘how close’ behavior is to the assumption.</p>
-</div>
-<p><br />
-</p>
-<p>There is also substantial debate over what it means, and whether/when it is valuable to ‘test an Economic model in the laboratory’. See the discussion by <a href="https://ueaeco.github.io/working-papers/papers/cbess/UEA-CBESS-11-08.pdf">Sugden and Sitzia, 2011; “Implementing theoretical models in the laboratory, and what this can and cannot achieve.”</a></p>
-</div>
-</div>
-<div id="aside-empirical-workeconometrics" class="section level2" number="1.4">
-<h2><span class="header-section-number">1.4</span> Aside: Empirical work/econometrics</h2>
-<p>I want you to have a sense of what this is, and how it connects to economic theory. This is relevant background for the present module, and extremely important for your later research/dissertation work (and it may give some perspective for other modules like Econometrics). I give a supplement on this which I highly recommend reading in supplement <a href="supplements.html#empir-research">9.4</a> <a href="supplements.html#empir-research">‘Empirical research’</a>.</p>
-</div>
-</div>
-<h3>References</h3>
-<div id="refs" class="references">
-<div id="ref-Akerlof1970">
-<p>Akerlof, George A. 1970. “The Market for" Lemons": Quality Uncertainty and the Market Mechanism.” <em>The Quarterly Journal of Economics</em>, 488–500. <a href="https://doi.org/10.2307/1879431">https://doi.org/10.2307/1879431</a>.</p>
-</div>
-<div id="ref-Carneiro2011">
-<p>Carneiro, P. 2011. “Estimating Marginal Returns to Education.” <em>The American Economic …</em>. <a href="https://doi.org/10.1257/aer.101.6.2754">https://doi.org/10.1257/aer.101.6.2754</a>.</p>
-</div>
-<div id="ref-friedmanMethodologyPositiveEconomics1953">
-<p>Friedman, Milton. 1953. “The Methodology of Positive Economics.” <em>The Philosophy of Economics: An Anthology</em> 2: 180–213.</p>
-</div>
-<div id="ref-nicholsonIntermediateMicroeconomicsIts2007">
-<p>Nicholson, Walter, and Snyder Christoper. 2007. <em>Intermediate Microeconomics: And Its Applications/by Walter Nicholson.</em> POS 339.23 N52 2007.</p>
-</div>
-<div id="ref-Sugden2017">
-<p>Sugden, Robert. 2017. “Credible Worlds : The Status of Theoretical Models in Economics.”</p>
-</div>
+<blockquote>
+<p>The last thing we might wish to consider to Total Surplus or total system efficiency which is defined as that which the consumer benefits by purchasing a good below the consumers willingness to pay plus that of the suppliers profit at that price.</p>
+</blockquote>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="monopoly-pricing-an-example-using-r.html#cb19-1"></a>cs &lt;-<span class="st"> </span>tr</span>
+<span id="cb19-2"><a href="monopoly-pricing-an-example-using-r.html#cb19-2"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(op)) cs[i] &lt;-<span class="st"> </span><span class="kw">sum</span>((wtp[wtp<span class="op">&gt;=</span>op[i]]<span class="op">-</span>op[i]))</span>
+<span id="cb19-3"><a href="monopoly-pricing-an-example-using-r.html#cb19-3"></a> </span>
+<span id="cb19-4"><a href="monopoly-pricing-an-example-using-r.html#cb19-4"></a>tts &lt;-<span class="st"> </span>cs<span class="op">+</span>tp</span>
+<span id="cb19-5"><a href="monopoly-pricing-an-example-using-r.html#cb19-5"></a> </span>
+<span id="cb19-6"><a href="monopoly-pricing-an-example-using-r.html#cb19-6"></a>op[tts<span class="op">==</span><span class="kw">max</span>(tts)] <span class="co"># Check the optimal societal price</span></span></code></pre></div>
+<pre><code>## [1] 19</code></pre>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="monopoly-pricing-an-example-using-r.html#cb21-1"></a><span class="kw">plot</span>(<span class="kw">c</span>(<span class="kw">min</span>(op),<span class="kw">max</span>(op)),<span class="kw">c</span>(<span class="kw">min</span>(cs,tp),<span class="kw">max</span>(cs,tp)), <span class="dt">type=</span><span class="st">&quot;n&quot;</span>,</span>
+<span id="cb21-2"><a href="monopoly-pricing-an-example-using-r.html#cb21-2"></a>     <span class="dt">main=</span><span class="st">&quot;How does surplus vary for different prices?&quot;</span>,</span>
+<span id="cb21-3"><a href="monopoly-pricing-an-example-using-r.html#cb21-3"></a>     <span class="dt">xlab=</span><span class="st">&quot;Price&quot;</span>,</span>
+<span id="cb21-4"><a href="monopoly-pricing-an-example-using-r.html#cb21-4"></a>     <span class="dt">ylab=</span><span class="st">&quot;Surplus&quot;</span>)</span>
+<span id="cb21-5"><a href="monopoly-pricing-an-example-using-r.html#cb21-5"></a><span class="kw">lines</span>(op, cs, <span class="dt">col=</span><span class="st">&quot;purple&quot;</span>, <span class="dt">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb21-6"><a href="monopoly-pricing-an-example-using-r.html#cb21-6"></a><span class="kw">lines</span>(op, tp, <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>, <span class="dt">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb21-7"><a href="monopoly-pricing-an-example-using-r.html#cb21-7"></a><span class="kw">lines</span>(op, tts, <span class="dt">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb21-8"><a href="monopoly-pricing-an-example-using-r.html#cb21-8"></a><span class="kw">abline</span>(<span class="dt">h=</span><span class="dv">0</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>, <span class="dt">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb21-9"><a href="monopoly-pricing-an-example-using-r.html#cb21-9"></a><span class="kw">legend</span>(<span class="dv">60</span>, <span class="dv">75000</span>, <span class="dt">legend=</span><span class="kw">c</span>(<span class="st">&quot;Consumer surplus&quot;</span>, <span class="st">&quot;Producer surplus&quot;</span>, <span class="st">&quot;Total surplus&quot;</span>), <span class="dt">col=</span><span class="kw">c</span>(<span class="st">&quot;purple&quot;</span>,<span class="st">&quot;blue&quot;</span>,<span class="st">&quot;black&quot;</span>),<span class="dt">lty=</span><span class="dv">1</span>)</span></code></pre></div>
+<p><img src="Microeconomics-MSc_files/figure-html/unnamed-chunk-383-1.png" width="80%" style="display: block; margin: auto;" />
+We know that the optimal price for society is where <span class="math inline">\(P = MC\)</span> which is £19. We can see from the above graph that this is the peak of the total surplus curve.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="outline.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="intro-exercise.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="exercises-pricingmonopolyprice-discrimination-simpler.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="exercises-price-discrimination-and-segmentation-pricing-mechanisms-intro-to-strategic-interaction.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="book_assets/gitbook-2.6.7/js/app.min.js"></script>

@@ -10527,7 +10527,7 @@ When I ask about the welfare effect of price discrimination, students often ment
 This yields another mechanism design 'hidden information' 'principal-agent problem'
 
 
-# Exercises: Pricing/monopoly/price-discrimination (simpler) 
+# Exercises: Pricing/monopoly/price-discrimination (simpler)  {-}
 
 ```{block2,  type='note'}
 
@@ -10565,7 +10565,125 @@ You should identify the DWL of monopoly as a reduction in top-level (allocative)
 
 ```
 
-# Exercises: Price discrimination and segmentation, 'pricing mechanisms'; intro to strategic interaction
+# Monopoly pricing: An example using R {-}
+
+Adapted from: [Econometrics by Simulation](http://www.econometricsbysimulation.com/2013/07/optimal-pricing-for-simple-monopolist.html)
+
+Our monopolist is a broadband internet supplier within a city. Suppose for now that they only offer one bundle. For now we will consider a scenario with 2000 potential consumers but this can be changed by altering the `npeep` variable. For each of these consumers we generate a willingness to pay for broadband internet (internet). If we assume that each consumer has a willingness to pay of £45 then we can add an error term to this in order to simulate variation between consumers. To do this we use the `rnorm` function which draws a random sample from the normal distribution.
+
+```{r}
+
+npeep <- 2000 # Number of potential consumers
+
+wtp <- 45 + rnorm(npeep)*15 # Each person has a different willingness to pay 
+
+```
+
+> To figure out the demand curve we count the number of people willing to pay at least as much as the offering price.
+
+If we set the maximum offering price to 90 then we consider that offering prices can be (for simplicity) any integer between 0 and 90. From this we sum the number of consumers who have a willingness to pay above the offering price in order to give us a vector of quantity demanded at each price level.
+
+```{r}
+
+maxop <- 90 # Max offering price
+op <- 0:maxop # Offering price ranges from 0 to maxop i.e 0,1, ... 90
+
+qd <- rep(NA,length(op)) # Empty vector for quantity demanded
+for (i in 1:length(op)) qd[i] <- sum(wtp>=op[i]) # We fill qd with the number of consumers with a wtp >= offering price
+```
+
+\
+
+We assume:
+
+> Marginal cost is increasing though this is not a necessity. For something like broadband services we might think that up to a point marginal costs might be decreasing since the cost of adding one more customer might be less than the cost of adding the previous customer.
+
+In our $MC = 0.01(q_d)$
+
+```{r}
+mc <- qd*.01 # Setting marginal cost
+```
+
+\
+
+Now we plot quantity demanded as a function of price:
+
+
+```{r}
+
+plot(qd, op, type="l", xlab="Quantity", ylab="Price / Cost", 
+      main="Demand for Broadband Internet", lwd=2)
+abline(h=0, lwd=2)
+lines(qd, mc, col="red", lwd=2)
+legend(1450, 75, legend=c("Price", "Marginal Cost"), col=c("black", "red"), lty=1)
+
+```
+
+> The monopolist must choose a price in which to sell services at. If the monopolist chooses $MC=P$ then the monopolist will not make any money but the consumers will be very happy. We know that the optimal point for the monopolist is at the point where marginal revenue curve intersects the marginal cost curve. Let's see if we can find it.
+
+```{r}
+
+tr <- tp <- tc <- rep(NA,length(op)) # Total revenue, total profit, total cost vectors
+
+```
+
+\
+
+```{r}
+# Calculate total cost
+qd.gain <- qd[-length(qd)]-qd[-1]
+qd.gain[length(qd.gain)+1] <- qd.gain[length(qd.gain)]
+for (i in 1:length(op)) tc[i] <- sum((mc*qd.gain)[length(qd):i])
+```
+
+```{r}
+
+tr <- qd*op
+tp <- tr-tc
+ 
+minmax <- function(...) c(min(...),max(...))
+
+plot(minmax(op),minmax(tr,tp), type="n", ylab="Cost / Profit", 
+     xlab="Price", 
+     main="We can see optimal pricing for the monopolist is around 39 dollars")
+
+grid()
+abline(h=0, lwd=2)
+abline(v=39, col="red", lwd=2)
+lines(op,tr, col="blue", lwd=3)
+lines(op,tp, col="red", lwd=2)
+legend(65, y = 45000, legend=c("Total revenue", "Total profit"), col=c("blue", "red"), lty=1, cex=0.72)
+```
+
+The monopolist calculates total revenue and total profit for each price.
+
+> We can see at the price around 18 which would be the optimal price for the consumer, the supplier is making almost no profits.
+
+> The last thing we might wish to consider to Total Surplus or total system efficiency which is defined as that which the consumer benefits by purchasing a good below the consumers willingness to pay plus that of the suppliers profit at that price.
+
+```{r}
+
+cs <- tr
+for (i in 1:length(op)) cs[i] <- sum((wtp[wtp>=op[i]]-op[i]))
+ 
+tts <- cs+tp
+ 
+op[tts==max(tts)] # Check the optimal societal price
+ 
+plot(c(min(op),max(op)),c(min(cs,tp),max(cs,tp)), type="n",
+     main="How does surplus vary for different prices?",
+     xlab="Price",
+     ylab="Surplus")
+lines(op, cs, col="purple", lwd=2)
+lines(op, tp, col="blue", lwd=2)
+lines(op, tts, lwd=2)
+abline(h=0,col="red", lwd=2)
+legend(60, 75000, legend=c("Consumer surplus", "Producer surplus", "Total surplus"), col=c("purple","blue","black"),lty=1)
+
+```
+We know that the optimal price for society is where $P = MC$ which is £19. We can see from the above graph that this is the peak of the total surplus curve.
+
+# Exercises: Price discrimination and segmentation, 'pricing mechanisms'; intro to strategic interaction {-}
 
 ```{block2,  type='note'}
 
