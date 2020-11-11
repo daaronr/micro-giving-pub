@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
 
 
-<meta name="date" content="2020-11-10" />
+<meta name="date" content="2020-11-11" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -795,9 +795,6 @@ Add graphical depiction here
 </div>
 <div id="monopolistic-market-profit-maximization-o-r-formal-depiction-and-advanced-insights" class="section level2" number="5.3">
 <h2><span class="header-section-number">5.3</span> Monopolistic market, profit-maximization: O-R formal depiction and advanced insights</h2>
-<div class="marginnote">
-<p>Content to be included/summarised here from O-R 7.1-7.2</p>
-</div>
 <p>O-R formally define a monopolistic market. Their definition and approach is unusual because:</p>
 <div class="marginnote">
 <p>Note that they are defining the ‘primitives’ of such a market in a way that allows one to apply rigorous math proofs and (potentially) define an ‘equilibrium’.</p>
@@ -902,7 +899,7 @@ O-R definitions …</p>
 <p><br />
 </p>
 <p>However, for every increase in quantity the price must fall somewhat, which itself reduces revenue. The necessary marginal drop in price <span class="math inline">\(P&#39;(y)\)</span> need not be constant, it may be increasing or decreasing, i.e., <span class="math inline">\(P′′(y)\)</span> may be positive or negative in any region. Thus, it’s possible that for increases in quantity from a <em>larger</em> starting quantity, the necessary reduction in price is relatively much <em>smaller</em> than it was when increasing quantity from a smaller base, leading to a lower loss of revenue than before, and even outweighing the effect in the previous paragraph.</p>
-<p>This is illustrated in O-R example 7.1, depicting three consumers with ‘maximum willingness to pay’ of 10, 6, and 5, respectively:</p>
+<p>This is illustrated in O-R example 7.1 involving ‘unit demand’ rather than a continuous demand function, depicting three consumers with ‘maximum willingness to pay’ of 10, 6, and 5, respectively:</p>
 <table>
 <thead>
 <tr class="header">
@@ -936,6 +933,28 @@ O-R definitions …</p>
 <p><br />
 </p>
 <p>Above, we see that increasing the quantity <span class="math inline">\(y\)</span> from 1 to 2 requires reducing price from £10 to £6, and thus increasing revenue by only £2. However, increasing the quantity from 2 to 3 requires reducing price by only £1 further, and thus increasing revenue by £3. Although the latter price decrease ‘operates on more prior units’ (2 rather than 1), it is a much smaller price decrease (£1 reduction rather than a £4 reduction), outweighing the ‘volume effect’.</p>
+<p><em>Explaining O-R notation for example 7.1 in response to a student question</em>:</p>
+
+<div class="fold">
+<p>Student:</p>
+<blockquote>
+<p>how [did] they ‘derive’ <span class="math inline">\(MR(y ) = P(y )y − P(y − 1)(y − 1)\)</span>, for the indivisible good. I understand how to reach definition 7.3 but am stuck applying it to this example.</p>
+</blockquote>
+<p><br />
+</p>
+<p><em>Teacher:</em></p>
+<p>Yes – I think you might be misunderstanding the definition or notation.</p>
+<p><span class="math inline">\(P(.)\)</span> is a function here, the inverse demand. So <span class="math inline">\(P(y)\)</span> tells me ‘how much can I charge at most, and still sell <span class="math inline">\(y\)</span> units’.</p>
+<p>They <em>define</em> <span class="math inline">\(MR\)</span> as ‘the increase in revenue when I sell one more unit’.</p>
+<ul>
+<li><p>Sell 0 units – 0 revenue.</p></li>
+<li><p>Sell 1 unit, can charge at most £10 … so <span class="math inline">\(P(1)=10\)</span>, and <span class="math inline">\(Revenue(1) = P(1) \times 1 = 10 \times 1=10\)</span></p></li>
+<li><p>Sell 2 units, can charge at most 6, so <span class="math inline">\(P(2) = 6\)</span>, and <span class="math inline">\(Revenue(2) = P(2)\times 2 = 6 \times 2=12\)</span></p></li>
+</ul>
+<p>Thus, by their definition, <span class="math inline">\(MR(y) = P(y)y −P(y −1)(y −1)\)</span>,
+we have <span class="math inline">\(MR(2)=P(2) \times 2 - P(2-1)\times(2-1) = 6 \times 2 - 10 \times 1 = 12-10 = 2\)</span></p>
+<p>(Also <span class="math inline">\(MR(2) = Revenue(2) - Revenue(1)\)</span>).</p>
+</div>
 <p><br />
 </p>
 <p>The fact that <span class="math inline">\(MR\)</span> need not be everywhere downward sloping means that the <span class="math inline">\(MR(y)=MC(y)\)</span> condition for profit maximizing output <span class="math inline">\(y\)</span> is a necessary condition but not a sufficient condition.*</p>
@@ -1047,7 +1066,7 @@ and now as the ‘markup as a fraction of the price charged’, the so-called �
 </ul>
 <p><br />
 </p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-341"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-342"></span>
 <img src="picsfigs/dwl_monop_mcafee_explanation.png" alt="Source: McAfee et al. " width="95%" />
 <p class="caption">
 Figure 5.2: Source: McAfee et al. 
@@ -1237,7 +1256,7 @@ What other barriers might exist?
 </p>
 <p>This does not deal with differences amongst consumers. It may ‘’force the firm to target a particular group’’, such as the wealthy, reducing its total sales.</p>
 <p>Under monopoly, uniform pricing leads to a deadweight loss, as we have already seen:</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-354"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-355"></span>
 <img src="picsfigs/dwl_monop_mcafee.png" alt="Source: McAfee et al. " width="50%" />
 <p class="caption">
 Figure 5.3: Source: McAfee et al. 
@@ -1249,7 +1268,7 @@ Figure 5.3: Source: McAfee et al. 
 <div class="marginnote">
 <p><strong>Note</strong>: I would say that an auction <em>might</em> lead to outcomes resembling perfect price discrimination, where the seller captures most of the consumers’ valuations. But this is a whole field of study, ‘Auction theory’, which engages the issues of Asymmetric information and Mechanism design (principle/agent models).</p>
 </div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-355"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-356"></span>
 <img src="picsfigs/saylor_single_price.png" alt="Source: Saylor Academy" width="80%" />
 <p class="caption">
 Figure 5.4: Source: Saylor Academy
@@ -1257,7 +1276,7 @@ Figure 5.4: Source: Saylor Academy
 </div>
 <p><br />
 </p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-356"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-357"></span>
 <img src="picsfigs/saylor_ppd_auction.png" alt="Source: Saylor Academy" width="80%" />
 <p class="caption">
 Figure 5.5: Source: Saylor Academy
