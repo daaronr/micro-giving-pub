@@ -2,7 +2,17 @@
 
 Adapted from: [Econometrics by Simulation](http://www.econometricsbysimulation.com/2013/07/optimal-pricing-for-simple-monopolist.html)
 
-Our monopolist is a broadband internet supplier within a city. Suppose for now that they only offer one bundle. For now we will consider a scenario with 2000 potential consumers but this can be changed by altering the `npeep` variable. For each of these consumers we generate a willingness to pay for broadband internet (internet). If we assume that each consumer has a willingness to pay of £45 then we can add an error term to this in order to simulate variation between consumers. To do this we use the `rnorm` function which draws a random sample from the normal distribution.
+```{block2,  type='note'}
+Remember, you can 'hide the code' with the 'hide global' button in the upper right of this screen.
+
+```  
+
+<div class="marginnote">
+Note that the modern use of the term 'Econometrics' tends to refer to the analysis of *real* data, not simulated data. 
+</div>
+ 
+
+> Our monopolist is a broadband internet supplier within a city. Suppose for now that they only offer one bundle. For now we will consider a scenario with 2000 potential consumers but this can be changed by altering the `npeep` variable. For each of these consumers we generate a willingness to pay for broadband internet (internet). If we assume that each consumer has a willingness to pay of £45 then we can add an error term to this in order to simulate variation between consumers. To do this we use the `rnorm` function which draws a random sample from the normal distribution.
 
 ```{r}
 
