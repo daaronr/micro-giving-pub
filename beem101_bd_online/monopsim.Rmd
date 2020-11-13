@@ -12,7 +12,7 @@ Note that the modern use of the term 'Econometrics' tends to refer to the analys
 </div>
  
 
-> Our monopolist is a broadband internet supplier within a city. Suppose for now that they only offer one bundle. For now we will consider a scenario with 2000 potential consumers but this can be changed by altering the `npeep` variable. For each of these consumers we generate a willingness to pay for broadband internet (internet). If we assume that each consumer has a willingness to pay of £45 then we can add an error term to this in order to simulate variation between consumers. To do this we use the `rnorm` function which draws a random sample from the normal distribution.
+> Our monopolist is a broadband internet supplier within a city. Suppose for now that they only offer one bundle. For now we will consider a scenario with 2000 potential consumers but this can be changed by altering the `npeep` variable. For each of these consumers we generate a willingness to pay for broadband internet (internet). [We assume that the mean WTP is £45]... and we add an error term to this in order to simulate variation between consumers. To do this we use the `rnorm` function which draws a random sample from the standard normal distribution (mean 0, variance 1) multiplied by £15. This yields a standard deviation of roughly £15. 
 
 ```{r}
 
@@ -22,9 +22,13 @@ wtp <- 45 + rnorm(npeep)*15 # Each person has a different willingness to pay
 
 ```
 
+Checking, the std devn is `r sd(wtp)` (coded as  `sd(wtp)`).
+
+\
+
 > To figure out the demand curve we count the number of people willing to pay at least as much as the offering price.
 
-If we set the maximum offering price to 90 then we consider that offering prices can be (for simplicity) any integer between 0 and 90. From this we sum the number of consumers who have a willingness to pay above the offering price in order to give us a vector of quantity demanded at each price level.
+We set the maximum offered price to 90, thus we consider prices between 0 and 90. From this we sum the number of consumers who have a willingness to pay above the offering price in order to give us a vector of quantity demanded at each price level.
 
 ```{r}
 
@@ -36,12 +40,18 @@ for (i in 1:length(op)) qd[i] <- sum(wtp>=op[i]) # We fill qd with the number of
 ```
 
 \
+Let's look at the 'vector' of quantities demanded"
+
+`r qd`
+\
+
+
 
 We assume:
 
 > Marginal cost is increasing though this is not a necessity. For something like broadband services we might think that up to a point marginal costs might be decreasing since the cost of adding one more customer might be less than the cost of adding the previous customer.
 
-In our $MC = 0.01(q_d)$
+In our simulation we assume $MC = 0.01(q_d)$
 
 ```{r}
 mc <- qd*.01 # Setting marginal cost
@@ -51,14 +61,13 @@ mc <- qd*.01 # Setting marginal cost
 
 Now we plot quantity demanded as a function of price:
 
-
 ```{r}
 
-plot(qd, op, type="l", xlab="Quantity", ylab="Price / Cost", 
+plot(qd, op, type="l", xlab="Quantity", ylab="Price,  Cost", 
       main="Demand for Broadband Internet", lwd=2)
 abline(h=0, lwd=2)
 lines(qd, mc, col="red", lwd=2)
-legend(1450, 75, legend=c("Price", "Marginal Cost"), col=c("black", "red"), lty=1)
+legend(1450, 75, legend=c("Demand curve", "Marginal Cost"), col=c("black", "red"), lty=1)
 
 ```
 
@@ -74,9 +83,11 @@ tr <- tp <- tc <- rep(NA,length(op)) # Total revenue, total profit, total cost v
 
 ```{r}
 # Calculate total cost
+
 qd.gain <- qd[-length(qd)]-qd[-1]
 qd.gain[length(qd.gain)+1] <- qd.gain[length(qd.gain)]
 for (i in 1:length(op)) tc[i] <- sum((mc*qd.gain)[length(qd):i])
+
 ```
 
 ```{r}

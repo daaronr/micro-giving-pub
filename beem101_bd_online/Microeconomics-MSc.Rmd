@@ -9346,7 +9346,7 @@ I want to add more here
 
 ```{block2,  type='fold'}
 
- 
+
 See "Marketing" chapter in [Business analytics with R](https://bookdown.org/jeffreytmonroe/business_analytics_with_r7/) (Note, this needs some clarification)
 
 ```
@@ -9370,16 +9370,16 @@ Empirical analyses of price discrimination:
 
 ## Why study the monopoly?
 
-A *monopoly* is a single firm operating in a market without competition. 
+A *monopoly* is a single firm operating in a market without competition.
 
 Although this is an extreme situation (the opposite extreme to 'perfect competition'), we focus on this because:
 
-- The mathematics of the quantity/pricing choices are easy to interpret, and relevant to other environments. 
+- The mathematics of the quantity/pricing choices are easy to interpret, and relevant to other environments.
 
 <div class="marginnote">
 E.g., the optimization is equivalent to the case of 'monopolistic competition', which is sometimes argued to be the most realistic benchmark framework. In 'monopolistic competition', each firm has a somewhat differentiated product (or 'location') and faces a downward sloping demand for its own product.  However, with monopolistic competition, unlike under monopoly, as more firms selling related products enter, each firm's profit dissipates to zero.
 </div>
- 
+
 - It provides a simple example of the "deadweight" welfare loss from firms with market power reducing their supply in order to keep up prices.
 
 - We can most simply percent models of price discrimination and segmentation, which is a highly relevant business practice (and may face similar concerns in other competitive environments like monopolistic competition)
@@ -9390,7 +9390,7 @@ E.g., the optimization is equivalent to the case of 'monopolistic competition', 
 
 ## Monopoly profit-maximisation: simple (undergraduate-level) take:
 
-As noted, a *monopoly* is a single firm operating in a market without competition. 
+As noted, a *monopoly* is a single firm operating in a market without competition.
 
 \
 
@@ -9409,26 +9409,26 @@ A monopoly situation can only be sustained by some [barriers to entry](#barriers
 \
 
 
-A monopoly firm, like all firms, will set it's quantity $Q$ to maximize it's profits $\pi(Q) \equiv QP(Q)-C(Q)$ where $P(Q)$ is the inverse demand (the maximum price that can be charged if a firm wants to sell quantity $Q$), and $C(Q)$ is the cost of producing $Q$. 
+A monopoly firm, like all firms, will set it's quantity $Q$ to maximize it's profits $\pi(Q) \equiv QP(Q)-C(Q)$ where $P(Q)$ is the inverse demand (the maximum price that can be charged if a firm wants to sell quantity $Q$), and $C(Q)$ is the cost of producing $Q$.
 
 \
 
 Under standard simple conditions (discussed below), if the monopoly can only charge a single price, this  leads to the monopoly maximising it's profit by producing $Q$ such that $MR(Q) = MC(Q)$ (assuming $P>AC$).
 
 This is because under these simple conditions, we simply need to take the 'first order condition' ... i.e., to find the profit-maximising quantity $$argmax_{Q} \Big(QP(Q)-C(Q)\Big),$$
-we simply find the unique point where the slope in $Q$ (the derivative) is zero, so $$P(Q)+QP'(Q) - C'(Q) = 0,$$ i.e., 
-$$P(Q)+QP'(Q) =  C'(Q)$$, i.e., again, $MR(Q) = MC(Q)$. 
+we simply find the unique point where the slope in $Q$ (the derivative) is zero, so $$P(Q)+QP'(Q) - C'(Q) = 0,$$ i.e.,
+$$P(Q)+QP'(Q) =  C'(Q)$$, i.e., again, $MR(Q) = MC(Q)$.
 
 
 \
 
-Marginal revenue is the rate at which revenue $QP(Q)$ changes in quantity, which is thus $P(Q)+QP'(Q)$. 
+Marginal revenue is the rate at which revenue $QP(Q)$ changes in quantity, which is thus $P(Q)+QP'(Q)$.
 
 
-For a small increase in $Q$: 
+For a small increase in $Q$:
 
-- The rectangle of revenue increases proportionally to the current price, 
-- but it decreases at rate $P'(Q)$ as price must decrease to sell the next unit, and this price decrease reduces revenue in proportion to the current quantity $Q$. For my money, this example offers the most intuitive example of the product rule for derivatives. 
+- The rectangle of revenue increases proportionally to the current price,
+- but it decreases at rate $P'(Q)$ as price must decrease to sell the next unit, and this price decrease reduces revenue in proportion to the current quantity $Q$. For my money, this example offers the most intuitive example of the product rule for derivatives.
 
 \
 
@@ -9444,9 +9444,9 @@ For a linear demand curve the marginal revenue will have a slope of twice of the
 
 ```{block2,  type='fold'}
 
-Suppose $Q = \alpha - \frac{1}{\beta} P$, so 
+Suppose $Q = \alpha - \frac{1}{\beta} P$, so
 $P = \alpha\beta - \beta Q$
-  
+
 Then revenue is $PQ = \alpha\beta Q - \beta Q^2$ so
 $MR =  \alpha\beta - 2\beta Q$, as noted, twice the slope of the inverse demand curve
 
@@ -9456,11 +9456,11 @@ $MR =  \alpha\beta - 2\beta Q$, as noted, twice the slope of the inverse demand 
 \
 
 
-### Graphically: Monopoly profit-max 
+### Graphically: Monopoly profit-max
 
 <center>
 
-*Marginal cost, demand, marginal revenue, and quantity of a monopoly producer* 
+*Marginal cost, demand, marginal revenue, and quantity of a monopoly producer*
 
 
 ![](picsfigs/basic_monop_mcdl.jpg){width=50%}
@@ -9470,7 +9470,7 @@ $MR =  \alpha\beta - 2\beta Q$, as noted, twice the slope of the inverse demand 
 <div class="marginnote">
 Image source: [McDL](https://saylordotorg.github.io/text_introduction-to-economic-analysis/s16-monopoly.html)
 </div>
- 
+
 
 
 <!--
@@ -9572,16 +9572,16 @@ Note that they are defining the 'primitives' of such a market in a way that allo
 
 1. They incorporate, from the beginning, a demand function $q_i(p_i)$ for each 'segment' $i$ ... allowing for the possibility of price discrimination (something which we will focus on).
 
-2. They let the producer have a 'preference' ($\succsim$), which may incorporate both profit and quantities sold in each segment. We will not focus on this: we will focus on the standard profit-maximisation goal. 
+2. They let the producer have a 'preference' ($\succsim$), which may incorporate both profit and quantities sold in each segment. We will not focus on this: we will focus on the standard profit-maximisation goal.
 
 <div class="marginnote">
-This second point is very interesting, but we've no time to address it now. 
+This second point is very interesting, but we've no time to address it now.
 </div>
- 
+
 
 ```{block2,  type='def'}
 
-**Monopolistic market** 
+**Monopolistic market**
 
 > A monopolistic market $\langle (q_i)^k_i=1, C, \succsim  \rangle$  for a single good has the following components:
 ```
@@ -9594,37 +9594,37 @@ They are just specifying the 'objects defining a monopolistic market' here; they
 <div class="marginnote">
 Note that we are focusing on a producer of a *single* good; more complex cases could involve multiple goods with production synergies, strategic bundling, etc.
 </div>
- 
-  
+
+
 ```{block2,  type='def'}
 
-OR continue: 
-  
-> **Demand** 
+OR continue:
+
+> **Demand**
 
 > The function $q_i$, the demand function in segment $i$, associates with every price $p_i$ for segment $i$ the total amount $q_i(p_i)$ of the good demanded in that segment.
 ```
 
 \
 
-They note that these demand functions are 'decreasing' functions: for higher values of the argument, the output of the function is *not* higher. In other words, we are considering demand functions that are decreasing, or at least not increasing, in price.\* 
+They note that these demand functions are 'decreasing' functions: for higher values of the argument, the output of the function is *not* higher. In other words, we are considering demand functions that are decreasing, or at least not increasing, in price.\*
 
 <div class="marginnote">
  This rules out the 'Giffen' good.
 </div>
- 
+
 
 ```{block2,  type='def'}
 
-OR: 
-  
+OR:
+
 > **Producer**
-> A single producer, called a monopolist, characterized by a cost function $C$ that is continuous and convex and satisfies $C(0) = 0$, 
+> A single producer, called a monopolist, characterized by a cost function $C$ that is continuous and convex and satisfies $C(0) = 0$,
 
 
 > and a preference relation $\succsim$ over pairs $((y_1,... , y_k), \pi)$, where $y_i$ is the quantity sold in segment $i$ for $i = 1,..., k$ and $\pi$ is the producer’s profit
 
-```   
+```
 
 \
 
@@ -9632,32 +9632,32 @@ Note that cost increases in output at an increasing rate; this is a fairly restr
 
 \
 
-### Profit maximization and marginal revenue 
+### Profit maximization and marginal revenue
 
 
 O-R Essentially restate the analysis we presented above, however they are slightly more formal, and they consider an interesting wrinkle: marginal revenue *need not be decreasing* in quantity.
 
 
 \
-O-R definitions ... 
+O-R definitions ...
 
 > Let $\langle (q_i)^k_i=1, C, \succsim  \rangle$ be a uniform-price monopolistic market.
 
-...we refer to 'uniform pricing', because here (as above) we are considering only a single price for the market as a whole. We discuss [below](#arbitrage) why price discrimination my not always be possible, for legal or practical reasons. 
+...we refer to 'uniform pricing', because here (as above) we are considering only a single price for the market as a whole. We discuss [below](#arbitrage) why price discrimination my not always be possible, for legal or practical reasons.
 
 \
 
 > Define the total demand function $Q$ by $Q(p)=\sum_{i=1}^k q_i(p)$
 
-... simply summing the quantity demanded at a certain price across all segments 1 through k. 
+... simply summing the quantity demanded at a certain price across all segments 1 through k.
 
 \
 
 O-R Define marginal revenue essentially as above,
- 
+
 > $MR(y) = [P(y)y]' = P(y) + P'(y)y$, where P is the inverse of Q.
 
-giving additional intuition ... 
+giving additional intuition ...
 
 > If the function P is decreasing, ...
 
@@ -9676,17 +9676,17 @@ They next make an interesting point which I have not seen noted before:
 > Usually the function MR is assumed to be decreasing, but this property does not follow from the assumptions we have made. The derivative of $MR$ at $y$ is $2P′(y) + P′′(y)y$
 
 <div class="marginnote">
-Of course the MR is itself the derivative of the revenue function, so here we are considering the *derivative of a derivative*.  I.e., the derivative of $P(y) + P'(y)$ with respect to $Y$ ... and thus considering, 'Is the rate at which revenue *increases* in output decreasing as output increases, so additional units of output add less to revenue than earlier units? This was the case in all the graphs depicted above, but it need not hold in general. 
+Of course the MR is itself the derivative of the revenue function, so here we are considering the *derivative of a derivative*.  I.e., the derivative of $P(y) + P'(y)$ with respect to $Y$ ... and thus considering, 'Is the rate at which revenue *increases* in output decreasing as output increases, so additional units of output add less to revenue than earlier units? This was the case in all the graphs depicted above, but it need not hold in general.
 </div>
- 
+
 
 > so that if $P′′(y)$ is positive and large enough, the derivative is positive even if $P$ is decreasing.
 
-We assumed above that price is decreasing in quantity (only ruling out 'Giffen goods'). Thus as the quantity increases the *benefit* of an additional unit of increase in quantity (holding price constant) must be smaller, because you are charging a lower price. This by itself would point to a declining MR. 
+We assumed above that price is decreasing in quantity (only ruling out 'Giffen goods'). Thus as the quantity increases the *benefit* of an additional unit of increase in quantity (holding price constant) must be smaller, because you are charging a lower price. This by itself would point to a declining MR.
 
 \
 
-However, for every increase in quantity the price must fall somewhat, which itself reduces revenue. The necessary marginal drop in price $P'(y)$ need not be constant, it may be increasing or decreasing, i.e., $P′′(y)$ may be positive or negative in any region. Thus, it's possible that for increases in quantity from a *larger* starting quantity, the necessary reduction in price is relatively much *smaller* than it was when increasing quantity from a smaller base, leading to a lower loss of revenue than before, and even outweighing the effect in the previous paragraph. 
+However, for every increase in quantity the price must fall somewhat, which itself reduces revenue. The necessary marginal drop in price $P'(y)$ need not be constant, it may be increasing or decreasing, i.e., $P′′(y)$ may be positive or negative in any region. Thus, it's possible that for increases in quantity from a *larger* starting quantity, the necessary reduction in price is relatively much *smaller* than it was when increasing quantity from a smaller base, leading to a lower loss of revenue than before, and even outweighing the effect in the previous paragraph.
 
 
 This is illustrated in O-R example 7.1 involving 'unit demand' rather than a continuous demand function, depicting three consumers with 'maximum willingness to pay' of 10, 6, and 5, respectively:
@@ -9700,9 +9700,9 @@ This is illustrated in O-R example 7.1 involving 'unit demand' rather than a con
 
 \
 
-Above, we see that increasing the quantity $y$ from 1 to 2 requires reducing price from £10 to £6, and thus increasing revenue by only £2. However, increasing the quantity from 2 to 3 requires reducing price by only £1 further, and thus increasing revenue by £3. Although the latter price decrease 'operates on more prior units' (2 rather than 1), it is a much smaller price decrease (£1 reduction rather than a £4 reduction), outweighing the 'volume effect'.  
+Above, we see that increasing the quantity $y$ from 1 to 2 requires reducing price from £10 to £6, and thus increasing revenue by only £2. However, increasing the quantity from 2 to 3 requires reducing price by only £1 further, and thus increasing revenue by £3. Although the latter price decrease 'operates on more prior units' (2 rather than 1), it is a much smaller price decrease (£1 reduction rather than a £4 reduction), outweighing the 'volume effect'.
 
-*Explaining O-R notation for example 7.1 in response to a student question*: 
+*Explaining O-R notation for example 7.1 in response to a student question*:
 
 ```{block2,  type='fold'}
 
@@ -9713,17 +9713,17 @@ Student:
 \
 
 *Teacher:*
-  
-Yes -- I think you might be misunderstanding the definition or notation. 
+
+Yes -- I think you might be misunderstanding the definition or notation.
 
 
-$P(.)$ is a function here, the inverse demand. So $P(y)$ tells me 'how much can I charge at most, and still sell $y$ units'. 
+$P(.)$ is a function here, the inverse demand. So $P(y)$ tells me 'how much can I charge at most, and still sell $y$ units'.
 
 They *define* $MR$ as 'the increase in revenue when I sell one more unit'.
 
-- Sell 0 units -- 0 revenue. 
+- Sell 0 units -- 0 revenue.
 - Sell 1 unit, can charge at most £10 ... so $P(1)=10$, and $Revenue(1) =  P(1) \times 1 = 10 \times 1=10$
-  
+
 - Sell 2 units, can charge at most 6, so $P(2) = 6$, and $Revenue(2) =  P(2)\times  2 = 6 \times 2=12$
 
 Thus, by their definition, $MR(y) = P(y)y −P(y −1)(y −1)$,
@@ -9742,7 +9742,7 @@ The fact that $MR$ need not be everywhere downward sloping means that the $MR(y)
 \* This is not a 'corner solution' issue: it is not even sufficient for an *interior* optimum, with a positive output. Furthermore, this is not because of regions of decreasing marginal costs; it is not sufficient even if MC are constant or rising everywhere.
 </div>
 
-O-R illustrate this point in Figure 7.1. *Have a look*. 
+O-R illustrate this point in Figure 7.1. *Have a look*.
 
 \
 
@@ -9754,7 +9754,7 @@ From McDL:
 
 (Going back to our earlier notation...)
 
-A profit-maximizing monopolist must set $Q$ (if positive) such that: 
+A profit-maximizing monopolist must set $Q$ (if positive) such that:
 
 $$P(Q)+QP'(Q) =  C'(Q).$$
 Rearrange this to consider the 'markup over marginal cost':
@@ -9787,9 +9787,9 @@ $=\epsilon$
 \
 
 
-This is also a formula firms might directly use ... if they knew their marginal cost and, more challengingly, if they knew the price elasticity of demand over its entire range. In the real world, firms do sometimes use 'markup rules' for pricing.  
+This is also a formula firms might directly use ... if they knew their marginal cost and, more challengingly, if they knew the price elasticity of demand over its entire range. In the real world, firms do sometimes use 'markup rules' for pricing.
 
-According to McDL: 
+According to McDL:
 
 > This formula is sometimes used to justify a “fixed markup policy,” which means a company adds a constant percentage markup to its products. This is an ill-advised policy not justified by the formula, because the formula suggests a markup which depends on the demand for the product in question and thus not a fixed markup for all products a company produces.
 
@@ -9801,7 +9801,7 @@ Some more insights from McDL:
 
 > Marginal cost will always be at least zero or larger.... Thus, the price-cost margin is no greater than one, and as a result, a monopolist produces in the elastic portion of demand.
 
-DR: Note that I emphasze at great length that a monopolist will never price in the inelastic portion of the demand curve it faces, and I try to give lots of insight into this. 
+DR: Note that I emphasze at great length that a monopolist will never price in the inelastic portion of the demand curve it faces, and I try to give lots of insight into this.
 
 > One implication c ...  if demand is everywhere inelastic (e.g. $p(q) = q−a$ for $a>1$), the optimal monopoly quantity is essentially zero, and in any event would be no more than one molecule of the product.
 
@@ -9810,11 +9810,11 @@ DR: Note that I emphasze at great length that a monopolist will never price in t
 
 ## Monopolies and 'allocative inefficiency' {#monop-inef}
 
-O-R: 
+O-R:
 
 > Since $MR(y)  < P(y)$ for all $y$, an implication of Proposition 7.1 [$MR(y^{\ast})=MC(y^{\ast})$] is that the price charged by a profit-maximizing producer in a uniform-price monopolistic market is greater than the marginal cost at this output.
 
-This leads to an inefficiency: 
+This leads to an inefficiency:
 
 > the cost of production of another unit of the good is less than the price that some buyers are willing to pay for the good. The monopolist does not produce the extra unit because he takes into account that the price reduction necessary to sell the extra unit will affect all the other units, too, causing his profit to fall.
 
@@ -9897,7 +9897,7 @@ The difference in monopoly vs perfect competitive quantity \
 ... difference in firm profit or producer surplus
 
 </div>
- 
+
 
 
 \
@@ -9921,9 +9921,9 @@ The difference in monopoly vs perfect competitive quantity \
 
 ```{block2,  type='note'}
 
-2020 BEEM101 students: For time concerns, I am not going to focus on the measures of the welfare cost or deadweight loss of monopoly, nor on the potential regulatory responses to reduce these costs. These are certainly important for economic policymaking, however. The stereotypical free-market economist is thought to argue that 'price ceilings are always harmful'; this is not necessarily the case. 
+2020 BEEM101 students: For time concerns, I am not going to focus on the measures of the welfare cost or deadweight loss of monopoly, nor on the potential regulatory responses to reduce these costs. These are certainly important for economic policymaking, however. The stereotypical free-market economist is thought to argue that 'price ceilings are always harmful'; this is not necessarily the case.
 
-```  
+```
 
 \
 
@@ -9933,14 +9933,14 @@ We refer to underprovision of monopoly as a departure from '**allocative ineffic
 
 \
 
-Essentially, from the point of view of the entire economy: 
-  
+Essentially, from the point of view of the entire economy:
+
 1. If we could produce more of one good without producing less of any other good (i.e., we are below the 'production possibility frontier' (PPF)), perhaps because we are misallocating inputs to different production processes (e.g., capital and labor) ... this is called **Productive inefficiency**
 
 <div class="marginnote">
-Here 'goods' includes all things that people value, including services, environmental amenities, leisure time, etc. 
+Here 'goods' includes all things that people value, including services, environmental amenities, leisure time, etc.
 </div>
- 
+
 
 2. Suppose the economy is producing the combination of goods yielding 'point Z on the PPF.'  However, suppose that given the combination of goods produced Z, and the distribution of these goods to consumers we could *reallocate* these.  (E.g., have person 1 trade good $z_1$ to person 2 in  exchange for some of good $z_2$). Suppose that this reallocation would  to make at least one person better off without making anyone worse off (a Pareto imrovement). Then the original point (before any such reallocation) was not Pareto Optimal; it suffered from **Exchange inefficiency**.
 
@@ -9980,19 +9980,19 @@ A simple depiction of the double-marginalisation problem.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-uN--rvaGA4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</center> 
+</center>
 
-Another simple presentation for the case of linear demand can be found [HERE](http://web.mit.edu/rpindyck/www/Courses/VS_11.pdf) on pages 1-6. 
+Another simple presentation for the case of linear demand can be found [HERE](http://web.mit.edu/rpindyck/www/Courses/VS_11.pdf) on pages 1-6.
 
-This is an argument for letting firms merge with their upstream supplier.  
+This is an argument for letting firms merge with their upstream supplier.
 
-We return to this in the exercises. 
+We return to this in the exercises.
 
 \
 
 ```{block2,  type='inputq'}
 *Consider also:* if a firm allows an 'upstream division' to charge a price for inputs to a 'downstream division' and the latter sets prices and quantities for retail sales... and both divisions 'keep their surpluses'... will this boost the firm's profits?
-```  
+```
 
 ```{block2,  type='fold'}
 
@@ -10141,7 +10141,7 @@ Under monopoly, uniform pricing leads to a deadweight loss, as we have already s
 ```
 \
 
-However, price discrimination holds the potential to increase profit (it will, in general, increase profit). It might also reduce the deadweight loss, i.e., increase total welfare. If price discrimination is 'Perfect' then it *will* boost total welfare, as suggested in the illustration below (see Saylor academy [First-Degree Price Discrimination: Personalized Pricing](https://saylordotorg.github.io/text_developing-new-products-and-services/s05-02-first-degree-price-discriminat.html) for an interesting discussion, but see margin note.\*) 
+However, price discrimination holds the potential to increase profit (it will, in general, increase profit). It might also reduce the deadweight loss, i.e., increase total welfare. If price discrimination is 'Perfect' then it *will* boost total welfare, as suggested in the illustration below (see Saylor academy [First-Degree Price Discrimination: Personalized Pricing](https://saylordotorg.github.io/text_developing-new-products-and-services/s05-02-first-degree-price-discriminat.html) for an interesting discussion, but see margin note.\*)
 
 <div class="marginnote">
 **Note**: I would say that an auction *might* lead to outcomes resembling perfect price discrimination, where the seller captures most of the consumers' valuations. But this is a whole field of study, 'Auction theory', which engages the issues of Asymmetric information and Mechanism design (principle/agent models).
@@ -10170,7 +10170,7 @@ However, price discrimination holds the potential to increase profit (it will, i
 
 Price discrimination may seem counter-intuitive: ‘how can offering some consumers lower prices increase profit?’
 
-```  
+```
 
 
 ```{block2,  type='fold'}
@@ -10197,7 +10197,7 @@ Note that 'targeting a price at each consumer' may be done on the internet or on
 'Perfect' means the seller exactly predicts and charges each consumer her exact valuation! It's basically a theoretical ideal.
 
 
-<br> 
+<br>
 
 
 2. Self-selection (Second degree)
@@ -10211,7 +10211,7 @@ For 'self-selection' or 'second-degree price discrimination... we can imagine th
 Instead, it sells different bundles, quantities or qualities of products to get high and low-value consumers to separate themselves...
  E.g., first-class seats.
 
-<br> 
+<br>
 
 
 ```{block2,  type='note'}
@@ -10223,7 +10223,7 @@ There are some interesting results, such as 'the firm finds it optimal to make t
 ```
 
 
- \ 
+ \
 
 
 3. Group-based (Third degree; 'market separation')
@@ -10252,14 +10252,14 @@ Is this perfect price discrimination or something else?
 - Assuming you know what the consumer is willing to pay, you can make the *highest possible profit*; that is called ‘perfect’ price discrimination.
 
 
-<br> 
+<br>
 
 
 Perfect price discrimination
 :     Charging each consumer (for each unit) the *maximum* he or she would be willing to pay, i.e., her valuation
 
 
-<br> 
+<br>
 
 
 Here the monopolist would extract *all the available surplus*; no consumer surplus remains.
@@ -10285,9 +10285,9 @@ See Shiller, B. R. (2013, or updated version). First degree price discrimination
 
 For a graphical and algebraic depiction of first, third, and (one version of) second degree price discrimination, please see the video linked [HERE](https://www.dropbox.com/s/4hxlc8gkngqqwed/joon_adv_micro_week6_monopoly.MP4?dl=0) from my friend Professor Joon Song.
 
-```  
+```
 
-<!-- 
+<!--
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics(file.path("picsfigs","ppd3.png"))
 ```
@@ -10325,12 +10325,12 @@ What kind of price discrimination is this? Should it be legal?
 ```{block2,  type='warning'}
 
 *Wait: did he just jump from first degree to third-degree price discrimination? Where did second-degree go?*
-  
+
 \
-  
+
 Yes I did. Third degree price discrimination, or 'market segmentation' is a much simpler concept than second-degree price discrimination, which involves self-selection. We will return to the latter [below](#2dpd).
 
-```  
+```
 
 
 \
@@ -10371,26 +10371,26 @@ Each group or market has it's own demand $\rightarrow$ marginal revenue curve
 \
 ```{r  fig.cap = '', out.width='100%', fig.asp=.9, fig.align='center',  echo = FALSE}
  knitr::include_graphics(file.path("picsfigs","wiki-Price_discrimination_(third_degree).png"))
-```   
+```
 
 \
 
 Consider the above image (from Wikipedia)^[https://en.wikipedia.org/wiki/Price_discrimination#/media/File:Price_discrimination_(third_degree).svg].
 
-On the left, for the 'inelastic submarket' the profit-maximising price is larger than for the 'elastic submarket' in the middle.\* 
+On the left, for the 'inelastic submarket' the profit-maximising price is larger than for the 'elastic submarket' in the middle.\*
 <div class="marginnote">
-\* Note that technically, with linear demand, as shown, the price elasticities vary at every point on the demand curve. 
+\* Note that technically, with linear demand, as shown, the price elasticities vary at every point on the demand curve.
 </div>
- 
-If the submarkets cannot be separated, or the customers in each submarket cannot be distinguished from one another, the firm must charge a single price for the entire 'industry' (on the right), which sums the demand curves in each submarket.\* 
+
+If the submarkets cannot be separated, or the customers in each submarket cannot be distinguished from one another, the firm must charge a single price for the entire 'industry' (on the right), which sums the demand curves in each submarket.\*
 
 <div class="marginnote">
 Note that the 'Industry' demand curve is kinked at the price where consumers in the elastic submarket begin to buy.
 </div>
 
-The industry 'entire market'  price "$P_m$ will, in general, be in between the optimizing price in the inelastic and elastic markets, so $P_a > P_m > P_b$ for the above example.  
+The industry 'entire market'  price "$P_m$ will, in general, be in between the optimizing price in the inelastic and elastic markets, so $P_a > P_m > P_b$ for the above example.
 
- 
+
 \
 
 <!--
@@ -10413,10 +10413,10 @@ Another depiction, adding demand curves (they call it 'average revenue'):
  knitr::include_graphics(file.path("picsfigs","Price-discrimination-SNP2.png"))
 ```
 
-### O-R: Formal treatment of the (monopoly) 'pricing in multiple markets/segments' problem 
+### O-R: Formal treatment of the (monopoly) 'pricing in multiple markets/segments' problem
 
 
-> Consider a discriminatory monopolistic market 
+> Consider a discriminatory monopolistic market
 
 $$\langle (q_i)^k i=1, C, \succsim \rangle $$ ...
 
@@ -10428,7 +10428,7 @@ $C$ depicts the cost (of production) function
 
 $\succsim$ is the monopolist's preferences; we'll assume it maximizes profit.
 
-... they assume cost and all segmented demand functions are differentiable. 
+... they assume cost and all segmented demand functions are differentiable.
 
 > For each segment $i$ let $MR_i$ be the marginal revenue function for $q_i$, and let MC be the marginal cost function for $C$.
 
@@ -10438,8 +10438,8 @@ As they note previously, "this problem cannot be decomposed into $k$ independent
 
 \* However, if we assume a constant marginal cost, as is often assumed in simplified models, then these problems *can* be decomposed, and the monopoly will simply set MR=MC in each segment, without needing to consider the other segment.
 </div>
- 
-Because of this a change in the demand conditions in one segment may impact the optimal price in another segment, through the impact on marginal cost. 
+
+Because of this a change in the demand conditions in one segment may impact the optimal price in another segment, through the impact on marginal cost.
 
 ```{block2,  type='fold'}
 
@@ -10452,7 +10452,7 @@ E.g., suppose the sole delivery food provider in Exeter is 'Kangalivery', which 
 
 $$MR_i(y_i^|{ast}) = MC(\sum_{j=1}^k y_j^\{ast})$$.
 
-O-R offer some good intuition for this: 
+O-R offer some good intuition for this:
 
 > First, the marginal revenues for all segments in which output is positive must be the same since otherwise the producer could increase his profit by moving some production from a segment with a low marginal revenue to one with a high marginal revenue.
 
@@ -10469,7 +10469,7 @@ O-R offer some good intuition for this:
 - Firms can charge higher prices to high-wtp group without losing low-wtp group $\rightarrow$ increase profit
 
 
- \ 
+ \
 
 
 Net welfare result: theoretically uncertain. This is a nuanced point, but I think you are up to the challenge! This is *not* covered in most of the textbooks, but I give several explanations and references.
@@ -10533,7 +10533,7 @@ Considering the two effects on efficiency just described ... one (Exchange effic
 <div class="marginnote">
 The word 'foil' basically means 'defeat'.
 </div>
- 
+
 
 
 If, e.g., elderly who get discounts could sell the products to the middle-aged...
@@ -10544,7 +10544,7 @@ If, e.g., elderly who get discounts could sell the products to the middle-aged..
 
 - Similar issues with quantity discounts, or 'web cookie' personalised pricing
 
-\ 
+\
 
 So PD only 'works' for goods that are hard to trade, like haircuts...
 
@@ -10566,8 +10566,8 @@ This yields another mechanism design 'hidden information' 'principal-agent probl
 <div class="marginnote">
 **More to be added here**
 </div>
- 
- 
+
+
 ```{block2,  type='note'}
 Although it involves concepts from asymmetric information (which we have not yet covered and is only included as a supplement), this is nicely addressed in O-R section 7.4. I will add more material here as well.
 
@@ -10644,7 +10644,7 @@ Train companies must price first and second class such that consumers will self-
 <div class="marginnote">
 The Third-Class Carriage is a c. 1862–1864 oil on canvas painting by Honoré Daumier
 </div>
- 
+
 
 ```{block2,  type='digression'}
 
@@ -10671,22 +10671,28 @@ There is typically lots of discussion of this in the media, see e.g.,  [THIS](ht
 Exeter BEEM101 students, 2020: please do these exercises *before* the midterm.
 
 Suggested answers are now available in the usual location
-```  
+```
 
 ## OR 7.1: Double Margins (all parts)
 
+Exeter BEEM101 students:
 
+- Extended answer [HERE](https://universityofexeteruk.sharepoint.com/sites/Section_20BEEM101TERM1/_layouts/15/Doc.aspx?sourcedoc={565a25c8-1817-4845-b9a5-7ced66b92add}&action=edit&wd=target%28_Collaboration%20Space%2FTutorials%20%28seminars%5C%29%20Notes.one%7Ca745a153-ea3f-4b6e-8f16-9163bfe64932%2FTut.%20Wk%205%20%28Monopoly%5C%29%20pricing%20and%20%7C61ad5408-9433-4d3b-a869-767d0c21cca6%2F%29&wdorigin=703) (class notebook)
+
+- Recording [HERE](https://web.microsoftstream.com/video/2f3c8f7b-288c-4d69-8eaa-7d2ff12f280e) covers double-markups for a case of unit demand, extending the case given in O-R to show the loss from having the two levels of uniform price monopoly.
+
+- [Here](https://web.microsoftstream.com/video/91e6efe9-4b9f-40b9-8bb4-2c7619460d1f) I cover the downward-sloping demand case for double markups; apologies that i seem to be blocking the camera in parts.
 
 ## Welfare loss of monopoly: Discussion question from a prior exam
 
 - Depict and discuss the welfare costs of monopoly power as a 'market failure'. What are some factors that may lead estimates of these costs to be higher or lower?
 
-**Solution help:** 
+**Solution help:**
 
 ```{block2,  type='fold'}
 
-See especially the section [The deadweight loss of monopoly](#dwl-monop) and accompanying discussion in the NS text. 
-  
+See especially the section [The deadweight loss of monopoly](#dwl-monop) and accompanying discussion in the NS text.
+
 You should identify the DWL of monopoly as a reduction in top-level (allocative) efficiency. Please discuss this clearly and in your own words, showing your understanding.
 
 ```
@@ -10694,7 +10700,7 @@ You should identify the DWL of monopoly as a reduction in top-level (allocative)
 
 - Will price discrimination reduce or increase the welfare cost of monopoly. Discuss.
 
-**Solution help:** 
+**Solution help:**
 
 ```{block2,  type='fold'}
 
@@ -10706,21 +10712,35 @@ You should identify the DWL of monopoly as a reduction in top-level (allocative)
 
 # Monopoly pricing: An example using R {-}
 
+```{block2,  type='note'}
+Remember, you can 'hide the code' with the 'hide global' button in the upper right of this screen.
+
+```
+
+
 Adapted from: [Econometrics by Simulation](http://www.econometricsbysimulation.com/2013/07/optimal-pricing-for-simple-monopolist.html)
 
-Our monopolist is a broadband internet supplier within a city. Suppose for now that they only offer one bundle. For now we will consider a scenario with 2000 potential consumers but this can be changed by altering the `npeep` variable. For each of these consumers we generate a willingness to pay for broadband internet (internet). If we assume that each consumer has a willingness to pay of £45 then we can add an error term to this in order to simulate variation between consumers. To do this we use the `rnorm` function which draws a random sample from the normal distribution.
+<div class="marginnote">
+Note that the modern use of the term 'Econometrics' tends to refer to the analysis of *real* data, not simulated data.
+</div>
+
+> Our monopolist is a broadband internet supplier within a city. Suppose for now that they only offer one bundle. For now we will consider a scenario with 2000 potential consumers but this can be changed by altering the `npeep` variable. For each of these consumers we generate a willingness to pay for broadband internet (internet). [We assume that the mean WTP is £45]... and we add an error term to this in order to simulate variation between consumers. To do this we use the `rnorm` function which draws a random sample from the standard normal distribution (mean 0, variance 1) multiplied by £15. This yields a standard deviation of roughly £15.
 
 ```{r}
 
 npeep <- 2000 # Number of potential consumers
 
-wtp <- 45 + rnorm(npeep)*15 # Each person has a different willingness to pay 
+wtp <- 45 + rnorm(npeep)*15 # Each person has a different willingness to pay
 
 ```
 
+Checking, the std devn is `r sd(wtp)` (coded as  `sd(wtp)`).
+
+
+
 > To figure out the demand curve we count the number of people willing to pay at least as much as the offering price.
 
-If we set the maximum offering price to 90 then we consider that offering prices can be (for simplicity) any integer between 0 and 90. From this we sum the number of consumers who have a willingness to pay above the offering price in order to give us a vector of quantity demanded at each price level.
+We set the maximum offered price to 90, thus we consider prices between 0 and 90. From this we sum the number of consumers who have a willingness to pay above the offering price in order to give us a vector of quantity demanded at each price level.
 
 ```{r}
 
@@ -10732,12 +10752,18 @@ for (i in 1:length(op)) qd[i] <- sum(wtp>=op[i]) # We fill qd with the number of
 ```
 
 \
+Let's look at the 'vector' of quantities demanded"
+
+`r qd`
+\
+
+
 
 We assume:
 
 > Marginal cost is increasing though this is not a necessity. For something like broadband services we might think that up to a point marginal costs might be decreasing since the cost of adding one more customer might be less than the cost of adding the previous customer.
 
-In our $MC = 0.01(q_d)$
+In our simulation we assume $MC = 0.01(q_d)$
 
 ```{r}
 mc <- qd*.01 # Setting marginal cost
@@ -10747,14 +10773,13 @@ mc <- qd*.01 # Setting marginal cost
 
 Now we plot quantity demanded as a function of price:
 
-
 ```{r}
 
-plot(qd, op, type="l", xlab="Quantity", ylab="Price / Cost", 
+plot(qd, op, type="l", xlab="Quantity", ylab="Price,  Cost",
       main="Demand for Broadband Internet", lwd=2)
 abline(h=0, lwd=2)
 lines(qd, mc, col="red", lwd=2)
-legend(1450, 75, legend=c("Price", "Marginal Cost"), col=c("black", "red"), lty=1)
+legend(1450, 75, legend=c("Demand curve", "Marginal Cost"), col=c("black", "red"), lty=1)
 
 ```
 
@@ -10770,20 +10795,22 @@ tr <- tp <- tc <- rep(NA,length(op)) # Total revenue, total profit, total cost v
 
 ```{r}
 # Calculate total cost
+
 qd.gain <- qd[-length(qd)]-qd[-1]
 qd.gain[length(qd.gain)+1] <- qd.gain[length(qd.gain)]
 for (i in 1:length(op)) tc[i] <- sum((mc*qd.gain)[length(qd):i])
+
 ```
 
 ```{r}
 
 tr <- qd*op
 tp <- tr-tc
- 
+
 minmax <- function(...) c(min(...),max(...))
 
-plot(minmax(op),minmax(tr,tp), type="n", ylab="Cost / Profit", 
-     xlab="Price", 
+plot(minmax(op),minmax(tr,tp), type="n", ylab="Cost / Profit",
+     xlab="Price",
      main="We can see optimal pricing for the monopolist is around 39 dollars")
 
 grid()
@@ -10804,11 +10831,11 @@ The monopolist calculates total revenue and total profit for each price.
 
 cs <- tr
 for (i in 1:length(op)) cs[i] <- sum((wtp[wtp>=op[i]]-op[i]))
- 
+
 tts <- cs+tp
- 
+
 op[tts==max(tts)] # Check the optimal societal price
- 
+
 plot(c(min(op),max(op)),c(min(cs,tp),max(cs,tp)), type="n",
      main="How does surplus vary for different prices?",
      xlab="Price",
@@ -10827,7 +10854,7 @@ We know that the optimal price for society is where $P = MC$ which is £19. We c
 ```{block2,  type='note'}
 
 Exeter BEEM101 students: These will be covered *after* the midterm
-```  
+```
 
 <!--chapter:end:monop_price.Rmd-->
 
