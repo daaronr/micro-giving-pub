@@ -1,16 +1,16 @@
 # R-markdown to html -- web-book and slides
 
-NOt WORKING - See this page as rendered html (web page) [HERE](https://daaronr.github.io/micro_econ_pandoc/)
+- [Web book for MSc Microeconomics](https://daaronr.github.io/micro-giving-pub/index.html) ... used for Exeter BEEM101 in year 2020-21
 
-- NOt WORKING [Web book for Beem101 (MSc Microeconomics)](beem101-bookdowning/index.html)
 
-- NOt WORKING [Web book for Beem2038 (Intermediate Microeconomics for business and politics students)](be2024-bd-copy/index.html)
+<!-- - NOt WORKING [Web book for Beem2038 (Intermediate Microeconomics for business and politics students)](be2024-bd-copy/index.html) -->
 
 Created using the [Bookdown package](https://bookdown.org/yihui/bookdown/), with the Gitbook format (as well as, in the CSS, some style elements from 'tufte_html_book')
 
-# Pandoc (Latex enhanced) to pdf slides/handouts; material and process for two modules (Beem101 and BEE2024)
+- Style files and setup content is automatically pulled over on compile from 'dr-rstuff' repo 
 
-# Content
+
+# Previous content -- Pandoc (Latex enhanced) to pdf slides/handouts; material and process for two modules (Beem101 and BEE2024)
 
 This repo contains both the content and the code for producing course materials (handouts, slides, problem sets, and more) for two similar courses (modules), both for UK 10-12 week terms with 2 hours of lecture per week and one 'tutorial' per fortnight. 1. Undergraduate "Economic principles and policy" and 2. "MSc Microeconomics." Both of these are taught at a fairly basic technical/maths level, and both are pitched to students with a variety of backgrounds in economics, business, and policy. 
 
