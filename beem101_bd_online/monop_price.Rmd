@@ -1481,7 +1481,38 @@ Adapted from: [Econometrics by Simulation](http://www.econometricsbysimulation.c
 Note that the modern use of the term 'Econometrics' tends to refer to the analysis of *real* data, not simulated data.
 </div>
 
-> Our monopolist is a broadband internet supplier within a city. Suppose for now that they only offer one bundle. For now we will consider a scenario with 2000 potential consumers but this can be changed by altering the `npeep` variable. For each of these consumers we generate a willingness to pay for broadband internet (internet). [We assume that the mean WTP is £45]... and we add an error term to this in order to simulate variation between consumers. To do this we use the `rnorm` function which draws a random sample from the standard normal distribution (mean 0, variance 1) multiplied by £15. This yields a standard deviation of roughly £15.
+```{block2,  type='note'}
+
+Although this module is not about coding, you might find it insightful to consider how to use R code to calculate and graph and simulate the monopoly/pricing outcomes.
+
+I hope this makes the theory a bit more concrete. It is obviously a great career and research skill to have some understanding of how to use computers to do simulations and to work with data.
+
+If you can install R (and ideally RStudio), you might like to try to run the code yourself, and tweak certain parts to see how things change. R/Rstudio shoulda lso be installed on most university computers. If you just want to do a quick try, you can simply enter code into a hosted browser interface like the one below [Hosted here](https://rdrr.io/snippets/)... but Rstudio will be better in the long run.
+
+```
+
+
+
+<iframe width='150%' height='700' src='https://rdrr.io/snippets/embed/' frameborder='0'>
+</iframe>
+
+*Try entering some of the code into the box above and click the 'run' bar. A tip: to have R display any 'object' that has been defined, simply type it's name on a line by itself.*
+
+
+\
+
+> Our monopolist is a broadband internet supplier within a city. Suppose for now that they only offer one bundle. For now we will consider a scenario with 2000 potential consumers but this can be changed by altering the `npeep` variable. 
+
+
+> For each of these consumers we generate a willingness to pay for broadband internet (internet). [We assume that the mean WTP is £45]... and we add an error term to this in order to simulate variation between consumers. To do this we use the `rnorm` function which draws a random sample from the standard normal distribution (mean 0, variance 1) multiplied by £15. This yields a standard deviation of roughly £15.
+
+<div class="marginnote">
+A normal distribution follows the traditional "bell shape". Perhaps it's reasonable to assume that willingness to pay is normally distributed, but other distributions might also be possible, such as a "power law" distribution, with much longer "tails" then the normal distribution. 
+
+[Some have claimed (but there is disagreement)](https://www.sciencedirect.com/science/article/pii/S0378437114002544#:~:text=His%20work%20suggested%20that%20the,or%20power%2Dlaw)%20exponent) that wealth follows a "power law' distribution, suggesting wtp might do so as well.
+
+</div>
+ 
 
 ```{r}
 
@@ -1491,13 +1522,18 @@ wtp <- 45 + rnorm(npeep)*15 # Each person has a different willingness to pay
 
 ```
 
-Checking, the std devn is `r sd(wtp)` (coded as  `sd(wtp)`).
+\
 
+Checking, the std deviation  is `r sd(wtp)` (coded as  `sd(wtp)`). The exact nuber will vary each time you run the simulation in R but it will generally be close to 15.
 
+\
 
 > To figure out the demand curve we count the number of people willing to pay at least as much as the offering price.
 
+\
+
 We set the maximum offered price to 90, thus we consider prices between 0 and 90. From this we sum the number of consumers who have a willingness to pay above the offering price in order to give us a vector of quantity demanded at each price level.
+
 
 ```{r}
 
@@ -1509,9 +1545,12 @@ for (i in 1:length(op)) qd[i] <- sum(wtp>=op[i]) # We fill qd with the number of
 ```
 
 \
-Let's look at the 'vector' of quantities demanded"
+Let's look at the 'vector of quantities demanded'
 
 `r qd`
+
+The code above has simply created a vector that computes the quantity demanded at each of the 90 prices £1, £2, ..., £90, given the simulated willinges to pay for the 2000 potential consumers. 
+
 \
 
 

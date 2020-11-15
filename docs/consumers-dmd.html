@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
 
 
-<meta name="date" content="2020-11-13" />
+<meta name="date" content="2020-11-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,6 +52,14 @@
 
 
 <script src="book_assets/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="book_assets/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="book_assets/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<script src="book_assets/bootbox-4.4.0/bootbox.min.js"></script>
+<script src="book_assets/idb-keyvalue-3.2.0/idb-keyval-iife-compat.min.js"></script>
+<link href="book_assets/tutorial-0.10.1/tutorial.css" rel="stylesheet" />
+<script src="book_assets/tutorial-0.10.1/tutorial.js"></script>
+<script src="book_assets/tutorial-autocompletion-0.10.1/tutorial-autocompletion.js"></script>
+<script src="book_assets/tutorial-diagnostics-0.10.1/tutorial-diagnostics.js"></script>
 <!-- font families -->
 
 <link href="https://fonts.googleapis.com/css?family=PT+Sans|Pacifico|Source+Sans+Pro" rel="stylesheet">
@@ -366,6 +374,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.11.1" data-path="uncertainty.html"><a href="uncertainty.html#ce-risk-premia"><i class="fa fa-check"></i><b>3.11.1</b> ‘Certainty equivalent’ of a gamble, ‘Risk premium’</a></li>
 <li class="chapter" data-level="" data-path="uncertainty.html"><a href="uncertainty.html#cara-crra"><i class="fa fa-check"></i>Local measures of risk-aversion</a></li>
 <li class="chapter" data-level="" data-path="uncertainty.html"><a href="uncertainty.html#prudence"><i class="fa fa-check"></i>‘Prudence’</a></li>
+<li class="chapter" data-level="" data-path="uncertainty.html"><a href="uncertainty.html#food-for-thought-risk-preferences-across-domains"><i class="fa fa-check"></i>Food for thought: risk preferences across domains</a></li>
 </ul></li>
 <li class="chapter" data-level="3.12" data-path="uncertainty.html"><a href="uncertainty.html#time-pref"><i class="fa fa-check"></i><b>3.12</b> Time preferences and discounting</a></li>
 </ul></li>
@@ -577,7 +586,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="preferences-over-bundles-indifference-sets-indifference-curves-o-r-4.2-and-supplements" class="section level3" number="4.1.2">
 <h3><span class="header-section-number">4.1.2</span> Preferences over bundles, indifference sets (indifference curves) (O-R 4.2 and supplements)</h3>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-231"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-232"></span>
 <img src="picsfigs/moreisbetter.png" alt="From Nicholson and Snyder 2010" width="80%" />
 <p class="caption">
 Figure 4.1: From Nicholson and Snyder 2010
@@ -949,7 +958,7 @@ knitr::include_url("https://www.qresearchsoftware.com/conjoint-analysis-the-basi
 <!--
 <div class="figure" style="text-align: center">
 <img src="picsfigs/budgetconstraint.png" alt="Budget constraint for two goods" width="80%" />
-<p class="caption">(\#fig:unnamed-chunk-253)Budget constraint for two goods</p>
+<p class="caption">(\#fig:unnamed-chunk-254)Budget constraint for two goods</p>
 </div>
 -->
 <p>Budget constraint for two goods, slope <span class="math inline">\(-p_{x_1}/p_{x_2}\)</span></p>
@@ -1293,7 +1302,7 @@ However, I can <em>not</em> apply this argument to a point where I am consuming 
 <li>i.e., the marginal utility of the first unit of <span class="math inline">\(x_1\)</span> is less than that of <span class="math inline">\(x_2\)</span>.</li>
 </ul>
 <p>The same condition applies to each good you are consuming a positive amount of.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-273"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-274"></span>
 <img src="picsfigs/goodwedontbuy.png" alt="From Autor notes" width="100%" />
 <p class="caption">
 Figure 4.3: From Autor notes
@@ -1495,6 +1504,10 @@ Note that Varian seems to define the WARP differently, saying that it rules out 
 <p>Given monotonicity, this implies that she must <em>strictly</em> prefer <span class="math inline">\(a\)</span> to <span class="math inline">\(b\)</span>, i.e., <span class="math inline">\(b \succ a\)</span>. We say that such a choice implies ’<span class="math inline">\(a\)</span> is revealed strictly preferred to <span class="math inline">\(b\)</span>.</p>
 <p>Obviously, we cannot have that both <span class="math inline">\(b \succsim a\)</span> and <span class="math inline">\(b \succ a\)</span>. Thus, either she is not choosing rationally, or she is indifferent between <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> and her preferences are not monotonic.</p>
 <hr />
+<div class="marginnote">
+<p><strong>Consider…</strong></p>
+<p>Most students choose not to go on-camera in synchronous sessions: Should this be interpreted as revealed preference for online over face to face instruction? (Or at least for some aspects of it?)</p>
+</div>
 <p><strong>Some videos on this:</strong></p>
 <center>
 <p>First consider ‘mapping indifference curves’:</p>
@@ -1728,7 +1741,7 @@ In other words, if you said to a consumer ‘this product will stop being produc
 </div>
 <p><br />
 </p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-299"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-300"></span>
 <img src="picsfigs/cons_surplus.png" alt="Source: Nicholson and Snyder, 2010" width="80%" />
 <p class="caption">
 Figure 4.4: Source: Nicholson and Snyder, 2010
@@ -1790,7 +1803,7 @@ Figure 4.4: Source: Nicholson and Snyder, 2010
 <div class="marginnote">
 <p>Image source: McAfee et al, Introduction to Economic Analysis v. 2.1, chapter 2.3</p>
 </div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-302"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-303"></span>
 <img src="picsfigs/individual_to_mkt_dmd-mcafee.png" alt="McAfee et al: Individual demand aggregates to market demand" width="70%" />
 <p class="caption">
 Figure 4.5: McAfee et al: Individual demand aggregates to market demand
