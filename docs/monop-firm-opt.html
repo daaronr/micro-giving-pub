@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
 
 
-<meta name="date" content="2020-11-15" />
+<meta name="date" content="2020-11-16" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -445,7 +445,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="monop-firm-opt.html"><a href="monop-firm-opt.html#textbook-reading"><i class="fa fa-check"></i>Textbook reading</a></li>
 <li class="chapter" data-level="" data-path="monop-firm-opt.html"><a href="monop-firm-opt.html#price-discrimination-in-the-media-and-public-debate"><i class="fa fa-check"></i>Price discrimination in the media and public debate</a></li>
 <li class="chapter" data-level="" data-path="monop-firm-opt.html"><a href="monop-firm-opt.html#material-from-data-science-and-industry-pricing-practice"><i class="fa fa-check"></i>Material from data science and industry pricing practice</a></li>
-<li class="chapter" data-level="" data-path="monop-firm-opt.html"><a href="monop-firm-opt.html#peer-reviewed-academic-work"><i class="fa fa-check"></i>Peer-reviewed academic work</a></li>
+<li class="chapter" data-level="" data-path="monop-firm-opt.html"><a href="monop-firm-opt.html#pd_lit"><i class="fa fa-check"></i>Peer-reviewed academic work</a></li>
 </ul></li>
 <li class="chapter" data-level="5.1" data-path="monop-firm-opt.html"><a href="monop-firm-opt.html#why-study-the-monopoly"><i class="fa fa-check"></i><b>5.1</b> Why study the monopoly?</a></li>
 <li class="chapter" data-level="5.2" data-path="monop-firm-opt.html"><a href="monop-firm-opt.html#monopoly-profit-maximisation-simple-undergraduate-level-take"><i class="fa fa-check"></i><b>5.2</b> Monopoly profit-maximisation: simple (undergraduate-level) take:</a>
@@ -481,9 +481,10 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="monop-firm-opt.html"><a href="monop-firm-opt.html#why-is-the-benefit-uncertain"><i class="fa fa-check"></i>Why is the benefit uncertain?</a></li>
 </ul></li>
 <li class="chapter" data-level="5.10" data-path="monop-firm-opt.html"><a href="monop-firm-opt.html#arbitrage"><i class="fa fa-check"></i><b>5.10</b> Arbitrage … can foil price discrimination</a></li>
-<li class="chapter" data-level="5.11" data-path="monop-firm-opt.html"><a href="monop-firm-opt.html#second-degree-price-discrimination-2dpd"><i class="fa fa-check"></i><b>5.11</b> Second-degree price discrimination {#2dpd}</a>
+<li class="chapter" data-level="5.11" data-path="monop-firm-opt.html"><a href="monop-firm-opt.html#second-degree-price-discrimination-i.e.-self-selection-i.e.-implicit-discrimination-2dpd"><i class="fa fa-check"></i><b>5.11</b> ‘Second-degree price discrimination’, i.e., ‘self-selection’, i.e., ‘implicit discrimination’ {#2dpd}</a>
 <ul>
 <li class="chapter" data-level="" data-path="monop-firm-opt.html"><a href="monop-firm-opt.html#the-self-selection-problem"><i class="fa fa-check"></i>The ‘self-selection’ problem</a></li>
+<li class="chapter" data-level="5.11.1" data-path="monop-firm-opt.html"><a href="monop-firm-opt.html#formal-treatment-o-r-2dpd_formal"><i class="fa fa-check"></i><b>5.11.1</b> Formal treatment (O-R) {#2dpd_formal}</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="exercises-pricingmonopolyprice-discrimination-simpler.html"><a href="exercises-pricingmonopolyprice-discrimination-simpler.html"><i class="fa fa-check"></i>Exercises: Pricing/monopoly/price-discrimination (simpler)</a>
@@ -648,7 +649,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p><br />
 </p>
 </div>
-<div id="peer-reviewed-academic-work" class="section level3 unnumbered" number="">
+<div id="pd_lit" class="section level3 unnumbered" number="">
 <h3>Peer-reviewed academic work</h3>
 <p>Recent theoretical microeconomic analyses and characterizations of the welfare consequences of “third-degree” price discrimination:</p>
 <p><span class="citation">(Aguirre, Cowan, and Vickers <a href="#ref-aguirreMonopolyPriceDiscrimination2010" role="doc-biblioref">2010</a>; Bergemann, Brooks, and Morris <a href="#ref-bergemannLimitsPriceDiscrimination2015" role="doc-biblioref">2015</a>; Cowan <a href="#ref-cowanThirdDegreePriceDiscrimination2012" role="doc-biblioref">2012</a>; Varian <a href="#ref-varianPriceDiscriminationSocial1985" role="doc-biblioref">1985</a>)</span></p>
@@ -1441,7 +1442,7 @@ Here, the seller does not really know exactly what the consumer is willing to pa
 <img src="picsfigs/wiki-Price_discrimination_(third_degree).png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br />
 </p>
-<p>Consider the above image (from Wikipedia)<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>.</p>
+<p>Consider the above image (from Wikipedia),<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
 On the left, for the ‘inelastic submarket’ the profit-maximising price is larger than for the ‘elastic submarket’ in the middle.*
 <div class="marginnote">
 <p>* Note that technically, with linear demand, as shown, the price elasticities vary at every point on the demand curve.</p>
@@ -1469,12 +1470,16 @@ On the left, for the ‘inelastic submarket’ the profit-maximising price is la
 <blockquote>
 <p>Consider a discriminatory monopolistic market</p>
 </blockquote>
-<p><span class="math display">\[\langle (q_i)^k i=1, C, \succsim \rangle \]</span> …</p>
-<p>*Notation:</p>
-<p><span class="math inline">\(k\)</span> segments or sub-markets</p>
-<p><span class="math inline">\(C\)</span> depicts the cost (of production) function</p>
-<p><span class="math inline">\(\succsim\)</span> is the monopolist’s preferences; we’ll assume it maximizes profit.</p>
+<p><span class="math display">\[\langle (q_i)^k i=1, C, \succsim \rangle \]</span></p>
+<p><em>Notation:</em></p>
+<ul>
+<li><p><span class="math inline">\(k\)</span> segments or sub-markets</p></li>
+<li><p><span class="math inline">\(C\)</span> depicts the cost (of production) function</p></li>
+<li><p><span class="math inline">\(\succsim\)</span> represents the monopolist’s preferences; we’ll assume it maximizes profit.</p></li>
+</ul>
 <p>… they assume cost and all segmented demand functions are differentiable.</p>
+<p><br />
+</p>
 <blockquote>
 <p>For each segment <span class="math inline">\(i\)</span> let <span class="math inline">\(MR_i\)</span> be the marginal revenue function for <span class="math inline">\(q_i\)</span>, and let MC be the marginal cost function for <span class="math inline">\(C\)</span>.</p>
 </blockquote>
@@ -1482,16 +1487,20 @@ On the left, for the ‘inelastic submarket’ the profit-maximising price is la
 <div class="marginnote">
 <p>* However, if we assume a constant marginal cost, as is often assumed in simplified models, then these problems <em>can</em> be decomposed, and the monopoly will simply set MR=MC in each segment, without needing to consider the other segment.</p>
 </div>
-<p>Because of this a change in the demand conditions in one segment may impact the optimal price in another segment, through the impact on marginal cost.</p>
+<p>Because of this, a change in the demand conditions in one segment may impact the optimal price in another segment, through the impact on marginal cost.</p>
 
-<div class="fold">
+<div class="note">
 <p>E.g., suppose the sole delivery food provider in Exeter is ‘Kangalivery’, which has a separate delivery price for students and non-students. Suppose Kangalivery’s marginal cost of delivering food in Exeter is everywhere increasing. Then if an influx of tourists causes non-student demand to shift outwards, the delivery price for <em>students</em> (as well as nonstudents) is likely to rise, and the quantity provided to students is likely to fall.</p>
 </div>
+<p><br />
+</p>
 <blockquote>
 <p>If the monopolist’s preferences are profit-maximizing and his optimal output <span class="math inline">\(y_i{\ast}\)</span> in segment <span class="math inline">\(i\)</span> is positive, then</p>
 </blockquote>
-<p><span class="math display">\[MR_i(y_i^|{ast}) = MC(\sum_{j=1}^k y_j^\{ast})\]</span>.</p>
-<p>O-R offer some good intuition for this:</p>
+<p><span class="math display">\[MR_i(y_i^{\ast}) = MC(\sum_{j=1}^k y_j^{\ast}).\]</span></p>
+<p><br />
+</p>
+<p>O-R offer good intuition for this:</p>
 <blockquote>
 <p>First, the marginal revenues for all segments in which output is positive must be the same since otherwise the producer could increase his profit by moving some production from a segment with a low marginal revenue to one with a high marginal revenue.</p>
 </blockquote>
@@ -1505,13 +1514,13 @@ On the left, for the ‘inelastic submarket’ the profit-maximising price is la
 <div id="who-benefits-from-3dpd" class="section level2" number="5.9">
 <h2><span class="header-section-number">5.9</span> Who benefits from 3DPD?</h2>
 <ul>
-<li><p>Consumers <em>in identifiable group</em> with lower wtp face lower prices, thus they benefit</p></li>
-<li><p>Consumers <em>in identifiable group</em> with higher wtp face higher prices, thus they lose</p></li>
-<li><p>Firms can charge higher prices to high-wtp group without losing low-wtp group <span class="math inline">\(\rightarrow\)</span> increase profit</p></li>
+<li><p>Consumers <em>in the identifiable segment</em> with lower wtp face lower prices, thus they benefit</p></li>
+<li><p>Consumers <em>in the identifiable segment</em> with higher wtp face higher prices, thus they lose</p></li>
+<li><p>Firms can charge higher prices to high-wtp segment without losing low-wtp segment <span class="math inline">\(\rightarrow\)</span> increase profit.</p></li>
 </ul>
 <p><br />
 </p>
-<p>Net welfare result: theoretically uncertain. This is a nuanced point, but I think you are up to the challenge! This is <em>not</em> covered in most of the textbooks, but I give several explanations and references.</p>
+<p><em>Net welfare result:</em> theoretically ambiguous, i.e., ‘it depends’ on several things. This is a nuanced point, but I think you are up to the challenge! This is <em>not</em> covered in most of the textbooks, but I give several explanations below <a href="monop-firm-opt.html#pd_lit">and see references above</a>.</p>
 <p><br />
 </p>
 <p><strong>For consumers:</strong></p>
@@ -1571,8 +1580,8 @@ On the left, for the ‘inelastic submarket’ the profit-maximising price is la
 </div>
 <p>This yields another mechanism design ‘hidden information’ ‘principal-agent problem’</p>
 </div>
-<div id="second-degree-price-discrimination-2dpd" class="section level2" number="5.11">
-<h2><span class="header-section-number">5.11</span> Second-degree price discrimination {#2dpd}</h2>
+<div id="second-degree-price-discrimination-i.e.-self-selection-i.e.-implicit-discrimination-2dpd" class="section level2" number="5.11">
+<h2><span class="header-section-number">5.11</span> ‘Second-degree price discrimination’, i.e., ‘self-selection’, i.e., ‘implicit discrimination’ {#2dpd}</h2>
 <div class="marginnote">
 <p><strong>More to be added here</strong></p>
 </div>
@@ -1581,7 +1590,7 @@ On the left, for the ‘inelastic submarket’ the profit-maximising price is la
 <p>Although it involves concepts from asymmetric information (which we have not yet covered and is only included as a supplement), this is nicely addressed in O-R section 7.4. I will add more material here as well.</p>
 Please read this section (and further material which I will provide).
 </div>
-<p>Here the firm is unable to differentiate between consumers explicitly. Instead it offers various varieties and bundles. It uses variations in quality/quantity to get consumers to “self-select.”</p>
+<p>Here the firm is unable to differentiate between consumers <em>explicitly</em>. Instead it offers various varieties and bundles. It uses variations in quality/quantity to get consumers to “self-select.”</p>
 <p><br />
 </p>
 <p>Some examples:</p>
@@ -1589,8 +1598,7 @@ Please read this section (and further material which I will provide).
 <li><p>Quality- Transport- Different classes, Supermarkets- budget products</p></li>
 <li><p>Quantity- Supermarkets- Larger quantities at lower prices per unit; i.e., ‘nonlinear pricing’</p></li>
 </ul>
-<p><br />
-</p>
+<p> </p>
 <p>Consider…</p>
 <p><strong>Quantity</strong></p>
 <p>An 8 ounce cup of coffee for £1.60 vs. 16 ounces for £2.00</p>
@@ -1637,8 +1645,86 @@ Please read this section (and further material which I will provide).
 </div>
 <p><br></p>
 <p>There is typically lots of discussion of this in the media, see e.g., <a href="https://www.1843magazine.com/ideas/the-daily/why-companies-make-their-products-worse">THIS</a> article in The Economist</p>
+</div>
+<div id="formal-treatment-o-r-2dpd_formal" class="section level3" number="5.11.1">
+<h3><span class="header-section-number">5.11.1</span> Formal treatment (O-R) {#2dpd_formal}</h3>
+<p>The self-selection problem is characterized by a ‘menu’ of items that the firm offers, each item having a price and a quantity (or level of quality). To achieve the desired “self selection”, as implied above, several ‘constraints’ must be met. These constraints Are necessary so that each of the consumers wants to choose the bundle ‘intended for them’, and also wants to buy something rather than nothing.</p>
+<p>Following O-R, we present a somewhat general definition, and then prove and discuss results for a two-consumer case. (Time-permitting: parametric examples.)</p>
+
+<div class="note">
+<p>This is an example of an asymmetric information problem: the consumer has more information about her own value then does the monopolist. This setup is also mathematically equivalent to a general class of “principal agent” and “hidden information” problems. If you further study ‘agency theory’, ‘contract theory’, or ‘mechanism design’, you will see this setup again. This is a workhorse setup in modern microeconomics.</p>
+</div>
 <p><br />
 </p>
+<p>First a fairly general definition of ‘A monopolistic market with a menu’ from O-R, allowing for any number of consumers with distinct valuations of each of the different quantities of the good:</p>
+<blockquote>
+<p><em>Demand</em></p>
+</blockquote>
+<blockquote>
+<p>The function <span class="math inline">\(V_i\)</span> is the value function for consumer <span class="math inline">\(i\)</span>, giving the maximum amount <span class="math inline">\(V_i (q)\)</span> consumer <span class="math inline">\(i\)</span> is willing to pay for <span class="math inline">\(q\)</span> units of the good.</p>
+</blockquote>
+<p>This is similar to value functions we’ve seen before.*</p>
+<div class="marginnote">
+<p>*Consider the ‘contribution to utility’ made by the consumption of a single good, holding other consumption constant, as expressed in the ‘units of other goods one would be willing to give up’.</p>
+</div>
+<p>Defining these value functions</p>
+<blockquote>
+<p>A collection <span class="math inline">\((V^i)_{i=1)^n\)</span> of increasing continuous [value] functions, where <span class="math inline">\(V_i : [0,1] \rightarrow R^+\)</span> and <span class="math inline">\(V_i(0) = 0.\)</span></p>
+</blockquote>
+<p>To consider this most simply, they ‘normalise’ the units of ‘quantity of the good’ (or ‘quality of the good’) to fall between 0 and 1, including the endpoints. They normalise the value of consuming 0 units to 0.</p>
+<div class="marginnote">
+<p>I keep mentioning that this can also express units of quality, as the problem is mathematically equivalent if, as is commonly seen in the real world, a firm uses product quality to get consumers to self-select.</p>
+</div>
+<p><br />
+</p>
+<blockquote>
+<p><em>Producer</em></p>
+</blockquote>
+<blockquote>
+<p>A single producer, called a <em>monopolist</em>, with no costs, who chooses a set <span class="math inline">\(M\)</span> of pairs, called a <em>menu</em>, where a pair <span class="math inline">\((q,m)\)</span> represents the option to buy q units of the good at the (total) price <span class="math inline">\(m\)</span>.</p>
+</blockquote>
+<p><br />
+</p>
+<p>Each consumer chooses whether to buy one item on this menu, or nothing at all:</p>
+<blockquote>
+<p>If <span class="math inline">\(V_i(q)−m ≥ 0\)</span> for some <span class="math inline">\((q,m) \in M\)</span>, consumer <span class="math inline">\(i\)</span> chooses an option <span class="math inline">\((q,m) \in M\)</span> for which <span class="math inline">\(V_i(q)−m\)</span> is maximal; otherwise she buys nothing. The producer chooses M so that the consumers’ choices maximize her profit.</p>
+</blockquote>
+<p><br />
+</p>
+<p>Problems like this are often stated in terms of the firm (or “principal”) choosing the values of the menu elements to maximize their payoffs subject to certain constraints. The problem is broken up into two parts –</p>
+<ol style="list-style-type: decimal">
+<li>We consider each of the different ‘implementations’, i.e., the ways a firm might want get consumers to self-select into choosing different menu items.</li>
+</ol>
+<p>For example…</p>
+
+<div class="fold">
+<p>Considering a set of consumers with ‘high’, ‘medium’, and ‘low’ valuations of each unit of the product, where there is no overlap in valuations:</p>
+<ul>
+<li><p>‘Fully separating’… each of the three types of consumers may select a different menu item, perhaps the highest value select the highest cost and largest menu item, the medium select the medium item, and the lowest value consumer select the cheapest and smallest item.</p></li>
+<li><p>‘Fully pooling’… all of the consumers select the same item</p></li>
+<li><p>‘Partial pooling’… The high and medium value consumer select the same item, while the low value consumers select a smaller and cheaper item</p></li>
+<li><p>‘Partial shut-down’ or the the high and medium value consumers may select different items, while the low value consumers do not purchase anything at all, they are ‘shut down’.</p></li>
+</ul>
+For a general class of cases it can be shown that the fully pooling outcome is not profit maximizing.
+</div>
+<p><br />
+</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Given the chosen ‘implementation’, we consider the maximum profit the firm can make with this implementation. It cannot simply choose any price and any quantity for each menu item. To achieve a particular set of consumer choices (to pool, separate, etc), it will need to consider two constraints on the menu:</li>
+</ol>
+<ul>
+<li><p><em>‘Incentive Compatibility (IC) constraint’:</em> Among the items on the menu, each consumer must gets the greatest payoff from making the choice that the firm wants it to make (rather than by choosing another menu item).</p></li>
+<li><p><em>‘Participation constraint’</em>: Each consumer must prefer to choose the menu item the firm wants it to choose over “not participating at all”, i.e., not buying anything.</p></li>
+</ul>
+<div class="marginnote">
+<p>The participation constraint is sometimes referred to as the individual rationality (IR) constraint.</p>
+</div>
+<p><br />
+</p>
+<p>To find the most profitable strategy, we need to consider all of the possible implementations, determine the profits from each, and find the one that maximizes these profits.</p>
+<p><br />
+</p>
+<!-- add here: a more concrete parametric 2-consumer case -->
 </div>
 </div>
 </div>

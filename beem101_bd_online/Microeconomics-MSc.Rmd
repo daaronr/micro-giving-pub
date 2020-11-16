@@ -9387,7 +9387,7 @@ See "Marketing" chapter in [Business analytics with R](https://bookdown.org/jeff
 
 \
 
-### Peer-reviewed academic work {-}
+### Peer-reviewed academic work {-#pd_lit}
 
 Recent theoretical microeconomic analyses and characterizations of the welfare consequences of "third-degree" price discrimination:
 
@@ -10409,7 +10409,7 @@ Each group or market has it's own demand $\rightarrow$ marginal revenue curve
 
 \
 
-Consider the above image (from Wikipedia)^[https://en.wikipedia.org/wiki/Price_discrimination#/media/File:Price_discrimination_(third_degree).svg].
+Consider the above image (from Wikipedia),^[https://en.wikipedia.org/wiki/Price_discrimination#/media/File:Price_discrimination_(third_degree).svg]
 
 On the left, for the 'inelastic submarket' the profit-maximising price is larger than for the 'elastic submarket' in the middle.\*
 <div class="marginnote">
@@ -10452,17 +10452,20 @@ Another depiction, adding demand curves (they call it 'average revenue'):
 
 > Consider a discriminatory monopolistic market
 
-$$\langle (q_i)^k i=1, C, \succsim \rangle $$ ...
+$$\langle (q_i)^k i=1, C, \succsim \rangle $$ 
 
-*Notation:
+*Notation:*
 
-$k$ segments or sub-markets
+- $k$ segments or sub-markets
 
-$C$ depicts the cost (of production) function
+- $C$ depicts the cost (of production) function
 
-$\succsim$ is the monopolist's preferences; we'll assume it maximizes profit.
+- $\succsim$ represents the monopolist's preferences; we'll assume it maximizes profit.
 
 ... they assume cost and all segmented demand functions are differentiable.
+
+\
+
 
 > For each segment $i$ let $MR_i$ be the marginal revenue function for $q_i$, and let MC be the marginal cost function for $C$.
 
@@ -10473,20 +10476,25 @@ As they note previously, "this problem cannot be decomposed into $k$ independent
 \* However, if we assume a constant marginal cost, as is often assumed in simplified models, then these problems *can* be decomposed, and the monopoly will simply set MR=MC in each segment, without needing to consider the other segment.
 </div>
 
-Because of this a change in the demand conditions in one segment may impact the optimal price in another segment, through the impact on marginal cost.
+Because of this, a change in the demand conditions in one segment may impact the optimal price in another segment, through the impact on marginal cost.
 
-```{block2,  type='fold'}
+```{block2,  type='note'}
 
 E.g., suppose the sole delivery food provider in Exeter is 'Kangalivery', which has a separate delivery price for students and non-students. Suppose Kangalivery's marginal cost of delivering food in Exeter is everywhere increasing.  Then if an influx of tourists causes non-student demand to shift outwards, the delivery price for *students* (as well as nonstudents) is likely to rise, and the quantity provided to students is likely to fall.
 
 ```
 
 
-> If the monopolist’s preferences are profit-maximizing and his optimal output $y_i{\ast}$ in segment $i$ is positive, then
+\
 
-$$MR_i(y_i^|{ast}) = MC(\sum_{j=1}^k y_j^\{ast})$$.
+> If the monopolist’s preferences are profit-maximizing and his optimal output $y_i{\ast}$ in segment $i$ is positive, then 
 
-O-R offer some good intuition for this:
+
+$$MR_i(y_i^{\ast}) = MC(\sum_{j=1}^k y_j^{\ast}).$$
+
+\
+
+O-R offer good intuition for this:
 
 > First, the marginal revenues for all segments in which output is positive must be the same since otherwise the producer could increase his profit by moving some production from a segment with a low marginal revenue to one with a high marginal revenue.
 
@@ -10496,17 +10504,18 @@ O-R offer some good intuition for this:
 
 ## Who benefits from 3DPD?
 
-- Consumers *in identifiable group* with lower wtp face lower prices, thus they benefit
+- Consumers *in the identifiable segment* with lower wtp face lower prices, thus they benefit
 
-- Consumers *in identifiable group* with higher wtp face higher prices, thus they lose
+- Consumers *in the identifiable segment* with higher wtp face higher prices, thus they lose
 
-- Firms can charge higher prices to high-wtp group without losing low-wtp group $\rightarrow$ increase profit
+- Firms can charge higher prices to high-wtp segment without losing low-wtp segment $\rightarrow$ increase profit.
 
 
  \
 
 
-Net welfare result: theoretically uncertain. This is a nuanced point, but I think you are up to the challenge! This is *not* covered in most of the textbooks, but I give several explanations and references.
+*Net welfare result:* theoretically ambiguous, i.e., 'it depends' on several things.  This is a nuanced point, but I think you are up to the challenge! This is *not* covered in most of the textbooks, but I give several explanations below [and see references above](#pd_lit). 
+
 
 
 \
@@ -10594,8 +10603,7 @@ When I ask about the welfare effect of price discrimination, students often ment
 
 This yields another mechanism design 'hidden information' 'principal-agent problem'
 
-## Second-degree price discrimination {#2dpd}
-
+## 'Second-degree price discrimination', i.e., 'self-selection', i.e., 'implicit discrimination' {#2dpd}
 
 <div class="marginnote">
 **More to be added here**
@@ -10609,7 +10617,7 @@ Please read this section (and further material which I will provide).
 ```
 
 
-Here the firm is unable to differentiate between consumers explicitly.  Instead it offers various varieties and bundles. It uses variations in quality/quantity to get consumers to "self-select."
+Here the firm is unable to differentiate between consumers *explicitly*.  Instead it offers various varieties and bundles. It uses variations in quality/quantity to get consumers to "self-select."
 
 \
 
@@ -10620,7 +10628,7 @@ Some examples:
 - Quantity- Supermarkets- Larger quantities at lower prices per unit; i.e., 'nonlinear pricing'
 
 
-\
+\ 
 
 Consider...
 
@@ -10668,7 +10676,6 @@ Train companies must price first and second class such that consumers will self-
 - But if second class is too expensive, the low groups will not buy a ticket.
 
 
-
 \
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
@@ -10696,7 +10703,103 @@ Jules Dupuit’s 1849 comments of the railroad industry in France:
 
 There is typically lots of discussion of this in the media, see e.g.,  [THIS](https://www.1843magazine.com/ideas/the-daily/why-companies-make-their-products-worse) article in The Economist
 
+
+### Formal treatment (O-R) {#2dpd_formal} 
+
+The self-selection problem is characterized by a 'menu' of items that the firm offers, each item having a price and a quantity (or level of quality). To achieve the desired "self selection", as implied above, several 'constraints' must be met. These constraints Are necessary so that each of the consumers wants to choose the bundle 'intended for them', and also wants to buy something rather than nothing. 
+
+Following O-R, we present a somewhat general definition, and then prove and discuss results for a two-consumer case. (Time-permitting: parametric examples.)
+
+```{block2,  type='note'}
+
+This is an example of an asymmetric information problem: the consumer has more information about her own value then does the monopolist. This setup is also mathematically equivalent to a general class of "principal agent" and "hidden information" problems. If you further study 'agency theory', 'contract theory', or 'mechanism design', you will see this setup again. This is a workhorse setup in modern microeconomics.
+
+```  
+
+
 \
+
+First a fairly general definition of 'A monopolistic market with a menu' from O-R, allowing for any number of consumers with distinct valuations of each of the different quantities of the good:
+
+> *Demand* 
+  
+> The function $V_i$ is the value function for consumer $i$, giving the maximum amount $V_i (q)$ consumer $i$ is willing to pay for $q$ units of the good.  
+  
+This is similar to value functions we've seen before.\*
+
+<div class="marginnote">
+\*Consider the 'contribution to utility'  made by the consumption of a single good, holding other consumption constant, as expressed in the 'units of other goods one would be willing to give up'.  
+</div>
+ 
+Defining these value functions 
+
+> A collection $(V^i)_{i=1)^n$ of increasing continuous [value] functions, where $V_i : [0,1] \rightarrow  R^+$ and $V_i(0) = 0.$ 
+
+To consider this most simply, they 'normalise' the units of 'quantity of the good' (or 'quality of the good') to fall between 0 and 1, including the endpoints. They normalise the value of consuming 0 units to 0. 
+
+<div class="marginnote">
+I keep mentioning that this can also express units of quality, as the problem is mathematically equivalent if, as is commonly seen in the real world, a firm uses product quality to get consumers to self-select.
+</div>
+ 
+
+\
+
+> *Producer*
+
+> A single producer, called a *monopolist*, with no costs, who chooses a set $M$ of pairs, called a *menu*, where a pair $(q,m)$ represents the option to buy q units of the good at the (total) price $m$.
+
+\
+
+Each consumer chooses whether to buy one item on this menu, or nothing at all:
+
+> If $V_i(q)−m ≥ 0$ for some $(q,m) \in M$, consumer $i$ chooses an option $(q,m) \in M$ for which $V_i(q)−m$ is maximal; otherwise she buys nothing. The producer chooses M so that the consumers’ choices maximize her profit.
+
+\
+
+Problems like this are often stated in terms of the firm (or "principal") choosing the values of the menu elements to maximize their payoffs subject to certain constraints. The problem is broken up into two parts --
+
+1. We consider each of the different 'implementations', i.e., the ways a firm might want get consumers to self-select into choosing different menu items. 
+
+For example...
+
+```{block2,  type='fold'}
+
+Considering a set of consumers with 'high', 'medium', and 'low' valuations of each unit of the product, where there is no overlap in valuations: 
+  
+- 'Fully separating'... each of the three types of consumers may select a different menu item, perhaps the highest value select the highest cost and largest menu item, the medium select the medium item, and the lowest value consumer select the cheapest and smallest item.
+
+- 'Fully pooling'... all of the consumers select the same item
+
+- 'Partial pooling'... The high and medium value consumer select the same item, while the low value consumers select a smaller and cheaper item
+
+- 'Partial shut-down' or the the high and medium value consumers may select different items, while the low value consumers do not purchase anything at all, they are 'shut down'.
+
+For a general class of cases it can be shown that the fully pooling outcome is not profit maximizing.
+```
+
+
+\
+
+2. Given the chosen 'implementation', we consider the maximum profit the firm can make with this implementation. It cannot simply choose any price and any quantity for each menu item. To achieve a particular set of consumer choices (to pool, separate, etc), it will need to consider two constraints on the menu:
+
+
+- *'Incentive Compatibility (IC) constraint':* Among the items on the menu, each consumer must gets the greatest payoff from making the choice that the firm wants  it to make (rather than by choosing another menu item).
+
+- *'Participation constraint'*: Each consumer must prefer to choose the menu item the firm wants it to choose over "not participating at all", i.e., not buying anything. 
+
+<div class="marginnote">
+The participation constraint is sometimes referred to as the individual rationality (IR) constraint. 
+</div>
+ 
+
+\
+
+To find the most profitable strategy, we need to consider all of the possible implementations, determine the profits from each, and find the one that maximizes these profits.
+
+
+\
+
+<!-- add here: a more concrete parametric 2-consumer case -->
 
 # Exercises: Pricing/monopoly/price-discrimination (simpler)  {-}
 
@@ -10777,7 +10880,19 @@ If you can install R (and ideally RStudio), you might like to try to run the cod
 
 
 \
-> Our monopolist is a broadband internet supplier within a city. Suppose for now that they only offer one bundle. For now we will consider a scenario with 2000 potential consumers but this can be changed by altering the `npeep` variable. For each of these consumers we generate a willingness to pay for broadband internet (internet). [We assume that the mean WTP is £45]... and we add an error term to this in order to simulate variation between consumers. To do this we use the `rnorm` function which draws a random sample from the standard normal distribution (mean 0, variance 1) multiplied by £15. This yields a standard deviation of roughly £15.
+
+> Our monopolist is a broadband internet supplier within a city. Suppose for now that they only offer one bundle. For now we will consider a scenario with 2000 potential consumers but this can be changed by altering the `npeep` variable. 
+
+
+> For each of these consumers we generate a willingness to pay for broadband internet (internet). [We assume that the mean WTP is £45]... and we add an error term to this in order to simulate variation between consumers. To do this we use the `rnorm` function which draws a random sample from the standard normal distribution (mean 0, variance 1) multiplied by £15. This yields a standard deviation of roughly £15.
+
+<div class="marginnote">
+A normal distribution follows the traditional "bell shape". Perhaps it's reasonable to assume that willingness to pay is normally distributed, but other distributions might also be possible, such as a "power law" distribution, with much longer "tails" then the normal distribution. 
+
+[Some have claimed (but there is disagreement)](https://www.sciencedirect.com/science/article/pii/S0378437114002544#:~:text=His%20work%20suggested%20that%20the,or%20power%2Dlaw)%20exponent) that wealth follows a "power law' distribution, suggesting wtp might do so as well.
+
+</div>
+ 
 
 ```{r}
 
@@ -10787,13 +10902,18 @@ wtp <- 45 + rnorm(npeep)*15 # Each person has a different willingness to pay
 
 ```
 
-Checking, the std devn is `r sd(wtp)` (coded as  `sd(wtp)`).
+\
 
+Checking, the standard deviation  is `r sd(wtp)` (coded as  `sd(wtp)`). The exact number will vary each time you run the simulation in R but it will generally be close to 15.
 
+\
 
 > To figure out the demand curve we count the number of people willing to pay at least as much as the offering price.
 
+\
+
 We set the maximum offered price to 90, thus we consider prices between 0 and 90. From this we sum the number of consumers who have a willingness to pay above the offering price in order to give us a vector of quantity demanded at each price level.
+
 
 ```{r}
 
@@ -10805,9 +10925,12 @@ for (i in 1:length(op)) qd[i] <- sum(wtp>=op[i]) # We fill qd with the number of
 ```
 
 \
-Let's look at the 'vector' of quantities demanded"
+Let's look at the 'vector of quantities demanded'
 
 `r qd`
+
+The code above has simply created a vector that computes the quantity demanded at each of the 90 prices £1, £2, ..., £90, given the simulated willinges to pay for the 2000 potential consumers. 
+
 \
 
 
@@ -10836,6 +10959,11 @@ legend(1450, 75, legend=c("Demand curve", "Marginal Cost"), col=c("black", "red"
 
 ```
 
+
+Above, we see that marginal cost only exceeds the "last consumer's value" (thus the price that can be charged) ... when output is around 1800 and the inverse demand (price that can be charged) and marginal cost meet at around 20.
+
+\
+
 > The monopolist must choose a price in which to sell services at. If the monopolist chooses $MC=P$ then the monopolist will not make any money but the consumers will be very happy. We know that the optimal point for the monopolist is at the point where marginal revenue curve intersects the marginal cost curve. Let's see if we can find it.
 
 ```{r}
@@ -10846,6 +10974,8 @@ tr <- tp <- tc <- rep(NA,length(op)) # Total revenue, total profit, total cost v
 
 \
 
+Total cost just sums the marginal cost of all units; we generate this vertor for each of the quantities sold at the prices under consideration...
+
 ```{r}
 # Calculate total cost
 
@@ -10855,16 +10985,32 @@ for (i in 1:length(op)) tc[i] <- sum((mc*qd.gain)[length(qd):i])
 
 ```
 
+
+
+\
+
+Next we calculate total revenue and total profit ... again for each element of the vector.  
+
+
 ```{r}
 
 tr <- qd*op
 tp <- tr-tc
+```
 
-minmax <- function(...) c(min(...),max(...))
+\
+<!-- Todo @oska -- compute and plot marginal revenue here --> 
+
+Next we plot total revenue and total profit against the considered prices.
+
+```{r}
+minmax <- function(...) c(min(...),max(...)) # I think this function is simply used to define the plot scalre
+
+#They use the traditional "plot" function. Ggplot  tools are much much better, and we will try to switch the code when we have a chance.
 
 plot(minmax(op),minmax(tr,tp), type="n", ylab="Cost / Profit",
      xlab="Price",
-     main="We can see optimal pricing for the monopolist is around 39 dollars")
+     main="We can see optimal pricing for the monopolist is around £39:")
 
 grid()
 abline(h=0, lwd=2)
@@ -10876,9 +11022,27 @@ legend(65, y = 45000, legend=c("Total revenue", "Total profit"), col=c("blue", "
 
 The monopolist calculates total revenue and total profit for each price.
 
-> We can see at the price around 18 which would be the optimal price for the consumer, the supplier is making almost no profits.
+> We can see at the price around 18 which would be the optimal price for the consumer [recall that this is the result of marginal-cost pricing], the supplier is making almost no profits.
+
+<div class="marginnote">
+There are still some profits to be had here as with increasing marginal cost the average cost is less than the marginal cost. 
+</div>
+ 
+
+On the other hand, the monopoly's profit maximising price is around £39.
+
+(Note that this is slightly higher than the total-revenue-maximizing price.)
+
+\
+
 
 > The last thing we might wish to consider to Total Surplus or total system efficiency which is defined as that which the consumer benefits by purchasing a good below the consumers willingness to pay plus that of the suppliers profit at that price.
+
+<div class="marginnote">
+Technically we might want to consider what is called total surplus, summing consumer and producer surplus, which does not consider fixed costs. After fixed Costs are incurred they are "sunk" and thus not relevant for the social efficiency of the pricing decision.
+
+.</div>
+ 
 
 ```{r}
 
@@ -10900,7 +11064,7 @@ abline(h=0,col="red", lwd=2)
 legend(60, 75000, legend=c("Consumer surplus", "Producer surplus", "Total surplus"), col=c("purple","blue","black"),lty=1)
 
 ```
-We know that the optimal price for society is where $P = MC$ which is £19. We can see from the above graph that this is the peak of the total surplus curve.
+We know that the optimal price for society is where $P = MC$ which is £19. We can see from the above graph that this is the peak of the total surplus curve, as the theory predicts.
 
 # Exercises: Price discrimination and segmentation, 'pricing mechanisms'; intro to strategic interaction {-}
 
