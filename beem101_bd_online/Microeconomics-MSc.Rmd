@@ -9295,6 +9295,7 @@ Possible further questions tbd (unfold for possibilities)
 
 
 ***
+
 ## Readings: {-}
 
 ### Textbook reading {-}
@@ -10362,7 +10363,7 @@ What kind of price discrimination is this? Should it be legal?
 
 \
 
-Yes I did. Third degree price discrimination, or 'market segmentation' is a much simpler concept than second-degree price discrimination, which involves self-selection. We will return to the latter [below](#2dpd).
+Yes I did. Third degree price discrimination, or 'market segmentation' is a much simpler concept than second-degree price discrimination, which involves self-selection. We will return to the latter [below](#implicitpd).
 
 ```
 
@@ -10603,29 +10604,27 @@ When I ask about the welfare effect of price discrimination, students often ment
 
 This yields another mechanism design 'hidden information' 'principal-agent problem'
 
-## 'Second-degree price discrimination', i.e., 'self-selection', i.e., 'implicit discrimination' {#2dpd}
+## 'Second-degree price discrimination', i.e., 'self-selection', i.e., 'implicit discrimination' {#implicitpd}
 
-<div class="marginnote">
-**More to be added here**
-</div>
 
 
 ```{block2,  type='note'}
+
 Although it involves concepts from asymmetric information (which we have not yet covered and is only included as a supplement), this is nicely addressed in O-R section 7.4. I will add more material here as well.
 
 Please read this section (and further material which I will provide).
 ```
 
 
-Here the firm is unable to differentiate between consumers *explicitly*.  Instead it offers various varieties and bundles. It uses variations in quality/quantity to get consumers to "self-select."
+Here the firm is unable to differentiate between consumers *explicitly*.  Instead it offers various varieties and bundles. It uses variations in quality or quantity to get consumers to "self-select."
 
 \
 
 Some examples:
 
-- Quality- Transport- Different classes, Supermarkets- budget products
+- Quality: Transport- Different classes, Supermarkets- budget products
 
-- Quantity- Supermarkets- Larger quantities at lower prices per unit; i.e., 'nonlinear pricing'
+- Quantity: Supermarkets- Larger quantities at lower prices per unit; i.e., 'nonlinear pricing'
 
 
 \ 
@@ -10704,41 +10703,52 @@ Jules Dupuit’s 1849 comments of the railroad industry in France:
 There is typically lots of discussion of this in the media, see e.g.,  [THIS](https://www.1843magazine.com/ideas/the-daily/why-companies-make-their-products-worse) article in The Economist
 
 
-### Formal treatment (O-R) {#2dpd_formal} 
+### Formal characterisation (O-R) {#implicitpd_formal} 
 
-The self-selection problem is characterized by a 'menu' of items that the firm offers, each item having a price and a quantity (or level of quality). To achieve the desired "self selection", as implied above, several 'constraints' must be met. These constraints Are necessary so that each of the consumers wants to choose the bundle 'intended for them', and also wants to buy something rather than nothing. 
+The self-selection problem is characterized by a 'menu' of items that the firm offers, each item having a price and a quantity (or level of quality). To achieve the desired "self selection", as implied above, several 'constraints' must be met. These constraints are necessary so that each of the consumers prefers to choose the item 'intended for them' (rather than another menu item), and also wants to buy something rather than nothing. 
 
 Following O-R, we present a somewhat general definition, and then prove and discuss results for a two-consumer case. (Time-permitting: parametric examples.)
 
 ```{block2,  type='note'}
 
-This is an example of an asymmetric information problem: the consumer has more information about her own value then does the monopolist. This setup is also mathematically equivalent to a general class of "principal agent" and "hidden information" problems. If you further study 'agency theory', 'contract theory', or 'mechanism design', you will see this setup again. This is a workhorse setup in modern microeconomics.
+This is an example of an asymmetric information problem: the consumer has more information about her own value then does the monopolist. This setup is also mathematically equivalent to a general class of "principal agent" and "hidden information" problems. If you further study 'agency theory', 'contract theory', or 'mechanism design', you will see this setup again. This is a workhorse setup in modern microeconomics. For a standard treatment of the 'hidden information' problem, see my slides [HERE](https://www.dropbox.com/s/mdit2mvjnln2bt2/beem101_adapt_hidden_info_slides_ho.pdf?dl=0), with content drawn from Laffont and Martimort, 2002, and Salanie, 2005.  
 
 ```  
 
 
 \
 
-First a fairly general definition of 'A monopolistic market with a menu' from O-R, allowing for any number of consumers with distinct valuations of each of the different quantities of the good:
+First a fairly general definition of 'a monopolistic market with a menu' from O-R, allowing for any number of consumers with distinct valuations of each of the different quantities of the good:
 
 > *Demand* 
   
 > The function $V_i$ is the value function for consumer $i$, giving the maximum amount $V_i (q)$ consumer $i$ is willing to pay for $q$ units of the good.  
   
+
+\
 This is similar to value functions we've seen before.\*
 
 <div class="marginnote">
 \*Consider the 'contribution to utility'  made by the consumption of a single good, holding other consumption constant, as expressed in the 'units of other goods one would be willing to give up'.  
 </div>
- 
+
+\
+
 Defining these value functions 
 
-> A collection $(V^i)_{i=1)^n$ of increasing continuous [value] functions, where $V_i : [0,1] \rightarrow  R^+$ and $V_i(0) = 0.$ 
 
-To consider this most simply, they 'normalise' the units of 'quantity of the good' (or 'quality of the good') to fall between 0 and 1, including the endpoints. They normalise the value of consuming 0 units to 0. 
+> A collection $(V^i)^n_{i=1}$ of increasing continuous [value] functions, where $V_i : [0,1] \rightarrow  R^+$ and $V_i(0) = 0.$ 
+
+To consider this most simply, they 'normalise' the units of 'quantity of the good' (or 'quality of the good') to fall between 0 and 1, including the endpoints (that's what the closed set $[0,1]$ denotes).
+
+They normalise the value of consuming 0 units to 0, for all types of consumer. 
+
+Note that, as these are increasing functions, each consumer's value is increasing in the amount consumed, up to a maximum value at 1 unit consumed.
 
 <div class="marginnote">
-I keep mentioning that this can also express units of quality, as the problem is mathematically equivalent if, as is commonly seen in the real world, a firm uses product quality to get consumers to self-select.
+
+I keep mentioning that this can also express units of *quality* (rather than quantity). The problem is mathematically equivalent if, as is commonly seen in the real world, a firm uses product quality to get consumers to self-select.
+
 </div>
  
 
@@ -10752,9 +10762,11 @@ I keep mentioning that this can also express units of quality, as the problem is
 
 Each consumer chooses whether to buy one item on this menu, or nothing at all:
 
-> If $V_i(q)−m ≥ 0$ for some $(q,m) \in M$, consumer $i$ chooses an option $(q,m) \in M$ for which $V_i(q)−m$ is maximal; otherwise she buys nothing. The producer chooses M so that the consumers’ choices maximize her profit.
+> If $V_i(q)−m ≥ 0$ for some $(q,m) \in M$, consumer $i$ chooses an option $(q,m) \in M$ for which $V_i(q)−m$ is maximal; otherwise she buys nothing. 
 
 \
+
+> The producer chooses M [the set of menu items] so that the consumers’ choices maximize her profit.
 
 Problems like this are often stated in terms of the firm (or "principal") choosing the values of the menu elements to maximize their payoffs subject to certain constraints. The problem is broken up into two parts --
 
@@ -10774,9 +10786,14 @@ Considering a set of consumers with 'high', 'medium', and 'low' valuations of ea
 
 - 'Partial shut-down' or the the high and medium value consumers may select different items, while the low value consumers do not purchase anything at all, they are 'shut down'.
 
-For a general class of cases it can be shown that the fully pooling outcome is not profit maximizing.
+
 ```
 
+
+<div class="marginnote">
+For a general class of cases it can be shown that the fully pooling outcome is not profit-maximizing.
+</div>
+ 
 
 \
 
@@ -10785,21 +10802,280 @@ For a general class of cases it can be shown that the fully pooling outcome is n
 
 - *'Incentive Compatibility (IC) constraint':* Among the items on the menu, each consumer must gets the greatest payoff from making the choice that the firm wants  it to make (rather than by choosing another menu item).
 
-- *'Participation constraint'*: Each consumer must prefer to choose the menu item the firm wants it to choose over "not participating at all", i.e., not buying anything. 
+- *'Participation constraint' (PC)*: Each consumer must prefer to choose the menu item the firm wants it to choose over "not participating at all", i.e., over not buying anything.
 
 <div class="marginnote">
 The participation constraint is sometimes referred to as the individual rationality (IR) constraint. 
 </div>
  
+\
+
+To find the most profitable strategy, we need to consider all of the possible implementations, determine the profits from each, and find the implementation that yields the greatest profits.
+
 
 \
 
-To find the most profitable strategy, we need to consider all of the possible implementations, determine the profits from each, and find the one that maximizes these profits.
+```{block2,  type='note'}
 
+The O-R example below is somewhat unusual. I intend to add a more standard parametric example here, with an algebraic as well as a graphical depiction, both in text and in a video.
+
+
+```  
+
+### Two consumer 'Monopolistic market with a menu' (O-R Prop 7.3) 
+
+> Consider a two-consumer *monopolistic market with a menu* .... in which  $V^1(q^1)−V^1(q^2) > V^2 (q^1) − V^2 (q^2)$ whenever $q^1 > q^2 \geq 0$
+
+Here we define defining a meaningful setup in which consumer 1 is the 'high type consumer' and  consumer 2 is the 'low type'; the latter has an unambiguously lower valuation of each additional unit. The above simply states that consumer 1 gets more 'additional value from having a larger  ($q^1$) rather than a smaller amount ($q^2$)' than does consumer 2, no matter which pairs ofamounts we are considering. I.e., starting from any point, consumer 1 always values additional units more than does consumer 2. 
 
 \
 
-<!-- add here: a more concrete parametric 2-consumer case -->
+For future use, let us define 'the difference in the value of $q$ units to consumer 1 relative to consumer 2' as:
+
+$$\Delta\big(V(q)\big) \equiv V^1(q) - V^2(q).$$
+
+\
+
+> Let $q^{\ast}$ be a maximizer of $2V^2(q) − V^1(q)$.
+
+It's not yet so intuitive why this is an important term, but we can flesh out some interpretation of what it means:
+
+```{block2,  type='fold'}
+
+$2V^2(q)$ is "twice the low type's" value of $q$ units. Note that this is the revenue at the highest price that would still induce *both* consumers to buy $q$ units.
+
+$V^1(q)$ is "the high type's value of $q$ units". 
+
+Thus  $2V^2(q) − V^1(q)$ is thus "the difference in revenue from selling a particular $q$ to both consumers versus only selling it to one (high type) consumer". 
+
+Thus $q^{\ast}$, the maximizer of this, is "the quantity at which the benefit from selling to both consumers is highest, relative to selling to one consumer." 
+
+
+But actually, this seems 'coincidental'; the story below is different (I wonder how to bring these intuitions together?).
+
+```
+
+\
+
+
+> The monopolist’s maximal profit is $max\{V^1(1), 2V^2(1), V^1(1) + 2V^2(q^{\ast}) − V^1(q^{\ast})\}$.
+
+
+
+This represents the maximum of three possible implementations (noting revenue is the same as profit here, as costs are assumed to be zero). We consider each of these terms...
+
+1. **'Shut down'**: $V^1(1)$ revenue results from the selling one unit to the high-type and 'shutting down' the low type. Formally, this menu is  $\{(1,V^1(1))\}$, specifying the amount and the price, respectively.  Among the *'shut down'* implementations, this is the most profitable. Here's why:
+
+```{block2,  type='fold'}
+
+If we only are selling to the high type, consumer 1, we only need to meet her 'participation constraint'; we can offer her a single menu item with any price and any quantity (or quality). She will coose this (rather than purchasing nothing), if its value to her meets or exceeds its price. Her value is highest at $q=1$ unit: she values this at $V^1(1)$. So we offer her a menu with only this 'maximal 1 unit' quantity and we charge her  $V^1(1)$ for it. It is part of an equilibrium strategy for this customer to buy this 1 unit rather than to not buy this one unit.\*
+
+Of course, the lower type, consumer 2, values 1 unit at $V^2(1) < V^1(1)$, so he will not pay this price and he is 'shut down'. 
+
+```
+
+<div class="marginnote">
+\* By convention, we assume, for such problems, that when an 'agent' (here the consumer) is indifferent, she will make the choice that the 'principal' (the one proposing the 'contract' or menu, here this is the monopoly producer) wants her to make. There are several justifications for this: 
+
+1.  Although the agent is indifferent between accepting and rejecting, accepting *is* a best response, and it is the only one that is part of an equilibrium 
+
+2. The outcome and payoffs are nearly identical to a case where the principal offers a 'tiny bit more' in the menu item, to give the agent a strict preference for accepting this.
+
+</div>
+ 
+
+\
+
+2. **'Pooling'**: $2V^2(1)$ revenue results from offering a single menu item with 1 unit, charging a price that both the high and low type will be willing to pay. Formally, this menu is $\{(1,V^2(1))\}$. 
+
+Among the *'pooling'* implementations, this is the most profitable.\* 
+
+<div class="marginnote">
+\* However, note that for a general class of cases, the pooling implementation will *not* be revenue-maximising.
+</div>
+ 
+Here's why: 
+
+```{block2,  type='fold'}
+
+If we are offering a single menu item and we want both types to buy it, we must charge a price at or below the *lower* of the two consumers' valuations. Of course there is no reason to price *below* this point, so we charge $V^2(q)$ for the quantity ($q$) that we choose, and we get revenue $2V^2(q)$, as both consumers buy it.
+
+Given we are getting $2V^2(q)$ in revenue, and costs are 0, we will choose the quantity (or quality) $q$ that maximizes the value for the low type; here this is (again) $q=1$. 
+
+```
+
+\
+
+3. **'Separating'**: $V^1(1) + 2V^2(q^{\ast}) − V^1(q^{\ast})$ is the maximum revenue that could result from an implementation where we get the low- and high-type consumers to buy distinct quantities (or qualities), and pay different amounts.
+
+Note that this is equivalent to $V^1(1) + V^2(q^{\ast}) - \Delta\big(V(q^{\ast})\big)}$.
+
+\
+
+This results from offering a menu with two items and two prices, $M\ast= \{(q^{\ast},V^2(q^{\ast}), (1,V_1(1) − \Delta\big(V(q^{\ast})\big))\}$. (Note I am switching the order presented in O-R here).
+
+\
+
+I.e.:
+
+The **second item** contains the quantity $q^{\ast}$ defined above (and in general, $q^{\ast}<1$), priced at $V^2(q^{\ast})$, the low-type's valuation of this quantity. This item will be chosen by the low-type (consumer 2).
+
+In fact, this exactly meets the "low type's participation constraint": the price is just low enough to get him to buy this item, rather than buy nothing.
+
+
+The **first item** contains the maximal quantity (1 unit). It's price is $V_1(1) −\Delta \big(V(q^{\ast})\big)$. This item will be chosen by the high-type (consumer 1).
+ 
+- Note that this price is *below* $V_1(1)$, so the high-type is paying *less* for this item than her value. 
+
+- How much less? The second term, $ \Delta \big(V(q^{\ast})\big) = (V^1(q^{\ast}) − V^2(q^{\ast}))$ represents 'the amount that the high-type consumer values the quantity in the second item ($q^\ast$) *more than the low-types valuation of this quantity.*  
+
+  - Note that if the low-type were charged her full valuation for $q^\ast$ (which she will be), this difference tells us the amount of surplus the high-type would get from 'pretending to be the low type'. 
+  
+  - Thus, to get the high type not to 'pretend to be the low type', she needs to get at least this amount of surplus. This is often called an *information rent*.\*
+  - Thus the price of the first item is reduced by this difference $\Delta \big(V(q^{\ast}) \big)$, so that the high type will get the same surplus from choosing her intended item.
+
+<div class="marginnote">
+\* We call it an information rent because it is the amount that one type must be compensated to "reveal her information" (through her choice). Here, the high tape has information about her value of the good that the monopoly would love to obtain. However, if she keeps it a secret, she can attain a certain surplus by pretending to be the low value type. 
+
+In fact, the amount $\Delta\big(V(q^{\ast})\big)$ is also 'the amount the monopolist would have to pay the high value type to reveal her type' given the quantity offered to the low type ... After which point the monopolist could then choose her charge her her *full*  willingness to pay for the quantity she will consume (here, one unit).
+</div>
+
+
+The above formula comes from solving the high-types' 'IC constraint', getting her to choose the first item, the one intended for her, rather than choosing the second item, the one intended for the low-type. 
+
+\
+
+OK, this tells us what the relative prices must be to exactly satisfy the PC for the low-type and the IC for the high-type, given the quantities in each item ... but then how do we know that...:
+
+1. (a) the PC for the low type and (b) the IC for the high type  are 'binding' and met with equality?....
+
+(and how do we know ...we don't need to worry about the IC for the low type nor the PC for the high type?)
+
+And how do we know that: 
+
+2. ...the profit-maximizing quantities of each item are $1$ for the first item (for the high type) and $q^\ast$ as defined above for the second item (for the low type)?
+
+\
+
+(1a). Here's why we know the PC for the low type is 'binding' and met with equality:
+
+
+```{block2,  type='fold'}
+
+*Proof by contradiction...*
+  
+The PC for the low type must be met with equality because if it didn't, i.e., if the low type gained a positive surplus from choosing item 2, then: 
+
+- The monopoly could raise the price of this item somewhat and increase its profit
+- This would not affect any of the other constraints negatively; it would only make item 2 *less* attractive for the high type.
+
+
+```
+
+\
+
+The above demonstrates O-R's  "**Step 1** $V^2(q^2) = m^2$." In other words, the low type is charged an amount, $m^2$, equal to his valuation of this output. His participation constraint is met with equality, he gets no rent. 
+
+\
+
+(1b). Here's why we know the IC for the high type is 'binding' and met with equality:
+
+```{block2,  type='fold'}
+  
+*Proof by contradiction...*
+  
+IC for the high type must be met with equality because if it wasn't, i.e., if the high type was *strictly* better off from choosing item 1 than item 2, then: 
+
+- The monopoly could raise the price of the item 1 somewhat, and increase its profit
+- This would reduce the high type's surplus, making it's PC 'tighter'; however, as we noted above (and re-iterate below), the high type is already getting an information rent; her surplus is already positive, so reducing it a little bit will not take it below zero. Thus we don't have to worry about this causing the high type to drop out of the market completely.
+
+- None of the other constraints would be negatively affected
+
+```
+
+\
+
+Using O-R's notation, this implies:
+
+$V^1(q^1)−m^1 = V^1(q^2)−m^2$, i.e., the high type's surplus from choosing item 1 must equal his surplus from choosing item 2. 
+
+Plugging in $m^2=V^2(q^2)$ (low type is charged his value for item 2) yields
+$V^1(q^1)−m^1 = V^1(q^2)−V^2(q^2)$; so the high type's surplus will be the difference in the valuations of the high and low type for item 2. 
+
+Rearranging, the price for item 1 will be $m^1 = V^1(q^1)- \Delta\big(V(q^2)\big)$.
+
+\
+
+Here's why (2) we know that the profit-maximimizing quantities of each item are $1$ for the first item (for the high type) and $q^\ast$ as defined above for the first item (for the low type).
+
+We've determined that the items will cost
+
+$m^1 = V^1(q^1)- \Delta\big(V(q^2)\big) = V^1(q^1)- \big(V^1(q^2) - V^2(q^2)\big)$
+
+and 
+
+$m^2 = V(q^2)$.
+
+As there are no production costs, the profit is simply:
+
+$$\pi(q^1, q^2) = m^1(q^1, q^2) + m^2(q^2) = V^1(q^1)- \Delta\big(V(q^2)\big) = V^1(q^1)- \big(V^1(q^2) - V^2(q^2)\big) + V^2(q^2)$$\*
+
+<div class="marginnote">
+Note, in a typical depiction of this problem, we often consider 'relative shares' of consumers of each type, rather than simply two consumers.</div>
+ 
+$q^1$, the quantity intended for the high type, only affects the amount that can be charged to the high type. Simply put, as we increase the high type's value, $V^1(q^1)$ by increasing $q^1$, we increase the price that we can charge her by this same amount. As costs are zero, we thus want to make this as large as possible, setting $q^1=1$.\*
+
+<div class="marginnote">
+In a more elaborate problem, with a positive marginal cost this will be set equal to the point where the marginal value equals the marginal cost, i.e., the 'efficient quantity'. 
+</div>
+ 
+\
+
+However, notice that the quantity intended for the low type affects both:
+
+- the value the low type gets from this $V^2(q^2)$, and thus the amount you can charge him, and
+
+- the *information rent* that the high type must gain, $Delta\big(V(q^2)\big)$, and thus the amount you must 'reduce her price' below her valuation. 
+
+Because of this second effect the monopolist may set the quantity intended for the low type *below* 1. This would socially inefficient;\* if this is the case then the monopolist negatively 'distorts' the quantity (or quality) intended for the low type in order to reduce the rent it must pay to the high type.
+
+<div class="marginnote">
+Here, producing the maximal amount, 1 unit, for both types is the only socially efficient outcome, as the good is produced at 0 cost, and both types prefer more to less. 
+</div>
+ 
+The profit maximizing choice of $q^2$ will thus maximize (rearranging $\pi(q^1, q^2)$ above):
+
+$V^1(q^1)- \Delta\big(V(q^2)\big) = V^1(q^1) - V^1(q^2) + 2V^2(q^2)$
+.... as $q^2$ only enters into the latter terms, this is the same as 
+
+$q^{\ast} \equiv \argmax_q \big(2V^2(q) − V^1(q)\big)$, as promised.
+
+\
+
+We see again that  $q^2$ may be distorted downwards (and thus $q^{\ast}<1$ is possible). Notice that  term above does not simply set $q^2$ to maximise the value that the low type gets from it; restating it, we see it maximises 
+
+$\big(V^2(q) −  \Delta\big(V(q)\big)$... 
+
+the latter term increases in $q$, we see this will trading off the 'benefit' to the low type against the extent to which the information rent to the high type must be increased. 
+
+\
+
+
+By the way, here's why (1) we can ignore the PC for the high type and ignore the IC for the low type. 
+
+```{block2,  type='fold'}
+
+The PC for the high type holds automatically as a result of both the PC for the low type and the IC for the high type holding.
+
+If we get the low type to purchase a positive amount at some price, satisfying his participation constraint (PC), it is necessarily the case that the high type would get more value from this item than does the low type. But, as noted above, we also want the high type to find it at least as attractive to choose the item intended for her, thus we make this item have at least as high a payoff for her. So the payoff for the high type from choosing the second item must be at least as high as the pay off to her from choosing the first item, and we know the latter is  strictly positive. Thus her participation constraint is automatically satisfied as a result of these other constraints.
+
+The IC for the low type can also be ignored. It holds as a result of the other 'binding constraints' and from our assumption that the high type always gains a greater value from any increase in quantity than the low type would gain from the same increase in quantity. This can be shown algebraically, but the intuition is not quite as straightforward. Essentially, the high type will be given just enough information rent to make it attractive for her to choose the second item (we saw her IC binds). However, this differential is not enough to make this larger quantity item attractive to the low type, because of the low type's lesser valuation of additional quantity.
+
+```
+
+\
+
+
 
 # Exercises: Pricing/monopoly/price-discrimination (simpler)  {-}
 
@@ -11064,7 +11340,10 @@ abline(h=0,col="red", lwd=2)
 legend(60, 75000, legend=c("Consumer surplus", "Producer surplus", "Total surplus"), col=c("purple","blue","black"),lty=1)
 
 ```
-We know that the optimal price for society is where $P = MC$ which is £19. We can see from the above graph that this is the peak of the total surplus curve, as the theory predicts.
+
+The peak of the total surplus curve is where  where $P = MC$, at about £19.
+\
+
 
 # Exercises: Price discrimination and segmentation, 'pricing mechanisms'; intro to strategic interaction {-}
 
@@ -11999,7 +12278,7 @@ Broadly, asymmetric information is a situation in which one party to a transacti
 Brief summary below
 
 
-## Principal-Agent Problem
+## Principal-Agent Problem {#pa-problem}
 
 A principal “hires” an agent to perform some task, and the agent has private information, either about her actions or her type.
 
