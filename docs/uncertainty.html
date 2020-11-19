@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
 
 
-<meta name="date" content="2020-11-18" />
+<meta name="date" content="2020-11-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,14 +52,6 @@
 
 
 <script src="book_assets/accessible-code-block-0.0.1/empty-anchor.js"></script>
-<link href="book_assets/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="book_assets/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-<script src="book_assets/bootbox-4.4.0/bootbox.min.js"></script>
-<script src="book_assets/idb-keyvalue-3.2.0/idb-keyval-iife-compat.min.js"></script>
-<link href="book_assets/tutorial-0.10.1/tutorial.css" rel="stylesheet" />
-<script src="book_assets/tutorial-0.10.1/tutorial.js"></script>
-<script src="book_assets/tutorial-autocompletion-0.10.1/tutorial-autocompletion.js"></script>
-<script src="book_assets/tutorial-diagnostics-0.10.1/tutorial-diagnostics.js"></script>
 <!-- font families -->
 
 <link href="https://fonts.googleapis.com/css?family=PT+Sans|Pacifico|Source+Sans+Pro" rel="stylesheet">
@@ -743,10 +735,10 @@ n <em>Expected Utility</em> (EU) framework, as defined below, allows for risk-av
 <p><span class="math display">\[ f (x) = F&#39; (x) ,~~~F(x) = \int_{- \infty}^{x} f (t)\,dt .\]</span></p>
 <p><br />
 The ‘standard normal density function’ is depicted below:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="uncertainty.html#cb13-1"></a><span class="kw">curve</span>(<span class="kw">dnorm</span>(x),</span>
-<span id="cb13-2"><a href="uncertainty.html#cb13-2"></a>      <span class="dt">xlim =</span> <span class="kw">c</span>(<span class="op">-</span><span class="fl">3.5</span>, <span class="fl">3.5</span>),</span>
-<span id="cb13-3"><a href="uncertainty.html#cb13-3"></a>      <span class="dt">ylab =</span> <span class="st">&quot;Density&quot;</span>, </span>
-<span id="cb13-4"><a href="uncertainty.html#cb13-4"></a>      <span class="dt">main =</span> <span class="st">&quot;Standard Normal Density Function&quot;</span>) </span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="uncertainty.html#cb9-1"></a><span class="kw">curve</span>(<span class="kw">dnorm</span>(x),</span>
+<span id="cb9-2"><a href="uncertainty.html#cb9-2"></a>      <span class="dt">xlim =</span> <span class="kw">c</span>(<span class="op">-</span><span class="fl">3.5</span>, <span class="fl">3.5</span>),</span>
+<span id="cb9-3"><a href="uncertainty.html#cb9-3"></a>      <span class="dt">ylab =</span> <span class="st">&quot;Density&quot;</span>, </span>
+<span id="cb9-4"><a href="uncertainty.html#cb9-4"></a>      <span class="dt">main =</span> <span class="st">&quot;Standard Normal Density Function&quot;</span>) </span></code></pre></div>
 <p><img src="Microeconomics-MSc_files/figure-html/unnamed-chunk-164-1.png" width="80%" style="display: block; margin: auto;" /></p>
 <p>If a variable has this (or any) probability distribution, we can determine the probability that it falls in any particular region by computing the <em>area under the curve</em> between these regions, i.e., computing the integral between these regions.</p>
 <div class="marginnote">
@@ -760,7 +752,7 @@ The ‘standard normal density function’ is depicted below:</p>
 <p>This material is from the web version of ‘Introduction to Econometrics with R’,
 Christoph Hanck, Martin Arnold, Alexander Gerber and Martin Schmelzer</p>
 </div>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="uncertainty.html#cb14-1"></a>knitr<span class="op">::</span><span class="kw">include_url</span>(<span class="st">&quot;https://bookdown.org/machar1991/ITER/2-1-random-variables-and-probability-distributions.html#probability-distributions-of-discrete-random-variables&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="uncertainty.html#cb10-1"></a>knitr<span class="op">::</span><span class="kw">include_url</span>(<span class="st">&quot;https://bookdown.org/machar1991/ITER/2-1-random-variables-and-probability-distributions.html#probability-distributions-of-discrete-random-variables&quot;</span>)</span></code></pre></div>
 <iframe src="https://bookdown.org/machar1991/ITER/2-1-random-variables-and-probability-distributions.html#probability-distributions-of-discrete-random-variables" width="80%" height="400px">
 </iframe>
 <p>The expected value (EV) of a continuous random variable <span class="math inline">\(X\)</span> is then defined by
@@ -1520,8 +1512,8 @@ The later you switch, the more risk averse you reveal yourself to be.</p>
 <p><br />
 </p>
 <p>You can check this, e.g., <a href="https://shiny.rit.albany.edu/stat/binomial/">here</a></p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="uncertainty.html#cb15-1"></a>knitr<span class="op">::</span><span class="kw">include_app</span>(<span class="st">&quot;https://shiny.rit.albany.edu/stat/binomial/&quot;</span>,</span>
-<span id="cb15-2"><a href="uncertainty.html#cb15-2"></a><span class="dt">height =</span> <span class="st">&quot;600px&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="uncertainty.html#cb11-1"></a>knitr<span class="op">::</span><span class="kw">include_app</span>(<span class="st">&quot;https://shiny.rit.albany.edu/stat/binomial/&quot;</span>,</span>
+<span id="cb11-2"><a href="uncertainty.html#cb11-2"></a><span class="dt">height =</span> <span class="st">&quot;600px&quot;</span>)</span></code></pre></div>
 <iframe src="https://shiny.rit.albany.edu/stat/binomial/?showcase=0" width="80%" height="600px">
 </iframe>
 <p><br></p>
