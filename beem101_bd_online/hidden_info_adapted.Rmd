@@ -1,0 +1,734 @@
+
+
+
+Introduction
+============
+
+Material comes largely from Laffont and Martimort ch. 2[^1]
+
+: The (2001 edition) of the Laffont and Martimort text appears to be
+online for free. Look up “THE THEORY OF INCENTIVES I : THE
+PRINCIPAL-AGENT MODEL” and you will probably find it.
+
+The key sections to read are ’2.2 The Basic Model’ through 2.7.3
+’Shut-down policy’.
+
+This is also partially covered, with a different approach, in the NS
+text section ’Adverse Selection: Consumer’s Private Information about
+Valuation’
+
+### Introduction: Adverse Selection (Hidden information) and screening
+
+This involves the optimal design of incentives when the agent has
+private information on an *unchosen* variable that affects the payoffs.
+
+However, the identical model describes second-degree price
+discrimination, setting a menu of prices and quantities/qualities and
+getting consumers to self select.
+
+**Motivational example: (Skip in lecture)**
+
+‘Pursuit of Happyness (link)’
+
+<http://www.youtube.com/watch?v=_xcZTtlGweQ>
+
+Discuss:
+
+Why would Dean Witter make the internship unpaid? What kind of a person
+would take such an internship?
+
+Why would firm give such a huge return to its brokers?
+
+What are the inefficiencies associated with this?
+
+Who is bearing the risk?
+
+### Examples
+
+<span> Firm hires employee of unknown skill or unknown intrinsic
+motivation </span>
+
+<span> A landlord delegates the cultivation of land with unknown
+productivity to a tenant-farmer </span>
+
+<span> Government (or firm) procurement from (or regulation of) monopoly
+firm w/unknown marginal. cost (e.g., NHS services)</span><span>... Or
+within a firm (see theory of the firm) </span>
+
+<span> Investor delegates management of his portfolio </span>
+
+### Examples, ‘consumption-side’
+
+Firm sells good to consumer w/ unknown value (2nd degree price discrim.)
+
+Housemates decide which level of TV plan to buy (public good, mechanism
+design problem)
+
+Insurance company sells policy to individual of unknown health status
+
+###
+
+**Key features:** The principal would want to reach *allocative
+efficiency*, if he could extract all the surplus
+
+... i.e., the proper matching of social marginal cost and marginal
+benefit ...
+
+... but, where there is *hidden information*, this conflicts with the
+incentive compatibility constraints of the agent ...
+
+... the principal may set a separate contract for each type, and hopes
+they will ‘self-select’ (this is called *screening*)...
+
+...this leads to a second best set of contracts that reduces allocative
+efficiency to minimize the *information rents* paid to agents.
+
+### Example “Listen to the market, hear the best policy decision, but don’t always choose it” by Reinstein and Song (2014)
+
+**Abstract:**
+
+Policymakers must often decide whether to pursue a policy that has
+uncertain benefits. The response of asset markets to proposed policy
+changes can be a valuable source of information for policy-setting.
+However, policymakers must take into account that an informed trader may
+anticipate this and profitably manipulate the market. We show that it is
+optimal for policymakers to listen to asset markets, but they must
+commit (e.g., through “political capital”) to sometimes pursuing a
+policy even when the expected welfare effects are negative.
+Surprisingly, allowing traders to short-sell can make it easier for
+policymakers to induce truth-telling actions.
+
+Basic Model
+===========
+
+### Basic Model (two types)
+
+<span>Principal delegates production to agent:
+</span>$q$<span> units.</span>
+
+<span>U(Principal)= </span>$S(q)$
+
+<span>Where </span>$S(0)=0$ <span>, </span>
+$S^{\prime }(0)>\bar{\theta}>0$ <span>, and </span>
+$S^{\prime \prime }(.)<0$ <span> (</span> $\mathbf{\Longrightarrow }$
+
+$F$
+
+<span>Marginal cost
+</span>$\theta\in\{\underline{\theta},\bar{\theta}\} $<span>, where
+</span>$\underline{\theta}<\bar{\theta}$ .
+
+<span>U(agent) </span>$ = t - \theta q$ <span>(her payment, net of
+costs)</span>
+
+<span>Total cost of production of </span>$q$<span> units is given
+by</span>
+
+$$ C(q,\theta) & =F+\theta q$$
+$$\theta & \in\{\bar{\theta},\underline{\theta}\}$$
+
+![image](lm_fig-2-2.png)
+
+Note that these are steeper for the higher cost agent as producing more
+is more costly for her.
+
+### A Contract
+
+P offers a “take it or leave it” (TIOLI) contract to A
+
+Contract: a quantity $q$ and a payment $t$ corresponding to each
+quantity.
+
+Full Information/First-Best case
+--------------------------------
+
+### Principal’s objective; FULL INFORMATION CASE
+
+$$\begin{aligned}
+& \max E(\Pi )=\Pi =\max_{q_{lc},q_{hc}}E(S(q)-t(q)) \\
+\\
+\text{ \textit{s.t.} }t_{lc}-\underline{\theta } q_{lc}& \geq 0 \tag{PC$_{FB,lc}$} \\
+\text{ \emph{and} } \\
+t_{hc}-\bar{\theta} q_{hc}& \geq 0 \tag{PC$_{FB,hc}$}\\
+\\
+\text{for }\theta & \in \{\underline{\theta },\bar{\theta}\}\text{, }q\in
+\{q_{lc},q_{hc}\}\end{aligned}$$
+
+Participation constraint only; separate contract to each type – no need
+for self-selection because $P$ can discriminate (assuming this is
+legally possible!).
+
+### ...
+
+Must induce (each type of) $A$ to accept contract
+
+No reason to overcompensate $A$ $\Longrightarrow$ Constraint binds
+$\Longrightarrow $
+
+$t = \theta q$ $\Longrightarrow$ Maximize $S(q)-\theta q$
+
+$\Longrightarrow q^{FB}(\theta)$ solves $S^{\prime }(q^{FB})=\theta$ for
+each type, (from strict concavity of $S$)
+
+### ...
+
+$\Longrightarrow$ Optimal contracts $C^{FB}=\{q^{FB}(\theta)$,
+$t=F+q^{FB}(\theta)\times\theta \}$; for
+$\theta \in \{\underline{\theta }$, $\bar{\theta}\}$.
+
+In other words $t_{lc}=F+q^{FB}_{lc}\underline{\theta}$ and
+$q_{lc}=q^{FB}_{lc}$
+
+and $t_{hc}=F+q^{FB}_{hc}\bar{\theta}$ and $q_{hc}=q^{FB}_{hc}$
+
+![image](lm_2-3_firstbest.png)
+
+Incomplete information case
+---------------------------
+
+### *Incomplete* information contracts
+
+*Principal’s beliefs*: type $\underline{\theta }$ with probability $v$,
+type $\bar{\theta}$ with probability $1-v$.
+
+$P$ offers contracts
+$\mathbf{C}^{SB}=\{(q_{lc},t_{lc}),(q_{hc},t_{hc})\}$
+
+Each contract is implicitly supposed to attract a particular type of
+agent (self-selection).
+
+### Cannot achieve first-best (not at the same cost)
+
+$\mathbf{C}^{FB}$cannot be implemented here.
+
+*Sketch*: Under $\mathbf{C}^{FB}$, both types of agent will strictly
+prefer to accept the contract
+$\{q_{hc}^{FB},t_{hc}=F+q_{hc}^{FB}\bar{\theta}\}$.  This is not optimal
+for the principal if agent is of type $\underline{\theta }
+$. Note:
+$q_{hc}^{FB}\bar{\theta}-q_{hc}^{FB}\underline{\theta }=(\bar{\theta}-\underline{\theta })q_{hc}^{FB}>0$,
+so low-cost type’s IC constraint not met at $\mathbf{C}^{FB}$.
+
+### IC and PC Constraints
+
+<span>A set of contracts </span>$\{(q_{lc},t_{lc}),(q_{hc},t_{hc})\}$
+<span>is incentive compatible for type
+</span>$\underline{\theta }$<span> if:</span>
+
+$$t_{lc}-\underline{\theta }q_{lc}\geq t_{hc}-\underline{\theta }q_{hc}
+\tag{IC(\underline{$\theta $})}$$
+
+<span>Similarly, a set of contracts
+</span>$\{(q_{lc},t_{lc}),(q_{hc},t_{hc})$<span> is incentive compatible
+for type </span>$\bar{\theta}$<span> if:</span>
+
+$$t_{hc}-\bar{\theta}q_{hc}\geq t_{lc}-\bar{\theta}q_{lc}
+\tag{IC($\bar{\theta}$)}  \label{IC2}$$
+
+###
+
+<span>The corresponding participation constraints are simply that the
+contracts yield non-negative utility (reservation wage assumed to be
+0)</span>:
+
+$$t_{lc}-\underline{\theta }q_{lc}\geq 0 \tag{PC($\underline{\theta }$)}$$
+
+$$t_{hc}-\bar{\theta}q_{hc}\geq 0  \tag{PC($\bar{\theta}$)}$$
+
+### Important Special Cases
+
+<span>Bunching/pooling:</span> Single contract for both types. Incentive
+constraints trivially satisfied, and the PC of the $\underline{\theta }$
+type is weaker than for the $\bar{\theta}$ type. So we only need to
+check one constraint for this type of contract.
+
+<span>Shut Down:</span> A $\{0,0\}$ contract for high type and a regular
+contract for the low cost type. This implicitly involves a shut down of
+the high cost type.
+
+Low cost type will produce at least as much.
+
+Adding up IC($\underline{\theta }$) and
+IC($\bar{\theta}$):$$\begin{aligned}
+(t_{hc}+t_{lc})-\bar{\theta}q_{hc}-\underline{\theta }q_{lc} &\geq
+&(t_{hc}+t_{lc})-\bar{\theta}q_{lc}-\underline{\theta }q_{hc}\pause
+\\
+-\underline{\theta }q_{lc}+\bar{\theta}q_{lc} &\geq &-\underline{\theta }q_{hc}+\bar{\theta}q_{hc} \\
+(\bar{\theta}-\underline{\theta })q_{lc} &\geq &(\bar{\theta}-\underline{\theta })q_{hc} \\
+q_{lc} &\geq &q_{hc}\end{aligned}$$
+
+### Information rents
+
+The low-cost type must receive a positive surplus – an information rent’
+(in an interior, separating contract)
+
+### Proof
+
+<span>Sketch: The low-cost type can always mimic the high-cost type and
+earn a surplus ($\Delta \theta q_{hc}$ below) – we need to give her at
+least this in order to \`be herself.</span>
+
+$q_{hc},q_{lc}>0$
+
+$\mathbf{\Longrightarrow }u(\bar{\theta},q_{hc})=t_{hc}-\bar{\theta}q_{hc}\geq 0$<span> needed
+to satisfy the high-cost type’s PC</span>
+
+$\Longrightarrow $
+
+If low type accepts this (‘lies’), gets
+
+$$\begin{aligned}
+u(\underline{\theta },q_{hc}) &=&t_{hc}-\underline{\theta }q_{hc}\pause=\text{ }t_{hc}-\bar{\theta}q_{hc}+\Delta \theta q_{hc} \\
+\pause &=&u(\bar{\theta},q_{hc})+\Delta \theta q_{hc}>0 \\
+\text{{\footnotesize Where}\textit{\ }}\Delta \theta &\equiv &\bar{\theta}-\underline{\theta }\end{aligned}$$
+
+<span>Thus a positive surplus is needed to prevent ‘mimicry,’ i.e.,
+</span>$u(\underline{\theta },q_{lc})\geq u(\underline{\theta },q_{hc})>0$
+
+### If P wanted to implement ‘first-best outputs...’
+
+![image](lm_fig_2_4.png)
+
+... it costs more than with full-info; indifference curve goes through
+’C’ & B\* $\rightarrow$ rent $\Delta \theta \bar{q}^{\ast}$.
+
+### P’s Optimization Problem (interior, separating)
+
+$$\begin{aligned}
+&&\max_{q_{hc},t_{hc},q_{lc},t_{lc}}v[S(q_{lc})-t_{lc}]+(1-v)[S(q_{hc})-t_{hc}]
+\\
+&&s.t.\text{ }IC(\underline{\theta })\text{, }IC(\bar{\theta})\text{, }PC(\underline{\theta })\text{, and }PC(\bar{\theta})\end{aligned}$$
+
+<span>I.e. (writing this in terms of the net utilities of the
+agents)</span> $u_{lc}$ <span>and</span> $u_{hc}$)
+$$\max_{(q_{lc},t_{lc}),(q_{hc},t_{hc})}v[S(q_{lc})-\underline{\theta }q_{lc}]+(1-v)[S(q_{hc})-\bar{\theta}q_{hc}]-[vu_{lc}+(1-v)u_{hc}]
+\notag$$
+
+<span>Subject to</span>
+
+$$\begin{aligned}
+u_{lc} &\geq &u_{hc}+\Delta \theta q_{hc} \\
+u_{hc} &\geq &u_{lc}-\Delta \theta q_{lc} \\
+u_{lc} &\geq &0 \\
+u_{hc} &\geq &0\end{aligned}$$
+
+Write on board:
+
+$$\begin{aligned}
+PC(\underline{\theta }) &:&t_{lc}-\underline{\theta }q_{lc}\equiv u_{lc}\geq 0 \\
+PC(\bar{\theta}) &:&t_{hc}-\bar{\theta}q_{hc}\equiv u_{hc}\geq 0 \\
+IC\underline{(\theta )} &\text{:}&t_{lc}-\underline{\theta }q_{lc}\geq
+t_{hc}-\underline{\theta }q_{hc}\text{; } \\
+&\mathbf{\Longrightarrow }&u_{lc}\geq u_{hc}+\Delta \theta q_{hc} \\
+IC(\bar{\theta}) &:&t_{hc}-\bar{\theta}q_{hc}\geq t_{lc}-\bar{\theta}q_{lc}
+\\
+&\mathbf{\Longrightarrow }&\text{ }u_{hc}\geq u_{lc}-\Delta \theta
+q_{lc}\end{aligned}$$
+
+### Which constraints *do* bind? (Skim in lecture)
+
+<span>...We can thus ‘substitute them in’, and simplify the problem.
+</span>
+
+$PC(\bar{\theta})$ <span> is a binding constraint</span>
+
+<span>(by contradiction)</span>
+
+<span>Suppose we have a contract meeting all the constraints, where
+</span> $u_{hc}>0$ <span>. Then </span> $P$ <span> could lower </span>
+$u_{hc}$ <span>by \`\` </span>$\varepsilon $<span>”, increase </span>$P$
+<span>’s expected surplus, and the high-cost type would still
+participate.</span>
+
+$PC(\underline{\theta })$ <span>doesn’t bind (information rent)
+</span>$P$ <span>could also lower </span>$u_{lc}$<span> by the same
+</span>$\varepsilon $$IC(\underline{\theta })$<span> and
+IC</span>$(\bar{\theta})$.
+
+$IC(\underline{\theta })$<span> is a binding constraint</span>
+
+<span>(by contradiction) If not</span>, <span>i.e.,</span>
+$u_{lc}>u_{hc}+\Delta \theta q_{hc}$, $P$<span> could lower
+</span>$u_{lc}$<span>, doing better and still satisfying the relevant
+constraints: </span>
+
+$IC(\underline{\theta })$<span> would continue to hold if it didn’t bind
+before.</span>
+
+$IC(\bar{\theta})$<span> is *relaxed* (*less* incentive for high-cost
+type to ‘fake it’).</span>
+
+$PC(\underline{\theta })$<span> would continue to hold because it didn’t
+bind before– remember we showed an ‘information rent.’</span>
+
+$PC(\bar{\theta})$ <span> is unaffected.</span>
+
+### Thus:
+
+We know $PC(\bar{\theta})$ and $IC(\underline{\theta})$ bind
+
+$\Longrightarrow$Any optimal contract must have $u_{hc}=0$,
+
+i.e., $t_{hc}-\bar{\theta}q_{hc}=0~$
+
+$\mathbf{\Longrightarrow }t_{hc}=\bar{\theta}q_{hc}$
+
+and $u_{lc}=u_{hc}+\Delta \theta q_{hc}$.
+
+i.e., $t_{lc}-\underline{\theta }q_{lc}=0+\Delta \theta q_{hc}$
+
+$\mathbf{\Longrightarrow }t_{lc}=\underline{\theta }q_{lc}+\Delta
+\theta q_{hc}$
+
+### Which constraints *do not* bind? (Skip in lecture)
+
+$PC(\underline{\theta})$<span> does not bind (information rent) – so we
+can ignore it.  </span>
+
+$IC(\bar{\theta})$<span> is
+redundant:</span>$$IC(\bar{\theta}):u_{hc}\geq u_{lc}-\Delta \theta q_{lc}$$
+
+$$\begin{aligned}
+u_{hc} &=&t_{hc}-\bar{\theta}q_{hc}=0\text{ {\small since} }PC(\bar{\theta}) \text{ {\small binds.}} \\
+\text{{\small Recalling }} $u_{lc}=u_{hc}+\Delta \theta q_{hc}$ \text{{\small we have}} \\
+\pause\u_{lc}-\Delta \theta q_{lc} &=&u_{hc}+\Delta \theta q_{hc}-\Delta \theta q_{lc} \\
+\pause u_{lc}-\Delta \theta q_{lc} &=&u_{hc}+\Delta \theta (q_{hc}-q_{lc}) \\
+= 0+\Delta \theta (q_{hc}-q_{lc})\leq 0 \\
+\pause\text{{\small since }}q_{hc} &\leq &q_{lc}\text{ {\small (shown earlier)}} \\
+\pause &\mathbf{\Longrightarrow }&u_{hc}\geq u_{lc}-\Delta \theta q_{lc}\end{aligned}$$
+
+<span>So </span>$IC(\bar{\theta})$<span> holds as a result of the other
+constraints, it is redundant. </span>
+
+<span>If </span>$q_{hc}<q_{lc}$<span>, which we will see later, then
+</span> $u_{hc}>u_{lc}-\Delta \theta q_{lc}$, $IC(\bar{\theta})$
+<span>does not ‘bind.’</span>
+
+### Solving...
+
+$\Longrightarrow$<span>Optimization problem:</span>
+
+$$\begin{aligned}
+&&\max_{q_{lc},q_{hc}}E(\Pi ) \\
+&=&\max_{q_{lc},q_{hc}}E(S(q)-t(q)) \\
+&=&\max_{q_{lc},q_{hc}}v\times \lbrack
+S(q_{lc})-t_{lc}]+(1-v)[S(q_{hc})-t_{hc}]\text{ } \\
+&&\text{{\small s.t. PC \&\ IC constraints}}\end{aligned}$$
+
+$$\max_{q_{lc},q_{hc}}v[S(q_{lc})-\underline{\theta }\UNDERLINE {q}-\Delta
+\theta q_{hc}]+(1-v)[S(q_{hc})-\bar{\theta}q_{hc}]$$
+
+$$\max_{q_{lc},q_{hc}}\Pi =\max_{q_{lc},q_{hc}}~v\times \lbrack S(q_{lc})-\underline{\theta }q_{lc}-\Delta \theta q_{hc}]+(1-v)[S(q_{hc})-\bar{\theta}q_{hc}]$$
+
+<span>Given that this is a concave problem, and assuming that the
+optimum is interior, the first order conditions are necessary and
+sufficient for the optimum:</span>
+
+$$\begin{aligned}
+\frac{\partial \Pi }{\partial q_{lc}} &=&v\times \lbrack S^{\prime }(q_{lc})-\underline{\theta }]=0 \\
+\pause &\mathbf{\Longrightarrow }&S^{\prime }(q_{lc}^{SB})=\underline{\theta } \\
+\pause &\mathbf{\Longrightarrow }&q_{lc}^{SB}=q_{lc}^{\ast }\text{...}\mathbf{\Longrightarrow }\text{{\small `efficient lc output'}}\end{aligned}$$
+
+### High-cost type’s output distorted downwards
+
+$$\begin{aligned}
+\frac{\partial \Pi }{\partial q_{hc}} &=&(1-v)[S^{\prime }(q_{hc}^{SB})-\bar{\theta}]-v\Delta \theta =0 \\
+\pause S^{\prime }(q_{hc}^{SB}) &=&\bar{\theta}+\frac{v}{(1-v)}\Delta \theta
+\text{ ...}\mathbf{\Longrightarrow }q_{hc}^{SB}<q_{hc}^{\ast }\end{aligned}$$
+
+<span>The optimal second-best contract thus offers the low cost type the
+first best quantity while it distorts the quantity of the high cost
+agent downward to minimize information rents.  </span>
+
+<span>This distortion increases in </span>$\frac{v}{(1-v)}$<span> – the
+odds of a low-cost type – and in </span>$\Delta \theta $<span>– the cost
+difference. </span>
+
+<span>This also implies </span>$q_{hc}^{SB}<q_{hc}^{\ast }<q_{lc}^{\ast
+}=q_{lc}^{SB}$<span> as claimed before, so
+</span>$IC(\bar{\theta})$<span> holds with inequality.</span>
+
+### ‘Second-best’ contracts
+
+![image](lm_optimal_secondbest.png)
+
+### But is it worth doing? (Skip in lecture)
+
+Profit:
+$$E[\Pi ^{SB}]=v[S(q_{lc}^{\ast })-\underline{\theta }q_{lc}^{\ast }-\Delta
+\theta q_{hc}^{\ast }]+(1-v)[S(q_{hc}^{SB})-\bar{\theta}q_{hc}^{SB}]$$
+
+<span>There is a cost to inducing </span>$q_{hc}^{SB}$<span> and
+</span>$q_{lc}^{SB}>q_{hc}^{SB}$
+
+<span>Fixed (we ignore here) and marginal costs of output </span>
+
+<span>Information rents to low-cost type (</span>$\Delta \theta
+q_{hc}^{SB} $)
+
+<span>(Other un-modeled costs, e.g., menu costs, psychological
+factors)</span>
+
+### Alternative I – Bunching/pooling:
+
+<span>Maximize s.t. </span>$PC(\bar{\theta})$<span> only, which binds.
+</span>
+
+$\Longrightarrow t^{pool}-\bar{\theta}q\equiv u_{hc}^{pool}=0$
+
+$\mathbf{\Longrightarrow}t^{pool}=\bar{\theta}q$
+
+<span>(Class question: why?)</span>
+
+### Solving pooling case
+
+$$\begin{aligned}
+E[\Pi ^{Pool}] &=&S(q^{Pool})-t^{pool}=S(q^{Pool})-\bar{\theta}q^{pool} \\
+q^{pool} &=&\max_{q}S(q)-\bar{\theta}q \\
+&\mathbf{\Longrightarrow }&S^{\prime }(q^{Pool})=\bar{\theta} \\
+&\mathbf{\Longrightarrow }&q^{pool}=q_{hc}^{\ast } \\
+&\mathbf{\Longrightarrow }&t^{pool}=\bar{\theta}q_{hc}^{\ast } \\
+&\mathbf{\Longrightarrow }&E[\Pi ^{pool}]=S(q_{hc}^{\ast })-\bar{\theta}q_{hc}^{\ast } \\
+u_{lc} &=&\Delta \bar{\theta}q_{hc}^{\ast }\end{aligned}$$
+
+###
+
+<span>The optimal pooling strategy has both agents producing at the
+level that is technically efficient for the high-cost type. </span>
+
+<span>The high cost type will get no surplus, but the low-cost type gets
+a rent </span>$\Delta \bar{\theta}q_{hc}^{\ast }$.
+
+$\Delta \bar{\theta}q_{hc}^{\ast }$<span> versus </span>$\Delta \theta
+q_{hc}^{SB}$)!
+
+### Alternative II – ‘Shut down’ high-cost type (or both types)
+
+<span>Note: this resembles the classic “screening” contract; greater
+reward for higher effort means the average level of those who will
+accept the contract is higher! ... See 156-159 in Milgrom and
+Roberts</span>
+
+<span>Maximize s.t. </span>$PC(\underline{\theta })$<span> only, which
+binds.  At this contract the high-cost type will not want to
+participate.</span>
+
+$\Longrightarrow t^{shut}-\underline{\theta}q^{shut}\equiv u_{lc}
+^{shut}=0$
+
+$\mathbf{\Longrightarrow}t^{shut}=\underline{\theta}q^{shut}$
+
+$$\begin{aligned}
+E[\Pi ^{shut}] &=&v\times \left( S(q^{shut})-t^{shut}\right) =v\times \left(
+S(q^{shut})-\underline{\theta }q^{shut}\right) \\
+\pause q^{shut} &=&\max_{q}v\times \left( S(q)-\underline{\theta }q\right)
+\notag \\
+\pause &\mathbf{\Longrightarrow }&S^{\prime }(q^{shut})=\underline{\theta }
+\notag \\
+\pause &\mathbf{\Longrightarrow }&q^{shut}=q_{lc}^{\ast }  \notag \\
+\pause &\mathbf{\Longrightarrow }&t^{shut}=\underline{\theta }q_{lc}^{\ast }
+\notag \\
+\pause &\mathbf{\Longrightarrow }&E[\Pi ^{shut}]=v\times \left(
+S(q_{lc}^{\ast })-\underline{\theta }q_{lc}^{\ast }\right)  \notag\end{aligned}$$
+
+$P$ <span>will get her to produce at her technically efficient level,
+and </span>$P$ <span>will take all the rent.</span>
+
+### Caveat: shut-down implied by a negative solution to the previous problem!
+
+<span>Remember the FOC for the high-cost type’s ‘SB’ output:</span>
+
+$$S^{\prime }(q_{hc}^{SB})=\bar{\theta}+[\frac{v}{(1-v)}\Delta \theta \text{ }]$$
+
+###
+
+<span>But if the latter effect is large enough, this may have no
+positive solution.  The first unit of the high-cost type’s output may be
+too costly in net. </span>
+
+$q_{hc}^{SB}=0$ <span>would be optimal, ‘shutting down’ the high-cost
+type.</span>
+
+$q_{hc}^{SB}=0$ <span>will also imply no rent for the low-cost type
+(remember, the rent was </span>$\Delta \theta q_{hc}$<span>).</span>
+
+*Thus the ‘shut down’ strategy need not be checked separately in the
+continuous differentiable concave case <span>(unless you are asked to do
+so)</span>.*
+
+### Comparing alternatives – Interior-separating, pooling, shut-down one, shut down all (Skip in lecture)
+
+$$\begin{aligned}
+E[\Pi ^{SB}] &=&v[S(q_{lc}^{\ast })-\underline{\theta }q_{lc}^{\ast }-\Delta
+\theta q_{hc}^{\ast }]+(1-v)[S(q_{hc}^{SB})-\bar{\theta}q_{hc}^{SB}] \\
+E[\Pi ^{Pool}] &=&S(q_{hc}^{\ast })-\bar{\theta}q_{hc}^{\ast } \\
+E[\Pi ^{shut}] &=&v\left( S(q_{lc}^{\ast })-\underline{\theta }q_{lc}^{\ast
+}\right) \\
+E[\Pi ^{shut~all}] &=&0\end{aligned}$$
+
+###
+
+<span>In general, all of these possibilities should be compared</span>.
+
+<span>In a very general case (although not given the assumptions here),
+any of the four could be the optimal one. \[Note, the ‘shut all’ is not
+optimal given our assumptions above unless we add a fixed cost
+</span>$F$<span> to all the other alternative policies, or have positive
+reservation wages; Pooling also will not be optimal here, although it
+can if we allow different functional assumptions; see below.\]</span>
+
+<span>Note: These comparisons will be easier to make in a parametric or
+numerical case.</span>
+
+###
+
+<span>For example</span>, <span>for </span>$P$ <span>to prefer to have
+both types of agent produce different positive output over only having
+the low-cost type produce, we require: </span>$$\begin{aligned}
+E[\Pi ^{SB}] &>&E[\Pi ^{shut}]\Longleftrightarrow \\
+\pausev[S(q_{lc}^{\ast })-\underline{\theta }q_{lc}^{\ast }-\Delta \theta
+q_{hc}^{\ast }]+(1-v)[S(q_{hc}^{SB})-\bar{\theta}q_{hc}^{SB}] &>& \\
+v\left( S(q_{lc}^{\ast })-\underline{\theta }q_{lc}^{\ast }\right)
+&\Longleftrightarrow & \\
+\pause(1-v)[S(q_{hc}^{SB})-\bar{\theta}q_{hc}^{SB}] &>&v\Delta \theta q_{hc}^{\ast
+}\end{aligned}$$
+
+<span>I.e., the expected benefit of the high-cost type’s output must
+exceed the resulting information rent paid to the low-cost type.</span>
+
+###
+
+$$(1-v)[S(q_{hc}^{SB})-\bar{\theta}q_{hc}^{SB}]>v\Delta \theta q_{hc}^{\ast }$$
+
+<span>The relative advantage of writing a contract that only the
+low-cost type will sign increases as:</span>
+
+<span>The difference in costs increases.</span>
+
+<span>Low-cost types become more likely.</span>
+
+<span>The value of additional output decreases.</span>
+
+<span>Comparing the pooling and shutting-down possibilities:</span>
+
+$$\begin{aligned}
+E[\Pi ^{shut}] &>&E[\Pi ^{Pool}] \\
+\pause
+&\Longleftrightarrow &v\left( S(q_{lc}^{\ast })-\underline{\theta }q_{lc}^{\ast }\right) >\left( S(q_{hc}^{\ast })-\bar{\theta}q_{hc}^{\ast
+}\right)\end{aligned}$$
+
+<span>The ‘net value’ generated by a low-cost type (weighted by the
+probability that a low-cost type is drawn) must exceed the ‘net value’
+generated by a high cost type.</span>
+
+$$\begin{aligned}
+E[\Pi ^{SB}] &>&E[\Pi ^{pool}] \\
+v[S(q_{lc}^{\ast })-\underline{\theta }q_{lc}^{\ast }-\Delta \theta
+q_{hc}^{\ast }]+(1-v)[S(q_{hc}^{SB})-\bar{\theta}q_{hc}^{SB}]
+&>&S(q_{hc}^{\ast })-\bar{\theta}q_{hc}^{\ast }\end{aligned}$$
+
+$P$ <span>pays a rent to the low-cost type (a larger rent than in the
+pooling case), and gets less production from the high-cost type
+(‘distortion’). However, </span>$P$ <span>gets a higher output from the
+low-cost type under the ‘SB’ contract than under the pooling
+contract.</span>
+
+<span>It appears unclear which contract </span>$P$ <span>prefers. It
+will depend on the probability of a low-cost type, the relative costs of
+the two types, and the value of additional output (the
+</span>$S(\cdot )$<span> function). BUT with the conditions as given, we
+know pooling on a positive output will never be optimal! \[see next
+slide\]</span>
+
+### Proof of no pooling (Skip in lecture)
+
+**Proof by contradiction**
+
+<span>We compared
+</span>$v[S(q_{lc}^{\ast })-\underline{\theta }q_{lc}^{\ast }-\Delta \theta q_{hc}^{\ast }]+(1-v)[S(q_{hc}^{SB})-\bar{\theta}q_{hc}^{SB}]$<span> and
+</span>$S(q_{hc}^{\ast })-\bar{\theta}q_{hc}^{\ast }$<span>, a messy
+comparison. But, we need only show that the pooling contract can never
+be optimal, i.e.., show that if P is ‘pooling on positive output,’ then
+he could do better.</span>
+
+### ...no pooling proof continued
+
+$E[\Pi
+^{pool}]=S(q_{hc}^{\ast })-\bar{\theta}q_{hc}^{\ast }$<span>. But to
+this single contract
+</span>$\{q_{hc}^{\ast },\bar{\theta}q_{hc}^{\ast }\}$<span>, P could
+introduce a second contract </span>$q_{lc}=q_{hc}^{\ast
+}+\varepsilon $<span> and reward anyone who takes it an additional
+</span>$\underline{\theta }\varepsilon $<span>.  By convention, the
+low-cost type will take this contract (because she is indifferent and P
+wants her to, as we will see), </span><span>. Thus, P is better off
+doing so (note, payoffs will only vary when a low-cost type arises) as
+long as </span>$s(q_{hc}^{\ast
+}+\varepsilon )-s(q_{hc}^{\ast })>\underline{\theta }\varepsilon $<span> for
+some small </span>$\varepsilon $<span>, i.e., as long as
+</span>$s^{\prime }(q_{hc}^{\ast })>\underline{\theta }$<span>(as long
+as </span>$s^{\prime }$<span> is continuous, as assumed).  </span>
+
+$s^{\prime }(q_{hc}^{\ast })=\bar{\theta}>\underline{\theta }$<span>.
+Hence, </span>$s^{\prime }(q_{hc}^{\ast })>\underline{\theta }$<span>,
+and the principal can improve on a pooling contract.</span>
+
+### But:
+
+*However*<span>, pooling may be optimal under other functional
+assumptions, e.g., if there is a ‘menu cost’ to adding an item on the
+contract.</span>
+
+### Overall results (Important!)
+
+$$t_{lc}=\underline{\theta }q_{lc}+\Delta \theta q_{hc};\;\;\;t_{hc}=\bar{\theta}q_{hc}.$$
+
+<span>The efficient type gets a positive information rent, given by
+</span>$u_{lc}=\Delta \theta q_{hc}$
+
+  Output distortion of inefficient type:
+
+$$S^{\prime }(q_{hc})=\bar{\theta}+\frac{v}{1-v}\Delta \theta .$$
+
+$q_{lc}=q_{lc}^{FB}$
+
+###
+
+<span>Thus under asymmetric information, the optimal menu of contracts
+entails:</span>
+
+<span>No output distortion of the low cost type, thus
+</span>$q_{lc}=q_{lc}^{FB}$
+
+<span>Downward output distortion of inefficient type: </span>
+
+$$S^{\prime }(q_{hc})=\bar{\theta}+\frac{v}{1-v}\Delta \theta .$$
+
+<span>‘by making the high-cost agent produce less, and paying him less,
+we make his target output less attractive to the low cost agent’</span>
+
+### ...
+
+<span>Only efficient type gets a positive information rent, given
+by</span> $u_{lc}=\Delta \theta q_{hc}$<span>.</span>
+
+<span>Second best transfers are given by </span>
+
+$$t_{lc}=\underline{\theta }q_{lc}+\Delta \theta q_{hc};\;\;\;t_{hc}=\bar{\theta}q_{hc}.$$
+
+### Remember:
+
+-   Differences from moral hazard
+
+-   Which agent’s PC constraint binds, and why?
+
+-   Which agent’s IC constraint binds, and why?
+
+-   Which quantity is “distorted” ?
+
+-   What is an “information rent” and who will get one?
+
+-   When does the principal want to meet these constraints (interior,
+    separating equilibrium)?
+
+[^1]: “Proofs ” largely follow Salanie Ch. 2.

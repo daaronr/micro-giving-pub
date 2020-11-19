@@ -1180,7 +1180,7 @@ Segmentation (Third degree price discrimination) & its welfare consequences (gra
 
 
 
-### O-R: Formal treatment of the (monopoly) 'pricing in multiple markets/segments' problem
+### O-R: Formal treatment of the (monopoly) 'pricing in multiple markets/segments' problem {#or-self-sel}
 
 
 > Consider a discriminatory monopolistic market
@@ -1342,9 +1342,12 @@ This yields another mechanism design 'hidden information' 'principal-agent probl
 
 ```{block2,  type='note'}
 
-Although it involves concepts from asymmetric information (which we have not yet covered and is only included as a supplement), this is nicely addressed in O-R section 7.4. I will add more material here as well.
+This section also serves as an 'applied' introduction to asymmetric information and principal-agent models (which I cover in more detail in the [supplement](#asymmetric))
 
-Please read this section (and further material which I will provide).
+Self-selection and price discrimination is addressed in O-R section 7.4, which I go through [below](#or-self-sel). 
+  
+However, you might find my ['semi-parametric' depiction](#self-par) (following Laffont and Martimort) to be a bit simpler.
+
 ```
 
 
@@ -1704,7 +1707,6 @@ The PC for the low type must be met with equality because if it didn't, i.e., if
 - The monopoly could raise the price of this item somewhat and increase its profit
 - This would not affect any of the other constraints negatively; it would only make item 2 *less* attractive for the high type.
 
-
 ```
 
 \
@@ -1783,7 +1785,7 @@ The profit maximizing choice of $q^2$ will thus maximize (rearranging $\pi(q^1, 
 $V^1(q^1)- \Delta\big(V(q^2)\big) = V^1(q^1) - V^1(q^2) + 2V^2(q^2)$
 .... as $q^2$ only enters into the latter terms, this is the same as 
 
-$q^{\ast} \equiv \argmax_q \big(2V^2(q) − V^1(q)\big)$, as promised.
+$q^{\ast} \equiv argmax_q \big(2V^2(q) − V^1(q)\big)$, as promised.
 
 \
 
@@ -1810,6 +1812,192 @@ The IC for the low type can also be ignored. It holds as a result of the other '
 
 \
 
+
+### Two consumer self-selection: a simpler parametric example {#self-par}
+
+<div class="marginnote">
+This draws from Laffont and Martimort (2002), section 2.1.5.2, which in turn draws from Maskin and Riley (1984)
+</div>
+ 
+**The firm** 
+
+Suppose the firm produces at a marginal cost $c$ per unit, and no fixed costs, thus its profit when it charges $t$ for quantity $q$ is
+
+$$V(t,q) = t - cq$$.
+
+\
+
+**Consumers**  
+
+(From Laffont and Martimort, notation adjusted:)
+
+>  The tastes of a buyer for the private good are such that his utility function is $U = \theta u(q) − t$, where $q$ is the quantity consumed and $t$ his payment to the principal. Suppose that the parameter $\theta$ of each buyer is drawn independently from the same distribution on $\theta = \theta_l, \theta_h$  with respective probabilities $1-v$ and $v$.
+
+For 'our example', suppose $u(q) = q^{1/2}$, $\theta = \{1,2}$ and $v = 1/4$. Here we would  have a $1/4$ probability of a 'high-type' consumer who gets value $2q^{1/2}$ from $q$ units, and the remaining $3/4$ probability of a 'low-type' consumer who gets value $q^{1/2}$ from $q$ units.
+
+Let's also define $\Delta\theta = \theta_h- \theta_l$, the proportional difference in value of each unit for the high versus low type. For 'our example', $\Delta\theta = 1$, implying that the high type always gets twice as much value from a particular quantity (or quality) as the low type.  
+
+\
+
+Suppose that the firm offers two menu items:
+
+<div class="marginnote">
+In fact, as discussed elswehere, it is never optimal for the firm to offer *more* menu items than types of consumers, at least as long as the consumers are optimizing in a standard sense.
+</div>
+ 
+
+-  $q_l$ units of quality (or quantity) for price $t_l$,
+-  $q_h$ units of quality (or quantity) for price $t_h$,
+
+...and suppose the low-type consumer chooses the first menu item and the high-type consumer the second item.
+\
+
+
+We can now define the 'rents' (i.e., value of the good less the price paid) of the low ($l$) and high ($h$) type  consumer as:
+
+- $U_l = \theta_l u(\{q_l}) − t_l$ and 
+- $U_h = \theta_h u(\{q_h}) − t_h$,
+
+respectively.
+
+\
+
+To induce these menu choices, both consumers must want to purchase their intended menu item. Each consumer most prefer this
+
+- over 'not buying anything' ... the 'participation constraint' (PC) and
+- over 'buying the other menu item' ... the 'incentive compatibility constraint (IC).
+
+(Let the 'rent' from not buying anything equal to 0.)
+
+Specifically, we need:
+
+$$\begin{aligned}
+U_l \geq 0 \:\:\:\:\:\:\:\: [PC_l]\\
+U_h \geq 0 \:\:\:\:\:\:\:\: [PC_h]\\
+U_l \geq U_h - \Delta \theta u(q_h)  \:\:\:\:\:\:\:\: [IC_l]\\
+U_h \geq U_l + \Delta \theta u(q_l)  \:\:\:\:\:\:\:\: [IC_h]\\
+\end{aligned}$$
+\
+
+Explaining the above:
+
+```{block2,  type='fold'}
+
+$PC_l$ and $PC_h$: Recall our previous definition of the 'rents' (essentially willingness-to-pay in excess of price, i.e., 'payoff') for each type, $U_l$ and $U_h$.  These must each be non-negative; each consumer must get at least as much value from their menu item as the price they pay for it. 
+
+\
+
+
+$IC_l$: The low-type's payoff from chis own choice, $U_l$, must exceed the payoff he would get from choosing the other menu item: $\theta_l u(q_h) - t_h$. His payoff from this latter menu item equals the payoff the high type gets from this menu item *minus their differential value of this item $\Delta \theta u(q_h)$, as he always values any quantity less than the chigh-type ... thus $U_l \geq U_h - \Delta \theta u(q_h)$ must hold.
+
+\
+
+
+$IC_h$: The high-type's payoff from her own choice, $U_h$, must exceed the payoff she would get from choosing the other menu item: $\theta_l u(q_l) - t_h$. Her payoff from this latter menu item equals the payoff the clow type gets from this menu item *plus* her differential value of this item $\Delta \theta u(q_h)$, as she always values any quantity more than the low-type ... thus $U_h \geq U_l + \Delta \theta u(q_l)$   must hold.
+
+```
+
+
+As discussed in the previous section (and in more detail in the [Supplement on Hidden Information](#hidden-info)), only $PC_l$ and $IC_h$ are binding (assuming we want to sell a positive amount to each type.) This implies they must hold with *equality*.
+
+Thus $U_l = 0$ and $U_h = U_l + \Delta \theta u(q_l)$.
+
+
+This tells us the 'rent' of the low type wil be 0, and the rent of the high type will be the difference in valuation of $q_l$ between the types, which is positive if $q_l$ is set to be positive. 
+\
+
+Unpacking these, we have 
+
+$\theta_l u(\{q_l}) − t_l$ implying $t_l=\theta_l u(\{q_l})$
+
+and we have 
+
+$\theta_h u(\{q_h}) = \theta_l u(\{q_l}) − t_l + \Delta \theta u(q_l)$;
+
+plugging in the $t_l$ just derived (or noting $U_l = 0$)...
+
+$\theta_h u(\{q_h}) - t_h = \theta_l u(q_l) − \theta_l u(\{q_l} + \Delta \theta u(q_l) = \Delta \theta u(q_l)$.
+
+implying $t_h = \theta_h u(\{q_h}) - \Delta \theta u(q_l)$,
+
+i.e. (unpacking the $\Delta \theta$) $t_h = \theta_h u(\{q_h}) - (\theta_h - \theta_l) u(q_l)$.
+
+\
+
+Note that as the quantity for the low type $q_l$ is increased, $u(q_l)$ increases (assume it's an increasing function), and thus $(\theta_h - \theta_l)u(q_l)$, the 'rent' that must be left to the high type, to keep her from pretending to be the low type, must also increase. Thus $q_l$ will not simply be set to trade off the value of the person who buys it against the marginal cost of production, but also in light of the incentive to avoid paying a rent ... thus 'distorted downwards' in a wide set of cases. 
+
+\
+
+Now we can consider the firm's optimization problem: 
+
+$$\pi(t_l, t_h, q_l, q_h) = max_{t_l,t_h,q_l,q_h} (1-v) \times (t_l - cq_l) + v \times (t_h-cq_h) $$
+Subject to all of the constraints above.
+
+Substituting in $t_l$ and $t_h$ implied by the binding constraints yields:
+
+
+$$\pi(q_l, q_h) = max_{q_l,q_h} (1-v)(\theta_l u({q_l}) - cq_l) + v( \theta_h u(q_h) - (\theta_h - \theta_l) u(q_l)-cq_h)$$
+If this is a standard 'concave problem' (which will be implied by a concave value function $u$) we simply need to take the first-order-conditions wrt the choice variables $q_l$ and $q_h$.
+
+Note  $q_h$ only enters into the part of the profit that comes from 'when we actually are selling to a high type.' Thus we simply find the (efficient) quantity where her marginal value equals the marginal cost:
+
+$v \theta_h u'(q_h) = vc \rightarrow \theta_h u'(q_h) = c$ ... noting that $\theta_h u'(q_h)$ represents the high-types marginal value at $q_h$ units.
+
+\
+
+However $q_l$ enters into the profit when we *actually* sell to a low type *as well as* when we sell to a high type. Taking the FOC (and re-using the 'difference in value' $\Delta$ notation:
+
+$(1-v)\times \big(\theta_l u'(q_l) - c\big) - v\times(\Delta \theta u'(q_l)\big)=0$
+
+Note that if only the  *first* term were present, e.g., if $v=0$ and we could price exclusively to the low type without worrying about the high type, we would choose the socially-efficient level of $q_l$, trading off the marginal cost $c$ against his marginal benefit, i.e., where $\theta_l u'(q_l)=c$. 
+
+However, the second term causes the 'downward quality' (or quantity) distortion of $q_l$ below this level.  Rearranging this yields:
+
+$(\theta_l-\frac{v}{1-v}\Delta\theta) u'(q_l)=c$, implying $q_l$ must be less than the 'first best' $q_l$.
+\
+
+Note that the greater the probability ($v$) of a high type, the greater the distortion of the low-type's quantity.
+
+<div class="marginnote">
+It may be that even the *first* unit of $q_l$ has too much of an effect on the information rent that must be paid to the high type to be worth offering. Here the above would solve to a 'negative optimal $q_l$, but the true optimal $q_l=0$, the 'shut down' policy. 
+</div>
+ 
+
+\
+
+*Returning to 'our example'*, where  $u(q) = q^{1/2}$, $\theta = \{1,2}$ and $v = 1/4$, implying $\Delta\theta=1$, and letting $c=1$:
+
+$(1-\frac{1}{3}) \frac{1}{2} q_l^{-1/2} =\frac{1}{3} q_l^{-1/2}  =1$
+
+$\rightarrow q_l = 3^{-2} = 1/9$
+
+
+\
+
+In contrast, if we could sell to the low-type in isolation (we knew his type ... sort of 'perfect price discrimination') we would choose the efficient quantity according to:
+
+$\theta_l u'(q_{l,FB}) = c$, for our example implying the 'First Best'
+
+$\frac{1}{2} q_{l,FB}^{-1/2} =1$
+
+$\rightarrow q_{l,FB} = 1^{-2} = 1$.
+
+Quite a distortion in this example!
+
+
+
+
+
+## How do firms *actually* price? (this section is a work in progress)
+
+
+*Some resources:*
+
+- ['Pricing college' podcast](https://pricingcollege.com/) offers some insight into how firms and consultants tackle the issue of pricing, and some of the terminology that they use
+
+
+
+\
 
 
 # Exercises: Pricing/monopoly/price-discrimination (simpler)  {-}
@@ -2081,6 +2269,9 @@ The peak of the total surplus curve is where  where $P = MC$, at about £19.
 
 
 # Exercises: Price discrimination and segmentation, 'pricing mechanisms'; intro to strategic interaction {-}
+
+
+
 
 ```{block2,  type='note'}
 
