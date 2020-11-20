@@ -1646,7 +1646,7 @@ Given we are getting $2V^2(q)$ in revenue, and costs are 0, we will choose the q
 
 3. **'Separating'**: $V^1(1) + 2V^2(q^{\ast}) − V^1(q^{\ast})$ is the maximum revenue that could result from an implementation where we get the low- and high-type consumers to buy distinct quantities (or qualities), and pay different amounts.
 
-Note that this is equivalent to $V^1(1) + V^2(q^{\ast}) - \Delta\big(V(q^{\ast})\big)}$.
+Note that this is equivalent to $V^1(1) + V^2(q^{\ast}) - \Delta\big(V(q^{\ast})\big)$.
 
 \
 
@@ -1665,7 +1665,7 @@ The **first item** contains the maximal quantity (1 unit). It's price is $V_1(1)
  
 - Note that this price is *below* $V_1(1)$, so the high-type is paying *less* for this item than her value. 
 
-- How much less? The second term, $ \Delta \big(V(q^{\ast})\big) = (V^1(q^{\ast}) − V^2(q^{\ast}))$ represents 'the amount that the high-type consumer values the quantity in the second item ($q^\ast$) *more than the low-types valuation of this quantity.*  
+- How much less? The second term, $\Delta \big(V(q^{\ast})\big) = (V^1(q^{\ast}) − V^2(q^{\ast}))$ represents 'the amount that the high-type consumer values the quantity in the second item ($q^\ast$) *more than the low-types valuation of this quantity.*  
 
   - Note that if the low-type were charged her full valuation for $q^\ast$ (which she will be), this difference tells us the amount of surplus the high-type would get from 'pretending to be the low type'. 
   
@@ -1763,7 +1763,7 @@ Note, in a typical depiction of this problem, we often consider 'relative shares
 $q^1$, the quantity intended for the high type, only affects the amount that can be charged to the high type. Simply put, as we increase the high type's value, $V^1(q^1)$ by increasing $q^1$, we increase the price that we can charge her by this same amount. As costs are zero, we thus want to make this as large as possible, setting $q^1=1$.\*
 
 <div class="marginnote">
-In a more elaborate problem, with a positive marginal cost this will be set equal to the point where the marginal value equals the marginal cost, i.e., the 'efficient quantity'. 
+\*In a more elaborate problem, with a positive marginal cost this will be set equal to the point where the marginal value equals the marginal cost, i.e., the 'efficient quantity'. 
 </div>
  
 \
@@ -1774,10 +1774,10 @@ However, notice that the quantity intended for the low type affects both:
 
 - the *information rent* that the high type must gain, $Delta\big(V(q^2)\big)$, and thus the amount you must 'reduce her price' below her valuation. 
 
-Because of this second effect the monopolist may set the quantity intended for the low type *below* 1. This would socially inefficient;\* if this is the case then the monopolist negatively 'distorts' the quantity (or quality) intended for the low type in order to reduce the rent it must pay to the high type.
+Because of this second effect the monopolist may set the quantity intended for the low type *below* 1. This would be socially inefficient;\* if this is the case then the monopolist negatively 'distorts' the quantity (or quality) intended for the low type in order to reduce the rent it must pay to the high type.
 
 <div class="marginnote">
-Here, producing the maximal amount, 1 unit, for both types is the only socially efficient outcome, as the good is produced at 0 cost, and both types prefer more to less. 
+\* Here, producing the maximal amount, 1 unit, for both types is the only socially efficient outcome, as the good is produced at 0 cost, and both types prefer more to less. 
 </div>
  
 The profit maximizing choice of $q^2$ will thus maximize (rearranging $\pi(q^1, q^2)$ above):
@@ -1833,7 +1833,7 @@ $$V(t,q) = t - cq$$.
 
 >  The tastes of a buyer for the private good are such that his utility function is $U = \theta u(q) − t$, where $q$ is the quantity consumed and $t$ his payment to the principal. Suppose that the parameter $\theta$ of each buyer is drawn independently from the same distribution on $\theta = \theta_l, \theta_h$  with respective probabilities $1-v$ and $v$.
 
-For 'our example', suppose $u(q) = q^{1/2}$, $\theta = \{1,2}$ and $v = 1/4$. Here we would  have a $1/4$ probability of a 'high-type' consumer who gets value $2q^{1/2}$ from $q$ units, and the remaining $3/4$ probability of a 'low-type' consumer who gets value $q^{1/2}$ from $q$ units.
+For 'our example', suppose $u(q) = q^{1/2}$, $\theta = \{1,2\}$ and $v = 1/4$. Here we would  have a $1/4$ probability of a 'high-type' consumer who gets value $2q^{1/2}$ from $q$ units, and the remaining $3/4$ probability of a 'low-type' consumer who gets value $q^{1/2}$ from $q$ units.
 
 Let's also define $\Delta\theta = \theta_h- \theta_l$, the proportional difference in value of each unit for the high versus low type. For 'our example', $\Delta\theta = 1$, implying that the high type always gets twice as much value from a particular quantity (or quality) as the low type.  
 
@@ -1855,8 +1855,8 @@ In fact, as discussed elswehere, it is never optimal for the firm to offer *more
 
 We can now define the 'rents' (i.e., value of the good less the price paid) of the low ($l$) and high ($h$) type  consumer as:
 
-- $U_l = \theta_l u(\{q_l}) − t_l$ and 
-- $U_h = \theta_h u(\{q_h}) − t_h$,
+- $U_l = \theta_l u(q_l) − t_l$ and 
+- $U_h = \theta_h u(q_h) − t_h$,
 
 respectively.
 
@@ -1897,6 +1897,8 @@ $IC_h$: The high-type's payoff from her own choice, $U_h$, must exceed the payof
 
 ```
 
+\
+
 
 As discussed in the previous section (and in more detail in the [Supplement on Hidden Information](#hidden-info)), only $PC_l$ and $IC_h$ are binding (assuming we want to sell a positive amount to each type.) This implies they must hold with *equality*.
 
@@ -1908,19 +1910,19 @@ This tells us the 'rent' of the low type wil be 0, and the rent of the high type
 
 Unpacking these, we have 
 
-$\theta_l u(\{q_l}) − t_l$ implying $t_l=\theta_l u(\{q_l})$
+$\theta_l u(q_l) − t_l$ implying $t_l=\theta_l u(q_l)$
 
 and we have 
 
-$\theta_h u(\{q_h}) = \theta_l u(\{q_l}) − t_l + \Delta \theta u(q_l)$;
+$\theta_h u(q_h) = \theta_l u(q_l) − t_l + \Delta \theta u(q_l)$;
 
 plugging in the $t_l$ just derived (or noting $U_l = 0$)...
 
-$\theta_h u(\{q_h}) - t_h = \theta_l u(q_l) − \theta_l u(\{q_l} + \Delta \theta u(q_l) = \Delta \theta u(q_l)$.
+$\theta_h u(q_h) - t_h = \theta_l u(q_l) − \theta_l u(q_l + \Delta \theta u(q_l) = \Delta \theta u(q_l)$.
 
-implying $t_h = \theta_h u(\{q_h}) - \Delta \theta u(q_l)$,
+implying $t_h = \theta_h u(q_h) - \Delta \theta u(q_l)$,
 
-i.e. (unpacking the $\Delta \theta$) $t_h = \theta_h u(\{q_h}) - (\theta_h - \theta_l) u(q_l)$.
+i.e. (unpacking the $\Delta \theta$) $t_h = \theta_h u(q_h) - (\theta_h - \theta_l) u(q_l)$.
 
 \
 
@@ -1965,7 +1967,7 @@ It may be that even the *first* unit of $q_l$ has too much of an effect on the i
 
 \
 
-*Returning to 'our example'*, where  $u(q) = q^{1/2}$, $\theta = \{1,2}$ and $v = 1/4$, implying $\Delta\theta=1$, and letting $c=1$:
+*Returning to 'our example'*, where  $u(q) = q^{1/2}$, $\theta = \{1,2\}$ and $v = 1/4$, implying $\Delta\theta=1$, and letting $c=1$:
 
 $(1-\frac{1}{3}) \frac{1}{2} q_l^{-1/2} =\frac{1}{3} q_l^{-1/2}  =1$
 
