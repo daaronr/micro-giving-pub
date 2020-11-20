@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>8 Supplement - Behavioural economics: Selected further concepts | Microeconomics (MSc)</title>
+  <title>Monopoly pricing: Examples using R | Microeconomics (MSc)</title>
   <meta name="description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
   <meta name="generator" content="bookdown 0.20.3 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="8 Supplement - Behavioural economics: Selected further concepts | Microeconomics (MSc)" />
+  <meta property="og:title" content="Monopoly pricing: Examples using R | Microeconomics (MSc)" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="daaronr/micro-giving-pub" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="8 Supplement - Behavioural economics: Selected further concepts | Microeconomics (MSc)" />
+  <meta name="twitter:title" content="Monopoly pricing: Examples using R | Microeconomics (MSc)" />
   
   <meta name="twitter:description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="project.html"/>
-<link rel="next" href="supplements.html"/>
+<link rel="prev" href="exercises-pricingmonopolyprice-discrimination-simpler.html"/>
+<link rel="next" href="exercises-price-discrimination-and-segmentation-pricing-mechanisms-intro-to-strategic-interaction.html"/>
 <script src="book_assets/header-attrs-2.3/header-attrs.js"></script>
 <script src="book_assets/jquery-2.2.3/jquery.min.js"></script>
 <link href="book_assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -568,27 +568,168 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="more_be" class="section level1" number="8">
-<h1><span class="header-section-number">8</span> Supplement - Behavioural economics: Selected further concepts</h1>
+<div id="monopoly-pricing-examples-using-r" class="section level1 unnumbered" number="">
+<h1>Monopoly pricing: Examples using R</h1>
+<div id="simulating-willingness-to-pay-and-considering-optimal-pricing" class="section level2" number="5.15">
+<h2><span class="header-section-number">5.15</span> Simulating willingness to pay and considering ‘optimal pricing’</h2>
 
 <div class="note">
-<p><strong>Note for 2020-2021:</strong> As Exeter has retained the Msc module in Behavioural Economics, this content will not be a core part of the module.</p>
+<p>Remember, you can ‘hide the code’ with the ‘hide global’ button in the upper right of this screen.</p>
 </div>
-<p>```</p>
-<!-- ## Prospect theory {#prospect}
+<p>Adapted from: <a href="http://www.econometricsbysimulation.com/2013/07/optimal-pricing-for-simple-monopolist.html">Econometrics by Simulation</a></p>
+<div class="marginnote">
+<p>Note that the modern use of the term ‘Econometrics’ tends to refer to the analysis of <em>real</em> data, not simulated data.</p>
+</div>
 
-## Time-inconsistent preferences
-
--->
-
+<div class="note">
+<p>Although this module is not about coding, you might find it insightful to consider how to use R code to calculate and graph and simulate the monopoly/pricing outcomes.</p>
+<p>I hope this makes the theory a bit more concrete. It is obviously a great career and research skill to have some understanding of how to use computers to do simulations and to work with data.</p>
+<p>If you can install R (and ideally RStudio), you might like to try to run the code yourself, and tweak certain parts to see how things change. R/Rstudio shoulda lso be installed on most university computers. If you just want to do a quick try, you can simply enter code into a hosted browser interface like the one below <a href="https://rdrr.io/snippets/">Hosted here</a>… but Rstudio will be better in the long run.</p>
+</div>
+<iframe width="150%" height="700" src="https://rdrr.io/snippets/embed/" frameborder="0">
+</iframe>
+<p><em>Try entering some of the code into the box above and click the ‘run’ bar. A tip: to have R display any ‘object’ that has been defined, simply type it’s name on a line by itself.</em></p>
+<p><br />
+</p>
+<blockquote>
+<p>Our monopolist is a broadband internet supplier within a city. Suppose for now that they only offer one bundle. For now we will consider a scenario with 2000 potential consumers but this can be changed by altering the <code>npeep</code> variable.</p>
+</blockquote>
+<blockquote>
+<p>For each of these consumers we generate a willingness to pay for broadband internet (internet). [We assume that the mean WTP is £45]… and we add an error term to this in order to simulate variation between consumers. To do this we use the <code>rnorm</code> function which draws a random sample from the standard normal distribution (mean 0, variance 1) multiplied by £15. This yields a standard deviation of roughly £15.</p>
+</blockquote>
+<div class="marginnote">
+<p>A normal distribution follows the traditional “bell shape”. Perhaps it’s reasonable to assume that willingness to pay is normally distributed, but other distributions might also be possible, such as a “power law” distribution, with much longer “tails” then the normal distribution.</p>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S0378437114002544#:~:text=His%20work%20suggested%20that%20the,or%20power%2Dlaw">Some have claimed (but there is disagreement)</a>%20exponent) that wealth follows a "power law’ distribution, suggesting wtp might do so as well.</p>
+</div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="monopoly-pricing-examples-using-r.html#cb12-1"></a>npeep &lt;-<span class="st"> </span><span class="dv">2000</span> <span class="co"># Number of potential consumers</span></span>
+<span id="cb12-2"><a href="monopoly-pricing-examples-using-r.html#cb12-2"></a></span>
+<span id="cb12-3"><a href="monopoly-pricing-examples-using-r.html#cb12-3"></a>wtp &lt;-<span class="st"> </span><span class="dv">45</span> <span class="op">+</span><span class="st"> </span><span class="kw">rnorm</span>(npeep)<span class="op">*</span><span class="dv">15</span> <span class="co"># Each person has a different willingness to pay</span></span></code></pre></div>
+<p><br />
+</p>
+<p>Checking, the standard deviation is 15.27 (coded as <code>sd(wtp)</code>). The exact number will vary each time you run the simulation in R but it will generally be close to 15.</p>
+<p><br />
+</p>
+<blockquote>
+<p>To figure out the demand curve we count the number of people willing to pay at least as much as the offering price.</p>
+</blockquote>
+<p><br />
+</p>
+<p>We set the maximum offered price to 90, thus we consider prices between 0 and 90. From this we sum the number of consumers who have a willingness to pay above the offering price in order to give us a vector of quantity demanded at each price level.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="monopoly-pricing-examples-using-r.html#cb13-1"></a>maxop &lt;-<span class="st"> </span><span class="dv">90</span> <span class="co"># Max offering price</span></span>
+<span id="cb13-2"><a href="monopoly-pricing-examples-using-r.html#cb13-2"></a>op &lt;-<span class="st"> </span><span class="dv">0</span><span class="op">:</span>maxop <span class="co"># Offering price ranges from 0 to maxop i.e 0,1, ... 90</span></span>
+<span id="cb13-3"><a href="monopoly-pricing-examples-using-r.html#cb13-3"></a></span>
+<span id="cb13-4"><a href="monopoly-pricing-examples-using-r.html#cb13-4"></a>qd &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="ot">NA</span>,<span class="kw">length</span>(op)) <span class="co"># Empty vector for quantity demanded</span></span>
+<span id="cb13-5"><a href="monopoly-pricing-examples-using-r.html#cb13-5"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(op)) qd[i] &lt;-<span class="st"> </span><span class="kw">sum</span>(wtp<span class="op">&gt;=</span>op[i]) <span class="co"># We fill qd with the number of consumers with a wtp &gt;= offering price</span></span></code></pre></div>
+<p><br />
+Let’s look at the ‘vector of quantities demanded’</p>
+<p>1994, 1992, 1992, 1990, 1989, 1988, 1985, 1981, 1977, 1972, 1969, 1963, 1955, 1953, 1948, 1941, 1935, 1928, 1916, 1900, 1889, 1877, 1867, 1852, 1834, 1806, 1782, 1758, 1733, 1706, 1668, 1636, 1590, 1546, 1511, 1476, 1431, 1387, 1341, 1297, 1246, 1206, 1145, 1094, 1047, 980, 933, 892, 833, 781, 728, 692, 629, 574, 529, 478, 436, 394, 359, 335, 310, 285, 255, 231, 208, 188, 167, 145, 131, 118, 99, 80, 74, 59, 51, 43, 36, 28, 25, 21, 16, 14, 12, 8, 7, 5, 4, 4, 4, 4, 4</p>
+<p>The code above has simply created a vector that computes the quantity demanded at each of the 90 prices £1, £2, …, £90, given the simulated willinges to pay for the 2000 potential consumers.</p>
+<p><br />
+</p>
+<p>We assume:</p>
+<blockquote>
+<p>Marginal cost is increasing though this is not a necessity. For something like broadband services we might think that up to a point marginal costs might be decreasing since the cost of adding one more customer might be less than the cost of adding the previous customer.</p>
+</blockquote>
+<p>In our simulation we assume <span class="math inline">\(MC = 0.01(q_d)\)</span></p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="monopoly-pricing-examples-using-r.html#cb14-1"></a>mc &lt;-<span class="st"> </span>qd<span class="op">*</span>.<span class="dv">01</span> <span class="co"># Setting marginal cost</span></span></code></pre></div>
+<p><br />
+</p>
+<p>Now we plot quantity demanded as a function of price:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="monopoly-pricing-examples-using-r.html#cb15-1"></a><span class="kw">plot</span>(qd, op, <span class="dt">type=</span><span class="st">&quot;l&quot;</span>, <span class="dt">xlab=</span><span class="st">&quot;Quantity&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;Price,  Cost&quot;</span>,</span>
+<span id="cb15-2"><a href="monopoly-pricing-examples-using-r.html#cb15-2"></a>      <span class="dt">main=</span><span class="st">&quot;Demand for Broadband Internet&quot;</span>, <span class="dt">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb15-3"><a href="monopoly-pricing-examples-using-r.html#cb15-3"></a><span class="kw">abline</span>(<span class="dt">h=</span><span class="dv">0</span>, <span class="dt">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb15-4"><a href="monopoly-pricing-examples-using-r.html#cb15-4"></a><span class="kw">lines</span>(qd, mc, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>, <span class="dt">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb15-5"><a href="monopoly-pricing-examples-using-r.html#cb15-5"></a><span class="kw">legend</span>(<span class="dv">1450</span>, <span class="dv">75</span>, <span class="dt">legend=</span><span class="kw">c</span>(<span class="st">&quot;Demand curve&quot;</span>, <span class="st">&quot;Marginal Cost&quot;</span>), <span class="dt">col=</span><span class="kw">c</span>(<span class="st">&quot;black&quot;</span>, <span class="st">&quot;red&quot;</span>), <span class="dt">lty=</span><span class="dv">1</span>)</span></code></pre></div>
+<p><img src="Microeconomics-MSc_files/figure-html/unnamed-chunk-396-1.png" width="80%" style="display: block; margin: auto;" /></p>
+<p>Above, we see that marginal cost only exceeds the “last consumer’s value” (thus the price that can be charged) … when output is around 1800 and the inverse demand (price that can be charged) and marginal cost meet at around 20.</p>
+<p><br />
+</p>
+<blockquote>
+<p>The monopolist must choose a price in which to sell services at. If the monopolist chooses <span class="math inline">\(MC=P\)</span> then the monopolist will not make any money but the consumers will be very happy. We know that the optimal point for the monopolist is at the point where marginal revenue curve intersects the marginal cost curve. Let’s see if we can find it.</p>
+</blockquote>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="monopoly-pricing-examples-using-r.html#cb16-1"></a>tr &lt;-<span class="st"> </span>tp &lt;-<span class="st"> </span>tc &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="ot">NA</span>,<span class="kw">length</span>(op)) <span class="co"># Total revenue, total profit, total cost vectors</span></span></code></pre></div>
+<p><br />
+</p>
+<p>Total cost just sums the marginal cost of all units; we generate this vertor for each of the quantities sold at the prices under consideration…</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="monopoly-pricing-examples-using-r.html#cb17-1"></a><span class="co"># Calculate total cost</span></span>
+<span id="cb17-2"><a href="monopoly-pricing-examples-using-r.html#cb17-2"></a></span>
+<span id="cb17-3"><a href="monopoly-pricing-examples-using-r.html#cb17-3"></a>qd.gain &lt;-<span class="st"> </span>qd[<span class="op">-</span><span class="kw">length</span>(qd)]<span class="op">-</span>qd[<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb17-4"><a href="monopoly-pricing-examples-using-r.html#cb17-4"></a>qd.gain[<span class="kw">length</span>(qd.gain)<span class="op">+</span><span class="dv">1</span>] &lt;-<span class="st"> </span>qd.gain[<span class="kw">length</span>(qd.gain)]</span>
+<span id="cb17-5"><a href="monopoly-pricing-examples-using-r.html#cb17-5"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(op)) tc[i] &lt;-<span class="st"> </span><span class="kw">sum</span>((mc<span class="op">*</span>qd.gain)[<span class="kw">length</span>(qd)<span class="op">:</span>i])</span></code></pre></div>
+<p><br />
+</p>
+<p>Next we calculate total revenue and total profit … again for each element of the vector.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="monopoly-pricing-examples-using-r.html#cb18-1"></a>tr &lt;-<span class="st"> </span>qd<span class="op">*</span>op</span>
+<span id="cb18-2"><a href="monopoly-pricing-examples-using-r.html#cb18-2"></a>tp &lt;-<span class="st"> </span>tr<span class="op">-</span>tc</span></code></pre></div>
+<p><br />
+<!-- Todo @oska -- compute and plot marginal revenue here --></p>
+<p>Next we plot total revenue and total profit against the considered prices.</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="monopoly-pricing-examples-using-r.html#cb19-1"></a>minmax &lt;-<span class="st"> </span><span class="cf">function</span>(...) <span class="kw">c</span>(<span class="kw">min</span>(...),<span class="kw">max</span>(...)) <span class="co"># I think this function is simply used to define the plot scalre</span></span>
+<span id="cb19-2"><a href="monopoly-pricing-examples-using-r.html#cb19-2"></a></span>
+<span id="cb19-3"><a href="monopoly-pricing-examples-using-r.html#cb19-3"></a><span class="co">#They use the traditional &quot;plot&quot; function. Ggplot  tools are much much better, and we will try to switch the code when we have a chance.</span></span>
+<span id="cb19-4"><a href="monopoly-pricing-examples-using-r.html#cb19-4"></a></span>
+<span id="cb19-5"><a href="monopoly-pricing-examples-using-r.html#cb19-5"></a><span class="kw">plot</span>(<span class="kw">minmax</span>(op),<span class="kw">minmax</span>(tr,tp), <span class="dt">type=</span><span class="st">&quot;n&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;Cost / Profit&quot;</span>,</span>
+<span id="cb19-6"><a href="monopoly-pricing-examples-using-r.html#cb19-6"></a>     <span class="dt">xlab=</span><span class="st">&quot;Price&quot;</span>,</span>
+<span id="cb19-7"><a href="monopoly-pricing-examples-using-r.html#cb19-7"></a>     <span class="dt">main=</span><span class="st">&quot;We can see optimal pricing for the monopolist is around £39:&quot;</span>)</span>
+<span id="cb19-8"><a href="monopoly-pricing-examples-using-r.html#cb19-8"></a></span>
+<span id="cb19-9"><a href="monopoly-pricing-examples-using-r.html#cb19-9"></a><span class="kw">grid</span>()</span>
+<span id="cb19-10"><a href="monopoly-pricing-examples-using-r.html#cb19-10"></a><span class="kw">abline</span>(<span class="dt">h=</span><span class="dv">0</span>, <span class="dt">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb19-11"><a href="monopoly-pricing-examples-using-r.html#cb19-11"></a><span class="kw">abline</span>(<span class="dt">v=</span><span class="dv">39</span>, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>, <span class="dt">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb19-12"><a href="monopoly-pricing-examples-using-r.html#cb19-12"></a><span class="kw">lines</span>(op,tr, <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>, <span class="dt">lwd=</span><span class="dv">3</span>)</span>
+<span id="cb19-13"><a href="monopoly-pricing-examples-using-r.html#cb19-13"></a><span class="kw">lines</span>(op,tp, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>, <span class="dt">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb19-14"><a href="monopoly-pricing-examples-using-r.html#cb19-14"></a><span class="kw">legend</span>(<span class="dv">65</span>, <span class="dt">y =</span> <span class="dv">45000</span>, <span class="dt">legend=</span><span class="kw">c</span>(<span class="st">&quot;Total revenue&quot;</span>, <span class="st">&quot;Total profit&quot;</span>), <span class="dt">col=</span><span class="kw">c</span>(<span class="st">&quot;blue&quot;</span>, <span class="st">&quot;red&quot;</span>), <span class="dt">lty=</span><span class="dv">1</span>, <span class="dt">cex=</span><span class="fl">0.72</span>)</span></code></pre></div>
+<p><img src="Microeconomics-MSc_files/figure-html/unnamed-chunk-400-1.png" width="80%" style="display: block; margin: auto;" /></p>
+<p>The monopolist calculates total revenue and total profit for each price.</p>
+<blockquote>
+<p>We can see at the price around 18 which would be the optimal price for the consumer [recall that this is the result of marginal-cost pricing], the supplier is making almost no profits.</p>
+</blockquote>
+<div class="marginnote">
+<p>There are still some profits to be had here as with increasing marginal cost the average cost is less than the marginal cost.</p>
+</div>
+<p>On the other hand, the monopoly’s profit maximising price is around £39.</p>
+<p>(Note that this is slightly higher than the total-revenue-maximizing price.)</p>
+<p><br />
+</p>
+<blockquote>
+<p>The last thing we might wish to consider to Total Surplus or total system efficiency which is defined as that which the consumer benefits by purchasing a good below the consumers willingness to pay plus that of the suppliers profit at that price.</p>
+</blockquote>
+<div class="marginnote">
+<p>Technically we might want to consider what is called total surplus, summing consumer and producer surplus, which does not consider fixed costs. After fixed Costs are incurred they are “sunk” and thus not relevant for the social efficiency of the pricing decision.</p>
+.
+</div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="monopoly-pricing-examples-using-r.html#cb20-1"></a>cs &lt;-<span class="st"> </span>tr</span>
+<span id="cb20-2"><a href="monopoly-pricing-examples-using-r.html#cb20-2"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(op)) cs[i] &lt;-<span class="st"> </span><span class="kw">sum</span>((wtp[wtp<span class="op">&gt;=</span>op[i]]<span class="op">-</span>op[i]))</span>
+<span id="cb20-3"><a href="monopoly-pricing-examples-using-r.html#cb20-3"></a></span>
+<span id="cb20-4"><a href="monopoly-pricing-examples-using-r.html#cb20-4"></a>tts &lt;-<span class="st"> </span>cs<span class="op">+</span>tp</span>
+<span id="cb20-5"><a href="monopoly-pricing-examples-using-r.html#cb20-5"></a></span>
+<span id="cb20-6"><a href="monopoly-pricing-examples-using-r.html#cb20-6"></a>op[tts<span class="op">==</span><span class="kw">max</span>(tts)] <span class="co"># Check the optimal societal price</span></span></code></pre></div>
+<pre><code>## [1] 19</code></pre>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="monopoly-pricing-examples-using-r.html#cb22-1"></a><span class="kw">plot</span>(<span class="kw">c</span>(<span class="kw">min</span>(op),<span class="kw">max</span>(op)),<span class="kw">c</span>(<span class="kw">min</span>(cs,tp),<span class="kw">max</span>(cs,tp)), <span class="dt">type=</span><span class="st">&quot;n&quot;</span>,</span>
+<span id="cb22-2"><a href="monopoly-pricing-examples-using-r.html#cb22-2"></a>     <span class="dt">main=</span><span class="st">&quot;How does surplus vary for different prices?&quot;</span>,</span>
+<span id="cb22-3"><a href="monopoly-pricing-examples-using-r.html#cb22-3"></a>     <span class="dt">xlab=</span><span class="st">&quot;Price&quot;</span>,</span>
+<span id="cb22-4"><a href="monopoly-pricing-examples-using-r.html#cb22-4"></a>     <span class="dt">ylab=</span><span class="st">&quot;Surplus&quot;</span>)</span>
+<span id="cb22-5"><a href="monopoly-pricing-examples-using-r.html#cb22-5"></a><span class="kw">lines</span>(op, cs, <span class="dt">col=</span><span class="st">&quot;purple&quot;</span>, <span class="dt">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb22-6"><a href="monopoly-pricing-examples-using-r.html#cb22-6"></a><span class="kw">lines</span>(op, tp, <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>, <span class="dt">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb22-7"><a href="monopoly-pricing-examples-using-r.html#cb22-7"></a><span class="kw">lines</span>(op, tts, <span class="dt">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb22-8"><a href="monopoly-pricing-examples-using-r.html#cb22-8"></a><span class="kw">abline</span>(<span class="dt">h=</span><span class="dv">0</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>, <span class="dt">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb22-9"><a href="monopoly-pricing-examples-using-r.html#cb22-9"></a><span class="kw">legend</span>(<span class="dv">60</span>, <span class="dv">75000</span>, <span class="dt">legend=</span><span class="kw">c</span>(<span class="st">&quot;Consumer surplus&quot;</span>, <span class="st">&quot;Producer surplus&quot;</span>, <span class="st">&quot;Total surplus&quot;</span>), <span class="dt">col=</span><span class="kw">c</span>(<span class="st">&quot;purple&quot;</span>,<span class="st">&quot;blue&quot;</span>,<span class="st">&quot;black&quot;</span>),<span class="dt">lty=</span><span class="dv">1</span>)</span></code></pre></div>
+<p><img src="Microeconomics-MSc_files/figure-html/unnamed-chunk-401-1.png" width="80%" style="display: block; margin: auto;" /></p>
+<p>The peak of the total surplus curve is where where <span class="math inline">\(P = MC\)</span>, at about £19.<br />
+</p>
+</div>
+<div id="demand-est-historical" class="section level2" number="5.16">
+<h2><span class="header-section-number">5.16</span> Estimating demand and optimal profit based on ‘historical data’ (presuming random firm ’experimentation)</h2>
+<p><a href="https://www.r-bloggers.com/2017/08/pricing-optimization-how-to-find-the-price-that-maximizes-your-profit/">This blog and vignette</a> (<a href="https://insightr.wordpress.com/2017/08/27/pricing-optimization-how-to-find-the-price-that-maximizes-your-profit/">alternate link</a>) appears to be an excellent marriage of microeconomic theory, data analysis and statistics, and business strategy.</p>
+<p>Have a look: I hope to incorporate this further.</p>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="project.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="supplements.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="exercises-pricingmonopolyprice-discrimination-simpler.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="exercises-price-discrimination-and-segmentation-pricing-mechanisms-intro-to-strategic-interaction.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="book_assets/gitbook-2.6.7/js/app.min.js"></script>

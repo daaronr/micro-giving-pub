@@ -11278,8 +11278,16 @@ Quite a distortion in this example!
 - ['Pricing college' podcast](https://pricingcollege.com/) offers some insight into how firms and consultants tackle the issue of pricing, and some of the terminology that they use
 
 
+- [See 'estimating demand...' below](#demand-est-historical) 
 
 \
+
+*Relevant but somewhat challenging:*
+
+- [Spedicato, Giorgio Alfredo, Christophe Dutang, and Leonardo Petrini. "Machine learning methods to perform pricing optimization. A comparison with standard GLMs." (2018).](https://hal.archives-ouvertes.fr/hal-01942038/document)
+
+- [RFID-enabled item-level retail pricing](https://www.sciencedirect.com/science/article/pii/S0167923609001730?casa_token=NEk0vJZbtIQAAAAA:pa3PpxXgTIyPuY2IRpYj1LFtr-TtR18unGNkZCZn2YOY4zoYZN7tfSZ4oQHAjgHBni5Vd5ye)
+
 
 
 # Exercises: Pricing/monopoly/price-discrimination (simpler)  {-}
@@ -11289,6 +11297,7 @@ Quite a distortion in this example!
 Exeter BEEM101 students, 2020: please do these exercises *before* the midterm.
 
 Suggested answers are now available in the usual location
+
 ```
 
 ## OR 7.1: Double Margins (all parts)
@@ -11328,7 +11337,10 @@ You should identify the DWL of monopoly as a reduction in top-level (allocative)
 
 ```
 
-# Monopoly pricing: An example using R {-}
+# Monopoly pricing: Examples using R {-}
+
+
+## Simulating willingness to pay and considering 'optimal pricing' 
 
 ```{block2,  type='note'}
 Remember, you can 'hide the code' with the 'hide global' button in the upper right of this screen.
@@ -11549,6 +11561,11 @@ legend(60, 75000, legend=c("Consumer surplus", "Producer surplus", "Total surplu
 The peak of the total surplus curve is where  where $P = MC$, at about £19.
 \
 
+## Estimating demand and optimal profit based on 'historical data' (presuming random firm 'experimentation) {#demand-est-historical}
+
+[This blog and vignette](https://www.r-bloggers.com/2017/08/pricing-optimization-how-to-find-the-price-that-maximizes-your-profit/) ([alternate link](https://insightr.wordpress.com/2017/08/27/pricing-optimization-how-to-find-the-price-that-maximizes-your-profit/)) appears to be an excellent marriage of microeconomic theory, data analysis and statistics, and business strategy. 
+
+Have a look: I hope to incorporate this further.
 
 # Exercises: Price discrimination and segmentation, 'pricing mechanisms'; intro to strategic interaction {-}
 
