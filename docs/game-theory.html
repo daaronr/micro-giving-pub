@@ -493,7 +493,15 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.16" data-path="monopoly-pricing-examples-using-r.html"><a href="monopoly-pricing-examples-using-r.html#demand-est-historical"><i class="fa fa-check"></i><b>5.16</b> Estimating demand and optimal profit based on ‘historical data’ (presuming random firm ’experimentation)</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="exercises-price-discrimination-and-segmentation-pricing-mechanisms-intro-to-strategic-interaction.html"><a href="exercises-price-discrimination-and-segmentation-pricing-mechanisms-intro-to-strategic-interaction.html"><i class="fa fa-check"></i>Exercises: Price discrimination and segmentation, ‘pricing mechanisms’; intro to strategic interaction</a></li>
-<li class="chapter" data-level="6" data-path="game-theory.html"><a href="game-theory.html"><i class="fa fa-check"></i><b>6</b> Strategic interactions: Game theory</a></li>
+<li class="chapter" data-level="6" data-path="game-theory.html"><a href="game-theory.html"><i class="fa fa-check"></i><b>6</b> Strategic interactions: Game theory</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="game-theory.html"><a href="game-theory.html#basic-concepts-strategic-interaction-elements-of-a-game"><i class="fa fa-check"></i><b>6.1</b> Basic concepts (strategic interaction, elements of a game))</a></li>
+<li class="chapter" data-level="6.2" data-path="game-theory.html"><a href="game-theory.html#some-examples"><i class="fa fa-check"></i><b>6.2</b> Some examples</a>
+<ul>
+<li class="chapter" data-level="" data-path="game-theory.html"><a href="game-theory.html#what-game-theory-can-do-wet-blanket"><i class="fa fa-check"></i>What game theory can do (wet blanket)</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="game-theory.html"><a href="game-theory.html#elements-of-a-game"><i class="fa fa-check"></i><b>6.3</b> Elements of a game</a></li>
+</ul></li>
 <li class="chapter" data-level="7" data-path="project.html"><a href="project.html"><i class="fa fa-check"></i><b>7</b> Beem101: Project, discussion of research</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="project.html"><a href="project.html#description-from-ele-page"><i class="fa fa-check"></i><b>7.1</b> Description from ELE page:</a></li>
@@ -570,11 +578,175 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="game_theory" class="section level1" number="6">
 <h1><span class="header-section-number">6</span> Strategic interactions: Game theory</h1>
+<p>We considered decisions under ‘natural’ uncertainty (known probability distributions), considering preferences and choices, and concepts such as ‘expected utility’ and ‘risk aversion’.</p>
+<p><br />
+</p>
+<p>Much of microeconomics also considers the prices and outcomes in markets with many individual consumers and firms. We consider concepts such as (Walrasian) equilibrium.</p>
+<p><br />
+</p>
+<p>Now we also want to consider <span class="math inline">\(\rightarrow\)</span> <em>Strategic</em> uncertainty: one “agent’s” best choice may depend on what others choose, but each agent may be unsure about what others will choose.</p>
+<p><br />
+</p>
+<p>Furthermore, we may have interactions among only a small number of agents, so (unlike in large markets) each agent’s choice may affect the payoffs of other agents (and, in sequential games, may influence their choices).</p>
+<p><br />
+</p>
+<p><span class="math inline">\(\rightarrow\)</span> <strong>Game Theory</strong> is one of the the main approaches that Economists (and others) use to consider such situations, and what choices might be made.</p>
+<p><br />
+</p>
+<p>Is game theory useful???</p>
+<p>Some people <a href="https://www.linkedin.com/posts/eyal-winter-739b6b44_if-you-have-economics-students-who-complain-activity-6595028520324472832-dbJa/?fbclid=IwAR2K_dmkK7vazjZa6GRa3ZtSMWXhgLE30Fe0wzZ1ezPzNibYG7_Q5hn5jog">seem to think so</a>:</p>
+<p><img src="picsfigs/winter_claims_gametheory_useful.png" width="50%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<div id="basic-concepts-strategic-interaction-elements-of-a-game" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Basic concepts (strategic interaction, elements of a game))</h2>
+<p>In ‘large markets with many small players’: Each individual (consumer, firm, etc) takes all others’ choices as given</p>
+<ul>
+<li>market price, demand curve, etc.</li>
+</ul>
+<p>&lt;<br> </p>
+<p>Now: Consider ‘strategic interaction’</p>
+<ul>
+<li>My best choice may depend on your choice
+<ul>
+<li>And vice versa</li>
+</ul></li>
+<li>Sequential games: My earlier choices may change your later choices</li>
+</ul>
+</div>
+<div id="some-examples" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> Some examples</h2>
+<p><font color='blue'>Is it better to get lunch at Comida or Pret?</font></p>
+<p><br />
+</p>
+<div class="marginnote">
+<p>2020-21 Exeter students: if this were a normal year this question qould make more sense.</p>
+</div>
+<p><br></p>
+<ul>
+<li>What if your friends are going to Comida?</li>
+</ul>
+<p><br></p>
+<ul>
+<li>What if everyone and her cousin are going to Comida, so the queue is miles long?</li>
+</ul>
+<p><br></p>
+<p><br />
+</p>
+<p><font color='blue'>What should Tim Cook charge for his new Iphone?</font></p>
+<p><br></p>
+<ul>
+<li>Does it depend on whether Samsung and LG…</li>
+</ul>
+<p>… Sell their phones for £200, or £1000, or go out of business?</p>
+<p><br />
+</p>
+
+<div class="inputq">
+<p>Find a situation in business, government, fiction, history or your own life where one party’s optimal choice depends on what another party does.</p>
+<p><em>Write it down</em>, give a 1-sentence explanation of why it involves ‘strategic dependence’</p>
+</div>
+<p>Some possible examples:</p>
+<p>Life:</p>
+<ul>
+<li>Ask out your crush or not?</li>
+</ul>
+<p><br> </p>
+<p>Politics:</p>
+<ul>
+<li><p>Country makes war or peace? Soldiers fight or run away?</p></li>
+<li><p>Run for office or not? Party contests a seat? If so, how much to spend on campaign?</p></li>
+</ul>
+<p><br> </p>
+<p>Standard Economics:</p>
+<ul>
+<li><p>Amount to bid at a first-price auction?</p></li>
+<li><p>Whether Firezza opens a new branch in Exeter, and where?</p></li>
+<li><p>How hard to work towards a promotion at your job?</p></li>
+</ul>
+<p>Very interesting problems, does Econ and Game Theory have the solutions?</p>
+<p>G<br />
+</p>
+<div id="what-game-theory-can-do-wet-blanket" class="section level3 unnumbered" number="">
+<h3>What game theory can do (wet blanket)</h3>
+<p><img src="picsfigs/Eeyore_Pink.jpg" width="30%" style="display: block; margin: auto;" /></p>
+<p>Game theory gives us a language and framework for analyzing strategic situations</p>
+<p>The ‘solution concepts’ can be said to make ‘predictions’ under given assumptions. The idea of ‘equilibrium’ is defined as a baseline.<br />
+</p>
+<p>Dr. Reinstein says: Sometimes overrated as a tool for predicting how people/firms will actually behave.</p>
+<p><br />
+</p>
+<ul>
+<li><p>It often makes multiple predictions, or predicts ‘mixed strategies’ (randomisation).</p></li>
+<li><p>Real-world and experimental choices are often/arguably predicted poorly by classical game theory.</p></li>
+<li><p>For example, standard game theory says chess has a pre-determined outcome and is a bit boring (ok, you may agree about the latter).</p></li>
+</ul>
+
+<div class="technote">
+<p>Adv: But there are complicating issues making it difficult to asses the predictions of game theory.</p>
+<p>Particularly because monetary payoff may not be the same as utility payoffs … this can make real-world predictions unclear.</p>
+<p>Particularly if there are social preferences or fairness preferences.<br />
+</p>
+<p>We also see failures to coordinate,</p>
+<p>failure to take higher-order cognitive steps</p>
+<p>and preferences over the <em>manner decisions are made</em>.</p>
+These make Game Theoretic predictions difficult.
+</div>
+</div>
+</div>
+<div id="elements-of-a-game" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> Elements of a game</h2>
+<p><strong>A ‘strategic game’</strong> (also called a ‘normal-form game, I believe’) must specify</p>
+<ol style="list-style-type: decimal">
+<li><p>Players,</p></li>
+<li><p>Actions these players may choose, and</p></li>
+<li><p>Payoffs resulting from the combination of players’ choices</p></li>
+</ol>
+<p><br />
+</p>
+<p>O-R define this as a formal mathematical object:</p>
+<div class="marginnote">
+<p>Remember that formal mathematical definitions help us avoid ambiguity, and allow us to use the ‘general tools of maths’ to construct proofs. E.g., ‘fixed point theorems’ can be applied to prove the existence of an equilibrium in some cases.</p>
+</div>
+<blockquote>
+<p>A strategic game <span class="math inline">\(\langle N , (A_i)_i \in N, (\succsim^i) i \in N \rangle\)</span> consists of</p>
+</blockquote>
+<blockquote>
+<p>players: a set <span class="math inline">\(N = \{1,..., n\}\)</span></p>
+</blockquote>
+<p>(However, we will mostly consider 2-player games)</p>
+<blockquote>
+<p>actions: for each player <span class="math inline">\(i \in N\)</span> , a set <span class="math inline">\(A_i\)</span> of actions</p>
+</blockquote>
+<p>This action set may be discrete (e.g., <span class="math inline">\(A_i = \{Yes. No\}\)</span>) or continuous (e.g., a firm may choose a positive quantity <span class="math inline">\(q\)</span>, so <span class="math inline">\(A_i = q \in R_+\)</span>).</p>
+<p><br />
+</p>
+<blockquote>
+<p>preferences: for each player <span class="math inline">\(i \in N\)</span>, a preference relation <span class="math inline">\(\succsim^i\)</span> over the set <span class="math inline">\(A = \times_{i \in N} A^i\)</span> of action profiles.</p>
+</blockquote>
+<p>I.e., each player has preferences over the ‘outcome’ of the game, the combination of actions chosen by each player (referred to as an ‘action profile’.</p>
+<div class="marginnote">
+<p>I believe the <span class="math inline">\(\times_{i \in N}\)</span> sign represents the ‘Cartesian product’, i.e., the set of all combinations of one of each element.</p>
+</div>
+<blockquote>
+<p>A function <span class="math inline">\(u_i : A \righttarrow R\)</span> that represents <span class="math inline">\(\succsim^i\)</span> is a payoff function for player <span class="math inline">\(i\)</span>.</p>
+</blockquote>
+<p><br />
+</p>
+<p>The ‘Strategic game’ form is typically used to depict simultaneous games; where all players make their choice at the same time (or if not at the same time, no players know the choices made by other players when their choices are madeplaying), with ‘complete information’ (all players know whom they are playing against, and what these players’ payoffs are.)</p>
+<p><br />
+</p>
+<p>With only two players and a finite number of actions, these games are often displayed using a matrix.<br />
+</p>
+<p>In contrast, the <em>Extensive game</em> form is typically used to depict a game involving a (finite or infinite) <em>sequence</em> of choices made by players; we will return to this further below. Extensive-form games with a finite number of actions are often depicted using ‘game trees’.</p>
+<p><br />
+</p>
 
 <div class="note">
 <strong>I will add a great deal of content here.</strong>
 </div>
 
+</div>
 </div>
             </section>
 

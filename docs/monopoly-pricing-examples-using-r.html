@@ -493,7 +493,15 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.16" data-path="monopoly-pricing-examples-using-r.html"><a href="monopoly-pricing-examples-using-r.html#demand-est-historical"><i class="fa fa-check"></i><b>5.16</b> Estimating demand and optimal profit based on ‘historical data’ (presuming random firm ’experimentation)</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="exercises-price-discrimination-and-segmentation-pricing-mechanisms-intro-to-strategic-interaction.html"><a href="exercises-price-discrimination-and-segmentation-pricing-mechanisms-intro-to-strategic-interaction.html"><i class="fa fa-check"></i>Exercises: Price discrimination and segmentation, ‘pricing mechanisms’; intro to strategic interaction</a></li>
-<li class="chapter" data-level="6" data-path="game-theory.html"><a href="game-theory.html"><i class="fa fa-check"></i><b>6</b> Strategic interactions: Game theory</a></li>
+<li class="chapter" data-level="6" data-path="game-theory.html"><a href="game-theory.html"><i class="fa fa-check"></i><b>6</b> Strategic interactions: Game theory</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="game-theory.html"><a href="game-theory.html#basic-concepts-strategic-interaction-elements-of-a-game"><i class="fa fa-check"></i><b>6.1</b> Basic concepts (strategic interaction, elements of a game))</a></li>
+<li class="chapter" data-level="6.2" data-path="game-theory.html"><a href="game-theory.html#some-examples"><i class="fa fa-check"></i><b>6.2</b> Some examples</a>
+<ul>
+<li class="chapter" data-level="" data-path="game-theory.html"><a href="game-theory.html#what-game-theory-can-do-wet-blanket"><i class="fa fa-check"></i>What game theory can do (wet blanket)</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="game-theory.html"><a href="game-theory.html#elements-of-a-game"><i class="fa fa-check"></i><b>6.3</b> Elements of a game</a></li>
+</ul></li>
 <li class="chapter" data-level="7" data-path="project.html"><a href="project.html"><i class="fa fa-check"></i><b>7</b> Beem101: Project, discussion of research</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="project.html"><a href="project.html#description-from-ele-page"><i class="fa fa-check"></i><b>7.1</b> Description from ELE page:</a></li>
@@ -606,7 +614,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb12-3"><a href="monopoly-pricing-examples-using-r.html#cb12-3"></a>wtp &lt;-<span class="st"> </span><span class="dv">45</span> <span class="op">+</span><span class="st"> </span><span class="kw">rnorm</span>(npeep)<span class="op">*</span><span class="dv">15</span> <span class="co"># Each person has a different willingness to pay</span></span></code></pre></div>
 <p><br />
 </p>
-<p>Checking, the standard deviation is 15.27 (coded as <code>sd(wtp)</code>). The exact number will vary each time you run the simulation in R but it will generally be close to 15.</p>
+<p>Checking, the standard deviation is 14.74 (coded as <code>sd(wtp)</code>). The exact number will vary each time you run the simulation in R but it will generally be close to 15.</p>
 <p><br />
 </p>
 <blockquote>
@@ -622,7 +630,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb13-5"><a href="monopoly-pricing-examples-using-r.html#cb13-5"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(op)) qd[i] &lt;-<span class="st"> </span><span class="kw">sum</span>(wtp<span class="op">&gt;=</span>op[i]) <span class="co"># We fill qd with the number of consumers with a wtp &gt;= offering price</span></span></code></pre></div>
 <p><br />
 Let’s look at the ‘vector of quantities demanded’</p>
-<p>1994, 1992, 1992, 1990, 1989, 1988, 1985, 1981, 1977, 1972, 1969, 1963, 1955, 1953, 1948, 1941, 1935, 1928, 1916, 1900, 1889, 1877, 1867, 1852, 1834, 1806, 1782, 1758, 1733, 1706, 1668, 1636, 1590, 1546, 1511, 1476, 1431, 1387, 1341, 1297, 1246, 1206, 1145, 1094, 1047, 980, 933, 892, 833, 781, 728, 692, 629, 574, 529, 478, 436, 394, 359, 335, 310, 285, 255, 231, 208, 188, 167, 145, 131, 118, 99, 80, 74, 59, 51, 43, 36, 28, 25, 21, 16, 14, 12, 8, 7, 5, 4, 4, 4, 4, 4</p>
+<p>1997, 1996, 1995, 1995, 1994, 1992, 1991, 1988, 1987, 1980, 1978, 1973, 1967, 1966, 1960, 1956, 1949, 1943, 1933, 1915, 1908, 1895, 1882, 1866, 1845, 1825, 1801, 1773, 1752, 1721, 1689, 1658, 1622, 1587, 1532, 1475, 1433, 1393, 1355, 1311, 1269, 1226, 1177, 1116, 1064, 1019, 973, 917, 853, 796, 745, 690, 640, 591, 546, 499, 459, 425, 380, 337, 314, 290, 260, 226, 196, 180, 165, 142, 120, 110, 97, 78, 66, 51, 37, 28, 21, 18, 16, 12, 9, 6, 4, 2, 2, 2, 2, 1, 1, 1, 1</p>
 <p>The code above has simply created a vector that computes the quantity demanded at each of the 90 prices £1, £2, …, £90, given the simulated willinges to pay for the 2000 potential consumers.</p>
 <p><br />
 </p>

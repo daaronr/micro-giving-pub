@@ -11268,8 +11268,6 @@ Quite a distortion in this example!
 
 
 
-
-
 ## How do firms *actually* price? (this section is a work in progress)
 
 
@@ -11581,11 +11579,252 @@ Exeter BEEM101 students: These will be covered *after* the midterm
 
 # Strategic interactions: Game theory {#game_theory}
 
-```{block2,  type='note'}
-**I will add a great deal of content here.**
+
+We considered decisions under 'natural' uncertainty (known probability distributions), considering preferences and choices, and concepts such as 'expected utility' and 'risk aversion'.
+
+
+\
+
+Much of microeconomics also considers the prices and outcomes in markets with many individual consumers and firms. We consider concepts such as (Walrasian) equilibrium.
+
+\
+
+Now we also want to consider  $\rightarrow$  *Strategic* uncertainty: one "agent's" best choice may depend on what others choose, but each agent may be unsure about what others will choose.
+
+\
+
+Furthermore, we may have interactions among only a small number of agents, so (unlike in large markets) each agent's choice may affect the payoffs of other agents (and, in sequential games, may influence their choices).
+
+\
+
+$\rightarrow$ **Game Theory** is one of the the main approaches that Economists (and others) use to consider such situations, and what choices might be made.
+
+\
+
+Is game theory useful???
+
+Some people [seem to think so](https://www.linkedin.com/posts/eyal-winter-739b6b44_if-you-have-economics-students-who-complain-activity-6595028520324472832-dbJa/?fbclid=IwAR2K_dmkK7vazjZa6GRa3ZtSMWXhgLE30Fe0wzZ1ezPzNibYG7_Q5hn5jog):
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","winter_claims_gametheory_useful.png"))
+
+```
+
+\
+
+
+
+## Basic concepts (strategic interaction, elements of a game))
+
+
+
+In 'large markets with many small players': Each individual (consumer, firm, etc) takes all others' choices as given
+
+- market price, demand curve, etc.
+
+<<br> \bigskip
+
+Now: Consider 'strategic interaction'
+
+- My best choice may depend on your choice
+    - And vice versa
+
+- Sequential games: My earlier choices may change your later choices
+
+
+
+## Some examples
+
+
+`r format_with_col("Is it better to get lunch at Comida or Pret?","blue")`
+
+\
+
+<div class="marginnote">
+2020-21 Exeter students: if this were a normal year this question qould make more sense.
+</div>
+
+<br>
+
+- What if your friends are going to Comida?
+
+
+<br>
+
+- What if everyone and her cousin are going to Comida, so the queue is miles long?
+
+
+<br>
+
+\
+
+`r format_with_col("What should Tim Cook charge for his new Iphone?","blue")`
+
+
+<br>
+
+
+- Does it depend on whether Samsung and LG...
+
+
+... Sell their phones for £200, or £1000, or go out of business?
+
+
+\
+
+
+```{block2,  type='inputq'}
+
+Find a situation in business, government, fiction, history or your own life  where one party's optimal choice depends on what another party does.
+
+
+*Write it down*, give a 1-sentence explanation of why it involves 'strategic dependence'
+
+
+
 ```
 
 
+Some possible examples:
+
+Life:
+
+- Ask out your crush or not?
+
+
+<br> \bigskip
+
+
+Politics:
+
+- Country makes war or peace? Soldiers fight or run away?
+
+- Run for office or not? Party contests a seat? If so, how much to spend on campaign?
+
+
+<br> \bigskip
+
+
+Standard Economics:
+
+- Amount to bid at a first-price auction?
+
+- Whether Firezza opens a new branch in Exeter, and where?
+
+- How hard to work towards a promotion at your job?
+
+
+Very interesting problems, does Econ and Game Theory have the solutions?
+
+G\
+
+
+### What game theory can do (wet blanket) {-}
+
+
+```{r  fig.cap = '', out.width='30%', fig.asp=.3, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","Eeyore_Pink.jpg"))
+```
+
+Game theory gives us a language and framework for analyzing strategic situations
+
+The 'solution concepts' can be said to make 'predictions' under given assumptions.  The idea of 'equilibrium' is defined as a baseline.
+\
+
+Dr. Reinstein says: Sometimes overrated as a tool for predicting how people/firms will actually behave.
+
+\
+
+
+- It often makes multiple predictions, or predicts 'mixed strategies' (randomisation).
+
+- Real-world and experimental choices are often/arguably predicted poorly by classical game theory.
+
+- For example, standard game theory says chess has a pre-determined outcome and is a bit boring (ok, you may agree about the latter).
+
+```{block2,  type='technote'}
+
+Adv: But there are complicating issues making it difficult to asses the predictions of game theory.
+
+Particularly because monetary payoff may not be the same as utility payoffs ... this can make real-world predictions unclear.
+
+Particularly if there are social preferences or fairness preferences.\
+
+We also see failures to coordinate,
+
+failure to take higher-order cognitive steps
+
+and preferences over the *manner decisions are made*.
+
+These make Game Theoretic predictions difficult.
+```
+
+
+
+
+## Elements of a game
+
+**A 'strategic game'** (also called a 'normal-form game, I believe') must specify
+
+1. Players,
+
+2. Actions these players may choose, and
+
+3. Payoffs resulting from the combination of players' choices
+
+\
+
+
+O-R define this as a formal mathematical object:
+
+<div class="marginnote">
+
+Remember that formal mathematical definitions help us avoid ambiguity, and allow us to use the 'general tools of maths' to construct proofs. E.g., 'fixed point theorems' can be applied to prove the existence of an equilibrium in some cases.
+
+</div>
+
+
+> A strategic game $\langle N , (A_i)_i \in N, (\succsim^i) i \in N \rangle$ consists of
+
+> players: a set $N = \{1,..., n\}$
+
+(However, we will mostly consider 2-player games)
+
+> actions: for each player $i \in N$ , a set $A_i$ of actions
+
+This action set may be discrete (e.g., $A_i = \{Yes. No\}$) or continuous (e.g., a firm may choose a positive quantity $q$, so  $A_i = q \in R_+$).
+
+\
+
+> preferences: for each player $i \in N$, a preference relation $\succsim^i$ over the set $A = \times_{i \in N} A^i$ of action profiles.
+
+I.e., each player has preferences over the 'outcome' of the game, the combination of actions chosen by each player (referred to as an 'action profile'.
+
+<div class="marginnote">
+I believe the $\times_{i \in N}$ sign represents the 'Cartesian product', i.e., the set of all combinations of one of each element.
+</div>
+
+
+> A function $u_i : A \righttarrow  R$ that represents $\succsim^i$  is a payoff function for player $i$.
+
+\
+
+The 'Strategic game' form is typically used to depict simultaneous games; where all players make their choice at the same time (or if not at the same time, no players know the choices made by other players when their choices are madeplaying), with 'complete information' (all players know whom they are playing against, and what these players' payoffs are.) 
+
+\
+
+With only two players and a finite number of actions, these games are often displayed using a matrix.
+\
+
+
+In contrast, the *Extensive game* form is typically used to depict a game involving a (finite or infinite) *sequence* of choices made by players; we will return to this further below. Extensive-form games with a finite number of actions are often depicted using 'game trees'. 
+
+
+\
+
+```{block2,  type='note'}
+**I will add a great deal of content here.**
+```
 
 <!--chapter:end:game_theory.Rmd-->
 
