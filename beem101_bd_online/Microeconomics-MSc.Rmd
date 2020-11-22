@@ -11361,11 +11361,11 @@ I hope this makes the theory a bit more concrete. It is obviously a great career
 If you can install R (and ideally RStudio), you might like to try to run the code yourself, and tweak certain parts to see how things change. R/Rstudio shoulda lso be installed on most university computers. If you just want to do a quick try, you can simply enter code into a hosted browser interface like the one below [Hosted here](https://rdrr.io/snippets/)... but Rstudio will be better in the long run.
 
 ```
+\ 
 
-
-
-<iframe width='150%' height='700' src='https://rdrr.io/snippets/embed/' frameborder='0'>
-</iframe>
+```{r, echo=FALSE, out.width="75%"}
+knitr::include_app('https://rdrr.io/snippets/embed/', height = "300px")
+```
 
 *Try entering some of the code into the box above and click the 'run' bar. A tip: to have R display any 'object' that has been defined, simply type it's name on a line by itself.*
 
@@ -11406,7 +11406,7 @@ Checking, the standard deviation  is `r sd(wtp)` (coded as  `sd(wtp)`). The exac
 We set the maximum offered price to 90, thus we consider prices between 0 and 90. From this we sum the number of consumers who have a willingness to pay above the offering price in order to give us a vector of quantity demanded at each price level.
 
 
-```{r}
+```{r, out.width="75%"}
 
 maxop <- 90 # Max offering price
 op <- 0:maxop # Offering price ranges from 0 to maxop i.e 0,1, ... 90

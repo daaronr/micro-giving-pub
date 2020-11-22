@@ -2081,11 +2081,11 @@ I hope this makes the theory a bit more concrete. It is obviously a great career
 If you can install R (and ideally RStudio), you might like to try to run the code yourself, and tweak certain parts to see how things change. R/Rstudio shoulda lso be installed on most university computers. If you just want to do a quick try, you can simply enter code into a hosted browser interface like the one below [Hosted here](https://rdrr.io/snippets/)... but Rstudio will be better in the long run.
 
 ```
+\ 
 
-
-
-<iframe width='150%' height='700' src='https://rdrr.io/snippets/embed/' frameborder='0'>
-</iframe>
+```{r, echo=FALSE, out.width="75%"}
+knitr::include_app('https://rdrr.io/snippets/embed/', height = "300px")
+```
 
 *Try entering some of the code into the box above and click the 'run' bar. A tip: to have R display any 'object' that has been defined, simply type it's name on a line by itself.*
 
