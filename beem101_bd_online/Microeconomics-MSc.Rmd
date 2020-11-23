@@ -11406,7 +11406,7 @@ Checking, the standard deviation  is `r sd(wtp)` (coded as  `sd(wtp)`). The exac
 We set the maximum offered price to 90, thus we consider prices between 0 and 90. From this we sum the number of consumers who have a willingness to pay above the offering price in order to give us a vector of quantity demanded at each price level.
 
 
-```{r, out.width="75%"}
+```{r}
 
 maxop <- 90 # Max offering price
 op <- 0:maxop # Offering price ranges from 0 to maxop i.e 0,1, ... 90
@@ -12372,7 +12372,7 @@ Please consider all of the examples in section 15.2-15.3, at least insofar as yo
 
 We see:
 
--  Games where the NE (and indeed the unique rationalisable strategies) defy both intuition and 'actual play in experiments', and where the NE does *not* maximise the player's payoffs \*  -- (Traveler's dillemma, Prisoners' dillemma, price and quantity setting, see also the ['Keynsian Beauty contest'](https://web.stanford.edu/~niederle/GuessingGames.pdf)) ...
+-  Games where the NE (and indeed the unique rationalisable strategies) defy both intuition and 'actual play in experiments', and where the NE does *not* maximise the player's payoffs \*  -- (Traveler's dillemma, Prisoners' dillemma, price and quantity setting, see also the ['Keynsian Beauty contest'](https://web.stanford.edu/~niederle/GuessingGames.pdf) or problem 5 in O-R) ...
 
 <div class="marginnote">
 Although, as I mention elsewhere, in any interactive experiment it is hard to rule out that 'social preferences' may drive the results. We can only control the financial payoffs; we don't know what the "true payoffs" are if players care about other players or about fairness etc.
@@ -12758,6 +12758,56 @@ Order only matters if you observe the earlier action.
 **I will add a great deal of content here.**
 
 ```
+
+# Suggested exercises {-}
+
+## Strategic games
+
+
+Nearly all the exercises are interesting. Some suggestions: 
+
+
+### 1. Centipede game ... {-}
+
+- Note that considering social preferences this is used to consider 'trust and trustworthiness'
+
+- Note that even though this is a sequential game it can be modeled as a strategic game (strategic form)
+
+Hint:
+
+```{block2,  type='fold'}
+
+Let the players’ sets of actions be $A1 = \{1,3,5,...,99,\infty\}$ and $A2 = $\{2,4,6,...,100,\infty\}$, where the action $t4 means stop at period $t$ and the action $\infty$ means "never stop."
+
+```
+
+### 3. War of attrition {-}
+
+
+### 5. Guessing two-thirds of the average {-}
+
+AKA the 'beauty contest'
+
+### 6. "Cheap talk" {-}
+
+Note that 'cheap talk' is a bigger topic in game theory. 
+
+### 8. All pay auction {-}
+
+There has been some literature arguing that such auctions could have certain benefits in fundraising for charity/public goods, at least relative to 'standard charity auctions'. 
+
+### 9. Another version of the location game {-}
+
+This relates to Public Choice and Political Science; see the 'Median Voter Theorem'
+
+
+### 11. Contribution game {-}
+
+Very relevant to public goods, cooperation, and Public Economics 
+
+### 15. Hawk or dove {-}
+
+A model from biology (I think) that is applied widely, e.g., to competition between firms
 
 
 <!--chapter:end:game_theory.Rmd-->
