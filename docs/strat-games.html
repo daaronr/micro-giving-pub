@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>9 Supplement - Behavioural economics: Selected further concepts | Microeconomics (MSc)</title>
+  <title>6 Strategic games | Microeconomics (MSc)</title>
   <meta name="description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
   <meta name="generator" content="bookdown 0.20.3 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="9 Supplement - Behavioural economics: Selected further concepts | Microeconomics (MSc)" />
+  <meta property="og:title" content="6 Strategic games | Microeconomics (MSc)" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="daaronr/micro-giving-pub" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="9 Supplement - Behavioural economics: Selected further concepts | Microeconomics (MSc)" />
+  <meta name="twitter:title" content="6 Strategic games | Microeconomics (MSc)" />
   
   <meta name="twitter:description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="project.html"/>
-<link rel="next" href="supplements.html"/>
+<link rel="prev" href="game-theory.html"/>
+<link rel="next" href="extensive.html"/>
 <script src="book_assets/header-attrs-2.3/header-attrs.js"></script>
 <script src="book_assets/jquery-2.2.3/jquery.min.js"></script>
 <link href="book_assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -610,42 +610,772 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="more_be" class="section level1" number="9">
-<h1><span class="header-section-number">9</span> Supplement - Behavioural economics: Selected further concepts</h1>
+<div id="strat-games" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> Strategic games</h1>
+<div id="elements-of-a-game" class="section level2 unnumbered" number="">
+<h2>Elements of a game</h2>
+<p><strong>A ‘strategic game’</strong> (also called a ‘normal-form game, I believe’) must specify</p>
+<ol style="list-style-type: decimal">
+<li><p>Players,</p></li>
+<li><p>Actions these players may choose, and</p></li>
+<li><p>Payoffs resulting from the combination of players’ choices</p></li>
+</ol>
+<p><em>Important note on interpretation of payoffs/preferences in game theory:</em></p>
 
-<div class="note">
-<p><strong>Note for 2020-2021:</strong> As Exeter has retained the Msc module in Behavioural Economics, this content will not be a core part of the module.</p>
+<div class="fold">
+<p>The ‘utility’ (payoff) to each player arising from the combination of each player’s strategies (and chance) in the game</p>
+<ul>
+<li><p>May include both ‘money earned’ and other considerations; all this is summarised in the payoff numbers</p></li>
+<li><p>The goal of each player is to obtain the largest payoff that she can obtain (not just to ‘win’)</p></li>
+</ul>
+<p>Note: E.g., each player prefers to get 2 in <em>utility</em> and have the other player get 8 than for both to get 1</p>
+<p>Note: In this context it is typically not helpful to complain ‘I don’t think players will maximise their payoffs, because they also care about how others do, etc.’ Whatever it is they care about can be expressed in the theoretical payoffs.<br />
+</p>
+<p>However, these concerns are relevant to experiments that may incorrectly assume participants are maximising only their monetary payoffs.<br />
+</p>
+Also, there are also certain kinds of ‘psychological’ motivations that cannot be modeled in a straightforward way by payoffs. (see ‘psychological games’).
 </div>
-<p>```</p>
-<p>Some simple discussion of key concepts from behavioral economics and from my own research from previous lectures (available within Exeter only)</p>
-<iframe src="https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=fda19d2b-f066-4082-afb5-ab1f00f89315&amp;autoplay=false&amp;offerviewer=true&amp;showtitle=true&amp;showbrand=false&amp;start=0&amp;interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay">
+<center>
+<p>The game of ‘chicken’:</p>
+<p><img src="picsfigs/chicken.png" width="50%" style="display: block; margin: auto;" /></p>
+<iframe width="800" height="600" src="https://www.youtube.com/embed/u7hZ9jKrwvo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
+</center>
+<br />
+
+<div class="inputq">
+<ol style="list-style-type: decimal">
+<li><p><em>Who are the players in Chicken?</em></p></li>
+<li><p>What are the actions (pure strategies) in Chicken?</p></li>
+<li><p>What are the payoffs in Chicken?</p>
+</div></li>
+</ol>
+
+<div class="fold">
+<ol style="list-style-type: decimal">
+<li><p>The north-facing car ‘North’ and 2. the south-facing car ‘South’</p></li>
+<li><p>For both N and S, two actions – Pull-off, Straight.</p></li>
+<li><p>Payoffs are a function of the action profile, discussed below</p>
+</div></li>
+</ol>
+<p><em>Payoffs in ‘Chicken’; what makes a game a ‘game of Chicken?’</em></p>
+<ul>
+<li><p>Both pull-off <span class="math inline">\(\rightarrow\)</span> Tie</p></li>
+<li><p>N Straight, S pulls off <span class="math inline">\(\rightarrow\)</span> N ‘wins’, S ‘loses’</p></li>
+<li><p>N pulls off, S straight <span class="math inline">\(\rightarrow\)</span> N ‘loses’, S ‘wins’</p></li>
+<li><p>Both straight <span class="math inline">\(\rightarrow\)</span> crash</p></li>
+</ul>
 <p><br />
 </p>
-<p>Includes discussion of:</p>
+<p><em>To meaningfully convey this game</em> (at least according to its standard characterization in Economics) payoffs must follow: Win <span class="math inline">\(\succ\)</span> tie <span class="math inline">\(\succ\)</span> lose <span class="math inline">\(\succ\)</span> crash</p>
+<p><br />
+</p>
+<p>Here is an example of payoffs that capture the essential strategic considerations in ‘Chicken’.</p>
+<p><em>Payoffs are written as a matrix below: by convention, the ‘Row’ player’s payoffs are specified first in each cell, followed by the Column player’s payoffs</em></p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Pull off
+</th>
+<th style="text-align:left;">
+Straight
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Pull off
+</td>
+<td style="text-align:left;">
+(0,0)
+</td>
+<td style="text-align:left;">
+(-1,1)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Straight
+</td>
+<td style="text-align:left;">
+(1,-1)
+</td>
+<td style="text-align:left;">
+(-10,-10)
+</td>
+</tr>
+</tbody>
+</table>
+<p>Note that what will matter are the <em>relative payoffs</em> and not the absolute levels… (at least, if we ignore ‘mixed strategies’ for now).</p>
+<p>*For another example of a game or ‘category of 2x2 games’, please see the famous <a href="strat-games.html#pd-normal">Prisoners’ dillemma</a>, depicted below.</p>
+<p><br />
+</p>
+<p><strong>O-R define the strategic game as a formal mathematical object:</strong></p>
+<div class="marginnote">
+<p>Remember that formal mathematical definitions help us avoid ambiguity, and allow us to use the ‘general tools of maths’ to construct proofs. E.g., ‘fixed point theorems’ can be applied to prove the existence of an equilibrium in some cases.</p>
+</div>
+<blockquote>
+<p>A strategic game<span class="math inline">\(\langle N , (A^i)_{i \in N}, (\succsim^i) i \in N \rangle\)</span> consists of</p>
+</blockquote>
+<blockquote>
+<p>players: a set <span class="math inline">\(N = \{1,..., n\}\)</span></p>
+</blockquote>
+<p>(However, we will mostly consider 2-player games)</p>
+<blockquote>
+<p>actions: for each player <span class="math inline">\(i \in N\)</span> , a set <span class="math inline">\(A_i\)</span> of actions</p>
+</blockquote>
+<p>This action set may be discrete (e.g., <span class="math inline">\(A_i = \{Yes. No\}\)</span>) or continuous (e.g., a firm may choose a positive quantity <span class="math inline">\(q\)</span>, so <span class="math inline">\(A_i = q \in R_+\)</span>).</p>
+<p><br />
+</p>
+<blockquote>
+<p>preferences: for each player <span class="math inline">\(i \in N\)</span>, a preference relation <span class="math inline">\(\succsim^i\)</span> over the set <span class="math inline">\(A = \times_{i \in N} A^i\)</span> of action profiles.</p>
+</blockquote>
+<p>I.e., each player has preferences over the ‘outcome’ of the game, the combination of actions chosen by each player (referred to as an ‘action profile’).</p>
+<div class="marginnote">
+<p>I believe the <span class="math inline">\(\times_{i \in N}\)</span> sign represents the ‘Cartesian product’, i.e., the set of all combinations of one of each element.</p>
+<p>Note that preferences are defined <em>directly</em> over the set of action profiles, unlike in market models.</p>
+</div>
+<blockquote>
+<p>A function <span class="math inline">\(u_i : A \righttarrow R\)</span> that represents <span class="math inline">\(\succsim^i\)</span> is a payoff function for player <span class="math inline">\(i\)</span>.</p>
+</blockquote>
+<p><br />
+</p>
+<p>The ‘Strategic game’ form is typically used to depict simultaneous games; where all players make their choice at the same time (or if not at the same time, no players know the choices made by other players when their choices are made), with ‘complete information’ (all players know whom they are playing against, and what these players’ payoffs are.)</p>
+<p><br />
+</p>
+<p>With only two players and a finite number of actions, these games are often displayed using a matrix, such as (again) for the ‘Chicken’ game below.</p>
+<p><br />
+</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-413"></span>
+<img src="picsfigs/chicken-matrix.png" alt="A matrix depicting players actions and payoffs in the Chicken game" width="30%" />
+<p class="caption">
+Figure 6.1: A matrix depicting players actions and payoffs in the Chicken game
+</p>
+</div>
+<p><br />
+</p>
+<p>In contrast, the <em>Extensive game</em> form is typically used to depict a game involving a (finite or infinite) <em>sequence</em> of choices made by players; we will return to this further below. Extensive-form games with a finite number of actions are often depicted using ‘game trees’, as in the ‘simplified ultimatum game’ below.</p>
+<div class="marginnote">
+<p>However, technically both simultaneous and sequential games can be depicted in either strategic form or extensive form. For an example, see the <a href="strat-games.html#pd-normal">prisoners dilemma depiction</a> below.</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-414"></span>
+<img src="picsfigs/ultsimple.png" alt="Game tree - Simplified Ultimatum Game" width="60%" />
+<p class="caption">
+Figure 6.2: Game tree - Simplified Ultimatum Game
+</p>
+</div>
+<p><br />
+</p>
+</div>
+<div id="individual-optimization-considerations-best-responses-rationalizability" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> ‘Individual optimization considerations’; best responses, ‘rationalizability’</h2>
+
+<div class="note">
+<p>Note: O-R jump right into the definition of Nash Equilibrium (NE) at this point. I prefer to first introduce individual optimization and strategic considerations (unfold discussion of why). I introduce these concepts somewhat less formally than the O-R depict NE (but of course we <em>could</em> depict rationalizability more formally; I will give you some ‘taste’ of this).</p>
+<p>In the fold below, I discuss this issue further.</p>
+</div>
+
+<div class="fold">
+<p>Nash Equilibrium (NE) does not automatically arise from players’ optimization (nor from players’ optimization under “common knowledge of rationality” which we will get to soon). Nash Equilibrium (NE) simply represents a “stable point” from which no player would want to ‘deviate unilaterally’; however there multiple equilibria (or no ‘pure strategy equilibrium’), and, particularly in the absence of communication, players may fail to coordinate on an equilibrium. Both may regret their actions, each having thought the other player would have made a different choice.</p>
+<p><br />
+</p>
+<p>I prefer to begin by thinking about each individual player strategic considerations, and then to introduce the idea of ‘Rationalizability’ in a strategic context (calculated through ‘iterated strict dominance’, and potentially justified in a situation of ‘common knowledge of rationality’. There are some connections between NE and Rationalizability; e.g., where there is a unique rationalizable outcome, it also represents a unique Nash Equilibrium. But they are fundamentally different concepts: Rationalizability represents the consequence of players optimizing, while NE simply represents a ‘stable point’.</p>
+<p>In Osborne and Rubinstein’s 1994 text, ‘A Course in Game Theory’, they note:</p>
+<blockquote>
+<p>If the game is a one-shot event in which all players choose their actions simultaneously then it is not clear how each player can know the other players’ equilibrium actions … [as in NE… thus we consider solution concepts] In which players’ believes about each other’s actions are not assume to be correct but are constrained by considerations of rationality…</p>
+</blockquote>
+</div>
+<div id="common-knowledge" class="section level3" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> Common knowledge</h3>
 <ul>
-<li><p><a href="https://recapexeter.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=fda19d2b-f066-4082-afb5-ab1f00f89315&amp;query=game#">Allais Paradox</a> at 12:51</p></li>
-<li><p>A ‘loss vs gain’ framing scenario (Kahneman and Tversky) at about 22:30</p></li>
-<li><p>loss aversion and prospect theory, applied to both of the above scenariae at about 25:00</p></li>
-<li><p>Limited willpower and ‘hyperbolic discounting’ at about 28:15</p></li>
-<li><p>Other-regarding preferences in games at about 30:00</p></li>
-<li><p>My research on ‘barriers to effective giving’ at about 48:00</p></li>
-<li></li>
+<li>What all players know, and</li>
+<li>all players know that all other players know,</li>
+<li>and all players know that all other players know that all other players know,</li>
+<li>and all players know that all other players know that all other players know that all other players know,</li>
 </ul>
-<!-- ## Prospect theory {#prospect}
+<p>etc.</p>
+<p><em>Note:</em> We always assume that the rules of the game are common knowledge.</p>
+<p><br />
+</p>
+<p>Why is common knowledge important?</p>
+<p><img src="picsfigs/blue-eyed.png" style="width:80.0%" /></p>
+<p>Among other things, you may be stuck on an island ‘with 100 blue-eyed people, 100 brown-eyed people, and the Guru’… (unfold if you like puzzles!)</p>
 
-## Time-inconsistent preferences
+<div class="fold">
+<ul>
+<li><a href="https://xkcd.com/blue_eyes.html" title="puzzle">XKCD_link</a></li>
+<li><a href="https://xkcd.com/solution.html" title="solution">XKCD solution link</a></li>
+<li><a href="http://robertheaton.com/2014/01/06/how-to-win-at-dinner-party-the-blue-eyed-islanders/" title="puzzle and solution">Rob Heaton version, more violent</a></li>
+<li><a href="http://ed.ted.com/lessons/the-famously-difficult-green-eyed-logic-puzzle-alex-gendler">Ted-ed video</a></li>
+</ul>
+<p><br />
+</p>
+<p>Warning: this puzzle will do your head in</p>
+<p><br />
+</p>
+<p><br />
+</p>
+<p>There is an island with 1000 people.
+- 100 of them have blue eyes, 900 have brown eyes
+- There are no reflective surfaces</p>
+<p>By custom or law:</p>
+<blockquote>
+<p>He who knows own eye colour must commit suicide the next day in the town square
+No one can discuss another person’s eye colour.</p>
+</blockquote>
+<p>Now an American tourist visits, and says “It’s so nice to see one or more people with blue eyes in this part of the world”.</p>
+<p><br> </p>
+<p>Q: <em>What effect, if any, does this faux pas have on the island?</em></p>
+<p><br> </p>
+<p>Ans: If his statement is ‘common knowledge’ then all 100 blue-eyed people will kill themselves on day 100 after the speech.!</p>
+</div>
+<p><br />
+</p>
+<dl>
+<dt>A’s <em>Best Response</em> (BR) to strategy <em>S</em>:</dt>
+<dd><p>a strategy for player A that gives her the highest payoff of all her possible strategies, given that the other player(s) play <em>S</em></p>
+</dd>
+</dl>
+<p><br />
+</p>
+<div class="marginnote">
+<p>Note: The BR is a function of the others’ strategies <em>S</em>; it may take a different value for each strategy the others play.</p>
+</div>
+<p><br />
+</p>
+</div>
+<div id="dominant-dominated-strategies-and-rationalizability" class="section level3" number="6.1.2">
+<h3><span class="header-section-number">6.1.2</span> Dominant, dominated strategies and rationalizability</h3>
+<div class="marginnote">
+<p>Again, iterated strict dominance and rationalizability are NOT covered in the O-R text, but I want you to learn it. As a prediction it is much easier to justify than Nash Equilibrium.</p>
+</div>
+<p><br> </p>
+<dl>
+<dt>Dominant strategy</dt>
+<dd>A single strategy that is a best response to <em>any</em> of the other player’s strategies.
+</dd>
+</dl>
+<ul>
+<li>A simple prediction: a ‘rational’ player will play a dominant strategy, if she has one.</li>
+</ul>
+<p><br />
+</p>
+<dl>
+<dt>Dominated strategy</dt>
+<dd>Strategy A is dominated by strategy B if B yields higher payoffs for <em>any</em> of the other player’s strategies
+</dd>
+</dl>
+<ul>
+<li>A simple prediction: a rational player will <em>never</em> play a dominated strategy</li>
+</ul>
+<p><em>Why?</em>: because a dominated strategy cannot be optimal for <em>any</em> belief about what the other player(s) will do</p>
+<p><br> </p>
 
--->
+<div class="note">
+<p>With only two strategies to choose among these concepts are the same.</p>
+<p>With more than two, if there is a Dominant strategy this means that all other strategies are dominated by it. We see this in examples below.</p>
+</div>
+<p><br />
+</p>
 
+<div class="inputq">
+<p>What is the prediction of ‘players play dominant strategies’ in the Prisoner’s dilemma"</p>
+</div>
+<p><img src="picsfigs/pd_normal.png" width="55%" style="display: block; margin: auto;" /></p>
+<p>Here it clearly predicts that both will confess. However, in some other games this concept may have no clear prediction.</p>
+<div class="marginnote">
+<p>Food for thought: if a player’s Best response is unaffected by the other player’s best response, is this really a game with “strategic interaction”?</p>
+<p>Perhaps the Prisoner’s Dillemma, arguably the most famous game, and one that dramatically illustrates the potential for group interest to depart from individual interest… is a very boring game; if it’s even meaningfully a game. Whatever you choose has no bearing on whatever my best choice might be!</p>
+</div>
+<p><br />
+</p>
+<p><img src="picsfigs/matrixforISD.png" width="65%" style="display: block; margin: auto;" /></p>
+<div class="inputq">
+<p>What does ‘players play dominant strategies’ predict above? What about ‘players never play dominated strategies’?</p>
+</div>
+<p><br />
+</p>
+</div>
+<div id="rationalisability-iterated-strict-dominance" class="section level3" number="6.1.3">
+<h3><span class="header-section-number">6.1.3</span> Rationalisability/ Iterated strict dominance</h3>
+<p>Extending this …</p>
+<p><strong>Rationality assumption:</strong> the players are rational.</p>
+<p>We know rational players will not play dominated strategies
+The players <em>themselves</em> know this.</p>
+<p><br> </p>
+<p><strong>Common Knowledge of Rationality assumption:</strong></p>
+<p>The players know all other players are rational. The players know all players know all players are rational. The players know (all players know … ad infinitum) all players are rational.</p>
+<ul>
+<li>Thus the players know what the other players will never do, and eliminate these from consideration</li>
+<li>The players will not play a strategy if another strategy is always better against this reduced set of possibilities</li>
+<li>Etc.</li>
+</ul>
+<p>This process is called ‘Iterated Strict Dominance’ (ISD) We will call strategies that survive ISD <strong>‘rationalizable’ strategies</strong>.</p>
+<p>Rationalizability has a somewhat different conceptual justification than ISD, but they are closely related.</p>
+<div class="marginnote">
+<p>There are differences between ‘rationalizable’ and ‘survives ISD’ but for our purposes these are basically the same. At least in a finite strategic game (a finite number of actions), the set of (actions leading to) outcomes that survive ISD is the set of profiles of rationalizable actions.</p>
+</div>
+<p>A formal definition of rationalizability (From O-R 1994, p. 61):</p>
+
+<div class="fold">
+<blockquote>
+<p>An action <span class="math inline">\(a_i \in A_i\)</span> is <em>rationalizable</em> in the strategic game <span class="math inline">\(\langle N, (A_i), (u_i)\rangle\)</span></p>
+</blockquote>
+<p>(this notation is similar to our notation, except that they are using a utility function <span class="math inline">\(u_i\)</span> to depict preferences)</p>
+<blockquote>
+<p>if for each <span class="math inline">\(j \in N\)</span> there is a set <span class="math inline">\(Z_j \subseteq A_j\)</span> such that</p>
+</blockquote>
+<p>(a subset of the action space for <em>each</em> player… think of)</p>
+<blockquote>
+<p><span class="math inline">\(a_i \in Z_i\)</span></p>
+</blockquote>
+<p>(<span class="math inline">\(i\)</span>’s own action is in this set)</p>
+<blockquote>
+<p>[and] every action <span class="math inline">\(a_j \in Z_j\)</span> is a best response to a belief <span class="math inline">\(\mu_j(a_j)\)</span> whose support is a subset of <span class="math inline">\(Z_{-j}\)</span>.</p>
+</blockquote>
+<p>(Every player’s action is a best response to some belief about other players’ actions … where these actions are themselves best responses to some belief about other players’ actions, etc.)</p>
+</div>
+<p><br />
+</p>
+<p>ISD example; may yield a unique prediction:</p>
+<p><img src="picsfigs/matrixforISD.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><img src="picsfigs/isd1.png" width="50%" style="display: block; margin: auto;" /></p>
+<p><img src="picsfigs/isd2.png" width="50%" style="display: block; margin: auto;" /></p>
+<p><img src="picsfigs/isd3.png" width="50%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+<p>However, there may be <em>no</em> dominated strategies, or there may be <em>some</em>, but still ISD may leave many possibilities:</p>
+<p><img src="picsfigs/bossmall.png" width="60%" style="display: block; margin: auto;" /></p>
+<p><br />
+</p>
+</div>
+</div>
+<div id="ne-strategic" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> Nash equilibrium</h2>
+<blockquote>
+<p>according to which a profile of actions is stable if no individual wants to deviate from her action given the other individuals’ actions</p>
+</blockquote>
+<div class="marginnote">
+<p>Compare to ‘market equilibrium’: given the equilibrium price and quantity, no market participant has an incentive to change his or her behaviour.</p>
+</div>
+<p><br> </p>
+<div id="ne-simple-definition-and-discussion" class="section level3" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> NE: Simple definition and discussion</h3>
+
+<div class="note">
+<p>I present a basic undergraduate-level explanation of this here. If this is already familiar an obvious to you, you may skip this and go right to the O-R reading.</p>
+<p>If you are <em>not</em> familiar with this, you may find it helpful to read first before digging into the formal presentation.</p>
+</div>
+<dl>
+<dt>Nash equilibrium (NE)</dt>
+<dd>A set of <em>strategies</em>, one for each player, that are best responses against one another
+</dd>
+</dl>
+<ul>
+<li><p>If I play my BR to your chosen strategy and you’re playing your BR to mine, neither of us has an incentive to deviate — an equilibrium.</p></li>
+<li><p>All games have at least one Nash equilibrium</p>
+<ul>
+<li>But it may be an equilibrium in ‘mixed strategies’ (involving randomisation)</li>
+</ul></li>
+<li><p>Caveat: we might not expect such play to actually occur (particularly not in one-shot games)</p></li>
+</ul>
+<div class="marginnote">
+<p>In fact, two-player games will have an <em>odd</em> number of equilibria, at least if we include ‘mixed strategy Nash Equilibria’; you can see this by looking at the crosses of the BR functions</p>
+</div>
+</div>
+<div id="ne-formal-depiction" class="section level3" number="6.2.2">
+<h3><span class="header-section-number">6.2.2</span> NE: Formal depiction</h3>
+<p>From O-R:</p>
+
+<div class="def">
+<blockquote>
+<p>In a strategic game <span class="math inline">\(\langle N , (A^i)_{i \in N}, (\succsim^i) i \in N \rangle\)</span></p>
+</blockquote>
+<blockquote>
+<p>an action profile <span class="math inline">\(a = (a^i) \in A\)</span></p>
+</blockquote>
+<p>(profile of actions: one action chosen for each player <span class="math inline">\(i\)</span>)</p>
+<blockquote>
+<p>is a Nash equilibrium if for every player <span class="math inline">\(i \in N\)</span> we have</p>
+</blockquote>
+<blockquote>
+<p>$(a^i, a^{−i}) ^i (x^i , a^{−i}) for all <span class="math inline">\(x^i \in A_i\)</span>$</p>
+</blockquote>
+<p><em>Note</em>: <span class="math inline">\(a^{−i}\)</span> denotes ‘the action chosen by all players other than player <span class="math inline">\(i\)</span>’.</p>
+<blockquote>
+<p>where <span class="math inline">\((x^i , a^{−i})\)</span> denotes the action profile that differs from <span class="math inline">\(a\)</span> only in that the action of individual <span class="math inline">\(i\)</span> is <span class="math inline">\(x^i\)</span> rather than <span class="math inline">\(a^i\)</span>.</p>
+</blockquote>
+</div>
+<p>Thus, again, in the above definition,each player’s action in action profile <span class="math inline">\(a\)</span> is a best response to the other players’ actions … because no other choice would make player <span class="math inline">\(i\)</span> better off, given what the others choose.</p>
+<p><br />
+</p>
+<p>O-R similarly define a NE in terms of ‘each player best responding’ … defining $BR(a^{−i}) as “the set of player <span class="math inline">\(i\)</span>’s best responses to <span class="math inline">\(a^{-1}\)</span> and”action profile <span class="math inline">\(a\)</span> is a Nash equilibrium if and only if <span class="math inline">\(a^i \in BR(a^{−i})\)</span> for each player <span class="math inline">\(i\)</span>.</p>
+<p><br />
+</p>
+
+<div class="warning">
+<p>For a NE:</p>
+<ol style="list-style-type: decimal">
+<li><p>These need not be <em>strict</em> best responses; each player may have more than one best response to the other players’ choices in this strategy profile… all that it requires is that <span class="math inline">\(a^i\)</span> is among the best responses.</p></li>
+<li><p>We do not ask ‘If I changed my response and others correspondingly also changd their responses would I be better off’? (That would be closer to the Kantian equilibrium concept discussed in O-R). We just ask “if I change my response can I do better, given what others are doing.” If the answer is ‘no’, then I am best responding. If the answer is ‘no’ for all players, then all are best responding to each other, and this profile is a Nash equilibrium.</p></li>
+<li><p>Remember that a Nash equilibrium is a property of an <em>action profile</em> (or a ‘strategy profile’), with one action or strategy for each player. It is not, strictly speaking, a property of an outcome nor a property of a set of payoffs. We can state “the payoffs consistent with Nash equilibrium are” … But we shouldn’t state “the Nash equilibrium is that each player gets payoffs 10”.</p></li>
+</ol>
+</div>
+<p><br />
+</p>
+</div>
+<div id="note-ne" class="section level3" number="6.2.3">
+<h3><span class="header-section-number">6.2.3</span> Note on O-R characterization of ‘Nash equilibrium’</h3>
+<p>O-R define a “Nash Equilibrium in a strategic game” as involving ‘pure strategies’ only. No player is randomizing.</p>
+<p>Going with this definition, they state:</p>
+<blockquote>
+<p>some strategic games do not have a Nash equilibrium.</p>
+</blockquote>
+<p>This contrasts with the definition I have seen previously. In most text, Nash equilibrium is define to allow either mixed or pure strategies.</p>
+<p><br />
+</p>
+<p>They later define “Mixed strategy equilibrium” and they note (but do not prove here):</p>
+<blockquote>
+<p>every game in which each player’s set of actions is finite has a mixed strategy equilibrium.</p>
+</blockquote>
+<p>As I said, I am more familiar with the definition of NE to include mixed strategies, does the above statement could be modified to be: “every game in which each player’s set of actions is finite has a Nash equilibrium, which may be in mixed strategies”.</p>
+<p>By the way, even among infinite games, a Nash equilibrium (or “mixed strategy equilibrium”) is guaranteed to exist so long as the strategy sets are <a href="http://www-math.mit.edu/~djk/calculus_beginners/chapter16/section02.html">“compact”</a> and the payoff functions are continuous.</p>
+</div>
+</div>
+<div id="examples-of-strategic-games" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> Examples of strategic games</h2>
+<p>Please consider all of the examples in section 15.2-15.3, at least insofar as you find these interesting.</p>
+<p><em>These illustrate an array of interesting and fundamental concepts</em>:</p>
+<p><br />
+</p>
+<p>We see:</p>
+<ul>
+<li>Games where the NE (and indeed the unique rationalisable strategies) defy both intuition and ‘actual play in experiments’, and where the NE does <em>not</em> maximise the player’s payoffs * – (Traveler’s dillemma, Prisoners’ dillemma, price and quantity setting, see also the <a href="https://web.stanford.edu/~niederle/GuessingGames.pdf">‘Keynsian Beauty contest’</a>) …</li>
+</ul>
+<div class="marginnote">
+<p>Although, as I mention elsewhere, in any interactive experiment it is hard to rule out that ‘social preferences’ may drive the results. We can only control the financial payoffs; we don’t know what the “true payoffs” are if players care about other players or about fairness etc.</p>
+</div>
+<ul>
+<li><p>Games with infinite strategy spaces (Traveller’s game, Auctions, Location games, Price and quantity-setting games,… )</p></li>
+<li><p>Finite (matrix) games (Bach or Stravinsky, all the other ones where a matrix is displayed)</p></li>
+<li><p>Coordination games (Bach or Stravinsky, Coordination game)*</p></li>
+<li><p>Anti-coordination games (Odds or evens, Matching pennies)</p></li>
+</ul>
+<div class="marginnote">
+<p>‘Bach or Stravinsky’ is usually called the ‘Battle of the Sexes’, and the choices are ‘Ballet’ (preferred by the ‘Wife’) and ‘Boxing’ (‘Husband’s’ preference). Personally, I find this much easier to remember. If we want to subvert the stereotype here, We could think of the ballet as being extremely violent and the boxing match as a boxing match fought with feathers and balloons.</p>
+</div>
+<ul>
+<li><p>Games where actions are ‘strategic complements’ (e.g., <em>Effort game</em>)</p></li>
+<li><p>Games where actions are ‘strategic substitutes’ (e.g., <em>Cournot quantity-setting game</em>)</p></li>
+</ul>
+<p><br />
+</p>
+<p>These also present strategic insights at the core of several theory-heavy applied fields, such as</p>
+<ul>
+<li><p>Auction Theory: <em>First-price and Second-price auctions</em></p></li>
+<li><p>Industrial Organization (firm strategy and antitrust): <em>Location game</em> (aka ‘Hotelling model’), <em>Quantity-setting</em> (Cournot), <em>Price Setting</em> (Bertrand), War of attrition (presented later)</p></li>
+<li><p>Development economics and the study of cooperation: <em>Effort Game</em>,</p></li>
+</ul>
+<p><em>Other examples are given in the practice problems; these involve legitimately interesting and relevant examples, not simply ‘busy work’</em></p>
+<p><br />
+</p>
+
+<div class="note">
+<p>Note that I skip several sections of O-R here, for time considerations. I skip:</p>
+<ul>
+<li><p>Existence of a Nash equilibrium (see also my note <a href="strat-games.html#note-ne">above</a> on O-R’s unusual terminology). You may nonetheless find this worth reading, particularly if you love maths. The definition and discussion of ‘supermodular games’ is also fairly relevant; it comes up a bit in the literature.</p></li>
+<li><p>Strictly competitive games (i.e., ‘zero sum games’) … have a look at the definition at least</p></li>
+<li><p>Kantian equilibrium (a very interesting non-standard concept!)</p></li>
+</ul>
+</div>
+</div>
+<div id="mixed-strategy-nash-equilibrium-of-strategic-games" class="section level2" number="6.4">
+<h2><span class="header-section-number">6.4</span> Mixed strategy (Nash) equilibrium of strategic games</h2>
+<div id="simple-presentation" class="section level3" number="6.4.1">
+<h3><span class="header-section-number">6.4.1</span> Simple presentation</h3>
+
+<div class="note">
+<p>I present a basic undergraduate-level explanation of this here. If this is already familiar an obvious to you, you may skip this and go right to the O-R discussion of mixed strategy equilibrium. However, if you are <em>not</em> familiar with this, you may find it helpful to read first before digging into the formal presentation.</p>
+</div>
+<p><br />
+</p>
+<p><em>Note</em>: I use the terminology of ‘pure and mixed strategies’ (slightly different from O-R) here</p>
+<dl>
+<dt>Pure strategy</dt>
+<dd>Consists of a single action played with certainty
+</dd>
+</dl>
+<p><br> </p>
+<dl>
+<dt>Mixed strategy</dt>
+<dd>Assigns a probability to each possible action
+</dd>
+</dl>
+<p><br> </p>
+<p><em>Remember: as claimed <a href="strat-games.html#note-ne">above</a>, in finite games (and a wide class of infinite games) there is always at least one NE. If there is no pure strategy NE, there will be a NE in mixed strategies.</em></p>
+<p><br />
+</p>
+</div>
+<div id="matching-pennies-mixed-strategies" class="section level3 unnumbered" number="">
+<h3>Matching pennies: mixed strategies</h3>
+<p><strong>Intuition</strong></p>
+<p>If you choose heads/tails half the time then I’m indifferent between heads or tails. Thus, choosing ‘heads’ half the time is <em>among</em> my best responses.</p>
+<p>If I choose heads half the time then you’re indifferent between heads/tails. Thus choosing heads half the time is <em>among</em> your best responses</p>
+<p>So, technically, each of us choosing heads half the time is a NE.</p>
+<div class="marginnote">
+<p>But it is called a ‘weak’ NE because either of us would do no <em>worse</em> if he deviated alone.</p>
+</div>
+<p><br />
+</p>
+</div>
+<div id="battle-of-sexes-mixed-strategies" class="section level3 unnumbered" number="">
+<h3>Battle of sexes: mixed strategies</h3>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-433"></span>
+<img src="picsfigs/bosmatrix.png" alt="Image source: Nicholson and Snyder" width="70%" />
+<p class="caption">
+Figure 6.3: Image source: Nicholson and Snyder
+</p>
+</div>
+<p><em>Note:</em> Wife wants to end up at the same place as her husband but doesn’t know where he is going.<br />
+</p>
+<ul>
+<li><p>If she believes that he will always go to the ballet she should always go to the ballet.<br />
+</p></li>
+<li><p>If she believes he will always go boxing, she should go boxing.<br />
+</p></li>
+<li><p>What other beliefs may she have?</p></li>
+</ul>
+<p>We want to derive the best response functions, and find the intersection(s) of these.</p>
+<p>Let <span class="math inline">\(h\)</span> represent the probability husband chooses Ballet</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-434"></span>
+<img src="picsfigs/bosmatrix.png" alt="Source: Nicholson and Snyder" width="75%" />
+<p class="caption">
+Figure 6.4: Source: Nicholson and Snyder
+</p>
+</div>
+<p><br />
+</p>
+<p><strong>Wife’s BR:</strong></p>
+<ul>
+<li>Wife chooses Ballet iff her Expected payoff of Ballet &gt; Expected payoff of Boxing</li>
+</ul>
+<p><br> </p>
+<p>I.e., <span class="math inline">\(2h &gt; 1- h\)</span>, i.e, <span class="math inline">\(h &gt; 1/3\)</span></p>
+<p>Thus, wife goes to Ballet if she believes husband goes to Ballet more than 1/3 of the time</p>
+<ul>
+<li><p>If she thinks he goes below 1/3 of the time she goes to Boxing</p></li>
+<li><p>If she thinks he goes <em>exactly</em> 1/3 of the time she is indifferent</p></li>
+</ul>
+<p><br />
+</p>
+<p><img src="picsfigs/wife_br.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><em>Note:</em> This plots the value of w that best responds to h; the probability the wife goes Ballet given the probability the husband goes Boxing.</p>
+<p><br />
+</p>
+<p>Let <span class="math inline">\(w\)</span> denote the probability wife chooses Ballet</p>
+<p><br />
+</p>
+<p><strong>Husband’s BR:</strong></p>
+<p><br> </p>
+<p>Husband chooses Ballet iff his Expected payoff of Ballet &gt; Expected payoff of Boxing</p>
+<p><span class="math display">\[1w &gt; 2- 2w\]</span>, i.e., <span class="math display">\[w &gt; 2/3\]</span> … for these payoffs</p>
+<p>Thus, husband goes to Ballet if he believes wife goes Ballet more than 2/3 of the time</p>
+<ul>
+<li><p>If he thinks she goes less than 2/3 of the time he goes to Boxing</p></li>
+<li><p>If she thinks he goes <em>exactly</em> 2/3 of the time he is indifferent</p></li>
+</ul>
+
+<div class="technote">
+<p>Note that now that we are considering mixed strategies the ratios of the payoffs may matter in computing the equilibrium mixing probabilities, and not only ‘which is larger’. Recall that this also was the case when we considered expected utility over uncertain outcomes.</p>
+</div>
+<p><br />
+</p>
+<p><img src="picsfigs/wh_br.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><img src="picsfigs/bos_3_eq.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><em>Shortcut to computing this:</em> only someone who is indifferent will randomise. (Otherwise they must strictly prefer one or the other action, so ‘mixing these’ cannot be optimal.)</p>
+<p><br />
+</p>
+<p>Above, <span class="math inline">\(h=1/3\)</span> makes wife indifferent, <span class="math inline">\(w=2/3\)</span> makes husband indifferent</p>
+<p><br />
+</p>
+</div>
+<div id="whats-all-this-rot" class="section level3 unnumbered" number="">
+<h3>What’s all this rot?</h3>
+<p>Mixed strategies are not about ‘being unpredictable’, in spite of what some texts say ; these are one-shot games!</p>
+<p><br />
+</p>
+<p>Some texts and authors make this point about ‘unpredictability’ but others disagree (including myself). Making sure that it is impossible to predict your later play from your previous is only important if you are playing the same game repeatedly, and being observed.</p>
+<p><br />
+</p>
+
+<div class="note">
+<p>It makes a bit more sense if we think about ’populations.</p>
+<p>Suppose in a population 1/3 of men go to Ballet and 2/3 of women go to Ballet:
+… these ratios are ‘stable’; no reason for systematic changes.
+On the other hand, if men always went to boxing and women to ballet this is not stable. A husband would be better off going to ballet … so the ratios should change over time.</p>
+<p>This interpretation is presented and defended in more detail in O-R sections 15.7 and 15.8.</p>
+</div>
+<p><br />
+</p>
+</div>
+<div id="computing-payoffs-with-mixing" class="section level3 unnumbered" number="">
+<h3>Computing payoffs with mixing</h3>
+<p>Remember, formally, a NE specifies <em>strategies</em> (strategy ‘profiles’) not payoffs</p>
+<p>In the BOS the pure strategy equilibria were</p>
+<ul>
+<li><ol style="list-style-type: lower-roman">
+<li>Husband: Boxing, Wife: Boxing</li>
+</ol></li>
+<li><ol start="2" style="list-style-type: lower-roman">
+<li>Husband: Ballet, Wife: Ballet</li>
+</ol></li>
+</ul>
+<p><br />
+</p>
+<p>The mixed-strategy NE was:</p>
+<ul>
+<li><ol start="3" style="list-style-type: lower-roman">
+<li>Husband: go Ballet with probability h=1/3, Wife: Go Ballet with prob w=2/3.</li>
+</ol></li>
+</ul>
+<p>The <em>payoffs</em> to these were, respectively</p>
+<ol style="list-style-type: lower-roman">
+<li><p>Husband: 2, Wife: 1</p></li>
+<li><p>Husband: 1, Wife: 2</p></li>
+<li><p>… ??</p></li>
+</ol>
+<p><br />
+</p>
+<p>Payoff to the mixed strategy:</p>
+<p>Payoffs are utilities: thus under the Expected Utility model we sum the utility of each outcome <span class="math inline">\(\times\)</span> probability of that outcome</p>
+<ul>
+<li>Prob(Both go Ballet) = <span class="math inline">\(w \times h = \frac{2}{3} \times \frac{1}{3} = \frac{2}{9}\)</span></li>
+<li>Prob(Both go Boxing) = <span class="math inline">\((1-w)(1-h) = \frac{1}{3} \times \frac{2}{3} = \frac{2}{9}\)</span></li>
+<li>Prob(Wife Ballet, Husband Boxing) = <span class="math inline">\(w(1-h) = \frac{2}{3} \times \frac{2}{3} = \frac{4}{9}\)</span></li>
+<li>Prob(Wife Boxing, Husband Ballet) = <span class="math inline">\((1-w)(h) = \frac{1}{3} \times \frac{1}{3} = \frac{1}{9}\)</span></li>
+</ul>
+<p><br> </p>
+<p>Thus, under the mixed strategy NE play:</p>
+<p><span class="math display">\[U_{husb} =  \frac{2}{9} \times 1 +  \frac{2}{9} \times 2 +  \frac{4}{9} \times 0 + \frac{1}{9} \times 0 = \frac{6}{9} = \frac{2}{3}\]</span>
+<span class="math display">\[U_{wife} = \frac{2}{3}\]</span></p>
+<p>(The wife’s payoffs can be inferred from symmetry of problem, or they can be similarly calculated.)</p>
+<p><br />
+</p>
+</div>
+<div id="formal-mix" class="section level3" number="6.4.2">
+<h3><span class="header-section-number">6.4.2</span> More formal presentation</h3>
+<div class="marginnote">
+<p>I will add some discussion here.</p>
+</div>
+</div>
+<div id="example-war-of-attrition" class="section level3 unnumbered" number="">
+<h3>Example: War of attrition</h3>
+<p>This is a very important concept across a wide range of domains from biology to business strategy to law and politics.</p>
+<div class="marginnote">
+<p>I will add some discussion here.</p>
+</div>
+</div>
+</div>
+<div id="pd-normal" class="section level2" number="6.5">
+<h2><span class="header-section-number">6.5</span> Supplement: Prisoners’ Dillemma in Normal and extensive form</h2>
+<p><em>The original story</em>:</p>
+<blockquote>
+<p>Two individuals are arrested for a crime. They both know that they can only be convicted for a lesser crime, for which they get 2 years in jail. DA (Chief Crown Prosecutor) puts them in separate rooms and offers each the same deal. If you confess and your partner stays quiet you will only get 1 year in jail and they will get 10 years.</p>
+</blockquote>
+<p>If you both confess you will each get 3 years.</p>
+<p><br />
+</p>
+<p>What would you do? What would most people do? What does game theory predict?</p>
+<p><br> </p>
+<p>Which <em>outcome</em> is <em>definitely NOT</em> Pareto-optimal (for the prisoners)?</p>
+<div class="marginnote">
+<p>Image source: Nicholson and Snyder, 2012</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-440"></span>
+<img src="picsfigs/pd_normal.png" alt="Prisoners dillemma -- one set of payoffs" width="65%" />
+<p class="caption">
+Figure 6.5: Prisoners dillemma – one set of payoffs
+</p>
+</div>
+<ul>
+<li><p>Normal form payoff matrix (also called ‘matrix form’)</p></li>
+<li><p>Payoff convention: listed in the order (row’s payoffs, column’s payoffs)</p></li>
+</ul>
+<p><br> </p>
+<p><strong>A Prisoner’s Dilemma be like</strong> *</p>
+<div class="marginnote">
+<p>* Note to non-native-English speakers… I am shamelessly pandering to the youth here by trying to use their jargon. ‘Be like’ is not proper usage in the Queen’s English.</p>
+</div>
+<p>Two Players: (A and B, row and column, whatever)</p>
+<p>Strategies (Actions): ‘Cooperate’ (C) or defect (D)</p>
+<p>In normal form:</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Cooperate
+</th>
+<th style="text-align:left;">
+Defect
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Cooperate
+</td>
+<td style="text-align:left;">
+(R,R)
+</td>
+<td style="text-align:left;">
+(S,T)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Defect
+</td>
+<td style="text-align:left;">
+(T,S)
+</td>
+<td style="text-align:left;">
+(P,P)
+</td>
+</tr>
+</tbody>
+</table>
+<p>To be a prisoner’s dilemma game the payoffs must satisfy <span class="math inline">\(T &gt; R &gt; P &gt; S\)</span></p>
+<p>I.e., Temptation <span class="math inline">\(&gt;\)</span> Reward <span class="math inline">\(&gt;\)</span> Punishment <span class="math inline">\(&gt;\)</span> Sucker</p>
+<p><br />
+</p>
+<div id="pd-extensive" class="section level3" number="6.5.1">
+<h3><span class="header-section-number">6.5.1</span> The Prisoners’ Dilemma: Extensive form</h3>
+<p>We can depict the same game in another format which we call the ‘extensive form’:</p>
+<p><img src="picsfigs/pd_extensive.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><br />
+Above: the oval (usually this is given as dashed lines) depict the ‘information set’/</p>
+<p>Sequential moves games <em>without</em> knowledge of previous moves are essentially equivalent to simultaneous move games.
+Here, B may ‘move second’ but he doesn’t know A’s move (in the graphic above, he doesn’t know “which side he is on”), so it’s as if this is simultaneous.</p>
+<p><br />
+</p>
+<p>Order only matters if you observe the earlier action.</p>
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="project.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="supplements.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="game-theory.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="extensive.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="book_assets/gitbook-2.6.7/js/app.min.js"></script>
