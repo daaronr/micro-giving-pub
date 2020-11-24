@@ -220,7 +220,7 @@ These make Game Theoretic predictions difficult.
 
 3. Payoffs resulting from the combination of players' choices
 
-*Important note on interpretation of payoffs/preferences in game theory:*
+*Important note on interpretation of payoffs/preferences in game theory (unfold):*
 
 ```{block2,  type='fold'}
 
@@ -242,9 +242,11 @@ Also, there are also certain kinds of 'psychological' motivations that cannot be
 ```
 
 
+\
+
 <center>
 
-The game of 'chicken':
+**The game of 'chicken':**
 
 
 ```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
@@ -273,6 +275,8 @@ The game of 'chicken':
 
 3. Payoffs are a function of the action profile, discussed below
 ```
+
+\
 
 *Payoffs in 'Chicken'; what makes a game a 'game of Chicken?'*
 
@@ -328,8 +332,10 @@ payoff.mat %>% kable() %>% kable_styling()
 
 Note that what will matter are the *relative payoffs* and not the absolute levels... (at least, if we ignore 'mixed strategies' for now).
 
-*For another example of a game or 'category of 2x2 games', please see the famous [Prisoners' dillemma](#pd-normal), depicted below.
-
+<div class="marginnote">
+For another example of a game or 'category of 2x2 games', please see the famous [Prisoners' dillemma](#pd-normal), depicted below.
+</div>
+ 
 
 \
 
@@ -343,7 +349,7 @@ Remember that formal mathematical definitions help us avoid ambiguity, and allow
 </div>
 
 
-> A strategic game$\langle N , (A^i)_{i \in N}, (\succsim^i) i \in N \rangle$ consists of
+> A strategic game$\langle N , (A^i)_{i \in N}, (\succsim^i)_{i \in N} \rangle$ consists of
 
 > players: a set $N = \{1,..., n\}$
 
@@ -366,7 +372,7 @@ Note that preferences are defined *directly* over the set of action profiles, un
 </div>
 
 
-> A function $u_i : A \righttarrow  R$ that represents $\succsim^i$  is a payoff function for player $i$.
+> A function $u_i : A \rightarrow  R$ that represents $\succsim^i$  is a payoff function for player $i$.
 
 \
 
@@ -378,7 +384,7 @@ With only two players and a finite number of actions, these games are often disp
 
 \
 
-```{r  fig.cap = 'A matrix depicting players actions and payoffs in the Chicken game', out.width='30%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = 'A matrix depicting players actions and payoffs in the Chicken game', out.width='60%', fig.asp=.6, fig.align='center',  echo = FALSE}
 
  knitr::include_graphics("picsfigs/chicken-matrix.png")
 
@@ -661,7 +667,7 @@ ISD example; may yield a unique prediction:
 
 However, there may be *no* dominated strategies, or there may be *some*, but still ISD may leave many possibilities:
 
-```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  fig.cap = '', out.width='40%', fig.asp=.3, fig.align='center',  echo = FALSE}
  knitr::include_graphics(file.path("picsfigs","bossmall.png"))
 ```
 
@@ -715,7 +721,7 @@ From O-R:
 
 ```{block2,  type='def'}
 
-> In a strategic game $\langle N , (A^i)_{i \in N}, (\succsim^i) i \in N \rangle$
+> In a strategic game $\langle N , (A^i)_{i \in N}, (\succsim^i)_{i \in N} \rangle$
 
 > an action profile $a = (a^i) \in A$
 
@@ -985,7 +991,6 @@ Above, $h=1/3$ makes wife indifferent, $w=2/3$ makes husband indifferent
 
 \
 
-
 ### What's all this rot? {-}
 
 Mixed strategies are not about 'being unpredictable', in spite of what some texts say ; these are one-shot games!
@@ -1058,21 +1063,93 @@ $$U_{wife} = \frac{2}{3}$$
 \
 
 
-### More formal presentation {#formal-mix}
+### Mixed Strategy: More formal presentation {#formal-mix}
+
+
+*I love O-R's motivation for this* ... it makes a lot more sense than the usual characterisation of mixing (as well as for Nash Equilibrium)
+
+Considering (e.g.) the Matching Pennies game (look it up to get this in your head)...
+
+> from time to time, an individual is drawn randomly from each population and these two individuals play the game. 
+
+Some share of individuals in each population choose each action. 
+
+> We are interested in steady states in which each individual’s belief
+about the distribution of actions in the other population is correct (perhaps because of his long experience playing the game) and each individual chooses his best action given these beliefs.
+
+Note...\*
+
+<div class="marginnote">
+ 
+\* But note this need not be a 'strictly' best action ... there may be a tie. In fact, in any 'Mixed strategy equilibrium', all players who are mixing (equivalently, all 'populations in a certain role' where some share of the population chooses a certain action) ... each player must be *indifferent* between the actions she mixes among, given what other players are doing.
+</div>
+
+
+If the game has no (pure strategy) NE then "no configuration of choices in which all members of each population choose the same action is stable".
+
+In 'Matching Pennies', if exactly half of all players in the population (on either side ... the game is symmetric) play 'Heads' this is "stable"; no player can do any better by changing her choice.\*
+
+\
+
+Formally (O-R definition)
+
+```{block2,  type='def'}
+
+> Given a strategic game ... a *mixed strategy* for player $i$ is
+a probability distribution over $A_i$.
+
+
+> A mixed strategy $\alpha_i$ that is concentrated on one action (i.e. $\alpha^i(a^i) = 1$ for some $a^i \in A^i$) is a *pure strategy*
+
+```  
+
+With countable actions a mixed strategy $\alpha_i$ of player $i$ assigns a probability $\alpha^i(a^i)$ to each possible action.  O-R's preferred interpretation ... "$\alpha^i(a^i)$ as the proportion of population $i$ that chooses the action $a_i$."
+
+\
+
+O-R point out that the standard interpretation of this involves EU preferences. Thus
+
+> we specify the preferences of each player $i$ in a strategic game by giving a Bernoulli function $u_i$ whose expected value represents the player’s preferences over lotteries over action profiles...
+
+
+
+\
+
+To avoid the use of integrals, O-R define the *mixed strategy equilibrium* here for finite or countably infinite games only:
+
+```{block2,  type='def'}
+
+> Let  $G = \langle N, (A^i)_{i \in N}, (u^i) i \in N \rangle$ ... 
+
+> a  profile $(\alpha^i$)_{i \in N} 
+  
+(Remember -- this assigns a probability to each action ... for each player)
+
+> is a *mixed strategy equilibrium* of $G$ if ... [for every player and every action $a_i$ assigned positive probability] 
+
+> $i$’s expected payoff...  from $a_i$ given $\alpha^{−i}$
+
+(rem: $\alpha^{−i}$ is the strategy of all other players)
+
+> is at least as high as his expected payoff from $x_i$ given \alpha^{-i}  for any $x^i \in A^i$. 
+
+```  
+
+... so every action played with positive probability in a *mixed strategy equilibrium* must be at least as good as any other action given the actions of others.  This also accords with the 'population interpretation': every individual in the population must be happy with her action choice.
+
+\
+
+
+### Example: War of attrition \* {-}
 
 
 <div class="marginnote">
 I will add some discussion here.
 </div>
- 
-
-### Example: War of attrition {-}
 
 This is a very important concept across a wide range of domains from biology to business strategy to law and politics.
 
-<div class="marginnote">
-I will add some discussion here.
-</div>
+\
 
 
 ## Supplement: Prisoners’ Dillemma in Normal and extensive form {#pd-normal}
@@ -1159,7 +1236,7 @@ We can depict the same game in another format which we call the 'extensive form'
 \
 Above: the oval (usually this is given as dashed lines) depict the  'information set'/
 
-Sequential moves games *without* knowledge of previous moves are essentially equivalent to simultaneous move games.
+Sequential move games *without* knowledge of previous moves are essentially equivalent to simultaneous move games.
 Here, B may 'move second' but he doesn't know A's move (in the graphic above, he doesn't know "which side he is on"), so it's as if this is simultaneous.
 
 \
@@ -1177,13 +1254,11 @@ Order only matters if you observe the earlier action.
 
 ```
 
-# Suggested exercises {-}
+# Suggested exercises {-#gt_strat_ex}
 
 ## Strategic games
 
-
 Nearly all the exercises are interesting. Some suggestions: 
-
 
 ### 1. Centipede game ... {-}
 
@@ -1195,12 +1270,11 @@ Hint:
 
 ```{block2,  type='fold'}
 
-Let the players’ sets of actions be $A1 = \{1,3,5,...,99,\infty\}$ and $A2 = $\{2,4,6,...,100,\infty\}$, where the action $t4 means stop at period $t$ and the action $\infty$ means "never stop."
+Let the players’ sets of actions be $A1 = \{1,3,5,...,99,\infty\}$ and $A2 = $\{2,4,6,...,100,\infty\}$, where the action $t$ means stop at period $t$ and the action $\infty$ means "never stop."
 
 ```
 
 ### 3. War of attrition {-}
-
 
 ### 5. Guessing two-thirds of the average {-}
 
@@ -1208,7 +1282,7 @@ AKA the 'beauty contest'
 
 ### 6. "Cheap talk" {-}
 
-Note that 'cheap talk' is a bigger topic in game theory. 
+Note that 'cheap talk' is a big topic in game theory. 
 
 ### 8. All pay auction {-}
 
@@ -1217,7 +1291,6 @@ There has been some literature arguing that such auctions could have certain ben
 ### 9. Another version of the location game {-}
 
 This relates to Public Choice and Political Science; see the 'Median Voter Theorem'
-
 
 ### 11. Contribution game {-}
 
