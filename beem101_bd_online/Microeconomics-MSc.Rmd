@@ -89,7 +89,6 @@ library(grid)
 ```
 
 ```{r, include=FALSE}
-
 #install.packages("webshot")
 
 webshot::install_phantomjs()
@@ -11269,7 +11268,7 @@ Quite a distortion in this example!
 
 
 
-## How do firms *actually* price? (this section is a work in progress)
+## How do firms *actually* price? (this section is a work in progress) {#actual-pricing}
 
 
 *Some resources:*
@@ -12588,6 +12587,16 @@ Above, $h=1/3$ makes wife indifferent, $w=2/3$ makes husband indifferent
 
 ### What's all this rot? {-}
 
+Do people really "randomize their choices"?
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.5, fig.align='center',  echo = FALSE}
+ knitr::include_graphics("picsfigs/doctors_mixing_cartoon.png")
+```
+
+
+\
+
+
 Mixed strategies are not about 'being unpredictable', in spite of what some texts say ; these are one-shot games!
 
 \
@@ -12841,13 +12850,290 @@ Order only matters if you observe the earlier action.
 # Extensive form games (and sequential games) {#extensive}
 
 
+Any game can be modeled as either a Strategic (AKA 'normal form') game or as an *Extensive Game* (AKA 'Extensive Form'). A key difference: in Strategic games we simply consider a set of actions or strategies, while in Extensive games we map  a "history", and we may consider the "sub-games" starting at any point in this history.
+
+For situations that occur with sequential moves over time, where players alternate making choices, it may be simplest to depict these using a "game tree" such as the one below for the 'entry game' (formally an 'arborescence' with 'nodes and branches') and simpler to think of these as extensive form games.
+
+\
+
+<center>
+
+![Entry game](picsfigs/entry_game_tree.png){ width=50% }
+</center>
+
+
+*Note: Game trees can also depict simultaneous choices or a mix of simultaneous and sequential choices.*:
+
+
+```{block2,  type='fold'}
+
+The sequentiality of the choice only matters if the later mover is observing the previous decision. Thus, we can depict an "as if simultaneous" choice  by "connecting the information set" in a game tree.
+
+See, for example, the 'Rock paper scissors' (anticoordination) simultaneous game below:
+    
+![rocks-paper-scissors](picsfigs/rps_extensive.png)
+
+
+The dashed line indicates 'at the  time that player to his choosing rocks paper or scissors, she does not know whether player one has chosen rocks paper or scissors'). 
+
+```
+
+ 
+
+
+<!-- Add: example of a  complicated sequential game  depicted in a matrix -->
+\
+
+So, we can depict games in either format: the Strategic form (which we formally defined in the last section) or the Extensive form, as is convenient.\*
+
+<div class="marginnote">
+\* Note that it is easy to depict and to analyze most extensive form games with a game tree  and concepts such as "backwards induction".  However the formal representation of extensive form games is somewhat cumbersome, but we nonetheless introduce it below,  along with formal concepts such as subgame perfection.
+</div>
+
+
+However there is an important difference in the analysis of extensive form and strategic games. Some strategies may prescribes actions that may be optimal responses to another player's strategy if we 'start from the beginning' (or from an earlier stage of the game); however, if we were to actually reach the part of the game that prescribes such an action,  the action would no longer be optimal.  we may want to rule out such strategies involving "incredible threats" or "time inconsistent behavior". The Strategic form does not consider the sequence of the game, so it cannot address this; here we need the Extensive Form. 
+
+<div class="marginnote">
+
+There may be other important differences in the analysis of the Extensive vs. Strategic representations of the games.  The Extensive form also makes it easier to consider imperfect and incomplete information; where earlier actions are not observed by later players, and where there are random components to payoffs.
+
+\
+
+The Extensive form (and tree depiction)  did make it convenient for me to consider the 'information sets at the end of the game'  and to depict payoffs adjusted for 'Losing Face' in a fancy game where  payoffs depend on information sets themselves. [@gallLosingFace2020]
+
+</div>
+ 
+```{block2,  type='note'}
+
+O-R depict extensive games and subgame perfection (subgame perfect equilibrium) rather formally, with somewhat cumbersome notation.   We will cover most of this [below](#ext-formal).
+    
+ aBut first, I present a simple depiction.
+
+```  
+ 
+ 
+## Extensive form and subgame perfection: simple depiction
+ 
+How does the Battle of Sexes game change if Wife chooses first, Husband observes her choice, and then he chooses
+
+```{block2,  type='inputq'} 
+
+What do you think will happen? 
+
+- A. Wife: Ballet, Husband: Box
+- B. Wife: Ballet, Husband: Ballet
+- C. Wife: Box, Husband: Ballet
+- D. Wife: Box, Husband: Box
+
+```
+
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+knitr::include_graphics(file.path("picsfigs","BOS_sequential.png"))
+```
+
+*Remember, it's a one-shot game ... unrealistic within a marriage of course*
+
+
+- The wife has two strategies: Ballet or Boxing
+- The husband has four contingent strategies, but we focus on what he will do in each of his two possible 'decision nodes'
+
+
+*Here we see there is a 'first-mover advantage'.* (Unfold)
+
+```{block2,  type='fold'}
+
+It is better to be the first-mover than the second mover in such a game. If we switched the order, the wife would likely become better off and the husband worse off. 
+ 
+We see a very similar strategic concern in other contexts, including 'which firm enters a market first'. Suppose that if two firms are in a market there will be a price war with consumers as well as a bidding up of input prices and salaries,  and both will lose money. Perhaps by being the first firm to enter I 'scare off the other firm' and I can keep the profits. The other firm may 'threaten to enter' but that would seem to be a non-credible threat! On the other hand, suppose that I know that if I enter first the other firm can 'learn from my mistakes' and free-ride off my innovation. Here we would have a 'second-mover advantage'; but in such a game a BWI may lead to the outcome 'neither firm enters'!
+
+```
+
+\
+
+These concerns also apply to politics, and the games can of course include multiple players ... 
+
+```{block2,  type='inputq'}
+Can you think of some examples? 
+
+```  
+
+```{block2,  type='fold'}
+
+Some example from  2018... can you think of comparable examples from today?
+
+- Cameron's decision to allow a referendum, followed by politician's (Boris etc) decisions to choose a side?
+
+- May's negotiations with the EU (Barnier), followed by the parliament's 'meaningful vote', followed by ??
+
+- US Supreme court fight over Brett Kavanaugh, the sequential decisions of the last 'swing' senators
+
+-  [UCU decision to declare and continue a strike, USS decision to award pay increases commensurate with inflation](https://exeterucu.wordpress.com/2019/10/26/strike-ballots-letter-to-students/)
+
+```
+
+\
+
+
+
+Proper subgame (informal definition)
+
+:     Part of the game tree including an initial decision not connected to another (in an oval or dashed lines) and everything branching out below it.
+
+- I.e., each 'game' starting from a point where a player knows where he is (knows previous choices).\*
+
+<div class="marginnote">
+
+As noted earlier, if we want to consider imperfect information we may want to consider 'informations sets', and we can connect several nodes to indicate 'the player doesn't know at which node she is, because she doesn't know what the previous player(s) did
+
+</div>
+ 
+
 
 ```{block2,  type='note'}
 
-
-**I will add a great deal of content here.**
+We can derive the *outcomes consistent with* SPNE via backwards induction. Essentially, SPNE simply requires that each players (choose strategies that specify) would act optimally at each of the point they might find themselves... i.e., at each of the decision nodes in the extensive form 'game tree.'
 
 ```
+
+\
+
+
+Subgame-Perfect Nash Equilibrium (SPNE)
+:     Strategies that form a Nash equilibrium on every proper subgame.
+
+You can solve for the *outcomes consistent with this with 'backwards induction' (BWI)
+
+Solve for best move for last decision node (proper subgame)
+
+- Given these, solve for best response for previous decision node
+
+- Etc.
+
+\
+
+Example: BWI for *Sequential* Battle of the Sexes
+
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","bosbwi1.png"))
+```
+
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","bosbwi2.png"))
+```
+
+Note that the SPNE in a sequential game always involves 'best responses'. I think this makes SPNE more credible as a prediction in sequential games than "NE in simultaneous games", as we don't require coordination.
+
+
+\
+
+```{r  fig.cap = '', out.width='45%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","bosbwi1.png"))
+```
+\
+
+*Next we can formally the specify (SP)NE strategies for the above game:*
+
+NE, not SP: \{Wife: Boxing; Husband: Boxing, Boxing\}
+
+\
+
+SPNE:  \{Wife: Ballet; Husband: Ballet, Boxing\}
+
+
+*(reading Husband's decision nodes left to right; please specify this)*
+
+
+\
+
+
+**It can get fancier**
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","longgamework_randompayoffs_noul.png"))
+```
+
+
+<div class="marginnote">
+ 
+*Note: you can 'build these games' at this on \url{http://gte.csc.liv.ac.uk/gte/builder/} if you like*
+
+</div>
+
+
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","longgamework_randompayoffs_ul.png"))
+```
+
+\
+
+In 'normal' (matrix form), stating complete contingent strategies:
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
+ knitr::include_graphics(file.path("picsfigs","longgame_matrix_full.png"))
+
+```
+
+
+<br> \bigskip
+
+And the 'abbreviated strategies'; leaving out decision nodes ruled out by a player's own previous choices as specified in the strategy:
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","longgame_matrix_abbrev.png"))
+```
+
+
+\
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","longgamework_randompayoffs_ul.png"))
+```
+
+The SPNE; 'state the complete contingent strategies'
+
+A: S1, N3, N5
+
+B: s2, n4, n6
+
+<br> \bigskip
+
+
+Where actions are stated in the order of the decision nodes for each player.
+
+
+```{r, out.width='50%'}
+
+knitr::include_url("http://gte.csc.liv.ac.uk/gte/builder/")
+
+```
+
+
+## Extensive  games and Subgame perfect equilibrium (formal, following O-R) {#ext-formal}
+ 
+```{block2,  type='note'}
+
+
+**I will add a more content here.**
+
+```
+
+
+
+# Incomplete/Imperfect information (time permitting)
+
+## Bayesian games (incomplete information) 
+
+E.g., fighting an opponent of unknown strength
+
+## Extensive Games with Imperfect information
+
+### Most famous case: (Spence) signaling model
+
 
 # Suggested exercises {-#gt_strat_ex}
 
@@ -12903,9 +13189,42 @@ Very relevant to public goods, cooperation, and Public Economics
 A model from biology (I think) that is applied widely, e.g., to competition between firms
 
 
+## Extensive games 
+
+### OR-1: Trust game {-}
+
+<div class="marginnote">
+This setup is used (even more often than Centipede) in the social preferences literature to measure 'trust and trustworthiness'. But note that the payoffs in a game we model should *include* any social preferences (unlike you are asked to do in this problem).
+
+</div>
+
+### OR-4: Comparative statics {-}
+
+### OR-5:  Auctions {-}
+
+### OR-6: Solomon's mechanism {-}
+
+<div class="marginnote">
+
+This relates a bit to the field of 'mechanism design'... we see this procedure didn't require King Solomon to even *know* which player was the 'true owner'... thus this 'works' even under asymmetric information.  
+
+</div>
+
+### OR-8: Race {-}
+
+### OR-10: Implementation {-}
+
+<div class="marginnote">
+Again, this touches on 'mechanism design'
+</div>
+ 
+
+ 
+ 
+
 <!--chapter:end:game_theory.Rmd-->
 
-# Beem101: Project, discussion of research {#project}
+# Beem101: Project, discussion of research {-#project}
 
 
 ```{block2,  type='note'}
@@ -12950,7 +13269,7 @@ The project must *not* principally involve material covered in the midterm (and 
 
 **Rules and dates (for Autumn 2020 Exeter students)**
 
-To be submitted by `r format_with_col("11 January", "red")`   (this is subject to confirmation)
+To be submitted by `r format_with_col("11 January", "red")`  
 
 - Written length: approximately 8-12 pages, 5000-7000 words; for group projects add 5 additional pages to the maximum per additional member of the group, up to 30 pages for a four member group.
 
@@ -13002,10 +13321,67 @@ One possible (approximate) structure for this project:
 
 8. What are some limitations of your model? How may they affect your results?
 
+\
+
+Some projects that I somwhat randomly found on the web that are sort-of like what I have in mind (but usually these are whole theses, much more than I'm expecting from you here):
+
+```{block2,  type='fold'}
+
+[Mixed Strategy Equilibrium in Tennis Serves](https://econ.duke.edu/sites/econ.duke.edu/files/file-attachments/Wiles%2C%20Joel%20-%20Honors%20Thesis.pdf) -- This is a whole undergraduate dissertation. Much more than you are expected to do for this assignment. But your assignment could resemble some parts of his literature survey plus some parts of the simple model that he presents before doing the empirical analysis.  (And I like the close connection between theory and empirics here, and the way he shows a strong grasp of the literature!)
+
+
+\
+
+[In this honors undergraduate thesis](https://web.archive.org/web/20150828040526/http://economics.stanford.edu/files/Theses/CasatrinaLeeHonorsThesis-May2014.pdf) the comparison of the 'Lojack' and 'Cybersecurity model' seems interesting and well-explained, fairly straightforward, and not too mathematically intricate.  
+\
+
+
+[The Price of Anarchy in Network Creation
+Games Is (Mostly) Constant](http://www.cs.tau.ac.il/~fiat/cgt12/GameTheoryProject.ItzikMalkiel.pdf) -- I'm not familiar with the content. The maths is  more advanced than I'm expecting (these seem to be maths students), and the description is not as complete as I'd like.  But the length and coverage are sort of in the right direction.
+
+
+
+
+```
+
+
+\
+
+Some references that may be helpful:
+
+```{block2,  type='fold'}
+
+Jog your mind ... think of [films](https://www.gametheory.net/popular/film.html)
+
+
+
+```
+
+
 
 ## Option 2: Asymmetric information/agency theory/mechanism design: Characterization and analysis of a real-world situation/problem/issue
 
 (As in option one, but for principle-agent models/mechanisms (see, e.g., the supplement on [asymmetric information](#asymmetric)); this usually implies a 'contracting' situation.)
+
+\
+
+Some projects that are a bit relevant (see above caveats)
+
+```{block2,  type='fold'}
+ 
+[Deterring Inefficient Gambling in Risk-Taking
+Agents](https://sites.duke.edu/econhonors/files/2015/06/Ryan-Westphal.pdf): the model in section 3 is a much more ambitious version of what I would love to see here. 
+
+\
+
+[Incentive Programs for Neglected Diseases](https://sites.duke.edu/econhonors/files/2020/05/ganapathy2020.pdf) - much more intricate than I'm expecting from you. But the modeling of the payoffs is rather nice and straightforward. 
+
+
+```
+
+
+
+
 
 ## Option 3: Application of economic theory to (observational) empirical work (econometric/statistical analysis)
 
@@ -13013,7 +13389,7 @@ Econometricians collect and use data, and seek to 'identify' particular paramete
 
 Consider a *particular* empirical question or policy issue (in Economics or an adjacent area). Conduct a brief survey to identify and characterise the work that has been done in this area. (But please do not go into too much detail in writing about this, if it does not relate to microeconomic theory). You may want to focus on a small number of papers.
 
-Explain how microeconomic theory *influences* the statistical/econometric framing and analysis of this question, and the interpretation of the results. What theoretical models (e.g., of consumer and firm choices, government policy goals, strategic interactions, asymmetric information, institutions and market structures) do they use to 'motivate' their question and justify their empirical econometric approach. Specify and explain these models carefully. Consider how these inform the authors empirical analysis. (E.g., the authors may justify their analysis by stating 'this technique identifies the following parameter under the assumptions of the So-and-so model'.)
+Explain how microeconomic theory *influences* the statistical/econometric framing and analysis of this question, and the interpretation of the results. What theoretical models (e.g., of consumer and firm choices, government policy goals, strategic interactions, asymmetric information, institutions and market structures) do they use to 'motivate' their question and justify their empirical econometric approach. Specify and explain these models carefully. Consider how these inform the authors empirical analysis. (E.g., the authors may justify their analysis by stating 'this technique identifies the following parameter under the assumptions of the so-and-so model'.)
 
 Explain and critique the authors' claims and justifications. If possible, consider the *difference* between the approaches of several authors, contrasting and evaluating their claims and arguments.\*
 
@@ -13025,9 +13401,64 @@ If you like, you can use this as an opportunity to propose and present your *own
 
 Please consider a question or issue in microeconomics that may be addressed through the use of an experiment, whether a laboratory or field experiment. Find several papers that attempt to do this. Explain how their designs reflect economic theory and assumptions, presenting and explaining the relevant economic theory and models. Comparing these papers, discuss the relative strengths and weaknesses of their designs in providing evidence on the question of interest. If you like, you may propose and make a case for an alternative experimental design or approach.
 
+
+```{block2,  type='fold'}
+
+[This undergraduate thesis](https://web.archive.org/web/20150828040623/http://economics.stanford.edu/files/RobertCortesHonorsThesis-June2013.pdf) does a great job of:
+  
+1.. Explaining the Allais paradox and the alternatives to EU theory that may explain such behavior
+2. Discussing the prior evidence on this
+3 Proposing (and running) an experiment measuring how whether decisions in pairs are less likely to make choices in line with this paradox 
+  
+The student engages and discusses the theory very well. Again, I'm not asking you to write a thesis but if you can do any of the above three components in a reasonable way (for your chosen question), that would be great.
+
+  
+```
+
+\
+
+Some potentially helpful references:
+
+```{block2,  type='fold'}
+
+[@lonnqvistMeasuringIndividualRisk2015; @sitziaImplementingTheoreticalModels2011; @wolbertMeasuringTimeRisk2013]
+
+
+Goeree and Holt: "Ten Little Treasures of Game Theory and Ten Intuitive Contradictions"
+
+\
+
+"Psychology and economics: evidence from the field"
+
+\
+
+"Handbook of experimental economics" (various editions)
+
+[@cooperOtherRegardingPreferences2009]
+
+"Handbook of experimental economic results"
+
+```
+
+
 ## Option 5: Explanation of another 'advanced concept' in Microeconomic theory (not covered in midterm), application to a real-world situation/problem/issue (or a deep theoretical question involving human values and behavior)
 
 In the notes and readings I mention 'enrichment' and 'advanced' concepts. If you choose this option, your project should explore one of these concepts further. For the concept you choose, please present the formal models clearly and explain these 'in your own words'. Discuss the insights these models provide. Discuss the differing approaches and 'controversies' surrounding these models. Provide and explain an example of how this concept applies (and perhaps 'how it has been applied by researchers') to either a  real-world situation/problem/issue, or to a 'deep question informing our understanding of human values and behavior, and aggregate social and market outcomes'.
+
+
+```{block2,  type='hint'}
+
+One model for writing this: try to emulate one of the more in-depth Wikipedia articles. (But don't choose a concept that already *has* a good Wikipedia article)
+
+```  
+
+## Option 6: Real-world pricing and segmentation behavior asessed in light of economic theory
+
+Consider the pricing policies of a particular firm, industry, sector, or 'pricing guru'. Explain how these policies do or do not resemble the predictions of economic theory. You may want to focus on particular types of 'segmentation' or 'price discrimination.'
+
+
+See references in section \section{#actual-pricing} [above](#actual-pricing).
+
 
 ## Other options:  You can propose another project that doesn't exactly fit into the categories above. BUT ...
 

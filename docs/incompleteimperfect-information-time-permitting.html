@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Strategic interactions: Game theory; discussion and overview | Microeconomics (MSc)</title>
+  <title>8 Incomplete/Imperfect information (time permitting) | Microeconomics (MSc)</title>
   <meta name="description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
   <meta name="generator" content="bookdown 0.20.3 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Strategic interactions: Game theory; discussion and overview | Microeconomics (MSc)" />
+  <meta property="og:title" content="8 Incomplete/Imperfect information (time permitting) | Microeconomics (MSc)" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="daaronr/micro-giving-pub" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Strategic interactions: Game theory; discussion and overview | Microeconomics (MSc)" />
+  <meta name="twitter:title" content="8 Incomplete/Imperfect information (time permitting) | Microeconomics (MSc)" />
   
   <meta name="twitter:description" content="Created for Exeter’s BEEM101: Microeconomics, MSc module" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="exercises-price-discrimination-and-segmentation-pricing-mechanisms-intro-to-strategic-interaction.html"/>
-<link rel="next" href="strat-games.html"/>
+<link rel="prev" href="extensive.html"/>
+<link rel="next" href="gt-strat-ex.html"/>
 <script src="book_assets/header-attrs-2.5/header-attrs.js"></script>
 <script src="book_assets/jquery-2.2.3/jquery.min.js"></script>
 <link href="book_assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -648,152 +648,16 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="game_theory" class="section level1 unnumbered" number="">
-<h1>Strategic interactions: Game theory; discussion and overview</h1>
-<div id="some-video-lectures-covering-much-of-the-material-in-the-next-sections-but-less-formally" class="section level2" number="5.17">
-<h2><span class="header-section-number">5.17</span> Some video lectures covering much of the material in the next sections, but less formally</h2>
-<p><em>Note: These videos might only be available to Exeter students</em></p>
-<ol style="list-style-type: decimal">
-<li>Brief introduction to game theory</li>
-</ol>
-<iframe src="https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=a8bd9bbe-e71f-4738-b7e9-a99b0074c45e&amp;autoplay=false&amp;offerviewer=true&amp;showtitle=true&amp;showbrand=false&amp;start=5175&amp;interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay">
-</iframe>
-<p>(Starting at 1:26:15)</p>
-<ol start="2" style="list-style-type: decimal">
-<li>Most of the material (notes/board based)</li>
-</ol>
-<iframe src="https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=cf89257b-3a36-431a-93d8-ab0600751ac8&amp;autoplay=false&amp;offerviewer=true&amp;showtitle=true&amp;showbrand=false&amp;start=1090&amp;interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay">
-</iframe>
-<ul>
-<li><a href="https://recapexeter.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=43b7a9ad-c1ac-4c5e-9a4d-a9a20074e11a">More slide-based version of the above</a><br />
-</li>
-</ul>
-<ol start="3" style="list-style-type: decimal">
-<li>Backwards induction, games with infitite action spaces, discussion of laboratory experiments</li>
-</ol>
-<iframe src="https://recapexeter.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=530c2fa2-bcab-4c01-8422-a9a70074db6d&amp;autoplay=false&amp;offerviewer=true&amp;showtitle=true&amp;showbrand=false&amp;start=0&amp;interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay">
-</iframe>
-<p><br />
-</p>
+<div id="incompleteimperfect-information-time-permitting" class="section level1" number="8">
+<h1><span class="header-section-number">8</span> Incomplete/Imperfect information (time permitting)</h1>
+<div id="bayesian-games-incomplete-information" class="section level2" number="8.1">
+<h2><span class="header-section-number">8.1</span> Bayesian games (incomplete information)</h2>
+<p>E.g., fighting an opponent of unknown strength</p>
 </div>
-<div id="introduction-1" class="section level2" number="5.18">
-<h2><span class="header-section-number">5.18</span> Introduction</h2>
-<p>We considered decisions under ‘natural’ uncertainty (known probability distributions), considering preferences and choices, and concepts such as ‘expected utility’ and ‘risk aversion’.</p>
-<p><br />
-</p>
-<p>Much of microeconomics also considers the prices and outcomes in markets with many individual consumers and firms. We consider concepts such as (Walrasian) equilibrium.</p>
-<p><br />
-</p>
-<p>Now we also want to consider <span class="math inline">\(\rightarrow\)</span> <em>Strategic</em> uncertainty: one “agent’s” best choice may depend on what others choose, but each agent may be unsure about what others will choose.</p>
-<p><br />
-</p>
-<p>Furthermore, we may have interactions among only a small number of agents, so (unlike in large markets) each agent’s choice may affect the payoffs of other agents (and, in sequential games, may influence their choices).</p>
-<p><br />
-</p>
-<p><span class="math inline">\(\rightarrow\)</span> <strong>Game Theory</strong> is one of the the main approaches that Economists (and others) use to consider such situations, and what choices might be made.</p>
-<p><br />
-</p>
-<p>Is game theory useful???</p>
-<p>Some people <a href="https://www.linkedin.com/posts/eyal-winter-739b6b44_if-you-have-economics-students-who-complain-activity-6595028520324472832-dbJa/?fbclid=IwAR2K_dmkK7vazjZa6GRa3ZtSMWXhgLE30Fe0wzZ1ezPzNibYG7_Q5hn5jog">seem to think so</a>:</p>
-<p><img src="picsfigs/winter_claims_gametheory_useful.png" width="50%" style="display: block; margin: auto;" /></p>
-<p><br />
-</p>
-<div id="basic-concepts-strategic-interaction-elements-of-a-game" class="section level3" number="5.18.1">
-<h3><span class="header-section-number">5.18.1</span> Basic concepts (strategic interaction, elements of a game))</h3>
-<p>In ‘large markets with many small players’: Each individual (consumer, firm, etc) takes all others’ choices as given</p>
-<ul>
-<li>market price, demand curve, etc.</li>
-</ul>
-<p>&lt;<br> </p>
-<p>Now: Consider ‘strategic interaction’</p>
-<ul>
-<li>My best choice may depend on your choice
-<ul>
-<li>And vice versa</li>
-</ul></li>
-<li>Sequential games: My earlier choices may change your later choices</li>
-</ul>
-</div>
-<div id="some-examples" class="section level3" number="5.18.2">
-<h3><span class="header-section-number">5.18.2</span> Some examples</h3>
-<p><font color='blue'>Is it better to get lunch at Comida or Pret?</font></p>
-<p><br />
-</p>
-<div class="marginnote">
-<p>2020-21 Exeter students: if this were a normal year this question qould make more sense.</p>
-</div>
-<p><br></p>
-<ul>
-<li>What if your friends are going to Comida?</li>
-</ul>
-<p><br></p>
-<ul>
-<li>What if everyone and her cousin are going to Comida, so the queue is miles long?</li>
-</ul>
-<p><br></p>
-<p><br />
-</p>
-<p><font color='blue'>What should Tim Cook charge for his new Iphone?</font></p>
-<p><br></p>
-<ul>
-<li>Does it depend on whether Samsung and LG…</li>
-</ul>
-<p>… Sell their phones for £200, or £1000, or go out of business?</p>
-<p><br />
-</p>
-
-<div class="inputq">
-<p>Find a situation in business, government, fiction, history or your own life where one party’s optimal choice depends on what another party does.</p>
-<p><em>Write it down</em>, give a 1-sentence explanation of why it involves ‘strategic dependence’</p>
-</div>
-<p>Some possible examples:</p>
-
-<div class="fold">
-<p>Life:</p>
-<ul>
-<li>Ask out your crush or not?</li>
-</ul>
-<p><br> </p>
-<p>Politics:</p>
-<ul>
-<li><p>Country makes war or peace? Soldiers fight or run away?</p></li>
-<li><p>Run for office or not? Party contests a seat? If so, how much to spend on campaign?</p></li>
-</ul>
-<p><br> </p>
-<p>Standard Economics:</p>
-<ul>
-<li><p>Amount to bid at a first-price auction?</p></li>
-<li><p>Whether Firezza pizza opens a new branch in Exeter, and where?</p></li>
-<li><p>How hard to work towards a promotion at your job?</p></li>
-</ul>
-<p>Very interesting problems, does Econ and Game Theory have the solutions?</p>
-</div>
-</div>
-<div id="what-game-theory-can-do-wet-blanket" class="section level3 unnumbered" number="">
-<h3>What game theory can do (wet blanket)</h3>
-<p><img src="picsfigs/Eeyore_Pink.jpg" width="30%" style="display: block; margin: auto;" /></p>
-<p>Game theory gives us a language and framework for analyzing strategic situations</p>
-<p>The ‘solution concepts’ can be said to make ’ predictions’ under given assumptions. The idea of ‘equilibrium’ is defined as a baseline.<br />
-</p>
-<p>Dr. Reinstein says: Sometimes overrated as a tool for predicting how people/firms will actually behave.</p>
-<p><br />
-</p>
-<ul>
-<li><p>It often makes multiple predictions, or predicts ‘mixed strategies’ (randomisation).</p></li>
-<li><p>Real-world and experimental choices are often/arguably predicted poorly by classical game theory.</p></li>
-<li><p>For example, standard game theory says chess has a pre-determined outcome and is a bit boring (ok, you may agree about the latter).</p></li>
-</ul>
-
-<div class="technote">
-<p>Adv: But there are complicating issues making it difficult to asses the ‘predictions’ of game theory.</p>
-<p>Particularly because monetary payoff may not be the same as utility payoffs … this can make real-world predictions unclear.</p>
-<p>Particularly if there are social preferences or fairness preferences.<br />
-</p>
-<p>We also see failures to coordinate,
-failure to take higher-order cognitive steps,
-and preferences over the <em>manner decisions are made</em>.
-These make Game Theoretic predictions difficult.</p>
-</div>
+<div id="extensive-games-with-imperfect-information" class="section level2" number="8.2">
+<h2><span class="header-section-number">8.2</span> Extensive Games with Imperfect information</h2>
+<div id="most-famous-case-spence-signaling-model" class="section level3" number="8.2.1">
+<h3><span class="header-section-number">8.2.1</span> Most famous case: (Spence) signaling model</h3>
 </div>
 </div>
 </div>
@@ -802,8 +666,8 @@ These make Game Theoretic predictions difficult.</p>
           </div>
         </div>
       </div>
-<a href="exercises-price-discrimination-and-segmentation-pricing-mechanisms-intro-to-strategic-interaction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="strat-games.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="extensive.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="gt-strat-ex.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="book_assets/gitbook-2.6.7/js/app.min.js"></script>
