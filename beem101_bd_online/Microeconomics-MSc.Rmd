@@ -12267,7 +12267,6 @@ Compare to 'market equilibrium': given the equilibrium price and quantity, no ma
 </div>
 
 
-
 <br> \bigskip
 
 ### NE: Simple definition and discussion
@@ -12834,10 +12833,13 @@ I.e., Temptation $>$ Reward $>$ Punishment $>$ Sucker
 We can depict the same game in another format which we call the 'extensive form':
 
 ```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics(file.path("picsfigs","pd_extensive.png"))
+ 
+knitr::include_graphics(file.path("picsfigs","pd_extensive.png"))
+
 ```
 
 \
+
 Above: the oval (usually this is given as dashed lines) depict the  'information set'/
 
 Sequential move games *without* knowledge of previous moves are essentially equivalent to simultaneous move games.
@@ -12849,7 +12851,6 @@ Order only matters if you observe the earlier action.
 
 # Extensive form games (and sequential games) {#extensive}
 
-
 Any game can be modeled as either a Strategic (AKA 'normal form') game or as an *Extensive Game* (AKA 'Extensive Form'). A key difference: in Strategic games we simply consider a set of actions or strategies, while in Extensive games we map  a "history", and we may consider the "sub-games" starting at any point in this history.
 
 For situations that occur with sequential moves over time, where players alternate making choices, it may be simplest to depict these using a "game tree" such as the one below for the 'entry game' (formally an 'arborescence' with 'nodes and branches') and simpler to think of these as extensive form games.
@@ -12858,7 +12859,8 @@ For situations that occur with sequential moves over time, where players alterna
 
 <center>
 
-![Entry game](picsfigs/entry_game_tree.png){ width=50% }
+![Entry game](picsfigs/entry_game_tree.png){ width=80% }
+
 </center>
 
 
@@ -12878,7 +12880,6 @@ The dashed line indicates 'at the  time that player to his choosing rocks paper 
 
 ```
 
- 
 
 
 <!-- Add: example of a  complicated sequential game  depicted in a matrix -->
@@ -12907,7 +12908,7 @@ The Extensive form (and tree depiction)  did make it convenient for me to consid
 
 O-R depict extensive games and subgame perfection (subgame perfect equilibrium) rather formally, with somewhat cumbersome notation.   We will cover most of this [below](#ext-formal).
     
- aBut first, I present a simple depiction.
+But first, I present a simple depiction.
 
 ```  
  
@@ -12929,7 +12930,9 @@ What do you think will happen?
 
 
 ```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
 knitr::include_graphics(file.path("picsfigs","BOS_sequential.png"))
+
 ```
 
 *Remember, it's a one-shot game ... unrealistic within a marriage of course*
@@ -12954,6 +12957,7 @@ We see a very similar strategic concern in other contexts, including 'which firm
 These concerns also apply to politics, and the games can of course include multiple players ... 
 
 ```{block2,  type='inputq'}
+
 Can you think of some examples? 
 
 ```  
@@ -12992,7 +12996,9 @@ As noted earlier, if we want to consider imperfect information we may want to co
 
 ```{block2,  type='note'}
 
-We can derive the *outcomes consistent with* SPNE via backwards induction. Essentially, SPNE simply requires that each players (choose strategies that specify) would act optimally at each of the point they might find themselves... i.e., at each of the decision nodes in the extensive form 'game tree.'
+We can derive the *outcomes consistent with* SPNE via backwards induction.
+
+Essentially, SPNE simply requires that each players (choose strategies that specify) would act optimally at each of the point they might find themselves... i.e., at each of the decision nodes in the extensive form 'game tree.'
 
 ```
 
@@ -13062,17 +13068,11 @@ SPNE:  \{Wife: Ballet; Husband: Ballet, Boxing\}
 
 </div>
 
-
-
-```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
- knitr::include_graphics(file.path("picsfigs","longgamework_randompayoffs_ul.png"))
-```
-
 \
 
 In 'normal' (matrix form), stating complete contingent strategies:
 
-```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r  longgame-matrix, fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
 
  knitr::include_graphics(file.path("picsfigs","longgame_matrix_full.png"))
 
@@ -13083,7 +13083,7 @@ In 'normal' (matrix form), stating complete contingent strategies:
 
 And the 'abbreviated strategies'; leaving out decision nodes ruled out by a player's own previous choices as specified in the strategy:
 
-```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+```{r , fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics(file.path("picsfigs","longgame_matrix_abbrev.png"))
 ```
 
@@ -13113,8 +13113,273 @@ knitr::include_url("http://gte.csc.liv.ac.uk/gte/builder/")
 ```
 
 
-## Extensive  games and Subgame perfect equilibrium (formal, following O-R) {#ext-formal}
+## Extensive games (formal, following O-R) {#ext-formal}
+
+
+<center>
+
+![Entry game](picsfigs/entry_game_tree.png){ width=50% }
+</center>
+
+
+Introducing 'histories' (O-R), considering the figure above:
+
+> We refer to each sequence of actions as a history. In [the entry game] there are five histories. The initial node [red square] represents the null history: no action has yet been chosen.
+
+> The node shown by a small [blue] disk represents the history (In).
+
+> Each of the three other histories, (In, Accomodate), (In,Fight), and (Out), leads to an endpoint of the game. We refer to these histories as terminal, and to the other histories, after which a player has to choose an action, as nonterminal.
+
+
+\
+
+
+O-R's formal definition: 
+
+<div class="marginnote">
+Warning, much of this may seem obvious and excessively mathematically formal. This comes from wanting to define every concept from the simplest possible set of axioms.
+</div>
+
+$H \backslash Z$
  
+
+```{block2,  type='def'}
+
+> A (finite horizon) extensive game  $\langle N, H, P, (\succsim^i)_{i \in N} \rangle$  has the following components.
+
+Note that the 'action sets' for each player are replaced by histories (H) and player functions (P).  The histories will contain and specify actions.
+
+> Players: A set of players N = {1,...,n}. [as in strategic games]
+
+\
+
+> **Histories**
+    
+> A set H of histories, each of which is a finite sequence of actions. The empty history, $\emptyset$, is in $H$, 
+
+$\emptyset$ is the 'null history' ... 'nothing has happened yet'
+
+> ... and if $(a_1,a_2,...,a_t) \in  H$ then also $(a_1,a_2,...,a_{t−1}) \in H$
+    
+In other words, the set of histories $H$ is the sets of all possible 'specifications of points' we could get to in the process of playing the game ... so if we can get to a later point in a sequence we can get to an earlier point. 
+    
+> (We use the notation ($h, a_1,...,a_t$) for the history that starts with the history $h$ and continues with the actions $a_1,...,a_t)$.
+    
+> A history $h \in H$ is terminal if there is no $x$ such that $(h, x) \in H$. 
+    
+I.e.,  if there is no sequence with all of the elements in $h$ and also additional elements. "Nothing more can happen... thus we are at the end point."
+    
+> The set of terminal histories is denoted $Z$. 
+
+\
+
+> **Player function**
+    
+> A function $P : H \backslash Z \rightarrow N$ , the player function, which assigns a player to each nonterminal history (the player who moves after the history).
+
+In other words 'whose turn is it?' or 'who has the move?'. 
+
+("$H \backslash Z$"  is set theory notation for all elements of set $H$ that are not in set $Z$.)
+
+\
+
+> **Preferences**
+    
+> For each player $i \in N$, a preference relation $\succsim^i$ over $Z$. 
+
+This is nearly as in the strategic, but now preferences are over 'terminal histories'. A combination of strategies for each player will lead to a unique terminal history. 
+
+```  
+
+\
+
+O-R:
+
+> ... capturing a situation in which every player, when choosing an action, knows all actions previously chosen. For this reason, the model is usually called an extensive game with perfect information. 
+
+
+If some earlier actions were *not* observed by other players later in the game, we would need to specify what the player knows using the terminology of "information sets". If time permits, we will return to this in section \@ref{#incomp-info}.
+
+\
+
+**For the entry game we have:**
+
+Players: 
+$N=\{1,2\}$ (or $N= \{\text{Challenger}, \text{Incumbent}\}$)
+
+\
+
+Set of histories: 
+$H =\{\emptyset,(Out),(In),(In,Cooperate),(In,Fight)\}$
+
+Note that, e.g., '(Out, Cooperate)' is *not* a history in the set, as, if the first player does not enter, the second player does not ever 'have the turn to act'. 
+
+\
+
+Terminal histories: $Z =\{(Out),(In,Cooperate),(In, Fight)\}$
+
+
+\
+
+Player functions ... who 'has the move': $P(\emptyset)= 1$ and $P(\text{In})=2$.
+
+I.e., player 1 (challenger) moves first, i.e., after no previous actions. After history 'In' then player 2 (incumbent) 'has the move'. 
+
+\
+
+Preferences over histories (over the outcomes of histories):
+
+$(In, Cooperate) \succ^1 (Out) \succ^1 (In, Fight)$ (for player 1, the challenger)
+
+$(Out) \succ^2 (In, Cooperate) \succ^2 (In, Fight)$ (for player 2, the incumbent)
+
+\
+
+**Strategies**
+
+> a player’s strategy specifies the action she chooses for every history after which she moves, even histories that do not occur if she follows her strategy. 
+
+<div class="marginnote">
+
+We can also display an 'abbreviated form'; figure \@ref(fig:longgame-matrix)  vs. \@ref(fig:longgame-matrix-abbrev) illustrates the difference.
+
+</div>
+ 
+ 
+Formally (O-R): 
+ 
+```{block2,  type='def'}
+ 
+> A strategy of player $i$ .... is  a function that assigns to every [nonterminal] history $h \in H \Z$ for which $P(h) = i$
+
+(Wherever 'player $i$ has the move after the history $h$')    
+    
+> an action in $\{x: (h,x) \in H\}$, the set of actions available to her after $h$.
+
+('$(h,x)$' denotes the history with a sequence of actions $h$ followed by one more action $x$. Yes this is cumbersome.)
+
+```  
+ 
+ 
+ \
+ 
+A 'strategy profile' is a collection of strategies, one for each player. "Each strategy profile generates a unique terminal history."
+
+
+Formally: 
+
+```{block2,  type='def'}
+
+> Let $s$ be a strategy profile for the extensive game ... 
+
+> The terminal history generated by $s$ is $(a_1,...,a_T)$ 
+
+> where $a_1 = s^{P(\emptyset)}(\emptyset)$
+    
+'$a_1$', the 'first action in the history', is the action specified in the strategy ($s$) ...
+
+chosen by the 'player who has the move after the null history' (${P(\emptyset)}$) 
+
+...that is specified to be played after the null history (hence the $\emptyset$ argument in $s^{P(\emptyset)}(\emptyset)$.
+                                                       
+\
+
+> and $a_{t+1} = s^{P(a_1,...,a_t)}(a_1, ... , a_t )$ for $t = 1,... , T − 1$
+    
+Which is the action specified in the strategy for the player who 'has the move' after every other history prior to the terminal history.
+
+
+```  
+
+### Formal: 'Regular' Nash Equilibrium for the Extensive game
+
+Formal (O-R) definition:
+
+```{block2,  type='def'}
+
+> Let $\Gamma = \langle N, H, P, (\succsim^i)_{i \in N} \rangle$
+    
+(... now defined as a single mathematical object).
+
+Let $z(\sigma)$ represent the 'terminal history generated by some strategy profile $\sigma$' (remember, a strategy profile specifies one complete contingent strategy for each player)...
+
+\
+
+Then:
+
+> A strategy profile $s$ is a Nash equilibrium of game $\Gamma$ if for every player $i \in N$ we have 
+
+$$z(s) \succsim^i z(s^{−i}, r^i) \text{for every strategy} r^i \text{of player} i$$
+
+
+I.e., given the other player's strategies ($s^{−i}$) that form part of this profile, the strategy chosen by $i$ is yields an outcome that is at least as good for $i$ as any other outcome. 
+
+\
+
+Note $z(s^{−i}, r^i)$ means is the profile combining the strategies chosen by each *other* player ($s^{−i}$) with the strategy we are considering for $i$ ($r^i$).
+
+```  
+
+\
+
+For example, in the entry game, the profile of strategies $(Out, Fight)$ is (one of two) Nash Equilibria. This holds even though 'Fight' is *not* an optimal action for  for the incumbent in the case we actually *get* to this point (i.e., after the competitor chooses 'In'.).  Against the strategy of 'Out', the strategy "Fight" yields as high a payoff as does her only other strategy ('Cooperate').
+
+\
+
+But perhaps this doesn't seem like a reasonable prediction to make; perhaps not even an important 'stable' equilibrium....
+
+\
+
+"...subgame perfect equilibrium, by contrast, requires that each player’s strategy is optimal, given the other players’ strategies, after *every possible history, whether or not the history occurs if the players follow their strategies.*" (O-R, emphasis added).
+
+\
+
+### Formal: Subgame perfect equilibrium
+
+First we define 'the terminal history extending $h$...' (O-R). This is notationally complicated, but it is fairly simple when you look at some of the examples provided. Basically, this 'terminal history extending h generated by $s$' just specifies the outcome that is reached "if h occurs and then the players choose the actions specified by [their strategies] $s$."
+
+
+<div class="marginnote">
+A slightly simpler definition, used in some texts, refers to 'continuation strategies'.
+</div>
+
+Formally:
+ 
+
+```{block2,  type='def'}
+
+> The *terminal history extending h generated by $s$*, denoted $z(h,s)$, is $(h, a_1,..., a_T)$ 
+    
+> where $a_1 =s^{P(h)}(h)$ and $a_{t+1} = s^{P(h, a_1,...,a_t)}(h,a_1,...,a_t)$ for $t = 1,...,T−1$.
+
+```  
+
+\
+
+And finally, the formal definition of the Subgame perfect [Nash] equilibrium (SPNE); essentially requiring that a strategy prescribes actions that are optimal *after every history*.
+
+
+```{block2,  type='def'}
+
+...
+
+> A strategy profile ... is a *subgame perfect equilibrium* of $\Gamma$ if for every player ...  and every nonterminal history $h$ for which $P(h) = i$ we have
+
+
+$$z(h,s) \succsim^i z(h,(s^{−i}, r^i)) \text{for every strategy} r^i \text{of player} i$$
+
+... (with definitions as above)
+
+```  
+
+<div class="marginnote">
+As O-R note, "every subgame perfect equilibrium is a Nash equilibrium, but some Nash equilibria are not subgame perfect equilibria."
+
+Subgame perfection is referred to as a 'refinement' of the Nash equilibrium; an additional requirement that allows us to 'rule out' some strategy profiles as unreasonable by this criterion.
+</div>
+ 
+
+
 ```{block2,  type='note'}
 
 
@@ -13122,9 +13387,15 @@ knitr::include_url("http://gte.csc.liv.ac.uk/gte/builder/")
 
 ```
 
+\
 
+```{block2,  type='note'}
 
-# Incomplete/Imperfect information (time permitting)
+I think you may want to skip, for now, the formal definition of backward induction and the proof of its equivalence to SPE.
+
+```  
+
+# Incomplete/Imperfect information (time permitting) {#incomp-info}
 
 ## Bayesian games (incomplete information) 
 
@@ -13822,7 +14093,7 @@ E.g.,
 - [Suicide, mental health, and GDP by country and year](https://figshare.com/articles/Suicide_mental_health_economic_statistics/7239857)
 
 \
-Econometrics often has a different focus and different methodology than 'regular statistics'. Econometrics has taken on a larger role in economics over the past 40 years, because of greater data availability and computing power.  Most published papers in economics now involve some econometric analysis.","RawSienna")`
+Econometrics often has a different focus and different methodology than 'regular statistics'. Econometrics has taken on a larger role in economics over the past 40 years, because of greater data availability and computing power.  Most published papers in Economics now involve some econometric (i.e., empirical) analysis.
 
 Throughout the module we will come back to the discussion of empirical work, testing, measuring, and estimating.
 

@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
 
 
-<meta name="date" content="2020-11-27" />
+<meta name="date" content="2020-11-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="strat-games.html"/>
-<link rel="next" href="incompleteimperfect-information-time-permitting.html"/>
+<link rel="next" href="incomp-info.html"/>
 <script src="book_assets/header-attrs-2.5/header-attrs.js"></script>
 <script src="book_assets/jquery-2.2.3/jquery.min.js"></script>
 <link href="book_assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -540,14 +540,18 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7" data-path="extensive.html"><a href="extensive.html"><i class="fa fa-check"></i><b>7</b> Extensive form games (and sequential games)</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="extensive.html"><a href="extensive.html#extensive-form-and-subgame-perfection-simple-depiction"><i class="fa fa-check"></i><b>7.1</b> Extensive form and subgame perfection: simple depiction</a></li>
-<li class="chapter" data-level="7.2" data-path="extensive.html"><a href="extensive.html#ext-formal"><i class="fa fa-check"></i><b>7.2</b> Extensive games and Subgame perfect equilibrium (formal, following O-R)</a></li>
+<li class="chapter" data-level="7.2" data-path="extensive.html"><a href="extensive.html#ext-formal"><i class="fa fa-check"></i><b>7.2</b> Extensive games (formal, following O-R)</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="extensive.html"><a href="extensive.html#formal-regular-nash-equilibrium-for-the-extensive-game"><i class="fa fa-check"></i><b>7.2.1</b> Formal: ‘Regular’ Nash Equilibrium for the Extensive game</a></li>
+<li class="chapter" data-level="7.2.2" data-path="extensive.html"><a href="extensive.html#formal-subgame-perfect-equilibrium"><i class="fa fa-check"></i><b>7.2.2</b> Formal: Subgame perfect equilibrium</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="incompleteimperfect-information-time-permitting.html"><a href="incompleteimperfect-information-time-permitting.html"><i class="fa fa-check"></i><b>8</b> Incomplete/Imperfect information (time permitting)</a>
+</ul></li>
+<li class="chapter" data-level="8" data-path="incomp-info.html"><a href="incomp-info.html"><i class="fa fa-check"></i><b>8</b> Incomplete/Imperfect information (time permitting)</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="incompleteimperfect-information-time-permitting.html"><a href="incompleteimperfect-information-time-permitting.html#bayesian-games-incomplete-information"><i class="fa fa-check"></i><b>8.1</b> Bayesian games (incomplete information)</a></li>
-<li class="chapter" data-level="8.2" data-path="incompleteimperfect-information-time-permitting.html"><a href="incompleteimperfect-information-time-permitting.html#extensive-games-with-imperfect-information"><i class="fa fa-check"></i><b>8.2</b> Extensive Games with Imperfect information</a>
+<li class="chapter" data-level="8.1" data-path="incomp-info.html"><a href="incomp-info.html#bayesian-games-incomplete-information"><i class="fa fa-check"></i><b>8.1</b> Bayesian games (incomplete information)</a></li>
+<li class="chapter" data-level="8.2" data-path="incomp-info.html"><a href="incomp-info.html#extensive-games-with-imperfect-information"><i class="fa fa-check"></i><b>8.2</b> Extensive Games with Imperfect information</a>
 <ul>
-<li class="chapter" data-level="8.2.1" data-path="incompleteimperfect-information-time-permitting.html"><a href="incompleteimperfect-information-time-permitting.html#most-famous-case-spence-signaling-model"><i class="fa fa-check"></i><b>8.2.1</b> Most famous case: (Spence) signaling model</a></li>
+<li class="chapter" data-level="8.2.1" data-path="incomp-info.html"><a href="incomp-info.html#most-famous-case-spence-signaling-model"><i class="fa fa-check"></i><b>8.2.1</b> Most famous case: (Spence) signaling model</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="gt-strat-ex.html"><a href="gt-strat-ex.html"><i class="fa fa-check"></i>Suggested exercises</a>
@@ -655,7 +659,10 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p><br />
 </p>
 <center>
-<img src="picsfigs/entry_game_tree.png" title="fig:" style="width:50.0%" alt="Entry game" />
+<div class="figure">
+<img src="picsfigs/entry_game_tree.png" style="width:80.0%" alt="" />
+<p class="caption">Entry game</p>
+</div>
 </center>
 <p><em>Note: Game trees can also depict simultaneous choices or a mix of simultaneous and sequential choices.</em>:</p>
 
@@ -685,7 +692,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 
 <div class="note">
 <p>O-R depict extensive games and subgame perfection (subgame perfect equilibrium) rather formally, with somewhat cumbersome notation. We will cover most of this <a href="extensive.html#ext-formal">below</a>.</p>
-<p>aBut first, I present a simple depiction.</p>
+<p>But first, I present a simple depiction.</p>
 </div>
 <div id="extensive-form-and-subgame-perfection-simple-depiction" class="section level2" number="7.1">
 <h2><span class="header-section-number">7.1</span> Extensive form and subgame perfection: simple depiction</h2>
@@ -744,7 +751,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 
 <div class="note">
-<p>We can derive the <em>outcomes consistent with</em> SPNE via backwards induction. Essentially, SPNE simply requires that each players (choose strategies that specify) would act optimally at each of the point they might find themselves… i.e., at each of the decision nodes in the extensive form ‘game tree.’</p>
+<p>We can derive the <em>outcomes consistent with</em> SPNE via backwards induction.</p>
+<p>Essentially, SPNE simply requires that each players (choose strategies that specify) would act optimally at each of the point they might find themselves… i.e., at each of the decision nodes in the extensive form ‘game tree.’</p>
 </div>
 <p><br />
 </p>
@@ -782,7 +790,6 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="marginnote">
 <p><em>Note: you can ‘build these games’ at this on  if you like</em></p>
 </div>
-<p><img src="picsfigs/longgamework_randompayoffs_ul.png" width="70%" style="display: block; margin: auto;" /></p>
 <p><br />
 </p>
 <p>In ‘normal’ (matrix form), stating complete contingent strategies:</p>
@@ -803,10 +810,230 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 <div id="ext-formal" class="section level2" number="7.2">
-<h2><span class="header-section-number">7.2</span> Extensive games and Subgame perfect equilibrium (formal, following O-R)</h2>
+<h2><span class="header-section-number">7.2</span> Extensive games (formal, following O-R)</h2>
+<center>
+<img src="picsfigs/entry_game_tree.png" title="fig:" style="width:50.0%" alt="Entry game" />
+</center>
+<p>Introducing ‘histories’ (O-R), considering the figure above:</p>
+<blockquote>
+<p>We refer to each sequence of actions as a history. In [the entry game] there are five histories. The initial node [red square] represents the null history: no action has yet been chosen.</p>
+</blockquote>
+<blockquote>
+<p>The node shown by a small [blue] disk represents the history (In).</p>
+</blockquote>
+<blockquote>
+<p>Each of the three other histories, (In, Accomodate), (In,Fight), and (Out), leads to an endpoint of the game. We refer to these histories as terminal, and to the other histories, after which a player has to choose an action, as nonterminal.</p>
+</blockquote>
+<p><br />
+</p>
+<p>O-R’s formal definition:</p>
+<div class="marginnote">
+<p>Warning, much of this may seem obvious and excessively mathematically formal. This comes from wanting to define every concept from the simplest possible set of axioms.</p>
+</div>
+<p><span class="math inline">\(H \backslash Z\)</span></p>
+
+<div class="def">
+<blockquote>
+<p>A (finite horizon) extensive game <span class="math inline">\(\langle N, H, P, (\succsim^i)_{i \in N} \rangle\)</span> has the following components.</p>
+</blockquote>
+<p>Note that the ‘action sets’ for each player are replaced by histories (H) and player functions (P). The histories will contain and specify actions.</p>
+<blockquote>
+<p>Players: A set of players N = {1,…,n}. [as in strategic games]</p>
+</blockquote>
+<p><br />
+</p>
+<blockquote>
+<p><strong>Histories</strong></p>
+</blockquote>
+<blockquote>
+<p>A set H of histories, each of which is a finite sequence of actions. The empty history, <span class="math inline">\(\emptyset\)</span>, is in <span class="math inline">\(H\)</span>,</p>
+</blockquote>
+<p><span class="math inline">\(\emptyset\)</span> is the ‘null history’ … ‘nothing has happened yet’</p>
+<blockquote>
+<p>… and if <span class="math inline">\((a_1,a_2,...,a_t) \in H\)</span> then also <span class="math inline">\((a_1,a_2,...,a_{t−1}) \in H\)</span></p>
+</blockquote>
+<p>In other words, the set of histories <span class="math inline">\(H\)</span> is the sets of all possible ‘specifications of points’ we could get to in the process of playing the game … so if we can get to a later point in a sequence we can get to an earlier point.</p>
+<blockquote>
+<p>(We use the notation (<span class="math inline">\(h, a_1,...,a_t\)</span>) for the history that starts with the history <span class="math inline">\(h\)</span> and continues with the actions <span class="math inline">\(a_1,...,a_t)\)</span>.</p>
+</blockquote>
+<blockquote>
+<p>A history <span class="math inline">\(h \in H\)</span> is terminal if there is no <span class="math inline">\(x\)</span> such that <span class="math inline">\((h, x) \in H\)</span>.</p>
+</blockquote>
+<p>I.e., if there is no sequence with all of the elements in <span class="math inline">\(h\)</span> and also additional elements. “Nothing more can happen… thus we are at the end point.”</p>
+<blockquote>
+<p>The set of terminal histories is denoted <span class="math inline">\(Z\)</span>.</p>
+</blockquote>
+<p><br />
+</p>
+<blockquote>
+<p><strong>Player function</strong></p>
+</blockquote>
+<blockquote>
+<p>A function <span class="math inline">\(P : H \backslash Z \rightarrow N\)</span> , the player function, which assigns a player to each nonterminal history (the player who moves after the history).</p>
+</blockquote>
+<p>In other words ‘whose turn is it?’ or ‘who has the move?’.</p>
+<p>(“<span class="math inline">\(H \backslash Z\)</span>” is set theory notation for all elements of set <span class="math inline">\(H\)</span> that are not in set <span class="math inline">\(Z\)</span>.)</p>
+<p><br />
+</p>
+<blockquote>
+<p><strong>Preferences</strong></p>
+</blockquote>
+<blockquote>
+<p>For each player <span class="math inline">\(i \in N\)</span>, a preference relation <span class="math inline">\(\succsim^i\)</span> over <span class="math inline">\(Z\)</span>.</p>
+</blockquote>
+<p>This is nearly as in the strategic, but now preferences are over ‘terminal histories’. A combination of strategies for each player will lead to a unique terminal history.</p>
+</div>
+<p><br />
+</p>
+<p>O-R:</p>
+<blockquote>
+<p>… capturing a situation in which every player, when choosing an action, knows all actions previously chosen. For this reason, the model is usually called an extensive game with perfect information.</p>
+</blockquote>
+<p>If some earlier actions were <em>not</em> observed by other players later in the game, we would need to specify what the player knows using the terminology of “information sets”. If time permits, we will return to this in section @ref{#incomp-info}.</p>
+<p><br />
+</p>
+<p><strong>For the entry game we have:</strong></p>
+<p>Players:
+<span class="math inline">\(N=\{1,2\}\)</span> (or <span class="math inline">\(N= \{\text{Challenger}, \text{Incumbent}\}\)</span>)</p>
+<p><br />
+</p>
+<p>Set of histories:
+<span class="math inline">\(H =\{\emptyset,(Out),(In),(In,Cooperate),(In,Fight)\}\)</span></p>
+<p>Note that, e.g., ‘(Out, Cooperate)’ is <em>not</em> a history in the set, as, if the first player does not enter, the second player does not ever ‘have the turn to act’.</p>
+<p><br />
+</p>
+<p>Terminal histories: <span class="math inline">\(Z =\{(Out),(In,Cooperate),(In, Fight)\}\)</span></p>
+<p><br />
+</p>
+<p>Player functions … who ‘has the move’: <span class="math inline">\(P(\emptyset)= 1\)</span> and <span class="math inline">\(P(\text{In})=2\)</span>.</p>
+<p>I.e., player 1 (challenger) moves first, i.e., after no previous actions. After history ‘In’ then player 2 (incumbent) ‘has the move’.</p>
+<p><br />
+</p>
+<p>Preferences over histories (over the outcomes of histories):</p>
+<p><span class="math inline">\((In, Cooperate) \succ^1 (Out) \succ^1 (In, Fight)\)</span> (for player 1, the challenger)</p>
+<p><span class="math inline">\((Out) \succ^2 (In, Cooperate) \succ^2 (In, Fight)\)</span> (for player 2, the incumbent)</p>
+<p><br />
+</p>
+<p><strong>Strategies</strong></p>
+<blockquote>
+<p>a player’s strategy specifies the action she chooses for every history after which she moves, even histories that do not occur if she follows her strategy.</p>
+</blockquote>
+<div class="marginnote">
+<p>We can also display an ‘abbreviated form’; figure <a href="#fig:longgame-matrix"><strong>??</strong></a> vs. <a href="#fig:longgame-matrix-abbrev"><strong>??</strong></a> illustrates the difference.</p>
+</div>
+<p>Formally (O-R):</p>
+
+<div class="def">
+<blockquote>
+<p>A strategy of player <span class="math inline">\(i\)</span> …. is a function that assigns to every [nonterminal] history <span class="math inline">\(h \in H \Z\)</span> for which <span class="math inline">\(P(h) = i\)</span></p>
+</blockquote>
+<p>(Wherever ‘player <span class="math inline">\(i\)</span> has the move after the history <span class="math inline">\(h\)</span>’)</p>
+<blockquote>
+<p>an action in <span class="math inline">\(\{x: (h,x) \in H\}\)</span>, the set of actions available to her after <span class="math inline">\(h\)</span>.</p>
+</blockquote>
+<p>(‘<span class="math inline">\((h,x)\)</span>’ denotes the history with a sequence of actions <span class="math inline">\(h\)</span> followed by one more action <span class="math inline">\(x\)</span>. Yes this is cumbersome.)</p>
+</div>
+<p><br />
+</p>
+<p>A ‘strategy profile’ is a collection of strategies, one for each player. “Each strategy profile generates a unique terminal history.”</p>
+<p>Formally:</p>
+
+<div class="def">
+<blockquote>
+<p>Let <span class="math inline">\(s\)</span> be a strategy profile for the extensive game …</p>
+</blockquote>
+<blockquote>
+<p>The terminal history generated by <span class="math inline">\(s\)</span> is <span class="math inline">\((a_1,...,a_T)\)</span></p>
+</blockquote>
+<blockquote>
+<p>where <span class="math inline">\(a_1 = s^{P(\emptyset)}(\emptyset)\)</span></p>
+</blockquote>
+<p>‘<span class="math inline">\(a_1\)</span>’, the ‘first action in the history’, is the action specified in the strategy (<span class="math inline">\(s\)</span>) …</p>
+<p>chosen by the ‘player who has the move after the null history’ (<span class="math inline">\({P(\emptyset)}\)</span>)</p>
+<p>…that is specified to be played after the null history (hence the <span class="math inline">\(\emptyset\)</span> argument in <span class="math inline">\(s^{P(\emptyset)}(\emptyset)\)</span>.</p>
+<p><br />
+</p>
+<blockquote>
+<p>and <span class="math inline">\(a_{t+1} = s^{P(a_1,...,a_t)}(a_1, ... , a_t )\)</span> for <span class="math inline">\(t = 1,... , T − 1\)</span></p>
+</blockquote>
+<p>Which is the action specified in the strategy for the player who ‘has the move’ after every other history prior to the terminal history.</p>
+</div>
+<div id="formal-regular-nash-equilibrium-for-the-extensive-game" class="section level3" number="7.2.1">
+<h3><span class="header-section-number">7.2.1</span> Formal: ‘Regular’ Nash Equilibrium for the Extensive game</h3>
+<p>Formal (O-R) definition:</p>
+
+<div class="def">
+<blockquote>
+<p>Let <span class="math inline">\(\Gamma = \langle N, H, P, (\succsim^i)_{i \in N} \rangle\)</span></p>
+</blockquote>
+<p>(… now defined as a single mathematical object).</p>
+<p>Let <span class="math inline">\(z(\sigma)\)</span> represent the ‘terminal history generated by some strategy profile <span class="math inline">\(\sigma\)</span>’ (remember, a strategy profile specifies one complete contingent strategy for each player)…</p>
+<p><br />
+</p>
+<p>Then:</p>
+<blockquote>
+<p>A strategy profile <span class="math inline">\(s\)</span> is a Nash equilibrium of game <span class="math inline">\(\Gamma\)</span> if for every player <span class="math inline">\(i \in N\)</span> we have</p>
+</blockquote>
+<p><span class="math display">\[z(s) \succsim^i z(s^{−i}, r^i) \text{for every strategy} r^i \text{of player} i\]</span></p>
+<p>I.e., given the other player’s strategies (<span class="math inline">\(s^{−i}\)</span>) that form part of this profile, the strategy chosen by <span class="math inline">\(i\)</span> is yields an outcome that is at least as good for <span class="math inline">\(i\)</span> as any other outcome.</p>
+<p><br />
+</p>
+<p>Note <span class="math inline">\(z(s^{−i}, r^i)\)</span> means is the profile combining the strategies chosen by each <em>other</em> player (<span class="math inline">\(s^{−i}\)</span>) with the strategy we are considering for <span class="math inline">\(i\)</span> (<span class="math inline">\(r^i\)</span>).</p>
+</div>
+<p><br />
+</p>
+<p>For example, in the entry game, the profile of strategies <span class="math inline">\((Out, Fight)\)</span> is (one of two) Nash Equilibria. This holds even though ‘Fight’ is <em>not</em> an optimal action for for the incumbent in the case we actually <em>get</em> to this point (i.e., after the competitor chooses ‘In’.). Against the strategy of ‘Out’, the strategy “Fight” yields as high a payoff as does her only other strategy (‘Cooperate’).</p>
+<p><br />
+</p>
+<p>But perhaps this doesn’t seem like a reasonable prediction to make; perhaps not even an important ‘stable’ equilibrium….</p>
+<p><br />
+</p>
+<p>“…subgame perfect equilibrium, by contrast, requires that each player’s strategy is optimal, given the other players’ strategies, after <em>every possible history, whether or not the history occurs if the players follow their strategies.</em>” (O-R, emphasis added).</p>
+<p><br />
+</p>
+</div>
+<div id="formal-subgame-perfect-equilibrium" class="section level3" number="7.2.2">
+<h3><span class="header-section-number">7.2.2</span> Formal: Subgame perfect equilibrium</h3>
+<p>First we define ‘the terminal history extending <span class="math inline">\(h\)</span>…’ (O-R). This is notationally complicated, but it is fairly simple when you look at some of the examples provided. Basically, this ‘terminal history extending h generated by <span class="math inline">\(s\)</span>’ just specifies the outcome that is reached “if h occurs and then the players choose the actions specified by [their strategies] <span class="math inline">\(s\)</span>.”</p>
+<div class="marginnote">
+<p>A slightly simpler definition, used in some texts, refers to ‘continuation strategies’.</p>
+</div>
+<p>Formally:</p>
+
+<div class="def">
+<blockquote>
+<p>The <em>terminal history extending h generated by <span class="math inline">\(s\)</span></em>, denoted <span class="math inline">\(z(h,s)\)</span>, is <span class="math inline">\((h, a_1,..., a_T)\)</span></p>
+</blockquote>
+<blockquote>
+<p>where <span class="math inline">\(a_1 =s^{P(h)}(h)\)</span> and <span class="math inline">\(a_{t+1} = s^{P(h, a_1,...,a_t)}(h,a_1,...,a_t)\)</span> for <span class="math inline">\(t = 1,...,T−1\)</span>.</p>
+</blockquote>
+</div>
+<p><br />
+</p>
+<p>And finally, the formal definition of the Subgame perfect [Nash] equilibrium (SPNE); essentially requiring that a strategy prescribes actions that are optimal <em>after every history</em>.</p>
+
+<div class="def">
+<p>…</p>
+<blockquote>
+<p>A strategy profile … is a <em>subgame perfect equilibrium</em> of <span class="math inline">\(\Gamma\)</span> if for every player … and every nonterminal history <span class="math inline">\(h\)</span> for which <span class="math inline">\(P(h) = i\)</span> we have</p>
+</blockquote>
+<p><span class="math display">\[z(h,s) \succsim^i z(h,(s^{−i}, r^i)) \text{for every strategy} r^i \text{of player} i\]</span></p>
+<p>… (with definitions as above)</p>
+</div>
+<div class="marginnote">
+<p>As O-R note, “every subgame perfect equilibrium is a Nash equilibrium, but some Nash equilibria are not subgame perfect equilibria.”</p>
+<p>Subgame perfection is referred to as a ‘refinement’ of the Nash equilibrium; an additional requirement that allows us to ‘rule out’ some strategy profiles as unreasonable by this criterion.</p>
+</div>
 
 <div class="note">
 <p><strong>I will add a more content here.</strong></p>
+</div>
+<p><br />
+</p>
+
+<div class="note">
+<p>I think you may want to skip, for now, the formal definition of backward induction and the proof of its equivalence to SPE.</p>
+</div>
 </div>
 </div>
 </div>
@@ -822,7 +1049,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
         </div>
       </div>
 <a href="strat-games.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="incompleteimperfect-information-time-permitting.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="incomp-info.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="book_assets/gitbook-2.6.7/js/app.min.js"></script>
