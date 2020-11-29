@@ -12875,10 +12875,29 @@ See, for example, the 'Rock paper scissors' (anticoordination) simultaneous game
     
 ![rocks-paper-scissors](picsfigs/rps_extensive.png)
 
+\
+
+More graphically: 
+    
+![rocks-paper-scissors](picsfigs/rps_standard.png)
+
+
 
 The dashed line indicates 'at the  time that player to his choosing rocks paper or scissors, she does not know whether player one has chosen rocks paper or scissors'). 
 
+\
+
+But we could also have 'sequential rocks paper scissors', perhaps a dumb game: 
+
+    
+    
+![rocks-paper-scissors](picsfigs/sequential_rps.png)
+
+
 ```
+
+![rocks-paper-scissors](picsfigs/rps_extensive.png)
+
 
 
 
@@ -12892,7 +12911,21 @@ So, we can depict games in either format: the Strategic form (which we formally 
 </div>
 
 
-However there is an important difference in the analysis of extensive form and strategic games. Some strategies may prescribes actions that may be optimal responses to another player's strategy if we 'start from the beginning' (or from an earlier stage of the game); however, if we were to actually reach the part of the game that prescribes such an action,  the action would no longer be optimal.  we may want to rule out such strategies involving "incredible threats" or "time inconsistent behavior". The Strategic form does not consider the sequence of the game, so it cannot address this; here we need the Extensive Form. 
+<div class="marginnote">
+
+'Complete contingent strategies':
+
+“Imagine a player wishes to leave explicit instructions to some
+agent” concerning how to play on his/her behalf.
+
+– Note: This is not the same as a *commitment*.
+
+</div>
+ 
+
+However there is an important difference in the analysis of extensive form and strategic games. Some strategies may prescribe actions that may be optimal responses to another player's strategy if we 'start from the beginning' (or from an earlier stage of the game); however, if we were to actually reach the part of the game that prescribes such an action,  the action would no longer be optimal.  we may want to rule out such strategies involving "incredible threats" or "time inconsistent behavior". The Strategic form does not consider the sequence of the game, so it cannot address this; here we need the Extensive Form. 
+
+
 
 <div class="marginnote">
 
@@ -13002,6 +13035,27 @@ Essentially, SPNE simply requires that each players (choose strategies that spec
 
 ```
 
+\
+
+*Is 'backwards induction' enough?*`
+
+```{block2,  type='fold'}
+
+To some extent this is the all of finite extensive games
+
+BUT:
+
+- Yields no prediction with indifference,
+
+- No prediction with an infinite/indefinite horizon
+- Unclear what it predicts with imperfect information.
+
+
+BWI is similar to an iterated dominance prediction, where a player only plays actions that are dominant in each subgame, but in what sense is does it yield an equilibrium?
+    
+So maybe we need further concepts such as 'subgame perfection'
+
+```
 \
 
 
@@ -13399,12 +13453,18 @@ I think you may want to skip, for now, the formal definition of backward inducti
 
 ## Bayesian games (incomplete information) 
 
-E.g., fighting an opponent of unknown strength
+E.g., fighting an opponent of unknown strength; Cournot competition between firms with unknown cost functions.
 
 ## Extensive Games with Imperfect information
 
+Some notes [here](https://www.dropbox.com/s/1o4rr6chbxnlast/05_BWI_SPNEd_cut_HO_wanskey.pdf?dl=0); some notation comes from a different Osborne text, as well as  a text by Watson
+
 ### Most famous case: (Spence) signaling model
 
+
+Some notes [HERE](https://www.dropbox.com/s/9ztajxsf8izodnr/09-10_PBE_notesA.pdf?dl=0) to be adapted
+
+\
 
 # Suggested exercises {-#gt_strat_ex}
 
@@ -13611,8 +13671,6 @@ Some projects that I somwhat randomly found on the web that are sort-of like wha
 Games Is (Mostly) Constant](http://www.cs.tau.ac.il/~fiat/cgt12/GameTheoryProject.ItzikMalkiel.pdf) -- I'm not familiar with the content. The maths is  more advanced than I'm expecting (these seem to be maths students), and the description is not as complete as I'd like.  But the length and coverage are sort of in the right direction.
 
 
-
-
 ```
 
 
@@ -13624,6 +13682,12 @@ Some references that may be helpful:
 
 Jog your mind ... think of [films](https://www.gametheory.net/popular/film.html)
 
+\
+
+[A Public Dilemma: Cooperation with Large
+Stakes and a Large Audience](http://repository.essex.ac.uk/9979/1/dp617.pdf)
+
+Game theoretical analysis of a game show game 'Golden Balls'; great use of game theory considering social preferences, applied to an empirical analysis. Real academic work (professors) but very readable. I have some slides [here](https://www.dropbox.com/s/zjpys23uyoblqr0/notesonbelotforclass_handout.pdf?dl=0).
 
 
 ```

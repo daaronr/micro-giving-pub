@@ -673,7 +673,25 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <img src="picsfigs/rps_extensive.png" alt="" />
 <p class="caption">rocks-paper-scissors</p>
 </div>
+<p><br />
+</p>
+<p>More graphically:</p>
+<div class="figure">
+<img src="picsfigs/rps_standard.png" alt="" />
+<p class="caption">rocks-paper-scissors</p>
+</div>
 <p>The dashed line indicates ‘at the time that player to his choosing rocks paper or scissors, she does not know whether player one has chosen rocks paper or scissors’).</p>
+<p><br />
+</p>
+<p>But we could also have ‘sequential rocks paper scissors’, perhaps a dumb game:</p>
+<div class="figure">
+<img src="picsfigs/sequential_rps.png" alt="" />
+<p class="caption">rocks-paper-scissors</p>
+</div>
+</div>
+<div class="figure">
+<img src="picsfigs/rps_extensive.png" alt="" />
+<p class="caption">rocks-paper-scissors</p>
 </div>
 <!-- Add: example of a  complicated sequential game  depicted in a matrix -->
 <p><br />
@@ -682,7 +700,13 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="marginnote">
 <p>* Note that it is easy to depict and to analyze most extensive form games with a game tree and concepts such as “backwards induction”. However the formal representation of extensive form games is somewhat cumbersome, but we nonetheless introduce it below, along with formal concepts such as subgame perfection.</p>
 </div>
-<p>However there is an important difference in the analysis of extensive form and strategic games. Some strategies may prescribes actions that may be optimal responses to another player’s strategy if we ‘start from the beginning’ (or from an earlier stage of the game); however, if we were to actually reach the part of the game that prescribes such an action, the action would no longer be optimal. we may want to rule out such strategies involving “incredible threats” or “time inconsistent behavior”. The Strategic form does not consider the sequence of the game, so it cannot address this; here we need the Extensive Form.</p>
+<div class="marginnote">
+<p>‘Complete contingent strategies’:</p>
+<p>“Imagine a player wishes to leave explicit instructions to some
+agent” concerning how to play on his/her behalf.</p>
+<p>– Note: This is not the same as a <em>commitment</em>.</p>
+</div>
+<p>However there is an important difference in the analysis of extensive form and strategic games. Some strategies may prescribe actions that may be optimal responses to another player’s strategy if we ‘start from the beginning’ (or from an earlier stage of the game); however, if we were to actually reach the part of the game that prescribes such an action, the action would no longer be optimal. we may want to rule out such strategies involving “incredible threats” or “time inconsistent behavior”. The Strategic form does not consider the sequence of the game, so it cannot address this; here we need the Extensive Form.</p>
 <div class="marginnote">
 <p>There may be other important differences in the analysis of the Extensive vs. Strategic representations of the games. The Extensive form also makes it easier to consider imperfect and incomplete information; where earlier actions are not observed by later players, and where there are random components to payoffs.</p>
 <p><br />
@@ -753,6 +777,21 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="note">
 <p>We can derive the <em>outcomes consistent with</em> SPNE via backwards induction.</p>
 <p>Essentially, SPNE simply requires that each players (choose strategies that specify) would act optimally at each of the point they might find themselves… i.e., at each of the decision nodes in the extensive form ‘game tree.’</p>
+</div>
+<p><br />
+</p>
+<p><em>Is ‘backwards induction’ enough?</em>`</p>
+
+<div class="fold">
+<p>To some extent this is the all of finite extensive games</p>
+<p>BUT:</p>
+<ul>
+<li><p>Yields no prediction with indifference,</p></li>
+<li><p>No prediction with an infinite/indefinite horizon</p></li>
+<li><p>Unclear what it predicts with imperfect information.</p></li>
+</ul>
+<p>BWI is similar to an iterated dominance prediction, where a player only plays actions that are dominant in each subgame, but in what sense is does it yield an equilibrium?</p>
+<p>So maybe we need further concepts such as ‘subgame perfection’</p>
 </div>
 <p><br />
 </p>

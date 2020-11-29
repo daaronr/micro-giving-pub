@@ -691,7 +691,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb12-3"><a href="monopoly-pricing-examples-using-r.html#cb12-3"></a>wtp &lt;-<span class="st"> </span><span class="dv">45</span> <span class="op">+</span><span class="st"> </span><span class="kw">rnorm</span>(npeep)<span class="op">*</span><span class="dv">15</span> <span class="co"># Each person has a different willingness to pay</span></span></code></pre></div>
 <p><br />
 </p>
-<p>Checking, the standard deviation is 15.22 (coded as <code>sd(wtp)</code>). The exact number will vary each time you run the simulation in R but it will generally be close to 15.</p>
+<p>Checking, the standard deviation is 15.04 (coded as <code>sd(wtp)</code>). The exact number will vary each time you run the simulation in R but it will generally be close to 15.</p>
 <p><br />
 </p>
 <blockquote>
@@ -707,7 +707,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb13-5"><a href="monopoly-pricing-examples-using-r.html#cb13-5"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(op)) qd[i] &lt;-<span class="st"> </span><span class="kw">sum</span>(wtp<span class="op">&gt;=</span>op[i]) <span class="co"># We fill qd with the number of consumers with a wtp &gt;= offering price</span></span></code></pre></div>
 <p><br />
 Let’s look at the ‘vector of quantities demanded’</p>
-<p>1995, 1994, 1992, 1991, 1989, 1986, 1984, 1983, 1979, 1977, 1974, 1972, 1968, 1962, 1958, 1949, 1940, 1932, 1915, 1906, 1900, 1885, 1868, 1852, 1837, 1818, 1798, 1779, 1747, 1713, 1680, 1648, 1615, 1578, 1526, 1470, 1432, 1386, 1344, 1299, 1260, 1208, 1160, 1116, 1057, 1005, 957, 901, 850, 798, 746, 696, 646, 601, 547, 494, 455, 411, 382, 346, 316, 290, 267, 236, 209, 190, 177, 154, 137, 122, 109, 94, 76, 65, 53, 45, 35, 31, 23, 18, 15, 12, 9, 9, 8, 6, 5, 5, 4, 4, 3</p>
+<p>1995, 1995, 1992, 1992, 1991, 1990, 1987, 1985, 1981, 1978, 1976, 1971, 1970, 1964, 1955, 1946, 1940, 1930, 1915, 1903, 1892, 1877, 1861, 1838, 1811, 1792, 1772, 1747, 1715, 1686, 1650, 1624, 1595, 1543, 1510, 1466, 1421, 1375, 1323, 1276, 1219, 1173, 1123, 1077, 1024, 962, 908, 853, 804, 745, 699, 653, 608, 568, 522, 474, 433, 394, 355, 321, 292, 257, 241, 217, 199, 177, 156, 130, 113, 97, 86, 73, 62, 55, 43, 36, 32, 26, 23, 19, 14, 11, 11, 10, 7, 6, 4, 3, 2, 1, 1</p>
 <p>The code above has simply created a vector that computes the quantity demanded at each of the 90 prices £1, £2, …, £90, given the simulated willinges to pay for the 2000 potential consumers.</p>
 <p><br />
 </p>
