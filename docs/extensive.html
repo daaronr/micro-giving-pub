@@ -552,7 +552,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7" data-path="extensive.html"><a href="extensive.html"><i class="fa fa-check"></i><b>7</b> Extensive form games (and sequential games)</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="extensive.html"><a href="extensive.html#repeated-games"><i class="fa fa-check"></i><b>7.1</b> Extensive form and subgame perfection: simple depiction</a></li>
-<li class="chapter" data-level="7.2" data-path="extensive.html"><a href="extensive.html#repeated-games-a-form-of-sequential-games-informal-treatment"><i class="fa fa-check"></i><b>7.2</b> ‘Repeated games’ … a form of sequential games; informal treatment</a>
+<li class="chapter" data-level="7.2" data-path="extensive.html"><a href="extensive.html#repeated-games-a-form-of-sequential-games-simple-depiction"><i class="fa fa-check"></i><b>7.2</b> ‘Repeated games’ … a form of sequential games (simple depiction)</a>
 <ul>
 <li class="chapter" data-level="" data-path="extensive.html"><a href="extensive.html#definite-time-horizon"><i class="fa fa-check"></i>Definite time horizon</a></li>
 <li class="chapter" data-level="7.2.1" data-path="extensive.html"><a href="extensive.html#trigger-strategies"><i class="fa fa-check"></i><b>7.2.1</b> Trigger strategies</a></li>
@@ -562,6 +562,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="7.3.1" data-path="extensive.html"><a href="extensive.html#formal-regular-nash-equilibrium-for-the-extensive-game"><i class="fa fa-check"></i><b>7.3.1</b> Formal: ‘Regular’ Nash Equilibrium for the Extensive game</a></li>
 <li class="chapter" data-level="7.3.2" data-path="extensive.html"><a href="extensive.html#formal-subgame-perfect-equilibrium"><i class="fa fa-check"></i><b>7.3.2</b> Formal: Subgame perfect equilibrium</a></li>
+<li class="chapter" data-level="7.3.3" data-path="extensive.html"><a href="extensive.html#bargaining"><i class="fa fa-check"></i><b>7.3.3</b> Bargaining</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="incomp-info.html"><a href="incomp-info.html"><i class="fa fa-check"></i><b>8</b> Incomplete/Imperfect information (time permitting)</a>
@@ -576,7 +577,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="8.3" data-path="gt-strat-ex.html"><a href="gt-strat-ex.html#strategic-games"><i class="fa fa-check"></i><b>8.3</b> Strategic games</a>
 <ul>
-<li class="chapter" data-level="" data-path="gt-strat-ex.html"><a href="gt-strat-ex.html#centipede-game"><i class="fa fa-check"></i>1. Centipede game …</a></li>
+<li class="chapter" data-level="" data-path="gt-strat-ex.html"><a href="gt-strat-ex.html#centipede-game-1"><i class="fa fa-check"></i>1. Centipede game …</a></li>
 <li class="chapter" data-level="" data-path="gt-strat-ex.html"><a href="gt-strat-ex.html#war-of-attrition"><i class="fa fa-check"></i>3. War of attrition</a></li>
 <li class="chapter" data-level="" data-path="gt-strat-ex.html"><a href="gt-strat-ex.html#guessing-two-thirds-of-the-average"><i class="fa fa-check"></i>5. Guessing two-thirds of the average</a></li>
 <li class="chapter" data-level="" data-path="gt-strat-ex.html"><a href="gt-strat-ex.html#cheap-talk"><i class="fa fa-check"></i>6. “Cheap talk”</a></li>
@@ -903,8 +904,8 @@ agent” concerning how to play on his/her behalf.</p>
 <iframe src="http://gte.csc.liv.ac.uk/gte/builder/" width="50%" height="400px">
 </iframe>
 </div>
-<div id="repeated-games-a-form-of-sequential-games-informal-treatment" class="section level2" number="7.2">
-<h2><span class="header-section-number">7.2</span> ‘Repeated games’ … a form of sequential games; informal treatment</h2>
+<div id="repeated-games-a-form-of-sequential-games-simple-depiction" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> ‘Repeated games’ … a form of sequential games (simple depiction)</h2>
 <p>One form of sequential game is called a “repeated game”</p>
 <p>Repeated game: A simultaneous ‘stage’ game that is played some finite or infinite (or indefinite) number of times. The payoffs are the sum of the payoffs in each “stage game” (with possible discounting to reflect time preferences).</p>
 <div id="definite-time-horizon" class="section level3 unnumbered" number="">
@@ -1123,15 +1124,15 @@ Thus each player will Confess in every period. Not possible to sustain cooperati
 <p>a player’s strategy specifies the action she chooses for every history after which she moves, even histories that do not occur if she follows her strategy.</p>
 </blockquote>
 <div class="marginnote">
-<p>We can also display an ‘abbreviated form’; figure <a href="#fig:longgame-matrix"><strong>??</strong></a> vs. <a href="#fig:longgame-matrix-abbrev"><strong>??</strong></a> illustrates the difference.</p>
+<p>We can also display an ‘abbreviated form’; figure <a href="#longgame-matrix"><strong>??</strong></a> vs. <a href="#longgame-matrix-abbrev"><strong>??</strong></a> illustrates the difference.</p>
 </div>
 <p>Formally (O-R):</p>
 
 <div class="def">
 <blockquote>
-<p>A strategy of player <span class="math inline">\(i\)</span> …. is a function that assigns to every [nonterminal] history <span class="math inline">\(h \in H \Z\)</span> for which <span class="math inline">\(P(h) = i\)</span></p>
+<p>A strategy of player <span class="math inline">\(i\)</span> …. is a function that assigns to every [nonterminal] history <span class="math inline">\(h \in H \backslash Z\)</span> for which <span class="math inline">\(P(h) = i\)</span></p>
 </blockquote>
-<p>(Wherever ‘player <span class="math inline">\(i\)</span> has the move after the history <span class="math inline">\(h\)</span>’)</p>
+<p>(…wherever ‘player <span class="math inline">\(i\)</span> has the move after the history <span class="math inline">\(h\)</span>’)</p>
 <blockquote>
 <p>an action in <span class="math inline">\(\{x: (h,x) \in H\}\)</span>, the set of actions available to her after <span class="math inline">\(h\)</span>.</p>
 </blockquote>
@@ -1178,11 +1179,11 @@ Thus each player will Confess in every period. Not possible to sustain cooperati
 <blockquote>
 <p>A strategy profile <span class="math inline">\(s\)</span> is a Nash equilibrium of game <span class="math inline">\(\Gamma\)</span> if for every player <span class="math inline">\(i \in N\)</span> we have</p>
 </blockquote>
-<p><span class="math display">\[z(s) \succsim^i z(s^{−i}, r^i) \text{for every strategy} r^i \text{of player} i\]</span></p>
+<p><span class="math display">\[z(s) \succsim^i z(s^{−i}, r^i) \text{ for every strategy } r^i \text{ of player } i\]</span></p>
 <p>I.e., given the other player’s strategies (<span class="math inline">\(s^{−i}\)</span>) that form part of this profile, the strategy chosen by <span class="math inline">\(i\)</span> is yields an outcome that is at least as good for <span class="math inline">\(i\)</span> as any other outcome.</p>
 <p><br />
 </p>
-<p>Note <span class="math inline">\(z(s^{−i}, r^i)\)</span> means is the profile combining the strategies chosen by each <em>other</em> player (<span class="math inline">\(s^{−i}\)</span>) with the strategy we are considering for <span class="math inline">\(i\)</span> (<span class="math inline">\(r^i\)</span>).</p>
+<p>Note <span class="math inline">\(z(s^{−i}, r^i)\)</span> means the profile combining the strategies chosen by each <em>other</em> player (<span class="math inline">\(s^{−i}\)</span>) with the strategy we are considering for <span class="math inline">\(i\)</span> (<span class="math inline">\(r^i\)</span>).</p>
 </div>
 <p><br />
 </p>
@@ -1198,7 +1199,7 @@ Thus each player will Confess in every period. Not possible to sustain cooperati
 </div>
 <div id="formal-subgame-perfect-equilibrium" class="section level3" number="7.3.2">
 <h3><span class="header-section-number">7.3.2</span> Formal: Subgame perfect equilibrium</h3>
-<p>First we define ‘the terminal history extending <span class="math inline">\(h\)</span>…’ (O-R). This is notationally complicated, but it is fairly simple when you look at some of the examples provided. Basically, this ‘terminal history extending h generated by <span class="math inline">\(s\)</span>’ just specifies the outcome that is reached “if h occurs and then the players choose the actions specified by [their strategies] <span class="math inline">\(s\)</span>.”</p>
+<p>First we define ‘the terminal history extending <span class="math inline">\(h\)</span>…’ (O-R). This is notationally complicated, but it is fairly simple when you look at some of the examples provided. Basically, this ‘terminal history extending h generated by <span class="math inline">\(s\)</span>’ just specifies the outcome that is reached “if <span class="math inline">\(h\)</span> occurs and then the players choose the actions specified by [their strategies] <span class="math inline">\(s\)</span>.”</p>
 <div class="marginnote">
 <p>A slightly simpler definition, used in some texts, refers to ‘continuation strategies’.</p>
 </div>
@@ -1221,22 +1222,105 @@ Thus each player will Confess in every period. Not possible to sustain cooperati
 <blockquote>
 <p>A strategy profile … is a <em>subgame perfect equilibrium</em> of <span class="math inline">\(\Gamma\)</span> if for every player … and every nonterminal history <span class="math inline">\(h\)</span> for which <span class="math inline">\(P(h) = i\)</span> we have</p>
 </blockquote>
-<p><span class="math display">\[z(h,s) \succsim^i z(h,(s^{−i}, r^i)) \text{for every strategy} r^i \text{of player} i\]</span></p>
+<p><span class="math display">\[z(h,s) \succsim^i z(h,(s^{−i}, r^i)) \text{ for every strategy } r^i \text{of player} i\]</span></p>
 <p>… (with definitions as above)</p>
 </div>
 <div class="marginnote">
 <p>As O-R note, “every subgame perfect equilibrium is a Nash equilibrium, but some Nash equilibria are not subgame perfect equilibria.”</p>
 <p>Subgame perfection is referred to as a ‘refinement’ of the Nash equilibrium; an additional requirement that allows us to ‘rule out’ some strategy profiles as unreasonable by this criterion.</p>
 </div>
+<div id="ultimatum-game-o-r-example-16.1" class="section level4 unnumbered" number="">
+<h4>Ultimatum game (O-R example 16.1)</h4>
+<p>This is a widely-considered game, often taken to model bargaining between two people, as we see in the later discussion of the TIOLI bargaining game.</p>
+<p><em>Some notes:</em></p>
+
+<div class="fold">
+<p>As described, there are <em>several</em> Nash equilibria but only two that are subgame perfect… i.e., where player 2 would actually wish to follow-through on her strategy at all points.</p>
+<p><br />
+</p>
+<p>Here ‘indivisible’ makes the discussion easier. If we had the good to allocate being expressed as real numbers,the only SPNE would have player 1 offering 0, and player 2 accepting every offer. But this might seem weird because after being offered 0, player 2’s decision to choose ‘Yes’ is only a weak preference.</p>
+<p><br />
+</p>
+<p>The <em>situation</em> of an ultimatum game is tested in economic experiments. However, here fairness preferences may be in play and thus we do not know what the players true preferences are. Thus we are in a sense jointly testing each player’s fairness (or other regarding or social) preferences as well as her strategic decision making.</p>
+</div>
+<p><br />
+</p>
+</div>
+<div id="centipede-game" class="section level4 unnumbered" number="">
+<h4>Centipede game</h4>
+<p>Maybe it’s good to think of as ‘alternating buying rounds of drinks at a pub’ … or ‘exchanging birthday presents year after year’, or ‘babysitting for each other’… but where some additional value is gained each time by one guy in excess of the cost to the other guy. E.g., in the drinks case, you are saving the cost of waiting in a queue. As for gifts, this is a hotly debated point: do gifts add net value than their cost?*</p>
+<div class="marginnote">
+<p>*See, e.g., . <span class="citation">(List and Shogren <a href="#ref-listDeadweightLossChristmas1998" role="doc-biblioref">1998</a>; Reinstein <a href="#ref-Reinstein2014" role="doc-biblioref">2014</a>; Waldfogel <a href="#ref-waldfogelDeadweightLossChristmas1993" role="doc-biblioref">1993</a>)</span></p>
+</div>
+<!-- Add link to gift discussion here -->
+<p><br />
+</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-478"></span>
+<img src="picsfigs/or-6-per-centipede.png" alt="6-period Centipede game, from O-R" width="50%" />
+<p class="caption">
+Figure 7.1: 6-period Centipede game, from O-R
+</p>
+</div>
+<p>Players: 1, 2</p>
+<ul>
+<li><p>They alternate making decision to ‘stop the game (<span class="math inline">\(S\)</span>) or continue (<span class="math inline">\(C\)</span>)’</p></li>
+<li><p>The game lasts at most <span class="math inline">\(2T\)</span> periods… if no one stops it</p></li>
+<li><p>After every period whenever a player choose to continue (C ), she loses $1 and the other player gains $2.</p></li>
+</ul>
+<p>There are many Nash equilibria, but all have the outcome <span class="math inline">\(S0\)</span>: player 1 stops immediately. However, the ‘complete contingent strategies’ differ among these NE.</p>
+<blockquote>
+<p>player 1 chooses <span class="math inline">\(S\)</span> at the start of the game and player 2 chooses <span class="math inline">\(S\)</span> after the history <span class="math inline">\((C)\)</span>, but after longer histories each player’s strategy may choose either <span class="math inline">\(C\)</span> or <span class="math inline">\(S\)</span>.</p>
+</blockquote>
+<blockquote>
+<p>… given that player 1 intends to stop the game immediately, player 2 is indifferent between all her strategies.</p>
+</blockquote>
+<blockquote>
+<p>However, the game has a unique subgame perfect equilibrium, in which each player chooses S whenever she moves.</p>
+</blockquote>
+<div class="marginnote">
+<p>I need to think about this more, not sure I get the point they are making here.</p>
+</div>
+<p>This can be found through backwards induction. In the following subsection O-R make a big deal about how the fully contingent ‘strategies’, which are more elaborate than ‘plans of action’ are meaningful because</p>
+<blockquote>
+<p>a pair of strategies in the centipede game, and in other extensive games in which players move more than once, is more than a pair of plans of action; it embodies also an analysis of the game that contains the beliefs of the players about what would happen after any history.</p>
+</blockquote>
+<p><br />
+</p>
 
 <div class="note">
-<p><strong>I hope to add a more content here, especially discussing the O-R text</strong></p>
+<p>This game (see discussion of experimental evidence) also illustrates the idea that being able to solve for the SPNE doesn’t necessarily help me play better. Even leaving aside social/fairness preferences here, if you think that the other player will <em>not</em> use backwards induction, you might be better off choosing ‘continue’, at least in the earlier stages.</p>
+Another thing to think about: suppose we have a long Centipede game. Suppose I move second, and I’ve observed the first player choosing ‘Continue’. Is it <em>then</em> still reasonable to assume the other player uses backwards induction and maximizes her payoff, or should I adjust my assumptions and my calculations?
 </div>
 <p><br />
 </p>
 
 <div class="note">
-<p>I think you may want to skip, for now, the formal definition of backward induction and the proof of its equivalence to SPE.</p>
+<p>I think you may want to skip, for now, the formal definition of backward induction and the proof of its equivalence to SPE. This seems rather too abstract: I don’t see the relevance of this for game theory applications.</p>
+</div>
+</div>
+</div>
+<div id="bargaining" class="section level3" number="7.3.3">
+<h3><span class="header-section-number">7.3.3</span> Bargaining</h3>
+<p>Here O-R present and discuss some of the key models in the field of Bargaining theory. This is well-worth a read, and very relevant to ‘applied theoretical questions’ (is that an oxymoron?).</p>
+<p>It is striking to see how the outcome consistent with SPNE of wach of the setups varies dramatically depending on what seem like small changes in the setup.</p>
+<div id="take-it-or-leave-it-ultimatum-game" class="section level4 unnumbered" number="">
+<h4>Take it or leave it (ultimatum game)</h4>
+</div>
+<div id="finite-horizon-with-alternating-offers" class="section level4 unnumbered" number="">
+<h4>Finite horizon with alternating offers</h4>
+</div>
+<div id="infinite-horizon-with-one-sided-offers" class="section level4 unnumbered" number="">
+<h4>Infinite horizon with one-sided offers</h4>
+</div>
+<div id="infinite-horizon-with-one-sided-offers-and-discounting" class="section level4 unnumbered" number="">
+<h4>Infinite horizon with one-sided offers and discounting</h4>
+</div>
+<div id="infinite-horizon-with-alternating-offers-and-discounting" class="section level4 unnumbered" number="">
+<h4>Infinite horizon with alternating offers and discounting</h4>
+
+<div class="note">
+<p><strong>I hope to add a more content here, especially discussing the O-R text</strong></p>
+</div>
 </div>
 </div>
 </div>
@@ -1245,6 +1329,15 @@ Thus each player will Confess in every period. Not possible to sustain cooperati
 <div id="refs" class="references">
 <div id="ref-gallLosingFace2020">
 <p>Gall, Thomas, and David Reinstein. 2020. “Losing Face.” <em>Oxford Economic Papers</em> 72 (1): 164–90.</p>
+</div>
+<div id="ref-listDeadweightLossChristmas1998">
+<p>List, John A, and Jason F Shogren. 1998. “The Deadweight Loss of Christmas: Comment.” <em>The American Economic Review</em> 88 (5): 1350–5.</p>
+</div>
+<div id="ref-Reinstein2014">
+<p>Reinstein, David. 2014. “The Economics of the Gift.”</p>
+</div>
+<div id="ref-waldfogelDeadweightLossChristmas1993">
+<p>Waldfogel, Joel. 1993. “The Deadweight Loss of Christmas.” <em>The American Economic Review</em> 83 (5): 1328–36.</p>
 </div>
 </div>
             </section>
