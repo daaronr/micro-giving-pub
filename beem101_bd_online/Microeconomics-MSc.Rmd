@@ -1283,7 +1283,7 @@ Possible exercise involving data and 'choosing a firm's best price and segmentat
 </div>
 
 
-### [Strategic interactions: Game theory](#game_theory) (and evidence) (2 weeks) {-}
+### [Strategic interactions: Game theory](#game_theory) (and evidence) (2 weeks) {-#game_outline}
 
 The outcomes we care about don't only depend on what *we choose*, but on what *others' choose* (and perhaps we can also influence the latter). How should we think about choices and outcomes in such settings? What will we predict will happen in single or repeated interactions, and what will affect these outcomes?
 
@@ -1336,11 +1336,30 @@ In addition to (some) of the Game Theory material covered in O-R:
 ```{block2,  type='fold'}
 
 
-- Spence, M. (1973): 'Job market signaling,'? The Quarterly Journal of Economics, vol. 87, pp. 355-374.
+- Spence, M. (1973): 'Job market signaling,' The Quarterly Journal of Economics, vol. 87, pp. 355-374. A fairly readable and extremely influential (theory) paper, extending this to games of incomplete (asymmetric) information 
 
 - 'Ten Little Treasures of Game Theory and Ten Intuitive Contradictions' Goeree and Holt, 2001
 
-- Further readings tbd
+
+\
+
+*Considering experimental evidence:* 
+  
+- Skim or read the introduction of any of the 'Handbooks' like 'Handbook of Experimental Economics'
+
+Meta-analysis papers like:
+
+- Oosterbeek, Hessel, Randolph Sloof, and Gijs Van De Kuilen. "Cultural differences in ultimatum game experiments: Evidence from a meta-analysis." Experimental economics 7.2 (2004): 171-188 or
+
+- Johnson, Noel D., and Alexandra A. Mislin. "Trust games: A meta-analysis." Journal of Economic Psychology 32.5 (2011): 865-889.
+
+
+I also advise looking at recent 'replication' and 'many labs' project work; there are now more systematic attempts to get robust evidence on which patterns and effects are 'real' and which were a 'lucky draw' or 'publication bias'.  This also applies to our later discussion of behavioral economics.
+
+\
+
+
+
 ```
 
 \
@@ -11608,6 +11627,17 @@ Exeter BEEM101 students: These will be covered *after* the midterm
 \
 
 
+## Suggested readings 
+
+See [outline](#game_outline) ... 
+
+<div class="marginnote">
+
+1 Dec 2020: I've added in some additional suggested readings and articles that may be helpful for your project.
+
+</div>
+ 
+
 ## Introduction
 
 We considered decisions under 'natural' uncertainty (known probability distributions), considering preferences and choices, and concepts such as 'expected utility' and 'risk aversion'.
@@ -11821,8 +11851,22 @@ However, these concerns are relevant to experiments that may incorrectly assume 
 
 
 Also, there are also certain kinds of 'psychological' motivations that cannot be modeled in a straightforward way by payoffs. (see 'psychological games').
+
 ```
 
+Main point: the payoffs depicted in a game should *include* psychological and fairness concerns. 
+
+I discuss this further in the supplement on behavioral economics and 'psychological payoffs' [here](#psych-payoffs). 
+
+<div class="marginnote">
+
+[A Public Dilemma: Cooperation with Large
+Stakes and a Large Audience](http://repository.essex.ac.uk/9979/1/dp617.pdf) ... offers an excellent example of how to apply this. 
+
+Game theoretical analysis of a game show game 'Golden Balls'; great use of game theory considering social preferences, applied to an empirical analysis. I have some slideson this [here](https://www.dropbox.com/s/zjpys23uyoblqr0/notesonbelotforclass_handout.pdf?dl=0).
+
+</div>
+ 
 
 \
 
@@ -11917,7 +11961,7 @@ Note that what will matter are the *relative payoffs* and not the absolute level
 <div class="marginnote">
 For another example of a game or 'category of 2x2 games', please see the famous [Prisoners' dillemma](#pd-normal), depicted below.
 </div>
- 
+
 
 \
 
@@ -12273,11 +12317,11 @@ Compare to 'market equilibrium': given the equilibrium price and quantity, no ma
 
 ```{block2,  type='note'}
 
-I present a basic undergraduate-level explanation of this here. If this is already familiar an obvious to you, you may skip this and go right to the O-R reading. 
+I present a basic undergraduate-level explanation of this here. If this is already familiar an obvious to you, you may skip this and go right to the O-R reading.
 
 If you are *not* familiar with this, you may find it helpful to read first before digging into the formal presentation.
 
-```  
+```
 
 
 
@@ -12367,10 +12411,18 @@ By the way, even among infinite games, a Nash equilibrium (or "mixed strategy eq
 
 
 
+```{r  fig.cap = ' Can you guess which game this depicts?', out.width='50%, fig.asp=.4, fig.align='center',  echo = FALSE}
+
+knitr::include_graphics("picsfigs/japanese_pd_no_num.png")
+
+```
+
+\
 
 ## Examples of strategic games
 
-Please consider all of the examples in section 15.2-15.3, at least insofar as you find these interesting.
+
+Please consider all of the examples in O-R section 15.2-15.3, at least insofar as you find these interesting.
 
 *These illustrate an array of interesting and fundamental concepts*:
 
@@ -12411,7 +12463,7 @@ These also present strategic insights at the core of several theory-heavy applie
 
 - Industrial Organization (firm strategy and antitrust): *Location game* (aka 'Hotelling model'), *Quantity-setting* (Cournot), *Price Setting* (Bertrand), War of attrition (presented later)
 
-- Development economics and the study of cooperation: *Effort Game*, 
+- Development economics and the study of cooperation: *Effort Game*,
 
 
 *Other examples are given in the practice problems; these involve legitimately interesting and relevant examples, not simply 'busy work'*
@@ -12439,7 +12491,7 @@ Note that I skip several sections of O-R here,  for time considerations. I skip:
 
 I present a basic undergraduate-level explanation of this here. If this is already familiar an obvious to you, you may skip this and go right to the O-R discussion of mixed strategy equilibrium. However, if you are *not* familiar with this, you may find it helpful to read first before digging into the formal presentation.
 
-```  
+```
 
 \
 
@@ -12467,19 +12519,19 @@ If you choose heads/tails half the time then I'm indifferent between heads or ta
 
 If I choose heads half the time then you're indifferent between heads/tails. Thus choosing heads half the time is *among* your best responses
 
-So, technically, each of us choosing heads half the time is a NE. 
+So, technically, each of us choosing heads half the time is a NE.
 
 <div class="marginnote">
 But it is called a 'weak' NE because either of us would do no *worse* if he deviated alone.
 </div>
- 
+
 \
 
 ### Battle of sexes: mixed strategies {-}
 
-<center> 
+<center>
 
-BEEM101 students can access my chalkboard discussion of this in the video below: 
+BEEM101 students can access my chalkboard discussion of this in the video below:
 
 <iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/9f835e1c-bd24-48f1-b9ff-d3ea55bf6721?autoplay=false&amp;showinfo=true" allowfullscreen style="border:none;"></iframe>
 
@@ -12673,9 +12725,9 @@ $$U_{wife} = \frac{2}{3}$$
 
 Considering (e.g.) the Matching Pennies game (look it up to get this in your head)...
 
-> from time to time, an individual is drawn randomly from each population and these two individuals play the game. 
+> from time to time, an individual is drawn randomly from each population and these two individuals play the game.
 
-Some share of individuals in each population choose each action. 
+Some share of individuals in each population choose each action.
 
 > We are interested in steady states in which each individual’s belief
 about the distribution of actions in the other population is correct (perhaps because of his long experience playing the game) and each individual chooses his best action given these beliefs.
@@ -12683,7 +12735,7 @@ about the distribution of actions in the other population is correct (perhaps be
 Note...\*
 
 <div class="marginnote">
- 
+
 \* But note this need not be a 'strictly' best action ... there may be a tie. In fact, in any 'Mixed strategy equilibrium', all players who are mixing (equivalently, all 'populations in a certain role' where some share of the population chooses a certain action) ... each player must be *indifferent* between the actions she mixes among, given what other players are doing.
 </div>
 
@@ -12704,7 +12756,7 @@ a probability distribution over $A_i$.
 
 > A mixed strategy $\alpha_i$ that is concentrated on one action (i.e. $\alpha^i(a^i) = 1$ for some $a^i \in A^i$) is a *pure strategy*
 
-```  
+```
 
 With countable actions a mixed strategy $\alpha_i$ of player $i$ assigns a probability $\alpha^i(a^i)$ to each possible action.  O-R's preferred interpretation ... "$\alpha^i(a^i)$ as the proportion of population $i$ that chooses the action $a_i$."
 
@@ -12722,21 +12774,21 @@ To avoid the use of integrals, O-R define the *mixed strategy equilibrium* here 
 
 ```{block2,  type='def'}
 
-> Let  $G = \langle N, (A^i)_{i \in N}, (u^i) i \in N \rangle$ ... 
+> Let  $G = \langle N, (A^i)_{i \in N}, (u^i) i \in N \rangle$ ...
 
-> a  profile $(\alpha^i$)_{i \in N}$ 
-  
+> a  profile $(\alpha^i$)_{i \in N}$
+
 (Remember -- this assigns a probability to each action ... for each player)
 
-> is a *mixed strategy equilibrium* of $G$ if ... [for every player and every action $a_i$ assigned positive probability] 
+> is a *mixed strategy equilibrium* of $G$ if ... [for every player and every action $a_i$ assigned positive probability]
 
 > $i$’s expected payoff...  from $a_i$ given $\alpha^{−i}$
 
 (rem: $\alpha^{−i}$ is the strategy of all other players)
 
-> is at least as high as his expected payoff from $x_i$ given $\alpha^{-i}$ for any $x^i \in A^i$. 
+> is at least as high as his expected payoff from $x_i$ given $\alpha^{-i}$ for any $x^i \in A^i$.
 
-```  
+```
 
 ... so every action played with positive probability in a *mixed strategy equilibrium* must be at least as good as any other action given the actions of others.  This also accords with the 'population interpretation': every individual in the population must be happy with her action choice.
 
@@ -12753,6 +12805,176 @@ I will add some discussion here.
 This is a very important concept across a wide range of domains from biology to business strategy to law and politics.
 
 \
+
+
+## Supplement: Finding NE in continuous games; example -- the 'Tragedy of the commons'
+
+
+```{block2,  type='note'}
+
+A general method for finding NE for continuous games with differentiable payoffs, finding NE:
+
+1. Write down payoff functions. (Differentiable? If not it becomes more difficult.)
+
+2. Maximize each player’s payoff with respect to own strategy; the other player's payoff are a fixed 'parameter' here $\rightarrow$ Players' best-response functions.
+
+3. Look for intersection(s) $\rightarrow$ Nash equilibrium (equilibria)
+
+```  
+
+
+<div class="marginnote">
+Source: https://www3.nd.edu/~tjohns20/gametheory_SP13/slides3.pdf}
+</div>
+ 
+
+<br>  \bigskip
+
+
+With two players:
+
+$$s_i^\ast=B_i(B_-i(s_i^\ast))$$
+
+If the game is symmetric this is a 'fixed point'.
+
+
+
+\
+
+### Tragedy of the Commons example 
+
+Shepherds A and B raise $s_A$ and $s_B$ sheep, respectively, in the same meadow
+
+- More sheep graze $\rightarrow$ the less grass for each, thus less wool/milk/meat per sheep
+
+Benefit from each sheep raised: $120-s_A-s_B$
+
+\
+
+Total benefit from raising $s_A$ and $s_B$ sheep:
+
+- Shepherd A:	$s_A(120-s_A-s_B)$
+- Shepherd B:	$s_B(120-s_A-s_B)$
+
+\
+Marginal benefit of 'me adding' another sheep:
+
+- Shepherd A:	$120-2s_A-s_B$
+- Shepherd B:	$120-s_A-2s_B$
+
+
+\
+
+For simplicity, assume zero marginal cost. Set the marginal benefit equal to the marginal cost (here zero)
+
+- Shepherd A:	$120-2s_A-s_B = 0$
+- Shepherd B:	$120-s_A-2s_B = 0$
+
+Rearrange the above to solve for the best response functions
+
+- Shepherd A:	 $s_A = 60-\frac{1}{2} s_B$
+- Shepherd B:	 $s_B = 60-\frac{1}{2} s_A$
+
+\
+
+
+Solve for the Nash equilibrium:
+
+$$s_A = 60-\frac{1}{2} s_B$$
+
+\
+
+Plug this value of $s_A$ into the BRF for B and solve for $s_B$, then for $s_A$
+
+$$s_B = 60-\frac{1}{2} s_A = 60 - \frac{1}{2}(60-\frac{1}{2} s_B)$$
+
+$s_A* = s_B* = 40$
+
+
+\
+
+<div class="marginnote">
+Image source: Nicholson and Snyder, 2012
+</div>
+ 
+
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","brsheep.png"))
+```
+
+- Shepherd A:	 $s_A = 60-\frac{1}{2} s_B$
+
+- Shepherd B:	 $s_B = 60-\frac{1}{2} s_A$
+- $\rightarrow s_A* = s_B* = 40$
+
+
+\
+
+**Why the “Tragedy” of the Commons?**
+
+*Some examples...*
+
+
+- Firms choose a price or quantity of a product, or a level of R\&D, etc.
+- Households voluntarily contribute to a local public good (e.g., neighborhood watch), or choose how many fish to catch from the shared pond
+- Nations decide how large an army to build
+
+$\rightarrow$ Payoff functions, continuous 'best response functions'; rather than a payoff matrix
+
+
+\
+
+
+To maximise *total* payoffs we set $S=s_A+s_B$ to maximise
+$$S\times(120-S)$$
+
+Concave problem, set first-derivative to zero:
+$$120 - 2S = 0 \rightarrow S^*=60$$
+
+\
+
+Leading to total payoff $60 \times (120 - 60) = 3600$.
+- If they split this evenly (each graze 30), they get 1800 each.
+- This is the 'continuous' action analogy of the Prisoner's dilemma
+
+- If split evenly (each graze 30), get 1800 each.
+- This is the 'continuous' action analogue of Prisoner's dilemma
+
+\
+
+
+Note that both the PD and the above 'tragedy of the commons' game illustrate a similar point:  *Individuals acting in their own private interest may end up each doing worse off than if they could cooperate or collude.*
+
+\
+
+*Sadly, this problem (literally!) is still relevant.*  See, e.g., ["Morocco: Managing the 'commons' Livestock and Pasture Development Project in the Eastern Region"]({http://www.ifad.org/evaluation/public_html/eksyst/doc/profile/pn/morocco.htm)
+
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","moroccansheep.jpg"))
+```
+
+\
+
+### Again -- "Strategic complements" and "strategic substitutes" 
+
+
+The slope of these 'best response functions' tells you whether the two players 'choice variables' (above, sheep) are **Strategic complements** or **Strategic substitutes**.
+
+
+
+(Of course, we can also have 'strategic heterogeneity'... strategic substitutes starting from some points, some combinations of strategies in the 'strategy space'  strategic complements starting from other points.)
+
+
+"Continuous Action" games  allow us to see how the equilibrium shifts as we change one 'parameter'. E.g., increase A's benefit per sheep .We call this 'comparative statics analysis'. Further discussion...
+
+```{block2,  type='fold'}
+
+
+Comparative statics can be applied more generally and even in much more abstract games and situations. Sometimes we can derive comparative statics properties of equilibria (or "monotone comparative statics" where we do not allow jumps between equilibria) even when we cannot solve for the equilibria themselves!
+
+```
+ 
 
 
 ## Supplement: Prisoners’ Dillemma in Normal and extensive form {#pd-normal}
@@ -12833,7 +13055,7 @@ I.e., Temptation $>$ Reward $>$ Punishment $>$ Sucker
 We can depict the same game in another format which we call the 'extensive form':
 
 ```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
- 
+
 knitr::include_graphics(file.path("picsfigs","pd_extensive.png"))
 
 ```
@@ -12848,6 +13070,86 @@ Here, B may 'move second' but he doesn't know A's move (in the graphic above, he
 \
 
 Order only matters if you observe the earlier action.
+
+
+
+## How do you solve a problem like multiple-equilibria?
+
+<br> \bigskip
+
+
+Above (BOS), there are three equilibria: both play Boxing, both play Ballet, and the mixed strategy
+
+- Are any of these more reasonable as predicted outcomes?
+
+\
+
+
+### In-class experiment: BOS \& coordination; need 2 volunteers {-}
+
+```{r  fig.cap = '', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","BOS_inlecture.png"))
+```
+
+\
+
+'The Big Game'
+
+
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","coordgame_inlecture.png"))
+```
+
+
+**Outcomes**
+
+
+
+**Recent year (2016)**
+
+
+
+|         | Share chose | .. squared | Pay if match | E(Pay) |
+|:-------:|:-----------:|:----------:|:------------:|:------:|
+|    1    |     0.26    |    .068    |       2      |  0.52  |
+|    2    |     0.21    |    .044    |       2      |   .42  |
+|    3    |     0.11    |    .012    |       1      |   .11  |
+|    4    |     0.16    |    .026    |       2      |   .32  |
+|    5    |     0.26    |    .068    |       2      |   .52  |
+| Wtd avg |     0.22    |    0.05    |              |  0.42  |
+
+
+
+\
+
+
+
+### Multiple equilibrium and refinements {-}
+
+We refer to *refinement criteria* and *focal points*. For example...
+
+1. 'Choose the equilibrium with the highest payoffs for both?'  In BOS this rules out mixing (payoffs 2/3, 2/3 for h,w respectively).
+But it doesn't say whether we should predict Box, Box (payoffs 2,1) or Ballet, Ballet (payoffs 1,2)
+
+2. Choose the 'symmetric equilibrium?' ... here, mixing
+
+3. Choose the one that seems like a 'focal point'? (remember the 'big game')
+
+
+\
+
+
+### Is there a focal point? {-}
+
+*In-lecture 'experiment':*
+
+A year after graduating you come back for Alumni Weekend.  You are supposed to meet the veterans of this module for a night of festivities but can’t remember where or when. The internet does not exist.
+
+- Where do you go?  Students: write it down on a piece of paper  Now type what you wrote in to the chat window
+
+- What if you are meeting for a reunion in New York City, and no one has internet or phone access? Where do you go?  Write it down.  Type it into the chat window.
+
+
 
 # Extensive form games (and sequential games) {#extensive}
 
@@ -12872,25 +13174,24 @@ For situations that occur with sequential moves over time, where players alterna
 The sequentiality of the choice only matters if the later mover is observing the previous decision. Thus, we can depict an "as if simultaneous" choice  by "connecting the information set" in a game tree.
 
 See, for example, the 'Rock paper scissors' (anticoordination) simultaneous game below:
-    
+
 ![rocks-paper-scissors](picsfigs/rps_extensive.png)
 
 \
 
-More graphically: 
-    
+More graphically:
+
 ![rocks-paper-scissors](picsfigs/rps_standard.png)
 
 
 
-The dashed line indicates 'at the  time that player to his choosing rocks paper or scissors, she does not know whether player one has chosen rocks paper or scissors'). 
+The dashed line indicates 'at the  time that player to his choosing rocks paper or scissors, she does not know whether player one has chosen rocks paper or scissors').
 
 \
 
-But we could also have 'sequential rocks paper scissors', perhaps a dumb game: 
+But we could also have 'sequential rocks paper scissors', perhaps a dumb game:
 
-    
-    
+
 ![rocks-paper-scissors](picsfigs/sequential_rps.png)
 
 
@@ -12921,9 +13222,9 @@ agent” concerning how to play on his/her behalf.
 – Note: This is not the same as a *commitment*.
 
 </div>
- 
 
-However there is an important difference in the analysis of extensive form and strategic games. Some strategies may prescribe actions that may be optimal responses to another player's strategy if we 'start from the beginning' (or from an earlier stage of the game); however, if we were to actually reach the part of the game that prescribes such an action,  the action would no longer be optimal.  we may want to rule out such strategies involving "incredible threats" or "time inconsistent behavior". The Strategic form does not consider the sequence of the game, so it cannot address this; here we need the Extensive Form. 
+
+However there is an important difference in the analysis of extensive form and strategic games. Some strategies may prescribe actions that may be optimal responses to another player's strategy if we 'start from the beginning' (or from an earlier stage of the game); however, if we were to actually reach the part of the game that prescribes such an action,  the action would no longer be optimal.  we may want to rule out such strategies involving "incredible threats" or "time inconsistent behavior". The Strategic form does not consider the sequence of the game, so it cannot address this; here we need the Extensive Form.
 
 
 
@@ -12936,23 +13237,23 @@ There may be other important differences in the analysis of the Extensive vs. St
 The Extensive form (and tree depiction)  did make it convenient for me to consider the 'information sets at the end of the game'  and to depict payoffs adjusted for 'Losing Face' in a fancy game where  payoffs depend on information sets themselves. [@gallLosingFace2020]
 
 </div>
- 
+
 ```{block2,  type='note'}
 
 O-R depict extensive games and subgame perfection (subgame perfect equilibrium) rather formally, with somewhat cumbersome notation.   We will cover most of this [below](#ext-formal).
-    
+
 But first, I present a simple depiction.
 
-```  
- 
- 
-## Extensive form and subgame perfection: simple depiction
- 
+```
+
+
+## Extensive form and subgame perfection: simple depiction {#repeated-games}
+
 How does the Battle of Sexes game change if Wife chooses first, Husband observes her choice, and then he chooses
 
-```{block2,  type='inputq'} 
+```{block2,  type='inputq'}
 
-What do you think will happen? 
+What do you think will happen?
 
 - A. Wife: Ballet, Husband: Box
 - B. Wife: Ballet, Husband: Ballet
@@ -12979,21 +13280,21 @@ knitr::include_graphics(file.path("picsfigs","BOS_sequential.png"))
 
 ```{block2,  type='fold'}
 
-It is better to be the first-mover than the second mover in such a game. If we switched the order, the wife would likely become better off and the husband worse off. 
- 
+It is better to be the first-mover than the second mover in such a game. If we switched the order, the wife would likely become better off and the husband worse off.
+
 We see a very similar strategic concern in other contexts, including 'which firm enters a market first'. Suppose that if two firms are in a market there will be a price war with consumers as well as a bidding up of input prices and salaries,  and both will lose money. Perhaps by being the first firm to enter I 'scare off the other firm' and I can keep the profits. The other firm may 'threaten to enter' but that would seem to be a non-credible threat! On the other hand, suppose that I know that if I enter first the other firm can 'learn from my mistakes' and free-ride off my innovation. Here we would have a 'second-mover advantage'; but in such a game a BWI may lead to the outcome 'neither firm enters'!
 
 ```
 
 \
 
-These concerns also apply to politics, and the games can of course include multiple players ... 
+These concerns also apply to politics, and the games can of course include multiple players ...
 
 ```{block2,  type='inputq'}
 
-Can you think of some examples? 
+Can you think of some examples?
 
-```  
+```
 
 ```{block2,  type='fold'}
 
@@ -13024,7 +13325,7 @@ Proper subgame (informal definition)
 As noted earlier, if we want to consider imperfect information we may want to consider 'informations sets', and we can connect several nodes to indicate 'the player doesn't know at which node she is, because she doesn't know what the previous player(s) did
 
 </div>
- 
+
 
 
 ```{block2,  type='note'}
@@ -13052,7 +13353,7 @@ BUT:
 
 
 BWI is similar to an iterated dominance prediction, where a player only plays actions that are dominant in each subgame, but in what sense is does it yield an equilibrium?
-    
+
 So maybe we need further concepts such as 'subgame perfection'
 
 ```
@@ -13117,7 +13418,7 @@ SPNE:  \{Wife: Ballet; Husband: Ballet, Boxing\}
 
 
 <div class="marginnote">
- 
+
 *Note: you can 'build these games' at this on \url{http://gte.csc.liv.ac.uk/gte/builder/} if you like*
 
 </div>
@@ -13167,6 +13468,161 @@ knitr::include_url("http://gte.csc.liv.ac.uk/gte/builder/")
 ```
 
 
+## 'Repeated games' ... a form of sequential games; informal treatment
+
+One form of sequential game is called a "repeated game" 
+
+Repeated game: A simultaneous 'stage' game that is played some finite or infinite (or indefinite) number of times. The payoffs are the sum of the payoffs in each "stage game" (with possible discounting to reflect time preferences).
+
+
+
+### Definite time horizon {-}
+
+- Is there a way in which we can sustain cooperation in a finitely repeated Prisoners’ Dilemma?
+    - No.
+
+
+\
+
+Suppose we repeat the Prisoners’ Dilemma a finite (T) number of times, e.g., 10 times.
+
+<br> <br> \bigskip
+
+
+What is the outcome consistent with subgame perfect equilibrium?
+
+Via Backwards Induction (BWI) :
+    - In period 10 (period T) both players confess as it's the dominant strategy
+    - In period 9 (period T-1)
+        - Knowing period 10 (period T) decision is unaffected by earlier moves, players confess in period 9 (their dominant strategy)
+    - ... etc, all the way back to period 1
+
+
+<br> <br> \bigskip
+Thus each player will Confess in every period.  Not possible to sustain cooperation.
+
+
+### Trigger strategies
+
+Trigger strategy
+:     Strategy in a repeated game where one player stops cooperating in order to punish another player for not cooperating.
+
+
+Grim trigger strategy
+:     If the other player fails to cooperate in one period, play the (undominated) action that makes her worse off in all later periods
+
+
+### Repeated Games: Indefinite or infinite time horizon
+
+- Game is played repeated for a potentially infinite number of periods
+- But there is a 'discount factor' $g$
+    - $g$ may represent the 'probability the game is repeated another time'
+
+<div class="marginnote">
+ 
+Note: With an infinitely-repeated game with no discounting, payoffs would be potentially infinite, making it hard to decipher. It's realistic to imagine people discount the future, and we don't know how long these repeated interactions last; people die, move away, etc.
+
+</div>
+
+\
+
+<div class="marginnote">
+ 
+*At this point it is worth a quick revision of what 'discount factors' mean.* This is a basic concept in Economics and Finance. I discuss this in a prior section [on 'time preferences'](#time-pref), but it is more fully discussed elsewhere. In particular, see  McDL: 13.3 on ‘dynamic choice’.
+
+\
+
+Note that there are some debates over whether it makes sense to 'discount utility'... we can see this discounting as simply an easy notation in these repeated games.
+
+</div>
+
+
+\
+
+
+**Indefinitely repeated Prisoners' Dilemma**
+
+Consider the following trigger strategy (for both players):
+
+- Stay silent as long as the other player stays silent.
+- If one player confesses, both players will confess from them on.
+- Is this a SPNE?
+    - In each subgame after someone confesses, we play confess in all stage games (forever on), which we know is a NE
+    - What about periods where no one has confessed (yet)?
+
+
+How do we know both players playing 'confess forever' is a SPNE?
+
+Starting in any subgame, knowing the other player will confess, I will want to confess (for that period's payoffs).
+
+I also know that given his strategy, playing 'silent' in  this period will not have any impact on my later payoffs.
+
+\
+
+
+
+The payoff from staying Silent (cooperating) each period is:
+
+$$-2 \times (1 + g + g^2 + g^3 + ...  )$$
+
+
+
+The payoff from Confessing right away (after which both players Confess always) is:
+
+$$ -1 + -3 \times (g + g^2 + g^3 + ... ) $$
+
+<br> <br> \bigskip
+
+Formula for a geometric series (where $0<g<1$): $g + g^2 +  g^3 + g^4 ... = g/(1-g)$
+
+```{block2,  type='note'}
+
+The standard derivation of this is pretty neat; if you are not familiar, the Khan Academy (as usual) presents a pretty good explanation of this [HERE](https://www.khanacademy.org/math/ap-calculus-bc/bc-series-new/bc-10-2/a/proof-of-infinite-geometric-series-formula)
+
+This formula is an important one in Economics (and beyond), particularly for discounting a constant stream of payoffs, e.g., stock dividends
+
+```  
+\
+
+Thus cooperation in a single period is 'weakly preferred' (at least as good) if
+
+$$(-2) \times (1 + g + g^2 + g^3 +... ) \geq (-1) + -3 \times (g + g^2 + g^3 + ...)$$
+
+<br> <br> \bigskip
+
+$$g + g^2 + g^3 + ... \geq 1$$\*
+
+<div class="marginnote">
+ 
+\* Intuition for the second formula: left side is loss of future payoffs (-3 vs -2 forever from next period). 
+
+The right side is gain in that period (get -1 rather than -2))
+
+</div>
+\
+
+$$g/(1-g) \geq 1$$
+
+\
+
+$$g \geq \frac{1}{2}$$
+
+
+<br> <br> \bigskip
+
+
+So, cooperation can be sustained as long as the probability of play continuing is high enough; here, above 1/2.
+
+
+<div class="marginnote">
+1. Just because it can be sustained doesn't mean it will be; there are other Subgame-Perfect Nash equilibria, including 'always confess'.
+
+2. This setup is directly applied to the case of 'a cartel' of firms tacitly or overtly colluding to sustain high prices!
+
+</div>
+
+
+
 ## Extensive games (formal, following O-R) {#ext-formal}
 
 
@@ -13188,14 +13644,13 @@ Introducing 'histories' (O-R), considering the figure above:
 \
 
 
-O-R's formal definition: 
+O-R's formal definition:
 
 <div class="marginnote">
 Warning, much of this may seem obvious and excessively mathematically formal. This comes from wanting to define every concept from the simplest possible set of axioms.
 </div>
 
-$H \backslash Z$
- 
+
 
 ```{block2,  type='def'}
 
@@ -13208,65 +13663,65 @@ Note that the 'action sets' for each player are replaced by histories (H) and pl
 \
 
 > **Histories**
-    
-> A set H of histories, each of which is a finite sequence of actions. The empty history, $\emptyset$, is in $H$, 
+
+> A set H of histories, each of which is a finite sequence of actions. The empty history, $\emptyset$, is in $H$,
 
 $\emptyset$ is the 'null history' ... 'nothing has happened yet'
 
 > ... and if $(a_1,a_2,...,a_t) \in  H$ then also $(a_1,a_2,...,a_{t−1}) \in H$
-    
-In other words, the set of histories $H$ is the sets of all possible 'specifications of points' we could get to in the process of playing the game ... so if we can get to a later point in a sequence we can get to an earlier point. 
-    
+
+In other words, the set of histories $H$ is the sets of all possible 'specifications of points' we could get to in the process of playing the game ... so if we can get to a later point in a sequence we can get to an earlier point.
+
 > (We use the notation ($h, a_1,...,a_t$) for the history that starts with the history $h$ and continues with the actions $a_1,...,a_t)$.
-    
-> A history $h \in H$ is terminal if there is no $x$ such that $(h, x) \in H$. 
-    
+
+> A history $h \in H$ is terminal if there is no $x$ such that $(h, x) \in H$.
+
 I.e.,  if there is no sequence with all of the elements in $h$ and also additional elements. "Nothing more can happen... thus we are at the end point."
-    
-> The set of terminal histories is denoted $Z$. 
+
+> The set of terminal histories is denoted $Z$.
 
 \
 
 > **Player function**
-    
+
 > A function $P : H \backslash Z \rightarrow N$ , the player function, which assigns a player to each nonterminal history (the player who moves after the history).
 
-In other words 'whose turn is it?' or 'who has the move?'. 
+In other words 'whose turn is it?' or 'who has the move?'.
 
 ("$H \backslash Z$"  is set theory notation for all elements of set $H$ that are not in set $Z$.)
 
 \
 
 > **Preferences**
-    
-> For each player $i \in N$, a preference relation $\succsim^i$ over $Z$. 
 
-This is nearly as in the strategic, but now preferences are over 'terminal histories'. A combination of strategies for each player will lead to a unique terminal history. 
+> For each player $i \in N$, a preference relation $\succsim^i$ over $Z$.
 
-```  
+This is nearly as in the strategic, but now preferences are over 'terminal histories'. A combination of strategies for each player will lead to a unique terminal history.
+
+```
 
 \
 
 O-R:
 
-> ... capturing a situation in which every player, when choosing an action, knows all actions previously chosen. For this reason, the model is usually called an extensive game with perfect information. 
+> ... capturing a situation in which every player, when choosing an action, knows all actions previously chosen. For this reason, the model is usually called an extensive game with perfect information.
 
 
-If some earlier actions were *not* observed by other players later in the game, we would need to specify what the player knows using the terminology of "information sets". If time permits, we will return to this in section \@ref{#incomp-info}.
+If some earlier actions were *not* observed by other players later in the game, we would need to specify what the player knows using the terminology of "information sets". If time permits, we will return to this in section \@ref{incomp-info}.
 
 \
 
 **For the entry game we have:**
 
-Players: 
+Players:
 $N=\{1,2\}$ (or $N= \{\text{Challenger}, \text{Incumbent}\}$)
 
 \
 
-Set of histories: 
+Set of histories:
 $H =\{\emptyset,(Out),(In),(In,Cooperate),(In,Fight)\}$
 
-Note that, e.g., '(Out, Cooperate)' is *not* a history in the set, as, if the first player does not enter, the second player does not ever 'have the turn to act'. 
+Note that, e.g., '(Out, Cooperate)' is *not* a history in the set, as, if the first player does not enter, the second player does not ever 'have the turn to act'.
 
 \
 
@@ -13277,7 +13732,7 @@ Terminal histories: $Z =\{(Out),(In,Cooperate),(In, Fight)\}$
 
 Player functions ... who 'has the move': $P(\emptyset)= 1$ and $P(\text{In})=2$.
 
-I.e., player 1 (challenger) moves first, i.e., after no previous actions. After history 'In' then player 2 (incumbent) 'has the move'. 
+I.e., player 1 (challenger) moves first, i.e., after no previous actions. After history 'In' then player 2 (incumbent) 'has the move'.
 
 \
 
@@ -13291,59 +13746,59 @@ $(Out) \succ^2 (In, Cooperate) \succ^2 (In, Fight)$ (for player 2, the incumbent
 
 **Strategies**
 
-> a player’s strategy specifies the action she chooses for every history after which she moves, even histories that do not occur if she follows her strategy. 
+> a player’s strategy specifies the action she chooses for every history after which she moves, even histories that do not occur if she follows her strategy.
 
 <div class="marginnote">
 
 We can also display an 'abbreviated form'; figure \@ref(fig:longgame-matrix)  vs. \@ref(fig:longgame-matrix-abbrev) illustrates the difference.
 
 </div>
- 
- 
-Formally (O-R): 
- 
+
+
+Formally (O-R):
+
 ```{block2,  type='def'}
- 
+
 > A strategy of player $i$ .... is  a function that assigns to every [nonterminal] history $h \in H \Z$ for which $P(h) = i$
 
-(Wherever 'player $i$ has the move after the history $h$')    
-    
+(Wherever 'player $i$ has the move after the history $h$')
+
 > an action in $\{x: (h,x) \in H\}$, the set of actions available to her after $h$.
 
 ('$(h,x)$' denotes the history with a sequence of actions $h$ followed by one more action $x$. Yes this is cumbersome.)
 
-```  
- 
- 
+```
+
+
  \
- 
+
 A 'strategy profile' is a collection of strategies, one for each player. "Each strategy profile generates a unique terminal history."
 
 
-Formally: 
+Formally:
 
 ```{block2,  type='def'}
 
-> Let $s$ be a strategy profile for the extensive game ... 
+> Let $s$ be a strategy profile for the extensive game ...
 
-> The terminal history generated by $s$ is $(a_1,...,a_T)$ 
+> The terminal history generated by $s$ is $(a_1,...,a_T)$
 
 > where $a_1 = s^{P(\emptyset)}(\emptyset)$
-    
+
 '$a_1$', the 'first action in the history', is the action specified in the strategy ($s$) ...
 
-chosen by the 'player who has the move after the null history' (${P(\emptyset)}$) 
+chosen by the 'player who has the move after the null history' (${P(\emptyset)}$)
 
 ...that is specified to be played after the null history (hence the $\emptyset$ argument in $s^{P(\emptyset)}(\emptyset)$.
-                                                       
+
 \
 
 > and $a_{t+1} = s^{P(a_1,...,a_t)}(a_1, ... , a_t )$ for $t = 1,... , T − 1$
-    
+
 Which is the action specified in the strategy for the player who 'has the move' after every other history prior to the terminal history.
 
 
-```  
+```
 
 ### Formal: 'Regular' Nash Equilibrium for the Extensive game
 
@@ -13352,7 +13807,7 @@ Formal (O-R) definition:
 ```{block2,  type='def'}
 
 > Let $\Gamma = \langle N, H, P, (\succsim^i)_{i \in N} \rangle$
-    
+
 (... now defined as a single mathematical object).
 
 Let $z(\sigma)$ represent the 'terminal history generated by some strategy profile $\sigma$' (remember, a strategy profile specifies one complete contingent strategy for each player)...
@@ -13361,18 +13816,18 @@ Let $z(\sigma)$ represent the 'terminal history generated by some strategy profi
 
 Then:
 
-> A strategy profile $s$ is a Nash equilibrium of game $\Gamma$ if for every player $i \in N$ we have 
+> A strategy profile $s$ is a Nash equilibrium of game $\Gamma$ if for every player $i \in N$ we have
 
 $$z(s) \succsim^i z(s^{−i}, r^i) \text{for every strategy} r^i \text{of player} i$$
 
 
-I.e., given the other player's strategies ($s^{−i}$) that form part of this profile, the strategy chosen by $i$ is yields an outcome that is at least as good for $i$ as any other outcome. 
+I.e., given the other player's strategies ($s^{−i}$) that form part of this profile, the strategy chosen by $i$ is yields an outcome that is at least as good for $i$ as any other outcome.
 
 \
 
 Note $z(s^{−i}, r^i)$ means is the profile combining the strategies chosen by each *other* player ($s^{−i}$) with the strategy we are considering for $i$ ($r^i$).
 
-```  
+```
 
 \
 
@@ -13398,15 +13853,15 @@ A slightly simpler definition, used in some texts, refers to 'continuation strat
 </div>
 
 Formally:
- 
+
 
 ```{block2,  type='def'}
 
-> The *terminal history extending h generated by $s$*, denoted $z(h,s)$, is $(h, a_1,..., a_T)$ 
-    
+> The *terminal history extending h generated by $s$*, denoted $z(h,s)$, is $(h, a_1,..., a_T)$
+
 > where $a_1 =s^{P(h)}(h)$ and $a_{t+1} = s^{P(h, a_1,...,a_t)}(h,a_1,...,a_t)$ for $t = 1,...,T−1$.
 
-```  
+```
 
 \
 
@@ -13424,20 +13879,20 @@ $$z(h,s) \succsim^i z(h,(s^{−i}, r^i)) \text{for every strategy} r^i \text{of 
 
 ... (with definitions as above)
 
-```  
+```
 
 <div class="marginnote">
 As O-R note, "every subgame perfect equilibrium is a Nash equilibrium, but some Nash equilibria are not subgame perfect equilibria."
 
 Subgame perfection is referred to as a 'refinement' of the Nash equilibrium; an additional requirement that allows us to 'rule out' some strategy profiles as unreasonable by this criterion.
 </div>
- 
+
 
 
 ```{block2,  type='note'}
 
 
-**I will add a more content here.**
+**I hope to add a more content here, especially  discussing the O-R text**
 
 ```
 
@@ -13447,11 +13902,11 @@ Subgame perfection is referred to as a 'refinement' of the Nash equilibrium; an 
 
 I think you may want to skip, for now, the formal definition of backward induction and the proof of its equivalence to SPE.
 
-```  
+```
 
 # Incomplete/Imperfect information (time permitting) {#incomp-info}
 
-## Bayesian games (incomplete information) 
+## Bayesian games (incomplete information)
 
 E.g., fighting an opponent of unknown strength; Cournot competition between firms with unknown cost functions.
 
@@ -13461,8 +13916,7 @@ Some notes [here](https://www.dropbox.com/s/1o4rr6chbxnlast/05_BWI_SPNEd_cut_HO_
 
 ### Most famous case: (Spence) signaling model
 
-
-Some notes [HERE](https://www.dropbox.com/s/9ztajxsf8izodnr/09-10_PBE_notesA.pdf?dl=0) to be adapted
+Some notes [HERE](https://www.dropbox.com/s/9ztajxsf8izodnr/09-10_PBE_notesA.pdf?dl=0) to be adapted when I have time.
 
 \
 
@@ -13470,7 +13924,7 @@ Some notes [HERE](https://www.dropbox.com/s/9ztajxsf8izodnr/09-10_PBE_notesA.pdf
 
 ## Strategic games
 
-Nearly all the exercises are interesting. Some suggestions: 
+Nearly all the exercises are interesting. Some suggestions:
 
 ### 1. Centipede game ... {-}
 
@@ -13493,7 +13947,7 @@ Let the players’ sets of actions be $A1 = \{1,3,5,...,99,\infty\}$ and $A2 = $
 <div class="marginnote">
 I discuss a similar game [here](https://web.microsoftstream.com/video/9f835e1c-bd24-48f1-b9ff-d3ea55bf6721?st=2400) at about 40:00, accessible to BEEM101 students only. I am slightly imprecise here, but I convey the intuition for why this is a unique strategy that survives Iterated Strict Dominance.
 </div>
- 
+
 
 AKA the 'beauty contest'
 
@@ -13501,11 +13955,11 @@ AKA the 'beauty contest'
 
 ### 6. "Cheap talk" {-}
 
-Note that 'cheap talk' is a big topic in game theory. 
+Note that 'cheap talk' is a big topic in game theory.
 
 ### 8. All pay auction {-}
 
-There has been some literature arguing that such auctions could have certain benefits in fundraising for charity/public goods, at least relative to 'standard charity auctions'. 
+There has been some literature arguing that such auctions could have certain benefits in fundraising for charity/public goods, at least relative to 'standard charity auctions'.
 
 ### 9. Another version of the location game {-}
 
@@ -13513,14 +13967,14 @@ This relates to Public Choice and Political Science; see the 'Median Voter Theor
 
 ### 11. Contribution game {-}
 
-Very relevant to public goods, cooperation, and Public Economics 
+Very relevant to public goods, cooperation, and Public Economics
 
 ### 15. Hawk or dove {-}
 
 A model from biology (I think) that is applied widely, e.g., to competition between firms
 
 
-## Extensive games 
+## Extensive games
 
 ### OR-1: Trust game {-}
 
@@ -13537,7 +13991,7 @@ This setup is used (even more often than Centipede) in the social preferences li
 
 <div class="marginnote">
 
-This relates a bit to the field of 'mechanism design'... we see this procedure didn't require King Solomon to even *know* which player was the 'true owner'... thus this 'works' even under asymmetric information.  
+This relates a bit to the field of 'mechanism design'... we see this procedure didn't require King Solomon to even *know* which player was the 'true owner'... thus this 'works' even under asymmetric information.
 
 </div>
 
@@ -13548,10 +14002,10 @@ This relates a bit to the field of 'mechanism design'... we see this procedure d
 <div class="marginnote">
 Again, this touches on 'mechanism design'
 </div>
- 
 
- 
- 
+
+
+
 
 <!--chapter:end:game_theory.Rmd-->
 
@@ -13696,10 +14150,49 @@ Game theoretical analysis of a game show game 'Golden Balls'; great use of game 
 
 ## Option 2: Asymmetric information/agency theory/mechanism design: Characterization and analysis of a real-world situation/problem/issue
 
-(As in option one, but for principle-agent models/mechanisms (see, e.g., the supplement on [asymmetric information](#asymmetric)); this usually implies a 'contracting' situation.)
+(As in option one, but for Principal-agent models/mechanisms (see, e.g., the supplement on [asymmetric information](#asymmetric)); this usually implies a 'contracting' situation.)
 
 \
 
+Models in this category sometimes have overlap with game theory, but...
+
+One of the important distinctions is the assumption that *contracts can be written and enforced.*
+
+\
+
+We often focus on the characteristics of this contract (or pricing scheme, or 'direct mechanism', or screening and signaling institutions etc). 
+
+\
+
+We may consider how it may be set
+
+- to optimise the goals (profit, social welfare etc) of the Principal or 'designer',
+
+- subject to 'incentive compatibility' (and 'participation' or 'rationality') constraints as well as other potential constraints such as 'limited liability'.
+
+\
+
+And we consider how the outcomes of this optimal (or often "2nd best") contract...
+
+- meet social welfare criterion, 
+
+- what the outcomes are (who gets what, what is produced or implemented), and
+
+-  how this is affected by changes in the conditions and parameters ("comparative statics"). 
+
+\
+
+*Asymmetric information* and associated setups may involve:
+
+- Hidden actions $\rightarrow$ (e.g., 'moral hazard')
+
+- Hidden information $\rightarrow$ (e.g., 'adverse selection', 'information rents/privacy')
+
+- Both 
+
+- Incomplete contracting (e.g., involving unknown unknowns), imperfect bargaining, and 'transactions costs'
+
+\
 Some projects that are a bit relevant (see above caveats)
 
 ```{block2,  type='fold'}
@@ -13711,11 +14204,14 @@ Agents](https://sites.duke.edu/econhonors/files/2015/06/Ryan-Westphal.pdf): the 
 
 [Incentive Programs for Neglected Diseases](https://sites.duke.edu/econhonors/files/2020/05/ganapathy2020.pdf) - much more intricate than I'm expecting from you. But the modeling of the payoffs is rather nice and straightforward. 
 
+\
+
+Some of my own recent and ongoing work: 
+
+[“Listen to the market, hear the best policy decision, but don’t always choose it,” (with Joon Song [SKKU])](https://ore.exeter.ac.uk/repository/handle/10871/36180)
+
 
 ```
-
-
-
 
 
 ## Option 3: Application of economic theory to (observational) empirical work (econometric/statistical analysis)
@@ -13726,10 +14222,13 @@ Consider a *particular* empirical question or policy issue (in Economics or an a
 
 Explain how microeconomic theory *influences* the statistical/econometric framing and analysis of this question, and the interpretation of the results. What theoretical models (e.g., of consumer and firm choices, government policy goals, strategic interactions, asymmetric information, institutions and market structures) do they use to 'motivate' their question and justify their empirical econometric approach. Specify and explain these models carefully. Consider how these inform the authors empirical analysis. (E.g., the authors may justify their analysis by stating 'this technique identifies the following parameter under the assumptions of the so-and-so model'.)
 
+*See discussion [HERE](https://daaronr.github.io/writing_econ_research/theory-modeling-empirical.html#from-theory-to-empirical-work) on how theory and models can inform applied questions and empirical work
+
+
 Explain and critique the authors' claims and justifications. If possible, consider the *difference* between the approaches of several authors, contrasting and evaluating their claims and arguments.\*
 
 <div class="marginnote">
-If you like, you can use this as an opportunity to propose and present your *own actual* analysis of data, but this is not necessary; the focus should be on the theoretical modeling and assumptions, not the empirical analysis.)
+\* If you like, you can use this as an opportunity to propose and present your *own actual* analysis of data, but this is not necessary; the focus should be on the theoretical modeling and assumptions, not the empirical analysis.)
 </div>
  
 ## Option 4: Comparison of 'Economic experiment' designs (lab or field experiments) guided by Microeconomic theory
@@ -13787,10 +14286,14 @@ One model for writing this: try to emulate one of the more in-depth Wikipedia ar
 
 ```  
 
-## Option 6: Real-world pricing and segmentation behavior asessed in light of economic theory
+## Option 6: Real-world pricing and segmentation (or other forms of price discrimination) behavior asessed in light of economic theory
 
 Consider the pricing policies of a particular firm, industry, sector, or 'pricing guru'. Explain how these policies do or do not resemble the predictions of economic theory. You may want to focus on particular types of 'segmentation' or 'price discrimination.'
 
+<div class="marginnote">
+I want 'something from the real world' either a specific company or a specific set of companies, or price optimization tool, etc,
+</div>
+ 
 
 See references in section \section{#actual-pricing} [above](#actual-pricing).
 
@@ -13814,7 +14317,7 @@ If you do so, please do so by early November, and obtain my tentative approval. 
 **Note for 2020-2021:** As Exeter has retained the Msc module in Behavioural Economics, this content will not be a core part of the module.
 
 ```
-```
+
 
 Some simple discussion of key concepts from behavioral economics and from my own research from previous lectures (available within Exeter only)
 
@@ -13845,6 +14348,1136 @@ Includes discussion of:
 ## Time-inconsistent preferences
 
 -->
+
+
+```{block2,  type='note'}
+> Thou shalt be carefully sceptical; critique do not just criticise;
+> Consider the assumptions made; Consider the evidence
+```  
+
+## Neoclassical versus Behavioural economics (simple discussion)
+
+
+*(Neo)classical economics assumes:*
+
+- Firms maximise profit
+
+- Individuals/households have a consistent utility function which they act 'rationally' to maximise
+
+Furthermore, it is mainly focused on *own* consumption,  ignores 'cognitive costs', ignores 'malleable and changing preferences'
+
+
+```{block2,  type='note'}
+We can not say someones *preferences* are irrational, only that either \
+they are not acting optimally to maximize their welfare *given* these preferences or \
+their preferences are not internally consistent (e.g., not-transitive), are not fully self-interested (altruism), \
+ or are otherwise difficult to model (e.g., depending on the *manner* they make choices and not only the outcomes.
+```
+
+\
+
+Classical economics assumes
+
+- Optimization of a consistent ‘normal’ utility function subject to  known constraints
+    - Only own consumption matters?
+    - No cost to gather information or make calculations?
+
+\
+
+(Perhaps) expected utility preferences over gambles/investments, and probabilities ar  accurately known.
+
+\
+
+Geometric discounting of future payoffs with a single  discount rate ... or at least a 'consistent' discount rate.
+
+What do I mean by 'consistent' discount rate"... 
+
+```{block2,  type='fold'}
+
+The discount rate between two periods or two calendar years *is* allowed to vary in the classical model.
+
+However, it must be consistent in the following sense: the discount rate must depend on *which periods the consumption is being traded off between.*
+  
+It should *not* depend on which period I am in when I am making the decision. More on this under 'hyperbolic discounting', time-inconsistency, and impatience, below.
+
+```
+
+E.g., if $\delta=0.1$ in each period then next period's payoff of 100 is worth as much as $(1-0.1) \times 100 = 90$  today. \
+
+A payoff of 100 in two periods is worth as much as $(1-0.1) \times 100 = 90$ tomorrow, or as much as $(1-0.1) \times (1-0.1)\times 100 = 81$ today.
+
+\
+
+
+
+
+*Strategic behaviour in interactions:* Common knowledge of rationality, Nash equilibrium?
+
+\
+
+We can find behaviour and outcomes that seem to contradict the above assumptions (see, e.g., DellaVigna, 2009). This 'non-classical' behaviour is (arguably) common, significant, and follows predictable patterns. Should we then *stop learning classical economics?*
+
+\
+
+
+### Classical economists are not naïve
+
+They know preferences change, people make mistakes, etc.
+
+Justifications include:
+
+- ‘Most people, most of the time,’ and many mistakes will be ‘fixed’ by the market.
+- Strong predictive power
+- 'Normative':  how we 'should' behave to get the best outcomes
+- A good starting point, framework for insight, benchmark
+
+\
+
+### Behavioural Economics
+
+Relaxes some of the assumptions above, usually one at a time
+
+\
+
+Does not typically 'reject rationality' (instead we hear of 'bounded rationality')
+
+
+\
+
+Most “behavioral models” involve some sort of optimization (and often equilibrium)! There are ‘pure behavioral theorists’ who try to find parsimonious models to explain deviations.
+
+*Most influential authors: Kahneman and Tversky*
+
+\
+
+### Modern consensus/entente
+
+Both classical and behavioural economics are useful
+
+- Different models and techniques (for different spheres?)
+
+
+```{block2,  type='note'}
+
+**A 'compromise' position?** ...  It is worth testing for, and admitting the possibility of 'systematic violations' of the classical assumptions.
+
+*Classical* economics is usually more relevant for firm behavior But Classical may (or may not) predict well for *aggregates* and for *firm behaviour*.  *Behavioural models* may predict better for individual behaviour in isolation \
+
+... but behavioural admits many possibilities and heterogeneous behavior, so it makes broad predictions difficult \
+
+Behavioural insights are (probably) useful in making policy (and in marketing).
+
+Evidence from the lab and small scale field settings may be informative, but some 'behavioural anomalies' may be inconsequential in larger markets in equilibrium}
+
+```
+
+
+## Limits to Human Decision Making: An Overview
+
+Ww might classify  four general ways people diverge from classical assumptions 
+
+1. Limited cognitive ability – difficult and costly to make complex decisions
+
+2. Limited willpower – self control problems
+
+3. Limited self interest – care about others (fairness, altruism), issues beyond income/consumption
+
+4. Inconsistent, changing, and 'non-outcome-based' preferences \*
+
+
+<div class="marginnote">
+Under (e.g.) Prospect Theory people may be acting to maximise their true preferences, \
+ but their true preferences may change depending on reference points etc.}
+</div>
+
+### Limited cognitive ability
+
+- Complexity of problems
+    - Optimising calculations take time; this may *itself* be a cost
+        - A 'simplifying decision-making rule' (rule-of-thumb) may be better if it saves these costs
+    - Relevant both to individual decision-making (consumption, investment) and strategic choices
+        - Game theory: recall 'iterated strict dominance' and 'backwards induction'
+
+- People (seem to) systematically misunderstand probabilities (and other maths concepts)
+
+\
+
+#### Application: lack of financial literacy {-}
+
+- Consumers who underestimated interest rates in quizzes held the highest interest loans in real life
+- Particularly when government 'truth in lending laws' were lax
+
+
+*Evidence from Stango and Zinman, 2011*
+
+```{r  fig.cap = '', out.width='50%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","paydayloan.png"))
+```
+
+
+\
+
+*A 'quiz...'*
+
+```{block2,  type='fold'}
+
+
+1. Suppose you had £100 in a savings account and the interest rate was 2\% per year. After 5 years, how much do you think you would have in the account if you left the money to grow:
+
+\
+
+A. More than £102
+\
+
+B. Exactly £102
+\
+
+
+
+\
+
+2. Imagine that the interest rate on your savings account was 1 percent per year and inflation was 2 percent per year. After 1 year, would you be able to buy:
+
+\
+
+A. more than
+\
+
+B. exactly the same as, or
+\
+
+C. less than today
+
+\
+
+3. Do you think that the following statement is true or false? ‘Buying a single company stock usually provides a safer return than a stock mutual fund.’
+
+(True/False)
+
+```
+
+\
+
+Answers:
+```{block2,  type='fold'}
+
+1. A
+
+2. C
+
+3. false
+```
+
+
+\
+
+\medskip
+
+Around the world, across many studies, less than half answer *all three* of the above questions correctly.
+
+Lusardi and Mitchell, 2013; In Germany and Switzerland, just over 50\% get all three right.  In most other surveyed countries, the numbers are far lower.  E.g., in the USA 65\% get the interest rate question right, 64\% the inflation question, and 52\% the diversification question.
+
+## Limited willpower and 'hyperbolic discounting'
+
+
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","marshtest.jpg"))
+```
+
+[Marshmallow test](https://youtu.be/d8M7Xzjy_m8?t=3)
+
+*Notes:*
+
+In the 1960's-70's Stanford experiment. Children could have 1 marshmallow now or 2 in 15 minutes if they could resist temptation. \
+There is some evidence that this correlates to later life outcomes (test scores, degrees, BMI, etc). \
+
+Strong results; interpretation debated.
+
+
+```{block2,  type='note'}
+
+The strongest results have failed to replicate. See a popular discussion [here](https://www.vox.com/science-and-health/2018/6/6/17413000/marshmallow-test-replication-mischel-psychology).
+
+\
+
+There is also some criticism of the results' *interpretation*. The kid's behavior may not have only been driven by impatience but also on how much they trusted the experimenters. Those kids brought up in low-trust environments may have trusted the experimenters less to 'come through' with the second marshmallow. They also may have tended to have other obstacles to their academic and professional success.
+
+```  
+
+\
+
+Monday-David wants Tuesday-David to give up 1 marshmallow for 2 marshmallows on Wednesday. \
+
+\
+
+`r format_with_col("But Monday-David unwilling to give up 1 marshmallow for 2 marshmallows on Tuesday.","olive")` \
+
+\
+
+`r format_with_col("Similarly, Tuesday-David won't give up 1 marshmallow for 2 on Wednesday","brown")`
+
+\
+
+- Inconsistency: Monday-David thinks Tuesday-David is acting sub-optimally!
+    - Is David acting in his own interest? Can we even define his 'true utility'?
+
+\
+
+Hyperbolic discounting (simple version)
+:     Steep drop in 'weight $w$' on payoffs earned after the current period
+
+\
+
+- But constant weight (or constant discounting) for payoffs multiple periods in the future
+    - This leads to inconsistencies between 'planned' and chosen behaviour
+
+\
+
+Compare two 'streams of payoffs'
+
+\
+
+1. Work: -10 today, +2 for the next 6 days
+
+2. Lazy: -5 today, +1 for next 6 days
+
+
+*Examples:* Should you...?
+
+study very hard on Sunday to be prepared for the whole week, \
+Get a good workout to feel energized the whole week \
+Clean your flat on Sunday .... etc.
+
+\
+
+Grasshopper weights payoffs today, tomorrow, and every day the same: $w=1$
+
+- Monday, Grasshopper compares Work to Lazy, and chooses Work.
+    - payoff(Work) $= -10 + (2 \times 6) = 2$
+    - payoff(Lazy) $= -5 + (1 \times 6) = 1$
+
+\
+
+Ant always weights payoffs at 1 today and $w=1/2$ on any future day
+
+- Monday, Ant chooses Lazy:
+    - payoff(Work) $= -10 +(2 \times 6)/2 = -4$
+    - payoff(Lazy) $= -5 + (1 \times 6)/2 = -2$
+
+\
+
+If Grasshopper were 'choosing for Monday on Sunday', he would choose Work $\rightarrow$ Consistent
+
+\
+
+But if Ant were 'choosing for Monday on Sunday', he would choose Work $\rightarrow$ Inconsistent
+
+\
+
+- On Sunday he considers
+    - payoff(Work Monday) $= (-10 + 2 \times 6)/2 = 1$
+    - payoff(Lazy Monday) $= (-5 + 1 \times 6)/2 = 1/2$
+- But as we saw, on Monday he chooses to be lazy
+- Would he 'benefit from pre-committing?'
+
+
+## Limited self-interest ... e.g, altruism and fairness
+
+'Other-regarding preferences':  My utility may be impacted by...
+
+1.  Other people's utility, or their consumption of particular 'merit' goods
+
+E.g., I suffer if I know my neighbour suffers, or her child eats too little
+ $\rightarrow$ this implies  'aid to the poor' may become a public good; thus it  may be massively under-provided in a voluntary setting
+
+\
+
+2. My perceived 'impact' on outcomes
+
+- If I donate to charity, I feel better
+- If my contribution improves people's lives, protects the environment (relative to my having done nothing)
+- $\rightarrow$ People may make choices reducing their own consumption, to increase other's consumption
+- Charitable giving is widespread; accounts for about 1\% of UK GDP
+- 'Donations' to family members much higher
+
+
+```{block2,  type='note'}
+
+The utilities, and decisions, of family members are highly connected. There is an ongoing debate and research programme considering when to model a household's decisions as 'unitary' and when to consider the individual preferences of the household members.
+
+```
+
+\
+
+'Other-regarding preferences':  My utility may be impacted by...
+
+1. My reputation and how others perceive me
+
+$\rightarrow$ Thus people may donate  and cooperate more when they are observed by others.
+
+\
+
+2. How 'fair' I believe the outcomes and actions taken are
+
+- $\rightarrow$ People reject significant positive offers in ultimatum games and bargaining
+    - Anticipating this, people make offers considerably above zero
+
+- $\rightarrow$ People cooperate when they expect others to do so
+
+- $\rightarrow$ people engage in 'costly punishment' of others they believe acted unfairly
+
+\
+
+
+
+\
+
+**Rational altruism?**
+
+We can model some forms of other-regarding preferences using standard tools, like indifference curves and budget constraints:
+
+
+```{r  fig.cap = '', out.width='75%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","other_regard_IC.png"))
+```
+
+<div class="marginnote">
+Source: Nicholson and Snyder, 2012
+</div>
+ 
+\
+
+
+
+### Converting from 'material payoffs' to 'psychological payoffs' {#psych-payoffs}
+
+As we have previously noted, the 'real' payoffs in a game (or an individual decision) may not be identical to the monetary/material payoffs
+
+(Important to note, this is a *distinct issue* from 'diminishing marginal utility' and risk-aversion.)
+
+\
+
+
+
+Motives like 'fairness' may transform monetary payoffs into 'real' payoffs in a straightforward way
+
+\
+E.g., in the ultimatum game, suppose player 1's real payoffs are:
+
+\
+
+
+$$U_1(Y_1,Y_2) = Y_1 - |Y_1-Y_2|$$
+
+
+\
+
+
+Where $Y_1$ is the amount 1 earns from the ultimatum game, and $Y_2$ is 2's income from this game.
+
+
+\
+
+
+Similarly for player 2:
+
+
+$$U_2(Y_2,Y_1) = Y_2 - |Y_1-Y_2|$$
+
+
+\
+
+
+*Here each player gains 1 unit of utility for each pound they earn, but loses a unit of utility for every pound of difference between the payoffs.*
+
+
+
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","ultimatumgametree.png"))
+```
+
+<div class="marginnote">
+Source: Nicholson and Snyder, 2012
+</div>
+ 
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","ultimatumfairness.png"))
+```
+
+
+**Notes on the above:**
+
+Here if earnings are equal, real payoffs are the same as earnings; 0,0 or 5,5 \
+Where earnings are unequal, player-1 gets 9 and player-2 gets 1 from material payoffs. \
+But because of a difference of 8 in earnings, both players lose 8 in psychological payoffs \
+so the net real payoffs if player-1 offered 1 and 2 accepted would be 9-8=1 for player-1 and 1-8=-7 for player-2. \
+Using BWI here we see the subgame perfect NE will be that player-1 offers 5 and player-2 accepts.
+
+\
+
+'Envy payoffs'
+
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","ultimatumenvy.png"))
+```
+
+
+**Notes and explanation of  the above:** (unfold)
+
+```{block2,  type='fold'}
+
+Here we assume because of 'envy', real payoffs equal material payoffs minus the difference in payoffs *for the player with lower payoffs only.* \
+For the outcomes considered, only player-2's payoffs are adjusted from the material payoffs; \
+she gets 1-8 = -7 from accepting an offer of 1; her payoff is 1 but she loses 7 in envy. \
+Because of this she will not accept such an offer. Knowing this, player-1 will offer 5.
+```
+
+
+
+### Supplemental (reading): Evidence on the Ultimatum Game
+
+
+Guth et al. (1982) presented the first experimental test of the ultimatum game.
+
+\
+This game has two players: a  Proposer and a Responder
+
+\
+Proposer has a pie of size 1. She must propose a split of the pie between the two players $(1-s, s)$
+
+\
+
+The Responder may:
+
+- accept (in which case the split is executed)
+- reject (in which case both players get zero
+
+
+\
+
+This is a 'take it or leave it offer' in bargaining. What do you think he/she will offer?  Do you think he/she will accept?  Why or why not?
+
+<!---
+\
+Now let us try this on veconlab, along with a simple 'Dictator' game
+http://veconlab.econ.virginia.edu/login.htm
+login to "elsb2"
+The prize is
+\
+> This program runs a two-person, bargaining game. In the Dictator version, one person simply decides unilaterally how to split a fixed amount of money. In the Ultimatum treatment, the proposer makes an offer of how to split the money, which the responder either accepts or rejects. An acceptance implements the proposed split, and a rejection results in zero earnings for both.
+\
+\
+"Random lottery incentive"
+I will randomly choose 1 stage/repetition for 2 participants for payment, and pay based on the actual choices.
+\
+-->
+\
+
+
+### Ultimatum game: theoretical predictions
+
+Allowing 'non-credible threats', this game has as many Nash equilibria as there are possible splits of the pie.
+
+
+In each of them, the Responder's strategy is to 'accept only if offered X (or more)' for some $X\geq0$, and the Proposer's strategy is to offer exactly X.
+
+
+But maybe these equilibria don't seem like reasonable predictions (why?)
+
+\
+
+Q: What does SPNE predict (use backwards induction)?
+
+
+- If the split is $(1,0)$, the Responder is indifferent between accepting and rejecting
+
+- That still means the Proposer offering $(1,0)$ and the Responder accepting is a NE
+
+\
+
+The subgame-perfect Nash equilibrium is found by solving the game backwards:
+
+The Proposer (correctly) anticipates the Responder will accept any offer
+
+- Thus she offers zero, which is accepted 'in equilibrium'
+
+(A 'near zero' offer would lead to a similar result, and might seem more intuitive)
+
+`r format_with_col("Note, that these are basic game theoretic predictions, not Behavioral.","gray")`
+
+\
+
+#### What happens in experiments? {-}
+
+```{block2,  type='inputq'}
+What do you think will happen?
+```  
+
+\
+
+- A 50-50 split is the most common offer
+
+- Responders tend to reject offers giving them less than 30\%, even when this is a lot of money.
+
+
+\
+
+
+Potential explanations for the above
+
+- Fairness concerns; monetary payoffs may not represent actual payoffs
+
+- Proposers may anticipate this, and thus offer more than the minimum to avoid their offer being rejected.  (Also, proposers may themselves have fairness preferences.)
+
+
+\
+
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","ult_table.pdf"))
+```
+
+\
+
+In a variety of cultures and contexts (Henrich et al, 2006):
+
+\
+
+```{r  fig.cap = '', out.width='85%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","ultimatumgameoffers_Science.png"))
+```
+
+<!---
+## Discussion
+- Let's look at our results (and pay)
+- What do you think explained your choices? What did you think other people would do?
+- What real-world situations does this resemble?
+    - In what ways does this differ from a 'typical' bargaining situation
+-->
+\
+
+
+## Application: Give-if-you-win (EU vs. Prospect theory)
+
+
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","borisbanks.png"))
+```
+
+\
+
+**EU over outcomes predicts these choices will be the same.**
+
+Here, in choosing *conditional* choices 'if I win' etc., the decision for each state (win or lose) are separate.
+
+- Max $EU = pr(win)u(win,choice if win) + pr(lose)u(lose,choice if lose)$
+- Choice for 'if I win' does *not* affect payoff 'if I lose'
+
+\
+
+**Before** I know the outcome, I may anticipate what my utility-maximising donation $g^*$ would be if I win the bonus
+
+- Let $c$ be own consumption, $Y$ income pre-bonus, $w$ the bonus amount, and $g_b$ the committed donation 'if I  win $w$'
+
+- I choose $g_b$ to maximize utility $u(c, g)$ s.t. budget constraint $c+g \leq Y+w$
+
+- If asked to pre-commit 'if I win', I commit to that choice, so $g_b=g^*$
+
+\
+
+**After** I have won the bonus $w$, I maximize utility $u(c, g)$ s.t. budget constraint $c+g \leq Y+w$
+
+- Same maximisation as above, so $g_a=g_b=g^*$
+
+
+\
+
+**However, other models predict distinct choices with the Before and After asks**
+
+**Reputation:** If I give to benefit my reputation or self-esteem, *unrealised* donations may matter, not just donation outcomes
+
+- This may be an incentive to commit *more* the less likely a donation needs to be paid
+- 'If I win the lottery megabucks, I will give it all away'
+
+\
+
+**Loss aversion:** If I am 'loss averse' over my own consumption, it may seem 'cheaper' to commit before I win the bonus than after
+
+Why? Because my *reference point* may change. Suppose I've £50k income and a potential £50k bonus with 50% probability
+
+- Before winning my reference consumption may be the EV, £75k
+
+- So a conditional donation to donate £10k if I have a total income+bonus of £100k may not seem like a loss
+
+- But after I win the bonus, my new reference consumption may be £100k
+
+- So each pound donated might feel like a loss
+
+\
+
+**What do you think happens when you ask people to donate either Before-conditionally or After winning a prize or bonus?**
+Do they  commit more 'before' than they give 'after', or vice versa, or are these equivalent?
+
+\
+
+### Field experiment {-}
+
+**One field experiment: University of Essex undergraduate students**
+
+\
+
+**Emails from DAs on behalf of FSS**
+
+<small>  Subject: Employability promotion -- a 1 in 4 chance of winning a £20 prize for doing a short survey. </small>
+\
+
+<small> Text: Please go to [*web site*] --  we have 80 free dinners for two in Colchester to give away, worth £20 each and at least 40 £20 Amazon vouchers!! If you log on, you will have a one in four overall chance of winning one of these prizes! </small>
+
+\
+
+<small> Details:  `r format_with_col("2 rounds over 2 academic years","gray")`. `r format_with_col("2 prizes in round 1, Amazon  only in round 2.","gray")`
+First covering Faculty of Social Science, then all departments. Sign in with email, orthogonal employability treatments.</small>
+
+$\rightarrow$ 352 valid responses with donation opportunities
+
+\
+
+**Before charity treatments**
+
+```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","eligibleforamazon.png"))
+```
+
+```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","beforeamazon.png"))
+```
+
+```{r  fig.cap = '', out.width='60%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","wonamazon.png"))
+```
+
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","after_amazon.png"))
+```
+
+\
+
+**Results:**  In a variety of experiments, donation incidence and amounts are often higher and never lower in the Before treatment. This is statistically significant in two of five experiments and in the 'pooled' data.
+
+```{r  fig.cap = '', out.width='65%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","BarGrDonpropHiBefore_vAfter.png"))
+```
+
+
+`r format_with_col(" see <https://davidreinstein.wordpress.com/research-and-publications/> under 'working papers'","RawSienna")`
+
+\
+
+More details of this project at giveifyouwin.org
+
+\
+
+```{r  fig.cap = '', out.height='4in', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","beforeafer_allexp.png"))
+```
+
+\
+
+## Behavioral Economics: further exercises and examples
+
+*Below, I provide some revision material and questions focusing on Behavioral economics*
+
+
+- Recap 'converted ultimatum game' problems
+
+[comment]: <> (101EE)
+
+
+- Sources of evidence on various departures from classical assumptions
+
+
+[comment]: <> (101BB)
+
+\
+
+```{r  fig.cap = '', out.height='4in', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","ultimatumgame2017_exam.png"))
+```
+
+From an earlier final exam
+
+Answer...
+
+1. As long as money payoffs are in my favour, I don't have envy, so maximise these if possible
+
+
+\
+
+2. So proposer will make smallest offer that responder will accept, presuming this is at or below 5
+
+
+\
+
+
+3. Responder accepts as long as Earnings - difference in earnings is at or above 0
+
+
+
+[comment]: <> (101EE)
+
+\
+
+### Sources of evidence and discussion {-}
+
+*I want you to have a decent background on...*
+
+
+- The Allais Paradox: setup, evidence, explanations
+
+\
+
+
+[comment]: <> (101BB)
+
+<!---
+- Inconsistent preferences, impatience and 'hyperbolic discounting'
+-->
+
+[comment]: <> (101EE)
+
+
+- 'Solving converted games'
+
+
+\
+
+
+## Inconsistent preferences; examples considering decisions under uncertainty (simple treatment)
+
+### Allais paradox - what could be the explanation?
+
+... As presented and discussed above, in section \@ref(#allais) \@ref(allais)
+
+\
+
+**SO WHY do people choose B over A and D over C?**
+
+- One theory: People overweight small probabilities
+    - $\rightarrow$  Gamble A: the 1\% chance of 0 is treated as larger?
+
+We consider this and other possible explanations below, but first we consider one more paradox...
+
+\
+
+### Kahneman and Tversky scenariae {-}
+
+`r format_with_col("Warning: This is not the standard Allais paradox, it is a different paradox.","red")`
+
+**KT1. Which would you choose?** \
+
+You get £1000 upfront. \
+
+- Gamble $A: You have an 50\% chance of winning an additional £$1,000.
+
+- Gamble $B: An additional £$500 with certainty.
+
+*Write down: which would you choose?*
+
+\hrulefill
+
+\
+
+**KT1. Which would you choose?** \
+
+You get £2000 upfront. \
+
+- Gamble $C$: You have an 50\% chance of losing £1,000.
+
+- Gamble $D$: You lose £500 with certainty.
+
+
+\hrulefill
+
+
+
+
+**KT1:** You get £1000 upfront. \
+
+
+- Gamble $A$: You have an 50\% chance of winning an additional £1,000.
+
+- Gamble $B$: An additional £500 with certainty.
+
+
+\hrulefill
+
+**KT1:** You get £2000 upfront. \
+
+- Gamble $C$: You have an 50\% chance of losing £1,000.
+
+- Gamble $D$: Lose £500 with certainty.
+
+\
+
+
+\hrulefill
+
+KT (hypothetical) experiment: 16\% of subjects chose $A$ over $B$, and 68\% chose $C$ over $D$
+
+- *But $A$ is the same as $C$ (50/50 chance of £1000 or £2000),*
+- *and $B$ is the same as $D$ (certain £1500)!*
+
+Seems to depend on how we 'frame' these.
+
+### Explaining the above paradoxes with prospect theory
+
+- Above choices: cannot be explained by 'regular' EU theory
+    - Mistakes, misunderstanding probabilities?
+    - Prospect theory, loss-aversion: *not* mistakes, but maximising something other than EU
+
+\
+
+
+### Prospect theory -- loss aversion (LA) part {-}
+
+1. People don't think only about *outcomes* but about 'gains or losses relative to a reference point'
+1. Outcomes considered *losses* are particular painful
+1. Whether an outcome is a *loss* depends on the reference point
+    - which may depend on how a decision is framed
+    - or on the starting point, or initial expectations
+
+
+\
+
+$\rightarrow$ may make decisions to 'avoid losses' \
+that we wouldn't make if we saw it as 'increasing gains'
+
+\
+
+### Standard and loss-averse utility {-}
+
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","std_u_prospect_u.png"))
+```
+
+<div class="marginnote">
+Source: Nicholson and Snyder, 2012
+</div>
+ 
+
+*Notes:*
+What leads to the paradoxes and 'inconsistent behaviour'? \
+ The fact that the reference point can vary depending on things that are 'irrelevant' from an EU perspective
+
+
+
+\
+
+### KT experiment with prospect theory (loss aversion) {-}
+
+**KT1:** £1000 upfront. \
+
+- Gamble $A$: You have an 50\% chance of winning an additional £1,000.
+- Gamble $B$: An additional £500 with certainty.
+
+\
+
+\hrulefill
+
+**KT2:** £2000 upfront. \
+
+- Gamble $C$: You have an 50\% chance of losing £1,000.
+- Gamble $D$: You lose £500 with certainty.
+
+
+\hrulefill
+
+\
+
+- In KT1, your reference point may be £1000.
+    - Choose between A---a small certain gain and B---a larger uncertain gain; with same EV
+    - ... standard risk aversion predicts choosing B
+- In KT1, your reference point may be £2000.
+    - Choose between C---a possible large loss and D---a certain smaller loss (with same EV)
+    - ... standard risk aversion predicts choosing D
+    - But if feeling of *loss* is very painful, may choose C>D to have a 50\% chance of avoiding pain
+
+
+*Note:* This may help explain why some problem gamblers incur larger and larger losses to try to 'make up' for bad performance earlier in the day.
+
+\
+
+
+
+<div class="marginnote">
+Source: Nicholson and Snyder, 2012
+</div>
+ 
+```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
+ knitr::include_graphics(file.path("picsfigs","ktprospect.png"))
+```
+
+\
+
+Framing effect
+:     The same choice, presented in two different ways, may lead to different decisions.
+
+\
+
+### Allais redux: loose prospect theory (Loss Aversion) explanation {-}
+
+*Note:* We previously mentioned misweighting probabilities as an explanation for this. \
+ An alternative explanation could be loss-aversion
+
+- A: 89\% chance of £1,000, a 10\% chance of £5,000, 1\% chance of 0.
+- B: £1,000 with certainty.
+- C: 89\% chance of 0 and 11\% chance of £1,000.
+- D: 90\% chance of 0 and 10\% chance of £5,000.
+
+\
+
+- Considering A \& B, the ref. point may be close to £1000, as this can be had with certainty.
+    -  A seem to 'risk a costly loss of £1000', thus may choose 'safer' $B>A$, notwithstanding its far lower EV (£1000 vs £1390)
+
+\
+
+
+- Considering D \& C, ref. point may be close to 0, as EV's of each are low, \& 0 is likeliest outcome
+    - So 'don't worry about losses', choose D > C bc higher EV (£500 vs. £110)
+
+\
+
+
+<!-- You may also consider limited reasoning steps -- Centipede game; you can read this if you like; remember, things like this may provide you 'ammunition' on an essay question.
+-->
+
+
+
+
+
+- Some sense of the evidence 'for behavioral economics' in general
+
+\
+
+
+- Evidence on voluntary public goods provision and charitable giving (lab, field, etc) and factors leading to greater provision of each
+
+
+\
+
+
+- Relevance of 'behavioural biases' for public policy and business
+
+
+\
+
+**Evidence in general, some helpful (easier) readings**
+
+
+- DellaVigna, Stefano. "Psychology and economics: Evidence from the field." Journal of Economic literature 47.2 (2009): 315-372.
+
+- “EAST: Four simple ways to apply behavioural insights” (BIT, 2014)
+
+
+- [Nudge database](https://www.stir.ac.uk/media/schools/management/documents/economics/Nudge%20Database%201.2.pdf)
+
+\
+
+
+Also see popular books and web-tools by Dan Ariely ('Arming the Donkeys'), Richard Thaler, etc.
+
+Yudkowski's blogs $\rightarrow$ ['From AI to Zombies'](https://wiki.lesswrong.com/wiki/Rationality:_From_AI_to_Zombies')
+
+
+\
+
+[comment]: <> (101BB)
+
+
+**Fairness, social preferences**
+
+Discussion of fairness from 'Golden Balls' game show -- see [HERE](https://docs.google.com/document/d/1A8nFf0KYkRq5BTobWQf9X3QBEu3JmB_sCmOWd0vKoko/pub) and links provided
+
+
+­ Meier (2009). “A Survey of Economic Theories and Field Evidence on Pro‐Social Behavior”
+
+- List, John A. “Social Preferences: Some Thoughts from the Field.” Annual Review of Economics, vol. 1, 2009,
+pp. 563–579
+
+- Bowes and Gintis "Social Preferences" chapter in "A Cooperative  Species"
+
+
+\
+
+**Public goods contributions**
+
+
+- Chaudhuri, 2009. Sustaining cooperation in laboratory public goods experiments: a selective survey of the literature
+
+\
+
+**Time-inconsistency**
+
+
+- Ashraf, N. et al. (2006) “Tying Odysseus to the mast: Evidence from a commitment savings product in the Philippines”
+
+
+\
+
+**On charitable giving:**
+
+[innovationsinfundraising.org](innovationsinfundraising.org): A collaborative wiki guide to the evidence on practical influences on charitable giving
+
+\
+
+
+Behavioural Insights Team ['Applying behavioural insights to charitable giving'](http://www.behaviouralinsights.co.uk/publications/applying-behavioural-insights-to-charitable-giving/)
+
+
+\
+
+
+
+Ideas42: [Behavior and charitable Giving](http://www.ideas42.org/wp-content/uploads/2016/06/Behavior-and-Charitable-Giving_ideas42.pdf)
+
+
+\
+
+*Some of my projects*:
+
+- [Giveifyouwin.org](Giveifyouwin.org):  Discussion of loss aversion, other biases, in the context of charitable giving ... 
+
+- [innovationsinfundraising.org](innovationsinfundraising.org): Includes a more general discussion and survey of the literature 
+
+
+- ['Barriers to effective giving'](https://daaronr.github.io/ea_giving_barriers/index.html)
+
+\
+
+List (2011). Econ Perspectives or List (2008, ExpEcon), “Introduction to field experiments in economics with applications to the economics of charity"
+
+
+
+
+\
+
+**Allais paradox**
+
+- Writeup in Wired magazine [HERE](https://www.wired.com/2010/10/the-allais-paradox/)
+
+- Yudkowski [on the Allais paradox](http://lesswrong.com/lw/my/the_allais_paradox/) ... and
+
+- Huck, Steffen, and Wieland Müller. "Allais for all: Revisiting the paradox in a large representative sample." Journal of Risk and Uncertainty 44.3 (2012): 261-293.
+APA
+
+\
+
+See also  [Misweighting probabilities](http://lesswrong.com/lw/ml/but_theres_still_a_chance_right/) ...many useful readings on LessWrong.org
+
+
+\
+
+
+
 
 <!--chapter:end:more_be.Rmd-->
 
