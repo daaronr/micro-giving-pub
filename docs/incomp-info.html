@@ -571,9 +571,11 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="8.1.1" data-path="incomp-info.html"><a href="incomp-info.html#examples-in-tree-form"><i class="fa fa-check"></i><b>8.1.1</b> Examples in tree form</a></li>
 </ul></li>
-<li class="chapter" data-level="8.2" data-path="incomp-info.html"><a href="incomp-info.html#bayesian-games-incomplete-information"><i class="fa fa-check"></i><b>8.2</b> Bayesian games (incomplete information)</a>
+<li class="chapter" data-level="8.2" data-path="incomp-info.html"><a href="incomp-info.html#bayesian-games-incomplete-information-informal"><i class="fa fa-check"></i><b>8.2</b> Bayesian games (incomplete information, informal)</a>
 <ul>
-<li class="chapter" data-level="8.2.1" data-path="incomp-info.html"><a href="incomp-info.html#example-asymmetric-information-cournot"><i class="fa fa-check"></i><b>8.2.1</b> Example: Asymmetric information Cournot</a></li>
+<li class="chapter" data-level="8.2.1" data-path="incomp-info.html"><a href="incomp-info.html#bayesian-nash-equilibrium-bne-informal-definition"><i class="fa fa-check"></i><b>8.2.1</b> Bayesian Nash equilibrium (BNE; informal definition)</a></li>
+<li class="chapter" data-level="8.2.2" data-path="incomp-info.html"><a href="incomp-info.html#example-asymmetric-information-cournot"><i class="fa fa-check"></i><b>8.2.2</b> Example: Asymmetric information Cournot</a></li>
+<li class="chapter" data-level="8.2.3" data-path="incomp-info.html"><a href="incomp-info.html#example-fight-or-yieldsimultaneous-entry"><i class="fa fa-check"></i><b>8.2.3</b> Example: ‘fight or yield’/simultaneous entry</a></li>
 </ul></li>
 <li class="chapter" data-level="8.3" data-path="incomp-info.html"><a href="incomp-info.html#extensive-games-with-imperfect-information"><i class="fa fa-check"></i><b>8.3</b> Extensive Games with Imperfect information</a>
 <ul>
@@ -821,11 +823,36 @@ play scissors ... etc.</p>
 <p>But there may be a mixed strategy NE in this ’<em>subgame’.</em></p>
 </div>
 </div>
-<div id="bayesian-games-incomplete-information" class="section level2" number="8.2">
-<h2><span class="header-section-number">8.2</span> Bayesian games (incomplete information)</h2>
+<div id="bayesian-games-incomplete-information-informal" class="section level2" number="8.2">
+<h2><span class="header-section-number">8.2</span> Bayesian games (incomplete information, informal)</h2>
+<p>There is something uncertain, chosen by ‘nature or chance’ that affect the payoffs of one or more players (resulting from certain combinations of actions); typically we refer to this in terms of “types of players” where each type has a different set of payoffs that results from a certain profile of actions.</p>
+<p>There are “common prior beliefs about types”: All players know the payoffs of each type and the probability of each type occurring. Furthermore, we typically assume all players know that all players know this, etc. (common knowledge).</p>
+<p>However, one (or more) may know <em>for certain</em> which type she (or another player) is while other players may only know what the prior probabilities of this were.</p>
+<p>E.g., perhaps we both know that there is a 25% chance that the player you will fight against will be <em>strong</em> (perhaps we can think of 1/4 of the ‘general population’). However, I know for certain whether I am strong or weak, while you do not know this, at the time you make your choice.**</p>
+<div class="marginnote">
+<p>** I am strong, by the way, not physically, but emotionally.</p>
+</div>
+<div id="bayesian-nash-equilibrium-bne-informal-definition" class="section level3" number="8.2.1">
+<h3><span class="header-section-number">8.2.1</span> Bayesian Nash equilibrium (BNE; informal definition)</h3>
+<blockquote>
+<p>A BNE is a set of strategies, one for each <strong>type of</strong> player such that <strong>no type has an incentive to change his or her strategies given the beliefs about the types and what other types are doing.</strong></p>
+</blockquote>
+<p><a href="https://youtu.be/AzN-eV_Na10">See this ‘sourced’ video for a simple description, definition and numerical examples</a></p>
 <p>E.g., fighting an opponent of unknown strength; Cournot competition between firms with unknown cost functions.</p>
-<div id="example-asymmetric-information-cournot" class="section level3" number="8.2.1">
-<h3><span class="header-section-number">8.2.1</span> Example: Asymmetric information Cournot</h3>
+</div>
+<div id="example-asymmetric-information-cournot" class="section level3" number="8.2.2">
+<h3><span class="header-section-number">8.2.2</span> Example: Asymmetric information Cournot</h3>
+<div class="marginnote">
+<p>This is a good example to start with but actually it is somewhat less interesting than other examples. This is because the payoffs for the ‘player with known costs’ actually don’t <em>directly</em> depend on the type of ‘unknown cost player’ player you are facing. They only depend on the strategy (here quantity) chosen by this player. So it simply becomes a sort of “average across the best responses to the quantity provided by each type you might be facing”.</p>
+<p>A game like the <em>yield-fight</em> game (or equivalently, a simultaneous entry game) may be more interesting in this regard.</p>
+</div>
+<p>“Sourced” videos (unfold)</p>
+
+<div class="fold">
+<p>The video <a href="https://youtu.be/HicUuUXAI00">HERE</a> presents a version of this game plugging in some specific numbers for certain parameters such as the probability of each type and the proportional cost for the low vs high type (1/2 in each case).</p>
+<p>Sometimes playing your numbers make it easier to see the problem behind the notation and certainly easier to solve. However the limitation is that if you plug in specific numbers you can’t then look at “comparative statics” you cannot see how the results change as we <em>adjust</em> these parameters.</p>
+The video is correct but it is very slow (watch at 1.5 speed at least) and takes too many steps. He would be better off if he simply focused on the marginal revenue equals marginal cost condition and wouldn’t have to solve the problem for the low and high type separately.
+</div>
 <p><strong>Motivation</strong>:</p>
 <p>Two firms choose quantities at the same time. One firm does not know whether the other firm is high or low cost, both know their own costs. Demand is linear, marginal costs are constant.</p>
 <p><br />
@@ -833,16 +860,16 @@ play scissors ... etc.</p>
 <p><em>Q: How would you model this?</em></p>
 <p><br />
 </p>
-<p>$$</p>
-<p>\begin{aligned}
-P(Q) =a-Q=a-q_{1}-q_{2} \
-c_{1}(q_{1}) =cq_{1} \
-c_{2}(q_{2}) =c_{2}q_{2} \
-  \
-c_{2} =C_{H}\
-c_{2} =C_{L}1-
-\end{aligned}</p>
-<p>$$</p>
+<p><span class="math display">\[
+\begin{aligned}
+P(Q) =a-Q=a-q_{1}-q_{2} \\
+c_{1}(q_{1}) =cq_{1} \\
+c_{2}(q_{2}) =c_{2}\cdot q_{2} \\
+\text{Where} \text{: } \\
+c_{2} =C_{H}\text{ with probability }\theta \\
+c_{2} =C_{L}\text{ with probability }1-\theta
+\end{aligned}
+\]</span></p>
 <p><strong>Players:</strong> Firms 1 and 2*</p>
 <div class="marginnote">
 <p>* Alternatively, we can model this letting ‘Nature’ randomly choose 2’s type, if we want to use the extensive form/game tree).</p>
@@ -870,24 +897,29 @@ c_{2} =C_{L}1-
 <p>Looking ahead…</p>
 
 <div class="fold">
-<p>In sequential games, as information is revealed, we will need to consider ‘correct Bayesian updating’, and we will look For “equilibrium assessments” combining strategies and beliefs at each node for each player</p>
-<p>…</p>
+<p>In sequential games, as information is revealed, we will need to consider ‘correct Bayesian updating’, and we will look For “equilibrium assessments” combining strategies and beliefs at each node for each player…</p>
 where these beliefs at every point are consistent with the strategies chosen by each player (type of player) at each decision node.
 </div>
 <p><strong>Best Responses</strong></p>
-<p>Note: These will yield a NE strategy profile, a BNE outcome where these
+<p>Note: These will yield a NE strategy profile, a BNE outcome where these
 intersect,</p>
 <p>Firm 2:</p>
 <p><span class="math inline">\(q_{2}^{\ast }(c_{t})\)</span> solves <span class="math display">\[\begin{aligned}
 \max_{q_{2}}\text{ }[(a-q_{1}^{\ast }-q_{2})-C_{t}]q_{2}\text{ for }t \in
 \{H,L\} \\
 s.t.\text{ }q_{2} &gt;0\end{aligned}\]</span></p>
-<p><em>Q: Explain intuitively what firm 1 will do as a ‘best response’ ...</em></p>
-<p><em>A: Firm 1 will set quantity to optimize its expected profit, knowing
+
+<div class="inputq">
+<p>Q: Explain intuitively what firm 1 will do as a ‘best response’ ...</p>
+</div>
+
+<div class="fold">
+A: Firm 1 will set quantity to optimize its expected profit, knowing
 that there is some probability it will face a high-cost competitor, and
-some probability it will face a low cost competitor.  The optimal
+some probability it will face a low cost competitor. The optimal
 quantity will be somewhere in between, in this case, in fact the
-weighted average of the optimal quantities in each case.</em></p>
+weighted average of the optimal quantities in each case.
+</div>
 <p>Firm 1:</p>
 <p><span class="math inline">\(q_{1}^{\ast }\)</span> solves <span class="math display">\[\begin{aligned}
 \max_{q_{1}}\text{ }\left\{ 
@@ -927,18 +959,14 @@ q_{2}^{\ast }(C_{H}) =\frac{a-2C_{H}+C}{3}+\frac{1-\theta }{6}(C_{H}-C_{L})
 q_{2}^{\ast }(C_{L}) =\frac{a-2C_{L}+C}{3}-\frac{\theta }{6}(C_{H}-C_{L})\end{aligned}\]</span></p>
 <p><br />
 </p>
-<p><em>Question: What is interesting about these BNE outcomes (outputs)?</em></p>
+<p><em>Question: What is interesting about these BNE outcomes (outputs)?</em></p>
 <ul>
 <li><p>The output for the high-cost type is <em>higher</em> than the high-cost
-type’s output in the complete information case (i.e., in the case
-where player 1 knew 2’s cost).  Remember, this complete information
-output was <span class="math inline">\(q_{i}^{\ast }=\frac{a-2c_{i}+c_{j}}{3}\)</span> where <span class="math inline">\(c_{i}\)</span>
+type’s output in the complete information case (i.e., in the case where player 1 knew 2’s cost). Remember, this complete informationoutput was <span class="math inline">\(q_{i}^{\ast }=\frac{a-2c_{i}+c_{j}}{3}\)</span> where <span class="math inline">\(c_{i}\)</span>
 was own and <span class="math inline">\(c_{j}\)</span> was the other firm’s cost.</p></li>
 <li><p>Similarly, the output for the low-cost type is <em>lower</em> than the
 low-cost type’s output in the complete information case.</p></li>
-<li><p>For both types the BNE output involves not only the cost of the
-player’s type, but the cost of the player’s other type!  Note that
-this was <em>not</em> true for the BR functions!</p></li>
+<li><p>For both types the BNE output involves not only the cost of the player’s type, but the cost of the player’s other type!  Note that this was <em>not</em> true for the BR functions!</p></li>
 </ul>
 <p><br />
 </p>
@@ -956,10 +984,74 @@ lack of information, is described by the second additive terms in the
 above...</p>
 <p><br />
 </p>
+
+<div class="note">
+<p>We see this insight even more dramatically in the <a href="https://web.sgh.waw.pl/~mlewan1/Site/GT_files/ps2solution.pdf">fight/yield game depicted here</a>. In this case, there can be an equilibrium where the ‘weak’ player chooses ‘fight’, even though it could never be an equilibrium for her to do so in a game with complete and perfect information.</p>
+</div>
+<p><br />
+</p>
 <p><em>Q: What did we forget to compute?</em></p>
 <p>Firm 1’s BNE strategy (action):
 <span class="math display">\[q_{1}^{\ast }=\frac{a-2c+\theta C_{H}+(1-\theta )C_{L}}{3}\]</span></p>
 <p>Note, this is like a response based on ‘average’ <span class="math inline">\(c_{2}\)</span>, i.e., <span class="math inline">\(\theta C_{H}+(1-\theta )C_{L}\)</span>. This is a special case: equivalence does not always hold!</p>
+</div>
+<div id="example-fight-or-yieldsimultaneous-entry" class="section level3" number="8.2.3">
+<h3><span class="header-section-number">8.2.3</span> Example: ‘fight or yield’/simultaneous entry</h3>
+<p>In the above example only a <em>single</em> player’s payoffs (to particular combinations of actions) depended on the uncertainty (i.e., on the type of this same player, Firm 2). Thus we simply needed to</p>
+<ul>
+<li><p>figure out what ‘the best response of each type of Firm 2 was’</p></li>
+<li><p>figure out what Firm 1’s best response was to ‘the response of the average of Firm 2’s responses’</p></li>
+</ul>
+<p>… and find an intersection.</p>
+<p><br />
+</p>
+<p>However, we could let both players payoffs depend on this uncertainty, say, on "one player’s type’. This brings an additional (interesting) strategic concern.</p>
+<p>Consider a game where both players A and B can choose ‘Fight’ (Enter) or ‘Yield’ (Don’t Enter). Player B may be of the Weak or Strong type. Only B knows her own type but both know the specific probability, say <span class="math inline">\(\alpha\)</span>, that A’s will be weak and some probability A’s are strong.*</p>
+<div class="marginnote">
+<p>This could be likened to a game where firms may enter a market and if both enter only the stronger firm will survive.</p>
+</div>
+<ul>
+<li><p>Suppose that when both yield the payoffs are zero for both.</p></li>
+<li><p>When A fights and B yields (or vice versa) the fighter gets <span class="math inline">\(2\)</span> and the yielder gets zero.</p></li>
+<li><p>When both fight then the ‘winner’ depends on whether B is strong.</p>
+<ul>
+<li>If B is strong then she wins and gains <span class="math inline">\(1\)</span>, while A gets <span class="math inline">\(-1\)</span></li>
+<li>If B is weak then she loses and gets <span class="math inline">\(-1\)</span>, while A gets <span class="math inline">\(1\)</span></li>
+</ul></li>
+</ul>
+<p>(Note that I assumed that there is some value lost in the fighting.)</p>
+<p><br />
+</p>
+<p><em>If my payoff to a particular action profile depends on your type,</em> then if a particular action (say ‘Fight’) is more likely to come from your ‘strong type’ than your ‘weak type’, I need to take that into consideration in my response! And remember, this is still a <em>simultaneous</em> game.</p>
+<div class="marginnote">
+<p>In general we speak of similar concepts like the ‘acceptance curse’ in dating:</p>
+<blockquote>
+<p>Chade (2006) explored a search
+and matching environment where participants observe noisy signals of their partners’ types. He notes an “acceptance curse” resembling the winner’s curse from auction theory: a partner’s acceptance decision reveals information about their type.</p>
+</blockquote>
+<ul>
+<li><span class="citation">(Gall and Reinstein <a href="#ref-gallLosingFace2020" role="doc-biblioref">2020</a>)</span></li>
+</ul>
+<p>… implying that ‘the person who accepts your offer’ is an average of ‘a worse type’ than the average person. (Sorry, this sounds harsh).</p>
+</div>
+<p>If B only fights when she is strong and not when she is weak (i.e., if only strong B-types fight)</p>
+<ul>
+<li><p>‘A playing against someone who fights means his playing against someone who is strong’ and</p></li>
+<li><p>‘A playing against someone who does not fight means his playing against someone who is weak’.</p></li>
+</ul>
+<p>So for A, playing fight means:
+- <span class="math inline">\(\alpha\)</span> share of the time facing a strong opponent, who fights (and thus losing, getting -1), and
+- <span class="math inline">\(1-\alpha\)</span> share of the time facing a weak opponent, who Yields (and thus gaining +2)</p>
+<p><br />
+</p>
+<p>On the other hand if B ‘always fights’ (whether strong or weak), then for A, playing fight means:</p>
+<ul>
+<li><p><span class="math inline">\(\alpha\)</span> share of the time facing a strong opponent, who fights (and thus losing, getting -1 payoff),</p></li>
+<li><p><span class="math inline">\(1-\alpha\)</span> share of the time facing a weak opponent (and thus winning, getting +1 payoff)</p></li>
+</ul>
+<p><br />
+</p>
+<p>An example of this game, with slightly different payoffs, deriving the equilibrium under two possible cases is given in <a href="https://web.sgh.waw.pl/~mlewan1/Site/GT_files/ps2solution.pdf">these notes</a></p>
 </div>
 </div>
 <div id="extensive-games-with-imperfect-information" class="section level2" number="8.3">
@@ -971,6 +1063,12 @@ above...</p>
 <p><br />
 </p>
 </div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-gallLosingFace2020">
+<p>Gall, Thomas, and David Reinstein. 2020. “Losing Face.” <em>Oxford Economic Papers</em> 72 (1): 164–90.</p>
 </div>
 </div>
             </section>

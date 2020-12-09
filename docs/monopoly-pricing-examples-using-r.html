@@ -571,9 +571,11 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="8.1.1" data-path="incomp-info.html"><a href="incomp-info.html#examples-in-tree-form"><i class="fa fa-check"></i><b>8.1.1</b> Examples in tree form</a></li>
 </ul></li>
-<li class="chapter" data-level="8.2" data-path="incomp-info.html"><a href="incomp-info.html#bayesian-games-incomplete-information"><i class="fa fa-check"></i><b>8.2</b> Bayesian games (incomplete information)</a>
+<li class="chapter" data-level="8.2" data-path="incomp-info.html"><a href="incomp-info.html#bayesian-games-incomplete-information-informal"><i class="fa fa-check"></i><b>8.2</b> Bayesian games (incomplete information, informal)</a>
 <ul>
-<li class="chapter" data-level="8.2.1" data-path="incomp-info.html"><a href="incomp-info.html#example-asymmetric-information-cournot"><i class="fa fa-check"></i><b>8.2.1</b> Example: Asymmetric information Cournot</a></li>
+<li class="chapter" data-level="8.2.1" data-path="incomp-info.html"><a href="incomp-info.html#bayesian-nash-equilibrium-bne-informal-definition"><i class="fa fa-check"></i><b>8.2.1</b> Bayesian Nash equilibrium (BNE; informal definition)</a></li>
+<li class="chapter" data-level="8.2.2" data-path="incomp-info.html"><a href="incomp-info.html#example-asymmetric-information-cournot"><i class="fa fa-check"></i><b>8.2.2</b> Example: Asymmetric information Cournot</a></li>
+<li class="chapter" data-level="8.2.3" data-path="incomp-info.html"><a href="incomp-info.html#example-fight-or-yieldsimultaneous-entry"><i class="fa fa-check"></i><b>8.2.3</b> Example: ‘fight or yield’/simultaneous entry</a></li>
 </ul></li>
 <li class="chapter" data-level="8.3" data-path="incomp-info.html"><a href="incomp-info.html#extensive-games-with-imperfect-information"><i class="fa fa-check"></i><b>8.3</b> Extensive Games with Imperfect information</a>
 <ul>
@@ -754,7 +756,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb12-3"><a href="monopoly-pricing-examples-using-r.html#cb12-3"></a>wtp &lt;-<span class="st"> </span><span class="dv">45</span> <span class="op">+</span><span class="st"> </span><span class="kw">rnorm</span>(npeep)<span class="op">*</span><span class="dv">15</span> <span class="co"># Each person has a different willingness to pay</span></span></code></pre></div>
 <p><br />
 </p>
-<p>Checking, the standard deviation is 14.92 (coded as <code>sd(wtp)</code>). The exact number will vary each time you run the simulation in R but it will generally be close to 15.</p>
+<p>Checking, the standard deviation is 15.35 (coded as <code>sd(wtp)</code>). The exact number will vary each time you run the simulation in R but it will generally be close to 15.</p>
 <p><br />
 </p>
 <blockquote>
@@ -770,7 +772,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb13-5"><a href="monopoly-pricing-examples-using-r.html#cb13-5"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(op)) qd[i] &lt;-<span class="st"> </span><span class="kw">sum</span>(wtp<span class="op">&gt;=</span>op[i]) <span class="co"># We fill qd with the number of consumers with a wtp &gt;= offering price</span></span></code></pre></div>
 <p><br />
 Let’s look at the ‘vector of quantities demanded’</p>
-<p>1998, 1998, 1997, 1994, 1993, 1991, 1990, 1989, 1987, 1983, 1981, 1977, 1972, 1969, 1965, 1956, 1945, 1939, 1927, 1918, 1908, 1898, 1886, 1868, 1852, 1833, 1806, 1784, 1758, 1723, 1701, 1666, 1632, 1594, 1552, 1516, 1478, 1436, 1390, 1348, 1303, 1239, 1193, 1140, 1089, 1040, 974, 910, 847, 792, 740, 697, 636, 591, 544, 501, 460, 416, 384, 349, 305, 270, 251, 223, 201, 178, 164, 147, 137, 122, 108, 88, 73, 67, 58, 49, 42, 35, 31, 28, 25, 20, 14, 13, 13, 10, 8, 8, 8, 7, 6</p>
+<p>1999, 1997, 1997, 1996, 1995, 1993, 1990, 1988, 1983, 1982, 1975, 1969, 1966, 1961, 1958, 1948, 1939, 1933, 1919, 1909, 1898, 1886, 1875, 1853, 1829, 1805, 1780, 1745, 1724, 1679, 1643, 1615, 1572, 1536, 1499, 1461, 1409, 1376, 1323, 1271, 1231, 1165, 1111, 1055, 1008, 959, 918, 866, 821, 774, 720, 671, 625, 590, 535, 497, 456, 418, 382, 350, 319, 292, 264, 236, 205, 178, 164, 147, 131, 119, 110, 91, 74, 68, 54, 46, 41, 35, 31, 27, 25, 22, 16, 13, 11, 9, 7, 6, 5, 5, 5</p>
 <p>The code above has simply created a vector that computes the quantity demanded at each of the 90 prices £1, £2, …, £90, given the simulated willinges to pay for the 2000 potential consumers.</p>
 <p><br />
 </p>
