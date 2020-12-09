@@ -1,0 +1,922 @@
+
+\documentclass[handout]{beamer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{mathpazo}
+\usepackage{hyperref}
+\usepackage{multimedia}
+
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2552}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{Created=Thursday, November 29, 2007 11:33:44}
+%TCIDATA{LastRevised=Friday, November 30, 2007 13:56:25}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Other Documents\SW\Slides - Beamer">}
+%TCIDATA{CSTFile=beamer.cst}
+
+\newenvironment{stepenumerate}{\begin{enumerate}[<+->]}{\end{enumerate}}
+\newenvironment{stepitemize}{\begin{itemize}[<+->]}{\end{itemize} }
+\newenvironment{stepenumeratewithalert}{\begin{enumerate}[<+-| alert@+>]}{\end{enumerate}}
+\newenvironment{stepitemizewithalert}{\begin{itemize}[<+-| alert@+>]}{\end{itemize} }
+\usetheme{Madrid}
+\input{tcilatex}
+
+\begin{document}
+
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\frametitle{\textbf{Week VIII material: Reading/material/exercises}}
+
+\textbf{Imperfect/Incomplete information I: Static Games, Bayesian Nash
+Equilibrium; Adverse Selection}
+
+\begin{itemize}
+\item Random events and incomplete information:\ Watson, ch 24
+
+\begin{itemize}
+\item Ch 24, exercise 1
+\end{itemize}
+
+\item Bayesian Nash Equilibrium (BNE)\ {\small and Bayesian
+Rationalizability:\ }Watson, ch. 26
+
+\begin{itemize}
+\item Ch 26, exercise 1, 2, 6
+\end{itemize}
+
+\item Trade with Incomplete Information:
+
+\begin{itemize}
+\item Watson ch. 27 \textquotedblleft Markets and Lemons" (Not Auctions)
+
+\item Ch 27, Exercise 1
+
+\item Article:\ Akerlof, George. \textquotedblleft The Market for
+Lemons\textquotedblright\ 
+\end{itemize}
+\end{itemize}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\frametitle{\textbf{Answers to last week's exercises:}}
+
+\textbf{Chapter 22, Exercise 1:}\bigskip
+
+\bigskip Repeated stage game, 2 periods, no discounting:
+
+\begin{tabular}{|l|l|l|l|}
+\hline
+$_{1}^{\text{ \ \ \ \ }2}$ & \textbf{L} & \textbf{M} & \textbf{R} \\ \hline
+\textbf{U} & 8,8 & 0,9 & 0,0 \\ \hline
+\textbf{C} & 9,0 & 0,0 & 3,1 \\ \hline
+\textbf{D} & 0,0 & 1,3 & 3,3 \\ \hline
+\end{tabular}
+
+\bigskip
+
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+Fully describe a SPNE in which players select (U,L) in the first period.
+
+\textquotedblleft (U, L) can be supported as follows. If player 2 defects
+((U,M) is played) in the first period, then the players coordinate on (C, R)
+in the second period. If player 2 defects ((C, L) is played) in the first
+period, then the players play (D, M) in the second period. Otherwise, the
+players play (D, R) in the second period.\textquotedblright
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\textbf{Ch. 22, Exercise 2:}
+
+{\footnotesize Find conditions on the discount factor under which
+cooperation can be supported in the infinitely repeated games with the
+following stage games (use the grim-trigger strategy profile):}
+
+{\footnotesize \bigskip }
+
+\begin{tabular}{|l|l|l|}
+\hline
+$_{1}^{\text{ \ \ \ \ \ \ }2}$ & {\footnotesize C} & {\footnotesize D} \\ 
+\hline
+{\footnotesize C} & {\footnotesize 2,2} & {\footnotesize 0,4} \\ \hline
+{\footnotesize D} & {\footnotesize 4,0} & {\footnotesize 1,1} \\ \hline
+\end{tabular}
+
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+{\footnotesize (a) To support cooperation, }$\delta ${\footnotesize \ must
+be such that 2/(1 -}$\delta ${\footnotesize ) }$\geq ${\footnotesize \ 4+}$%
+\delta ${\footnotesize /(1 -}$\delta ${\footnotesize ).}
+
+{\footnotesize Solving for }$\delta ${\footnotesize , we see that
+cooperation requires }$\delta ${\footnotesize \ }$\geq ${\footnotesize \ 2/3.%
+}
+
+{\footnotesize \bigskip }
+
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+
+\begin{tabular}{|l|l|l|}
+\hline
+$_{1}^{\text{ \ \ \ \ \ \ }2}$ & {\footnotesize C} & {\footnotesize D} \\ 
+\hline
+{\footnotesize C} & {\footnotesize 3,4} & {\footnotesize 0,7} \\ \hline
+{\footnotesize D} & {\footnotesize 5,0} & {\footnotesize 1,2} \\ \hline
+\end{tabular}
+
+{\footnotesize (b) To support cooperation by player 1, it must be that }$%
+\delta ${\footnotesize \ }$\geq ${\footnotesize \ 1/2. To support
+cooperation by player 2, it must be that }$\delta ${\footnotesize \ }$\geq $%
+{\footnotesize \ 3/5. Thus, we need }$\delta ${\footnotesize \ }$\geq $%
+{\footnotesize \ 3/5.}
+
+{\footnotesize \bigskip }
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\begin{tabular}{|l|l|l|}
+\hline
+$_{1}^{\text{ \ \ \ \ \ \ }2}$ & {\footnotesize C} & {\footnotesize D} \\ 
+\hline
+{\footnotesize C} & {\footnotesize 3,2} & {\footnotesize 7,0} \\ \hline
+{\footnotesize D} & {\footnotesize 7,0} & {\footnotesize 2,1} \\ \hline
+\end{tabular}
+
+{\footnotesize (c) Cooperation by player 1 requires }$\delta ${\footnotesize %
+\ }$\geq ${\footnotesize \ 4/5. Player 2 has no incentive to deviate in the
+short run. Thus, it must be that }$\delta ${\footnotesize \ }$\geq $%
+{\footnotesize \ 4/5.}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\textbf{Ch 23, exercise 1:}
+
+{\footnotesize Betrand oligopoly, n firms, demand Q=110-}$\underline{p}$%
+{\footnotesize \ where }$\underline{p}=\min \{p_{1},...,p_{n}\}$%
+{\footnotesize . \ If multiple firms set }$\underline{p}${\footnotesize \
+then they equally share the demand. \ }$C(q)-10q${\footnotesize .
+Infinitely/indefinitely repeated game with discount factor }$\delta $%
+{\footnotesize .}
+
+{\footnotesize \bigskip }
+
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+{\footnotesize (a) What strategies might support a collusive arrangement in
+which all firms set the monopoly price }$p=60${\footnotesize \ each period?}
+
+{\footnotesize Consider all players selecting }$p_{i}${\footnotesize \ }$%
+=p=60${\footnotesize , until and unless someone defects . If someone
+defects, then everyone chooses }$p_{i}${\footnotesize \ }$=p=10$%
+{\footnotesize \ thereafter.\bigskip }
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+{\footnotesize (b) Derive a condition on }$n${\footnotesize \ and }$\delta $%
+{\footnotesize \ that guarantees (allows that)\ collusion can be
+sustained:\bigskip }
+
+{\footnotesize The quantity of each firm when they collude is }$%
+qc=(110-60)/n=50/n${\footnotesize .}
+
+{\footnotesize The profit of each firm under collusion is }$%
+(50/n)60-10(50/n)=2500/n.${\footnotesize \bigskip }
+
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+{\footnotesize The profit under the Nash equilibrium of the stage game is 0.
+If player i defects, she does so by setting }$p_{i}=60-\varepsilon $%
+{\footnotesize ,}
+
+{\footnotesize where }$\varepsilon ${\footnotesize \ is arbitrarily small.
+Thus, the stage game payoff of defecting can be made arbitrarily close to }$%
+2500.$
+
+{\footnotesize \bigskip To support collusion, it must be that }$%
+[2500/n][1/(1-\delta )]\geq 2500+0${\footnotesize , which simplifies to }$%
+\delta \geq 1-1/n$
+
+{\footnotesize (c) Collusion is \textquotedblleft easier\textquotedblright\
+with fewer firms.}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\frametitle{\textbf{"Incomplete information"}}
+
+\textbf{Chance nodes}:\ nature chooses \textquotedblleft
+types\textquotedblright , i.e., payoffs.
+
+Fig 24.1: the gift game [Board]
+
+\bigskip 
+
+{\footnotesize If we think of nature as a \textquotedblleft
+player\textquotedblright , this is technically equivalent to imperfect
+information, but analysis is a bit different..}
+
+{\footnotesize In this course we will examine games where nature moves first.%
+}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+In this game, only the player himself knows his own type. [Explain payoffs.]
+
+\bigskip
+
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+{\footnotesize \textquotedblleft Although a player's private information
+often concerns his own payoffs, it sometimes has to do with the payoffs of
+another player.\textquotedblright }
+
+\bigskip
+
+{\footnotesize \textquotedblleft Rational play will require a player who
+knows his own type to think about what he would have done had he been
+another type\textquotedblright\ Since other guy doesn't know which type you
+are, you have to imagine what he thinks you might do if you were the other
+type.}
+
+\bigskip 
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\textbf{(Bayesian)\ Nash Equilibrium (BNE): }Action of each \textit{type of
+player} is optimal (in EU)\ given actions chosen by all other types. \ 
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\frametitle{\textbf{Bayesian Normal Form}}
+
+Compute payoffs by averaging over the random events. \ 
+
+\bigskip 
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+
+Example: gift game in Bayesian normal form: {\footnotesize [Explain
+construction, board]}
+
+\bigskip 
+
+\begin{tabular}{lll}
+$_{1}$ \ \ \ $^{2}$ & \textbf{A} & \textbf{R} \\ 
+\textbf{G}$^{F}$\textbf{G}$^{E}$ & 1,2p-1 & -1,0 \\ 
+\textbf{G}$^{F}$\textbf{N}$^{E}$ & p,p & -p,0 \\ 
+\textbf{N}$^{F}$\textbf{G}$^{E}$ & 1-p,p-1 & p-1,0 \\ 
+\textbf{N}$^{F}$\textbf{N}$^{E}$ & 0,0 & 0,0%
+\end{tabular}%
+\bigskip 
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+{\footnotesize Notice a strategy assigns an action for each type of player
+1, while player 2 cannot condition on 1's type since she doesn't know
+it.\bigskip }
+
+{\footnotesize Once we construct this Bayesian normal form we can solve for
+(Bayesian)\ NE, rationalizability, etc., in a standard way.\bigskip }
+
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+{\footnotesize Note that expected utility is additive and the actual choice
+made as one type does not affect the utility if the other type is realised.
+\ Thus, the problem can be stated equivalently as each type optimizing, or
+as a player optimizing over his utility in expectation of type. \ A player
+who optimizes for each type is the same as a player who \ optimizes in
+expectation of types. \ That is, a player who optimizes both }$%
+{\footnotesize U}^{F}${\footnotesize \ and }${\footnotesize U}^{E}$%
+{\footnotesize \ separately is doing the same as a player who is choosing }$%
+s^{F}${\footnotesize \ and s}$^{E}${\footnotesize \ to optimize }$%
+pU^{F}+(1-p)U^{E}$.
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\textbf{Alternate depiction:\ Figure 24.3, 24.4}
+
+[explain]\bigskip
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\textbf{Exercise: Fight or yield (from Osborne)}
+
+\textbf{Players:}\ $\{1,2\}$
+
+\textbf{States:}\ $\{Strong,Weak\}$
+
+\textbf{Actions:} $(\{Fight,Yield\},\{Fight,Yield\})$
+
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+\textbf{Information structure: }Player 2 can see whether we are in a strong
+or weak state (i.e., whether player 2 himself is strong or weak), player 1
+can not.\medskip
+
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+\textbf{Payoffs (to actions, types):}%
+\begin{eqnarray*}
+\lbrack U_{1}(F,F),strong)),U_{2}(F,F),strong))] &\equiv &(\mathbf{U}%
+((F,F),strong))=[-1,1] \\
+\mathbf{U}((F,F),weak)) &=&[1,-1] \\
+\mathbf{U}((F,Y),\omega )) &=&[1,0] \\
+\mathbf{U}((Y,F),\omega )) &=&[0,1] \\
+\mathbf{U}((Y,Y),\omega )) &=&[0,0]
+\end{eqnarray*}
+
+{\footnotesize Where }$\omega ${\footnotesize \ can represent either state.
+\ I.,e, }$\omega \in \{weak,strong\}.$
+
+{\footnotesize Note that it does not matter which state we are in if one or
+both players yield.}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\textbf{EU to types}
+
+\textit{Outcomes:}
+
+If strong (occurs with, say, probability $\alpha $): 
+\begin{tabular}{|c|c|c|}
+\hline
+& \textbf{F} & \textbf{Y} \\ \hline
+\textbf{F} & $-1,1$ & $1,0$ \\ \hline
+\textbf{Y} & $0,1$ & $0,0$ \\ \hline
+\end{tabular}
+
+\bigskip
+
+If weak (occurs with, say, probability $1-\alpha $): 
+\begin{tabular}{|c|c|c|}
+\hline
+& \textbf{F} & \textbf{Y} \\ \hline
+\textbf{F} & $1,-1$ & $1,0$ \\ \hline
+\textbf{Y} & $0,1$ & $0,0$ \\ \hline
+\end{tabular}%
+\bigskip
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\textbf{How do we find (all)\ BNE?}
+
+We can construct the `Bayesian normal form' and solve as usual. \ Or, we can
+look for the best response function of each `player', here of each
+player-type, and see where these BR functions meet.\medskip
+
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+Each type of player 2's BR are underlined below.\medskip
+
+If strong (probability $\alpha $): 
+\begin{tabular}{|c|c|c|}
+\hline
+& \textbf{F} & \textbf{Y} \\ \hline
+\textbf{F} & -1,\underline{1} & 1,0 \\ \hline
+\textbf{Y} & 0,\underline{1} & 0,0 \\ \hline
+\end{tabular}
+
+\medskip
+
+If weak (probability $1-\alpha $): 
+\begin{tabular}{|c|c|c|}
+\hline
+& \textbf{F} & \textbf{Y} \\ \hline
+\textbf{F} & 1,-1 & 1,\underline{0} \\ \hline
+\textbf{Y} & 0,\underline{1} & 0,0 \\ \hline
+\end{tabular}%
+\textbf{\medskip }
+
+Let's call these response functions (for both types) $BR_{2}(\tau _{2},A_{1})
+$ where $A_{1}$ represent's player 1's action and $\tau _{2}$ her type. \
+Any BNE must involve these best responses!
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\textit{For player 1}
+
+{\footnotesize Note, player 1 only gets one kind of signal here. \ Thus
+there is only one `type' of player 1.}\bigskip
+
+{\footnotesize Her move must be a best response in EU terms given the
+strategies of the two types of player 2.}
+
+{\footnotesize 1 cannot condition her strategy on 2's type.}\bigskip
+
+{\footnotesize Thus we \textbf{don't} look for 1's BR in the previous
+matrices above! \ We need to look for a BR in terms of expected values.}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\textbf{Candidate 1:\ }First, let us consider the profile where player 1 is
+playing F and 2 is best responding (using the functions on previous
+slide).\bigskip 
+
+Given 2's behaviour, player 1's EU to playing F is :
+
+\[
+U_{1}(F;BR_{2}(\tau _{2},F))=U_{1}(F;F,Y)=\alpha (-1)+(1-\alpha )1=1-2\alpha 
+\]
+
+If 1 deviates to yield, she gets:%
+\[
+U_{1}(Y;BR_{2}(\tau _{2},F))=U_{1}(Y;F,Y)=\alpha \ast 0+(1-\alpha )0=0 
+\]
+
+The BR for player 1 depends on $\alpha $. $\ $
+
+\bigskip 
+
+Thus $(F;F,Y)$ is a BNE$\ $if $U_{1}(F;BR_{2}(\tau _{2},F))\geq
+U_{1}(Y;BR_{2}(\tau _{2},F))$, i.e,. if $1-2\alpha \geq 0$ $\mathbf{%
+\Longrightarrow ~}\alpha \leq \frac{1}{2}$,
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\textbf{Candidate 2:\ }Next, let us consider the profile where player 1 is
+playing Y and 2 is best responding.
+
+Given 2's behaviour, player 1's EU to playing Y is :
+
+\[
+U_{1}(Y;BR_{2}(\tau _{2},Y))=U_{1}(Y;F,F)=\alpha \ast 0+(1-\alpha )\ast 0=0
+\]
+
+{\footnotesize Where the first argument of }$U_{1}(Y;F,F)$ {\footnotesize %
+represents player 1's actions, and the second and third argument represent
+the strong and weak player 2's actions, respectively.}\bigskip 
+
+If 1 deviates to fight, she gets:%
+\[
+U_{1}(F;BR_{2}(\tau _{2},Y))=U_{1}(F;F,F)=\alpha \ast 1+(1-\alpha )\ast
+-1=1-2\alpha 
+\]
+
+Again, the BR for player 1 depends on $\alpha $.\bigskip 
+
+Thus $(Y;F,F)$ is a BNE$\ $if $U_{1}(Y;BR_{2}(\tau _{2},Y))\geq
+U_{1}(F;BR_{2}(\tau _{2},Y))$, i.e,. if $1-2\alpha \leq 0$ $\mathbf{%
+\Longrightarrow ~}\alpha \geq \frac{1}{2}$,
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+Thus if $\alpha \leq \frac{1}{2}$ (player 2 is at least as likely to be weak
+as strong), then $\{F;F,Y\}$ will be a BNE.
+
+\bigskip 
+
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+If $\alpha \geq \frac{1}{2}$ (player 2 is as likely to be strong as weak),
+then $\{Y;F,F\}$ will be a BNE.
+
+\bigskip 
+
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+If $\alpha =\frac{1}{2}$ these will both be NE\ (as will a variety of mixed
+strategies)
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+{\footnotesize Note: the fact that 1's utility from deviating from either of
+these candidates for BNE yielded 1's utility from the other candidate was a
+coincidence. }\bigskip 
+
+{\footnotesize \ In evaluating whether a strategy is a BNE, we need to see
+that both players are best responding given the other player's strategy! \
+2's strategy here \textit{can not} be conditional on 1's strategy -- this is
+a simultaneous game. We check whether a player is better to play a strategy
+that is part of a candidate BNE or to deviate unilaterally. \ }\bigskip 
+
+{\footnotesize In dynamic (not simultaneous) games with perfect information
+a strategy can be contingent on a previous player's action, but not here!}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\textbf{Why would this be a (B)NE?}
+
+For $\{F;F,Y\}$:
+
+For player 2-strong, if player 1 is playing Fight then Fight is a BR.
+
+For player 2-weak, if player 1 is playing Fight then Yield is a BR.
+
+\bigskip
+
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+For player 1, if player 2-strong is playing Fight and player 2-weak is
+playing Yield, player 1 will weigh the odds of facing a strong or weak
+player 2. \ If it is more likely she is facing a weak player, it is better
+(in expectation) to fight.
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\textbf{Example 2: Asymmetric information Cournot}
+
+See other sheet (ignore part on signals)
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\frametitle{\textbf{Trade with Incomplete information: ``The Lemons
+Problem''}} {\footnotesize Based on Akerlof (1970)}\medskip
+
+\textbf{Players:} Buyer, Seller, Nature
+
+\medskip 
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+
+\textbf{Play: }{\footnotesize [Board -- Sketch tree]}
+
+1. Nature chooses quality of car $x$ according to probability distribution:
+
+$x$ $\symbol{126}U(0,1)$ {\footnotesize (standard uniform distribution; go
+over this)}\medskip
+
+\medskip 
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+2. Seller proposes a \textit{tioli} price {\footnotesize (could have buyer
+propose, or some bargaining process)}.
+
+{\footnotesize Note: a BNE must specify what price each type of Seller would
+propose, i.e., need to specify a function }$p^{\ast }(x)${\footnotesize %
+.\medskip }
+
+\medskip 
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+3. Buyer decides whether to buy or not.
+
+\medskip 
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+{\footnotesize Note: An equilibrium profile must specify a complete strategy
+for Buyer, i.e., a function }$\ {\footnotesize B}^{\ast }{\footnotesize %
+(p)\in \{0,1\}}${\footnotesize . \ It is wlog to assume that such a strategy
+will be \textquotedblleft Buy if }$p\leq \overline{p}${\footnotesize %
+\textquotedblright\ for some maximum price }$\overline{p}${\footnotesize %
+.\medskip }
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\textbf{Payoffs: }
+
+Buyer values the car at $\frac{3}{2}x$;
+
+thus gets payoff $u_{B}=\left\{ 
+\begin{array}{c}
+\frac{3}{2}x-p\text{ {\footnotesize if buy}} \\ 
+0\text{ {\footnotesize otherwise }}%
+\end{array}%
+\right. $ {\footnotesize (we assume separable utility here) }
+
+\medskip 
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+Seller values the car at $x,$
+
+thus gets payoff $u_{s}=\left\{ 
+\begin{array}{c}
+p\text{ {\footnotesize if Buyer chooses \textquotedblleft
+buy\textquotedblright }} \\ 
+x\text{ {\footnotesize otherwise (keeps the car)}}%
+\end{array}%
+\right. $\medskip
+
+\medskip 
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+\textbf{Efficient outcome:}\ Buyer must buy the car. \ 
+
+{\footnotesize Any price }$p${\footnotesize \ s.t. }$x\leq p\leq \frac{3}{2}%
+x ${\footnotesize \ will yield trade and will be a Pareto-improvement over
+no trade.}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+\textbf{Equilibrium outcome:}
+
+Buyer's equilibrium strategy must set $\bar{p}=\frac{3}{2}E(x|p)$. \ 
+{\footnotesize I.e., buy if the price is below }$\frac{3}{2}${\footnotesize %
+\ of buyer's expectation over the quality of the car -- where that
+expectation will depend on the price offered!}\bigskip 
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+
+What is $E(x|p)$? \ {\footnotesize It will be based on a \textquotedblleft
+belief\textquotedblright\ about what seller of each type }$x${\footnotesize %
+\ will do, and thus the probability of each }$x${\footnotesize \ given the
+observed }$p${\footnotesize \ -- this foreshadows perfect Bayesian
+equilibrium (see next week).} 
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+Note Seller will never set $p<x$, since Seller would prefer to keep the car
+at such a price. \ Thus, observing $p$ tells Buyer that $x\leq p$.
+(Thi\bigskip 
+
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+{\footnotesize For a standard uniform distribution,} ${\footnotesize %
+E(x|x\leq p)=}\frac{1}{2}{\footnotesize p}$. {\footnotesize Thus} $%
+{\footnotesize E(x|p)=}\frac{1}{2}{\footnotesize p}$.
+
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+Thus, $\bar{p}=\frac{3}{2}E(x|p)=\frac{3}{2}\times \frac{1}{2}p=\frac{3}{4}p$%
+.\bigskip
+
+%TCIMACRO{\TeXButton{Pause}{\pause}}%
+%BeginExpansion
+\pause%
+%EndExpansion
+What does this mean? \ For any price $p$ offered, the Buyer values the
+product at $\frac{3}{4}p$. \ Thus, for any price offered, the Buyer will
+reject! \ Thus, the only equilibrium\ must involve no trade, and thus be
+inefficient!
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+%TCIMACRO{\TeXButton{BeginFrame}{\begin{frame}}}%
+%BeginExpansion
+\begin{frame}%
+%EndExpansion
+
+Any profile $\{p(x)=$whatever;reject always$\}$ {\footnotesize (paired with
+certain beliefs ... see next week) }is an equilibrium.
+
+\bigskip
+
+We can allow $\{p(x)=whatever,p(0)=0$; accept only if $p=0\}$ ,
+but~who~cares?
+
+\bigskip
+
+{\footnotesize Note: See Watson's \textquotedblleft Jerry and
+Freddy\textquotedblright\ for a simpler example.}
+
+%TCIMACRO{\TeXButton{EndFrame}{\end{frame}}}%
+%BeginExpansion
+\end{frame}%
+%EndExpansion
+
+\end{document}

@@ -26,16 +26,16 @@
 \
 
 
-## Suggested readings 
+## Suggested readings
 
-See [outline](#game_outline) ... 
+See [outline](#game_outline) ...
 
 <div class="marginnote">
 
 1 Dec 2020: I've added in some additional suggested readings and articles that may be helpful for your project.
 
 </div>
- 
+
 
 ## Introduction
 
@@ -253,19 +253,19 @@ Also, there are also certain kinds of 'psychological' motivations that cannot be
 
 ```
 
-Main point: the payoffs depicted in a game should *include* psychological and fairness concerns. 
+Main point: the payoffs depicted in a game should *include* psychological and fairness concerns.
 
-I discuss this further in the supplement on behavioral economics and 'psychological payoffs' [here](#psych-payoffs). 
+I discuss this further in the supplement on behavioral economics and 'psychological payoffs' [here](#psych-payoffs).
 
 <div class="marginnote">
 
 [A Public Dilemma: Cooperation with Large
-Stakes and a Large Audience](http://repository.essex.ac.uk/9979/1/dp617.pdf) ... offers an excellent example of how to apply this. 
+Stakes and a Large Audience](http://repository.essex.ac.uk/9979/1/dp617.pdf) ... offers an excellent example of how to apply this.
 
 Game theoretical analysis of a game show game 'Golden Balls'; great use of game theory considering social preferences, applied to an empirical analysis. I have some slideson this [here](https://www.dropbox.com/s/zjpys23uyoblqr0/notesonbelotforclass_handout.pdf?dl=0).
 
 </div>
- 
+
 
 \
 
@@ -1219,13 +1219,13 @@ A general method for finding NE for continuous games with differentiable payoffs
 
 3. Look for intersection(s) $\rightarrow$ Nash equilibrium (equilibria)
 
-```  
+```
 
 
 <div class="marginnote">
 Source: https://www3.nd.edu/~tjohns20/gametheory_SP13/slides3.pdf}
 </div>
- 
+
 
 <br>  \bigskip
 
@@ -1240,7 +1240,7 @@ If the game is symmetric this is a 'fixed point'.
 
 \
 
-### Tragedy of the Commons example 
+### Tragedy of the Commons example
 
 Shepherds A and B raise $s_A$ and $s_B$ sheep, respectively, in the same meadow
 
@@ -1295,7 +1295,7 @@ $s_A* = s_B* = 40$
 <div class="marginnote">
 Image source: Nicholson and Snyder, 2012
 </div>
- 
+
 
 ```{r  fig.cap = '', out.width='80%', fig.asp=.4, fig.align='center',  echo = FALSE}
  knitr::include_graphics(file.path("picsfigs","brsheep.png"))
@@ -1355,7 +1355,7 @@ Note that both the PD and the above 'tragedy of the commons' game illustrate a s
 
 \
 
-### Again -- "Strategic complements" and "strategic substitutes" 
+### Again -- "Strategic complements" and "strategic substitutes"
 
 
 The slope of these 'best response functions' tells you whether the two players 'choice variables' (above, sheep) are **Strategic complements** or **Strategic substitutes**.
@@ -1373,7 +1373,7 @@ The slope of these 'best response functions' tells you whether the two players '
 Comparative statics can be applied more generally and even in much more abstract games and situations. Sometimes we can derive comparative statics properties of equilibria (or "monotone comparative statics" where we do not allow jumps between equilibria) even when we cannot solve for the equilibria themselves!
 
 ```
- 
+
 
 
 ## Supplement: Prisoners’ Dillemma in Normal and extensive form {#pd-normal}
@@ -1869,7 +1869,7 @@ knitr::include_url("http://gte.csc.liv.ac.uk/gte/builder/")
 
 ## 'Repeated games' ... a form of sequential games (simple depiction)
 
-One form of sequential game is called a "repeated game" 
+One form of sequential game is called a "repeated game"
 
 Repeated game: A simultaneous 'stage' game that is played some finite or infinite (or indefinite) number of times. The payoffs are the sum of the payoffs in each "stage game" (with possible discounting to reflect time preferences).
 
@@ -1918,7 +1918,7 @@ Grim trigger strategy
     - $g$ may represent the 'probability the game is repeated another time'
 
 <div class="marginnote">
- 
+
 Note: With an infinitely-repeated game with no discounting, payoffs would be potentially infinite, making it hard to decipher. It's realistic to imagine people discount the future, and we don't know how long these repeated interactions last; people die, move away, etc.
 
 </div>
@@ -1926,7 +1926,7 @@ Note: With an infinitely-repeated game with no discounting, payoffs would be pot
 \
 
 <div class="marginnote">
- 
+
 *At this point it is worth a quick revision of what 'discount factors' mean.* This is a basic concept in Economics and Finance. I discuss this in a prior section [on 'time preferences'](#time-pref), but it is more fully discussed elsewhere. In particular, see  McDL: 13.3 on ‘dynamic choice’.
 
 \
@@ -1980,7 +1980,7 @@ The standard derivation of this is pretty neat; if you are not familiar, the Kha
 
 This formula is an important one in Economics (and beyond), particularly for discounting a constant stream of payoffs, e.g., stock dividends
 
-```  
+```
 \
 
 Thus cooperation in a single period is 'weakly preferred' (at least as good) if
@@ -1992,8 +1992,8 @@ $$(-2) \times (1 + g + g^2 + g^3 +... ) \geq (-1) + -3 \times (g + g^2 + g^3 + .
 $$g + g^2 + g^3 + ... \geq 1$$\*
 
 <div class="marginnote">
- 
-\* Intuition for the second formula: left side is loss of future payoffs (-3 vs -2 forever from next period). 
+
+\* Intuition for the second formula: left side is loss of future payoffs (-3 vs -2 forever from next period).
 
 The right side is gain in that period (get -1 rather than -2))
 
@@ -2296,11 +2296,11 @@ This is a widely-considered game, often taken to model bargaining between two pe
 
 ```{block2,  type='fold'}
 
-As described, there are *several* Nash equilibria but only two that are subgame perfect... i.e., where player 2 would actually wish to follow-through on her strategy at all points. 
+As described, there are *several* Nash equilibria but only two that are subgame perfect... i.e., where player 2 would actually wish to follow-through on her strategy at all points.
 
 \
 
-Here 'indivisible' makes the discussion easier. If we had the good to allocate being expressed as real numbers,the only SPNE would have player 1 offering 0, and player 2 accepting every offer. But this might seem weird because after being offered 0, player 2's decision to choose 'Yes' is only a weak preference. 
+Here 'indivisible' makes the discussion easier. If we had the good to allocate being expressed as real numbers,the only SPNE would have player 1 offering 0, and player 2 accepting every offer. But this might seem weird because after being offered 0, player 2's decision to choose 'Yes' is only a weak preference.
 
 \
 
@@ -2318,7 +2318,7 @@ Maybe it's good to think of as 'alternating buying rounds of drinks at a pub' ..
 <div class="marginnote">
 \*See, e.g., . [@listDeadweightLossChristmas1998; @Reinstein2014; @waldfogelDeadweightLossChristmas1993]
 </div>
- 
+
 
 <!-- Add link to gift discussion here -->
 
@@ -2334,14 +2334,14 @@ knitr::include_graphics("picsfigs/or-6-per-centipede.png")
 
 Players: 1, 2
 
-- They alternate making decision to 'stop the game ($S$) or continue ($C$)' 
+- They alternate making decision to 'stop the game ($S$) or continue ($C$)'
 
 - The game lasts at most $2T$ periods... if no one stops it
 
 - After every period whenever a player choose to continue (C ), she loses $1 and the other player gains $2.
 
 
-There are many Nash equilibria, but all have the outcome $S0$: player 1 stops immediately. However, the 'complete contingent strategies'  differ among these NE. 
+There are many Nash equilibria, but all have the outcome $S0$: player 1 stops immediately. However, the 'complete contingent strategies'  differ among these NE.
 
 > player 1 chooses $S$ at the start of the game and player 2 chooses $S$ after the history $(C)$, but after longer histories each player’s strategy may choose either $C$ or $S$.
 
@@ -2349,14 +2349,14 @@ There are many Nash equilibria, but all have the outcome $S0$: player 1 stops im
 > ... given that player 1 intends to stop the game immediately, player 2 is indifferent between all her strategies.
 
 
-> However, the game has a unique subgame perfect equilibrium, in which each player chooses S whenever she moves. 
+> However, the game has a unique subgame perfect equilibrium, in which each player chooses S whenever she moves.
 
 
 <div class="marginnote">
 I need to think about this more, not sure I get the point they are making here.
 </div>
- 
-This can be found through backwards induction. In the following subsection O-R make a big deal about how the fully contingent 'strategies', which are more elaborate than 'plans of action'  are meaningful because 
+
+This can be found through backwards induction. In the following subsection O-R make a big deal about how the fully contingent 'strategies', which are more elaborate than 'plans of action'  are meaningful because
 
 
 >  a pair of strategies in the centipede game, and in other extensive games in which players move more than once, is more than a pair of plans of action; it embodies also an analysis of the game that contains the beliefs of the players about what would happen after any history.
@@ -2365,10 +2365,10 @@ This can be found through backwards induction. In the following subsection O-R m
 
 ```{block2,  type='note'}
 
-This game (see discussion of experimental evidence) also illustrates the idea that being able to solve for the SPNE doesn't necessarily help me play better. Even leaving aside social/fairness preferences here, if you think that the other player will *not* use backwards induction, you might be better off choosing 'continue', at least in the earlier stages. 
+This game (see discussion of experimental evidence) also illustrates the idea that being able to solve for the SPNE doesn't necessarily help me play better. Even leaving aside social/fairness preferences here, if you think that the other player will *not* use backwards induction, you might be better off choosing 'continue', at least in the earlier stages.
 
 Another thing to think about: suppose we have a long Centipede game. Suppose I move second, and I've observed the first player choosing 'Continue'. Is it *then* still  reasonable to assume the other player uses backwards induction and maximizes her payoff, or should I adjust my assumptions and my calculations?
-    
+
 ```
 
 \
@@ -2388,7 +2388,7 @@ I think you may want to skip, for now, the formal definition of backward inducti
 
 Here O-R present and discuss some of the key models in the field of Bargaining theory.  This is well-worth a read, and very relevant to 'applied theoretical questions' (is that an oxymoron?).
 
-It is striking to see how the outcome consistent with SPNE of wach of the setups varies dramatically depending on what seem like small changes in the setup. 
+It is striking to see how the outcome consistent with SPNE of wach of the setups varies dramatically depending on what seem like small changes in the setup.
 
 #### Take it or leave it (ultimatum game) {-}
 
@@ -2397,6 +2397,35 @@ It is striking to see how the outcome consistent with SPNE of wach of the setups
 #### Infinite horizon with one-sided offers {-}
 
 #### Infinite horizon with one-sided offers and discounting {-}
+
+
+\
+
+Key idea behind the proof of O-R Prop 16.7:
+
+```{block2,  type='fold'}
+
+"M" is the supremum (think 'maximum' for now) of player 2's payoffs can get in any SPNE.
+
+- This means that if player 1 offers $\beta \times M + \epsilon$  (where $\beta$ is the discounting, e is a 'very small number) in any period, then player 2 will accept the offer...
+    - because the most she will get if she waits is to get (less than) M next period, which is worth (less than) $\beta \times M$ to her now, because of discounting
+
+
+So in any SPNE player 2 plays 'accept' after any history where she has been offered any amount greater than $\beta \times M$
+	So player 2's payoffs cannot be strictly greater than $\beta \times M$ in any SPNE
+
+
+
+But if she cannot get more than $\beta \times M$ in any SPNE that means that this "$\beta \times M$" is the most she can get, so player 1 only needs to offer $\beta \times beta \times M$...	But then she can not get more than $\beta \times beta \times M$, so player 1 only needs to offer $\beta \times beta \times beta \times M$... etc
+
+
+More formally, ., the 'supremum' of her payoffs must be $\beta \times M$, but this 'supremum' is defined as M. So $\beta \times M=M$ must hold. It can only hold if $M=0$.
+
+
+Intuition -- in period $t$ you only need to offer her $\beta \times$ 'the most she could get if she rejects' in period t+1; but if she rejects, then the remaining game (in period $t+1$) is identical to the game now (in period t), so you need to offer her some amount so that 'the discounted value of the amount is the same as the amount itself'... this is only the case if the amount is 0
+
+
+```
 
 #### Infinite horizon with alternating offers and discounting {-}
 
@@ -2411,13 +2440,363 @@ It is striking to see how the outcome consistent with SPNE of wach of the setups
 
 # Incomplete/Imperfect information (time permitting) {#incomp-info}
 
+General progression through a game theory module or text: 
+
+```{block2,  type='fold'}
+
+> As we consider progressively richer games, we progressively strengthen
+> the equilibrium concept, in order to rule out implausible equilibria
+> in the richer games that would survive if we applied equilibrium
+> concepts suitable for simpler games (Gibbons, p. 173)
+
+Nash Equilibrium (NE)$\ \mathbf{\rightarrow }$ subgame-perfect NE (SPNE)
+\mathbf{\rightarrow }$ Bayesian NE $\mathbf{\rightarrow }$ Weak
+Sequential Equilibrium
+
+Static games of perfect information $\mathbf{\rightarrow }$ dynamic
+games of perfect (or 'some imperfect') information
+$\mathbf{\rightarrow }$ static games of imperfect information
+$\mathbf{\rightarrow }$
+
+dynamic games of imperfect information
+
+```
+
+\
+
+We previously considered games were played was essentially simultaneous or entirely sequential. The important issue was whether or not a player knew the other players choice when making her choice (and potentially being able to revise for choice in light of this; see 'subgame perfection').
+
+We assumed each player knew whom she would potentially be playing with, what her own payoffs were, and what the other players' payoffs were.
+
+\
+
+We will now relax some of these assumptions to consider a wider class of interesting and relevant games. The notes below are less formal to allow us to get a taste of this material and the insights.
+
+
+\
+
+**We will allow for:**
+
+**1. (Asymmetric) "incomplete information" or (nature/chance); uncertainty about STATES:** One or more players may not know for sure what the payoffs of other players are,\* or (more or less equivalently) "who" the player she is facing is. However this is not blind "I do not know anything" uncertainty.\*\*
+
+<div class="marginnote">
+\* Or even she may be unaware of her own payoffs; There are even situations in which other players might know more about player's payoff than the player herself (see for example models, in a slightly different context of "informed principals").
+
+\** The latter is  sometimes called 'ambiguity' or 'Knightian uncertainty'. 
+</div>
+
+Players know the probability of each type of payoffs, i., the distribution that the payoffs (or player types) are drawn from. This is often modeled in an extensive form or three form by having an initial player called "nature" who simply makes a random choice.
+
+\
+
+If we assume this is simple symmetric randomness, where All players are equally informed at all points in time, this can basically be encapsulated in our previous frameworks; simply replacing payoffs with expected payoffs.
+
+Instead, we focus on cases where, at a certain point in time, one player knows more than the other player about the random realisation.
+
+\
+
+**2. 'Imperfect' information about (some) previous moves (actions); uncertainty about ACTIONS**
+
+We have seen sequential games where players know all previous moves, i.e. they know "where in the game tree" they are when they make their choices. This was our standard extensive game. We have also seen that simultaneous games are equivalent to sequential games were no player is aware of the choices other players have made when they make their own choices. 
+
+Below, we will consider the case where some previous choices may be known while others are not. 
+
+\
+
+We can depict "what a player knows when she made her choice" with the use of "information sets" also related to "information partitions", described in the next subsection. In the tree diagrams these are usually depicted by connecting decision nodes (points where a player 'has the move') to one another with solid or dashed lines.
+
+We may also consider 'uncertainty about *states*' with information partitions, if we use the aforementioned notation with the "nature" player.
+
+## Information sets (and 'partitions')
+
+
+An **information set** for a player is a collection of decision nodes
+satisfying:\*
+
+<div class="marginnote">
+\*"An information partition is an allocation of each non-terminal node of the tree to an information set."
+</div>
+ 
+
+i. The player has the move at every node in an information set
+
+
+ii. When the play of the game reaches a node in the information set, the
+player with the move does not know what node within the information set has (or
+has not) been reached
+
+
+- The Player can not distinguish between nodes connected by an information set ...  because he/she doesn't know what decisions were taken previously (by
+another player or by "nature")
+
+- A player can't play a different strategy for different nodes connected by an information set
+
+### Examples in tree form
+
+**Example: 'Rocks/Paper/Scissor' in extensive form, with variations.**
+
+**Traditional RPS:**
+
+<center>
+![](picsfigs/rps_standard.png)
+
+</center>
+
+*Intuition*: what are the NE?
+
+This is a simultaneous 'strictly competitive' game.  This is an
+'anti-coordination' game.
+
+There can be no pure strategy NE.
+
+If player 1 puts $\frac{1}{3}$ probability on each player 2 is neutral
+between each action.. If player 2 puts $\frac{1}{3}$ probability on
+each (of R, P, S) player 1 is neutral between each action.  Thus this is
+a NE, although there may other NE as well (I don't think there are, but
+it is worth checking), using the techniques for simultaneous games we
+learned previously.
+
+\
+
+
+**RPS where player 1 is very slow at making a fist:**
+
+<center>
+
+![](picsfigs/rps_slow_fist.png)
+
+</center>
+
+
+
+
+*Intuition*: What will occur?
+
+If player 1 plays rock 2 will play paper and win, yielding payoffs of
+0,1.
+
+So player 1 probably won't want to play rock.
+
+But what will player 1 want to play? Paper or scissors?
+
+If player 1 plays scissors or paper player 2 will not know which is
+played, and might play scissors ('if not rock'), so as to either win or
+tie (but never lose).
+
+But knowing this, player 1 might play scissors -- but then 2 would want
+to play rock, which would mean 1 would want to play paper, which would
+mean 2 would want to play scissors, which would mean 1 would want to
+play scissors \... etc.
+
+There would seem to be no pure strategy prediction here. 
+
+But there may be a mixed strategy NE in this '*subgame'.*
+
+
 ## Bayesian games (incomplete information)
 
 E.g., fighting an opponent of unknown strength; Cournot competition between firms with unknown cost functions.
 
+### Example: Asymmetric information Cournot
+
+
+**Motivation**:
+
+Two firms choose quantities at the same time.  One firm does not know whether the other firm is high or low cost, both know their own costs.  Demand is linear, marginal costs are constant.
+
+\
+
+
+*Q: How would you model this?*
+
+\
+
+$$
+
+\begin{aligned}
+P(Q) =a-Q=a-q_{1}-q_{2} \\
+c_{1}(q_{1}) =cq_{1} \\
+c_{2}(q_{2}) =c_{2}\cdot q_{2} \\
+\text{Where} \text{: } \\
+c_{2} =C_{H}\text{ with probability }\theta \\
+c_{2} =C_{L}\text{ with probability }1-\theta
+\end{aligned}
+
+$$
+
+
+
+**Players:** Firms 1 and 2\*
+
+<div class="marginnote">
+\* Alternatively, we can model this letting 'Nature' randomly choose 2's type, if we want to use the extensive form/game tree).
+</div>
+
+\
+
+**Actions: **Choose a quantity ($q_{1}$ and $q_{2}$)
+
+
+Actions by types: $1$ chooses $q_{1}$
+
+Player $2$, type $c_{H}$ chooses $q_{2}(c_{H})$
+
+Player $2$, type $c_{L}$ chooses $q_{2}(c_{L})$
+
+\
+
+**Payoffs:**
+
+$$\pi _{k}=q_{k}\cdot p(Q)=q_{k}\cdot (a-q_{1}-q_{2}-c_{k})\text{ for }k\in
+\{1,2\}$$
+
+\
+
+**States:** Firm 2's marginal cost $c_{2}\in \{C_{H,}C_{L}\}$ where $C_{L}<C_{H}$
+
+\
+
+**Information structure**
+
+$2$ knows $c_{2}$
+
+$1$ has 'beliefs' that assign $P(c_{2}=C_{H})=\theta$, $P(c_{2}=C_{L})=1-\theta$
+
+*Note*: In these games, beliefs always correspond to the correct (correctly computed) probabilities given the information at hand. 
+
+Looking ahead... 
+
+```{block2,  type='fold'}
+
+In sequential games, as information is revealed, we will need to consider 'correct Bayesian updating', and we will look For "equilibrium assessments" combining strategies and beliefs at each node for each player
+
+...
+
+where these beliefs at every point are consistent with the strategies chosen by each player (type of player) at each decision node.
+```
+ 
+
+**Best Responses**
+
+Note: These will yield a NE strategy profile, a BNE outcome where these
+intersect,
+
+Firm 2:
+
+$q_{2}^{\ast }(c_{t})$ solves $$\begin{aligned}
+\max_{q_{2}}\text{ }[(a-q_{1}^{\ast }-q_{2})-C_{t}]q_{2}\text{ for }t \in
+\{H,L\} \\
+s.t.\text{ }q_{2} >0\end{aligned}$$
+
+*Q: Explain intuitively what firm 1 will do as a 'best response' \...*
+
+*A: Firm 1 will set quantity to optimize its expected profit, knowing
+that there is some probability it will face a high-cost competitor, and
+some probability it will face a low cost competitor.  The optimal
+quantity will be somewhere in between, in this case, in fact the
+weighted average of the optimal quantities in each case.*
+
+Firm 1:
+
+$q_{1}^{\ast }$ solves $$\begin{aligned}
+\max_{q_{1}}\text{ }\left\{ 
+\begin{array}{c}
+\theta \lbrack a-q_{1}-q_{2}^{\ast }(C_{H})-c]q_{1}\text{ } \\ 
++(1-\theta )[a-q_{1}-q_{2}^{\ast }(C_{L})-c]q_{1}%
+\end{array}%
+\right\}  \\
+s.t.q_{1} >0\end{aligned}$$
+
+*Q: How to solve these for BR's?*
+
+*A: Solve for first order-conditions (set first derivative equal to
+zero).  This is a necessary condition for an interior optimum, though
+not sufficient. We want the 'choice variable' on the left hand side
+only, as a function of the parameters and the other firm's choice.*
+
+FOC's:
+
+$$q_{2}^{\ast }(C_{t})=\frac{a-q_{1}^{\ast }-C_{t}}{2}\text{ for }t=L,H 
+\tag{1 \ 2}$$
+
+$$q_{1}^{\ast }=\frac{\theta \lbrack a-q_{2}^{\ast }(C_{H})-c]+(1-\theta
+)[a-q_{2}^{\ast }(C_{L})-c]}{2}  \tag{3}$$
+
+**Note***: *This assumes the parameters are such that both quantities
+are positive.  Actually, we *do* have to worry about 'corner solutions'
+here -- the high cost firm may not produce -- but we ignore this for
+now.
+
+*Q: How to solve these for BNE quantities?*
+
+*A: We need to solve this system of equations, substituting one
+player-type's optimum into the others to find a 'fixed point.'*
+
+*Q: What will these BNE quantities be a function of?*
+
+*A:They will be a function of the parameters (*$\theta ,c,C_{H},C_{L}$
+*).  They will \*not\* be a function of the other player-type's
+quantities!*
+
+We solve this by substituting equation 3 ($q_{1}^{\ast }$) into
+equations 1 & 2, and then substituting each of these
+($q_{2}^{\ast }(C_{L})$ and $%
+q_{2}^{\ast }(C_{H})$) into equation 3.  
+
+This yields: $$\begin{aligned}
+q_{2}^{\ast }(C_{H}) =\frac{a-2C_{H}+C}{3}+\frac{1-\theta }{6}(C_{H}-C_{L})
+\\
+q_{2}^{\ast }(C_{L}) =\frac{a-2C_{L}+C}{3}-\frac{\theta }{6}(C_{H}-C_{L})\end{aligned}$$
+
+\
+
+*Question: What is interesting about these BNE outcomes (outputs)?*
+
+-   The output for the high-cost type is *higher* than the high-cost
+    type's output in the complete information case (i.e., in the case
+    where player 1 knew 2's cost).  Remember, this complete information
+    output was $q_{i}^{\ast }=\frac{a-2c_{i}+c_{j}}{3}$ where $c_{i}$
+    was own and $c_{j}$ was the other firm's cost.
+
+-   Similarly, the output for the low-cost type is *lower* than the
+    low-cost type's output in the complete information case.
+
+-   For both types the BNE output involves not only the cost of the
+    player's type, but the cost of the player's other type!  Note that
+    this was *not* true for the BR functions! 
+    
+\
+    
+
+*Why?*
+
+A: Your optimal output depends not only on your own costs but on your
+expectation of the other player's output, and thus on how the other
+player will react to what it *thinks* are your costs!  
+
+Firm $2$ will produce less when its costs are high than when they are
+low, ceterus paribus.  However, if firm 1 is not sure firm 2's costs are
+high, firm $1$ doesn't know how much firm 2 will limit its output and
+thus 1 will not increase its output as much as it would if it *knew*
+firm 2's costs were high.  Firm 2 knows this, and thus does not limit
+its output as much.  This second effect -- the response to firm $1$'s
+lack of information, is described by the second additive terms in the
+above\...
+
+\
+
+
+*Q: What did we forget to compute?*
+
+Firm 1's BNE strategy (action):
+$$q_{1}^{\ast }=\frac{a-2c+\theta C_{H}+(1-\theta )C_{L}}{3}$$
+
+Note, this is like a response based on 'average' $c_{2}$, i.e., $\theta
+C_{H}+(1-\theta )C_{L}$. This is a special case: equivalence does not always hold!
+
 ## Extensive Games with Imperfect information
 
-Some notes [here](https://www.dropbox.com/s/1o4rr6chbxnlast/05_BWI_SPNEd_cut_HO_wanskey.pdf?dl=0); some notation comes from a different Osborne text, as well as  a text by Watson
+Some notes [here](https://www.dropbox.com/s/1o4rr6chbxnlast/05_BWI_SPNEd_cut_HO_wanskey.pdf?dl=0); some notation comes from a different Osborne text, as well as a text by Watson
 
 ### Most famous case: (Spence) signaling model
 

@@ -1,0 +1,939 @@
+\begin{document}
+
+\title{EC322, Fourth Set: Dynamic (``Extensive'') Games of Complete and
+Perfect Information: Notation, Backwards Induction, Normal Form,
+Subgame-perfect Nash Equilibrium)}
+
+
+
+    \textbf{EC322, Fourth Set: Dynamic (``Extensive'') Games of Complete and Perfect Information: Notation,
+    Backwards Induction, Normal Form, Subgame-perfect Nash Equilibrium)}
+
+
+
+Reading
+
+    Osborne: Ch 5; Gibbons: 2.1-2.2, 2.4
+
+
+
+\section{Dynamic (Extensive) Games / Extensive form}
+
+\textbf{Extensive form game}
+An \textbf{extensive form game }is a description of the sequential structure
+of the decision problems by players in strategic situations.
+
+It specifies:
+
+\begin{itemize}
+\item
+\begin{itemize}
+\item the players in the game
+
+\item the order of moves (when each player has to move)
+
+\item what the players' choices are when they move
+
+\item what each player knows when she makes her moves
+
+\item the payoff received by each player for each combination of moves that
+could be chosen by the players
+
+\item All these are common knowledge among the players.
+\end{itemize}
+\end{itemize}
+
+
+
+
+There is \textbf{perfect information in an extensive game} if:
+
+\begin{itemize}
+\item
+\begin{itemize}
+\item All previous moves are observed before the next move is chosen
+
+\item A Player knows Who has moved What before she makes a decision\bigskip
+\end{itemize}
+\end{itemize}
+
+
+
+
+Osborne:\ Players, sequences, player function, preferences/payoffs
+
+-- Formal notation allows infinite games and formal proofs
+
+\textbf{\textquotedblleft Game tree\textquotedblright }: an
+\textquotedblleft arborescence\textquotedblright
+
+Example :\FRAME{ftbphF}{5.3167in}{4.0066in}{0pt}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";display "USEDEF";valid_file
+"T";width 5.3167in;height 4.0066in;depth 0pt;original-width
+4.5438in;original-height 2.1843in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'J8D62H00.bmp';tempfile-properties "XPR";}}
+
+
+
+ \textbf{Example 2}:\ Prisoner's dillemma with sequential moves, perfect
+information \FRAME{ftbphF}{5in}{4in}{0in}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 5in;height 4in;depth 0in;original-width
+4.2798in;original-height 2.6799in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'J8BMM901.wmf';tempfile-properties "XPR";}}
+
+Now the 2nd player can observe the 1st player's move before acting. \
+
+Note that this means the 2nd player now has 2 decisions to make -- one at
+each `information set' (defined later), while the first player still has
+only one.
+
+
+\textbf{\ Decision Nodes}
+
+\begin{itemize}
+\item
+\begin{itemize}
+\item Each node has at least one arrow pointing out from it
+
+\item and at most one arrow pointing into it
+
+\item Not the same as a position of the board in chess
+\end{itemize}
+\end{itemize}
+
+
+\textbf{Backward Induction}
+
+To some extent this is the all of finite extensive games
+
+Yields no prediction with indifference,
+
+no prediction with an infinite/indefinite horizon
+
+unclear what it predicts with imperfect information.
+
+\bigskip
+
+
+
+
+\textbf{BWI is similar to an iterated dominance prediction},
+
+where a player only plays actions that are dominant in each subgame
+
+\begin{itemize}
+\item
+\begin{itemize}
+\item But in what sense is does it yield an equilibrium?
+\end{itemize}
+\end{itemize}
+
+
+
+\textbf{Strategies}
+
+Need complete plan of action \textquotedblleft even for histories that, if
+the strategy is followed, do not occur\textquotedblright
+
+
+\textquotedblleft Imagine player wishes to leave explicit instructions to
+some agent\textquotedblright\ concerning how to play on his/her behalf.
+
+-- Note: Not the same as commitment!
+
+
+
+\textbf{Strategies (Example)}:
+
+\FRAME{ftbphF}{4.983in}{3.3781in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";display "USEDEF";valid_file "T";width
+4.983in;height 3.3781in;depth 0pt;original-width 4.5438in;original-height
+2.1843in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'J8D62H00.bmp';tempfile-properties "XPR";}}
+In the Entry Game, the incumbent's strategies are \{Accomodate, Fight\}, and
+the challenger's strategies are \{In, Out\}.\bigskip
+
+
+
+\textbf{Example 2 (sequential PD): }
+
+\FRAME{ftbphF}{3.6671in}{2.9332in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 3.6671in;height 2.9332in;depth
+0pt;original-width 4.2798in;original-height 2.6799in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'J8D62H03.wmf';tempfile-properties "XPR";}}
+
+\textit{Strategies:}
+
+Player 1: \{Clam, Rat\}
+
+Player 2:\ \{(Clam,Clam),(Clam,Rat),(Rat,Clam),(Rat,Rat)\}\
+
+\textit{Where, for player 2, the 1st element of a strategy specifies the
+action if player 1 clams, and the second element specifies the action if
+player 1 rats.}
+
+
+
+\textbf{Strategy Profile }
+
+We can think of the players as simultaneously choosing strategies!
+
+Can express in strategic (e.g., matrix) form
+
+-- `Outcome':\ Not the same as a `strategy profile' -- A strategy profile
+determines an outcome
+
+
+\section{Strategic form of extensive game}
+
+\textbf{Strategic form of extensive game}
+
+Specify set of \textbf{strategies} for each player (pure strategies only,
+for now)
+
+
+\begin{quote}
+\textit{`To every extensive form game there is a corresponding strategic
+form game, where we think of players simultaneously choosing strategies they
+will implement. }
+
+
+\textit{But a given strategic form game can, in general, correspond to
+several extensive form games.'\bigskip }
+\end{quote}
+
+
+
+\textbf{Strategies (Example II)}:
+
+\FRAME{ftbphF}{4.117in}{3.2935in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 4.117in;height 3.2935in;depth
+0pt;original-width 4.4317in;original-height 2.6243in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'J8D62H04.bmp';tempfile-properties "XPR";}}
+
+\bigskip
+
+\textit{What are the possible strategies for each player?:}
+
+\bigskip
+
+%Player 2:\ \{(l$_{1},$l$_{2}$),(l$_{1},$r$_{2}$),(r_{1}$,$l$_{2}$),(r$_{1},$r$_{2}$)\}
+
+\bigskip
+
+Player 1:\ \{(L,l),(L,r),(R,l),(R,r)\}
+
+Interpretation of L,l:\ `I intend to choose L, but if I make a mistake and
+choose R instead, I will subsequently choose l'
+
+
+
+
+\begin{tabular}{ccccc}
+& \textbf{l}$_{1}$\textbf{,l}$_{2}$ & \textbf{l}$_{1}$\textbf{,r}$_{2}$ &
+\textbf{r}$_{1}$\textbf{,l}$_{2}$ & \textbf{r}$_{1},$\textbf{r}$_{2}$ \\
+\textbf{L,l} & 3,2 & 3,2 &  &  \\
+\textbf{L,r} & 3,2 &  &  &  \\
+\textbf{R,l} & 1,4 &  &  & 2,5 \\
+\textbf{R,r} &  &  &  &
+\end{tabular}
+
+\textbf{Exercise}:\ fill in the rest of the payoffs, find NE.\bigskip
+
+
+\section{NE of extensive game}
+
+\textbf{NE of extensive game}
+We can find the Nash equilibrium of an extensive form by constructing an
+equivalent normal form game and solving that game.
+
+
+
+\textbf{Example (entry game again):}
+
+\FRAME{ftbphF}{3.858in}{2.616in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";display "USEDEF";valid_file "T";width
+3.858in;height 2.616in;depth 0pt;original-width 4.5438in;original-height
+2.1843in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'J8D62H00.bmp';tempfile-properties "XPR";}}
+
+\begin{tabular}{ccc}
+& \textbf{Accommodate} & \textbf{Fight} \\
+\textbf{In} & 2,1 & -3,-1 \\
+\textbf{Out} & 0,2 & 0,2%
+\end{tabular}
+
+\bigskip
+
+\begin{tabular}{ccc}
+& \textbf{Accommodate} & \textbf{Fight} \\
+\textbf{In} & \underline{2,1} & -3,-1 \\
+\textbf{Out} & 0,2 & \underline{0,2}%
+\end{tabular}
+
+
+
+
+Notice that there are two Nash equilibria: (In, Accommodate) and (Out, Fight).
+
+\textit{Which one seems more reasonable? \ How do we interpret }(Out, Fight)?
+
+How do we interpret this NE?
+
+How do they learn of other players' strategies (especially off the
+equilibrium path)?
+
+--Can consider a `slightly perturbed steady state' with rare deviations from
+equilibrium
+
+$\mathbf{\Longrightarrow }$\textquotedblleft Non-robust\textquotedblright\
+steady states
+
+-- \textquotedblleft On those (rare) occasions when the challenger enters,
+the subsequent behavior of the incumbent to fight
+
+
+
+\textbf{Non-credible threats}
+
+(e.g., grenade game)
+
+For the threat to be credible it has to be a best response (or tie) `ex
+post' -- i.e., \textquotedblleft when we get there,\textquotedblright\ i.e.,
+in every `subgame.'
+
+
+
+\textbf{Example II. (sequential PD):}
+
+\FRAME{ftbphF}{5in}{4in}{0in}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 5in;height 4in;depth 0in;original-width 4.1444in;original-height
+3.0403in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'J8D62H03.wmf';tempfile-properties "XPR";}}
+
+How to draw the payoff matrix / strategic form? Depict each of the
+strategies.
+
+
+
+\begin{tabular}{ccccc}
+& \textbf{Clam,Clam,} & \textbf{Clam,Rat} & \textbf{Rat,Clam} & \textbf{%
+Rat,Rat} \\
+\textbf{Clam} &  &  &  &  \\
+\textbf{Rat} &  &  &  &
+\end{tabular}
+
+Fill in the payoffs.
+
+\begin{tabular}{ccccc}
+& \textbf{Clam,Clam,} & \textbf{Clam,Rat} & \textbf{Rat,Clam} & \textbf{%
+Rat,Rat} \\
+\textbf{Clam} & 2,2 & 2,2 & 0,3 & 0,0 \\
+\textbf{Rat} & 3,0 & 0,0 & 3,0 & 1,1%
+\end{tabular}
+
+
+
+What is/are the NE?
+
+\begin{tabular}{ccccc}
+& \textbf{Clam,Clam} & \textbf{Clam,Rat} & \textbf{Rat,Clam} & \textbf{%
+Rat,Rat} \\
+\textbf{Clam} & 2,2 & \underline{2},2 & 0,\underline{3} & 0,\underline{3} \\
+\textbf{Rat} & \underline{3},0 & 0,0 & \underline{3},0 & \underline{1,1}%
+\end{tabular}
+
+The NE \textit{profile} is \{Rat, (Rat,Rat)\}
+
+The NE \textit{outcome} is Rat, Rat, as in the static game.
+
+The resulting payoffs are 1,1.
+
+
+
+\textbf{Sequential RPS:}
+
+\FRAME{ftbphF}{5.0004in}{2.4417in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";display "USEDEF";valid_file "T";width
+5.0004in;height 2.4417in;depth 0pt;original-width 5.1996in;original-height
+2.2399in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'J8C1L510.wmf';tempfile-properties "XPR";}}
+
+What does BWI predict?
+
+For any choice of player 1, player 2 will crush, wrap, or slice it. \ Player
+2's best strategy is (paper, scissors, rock).
+
+
+Thus payoffs will be -1,1 in any case. \
+
+But this leaves 1 with no clear choice -- BWI doesn't yield a clear
+prediction here.
+
+Player 1 has 3 strategies that are equally good (bad), as is any combination
+of mixed strategies.
+
+
+
+ So, we have:%
+\begin{eqnarray*}
+&&[\{p_{1},p_{2},1-p_{1}-p_{2}\},\{paper|rock,scissors|paper,rock|scissors\}]
+\\
+\text{for any }p_{1},p_{2}\text{ s.t. }0 &\leq &p_{1}\leq 1,\text{ }0\leq
+p_{2}\leq 1,~p_{1}+p_{2}\leq 1
+\end{eqnarray*}
+
+\textit{where the first 3 arguments refer to the probability player 1
+assigns to rock, paper and scissors, respectively}
+
+are all equally reasonable as predictions (and will all turn out to be NE).
+\ You can check this if you like.
+
+
+\section{Subgame Perfect Nash Equilibrium}
+
+\textbf{Information set }
+
+An \textbf{information set} for a player is a collection of decision nodes
+satisfying:
+
+
+i. `The player has the move at every node in an information set'
+
+
+ii.`When the play of the game reaches a node in the information set, the
+player with the move does not know what node in the information set has (or
+has not)\ been reached'
+
+
+-- The Player can not distinguish between nodes connected by an information set
+
+-- Because he/she doesn't know what decisions were taken previously (by
+another player or by "nature")
+
+-- Player can't play different strategy at nodes connected by an information
+set
+
+
+\textbf{Example}: Prisoner's dillemma in extensive form:
+
+\FRAME{ftbphF}{3.6837in}{2.9464in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 3.6837in;height 2.9464in;depth
+0pt;original-width 4.0556in;original-height 3.1199in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'J8C1L511.wmf';tempfile-properties "XPR";}}
+
+Note:\ the order here doesn't matter -- we could change the `player
+function' and have 2 play `first' and then `1' without consequence.
+
+
+\textbf{Example: `Rocks/Paper/Scissor' in extensive
+form, with variations.}
+
+\textbf{Traditional RPS:\bigskip }
+
+\FRAME{ftbphF}{5.0004in}{2.3246in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";display "USEDEF";valid_file "T";width
+5.0004in;height 2.3246in;depth 0pt;original-width 5.1839in;original-height
+2.0714in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'J8C1L512.wmf';tempfile-properties "XPR";}} \textit{Intuition}: what are the
+NE?
+
+This is a simultaneous `strictly competitive' game. \ This is an
+`anti-coordination' game.
+
+There can be no pure strategy NE.
+
+If player 1 puts $\frac{1}{3}$ probability on each player 2 is neutral
+between each action.. \ If player 2 puts $\frac{1}{3}$ probability on each
+(of R, P, S) player 1 is neutral between each action. \ Thus this is a NE,
+although there may other NE as well (I don't think there are, but it is
+worth checking), using the techniques for simultaneous games we learned
+previously.
+
+
+\textbf{RPS where player 1 is very slow at making a fist:}
+
+\FRAME{ftbphF}{5.0004in}{2.4417in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";display "USEDEF";valid_file "T";width
+5.0004in;height 2.4417in;depth 0pt;original-width 5.2079in;original-height
+2.0398in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'J8C1L513.wmf';tempfile-properties "XPR";}}
+
+\textit{Intuition}: What will occur?
+
+If player 1 plays rock 2 will play paper and win, yielding payoffs of 0,1.
+
+So player 1 probably won't want to play rock.
+
+But what will player 1 want to play? \ Paper or scissors?
+
+If player 1 plays scissors or paper player 2 will not know which is played,
+and might play scissors (`if not rock'), so as to either win or tie (but
+never lose).
+
+But knowing this, player 1 might play scissors -- but then 2 would want to
+play rock, which would mean 1 would want to play paper, which would mean 2
+would want to play scissors, which would mean 1 would want to play scissors
+... etc.
+
+There would seem to be no pure strategy prediction here. \ \
+
+But there may be a mixed strategy NE in this `\textit{subgame'.}
+
+
+
+\textbf{Perfect Information: }Every information set is a singleton.
+
+\textbf{Imperfect Information: }At least one nonsingleton information set.
+
+\textbf{Proper subgame :}
+
+i. Begins at a decision node $n$ that is a singleton information set (and
+not the first decision node)
+
+ii. Includes all the decision and terminal nodes following $n$ in the game
+(but no nodes that do not follow $n$)
+
+iii. Does not cut any information sets
+
+
+\textbf{Subgame Perfect Nash Equilibrium}
+\textbf{Subgame Perfect Nash Equilibrium (SPNE) }\textquotedblleft A
+strategy profile s* [where] ... in no subgame can any player i do better by
+choosing a strategy different from s$_{i}$*, given that every other player j
+adheres to s$_{j}$*\textquotedblright
+
+-- I.e., the strategy profile generates a NE in every subgame
+
+`A NE is subgame-perfect if it does not involve a noncredible threat'
+
+For finite horizon perfect information games, the SPNE (where unique) turns
+out to yield the same outcome as the BWI outcome.
+
+Every \emph{generic} game has a unique SPNE.
+
+
+\textbf{Example (entry game again):}
+
+\FRAME{ftbphF}{4.4832in}{3.0394in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";display "USEDEF";valid_file "T";width
+4.4832in;height 3.0394in;depth 0pt;original-width 4.5438in;original-height
+2.1843in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'J8D62H00.bmp';tempfile-properties "XPR";}}
+
+
+\begin{tabular}{ccc}
+& \textbf{Accomodate} & \textbf{Fight} \\
+\textbf{In} & \underline{2,1} & -3,-1 \\
+\textbf{Out} & 0,2 & \underline{0,2}%
+\end{tabular}
+
+What are the NE? \ There are two Nash equilibria: (In, Accomodate) and (Out,
+Fight).
+
+What is the BWI outcome? \ (Out, Fight).
+
+\bigskip
+
+
+
+What are the subgames?
+
+Strictly speaking, there is only one subgame. \ \ This one:\FRAME{ftbphF}{%
+2.0581in}{1.6463in}{0pt}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 2.0581in;height 1.6463in;depth 0pt;original-width
+2.44in;original-height 1.1042in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'J8C1L515.wmf';tempfile-properties "XPR";}}
+
+In strategic (matrix) form:
+
+\begin{tabular}{cc}
+\textbf{Accomodate} & \textbf{Fight} \\
+2,1 & -3,-1 \\
+0,2 & \underline{0,2}%
+\end{tabular}
+
+The entrant has only one rational strategy in this subgame (and thus only
+one NE): fight!
+
+This does not form part of the NE profile (In, Accomodate). \
+
+Thus, while there are 2 NE there is only one \textit{subgame perfect }NE
+strategy profile: \{Out, Fight\}.
+
+
+
+\textit{Subgame perfection }is a \textbf{refinement }of NE: all SPNE\ are
+NE, but not all NE\ are SPNE.
+
+SPNE is harder to solve for in games with \textquotedblleft
+ties\textquotedblright : -- Example: Fig 172.1 from Osborne (good exercise)
+
+Be able to write the strategic form, and be able to identify NE and SPNE in
+such games
+
+
+\textbf{Sequential RPS again:}
+\FRAME{ftbphF}{5.0004in}{2.4417in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";display "USEDEF";valid_file "T";width
+5.0004in;height 2.4417in;depth 0pt;original-width 5.1996in;original-height
+2.2399in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'J8C1L616.wmf';tempfile-properties "XPR";}}\bigskip
+
+\begin{tabular}{cccccccc}
+& R,R,R & R,R,P & R,R,S & R,P,R & R,P,P & R,P,S & Nuts! There are too many
+of these! \\
+R &  &  &  &  &  &  &  \\
+P &  &  &  &  &  &  &  \\
+S &  &  &  &  &  &  &
+\end{tabular}%
+\bigskip
+
+
+\textbf{The three-stage example again}:
+
+\FRAME{ftbphF}{4.117in}{3.2935in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 4.117in;height 3.2935in;depth
+0pt;original-width 4.4317in;original-height 2.6243in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'J8D62H04.bmp';tempfile-properties "XPR";}}
+
+What is the BWI outcome?
+
+
+L,r$_{1}$ with payoffs 2,3\bigskip
+
+
+
+
+What are the NE (strategy profiles)?
+
+\begin{tabular}{ccccc}
+& \textbf{l}$_{1}$\textbf{,l}$_{2}$ & \textbf{l}$_{1}$\textbf{,r}$_{2}$ &
+\textbf{r}$_{1}$\textbf{,l}$_{2}$ & \textbf{r}$_{1},$\textbf{r}$_{2}$ \\
+\textbf{L,l} & \underline{3},2 & \underline{3},2 & \underline{2},\underline{3%
+} & 2,\underline{3} \\
+\textbf{L,r} & \underline{3},2 & \underline{3},2 & \underline{2},\underline{3%
+} & 2,\underline{3} \\
+\textbf{R,l} & 1,4 & 2,\underline{5} & 1,4 & 2,\underline{5} \\
+\textbf{R,r} & 1,\underline{4} & \underline{3},3 & 1,\underline{4} &
+\underline{3},3%
+\end{tabular}
+
+\{(L,l),(r$_{1},$l$_{2}$)\} \textit{and} \{(L,r),(r$_{1},$l$_{2}$)\}
+
+... both of which generate the outcome L,r$_{1}$ with payoffs 2,3\bigskip as
+in BWI.
+
+The only difference in moves is `off the equilibrium path' so it doesn't
+matter to the outcome.
+
+
+ Which of these are \textit{subgame perfect}?
+
+\bigskip
+
+i. What are the subgames? (Hint:\ there are 3 of them).
+
+
+Here's one:
+
+\FRAME{ftbphF}{2.2167in}{1.7733in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.2167in;height 1.7733in;depth
+0pt;original-width 1.3516in;original-height 0.9921in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'J8C1L618.wmf';tempfile-properties "XPR";}}
+
+\begin{tabular}{cc}
+\textbf{l} & 2,5 \\
+\textbf{r} & \underline{3},3%
+\end{tabular}
+
+
+
+
+Here's another:
+
+\FRAME{ftbphF}{2.5496in}{2.0398in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.5496in;height 2.0398in;depth
+0pt;original-width 1.7916in;original-height 1.7127in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'J8C1L619.wmf';tempfile-properties "XPR";}}
+
+\begin{tabular}{ccc}
+& \textbf{l}$_{2}$ & \textbf{r}$_{2}$ \\
+\textbf{l} & \underline{1},4 & 2,\underline{5} \\
+\textbf{r} & \underline{1},\underline{4} & \underline{3},3%
+\end{tabular}
+
+\bigskip
+
+
+ And here's the third:
+
+\FRAME{ftbphF}{1.692in}{1.3533in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 1.692in;height 1.3533in;depth
+0pt;original-width 1.4645in;original-height 1.0328in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'J8C1L61A.wmf';tempfile-properties "XPR";}}
+
+\begin{tabular}{cc}
+l$_{1}$ & \textbf{r}$_{1}$ \\
+3,2 & 2,\underline{3}%
+\end{tabular}
+
+
+
+ii. Which of these subgames are part of the NE under consideration?
+
+\bigskip
+
+Only the first and second ones.
+
+\bigskip
+
+iii. What are the NE in these subgames:
+
+\{r\} in the first
+
+and \{r,l$_{2}$\} in the second.
+
+\bigskip
+
+
+
+iv. Which of our NE includes these NE strategies in each subgame?
+
+Only \{(L,r),(r$_{1},$l$_{2}$)\} \textit{and} \textbf{not }\{(L,l),(r$_{1},$l%
+$_{2}$)\} . \
+
+$\mathbf{\Longrightarrow }$So only \{(L,r),(r$_{1},$l$_{2}$)\} is a \textit{%
+SP}NE.
+
+\bigskip
+
+
+
+\textbf{Why do we care}, since both of these lead to the outcome L,r$_{1}$
+with payoffs 2,3?
+
+\begin{itemize}
+\item
+\begin{itemize}
+\item I don't.
+
+\item You do, because it could be on the test.
+\end{itemize}
+\end{itemize}
+
+\bigskip
+
+You could have come up with this quicker by just looking at the moves `off
+the equilibrium path' that you ruled out with BWI. \ I just wanted to do it
+the slow, painful way.
+
+
+\section{\textbf{Non-discrete extensive form games, BWI}}
+
+\textbf{Non-discrete extensive form games, BWI}
+Let's say we have a 2-stage game; player 1 chooses $a_{1}\in A_{1}$, then
+player 2 observes this and chooses $a_{2}\in A_{2}$.
+
+We use BWI.
+
+We first solve for 2's choice as a function of 1's choice:
+
+\[
+\max_{a_{2}\in A_{2}}u_{2}(a_{1},a_{2})
+\]
+
+Assuming a \textit{unique} best response we have a reaction \textit{function
+}$R_{2}(a_{1})$.
+
+Next, we assume player 1 has also solved this problem, and thus also knows
+player 2's BR function. \
+
+Taking this into account, 1 will solve the problem:
+\[
+\max_{a_{1}\in A_{1}}u_{1}(a_{1},R_{2}(a_{1}))
+\]
+
+Assuming a unique solution, we call
+\[
+(a_{1}^{\ast },R_{2}(a_{1}^{\ast }))=(a_{1}^{\ast },a_{2}^{\ast })
+\]
+
+the BWI outcome of this game.
+
+
+
+Since it is a finite, perfect information game with a reaction function
+(rather than correspondence),
+
+the strategy: $(a_{1}^{\ast },R_{2}(a_{1}))$  that yields the BWI$\ $outcome
+($a_{1}^{\ast },a_{2}^{\ast }$) is a SPNE strategy profile.
+
+We know this is subgame perfect:\ $R_{2}(a_{1}^{\ast })$ is the NE each of
+the subgame(s) that begin after any of 1's choices, i.e.,  at the second
+decision node.
+
+
+\textbf{Examples: }
+
+-- Ultimatum game
+
+Players: 1 and 2
+
+Terminal Histories: (x,Z) 0
+
+-- Stackleberg game (go to PDF)
+
+-- Entry/location game (Salop model)
+
+-- Wages and unemployment in a unionized firm
+
+
+\section{SPNE in Games with some imperfect information}
+
+\textbf{SPNE in Games with some imperfect information}
+I.e., some previous moves are observed, some are not.
+
+
+Where a player (B) in the second period does not observe the move of the
+player (A) in the first period, this is akin (in theory) to A and B's moves
+being simultaneous. \ Thus imperfect information allows for some
+simultaneity in an extensive game.
+
+--It is also akin to B moving first (unobserved by the A), followed by A's
+move.
+
+Can depict (if discrete) as game tree with connected information sets
+
+-- or with mix of tree and matrices
+
+
+
+Before, BWI `did the job,' so we kicked SPNE to the curb.
+
+Now, we need \textit{subgame perfection }again, so let's hope it still
+answers our phone calls.
+
+By the way, let's try not to tee it off this time because we will need it
+again for infinite/indefinite games, ok?
+
+
+
+
+
+SPNE: a NE in every subgame
+
+--Solve simultaneous games for NE as usual
+
+-- I.e., where information sets are connected, solve for NE of static
+(sub)game before proceeding backwards
+
+
+
+Example: \textbf{RPS where player 1 is very slow at making a fist:}
+
+\FRAME{ftbphF}{5.0004in}{2.4417in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";display "USEDEF";valid_file "T";width
+5.0004in;height 2.4417in;depth 0pt;original-width 5.2079in;original-height
+2.0398in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'J8C1L00U.wmf';tempfile-properties "XPR";}}
+
+How many information sets does each player have?:
+
+\bigskip
+
+Player 1 has 1, player 2 has 2.\bigskip
+
+What are the strategies?:
+
+\bigskip
+
+Player 1: R,P,S
+
+Player 2: (R,R), (R,P),(R,S),(P,R), (P,P),(P,S),(S,R), (S,P),(S,S)
+
+\textit{Where }(for player 2) the first element denotes the strategy at the
+information set to the left,
+
+and the second element denotes the strategy at the information set to the
+right.
+
+\textit{Note} a strategy does \textit{not} specify different actions to take
+at decision nodes that are in the same information set. \
+
+
+
+
+Thus, the strategic form, in matrix notation, is:
+
+\begin{tabular}{cccccccccc}
+& \textbf{R,R} & \textbf{R,P} & \textbf{R,S} & \textbf{P,R} & \textbf{P,P} &
+\textbf{P,S} & \textbf{S,R} & \textbf{S,P} & \textbf{S,S} \\
+\textbf{R} & 0,0 & 0,0 & 0,0 & -1,1 & -1,1 & -1,1 & 1,-1 & 1,-1 & 1,-1 \\
+\textbf{P} & 1,-1 & 0,0 & 1,-1 & 1,-1 & 0,0 & -1,1 & 1,-1 & 0,0 & -1,1 \\
+\textbf{S} & -1,1 & 1,-1 & 0,0 & -1,1 & 1,-1 & 0,0 & -1,1 & 1,-1 & 0,0%
+\end{tabular}
+
+
+
+
+Finding the best responses :
+
+\begin{tabular}{cccccccccc}
+& \textbf{R,R} & \textbf{R,P} & \textbf{R,S} & \textbf{P,R} & \textbf{P,P} &
+\textbf{P,S} & \textbf{S,R} & \textbf{S,P} & \textbf{S,S} \\
+\textbf{R} & 0,0 & 0,0 & 0,0 & -1,\underline{1} & -1,\underline{1} & -1,%
+\underline{1} & \underline{1},-1 & \underline{1},-1 & \underline{1},-1 \\
+\textbf{P} & \underline{1},-1 & 0,0 & \underline{1},-1 & \underline{1},-1 &
+0,0 & -1,\underline{1} & \underline{1},-1 & 0,0 & -1,\underline{1} \\
+\textbf{S} & -1,\underline{1} & \underline{1},-1 & 0,0 & -1,\underline{1} &
+\underline{1},-1 & \underline{0},0 & -1,\underline{1} & \underline{1},-1 &
+0,0%
+\end{tabular}
+
+
+
+
+What are the proper subgames?
+
+This one:
+
+\FRAME{ftbphF}{2.3503in}{1.8796in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.3503in;height 1.8796in;depth
+0pt;original-width 1.7443in;original-height 1.3117in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'J8C1L61B.wmf';tempfile-properties "XPR";}}
+
+And this one:
+
+\FRAME{ftbphF}{3.408in}{1.3732in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";display "USEDEF";valid_file "T";width
+3.408in;height 1.3732in;depth 0pt;original-width 3.3997in;original-height
+1.4155in;cropleft "0";croptop "1";croright "1";cropbottom
+"0";tempfilename
+'J8C1L71C.wmf';tempfile-properties "XPR";}}
+
+
+
+
+\end{document}
+
+

@@ -1,0 +1,272 @@
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2552}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{Created=Monday, November 20, 2006 19:29:01}
+%TCIDATA{LastRevised=Friday, November 30, 2007 13:36:32}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+
+\begin{document}
+
+
+\subsection{EC322; David Reinstein; 2007}
+
+\subsection{\textbf{Asymmetic Information Cournot}\protect\bigskip }
+
+\textbf{Note:}\ Watson's text covers a numeric example of this, more general
+game.
+
+\subsection{\textbf{Motivation}:}
+
+Two firms choose quantities at the same time.
+
+One firm does not know whether the other firm is high or low cost, both know
+their own costs.
+
+Demand is linear, marginal costs are constant\bigskip 
+
+\textit{Q: How would you model this?}
+
+\begin{eqnarray*}
+P(Q) &=&a-Q=a-q_{1}-q_{2} \\
+c_{1}(q_{1}) &=&cq_{1} \\
+c_{2}(q_{2}) &=&c_{2}\cdot q_{2} \\
+\text{\textit{Where}} &\text{: }& \\
+c_{2} &=&C_{H}\text{ with probability }\theta \\
+c_{2} &=&C_{L}\text{ with probability }1-\theta
+\end{eqnarray*}
+
+\bigskip
+
+\textbf{Players: }Firms 1 and 2
+
+\bigskip
+
+\textbf{Actions:\ }Choose a quantity ($q_{1}$ and $q_{2}$)
+
+\bigskip
+
+Actions by types: $1$ chooses $q_{1}$
+
+Player $2$, type $c_{H}$ chooses $q_{2}(c_{H})$
+
+Player $2$, type $c_{L}$ chooses $q_{2}(c_{L})$
+
+\bigskip
+
+\textbf{Payoffs: }%
+\[
+\pi _{k}=q_{k}\cdot p(Q)=q_{k}\cdot (a-q_{1}-q_{2}-c_{k})\text{ for }k\in
+\{1,2\} 
+\]
+
+\bigskip
+
+\textbf{States: }Firm 2's marginal cost $c_{2}\in \{C_{H,}C_{L}\}$ where $%
+C_{L}<C_{H}$
+
+\bigskip
+
+\textbf{Information structure }
+
+$2$ knows $c_{2}$ 
+
+$1$ assigns $P(c_{2}=C_{H})=\theta $, $P(c_{2}=C_{L})=1-\theta $
+
+\bigskip
+
+\textit{Note}:\ In these games, beliefs always correspond to the correct
+(correctly computed)\ probabilities given the information.
+
+\bigskip 
+
+\textbf{Best Responses }
+
+Note:\ These will yield a NE\ strategy profile, a BNE outcome where these
+intersect,
+
+Firm 2:
+
+$q_{2}^{\ast }(c_{t})$ solves 
+\begin{eqnarray*}
+\max_{q_{2}}\text{ }[(a-q_{1}^{\ast }-q_{2})-C_{t}]q_{2}\text{ for }t &\in
+&\{H,L\} \\
+s.t.\text{ }q_{2} &>&0
+\end{eqnarray*}
+
+\bigskip
+
+\textit{Q:\ }\bigskip \textit{Explain intuitively what firm 1 will do as a
+`best response' ...}
+
+\bigskip
+
+\textit{A: Firm 1 will set quantity to optimize its expected profit, knowing
+that there is some probability it will face a high-cost competitor, and some
+probability it will face a low cost competitor. \ The optimal quantity will
+be somewhere in between, in this case, in fact the weighted average of the
+optimal quantities in each case.}
+
+\bigskip
+
+Firm 1:
+
+$q_{1}^{\ast }$ solves 
+\begin{eqnarray*}
+&&\max_{q_{1}}\text{ }\left\{ 
+\begin{array}{c}
+\theta \lbrack a-q_{1}-q_{2}^{\ast }(C_{H})-c]q_{1}\text{ } \\ 
++(1-\theta )[a-q_{1}-q_{2}^{\ast }(C_{L})-c]q_{1}%
+\end{array}%
+\right\}  \\
+s.t.q_{1} &>&0
+\end{eqnarray*}
+
+\bigskip
+
+\textit{Q: How to solve these for BR's?}\bigskip
+
+\textit{A: Solve for first order-conditions (set first derivative equal to
+zero). \ This is a necessary condition for an interior optimum, though not
+sufficient. We want the `choice variable' on the left hand side only, as a
+function of the parameters and the other firm's choice.}
+
+\bigskip
+
+FOC's:
+
+\begin{equation}
+q_{2}^{\ast }(C_{t})=\frac{a-q_{1}^{\ast }-C_{t}}{2}\text{ for }t=L,H 
+\tag{1 \& 2}
+\end{equation}
+
+\begin{equation}
+q_{1}^{\ast }=\frac{\theta \lbrack a-q_{2}^{\ast }(C_{H})-c]+(1-\theta
+)[a-q_{2}^{\ast }(C_{L})-c]}{2}  \tag{3}
+\end{equation}
+
+\bigskip
+
+\textbf{Note}\textit{:\ }This assumes the parameters are such that both
+quantities are positive. \ Actually, we \textit{do }have to worry about
+`corner solutions' here -- the high cost firm may not produce -- but we
+ignore this for now.
+
+\bigskip
+
+\textit{Q: How to solve these for BNE quantities?}
+
+\bigskip
+
+\textit{A: We need to solve this system of equations, substituting one
+player-type's optimum into the others to find a `fixed point.'}
+
+\bigskip
+
+\textit{Q: What will these BNE quantities be a function of?}
+
+\bigskip
+
+\textit{A:They will be a function of the parameters (}$\theta ,c,C_{H},C_{L}$%
+\textit{). \ They will *not* be a function of the other player-type's
+quantities!}
+
+\bigskip 
+
+We solve this by substituting equation 3 ($q_{1}^{\ast }$) into equations 1
+\& 2, and then substituting each of these ($q_{2}^{\ast }(C_{L})$ and $%
+q_{2}^{\ast }(C_{H})$) into equation 3. \ 
+
+\bigskip
+
+This yields:%
+\begin{eqnarray*}
+q_{2}^{\ast }(C_{H}) &=&\frac{a-2C_{H}+C}{3}+\frac{1-\theta }{6}(C_{H}-C_{L})
+\\
+q_{2}^{\ast }(C_{L}) &=&\frac{a-2C_{L}+C}{3}-\frac{\theta }{6}(C_{H}-C_{L})
+\end{eqnarray*}
+
+\bigskip
+
+\textit{Question: What is interesting about these BNE\ outcomes (outputs)?}
+
+\bigskip
+
+\begin{itemize}
+\item The output for the high-cost type is \textit{higher} than the
+high-cost type's output in the complete information case (i.e., in the case
+where player 1 knew 2's cost). \ Remember, this complete information output
+was $q_{i}^{\ast }=\frac{a-2c_{i}+c_{j}}{3}$ where $c_{i}$ was own and $%
+c_{j} $ was the other firm's cost.
+
+\item Similarly, the output for the low-cost type is \textit{lower } than
+the low-cost type's output in the complete information case.
+
+\item For both types the BNE\ output involves not only the cost of the
+player's type, but the cost of the player's other type! \ Note that this was 
+\textit{not} true for the BR functions! \ 
+\end{itemize}
+
+\bigskip
+
+\textit{Why?}
+
+\bigskip
+
+A: Your optimal output depends not only on your own costs but on your
+expectation of the other player's output, and thus on how the other player
+will react to what it \textit{thinks} are your costs! \ 
+
+Firm $2$ will produce less when its costs are high than when they are low,
+ceterus paribus. \ However, if firm 1 is not sure firm 2's costs are high,
+firm $1$ doesn't know how much firm 2 will limit its output and thus 1 will
+not increase its output as much as it would if it \textit{knew }firm 2's
+costs were high. \ Firm 2 knows this, and thus does not limit its output as
+much. \ This second effect -- the response to firm $1$'s lack of
+information, is described by the second additive terms in the above...
+
+\bigskip
+
+\textit{Q:\ What did we forget to compute?}
+
+\bigskip
+
+Firm 1's BNE strategy (action):%
+\[
+q_{1}^{\ast }=\frac{a-2c+\theta C_{H}+(1-\theta )C_{L}}{3} 
+\]
+
+\bigskip
+
+Note, this is like a response based on `average' $c_{2}$, i.e., $\theta
+C_{H}+(1-\theta )C_{L}$. \ This equivalence does not always hold.
+
+\end{document}
