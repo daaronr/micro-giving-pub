@@ -579,7 +579,11 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="8.3" data-path="incomp-info.html"><a href="incomp-info.html#extensive-games-with-imperfect-information"><i class="fa fa-check"></i><b>8.3</b> Extensive Games with Imperfect information</a>
 <ul>
-<li class="chapter" data-level="8.3.1" data-path="incomp-info.html"><a href="incomp-info.html#most-famous-case-spence-signaling-model"><i class="fa fa-check"></i><b>8.3.1</b> Most famous case: (Spence) signaling model</a></li>
+<li class="chapter" data-level="8.3.1" data-path="incomp-info.html"><a href="incomp-info.html#motivation-sequential-rationality"><i class="fa fa-check"></i><b>8.3.1</b> Motivation: Sequential Rationality</a></li>
+<li class="chapter" data-level="8.3.2" data-path="incomp-info.html"><a href="incomp-info.html#motivation-consistency-of-beliefs"><i class="fa fa-check"></i><b>8.3.2</b> Motivation: Consistency of Beliefs</a></li>
+<li class="chapter" data-level="8.3.3" data-path="incomp-info.html"><a href="incomp-info.html#definitions-beliefs-sequential-equilibrium-assesments"><i class="fa fa-check"></i><b>8.3.3</b> Definitions: Beliefs, sequential equilibrium, assesments</a></li>
+<li class="chapter" data-level="8.3.4" data-path="incomp-info.html"><a href="incomp-info.html#equilibrium-concept-weak-sequential-equilibrium"><i class="fa fa-check"></i><b>8.3.4</b> Equilibrium Concept: Weak sequential equilibrium</a></li>
+<li class="chapter" data-level="8.3.5" data-path="incomp-info.html"><a href="incomp-info.html#most-famous-case-spence-signaling-model"><i class="fa fa-check"></i><b>8.3.5</b> Most famous case: (Spence) signaling model</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="gt-strat-ex.html"><a href="gt-strat-ex.html"><i class="fa fa-check"></i>Suggested exercises</a>
@@ -1057,8 +1061,119 @@ and matching environment where participants observe noisy signals of their partn
 <div id="extensive-games-with-imperfect-information" class="section level2" number="8.3">
 <h2><span class="header-section-number">8.3</span> Extensive Games with Imperfect information</h2>
 <p>Some notes <a href="https://www.dropbox.com/s/1o4rr6chbxnlast/05_BWI_SPNEd_cut_HO_wanskey.pdf?dl=0">here</a>; some notation comes from a different Osborne text, as well as a text by Watson</p>
-<div id="most-famous-case-spence-signaling-model" class="section level3" number="8.3.1">
-<h3><span class="header-section-number">8.3.1</span> Most famous case: (Spence) signaling model</h3>
+<div id="motivation-sequential-rationality" class="section level3" number="8.3.1">
+<h3><span class="header-section-number">8.3.1</span> Motivation: Sequential Rationality</h3>
+<p>Example: entry game, Challenger who may be ready or unready and Incumbent</p>
+<center>
+<p><img src="picsfigs/entry_ready_game.png" /></p>
+</center>
+<p>Note: no proper subgames (remember, a subgame must begin at a singleton information set)</p>
+<p>So SPNE is the same as NE here.</p>
+<p><strong>Strategic form:</strong></p>
+<p><img src="entry_ready_strat.png" /></p>
+<!--
+$$\begin{tabular}{ccc}
+& \textbf{A} & \textbf{F} \\ 
+\textbf{R} & 3,\underline{3} & 1,1 \\ 
+\textbf{U} & \underline{\textit{4}},\underline{3} & 0,2 \\ 
+\textbf{O} & 2,\underline{4} & \underline{\textit{2,4}}%
+\end{tabular}%$$
+
+-->
+<p>There are two NE here: {Unready,Acquiesce} and {Out,Fight}?.</p>
+<p>Are they both reasonable?</p>
+<p>Subgame perfection doesn’t eliminate either (no proper subgames).</p>
+<p>But we know it is suboptimal for the incumbent to fight once the
+challenger has entered, whether or not the challenger is prepared.  So
+‘fight’ wouldn’t seem to be a good strategy ever, and thus {Out,Fight}
+depends on an incredible threat.</p>
+<p><em>We could add a requirement:</em></p>
+<p><strong>Optimal at each information set (</strong>Sequential Rationality<strong>):</strong> Each
+player’s strategy is optimal (for at least some node in the information
+set) whenever she has to move.</p>
+<p>I.e., each player’s strategy must be optimal at each of her information
+sets.</p>
+<p>The strategy ‘Fight’ is not optimal at each information set here – it
+is not optimal for the incumbent to fight at the incumbent’s information
+set (when he has the move, i.e., after some form of entry), niether
+whether he is at the node following Unready nor whether he is at the
+node following Ready</p>
+<p>Thus, only the NE strategy profile {Unready,Acquiesce} meets the
+requirement of optimality at each information set in the game above.</p>
+</div>
+<div id="motivation-consistency-of-beliefs" class="section level3" number="8.3.2">
+<h3><span class="header-section-number">8.3.2</span> Motivation: Consistency of Beliefs</h3>
+<center>
+<p><img src="picsfigs/entry_ready_game.png" /></p>
+</center>
+<p>Strategic form:</p>
+<p><img src="entry_ready_strat.png" /></p>
+<p><br />
+</p>
+<p>Now the incumbent prefers to fight if the challenger enters unready, but
+prefers to acquiese if the challenger enters ready.  So there is no
+clear optimal move at this information set – it depends whether the
+challenger prepared.</p>
+<p>So, is Out, Fight a reasonable equilibrium?</p>
+<p>Perhaps if the incumbent thinks ‘any challenger who enters will not
+prepare.’</p>
+<p>At this node (following Unready) the action ‘Fight’ is optimal.</p>
+<p>Thus the requirement of ‘optimality at each information set’ does not
+rule anything out here.</p>
+<p>Note that whether fight is ‘optimal’ depends on the incumbent’s
+<strong>beliefs</strong> (about out-of-equilibrium play)!</p>
+</div>
+<div id="definitions-beliefs-sequential-equilibrium-assesments" class="section level3" number="8.3.3">
+<h3><span class="header-section-number">8.3.3</span> Definitions: Beliefs, sequential equilibrium, assesments</h3>
+<p><strong>Rem:</strong> In the static game beliefs were ‘correct’ in equilibrium.</p>
+<p>For extensive game this is less clearly defined – some nodes are never reached, so there is no obvious ‘correct’ belief if those nodes were
+reached!</p>
+<p><span class="math inline">\(\mathbf{\Longrightarrow }\)</span><em>We will define equilibrium in terms of pairs
+(assesments): Strategy profiles &amp; Collections of beliefs</em></p>
+<p><br />
+</p>
+<p><strong>Beliefs</strong></p>
+<p>At an information set with more than one history (element/node) the
+player who has the move ‘forms a belief over the histories’ (previous
+moves; including moves by nature).</p>
+<p>At each information set a <em>belief</em> assigns a probability to each
+possible history,</p>
+<p>...or assigns a probability distribution over all the possible
+histories (in an infinite strategy set game)..<br />
+</p>
+<p><strong>Belief System</strong></p>
+<p>A <em>belief system</em> is a collection of <em>beliefs</em>, one for each information
+set of each player.</p>
+<p><br />
+</p>
+<p><strong>Assessment</strong></p>
+<p>An <em>assessment</em> pairs a profile of strategies and a belief system.</p>
+<p><br />
+</p>
+</div>
+<div id="equilibrium-concept-weak-sequential-equilibrium" class="section level3" number="8.3.4">
+<h3><span class="header-section-number">8.3.4</span> Equilibrium Concept: Weak sequential equilibrium</h3>
+<div class="marginnote">
+<p>WSE is ‘almost’ the same as Perfect Bayesian Equilibrium, the more familiar concept, perhaps. There are small difference between PBE and WSE but I will not
+discuss them here.</p>
+</div>
+<p><br />
+</p>
+<p>An assesment is a <em>WSE</em> if it meets two requirements</p>
+<p><em>Requirement 1</em><strong>– Sequentially rationality:</strong> Each strategy is
+optimal for each player when he has the move given his belief (and the
+other players’ subsequent prescribed ‘continuation’ strategies)</p>
+<p><em>Requirement 2 –</em> <strong> Consistency of Beliefs with Strategies:</strong> Each player’s belief is consistent with the strategy profile (this will be made more specific later)..</p>
+<p><em>Sequential rationality</em> rules out off-the-equilibrium-path behavior
+that is ‘suboptimal’ (given consistent beliefs and given the other
+player’s subsequent prescribed strategies)</p>
+<p><br />
+<strong>MORE CONTENT TO BE ADDED HERE SOON</strong></p>
+<p><br />
+</p>
+</div>
+<div id="most-famous-case-spence-signaling-model" class="section level3" number="8.3.5">
+<h3><span class="header-section-number">8.3.5</span> Most famous case: (Spence) signaling model</h3>
 <p>Some notes <a href="https://www.dropbox.com/s/9ztajxsf8izodnr/09-10_PBE_notesA.pdf?dl=0">HERE</a> to be adapted when I have time.</p>
 <p><br />
 </p>

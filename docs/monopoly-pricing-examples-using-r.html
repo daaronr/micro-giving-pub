@@ -579,7 +579,11 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="8.3" data-path="incomp-info.html"><a href="incomp-info.html#extensive-games-with-imperfect-information"><i class="fa fa-check"></i><b>8.3</b> Extensive Games with Imperfect information</a>
 <ul>
-<li class="chapter" data-level="8.3.1" data-path="incomp-info.html"><a href="incomp-info.html#most-famous-case-spence-signaling-model"><i class="fa fa-check"></i><b>8.3.1</b> Most famous case: (Spence) signaling model</a></li>
+<li class="chapter" data-level="8.3.1" data-path="incomp-info.html"><a href="incomp-info.html#motivation-sequential-rationality"><i class="fa fa-check"></i><b>8.3.1</b> Motivation: Sequential Rationality</a></li>
+<li class="chapter" data-level="8.3.2" data-path="incomp-info.html"><a href="incomp-info.html#motivation-consistency-of-beliefs"><i class="fa fa-check"></i><b>8.3.2</b> Motivation: Consistency of Beliefs</a></li>
+<li class="chapter" data-level="8.3.3" data-path="incomp-info.html"><a href="incomp-info.html#definitions-beliefs-sequential-equilibrium-assesments"><i class="fa fa-check"></i><b>8.3.3</b> Definitions: Beliefs, sequential equilibrium, assesments</a></li>
+<li class="chapter" data-level="8.3.4" data-path="incomp-info.html"><a href="incomp-info.html#equilibrium-concept-weak-sequential-equilibrium"><i class="fa fa-check"></i><b>8.3.4</b> Equilibrium Concept: Weak sequential equilibrium</a></li>
+<li class="chapter" data-level="8.3.5" data-path="incomp-info.html"><a href="incomp-info.html#most-famous-case-spence-signaling-model"><i class="fa fa-check"></i><b>8.3.5</b> Most famous case: (Spence) signaling model</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="gt-strat-ex.html"><a href="gt-strat-ex.html"><i class="fa fa-check"></i>Suggested exercises</a>
@@ -756,7 +760,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb12-3"><a href="monopoly-pricing-examples-using-r.html#cb12-3"></a>wtp &lt;-<span class="st"> </span><span class="dv">45</span> <span class="op">+</span><span class="st"> </span><span class="kw">rnorm</span>(npeep)<span class="op">*</span><span class="dv">15</span> <span class="co"># Each person has a different willingness to pay</span></span></code></pre></div>
 <p><br />
 </p>
-<p>Checking, the standard deviation is 15.35 (coded as <code>sd(wtp)</code>). The exact number will vary each time you run the simulation in R but it will generally be close to 15.</p>
+<p>Checking, the standard deviation is 14.7 (coded as <code>sd(wtp)</code>). The exact number will vary each time you run the simulation in R but it will generally be close to 15.</p>
 <p><br />
 </p>
 <blockquote>
@@ -772,7 +776,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb13-5"><a href="monopoly-pricing-examples-using-r.html#cb13-5"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(op)) qd[i] &lt;-<span class="st"> </span><span class="kw">sum</span>(wtp<span class="op">&gt;=</span>op[i]) <span class="co"># We fill qd with the number of consumers with a wtp &gt;= offering price</span></span></code></pre></div>
 <p><br />
 Let’s look at the ‘vector of quantities demanded’</p>
-<p>1999, 1997, 1997, 1996, 1995, 1993, 1990, 1988, 1983, 1982, 1975, 1969, 1966, 1961, 1958, 1948, 1939, 1933, 1919, 1909, 1898, 1886, 1875, 1853, 1829, 1805, 1780, 1745, 1724, 1679, 1643, 1615, 1572, 1536, 1499, 1461, 1409, 1376, 1323, 1271, 1231, 1165, 1111, 1055, 1008, 959, 918, 866, 821, 774, 720, 671, 625, 590, 535, 497, 456, 418, 382, 350, 319, 292, 264, 236, 205, 178, 164, 147, 131, 119, 110, 91, 74, 68, 54, 46, 41, 35, 31, 27, 25, 22, 16, 13, 11, 9, 7, 6, 5, 5, 5</p>
+<p>1999, 1999, 1999, 1999, 1998, 1997, 1996, 1995, 1993, 1990, 1987, 1985, 1981, 1979, 1977, 1972, 1968, 1962, 1951, 1943, 1926, 1914, 1900, 1886, 1876, 1852, 1828, 1803, 1773, 1750, 1711, 1682, 1648, 1602, 1561, 1512, 1472, 1425, 1377, 1329, 1280, 1218, 1170, 1118, 1066, 1005, 955, 910, 859, 810, 758, 702, 657, 608, 563, 528, 484, 434, 393, 349, 316, 289, 254, 230, 210, 190, 164, 137, 126, 107, 94, 88, 73, 66, 62, 54, 45, 36, 32, 28, 24, 21, 19, 16, 15, 15, 15, 12, 11, 7, 6</p>
 <p>The code above has simply created a vector that computes the quantity demanded at each of the 90 prices £1, £2, …, £90, given the simulated willinges to pay for the 2000 potential consumers.</p>
 <p><br />
 </p>

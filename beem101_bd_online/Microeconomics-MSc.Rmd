@@ -14520,6 +14520,165 @@ An example of this game, with slightly different payoffs, deriving the equilibri
 
 Some notes [here](https://www.dropbox.com/s/1o4rr6chbxnlast/05_BWI_SPNEd_cut_HO_wanskey.pdf?dl=0); some notation comes from a different Osborne text, as well as a text by Watson
 
+
+### Motivation: Sequential Rationality
+
+Example: entry game, Challenger who may be ready or unready and Incumbent
+
+<center>
+![](picsfigs/entry_ready_game.png)
+
+</center>
+
+ Note: no proper subgames (remember, a subgame must begin at a singleton information set)
+
+So SPNE is the same as NE here.
+
+**Strategic form:**
+
+
+![](entry_ready_strat.png)
+
+<!--
+$$\begin{tabular}{ccc}
+& \textbf{A} & \textbf{F} \\ 
+\textbf{R} & 3,\underline{3} & 1,1 \\ 
+\textbf{U} & \underline{\textit{4}},\underline{3} & 0,2 \\ 
+\textbf{O} & 2,\underline{4} & \underline{\textit{2,4}}%
+\end{tabular}%$$
+
+--> 
+
+There are two NE here: {Unready,Acquiesce} and {Out,Fight}?.
+
+Are they both reasonable?
+
+Subgame perfection doesn't eliminate either (no proper subgames).
+
+But we know it is suboptimal for the incumbent to fight once the
+challenger has entered, whether or not the challenger is prepared.  So
+'fight' wouldn't seem to be a good strategy ever, and thus {Out,Fight}
+depends on an incredible threat.
+
+*We could add a requirement:*
+
+**Optimal at each information set (**Sequential Rationality**):** Each
+player's strategy is optimal (for at least some node in the information
+set) whenever she has to move.
+
+I.e., each player's strategy must be optimal at each of her information
+sets.
+
+The strategy 'Fight' is not optimal at each information set here -- it
+is not optimal for the incumbent to fight at the incumbent's information
+set (when he has the move, i.e., after some form of entry), niether
+whether he is at the node following Unready nor whether he is at the
+node following Ready
+
+Thus, only the NE strategy profile {Unready,Acquiesce} meets the
+requirement of optimality at each information set in the game above.
+
+### Motivation: Consistency of Beliefs
+
+
+<center>
+![](picsfigs/entry_ready_game.png)
+
+</center>
+Strategic form:
+
+
+![](entry_ready_strat.png)
+
+\
+
+Now the incumbent prefers to fight if the challenger enters unready, but
+prefers to acquiese if the challenger enters ready.  So there is no
+clear optimal move at this information set -- it depends whether the
+challenger prepared.
+
+So, is Out, Fight a reasonable equilibrium?
+
+Perhaps if the incumbent thinks 'any challenger who enters will not
+prepare.'
+
+At this node (following Unready) the action 'Fight' is optimal.
+
+Thus the requirement of 'optimality at each information set' does not
+rule anything out here.
+
+
+Note that whether fight is 'optimal' depends on the incumbent's
+**beliefs** (about out-of-equilibrium play)!
+
+### Definitions: Beliefs, sequential equilibrium, assesments
+
+**Rem:** In the static game beliefs were 'correct' in equilibrium.
+
+For extensive game this is less clearly defined -- some nodes are never reached, so there is no obvious 'correct' belief if those nodes were
+reached!
+
+$\mathbf{\Longrightarrow }$*We will define equilibrium in terms of pairs
+(assesments): Strategy profiles & Collections of beliefs*
+
+\
+
+**Beliefs**
+
+At an information set with more than one history (element/node) the
+player who has the move 'forms a belief over the histories' (previous
+moves; including moves by nature).
+
+At each information set a *belief* assigns a probability to each
+possible history,
+
+\...or assigns a probability distribution over all the possible
+histories (in an infinite strategy set game)..
+\
+
+**Belief System**
+
+A *belief system* is a collection of *beliefs*, one for each information
+set of each player.
+
+\
+
+**Assessment**
+
+An *assessment* pairs a profile of strategies and a belief system.
+
+
+\
+
+### Equilibrium Concept: Weak sequential equilibrium 
+
+
+
+<div class="marginnote">
+
+WSE is 'almost' the same as Perfect Bayesian Equilibrium, the more familiar concept, perhaps. There are small difference between PBE and WSE but I will not
+    discuss them here.
+</div>
+\
+
+
+An assesment is a *WSE* if it meets two requirements
+
+*Requirement 1***-- Sequentially rationality:** Each strategy is
+optimal for each player when he has the move given his belief (and the
+other players' subsequent prescribed 'continuation' strategies)
+
+*Requirement 2 --* ** Consistency of Beliefs with Strategies:** Each player's belief is consistent with the strategy profile (this will be made more specific later)..
+
+*Sequential rationality* rules out off-the-equilibrium-path behavior
+that is 'suboptimal' (given consistent beliefs and given the other
+player's subsequent prescribed strategies)
+
+\
+**MORE CONTENT TO BE ADDED HERE SOON** 
+
+\
+
 ### Most famous case: (Spence) signaling model
 
 Some notes [HERE](https://www.dropbox.com/s/9ztajxsf8izodnr/09-10_PBE_notesA.pdf?dl=0) to be adapted when I have time.
