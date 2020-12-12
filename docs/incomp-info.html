@@ -24,7 +24,7 @@
 <meta name="author" content="Dr. David Reinstein, University of Exeter, main web page, innovationsinfundraising.org, Twitter: givingtools" />
 
 
-<meta name="date" content="2020-12-09" />
+<meta name="date" content="2020-12-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -571,18 +571,18 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="8.1.1" data-path="incomp-info.html"><a href="incomp-info.html#examples-in-tree-form"><i class="fa fa-check"></i><b>8.1.1</b> Examples in tree form</a></li>
 </ul></li>
-<li class="chapter" data-level="8.2" data-path="incomp-info.html"><a href="incomp-info.html#bayesian-games-incomplete-information-informal"><i class="fa fa-check"></i><b>8.2</b> Bayesian games (incomplete information, informal)</a>
+<li class="chapter" data-level="8.2" data-path="incomp-info.html"><a href="incomp-info.html#bayes-games"><i class="fa fa-check"></i><b>8.2</b> Bayesian games (incomplete information, informal)</a>
 <ul>
 <li class="chapter" data-level="8.2.1" data-path="incomp-info.html"><a href="incomp-info.html#bayesian-nash-equilibrium-bne-informal-definition"><i class="fa fa-check"></i><b>8.2.1</b> Bayesian Nash equilibrium (BNE; informal definition)</a></li>
 <li class="chapter" data-level="8.2.2" data-path="incomp-info.html"><a href="incomp-info.html#example-asymmetric-information-cournot"><i class="fa fa-check"></i><b>8.2.2</b> Example: Asymmetric information Cournot</a></li>
 <li class="chapter" data-level="8.2.3" data-path="incomp-info.html"><a href="incomp-info.html#example-fight-or-yieldsimultaneous-entry"><i class="fa fa-check"></i><b>8.2.3</b> Example: ‘fight or yield’/simultaneous entry</a></li>
 </ul></li>
-<li class="chapter" data-level="8.3" data-path="incomp-info.html"><a href="incomp-info.html#extensive-games-with-imperfect-information"><i class="fa fa-check"></i><b>8.3</b> Extensive Games with Imperfect information</a>
+<li class="chapter" data-level="8.3" data-path="incomp-info.html"><a href="incomp-info.html#sequential-games-with-imperfect-information"><i class="fa fa-check"></i><b>8.3</b> Sequential Games with Imperfect information</a>
 <ul>
-<li class="chapter" data-level="8.3.1" data-path="incomp-info.html"><a href="incomp-info.html#motivation-sequential-rationality"><i class="fa fa-check"></i><b>8.3.1</b> Motivation: Sequential Rationality</a></li>
-<li class="chapter" data-level="8.3.2" data-path="incomp-info.html"><a href="incomp-info.html#motivation-consistency-of-beliefs"><i class="fa fa-check"></i><b>8.3.2</b> Motivation: Consistency of Beliefs</a></li>
-<li class="chapter" data-level="8.3.3" data-path="incomp-info.html"><a href="incomp-info.html#definitions-beliefs-sequential-equilibrium-assesments"><i class="fa fa-check"></i><b>8.3.3</b> Definitions: Beliefs, sequential equilibrium, assesments</a></li>
-<li class="chapter" data-level="8.3.4" data-path="incomp-info.html"><a href="incomp-info.html#equilibrium-concept-weak-sequential-equilibrium"><i class="fa fa-check"></i><b>8.3.4</b> Equilibrium Concept: Weak sequential equilibrium</a></li>
+<li class="chapter" data-level="8.3.1" data-path="incomp-info.html"><a href="incomp-info.html#definitions-beliefs-sequential-equilibrium-assessments"><i class="fa fa-check"></i><b>8.3.1</b> Definitions: Beliefs, sequential equilibrium, assessments</a></li>
+<li class="chapter" data-level="8.3.2" data-path="incomp-info.html"><a href="incomp-info.html#wse"><i class="fa fa-check"></i><b>8.3.2</b> Equilibrium Concept: Weak sequential equilibrium</a></li>
+<li class="chapter" data-level="8.3.3" data-path="incomp-info.html"><a href="incomp-info.html#consistent_blf"><i class="fa fa-check"></i><b>8.3.3</b> Consistency of Beliefs with Strategies (Requirement 2 of WSE)</a></li>
+<li class="chapter" data-level="8.3.4" data-path="incomp-info.html"><a href="incomp-info.html#seql-nature"><i class="fa fa-check"></i><b>8.3.4</b> Sequential games with ‘nature’</a></li>
 <li class="chapter" data-level="8.3.5" data-path="incomp-info.html"><a href="incomp-info.html#most-famous-case-spence-signaling-model"><i class="fa fa-check"></i><b>8.3.5</b> Most famous case: (Spence) signaling model</a></li>
 </ul></li>
 </ul></li>
@@ -827,7 +827,7 @@ play scissors ... etc.</p>
 <p>But there may be a mixed strategy NE in this ’<em>subgame’.</em></p>
 </div>
 </div>
-<div id="bayesian-games-incomplete-information-informal" class="section level2" number="8.2">
+<div id="bayes-games" class="section level2" number="8.2">
 <h2><span class="header-section-number">8.2</span> Bayesian games (incomplete information, informal)</h2>
 <p>There is something uncertain, chosen by ‘nature or chance’ that affect the payoffs of one or more players (resulting from certain combinations of actions); typically we refer to this in terms of “types of players” where each type has a different set of payoffs that results from a certain profile of actions.</p>
 <p>There are “common prior beliefs about types”: All players know the payoffs of each type and the probability of each type occurring. Furthermore, we typically assume all players know that all players know this, etc. (common knowledge).</p>
@@ -1058,19 +1058,118 @@ and matching environment where participants observe noisy signals of their partn
 <p>An example of this game, with slightly different payoffs, deriving the equilibrium under two possible cases is given in <a href="https://web.sgh.waw.pl/~mlewan1/Site/GT_files/ps2solution.pdf">these notes</a></p>
 </div>
 </div>
-<div id="extensive-games-with-imperfect-information" class="section level2" number="8.3">
-<h2><span class="header-section-number">8.3</span> Extensive Games with Imperfect information</h2>
+<div id="sequential-games-with-imperfect-information" class="section level2" number="8.3">
+<h2><span class="header-section-number">8.3</span> Sequential Games with Imperfect information</h2>
+<div class="marginnote">
 <p>Some notes <a href="https://www.dropbox.com/s/1o4rr6chbxnlast/05_BWI_SPNEd_cut_HO_wanskey.pdf?dl=0">here</a>; some notation comes from a different Osborne text, as well as a text by Watson</p>
-<div id="motivation-sequential-rationality" class="section level3" number="8.3.1">
-<h3><span class="header-section-number">8.3.1</span> Motivation: Sequential Rationality</h3>
-<p>Example: entry game, Challenger who may be ready or unready and Incumbent</p>
+</div>
+<div id="multi-stage" class="section level4 unnumbered" number="">
+<h4>Motivating Example - ‘Multi-stage-game’</h4>
+<p>Consider the ‘Multi-stage-game’ depicted in the tree below.*</p>
+<div class="marginnote">
+<p>* Remember, the dashed lines indicate that player 2, if she has the move, does not know whether 1 chose C or chose D.</p>
+</div>
+<p>Think it through … what might we expect will happen? Does it make sense to think that 1 will choose E?</p>
+<p>Or is a profile of strategies like <span class="math inline">\(\{C,J;F\}\)</span> reasonable?</p>
+
+<div class="fold">
+<p>Intuition:</p>
+<p>Action-wise, 1 can end the game early by choosing <span class="math inline">\(E\)</span> and get a ‘safe’ payoff of 2. Or, she can choose D or C, which, as we see, can earn her a maximum payoff of 3, but a minimum payoff of 0.</p>
+<p>If she chooses D or C, player 2 ‘has the move’ but 2 will not know whether D or C was chosen; 2 only will know that E was <em>not</em> chosen.</p>
+<p>If 1 chose D then 2’s choice takes us to the terminal node; if 2 believes D was chosen she would prefer to choose F, leaving a payoff of only 1 to each player.</p>
+<p>On the other hand, if 1 chose C, then if 2 chooses G the game ends and 1 gets 0 and 2 gets 1.</p>
+<p>If, after C, 2 chooses F then 1 has the move once again. At this point 1 would prefer to choose J, earning 3 and leaving 0 for player 2.</p>
+<p>So if 2 ‘gets the move’ we might think he will choose <span class="math inline">\(G\)</span> if he thinks <span class="math inline">\(C\)</span> was more likely chosen and she will choose <span class="math inline">\(F\)</span> if he thinks <span class="math inline">\(D\)</span> was more likely chosen. If 1 thinks that he can ‘fool’ 2 into thinking she chose D (and thus choosing F), she may want to choose C (and then J after F), to earn 3.</p>
+<p>But should we predict that 2 is thus ‘fooled’? Would this be a reasonable ‘fool me once equilibrium’? We return to this <a href="incomp-info.html#multi-wse">below</a>.</p>
+</div>
 <center>
-<p><img src="picsfigs/entry_ready_game.png" /></p>
+<img src="picsfigs/tree_consider_beliefs.png" title="fig:" alt="Multi-stage-game" />
 </center>
-<p>Note: no proper subgames (remember, a subgame must begin at a singleton information set)</p>
-<p>So SPNE is the same as NE here.</p>
+<p>Above, suppose that player 1 plays the strategy highlighted in blue (player 2’s potential moves are in red). Given player 1’s strategy what should 2 suppose if he ‘gets the move’ (i.e., arrives at information set ${C,D}?</p>
+<p>Let’s say (we are just <em>considering this</em>), that 2 supposes that “if 1 were to decide to deviate from his strategy (E,J) then 1 would play C with probability <span class="math inline">\(\frac{2}{3}\)</span> and D with probability <span class="math inline">\(\frac{1}{3}\)</span>.”</p>
+<ul>
+<li>I.e., suppose 2’s <em>beliefs</em> at this information set assigned the probabilities <span class="math inline">\(\frac{2}{3}\)</span> and <span class="math inline">\(\frac{1}{3}\)</span> to C and D, respectively, as shown in brackets.</li>
+</ul>
+<p>We assume that 2 will believe that, even after making this ‘mistake’ or ‘deviation’ 1 will subsequently play rationally, i.e., play J if she gets to the node following C,F. Indeed, the proposed strategy <span class="math inline">\((E,J)\)</span> is consistent with this.</p>
+<p>In fact, we will define the concept of <a href="incomp-info.html#wse"><em>sequential rationality</em></a> to capture this; and n any strategy for player 1 that is ‘sequentially rational’ she must play <span class="math inline">\(J\)</span> following the history <span class="math inline">\(\(C,F\)\)</span>,**</p>
+<div class="marginnote">
+<p>** We say ‘sequentially rational’ rather than ‘subgame perfect’ to also encompass decision nodes like the one faced by 2 when he has the move. Technically, these do not represent the initial node in a ‘subgame’ as the information set is not a ‘singleton’ … i.e., 2 doesn’t know ‘where he is’.</p>
+</div>
+<ul>
+<li>and thus 2 must believe 1 will play <span class="math inline">\(J\)</span> at this node in any WSE, for ‘Consistency of Beliefs with Strategies.’</li>
+</ul>
+<p><br />
+</p>
+<p>*Given the assumptions above, and given 2’s beliefs (which we arbitrarily supposed) <strong>what is 2’s ‘best’ (sequentially rational) action at the information set <span class="math inline">\(\{C,D\}\)</span>?</strong></p>
+<p>Let’s consider the Expected Utility payoffs to each move:</p>
+<ul>
+<li><p>If 1 played C, 2’s best move is G, yielding payoff 1. If 1 played D, G yields 0.</p></li>
+<li><p>If 1 played D, 2’s best move is F, yielding payoff 1. If 1 played C, F yields 0.</p></li>
+<li><p><span class="math inline">\(\rightarrow\)</span> So ‘which action is better’ depends on the probability 1 played C versus D</p></li>
+<li><p>We are supposing that (2 believes that), ‘off the equilibrium path’, C occurred with probability <span class="math inline">\(\frac{2}{3}\)</span> and D with probability <span class="math inline">\(\frac{1}{3}\)</span></p></li>
+</ul>
+<p><span class="math inline">\(\rightarrow\)</span> Thus 2’s EU payoffs to playing G are:</p>
+<p><span class="math display">\[
+\begin{aligned}
+EU_{2}(G) &amp;=&amp;\Pr (C)\times U_{2}(\{C;G\})+\Pr (D)\times U_{2}(\{D;G\}) \\
+&amp;=&amp;\frac{2}{3}\times 1+\frac{1}{3}\times 0=\frac{2}{3}
+\end{aligned}
+\]</span></p>
+<p><br />
+</p>
+<p>On the other hand, 2’s EU payoffs to playing F are:</p>
+<p><span class="math display">\[
+\begin{aligned}
+EU_{2}(F) &amp;=&amp;\Pr (C)\times U_{2}(\{C;F\})+\Pr (D)\times U_{2}(\{D;F\}) \\
+&amp;=&amp;\frac{2}{3}\times 0+\frac{1}{3}\times 1=\frac{1}{3}
+\end{aligned}
+\]</span></p>
+<p>So, given the assumptions above, given 2’s beliefs and 1’s optimal
+strategy (for the rest of the game), if 2 is at the information set
+${C,D}$, his best move is <span class="math inline">\(G\)</span>. <span class="math inline">\(G\)</span> is thus the ‘sequentially rational’ action
+<em>given these beliefs and given 1’s strategy.</em></p>
+<p><br />
+</p>
+<blockquote>
+<p>Hold on, you! If 1 is choosing <span class="math inline">\(E\)</span> anyway, why do we need to worry about
+this?</p>
+</blockquote>
+<p>Well, we are only <em>considering</em> that 1 may play E.</p>
+<p>1 must ask <em>‘is playing E the best?’</em> ’<em>Will playing C or D do better
+(in EU terms)?’</em></p>
+<p>To get the answer to this question, 1 needs to ask ‘<em>if I play C (or D),
+what will player 2 do?</em>’</p>
+<p>But what player 2 does at <span class="math inline">\(\{C,D\}\)</span> will depend on what player 2 <em>believes</em>
+1 played – <span class="math inline">\(C\)</span> or <span class="math inline">\(D\)</span>.</p>
+<p>So, in order to decide the EU payoffs to playing <span class="math inline">\(C\)</span> (or <span class="math inline">\(D\)</span>), to
+compare this to playing <span class="math inline">\(E\)</span>, 1 needs to know (or assign) what player 2’s
+<em>beliefs</em> are at <span class="math inline">\(\{C,D\}\)</span>.</p>
+<div class="marginnote">
+<p>Remember that ‘1 choosing (E,J)’ is a complete strategy, but this tells us nothing about what 2 is supposed to believe if he “gets the move”!</p>
+</div>
+</div>
+<div id="mot-seq-rat" class="section level4 unnumbered" number="">
+<h4>Motivating example: Sequential Rationality</h4>
+<div class="marginnote">
+<p>I present this example to intuitively justify the reasonableness of the ‘Sequential Rationality’ requirement which will be part of the <a href="incomp-info.html#wse">‘Weak Sequential Equilibrium’</a>.</p>
+</div>
+<p>Consider the following example… <em>Entry Readiness Game 1</em> with a Challenger who may be ready or unready and an Incumbent, depicted in the tree below.</p>
+<center>
+<div class="figure">
+<img src="picsfigs/entry_ready_game.png" alt="" />
+<p class="caption">Entry Readiness Game 1</p>
+</div>
+</center>
+
+<div class="note">
+<p>Note: Technically, there are no proper subgames (remember, a subgame must begin at a singleton information set). So SPNE is in fact the same as NE here.</p>
+</div>
+<p><br />
+</p>
 <p><strong>Strategic form:</strong></p>
-<p><img src="entry_ready_strat.png" /></p>
+<center>
+<img src="picsfigs/entry_ready_strat_2.png" />
+</center>
 <!--
 $$\begin{tabular}{ccc}
 & \textbf{A} & \textbf{F} \\ 
@@ -1080,97 +1179,328 @@ $$\begin{tabular}{ccc}
 \end{tabular}%$$
 
 -->
-<p>There are two NE here: {Unready,Acquiesce} and {Out,Fight}?.</p>
+<p>There are two NE here: <span class="math inline">\(\{Unready;Acquiesce\}\)</span> and <span class="math inline">\(\{Out,Fight\}\)</span>.</p>
 <p>Are they both reasonable?</p>
 <p>Subgame perfection doesn’t eliminate either (no proper subgames).</p>
 <p>But we know it is suboptimal for the incumbent to fight once the
-challenger has entered, whether or not the challenger is prepared.  So
-‘fight’ wouldn’t seem to be a good strategy ever, and thus {Out,Fight}
+challenger has entered, whether or not the challenger is prepared. So
+‘fight’ wouldn’t seem to be a good strategy ever, and thus ${Out; Fight}$
 depends on an incredible threat.</p>
-<p><em>We could add a requirement:</em></p>
-<p><strong>Optimal at each information set (</strong>Sequential Rationality<strong>):</strong> Each
-player’s strategy is optimal (for at least some node in the information
-set) whenever she has to move.</p>
-<p>I.e., each player’s strategy must be optimal at each of her information
-sets.</p>
-<p>The strategy ‘Fight’ is not optimal at each information set here – it
-is not optimal for the incumbent to fight at the incumbent’s information
-set (when he has the move, i.e., after some form of entry), niether
-whether he is at the node following Unready nor whether he is at the
-node following Ready</p>
-<p>Thus, only the NE strategy profile {Unready,Acquiesce} meets the
-requirement of optimality at each information set in the game above.</p>
-</div>
-<div id="motivation-consistency-of-beliefs" class="section level3" number="8.3.2">
-<h3><span class="header-section-number">8.3.2</span> Motivation: Consistency of Beliefs</h3>
-<center>
-<p><img src="picsfigs/entry_ready_game.png" /></p>
-</center>
-<p>Strategic form:</p>
-<p><img src="entry_ready_strat.png" /></p>
 <p><br />
 </p>
-<p>Now the incumbent prefers to fight if the challenger enters unready, but
-prefers to acquiese if the challenger enters ready.  So there is no
-clear optimal move at this information set – it depends whether the
-challenger prepared.</p>
-<p>So, is Out, Fight a reasonable equilibrium?</p>
-<p>Perhaps if the incumbent thinks ‘any challenger who enters will not
-prepare.’</p>
-<p>At this node (following Unready) the action ‘Fight’ is optimal.</p>
-<p>Thus the requirement of ‘optimality at each information set’ does not
-rule anything out here.</p>
-<p>Note that whether fight is ‘optimal’ depends on the incumbent’s
-<strong>beliefs</strong> (about out-of-equilibrium play)!</p>
+<p><em>We could add a requirement:</em></p>
+
+<div class="def">
+<p><strong>Optimal at each information set (Sequential Rationality):</strong> Each player’s strategy is optimal, given her beliefs, whenever she has the move.</p>
 </div>
-<div id="definitions-beliefs-sequential-equilibrium-assesments" class="section level3" number="8.3.3">
-<h3><span class="header-section-number">8.3.3</span> Definitions: Beliefs, sequential equilibrium, assesments</h3>
-<p><strong>Rem:</strong> In the static game beliefs were ‘correct’ in equilibrium.</p>
-<p>For extensive game this is less clearly defined – some nodes are never reached, so there is no obvious ‘correct’ belief if those nodes were
-reached!</p>
-<p><span class="math inline">\(\mathbf{\Longrightarrow }\)</span><em>We will define equilibrium in terms of pairs
-(assesments): Strategy profiles &amp; Collections of beliefs</em></p>
+<p>I.e., each player’s strategy must be optimal at each of her information sets.</p>
+<p>The strategy ‘Fight’ is not optimal at each information set here.</p>
+
+<div class="inputq">
+<p>Why not?</p>
+</div>
+<p><br />
+</p>
+
+<div class="fold">
+<p>A: it is not optimal for the incumbent to play Fight at the incumbent’s information set (when he has the move, i.e., after some form of entry). It is not if he is at the node following <em>Unready</em> nor if he is at the node following <em>Ready</em>. Thus, no matter his beliefs, this cannot be optimal.</p>
+</div>
+<p>Thus, only the NE strategy profile <span class="math inline">\(\{Unready; Acquiesce\}\)</span> meets the (sequential rationality) requirement of optimality at each information set in the game above.</p>
+<p><br />
+</p>
+</div>
+<div id="definitions-beliefs-sequential-equilibrium-assessments" class="section level3" number="8.3.1">
+<h3><span class="header-section-number">8.3.1</span> Definitions: Beliefs, sequential equilibrium, assessments</h3>
+<p><strong>Remember:</strong> In simultaneous (static) games beliefs about other players’ strategies were ‘correct’ in equilibrium. No player ‘regretted’ her action.</p>
+<p><br />
+</p>
+<p>For extensives game this idea is less clearly defined – some nodes are never reached, so there is no obvious ‘correct’ belief for nodes that are never
+reached in equilibrium !</p>
+<p><br />
+</p>
+<p><span class="math inline">\(\rightarrow\)</span> <em>We will define equilibrium in terms of pairs (assesments): Strategy profiles &amp; collections of beliefs</em></p>
 <p><br />
 </p>
 <p><strong>Beliefs</strong></p>
-<p>At an information set with more than one history (element/node) the
-player who has the move ‘forms a belief over the histories’ (previous
-moves; including moves by nature).</p>
+<p>At an information set with more than one history (element/node) the player who has the move ‘forms a belief over the histories’ (previous moves; including moves by nature).</p>
 <p>At each information set a <em>belief</em> assigns a probability to each
 possible history,</p>
-<p>...or assigns a probability distribution over all the possible
-histories (in an infinite strategy set game)..<br />
+<p>or assigns a probability distribution over all the possible
+histories (in an infinite strategy set game)..</p>
+<p><br />
 </p>
+
+<div class="def">
 <p><strong>Belief System</strong></p>
 <p>A <em>belief system</em> is a collection of <em>beliefs</em>, one for each information
 set of each player.</p>
+</div>
 <p><br />
 </p>
+
+<div class="def">
 <p><strong>Assessment</strong></p>
 <p>An <em>assessment</em> pairs a profile of strategies and a belief system.</p>
+</div>
 <p><br />
 </p>
-</div>
-<div id="equilibrium-concept-weak-sequential-equilibrium" class="section level3" number="8.3.4">
-<h3><span class="header-section-number">8.3.4</span> Equilibrium Concept: Weak sequential equilibrium</h3>
+<div id="motivating-example-consistency-of-beliefs" class="section level4 unnumbered" number="">
+<h4>Motivating example: Consistency of Beliefs</h4>
+<p>Consider the following variation of the previous entry game, depicted in the tree below. Call this ‘Entry Readiness Game 2’.</p>
 <div class="marginnote">
-<p>WSE is ‘almost’ the same as Perfect Bayesian Equilibrium, the more familiar concept, perhaps. There are small difference between PBE and WSE but I will not
-discuss them here.</p>
+<p>I present this example to intuitively justify the reasonableness of the ‘Consistency of beliefs’ requirement which will be part of the <a href="incomp-info.html#wse">‘Weak Sequential Equilibrium’</a>.</p>
+</div>
+<center>
+<div class="figure">
+<img src="picsfigs/entry_ready_game_2.png" alt="" />
+<p class="caption">Entry Readiness Game 2</p>
+</div>
+</center>
+<p>Strategic form:</p>
+<p><img src="picsfigs/entry_ready_strat.png" /></p>
+<p><br />
+</p>
+<p>Now the incumbent prefers to fight if the challenger enters unready, but prefers to acquiesce if the challenger enters ready. So there is no clear optimal move at this information set – it depends whether or not the challenger prepared.</p>
+<p><br />
+</p>
+<p><em>So, is <span class="math inline">\(\{Out; Fight\}\)</span> a reasonable equilibrium profile?</em></p>
+<p>Perhaps if the incumbent thinks ‘any challenger who enters will not prepare.’ At this node (following Unready) the action ‘Fight’ is optimal.</p>
+<p><br />
+</p>
+<p>Thus the requirement of ‘optimality at each information set’ does not
+rule anything out here.</p>
+<p>Note that whether fight is ‘optimal’ and thus whether the above can be an equilibrium profile depends on the incumbent’s <em>beliefs</em> about <em>out-of-equilibrium play</em>!</p>
+<p><br />
+</p>
+<p>But are any beliefs reasonable? We have more to say on this…</p>
+<p><br />
+</p>
+</div>
+</div>
+<div id="wse" class="section level3" number="8.3.2">
+<h3><span class="header-section-number">8.3.2</span> Equilibrium Concept: Weak sequential equilibrium</h3>
+<div class="marginnote">
+<p>WSE is ‘almost’ the same as Perfect Bayesian Equilibrium, which is more widely referred to. However, PBE imposes additional restrictions on <em>out of equilibrium</em> beliefs.</p>
 </div>
 <p><br />
 </p>
-<p>An assesment is a <em>WSE</em> if it meets two requirements</p>
-<p><em>Requirement 1</em><strong>– Sequentially rationality:</strong> Each strategy is
+
+<div class="def">
+<p>An assessment is a <em>WSE</em> if it meets two requirements</p>
+<p><em>Requirement 1</em>– <strong>Sequentially rationality:</strong> Each strategy is
 optimal for each player when he has the move given his belief (and the
 other players’ subsequent prescribed ‘continuation’ strategies)</p>
-<p><em>Requirement 2 –</em> <strong> Consistency of Beliefs with Strategies:</strong> Each player’s belief is consistent with the strategy profile (this will be made more specific later)..</p>
-<p><em>Sequential rationality</em> rules out off-the-equilibrium-path behavior
-that is ‘suboptimal’ (given consistent beliefs and given the other
-player’s subsequent prescribed strategies)</p>
-<p><br />
-<strong>MORE CONTENT TO BE ADDED HERE SOON</strong></p>
+<p><em>Sequential rationality</em> rules out off-the-equilibrium-path behavior that is ‘suboptimal’ (given ones beliefs and given the actions specified by the other players’ strategies)</p>
+<p><em>Requirement 2</em> – <strong>Consistency of Beliefs with Strategies:</strong> Each player’s belief is consistent with the strategy profile <a href="incomp-info.html#consistent_blf">See next section</a>..</p>
+</div>
 <p><br />
 </p>
+</div>
+<div id="consistent_blf" class="section level3" number="8.3.3">
+<h3><span class="header-section-number">8.3.3</span> Consistency of Beliefs with Strategies (Requirement 2 of WSE)</h3>
+<blockquote>
+<p>In a steady state, each player’s belief must be correct’</p>
+</blockquote>
+<ul>
+<li>Osborne text</li>
+</ul>
+<p><br />
+</p>
+<p><strong>Consistency of beliefs at information sets</strong><em>:</em></p>
+<p>At each information set beliefs are determined by Bayes’ rule and the
+players’ equilibrium strategies <em>‘where possible’.</em></p>
+<!--
+However, "off the equilibrium path", e.g., at a surprise event, any updated belief is allowed.
+-->
+<p><br />
+</p>
+<p><strong>Bayes Rule:</strong> *</p>
+<div class="marginnote">
+<p>* This is a fundamental rule of probability. It is very useful in a wide variety of contexts. It is worth digging into deeply and understanding it both formally and intuitively, and being able to apply it.</p>
+</div>
+<p><span class="math display">\[\Pr (X|Y_{1})=\frac{\Pr (X,Y_{1})}{\Pr (Y_{1})}\]</span></p>
+<p>This can be thought of as the ‘definition of conditional probability’. But conditional probability also has an intuitive meaning.</p>
+<p><br />
+</p>
+<p>We can also ‘invert the relationship’:</p>
+<p><span class="math display">\[Pr(Y_{1}|X)=\frac{\Pr (X,Y_{1})}{\Pr (X)}=\frac{\Pr (X|Y_{1})\Pr (Y_{1})}{
+\Pr (X)}\]</span></p>
+<p><br />
+</p>
+<p><br />
+</p>
+<p>If <span class="math inline">\(Y\)</span> is drawn from a discrete set of N possible events <span class="math inline">\(\mathbf{Y=}\{Y_{1},Y_{2},...,Y_{N}\}\)</span> we have:</p>
+<p><span class="math display">\[Pr(Y_{1}|X)=\frac{\Pr (X|Y_1)\Pr (Y_{1})}{\Pr (X|Y_{1})\Pr (Y_{1})+\Pr (X|Y_{2})\Pr(Y_{2})+...+\Pr (X|Y_{N})\Pr (Y_{N})}\]</span><br />
+</p>
+<p>For an interesting example,
+see the famous <a href="http://en.wikipedia.org/wiki/Bayesian_analysis#False_positives_in_a%20_medical_test">‘false positives in a medical test’</a></p>
+<p><br />
+</p>
+<p><strong>Bayes rule</strong> for conditional probabilities in the present game theory case:</p>
+<p><span class="math display">\[\Pr(h^{\ast}|I_{i}\text{ reached; strategy } \beta)
+=\frac{\Pr (h^{\ast };\beta )}{\sum\limits_{h\in I_{i}}\Pr (h;\beta )}\]</span></p>
+<div class="marginnote">
+<p>Read this as “the probability of a particular history <span class="math inline">\(h^{\ast}\)</span> having occurred, given that a player finds herself at information set (node) <span class="math inline">\(I_{i}\)</span>, given all players’ strategies <span class="math inline">\(\beta\)</span>”</p>
+<p>Note <span class="math inline">\(Pr(h^{\ast },I_{i})=Pr(h^{\ast })\)</span> here since these only occur together.</p>
+</div>
+<p>A player finds herself at information set <span class="math inline">\(I_{i}\)</span>. What probability should she assign that <span class="math inline">\(h^{\ast }\)</span> has been played?</p>
+<p>By the above formula, she should take the ratio of</p>
+<ul>
+<li><p>…the (unconditional) probability that <span class="math inline">\(h^{\ast }\)</span> is played under the
+strategy <span class="math inline">\(\beta\)</span></p></li>
+<li><p>to the probability we <em>get</em> to the information set <span class="math inline">\(I_{i}\)</span>.</p></li>
+</ul>
+<p>Note that the latter is the sum of the probabilities of each history that leads us to <span class="math inline">\(I_{i}\)</span>… under strategy <span class="math inline">\(\beta\)</span>).</p>
+<p><em>Intuition:</em> there may be multiple paths (histories( that could have lead to the information set <span class="math inline">\(I_i\)</span>. We are simply dividing the <em>overall</em> probability of history <span class="math inline">\(h^{\ast}\)</span> (which leads <span class="math inline">\(I_i\)</span>) by the sum of the probabilities of <em>all other histories</em> that lead to <span class="math inline">\(I_i\)</span>.*</p>
+<div class="marginnote">
+<p>This is only an interesting calculation if we have a mixed or “behavioral” strategy (similar to a mixed strategy but mixing at a particular information set/node). Otherwise the probability will generally be 1 or will be undefined.</p>
+</div>
+<div id="example-consistency-of-beliefs-at-information-sets-on-the-equilibrium-path" class="section level4 unnumbered" number="">
+<h4>Example: Consistency of beliefs at information sets “on the equilibrium path”</h4>
+<p>We come back to ‘Entry Readiness Game 1’:</p>
+<center>
+<img src="picsfigs/entry_ready_game.png" title="fig:" alt="Entry Readiness Game 1" />
+</center>
+<p><a href="incomp-info.html#mot-seq-rat">Above</a>, we decided that ${Unready,Acquiesce}$ and ${Out,Fight}$
+are both SPNE, but only <span class="math inline">\(\{Unready,Acquiesce\}\)</span> involves optimal actions at all
+information sets (‘continuation games’).</p>
+<p><br />
+</p>
+<p>Let’s consider the (candidate) equilibrium <strong>${Unready,Acquiesce}$</strong>,
+which is a <em>SPNE</em>, is <em>optimal at each information set,</em> and potentially also a <em>WSE</em>.</p>
+<p>The incumbent’s information set ${Ready, Unready}$ is thus <em>on</em> the
+equilibrium path.</p>
+<p><br />
+</p>
+<p>Given the challenger’s equilibrium strategy (if this is an equilibrium),</p>
+<p>the only belief that is <em>consistent</em> with this strategy sets <span class="math inline">\(\Pr (Ready)=0,\Pr(Unready)=1\)</span>.</p>
+<p>...And given this belief, the incumbent is playing the sequentially
+rational strategy ‘acquiesce.’</p>
+<p><br />
+</p>
+</div>
+<div id="multi-wse" class="section level4 unnumbered" number="">
+<h4>Example II : Consistency of beliefs at information sets “on the equilibrium path”</h4>
+<p>We return to the ‘Multi-stage-game’ depicted <a href="incomp-info.html#multi-stage">above</a>:</p>
+<center>
+<div class="figure">
+<img src="picsfigs/multi-game.png" alt="" />
+<p class="caption">Multi-stage-game</p>
+</div>
+</center>
+<ol style="list-style-type: decimal">
+<li>Let’s examine the pairing of beliefs and strategies graphically depicted
+above.</li>
+</ol>
+<ul>
+<li><p>Player 1’s strategy (E,J) is depicted in blue.</p></li>
+<li><p>Player 2’s strategy is (G), depicted in red.</p></li>
+</ul>
+<p>We already noted (see above discussion) that each of these strategies are sequentially rational (requirement 1).</p>
+<p><br />
+</p>
+Now…
+
+<div class="inputq">
+<p>Do player 2’s beliefs meet the consistency requirement (requirement II)?</p>
+</div>
+<p><br />
+</p>
+<p>Yes, they do trivially, because player 2’s information set is off the
+equilibrium path, so <em>any beliefs are permitted.</em></p>
+<p>So the assessment that pairs the profile of strategies <span class="math inline">\(\{E,J;G\}\)</span> with
+player 2’s beliefs – <span class="math inline">\(\Pr (C)=\frac{2}{3}\)</span>,<span class="math inline">\(\Pr (D)=\frac{1}{3}\)</span> is a
+WSE.</p>
+<p><br />
+</p>
+<p><strong>2.</strong> What about the profile <span class="math inline">\(\{D,J;G\}\)</span> (depicted below)– This is a NE,
+and sequentially rational for the previously discussed belief system – <span class="math inline">\(\Pr(C)=\frac{2}{3}\)</span>,<span class="math inline">\(\Pr (D)=\frac{1}{3\)</span>.</p>
+<center>
+<div class="figure">
+<img src="picsfigs/multi-game-not-wse.png" alt="" />
+<p class="caption">Multi-stage-game</p>
+</div>
+</center>
+<p><br />
+</p>
+<p>But given 1’s strategy such a belief system is not consistent, as this ‘mixing’ does not describe what player 1 does, and this is <em>on</em> the equilibrium path!</p>
+<p><br />
+</p>
+
+<div class="inputq">
+<p>Can this be a WSE for <em>some</em> consistent belief system?</p>
+</div>
+<p>Given 1’s strategy (D,J), the <em>only</em> consistent belief at information set
+<span class="math inline">\(\{C,D\}\)</span> is simply <span class="math inline">\(\Pr (D)=1\)</span>.</p>
+<p>But if <span class="math inline">\(\Pr (D)=1\)</span>,</p>
+<p><span class="math display">\[\begin{aligned}
+EU_{2}(G) &amp;=&amp;0 \\
+EU_{2}(F) &amp;=&amp;1
+\end{aligned}\]</span></p>
+<p>So playing G is not sequentially rational.</p>
+<p><br />
+</p>
+<p>So the WSE rules out the ‘fool me once’ outcome we discussed at the top.</p>
+<p><br />
+</p>
+<p><strong>Note on the above, relating equilibrium concepts</strong> (unfold)</p>
+<p><strong>Remember</strong>: WSE is a <em>refinement</em> of SPNE, which was a refinement of
+NE. So, any PBE must be a SPNE and a NE (but not necessarily vice/versa)</p>
+<p>Let’s examine a <em>subset</em> of the strategic form, leaving out strategies
+that include the strategy k (which cannot be part of a subgame perfect equilibrium).</p>
+<p><img src="picsfigs/multi-strat-subset.png" /></p>
+<p>Since <span class="math inline">\(\{E,J;G\}\)</span> was the only SPNE in pure strategies we already knew
+it (paired with appropriate beliefs) was the only WSE in pure strategies.</p>
+<p><br />
+</p>
+</div>
+</div>
+<div id="seql-nature" class="section level3" number="8.3.4">
+<h3><span class="header-section-number">8.3.4</span> Sequential games with ‘nature’</h3>
+<p>We now consider games where ‘chance plays a role’. As in our earlier discussion of <a href="incomp-info.html#bayes-games">‘Bayesian games’</a>, nature selects a random value which is revealed to (e.g.) only one player.</p>
+<div id="example-a-very-simplified-version-of-poker" class="section level4" number="8.3.4.1">
+<h4><span class="header-section-number">8.3.4.1</span> Example: (a very simplified version of) Poker</h4>
+<p>Nature first chooses whether player 1 has a ‘high’ or ‘low’ card (a good or bad hand) relative to the other player. She <em>knows</em> this.</p>
+<p>She can ‘See’ (‘check’) or Raise the bet.</p>
+<p>Next, player 2, who <em>doesn’t</em> know 1’s hand, can “Pass” (aka “fold his hand”) or “Meet”.</p>
+<p>Payoffs are given below; note that these depend both on the actions of each player and on the ‘choice of Chance’.</p>
+<center>
+<p><img src="picsfigs/poker_tree.png" /></p>
+</center>
+<p><br />
+</p>
+<p>We can write this in ‘Bayesian Normal (strategic) form’, to consider the BNE. Note that this does <em>not</em> consider sequential rationality:</p>
+<p>Bayesian normal form: Payoffs expressed as EU payoffs (over both types)</p>
+<table>
+<tbody>
+<tr class="odd">
+<td></td>
+<td align="center"><strong>Pass</strong></td>
+<td align="center"><strong>Meet</strong></td>
+</tr>
+<tr class="even">
+<td><strong>R,R</strong></td>
+<td align="center"><span class="underline">1</span>,-1</td>
+<td align="center">0,<span class="underline">0</span></td>
+</tr>
+<tr class="odd">
+<td><strong>R,S</strong></td>
+<td align="center">0,<span class="underline">0</span></td>
+<td align="center"><span class="underline"><span class="math inline">\(\frac{1}{2}\)</span></span><span class="math inline">\(,-\frac{1}{2}\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>S,R</strong></td>
+<td align="center"><span class="underline">1</span>,-1</td>
+<td align="center">-<span class="math inline">\(\frac{1}{2},\)</span><span class="underline"><span class="math inline">\(\frac{1}{2}\)</span></span></td>
+</tr>
+<tr class="odd">
+<td><strong>S,S</strong></td>
+<td align="center">0,<span class="underline">0</span></td>
+<td align="center">0,<span class="underline">0</span></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 <div id="most-famous-case-spence-signaling-model" class="section level3" number="8.3.5">
 <h3><span class="header-section-number">8.3.5</span> Most famous case: (Spence) signaling model</h3>
