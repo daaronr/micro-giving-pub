@@ -174,7 +174,7 @@ Standard Economics:
 - How hard to work towards a promotion at your job?
 
 
-Very interesting problems, does Econ and Game Theory have the solutions?
+Very interesting problems, do Economics and Game Theory have the solutions?
 
 ```
 
@@ -188,7 +188,7 @@ Very interesting problems, does Econ and Game Theory have the solutions?
 
 Game theory gives us a language and framework for analyzing strategic situations
 
-The 'solution concepts' can be said to make ' predictions' under given assumptions.  The idea of 'equilibrium' is defined as a baseline.
+The 'solution concepts' can be said to make 'predictions' under given assumptions.  The idea of 'equilibrium' is defined as a baseline.
 \
 
 Dr. Reinstein says: Sometimes overrated as a tool for predicting how people/firms will actually behave.
@@ -829,7 +829,7 @@ Please consider all of the examples in O-R section 15.2-15.3, at least insofar a
 
 We see:
 
--  Games where the NE (and indeed the unique rationalisable strategies) defy both intuition and 'actual play in experiments', and where the NE does *not* maximise the player's payoffs \*  -- (Traveler's dillemma, Prisoners' dillemma, price and quantity setting, see also the ['Keynsian Beauty contest'](https://web.stanford.edu/~niederle/GuessingGames.pdf) or problem 5 in O-R) ...
+-  Games where the NE (and indeed the unique rationalisable strategies) defy both intuition and 'actual play in experiments', and where the NE does *not* maximise the player's payoffs \*  -- (Traveler's dillemma, Prisoners' dillemma, price and quantity setting, see also the ['Keynesian Beauty contest'](https://web.stanford.edu/~niederle/GuessingGames.pdf) or problem 5 in O-R) ...
 
 <div class="marginnote">
 \* Although, as I mention elsewhere, in any interactive experiment it is hard to rule out that 'social preferences' may drive the results. We can only control the financial payoffs; we don't know what the "true payoffs" are if players care about other players or about fairness etc.
@@ -2593,7 +2593,7 @@ There would seem to be no pure strategy prediction here.
 But there may be a mixed strategy NE in this '*subgame'.*
 
 
-## Bayesian games (incomplete information, informal)
+## Bayesian games (incomplete information, informal) {#bayes-games}
 
 There is something uncertain, chosen by 'nature or chance' that affect the payoffs of one or more players (resulting from certain combinations of actions); typically we refer to this in terms of "types of players" where each type has a different set of payoffs that results from a certain profile of actions.
 
@@ -2915,28 +2915,166 @@ On the other hand if B 'always fights' (whether strong or weak), then for A, pla
 An example of this game, with slightly different payoffs, deriving the equilibrium under two possible cases is given in [these notes](https://web.sgh.waw.pl/~mlewan1/Site/GT_files/ps2solution.pdf)
 
 
-## Extensive Games with Imperfect information
+## Sequential Games with Imperfect information
 
+<div class="marginnote">
 Some notes [here](https://www.dropbox.com/s/1o4rr6chbxnlast/05_BWI_SPNEd_cut_HO_wanskey.pdf?dl=0); some notation comes from a different Osborne text, as well as a text by Watson
+</div>
+
+#### Motivating Example - 'Multi-stage-game' {-#multi-stage}
+
+Consider the 'Multi-stage-game' depicted in the tree below.\*
+
+<div class="marginnote">
+
+\* Remember, the dashed lines indicate that player 2, if she has the move, does not know whether 1 chose C or chose D. 
+</div>
+
+Think it through ... what might we expect will happen? Does it make sense to think that 1 will choose E?
+
+Or is a profile of strategies like $\{C,J;F\}$ reasonable? 
+
+```{block2,  type='fold'}
+
+Intuition:
+    
+Action-wise, 1 can end the game early by choosing $E$ and get a 'safe' payoff of 2. Or, she can choose D or C, which, as we see, can earn her a maximum payoff of 3, but a minimum payoff of 0. 
+
+If she chooses D or C, player 2 'has the move' but 2 will not know whether D or C was chosen; 2 only will know that E was *not* chosen. 
+
+If 1 chose D then 2's choice takes us to the terminal node; if 2 believes D was chosen she would prefer to choose F, leaving a payoff of only 1 to each player. 
+
+On the other hand, if 1 chose C, then if 2 chooses G the game ends and 1 gets 0 and 2 gets 1.
+
+If, after C, 2 chooses F then 1 has the move once again. At this point 1 would prefer to choose J, earning 3 and leaving 0 for player 2. 
+
+So if 2 'gets the move' we might think he will choose $G$ if he thinks $C$ was more likely chosen and she will choose $F$ if he thinks $D$ was more likely chosen. If 1 thinks that he can 'fool' 2 into thinking she chose D (and thus choosing F), she may want to choose C (and then J after F), to earn 3.  
+
+But should we predict that 2 is thus 'fooled'? Would this be a reasonable 'fool me once equilibrium'? We return to this [below](#multi-wse).
+
+```
 
 
-### Motivation: Sequential Rationality
-
-Example: entry game, Challenger who may be ready or unready and Incumbent
 
 <center>
-![](picsfigs/entry_ready_game.png)
+![Multi-stage-game](picsfigs/tree_consider_beliefs.png)
+</center>
+
+
+Above, suppose that player 1 plays the strategy highlighted in blue (player 2's potential moves are in red). Given player 1's strategy what should 2 suppose if he 'gets the move' (i.e., arrives at information set $\{C,D\}?
+
+Let's say (we are just *considering this*), that 2 supposes that "if 1 were to  decide to deviate from his strategy (E,J) then 1 would play C with probability $\frac{2}{3}$ and D with probability $\frac{1}{3}$."
+
+-   I.e., suppose 2's *beliefs* at this information set assigned the probabilities $\frac{2}{3}$ and $\frac{1}{3}$ to C and D, respectively, as shown in brackets.
+
+We assume that 2 will believe that, even after making this 'mistake' or 'deviation' 1 will subsequently play rationally, i.e., play J if she gets to the node following C,F. Indeed, the proposed strategy $(E,J)$ is consistent with this.
+
+In fact, we will define the concept of [*sequential rationality*](#wse) to capture this; and  n any strategy for player 1 that is 'sequentially rational' she must play $J$ following the history $\(C,F\)$,\*\*
+
+<div class="marginnote">
+\*\* We say 'sequentially rational' rather than 'subgame perfect' to also encompass decision nodes like the one faced by 2 when he has the move. Technically, these do not represent the initial node in a 'subgame' as the information set is not a 'singleton' ... i.e., 2 doesn't know 'where he is'.
+</div>
+
+- and thus 2 must believe 1 will play $J$ at this node in any WSE, for 'Consistency of Beliefs with Strategies.'
+ 
+
+\
+
+*Given the assumptions above, and given 2's beliefs (which we  arbitrarily supposed) **what is 2's 'best' (sequentially rational) action at the information set $\{C,D\}$?**
+
+Let's consider the Expected Utility payoffs to each move:
+
+-   If 1 played C, 2's best move is G, yielding payoff 1. If 1 played D, G yields 0.
+
+-   If 1 played D, 2's best move is F, yielding payoff 1. If 1 played C, F yields 0.
+
+-   $\rightarrow$ So 'which action is better' depends on the probability 1 played C versus D
+
+-   We are supposing that (2 believes that), 'off the equilibrium path', C occurred with probability $\frac{2}{3}$ and D with probability $\frac{1}{3}$
+
+$\rightarrow$ Thus 2's EU payoffs to playing G are:
+
+$$
+\begin{aligned}
+EU_{2}(G) &=&\Pr (C)\times U_{2}(\{C;G\})+\Pr (D)\times U_{2}(\{D;G\}) \\
+&=&\frac{2}{3}\times 1+\frac{1}{3}\times 0=\frac{2}{3}
+\end{aligned}
+$$
+
+\
+
+On the other hand, 2's EU payoffs to playing F are:
+
+$$
+\begin{aligned}
+EU_{2}(F) &=&\Pr (C)\times U_{2}(\{C;F\})+\Pr (D)\times U_{2}(\{D;F\}) \\
+&=&\frac{2}{3}\times 0+\frac{1}{3}\times 1=\frac{1}{3}
+\end{aligned}
+$$
+
+So, given the assumptions above, given 2's beliefs and 1's optimal
+strategy (for the rest of the game), if 2 is at the information set
+\${C,D\}$, his best move is $G$. $G$ is thus the 'sequentially rational' action
+*given these beliefs and given 1's strategy.*
+
+\
+
+
+> Hold on, you! If 1 is choosing $E$ anyway, why do we need to worry about
+this?
+
+Well, we are only *considering* that 1 may play E. 
+
+1 must ask *'is playing E the best?'* '*Will playing C or D do better
+(in EU terms)?'*
+
+To get the answer to this question, 1 needs to ask '*if I play C (or D),
+what will player 2 do?*'
+
+But what player 2 does at $\{C,D\}$ will depend on what player 2 *believes*
+1 played -- $C$ or $D$.
+
+So, in order to decide the EU payoffs to playing $C$ (or $D$), to
+compare this to playing $E$, 1 needs to know (or assign) what player 2's
+*beliefs* are at $\{C,D\}$.
+
+<div class="marginnote">
+
+Remember that '1 choosing (E,J)' is a complete strategy, but this tells us nothing about what 2 is supposed to believe if he "gets the move"!
+
+</div>
+ 
+
+
+#### Motivating example: Sequential Rationality {-#mot-seq-rat}
+
+<div class="marginnote">
+
+I present this example to intuitively justify the reasonableness of the 'Sequential Rationality' requirement which will be part of the ['Weak Sequential Equilibrium'](#wse).
+
+</div>
+ 
+
+Consider the following example...  *Entry Readiness Game 1* with a Challenger who may be ready or unready and an Incumbent, depicted in the tree below.
+
+<center>
+![Entry Readiness Game 1](picsfigs/entry_ready_game.png)
 
 </center>
 
- Note: no proper subgames (remember, a subgame must begin at a singleton information set)
+```{block2,  type='note'}
 
-So SPNE is the same as NE here.
+Note: Technically, there are no proper subgames (remember, a subgame must begin at a singleton information set). So SPNE is in fact the same as NE here.
+
+```  
+
+\
 
 **Strategic form:**
 
-
-![](entry_ready_strat.png)
+<center>
+![](picsfigs/entry_ready_strat_2.png)
+</center>
 
 <!--
 $$\begin{tabular}{ccc}
@@ -2948,135 +3086,436 @@ $$\begin{tabular}{ccc}
 
 --> 
 
-There are two NE here: {Unready,Acquiesce} and {Out,Fight}?.
+There are two NE here: $\{Unready;Acquiesce\}$ and $\{Out,Fight\}$.
 
 Are they both reasonable?
 
 Subgame perfection doesn't eliminate either (no proper subgames).
 
 But we know it is suboptimal for the incumbent to fight once the
-challenger has entered, whether or not the challenger is prepared.  So
-'fight' wouldn't seem to be a good strategy ever, and thus {Out,Fight}
+challenger has entered, whether or not the challenger is prepared. So
+'fight' wouldn't seem to be a good strategy ever, and thus \${Out; Fight\}$
 depends on an incredible threat.
-
-*We could add a requirement:*
-
-**Optimal at each information set (**Sequential Rationality**):** Each
-player's strategy is optimal (for at least some node in the information
-set) whenever she has to move.
-
-I.e., each player's strategy must be optimal at each of her information
-sets.
-
-The strategy 'Fight' is not optimal at each information set here -- it
-is not optimal for the incumbent to fight at the incumbent's information
-set (when he has the move, i.e., after some form of entry), niether
-whether he is at the node following Unready nor whether he is at the
-node following Ready
-
-Thus, only the NE strategy profile {Unready,Acquiesce} meets the
-requirement of optimality at each information set in the game above.
-
-### Motivation: Consistency of Beliefs
-
-
-<center>
-![](picsfigs/entry_ready_game.png)
-
-</center>
-Strategic form:
-
-
-![](entry_ready_strat.png)
 
 \
 
-Now the incumbent prefers to fight if the challenger enters unready, but
-prefers to acquiese if the challenger enters ready.  So there is no
-clear optimal move at this information set -- it depends whether the
-challenger prepared.
+*We could add a requirement:*
 
-So, is Out, Fight a reasonable equilibrium?
+```{block2,  type='def'}
 
-Perhaps if the incumbent thinks 'any challenger who enters will not
-prepare.'
+**Optimal at each information set (Sequential Rationality):** Each player's strategy is optimal, given her beliefs, whenever she has the move.
 
-At this node (following Unready) the action 'Fight' is optimal.
+```  
 
-Thus the requirement of 'optimality at each information set' does not
-rule anything out here.
+I.e., each player's strategy must be optimal at each of her information sets.
 
 
-Note that whether fight is 'optimal' depends on the incumbent's
-**beliefs** (about out-of-equilibrium play)!
+The strategy 'Fight' is not optimal at each information set here. 
 
-### Definitions: Beliefs, sequential equilibrium, assesments
+```{block2,  type='inputq'}
 
-**Rem:** In the static game beliefs were 'correct' in equilibrium.
+Why not?
 
-For extensive game this is less clearly defined -- some nodes are never reached, so there is no obvious 'correct' belief if those nodes were
-reached!
+```  
 
-$\mathbf{\Longrightarrow }$*We will define equilibrium in terms of pairs
-(assesments): Strategy profiles & Collections of beliefs*
+
+\
+
+```{block2,  type='fold'}
+
+A: it is not optimal for the incumbent to play Fight at the incumbent's information set (when he has the move, i.e., after some form of entry). It is not if  he is at the node following *Unready* nor if he is at the node following *Ready*. Thus, no matter his beliefs, this cannot be optimal.
+
+```
+ 
+Thus, only the NE strategy profile $\{Unready; Acquiesce\}$ meets the (sequential rationality) requirement of optimality at each information set in the game above.
+
+\
+
+
+### Definitions: Beliefs, sequential equilibrium, assessments
+
+**Remember:** In simultaneous (static) games beliefs about other players' strategies were 'correct' in equilibrium. No player 'regretted' her action.
+
+\
+
+For extensives game this idea is less clearly defined -- some nodes are never reached, so there is no obvious 'correct' belief for nodes that are never
+reached in equilibrium !
+
+\
+
+$\rightarrow$  *We will define equilibrium in terms of pairs (assesments): Strategy profiles & collections of beliefs*
 
 \
 
 **Beliefs**
 
-At an information set with more than one history (element/node) the
-player who has the move 'forms a belief over the histories' (previous
-moves; including moves by nature).
+At an information set with more than one history (element/node) the player who has the move 'forms a belief over the histories' (previous moves; including moves by nature).
 
 At each information set a *belief* assigns a probability to each
-possible history,
+possible history, 
 
-\...or assigns a probability distribution over all the possible
+or assigns a probability distribution over all the possible
 histories (in an infinite strategy set game)..
+
+
 \
+
+
+```{block2,  type='def'}
 
 **Belief System**
 
 A *belief system* is a collection of *beliefs*, one for each information
 set of each player.
 
+```  
 \
 
+```{block2,  type='def'}
 **Assessment**
 
 An *assessment* pairs a profile of strategies and a belief system.
 
+```
 
 \
 
-### Equilibrium Concept: Weak sequential equilibrium 
+#### Motivating example: Consistency of Beliefs {-}
 
-
+Consider the following variation of the previous entry game, depicted in the tree below. Call this 'Entry Readiness Game 2'.
 
 <div class="marginnote">
 
-WSE is 'almost' the same as Perfect Bayesian Equilibrium, the more familiar concept, perhaps. There are small difference between PBE and WSE but I will not
-    discuss them here.
+I present this example to intuitively justify the reasonableness of the 'Consistency of beliefs' requirement which will be part of the ['Weak Sequential Equilibrium'](#wse).
+
+</div>
+ 
+<center>
+![Entry Readiness Game 2](picsfigs/entry_ready_game_2.png)
+
+</center>
+Strategic form:
+
+![](picsfigs/entry_ready_strat.png)
+
+\
+
+Now the incumbent prefers to fight if the challenger enters unready, but prefers to acquiesce if the challenger enters ready. So there is no clear optimal move at this information set -- it depends whether or not the challenger prepared.
+
+\
+
+*So, is $\{Out; Fight\}$ a reasonable equilibrium profile?*
+
+Perhaps if the incumbent thinks 'any challenger who enters will not prepare.' At this node (following Unready) the action 'Fight' is optimal.
+
+\
+
+Thus the requirement of 'optimality at each information set' does not
+rule anything out here.
+
+Note that whether fight is 'optimal' and thus whether the above can be an equilibrium profile depends on the incumbent's *beliefs* about *out-of-equilibrium play*!
+
+\
+
+But are any beliefs reasonable? We have more to say on this...
+
+\
+
+
+### Equilibrium Concept: Weak sequential equilibrium {#wse}
+
+<div class="marginnote">
+
+WSE is 'almost' the same as Perfect Bayesian Equilibrium, which is more widely referred to. However, PBE imposes additional restrictions on *out of equilibrium* beliefs. 
+
 </div>
 \
 
+```{block2,  type='def'}
 
-An assesment is a *WSE* if it meets two requirements
+An assessment is a *WSE* if it meets two requirements
 
-*Requirement 1***-- Sequentially rationality:** Each strategy is
+*Requirement 1*-- **Sequentially rationality:** Each strategy is
 optimal for each player when he has the move given his belief (and the
 other players' subsequent prescribed 'continuation' strategies)
 
-*Requirement 2 --* ** Consistency of Beliefs with Strategies:** Each player's belief is consistent with the strategy profile (this will be made more specific later)..
 
-*Sequential rationality* rules out off-the-equilibrium-path behavior
-that is 'suboptimal' (given consistent beliefs and given the other
-player's subsequent prescribed strategies)
+*Sequential rationality* rules out off-the-equilibrium-path behavior that is 'suboptimal' (given ones beliefs and given the actions specified by the other players' strategies)
 
-\
-**MORE CONTENT TO BE ADDED HERE SOON** 
+*Requirement 2*  -- **Consistency of Beliefs with Strategies:** Each player's belief is consistent with the strategy profile [See next section](#consistent_blf)..
+
+```  
 
 \
+
+
+### Consistency of Beliefs with Strategies (Requirement 2 of WSE) {#consistent_blf}
+
+> In a steady state, each player's belief must be correct' 
+
+- Osborne text
+
+
+\
+
+**Consistency of beliefs at information sets***:*
+
+At each information set beliefs are determined by Bayes' rule and the
+players' equilibrium strategies *'where possible'.*
+
+
+<!--
+However, "off the equilibrium path", e.g., at a surprise event, any updated belief is allowed.
+-->
+
+
+
+
+\
+
+
+**Bayes Rule:** \*
+
+<div class="marginnote">
+
+\* This is a fundamental rule of probability. It is very useful in a wide variety of contexts.  It is worth digging into deeply and understanding it both formally and intuitively, and being able to apply it. 
+
+</div>
+ 
+
+$$\Pr (X|Y_{1})=\frac{\Pr (X,Y_{1})}{\Pr (Y_{1})}$$
+
+This can be thought of as the 'definition of conditional probability'. But conditional probability also has an intuitive meaning. 
+
+\
+
+We can also 'invert the relationship': 
+
+$$Pr(Y_{1}|X)=\frac{\Pr (X,Y_{1})}{\Pr (X)}=\frac{\Pr (X|Y_{1})\Pr (Y_{1})}{
+\Pr (X)}$$
+
+
+\
+
+
+
+\
+
+If $Y$ is drawn from a discrete set of N possible events $\mathbf{Y=}\{Y_{1},Y_{2},...,Y_{N}\}$ we have: 
+
+$$Pr(Y_{1}|X)=\frac{\Pr (X|Y_1)\Pr (Y_{1})}{\Pr (X|Y_{1})\Pr (Y_{1})+\Pr (X|Y_{2})\Pr(Y_{2})+...+\Pr (X|Y_{N})\Pr (Y_{N})}$$
+\
+
+
+For an interesting example,
+see the famous ['false positives in a medical test'](http://en.wikipedia.org/wiki/Bayesian\_analysis\#False\_positives\_in\_a
+\_medical\_test)
+
+
+\
+
+**Bayes rule** for conditional probabilities in the present game theory case:
+
+$$\Pr(h^{\ast}|I_{i}\text{ reached; strategy } \beta)
+=\frac{\Pr (h^{\ast };\beta )}{\sum\limits_{h\in I_{i}}\Pr (h;\beta )}$$
+
+<div class="marginnote">
+Read this as "the probability of a particular history $h^{\ast}$ having occurred, given that a player finds herself at information set (node) $I_{i}$, given  all players' strategies $\beta$"
+
+Note $Pr(h^{\ast },I_{i})=Pr(h^{\ast })$ here since these only occur together.
+</div>
+ 
+
+
+A player finds herself at information set $I_{i}$.  What probability should she assign that $h^{\ast }$ has been played? 
+
+By the above formula, she should take the ratio of
+
+- ...the (unconditional) probability that $h^{\ast }$ is played under the
+strategy $\beta$ 
+
+- to the probability we *get* to the information set $I_{i}$.
+
+Note that the latter is the sum of the probabilities of each history that leads us to $I_{i}$... under strategy $\beta$).
+
+
+*Intuition:* there may be multiple paths (histories( that could have lead to the information set $I_i$. We are simply dividing the *overall* probability of history $h^{\ast}$ (which leads $I_i$) by the sum of the probabilities of *all other histories* that lead to $I_i$.\*
+
+<div class="marginnote">
+This is only an interesting calculation if we have a mixed or "behavioral" strategy (similar to a mixed strategy but mixing at a particular information set/node). Otherwise the probability will generally be 1 or will be undefined.
+
+</div>
+ 
+#### Example: Consistency of beliefs at information sets "on the equilibrium path" {-}
+
+
+We come back to 'Entry Readiness Game 1':
+
+
+<center>
+![Entry Readiness Game 1](picsfigs/entry_ready_game.png)
+</center>
+
+
+[Above](#mot-seq-rat), we decided that \${Unready,Acquiesce\}$ and \${Out,Fight\}$
+are both SPNE, but only $\{Unready,Acquiesce\}$ involves optimal actions at all
+information sets ('continuation games').
+
+\
+
+Let's consider the (candidate) equilibrium **\${Unready,Acquiesce\}$**,
+which is a *SPNE*, is *optimal at each information set,* and potentially also a *WSE*.
+
+The incumbent's information set \${Ready, Unready\}$ is thus *on* the
+equilibrium path. 
+
+\
+
+Given the challenger's equilibrium strategy (if this is an equilibrium), 
+
+the only belief that is *consistent* with this strategy sets $\Pr (Ready)=0,\Pr(Unready)=1$.
+
+\...And given this belief, the incumbent is playing the sequentially
+rational strategy 'acquiesce.'
+
+
+\
+
+#### Example II : Consistency of beliefs at information sets "on the equilibrium path" {-#multi-wse}
+
+We return to the 'Multi-stage-game' depicted [above](#multi-stage):
+
+
+<center>
+
+![Multi-stage-game](picsfigs/multi-game.png)
+
+</center>
+
+
+1. Let's examine the pairing of beliefs and strategies graphically depicted
+above. 
+
+- Player 1's strategy (E,J) is depicted in blue.
+
+- Player 2's strategy is (G), depicted in red.
+
+We already noted (see above discussion) that each of these strategies are sequentially rational (requirement 1).
+
+
+\
+
+Now... 
+```{block2,  type='inputq'}
+
+Do player 2's beliefs meet the consistency requirement (requirement II)?
+
+```  
+
+\
+
+Yes, they do trivially, because player 2's information set is off the
+equilibrium path, so *any beliefs are permitted.*
+
+So the assessment that pairs the profile of strategies $\{E,J;G\}$ with
+player 2's beliefs -- $\Pr (C)=\frac{2}{3}$,$\Pr (D)=\frac{1}{3}$ is a
+WSE.
+
+\
+
+**2.** What about the profile $\{D,J;G\}$ (depicted below)-- This is a NE,
+and sequentially rational for the previously discussed belief system -- $\Pr(C)=\frac{2}{3}$,$\Pr (D)=\frac{1}{3$.
+
+<center>
+
+![Multi-stage-game](picsfigs/multi-game-not-wse.png)
+
+</center>
+
+\
+
+But given 1's strategy such a belief system is not consistent, as this 'mixing' does not describe what player 1 does, and this is *on* the equilibrium path! 
+
+\
+
+
+```{block2,  type='inputq'}
+
+Can this be a WSE for *some* consistent belief system?
+
+```  
+
+
+Given 1's strategy (D,J), the *only* consistent belief at information set
+$\{C,D\}$ is simply $\Pr (D)=1$.
+
+But if $\Pr (D)=1$,
+
+$$\begin{aligned}
+EU_{2}(G) &=&0 \\
+EU_{2}(F) &=&1
+\end{aligned}$$
+
+So playing G is not sequentially rational.
+
+\
+
+So the WSE rules out the 'fool me once' outcome we discussed at the top.
+
+\
+
+**Note on the above, relating equilibrium concepts**  (unfold)
+
+**Remember**: WSE is a *refinement* of SPNE, which was a refinement of
+NE. So, any PBE must be a SPNE and a NE (but not necessarily vice/versa)
+
+Let's examine a *subset* of the strategic form, leaving out strategies
+that include the strategy k (which cannot be part of a subgame perfect equilibrium).
+
+
+![](picsfigs/multi-strat-subset.png)
+
+  
+Since $\{E,J;G\}$ was the only SPNE in pure strategies we already knew
+it (paired with appropriate beliefs) was the only WSE in pure strategies.
+
+\
+
+### Sequential games with 'nature' {#seql-nature}
+
+We now consider games where 'chance plays a role'. As in our earlier discussion of ['Bayesian games'](#bayes-games), nature selects a random value which is revealed to (e.g.) only one player.
+
+
+#### Example: (a very simplified version of) Poker
+
+Nature first chooses whether player 1 has a 'high' or 'low' card (a good or bad hand) relative to the other player. She *knows* this. 
+
+She can 'See' ('check') or Raise the bet. 
+
+Next, player 2, who *doesn't* know 1's hand, can "Pass" (aka "fold his hand") or "Meet". 
+
+Payoffs are given below; note that these depend both on the actions of each player and on the 'choice of Chance'. 
+
+<center>
+
+![](picsfigs/poker_tree.png)
+
+</center>
+
+\
+
+We can write this in 'Bayesian Normal (strategic) form', to consider the BNE. Note that this does *not* consider sequential rationality:
+
+Bayesian normal form: Payoffs expressed as EU payoffs (over both types)
+
+  --------- -------------------- ---------------------------------------------
+                  **Pass**                         **Meet**
+   **R,R**   [1]{.underline},-1                0,[0]{.underline}
+   **R,S**   0,[0]{.underline}    [$\frac{1}{2}$]{.underline}$,-\frac{1}{2}$
+   **S,R**   [1]{.underline},-1   \-$\frac{1}{2},$[$\frac{1}{2}$]{.underline}
+   **S,S**   0,[0]{.underline}                 0,[0]{.underline}
+  --------- -------------------- ---------------------------------------------
+
 
 ### Most famous case: (Spence) signaling model
 
@@ -3114,7 +3553,6 @@ I discuss a similar game [here](https://web.microsoftstream.com/video/9f835e1c-b
 
 
 AKA the 'beauty contest'
-
 
 
 ### 6. "Cheap talk" {-}
