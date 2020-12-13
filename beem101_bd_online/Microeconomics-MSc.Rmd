@@ -15111,11 +15111,57 @@ Bayesian normal form: Payoffs expressed as EU payoffs (over both types)
 
   --------- -------------------- ---------------------------------------------
                   **Pass**                         **Meet**
-   **R,R**   [1]{.underline},-1                0,[0]{.underline}
-   **R,S**   0,[0]{.underline}    [$\frac{1}{2}$]{.underline}$,-\frac{1}{2}$
-   **S,R**   [1]{.underline},-1   \-$\frac{1}{2},$[$\frac{1}{2}$]{.underline}
-   **S,S**   0,[0]{.underline}                 0,[0]{.underline}
+   **R,R**   **1**,-1                       0,**0**
+   **R,S**   0,**0**                         (1/2),-(1/2)
+   **S,R**   **1**,-1                        -(1/2), (1/2)
+   **S,S**   0,**0**                        0,**0**
   --------- -------------------- ---------------------------------------------
+
+
+S,S dominated by $P(R,R)\otimes \frac{1}{2}+P(R,S)\otimes \frac{1}{2}$
+
+$\mathbf{\Longrightarrow }S,S$ not used in any NE
+
+  --------- -------------------- --------------------------------------------
+                  **Pass**                         **Meet**
+   **R,R**   [1],-1                              0,[0]
+   **R,S**   0,[0]                              [(1/2)],-(1/2)
+   **S,R**   [1],-1   $                         -(1/2),[(1/2)]
+  --------- -------------------- --------------------------------------------
+
+\
+
+No equilibrium in pure strategies.
+
+$\bigskip$
+
+$\mathbf{\Longrightarrow }\Pr (meet)>0$
+
+$\mathbf{\Longrightarrow }S,R$ not a BR
+
+--If Meet than R,R better
+
+--If Pass than R,R as good
+
+$\bigskip$
+
+$\mathbf{\Longrightarrow }$So don't put any probability on $S,R$; would
+do better by moving this to $R,R$
+
+$\mathbf{\Longrightarrow }$Mix between R,R and R,S
+
+Which I claim was the intuitive result.  
+
+You will always raise if you have the high cards (there is no way to do
+better).  You will sometimes raise if you have the low cards (i.e.,
+bluff).
+
+BNE: $(P(R,R)\otimes \frac{1}{3}+P(R,S)\otimes \frac{2}{3},P(p)\otimes 
+\frac{1}{3}+P_{m}\otimes \frac{2}{3})$
+
+Bluffs with probability $\frac{1}{3}$
+
+'always calls bluff' with probability $\frac{2}{3}$
 
 
 ### Most famous case: (Spence) signaling model
