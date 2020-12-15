@@ -12324,19 +12324,20 @@ If you are *not* familiar with this, you may find it helpful to read first befor
 ```
 
 
-
 Nash equilibrium (NE)
 :     A set of *strategies*, one for each player, that are best responses against one another
 
 
 - If I play my BR to your chosen strategy and you're playing your BR to mine, neither of us has an incentive to deviate --- an equilibrium.
 
-- All games have at least one Nash equilibrium
+- All *finite* games have at least one Nash equilibrium\*
     - But it may be an equilibrium in 'mixed strategies' (involving randomisation)
 
 - Caveat: we might not expect such play to actually occur (particularly not in one-shot games)
 
 <div class="marginnote">
+\* However, games with infinite or non-compact action spaces need not have a Nash equilibrium in either pure or mixed strategies. Note that the O-R book defines Nash equilibrium separately from 'mixed strategy equilibrium'.
+
  In fact, two-player games will have an *odd* number of equilibria, at least if we include 'mixed strategy Nash Equilibria'; you can see this by looking at the crosses of the BR functions
 </div>
 
@@ -14041,7 +14042,7 @@ Intuition -- in period $t$ you only need to offer her $\beta \times$ 'the most s
 
 # Incomplete/Imperfect information (time permitting) {#incomp-info}
 
-General progression through a game theory module or text: 
+General progression through a game theory module or text:
 
 ```{block2,  type='fold'}
 
@@ -14083,14 +14084,12 @@ We will now relax some of these assumptions to consider a wider class of interes
 <div class="marginnote">
 \* Or even she may be unaware of her own payoffs; There are even situations in which other players might know more about player's payoff than the player herself (see for example models, in a slightly different context of "informed principals").
 
-\** The latter is  sometimes called 'ambiguity' or 'Knightian uncertainty'. 
+\** The latter is  sometimes called 'ambiguity' or 'Knightian uncertainty'.
 </div>
 
 Players know the probability of each type of payoffs, i., the distribution that the payoffs (or player types) are drawn from. This is often modeled in an extensive form or three form by having an initial player called "nature" who simply makes a random choice.
 
-\
-
-If we assume this is simple symmetric randomness, where All players are equally informed at all points in time, this can basically be encapsulated in our previous frameworks; simply replacing payoffs with expected payoffs.
+If we assume this is simple symmetric randomness, where all players are equally informed at all points in time, this can basically be encapsulated in our previous frameworks; simply replacing payoffs with expected payoffs.
 
 Instead, we focus on cases where, at a certain point in time, one player knows more than the other player about the random realisation.
 
@@ -14098,9 +14097,9 @@ Instead, we focus on cases where, at a certain point in time, one player knows m
 
 **2. 'Imperfect' information about (some) previous moves (actions); uncertainty about ACTIONS**
 
-We have seen sequential games where players know all previous moves, i.e. they know "where in the game tree" they are when they make their choices. This was our standard extensive game. We have also seen that simultaneous games are equivalent to sequential games were no player is aware of the choices other players have made when they make their own choices. 
+We have seen sequential games where players know all previous moves, i.e. they know "where in the game tree" they are when they make their choices. This was our standard extensive game. We have also seen that simultaneous games are equivalent to sequential games were no player is aware of the choices other players have made when they make their own choices.
 
-Below, we will consider the case where some previous choices may be known while others are not. 
+Below, we will consider the case where some previous choices may be known while others are not.
 
 \
 
@@ -14117,7 +14116,7 @@ satisfying:\*
 <div class="marginnote">
 \*"An information partition is an allocation of each non-terminal node of the tree to an information set."
 </div>
- 
+
 
 i. The player has the move at every node in an information set
 
@@ -14189,7 +14188,7 @@ to play rock, which would mean 1 would want to play paper, which would
 mean 2 would want to play scissors, which would mean 1 would want to
 play scissors \... etc.
 
-There would seem to be no pure strategy prediction here. 
+There would seem to be no pure strategy prediction here.
 
 But there may be a mixed strategy NE in this '*subgame'.*
 
@@ -14200,14 +14199,14 @@ There is something uncertain, chosen by 'nature or chance' that affect the payof
 
 There are "common prior beliefs about types": All players know the payoffs of each type and the probability of each type occurring. Furthermore, we typically assume all players know that all players know this, etc. (common knowledge).
 
-However, one (or more) may know *for certain* which type she (or another player) is while other players may only know what the prior probabilities of this were. 
+However, one (or more) may know *for certain* which type she (or another player) is while other players may only know what the prior probabilities of this were.
 
 E.g., perhaps we both know that there is a 25% chance that the player you will fight against will be *strong* (perhaps we can think of 1/4 of the 'general population'). However, I know for certain whether I am strong or weak, while you do not know this, at the time you make your choice.\*\*
 
 <div class="marginnote">
-\*\* I am strong, by the way, not physically, but emotionally. 
+\*\* I am strong, by the way, not physically, but emotionally.
 </div>
- 
+
 
 ### Bayesian Nash equilibrium (BNE; informal definition)
 
@@ -14223,9 +14222,9 @@ E.g., fighting an opponent of unknown strength; Cournot competition between firm
 
 This is a good example to start with but actually it is somewhat less interesting than other examples. This is because the payoffs for the 'player with known costs' actually don't *directly* depend on the type of 'unknown cost player' player you are facing. They only depend on the strategy (here quantity) chosen by this player. So it simply becomes a sort of "average across the best responses to the quantity provided by each type you might be facing".
 
-A game like the *yield-fight* game (or equivalently, a simultaneous entry game) may be more interesting in this regard. 
+A game like the *yield-fight* game (or equivalently, a simultaneous entry game) may be more interesting in this regard.
 </div>
- 
+
 
 "Sourced" videos (unfold)
 
@@ -14300,9 +14299,9 @@ $2$ knows $c_{2}$
 
 $1$ has 'beliefs' that assign $P(c_{2}=C_{H})=\theta$, $P(c_{2}=C_{L})=1-\theta$
 
-*Note*: In these games, beliefs always correspond to the correct (correctly computed) probabilities given the information at hand. 
+*Note*: In these games, beliefs always correspond to the correct (correctly computed) probabilities given the information at hand.
 
-Looking ahead... 
+Looking ahead...
 
 ```{block2,  type='fold'}
 
@@ -14310,7 +14309,7 @@ In sequential games, as information is revealed, we will need to consider 'corre
 
 where these beliefs at every point are consistent with the strategies chosen by each player (type of player) at each decision node.
 ```
- 
+
 
 **Best Responses**
 
@@ -14329,7 +14328,7 @@ s.t.\text{ }q_{2} >0\end{aligned}$$
 
 Q: Explain intuitively what firm 1 will do as a 'best response' \...
 
-```  
+```
 
 
 ```{block2,  type='fold'}
@@ -14345,9 +14344,9 @@ weighted average of the optimal quantities in each case.
 Firm 1:
 
 $q_{1}^{\ast }$ solves $$\begin{aligned}
-\max_{q_{1}}\text{ }\left\{ 
+\max_{q_{1}}\text{ }\left\{
 \begin{array}{c}
-\theta \lbrack a-q_{1}-q_{2}^{\ast }(C_{H})-c]q_{1}\text{ } \\ 
+\theta \lbrack a-q_{1}-q_{2}^{\ast }(C_{H})-c]q_{1}\text{ } \\
 +(1-\theta )[a-q_{1}-q_{2}^{\ast }(C_{L})-c]q_{1}%
 \end{array}%
 \right\}  \\
@@ -14362,7 +14361,7 @@ only, as a function of the parameters and the other firm's choice.*
 
 FOC's:
 
-$$q_{2}^{\ast }(C_{t})=\frac{a-q_{1}^{\ast }-C_{t}}{2}\text{ for }t=L,H 
+$$q_{2}^{\ast }(C_{t})=\frac{a-q_{1}^{\ast }-C_{t}}{2}\text{ for }t=L,H
 \tag{1 \ 2}$$
 
 $$q_{1}^{\ast }=\frac{\theta \lbrack a-q_{2}^{\ast }(C_{H})-c]+(1-\theta
@@ -14405,10 +14404,10 @@ q_{2}^{\ast }(C_{L}) =\frac{a-2C_{L}+C}{3}-\frac{\theta }{6}(C_{H}-C_{L})\end{al
 -   Similarly, the output for the low-cost type is *lower* than the
     low-cost type's output in the complete information case.
 
--   For both types the BNE output involves not only the cost of the player's type, but the cost of the player's other type!  Note that this was *not* true for the BR functions! 
-    
+-   For both types the BNE output involves not only the cost of the player's type, but the cost of the player's other type!  Note that this was *not* true for the BR functions!
+
 \
-    
+
 
 *Why?*
 
@@ -14431,7 +14430,7 @@ above\...
 
 We see this insight even more dramatically in the [fight/yield game depicted here](https://web.sgh.waw.pl/~mlewan1/Site/GT_files/ps2solution.pdf). In this case, there can be an equilibrium where the 'weak' player chooses 'fight', even though it could never be an equilibrium for her to do so in a game with complete and perfect information.
 
-```  
+```
 \
 
 
@@ -14446,7 +14445,7 @@ C_{H}+(1-\theta )C_{L}$. This is a special case: equivalence does not always hol
 
 ### Example: 'fight or yield'/simultaneous entry
 
-In the above example only a *single* player's payoffs (to particular combinations of actions) depended on the uncertainty (i.e., on the type of this same player, Firm 2). Thus we simply needed to 
+In the above example only a *single* player's payoffs (to particular combinations of actions) depended on the uncertainty (i.e., on the type of this same player, Firm 2). Thus we simply needed to
 
 - figure out what 'the best response of each type of Firm 2 was'
 
@@ -14463,10 +14462,10 @@ Consider a game where both players A and B can choose 'Fight' (Enter) or 'Yield'
 <div class="marginnote">
 This could be likened to a game where firms may enter a market and if both enter only the stronger firm will survive.
 </div>
- 
-- Suppose that when both yield the payoffs are zero for both. 
 
-- When A fights and B yields (or vice versa) the fighter gets $2$ and the yielder gets zero. 
+- Suppose that when both yield the payoffs are zero for both.
+
+- When A fights and B yields (or vice versa) the fighter gets $2$ and the yielder gets zero.
 
 - When both fight then the 'winner' depends on whether B is strong.
     - If B is strong then she wins and gains $1$, while A gets $-1$
@@ -14483,23 +14482,23 @@ This could be likened to a game where firms may enter a market and if both enter
 In general we speak of similar concepts like the 'acceptance curse' in dating:
 
 > Chade (2006) explored a search
-and matching environment where participants observe noisy signals of their partners’ types. He notes an “acceptance curse” resembling the winner’s curse from auction theory: a partner’s acceptance decision reveals information about their type. 
+and matching environment where participants observe noisy signals of their partners’ types. He notes an “acceptance curse” resembling the winner’s curse from auction theory: a partner’s acceptance decision reveals information about their type.
 
 - [@gallLosingFace2020]
 
 ... implying that 'the person who accepts your offer' is an average of 'a worse type' than the average person. (Sorry, this sounds harsh).
 
 </div>
- 
 
-If B only fights when she is strong and not when she is weak (i.e., if only strong B-types fight) 
+
+If B only fights when she is strong and not when she is weak (i.e., if only strong B-types fight)
 
 - 'A playing against someone who fights means his playing against someone who is strong' and
 
 - 'A playing against someone who does not fight means his playing against someone who is weak'.
 
 So for A, playing fight means:
-- $\alpha$ share of the time facing a strong opponent, who fights (and thus losing, getting -1), and 
+- $\alpha$ share of the time facing a strong opponent, who fights (and thus losing, getting -1), and
 - $1-\alpha$ share of the time facing a weak opponent, who Yields  (and thus gaining +2)
 
 
@@ -14507,9 +14506,9 @@ So for A, playing fight means:
 
 On the other hand if B 'always fights' (whether strong or weak), then for A, playing fight means:
 
-- $\alpha$ share of the time facing a strong opponent, who fights (and thus losing, getting -1 payoff), 
+- $\alpha$ share of the time facing a strong opponent, who fights (and thus losing, getting -1 payoff),
 
-- $1-\alpha$ share of the time facing a weak opponent (and thus winning, getting +1 payoff) 
+- $1-\alpha$ share of the time facing a weak opponent (and thus winning, getting +1 payoff)
 
 \
 
@@ -14528,28 +14527,28 @@ Consider the 'Multi-stage-game' depicted in the tree below.\*
 
 <div class="marginnote">
 
-\* Remember, the dashed lines indicate that player 2, if she has the move, does not know whether 1 chose C or chose D. 
+\* Remember, the dashed lines indicate that player 2, if she has the move, does not know whether 1 chose C or chose D.
 </div>
 
 Think it through ... what might we expect will happen? Does it make sense to think that 1 will choose E?
 
-Or is a profile of strategies like $\{C,J;F\}$ reasonable? 
+Or is a profile of strategies like $\{C,J;F\}$ reasonable?
 
 ```{block2,  type='fold'}
 
 Intuition:
-    
-Action-wise, 1 can end the game early by choosing $E$ and get a 'safe' payoff of 2. Or, she can choose D or C, which, as we see, can earn her a maximum payoff of 3, but a minimum payoff of 0. 
 
-If she chooses D or C, player 2 'has the move' but 2 will not know whether D or C was chosen; 2 only will know that E was *not* chosen. 
+Action-wise, 1 can end the game early by choosing $E$ and get a 'safe' payoff of 2. Or, she can choose D or C, which, as we see, can earn her a maximum payoff of 3, but a minimum payoff of 0.
 
-If 1 chose D then 2's choice takes us to the terminal node; if 2 believes D was chosen she would prefer to choose F, leaving a payoff of only 1 to each player. 
+If she chooses D or C, player 2 'has the move' but 2 will not know whether D or C was chosen; 2 only will know that E was *not* chosen.
+
+If 1 chose D then 2's choice takes us to the terminal node; if 2 believes D was chosen she would prefer to choose F, leaving a payoff of only 1 to each player.
 
 On the other hand, if 1 chose C, then if 2 chooses G the game ends and 1 gets 0 and 2 gets 1.
 
-If, after C, 2 chooses F then 1 has the move once again. At this point 1 would prefer to choose J, earning 3 and leaving 0 for player 2. 
+If, after C, 2 chooses F then 1 has the move once again. At this point 1 would prefer to choose J, earning 3 and leaving 0 for player 2.
 
-So if 2 'gets the move' we might think he will choose $G$ if he thinks $C$ was more likely chosen and she will choose $F$ if he thinks $D$ was more likely chosen. If 1 thinks that he can 'fool' 2 into thinking she chose D (and thus choosing F), she may want to choose C (and then J after F), to earn 3.  
+So if 2 'gets the move' we might think he will choose $G$ if he thinks $C$ was more likely chosen and she will choose $F$ if he thinks $D$ was more likely chosen. If 1 thinks that he can 'fool' 2 into thinking she chose D (and thus choosing F), she may want to choose C (and then J after F), to earn 3.
 
 But should we predict that 2 is thus 'fooled'? Would this be a reasonable 'fool me once equilibrium'? We return to this [below](#multi-wse).
 
@@ -14577,7 +14576,7 @@ In fact, we will define the concept of [*sequential rationality*](#wse) to captu
 </div>
 
 - and thus 2 must believe 1 will play $J$ at this node in any WSE, for 'Consistency of Beliefs with Strategies.'
- 
+
 
 \
 
@@ -14624,7 +14623,7 @@ strategy (for the rest of the game), if 2 is at the information set
 > Hold on, you! If 1 is choosing $E$ anyway, why do we need to worry about
 this?
 
-Well, we are only *considering* that 1 may play E. 
+Well, we are only *considering* that 1 may play E.
 
 1 must ask *'is playing E the best?'* '*Will playing C or D do better
 (in EU terms)?'*
@@ -14644,7 +14643,7 @@ compare this to playing $E$, 1 needs to know (or assign) what player 2's
 Remember that '1 choosing (E,J)' is a complete strategy, but this tells us nothing about what 2 is supposed to believe if he "gets the move"!
 
 </div>
- 
+
 
 
 #### Motivating example: Sequential Rationality {-#mot-seq-rat}
@@ -14654,7 +14653,7 @@ Remember that '1 choosing (E,J)' is a complete strategy, but this tells us nothi
 I present this example to intuitively justify the reasonableness of the 'Sequential Rationality' requirement which will be part of the ['Weak Sequential Equilibrium'](#wse).
 
 </div>
- 
+
 
 Consider the following example...  *Entry Readiness Game 1* with a Challenger who may be ready or unready and an Incumbent, depicted in the tree below.
 
@@ -14667,7 +14666,7 @@ Consider the following example...  *Entry Readiness Game 1* with a Challenger wh
 
 Note: Technically, there are no proper subgames (remember, a subgame must begin at a singleton information set). So SPNE is in fact the same as NE here.
 
-```  
+```
 
 \
 
@@ -14679,13 +14678,13 @@ Note: Technically, there are no proper subgames (remember, a subgame must begin 
 
 <!--
 $$\begin{tabular}{ccc}
-& \textbf{A} & \textbf{F} \\ 
-\textbf{R} & 3,\underline{3} & 1,1 \\ 
-\textbf{U} & \underline{\textit{4}},\underline{3} & 0,2 \\ 
+& \textbf{A} & \textbf{F} \\
+\textbf{R} & 3,\underline{3} & 1,1 \\
+\textbf{U} & \underline{\textit{4}},\underline{3} & 0,2 \\
 \textbf{O} & 2,\underline{4} & \underline{\textit{2,4}}%
 \end{tabular}%$$
 
---> 
+-->
 
 There are two NE here: $\{Unready;Acquiesce\}$ and $\{Out,Fight\}$.
 
@@ -14706,18 +14705,18 @@ depends on an incredible threat.
 
 **Optimal at each information set (Sequential Rationality):** Each player's strategy is optimal, given her beliefs, whenever she has the move.
 
-```  
+```
 
 I.e., each player's strategy must be optimal at each of her information sets.
 
 
-The strategy 'Fight' is not optimal at each information set here. 
+The strategy 'Fight' is not optimal at each information set here.
 
 ```{block2,  type='inputq'}
 
 Why not?
 
-```  
+```
 
 
 \
@@ -14727,7 +14726,7 @@ Why not?
 A: it is not optimal for the incumbent to play Fight at the incumbent's information set (when he has the move, i.e., after some form of entry). It is not if  he is at the node following *Unready* nor if he is at the node following *Ready*. Thus, no matter his beliefs, this cannot be optimal.
 
 ```
- 
+
 Thus, only the NE strategy profile $\{Unready; Acquiesce\}$ meets the (sequential rationality) requirement of optimality at each information set in the game above.
 
 \
@@ -14753,7 +14752,7 @@ $\rightarrow$  *We will define equilibrium in terms of pairs (assesments): Strat
 At an information set with more than one history (element/node) the player who has the move 'forms a belief over the histories' (previous moves; including moves by nature).
 
 At each information set a *belief* assigns a probability to each
-possible history, 
+possible history,
 
 or assigns a probability distribution over all the possible
 histories (in an infinite strategy set game)..
@@ -14769,7 +14768,7 @@ histories (in an infinite strategy set game)..
 A *belief system* is a collection of *beliefs*, one for each information
 set of each player.
 
-```  
+```
 \
 
 ```{block2,  type='def'}
@@ -14790,7 +14789,7 @@ Consider the following variation of the previous entry game, depicted in the tre
 I present this example to intuitively justify the reasonableness of the 'Consistency of beliefs' requirement which will be part of the ['Weak Sequential Equilibrium'](#wse).
 
 </div>
- 
+
 <center>
 ![Entry Readiness Game 2](picsfigs/entry_ready_game_2.png)
 
@@ -14827,7 +14826,7 @@ But are any beliefs reasonable? We have more to say on this...
 
 <div class="marginnote">
 
-WSE is 'almost' the same as Perfect Bayesian Equilibrium, which is more widely referred to. However, PBE imposes additional restrictions on *out of equilibrium* beliefs. 
+WSE is 'almost' the same as Perfect Bayesian Equilibrium, which is more widely referred to. However, PBE imposes additional restrictions on *out of equilibrium* beliefs.
 
 </div>
 \
@@ -14845,14 +14844,14 @@ other players' subsequent prescribed 'continuation' strategies)
 
 *Requirement 2*  -- **Consistency of Beliefs with Strategies:** Each player's belief is consistent with the strategy profile [See next section](#consistent_blf)..
 
-```  
+```
 
 \
 
 
 ### Consistency of Beliefs with Strategies (Requirement 2 of WSE) {#consistent_blf}
 
-> In a steady state, each player's belief must be correct' 
+> In a steady state, each player's belief must be correct'
 
 - Osborne text
 
@@ -14879,18 +14878,18 @@ However, "off the equilibrium path", e.g., at a surprise event, any updated beli
 
 <div class="marginnote">
 
-\* This is a fundamental rule of probability. It is very useful in a wide variety of contexts.  It is worth digging into deeply and understanding it both formally and intuitively, and being able to apply it. 
+\* This is a fundamental rule of probability. It is very useful in a wide variety of contexts.  It is worth digging into deeply and understanding it both formally and intuitively, and being able to apply it.
 
 </div>
- 
+
 
 $$\Pr (X|Y_{1})=\frac{\Pr (X,Y_{1})}{\Pr (Y_{1})}$$
 
-This can be thought of as the 'definition of conditional probability'. But conditional probability also has an intuitive meaning. 
+This can be thought of as the 'definition of conditional probability'. But conditional probability also has an intuitive meaning.
 
 \
 
-We can also 'invert the relationship': 
+We can also 'invert the relationship':
 
 $$Pr(Y_{1}|X)=\frac{\Pr (X,Y_{1})}{\Pr (X)}=\frac{\Pr (X|Y_{1})\Pr (Y_{1})}{
 \Pr (X)}$$
@@ -14902,7 +14901,7 @@ $$Pr(Y_{1}|X)=\frac{\Pr (X,Y_{1})}{\Pr (X)}=\frac{\Pr (X|Y_{1})\Pr (Y_{1})}{
 
 \
 
-If $Y$ is drawn from a discrete set of N possible events $\mathbf{Y=}\{Y_{1},Y_{2},...,Y_{N}\}$ we have: 
+If $Y$ is drawn from a discrete set of N possible events $\mathbf{Y=}\{Y_{1},Y_{2},...,Y_{N}\}$ we have:
 
 $$Pr(Y_{1}|X)=\frac{\Pr (X|Y_1)\Pr (Y_{1})}{\Pr (X|Y_{1})\Pr (Y_{1})+\Pr (X|Y_{2})\Pr(Y_{2})+...+\Pr (X|Y_{N})\Pr (Y_{N})}$$
 \
@@ -14925,15 +14924,15 @@ Read this as "the probability of a particular history $h^{\ast}$ having occurred
 
 Note $Pr(h^{\ast },I_{i})=Pr(h^{\ast })$ here since these only occur together.
 </div>
- 
 
 
-A player finds herself at information set $I_{i}$.  What probability should she assign that $h^{\ast }$ has been played? 
+
+A player finds herself at information set $I_{i}$.  What probability should she assign that $h^{\ast }$ has been played?
 
 By the above formula, she should take the ratio of
 
 - ...the (unconditional) probability that $h^{\ast }$ is played under the
-strategy $\beta$ 
+strategy $\beta$
 
 - to the probability we *get* to the information set $I_{i}$.
 
@@ -14946,7 +14945,7 @@ Note that the latter is the sum of the probabilities of each history that leads 
 This is only an interesting calculation if we have a mixed or "behavioral" strategy (similar to a mixed strategy but mixing at a particular information set/node). Otherwise the probability will generally be 1 or will be undefined.
 
 </div>
- 
+
 #### Example: Consistency of beliefs at information sets "on the equilibrium path" {-}
 
 
@@ -14968,11 +14967,11 @@ Let's consider the (candidate) equilibrium **\${Unready,Acquiesce\}$**,
 which is a *SPNE*, is *optimal at each information set,* and potentially also a *WSE*.
 
 The incumbent's information set \${Ready, Unready\}$ is thus *on* the
-equilibrium path. 
+equilibrium path.
 
 \
 
-Given the challenger's equilibrium strategy (if this is an equilibrium), 
+Given the challenger's equilibrium strategy (if this is an equilibrium),
 
 the only belief that is *consistent* with this strategy sets $\Pr (Ready)=0,\Pr(Unready)=1$.
 
@@ -14995,7 +14994,7 @@ We return to the 'Multi-stage-game' depicted [above](#multi-stage):
 
 
 1. Let's examine the pairing of beliefs and strategies graphically depicted
-above. 
+above.
 
 - Player 1's strategy (E,J) is depicted in blue.
 
@@ -15006,12 +15005,12 @@ We already noted (see above discussion) that each of these strategies are sequen
 
 \
 
-Now... 
+Now...
 ```{block2,  type='inputq'}
 
 Do player 2's beliefs meet the consistency requirement (requirement II)?
 
-```  
+```
 
 \
 
@@ -15025,7 +15024,7 @@ WSE.
 \
 
 **2.** What about the profile $\{D,J;G\}$ (depicted below)-- This is a NE,
-and sequentially rational for the previously discussed belief system -- $\Pr(C)=\frac{2}{3}$,$\Pr (D)=\frac{1}{3$.
+and sequentially rational for the previously discussed belief system -- $\Pr(C)=\frac{2}{3}$,$\Pr (D)=\frac{1}{3}$.
 
 <center>
 
@@ -15035,7 +15034,7 @@ and sequentially rational for the previously discussed belief system -- $\Pr(C)=
 
 \
 
-But given 1's strategy such a belief system is not consistent, as this 'mixing' does not describe what player 1 does, and this is *on* the equilibrium path! 
+But given 1's strategy such a belief system is not consistent, as this 'mixing' does not describe what player 1 does, and this is *on* the equilibrium path!
 
 \
 
@@ -15044,7 +15043,7 @@ But given 1's strategy such a belief system is not consistent, as this 'mixing' 
 
 Can this be a WSE for *some* consistent belief system?
 
-```  
+```
 
 
 Given 1's strategy (D,J), the *only* consistent belief at information set
@@ -15076,7 +15075,7 @@ that include the strategy k (which cannot be part of a subgame perfect equilibri
 
 ![](picsfigs/multi-strat-subset.png)
 
-  
+
 Since $\{E,J;G\}$ was the only SPNE in pure strategies we already knew
 it (paired with appropriate beliefs) was the only WSE in pure strategies.
 
@@ -15089,13 +15088,13 @@ We now consider games where 'chance plays a role'. As in our earlier discussion 
 
 #### Example: (a very simplified version of) Poker
 
-Nature first chooses whether player 1 has a 'high' or 'low' card (a good or bad hand) relative to the other player. She *knows* this. 
+Nature first chooses whether player 1 has a 'high' or 'low' card (a good or bad hand) relative to the other player. She *knows* this.
 
-She can 'See' ('check') or Raise the bet. 
+She can 'See' ('check') or Raise the bet.
 
-Next, player 2, who *doesn't* know 1's hand, can "Pass" (aka "fold his hand") or "Meet". 
+Next, player 2, who *doesn't* know 1's hand, can "Pass" (aka "fold his hand") or "Meet".
 
-Payoffs are given below; note that these depend both on the actions of each player and on the 'choice of Chance'. 
+Payoffs are given below; note that these depend both on the actions of each player and on the 'choice of Chance'.
 
 <center>
 
@@ -15107,7 +15106,11 @@ Payoffs are given below; note that these depend both on the actions of each play
 
 We can write this in 'Bayesian Normal (strategic) form', to consider the BNE. Note that this does *not* consider sequential rationality:
 
-Bayesian normal form: Payoffs expressed as EU payoffs (over both types)
+Bayesian normal form:\*
+
+<div class="marginnote">
+\* Payoffs expressed as EU payoffs (over both types), player 1's strategy depicted for 'Low type, High type' respectively</div>
+
 
   --------- -------------------- ---------------------------------------------
                   **Pass**                         **Meet**
@@ -15118,57 +15121,344 @@ Bayesian normal form: Payoffs expressed as EU payoffs (over both types)
   --------- -------------------- ---------------------------------------------
 
 
-S,S dominated by $P(R,R)\otimes \frac{1}{2}+P(R,S)\otimes \frac{1}{2}$
+\
 
-$\mathbf{\Longrightarrow }S,S$ not used in any NE
+$(S,S)$ is strictly dominated by a mixed strategy:  $\frac{1}{2} \cdot (R,R)  \oplus \frac{1}{2} \cdot (R,S)$
+
+$\mathbf{\Longrightarrow }(S,S)$ is not used as part of any NE
+
+\
 
   --------- -------------------- --------------------------------------------
                   **Pass**                         **Meet**
-   **R,R**   [1],-1                              0,[0]
-   **R,S**   0,[0]                              [(1/2)],-(1/2)
-   **S,R**   [1],-1   $                         -(1/2),[(1/2)]
+   **R,R**   **1**,-1                              0,**0**
+   **R,S**   0,**0**                              **(1/2)**,-(1/2)
+   **S,R**   **1**,-1                            -(1/2),**(1/2)**
   --------- -------------------- --------------------------------------------
 
+$\rightarrow$ No equilibrium in pure strategies.
+
 \
-
-No equilibrium in pure strategies.
-
-$\bigskip$
 
 $\mathbf{\Longrightarrow }\Pr (meet)>0$
 
-$\mathbf{\Longrightarrow }S,R$ not a BR
+$\mathbf{\Longrightarrow }(S,R)$ not a BR:
 
---If Meet than R,R better
+--If Meet than (R,R) better
 
---If Pass than R,R as good
-
-$\bigskip$
-
-$\mathbf{\Longrightarrow }$So don't put any probability on $S,R$; would
-do better by moving this to $R,R$
-
-$\mathbf{\Longrightarrow }$Mix between R,R and R,S
-
-Which I claim was the intuitive result.  
-
-You will always raise if you have the high cards (there is no way to do
-better).  You will sometimes raise if you have the low cards (i.e.,
-bluff).
-
-BNE: $(P(R,R)\otimes \frac{1}{3}+P(R,S)\otimes \frac{2}{3},P(p)\otimes 
-\frac{1}{3}+P_{m}\otimes \frac{2}{3})$
-
-Bluffs with probability $\frac{1}{3}$
-
-'always calls bluff' with probability $\frac{2}{3}$
-
-
-### Most famous case: (Spence) signaling model
-
-Some notes [HERE](https://www.dropbox.com/s/9ztajxsf8izodnr/09-10_PBE_notesA.pdf?dl=0) to be adapted when I have time.
+--If Pass than (R,R) is just as good
 
 \
+
+$\mathbf{\Longrightarrow }$ So don't put any probability on $(S,R)$; would
+do better by moving this to $(R,R)$
+
+$\mathbf{\Longrightarrow }$ Mix between $(R,R)$ and $(R,S)$, which I claim was the intuitive result.
+
+You will always raise if you have the high cards (there is no way to do
+better). You will sometimes raise if you have the low cards (i.e.,
+'bluff').
+
+BNE strategy profile:
+
+$(\frac{1}{3}\cdot (R,R) \oplus \frac{2}{3} \cdot (R,S); \:  \frac{1}{3} \cdot p \oplus \frac{2}{3} \cdot m)$
+
+Player 1 bluffs with probability $\frac{1}{3}$... and player 2 'always calls bluff' with probability $\frac{2}{3}$.
+
+
+#### Checking WSE for the above example {-}
+
+Is this a WSE (if paired with consistent beliefs?) Let us check our two requirements; we need only check these for player 2 given player 1's strategy, since for player 1 we need not about beliefs or sequential rationality of his strategy.
+
+*1. Consistency of beliefs:*
+
+The only consistent beliefs at 2's information set is that
+
+*(Recalling Bayes rule...:)*
+
+$Pr(Y_{1}|X)=\frac{\Pr (X,Y_{1})}{\Pr (X)}=\frac{\Pr (X|Y_{1})\Pr (Y_{1})}{ \Pr (X)}=\frac{\Pr (X|Y)\Pr (Y_{1})}{\Pr (X|Y_{1})\Pr (Y_{1})+\Pr (X|Y_{2})\Pr (Y_{2})+...+\Pr (X|Y_{N})\Pr (Y_{N})}$
+
+\
+
+Applying this to the present case:
+
+$Pr(\text{high} |\text{2 has move}) =$
+
+$\frac{pr(raise|high)\ast pr(high)}{ pr(raise|high)\ast pr(high)+pr(raise|low)\ast pr(low)}=\frac{1\ast \frac{1}{2}}{1\ast \frac{1}{2}+\frac{1}{2}\ast \frac{1}{3}}=\frac{3}{4}$
+
+\
+
+*2. Sequential rationality:*
+
+If 2 plays Pass he gets $-1$ (for sure)
+
+If 2 plays Meet he gets $-2\ast \frac{3}{4}+2\ast \frac{1}{4}= -1$
+
+So 2 is indeed neutral between these 2 strategies and thus mixing (in
+the proportions determined before) is a best response at this information set.
+
+\
+
+Hence,
+$(\frac{1}{3}\cdot (R,R) \oplus \frac{2}{3} \cdot (R,S); \: \frac{1}{3} \cdot   p \oplus \frac{2}{3} \cdot m)$ paired with beliefs $Pr(\text{high} |\text{2 has move}) =\frac{3}{4}$ is a WSE. 
+\
+
+
+### Most famous case: the [@spenceJobMarketSignaling1973] signaling model
+
+**Simple 2x2 signaling game (education and labor market)**
+
+**Players:** Sender, Reciever, Nature
+
+**Actions (and order):**
+
+1. Nature: Good ability, Bad ability (chosen with probabilities $P_{G}$
+& $1-P_{G}$)
+
+2. Sender: Signal Good (e.g, School), Signal Bad (e.g., Drink)
+
+3. Reciever: Hire, Not hire
+
+\
+
+
+**Information structure:**
+
+Sender observes ability
+
+Reciever does not observe ability (Nature's move).
+
+Receiver observes Sender's signal.
+
+\
+
+
+**Payoffs**
+
+In general
+
+$U_{\text{Sender}}= \text{Salary} - \text{cost of signal (a function of sender's ability)}$
+
+$U_{Reciever}$= 
+
+- If hire: Production (function of sender's ability) - Salary 
+
+- If not hire: 0
+
+\
+
+In general, the production function and wages are such that the reciever will want to hire a good worker and not hire a bad worker.
+
+However, if the receiver doesn't know a sender's (worker's) ability, it would be
+more profitable to never hire than to always hire.
+
+The overall structure is given below: 
+
+```{r  fig.cap = 'Signaling game structure', out.width='70%', fig.asp=.4, fig.align='center',  echo = FALSE}
+
+ knitr::include_graphics("picsfigs/send_recieve_no_payoffs.png")
+
+```
+
+```{block2,  type='note'}
+For a deep understanding of the signaling game we would want to analyze this game for all possible reasonable combinations of payoffs, and make some general conclusions that depend on the relative parameters. 
+
+For now, we will consider and contrast two numerical examples.
+```  
+
+\
+
+#### Signaling: Numerical Example I {-}
+
+
+Suppose the salary is set (exogenously) at $S=4$.
+
+The payoff to of not being hired is $2$ (second best job).
+
+The production of a bad worker is $3$, so the firm 'nets' -1 from hiring
+such a worker.
+
+The productivity of a good worker is $6$, so the firm 'nets' 2 from
+hiring such a worker.
+
+The cost of sending a good signal (e.g., going to school or university) is 1 for the good worker and 3 for the bad worker.
+
+Finally, the probability of nature selecting a good worker is 0.1, i.e., 10%.
+
+\
+
+This implies the firm would rather hire a good worker but not hire a bad
+worker.  However, the firm would rather hire no one than hiring everyone.
+
+\
+
+If education means the difference between a job or no job, in this case,
+only the good worker would choose to go to school (send a 'good'
+signal).
+
+However if education will not make a difference (say, you are hired in either case), then neither type would go to school, as it is costly.
+
+This yields the following game tree:
+
+```{r  fig.cap = 'Signaling game example 1', out.width='80%', fig.asp=.7, fig.align='center',  echo = FALSE}
+
+ knitr::include_graphics("picsfigs/signaling_multi_eq.png")
+
+```
+
+<div class="inputqn">
+Do you understand this setup? Can you describe the paths that lead to each terminal node?
+</div>
+ 
+**Let us check a potential 'separating' equilibrium.**
+
+Suppose the Sender plays (Drink,School) -- i.e., Drink if Bad, get an
+education if Good.
+
+Then suppose the reciever plays (Not, Hire) -- i.e., don't hire if
+Drink, hire if School.
+
+The only beliefs by a sender in such a situation that are *consistent* with this strategy is to believe Nature picked 'Good' if he receives a Good signal (School), and Nature picked 'Bad' if he receives a Bad signal (Drink).
+
+\
+
+*Given these beliefs and strategies, are these best responses at each
+information set?*
+
+
+Compare Expected utility values:
+
+$$EU_{S}(Drink,School;(Not,Hire))=0.1(4)+0.9(2)=0.2$$
+
+Note this EU is *additive* in the EU of each 'type' (good or bad). Thus for this to be a BR it has to be a BR for *each* type of sender. We also require sequential rationality, which implies a player is acting optimally given his beliefs at each information set.
+
+Note that given the receiver's strategy (hire if and only if
+the sender is educated) the decision to get an education is *pivotal*. And as we set it up, only the good type wants to get an education if it is pivotal.
+So yes,  each type of sender is behaving optimally (i.e., the sender is
+behaving optimally in each contingency)
+
+\
+
+Given the sender's strategy (get education if and only if Good), is the
+reciever behaving optimally given her beliefs? Of course she is:
+
+As we set it up, the receiver prefers to hire the Good, and not hire the
+Bad. 
+
+So this $\{Drink,School;Not,Hire\}$ is a WSE (sequential rational under
+the beliefs mentioned above, which are of course consistent).
+
+But this might not be the *only* WSE for this numerical example -- there may
+be others.   For example, pooling on 'no school' -- if the employer will not hire for
+either signal -- is a WSE. I.e., $\{Drink,Drink; \: Not,Not\}$ paired with the belief $\big(Pr(Good|Drink)=Pr(Good|School)=0.1\big)$ is a WSE.\*
+<div class="marginnote">
+\* Exercise: Check this.
+</div>
+
+\
+
+#### Signaling: Numerical Example II {-}
+
+Let's change the payoff: 
+
+Suppose the salary is set (exogenously) at $S=5$
+
+The payoff to of not being hired is $0$.
+
+The production of a bad worker is 4, so the firm 'nets' -1 from hiring
+such a worker.
+
+The productivity of a good worker is 7, so the firm 'nets' 2 from hiring
+such a worker.
+
+The cost of sending a good signal (e.g., going to school) is 1 for the
+good worker and 2 for the bad worker.
+
+Finally, the probability of nature selecting a good worker is 0.1.  
+
+This implies (as before) the firm would rather hire a good worker but
+not hire a bad worker.
+
+However, (as before) the firm would rather hire no one than hiring
+everyone; so if there is pooling, it must be involve hiring no one.
+
+*Notice: (Unlike before )* If education means the difference between a
+job or no job (i.e., is 'pivotal'), both types would choose to go to
+school (send a 'good' signal).
+
+However (as before) if education will not make a difference (say, you
+are hired in either case), then neither type would go to school, as it
+is costly.
+
+This yields the following game tree:
+```{r  fig.cap = 'Signaling game example 2', out.width='80%', fig.asp=.7, fig.align='center',  echo = FALSE}
+
+ knitr::include_graphics("picsfigs/signaling_no_sep.png")
+```
+\
+
+
+Let us check a potential 'separating' equilibrium.
+
+Suppose the sender plays (Drink,School) -- i.e., don't get an education
+if bad, get an education if good. Then suppose the Reciever plays (Not, Hire) -- i.e., don't hire if Drink, hire if School.
+
+The only beliefs by a Reciever in such a situation that are *consistent*
+with this strategy is to believe Nature picked 'Good' if he receives a
+Good signal (education), and Nature picked 'Bad' if he receives a Bad signal (Drink). 
+
+\
+
+*Given these beliefs and strategies, are these best responses at each
+information set?*
+
+Note that given the receiver's strategy (hire if and only if educated) the decision to get an education is *pivotal*.  And, as we set it up, each type of sender wants to get an education if it is pivotal. So the sender is not behaving optimally in the contingency where he is Bad (i.e., for this type). The bad type should *also* want to pretend to be a good type and get an education. So this is NOT a WSE!
+
+\
+
+We can look for *pooling* WSE in this case -- there seem to be no
+separating WSE (in pure strategies) here.
+
+Note that the firm prefers to hire no one than hire everyone (given the
+setup). So, if both types do the same thing, the firm cannot tell which
+is which, and will thus hire no one. So for any pooling equilibrium
+here, the firm will hire no one. For example, we can look at
+{$Drink,Drink; \: Not,Not$ }.
+
+However, here the firm could assign *any* beliefs if it observes a good
+signal (education), as such a signal is *off the equilibrium path.*It
+gets complicated now. 
+
+One possible belief that the firm might hold is that any player who signals *Good* (gets an education) is a Good worker. But if this were the beliefs, the firm would not be behaving optimally -- it should thus *hire* such a worker!
+
+Another possible belief is that if a worker signals 'Good' it has only a
+$.1$ probability of being a Good worker. I.e., the conditional
+probability (after observing such off-path play) is the same as the
+unconditional probability.This belief will make the strategy profile {$Drink,Drink; \: Not,Not$} sequentially rational. Thus
+{$Drink,Drink; \: Not,Not$ } paired with the belief
+($Pr(Good|Drink) = Pr(Good|School)=0.1$) is a WSE.
+
+\
+
+We can also look for other possible WSE. We may find a separating (or
+pooling) WSE where the receiver plays *behavioral strategies*, hiring
+only some proportion of the time when she gets a good signal. In such a
+case, the EU benefit to the sender may be such that getting an education
+is only pivotal for the Good type. This is too complicated to cover now.
+
+\
+Note: further study of signaling games and sequential games with asymmetric information would involve:
+
+```{block2,  type='fold'}
+
+- Restricting the set of beliefs that are reasonable *off the equilibrium path*; this relates to the 'Perfect Bayesian Equilibrium' concept and to the so-called 'Intuitive Criterion'
+
+- Considering a "designer's" choice of a cost of a signaling mechanism; How much should it cost and how can it fruitfully separate types without wasting too many resources?
+    
+- Considering equilibria involving 'behavioral strategies' as mentioned above. 
+
+```
+
 
 # Suggested exercises {-#gt_strat_ex}
 
@@ -15308,7 +15598,6 @@ To be submitted by `r format_with_col("11 January", "red")`
 - Written length: approximately 8-12 pages, 5000-7000 words; for group projects add 5 additional pages to the maximum per additional member of the group, up to 30 pages for a four member group.
 
 - If it is submitted as a group project each student must also submit a one-page description of the project and their contribution to it
-
 
 - Spoken presentation (with slides if desired): 8-10 minutes plus 4-5 minutes discussion and feedback (group presentations may take slightly longer)
 
