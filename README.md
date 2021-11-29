@@ -18,6 +18,7 @@
   * "Basic" supply-demand-production systems, aggregation, empirical general and partial equilibrium models ... are very relevant to considering policy interventions, especially in animal welfare.
     * Aside: This has been  neglected by academic economists because its seen as non-deep, and neglected by private-sector/government  economists because there is no established 'animal welfare policy audience'
   * Some decision-theoretic concepts and models of preferences... with interesting implications for 'social preferences' and 'communicating preferences to machines'&#x20;
+  * Non-utilitarian preference relations like 'lexicographic' ... seems neglected in the discussion of population ethics (it's OK to have 'non-continuity', perhaps)&#x20;
   * Social Welfare Functions and Social Choice
   * Comparability of 'utility' across individuals and time, revealed preference&#x20;
   * Economics (esp. field and natural experiments, revealed preferences) of eliciting risk and time preferences&#x20;
