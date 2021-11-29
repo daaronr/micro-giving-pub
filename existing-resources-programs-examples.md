@@ -1,0 +1,29 @@
+# Existing resources, programs, examples
+
+## Other lists of syllabi and resources
+
+David Rhys-Bernard curated Pablo Stafforini's list (below), adding to it further.
+
+{% embed url="https://docs.google.com/document/d/1kYNd7URm0TPClM4iDIM_cjtpsOK9Vp1_HDbR2tMzVTQ/edit" %}
+
+{% embed url="http://www.stafforini.com/blog/effective-altruism-syllabi" %}
+
+## Reading syllabi/curated/outlines
+
+### Rhys-Bernard: [reading syllabus - An introduction to global priorities research for economists](https://forum.effectivealtruism.org/posts/dia3NcGCqLXhWmsaX/an-introduction-to-global-priorities-research-for-economists)
+
+{% embed url="https://docs.google.com/document/d/1A-AJLTbukninH_enX0Ex_w-8S4dWj8TB4_-Qi1KGPvQ/edit" %}
+
+### Trammel: "Economic theory and Global Prioritization' &#x20;
+
+{% embed url="https://forum.effectivealtruism.org/posts/zY5FNvbPzQkbf3phj/2-week-summer-course-in-economic-theory-and-global-1?commentId=69paJQWzvk8pqjjPn#69paJQWzvk8pqjjPn" %}
+
+{% embed url="https://docs.google.com/document/d/1KmSIsbqPH6z-mg3fMU4971OZIQlwI4ZNhOAWyCz8nSA/edit" %}
+
+## "Web books" and content
+
+### Reinstein (Exeter Msc)  Microeconomics - touches on EA and related 'decision theory' fundamentals; want to adapt
+
+{% embed url="https://daaronr.github.io/micro-giving-pub/outline.html" %}
+
+Reply![](<.gitbook/assets/image (1).png>)![](.gitbook/assets/image.png)
