@@ -1,25 +1,6 @@
 # Existing resources, programs, examples
 
-## Other lists of syllabi and resources
 
-David Rhys-Bernard curated Pablo Stafforini's list (below), adding to it further.
-
-
-
-{% hint style="info" %}
-**David Reinstein: **I took a quick look at the syllabi below. Some seem to be analytically rigorous, and some seem to engage empirical economics and social science (especially measuring the impact of poverty interventions).
-
-_However, _
-
-* I did not see any that focused rigorously (with maths) on engaging Economic theory, Decision Science, or Econometrics/measurement/quant stuff
-* I found mostly 'themes and reading lists'; no 'web book/textbook' yet&#x20;
-{% endhint %}
-
-****
-
-{% embed url="https://docs.google.com/document/d/1kYNd7URm0TPClM4iDIM_cjtpsOK9Vp1_HDbR2tMzVTQ/edit" %}
-
-{% embed url="http://www.stafforini.com/blog/effective-altruism-syllabi" %}
 
 ## Reading syllabi/curated/outlines
 
@@ -40,3 +21,24 @@ _However, _
 {% embed url="https://daaronr.github.io/micro-giving-pub/outline.html" %}
 
 Reply![](<.gitbook/assets/image (1).png>)![](.gitbook/assets/image.png)
+
+## Other lists of syllabi and resources
+
+David Rhys-Bernard curated Pablo Stafforini's list (below), adding to it further.
+
+
+
+{% hint style="info" %}
+**David Reinstein:** I took a quick look at the syllabi below. Some seem to be analytically rigorous, and some seem to engage empirical economics and social science (especially measuring the impact of poverty interventions).
+
+_However,_&#x20;
+
+* I did not see any that focused rigorously (with maths) on engaging Economic theory, Decision Science, or Econometrics/measurement/quant stuff
+* I found mostly 'themes and reading lists'; no 'web book/textbook' yet&#x20;
+{% endhint %}
+
+****
+
+{% embed url="https://docs.google.com/document/d/1kYNd7URm0TPClM4iDIM_cjtpsOK9Vp1_HDbR2tMzVTQ/edit" %}
+
+{% embed url="http://www.stafforini.com/blog/effective-altruism-syllabi" %}
