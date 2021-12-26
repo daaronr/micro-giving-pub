@@ -1,102 +1,52 @@
-# R-markdown to html -- web-book and slides
+# (Goals and planning)
 
-- [Web book for MSc Microeconomics](https://daaronr.github.io/micro-giving-pub/index.html) ... used for Exeter BEEM101 in year 2020-21
-
-
-<!-- - NOt WORKING [Web book for Beem2038 (Intermediate Microeconomics for business and politics students)](be2024-bd-copy/index.html) -->
-
-Created using the [Bookdown package](https://bookdown.org/yihui/bookdown/), with the Gitbook format (as well as, in the CSS, some style elements from 'tufte_html_book')
-
-- Style files and setup content is automatically pulled over on compile from 'dr-rstuff' repo 
+## "Economics+ for EA+ and vice/versa"&#x20;
 
 
-# Previous content -- Pandoc (Latex enhanced) to pdf slides/handouts; material and process for two modules (Beem101 and BEE2024)
-
-This repo contains both the content and the code for producing course materials (handouts, slides, problem sets, and more) for two similar courses (modules), both for UK 10-12 week terms with 2 hours of lecture per week and one 'tutorial' per fortnight. 1. Undergraduate "Economic principles and policy" and 2. "MSc Microeconomics." Both of these are taught at a fairly basic technical/maths level, and both are pitched to students with a variety of backgrounds in economics, business, and policy. 
-
-The content is largely drawn from Nicholson and Snyder's "Intermediate Economics and Its Applications". It gives a running commentary on this text and offers additional perspectives and enrichment material. I also offer substantial original content, as well as drawing from other sources.
-
-(Further description of content will be given.)
-
-# Setup - md only versions
-
-For any of this to work, you need to have [Pandoc](http://pandoc.org/) installed, which I recall takes some time. You will also want to configure the relevant "templates”. Is often difficult to figure out which format to which type of output and where exactly these templates are stored.
-
-Some of the templates contain latex commands that are referred to in the markdown files (especially ‘pdfnote’); without these in your templates the pdfs will not compile.
-
-I believe you will also need to have (the correct version?) of latex installed.
 
 
-## Key files used
 
-- be2024/slides_bothmodules.md: Lecture slides (for two modules); all content and tags
-
-- be2024/handout_bothmodules.md: Handouts (for two modules); content and tags
-
-*Note* that I originally wanted to use a single file  for both slides and handouts but I found this unwieldy. At the moment I  more or less am able to compare handouts and slides using VIM (my text editor) ‘splitdiff’ command, but this falls apart at some point in the file and they no longer align.
-
-- be2024/compileslidesnotes_fuller.sh:   "batch” file that I run to make all the different versions of the slides and handouts, both in one file in many files and zip files, etc., compiled and into PDFs.  I'm doing this on a Mac with “Bash” as the shell.
-
-- tutorials/tutorials_all_bothmodules.md: Tutorials/problem sets —  all content (and various ‘begin and end’ tags used in the shell scripts)
-
--  be2024/compiletutorials.sh:  "batch” file that I run to make all the different versions of the tutorials and compile them into PDFs.  I'm doing this on a Mac with “Bash” as the shell script
-
-### Templates and macros
-
-(Folder: 'templates_etc')
-
-- .vimrc: configures ViM, functions for it (across a range of processes)
-
-- default
-- default.latex
-- default.beamer
-
-## Process, editing software, and improvements
-
-### Présentation:
-
-I use the obscure app “présentation” \url{http://iihm.imag.fr/blanch/software/osx-presentation/} to show the slides on my Mac and see the speakers notes on a private screen. It is not perfect.
-
-- Sometimes it crashes.
-
-- Sometimes it fails to display in presentation mode in a classroom and needs to be restarted/reconnected
-
-- Movie and web browser view doesn't work
-
-### Text editor:
-
-I'm using MacVim/VIM1 for the most part.
-
-- See my .vimrc
-- 'Source' and 'mksession' are useful for setting up an environment
+### Who is this for and why
 
 
-### Issues
 
-This is far from a perfect process. Formats could be improved and extended beyond just PDFs. The code in the batch files is extremely messy. There is lots of things I would like to automate and improve, if I have the skills and time.
+1. _**EA's and fellow-travelers:**_
 
-For example...
+* The principles and practice of effective altruism are closely connected to the principles of Economics. EA's engage economic concepts, arguments, and theoretical and empirical "results" throughout their work. However, these **principles are sometimes misunderstood or mis-stated,** sometimes alluded to but not considered in depth. The **terminology** itself can sometimes be muddled between EA, rationalist, decision theory, computer science, and academic economics communities. This leads to confusion and barriers to engagement.
+* &#x20;I also get the sense that EA's are **somewhat over-optimistic and over-broad** about 'what Economics tells us' (possible example: GiveWell on 'log utility'); often a result that holds under only very-specific conditions is stated as a generally accepted truth.  On the other hand
+* &#x20;Some useful areas of Economics seem neglected in EA, e.g., (my own impressions):
+  * "Basic" supply-demand-production systems, aggregation, empirical general and partial equilibrium models ... are very relevant to considering policy interventions, especially in animal welfare.
+    * Aside: This has been  neglected by academic economists because its seen as non-deep, and neglected by private-sector/government  economists because there is no established 'animal welfare policy audience'
+  * Some decision-theoretic concepts and models of preferences... with interesting implications for 'social preferences' and 'communicating preferences to machines'&#x20;
+  * Non-utilitarian preference relations like 'lexicographic' ... seems neglected in the discussion of population ethics (it's OK to have 'non-continuity', perhaps)&#x20;
+  * Social Welfare Functions and Social Choice
+  * Comparability of 'utility' across individuals and time, revealed preference&#x20;
+  * Economics (esp. field and natural experiments, revealed preferences) of eliciting risk and time preferences&#x20;
+  * Some work in 'the Economics of other-regarding behavior' (charitable giving and 'crowding out', consumer altruism...) (But I do think some parts of this literature are stuck in a trap of confusion about the application of models like 'warm glow').&#x20;
 
-1. Can't embed videos
+_2. **Economists & co.**_
 
-1. I don't know how to do 'step by step animated images' as in powerpoint
+* Understanding how individuals and firms make choices,  how these aggregate in market (and other settings) is the original 'what' of Economics. The original 'why do we care about this' is  'to understand what will achieve the best outcomes for humanity (and perhaps beyond). But IMO it has been somewhat waylaid by the desire to demonstrate cleverness and rigorous extensions of existing models. It has also been distracted by parochialism: to the extent there is a 'policy audience', it is typically the US Government. &#x20;
+  * Economists will benefit from an approach that returns to the 'global welfare' question first and foremost, and benefit from engaging with the EA community, which is _practically_ trying to achieve these goals
+* This 'integration' will bring in interesting concepts from Philosophy and Decision Science that Economists may have neglected
+* EA questions and goals provide a new _research agenda_ and the opportunity to apply core concepts and tools from Economics in ways that may be _more directly relevant_ than the more mainstream ('fix the US economy'...) targets. Some brainstorms on this (needs clarification)...
+  * Preference axioms (transitivity etc), VnM Axioms, impossibility theorems etc:
+    * Application to 'social preferences' and 'aggregated social preferences'
+    * Time discounting: weigh present/future
+    * Population ethics; weigh definite/possible individuals
+    * Uncertainty and 'preference over outcomes versus over impct'c
+  * Defining preferences and constraints: tools for aligning AI?
+  * The 'aggregation from individual optimization problems' may be unreliable for predicting chaotic human systems, but more relevant for 'aligning AI'
+  * Measuring and assessing 'tradeoffs between income gains at different levels' (e.g., for GiveWell and GiveDirectly) with different empirical and theory-driven approaches
+  * Aggregating social welfare functions and other social preference formulations with epistemic and moral uncertainty&#x20;
+  *   Implications of GE models for animal welfare interventions; a new set of value measurements and possible interventions; not just the 'market failures' approach&#x20;
 
-1. Struggling with labels for images
 
-1. I would like to find a way to hide the answers to the questions asked in lecture and only show them after the lecture.
 
-1. Need a process to  successfully 'split diff'  the handout  and slides file (or a  markdown way to combine these in a single file)
+      &#x20;&#x20;
 
-1.  Running the scripts and compilation takes way too long
+## Making this work: implementation
 
-1. Much of the latex enhanced markdown script is awkward and hard to read
 
-1. The "begin" and “end” tags seem like a bad workaround, and are liable to mistakes.
 
-1. I would like to find some way of previewing the output as I work, like latex’s ‘synctex'
-
-1.  I still can't figure out how to do a "full-page image" slide via markdown
-
-1. Not sure if I've been able to put internal hyperlinks (other than in the ToC)
-
-1. Slides ToC (with links) goes off the page
+## Opportunities, threats, important issues
