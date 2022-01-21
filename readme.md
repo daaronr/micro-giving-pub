@@ -16,7 +16,8 @@
 * &#x20;I also get the sense that EA's are **somewhat over-optimistic and over-broad** about 'what Economics tells us' (possible example: GiveWell on 'log utility'); often a result that holds under only very-specific conditions is stated as a generally accepted truth.  On the other hand
 * &#x20;Some useful areas of Economics seem neglected in EA, e.g., (my own impressions):
   * "Basic" supply-demand-production systems, aggregation, empirical general and partial equilibrium models ... are very relevant to considering policy interventions, especially in animal welfare.
-    * Aside: This has been  neglected by academic economists because its seen as non-deep, and neglected by private-sector/government  economists because there is no established 'animal welfare policy audience'
+    * Aside: This has been  neglected by academic economists because its seen as non-deep, and neglected by private-sector/government economists because there is no established 'animal welfare policy audience'
+    * Some progress may be happening: see the [Stanford conference on the Economics of Animal Welfare.](https://economics.stanford.edu/site/paper-submission)
   * Some decision-theoretic concepts and models of preferences... with interesting implications for 'social preferences' and 'communicating preferences to machines'&#x20;
   * Non-utilitarian preference relations like 'lexicographic' ... seems neglected in the discussion of population ethics (it's OK to have 'non-continuity', perhaps)&#x20;
   * Social Welfare Functions and Social Choice
