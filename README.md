@@ -35,7 +35,7 @@ _2. **Economists & co.**_
     * Application to 'social preferences' and 'aggregated social preferences'
     * Time discounting: weigh present/future
     * Population ethics; weigh definite/possible individuals
-    * Uncertainty and 'preference over outcomes versus over impct'c
+    * Uncertainty and 'preference over outcomes versus over impact
   * Defining preferences and constraints: tools for aligning AI?
   * The 'aggregation from individual optimization problems' may be unreliable for predicting chaotic human systems, but more relevant for 'aligning AI'
   * Measuring and assessing 'tradeoffs between income gains at different levels' (e.g., for GiveWell and GiveDirectly) with different empirical and theory-driven approaches
