@@ -10,12 +10,7 @@
 
 
 
-
-
-**Simple example, I argue it is consistent with RW intuitions (expand)**\
-****\
-****
-----
+## **Simple example, I argue it is consistent with RW intuitions (expand)**
 
 \- Prob (1-p) of 'small world S' with NL = 100 million people indexed by i
 
@@ -27,7 +22,9 @@ As a 'baseline', think of p=1/2 for intuition; assume that if you didn't act, th
 
 Ignore the 'non-identity' issue.
 
-Each individual has a value function $v_i(W)$, call it the vector VW_ across all individuals in world W
+Each individual has a value function __ v_i(W),_
+
+&#x20;_call it the vector VW_ across all individuals in world W
 
 For simplicity, maybe we assume that every individual (in a particular world W) gets the same v\_i(S), but this can be affected by further arguments, discussed below
 
@@ -89,6 +86,6 @@ Possible variation: you can affect both p and VS but not VL ... would probably p
 
 ### "If you can affect both" ... how to reconcile it?
 
-1. A 'correction term' to either the average or  total model that implies that increasing p should have little or no value
-2. A 'value of my actions (and outcomes?)' that _does_ treat the components of my decision (g0, g1, g2) differently insofar as it affects p versus the value functions
+1. A 'correction term' to either the average or total model that implies that 'increasing p should have little or no value'
+2. A 'value of my actions (and outcomes?)' that _does_ treat the components of my decision (g0, g1, g2) differently insofar as these affect p versus the value functions
 
