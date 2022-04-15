@@ -20,7 +20,7 @@
 
 {% embed url="https://daaronr.github.io/micro-giving-pub/outline.html" %}
 
-Reply![](<.gitbook/assets/image (1).png>)![](.gitbook/assets/image.png)
+Reply![](<../.gitbook/assets/image (1).png>)![](../.gitbook/assets/image.png)
 
 ## Other lists of syllabi and resources
 
